@@ -21,7 +21,7 @@ A type that represents data in MPEG-2 transport stream movie format.
 static var mpeg2TransportStream: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.mpeg-2-transport-stream`.
 

@@ -17,7 +17,7 @@ The kind of artifact built.
 enum Kind
 ```
 
-#### Overview
+## Overview
 
 The specific file formats may vary from platform to platform. For example, on macOS  a dynamic library may in fact be built as a framework.
 

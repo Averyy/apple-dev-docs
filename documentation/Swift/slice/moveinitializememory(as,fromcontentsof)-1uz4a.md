@@ -24,11 +24,11 @@ func moveInitializeMemory<T>(as type: T.Type, fromContentsOf source: Slice<Unsaf
 
 Available when `Base` is `UnsafeMutableRawBufferPointer`.
 
-#### Return Value
+## Return Value
 
 A typed buffer referencing the initialized elements. The returned buffer references memory starting at the same base address as this slice, and its count is equal to `source.count`.
 
-#### Discussion
+## Discussion
 
 When calling the `moveInitializeMemory(as:fromContentsOf:)` method, the memory referenced by the buffer slice must be uninitialized, or initialized to a trivial type. The buffer slice must reference enough memory to store `source.count` elements, and it must be properly aligned for accessing `C.Element`. After the method returns, the memory referenced by the returned buffer is initialized and the memory region underlying `source` is uninitialized.
 

@@ -15,7 +15,7 @@ The cosine similarity measure.
 case cosine
 ```
 
-#### Discussion
+## Discussion
 
 Use cosine similarity for comparing item ratings.
 

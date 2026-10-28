@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, sizeToFitWidthOfColumn column:
 - (CGFloat) tableView:(NSTableView *) tableView sizeToFitWidthOfColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The width of the specified column.
 
-#### Discussion
+## Discussion
 
 By default, [`NSTableView`](../nstableview.md) iterates every row in the table, accesses a cell via [`preparedCell(atColumn:row:)`](../nstableview/preparedcell%28atcolumn,row%29.md), and requests the [`cellSize`](../nscell/cellsize.md) to find the appropriate largest width to use.
 

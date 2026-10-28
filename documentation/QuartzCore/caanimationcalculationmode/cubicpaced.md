@@ -24,7 +24,7 @@ static let cubicPaced: CAAnimationCalculationMode
 extern CAAnimationCalculationMode const kCAAnimationCubicPaced;
 ```
 
-#### Discussion
+## Discussion
 
 `kCAAnimationCubicPaced` gives a linearly interpolated animation, but [`keyTimes`](../cakeyframeanimation/keytimes.md) and [`timingFunction`](../caanimation/timingfunction.md) are ignored and keyframe times are automatically generated to give the animation a constant velocity.
 

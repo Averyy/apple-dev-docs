@@ -5,7 +5,7 @@
 
 Predefined number format styles.
 
-#### Overview
+## Overview
 
 The format for these number styles is not exact because they depend on the locale, user preference settings, and operating system version. Do not use these constants if you want an exact format (for example, if you are parsing data in a given format). In general, however, you are encouraged to use these styles to accommodate user preferences.
 

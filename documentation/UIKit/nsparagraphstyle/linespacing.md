@@ -24,7 +24,7 @@ var lineSpacing: CGFloat { get }
 @property (nonatomic, readonly) CGFloat lineSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 This value is always nonnegative. The layout manager uses this value in the line fragment height.
 

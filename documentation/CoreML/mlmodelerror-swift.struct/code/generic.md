@@ -25,7 +25,7 @@ case generic
 MLModelErrorGeneric
 ```
 
-#### Discussion
+## Discussion
 
 Core ML typically throws (Swift) or returns (Objective-C) this error when it encounters an internal problem.
 

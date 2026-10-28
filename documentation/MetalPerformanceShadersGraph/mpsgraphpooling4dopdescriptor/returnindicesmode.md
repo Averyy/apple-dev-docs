@@ -24,7 +24,7 @@ var returnIndicesMode: MPSGraphPoolingReturnIndicesMode { get set }
 @property (nonatomic, readwrite) MPSGraphPoolingReturnIndicesMode returnIndicesMode;
 ```
 
-#### Discussion
+## Discussion
 
 Use this in conjunction with [`maxPooling4DReturnIndices(_:descriptor:name:)`](../mpsgraph/maxpooling4dreturnindices%28_,descriptor,name%29.md) API. If `returnIndicesMode = MPSGraphPoolingReturnIndicesNone` then only the first result MPSGraph returns from [`maxPooling4DReturnIndices(_:descriptor:name:)`](../mpsgraph/maxpooling4dreturnindices%28_,descriptor,name%29.md) will be valid and using the second result will assert. Default value: `MPSGraphPoolingReturnIndicesNone`.
 

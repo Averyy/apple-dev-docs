@@ -16,7 +16,7 @@ The domain that this instance manages.
 var domain: any ContactProviderDomain { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value defaults to [`DefaultContactProviderDomain`](../defaultcontactproviderdomain.md).
 

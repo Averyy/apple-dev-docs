@@ -18,11 +18,11 @@ Creates a vibrancy effect with the specified blur and style values.
 init(forBlurEffect blurEffect: UIBlurEffect, style: UIVibrancyEffectStyle)
 ```
 
-#### Return Value
+## Return Value
 
 The vibrancy effect object to use in your visual effect view.
 
-#### Discussion
+## Discussion
 
 When you create a new vibrancy effect, use the same [`UIBlurEffect`](../uiblureffect.md) that you used to create the blur view. Using a different [`UIBlurEffect`](../uiblureffect.md) can cause unwanted visual effect combinations.
 

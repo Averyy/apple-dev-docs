@@ -19,7 +19,7 @@ static var alphaNonpremultiplied: NSBitmapImageRep.Format { get }
 NSBitmapFormatAlphaNonpremultiplied
 ```
 
-#### Discussion
+## Discussion
 
 If this option is not specified, alpha values are premultiplied.
 

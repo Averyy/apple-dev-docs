@@ -24,7 +24,7 @@ class func shared() -> NERelayManager
 + (NERelayManager *) sharedManager;
 ```
 
-#### Return Value
+## Return Value
 
 The network relay manager instance for the calling application.
 

@@ -17,7 +17,7 @@ Creates the server side of an XPC service using the specified service name.
 init(service: String, targetQueue: DispatchQueue? = nil, options: XPCListener.InitializationOptions = .none, incomingSessionHandler: @escaping @Sendable (XPCListener.IncomingSessionRequest) -> XPCListener.IncomingSessionRequest.Decision) throws
 ```
 
-#### Discussion
+## Discussion
 
 Listener creation fails if the XPC service isn’t found or is unavailable.
 

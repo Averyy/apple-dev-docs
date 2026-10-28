@@ -24,7 +24,7 @@ class var linearDodge: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * linearDodge;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the linear dodge blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926874@2x.png)
 

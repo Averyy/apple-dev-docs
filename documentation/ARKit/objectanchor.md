@@ -15,7 +15,7 @@ A reference object ARKit is tracking.
 struct ObjectAnchor
 ```
 
-#### Overview
+## Overview
 
 You use object anchors to learn about the position and orientation of a real-world object.
 

@@ -25,7 +25,7 @@ func getBytes(_ bytes: UnsafeMutableRawPointer, strides: MTLTensorExtents, slice
 - (void) getBytes:(void *) bytes strides:(MTLTensorExtents *) strides fromSliceOrigin:(MTLTensorExtents *) sliceOrigin sliceDimensions:(MTLTensorExtents *) sliceDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 Create the tensor with [`storageModeShared`](../mtlresourceoptions/storagemodeshared.md) for CPU access via this method.
 

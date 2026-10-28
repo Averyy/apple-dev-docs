@@ -29,7 +29,7 @@ class SHSession
 
 - [Matching audio using the built-in microphone](./matching-audio-using-the-built-in-microphone.md)
 
-#### Overview
+## Overview
 
 Prepare to make matches by:
 

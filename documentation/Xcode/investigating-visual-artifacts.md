@@ -5,13 +5,13 @@
 
 Discover, diagnose, and fix visual artifacts in your app with the Metal debugger.
 
-#### Overview
+## Overview
 
 If you notice any visual artifacts while running your app, you can use the Metal debugger to find and investigate problematic pixels. First, configure your build to include shader source code (see [Building your project with embedded shader sources](./building-your-project-with-embedded-shader-sources.md)). Then, take a frame capture of your app when you notice the visual artifact that you want to debug (see [Capturing a Metal workload in Xcode](./capturing-a-metal-workload-in-xcode.md)).
 
 After you have a frame capture, use the Debug navigator to find the draw command that contains the visual artifact, and use the Attachments viewer to find the pixel with the issue. Debug the pixel to launch the shader debugger, then step through your shader source code and inspect variable values until you discover the problem. Then, edit the shader source and reload the shader to verify your fix.
 
-##### Skim through render attachments in the Debug navigator
+### Skim through render attachments in the Debug navigator
 
 In the Metal debugger, navigate to a draw command that has the issue. As you move your pointer over rows in the Debug navigator on the left, the Metal debugger shows a preview of the first attachment. You can use this to quickly find any draw commands that warrant further inspection.
 
@@ -25,7 +25,7 @@ When you find the problematic draw command, click it to select it. The Metal deb
 
 ![A screenshot of the Metal debugger showing the Bound Resources viewer and the Attachments viewer side by side for a draw command.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-sdp-select@2x.png)
 
-##### Inspect attachments for a draw command
+### Inspect attachments for a draw command
 
 Use the Attachments viewer to find any problematic pixels. You can scroll to zoom in, and drag to pan. For more information on the Attachments viewer, see [Inspecting the attachments of a draw command](./inspecting-the-attachments-of-a-draw-command.md).
 
@@ -37,7 +37,7 @@ If the problematic pixel isn’t inside a debuggable region, it has a nongreen s
 
 ![A screenshot of the Metal debugger’s Attachments viewer where the selected pixel falls outside the debuggable region for a draw command.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-sdp-no-debug@2x.png)
 
-##### Debug your fragment shader
+### Debug your fragment shader
 
 The shader debugger displays the shader source in the Shader editor (see [Inspecting shaders](./inspecting-shaders.md)). The call tree on the left shows each executed line in your shader. The values of the variables appear to the right of each shader line in the shader source code. For example, in the screenshot below, you can see that the `in` variable has a value containing `721.5`, `815.5`, and so forth.
 

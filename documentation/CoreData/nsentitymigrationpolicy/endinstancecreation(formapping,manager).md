@@ -25,7 +25,7 @@ func endInstanceCreation(forMapping mapping: NSEntityMapping, manager: NSMigrati
 - (BOOL) endInstanceCreationForEntityMapping:(NSEntityMapping *) mapping manager:(NSMigrationManager *) manager error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 You can override this method to clean up state from the creation of destination or to prepare state for the creation of relationships.
 

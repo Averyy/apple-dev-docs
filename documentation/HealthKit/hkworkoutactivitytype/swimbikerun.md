@@ -28,7 +28,7 @@ HKWorkoutActivityTypeSwimBikeRun
 
 - [Dividing a HealthKit workout into activities](../dividing-a-healthkit-workout-into-activities.md)
 
-#### Discussion
+## Discussion
 
 Use this constant to create workouts that contain the [`HKWorkoutActivityType.swimming`](./swimming.md), [`HKWorkoutActivityType.cycling`](./cycling.md), and [`HKWorkoutActivityType.running`](./running.md) activities. These activities can happen in any order. For more information, see [`HKWorkoutActivity`](../hkworkoutactivity.md). HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
 

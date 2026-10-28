@@ -19,7 +19,7 @@ optional var hasEffectsMode: Bool { get }
 @property (atomic, readonly) BOOL hasEffectsMode;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the tab should be displayed, otherwise NO.
 

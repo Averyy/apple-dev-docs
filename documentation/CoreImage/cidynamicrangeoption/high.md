@@ -24,7 +24,7 @@ static let high: CIDynamicRangeOption
 extern CIDynamicRangeOption const kCIDynamicRangeHigh;
 ```
 
-#### Discussion
+## Discussion
 
 The provides the best HDR quality and needs to be reserved for situations where the user is focused on the media, such as larger views in an image editing/viewing app, or annotating/drawing with HDR colors
 

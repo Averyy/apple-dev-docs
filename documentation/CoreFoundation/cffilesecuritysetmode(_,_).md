@@ -25,11 +25,11 @@ func CFFileSecuritySetMode(_ fileSec: CFFileSecurity!, _ mode: mode_t) -> Bool
 extern Boolean CFFileSecuritySetMode(CFFileSecurityRef fileSec, mode_t mode);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the file mode property was successfully set, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 For more information on numerical file modes, see the chmod(2) manual page and the definitions in `/usr/include/sys/stat.h`.
 

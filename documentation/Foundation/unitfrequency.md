@@ -25,11 +25,11 @@ class UnitFrequency
 @interface NSUnitFrequency : NSDimension
 ```
 
-#### Overview
+## Overview
 
 You typically use instances of [`UnitFrequency`](./unitfrequency.md) to represent specific quantities of frequency using the [`NSMeasurement`](./nsmeasurement.md) class.
 
-##### Frequency
+### Frequency
 
 Frequency is a quantity of occurrences for a repeating event over time. The SI unit for frequency is the hertz (Hz), which is a derived as one occurrence per second (`1 Hz = 1 / 1s`).
 

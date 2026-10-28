@@ -19,7 +19,7 @@ func removeItem(withObjectValue object: Any)
 - (void) removeItemWithObjectValue:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 This method logs a warning if [`usesDataSource`](./usesdatasource.md) is [`true`](../../Swift/true.md).
 

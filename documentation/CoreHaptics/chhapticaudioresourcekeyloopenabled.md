@@ -24,7 +24,7 @@ let CHHapticAudioResourceKeyLoopEnabled: String
 extern CHHapticAudioResourceKey CHHapticAudioResourceKeyLoopEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Set a [`true`](../Swift/true.md) value for this key to loop the contents of an audio file.
 

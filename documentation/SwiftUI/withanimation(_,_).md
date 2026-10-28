@@ -26,7 +26,7 @@ func withAnimation<Result>(_ animation: Animation? = .default, _ body: () throws
 - [Applying Liquid Glass to custom views](./applying-liquid-glass-to-custom-views.md)
 - [Managing user interface state](./managing-user-interface-state.md)
 
-#### Discussion
+## Discussion
 
 This function sets the given [`Animation`](./animation.md) as the [`animation`](./transaction/animation.md) property of the thread’s current [`Transaction`](./transaction.md).
 

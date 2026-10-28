@@ -30,7 +30,7 @@ protocol SKPhysicsContactDelegate : NSObjectProtocol
 - [Getting Started with Physics](./getting-started-with-physics.md)
 - [Responding to Frame-Cycle Events](./responding-to-frame-cycle-events.md)
 
-#### Overview
+## Overview
 
 An object that implements the [`SKPhysicsContactDelegate`](./skphysicscontactdelegate.md) protocol can respond when two physics bodies with overlapping [`contactTestBitMask`](./skphysicsbody/contacttestbitmask.md) values are in contact with each other in a physics world. To receive contact messages, you set the [`contactDelegate`](./skphysicsworld/contactdelegate.md) property of a [`SKPhysicsWorld`](./skphysicsworld.md) object. The delegate is called when a contact starts or ends.
 

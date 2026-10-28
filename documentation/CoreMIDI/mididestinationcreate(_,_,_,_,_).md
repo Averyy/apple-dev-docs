@@ -25,11 +25,11 @@ func MIDIDestinationCreate(_ client: MIDIClientRef, _ name: CFString, _ readProc
 extern OSStatus MIDIDestinationCreate(MIDIClientRef client, CFStringRef name, MIDIReadProc readProc, void *refCon, MIDIEndpointRef *outDest);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code.
 
-#### Discussion
+## Discussion
 
 The specified readProc gets called when clients send MIDI to your virtual destination.
 

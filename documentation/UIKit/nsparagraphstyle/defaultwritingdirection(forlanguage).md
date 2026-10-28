@@ -24,7 +24,7 @@ class func defaultWritingDirection(forLanguage languageName: String?) -> NSWriti
 + (NSWritingDirection) defaultWritingDirectionForLanguage:(NSString *) languageName;
 ```
 
-#### Return Value
+## Return Value
 
 The default writing direction.
 

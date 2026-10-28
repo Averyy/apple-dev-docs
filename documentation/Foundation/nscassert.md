@@ -21,7 +21,7 @@ Generates an assertion if the given condition is false.
 #define NSCAssert(condition, desc, ...)
 ```
 
-#### Discussion
+## Discussion
 
 Assertions evaluate a condition and, if the condition evaluates to false, call the assertion handler for the current thread, passing it a format string and a variable number of arguments. Each thread has its own assertion handler, which is an object of class `NSAssertionHandler`. When invoked, an assertion handler prints an error message that includes method and class names (or the function name). It then raises an `NSInternalInconsistencyException` exception.
 

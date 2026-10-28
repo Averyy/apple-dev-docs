@@ -27,7 +27,7 @@ OM_uint32 gss_acquire_cred(OM_uint32 *minor_status, gss_name_t const desired_nam
 
 - [Allocating and Releasing Objects](./allocating-and-releasing-objects.md)
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 

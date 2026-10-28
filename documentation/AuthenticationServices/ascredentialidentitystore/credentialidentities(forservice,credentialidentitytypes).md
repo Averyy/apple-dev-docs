@@ -19,7 +19,7 @@ Retrieves an array of all previously saved credential identities in the store fo
 func credentialIdentities(forService serviceIdentifier: ASCredentialServiceIdentifier? = nil, credentialIdentityTypes: ASCredentialIdentityStore.IdentityTypes = []) async -> [any ASCredentialIdentity]
 ```
 
-#### Return Value
+## Return Value
 
 An array of previously saved credential identities that match the identifier and identity type criteria.
 

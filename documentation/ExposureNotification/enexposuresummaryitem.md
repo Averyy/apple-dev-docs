@@ -23,7 +23,7 @@ class ENExposureSummaryItem
 @interface ENExposureSummaryItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  This class is available in iOS 12.5, iOS 13.7, and later.
 

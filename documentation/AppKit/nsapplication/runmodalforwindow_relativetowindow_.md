@@ -13,7 +13,7 @@
 - (NSInteger) runModalForWindow:(NSWindow *) window relativeToWindow:(NSWindow *) docWindow;
 ```
 
-#### Discussion
+## Discussion
 
 > **Deprecated**: Use [`beginSheet(_:modalFor:modalDelegate:didEnd:contextInfo:)`](./beginsheet%28_,modalfor,modaldelegate,didend,contextinfo%29.md) instead.
 

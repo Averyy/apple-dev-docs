@@ -20,7 +20,7 @@ The collection of compute devices per stage that a request supports.
 - (NSDictionary<NSString *,NSArray<id<MLComputeDeviceProtocol>> *> *) supportedComputeStageDevicesAndReturnError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of per-stage compute devices; otherwise, `nil` if an error occurs.
 

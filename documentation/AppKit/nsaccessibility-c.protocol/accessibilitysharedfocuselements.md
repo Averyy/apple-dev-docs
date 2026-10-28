@@ -15,7 +15,7 @@ An array of elements that shares the keyboard focus with the accessibility eleme
 @property (copy, nullable) NSArray * accessibilitySharedFocusElements;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to manage elements that share the keyboard focus—for example, a search field with completion menu below it.
 

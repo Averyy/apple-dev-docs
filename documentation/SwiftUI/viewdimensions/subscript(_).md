@@ -27,7 +27,7 @@ subscript(guide: HorizontalAlignment) -> CGFloat { get }
 subscript(guide: VerticalAlignment) -> CGFloat { get }
 ```
 
-#### Overview
+## Overview
 
 Find the offset of a particular guide in the corresponding view by using that guide as an index to read from the context:
 

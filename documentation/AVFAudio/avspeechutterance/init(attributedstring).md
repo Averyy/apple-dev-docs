@@ -25,7 +25,7 @@ init(attributedString string: NSAttributedString)
 - (instancetype) initWithAttributedString:(NSAttributedString *) string;
 ```
 
-#### Discussion
+## Discussion
 
 To speak the text, pass the utterance to an instance of [`AVSpeechSynthesizer`](../avspeechsynthesizer.md).
 

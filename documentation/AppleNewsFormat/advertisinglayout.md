@@ -17,13 +17,13 @@ The object for defining the margin above and below advertising components.
 object AdvertisingLayout
 ```
 
-#### Discussion
+## Discussion
 
 Define the margins for the [`BannerAdvertisement`](./banneradvertisement.md) components that are inserted automatically. This object is different from the [`ComponentLayout`](./componentlayout.md) object and supports only one property, `margin`.
 
 This object can be used in [`AdvertisingSettings`](./advertisingsettings.md).
 
-##### Example
+### Example
 
 ```json
 {

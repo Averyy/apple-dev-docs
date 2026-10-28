@@ -25,7 +25,7 @@ static let calendar: CFLocaleKey!
 extern CFLocaleKey const kCFLocaleCalendar;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a CFCalendar object.
 

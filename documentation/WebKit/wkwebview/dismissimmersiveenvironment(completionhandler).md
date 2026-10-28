@@ -23,7 +23,7 @@ func dismissImmersiveEnvironment() async
 - (void) dismissImmersiveEnvironmentWithCompletionHandler:(void (^)(void)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Dismisses the currently presented immersive environment.
 

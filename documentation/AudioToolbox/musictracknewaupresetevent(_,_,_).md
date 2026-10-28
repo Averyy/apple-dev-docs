@@ -24,7 +24,7 @@ func MusicTrackNewAUPresetEvent(_ inTrack: MusicTrack, _ inTimeStamp: MusicTimeS
 extern OSStatus MusicTrackNewAUPresetEvent(MusicTrack inTrack, MusicTimeStamp inTimeStamp, const AUPresetEvent *inPresetEvent);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

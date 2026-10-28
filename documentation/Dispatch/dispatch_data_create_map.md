@@ -21,11 +21,11 @@ Returns a new dispatch data object containing a contiguous representation of the
 extern dispatch_data_tdispatch_data_create_map(dispatch_data_t data, const void **buffer_ptr, size_t *size_ptr);
 ```
 
-#### Return Value
+## Return Value
 
 A new dispatch data object containing the contiguous version of the memory managed by the object in the `data` parameter.
 
-#### Discussion
+## Discussion
 
 If you specify non-`NULL` values for `buffer_ptr` or `size_ptr`, the values returned in those variables are valid only until you release the newly created dispatch data object. You can use these values as a quick way to access the data of the new data object.
 

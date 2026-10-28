@@ -25,7 +25,7 @@ extern void vDSP_vma(const float *__A, vDSP_Stride __IA, const float *__B, vDSP_
 
 - [Using vDSP for vector-based arithmetic](./using-vdsp-for-vector-based-arithmetic.md)
 
-#### Discussion
+## Discussion
 
 This function calculates the products of the first `N` elements of `A` and `B`, adds each product to the corresponding value in `C`, and writes the result to `D`, as follows:
 

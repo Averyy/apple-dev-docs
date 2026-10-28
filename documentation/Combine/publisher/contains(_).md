@@ -23,11 +23,11 @@ func contains(_ output: Self.Output) -> Publishers.Contains<Self>
 
 Available when `Output` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 A publisher that emits the Boolean value `true` when the upstream publisher emits a matching value.
 
-#### Discussion
+## Discussion
 
 Use [`contains(_:)`](./contains%28_%29.md) to find the first element in an upstream that’s equal to the supplied argument. The contains publisher consumes all received elements until the upstream publisher produces a matching element. Upon finding the first match, it emits `true` and finishes normally. If the upstream finishes normally without producing a matching element, this publisher emits `false` and finishes.
 

@@ -20,7 +20,7 @@ var attributedAlternateTitle: NSAttributedString { get set }
 @property (copy) NSAttributedString * attributedAlternateTitle;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the string that appears on the button when it’s in an on state, as an `NSAttributedString`, or the empty string if the button doesn’t display an alternate title. By default, a button’s alternate title is Button.
 

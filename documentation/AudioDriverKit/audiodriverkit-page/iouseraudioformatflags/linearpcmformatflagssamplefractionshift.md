@@ -15,7 +15,7 @@ A mask used to calculate the number of fractional bits in the flags field.
 LinearPCMFormatFlagsSampleFractionShift
 ```
 
-#### Discussion
+## Discussion
 
 This value completes the following relationship:
 

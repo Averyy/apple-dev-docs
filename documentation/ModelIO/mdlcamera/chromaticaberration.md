@@ -24,7 +24,7 @@ var chromaticAberration: Float { get set }
 @property (nonatomic, assign) float chromaticAberration;
 ```
 
-#### Discussion
+## Discussion
 
 Chromatic aberration occurs to some degree in all lenses. It results from a lens bringing different wavelengths of light to focus at different places on the image plane. A value of `0.0` (the default) indicates no chromatic aberration, and a value of `1.0` indicates the maximum amount. Chromatic aberration affects all locations in the image according to radial distance. Chromatic aberration also occurs in head-mounted displays, and the value here can be used as an intended amount of chromatic aberration to apply to an image.
 

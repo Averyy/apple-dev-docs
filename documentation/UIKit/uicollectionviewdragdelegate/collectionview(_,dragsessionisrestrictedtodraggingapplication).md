@@ -22,11 +22,11 @@ optional func collectionView(_ collectionView: UICollectionView, dragSessionIsRe
 - (BOOL) collectionView:(UICollectionView *) collectionView dragSessionIsRestrictedToDraggingApplication:(id<UIDragSession>) session;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when the source app and destination app should be the same — that is, the user is not allowed to drop the item on another app.
 
-#### Discussion
+## Discussion
 
 If you don’t implement this method, the default return value is [`false`](../../Swift/false.md).
 

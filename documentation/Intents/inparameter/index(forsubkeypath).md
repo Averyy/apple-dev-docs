@@ -22,11 +22,11 @@ func index(forSubKeyPath subKeyPath: String) -> Int
 - (NSUInteger) indexForSubKeyPath:(NSString *) subKeyPath;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the item in the array.
 
-#### Discussion
+## Discussion
 
 For intents or responses that contain an array of values, use this method to determine which object in the array was specified. For example, if a parameter represented the first object in an array of messages returned by a search, specifying the string `messages` would return the value `0`.
 

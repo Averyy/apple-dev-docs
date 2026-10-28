@@ -25,7 +25,7 @@ func finishedProcessingMP4Clip(withUpdatedBroadcastConfiguration broadcastConfig
 - (void) finishedProcessingMP4ClipWithUpdatedBroadcastConfiguration:(RPBroadcastConfiguration *) broadcastConfiguration error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when processing is complete. After this method is called, whether an error exists or not, the current MP4 movie clip is no longer available.
 

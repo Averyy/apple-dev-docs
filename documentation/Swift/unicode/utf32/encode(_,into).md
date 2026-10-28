@@ -21,7 +21,7 @@ Encodes a Unicode scalar as a UTF-32 code unit by calling the given closure.
 static func encode(_ input: Unicode.Scalar, into processCodeUnit: (Unicode.UTF32.CodeUnit) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 For example, like every Unicode scalar, the musical fermata symbol (“𝄐”) can be represented in UTF-32 as a single code unit. The following code encodes a fermata in UTF-32:
 

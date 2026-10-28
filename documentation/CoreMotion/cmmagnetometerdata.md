@@ -23,7 +23,7 @@ class CMMagnetometerData
 @interface CMMagnetometerData : CMLogItem
 ```
 
-#### Overview
+## Overview
 
 Your application can obtain samples of magnetometer measurements, as represented by instances of this class, from the block handler of the [`startMagnetometerUpdates(to:withHandler:)`](./cmmotionmanager/startmagnetometerupdates%28to,withhandler%29.md) method or from the [`magnetometerData`](./cmmotionmanager/magnetometerdata.md) property of the `CMMotionManager` class.
 

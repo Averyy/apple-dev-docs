@@ -15,7 +15,7 @@ The 3D affine transform of the manipulated view, or `nil` if the view doesn’t 
 let transform: AffineTransform3D?
 ```
 
-#### Discussion
+## Discussion
 
 A view may not have a well-defined 3D affine transform e.g. when it’s affected by a projection transform.
 

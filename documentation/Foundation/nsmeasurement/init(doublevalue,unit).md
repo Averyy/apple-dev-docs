@@ -25,7 +25,7 @@ init(doubleValue: Double, unit: Unit)
 - (instancetype) initWithDoubleValue:(double) doubleValue unit:(UnitType) unit;
 ```
 
-#### Return Value
+## Return Value
 
 A measurement initialized to have the specified double-precision floating-point value and unit.
 

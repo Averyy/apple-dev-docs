@@ -25,11 +25,11 @@ func SparseLSMR() -> SparseIterativeMethod
 static SparseIterativeMethod SparseLSMR();
 ```
 
-#### Return Value
+## Return Value
 
 A [`SparseIterativeMethod`](./sparseiterativemethod.md) structure that represents a default LSMR method.
 
-#### Discussion
+## Discussion
 
 LSMR is a minimal residual (MINRES) method for solving least squares. Use LSMR to solve equations of the form *Ax = b* where an exact solution doesn’t exist. The returned solution minimizes ‖ *b-Ax* ‖₂.
 

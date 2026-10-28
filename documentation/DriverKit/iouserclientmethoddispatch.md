@@ -18,7 +18,7 @@ A structure that specifies how to validate the arguments passed to a client meth
 struct IOUserClientMethodDispatch;
 ```
 
-#### Discussion
+## Discussion
 
 Used this structure to specify the validation checks to perform on the fields of the IOUserClientMethodArguments structure passed to an [`IOUserClientMethodFunction`](./iouserclientmethodfunction.md).
 

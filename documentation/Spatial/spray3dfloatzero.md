@@ -19,7 +19,7 @@
 static const SPRay3DFloat SPRay3DFloatZero;
 ```
 
-#### Discussion
+## Discussion
 
 The ray with the value zero.
 

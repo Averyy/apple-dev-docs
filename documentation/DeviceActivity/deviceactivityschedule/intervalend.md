@@ -17,7 +17,7 @@ The date components that represent the end time for a schedule’s interval.
 var intervalEnd: DateComponents { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system uses these components to compute `nextInterval.end`.
 

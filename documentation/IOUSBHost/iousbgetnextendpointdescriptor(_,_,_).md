@@ -20,11 +20,11 @@ func IOUSBGetNextEndpointDescriptor(_ configurationDescriptor: UnsafePointer<IOU
 const IOUSBEndpointDescriptor *IOUSBGetNextEndpointDescriptor(const IOUSBConfigurationDescriptor *configurationDescriptor, const IOUSBInterfaceDescriptor *interfaceDescriptor, const IOUSBDescriptorHeader *currentDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor pointer, or `nil` if no matching descriptor returns.
 
-#### Discussion
+## Discussion
 
 This method uses [`IOUSBGetNextAssociatedDescriptorWithType(_:_:_:_:)`](./iousbgetnextassociateddescriptorwithtype%28_,_,_,_%29.md) to find the next endpoint descriptor for a specific interface descriptor.
 

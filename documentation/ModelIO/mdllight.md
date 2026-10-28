@@ -24,7 +24,7 @@ class MDLLight
 @interface MDLLight : MDLObject
 ```
 
-#### Overview
+## Overview
 
 When you load lights from an asset file using the [`MDLAsset`](./mdlasset.md) class or create lights when building an asset for export, you use one or more of the concrete subclasses [`MDLPhysicallyPlausibleLight`](./mdlphysicallyplausiblelight.md), [`MDLAreaLight`](./mdlarealight.md), [`MDLPhotometricLight`](./mdlphotometriclight.md), or [`MDLLightProbe`](./mdllightprobe.md).
 

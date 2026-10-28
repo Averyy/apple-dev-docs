@@ -14,7 +14,7 @@ Returns true if the incoming value is a not a number (NaN).
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Is Not a Number (half)**:
 

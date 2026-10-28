@@ -25,7 +25,7 @@ static let surface: SCNShaderModifierEntryPoint
 extern SCNShaderModifierEntryPoint const SCNShaderModifierEntryPointSurface;
 ```
 
-#### Discussion
+## Discussion
 
 Shader modifiers for this entry point execute in the fragment processing stage.
 

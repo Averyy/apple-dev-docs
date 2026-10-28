@@ -21,7 +21,7 @@ The maximum image dimension to use for contour detection.
 var maximumImageDimension: Int
 ```
 
-#### Discussion
+## Discussion
 
 Contour detection is computationally intensive. To improve performance, the framework scales the input image down, while maintaining its aspect ratio, such that its maximum dimension is the value of this property. The framework never scales the image up, so specifying the maximum value ensures that the image processes in its original size and not as a downscaled version.
 

@@ -28,7 +28,7 @@ enum MTLResourceUsage : NSUInteger;
 
 - [Tracking the resource residency of argument buffers](./tracking-the-resource-residency-of-argument-buffers.md)
 
-#### Overview
+## Overview
 
 You can combine multiple [`MTLResourceUsage`](./mtlresourceusage.md) values with a bitwise OR (`|`) if the resource serves multiple purposes over its lifetime. You can enable options for certain resources that indicate whether the Metal driver needs to convert the resource to another format, such as whether it needs to decompress a color render target.
 

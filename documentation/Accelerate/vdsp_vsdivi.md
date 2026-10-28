@@ -21,7 +21,7 @@ Calculates the integer element-wise division of a vector and a scalar value, usi
 extern void vDSP_vsdivi(const int *__A, vDSP_Stride __IA, const int *__B, int *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise division of vector `A` and scalar value `B`, and writes the result to vector `C`, as follows:
 

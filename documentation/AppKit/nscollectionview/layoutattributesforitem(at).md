@@ -19,11 +19,11 @@ func layoutAttributesForItem(at indexPath: IndexPath) -> NSCollectionViewLayoutA
 - (NSCollectionViewLayoutAttributes *) layoutAttributesForItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The layout attributes of the item or `nil` if no item exists at the specified path.
 
-#### Discussion
+## Discussion
 
 This method updates the layout information as needed before returning the specified attributes. Always use this method to retrieve the layout attributes for items in the collection view. Do not query the layout object directly.
 

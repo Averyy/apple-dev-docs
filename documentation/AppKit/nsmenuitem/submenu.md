@@ -19,7 +19,7 @@ var submenu: NSMenu? { get set }
 @property (strong, nullable) NSMenu * submenu;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of the `NSMenuItem` class raises an exception if `aSubmenu` already has a supermenu.
 

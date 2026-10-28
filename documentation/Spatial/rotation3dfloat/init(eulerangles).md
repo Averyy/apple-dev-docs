@@ -23,11 +23,11 @@ init(eulerAngles: EulerAnglesFloat)
 static SPRotation3DFloat SPRotation3DFloatMakeWithEulerAngles(SPEulerAnglesFloat eulerAngles);
 ```
 
-#### Return Value
+## Return Value
 
 A rotation structure.
 
-#### Discussion
+## Discussion
 
 Returns a rotation structure from the specified Euler angles.
 

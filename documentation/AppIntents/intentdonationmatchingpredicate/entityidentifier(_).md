@@ -21,11 +21,11 @@ Creates a predicate to match any donation that contains the specified entity in 
 static func entityIdentifier(_ identifier: EntityIdentifier) -> IntentDonationMatchingPredicate
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches a donation if it contains a parameter with the specified entity.
 
-#### Discussion
+## Discussion
 
 When you delete the data for an entity from your app’s data store, use this method to remove any donations that refer to that [`AppEntity`](../appentity.md) instance. This predicate matches all donations in which the app intent contains a parameter with the specified entity. Removing those donations prevents the system from suggesting an app intent that your app can’t run because it doesn’t have the needed data.
 

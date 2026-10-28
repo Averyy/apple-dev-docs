@@ -24,7 +24,7 @@ func MTLRegionMake3D(_ x: Int, _ y: Int, _ z: Int, _ width: Int, _ height: Int, 
 static MTLRegion MTLRegionMake3D(NSUInteger x, NSUInteger y, NSUInteger z, NSUInteger width, NSUInteger height, NSUInteger depth);
 ```
 
-#### Return Value
+## Return Value
 
 A 3D region with the specified values.
 

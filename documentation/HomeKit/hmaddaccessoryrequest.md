@@ -22,7 +22,7 @@ class HMAddAccessoryRequest
 @interface HMAddAccessoryRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`HMAddAccessoryRequest`](./hmaddaccessoryrequest.md) instance describes an accessory that your app should add to a home. HomeKit calls your home manager delegate’s [`homeManager(_:didReceiveAddAccessoryRequest:)`](./hmhomemanagerdelegate/homemanager%28_,didreceiveaddaccessoryrequest%29.md) method with a request.
 

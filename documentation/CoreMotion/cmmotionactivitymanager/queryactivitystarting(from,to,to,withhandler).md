@@ -22,7 +22,7 @@ func queryActivityStarting(from start: Date, to end: Date, to queue: OperationQu
 - (void) queryActivityStartingFromDate:(NSDate *) start toDate:(NSDate *) end toQueue:(NSOperationQueue *) queue withHandler:(CMMotionActivityQueryHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method runs asynchronously, returning immediately and delivering the results to the specified `handler` block. A delay of up to several minutes in reported activities is expected.
 

@@ -19,11 +19,11 @@ convenience init(imageName: String)
 + (instancetype) imageWithImageName:(NSString *) imageName;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `WKImage` object.
 
-#### Discussion
+## Discussion
 
 Use this method to specify an image by name. Only the image name is sent from your WatchKit extension to your Watch app, and the Watch app handles the loading of that image from its own bundle. If it cannot find the specified image, it displays no image.
 

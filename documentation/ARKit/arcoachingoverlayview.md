@@ -23,7 +23,7 @@ class ARCoachingOverlayView
 @interface ARCoachingOverlayView : UIView
 ```
 
-#### Overview
+## Overview
 
 This view offers your users a standardized onboarding routine. You can configure this view to automatically display during session initialization and in limited tracking situations, while giving the user specific instructions that best facilitate ARKit’s world tracking.
 
@@ -39,11 +39,11 @@ When you start your app, the coaching overlay asks the user to move the device i
 
 For an example app that uses the coaching overlay, see [Placing objects and handling 3D interaction](./placing-objects-and-handling-3d-interaction.md).
 
-##### Supporting Automatic Coaching
+### Supporting Automatic Coaching
 
 By default, [`activatesAutomatically`](./arcoachingoverlayview/activatesautomatically.md) is enabled and therefore you should override [`coachingOverlayViewWillActivate(_:)`](./arcoachingoverlayviewdelegate/coachingoverlayviewwillactivate%28_%29.md) to determine whether coaching is in progress. Coordinate your actions to help the user focus on these instructions, for example, by hiding any UI that’s not necessary while the session reinitializes.
 
-##### Relocalizing After an Interruption
+### Relocalizing After an Interruption
 
 If relocalization is enabled (see [`sessionShouldAttemptRelocalization(_:)`](./arsessionobserver/sessionshouldattemptrelocalization%28_%29.md)), ARKit attempts to restore your session if any interruptions degrade your app’s tracking state. In this event, the coaching overlay presents itself and gives the user instructions to assist ARKit with relocalizing.
 

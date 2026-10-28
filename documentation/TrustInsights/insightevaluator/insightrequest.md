@@ -16,7 +16,7 @@ A structure you use to make a request for a specific insight.
 struct InsightRequest<InsightType> where InsightType : TrustInsight
 ```
 
-#### Discussion
+## Discussion
 
 You can include one or more in the [`InsightEvaluator.InsightContext`](./insightcontext.md) for an evaluation request.
 

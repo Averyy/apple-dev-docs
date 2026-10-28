@@ -9,7 +9,7 @@
 bool asyncPowerStateChangeInProgress;
 ```
 
-#### Overview
+## Overview
 
 Set to true while an asynchronous power change is pending and false all other times.
 

@@ -5,7 +5,7 @@
 
 Include an entitlement to indicate your extension is a MediaExtension format reader.
 
-#### Overview
+## Overview
 
 MediaExtension format readers must include a special entitlement key with a Boolean value set to `true`. To add the entitlement key in Xcode, follow these steps:
 

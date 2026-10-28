@@ -25,7 +25,7 @@ func CFURLGetBytes(_ url: CFURL!, _ buffer: UnsafeMutablePointer<UInt8>!, _ buff
 extern CFIndex CFURLGetBytes(CFURLRef url, UInt8 *buffer, CFIndex bufferLength);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of bytes in `buffer` that were filled. If the buffer is of insufficient size, returns `-1`.
 

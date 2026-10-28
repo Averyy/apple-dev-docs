@@ -22,7 +22,7 @@ nonisolated
 func containerCornerOffset(_ edges: Edge.Set, sizeToFit: Bool = false) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier when you would like the view’s layout to adapt to avoid the container view’s corner insets for a set of edges. Corner insets may include pieces of system UI as well as the corner radii for windows and presentations. When a specific edge is provided the view is positioned to avoid insets from only the corners of that edge. When multiple corner edges overlap in the same axis the view will be positioned off the larger overlapping inset.
 

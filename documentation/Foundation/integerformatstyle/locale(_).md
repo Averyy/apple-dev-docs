@@ -23,11 +23,11 @@ func locale(_ locale: Locale) -> IntegerFormatStyle<Value>
 
 Available when `Value` conforms to `BinaryInteger`.
 
-#### Return Value
+## Return Value
 
 An integer format style modified to use the provided locale.
 
-#### Discussion
+## Discussion
 
 Use this modifier to change the locale used by an existing format style. To instead determine the locale this format style uses, use the [`locale`](./locale.md) property.
 

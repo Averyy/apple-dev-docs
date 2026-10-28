@@ -21,7 +21,7 @@ init(text: String?, cardElements elements: [CPListImageRowItemCardElement], allo
 - (instancetype) initWithText:(NSString *) text cardElements:(NSArray<CPListImageRowItemCardElement *> *) elements allowsMultipleLines:(BOOL) allowsMultipleLines;
 ```
 
-#### Discussion
+## Discussion
 
 If a nil @c text property is provided the cell will resize accordingly to hide the title.
 

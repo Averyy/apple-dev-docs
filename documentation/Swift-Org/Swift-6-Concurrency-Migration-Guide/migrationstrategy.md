@@ -17,7 +17,7 @@ Frequently, you’ll find yourself making substantial progress with just a few c
 
 > ❗ **Important**: This guidance should not be interpreted as a recommendation. You should feel confident about using other approaches.
 
-#### Strategy
+## Strategy
 
 This document outlines a general strategy that could be a good starting point. There is no one single approach that will work for all projects.
 
@@ -29,13 +29,13 @@ The approach has three key steps:
 
 This process will be inherently *iterative*. Even a single change in one module can have a large impact on the state of the project as a whole.
 
-#### Begin from the Outside
+## Begin from the Outside
 
 It can be easier to start with the outer-most root module in a project. This, by definition, is not a dependency of any other module. Changes here can only have local effects, making it possible to keep work contained.
 
 Your changes do not *need* to be contained to the module, however. Dependencies under your control that have [unsafe global state](./commonproblems.md#Unsafe-Global-and-Static-Variables) or [trivially-`Sendable` types](./commonproblems.md#Implicitly-Sendable-Types) can be the root cause of many warnings across your project. These can often be the best things to focus on first.
 
-#### Use the Swift 5 Language Mode
+## Use the Swift 5 Language Mode
 
 You could find it quite challenging to move a project from Swift 5 with no checking directly to the Swift 6 language mode. It is possible, instead, to incrementally enable more of the Swift 6 checking mechanisms while remaining in Swift 5 mode. This will surface issues only as warnings, keeping your build and tests functional as you progress.
 
@@ -51,7 +51,7 @@ These can be enabled independently and in any order.
 
 After you have addressed issues uncovered by upcoming feature flags, the next step is to [enable complete checking](./enabledataracesafety.md) for the module. This will turn on all of the compiler’s remaining data isolation checks.
 
-#### Address Warnings
+## Address Warnings
 
 There is one guiding principle you should use as you investigate warnings: **express what is true now**. Resist the urge to refactor your code to address issues.
 
@@ -59,7 +59,7 @@ You will find it beneficial to minimize the amount of change necessary to get to
 
 > **Note**: To learn more about addressing common problems, see [Common Compiler Errors](./commonproblems.md).
 
-#### Iteration
+## Iteration
 
 At first, you’ll likely be employing techniques to disable or workaround data isolation problems. Once you feel like you’ve reached the stopping point for a higher-level module, target one of its dependencies that has required a workaround.
 

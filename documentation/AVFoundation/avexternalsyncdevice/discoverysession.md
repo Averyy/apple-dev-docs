@@ -23,7 +23,7 @@ class DiscoverySession
 @interface AVExternalSyncDeviceDiscoverySession : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`AVExternalSyncDevice.DiscoverySession`](./discoverysession.md) is a singleton that lists the external sync devices connected to the host. The client is expected to key-value observe the [`devices`](./discoverysession/devices.md) property for changes to the external sync devices list.
 

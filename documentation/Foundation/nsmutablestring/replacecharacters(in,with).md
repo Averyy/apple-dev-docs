@@ -25,7 +25,7 @@ func replaceCharacters(in range: NSRange, with aString: String)
 - (void) replaceCharactersInRange:(NSRange) range withString:(NSString *) aString;
 ```
 
-#### Discussion
+## Discussion
 
 This method treats the length of the string as a valid range value that returns an empty string.
 

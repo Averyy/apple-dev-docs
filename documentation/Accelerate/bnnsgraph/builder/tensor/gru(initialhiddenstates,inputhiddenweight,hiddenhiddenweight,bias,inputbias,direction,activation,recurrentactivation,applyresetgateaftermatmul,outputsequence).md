@@ -23,7 +23,7 @@ func gru(initialHiddenStates: BNNSGraph.Builder.Tensor<T>, inputHiddenWeight: BN
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 If `applyResetGateAfterMatMul` is false, For each time `t`, from `0` to `L-1`, computes:
 

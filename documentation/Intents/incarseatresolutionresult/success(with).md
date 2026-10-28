@@ -24,11 +24,11 @@ class func success(with resolvedCarSeat: INCarSeat) -> Self
 + (instancetype) successWithResolvedCarSeat:(INCarSeat) resolvedCarSeat;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCarSeatResolutionResult`](../incarseatresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you recognize the chosen seat position and are able to modify it.
 

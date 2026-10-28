@@ -22,7 +22,7 @@ case possible
 UISpringLoadedInteractionEffectStatePossible
 ```
 
-#### Discussion
+## Discussion
 
 The interaction view provides a visual cue to the user that spring loading is available.
 

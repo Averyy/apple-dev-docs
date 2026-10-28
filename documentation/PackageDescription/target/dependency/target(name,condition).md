@@ -15,7 +15,7 @@ Creates a dependency on a target in the same package.
 static func target(name: String, condition: TargetDependencyCondition? = nil) -> Target.Dependency
 ```
 
-#### Return Value
+## Return Value
 
 A `Target.Dependency` instance.
 

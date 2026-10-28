@@ -21,7 +21,7 @@ Creates a recipient in authentication mode.
 init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data, authenticatedBy authenticationKey: SK.PublicKey) throws where SK : HPKEDiffieHellmanPrivateKey
 ```
 
-#### Discussion
+## Discussion
 
 The `Receiver` decrypts messages in authentication mode using the encapsulated key with the key schedule information (`info` data). Messages also include authentication data so that the recipient can verify the authenticity of the sender’s private key.
 

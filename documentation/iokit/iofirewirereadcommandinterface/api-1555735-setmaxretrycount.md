@@ -16,7 +16,7 @@ Sets the maximum number of retries for this command.
 void (*SetMaxRetryCount)(IOFireWireLibCommandRef self, UInt32 count);
 ```
 
-#### Return Value
+## Return Value
 
 void
 

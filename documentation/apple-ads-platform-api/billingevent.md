@@ -20,7 +20,7 @@ string BillingEvent
 - `TAPS`: The campaign is charged each time a user taps an ad. For App Ads campaigns, compatible with `MANUAL_CPT` and `MAX_CONVERSIONS`. For Apple Maps campaigns, compatible with `MANUAL_CPT` and `MAX_ENGAGEMENTS`.
 - `IMPRESSIONS`: The campaign is charged per thousand impressions (CPM). Required for the `MANUAL_CPM` bid strategy. Available only for Apple Maps campaigns (`promotedObjectType: BUSINESS_BRAND`).
 
-#### Discussion
+## Discussion
 
 You set `BillingEvent` at campaign creation, and it stays fixed afterward. The value you choose constrains which bid strategies are available and applies uniformly to all ad groups in the campaign.
 

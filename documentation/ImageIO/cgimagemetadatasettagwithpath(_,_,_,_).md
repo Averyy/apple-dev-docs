@@ -25,7 +25,7 @@ func CGImageMetadataSetTagWithPath(_ metadata: CGMutableImageMetadata, _ parent:
 extern bool CGImageMetadataSetTagWithPath(CGMutableImageMetadataRef metadata, CGImageMetadataTagRef parent, CFStringRef path, CGImageMetadataTagRef tag);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the function saved the tag successfully, or `false` if it encountered a problem.
 

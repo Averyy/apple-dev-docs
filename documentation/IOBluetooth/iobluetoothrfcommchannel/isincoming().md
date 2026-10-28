@@ -19,7 +19,7 @@ func isIncoming() -> Bool
 - (BOOL) isIncoming;
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if the channel was opened by the remote device, FALSE if the channel was opened by this object.
 

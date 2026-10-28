@@ -19,7 +19,7 @@ Creates an object from an image texture.
 init(texture: CustomMaterial.Texture? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Ambient occlusion represents the entity’s exposure to ambient light. This function creates a new ambient occlusion object from a UV-mapped image texture.
 

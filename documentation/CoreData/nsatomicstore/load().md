@@ -25,7 +25,7 @@ func load() throws
 - (BOOL) load:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 You override this method to load the data from the URL specified in [`init(persistentStoreCoordinator:configurationName:at:options:)`](./init%28persistentstorecoordinator,configurationname,at,options%29.md) and create cache nodes for the represented objects. You must respect the configuration specified for the store, as well as the options.
 

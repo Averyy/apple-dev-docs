@@ -15,11 +15,11 @@ Adds a single network packet to the queue for processing.
 virtual kern_return_t EnqueuePacket(IOUserNetworkPacket *packet);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 
-#### Discussion
+## Discussion
 
 Call this method when you are ready to submit a single packet to a completion queue for processing. After the system processes the enqueued network packet, it recycles it and makes it available on the corresponding submission queue.
 

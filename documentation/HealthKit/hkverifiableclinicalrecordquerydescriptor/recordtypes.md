@@ -19,7 +19,7 @@ The types of records returned by this query.
 var recordTypes: [HKVerifiableClinicalRecordCredentialType]
 ```
 
-#### Discussion
+## Discussion
 
 For a list of valid record types, see [`HKVerifiableClinicalRecordCredentialType`](../hkverifiableclinicalrecordcredentialtype.md).
 

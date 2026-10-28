@@ -28,7 +28,7 @@ func handle(intent: INRequestRideIntent) async -> INRequestRideIntentResponse
 - (void) handleRequestRide:(INRequestRideIntent *) intent completion:(void (^)(INRequestRideIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must book the requested ride using the data in the `intent` parameter, configure a response object with the details of the booking, and call the provided `completion` block. When configuring your response object, use the [`rideStatus`](../inrequestrideintentresponse/ridestatus.md) property to specify an [`INRideStatus`](../inridestatus.md) object with the details of the ride. A ride status object contains information about the vehicle and driver that are picking up the user’s party, the pickup and drop-off locations, the price of the ride, and whether the booking request was successful. For more information about configuring this object, see [`INRideStatus`](../inridestatus.md).
 

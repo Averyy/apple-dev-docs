@@ -22,7 +22,7 @@ optional func pageViewControllerPreferredInterfaceOrientationForPresentation(_ p
 - (UIInterfaceOrientation) pageViewControllerPreferredInterfaceOrientationForPresentation:(UIPageViewController *) pageViewController;
 ```
 
-#### Return Value
+## Return Value
 
 The preferred orientation for presenting the page view controller.
 

@@ -16,7 +16,7 @@ The pixel format to use for color textures.
 var colorFormat: MTLPixelFormat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to determine the pixel format for color textures in a frame. At configuration time, set the value to specify which pixel format you want.
 

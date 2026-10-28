@@ -19,7 +19,7 @@ func duplicate(withDelegate delegate: Any?, didDuplicate didDuplicateSelector: S
 - (void) duplicateDocumentWithDelegate:(id) delegate didDuplicateSelector:(SEL) didDuplicateSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The new document that is created doesn’t yet have a value to return from [`fileURL`](./fileurl.md). When duplicating is completed, regardless of success or failure, or whether the operation is rejected by the user, this method sends the message indicated by `didDuplicateSelector` to the delegate, with `contextInfo` as the last argument. The method selected by `didDuplicateSelector` must have the same signature as:
 

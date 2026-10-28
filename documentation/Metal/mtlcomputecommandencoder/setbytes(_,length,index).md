@@ -25,7 +25,7 @@ func setBytes(_ bytes: UnsafeRawPointer, length: Int, index: Int)
 - (void) setBytes:(const void *) bytes length:(NSUInteger) length atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method only works for data smaller than 4 kilobytes that doesn’t persist. Create an [`MTLBuffer`](../mtlbuffer.md) instance if your data exceeds 4 KB, needs to persist on the GPU, or you access results on the CPU.
 

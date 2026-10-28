@@ -21,7 +21,7 @@ A type that represents text containing comma-separated values.
 static var commaSeparatedText: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.comma-separated-values-text`.
 

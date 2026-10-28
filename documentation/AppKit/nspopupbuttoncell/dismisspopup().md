@@ -19,7 +19,7 @@ func dismissPopUp()
 - (void) dismissPopUp;
 ```
 
-#### Discussion
+## Discussion
 
 If the pop-up button was not displaying its menu, this method does nothing.
 

@@ -21,7 +21,7 @@ The UUID used to compute the device verification value.
 let deviceVerificationNonce: UUID
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`deviceVerificationID`](../appstore/deviceverificationid.md).
 

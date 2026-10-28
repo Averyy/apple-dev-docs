@@ -16,11 +16,11 @@ Returns the `NSConnection` object whose send port links it to the `NSConnection`
 + (instancetype) connectionWithRegisteredName:(NSString *) name host:(NSString *) hostName;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSConnection` object whose send port links it to the `NSConnection` object registered with the default `NSPortNameServer` under `name` on the host named `hostName`. Returns `nil` if no `NSConnection` object can be found for `name` and `hostName`. The returned `NSConnection` object is a child of the default `NSConnection` object for the current thread (that is, it shares the default `NSConnection` object’s receive port).
 
-#### Discussion
+## Discussion
 
 To get the object vended by the `NSConnection` object, use the [`rootProxy`](./rootproxy.md) instance method. The [`rootProxyForConnectionWithRegisteredName:host:`](./rootproxyforconnectionwithregisteredname_host_.md) class method immediately returns this object.
 

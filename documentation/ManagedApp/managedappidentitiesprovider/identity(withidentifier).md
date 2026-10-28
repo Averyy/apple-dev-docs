@@ -18,11 +18,11 @@ Provides an identity by its identifier.
 func identity(withIdentifier identifier: String) async throws(ManagedAppError) -> SecIdentity
 ```
 
-#### Return Value
+## Return Value
 
 The requested identity.
 
-#### Discussion
+## Discussion
 
 The MDM server can update the identity at any time. After that, [`identifiers`](./identifiers.md) yields a new array of identifiers. Call this method again to obtain the updated identity.
 

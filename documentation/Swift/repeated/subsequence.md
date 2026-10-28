@@ -21,7 +21,7 @@ A collection representing a contiguous subrange of this collection’s elements.
 typealias SubSequence = Slice<Repeated<Element>>
 ```
 
-#### Discussion
+## Discussion
 
 The default subsequence type for collections that don’t define their own is `Slice`.
 

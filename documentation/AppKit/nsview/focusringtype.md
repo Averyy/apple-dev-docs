@@ -19,11 +19,11 @@ var focusRingType: NSFocusRingType { get set }
 @property NSFocusRingType focusRingType;
 ```
 
-#### Return Value
+## Return Value
 
 An `enum` constant identifying a type of focus ring. Possible values are listed in [`NSFocusRingType`](../nsfocusringtype.md).
 
-#### Discussion
+## Discussion
 
 Use this property to specify the type of focus ring to draw. For a list of possible values, see [`NSFocusRingType`](../nsfocusringtype.md).
 

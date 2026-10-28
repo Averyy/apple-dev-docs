@@ -23,7 +23,7 @@ static func == (lhs: Array<Element>, rhs: Array<Element>) -> Bool
 
 Available when `Element` conforms to `Equatable`.
 
-#### Discussion
+## Discussion
 
 You can use the equal-to operator (`==`) to compare any two arrays that store the same, `Equatable`-conforming element type.
 

@@ -25,7 +25,7 @@ func CFStringAppend(_ theString: CFMutableString!, _ appendedString: CFString!)
 extern void CFStringAppend(CFMutableStringRef theString, CFStringRef appendedString);
 ```
 
-#### Discussion
+## Discussion
 
 This function reallocates the backing store of `theString` to accommodate the new length.
 

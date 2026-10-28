@@ -24,7 +24,7 @@ class GKGoal
 @interface GKGoal : NSObject
 ```
 
-#### Overview
+## Overview
 
 Goals can motivate agents ([`GKAgent`](./gkagent.md) objects) to actions such as moving toward a target, following a path, or staying aligned with a group of other agents. To give an agent one or more goals, combine those goals in a [`GKBehavior`](./gkbehavior.md) object (which includes weights for the relative influence of each goal) and assign that object to the agent’s [`behavior`](./gkagent/behavior.md) property.
 

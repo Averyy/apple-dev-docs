@@ -25,7 +25,7 @@ class MLUpdateTask
 @interface MLUpdateTask : MLTask
 ```
 
-#### Overview
+## Overview
 
 Use an [`MLUpdateTask`](./mlupdatetask.md) to update a machine learning model on a user’s device.
 

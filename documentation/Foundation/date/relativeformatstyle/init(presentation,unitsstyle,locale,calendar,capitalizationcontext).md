@@ -21,7 +21,7 @@ Creates a relative date format style with the specified presentation, units, loc
 init(presentation: Date.RelativeFormatStyle.Presentation = .numeric, unitsStyle: Date.RelativeFormatStyle.UnitsStyle = .wide, locale: Locale = .autoupdatingCurrent, calendar: Calendar = .autoupdatingCurrent, capitalizationContext: FormatStyleCapitalizationContext = .unknown)
 ```
 
-#### Discussion
+## Discussion
 
 The following example creates a format style applied to a relative date to create a string representation.
 

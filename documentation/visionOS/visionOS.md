@@ -7,7 +7,7 @@ Create a new universe of apps and games for Apple Vision Pro.
 **Availability**:
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 visionOS is the operating system that powers Apple Vision Pro. Use visionOS together with familiar tools and technologies to build immersive apps and games for spatial computing.
 
@@ -15,7 +15,7 @@ visionOS is the operating system that powers Apple Vision Pro. Use visionOS toge
 
 Developing for visionOS requires a Mac with Apple silicon. Create new apps using SwiftUI to take full advantage of the spectrum of immersion available in visionOS. If you have an existing iPad or iPhone app, add the visionOS destination to your app’s target to gain access to the standard system appearance, and add platform-specific features to create a compelling experience. To provide continuous access to your content in the meantime, deliver a compatible version of your app that runs in visionOS.
 
-##### Expand your app into immersive spaces
+### Expand your app into immersive spaces
 
 Start with a familiar window-based experience to introduce people to your content. From there, add [SwiftUI](../SwiftUI/SwiftUI.md) scene types specific to visionOS, such as volumes and spaces. These scene types let you incorporate depth, 3D objects, and immersive experiences.
 
@@ -23,7 +23,7 @@ Build your app’s 3D content with [RealityKit](../RealityKit/RealityKit.md) and
 
 ![An illustration that shows a person wearing Apple Vision Pro and looking at three windows and a volume in the space in front of them.](https://developer.apple.com/tutorials/images/com.apple.visionOS/shared-spaces@2x.png)
 
-##### Explore new kinds of interaction
+### Explore new kinds of interaction
 
 People can select an element by looking at it and tapping their fingers together. They can also pinch, drag, zoom, and rotate objects using specific hand gestures. [SwiftUI](../SwiftUI/SwiftUI.md) provides built-in support for these standard gestures, so rely on them for most of your app’s input. When you want to go beyond the standard gestures, use [ARKit](../ARKit/ARKit.md) to create custom gestures.
 
@@ -35,7 +35,7 @@ People can select an element by looking at it and tapping their fingers together
 
 ![An illustration that shows an object sitting in the palm of someone's hand.](https://developer.apple.com/tutorials/images/com.apple.visionOS/custom@2x.png)
 
-##### Dive into featured sample apps
+### Dive into featured sample apps
 
 Explore the core concepts for all visionOS apps with Hello World. Understand how to detect custom gestures using ARKit with Happy Beam. Discover streaming 2D and stereoscopic media with Destination Video. And learn how to build 3D scenes with RealityKit and Reality Composer Pro with Diorama and Swift Splash.
 

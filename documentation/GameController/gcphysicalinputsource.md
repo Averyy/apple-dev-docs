@@ -24,7 +24,7 @@ protocol GCPhysicalInputSource : NSObjectProtocol
 @protocol GCPhysicalInputSource <NSObject>
 ```
 
-#### Overview
+## Overview
 
 If necessary, use the properties in this protocol to get the actual input element aliases, localized name, and symbols without the user’s remapping of the controls in the System Game Controller settings. Otherwise, use the [`localizedName`](./gcphysicalinputelement/localizedname.md) and [`sfSymbolsName`](./gcphysicalinputelement/sfsymbolsname.md) in the [`GCPhysicalInputElement`](./gcphysicalinputelement.md) protocol in your interface.
 

@@ -22,7 +22,7 @@ nonisolated
 func appEntityIdentifier(_ identifier: EntityIdentifier?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to make your app entity discoverable by Apple Intelligence and Siri and provide additional context to the system when the view appears onscreen. You can associate the view with one app entity. If you apply the modifier several times on one view, the system gives precedence to the innermost modifier and discards the other modifiers.
 

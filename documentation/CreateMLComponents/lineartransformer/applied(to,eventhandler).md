@@ -27,7 +27,7 @@ func applied(to input: Element, eventHandler: EventHandler? = nil) -> Element
 func applied<S>(to input: S, eventHandler: EventHandler? = nil) -> [Element] where Element == S.Element, S : Sequence
 ```
 
-#### Return Value
+## Return Value
 
 A scaled value.
 

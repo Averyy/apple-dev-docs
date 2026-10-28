@@ -19,7 +19,7 @@ var defaultRowAnimation: NSTableView.AnimationOptions { get set }
 @property NSTableViewAnimationOptions defaultRowAnimation;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`effectFade`](../nstableview/animationoptions/effectfade.md).
 

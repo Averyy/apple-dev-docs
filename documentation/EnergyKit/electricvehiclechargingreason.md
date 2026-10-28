@@ -17,7 +17,7 @@ Information about a charging-state transition in an electric vehicle status even
 enum ElectricVehicleChargingReason
 ```
 
-#### Overview
+## Overview
 
 Use these reasons with [`ElectricVehicleStatusEvent`](./electricvehiclestatusevent.md) to provide information about why a vehicle is actively charging, or why it remains idle when connected to a charger. This information relates to the [`ElectricVehicleLoadEvent`](./electricvehicleloadevent.md), which focuses on energy consumption. Link the two by providing the load event’s session identifier in status events.
 

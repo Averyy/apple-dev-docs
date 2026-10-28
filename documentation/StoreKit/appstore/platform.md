@@ -21,7 +21,7 @@ Values that represent Apple platforms.
 struct Platform
 ```
 
-#### Discussion
+## Discussion
 
 You choose a platform for your app when you add the new app in App Store Connect. For more information, see [Add a new app](https://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app/).
 

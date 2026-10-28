@@ -22,7 +22,7 @@ A key for the font of a run of attributed text.
 enum FontAttribute
 ```
 
-#### Overview
+## Overview
 
 Access this key through the [`font`](./font.md) property of an attribute container, or set it on an `AttributedString` and pass the result to a `Text` view:
 

@@ -19,7 +19,7 @@ func draw(_ rect: NSRect)
 - (void) drawRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 [`ScreenSaverView`](../screensaverview.md) implements [`draw(_:)`](./draw%28_%29.md) to draw a black background. Subclasses can do their drawing here or in [`animateOneFrame()`](./animateoneframe%28%29.md).
 

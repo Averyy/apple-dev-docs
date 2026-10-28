@@ -15,7 +15,7 @@ The display on which new windows will be presented by default.
 var defaultDisplay: DisplayProxy { get }
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, this is typically the display which currently has focus.
 

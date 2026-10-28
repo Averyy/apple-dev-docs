@@ -15,7 +15,7 @@ The request body you use to modify a Game Center leaderboard localization update
 object GameCenterLeaderboardLocalizationV2UpdateRequest.Data.Attributes
 ```
 
-#### Overview
+## Overview
 
 - description:
 - formatterOverride:

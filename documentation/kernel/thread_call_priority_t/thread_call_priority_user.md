@@ -13,7 +13,7 @@
 THREAD_CALL_PRIORITY_USER = 2
 ```
 
-#### Discussion
+## Discussion
 
 Importance similar to that of normal user threads.
 

@@ -12,11 +12,11 @@ virtual IOReturn setPromiscuousMode(
  boolactive);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnUnsupported. If overridden, drivers must return kIOReturnSuccess on success, or an error return code otherwise.
 
-#### Overview
+## Overview
 
 Called by enablePacketFilter() or disablePacketFilter() when there is a change in the activation state of the promiscuous filter identified by kIOPacketFilterPromiscuous. This method is called from the workloop context.
 

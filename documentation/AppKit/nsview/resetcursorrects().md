@@ -19,7 +19,7 @@ func resetCursorRects()
 - (void) resetCursorRects;
 ```
 
-#### Discussion
+## Discussion
 
 A subclass’s implementation must invoke [`addCursorRect(_:cursor:)`](./addcursorrect%28_,cursor%29.md) for each cursor rectangle it wants to establish. The default implementation does nothing.
 

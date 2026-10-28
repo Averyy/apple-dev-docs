@@ -21,7 +21,7 @@ class WebUsage
 @interface SRWebUsage : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each instance of this class represents a website in a particular app category. For more information, see [`webUsageByCategory`](./webusagebycategory.md).
 

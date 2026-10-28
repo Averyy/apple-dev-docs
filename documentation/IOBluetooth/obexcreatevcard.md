@@ -15,11 +15,11 @@ Creates a formatted vCard, ready to be sent over OBEX or whatever.
 CFDataRefOBEXCreateVCard(const void *inFirstName, uint32_t inFirstNameLength, const void *inLastName, uint32_t inLastNameLength, const void *inFriendlyName, uint32_t inFriendlyNameLength, const void *inNameCharset, uint32_t inNameCharsetLength, const void *inHomePhone, uint32_t inHomePhoneLength, const void *inWorkPhone, uint32_t inWorkPhoneLength, const void *inCellPhone, uint32_t inCellPhoneLength, const void *inFaxPhone, uint32_t inFaxPhoneLength, const void *inEMailAddress, uint32_t inEMailAddressLength, const void *inEMailAddressCharset, uint32_t inEMailAddressCharsetLength, const void *inOrganization, uint32_t inOrganizationLength, const void *inOrganizationCharset, uint32_t inOrganizationCharsetLength, const void *inTitle, uint32_t inTitleLength, const void *inTitleCharset, uint32_t inTitleCharsetLength);
 ```
 
-#### Return Value
+## Return Value
 
 An CFDataRef containing the compiled data. nil if we failed.
 
-#### Discussion
+## Discussion
 
 All parameters are optional. The CFDataRef returned to you is NOT retained. Retain it if you want to keep it.
 

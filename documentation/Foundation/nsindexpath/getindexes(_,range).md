@@ -25,7 +25,7 @@ func getIndexes(_ indexes: UnsafeMutablePointer<Int>, range positionRange: NSRan
 - (void) getIndexes:(NSUInteger *) indexes range:(NSRange) positionRange;
 ```
 
-#### Discussion
+## Discussion
 
 You must allocate the memory for the C array.
 

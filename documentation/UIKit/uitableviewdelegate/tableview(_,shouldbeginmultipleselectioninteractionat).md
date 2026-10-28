@@ -22,11 +22,11 @@ optional func tableView(_ tableView: UITableView, shouldBeginMultipleSelectionIn
 - (BOOL) tableView:(UITableView *) tableView shouldBeginMultipleSelectionInteractionAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow the user to select multiple rows using a two-finger pan gesture; otherwise, [`false`](../../Swift/false.md) to disable the behavior. The default value is [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 When the system recognizes a two-finger pan gesture, it calls this method before it sets [`isEditing`](../uitableview/isediting.md) to [`true`](../../Swift/true.md). If you return [`true`](../../Swift/true.md) from this method, the user can select multiple rows using a two-finger pan gesture.
 

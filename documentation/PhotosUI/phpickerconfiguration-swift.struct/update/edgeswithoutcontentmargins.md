@@ -19,7 +19,7 @@ The portions of a photo picker’s permiter that are borderless.
 var edgesWithoutContentMargins: NSDirectionalRectEdge? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property updates the photos picker configuration ([`PHPickerConfiguration`](../../phpickerconfiguration-swift.struct.md)) property [`edgesWithoutContentMargins`](../edgeswithoutcontentmargins.md).
 

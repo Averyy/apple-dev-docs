@@ -10,13 +10,13 @@ framework: "CareKit/CareKitStore"
 
 Create schedules for tasks using multiple schedule elements.
 
-#### Overview
+## Overview
 
 When you define a schedule for performing a task, you also define one or more schedule elements. These elements allow you to build up complex behaviors composed from multiple steps.
 
 Schedules are based around specific dates, times, and intervals. Reduce the potential for complexity in calculating these by using the Calendar API and the Date Components API wherever possible. These tools handle edge cases, such as daylight savings times, and leap years that can otherwise introduce inaccuracies when attempting to calculate using seconds-based time intervals.
 
-##### Compose schedule elements
+### Compose schedule elements
 
 The following code creates a series of reference objects as a starting point for a schedule, based on the returned value from initializing a `Date` object:
 
@@ -47,7 +47,7 @@ var day3 = OCKScheduleElement(start: Calendar.current.date(byAdding: .day, value
 let multiDaySchedule = OCKSchedule(composing: [day1, day2, day3])
 ```
 
-##### Add context to schedule elements
+### Add context to schedule elements
 
 Add context to each element of the schedule by setting the text property with details of the time the element represents, and specifying a duration that the task should take:
 
@@ -57,7 +57,7 @@ element.text = "Every day at 8am for 5 minutes"
 element.duration = .seconds(300)
 ```
 
-##### Include outcome values
+### Include outcome values
 
 Each time a user completes a task event in your app, the data store saves the outcome. This outcome can contain a value or values that you configure in the schedule element. When your app presents the task for a given day, it uses the schedule defined by the elements to determine what values to associate with the outcome.
 

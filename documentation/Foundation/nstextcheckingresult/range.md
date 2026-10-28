@@ -25,7 +25,7 @@ var range: NSRange { get }
 @property (readonly) NSRange range;
 ```
 
-#### Discussion
+## Discussion
 
 This property will be present for all returned `NSTextCheckingResult` instances.
 

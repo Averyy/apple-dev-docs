@@ -20,7 +20,7 @@ Accesses the first skeletal pose.
 var `default`: SkeletalPoseSet.Element? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to accessing [`jointNames`](../hasmodel/jointnames.md) and [`jointTransforms`](../hasmodel/jointtransforms.md) if used from an entity with a skeletal model.
 

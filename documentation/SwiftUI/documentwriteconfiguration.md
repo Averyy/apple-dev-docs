@@ -19,7 +19,7 @@ The context SwiftUI passes to [`writer(configuration:)`](./writabledocument/writ
 struct DocumentWriteConfiguration
 ```
 
-#### Overview
+## Overview
 
 Contains the [`contentType`](./documentwriteconfiguration/contenttype.md) of the file being written (one of the document’s [`writableContentTypes`](./writabledocument/writablecontenttypes.md)). Use it to choose the correct serialization strategy when a document supports exporting to multiple formats.
 

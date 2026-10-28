@@ -14,7 +14,7 @@ A Boolean value that indicates whether to match the driver against devices with 
 - **Name**: `com.apple.developer.driverkit.family.serial` (DriverKit Serial Family)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Add this entitlement to the default entitlements file that Xcode created for your driver project.
 

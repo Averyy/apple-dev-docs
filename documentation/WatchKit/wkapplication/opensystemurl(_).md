@@ -19,7 +19,7 @@ func openSystemURL(_ url: URL)
 - (void) openSystemURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to initiate phone calls or send messages. The URL you open is sent to the appropriate system app for handling, at which point the user can choose whether to continue the operation.
 

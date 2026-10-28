@@ -19,7 +19,7 @@ class var notRecognized: FSProbeResult { get }
 @property (class, readonly) FSProbeResult * notRecognizedProbeResult;
 ```
 
-#### Discussion
+## Discussion
 
 An unrecognized probe result contains `nil` for its [`name`](./name.md) and [`containerID`](./containerid.md) properties.
 

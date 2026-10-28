@@ -24,11 +24,11 @@ class func correlationType(forIdentifier identifier: HKCorrelationTypeIdentifier
 + (HKCorrelationType *) correlationTypeForIdentifier:(HKCorrelationTypeIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The shared [`HKCorrelationType`](../hkcorrelationtype.md) instance based on the provided identifier.
 
-#### Discussion
+## Discussion
 
 This method returns an instance of the [`HKCorrelationType`](../hkcorrelationtype.md) concrete subclass. HealthKit uses correlation types to create complex data objects that contain multiple values. Use correlation type instances to create correlation objects that you can save in the HealthKit store. For more information, see [`HKCorrelation`](../hkcorrelation.md).
 

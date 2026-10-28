@@ -25,7 +25,7 @@ var windows: [UIWindow] { get }
 @property (nonatomic, readonly) NSArray<__kindof UIWindow *> * windows;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the [`UIWindow`](../uiwindow.md) objects currently associated with the app. This list doesn’t include windows created and managed by the system, such as the window used to display the status bar.
 

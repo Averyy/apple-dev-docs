@@ -5,13 +5,13 @@
 
 Run x86_64 Linux binaries under ARM Linux on Apple silicon.
 
-#### Overview
+## Overview
 
 In macOS 13 and later on Mac computers with Apple silicon chips, the Virtualization framework supports apps using Intel binary translation in ARM Linux virtual machines (VMs). Until macOS 26, this capability was part of Rosetta, which allows apps built for Intel-based Mac computers to run seamlessly on Apple silicon. macOS 27 directly integrates support for Intel binary translation, without needing to install Rosetta. If your app has a minimum deployment target of macOS 27, continue with [Create the Directory Share](./running-intel-binaries-in-linux-vms.md#Create-the-Directory-Share).
 
 > **Note**:  The Virtualization framework doesn’t support the bootstrapping or installation of Intel Linux distributions on Mac computers with Apple silicon. Instead, it provides support for Intel apps that run in an ARM Linux distribution.
 
-##### Test for Rosetta on macOS 26 and earlier
+### Test for Rosetta on macOS 26 and earlier
 
 > **Note**:  Starting in macOS 27, support for Intel binary translation for Linux apps is included in macOS. Testing for [`availability`](./vzlinuxrosettadirectoryshare/availability.md) starting in macOS 27 always returns [`VZLinuxRosettaAvailability.installed`](./vzlinuxrosettaavailability/installed.md)  and [`installRosetta(completionHandler:)`](./vzlinuxrosettadirectoryshare/installrosetta%28completionhandler%29.md) always returns immediately.
 
@@ -58,7 +58,7 @@ switch (supportForIntelApps) {
 }
 ```
 
-##### Install Rosetta on macOS 26 and earlier
+### Install Rosetta on macOS 26 and earlier
 
 In macOS 26 and earlier, you need to install Rosetta to allow apps built for Intel-based Mac computers to run on Apple silicon. Installing Rosetta is a one-time process per computer that requires someone to grant permission for the system to install Rosetta. If someone has already installed Rosetta, the system activates it for use under the Virtualization framework; if Rosetta isn’t installed, the framework downloads the installer from the network and performs the installation. The installer interactively prompts a person for authorization, and your app needs to handle any of the possible error conditions that could occur during the authorization, download, and installation process. The example below shows how to start the installation:
 
@@ -109,7 +109,7 @@ do {
 }];
 ```
 
-##### Create the Directory Share
+### Create the Directory Share
 
 With Intel binary translation support enabled, your app needs to configure an appropriate directory share in the Linux guest to enable translation capabilities. The shared directory must have a tag that uniquely identifies the share and that you validate using [`validateTag(_:)`](./vzvirtiofilesystemdeviceconfiguration/validatetag%28_%29.md) to ensure it conforms to the length and format for file system tags:
 
@@ -152,7 +152,7 @@ if (rosettaDirectoryShare) {
 }
 ```
 
-##### Mount the shared directory and register Rosetta
+### Mount the shared directory and register Rosetta
 
 In order to use Intel binary translation in the Linux guest, a person must mount the Rosetta share in the guest VM and install Rosetta as the application the system uses to run x86_64 binaries using the following process:
 
@@ -178,11 +178,11 @@ The example below lists the commands, with the exception of the `update-binfmts`
     --credentials yes --preserve yes --fix-binary yes
 ```
 
-##### Ensure Shared Libraries are Available for Dynamically Linked Apps
+### Ensure Shared Libraries are Available for Dynamically Linked Apps
 
 Rosetta can run statically linked x86_64 binaries without additional configuration. Binaries that are dynamically linked and that depend on shared libraries require the installation of the shared libraries, or library hierarchies, in the Linux guest in paths that are accessible to both the user account and to Rosetta.
 
-##### Configure Rosetta’s ahead of time (AOT) caching options
+### Configure Rosetta’s ahead of time (AOT) caching options
 
 In macOS 14 and later, Rosetta supports options that allow you control the ahead of time (AOT) cache characteristics; this can improve the performance of some X86 workloads.
 

@@ -24,7 +24,7 @@ var position: AVCaptureDevice.Position { get }
 @property (nonatomic, readonly) AVCaptureDevicePosition position;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is key-value observable.
 

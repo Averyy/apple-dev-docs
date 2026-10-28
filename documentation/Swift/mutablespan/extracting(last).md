@@ -21,11 +21,11 @@ Returns a span containing the trailing elements of the span, up to the given max
 mutating func extracting(last maxLength: Int) -> MutableSpan<Element>
 ```
 
-#### Return Value
+## Return Value
 
 A span with at most `maxLength` elements.
 
-#### Discussion
+## Discussion
 
 If the maximum length exceeds the length of this span, the result contains all the elements.
 

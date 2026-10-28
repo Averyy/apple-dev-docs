@@ -21,7 +21,7 @@ Appends a path to onto a mutable graphics path.
 extern void CGPathAddPath(CGMutablePathRef path1, const CGAffineTransform *m, CGPathRef path2);
 ```
 
-#### Discussion
+## Discussion
 
 If the source path is non-empty, then its path elements are appended in order onto the mutable path. After the call completes, the start point and current point of the path are those of the last subpath in `path2`.
 

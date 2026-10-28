@@ -23,7 +23,7 @@ case sessionInactive
 WCErrorCodeSessionInactive
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you try to send data using an inactive session.
 

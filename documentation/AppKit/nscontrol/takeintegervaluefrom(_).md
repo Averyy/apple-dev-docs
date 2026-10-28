@@ -19,7 +19,7 @@ func takeIntegerValueFrom(_ sender: Any?)
 - (void) takeIntegerValueFrom:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to link action messages between controls. It permits one control or cell (`sender`) to affect the value of another control (the receiver) by invoking this method in an action message to the receiver. For example, a text field can be made the target of a slider. Whenever the slider is moved, it sends this message to the text field. The text field then obtains the slider’s value, turns it into a text string, and displays it.
 

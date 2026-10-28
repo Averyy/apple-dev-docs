@@ -20,7 +20,7 @@ Statuses of an asset-pack download.
 enum DownloadStatusUpdate
 ```
 
-#### Overview
+## Overview
 
 An asset pack is available locally only after a [`AssetPackManager.DownloadStatusUpdate.finished(_:)`](./downloadstatusupdate/finished%28_%29.md) status update is posted.
 

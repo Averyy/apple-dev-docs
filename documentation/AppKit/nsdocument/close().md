@@ -19,7 +19,7 @@ func close()
 - (void) close;
 ```
 
-#### Discussion
+## Discussion
 
 This method closes the document immediately, without asking users if they want to save the document. This method may not always be called.
 

@@ -18,15 +18,15 @@ Creates a link from a source to a destination.
 - (BOOL) linkPath:(NSString *) src toPath:(NSString *) dest handler:(id) handler;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the link operation is successful. If the operation is not successful, but the handler method [`fileManager(_:shouldProceedAfterError:)`](../../ObjectiveC/nsobject-swift.class/filemanager%28_,shouldproceedaftererror%29.md) returns [`true`](../../Swift/true.md), also returns [`true`](../../Swift/true.md). Otherwise returns [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The handler callback mechanism is similar to delegation. `NSFileManager` sends [`fileManager(_:willProcessPath:)`](../../ObjectiveC/nsobject-swift.class/filemanager%28_,willprocesspath%29.md) when it begins a copy, move, remove, or link operation. It sends [`fileManager(_:shouldProceedAfterError:)`](../../ObjectiveC/nsobject-swift.class/filemanager%28_,shouldproceedaftererror%29.md) when it encounters any error in processing
 
-##### Special Considerations
+### Special Considerations
 
 Because this method does not return error information, it has been deprecated as of OS X v10.5. Use [`removeItem(atPath:)`](../filemanager/removeitem%28atpath%29.md) instead.
 

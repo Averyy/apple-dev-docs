@@ -23,7 +23,7 @@ var isActivityAvailable: Bool { get }
 @property (nonatomic, readonly, getter=isActivityAvailable) BOOL activityAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 If the device supports headphone activity, start status updates and then wait for an update that indicates supported headphones are connected.
 

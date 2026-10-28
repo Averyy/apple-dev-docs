@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, layout collecti
 - (CGSize) collectionView:(UICollectionView *) collectionView layout:(UICollectionViewLayout *) collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The width and height of the specified item. Both values must be greater than 0.
 
-#### Discussion
+## Discussion
 
 If you do not implement this method, the flow layout uses the values in its [`itemSize`](../uicollectionviewflowlayout/itemsize.md) property to set the size of items instead. Your implementation of this method can return a fixed set of sizes or dynamically adjust the sizes based on the cell’s content.
 

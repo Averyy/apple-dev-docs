@@ -24,7 +24,7 @@ protocol GKTurnBasedEventHandlerDelegate
 @protocol GKTurnBasedEventHandlerDelegate
 ```
 
-#### Overview
+## Overview
 
 This protocol has been deprecated in iOS 7, use [`GKTurnBasedEventListener`](./gkturnbasedeventlistener.md).
 

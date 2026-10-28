@@ -20,11 +20,11 @@ Chart content that represents a mathematical function of two variables using a 3
 @preconcurrency struct SurfacePlot
 ```
 
-#### Overview
+## Overview
 
 Use `SurfacePlot` to visualize a 3D surface for functions of the form `y = f(x, z)`
 
-#### Overview
+## Overview
 
 To create a `SurfacePlot`, provide a closure that takes `x` and `z` values as input and returns a `y` value. For example, to draw the function `y = sin(2 * x) * cos(2 * z)`, you write:
 
@@ -42,7 +42,7 @@ Chart3D {
 
 You can also explicitly define the plotting space of your `Chart3D` using the `Chart/chartXScale(domain:range:type:)->View`, `Chart/chartYScale(domain:range:type:)->View`, and `Chart/chartYScale(domain:range:type:)->View` modifiers.
 
-#### Styling the Surface
+## Styling the Surface
 
 You can style the surface using standard Swift Charts modifiers like `foregroundStyle(_:)-(Chart3DSurfaceStyle)->Chart3DContent`. You may find this useful for Charts that contain more than one `SurfacePlot`. A common and effective style for surfaces is [`heightBased`](./chart3dsurfacestyle/heightbased.md), which creates a gradient using colors based on the y-value of your surface, making it easier to perceive its shape. You can also use [`normalBased`](./chart3dsurfacestyle/normalbased.md) to color points on the `SurfacePlot` based on the direction that it is facing.
 

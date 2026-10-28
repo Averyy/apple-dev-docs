@@ -23,7 +23,7 @@ case failureNoValidNumber
 INStartAudioCallIntentResponseCodeFailureNoValidNumber
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when the recipient’s call identifier isn’t valid for audio calls on your service.
 

@@ -17,7 +17,7 @@ A URL for your privacy policy.
 var privacyPolicyURL: URL
 ```
 
-#### Discussion
+## Discussion
 
 This is displayed to customers on the brand details screen. This policy should describe the personal information collected during the engagement session.
 

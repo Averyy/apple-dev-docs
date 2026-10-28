@@ -24,7 +24,7 @@ var sampleBufferAttachments: MTLBlitPassSampleBufferAttachmentDescriptorArray { 
 @property (readonly) MTLBlitPassSampleBufferAttachmentDescriptorArray * sampleBufferAttachments;
 ```
 
-#### Discussion
+## Discussion
 
 See [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md) for more context about configuring this property. That article is one of a series of articles in [GPU counters and counter sample buffers](../gpu-counters-and-counter-sample-buffers.md).
 

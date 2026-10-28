@@ -24,7 +24,7 @@ var fragmentBuffers: MTLPipelineBufferDescriptorArray { get }
 @property (readonly) MTLPipelineBufferDescriptorArray * fragmentBuffers;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns an array of [`MTLPipelineBufferDescriptor`](../mtlpipelinebufferdescriptor.md) instances, where each element corresponds to the index in the buffer argument table for the render pipeline’s fragment function.
 

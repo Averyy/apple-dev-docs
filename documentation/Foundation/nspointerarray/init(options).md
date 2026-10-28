@@ -25,7 +25,7 @@ init(options: NSPointerFunctions.Options = [])
 - (instancetype) initWithOptions:(NSPointerFunctionsOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver, initialized to use the given options.
 

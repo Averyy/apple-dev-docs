@@ -25,7 +25,7 @@ var allowGPUOptimizedContents: Bool { get }
 @property (readonly) BOOL allowGPUOptimizedContents;
 ```
 
-#### Discussion
+## Discussion
 
 The value is set when the texture is created and never changes.
 

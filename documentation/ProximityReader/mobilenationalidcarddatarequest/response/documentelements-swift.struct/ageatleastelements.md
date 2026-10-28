@@ -17,7 +17,7 @@ A dictionary of values that indicate whether the document holder is at least the
 let ageAtLeastElements: [Int : Bool]
 ```
 
-#### Discussion
+## Discussion
 
 The key represents an age in years and the value is a Boolean value that indicates whether the document holder is at least that age.
 

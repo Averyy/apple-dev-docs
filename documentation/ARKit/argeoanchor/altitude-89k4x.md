@@ -17,7 +17,7 @@ Vertical distance, in meters, between this anchor and sea level.
 var altitude: CLLocationDistance? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Negative values indicate below sea level. This property is valid only when [`altitudeSource`](./altitudesource-swift.property.md) is a value other than [`ARGeoAnchor.AltitudeSource.unknown`](./altitudesource-swift.enum/unknown.md).
 

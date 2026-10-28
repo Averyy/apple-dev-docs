@@ -21,7 +21,7 @@ func SecGroupTransformGetTypeID() -> CFTypeID
 extern CFTypeID SecGroupTransformGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 A value that identifies the opaque type of a [`SecGroupTransform`](./secgrouptransform.md) object.
 

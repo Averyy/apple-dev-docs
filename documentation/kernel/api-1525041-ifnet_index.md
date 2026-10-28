@@ -13,11 +13,11 @@
 u_int32_t ifnet_index(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 Index.
 
-#### Discussion
+## Discussion
 
 Returns the index of the interface. This index value will match the index you would find in a sockaddr_dl or using if_nametoindex or if_indextoname in user space. The value of the interface index is undefined for an interface that is not currently attached.
 

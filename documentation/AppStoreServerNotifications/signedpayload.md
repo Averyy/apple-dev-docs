@@ -19,7 +19,7 @@ string signedPayload
 
 - [Receiving App Store Server Notifications](./receiving-app-store-server-notifications.md)
 
-#### Discussion
+## Discussion
 
 The `signedPayload` is a string of three Base64URL-encoded components, separated by a period. The string contains a JWS representation of the notification response body, signed by the App Store according to the JSON Web Signature (JWS) [IETF RFC 7515](https://datatracker.ietf.org/doc/html/rfc7515) specification.
 

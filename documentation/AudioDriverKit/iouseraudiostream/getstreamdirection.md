@@ -15,7 +15,7 @@ Gets the direction of the stream: input or output.
 IOUserAudioStreamDirection GetStreamDirection();
 ```
 
-#### Return Value
+## Return Value
 
 The direction of the stream, as a `IOUserAudioStreamDirection` value.
 

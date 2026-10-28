@@ -6,7 +6,7 @@
 
 A 16-bit integer that indicates the number of sound channels used by the sound sample.
 
-#### Overview
+## Overview
 
 Set to `1` for monaural sounds, `2` for stereo sounds. Higher numbers of channels are not supported.
 

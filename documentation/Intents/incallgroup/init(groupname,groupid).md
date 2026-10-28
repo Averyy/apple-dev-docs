@@ -24,7 +24,7 @@ init(groupName: String?, groupId: String?)
 - (instancetype) initWithGroupName:(NSString *) groupName groupId:(NSString *) groupId;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INCallGroup`](../incallgroup.md) object or `nil` if the user did not initialize the object.
 

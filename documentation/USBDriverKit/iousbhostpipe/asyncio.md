@@ -15,11 +15,11 @@ Enqueues an asynchronous request on a bulk or interrupt endpoint.
 virtual kern_return_t AsyncIO(IOMemoryDescriptor *dataBuffer, uint32_t dataBufferLength, OSAction *completion, uint32_t completionTimeoutMs);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method performs an appropriate USB I/O request on the device and notifies your completion handler asynchronously when that transfer completes.
 

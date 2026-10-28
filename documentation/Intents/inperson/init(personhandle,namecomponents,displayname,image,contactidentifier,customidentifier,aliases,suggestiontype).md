@@ -16,11 +16,11 @@ convenience init(personHandle: INPersonHandle, nameComponents: PersonNameCompone
 - (instancetype) initWithPersonHandle:(INPersonHandle *) personHandle nameComponents:(NSPersonNameComponents *) nameComponents displayName:(NSString *) displayName image:(INImage *) image contactIdentifier:(NSString *) contactIdentifier customIdentifier:(NSString *) customIdentifier aliases:(NSArray<INPersonHandle *> *) aliases suggestionType:(INPersonSuggestionType) suggestionType;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized person object or `nil` if initialization fails.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to create person objects with additional information such as email addresses or phone numbers. This method also lets you suggest how you want to identify the person when donating interactions to the system. For example, you might ask the system to identify the user by their social media account name instead of by their actual name.
 

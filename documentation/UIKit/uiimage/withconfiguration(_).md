@@ -24,11 +24,11 @@ func withConfiguration(_ configuration: UIImage.Configuration) -> UIImage
 - (UIImage *) imageWithConfiguration:(UIImageConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 A new version of the image object that contains the specified configuration details.
 
-#### Discussion
+## Discussion
 
 This method creates a new image object, replacing the image’s current configuration with the values specified in the `configuration` parameter.
 

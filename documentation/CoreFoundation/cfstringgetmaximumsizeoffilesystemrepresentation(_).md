@@ -25,11 +25,11 @@ func CFStringGetMaximumSizeOfFileSystemRepresentation(_ string: CFString!) -> CF
 extern CFIndex CFStringGetMaximumSizeOfFileSystemRepresentation(CFStringRef string);
 ```
 
-#### Return Value
+## Return Value
 
 The upper bound on the number of bytes required to hold the file system representation of the string.
 
-#### Discussion
+## Discussion
 
 The result is returned quickly as a rough approximation, and could be much larger than the actual space required. The result includes space for the zero termination. If you are allocating a buffer for long-term storage, you should reallocate it to be the right size after calling [`CFStringGetFileSystemRepresentation(_:_:_:)`](./cfstringgetfilesystemrepresentation%28_,_,_%29.md).
 

@@ -23,7 +23,7 @@ init(_ localizedTitle: String, symbolName: String, numberOfIndexes: Int, localiz
 - (instancetype) initWithLocalizedTitle:(NSString *) localizedTitle symbolName:(NSString *) symbolName numberOfIndexes:(NSInteger) numberOfIndexes localizedTitleTransform:(NSString * (^)(NSInteger index)) localizedTitleTransform;
 ```
 
-#### Discussion
+## Discussion
 
 Create a picker with this initializer if your app requires specifying a title for each value lazily.
 

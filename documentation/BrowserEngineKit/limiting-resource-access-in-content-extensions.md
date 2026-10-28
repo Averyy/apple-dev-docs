@@ -5,13 +5,13 @@
 
 Reduce the impact of vulnerabilities in web content extensions by limiting privileges.
 
-#### Overview
+## Overview
 
 Web content extensions parse resources and run code from unknown sources. An attacker might supply malformed resources to mount an attack on your browser app and gain access to privileged system resources, and the data of the person using your browser app.
 
 Mitigate the impact of any successful attack by reducing your content extension’s privilege before processing resources from remote websites.
 
-#### Restrict the sandbox for your web content extension
+## Restrict the sandbox for your web content extension
 
 When the system launches your web content extension, the extension has permissive access to a variety of services and resources that you use to initialize the extension. Once your extension is ready to begin loading web content, call the [`applyRestrictedSandbox(revision:)`](./restrictedsandboxappliable/applyrestrictedsandbox%28revision%29.md) method on your extension’s main object:
 
@@ -26,7 +26,7 @@ class MyWebContentExtension: WebContentExtension {
 }
 ```
 
-#### Restrict resource access
+## Restrict resource access
 
 Once your web content extension is locked down, it’s unable to do any of the following.
 
@@ -65,7 +65,7 @@ Design your web content extension so that it doesn’t need to do any of the abo
 
 > **Note**:  The rendering extension and networking extension both conform to [`RestrictedSandboxAppliable`](./restrictedsandboxappliable.md) and you can apply a restricted sandbox to them. The first revision of the restricted sandbox doesn’t apply any additional restrictions to those extensions.
 
-#### Restrict access to system notifications
+## Restrict access to system notifications
 
 Limit the possibility for malicious code that runs in your web-content extension to post notifications using the system’s notification service by adding the `com.apple.developer.web-browser-engine.restrict.notifyd` entitlement with the value `true`. When it has this entitlement, your web-content extension can’t post notifications by connecting directly to the system’s notification daemon.
 

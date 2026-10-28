@@ -21,7 +21,7 @@ Modifies the format style to use the specified notation.
 func notation(_ notation: FloatingPointFormatStyle<Value>.Percent.Configuration.Notation) -> FloatingPointFormatStyle<Value>.Percent
 ```
 
-#### Return Value
+## Return Value
 
 A floating-point percent format style modified to use the specified notation.
 

@@ -21,11 +21,11 @@ func accessibilityArrayAttributeCount(_ attribute: NSAccessibility.Attribute) ->
 - (NSUInteger) accessibilityArrayAttributeCount:(NSAccessibilityAttributeName) attribute;
 ```
 
-#### Return Value
+## Return Value
 
 The number of items in the specified array attribute.
 
-#### Discussion
+## Discussion
 
 If `attribute` is not an array, an exception is raised.
 

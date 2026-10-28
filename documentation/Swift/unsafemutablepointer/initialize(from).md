@@ -21,7 +21,7 @@ Initializes memory starting at this pointer’s address with the elements of the
 func initialize<C>(from source: C) where Pointee == C.Element, C : Collection
 ```
 
-#### Discussion
+## Discussion
 
 The region of memory starting at this pointer and covering `source.count` instances of the pointer’s `Pointee` type must be uninitialized or `Pointee` must be a trivial type. After calling `initialize(from:)`, the region is initialized.
 

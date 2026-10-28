@@ -27,11 +27,11 @@ func collectionView(_ collectionView: UICollectionView, itemsForBeginning sessio
 
 - [Supporting Drag and Drop in Collection Views](../supporting-drag-and-drop-in-collection-views.md)
 
-#### Return Value
+## Return Value
 
 An array of [`UIDragItem`](../uidragitem.md) objects containing the details of the items to drag. Return an empty array to prevent the item from being dragged.
 
-#### Discussion
+## Discussion
 
 You must implement this method to allow the dragging of items from your collection view. In your implementation, create one or more [`UIDragItem`](../uidragitem.md) objects for the item at the specified `indexPath`. Normally, you return only one drag item, but if the specified item has children or can’t be dragged without one or more associated items, include those items as well.
 

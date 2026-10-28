@@ -19,7 +19,7 @@ static var whitespace: NSLayoutManager.ControlCharacterAction { get }
 NSControlCharacterActionWhitespace
 ```
 
-#### Discussion
+## Discussion
 
 The width for a glyph with this action is determined by the delegate method [`layoutManager(_:shouldUse:forControlCharacterAt:)`](../../nslayoutmanagerdelegate/layoutmanager%28_,shoulduse,forcontrolcharacterat%29.md) if the method is implemented; otherwise, same as `NSControlCharacterZeroAdvancementAction`.
 

@@ -21,11 +21,11 @@ Creates a new string by copying the null-terminated data referenced by the given
 static func decodeCString<Encoding>(_ cString: UnsafePointer<Encoding.CodeUnit>?, as encoding: Encoding.Type, repairingInvalidCodeUnits isRepairing: Bool = true) -> (result: String, repairsMade: Bool)? where Encoding : _UnicodeEncoding
 ```
 
-#### Return Value
+## Return Value
 
 A tuple with the new string and a Boolean value that indicates whether any repairs were made. If `isRepairing` is `false` and an ill-formed sequence is detected, this method returns `nil`.
 
-#### Discussion
+## Discussion
 
 When you pass `true` as `isRepairing`, this method replaces ill-formed sequences with the Unicode replacement character (`"\u{FFFD}"`); otherwise, an ill-formed sequence causes this method to stop decoding and return `nil`.
 

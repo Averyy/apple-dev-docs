@@ -10,7 +10,7 @@ Use attachments to place 2D content relative to 3D content in your visionOS app.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 To demonstrate how you can integrate any 2D content into your 3D app, this sample code project uses a variety of frameworks to create both 2D and 3D views, and places them relative to each other in an immersive space. It also illustrates how to position an attachment at the location of a tap gesture.
 
@@ -29,7 +29,7 @@ The cloud attachments at the locations of tap gestures are `RealityViewAttachmen
 
 ![A screenshot of a simulated Apple Vision Pro environment showing a rainbow that consists of six arches of various colors and cloud attachments within a room.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/combining-2d-3d-views-main@2x.png)
 
-##### Load and configure entities from Reality Composer Pro
+### Load and configure entities from Reality Composer Pro
 
 This sample creates 3D assets in an asset creator and imports them into Reality Composer Pro as `.usdc` files.
 
@@ -62,7 +62,7 @@ func createEntity(for item: EntityData) async -> Entity {
 }
 ```
 
-##### Create attachments that contain SwiftUI views
+### Create attachments that contain SwiftUI views
 
 The sample includes the remaining four arches as reality view attachments by creating attachments of various types in the `attachments` closure of a reality view instance. These types include both SwiftUI and UIKit to exemplify how to use any framework in your visionOS app.
 
@@ -94,7 +94,7 @@ ForEach(rainbowModel.archAttachments) { entity in
 
 Attachments can contain views from other frameworks that adopt the `UIViewRepresentable` protocol.
 
-##### Add and position entity attachments
+### Add and position entity attachments
 
 The sample loads the attachments as reality view attachments in the `update` closure of the reality view. If there’s an existing attachment for an `id`, the sample adds the attachment entity as a subentity of the plane entity to display it in the scene, and then configures the scale and position.
 
@@ -152,7 +152,7 @@ func scaleAndPositionArches(yellowArchSize: BoundingBox) {
 }
 ```
 
-##### Position attachments at the tapped location
+### Position attachments at the tapped location
 
 Follow these steps to add attachments to RealityKit entities and position them at the tapped location. Ensure that your entities have both an [`InputTargetComponent`](./inputtargetcomponent.md) and a [`CollisionComponent`](./collisioncomponent.md).
 

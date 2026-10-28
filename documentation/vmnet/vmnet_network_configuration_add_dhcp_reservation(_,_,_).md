@@ -20,11 +20,11 @@ func vmnet_network_configuration_add_dhcp_reservation(_ config: vmnet_network_co
 vmnet_return_t vmnet_network_configuration_add_dhcp_reservation(vmnet_network_configuration_ref config, const ether_addr_t *client, const struct in_addr *reservation);
 ```
 
-#### Return Value
+## Return Value
 
 `VMNET_SUCCESS` on success, an error otherwise.
 
-#### Discussion
+## Discussion
 
 This method reserves a DHCP address for a client with certain MAC address. The framework doesn’t allow modifying reservation while a network is active.
 

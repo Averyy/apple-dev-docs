@@ -21,7 +21,7 @@ A constraint that tests whether a code file or running process is signed in a wa
 struct ValidationCategory
 ```
 
-#### Overview
+## Overview
 
 Validation categories are an indication of the type of signature on the file and how it is allowed to run.
 

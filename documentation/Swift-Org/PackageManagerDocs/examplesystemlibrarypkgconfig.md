@@ -10,11 +10,11 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Create an Command-line executable package that uses libgit2 as a system library dependency.
 
-#### Overview
+## Overview
 
 The following example walks through creating a binary executable that depends on [libgit2](https://github.com/libgit2/libgit2).
 
-##### Set up the package
+### Set up the package
 
 Create a directory called `example`, and initialize it as a package that builds an executable:
 
@@ -33,7 +33,7 @@ let options = git_repository_init_options()
 print(options)
 ```
 
-##### Add a system library target
+### Add a system library target
 
 Add a `systemLibrary` target to `Package.swift` that uses the `pkgConfig` parameter to look up the location of the library.
 
@@ -67,7 +67,7 @@ The above example specifies two `providers` that Swift Package Manager can use t
 
 This example follows the convention of prefixing modules with `C` and using camelcase for the rest of the library, following Swift module name conventions. This allows you to create and use another module more directly named after the library that provides idiomatic Swift wrappers around the underlying C functions.
 
-##### Create a module map and local header
+### Create a module map and local header
 
 Create a directory `Sources/Clibgit` in your `example` project, and add a `module.modulemap` in the directory:
 
@@ -101,7 +101,7 @@ The `example` directory structure should look like this now:
     └── main.swift
 ```
 
-##### Add the system library dependency to the executable target
+### Add the system library dependency to the executable target
 
 With the system library target fully defined, you can now use it as a dependency in other targets.
 
@@ -132,7 +132,7 @@ let package = Package(
 
 ```
 
-##### Run the example
+### Run the example
 
 Now run the command `swift run` in the example directory to create and run the executable:
 

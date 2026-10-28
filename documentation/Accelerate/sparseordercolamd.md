@@ -25,7 +25,7 @@ var SparseOrderCOLAMD: SparseOrder_t { get }
 SparseOrderCOLAMD
 ```
 
-#### Discussion
+## Discussion
 
 This ordering isn’t valid for symmetric factorizations (use [`SparseOrderAMD`](./sparseorderamd.md) instead).
 

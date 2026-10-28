@@ -20,11 +20,11 @@ Returns the suggested frame for inserting shapes and other content.
 @preconcurrency func suggestedFrameForInserting(contentInFrame frame: CGRect) -> CGRect
 ```
 
-#### Return Value
+## Return Value
 
 The suggested frame for the content. Use this value to transform a `PaperMarkup` before inserting it.
 
-#### Discussion
+## Discussion
 
 ```swift
 var shapeFrame = CGRect(x: 100, y: 100, width: 300, height: 300)

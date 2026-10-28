@@ -35,7 +35,7 @@ var context: UInt64 { get set }
 @property (atomic, assign) uint64_t context;
 ```
 
-#### Discussion
+## Discussion
 
 The [`context`](./context.md) property is stored and returned to your game, but is otherwise ignored by Game Center. It allows your game to associate an arbitrary 64-bit unsigned integer value with the score data reported to Game Center. You decide how this integer value is interpreted by your game. For example, you might use the [`context`](./context.md) property to store flags that provide game-specific details about a player’s score, or you might use the context as a key to other data stored on the device or on your own server. The context is most useful when your game displays a custom leaderboard user interface.
 

@@ -25,7 +25,7 @@ func data(forKey aKey: String) -> Data?
 - (NSData *) dataForKey:(NSString *) aKey;
 ```
 
-#### Return Value
+## Return Value
 
 The data object associated with `aKey`, or `nil` if the key isn’t present. This method also returns `nil` if the retrieved value isn’t a data object.
 

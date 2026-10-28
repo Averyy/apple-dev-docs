@@ -21,7 +21,7 @@ A type that represents the ownership and sharing characteristics of an app entit
 struct EntityOwnership
 ```
 
-#### Overview
+## Overview
 
 The [`EntityOwnership`](./entityownership.md) structure provides flag-based ownership information. Specify a single state, or combine multiple states using an [`OptionSet`](../Swift/optionset.md), as shown in the following example:
 

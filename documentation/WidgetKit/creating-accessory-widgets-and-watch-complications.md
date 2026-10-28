@@ -5,7 +5,7 @@
 
 Support accessory widgets that appear on the Lock Screen and as complications on Apple Watch.
 
-#### Overview
+## Overview
 
 WidgetKit allows you to extend the reach of your app to the Lock Screen on iPhone and iPad, and to the Smart Stack on Apple Watch as *accessory widgets*. Accessory widgets also appear as watch complications on Apple Watch. They display your app’s most relevant, glanceable content in highly visible contexts and let people quickly access your app for more details.
 
@@ -22,7 +22,7 @@ Your path to creating accessory widgets and WidgetKit complications depends on y
 
 > **Related sessions from WWDC23**: [Session 10309:Design widgets for the Smart Stack on Apple Watch](https://developer.apple.com/videos/play/wwdc2023/10309) and [Session 10027: Bring widgets to new places](https://developer.apple.com/videos/play/wwdc2023/10027)
 
-##### Create a new app that offers widgets and watch complications
+### Create a new app that offers widgets and watch complications
 
 If you create a new app, support iOS and watchOS and offer widgets and complications right from the start. This allows you to create a shared code base and reduces the need for costly code changes later in the app development process.
 
@@ -36,7 +36,7 @@ To get started:
 
 To learn more about creating widgets and building apps with SwiftUI, see [Creating a widget extension](./creating-a-widget-extension.md) and [SwiftUI](../SwiftUI/SwiftUI.md). For more information on creating watchOS apps, see [watchOS apps](../watchOS-Apps/watchOS-Apps.md).
 
-##### Add accessory widgets to your existing iOS App
+### Add accessory widgets to your existing iOS App
 
 If your app supports widgets, adding accessory widgets works like supporting any other widget size. To learn more, see [Supporting additional widget sizes](./supporting-additional-widget-sizes.md).
 
@@ -44,7 +44,7 @@ If you don’t offer widgets in your app, add a widget extension to your app and
 
 Additionally, consider adding support for watchOS with WidgetKit complications by adding a watchOS app target and a watchOS widget extension target. To learn more about creating a watchOS app, see [watchOS apps](../watchOS-Apps/watchOS-Apps.md).
 
-##### Add WidgetKit complications to your existing watchOS app
+### Add WidgetKit complications to your existing watchOS app
 
 If your existing watchOS app doesn’t offer complications, add a watchOS widget extension to your project in Xcode, and create complications with WidgetKit. Implementing WidgetKit complications works like creating widgets. For more information about creating a widget extension, see [Creating a widget extension](./creating-a-widget-extension.md).
 

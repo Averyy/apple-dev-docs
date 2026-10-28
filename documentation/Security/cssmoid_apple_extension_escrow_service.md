@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_APPLE_EXTENSION_ESCROW_SERVICE;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

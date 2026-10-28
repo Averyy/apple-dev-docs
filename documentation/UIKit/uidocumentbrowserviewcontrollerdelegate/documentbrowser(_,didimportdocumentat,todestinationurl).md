@@ -26,7 +26,7 @@ optional func documentBrowser(_ controller: UIDocumentBrowserViewController, did
 
 - [Enabling document sharing](../enabling-document-sharing.md)
 
-#### Discussion
+## Discussion
 
 To open the document as soon as it’s imported:
 

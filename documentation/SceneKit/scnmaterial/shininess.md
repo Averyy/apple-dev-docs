@@ -25,7 +25,7 @@ var shininess: CGFloat { get set }
 @property (nonatomic) CGFloat shininess;
 ```
 
-#### Discussion
+## Discussion
 
 The shininess of a material interacts with its [`specular`](./specular.md) property and the lighting in a scene to produce bright highlights on a surface. A higher value produces more sharply defined highlights, making a surface appear more smooth and glossy.
 

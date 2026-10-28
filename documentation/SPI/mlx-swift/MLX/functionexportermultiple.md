@@ -18,7 +18,7 @@ A helper for [`exportFunctions(to:shapeless:_:build:)`](./exportfunctions%28to,s
 final class FunctionExporterMultiple
 ```
 
-#### Overview
+## Overview
 
 This records the call to the function and saves it to the file.
 
@@ -37,7 +37,7 @@ try exportFunctions(to: url, shapeless: true, f) { export in
 }
 ```
 
-##### See Also
+### See Also
 
 - [`exportFunctions(to:shapeless:_:build:)`](./exportfunctions%28to,shapeless,_,build%29.md)
 

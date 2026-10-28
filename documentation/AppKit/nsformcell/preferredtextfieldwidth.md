@@ -19,7 +19,7 @@ var preferredTextFieldWidth: CGFloat { get set }
 @property CGFloat preferredTextFieldWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The preferred width is reflected in the cell’s `cellSize`, which will be large enough to accommodate the title, bezel, and a text field of width `preferredTextWidth`. It is also reflected in the [`intrinsicContentSize`](../nsview/intrinsiccontentsize.md) of the [`NSForm`](../nsform.md) object. That is, under Auto Layout, the form will try to size itself so that the text field cell is the given width, according to the usual content size constraint priorities.
 

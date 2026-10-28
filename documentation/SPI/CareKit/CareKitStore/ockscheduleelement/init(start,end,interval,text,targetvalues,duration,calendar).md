@@ -17,7 +17,7 @@ Create a `ScheduleElement` by specifying the start date, end date, and interval.
 init(start: Date, end: Date?, interval: DateComponents, text: String? = nil, targetValues: [OCKOutcomeValue] = [], duration: Duration = .hours(1), calendar: Calendar = .autoupdatingCurrent)
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: `start` < `end`
 

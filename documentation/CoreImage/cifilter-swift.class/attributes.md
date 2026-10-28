@@ -24,7 +24,7 @@ var attributes: [String : Any] { get }
 @property (nonatomic, readonly) NSDictionary<NSString *,id> * attributes;
 ```
 
-#### Discussion
+## Discussion
 
 This dictionary contains two kinds of key-value pairs:
 

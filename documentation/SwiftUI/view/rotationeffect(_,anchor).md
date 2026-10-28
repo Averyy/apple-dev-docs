@@ -22,11 +22,11 @@ nonisolated
 func rotationEffect(_ angle: Angle, anchor: UnitPoint = .center) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with rotated content.
 
-#### Discussion
+## Discussion
 
 This modifier rotates the view’s content around the axis that points out of the xy-plane. It has no effect on the view’s frame. The following code rotates text by 22˚ and then draws a border around the modified view to show that the frame remains unchanged by the rotation modifier:
 

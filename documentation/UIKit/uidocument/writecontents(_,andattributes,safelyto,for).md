@@ -22,7 +22,7 @@ func writeContents(_ contents: Any, andAttributes additionalFileAttributes: [Any
 - (BOOL) writeContents:(id) contents andAttributes:(NSDictionary *) additionalFileAttributes safelyToURL:(NSURL *) url forSaveOperation:(UIDocumentSaveOperation) saveOperation error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by the [`save(to:for:completionHandler:)`](./save%28to,for,completionhandler%29.md) method to save the file data (and associated attributes in the case of an [`FileWrapper`](../../Foundation/filewrapper.md)). It creates temporary files and directories as necessary so that successful saves can be completed atomically and failed saves can be rolled back cleanly. This method calls [`writeContents(_:to:for:originalContentsURL:)`](./writecontents%28_,to,for,originalcontentsurl%29.md) to save the `contents` object, passing the location for the new saved file in the `toURL` parameter and the location of the previously existing file in the `originalContentsURL` parameter, if this is an overwrite operation.
 

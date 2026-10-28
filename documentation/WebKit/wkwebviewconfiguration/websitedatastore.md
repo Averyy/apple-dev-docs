@@ -23,7 +23,7 @@ var websiteDataStore: WKWebsiteDataStore { get set }
 @property (nonatomic, strong) WKWebsiteDataStore * websiteDataStore;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t assign a value to this property, the configuration object uses the default data store object to store data persistently. To create a private web-browsing session, create a nonpersistent data store using the [`nonPersistent()`](../wkwebsitedatastore/nonpersistent%28%29.md) method and assign it to this property. For more information, see [`WKWebsiteDataStore`](../wkwebsitedatastore.md).
 

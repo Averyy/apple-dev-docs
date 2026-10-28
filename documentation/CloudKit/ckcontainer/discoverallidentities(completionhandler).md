@@ -26,7 +26,7 @@ func discoverAllIdentities(completionHandler: @escaping @Sendable ([CKUserIdenti
 - (void) discoverAllIdentitiesWithCompletionHandler:(void (^)(NSArray<CKUserIdentity *> *userIdentities, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The closure doesn’t return a value and takes the following parameters:
 

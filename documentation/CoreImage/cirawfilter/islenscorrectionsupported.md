@@ -24,7 +24,7 @@ var isLensCorrectionSupported: Bool { get }
 @property (readonly, getter=isLensCorrectionSupported) BOOL lensCorrectionSupported;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, you can enable lens correction on the image by setting [`isLensCorrectionEnabled`](./islenscorrectionenabled.md) to `true`.
 

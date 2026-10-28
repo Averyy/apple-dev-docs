@@ -19,7 +19,7 @@ Creates a depthwise convolution descriptor with the kernel and padding options, 
 + (instancetype) depthwiseConvolutionDescriptorWithKernelSizes:(NSArray<NSNumber *> *) kernelSizes inputFeatureChannelCount:(NSUInteger) inputFeatureChannelCount channelMultiplier:(NSUInteger) channelMultiplier strides:(NSArray<NSNumber *> *) strides paddingPolicy:(MLCPaddingPolicy) paddingPolicy paddingSizes:(NSArray<NSNumber *> *) paddingSizes;
 ```
 
-#### Return Value
+## Return Value
 
 A convolution descriptor.
 

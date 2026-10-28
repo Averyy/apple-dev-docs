@@ -15,11 +15,11 @@ Parses an incoming XML document as if it were the reply of a method.
 CFDictionaryRef WSProtocolHandlerCopyReplyDictionary(WSProtocolHandlerRef ref, CFStringRef methodName, CFDataRef data);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFDictionary`, as returned by `WSMethodInvocationInvoke`.
 
-#### Discussion
+## Discussion
 
 Parse an incoming XML document as if it were the reply of a method.  The results are the same as the `WSMethodInvocationInvoke` response;  the reply could be a fault.  If there was a parse error, `NULL` is returned.  Protocol specific additions, such as `kWSSOAPMessageHeaders`, may also be present in the dictionary.  The caller must release the resulting dictionary.
 

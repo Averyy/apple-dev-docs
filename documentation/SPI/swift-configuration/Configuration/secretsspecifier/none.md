@@ -24,7 +24,7 @@ The library treats no configuration values as secrets.
 case none
 ```
 
-#### Discussion
+## Discussion
 
 Use this case when the provider handles only non-sensitive configuration data that can be safely logged or displayed.
 

@@ -19,7 +19,7 @@ Placement for commands that control the visibility of running apps.
 static let appVisibility: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following commands in macOS:
 

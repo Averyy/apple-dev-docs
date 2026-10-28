@@ -19,7 +19,7 @@ var preferredThicknessFraction: CGFloat { get set }
 @property CGFloat preferredThicknessFraction;
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the proportion of the split view that you want the split view item to occupy on a scale of `0.0` to `1.0`. The system uses this value to adjust the thickness of the item in relation to other items when a user double-clicks a neighboring divider, and when the app enters full-screen mode.
 

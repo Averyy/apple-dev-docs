@@ -20,7 +20,7 @@ func unlock()
 - (void) unlock;
 ```
 
-#### Discussion
+## Discussion
 
 You should generally use the [`unlock()`](./unlock%28%29.md) method rather than [`break()`](./break%28%29.md) to release a lock.
 

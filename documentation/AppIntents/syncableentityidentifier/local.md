@@ -21,7 +21,7 @@ The identifier you use to refer to the entity on the current device.
 let local: LocalID?
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to retrieve the local identifier value you specified at initialization time. When the framework performs entity resolution across devices, the value of this property is `nil`.
 

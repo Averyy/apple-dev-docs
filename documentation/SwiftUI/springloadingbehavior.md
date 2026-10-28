@@ -21,7 +21,7 @@ The options for controlling the spring loading behavior of views.
 struct SpringLoadingBehavior
 ```
 
-#### Overview
+## Overview
 
 Use values of this type with the [`springLoadingBehavior(_:)`](./view/springloadingbehavior%28_%29.md) modifier.
 

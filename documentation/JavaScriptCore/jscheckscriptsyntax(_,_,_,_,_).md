@@ -24,7 +24,7 @@ func JSCheckScriptSyntax(_ ctx: JSContextRef!, _ script: JSStringRef!, _ sourceU
 bool JSCheckScriptSyntax(JSContextRef ctx, JSStringRef script, JSStringRef sourceURL, int startingLineNumber, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the script is syntactically correct; otherwise, [`false`](../Swift/false.md).
 

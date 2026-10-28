@@ -21,7 +21,7 @@ A dispatch source that monitors a Mach port for dead name notifications, indicat
 protocol DispatchSourceMachSend : DispatchSourceProtocol, Sendable
 ```
 
-#### Overview
+## Overview
 
 You do not adopt this protocol in your objects. Instead, use the [`makeMachSendSource(port:eventMask:queue:)`](./dispatchsource/makemachsendsource%28port,eventmask,queue%29.md) method to create an object that adopts this protocol.
 

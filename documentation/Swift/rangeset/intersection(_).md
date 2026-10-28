@@ -23,7 +23,7 @@ func intersection(_ other: RangeSet<Bound>) -> RangeSet<Bound>
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 A new range set.
 

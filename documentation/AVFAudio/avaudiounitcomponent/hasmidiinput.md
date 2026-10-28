@@ -24,7 +24,7 @@ var hasMIDIInput: Bool { get }
 @property (nonatomic, readonly) BOOL hasMIDIInput;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`true`](../../Swift/true.md) if the component has MIDI input; otherwise, [`false`](../../Swift/false.md).
 

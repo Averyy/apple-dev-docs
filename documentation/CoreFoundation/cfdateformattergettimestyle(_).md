@@ -25,7 +25,7 @@ func CFDateFormatterGetTimeStyle(_ formatter: CFDateFormatter!) -> CFDateFormatt
 extern CFDateFormatterStyle CFDateFormatterGetTimeStyle(CFDateFormatterRef formatter);
 ```
 
-#### Return Value
+## Return Value
 
 The time style used to create `formatter`.
 

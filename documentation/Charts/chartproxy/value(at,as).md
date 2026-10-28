@@ -21,7 +21,7 @@ Returns the data values at the given position, or `nil` if the position does not
 func value<X, Y>(at position: CGPoint, as: (X, Y).Type = (X, Y).self) -> (X, Y)? where X : Plottable, Y : Plottable
 ```
 
-#### Return Value
+## Return Value
 
 A tuple of the x and y data values at the given position.
 

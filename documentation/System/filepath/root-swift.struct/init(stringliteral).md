@@ -21,7 +21,7 @@ Create a file path root from a string literal.
 init(stringLiteral: String)
 ```
 
-#### Discussion
+## Discussion
 
 Precondition: `stringLiteral` is non-empty and is a root.
 

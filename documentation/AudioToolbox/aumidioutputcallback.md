@@ -24,7 +24,7 @@ typealias AUMIDIOutputCallback = (UnsafeMutableRawPointer?, UnsafePointer<AudioT
 typedef int (*)(void *, const struct AudioTimeStamp *, unsigned int, const struct MIDIPacketList *) __attribute__((nonblocking)) AUMIDIOutputCallback;
 ```
 
-#### Discussion
+## Discussion
 
 If you named your callback function `MyAUMIDIOutputCallback`, you would declare it like this:
 

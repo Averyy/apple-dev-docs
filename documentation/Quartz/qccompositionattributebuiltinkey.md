@@ -21,7 +21,7 @@ let QCCompositionAttributeBuiltInKey: String
 extern NSString * const QCCompositionAttributeBuiltInKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an `NSNumber` object that contains a Boolean value. [`true`](../Swift/true.md) indicates the composition is built-in (provided by macOS).
 

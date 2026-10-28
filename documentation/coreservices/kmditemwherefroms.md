@@ -19,7 +19,7 @@ let kMDItemWhereFroms: CFString!
 const CFStringRef kMDItemWhereFroms;
 ```
 
-#### Discussion
+## Discussion
 
 For example, a downloaded file may refer to the URL, files received by email may indicate the sender’s email address, message subject, etc.
 

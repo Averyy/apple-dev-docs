@@ -21,7 +21,7 @@ static let isSupported: Bool
 
 - [Adding support for Tap to Pay on iPhone to your app](../adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 
-#### Discussion
+## Discussion
 
 For this property to be `true`, the device model must be iPhone XS or newer. This property doesn’t check the OS version.
 

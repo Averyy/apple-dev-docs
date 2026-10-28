@@ -19,11 +19,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized NSTextFinder instance.
 
-#### Discussion
+## Discussion
 
 This is the designated initiator for the `NSTextFinder` class.
 

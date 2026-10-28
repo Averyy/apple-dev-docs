@@ -19,7 +19,7 @@ func removeItem(withTitle title: String)
 - (void) removeItemWithTitle:(NSString *) title;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes the first item it finds with the specified name. This method then uses [`synchronizeTitleAndSelectedItem()`](./synchronizetitleandselecteditem%28%29.md) to refresh the menu.
 

@@ -22,7 +22,7 @@ case bottomRaised
 SKOverlayPositionBottomRaised
 ```
 
-#### Discussion
+## Discussion
 
 Use this position in case your app uses a [`UITabBar`](../../../UIKit/uitabbar.md).
 

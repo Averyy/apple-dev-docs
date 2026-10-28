@@ -24,7 +24,7 @@ case holdStartValue
 PHASECurveTypeHoldStartValue
 ```
 
-#### Discussion
+## Discussion
 
 Use this type for step function curves, such as when mapping a continuously varying input value to a discrete set of output values.
 

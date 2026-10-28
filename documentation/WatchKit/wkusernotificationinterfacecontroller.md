@@ -20,7 +20,7 @@ class WKUserNotificationInterfaceController
 @interface WKUserNotificationInterfaceController : WKInterfaceController
 ```
 
-#### Overview
+## Overview
 
 Apps that support notifications can define one or more subclasses of [`WKUserNotificationInterfaceController`](./wkusernotificationinterfacecontroller.md) and use them to implement their dynamic notification interfaces. For example, you might use a dynamic interface to display custom data from the notification payload or add related graphics.
 
@@ -30,7 +30,7 @@ Apps can include multiple notification interfaces in their storyboard file, and 
 
 After initializing your interface controller, WatchKit calls the [`didReceive(_:)`](./wkusernotificationinterfacecontroller/didreceive%28_%29.md) method to provide you with the payload data from the notification. Your implementations of those methods should update any interface objects and call the provided completion handler as quickly as possible. If you don’t call the completion handler in a timely manner, WatchKit displays your static notification interface instead.
 
-##### Actionable Notifications
+### Actionable Notifications
 
 For each category your app supports, you can also register actions for that category. When a category has registered actions, WatchKit adds a button for each action to the corresponding static or dynamic notification interface. Because the system automatically adds the buttons, don’t manually add your own to your custom notification interface. For more information about registering actions, see [Declaring your actionable notification types](../UserNotifications/declaring-your-actionable-notification-types.md).
 
@@ -41,7 +41,7 @@ The following rules define where the system handles the action:
 - The system always handles foreground actions on the device where the user selected the action. For example, if you send a remote notification to the user’s iPhone and the system automatically forwards it to their Apple Watch, tapping the action runs it on the watch.
 - The system always handles background actions on the device that was the notification’s target. For example, if you send a notification to the user’s iPhone and the system automatically forwards it to their Apple Watch, tapping the action runs it in the background on their iPhone.
 
-##### Interface Builder Configuration Options
+### Interface Builder Configuration Options
 
 Xcode lets you configure information about your notification interface controller in your storyboard file. A notification interface controller supports almost all of the attributes associated with its parent class plus those in the following table.
 

@@ -22,7 +22,7 @@ func activityDidFinish(_ completed: Bool)
 - (void) activityDidFinish:(BOOL) completed;
 ```
 
-#### Discussion
+## Discussion
 
 This method dismisses the sharing interface provided by the [`UIActivityViewController`](../uiactivityviewcontroller.md) object. If you provided a view controller using the [`activityViewController`](./activityviewcontroller.md) method, this method dismisses that view controller too.
 

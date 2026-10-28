@@ -22,7 +22,7 @@ nonisolated
 func customizationBehavior(_ behavior: ToolbarCustomizationBehavior) -> some CustomizableToolbarContent
 ```
 
-#### Discussion
+## Discussion
 
 Customizable toolbar items support different kinds of customization:
 

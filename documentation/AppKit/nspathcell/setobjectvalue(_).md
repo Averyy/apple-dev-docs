@@ -19,7 +19,7 @@ func setObjectValue(_ obj: (any NSCopying)?)
 - (void) setObjectValue:(id<NSCopying>) obj;
 ```
 
-#### Discussion
+## Discussion
 
 If `setObjectValue:` is called with an `NSURL` object, [`clickedPathComponentCell`](./clickedpathcomponentcell.md) is automatically called. The [`objectValue`](../nscell/objectvalue.md) method returns the most recently set URL value. The `setObjectValue:` method can also take a string value, with the items separated by the path separator (`/`). Any other value is a programming error and will cause an assertion.
 

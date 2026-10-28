@@ -21,7 +21,7 @@ A type property that returns the tag class used to map a type to a filename exte
 static var filenameExtension: UTTagClass { get }
 ```
 
-#### Discussion
+## Discussion
 
 The tag class for filename extensions such as `txt`.
 

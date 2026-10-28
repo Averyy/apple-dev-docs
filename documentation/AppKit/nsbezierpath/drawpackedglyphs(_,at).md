@@ -19,7 +19,7 @@ class func drawPackedGlyphs(_ packedGlyphs: UnsafePointer<CChar>, at point: NSPo
 + (void) drawPackedGlyphs:(const char *) packedGlyphs atPoint:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 This method draws the glyphs immediately.
 

@@ -25,7 +25,7 @@ func NSMaxRange(_ range: NSRange) -> Int
 static NSUInteger NSMaxRange(NSRange range);
 ```
 
-#### Return Value
+## Return Value
 
 The sum of the location and length of the range—that is, `range.location` + `range.length`.
 

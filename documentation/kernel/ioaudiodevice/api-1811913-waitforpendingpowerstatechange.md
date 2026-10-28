@@ -11,7 +11,7 @@ Called internally to wait until a pending power state change is complete.
 virtual void waitForPendingPowerStateChange();
 ```
 
-#### Overview
+## Overview
 
 This is only used by internal functions to wait during pending power state changes. It is used to prevent multiple power state changes at the same time. This function must be called while holding the IOCommandGate. If an asynchronous power state change is in progress this function will block until the state change if complete. Once complete, it will return while still holding the IOCommandGate.
 

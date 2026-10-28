@@ -24,11 +24,11 @@ func animate(alongsideTransition animation: ((any UIViewControllerTransitionCoor
 - (BOOL) animateAlongsideTransition:(void (^)(id<UIViewControllerTransitionCoordinatorContext>context)) animation completion:(void (^)(id<UIViewControllerTransitionCoordinatorContext>context)) completion;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the animations were successfully queued to run or [`false`](../../Swift/false.md) if they were not.
 
-#### Discussion
+## Discussion
 
 Use this method to perform animations that aren’t handled by the animator objects themselves. All of the animations you specify must occur inside the animation context’s container view (or one of its descendants). Use the [`containerView`](../uiviewcontrollertransitioncoordinatorcontext/containerview.md) property of the context object to get the container view. To perform animations in a view that doesn’t descend from the container view, use the [`animateAlongsideTransition(in:animation:completion:)`](./animatealongsidetransition%28in,animation,completion%29.md) method instead.
 

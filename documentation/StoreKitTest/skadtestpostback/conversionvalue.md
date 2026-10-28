@@ -21,7 +21,7 @@ var conversionValue: Int { get }
 @property (nonatomic, assign, readonly) NSInteger conversionValue;
 ```
 
-#### Discussion
+## Discussion
 
 A postback in SKAdNetwork 3 or earlier uses a single [`conversionValue`](./conversionvalue.md). A postback in SKAdNetwork 4 or later may contain either a [`fineConversionValue`](./fineconversionvalue.md) or a [`coarseConversionValue`](./coarseconversionvalue.md).
 

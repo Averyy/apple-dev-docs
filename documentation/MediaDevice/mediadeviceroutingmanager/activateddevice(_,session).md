@@ -22,7 +22,7 @@ final func activatedDevice(_ device: MediaOutputDevice, session: MediaOutputSess
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Discussion
+## Discussion
 
 Call this function when activation has completed for a device.
 

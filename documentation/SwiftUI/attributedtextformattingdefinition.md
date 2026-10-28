@@ -21,7 +21,7 @@ A protocol for defining how text can be styled in a view.
 protocol AttributedTextFormattingDefinition<Scope>
 ```
 
-#### Overview
+## Overview
 
 A formatting definition consists of an attribute scope and a number of value constraints. It is applied to a view hierarchy using the [`attributedTextFormattingDefinition(_:)`](./view/attributedtextformattingdefinition%28_%29-81jn6.md) view modifier and affects nested [`Text`](./text.md) and [`TextEditor`](./texteditor.md) views when initialized with [`AttributedString`](../Foundation/attributedstring.md).
 

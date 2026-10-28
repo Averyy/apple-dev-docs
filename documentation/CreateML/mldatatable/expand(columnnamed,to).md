@@ -20,11 +20,11 @@ Creates a new data table where duplicate row values in the given column are cond
 func expand(columnNamed: String, to: String) -> MLDataTable
 ```
 
-#### Return Value
+## Return Value
 
 A new data table.
 
-#### Discussion
+## Discussion
 
 This function performs the inverse of [`condense(columnNamed:to:)`](./condense%28columnnamed,to%29.md).
 

@@ -25,11 +25,11 @@ typealias CMBufferQueueTriggerToken = OpaquePointer
 typedef struct opaqueCMBufferQueueTriggerToken * CMBufferQueueTriggerToken;
 ```
 
-#### Discussion
+## Discussion
 
 The CMBufferQueueTriggerToken is returned from [`CMBufferQueueInstallTrigger(_:callback:refcon:condition:time:triggerTokenOut:)`](./cmbufferqueueinstalltrigger%28_,callback,refcon,condition,time,triggertokenout%29.md), so you can remove it later if necessary.  Triggers will automatically be removed when the queue is finalized. Note that if more than one module has access to a queue, it may be hard for an individual module to know when the queue is finalized since other modules may retain it.  To address this concern, modules should remove their triggers before they themselves are finalized.
 
-##### Special Considerations
+### Special Considerations
 
 A `CMBufferQueueTrigger` is not a Core Foundation object; you must not `CFRetain` or `CFRelease` it.
 

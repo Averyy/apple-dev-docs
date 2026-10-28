@@ -19,7 +19,7 @@ A map of credential identifiers to input values for the PRF extension.
 @property (nonatomic, readonly, nullable) NSDictionary<NSData *,ASAuthorizationPublicKeyCredentialPRFAssertionInputValues *> * perCredentialInputValues;
 ```
 
-#### Discussion
+## Discussion
 
 If the user selects a passkey that matches a `credentialID` key in this dictionary, the extension uses the corresponding input values. If the selected passkey doesn’t match, it uses `inputValues` if it’s non-`nil`. Otherwise, no PRF output returns. When this value is nonempty, the request needs to specify `allowedCredentials`.
 

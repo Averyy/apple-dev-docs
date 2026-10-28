@@ -19,7 +19,7 @@ optional func webView(_ webView: WebView!, decidePolicyForNavigationAction actio
 - (void) webView:(WebView *) webView decidePolicyForNavigationAction:(NSDictionary *) actionInformation request:(NSURLRequest *) request frame:(WebFrame *) frame decisionListener:(id<WebPolicyDecisionListener>) listener;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked when a navigation decision needs to be made. The web view implements a policy decision by sending one of the [`WebPolicyDecisionListener`](../webpolicydecisionlistener.md) protocol messages to `listener`. This method is invoked whenever a server redirect is encountered, and before loading starts.
 

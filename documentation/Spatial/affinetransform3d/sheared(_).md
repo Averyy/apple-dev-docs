@@ -21,7 +21,7 @@ Returns an affine transform that results from shearing over an axis by shear fac
 func sheared(_ shear: AxisWithFactors) -> AffineTransform3D
 ```
 
-#### Return Value
+## Return Value
 
 The affine transform that results from shearing over an axis by shear factors for the other two axes.
 

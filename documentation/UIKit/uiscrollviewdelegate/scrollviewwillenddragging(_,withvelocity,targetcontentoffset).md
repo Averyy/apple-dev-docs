@@ -23,7 +23,7 @@ optional func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity
 - (void) scrollViewWillEndDragging:(UIScrollView *) scrollView withVelocity:(CGPoint) velocity targetContentOffset:(CGPoint *) targetContentOffset;
 ```
 
-#### Discussion
+## Discussion
 
 Your application can change the value of the `targetContentOffset` parameter to adjust where the scrollview finishes its scrolling animation.
 

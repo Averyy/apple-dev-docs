@@ -24,7 +24,7 @@ var probeURL: URL? { get set }
 @property (copy, nullable) NSURL * probeURL;
 ```
 
-#### Discussion
+## Discussion
 
 An HTTP or HTTPS URL. If a request sent to this URL results in a HTTP 200 OK response and all of the other conditions in the rule match, then then rule matches. If this property is nil (the default), then an HTTP request does not factor into the rule match.
 

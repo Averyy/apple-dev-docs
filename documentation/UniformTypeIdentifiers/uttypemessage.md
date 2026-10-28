@@ -21,7 +21,7 @@ A base type that represents a message.
 extern UTType * const UTTypeMessage;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.message`.
 

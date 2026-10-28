@@ -19,7 +19,7 @@ A Boolean value that determines whether the button displays an activity indicato
 @property (nonatomic, assign, readwrite) BOOL showsActivityIndicator;
 ```
 
-#### Discussion
+## Discussion
 
 The button respects the [`imagePlacement`](./imageplacement.md) property when positioning the activity indicator.
 

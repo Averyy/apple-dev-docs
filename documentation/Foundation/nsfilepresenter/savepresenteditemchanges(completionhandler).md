@@ -29,7 +29,7 @@ optional func savePresentedItemChanges() async throws
 - (void) savePresentedItemChangesWithCompletionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The file coordinator calls this method to ensure that all objects trying to access the file or directory see the same contents. Implement this method if your object can change the presented item in a way that requires you to write those changes back to disk. If your presenter object does not make changes that need to be saved, you do not need to implement this method.
 

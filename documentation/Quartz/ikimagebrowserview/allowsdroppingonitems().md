@@ -19,11 +19,11 @@ func allowsDroppingOnItems() -> Bool
 - (BOOL) allowsDroppingOnItems;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user is able to drop on items, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The default is [`false`](../../Swift/false.md).
 

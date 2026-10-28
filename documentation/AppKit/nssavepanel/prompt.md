@@ -19,7 +19,7 @@ var prompt: String! { get set }
 @property (copy, null_resettable) NSString * prompt;
 ```
 
-#### Discussion
+## Discussion
 
 The prompt appears on all [`NSSavePanel`](../nssavepanel.md) objects (or all [`NSOpenPanel`](../nsopenpanel.md) objects if this property is on an [`NSOpenPanel`](../nsopenpanel.md) instance) in your application. By default, the text in the default button is “Open” for an Open panel and “Save” for a Save panel.
 

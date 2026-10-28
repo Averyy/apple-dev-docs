@@ -25,7 +25,7 @@ var skipBackwardCommand: MPSkipIntervalCommand { get }
 @property (nonatomic, readonly) MPSkipIntervalCommand * skipBackwardCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to register your app’s handler for jumping to a previous point in the current track. In your handler, skip backwards by the amount specified in the event’s [`interval`](../mpskipintervalcommandevent/interval.md) property. You can disable the command if your app does not support it.
 

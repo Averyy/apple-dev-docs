@@ -22,7 +22,7 @@ case update
 UIApplicationShortcutIconTypeUpdate
 ```
 
-#### Discussion
+## Discussion
 
 ![Update quick action icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934537@2x.png)
 

@@ -20,7 +20,7 @@ A bind path for a particular scene.
 struct ScenePath
 ```
 
-#### Overview
+## Overview
 
 This structure defines an absolute bind path for a scene. You determine the scene that a particular instance references by specifying the scene’s name as the argument to [`BindPath.Part.scene(_:)`](../bindpath/part/scene%28_%29.md).
 

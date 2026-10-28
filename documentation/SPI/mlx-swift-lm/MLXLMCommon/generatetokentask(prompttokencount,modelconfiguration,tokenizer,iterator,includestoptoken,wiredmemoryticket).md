@@ -17,11 +17,11 @@ Low-level raw token generation using a `TokenIterator`, returning an `AsyncStrea
 func generateTokenTask(promptTokenCount: Int, modelConfiguration: ModelConfiguration, tokenizer: Tokenizer, iterator: consuming TokenIterator, includeStopToken: Bool = false, wiredMemoryTicket: WiredMemoryTicket? = nil) -> (AsyncStream<TokenGeneration>, Task<Void, Never>)
 ```
 
-#### Return Value
+## Return Value
 
 An `AsyncStream` that emits token IDs and a final `.info`, plus a `Task`.
 
-#### Discussion
+## Discussion
 
 This is useful for parsers that need access to token IDs directly, without detokenization or tool-call parsing.
 

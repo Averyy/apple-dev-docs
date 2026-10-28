@@ -20,7 +20,7 @@ case drop
 NSNotificationSuspensionBehaviorDrop
 ```
 
-#### Discussion
+## Discussion
 
 To resume notification delivery, set the [`suspended`](../suspended.md) to [`false`](../../../Swift/false.md).
 

@@ -19,7 +19,7 @@ var mailDomains: [String] { get set }
 @property (copy) NSArray<NSString *> * mailDomains;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies only to per-app VPNs.
 

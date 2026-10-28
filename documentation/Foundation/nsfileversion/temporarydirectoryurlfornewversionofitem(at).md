@@ -19,11 +19,11 @@ class func temporaryDirectoryURLForNewVersionOfItem(at url: URL) -> URL
 + (NSURL *) temporaryDirectoryURLForNewVersionOfItemAtURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A URL identifying the temporary directory in which to create a the new file. You must delete the directory specified by this URL after you have created the file and moved it to its proper location.
 
-#### Discussion
+## Discussion
 
 You can use this method in situations where you want to create a file in a temporary location. For example, you might use this method when saving the contents of a file to disk for the first time. When you finish creating the temporary file, move it to a more appropriate location, such as the user’s `Documents` directory. You must delete the directory returned by this method when you are done with it.
 

@@ -25,7 +25,7 @@ func setActionIsDiscardable(_ discardable: Bool)
 - (void) setActionIsDiscardable:(BOOL) discardable;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that the latest undo action may be safely discarded when a document can not be saved for any reason.
 

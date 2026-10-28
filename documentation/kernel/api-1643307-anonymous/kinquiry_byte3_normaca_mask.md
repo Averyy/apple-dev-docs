@@ -13,7 +13,7 @@
 kINQUIRY_Byte3_NORMACA_Mask = (1 << kINQUIRY_Byte3_NORMACA_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the NORMACA bit.
 

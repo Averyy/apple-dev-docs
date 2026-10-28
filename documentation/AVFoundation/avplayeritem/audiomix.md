@@ -26,7 +26,7 @@ var audioMix: AVAudioMix? { get set }
 @property (nonatomic, copy, nullable) AVAudioMix * audioMix;
 ```
 
-#### Discussion
+## Discussion
 
 An audio mix can only be used with file-based media and is not supported for use with media served using HTTP Live Streaming.
 

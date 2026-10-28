@@ -17,7 +17,7 @@ A unique, stable identifier for a device.
 let id: String
 ```
 
-#### Discussion
+## Discussion
 
 Provide this identifier when you create an [`ElectricalLoadDevice`](../electricalloaddevice.md) instance for submitting electrical load events. The EnergyKit framework uses this identifier to associate events with devices and generate device-specific insights.
 

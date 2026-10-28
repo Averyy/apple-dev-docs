@@ -19,7 +19,7 @@ let kVTCompressionPropertyKey_SuggestedLookAheadFrameCount: CFString
 extern CFStringRef const kVTCompressionPropertyKey_SuggestedLookAheadFrameCount;
 ```
 
-#### Discussion
+## Discussion
 
 These frames will be used for additional analysis and statistics gathering before the frame is finally encoded at the end of the window. When this property is not set, video encoder will automatically determine the number of lookahead frames.
 

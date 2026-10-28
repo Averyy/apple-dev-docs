@@ -16,11 +16,11 @@ Returns the maximum number of groups allowed in the particle system.
 int group::maximumGroupsInSystem()
 ```
 
-#### Return Value
+## Return Value
 
 The total number of groups that can exist in the system
 
-#### Discussion
+## Discussion
 
 Use this function to determine the total capacity of groups in the system, which is useful for normalizing group indices or creating group-based patterns.
 

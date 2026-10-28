@@ -25,7 +25,7 @@ protocol LongRunningIntent : ProgressReportingIntent
 
 - [Creating your first app intent](./creating-your-first-app-intent.md)
 
-#### Overview
+## Overview
 
 This protocol allows an app intent to run for an extended period of time in the background. When a task runs in the background, the system traditionally gives it up to 30 seconds to finish its task. For some types of tasks, this amount of time can be insufficient to complete the task. For example, file operations, data synchronization, machine learning inference, and data processing tasks can take longer if they operate on a sufficiently large amount of data. If your app intent performs a task that might exceed the built-in time limits, incorporate this protocol and use its methods to perform that task.
 

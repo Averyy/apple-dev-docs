@@ -23,7 +23,7 @@ var navigationChildContexts: [CLSContext] { get }
 @property (nonatomic, copy, readonly) NSArray<CLSContext *> * navigationChildContexts;
 ```
 
-#### Discussion
+## Discussion
 
 A given context exists at exactly one place in your app’s context hierarchy. However, you might want to provide multiple ways to navigate to a context. For example, you might define a set of quiz contexts as children of your app’s main context:
 

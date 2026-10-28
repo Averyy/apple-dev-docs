@@ -21,7 +21,7 @@ A tag stating that associated video has packed frames with a left eye image on t
 extern const CMTag kCMTagPackingTypeSideBySide;
 ```
 
-#### Discussion
+## Discussion
 
 This value is for use in tags with the [`kCMTagCategory_PackingType`](./cmtagcategory/kcmtagcategory_packingtype.md) category. For side-by-side packed frames, the width of a frame in video data is twice as wide as the video displayed.
 

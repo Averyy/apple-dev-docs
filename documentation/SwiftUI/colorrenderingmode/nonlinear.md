@@ -21,7 +21,7 @@ The non-linear sRGB working color space.
 case nonLinear
 ```
 
-#### Discussion
+## Discussion
 
 Color component values outside the range `[0, 1]` produce undefined results. This color space is gamma corrected.
 

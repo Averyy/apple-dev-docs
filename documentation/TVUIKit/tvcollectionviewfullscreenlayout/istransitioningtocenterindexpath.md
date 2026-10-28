@@ -19,7 +19,7 @@ var isTransitioningToCenterIndexPath: Bool { get }
 @property (nonatomic, readonly, getter=isTransitioningToCenterIndexPath) BOOL transitioningToCenterIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine whether the cell is changing focus to another cell.
 

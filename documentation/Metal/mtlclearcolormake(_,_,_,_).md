@@ -24,7 +24,7 @@ func MTLClearColorMake(_ red: Double, _ green: Double, _ blue: Double, _ alpha: 
 static MTLClearColor MTLClearColorMake(double red, double green, double blue, double alpha);
 ```
 
-#### Return Value
+## Return Value
 
 A value for clearing a color attachment.
 

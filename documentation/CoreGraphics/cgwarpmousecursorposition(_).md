@@ -20,11 +20,11 @@ func CGWarpMouseCursorPosition(_ newCursorPosition: CGPoint) -> CGError
 extern CGError CGWarpMouseCursorPosition(CGPoint newCursorPosition);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 
-#### Discussion
+## Discussion
 
 You can use this function to “warp” or alter the cursor position without generating or posting an event. For example, this function is often used to move the cursor position back to the center of the screen by games that do not want the cursor pinned by display edges.
 

@@ -24,7 +24,7 @@ var achievements: Set<GKAchievement> { get }
 @property (nonatomic, copy, readonly) NSSet<GKAchievement *> * achievements;
 ```
 
-#### Discussion
+## Discussion
 
 Progress of each achievement will be reported when the activity ends.
 

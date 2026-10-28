@@ -25,7 +25,7 @@ var SparsePreconditionerDiagonal: SparsePreconditioner_t { get }
 SparsePreconditionerDiagonal
 ```
 
-#### Discussion
+## Discussion
 
 [`SparsePreconditionerDiagonal`](./sparsepreconditionerdiagonal.md) provides a simple preconditioner for conjugate gradient (CG) and generalized minimal residual (GMRES) methods.
 

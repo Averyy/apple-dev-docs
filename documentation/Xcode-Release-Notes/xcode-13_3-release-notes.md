@@ -5,23 +5,23 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 ---
 
-#### Overview
+## Overview
 
 Xcode 13.3 includes SDKs for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5, and macOS Monterey 12.3. The Xcode 13.3 release supports on-device debugging for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5 and later. Xcode 13.3 requires a Mac running macOS Monterey 12 or later.
 
-##### App Store Integration
+### App Store Integration
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Mitigated several Log4J 2 vulnerabilities by updating Log4J 2 jar files to version 2.17.1. See [https://logging.apache.org/log4j/2.x/security.html](https://logging.apache.org/log4j/2.x/security.html). (86489820)
 
-##### Apple Clang Compiler
+### Apple Clang Compiler
 
-###### New Features
+#### New Features
 
 - Several C++20 and C++2b papers have been implemented:
 
@@ -32,11 +32,11 @@ Xcode 13.3 includes SDKs for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5, and 
   - Any trailing whitespace after `\` is non-significant.
   - Concatenations of string-literals with different encoding prefixes are now ill-formed, for example, `auto s = L"" U"";`. (89022082)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Clang now follows the C++ standard’s `[intro.progress]` requirement. As a result, the compiler can remove infinite loops without side effects. Consider using `-fno-finite-loops` if your code has infinite loops without observable side effects that the compiler must preserve. (84717970)
 
-###### Known Issues
+#### Known Issues
 
 - Exporting an app that uses Swift’s concurrency features from an archive with bitcode might fail when the app targets iOS 13.0 – iOS 14.7, watchOS 6.0 – watchOS 7.6, or tvOS 13.0 – 14.7. (89271047)
 
@@ -45,9 +45,9 @@ Xcode 13.3 includes SDKs for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5, and 
 
   **Workaround**: Assign the result to a `volatile` local variable.
 
-##### Build System
+### Build System
 
-###### New Features
+#### New Features
 
 - The build system and Swift compiler have a new mode that better utilizes available cores, resulting in faster builds for Swift projects. The mode is opt-in, and you can enable it globally with the following user default:
 
@@ -57,7 +57,7 @@ Xcode 13.3 includes SDKs for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5, and 
 
   Please report any issues with the new build system mode through Feedback Assistant. (87898478)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a crash that occurred when building projects containing file paths with non-ASCII characters. (83694706)
 - Xcode no longer passes `-stdlib=libstdc++` to Clang, because Clang no longer supports that library on Apple platforms. If your project defines the `CLANG_CXX_LIBRARY` build setting, remove it because it no longer does anything. (83768231)
@@ -68,35 +68,35 @@ Xcode 13.3 includes SDKs for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5, and 
 - The build system no longer incorrectly reports a successful build when an input to a build task is missing. (86028889)
 - Fixed: Apple Watch app targets may fail to build in the `ValidateEmbeddedBinary` step with the error message: “error: The value of CFBundleShortVersionString in your WatchKit app’s Info.plist (1.0) does not match the value in your companion app’s Info.plist ((null)). These values are required to match.” (89240826)
 
-##### Debugging
+### Debugging
 
-###### New Features
+#### New Features
 
 - When compiling with optimizations turned off, the Swift compiler and Clang no longer eliminate redundant branch instructions on ARM64 targets. This improves debuggability by enabling more breakpoint locations, at the expense of producing slightly larger binaries when compiling with `-Onone`. (79515454)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where Playgrounds sometimes fails to execute when importing frameworks from the workspace by using the “Build active scheme” option. (85431564)
 
-##### Devices
+### Devices
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Activating an iOS and watchOS pair from the Devices and Simulator window causes Xcode to crash. (89262466)
 
-##### Documentation
+### Documentation
 
-###### New Features
+#### New Features
 
 - Xcode can now build documentation from your Swift code in executable targets, like apps and command-line tools. (79155998) (FB9156246)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where symbol declarations unintentionally included access level modifiers like “public” and “open”. (85280786)
 
-##### Instruments
+### Instruments
 
-###### New Features
+#### New Features
 
 - Improved the accuracy of leak scanning in Instruments, Xcode’s memory graph debugger, and the `leaks` command line. The system now scans object references inside multi-payload enum cases more accurately, allowing more precise memory leak analysis and the identification of strong, weak, and unowned reference types. (33836721)
 - `xctrace` now has the ability to symbolicate previously captured trace files with user-specified dSYMs. Please see `man xctrace` or `xctrace help symbolicate` for details and syntax examples.
@@ -123,48 +123,48 @@ Xcode 13.3 includes SDKs for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5, and 
 - Instruments removed the Console view from trace documents. To see output and errors during a trace, add the stdout/stderr instrument from the library. The new stdout/stderr instrument has improved performance and reliability, but it’s no longer active by default. (81732320)
 - Instruments now displays run issues in a toolbar popover instead of displaying them in the detail area. In addition, run issues also appear in the ruler above the timeline to indicate when they occurred. (81732387)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The find field in the Instruments detail area now properly synchronizes with find fields across the system. In addition, you can use Command-E on selected text in the extended detail view on the right to populate the detail area’s find field. (15486760) (FB5917381)
 - Fixed a bug where the CPU Profiler instrument’s recordings didn’t start when targeting a Mac with Apple silicon. (84244734) (FB9703079)
 - Fixed a UI issue where Instruments’ Packages preference tab incorrectly allowed for horizontal scrolling. (84359511) (FB9711254)
 
-##### Linking
+### Linking
 
-###### New Features
+#### New Features
 
 - The new chained fixups format is the default linking method when targeting macOS 11 or later, iOS 13.4 or later, watchOS 7.0 or later, and tvOS 14.0 or later. This new format results in smaller `LINKEDIT` segments in binaries. When targeting earlier operating system releases, the linker continues to generate the traditional opcode format in `LINKEDIT` for fixups, rebases, and binds. (85572905)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When profiling Rosetta 2 apps with Instruments or other tools, stack traces may include extra invalid unsymbolicated frames such as `0x3`. (87207828)
 
-##### Localization
+### Localization
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where Xcode duplicated keys in `.stringsdict` files alongside their corresponding `.strings` file key when exporting for localization. As part of this change, Xcode copies comments from `.strings` files to the resulting `.stringsdict` translation unit and marks the corresponding `.strings` unit as `translate="no"` in the exported XLIFF. (38238225)
 - Fixed an issue where `genstrings` was unable to print diagnostics with Unicode characters. (85229466)
 - Log and diagnostic messages now appear in the Report navigator when importing and exporting for localization. (18023462)
 - You can now override build settings from the command-line tool when using `xcodebuild` to import and export localizations. (75221589)
 
-##### Organizer
+### Organizer
 
-###### New Features
+#### New Features
 
 - Xcode now automatically sends you Smart Insights Notifications for your apps if you have 10 or fewer apps and if you haven’t previously subscribed to any apps. To activate this feature, click the Regressions item or any of the Metrics items in Organizer. (86535781)
 
-###### Deprecations
+#### Deprecations
 
 - The `symbolicatecrash` script is deprecated. Instead, use the `atos` command-line tool. For more information about this tool, see [Adding identifiable symbol names to a crash report](../Xcode/adding-identifiable-symbol-names-to-a-crash-report.md). (82929755)
 
-##### Playgrounds
+### Playgrounds
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: You may not be able to edit local network and ATS capability entries in Swift Playgrounds projects when running in macOS Big Sur 11. (89169927)
 
-###### Known Issues
+#### Known Issues
 
 - Swift Playgrounds projects in Xcode may not launch unless a bundle ID is set in the project. (88832659)
 
@@ -176,9 +176,9 @@ Xcode 13.3 includes SDKs for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5, and 
 
   **Workaround**: Remove any macOS capabilities.
 
-##### Previews
+### Previews
 
-###### Known Issues
+#### Known Issues
 
 - Previews may fail for a SwiftUI view that’s in a Mac Catalyst framework or package that isn’t also embedded within an app. (88895960)
 
@@ -187,43 +187,43 @@ Xcode 13.3 includes SDKs for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5, and 
 
   **Workaround**: Try clicking again or Control-click in order to activate the text field.
 
-##### Project Navigator
+### Project Navigator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where some Xcode projects opened in a red “missing” state after Xcode crashed and reopened. (70526957) (FB8816939)
 - Fixed: Xcode declares the wrong type identifier for GPX files (`com.topographix.gpx` instead of `com.topografix.gpx`). This can interrupt other applications that operate on `com.topografix.gpx` files. (86333977) (FB9804569)
 
-##### Simulator
+### Simulator
 
-###### Known Issues
+#### Known Issues
 
 - Apps may terminate unexpectedly when running in a watchOS 5.3 simulator. (89453856)
 - Debugging an app might fail the first time Simulator launches. (78621968)
 
   **Workaround**: Try debugging the App Extension again after Simulator launches. You may need to delete your iOS app from Simulator.
 
-##### Source Control
+### Source Control
 
-###### New Features
+#### New Features
 
 - Xcode now supports using ED25519 public key signatures to perform git operations. You can select an existing ED25519 key from the Accounts tab in Xcode Preferences. (88897990)
 
-###### Known Issues
+#### Known Issues
 
 - Multi-line comments containing parentheses may result in inaccurate diffs being displayed on the command-line and in the Code Review in Xcode’s source editor. (61163230)
 - The Changes navigator’s pull request file list may not auto-refresh when you add commits to a branch with an associated pull request. (75502462)
 
   **Workaround**: Manually select commit from Pull Request Commit menu or relaunch Xcode.
 
-##### Source Editor
+### Source Editor
 
-###### New Features
+#### New Features
 
 - Code completion now suggests enum instances for `if case .`. (69842729)
 - Code completion no longer auto-imports a module when completing a nonaccessible symbol. (85480026)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where “Add documentation” didn’t work on functions with generic parameters. (56540593)
 - Fixed an issue that caused Xcode to hang when closing a project. (74228821)
@@ -248,24 +248,24 @@ Xcode 13.3 includes SDKs for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5, and 
 - Fixed an issue where Source Editor didn’t syntax highlight custom attributes with arguments for wrapped properties. (87611350)
 - Fixed a number of issues with the indentation of chained SwiftUI modifiers. (87612104)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - Within StoreKit configuration files, you can now copy, paste, and duplicate products, subscription groups, subscription offers, and localizations. (63724339)
 - You can now configure offers for codes in StoreKit configuration files when using StoreKit Testing in Xcode. You can redeem these offers when testing on devices running iOS 15.4 or later. (82929135)
 - You can now toggle a new mode in StoreKit configuration files called Billing Retry on Renewal. This mode causes subscriptions to enter a simulated Billing Retry period when a subscription is set to renew. This mode works on devices and simulators running iOS 15.4, macOS Monterey 12.3, watchOS 8.5, or tvOS 15.4. (83938223)
 - You can now test subscription price increases on devices or simulators running iOS 15.4, macOS Monterey 12.3, watchOS 8.5, and tvOS 15.4. You can test requesting and responding to price increase consent on a subscription transaction using the transaction manager. When testing subscription price increases on a device running iOS 15.4 or later, each request for price increase consent simulates calling the payment queue delegate method  [`paymentQueueShouldShowPriceConsent(_:)`](../StoreKit/skpaymentqueuedelegate/paymentqueueshouldshowpriceconsent%28_%29.md). (84318402)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - When opening the Find navigator’s results within a StoreKit configuration file, Xcode now opens the location of the configuration file where the results were found. (63911714)
 - Fixed how StoreKit Testing displays multiple item selections in Xcode. (74015062) (FB8991179)
 - Fixed an issue where the StoreKit Testing in Xcode editor didn’t horizontally scroll on small windows. (74015131) (FB8991182)
 
-##### Swift 5.6
+### Swift 5.6
 
-###### New Features
+#### New Features
 
 - Swift now allows existential types written with the `any` keyword. An existential type is a type that can hold a value of any type conforming to a specific protocol. The `any` keyword creates a syntactic distinction between existential types and protocol conformance constraints. The `any` keyword is an important syntactic indicator that you’re using an existential type, because there are fundamental limitations on the capabilities of these types, such as the inability to conform to protocols. For example:
 
@@ -382,7 +382,7 @@ Xcode 13.3 includes SDKs for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5, and 
 - The conformance of the unsafe pointer types (e.g., `UnsafePointer`, `UnsafeMutableBufferPointer`) to the `Sendable` protocols has been removed, because Swift can’t safely transfer pointers across task or actor boundaries. ([SE-0331](https://github.com/apple/swift-evolution/blob/main/proposals/0331-remove-sendable-from-unsafepointer.md), 88598449)
 - The standard library now provides the [`withUnsafeTemporaryAllocation(of:capacity:_:)`](../Swift/withunsafetemporaryallocation%28of,capacity,_%29.md) and [`withUnsafeTemporaryAllocation(byteCount:alignment:_:)`](../Swift/withunsafetemporaryallocation%28bytecount,alignment,_%29.md) functions. You can use these functions to cheaply allocate raw storage for a brief duration. The system allocates storage on the stack if possible. ([SE-0322](https://github.com/apple/swift-evolution/blob/main/proposals/0322-temporary-buffers.md), 88598790)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Apps that use back-deployed Swift Concurrency on operating systems prior to macOS 10.15, iOS 13, tvOS 13, or watchOS 6 no longer crash on launch. (87789769)
 - As part of SE-327, in Swift 5 mode a warning is now emitted if the default-value expression of an instance-member property requires global-actor isolation. Previously, the isolation granted by the type checker matched the isolation of the property itself, but at runtime that isn’t guaranteed. In Swift 6, such default-value expressions become an error if they require isolation. For more details, see [SE-327](https://github.com/apple/swift-evolution/blob/main/proposals/0327-actor-initializers.md#stored-property-isolation). (87620832)
@@ -415,34 +415,34 @@ Xcode 13.3 includes SDKs for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5, and 
   }
   ```
 
-###### Known Issues
+#### Known Issues
 
 - Applications linking to RealityKit with iOS 15 or macOS Monterey 12 SDKs fail to launch in previous operating systems. (79584511)
 
   **Workaround**: Add `OTHER_LDFLAGS = -weak_framework RealityFoundation` to your Xcode project settings to allow running RealityKit apps in older operating systems.
 
-##### Swift Package Manager
+### Swift Package Manager
 
-###### New Features
+#### New Features
 
 - Swift Packages now support build tool plugins, as defined in [SE-0303](https://github.com/apple/swift-evolution/blob/main/proposals/0303-swiftpm-extensible-build-tools.md) and [SE-0325](https://github.com/apple/swift-evolution/blob/main/proposals/0325-swiftpm-additional-plugin-apis.md). This allows packages to define plugins that can specify tools that should run during a build operation, for example to generate source code. This is supported in both `swift` `package` and in Xcode’s support for packages. (79876749)
 - The `swift` `package` command now supports command plugins, as defined in [SE-0332](https://github.com/apple/swift-evolution/blob/main/proposals/0332-swiftpm-command-plugins.md). This allows Packages to define commands that can be invoked using the `swift` `package` command line to perform custom actions on the package. (82895553)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: An error emitted by a build tool package plugin wasn’t being shown in the package log. (83715966)
 
-###### Known Issues
+#### Known Issues
 
 - An error emitted by a build tool package plugin doesn’t prevent a build operation that relies on the outputs from the plugin from starting. This can cause build errors related to the missing files that the plugin would have produced. (87842335)
 
-##### Swift Packages
+### Swift Packages
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Archiving an Xcode product that uses a build tool package plugin built from source failed with an error that the tool can’t be found. (88735684)
 
-###### Known Issues
+#### Known Issues
 
 - Making changes to one or more packages in a workspace and then starting a build may cause Xcode to crash. (90286753)
 
@@ -452,13 +452,13 @@ Xcode 13.3 includes SDKs for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5, and 
   defaults write com.apple.dt.Xcode XPMAvoidUpdatingUnchangedPackages No
   ```
 
-##### Testing
+### Testing
 
-###### New Features
+#### New Features
 
 - When running tests repeatedly, the test runner now prints the current iteration number to the console. (83848153)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed several issues with the `xccov` command-line tool. The `--file` argument is no longer required with the `view` command. If you don’t specify `--file`, the tool outputs all information from the specified archive rather than enumerating each file’s contents individually. `xccov` also now supports JSON output with the `--json` argument when viewing archives’ contents. (82004604)
 - `xcodebuild` now supports an `.xctestproducts` bundle format for the `build-for-testing` and `test-without-building` actions. Using a bundle makes it easier to run tests, particularly when transporting tests between systems. Use the new `-testProductsPath` argument to set the path to the bundle.
@@ -478,9 +478,9 @@ Xcode 13.3 includes SDKs for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5, and 
   Use the `-testPlan` argument to specify the name of the test plan to build or run. (85612917)
 - XCTest now supports resetting the authorization status of the “Local Network” protected resource during UI testing. (64828023) (FB7801261)
 
-##### Xcode Cloud
+### Xcode Cloud
 
-###### Known Issues
+#### Known Issues
 
 - When configuring a project or workspace to use Xcode Cloud, the Default workflow may select the wrong scheme for the archive action. (78776640)
 

@@ -19,13 +19,13 @@ class NSImageCell
 @interface NSImageCell : NSCell
 ```
 
-#### Overview
+## Overview
 
 The object value of an `NSImageCell` object must be an [`NSImage`](./nsimage.md) object, so if you use the [`objectValue`](./nscell/objectvalue.md) method of [`NSCell`](./nscell.md), be sure to supply an [`NSImage`](./nsimage.md) object as an argument. Because an [`NSImage`](./nsimage.md) object does not need to be converted for display, do not use the [`NSCell`](./nscell.md) methods relating to formatters.
 
 An `NSImageCell` object is usually associated with some kind of control object. For example, an [`NSMatrix`](./nsmatrix.md) or an [`NSTableView`](./nstableview.md).
 
-##### Designated Initializers
+### Designated Initializers
 
 When subclassing `NSImageCell` you must implement all of the designated initializers. Those methods are: init, [`init(coder:)`](./nscell/init%28coder%29.md), [`init(textCell:)`](./nscell/init%28textcell%29.md), and [`init(imageCell:)`](./nscell/init%28imagecell%29.md).
 

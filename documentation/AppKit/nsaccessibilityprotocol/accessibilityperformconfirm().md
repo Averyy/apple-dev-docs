@@ -20,11 +20,11 @@ func accessibilityPerformConfirm() -> Bool
 - (BOOL) accessibilityPerformConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the action was successfully triggered; otherwise, [`false`](../../Swift/false.md). This method does not indicate the success or failure of the action, just the fact that the action was successfully triggered.
 
-#### Discussion
+## Discussion
 
 Use this method on elements that take keyboard input, such as a text field.
 

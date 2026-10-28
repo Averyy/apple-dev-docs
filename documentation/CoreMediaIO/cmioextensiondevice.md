@@ -24,7 +24,7 @@ class CMIOExtensionDevice
 
 - [Creating a camera extension with Core Media I/O](./creating-a-camera-extension-with-core-media-i-o.md)
 
-#### Overview
+## Overview
 
 A device provides one or more streams of media data to a [`CMIOExtensionProvider`](./cmioextensionprovider.md).
 

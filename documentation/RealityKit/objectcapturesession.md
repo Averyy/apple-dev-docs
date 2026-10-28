@@ -17,7 +17,7 @@ A session object that monitors and controls image capture for photogrammetry.
 class ObjectCaptureSession
 ```
 
-#### Overview
+## Overview
 
 An [`ObjectCaptureSession`](./objectcapturesession.md) is used together with an [`ObjectCaptureView`](./objectcaptureview.md) to present a view that assists in capturing images of an object for reconstruction of a 3D model by using a [`PhotogrammetrySession`](./photogrammetrysession.md).
 

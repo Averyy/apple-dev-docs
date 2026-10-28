@@ -19,7 +19,7 @@ func setConstrainedFrameSize(_ desiredSize: NSSize)
 - (void) setConstrainedFrameSize:(NSSize) desiredSize;
 ```
 
-#### Discussion
+## Discussion
 
 This method respects the receiver’s existing minimum and maximum sizes and by whether resizing is permitted.
 

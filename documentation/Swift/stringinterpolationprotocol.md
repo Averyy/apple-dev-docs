@@ -21,7 +21,7 @@ Represents the contents of a string literal with interpolations while it’s bei
 protocol StringInterpolationProtocol
 ```
 
-#### Overview
+## Overview
 
 Each `ExpressibleByStringInterpolation` type has an associated `StringInterpolation` type which conforms to `StringInterpolationProtocol`. Swift converts an expression like `"The time is \(time)." as MyString` into a series of statements similar to:
 
@@ -40,7 +40,7 @@ The `StringInterpolation` type is responsible for collecting the segments passed
 
 In simple cases, you can use `DefaultStringInterpolation` as the interpolation type for types that conform to the `ExpressibleByStringLiteral` protocol. To use the default interpolation, conform a type to `ExpressibleByStringInterpolation` and implement `init(stringLiteral: String)`. Values in interpolations are converted to strings, and then passed to that initializer just like any other string literal.
 
-### Handling String Interpolations
+## Handling String Interpolations
 
 With a custom interpolation type, each interpolated segment is translated into a call to a special `appendInterpolation` method. The contents of the interpolation’s parentheses are treated as the call’s argument list. That argument list can include multiple arguments and argument labels.
 

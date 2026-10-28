@@ -25,11 +25,11 @@ func objectEnumerator() -> NSEnumerator?
 - (NSEnumerator<id> *) objectEnumerator;
 ```
 
-#### Return Value
+## Return Value
 
 An enumerator object that lets you access each value in the map table.
 
-#### Discussion
+## Discussion
 
 The following code fragment illustrates how you might use the method.
 
@@ -42,7 +42,7 @@ while ((value = [enumerator nextObject])) {
 }
 ```
 
-##### Special Considerations
+### Special Considerations
 
 It is more efficient to use the fast enumeration protocol (see [`NSFastEnumeration`](../nsfastenumeration.md)).
 

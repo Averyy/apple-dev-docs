@@ -29,11 +29,11 @@ func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool
 
 - [Customizing the behavior of segue-based presentations](../customizing-the-behavior-of-segue-based-presentations.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the segue should be performed or [`false`](../../Swift/false.md) if it should be ignored.
 
-#### Discussion
+## Discussion
 
 Subclasses can override this method and use it to perform segues conditionally based on current conditions. If you do not implement this method, all segues are performed.
 

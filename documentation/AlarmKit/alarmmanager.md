@@ -17,7 +17,7 @@ An object that exposes functions to work with alarms: scheduling, snoozing, canc
 class AlarmManager
 ```
 
-#### Overview
+## Overview
 
 Schedule your alarm alert using `AlarmManager`. The following example calls the `AlarmManager` schedule function by passing in the id and configuration.
 

@@ -19,7 +19,7 @@ class VZXHCIControllerConfiguration
 @interface VZXHCIControllerConfiguration : VZUSBControllerConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use this configuration to create a USB XHCI controller device for the guest.
 

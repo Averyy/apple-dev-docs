@@ -21,7 +21,7 @@ The type of aggregation operation used to compute a summary statistic.
 enum AggregationOperation
 ```
 
-#### Overview
+## Overview
 
 Each case pairs a statistical function with the [`Metric`](./metric.md) it operates on, except [`AggregationOperation.custom(label:)`](./aggregationoperation/custom%28label%29.md) which represents a custom computation.
 

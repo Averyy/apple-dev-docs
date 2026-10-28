@@ -26,7 +26,7 @@ var notificationID: CKNotification.ID? { get }
 @property (nonatomic, copy, readonly, nullable) CKNotificationID * notificationID;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to differentiate notifications.
 

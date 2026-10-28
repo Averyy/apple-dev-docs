@@ -15,11 +15,11 @@ Activates this effect as part of an effect group.
 func hoverEffectGroup(id: String? = nil, in namespace: Namespace.ID, behavior: HoverEffectGroup.Behavior = .activatesGroup) -> some CustomHoverEffect
 ```
 
-#### Return Value
+## Return Value
 
 A new effect that activates with other effects in the same group.
 
-#### Discussion
+## Discussion
 
 You use this method to compose effects that change multiple views in concert. In the following example, both views’ effects are in the same group. As a result, hovering over either view will activate all effects in the group, causing both views to become fully opaque:
 

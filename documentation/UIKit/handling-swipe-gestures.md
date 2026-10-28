@@ -5,7 +5,7 @@
 
 Detect a horizontal or vertical swipe motion on the screen, and use it to trigger navigation through your content.
 
-#### Overview
+## Overview
 
 A swipe gesture occurs when a person moves one or more fingers across the screen in a specific horizontal or vertical direction. Use the [`UISwipeGestureRecognizer`](./uiswipegesturerecognizer.md) class to detect swipe gestures.
 

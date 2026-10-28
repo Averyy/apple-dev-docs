@@ -25,7 +25,7 @@ func CVPixelFormatDescriptionCreateWithPixelFormatType(_ allocator: CFAllocator?
 extern CFDictionaryRefCVPixelFormatDescriptionCreateWithPixelFormatType(CFAllocatorRef allocator, OSType pixelFormat);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Foundation dictionary containing the pixel format description. See [Pixel Format Description Keys](./pixel-format-description-keys.md) for a list of keys relevant to the format description.
 

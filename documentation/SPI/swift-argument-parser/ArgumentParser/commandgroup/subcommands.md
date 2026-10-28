@@ -14,7 +14,7 @@ The list of subcommands that are part of this group.
 ## Declaration
 
 ```swift
-let subcommands: [any ParsableCommand.Type]
+let subcommands: [ParsableCommand.Type]
 ```
 
 

@@ -16,11 +16,11 @@ Returns a CFDictionary that describes the attached (AC) external power adapter (
 CFDictionaryRef IOPSCopyExternalPowerAdapterDetails(void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a CFDictionary on success. Caller must release the returned dictionary. If no adapter is attached, or if there's an error, returns NULL.
 
-#### Discussion
+## Discussion
 
 Use the kIOPSPowerAdapter... keys described in IOPSKeys.h to interpret the returned CFDictionary.
 

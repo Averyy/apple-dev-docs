@@ -21,7 +21,7 @@ protocol RestrictedSandboxAppliable
 
 - [Limiting resource access in web content extensions](./limiting-resource-access-in-content-extensions.md)
 
-#### Overview
+## Overview
 
 Call [`applyRestrictedSandbox(revision:)`](./restrictedsandboxappliable/applyrestrictedsandbox%28revision%29.md) to enter the restricted sandbox, indicating which revision of the sandbox restrictions to apply.
 

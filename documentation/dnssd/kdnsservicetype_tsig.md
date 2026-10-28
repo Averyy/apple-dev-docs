@@ -23,7 +23,7 @@ var kDNSServiceType_TSIG: Int { get }
 kDNSServiceType_TSIG
 ```
 
-#### Discussion
+## Discussion
 
 Transaction signature.
 

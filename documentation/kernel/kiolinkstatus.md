@@ -15,7 +15,7 @@ A property of IONetworkController objects.
 #define kIOLinkStatus
 ```
 
-#### Discussion
+## Discussion
 
 The kIOLinkStatus property is a property of IONetworkController objects. It has an OSNumber value that describes the current network link status. See IONetworkMedium for the definition of the link status bits.
 

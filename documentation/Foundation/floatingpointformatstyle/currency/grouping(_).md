@@ -21,7 +21,7 @@ Modifies the format style to use the specified grouping.
 func grouping(_ group: FloatingPointFormatStyle<Value>.Currency.Configuration.Grouping) -> FloatingPointFormatStyle<Value>.Currency
 ```
 
-#### Return Value
+## Return Value
 
 A floating-point currency format style modified to use the specified grouping.
 

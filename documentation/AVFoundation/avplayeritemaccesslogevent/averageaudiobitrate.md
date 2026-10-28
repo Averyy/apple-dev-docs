@@ -25,7 +25,7 @@ var averageAudioBitrate: Double { get }
 @property (nonatomic, readonly) double averageAudioBitrate;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “c-avg-audio-bitrate”.
 

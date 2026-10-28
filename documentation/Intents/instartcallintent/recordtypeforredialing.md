@@ -31,7 +31,7 @@ var recordTypeForRedialing: INCallRecordType { get }
 @property (atomic, assign, readonly) INCallRecordType recordTypeForRedialing;
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates which past call record your app should use in determining which contact or contacts to call. For example, if the user asks Siri to redial their last missed call, the system provides your intent handler with a start call intent whose [`recordTypeForRedialing`](./recordtypeforredialing.md) is [`INCallRecordType.missed`](../incallrecordtype/missed.md).
 

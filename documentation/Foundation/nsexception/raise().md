@@ -25,7 +25,7 @@ func raise()
 - (void) raise;
 ```
 
-#### Discussion
+## Discussion
 
 When there are no exception handlers in the exception handler stack, unless the exception is raised during the posting of a notification, this method calls the uncaught exception handler, in which last-minute logging can be performed. The program then terminates, regardless of the actions taken by the uncaught exception handler.
 

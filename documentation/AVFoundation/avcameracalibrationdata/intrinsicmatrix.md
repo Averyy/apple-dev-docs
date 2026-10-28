@@ -24,7 +24,7 @@ var intrinsicMatrix: matrix_float3x3 { get }
 @property (nonatomic, readonly) matrix_float3x3 intrinsicMatrix;
 ```
 
-#### Discussion
+## Discussion
 
 The intrinsic matrix allows you to transform 3D coordinates to 2D coordinates on an image plane using the pinhole camera model. Equations like the following commonly represent the intrinsic matrix as `K:`
 

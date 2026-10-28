@@ -24,7 +24,7 @@ func look(at focusPosition: vector_float3)
 - (void) lookAt:(vector_float3) focusPosition;
 ```
 
-#### Discussion
+## Discussion
 
 When calculating the new camera orientation, this method assumes the camera points in the negative z-axis direction and that the positive y-axis represents the up direction for the camera’s view.
 

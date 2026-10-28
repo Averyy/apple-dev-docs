@@ -25,7 +25,7 @@ var falloff: CGFloat { get set }
 @property (nonatomic) CGFloat falloff;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1.0`, which means the light decays linearly with distance. The value must be a positive number less than or equal to `1.0`.
 

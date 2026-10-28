@@ -15,7 +15,7 @@ The progress reporting capabilities supported by a context.
 object Context.Data.ProgressReportingCapabilities
 ```
 
-#### Discussion
+## Discussion
 
 When creating a context, if you don’t specify a progress reporting capability with `kind` set to `duration`, the system adds one automatically, using an empty string for the `details` field.
 

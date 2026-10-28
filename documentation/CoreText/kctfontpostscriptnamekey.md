@@ -23,7 +23,7 @@ let kCTFontPostScriptNameKey: CFString
 extern CFStringRef const kCTFontPostScriptNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The name specifier for the PostScript name.
 

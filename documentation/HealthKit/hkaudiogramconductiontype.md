@@ -22,7 +22,7 @@ enum HKAudiogramConductionType
 enum HKAudiogramConductionType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Represents the conduction type used for an HKAudiogramSensitivityTest
 

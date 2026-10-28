@@ -23,7 +23,7 @@ int32 limit
 
 **Maximum**: `100`
 
-#### Discussion
+## Discussion
 
 Use this optional query parameter with the [`Get Group Members`](./get-group-members.md) endpoint to control the size of each page of results. The maximum value is `100`; a request with a greater value fails with an [`InvalidLimitError`](./invalidlimiterror.md).
 

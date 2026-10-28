@@ -22,7 +22,7 @@ Creates a view that represents the body of a menu.
 @MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method for each [`Menu`](../menu.md) instance in a view hierarchy where this style is the current menu style.
 

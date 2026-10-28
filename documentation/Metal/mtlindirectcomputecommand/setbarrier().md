@@ -25,7 +25,7 @@ func setBarrier()
 - (void) setBarrier;
 ```
 
-#### Discussion
+## Discussion
 
 Set or clear barriers (as needed) before encoding the command.
 

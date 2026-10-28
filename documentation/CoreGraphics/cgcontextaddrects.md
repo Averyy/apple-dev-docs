@@ -21,7 +21,7 @@ Adds a set of rectangular paths to the current path.
 extern void CGContextAddRects(CGContextRef c, const CGRect *rects, size_t count);
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience function that adds an array of rectangles to a path, as if it called [`addRect(_:)`](./cgcontext/addrect%28_%29.md) for each rectangle.
 

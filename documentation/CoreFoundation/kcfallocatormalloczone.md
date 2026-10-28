@@ -25,7 +25,7 @@ let kCFAllocatorMallocZone: CFAllocator!
 extern CFAllocatorRef const kCFAllocatorMallocZone;
 ```
 
-#### Discussion
+## Discussion
 
 You should only use this when an object is safe to be allocated in non-scanned memory.
 

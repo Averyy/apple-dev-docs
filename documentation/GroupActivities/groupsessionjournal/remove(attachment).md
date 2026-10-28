@@ -20,7 +20,7 @@ Removes the specified attachment from the journal on all sessions.
 final func remove(attachment: GroupSessionJournal.Attachment) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to remove an attachment that is no longer relevant. For example, you might remove an attachment containing a photo in response to someone deleting that photo from the activity. When you remove an attachment, the journal object updates the array of attachments and sends it to all participants. Remove any attachments from your app that aren’t still in the array.
 

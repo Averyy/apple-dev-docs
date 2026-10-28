@@ -16,7 +16,7 @@ nonisolated
 func presentationPreventsAppTermination(_ prevents: Bool?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI uses the buttons in a sheet’s toolbar to determine whether a particular sheet should block termination by default. If there is a singular toolbar item with the [`confirmationAction`](../toolbaritemplacement/confirmationaction.md) or the [`cancellationAction`](../toolbaritemplacement/cancellationaction.md) placement and no other toolbar items, the sheet will not prevent termination by default.
 

@@ -22,7 +22,7 @@ enum UIStatusBarAnimation
 enum UIStatusBarAnimation : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Constants of the [`UIStatusBarAnimation`](./uistatusbaranimation.md) type are arguments of the [`setStatusBarHidden(_:with:)`](./uiapplication/setstatusbarhidden%28_,with%29.md) method.
 

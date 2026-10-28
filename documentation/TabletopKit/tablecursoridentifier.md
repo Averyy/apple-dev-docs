@@ -15,7 +15,7 @@ A unique identifier for cursors.
 struct TableCursorIdentifier
 ```
 
-#### Overview
+## Overview
 
 A cursor identifier is unique across all instances of the same tabletop game.
 

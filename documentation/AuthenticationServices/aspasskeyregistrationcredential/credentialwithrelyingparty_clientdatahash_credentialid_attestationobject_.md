@@ -19,7 +19,7 @@ Creates and initializes a new passkey registration credential.
 + (instancetype) credentialWithRelyingParty:(NSString *) relyingParty clientDataHash:(NSData *) clientDataHash credentialID:(NSData *) credentialID attestationObject:(NSData *) attestationObject;
 ```
 
-#### Return Value
+## Return Value
 
 The credential object.
 

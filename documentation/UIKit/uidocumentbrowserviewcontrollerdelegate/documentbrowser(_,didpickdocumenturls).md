@@ -27,7 +27,7 @@ optional func documentBrowser(_ controller: UIDocumentBrowserViewController, did
 
 - [Presenting selected documents](../presenting-selected-documents.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to process the documents selected by the user. Typically, you create a view controller to display the selected documents, then present that view modally, like in the following example.
 

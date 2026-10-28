@@ -18,7 +18,7 @@ let vmnet_write_max_packets_key: UnsafePointer<CChar>
 extern const char * const vmnet_write_max_packets_key;
 ```
 
-#### Discussion
+## Discussion
 
 The maximum value that *pktcnt may have in the call to vmnet_write().
 

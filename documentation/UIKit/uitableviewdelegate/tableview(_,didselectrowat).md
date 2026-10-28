@@ -27,7 +27,7 @@ optional func tableView(_ tableView: UITableView, didSelectRowAt indexPath: Inde
 
 - [Handling row selection in a table view](../handling-row-selection-in-a-table-view.md)
 
-#### Discussion
+## Discussion
 
 The delegate handles selections in this method. For instance, you can use this method to assign a checkmark ([`UITableViewCell.AccessoryType.checkmark`](../uitableviewcell/accessorytype-swift.enum/checkmark.md)) to one row in a section in order to create a radio-list style. The system doesn’t call this method if the rows in the table aren’t selectable. See [Handling row selection in a table view](../handling-row-selection-in-a-table-view.md) for more information on controlling table row selection behavior.
 

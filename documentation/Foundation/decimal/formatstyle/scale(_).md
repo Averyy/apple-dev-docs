@@ -21,11 +21,11 @@ Modifies the format style to use the specified scale.
 func scale(_ multiplicand: Double) -> Decimal.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A decimal format style modified to use the specified scale.
 
-#### Discussion
+## Discussion
 
 The following example creates a default [`Decimal.FormatStyle`](../formatstyle.md) for the `en_US` locale, and a second style that scales by a `multiplicand` of `0.001`. It then applies each style to an array of decimal values. The formatting that the modified style applies expresses each value in terms of one-thousandths.
 

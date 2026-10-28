@@ -21,7 +21,7 @@ Process automatic grammar agreement and formatting attributes.
 func inflected(locale: Locale = .current, userTermOfAddress: TermOfAddress? = .currentUser, inflectionConcepts: [InflectionConcept] = []) -> AttributedString
 ```
 
-#### Discussion
+## Discussion
 
 Arguments that were previously formatted in the string must be annotated with the following attributes:
 

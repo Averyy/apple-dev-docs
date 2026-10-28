@@ -18,7 +18,7 @@ init<T>(exporting transferableValue: T, as contentType: UTType? = nil, named pre
 
 Available when `AttachableValue` conforms to `Attachable`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Any error that occurs while exporting `transferableValue`.
 

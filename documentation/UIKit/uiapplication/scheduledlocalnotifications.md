@@ -23,7 +23,7 @@ var scheduledLocalNotifications: [UILocalNotification]? { get set }
 @property (nonatomic, copy, nullable) NSArray<UILocalNotification *> * scheduledLocalNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 This property holds an array of [`UILocalNotification`](../uilocalnotification.md) objects representing the current scheduled local notifications. Use this property to access the currently scheduled notifications, perhaps to cancel them. Assigning a new value to this property implicitly schedules all of the notifications in the new array.
 

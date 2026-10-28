@@ -19,7 +19,7 @@ func set()
 - (void) set;
 ```
 
-#### Discussion
+## Discussion
 
 The shadow attributes of the receiver are used until another shadow is set or until the graphics state is restored.
 

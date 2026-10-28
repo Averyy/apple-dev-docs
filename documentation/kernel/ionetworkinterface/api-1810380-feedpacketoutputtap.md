@@ -12,7 +12,7 @@ virtual void feedPacketOutputTap(
  mbuf_t );
 ```
 
-#### Overview
+## Overview
 
 This function is called internally to send output packets to the BPF output tap when it is enabled. Subclasses are not expected to override this method.
 

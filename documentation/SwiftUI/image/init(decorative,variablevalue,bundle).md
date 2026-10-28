@@ -21,7 +21,7 @@ Creates an unlabeled, decorative image, with a variable value.
 init(decorative name: String, variableValue: Double?, bundle: Bundle? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates an image using a using a symbol in the specified bundle. The rendered symbol may alter its appearance to represent the value provided in `variableValue`.
 

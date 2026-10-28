@@ -18,7 +18,7 @@ Indicates the person declined the age range onboarding flow.
 case declinedOnboarding
 ```
 
-#### Discussion
+## Discussion
 
 You receive this error when the person dismisses or opts out of the system onboarding interface required to set up age range sharing.
 

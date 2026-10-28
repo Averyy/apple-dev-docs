@@ -23,7 +23,7 @@ let kMIDIPropertyImage: CFString
 extern CFStringRef const kMIDIPropertyImage;
 ```
 
-#### Discussion
+## Discussion
 
 You can provide an image stored in any standard graphic file format, such as JPEG, GIF, or PNG. The maximum size for this image is 128 by 128 pixels.
 

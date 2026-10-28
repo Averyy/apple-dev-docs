@@ -21,7 +21,7 @@ A set of options that affect the operation of the run loop scheduler.
 struct SchedulerOptions
 ```
 
-#### Overview
+## Overview
 
 The run loop doesn’t support any scheduler options.
 

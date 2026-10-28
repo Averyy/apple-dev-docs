@@ -19,7 +19,7 @@ var isReadOnly: Bool { get }
 @property (readonly, getter=isReadOnly) BOOL readOnly;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the guest operating system may read the contents of the disk image, but may not write to it.
 

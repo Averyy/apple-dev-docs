@@ -13,7 +13,7 @@
 OSErr RegisterComponentFileRefEntries(const FSRef *ref, SInt16 global, const ComponentDescription *toRegister, UInt32 registerCount);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/component_manager.md#1668759).
 

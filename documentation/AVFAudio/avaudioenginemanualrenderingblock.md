@@ -25,7 +25,7 @@ typealias AVAudioEngineManualRenderingBlock = (AVAudioFrameCount, UnsafeMutableP
 typedef enum AVAudioEngineManualRenderingStatus (^)(unsigned int, struct AudioBufferList *, int *) AVAudioEngineManualRenderingBlock;
 ```
 
-#### Return Value
+## Return Value
 
 One of the status codes from [`AVAudioEngineManualRenderingStatus`](./avaudioenginemanualrenderingstatus.md). Irrespective of the returned status code, on exit, the output buffer’s [`frameLength`](./avaudiopcmbuffer/framelength.md) indicates the number of PCM samples the engine renders.
 

@@ -18,7 +18,7 @@ A card that displays a header, multi-line label, a collection of log buttons, an
 class OCKButtonLogTaskView
 ```
 
-#### Overview
+## Overview
 
 See `logButtonsCollectionView` to customize the layout or number of log buttons.
 

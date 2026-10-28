@@ -13,7 +13,7 @@
 gestaltSystemVersionMajor = 'sys1'
 ```
 
-#### Discussion
+## Discussion
 
 The major operating system version number. For example, in *10.4.12* this would be the decimal value 10.
 

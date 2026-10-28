@@ -23,7 +23,7 @@ var disconnectHandler: (((any Error)?) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^disconnectHandler)(NSError *error);
 ```
 
-#### Discussion
+## Discussion
 
 An optional block to be invoked when the port disconnects, taking an optional error that indicates if the disconnection was caused by an error.
 

@@ -14,7 +14,7 @@ func simd_real(_ q: simd_quath) -> Float16
 static _Float16 simd_real(simd_quath q);
 ```
 
-#### Discussion
+## Discussion
 
 The real (scalar) part of the quaternion `q`.
 

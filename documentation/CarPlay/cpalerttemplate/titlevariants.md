@@ -21,7 +21,7 @@ var titleVariants: [String] { get }
 @property (nonatomic, copy, readonly) NSArray<NSString *> * titleVariants;
 ```
 
-#### Discussion
+## Discussion
 
 When the system displays the alert, it selects the title that best fits the available screen space, so arrange the titles from most to least preferred when creating an alert template. Also, localize each title for display to the user, and be sure to include at least one title in the array.
 

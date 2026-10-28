@@ -23,7 +23,7 @@ A struct that represents the title of the presentation of an App Shortcut.
 struct AppShortcutParameterPresentationTitle<Intent, Value, Parameter, ParameterKeyPath> where Intent : AppIntent, Value : _IntentValue, Value : Sendable, Parameter : IntentParameter<Value>, ParameterKeyPath : KeyPath<Intent, Parameter>
 ```
 
-#### Overview
+## Overview
 
 Provide a specific and a generic title. The specific title should include the parameter in the interpolation. For example provide `"Call \(\.$person)"` as a specific title that includes the parameter and a simple string that doesn’t have the parameter specified, e.g. `"Call Person..."`.
 

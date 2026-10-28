@@ -25,7 +25,7 @@ var pastDiagnosticPayloads: [MXDiagnosticPayload] { get }
 @property (strong, readonly, nonnull) NSArray<MXDiagnosticPayload *> * pastDiagnosticPayloads;
 ```
 
-#### Discussion
+## Discussion
 
 You can access this property after you register your first subscriber using [`add(_:)`](./add%28_%29.md) and receive at least one [`MXMetricManagerSubscriber`](../mxmetricmanagersubscriber.md) callback.
 

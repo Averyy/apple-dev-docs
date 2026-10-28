@@ -18,7 +18,7 @@ Prepare the cache state and consume the [`LMInput`](../lminput.md).
 func prepare(_ input: LMInput, cache: [KVCache], state: LMOutput.State?, prefill: PrefillParameters) throws -> PrepareResult
 ```
 
-#### Discussion
+## Discussion
 
 `state` is the [`state`](../lmoutput/state-swift.property.md) a caller carried over from earlier evaluation against the same `cache` — present when `cache` is already warm (a multi-turn chat, a tool-call restart, a restored prompt cache). Models that keep per-call positional state (e.g. the M-RoPE `ropeDeltas` of the Qwen VLM families) use it to anchor the new tokens’ positions at the cache offset; models without such state can ignore it. In the typical cold call it is `nil`.
 

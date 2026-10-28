@@ -17,7 +17,7 @@ Whether the speed of cloth bodies should be limited to improve self-collision ro
 struct SpeedLimit
 ```
 
-#### Overview
+## Overview
 
 When enabled, the simulation limits particle displacement per time step to reduce the likelihood of particles tunneling through each other during self-collisions.
 

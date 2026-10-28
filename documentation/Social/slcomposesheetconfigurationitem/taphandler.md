@@ -21,7 +21,7 @@ var tapHandler: SLComposeSheetConfigurationItemTapHandler! { get set }
 @property (nonatomic, copy) SLComposeSheetConfigurationItemTapHandler tapHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Called when the user taps the configuration item. Note that `tapHandler` is called on the main queue; to avoid a possible retain cycle, your block should not keep a strong reference to either the configuration item or the compose view controller.
 

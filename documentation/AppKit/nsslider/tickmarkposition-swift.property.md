@@ -19,7 +19,7 @@ var tickMarkPosition: NSSlider.TickMarkPosition { get set }
 @property NSTickMarkPosition tickMarkPosition;
 ```
 
-#### Discussion
+## Discussion
 
 For horizontal sliders, use [`NSSlider.TickMarkPosition.below`](./tickmarkposition-swift.enum/below.md) and [`NSSlider.TickMarkPosition.above`](./tickmarkposition-swift.enum/above.md). For vertical sliders, use [`leading`](./tickmarkposition-swift.enum/leading.md), and [`trailing`](./tickmarkposition-swift.enum/trailing.md). The default positions are `below` for horizontal and `leading` for vertical. This property has no effect if [`numberOfTickMarks`](./numberoftickmarks.md) is `0`, or if the slider is circular. In its implementation of this property, the receiving `NSSlider` instance invokes the method of the same name of its `NSSliderCell` instance.
 

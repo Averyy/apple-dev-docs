@@ -22,7 +22,7 @@ unowned(unsafe) var shippingAddress: ABRecord? { get set }
 @property (nonatomic, assign, nullable) ABRecordRef shippingAddress;
 ```
 
-#### Discussion
+## Discussion
 
 If you already have a shipping address on file, set this property to that address. When the [`PKPaymentAuthorizationViewController`](../pkpaymentauthorizationviewcontroller.md) class is presented, the user can either keep the address you specified or enter a different address.
 

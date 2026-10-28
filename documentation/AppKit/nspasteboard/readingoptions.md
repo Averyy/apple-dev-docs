@@ -19,7 +19,7 @@ struct ReadingOptions
 enum NSPasteboardReadingOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 You can specify only one option. If you don’t specify an option, the system uses the default [`asData`](./readingoptions/asdata.md).
 

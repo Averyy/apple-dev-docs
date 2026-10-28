@@ -22,7 +22,7 @@ Displays the entity’s base color texture for standard materials.
 case baseColorTexture
 ```
 
-#### Discussion
+## Discussion
 
 Use `.baseColor` instead, which works universally across all material types.
 

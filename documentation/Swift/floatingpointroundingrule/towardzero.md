@@ -21,7 +21,7 @@ Round to the closest allowed value whose magnitude is less than or equal to that
 case towardZero
 ```
 
-#### Discussion
+## Discussion
 
 The following example shows the results of rounding numbers using this rule:
 

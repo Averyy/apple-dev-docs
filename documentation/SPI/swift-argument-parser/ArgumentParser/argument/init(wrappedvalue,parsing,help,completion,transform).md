@@ -15,7 +15,7 @@ Creates a property that reads an array from zero or more arguments, parsing each
 
 ```swift
 @preconcurrency
-init<T>(wrappedValue: [T], parsing parsingStrategy: ArgumentArrayParsingStrategy = .remaining, help: ArgumentHelp? = nil, completion: CompletionKind? = nil, transform: @escaping @Sendable (String) throws -> T) where Value == [T]
+init<T>(wrappedValue: [T], parsing parsingStrategy: ArgumentArrayParsingStrategy = .remaining, help: ArgumentHelp? = nil, completion: CompletionKind? = nil, transform: @Sendable @escaping (String) throws -> T) where Value == [T]
 ```
 
 ## Parameters
@@ -31,7 +31,7 @@ init<T>(wrappedValue: [T], parsing parsingStrategy: ArgumentArrayParsingStrategy
 ### Array Arguments
 - [init<T>(parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./init%28parsing,help,completion%29.md)
   Creates a property with no default value that reads an array from zero or more arguments.
-- [init<T>(parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./init%28parsing,help,completion,transform%29.md)
+- [init<T>(parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./init%28parsing,help,completion,transform%29.md)
   Creates a property with no default value that reads an array from zero or more arguments, parsing each element with the given closure.
 - [init<T>(wrappedValue: [T], parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./init%28wrappedvalue,parsing,help,completion%29.md)
   Creates a property that reads an array from zero or more arguments.

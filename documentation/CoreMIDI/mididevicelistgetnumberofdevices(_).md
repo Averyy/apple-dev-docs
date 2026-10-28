@@ -23,7 +23,7 @@ func MIDIDeviceListGetNumberOfDevices(_ devList: MIDIDeviceListRef) -> Int
 extern ItemCount MIDIDeviceListGetNumberOfDevices(MIDIDeviceListRef devList);
 ```
 
-#### Return Value
+## Return Value
 
 The number of devices in the list, or 0 if an error occurred.
 

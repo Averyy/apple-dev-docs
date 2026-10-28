@@ -24,7 +24,7 @@ var rightTrigger: GCControllerButtonInput { get }
 @property (nonatomic, readonly) GCControllerButtonInput * rightTrigger;
 ```
 
-#### Discussion
+## Discussion
 
 The triggers in the extended gamepad profile are analog buttons.
 

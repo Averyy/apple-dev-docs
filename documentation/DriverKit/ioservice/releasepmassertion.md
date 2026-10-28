@@ -16,11 +16,11 @@
 virtual kern_return_t ReleasePMAssertion(uint64_t assertionID);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success. See IOReturn.h for error codes.
 
-#### Discussion
+## Discussion
 
 Release a previously created power management assertion.
 

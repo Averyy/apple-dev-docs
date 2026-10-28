@@ -18,7 +18,7 @@ A class method that creates a new object with format conversion settings.
 + (instancetype) captionFormatConformerWithConversionSettings:(NSDictionary<NSString *,id> *) conversionSettings;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of [`AVCaptionFormatConformer`](../avcaptionformatconformer.md).
 

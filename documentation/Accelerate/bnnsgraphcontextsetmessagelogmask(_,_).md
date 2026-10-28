@@ -25,7 +25,7 @@ func BNNSGraphContextSetMessageLogMask(_ context: bnns_graph_context_t, _ log_le
 int BNNSGraphContextSetMessageLogMask(bnns_graph_context_t context, uint32_t log_level_mask);
 ```
 
-#### Discussion
+## Discussion
 
 - `context`: context to set callbacks for
 - `log_level_mask`: bitmask of levels to log for (Default is BNNSGraphMessageLevelUnsupported | BNNSGraphMessageLevelWarning | BNNSGraphMessageLevelError)

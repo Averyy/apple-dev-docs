@@ -23,7 +23,7 @@ var navigationTitleAlignment: UINavigationItem.TitleAlignment { get }
 @property (nonatomic, assign, readonly) UINavigationItemTitleAlignment navigationTitleAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 When the system has resolved an alignment for the title, this reports that concrete alignment, Leading or Center, even when the client has not set a preference. Otherwise it reports Automatic.
 

@@ -18,7 +18,7 @@ A protocol that defines an object that’s responsible for fetching pre-filter d
 protocol NEURLFilterControlProvider : AppExtension
 ```
 
-#### Overview
+## Overview
 
 Create a class that conforms to this protocol in your app extension, then provide the extension’s bundle identifier to the [`NEURLFilterManager`](./neurlfiltermanager.md) in [`setConfiguration(pirServerURL:pirPrivacyPassIssuerURL:pirAuthenticationToken:controlProviderBundleIdentifier:)`](./neurlfiltermanager/setconfiguration%28pirserverurl,pirprivacypassissuerurl,pirauthenticationtoken,controlproviderbundleidentifier%29.md).
 

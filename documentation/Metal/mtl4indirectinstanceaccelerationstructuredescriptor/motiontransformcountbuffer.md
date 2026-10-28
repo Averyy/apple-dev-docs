@@ -24,7 +24,7 @@ var motionTransformCountBuffer: MTL4BufferRange { get set }
 @property (nonatomic) MTL4BufferRange motionTransformCountBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring that the final number of motion transforms at build time in the buffer this property references is less than or equal to the value of property [`maxMotionTransformCount`](./maxmotiontransformcount.md).
 

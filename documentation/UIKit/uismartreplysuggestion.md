@@ -21,7 +21,7 @@ class UISmartReplySuggestion
 @interface UISmartReplySuggestion : UIInputSuggestion
 ```
 
-#### Overview
+## Overview
 
 Use the [`smartReply`](./uismartreplysuggestion/smartreply.md) string as a signal of the user’s intention when you generate long form text based on the option the user selected.
 

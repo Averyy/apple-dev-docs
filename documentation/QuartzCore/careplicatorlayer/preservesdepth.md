@@ -24,7 +24,7 @@ var preservesDepth: Bool { get set }
 @property BOOL preservesDepth;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the layer acts similarly to the `CATransformLayer` and has the same restrictions.
 

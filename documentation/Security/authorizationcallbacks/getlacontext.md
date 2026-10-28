@@ -21,7 +21,7 @@ Constructs a local authentication context.
 int (*)(struct __OpaqueAuthorizationEngine *, const void **) GetLAContext;
 ```
 
-#### Discussion
+## Discussion
 
 If a PIN is available, you can use the context for token operations that would normally require a PIN.
 

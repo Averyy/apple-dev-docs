@@ -5,20 +5,20 @@
 
 Learn about important changes to Sensitive Content Analysis.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Sensitive Content Analysis](../SensitiveContentAnalysis/SensitiveContentAnalysis.md).
 
-#### June 2026
+## June 2026
 
-##### Content classification
+### Content classification
 
 - Identify specific categories of sensitive content detected in media using the [`detectedTypes`](../SensitiveContentAnalysis/scsensitivityanalysis/detectedtypes.md) property on [`SCSensitivityAnalysis`](../SensitiveContentAnalysis/scsensitivityanalysis.md). The framework returns a set of [`SCSensitivityAnalysis.ContentType`](../SensitiveContentAnalysis/scsensitivityanalysis/contenttype.md) values that categorize detected sensitive material.
 - Distinguish between [`sexuallyExplicit`](../SensitiveContentAnalysis/scsensitivityanalysis/contenttype/sexuallyexplicit.md) and [`goreOrViolence`](../SensitiveContentAnalysis/scsensitivityanalysis/contenttype/goreorviolence.md) content types to provide context-appropriate interventions in your app.
 
-#### June 2025
+## June 2025
 
-##### Video stream analysis
+### Video stream analysis
 
 - Analyze live video streams for sensitive content using [`SCVideoStreamAnalyzer`](../SensitiveContentAnalysis/scvideostreamanalyzer.md).
 - Receive intervention guidance when sensitive content appears in a video stream, including recommendations to interrupt video playback, indicate sensitivity, or mute audio through the [`SCVideoStreamAnalysisChangeHandler`](../SensitiveContentAnalysis/scvideostreamanalysischangehandler.md).

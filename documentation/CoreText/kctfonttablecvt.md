@@ -23,7 +23,7 @@ var kCTFontTableCvt: Int { get }
 kCTFontTableCvt
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for control value table.
 

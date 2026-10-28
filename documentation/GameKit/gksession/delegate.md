@@ -26,7 +26,7 @@ weak var delegate: (any GKSessionDelegate)! { get set }
 @property (weak) id<GKSessionDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 A session’s delegate is responsible for observing changes to other peers running with the same session ID. Your application must set a delegate before making your session known to other peers.
 

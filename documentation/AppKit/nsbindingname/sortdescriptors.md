@@ -19,7 +19,7 @@ static let sortDescriptors: NSBindingName
 extern NSBindingName NSSortDescriptorsBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

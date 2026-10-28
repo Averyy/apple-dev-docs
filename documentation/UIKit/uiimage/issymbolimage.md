@@ -24,7 +24,7 @@ var isSymbolImage: Bool { get }
 @property (nonatomic, readonly, getter=isSymbolImage) BOOL symbolImage;
 ```
 
-#### Discussion
+## Discussion
 
 Symbol images are vector-based images that you use for your app’s iconography. The value of this property is [`true`](../../Swift/true.md) if the image is either a system-provided symbol image or a custom symbol image that you supplied in your asset catalog. The value is [`false`](../../Swift/false.md) for all other image types.
 

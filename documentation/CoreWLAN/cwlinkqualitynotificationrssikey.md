@@ -19,7 +19,7 @@ let CWLinkQualityNotificationRSSIKey: String
 extern NSString * const CWLinkQualityNotificationRSSIKey;
 ```
 
-#### Discussion
+## Discussion
 
 NSNumber containing the current RSSI value for the WLAN interface. Found in the *userInfo* dictionary for the *CWLinkQualityChangedNotification*.
 

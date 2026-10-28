@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_RealTime: CFString
 extern CFStringRef const kVTCompressionPropertyKey_RealTime;
 ```
 
-#### Discussion
+## Discussion
 
 For offline compression, clients may set this property to [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md), which indicates that it is OK for the video encoder to work slower than real time in order to produce a better result.
 

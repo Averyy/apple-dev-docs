@@ -28,7 +28,7 @@ var authorizationStatus: HMHomeManagerAuthorizationStatus { get }
 
 - [Enabling HomeKit in your app](../enabling-homekit-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 The first time your app uses the HomeKit framework—typically, when you create a [`HMHomeManager`](../hmhomemanager.md) instance—the system automatically prompts the user for permission to access home data. You don’t make an explicit request for access, but you can modify the behavior of your app based on the current authorization status. For example, if your app lacks access to home data, you might omit certain features from your UI.
 

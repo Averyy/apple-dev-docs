@@ -19,7 +19,7 @@ Embedded page or frame domains. For domain-bound codes, this array contains all 
 var embeddedDomains: [String]
 ```
 
-#### Discussion
+## Discussion
 
 > **See Also**: https://github.com/WICG/sms-one-time-codes
 

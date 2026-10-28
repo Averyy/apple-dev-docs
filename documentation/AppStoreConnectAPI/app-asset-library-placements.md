@@ -5,7 +5,7 @@
 
 Place library assets on your App Store surfaces.
 
-#### Overview
+## Overview
 
 The `appAssetLibraryPlacements` resource represents a placement that positions a library asset on a specific App Store surface, such as an App Store version localization, an in-app event localization, or a custom product page localization. Use it to:
 

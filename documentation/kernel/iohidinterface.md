@@ -15,7 +15,7 @@ IOService represents an device or OS service in IOKit and DriverKit.
 class IOHIDInterface : IOService
 ```
 
-#### Overview
+## Overview
 
 IOKit provides driver lifecycle management through the IOService APIs.  Drivers and devices are represented as subclasses of IOService.
 

@@ -17,7 +17,7 @@ An object that encapsulates the XPC communication between the host process and t
 protocol TranslationUIProviderContext : Observable
 ```
 
-#### Discussion
+## Discussion
 
 The framework provides information to the extension through the two observable properties [`inputText`](./translationuiprovidercontext/inputtext.md) and [`allowsReplacement`](./translationuiprovidercontext/allowsreplacement.md), and the extension calls back to the host process using the functions [`finish(translation:)`](./translationuiprovidercontext/finish%28translation%29.md) and, optionally [`expandSheet()`](./translationuiprovidercontext/expandsheet%28%29.md).
 

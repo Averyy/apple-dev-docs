@@ -31,7 +31,7 @@ func addCompletedHandler(_ block: @escaping MTLCommandBufferHandler)
 - [Preparing your Metal app to run in the background](../preparing-your-metal-app-to-run-in-the-background.md)
 - [Setting up a command structure](../setting-up-a-command-structure.md)
 
-#### Discussion
+## Discussion
 
 You can register one or more completion handlers for the same command buffer. The GPU device’s driver (on the CPU) calls the completion handlers after the GPU finishes executing the command buffer.
 

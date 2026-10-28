@@ -3,13 +3,13 @@
 **Framework**: Xcode  
 **Role**: Article
 
-#### Overview
+## Overview
 
 The layout of unoptimized builds for app and app extension targets have changed in Xcode. This enables tools and workflows, such as the Previews execution mode that shares build products with normal build-and-run debug builds. This layout saves time and helps prevent correctness issues caused by tools needing different types of build configurations for their work.
 
 If you need an advanced workflow that depends on the specific layout of executables in unoptimized builds, you can opt out of the default behavior if necessary.
 
-##### Inspect your app bundle
+### Inspect your app bundle
 
 If you open your app bundle, you see two dynamic library files (`.dylib`) in the executable directory. For example, this is part of the layout of an iOS app bundle:
 
@@ -25,7 +25,7 @@ The file with the `.debug.dylib` suffix contains all of your code that’s linke
 
 The symbols and Mach-O sections of an unoptimized build link into this separate `.dylib` file, unlike release builds that link into the main binary.
 
-##### Opt out of the debug dylib
+### Opt out of the debug dylib
 
 If you expect to scan for custom linker sections you inject, use `OTHER_LDFLAGS` for specific control of your output binary. Or if you have tooling that scans binaries for specific symbols for verification, then you may need to adapt to this default unoptimized build layout. If you can’t change your tooling to scan the debug `.dylib`, then you can opt out of this layout completely.
 

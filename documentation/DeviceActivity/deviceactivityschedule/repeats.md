@@ -17,7 +17,7 @@ A Boolean value that indicates whether the schedule recurs.
 var repeats: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use `repeats` to create an activity schedule that repeats until the activity-monitoring stops.
 

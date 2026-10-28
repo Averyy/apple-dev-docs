@@ -5,13 +5,13 @@
 
 This header contains functions and data types for working with AXValueType wrappers.
 
-#### Overview
+## Overview
 
 See the Overview section above for header-level documentation.
 
-##### Overview
+### Overview
 
-###### Included Headers
+#### Included Headers
 
 - <AvailabilityMacros.h>
 - <CoreServices/CoreServices.h>

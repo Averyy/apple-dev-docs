@@ -5,7 +5,7 @@
 
 Build a File Provider extension that hosts and manages the user’s local files.
 
-#### Overview
+## Overview
 
 A nonreplicated File Provider extension must perform all of the following tasks:
 
@@ -17,7 +17,7 @@ A nonreplicated File Provider extension must perform all of the following tasks:
 
 Your File Provider extension can add custom actions to the file browser’s context menu using the [File Provider UI](../FileProviderUI/FileProviderUI.md) framework. You can also define custom services to communicate with the host app using [`NSFileProviderService`](../Foundation/nsfileproviderservice.md). Use these interfaces to add features that aren’t provided by the base API.
 
-##### Support drag and drop
+### Support drag and drop
 
 If your application acts as a drag source for remote documents, override your [`NSItemProvider`](../Foundation/nsitemprovider.md) subclass’s [`registerFileRepresentation(forTypeIdentifier:fileOptions:visibility:loadHandler:)`](../Foundation/nsitemprovider/registerfilerepresentation%28fortypeidentifier,fileoptions,visibility,loadhandler%29.md) method, and return the URL for the dragged item. This URL is the value returned by your extension’s [`urlForItem(withPersistentIdentifier:)`](./nsfileproviderextension/urlforitem%28withpersistentidentifier%29.md) method. The URL may refer to a local file or, if you don’t have a local copy, to the file’s placeholder.
 

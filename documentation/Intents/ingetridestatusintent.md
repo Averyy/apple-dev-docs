@@ -23,13 +23,13 @@ class INGetRideStatusIntent
 @interface INGetRideStatusIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 When there’s a request for the status of a booked ride, SiriKit sends an [`INGetRideStatusIntent`](./ingetridestatusintent.md) object to your handler object. Upon receiving this intent, fetch the ride status and return it in your response object. The intent object has no additional parameters.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INGetRideStatusIntentHandling`](./ingetridestatusintenthandling.md) protocol. Your handler should confirm the request and create an [`INGetRideStatusIntentResponse`](./ingetridestatusintentresponse.md) object with the status of the ride.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

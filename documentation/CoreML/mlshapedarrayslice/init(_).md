@@ -21,7 +21,7 @@ Creates a new MLShapedArraySlice using a `MLMultiArray` as a backing storage.
 init(_ multiArray: MLMultiArray)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to access `MLMultiArray` through `MLShapedArray` interface.
 

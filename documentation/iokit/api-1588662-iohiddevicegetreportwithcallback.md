@@ -16,11 +16,11 @@ Obtains a report from the device.
 IOReturn IOHIDDeviceGetReportWithCallback(IOHIDDeviceRef device, IOHIDReportType reportType, CFIndex reportID, uint8_t *report, CFIndex *pReportLength, CFTimeInterval timeout, IOHIDReportCallback callback, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful.
 
-#### Discussion
+## Discussion
 
 This method behaves asynchronously and will block until the report has been received from the device. This is only intended for feature reports because of sporadic devicesupport for polling input reports. Please defer to using IOHIDDeviceRegisterInputReportCallback for obtaining input reports.
 

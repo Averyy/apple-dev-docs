@@ -22,7 +22,7 @@ A pair of two word sized `UInt`s.
 struct WordPair
 ```
 
-#### Overview
+## Overview
 
 This type’s primary purpose is to be used in double wide atomic operations. On platforms that support it, atomic operations on `WordPair` are done in a single operation for two words. Users can use this type as itself when used on `Atomic`, or it could be used as an intermediate step for custom `AtomicRepresentable` types that are also double wide.
 

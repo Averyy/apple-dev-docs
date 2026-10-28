@@ -20,7 +20,7 @@ Removes all specializes arcs from the prim.
 func clear() throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the specializes cannot be cleared.
 

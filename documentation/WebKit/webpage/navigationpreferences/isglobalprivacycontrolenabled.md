@@ -19,7 +19,7 @@ Whether the Global Privacy Control (GPC) signal is enabled for the navigation.
 var isGlobalPrivacyControlEnabled: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `false`. When enabled, both `navigator.globalPrivacyControl` and the `Sec-GPC: 1` request header are active for the main frame, its subframes, and their subresources.
 

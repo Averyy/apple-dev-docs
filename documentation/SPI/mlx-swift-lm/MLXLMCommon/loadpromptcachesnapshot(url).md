@@ -17,7 +17,7 @@ Load a prompt cache and its associated model state from a file.
 func loadPromptCacheSnapshot(url: URL) throws -> PromptCacheSnapshot
 ```
 
-#### Discussion
+## Discussion
 
 The arrays are read before this returns, so the file can be overwritten or removed afterwards.
 

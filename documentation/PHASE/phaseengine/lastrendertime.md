@@ -22,7 +22,7 @@ var lastRenderTime: AVAudioTime? { get }
 @property (nonatomic, readonly, nullable) AVAudioTime * lastRenderTime;
 ```
 
-#### Discussion
+## Discussion
 
 Obtain the time for which the engine most recently rendered.
 

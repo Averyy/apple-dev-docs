@@ -17,7 +17,7 @@ An object that configures the UI for a paused timer state.
 struct Paused
 ```
 
-#### Overview
+## Overview
 
 This is only applicable to timers that can be paused. To get back to a countdown state, you must provide a definition for a resume button. The following code snippet describes how to schedule a timer that can pause and resume.
 

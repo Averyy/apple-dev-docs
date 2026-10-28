@@ -17,7 +17,7 @@ Creates a coarse conversion value from the raw value.
 init(rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 You don’t need to call the initializer to use coarse conversion values. When you provide the coarse conversion value to the [`updatePostbackConversionValue(_:coarseValue:completionHandler:)`](../updatepostbackconversionvalue%28_,coarsevalue,completionhandler%29.md) or [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](../updatepostbackconversionvalue%28_,coarsevalue,lockwindow,completionhandler%29.md) methods, use the static constants, [`low`](./low.md), [`medium`](./medium.md), or [`high`](./high.md).
 

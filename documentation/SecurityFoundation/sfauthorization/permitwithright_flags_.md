@@ -17,7 +17,7 @@ Authorizes and preauthorizes one specific right.
 - (OSStatus) permitWithRight:(AuthorizationString) rightName flags:(AuthorizationFlags) flags;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to authorize or preauthorize a single right.
 

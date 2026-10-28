@@ -19,7 +19,7 @@ Creates a padding layer with the reflection padding sizes you specify.
 + (instancetype) layerWithReflectionPadding:(NSArray<NSNumber *> *) padding;
 ```
 
-#### Return Value
+## Return Value
 
 A reflection padding layer.
 

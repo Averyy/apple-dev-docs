@@ -14,11 +14,11 @@ virtual bool handleOpen(
  void *arg );
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success, false otherwise.
 
-#### Overview
+## Overview
 
 This method is called by IOService::open() to handle an open from a client (IOKDP) with the arbitration lock held.
 

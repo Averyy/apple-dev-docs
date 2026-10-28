@@ -23,11 +23,11 @@ func drop(_ dragItem: UIDragItem, to placeholder: UITableViewDropPlaceholder) ->
 - (id<UITableViewDropPlaceholderContext>) dropItem:(UIDragItem *) dragItem toPlaceholder:(UITableViewDropPlaceholder *) placeholder;
 ```
 
-#### Return Value
+## Return Value
 
 The context object that you use to replace or remove the placeholder cell later. Store a reference to this object so that you can call its methods later.
 
-#### Discussion
+## Discussion
 
 Use this method to insert a temporary placeholder cell (instead of a cell backed by actual data) into the table view. When calling this method, do not update your data source object to account for the placeholder. The table view manages the placeholder until you explicitly remove it using the returned context object.
 

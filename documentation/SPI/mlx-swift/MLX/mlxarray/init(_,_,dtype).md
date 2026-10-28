@@ -17,7 +17,7 @@ Initializer allowing creation of `MLXArray` from a `Data`  buffer values with an
 convenience init(_ data: Data, _ shape: (some Collection<Int>)? = [Int]?.none, dtype: DType)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 

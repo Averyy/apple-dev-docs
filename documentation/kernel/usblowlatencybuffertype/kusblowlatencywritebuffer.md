@@ -15,7 +15,7 @@ A low-latency write buffer.
 kUSBLowLatencyWriteBuffer = 0
 ```
 
-#### Discussion
+## Discussion
 
 The buffer writes data to a device.
 

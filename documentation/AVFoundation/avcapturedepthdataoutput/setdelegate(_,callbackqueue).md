@@ -22,7 +22,7 @@ func setDelegate(_ delegate: (any AVCaptureDepthDataOutputDelegate)?, callbackQu
 - (void) setDelegate:(id<AVCaptureDepthDataOutputDelegate>) delegate callbackQueue:(dispatch_queue_t) callbackQueue;
 ```
 
-#### Discussion
+## Discussion
 
 The depth data output vends captured depth data by calling delegate methods  on the specified dispatch queue.
 

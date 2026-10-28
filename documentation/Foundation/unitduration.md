@@ -25,11 +25,11 @@ class UnitDuration
 @interface NSUnitDuration : NSDimension
 ```
 
-#### Overview
+## Overview
 
 You typically use instances of [`UnitDuration`](./unitduration.md) to represent specific quantities of planar angle using the [`NSMeasurement`](./nsmeasurement.md) class.
 
-##### Duration
+### Duration
 
 Duration is a quantity of time. The SI unit for time is the second (sec), which is defined in terms of the radioactivity of a cesium-133 atom. Duration is also commonly expressed in terms of minutes (min) and hours (hr).
 

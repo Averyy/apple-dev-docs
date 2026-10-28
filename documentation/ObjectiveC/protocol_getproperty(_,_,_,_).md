@@ -25,7 +25,7 @@ func protocol_getProperty(_ proto: Protocol, _ name: UnsafePointer<CChar>, _ isR
 extern objc_property_tprotocol_getProperty(Protocol *proto, const char *name, BOOL isRequiredProperty, BOOL isInstanceProperty);
 ```
 
-#### Return Value
+## Return Value
 
 The property specified by `name`, `isRequiredProperty`, and `isInstanceProperty` for `proto`, or `NULL` if none of `proto`’s properties meets the specification.
 

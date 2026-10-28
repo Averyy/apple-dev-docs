@@ -21,11 +21,11 @@ Returns attributes suitable for creating a dispatch queue with the desired quali
 extern dispatch_queue_attr_tdispatch_queue_attr_make_with_qos_class(dispatch_queue_attr_t attr, dispatch_qos_class_t qos_class, int relative_priority);
 ```
 
-#### Return Value
+## Return Value
 
 An attribute value that may be passed to the [`dispatch_queue_create`](./dispatch_queue_create.md) function when creating a dispatch queue.
 
-#### Discussion
+## Discussion
 
 Call this function prior to calling the [`dispatch_queue_create`](./dispatch_queue_create.md) function when you want to create a dispatch queue with a specific quality-of-service level. This function combines the queue type attributes with the quality-of-service information you specify and returns a value that you can pass to the [`dispatch_queue_create`](./dispatch_queue_create.md) function. The quality-of-service value you specify using this function takes precedence over the priority level inherited from the dispatch queue’s target queue.
 

@@ -19,7 +19,7 @@ func titleFrame(ofColumn column: Int) -> NSRect
 - (NSRect) titleFrameOfColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle specifying the bounds of the column’s title frame.
 

@@ -16,7 +16,7 @@ A structure that describes the characteristics of a liability account.
 struct LiabilityAccount
 ```
 
-#### Overview
+## Overview
 
 A liability account includes accounts such as credit cards.
 

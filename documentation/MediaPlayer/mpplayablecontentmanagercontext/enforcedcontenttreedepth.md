@@ -24,7 +24,7 @@ var enforcedContentTreeDepth: Int { get }
 @property (nonatomic, readonly) NSInteger enforcedContentTreeDepth;
 ```
 
-#### Discussion
+## Discussion
 
 Exceeding the limit contained by this property causes your app to terminate.
 

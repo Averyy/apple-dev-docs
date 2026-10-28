@@ -12,7 +12,7 @@ Instructs the test to expect a failure in an assertion in the provided block of 
 func XCTExpectFailure<R>(_ failureReason: String? = nil, enabled: Bool? = nil, strict: Bool? = nil, failingBlock: () throws -> R, issueMatcher: ((XCTIssue) -> Bool)? = nil) rethrows -> R
 ```
 
-#### Return Value
+## Return Value
 
 If the `failingBlock` you provide returns a value or throws an error, the function returns that value or rethrows the error.
 

@@ -25,7 +25,7 @@ func SCNMatrix4FromGLKMatrix4(_ mat: GLKMatrix4) -> SCNMatrix4
 extern SCNMatrix4 SCNMatrix4FromGLKMatrix4(GLKMatrix4 mat);
 ```
 
-#### Return Value
+## Return Value
 
 A SceneKit matrix representing the same 3D transformation.
 

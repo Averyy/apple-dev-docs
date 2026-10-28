@@ -32,11 +32,11 @@ string Org.Currency
 - `BRL`: Brazilian Real.
 - `IDR`: Indonesian Rupiah.
 
-#### Discussion
+## Discussion
 
 This currency is set once for the organization, including legacy organizations that still report amounts in `RMB` rather than its ISO 4217 equivalent `CNY`.
 
-##### Example
+### Example
 
 ```json
 {

@@ -21,7 +21,7 @@ The increment of time for the subscription period.
 let unit: Product.SubscriptionPeriod.Unit
 ```
 
-#### Discussion
+## Discussion
 
 The units used to specify a subscription period include day, week, month, and year, as defined in [`Product.SubscriptionPeriod.Unit`](./unit-swift.enum.md).
 

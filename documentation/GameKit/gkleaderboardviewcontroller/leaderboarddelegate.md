@@ -28,7 +28,7 @@ weak var leaderboardDelegate: (any GKLeaderboardViewControllerDelegate)! { get s
 @property (atomic, weak) id<GKLeaderboardViewControllerDelegate> leaderboardDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 Before displaying the leaderboard, you must set a delegate.
 

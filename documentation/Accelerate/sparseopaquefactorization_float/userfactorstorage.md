@@ -25,7 +25,7 @@ var userFactorStorage: Bool
 bool userFactorStorage;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the user must free factor storage after all references finish (though [`SparseCleanup(_:)`](../sparsecleanup%28_%29-3cnxt.md)) still frees any additional allocated storage due to pivoting).
 

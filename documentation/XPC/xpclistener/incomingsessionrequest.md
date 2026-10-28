@@ -25,7 +25,7 @@ class IncomingSessionRequest
 
 - [Creating XPC services](../creating-xpc-services.md)
 
-#### Overview
+## Overview
 
 When a client initiates a connection to a listener, the system passes the incoming session request to the listener. In response, the listener calls one of the `accept` methods to complete the connection with the client, or it rejects the request.
 

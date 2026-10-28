@@ -19,7 +19,7 @@ let IKImageBrowserPDFPageRepresentationType: String
 extern NSString * const IKImageBrowserPDFPageRepresentationType;
 ```
 
-#### Discussion
+## Discussion
 
 A [`PDFPage`](../PDFKit/pdfpage.md) instance or a [`CGPDFPage`](../CoreGraphics/cgpdfpage.md).
 

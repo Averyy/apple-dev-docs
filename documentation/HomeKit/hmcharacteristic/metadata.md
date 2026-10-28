@@ -24,7 +24,7 @@ var metadata: HMCharacteristicMetadata? { get }
 @property (nonatomic, strong, readonly, nullable) HMCharacteristicMetadata * metadata;
 ```
 
-#### Discussion
+## Discussion
 
 You can typically infer a lot about a characteristic’s [`value`](./value.md) from its [`characteristicType`](./characteristictype.md), like if the value is a string, a number, or in some other format; what the units are; and what range of values to expect. To obtain this information explicitly, inspect the characteristic’s [`metadata`](./metadata.md), represented by an instance of the [`HMCharacteristicMetadata`](../hmcharacteristicmetadata.md) class.
 

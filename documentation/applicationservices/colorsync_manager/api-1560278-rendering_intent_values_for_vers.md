@@ -4,7 +4,7 @@
 
 Define the four possible values for the rendering intent bits of the `renderingIntent` field of the `CM2Header` structure. 
 
-#### Overview
+## Overview
 
 The ColorSync Manager defines the structure [`CM2Header`](../cm2header.md) to represent the profile header for the version 2.x profile format defined by the ICC. The `renderingIntent` field of the `CM2Header` structure is an unsigned long value whose bits specify information about a profile. The ICC reserves the use of bits 0 to 15 and has assigned values to bits 0 and 1. Bits 16 to 31 are reserved for use by color management system (CMS) vendors.
 

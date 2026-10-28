@@ -19,7 +19,7 @@ interface PromisesApi
 
 - [Integrating CloudKit access into your JavaScript automation scripts](./integrating-cloudkit-access-into-your-javascript-automation-scripts.md)
 
-#### Overview
+## Overview
 
 You use an instance of `PromisesApi` to interact with the API. Methods on this class return promises that complete with a response object.
 

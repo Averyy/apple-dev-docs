@@ -20,7 +20,7 @@ Initializes an `AudioMixGroupsComponent`.
 init(mixGroups: [AudioMixGroup] = [])
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: If more than one audio mix group have matching names, only one will be used.
 

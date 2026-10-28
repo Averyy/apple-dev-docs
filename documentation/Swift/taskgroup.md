@@ -22,13 +22,13 @@ A group that contains dynamically created child tasks.
 struct TaskGroup<ChildTaskResult> where ChildTaskResult : Sendable
 ```
 
-#### Overview
+## Overview
 
 To create a task group, call the `withTaskGroup(of:returning:body:)` method.
 
 Don’t use a task group from outside the task where you created it. In most cases, the Swift type system prevents a task group from escaping like that because adding a child task to a task group is a mutating operation, and mutation operations can’t be performed from a concurrent execution context like a child task.
 
-### Structured Concurrency
+## Structured Concurrency
 
 Structured concurrency is a way to organize your program, and tasks, in such a way that tasks don’t outlive the scope in which they are created. Within a structured task hierarchy, no child task remains running longer than its parent task. This guarantee simplifies reasoning about resource usage, and is a powerful mechanism that you can use to write well-behaved concurrent programs.
 
@@ -58,7 +58,7 @@ You can use `group.cancelAll()` to signal cancellation to the remaining in-progr
 
 To create unstructured concurrency tasks, you can use `Task.init`, `Task.detached` or `Task.immediate`.
 
-### Task Group Cancellation
+## Task Group Cancellation
 
 You can cancel a task group and all of its child tasks by calling the `cancelAll()` method on the task group, or by canceling the task in which the group is running.
 
@@ -66,11 +66,11 @@ If you call `addTask(name:priority:operation:)` to create a new task in a cancel
 
 In nonthrowing task groups the tasks you add to a group with this method are nonthrowing, those tasks can’t respond to cancellation by throwing `CancellationError`. The tasks must handle cancellation in some other way, such as returning the work completed so far, returning an empty result, or returning `nil`. For tasks that need to handle cancellation by throwing an error, use the `withThrowingTaskGroup(of:returning:body:)` method instead.
 
-##### Task execution order
+### Task execution order
 
 Tasks added to a task group execute concurrently, and may be scheduled in any order.
 
-##### Cancellation behavior
+### Cancellation behavior
 
 A task group becomes canceled in one of the following ways:
 

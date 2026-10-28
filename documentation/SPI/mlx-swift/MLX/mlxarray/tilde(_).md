@@ -17,11 +17,11 @@ Unary element-wise bitwise invert.
 static func ~ (lhs: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Apply bitwise inversion to the values in the array.
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`bitwiseInvert(_:stream:)`](../bitwiseinvert%28_,stream%29.md)

@@ -19,7 +19,7 @@ A response that indicates the extension successfully handled the request and set
 case proceed
 ```
 
-#### Discussion
+## Discussion
 
 When you return this value, FaceTime displays a “waiting” tile while your service finds a match.
 

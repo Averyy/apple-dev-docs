@@ -24,7 +24,7 @@ var detectsCustomRoutes: Bool { get set }
 @property (nonatomic) BOOL detectsCustomRoutes;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). Only set it to [`true`](../../Swift/true.md) if your app uses an instance of [`AVCustomRoutingController`](../../AVRouting/avcustomroutingcontroller.md).
 

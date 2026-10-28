@@ -15,7 +15,7 @@ The list style that describes the behavior and appearance of a list with standar
 struct BorderedListStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`bordered`](./liststyle/bordered.md) to construct this style.
 

@@ -21,7 +21,7 @@ A view that describes the effect of switching the toggle between states.
 let label: ToggleStyleConfiguration.Label
 ```
 
-#### Discussion
+## Discussion
 
 Use this value in your implementation of the [`makeBody(configuration:)`](../togglestyle/makebody%28configuration%29.md) method when defining a custom [`ToggleStyle`](../togglestyle.md). Access it through the that method’s `configuration` parameter.
 

@@ -28,7 +28,7 @@ class func deleteAllSavedUserActivities() async
 + (void) deleteAllSavedUserActivitiesWithCompletionHandler:(void (^)()) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Deletes all user activities stored by Core Spotlight or donated as Siri shortcuts.
 

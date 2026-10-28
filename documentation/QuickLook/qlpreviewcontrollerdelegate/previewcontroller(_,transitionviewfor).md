@@ -22,11 +22,11 @@ optional func previewController(_ controller: QLPreviewController, transitionVie
 - (UIView *) previewController:(QLPreviewController *) controller transitionViewForPreviewItem:(id<QLPreviewItem>) item;
 ```
 
-#### Return Value
+## Return Value
 
 A [`UIView`](../../UIKit/uiview.md) object that the preview controller cross-fades with when zooming.
 
-#### Discussion
+## Discussion
 
 Starting with macOS 11, animated transitions are available for Mac apps built with Mac Catalyst. On Mac computers running a version earlier than macOS 11, the system doesn’t call this delegate method.
 

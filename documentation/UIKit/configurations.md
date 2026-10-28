@@ -5,7 +5,7 @@
 
 Specify the appearance and content of your views and cells using configurations.
 
-#### Overview
+## Overview
 
 Configurations provide a lightweight way to apply content and styling to views without having to manage the rendering of the appearance yourself.
 

@@ -17,7 +17,7 @@ An application category for voice, video calling, and messaging services.
 case communication
 ```
 
-#### Discussion
+## Discussion
 
 Communication slices provide optimized routing for voice and video calling, messaging, and other real-time communication services. Use this category for VoIP, video conferencing, and instant messaging applications.
 

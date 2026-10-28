@@ -16,11 +16,11 @@ Returns the number of texture topologies available for you to inspect.
 size_t cp_layer_renderer_properties_get_texture_topology_count(cp_layer_renderer_properties_t layer_properties);
 ```
 
-#### Return Value
+## Return Value
 
 The number of texture topologies the layer supports.
 
-#### Discussion
+## Discussion
 
 The layer’s configuration determines the total number of available topologies, and each topology contains details about one texture you use for rendering. Fetch the topology details using the [`cp_layer_renderer_properties_get_texture_topology`](./cp_layer_renderer_properties_get_texture_topology.md) function.
 

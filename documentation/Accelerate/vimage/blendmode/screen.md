@@ -21,7 +21,7 @@ Sets the destination pixel as the inverted product of the inverted corresponding
 case screen
 ```
 
-#### Discussion
+## Discussion
 
 The following image shows the result of compositing using the screen blend mode:
 

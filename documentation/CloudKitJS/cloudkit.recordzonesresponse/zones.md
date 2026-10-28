@@ -15,7 +15,7 @@ The zones for the successful database operations.
 readonly attribute CloudKit.RecordZone[] zones;
 ```
 
-#### Discussion
+## Discussion
 
 The objects in the array have a single property with this format: `{zoneID: {zoneName: ‘zone’}}`.
 

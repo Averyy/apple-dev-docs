@@ -23,7 +23,7 @@ func MIDIDeviceAddEntity(_ device: MIDIDeviceRef, _ name: CFString, _ embedded: 
 extern OSStatus MIDIDeviceAddEntity(MIDIDeviceRef device, CFStringRef name, Boolean embedded, ItemCount numSourceEndpoints, ItemCount numDestinationEndpoints, MIDIEntityRef *newEntity);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code.
 

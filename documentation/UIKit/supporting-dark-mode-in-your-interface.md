@@ -4,7 +4,7 @@
 
 Update colors, images, and behaviors so that your app adapts automatically when Dark Mode is active.
 
-#### Overview
+## Overview
 
 In macOS and iOS, users can choose to adopt a system-wide light or dark appearance. The dark appearance, known as Dark Mode, implements an interface style that many apps already adopt. Users choose the aesthetic they prefer, and can also choose to toggle their interface based on ambient lighting conditions or a specific schedule.
 
@@ -16,7 +16,7 @@ Before you change your code, turn on Dark Mode and see how your app responds. Th
 
 ![A screenshot of the Appearance pane of the System Settings app in macOS, which is where people enable Dark Mode.](https://developer.apple.com/tutorials/images/com.apple.uikit/supporting-dark-mode-in-your-interface-2@2x.png)
 
-##### Choose adaptive colors for your UI
+### Choose adaptive colors for your UI
 
 Choose colors that adapt automatically to the underlying interface style. Light and dark interfaces use very different color palettes. Colors that work well in a light appearance may be hard to see in a dark appearance, and vice versa. An adaptive color object returns different color values for different interface styles.
 
@@ -43,13 +43,13 @@ When you create a color object from a color asset, you do not have to recreate t
 
 > **Note**:  For the user’s content, always preserve colors that the user explicitly chooses. For example, a painting app should not try to change colors that the user applies to their canvas. Use adaptable colors primarily in the views and controls for your app’s chrome.
 
-##### Create images for all appearances
+### Create images for all appearances
 
 Make sure the images in your interface look good in both light and dark appearances. Interfaces use images in many places, including in buttons, image views, and custom views and controls. If an image is difficult to see when changing appearances, provide a new image asset that looks good in the other appearance. Better yet, use a symbol image or template image, which define only the shape to render and therefore do not require separate images for light, dark, and high-contrast environments.
 
 For information about configuring images for both light and dark interfaces, see [Providing images for different appearances](./providing-images-for-different-appearances.md).
 
-##### Update custom views using specific methods
+### Update custom views using specific methods
 
 When the user changes the system appearance, the system automatically asks each window and view to redraw itself. During this process, the system calls several well-known methods for both macOS and iOS, listed in the following table, to update your content. The system updates the trait environment before calling these methods, so if you make all of your appearance-sensitive changes in these methods, your app updates itself correctly.
 
@@ -87,7 +87,7 @@ func applicationDidFinishLaunching(_ aNotification: Notification) {
 
 ```
 
-##### Choose visual-effect materials based on the intended usage
+### Choose visual-effect materials based on the intended usage
 
 Visual-effect views add transparency to your background views, which gives your UI more visual depth than if the backgrounds were opaque. To ensure that your content remains visible, visual-effect views blur the background content subtly and add vibrancy effects to adjust the colors of your foreground content automatically. The system updates these effects dynamically, ensuring that your app’s content remains visible when the underlying content changes.
 
@@ -98,7 +98,7 @@ Use visual-effect views in your interface as container views, and add subviews t
 
 > ❗ **Important**:  Do not use deprecated materials, such as [`NSVisualEffectView.Material.light`](../AppKit/nsvisualeffectview/material-swift.enum/light.md), in macOS 10.14 and later because those materials do not adapt to Dark Mode. Instead, choose newer materials that adapt correctly to the environment.
 
-##### Opt out only as needed
+### Opt out only as needed
 
 Make every effort to adopt both light and dark appearances in your apps. If supporting one appearance makes no sense for all or part of your app, you can opt out of appearance changes in the appropriate windows or views. For example, you might always use a light appearance for your app’s printing views.
 
@@ -107,7 +107,7 @@ You can configure all or part of your interface to opt out of a specific appeara
 - [Choosing a Specific Appearance for Your macOS App](../AppKit/choosing-a-specific-appearance-for-your-macos-app.md)
 - [Choosing a specific interface style for your iOS app](./choosing-a-specific-interface-style-for-your-ios-app.md)
 
-##### Avoid expensive tasks during appearance transitions
+### Avoid expensive tasks during appearance transitions
 
 When the user toggles between light and dark interfaces, the system asks your app to redraw all of its content. Although the system manages the drawing process, it relies on your custom code at several points during that process. Your code must be as quick as possible and not perform tasks unrelated to the appearance change. In macOS, AppKit usually creates transition animations during appearance changes, but it aborts those animations if your app takes too long to redraw itself.
 

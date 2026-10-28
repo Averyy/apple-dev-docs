@@ -21,7 +21,7 @@ Opens an encode output archive stream.
 static func encodeStream(writingTo stream: ArchiveByteStream, selectUsing filter: ArchiveHeader.EntryFilter? = nil, flags: ArchiveFlags = [], threadCount: Int = 0) -> ArchiveStream?
 ```
 
-#### Return Value
+## Return Value
 
 A new archive stream.
 

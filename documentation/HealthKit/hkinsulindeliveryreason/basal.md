@@ -24,7 +24,7 @@ case basal
 HKInsulinDeliveryReasonBasal
 ```
 
-#### Discussion
+## Discussion
 
 Users typically administer basal insulin at a continuous rate from an insulin pump, or as a periodic injection of slow-acting insulin.
 

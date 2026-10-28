@@ -21,7 +21,7 @@ Creates an evaluator with the given evaluation closure.
 init(_ evaluate: nonisolated(nonsending) @escaping (Input, ModelSubject<Input.ExpectedValue>) async throws -> Metric)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let metric = Metric("ExactMatch")

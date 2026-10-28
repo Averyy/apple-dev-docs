@@ -16,7 +16,7 @@ Sends a message to the paired accessory.
 func send(message: AccessoryMessage) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Create an [`AccessoryMessage`](../../../AccessoryTransportExtension/accessorymessage.md) containing your notification data and send it to your accessory. The system encrypts the message before delivering it to the transport extension for transmission.
 

@@ -19,7 +19,7 @@ class LineGradient
 
 - [MapKit JS 5](./mapkit-js-5.md)
 
-#### Overview
+## Overview
 
 Use [`LineGradient`](./linegradient.md) with a [`PolylineOverlay`](./polylineoverlay.md) to show a gradient along a route or path. You can also use it to provide additional information about locations along the path, for example, the running pace along a route.
 

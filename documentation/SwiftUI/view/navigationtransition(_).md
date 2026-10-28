@@ -22,7 +22,7 @@ nonisolated
 func navigationTransition(_ style: some NavigationTransition) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Add this modifier to a view that appears within a [`NavigationStack`](../navigationstack.md) or a sheet, outside of any containers such as [`VStack`](../vstack.md).
 

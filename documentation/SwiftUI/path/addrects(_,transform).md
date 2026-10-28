@@ -21,7 +21,7 @@ Adds a set of rectangular subpaths to the path.
 mutating func addRects(_ rects: [CGRect], transform: CGAffineTransform = .identity)
 ```
 
-#### Discussion
+## Discussion
 
 Calling this convenience method is equivalent to repeatedly calling the `addRect(_:transform:)` method for each rectangle in the array.
 

@@ -19,15 +19,15 @@ func scriptingValue(for objectSpecifier: NSScriptObjectSpecifier) -> Any?
 - (id) scriptingValueForSpecifier:(NSScriptObjectSpecifier *) objectSpecifier;
 ```
 
-#### Return Value
+## Return Value
 
 The specified object or objects in the receiving container.
 
-#### Discussion
+## Discussion
 
 This method might successfully return an object, an array of objects, or `nil`, depending on the kind of object specifier. Because `nil` is a valid return value, failure is signaled by invoking the object specifier’s `setEvaluationError:` method before returning.
 
-#### Discussion
+## Discussion
 
 You can override this method to customize the evaluation of object specifiers without requiring that the scripting container make up indexes for contained objects that don’t naturally have indexes (as can be the case if you implement [`indicesOfObjects(byEvaluatingObjectSpecifier:)`](./indicesofobjects%28byevaluatingobjectspecifier%29.md) instead).
 

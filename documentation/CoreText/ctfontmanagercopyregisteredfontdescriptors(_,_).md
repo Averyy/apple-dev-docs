@@ -22,7 +22,7 @@ func CTFontManagerCopyRegisteredFontDescriptors(_ scope: CTFontManagerScope, _ e
 extern CFArrayRefCTFontManagerCopyRegisteredFontDescriptors(CTFontManagerScope scope, bool enabled);
 ```
 
-#### Return Value
+## Return Value
 
 An array of font descriptors registered by the app. The array may be empty if nothing is registered.
 

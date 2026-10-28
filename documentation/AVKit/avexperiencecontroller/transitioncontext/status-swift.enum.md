@@ -16,7 +16,7 @@ Describes the status of a transition.
 enum Status
 ```
 
-#### Overview
+## Overview
 
 Transitions go through a sequence of `Status`s as they progress.
 

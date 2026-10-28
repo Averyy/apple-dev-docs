@@ -23,7 +23,7 @@ optional func sectionIndexTitles(for tableView: UITableView) -> [String]?
 - (NSArray<NSString *> *) sectionIndexTitlesForTableView:(UITableView *) tableView;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings that serve as the title of sections in the table view and appear in the index list on the right side of the table view. The table view must be in the plain style (`UITableViewStylePlain`). For example, for an alphabetized list, you could return an array containing strings “A” through “Z”.
 

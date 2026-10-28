@@ -23,11 +23,11 @@ func ABAddressBookCreate() -> Unmanaged<ABAddressBook>!
 extern ABAddressBookRefABAddressBookCreate();
 ```
 
-#### Return Value
+## Return Value
 
 An address book object.
 
-#### Discussion
+## Discussion
 
 Changes made to the returned address book are reflected in the Address Book database only after saving the address book with [`ABAddressBookSave(_:_:)`](./abaddressbooksave%28_,_%29.md).
 

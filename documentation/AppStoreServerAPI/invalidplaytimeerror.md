@@ -19,7 +19,7 @@ object InvalidPlayTimeError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 For valid `playTime` values in a [`ConsumptionRequestV1`](./consumptionrequestv1.md), see [`playTime`](./playtime.md).
 

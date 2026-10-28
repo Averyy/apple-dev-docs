@@ -25,7 +25,7 @@ func startRecording(withMicrophoneEnabled microphoneEnabled: Bool, handler: (((a
 - (void) startRecordingWithMicrophoneEnabled:(BOOL) microphoneEnabled handler:(void (^)(NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Call [`startRecording(withMicrophoneEnabled:handler:)`](./startrecording%28withmicrophoneenabled,handler%29.md) on an instance of the recorder to begin recording. When [`startRecording(withMicrophoneEnabled:handler:)`](./startrecording%28withmicrophoneenabled,handler%29.md) is first called, an alert window appears asking the user to confirm recording. This alert window is also presented if it has been longer than 8 minutes since the last time [`startRecording(withMicrophoneEnabled:handler:)`](./startrecording%28withmicrophoneenabled,handler%29.md) was called.
 

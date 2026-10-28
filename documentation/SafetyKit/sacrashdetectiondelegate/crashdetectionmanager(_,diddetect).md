@@ -23,7 +23,7 @@ optional func crashDetectionManager(_ crashDetectionManager: SACrashDetectionMan
 - (void) crashDetectionManager:(SACrashDetectionManager *) crashDetectionManager didDetectEvent:(SACrashDetectionEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 To receive Crash Detection events, create a new [`SACrashDetectionManager`](../sacrashdetectionmanager.md) instance and set its delegate early in the app life cycle, such as [`applicationDidFinishLaunching(_:)`](../../UIKit/uiapplicationdelegate/applicationdidfinishlaunching%28_%29.md).
 

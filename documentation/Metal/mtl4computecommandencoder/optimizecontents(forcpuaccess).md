@@ -25,7 +25,7 @@ func optimizeContents(forCPUAccess texture: any MTLTexture)
 - (void) optimizeContentsForCPUAccess:(id<MTLTexture>) texture;
 ```
 
-#### Discussion
+## Discussion
 
 Optimizing a texture for CPU access may affect the performance of GPU accesses, however, the data the GPU retrieves from the texture remains consistent.
 

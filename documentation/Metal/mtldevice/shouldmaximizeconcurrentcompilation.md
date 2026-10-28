@@ -24,7 +24,7 @@ var shouldMaximizeConcurrentCompilation: Bool { get set }
 
 - [Using the Metal 4 compilation API](../using-the-metal-4-compilation-api.md)
 
-#### Discussion
+## Discussion
 
 The property’s default value is [`false`](../../Swift/false.md). You can retrieve the number of concurrent CPU threads the device is currently using by checking the [`maximumConcurrentCompilationTaskCount`](./maximumconcurrentcompilationtaskcount.md) property.
 

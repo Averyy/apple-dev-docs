@@ -24,7 +24,7 @@ let HMCharacteristicTypeLogs: String
 extern NSString * const HMCharacteristicTypeLogs;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is TLV8-encoded data.
 

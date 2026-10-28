@@ -17,7 +17,7 @@ An access point that the accessory was able to discover in its Wi-Fi scans.
 struct AccessoryScanResult
 ```
 
-#### Overview
+## Overview
 
 An `AccessoryScanResult` represents a single Wi-Fi access point your accessory detected during network scanning. Include signal strength information to help people select networks with good connectivity from your accessory’s location.
 

@@ -24,7 +24,7 @@ var boostShadowAmount: Float { get set }
 @property (readwrite) float boostShadowAmount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to lighten details in shadows. The value should be in the range of `0...2`. The default value is `1`. A value less than `1` darkens the shadows, and a value greater than `1` lightens the shadows.
 

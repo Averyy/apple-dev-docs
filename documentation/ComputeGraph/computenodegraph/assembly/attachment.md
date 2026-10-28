@@ -21,7 +21,7 @@ Identifies where a resource is attached in the compute graph.
 enum Attachment
 ```
 
-#### Overview
+## Overview
 
 Each buffer and texture bound to a compute pipeline is sourced from a specific attachment point: the graph itself, or a named input or output port on a node.
 

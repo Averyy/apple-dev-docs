@@ -16,7 +16,7 @@ Retrieves the usage page for an element.
 uint32_t IOHIDElementGetUsagePage(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the usage page for the element.
 

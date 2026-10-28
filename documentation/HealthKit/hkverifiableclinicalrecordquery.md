@@ -23,7 +23,7 @@ class HKVerifiableClinicalRecordQuery
 @interface HKVerifiableClinicalRecordQuery : HKQuery
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  To use Swift concurrency when reading verifiable clinical records, see [`HKVerifiableClinicalRecordQueryDescriptor`](./hkverifiableclinicalrecordquerydescriptor.md).
 

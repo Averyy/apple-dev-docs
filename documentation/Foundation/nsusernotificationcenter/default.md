@@ -21,7 +21,7 @@ class var `default`: NSUserNotificationCenter { get }
 @property (class, strong, readonly) NSUserNotificationCenter * defaultUserNotificationCenter;
 ```
 
-#### Return Value
+## Return Value
 
 The default user notification object.
 

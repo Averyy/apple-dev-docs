@@ -21,7 +21,7 @@ Removes the specified subrange of elements from the array.
 mutating func removeSubrange(_ bounds: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 All the elements following the specified subrange are moved to close the resulting gap.
 

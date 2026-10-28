@@ -21,11 +21,11 @@ func advancement(forGlyph glyph: NSGlyph) -> NSSize
 - (NSSize) advancementForGlyph:(NSGlyph) glyph;
 ```
 
-#### Return Value
+## Return Value
 
 The advancement spacing in points.
 
-#### Discussion
+## Discussion
 
 This spacing is given according to the glyph’s movement direction, which is either strictly horizontal or strictly vertical.
 

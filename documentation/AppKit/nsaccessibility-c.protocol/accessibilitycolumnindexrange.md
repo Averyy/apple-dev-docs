@@ -15,7 +15,7 @@ The column index range of the cell.
 @property NSRange accessibilityColumnIndexRange;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the column’s starting index and index span in the table. Use this property in the elements representing a table’s cell.
 

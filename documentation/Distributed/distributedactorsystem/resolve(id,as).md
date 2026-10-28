@@ -22,7 +22,7 @@ Resolves a local or remote [`ActorID`](./actorid.md) to a reference to given act
 func resolve<Act>(id: Self.ActorID, as actorType: Act.Type) throws -> Act? where Act : DistributedActor, Self.ActorID == Act.ID
 ```
 
-#### Discussion
+## Discussion
 
 The returned value is either a local actor or proxy to a remote actor.
 

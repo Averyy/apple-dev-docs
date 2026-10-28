@@ -16,11 +16,11 @@ Returns the preferred state property for the element.
 Boolean IOHIDElementHasPreferredState(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if preferred state or FALSE if no preferred state.
 
-#### Discussion
+## Discussion
 
 Indicates whether the element has a preferred state to which it will return when the user is not physically interacting with the control.
 

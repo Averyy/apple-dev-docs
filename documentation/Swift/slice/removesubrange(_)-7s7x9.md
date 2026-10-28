@@ -23,7 +23,7 @@ mutating func removeSubrange(_ bounds: Range<Slice<Base>.Index>)
 
 Available when `Base` conforms to `RangeReplaceableCollection`.
 
-#### Discussion
+## Discussion
 
 ```swift
 var bugs = ["Aphid", "Bumblebee", "Cicada", "Damselfly", "Earwig"]

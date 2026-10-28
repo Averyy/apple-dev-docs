@@ -25,7 +25,7 @@ static let volumeIsInternalKey: URLResourceKey
 extern NSURLResourceKey const NSURLVolumeIsInternalKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a Boolean `NSNumber` object, or `nil` if the system can’t determine its status.
 

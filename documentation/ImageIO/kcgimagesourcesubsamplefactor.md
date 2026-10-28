@@ -25,7 +25,7 @@ let kCGImageSourceSubsampleFactor: CFString
 extern CFStringRef const kCGImageSourceSubsampleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 When you specify this key, the image source scales down the image data by the specified numerical factor. The value of this key must be a [`CFNumber`](../CoreFoundation/cfnumber.md) containing the integer value 2, 4, or 8. If the image doesn’t support the specified scale factor, the image source provides a larger or full-size normal image.
 

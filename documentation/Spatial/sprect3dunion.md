@@ -21,7 +21,7 @@ Returns the smallest rectangle that contains two rectangles.
 static SPRect3D SPRect3DUnion(SPRect3D rect, SPRect3D other);
 ```
 
-#### Return Value
+## Return Value
 
 A new rectangle that is the union of two rectangles.
 

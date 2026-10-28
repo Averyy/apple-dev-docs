@@ -20,7 +20,7 @@ typealias AESendMode = Int32
 typedef SInt32 AESendMode;
 ```
 
-#### Discussion
+## Discussion
 
 You use these constants with the `sendMode` parameter to the `AESend(_:_:_:_:_:_:_:)` function to specify how the server application should handle the reply mode, the interaction level, the application switch mode, the reconnection mode, the return receipt mode, the recording mode, and whether to process non-reply Apple events. To obtain a value for this parameter, you add together constants to set the appropriate bits for the Apple event you are about to send. The following paragraphs provide additional information about how you use these constants.
 
@@ -48,7 +48,7 @@ Specify the `kAEDontExecute` flag if your application is sending an Apple event 
 
 See also [Apple Event Manager](../applicationservices/apple_event_manager.md).
 
-##### Version-Notes
+### Version-Notes
 
 The `kAEDontReconnect` and `kAEWantReceipt` constants are deprecated and unsupported in macOS.
 

@@ -19,7 +19,7 @@ class NSPasteboardItem
 @interface NSPasteboardItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 There are three main uses for an [`NSPasteboardItem`](./nspasteboarditem.md) object:
 

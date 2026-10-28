@@ -20,7 +20,7 @@ A notification the system posts when a fragmented movie minder observes a change
 static let AVFragmentedMovieDurationDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification only for changes that occur after a movie’s duration property reaches a [`AVKeyValueStatus.loaded`](../../../AVFoundation/avkeyvaluestatus/loaded.md) status.
 

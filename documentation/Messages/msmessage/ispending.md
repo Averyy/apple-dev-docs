@@ -21,7 +21,7 @@ var isPending: Bool { get }
 @property (nonatomic, readonly, getter=isPending) BOOL pending;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine whether an [`MSMessage`](../msmessage.md) instance represents an unsent message—for example, to determine whether the conversation’s [`selectedMessage`](../msconversation/selectedmessage.md) property refers to a message in the transcript ([`false`](../../Swift/false.md)) or to a message in the Messages app’s input field ([`true`](../../Swift/true.md)).
 

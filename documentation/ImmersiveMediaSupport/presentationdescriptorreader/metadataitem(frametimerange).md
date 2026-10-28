@@ -19,11 +19,11 @@ Builds a metadata item containing the presentation commands active at the start 
 func metadataItem(frameTimeRange: CMTimeRange) throws -> AVMetadataItem?
 ```
 
-#### Return Value
+## Return Value
 
 An `AVMetadataItem` whose value encodes the active presentation commands for that frame, or `nil` if none are active.
 
-#### Discussion
+## Discussion
 
 This is intended to be called once per video frame. The returned item’s `time` and `duration` are set directly from `frameTimeRange`, so the caller can write it into a per-frame metadata track without further clipping or stamping. Returns `nil` if no presentation commands are active at `frameTimeRange.start`.
 

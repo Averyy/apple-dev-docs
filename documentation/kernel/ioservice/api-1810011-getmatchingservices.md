@@ -12,11 +12,11 @@ static OSIterator * getMatchingServices(
  OSDictionary *matching );
 ```
 
-#### Return Value
+## Return Value
 
 An instance of an iterator over a set of IOService objects. To be released by the caller.
 
-#### Overview
+## Overview
 
 Provides a method of finding the current set of published IOService objects matching the supplied matching dictionary.
 

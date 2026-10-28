@@ -19,7 +19,7 @@ func selectKeyView(following view: NSView)
 - (void) selectKeyViewFollowingView:(NSView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 Sends the [`nextValidKeyView`](../nsview/nextvalidkeyview.md) message to `view` and, if that message returns an `NSView` object, invokes [`makeFirstResponder(_:)`](./makefirstresponder%28_%29.md) with the returned object.
 

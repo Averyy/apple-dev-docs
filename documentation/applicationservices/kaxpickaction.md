@@ -17,7 +17,7 @@ var kAXPickAction: String { get }
 #define kAXPickAction
 ```
 
-#### Discussion
+## Discussion
 
 Select the UIElement, such as a menu item.
 

@@ -21,7 +21,7 @@ Indicates that a task or action has produced a warning of some kind.
 static let warning: SensoryFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Only plays feedback on iOS and watchOS.
 

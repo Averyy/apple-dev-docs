@@ -24,7 +24,7 @@ var alignmentRectInsets: UIEdgeInsets { get }
 @property (nonatomic, readonly) UIEdgeInsets alignmentRectInsets;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the inset values as a hint for specifying the image contents more precisely. For example, if you have a 20 x 20 pixel icon that includes a glow effect, you might set the insets to {{2, 2}, {16, 16}} to indicate the position of the underlying icon without the glow effect.
 

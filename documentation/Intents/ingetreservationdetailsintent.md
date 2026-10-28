@@ -28,7 +28,7 @@ class INGetReservationDetailsIntent
 
 - [Donating Reservations](../SiriKit/donating-reservations.md)
 
-#### Overview
+## Overview
 
 Create an [`INGetReservationDetailsIntent`](./ingetreservationdetailsintent.md) object when the user makes a request to see the details about one or more reservations in your app. The app creates a new [`INInteraction`](./ininteraction.md) object containing the [`INGetReservationDetailsIntent`](./ingetreservationdetailsintent.md) and [`INGetReservationDetailsIntentResponse`](./ingetreservationdetailsintentresponse.md) object and donates it to the system.
 

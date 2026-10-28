@@ -17,7 +17,7 @@ A string that specifies the symbol used to denote currency in this language.
 extern NSString * const NSCurrencySymbol;
 ```
 
-#### Discussion
+## Discussion
 
 The default is “$”.
 

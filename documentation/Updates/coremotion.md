@@ -5,20 +5,20 @@
 
 Learn about important changes to Core Motion.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Core Motion](../CoreMotion/CoreMotion.md).
 
-#### September 2024
+## September 2024
 
 - Apple Watch Series 10 supports the Shallow Depth and Pressure capability. Use [`CMWaterSubmersionManager`](../CoreMotion/cmwatersubmersionmanager.md) to start a shallow dive session.
 
-#### June 2024
+## June 2024
 
 - Use the [`CMHeadphoneActivityManager`](../CoreMotion/cmheadphoneactivitymanager.md) class to access motion activity from connected headphones.
 - Enable connect or disconnect monitoring outside of a motion session with the [`CMHeadphoneMotionManager`](../CoreMotion/cmheadphonemotionmanager.md) class. You can also use `CMHeadphoneMotionManager` to support AirPods device motion data on watchOS.
 
-#### June 2023
+## June 2023
 
 - Use the  [`CMHighFrequencyHeartRateData`](../CoreMotion/cmhighfrequencyheartratedata.md) class to get heart rate data, including the confidence level.
 - Use the [`CMOdometerData`](../CoreMotion/cmodometerdata.md)  class to get odometer data from workouts, such as speed, slope, distances, and altitude.

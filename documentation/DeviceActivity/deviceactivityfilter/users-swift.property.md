@@ -17,7 +17,7 @@ The users to include in a report.
 let users: DeviceActivityFilter.Users?
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, then the filter only includes data for the current user.
 

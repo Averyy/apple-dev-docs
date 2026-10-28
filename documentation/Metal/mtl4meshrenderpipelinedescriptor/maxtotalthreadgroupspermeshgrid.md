@@ -24,7 +24,7 @@ var maxTotalThreadgroupsPerMeshGrid: Int { get set }
 @property (nonatomic, readwrite) NSUInteger maxTotalThreadgroupsPerMeshGrid;
 ```
 
-#### Discussion
+## Discussion
 
 This number represents the maximum size of the product of the components of the parameter you pass to Metal Shading Language’s built-in function `mesh_grid_properties::set_threadgroups_per_grid`.
 

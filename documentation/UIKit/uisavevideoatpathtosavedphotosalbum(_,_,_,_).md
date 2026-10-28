@@ -22,7 +22,7 @@ func UISaveVideoAtPathToSavedPhotosAlbum(_ videoPath: String, _ completionTarget
 extern void UISaveVideoAtPathToSavedPhotosAlbum(NSString *videoPath, id completionTarget, SEL completionSelector, void *contextInfo);
 ```
 
-#### Discussion
+## Discussion
 
 When you use this function with an image picker controller, you’d typically call it within your [`imagePickerController(_:didFinishPickingMediaWithInfo:)`](./uiimagepickercontrollerdelegate/imagepickercontroller%28_,didfinishpickingmediawithinfo%29.md) delegate method implementation.
 

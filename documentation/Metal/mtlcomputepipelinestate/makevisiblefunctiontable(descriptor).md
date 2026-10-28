@@ -25,7 +25,7 @@ func makeVisibleFunctionTable(descriptor: MTLVisibleFunctionTableDescriptor) -> 
 - (id<MTLVisibleFunctionTable>) newVisibleFunctionTableWithDescriptor:(MTLVisibleFunctionTableDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new visible function table, or `nil` if an error occurred in creation.
 

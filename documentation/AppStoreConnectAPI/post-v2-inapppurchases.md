@@ -13,7 +13,7 @@ Create an In-App Purchase, including a consumable, non-consumable, or non-renewi
 
 - [Managing In-App Purchases](./managing-in-app-purchases.md)
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 

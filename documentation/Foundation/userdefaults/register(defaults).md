@@ -29,7 +29,7 @@ func register(defaults registrationDictionary: [String : Any])
 
 - [Accessing settings from your code](../accessing-settings-from-your-code.md)
 
-#### Discussion
+## Discussion
 
 Call this method shortly after launch to specify the default values for your app’s settings. This method assigns the key-value pairs you provide to the registration domain, which is typically the last domain in the search list. The registration domain is volatile, so you must register the set of default values each time your app launches.
 

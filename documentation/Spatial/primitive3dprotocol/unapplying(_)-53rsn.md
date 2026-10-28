@@ -22,7 +22,7 @@ Returns the primitive that results from unapplying an affine transform to the pr
 func unapplying(_ transform: Self.AffineTransform) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed primitive.
 

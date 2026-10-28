@@ -23,7 +23,7 @@ func issueChallenge(toPlayers playerIDs: [String]?, message: String?)
 - (void) issueChallengeToPlayers:(NSArray<NSString *> *) playerIDs message:(NSString *) message;
 ```
 
-#### Discussion
+## Discussion
 
 Set up your game to issue a challenge request only in direct response to a player action. That is, your game provides a user interface that allows the player to choose to issue a challenge and choose which friends receive the challenge, and only issue a challenge when the player wishes to do so.
 

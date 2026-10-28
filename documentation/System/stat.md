@@ -22,7 +22,7 @@ A Swift wrapper of the C `stat` struct.
 struct Stat
 ```
 
-#### Overview
+## Overview
 
 > **Note**: Only available on Unix-like platforms.
 

@@ -16,7 +16,7 @@ The pointer style that uses the default platform appearance.
 static let `default`: PointerStyle
 ```
 
-#### Discussion
+## Discussion
 
 This is the default pointer style for interacting with content and UI elements if no other pointer style is more appropriate. This pointer style displays an arrow in macOS and a circle in iPadOS and visionOS.
 

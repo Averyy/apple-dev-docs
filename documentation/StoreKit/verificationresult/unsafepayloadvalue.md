@@ -21,7 +21,7 @@ The associated value of the verification result that StoreKit doesn’t confirm 
 var unsafePayloadValue: SignedType { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the value of a payload in a JSON Web Signature (JWS) value that’s not confirmed to have passed StoreKit verification.
 

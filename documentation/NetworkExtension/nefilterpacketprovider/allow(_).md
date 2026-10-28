@@ -19,7 +19,7 @@ func allow(_ packet: NEPacket)
 - (void) allowPacket:(NEPacket *) packet;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to allow a previously-delayed packet to continue its journey into or out of the networking stack.
 

@@ -16,7 +16,7 @@ Returns the exponent that you use to interpret the element’s value.
 virtual uint32_t getUnitExponent();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the element’s unit exponent. The unit exponent value is defined in the USB HID spec.
 

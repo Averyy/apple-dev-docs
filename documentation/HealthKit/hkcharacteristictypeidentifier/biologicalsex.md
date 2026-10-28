@@ -24,7 +24,7 @@ static let biologicalSex: HKCharacteristicTypeIdentifier
 extern HKCharacteristicTypeIdentifier const HKCharacteristicTypeIdentifierBiologicalSex;
 ```
 
-#### Discussion
+## Discussion
 
 This type uses values from the [`HKBiologicalSex`](../hkbiologicalsex.md) enum.
 

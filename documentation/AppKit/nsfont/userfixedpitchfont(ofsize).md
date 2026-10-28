@@ -19,11 +19,11 @@ class func userFixedPitchFont(ofSize fontSize: CGFloat) -> NSFont?
 + (NSFont *) userFixedPitchFontOfSize:(CGFloat) fontSize;
 ```
 
-#### Return Value
+## Return Value
 
 A font object of the specified size.
 
-#### Discussion
+## Discussion
 
 If `fontSize` is 0 or negative, returns the fixed-pitch font at the default size.
 

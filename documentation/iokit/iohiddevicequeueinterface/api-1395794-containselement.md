@@ -16,7 +16,7 @@ Determines whether an element has been added to this IOHIDDeviceQueueInterface i
 IOReturn (*containsElement)(void *self, IOHIDElementRef element, Boolean *pValue, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 

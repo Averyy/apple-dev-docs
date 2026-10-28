@@ -29,7 +29,7 @@ extern CFStringRef const kSecAttrSynchronizable;
 
 - [Sharing access to keychain items among a collection of apps](./sharing-access-to-keychain-items-among-a-collection-of-apps.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md) and indicates whether the item in question is synchronized to other devices through iCloud. To add a new synchronizable item, or to obtain synchronizable results from a query, supply this key with a value of [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md). If the key is not supplied, or has a value of [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md), then no synchronizable items are added or returned. Use [`kSecAttrSynchronizableAny`](./ksecattrsynchronizableany.md) to query for both synchronizable and non-synchronizable results.
 

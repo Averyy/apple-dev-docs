@@ -19,7 +19,7 @@ var personNameComponents: PersonNameComponents? { get set }
 @property (nonatomic, strong, nullable) NSPersonNameComponents * personNameComponents;
 ```
 
-#### Discussion
+## Discussion
 
 If no image is provided, the monogram object creates an image using the first initial of the [`givenName`](../../Foundation/nspersonnamecomponents/givenname.md) and [`familyName`](../../Foundation/personnamecomponents/familyname.md) attributes contained in this property. The person’s name appears below the monogram image.
 

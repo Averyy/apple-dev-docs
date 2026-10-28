@@ -23,7 +23,7 @@ case emailAddress
 UIKeyboardTypeEmailAddress
 ```
 
-#### Discussion
+## Discussion
 
 This keyboard type prominently features the at (”`@`”), period (”`.`”) and space characters.
 

@@ -25,11 +25,11 @@ func scanHexInt32(_ result: UnsafeMutablePointer<UInt32>?) -> Bool
 - (BOOL) scanHexInt:(unsigned int *) result;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the receiver finds a valid hexadecimal integer representation, otherwise [`false`](../../Swift/false.md). Overflow is considered a valid hexadecimal integer representation.
 
-#### Discussion
+## Discussion
 
 The hexadecimal integer representation may optionally be preceded by `0x` or `0X`. Skips past excess digits in the case of overflow, so the receiver’s position is past the entire hexadecimal representation.
 

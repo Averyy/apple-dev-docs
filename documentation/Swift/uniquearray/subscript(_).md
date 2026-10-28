@@ -21,7 +21,7 @@ Accesses the element at the specified position.
 subscript(position: Int) -> Element { borrow mutate }
 ```
 
-#### Overview
+## Overview
 
 > **Complexity**: O(1)
 

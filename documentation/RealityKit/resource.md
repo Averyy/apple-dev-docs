@@ -21,7 +21,7 @@ A shared resource you use to configure a component, like a material, mesh, or te
 protocol Resource : Sendable
 ```
 
-#### Overview
+## Overview
 
 Resources can be costly to load or create. Share and reuse resources as much as possible.
 

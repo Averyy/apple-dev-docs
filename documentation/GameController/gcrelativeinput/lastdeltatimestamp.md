@@ -25,7 +25,7 @@ var lastDeltaTimestamp: TimeInterval { get }
 @property (readonly) NSTimeInterval lastDeltaTimestamp;
 ```
 
-#### Discussion
+## Discussion
 
 This property isn’t a specific date and time. To determine the time between delta values, subtract a previous value from the current value.
 

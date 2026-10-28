@@ -20,7 +20,7 @@ struct AEMenuBarItem
 typedef NSString * AEMenuBarItem;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with [`allowedMenuBarItems`](./aeassessmentconfiguration/allowedmenubaritems.md) to control which menu bar items stay visible while [`allowsMenuBar`](./aeassessmentconfiguration/allowsmenubar.md) is enabled. To allow a third-party menu extra, use its bundle identifier as the raw value.
 

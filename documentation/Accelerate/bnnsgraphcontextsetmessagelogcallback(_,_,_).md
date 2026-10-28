@@ -25,11 +25,11 @@ func BNNSGraphContextSetMessageLogCallback(_ context: bnns_graph_context_t, _ lo
 int BNNSGraphContextSetMessageLogCallback(bnns_graph_context_t context, bnns_graph_execute_message_fn_t log_callback_fn, bnns_user_message_data_t *additional_logging_arguments);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success, nonzero on failure.
 
-#### Discussion
+## Discussion
 
 The following code adds a custom context execute-message callback function that prints messages to the console:
 

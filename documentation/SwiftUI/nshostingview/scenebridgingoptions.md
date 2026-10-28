@@ -16,7 +16,7 @@ The options for which aspects of the window will be managed by this hosting view
 @preconcurrency var sceneBridgingOptions: NSHostingSceneBridgingOptions { get set }
 ```
 
-#### Discussion
+## Discussion
 
 `NSHostingView` will populate certain aspects of its associated window, depending on which options are specified.
 

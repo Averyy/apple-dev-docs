@@ -21,7 +21,7 @@ Preprocesses a sequence of examples.
 func preprocessed<S>(from input: S, eventHandler: EventHandler? = nil) async throws -> [Preprocessor.Output] where S : Sequence, Preprocessor.Input == S.Element
 ```
 
-#### Return Value
+## Return Value
 
 The preprocessed examples.
 

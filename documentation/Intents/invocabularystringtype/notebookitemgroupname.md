@@ -24,7 +24,7 @@ case notebookItemGroupName
 INVocabularyStringTypeNotebookItemGroupName
 ```
 
-#### Discussion
+## Discussion
 
 Examples might include “Shopping” or “Personal”.
 

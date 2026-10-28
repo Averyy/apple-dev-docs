@@ -25,11 +25,11 @@ func CFMachPortCreateRunLoopSource(_ allocator: CFAllocator!, _ port: CFMachPort
 extern CFRunLoopSourceRefCFMachPortCreateRunLoopSource(CFAllocatorRef allocator, CFMachPortRef port, CFIndex order);
 ```
 
-#### Return Value
+## Return Value
 
 The new CFRunLoopSource object for `port`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The run loop source is not automatically added to a run loop. To add the source to a run loop, use [`CFRunLoopAddSource(_:_:_:)`](./cfrunloopaddsource%28_,_,_%29.md).
 

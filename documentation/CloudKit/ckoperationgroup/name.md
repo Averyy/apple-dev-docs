@@ -25,7 +25,7 @@ var name: String? { get set }
 @property (copy, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The system sends the name of the operation group to CloudKit to provide aggregate reporting for [`CKOperationGroup`](../ckoperationgroup.md). The name must not include any personal data.
 

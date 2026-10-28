@@ -19,7 +19,7 @@ enum TextReplacementReason
 enum NSWritingToolsCoordinatorTextReplacementReason : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 During an operation, Writing Tools delivers replacement text to the delegate of the active [`NSWritingToolsCoordinator`](../nswritingtoolscoordinator.md) object. Depending on the configured experience for your view, it delivers these changes as either interactive or noninteractive replacements. For interactive replacements, Writing Tools animates the change automatically and provides you with the information you need to perform any related animations.
 

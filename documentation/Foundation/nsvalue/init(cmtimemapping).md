@@ -29,7 +29,7 @@ init(timeMapping: CMTimeMapping)
 + (NSValue *) valueWithCMTimeMapping:(CMTimeMapping) timeMapping;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains the time mapping information.
 

@@ -22,7 +22,7 @@ nonisolated
 init(opaque: Bool = false, colorMode: ColorRenderingMode = .nonLinear, rendersAsynchronously: Bool = false, renderer: @escaping (inout GraphicsContext, CGSize) -> Void, @ContentBuilder symbols: () -> Symbols)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer behaves like the [`init(opaque:colorMode:rendersAsynchronously:renderer:)`](./init%28opaque,colormode,rendersasynchronously,renderer%29.md) initializer, except that you also provide a collection of SwiftUI views for the renderer to use as drawing elements.
 

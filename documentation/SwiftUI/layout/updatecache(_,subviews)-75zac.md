@@ -21,7 +21,7 @@ Reinitializes a cache to a new value.
 func updateCache(_ cache: inout Self.Cache, subviews: Self.Subviews)
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t implement the [`updateCache(_:subviews:)`](./updatecache%28_,subviews%29-75zac.md) method in your custom layout, the protocol uses this default implementation instead, which calls [`makeCache(subviews:)`](./makecache%28subviews%29.md).
 

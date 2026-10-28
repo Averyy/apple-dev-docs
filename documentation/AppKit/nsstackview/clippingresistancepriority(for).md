@@ -19,11 +19,11 @@ func clippingResistancePriority(for orientation: NSLayoutConstraint.Orientation)
 - (NSLayoutPriority) clippingResistancePriorityForOrientation:(NSLayoutConstraintOrientation) orientation;
 ```
 
-#### Return Value
+## Return Value
 
 A layout constraint priority that identifies the clipping resistance for the stack view.
 
-#### Discussion
+## Discussion
 
 For an explanation of clipping resistance and how to use it for a stack view, see the [`setClippingResistancePriority(_:for:)`](./setclippingresistancepriority%28_,for%29.md) method.
 

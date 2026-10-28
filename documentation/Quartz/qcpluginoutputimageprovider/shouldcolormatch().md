@@ -21,7 +21,7 @@ optional func shouldColorMatch() -> Bool
 - (BOOL) shouldColorMatch;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) if the image is a mask or gradient; otherwise [`true`](../../Swift/true.md), which is the default.
 

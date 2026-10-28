@@ -15,7 +15,7 @@ Determine if a filesystem's authorization decisions occur remotely.
 int vfs_authopaque(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if filesystem authorization is controlled remotely, else 0.
 

@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Add a new setting to the manifest.
 
-#### Overview
+## Overview
 
 ```
 package add-setting [--package-path=<package-path>]

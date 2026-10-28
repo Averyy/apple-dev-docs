@@ -15,7 +15,7 @@ Determine if a vfs_context_t corresponds to the superuser.
 int vfs_context_suser(vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if context belongs to superuser, 0 otherwise.
 

@@ -25,7 +25,7 @@ static let timeDomain: AVAudioTimePitchAlgorithm
 extern AVAudioTimePitchAlgorithm const AVAudioTimePitchAlgorithmTimeDomain;
 ```
 
-#### Discussion
+## Discussion
 
 This is less computationally intensive than [`spectral`](./spectral.md), and uses a variable rate from `1/32` to `32`.
 

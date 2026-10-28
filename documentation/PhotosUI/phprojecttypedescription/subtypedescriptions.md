@@ -19,7 +19,7 @@ var subtypeDescriptions: [PHProjectTypeDescription] { get }
 @property (nonatomic, copy, readonly) NSArray<PHProjectTypeDescription *> * subtypeDescriptions;
 ```
 
-#### Discussion
+## Discussion
 
 This array may be empty.
 

@@ -13,11 +13,11 @@ static OSSet * withSet(
  unsigned int capacity = 0);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of OSArray containing the objects of `set`, with a retain count of 1; `NULL` on failure.
 
-#### Overview
+## Overview
 
 `set` must be non-`NULL`. If `capacity` is nonzero, it must be greater than or equal to `count`. The array will grow as needed to accommodate more key-object pairs (*unlike*[CFMutableSet](../../CoreFoundation/cfmutableset.md), for which the initial capacity is a hard limit).
 

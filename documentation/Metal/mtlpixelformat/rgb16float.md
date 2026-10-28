@@ -24,7 +24,7 @@ case rgb16Float
 MTLPixelFormatRGB16Float
 ```
 
-#### Discussion
+## Discussion
 
 The order of the color components in this format are red, green and blue.
 

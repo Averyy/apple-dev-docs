@@ -26,9 +26,9 @@ func AUGraphAddRenderNotify(_ inGraph: AUGraph, _ inCallback: AURenderCallback, 
 extern OSStatus AUGraphAddRenderNotify(AUGraph inGraph, AURenderCallback inCallback, void *inRefCon);
 ```
 
-#### Return Value
+## Return Value
 
-#### Discussion
+## Discussion
 
 Adds a callback that the graph will call every time the graph renders. The callback will be called once before the graph’s render operation, and once after the render operation is complete.
 

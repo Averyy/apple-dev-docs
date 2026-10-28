@@ -21,7 +21,7 @@ A structure that encapsulates a generic monthly weather statistics dataset reque
 struct MonthlyWeatherStatisticsQuery<T> where T : Decodable, T : Encodable, T : Equatable, T : Sendable
 ```
 
-#### Overview
+## Overview
 
 Use the properties of this structure to create a monthly weather statistics query. You can combine multiple queries into a single `WeatherService` request.
 

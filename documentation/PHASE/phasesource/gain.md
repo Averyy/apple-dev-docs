@@ -24,7 +24,7 @@ var gain: Double { get set }
 @property (nonatomic, assign) double gain;
 ```
 
-#### Discussion
+## Discussion
 
 The framework clamps the value to the range between `0` and `1`, where `0` silences the audio and `1` doesn’t modify the audio’s original volume.
 

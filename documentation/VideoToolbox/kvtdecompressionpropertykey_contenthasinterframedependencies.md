@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_ContentHasInterframeDependencies: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_ContentHasInterframeDependencies;
 ```
 
-#### Discussion
+## Discussion
 
 This is an optional, read-only property that video decoders may implement.
 

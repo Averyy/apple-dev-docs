@@ -21,7 +21,7 @@ The position of the first element in a nonempty array.
 var startIndex: InlineArray<count, Element>.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the array is empty, `startIndex` is equal to `endIndex`.
 

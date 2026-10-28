@@ -5,7 +5,7 @@
 
 Identify devices connected to your Mac from the command line.
 
-#### Overview
+## Overview
 
 To interact with a human interface device (HID), you must identify what devices are available on your system. The `hidutil` command is a human interface device utility that you can use to probe a Mac for HID devices, monitor HID events, and to obtain device reports. Run `hidutil list` in Terminal (`/Applications/Utilities`) to receive a list of HID devices. The `Devices` portion of the output is relevant for discovering available human interface devices.
 

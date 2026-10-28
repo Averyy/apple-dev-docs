@@ -25,7 +25,7 @@ func imp_implementationWithBlock(_ block: Any) -> IMP
 extern IMPimp_implementationWithBlock(id block);
 ```
 
-#### Return Value
+## Return Value
 
 The [`IMP`](./imp.md) that calls `block`. You must dispose of the returned [`IMP`](./imp.md) using the function.
 

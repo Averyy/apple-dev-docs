@@ -25,11 +25,11 @@ class func notRequired() -> Self
 + (instancetype) notRequired;
 ```
 
-#### Return Value
+## Return Value
 
 A new resolution result object.
 
-#### Discussion
+## Discussion
 
 Use this method when you don’t need or use the value of a parameter to process an intent object. When you return a resolution object of this type, Siri ends the resolution process for the parameter.
 

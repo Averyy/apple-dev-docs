@@ -15,11 +15,11 @@ The declaration to configure screen-sharing host settings and restrictions.
 object ScreenSharingHostSettings
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.screensharing.host.settings` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ Specify `com.apple.configuration.screensharing.host.settings` as the declaration
 | Allowed in user scope | N/A |
 | Apply | Only a single configuration is applied |
 
-##### Configuration example
+### Configuration example
 
 This configuration manages screen-sharing host settings and restrictions.
 

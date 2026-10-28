@@ -23,7 +23,7 @@ var collectionViewLayout: UICollectionViewLayout { get }
 @property (nonatomic, readonly) UICollectionViewLayout * collectionViewLayout;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the layout object you passed to the [`init(collectionViewLayout:)`](./init%28collectionviewlayout%29.md) method. The layout object in this property isn’t updated to reflect changes to the collection view itself. You can use this property to refer to the layout object you originally configured the collection view to use.
 

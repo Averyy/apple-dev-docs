@@ -25,7 +25,7 @@ convenience init(rect: CGRect)
 + (instancetype) shapeNodeWithRect:(CGRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 A new shape node.
 

@@ -22,7 +22,7 @@ var remoteStorageBuffer: (any MTLBuffer)? { get }
 @property (readonly, nullable) id<MTLBuffer> remoteStorageBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is non-`nil`, it contains a reference to the [`MTLBuffer`](../mtlbuffer.md) instance that created this buffer. If the buffer isn’t a remote view, the value of this property is `nil`.
 

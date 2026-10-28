@@ -19,7 +19,7 @@ class FCPXSequence
 @interface FCPXSequence : FCPXObject
 ```
 
-#### Overview
+## Overview
 
 An `FCPXSequence` object contains details about a sequence open in the Final Cut Pro timeline, such as the start time, duration, frame duration, and timecode format. To get details about the container that an active sequence belongs to,  you can use the [`container`](./fcpxobject/container.md) property of an `FCPXObject`.
 

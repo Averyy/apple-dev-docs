@@ -24,7 +24,7 @@ func presentationSectionIndex(forDataSourceSectionIndex dataSourceSectionIndex: 
 - (NSInteger) presentationSectionIndexForDataSourceSectionIndex:(NSInteger) dataSourceSectionIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The index path of the same section in the presentation layer of your object, or `nil` if the section is not in the presentation layer.
 

@@ -23,7 +23,7 @@ func premultipliedAlphaBlend(_ blendMode: vImage.BlendMode, topLayer: vImage.Pix
 
 Available when `Format` is `vImage.Interleaved8x4`.
 
-#### Discussion
+## Discussion
 
 This function treats `self` as the bottom layer and both pixel buffers must have alpha as their last channel.
 

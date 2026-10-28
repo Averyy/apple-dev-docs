@@ -19,7 +19,7 @@ case virtualMachineLimitExceeded
 VZErrorVirtualMachineLimitExceeded
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when starting a VM would exceed the system’s limit on the number of simultaneously running virtual machines.
 

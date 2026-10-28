@@ -21,11 +21,11 @@ Creates and returns a URL request for a specified URL.
 + (instancetype) requestWithURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 The newly created URL request.
 
-#### Discussion
+## Discussion
 
 The request is created with the with the default cache policy ([`NSURLRequest.CachePolicy.useProtocolCachePolicy`](./cachepolicy-swift.enum/useprotocolcachepolicy.md)), and the default timeout interval (60 seconds).
 

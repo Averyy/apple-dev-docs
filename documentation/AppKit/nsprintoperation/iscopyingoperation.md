@@ -19,7 +19,7 @@ var isCopyingOperation: Bool { get }
 @property (readonly, getter=isCopyingOperation) BOOL copyingOperation;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver is an EPS or PDF copy operation; otherwise, [`false`](../../Swift/false.md).
 

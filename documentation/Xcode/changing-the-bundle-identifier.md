@@ -5,7 +5,7 @@
 
 Modify your app’s bundle identifier and update it anywhere it appears.
 
-#### Overview
+## Overview
 
 If you want to change your app’s bundle ID before you upload a build to App Store Connect, you need to change it in multiple locations. It’s particularly important that you update the bundle ID in all the locations below if your app uses certain capabilities that depend on the bundle ID.
 
@@ -17,7 +17,7 @@ If you refer to a bundle ID in your code, replace it with the [`bundle()`](../Fo
 
 > **Note**: If you use [Xcode Cloud](./xcode-cloud.md), commit your project changes to your remote repository before creating a workflow.
 
-#### Change the main bundle ID
+## Change the main bundle ID
 
 First, change the bundle ID in your Xcode project:
 
@@ -30,7 +30,7 @@ First, change the bundle ID in your Xcode project:
 
 Xcode changes the underlying [`CFBundleIdentifier`](../BundleResources/information-property-list/cfbundleidentifier.md) information property list key that appears in the app bundle.
 
-#### Update companion target bundle IDs
+## Update companion target bundle IDs
 
 Change any target bundle IDs that are derived from the main bundle ID, such as, bundle IDs for watchOS, app extension, and app clip targets.
 
@@ -38,13 +38,13 @@ In the project editor, select each target in the sidebar and update its bundle I
 
 For watchOS targets, Xcode updates the underlying [`WKCompanionAppBundleIdentifier`](../BundleResources/information-property-list/wkcompanionappbundleidentifier.md) and [`WKAppBundleIdentifier`](../BundleResources/information-property-list/wkappbundleidentifier.md) information property list keys.
 
-#### Change keys that depend on the main bundle ID
+## Change keys that depend on the main bundle ID
 
 Update any other information property list and entitlement keys that contain the main bundle ID.
 
 For example, if you use App Clips, change the associated [`com.apple.developer.associated-appclip-app-identifiers`](../BundleResources/entitlements/com.apple.developer.associated-appclip-app-identifiers.md) and [`Parent Application Identifiers Entitlement`](../BundleResources/entitlements/com.apple.developer.parent-application-identifiers.md) keys. If you have an app extension, be sure to change the [`com.apple.developer.app-migration.data-container-access`](../BundleResources/entitlements/com.apple.developer.app-migration.data-container-access.md) key too.
 
-#### Update the bundle ID in App Store Connect
+## Update the bundle ID in App Store Connect
 
 > ❗ **Important**: If you previously uploaded a build to App Store Connect, you can’t change the bundle ID. Create a new app record with the bundle ID instead of updating the existing app record. For more information, see [Add a new app](https://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app).
 
@@ -61,7 +61,7 @@ Update any other settings in App Store Connect that use the bundle ID, such as i
 
 > **Note**: If you use any third-party services that depend on your app’s bundle ID, notify them to update your app’s bundle ID too.
 
-#### Update manual provisioning profiles
+## Update manual provisioning profiles
 
 If you use manual provisioning, update the App ID in those provisioning files to match the bundle ID in your project. For more information, see [Edit, download, or delete provisioning profiles](https://developer.apple.com/help/account/provisioning-profiles/edit-download-or-delete-profiles) in Developer Account Help. After you update your provisioning profile in your developer account, you can download it from Xcode > Settings > Apple Accounts, using the Download Manual Profiles button when you select your account.
 

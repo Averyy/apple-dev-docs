@@ -19,11 +19,11 @@
 static SPScaledPose3DFloat SPScaledPose3DFloatFlip(SPScaledPose3DFloat scaledPose, SPAxis flipAxis);
 ```
 
-#### Return Value
+## Return Value
 
 A new scaled pose flipped along the specified axis.
 
-#### Discussion
+## Discussion
 
 Returns a scaled pose that’s flipped along the specified axis.
 

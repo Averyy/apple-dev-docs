@@ -19,7 +19,7 @@ func sizeToFit()
 - (void) sizeToFit;
 ```
 
-#### Discussion
+## Discussion
 
 If the table column’s maximum width is less than the width of the header, the maximum is increased to the header’s width. Similarly, if the table column’s minimum width is greater than the width of the header, the minimum is reduced to the header’s width.
 

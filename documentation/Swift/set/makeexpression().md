@@ -23,11 +23,11 @@ func makeExpression() -> IntentValueExpression
 
 Available when `Element` conforms to `IntentValueConvertible` and `Hashable`.
 
-#### Return Value
+## Return Value
 
 An intent value expression representing this set.
 
-#### Discussion
+## Discussion
 
 The system evaluates the expression when needed, allowing for lazy conversion of the set’s elements.
 

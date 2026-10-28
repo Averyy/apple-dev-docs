@@ -16,7 +16,7 @@ Draws a frame around the inside of this rect in the current NSGraphicsContext in
 func frame(withWidth width: CGFloat = 1.0, using operation: NSCompositingOperation = NSGraphicsContext.current?.compositingOperation ?? .sourceOver)
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: There must be a set current NSGraphicsContext.
 

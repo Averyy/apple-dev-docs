@@ -25,7 +25,7 @@ func xpc_array_dup_fd(_ xarray: xpc_object_t, _ index: Int) -> Int32
 extern int xpc_array_dup_fd(xpc_object_t xarray, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 A new file descriptor created from the value at the specified index. You are responsible for closing this descriptor. `-1` if the value at the specified index is not a file descriptor value.
 

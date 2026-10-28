@@ -22,7 +22,7 @@ func transliterateChinese(forText text: String)
 - (void) transliterateChineseForText:(NSString *) text;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to invoke the system’s standard transliteration behavior, for example, when your browser text view receives [`transliterateChinese(_:)`](../berespondereditactions/transliteratechinese%28_%29.md).
 

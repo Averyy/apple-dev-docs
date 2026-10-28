@@ -22,7 +22,7 @@ var entersFullScreenWhenPlaybackBegins: Bool { get set }
 @property (nonatomic) BOOL entersFullScreenWhenPlaybackBegins;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

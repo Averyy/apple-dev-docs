@@ -29,7 +29,7 @@ func handle(intent: INPlayMediaIntent) async -> INPlayMediaIntentResponse
 - (void) handlePlayMedia:(INPlayMediaIntent *) intent completion:(void (^)(INPlayMediaIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Because the lifespan for an Intents app extension is short, the [`INPlayMediaIntent`](../inplaymediaintent.md) handler tells the main app to start the media playback. For audio content, respond with the [`INPlayMediaIntentResponseCode.handleInApp`](../inplaymediaintentresponsecode/handleinapp.md) response code. This code tells the system to launch the main app in the background and call [`application(_:handle:completionHandler:)`](../../UIKit/uiapplicationdelegate/application%28_,handle,completionhandler%29.md) on the [`UIApplicationDelegate`](../../UIKit/uiapplicationdelegate.md) object. Your app should begin the audio playback in this app delegate method.
 

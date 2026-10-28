@@ -15,7 +15,7 @@ The product ID for the device.
 final let productID: UInt32
 ```
 
-#### Discussion
+## Discussion
 
 The product ID combines with the [`vendorID`](./vendorid.md) to specify the exact product. Without knowing the vendor, the product ID is meaningless. Look for vendor specific documentation for more details on the assigned product IDs for a vendor’s products.
 

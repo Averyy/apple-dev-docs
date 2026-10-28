@@ -20,7 +20,7 @@ optional func browser(_ browser: NSBrowser, isLeafItem item: Any?) -> Bool
 - (BOOL) browser:(NSBrowser *) browser isLeafItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified item is a leaf item; otherwise, [`false`](../../Swift/false.md).
 

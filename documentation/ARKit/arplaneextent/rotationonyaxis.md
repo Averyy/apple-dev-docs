@@ -20,7 +20,7 @@ var rotationOnYAxis: Float { get }
 @property (nonatomic, readonly) float rotationOnYAxis;
 ```
 
-#### Discussion
+## Discussion
 
 As the session runs, the framework may update the plane’s y-rotation to better fit its rectangular area in the environment. In iOS 15 and earlier, the framework rotates the plane anchor according to that angle. In iOS 16, the framework doesn’t rotate the anchor automatically and its transform matrix remains unchanged. Instead, the framework exposes the angle in [`rotationOnYAxis`](./rotationonyaxis.md) that you apply to any plane extent geometry in your app.
 

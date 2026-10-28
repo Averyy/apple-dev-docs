@@ -21,7 +21,7 @@ Encodes the scalars of this vector into the given encoder in an unkeyed containe
 func encode(to encoder: any Encoder) throws
 ```
 
-#### Discussion
+## Discussion
 
 This function throws an error if any values are invalid for the given encoder’s format.
 

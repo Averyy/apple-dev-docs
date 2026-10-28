@@ -19,7 +19,7 @@ A scalar value that reflects a stastical calculation such as an average, minimum
 case statistic
 ```
 
-#### Discussion
+## Discussion
 
 The data for this type is a double value that reflects a summation, average, minimum, maximum, median, or standard deviation value. The type also contains the name of the statistical method.
 

@@ -21,7 +21,7 @@ class CLKComplicationTemplateModularLargeTable
 @interface CLKComplicationTemplateModularLargeTable : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.modularLarge`](./clkcomplicationfamily/modularlarge.md) family.
 

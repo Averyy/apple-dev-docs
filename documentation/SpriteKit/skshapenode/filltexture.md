@@ -29,7 +29,7 @@ var fillTexture: SKTexture? { get set }
 
 - [Controlling Shape Drawing with Shaders](../controlling-shape-drawing-with-shaders.md)
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. If a fill texture is specified, the shape node is rendered using that texture blended with the [`fillColor`](./fillcolor.md).
 

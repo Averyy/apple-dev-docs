@@ -25,11 +25,11 @@ func method_getName(_ m: Method) -> Selector
 extern SELmethod_getName(Method m);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer of type SEL.
 
-#### Discussion
+## Discussion
 
 To get the method name as a C string, call `sel_getName(method_getName(method))`.
 

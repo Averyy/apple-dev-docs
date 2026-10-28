@@ -21,7 +21,7 @@ The time ranges of each section in the song.
 let sections: [CMTimeRange]
 ```
 
-#### Discussion
+## Discussion
 
 A section contains one or more segments and represents a major structural component, such as a verse or chorus.
 

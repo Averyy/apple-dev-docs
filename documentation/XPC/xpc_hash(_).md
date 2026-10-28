@@ -25,11 +25,11 @@ func xpc_hash(_ object: xpc_object_t) -> Int
 extern size_t xpc_hash(xpc_object_t object);
 ```
 
-#### Return Value
+## Return Value
 
 The calculated hash value.
 
-#### Discussion
+## Discussion
 
 Note that the computed hash values for any particular type and value of an object can change from across releases and platforms and should not be assumed to be constant across all time and space or stored persistently.
 

@@ -21,7 +21,7 @@ Calculates the single-precision element-wise product of the sums of two pairs of
 static func multiply<S, T, U, V>(addition additionAB: (a: S, b: T), addition additionCD: (c: U, d: U), result: inout V) where S : AccelerateBuffer, T : AccelerateBuffer, U : AccelerateBuffer, V : AccelerateMutableBuffer, S.Element == Float, T.Element == Float, U.Element == Float, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the products of the first `N` elements of the addition of vectors `A` and `B` and the addition of vectors `C` and `D`, as follows:
 

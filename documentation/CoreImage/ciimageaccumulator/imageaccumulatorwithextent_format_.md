@@ -20,7 +20,7 @@ Creates an image accumulator with the specified extent and pixel format.
 + (instancetype) imageAccumulatorWithExtent:(CGRect) extent format:(CIFormat) format;
 ```
 
-#### Return Value
+## Return Value
 
 The image accumulator object.
 

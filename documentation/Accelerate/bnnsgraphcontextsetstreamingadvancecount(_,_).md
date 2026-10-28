@@ -25,7 +25,7 @@ func BNNSGraphContextSetStreamingAdvanceCount(_ context: bnns_graph_context_t, _
 int BNNSGraphContextSetStreamingAdvanceCount(const bnns_graph_context_t context, size_t advance_count);
 ```
 
-#### Discussion
+## Discussion
 
 BNNS can’t unambiguously determine the streaming advancement size for models you compile with the `BNNSOption` attribute `StateMode=Streaming` in an enabled state, where `slice_update` operations use an update parameter of dynamic shape. Call this function before calling [`BNNSGraphContextExecute(_:_:_:_:_:_:)`](./bnnsgraphcontextexecute%28_,_,_,_,_,_%29.md) to set the advancement size for each frame.
 

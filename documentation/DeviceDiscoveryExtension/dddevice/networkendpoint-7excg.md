@@ -19,7 +19,7 @@ An object that describes a local-network device.
 @property (nonatomic, strong, readwrite, nullable) nw_endpoint_t networkEndpoint;
 ```
 
-#### Discussion
+## Discussion
 
 For the discovery of local-network devices, the extension sets the value of this property to the [`endpoint`](../../Network/nwbrowser/result/endpoint.md) of an [`NWBrowser.Result`](../../Network/nwbrowser/result.md). When a search over the local network succeeds, the browser passes the newly discovered device into your extension’s [`browseResultsChangedHandler`](../../Network/nwbrowser/browseresultschangedhandler.md).
 

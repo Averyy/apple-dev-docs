@@ -16,7 +16,7 @@ An error that indicates an attempt to open a workflow document whose property li
 static var workflowPropertyListInvalidError: AMError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The property list document (`document.wflow`) could be missing, damaged, or constructed improperly.
 

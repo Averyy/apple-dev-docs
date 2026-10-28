@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 A function value with type `@isolated(any)` carries its actor isolation dynamically. Calling such a function from a context that does not share its isolation requires hopping to the function’s actor, which can only be done from an asynchronous context. As a result, an `@isolated(any)` function value cannot be converted to a synchronous, non-`@isolated(any)` function type.
 

@@ -21,11 +21,11 @@ Multiplies two tensors together using matrix multiplication.
 func matmul(_ other: MLTensor) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The result of the matrix multiplication.
 
-#### Discussion
+## Discussion
 
 The specific behaviour is determined by the dimensionality of the inputs, as described below:
 

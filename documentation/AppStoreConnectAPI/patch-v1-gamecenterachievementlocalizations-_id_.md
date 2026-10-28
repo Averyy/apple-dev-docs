@@ -11,9 +11,9 @@ Modify localized Game Center achievement information for a particular language.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Modify a Game Center Achievement Localization`](./patch-v2-gamecenterachievementlocalizations-_id_.md) instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

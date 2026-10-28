@@ -25,7 +25,7 @@ func performSegue(withIdentifier identifier: String, sender: Any?)
 - (void) performSegueWithIdentifier:(NSString *) identifier sender:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Normally, segues are initiated automatically and not using this method. However, you can use this method in cases where the segue could not be configured in your storyboard file. For example, you might call it from a custom action handler used in response to shake or accelerometer events.
 

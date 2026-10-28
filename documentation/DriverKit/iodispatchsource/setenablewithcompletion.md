@@ -18,11 +18,11 @@ Enables or disables the dispatch source.
 virtual kern_return_t SetEnableWithCompletion(bool enable, IODispatchSourceCancelHandler handler);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 
-#### Discussion
+## Discussion
 
 Subclasses must provide an implementation of this method.
 

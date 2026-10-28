@@ -18,11 +18,11 @@ static func filterIssues(_ isIncluded: @escaping @Sendable (Issue) -> Bool) -> S
 
 Available when `Self` is `IssueHandlingTrait`.
 
-#### Return Value
+## Return Value
 
 An instance of [`IssueHandlingTrait`](../issuehandlingtrait.md) that filters issues.
 
-#### Discussion
+## Discussion
 
 The `isIncluded` closure is called synchronously each time an issue is recorded by the test this trait is applied to. The closure is passed the recorded issue, and if it returns `true`, the issue will be preserved in the test results. Otherwise, if the closure returns `false`, the issue will not be included in the test results.
 

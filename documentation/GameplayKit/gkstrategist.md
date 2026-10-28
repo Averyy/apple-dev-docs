@@ -24,18 +24,18 @@ protocol GKStrategist : NSObjectProtocol
 @protocol GKStrategist <NSObject>
 ```
 
-#### Overview
+## Overview
 
 GameplayKit provides two strategist classes, and you can also use this protocol to implement your own. You provide information about your game model to a strategist by implementing the [`GKGameModel`](./gkgamemodel.md), [`GKGameModelPlayer`](./gkgamemodelplayer.md), and [`GKGameModelUpdate`](./gkgamemodelupdate.md) protocols in your custom classes, then use the strategist’s methods to find optimal moves.
 
-##### Choosing a Strategist
+### Choosing a Strategist
 
 GameplayKit provides two strategist classes:
 
 - The [`GKMinmaxStrategist`](./gkminmaxstrategist.md) class uses a numeric score for each possible game model state, and performs an exhaustive tree search to find moves that maximize the player’s score while minimizing opponent scores. This strategy can result in optimal gameplay, but requires a scoring method for game models and has a performance cost that increases greatly with game complexity.
 - The [`GKMonteCarloStrategist`](./gkmontecarlostrategist.md) class performs a randomized, probabilistic search for winning end states. This strategy doesn’t always choose the *best* possible move, but is likely to choose *good* moves, and has a low performance cost even for very complex games. In addition, the Monte Carlo strategy is concerned only with whether a game model state represents a win, so you don’t need to implement a scoring method.
 
-##### Using a Strategist
+### Using a Strategist
 
 Using a strategist in a game requires the following steps:
 

@@ -20,7 +20,7 @@ interface ImageDelegate
 - [MapKit JS 6](./mapkit-js-6.md)
 - [Migrating from Version 5 to Version 6](./migrating-from-version-5-to-version-6.md)
 
-#### Overview
+## Overview
 
 In addition to using a dictionary object that defines image URLs for [`ImageAnnotation`](./imageannotation.md) or [`MarkerAnnotation`](./markerannotation.md), you can specify an image delegate that allows you to return an image dynamically or asynchronously.
 

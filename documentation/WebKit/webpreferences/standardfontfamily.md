@@ -19,7 +19,7 @@ var standardFontFamily: String! { get set }
 @property (nonatomic, copy) NSString * standardFontFamily;
 ```
 
-#### Discussion
+## Discussion
 
 This preference affects text whose properties do not indicate that they should be displayed in a particular font or class of fonts (such as sans-serif).
 

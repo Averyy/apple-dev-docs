@@ -21,7 +21,7 @@ init(title: String?, sections: [CPListSection])
 - (instancetype) initWithTitle:(NSString *) title sections:(NSArray<CPListSection *> *) sections;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized list template.
 

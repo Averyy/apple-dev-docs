@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two hand anchors are equal.
 static func == (lhs: HandAnchor, rhs: HandAnchor) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two hand anchors are equal; otherwise, `false`.
 

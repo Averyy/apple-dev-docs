@@ -25,7 +25,7 @@ static var notPermitted: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 An attempt was made to perform an operation limited to processes with appropriate privileges or to the owner of a file or other resources.
 

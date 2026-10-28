@@ -20,7 +20,7 @@ let kLSItemDisplayKind: CFString!
 const CFStringRef kLSItemDisplayKind;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`LSCopyKindStringForURL(_:_:)`](./api-1447481-lscopykindstringforurl.md) or the URL resource property [`kCFURLLocalizedTypeDescriptionKey`](../CoreFoundation/kcfurllocalizedtypedescriptionkey.md)/[`localizedTypeDescriptionKey`](../Foundation/urlresourcekey/localizedtypedescriptionkey.md) instead.
 

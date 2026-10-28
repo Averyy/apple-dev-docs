@@ -5,7 +5,7 @@
 
 Review percentage of devices where your browser app is set as the default web browser.
 
-#### Overview
+## Overview
 
 This report details the percentage of devices that have your browser application set as the default web browser. This data is reported on a weekly basis per device.
 
@@ -20,7 +20,7 @@ This report details the percentage of devices that have your browser application
 
   - Includes data from users who have opted to share their data with Apple and developers.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |

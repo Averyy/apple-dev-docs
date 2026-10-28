@@ -24,7 +24,7 @@ func VTDecompressionSessionCreate(allocator: CFAllocator?, formatDescription vid
 extern OSStatus VTDecompressionSessionCreate(CFAllocatorRef allocator, CMVideoFormatDescriptionRef videoFormatDescription, CFDictionaryRef videoDecoderSpecification, CFDictionaryRef destinationImageBufferAttributes, const VTDecompressionOutputCallbackRecord *outputCallback, VTDecompressionSessionRef*decompressionSessionOut);
 ```
 
-#### Discussion
+## Discussion
 
 Decompressed frames are emitted through calls to `outputCallback`.
 

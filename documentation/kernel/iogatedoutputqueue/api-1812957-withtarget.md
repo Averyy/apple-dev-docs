@@ -16,7 +16,7 @@ static IOGatedOutputQueue * withTarget(
  UInt32priorities);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOGatedOutputQueue object on success, or 0 otherwise.
 

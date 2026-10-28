@@ -20,7 +20,7 @@ optional func browser(_ browser: NSBrowser, child index: Int, ofItem item: Any?)
 - (id) browser:(NSBrowser *) browser child:(NSInteger) index ofItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 The child at the specified index.
 

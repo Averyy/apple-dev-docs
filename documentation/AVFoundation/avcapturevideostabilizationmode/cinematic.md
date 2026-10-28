@@ -22,7 +22,7 @@ case cinematic
 AVCaptureVideoStabilizationModeCinematic
 ```
 
-#### Discussion
+## Discussion
 
 Cinematic video stabilization has a reduced field of view compared to standard video stabilization. Enabling cinematic video stabilization introduces considerably more latency into the video capture pipeline than standard video stabilization and consumes significantly more system memory.
 

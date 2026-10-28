@@ -15,7 +15,7 @@ Adds the specified data to the end of the memory buffer.
 virtual bool appendBytes(const void *bytes, vm_size_t withLength);
 ```
 
-#### Return Value
+## Return Value
 
 true if the bytes were appended successfully, or false if an error occurred.
 

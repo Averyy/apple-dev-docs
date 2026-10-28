@@ -25,7 +25,7 @@ case `default`
 MKDistanceFormatterUnitsDefault
 ```
 
-#### Discussion
+## Discussion
 
 Some locales mix metric and imperial units so don’t assume this means one or the other.
 

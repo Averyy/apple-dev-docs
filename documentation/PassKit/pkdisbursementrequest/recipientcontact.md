@@ -23,7 +23,7 @@ var recipientContact: PKContact? { get set }
 @property (nonatomic, strong, nullable) PKContact * recipientContact;
 ```
 
-#### Discussion
+## Discussion
 
 If the merchant already has recipient contact information on file, set it here. Merchants should also include the corresponding contact fields in their [`requiredRecipientContactFields`](./requiredrecipientcontactfields.md) to ensure the data is visible on the payment sheet. Doing so enables people to select alternative contact information on the payment sheet, which merchants need to anticipate when they receive the final Apple Pay payment data.
 

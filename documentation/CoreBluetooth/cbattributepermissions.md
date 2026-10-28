@@ -25,7 +25,7 @@ struct CBAttributePermissions
 enum CBAttributePermissions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 When you initialize a new mutable characteristic, you set the read, write, and encryption permissions for the characteristic’s value. Setting the read and write *permissions* for a characteristic’s value is different from specifying the read and write *properties* for a characteristic’s value. When you specify the read and write properties, the client (a central) inspects the read and write permissions of the characteristic’s value. When you specify the read and write permissions for a characteristic’s value, you set the permissions for the server (the peripheral) to allow the type of read or write specified by the characteristic’s properties. Therefore, when you initialize a mutable characteristic, you need to specify read or write properties and their corresponding permissions.
 

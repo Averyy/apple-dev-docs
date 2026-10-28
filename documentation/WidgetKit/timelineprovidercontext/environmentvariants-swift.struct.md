@@ -21,7 +21,7 @@ A structure containing all varieties of environments where a widget could appear
 struct EnvironmentVariants
 ```
 
-#### Overview
+## Overview
 
 When changes occur in environment values that affect display, like [`colorScheme`](../../SwiftUI/environmentvalues/colorscheme.md), WidgetKit renders your widget’s views. If your widget uses assets that take time to generate or depend on the specific environment they’re rendered in, you can generate those assets in advance based on the new environment values.
 

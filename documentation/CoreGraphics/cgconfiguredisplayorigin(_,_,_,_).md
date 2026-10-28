@@ -20,11 +20,11 @@ func CGConfigureDisplayOrigin(_ config: CGDisplayConfigRef?, _ display: CGDirect
 extern CGError CGConfigureDisplayOrigin(CGDisplayConfigRef config, CGDirectDisplayID display, int32_t x, int32_t y);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. If the request to configure the origin of the display is successful, the result is `kCGErrorSuccess`. For other possible values, see [`CGError`](./cgerror.md).
 
-#### Discussion
+## Discussion
 
 In Quartz, the upper-left corner of a display is the origin. You specify the origin of a display in the global display coordinate space. The origin of the main or primary display is `(0,0)`.
 

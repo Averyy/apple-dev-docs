@@ -19,7 +19,7 @@ var verticalMotionCanBeginDrag: Bool { get set }
 @property BOOL verticalMotionCanBeginDrag;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md), which indicates that a vertical drag motion begins a drag. In this case a vertical drag will drag-select rows. Most often, you would want to disable vertical dragging when it’s expected that horizontal dragging is the natural motion.
 

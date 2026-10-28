@@ -18,11 +18,11 @@ Returns all registered remote sessions.
 static func sessions() async throws -> [RemoteMediaSession<Attributes>]
 ```
 
-#### Return Value
+## Return Value
 
 An array of all remote sessions currently registered with the system.
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`RemoteMediaSessionError.internalFailure`](../remotemediasessionerror/internalfailure.md) if the system couldn’t enumerate registered sessions.
 

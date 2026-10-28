@@ -24,7 +24,7 @@ init(title: String?, url URL: URL)
 - (instancetype) initWithTitle:(NSString *) title URL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 A URL descriptor with the specified title and URL.
 

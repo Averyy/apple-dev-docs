@@ -23,7 +23,7 @@ var urlContexts: Set<UIOpenURLContext> { get }
 @property (nonatomic, copy, readonly) NSSet<UIOpenURLContext *> * URLContexts;
 ```
 
-#### Discussion
+## Discussion
 
 An empty set indicates that there are no URLs to open.
 

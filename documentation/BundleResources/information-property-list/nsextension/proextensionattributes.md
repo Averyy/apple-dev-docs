@@ -14,7 +14,7 @@ A dictionary that specifies the minimum size of the floating window in which Fin
 - **Name**: `ProExtensionAttributes`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 See [Designing Workflow Extensions](../../../Professional-Video-Applications/designing-workflow-extensions.md).
 

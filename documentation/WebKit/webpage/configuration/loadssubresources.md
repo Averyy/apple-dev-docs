@@ -20,7 +20,7 @@ Indicates whether the webpage loads all of its subresources in addition to the m
 var loadsSubresources: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `true`.
 

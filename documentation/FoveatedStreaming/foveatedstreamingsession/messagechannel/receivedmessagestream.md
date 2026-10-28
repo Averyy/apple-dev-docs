@@ -15,7 +15,7 @@ An async stream that yields data objects each time the channel receives a messag
 final let receivedMessageStream: AsyncStream<Data>
 ```
 
-#### Discussion
+## Discussion
 
 The async stream ends when the message channel closes.
 

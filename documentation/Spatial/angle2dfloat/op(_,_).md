@@ -21,7 +21,7 @@ Returns `true` if `lhs.radians` is less than `rhs.radians`.
 static func < (lhs: Angle2DFloat, rhs: Angle2DFloat) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Note that this operator compares the raw value of each angle and doesn’t normalize the values. For example, 360° does **not** 0°.
 

@@ -21,11 +21,11 @@ func getInfoForFile(_ fullPath: String, application appName: AutoreleasingUnsafe
 - (BOOL) getInfoForFile:(NSString *) fullPath application:(NSString **) appName type:(NSString **) type;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if this method successfully retrieved the information, or [`false`](../../Swift/false.md) if it couldn’t find the file or the app isn’t associated with the file.
 
-#### Discussion
+## Discussion
 
 You can safely call this method from any thread of your app.
 

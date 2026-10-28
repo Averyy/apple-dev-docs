@@ -24,7 +24,7 @@ static var landscapeLeft: PreviewTrait<Preview.ViewTraits> { get }
 
 Available when `T` is `Preview.ViewTraits`.
 
-#### Discussion
+## Discussion
 
 This is the same as [`landscapeLeft`](../../SwiftUI/interfaceorientation/landscapeleft.md).
 

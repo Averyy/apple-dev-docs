@@ -21,7 +21,7 @@ An event that occurs during a sync operation.
 @interface CKSyncEngineEvent : NSObject
 ```
 
-#### Overview
+## Overview
 
 All sync operation events descend from this base class, and as such you don’t create instances of it directly. Instead, the sync engine dispatches them to your app’s delegate, periodically, throughout a sync operation.
 

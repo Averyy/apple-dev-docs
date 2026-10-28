@@ -5,11 +5,11 @@
 
 Learn about important changes to Network.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Network](../Network/Network.md).
 
-#### June 2024
+## June 2024
 
 - Add the [`NSLocalNetworkUsageDescription`](../BundleResources/information-property-list/nslocalnetworkusagedescription.md) key to your app’s information property list to get permission to connect to services on the local network, including Bonjour services. For the key’s value, provide a string that explains why your app uses local network services.
 

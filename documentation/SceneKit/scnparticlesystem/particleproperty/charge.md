@@ -25,7 +25,7 @@ static let charge: SCNParticleSystem.ParticleProperty
 extern SCNParticleProperty const SCNParticlePropertyCharge;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is a floating-point scalar (an [`NSNumber`](../../../Foundation/nsnumber.md) object for particle property controllers, or a single `float` value for particle event or modifier blocks). A particle’s charge determines its behavior when affected by an electric or magnetic field created with the [`SCNPhysicsField`](../../scnphysicsfield.md) class.
 

@@ -19,7 +19,7 @@ convenience init?(identifier: String)
 + (instancetype) deviceTypeWithIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer returns nil if the system doesn’t know the device type for \a identifier.
 

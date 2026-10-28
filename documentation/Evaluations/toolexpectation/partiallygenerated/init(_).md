@@ -22,7 +22,7 @@ nonisolated
 init(_ content: GeneratedContent) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the content is malformed or missing required properties.
 

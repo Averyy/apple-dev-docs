@@ -23,7 +23,7 @@ var isOutputResolutionMotionVectorsEnabled: Bool { get set }
 @property (nonatomic, readwrite, getter=isOutputResolutionMotionVectorsEnabled) BOOL outputResolutionMotionVectorsEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) when your app provides motion vectors at the output resolution rather than the input resolution.
 

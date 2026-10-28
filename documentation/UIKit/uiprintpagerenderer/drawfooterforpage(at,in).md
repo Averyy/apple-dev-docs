@@ -22,7 +22,7 @@ func drawFooterForPage(at pageIndex: Int, in footerRect: CGRect)
 - (void) drawFooterForPageAtIndex:(NSInteger) pageIndex inRect:(CGRect) footerRect;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. The system doesn’t call this method if [`footerHeight`](./footerheight.md) isn’t a positive value. Override this method to draw the footer of the specified page.
 

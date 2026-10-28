@@ -24,7 +24,7 @@ var projectionMatrix: matrix_float4x4 { get }
 @property (nonatomic, readonly) matrix_float4x4 projectionMatrix;
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O  automatically derives this property from the [`nearVisibilityDistance`](./nearvisibilitydistance.md), [`farVisibilityDistance`](./farvisibilitydistance.md), and [`fieldOfView`](./fieldofview.md) properties. A renderer uses this matrix, along with view and model matrices derived from the camera’s position and orientation (its inherited [`transform`](../mdlobject/transform.md) property) and the content to be rendered, to transform vertex data to the renderer’s 2D screen space at render time.
 

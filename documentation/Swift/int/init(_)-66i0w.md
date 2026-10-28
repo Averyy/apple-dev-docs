@@ -15,7 +15,7 @@ Creates an integer from the given floating-point value, rounding toward zero.
 init(_ source: Float80)
 ```
 
-#### Discussion
+## Discussion
 
 Any fractional part of the value passed as `source` is removed, rounding the value toward zero.
 

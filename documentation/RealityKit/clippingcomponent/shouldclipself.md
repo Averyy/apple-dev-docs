@@ -20,7 +20,7 @@ Controls whether the entity itself is clipped by this component’s bounds.
 var shouldClipSelf: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When `true`, the entity’s own geometry is clipped by the bounding volume. When `false`, only child entities are affected (if `shouldClipChildren` is `true`).
 

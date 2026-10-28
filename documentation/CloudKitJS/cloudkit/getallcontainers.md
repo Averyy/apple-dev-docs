@@ -15,7 +15,7 @@ Returns all the containers that were configured.
 CloudKit.Container[] getAllContainers();
 ```
 
-#### Return Value
+## Return Value
 
 All the configured containers.
 

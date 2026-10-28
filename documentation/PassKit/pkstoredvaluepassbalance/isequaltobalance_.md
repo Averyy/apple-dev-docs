@@ -20,7 +20,7 @@ Returns a Boolean value that indicates whether two pass balance objects contain 
 - (BOOL) isEqualToBalance:(PKStoredValuePassBalance *) balance;
 ```
 
-#### Return Value
+## Return Value
 
 True when the two balance objects contain the same settings, false otherwise.
 

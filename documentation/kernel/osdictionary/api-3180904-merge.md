@@ -24,11 +24,11 @@ bool merge(const OSDictionary *otherDictionary);
 virtual bool merge(const OSDictionary *aDictionary);
 ```
 
-#### Return Value
+## Return Value
 
 true on success, which retains all the added objects, or false on failure which does not retain the objects.
 
-#### Discussion
+## Discussion
 
 Adds all members of a dictionary to this dictionary. Any keys in the dictionary that exist will be replaced. The dictionary capacity will be grown if necessary.
 

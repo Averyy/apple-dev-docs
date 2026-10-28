@@ -15,7 +15,7 @@ A structure that defines the descriptor for a Super Speed USB hub.
 struct IOUSBSuperSpeedHubDescriptor;
 ```
 
-#### Overview
+## Overview
 
 For more information about this descriptor type, see section 10.13.2.1 of the USB 3.0 specification at [http://www.usb.org](http://www.usb.org).
 

@@ -5,17 +5,17 @@
 
 Customize the default Xcode Settings for connecting to Git repositories, applying code changes, and more options for configuring source control.
 
-#### Overview
+## Overview
 
 Xcode lets you customize many default options for working with source control repositories. To modify the default source control settings, choose Xcode > Settings and click Source Control in the sidebar.
 
-##### Enable source control actions
+### Enable source control actions
 
 In the Source Control settings, select the “Enable source control” option to enable the actions in the Integrate menu and the Source Control navigator. Enabling source control also enables the “Git settings” option under Settings, which you use to configure Git integration options.
 
 ![The Xcode Settings dialog showing the Source Control settings. The Enable Source Control option and each of its suboptions are selected. The Show Source Control changes option is also selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/configuring-source-control-in-xcode-1@2x.png)
 
-##### Choose automatic source control behavior
+### Choose automatic source control behavior
 
 After you enable source control, you can select additional options to specify which source control tasks you want Xcode to perform for you automatically.
 
@@ -23,22 +23,22 @@ After you enable source control, you can select additional options to specify wh
 - Fetch and refresh server status automatically: When using remote repositories, Xcode periodically refreshes the status of files that update on the server. (To manually refresh the status, choose Integrate > Fetch Changes and Refresh File Status.)
 - Add and remove files automatically: Xcode automatically updates working copies when adding or removing files in your projects.
 
-##### Show code changes in the source editor
+### Show code changes in the source editor
 
 The text editing settings affect whether Xcode indicates code changes in the source editor.
 
 - Show source control changes: Xcode shows the change bar, next to the lines that changed, in the gutter of the source editor.
 - Include upstream changes: Xcode shows the changes committed by others (that may conflict with your edits) in the source editor gutter.
 
-##### Customize the comparison view layout
+### Customize the comparison view layout
 
 The comparison view setting specifies where the local version of the code appears in the version editor. To show the local version on the left, choose “Local Revision on Left Side” from the pop-up menu; otherwise, choose “Local Revision on Right Side.”
 
-##### Choose sorting options for the Source Control navigator
+### Choose sorting options for the Source Control navigator
 
 The Source Control navigator setting specifies how Xcode sorts the files in the Source Control navigator. To sort by name, choose Sort by Name from the pop-up menu; otherwise, choose Sort by Date.
 
-##### Customize Git settings
+### Customize Git settings
 
 To configure default settings for Git repositories that you manage through Xcode, click “Git settings.”
 

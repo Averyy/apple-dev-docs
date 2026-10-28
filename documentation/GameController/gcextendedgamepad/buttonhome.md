@@ -24,7 +24,7 @@ var buttonHome: GCControllerButtonInput? { get }
 @property (nonatomic, readonly, nullable) GCControllerButtonInput * buttonHome;
 ```
 
-#### Discussion
+## Discussion
 
 If the system doesn’t process the main menu events, it passes the events to your app.
 

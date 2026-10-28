@@ -17,7 +17,7 @@ A model that can split its own prepared input at a token boundary, keeping only 
 protocol PreparedInputSplitting
 ```
 
-#### Overview
+## Overview
 
 Conform only if the media encoder computes each item’s features independently of the others; otherwise dropping cached items changes the features of the items that remain. `Qwen25VL` masks each frame to itself and conforms; `Qwen2VL` attends across the whole buffer and does not.
 

@@ -5,7 +5,7 @@
 
 Review crashes for your App Store apps based on app version and device type.
 
-#### Overview
+## Overview
 
 Use this report to understand crashes for your App Store apps by app version and device type.
 
@@ -24,7 +24,7 @@ Use this report to understand crashes for your App Store apps by app version and
 
 The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |

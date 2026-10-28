@@ -22,7 +22,7 @@ func setPreferredInputOrientation(_ orientation: AVAudioSession.StereoOrientatio
 - (BOOL) setPreferredInputOrientation:(AVAudioStereoOrientation) orientation error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Configure the input orientation to match how the user is holding the device when they begin recording. In a single-window app, set the input orientation to a value corresponding to the app’s user interface orientation.
 

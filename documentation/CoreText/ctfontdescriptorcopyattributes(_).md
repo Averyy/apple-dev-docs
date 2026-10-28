@@ -25,7 +25,7 @@ func CTFontDescriptorCopyAttributes(_ descriptor: CTFontDescriptor) -> CFDiction
 extern CFDictionaryRefCTFontDescriptorCopyAttributes(CTFontDescriptorRef descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The font descriptor attributes dictionary. This dictionary contains the minimum number of attributes to specify fully this particular font descriptor.
 

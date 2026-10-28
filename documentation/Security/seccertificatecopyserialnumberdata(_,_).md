@@ -25,11 +25,11 @@ func SecCertificateCopySerialNumberData(_ certificate: SecCertificate, _ error: 
 CFDataRefSecCertificateCopySerialNumberData(SecCertificateRef certificate, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The content of a DER-encoded integer (without the tag and length fields) for this certificate’s serial number.
 
-#### Discussion
+## Discussion
 
 In Objective-C, if the function returns an error free it with a call to [`CFRelease`](../CoreFoundation/cfrelease.md) when you are done with it. If it returns data, you must free that as well.
 

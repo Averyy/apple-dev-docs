@@ -25,11 +25,11 @@ func vImageVerticalReflect_ARGB8888(_ src: UnsafePointer<vImage_Buffer>, _ dest:
 vImage_Error vImageVerticalReflect_ARGB8888(const vImage_Buffer *src, const vImage_Buffer *dest, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function doesn’t scale or resample; instead, it copies unchanged individual pixels to new locations. The source and destination buffers need to have the same height and the same width.
 

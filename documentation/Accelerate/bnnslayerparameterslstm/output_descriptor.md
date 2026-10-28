@@ -27,7 +27,7 @@ var output_descriptor: BNNSLSTMDataDescriptor
 BNNSLSTMDataDescriptor output_descriptor;
 ```
 
-#### Discussion
+## Discussion
 
 You must define the layout of this descriptor as one of either:
 

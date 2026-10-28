@@ -19,7 +19,7 @@ var tolerance: TimeInterval { get set }
 @property NSTimeInterval tolerance;
 ```
 
-#### Discussion
+## Discussion
 
 A nominal fire date for scheduled background activity is calculated based on a combination of the [`interval`](./interval.md) property value and the time the activity began or the last execution date. The [`tolerance`](./tolerance.md) property specifies a grace period—a range of time before and after the nominal fire date, during which the activity may be invoked. As the activity nears the end of its grace period, the system schedules the activity more aggressively. The default tolerance period is half the value of the [`interval`](./interval.md) property. See [Configure Scheduler Properties](../nsbackgroundactivityscheduler.md#Configure-Scheduler-Properties).
 

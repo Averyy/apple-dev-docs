@@ -17,7 +17,7 @@ The amount of time between events specified using `DateCoponents`.
 var interval: DateComponents
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: `DateComponents` are chose over `TimeInterval` to account for edge edge cases like daylight savings time and leap years.
 

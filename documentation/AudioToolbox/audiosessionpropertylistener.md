@@ -25,11 +25,11 @@ typealias AudioSessionPropertyListener = (UnsafeMutableRawPointer?, AudioSession
 typedef void (*)(void *, unsigned int, unsigned int, const void *) AudioSessionPropertyListener;
 ```
 
-#### Discussion
+## Discussion
 
 If you named your function `MyPropertyListener`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 You can register one or more property listener callbacks with your application’s audio session object by calling the [`AudioSessionAddPropertyListener(_:_:_:)`](./audiosessionaddpropertylistener%28_,_,_%29.md) function.
 

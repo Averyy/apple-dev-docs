@@ -22,7 +22,7 @@ nonisolated
 func chartBackground<V>(alignment: Alignment = .center, @ViewBuilder content: @escaping (ChartProxy) -> V) -> some View where V : View
 ```
 
-#### Discussion
+## Discussion
 
 You can use this modifier to define a background view as a function of the chart in the view. You can access the chart with the `ChartProxy` object passed into the closure.
 

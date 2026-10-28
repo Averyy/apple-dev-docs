@@ -19,7 +19,7 @@ enum DynamicRange
 enum NSImageDynamicRange : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use this type to enable or constrain the display of High Dynamic Range (HDR) in an [`NSImageView`](../nsimageview.md). Displaying HDR content in an [`NSImageView`](../nsimageview.md) requires that the [`NSImage`](../nsimage.md) has HDR content in the ITU-R 2100 color space and that the output device has Extended Dynamic Range (EDR) capabilities.
 

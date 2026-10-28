@@ -21,7 +21,7 @@ func QLThumbnailGetMaximumSize(_ thumbnail: QLThumbnail!) -> CGSize
 extern CGSize QLThumbnailGetMaximumSize(QLThumbnailRef thumbnail);
 ```
 
-#### Return Value
+## Return Value
 
 The maximum allowed size, in points, for the thumbnail image.
 

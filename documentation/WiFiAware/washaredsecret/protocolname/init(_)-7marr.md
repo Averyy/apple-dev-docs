@@ -17,11 +17,11 @@ Creates a custom protocol name using the provided unique string.
 init?(_ string: String)
 ```
 
-#### Return Value
+## Return Value
 
 A new [`WASharedSecret.ProtocolName`](../protocolname.md), or `nil` if the provided string is too short.
 
-#### Discussion
+## Discussion
 
 Custom protocols need to specify a string that identifies the protocol that uses the shared secret. The string must be representable as UTF-8, and normalize to the same value when represented as bytes. A best practice is to use ASCII-compatible values to avoid normalization issues. Set the same value on the local and remote devices in order to generate the same shared secret.
 

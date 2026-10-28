@@ -25,7 +25,7 @@ var btol: Double
 double btol;
 ```
 
-#### Discussion
+## Discussion
 
 This value holds an estimate of the relative error in the data defining the right-hand-side, *b*. For example, if *b* is accurate to about six digits, set [`btol`](./btol.md) `= 1.0e-6`.
 

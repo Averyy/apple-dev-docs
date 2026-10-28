@@ -21,7 +21,7 @@ Returns a view presenting the elements of the collection in reverse order.
 func reversed() -> ReversedCollection<Self>
 ```
 
-#### Discussion
+## Discussion
 
 You can reverse a collection without allocating new space for its elements by calling this `reversed()` method. A `ReversedCollection` instance wraps an underlying collection and provides access to its elements in reverse order. This example prints the characters of a string in reverse order:
 

@@ -24,7 +24,7 @@ func UIGraphicsBeginPDFPageWithInfo(_ bounds: CGRect, _ pageInfo: [AnyHashable :
 extern void UIGraphicsBeginPDFPageWithInfo(CGRect bounds, NSDictionary *pageInfo);
 ```
 
-#### Discussion
+## Discussion
 
 This function ends any previous page before beginning a new one. It sets the media box of the new page to the value in the [`kCGPDFContextMediaBox`](../CoreGraphics/kcgpdfcontextmediabox.md) key of the `pageInfo` dictionary, or to the value in the `bounds` parameter if the dictionary does not contain the key.
 

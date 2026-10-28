@@ -21,7 +21,7 @@ Returns a 32-bit or 64-bit word of this value’s binary representation.
 subscript(wordIndex: Int) -> UInt { get }
 ```
 
-#### Overview
+## Overview
 
 The words are ordered from least significant to most significant, with an infinite sign extension. Negative values are in two’s complement.
 

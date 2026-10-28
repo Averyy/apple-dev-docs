@@ -22,11 +22,11 @@ class var ignoresAlpha: Bool { get set }
 @property (class) BOOL ignoresAlpha;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the app doesn’t support alpha; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The system consults this global value when the app imports alpha (for instance, through color dragging). By default this property is [`false`](../../Swift/false.md); meaning the system supports the alpha component for colors globally. To ignore alpha for an app, invoke the `setIgnoresAlpha` method with a parameter of [`true`](../../Swift/true.md). This value also determines whether the color panel has an opacity slider.
 

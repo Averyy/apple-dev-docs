@@ -20,7 +20,7 @@ struct Identifier
 typedef uint64_t cp_tracking_area_identifier;
 ```
 
-#### Overview
+## Overview
 
 All tracking areas should have a unique value in a frame. This value should be constant for the same rendered mesh/object across frames to ensure tracking areas are identifiable between frames. There is no reserved values so all values are considered valid but should be unique.
 

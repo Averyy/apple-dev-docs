@@ -5,13 +5,13 @@
 
 Find and address performance bottlenecks using the Metal debugger.
 
-#### Overview
+## Overview
 
 Apple GPUs run vertex, fragment, and compute tasks in parallel whenever possible. The Metal debugger offers ways to inspect the passes running with overlap, which you can use to find bottlenecking tasks in GPU-bound workloads. In addition, the profiler measures performance statistics by sampling your shaders to reveal hot spots.
 
 If you notice any performance issues while running your app, you can use the Metal debugger to find and investigate bottlenecks. First, configure your build to include shader source code (see [Building your project with embedded shader sources](./building-your-project-with-embedded-shader-sources.md)). Then, take a frame capture of your app when you notice the visual artifact that you want to debug (see [Capturing a Metal workload in Xcode](./capturing-a-metal-workload-in-xcode.md)).
 
-##### Gather performance data
+### Gather performance data
 
 When you enable the Profile after Replay option, the Metal debugger automatically begins gathering performance data after replaying the workload. Alternatively, you can click the Profile button on the Summary viewer to gather performance data.
 
@@ -27,7 +27,7 @@ For more information on GPU performance state, see [Discover Metal debugging, pr
 
 You can switch between different GPU Execution Modes, including Concurrent and Serial, by clicking the GPU Profiler button in the debug bar. By default, the Metal debugger profiles the workload in Concurrent mode. This allows the GPU to overlap the vertex, fragment, and compute tasks so they can finish as quickly as possible. In Serial mode, the Metal debugger forces each pass to run only after the previous pass finishes, which adds precision to the data report for each pass without overlap, but it doesn’t represent runtime performance.
 
-##### Find performance bottlenecks with the Performance timeline
+### Find performance bottlenecks with the Performance timeline
 
 The Performance timeline in the Metal debugger can help you find expensive tasks and performance bottlenecks in the captured workload. Open the Performance timeline by clicking the Performance button in the Debug navigator.
 
@@ -39,7 +39,7 @@ The top section has the Vertex, Fragment, and Compute GPU tracks, which display 
 
 The bottom section has a separate Counters timeline, which includes GPU counters such as Occupancy, Limiter, and Bandwidth. The counters can help you diagnose performance bottlenecks. You can focus on counter subsets by switching between different counter tabs. For more information, see [Analyzing Apple GPU performance using a visual timeline](./analyzing-apple-gpu-performance-using-a-visual-timeline.md).
 
-##### Get detailed performance metrics for passes and draws
+### Get detailed performance metrics for passes and draws
 
 You can view performance counter statistics from your app’s passes or commands in the GPU trace. Open the Performance counters by clicking the Counters tab above the Performance timeline.
 
@@ -47,7 +47,7 @@ You can view performance counter statistics from your app’s passes or commands
 
 The Metal debugger derives the shader profiler time by tracing the shader instructions when running the workload with overlap. In a shader-bound workload, sorting the table by shader profiler time can point you to the overall most expensive pass or draw. In addition, the Metal debugger measures the detailed counters from each pass or command in isolation. You can also choose different sets of counters in the top bar for a more focused view. For more information, see [Analyzing Apple GPU performance using counter statistics](./analyzing-apple-gpu-performance-using-counter-statistics.md).
 
-##### Group commands by pipeline states in the Debug navigator
+### Group commands by pipeline states in the Debug navigator
 
 For a different perspective in viewing the Metal commands, click the Outline popup menu in the Debug navigator and select Group by Pipeline State to view a list of pipeline states.
 
@@ -59,7 +59,7 @@ You can also quickly view the shader source code and per-line profiling statisti
 
 For more information on the Debug navigator, see [Analyzing your Metal workload](./analyzing-your-metal-workload.md).
 
-##### Optimize shaders with per-line shader profiling statistics
+### Optimize shaders with per-line shader profiling statistics
 
 After opening a shader, you can find the time breakdown for the shader in the pipeline state.
 
@@ -77,7 +77,7 @@ After making changes to the shader source code, click the Reload Shaders button 
 
 For more information on interpreting the per-line shader profiling statistics, see [Inspecting shaders](./inspecting-shaders.md).
 
-##### Inspect shader performance with the shader cost graph
+### Inspect shader performance with the shader cost graph
 
 > ❗ **Important**: The shader cost graph feature is available for iOS devices with A17 Pro or later, and Mac computers with M3 or later.
 
@@ -89,7 +89,7 @@ You can inspect the percentage cost of the shader function calls with the flame 
 
 For more information, see [Analyzing Apple GPU performance using the shader cost graph](./analyzing-apple-gpu-performance-using-shader-cost-graph-a17-m3.md).
 
-##### Understand SIMD group execution with the performance heat maps
+### Understand SIMD group execution with the performance heat maps
 
 > ❗ **Important**: The performance heat maps feature is available for iOS devices with A17 Pro or later, and Mac computers with M3 or later.
 
@@ -103,7 +103,7 @@ The bottom section shows the shader execution history of GPU threads on a timeli
 
 For more information, see [Analyzing Apple GPU performance with performance heat maps](./analyzing-apple-gpu-performance-using-performance-heatmaps-a17-m3.md).
 
-##### Save the performance data to your development system
+### Save the performance data to your development system
 
 You can save your app’s Metal workload performance data as a GPU trace for later analysis by choosing File > Export, and selecting the Embed performance data checkbox in the dialog. This allows you to view just the performance data instead of replaying the GPU trace on a device.
 

@@ -17,11 +17,11 @@ Unary element-wise bitwise invert.
 func bitwiseInvert(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Apply bitwise inversion to the values in the array.
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 

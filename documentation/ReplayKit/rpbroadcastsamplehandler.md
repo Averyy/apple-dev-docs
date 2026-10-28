@@ -26,7 +26,7 @@ class RPBroadcastSampleHandler
 @interface RPBroadcastSampleHandler : RPBroadcastHandler
 ```
 
-#### Overview
+## Overview
 
 To handle [`CMSampleBuffer`](../CoreMedia/cmsamplebuffer.md) objects as captured by ReplayKit, you subclass `RPBroadcastSampleHandler`. You enable this mode of handling by setting `RPBroadcastProcessMode` in the extension’s `Info.plist` file to `RPBroadcastProcessModeSampleBuffer`.
 

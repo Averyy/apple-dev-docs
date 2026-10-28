@@ -9,7 +9,7 @@ Get a list of achievements for a specific Game Center detail.
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 - id:
 - fields[gameCenterAchievementVersions]:

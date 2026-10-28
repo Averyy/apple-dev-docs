@@ -20,7 +20,7 @@ Creates a color object using the specified Quartz color reference.
 + (UIColor *) colorWithCGColor:(CGColorRef) cgColor;
 ```
 
-#### Return Value
+## Return Value
 
 The color object. The color information represented by this object is in the native colorspace of the specified Quartz color.
 

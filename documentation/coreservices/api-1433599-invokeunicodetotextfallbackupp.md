@@ -15,7 +15,7 @@ Calls your Unicode-to-text fallback callback.
 OSStatus InvokeUnicodeToTextFallbackUPP(UniChar *iSrcUniStr, ByteCount iSrcUniStrLen, ByteCount *oSrcConvLen, TextPtr oDestStr, ByteCount iDestStrLen, ByteCount *oDestConvLen, LogicalAddress iInfoPtr, ConstUnicodeMappingPtr iUnicodeMappingPtr, UnicodeToTextFallbackUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 You should not need to use the function `InvokeUnicodeToTextFallbackUPP`,as the system calls your Unicode-to-text fallback callback for you.See the callback [`UnicodeToTextFallbackProcPtr`](./unicodetotextfallbackprocptr.md) formore information.
 

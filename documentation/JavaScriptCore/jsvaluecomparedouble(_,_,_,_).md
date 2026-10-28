@@ -22,11 +22,11 @@ func JSValueCompareDouble(_ ctx: JSContextRef, _ left: JSValueRef, _ right: Doub
 JSRelationCondition JSValueCompareDouble(JSContextRef ctx, JSValueRef left, double right, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 A value of JSRelationCondition, a kJSRelationConditionUndefined is returned if an exception is thrown.
 
-#### Discussion
+## Discussion
 
 Compares a JSValue with a double.
 

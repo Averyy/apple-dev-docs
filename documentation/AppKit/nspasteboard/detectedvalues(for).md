@@ -15,11 +15,11 @@ Determines whether the first pasteboard item matches the specified patterns, rea
 func detectedValues(for keyPaths: Set<PartialKeyPath<NSPasteboard.DetectedValues>>) async throws -> NSPasteboard.DetectedValues
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSPasteboard.DetectedValues`](./detectedvalues.md) instance containing the values for the patterns found on the pasteboard.
 
-#### Discussion
+## Discussion
 
 For details about the types returned for each pattern, see [`NSPasteboard.DetectedValues`](./detectedvalues.md).
 

@@ -23,7 +23,7 @@ func separableConvolve(horizontalKernel: [Float], verticalKernel: [Float], bias:
 
 Available when `Format` conforms to `MultiplePlanePixelFormat` and `Format.ComponentType` is `UInt8`.
 
-#### Discussion
+## Discussion
 
 The following code shows how to generate a multiplane pixel buffer from a [`CGImage`](../../../CoreGraphics/cgimage.md) instance and apply a Gaussian blur using separable convolution:
 

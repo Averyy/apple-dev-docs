@@ -21,7 +21,7 @@ Returns a shading instance that fills with a mesh gradient.
 static func meshGradient(_ mesh: MeshGradient) -> GraphicsContext.Shading
 ```
 
-#### Return Value
+## Return Value
 
 A shading that fills using the mesh gradient.
 

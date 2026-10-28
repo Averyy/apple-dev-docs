@@ -19,7 +19,7 @@ var selectionIndexPath: IndexPath? { get set }
 @property (copy, nullable) NSIndexPath * selectionIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `nil`, there is no selection.
 

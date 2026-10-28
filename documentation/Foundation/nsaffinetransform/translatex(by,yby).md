@@ -20,7 +20,7 @@ func translateX(by deltaX: Double, yBy deltaY: Double)
 - (void) translateXBy:(CGFloat) deltaX yBy:(CGFloat) deltaY;
 ```
 
-#### Discussion
+## Discussion
 
 Subsequent transformations cause coordinates to be shifted by `deltaX` units along the x axis and by `deltaY` units along the y axis. Translation factors do not affect `NSSize` values, which specify a differential between points.
 

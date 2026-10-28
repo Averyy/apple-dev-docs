@@ -24,7 +24,7 @@ typealias PHAssetImageProgressHandler = (Double, (any Error)?, UnsafeMutablePoin
 typedef void (^)(double, NSError *, _Bool *, NSDictionary *) PHAssetImageProgressHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If you request an image whose data is not on the local device, and you have enabled downloading with the [`isNetworkAccessAllowed`](./phimagerequestoptions/isnetworkaccessallowed.md) property, Photos calls your block periodically to report progress and to allow you to cancel the download.
 

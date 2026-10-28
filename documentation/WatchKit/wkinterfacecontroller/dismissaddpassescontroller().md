@@ -19,7 +19,7 @@ func dismissAddPassesController()
 - (void) dismissAddPassesController;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to dismiss a pass controller you previously displayed using the [`presentAddPassesController(withPasses:completion:)`](./presentaddpassescontroller%28withpasses,completion%29.md) method. When dismissing the pass controller programmatically, WatchKit still calls the completion block you provided.
 

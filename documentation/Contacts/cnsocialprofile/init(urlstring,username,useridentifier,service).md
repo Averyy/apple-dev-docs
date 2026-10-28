@@ -24,7 +24,7 @@ init(urlString: String?, username: String?, userIdentifier: String?, service: St
 - (instancetype) initWithUrlString:(NSString *) urlString username:(NSString *) username userIdentifier:(NSString *) userIdentifier service:(NSString *) service;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized social profile.
 

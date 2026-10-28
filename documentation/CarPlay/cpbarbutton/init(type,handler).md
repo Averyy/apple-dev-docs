@@ -21,7 +21,7 @@ init(type: CPBarButton.Type, handler: CPBarButtonHandler? = nil)
 - (instancetype) initWithType:(CPBarButtonType) type handler:(CPBarButtonHandler) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A bar button of the specified type.
 

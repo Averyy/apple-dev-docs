@@ -28,7 +28,7 @@ Available when `Scalar` conforms to `MLShapedArrayScalar`, `Scalar` conforms to 
 func applied(to input: MLShapedArray<Scalar>, eventHandler: EventHandler? = nil) async throws -> ClassificationDistribution<Label>
 ```
 
-#### Return Value
+## Return Value
 
 An temporal sequence of predictions. Each prediction’s shape is `[forecastWindowSize, annotationSize]`.
 

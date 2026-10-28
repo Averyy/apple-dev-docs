@@ -28,7 +28,7 @@ A Boolean value indicating whether to enable the seat massage system.
 @property (atomic, copy, readonly, nullable) NSNumber * enableMassage;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` when the user modifies the heating or cooling settings.
 

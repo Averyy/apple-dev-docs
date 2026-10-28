@@ -16,7 +16,7 @@ Represents a timer ID.
 typedef struct OpaqueMPTimerID *MPTimerID;
 ```
 
-#### Discussion
+## Discussion
 
 You obtain a timer ID by calling the function [`MPCreateTimer`](./api-1585748-mpcreatetimer.md). 
 

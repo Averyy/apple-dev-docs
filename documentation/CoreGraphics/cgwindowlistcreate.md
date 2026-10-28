@@ -16,7 +16,7 @@ Returns the list of window IDs associated with the specified windows in the curr
 extern CFArrayRefCGWindowListCreate(CGWindowListOption option, CGWindowID relativeToWindow);
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CGWindowID`](./cgwindowid.md) values corresponding to the desired windows. If there are no windows matching the desired criteria, the function returns an empty array. If you call this function from outside of a GUI security session or when no window server is running, this function returns `NULL`.
 

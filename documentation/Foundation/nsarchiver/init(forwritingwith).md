@@ -24,11 +24,11 @@ init(forWritingWith mdata: NSMutableData)
 - (instancetype) initForWritingWithMutableData:(NSMutableData *) mdata;
 ```
 
-#### Return Value
+## Return Value
 
 An archiver object, initialized to encode stream and version information into `data`.
 
-#### Discussion
+## Discussion
 
 Raises an `NSInvalidArgumentException` if `data` is `nil`.
 

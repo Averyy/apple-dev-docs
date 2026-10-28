@@ -25,7 +25,7 @@ var requestedSize: Int { get }
 @property (readonly) NSInteger requestedSize;
 ```
 
-#### Discussion
+## Discussion
 
 This property should be ignored if the output size is not configurable for the specified key exchange algorithm.
 

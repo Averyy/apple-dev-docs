@@ -22,7 +22,7 @@ var backgroundColor: UIColor? { get set }
 @property (nonatomic, copy, nullable) UIColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to customize the background color of your popover. Changing the value of this property while the popover is visible triggers an animated change to the new color. The default value of this property is `nil`, which corresponds to the default background color.
 

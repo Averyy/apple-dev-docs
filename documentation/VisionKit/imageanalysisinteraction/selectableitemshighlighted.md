@@ -19,7 +19,7 @@ A Boolean value that indicates whether the interaction highlights actionable tex
 final var selectableItemsHighlighted: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The interaction object manages this property value for you. It sets this property to `false` if you set the [`analysis`](./analysis.md) property or the [`activeInteractionTypes`](./activeinteractiontypes.md) property to an empty set. Otherwise, it sets this property depending on whether a person toggles the Live Text button in the interface.
 

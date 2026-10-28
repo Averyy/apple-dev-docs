@@ -5,7 +5,7 @@
 
 Provide users with a read-only, visual representation of an application, category, or web domain.
 
-#### Overview
+## Overview
 
 To display an application, category, or web domain, choose an [`ApplicationToken`](../ManagedSettings/applicationtoken.md), [`ActivityCategoryToken`](../ManagedSettings/activitycategorytoken.md), or [`WebDomainToken`](../ManagedSettings/webdomaintoken.md) that represents an item selected by the user. For example, you can access these tokens from the [`FamilyActivitySelection`](./familyactivityselection.md) bound to a [`FamilyActivityPicker`](./familyactivitypicker.md) view.
 

@@ -25,7 +25,7 @@ struct EnumerationOptions
 enum NSAttributedStringEnumerationOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants describe the options available to the [`enumerateAttribute(_:in:options:using:)`](./enumerateattribute%28_,in,options,using%29.md) and [`enumerateAttributes(in:options:using:)`](./enumerateattributes%28in,options,using%29.md) methods.
 

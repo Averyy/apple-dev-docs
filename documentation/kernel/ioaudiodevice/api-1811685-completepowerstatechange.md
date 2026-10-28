@@ -11,11 +11,11 @@ Called when a power state change is complete
 virtual IOReturn completePowerStateChange();
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on a successful completion
 
-#### Overview
+## Overview
 
 In the case of an asynchronous power state change, a subclass is responsible for calling this function. It is safe to call this function if not on the IOWorkLoop. This function calls protectedCompletePowerStateChange() through the IOCommandGate and completePowerStateChangeAction(). If the call is already on the IOWorkLoop, it is safe to call protectedCompletePowerStateChange() directly.
 

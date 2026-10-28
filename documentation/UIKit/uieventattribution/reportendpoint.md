@@ -22,7 +22,7 @@ var reportEndpoint: URL? { get }
 @property (nonatomic, copy, readonly, nullable) NSURL * reportEndpoint;
 ```
 
-#### Discussion
+## Discussion
 
 This read-only property contains the URL that recieves the event attribution data. Your app sets this value by reading it from its `Info.plist` using the [`NSAdvertisingAttributionReportEndpoint`](../../BundleResources/information-property-list/nsadvertisingattributionreportendpoint.md) key.
 

@@ -15,11 +15,11 @@ Extracts the maximum packet size from an endpoint descriptor.
 uint16_t IOUSBGetEndpointMaxPacketSize(uint32_t usbDeviceSpeed, const IOUSBEndpointDescriptor *descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The maximum packet size in bytes.
 
-#### Discussion
+## Discussion
 
 This method parses an endpoint descriptor to determine its maximum packet size, which doesn’t take into account mult or burst factors.
 

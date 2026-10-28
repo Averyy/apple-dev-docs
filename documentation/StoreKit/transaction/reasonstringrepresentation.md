@@ -23,7 +23,7 @@ The string representation of the transaction reason.
 var reasonStringRepresentation: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`reason`](./reason-swift.property.md).
 

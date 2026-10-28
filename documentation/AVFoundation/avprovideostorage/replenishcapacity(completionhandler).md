@@ -27,7 +27,7 @@ func replenishCapacity() async throws -> Int
 - (void) replenishCapacityWithCompletionHandler:(void (^)(NSInteger remainingCapacity, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If there is enough readily available free space on the file system, Pro Video Storage will be resized to [`initialCapacity`](./initialcapacity.md). Otherwise, this method will attempt to resize it near that value.
 

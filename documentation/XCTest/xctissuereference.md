@@ -16,7 +16,7 @@ class XCTIssueReference
 @interface XCTIssue : NSObject
 ```
 
-#### Overview
+## Overview
 
 In Swift, `XCTIssueReference` bridges to the Objective-C class `XCTIssue`. When you need reference semantics in your Swift test handling, use `XCTIssueReference`; otherwise, use the Swift value semantic [`XCTIssue`](./xctissue-swift.struct.md). In Objective-C, `XCTIssue` supports bridging to Swift with `XCTIssueReference`.
 

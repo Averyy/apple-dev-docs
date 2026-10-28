@@ -23,7 +23,7 @@ case inProgress
 INSetCarLockStatusIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 When handling the intent, return this code if the action may take longer than a few seconds to complete.
 

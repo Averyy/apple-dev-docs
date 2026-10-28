@@ -19,11 +19,11 @@ func hitTest(_ point: NSPoint) -> NSView?
 - (NSView *) hitTest:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A view object that is the farthest descendent of `aPoint`.
 
-#### Discussion
+## Discussion
 
 This method is used primarily by an [`NSWindow`](../nswindow.md) object to determine which view should receive a mouse-down event. You’d rarely need to invoke this method, but you might want to override it to have a view object hide mouse-down events from its subviews. This method ignores hidden views.
 

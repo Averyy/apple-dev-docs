@@ -5,7 +5,7 @@
 
 Manage your merchant ID for Apple Pay.
 
-#### Overview
+## Overview
 
 Apple Pay developers and merchants can use this resource to automate registering both merchant ID and merchant name for interacting with Apple Pay services, and rotate required certificates to keep the service active. To learn more about developing and configuring Apple Pay, see [Configure Apple Pay](https://developer.apple.com/help/account/configure-app-capabilities/configure-apple-pay/).
 

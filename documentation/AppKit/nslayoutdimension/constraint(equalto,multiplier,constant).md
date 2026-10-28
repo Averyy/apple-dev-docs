@@ -19,11 +19,11 @@ func constraint(equalTo anchor: NSLayoutDimension, multiplier m: CGFloat, consta
 - (NSLayoutConstraint *) constraintEqualToAnchor:(NSLayoutDimension *) anchor multiplier:(CGFloat) m constant:(CGFloat) c;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSLayoutConstraint`](../nslayoutconstraint.md) object that defines the attribute represented by this layout anchor as equal to the attribute represented by the `anchor` parameter multiplied by the `m` constant plus the constant `c`.
 
-#### Discussion
+## Discussion
 
 This method defines the relationship `first attribute = (m * second attribute) + c`. Where `first attribute` is the layout attribute represented by the anchor receiving this method call, and `second attribute` is the layout attribute represented by the `anchor` parameter.
 

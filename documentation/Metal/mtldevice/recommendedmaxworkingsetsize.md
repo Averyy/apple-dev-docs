@@ -25,7 +25,7 @@ var recommendedMaxWorkingSetSize: UInt64 { get }
 @property (readonly) uint64_t recommendedMaxWorkingSetSize;
 ```
 
-#### Discussion
+## Discussion
 
 You can help the GPU maintain its performance by keeping the total memory footprint of its resources and heaps less than this threshold value.
 

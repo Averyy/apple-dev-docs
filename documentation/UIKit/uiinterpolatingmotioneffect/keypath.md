@@ -23,7 +23,7 @@ var keyPath: String { get }
 @property (nonatomic, readonly) NSString * keyPath;
 ```
 
-#### Discussion
+## Discussion
 
 This property must correspond to an animatable property of the view to which the motion effect is attached.
 

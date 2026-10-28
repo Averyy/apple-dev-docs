@@ -25,7 +25,7 @@ var isAsynchronous: Bool { get }
 @property (readonly, getter=isAsynchronous) BOOL asynchronous;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) for operations that run asynchronously with respect to the current thread or [`false`](../../Swift/false.md) for operations that run synchronously on the current thread. The default value of this property is [`false`](../../Swift/false.md).
 

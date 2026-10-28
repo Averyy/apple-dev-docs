@@ -17,7 +17,7 @@ Finishes the change enumeration with an error, indicating failure, to the observ
 func didFinishEnumeratingChangesWithError(_: any Error)
 ```
 
-#### Discussion
+## Discussion
 
 Use `ContactProviderError.changeAnchorExpired` to restart the content enumeration.
 

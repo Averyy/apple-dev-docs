@@ -22,7 +22,7 @@ var granularityCount: Int { get set }
 @property (nonatomic, assign) NSInteger granularityCount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value with [`surroundingGranularity`](./surroundinggranularity.md) to determine the extent of the text context that the system requests.
 

@@ -23,11 +23,11 @@ func isSubset<S>(of possibleSuperset: S) -> Bool where Element == S.Element, S :
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 `true` if the set is a subset of `possibleSuperset`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Set *A* is a subset of another set *B* if every member of *A* is also a member of *B*.
 

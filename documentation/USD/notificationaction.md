@@ -4,13 +4,13 @@
 
 An action that sends a custom notification to an app.
 
-#### Overview
+## Overview
 
 Use this action to perform an app-provided operation on a list of prims.
 
 When this action executes, it posts a notification for which a custom app scans to perform a specific operation.
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Action "NotificationAction"

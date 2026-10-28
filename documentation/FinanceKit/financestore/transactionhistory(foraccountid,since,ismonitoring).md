@@ -16,11 +16,11 @@ Returns the transactions for the specified account ID, optional starting time, a
 func transactionHistory(forAccountID accountID: UUID, since token: FinanceStore.HistoryToken? = nil, isMonitoring: Bool = true) -> FinanceStore.History<Transaction>
 ```
 
-#### Return Value
+## Return Value
 
 A [`FinanceStore.History`](./history.md) of transactions that match the provided `accountID`.
 
-#### Discussion
+## Discussion
 
 Use this method to search the finance store for transactions in a specific account and receive updates as the framework enters new transactions into the finance store. You can, optionally, specify a starting date and time by providing a `historyToken`.
 

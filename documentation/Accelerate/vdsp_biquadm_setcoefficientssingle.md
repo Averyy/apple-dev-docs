@@ -21,7 +21,7 @@ Sets the single-precision coefficients of the specified single-precision, multic
 extern void vDSP_biquadm_SetCoefficientsSingle(vDSP_biquadm_Setup __setup, const float *__coeffs, vDSP_Length __start_sec, vDSP_Length __start_chn, vDSP_Length __nsec, vDSP_Length __nchn);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to update sections of coefficient values of a biquadratic setup structure. This function doesn’t allocate new memory. The range that you specify using `__start_sec` and `__nsec` must be within the number of sections that you define in the create setup function.
 

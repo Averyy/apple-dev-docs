@@ -16,7 +16,7 @@ nonisolated
 func dialogIcon(_ icon: Image?) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, this icon replaces the default icon of the app.
 

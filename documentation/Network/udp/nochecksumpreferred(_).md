@@ -21,7 +21,7 @@ Skip computing checksums when sending UDP packets.
 func noChecksumPreferred(_ noChecksum: Bool) -> UDP
 ```
 
-#### Discussion
+## Discussion
 
 This will only take effect when running over IPv4 (`UDP_NOCKSUM`).
 

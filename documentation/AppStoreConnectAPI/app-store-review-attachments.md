@@ -5,7 +5,7 @@
 
 Manage the attachments you upload to App Store Connect for App Review.
 
-#### Overview
+## Overview
 
 Use an `appReviewAttachments` resource to upload specific app documentation, demo videos, and other items to App Store Connect, to help prevent delays during the app review process.
 

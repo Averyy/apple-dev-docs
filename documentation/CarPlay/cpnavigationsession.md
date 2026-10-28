@@ -22,7 +22,7 @@ class CPNavigationSession
 @interface CPNavigationSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 To start a navigation session, you call [`startNavigationSession(for:)`](./cpmaptemplate/startnavigationsession%28for%29.md) on the map template, passing the trip the user selected. The map template’s delegate receives the selected trip via [`mapTemplate(_:startedTrip:using:)`](./cpmaptemplatedelegate/maptemplate%28_,startedtrip,using%29.md).
 

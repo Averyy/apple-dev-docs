@@ -21,7 +21,7 @@ A collection which allows a view to be treated as a collection of its sections i
 struct ForEachSectionCollection<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 You don’t use this type directly. Instead SwiftUI creates this type on your behalf.
 

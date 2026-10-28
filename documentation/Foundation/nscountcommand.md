@@ -20,7 +20,7 @@ class NSCountCommand
 @interface NSCountCommand : NSScriptCommand
 ```
 
-#### Overview
+## Overview
 
 An instance of `NSCountCommand` counts the number of objects of a specified class in the specified object container (such as the number of words in a paragraph or document) and returns the result.
 

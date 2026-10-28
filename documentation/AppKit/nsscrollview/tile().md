@@ -19,7 +19,7 @@ func tile()
 - (void) tile;
 ```
 
-#### Discussion
+## Discussion
 
 You rarely need to invoke this method, but subclasses may override it to manage additional components.
 

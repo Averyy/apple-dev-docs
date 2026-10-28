@@ -5,19 +5,19 @@
 
 Operate selectively on the elements of a vector at regular intervals.
 
-#### Overview
+## Overview
 
 Many functions in vDSP provide support for specifying a *stride* (that is, the distance between the elements that functions read from or write to) for a particular vector. For example, if you want to access consecutive elements, use a stride of `1` (referred to as a *unit stride*). If you want to access every third element, for example to work with the red channel in interleaved RGB data, use a stride of `3`. If you want to access every second element, for example to work with a single audio channel in interleaved stereo audio data, use a stride of `2`.
 
 Typically, you use a unit stride. Use other strides to, for example, operate along a column of a matrix, where the stride is the number of elements per row.
 
-##### Use a unit stride for the best performance and energy efficiency
+### Use a unit stride for the best performance and energy efficiency
 
 For most of the functions in vDSP, you obtain the best performance when the stride is `1`. Any other stride value generally prevents the use of vectorized code, and reduces both performance and energy efficiency.
 
 The major exception to this limitation is in functions that support the use of interleaved complex data, such as [`vDSP_ctoz`](./vdsp_ctoz.md) and [`vDSP_ztoc`](./vdsp_ztoc.md). In these cases, use a stride of `2`.
 
-##### Set the stride for each vector independently
+### Set the stride for each vector independently
 
 The code below calls the [`vDSP_vadd`](./vdsp_vadd.md) function to add each element in array `a` to the corresponding element in array `b`, and write the result to array `c`. Note that the stride used for each array is `1`.
 
@@ -66,7 +66,7 @@ In this example, the result is `[11.0, 22.0, 33.0, 44.0, 55.0, 66.0, 77.0, 88.0]
 
 ![A diagram showing how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of one. The second row represents the second input, vector B, which has a stride of one. The bottom row represents the output, vector C, which has a stride of one. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3080000@2x.png)
 
-##### Use a nonunit stride on inputs
+### Use a nonunit stride on inputs
 
 A nonunit stride allows you to, for example, access a particular color channel in interleaved RGB data. If you change `strideB` to 3, the operation adds the first, fourth, and seventh items in array `b` to the first, second, and third items in array `a`.
 
@@ -94,7 +94,7 @@ vDSP_Length n = 3;
 
 Note that vDSP operations always read `n` elements. Therefore, your collections require at least `((n - 1) * stride) + 1` elements.
 
-##### Use a nonunit stride on output
+### Use a nonunit stride on output
 
 If you change array `c`’s stride to `3`, the calculation writes the result to its first, fourth, and seventh items. Using the example of interleaved RGB data discussed in [Controlling vDSP operations with stride](./controlling-vdsp-operations-with-stride.md), this approach would write the result of an operation to the red channel. The example below defines the stride for the input array, `a`, as `2`, so the operation uses the first, third, and fifth elements:
 
@@ -120,7 +120,7 @@ vDSP_Length n = 3;
 
 ![A diagram showing how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of two. The second row represents the second input, vector B, which has a stride of one. The bottom row represents the output, vector C, which has a stride of three. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3079999@2x.png)
 
-##### Use a negative stride
+### Use a negative stride
 
 Use a negative stride to access a vector in reverse order, for example, define the stride as `−1` when convolving with a filter using [`vDSP_conv`](./vdsp_conv.md)).
 
@@ -158,7 +158,7 @@ The result of adding `a` and `b` with a stride of `-1` for `a` is `[81.0, 72.0, 
 
 ![A diagram showing how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of minus one. The second row represents the second input, vector B, which has a stride of one. The bottom row represents the output, vector C, which has a stride of one. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3080245@2x.png)
 
-##### Controlling vDSP operations with strides
+### Controlling vDSP operations with strides
 
 With interleaved complex data, vDSP stores alternating real and imaginary components consecutively. Use a stride of `2` for interleaved complex data, counting the individual component elements rather than counting complex numbers.
 

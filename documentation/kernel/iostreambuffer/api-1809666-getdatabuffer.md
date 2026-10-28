@@ -10,7 +10,7 @@ virtual IOMemoryDescriptor *getDataBuffer(
  void);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the IOMemoryDescriptor for the data buffer.
 

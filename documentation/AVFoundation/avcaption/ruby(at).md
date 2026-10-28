@@ -19,7 +19,7 @@ Returns the ruby text at the index position.
 func ruby(at index: String.Index) -> (AVCaption.Ruby?, Range<String.Index>)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple that contains the ruby text and range to which it applies.
 

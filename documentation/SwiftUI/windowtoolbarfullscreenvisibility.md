@@ -21,7 +21,7 @@ The visibility of the window toolbar with respect to full screen mode.
 struct WindowToolbarFullScreenVisibility
 ```
 
-#### Overview
+## Overview
 
 Use values of this type in conjunction with the [`windowToolbarFullScreenVisibility(_:)`](./view/windowtoolbarfullscreenvisibility%28_%29.md) modifier to configure how the window toolbar displays itself when the window enters full screen mode.
 

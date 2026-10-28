@@ -24,7 +24,7 @@ var providerBundleIdentifier: String? { get set }
 @property (copy, nullable) NSString * providerBundleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 A single app may contain multiple Tunnel Provider extensions. This property is used to specify which Tunnel Provider extension should be used with this configuration.
 

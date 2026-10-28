@@ -5,7 +5,7 @@
 
 Investigate why your universal links are opening in a web browser instead of your app.
 
-#### Overview
+## Overview
 
 [Universal links](https://developer.apple.com/ios/universal-links/) use [applinks](../BundleResources/applinks.md), an associated domains service, to link directly to content within your app without routing through a web browser or your website. When a user clicks on a universal link, the following occurs:
 
@@ -23,7 +23,7 @@ This document outlines how to:
 - [Debug using a sysdiagnose](./tn3155-debugging-universal-links.md#Debug-through-sysdiagnose)
 - [Understand Apple’s content delivery network (CDN)](./tn3155-debugging-universal-links.md#Understand-Apples-CDN)
 
-#### Test universal links behavior
+## Test universal links behavior
 
 To test your universal links behavior, paste a link into your Notes app and long-press  it (iOS) or control-click it (macOS) to see your options for following the link. If universal links have been configured correctly, the option to open in your app and in the web browser will both show up. The option you choose will set the default behavior for your device when following universal links from this domain in the future. To change this default choice, repeat the same steps and choose a different option.
 
@@ -37,7 +37,7 @@ On iOS, you can additionally test your universal links with the associated domai
 
 If your universal links are invalid, your `applinks` may be configured incorrectly.
 
-#### Understand applinks configuration and rules
+## Understand applinks configuration and rules
 
 Using the Signing and Capabilities tab in Xcode, verify the app has the Associated Domains capability which contains `applinks` in the form of:
 
@@ -65,7 +65,7 @@ This will only work with `applinks:www.example.com`. Each specific subdomain in 
 
 > **Note**: Domains in your `applinks` can’t contain a port number. For example, `applinks:example.com:8080` will not open your app.
 
-#### Use universal links on your site
+## Use universal links on your site
 
 To use a universal link to open your app while already browsing in the web browser, use a different subdomain. Reasons for this could be completing a questionnaire or choosing to sign in. If a universal link has the same domain as the previous navigation, the web browser will expect the user wants to continue navigating within the browser. Review [Allowing apps and websites to link your content](../Xcode/allowing-apps-and-websites-to-link-to-your-content.md#Support-universal-links) for more information.
 
@@ -100,7 +100,7 @@ Using a different subdomain prevents the web browser from treating the link as n
 
 > ❗ **Important**: It is up to third-party web browsers to enable universal links functionality. Universal links may not be enabled in every web browser. For information about other browsers, developers should check with the browser’s vendor. Safari implements all of the function described in this technote.
 
-#### Host and verify your AASA
+## Host and verify your AASA
 
 If your universal links are still not opening in your app, inspect your HTTP response headers and AASA content. For example, log the HTTP response headers and AASA JSON contents in Terminal using the following command:
 
@@ -175,7 +175,7 @@ Pattern "https://example.com/path/1" blocked match.
 
 If you see this message for a URL path that is not excluded, your AASA has not been matched. Take a look at the [Debug through sysdiagnose](./tn3155-debugging-universal-links.md#Debug-through-sysdiagnose) section for more information.
 
-#### Debug through sysdiagnose
+## Debug through sysdiagnose
 
 If the output from `swcutil` in the section [Host and verify your AASA](./tn3155-debugging-universal-links.md#Host-and-verify-your-AASA) is showing invalid universal links, take a sysdiagnose on a device with the app installed by following the linked instructions for each platform in [Profiles and Logs](https://developer.apple.com/bug-reporting/profiles-and-logs/?name=sysdiagnose). After you have opened the sysdiagnose, open the `swcutil_show.txt` file. Search for your `App ID` to see the information for your `applinks` as shown in the following example.
 
@@ -197,15 +197,15 @@ If it is `unspecified` or `denied`, please ensure you are allowing full access t
 
 `Last Check/Next Check`: Specifies the last time Apple’s CDN requested your site for your AASA and when it will check again.
 
-#### Understand Apple’s CDN
+## Understand Apple’s CDN
 
 When your app is installed on a device, Apple’s CDN requests your AASA file. For the CDN to successfully cache the file, it must be hosted on a domain that is available to all IP addresses and ranges, does not redirect, and is not blocked by access policies.
 
-When testing, if you’re running your app from Xcode, using a server that is unreachable from the public internet, or testing changes faster than Apple’s CDN can cache them, use an alternate `developer` mode as described in [Associated Domains Entitlement](../BundleResources/entitlements/com_apple_developer_associated-domains.md). This allows you to bypass Apple’s CDN and pulls your AASA directly from your domain.
+When testing, if you’re running your app from Xcode, using a server that is unreachable from the public internet, or testing changes faster than Apple’s CDN can cache them, use an alternate `developer` mode as described in [Associated Domains Entitlement](../BundleResources/entitlements/com.apple.developer.associated-domains.md). This allows you to bypass Apple’s CDN and pulls your AASA directly from your domain.
 
 > ❗ **Important**: On iOS 14 and later, Apple’s CDN retrieves and caches the AASA file. When your app is installed, devices download the file from the CDN immediately. Devices check for updates approximately once per week after app installation. To download a newer version of the AASA file, reinstall the app. There is no direct CDN invalidation option.
 
-#### Revision History
+## Revision History
 
 - **2025-05-15** Added User-Agent policies for the hosted AASA file.
 - **2025-03-12** Clarified how web browsers interact with universal links. Made other minor editorial changes.

@@ -11,7 +11,7 @@ Calls disable() in all event sources.
 virtual void disableAllEventSources() const;
 ```
 
-#### Overview
+## Overview
 
 For all event sources in eventChain, call disable() function. See IOEventSource::disable().
 

@@ -26,7 +26,7 @@ var documentProperties: UIDocumentProperties? { get set }
 
 - [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
-#### Discussion
+## Discussion
 
 Assign a non-`nil` value to this property to display a document header at the top of the title menu, which appears when a person taps the navigation item’s title. The document header displays information about the current document, such as its title, file type, and size. Additionally, you can configure a set of sharing capabilities that allow people to share or drag and drop the document content from the document header.
 

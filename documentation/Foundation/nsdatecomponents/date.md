@@ -25,7 +25,7 @@ var date: Date? { get }
 @property (copy, readonly, nullable) NSDate * date;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if the [`calendar`](./calendar.md) property value of the receiver is `nil` or cannot convert the receiver into an [`NSDate`](../nsdate.md) object.
 

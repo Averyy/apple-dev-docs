@@ -21,7 +21,7 @@ A representation of a spring’s motion.
 struct Spring
 ```
 
-#### Overview
+## Overview
 
 Use this type to convert between different representations of spring parameters:
 

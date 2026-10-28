@@ -16,11 +16,11 @@
 virtual kern_return_t CreatePMAssertion(uint32_t assertionBits, uint64_t *assertionID, bool synced);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success. See IOReturn.h for error codes.
 
-#### Discussion
+## Discussion
 
 Create a power management assertion.
 

@@ -23,7 +23,7 @@ var videoRotationAngleForHorizonLevelPreview: CGFloat { get }
 @property (nonatomic, readonly) CGFloat videoRotationAngleForHorizonLevelPreview;
 ```
 
-#### Discussion
+## Discussion
 
 Your app can get immediate rotation angle updates from the rotation coordinator with key-value observation (KVO) for this property. You can immediately update your app’s UI from its key-value observation code because the rotation coordinator notifies your app on the main queue.
 

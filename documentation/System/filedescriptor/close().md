@@ -25,7 +25,7 @@ func close() throws
 
 - [Adopting Swift File Operations](../adopting-file-operations.md)
 
-#### Discussion
+## Discussion
 
 Deletes the file descriptor from the per-process object reference table. If this is the last reference to the underlying object, the object will be deactivated.
 

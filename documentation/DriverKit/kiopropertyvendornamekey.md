@@ -16,7 +16,7 @@
 #define kIOPropertyVendorNameKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to define the Vendor Name for a particular device and it has an associated string.
 

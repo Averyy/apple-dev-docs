@@ -19,11 +19,11 @@ func itemObjectValue(at index: Int) -> Any
 - (id) itemObjectValueAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The object located at the specified index in the internal item list.
 
-#### Discussion
+## Discussion
 
 This method logs a warning if the [`usesDataSource`](./usesdatasource.md) property is [`true`](../../Swift/true.md).
 

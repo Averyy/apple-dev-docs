@@ -19,11 +19,11 @@ func PMSetFirstPage(_ printSettings: PMPrintSettings, _ first: UInt32, _ lock: B
 OSStatus PMSetFirstPage(PMPrintSettings printSettings, UInt32 first, Boolean lock);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007). 
 
-#### Discussion
+## Discussion
 
 Typically, this function isn’t used. In macOS, if you call the function [`PMSetPageRange(_:_:_:)`](./api-1462294-pmsetpagerange.md) and then call `PMSetFirstPage` or `PMSetLastPage` using the same page range you specified for `PMSetPageRange`, then the Print dialog shows the From button selected. If you use the constant `kPMPrintAllPages` to set the page range with the function `PMSetPageRange`, then the Print dialog opens with the All button selected regardless of whether you also call `PMSetFirstPage` or `PMSetLastPage`.
 

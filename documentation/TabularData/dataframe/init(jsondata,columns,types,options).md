@@ -21,7 +21,7 @@ Creates a data frame by converting JSON data.
 init(jsonData data: Data, columns: [String]? = nil, types: [String : JSONType] = [:], options: JSONReadingOptions = .init()) throws
 ```
 
-#### Discussion
+## Discussion
 
 The JSON file should contain a sequence of objects where each object contains a value for every column name. Here’s an example with two columns “id” and “name”:
 

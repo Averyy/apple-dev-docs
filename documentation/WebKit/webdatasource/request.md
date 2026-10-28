@@ -19,7 +19,7 @@ var request: NSMutableURLRequest! { get }
 @property (nonatomic, strong, readonly) NSMutableURLRequest * request;
 ```
 
-#### Discussion
+## Discussion
 
 This URL may be different from the original request from [`initialRequest`](./initialrequest.md).
 

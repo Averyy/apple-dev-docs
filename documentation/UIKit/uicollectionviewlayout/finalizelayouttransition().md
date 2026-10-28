@@ -23,7 +23,7 @@ func finalizeLayoutTransition()
 - (void) finalizeLayoutTransition;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method after it has gathered all of the layout attributes needed to perform a transition from one layout to another. You can use this method to clean up any data structures or caches created by your implementations of the [`prepareForTransition(from:)`](./preparefortransition%28from%29.md) or [`prepareForTransition(to:)`](./preparefortransition%28to%29.md) methods.
 

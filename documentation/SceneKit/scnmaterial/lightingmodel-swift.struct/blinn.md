@@ -25,7 +25,7 @@ static let blinn: SCNMaterial.LightingModel
 extern SCNLightingModel const SCNLightingModelBlinn;
 ```
 
-#### Discussion
+## Discussion
 
 The Blinn-Phong approximation of real-world reflectance calculates the color of a point on a surface using the following formula:
 

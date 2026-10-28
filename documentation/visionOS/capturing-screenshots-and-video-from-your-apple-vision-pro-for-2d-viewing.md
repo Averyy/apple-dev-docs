@@ -5,7 +5,7 @@
 
 Create screenshots and record high-quality video of your visionOS app and its surroundings for app previews.
 
-#### Overview
+## Overview
 
 Use screenshots and short videos of your visionOS app to showcase your user interface, highlight functionality, and demonstrate usage. Help people understand what to expect from an immersive experience by recording content from Apple Vision Pro that includes your app and its surroundings.
 
@@ -15,7 +15,7 @@ To produce content for people to view on 2D displays, turn on high-quality recor
 
 > **Note**: For guidance on the screenshots and previews you include in your app’s product page, see [Submit your apps to the App Store for Apple Vision Pro](https://developer.apple.com/visionos/submit/).
 
-#### Prepare to capture your app and its surroundings
+## Prepare to capture your app and its surroundings
 
 Select a well-lit location that’s free from clutter. Avoid including objects that might distract the audience or get in the way of your app’s windows and 3D content. Include enough detail in the scene to provide context and anchoring points.
 
@@ -25,7 +25,7 @@ Use the version of your app that you intend to share with your audience. Build a
 
 Plan the tasks you intend to capture ahead of time and keep them short and focused. Launch your app and go to the state where you plan to begin the capture. Reduce unnecessary processing overhead on Apple Vision Pro by quitting other apps and avoiding background tasks.
 
-#### Turn on high-quality recording
+## Turn on high-quality recording
 
 Before you record your video, turn on high-quality recording in Settings on Apple Vision Pro:
 
@@ -39,7 +39,7 @@ High-quality recording stays on until you turn it off in Settings. Because it re
 
 ![An alert with a warning icon titled Capture Finished, indicating that the view capture reached its time limit, above an OK button.](https://developer.apple.com/tutorials/images/com.apple.visionOS/capture-finished@2x.png)
 
-#### Capture a screenshot
+## Capture a screenshot
 
 To capture a screenshot of your view, do one of the following:
 
@@ -48,7 +48,7 @@ To capture a screenshot of your view, do one of the following:
 
 Apple Vision Pro saves the screenshot to the Photos app. Keep relevant content centered and in-frame. The aspect ratio of screenshots crops content that appears at the sides of an experience.
 
-#### Record video in high quality
+## Record video in high quality
 
 After you turn on high-quality recording in Settings, open Control Center and tap Record My View. High Quality appears below Record My View to indicate that the recording is captured in high quality. To stop recording, open Control Center and tap Record My View again.
 
@@ -62,7 +62,7 @@ While recording, perform your planned interactions. Keep relevant content center
 
 ![An alert with a warning icon titled Capture Unavailable, indicating the device can't start a view capture and to try again after a few minutes, above an OK button.](https://developer.apple.com/tutorials/images/com.apple.visionOS/capture-unavailable@2x.png)
 
-#### Review the recorded video
+## Review the recorded video
 
 Apple Vision Pro saves each recording to the Photos app. Review the video to make sure that it includes all the content you planned and it doesn’t include any unexpected elements. Ensure that the transitions and animations are smooth and frame rates are consistent.
 

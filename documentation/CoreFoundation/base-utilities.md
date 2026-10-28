@@ -3,7 +3,7 @@
 **Framework**: Core Foundation  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 Core Foundation defines a number of miscellaneous symbols that are either used by many different opaque types, such as [`CFIndex`](./cfindex.md), or apply to Core Foundation as a whole, such as [`kCFCoreFoundationVersionNumber`](./kcfcorefoundationversionnumber.md). These symbols are collected together and documented here.
 

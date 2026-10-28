@@ -25,7 +25,7 @@ let kCTFontSlantTrait: CFString
 extern CFStringRef const kCTFontSlantTrait;
 ```
 
-#### Discussion
+## Discussion
 
 The value returned is a [`CFNumber`](../CoreFoundation/cfnumber.md) object representing a float value between `-1.0` and `1.0` for normalized slant angle. The value of `0.0` corresponds to 0 degrees clockwise rotation from the vertical and `1.0` corresponds to 30 degrees clockwise rotation.
 

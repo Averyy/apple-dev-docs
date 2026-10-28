@@ -19,7 +19,7 @@ var timeInterval: TimeInterval { get set }
 @property NSTimeInterval timeInterval;
 ```
 
-#### Discussion
+## Discussion
 
 The date range begins at the date in the [`dateValue`](./datevalue.md) property. The value in this property applies only when the date picker is in the [`NSRangeDateMode`](../nsrangedatemode.md) mode.
 

@@ -22,7 +22,7 @@ A notification that posts when the context finishes processing pending inserts, 
 static let didSave: Notification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s `userInfo` dictionary contains the persistent identifiers of any inserted, updated, or deleted models. Use the appropriate key to access those identifiers. For more information, see [`ModelContext.NotificationKey`](./notificationkey.md).
 

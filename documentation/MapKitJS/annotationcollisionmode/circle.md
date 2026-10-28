@@ -15,7 +15,7 @@ Uses a circle inscribed in the collision frame rectangle to detect collisions.
 readonly Circle: "circle";
 ```
 
-#### Discussion
+## Discussion
 
 The circle inscribed in the bounding box is used for collision detection.
 

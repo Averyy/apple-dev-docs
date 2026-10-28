@@ -25,7 +25,7 @@ func cblas_stbmv(_ ORDER: CBLAS_ORDER, _ UPLO: CBLAS_UPLO, _ TRANSA: CBLAS_TRANS
 void cblas_stbmv(const enum CBLAS_ORDER ORDER, const enum CBLAS_UPLO UPLO, const enum CBLAS_TRANSPOSE TRANSA, const enum CBLAS_DIAG DIAG, const __LAPACK_int N, const __LAPACK_int K, const float *A, const __LAPACK_int LDA, float *X, const __LAPACK_int INCX);
 ```
 
-#### Discussion
+## Discussion
 
 Computes `A*x` and stores the results in `x`.
 

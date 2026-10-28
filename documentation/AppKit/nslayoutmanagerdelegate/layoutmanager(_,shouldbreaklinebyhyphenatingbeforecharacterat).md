@@ -19,7 +19,7 @@ optional func layoutManager(_ layoutManager: NSLayoutManager, shouldBreakLineByH
 - (BOOL) layoutManager:(NSLayoutManager *) layoutManager shouldBreakLineByHyphenatingBeforeCharacterAtIndex:(NSUInteger) charIndex;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the current hyphenation point is acceptable; [`false`](../../Swift/false.md) if the layout manager should find the next hyphenation opportunity before `charIndex`.
 

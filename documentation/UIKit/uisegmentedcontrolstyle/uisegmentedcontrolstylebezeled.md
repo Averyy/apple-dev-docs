@@ -19,7 +19,7 @@ The large bezeled style for segmented controls.
 UISegmentedControlStyleBezeled
 ```
 
-#### Discussion
+## Discussion
 
 Segmented controls in this style can have a tint color (see `tintColor`).
 

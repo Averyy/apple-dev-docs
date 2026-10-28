@@ -21,7 +21,7 @@ The host address couldn’t be found via DNS lookup.
 var NSURLErrorDNSLookupFailed: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error code is no longer used. You should expect to handle [`NSURLErrorCannotFindHost`](./nsurlerrorcannotfindhost-swift.var.md) instead.
 

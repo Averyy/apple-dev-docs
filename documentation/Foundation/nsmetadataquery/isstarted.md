@@ -25,7 +25,7 @@ var isStarted: Bool { get }
 @property (readonly, getter=isStarted) BOOL started;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains [`true`](../../Swift/true.md) when the receiver has executed the `startQuery` method; otherwise, [`false`](../../Swift/false.md).
 

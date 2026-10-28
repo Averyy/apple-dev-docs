@@ -19,7 +19,7 @@ A type that reads a document’s content from a file.
 protocol DocumentReader<Snapshot>
 ```
 
-#### Overview
+## Overview
 
 SwiftUI calls your document’s [`reader(configuration:)`](./readabledocument/reader%28configuration%29.md) method to obtain a `DocumentReader`, then invokes [`read(from:progress:)`](./documentreader/read%28from,progress%29.md) in the background with coordinated file access. The returned snapshot is delivered to [`apply(snapshot:previous:)`](./readabledocument/apply%28snapshot,previous%29.md) on the main actor.
 

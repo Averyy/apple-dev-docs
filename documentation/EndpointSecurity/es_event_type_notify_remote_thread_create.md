@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_REMOTE_THREAD_CREATE: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_REMOTE_THREAD_CREATE
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`remote_thread_create`](./es_events_t/remote_thread_create.md), which has the type [`es_event_remote_thread_create_t`](./es_event_remote_thread_create_t.md).
 

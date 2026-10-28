@@ -16,7 +16,7 @@ nonisolated
 func toolbarForegroundStyle<S>(_ style: S, for bars: ToolbarPlacement...) -> some View where S : ShapeStyle
 ```
 
-#### Discussion
+## Discussion
 
 This examples shows a view that renders the navigation bar with a blue foreground color.
 

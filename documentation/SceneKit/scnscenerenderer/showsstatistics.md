@@ -26,7 +26,7 @@ var showsStatistics: Bool { get set }
 @property (nonatomic) BOOL showsStatistics;
 ```
 
-#### Discussion
+## Discussion
 
 The SceneKit statistics view displays various information about scene rendering performance and GPU resource usage, including a frames-per-second (fps) counter. In macOS, click the gear button in the statistics view to show a panel with additional controls for adjusting SceneKit’s rendering of the scene.
 

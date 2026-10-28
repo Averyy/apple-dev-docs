@@ -30,7 +30,7 @@ class AVSampleBufferAudioRenderer
 - [Implementing flexible enhanced buffering for your content](./implementing-flexible-enhanced-buffering-for-your-content.md)
 - [Supporting AirPlay in your app](./supporting-airplay-in-your-app.md)
 
-#### Overview
+## Overview
 
 You must add an instance of this class to an [`AVSampleBufferRenderSynchronizer`](./avsamplebufferrendersynchronizer.md) before queuing the first sample buffer.
 

@@ -25,7 +25,7 @@ typealias CFMachPortInvalidationCallBack = (CFMachPort?, UnsafeMutableRawPointer
 typedef void (*)(struct __CFMachPort *, void *) CFMachPortInvalidationCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 Your callback should free any resources allocated for `port`.
 

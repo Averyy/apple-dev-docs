@@ -15,11 +15,11 @@ Invalidate all references to a vnode.
 int vn_revoke(vnode_t vp, int flags, vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 0 always.
 
-#### Discussion
+## Discussion
 
 Reclaims the vnode, giving it deadfs vnops (though not halting operations which are already in progress). Also reclaims all aliased vnodes (important for devices). People holding usecounts on the vnode, e.g. processes with the file open, will find that all subsequent operations but closing the file fail.
 

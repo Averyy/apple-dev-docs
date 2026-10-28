@@ -21,11 +21,11 @@ Construct a `Duration` given a number of seconds microseconds as a `Double` by c
 static func microseconds(_ microseconds: Double) -> Duration
 ```
 
-#### Return Value
+## Return Value
 
 A `Duration` representing a given number of microseconds.
 
-#### Discussion
+## Discussion
 
 ```swift
   let d: Duration = .microseconds(382.9)

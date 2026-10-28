@@ -5,7 +5,7 @@
 
 Icons that pertain to New Zealand movie ratings.
 
-#### Overview
+## Overview
 
 New Zealand movie rating icons indicate who is allowed to watch a movie in New Zealand. Ratings are assigned by the Office of Film & Literature Classification. Ratings fall into three color categories:
 
@@ -13,61 +13,61 @@ New Zealand movie rating icons indicate who is allowed to watch a movie in New Z
 - **Yellow.** Anyone can view the movie, but parental guidance is suggested.
 - **Red.** The film is restricted. It is illegal to show the movie to anyone under the age stated on the label.
 
-##### General Admission
+### General Admission
 
 The resource name for the general admission icon for New Zealand is `NZ-g`. Place a general admission rating icon next to content to indicate that the content is suitable to be watched by people of any age. Place a general admissions rating icon using `<img src="resource://NZ-g" />`.
 
 ![A black letter G, inside a green-filled circle.](https://developer.apple.com/tutorials/images/com.apple.TVML/rating-icons-new-zealand-1@2x.png)
 
-##### Parental Guidance
+### Parental Guidance
 
 The resource name for the parental guidance icon for New Zealand is `NZ-pg`. Place a parental guidance rating icon next to content to indicate that the content can be watched by people of any age, but parental guidance is recommended. Place a parental guidance rating icon using `<img src="resource://NZ-pg" />`.
 
 ![The phrase P G in black, inside a yellow-filled circle.](https://developer.apple.com/tutorials/images/com.apple.TVML/rating-icons-new-zealand-2@2x.png)
 
-##### Mature Audiences
+### Mature Audiences
 
 The resource name for the mature audiences icon for New Zealand is `NZ-m`. Place a mature audiences rating icon next to content to indicate that the content can be watched by people of any age, but is aimed at a mature audience. Place a mature audiences rating icon using `<img src="resource://NZ-m" />`.
 
 ![The letter M, inside a yellow-filled circle.](https://developer.apple.com/tutorials/images/com.apple.TVML/rating-icons-new-zealand-3@2x.png)
 
-##### Restricted 13
+### Restricted 13
 
 The resource name for the restricted icon for New Zealand is `NZ-r13`. Place a restricted 13 rating icon next to content to indicate that the content can only be watched by people 13 and older. Place a restricted 13 rating icon using `<img src="resource://NZ-r13" />`.
 
 ![The word restricted, above the number thirteen, in black, inside a red-filled square.](https://developer.apple.com/tutorials/images/com.apple.TVML/rating-icons-new-zealand-4@2x.png)
 
-##### Restricted 15
+### Restricted 15
 
 The resource name for the restricted icon for New Zealand is `NZ-r15`. Place a restricted 15 rating icon next to content to indicate that the content can only be watched by people 15 and older. Place a restricted 15 rating icon using `<img src="resource://NZ-r15" />`.
 
 ![The word restricted, above the nubmer 15, in black, inside a red-filled square.](https://developer.apple.com/tutorials/images/com.apple.TVML/rating-icons-new-zealand-5@2x.png)
 
-##### Restricted 16
+### Restricted 16
 
 The resource name for the restricted icon for New Zealand is `NZ-r16`. Place a restricted 16 rating icon next to content to indicate that the content can only be watched by people 16 and older. Place a restricted 16 rating icon using `<img src="resource://NZ-r16" />`.
 
 ![The word restricted, above the number sixteen, in black, inside a red-filled square.](https://developer.apple.com/tutorials/images/com.apple.TVML/rating-icons-new-zealand-6@2x.png)
 
-##### Restricted 18
+### Restricted 18
 
 The resource name for the restricted icon for New Zealand is `NZ-r18`. Place a restricted 18 rating icon next to content to indicate that the content can only be watched by people 18 and older. Place a restricted 18 rating icon using `<img src="resource://NZ-r18" />`.
 
 ![The word restricted, above the number eighteen, in black, inside a red-filled square.](https://developer.apple.com/tutorials/images/com.apple.TVML/rating-icons-new-zealand-7@2x.png)
 
-##### Parental Restriction 13
+### Parental Restriction 13
 
 The resource name for the parental restriction 13 icon for New Zealand is `NZ-rp13`. Place a parental restriction 13 rating icon next to content to indicate that children under the age of 13 must be supervised by a parent or guardian. Place a parental restriction 13 rating icon using `<img src="resource://NZ-rp13" />`.
 
 ![The phrase R P, above the number thirteen, in black, inside a red-filled square.](https://developer.apple.com/tutorials/images/com.apple.TVML/rating-icons-new-zealand-8@2x.png)
 
-##### Parental Restriction 16
+### Parental Restriction 16
 
 The resource name for the parental restriction 16 icon for New Zealand is `NZ-rp16`. Place a parental restriction 16 rating icon next to content to indicate that children under the age of 16 must be supervised by a parent or guardian. Place a parental restriction 16 rating icon using `<img src="resource://NZ-rp16" />`.
 
 ![The phrase R P, above the number sixteen, in black, inside a red-filled square.](https://developer.apple.com/tutorials/images/com.apple.TVML/rating-icons-new-zealand-9@2x.png)
 
-##### Restricted
+### Restricted
 
 The resource name for the restricted icon for New Zealand is `NZ-r`. Place a restricted rating icon next to content to indicate that there is a special restriction on the movie. See the associated label for the full conditions. Place a restricted rating icon using `<img src="resource://NZ-r" />`.
 

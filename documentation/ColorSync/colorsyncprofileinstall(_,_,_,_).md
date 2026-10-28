@@ -20,11 +20,11 @@ func ColorSyncProfileInstall(_ profile: ColorSyncProfile!, _ domain: CFString!, 
 extern bool ColorSyncProfileInstall(ColorSyncProfileRef profile, CFStringRef domain, CFStringRef subpath, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` on success, or `false` in case of error.
 
-#### Discussion
+## Discussion
 
 The `domain` is either [`kColorSyncProfileComputerDomain`](./kcolorsyncprofilecomputerdomain.md) or [`kColorSyncProfileUserDomain`](./kcolorsyncprofileuserdomain.md). [`kColorSyncProfileComputerDomain`](./kcolorsyncprofilecomputerdomain.md) is for sharing the profiles (from `/Library/ColorSync/Profiles`). [`kColorSyncProfileUserDomain`](./kcolorsyncprofileuserdomain.md) is for user custom profiles (installed under the home directory, that is, in `~/Library/ColorSync/Profiles`). `NULL` is the same as [`kColorSyncProfileUserDomain`](./kcolorsyncprofileuserdomain.md).
 

@@ -22,7 +22,7 @@ var displayName: String? { get set }
 @property (copy, readwrite, nullable) NSString * displayName;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a name that describes the printer’s manufacturer and model number to display in the app’s user interface. If `nil`, the [`txtRecord`](./txtrecord.md) property can produce the display name.
 

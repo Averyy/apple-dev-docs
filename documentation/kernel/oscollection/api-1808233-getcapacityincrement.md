@@ -11,11 +11,11 @@ Returns the storage increment of the collection.
 virtual unsigned int getCapacityIncrement() const = 0;
 ```
 
-#### Return Value
+## Return Value
 
 The storage increment of the collection.
 
-#### Overview
+## Overview
 
 Subclasses must implement this pure virtual member function. Most collection subclasses allocate their storage in multiples of the capacity increment.
 

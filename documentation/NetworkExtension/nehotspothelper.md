@@ -24,7 +24,7 @@ class NEHotspotHelper
 @interface NEHotspotHelper : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`NEHotspotHelper`](./nehotspothelper.md) API gives your app the ability to perform custom authentication for Wi-Fi Hotspots. It gives users a way to seamlessly connect to a large aggregated network of Wi-Fi Hotspots. The [`NEHotspotConfiguration`](./nehotspotconfiguration.md) API lets your app configure those hotspots.
 

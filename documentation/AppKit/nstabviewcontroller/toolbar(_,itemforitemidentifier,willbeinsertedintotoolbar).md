@@ -20,11 +20,11 @@ func toolbar(_ toolbar: NSToolbar, itemForItemIdentifier itemIdentifier: NSToolb
 - (NSToolbarItem *) toolbar:(NSToolbar *) toolbar itemForItemIdentifier:(NSToolbarItemIdentifier) itemIdentifier willBeInsertedIntoToolbar:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 The requested toolbar item or `nil` to indicate that the specified item is not supported. When the same item is requested again, you may return the same [`NSToolbarItem`](../nstoolbaritem.md) object or a different one.
 
-#### Discussion
+## Discussion
 
 This method is called for tab view interfaces that use the [`NSTabViewController.TabStyle.toolbar`](./tabstyle-swift.enum/toolbar.md) style. Use this method to create toolbar items for any custom identifiers you specified in the [`toolbarAllowedItemIdentifiers(_:)`](./toolbaralloweditemidentifiers%28_%29.md) and [`toolbarDefaultItemIdentifiers(_:)`](./toolbardefaultitemidentifiers%28_%29.md) methods.
 

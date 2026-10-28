@@ -25,11 +25,11 @@ func string(fromKilograms numberInKilograms: Double) -> String
 - (NSString *) stringFromKilograms:(double) numberInKilograms;
 ```
 
-#### Return Value
+## Return Value
 
 A string that combines a value and a unit string appropriate for the formatter’s locale.
 
-#### Discussion
+## Discussion
 
 This method converts the provided mass in kilograms into units appropriate for the formatter’s locale.
 

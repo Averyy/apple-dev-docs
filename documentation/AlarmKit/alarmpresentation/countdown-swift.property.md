@@ -17,7 +17,7 @@ The content for the snooze or countdown mode of the alarm.
 var countdown: AlarmPresentation.Countdown?
 ```
 
-#### Discussion
+## Discussion
 
 This value can be `nil` if the alarm doesn’t support countdown mode.
 

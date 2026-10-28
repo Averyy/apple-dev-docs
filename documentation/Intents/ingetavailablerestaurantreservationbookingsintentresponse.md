@@ -22,7 +22,7 @@ class INGetAvailableRestaurantReservationBookingsIntentResponse
 @interface INGetAvailableRestaurantReservationBookingsIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 An [`INGetAvailableRestaurantReservationBookingsIntentResponse`](./ingetavailablerestaurantreservationbookingsintentresponse.md) object contains the reservation booking objects that represent the time slots available for making a reservation at the given restaurant. You create an instance of this class when confirming or handling an [`INGetAvailableRestaurantReservationBookingsIntent`](./ingetavailablerestaurantreservationbookingsintent.md) object, which contains the basic details you use to determine your response.
 

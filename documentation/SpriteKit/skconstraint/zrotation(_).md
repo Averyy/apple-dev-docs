@@ -29,11 +29,11 @@ class func zRotation(_ zRange: SKRange) -> Self
 
 - [Creating a Look-At Constraint](../creating-a-look-at-constraint.md)
 
-#### Return Value
+## Return Value
 
 A new constraint.
 
-#### Discussion
+## Discussion
 
 Each time when constraints are applied, the node’s [`zRotation`](../sknode/zrotation.md) property is clamped so that it is within the specified range.
 

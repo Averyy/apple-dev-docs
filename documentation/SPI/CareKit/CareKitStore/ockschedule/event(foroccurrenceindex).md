@@ -17,7 +17,7 @@ Compute the date of the Nth event. The result will be nil if the Nth event start
 func event(forOccurrenceIndex occurrence: Int) -> OCKScheduleEvent?
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: `occurrence >= 0`
 

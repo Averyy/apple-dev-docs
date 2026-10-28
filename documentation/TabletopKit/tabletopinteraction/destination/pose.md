@@ -15,7 +15,7 @@ The 2D position and orientation of the interaction.
 let pose: TableVisualState.Pose2D
 ```
 
-#### Discussion
+## Discussion
 
 This pose is relative to [`equipmentID`](./equipmentid.md).
 

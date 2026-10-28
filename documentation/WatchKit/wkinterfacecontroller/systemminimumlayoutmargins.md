@@ -19,7 +19,7 @@ var systemMinimumLayoutMargins: NSDirectionalEdgeInsets { get }
 @property (nonatomic, readonly) NSDirectionalEdgeInsets systemMinimumLayoutMargins;
 ```
 
-#### Discussion
+## Discussion
 
 The 40 mm and 44 mm watches have rounded corners. As a result, the items in the status bar do not extend all the way to the edge of the screen.
 

@@ -20,11 +20,11 @@ string AppsReportingCampaign.BillingEvent
 - `TAPS`: The campaign is charged per tap.
 - `IMPRESSIONS`: The campaign is charged per thousand impressions (CPM).
 
-#### Discussion
+## Discussion
 
 This determines which report metrics are actionable for cost analysis: `TAPS` billing pairs with tap-based cost metrics, while `IMPRESSIONS` billing pairs with CPM-based ones.
 
-##### Example
+### Example
 
 ```json
 {

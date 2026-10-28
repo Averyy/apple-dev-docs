@@ -5,13 +5,13 @@
 
 Learn how to use Transforms to move, scale, and rotate entities in RealityKit.
 
-#### Overview
+## Overview
 
 RealityKit [`Entity`](../RealityKit/entity.md) objects exist in a tree, and each entity can have any number of subentities. (The entities themselves can standalone, or can be in a single container.) Every entity in the tree stores its own transform component. The transform contains the `translation`, `scale`, and `orientation` relative to its container entity. The *root* of each tree is an entity without a container entity.
 
 Each entity exists in its own coordinate system that defines the origin and orientation of the three ordinal directions (the x, y, and z axes). The coordinate system is relative to its container coordinate system and is defined by its transform.
 
-#### Arrange entities with transforms
+## Arrange entities with transforms
 
 A root entity has no parent entity. Its location in the scene is either controlled by SwiftUI or placed via a [`SpatialTrackingSession`](../RealityKit/spatialtrackingsession.md). SwiftUI provides a root entity for the volume defined by the `RealityView`. The root entity defines the root coordinate system.
 
@@ -44,7 +44,7 @@ The reality view provides the root entity, which is located at the center of a v
 
 In this example there are two cubes. Each cube has eight corners, and each corner is `0.025` units away from the origin. The cubes appear in different locations in the scene because the system applies the `transform` to each corner of the cubes moving them from the local coordinate system (also called *model space*) to the world coordinate system. For example, the top, right, forward corner of the cube is at `{0.025, 0.025, 0.025}` in `model space`. The entity is translated by `{0.05, 0.0, 0.0}` The top-right-forward corner is then at `{0.075, 0.025, 0.025}`.
 
-#### Build a simple entity to experiment with
+## Build a simple entity to experiment with
 
 To be visible, an entity must have a [`MeshDescriptor`](../RealityKit/meshdescriptor.md) and a [`Material`](../RealityKit/material.md). A `MeshDescriptor` contains the description of a mesh. In this case, the mesh contains all of the vertices and how they connect into triangles. A Material specifies the color and appearance of the entity.
 
@@ -103,7 +103,7 @@ func createCube() -> ModelEntity? {
 
 > **Note**: For more information about constructing meshes, see [`MeshDescriptor`](../RealityKit/meshdescriptor.md). When you set the `transform` on an entity, the system transforms the mesh vertices to the new coordinate system.
 
-#### Add the cube entity to a reality view
+## Add the cube entity to a reality view
 
 You add the `cube` entity to the volumetric window via SwiftUI like this:
 
@@ -117,7 +117,7 @@ RealityView { content in
 
 The cube entity appears at the center of the volume, the origin of the volume’s root entity.
 
-#### Move the cube with a transform
+## Move the cube with a transform
 
 To move the cube use the [`Transform`](../RealityKit/transform.md) component with the `translation` argument:
 
@@ -139,7 +139,7 @@ The net effect is that the new vertices have `0.1` added to their `x` component.
 
 [Video: Animation showing the cube translate along the x-axis. The opening frame is an orange box near the center of the view. The x-axis is selected and the move to the right button is tapped. When tapped, the orange cube moves to the right 0.1 units. The move to the left button is tapped and the orange cube moves back to its original position, 0.1 units to the left.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/translate-cube-on-x-axis.mp4)
 
-#### Scale the cube with a transform
+## Scale the cube with a transform
 
 To scale an entity use the `transform` property. To apply a uniform scale of 2 to the entity change the code, like this:
 
@@ -159,7 +159,7 @@ After multiplying all of the vertices by the scale matrix, the cube is twice as 
 
 [Video: Animation showing the cube scaled uniformly. In the center of the view is an orange cube. The scale up button is tapped and the cube grows twice as large. The scale down button is tapped and the cube shrinks back to its original size.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/scale-cube-uniform.mp4)
 
-#### Combine transforms
+## Combine transforms
 
 These two operations combine into a single operation with the `Transform` type like this:
 
@@ -203,7 +203,7 @@ Which yields a matrix like this:
 
 The scaled and translated vertices yield a cube that is twice as large in each direction and moved `0.1` units to the right.
 
-#### Rotate entities
+## Rotate entities
 
 To rotate the cube 45° (π/4 radians), use the `Transform` type with the `rotation` argument like this:
 
@@ -238,7 +238,7 @@ Applying this transformation matrix to the full set of vertices yields this new 
 
 Notice that the fourth and sixth vertex didn’t change. The axis of rotation goes through those two vertices so nothing changes on that axis.
 
-#### Combine rotation, translation, and scale in one transform
+## Combine rotation, translation, and scale in one transform
 
 Rotation combined with other transforms might yield unexpected results depending on the order of the application. You can combine all three transformations in the `Transform` initializer like this:
 

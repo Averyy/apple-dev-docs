@@ -24,11 +24,11 @@ func CFHTTPMessageAppendBytes(_ message: CFHTTPMessage, _ newBytes: UnsafePointe
 extern Boolean CFHTTPMessageAppendBytes(CFHTTPMessageRef message, const UInt8 *newBytes, CFIndex numBytes);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the data was successfully appended, otherwise `FALSE`.
 
-#### Discussion
+## Discussion
 
 This function appends the data specified by `newBytes` to the specified message object which was created by calling [`CFHTTPMessageCreateEmpty(_:_:)`](./cfhttpmessagecreateempty%28_,_%29.md). The data is an incoming serialized HTTP request or response received from a client or a server. While appending the data, this function deserializes it, removes any HTTP-based formatting that the message may contain, and stores the message in the message object. You can then call [`CFHTTPMessageCopyVersion(_:)`](./cfhttpmessagecopyversion%28_%29.md), [`CFHTTPMessageCopyBody(_:)`](./cfhttpmessagecopybody%28_%29.md), [`CFHTTPMessageCopyHeaderFieldValue(_:_:)`](./cfhttpmessagecopyheaderfieldvalue%28_,_%29.md), and [`CFHTTPMessageCopyAllHeaderFields(_:)`](./cfhttpmessagecopyallheaderfields%28_%29.md) to get the message’s HTTP version, the message’s body, a specific header field, and all of the message’s headers, respectively.
 

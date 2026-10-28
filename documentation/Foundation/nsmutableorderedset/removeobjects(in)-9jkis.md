@@ -25,7 +25,7 @@ func removeObjects(in range: NSRange)
 - (void) removeObjectsInRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 The objects are removed using [`removeObject(at:)`](./removeobject%28at%29.md).
 

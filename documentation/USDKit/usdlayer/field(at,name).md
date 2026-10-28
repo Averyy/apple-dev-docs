@@ -20,7 +20,7 @@ Returns the value of the named field at the given path, or `nil` if no such fiel
 func field(at path: USDLayer.Path, name: USDToken) -> USDValue?
 ```
 
-#### Return Value
+## Return Value
 
 The field’s value, or `nil` if unauthored.
 

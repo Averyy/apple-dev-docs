@@ -24,7 +24,7 @@ var kAudioFilePropertyID3Tag: AudioFilePropertyID { get }
 kAudioFilePropertyID3Tag
 ```
 
-#### Discussion
+## Discussion
 
 When setting, this property must be set before calling the [`AudioFileWritePackets(_:_:_:_:_:_:_:)`](./audiofilewritepackets%28_,_,_,_,_,_,_%29.md) function. This property is gettable and settable when using ID3 version 2. It is gettable only for version ID3 version 1. A sound file’s ID3 tag itself is not manipulated when getting or setting this property.
 

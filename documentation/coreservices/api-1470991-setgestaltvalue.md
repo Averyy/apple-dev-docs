@@ -15,11 +15,11 @@ Sets the value the function `Gestalt` will return for a specified selector code,
 OSErr SetGestaltValue(OSType selector, SInt32 newValue);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Gestalt Manager](./carbon_core/gestalt_manager.md).
 
-#### Discussion
+## Discussion
 
 You use `SetGestaltValue` to establish a value for a selector, without regard to whether the selector was already installed.
 

@@ -17,7 +17,7 @@ Returns a Boolean value that indicates whether the window controllers of a docum
 - (BOOL) shouldCreateUI;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the window controllers (`NSWindowController` instances) of a document should be created when the document is created.
 

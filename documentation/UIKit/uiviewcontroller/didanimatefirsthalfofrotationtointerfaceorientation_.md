@@ -19,7 +19,7 @@ Sent to the view controller after the completion of the first half of the user i
 - (void) didAnimateFirstHalfOfRotationToInterfaceOrientation:(UIInterfaceOrientation) toInterfaceOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called during two-step rotation animations only. Subclasses can override this method and use it to adjust their views between the first and second half of the animations. This method is called outside of any animation transactions and while any header or footer views are offscreen.
 

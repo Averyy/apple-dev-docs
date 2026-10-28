@@ -32,7 +32,7 @@ var specialPricingBadgeImage: INImage? { get set }
 @property (atomic, copy, readwrite, nullable) INImage * specialPricingBadgeImage;
 ```
 
-#### Discussion
+## Discussion
 
 When offering special pricing, use this property to specify an image for Maps to display next to the pricing information. The width and height of the image must both be 12 points and the image must be a template image—that is, an image whose alpha channel defines the shape of the image. Set this property to `nil` if special pricing does not apply.
 

@@ -5,7 +5,7 @@
 
 Use SwiftUI animations to indicate data updates in your widgets and Live Activities.
 
-#### Overview
+## Overview
 
 Animations bring your widgets and Live Activities to life and alert a person when new information is available. Widgets and Live Activities animate data updates with default animations or SwiftUI animations you choose, bringing a person’s attention to updated data. In earlier OS versions, widgets don’t animate, and Live Activities only use a subset of SwiftUI transitions and animations.
 
@@ -27,7 +27,7 @@ For Live Activities that appear on devices that run iOS 16 or earlier, the syste
 
 For more information about SwiftUI animations, refer to [Animations](../SwiftUI/animations.md).
 
-##### Add transitions and animations to views that update their data
+### Add transitions and animations to views that update their data
 
 In addition to the default transitions and animations that the system performs when views update their data, you can choose other built-in SwiftUI transitions and animations. Widgets and Live Activities support all built-in SwiftUI transitions and animations. For example, you could configure a content transition for numeric text as shown in this example:
 
@@ -55,7 +55,7 @@ Text("Some text with \(entry.value) that changes.")
     .animation(.default.speed(0.25).delay(0.5), value: entry.value)
 ```
 
-##### Add transitions and animations to additional views
+### Add transitions and animations to additional views
 
 In addition to adding transitions or animations to a view that changes its data, you can animate a view when other widget information changes. To animate a view when a certain value changes, first associate the view you want to animate with that value’s data model object. This is easiest when your data model conforms to the [`Hashable`](../Swift/hashable.md) protocol. If your data model doesn’t conform to `Hashable`, change its code accordingly. Then, associate the view with the data model using the [`id(_:)`](../SwiftUI/view/id%28_%29.md) view modifier. Finally, add a transition or animation.
 
@@ -81,7 +81,7 @@ struct LastDrinkView: View {
 }
 ```
 
-##### Disable animations
+### Disable animations
 
 If a content update changes many views in your widget or Live Activity, consider disabling transitions and animations for some views to direct a person’s attention to the most important updates. To disable animations for a view, including default animations, pass [`identity`](../SwiftUI/contenttransition/identity.md) to [`transition(_:)`](../SwiftUI/view/transition%28_%29-5h5h0.md) or `nil` to the `animation` parameter of [`withAnimation(_:_:)`](../SwiftUI/withanimation%28_,_%29.md) and [`animation(_:value:)`](../SwiftUI/view/animation%28_,value%29.md).
 

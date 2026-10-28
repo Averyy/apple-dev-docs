@@ -23,7 +23,7 @@ func gss_display_mech_attr(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ me
 OM_uint32 gss_display_mech_attr(OM_uint32 *minor_status, gss_const_OID mech_attr, gss_buffer_t name, gss_buffer_t short_desc, gss_buffer_t long_desc);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success or [`GSS_S_BAD_MECH`](./gss_s_bad_mech.md) if the desired mechanism is unsupported. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 

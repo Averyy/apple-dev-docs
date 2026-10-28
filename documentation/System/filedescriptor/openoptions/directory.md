@@ -21,7 +21,7 @@ Indicates that opening the file only succeeds if the file is a directory.
 static var directory: FileDescriptor.OpenOptions { get }
 ```
 
-#### Discussion
+## Discussion
 
 If you specify this option and the file path you pass to doc:FileDescriptor/open(_:_:options:permissions:retryOnInterrupt:)-2266j is a not a directory, then that open operation fails.
 

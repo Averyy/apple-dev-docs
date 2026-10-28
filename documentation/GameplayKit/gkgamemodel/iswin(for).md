@@ -24,11 +24,11 @@ optional func isWin(for player: any GKGameModelPlayer) -> Bool
 - (BOOL) isWinForPlayer:(id<GKGameModelPlayer>) player;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if this game model represents a winning state for the specified player; [`false`](../../Swift/false.md) if the game has been won or has not yet concluded.
 
-#### Discussion
+## Discussion
 
 If the game has been won or lost, a strategist evaluating the game model can avoid evaluating further moves in the game and can therefore plan a successful move more efficiently.
 

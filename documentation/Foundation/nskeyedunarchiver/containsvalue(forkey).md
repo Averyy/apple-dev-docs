@@ -25,7 +25,7 @@ func containsValue(forKey key: String) -> Bool
 - (BOOL) containsValueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the archive contains a value for `key` within the current decoding scope, otherwise [`false`](../../Swift/false.md).
 

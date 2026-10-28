@@ -19,7 +19,7 @@ var titleAlignment: NSTextAlignment { get set }
 @property NSTextAlignment titleAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 The alignment can be one of the following values: `NSLeftTextAlignment`, `NSCenterTextAlignment`, or `NSRightTextAlignment`. The default alignment is `NSRightTextAlignment`.
 

@@ -15,7 +15,7 @@ Initialize a world anchor with a transform and indicate if it should be shared w
 init(originFromAnchorTransform: simd_float4x4, sharedWithNearbyParticipants: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:
 >

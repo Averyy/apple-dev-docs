@@ -5,7 +5,7 @@
 
 For gestures that do not easily match a specific pattern, or when you want to use a gesture recognizer to gather touch input, create a continuous gesture recognizer.
 
-#### Overview
+## Overview
 
 A continuous gesture recognizer lets you encapsulate your event-handling logic in one place and reuse that logic in multiple views. Although continuous gesture recognizers require a little more effort to implement the state machine, they also perform tasks that would be difficult with a discrete gesture recognizer, such as capturing free-form input.
 
@@ -15,7 +15,7 @@ The following image shows a free-form gesture whose input you might use to draw 
 
 For a custom gesture recognizer that captures touch input, there are no explicit conditions that trigger a failure of the gesture. Instead, the gesture recognizer captures touch input until the touch sequence ends or is cancelled by the system. While the gesture is ongoing, the gesture recognizer places the touch data into a temporary buffer. Clients of the gesture recognizer use their action method to fetch that buffer and apply it temporarily to the app’s content. For example, a client might use that data to draw the path onscreen. Only when the touch sequence ends successfully would those target objects commit the data permanently to the app’s data structures.
 
-##### Saving Gesture-Related Data
+### Saving Gesture-Related Data
 
 A continuous gesture recognizer that tracks touch events needs a way to store that information. You cannot simply store references to the [`UITouch`](./uitouch.md) objects that you receive because UIKit reuses those objects and overwrites any old values. Instead, you must define custom data structures to store the touch information you need.
 
@@ -48,7 +48,7 @@ class TouchCaptureGesture: UIGestureRecognizer, NSCoding {
 }
 ```
 
-##### Processing Touch Events
+### Processing Touch Events
 
 The following code shows the [`touchesBegan(_:with:)`](./uiresponder/touchesbegan%28_,with%29.md) method of the `TouchCaptureGesture` class. The gesture fails immediately if the initial event contains two touches. If there is only one touch, the touch object is saved in the `trackedTouch` property and the custom `addSample` helper method creates a new `StrokeSample` struct with the touch data. After the first touch occurs, any new touches added to the event sequence are ignored.
 
@@ -95,7 +95,7 @@ override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
 }
 ```
 
-##### Resetting the Gesture Recognizer
+### Resetting the Gesture Recognizer
 
 Always implement the [`touchesCancelled(_:with:)`](./uiresponder/touchescancelled%28_,with%29.md) and [`reset()`](./uigesturerecognizer/reset%28%29.md) methods in your gesture recognizers and use them to perform any cleanup. The following code shows the implementation of these methods for the `TouchCaptureGesture` class. Both methods restore the gesture recognizer’s properties to their initial values.
 

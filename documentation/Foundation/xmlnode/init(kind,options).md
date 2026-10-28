@@ -20,11 +20,11 @@ init(kind: XMLNode.Kind, options: XMLNode.Options = [])
 - (instancetype) initWithKind:(NSXMLNodeKind) kind options:(NSXMLNodeOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSXMLNode` object initialized with the given kind and options, or `nil` if the object couldn’t be created. If `kind` is not a valid NSXMLNodeKind constant, the method returns an `NSXMLNode` object of kind `NSXMLInvalidKind`.
 
-#### Discussion
+## Discussion
 
 Do not use this initializer for creating instances of [`XMLDTDNode`](../xmldtdnode.md) for attribute-list declarations. Instead, use the [`dtdNode(withXMLString:)`](./dtdnode%28withxmlstring%29.md) class method of this class or the [`init(xmlString:)`](../xmldtdnode/init%28xmlstring%29-1dyhd.md) method of the `NSXMLDTDNode` class.
 

@@ -23,7 +23,7 @@ var kDNSServiceType_MG: Int { get }
 kDNSServiceType_MG
 ```
 
-#### Discussion
+## Discussion
 
 Mail group member.
 

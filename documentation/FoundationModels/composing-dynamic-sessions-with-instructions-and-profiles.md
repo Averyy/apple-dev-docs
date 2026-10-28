@@ -5,7 +5,7 @@
 
 Adapt sessions dynamically at runtime by loading instructions and tools based on the state of your app.
 
-#### Overview
+## Overview
 
 As you build features for sophisticated use cases, effective context management becomes essential. For example, a cooking app that provides a guided multi-step workflow where a person discovers a recipe, substitutes ingredients, searches inventory, and provides step-by-step cooking guidance. All of these steps together would be difficult to build well with a static session.
 
@@ -19,7 +19,7 @@ The framework introduces three composable layers for building dynamic apps that 
 
 Because the body of dynamic instructions re-evaluates before each call to the model, the model always sees a snapshot of your app’s current state.
 
-#### Declare dynamic instructions
+## Declare dynamic instructions
 
 You use [`DynamicInstructions`](./dynamicinstructions.md) to declaratively specify the instructions and list of tools that are necessary for the state your app is in. Conform a type to [`DynamicInstructions`](./dynamicinstructions.md) and implement its `body` property. Carefully consider using only the instructions and tools that are necessary for the task since a dynamic instruction evaluates before each model request.
 
@@ -66,7 +66,7 @@ let session = LanguageModelSession(
 
 > ❗ **Important**: When conditionally providing instructions and tools, append them in place to improve latency from the use of model caching. For more information about prompt caching, see [Optimizing key-value caching in language model sessions](./optimizing-key-value-caching-in-language-model-sessions.md).
 
-#### Configure a profile
+## Configure a profile
 
 A [`LanguageModelSession.Profile`](./languagemodelsession/profile.md) associates [`DynamicInstructions`](./dynamicinstructions.md) with session-level properties, making instructions, tools, and modifiers more dynamic. Compose a [`LanguageModelSession.Profile`](./languagemodelsession/profile.md) based on the task you want to accomplish. Parameterizing instructions, tools, and modifiers makes the API surface flexible enough to fit your needs. For example, you might choose to parameterize the model temperature and reasoning level depending on the state of your app:
 
@@ -82,7 +82,7 @@ Profile {
 .reasoningLevel(likesAstronomy ? .deep : .light)
 ```
 
-#### Orchestrate multiple profiles with a dynamic profile
+## Orchestrate multiple profiles with a dynamic profile
 
 Instead of writing an all-encompassing profile, break up the problem into multiple domain-specific profiles. A [`LanguageModelSession.DynamicProfile`](./languagemodelsession/dynamicprofile.md) orchestrates the transitions between your profiles by using conditionals and nesting. When the active profile changes, the session adopts the new model and generation options on the next model request. The following diagram illustrates a dynamic profile managing three profiles, each with their own model configuration and conditional instructions:
 
@@ -130,7 +130,7 @@ let session = LanguageModelSession(
 )
 ```
 
-#### Apply modifier precedence rules
+## Apply modifier precedence rules
 
 Dynamic profiles and subprofiles support the same value modifiers, like temperature, reasoning level, and so on. When the same modifier appears at multiple levels, a three-tier precedence rule determines which value to use — from highest to lowest priority:
 
@@ -174,7 +174,7 @@ struct WritingContent: LanguageModelSession.DynamicProfile {
 }
 ```
 
-#### Respond to life cycle events
+## Respond to life cycle events
 
 Observe and react to key moments during a session by using life cycle modifiers. Unlike value modifiers, life cycle callbacks accumulate across nested profiles. When a profile and a subprofile both register a callback, the framework calls both. The following shows the available modifiers and when they run:
 
@@ -206,7 +206,7 @@ Profile {
 }
 ```
 
-#### Access session-level properties
+## Access session-level properties
 
 The building blocks of dynamic instructions and profiles help you define what the model sees and how it’s configured. Use `@SessionProperty` to access session properties from within a [`LanguageModelSession.DynamicProfile`](./languagemodelsession/dynamicprofile.md), [`LanguageModelSession.Profile`](./languagemodelsession/profile.md), [`DynamicInstructions`](./dynamicinstructions.md), and [`Tool`](./tool.md).
 
@@ -265,7 +265,7 @@ struct PlannerTool: Tool {
 }
 ```
 
-#### Create reusable components with a custom modifier
+## Create reusable components with a custom modifier
 
 A [`LanguageModelSession.DynamicProfileModifier`](./languagemodelsession/dynamicprofilemodifier.md) allows you to compose traits like model selection, temperature, life cycle callbacks, and so on, into a self-contained modifier that you attach to your profile. A modifier receives the wrapped content and returns a new [`LanguageModelSession.DynamicProfile`](./languagemodelsession/dynamicprofile.md) `body`. For example, the following creates a low temperature modifier for debugging that logs debug information after a request:
 
@@ -296,7 +296,7 @@ Profile {
 .debug()
 ```
 
-#### Transform the session history
+## Transform the session history
 
 Because the transcript grows with every turn in a session, context size limits become important to consider. Before prompting the model, a profile can transform the transcript it sends to filter entries that aren’t necessary for the request. For example, you might drop completed tool calls, or even remove sensitive information, before sending a request to a model. Use the [`historyTransform(_:)`](./languagemodelsession/dynamicprofile/historytransform%28_%29.md) modifier to receive the current history before each model request and return only the entries to use for the request. The following only sends the last twenty entries to the model:
 

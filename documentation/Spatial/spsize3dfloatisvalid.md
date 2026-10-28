@@ -19,11 +19,11 @@
 static bool SPSize3DFloatIsValid(SPSize3DFloat size);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether a size structure represents a valid size.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether a size structure represents a valid size.
 

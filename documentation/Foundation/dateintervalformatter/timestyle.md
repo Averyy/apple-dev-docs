@@ -25,7 +25,7 @@ var timeStyle: DateIntervalFormatter.Style { get set }
 @property NSDateIntervalFormatterStyle timeStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to an appropriate value before generating string values. The default value of this property is [`DateIntervalFormatter.Style.none`](./style/none.md).
 

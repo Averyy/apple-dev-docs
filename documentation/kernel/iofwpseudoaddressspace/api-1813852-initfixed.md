@@ -17,7 +17,7 @@ virtual bool initFixed(
  void *refcon);
 ```
 
-#### Return Value
+## Return Value
 
 returns true on success, false on failure
 

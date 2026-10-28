@@ -5,7 +5,7 @@
 
 Describes a color isolation mask.
 
-#### Overview
+## Overview
 
 The `mask-isolation` element has a `data` element that contains the information that describes the mask. The attributes below control the characteristics of the mask. You can give additional mask parameters using the `param` element.
 

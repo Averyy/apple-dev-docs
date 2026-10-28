@@ -12,11 +12,11 @@ SInt32 GetSCSIDomainIdentifier (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 returns SCSI Domain Identifier.
 
-#### Overview
+## Overview
 
 Accessor method to get the SCSI Domain Identifier.
 

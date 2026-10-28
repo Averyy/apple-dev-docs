@@ -21,7 +21,7 @@ The subscription offer the customer is eligible for, and that applies to the sub
 var activeOffer: Product.SubscriptionOffer? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Always display the terms of this subscription offer along with your control because it represents the offer that StoreKit automatically applies when you call the [`subscribe()`](./subscribe%28%29.md) method. If the [`activeOffer`](./activeoffer.md) property is `nil`, there’s no subscription offer.
 

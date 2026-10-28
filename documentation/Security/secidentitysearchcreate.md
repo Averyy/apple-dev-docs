@@ -15,11 +15,11 @@ Creates a search object for finding identities.
 OSStatus SecIdentitySearchCreate(CFTypeRef keychainOrArray, CSSM_KEYUSE keyUsage, SecIdentitySearchRef*searchRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 You can OR `CSSM_KEYUSE` values together to set more than one value for key use. Use the returned search object in calls to the [`SecIdentitySearchCopyNext`](./secidentitysearchcopynext.md) function to obtain identities that match the search criteria.
 

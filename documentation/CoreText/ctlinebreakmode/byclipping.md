@@ -23,7 +23,7 @@ case byClipping
 kCTLineBreakByClipping
 ```
 
-#### Discussion
+## Discussion
 
 Lines are simply not drawn past the edge of the frame.
 

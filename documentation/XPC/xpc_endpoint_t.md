@@ -25,7 +25,7 @@ typealias xpc_endpoint_t = xpc_object_t
 typedef xpc_object_t xpc_endpoint_t;
 ```
 
-#### Discussion
+## Discussion
 
 Unlike a connection, an endpoint is an inert object that doesn’t have any associated runtime activity. So, it is safe to pass an endpoint in a message. Upon receiving an endpoint, the recipient can use [`xpc_connection_create_from_endpoint(_:)`](./xpc_connection_create_from_endpoint%28_%29.md) to create as many distinct connections as necessary.
 

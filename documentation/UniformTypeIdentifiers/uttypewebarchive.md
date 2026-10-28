@@ -21,7 +21,7 @@ A type that represents WebKit web archive data.
 extern UTType * const UTTypeWebArchive;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.webarchive`.
 

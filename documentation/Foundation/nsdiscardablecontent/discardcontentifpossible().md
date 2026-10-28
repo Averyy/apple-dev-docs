@@ -26,7 +26,7 @@ func discardContentIfPossible()
 - (void) discardContentIfPossible;
 ```
 
-#### Discussion
+## Discussion
 
 This method should only discard the contents of the object if the value of the accessed counter is 0. Otherwise, it should do nothing.
 

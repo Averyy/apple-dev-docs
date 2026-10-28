@@ -15,7 +15,7 @@ A flag that indicates starting or stopping for normal I/O operation.
 None
 ```
 
-#### Discussion
+## Discussion
 
 This option results in enabling or disabling all necessary hardware.
 

@@ -23,7 +23,7 @@ func reportAllAcceptedPublicKeyCredentials(forRelyingParty relyingParty: String,
 - (void) reportAllAcceptedPublicKeyCredentialsForRelyingParty:(NSString *) relyingParty userHandle:(NSData *) userHandle acceptedCredentialIDs:(NSArray<NSData *> *) acceptedCredentialIDs;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when a relying party sends a list of accepted credentials by calling [`reportAllAcceptedPublicKeyCredentials(relyingPartyIdentifier:userHandle:acceptedCredentialIDs:)`](../ascredentialupdater/reportallacceptedpublickeycredentials%28relyingpartyidentifier,userhandle,acceptedcredentialids%29.md). Your manager can hide or remove any credential that’s absent from the `acceptedCredentialIDs` array.
 

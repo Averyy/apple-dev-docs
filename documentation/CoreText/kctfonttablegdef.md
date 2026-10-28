@@ -23,7 +23,7 @@ var kCTFontTableGDEF: Int { get }
 kCTFontTableGDEF
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for glyph definition.
 

@@ -16,11 +16,11 @@ Provides a new notification for display on your accessory.
 func addNotification(_ notification: AccessoryNotification, alertingContext: AlertingContext) async throws -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the accessory alerted for the notification, `false` otherwise. If this method throws an error, the system assumes the accessory did not alert.
 
-#### Discussion
+## Discussion
 
 Parse the notification details, select the information to display on your accessory, and convert it to data for transmission. Return `true` if your accessory successfully alerts for the notification.
 

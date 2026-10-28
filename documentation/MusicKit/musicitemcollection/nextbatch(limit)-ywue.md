@@ -23,7 +23,7 @@ func nextBatch(limit: Int? = nil) async throws -> MusicItemCollection<MusicItemT
 
 Available when `MusicItemType` conforms to `MusicItem`.
 
-#### Discussion
+## Discussion
 
 This method returns the next batch of items as another collection of music items of the same type.
 

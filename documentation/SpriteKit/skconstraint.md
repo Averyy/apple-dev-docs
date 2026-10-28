@@ -29,7 +29,7 @@ class SKConstraint
 
 - [Working with Inverse Kinematics](./working-with-inverse-kinematics.md)
 
-#### Overview
+## Overview
 
 An [`SKConstraint`](./skconstraint.md) object describes a mathematical constraint on a node’s position or orientation. You attach constraints to nodes; after a scene processes any actions and physics interactions, it applies constraints attached to nodes in its node tree. Use constraints to ensure that certain relationships are true before the system renders a scene. For example, you might use a constraint to:
 

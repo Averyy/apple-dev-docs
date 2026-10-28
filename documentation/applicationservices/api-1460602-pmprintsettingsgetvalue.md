@@ -19,11 +19,11 @@ func PMPrintSettingsGetValue(_ printSettings: PMPrintSettings, _ key: CFString, 
 OSStatus PMPrintSettingsGetValue(PMPrintSettings printSettings, CFStringRef key, CFTypeRef  _Nullable *value);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function, together with the function `PMPrintSettingsSetValue`, makes it possible to access print settings directly. 
 

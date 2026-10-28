@@ -18,7 +18,7 @@ A class for an extension that handles shield actions.
 class ShieldActionDelegate
 ```
 
-#### Overview
+## Overview
 
 Subclass `ShieldActionDelegate` to allow client extensions to respond to user actions on a shield that covers an application or website. The system doesn’t provide the name of a shielded [`Application`](./application.md), [`WebDomain`](./webdomain.md), or [`ActivityCategory`](./activitycategory.md) to preserve the Family Sharing group’s privacy. Instead, the system uses a token to indicate what content it is shielding.
 

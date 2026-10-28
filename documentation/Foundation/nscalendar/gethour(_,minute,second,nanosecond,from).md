@@ -25,7 +25,7 @@ func getHour(_ hourValuePointer: UnsafeMutablePointer<Int>?, minute minuteValueP
 - (void) getHour:(NSInteger *) hourValuePointer minute:(NSInteger *) minuteValuePointer second:(NSInteger *) secondValuePointer nanosecond:(NSInteger *) nanosecondValuePointer fromDate:(NSDate *) date;
 ```
 
-#### Discussion
+## Discussion
 
 Pass `NULL` to ignore any individual component parameter.
 

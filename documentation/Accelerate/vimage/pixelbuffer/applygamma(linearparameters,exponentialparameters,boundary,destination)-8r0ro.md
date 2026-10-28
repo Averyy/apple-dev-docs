@@ -23,7 +23,7 @@ func applyGamma(linearParameters: (scale: Float, bias: Float), exponentialParame
 
 Available when `Format` conforms to `StaticPixelFormat` and `Format.ComponentType` is `Float`.
 
-#### Discussion
+## Discussion
 
 This function computes the output value of each pixel using the following pseudocode:
 

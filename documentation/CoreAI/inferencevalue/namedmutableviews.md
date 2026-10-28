@@ -19,7 +19,7 @@ A collection of named mutable views into inference values.
 struct NamedMutableViews
 ```
 
-#### Overview
+## Overview
 
 Each view can only be taken once to ensure exclusive access.
 

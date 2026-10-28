@@ -25,11 +25,11 @@ init(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize)
 - (instancetype) initWithTileSet:(SKTileSet *) tileSet columns:(NSUInteger) columns rows:(NSUInteger) rows tileSize:(CGSize) tileSize;
 ```
 
-#### Return Value
+## Return Value
 
 A new tile map node.
 
-#### Discussion
+## Discussion
 
 Creates an empty tile map.
 

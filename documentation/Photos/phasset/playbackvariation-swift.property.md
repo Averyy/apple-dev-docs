@@ -24,7 +24,7 @@ var playbackVariation: PHAsset.PlaybackVariation { get }
 @property (nonatomic, assign, readonly) PHAssetPlaybackVariation playbackVariation;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to determine whether a Live Photo plays back as a Long Exposure, Mirror (Bounce), or Autoloop (Loop):
 

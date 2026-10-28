@@ -15,11 +15,11 @@ virtual IOReturn disablePacketFilter(
  IOOptionBits options = 0) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success, or an error otherwise.
 
-#### Overview
+## Overview
 
 After a supported filter has been successfully enabled, a client can call this method to disable that filter. This method call is synchronized by the workloop's gate.
 

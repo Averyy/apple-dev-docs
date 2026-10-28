@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, indexPathForInd
 - (NSIndexPath *) collectionView:(UICollectionView *) collectionView indexPathForIndexTitle:(NSString *) title atIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The index path for the collection view item that should appear when the user selects the index.
 
-#### Discussion
+## Discussion
 
 Use this method to support fast scrolling through your collection view’s content. After returning a set of index strings from your [`indexTitles(for:)`](./indextitles%28for%29.md) method, the collection view calls this method for each string to fetch the collection view item to use as the scrolling destination.
 

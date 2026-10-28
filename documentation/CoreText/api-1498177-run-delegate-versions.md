@@ -5,7 +5,7 @@
 
 The version of the run delegate.
 
-#### Overview
+## Overview
 
 Set the version field of the [`CTRunDelegateCallbacks`](./ctrundelegatecallbacks.md) structure to `kCTRunDelegateCurrentVersion` when creating a CTRunDelegate object with a call to [`CTRunDelegateCreate(_:_:)`](./ctrundelegatecreate%28_,_%29.md).
 

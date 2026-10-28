@@ -16,7 +16,7 @@
 kINQUIRY_Byte56_CLOCKING_Mask
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test CLOCKING bits.
 

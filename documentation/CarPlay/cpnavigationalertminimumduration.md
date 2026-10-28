@@ -21,7 +21,7 @@ var CPNavigationAlertMinimumDuration: TimeInterval { get }
 static const NSTimeInterval CPNavigationAlertMinimumDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The minimum duration is in effect when [`duration`](./cpnavigationalert/duration.md) is not zero.
 

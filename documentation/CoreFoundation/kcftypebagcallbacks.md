@@ -23,7 +23,7 @@ let kCFTypeBagCallBacks: CFBagCallBacks
 extern const CFBagCallBacks kCFTypeBagCallBacks;
 ```
 
-#### Discussion
+## Discussion
 
 Predefined [`CFBagCallBacks`](./cfbagcallbacks.md) structure containing a set of callbacks appropriate for use when the values in a CFBag are all CFType-derived objects. The retain callback is `CFRetain`, the release callback is `CFRelease`, the copy callback is `CFCopyDescription`, the equal callback is `CFEqual`, and the hash callback is `CFHash`. Therefore, if you use this constant when creating the collection, items are automatically retained when added to the collection, and released when removed from the collection.
 

@@ -24,7 +24,7 @@ func properties(_ properties: AutoreleasingUnsafeMutablePointer<NSDictionary>?) 
 
 - [Optimizing FxPlug plug-ins](../../Professional-Video-Applications/optimizing-fxplug-plug-ins.md)
 
-#### Discussion
+## Discussion
 
 This method is called once per plug-in instantiation and the result is cached for later use by the host application. The dictionary returned by this method should contain various `kFxPropertyKeys` and their corresponding values.
 

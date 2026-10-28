@@ -25,7 +25,7 @@ static var outOfDomain: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A numerical input argument was outside the defined domain of the mathematical function.
 

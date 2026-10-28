@@ -23,7 +23,7 @@ class func deactivationRequest(forExtensionWithIdentifier identifier: String, qu
 
 - [Installing System Extensions and Drivers](../installing-system-extensions-and-drivers.md)
 
-#### Discussion
+## Discussion
 
 The system discovers existing system extensions in the `Contents/Library/SystemExtensions` directory of the main app bundle.
 

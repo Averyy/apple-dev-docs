@@ -24,7 +24,7 @@ func setDelegate(_ delegate: (any AVAssetResourceLoaderDelegate)?, queue delegat
 - (void) setDelegate:(id<AVAssetResourceLoaderDelegate>) delegate queue:(dispatch_queue_t) delegateQueue;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to specify the object to use when handling resource requests and the dispatch queue on which to process those requests. Resource requests are processed synchronously on the dispatch queue you provide.
 

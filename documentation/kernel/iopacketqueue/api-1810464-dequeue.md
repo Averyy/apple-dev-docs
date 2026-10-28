@@ -11,7 +11,7 @@ Removes a single packet from the head of the queue.
 virtual mbuf_t dequeue();
 ```
 
-#### Return Value
+## Return Value
 
 Returns a packet removed from the head of the queue, or NULL if the queue was empty.
 

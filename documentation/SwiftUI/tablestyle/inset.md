@@ -22,7 +22,7 @@ The table style that describes the behavior and appearance of a table with its c
 
 Available when `Self` is `InsetTableStyle`.
 
-#### Discussion
+## Discussion
 
 To customize whether the rows of the table should alternate their backgrounds, use [`alternatingRowBackgrounds(_:)`](../view/alternatingrowbackgrounds%28_%29.md).
 

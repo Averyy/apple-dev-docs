@@ -15,7 +15,7 @@ Returns a copy of the calling bounding region.
 copy(): BoundingRegion;
 ```
 
-#### Return Value
+## Return Value
 
 A [`BoundingRegion`](../boundingregion.md) that is a copy of the calling bounding region.
 

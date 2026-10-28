@@ -24,7 +24,7 @@ case metal3
 MTLGPUFamilyMetal3
 ```
 
-#### Discussion
+## Discussion
 
 The following platform and GPU combinations support Metal 3:
 

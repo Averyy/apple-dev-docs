@@ -17,11 +17,11 @@ Allows the merchant to check the status of the Store and Forward session.
 func status() async throws -> StoreAndForwardStatus
 ```
 
-#### Return Value
+## Return Value
 
 [`StoreAndForwardStatus`](../storeandforwardstatus.md) when successful.
 
-#### Discussion
+## Discussion
 
 > **Throws**: This method throws a `ReadError` if status cannot be retrieved.
 

@@ -5,7 +5,7 @@
 
 This function commands the device to play back an effect that was previously loaded.
 
-#### Overview
+## Overview
 
 ```c
 HRESULT ( *StartEffect)(
@@ -15,7 +15,7 @@ HRESULT ( *StartEffect)(
    UInt32 iterations );
 ```
 
-##### Parameters
+### Parameters
 
 - **self**: Pointer to the FFPlugInDriver implementation instance.
 - **downloadID**: Indicates the effect to be played.
@@ -26,7 +26,7 @@ HRESULT ( *StartEffect)(
   Indicates that all other effects on the device should be stopped before the specified effect is played. If this flag is omitted, the effect is mixed with existing effects that have already started on the device.
 - **iterations**: Specifies the number of times to perform the effect. If the value is FF_INFINITE, then the effect should be repeated until explicitly stopped or paused.
 
-##### Return Value
+### Return Value
 
 Returns FF_OK if successful, or an error value otherwise:
 

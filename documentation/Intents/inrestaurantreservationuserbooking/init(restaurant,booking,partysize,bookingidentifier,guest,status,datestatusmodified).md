@@ -22,7 +22,7 @@ init(restaurant: INRestaurant, booking bookingDate: Date, partySize: Int, bookin
 - (instancetype) initWithRestaurant:(INRestaurant *) restaurant bookingDate:(NSDate *) bookingDate partySize:(NSUInteger) partySize bookingIdentifier:(NSString *) bookingIdentifier guest:(INRestaurantGuest *) guest status:(INRestaurantReservationUserBookingStatus) status dateStatusModified:(NSDate *) dateStatusModified;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized reservation object or `nil` if the object could not be created.
 

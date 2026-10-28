@@ -17,7 +17,7 @@ Sets or gets the swap rectangle.
 static const NSOpenGLContextParameter NSOpenGLCPSwapRectangle;
 ```
 
-#### Discussion
+## Discussion
 
 The swap rectangle is represented as an array of four `long`s: `{x, y, width, height}`.
 

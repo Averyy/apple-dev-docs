@@ -25,11 +25,11 @@ func xpc_connection_set_peer_lightweight_code_requirement(_ connection: xpc_conn
 extern int xpc_connection_set_peer_lightweight_code_requirement(xpc_connection_t connection, xpc_object_t lwcr);
 ```
 
-#### Return Value
+## Return Value
 
 On success, `0`. Otherwise, a value from [Errors](./xpc-connections.md#Errors).
 
-#### Discussion
+## Discussion
 
 When you set this requirement on a connection, the operating system checks that peer process satisfies the requirement every time it sends a message to your process. If the peer process initiated the connection and its executable doesn’t satisfy the lightweight code requirement, then you don’t receive a message and the operating system doesn’t call your event handler. If your process sent a message to its peer expecting a reply, and its executable doesn’t have the requested entitlement, then you don’t receive a reply and the operating system delivers [`XPC_ERROR_PEER_CODE_SIGNING_REQUIREMENT`](./xpc_error_peer_code_signing_requirement-c.macro.md) instead.
 

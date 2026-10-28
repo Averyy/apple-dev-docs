@@ -12,7 +12,7 @@ Automatically enables a marquee effect.
 @property (nonatomic, assign, readwrite) BOOL enablesMarquee;
 ```
 
-#### Discussion
+## Discussion
 
 Automatically enables a marquee effect if the text contents extend past the bounds of the view.
 

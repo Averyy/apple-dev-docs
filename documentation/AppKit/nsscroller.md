@@ -19,7 +19,7 @@ class NSScroller
 @interface NSScroller : NSControl
 ```
 
-#### Overview
+## Overview
 
 A scroller displays a slot containing a knob that the user can drag directly to the desired location. The knob indicates both the position within the document view and—by varying in size within the slot—the amount visible relative to the size of the document view.
 

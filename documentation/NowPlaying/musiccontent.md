@@ -25,7 +25,7 @@ struct MusicContent
 
 - [Publishing media sessions](./publishing-media-sessions.md)
 
-#### Overview
+## Overview
 
 Use this type for music playback, including songs, albums, and playlists.
 

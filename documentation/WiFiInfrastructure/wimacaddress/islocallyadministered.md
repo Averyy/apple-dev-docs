@@ -17,7 +17,7 @@ A Boolean value that indicates whether this a locally administered MAC Address.
 var isLocallyAdministered: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `true` if the MAC address is locally administered, `false` if it has a global OUI (Organizationally Unique Identifier).
 

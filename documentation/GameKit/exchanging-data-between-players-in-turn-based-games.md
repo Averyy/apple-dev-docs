@@ -5,7 +5,7 @@
 
 Add the ability for players to exchange game data and send messages while waiting for their turns.
 
-#### Overview
+## Overview
 
 You can increase engagement in turn-based games by letting participants communicate and exchange data while they wait for the current participant to take their turn.
 
@@ -19,7 +19,7 @@ GKLocalPlayer.local.register(self)
 
 > ❗ **Important**:  The code examples in this article use GameKit asynchronous methods that you invoke from an `async` method or within a `Task` structure. For details about asynchronous flows, see [Concurrency](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html).
 
-##### Send exchange requests
+### Send exchange requests
 
 Any participant, including the current participant who is taking their turn, can send an exchange request to one or more other participants. When sending an exchange request, you pass the recipients, the game-specific exchange data, and a localized message to the `GKTurnBasedMatch` [`sendExchange(to:data:localizableMessageKey:arguments:timeout:completionHandler:)`](./gkturnbasedmatch/sendexchange%28to,data,localizablemessagekey,arguments,timeout,completionhandler%29.md) method.
 
@@ -32,7 +32,7 @@ In the exchange data, provide enough game-specific information for recipients to
 
 To localize the message, add the key you pass and a placeholder translation to a `.strings` file in your project (for example, the default `Localizable.strings` file). For more information about adapting your game for different languages and regions, see [Localization](../Xcode/localization.md).
 
-##### Respond to exchange requests
+### Respond to exchange requests
 
 When a recipient receives an exchange request, GameKit invokes the `GKTurnBasedEventListener` [`player(_:receivedExchangeRequest:for:)`](./gkturnbasedeventlistener/player%28_,receivedexchangerequest,for%29.md) protocol method, passing the exchange object. If your game isn’t running or is in the background, GameKit displays a notification containing the localized message first. When the recipient taps the notification, GameKit launches your game or brings your game back to the foreground, and then invokes the method.
 
@@ -43,7 +43,7 @@ To accept or decline the exchange request on behalf of the participant, implemen
 3. To display more details to the recipient, use the other `GKTurnBasedExchange` properties, such as the [`sender`](./gkturnbasedexchange/sender.md) and [`message`](./gkturnbasedexchange/message.md) properties.
 4. If the recipient accepts the exchange request, invoke the [`reply(withLocalizableMessageKey:arguments:data:completionHandler:)`](./gkturnbasedexchange/reply%28withlocalizablemessagekey,arguments,data,completionhandler%29.md) method. Optionally, pass additional exchange information back to the sender using the `data` parameter.
 
-##### Save completed exchanges
+### Save completed exchanges
 
 When all recipients reply to an exchange request or requests time out, GameKit invokes the [`player(_:receivedExchangeReplies:forCompletedExchange:for:)`](./gkturnbasedeventlistener/player%28_,receivedexchangereplies,forcompletedexchange,for%29.md) method in the current participant’s game instance and the original sender’s game instance.
 
@@ -56,11 +56,11 @@ If the local player is the current participant, implement the [`player(_:receive
 
 Only the current participant can invoke the [`saveMergedMatch(_:withResolvedExchanges:completionHandler:)`](./gkturnbasedmatch/savemergedmatch%28_,withresolvedexchanges,completionhandler%29.md) method, even if the current participant isn’t involved in the exchanges.
 
-##### Display exchange results
+### Display exchange results
 
 When the current participant saves completed exchanges with match data, GameKit invokes the [`player(_:receivedTurnEventFor:didBecomeActive:)`](./gkturnbasedeventlistener/player%28_,receivedturneventfor,didbecomeactive%29.md) method in each participant game instance. Implement this method to present the new match data, including the exchange data. For example, show the items that transfer between participants and recipient reply messages.
 
-##### Cancel exchange requests
+### Cancel exchange requests
 
 You can cancel an exchange request anytime before the current participant saves it and the status property becomes [`GKTurnBasedExchangeStatus.resolved`](./gkturnbasedexchangestatus/resolved.md). To cancel an exchange request, use the `GKTurnBasedExchange` [`cancel(withLocalizableMessageKey:arguments:completionHandler:)`](./gkturnbasedexchange/cancel%28withlocalizablemessagekey,arguments,completionhandler%29.md) method. Pass a localizable message that GameKit displays in a notification if the recipient isn’t running your game or it’s in the background.
 

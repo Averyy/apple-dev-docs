@@ -24,7 +24,7 @@ subscript(index: Int) -> AUAudioUnitBus { get }
 - (AUAudioUnitBus *) objectAtIndexedSubscript:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The bus located at the specified index.
 

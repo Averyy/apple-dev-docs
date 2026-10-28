@@ -20,11 +20,11 @@ Asynchronously loads a texture resource from a URL.
 @preconcurrency static func loadAsync(contentsOf url: URL, withName resourceName: String? = nil) -> LoadRequest<TextureResource>
 ```
 
-#### Return Value
+## Return Value
 
 A load operation that publishes the resource.
 
-#### Discussion
+## Discussion
 
 RealityKit uses the resource name to distinguish resources locally, and to match texture resources between networked peers. Specify a unique name for each texture resource you load or generate.
 

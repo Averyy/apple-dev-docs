@@ -17,7 +17,7 @@ Computes a compact representation of the LU factorization.
 static func lu_factor(_ a: MLXArray, stream: StreamOrDevice = .default) -> (MLXArray, MLXArray)
 ```
 
-#### Discussion
+## Discussion
 
 -Parameters:
 

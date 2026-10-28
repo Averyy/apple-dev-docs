@@ -25,7 +25,7 @@ var kCTFontPriorityUser: Int { get }
 kCTFontPriorityUser
 ```
 
-#### Discussion
+## Discussion
 
 Local fonts are located in user’s `Library/Fonts`.
 

@@ -21,7 +21,7 @@ A summary of the failures encountered during an evaluation run.
 struct EvaluationRunErrors
 ```
 
-#### Overview
+## Overview
 
 Retrieved via [`errors`](./evaluationresult/errors.md).
 

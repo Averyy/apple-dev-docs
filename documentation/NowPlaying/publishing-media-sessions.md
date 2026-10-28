@@ -5,13 +5,13 @@
 
 Show your app’s media on the Lock Screen and Control Center.
 
-#### Overview
+## Overview
 
 A local session publishes media that’s playing on the current device. When you create one, the system shows your content’s metadata and playback controls across the Lock Screen, Control Center, and connected accessories, including CarPlay and AirPlay-capable devices.
 
 To publish a local session, create a type that conforms to [`MediaSessionRepresentable`](./mediasessionrepresentable.md), then register it with the system using [`MediaSession`](./mediasession.md). The framework observes your model with [`Observable`](../Observation/observable.md) and syncs updates to the system automatically.
 
-#### Create a session representable
+## Create a session representable
 
 To publish your media to the system, conform to [`MediaSessionRepresentable`](./mediasessionrepresentable.md) and mark your type with the [`Observable`](../Observation/observable.md) macro. The framework reads four properties from your type: [`id`](./mediasessionrepresentable/id.md) to uniquely identify the session, [`content`](./mediasessionrepresentable/content.md) to describe what’s playing, [`playbackSnapshot`](./mediasessionrepresentable/playbacksnapshot.md) to capture playback state, and [`commands`](./mediasessionrepresentable/commands.md) to declare the controls your app supports.
 
@@ -65,7 +65,7 @@ The [`content`](./mediasessionrepresentable/content.md) property returns a conte
 
 The [`playbackSnapshot`](./mediasessionrepresentable/playbacksnapshot.md) property returns a [`MediaPlaybackSnapshot`](./mediaplaybacksnapshot.md) that captures the current playback state and progress. Provide the elapsed time and a timestamp so the system extrapolates the playback position between updates.
 
-#### Add artwork
+## Add artwork
 
 Provide artwork by adding an [`Artwork`](./artwork.md) structure for your content. The framework requests artwork from your process asynchronously at the size the system requires.
 
@@ -87,7 +87,7 @@ var content: (any MediaContentRepresentable)? {
 }
 ```
 
-#### Manage the session life cycle
+## Manage the session life cycle
 
 Create a [`MediaSession`](./mediasession.md) from your representable and call [`requestToBecomeApplicationPrimary()`](./mediasession/requesttobecomeapplicationprimary%28%29.md) to begin publishing. When playback ends, set your session reference to `nil` to remove it from the system.
 
@@ -125,7 +125,7 @@ When you’re done with playback, call `setActive(false)` and pass `notifyOthers
 try audioSession.setActive(false, options: .notifyOthersOnDeactivation)
 ```
 
-#### Coordinate multiple sessions
+## Coordinate multiple sessions
 
 Apps can have more than one local session. For example, your app can be both a music player and a podcast player. Each session observes its own representable independently. Use [`requestToBecomeApplicationPrimary()`](./mediasession/requesttobecomeapplicationprimary%28%29.md) to switch which session represents your app to the system.
 
@@ -139,7 +139,7 @@ try await session.requestToBecomeSystemPrimary()
 
 Observe [`isApplicationPrimary`](./mediasession/isapplicationprimary.md) and [`isSystemPrimary`](./mediasession/issystemprimary.md) to reflect the current state in your UI.
 
-#### Respond to commands
+## Respond to commands
 
 Declare the commands your app supports in the [`commands`](./mediasessionrepresentable/commands.md) property. Each entry is a [`MediaCommand`](./mediacommand.md) created with a static factory method that takes an action closure. The system calls the closure when someone interacts with the corresponding control.
 

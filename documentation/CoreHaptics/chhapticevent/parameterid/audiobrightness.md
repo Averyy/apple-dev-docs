@@ -24,7 +24,7 @@ static let audioBrightness: CHHapticEvent.ParameterID
 extern CHHapticEventParameterID CHHapticEventParameterIDAudioBrightness;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter value ranges from 0.0 (maximum high-frequency reduction) to 1.0 (no high-frequency reduction). The default value is 1.0.
 

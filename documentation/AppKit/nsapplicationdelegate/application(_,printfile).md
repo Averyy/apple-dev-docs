@@ -20,11 +20,11 @@ optional func application(_ sender: NSApplication, printFile filename: String) -
 - (BOOL) application:(NSApplication *) sender printFile:(NSString *) filename;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the file was successfully printed or [`false`](../../Swift/false.md) if it was not.
 
-#### Discussion
+## Discussion
 
 This message is sent directly by `theApplication` to the delegate. The application terminates (using the [`terminate(_:)`](../nsapplication/terminate%28_%29.md) method) after this method returns.
 

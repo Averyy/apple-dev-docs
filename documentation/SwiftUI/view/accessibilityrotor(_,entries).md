@@ -44,7 +44,7 @@ nonisolated
 func accessibilityRotor<L, Content>(_ label: L, @ContentBuilder entries: @escaping () -> Content) -> some View where L : StringProtocol, Content : AccessibilityRotorContent
 ```
 
-#### Discussion
+## Discussion
 
 An Accessibility Rotor is a shortcut for Accessibility users to quickly navigate to specific elements of the user interface, and optionally specific ranges of text within those elements.
 

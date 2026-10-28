@@ -23,7 +23,7 @@ struct WKAudiovisualMediaTypes
 enum WKAudiovisualMediaTypes : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 To indicate that no user gestures are required to play media, use an empty set of audio/visual media types, indicated by the empty array literal, `[]`. For example, `let myAudiovisualMediaType: WKAudiovisualMediaTypes = []`.
 

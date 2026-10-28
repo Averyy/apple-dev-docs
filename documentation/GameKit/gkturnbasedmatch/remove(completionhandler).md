@@ -29,7 +29,7 @@ func remove() async throws
 - (void) removeWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t use the [`GKTurnBasedMatchmakerViewController`](../gkturnbasedmatchmakerviewcontroller.md) interface, where players can delete their matches, use this method to delete a match that the local player no longer actively participants in. This method only removes the match from the local player’s Game Center data — it doesn’t impact other participants in the match.
 

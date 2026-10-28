@@ -19,7 +19,7 @@ var aspectRatio: NSSize { get set }
 @property NSSize aspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 The size of the window’s frame rectangle is constrained to integral multiples of this ratio when the user resizes it. You can set an `NSWindow` object’s size to any ratio programmatically.
 

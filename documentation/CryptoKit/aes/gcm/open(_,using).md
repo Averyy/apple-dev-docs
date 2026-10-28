@@ -21,7 +21,7 @@ Decrypts the message and verifies its authenticity.
 static func open(_ sealedBox: AES.GCM.SealedBox, using key: SymmetricKey) throws -> Data
 ```
 
-#### Return Value
+## Return Value
 
 The original plaintext message that was sealed in the box, as long as the correct key is used and authentication succeeds. The call throws an error if decryption or authentication fail.
 

@@ -15,7 +15,7 @@ A protocol for objects that manage network sessions between peers.
 protocol TabletopNetworkSessionCoordinator
 ```
 
-#### Overview
+## Overview
 
 Peers are networking participants that might or might not join a multiplayer game.
 

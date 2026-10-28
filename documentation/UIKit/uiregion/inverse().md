@@ -23,11 +23,11 @@ func inverse() -> Self
 - (instancetype) inverseRegion;
 ```
 
-#### Return Value
+## Return Value
 
 A new region whose contents include all points that are not in the current region.
 
-#### Discussion
+## Discussion
 
 The inverse of the infinite region is an empty region.
 

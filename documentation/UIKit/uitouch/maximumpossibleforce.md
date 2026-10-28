@@ -23,7 +23,7 @@ var maximumPossibleForce: CGFloat { get }
 @property (nonatomic, readonly) CGFloat maximumPossibleForce;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is sufficiently high to provide a wide dynamic range for values of the [`force`](./force.md) property.
 

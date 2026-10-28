@@ -25,7 +25,7 @@ var count: Int { get set }
 @property NSUInteger count;
 ```
 
-#### Discussion
+## Discussion
 
 If you increase the `count`, `NULL` values are added. If you decrease the `count`, elements at indexes `count` and greater are removed.
 

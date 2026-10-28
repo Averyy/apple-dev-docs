@@ -20,14 +20,14 @@ A view that enables people to interact with recognized text, barcodes, and other
 
 - [Enabling Live Text interactions with images](./enabling-live-text-interactions-with-images.md)
 
-#### Overview
+## Overview
 
 This class enables people to interact with specific content types ([`ImageAnalysisOverlayView.InteractionTypes`](./imageanalysisoverlayview/interactiontypes.md)) that the framework identifies in an image. For example:
 
 - The Live Text interface enables them to select any text present in the image ([`textSelection`](./imageanalysisoverlayview/interactiontypes/textselection.md)), or invoke a URL ([`dataDetectors`](./imageanalysisoverlayview/interactiontypes/datadetectors.md)). The text selection UI offers framework-standard buttons for copying selected text, or looking it up on the web for more information.
 - The *subject lift* feature identifies a wide variety of objects, or *subjects*, in images with the [`imageSubject`](./imageanalysisoverlayview/interactiontypes/imagesubject.md) interaction type, and provides your app with an image of the objects with the background removed. The [`visualLookUp`](./imageanalysisoverlayview/interactiontypes/visuallookup.md) type supplements this feature by adding a button in the bottom corner of the view that people can click or tap for more information about the recognized subjects.
 
-#### Configure the interface and begin interaction
+## Configure the interface and begin interaction
 
 To connect the interface with an image that your app displays, add a new instance of this class as a subview to your app’s image view.
 

@@ -31,7 +31,7 @@ var estimatedPickupDate: Date { get set }
 @property (atomic, copy, readwrite) NSDate * estimatedPickupDate;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the time at which you could pick up the user using a ride of this type. Always try to specify a date and time that is as close to the current time as possible. The [`init(name:estimatedPickupDate:)`](./init%28name,estimatedpickupdate%29.md) method sets this property at initialization time.
 

@@ -19,7 +19,7 @@ typealias PMPaper = OpaquePointer
 typedef struct OpaquePMPaper *PMPaper;
 ```
 
-#### Discussion
+## Discussion
 
 Your application uses paper objects to identify standard and custom types of printing paper.
 

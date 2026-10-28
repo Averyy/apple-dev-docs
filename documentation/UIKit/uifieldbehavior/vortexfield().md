@@ -23,11 +23,11 @@ class func vortexField() -> Self
 + (instancetype) vortexField;
 ```
 
-#### Return Value
+## Return Value
 
 A field behavior object that applies a rotational force around the field’s origin.
 
-#### Discussion
+## Discussion
 
 This forces created by this field rotate in a circle around the center point of the field. Items entering the field are pushed perpendicular to the imaginary line between the item and the center of the field. Combine this field with a radial gravity field to create a field that pulls items into a spinning vortex.
 

@@ -24,7 +24,7 @@ var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm { get set }
 @property (nonatomic, copy) AVAudioTimePitchAlgorithm audioTimePitchAlgorithm;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`spectral`](../avaudiotimepitchalgorithm/spectral.md).
 

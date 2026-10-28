@@ -25,7 +25,7 @@ case unspecified
 INCreateNoteIntentResponseCodeUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 Do not return this response code when handling the intent; doing so causes the system to display an error.
 

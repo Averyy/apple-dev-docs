@@ -24,11 +24,11 @@ class func sunbeamsGenerator() -> any CIFilter & CISunbeamsGenerator
 + (CIFilter<CISunbeamsGenerator> *) sunbeamsGeneratorFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates a sunbeam as an image. The effect generates a center-textured sun with striations. You can combine with other filters to create more sophisticated images.
 

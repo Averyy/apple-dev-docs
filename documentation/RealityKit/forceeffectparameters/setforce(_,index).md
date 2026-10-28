@@ -20,7 +20,7 @@ Sets the force for each rigid body.
 func setForce(_ force: SIMD3<Float>, index: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Inside the force effect update function, you are responsible to compute and output the force by calling this function for each rigid body. If you omit this function for a rigid body, that rigid body gets zero force from the effect.
 

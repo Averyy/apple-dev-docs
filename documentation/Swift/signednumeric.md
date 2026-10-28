@@ -21,11 +21,11 @@ A numeric type with a negation operation.
 protocol SignedNumeric : Numeric
 ```
 
-#### Overview
+## Overview
 
 The `SignedNumeric` protocol extends the operations defined by the `Numeric` protocol to include a value’s additive inverse.
 
-### Conforming to the SignedNumeric Protocol
+## Conforming to the SignedNumeric Protocol
 
 Because the `SignedNumeric` protocol provides default implementations of both of its required methods, you don’t need to do anything beyond declaring conformance to the protocol and ensuring that the values of your type support negation. To customize your type’s implementation, provide your own mutating `negate()` method.
 

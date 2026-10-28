@@ -25,11 +25,11 @@ optional func connection(_ connection: NSURLConnection, willCacheResponse cached
 - (NSCachedURLResponse *) connection:(NSURLConnection *) connection willCacheResponse:(NSCachedURLResponse *) cachedResponse;
 ```
 
-#### Return Value
+## Return Value
 
 The actual cached response to store in the cache. The delegate may return `cachedResponse` unmodified, return a modified cached response, or return `nil` if no cached response should be stored for the connection.
 
-#### Discussion
+## Discussion
 
 This method is called only if the [`URLProtocol`](../urlprotocol.md) handling the request decides to cache the response. As a rule, responses are cached only when all of the following are true:
 

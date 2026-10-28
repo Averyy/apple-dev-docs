@@ -20,7 +20,7 @@ The default preferences to use when loading and rendering content.
 var defaultNavigationPreferences: WebPage.NavigationPreferences
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the JavaScript settings and content mode for new navigations. When the webpage navigates to a new resource, it passes the default preferences to its navigation decider, which can modify the preferences if desired.
 

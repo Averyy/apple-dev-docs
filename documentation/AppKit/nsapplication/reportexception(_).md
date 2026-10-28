@@ -19,7 +19,7 @@ func reportException(_ exception: NSException)
 - (void) reportException:(NSException *) exception;
 ```
 
-#### Discussion
+## Discussion
 
 This method doesn’t raise `anException`. Use it inside of an exception handler to record that the exception occurred.
 

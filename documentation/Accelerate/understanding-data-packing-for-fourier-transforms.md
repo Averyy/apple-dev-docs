@@ -5,11 +5,11 @@
 
 Format source data for the vDSP Fourier functions, and interpret the results.
 
-#### Overview
+## Overview
 
 The vDSP real-to-complex fast Fourier transform (FFT) and discrete Fourier transform (DFT) functions write their output in a special packed format to conserve memory. Use the code samples below to understand how to format source data for and interpret the results from the vDSP Fourier transform functions.
 
-##### Convert real values to the split-complex format
+### Convert real values to the split-complex format
 
 The vDSP FFT and DFT functions work with data in split-complex format. Split-complex format separates the real and imaginary parts of complex numbers into two separate arrays. Given an array, `signal`, that contains real values, the following code converts the values to split-complex format. Use [`vDSP_ctoz`](./vdsp_ctoz.md) to populate the split collections `complexReals` and `complexImaginaries` with the real values from `signal`:
 
@@ -69,7 +69,7 @@ On return, `complexReals` contains the values `[0.0, 2.0, 4.0, 6.0]`, and `compl
 
 ![Diagram showing an array of eight real elements converted to an array of four split-complex elements. The conversion stores the split-complex elements across an array of real parts and an array of complex parts.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3705864@2x.png)
 
-##### Create a composite sine wave
+### Create a composite sine wave
 
 Use the following function to fill an array with values that represent a composite sine wave:
 
@@ -113,7 +113,7 @@ The following figure visualizes the values of a 1024-element array that `makeCom
 
 ![Illustration of a composite sine wave.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3696650@2x.png)
 
-##### Perform Fourier transform on 1D real data in split-complex format
+### Perform Fourier transform on 1D real data in split-complex format
 
 Use the following code to populate the real `signal` array with a composite of four sine waves and create empty arrays for the complex values:
 
@@ -263,7 +263,7 @@ The following figure illustrates the frequency-domain result from performing a f
 
 The indices of the nonzero elements in the frequency-domain data are the sine wave frequencies in the original time-domain signal: `1` , `5`, `10`, and `15`.
 
-##### Convert interleaved-complex to the split-complex format
+### Convert interleaved-complex to the split-complex format
 
 Given an array, `interleavedComplex`, that contains interleaved complex values, the following code converts the values to split-complex format. Use [`vDSP_ctoz`](./vdsp_ctoz.md) to populate the split collections `complexReals` and `complexImaginaries` with the complex values from `interleavedComplex`:
 
@@ -326,7 +326,7 @@ On return, `complexReals` contains the values `[0.0, 2.0, 4.0, 6.0]`, and `compl
 
 ![Diagram showing an array of four interleaved-complex elements converted to an array of four split-complex elements. The conversion stores the split-complex elements across an array of real parts and an array of complex parts.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3705866@2x.png)
 
-##### Perform Fourier transform on 1D complex data
+### Perform Fourier transform on 1D complex data
 
 The following figure shows a representation of time-domain complex data. The real part and imaginary part contain distinct composite sine waves:
 
@@ -397,7 +397,7 @@ The following figure shows the layout of the frequency-domain data. The DC and N
 
 ![Stacked diagram showing a complex signal before and after forward Fourier transform. The time-domain signal is illustrated as two line graphs, and the frequency-domain representation is illustrated as two arrays that store the split-complex values.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3705870@2x.png)
 
-##### Perform Fourier transform on 2D real data
+### Perform Fourier transform on 2D real data
 
 vDSP provides routines you can use to compute the FFT of 2D real data such as single-channel images. The following figure shows the original, spatial-domain representations of grids of dots with their frequency-domain counterparts:
 
@@ -497,7 +497,7 @@ The 2D FFT operates on real data by first transforming each row. This transform 
 
 Because the complex elements `n/2 +` 1 to `n - 1` contain the negative-frequency values, for tasks such as visualizing the frequency-domain representation of 2D real data, you may be able to discard the bottom `n/2` rows.
 
-##### Perform Fourier transform on 2D complex data
+### Perform Fourier transform on 2D complex data
 
 vDSP provides functions for performing Fourier transforms on 2D complex data, such as two-channel images. The following image shows the spatial-domain representation of 2D complex data with low-frequency data in the red and green channels, and high-frequency data in the blue channel. The frequency-domain representation shows the magnitude of the complex values:
 
@@ -579,7 +579,7 @@ On return, `complexReals` and `complexImaginaries` contain the frequency-domain 
 
 ![Image of the frequency-domain representation of the matrix 16 times 16 yellow dots and a matrix of 64 times 64 blue dots. The top-left quadrant represents the positive frequencies and contains two star-like highlights. The other three quadrants represent negative frequencies and are grayed out.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3696221@2x.png)
 
-##### Scale time- and frequency-domain data
+### Scale time- and frequency-domain data
 
 To provide the best execution performance, vDSP’s Fourier routines don’t scale transform results. The following table summarizes the scaling factor for the vDSP FFT and DFT operations:
 

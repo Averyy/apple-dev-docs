@@ -24,7 +24,7 @@ var listenerVectorOrientation: AVAudio3DVectorOrientation { get set }
 @property (nonatomic) AVAudio3DVectorOrientation listenerVectorOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 The default orientation is with the listener looking directly along the negative z-axis (forward).
 

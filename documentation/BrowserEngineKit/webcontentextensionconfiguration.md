@@ -18,7 +18,7 @@ An opaque configuration structure for a web content extension.
 @preconcurrency struct WebContentExtensionConfiguration
 ```
 
-#### Overview
+## Overview
 
 See [`WebContentExtension`](./webcontentextension.md).
 

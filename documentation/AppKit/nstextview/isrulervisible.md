@@ -19,7 +19,7 @@ var isRulerVisible: Bool { get set }
 @property (getter=isRulerVisible) BOOL rulerVisible;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) to show the ruler, [`false`](../../Swift/false.md) to hide the ruler. By default, the ruler is hidden.
 

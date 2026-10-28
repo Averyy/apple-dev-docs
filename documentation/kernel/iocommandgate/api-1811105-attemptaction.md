@@ -16,11 +16,11 @@ virtual IOReturn attemptAction(
  void *arg3 = 0);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if successful. kIOReturnBadArgument if action is not defined, kIOReturnNotPermitted if this event source is currently disabled, kIOReturnCannotLock if lock attempt fails.
 
-#### Overview
+## Overview
 
 Client function that causes the given action to be called in a single threaded manner. Beware the work-loop's gate is recursive and command gates can cause direct or indirect re-entrancy. When the executing on a client's thread attemptCommand will fail if the work-loop's gate is closed.
 

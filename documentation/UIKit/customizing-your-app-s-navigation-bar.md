@@ -16,7 +16,7 @@ Create custom titles, prompts, and buttons in your app’s navigation bar.
 - watchOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 When you use a navigation controller to add navigation structure to your app, you can use a view controller’s [`navigationItem`](./uiviewcontroller/navigationitem.md) to configure the [`UINavigationBar`](./uinavigationbar.md) with navigational and interactive controls in a bar above your content, along the top of the iOS device’s screen.
 
@@ -34,7 +34,7 @@ The sample demonstrates methods to modify the navigation bar through the view co
 - Adding a navigation prompt
 - Customizing the back button with a title or image
 
-##### Customize the right view
+### Customize the right view
 
 The right side of the navigation bar options for customization include applying a custom `UIView` or using a `UIBarButtonItem`.
 
@@ -47,7 +47,7 @@ let segmentBarItem = UIBarButtonItem(customView: segmentedControl)
 navigationItem.rightBarButtonItem = segmentBarItem
 ```
 
-##### Use default groups for buttons
+### Use default groups for buttons
 
 When you add bar button items to a navigation item, the system groups the buttons into a shared glass background for:
 
@@ -86,7 +86,7 @@ navigationItem.rightBarButtonItems = [doneBarButton,
                                       selectBarButton]
 ```
 
-##### Customize button groups
+### Customize button groups
 
 When the system groups buttons into a shared glass background and you want to split the buttons into separate glass backgrounds, add [`fixedSpace()`](./uibarbuttonitem/fixedspace%28%29.md) between the buttons where you want to split the glass background.
 
@@ -100,7 +100,7 @@ navigationItem.rightBarButtonItems = [doneBarButton,
                                       selectBarButton]
 ```
 
-##### Customize button labels and background color
+### Customize button labels and background color
 
 Set a bar button item’s tint color to provide a color for the button’s text or image. The sample demonstrates this in `CustomButtonColorsViewController`:
 
@@ -131,7 +131,7 @@ let doneBarButton = UIBarButtonItem(barButtonSystemItem: .done,
                                     action: nil)
 ```
 
-##### Group toolbar items that use flexible spacing
+### Group toolbar items that use flexible spacing
 
 When you use flexible space-bar button items to evenly space buttons in a toolbar, the system provides separate glass backgrounds between the flexible spaces. In `CustomToolbarLayoutViewController`, the sample shows how to have all the buttons share the same glass background, by configuring the flexible space using [`hidesSharedBackground`](./uibarbuttonitem/hidessharedbackground.md) first:
 
@@ -154,7 +154,7 @@ toolbarItems = [
 ]
 ```
 
-##### Integrate search in your toolbar
+### Integrate search in your toolbar
 
 The system provides a built-in method to integrate search in your app when you use [`UISearchController`](./uisearchcontroller.md) and a navigation controller’s toolbar. The sample demonstrates how to perform this integration in `ToolbarSystemSearchViewController`.
 
@@ -184,7 +184,7 @@ toolbarItems = [
 
 With those steps complete, the system shows a search button in the toolbar. When a person taps the search bar, the system displays a search interface where the person can type in a search parameter and perform searches.
 
-##### Customize the title view
+### Customize the title view
 
 Another option is configuring the navigation bar to use a `UIView` as the title, using `UISegmentedControl` as the center custom title view.
 
@@ -194,7 +194,7 @@ This sample shows how to set a segmented control as the title view in `CustomTit
 self.navigationItem.titleView = segmentedControl
 ```
 
-##### Customize the title and subtitle
+### Customize the title and subtitle
 
 The navigation bar can include a title and a subtitle. The sample demonstrates setting up a title and subtitle in `TitleSubtitleViewController`:
 
@@ -205,7 +205,7 @@ navigationItem.subtitle = "Subtitle"
 
 In addition to setting the title and subtitle with strings, you can also use attributed strings or custom views.
 
-##### Customize the large subtitle view
+### Customize the large subtitle view
 
 You can set custom views to display in place of the title, subtitle, large title, or subtitle below the large title. In `LargeTitleViewController`, the sample shows an example of a button as a custom subtitle view below the large title:
 
@@ -220,7 +220,7 @@ let subtitleButton = UIButton(configuration: subtitleConfiguration)
 navigationItem.largeSubtitleView = subtitleButton
 ```
 
-##### Modify the navigation prompt
+### Modify the navigation prompt
 
 The navigation bar can also include a prompt or single line of text at the top.
 
@@ -230,11 +230,11 @@ The sample demonstrates how to use the [`prompt`](./uinavigationitem/prompt.md) 
 navigationItem.prompt = NSLocalizedString("Navigation prompts appear at the top.", comment: "")
 ```
 
-##### Customize back button titles
+### Customize back button titles
 
 People can quickly switch between different stack levels with a tap and hold on the back button. The sample pushes 10 view controllers on the current navigation stack in `MainViewController` to demonstrate customizing back button titles for each view controller level in the stack.
 
-##### Customize the back button with an image
+### Customize the back button with an image
 
 It’s also possible to use an image as the back button without any back button text and without the back arrow that normally appears next to the back button. The sample sets the back button’s image in `CustomBackButtonDetailViewController` like so:
 
@@ -247,7 +247,7 @@ let backButton = UIBarButtonItem(image: backButtonBackgroundImage,
 navigationItem.leftBarButtonItem = backButton
 ```
 
-##### Modify the large title in the navigation bar
+### Modify the large title in the navigation bar
 
 Another option for customizing the navigation bar includes enabling large title display mode, so it shows a larger version of the title. When the view controller contains a scroll view, the system displays the large title at the top of the scrollable content, and then animates the title into the navigation bar when a person begins to scroll.
 
@@ -259,7 +259,7 @@ self.navigationController?.navigationBar.prefersLargeTitles = true
 
 For more information on controlling how the navigation bar displays the navigation item’s title, see [`largeTitleDisplayMode`](./uinavigationitem/largetitledisplaymode-swift.property.md).
 
-##### Attach a menu to a bar button item
+### Attach a menu to a bar button item
 
 A menu attachment provides extended and easy access to application features in one place. The sample attaches a [`UIMenu`](./uimenu.md) to the right side `UIBarButtonItem` control in `BarButtonMenu`:
 

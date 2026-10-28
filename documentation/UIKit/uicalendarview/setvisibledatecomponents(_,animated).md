@@ -22,7 +22,7 @@ func setVisibleDateComponents(_ dateComponents: DateComponents, animated: Bool)
 - (void) setVisibleDateComponents:(NSDateComponents *) dateComponents animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 The date that `dateComponents` represents must be within the dates that [`availableDateRange`](./availabledaterange.md) represents.
 

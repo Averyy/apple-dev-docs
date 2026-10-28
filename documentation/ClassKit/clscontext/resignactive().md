@@ -27,7 +27,7 @@ func resignActive()
 
 - [Informing ClassKit that a task is about to begin](../informing-classkit-that-a-task-is-about-to-begin.md)
 
-#### Discussion
+## Discussion
 
 Only one context can be active at a time, so the framework automatically calls this method for you if you activate another context.
 

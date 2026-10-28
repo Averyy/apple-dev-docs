@@ -21,7 +21,7 @@ A standardized version of the path of a file URL.
 var standardizedFileURL: URL { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the `isFileURL` is false, this method returns `self`.
 

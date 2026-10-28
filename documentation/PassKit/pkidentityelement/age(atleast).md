@@ -26,7 +26,7 @@ class func age(atLeast age: Int) -> Self
 
 - [Requesting identity data from a Wallet pass](../requesting-identity-data-from-a-wallet-pass.md)
 
-#### Return Value
+## Return Value
 
 An instance with the age you specify if the user’s age is at least the age you specify. If the element is unavailable, this method falls back to a request for [`age`](./age.md).
 

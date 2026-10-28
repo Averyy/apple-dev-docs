@@ -25,11 +25,11 @@ func CFStringGetCString(_ theString: CFString!, _ buffer: UnsafeMutablePointer<C
 extern Boolean CFStringGetCString(CFStringRef theString, char *buffer, CFIndex bufferSize, CFStringEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 `true` upon success or `false` if the conversion fails or the provided buffer is too small.
 
-#### Discussion
+## Discussion
 
 This function is useful when you need your own copy of a string’s character data as a C string. You also typically call it as a “backup” when a prior call to the [`CFStringGetCStringPtr(_:_:)`](./cfstringgetcstringptr%28_,_%29.md) function fails.
 

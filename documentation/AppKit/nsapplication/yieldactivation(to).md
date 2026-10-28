@@ -23,7 +23,7 @@ func yieldActivation(to application: NSRunningApplication)
 
 - [Passing control from one app to another with cooperative activation](../passing-control-from-one-app-to-another-with-cooperative-activation.md)
 
-#### Discussion
+## Discussion
 
 Calling this method doesn’t deactivate the yielding app, nor does it activate the  app you yield to. For cooperative activation, the other app must request activation in the future by calling [`activate()`](./activate%28%29.md) or equivalent.
 

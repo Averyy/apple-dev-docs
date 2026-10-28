@@ -19,7 +19,7 @@ Creates a convolution transpose descriptor with the kernel sizes, number of feat
 + (instancetype) convolutionTransposeDescriptorWithKernelSizes:(NSArray<NSNumber *> *) kernelSizes inputFeatureChannelCount:(NSUInteger) inputFeatureChannelCount outputFeatureChannelCount:(NSUInteger) outputFeatureChannelCount strides:(NSArray<NSNumber *> *) strides paddingPolicy:(MLCPaddingPolicy) paddingPolicy paddingSizes:(NSArray<NSNumber *> *) paddingSizes;
 ```
 
-#### Return Value
+## Return Value
 
 A convolution descriptor.
 

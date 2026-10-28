@@ -21,7 +21,7 @@ class NSDrawer
 @interface NSDrawer : NSResponder
 ```
 
-#### Overview
+## Overview
 
 A drawer is associated with a window, called its parent, and can appear only while its parent is visible onscreen. A drawer cannot be moved or ordered independently of a window, but is instead attached to one edge of its parent and moves along with it.
 

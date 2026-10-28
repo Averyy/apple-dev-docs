@@ -17,7 +17,7 @@ Thin wrapper for logging in MLX and MLX libraries.  This provides a hook for lib
 final class MLXLogger
 ```
 
-#### Overview
+## Overview
 
 By default it will log to `OSLog` (macOS, iOS) or `stderr` (others).  Developers can override the backing by implementing [`MLXLogHandler`](./mlxloghandler.md) and installing it with [`factory`](./mlxlogger/factory.md), e.g.
 

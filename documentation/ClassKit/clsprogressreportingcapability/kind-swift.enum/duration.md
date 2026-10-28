@@ -23,7 +23,7 @@ case duration
 CLSProgressReportingCapabilityKindDuration
 ```
 
-#### Discussion
+## Discussion
 
 The framework automatically measures the time that a student spends working on a task, so all contexts have a [`CLSProgressReportingCapability.Kind.duration`](./duration.md) capability by default. You can replace the default one with a new one if you want to customize the [`details`](../details.md) string.
 

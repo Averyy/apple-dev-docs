@@ -21,7 +21,7 @@ Creates a format style that displays the offset between a comparison date and an
 init(to anchor: Date, allowedFields: Set<Date.ComponentsFormatStyle.Field> = [.year, .month, .week, .day, .hour, .minute, .second], maxFieldCount: Int = 2, sign: NumberFormatStyleConfiguration.SignDisplayStrategy = .automatic)
 ```
 
-#### Discussion
+## Discussion
 
 The style uses a time-pattern representation (`3:46`) when `allowedFields` contains only `.minute` and `.second`, or contains `.hour`, `.minute`, and `.second`. For any other combination of fields, it uses calendar units like `3 months, 11 days`.
 

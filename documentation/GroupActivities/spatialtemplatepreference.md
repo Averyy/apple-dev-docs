@@ -15,7 +15,7 @@ A structure that specifies the preferred arrangement of participant spatial Pers
 struct SpatialTemplatePreference
 ```
 
-#### Overview
+## Overview
 
 Use the static members of this structure to specify your preferred arrangement of participants around your app’s content. The system applies your preference only when displaying spatial Personas in the scene.
 

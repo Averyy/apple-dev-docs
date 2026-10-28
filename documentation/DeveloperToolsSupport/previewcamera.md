@@ -15,7 +15,7 @@ A camera that defines a viewpoint in a preview.
 struct PreviewCamera
 ```
 
-#### Overview
+## Overview
 
 Use one or more preview cameras with one of the preview macros that takes a `cameras` input — like [`Preview(_:traits:body:cameras:)`](../SwiftUI/preview%28_,traits,body,cameras%29.md) — to create custom viewpoints for the preview. The canvas offers custom cameras in its camera picker along with a set of standard cameras. The preview uses the first custom camera that you specify as the default viewpoint when the preview appears.
 

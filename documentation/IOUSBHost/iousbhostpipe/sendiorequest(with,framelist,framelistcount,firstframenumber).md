@@ -20,7 +20,7 @@ func sendIORequest(with data: NSMutableData, frameList: UnsafeMutablePointer<IOU
 - (BOOL) sendIORequestWithData:(NSMutableData *) data frameList:(IOUSBHostIsochronousFrame *) frameList frameListCount:(NSUInteger) frameListCount firstFrameNumber:(uint64_t) firstFrameNumber error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method issues synchronous isochronous requests. The caller allocates and initializes an array of [`IOUSBHostIsochronousFrame`](../iousbhostisochronousframe.md) structures to describe the transferred frames.
 

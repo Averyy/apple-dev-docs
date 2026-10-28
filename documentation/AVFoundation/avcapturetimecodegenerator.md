@@ -23,7 +23,7 @@ class AVCaptureTimecodeGenerator
 @interface AVCaptureTimecodeGenerator : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`AVCaptureTimecodeGenerator`](./avcapturetimecodegenerator.md) class supports multiple timecode sources, including frame counting, system clock synchronization, and MIDI timecode input (MTC). Suitable for playback, recording, or other time-sensitive operations where precise timecode metadata is required.
 

@@ -22,7 +22,7 @@ struct PermissionOptions
 enum UICloudSharingPermissionOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These options are used when setting the [`availablePermissions`](./availablepermissions.md) property on the [`UICloudSharingController`](../uicloudsharingcontroller.md) instance. This property determines which permission options are presented to the user in the controller’s user interface.
 

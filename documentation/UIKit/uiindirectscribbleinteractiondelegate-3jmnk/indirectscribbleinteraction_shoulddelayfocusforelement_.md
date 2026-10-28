@@ -17,11 +17,11 @@ Allows the delegate to delay focusing an element.
 - (BOOL) indirectScribbleInteraction:(UIIndirectScribbleInteraction *) interaction shouldDelayFocusForElement:(UIScribbleElementIdentifier) elementIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 Return [`true`](../../Swift/true.md) to delay focusing the element; the default is [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Normally, Scribble focuses the target input as soon as the user begins writing. If you return `true` from this callback, it waits until the user pauses briefly. This is useful in cases where the view shifts or transforms when becoming first responder, which can be disruptive to a user trying to write into the field.
 

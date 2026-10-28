@@ -25,7 +25,7 @@ func begin(_ mapping: NSEntityMapping, with manager: NSMigrationManager) throws
 - (BOOL) beginEntityMapping:(NSEntityMapping *) mapping manager:(NSMigrationManager *) manager error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method is the precursor to the creation stage. In a custom class, you can implement this method to set up any state information that will be useful for the duration of the migration.
 

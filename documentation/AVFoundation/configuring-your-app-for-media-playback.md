@@ -5,11 +5,11 @@
 
 Configure apps to enable standard media playback behavior.
 
-#### Overview
+## Overview
 
 When you build media playback apps for iOS, tvOS, and visionOS, you need to do additional configuration to enable the expected playback behavior. Configuring the audio experience and background operations helps ensure that your app’s audio works as intended. It also enables advanced features like AirPlay streaming and Picture in Picture playback on supported platforms.
 
-##### Configure the audio session
+### Configure the audio session
 
 Apple platforms, other than macOS which primarily leaves control to an app, provide an audio experience that the operating system manages. This enables the OS to provide a seamless audio experience to people as they switch between apps and receive high-priority audio requests such as phone or FaceTime calls.
 
@@ -49,7 +49,7 @@ To enable this category, activate the audio session using the [`setActive(_:opti
 
 Setting the category is the minimal interaction with an audio session, but other configuration options and features are available. For example, in visionOS, you customize a user’s spatial audio experience by configuring the audio session. For more information, see [`AVAudioSession`](../AVFAudio/avaudiosession.md).
 
-##### Configure the background modes
+### Configure the background modes
 
 The system requires you to enable certain capabilities to perform some background operations. A common capability that playback apps require is playing background audio. With this capability enabled, your app’s audio continues when people switch to another app or lock their iOS device. Your app also needs this capability to enable advanced playback features like AirPlay streaming and Picture in Picture playback on supported platforms.
 

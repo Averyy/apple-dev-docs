@@ -23,7 +23,7 @@ weak var focusedWindow: (any WKWebExtensionWindow)? { get }
 @property (nonatomic, weak, readonly, nullable) id<WKWebExtensionWindow> focusedWindow;
 ```
 
-#### Discussion
+## Discussion
 
 Provides the window that currently has focus, as set by the [`didFocusWindow(_:)`](./didfocuswindow%28_%29.md) method.
 

@@ -21,7 +21,7 @@ Creates a recipient in base mode.
 init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data) throws where SK : HPKEKEMPrivateKey
 ```
 
-#### Discussion
+## Discussion
 
 The `Receiver` decrypts messages in base mode using the encapsulated key with the key schedule information (`info` data).
 

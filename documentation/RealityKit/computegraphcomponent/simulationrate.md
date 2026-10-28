@@ -19,7 +19,7 @@ The rate at which the simulation updates.
 var simulationRate: ComputeGraphSimulation.SimulationRate { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `SimulationRate/default` if no custom rate has been set.
 

@@ -23,7 +23,7 @@ func sec_protocol_options_set_tls_false_start_enabled(_ options: sec_protocol_op
 void sec_protocol_options_set_tls_false_start_enabled(sec_protocol_options_t options, bool false_start_enabled);
 ```
 
-#### Discussion
+## Discussion
 
 Enable or disable TLS False Start.
 

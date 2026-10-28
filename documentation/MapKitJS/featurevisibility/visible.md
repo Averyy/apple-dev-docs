@@ -15,7 +15,7 @@ A constant indicating that the feature is always visible.
 readonly Visible: "visible";
 ```
 
-#### Discussion
+## Discussion
 
 Use `mapkit.FeatureVisibility.Visible` to always show adaptive map controls, such as the compass and scale, regardless of the map’s current state. You can show or hide controls that aren’t adaptive by setting map properties to `true` or `false`, respectively.
 

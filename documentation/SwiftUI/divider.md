@@ -27,7 +27,7 @@ struct Divider
 - [Building layouts with stack views](./building-layouts-with-stack-views.md)
 - [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
 
-#### Overview
+## Overview
 
 When contained in a stack, the divider extends across the minor axis of the stack, or horizontally when not in a stack.
 

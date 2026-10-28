@@ -11,11 +11,11 @@ Fetches an ad assigned to an ad group by identifier.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Use this endpoint to fetch an [`Ad`](./ad.md) assigned to an ad group. Use your `adId` in the resource path.
 
-##### Payload example: Get an ad
+### Payload example: Get an ad
 
 **Request**:
 

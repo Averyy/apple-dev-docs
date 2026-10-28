@@ -23,7 +23,7 @@ convenience init?(width: Int, height: Int, featureChannelCount: Int, batchSize: 
 + (instancetype) descriptorWithWidth:(NSUInteger) width height:(NSUInteger) height featureChannelCount:(NSUInteger) featureChannelCount batchSize:(NSUInteger) batchSize dataType:(MLCDataType) dataType;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer provides a convenient way for you to configure NCHW tensors used by convolutional layers.
 

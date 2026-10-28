@@ -19,7 +19,7 @@ A dimension that indicates sizing for a view in a split arrangement follows auto
 static var automatic: UISplitArrangement.Dimension { get }
 ```
 
-#### Discussion
+## Discussion
 
 This defaults to [`intrinsic`](./intrinsic.md).
 

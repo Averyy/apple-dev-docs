@@ -21,11 +21,11 @@ Call `body(buffer)`, where `buffer` provides access to the non-optional contiguo
 mutating func withContiguousMutableStorageIfAvailable<R>(_ body: (inout UnsafeMutableBufferPointer<WrappedElement>) throws -> R) rethrows -> R?
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by `body`, or `nil`.
 
-#### Discussion
+## Discussion
 
 The optimizer can often eliminate bounds- and uniqueness-checking within an algorithm. When that fails, however, invoking the same algorithm on `body`’s argument may let you trade safety for speed.
 

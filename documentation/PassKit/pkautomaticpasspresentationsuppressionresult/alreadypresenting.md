@@ -24,7 +24,7 @@ case alreadyPresenting
 PKAutomaticPassPresentationSuppressionResultAlreadyPresenting
 ```
 
-#### Discussion
+## Discussion
 
 The device is unable to suppress automatic presentation of passes.
 

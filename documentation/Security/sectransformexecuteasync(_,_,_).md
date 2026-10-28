@@ -21,7 +21,7 @@ func SecTransformExecuteAsync(_ transformRef: SecTransform, _ deliveryQueue: dis
 extern void SecTransformExecuteAsync(SecTransformRef transformRef, dispatch_queue_t deliveryQueue, SecMessageBlock deliveryBlock);
 ```
 
-#### Discussion
+## Discussion
 
 SecTransformExecuteAsync works just like the SecTransformExecute API except that it returns results to the deliveryBlock. There may be multple results depending on the transform. The block knows that the processing is complete when the isFinal parameter is set to true. If an error occurs the block’s error parameter is set and the isFinal parameter will be set to true.
 

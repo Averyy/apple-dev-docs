@@ -22,7 +22,7 @@ Creates a toggle template for a control.
 
 Available when `Label` conforms to `View` and `ValueLabel` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 The toggle will use “On” and “Off” as default value label.
 

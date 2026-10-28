@@ -4,7 +4,7 @@
 
 Learn about new features and updates in the App Store Connect API.
 
-#### Overview
+## Overview
 
 The App Store Connect API is a REST API that enables the automation of actions you take in App Store Connect. Download the latest [OpenAPI specification](https://developer.apple.com/sample-code/app-store-connect/app-store-connect-openapi-specification.zip).
 

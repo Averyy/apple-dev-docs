@@ -14,7 +14,7 @@ An array of PCI device descriptors that your custom driver supports.
 - **Name**: `com.apple.developer.driverkit.transport.pci`
 - **Type**: array of dictionary 
 
-#### Discussion
+## Discussion
 
 Each element in the array is a dictionary whose keys identify a supported device. The values of these keys correspond to values stored in the PCI device’s configuration registers.
 

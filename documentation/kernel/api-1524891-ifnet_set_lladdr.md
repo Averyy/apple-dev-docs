@@ -13,7 +13,7 @@
 errno_t ifnet_set_lladdr(ifnet_t interface, const void *lladdr, size_t lladdr_len);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the link-layer address for this interface.
 

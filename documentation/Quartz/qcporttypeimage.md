@@ -21,7 +21,7 @@ let QCPortTypeImage: String
 extern NSString * const QCPortTypeImage;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value can be an [`NSImage`](../AppKit/nsimage.md) object or a [`CIImage`](../CoreImage/ciimage.md)  object.
 

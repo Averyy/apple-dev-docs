@@ -25,7 +25,7 @@ func CFStringAppendFormatAndArguments(_ theString: CFMutableString!, _ formatOpt
 extern void CFStringAppendFormatAndArguments(CFMutableStringRef theString, CFDictionaryRef formatOptions, CFStringRef format, va_list arguments);
 ```
 
-#### Discussion
+## Discussion
 
 A formatted string is one with `printf`-style format specifiers embedded in the text such as `%d` (decimal), `%f` (double), and `%@` (Core Foundation object). The subsequent arguments, in order, are substituted for the specifiers in the character data appended to `theString`. You can also reorder the arguments in the string by using modifiers of the form “n$” with the format specifiers (for example, `%2$d`).
 

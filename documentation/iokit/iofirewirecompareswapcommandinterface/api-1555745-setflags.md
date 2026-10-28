@@ -16,7 +16,7 @@ Set flags governing this command's execution.
 void (*SetFlags)(IOFireWireLibCompareSwapCommandRef self, UInt32 inFlags);
 ```
 
-#### Discussion
+## Discussion
 
 Available in v2 and newer. Same as SetFlags() above.
 

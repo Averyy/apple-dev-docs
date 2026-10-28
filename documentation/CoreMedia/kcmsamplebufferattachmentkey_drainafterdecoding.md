@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_DrainAfterDecoding: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_DrainAfterDecoding;
 ```
 
-#### Discussion
+## Discussion
 
 This attachment is used at run time to indicate that a sample precedes a break in decode sequence and that it is appropriate to drain the decoder after decoding this sample.
 

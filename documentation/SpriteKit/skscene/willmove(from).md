@@ -24,7 +24,7 @@ func willMove(from view: SKView)
 - (void) willMoveFromView:(SKView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 This method is intended to be overridden in a subclass. You can use this method to implement any custom behavior for your scene when it is about to be removed from the view.
 

@@ -5,7 +5,7 @@
 
 Read pull request information such as source and destination branches.
 
-#### Overview
+## Overview
 
 The `scmPullRequests` resource represents pull requests (PRs) for repositories Xcode Cloud can access. Use it to access:
 

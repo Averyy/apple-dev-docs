@@ -12,7 +12,7 @@ Access hardware devices and drivers from your apps and services.
 - macOS 10.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 The IOKit framework implements nonkernel access to IOKit objects such drivers and nubs through the device-interface mechanism.
 

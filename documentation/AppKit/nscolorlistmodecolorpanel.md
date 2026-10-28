@@ -15,7 +15,7 @@
 static const NSColorPanelMode NSColorListModeColorPanel;
 ```
 
-#### Discussion
+## Discussion
 
 Custom color list
 

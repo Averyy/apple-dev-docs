@@ -25,7 +25,7 @@ case unknown
 AVPlayerStatusUnknown
 ```
 
-#### Discussion
+## Discussion
 
 This is the initial state of a player upon creation.
 

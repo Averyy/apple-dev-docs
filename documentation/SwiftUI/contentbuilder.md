@@ -21,7 +21,7 @@ A custom parameter attribute that constructs views and other content types from 
 typealias ContentBuilder = ViewBuilder
 ```
 
-#### Discussion
+## Discussion
 
 You apply `ContentBuilder`, a type alias for [`ViewBuilder`](./viewbuilder.md), as a parameter attribute to closure parameters, computed properties, or protocol requirements. Then, SwiftUI builds content from multiple statements in the closures you provide. For example, the following `contextMenu` function accepts a closure that produces one or more views from the content builder.
 

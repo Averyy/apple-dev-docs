@@ -21,7 +21,7 @@ The file’s permissions, from the mode’s permission bits.
 var permissions: FilePermissions { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property will mask the `newValue` with the permissions bit mask `ALLPERMS`.
 

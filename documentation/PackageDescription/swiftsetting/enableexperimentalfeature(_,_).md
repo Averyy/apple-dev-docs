@@ -15,7 +15,7 @@ Enable an experimental feature with the given name.
 static func enableExperimentalFeature(_ name: String, _ condition: BuildSettingCondition? = nil) -> SwiftSetting
 ```
 
-#### Discussion
+## Discussion
 
 An experimental feature is one that’s in development, but is not yet available in Swift as a language feature.
 

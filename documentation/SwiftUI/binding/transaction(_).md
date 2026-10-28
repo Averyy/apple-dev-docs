@@ -21,7 +21,7 @@ Specifies a transaction for the binding.
 func transaction(_ transaction: Transaction) -> Binding<Value>
 ```
 
-#### Return Value
+## Return Value
 
 A new binding.
 

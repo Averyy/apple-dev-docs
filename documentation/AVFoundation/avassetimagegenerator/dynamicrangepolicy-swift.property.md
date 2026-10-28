@@ -24,7 +24,7 @@ var dynamicRangePolicy: AVAssetImageGenerator.DynamicRangePolicy { get set }
 @property (nonatomic, copy) AVAssetImageGeneratorDynamicRangePolicy dynamicRangePolicy;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to [`forceSDR`](./dynamicrangepolicy-swift.struct/forcesdr.md).
 

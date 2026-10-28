@@ -18,7 +18,7 @@ A tab view style that displays a tab bar that groups its tabs together.
 
 Available when `Self` is `GroupedTabViewStyle`.
 
-#### Discussion
+## Discussion
 
 To apply this style to a tab view, or to a view that contains tab views, use the [`tabViewStyle(_:)`](../view/tabviewstyle%28_%29.md) modifier.
 

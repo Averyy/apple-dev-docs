@@ -13,7 +13,7 @@
 kIOMediaStateOffline = 0
 ```
 
-#### Discussion
+## Discussion
 
 Media is not available.
 

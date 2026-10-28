@@ -21,7 +21,7 @@ The string encoding.
 static let characterEncoding: NSAttributedString.DocumentReadingOptionKey
 ```
 
-#### Discussion
+## Discussion
 
 For plain text documents; [`NSNumber`](../../nsnumber.md) containing the unsigned int [`NSStringEncoding`](../../nsstringencoding.md) to override any encoding specified in an HTML document. The previous string constant was `@"CharacterEncoding"`.
 

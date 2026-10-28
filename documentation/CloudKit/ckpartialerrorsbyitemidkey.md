@@ -25,7 +25,7 @@ let CKPartialErrorsByItemIDKey: String
 extern NSString * const CKPartialErrorsByItemIDKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a dictionary that maps an item ID to an error. The type of each ID depends on where the error occurs. For example, if you receive a partial error when modifying a record, the ID is an instance of [`CKRecord.ID`](./ckrecord/id.md) that corresponds to the record that CloudKit can’t modify.
 

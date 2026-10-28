@@ -19,7 +19,7 @@ Generate values from a truncated normal distribution in a given `RangeExpression
 func truncatedNormal<T>(_ range: Range<Float>, _ shape: [Int] = [], type: T.Type = Float.self, key: MLXArray? = nil, stream: StreamOrDevice = .default) -> MLXArray where T : HasDType, T : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 Specialization to make it easy to call with `Float`:
 

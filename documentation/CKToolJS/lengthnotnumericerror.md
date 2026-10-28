@@ -15,7 +15,7 @@ An error a validator emits when the length property of a value isn’t numeric.
 interface LengthNotNumericError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueNotConvertibleToTypeError`.
 

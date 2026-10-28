@@ -25,7 +25,7 @@ var time: Float { get set }
 @property (nonatomic) float time;
 ```
 
-#### Discussion
+## Discussion
 
 This value drives the transition from start, at time 0, to end, at time 1.
 

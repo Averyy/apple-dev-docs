@@ -19,7 +19,7 @@ var socketDevices: [VZSocketDeviceConfiguration] { get set }
 @property (copy, readwrite) NSArray<VZSocketDeviceConfiguration *> * socketDevices;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an empty array. If your VM supports port-based communication with sockets, create a single [`VZVirtioSocketDeviceConfiguration`](../vzvirtiosocketdeviceconfiguration.md) object, add it to an array, and assign it to this property. After initializing the virtual machine, use the object in its [`socketDevices`](../vzvirtualmachine/socketdevices.md) property to configure the port information and handlers.
 

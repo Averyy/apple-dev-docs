@@ -15,7 +15,7 @@ A bezel style for use with a disclosure triangle.
 static const NSBezelStyle NSDisclosureBezelStyle;
 ```
 
-#### Discussion
+## Discussion
 
 To create the disclosure triangle, set the button bezel style to `NSDisclosureBezelStyle` and the button type to `NSOnOffButton`.
 

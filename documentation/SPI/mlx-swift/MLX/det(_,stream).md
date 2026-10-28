@@ -17,7 +17,7 @@ Compute the determinant of a square matrix.
 func det(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This function supports arrays with at least 2 dimensions. When the input has more than two dimensions, the determinant is computed for each matrix in the last two dimensions.
 

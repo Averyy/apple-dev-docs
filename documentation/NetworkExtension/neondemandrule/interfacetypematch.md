@@ -24,7 +24,7 @@ var interfaceTypeMatch: NEOnDemandRuleInterfaceType { get set }
 @property NEOnDemandRuleInterfaceType interfaceTypeMatch;
 ```
 
-#### Discussion
+## Discussion
 
 The type of interface that this rule matches. If the current primary network interface is of this type and all of the other conditions in the rule match, then the rule matches. If this property is `NEOnDemandRuleInterfaceTypeAny` (the default), then the current primary interface type does not factor into the rule match.
 

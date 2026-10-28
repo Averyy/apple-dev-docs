@@ -22,11 +22,11 @@ func data(forPasteboardType pasteboardType: String) -> Data?
 - (NSData *) dataForPasteboardType:(NSString *) pasteboardType;
 ```
 
-#### Return Value
+## Return Value
 
 A data object or `nil` if there is no data in the pasteboard of the given type.
 
-#### Discussion
+## Discussion
 
 The returned object often holds raw (binary) data, such as image data. This method works on the first item in the pasteboard. If there are other items, it ignores them.
 

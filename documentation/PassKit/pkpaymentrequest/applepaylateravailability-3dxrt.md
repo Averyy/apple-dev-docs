@@ -20,7 +20,7 @@ A value that indicates whether Apple Pay Later is available for a transaction.
 var applePayLaterAvailability: PKPaymentRequest.ApplePayLaterAvailability { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to enabled.
 

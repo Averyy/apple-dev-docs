@@ -24,11 +24,11 @@ static let numberOfTimesFallen: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierNumberOfTimesFallen;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use count units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 
-##### Detect and Respond to Falls
+### Detect and Respond to Falls
 
 There are two approaches to detecting falls in your app. You can either query for [`numberOfTimesFallen`](./numberoftimesfallen.md) samples in HealthKit, or you can use Core Motion’s [`CMFallDetectionManager`](../../CoreMotion/cmfalldetectionmanager.md).
 
@@ -40,7 +40,7 @@ The fall detection manager:
 - Notifies the app of all fall events
 - Provides background runtime so that your app can respond to the fall
 
-##### Detect and Monitor Falls Over Time
+### Detect and Monitor Falls Over Time
 
 The HealthKit sample is particularly useful for apps that monitor falls over longer time periods, because there can be a delay between the fall event and HealthKit updating its samples.
 

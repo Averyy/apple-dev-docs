@@ -15,11 +15,11 @@ Centers the map to the provided coordinate, with optional animation.
 setCenterAnimated(coordinate: CoordinateData, animated?: boolean): Map;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the map object.
 
-#### Discussion
+## Discussion
 
 By default, MapKit JS animates the pan.
 

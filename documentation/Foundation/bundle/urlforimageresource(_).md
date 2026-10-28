@@ -19,7 +19,7 @@ func urlForImageResource(_ name: NSImage.Name) -> URL?
 - (NSURL *) URLForImageResource:(NSImageName) name;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSURL` for the resource file or `nil` if the file was not found.
 

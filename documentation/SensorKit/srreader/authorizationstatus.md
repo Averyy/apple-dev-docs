@@ -17,11 +17,11 @@ The current authorization status for accessing the sensor data.
 final var authorizationStatus: SRAuthorizationStatus { get }
 ```
 
-#### Return Value
+## Return Value
 
 Current `SRAuthorizationStatus` indicating whether the app has permission to access the sensor data.
 
-#### Discussion
+## Discussion
 
 This observable property automatically updates when the user changes sensor permissions in system settings, allowing to react to authorization changes in real-time.
 

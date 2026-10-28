@@ -19,7 +19,7 @@ class VZGraphicsDevice
 @interface VZGraphicsDevice : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t instantiate a `VZGraphicsDevice` directly. Graphics devices are first configured on the [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) through a subclass of [`VZGraphicsDeviceConfiguration`](./vzgraphicsdeviceconfiguration.md).
 

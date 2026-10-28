@@ -19,9 +19,9 @@ The status item that lists the devices’s Exchange accounts.
 object StatusAccountListExchange
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +32,7 @@ object StatusAccountListExchange
 | Allowed in system scope | iOS, visionOS |
 | Allowed in user scope | macOS, Shared iPad |
 
-##### Status item example
+### Status item example
 
 **New or updated account**:
 

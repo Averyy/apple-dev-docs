@@ -23,7 +23,7 @@ weak var dataSource: (any UIPageViewControllerDataSource)? { get set }
 @property (nonatomic, weak, nullable) id<UIPageViewControllerDataSource> dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 Methods of the data source are called in response to gesture-based navigation. If the value of this property is `nil`, then gesture-based navigation is disabled.
 

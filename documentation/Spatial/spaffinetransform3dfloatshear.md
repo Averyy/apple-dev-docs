@@ -19,11 +19,11 @@
 static SPAffineTransform3DFloat SPAffineTransform3DFloatShear(SPAffineTransform3DFloat transform, SPAxis shearAxis, float shearFactor0, float shearFactor1);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed transform.
 
-#### Discussion
+## Discussion
 
 Returns an affine transform that’s sheared over an axis by shear factors for the other two axes.
 

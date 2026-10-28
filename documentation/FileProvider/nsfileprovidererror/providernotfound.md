@@ -18,7 +18,7 @@ An error indicating that the File Provider manager can’t find the specified pr
 static var providerNotFound: NSFileProviderError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this error occurs during development, make sure the app includes a file provider extension. In a deployed app this error indicates that the system hasn’t registered the specified provider yet. Wait for a [`NSFileProviderDomainDidChange`](../nsfileproviderdomaindidchange.md) notification and try again.
 

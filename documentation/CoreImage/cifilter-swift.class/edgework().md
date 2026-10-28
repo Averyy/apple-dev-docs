@@ -24,11 +24,11 @@ class func edgeWork() -> any CIFilter & CIEdgeWork
 + (CIFilter<CIEdgeWork> *) edgeWorkFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the edge work filter to an image. The effect creates a stylized black-and-white rendition of the image that looks similar to a woodblock print.
 

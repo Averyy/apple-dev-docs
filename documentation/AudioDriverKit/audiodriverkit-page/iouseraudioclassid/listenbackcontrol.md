@@ -15,7 +15,7 @@ The identifier for the audio listenback control class.
 ListenbackControl
 ```
 
-#### Discussion
+## Discussion
 
 This class is a subclass of the [`IOUserAudioBooleanControl`](../../iouseraudiobooleancontrol.md) class where a `true` value indcates an enabled listenback channel. This control is for listenback channels outside of the regular I/O channels. If the listenback channel is among the normal I/O channels, it uses [`MuteControl`](./mutecontrol.md).
 

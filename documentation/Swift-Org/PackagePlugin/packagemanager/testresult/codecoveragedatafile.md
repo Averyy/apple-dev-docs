@@ -20,7 +20,7 @@ The path of a generated profile file to provide code corage.
 var codeCoverageDataFile: Path? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The `.profdata` file is suitable for processing using `llvm-cov`, if `enableCodeCoverage` was set in the test parameters.
 

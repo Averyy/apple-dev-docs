@@ -25,11 +25,11 @@ func vImageLookupTable_Planar16(_ src: UnsafePointer<vImage_Buffer>, _ dest: Uns
 vImage_Error vImageLookupTable_Planar16(const vImage_Buffer *src, const vImage_Buffer *dest, const Pixel_16U table[65536], vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 For each pixel, this function uses the value from the source image as an index to the 16-bit value from the table. The per-pixel conversion calculation is equivalent to the following:
 

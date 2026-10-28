@@ -15,7 +15,7 @@ The maximum number of tries for a PIN has been reached and the user has been loc
 const unsigned short STATUS_PIN_LOCKOUT;
 ```
 
-#### Discussion
+## Discussion
 
 Cards on the China Union Pay network may require a PIN.
 

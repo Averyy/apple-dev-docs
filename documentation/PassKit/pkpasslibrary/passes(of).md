@@ -24,7 +24,7 @@ func passes(of passType: PKPassType) -> [PKPass]
 - (NSArray<PKPass *> *) passesOfType:(PKPassType) passType;
 ```
 
-#### Return Value
+## Return Value
 
 An array of passes of the specified type.
 

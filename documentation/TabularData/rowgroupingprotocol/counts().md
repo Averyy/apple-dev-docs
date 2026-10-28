@@ -21,7 +21,7 @@ Generates a data frame with two columns, one that has a row for each group key a
 func counts() -> DataFrame
 ```
 
-#### Discussion
+## Discussion
 
 The name of the data frame’s column that stores the number of rows in each group is *count*.
 

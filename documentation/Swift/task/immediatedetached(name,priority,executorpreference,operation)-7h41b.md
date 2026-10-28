@@ -24,11 +24,11 @@ static func immediateDetached(name: String? = nil, priority: TaskPriority? = nil
 
 Available when `Success` conforms to `Sendable` and `Failure` is `Never`.
 
-#### Return Value
+## Return Value
 
 A reference to the unstructured task which may be awaited on.
 
-#### Discussion
+## Discussion
 
 This function *starts* the created task on the calling context. The task will continue executing on the caller’s context until it suspends, and after suspension will resume on the adequate executor. For a nonisolated operation this means running on the global concurrent pool, and on an isolated operation it means the appropriate executor of that isolation context.
 

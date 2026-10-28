@@ -22,7 +22,7 @@ A protocol that describes how a type interacts with transport APIs such as drag 
 protocol Transferable : Sendable
 ```
 
-#### Overview
+## Overview
 
 To conform to the [`Transferable`](./transferable.md) protocol, implement the [`transferRepresentation`](./transferable/transferrepresentation.md) property. For example, an image editing app’s layer type might conform to `Transferable` to let people drag and drop image layers to reorder them within a document.
 

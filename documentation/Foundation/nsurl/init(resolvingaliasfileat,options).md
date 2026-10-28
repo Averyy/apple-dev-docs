@@ -25,11 +25,11 @@ convenience init(resolvingAliasFileAt url: URL, options: NSURL.BookmarkResolutio
 + (instancetype) URLByResolvingAliasFileAtURL:(NSURL *) url options:(NSURLBookmarkResolutionOptions) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new URL created by resolving the bookmark data derived from the provided alias file. If an error occurs, this method returns `nil`.
 
-#### Discussion
+## Discussion
 
 Creates and initializes a new URL based on the alias file at `url`. Use this method to resolve bookmark data that was saved using [`writeBookmarkData(_:to:options:)`](./writebookmarkdata%28_,to,options%29.md) and resolves that data in one step.
 

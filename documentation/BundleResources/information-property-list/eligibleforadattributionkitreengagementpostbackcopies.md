@@ -15,7 +15,7 @@ A Boolean value that indicates whether the developer receives copies of AdAttrib
 - **Name**: `EligibleForAdAttributionKitReengagementPostbackCopies` (AdAttributionKit - Opt in for Reengagement Postback Copies)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Use this key to opt in to receive copies of reengagement postbacks. For more information, see [Configuring an advertised app](../../AdAttributionKit/configuring-an-advertised-app.md).
 

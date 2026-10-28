@@ -18,11 +18,11 @@ Appends the caption group synchronously if the input is ready for more media dat
 func appendImmediately(_ captionGroup: AVCaptionGroup) throws -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the append was successful, false if the input was not ready for more media data.
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the underlying writer failed.
 

@@ -24,7 +24,7 @@ func findString(_ string: String, fromSelection selection: PDFSelection?, withOp
 - (PDFSelection *) findString:(NSString *) string fromSelection:(PDFSelection *) selection withOptions:(NSStringCompareOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 Matches are returned as a [`PDFSelection`](../pdfselection.md) object. If the search reaches the end (or beginning) of the document without any hits, this method returns `NULL`.
 

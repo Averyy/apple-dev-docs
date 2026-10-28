@@ -21,7 +21,7 @@ var controlTint: NSControlTint { get set }
 @property NSControlTint controlTint;
 ```
 
-#### Discussion
+## Discussion
 
 The valid values for `controlTint` are described in [`NSControlTint`](../nscontroltint.md).
 

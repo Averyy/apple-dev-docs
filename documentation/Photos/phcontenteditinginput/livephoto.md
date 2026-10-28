@@ -24,7 +24,7 @@ var livePhoto: PHLivePhoto? { get }
 @property (strong, readonly, nullable) PHLivePhoto * livePhoto;
 ```
 
-#### Discussion
+## Discussion
 
 To edit the video and photo content of the Live Photo, create a [`PHLivePhotoEditingContext`](../phlivephotoeditingcontext.md) object using this [`PHContentEditingInput`](../phcontenteditinginput.md) object.
 

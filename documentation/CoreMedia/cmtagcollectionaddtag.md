@@ -21,7 +21,7 @@ Adds a new tag to an existing collection.
 extern OSStatus CMTagCollectionAddTag(CMMutableTagCollectionRef tagCollection, CMTag tagToAdd);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `0` on success and a value from Tag Collection Error Codes on failure.
 

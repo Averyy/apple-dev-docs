@@ -25,7 +25,7 @@ var isPendingPriceIncreaseConsent: Bool { get }
 @property (nonatomic, readonly) BOOL pendingPriceIncreaseConsent;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies only to subscription price increases that require customer consent in the test environment.
 

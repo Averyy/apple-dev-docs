@@ -15,7 +15,7 @@
 kINQUIRY_Byte7_VS_Bit = 0
 ```
 
-#### Discussion
+## Discussion
 
 VS bit definition.
 

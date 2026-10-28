@@ -24,7 +24,7 @@ optional func setLocalTransform(_ transform: matrix_float4x4, forTime time: Time
 - (void) setLocalTransform:(matrix_float4x4) transform forTime:(NSTimeInterval) time;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method updates the [`minimumTime`](./minimumtime.md) and [`maximumTime`](./maximumtime.md) properties to reflect the range of sample values stored in the transform component.
 

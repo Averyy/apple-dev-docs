@@ -23,7 +23,7 @@ class UIFindSession
 @interface UIFindSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 You return a session object from the delegate of a [`UIFindInteraction`](./uifindinteraction.md) to manage the state, presentation, and behavior for a given search. The session object responds to navigation and replacement requests through its [`highlightNextResult(in:)`](./uifindsession/highlightnextresult%28in%29.md) and [`performSingleReplacement(query:replacementString:options:)`](./uifindsession/performsinglereplacement%28query,replacementstring,options%29.md) methods. It also provides presentation information to the system find panel through [`resultCount`](./uifindsession/resultcount.md) and [`highlightedResultIndex`](./uifindsession/highlightedresultindex.md).
 

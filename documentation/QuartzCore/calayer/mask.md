@@ -24,13 +24,13 @@ var mask: CALayer? { get set }
 @property (strong, nullable) CALayer * mask;
 ```
 
-#### Discussion
+## Discussion
 
 The layer’s alpha channel determines how much of the layer’s content and background shows through. Fully or partially opaque pixels allow the underlying content to show through, but fully transparent pixels block that content.
 
 The default value of this property is `nil`. When configuring a mask, remember to set the size and position of the mask layer to ensure it is aligned properly with the layer it masks.
 
-##### Special Considerations
+### Special Considerations
 
 The layer you assign to this property must not have a superlayer. If it does, the behavior is undefined.
 

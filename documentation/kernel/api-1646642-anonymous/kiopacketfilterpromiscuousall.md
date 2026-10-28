@@ -13,7 +13,7 @@
 kIOPacketFilterPromiscuousAll = 0x200
 ```
 
-#### Discussion
+## Discussion
 
 Reception of all packets, including bad packets.
 

@@ -32,7 +32,7 @@ Returns a localized text label that displays additional content outside the acce
 @preconcurrency func widgetLabel<S>(_ label: S) -> some View where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 To add a text label to an accessory family widget, call this method on the widget’s main SwiftUI view, and pass in a supported `LocalizedStringResource`. The system determines whether it can use the text label. If it can’t, it ignores the label. The system also sets the label’s size, placement, and style based on the clock face. For example, setting the font and rendering the text along a curve.
 

@@ -20,7 +20,7 @@ optional func textView(_ textView: NSTextView, shouldChangeTypingAttributes oldT
 - (NSDictionary<NSString *,id> *) textView:(NSTextView *) textView shouldChangeTypingAttributes:(NSDictionary<NSString *,id> *) oldTypingAttributes toAttributes:(NSDictionary<NSString *,id> *) newTypingAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 The actual new typing attributes.
 

@@ -19,7 +19,7 @@ func collapseItem(_ item: Any?, collapseChildren: Bool)
 - (void) collapseItem:(id) item collapseChildren:(BOOL) collapseChildren;
 ```
 
-#### Discussion
+## Discussion
 
 For example, this method is invoked with the `collapseChildren` parameter set to [`true`](../../Swift/true.md) when a user Option-clicks the disclosure triangle for an item in the outline view (to collapse the item and all its contained items).
 

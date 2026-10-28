@@ -16,11 +16,11 @@ CMError CMIterateColorSyncFolder (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 Starting with ColorSync version 2.5, when your application needs information about the profiles currently available in the ColorSync Profiles folder, it can call the `CMIterateColorSyncFolder` routine, which in turn calls your callback routine once for each profile.
 
@@ -40,7 +40,7 @@ Note that if there are no profiles available, ColorSync does not call your callb
 
 You can safely pass `NULL` for any or all of the parameters to the `CMIterateColorSyncFolder` function. If you pass `NULL` for all of the parameters, calling the function merely forces rebuilding of the profile cache, if necessary. 
 
-##### Version-Notes
+### Version-Notes
 
 Starting with version 2.5, the name and location of the profile folder changed. In addition, the folder can now contain profiles within nested folders, as well as aliases to profiles or aliases to folders containing profiles. There are limits on the nesting of folders and aliases.
 

@@ -21,7 +21,7 @@ var nowPlayingButtons: [CPNowPlayingButton] { get }
 @property (nonatomic, strong, readonly) NSArray<__kindof CPNowPlayingButton *> * nowPlayingButtons;
 ```
 
-#### Discussion
+## Discussion
 
 You use the [`updateNowPlayingButtons(_:)`](./updatenowplayingbuttons%28_%29.md) method to provide a maximum of five playback control buttons. The template arranges the buttons using the array’s order, from the leading edge of the CarPlay screen to the trailing edge.
 

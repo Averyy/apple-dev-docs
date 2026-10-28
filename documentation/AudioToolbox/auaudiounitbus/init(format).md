@@ -24,11 +24,11 @@ init(format: AVAudioFormat) throws
 - (instancetype) initWithFormat:(AVAudioFormat *) format error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A newly-initialized bus object, or `nil` if the operation failed.
 
-#### Discussion
+## Discussion
 
 Audio units can generally be expected to support the [`AVAudioFormat`](../../AVFAudio/avaudioformat.md) standard format (deinterleaved 32-bit float), at any sample rate.
 

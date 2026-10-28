@@ -23,7 +23,7 @@ var length: CGFloat { get set }
 @property (nonatomic, readwrite) CGFloat length;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to adjust the attachment length, if you want to, *after* creating an attachment. The system sets initial length automatically based on how you initialize the attachment.
 

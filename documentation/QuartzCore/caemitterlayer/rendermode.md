@@ -24,7 +24,7 @@ var renderMode: CAEmitterLayerRenderMode { get set }
 @property (copy) CAEmitterLayerRenderMode renderMode;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for render modes are shown in [Emitter Modes](../emitter-modes.md). The default value is [`unordered`](../caemitterlayerrendermode/unordered.md).
 

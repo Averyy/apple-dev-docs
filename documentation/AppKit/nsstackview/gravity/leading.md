@@ -19,7 +19,7 @@ static var leading: NSStackView.Gravity { get }
 NSStackViewGravityLeading
 ```
 
-#### Discussion
+## Discussion
 
 For a left to right layout direction, the leading gravity area is on the left. Use only when the value of the [`orientation`](../orientation.md) property is [`NSUserInterfaceLayoutOrientation.horizontal`](../../nsuserinterfacelayoutorientation/horizontal.md).
 

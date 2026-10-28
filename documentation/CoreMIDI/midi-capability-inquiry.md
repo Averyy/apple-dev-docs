@@ -5,7 +5,7 @@
 
 Provide support for bidirectional discovery and configuration of devices.
 
-#### Overview
+## Overview
 
 MIDI Capability Inquiry (MIDI-CI) uses bidirectional communication to enable devices to exchange information about their capabilities and automatically configure themselves to work together. MIDI-CI discovers and configures devices using the following means:
 

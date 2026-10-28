@@ -25,7 +25,7 @@ func analyze(_ audioBuffer: AVAudioBuffer, atAudioFramePosition audioFramePositi
 - (void) analyzeAudioBuffer:(AVAudioBuffer *) audioBuffer atAudioFramePosition:(AVAudioFramePosition) audioFramePosition;
 ```
 
-#### Discussion
+## Discussion
 
 Serialize all calls to this method on a dedicated dispatch queue to prevent blocking the calling thread. The audio stream analyzer sends errors to each request’s results observer.
 

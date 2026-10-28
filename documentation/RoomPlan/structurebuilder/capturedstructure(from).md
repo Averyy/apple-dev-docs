@@ -21,11 +21,11 @@ func capturedStructure(from rooms: [CapturedRoom]) async throws -> CapturedStruc
 
 - [Scanning the rooms of a single structure](../scanning-the-rooms-of-a-single-structure.md)
 
-#### Return Value
+## Return Value
 
 An object that consists of all of the captured room data across one or more scan sessions.
 
-#### Discussion
+## Discussion
 
 Each captured room in the argument array represents the post-processed result of a single scan session. This function succeeds when all of the captured rooms share compatible world space; otherwise, the function fails with an error. [`CapturedRoom`](../capturedroom.md) instances share compatible world space if they reside in the same physical vicinity (they connect to form a larger structure), such as different rooms in the same building.
 

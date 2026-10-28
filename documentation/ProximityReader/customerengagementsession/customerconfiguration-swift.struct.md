@@ -17,7 +17,7 @@ A structure that contains configuration details for the connected customer devic
 struct CustomerConfiguration
 ```
 
-#### Overview
+## Overview
 
 This is available on the [`CustomerEngagementSession.Event.ready`](./event/ready.md) event after the merchant device establishes the peer connection with the customer’s device.
 

@@ -19,11 +19,11 @@ func contextForSegue(withIdentifier segueIdentifier: String, in table: WKInterfa
 - (id) contextForSegueWithIdentifier:(NSString *) segueIdentifier inTable:(WKInterfaceTable *) table rowIndex:(NSInteger) rowIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The object to pass to the new interface controller. Use this object to communicate important information to the new interface controller, such as the data to display or any relevant state information. You may specify `nil` if you want, but doing so is not recommended.
 
-#### Discussion
+## Discussion
 
 WatchKit calls this method when a segue attached to a table row is triggered. Use this method to provide the new interface controller with any contextual data it needs to display its content. The object you return is passed directly to the new interface controller’s [`awake(withContext:)`](./awake%28withcontext%29.md) method.
 

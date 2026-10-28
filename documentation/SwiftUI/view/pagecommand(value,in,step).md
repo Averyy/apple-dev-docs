@@ -16,7 +16,7 @@ nonisolated
 func pageCommand<V>(value: Binding<V>, in bounds: ClosedRange<V>, step: V = 1) -> some View where V : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 Use this command to step through sections of a data model associated with a view by providing a binding to a value, a range, and step. If taking another step would cause the value to exceed the bounds, then the value remains unchanged.
 

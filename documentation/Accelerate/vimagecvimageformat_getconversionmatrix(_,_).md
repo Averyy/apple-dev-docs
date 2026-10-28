@@ -25,11 +25,11 @@ func vImageCVImageFormat_GetConversionMatrix(_ format: vImageConstCVImageFormat,
 const void *vImageCVImageFormat_GetConversionMatrix(vImageConstCVImageFormatRef format, vImageMatrixType *outType);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the conversion matrix.
 
-#### Discussion
+## Discussion
 
 The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](./vimagecvimageformat_createwithcvpixelbuffer%28_%29.md), return a [`vImageCVImageFormat`](./vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](./vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](./vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetConversionMatrix(_:_:)`](./vimagecvimageformat_getconversionmatrix%28_,_%29.md):
 

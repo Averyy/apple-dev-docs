@@ -23,7 +23,7 @@ static let likelyLanguageKey: StringEncodingDetectionOptionsKey
 extern NSStringEncodingDetectionOptionsKey const NSStringEncodingDetectionLikelyLanguageKey;
 ```
 
-#### Discussion
+## Discussion
 
 Option specifying the likely two-letter ISO 639-1 language code for the converted string. Use this when you have prior knowledge about the expected language of the converted string. The corresponding value for this key is an `NSString` object. If no value is specified, the language of the converted string is not considered.
 

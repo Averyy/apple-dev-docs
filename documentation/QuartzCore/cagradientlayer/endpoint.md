@@ -24,7 +24,7 @@ var endPoint: CGPoint { get set }
 @property CGPoint endPoint;
 ```
 
-#### Discussion
+## Discussion
 
 The end point corresponds to the last stop of the gradient. The point is defined in the unit coordinate space and is then mapped to the layer’s bounds rectangle when drawn.
 

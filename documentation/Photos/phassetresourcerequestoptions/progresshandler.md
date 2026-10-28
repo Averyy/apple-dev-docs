@@ -24,7 +24,7 @@ var progressHandler: PHAssetResourceProgressHandler? { get set }
 @property (nonatomic, copy, nullable) PHAssetResourceProgressHandler progressHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If you request an asset resource whose data is not on the local device, and you have enabled downloading with the [`isNetworkAccessAllowed`](./isnetworkaccessallowed.md) property, Photos calls your block periodically to report progress.
 

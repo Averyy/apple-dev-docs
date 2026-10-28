@@ -23,7 +23,7 @@ func display(in scene: UIWindowScene) throws
 
 - [Testing failing subscription renewals and Apple In-App Purchases](../testing-failing-subscription-renewals-and-in-app-purchases.md)
 
-#### Discussion
+## Discussion
 
 The system displays the message if the message is applicable; for example, if the user has previously seen the same App Store message, the system may determine whether to display the message again.
 

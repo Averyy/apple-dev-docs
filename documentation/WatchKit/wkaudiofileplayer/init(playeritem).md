@@ -19,7 +19,7 @@ convenience init(playerItem item: WKAudioFilePlayerItem)
 + (instancetype) playerWithPlayerItem:(WKAudioFilePlayerItem *) item;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized player object.
 

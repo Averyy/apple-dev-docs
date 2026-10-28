@@ -25,11 +25,11 @@ class func setVersion(_ aVersion: Int)
 + (void) setVersion:(NSInteger) aVersion;
 ```
 
-#### Discussion
+## Discussion
 
 The version number is helpful when instances of the class are to be archived and reused later. The default version is `0`.
 
-##### Special Considerations
+### Special Considerations
 
 The version number applies to `NSArchiver`/`NSUnarchiver`, but not to `NSKeyedArchiver`/`NSKeyedUnarchiver`.  A keyed archiver does not encode class version numbers.
 

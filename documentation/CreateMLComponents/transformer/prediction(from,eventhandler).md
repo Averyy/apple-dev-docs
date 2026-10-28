@@ -21,7 +21,7 @@ Performs a prediction on a sequence of annotated inputs.
 func prediction<S, Annotation>(from input: S, eventHandler: EventHandler? = nil) async throws -> [AnnotatedPrediction<Self.Output, Annotation>] where S : Sequence, S.Element == AnnotatedFeature<Self.Input, Annotation>
 ```
 
-#### Return Value
+## Return Value
 
 Annotated predictions produced by applying the transformer to the inputs.
 

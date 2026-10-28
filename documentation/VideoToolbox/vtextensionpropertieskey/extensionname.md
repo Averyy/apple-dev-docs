@@ -19,7 +19,7 @@ static let extensionName: VTExtensionPropertiesKey
 extern VTExtensionPropertiesKey const kVTExtensionProperties_ExtensionNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key points to a `CFStringRef` value with the localized extension name.
 

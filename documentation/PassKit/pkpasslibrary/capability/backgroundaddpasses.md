@@ -24,7 +24,7 @@ case backgroundAddPasses
 PKPassLibraryCapabilityBackgroundAddPasses
 ```
 
-#### Discussion
+## Discussion
 
 Request this capability when your app needs to add passes in the background, for example, after a purchase or a check-in, without interrupting the person with a confirmation prompt. If the person hasn’t granted this capability, call [`requestAuthorization(for:completion:)`](../requestauthorization%28for,completion%29.md) to ask for permission. If the person denies the request, present the passes for review instead by using an instance of [`PKAddPassesViewController`](../../pkaddpassesviewcontroller.md).
 

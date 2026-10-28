@@ -19,7 +19,7 @@ class var deviceRGB: NSColorSpace { get }
 @property (class, strong, readonly) NSColorSpace * deviceRGBColorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSColorSpace` object. This color space has red, green, blue, and alpha components. Typical devices that use the color-additive RGB color space are displays and scanners. This object corresponds to the Cocoa color space name `NSDeviceRGBColorSpace`.
 

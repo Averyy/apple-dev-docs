@@ -24,7 +24,7 @@ func add(_ selection: PDFSelection)
 - (void) addSelection:(PDFSelection *) selection;
 ```
 
-#### Discussion
+## Discussion
 
 Selections do not have to be contiguous. If the selection to be added overlaps with the receiving selection, the overlap is removed in a process called normalization.
 

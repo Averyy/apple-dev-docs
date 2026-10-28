@@ -10,7 +10,7 @@ framework: "Swift-Org/SwiftlyDocs"
 
 Generate shell autocompletions for swiftly.
 
-#### Overview
+## Overview
 
 Swiftly can generate shell autocompletion scripts for your shell to automatically complete subcommands, arguments, options and flags. It does this using the [swift-argument-parser](https://apple.github.io/swift-argument-parser/documentation/argumentparser/installingcompletionscripts/), which has support for Bash, Z shell, and Fish.
 

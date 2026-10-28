@@ -21,11 +21,11 @@ Republishes elements until another publisher emits an element.
 func prefix<P>(untilOutputFrom publisher: P) -> Publishers.PrefixUntilOutput<Self, P> where P : Publisher
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that republishes elements until the second publisher publishes an element.
 
-#### Discussion
+## Discussion
 
 After the second publisher publishes an element, the publisher returned by this method finishes.
 

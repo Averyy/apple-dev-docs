@@ -21,7 +21,7 @@ protocol ModelComponentsProviding : BaseLanguageModel
 
 - [Model Compatibility](./model-compatibility.md)
 
-#### Overview
+## Overview
 
 Before the loader reads the checkpoint, it removes the modules of each component that does not load now, and it does not read their tensors. The module tree does not change after the load. An on-demand component loads later through the same [`prepareCheckpoint(_:)`](./baselanguagemodel/preparecheckpoint%28_%29.md), quantization and validation as the model.
 

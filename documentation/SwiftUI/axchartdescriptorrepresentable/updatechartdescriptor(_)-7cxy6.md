@@ -21,7 +21,7 @@ Update the existing `AXChartDescriptor` for your view, based on changes in your 
 func updateChartDescriptor(_ descriptor: AXChartDescriptor)
 ```
 
-#### Discussion
+## Discussion
 
 This will be called as needed, when accessibility needs your `AXChartDescriptor` for VoiceOver. It will only be called if the inputs to your views, or a relevant part of the `Environment`, have changed.
 

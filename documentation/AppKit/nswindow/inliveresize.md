@@ -19,7 +19,7 @@ var inLiveResize: Bool { get }
 @property (readonly) BOOL inLiveResize;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the window is being live resized; otherwise, [`false`](../../Swift/false.md).
 

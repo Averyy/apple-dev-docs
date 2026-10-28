@@ -25,11 +25,11 @@ optional func fileManager(_ fileManager: FileManager, shouldLinkItemAtPath srcPa
 - (BOOL) fileManager:(NSFileManager *) fileManager shouldLinkItemAtPath:(NSString *) srcPath toPath:(NSString *) dstPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operation should proceed, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the item specified by `destURL` is a directory, returning [`false`](../../Swift/false.md) prevents links from being created to both the directory and its children.
 

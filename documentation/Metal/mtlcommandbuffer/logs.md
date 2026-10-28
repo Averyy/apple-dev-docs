@@ -20,7 +20,7 @@ The messages the command buffer records as the GPU runs its commands.
 @property (readonly) id<MTLLogContainer> logs;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is valid only after the command buffer finishes executing.
 

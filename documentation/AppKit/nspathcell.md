@@ -19,7 +19,7 @@ class NSPathCell
 @interface NSPathCell : NSActionCell
 ```
 
-#### Overview
+## Overview
 
 [`NSPathCell`](./nspathcell.md) maintains a collection of [`NSPathComponentCell`](./nspathcomponentcell.md) objects that represent a particular path to be displayed to the user.
 
@@ -37,7 +37,7 @@ If the cell’s [`isSelectable`](./nscell/isselectable.md) method returns [`true
 
 If the cell is editable and has the path style set to [`NSPathControl.Style.popUp`](./nspathcontrol/style/popup.md), an additional item in the pop-up menu allows selecting another location. By default, an `NSOpenPanel` object is configured based on the allowed types. The `NSOpenPanel` object can be customized with a delegate method.
 
-#### Setting the control size
+## Setting the control size
 
 When setting the [`controlSize`](./nscell/controlsize.md) property, `NSPathCell` properly respects the control size for the [`NSPathControl.Style.standard`](./nspathcontrol/style/standard.md) and [`NSPathControl.Style.popUp`](./nspathcontrol/style/popup.md) styles. When the control size is set, the new size is propagated to subcells. When the path style is set to [`NSPathStyleNavigationBar`](./nspathstyle/nspathstylenavigationbar.md), you cannot change the control size, and it is always set to [`NSSmallControlSize`](./nssmallcontrolsize.md). Attempting to change the control size when the path style is [`NSPathStyleNavigationBar`](./nspathstyle/nspathstylenavigationbar.md) causes an assertion. Setting the path style to [`NSPathStyleNavigationBar`](./nspathstyle/nspathstylenavigationbar.md) forces the control size to be [`NSSmallControlSize`](./nssmallcontrolsize.md).
 

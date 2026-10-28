@@ -19,11 +19,11 @@ func PMPrinterIsDefault(_ printer: PMPrinter) -> Bool
 Boolean PMPrinterIsDefault(PMPrinter printer);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the specified printer is the default printer for the current user; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 The default printer is the printer selected by default in the Print dialog.
 

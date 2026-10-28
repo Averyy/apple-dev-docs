@@ -20,7 +20,7 @@ case vertical
 ARPlaneAnchorAlignmentVertical
 ```
 
-#### Discussion
+## Discussion
 
 The [`transform`](../../aranchor/transform.md) property for a vertical plane anchor includes a rotation component. That is, the transform matrix represents the result of rotating a horizontal plane to match the orientation of the detected surface.
 

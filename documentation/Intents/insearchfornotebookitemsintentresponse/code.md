@@ -33,7 +33,7 @@ var code: INSearchForNotebookItemsIntentResponseCode { get }
 @property (atomic, readonly) INSearchForNotebookItemsIntentResponseCode code;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set automatically at initialization time and cannot be changed later.
 

@@ -20,7 +20,7 @@ A tuple of Boolean values that you use to lock the position of the physics body 
 var isTranslationLocked: (x: Bool, y: Bool, z: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 You can restrict movement of the body along one or more axes by setting the corresponding item in the tuple to `true`. For example, if you set the `x` and the `z` items in the tuple to `true`, then the body can move only along the y-axis. By default, movement isn’t restricted.
 

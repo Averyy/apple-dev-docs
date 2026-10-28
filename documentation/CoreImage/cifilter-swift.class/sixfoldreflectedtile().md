@@ -24,11 +24,11 @@ class func sixfoldReflectedTile() -> any CIFilter & CISixfoldReflectedTile
 + (CIFilter<CISixfoldReflectedTile> *) sixfoldReflectedTileFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The tiled image.
 
-#### Discussion
+## Discussion
 
 This filter produces a tiled image from a source image by applying a six-way reflected symmetry.
 

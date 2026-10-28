@@ -25,7 +25,7 @@ var movabilityHint: SCNMovabilityHint { get set }
 @property (nonatomic) SCNMovabilityHint movabilityHint;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls how the node contributes to various motion-related effects during rendering. The default value is [`SCNMovabilityHint.fixed`](../scnmovabilityhint/fixed.md). If the movability hint is [`SCNMovabilityHint.movable`](../scnmovabilityhint/movable.md):
 

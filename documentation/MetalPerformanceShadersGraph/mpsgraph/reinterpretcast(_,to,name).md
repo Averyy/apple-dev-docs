@@ -24,11 +24,11 @@ func reinterpretCast(_ tensor: MPSGraphTensor, to type: MPSDataType, name: Strin
 - (MPSGraphTensor *) reinterpretCastTensor:(MPSGraphTensor *) tensor toType:(MPSDataType) type name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Returns input tensor (with element type `tensor_type`) reinterpreted to element type passed in with the last dimension scaled by `sizeof(tensor_type) / sizeof(type)`. This operation is endianness agnostic and MPSGraph reinterprets the data with the endianness of the system.
 

@@ -20,7 +20,7 @@ func NSMinX(_ aRect: NSRect) -> Double
 static CGFloat NSMinX(NSRect aRect);
 ```
 
-#### Return Value
+## Return Value
 
 The smallest x coordinate value within `aRect`.
 

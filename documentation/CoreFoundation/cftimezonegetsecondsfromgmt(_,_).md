@@ -25,7 +25,7 @@ func CFTimeZoneGetSecondsFromGMT(_ tz: CFTimeZone!, _ at: CFAbsoluteTime) -> CFT
 extern CFTimeInterval CFTimeZoneGetSecondsFromGMT(CFTimeZoneRef tz, CFAbsoluteTime at);
 ```
 
-#### Return Value
+## Return Value
 
 The difference in seconds between `tz` and GMT at the specified date, `at`.
 

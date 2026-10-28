@@ -28,7 +28,7 @@ enum MTLStorageMode : NSUInteger;
 
 - [Setting resource storage modes](./setting-resource-storage-modes.md)
 
-#### Overview
+## Overview
 
 For more guidance on how to choose storage modes, see [Setting resource storage modes](./setting-resource-storage-modes.md).
 

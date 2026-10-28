@@ -23,7 +23,7 @@ The list of tags contained in this instance.
 var tags: [Tag]
 ```
 
-#### Discussion
+## Discussion
 
 This preserves the list of the tags exactly as they were originally specified, in their original order, including duplicate entries. To access the complete, unique set of tags applied to a [`Test`](../../test.md), see [`tags`](../../test/tags.md).
 

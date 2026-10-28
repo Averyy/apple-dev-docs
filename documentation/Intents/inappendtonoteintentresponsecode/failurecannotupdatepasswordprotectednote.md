@@ -25,7 +25,7 @@ case failureCannotUpdatePasswordProtectedNote
 INAppendToNoteIntentResponseCodeFailureCannotUpdatePasswordProtectedNote
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you can’t update the note because of protections put in place by your app. Don’t use this code for general errors.
 

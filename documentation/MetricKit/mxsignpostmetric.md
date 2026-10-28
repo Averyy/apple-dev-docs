@@ -25,7 +25,7 @@ class MXSignpostMetric
 @interface MXSignpostMetric : MXMetric
 ```
 
-#### Overview
+## Overview
 
 A custom metric is an event type with a developer-defined name and category. You can add custom metrics to daily reports to capture information specific to your app.
 

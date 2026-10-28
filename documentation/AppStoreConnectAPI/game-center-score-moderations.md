@@ -5,7 +5,7 @@
 
 Review and moderate scores players submit to your app’s leaderboards.
 
-#### Overview
+## Overview
 
 Score moderations represent the scores players submit to a Game Center leaderboard, which you review and choose to block or unblock. Blocking a score removes it from the leaderboard, and unblocking reinstates it. Use this resource to:
 

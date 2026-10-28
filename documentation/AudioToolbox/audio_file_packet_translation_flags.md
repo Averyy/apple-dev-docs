@@ -5,7 +5,7 @@
 
 Flags specified in a packet translation structure.
 
-#### Overview
+## Overview
 
 Flag used with the `mFlags` field of the [`AudioBytePacketTranslation`](./audiobytepackettranslation.md) structure.
 

@@ -14,7 +14,7 @@ func simd_spline(_ q0: simd_quath, _ q1: simd_quath, _ q2: simd_quath, _ q3: sim
 static simd_quath simd_spline(simd_quath q0, simd_quath q1, simd_quath q2, simd_quath q3, _Float16 t);
 ```
 
-#### Discussion
+## Discussion
 
 Interpolate between quaternions along a spherical cubic spline.
 

@@ -25,7 +25,7 @@ var isCancelled: Bool { get }
 @property (readonly, getter=isCancelled) BOOL cancelled;
 ```
 
-#### Discussion
+## Discussion
 
 By default, [`Progress`](../progress.md) is KVO-compliant for this property. It sends notifications on the same thread that updates the property.
 

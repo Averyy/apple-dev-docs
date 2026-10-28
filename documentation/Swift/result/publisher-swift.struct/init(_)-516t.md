@@ -21,7 +21,7 @@ Creates a publisher that delivers the specified result.
 init(_ result: Result<Result<Success, Failure>.Publisher.Output, Failure>)
 ```
 
-#### Discussion
+## Discussion
 
 If `result` is `Swift/Result/success`, then the publisher waits until it receives a request for at least one value, then sends the output to all subscribers and finishes normally. If `result` is `Swift/Result/failure`, then the publisher sends the failure immediately upon subscription.
 

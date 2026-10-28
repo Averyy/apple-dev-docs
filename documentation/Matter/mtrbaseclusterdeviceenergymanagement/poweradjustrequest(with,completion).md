@@ -29,7 +29,7 @@ func powerAdjustRequest(with params: MTRDeviceEnergyManagementClusterPowerAdjust
 - (void) powerAdjustRequestWithParams:(MTRDeviceEnergyManagementClusterPowerAdjustRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Allows a client to request an adjustment in the power consumption of an ESA for a specified duration.
 

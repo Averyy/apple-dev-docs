@@ -9,11 +9,11 @@ Retrieve information about an article, such as the revision number and maturity 
 **Availability**:
 - Apple News API 1.0+
 
-#### Discussion
+## Discussion
 
 Use the Read Article Information endpoint to retrieve information about the article ([`Article`](./article.md)), article links (`ArticleLinks`), meta ([`Meta`](./meta.md)), and optional metadata fields ([`Create Article Metadata Fields`](./create-article-metadata-fields.md)).
 
-##### Example
+### Example
 
 **Request**:
 

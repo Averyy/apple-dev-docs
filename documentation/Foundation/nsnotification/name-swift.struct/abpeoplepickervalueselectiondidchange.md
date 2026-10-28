@@ -15,7 +15,7 @@ Posted when the selection in a multivalue property is changed.
 static let ABPeoplePickerValueSelectionDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification on the main actor.
 

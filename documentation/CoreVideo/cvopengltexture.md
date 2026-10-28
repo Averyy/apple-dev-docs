@@ -20,7 +20,7 @@ typealias CVOpenGLTexture = CVImageBuffer
 typedef CVImageBufferRef CVOpenGLTextureRef;
 ```
 
-#### Discussion
+## Discussion
 
 The Core Video OpenGL texture is a wrapper around the standard OpenGL texture.
 

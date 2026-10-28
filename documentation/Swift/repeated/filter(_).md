@@ -21,11 +21,11 @@ Returns an array containing, in order, the elements of the sequence that satisfy
 func filter<E>(_ isIncluded: (Self.Element) throws(E) -> Bool) throws(E) -> [Self.Element] where E : Error
 ```
 
-#### Return Value
+## Return Value
 
 An array of the elements that `isIncluded` allowed.
 
-#### Discussion
+## Discussion
 
 In this example, `filter(_:)` is used to include only names shorter than five characters.
 

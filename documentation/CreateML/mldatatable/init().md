@@ -20,7 +20,7 @@ Creates an empty table containing no rows or columns.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an empty data table. Then, you add data columns with [`addColumn(_:named:)`](./addcolumn%28_,named%29-kkbw.md), untyped columns with [`addColumn(_:named:)`](./addcolumn%28_,named%29-9cb24.md), or another table with [`append(contentsOf:)`](./append%28contentsof%29.md).
 

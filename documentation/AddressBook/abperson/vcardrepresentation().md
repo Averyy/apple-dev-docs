@@ -19,7 +19,7 @@ func vCardRepresentation() -> Data!
 - (NSData *) vCardRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing the vCard representation of the person record.
 

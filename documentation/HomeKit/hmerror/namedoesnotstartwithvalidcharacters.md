@@ -20,7 +20,7 @@ An attempt to start the name of an object with invalid characters.
 static var nameDoesNotStartWithValidCharacters: HMError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Names must start with a letter, symbol, or number.
 

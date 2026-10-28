@@ -20,7 +20,7 @@ The default lifetime policy for a group activity.
 static let automatic: GroupActivityMetadata.LifetimePolicy
 ```
 
-#### Discussion
+## Discussion
 
 Initiators and participants will have the option to leave the activity independently or end it for everyone.  When everyone has left the activity, it will end.
 

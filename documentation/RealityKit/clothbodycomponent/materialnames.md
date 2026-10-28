@@ -17,7 +17,7 @@ The names of the body materials used by this cloth body.
 var materialNames: [String]
 ```
 
-#### Discussion
+## Discussion
 
 The default material is used if no matching material name is present in [`ClothSimulationComponent`](../clothsimulationcomponent.md).
 

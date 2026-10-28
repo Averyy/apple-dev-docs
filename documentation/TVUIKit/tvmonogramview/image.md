@@ -19,7 +19,7 @@ var image: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 If you supply an image, the system uses this image instead of a generic image or an image created from the name components.
 

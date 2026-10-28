@@ -16,11 +16,11 @@ Create a requirement that the peer has the specified entitlement with the matchi
 static func entitlement(_ entitlement: String, matches value: Int) -> XPCPeerRequirement
 ```
 
-#### Return Value
+## Return Value
 
 A `XPCPeerRequirement` object representing the requirement
 
-#### Discussion
+## Discussion
 
 - entitlement: The entitlement to check.
 - value: The int value to match

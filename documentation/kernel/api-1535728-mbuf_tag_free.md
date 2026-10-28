@@ -13,7 +13,7 @@
 void mbuf_tag_free(mbuf_t mbuf, mbuf_tag_id_t module_id, mbuf_tag_type_t type);
 ```
 
-#### Discussion
+## Discussion
 
 Frees a previously allocated mbuf tag.
 

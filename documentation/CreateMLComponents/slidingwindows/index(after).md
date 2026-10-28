@@ -21,7 +21,7 @@ Returns the position immediately after the given index.
 func index(after i: Int) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The index value immediately after `i`.
 

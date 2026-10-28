@@ -25,11 +25,11 @@ convenience init(baseGeometry: SCNGeometry?, bones: [SCNNode], boneInverseBindTr
 + (instancetype) skinnerWithBaseGeometry:(SCNGeometry *) baseGeometry bones:(NSArray<SCNNode *> *) bones boneInverseBindTransforms:(NSArray<NSValue *> *) boneInverseBindTransforms boneWeights:(SCNGeometrySource *) boneWeights boneIndices:(SCNGeometrySource *) boneIndices;
 ```
 
-#### Return Value
+## Return Value
 
 A new skinner object.
 
-#### Discussion
+## Discussion
 
 To use the skinner object in a scene, assign it to the [`skinner`](../scnnode/skinner.md) property of a node. That node’s [`geometry`](../scnnode/geometry.md) property should reference the same [`SCNGeometry`](../scngeometry.md) object as the skinner’s [`baseGeometry`](./basegeometry.md) property.
 

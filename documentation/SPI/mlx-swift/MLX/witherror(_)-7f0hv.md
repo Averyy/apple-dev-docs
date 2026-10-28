@@ -17,7 +17,7 @@ Evaluate the block and convert MLX errors into Swift `throws` with explicit visi
 func withError<R>(_ body: (ErrorBox) async throws -> R) async throws -> R
 ```
 
-#### Discussion
+## Discussion
 
 For example this will throw a Swift `Error`:
 
@@ -40,7 +40,7 @@ try await withError { error in
 
 Note: the `error` argument can be omitted to just check for errors on block exit. Nested calls to `withError` produce scoped error collection.
 
-##### See Also
+### See Also
 
 - [`withError(_:)`](./witherror%28_%29-2wfiu.md)
 - [`withError(_:)`](./witherror%28_%29-4tvdu.md)

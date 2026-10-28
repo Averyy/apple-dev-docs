@@ -16,11 +16,11 @@ nonisolated
 func onWebViewImmersiveEnvironmentRequest(shouldAllow: @escaping @MainActor @Sendable (WebPage.FrameInfo) async -> Bool, present: @escaping @MainActor @Sendable (WebPage.ImmersiveEnvironment) async throws -> Void, dismiss: @escaping @MainActor @Sendable (WebPage.ImmersiveEnvironment) async -> Void) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A modified view that manages immersive environment lifecycle.
 
-#### Discussion
+## Discussion
 
 Use this modifier to control authorization, presentation, and dismissal of immersive environments from websites.
 

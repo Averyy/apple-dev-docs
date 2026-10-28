@@ -19,7 +19,7 @@ var bezelStyle: NSTextField.BezelStyle { get set }
 @property NSTextFieldBezelStyle bezelStyle;
 ```
 
-#### Discussion
+## Discussion
 
 To enable a bezel for a text field, set [`isBezeled`](./isbezeled.md) to [`true`](../../Swift/true.md), then set the bezel style. See [`NSTextField.BezelStyle`](./bezelstyle-swift.enum.md) for available bezel styles.
 

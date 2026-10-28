@@ -19,7 +19,7 @@ Posted after records are imported from the ubiquitous content store.
 extern NSString * const NSPersistentStoreDidImportUbiquitousContentChangesNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s `object` is set to the `NSPersistentStoreCoordinator` instance which registered the store. The notification’s `userInfo` dictionary contains the same keys as the [`NSManagedObjectContextObjectsDidChangeNotification`](./nsmanagedobjectcontextobjectsdidchangenotification.md) notification ([`NSInsertedObjectsKey`](./nsinsertedobjectskey.md), [`NSUpdatedObjectsKey`](./nsupdatedobjectskey.md), [`NSDeletedObjectsKey`](./nsdeletedobjectskey.md)), however the values are sets of [`NSManagedObjectID`](./nsmanagedobjectid.md) objects rather than sets of [`NSManagedObject`](./nsmanagedobject.md) objects.
 

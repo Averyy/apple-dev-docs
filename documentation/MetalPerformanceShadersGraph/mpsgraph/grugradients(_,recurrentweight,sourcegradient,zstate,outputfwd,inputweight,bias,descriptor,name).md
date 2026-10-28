@@ -24,11 +24,11 @@ func GRUGradients(_ source: MPSGraphTensor, recurrentWeight: MPSGraphTensor, sou
 - (NSArray<MPSGraphTensor *> *) GRUGradientsWithSourceTensor:(MPSGraphTensor *) source recurrentWeight:(MPSGraphTensor *) recurrentWeight sourceGradient:(MPSGraphTensor *) sourceGradient zState:(MPSGraphTensor *) zState outputFwd:(MPSGraphTensor *) outputFwd inputWeight:(MPSGraphTensor *) inputWeight bias:(MPSGraphTensor *) bias descriptor:(MPSGraphGRUDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` array containing gradients for each input tensor, except for `sourceGradient` and `mask`. In case an input is nil, no gradient will be returned for it. The order of the gradients will be: for `source`, for `recurrentWeight`, for `inputWeight` and for `bias`.
 
-#### Discussion
+## Discussion
 
 For details of this operation and parameters, refer to documentation of [`GRU(_:recurrentWeight:inputWeight:bias:initState:mask:secondaryBias:descriptor:name:)`](./gru%28_,recurrentweight,inputweight,bias,initstate,mask,secondarybias,descriptor,name%29.md).
 

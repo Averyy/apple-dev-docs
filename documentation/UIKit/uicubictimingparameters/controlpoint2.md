@@ -23,7 +23,7 @@ var controlPoint2: CGPoint { get }
 @property (nonatomic, readonly) CGPoint controlPoint2;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter contains the point you specified at initialization time. If you initialized the object with a [`UIView.AnimationCurve`](../uiview/animationcurve.md) value instead, this property is set to [`CGPointZero`](../../CoreGraphics/cgpointzero.md).
 

@@ -10,7 +10,7 @@
 @property (nonatomic, readonly) unsigned long numberOfDisplayCompositedVideoFrames;
 ```
 
-#### Discussion
+## Discussion
 
 [SPI] The total number of frames that were composited in detached mode.  Same as numberOfFramesDisplayedUsingOptimizedCompositing.
 

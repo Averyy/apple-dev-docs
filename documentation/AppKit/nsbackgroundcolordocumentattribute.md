@@ -15,7 +15,7 @@ The background color of the document.
 extern NSAttributedStringDocumentAttributeKey NSBackgroundColorDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSColor`](./nscolor.md) object representing the document-wide page background color.
 

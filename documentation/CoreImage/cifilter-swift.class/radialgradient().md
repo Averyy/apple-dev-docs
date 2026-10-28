@@ -28,11 +28,11 @@ class func radialGradient() -> any CIFilter & CIRadialGradient
 
 - [Selectively Focusing on an Image](../selectively-focusing-on-an-image.md)
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates a radial-gradient image. The effect generates a color shift between the `radius0` and `radius1` properties.
 

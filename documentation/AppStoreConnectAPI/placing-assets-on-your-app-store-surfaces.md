@@ -5,13 +5,13 @@
 
 Create placements that position library assets on App Store surfaces, then set their display order within a localization.
 
-#### Overview
+## Overview
 
 After an image or video finishes processing in your asset library, you make it appear on the App Store by creating a *placement*, which links one asset to one surface: an App Store version localization, a custom product page localization, an in-app event localization, or an App Store version experiment treatment localization. Because the placement references the asset rather than copying it, the same asset can back many placements at once.
 
 This article covers creating, replacing, and removing placements, and setting their display order. For more information about assets, see [Uploading and managing image assets](./uploading-and-managing-image-assets.md) and [Uploading and managing video assets](./uploading-and-managing-video-assets.md). For more information about the asset library, see [Understanding the App Asset Library](./understanding-the-app-asset-library.md).
 
-#### Create a placement
+## Create a placement
 
 Create a placement with `POST /v1/appAssetLibraryPlacements` ([`Create an app asset library placement`](./post-v1-appassetlibraryplacements.md)). A placement request combines four things:
 
@@ -98,7 +98,7 @@ The response returns the placement `id`, its `mediaType` (`IMAGE` or `VIDEO`, de
 
 A placement’s state mirrors the review state of its parent surface, from `ASSET_PROCESSING` through `PARENT_APPROVED`. If the linked asset hasn’t finished processing, the placement starts in `ASSET_PROCESSING`.
 
-#### Reuse one asset across surfaces
+## Reuse one asset across surfaces
 
 An asset can back several placements at once; that’s the point of the library. The same image can serve as both a standard screenshot and an iMessage screenshot, for instance, by creating a second placement with a different type and group:
 
@@ -130,7 +130,7 @@ An asset can back several placements at once; that’s the point of the library.
 
 Reading `GET /v1/appAssetLibraryImages/{id}/placements` ([`List related placements`](./get-v1-appassetlibraryimages-_id_-placements.md)) then returns both placements. Replacing the artwork means uploading a new asset and updating the placements, because the placements point at one asset. The reverse is also true, and it’s why the library scales: App Store Connect stores and processes a screenshot once, even when you reuse it across ten localizations.
 
-#### Handle placement errors
+## Handle placement errors
 
 Three constraints account for most failures when creating a placement:
 
@@ -167,7 +167,7 @@ Three constraints account for most failures when creating a placement:
 
 **Each group has a maximum count.** The reference data states per-group limits in `features[].placementPolicies[].groupLimits[].maxCount`; for App Store versions that’s 10 screenshots, 3 app previews, and 1 product page header asset per group. Read the limit before you create placements in a loop.
 
-#### Read placements
+## Read placements
 
 Read a single placement with `GET /v1/appAssetLibraryPlacements/{id}` ([`Read an app asset library placement`](./get-v1-appassetlibraryplacements-_id_.md)). To list every placement on a surface, use that surface’s `placements` relationship, for example, `GET /v1/appStoreVersionLocalizations/{id}/placements` ([`List related placements`](./get-v1-appstoreversionlocalizations-_id_-placements.md)).
 
@@ -184,17 +184,17 @@ GET /v1/appStoreVersionLocalizations/b3a9b4c2-d2de-43f4-ad8c-71c5ebe301d1/placem
 
 Sorting by `placementGroupPosition` returns the placements in the order they display. There’s no `placementGroupPosition` attribute to read; it exists only as a sort key, so the sequence of the response is what tells you the order.
 
-#### Replace a placement’s asset
+## Replace a placement’s asset
 
 You can’t change a placement after you create it. The asset it displays, its placement type, its placement group, and its target surface are all fixed at creation. To show a different asset in the same spot, delete the placement, create a new one that relates to the new asset, and then reorder the group so the new placement takes the old one’s position.
 
-#### Delete a placement
+## Delete a placement
 
 Remove a placement with `DELETE /v1/appAssetLibraryPlacements/{id}` ([`Delete an app asset library placement`](./delete-v1-appassetlibraryplacements-_id_.md)), which returns `204 No Content`. This removes the asset from that surface but leaves the underlying asset in your library, along with any other placements that reuse it.
 
 > ❗ **Important**:  To remove an asset, delete its placements first, then the asset. Deletion runs in one direction only. Deleting a placement leaves its asset intact, but deleting an asset that still has placements fails.
 
-#### Order placements within a group
+## Order placements within a group
 
 Screenshots and app previews display in a specific order. Set that order in a single request with `POST /v1/appAssetLibraryPlacementOrderingRequests` ([`Create an app asset library placement ordering request`](./post-v1-appassetlibraryplacementorderingrequests.md)). Provide the `placementGroup` you’re ordering, list the placement IDs in `orderedPlacements` in the sequence you want, and relate the request to the target localization:
 
@@ -229,7 +229,7 @@ An ordering request targets an `appStoreVersionLocalization`, an `appCustomProdu
 
 The response returns the ordering request `id`. Add `?include=orderedPlacements` to echo the placements back in their new sequence, or re-read the localization’s placements with `sort=placementGroupPosition` to confirm.
 
-#### Submit for review
+## Submit for review
 
 Placements go through App Review as part of their parent surface: the App Store version, custom product page, or in-app event. Submit that parent as you normally would, and the placement’s `state` follows the parent’s review state through to `PARENT_APPROVED`.
 

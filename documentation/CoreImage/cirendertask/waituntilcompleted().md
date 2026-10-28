@@ -24,7 +24,7 @@ func waitUntilCompleted() throws -> CIRenderInfo
 - (CIRenderInfo *) waitUntilCompletedAndReturnError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Synchronously blocks execution until the [`CIRenderTask`](../cirendertask.md) either completes or fails (with error).  Calling this method after [`startTask(toRender:to:)`](../cicontext/starttask%28torender,to%29.md) or [`startTask(toRender:from:to:at:)`](../cicontext/starttask%28torender,from,to,at%29.md) makes the render task behave synchronously, as if the CPU and GPU were operating as a single unit.
 

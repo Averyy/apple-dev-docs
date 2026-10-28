@@ -20,7 +20,7 @@ typealias MDQuerySortComparatorFunction = (UnsafePointer<Unmanaged<CFTypeRef>?>?
 typedef CFComparisonResult (*MDQuerySortComparatorFunction)(const CFTypeRef attrs1[], const CFTypeRef attrs2[], void *context);
 ```
 
-#### Return Value
+## Return Value
 
 The function must return one of the CFComparisonResults `kCFCompareLessThan`, `kCFCompareEqualTo`, or `kCFCompareGreaterThan`. There is no provision for unordered results. The comparison should be a total order relation and produce the same results for the same inputs.
 

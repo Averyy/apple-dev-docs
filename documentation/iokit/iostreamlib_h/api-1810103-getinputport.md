@@ -12,7 +12,7 @@ CFMachPortRef ( *GetInputPort)(
    IOStreamRef stream );
 ```
 
-#### Return Value
+## Return Value
 
 A CFMachPortRef for the input notification port.
 

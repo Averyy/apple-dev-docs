@@ -25,7 +25,7 @@ static var protocolNotAvailable: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A bad option or level was specified in a `getsockopt(2)` or `setsockopt(2)` call.
 

@@ -23,7 +23,7 @@ class UIEventAttribution
 @interface UIEventAttribution : NSObject
 ```
 
-#### Overview
+## Overview
 
 Apps use event attribution objects to send data to the browser when opening an external website that supports Web AdAttributionKit (formerly known as Private Click Measurement, or PCM). For more information on the proposed PCM web standard, see [Introducing Private Click Measurement](https://webkit.org/blog/11529/introducing-private-click-measurement-pcm/) and [Private Click Measurement Draft Community Group Report](https://privacycg.github.io/private-click-measurement/).
 
@@ -31,13 +31,13 @@ Apps use event attribution objects to send data to the browser when opening an e
 
 You can’t subclass [`UIEventAttribution`](./uieventattribution.md).
 
-##### Define an endpoint
+### Define an endpoint
 
 In order to use Web AdAttributionKit, your app defines an `Info.plist` key called [`NSAdvertisingAttributionReportEndpoint`](../BundleResources/information-property-list/nsadvertisingattributionreportendpoint.md) that contains the URL to which the browser sends event attribution data. When an externally linked website reports that a conversion has occurred, the browser forwards your app’s event attribution data to the endpoint specified in the `Info.plist`. If your app’s `Info.plist` doesn’t contain this key, the browser won’t be able to forward the Web AdAttributionKit data when a conversion occurs.
 
 Send event attribution data to the browser only when your app opens an external link as a result of a user tapping a control that sits below a [`UIEventAttributionView`](./uieventattributionview.md) in the app’s view hierarchy. The event attribution view verifies that the user tapped a control. If that control doesn’t sit below an event attribution view, the system won’t send the Web AdAttributionKit data to the browser when opening the external link.
 
-##### Create an event attribution data object
+### Create an event attribution data object
 
 Here’s how you create a [`UIEventAttribution`](./uieventattribution.md) object:
 
@@ -63,7 +63,7 @@ UIEventAttribution *eventAttribution = [[UIEventAttribution alloc]
                                         purchaser:@"Shop Example, Inc."];
 ```
 
-##### Send event attribution data to the browser
+### Send event attribution data to the browser
 
 Once you create a [`UIEventAttribution`](./uieventattribution.md) object, send it to the browser when your app opens a URL as the result of a user tap. If the external website reports a conversion within 7 days, the browser forwards the data from the [`UIEventAttribution`](./uieventattribution.md) object to the specified remote server sometime between 24 and 48 hours after the conversion.
 
@@ -125,7 +125,7 @@ NSDictionary<NSString *, NSObject *> *appOpenURLOptions = [NSDictionary dictiona
 }];
 ```
 
-##### Send event attribution data to SFSafariViewController
+### Send event attribution data to SFSafariViewController
 
 If your app displays a web page in [`SFSafariViewController`](../SafariServices/sfsafariviewcontroller.md) after a person taps an ad, add a [`UIEventAttributionView`](./uieventattributionview.md) subview to the ad view or control in order to measure taps. When a person taps the ad, follow these steps:
 

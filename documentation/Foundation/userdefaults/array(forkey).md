@@ -25,11 +25,11 @@ func array(forKey defaultName: String) -> [Any]?
 - (NSArray *) arrayForKey:(NSString *) defaultName;
 ```
 
-#### Return Value
+## Return Value
 
 The array associated with `defaultName`, or `nil` if the key isn’t present in the defaults database. This method also returns `nil` if the retrieved value isn’t an array.
 
-#### Discussion
+## Discussion
 
 The returned array and its contents are immutable, even if you originally set the key to mutable values.
 

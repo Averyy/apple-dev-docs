@@ -25,11 +25,11 @@ func sparse_vector_norm_float(_ nz: sparse_dimension, _ x: UnsafePointer<Float>!
 float sparse_vector_norm_float(sparse_dimension nz, const float * restrictx, const sparse_index * restrictindx, sparse_norm norm);
 ```
 
-#### Return Value
+## Return Value
 
 The requested norm.
 
-#### Discussion
+## Discussion
 
 Compute the specified norm of the sparse vector *x*.  Specify one of:
 

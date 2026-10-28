@@ -30,7 +30,7 @@ func conditionallyBeginAccessingResources() async -> Bool
 - (void) conditionallyBeginAccessingResourcesWithCompletionHandler:(void (^)(BOOL resourcesAvailable)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If the resources marked with the tags managed by the request are already on the device, you can start accessing them as soon as the completion handler is called with `resourcesAvailable` set to [`true`](../../Swift/true.md). If all of the resources are not already available, you need to call [`beginAccessingResources(completionHandler:)`](./beginaccessingresources%28completionhandler%29.md) to download them from the App Store.
 

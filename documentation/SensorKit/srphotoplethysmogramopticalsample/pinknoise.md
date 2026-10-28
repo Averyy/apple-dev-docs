@@ -17,7 +17,7 @@ An estimate of the pink noise of the sensor.
 @property (nonatomic, strong, readonly, nullable) NSNumber * pinkNoise;
 ```
 
-#### Discussion
+## Discussion
 
 The total pink noise variance estimate in the [`normalizedReflectance`](./normalizedreflectance-9aidm.md) signal (Normalized Units²).
 

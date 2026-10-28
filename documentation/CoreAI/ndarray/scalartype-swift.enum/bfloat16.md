@@ -19,7 +19,7 @@ A 16-bit brain floating-point type.
 case bfloat16
 ```
 
-#### Discussion
+## Discussion
 
 BFloat16 (Brain Floating Point) uses 8 exponent bits and 7 mantissa bits, matching the exponent range of Float32 but with reduced precision. This type is widely supported across most operations including matrix multiplication, activation functions, and quantization.
 

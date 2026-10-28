@@ -27,11 +27,11 @@ class func `default`() -> Self
 
 - [Adding your app’s content to Spotlight indexes](../adding-your-app-s-content-to-spotlight-indexes.md)
 
-#### Return Value
+## Return Value
 
 The default on-device index.
 
-#### Discussion
+## Discussion
 
 The default index doesn’t protect data or support batch updates, so use it only during prototyping or testing your Spotlight features. In your production code, create named indexes using [`init(name:)`](./init%28name%29.md) or [`init(name:protectionClass:)`](./init%28name,protectionclass%29.md) instead of using this index for your content.
 

@@ -17,7 +17,7 @@ A template for displaying a large rectangle containing header text and a SwiftUI
 final class CLKComplicationTemplateGraphicRectangularLargeView<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicRectangular`](./clkcomplicationfamily/graphicrectangular.md) family. [Figure 1](./clkcomplicationtemplategraphicrectangularlargeview.md#3667291) shows the layout of the complication and where it appears on the clock face.
 

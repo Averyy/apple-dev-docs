@@ -19,7 +19,7 @@ Creates a discrete slider control that selects a stepped value from a bounded ra
 - (instancetype) initWithLocalizedTitle:(NSString *) localizedTitle symbolName:(NSString *) symbolName minValue:(float) minValue maxValue:(float) maxValue step:(float) step;
 ```
 
-#### Discussion
+## Discussion
 
 Use discrete sliders when your use case supports selecting stepped values within the specified range.
 

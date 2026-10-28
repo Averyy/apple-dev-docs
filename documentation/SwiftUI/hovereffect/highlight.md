@@ -19,7 +19,7 @@ An effect  that morphs the pointer into a platter behind the view and shows a li
 static var highlight: HoverEffect { get }
 ```
 
-#### Discussion
+## Discussion
 
 On tvOS, it applies a projection effect accompanied with a specular highlight on the view when contained within a focused view. It also incorporates motion effects to produce a parallax effect by adjusting the projection matrix and specular offset.
 

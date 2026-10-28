@@ -19,11 +19,11 @@ class func titleBarFont(ofSize fontSize: CGFloat) -> NSFont
 + (NSFont *) titleBarFontOfSize:(CGFloat) fontSize;
 ```
 
-#### Return Value
+## Return Value
 
 A font object of the specified size.
 
-#### Discussion
+## Discussion
 
 If `fontSize` is 0 or negative, returns the title bar font at the default size. This method is equivalent to [`boldSystemFont(ofSize:)`](./boldsystemfont%28ofsize%29.md).
 

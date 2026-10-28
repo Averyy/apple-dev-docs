@@ -24,7 +24,7 @@ let AVVideoScalingModeResize: String
 extern NSString * const AVVideoScalingModeResize;
 ```
 
-#### Discussion
+## Discussion
 
 This mode crops the video to remove the edge processing region and scales the remainder to the destination area. It doesn’t preserve the aspect ratio.
 

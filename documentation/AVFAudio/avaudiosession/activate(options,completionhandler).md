@@ -28,13 +28,13 @@ func activate(options: AVAudioSessionActivationOptions = []) async throws -> Boo
 - (void) activateWithOptions:(AVAudioSessionActivationOptions) options completionHandler:(void (^)(BOOL activated, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Configure the session before activating it: call [`setCategory(_:mode:policy:options:)`](./setcategory%28_,mode,policy,options%29.md) to set the category and route sharing policy you need.
 
 This method begins activating the audio session asynchronously. The system calls the completion handler as soon as the session has successfully activated or if the activation fails.
 
-#### Activate playback on watchOS
+## Activate playback on watchOS
 
 On watchOS, activating a session with the [`playback`](./category-swift.struct/playback.md) category and the [`AVAudioSession.RouteSharingPolicy.longFormAudio`](./routesharingpolicy-swift.enum/longformaudio.md) or [`AVAudioSession.RouteSharingPolicy.longFormVideo`](./routesharingpolicy-swift.enum/longformvideo.md) route-sharing policy requires a Bluetooth output route. On supported Apple Watch models running watchOS 11.0 or later, the built-in speaker also satisfies this routing requirement.
 

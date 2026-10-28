@@ -24,11 +24,11 @@ convenience init(name: String, semantic: MDLMaterialSemantic, string: String?)
 - (instancetype) initWithName:(NSString *) name semantic:(MDLMaterialSemantic) semantic string:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A new material property object whose [`type`](./type.md) property is [`MDLMaterialPropertyType.string`](../mdlmaterialpropertytype/string.md).
 
-#### Discussion
+## Discussion
 
 The meaning of a string value depends on the renderer (or other software component) processing the material. For example, a string value might be treated as the name of a texture image to be loaded from a default path.
 

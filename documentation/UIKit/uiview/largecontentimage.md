@@ -22,7 +22,7 @@ var largeContentImage: UIImage? { get set }
 @property (nonatomic, strong, readwrite, nullable) UIImage * largeContentImage;
 ```
 
-#### Discussion
+## Discussion
 
 To present content in the large content viewer, you can provide either [`largeContentTitle`](./largecontenttitle.md) or [`largeContentImage`](./largecontentimage.md), or both.
 

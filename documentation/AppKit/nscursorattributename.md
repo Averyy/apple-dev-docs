@@ -15,7 +15,7 @@ The cursor object.
 extern NSAttributedStringKey NSCursorAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSCursor`](./nscursor.md) object. The default value is the cursor returned by the [`iBeam`](./nscursor/ibeam.md) method.
 

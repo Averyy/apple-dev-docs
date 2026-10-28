@@ -28,7 +28,7 @@ var restorationIdentifier: String? { get set }
 - [About the UI preservation process](../about-the-ui-preservation-process.md)
 - [About the UI restoration process](../about-the-ui-restoration-process.md)
 
-#### Discussion
+## Discussion
 
 This property indicates whether the view controller and its contents should be preserved and is used to identify the view controller during the restoration process. The value of this property is `nil` by default, which indicates that the view controller should not be saved. Assigning a string object to the property lets the system know that the view controller should be saved. In addition, the contents of the string are your way to identify the purpose of the view controller.
 

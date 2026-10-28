@@ -24,7 +24,7 @@ func session(_ session: WCSession, activationDidCompleteWith activationState: WC
 - (void) session:(WCSession *) session activationDidCompleteWithState:(WCSessionActivationState) activationState error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 You must implement this method to support asynchronous activation and quick watch switching. Your implementation should check the value of the `activationState` parameter to see if communication with the counterpart app is possible. When the state is [`WCSessionActivationState.activated`](../wcsessionactivationstate/activated.md), you may communicate normally with the other app.
 

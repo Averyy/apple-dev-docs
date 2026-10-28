@@ -26,7 +26,7 @@ A modifier that you apply to a view or another view modifier, producing a differ
 
 - [Reducing view modifier maintenance](./reducing-view-modifier-maintenance.md)
 
-#### Overview
+## Overview
 
 Adopt the [`ViewModifier`](./viewmodifier.md) protocol when you want to create a reusable modifier that you can apply to any view. The example below combines several modifiers to create a new modifier that you can use to create blue caption text surrounded by a rounded rectangle:
 

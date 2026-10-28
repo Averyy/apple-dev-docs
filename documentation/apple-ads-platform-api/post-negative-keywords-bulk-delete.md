@@ -10,17 +10,17 @@ Soft-deletes multiple negative keywords in a single request.
 - Apple Ads Platform API 1.0+
 - apple-ads-platform-api 1.0+
 
-#### Discussion
+## Discussion
 
 Each item in `items` requires a `correlationId`, unique within the batch, and a `data` object with the `id` of the negative keyword to delete. The API processes each deletion independently.
 
 When `allowPartialSuccess: true` is set in the request, this endpoint uses partial success semantics: if some items fail (for example, an already-deleted ID fails with `ENTITY_NOT_FOUND`), the API still processes the successful deletions. When omitted or `false`, any single item failure rejects the entire batch. The response includes a per-item result with each item’s `correlationId` and success status, with failed items reporting `success: false`. It doesn’t include the deleted negative keyword.
 
-Deleted negative keywords are marked `deleted: true` and no longer suppress those search terms for any ad groups or campaigns that referenced them.
+Deleted negative keywords are marked `deleted: true` and no longer suppress those search terms for any ad groups or campaigns that referenced them. The query endpoint doesn’t return them and GET by ID returns 404.
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Delete two negative keywords by ID in a single request. Each item in `items` maps to a result in the response by `correlationId`.
 
@@ -45,7 +45,7 @@ POST /v1/negative-keywords/bulk-delete
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

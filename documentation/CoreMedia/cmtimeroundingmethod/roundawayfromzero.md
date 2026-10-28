@@ -25,7 +25,7 @@ case roundAwayFromZero
 kCMTimeRoundingMethod_RoundAwayFromZero
 ```
 
-#### Discussion
+## Discussion
 
 This method rounds away from zero if the absolute value of the fraction is greater than `0`.
 

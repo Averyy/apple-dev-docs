@@ -20,7 +20,7 @@ class var shouldEvaluateURLs: Bool { get }
 @property (class, readonly) BOOL shouldEvaluateURLs;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the built-in web content filter is active; `false`, otherwise.
 

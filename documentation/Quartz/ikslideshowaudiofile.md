@@ -19,7 +19,7 @@ let IKSlideshowAudioFile: String
 extern NSString * const IKSlideshowAudioFile;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSURL`](../Foundation/nsurl.md) object.
 

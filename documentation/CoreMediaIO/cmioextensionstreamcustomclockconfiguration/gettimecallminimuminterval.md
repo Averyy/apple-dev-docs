@@ -20,7 +20,7 @@ var getTimeCallMinimumInterval: CMTime { get }
 @property (atomic, readonly) CMTime getTimeCallMinimumInterval;
 ```
 
-#### Discussion
+## Discussion
 
 If you query the clock for its current time more often than this interval, the system returns an interpolated value.
 

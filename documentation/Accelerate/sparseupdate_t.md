@@ -25,7 +25,7 @@ struct SparseUpdate_t
 typedef enum { ... } SparseUpdate_t;
 ```
 
-#### Overview
+## Overview
 
 See `SparseUpdateFactor()` for a full description of these updates.
 

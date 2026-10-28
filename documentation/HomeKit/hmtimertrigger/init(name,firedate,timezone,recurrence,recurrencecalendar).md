@@ -24,11 +24,11 @@ init(name: String, fireDate: Date, timeZone: TimeZone?, recurrence: DateComponen
 - (instancetype) initWithName:(NSString *) name fireDate:(NSDate *) fireDate timeZone:(NSTimeZone *) timeZone recurrence:(NSDateComponents *) recurrence recurrenceCalendar:(NSCalendar *) recurrenceCalendar;
 ```
 
-#### Return Value
+## Return Value
 
 A newly-initialized timer trigger with the specified values.
 
-#### Discussion
+## Discussion
 
 A new timer trigger starts out disabled, and must be enabled using [`enable(_:completionHandler:)`](../hmtrigger/enable%28_,completionhandler%29.md) before use.
 

@@ -24,7 +24,7 @@ func insertSublayer(_ layer: CALayer, above sibling: CALayer?)
 - (void) insertSublayer:(CALayer *) layer above:(CALayer *) sibling;
 ```
 
-#### Discussion
+## Discussion
 
 If `sublayer` is not in the receiver’s [`sublayers`](./sublayers.md) array, this method raises an exception.
 

@@ -24,7 +24,7 @@ var flatness: CGFloat { get set }
 @property (nonatomic) CGFloat flatness;
 ```
 
-#### Discussion
+## Discussion
 
 The flatness value measures the largest permissible distance (measured in pixels) between a point on the true curve and a point on the rendered curve. Smaller values result in smoother curves but require more computation time. Larger values result in more jagged curves but are rendered much faster. The default flatness value is `0.6`.
 

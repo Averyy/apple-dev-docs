@@ -19,7 +19,7 @@ A bind target for framework-provided properties.
 struct InternalBindPath
 ```
 
-#### Overview
+## Overview
 
 This structure defines a bind path for the [`BindTarget.internal(_:)`](./bindtarget/internal%28_%29.md) case. As a reference to framework properties, this bind target hides its path. You can, however, store and assign instances of this structure.
 

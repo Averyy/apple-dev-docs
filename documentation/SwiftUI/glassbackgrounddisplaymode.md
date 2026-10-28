@@ -15,7 +15,7 @@ The display mode of a glass background.
 enum GlassBackgroundDisplayMode
 ```
 
-#### Overview
+## Overview
 
 Use a value of this type to indicate when to display a glass background that you add to a view using a view modifier like [`glassBackgroundEffect(displayMode:)`](./view/glassbackgroundeffect%28displaymode%29.md).
 

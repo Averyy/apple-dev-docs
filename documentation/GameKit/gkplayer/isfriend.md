@@ -34,7 +34,7 @@ var isFriend: Bool { get }
 @property (atomic, readonly) BOOL isFriend;
 ```
 
-#### Discussion
+## Discussion
 
 Players use the Game Center app to declare other players as friends.
 

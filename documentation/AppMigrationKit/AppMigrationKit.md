@@ -10,7 +10,7 @@ Perform a one-time transfer of your app’s on-device data to or from a device r
 - iOS 26.1+
 - iPadOS 26.1+
 
-#### Overview
+## Overview
 
 Use AppMigrationKit to export your app’s on-device data to another device running a non-Apple platform, or to import from another platform, or both.
 

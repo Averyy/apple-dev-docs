@@ -25,7 +25,7 @@ static let metadataReferent: AVAssetTrack.AssociationType
 extern AVTrackAssociationType const AVTrackAssociationTypeMetadataReferent;
 ```
 
-#### Discussion
+## Discussion
 
 This track association is optional for [`AVAssetTrack`](../../avassettrack.md) objects with the media type [`metadata`](../../avmediatype/metadata.md). When a metadata track lacks this track association, the system assumes the metadata describes or annotates the asset as a whole.
 

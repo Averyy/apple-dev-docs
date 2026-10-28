@@ -20,7 +20,7 @@ Asynchronously adds an attachment to the specified object.
 func addAttachment(to object: HKObject, name: String, contentType: UTType, url: URL, metadata: [String : Any] = [:]) async throws -> HKAttachment
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add an attachment to an object in the HealthKit store. You can add more than one attachment to the specified object.
 

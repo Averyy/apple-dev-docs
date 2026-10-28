@@ -23,11 +23,11 @@ func precisionScore(for label: Label) -> Float
 
 Available when `Label` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The precision score for the given label.
 
-#### Discussion
+## Discussion
 
 Precision score is computed as the ratio `truePositive / (truePositive + falsePositive)`.
 

@@ -16,7 +16,7 @@ Displays a message in Automator’s log area.
 - (void) logMessageWithLevel:(AMLogLevel) level format:(NSString *) format;
 ```
 
-#### Discussion
+## Discussion
 
 This message is visible to the user. Use this method if you wish to provide feedback to the user in Automator’s log area as your action runs.
 

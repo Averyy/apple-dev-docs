@@ -5,7 +5,7 @@
 
 Constants for identifying the data format of characteristic values.
 
-#### Overview
+## Overview
 
 Expect to find one of these values in the [`format`](./hmcharacteristicmetadata/format.md) property of a characteristic’s metadata.
 

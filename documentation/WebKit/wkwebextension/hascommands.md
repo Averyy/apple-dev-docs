@@ -23,7 +23,7 @@ var hasCommands: Bool { get }
 @property (nonatomic, readonly) BOOL hasCommands;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `YES`, the extension contains one or more commands that can be performed by the user. These commands should be accessible via keyboard shortcuts, menu items, or other user interface elements provided by the app. The list of commands can be accessed via [`commands`](../wkwebextensioncontext/commands.md) on an extension context, and invoked via [`performCommand(_:)`](../wkwebextensioncontext/performcommand%28_%29.md).
 

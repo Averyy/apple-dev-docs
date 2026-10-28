@@ -21,7 +21,7 @@ The representation to use for ancestor classes.
 enum AncestorRepresentation
 ```
 
-#### Overview
+## Overview
 
 A class that conforms to the `CustomReflectable` protocol can control how its mirror represents ancestor classes by initializing the mirror with an `AncestorRepresentation`. This setting has no effect on mirrors reflecting value type instances.
 

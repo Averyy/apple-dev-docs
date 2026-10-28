@@ -24,7 +24,7 @@ class AVCoordinatedPlaybackParticipant
 @interface AVCoordinatedPlaybackParticipant : NSObject
 ```
 
-#### Overview
+## Overview
 
 Access the other participants in a session through the playback coordinator’s [`otherParticipants`](./avplaybackcoordinator/otherparticipants.md) property to determine their playback readiness and suspension reasons.
 

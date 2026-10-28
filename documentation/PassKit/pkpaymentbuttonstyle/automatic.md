@@ -24,7 +24,7 @@ case automatic
 PKPaymentButtonStyleAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 The button uses the [`PKPaymentButtonStyle.white`](./white.md) style in Dark Mode and the [`PKPaymentButtonStyle.black`](./black.md) style in Light Mode.
 

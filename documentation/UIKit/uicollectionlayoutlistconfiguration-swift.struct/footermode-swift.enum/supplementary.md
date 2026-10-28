@@ -19,7 +19,7 @@ A footer mode that uses supplementary views to show footers.
 case supplementary
 ```
 
-#### Discussion
+## Discussion
 
 Choose this footer mode to use supplementary views with [`elementKindSectionFooter`](../../uicollectionview/elementkindsectionfooter.md) as the section footer.
 

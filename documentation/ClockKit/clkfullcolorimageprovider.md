@@ -25,7 +25,7 @@ class CLKFullColorImageProvider
 
 - [Creating a timeline entry](./creating-a-timeline-entry.md)
 
-#### Overview
+## Overview
 
 All graphic complications support full-color images; however, some watch faces display these images as tinted images. Tinted images are black and white images with a highlight color that matches the watch face. If you don’t provide a tinted image provider, ClockKit automatically desaturates the full-color image to create the tinted image.
 

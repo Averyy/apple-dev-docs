@@ -14,7 +14,7 @@
 IOFireWireSessionRef (*GetSessionRef)(IOFireWireLibDeviceRef self);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

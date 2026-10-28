@@ -27,7 +27,7 @@ var offsetInFile: UInt64 { get }
 @property (readonly) unsigned long long offsetInFile;
 ```
 
-#### Discussion
+## Discussion
 
 Raises [`fileHandleOperationException`](../nsexceptionname/filehandleoperationexception.md) if called on a file handle representing a pipe or socket, or if the file descriptor is closed.
 

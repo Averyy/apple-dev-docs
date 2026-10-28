@@ -19,11 +19,11 @@ func runModal() -> Int32
 - (int) runModal;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOBluetoothUISuccess if a successful, validated device selection was made by the user. Returns kIOBluetoothUIUserCanceledErr if the user cancelled the panel. These return values are the same as NSRunStoppedResponse and NSRunAbortedResponse respectively. They are the standard values used in a modal session.
 
-#### Discussion
+## Discussion
 
 The controller will use the panel attributes to filter what devices the user sees. The allowed UUIDs will be used to validate the selection the user makes. Only when a selection has been validated (or the panel cancelled), will this method return.
 

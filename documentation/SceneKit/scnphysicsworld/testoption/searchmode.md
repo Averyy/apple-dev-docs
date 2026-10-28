@@ -25,7 +25,7 @@ static let searchMode: SCNPhysicsWorld.TestOption
 extern SCNPhysicsTestOption const SCNPhysicsTestSearchModeKey;
 ```
 
-#### Discussion
+## Discussion
 
 See `Physics Test Search Modes` for possible values. The default value is [`any`](../testsearchmode/any.md).
 

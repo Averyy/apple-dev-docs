@@ -23,7 +23,7 @@ case success
 INSetCarLockStatusIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when your app has successfully locked or unlocked the car.
 

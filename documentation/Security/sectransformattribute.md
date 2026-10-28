@@ -21,7 +21,7 @@ typealias SecTransformAttribute = CFTypeRef
 typedef CFTypeRef SecTransformAttributeRef;
 ```
 
-#### Discussion
+## Discussion
 
 Using an attribute reference rather than referring to it by name, such as in calls to the [`SecTransformCustomSetAttribute(_:_:_:_:)`](./sectransformcustomsetattribute%28_,_,_,_%29.md) function, speeds up the operation.
 

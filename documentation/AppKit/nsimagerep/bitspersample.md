@@ -19,7 +19,7 @@ var bitsPerSample: Int { get set }
 @property NSInteger bitsPerSample;
 ```
 
-#### Discussion
+## Discussion
 
 The number of bits used to specify each component of data in a single pixel (for example, a value of 8 for an RGBA image means that each pixel is comprised of four 8-bit values) or [`NSImageRepMatchesDevice`](../nsimagerepmatchesdevice.md).
 

@@ -17,7 +17,7 @@ A protocol for types that can measure electricity usage data.
 protocol ElectricityInsightMeasure
 ```
 
-#### Overview
+## Overview
 
 The [`ElectricityInsightRecord`](./electricityinsightrecord.md) structure uses this protocol as its generic type parameter, and supports the types:
 

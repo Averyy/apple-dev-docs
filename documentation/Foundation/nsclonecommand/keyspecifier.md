@@ -20,11 +20,11 @@ var keySpecifier: NSScriptObjectSpecifier { get }
 @property (retain, readonly) NSScriptObjectSpecifier * keySpecifier;
 ```
 
-#### Return Value
+## Return Value
 
 A specifier for the object or objects to be cloned.
 
-#### Discussion
+## Discussion
 
 For example, the specifier may indicate that a document’s third rectangle should be cloned. The returned specifier is valid only in the context of the `NSCloneCommand` object; for example, if you send the specifier a [`container`](../nsscriptobjectspecifier/container.md) message, the result is `nil`.
 

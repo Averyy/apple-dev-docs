@@ -24,11 +24,11 @@ func toRect() -> CGRect
 - (CGRect) toRect;
 ```
 
-#### Return Value
+## Return Value
 
 A CoreGraphics point representation of the value.
 
-#### Discussion
+## Discussion
 
 This method treats the value as a JavaScript object, reading the values of its `x`, `y`, `width`, and `height` properties using the [`toDouble()`](./todouble%28%29.md) method and creating a [`CGRect`](../../CoreFoundation/cgrect.md) structure from the result. If the value is not a JavaScript object or does not have the appropriate properties, each of the resulting rectangle’s coordinates is not a number (NaN).
 

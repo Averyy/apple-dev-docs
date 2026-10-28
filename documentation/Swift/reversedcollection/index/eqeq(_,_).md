@@ -23,7 +23,7 @@ static func == (lhs: ReversedCollection<Base>.Index, rhs: ReversedCollection<Bas
 
 Available when `Base` conforms to `BidirectionalCollection`.
 
-#### Discussion
+## Discussion
 
 Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
 

@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether an argument matches `nil`.
 static func ~= (lhs: _OptionalNilComparisonType, rhs: borrowing Wrapped?) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 You can use the pattern-matching operator (`~=`) to test whether an optional instance is `nil` even when the wrapped value’s type does not conform to the `Equatable` protocol. The pattern-matching operator is used internally in `case` statements for pattern matching.
 

@@ -23,11 +23,11 @@ Creates a locale-aware attributed string representation from a date value.
 func format(_ value: Date) -> AttributedString
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string representation of the date.
 
-#### Discussion
+## Discussion
 
 The [`Date.ISO8601FormatStyle`](../iso8601formatstyle.md) [`format(_:)`](../formatstyle/format%28_%29.md) instance method generates an attributed string from the provided date. Once you create a style, you can use it to format dates multiple times.
 

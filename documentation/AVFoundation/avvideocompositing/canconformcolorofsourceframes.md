@@ -24,7 +24,7 @@ optional var canConformColorOfSourceFrames: Bool { get }
 @property (nonatomic, readonly) BOOL canConformColorOfSourceFrames;
 ```
 
-#### Discussion
+## Discussion
 
 A custom compositor indicates its processing requirements through the [`sourcePixelBufferAttributes`](./sourcepixelbufferattributes.md) and [`supportsWideColorSourceFrames`](./supportswidecolorsourceframes.md) properties. By default, the composition engine prepares source frames by converting them to meet the compositor’s configuration.
 

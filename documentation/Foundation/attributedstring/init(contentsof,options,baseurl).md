@@ -21,7 +21,7 @@ Creates an attributed string from the contents of a specified URL that contains 
 init(contentsOf url: URL, options: AttributedString.MarkdownParsingOptions = .init(), baseURL: URL? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 If your source string includes custom attributes defined by conformers to [`MarkdownDecodableAttributedStringKey`](../markdowndecodableattributedstringkey.md) and used with Apple’s markdown extension syntax, be sure to include the [`allowsExtendedAttributes`](../nsattributedstringmarkdownparsingoptions/allowsextendedattributes.md) option. Otherwise, the initializer doesn’t parse these attributes.
 

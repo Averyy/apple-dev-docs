@@ -22,7 +22,7 @@ A type that specifies the appearance and interaction of controls in the subscrip
 @preconcurrency protocol SubscriptionStoreControlStyle
 ```
 
-#### Overview
+## Overview
 
 Use the [`subscriptionStoreControlStyle(_:)`](../SwiftUI/view/subscriptionstorecontrolstyle%28_%29.md) view modifier to configure the subscription store control style for a view hierarchy.
 
@@ -33,7 +33,7 @@ SubscriptionStoreView(groupID: "SAMPLE")
 
 You can also configure the control placement using the [`subscriptionStoreControlStyle(_:placement:)`](../SwiftUI/view/subscriptionstorecontrolstyle%28_,placement%29.md) view modifier.
 
-##### Create custom styles
+### Create custom styles
 
 To create a custom style, declare a type that conforms to the `SubscriptionStoreControlStyle` protocol and implement the required [`makeBody(configuration:)`](./subscriptionstorecontrolstyle/makebody%28configuration%29.md) method. For example, you can define a style that adds price comparison captions to buttons.
 

@@ -19,7 +19,7 @@ func metadataFlush() throws
 - (BOOL) metadataFlushWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method flushes data previously written with [`delayedMetadataWriteFrom:startingAt:length:error:`](./delayedmetadatawritefrom_startingat_length_error_.md) to the resource.
 

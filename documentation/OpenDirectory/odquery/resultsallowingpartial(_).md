@@ -20,11 +20,11 @@ func resultsAllowingPartial(_ inAllowPartialResults: Bool) throws -> [Any]
 - (NSArray *) resultsAllowingPartial:(BOOL) inAllowPartialResults error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The results of the query in an array of `ODRecord` objects.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

@@ -22,7 +22,7 @@ static let stereo: AVAudioSession.PolarPattern
 extern AVAudioSessionPolarPattern const AVAudioSessionPolarPatternStereo;
 ```
 
-#### Discussion
+## Discussion
 
 If you select a data source with this polar pattern, call [`setPreferredInputOrientation(_:)`](../setpreferredinputorientation%28_%29.md) on your audio session to ensure that left and right are correctly oriented in the captured audio.
 

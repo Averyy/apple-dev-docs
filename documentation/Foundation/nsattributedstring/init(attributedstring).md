@@ -25,7 +25,7 @@ init(attributedString attrStr: NSAttributedString)
 - (instancetype) initWithAttributedString:(NSAttributedString *) attrStr;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSAttributedString`](../nsattributedstring.md) object initialized with the characters and attributes of `attrStr`.
 

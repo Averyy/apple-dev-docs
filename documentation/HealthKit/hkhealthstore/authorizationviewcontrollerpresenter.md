@@ -22,7 +22,7 @@ weak var authorizationViewControllerPresenter: UIViewController? { get set }
 @property (nonatomic, weak, nullable) UIViewController * authorizationViewControllerPresenter;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the system infers the correct view controller to show HealthKit’s authorization sheet. In some cases, you can improve the user experience by explicitly defining how the system presents the authentication sheets. In particular, consider setting this property when using HealthKit in an iPadOS app.
 

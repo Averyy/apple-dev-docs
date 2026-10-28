@@ -20,7 +20,7 @@ var codesigning_flags: UInt32
 uint32_t codesigning_flags;
 ```
 
-#### Discussion
+## Discussion
 
 See `kern/cs_blobs.h` in the macOS SDK inside of the Xcode app bundle for definitions of these flags.
 

@@ -15,7 +15,7 @@ Update the SKU, display name, and description associated with a subscription, wi
 - [Advanced Commerce API changelog](./changelog.md)
 - [Identifying rate limits for Advanced Commerce APIs](./ratelimits.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to update the display name and description of an auto-renewable subscription. Calling this endpoint doesn’t change the price, billing details, or the service. For example, you can call `Change Subscription Metadata` if a subscription’s display name changes due to a change in its branding.
 

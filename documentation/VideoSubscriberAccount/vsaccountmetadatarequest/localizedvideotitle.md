@@ -24,7 +24,7 @@ var localizedVideoTitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * localizedVideoTitle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to display a short localized name for the video your app will play if the request is successful. For example, `My Cool Movie` or `My Favorite Show S2 E5`.
 

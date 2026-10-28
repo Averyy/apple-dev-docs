@@ -19,11 +19,11 @@ func contains(_ point: NSPoint) -> Bool
 - (BOOL) containsPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `aPoint` lies within the receiver’s region or on the region’s edge—not simply within its bounding rectangle—[`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 For example, if the receiver defines a donut shape and `aPoint` lies in the hole, this method returns [`false`](../../Swift/false.md). This method can be used for hit testing of mouse events.
 

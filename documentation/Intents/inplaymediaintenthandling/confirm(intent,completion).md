@@ -28,7 +28,7 @@ optional func confirm(intent: INPlayMediaIntent) async -> INPlayMediaIntentRespo
 - (void) confirmPlayMedia:(INPlayMediaIntent *) intent completion:(void (^)(INPlayMediaIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to determine whether your app can play the requested media. If it can, respond with the [`INPlayMediaIntentResponseCode.ready`](../inplaymediaintentresponsecode/ready.md) response code. Include the [`nowPlayingInfo`](../inplaymediaintentresponse/nowplayinginfo.md) dictionary in the response, so the system can display information such as title, artist, and artwork, about the media.
 

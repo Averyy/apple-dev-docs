@@ -21,11 +21,11 @@ Increments the reference count of an object.
 extern xpc_object_txpc_retain(xpc_object_t object);
 ```
 
-#### Return Value
+## Return Value
 
 The object which was given.
 
-#### Discussion
+## Discussion
 
 Calls to [`xpc_retain`](./xpc_retain.md) must be balanced with calls to [`xpc_release`](./xpc_release.md) to avoid leaking memory.
 

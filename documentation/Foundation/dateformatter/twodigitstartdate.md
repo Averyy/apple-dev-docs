@@ -25,7 +25,7 @@ var twoDigitStartDate: Date? { get set }
 @property (copy, nullable) NSDate * twoDigitStartDate;
 ```
 
-#### Discussion
+## Discussion
 
 If the two-digit start date is set to January 6, 1976, then “January 1, 76” is interpreted as New Year’s Day in 2076, whereas “February 14, 76” is interpreted as Valentine’s Day in 1976.
 

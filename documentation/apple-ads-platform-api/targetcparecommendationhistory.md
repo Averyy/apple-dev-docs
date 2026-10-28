@@ -15,11 +15,11 @@ History record created when a target CPA recommendation is applied or dismissed.
 object TargetCpaRecommendationHistory
 ```
 
-#### Discussion
+## Discussion
 
 The `TargetCpaRecommendationHistory` object is an immutable record that the system creates when you apply or dismiss a target CPA recommendation. The record preserves both `recommendedTargetCPA` and `appliedTargetCPA` (the value actually used, which may differ if the advertiser supplied a custom override).
 
-##### Example
+### Example
 
 ```json
 {

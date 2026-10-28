@@ -19,7 +19,7 @@ var url: URL? { get }
 @property (copy, readonly, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSOpenPanel`](../nsopenpanel.md) subclass sets this property to `nil` when the selection contains multiple items.
 

@@ -22,7 +22,7 @@ class func predicateForMedicationDoseEvent(scheduledStart startDate: Date?, end 
 + (NSPredicate *) predicateForMedicationDoseEventWithScheduledStartDate:(NSDate *) startDate endDate:(NSDate *) endDate;
 ```
 
-#### Discussion
+## Discussion
 
 Creates a predicate for use with HKQuery subclasses.
 

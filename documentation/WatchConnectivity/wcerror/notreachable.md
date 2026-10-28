@@ -19,7 +19,7 @@ An error indicating that the counterpart app isn’t reachable.
 static var notReachable: WCError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you send an immediate message to an app that isn’t running.
 

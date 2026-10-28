@@ -22,7 +22,7 @@ nonisolated
 protocol Shape : Sendable, Animatable, View
 ```
 
-#### Overview
+## Overview
 
 Shapes without an explicit fill or stroke get a default fill based on the foreground color.
 

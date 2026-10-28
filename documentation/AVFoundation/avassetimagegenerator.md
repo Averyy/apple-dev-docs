@@ -28,7 +28,7 @@ class AVAssetImageGenerator
 
 - [Creating images from a video asset](./creating-images-from-a-video-asset.md)
 
-#### Overview
+## Overview
 
 Use an image generator to extract images from a video asset at particular times within its timeline.
 

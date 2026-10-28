@@ -17,7 +17,7 @@ Get the code to bypass Activation Lock on a device.
 
 - [Creating and using bypass codes](./creating-and-using-bypass-codes.md)
 
-#### Discussion
+## Discussion
 
 This command allows organizations to retrieve the device’s bypass code. Organizations can use the bypass code to remove the Activation Lock from supervised devices prior to device activation without knowing the user’s personal Apple Account and password.
 
@@ -29,7 +29,7 @@ A device creates a new bypass code when:
 - Erasing and not restoring the device from a backup.
 - Erasing and restoring the device from a backup from a different device.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -39,7 +39,7 @@ A device creates a new bypass code when:
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

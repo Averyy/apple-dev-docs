@@ -19,7 +19,7 @@ func setAttributes(_ attributes: [AnyHashable : Any], forExportedKey key: String
 - (void) setAttributes:(NSDictionary *) attributes forExportedKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the exported key inherits the attributes from its original key and target object. You can use this method to change one or more of the existing attributes for the key, such as the default value or maximum value. For more information on attributes, see [`CIFilter`](../cifilter-swift.class.md) and [Core Image Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185).
 

@@ -22,7 +22,7 @@ class Ruby
 @interface AVCaptionRuby : NSObject
 ```
 
-#### Overview
+## Overview
 
 Ruby characters are small annotations, typically used in Japanese content, that render alongside the base text.
 

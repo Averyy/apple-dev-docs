@@ -25,7 +25,7 @@ class SCNTransformConstraint
 @interface SCNTransformConstraint : SCNConstraint
 ```
 
-#### Overview
+## Overview
 
 To attach constraints to an [`SCNNode`](./scnnode.md) object, use its [`constraints`](./scnnode/constraints.md) property.
 

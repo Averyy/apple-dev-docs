@@ -16,7 +16,7 @@ nonisolated
 init() where Label == DefaultSettingsLinkLabel
 ```
 
-#### Discussion
+## Discussion
 
 The display of the label may be customized using the `labelStyle(_:)` modifier.
 

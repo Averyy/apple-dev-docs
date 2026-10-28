@@ -22,7 +22,7 @@ init(region: CLRegion)
 - (instancetype) initWithRegion:(CLRegion *) region;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized location relevance provider.
 

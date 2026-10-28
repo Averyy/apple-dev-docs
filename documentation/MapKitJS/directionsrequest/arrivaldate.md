@@ -19,7 +19,7 @@ arrivalDate?: Date;
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 Specify either a [`departureDate`](./departuredate.md) or an `arrivalDate`, don’t set both. If you send both values, MapKit JS logs a warning.
 

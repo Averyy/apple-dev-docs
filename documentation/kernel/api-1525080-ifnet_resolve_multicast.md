@@ -13,11 +13,11 @@
 errno_t ifnet_resolve_multicast(ifnet_t ifp, const struct sockaddr *proto_addr, struct sockaddr *ll_addr, size_t ll_len);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success. EOPNOTSUPP indicates the multicast address was not supported or could not be translated. Other errors may indicate other failures.
 
-#### Discussion
+## Discussion
 
 Resolves a multicast address for an attached protocol to a link-layer address. If a link-layer address is passed in, the interface will verify that it is a valid multicast address.
 

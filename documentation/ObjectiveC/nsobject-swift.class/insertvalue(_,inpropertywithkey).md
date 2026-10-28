@@ -20,7 +20,7 @@ func insertValue(_ value: Any, inPropertyWithKey key: String)
 - (void) insertValue:(id) value inPropertyWithKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 The method `insertIn<Key>:` is used if it exists. Otherwise, raises an `NSUndefinedKeyException`. This is part of Cocoa’s scripting support for inserting newly-created objects into containers without explicitly specifying a location.
 

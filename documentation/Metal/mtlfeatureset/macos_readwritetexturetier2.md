@@ -19,7 +19,7 @@ case macOS_ReadWriteTextureTier2
 MTLFeatureSet_macOS_ReadWriteTextureTier2
 ```
 
-#### Discussion
+## Discussion
 
 This feature set corresponds to support the second tier of pixel formats with read-write texture capabilities.
 

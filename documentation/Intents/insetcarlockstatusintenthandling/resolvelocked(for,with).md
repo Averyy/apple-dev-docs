@@ -27,7 +27,7 @@ optional func resolveLocked(for intent: INSetCarLockStatusIntent) async -> INBoo
 - (void) resolveLockedForSetCarLockStatus:(INSetCarLockStatusIntent *) intent withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to verify the requested lock status. This status is a Boolean value: [`true`](../../Swift/true.md) indicates that the car should be locked, [`false`](../../Swift/false.md) indicates it should be unlocked.
 

@@ -21,7 +21,7 @@ A Boolean value indicating whether this character is considered uppercase.
 var isUppercase: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Uppercase characters vary under case-conversion to lowercase, but not when converted to uppercase. The following characters are all uppercase:
 

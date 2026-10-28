@@ -13,11 +13,11 @@
 u_int16_t ifnet_flags(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 Flags. These flags are defined in net/if.h
 
-#### Discussion
+## Discussion
 
 Returns the interface flags that are set.
 

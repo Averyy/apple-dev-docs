@@ -29,7 +29,7 @@ var density: CGFloat { get set }
 
 - [Configuring a Physics Body](../configuring-a-physics-body.md)
 
-#### Discussion
+## Discussion
 
 The actual unit is arbitrary as long as relative masses of objects are consistent throughout the game.
 

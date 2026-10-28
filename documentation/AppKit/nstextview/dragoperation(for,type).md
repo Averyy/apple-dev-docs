@@ -19,11 +19,11 @@ func dragOperation(for dragInfo: any NSDraggingInfo, type: NSPasteboard.Pasteboa
 - (NSDragOperation) dragOperationForDraggingInfo:(id<NSDraggingInfo>) dragInfo type:(NSPasteboardType) type;
 ```
 
-#### Return Value
+## Return Value
 
 The drag operation that should be performed if the image were released now.
 
-#### Discussion
+## Discussion
 
 The returned value should be one of the following:
 

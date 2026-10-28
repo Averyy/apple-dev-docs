@@ -15,7 +15,7 @@ The default attributes to apply to plain files.
 extern NSAttributedStringDocumentReadingOptionKey NSDefaultAttributesDocumentOption;
 ```
 
-#### Discussion
+## Discussion
 
 For plain text documents; [`NSDictionary`](../Foundation/nsdictionary.md) containing attributes to be applied to plain files. The previous string constant was `@"DefaultAttributes"`.
 

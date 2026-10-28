@@ -24,7 +24,7 @@ case smartAlbumFavorites
 PHAssetCollectionSubtypeSmartAlbumFavorites
 ```
 
-#### Discussion
+## Discussion
 
 The user’s favorite assets are those whose [`isFavorite`](../phasset/isfavorite.md) property is `true`. You mark an asset as a favorite by setting the [`isFavorite`](../phassetchangerequest/isfavorite.md) property of a [`PHAssetChangeRequest`](../phassetchangerequest.md) object.
 

@@ -20,7 +20,7 @@ let vmnet_enable_virtio_header_key: UnsafePointer<CChar>
 extern const char * const vmnet_enable_virtio_header_key;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [5.1.6 Device Operation](https://docs.oasis-open.org/virtio/virtio/v1.1/virtio-v1.1.html) in the Virtio specification
 

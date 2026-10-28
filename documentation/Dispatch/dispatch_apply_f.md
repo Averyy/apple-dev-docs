@@ -21,7 +21,7 @@ Submits a single function to the dispatch queue and causes the function to be ex
 extern void dispatch_apply_f(size_t iterations, dispatch_queue_t queue, void *context, void (*)(void *, unsigned long)work);
 ```
 
-#### Discussion
+## Discussion
 
 This function submits an application-defined function to a dispatch queue for multiple invocations and waits for all iterations of the function to complete before returning. If the target queue is a concurrent queue returned by [`dispatch_get_global_queue`](./dispatch_get_global_queue.md), the function can be invoked concurrently, and it must therefore be reentrant-safe. Using this function with a concurrent queue can be useful as an efficient parallel `for` loop.
 

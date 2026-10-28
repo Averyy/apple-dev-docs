@@ -19,7 +19,7 @@ func windowTitle(forDocumentDisplayName displayName: String) -> String
 - (NSString *) windowTitleForDocumentDisplayName:(NSString *) displayName;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation returns `displayName`. Subclasses can override this method to customize the window title. For example, a CAD application could append “-Top” or “-Side,” depending on the view displayed by the window.
 

@@ -21,15 +21,15 @@ OSStatus PMPaperCreate (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 This function creates a paper object appropriate for the specified printer. To obtain one of the available built-in paper sizes for a given printer, you should use the function [`PMPrinterGetPaperList`](../api-1460088-pmprintergetpaperlist.md).
 
-##### Special Considerations
+### Special Considerations
 
 This function creates a paper object but does not mark it as a custom paper, so it appears to the printing system as if it were a built-in paper. This can be produce unpredictable results, so this function is deprecated.
 

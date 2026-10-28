@@ -20,7 +20,7 @@ object OneTimeBuyLineItem
 - [Reporting tokens with transactions](./reportwithtransactions.md)
 - [Reporting corrections](./reportcorrections.md)
 
-#### Discussion
+## Discussion
 
 Use a `OneTimeBuyLineItem` to report a one-time charge transaction, or a correction to a one-time charge transaction that you previously submitted.
 

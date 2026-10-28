@@ -15,7 +15,7 @@ Invoice details for the LOC payment model.
 object Campaign.InvoiceDetail
 ```
 
-#### Discussion
+## Discussion
 
 Captures the billing contact and reference information required for Line of Credit (`LOC`) payment model accounts. The `primaryBuyerEmail` and `billingEmail` fields must each be a valid email address.
 

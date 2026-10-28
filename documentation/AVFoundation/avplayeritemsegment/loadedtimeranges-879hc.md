@@ -22,7 +22,7 @@ The time ranges for the segment that have media data is readily available.
 var loadedTimeRanges: [CMTimeRange] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The loaded time ranges might be discontinuous.
 

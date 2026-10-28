@@ -19,7 +19,7 @@ let kMDItemRedEyeOnOff: CFString!
 const CFStringRef kMDItemRedEyeOnOff;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are 0 (no red-eye reduction mode or unknown) and 1 (red-eye reduction used).
 

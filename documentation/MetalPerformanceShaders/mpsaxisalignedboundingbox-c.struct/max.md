@@ -18,7 +18,7 @@
 vector_float3 max;
 ```
 
-#### Discussion
+## Discussion
 
 Maximum point
 

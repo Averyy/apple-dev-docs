@@ -19,7 +19,7 @@ var documentVisibleRect: NSRect { get }
 @property (readonly) NSRect documentVisibleRect;
 ```
 
-#### Discussion
+## Discussion
 
 Note that this rectangle doesn’t reflect the effects of any clipping that may occur above the [`NSClipView`](../nsclipview.md) itself. To get the portion of the document view that’s guaranteed to be visible, send it a `visibleRect` message.
 

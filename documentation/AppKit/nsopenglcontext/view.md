@@ -20,7 +20,7 @@ weak var view: NSView? { get set }
 @property (weak, nullable) NSView * view;
 ```
 
-#### Return Value
+## Return Value
 
 The view, or `nil` if the receiver has no drawable object, is in full-screen mode, or is in offscreen mode.
 

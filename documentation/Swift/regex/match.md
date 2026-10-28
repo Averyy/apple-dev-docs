@@ -22,7 +22,7 @@ The result of matching a regular expression against a string.
 struct Match
 ```
 
-#### Overview
+## Overview
 
 A `Match` forwards API to the `Output` generic parameter, providing direct access to captures.
 

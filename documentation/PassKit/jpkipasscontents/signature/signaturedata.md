@@ -16,7 +16,7 @@ The result of signing the data provided by the caller using the requested digita
 let signatureData: Data
 ```
 
-#### Discussion
+## Discussion
 
 The pass determines the signature data format.
 

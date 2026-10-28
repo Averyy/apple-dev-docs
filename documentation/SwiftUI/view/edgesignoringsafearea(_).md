@@ -24,11 +24,11 @@ nonisolated
 func edgesIgnoringSafeArea(_ edges: Edge.Set) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that may extend outside of the screen’s safe area on the edges specified by `edges`.
 
-#### Discussion
+## Discussion
 
 Use `edgesIgnoringSafeArea(_:)` to change the area proposed for this view so that — were the proposal accepted — this view could extend outside the safe area to the bounds of the screen for the specified edges.
 

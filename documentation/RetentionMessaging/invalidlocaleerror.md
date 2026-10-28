@@ -15,7 +15,7 @@ An error that indicates the locale is invalid.
 object InvalidLocaleError
 ```
 
-#### Discussion
+## Discussion
 
 For a full list of locales, see [Managing metadata in your app by using locale short codes](../AppStoreConnectAPI/managing-metadata-in-your-app-by-using-locale-shortcodes.md).
 

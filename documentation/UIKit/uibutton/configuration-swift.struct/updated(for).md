@@ -19,7 +19,7 @@ Returns a copy of the configuration, updated for the given button.
 func updated(for button: UIButton) -> UIButton.Configuration
 ```
 
-#### Return Value
+## Return Value
 
 An updated configuration. This method preserves custom values set on the configuration, and updates default values based on the button state.
 

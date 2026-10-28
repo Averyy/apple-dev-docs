@@ -17,7 +17,7 @@
 #define kIOMessageSystemWillPowerOn
 ```
 
-#### Discussion
+## Discussion
 
 Announces that the system is beginning to power the device tree; most devices are unavailable at this point.. Delivered to in-kernel IOKit drivers via `kIOGeneralInterest` and `kIOPriorityPowerStateInterest`. Delivered to user clients of `IORegisterForSystemPower`.
 

@@ -21,11 +21,11 @@ virtual IOPhysicalAddress getPhysicalSegment(
 /* !__LP64__ */
 ```
 
-#### Return Value
+## Return Value
 
 A physical address, or zero if the offset is beyond the length of the mapping.
 
-#### Overview
+## Overview
 
 This method returns the physical address of the byte at the given offset into the mapping, and optionally the length of the physically contiguous segment from that offset. It functions similarly to IOMemoryDescriptor::getPhysicalSegment.
 

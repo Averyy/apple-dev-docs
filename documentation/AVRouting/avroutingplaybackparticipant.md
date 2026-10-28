@@ -22,7 +22,7 @@ protocol AVRoutingPlaybackParticipant
 @protocol AVRoutingPlaybackParticipant
 ```
 
-#### Overview
+## Overview
 
 Classes conform to this protocol if they participate in media playback routing arbitration for managing preferences such as priority on restricted playback routes.
 

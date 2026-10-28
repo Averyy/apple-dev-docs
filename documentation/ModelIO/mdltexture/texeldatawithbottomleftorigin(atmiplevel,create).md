@@ -24,11 +24,11 @@ func texelDataWithBottomLeftOrigin(atMipLevel level: Int, create: Bool) -> Data?
 - (NSData *) texelDataWithBottomLeftOriginAtMipLevel:(NSInteger) level create:(BOOL) create;
 ```
 
-#### Return Value
+## Return Value
 
 The texture’s image data, or `nil` if data is not available.
 
-#### Discussion
+## Discussion
 
 Mipmapping is a technique that uses multiple sizes of a texture image to increase rendering performance. The image for mipmap level zero matches the size in the [`dimensions`](./dimensions.md) property. Mipmap level 1 is an image at half the original dimensions; level 2 is at quarter size; and so on.
 

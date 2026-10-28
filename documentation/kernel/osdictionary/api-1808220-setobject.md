@@ -13,11 +13,11 @@ virtual bool setObject(
  const OSMetaClassBase *anObject);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the addition was successful, `false` otherwise.
 
-#### Overview
+## Overview
 
 An OSSymbol for `aKey` is created internally. An object already stored under `aKey` is released.
 

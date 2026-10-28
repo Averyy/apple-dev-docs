@@ -28,7 +28,7 @@ class VNDetectTrajectoriesRequest
 
 - [Identifying Trajectories in Video](./identifying-trajectories-in-video.md)
 
-#### Overview
+## Overview
 
 After the request detects a trajectory, it produces an observation that contains the shape’s detected points and an equation describing the parabola.
 

@@ -17,11 +17,11 @@ Get the memory limit.
 static var memoryLimit: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Calls to malloc will wait on scheduled tasks if the limit is exceeded. The memory limit defaults to 1.5 times the maximum recommended working set size reported by the device.
 
-##### See Also
+### See Also
 
 - [`memoryLimit`](../memory/memorylimit.md)
 

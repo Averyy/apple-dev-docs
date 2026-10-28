@@ -25,7 +25,7 @@ protocol ARSessionObserver : NSObjectProtocol
 
 - [Managing Session Life Cycle and Tracking Quality](./managing-session-life-cycle-and-tracking-quality.md)
 
-#### Overview
+## Overview
 
 This protocol defines optional methods common to the [`ARSessionDelegate`](./arsessiondelegate.md), [`ARSCNViewDelegate`](./arscnviewdelegate.md), and [`ARSKViewDelegate`](./arskviewdelegate.md) protocols. You can implement this protocol’s methods when adopting one of those protocols.
 

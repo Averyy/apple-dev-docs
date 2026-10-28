@@ -19,7 +19,7 @@ case locationNotAvailable
 MEErrorLocationNotAvailable
 ```
 
-#### Discussion
+## Discussion
 
 Upon receipt of this error call [`loadSampleBufferContainingSamples(to:completionHandler:)`](../../mesamplecursor/loadsamplebuffercontainingsamples%28to,completionhandler%29.md).
 

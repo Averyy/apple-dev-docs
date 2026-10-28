@@ -10,7 +10,7 @@ framework: "Swift-Org/diagnostics"
 
 Warnings that indicate a compiler option has been obsoleted by the module selectors feature (`0491-module-selectors.md`).
 
-#### Overview
+## Overview
 
 The module selectors feature superseded certain compiler options related to controlling the contents of generated `.swiftinterface` files. When one of these obsoleted options is passed to the compiler, it is ignored and a warning is emitted:
 

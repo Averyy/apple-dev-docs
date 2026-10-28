@@ -24,7 +24,7 @@ convenience init(identifier: String, title: String, options: UNNotificationActio
 + (instancetype) actionWithIdentifier:(NSString *) identifier title:(NSString *) title options:(UNNotificationActionOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 An action object that the system initializes.
 

@@ -24,7 +24,7 @@ var mDuckingLevel: AUVoiceIOOtherAudioDuckingLevel
 AUVoiceIOOtherAudioDuckingLevel mDuckingLevel;
 ```
 
-#### Discussion
+## Discussion
 
 A higher level of ducking could increase the intelligibility of voice chat.
 

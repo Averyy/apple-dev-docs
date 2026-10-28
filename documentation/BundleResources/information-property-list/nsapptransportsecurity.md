@@ -17,7 +17,7 @@ A description of changes made to the default security for HTTP connections.
 - **Name**: `NSAppTransportSecurity` (App Transport Security Settings)
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 On Apple platforms, a networking feature called App Transport Security (ATS) improves privacy and data integrity for all apps and app extensions. ATS requires that all HTTP connections made with the [URL Loading System](../../Foundation/url-loading-system.md)—typically using the [`URLSession`](../../Foundation/urlsession.md) class—use HTTPS. It further imposes extended security checks that supplement the default server trust evaluation prescribed by the Transport Layer Security (TLS) protocol. ATS blocks connections that fail to meet minimum security specifications. For additional details, see [Preventing Insecure Network Connections](../../Security/preventing-insecure-network-connections.md).
 
@@ -31,7 +31,7 @@ You can circumvent or augment these protections by adding the [`NSAppTransportSe
 
 All keys in the ATS configuration dictionary are optional, with default values that are suitable for most apps. Keys that define global exceptions apply to all network connections made by your app, except connections to domains specified in the [`NSExceptionDomains`](./nsapptransportsecurity/nsexceptiondomains.md) sub-dictionary. That sub-dictionary allows you to separately manage settings for individual domains.
 
-##### Versioning
+### Versioning
 
 ATS operates by default for apps linked against the iOS 9.0 or macOS 10.11 SDKs or later. When you link your app against an older SDK, ATS is disabled no matter which version of operating system your app runs on.
 

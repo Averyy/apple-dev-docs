@@ -19,7 +19,7 @@ static let priority: NSAccessibility.NotificationUserInfoKey
 extern NSAccessibilityNotificationUserInfoKey const NSAccessibilityPriorityKey;
 ```
 
-#### Discussion
+## Discussion
 
 An example of using this key is VoiceOver which decides whether to speak an announcement immediately or after the current speech has finished. For a list of possible values, see [`NSAccessibilityPriorityLevel`](../../nsaccessibilityprioritylevel.md).
 

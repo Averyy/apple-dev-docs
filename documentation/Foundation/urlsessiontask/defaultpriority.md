@@ -25,7 +25,7 @@ class let defaultPriority: Float
 extern const float NSURLSessionTaskPriorityDefault;
 ```
 
-#### Discussion
+## Discussion
 
 The floating point value of this constant is `0.5`.
 

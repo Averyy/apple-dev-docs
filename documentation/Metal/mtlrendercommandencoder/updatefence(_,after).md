@@ -25,7 +25,7 @@ func updateFence(_ fence: any MTLFence, after stages: MTLRenderStages)
 - (void) updateFence:(id<MTLFence>) fence afterStages:(MTLRenderStages) stages;
 ```
 
-#### Discussion
+## Discussion
 
 You can synchronize memory operations of a render pass that access resources with an [`MTLFence`](../mtlfence.md). This method instructs the pass to update `fence` after the stages you pass to the `stages` run all their memory store operations to the resources it accesses. The fence indicates when other passes can access those resources without a race condition.
 
@@ -34,7 +34,7 @@ For more information about synchronization with fences, see:
 - [Resource synchronization](../resource-synchronization.md)
 - [Synchronizing passes with a fence](../synchronizing-passes-with-a-fence.md)
 
-##### Reuse a fence by waiting first and updating second
+### Reuse a fence by waiting first and updating second
 
 When encoding a render pass that reuses a fence, wait for other passes to update the fence before repurposing that fence to notify subsequent passes with an update:
 

@@ -21,7 +21,7 @@ The ordering of the menu chosen by the system for the current context.
 static let automatic: MenuOrder
 ```
 
-#### Discussion
+## Discussion
 
 On iOS, this order resolves to [`fixed`](./fixed.md) for menus presented within scrollable content. Pickers that use the [`menu`](../pickerstyle/menu.md) style also default to [`fixed`](./fixed.md) order. In all other cases, menus default to [`priority`](./priority.md) order.
 

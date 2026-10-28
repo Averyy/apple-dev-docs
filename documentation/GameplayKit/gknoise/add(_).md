@@ -24,7 +24,7 @@ func add(_ noise: GKNoise)
 - (void) addWithNoise:(GKNoise *) noise;
 ```
 
-#### Discussion
+## Discussion
 
 Note that adding noise values can result in values outside the [-1.0, 1.0] range used for colorizing noise. If you plan to procduce colorized textures from the noise object, use the [`remapValues(toCurveWithControlPoints:)`](./remapvalues%28tocurvewithcontrolpoints%29.md) method to return results to that range first.
 

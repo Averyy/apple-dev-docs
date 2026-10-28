@@ -23,7 +23,7 @@ var textStorage: NSTextStorage { get }
 @property (nonatomic, strong, readonly) NSTextStorage * textStorage;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a convenience accessor that provides access through the text container.
 

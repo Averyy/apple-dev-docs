@@ -21,7 +21,7 @@ object FormattedText
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 - [Using Markdown with Apple News Format](../AppleNews/using-markdown-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Use a `FormattedText` object to provide the content and style for text strings you use in data tables and as caption descriptors. You can use a `FormattedText` object for:
 
@@ -34,7 +34,7 @@ To apply a style to a `FormattedText` object, you can use a [`ComponentTextStyle
 
 You can use this object in [`DataDescriptor`](./datadescriptor.md), [`RecordStore`](./recordstore.md), and [`CaptionDescriptor`](./captiondescriptor.md).
 
-##### Example
+### Example
 
 ```json
 {

@@ -16,7 +16,7 @@ case unspecified
 INGetAvailableRestaurantReservationBookingDefaultsIntentResponseCodeUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 Use this code if you were able to provide defaults but chose not to do so.
 

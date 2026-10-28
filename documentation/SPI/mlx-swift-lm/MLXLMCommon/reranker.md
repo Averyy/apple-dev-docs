@@ -17,7 +17,7 @@ Architecture-neutral interface for local reranker models.
 protocol Reranker : Sendable
 ```
 
-#### Overview
+## Overview
 
 Use [`scores(query:documents:instruction:options:)`](./reranker/scores%28query,documents,instruction,options%29.md) when scores must stay aligned with the input documents. Use [`rerank(_:options:)`](./reranker/rerank%28_,options%29.md) for sorted retrieval results.
 

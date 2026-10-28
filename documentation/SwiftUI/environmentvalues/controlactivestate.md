@@ -17,7 +17,7 @@ The active appearance expected of controls in a window.
 var controlActiveState: ControlActiveState { get set }
 ```
 
-#### Discussion
+## Discussion
 
 `ControlActiveState` and `EnvironmentValues.controlActiveState` are deprecated, use `EnvironmentValues.appearsActive` instead.
 

@@ -5,11 +5,11 @@
 
 Retrieve up-to-date information about the products for sale in your app to display to your customers.
 
-#### Overview
+## Overview
 
 To ensure your customers see only products that are available for them to purchase, query the App Store before displaying your app’s store UI. Compare the App Store’s list of product identifiers to your local product identifiers. To retrieve a list of your app’s product identifiers, see [Loading in-app product identifiers](./loading-in-app-product-identifiers.md).
 
-##### Request product information
+### Request product information
 
 To query the App Store, create an [`SKProductsRequest`](./skproductsrequest.md) and initialize it with a list of your product identifiers. Keep a strong reference to the request object; otherwise, the system might deallocate the request before it can complete.
 
@@ -78,7 +78,7 @@ Keep a reference to the array of [`SKProduct`](./skproduct.md) objects that the 
 
 If the list of products you sell in your app is subject to change, such as when you add or remove a product from sale, consider creating a custom class that encapsulates a reference to the product object along with other information, such as pictures or descriptions that you fetch from your server. For more information on payment requests, see [Requesting a payment from the App Store](./requesting-a-payment-from-the-app-store.md).
 
-##### Troubleshoot invalid product IDs
+### Troubleshoot invalid product IDs
 
 Invalid product identifiers in the App Store response to your products request usually indicate an error in your app’s list of product identifiers. Invalid product identifiers may also indicate an incorrectly configured product in App Store Connect. Actionable UI and insightful logging can help you resolve this type of issue, as follows:
 

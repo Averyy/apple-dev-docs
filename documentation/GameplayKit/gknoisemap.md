@@ -24,7 +24,7 @@ class GKNoiseMap
 @interface GKNoiseMap : NSObject
 ```
 
-#### Overview
+## Overview
 
 Working with procedural noise involves three main steps, one of each of the three major GameplayKit noise classes:
 

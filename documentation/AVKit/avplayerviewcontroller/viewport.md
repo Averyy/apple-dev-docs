@@ -19,7 +19,7 @@ var viewport: AVViewport { get }
 @property (nonatomic, strong, readonly) AVViewport * viewport;
 ```
 
-#### Discussion
+## Discussion
 
 Set [`portal`](../avviewport/portal.md) to control the aspect ratio of the frame the system uses for a portal presentation. When you don’t specify an aspect ratio, the portal defaults to 16:9 (1.78).
 

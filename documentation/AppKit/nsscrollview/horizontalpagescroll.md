@@ -19,7 +19,7 @@ var horizontalPageScroll: CGFloat { get set }
 @property CGFloat horizontalPageScroll;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the amount of the document view kept visible when scrolling horizontally page by page, expressed in the content view’s coordinate system. This value is used when the user clicks the scroll arrows on the horizontal scroll bar while holding down the Option key.
 

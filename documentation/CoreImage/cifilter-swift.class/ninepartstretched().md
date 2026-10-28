@@ -24,11 +24,11 @@ class func ninePartStretched() -> any CIFilter & CINinePartStretched
 + (CIFilter<CINinePartStretched> *) ninePartStretchedFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The distorted image.
 
-#### Discussion
+## Discussion
 
 This method applies the nine-part stretched filter to an image. This effect distorts an image by stretching an image to the breakpoint properties while distorting the image based on the grow amount.
 

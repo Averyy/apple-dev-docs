@@ -25,11 +25,11 @@ func contentRect(forBounds bounds: CGRect) -> CGRect
 - (CGRect) contentRectForBounds:(CGRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle in which the receiver draws its entire content.
 
-#### Discussion
+## Discussion
 
 The content rectangle is the area needed to display the image and title including any padding and adjustments for alignment and other settings.
 

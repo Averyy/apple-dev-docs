@@ -23,7 +23,7 @@ var isCinematicVideoMetadataCaptureEnabled: Bool { get set }
 @property (nonatomic, getter=isCinematicVideoMetadataCaptureEnabled) BOOL cinematicVideoMetadataCaptureEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When `true`, recorded movie files include a cinematic video metadata track that enables post-capture cinematic video editing using the Cinematic framework.
 

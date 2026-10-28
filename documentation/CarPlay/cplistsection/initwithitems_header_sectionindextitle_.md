@@ -17,7 +17,7 @@ Creates a section with list items, a header, and a section index title.
 - (instancetype) initWithItems:(NSArray<id<CPListTemplateItem>> *) items header:(NSString *) header sectionIndexTitle:(NSString *) sectionIndexTitle;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized list section.
 

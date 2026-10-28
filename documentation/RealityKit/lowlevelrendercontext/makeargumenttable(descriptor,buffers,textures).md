@@ -19,11 +19,11 @@ Creates an argument table that binds the provided buffer slices and textures.
 func makeArgumentTable(descriptor: LowLevelArgumentTable.Descriptor, buffers: [LowLevelBufferSlice], textures: [LowLevelTextureResource]) throws -> LowLevelArgumentTable
 ```
 
-#### Return Value
+## Return Value
 
 A newly created [`LowLevelArgumentTable`](../lowlevelargumenttable.md).
 
-#### Discussion
+## Discussion
 
 The `descriptor` must match the `argumentTableDescriptor` of the corresponding material function. The counts and sizes of `buffers` and `textures` must match the slots declared in the descriptor.
 

@@ -19,11 +19,11 @@ func isFilePackage(atPath fullPath: String) -> Bool
 - (BOOL) isFilePackageAtPath:(NSString *) fullPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the path identifies a file package; otherwise, [`false`](../../Swift/false.md) if the path does not exist, is not a directory, or is not a file package.
 
-#### Discussion
+## Discussion
 
 You can safely call this method from any thread of your app.
 

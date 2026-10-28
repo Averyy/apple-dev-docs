@@ -5,31 +5,31 @@
 
 Released December 12, 2025 — 26.2 (20623.1.14)
 
-#### Overview
+## Overview
 
 Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, macOS Sequoia, and macOS Sonoma.
 
-##### Accessibility
+### Accessibility
 
-###### New Features
+#### New Features
 
 - Added support for automatically scrolling off-screen `<input type="radio">` elements into view when they are focused, improving accessibility for users navigating with screen readers or keyboard shortcuts. (55121458)
 - Added support for `aria-colindextext` and `aria-rowindextext` to provide human-readable alternatives to `aria-colindex` and `aria-rowindex`. (109669421)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Voice Control number and name overlays not labeling content inside `iframe` elements. (118252216)
 - Fixed incorrect accessibility bounds of SVG roots, ensuring assistive technologies have access to the correct geometry. (153782363)
 - Fixed an issue where `<label>` elements targeted by `aria-labelledby` stopped providing accessibility text to assistive technologies after dynamic page changes. (158906980)
 
-##### Animations
+### Animations
 
-###### New Features
+#### New Features
 
 - Added support for `Animation.prototype.overallProgress`.  (155625287)
 - Added support for endpoint-inclusive active intervals in `Animation.commitStyles()` to correctly persist styles for completed animations. (158684709)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed inheritance of additional animation properties (`animation-timing-function`, `animation-play-state`, `animation-iteration-count`, and `animation-direction`) in `::view-transition` pseudo-elements to improve style consistency. (156131284)
 - Fixed `animation-name` resolution to correctly find matching `@keyframes` within tree-scoped and shadow DOM contexts. (156484228)
@@ -37,15 +37,15 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed `Animation.commitStyles()` so that custom properties are properly committed to the target element. (158919736)
 - Fixed `Animation.commitStyles()` to correctly commit logical properties as their corresponding physical properties. (158920529)
 
-##### Browser
+### Browser
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Safari now reports a frozen OS version in its user agent string on iOS 26 and iPadOS 26, showing the last version released before iOS 26.  (156170132)
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added support for the `cursor` property on pseudo-elements.  (90364915)
 - Added support for the `position-visibility` property. (129789653)
@@ -67,7 +67,7 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Added support for `text-decoration-line` values `spelling-error` and `grammar-error`. (160494378)
 - Added support for `flip-x` and `flip-y` options in `position-try-fallback` for CSS Anchor Positioning.  (163497870)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `-webkit-user-select: none` disabling find-in-page in Safari. (8081660)
 - Fixed incorrect z-ordering for `position: sticky` elements. (90572595)
@@ -111,39 +111,39 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed an issue where anchor-positioned elements transitioning from `display: block` to `display: none` can not anchor themselves to the anchor. (163861918)
 - Fixed incorrect underline positioning for `text-decoration` when inline box sides are trimmed. (163909909)
 
-##### Canvas
+### Canvas
 
-###### Deprecations
+#### Deprecations
 
 - Removed non-standard legacy `drawImageFromRect`. (141681635)
 
-##### DOM
+### DOM
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where command-clicking to open a link in a new tab navigates the current tab. (57216935)
 
-##### Editing
+### Editing
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed jumbled text when copy/pasting bidirectional text starting with left-to-right. (152236717)
 - Fixed paste performance in `textarea` by skipping unnecessary layout calls and only removing unrendered text nodes in richly editable fields. (157813510)
 
-##### Events
+### Events
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed boundary pointer and mouse events not firing when the hit test target changed under a stationary pointer. (160147423)
 
-##### Forms
+### Forms
 
-###### New Features
+#### New Features
 
 - Added support for form controls to preserve legibility when using `accent-color` in both light and dark modes. (99018889)
 - Added support for normalizing full-width digits, minus signs, and full-width dots to ASCII in `<input type="number">` fields, immediately rejecting disallowed characters. (141257181)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where some websites may sometimes fail to reveal the focused element when the keyboard appears. (50384887)
 - Fixed input fields with `field-sizing: content` so that larger placeholder text now correctly expands the height of the field by including the placeholder’s computed height. (123125836)
@@ -152,41 +152,41 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed painting for `<input type="range">` sliders in right-to-left vertical block writing modes. (158567821)
 - Fixed an issue where tainted scripts were blocked from reading values of form fields they created, now allowing access if the field was not modified by user input. (163299988)
 
-##### HTML
+### HTML
 
-###### New Features
+#### New Features
 
 - Added support for displaying HTML `title` attribute tooltips on Catalyst. (79416560)
 - Added support for `command` and `commandfor` attributes on buttons to provide a declarative way to control popovers and dialogs. (147442565)
 - Added support for `hidden=until-found` and the `beforematch` event. (157348946)
 - Added auto-expanding details element. (157349077)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where navigating to `:~:text` fragments on dynamically generated pages did not highlight or scroll to the fragment. (150880542)
 
-##### Home Screen Web Apps
+### Home Screen Web Apps
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where an audio element failed to play when re-opening a Home Screen Web App.  (155336513)
 
-##### Images
+### Images
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed HDR images in CSS backgrounds, CSS borders and inside SVG images so they are now properly decoded and rendered in HDR mode. (158076668)
 
-##### JavaScript
+### JavaScript
 
-###### New Features
+#### New Features
 
 - Added support for `Math.sumPrecise`. (155642395)
 - Added support for `Map.prototype.getOrInsert`, `WeakMap.prototype.getOrInsert`, and related methods enabling easier insertion of default values into Maps and WeakMaps. (157176714)
 - Added support for including `Promise.race` in async stack traces. (161700216)
 - Added support for including `Promise.allSettled` in async stack traces. (162266189)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed non-standard `new Date(2024-12-3)` yielding to an “Invalid Date” error. (141044926)
 - Fixed “text/json/json+json” to be considered an invalid JSON MIME type.  (154912716)
@@ -200,16 +200,16 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed `TypeError` messages to be clearer in `for-of` loops. (159814766)
 - Fixed `TypeError` messages when calling class or function constructors without `new` to include the constructor name. (161152354)
 
-##### MathML
+### MathML
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed rendering of unknown MathML elements so they now behave like `mrow` as required by the MathML Core specification. (148593275)
 - Fixed `mfenced` elements to render like `mrow`. (161416576)
 
-##### Media
+### Media
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed western Arabic numbers being displayed in the video viewer instead of eastern Arabic numbers. (141281469)
 - Fixed WebVTT `line-height` to be `normal` by default, not `1`. (156633220)
@@ -218,39 +218,39 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed `MediaRecorder` to no longer fire erroneous error events when stopped immediately after track changes, aligning behavior with Chrome and closer to Firefox. (161124260)
 - Fixed an issue where custom WebVTT caption text size settings did not propagate to cue child elements by moving the `font-size` definition into the cue’s shared `<style>` block. (162547969)
 
-##### Networking
+### Networking
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where `rel=preload` link headers with a nonce could trigger erroneous `Content-Security-Policy-Report-Only` violations due to the nonce not being copied into the fetch options. (75060055)
 - Fixed an issue where apps that are mistakenly calling the WKWebView API `loadRequest` from a background thread may end up crashing.  (162070925)
 
-##### PDF
+### PDF
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where the active PDF annotation hover effect would remain visible after moving the pointer away. (162951528)
 
-##### Performance API
+### Performance API
 
-###### New Features
+#### New Features
 
 - Added support for the Event Timing API. (160970604)
 - Added support for Largest Contentful Paint web performance metric. (163498163)
 
-##### Privacy
+### Privacy
 
-###### New Features
+#### New Features
 
 - Added support for Cookies Having Independent Partitioned State (CHIPS).  (154149154)
 
-##### Rendering
+### Rendering
 
-###### New Features
+#### New Features
 
 - Added support for text shaping across inline boxes. (162430932)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed incorrect clipping of `position: fixed` and `position: sticky` content during view transitions. (154886047)
 - Fixed computing static position to correctly size and locate an inset modified containing block. (155650719)
@@ -271,13 +271,13 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed an issue where fullscreen dialog backdrops did not properly extend below the address bar by extending the backdrop’s background into obscured inset areas. (163535684)
 - Fixed an issue where slotted text nodes could become hidden when adjacent elements in a flex container changed their `display` property. (163571747)
 
-###### Deprecations
+#### Deprecations
 
 - Removed UA styles for `h1` in `article`, `aside`, `nav`, and `section`. (151455566)
 
-##### SVG
+### SVG
 
-###### New Features
+#### New Features
 
 - Added support for the `repeatEvent` in SVG animations to align with the SMIL specification and match other browsers. (129919749)
 - Added support for the `onbegin` event in the `SVGAnimationElement` IDL interface to align with the SVG animations specification. (130609424)
@@ -285,7 +285,7 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Added support for the `hreflang` IDL attribute on `SVGAElement` to improve SVG link handling. (160133102)
 - Added support for `type` attribute on the SVG `<a>` element. (160222206)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where a dynamic change in a CSS property of an SVG  element does not get reflected in the instances of the SVGElement. (98577657)
 - Fixed an issue where `stop-color` incorrectly accepted hashless hex color values like `1234` by treating them as invalid to follow the spec. (119166640)
@@ -302,27 +302,27 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed an issue where `<view>` element was not applied to the root element. (159705519)
 - Fixed `SVGAElement` so that its `rel` and `relList` attributes now affect navigation behavior, including proper handling of `noopener`, `noreferrer`, and the new `opener` value, aligning SVG links with `HTMLAnchorElement` behavior. (160724516)
 
-##### Security
+### Security
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed parsing of `require-trusted-types-for` in CSP to ensure `'script'` is only valid when followed by whitespace or end of buffer. (147760089)
 
-##### Service Worker
+### Service Worker
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where service worker downloads are not being saved to Downloads folder. (154501503)
 
-##### Spatial Web
+### Spatial Web
 
-###### New Features
+#### New Features
 
 - Added WebGPU support for WebXR.  (157250939)
 
-##### Storage
+### Storage
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed WebSockets to correctly inherit storage access from the frame that created them. (147949918)
 - Fixed `requestStorageAccess()` should always grant access when called from a same-site iframe. (156545395)
@@ -331,15 +331,15 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed an issue where cross-origin navigations incorrectly preserved storage access. (158446697)
 - Fixed an issue where dedicated workers could inherit storage access from their parent document, preventing them from sending cross-site requests with cookies. (158814068)
 
-##### Tables
+### Tables
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed collapsed table rows retaining nonzero height. (158276634)
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added support for fractional coordinates in `PointerEvent` and `TouchEvent` properties such as `clientX/clientY`, `pageX/pageY`, `offsetX/offsetY`, and `screenX/screenY`, while `MouseEvent` values remain whole. (9564176)
 - Added support for `document.caretPositionFromPoint()`. (144101675)
@@ -350,7 +350,7 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Added support for the `scrollend` event. (158435888)
 - Added support for the Navigation API. (158642673)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where the first `pointerdown` event was lost after triggering a context menu by right-clicking. (84787733)
 - Fixed `window.opener` being incorrectly set to `null` when a site-isolated iframe navigated to a new site, ensuring opener relationships persist across frame migrations. (117269418)
@@ -371,30 +371,30 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed Trusted Types incorrectly treating `null` or `undefined` policy return values as `null` instead of empty strings during `createHTML`, `createScript`, and `createScriptURL` operations. (161837641)
 - Fixed `attachShadow()` to use the global custom element registry by default when `customElementRegistry` is `null`, aligning with the specification. (161949493)
 
-###### Deprecations
+#### Deprecations
 
 - Removed support for the non-standard `overflowchanged` event. (71129110)
 
-##### Web Extensions
+### Web Extensions
 
-###### New Features
+#### New Features
 
 - Added support for `browser.runtime.getVersion()` to retrieve the extension version from its manifest. (161742137)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where `onInstalled` getting called after every launch of Safari when opening a profile window.  (147491513)
 - Fixed `sender.origin` parameter to match `window.location.origin`. (155884667)
 - Fixed an issue where Safari extension popups could open scrolled down and some websites could flicker during scrolling. (155965298)
 - Fixed an issue that caused the web page to crash when navigating to certain URLs with an extension enabled. (158180410)
 
-##### Web Inspector
+### Web Inspector
 
-###### New Features
+#### New Features
 
 - Added Largest Contentful Paint entries to the Layout and Rendering timeline and events list in the Timelines tab.  (163600473)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed syntax highlighting for JavaScript features like template literals, private class elements, optional chaining, and others. (107619553)
 - Fixed an issue where the Console truncated long string outputs. (124629101)
@@ -406,45 +406,45 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed an issue where the Sources tab won’t show contents of a script that contains a `for` statement with optional chaining in the test condition. (160617913)
 - Fixed an issue where adding DOM attributes or node siblings did not work correctly when using the actions from the context menu. (161577627)
 
-##### WebAssembly
+### WebAssembly
 
-###### New Features
+#### New Features
 
 - Added support for `WebAssembly.Memory.prototype.toFixedLengthBuffer()` and `WebAssembly.Memory.prototype.toResizableBuffer()` to enable resizable WebAssembly memory buffers. (147437929)
 - Added support for Wasm Memory buffer APIs. (159305098)
 - Added support for Wasm JS String Builtins. (159679027)
 
-##### WebDriver
+### WebDriver
 
-###### New Features
+#### New Features
 
 - Added support for the “Set Storage Access” extension endpoint.  (158063011)
 - Added support for new endpoints for setting storage access permission state and granting storage access to embedded frames for specific origins.  (158263193)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the `navigate` endpoint in WebDriver to properly validate URLs against the current browsing context and set the default readiness state to `Interactive` to align with the specification. (157031091)
 - Fixed an issue where element references nested inside `Array` or `Object` arguments were not properly extracted when executing scripts. (162571946)
 
-##### WebGPU
+### WebGPU
 
-###### New Features
+#### New Features
 
 - Added support for using `GPUTexture` objects as depth-stencil and resolve attachments in WebGPU render passes to match the specification. (159952306)
 
-##### WebKit API
+### WebKit API
 
-###### New Features
+#### New Features
 
 - Added support for exporting `WebPage` content as `.png`, `.flatRTFD`, `.rtf`, and `.utf8PlainText` using SwiftUI `Transferable` APIs. (156225187)
 
-##### WebRTC
+### WebRTC
 
-###### New Features
+#### New Features
 
 - Added `encrypted` field to `RTCRtpHeaderExtensionParameters`. (159279401)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed camera indicator staying enabled even after ending a meeting or removing access to the camera. (152962650)
 

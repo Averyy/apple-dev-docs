@@ -25,7 +25,7 @@ struct SCNPhysicsCollisionCategory
 enum SCNPhysicsCollisionCategory : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 You specify contact and collision behaviors by defining your own categories for the kinds of bodies your app simulates and setting the [`categoryBitMask`](./scnphysicsbody/categorybitmask.md) and [`collisionBitMask`](./scnphysicsbody/collisionbitmask.md) properties for each body to determine which kinds of bodies it collides with. Additionally, you can use the [`contactDelegate`](./scnphysicsworld/contactdelegate.md) property of the physics world to be notified of collisions between bodies.
 

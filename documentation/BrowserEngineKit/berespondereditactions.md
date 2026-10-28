@@ -26,7 +26,7 @@ protocol BEResponderEditActions : UIResponderStandardEditActions
 
 - [Supporting extended text interactions](./support-extended-text-interactions.md)
 
-#### Overview
+## Overview
 
 Implement the methods in this protocol to support text interactions in your browser text view that conforms to [`BETextInput`](./betextinput.md). To get the system’s standard behavior for an interaction, call [`BETextInteraction`](./betextinteraction.md) methods in your implementation. For more information, see [Supporting extended text interactions](./support-extended-text-interactions.md).
 

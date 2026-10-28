@@ -14,7 +14,7 @@ Rounds X to integral value using the round-toward-zero rounding mode.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Truncate (half)**:
 

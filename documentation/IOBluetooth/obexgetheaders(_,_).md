@@ -19,11 +19,11 @@ func OBEXGetHeaders(_ inData: UnsafeRawPointer!, _ inDataSize: Int) -> CFDiction
 CFDictionaryRefOBEXGetHeaders(const void *inData, size_t inDataSize);
 ```
 
-#### Return Value
+## Return Value
 
 A CFDictionary with the headers found in the data blob inside it.
 
-#### Discussion
+## Discussion
 
 You should use this when your callback for PUTs, GETs, etc. give you a data chunk and a size. Pass these params to this function and you will receive a dictionary back full of the parse headers. You can use the CFDictionary calls to get objects out of it, based on the header keys defined above. You are responsible for releasing the CFDictionary returned to you. Example usage:
 

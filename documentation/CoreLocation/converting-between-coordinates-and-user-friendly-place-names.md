@@ -5,7 +5,7 @@
 
 Convert between a latitude and longitude pair and a more user-friendly description of that location.
 
-#### Overview
+## Overview
 
 The [`CLLocationManager`](./cllocationmanager.md) object reports locations as a latitude/longitude pair. While these values uniquely represent any location on the planet, they are not values that users immediately associate with the location. Users are more familiar with names that describe a location, such as street names or city names. The [`CLGeocoder`](./clgeocoder.md) class lets you convert between geographic coordinates and the user-friendly names associated with that location. You can convert from either a latitude/longitude pair to a user friendly place name, or the other way around.
 
@@ -15,7 +15,7 @@ User place names are represented by a [`CLPlacemark`](./clplacemark.md) object, 
 
 Geocoder objects are one-shot objects—that is, you use each object to make a single conversion. You can create multiple geocoder objects and perform multiple conversions, but Apple rate limits the number of conversions you can perform. Making too many requests in a short period of time may cause some of those requests to fail. For tips on how to manage any conversions, see the overview of [`CLGeocoder`](./clgeocoder.md).
 
-##### Convert a coordinate into a placemark
+### Convert a coordinate into a placemark
 
 If you have a [`CLLocation`](./cllocation.md) object, call the [`reverseGeocodeLocation(_:completionHandler:)`](./clgeocoder/reversegeocodelocation%28_,completionhandler%29.md) method of your geocoder object to retrieve a [`CLPlacemark`](./clplacemark.md) object for that location. Typically, you convert coordinates into placemarks when you want to display information about the location to the user. For example, if the user selects a location on a map, you might want to show the address at that location.
 
@@ -50,7 +50,7 @@ func lookUpCurrentLocation(completionHandler: @escaping (CLPlacemark?)
 }
 ```
 
-##### Convert a placemark into a coordinate
+### Convert a placemark into a coordinate
 
 If you have user-provided address information, call the methods of [`CLGeocoder`](./clgeocoder.md) to obtain the corresponding location data. The [`CLGeocoder`](./clgeocoder.md) class provides options for converting a user-typed string or for converting a dictionary of address-related information. That information is forwarded to Apple servers, which interpret the information and return the results.
 

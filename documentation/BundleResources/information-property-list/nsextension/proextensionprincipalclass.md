@@ -15,7 +15,7 @@ The name of the class with the principal implementation of your extension.
 - **Name**: `ProExtensionPrincipalClass`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 The Compressor app instantiates the class specified in the `ProExtensionPrincipalClass` key to convert source files to the output format your extension supports. Customize your extension code by adopting the following protocols in the implementation of this class:
 

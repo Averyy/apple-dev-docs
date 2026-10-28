@@ -19,7 +19,7 @@ var associatedDomains: [String] { get set }
 @property (copy) NSArray<NSString *> * associatedDomains;
 ```
 
-#### Discussion
+## Discussion
 
 For per-app VPNs only, the system routes HTTP requests to download the Apple app site association files for domains in this property through the VPN.
 

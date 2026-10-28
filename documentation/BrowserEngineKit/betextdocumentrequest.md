@@ -22,7 +22,7 @@ class BETextDocumentRequest
 @interface BETextDocumentRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`BETextInput`](./betextinput.md) protocol’s [`requestDocumentContext(_:completionHandler:)`](./betextinput/requestdocumentcontext%28_,completionhandler%29.md) and [`selectPosition(at:for:completionHandler:)`](./betextinput/selectposition%28at,for,completionhandler%29.md) methods take an instance of this class as an argument.
 

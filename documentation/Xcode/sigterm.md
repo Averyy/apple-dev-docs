@@ -5,7 +5,7 @@
 
 A software termination signal terminated the process.
 
-#### Overview
+## Overview
 
 This signal is often sent shortly before `SIGKILL`, to give the process an opportunity to terminate cleanly. The user can also send this signal using the `kill` command in Terminal, if no specific signal is specified.
 

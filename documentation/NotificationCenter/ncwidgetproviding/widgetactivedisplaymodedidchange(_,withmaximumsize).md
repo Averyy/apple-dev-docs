@@ -23,7 +23,7 @@ optional func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisp
 - (void) widgetActiveDisplayModeDidChange:(NCWidgetDisplayMode) activeDisplayMode withMaximumSize:(CGSize) maxSize;
 ```
 
-#### Discussion
+## Discussion
 
 You might implement this method if your widget should change its [`preferredContentSize`](../../UIKit/uiviewcontroller/preferredcontentsize.md) value to better accommodate the new display mode.
 

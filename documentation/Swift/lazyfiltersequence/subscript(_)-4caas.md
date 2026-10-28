@@ -23,7 +23,7 @@ subscript(bounds: Range<LazyFilterSequence<Base>.Index>) -> LazyFilterSequence<B
 
 Available when `Base` conforms to `Collection`.
 
-#### Overview
+## Overview
 
 For example, using a `PartialRangeFrom` range expression with an array accesses the subrange from the start of the range expression until the end of the array.
 

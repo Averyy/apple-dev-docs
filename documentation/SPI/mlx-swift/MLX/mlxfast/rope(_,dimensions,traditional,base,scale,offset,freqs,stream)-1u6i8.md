@@ -17,11 +17,11 @@ Optimized implementation of `NN.RoPE` with array offset for batched inference.
 static func RoPE(_ array: MLXArray, dimensions: Int, traditional: Bool, base: Float?, scale: Float, offset: MLXArray, freqs: MLXArray? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 The input with rotary positional encoding applied.
 
-#### Discussion
+## Discussion
 
 This overload accepts an array offset, allowing different position offsets for each sequence in a batch. The offset can be a scalar array or a vector with length matching the batch size.
 

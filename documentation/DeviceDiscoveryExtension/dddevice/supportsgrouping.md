@@ -23,7 +23,7 @@ var supportsGrouping: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL supportsGrouping;
 ```
 
-#### Discussion
+## Discussion
 
 This property provides a convenient way to send the same media stream to multiple devices and list them as a group in the AirPlay UI ([`AVRoutePickerView`](../../AVKit/avroutepickerview.md)). For example, a set of speakers arranged around the room can implement stereo playback by each playing different audio channels from an audio stream.
 

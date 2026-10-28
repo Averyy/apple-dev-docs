@@ -25,7 +25,7 @@ string ImageType
 - `SVG`: Scalable Vector Graphics format.
 - `WEBP`: WebP image format.
 
-#### Discussion
+## Discussion
 
 The `ImageType` identifies the image file format of an [`Asset`](./asset.md). The system infers the value from the uploaded file and returns it in the asset record. The API caller doesn’t set it directly.
 

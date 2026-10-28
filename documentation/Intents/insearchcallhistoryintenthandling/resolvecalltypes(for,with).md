@@ -29,7 +29,7 @@ optional func resolveCallTypes(for intent: INSearchCallHistoryIntent) async -> I
 - (void) resolveCallTypesForSearchCallHistory:(INSearchCallHistoryIntent *) intent withCompletion:(void (^)(INCallRecordTypeOptionsResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to let SiriKit know which types of calls you can search. Your implementation should provide a successful resolution for the call types you support and an unsupported resolution for any call types you don’t support.
 

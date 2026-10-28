@@ -19,7 +19,7 @@ func setPassword(_ password: String!)
 - (void) setPassword:(NSString *) password;
 ```
 
-#### Discussion
+## Discussion
 
 This method is optional. If you don’t call this method, the keychain save panel displays a password-entry dialog.
 

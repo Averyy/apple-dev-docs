@@ -23,7 +23,7 @@ A single test case from a parameterized [`Test`](../test.md).
 struct Case
 ```
 
-#### Overview
+## Overview
 
 A test case represents a test run with a particular combination of inputs. Tests that are *not* parameterized map to a single instance of [`Test.Case`](./case.md).
 

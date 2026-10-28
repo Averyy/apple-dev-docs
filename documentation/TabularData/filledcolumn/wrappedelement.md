@@ -21,7 +21,7 @@ The type of the column’s elements that defines an associated type for the opti
 typealias WrappedElement = Base.WrappedElement
 ```
 
-#### Discussion
+## Discussion
 
 See [`OptionalColumnProtocol`](../optionalcolumnprotocol.md) for more information.
 

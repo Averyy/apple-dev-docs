@@ -26,7 +26,7 @@ class func useStoredAccessor() -> Bool
 + (BOOL) useStoredAccessor;
 ```
 
-#### Discussion
+## Discussion
 
 Returning [`NO`](../no.md) causes the stored value methods to use the same accessor method or instance variable search order as the corresponding basic key-value coding methods ([`value(forKey:)`](./value%28forkey%29.md) and [`takeValue(_:forKey:)`](./takevalue%28_,forkey%29.md)). The default implementation returns [`YES`](../yes.md).
 

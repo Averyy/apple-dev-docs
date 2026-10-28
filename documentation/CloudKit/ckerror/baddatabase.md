@@ -21,7 +21,7 @@ An error that occurs when the operation can’t complete for the specified datab
 static var badDatabase: CKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system submitted the operation to the wrong database. Make sure you aren’t submitting a share operation to the public database, or a record zone create operation to the shared database.
 

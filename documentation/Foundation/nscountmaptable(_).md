@@ -25,7 +25,7 @@ func NSCountMapTable(_ table: NSMapTable<AnyObject, AnyObject>) -> Int
 extern NSUInteger NSCountMapTable(NSMapTable *table);
 ```
 
-#### Return Value
+## Return Value
 
 The number of key-value pairs currently in `table`.
 

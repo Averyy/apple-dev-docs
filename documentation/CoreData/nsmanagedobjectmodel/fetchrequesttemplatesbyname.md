@@ -25,7 +25,7 @@ var fetchRequestTemplatesByName: [String : NSFetchRequest<any NSFetchRequestResu
 @property (copy, readonly) NSDictionary<NSString *,NSFetchRequest *> * fetchRequestTemplatesByName;
 ```
 
-#### Discussion
+## Discussion
 
 If the template contains a predicate with substitution variables, you should instead use [`fetchRequestFromTemplate(withName:substitutionVariables:)`](./fetchrequestfromtemplate%28withname,substitutionvariables%29.md) to create a new fetch request.
 

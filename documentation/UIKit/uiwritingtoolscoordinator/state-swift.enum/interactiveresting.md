@@ -26,7 +26,7 @@ UIWritingToolsCoordinatorStateInteractiveResting
 
 - [Adding Writing Tools support to a custom UIKit view](../../adding-writing-tools-support-to-a-custom-uiview.md)
 
-#### Discussion
+## Discussion
 
 When someone initially selects a tool with an interactive experience, the coordinator transitions briefly to this state and starts the operation. The coordinator transitions swiftly to the [`UIWritingToolsCoordinator.State.interactiveStreaming`](./interactivestreaming.md) state when it submits the request and delivers the results to your view. When it finishes delivering the results, it transitions back to the `interactiveResting` state and awaits further commands. If the person accepts the changes or dismisses the Writing Tools UI, the coordinator transitions from this state to the [`UIWritingToolsCoordinator.State.inactive`](./inactive.md) state.
 

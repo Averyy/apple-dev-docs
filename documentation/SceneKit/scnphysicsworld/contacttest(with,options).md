@@ -25,11 +25,11 @@ func contactTest(with body: SCNPhysicsBody, options: [SCNPhysicsWorld.TestOption
 - (NSArray<SCNPhysicsContact *> *) contactTestWithBody:(SCNPhysicsBody *) body options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`SCNPhysicsContact`](../scnphysicscontact.md) objects describing contacts between the specified body and any others, or `nil` if the body is not in contact with any other bodies.
 
-#### Discussion
+## Discussion
 
 SceneKit sends messages to the physics world’s contactdelegate object only when collisions occur between bodies whose [`collisionBitMask`](../scnphysicsbody/collisionbitmask.md) and [`categoryBitMask`](../scnphysicsbody/categorybitmask.md) properties overlap, and only for collisions between certain types of bodies. (For details, see [`SCNPhysicsBodyType`](../scnphysicsbodytype.md).) Use this method to directly test for all contacts between one body and any other bodies at a time of your choosing. For example, to implement a game with a “wall jump” effect, you could call this method when the player presses the jump button to see if the player character is in contact with any walls.
 

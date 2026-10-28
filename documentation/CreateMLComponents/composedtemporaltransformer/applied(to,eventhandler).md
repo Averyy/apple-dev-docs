@@ -21,7 +21,7 @@ Performs the composed transformation on an input sequence.
 func applied<S>(to input: S, eventHandler: EventHandler? = nil) async throws -> ComposedTemporalTransformer<Inner, Outer>.OutputSequence where S : TemporalSequence, Inner.Input == S.Feature
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence produced by applying the transformation to the input.
 

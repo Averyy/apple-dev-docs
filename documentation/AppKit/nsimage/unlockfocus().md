@@ -21,7 +21,7 @@ func unlockFocus()
 - (void) unlockFocus;
 ```
 
-#### Discussion
+## Discussion
 
 This message must be sent after a successful [`lockFocus()`](./lockfocus%28%29.md) or [`lockFocusOnRepresentation:`](./lockfocusonrepresentation_.md) message and the completion of any intermediate drawing commands. This method restores the focus to the previous owner, if any.
 

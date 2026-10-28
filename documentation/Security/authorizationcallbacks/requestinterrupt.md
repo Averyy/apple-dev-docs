@@ -21,11 +21,11 @@ Requests the authorization engine to interrupt the currently active authorizatio
 int (*)(struct __OpaqueAuthorizationEngine *) RequestInterrupt;
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Possible results are [`errAuthorizationSuccess`](../errauthorizationsuccess.md) (no error) and [`errAuthorizationInternal`](../errauthorizationinternal.md) (Security Server internal error).
 
-#### Discussion
+## Discussion
 
 When you call this function, the security engine calls the [`MechanismDeactivate`](../authorizationplugininterface/mechanismdeactivate.md) function for your plug-in’s currently-active mechanism; that is, the mechanism that was last invoked and that has not yet called the [`SetResult`](./setresult.md) function to report its result. Your mechanism should then stop any active processing and call the [`DidDeactivate`](./diddeactivate.md) function. When all mechanisms are inactive (that is, they have called either [`SetResult`](./setresult.md) or [`DidDeactivate`](./diddeactivate.md)), the authorization engine calls the [`MechanismInvoke`](../authorizationplugininterface/mechanisminvoke.md) function for the mechanism that called [`RequestInterrupt`](./requestinterrupt.md) so that it can resume the authorization process from that point. After all mechanisms have called [`SetResult`](./setresult.md), the authorization engine calls each mechanism’s [`MechanismDestroy`](../authorizationplugininterface/mechanismdestroy.md) function.
 

@@ -22,7 +22,7 @@ var mediaTypes: [String] { get set }
 @property (nonatomic, copy) NSArray<NSString *> * mediaTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the media types you assign to this property, the picker displays a dedicated interface for still images or movies, or a selection control that lets the user choose the picker interface. Before setting this property, check which media types are available by calling the [`availableMediaTypes(for:)`](./availablemediatypes%28for%29.md) class method.
 

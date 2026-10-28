@@ -23,7 +23,7 @@ var userName: String { get }
 @property (nonatomic, copy, readonly) NSString * userName;
 ```
 
-#### Discussion
+## Discussion
 
 The passkey reports its `userName` value as its [`user`](../ascredentialidentity/user.md).
 

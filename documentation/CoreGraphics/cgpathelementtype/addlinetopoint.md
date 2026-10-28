@@ -25,7 +25,7 @@ case addLineToPoint
 kCGPathElementAddLineToPoint
 ```
 
-#### Discussion
+## Discussion
 
 The element holds a single point for the destination. See the function [`CGPathAddLineToPoint`](../cgpathaddlinetopoint.md).
 

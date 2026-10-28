@@ -19,7 +19,7 @@ func cell(withTag tag: Int) -> NSCell?
 - (NSCell *) cellWithTag:(NSInteger) tag;
 ```
 
-#### Return Value
+## Return Value
 
 The last (when viewing the matrix as a row-ordered array) [`NSCell`](../nscell.md) object that has a tag matching `anInt`, or `nil` if no such cell exists
 

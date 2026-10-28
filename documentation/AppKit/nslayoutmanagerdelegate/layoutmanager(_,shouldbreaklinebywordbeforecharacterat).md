@@ -19,7 +19,7 @@ optional func layoutManager(_ layoutManager: NSLayoutManager, shouldBreakLineByW
 - (BOOL) layoutManager:(NSLayoutManager *) layoutManager shouldBreakLineByWordBeforeCharacterAtIndex:(NSUInteger) charIndex;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the current line break point is acceptable; [`false`](../../Swift/false.md) if the layout manager should find the next break point opportunity before `charIndex`.
 

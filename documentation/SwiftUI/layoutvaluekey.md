@@ -21,7 +21,7 @@ A key for accessing a layout value of a layout container’s subviews.
 protocol LayoutValueKey
 ```
 
-#### Overview
+## Overview
 
 If you create a custom layout by defining a type that conforms to the [`Layout`](./layout.md) protocol, you can also create custom layout values that you set on individual views, and that your container view can access to guide its layout behavior. Your custom values resemble the built-in layout values that you set with view modifiers like [`layoutPriority(_:)`](./view/layoutpriority%28_%29.md) and [`zIndex(_:)`](./view/zindex%28_%29.md), but have a purpose that you define.
 
@@ -35,7 +35,7 @@ private struct Flexibility: LayoutValueKey {
 
 The Swift compiler infers this particular key’s associated type as an optional [`CGFloat`](../CoreFoundation/cgfloat-swift.struct.md) from this definition.
 
-##### Set a value on a view
+### Set a value on a view
 
 Set the value on a view by adding the [`layoutValue(key:value:)`](./view/layoutvalue%28key,value%29.md) view modifier to the view. To make your custom value easier to work with, you can do this in a convenience modifier in an extension of the [`View`](./view.md) protocol:
 
@@ -59,7 +59,7 @@ BasicVStack {
 
 Any view that you don’t explicitly set a value for uses the default value, as with the first [`Text`](./text.md) view, above.
 
-##### Retrieve a value during layout
+### Retrieve a value during layout
 
 Access a custom layout value using the key as an index on subview’s proxy (an instance of [`LayoutSubview`](./layoutsubview.md)) and use the value to make decisions about sizing, placement, or other layout operations. For example, you might read the flexibility value in your layout view’s [`sizeThatFits(_:)`](./layoutsubview/sizethatfits%28_%29.md) method, and adjust your size calculations accordingly:
 

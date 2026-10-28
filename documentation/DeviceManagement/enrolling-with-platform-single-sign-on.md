@@ -4,7 +4,7 @@
 
 Authenticate users during Automated Device Enrollment using Platform Single Sign-on.
 
-#### Overview
+## Overview
 
 Platform Single Sign-on (Platform SSO) allows a device management service to configure SSO extensions that integrate with the macOS login window, enabling seamless access to apps and websites immediately after logging in without reentering credentials. Local account passwords can optionally stay in sync with the identity provider (IdP), and users can still unlock their Mac using Touch ID or Apple Watch.
 

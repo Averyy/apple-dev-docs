@@ -19,7 +19,7 @@ The limiting value that helps avoid spikes at junctions between connected line s
 @property CGFloat miterLimit;
 ```
 
-#### Discussion
+## Discussion
 
 The miter limit helps you avoid spikes in paths that use the [`CGLineJoin.miter`](../../CoreGraphics/cglinejoin/miter.md) join style. If the ratio of the miter length—that is, the diagonal length of the miter join—to the line thickness exceeds the miter limit, the joint is converted to a bevel join. The default miter limit is 10, which results in the conversion of miters whose angle at the joint is less than 11 degrees.
 

@@ -25,7 +25,7 @@ typealias ResamplingFilter = UnsafeMutableRawPointer
 typedef void * ResamplingFilter;
 ```
 
-#### Discussion
+## Discussion
 
 You pass a resampling filter callback to a shear function. The resampling filter pointer can point to a structure that contains a function, rows of precalculated values, flag settings, and so on. The shear function requires that the structure contains a scale factor.
 

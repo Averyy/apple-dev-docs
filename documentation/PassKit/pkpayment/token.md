@@ -24,7 +24,7 @@ var token: PKPaymentToken { get }
 @property (nonatomic, strong, readonly, nonnull) PKPaymentToken * token;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the payment data structure, see [Payment token format reference](../payment-token-format-reference.md).
 

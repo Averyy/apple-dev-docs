@@ -14,7 +14,7 @@ Render advanced 3D graphics and compute data in parallel with graphics processor
 - tvOS 9.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 The Metal framework gives your app direct access to a device’s graphics processing unit (GPU). With Metal, apps can leverage a GPU to quickly render complex scenes and run computational tasks in parallel. For example, apps in these categories use Metal to maximize their performance:
 

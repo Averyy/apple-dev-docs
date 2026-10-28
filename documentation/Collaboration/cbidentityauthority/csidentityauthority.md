@@ -15,11 +15,11 @@ Returns an identity authority for use with the Core Services Identity API.
 @property (readonly) CSIdentityAuthorityRef CSIdentityAuthority;
 ```
 
-#### Return Value
+## Return Value
 
 The opaque authority object for use with the Core Services Identity API.
 
-#### Discussion
+## Discussion
 
 This method, along with [`identityAuthorityWithCSIdentityAuthority:`](./identityauthoritywithcsidentityauthority_.md), is used for interoperability with the Core Services Identity API.
 

@@ -28,7 +28,7 @@ func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsCoordinato
 
 - [Adding Writing Tools support to a custom AppKit view](../../adding-writing-tools-support-to-a-custom-nsview.md)
 
-#### Discussion
+## Discussion
 
 At the start of every operation, the [`NSWritingToolsCoordinator`](../../nswritingtoolscoordinator.md) object calls this method to request the text to evaluate. Use this method to create one or more [`NSWritingToolsCoordinator.Context`](../context.md) objects with your view’s text. Create only one [`NSWritingToolsCoordinator.Context`](../context.md) object if your view has only one text storage object. If your view contains multiple text storage objects, create separate [`NSWritingToolsCoordinator.Context`](../context.md) objects for each text storage object. Writing Tools returns updates for each context object separately, making it easier for you to incorporate changes into the correct text storage object. Don’t create multiple context objects if your view has only one text storage object.
 

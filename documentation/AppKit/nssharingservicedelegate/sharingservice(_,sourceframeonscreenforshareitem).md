@@ -20,11 +20,11 @@ optional func sharingService(_ sharingService: NSSharingService, sourceFrameOnSc
 - (NSRect) sharingService:(NSSharingService *) sharingService sourceFrameOnScreenForShareItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle, in screen coordinates, to display the transition.
 
-#### Discussion
+## Discussion
 
 The following is an example implementation of this method:
 

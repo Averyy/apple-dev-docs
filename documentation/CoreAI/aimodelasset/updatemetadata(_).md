@@ -19,11 +19,11 @@ Updates the asset metadata.
 mutating func updateMetadata(_ updates: (inout AIModelAsset.Metadata) throws -> Void) throws
 ```
 
-#### Discussion
+## Discussion
 
 Pass a closure that takes the existing metadata and updates it. After the closure executes, this method writes the new metadata to the model asset on disk.
 
-#### Example
+## Example
 
 ```swift
 var asset = try AIModelAsset(contentsOf: input)

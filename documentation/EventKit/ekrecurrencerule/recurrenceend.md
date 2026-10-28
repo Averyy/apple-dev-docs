@@ -25,7 +25,7 @@ var recurrenceEnd: EKRecurrenceEnd? { get set }
 @property (nonatomic, copy, nullable) EKRecurrenceEnd * recurrenceEnd;
 ```
 
-#### Discussion
+## Discussion
 
 This can be represented by an end date or a number of occurrences.
 

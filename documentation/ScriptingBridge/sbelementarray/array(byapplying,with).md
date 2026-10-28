@@ -20,11 +20,11 @@ func array(byApplying aSelector: Selector, with argument: Any) -> [Any]
 - (NSArray<id> *) arrayByApplyingSelector:(SEL) aSelector withObject:(id) argument;
 ```
 
-#### Return Value
+## Return Value
 
 A new array containing the results of sending the `selector` message to each object in the receiver, starting with the first object and continuing through the element array to the last object.
 
-#### Discussion
+## Discussion
 
 The method identified by `selector` must take a single argument—whose value is provided in `argument`—and must return an object. It should not have the side effect of modifying the receiving array. The order of the items in the result array corresponds to the order of the items in the original array.
 

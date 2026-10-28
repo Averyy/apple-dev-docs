@@ -25,7 +25,7 @@ let kCGImagePropertyGIFUnclampedDelayTime: CFString
 extern CFStringRef const kCGImagePropertyGIFUnclampedDelayTime;
 ```
 
-#### Discussion
+## Discussion
 
 This value may be `0` milliseconds or higher. Unlike the [`kCGImagePropertyGIFDelayTime`](./kcgimagepropertygifdelaytime.md) property, this value is not clamped at the low end of the range.
 

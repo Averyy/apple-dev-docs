@@ -19,7 +19,7 @@ static var showsCopies: NSPrintPanel.Options { get }
 NSPrintPanelShowsCopies
 ```
 
-#### Discussion
+## Discussion
 
 This field is separate from any accessory views.
 

@@ -25,11 +25,11 @@ func keysSortedByValue(using comparator: Selector) -> [Any]
 - (NSArray<id> *) keysSortedByValueUsingSelector:(SEL) comparator;
 ```
 
-#### Return Value
+## Return Value
 
 An array of the dictionary’s keys, in the order they would be in if the dictionary were sorted by its values.
 
-#### Discussion
+## Discussion
 
 Pairs of dictionary values are compared using the comparison method specified by `comparator`; the `comparator` message is sent to one of the values and has as its single argument the other value from the dictionary.
 

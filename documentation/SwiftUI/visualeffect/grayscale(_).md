@@ -21,11 +21,11 @@ Adds a grayscale effect to the view.
 func grayscale(_ amount: Double) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 An effect that reduces the intensity of colors in the view.
 
-#### Discussion
+## Discussion
 
 A grayscale effect reduces the intensity of colors in the view.
 

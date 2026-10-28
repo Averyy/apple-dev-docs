@@ -13,11 +13,11 @@
 errno_t mbuf_inet6_cksum(mbuf_t mbuf, int protocol, u_int32_t offset, u_int32_t length, u_int16_t *csum);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 @discussions Calculates 16-bit 1's complement Internet checksum of the transport segment with or without the pseudo header checksum of a given IPv6 packet. If the caller specifies a non-zero transport protocol, the checksum returned will also include the pseudo header checksum for the corresponding transport header. Otherwise, no header parsing will be done and the caller may use this to calculate the Internet checksum of an arbitrary span of data.
 

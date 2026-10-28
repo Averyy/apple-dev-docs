@@ -25,7 +25,7 @@ func start()
 - (void) start;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method updates the execution state of the operation and calls the receiver’s [`main()`](./main%28%29.md) method. This method also performs several checks to ensure that the operation can actually run. For example, if the receiver was cancelled or is already finished, this method simply returns without calling [`main()`](./main%28%29.md). (In OS X v10.5, this method throws an exception if the operation is already finished.) If the operation is currently executing or is not ready to execute, this method throws an `NSInvalidArgumentException` exception. In OS X v10.5, this method catches and ignores any exceptions thrown by your [`main()`](./main%28%29.md) method automatically. In macOS 10.6 and later, exceptions are allowed to propagate beyond this method. You should never allow exceptions to propagate out of your [`main()`](./main%28%29.md) method.
 

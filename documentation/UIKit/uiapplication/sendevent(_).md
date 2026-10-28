@@ -23,7 +23,7 @@ func sendEvent(_ event: UIEvent)
 - (void) sendEvent:(UIEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 If you require it, you can intercept incoming events by subclassing [`UIApplication`](../uiapplication.md) and overriding this method. For every event you intercept, you must dispatch it by calling `[super sendEvent:event]` after handling the event in your implementation.
 

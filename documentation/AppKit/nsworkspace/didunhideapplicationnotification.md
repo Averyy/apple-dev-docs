@@ -19,7 +19,7 @@ class let didUnhideApplicationNotification: NSNotification.Name
 extern NSNotificationName const NSWorkspaceDidUnhideApplicationNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the shared [`NSWorkspace`](../nsworkspace.md) instance. The `userInfo` dictionary contains the [`applicationUserInfoKey`](./applicationuserinfokey.md) key with a corresponding instance of [`NSRunningApplication`](../nsrunningapplication.md) that represents the affected app.
 

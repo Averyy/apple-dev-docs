@@ -15,11 +15,11 @@ A single row in a Brands (Apple Maps) ad group report, pairing ad group metadata
 object BrandsAdGroupReportRow
 ```
 
-#### Discussion
+## Discussion
 
 The `BrandsAdGroupReportRow` object is the `brands` counterpart to [`AppsAdGroupReportRow`](./appsadgroupreportrow.md). The `metadata` field captures ad group identifiers and configuration at report time. The `totalMetrics` field contains the aggregated performance figures across the full reporting period.
 
-##### Example
+### Example
 
 ```json
 {

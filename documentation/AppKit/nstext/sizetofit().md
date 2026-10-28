@@ -19,7 +19,7 @@ func sizeToFit()
 - (void) sizeToFit;
 ```
 
-#### Discussion
+## Discussion
 
 The text view will not be sized any smaller than its minimum size, however.
 

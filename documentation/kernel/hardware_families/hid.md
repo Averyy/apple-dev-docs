@@ -5,7 +5,7 @@
 
 Implement a driver that interacts with human interface devices, such as mice and keyboards.
 
-#### Overview
+## Overview
 
 The use of kernel extensions for HID drivers is deprecated. Instead, create a DriverKit extension using [HIDDriverKit](../../HIDDriverKit/HIDDriverKit.md).
 

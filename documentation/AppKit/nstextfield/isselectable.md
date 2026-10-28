@@ -19,7 +19,7 @@ var isSelectable: Bool { get set }
 @property (getter=isSelectable) BOOL selectable;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the text field becomes selectable but not editable. Use [`isEditable`](./iseditable.md) to make the text field selectable and editable. If [`false`](../../Swift/false.md), the text is neither editable nor selectable.
 

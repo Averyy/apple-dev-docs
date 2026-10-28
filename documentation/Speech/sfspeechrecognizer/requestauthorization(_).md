@@ -27,7 +27,7 @@ class func requestAuthorization(_ handler: @escaping (SFSpeechRecognizerAuthoriz
 
 - [Asking Permission to Use Speech Recognition](../asking-permission-to-use-speech-recognition.md)
 
-#### Discussion
+## Discussion
 
 Call this method before performing any other tasks associated with speech recognition. This method executes asynchronously, returning shortly after you call it. At some point later, the system calls the provided `handler` block with the results.
 

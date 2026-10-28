@@ -24,7 +24,7 @@ var threadgroupMemoryDataSize: Int { get }
 @property (readonly) NSUInteger threadgroupMemoryDataSize;
 ```
 
-#### Discussion
+## Discussion
 
 If the argument is not a threadgroup, querying this property is a fatal error. The Metal device determines this value.
 

@@ -21,7 +21,7 @@ Show all points of interest except those belonging to certain categories using t
 static func excluding(_ categories: MKPointOfInterestCategory...) -> PointOfInterestCategories
 ```
 
-#### Return Value
+## Return Value
 
 Returns a set of point of interest categories to exclude.
 

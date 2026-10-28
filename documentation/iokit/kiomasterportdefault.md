@@ -20,7 +20,7 @@ let kIOMasterPortDefault: mach_port_t
 const mach_port_t kIOMasterPortDefault;
 ```
 
-#### Discussion
+## Discussion
 
 When specifying a primary port to IOKit functions, the NULL argument indicates "use the default". This is a synonym for NULL, if you'd rather use a named constant.
 

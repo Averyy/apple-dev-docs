@@ -25,7 +25,7 @@ string SupportedOS
 - `SUPPORTED_OS_WATCHOS`
 - `SUPPORTED_OS_VISIONOS`
 
-#### Possible Values
+## Possible Values
 
 - `SUPPORTED_OS_IOS` - iOS
 - `SUPPORTED_OS_IPADOS` - iPadOS

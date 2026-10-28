@@ -25,7 +25,7 @@ enum SCNSceneSourceStatus
 enum SCNSceneSourceStatus : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use the information provided by these constants to describe the scene loading process in your app’s user interface. Because this enumeration leaves room for more detailed progress reports, you should compare the `status` parameter of a [`SCNSceneSourceStatusHandler`](./scnscenesourcestatushandler.md) block against these values for ordering, not for equality, as in the following example handler:
 

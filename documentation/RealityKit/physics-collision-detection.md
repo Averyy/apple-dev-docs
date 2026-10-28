@@ -5,7 +5,7 @@
 
 Determine when entities collide with each other or the environment.
 
-#### Overview
+## Overview
 
 RealityKit can automatically detect when two objects participating in the physics system collide with each other if both entities have a [`CollisionComponent`](./collisioncomponent.md) with at least one *collision shape*. Because doing collision detection with complex 3D models can be computationally expensive, collision shapes are simpler, invisible shapes RealityKit uses to detect collision, as well as doing hit testing, ray casts, and convex shape casts.
 

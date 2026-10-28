@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_MinOutputPresentationTimeStampOfFramesBeingDecod
 extern CFStringRef const kVTDecompressionPropertyKey_MinOutputPresentationTimeStampOfFramesBeingDecoded;
 ```
 
-#### Discussion
+## Discussion
 
 This value may change asynchronously as frames are output.
 

@@ -27,11 +27,11 @@ func location(in view: UIView?) -> CGPoint
 
 - [Implementing coalesced touch support in an app](../implementing-coalesced-touch-support-in-an-app.md)
 
-#### Return Value
+## Return Value
 
 A point specifying the location of the receiver in `view`.
 
-#### Discussion
+## Discussion
 
 This method returns the current location of a [`UITouch`](../uitouch.md) object in the coordinate system of the specified view. Because the touch object might have been forwarded to a view from another view, this method performs any necessary conversion of the touch location to the coordinate system of the specified view.
 

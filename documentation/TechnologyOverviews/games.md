@@ -6,6 +6,10 @@ Deliver fantastic game experiences to millions of players worldwide using Apple 
 
 Whether you’re starting your game from scratch or porting a game from another platform, Apple offers tools and technologies to help you tap into the high-performance graphics and amazing sound of Apple devices. Make your game experience even better by adding support for game controllers, leaderboards, achievements, challenges, and multiple players.
 
+## Game technologies
+
+[Read about game technologies](./games-technologies.md)
+
 Familiarize yourself with the tools and technologies you use to build games on Apple platforms. Apple provides the hardware, graphics, audio, social-gaming, and development and distribution systems you need to create the next generation of games. On visionOS, build unparalleled immersive games that incorporate real-world objects and infinite spaces. Distribute your game on the App Store to reach hundreds of millions of people around the world.
 
 - Create gorgeous graphics, and get the best graphics performance from Apple’s hardware using Metal.
@@ -15,9 +19,9 @@ Familiarize yourself with the tools and technologies you use to build games on A
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/game-technologies.png)
 
-#### Game technologies
+## Building your Windows game remotely on a Mac
 
-[Read about game technologies](./games-technologies.md)
+[Read about building your game remotely](./building-your-macos-game-remotely-from-your-pc.md)
 
 Catch mistakes early by setting up a project to remotely build a CMake-based project from within Microsoft Visual Studio on a target Mac system. Use this setup to [build your macOS game](./building-your-macos-game-remotely-from-your-pc.md) from your PC.
 
@@ -27,10 +31,6 @@ Catch mistakes early by setting up a project to remotely build a CMake-based pro
 - Debug connectivity issues between your systems.
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/building-your-Windows-game-remotely-on-a-Mac.png)
-
-#### Building your Windows game remotely on a Mac
-
-[Read about building your game remotely](./building-your-macos-game-remotely-from-your-pc.md)
 
 ## Topics
 

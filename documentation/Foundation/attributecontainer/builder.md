@@ -21,7 +21,7 @@ A type that iteratively builds attribute containers by setting attribute values.
 struct Builder<T> where T : AttributedStringKey
 ```
 
-#### Overview
+## Overview
 
 The [`AttributeContainer.Builder`](./builder.md) type lets you build [`AttributeContainer`](../attributecontainer.md) instances by chaining together several attributes in one expression. The following example shows this approach:
 

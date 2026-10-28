@@ -19,7 +19,7 @@ func insertArrangedSubview(_ view: NSView, at index: Int)
 - (void) insertArrangedSubview:(NSView *) view atIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 If index is already occupied, the stack view increases the size of the [`arrangedSubviews`](./arrangedsubviews.md) array and shifts all of its contents at the index and above to the next higher space in the array. Then the stack view stores the provided view at the index.
 

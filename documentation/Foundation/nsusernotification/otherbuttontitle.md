@@ -21,7 +21,7 @@ var otherButtonTitle: String { get set }
 @property (copy) NSString * otherButtonTitle;
 ```
 
-#### Discussion
+## Discussion
 
 This value should be localized as it is presented to the user. The string is truncated to a length appropriate for display and the property is modified to reflect the truncation.
 

@@ -19,7 +19,7 @@ var isSheet: Bool { get }
 @property (readonly, getter=isSheet) BOOL sheet;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the window has ever run as a modal sheet; otherwise, [`false`](../../Swift/false.md).
 

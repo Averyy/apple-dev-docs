@@ -16,7 +16,7 @@ An error that indicates the depth range values aren’t in reverse-z order.
 cp_layer_renderer_configuration_error_code_unsupported_forward_depth_range
 ```
 
-#### Discussion
+## Discussion
 
 When you call [`cp_drawable_set_depth_range`](../cp_drawable_set_depth_range.md), make sure the first value in your `depth_range` vector contains the value for the far plane. In addition, make sure the distance to the far plane is greater than the distance to the near plane.
 

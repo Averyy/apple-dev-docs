@@ -23,7 +23,7 @@ func parametricValue(_ parametricValue: CGFloat, offsetByDistance distanceStep: 
 - (CGFloat) parametricValue:(CGFloat) parametricValue offsetByDistance:(CGFloat) distanceStep;
 ```
 
-#### Return Value
+## Return Value
 
 A parametric value offset by `distanceStep` from `parametricValue`.
 

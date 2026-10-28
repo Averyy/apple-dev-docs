@@ -19,7 +19,7 @@ var defaultTabInterval: CGFloat { get }
 @property (readonly) CGFloat defaultTabInterval;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the default tab interval in points. Tabs after the last specified in [`tabStops`](./tabstops.md) are placed at integer multiples of this distance (if positive). Default value is 0.0.
 

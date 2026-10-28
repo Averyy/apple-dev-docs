@@ -16,7 +16,7 @@
 typedef uint16_t IOReportCategories;
 ```
 
-#### Discussion
+## Discussion
 
 Encapsulate important, multi-purpose “tags” for channels
 

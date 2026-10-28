@@ -22,7 +22,7 @@ A collection representing a contiguous subrange of this collection’s elements.
 associatedtype SubSequence : Collection = Slice<Self> where Self.Element == Self.SubSequence.Element, Self.SubSequence == Self.SubSequence.SubSequence
 ```
 
-#### Discussion
+## Discussion
 
 The default subsequence type for collections that don’t define their own is `Slice`.
 

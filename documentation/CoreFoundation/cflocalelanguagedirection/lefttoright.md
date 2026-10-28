@@ -23,7 +23,7 @@ case leftToRight
 kCFLocaleLanguageDirectionLeftToRight
 ```
 
-#### Discussion
+## Discussion
 
 The language direction is from left to right.
 

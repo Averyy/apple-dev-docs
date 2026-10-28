@@ -5,50 +5,50 @@
 
 Update your apps to use new features, and test your apps against API changes
 
-#### Overview
+## Overview
 
 Xcode 11.3 supports developing apps for iOS 13.3, iPadOS 13.3, tvOS 13.3, watchOS 6.1, and macOS Catalina 10.15.2. Xcode 11.3 supports on-device debugging for iOS 8 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 11.3 requires a Mac running macOS Mojave 10.14.4 or later.
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - You can configure the Touch Bar simulator to simulate either 1st generation or 2nd generation Touch Bars. (53885368)
 
-###### Known Issues
+#### Known Issues
 
 - When you create an Objective-C category file by choosing File > New > File…, the newly created file includes an import of the AppKit framework. This causes a compilation error for iOS, tvOS, and watchOS. (55977950) (FB7346800)
 
   **Workaround**: Remove the import of AppKit from the source file.
 
-##### Create ML
+### Create ML
 
-###### New Features
+#### New Features
 
 - A Recommender template is available in Create ML, joining the Image, Sound, Activity, Text and Tabular Classification, Object Detection, Word Tagging and Tabular Regression templates. (56912822)
 
-##### Interface Builder
+### Interface Builder
 
-###### Known Issues
+#### Known Issues
 
 - The color picker panel does not respond to choosing a color while a text field in the inspector has insertion focus. (56067005) (FB7358220)
 
   **Workaround**: Click the Interface Builder canvas to remove focus from the text field, then choose a color in the panel.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Setting the Selected Segment Tint Color of a segmented control in Interface Builder to a named color doesn’t cause a failure when the view loads on iOS 12 and earlier. (55254963, 55951374)
 - Fixed rendering issues for scenes with large simulated metric free-form sizes. (56920189)
 
-##### Previews
+### Previews
 
-###### New Features
+#### New Features
 
 - Xcode Previews now use a platform-provided scroll view for the canvas content when running on macOS Catalina 10.15.2 or newer. This change makes it possible to scroll through the canvas using a scroll wheel on a mouse, as well as by dragging horizontal and vertical scrollbars. (53962570)
 
-##### Simulator
+### Simulator
 
-###### Known Issues
+#### Known Issues
 
 - Third party “endpoint security” software may cause slow simulators, system freezes, or prevent debug processes from running in simulators reliably. This sometimes manifests as `debugserver` disconnections, or sends simulator applications a `SIGKILL` signal. (55853555)
 
@@ -58,9 +58,9 @@ Xcode 11.3 supports developing apps for iOS 13.3, iPadOS 13.3, tvOS 13.3, watchO
   **Workaround**: Try to boot the simulator again. Disabling WiFi or disconnecting from any active VPNs may resolve the problem.
 - When a new Mac Pro has multiple GPUs, Simulator assigns each booted simulator to one of the available GPUs. (56488185)
 
-##### Swift Packages
+### Swift Packages
 
-###### Resolved Issues
+#### Resolved Issues
 
 - You can now submit iOS, tvOS, or watchOS apps with a Swift Package that builds a dynamic library. (55564324) (FB7303066)
 

@@ -23,7 +23,7 @@ init(call callUUID: UUID, onHold: Bool)
 - (instancetype) initWithCallUUID:(NSUUID *) callUUID onHold:(BOOL) onHold;
 ```
 
-#### Return Value
+## Return Value
 
 A new action for the specified call UUID and whether the call is placed on hold.
 

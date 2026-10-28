@@ -23,7 +23,7 @@ var kCTFontTableOS2: Int { get }
 kCTFontTableOS2
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for OS/2 and Windows-specific metrics.
 

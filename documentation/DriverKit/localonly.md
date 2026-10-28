@@ -18,7 +18,7 @@ Tells the system that the class or method runs locally in the driver extensionâ€
 #define LOCALONLY
 ```
 
-#### Discussion
+## Discussion
 
 DriverKit adds this macro to classes and methods that cannot be called remotely by the kernel or other processes. Instead, you call the methods locally from your driverâ€™s process space. When applied to a class, the macro affects all methods of that class.
 

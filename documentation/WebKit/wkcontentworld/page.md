@@ -23,7 +23,7 @@ class var page: WKContentWorld { get }
 @property (class, nonatomic, readonly) WKContentWorld * pageWorld;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the content world for scripts that the current webpage executes. Be careful when manipulating variables in this content world. If you modify a variable with the same name as one the webpage uses, you may unintentionally disrupt the normal operation of that page.
 

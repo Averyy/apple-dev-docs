@@ -16,7 +16,7 @@
 kSENSE_KEY_MISCOMPARE
 ```
 
-#### Discussion
+## Discussion
 
 Device server indicates a miscompare condition.
 

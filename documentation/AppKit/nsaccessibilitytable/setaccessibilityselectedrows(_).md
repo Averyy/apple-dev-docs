@@ -19,7 +19,7 @@ optional func setAccessibilitySelectedRows(_ selectedRows: [any NSAccessibilityR
 - (void) setAccessibilitySelectedRows:(NSArray<id<NSAccessibilityRow>> *) selectedRows;
 ```
 
-#### Discussion
+## Discussion
 
 This method is the setter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilitySelectedRows`](../nsaccessibility-c.protocol/accessibilityselectedrows.md) property. Implementing this method allows the user to change the selected row using an accessibility client. Additionally, your class needs to send a [`selectedRowsChanged`](../nsaccessibility-swift.struct/notification/selectedrowschanged.md) notification whenever the table’s selected rows change.
 

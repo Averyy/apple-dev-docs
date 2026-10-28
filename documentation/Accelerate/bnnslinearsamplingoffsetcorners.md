@@ -25,7 +25,7 @@ var BNNSLinearSamplingOffsetCorners: BNNSLinearSamplingMode { get }
 BNNSLinearSamplingOffsetCorners
 ```
 
-#### Discussion
+## Discussion
 
 Given an input grid with a size of `Xin` and an output grid with a size `Xout`, this mode samples the grid using the following:
 

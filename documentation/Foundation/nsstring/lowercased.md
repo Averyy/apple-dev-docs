@@ -25,7 +25,7 @@ var lowercased: String { get }
 @property (copy, readonly) NSString * lowercaseString;
 ```
 
-#### Discussion
+## Discussion
 
 This property performs the canonical (non-localized) mapping. It is suitable for programming operations that require stable results not depending on the current locale.
 

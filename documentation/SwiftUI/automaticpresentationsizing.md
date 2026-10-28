@@ -21,7 +21,7 @@ The default presentation sizing, appropriate for the platform.
 struct AutomaticPresentationSizing
 ```
 
-#### Overview
+## Overview
 
 > **See Also**: [`automatic`](./presentationsizing/automatic.md)
 

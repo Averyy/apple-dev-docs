@@ -15,7 +15,7 @@ Determine whether this device supports the camera region provider.
 extern bool ar_camera_region_provider_is_supported();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the camera region provider is supported on this device, `false` otherwise.
 

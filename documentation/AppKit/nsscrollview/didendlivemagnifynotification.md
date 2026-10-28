@@ -19,7 +19,7 @@ class let didEndLiveMagnifyNotification: NSNotification.Name
 extern NSNotificationName const NSScrollViewDidEndLiveMagnifyNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the scroll view performing the magnification.
 

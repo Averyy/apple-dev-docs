@@ -17,7 +17,7 @@ Second revision of the restricted sandbox rules.
 case revision2
 ```
 
-#### Discussion
+## Discussion
 
 You can apply this revision to any of your app’s extensions but the system only enforces its restrictions for the web content and rendering extensions.
 

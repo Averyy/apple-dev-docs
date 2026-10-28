@@ -23,7 +23,7 @@ var matrix3x3: simd_float3x3 { get }
 static simd_float3x3 SPAffineTransform3DFloatGet3x3Matrix(SPAffineTransform3DFloat transform);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the first three columns of an affine transform’s underlying matrix.
 

@@ -19,7 +19,7 @@ A date that indicates when the billing cycle ends for a paid account.
 @property (nonatomic, copy, nullable) NSDate * subscriptionBillingCycleEndDate;
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this date as a heuristic to determine when to refresh billing status. If there is no existing billing cycle, this value should be `nil`.
 

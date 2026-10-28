@@ -23,7 +23,7 @@ typealias VTDecompressionMultiImageCapableOutputHandler = @Sendable (OSStatus, V
 typedef void (^)(int, enum VTDecodeInfoFlags, struct __CVBuffer *, struct OpaqueCMTaggedBufferGroup *, CMTime, CMTime) VTDecompressionMultiImageCapableOutputHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Pass a callback of this type to [`VTDecompressionSessionDecodeFrameWithMultiImageCapableOutputHandler`](./vtdecompressionsessiondecodeframewithmultiimagecapableoutputhandler.md) to handle the decompressed frame output. The system doesn’t necessarily invoke the callback in display order. If the multi-image decompression call returns an error, the system doesn’t call this block.
 

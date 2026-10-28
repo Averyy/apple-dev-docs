@@ -23,7 +23,7 @@ class BETextAlternatives
 @interface BETextAlternatives : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`BETextInput`](./betextinput.md) protocol provides your app an instance of this class as an argument to the  [`alternativesForSelectedText()`](./betextinput/alternativesforselectedtext%28%29.md) callback.
 

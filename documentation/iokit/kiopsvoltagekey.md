@@ -16,7 +16,7 @@ CFDictionary key for the current power source's electrical voltage.
 #define kIOPSVoltageKey
 ```
 
-#### Discussion
+## Discussion
 
 - Apple-defined power sources will publish this key.
 - For power source creators: Providing this key is RECOMMENDED.

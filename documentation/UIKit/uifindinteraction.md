@@ -27,7 +27,7 @@ class UIFindInteraction
 
 - [Building a desktop-class iPad app](./building-a-desktop-class-ipad-app.md)
 
-#### Overview
+## Overview
 
 Use a find interaction to add text-finding capabilities to your view.
 

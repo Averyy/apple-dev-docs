@@ -21,7 +21,7 @@ The requested operation fails because the system doesn’t support it.
 static var notSupported: MPError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 An example of this is trying to add a media item to a smart playlist.
 

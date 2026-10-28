@@ -19,7 +19,7 @@ static var knownSparseRanges: NSFileProviderMaterializationFlags { get }
 NSFileProviderMaterializationFlagsKnownSparseRanges
 ```
 
-#### Discussion
+## Discussion
 
 There are two reasons why your app may pass a sparse file to the [`fetchPartialContents(for:version:request:minimalRange:aligningTo:options:completionHandler:)`](../nsfileproviderpartialcontentfetching/fetchpartialcontents%28for,version,request,minimalrange,aligningto,options,completionhandler%29.md) method’s completion handler:
 

@@ -17,7 +17,7 @@ Container for `Data` backing of [`MLXArray`](../mlxarray.md).
 struct MLXArrayData
 ```
 
-##### See Also
+### See Also
 
 - [`asData(access:)`](./asdata%28access%29.md)
 

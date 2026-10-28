@@ -15,7 +15,7 @@ Hide the window toolbar in full screen mode by default. It will reveal itself wh
 static let onHover: WindowToolbarFullScreenVisibility
 ```
 
-#### Discussion
+## Discussion
 
 This has no effect if the toolbar is completely hidden, i.e. setting the visibility to `hidden` for `windowToolbar` placements using [`toolbarVisibility(_:for:)`](../view/toolbarvisibility%28_,for%29.md) will cause the toolbar to remain completely hidden, even in full screen.
 

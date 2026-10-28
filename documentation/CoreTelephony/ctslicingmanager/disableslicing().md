@@ -17,7 +17,7 @@ Disables network slicing for new connections.
 final func disableSlicing() async throws
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to stop using network slicing for your app. After calling this method, new network connections that your app establishes use the carrier’s default cellular internet without slice-specific routing.
 

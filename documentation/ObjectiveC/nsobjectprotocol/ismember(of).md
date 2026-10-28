@@ -26,11 +26,11 @@ func isMember(of aClass: AnyClass) -> Bool
 - (BOOL) isMemberOfClass:(Class) aClass;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the receiver is an instance of `aClass`, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 For example, in this code, [`isMember(of:)`](./ismember%28of%29.md) would return [`NO`](../no.md):
 

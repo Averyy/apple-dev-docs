@@ -20,7 +20,7 @@ case insufficientFeatures
 ARErrorCodeInsufficientFeatures
 ```
 
-#### Discussion
+## Discussion
 
 For more information about a session’s feature requirements, see [Managing Session Life Cycle and Tracking Quality](../../managing-session-life-cycle-and-tracking-quality.md).
 

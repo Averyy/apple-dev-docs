@@ -25,7 +25,7 @@ class LookupInfo
 @interface CKUserIdentityLookupInfo : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this object when you want to discover the identities of your app’s users with [`CKDiscoverUserIdentitiesOperation`](../ckdiscoveruseridentitiesoperation.md), or to create a share’s participants with [`CKFetchShareParticipantsOperation`](../ckfetchshareparticipantsoperation.md).
 

@@ -25,7 +25,7 @@ static var ioError: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 Some physical input or output error occurred. This error isn’t reported until you attempt a subsequent operation on the same file descriptor, and the error may be lost (overwritten) by subsequent errors.
 

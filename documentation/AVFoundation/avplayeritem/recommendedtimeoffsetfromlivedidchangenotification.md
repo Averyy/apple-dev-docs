@@ -25,7 +25,7 @@ class let recommendedTimeOffsetFromLiveDidChangeNotification: NSNotification.Nam
 extern NSNotificationName const AVPlayerItemRecommendedTimeOffsetFromLiveDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Register to observe notifications of this type to observe changes to the value of the [`recommendedTimeOffsetFromLive`](./recommendedtimeoffsetfromlive.md) property.
 

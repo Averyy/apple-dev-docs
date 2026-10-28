@@ -12,11 +12,11 @@ virtual IOReturn submitLogin(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess login has successlly begun.
 
-#### Overview
+## Overview
 
 This call begins the login process. The login object should be configured prior to this call. If kIOReturnSuccess is returned from this call then the loginCompletion routine will be called when the login completes (successfully or unsuccesfully).
 

@@ -15,7 +15,7 @@ A [`CloudKit.SubscriptionsResponse`](./cloudkit.subscriptionsresponse.md) object
 interface CloudKit.SubscriptionsResponse
 ```
 
-#### Overview
+## Overview
 
 The methods in the [`CloudKit.Database`](./cloudkit.database.md) class that operate on subscriptions return a `Promise` object that resolves to a [`CloudKit.SubscriptionsResponse`](./cloudkit.subscriptionsresponse.md) object if the operation is successful. You should not create instances of this class directly.
 

@@ -5,7 +5,7 @@
 
 Xcode lets you configure information about your SpriteKit Scene in your storyboard file. The following table lists the attributes you can configure in your storyboard and their meaning.
 
-#### Overview
+## Overview
 
 | Attribute | Description |
 | --- | --- |
@@ -13,7 +13,7 @@ Xcode lets you configure information about your SpriteKit Scene in your storyboa
 | Frame Rate | The desired frame rate for the scene’s animation. You can also set this value programmatically using the [`preferredFramesPerSecond`](./wkinterfaceskscene/preferredframespersecond.md) property. |
 | Paused | A checkbox indicating whether the scene is paused. If checked, the scene’s content is fixed onscreen. No actions are executed and no physics simulation is performed. You can also configure this value programmatically using the [`isPaused`](./wkinterfaceskscene/ispaused.md) property. |
 
-##### Enabling Full Screen Mode
+### Enabling Full Screen Mode
 
 By default, when a watchOS app is running, the system reserves a strip of space across the top of the screen to display the time. The app’s content is only displayed in the area below the time.
 

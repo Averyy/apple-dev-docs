@@ -19,7 +19,7 @@ var shouldDrawInsertionPoint: Bool { get }
 @property (readonly) BOOL shouldDrawInsertionPoint;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver should draw its insertion point, [`false`](../../Swift/false.md) otherwise.
 

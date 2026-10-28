@@ -24,7 +24,7 @@ var instanceTransform: CATransform3D { get set }
 @property CATransform3D instanceTransform;
 ```
 
-#### Discussion
+## Discussion
 
 This transform matrix is applied to instance `k-1` to produce instance `k`. The matrix is applied relative to the center of this layer.
 

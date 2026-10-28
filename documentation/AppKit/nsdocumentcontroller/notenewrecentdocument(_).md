@@ -19,7 +19,7 @@ func noteNewRecentDocument(_ document: NSDocument)
 - (void) noteNewRecentDocument:(NSDocument *) document;
 ```
 
-#### Discussion
+## Discussion
 
 This method constructs a URL and calls [`noteNewRecentDocumentURL(_:)`](./notenewrecentdocumenturl%28_%29.md). Subclasses might override this method to prevent certain documents or kinds of documents from getting into the list.
 

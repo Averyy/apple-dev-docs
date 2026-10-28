@@ -13,11 +13,11 @@ virtual bool allocateRange(
  IORangeScalarsize );
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the allocation was successful, else false.
 
-#### Overview
+## Overview
 
 This method allocates a range from the free list, given a set offset passed in.
 

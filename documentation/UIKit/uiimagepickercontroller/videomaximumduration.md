@@ -21,7 +21,7 @@ var videoMaximumDuration: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval videoMaximumDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is 10 minutes (600 seconds). When a user taps the Share button to send a movie to MMS, MobileMe, YouTube, or another destination, an appropriate duration limit and an appropriate video quality are enforced.
 

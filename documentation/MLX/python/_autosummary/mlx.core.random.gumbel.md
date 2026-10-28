@@ -6,21 +6,25 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 
 # mlx.core.random.gumbel
 
-**gumbel(*shape: Sequence[int] = []*, *dtype: Dtype | None = float32*, *key: array | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Sample from the standard Gumbel distribution.
+```python
+gumbel(shape: Sequence[int] = [], dtype: Dtype | None = float32, key: array | None = None, stream: StreamOrDevice = None) → array
+```
+
+Sample from the standard Gumbel distribution.
+
 The values are sampled from a standard Gumbel distribution
 which CDF `exp(-exp(-x))`.
 
-Parameters:
+**Parameters:**
 
-**shape** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – The shape of the output.
-**dtype** ([Dtype](mlx.core.Dtype.md#mlx.core.Dtype)*, **optional*) – The data type of the output.
+- **shape** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)([int](https://docs.python.org/3/builtins/functions.html#int))) – The shape of the output.
+- **dtype** ([Dtype](mlx.core.Dtype.md#mlx.core.Dtype), *optional*) – The data type of the output.
 Default: `float32`.
-**key** ([array](mlx.core.array.md#mlx.core.array)*, **optional*) – A PRNG key. Default: `None`.
+- **key** ([array](mlx.core.array.md#mlx.core.array), *optional*) – A PRNG key. Default: `None`.
 
-Returns:
-The `array` with shape `shape` and distributed according
+**Returns:**
+: The `array` with shape `shape` and distributed according
 to the Gumbel distribution.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

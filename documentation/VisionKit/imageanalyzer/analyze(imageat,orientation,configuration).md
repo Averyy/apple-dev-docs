@@ -19,7 +19,7 @@ Returns the data for providing a Live Text interaction with an image at a URL an
 final func analyze(imageAt url: URL, orientation: CGImagePropertyOrientation, configuration: ImageAnalyzer.Configuration) async throws -> ImageAnalysis
 ```
 
-#### Return Value
+## Return Value
 
 The data items that the analyzer finds in the image.
 

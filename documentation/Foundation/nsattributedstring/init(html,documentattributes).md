@@ -23,11 +23,11 @@ init?(html data: Data, documentAttributes dict: AutoreleasingUnsafeMutablePointe
 - (instancetype) initWithHTML:(NSData *) data documentAttributes:(NSDictionary<NSString *,id> **) dict;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized object, or `nil` if the data can’t be decoded.
 
-#### Discussion
+## Discussion
 
 > **Note**:  Apple discourages the use of this symbol. Use [`loadFromHTML(data:options:completionHandler:)`](./loadfromhtml%28data,options,completionhandler%29.md) instead.
 

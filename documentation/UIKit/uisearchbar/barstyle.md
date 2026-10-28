@@ -22,7 +22,7 @@ var barStyle: UIBarStyle { get set }
 @property (nonatomic) UIBarStyle barStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This property can be used together with [`searchBarStyle`](./searchbarstyle.md).
 

@@ -25,7 +25,7 @@ func nw_parameters_set_fast_open_enabled(_ parameters: nw_parameters_t, _ fast_o
 void nw_parameters_set_fast_open_enabled(nw_parameters_t parameters, bool fast_open_enabled);
 ```
 
-#### Discussion
+## Discussion
 
 When fast open is enabled on a connection, the application is expected to send its early data to be included with the handshake as idempotent data. This data can be sent before or after calling start.
 

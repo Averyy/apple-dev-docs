@@ -19,7 +19,7 @@ var model: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * model;
 ```
 
-#### Discussion
+## Discussion
 
 Model of the source. A nil value means a model name was not provided.
 

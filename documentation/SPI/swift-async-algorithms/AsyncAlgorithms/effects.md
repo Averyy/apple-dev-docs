@@ -10,7 +10,7 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 
 Lists the effects of all async algorithms.
 
-#### Overview
+## Overview
 
 | Type | Throws | Sendability |
 | --- | --- | --- |

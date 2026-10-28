@@ -24,7 +24,7 @@ The user-provided comments for this trait.
 var comments: [Comment] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an empty array.
 

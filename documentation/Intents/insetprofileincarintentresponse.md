@@ -24,7 +24,7 @@ class INSetProfileInCarIntentResponse
 @interface INSetProfileInCarIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 An [`INSetProfileInCarIntentResponse`](./insetprofileincarintentresponse.md) object contains the status of restoring one or more environment settings from a designated profile. You create instances of this class when confirming or handling a set profile in car intent.
 

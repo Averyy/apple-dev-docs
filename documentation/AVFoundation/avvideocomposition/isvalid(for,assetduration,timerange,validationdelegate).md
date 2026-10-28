@@ -24,7 +24,7 @@ func isValid(for tracks: [AVAssetTrack], assetDuration duration: CMTime, timeRan
 - (BOOL) isValidForTracks:(NSArray<AVAssetTrack *> *) tracks assetDuration:(CMTime) duration timeRange:(CMTimeRange) timeRange validationDelegate:(id<AVVideoCompositionValidationHandling>) validationDelegate;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the validation succeeds; otherwise; [`false`](../../Swift/false.md).
 

@@ -23,7 +23,7 @@ static func yield() async
 
 Available when `Success` is `Never` and `Failure` is `Never`.
 
-#### Discussion
+## Discussion
 
 A task can voluntarily suspend itself in the middle of a long-running operation that doesn’t contain any suspension points, to let other tasks run for a while before execution returns to this task.
 

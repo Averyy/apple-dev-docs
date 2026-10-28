@@ -24,7 +24,7 @@ func removeAllVocabularyStrings()
 - (void) removeAllVocabularyStrings;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes all strings (regardless of type) that you previously registered for this user using the [`setVocabularyStrings(_:of:)`](./setvocabularystrings%28_,of%29.md) method.
 

@@ -5,13 +5,13 @@
 
 Use scenes to present your app’s content on the vehicle’s built-in screen.
 
-#### Overview
+## Overview
 
 A scene manages your CarPlay-enabled app’s user interface, including the window that CarPlay displays on the vehicle’s screen. Navigation apps are the only app category that have access to this window, and use it to draw their map content. All other categories of apps use only the scene’s interface controller to manage their user interface.
 
 As CarPlay manages your app’s scene, you provide a scene delegate — an object that conforms to the [`CPTemplateApplicationSceneDelegate`](./cptemplateapplicationscenedelegate.md) protocol — that the system notifies about scene life cycle events. CarPlay creates your app’s scene and scene delegate when the user launches your app.
 
-##### Add a CarPlay Scene
+### Add a CarPlay Scene
 
 To add a CarPlay scene, provide its configuration in the scene manifest of your Xcode project’s `Info.plist` file. Specify your scene delegate’s class name as the value of the `UISceneDelegateClassName` key.
 
@@ -126,7 +126,7 @@ func templateApplicationScene(_ templateApplicationScene: CPTemplateApplicationS
 
 > ❗ **Important**:  Use the window’s root view controller to draw only map content. Don’t render alerts, overlays, or any other user interface elements. Use only the templates that the framework provides to create your app’s CarPlay user interface.
 
-##### Add a CarPlay Dashboard Scene
+### Add a CarPlay Dashboard Scene
 
 Navigation apps can add an additional scene entry to their scene manifest to enable their maps, upcoming maneuvers, and shortcut buttons to appear in the CarPlay Dashboard.
 

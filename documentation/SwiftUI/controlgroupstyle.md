@@ -21,7 +21,7 @@ Defines the implementation of all control groups within a view hierarchy.
 @preconcurrency protocol ControlGroupStyle
 ```
 
-#### Overview
+## Overview
 
 To configure the current `ControlGroupStyle` for a view hierarchy, use the [`controlGroupStyle(_:)`](./view/controlgroupstyle%28_%29.md) modifier.
 

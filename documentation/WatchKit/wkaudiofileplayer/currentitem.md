@@ -19,7 +19,7 @@ var currentItem: WKAudioFilePlayerItem? { get }
 @property (nonatomic, readonly, nullable) WKAudioFilePlayerItem * currentItem;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set at initialization time.
 

@@ -14,7 +14,7 @@
 kMPMaxAllocSize = 1024L * 1024 * 1024
 ```
 
-#### Discussion
+## Discussion
 
 The maximum allocation size: 1GB.
 

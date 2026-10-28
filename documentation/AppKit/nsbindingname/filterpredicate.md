@@ -19,7 +19,7 @@ static let filterPredicate: NSBindingName
 extern NSBindingName NSFilterPredicateBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

@@ -16,7 +16,7 @@ Prevents the system from sleeping automatically due to a lack of user activity.
 #define kIOPMAssertionTypePreventUserIdleSystemSleep
 ```
 
-#### Discussion
+## Discussion
 
 When asserted and set to level [`kIOPMAssertionLevelOn`](./api-1557096-assertion/kiopmassertionlevelon.md), will prevent the system from sleeping due to a period of idle user activity.
 

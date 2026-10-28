@@ -23,7 +23,7 @@ var arrangedSubviews: [UIView] { get }
 @property (nonatomic, copy, readonly) NSArray<__kindof UIView *> * arrangedSubviews;
 ```
 
-#### Discussion
+## Discussion
 
 The stack view ensures that the [`arrangedSubviews`](./arrangedsubviews.md) array is always a subset of its [`subviews`](../uiview/subviews.md) array. Therefore, whenever the [`addArrangedSubview(_:)`](./addarrangedsubview%28_%29.md) method is called, the stack view adds the view as a subview, if it isn’t already. Whenever an arranged view’s [`removeFromSuperview()`](../uiview/removefromsuperview%28%29.md) method is called, the stack view removes the view from its [`arrangedSubviews`](./arrangedsubviews.md) array.
 

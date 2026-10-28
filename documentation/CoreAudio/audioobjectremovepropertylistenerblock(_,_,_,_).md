@@ -20,11 +20,11 @@ func AudioObjectRemovePropertyListenerBlock(_ inObjectID: AudioObjectID, _ inAdd
 extern OSStatus AudioObjectRemovePropertyListenerBlock(AudioObjectID inObjectID, const AudioObjectPropertyAddress *inAddress, dispatch_queue_t inDispatchQueue, AudioObjectPropertyListenerBlock inListener);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Unregisters the given AudioObjectPropertyListenerBlock from receiving notifications when the given properties change.
 

@@ -23,7 +23,7 @@ func sec_protocol_options_add_pre_shared_key(_ options: sec_protocol_options_t, 
 void sec_protocol_options_add_pre_shared_key(sec_protocol_options_t options, dispatch_data_t psk, dispatch_data_t psk_identity);
 ```
 
-#### Discussion
+## Discussion
 
 Add a pre-shared key (PSK) and its identity to the options.
 

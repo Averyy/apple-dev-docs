@@ -17,7 +17,7 @@ The localized name of the merchant or corresponding loyalty program.
 var localizedName: String
 ```
 
-#### Discussion
+## Discussion
 
 Upon a successful read of the Value Added Services (VAS) information, the system displays this information to the customer.
 

@@ -15,7 +15,7 @@ Renders the button contained in the wrapper tag.
 void renderButton();
 ```
 
-#### Discussion
+## Discussion
 
 Use this function when the framework you’re using requires rerender support. Calling this function forces the render of the button found in the wrapper tag.
 

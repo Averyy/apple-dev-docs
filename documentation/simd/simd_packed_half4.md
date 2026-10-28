@@ -14,7 +14,7 @@ typealias simd_packed_half4 = SIMD4<Float16>
 typedef _Float16 __attribute__((ext_vector_type(4))) simd_packed_half4;
 ```
 
-#### Discussion
+## Discussion
 
 A vector of four 16-bit floating-point numbers with relaxed alignment.
 

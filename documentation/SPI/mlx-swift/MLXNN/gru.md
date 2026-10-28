@@ -17,7 +17,7 @@ A gated recurrent unit (GRU) RNN layer.
 class GRU
 ```
 
-#### Overview
+## Overview
 
 See [`init(inputSize:hiddenSize:bias:)`](./gru/init%28inputsize,hiddensize,bias%29.md)
 

@@ -10,13 +10,13 @@ Receive and provide file promises to support dragged app files and pasteboard op
 - macOS 10.15+
 - Xcode 13.3+
 
-#### Overview
+## Overview
 
 This sample code project creates a meme generator that combines an image and text into a composite meme image which can be exported as a JPEG. The sample shows you how to support both file URLs and file promises when accepting images from Mail, Safari, Photos, and other apps that support drag and drop. It also demonstrates how to provide file promises to other apps.
 
 Your app may need to support file promises because drag and drop on macOS uses an NSPasteboard, which is separate from the normal copy-and-paste clipboard. When dragging content that isnʼt yet a file on disk at the time dragging began, an app may put a file promise onto the pasteboard instead of a file URL, to avoid blocking the main thread. File promises are different from URLs because they can be read and written asynchronously at a later time, on a background queue separate from the main queue. macOS Sierra introduced modern APIs to handle file promises.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 To see this sample in action, build and run the project, then drag an image from another app or location, such as Finder, Mail, or Safari, into the app window. Dragging the image into the window imports it into a form the sample app can parse and consume. Add text to the image by clicking on the text button in the upper-right corner and typing. Reposition the text box by dragging and dropping it within the app window. Dragging the composite image outside the app window exports it as a JPEG.
 
@@ -39,7 +39,7 @@ In addition, a drag and drop involves just the image file’s URL, without a fil
 - Drag an image from Finder.
 - Drag an image from a Mail attachment.
 
-##### Support Image Import by Accepting File Promises
+### Support Image Import by Accepting File Promises
 
 When setting up the view that supports drag and drop, register drag types provided by [`NSFilePromiseReceiver`](./nsfilepromisereceiver.md). This registration allows the view to accept file promises that handle dragged images from Safari or Mail. The sample does this in the first view controller’s `viewDidLoad`.
 
@@ -69,7 +69,7 @@ case let fileURL as URL:
     self.handleFile(at: fileURL)
 ```
 
-##### Support Image Export by Providing File Promises
+### Support Image Export by Providing File Promises
 
 This sample creates and writes images into formats that other apps like Safari, Mail, and Finder can consume. It does this by providing an [`NSFilePromiseProvider`](./nsfilepromiseprovider.md) instance to the dragging pasteboard and conforming to [`NSFilePromiseProviderDelegate`](./nsfilepromiseproviderdelegate.md) by implementing three delegate methods.
 

@@ -25,7 +25,7 @@ var preferredMaxLayoutWidth: CGFloat { get set }
 @property (nonatomic) CGFloat preferredMaxLayoutWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 0, which means that line break mode will not be applied.
 

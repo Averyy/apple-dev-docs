@@ -20,7 +20,7 @@ struct FFCAPABILITIES
 struct FFCAPABILITIES;
 ```
 
-#### Overview
+## Overview
 
 This structure has no DirectInput equivalent.
 

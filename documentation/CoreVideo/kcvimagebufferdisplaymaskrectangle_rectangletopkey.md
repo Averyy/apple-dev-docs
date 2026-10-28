@@ -25,7 +25,7 @@ let kCVImageBufferDisplayMaskRectangle_RectangleTopKey: CFString
 extern CFStringRef const kCVImageBufferDisplayMaskRectangle_RectangleTopKey;
 ```
 
-#### Discussion
+## Discussion
 
 The top offset value is a [`CFNumber`](../CoreFoundation/cfnumber.md) of an unsigned 16-bit integer that’s less than the reference raster height value.
 

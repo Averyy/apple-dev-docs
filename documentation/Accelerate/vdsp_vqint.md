@@ -21,7 +21,7 @@ Calculates single-precision vector quadratic interpolation.
 extern void vDSP_vqint(const float *__A, const float *__B, vDSP_Stride __IB, float *__C, vDSP_Stride __IC, vDSP_Length __N, vDSP_Length __M);
 ```
 
-#### Discussion
+## Discussion
 
 Generates `C` by interpolating between neighboring values of `A` as controlled by values in `B`. The integer portion of each element in `B` is the zero-based index of the second element of a triple of adjacent values in vector `A`.
 

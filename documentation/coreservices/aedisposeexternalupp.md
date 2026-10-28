@@ -20,7 +20,7 @@ typealias AEDisposeExternalUPP = AEDisposeExternalProcPtr
 typedef AEDisposeExternalProcPtr AEDisposeExternalUPP;
 ```
 
-#### Discussion
+## Discussion
 
 See the [`AEDisposeExternalProcPtr`](./aedisposeexternalprocptr.md) callback function. 
 

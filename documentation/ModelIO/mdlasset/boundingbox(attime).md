@@ -24,11 +24,11 @@ func boundingBox(atTime time: TimeInterval) -> MDLAxisAlignedBoundingBox
 - (MDLAxisAlignedBoundingBox) boundingBoxAtTime:(NSTimeInterval) time;
 ```
 
-#### Return Value
+## Return Value
 
 The asset’s bounding box as of the specified time sample.
 
-#### Discussion
+## Discussion
 
 If an asset does not contain timed information, calling this method with any time sample is equivalent to reading the [`boundingBox`](./boundingbox.md) property.
 

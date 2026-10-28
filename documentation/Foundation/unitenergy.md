@@ -25,11 +25,11 @@ class UnitEnergy
 @interface NSUnitEnergy : NSDimension
 ```
 
-#### Overview
+## Overview
 
 You typically use instances of [`UnitEnergy`](./unitenergy.md) to represent specific quantities of energy using the [`NSMeasurement`](./nsmeasurement.md) class.
 
-##### Energy
+### Energy
 
 Energy is a fundamental property of matter than can be transferred and converted into different forms, such as kinetic, electric, and thermal. The SI unit for energy is the joule (J), which is derived as the work of one meter of displacement in the direction of a force of one newton (1J = 1N ∙ 1m). It can also be derived as the work required to displace an electric charge of one coulomb through an electrical potential difference of one volt (1J = 1C ∙ 1V), or the work required to produce one watt of power for one second (1J = 1W ∙ 1s). Energy is also commonly expressed in terms of the calorie (cal), or the energy needed to raise the temperature of one gram of water by one degree Celsius at a pressure of one atmosphere (1cal ≡ 4.184J).
 

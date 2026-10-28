@@ -15,7 +15,7 @@ A point that’s centered vertically on the leading-back edge of a view.
 static let leadingBack: UnitPoint3D
 ```
 
-#### Discussion
+## Discussion
 
 The leading edge appears on the left in a left-to-right language environment and on the right in a right-to-left environment.
 

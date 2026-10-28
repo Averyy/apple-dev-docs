@@ -26,7 +26,7 @@ class GCEventInteraction
 
 - [Discovering game controllers](./discovering-game-controllers.md)
 
-#### Overview
+## Overview
 
 On visionOS, users can interact with your app using a game controller. By default, the system converts game controller actions into pinch events and sends them to the view the user is gazing at, its gesture recognizers, and then up the responder chain.
 

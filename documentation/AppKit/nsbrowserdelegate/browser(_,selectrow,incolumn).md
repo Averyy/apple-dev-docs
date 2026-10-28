@@ -20,11 +20,11 @@ optional func browser(_ sender: NSBrowser, selectRow row: Int, inColumn column: 
 - (BOOL) browser:(NSBrowser *) sender selectRow:(NSInteger) row inColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the cell was selected; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Invoked in response to [`selectRow(_:inColumn:)`](../nsbrowser/selectrow%28_,incolumn%29.md) of [`NSBrowser`](../nsbrowser.md) being received by `sender`.
 

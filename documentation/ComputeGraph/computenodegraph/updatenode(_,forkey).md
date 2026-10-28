@@ -21,7 +21,7 @@ Updates an existing node in the graph.
 mutating func updateNode(_ node: ComputeNodeGraph.Node, forKey nodeID: ComputeNodeGraph.NodeID) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the node cannot be updated.
 

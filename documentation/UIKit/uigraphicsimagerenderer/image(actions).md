@@ -23,11 +23,11 @@ func image(actions: (UIGraphicsImageRendererContext) -> Void) -> UIImage
 - (UIImage *) imageWithActions:(UIGraphicsImageDrawingActions) actions;
 ```
 
-#### Return Value
+## Return Value
 
 A [`UIImage`](../uiimage.md) object created by the supplied drawing actions.
 
-#### Discussion
+## Discussion
 
 You provide a set of drawing instructions as the block argument to this method, and the method will return the resultant [`UIImage`](../uiimage.md) object.
 

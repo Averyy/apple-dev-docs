@@ -25,7 +25,7 @@ func xpc_array_get_string(_ xarray: xpc_object_t, _ index: Int) -> UnsafePointer
 extern const char *xpc_array_get_string(xpc_object_t xarray, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying C string at the specified index. NULL if the value at the specified index is not a C string value.
 

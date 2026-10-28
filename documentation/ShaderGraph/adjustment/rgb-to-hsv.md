@@ -14,7 +14,7 @@ Converts a color from RGB to HSV space.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **RGB to HSV (color3f)**:
 

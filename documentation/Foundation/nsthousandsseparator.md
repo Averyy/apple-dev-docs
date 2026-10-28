@@ -17,7 +17,7 @@ A string that specifies the separator character for the thousands place of a dec
 extern NSString * const NSThousandsSeparator;
 ```
 
-#### Discussion
+## Discussion
 
 The default is a comma.
 

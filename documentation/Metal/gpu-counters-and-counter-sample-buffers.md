@@ -5,7 +5,7 @@
 
 Retrieve runtime data from a GPU device by sampling one or more of its counters.
 
-#### Overview
+## Overview
 
 A GPU *counter* ([`MTLCounter`](./mtlcounter.md)) is typically a hardware feature that tracks a specific performance metric, such as timestamps before and after an important rendering stage. A *counter set* ([`MTLCounterSet`](./mtlcounterset.md)) is a collection of related counters. A *counter sample buffer* ([`MTLCounterSampleBuffer`](./mtlcountersamplebuffer.md)) represents the memory where a GPU device stores the data for a specific counter set.
 

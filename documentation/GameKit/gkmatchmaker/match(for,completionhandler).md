@@ -28,7 +28,7 @@ func match(for invite: GKInvite) async throws -> GKMatch
 - (void) matchForInvite:(GKInvite *) invite completionHandler:(void (^)(GKMatch *match, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you implement your own interface to inform you when the local player joins a match.
 

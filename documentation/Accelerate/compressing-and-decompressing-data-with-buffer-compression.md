@@ -5,13 +5,13 @@
 
 Compress a string, write it to the file system, and decompress the same file using buffer compression.
 
-#### Overview
+## Overview
 
 The code in this article uses the [Compression](../Compression/Compression.md) framework to encode (compress) and decode (decompress) a string. The code writes the encoded result to the temporary directory that the [`NSTemporaryDirectory()`](../Foundation/nstemporarydirectory%28%29.md) function returns.
 
 The code in this sample is useful in applications that store or transmit text files where saving or sending smaller files can improve performance and reduce storage overhead. This sample app implements *buffer compression*, where it reads the contents of a source buffer in a single step to compress or decompress data.
 
-##### Create the source data
+### Create the source data
 
 Typically, your app would dynamically generate the source data that it compresses, but for this example, the source data is a hard-coded string.
 
@@ -33,7 +33,7 @@ var sourceBuffer = Array(sourceString.utf8)
 
 On return, `sourceBuffer` is an array of [`UInt8`](../kernel/uint8.md) values that contains the UTF-8 representation of the source string.
 
-##### Create the destination buffer
+### Create the destination buffer
 
 Create an [`UnsafeMutablePointer`](../Swift/unsafemutablepointer.md) structure and allocate it with a capacity of the source string’s `count` to receive the encoded data.
 
@@ -45,7 +45,7 @@ defer {
 }
 ```
 
-##### Select a compression algorithm
+### Select a compression algorithm
 
 The code in this example uses the [`COMPRESSION_LZMESH`](../Compression/compression_lzmesh.md) algorithm, which provides the compression ratio of zlib level 5, but with much higher energy efficiency and speed (between 2x and 3x) for both encode and decode operations:
 
@@ -55,7 +55,7 @@ let algorithm = COMPRESSION_LZMESH
 
 For apps that require interoperability with non-Apple devices, use [`COMPRESSION_ZLIB`](../Compression/compression_zlib.md) instead. For more information on other compression algorithms, see [`compression_algorithm`](../Compression/compression_algorithm.md).
 
-##### Compress the data
+### Compress the data
 
 The [`compression_encode_buffer(_:_:_:_:_:_:)`](../Compression/compression_encode_buffer%28_,_,_,_,_,_%29.md) function compresses the data, writes the result to the destination buffer, and returns the size of the encoded data.
 
@@ -76,7 +76,7 @@ if compressedSize == 0 {
 
 You may elect to handle this situation differently, for example, by displaying a warning to the user that the compression failed.
 
-##### Write the encoded data to a file
+### Write the encoded data to a file
 
 The code below writes the encoded data to a file in the the app’s temporary directory on macOS:
 
@@ -107,7 +107,7 @@ destinationFileHandle.write(encodedData as Data)
 destinationFileHandle.closeFile()
 ```
 
-##### Read the encoded data from a file
+### Read the encoded data from a file
 
 To read the encoded file, create a file handle for reading from the encoded file’s URL.
 
@@ -125,7 +125,7 @@ Use the file handle to read the entire encoded file and populate `encodedSourceD
 let encodedSourceData = encodedFileHandle.readDataToEndOfFile()
 ```
 
-##### Decompress the data
+### Decompress the data
 
 Allocate memory to contain the decoded data. Typically, the encoded payload would be part of a larger structure containing additional metadata such as the uncompressed size, and you’d use that to define the buffer capacity. However, for this example, allocate 8 MB:
 

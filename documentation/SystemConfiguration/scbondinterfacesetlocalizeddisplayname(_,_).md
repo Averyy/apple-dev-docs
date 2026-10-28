@@ -19,7 +19,7 @@ func SCBondInterfaceSetLocalizedDisplayName(_ bond: SCBondInterface, _ newName: 
 Boolean SCBondInterfaceSetLocalizedDisplayName(SCBondInterfaceRef bond, CFStringRef newName);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the configuration was stored; `FALSE` if an error occurred.
 

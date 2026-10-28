@@ -24,7 +24,7 @@ var anisotropyLevel: PhysicallyBasedMaterial.AnisotropyLevel { get set }
 
 - [Applying realistic material and lighting effects to entities](../applying-realistic-material-and-lighting-effects-to-entities.md)
 
-#### Discussion
+## Discussion
 
 By default, PBR materials are isotropic; in other words, an entity that uses [`PhysicallyBasedMaterial`](../physicallybasedmaterial.md) reflects light uniformly in all directions, mimicking the behavior of most real-world objects. Some objects, including those with many small parallel striations such as vinyl records, CDs, or straight hair, reflect light more in some directions than others, resulting in stretched or oblong specular highlights, as shown in the following figure.
 

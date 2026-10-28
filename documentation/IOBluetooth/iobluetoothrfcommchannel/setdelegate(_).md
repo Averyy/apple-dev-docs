@@ -19,11 +19,11 @@ func setDelegate(_ delegate: Any!) -> IOReturn
 - (IOReturn) setDelegate:(id) delegate;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the delegate is successfully registered.
 
-#### Discussion
+## Discussion
 
 A channel delegate is the object the RFCOMM channel uses as target for data and events. The developer will implement only the the methods he/she is interested in. A list of the possible methods is at the end of this file in the definition of the informal protocol IOBluetoothRFCOMMChannelDelegate.
 

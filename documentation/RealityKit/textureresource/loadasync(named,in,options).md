@@ -20,11 +20,11 @@ Returns a load request that creates a texture resource by asynchronously loading
 @preconcurrency static func loadAsync(named name: String, in bundle: Bundle? = nil, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>
 ```
 
-#### Return Value
+## Return Value
 
 A load operation that publishes the resource.
 
-#### Discussion
+## Discussion
 
 RealityKit automatically creates a resource name for the texture resource based on the values of `name` and `bundle`. RealityKit uses the resource name to identify resources, and to match texture resources between networked peers. Specify a unique name for each texture resource you load or generate.
 

@@ -21,7 +21,7 @@ Computes single-precision mean and standard deviation, and then calculates new e
 extern void vDSP_normalize(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, float *__Mean, float *__StandardDeviation, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The function calculates values for `Mean` and `StandardDeviation`, then calculates new values for `A` to have a zero mean and unit standard deviation.
 

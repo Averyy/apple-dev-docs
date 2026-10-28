@@ -21,7 +21,7 @@ A notification that posts after another process writes to a persistent store.
 static let NSPersistentStoreRemoteChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 This notification’s `object` is the changed store coordinator. The framework posts the notification to a private thread. Move to a known thread before peforming any work.
 

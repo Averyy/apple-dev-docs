@@ -24,7 +24,7 @@ var modificationDate: Date? { get set }
 @property (nonatomic, copy, nullable) NSDate * modificationDate;
 ```
 
-#### Return Value
+## Return Value
 
 The modification date of the annotation, or `NULL` if there is no modification date.
 

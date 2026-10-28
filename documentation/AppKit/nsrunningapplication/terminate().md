@@ -19,11 +19,11 @@ func terminate() -> Bool
 - (BOOL) terminate;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the request was successfully sent, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method will return [`false`](../../Swift/false.md) if the application is no longer running when the terminate message is sent to the receiver.
 

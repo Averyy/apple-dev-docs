@@ -21,11 +21,11 @@ Returns a Boolean value that indicates whether two angles are equal.
 static func == (lhs: Angle2D, rhs: Angle2D) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether two values are equal.
 
-#### Discussion
+## Discussion
 
 > **Note**: That this operator compares the raw value of each angle and doesn’t normalize the values. For example, 360° doesn’t equal 0°.
 

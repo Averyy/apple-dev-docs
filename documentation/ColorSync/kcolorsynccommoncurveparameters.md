@@ -25,7 +25,7 @@ var kColorSyncCommonCurveParameters: Unmanaged<CFString>
 extern CFStringRef kColorSyncCommonCurveParameters;
 ```
 
-#### Discussion
+## Discussion
 
 When true, all alternate curves share the gain curve x control points and slope interpolate flag from array index 0, reducing bitstream size.
 

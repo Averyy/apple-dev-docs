@@ -19,7 +19,7 @@ struct OBEXGetCommandData
 struct OBEXGetCommandData;
 ```
 
-#### Overview
+## Overview
 
 Is readable when the event is of type kOBEXSessionEventTypeGetCommandReceived (see OBEXSessionEventTypes).
 

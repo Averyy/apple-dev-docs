@@ -25,7 +25,7 @@ var timeout: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval timeout;
 ```
 
-#### Discussion
+## Discussion
 
 The default timeout interval is 30 seconds. If a metadata fetch takes longer than the timeout interval, the completion handler is called with the error code [`LPError.Code.metadataFetchTimedOut`](../lperror/code/metadatafetchtimedout.md).
 

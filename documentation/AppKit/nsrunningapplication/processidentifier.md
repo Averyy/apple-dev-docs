@@ -19,7 +19,7 @@ var processIdentifier: pid_t { get }
 @property (readonly) pid_t processIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Not all applications have a pid.  Applications without a pid return a value of -1.
 

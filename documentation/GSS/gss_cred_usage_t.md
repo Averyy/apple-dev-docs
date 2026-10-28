@@ -23,7 +23,7 @@ typealias gss_cred_usage_t = Int32
 typedef int gss_cred_usage_t;
 ```
 
-#### Discussion
+## Discussion
 
 See `Credential Settings` for a list of valid values.
 

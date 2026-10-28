@@ -17,11 +17,11 @@ Instructs the receiver to discard pending enqueued sample buffers and call the p
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func flush(removingDisplayedImage removeDisplayedImage: Bool) async
+nonisolated(nonsending)
+func flush(removingDisplayedImage removeDisplayedImage: Bool) async
 ```
 
-#### Discussion
+## Discussion
 
 A flush resets decoder state. The next frame passed to enqueueSampleBuffer: should be an IDR frame (also known as a key frame or sync sample).
 

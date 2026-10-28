@@ -15,7 +15,7 @@ App transaction information signed by the App Store, in JSON Web Signature (JWS)
 string JWSAppTransaction
 ```
 
-#### Discussion
+## Discussion
 
 The `JWSAppTransaction` type is a string of three Base64URL-encoded components separated by a period. The string contains the JWS Compact Serialization of the transaction information, signed by the App Store according to the JSON Web Signature (JWS) [IETF RFC 7515](https://datatracker.ietf.org/doc/html/rfc7515) specification.
 
@@ -24,7 +24,7 @@ The three components of the string are a header, a payload, and a signature, in 
 - To read the transaction information, Base64URL-decode the payload. Use a [`JWSAppTransactionDecodedPayload`](./jwsapptransactiondecodedpayload.md) object to read the payload information.
 - To read the header, decode it and use a [`JWSDecodedHeader`](./jwsdecodedheader.md) object to access the information. Use the information in the header to verify the signature.
 
-##### Use App Store Server Library functions
+### Use App Store Server Library functions
 
 To verify a `JWSAppTransaction` on your server, consider implementing the verification using the App Store Server Library function `verifyAndDecodeAppTransaction`. The library provides this function in each language the library supports. For more information, see [Simplifying your implementation by using the App Store Server Library](./simplifying-your-implementation-by-using-the-app-store-server-library.md).
 

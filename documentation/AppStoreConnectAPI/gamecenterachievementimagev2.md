@@ -15,7 +15,7 @@ The data structure that represents a Game Center achievement image v2 resource.
 object GameCenterAchievementImageV2
 ```
 
-#### Overview
+## Overview
 
 - attributes:
 - id:

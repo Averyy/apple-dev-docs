@@ -22,11 +22,11 @@ class func canSendText() -> Bool
 + (BOOL) canSendText;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device can send text messages or [`false`](../../Swift/false.md) if it cannot.
 
-#### Discussion
+## Discussion
 
 Always call this method before attempting to present the message compose view controller. A device may be unable to send messages if it does not support messaging or if it is not currently configured to send messages. This method applies only to the ability to send text messages via iMessage, SMS, and MMS.
 

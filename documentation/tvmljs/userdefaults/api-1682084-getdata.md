@@ -17,7 +17,7 @@ String getData(
 );
 ```
 
-#### Return Value
+## Return Value
 
 The retrieved data.
 

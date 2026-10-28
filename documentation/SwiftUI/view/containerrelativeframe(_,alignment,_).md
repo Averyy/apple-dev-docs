@@ -22,7 +22,7 @@ nonisolated
 func containerRelativeFrame(_ axes: Axis.Set, alignment: Alignment = .center, _ length: @escaping (CGFloat, Axis) -> CGFloat) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`containerRelativeFrame(_:alignment:)`](./containerrelativeframe%28_,alignment%29.md) modifier to specify a size for a view’s width, height, or both that is dependent on the size of the nearest container. Different things can represent a “container” including:
 

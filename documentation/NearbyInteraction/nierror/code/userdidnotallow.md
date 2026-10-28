@@ -26,7 +26,7 @@ NIErrorCodeUserDidNotAllow
 
 - [Initiating and maintaining a session](../../initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 In this case, the user needs to enable Nearby Interaction in Settings. For more information, see [Initiating and maintaining a session](../../initiating-and-maintaining-a-session.md).
 

@@ -21,11 +21,11 @@ Adds this joint to the simulation.
 @MainActor func addToSimulation() throws -> Entity
 ```
 
-#### Return Value
+## Return Value
 
 The entity that owns the [`PhysicsJointsComponent`](../physicsjointscomponent.md), which this joint has been added to.
 
-#### Discussion
+## Discussion
 
 This method looks for an ancestral [`Entity`](../entity.md) that has [`PhysicsJointsComponent`](../physicsjointscomponent.md) by traversing upwards from the entity referenced by [`pin0`](./pin0.md).
 

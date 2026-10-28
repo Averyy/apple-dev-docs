@@ -24,7 +24,7 @@ class CMGyroData
 @interface CMGyroData : CMLogItem
 ```
 
-#### Overview
+## Overview
 
 An application receives or samples `CMGyroData` objects at regular intervals after calling the [`startGyroUpdates(to:withHandler:)`](./cmmotionmanager/startgyroupdates%28to,withhandler%29.md) method or the [`startGyroUpdates()`](./cmmotionmanager/startgyroupdates%28%29.md) method of the [`CMMotionManager`](./cmmotionmanager.md) class.
 

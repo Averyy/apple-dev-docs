@@ -20,7 +20,7 @@ static let mouthClose: ARFaceAnchor.BlendShapeLocation
 extern ARBlendShapeLocation const ARBlendShapeLocationMouthClose;
 ```
 
-#### Discussion
+## Discussion
 
 This coefficient describes a closing of the lips without relation to the position of the jaw (the [`jawOpen`](./jawopen.md) coefficient), so some values of the [`mouthClose`](./mouthclose.md) coefficient can produce unrealistic facial expressions unless other coefficients are also set to realistic values.
 

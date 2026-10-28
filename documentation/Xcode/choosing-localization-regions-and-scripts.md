@@ -5,7 +5,7 @@
 
 Add a language-only localization or localizations specific to regional variants and scripts.
 
-#### Overview
+## Overview
 
 When you localize your app, you add localizations by choosing a language, and then, optionally, a region and script from Xcode’s menus. Apple recommends that you choose the most specific localization, not just the language. For example, if you only support English and it is American English, choose English (United States) (en-US) instead of English (en).
 
@@ -13,7 +13,7 @@ In Xcode menus, you choose a human-readable name for a localization, but in the 
 
 For information about how the `Bundle` object finds the best match between the localizations your app supports and the user’s language and region settings, see [`Bundle`](../Foundation/bundle.md).
 
-##### Understand the language identifier
+### Understand the language identifier
 
 A *language identifier* is a compound syntax that represents a combination of a language, regional variant, and script. It contains a language code, and, optionally, a region code, and a script code.
 

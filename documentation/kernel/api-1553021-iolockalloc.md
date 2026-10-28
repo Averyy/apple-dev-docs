@@ -24,11 +24,11 @@ struct IOLock * IOLockAlloc(void);
 IOLock * IOLockAlloc(void);
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to the allocated lock, or zero on failure.
 
-#### Discussion
+## Discussion
 
 Allocates a mutex in general purpose memory, and initializes it. Mutexes are general purpose blocking mutual exclusion locks, supplied by libkern/locks.h. This function may block and so should not be called from interrupt level or while a spin lock is held. IOLocks use the global IOKit lock group, IOLockGroup. To simplify kext debugging and lock-heat analysis, consider using lck_* locks with a per-driver lock group, as defined in kern/locks.h.
 

@@ -25,7 +25,7 @@ var threadDictionary: NSMutableDictionary { get }
 @property (retain, readonly) NSMutableDictionary * threadDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the returned dictionary to store thread-specific data. The thread dictionary is not used during any manipulations of the `NSThread` object—it is simply a place where you can store any interesting data. For example, Foundation uses it to store the thread’s default `NSConnection` and `NSAssertionHandler` instances. You may define your own keys for the dictionary.
 

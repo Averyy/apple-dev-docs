@@ -17,7 +17,7 @@ let kIMKCommandClientName: String
 extern const NSString * kIMKCommandClientName;
 ```
 
-#### Discussion
+## Discussion
 
 Used to look up the client object; the client conforms to the IMKInputText and NSObject protocols.
 

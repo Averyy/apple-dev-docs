@@ -17,7 +17,7 @@ typedef struct WSClientContext {
 } WSClientContext;
 ```
 
-#### Overview
+## Overview
 
 Several calls in the Web Services Core framework take a callback with an optional context pointer.  The context is copied and the info pointer retained.  When the callback is made, the info pointer is passed to the callback.
 

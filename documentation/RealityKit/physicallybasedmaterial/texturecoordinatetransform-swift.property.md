@@ -20,7 +20,7 @@ A two-dimensional transformation to apply to the entity’s primary texture coor
 var textureCoordinateTransform: PhysicallyBasedMaterial.TextureCoordinateTransform { get set }
 ```
 
-#### Discussion
+## Discussion
 
 An entity’s UV texture coordinates control how RealityKit materials map image textures onto an entity. This property allows you to transform the texture coordinates to change the way this material maps its textures. You might, for example, change the scale of a property to apply a tiled, repeating pattern, or continuously rotate or translate the texture coordinates to animate materials to create special effects, such as fire or flowing liquids.
 

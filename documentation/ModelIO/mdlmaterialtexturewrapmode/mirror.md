@@ -24,7 +24,7 @@ case mirror
 MDLMaterialTextureWrapModeMirror
 ```
 
-#### Discussion
+## Discussion
 
 This effect is similar to that of the [`MDLMaterialTextureWrapMode.repeat`](./repeat.md) mode, but inverts the range of fractional texture coordinate values whenever the whole part of a texture coordinate value is odd. For example, sampling at a coordinate value of `1.7` or `5.7` returns the texel color for the coordinate value of `0.3` (because `1.0 - 0.7 = 0.3`), and sampling at a coordinate value of `2.7` or `8.7` returns the texel color for the coordinate value of `0.7`. The visual effect of this mode is to repeat the texture image endlessly across a surface rendered with the texture, with every other repetition in a mirrored orientation.
 

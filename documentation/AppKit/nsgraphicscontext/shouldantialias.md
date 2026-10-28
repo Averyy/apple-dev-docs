@@ -19,7 +19,7 @@ var shouldAntialias: Bool { get set }
 @property BOOL shouldAntialias;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver uses antialiasing. This value is part of the graphics state and is restored by [`restoreGraphicsState()`](./restoregraphicsstate%28%29-swift.method.md).
 

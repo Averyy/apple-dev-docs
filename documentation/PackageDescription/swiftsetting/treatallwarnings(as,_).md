@@ -15,7 +15,7 @@ Controls how all Swift compiler warnings are treated during compilation.
 static func treatAllWarnings(as level: WarningLevel, _ condition: BuildSettingCondition? = nil) -> SwiftSetting
 ```
 
-#### Discussion
+## Discussion
 
 Use this setting to specify whether all warnings should be treated as warnings (default behavior) or as errors. This is equivalent to passing `-warnings-as-errors` or `-no-warnings-as-errors` to the Swift compiler.
 

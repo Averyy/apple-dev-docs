@@ -25,7 +25,7 @@ static var traitItalic: CTFontSymbolicTraits { get }
 kCTFontTraitItalic
 ```
 
-#### Discussion
+## Discussion
 
 Additional detail is available via [`kCTFontSlantTrait`](../kctfontslanttrait.md).
 

@@ -21,7 +21,7 @@ Returns a sheared size.
 func sheared(_ shear: AxisWithFactors) -> Size3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The sheared size.
 

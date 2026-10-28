@@ -22,7 +22,7 @@ func navigationItemDidUpdate()
 - (void) navigationItemDidUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls `navigationItemDidUpdate()` every time `UIDocumentViewController` makes changes to the navigation item. Customize the navigation items in this method.
 

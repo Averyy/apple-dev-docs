@@ -26,7 +26,7 @@ func incomingPushResult(channelManager: PTChannelManager, channelUUID: UUID, pus
 
 - [Creating a Push to Talk app](../creating-a-push-to-talk-app.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method for each incoming push. Return a [`PTPushResult`](../ptpushresult.md) as soon as possible and don’t block the thread. Perform network tasks — like downloading a speaker’s image or setting up a streaming network connection to a server — on a separate thread.
 

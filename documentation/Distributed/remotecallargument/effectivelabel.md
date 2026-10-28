@@ -21,7 +21,7 @@ The effective label of this argument. This reflects the semantics of call sites 
 var effectiveLabel: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for a method declared like `func hi(a: String)` the effective label is `a` while for a method like `func hi(a b: String)` or `func hi(_ b: String)` the label is the explicitly declared one, so `a` and `_` respectively.
 

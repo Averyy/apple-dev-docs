@@ -22,7 +22,7 @@ The maximum representable integer in this type.
 static var max: Self { get }
 ```
 
-#### Discussion
+## Discussion
 
 For unsigned integer types, this value is `(2 ** bitWidth) - 1`, where `**` is exponentiation. For signed integer types, this value is `(2 ** (bitWidth - 1)) - 1`.
 

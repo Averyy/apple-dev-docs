@@ -25,11 +25,11 @@ func CMSampleBufferTrackDataReadiness(_ sbuf: CMSampleBuffer, sampleBufferToTrac
 extern OSStatus CMSampleBufferTrackDataReadiness(CMSampleBufferRef sbuf, CMSampleBufferRef sampleBufferToTrack);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 After calling this API, if `CMSampleBufferDataIsReady` is called, it will return `sampleBufferToTrack`’s data readiness. If `CMSampleBufferMakeDataReady` is called, it will make `sampleBufferToTrack` data ready.
 

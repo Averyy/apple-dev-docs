@@ -19,7 +19,7 @@ var isExtensionHidden: Bool { get set }
 @property (getter=isExtensionHidden) BOOL extensionHidden;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`false`](../../Swift/false.md), [`NSSavePanel`](../nssavepanel.md) shows the filename extension in places where you refer to the file by name. The user can override this value by checking the hide extension menu item, which reflects this value. The default value is [`true`](../../Swift/true.md).
 

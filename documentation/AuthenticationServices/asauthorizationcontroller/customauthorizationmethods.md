@@ -19,7 +19,7 @@ var customAuthorizationMethods: [ASAuthorizationCustomMethod] { get set }
 @property (nonatomic, copy) NSArray<NSString *> * customAuthorizationMethods;
 ```
 
-#### Discussion
+## Discussion
 
 Custom authorization methods provide a unified interface for signing in to apps, while allowing the developer to customize the login experience. For example, use [`other`](../asauthorizationcustommethod/other.md) to display a username and password field, a web-based flow, or a custom user interface.
 

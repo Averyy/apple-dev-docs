@@ -19,7 +19,7 @@ init(networkProfile: CWNetworkProfile)
 - (instancetype) initWithNetworkProfile:(CWNetworkProfile *) networkProfile;
 ```
 
-#### Return Value
+## Return Value
 
 A CWNetworkProfile object.
 

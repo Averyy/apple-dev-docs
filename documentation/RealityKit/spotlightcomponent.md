@@ -24,7 +24,7 @@ struct SpotLightComponent
 
 - [Automatically animating RealityKit entities](./automatically-animating-realitykit-entities.md)
 
-#### Overview
+## Overview
 
 A spotlight illuminates a cone-shaped volume in the entity’s local forward direction along the z-axis’s negative direction, or `[0.0, 0.0, -1.0]`. Change the a spotlight’s direction with the `Entity/orientation` or [`look(at:from:upVector:relativeTo:)`](./hastransform/look%28at,from,upvector,relativeto%29.md) method, of the [`Entity`](./entity.md) with a spotlight component.
 
@@ -43,7 +43,7 @@ The following table shows some real-world scenarios, to better explain how you c
 | Film/TV Production Spotlight | 5,000-10,000 lumens | 50-100 meters | Provides focused, high-intensity lighting for sets |
 | Large-Scale Event Spotlight | 50,000-100,000 lumens | 200-500 meters | Lights large outdoor events or concerts |
 
-#### Dynamic light capacity
+## Dynamic light capacity
 
 On older hardware, only a limited number of dynamic lights can affect each object. Devices that support `MTLGPUFamily.apple6` or later lift this limit.
 

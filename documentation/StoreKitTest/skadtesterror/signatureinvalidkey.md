@@ -17,7 +17,7 @@ The public key isn’t a valid cryptographic key, in the testing environment.
 static var signatureInvalidKey: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The public key that you provide in the [`validate(_:publicKey:)`](../skadtestsession/validate%28_,publickey%29.md) or [`validateImpression(parameters:publicKey:)`](../skadtestsession/validateimpression%28parameters,publickey%29.md) methods must be a key that uses Elliptic Curve Digital Signature Algorithm (ECDSA) with a prime256v1 curve. For more information about the key, see [Registering an ad network](../../StoreKit/registering-an-ad-network.md).
 

@@ -25,11 +25,11 @@ init(lowerAngleLimit: CGFloat, upperAngleLimit: CGFloat)
 - (instancetype) initWithLowerAngleLimit:(CGFloat) lowerAngleLimit upperAngleLimit:(CGFloat) upperAngleLimit;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized reach constraint.
 
-#### Discussion
+## Discussion
 
 When a reach action is executed, a node’s [`zRotation`](../sknode/zrotation.md) property may be changed by the action to satisfy the reach action. Any value calculated by the reach action for a node is always inside the range specified by the reach constraint attached to the node’s [`reachConstraints`](../sknode/reachconstraints.md) property.
 

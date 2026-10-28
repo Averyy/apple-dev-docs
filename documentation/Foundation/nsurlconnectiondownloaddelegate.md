@@ -25,7 +25,7 @@ protocol NSURLConnectionDownloadDelegate : NSURLConnectionDelegate
 @protocol NSURLConnectionDownloadDelegate <NSURLConnectionDelegate>
 ```
 
-#### Overview
+## Overview
 
 The `NSURLConnectionDownloadDelegate` protocol describes methods that should be implemented by the delegate of instances of `NSURLConnection` created using Newsstand Kit’s `download(with:)` method. The methods in this protocol provide progress information about the download of a URL asset and, when downloading concludes, provide a file URL where the downloaded file can be accessed.
 

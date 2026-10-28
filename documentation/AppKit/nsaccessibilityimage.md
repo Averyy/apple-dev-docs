@@ -19,7 +19,7 @@ protocol NSAccessibilityImage : NSAccessibilityElementProtocol
 @protocol NSAccessibilityImage <NSAccessibilityElement>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol when you want a user interface element to behave like an image_ _in the accessibility hierarchy.
 

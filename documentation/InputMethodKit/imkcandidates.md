@@ -19,7 +19,7 @@ class IMKCandidates
 @interface IMKCandidates : NSResponder
 ```
 
-#### Overview
+## Overview
 
 When you create an `IMKCandidates` object, you attach it to the `IMKServer` object for your input method.  You then need to override the `IMKInputController` methods `candidateSelectionChanged:` and `candidateSelected:` as well as implement a candidates method in your delegate object.  The `IMKInputController` subclass supplies candidates to the `IMKCandidates` object by implementing the candidates method. When you are ready to display a candidates window, call the candidates method to update candidates and to show the candidates window.
 

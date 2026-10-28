@@ -19,7 +19,7 @@ var mouseDownCanMoveWindow: Bool { get }
 @property (readonly) BOOL mouseDownCanMoveWindow;
 ```
 
-#### Discussion
+## Discussion
 
 This property lets you determine the region by which a window can be moved. The default value of this property is [`false`](../../Swift/false.md) if the view is opaque; otherwise, it is set to [`true`](../../Swift/true.md). Subclasses can override this property to return different values based on the event.
 

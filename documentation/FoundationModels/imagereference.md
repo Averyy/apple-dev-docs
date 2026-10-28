@@ -24,7 +24,7 @@ struct ImageReference
 
 - [Analyzing images with multimodal prompting](./analyzing-images-with-multimodal-prompting.md)
 
-#### Overview
+## Overview
 
 Use `ImageReference` to allow the model to reference images from the transcript of the current `LanguageModelSession`.
 

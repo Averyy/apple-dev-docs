@@ -23,11 +23,11 @@ optional func handle(_ userActivity: NSUserActivity)
 
 - [Handling User Activity](../handling-user-activity.md)
 
-#### Discussion
+## Discussion
 
 The WatchKit app extension calls this method when it receives data associated with a user activity. Use this method to update your app on Apple Watch so that the user can continue the activity from where they left off.
 
-##### Handling Activities from SiriKit
+### Handling Activities from SiriKit
 
 This method is called whenever your app is launched to handle a SiriKit intent. Update your app’s user interface based on the `userActivity` parameter. Your app should seamlessly continue the interaction that began in Siri.
 

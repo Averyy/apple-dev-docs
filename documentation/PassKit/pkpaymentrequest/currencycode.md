@@ -24,7 +24,7 @@ var currencyCode: String { get set }
 @property (nonatomic, copy) NSString * currencyCode;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to the three-letter code for the currency used by this payment request. Apple Pay interprets the amounts provided by the summary items attached to this request as amounts in this currency.
 

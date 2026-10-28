@@ -21,7 +21,7 @@ static var stalled: MPMovieLoadState { get }
 MPMovieLoadStateStalled
 ```
 
-#### Discussion
+## Discussion
 
 The buffering of data has stalled. If started now, playback may pause automatically if the player runs out of buffered data.
 

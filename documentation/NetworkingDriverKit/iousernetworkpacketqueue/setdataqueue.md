@@ -15,11 +15,11 @@ Assigns the specified dispatch source to this object.
 kern_return_t SetDataQueue(IODataQueueDispatchSource *dataQueue);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 
-#### Discussion
+## Discussion
 
 Use this method to change the dispatch queue that this object uses to perform tasks. This method releases the previous dispatch queue, if any, and retains the new object in the `dataQueue` parameter.
 

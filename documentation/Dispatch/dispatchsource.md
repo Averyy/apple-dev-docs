@@ -21,7 +21,7 @@ An object that coordinates the processing of specific low-level system events, s
 class DispatchSource
 ```
 
-#### Overview
+## Overview
 
 Use the methods of this class to construct new dispatch sources of the appropriate types.
 

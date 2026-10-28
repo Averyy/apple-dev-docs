@@ -21,7 +21,7 @@ var draggedImageLocation: NSPoint { get }
 @property (readonly) NSPoint draggedImageLocation;
 ```
 
-#### Discussion
+## Discussion
 
 The image moves along with the mouse pointer (the position of which is given by [`draggingLocation`](./dragginglocation.md)) but may be positioned at some offset.
 

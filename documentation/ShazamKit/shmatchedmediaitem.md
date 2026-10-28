@@ -25,7 +25,7 @@ class SHMatchedMediaItem
 @interface SHMatchedMediaItem : SHMediaItem
 ```
 
-#### Overview
+## Overview
 
 To access properties for custom media items, use subscripting. For more information, see [`SHMediaItem`](./shmediaitem.md).
 

@@ -27,7 +27,7 @@ func BNNSGather(_ axis: Int, _ input: UnsafePointer<BNNSNDArrayDescriptor>, _ in
 int BNNSGather(size_t axis, const BNNSNDArrayDescriptor *input, const BNNSNDArrayDescriptor *indices, BNNSNDArrayDescriptor *output, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use [`BNNSGather(_:_:_:_:_:)`](./bnnsgather%28_,_,_,_,_%29.md) to gather elements — that you specify by index — into an output tensor.
 

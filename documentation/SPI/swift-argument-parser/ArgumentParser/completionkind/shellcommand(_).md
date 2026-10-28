@@ -17,7 +17,7 @@ The completion candidates are specified by the `stdout` output of the given stri
 static func shellCommand(_ command: String) -> CompletionKind
 ```
 
-#### Discussion
+## Discussion
 
 Swift Argument Parser does not perform any escaping or quoting on the given shell command.
 

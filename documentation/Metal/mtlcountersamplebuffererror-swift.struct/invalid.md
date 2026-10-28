@@ -20,7 +20,7 @@ An error code that indicates the descriptor for creating a counter sample buffer
 static var invalid: MTLCounterSampleBufferError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error applies to the [`MTLDevice`](../mtldevice.md) protocol’s [`makeCounterSampleBuffer(descriptor:)`](../mtldevice/makecountersamplebuffer%28descriptor%29.md) method and its [`MTLCounterSampleBufferDescriptor`](../mtlcountersamplebufferdescriptor.md) parameter.
 

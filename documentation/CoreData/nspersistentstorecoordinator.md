@@ -30,7 +30,7 @@ class NSPersistentStoreCoordinator
 - [Setting up a Core Data stack manually](./setting-up-a-core-data-stack-manually.md)
 - [Setting up a Core Data stack](./setting-up-a-core-data-stack.md)
 
-#### Overview
+## Overview
 
 A managed object context uses a coordinator to facilitate the persistence of its entities in the coordinator’s registered stores. A context can’t function without a coordinator because it relies on the coordinator’s access to the managed object model. The coordinator presents its registered stores as an aggregate, allowing a context to operate on the union of those stores instead of on each individually. A coordinator performs its work on a private queue and executes that work serially. You can use multiple coordinators if the work requires separate queues.
 

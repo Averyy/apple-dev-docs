@@ -20,7 +20,7 @@ Binds a Metal texture to a parameter identified by its port address.
 mutating func setTexture(_ texture: (any MTLTexture)?, port: ComputeNodeGraph.Port.Address) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the port was found and the texture was set; `false` otherwise.
 

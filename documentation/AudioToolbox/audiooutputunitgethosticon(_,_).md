@@ -25,7 +25,7 @@ func AudioOutputUnitGetHostIcon(_ au: AudioUnit, _ desiredPointSize: Float) -> U
 extern UIImage *AudioOutputUnitGetHostIcon(AudioUnit au, float desiredPointSize);
 ```
 
-#### Discussion
+## Discussion
 
 The [`UIImage`](../UIKit/uiimage.md) of the host app’s icon.
 

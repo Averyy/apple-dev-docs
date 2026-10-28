@@ -15,7 +15,7 @@ The desired dimensions of the annotation, in CSS pixels.
 size?: Size;
 ```
 
-#### Discussion
+## Discussion
 
 The desired dimensions (width × height) of the annotation, in CSS pixels.
 

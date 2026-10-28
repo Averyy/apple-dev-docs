@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is considered to be a CJKV (Chines
 var isIdeographic: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property roughly defines the class of “Chinese characters” and does not include characters of other logographic scripts such as Cuneiform or Egyptian Hieroglyphs.
 

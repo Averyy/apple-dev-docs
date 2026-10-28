@@ -19,11 +19,11 @@ func backingAlignedRect(_ rect: NSRect, options: AlignmentOptions = []) -> NSRec
 - (NSRect) backingAlignedRect:(NSRect) rect options:(NSAlignmentOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle in the view’s interior coordinate system that is aligned to the backing store pixels using the specified options.
 
-#### Discussion
+## Discussion
 
 Uses the [`NSIntegralRectWithOptions(_:_:)`](../../Foundation/nsintegralrectwithoptions%28_,_%29.md) function and the given input rectangle and options to produce a backing store pixel-aligned rectangle in the view’s interior coordinates.
 

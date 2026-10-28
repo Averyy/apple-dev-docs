@@ -22,7 +22,7 @@ var autoFocusRangeRestriction: AVCaptureDevice.AutoFocusRangeRestriction { get s
 @property (nonatomic) AVCaptureAutoFocusRangeRestriction autoFocusRangeRestriction;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a device capable of hardware focusing attempts to focus on objects at any distance. If you expect to focus primarily on near or far objects, set a range restriction to increase the speed and reduce the power consumption of automatic focusing, and to reduce the chance of focusing ambiguities.
 

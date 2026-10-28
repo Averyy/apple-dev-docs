@@ -19,7 +19,7 @@ case none
 NSWindowSharingNone
 ```
 
-#### Discussion
+## Discussion
 
 `NSWindowSharingNone` can cause content to not be available in certain sharing situations. Don’t use this value to hide or omit content from being captured. Instead, use FairPlay Streaming (FPS). For more information, read [FairPlay Streaming](https://developer.apple.com/streaming/fps/).
 

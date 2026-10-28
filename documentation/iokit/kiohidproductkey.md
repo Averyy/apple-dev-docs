@@ -16,7 +16,7 @@ A key that describes the product.
 #define kIOHIDProductKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a string that describes the product.
 

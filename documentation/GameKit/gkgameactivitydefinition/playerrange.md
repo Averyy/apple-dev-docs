@@ -20,7 +20,7 @@ The range of players supported by this type of game activity.
 final var playerRange: (any RangeExpression)? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This can be nil if neither of minPlayers or maxPlayers are set by the developer, a closed range if both are set, or an open range suggesting this game activity supports an unlimited number of players.
 

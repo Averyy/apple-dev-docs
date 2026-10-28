@@ -24,7 +24,7 @@ var maxCommandsInFlight: Int { get set }
 @property (nonatomic, readwrite) NSUInteger maxCommandsInFlight;
 ```
 
-#### Discussion
+## Discussion
 
 Set to `0` to instruct Metal to select an appropriate value for you — based on the system’s available memory.
 

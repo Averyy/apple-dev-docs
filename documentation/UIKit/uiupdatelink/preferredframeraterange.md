@@ -23,7 +23,7 @@ var preferredFrameRateRange: CAFrameRateRange { get set }
 @property (nonatomic) CAFrameRateRange preferredFrameRateRange;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this property is [`default`](../../QuartzCore/caframeraterange/default.md), which doesn’t request any specific frame rate range.
 

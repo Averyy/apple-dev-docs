@@ -12,7 +12,7 @@ Modify an updatable Core ML model by running an update task with labeled data.
 - Mac Catalyst 13.0+
 - Xcode 15.2+
 
-#### Overview
+## Overview
 
 With the [Core ML](./CoreML.md) framework, you can customize an updatable model at runtime on the user’s device. Using this technique, you can create a personalized experience for the user while keeping their data private.
 
@@ -20,7 +20,7 @@ This sample demonstrates how to update the drawing classifier with an [`MLUpdate
 
 > **Note**: Run this sample on a device or Simulator with iOS 13 or later, or iPadOS 13 or later.
 
-##### Prepare your model update data
+### Prepare your model update data
 
 Gather your training data:
 
@@ -81,7 +81,7 @@ extension UpdatableDrawingClassifier {
 }
 ```
 
-##### Create an update task
+### Create an update task
 
 You create an [`MLUpdateTask`](./mlupdatetask.md) by passing the following to an initializer:
 
@@ -106,7 +106,7 @@ guard let updateTask = try? MLUpdateTask(forModelAt: url,
 
 > ❗ **Important**: An update task can only update a *compiled* model file—one whose name ends with `.mlmodelc`.
 
-##### Run the update task
+### Run the update task
 
 You begin an update task by calling its [`resume()`](./mltask/resume%28%29.md) method.
 
@@ -116,7 +116,7 @@ updateTask.resume()
 
 [Core ML](./CoreML.md) updates the model on a separate thread and calls your completion handler when it finishes the update process.
 
-##### Save the updated model
+### Save the updated model
 
 Use your completion handler to save the updated model in the [`MLUpdateContext`](./mlupdatecontext.md) to disk. The sample saves the updated model to the file system by first writing the model to a temporary location. Next, the sample moves the updated model to a permanent location, replacing any previously saved updated model.
 
@@ -143,7 +143,7 @@ do {
 }
 ```
 
-##### Load the updated model
+### Load the updated model
 
 Use your updated model by loading it with the model’s [`init(contentsOf:)`](./mlmodel/init%28contentsof%29.md) initializer. The sample loads a new instance of `UpdatableDrawingClassifier` with the [`URL`](../Foundation/url.md) of the updated model file the app saved in the previous step.
 

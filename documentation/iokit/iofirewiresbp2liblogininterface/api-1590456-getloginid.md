@@ -16,11 +16,11 @@ Returns the current login ID.
 UInt32 (*getLoginID)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a UInt32 containing the current login ID.
 
-#### Discussion
+## Discussion
 
 When we successfully login to a device. The device gives us a unique login id. This is used internally for reconnecting to the device after bus resets and for certain other management ORBs. Most drivers are probably not interested in this value.
 

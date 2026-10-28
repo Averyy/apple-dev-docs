@@ -22,7 +22,7 @@ var isRotationAnimated: Bool { get set }
 
 Available when `Value` is `JointTransforms`.
 
-#### Discussion
+## Discussion
 
 If you set this property to `true`, the animation accommodates rotational differences in the entity’s transform by interpolating to the target rotation across the animation timeline.
 

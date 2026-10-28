@@ -15,11 +15,11 @@ The request for the user details service.
 object GetVppUserRequest
 ```
 
-#### Discussion
+## Discussion
 
 Either `clientUserIdStr` or `userId` is required. If `clientUserIdStr` is used, an `itsIdHash` (iTunes Store ID hash) value may be included, but it is optional. If `userId` has a value, only that value is used, and `clientUserIdStr` and `itsIdHash` are ignored.
 
-##### ClientUserIdStr
+### ClientUserIdStr
 
 It is possible for more than one user record to exist for the same `clientUserIdStr` value, one for each iTunes account that the `clientUserIdStr` value has been associated with in the past (in addition to a currently active record or a retired and never-associated record). However, no more than one of these records can be active at any given time.
 

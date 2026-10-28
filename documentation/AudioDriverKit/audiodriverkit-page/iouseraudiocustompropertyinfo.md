@@ -15,7 +15,7 @@ A description of a custom property’s data types.
 struct IOUserAudioCustomPropertyInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The description provided by the [`IOUserAudioCustomPropertyInfo`](./iouseraudiocustompropertyinfo.md) structure allows the host to marshal the data between the host and its clients.
 

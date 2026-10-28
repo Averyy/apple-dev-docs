@@ -13,7 +13,7 @@ Crop and scale photos using the Vision framework and classify them with a Core M
 - Xcode 13.4+
 - iPad 14.0+
 
-#### Overview
+## Overview
 
 The app in this sample identifies the most prominent object in an image by using MobileNet, an open source image classifier model that recognizes around 1,000 different categories.
 
@@ -27,7 +27,7 @@ Before you integrate a third-party model to solve a problem — which may increa
 
 > **Note**: You can make a custom image classifier that identifies your choice of object types with [Create ML](../CreateML/CreateML.md). See [Creating an Image Classifier Model](../CreateML/creating-an-image-classifier-model.md) to learn how to create a custom image classifier that can replace the MobileNet model in this sample.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 The sample targets iOS 14 or later, but the MobileNet model in the project works with:
 
@@ -38,7 +38,7 @@ To take photos within the app, run the sample on a device with a camera. Otherwi
 
 > **Note**: Add your own photos to the photo library in Simulator by dragging photos onto its window.
 
-##### Create an image classifier instance
+### Create an image classifier instance
 
 At launch, the `ImagePredictor` class creates an image classifier singleton by calling its `createImageClassifier()` type method.
 
@@ -52,13 +52,13 @@ The Image Predictor class minimizes runtime by only creating a single instance i
 
 > **Note**: Share a single [`VNCoreMLModel`](../Vision/vncoremlmodel.md) instance for each Core ML model in your project.
 
-##### Create an image classification request
+### Create an image classification request
 
 The Image Predictor class creates an image classification request — a [`VNCoreMLRequest`](../Vision/vncoremlrequest.md) instance — by passing the shared image classifier model instance and a request handler to its initializer.
 
 The method tells Vision how to adjust images that don’t meet the model’s image input constraints by setting the request’s [`imageCropAndScaleOption`](../Vision/vncoremlrequest/imagecropandscaleoption.md) property to [`centerCrop`](../Vision/vnimagecropandscaleoption/centercrop.md).
 
-##### Create a request handler
+### Create a request handler
 
 The Image Predictor’s `makePredictions(for photo, ...)` method creates a [`VNImageRequestHandler`](../Vision/vnimagerequesthandler.md) for each image by passing the image and its orientation to the initializer.
 
@@ -69,13 +69,13 @@ If the image you want to classify has a URL, create a Vision image request handl
 - [`VNImageRequestHandler(url:options:)`](../Vision/vnimagerequesthandler/init%28url,options%29-4k623.md)
 - [`VNImageRequestHandler(url:orientation:options:)`](../Vision/vnimagerequesthandler/init%28url,orientation,options%29-70nta.md)
 
-##### Start the Request
+### Start the Request
 
 The [`makePredictions(for photo, ...)`][makePredictions] method starts the request by adding it into a [`VNRequest`](../Vision/vnrequest.md) array and passes it to the handler’s [`perform(_:)`](../Vision/vnimagerequesthandler/perform%28_%29.md) method.
 
 > **Note**: You can perform multiple Vision requests on the same image by adding each request to the array you pass to the [`perform(_:)`](../Vision/vnimagerequesthandler/perform%28_%29.md) method’s `requests` parameter.
 
-##### Retrieve the request’s results
+### Retrieve the request’s results
 
 When the image classification request is finished, Vision notifies the Image Predictor by calling the request’s completion handler, `visionRequestHandler(_:error:)`. The method retrieves the request’s [`results`](../Vision/vnrequest/results.md) by:
 
@@ -86,7 +86,7 @@ The Image Predictor converts each result to `Prediction` instances, a simple str
 
 The method sends the `predictions` array to the Image Predictor’s client — the main view controller — by calling the client’s completion handler.
 
-##### Format and present the predictions
+### Format and present the predictions
 
 The main view controller’s `imagePredictionHandler(_:)` method formats the individual predictions into a single string and updates a label in the app’s UI using helper methods.
 

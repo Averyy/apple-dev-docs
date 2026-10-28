@@ -14,11 +14,11 @@ Implement a lightweight view for Metal rendering that’s customized to your app
 - tvOS 17.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 While MetalKit’s [`MTKView`](../MetalKit/mtkview.md) provides significant functionality, allowing you to quickly get started writing Metal code, sometimes you want more control over how your Metal content is rendered. This sample app demonstrates how to create a simple Metal view derived directly from an [`NSView`](../AppKit/nsview.md) or [`UIView`](../UIKit/uiview.md). It uses a [`CAMetalLayer`](../QuartzCore/cametallayer.md) object to hold the view’s contents.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 This sample has targets for iOS, tvOS, and macOS. There are significant differences between apps that use UIKit and AppKit. Because of these differences, this sample creates two different classes. The iOS and tvOS versions of the sample use the `AAPLUIView` class, and the macOS version uses the `AAPLNSView` class. Both are derived from a common `AAPLView` class.
 
@@ -49,7 +49,7 @@ This sample provides a number of options you can enable when building the app, s
 #define CREATE_DEPTH_BUFFER   1
 ```
 
-##### Configure the view with a Metal layer
+### Configure the view with a Metal layer
 
 For Metal to render to the view, the view needs to be backed by a [`CAMetalLayer`](../QuartzCore/cametallayer.md).
 
@@ -77,7 +77,7 @@ This triggers a call to the view’s  `makeBackingLayer` method, which returns a
 }
 ```
 
-##### Render to the view
+### Render to the view
 
 To render to the view, create an [`MTLRenderPassDescriptor`](./mtlrenderpassdescriptor.md) object that targets a texture provided by the layer. The `AAPLRenderer` class stores the render pass descriptor in the `_drawableRenderPassDescriptor` instance variable. Most of the properties of this descriptor are set up automatically when you initialize the renderer. The code configures the render pass to clear the contents of the texture, and to store any rendered contents to the texture when the render pass completes.
 
@@ -104,7 +104,7 @@ _drawableRenderDescriptor.colorAttachments[0].texture = currentDrawable.texture;
 
 The rest of the rendering code is similar to that found in other Metal samples. For an explanation of a typical rendering path, see [Drawing a triangle with Metal 4](./drawing-a-triangle-with-metal-4.md).
 
-##### Implement a render loop
+### Implement a render loop
 
 To animate the view, the sample sets up a display link. The display link calls the view at the specified interval, synchronizing updates to the display’s refresh interval. The view calls the renderer object to render a new frame of animation.
 

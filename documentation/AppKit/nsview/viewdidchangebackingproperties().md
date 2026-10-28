@@ -19,7 +19,7 @@ func viewDidChangeBackingProperties()
 - (void) viewDidChangeBackingProperties;
 ```
 
-#### Discussion
+## Discussion
 
 The view gets this message when the backing store scale or color space changes. Provide an implementation if you need to swap assets or make other adjustments when a view’s backing store properties change.
 

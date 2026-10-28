@@ -23,7 +23,7 @@ func histogram(binCount: Int) -> vImage.PixelBuffer<Format>.HistogramFFFF
 
 Available when `Format` is `vImage.PlanarFx4`.
 
-#### Return Value
+## Return Value
 
 The histogram of the pixel buffer.
 

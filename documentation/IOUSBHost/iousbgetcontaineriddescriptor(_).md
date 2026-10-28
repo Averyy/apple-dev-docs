@@ -20,11 +20,11 @@ func IOUSBGetContainerIDDescriptor(_ bosDescriptor: UnsafePointer<IOUSBBOSDescri
 const IOUSBDeviceCapabilityContainerID *IOUSBGetContainerIDDescriptor(const IOUSBBOSDescriptor *bosDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 A container ID capability descriptor pointer, or `nil` if no matching descriptor returns.
 
-#### Discussion
+## Discussion
 
 This method uses [`IOUSBGetNextCapabilityDescriptorWithType(_:_:_:)`](./iousbgetnextcapabilitydescriptorwithtype%28_,_,_%29.md) to find the first container ID capability descriptor.
 

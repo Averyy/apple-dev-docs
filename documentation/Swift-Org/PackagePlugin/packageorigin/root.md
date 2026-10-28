@@ -17,7 +17,7 @@ A root package.
 case root
 ```
 
-#### Discussion
+## Discussion
 
 The root package is unversioned.
 

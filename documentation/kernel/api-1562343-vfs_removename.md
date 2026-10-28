@@ -15,7 +15,7 @@ Deprecated
 int vfs_removename(const char *name);
 ```
 
-#### Discussion
+## Discussion
 
 vnode_update_identity() and vnode_create() make vfs_addname() unnecessary for kexts.
 

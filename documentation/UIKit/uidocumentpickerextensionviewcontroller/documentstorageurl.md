@@ -24,7 +24,7 @@ var documentStorageURL: URL? { get }
 @property (nonatomic, copy, readonly, nullable) NSURL * documentStorageURL;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns a subdirectory of the app group container shared by the Document Picker extension and its corresponding File Provider extension. By default, this property holds the value returned by calling the File Provider extension’s [`documentStorageURL`](../../FileProvider/nsfileproviderextension/documentstorageurl.md) method.
 

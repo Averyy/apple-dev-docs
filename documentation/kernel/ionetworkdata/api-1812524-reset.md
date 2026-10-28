@@ -11,11 +11,11 @@ An access method that resets the data buffer.
 virtual IOReturn reset();
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success, kIOReturnNotWritable if reset access is not permitted, or an error from the notification handler.
 
-#### Overview
+## Overview
 
 This method handles an external request to reset the data buffer. If notification is enabled, then the notification handler is called after the data buffer has been cleared.
 

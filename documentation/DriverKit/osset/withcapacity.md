@@ -16,11 +16,11 @@
 static OSSetPtr withCapacity(uint32_t capacity);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSSet with reference count 1 to be released by the caller.
 
-#### Discussion
+## Discussion
 
 Allocates an OSSet object with preallocated capacity.
 

@@ -23,7 +23,7 @@ var expirationDate: Date? { get }
 
 - [Using extended runtime sessions](../using-extended-runtime-sessions.md)
 
-#### Discussion
+## Discussion
 
 Use this property to determine how much time remains before the session stops running.
 

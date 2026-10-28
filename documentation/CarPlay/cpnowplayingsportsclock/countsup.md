@@ -21,7 +21,7 @@ var countsUp: Bool { get }
 @property (nonatomic, assign, readonly) BOOL countsUp;
 ```
 
-#### Discussion
+## Discussion
 
 If false, the timer is counting DOWN, so as to indicate an amount of time remaining in the event, or a play period of the event (quarter/inning/period).
 

@@ -5,7 +5,7 @@
 
 Define characteristics of a timeline.
 
-#### Overview
+## Overview
 
 The `sequence` element creates a new timeline. Use the timeline attributes to define its characteristics. Use the attributes with the `clip` element, when it appears as a top-level story element, to describe a browser clip in an event. The timeline attributes are:
 
@@ -15,7 +15,7 @@ The `sequence` element creates a new timeline. Use the timeline attributes to de
 | `tcStart` | The timecode origin represented as a time value. See [Timing Attributes](./timing-attributes.md). |
 | `tcFormat` | The timecode display format, either drop frame (`DF`) or nondrop frame (`NDF`, which is the default). |
 
-##### Timeline Audio Attributes
+### Timeline Audio Attributes
 
 The `sequence` element can also contain the attributes in the table below, to define the audio characteristics of the new timeline:
 

@@ -9,7 +9,7 @@ Retrieves a single ad by its unique identifier.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves a single ad by its ID. The response includes `systemStatus`, `displayStatus`, `systemStatusReasons`, and `systemStatusLimitingReasons`. To diagnose why an ad may not be delivering, use these fields together. See [Ads Endpoints](./ads-endpoints.md) for the full status field semantics.
 
@@ -45,11 +45,11 @@ Keep the following constraints in mind when reading a GET response:
 | `creativeId` and `adGroupId` are read-only | These fields are immutable. The system sets them at creation and returns them on every GET response. |
 | To list all ads, use the query endpoint | `GET /v1/ads/{id}` returns a single record. To list or filter multiple ads, use `POST /v1/ads/query`. |
 
-#### Payload Examples
+## Payload Examples
 
 **Running Ad**:
 
-##### Request
+### Request
 
 Response for an ad that is actively serving. The `systemStatus` field is `RUNNING` and the `displayStatus` field is `RUNNING`.
 
@@ -57,7 +57,7 @@ Response for an ad that is actively serving. The `systemStatus` field is `RUNNIN
 GET /v1/ads/777888999
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -82,7 +82,7 @@ GET /v1/ads/777888999
 
 **Ad Pending Creative Review**:
 
-##### Request
+### Request
 
 Response for an ad whose ad creative is pending review. The `systemStatus` field is `NOT_RUNNING` with a reason of `AD_APPROVAL_PENDING`, and the `displayStatus` field is `PROCESSING`.
 
@@ -90,7 +90,7 @@ Response for an ad whose ad creative is pending review. The `systemStatus` field
 GET /v1/ads/777888998
 ```
 
-##### Response
+### Response
 
 ```json
 {

@@ -25,7 +25,7 @@ func CFSocketSetSocketFlags(_ s: CFSocket!, _ flags: CFOptionFlags)
 extern void CFSocketSetSocketFlags(CFSocketRef s, CFOptionFlags flags);
 ```
 
-#### Discussion
+## Discussion
 
 The `flags` argument controls whether callbacks of a given type are automatically reenabled after they are triggered, and whether the underlying native socket is closed when `s` is invalidated.
 

@@ -16,7 +16,7 @@ A type that allows transforming or filtering the issues recorded by a test.
 struct IssueHandlingTrait
 ```
 
-#### Overview
+## Overview
 
 Use this type to observe or customize the issue(s) recorded by the test this trait is applied to. You can transform a recorded issue by copying it, modifying one or more of its properties, and returning the copy. You can observe recorded issues by returning them unmodified. Or you can suppress an issue by either filtering it using [`filterIssues(_:)`](./trait/filterissues%28_%29.md) or returning `nil` from the closure passed to [`compactMapIssues(_:)`](./trait/compactmapissues%28_%29.md).
 

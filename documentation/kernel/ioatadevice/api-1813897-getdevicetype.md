@@ -12,7 +12,7 @@ virtual ataDeviceType getDeviceType(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 ataDeviceType as defined in IOATATypes.h
 

@@ -23,7 +23,7 @@ var metadata: [AVMetadataItem]? { get set }
 @property (nonatomic, copy, nullable) NSArray<AVMetadataItem *> * metadata;
 ```
 
-#### Discussion
+## Discussion
 
 This array contains [`AVMetadataItem`](../avmetadataitem.md) objects. You use it to add metadata, such as copyright, creation date, and so on, to the recorded movie file.
 

@@ -19,7 +19,7 @@ var inLiveResize: Bool { get }
 @property (readonly) BOOL inLiveResize;
 ```
 
-#### Discussion
+## Discussion
 
 AppKit sets the value of this property to [`true`](../../Swift/true.md) when a live resizing operation involving the view is underway. Use this property to determine when to optimize your view’s drawing behavior. Typically, you access this property from your [`draw(_:)`](./draw%28_%29.md) method and use the value to change the fidelity of the content you draw, or to draw your content more efficiently.
 

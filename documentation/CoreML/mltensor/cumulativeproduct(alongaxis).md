@@ -21,11 +21,11 @@ Computes the cumulative product along the specified axis.
 func cumulativeProduct(alongAxis axis: Int = 0) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The result of the cumulative product operation.
 
-#### Discussion
+## Discussion
 
 The scalar type of the tensor must be numeric.
 

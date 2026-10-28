@@ -12,7 +12,7 @@ An abstract base class for implementing a full-featured file system.
 @interface FSFileSystem : NSObject
 ```
 
-#### Overview
+## Overview
 
 `FSFileSystem` is a full-featured file system, which works with one or more [`FSResource`](./fsresource.md) instances and presents one or more [`FSVolume`](./fsvolume.md) references to callers.
 

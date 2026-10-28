@@ -29,7 +29,7 @@ var strength: Float { get set }
 
 - [Adding Physics Fields to a Scene](../adding-physics-fields-to-a-scene.md)
 
-#### Discussion
+## Discussion
 
 The default value is `1.0`. There’s no specific unit of measurement for this property because the actual effect is dependent on the kind of field node being created. In practice, the best approach is to experiment with different field strengths and use them to determine the proper value empirically.
 

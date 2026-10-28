@@ -17,7 +17,7 @@ Typed key-value cache configuration.
 var kvCache: KVCacheConfiguration?
 ```
 
-#### Discussion
+## Discussion
 
 When set, this is the canonical cache configuration. Do not combine it with `maxKVSize`, `kvBits`, `kvGroupSize`, `quantizedKVStart`, or `kvScheme`.
 

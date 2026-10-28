@@ -13,7 +13,7 @@ Implement a configurable audio input source as a driver extension that runs in u
 - macOS 12.1+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [Create audio drivers with DriverKit](https://developer.apple.com/wwdc21/10190/). This version updates the sample to run in iPadOS, as discussed in WWDC22 session [Bring your driver to iPad with DriverKit](https://developer.apple.com/wwdc22/110373/).
 
@@ -33,7 +33,7 @@ AudioDriverKit is available in macOS, and in iPadOS 16 and later when running on
 
 The sample app connects to the audio driver extension through a custom user client connection.  The custom user client shows an example of how to change the data-source selector value or the sample rate directly on the audio driver extension. In macOS, the sample app also provides the installer for the driver. In iPadOS, you install the driver by enabling it in Settings.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 By default, the sample project uses manual code signing. If you just want to run the app to see how it works, select “Automatically manage signing” for each of the targets.
 
@@ -49,7 +49,7 @@ If you want to run the app with manual signing, do the following:
 8. Download each profile and add it to Xcode.
 9. On the Signing & Capabilities tab, set each target to manual code signing and select its new profile.
 
-##### Run the sample in macOS
+### Run the sample in macOS
 
 To run the sample app in macOS, use the scheme selector to select the SimpleAudio (macOS) scheme and the My Mac destination. Build the target, then copy the app to the Applications folder and launch the app.
 
@@ -63,7 +63,7 @@ To hear the sine tone, open the QuickTime Player app and choose File > New Audio
 
 To uninstall the driver, delete the sample app, which also stops and removes the driver extension (dext). You can also use `systemextensionsctl` from the command line to list and selectively uninstall system extensions like `SimpleAudioDriver`.
 
-##### Run the sample in iPadOS
+### Run the sample in iPadOS
 
 To run the sample app in iPadOS, connect an iPad device with an M-series chip to your Mac. Use the scheme selector to select the SimpleAudio (iOS) scheme and the name of your iPad as the destination. Run the app directly from Xcode to launch it on your iPad.
 
@@ -73,7 +73,7 @@ After enabling the driver, return to the SimpleAudio app to open a user client c
 
 When you finish using the driver, delete the app, which deletes the driver as well.
 
-##### Create driver and device classes
+### Create driver and device classes
 
 To create an AudioDriverKit driver, the sample creates a driver that subclasses [`IOUserAudioDriver`](./iouseraudiodriver.md), and a device that subclasses [`IOUserAudioDevice`](./iouseraudiodevice.md). The dext’s `Info.plist` file contains entries that identify the driver class to AudioDriverKit, which instantiates and initializes the driver. The sample’s `Info.plist` file shows how this works: the `IOUserClass` key maps to the class name string `SimpleAudioDriver`, and `IOUserServerName` contains the bundle ID.
 
@@ -122,7 +122,7 @@ Failure:
 }
 ```
 
-##### Implement a user client interface
+### Implement a user client interface
 
 There are two dictionaries in the `Info.plist` file that define how the driver acts as a user client to the Core Audio Hardware Abstraction Layer (HAL) and to other apps. The first dictionary, `IOUserAudioDriverUserClientProperties`, maps `IOClass` to `IOUserUserClient` and `IOUserClass` to `IOUserAudioDriverUserClient`. This allows the HAL to connect to the driver. To support user client connections from apps, the sample also defines a custom user client class. The dictionary for the custom user client has the key `SimpleAudioDriverUserClientProperties`, and its `IOUserClass` has the value `SimpleAudioDriverUserClient`, a custom subclass of `IOUserClient`. Drivers that don’t accept user client connections from apps don’t need this second dictionary.
 
@@ -154,7 +154,7 @@ Failure:
 }
 ```
 
-##### Create audio objects in the device initializer
+### Create audio objects in the device initializer
 
 The device class manages the [`IOUserAudioStream`](./iouseraudiostream.md) interfaces that perform audio I/O. It can also contain controls and custom properties that interact with the audio stream.
 
@@ -228,7 +228,7 @@ error = AddStream(ivars->m_input_stream.get());
 FailIfError(error, , Failure, "failed to add input stream");
 ```
 
-##### Create standard controls in the device
+### Create standard controls in the device
 
 AudioDriverKit provides [`IOUserAudioControl`](./iouseraudiocontrol.md) objects for standard user interface to an audio device. Along with general controls for a toggle, slider, or selection interface to device properties, there are standard controls for volume and stereo pan. The sample driver adds an instance of the volume control, [`IOUserAudioLevelControl`](./iouseraudiolevelcontrol.md), in its initializer, which provides the volume slider in Audio MIDI Setup in macOS.
 
@@ -251,7 +251,7 @@ error = AddControl(ivars->m_input_volume_control.get());
 FailIfError(error, , Failure, "failed to add input volume level control");
 ```
 
-##### Create custom properties to control the device
+### Create custom properties to control the device
 
 The sample creates two custom control properties for its virtual device. In the code example below, the sample creates a property address reference for a property selector, using the main element and global scope. It then creates local pointer variables for the property selector, the data, and an optional qualifier that provides further detail about how to use the property data.
 
@@ -288,7 +288,7 @@ AddCustomProperty(custom_property.get());
 
 > **Note**: iPadOS doesn’t support custom properties and qualifiers.
 
-##### Handle the callback to start device I/O
+### Handle the callback to start device I/O
 
 Because the sample project doesn’t connect to a hardware device, it uses timers and actions in place of hardware interrupts and DMA. When the HAL attempts to start I/O on the device, it calls `SimpleAudioDevice::StartIO`. AudioDriverKit provides this method to signal the driver to perform any necessary calls to start I/O on the device. The sample project uses this signal to start its timers.
 
@@ -398,7 +398,7 @@ void	SimpleAudioDevice::ZtsTimerOccurred_Impl(OSAction* action, uint64_t time)
 }
 ```
 
-##### Use real-time callbacks to perform signal processing in the driver
+### Use real-time callbacks to perform signal processing in the driver
 
 For drivers that need to perform signal processing, AudioDriverKit provides real-time callbacks. The driver registers a block that the system calls in a real-time context whenever an I/O operation occurs on the [`IOUserAudioStream`](./iouseraudiostream.md) buffers for the device.
 
@@ -423,7 +423,7 @@ To set this block as the callback, the sample calls the [`IOUserAudioDevice`](./
 this->SetIOOperationHandler(io_operation);
 ```
 
-##### Access DMA audio buffers
+### Access DMA audio buffers
 
 As mentioned previously, a private method called `GenerateToneForInput` creates the sine tone. This is where the sample simulates writing audio data to DMA, and thereby delivers it to the hardware.
 
@@ -462,7 +462,7 @@ void SimpleAudioDevice::GenerateToneForInput(double in_tone_freq, size_t in_samp
 }
 ```
 
-##### Handle configuration changes
+### Handle configuration changes
 
 At this point, the driver and device can supply an audio stream as if it’s coming from an external device. One other task a driver needs to support is handling configuration changes from the device. Three methods from [`IOUserAudioClockDevice`](./iouseraudioclockdevice.md) support this ability:
 

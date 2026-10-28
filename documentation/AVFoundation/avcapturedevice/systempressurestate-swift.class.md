@@ -23,7 +23,7 @@ class SystemPressureState
 @interface AVCaptureSystemPressureState : NSObject
 ```
 
-#### Overview
+## Overview
 
 The performance and availability of the camera capture system on an iOS device is subject to several external factors, such as power usage and device temperature. If during a capture session the total system pressure reaches excessive levels, the capture system automatically shuts down, causing a session interruption (see [`wasInterruptedNotification`](../avcapturesession/wasinterruptednotification.md)). Under less heavy pressure, the system may automatically reduce capture quality.
 

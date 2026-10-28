@@ -21,7 +21,7 @@ A tabular transformer that transforms a data frame.
 protocol TabularTransformer : Transformer where Self.Input == DataFrame, Self.Output == DataFrame
 ```
 
-#### Overview
+## Overview
 
 Tabular transformers represent operations on data frames. They modify and operate on values on one or more columns.
 

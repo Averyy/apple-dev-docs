@@ -21,7 +21,7 @@ A type that represents a C header file.
 static var cHeader: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.c-header`.
 

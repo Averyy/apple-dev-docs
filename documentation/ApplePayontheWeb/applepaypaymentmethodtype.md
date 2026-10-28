@@ -16,7 +16,7 @@ A string that represents the type of the payment method.
 enum ApplePayPaymentMethodType
 ```
 
-#### Overview
+## Overview
 
 The payment method type can be one of the following string values:
 

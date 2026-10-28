@@ -24,7 +24,7 @@ var currentRenderPassDescriptor: MTLRenderPassDescriptor? { get }
 @property (nonatomic, readonly, nullable) MTLRenderPassDescriptor * currentRenderPassDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Reading this property creates and returns a new render pass descriptor to render into the current drawable’s texture. [`MTKView`](../mtkview.md) doesn’t use this descriptor, and there’s no requirement for your application to use it.
 

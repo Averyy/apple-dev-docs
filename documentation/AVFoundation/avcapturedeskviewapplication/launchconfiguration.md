@@ -20,7 +20,7 @@ class LaunchConfiguration
 @interface AVCaptureDeskViewApplicationLaunchConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this object to specify the frame for Desk View when it launches, and when to execute the completion handler. You can specify whether to perform the completion handler as soon as Desk View is visible to the user, or only after they start Desk View.
 

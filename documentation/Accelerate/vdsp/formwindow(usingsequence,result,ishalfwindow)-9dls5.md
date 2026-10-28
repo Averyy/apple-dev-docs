@@ -21,7 +21,7 @@ Populates a single-precision vector with a specified window.
 static func formWindow<V>(usingSequence sequence: vDSP.WindowSequence, result: inout V, isHalfWindow: Bool) where V : AccelerateMutableBuffer, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to populate a vector with values of a specified window sequence.
 

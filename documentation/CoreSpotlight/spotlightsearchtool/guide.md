@@ -19,7 +19,7 @@ A type you use to offer guidance about what search capabillities to employ durin
 struct Guide
 ```
 
-#### Overview
+## Overview
 
 Use this type to specify additional guidance about how you want the model to search your content. At configuration time, configure an instance of this structure and assign it to the [`guide`](./configuration-swift.struct/guide.md) property of your configuration object. You use guidance options primarily to limit the types of searches the model performs or to scope searches to specific types of content. Adding guidance can help improve the efficiency of searches, especially if you eliminate search techniques that don’t apply to your content.
 

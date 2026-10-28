@@ -27,7 +27,7 @@ var connection: AVCaptureConnection? { get }
 
 - [Setting up a capture session](../setting-up-a-capture-session.md)
 
-#### Discussion
+## Discussion
 
 When you associate a preview layer with a capture session, the session automatically creates a connection to the first eligible video [`AVCaptureInput.Port`](../avcaptureinput/port.md) object. If you detach a preview layer from a session, the connection property becomes `nil`.
 

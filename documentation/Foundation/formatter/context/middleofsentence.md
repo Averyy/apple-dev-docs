@@ -25,7 +25,7 @@ case middleOfSentence
 NSFormattingContextMiddleOfSentence
 ```
 
-#### Discussion
+## Discussion
 
 Use this context for dates or date symbols appearing at the middle of a sentence.
 

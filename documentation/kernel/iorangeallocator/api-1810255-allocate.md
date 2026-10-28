@@ -14,11 +14,11 @@ virtual bool allocate(
  IORangeScalar alignment = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the allocation was successful, else false.
 
-#### Overview
+## Overview
 
 This method allocates a range from the free list. The alignment will default to the alignment set when the allocator was created or may be set here.
 

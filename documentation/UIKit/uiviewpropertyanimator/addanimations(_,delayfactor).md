@@ -23,7 +23,7 @@ func addAnimations(_ animation: @escaping () -> Void, delayFactor: CGFloat)
 - (void) addAnimations:(void (^)()) animation delayFactor:(CGFloat) delayFactor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add new animation blocks to the animator. The animations in the new block run alongside any previously configured animations after the specified delay. Blocks added while the animator’s state is [`UIViewAnimatingState.inactive`](../uiviewanimatingstate/inactive.md) are executed over the time specified by the [`duration`](./duration.md) property minus any delay. Blocks added while the animator’s state is [`UIViewAnimatingState.active`](../uiviewanimatingstate/active.md) are executed over the remaining portion of the total run time minus the delay. For example, if the duration is `2.0` and you add an animation block with a delay factor of `0.25` to a running animator whose [`fractionComplete`](../uiviewanimating/fractioncomplete.md) property is `0.25`, the animations run for `1.0` second.
 

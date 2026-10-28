@@ -24,7 +24,7 @@ The language asset packs that are localized for which the system automatically m
 
 - [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
-#### Discussion
+## Discussion
 
 The user’s preferred languages inform the choice of resolved language, respecting any language that your application sets manually. This property may be `nil` if no localized asset packs are available. You can manually set this property to `nil` to revert to the user’s system-wide language preference. If the user recently changed their preferred language, then this property’s value could be temporarily out of sync with the set of asset packs that are available locally. Setting the language doesn’t immediately download or remove any asset packs; call [`reconcilePreferredLanguagesWithCompletionHandler:`](./reconcilepreferredlanguageswithcompletionhandler_.md) to reconcile the set of downloaded asset packs with the new configuration.
 

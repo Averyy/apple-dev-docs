@@ -24,7 +24,7 @@ class MDLVertexBufferLayout
 @interface MDLVertexBufferLayout : NSObject
 ```
 
-#### Overview
+## Overview
 
 A collection of vertex layout objects, vertex attribute objects, and additional information forms a [`MDLVertexDescriptor`](./mdlvertexdescriptor.md) object, which completely describes the layout of vertex buffers for a [`MDLMesh`](./mdlmesh.md) object.
 

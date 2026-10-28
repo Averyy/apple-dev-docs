@@ -12,11 +12,11 @@ static OSBoolean * withBoolean(
  boolvalue);
 ```
 
-#### Return Value
+## Return Value
 
 The global instance of OSBoolean with the boolean `value`.
 
-#### Overview
+## Overview
 
 This function actually returns either [`kOSBooleanTrue`](../kosbooleantrue.md) or [`kOSBooleanFalse`](../kosbooleanfalse.md), so that you can always use pointer comparison with OSBoolean objects.
 

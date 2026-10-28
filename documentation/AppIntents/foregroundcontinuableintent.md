@@ -23,7 +23,7 @@ A protocol you use for app intents which begin their work with the app in the ba
 protocol ForegroundContinuableIntent : AppIntent
 ```
 
-#### Overview
+## Overview
 
 This protocol is deprecated, please include `.foreground(.dynamic)` in the [`supportedModes`](./appintent/supportedmodes.md) of your app intent instead. For backward compatibility, you can provide conformance to this protocol in an extension, for example:
 

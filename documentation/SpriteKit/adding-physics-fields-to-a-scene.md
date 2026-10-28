@@ -5,7 +5,7 @@
 
 Create effects that interact with your scene’s physics bodies, such as magnetism, repulsion, friction, or a vortex.
 
-#### Overview
+## Overview
 
 It is possible to implement a game using only physics bodies, collisions, and applied forces, but sometimes this can be a lot of work. For example, if you wanted two objects to be attracted to each other, you would have to perform gravity calculations and apply those forces every time a new frame is calculated. When you want to apply generalized effects to a scene, you can do this more easily by using physics fields.
 
@@ -69,7 +69,7 @@ gravityNode.zRotation = M_PI; // Flip gravity.
 
 - To enable and disable gravity using the field node’s [`isEnabled`](./skfieldnode/isenabled.md) property, without changing the field node’s [`strength`](./skfieldnode/strength.md) or direction.
 
-##### Limit the Effect of Field Nodes Through Categories and Regions
+### Limit the Effect of Field Nodes Through Categories and Regions
 
 By default, a field node affects all physics bodies in the scene. However, it doesn’t have to be this way. By carefully controlling which physics bodies are affected by a field node, you can create some interesting effects.
 

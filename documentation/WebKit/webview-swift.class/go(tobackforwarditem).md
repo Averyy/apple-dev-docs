@@ -21,7 +21,7 @@ func go(toBackForwardItem item: WebHistoryItem!) -> Bool
 - (BOOL) goToBackForwardItem:(WebHistoryItem *) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `item` is in the back-forward list; otherwise, [`false`](../../Swift/false.md).
 

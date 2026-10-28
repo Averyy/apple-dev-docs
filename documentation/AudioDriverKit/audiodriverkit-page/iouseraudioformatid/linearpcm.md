@@ -15,7 +15,7 @@ The linear Pulse-Code Modulation (PCM) format.
 LinearPCM
 ```
 
-#### Discussion
+## Discussion
 
 This format uses the standard flags.
 

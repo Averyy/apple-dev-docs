@@ -21,7 +21,7 @@ Creates and returns an array containing the objects in another given array.
 + (instancetype) arrayWithArray:(NSArray<id> *) array;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the objects in `anArray`.
 

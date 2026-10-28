@@ -33,7 +33,7 @@ func saveMergedMatch(_ matchData: Data, withResolvedExchanges exchanges: [GKTurn
 
 - [Exchanging data between players in turn-based games](../exchanging-data-between-players-in-turn-based-games.md)
 
-#### Discussion
+## Discussion
 
 Use this method to save the exchange data in the match’s [`completedExchanges`](./completedexchanges.md) property before the current participant ends their turn, forfeits a match, or ends a match. Alternatively, invoke this method from the [`player(_:receivedExchangeReplies:forCompletedExchange:for:)`](../gkturnbasedeventlistener/player%28_,receivedexchangereplies,forcompletedexchange,for%29.md) protocol method as recipients reply to individual exchange requests.
 

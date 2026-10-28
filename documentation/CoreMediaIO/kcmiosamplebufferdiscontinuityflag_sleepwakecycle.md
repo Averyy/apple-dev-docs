@@ -14,7 +14,7 @@
 kCMIOSampleBufferDiscontinuityFlag_SleepWakeCycle
 ```
 
-#### Discussion
+## Discussion
 
 By increasing the duration of known good media;  this is a “soft” discontinuity, much like kCMIOSampleBufferDiscontinuityFlag_TimecodeDiscontinuity, meaning that the stream isn’t necessarily broken, but clients might want to force capture of all media.
 

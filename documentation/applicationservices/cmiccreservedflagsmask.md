@@ -13,7 +13,7 @@
 var cmICCReservedFlagsMask: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This mask provides access to bits 0 through 15 of the `flags` field, which are defined and reserved by the ICC. For more information, see the International Color Consortium Profile Format Specification, and the next two mask definitions.
 

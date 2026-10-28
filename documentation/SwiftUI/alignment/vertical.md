@@ -21,7 +21,7 @@ The alignment on the vertical axis.
 var vertical: VerticalAlignment
 ```
 
-#### Discussion
+## Discussion
 
 Set this value when you initialize an alignment using the [`init(horizontal:vertical:)`](./init%28horizontal,vertical%29.md) method. Use one of the built-in [`VerticalAlignment`](../verticalalignment.md) guides, like [`center`](../verticalalignment/center.md), or a custom guide that you create.
 

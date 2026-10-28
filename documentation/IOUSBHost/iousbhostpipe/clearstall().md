@@ -20,7 +20,7 @@ func clearStall() throws
 - (BOOL) clearStallWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 When a bulk or interrupt USB endpoint encounters any input/output error other than a timeout, it transitions to a halted state. It must also clear to perform additional input/output requests on the endpoint.
 

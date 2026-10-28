@@ -21,7 +21,7 @@ The ordering that places the first item after the second when comparing two item
 case reverse
 ```
 
-#### Discussion
+## Discussion
 
 The ordering places the first item after the second when a [`ComparisonResult`](../comparisonresult.md) of two items is [`ComparisonResult.orderedAscending`](../comparisonresult/orderedascending.md).
 

@@ -24,7 +24,7 @@ func canAdd(_ input: AVAssetWriterInput) -> Bool
 - (BOOL) canAddInput:(AVAssetWriterInput *) input;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if you can add the input to the asset writer; otherwise [`false`](../../Swift/false.md).
 

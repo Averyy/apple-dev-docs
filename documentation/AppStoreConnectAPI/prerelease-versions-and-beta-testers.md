@@ -4,7 +4,7 @@
 
 Manage your beta testing program, including beta testers and groups, apps, App Clips, and builds.
 
-#### Overview
+## Overview
 
 TestFlight allows you to distribute your apps to beta testers before releasing your apps on the App Store. You can learn more about TestFlight on the [Apple Developer website](https://developer.apple.com/testflight/).
 

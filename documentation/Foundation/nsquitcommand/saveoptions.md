@@ -20,7 +20,7 @@ var saveOptions: NSSaveOptions { get }
 @property (readonly) NSSaveOptions saveOptions;
 ```
 
-#### Return Value
+## Return Value
 
 A constant indicating how to deal with closing any modified documents. The default value returned is `NSSaveOptionsAsk`. See “Constants” in [`NSCloseCommand`](../nsclosecommand.md) for a list of possible return values.
 

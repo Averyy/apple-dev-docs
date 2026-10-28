@@ -24,7 +24,7 @@ class INEnumResolutionResult
 @interface INEnumResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INEnumResolutionResult`](./inenumresolutionresult.md) object is what you return when resolving enumeration related parameters of an intent object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

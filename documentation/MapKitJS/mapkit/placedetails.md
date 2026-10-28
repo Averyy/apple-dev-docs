@@ -15,7 +15,7 @@ A list of all place detail objects that are currently active on a page.
 get placeDetails(): PlaceDetail[];
 ```
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library first before accessing the property, otherwise, the property throws an `Error`.
 

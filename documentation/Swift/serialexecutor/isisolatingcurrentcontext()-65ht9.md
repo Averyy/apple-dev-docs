@@ -21,7 +21,7 @@ Checks if the current execution context is isolated by this executor.
 func isIsolatingCurrentContext() -> Bool?
 ```
 
-#### Discussion
+## Discussion
 
 This function can be called by the runtime in order to perform assertions, or attempt to issue warnings about unexpected isolation.
 

@@ -25,11 +25,11 @@ func vImageConvert_Indexed4toPlanar8(_ src: UnsafePointer<vImage_Buffer>, _ dest
 vImage_Error vImageConvert_Indexed4toPlanar8(const vImage_Buffer *src, const vImage_Buffer *dest, const Pixel_8 colors[16], const vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 For each destination pixel, the conversion uses the lookup table value with the corresponding source pixel value as the index.
 

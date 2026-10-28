@@ -9,7 +9,7 @@ Obtain historical, current, and predictive weather for your app or service.
 **Availability**:
 - Weather API 1.0.0+
 
-#### Overview
+## Overview
 
 Use the WeatherKit REST API web service to provide weather data to your apps and services that offer both current and forecasted weather information to your users.
 

@@ -21,7 +21,7 @@ A mode that adds the inverse of the color components of the source and backgroun
 static var plusDarker: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 This mode implements the equation `R = MAX(0, 1 - ((1 - D) + (1 - S)))` where
 

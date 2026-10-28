@@ -5,7 +5,7 @@
 
 Discover how Metal executes commands on a GPU.
 
-#### Overview
+## Overview
 
 In Metal, you send commands to the GPU so it can perform work on your behalf. A command performs the drawing, parallel computation, and resource management work your app requires.
 
@@ -17,11 +17,11 @@ The order that you place commands in command buffers, then enqueue and commit co
 
 The following sections explain how to set up a command structure to produce the results you want. Some objects you create once and use throughout your app, and others you create specifically to execute a set of commands.
 
-##### Create expensive shared objects during initialization
+### Create expensive shared objects during initialization
 
 Create objects that are expensive to allocate during initialization, not in time-critical code paths. Objects that you can share in your code are command queues, pipelines, buffers, and textures. After you initialize these objects, they’re fast to reuse.
 
-###### Make a Command Queue
+#### Make a Command Queue
 
 To make a command queue, call the device’s [`makeCommandQueue()`](./mtldevice/makecommandqueue%28%29.md) function.
 
@@ -41,7 +41,7 @@ Then use the same command queue throughout your app to hold command buffers. The
 
 ![A diagram that depicts a command queue’s relationship to the command buffers it contains. A box representing a command queue contains two boxes representing command buffers, numbered in ascending order. The first box contains two boxes representing commands, numbered in ascending order. The second box contains one box representing a single command.](https://developer.apple.com/tutorials/images/com.apple.metal/setting-up-a-command-structure-2@2x.png)
 
-###### Make One or More Pipeline Objects
+#### Make One or More Pipeline Objects
 
 A *pipeline object* tells Metal how to process your commands. The pipeline object encapsulates functions that you write in the Metal shading language. To use a pipeline in your Metal workflow, follow these steps:
 
@@ -56,7 +56,7 @@ The figure below illustrates the active pipeline on the GPU that contains your c
 
 ![A flow diagram depicting the process by which Metal processes commands using the active pipeline. At left, the Metal app issues commands to the GPU, at center. The GPU contains the active pipeline object, which contains your custom shader code. At the right, an image icon represents the command result.](https://developer.apple.com/tutorials/images/com.apple.metal/setting-up-a-command-structure-3@2x.png)
 
-##### Issue commands to the GPU
+### Issue commands to the GPU
 
 To execute commands on the GPU, follow this process:
 
@@ -68,7 +68,7 @@ To execute commands on the GPU, follow this process:
 
 If you’re performing animation as part of a rendering loop, do this for each frame of the animation. You also follow this process to execute one-off image processing, or machine learning tasks.
 
-###### Create a Command Buffer
+#### Create a Command Buffer
 
 Create a command buffer by calling [`makeCommandBuffer()`](./mtlcommandqueue/makecommandbuffer%28%29.md) on the command queue.
 
@@ -90,7 +90,7 @@ For single-threaded apps, create a single command buffer containing the commands
 
 ![A diagram depicting a command’s relationship to the command buffer that contains it. A box labeled Command buffer contains a series of boxes representing commands, numbered in ascending order to indicate their insertion order from left to right.  ](https://developer.apple.com/tutorials/images/com.apple.metal/setting-up-a-command-structure-4@2x.png)
 
-###### Add Commands to the Command Buffer
+#### Add Commands to the Command Buffer
 
 When you call task-specific functions on an encoder object — like draws or compute operations — the encoder places commands corresponding to those calls in the command buffer. The encoder inserts the commands into the command buffer, including everything the GPU needs to process the task at runtime.
 
@@ -102,7 +102,7 @@ You encode actual commands with concrete subclasses of [`MTLCommandEncoder`](./m
 
 For a complete rendering example, see [Drawing a triangle with Metal 4](./drawing-a-triangle-with-metal-4.md). For a complete parallel processing example, see [Combining blit and compute operations in a single pass](./combining-blit-and-compute-operations-in-a-single-pass.md).
 
-###### Commit a Command Buffer
+#### Commit a Command Buffer
 
 To submit your commands to run on the GPU, commit the command buffer to the GPU.
 

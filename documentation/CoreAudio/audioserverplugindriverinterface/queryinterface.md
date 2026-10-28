@@ -19,11 +19,11 @@
 int (*)(void *, CFUUIDBytes, void **) QueryInterface;
 ```
 
-#### Return Value
+## Return Value
 
 An error code indicating success of failure.
 
-#### Discussion
+## Discussion
 
 The IUnknown method for interface discovery.
 

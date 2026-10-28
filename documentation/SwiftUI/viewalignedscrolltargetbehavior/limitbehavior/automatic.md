@@ -21,7 +21,7 @@ The automatic limit behavior.
 static var automatic: ViewAlignedScrollTargetBehavior.LimitBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 By default, the behavior will be limited in compact horizontal size classes and will not be limited otherwise.
 

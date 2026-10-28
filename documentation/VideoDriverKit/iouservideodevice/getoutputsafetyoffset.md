@@ -15,11 +15,11 @@ Gets the output safety offset of the device.
 uint32_t GetOutputSafetyOffset();
 ```
 
-#### Return Value
+## Return Value
 
 The output safety offset.
 
-#### Discussion
+## Discussion
 
 A uint32_t whose value indicates the number of frames ahead of the current hardware position that is safe to do IO.
 

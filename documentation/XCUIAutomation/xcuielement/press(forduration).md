@@ -25,7 +25,7 @@ func press(forDuration duration: TimeInterval)
 - (void) pressForDuration:(NSTimeInterval) duration;
 ```
 
-#### Discussion
+## Discussion
 
 If the element exists within a scrollable view but is offscreen, XCTest attempts to scroll the element onscreen before performing the press.
 

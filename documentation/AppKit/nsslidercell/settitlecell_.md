@@ -17,7 +17,7 @@ Sets the cell used to draw the slider’s title.
 - (void) setTitleCell:(NSCell *) cell;
 ```
 
-#### Discussion
+## Discussion
 
 You only need to call this method if the default title cell, `NSTextFieldCell`, doesn’t suit your needs—that is, if you want to display the title in a manner that `NSTextFieldCell` doesn’t permit. When you do choose to override the default, `aCell` should be an instance of a subclass of `NSTextFieldCell`.
 

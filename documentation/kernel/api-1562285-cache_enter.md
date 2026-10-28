@@ -15,11 +15,11 @@ Add a (name,vnode) entry to the VFS namecache.
 void cache_enter(vnode_t dvp, vnode_t vp, struct componentname *cnp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 Generally used to add a cache entry after a successful filesystem-level lookup or to add a negative entry after one which did not find its target.
 

@@ -21,7 +21,7 @@ An effect that makes all layers appear simultaneously.
 - (instancetype) effectWithWholeSymbol;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the effect options that makes all layers appear simultaneously.
 

@@ -25,7 +25,7 @@ func set(_ aData: Data?, forKey aKey: String)
 - (void) setData:(NSData *) aData forKey:(NSString *) aKey;
 ```
 
-#### Discussion
+## Discussion
 
 To store types that aren’t property list objects, archive them to an [`NSData`](../nsdata.md) object first and add that object to the store using this method. Exercise caution when saving custom objects to iCloud. Instances of your app on a person’s other devices must also be able to extract the objects and use them. Design your objects to be portable, and design new versions of your app to support previous versions of your custom types.
 

@@ -24,7 +24,7 @@ var libraryType: MTLLibraryType { get set }
 @property (nonatomic, readwrite) MTLLibraryType libraryType;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLLibraryType.executable`](../mtllibrarytype/executable.md).
 

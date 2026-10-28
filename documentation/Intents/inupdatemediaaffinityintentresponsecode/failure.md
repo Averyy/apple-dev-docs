@@ -24,7 +24,7 @@ case failure
 INUpdateMediaAffinityIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code for both transient and unrecoverable errors that would prevent your app from updating the user’s affinity for the media.
 

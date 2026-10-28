@@ -21,7 +21,7 @@ Moves a complex double-precision vector.
 extern void vDSP_zvmovD(const DSPDoubleSplitComplex *__A, vDSP_Stride __IA, const DSPDoubleSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The following code copies the complex elements in the source to the destination:
 

@@ -21,7 +21,7 @@ Offsets the given index by the specified distance, but no further than the given
 func formIndex(_ index: inout UniqueArray<Element>.Index, offsetBy n: inout Int, limitedBy limit: UniqueArray<Element>.Index)
 ```
 
-#### Discussion
+## Discussion
 
 If the operation was able to offset `index` by exactly the requested number of steps without hitting `limit`, then on return `n` is set to `0`, and `index` is set to the adjusted index.
 

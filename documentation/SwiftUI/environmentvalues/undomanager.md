@@ -21,7 +21,7 @@ The undo manager used to register a view’s undo operations.
 var undoManager: UndoManager? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` when the environment represents a context that doesn’t support undo and redo operations. You can skip registration of an undo operation when this value is `nil`.
 

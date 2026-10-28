@@ -21,7 +21,7 @@ Accesses the element at the specified position.
 subscript(i: Int) -> Element { get }
 ```
 
-#### Overview
+## Overview
 
 The following example uses the buffer pointer’s subscript to access every other element of the buffer:
 

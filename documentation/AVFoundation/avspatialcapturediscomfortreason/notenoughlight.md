@@ -23,7 +23,7 @@ static let notEnoughLight: AVSpatialCaptureDiscomfortReason
 extern AVSpatialCaptureDiscomfortReason const AVSpatialCaptureDiscomfortReasonNotEnoughLight;
 ```
 
-#### Discussion
+## Discussion
 
 The playback experience would likely be uncomfortable due to noise differences between the wide and ultrawide cameras.
 

@@ -19,7 +19,7 @@ var isVideoFieldModeSupported: Bool { get }
 @property (nonatomic, readonly, getter=isVideoFieldModeSupported) BOOL supportsVideoFieldMode;
 ```
 
-#### Discussion
+## Discussion
 
 The property only applies to a video connection’s [`videoFieldMode`](./videofieldmode.md) property.
 

@@ -22,11 +22,11 @@ nonisolated
 func interactionActivityTrackingTag(_ tag: String) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses a tracking tag.
 
-#### Discussion
+## Discussion
 
 The following example tracks the scrolling activity of a [`List`](../list.md):
 

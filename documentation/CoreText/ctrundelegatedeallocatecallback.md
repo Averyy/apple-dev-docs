@@ -25,7 +25,7 @@ typealias CTRunDelegateDeallocateCallback = (UnsafeMutableRawPointer) -> Void
 typedef void (*)(void *) CTRunDelegateDeallocateCallback;
 ```
 
-#### Discussion
+## Discussion
 
 You would declare the deallocation function like this if you were to name it `MyDeallocationCallback`:
 

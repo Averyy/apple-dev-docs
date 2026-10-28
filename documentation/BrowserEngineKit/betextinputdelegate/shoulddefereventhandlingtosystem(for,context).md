@@ -28,11 +28,11 @@ func shouldDeferEventHandlingToSystem(for textInput: any BETextInput, context ke
 
 - [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
-#### Return Value
+## Return Value
 
 `true` if the system handles the key event; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 Call this method on your [`asyncInputDelegate`](../betextinput/asyncinputdelegate.md) when your [`BETextInput`](../betextinput.md) view doesn’t handle a key event, and you pass `false` to the `completionHandler` for [`handleKeyEntry(_:completionHandler:)`](../betextinput/handlekeyentry%28_,completionhandler%29.md).
 

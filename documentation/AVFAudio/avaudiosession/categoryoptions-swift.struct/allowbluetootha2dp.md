@@ -24,7 +24,7 @@ static var allowBluetoothA2DP: AVAudioSession.CategoryOptions { get }
 AVAudioSessionCategoryOptionAllowBluetoothA2DP
 ```
 
-#### Discussion
+## Discussion
 
 A2DP is a stereo, output-only profile intended for higher bandwidth audio use cases, such as music playback. The system automatically routes to A2DP ports if you configure an app’s audio session to use the [`ambient`](../category-swift.struct/ambient.md), [`soloAmbient`](../category-swift.struct/soloambient.md), or [`playback`](../category-swift.struct/playback.md) categories.
 

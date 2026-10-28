@@ -23,11 +23,11 @@ init(frame: CGRect, style: UITableView.Style)
 - (instancetype) initWithFrame:(CGRect) frame style:(UITableViewStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized [`UITableView`](../uitableview.md) object.
 
-#### Discussion
+## Discussion
 
 You must specify the style of a table view when you create it, and you can’t change that style later. If you initialize the table view with the [UIView](https://developer.apple.com/library/archive/releasenotes/iPhone/RN-iPhoneSDK/index.html#//apple_ref/doc/uid/TP40007428-CH1-SW18) method [`init(frame:)`](../uiview/init%28frame%29.md), the [`UITableView.Style.plain`](./style-swift.enum/plain.md) style is used as a default.
 

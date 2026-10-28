@@ -16,7 +16,7 @@ Set reference value associated with this channel.
 void (*SetRefCon)(IOFireWireLibIsochChannelRef self, void *stopProcRefCon);
 ```
 
-#### Discussion
+## Discussion
 
 Retrieve the reference value with GetRefCon()
 

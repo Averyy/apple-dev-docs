@@ -4,7 +4,7 @@
 
 Displays a number.
 
-#### Overview
+## Overview
 
 The `ordinal` element displays a number on the screen and provides proper spacing between the text and the number. Use the `ordinal` element to create an ordered list. Here’s an example that reserves the spacing for two digits.
 
@@ -16,7 +16,7 @@ The `ordinal` element displays a number on the screen and provides proper spacin
 </listItemLockup>
 ```
 
-##### Contained In
+### Contained In
 
 - [listItemLockup](./listitemlockup.md)
 - [organizer](./organizer.md)

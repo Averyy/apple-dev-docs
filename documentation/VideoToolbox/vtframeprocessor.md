@@ -24,7 +24,7 @@ class VTFrameProcessor
 @interface VTFrameProcessor : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class to perform frame by frame processing on your video. Start by specifying a video effect by passing a [`VTFrameProcessorConfiguration`](./vtframeprocessorconfiguration.md) object to the [`startSession(configuration:)`](./vtframeprocessor/startsession%28configuration%29.md) call. Once the session is created, [`process(parameters:completionHandler:)`](./vtframeprocessor/process%28parameters,completionhandler%29.md) is called in a loop to process your video’s frames one at a time. Once all the frames are processed, call an [`endSession()`](./vtframeprocessor/endsession%28%29.md) to finish all pending processing.
 

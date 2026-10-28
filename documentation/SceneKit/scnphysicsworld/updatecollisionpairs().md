@@ -25,7 +25,7 @@ func updateCollisionPairs()
 - (void) updateCollisionPairs;
 ```
 
-#### Discussion
+## Discussion
 
 By default, SceneKit checks for collisions between physics bodies only once per simulation step. If you directly change the positions of any physics bodies outside of a [`SCNPhysicsContactDelegate`](../scnphysicscontactdelegate.md) method, call the [`updateCollisionPairs()`](./updatecollisionpairs%28%29.md) method before using any of the methods listed in Searching for Physics Bodies Detecting Contacts Between Physics Bodies.
 

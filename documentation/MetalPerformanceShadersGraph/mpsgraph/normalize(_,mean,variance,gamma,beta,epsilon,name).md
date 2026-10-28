@@ -24,11 +24,11 @@ func normalize(_ tensor: MPSGraphTensor, mean: MPSGraphTensor, variance: MPSGrap
 - (MPSGraphTensor *) normalizationWithTensor:(MPSGraphTensor *) tensor meanTensor:(MPSGraphTensor *) mean varianceTensor:(MPSGraphTensor *) variance gammaTensor:(MPSGraphTensor *) gamma betaTensor:(MPSGraphTensor *) beta epsilon:(float) epsilon name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object.
 
-#### Discussion
+## Discussion
 
 The mean and variance tensors should be outputs of `meanWithTensor:axes:name` and `varianceWithTensor:meanTensor:axes:name`. Use the axes parameter to achieve different types of normalizations. For example (assuming your data is in NxHxWxC format) Batch normalization: axes = [0, 1, 2] Instance normalization: axes = [1, 2] Shapes for gamma and beta must match the input data along at least one dimension and will be broadcast along the rest. For batch normalization, gamma and beta would typically be 1x1x1xC i.e. one value per channel.
 

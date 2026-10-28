@@ -21,7 +21,7 @@ A transformer that takes an asynchronous input sequence of temporal features and
 protocol TemporalTransformer<Input, Output>
 ```
 
-#### Overview
+## Overview
 
 A temporal transformer, unlike a regular transformer, can accumulate multiple inputs before producing an output. For example, an audio transformer can accumulate audio buffers until the desired length is reached before producing an output.
 

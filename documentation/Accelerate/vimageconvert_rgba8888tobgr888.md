@@ -21,11 +21,11 @@ Removes the alpha channel from an 8-bit-per-channel RGBA buffer to produce an 8-
 #define vImageConvert_RGBA8888toBGR888(_rgbaSrc, _bgrDest, _flags)
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function copies the red, green, and blue source channels to the destination buffer.
 

@@ -22,7 +22,7 @@ var shouldShowLinkedContacts: Bool { get set }
 @property (nonatomic, assign) BOOL shouldShowLinkedContacts;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this property is [`false`](../../Swift/false.md).
 

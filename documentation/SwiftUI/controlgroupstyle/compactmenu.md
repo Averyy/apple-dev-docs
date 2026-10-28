@@ -22,7 +22,7 @@ nonisolated static var compactMenu: CompactMenuControlGroupStyle { get }
 
 Available when `Self` is `CompactMenuControlGroupStyle`.
 
-#### Discussion
+## Discussion
 
 To apply this style to a control group, or to a view that contains control groups, use the [`controlGroupStyle(_:)`](../view/controlgroupstyle%28_%29.md) modifier.
 

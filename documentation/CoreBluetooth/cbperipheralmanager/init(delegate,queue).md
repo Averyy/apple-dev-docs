@@ -22,11 +22,11 @@ convenience init(delegate: (any CBPeripheralManagerDelegate)?, queue: dispatch_q
 - (instancetype) initWithDelegate:(id<CBPeripheralManagerDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a newly initialized peripheral manager.
 
-#### Discussion
+## Discussion
 
 For more information, see [Core Bluetooth Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
 

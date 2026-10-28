@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Offers the ability to uninstall executable products previously installed by `swift package experimental-install`.
 
-#### Overview
+## Overview
 
 ```
 package experimental-uninstall

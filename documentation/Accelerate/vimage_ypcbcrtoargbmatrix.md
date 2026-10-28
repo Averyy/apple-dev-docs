@@ -25,7 +25,7 @@ struct vImage_YpCbCrToARGBMatrix
 typedef struct vImage_YpCbCrToARGBMatrix { ... } vImage_YpCbCrToARGBMatrix;
 ```
 
-#### Overview
+## Overview
 
 The vImage library uses this matrix to convert from YpCbCr to RGB using the following multiplication:
 

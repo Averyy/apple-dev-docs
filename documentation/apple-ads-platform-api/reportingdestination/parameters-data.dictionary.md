@@ -15,7 +15,7 @@ Destination-specific parameters for the creative’s post-tap experience, as rec
 object ReportingDestination.Parameters
 ```
 
-#### Discussion
+## Discussion
 
 See [`DestinationParameter`](../destinationparameter.md) for the full field reference.
 

@@ -19,11 +19,11 @@ func subrowIndexes(forRow rowIndex: Int) -> IndexSet
 - (NSIndexSet *) subrowIndexesForRow:(NSInteger) rowIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The immediate subrows of the row at `rowIndex`.
 
-#### Discussion
+## Discussion
 
 Rows are numbered starting at `0`.
 

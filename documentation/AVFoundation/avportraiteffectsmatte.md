@@ -29,7 +29,7 @@ class AVPortraitEffectsMatte
 
 - [Extracting Portrait Effects matte image data from a photo](./extracting-portrait-effects-matte-image-data-from-a-photo.md)
 
-#### Overview
+## Overview
 
 Before iOS 11, the iPhone camera software used depth maps to render a shallow depth of field (the *bokeh* effect) into still images taken in Portrait Mode before discarding the maps. Because the effect was part of the photo, you couldn’t access the maps separately, as metadata, for photos taken by devices running iOS 10 or earlier.
 

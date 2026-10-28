@@ -22,7 +22,7 @@ func drawContentForPage(at pageIndex: Int, in contentRect: CGRect)
 - (void) drawContentForPageAtIndex:(NSInteger) pageIndex inRect:(CGRect) contentRect;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Override this method to draw the content of the specified page.
 

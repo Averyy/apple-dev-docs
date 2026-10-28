@@ -20,7 +20,7 @@ class ARParticipantAnchor
 @interface ARParticipantAnchor : ARAnchor
 ```
 
-#### Overview
+## Overview
 
 When you set [`isCollaborationEnabled`](./arworldtrackingconfiguration/iscollaborationenabled.md) to true, ARKit calls [`session(_:didAdd:)`](./arsessiondelegate/session%28_,didadd%29.md) with an [`ARParticipantAnchor`](./arparticipantanchor.md) for every user it detects in your physical environment, providing you with their world position.
 

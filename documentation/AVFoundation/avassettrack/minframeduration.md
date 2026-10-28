@@ -26,7 +26,7 @@ var minFrameDuration: CMTime { get }
 @property (nonatomic, readonly) CMTime minFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 A track’s minimum frame duration is the reciprocal of its maximum frame rate. For example, a video track with a maximum frame rate of 30 frames per second has a minimum frame duration of 1/30, or 0.033 seconds.
 

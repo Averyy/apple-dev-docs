@@ -24,7 +24,7 @@ protocol UINavigationBarDelegate : UIBarPositioningDelegate
 @protocol UINavigationBarDelegate <UIBarPositioningDelegate>
 ```
 
-#### Overview
+## Overview
 
 The [`UINavigationBarDelegate`](./uinavigationbardelegate.md) protocol defines optional methods that a [`UINavigationBar`](./uinavigationbar.md) [`delegate`](./uinavigationbar/delegate.md) implements to update its views when items push or pop from the stack. The navigation bar represents only the bar at the top of the screen, not the view below. It’s the application’s responsibility to implement the behavior when the top item changes.
 

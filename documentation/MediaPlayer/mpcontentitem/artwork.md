@@ -24,7 +24,7 @@ var artwork: MPMediaItemArtwork? { get set }
 @property (nonatomic, strong, nullable) MPMediaItemArtwork * artwork;
 ```
 
-#### Discussion
+## Discussion
 
 An image that’s displayed with the media item. A song would have an album cover image, whereas a movie could have a movie poster image associated with it.
 

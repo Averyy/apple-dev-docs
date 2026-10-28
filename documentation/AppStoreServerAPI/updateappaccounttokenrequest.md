@@ -19,7 +19,7 @@ object UpdateAppAccountTokenRequest
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 This is the request body for the [`Set App Account Token`](./set-app-account-token.md) endpoint.
 

@@ -21,7 +21,7 @@ A block that takes no arguments and returns no value.
 typedef void (^)(void) os_block_t;
 ```
 
-#### Discussion
+## Discussion
 
 When not building with Objective-C ARC, a block object allocated on or copied to the heap must be released with a [`release`](../ObjectiveC/nsobject-c.protocol/release.md) message or the `Block_release` function.
 

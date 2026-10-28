@@ -25,7 +25,7 @@ let MPNowPlayingInfoCollectionIdentifier: String
 extern NSString * const MPNowPlayingInfoCollectionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier can be an album, artist, playlist, etc.
 

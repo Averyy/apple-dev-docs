@@ -25,7 +25,7 @@ static var rpcVersionMismatch: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The version of RPC on the remote peer isn’t compatible with the local version.
 

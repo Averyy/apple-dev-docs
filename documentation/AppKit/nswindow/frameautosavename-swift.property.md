@@ -19,7 +19,7 @@ var frameAutosaveName: NSWindow.FrameAutosaveName { get }
 @property (copy, readonly) NSWindowFrameAutosaveName frameAutosaveName;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a value to this property reloads the associated frame, which can result in moving the window to that frame’s location.
 

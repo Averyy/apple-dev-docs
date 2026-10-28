@@ -22,7 +22,7 @@ var image: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 This property is used only when the action is displayed in the navigation bar. By default, it is set to `nil`, and the navigation bar displays the value of the action’s [`localizedTitle`](./localizedtitle.md) property.
 

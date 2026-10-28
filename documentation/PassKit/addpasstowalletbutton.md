@@ -19,7 +19,7 @@ A type that provides a button that enables people to add a new or existing pass 
 @preconcurrency struct AddPassToWalletButton<Fallback> where Fallback : View
 ```
 
-#### Overview
+## Overview
 
 Use this structure as the SwiftUI equivalent to [`PKAddPassButton`](./pkaddpassbutton.md). For design guidance, see Human Interface Guidelines > Technologies > [Wallet](https://developer.apple.com/design/human-interface-guidelines/wallet#Passes).
 

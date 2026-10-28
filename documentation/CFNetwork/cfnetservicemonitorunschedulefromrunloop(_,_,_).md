@@ -26,13 +26,13 @@ func CFNetServiceMonitorUnscheduleFromRunLoop(_ monitor: CFNetServiceMonitor, _ 
 extern void CFNetServiceMonitorUnscheduleFromRunLoop(CFNetServiceMonitorRef monitor, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 Unschedules the specified monitor from the specified run loop and mode. Call this function to shut down a monitor that is running asynchronously.
 
 To change a monitor so that it cannot be scheduled and so that its callback will never be called, call [`CFNetServiceMonitorInvalidate(_:)`](./cfnetservicemonitorinvalidate%28_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

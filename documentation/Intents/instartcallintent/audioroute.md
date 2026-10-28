@@ -32,7 +32,7 @@ var audioRoute: INCallAudioRoute { get }
 @property (atomic, assign, readonly) INCallAudioRoute audioRoute;
 ```
 
-#### Discussion
+## Discussion
 
 The property contains the call’s audio route. For example, when the value of this property is [`INCallAudioRoute.bluetoothAudioRoute`](../incallaudioroute/bluetoothaudioroute.md), the user is attempting to use a bluetooth device for the call.
 

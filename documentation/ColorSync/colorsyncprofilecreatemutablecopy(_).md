@@ -25,7 +25,7 @@ func ColorSyncProfileCreateMutableCopy(_ prof: ColorSyncProfile!) -> Unmanaged<C
 extern ColorSyncMutableProfileRefColorSyncProfileCreateMutableCopy(ColorSyncProfileRef prof);
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable profile, or `NULL` in case of failure.
 

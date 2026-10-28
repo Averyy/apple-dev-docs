@@ -16,11 +16,11 @@ Returns the maximum number of elements that can exist in the group.
 int group::elementMaximumInGroup()
 ```
 
-#### Return Value
+## Return Value
 
 The maximum number of elements allocated for this group
 
-#### Discussion
+## Discussion
 
 Use this function to determine the fixed capacity of particles per group, which is useful for normalizing element indices or managing group resources.
 

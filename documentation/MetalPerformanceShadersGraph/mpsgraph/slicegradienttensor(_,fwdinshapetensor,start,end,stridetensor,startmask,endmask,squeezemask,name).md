@@ -24,7 +24,7 @@ func sliceGradientTensor(_ inputGradientTensor: MPSGraphTensor, fwdInShapeTensor
 - (MPSGraphTensor *) sliceGradientTensor:(MPSGraphTensor *) inputGradientTensor fwdInShapeTensor:(MPSGraphTensor *) fwdInShapeTensor startTensor:(MPSGraphTensor *) startTensor endTensor:(MPSGraphTensor *) endTensor strideTensor:(MPSGraphTensor *) strideTensor startMask:(uint32_t) startMask endMask:(uint32_t) endMask squeezeMask:(uint32_t) squeezeMask name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 

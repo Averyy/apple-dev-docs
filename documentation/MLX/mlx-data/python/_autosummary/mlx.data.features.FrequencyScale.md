@@ -6,18 +6,19 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.da
 
 # mlx.data.features.FrequencyScale
 
-***class *mlx.data.features.FrequencyScale(*value*)**
-: Enum to choose the frequency scaling for the filter banks.
+```python
+class mlx.data.features.FrequencyScale(value)
+```
 
-__init__(**args*, ***kwds*)
+Enum to choose the frequency scaling for the filter banks.
+
+```python
+__init__(*args, **kwds)
+```
 
 Attributes
 
-`MEL`
-The commonly used Mel scale.
-
-`LOG10`
-Logarithmic scale.
-
-`LINEAR`
-No scaling.
+| `MEL` | The commonly used Mel scale. |
+| --- | --- |
+| `LOG10` | Logarithmic scale. |
+| `LINEAR` | No scaling. |

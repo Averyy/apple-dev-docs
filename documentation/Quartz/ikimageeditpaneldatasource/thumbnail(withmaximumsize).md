@@ -19,7 +19,7 @@ optional func thumbnail(withMaximumSize size: NSSize) -> Unmanaged<CGImage>!
 - (CGImageRef) thumbnailWithMaximumSize:(NSSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 An image.
 

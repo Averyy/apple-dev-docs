@@ -19,7 +19,7 @@ A Boolean value that controls whether the scroll view animates the content scali
 final var bouncesZoom: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When enabled, a person can zoom past the minimum or maximum scale while gesturing, and the scale animates to the minimum or maximum value when the gesture ends. Default is `true`.
 

@@ -19,7 +19,7 @@ func controlType() -> PDFWidgetControlType
 - (PDFWidgetControlType) controlType;
 ```
 
-#### Return Value
+## Return Value
 
 The type of control the button represents.
 

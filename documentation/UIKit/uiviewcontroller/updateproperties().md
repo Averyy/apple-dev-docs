@@ -28,7 +28,7 @@ func updateProperties()
 - [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 - [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md)
 
-#### Overview
+## Overview
 
 Override this method to configure the view’s content and styling in your view controller subclass. Don’t call this method directly; instead, call [`setNeedsUpdateProperties()`](./setneedsupdateproperties%28%29.md) to schedule an update.
 

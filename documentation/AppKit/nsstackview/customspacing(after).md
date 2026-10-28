@@ -19,11 +19,11 @@ func customSpacing(after view: NSView) -> CGFloat
 - (CGFloat) customSpacingAfterView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The number of points between the trailing edge of the specified view and the one that follows it (that is, the one with the next highest index order).
 
-#### Discussion
+## Discussion
 
 If you set custom spacing for a view using the [`setCustomSpacing(_:after:)`](./setcustomspacing%28_,after%29.md) method, it overrides the stack view’s default spacing as set in the [`spacing`](./spacing.md) property.
 

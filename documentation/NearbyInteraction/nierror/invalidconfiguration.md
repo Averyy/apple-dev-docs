@@ -18,7 +18,7 @@ An error code that indicates that the nearby-interaction configuration isn’t v
 static var invalidConfiguration: NIError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The framework invalidates a session with this error code if the app provides an invalid discovery token to the [`init(peerToken:)`](../ninearbypeerconfiguration/init%28peertoken%29.md) initializer.
 

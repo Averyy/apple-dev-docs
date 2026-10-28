@@ -24,11 +24,11 @@ class func linearBurnBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) linearBurnBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the linear-burn blend mode filter to an image. The effect calculates the brightness value for the background image then darkens it to reflect the brightness of the input image. The effect then decreases the contrast in the output image.
 

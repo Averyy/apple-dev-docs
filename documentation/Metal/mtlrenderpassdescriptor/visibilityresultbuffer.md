@@ -24,7 +24,7 @@ var visibilityResultBuffer: (any MTLBuffer)? { get set }
 @property (nonatomic, strong, nullable) id<MTLBuffer> visibilityResultBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 When encoding a render pass, you can tell the GPU to record data about fragments that pass depth and stencil tests. Typically, you use visibility testing to track whether a particular piece of geometry is visible in the current frame, so you can omit drawing calls for hidden objects when encoding future frames. This technique is sometimes called *occlusion culling*. You can record separate tests for different pieces of geometry.
 

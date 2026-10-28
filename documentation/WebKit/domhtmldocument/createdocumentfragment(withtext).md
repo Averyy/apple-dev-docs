@@ -19,11 +19,11 @@ func createDocumentFragment(withText text: String!) -> DOMDocumentFragment!
 - (DOMDocumentFragment *) createDocumentFragmentWithText:(NSString *) text;
 ```
 
-#### Return Value
+## Return Value
 
 A `DOMDocumentFragment` object derived from the source text.
 
-#### Discussion
+## Discussion
 
 This is a convenience method for the `createDocumentFragment` method in `DOMDocument`. This method creates a fragment that contains the supplied plain text.
 

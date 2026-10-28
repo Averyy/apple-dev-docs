@@ -21,11 +21,11 @@ Creates a dictionary containing entries constructed from the contents of an arra
 + (instancetype) dictionaryWithObjects:(NSArray<id> *) objects forKeys:(NSArray<id<NSCopying>> *) keys;
 ```
 
-#### Return Value
+## Return Value
 
 A new dictionary containing entries constructed from the contents of `objects` and `keys`.
 
-#### Discussion
+## Discussion
 
 This method steps through the `objects` and `keys` arrays, creating entries in the new dictionary as it goes. An `NSInvalidArgumentException` is raised if objects and keys don’t have the same number of elements.
 

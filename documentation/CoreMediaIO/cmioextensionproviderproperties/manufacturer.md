@@ -20,7 +20,7 @@ var manufacturer: String? { get set }
 @property (atomic, strong, nullable) NSString * manufacturer;
 ```
 
-#### Discussion
+## Discussion
 
 The key for this property is [`providerManufacturer`](../cmioextensionproperty/providermanufacturer.md).
 

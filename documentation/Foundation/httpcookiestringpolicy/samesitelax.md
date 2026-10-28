@@ -25,7 +25,7 @@ static let sameSiteLax: HTTPCookieStringPolicy
 extern NSHTTPCookieStringPolicy const NSHTTPCookieSameSiteLax;
 ```
 
-#### Discussion
+## Discussion
 
 When a cookie has this policy, a request includes the cookie if the request is “top-level,”, meaning one that changes the URL in the address bar.
 

@@ -25,7 +25,7 @@ var isValid: Bool { get }
 @property (readonly, getter=isValid) BOOL valid;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver is still capable of firing or [`false`](../../Swift/false.md) if the timer has been invalidated and is no longer capable of firing.
 

@@ -19,7 +19,7 @@ func xpc_activity_unregister(_ identifier: UnsafePointer<CChar>)
 extern void xpc_activity_unregister(const char *identifier);
 ```
 
-#### Discussion
+## Discussion
 
 A dynamically registered activity will be deleted in response to this call. Statically registered activity (from a launchd property list) will be reverted to its original criteria if any modifications were made.
 

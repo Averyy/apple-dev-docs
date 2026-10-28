@@ -21,7 +21,7 @@ var trailingItem: CPMessageTrailingItem { get }
 @property (nonatomic, readonly) CPMessageTrailingItem trailingItem;
 ```
 
-#### Discussion
+## Discussion
 
 Configurations are immutable. To change or remove the item that the message list item’s trailing region shows, create a new configuration and update the list item’s [`trailingConfiguration`](../cpmessagelistitem/trailingconfiguration.md) property.
 

@@ -21,7 +21,7 @@ Returns a structure containing the parameters of a reduction layer from the spec
 init(i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, w_desc: BNNSNDArrayDescriptor, reduce_func: BNNSReduceFunction, epsilon: Float)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The number of input dimensions must be equal to number of output dimensions, and equal to the number of weights dimensions. The reduction layer only supports `float`, with the exception of [`BNNSReduceFunctionLogicalOr`](../bnnsreducefunctionlogicalor.md) and [`BNNSReduceFunctionLogicalAnd`](../bnnsreducefunctionlogicaland.md) that support `float` and `BNNSDataTypeBoolean`.
 

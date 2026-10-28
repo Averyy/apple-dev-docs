@@ -5,9 +5,9 @@
 
 This file contains all definitions for the data returned from the REPORT_LUNS (0xA0) command.
 
-#### Overview
+## Overview
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/IOTypes.h>
 - <CoreFoundation/CoreFoundation.h>

@@ -30,11 +30,11 @@ class func supportedRecognitionLanguages(for recognitionLevel: VNRequestTextReco
 
 - [Recognizing Text in Images](../recognizing-text-in-images.md)
 
-#### Return Value
+## Return Value
 
 An array of supported languages, listed as ISO language codes.
 
-#### Discussion
+## Discussion
 
 A language supported in one recognition level may not be available in another recognition level.
 

@@ -21,7 +21,7 @@ A workgroup object that supports the scheduling of threads on a repeating cadenc
 typedef OS_os_workgroup<OS_os_workgroup_interval> * os_workgroup_interval_t;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `os_workgroup_interval_create` function to create a new interval workgroup for your app. Use the workgroup that method returns to configure the group’s attributes, and to start, update, and stop the interval work. You can also create a reference to a workgroup using the [`os_workgroup_create_with_workgroup`](./os_workgroup_create_with_workgroup.md) function.
 

@@ -15,7 +15,7 @@ The start date of a timespan, expressed in UNIX time, in milliseconds.
 timestamp startDate
 ```
 
-#### Discussion
+## Discussion
 
 The start date must be earlier than the [`endDate`](./enddate.md).
 

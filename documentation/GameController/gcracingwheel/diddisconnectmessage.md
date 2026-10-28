@@ -16,7 +16,7 @@ A message that posts after a racing wheel accessory disconnects from the device.
 struct DidDisconnectMessage
 ```
 
-#### Overview
+## Overview
 
 Use the `.didDisconnect` identifier with `NotificationCenter` to listen for this message.
 

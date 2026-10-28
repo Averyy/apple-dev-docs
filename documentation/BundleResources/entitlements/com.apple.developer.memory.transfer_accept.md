@@ -15,7 +15,7 @@ An entitlement that grants an alternative browser engine’s web-content extensi
 - **Name**: `com.apple.developer.memory.transfer_accept`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Add this entitlement to your alternative browser engine’s web-content extension to increase the memory allocation for its rendering extension. Set the value of this entitlement to your browser app’s bundle ID.
 

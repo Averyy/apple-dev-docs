@@ -20,7 +20,7 @@ Returns the asset pack in this manifest with the given identifier.
 - (BAAssetPack *) assetPackWithIdentifier:(NSString *) assetPackIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The asset pack, if it could be found in this manifest; otherwise, `nil`.
 

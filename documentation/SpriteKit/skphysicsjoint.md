@@ -29,7 +29,7 @@ class SKPhysicsJoint
 
 - [Getting Started with Physics](./getting-started-with-physics.md)
 
-#### Overview
+## Overview
 
 An [`SKPhysicsJoint`](./skphysicsjoint.md) object connects two physics bodies so that they are simulated together by the physics world. You never instantiate objects of this class directly; instead, you instantiate one of the subclasses that defines the kind of joint you want to make.
 

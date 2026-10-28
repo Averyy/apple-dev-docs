@@ -21,7 +21,7 @@ A format style that refers to a date using the most natural phrasing based on ho
 struct DateReference
 ```
 
-#### Overview
+## Overview
 
 `DateReference` adapts its output based on how far the referenced date is from the input (which is typically the current time). Close dates use a relative representation, while distant dates switch to an absolute one.
 
@@ -30,7 +30,7 @@ struct DateReference
 Text(.currentDate, format: .reference(to: eventDate))
 ```
 
-##### Relative vs. absolute representation
+### Relative vs. absolute representation
 
 The style uses a relative format (“in 2 hours”, “3 days ago”) when the referenced date is within the threshold distance. Beyond that threshold, it switches to an absolute format (“Monday, June 3”, “June 2019”).
 
@@ -47,7 +47,7 @@ The `thresholdField` parameter controls where this switch happens. With the defa
 | > 1 month | Absolute | `Monday, June 3` |
 | > 1 year | Absolute | `June 2019` |
 
-##### Controlling the absolute representation
+### Controlling the absolute representation
 
 The `maxFieldCount` parameter determines how many date components appear in the absolute representation:
 

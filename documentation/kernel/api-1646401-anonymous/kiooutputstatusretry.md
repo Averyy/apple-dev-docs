@@ -13,7 +13,7 @@
 kIOOutputStatusRetry = 0x0002
 ```
 
-#### Discussion
+## Discussion
 
 Target ran out of resources, and is unable to accept the packet. The ownership of the packet reverts back to the queue.
 

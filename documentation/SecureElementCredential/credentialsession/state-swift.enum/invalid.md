@@ -16,7 +16,7 @@ The state of an invalid credential session.
 case invalid
 ```
 
-#### Discussion
+## Discussion
 
 An invalid session is no longer available for use. To resume Secure Element credential functionality, call [`startSession()`](../startsession%28%29.md) to create a new session.
 

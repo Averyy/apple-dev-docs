@@ -24,7 +24,7 @@ let HMCharacteristicTypeIsConfigured: String
 extern NSString * const HMCharacteristicTypeIsConfigured;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueConfigurationState`](./hmcharacteristicvalueconfigurationstate.md) enumeration.
 

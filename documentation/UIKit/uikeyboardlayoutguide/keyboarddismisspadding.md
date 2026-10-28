@@ -22,7 +22,7 @@ var keyboardDismissPadding: CGFloat { get set }
 @property (nonatomic, readwrite) CGFloat keyboardDismissPadding;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `0`. The system treats negative values as `0`.
 

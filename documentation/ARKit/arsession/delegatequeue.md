@@ -20,7 +20,7 @@ var delegateQueue: dispatch_queue_t? { get set }
 @property (nonatomic, strong, nullable) dispatch_queue_t delegateQueue;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `nil` (the default), the session calls your delegate methods on the main queue.
 

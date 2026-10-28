@@ -24,7 +24,7 @@ class GKPolygonObstacle
 @interface GKPolygonObstacle : GKObstacle
 ```
 
-#### Overview
+## Overview
 
 Polygon obstacles serve two purposes in GameplayKit: You can use polygon obstacles to construct a navigability graph of your game world (a [`GKObstacleGraph`](./gkobstaclegraph.md) object) for use in pathfinding. You can also use polygon obstacles to define regions for agents ([`GKAgent`](./gkagent.md) objects) to avoid, using the [`GKGoal`](./gkgoal.md) method [`init(toAvoid:maxPredictionTime:)`](./gkgoal/init%28toavoid,maxpredictiontime%29-7oslq.md).
 

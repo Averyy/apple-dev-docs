@@ -24,7 +24,7 @@ func startForegroundDownload(_ download: BADownload) throws
 - (BOOL) startForegroundDownload:(BADownload *) download error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to start new asset downloads immediately, or to promote existing, queued downloads that are yet to start. Only use this method in your app; the framework throws an error if you attempt to start a foreground download in your extension.
 

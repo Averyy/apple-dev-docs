@@ -24,7 +24,7 @@ var binaryLinkedFunctions: [any MTL4BinaryFunction]? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSArray<id<MTL4BinaryFunction>> * binaryLinkedFunctions;
 ```
 
-#### Discussion
+## Discussion
 
 Binary functions are shader functions that you compile from Metal IR to machine code ahead of time using instances of [`MTL4Compiler`](../mtl4compiler.md).
 

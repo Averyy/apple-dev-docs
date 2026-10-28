@@ -21,7 +21,7 @@ An alias for the network service type.
 typealias NetworkServiceType = NSURLRequest.NetworkServiceType
 ```
 
-#### Discussion
+## Discussion
 
 This Swift type is aliased to [`NSURLRequest.NetworkServiceType`](../nsurlrequest/networkservicetype-swift.enum.md).
 

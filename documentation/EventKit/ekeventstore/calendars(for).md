@@ -28,7 +28,7 @@ func calendars(for entityType: EKEntityType) -> [EKCalendar]
 
 - [Retrieving events and reminders](../retrieving-events-and-reminders.md)
 
-#### Return Value
+## Return Value
 
 An array of calendars that support the specified entity type.
 

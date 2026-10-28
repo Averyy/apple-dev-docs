@@ -25,7 +25,7 @@ extern NSString * const GCControllerDidConnectNotification;
 - [Adding virtual controls to games that support game controllers in iOS](./adding-virtual-controls-to-games-that-support-game-controllers-in-ios.md)
 - [Discovering game controllers](./discovering-game-controllers.md)
 
-#### Discussion
+## Discussion
 
 The notification object is the [`GCController`](./gccontroller.md) object that connects to the device.
 

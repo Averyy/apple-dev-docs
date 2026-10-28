@@ -19,7 +19,7 @@ func editableDOMRange(for point: NSPoint) -> DOMRange!
 - (DOMRange *) editableDOMRangeForPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A single range object of the editable DOM object located at `point` in the receiver’s coordinates.
 

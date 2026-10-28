@@ -24,7 +24,7 @@ enum PrepareHandlerReason
 enum PHASESoundEventPrepareHandlerReason : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The sound event [`prepare(completion:)`](./prepare%28completion%29.md) function passes an instance of this class to its argument completion closure to communicate the results of the call.
 

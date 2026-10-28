@@ -27,7 +27,7 @@ func getUserVisibleURL(for itemIdentifier: NSFileProviderItemIdentifier) async t
 - (void) getUserVisibleURLForItemIdentifier:(NSFileProviderItemIdentifier) itemIdentifier completionHandler:(void (^)(NSURL *userVisibleFile, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

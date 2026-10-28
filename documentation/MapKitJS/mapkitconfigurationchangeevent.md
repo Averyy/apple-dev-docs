@@ -15,7 +15,7 @@ An event that represents a configuration change.
 class MapKitConfigurationChangeEvent extends Event
 ```
 
-#### Discussion
+## Discussion
 
 The event’s `status` property indicates the configuration change status.
 

@@ -23,7 +23,7 @@ static let from: UITransitionContextViewKey
 extern UITransitionContextViewKey const UITransitionContextFromViewKey;
 ```
 
-#### Discussion
+## Discussion
 
 This view is typically the presenting view controller’s view.
 

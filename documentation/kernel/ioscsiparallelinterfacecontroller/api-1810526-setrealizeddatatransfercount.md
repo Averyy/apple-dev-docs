@@ -13,7 +13,7 @@ bool SetRealizedDataTransferCount (
  UInt64realizedTransferCountInBytes );
 ```
 
-#### Return Value
+## Return Value
 
 true means the data transfer count was successfully set.
 

@@ -21,7 +21,7 @@ The short representation of a standalone weekday.
 static var short: Date.FormatStyle.Symbol.StandaloneWeekday { get }
 ```
 
-#### Discussion
+## Discussion
 
 This custom format style conveys a short representation of a standalone weekday like `Mo` for Monday. For an even shorter representation, see [`narrow`](./narrow.md).
 

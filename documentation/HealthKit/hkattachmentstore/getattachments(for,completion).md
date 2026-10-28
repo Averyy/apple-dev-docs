@@ -28,7 +28,7 @@ func attachments(for object: HKObject) async throws -> [HKAttachment]
 - (void) getAttachmentsForObject:(HKObject *) object completion:(void (^)(NSArray<HKAttachment *> *attachments, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to get all the attachments for the specified object.
 

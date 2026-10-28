@@ -24,7 +24,7 @@ struct Environment
 - [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 - [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 `DiagnosticReport.Environment` carries device and app context alongside state and signpost data captured around the time of the diagnostic event.
 

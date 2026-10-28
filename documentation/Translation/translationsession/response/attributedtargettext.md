@@ -18,7 +18,7 @@ The translated formatted text.
 let attributedTargetText: AttributedString?
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the translated text with formatting and defined attributes preserved and aligned from the source text.
 

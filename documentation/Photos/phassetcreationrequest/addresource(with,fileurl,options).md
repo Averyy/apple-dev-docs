@@ -24,7 +24,7 @@ func addResource(with type: PHAssetResourceType, fileURL: URL, options: PHAssetR
 - (void) addResourceWithType:(PHAssetResourceType) type fileURL:(NSURL *) fileURL options:(PHAssetResourceCreationOptions *) options;
 ```
 
-#### Discussion
+## Discussion
 
 Photos imports the asset resource data only when it executes the [`PHPhotoLibrary`](../phphotolibrary.md) change block in which you create a [`PHAssetCreationRequest`](../phassetcreationrequest.md) object and call this method. If you attempt to create an asset with invalid data or an invalid combination of resources, Photos reports an error in the completion handler of your [`PHPhotoLibrary`](../phphotolibrary.md) call.
 

@@ -10,7 +10,7 @@ Three bytes of space for flags.
 
 - [Representing encoder delay explicitly](../example_representing_encoder_delay_explicitly.md)
 
-#### Overview
+## Overview
 
 Set this field to `0`.
 

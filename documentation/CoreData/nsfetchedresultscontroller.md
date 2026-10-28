@@ -25,7 +25,7 @@ class NSFetchedResultsController<ResultType> where ResultType : NSFetchRequestRe
 @interface NSFetchedResultsController : NSObject
 ```
 
-#### Overview
+## Overview
 
 While you can use table views can in several ways, fetched results controllers primarily assist you with a primary list view. [`UITableView`](../UIKit/uitableview.md) expects its data source to provide cells as an array of sections made up of rows. You configure a fetched results controller using a *fetch request* — an object that specifies what type of entity to fetch and how to sort the results. You can also add criteria for when to include a specific instance of the entity.
 
@@ -44,9 +44,9 @@ A controller thus effectively has three modes of operation, determined by whethe
 
 > ❗ **Important**:  A delegate must implement at least one of the change tracking delegate methods to enable change tracking. Providing an empty implementation of [`controllerDidChangeContent(_:)`](./nsfetchedresultscontrollerdelegate/controllerdidchangecontent%28_%29.md) is sufficient.
 
-##### Using NSFetchedResultsController
+### Using NSFetchedResultsController
 
-###### Creating the fetched results controller
+#### Creating the fetched results controller
 
 You typically create an instance of [`NSFetchedResultsController`](./nsfetchedresultscontroller.md) as an instance variable of a table view controller. When you initialize the fetch results controller, you provide four parameters:
 
@@ -90,11 +90,11 @@ do {
 
 > ❗ **Important**:  If you use a cache, call [`deleteCache(withName:)`](./nsfetchedresultscontroller/deletecache%28withname%29.md) before changing any of the fetch request, its predicate, or its sort descriptors. Don’t reuse the same fetched results controller for multiple queries unless you set the [`cacheName`](./nsfetchedresultscontroller/cachename.md) to `nil`.
 
-###### The controller’s delegate
+#### The controller’s delegate
 
 If you set a delegate for a fetched results controller, the controller registers to receive change notifications from its managed object context. The controller processes any change in the context that affects the result set or section information and updates the results as necessary. The controller notifies the delegate when result objects change location or when changes occur in sections. For more information, see [`NSFetchedResultsControllerDelegate`](./nsfetchedresultscontrollerdelegate.md). You typically use these methods to update the display of the table view.
 
-###### The cache
+#### The cache
 
 Where possible, a controller uses a cache to avoid the need to repeat work performed in setting up any sections and ordering the contents. The system maintains the cache across launches of your application.
 
@@ -113,7 +113,7 @@ If you create multiple fetched results controllers with different configurations
 
 You can purge a cache using [`deleteCache(withName:)`](./nsfetchedresultscontroller/deletecache%28withname%29.md).
 
-###### Implementing the table view datasource methods
+#### Implementing the table view datasource methods
 
 You ask the object to provide relevant information in your implementation of the table view data source methods:
 
@@ -171,7 +171,7 @@ override func tableView(_ tableView: UITableView,
 }
 ```
 
-###### Responding to changes
+#### Responding to changes
 
 I[`NSFetchedResultsController`](./nsfetchedresultscontroller.md) responds to changes at the model layer, and informs its delegate when result objects change location or when sections change.
 
@@ -199,7 +199,7 @@ if let afterIndexPath = fetchedResultsController?.indexPath(forObject: managedOb
 }
 ```
 
-###### Modifying the fetch request
+#### Modifying the fetch request
 
 You can’t change the fetch request to modify the results. Do the following if you want to change the fetch request:
 
@@ -209,13 +209,13 @@ You can’t change the fetch request to modify the results. Do the following if 
 
 > **Note**:  Don’t use a cache if you’re changing the fetch request.
 
-###### Handling object invalidation
+#### Handling object invalidation
 
 When a managed object context notifies the fetched results controller of invalidated *individual* objects, the controller treats these as deleted objects and sends the proper delegate calls.
 
 Simultaneous invalidation of *all* the objects in a managed object context is possible, for example, as a result of calling [`reset()`](./nsmanagedobjectcontext/reset%28%29.md), or if you remove a store from the persistent store coordinator. When this happens, [`NSFetchedResultsController`](./nsfetchedresultscontroller.md) doesn’t invalidate all objects, nor does it send individual notifications for object deletions. Instead, you need to call [`performFetch()`](./nsfetchedresultscontroller/performfetch%28%29.md) to reset the state of the controller then reload the data in the table view ([`reloadData()`](../UIKit/uitableview/reloaddata%28%29.md)).
 
-##### Subclassing notes
+### Subclassing notes
 
 You create a subclass of this class if you want to customize the creation of sections and index titles. You override [`sectionIndexTitle(forSectionName:)`](./nsfetchedresultscontroller/sectionindextitle%28forsectionname%29.md) if you want the section index title to be something other than the capitalized first letter of the section name. You override [`sectionIndexTitles`](./nsfetchedresultscontroller/sectionindextitles.md) if you want the index titles to be something other than the array created by calling [`sectionIndexTitle(forSectionName:)`](./nsfetchedresultscontroller/sectionindextitle%28forsectionname%29.md) on all the known sections.
 

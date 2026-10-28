@@ -22,7 +22,7 @@ var sheetPresentationController: UISheetPresentationController? { get }
 @property (nonatomic, readonly, nullable) UISheetPresentationController * sheetPresentationController;
 ```
 
-#### Discussion
+## Discussion
 
 If [`modalPresentationStyle`](./modalpresentationstyle.md) is [`UIModalPresentationStyle.pageSheet`](../uimodalpresentationstyle/pagesheet.md) or [`UIModalPresentationStyle.formSheet`](../uimodalpresentationstyle/formsheet.md), this property contains a sheet presentation controller instance. Access this instance to customize or adjust the sheet before or after it presents.
 

@@ -23,11 +23,11 @@ Searches for records in the specified record zone and returns them to an awaitin
 func records(matching query: CKQuery, inZoneWith zoneID: CKRecordZone.ID?) async throws -> [CKRecord]
 ```
 
-#### Return Value
+## Return Value
 
 An array of records that match the specified query.
 
-#### Discussion
+## Discussion
 
 For information on a more configurable way to search a database, see [`CKQueryOperation`](../ckqueryoperation.md).
 

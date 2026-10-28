@@ -28,7 +28,7 @@ optional func download(_ download: BADownload, didReceive challenge: URLAuthenti
 - (void) download:(BADownload *) download didReceiveChallenge:(NSURLAuthenticationChallenge *) challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition disposition, NSURLCredential *credential)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameters:
 

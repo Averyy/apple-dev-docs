@@ -25,7 +25,7 @@ struct Evaluator<Input> where Input : SampleProtocol, Input.ExpectedValue : Deco
 
 - [Designing specific, measurable criteria in an evaluation suite](./designing-evaluation-criteria.md)
 
-#### Overview
+## Overview
 
 Use Evaluator to create inline evaluators without defining a custom type. The closure receives the input sample and the [`ModelSubject`](./modelsubject.md), providing access to both .value and .transcript.
 

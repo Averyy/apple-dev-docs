@@ -21,7 +21,7 @@ func didReceive(_ notification: UNNotification, withCompletion completionHandler
 - (void) didReceiveNotification:(UNNotification *) notification withCompletion:(void (^)(WKUserNotificationInterfaceType interface)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Before displaying your notification interface, WatchKit calls this method to deliver the payload of the incoming remote notification. Implement this method and use it to store the notification dictionary, configure your custom notification interface, and execute the `completionHandler` block as quickly as possible. Failure to execute the completion handler in a timely manner will cause the system to display the corresponding static notification interface.
 

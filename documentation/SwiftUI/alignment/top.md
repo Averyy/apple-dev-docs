@@ -21,7 +21,7 @@ A guide that marks the top edge of the view.
 static let top: Alignment
 ```
 
-#### Discussion
+## Discussion
 
 This alignment combines the [`center`](../horizontalalignment/center.md) horizontal guide and the [`top`](../verticalalignment/top.md) vertical guide:
 

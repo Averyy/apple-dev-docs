@@ -19,7 +19,7 @@ func openTransportConnection(_ inSelector: Selector!, selectorTarget inTarget: A
 - (OBEXError) openTransportConnection:(SEL) inSelector selectorTarget:(id) inTarget refCon:(void *) inUserRefCon;
 ```
 
-#### Discussion
+## Discussion
 
 Tranport subclasses must override this! when called you should attempt to open your transport connection, and if you are successful, return kOBEXSuccess, otherwise an interesting error code.
 

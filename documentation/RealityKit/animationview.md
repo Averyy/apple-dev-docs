@@ -20,11 +20,11 @@ An animation that represents a variation of another animation.
 struct AnimationView
 ```
 
-#### Overview
+## Overview
 
 This structure creates a variation of an existing animation by overriding its configuration. The term *view* in the name signifies that the variation represents a new visual perspective of the existing animation.
 
-##### Create a clip of an animation
+### Create a clip of an animation
 
 By supplying a new beginning time ([`trimStart`](./animationview/trimstart.md)) and ending time ([`trimEnd`](./animationview/trimend.md)), the following code creates a shorter clip of an existing animation. With [`trimStart`](./animationview/trimstart.md) set to `1.0` and [`trimEnd`](./animationview/trimend.md) at `2.0`, the clip spans a one-second duration.
 
@@ -54,7 +54,7 @@ clipResource = try? AnimationResource.generate(with: view)
 myModelEntity.playAnimation(clipResource)
 ```
 
-##### Define a view in relation to the animation source
+### Define a view in relation to the animation source
 
 The source animation’s timing properties define a *timeline* on which the [`trimDuration`](./animationview/trimduration.md), [`delay`](./animationview/delay.md), and [`speed`](./animationview/speed.md) properties operate to derive the view. The [`trimDuration`](./animationview/trimduration.md) property specifies which animation data the view displays. If [`trimDuration`](./animationview/trimduration.md) exceeds the length of the source animation’s timeline, the animation plays according to the characteristics of [`repeatMode`](./animationview/repeatmode.md). The [`delay`](./animationview/delay.md) property defines a waiting period before the animation begins, and the [`speed`](./animationview/speed.md) determines how fast the view plays in relation to the original pace.
 

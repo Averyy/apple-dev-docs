@@ -26,7 +26,7 @@ Creates a new system.
 
 - [Implementing systems for entities in a scene](../implementing-systems-for-entities-in-a-scene.md)
 
-#### Discussion
+## Discussion
 
 There’s no need to instantiate your own systems, so don’t call this method. Instead, register your system with RealityKit by calling [`registerSystem()`](./registersystem%28%29.md). RealityKit automatically creates an instance of every registered system for every scene.
 

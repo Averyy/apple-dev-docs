@@ -20,15 +20,15 @@ Returns a new input to append sample buffers of the specified type to the output
 + (instancetype) assetWriterInputWithMediaType:(AVMediaType) mediaType outputSettings:(NSDictionary<NSString *,id> *) outputSettings;
 ```
 
-#### Return Value
+## Return Value
 
 A new asset writer input.
 
-#### Discussion
+## Discussion
 
 If you’re appending samples that are already in an acceptable compressed format, pass a value of `nil` for the output settings to pass the buffers to the output unaltered. However, if you’re not writing to a QuickTime movie file, an asset writer only supports passing through a restricted set of media types and subtypes. To pass through media data to files with a type other than [`mov`](../avfiletype/mov.md), pass a nonnull format hint using the [`init(mediaType:outputSettings:sourceFormatHint:)`](./init%28mediatype,outputsettings,sourceformathint%29.md) instead.
 
-##### Configuring audio settings
+### Configuring audio settings
 
 You must fully specify the audio settings dictionary when using this initializer, which means you must provide values for the following keys:
 
@@ -38,7 +38,7 @@ You must fully specify the audio settings dictionary when using this initializer
 
 > **Note**:  The system doesn’t support specifying a value for [`AVSampleRateConverterAudioQualityKey`](../../AVFAudio/avsamplerateconverteraudioqualitykey.md) in audio output settings.
 
-##### Configuring video settings
+### Configuring video settings
 
 A video output settings dictionary must request a compressed video format, which means that the value you specify must follow the rules for compressed video output.
 

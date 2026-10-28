@@ -20,7 +20,7 @@ Determines if the front, back or both sides should be chamfered.
 var chamferMode: MeshResource.ShapeExtrusionOptions.ChamferMode
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MeshResource.ShapeExtrusionOptions.ChamferMode.both`](./chamfermode-swift.enum/both.md).
 

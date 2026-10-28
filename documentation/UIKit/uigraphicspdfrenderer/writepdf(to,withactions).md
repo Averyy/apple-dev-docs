@@ -23,7 +23,7 @@ func writePDF(to url: URL, withActions actions: (UIGraphicsPDFRendererContext) -
 - (BOOL) writePDFToURL:(NSURL *) url withActions:(UIGraphicsPDFDrawingActions) actions error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 You provide a set of drawing instructions as the block argument to this method, and the method attempts to write the resulting PDF to the supplied URL.
 

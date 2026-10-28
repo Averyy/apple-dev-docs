@@ -24,7 +24,7 @@ case anisotropicRotation
 MDLMaterialSemanticAnisotropicRotation
 ```
 
-#### Discussion
+## Discussion
 
 Values for this semantic in the range from `0.0` to `1.0` map to angles from `0.0` to `2 * M_PI`. This semantic has no effect in a mesh that does not contain vertex attribute data providing a tangent basis.
 

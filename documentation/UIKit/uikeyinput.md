@@ -28,7 +28,7 @@ protocol UIKeyInput : UITextInputTraits
 
 - [Handling text interactions in custom keyboards](./handling-text-interactions-in-custom-keyboards.md)
 
-#### Overview
+## Overview
 
 Adopt this protocol in a subclass of [`UIResponder`](./uiresponder.md) to support text entry. When instances of this subclass are the first responder, the system keyboard displays. Only a small subset of the available keyboards and languages are available to classes that adopt this protocol.
 

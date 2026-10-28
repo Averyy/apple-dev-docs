@@ -24,7 +24,7 @@ class UIToolbarAppearance
 @interface UIToolbarAppearance : UIBarAppearance
 ```
 
-#### Overview
+## Overview
 
 After creating a [`UIToolbarAppearance`](./uitoolbarappearance.md) object, use the methods and properties of this class to specify the appearance of items in the toolbar. Use the inherited properties from [`UIBarAppearance`](./uibarappearance.md) to configure the background and shadow attributes of the toolbar itself.
 

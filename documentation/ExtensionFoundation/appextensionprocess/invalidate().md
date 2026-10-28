@@ -25,7 +25,7 @@ func invalidate()
 
 - [Adding support for app extensions to your app](../adding-support-for-app-extensions-to-your-app.md)
 
-#### Discussion
+## Discussion
 
 Call this method when you finish communicating with an app extension and no longer need it. If the current object represents the last connection to the app extension, the system terminates the app extension’s process. After calling this method, don’t try to communicate with the app extension using XPC. Instead, remove any references to the app extension and release this `AppExtensionProcess` type.
 

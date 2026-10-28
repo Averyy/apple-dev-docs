@@ -25,7 +25,7 @@ func NSLogPageSize() -> Int
 extern NSUInteger NSLogPageSize();
 ```
 
-#### Return Value
+## Return Value
 
 The binary log of the page size.
 

@@ -22,7 +22,7 @@ var ES_PROC_CHECK_TYPE_KERNMSGBUF: es_proc_check_type_t { get }
 ES_PROC_CHECK_TYPE_KERNMSGBUF
 ```
 
-#### Discussion
+## Discussion
 
 This type corresponds to the `proc_kmsgbuf` function from libproc.h.
 

@@ -25,7 +25,7 @@ var clientChangeTokenData: Data? { get set }
 @property (nonatomic, copy, nullable) NSData * clientChangeTokenData;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

@@ -19,7 +19,7 @@ Returns the output buffer for the port at the given address.
 func readOutput(_ port: ComputeNodeGraph.Port.Address) -> (any MTLBuffer)?
 ```
 
-#### Return Value
+## Return Value
 
 The `MTLBuffer` for that port, or `nil` if not found.
 

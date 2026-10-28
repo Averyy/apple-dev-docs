@@ -21,11 +21,11 @@ class func url(from pasteboard: NSPasteboard!) -> URL!
 + (NSURL *) URLFromPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 The URL from the specified pasteboard or `nil` if there’s no URL on `pasteboard`.
 
-#### Discussion
+## Discussion
 
 This method supports multiple pasteboard types including `NSRULPboardType`.
 

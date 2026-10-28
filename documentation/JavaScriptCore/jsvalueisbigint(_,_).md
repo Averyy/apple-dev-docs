@@ -22,11 +22,11 @@ func JSValueIsBigInt(_ ctx: JSContextRef, _ value: JSValueRef) -> Bool
 bool JSValueIsBigInt(JSContextRef ctx, JSValueRef value);
 ```
 
-#### Return Value
+## Return Value
 
 True if value’s type is the BigInt type, otherwise false.
 
-#### Discussion
+## Discussion
 
 Tests whether a JavaScript value’s type is the BigInt type.
 

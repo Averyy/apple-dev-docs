@@ -44,21 +44,6 @@ for name in names {
 // Hello, Jack!
 ```
 
-<!--
-  - test: `forLoops`
-
-  ```swifttest
-  -> let names = ["Anna", "Alex", "Brian", "Jack"]
-  -> for name in names {
-        print("Hello, \(name)!")
-     }
-  </ Hello, Anna!
-  </ Hello, Alex!
-  </ Hello, Brian!
-  </ Hello, Jack!
-  ```
--->
-
 You can also iterate over a dictionary to access its key-value pairs.
 Each item in the dictionary is returned as a `(key, value)` tuple
 when the dictionary is iterated,
@@ -77,20 +62,6 @@ for (animalName, legCount) in numberOfLegs {
 // spiders have 8 legs
 ```
 
-<!--
-  - test: `forLoops`
-
-  ```swifttest
-  -> let numberOfLegs = ["spider": 8, "ant": 6, "cat": 4]
-  -> for (animalName, legCount) in numberOfLegs {
-        print("\(animalName)s have \(legCount) legs")
-     }
-  </ cats have 4 legs
-  </ ants have 6 legs
-  </ spiders have 8 legs
-  ```
--->
-
 The contents of a `Dictionary` are inherently unordered,
 and iterating over them doesn't guarantee the order
 in which they will be retrieved.
@@ -98,11 +69,6 @@ In particular,
 the order you insert items into a `Dictionary`
 doesn't define the order they're iterated.
 For more about arrays and dictionaries, see [Collection Types](CollectionTypes.md).
-
-<!--
-  TODO: provide some advice on how to iterate over a Dictionary in order
-  (perhaps sorted by key), using a predicate or array sort or some kind.
--->
 
 You can also use `for`-`in` loops with numeric ranges.
 This example prints the first few entries in a five-times table:
@@ -117,21 +83,6 @@ for index in 1...5 {
 // 4 times 5 is 20
 // 5 times 5 is 25
 ```
-
-<!--
-  - test: `forLoops`
-
-  ```swifttest
-  -> for index in 1...5 {
-        print("\(index) times 5 is \(index * 5)")
-     }
-  </ 1 times 5 is 5
-  </ 2 times 5 is 10
-  </ 3 times 5 is 15
-  </ 4 times 5 is 20
-  </ 5 times 5 is 25
-  ```
--->
 
 The sequence being iterated over is
 a range of numbers from `1` to `5`, inclusive,
@@ -165,21 +116,6 @@ print("\(base) to the power of \(power) is \(answer)")
 // Prints "3 to the power of 10 is 59049".
 ```
 
-<!--
-  - test: `forLoops`
-
-  ```swifttest
-  -> let base = 3
-  -> let power = 10
-  -> var answer = 1
-  -> for _ in 1...power {
-        answer *= base
-     }
-  -> print("\(base) to the power of \(power) is \(answer)")
-  <- 3 to the power of 10 is 59049
-  ```
--->
-
 The example above calculates the value of one number to the power of another
 (in this case, `3` to the power of `10`).
 It multiplies a starting value of `1`
@@ -208,21 +144,6 @@ for tickMark in 0..<minutes {
 }
 ```
 
-<!--
-  - test: `forLoops`
-
-  ```swifttest
-  -> let minutes = 60
-  >> var result: [Int] = []
-  -> for tickMark in 0..<minutes {
-        // render the tick mark each minute (60 times)
-  >>    result.append(tickMark)
-     }
-  >> print(result.first!, result.last!, result.count)
-  << 0 59 60
-  ```
--->
-
 Some users might want fewer tick marks in their UI.
 They could prefer one mark every `5` minutes instead.
 Use the `stride(from:to:by:)` function to skip the unwanted marks.
@@ -234,21 +155,6 @@ for tickMark in stride(from: 0, to: minutes, by: minuteInterval) {
 }
 ```
 
-<!--
-  - test: `forLoops`
-
-  ```swifttest
-  -> let minuteInterval = 5
-  >> result = []
-  -> for tickMark in stride(from: 0, to: minutes, by: minuteInterval) {
-        // render the tick mark every 5 minutes (0, 5, 10, 15 ... 45, 50, 55)
-  >>      result.append(tickMark)
-     }
-  >> print(result.first!, result.last!, result.count)
-  << 0 55 12
-  ```
--->
-
 Closed ranges are also available, by using `stride(from:through:by:)` instead:
 
 ```swift
@@ -259,33 +165,11 @@ for tickMark in stride(from: 3, through: hours, by: hourInterval) {
 }
 ```
 
-<!--
-  - test: `forLoops`
-
-  ```swifttest
-  -> let hours = 12
-  -> let hourInterval = 3
-  -> for tickMark in stride(from: 3, through: hours, by: hourInterval) {
-        // render the tick mark every 3 hours (3, 6, 9, 12)
-  >>    print(tickMark)
-     }
-  << 3
-  << 6
-  << 9
-  << 12
-  ```
--->
-
 The examples above use a `for`-`in` loop to iterate
 ranges, arrays, dictionaries, and strings.
 However, you can use this syntax to iterate *any* collection,
 including your own classes and collection types,
 as long as those types conform to the [`Sequence`](https://developer.apple.com/documentation/swift/sequence) protocol.
-
-<!--
-  TODO: for (index, object) in enumerate(collection)
-  and also for i in indices(collection) { collection[i] }
--->
 
 ## While Loops
 
@@ -314,8 +198,6 @@ while <#condition#> {
 This example plays a simple game of *Snakes and Ladders*
 (also known as *Chutes and Ladders*):
 
-<!-- Apple Books screenshot begins here. -->
-
 ![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/snakesAndLadders@2x.png)
 
 The rules of the game are as follows:
@@ -340,16 +222,6 @@ let finalSquare = 25
 var board = [Int](repeating: 0, count: finalSquare + 1)
 ```
 
-<!--
-  - test: `snakesAndLadders1`
-
-  ```swifttest
-  -> let finalSquare = 25
-  -> var board = [Int](repeating: 0, count: finalSquare + 1)
-  >> assert(board == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
-  ```
--->
-
 Some squares are then set to have more specific values for the snakes and ladders.
 Squares with a ladder base have a positive number to move you up the board,
 whereas squares with a snake head have a negative number to move you back down the board.
@@ -358,17 +230,6 @@ whereas squares with a snake head have a negative number to move you back down t
 board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02
 board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
 ```
-
-<!--
-  - test: `snakesAndLadders1`
-
-  ```swifttest
-  -> board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02
-  -> board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
-  ```
--->
-
-<!-- Apple Books screenshot ends here. -->
 
 Square 3 contains the bottom of a ladder that moves you up to square 11.
 To represent this, `board[03]` is equal to `+08`,
@@ -397,60 +258,6 @@ while square < finalSquare {
 }
 print("Game over!")
 ```
-
-<!--
-  - test: `snakesAndLadders1`
-
-  ```swifttest
-  -> var square = 0
-  -> var diceRoll = 0
-  -> while square < finalSquare {
-        // roll the dice
-        diceRoll += 1
-        if diceRoll == 7 { diceRoll = 1 }
-  >>    print("diceRoll is \(diceRoll)")
-        // move by the rolled amount
-        square += diceRoll
-  >>    print("after diceRoll, square is \(square)")
-        if square < board.count {
-           // if we're still on the board, move up or down for a snake or a ladder
-           square += board[square]
-  >>       print("after snakes or ladders, square is \(square)")
-        }
-     }
-  -> print("Game over!")
-  << diceRoll is 1
-  << after diceRoll, square is 1
-  << after snakes or ladders, square is 1
-  << diceRoll is 2
-  << after diceRoll, square is 3
-  << after snakes or ladders, square is 11
-  << diceRoll is 3
-  << after diceRoll, square is 14
-  << after snakes or ladders, square is 4
-  << diceRoll is 4
-  << after diceRoll, square is 8
-  << after snakes or ladders, square is 8
-  << diceRoll is 5
-  << after diceRoll, square is 13
-  << after snakes or ladders, square is 13
-  << diceRoll is 6
-  << after diceRoll, square is 19
-  << after snakes or ladders, square is 8
-  << diceRoll is 1
-  << after diceRoll, square is 9
-  << after snakes or ladders, square is 18
-  << diceRoll is 2
-  << after diceRoll, square is 20
-  << after snakes or ladders, square is 20
-  << diceRoll is 3
-  << after diceRoll, square is 23
-  << after snakes or ladders, square is 23
-  << diceRoll is 4
-  << after diceRoll, square is 27
-  << Game over!
-  ```
--->
 
 The example above uses a very simple approach to dice rolling.
 Instead of generating a random number,
@@ -518,20 +325,6 @@ var square = 0
 var diceRoll = 0
 ```
 
-<!--
-  - test: `snakesAndLadders2`
-
-  ```swifttest
-  -> let finalSquare = 25
-  -> var board = [Int](repeating: 0, count: finalSquare + 1)
-  >> assert(board == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
-  -> board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02
-  -> board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
-  -> var square = 0
-  -> var diceRoll = 0
-  ```
--->
-
 In this version of the game,
 the *first* action in the loop is to check for a ladder or a snake.
 No ladder on the board takes the player straight to square 25,
@@ -553,57 +346,6 @@ repeat {
 } while square < finalSquare
 print("Game over!")
 ```
-
-<!--
-  - test: `snakesAndLadders2`
-
-  ```swifttest
-  -> repeat {
-        // move up or down for a snake or ladder
-        square += board[square]
-  >>      print("after snakes or ladders, square is \(square)")
-        // roll the dice
-        diceRoll += 1
-        if diceRoll == 7 { diceRoll = 1 }
-  >>    print("diceRoll is \(diceRoll)")
-        // move by the rolled amount
-        square += diceRoll
-  >>    print("after diceRoll, square is \(square)")
-  -> } while square < finalSquare
-  -> print("Game over!")
-  << after snakes or ladders, square is 0
-  << diceRoll is 1
-  << after diceRoll, square is 1
-  << after snakes or ladders, square is 1
-  << diceRoll is 2
-  << after diceRoll, square is 3
-  << after snakes or ladders, square is 11
-  << diceRoll is 3
-  << after diceRoll, square is 14
-  << after snakes or ladders, square is 4
-  << diceRoll is 4
-  << after diceRoll, square is 8
-  << after snakes or ladders, square is 8
-  << diceRoll is 5
-  << after diceRoll, square is 13
-  << after snakes or ladders, square is 13
-  << diceRoll is 6
-  << after diceRoll, square is 19
-  << after snakes or ladders, square is 8
-  << diceRoll is 1
-  << after diceRoll, square is 9
-  << after snakes or ladders, square is 18
-  << diceRoll is 2
-  << after diceRoll, square is 20
-  << after snakes or ladders, square is 20
-  << diceRoll is 3
-  << after diceRoll, square is 23
-  << after snakes or ladders, square is 23
-  << diceRoll is 4
-  << after diceRoll, square is 27
-  << Game over!
-  ```
--->
 
 After the code checks for snakes and ladders,
 the dice is rolled and the player is moved forward by `diceRoll` squares.
@@ -649,18 +391,6 @@ if temperatureInFahrenheit <= 32 {
 // Prints "It's very cold. Consider wearing a scarf."
 ```
 
-<!--
-  - test: `ifElse`
-
-  ```swifttest
-  -> var temperatureInFahrenheit = 30
-  -> if temperatureInFahrenheit <= 32 {
-        print("It's very cold. Consider wearing a scarf.")
-     }
-  <- It's very cold. Consider wearing a scarf.
-  ```
--->
-
 The example above checks whether the temperature
 is less than or equal to 32 degrees Fahrenheit
 (the freezing point of water).
@@ -683,20 +413,6 @@ if temperatureInFahrenheit <= 32 {
 // Prints "It's not that cold. Wear a T-shirt."
 ```
 
-<!--
-  - test: `ifElse`
-
-  ```swifttest
-  -> temperatureInFahrenheit = 40
-  -> if temperatureInFahrenheit <= 32 {
-        print("It's very cold. Consider wearing a scarf.")
-     } else {
-        print("It's not that cold. Wear a T-shirt.")
-     }
-  <- It's not that cold. Wear a T-shirt.
-  ```
--->
-
 One of these two branches is always executed.
 Because the temperature has increased to `40` degrees Fahrenheit,
 it's no longer cold enough to advise wearing a scarf
@@ -717,22 +433,6 @@ if temperatureInFahrenheit <= 32 {
 // Prints "It's really warm. Don't forget to wear sunscreen."
 ```
 
-<!--
-  - test: `ifElse`
-
-  ```swifttest
-  -> temperatureInFahrenheit = 90
-  -> if temperatureInFahrenheit <= 32 {
-        print("It's very cold. Consider wearing a scarf.")
-     } else if temperatureInFahrenheit >= 86 {
-        print("It's really warm. Don't forget to wear sunscreen.")
-     } else {
-        print("It's not that cold. Wear a T-shirt.")
-     }
-  <- It's really warm. Don't forget to wear sunscreen.
-  ```
--->
-
 Here, an additional `if` statement was added to respond to particularly warm temperatures.
 The final `else` clause remains,
 and it prints a response for any temperatures that aren't too warm or too cold.
@@ -748,19 +448,6 @@ if temperatureInFahrenheit <= 32 {
     print("It's really warm. Don't forget to wear sunscreen.")
 }
 ```
-
-<!--
-  - test: `ifElse`
-
-  ```swifttest
-  -> temperatureInFahrenheit = 72
-  -> if temperatureInFahrenheit <= 32 {
-        print("It's very cold. Consider wearing a scarf.")
-     } else if temperatureInFahrenheit >= 86 {
-        print("It's really warm. Don't forget to wear sunscreen.")
-     }
-  ```
--->
 
 Because the temperature isn't cold enough to trigger the `if` condition
 or warm enough to trigger the `else if` condition,
@@ -944,23 +631,6 @@ default:
 // Prints "The last letter of the Latin alphabet".
 ```
 
-<!--
-  - test: `switch`
-
-  ```swifttest
-  -> let someCharacter: Character = "z"
-  -> switch someCharacter {
-        case "a":
-           print("The first letter of the Latin alphabet")
-        case "z":
-           print("The last letter of the Latin alphabet")
-        default:
-           print("Some other character")
-     }
-  <- The last letter of the Latin alphabet
-  ```
--->
-
 The `switch` statement's first case matches
 the first letter of the English alphabet, `a`,
 and its second case matches the last letter, `z`.
@@ -1035,26 +705,6 @@ default:
 // This will report a compile-time error.
 ```
 
-<!--
-  - test: `noFallthrough`
-
-  ```swifttest
-  -> let anotherCharacter: Character = "a"
-  -> switch anotherCharacter {
-        case "a": // Invalid, the case has an empty body
-        case "A":
-           print("The letter A")
-        default:
-           print("Not the letter A")
-     }
-  !$ error: 'case' label in a 'switch' must have at least one executable statement
-  !!      case "a": // Invalid, the case has an empty body
-  !!      ^~~~~~~~~
-  !!                break
-  // This will report a compile-time error.
-  ```
--->
-
 Unlike a `switch` statement in C,
 this `switch` statement doesn't match both `"a"` and `"A"`.
 Rather, it reports a compile-time error that `case "a":`
@@ -1078,21 +728,6 @@ default:
 // Prints "The letter A".
 ```
 
-<!--
-  - test: `compoundCaseInsteadOfFallthrough`
-
-  ```swifttest
-  -> let anotherCharacter: Character = "a"
-  -> switch anotherCharacter {
-        case "a", "A":
-           print("The letter A")
-        default:
-           print("Not the letter A")
-     }
-  <- The letter A
-  ```
--->
-
 For readability,
 a compound case can also be written over multiple lines.
 For more information about compound cases,
@@ -1107,11 +742,6 @@ see [Compound Cases](ControlFlow.md#Compound-Cases).
 Values in `switch` cases can be checked for their inclusion in an interval.
 This example uses number intervals
 to provide a natural-language count for numbers of any size:
-
-<!--
-  REFERENCE
-  Saturn has 62 moons with confirmed orbits.
--->
 
 ```swift
 let approximateCount = 62
@@ -1134,32 +764,6 @@ default:
 print("There are \(naturalCount) \(countedThings).")
 // Prints "There are dozens of moons orbiting Saturn."
 ```
-
-<!--
-  - test: `intervalMatching`
-
-  ```swifttest
-  -> let approximateCount = 62
-  -> let countedThings = "moons orbiting Saturn"
-  -> let naturalCount: String
-  -> switch approximateCount {
-     case 0:
-         naturalCount = "no"
-     case 1..<5:
-         naturalCount = "a few"
-     case 5..<12:
-         naturalCount = "several"
-     case 12..<100:
-         naturalCount = "dozens of"
-     case 100..<1000:
-         naturalCount = "hundreds of"
-     default:
-         naturalCount = "many"
-     }
-  -> print("There are \(naturalCount) \(countedThings).")
-  <- There are dozens of moons orbiting Saturn.
-  ```
--->
 
 In the above example, `approximateCount` is evaluated in a `switch` statement.
 Each `case` compares that value to a number or interval.
@@ -1195,27 +799,6 @@ default:
 }
 // Prints "(1, 1) is inside the box".
 ```
-
-<!--
-  - test: `tuples`
-
-  ```swifttest
-  -> let somePoint = (1, 1)
-  -> switch somePoint {
-        case (0, 0):
-           print("\(somePoint) is at the origin")
-        case (_, 0):
-           print("\(somePoint) is on the x-axis")
-        case (0, _):
-           print("\(somePoint) is on the y-axis")
-        case (-2...2, -2...2):
-           print("\(somePoint) is inside the box")
-        default:
-           print("\(somePoint) is outside of the box")
-     }
-  <- (1, 1) is inside the box
-  ```
--->
 
 ![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/coordinateGraphSimple@2x.png)
 
@@ -1256,23 +839,6 @@ case let (x, y):
 }
 // Prints "on the x-axis with an x value of 2".
 ```
-
-<!--
-  - test: `valueBindings`
-
-  ```swifttest
-  -> let anotherPoint = (2, 0)
-  -> switch anotherPoint {
-        case (let x, 0):
-           print("on the x-axis with an x value of \(x)")
-        case (0, let y):
-           print("on the y-axis with a y value of \(y)")
-        case let (x, y):
-           print("somewhere else at (\(x), \(y))")
-     }
-  <- on the x-axis with an x value of 2
-  ```
--->
 
 ![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/coordinateGraphMedium@2x.png)
 
@@ -1320,23 +886,6 @@ case let (x, y):
 // Prints "(1, -1) is on the line x == -y".
 ```
 
-<!--
-  - test: `where`
-
-  ```swifttest
-  -> let yetAnotherPoint = (1, -1)
-  -> switch yetAnotherPoint {
-        case let (x, y) where x == y:
-           print("(\(x), \(y)) is on the line x == y")
-        case let (x, y) where x == -y:
-           print("(\(x), \(y)) is on the line x == -y")
-        case let (x, y):
-           print("(\(x), \(y)) is just some arbitrary point")
-     }
-  <- (1, -1) is on the line x == -y
-  ```
--->
-
 ![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/coordinateGraphComplex@2x.png)
 
 The `switch` statement determines whether the point is
@@ -1377,24 +926,6 @@ default:
 // Prints "e is a vowel".
 ```
 
-<!--
-  - test: `compound-switch-case`
-
-  ```swifttest
-  -> let someCharacter: Character = "e"
-  -> switch someCharacter {
-         case "a", "e", "i", "o", "u":
-             print("\(someCharacter) is a vowel")
-         case "b", "c", "d", "f", "g", "h", "j", "k", "l", "m",
-             "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z":
-             print("\(someCharacter) is a consonant")
-         default:
-             print("\(someCharacter) isn't a vowel or a consonant")
-     }
-  <- e is a vowel
-  ```
--->
-
 The `switch` statement's first case matches
 all five lowercase vowels in the English language.
 Similarly, its second case matches all lowercase English consonants.
@@ -1421,21 +952,6 @@ default:
 }
 // Prints "On an axis, 9 from the origin".
 ```
-
-<!--
-  - test: `compound-switch-case`
-
-  ```swifttest
-  -> let stillAnotherPoint = (9, 0)
-  -> switch stillAnotherPoint {
-         case (let distance, 0), (0, let distance):
-             print("On an axis, \(distance) from the origin")
-         default:
-             print("Not on an axis")
-     }
-  <- On an axis, 9 from the origin
-  ```
--->
 
 The `case` above has two patterns:
 `(let distance, 0)` matches points on the x-axis
@@ -1576,24 +1092,6 @@ print(puzzleOutput)
 // Prints "grtmndsthnklk".
 ```
 
-<!--
-  - test: `continue`
-
-  ```swifttest
-  -> let puzzleInput = "great minds think alike"
-  -> var puzzleOutput = ""
-  -> let charactersToRemove: [Character] = ["a", "e", "i", "o", "u", " "]
-  -> for character in puzzleInput {
-        if charactersToRemove.contains(character) {
-           continue
-        }
-        puzzleOutput.append(character)
-     }
-  -> print(puzzleOutput)
-  <- grtmndsthnklk
-  ```
--->
-
 The code above calls the `continue` keyword whenever it matches a vowel or a space,
 causing the current iteration of the loop to end immediately
 and to jump straight to the start of the next iteration.
@@ -1612,10 +1110,6 @@ When used inside a loop statement,
 and transfers control to the code after the loop's closing brace (`}`).
 No further code from the current iteration of the loop is executed,
 and no further iterations of the loop are started.
-
-<!--
-  TODO: I need an example here.
--->
 
 #### Break in a Switch Statement
 
@@ -1663,33 +1157,6 @@ if let integerValue = possibleIntegerValue {
 }
 // Prints "The integer value of 三 is 3."
 ```
-
-<!--
-  - test: `breakInASwitchStatement`
-
-  ```swifttest
-  -> let numberSymbol: Character = "三"  // Chinese symbol for the number 3
-  -> var possibleIntegerValue: Int?
-  -> switch numberSymbol {
-        case "1", "١", "一", "๑":
-           possibleIntegerValue = 1
-        case "2", "٢", "二", "๒":
-           possibleIntegerValue = 2
-        case "3", "٣", "三", "๓":
-           possibleIntegerValue = 3
-        case "4", "٤", "四", "๔":
-           possibleIntegerValue = 4
-        default:
-           break
-     }
-  -> if let integerValue = possibleIntegerValue {
-        print("The integer value of \(numberSymbol) is \(integerValue).")
-     } else {
-        print("An integer value couldn't be found for \(numberSymbol).")
-     }
-  <- The integer value of 三 is 3.
-  ```
--->
 
 This example checks `numberSymbol` to determine whether it's
 a Latin, Arabic, Chinese, or Thai symbol for
@@ -1742,24 +1209,6 @@ default:
 print(description)
 // Prints "The number 5 is a prime number, and also an integer."
 ```
-
-<!--
-  - test: `fallthrough`
-
-  ```swifttest
-  -> let integerToDescribe = 5
-  -> var description = "The number \(integerToDescribe) is"
-  -> switch integerToDescribe {
-        case 2, 3, 5, 7, 11, 13, 17, 19:
-           description += " a prime number, and also"
-           fallthrough
-        default:
-           description += " an integer."
-     }
-  -> print(description)
-  <- The number 5 is a prime number, and also an integer.
-  ```
--->
 
 This example declares a new `String` variable called `description`
 and assigns it an initial value.
@@ -1846,20 +1295,6 @@ var square = 0
 var diceRoll = 0
 ```
 
-<!--
-  - test: `labels`
-
-  ```swifttest
-  -> let finalSquare = 25
-  -> var board = [Int](repeating: 0, count: finalSquare + 1)
-  >> assert(board == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
-  -> board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02
-  -> board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
-  -> var square = 0
-  -> var diceRoll = 0
-  ```
--->
-
 This version of the game uses a `while` loop and a `switch` statement
 to implement the game's logic.
 The `while` loop has a statement label called `gameLoop`
@@ -1887,80 +1322,6 @@ gameLoop: while square != finalSquare {
 }
 print("Game over!")
 ```
-
-<!--
-  - test: `labels`
-
-  ```swifttest
-  -> gameLoop: while square != finalSquare {
-        diceRoll += 1
-        if diceRoll == 7 { diceRoll = 1 }
-  >>    print("diceRoll is \(diceRoll)")
-        switch square + diceRoll {
-           case finalSquare:
-              // diceRoll will move us to the final square, so the game is over
-  >>          print("finalSquare, game is over")
-              break gameLoop
-           case let newSquare where newSquare > finalSquare:
-              // diceRoll will move us beyond the final square, so roll again
-  >>          print("move too far, roll again")
-              continue gameLoop
-           default:
-              // this is a valid move, so find out its effect
-              square += diceRoll
-  >>          print("after diceRoll, square is \(square)")
-              square += board[square]
-  >>          print("after snakes or ladders, square is \(square)")
-        }
-     }
-  -> print("Game over!")
-  << diceRoll is 1
-  << after diceRoll, square is 1
-  << after snakes or ladders, square is 1
-  << diceRoll is 2
-  << after diceRoll, square is 3
-  << after snakes or ladders, square is 11
-  << diceRoll is 3
-  << after diceRoll, square is 14
-  << after snakes or ladders, square is 4
-  << diceRoll is 4
-  << after diceRoll, square is 8
-  << after snakes or ladders, square is 8
-  << diceRoll is 5
-  << after diceRoll, square is 13
-  << after snakes or ladders, square is 13
-  << diceRoll is 6
-  << after diceRoll, square is 19
-  << after snakes or ladders, square is 8
-  << diceRoll is 1
-  << after diceRoll, square is 9
-  << after snakes or ladders, square is 18
-  << diceRoll is 2
-  << after diceRoll, square is 20
-  << after snakes or ladders, square is 20
-  << diceRoll is 3
-  << after diceRoll, square is 23
-  << after snakes or ladders, square is 23
-  << diceRoll is 4
-  << move too far, roll again
-  << diceRoll is 5
-  << move too far, roll again
-  << diceRoll is 6
-  << move too far, roll again
-  << diceRoll is 1
-  << after diceRoll, square is 24
-  << after snakes or ladders, square is 16
-  << diceRoll is 2
-  << after diceRoll, square is 18
-  << after snakes or ladders, square is 18
-  << diceRoll is 3
-  << after diceRoll, square is 21
-  << after snakes or ladders, square is 21
-  << diceRoll is 4
-  << finalSquare, game is over
-  << Game over!
-  ```
--->
 
 The dice is rolled at the start of each loop.
 Rather than moving the player immediately,
@@ -2027,34 +1388,6 @@ greet(person: ["name": "Jane", "location": "Cupertino"])
 // Prints "I hope the weather is nice in Cupertino."
 ```
 
-<!--
-  - test: `guard`
-
-  ```swifttest
-  -> func greet(person: [String: String]) {
-         guard let name = person["name"] else {
-             return
-         }
-
-         print("Hello \(name)!")
-
-         guard let location = person["location"] else {
-             print("I hope the weather is nice near you.")
-             return
-         }
-
-         print("I hope the weather is nice in \(location).")
-     }
-
-  -> greet(person: ["name": "John"])
-  <- Hello John!
-  <- I hope the weather is nice near you.
-  -> greet(person: ["name": "Jane", "location": "Cupertino"])
-  <- Hello Jane!
-  <- I hope the weather is nice in Cupertino.
-  ```
--->
-
 If the `guard` statement's condition is met,
 code execution continues after the `guard` statement's closing brace.
 Any variables or constants that were assigned values
@@ -2100,21 +1433,6 @@ if score < 10 {
 // Prints "6".
 ```
 
-<!--
-  - test: `defer-with-if`
-
-  ```swifttest
-  -> var score = 1
-  -> if score < 10 {
-  ->     defer {
-  ->         print(score)
-  ->     }
-  ->     score += 5
-  -> }
-  <- 6
-  ```
--->
-
 In the example above,
 the code inside of the `defer` block is executed
 before exiting the body of the `if` statement.
@@ -2151,23 +1469,6 @@ if score < 100 {
 // Prints "103".
 ```
 
-<!--
-  - test: `defer-paired-actions`
-
-  ```swift
-  -> var score = 3
-  -> if score < 100 {
-  ->     score += 100
-  ->     defer {
-  ->         score -= 100
-  ->     }
-  ->     // Other code that uses the score with its bonus goes here.
-  ->     print(score)
-  -> }
-  <- 103
-  ```
--->
-
 If you write more than one `defer` block in the same scope,
 the first one you specify is the last one to run.
 
@@ -2184,23 +1485,6 @@ if score < 10 {
 // Prints "The score is:".
 // Prints "6".
 ```
-
-<!--
-  - test: `defer-with-if`
-
-  ```swifttest
-  -> if score < 10 {
-  ->     defer {
-  ->         print(score)
-  ->     }
-  ->     defer {
-  ->         print("The score is:")
-  ->     }
-  ->     score += 5
-  -> }
-  <- 6
-  ```
--->
 
 If your program stops running ---
 for example, because of a runtime error or a crash ---
@@ -2234,18 +1518,6 @@ if #available(iOS 10, macOS 10.12, *) {
     // Fall back to earlier iOS and macOS APIs
 }
 ```
-
-<!--
-  - test: `availability`
-
-  ```swifttest
-  -> if #available(iOS 10, macOS 10.12, *) {
-         // Use iOS 10 APIs on iOS, and use macOS 10.12 APIs on macOS
-     } else {
-         // Fall back to earlier iOS and macOS APIs
-     }
-  ```
--->
 
 The availability condition above specifies that in iOS,
 the body of the `if` statement executes only in iOS 10 and later;
@@ -2287,27 +1559,6 @@ func chooseBestColor() -> String {
 }
 ```
 
-<!--
-  - test: `guard-with-pound-available`
-
-  ```swifttest
-  -> @available(macOS 10.12, *)
-  -> struct ColorPreference {
-         var bestColor = "blue"
-     }
-
-  -> func chooseBestColor() -> String {
-        guard #available(macOS 10.12, *) else {
-            return "gray"
-        }
-        let colors = ColorPreference()
-        return colors.bestColor
-     }
-  >> print(chooseBestColor())
-  << blue
-  ```
--->
-
 In the example above,
 the `ColorPreference` structure requires macOS 10.12 or later.
 The `chooseBestColor()` function begins with an availability guard.
@@ -2331,36 +1582,5 @@ if #unavailable(iOS 10) {
 }
 ```
 
-<!--
-  - test: `availability-and-unavailability`
-
-  ```swifttest
-  -> if #available(iOS 10, *) {
-     } else {
-        // Fallback code
-     }
-
-  -> if #unavailable(iOS 10) {
-        // Fallback code
-     }
-  ```
--->
-
 Using the `#unavailable` form helps make your code more readable
 when the check contains only fallback code.
-
-<!--
-  FIXME
-  Not a general purpose condition; can't combine with &&, etc.
-  You can use it with if-let, and other Boolean conditions, using a comma
--->
-
-<!--
-This source file is part of the Swift.org open source project
-
-Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
-Licensed under Apache License v2.0 with Runtime Library Exception
-
-See https://swift.org/LICENSE.txt for license information
-See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
--->

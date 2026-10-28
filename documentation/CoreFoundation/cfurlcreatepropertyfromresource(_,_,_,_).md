@@ -26,11 +26,11 @@ func CFURLCreatePropertyFromResource(_ alloc: CFAllocator!, _ url: CFURL!, _ pro
 extern CFTypeRefCFURLCreatePropertyFromResource(CFAllocatorRef alloc, CFURLRef url, CFStringRef property, SInt32 *errorCode);
 ```
 
-#### Return Value
+## Return Value
 
 If successful, the requested property as a `CFType` object, `NULL` otherwise. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This is a convenience function for retrieving individual property values which calls through to [`CFURLCreateDataAndPropertiesFromResource(_:_:_:_:_:_:)`](./cfurlcreatedataandpropertiesfromresource%28_,_,_,_,_,_%29.md).
 

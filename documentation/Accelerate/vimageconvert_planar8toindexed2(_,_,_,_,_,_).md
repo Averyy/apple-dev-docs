@@ -25,11 +25,11 @@ func vImageConvert_Planar8toIndexed2(_ src: UnsafePointer<vImage_Buffer>, _ dest
 vImage_Error vImageConvert_Planar8toIndexed2(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, Pixel_8 colors[4], int dither, const vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
-#### Discussion
+## Discussion
 
 This function supports the following dithering algorithms:
 
@@ -39,7 +39,7 @@ This function supports the following dithering algorithms:
 - **[`kvImageConvert_DitherFloydSteinberg`](./kvimageconvert_ditherfloydsteinberg.md)**: Applies Floyd-Steinberg dithering to the image.
 - **[`kvImageConvert_DitherAtkinson`](./kvimageconvert_ditheratkinson.md)**: Applies Atkinson dithering to the image.
 
-##### Optimize performance with temporary buffers
+### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 

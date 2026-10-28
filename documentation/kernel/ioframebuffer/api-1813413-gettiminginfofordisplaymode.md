@@ -13,11 +13,11 @@ virtual IOReturn getTimingInfoForDisplayMode(
  IOTimingInformation *info );
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code. A return other than kIOReturnSuccess will prevent the system from using the device.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses should implement this method to return timing information for a display mode. This allows the OS to enable display modes based on its knowledge of the connected display type. Two types of timing information are defined, by Apple defined constant, or by a detailed description of the timing parameters of the mode.
 

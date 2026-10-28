@@ -24,7 +24,7 @@ var availableImageDataCodecTypes: [AVVideoCodecType] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * availableImageDataCodecTypes;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an array of `NSString` objects that you can use as values for the [`AVVideoCodecKey`](../avvideocodeckey.md) in the [`outputSettings`](./outputsettings.md) property.
 

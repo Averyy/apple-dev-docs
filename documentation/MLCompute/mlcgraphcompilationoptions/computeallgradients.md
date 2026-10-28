@@ -23,7 +23,7 @@ static var computeAllGradients: MLCGraphCompilationOptions { get }
 MLCGraphCompilationOptionsComputeAllGradients
 ```
 
-#### Discussion
+## Discussion
 
 Include this option to compute gradients for layers with or without parameters that only take input tensors.
 

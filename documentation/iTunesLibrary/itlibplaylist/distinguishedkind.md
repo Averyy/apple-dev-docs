@@ -20,7 +20,7 @@ var distinguishedKind: ITLibDistinguishedPlaylistKind { get }
 @property (nonatomic, assign, readonly) ITLibDistinguishedPlaylistKind distinguishedKind;
 ```
 
-#### Discussion
+## Discussion
 
 *Distinguished playlists* are special playlists that iTunes generates to organize media items inside the library. If the playlist isn’t a distinguished playlist, this property returns [`ITLibDistinguishedPlaylistKind.kindNone`](../itlibdistinguishedplaylistkind/kindnone.md).
 

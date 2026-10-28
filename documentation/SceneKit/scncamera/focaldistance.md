@@ -27,7 +27,7 @@ var focalDistance: CGFloat { get set }
 @property (nonatomic) CGFloat focalDistance;
 ```
 
-#### Discussion
+## Discussion
 
 Objects at this distance from the camera appear perfectly focused. Objects nearer to or farther from the camera than this distance appear increasingly blurred (up to the amount of blur specified by the [`focalBlurRadius`](./focalblurradius.md) property). The default focal distance is `10.0`.
 

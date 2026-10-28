@@ -5,7 +5,7 @@
 
 Atoms that define a single track of a movie.
 
-#### Overview
+## Overview
 
 Track atoms define a single track of a movie. A movie may consist of one or more tracks. Each track is independent of the other tracks in the movie and carries its own temporal and spatial information. Each track atom contains its associated media atom.
 

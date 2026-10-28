@@ -25,7 +25,7 @@ The rotation of the entity relative to its parent.
 
 - [Automatically animating RealityKit entities](../automatically-animating-realitykit-entities.md)
 
-#### Discussion
+## Discussion
 
 This value is the entity’s rotation relative to its parent. To get the world-space orientation of the entity, use [`orientation(relativeTo:)`](./orientation%28relativeto%29.md), passing `nil` as the reference entity.
 

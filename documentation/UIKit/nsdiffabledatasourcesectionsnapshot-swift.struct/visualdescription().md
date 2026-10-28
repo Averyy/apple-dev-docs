@@ -19,7 +19,7 @@ Returns a string with an ASCII representation of the section snapshot.
 func visualDescription() -> String
 ```
 
-#### Discussion
+## Discussion
 
 An asterisk (`*`) represents a visible item, a plus sign (`+`) represents an expanded item, and a minus sign (`-`) represents a collapsed item.
 

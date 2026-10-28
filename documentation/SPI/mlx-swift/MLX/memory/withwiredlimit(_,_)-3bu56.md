@@ -19,7 +19,7 @@ Perform the block with a temporarily altered wired memory limit.
 static func withWiredLimit<R>(_ limit: Int, _ body: () async throws -> R) async rethrows -> R
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: This overload is deprecated and now uses the shared [`WiredMemoryManager`](../wiredmemorymanager.md) with a static sum policy to avoid bypassing admission control.
 

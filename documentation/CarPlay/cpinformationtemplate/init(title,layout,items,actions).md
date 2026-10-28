@@ -21,7 +21,7 @@ init(title: String, layout: CPInformationTemplateLayout, items: [CPInformationIt
 - (instancetype) initWithTitle:(NSString *) title layout:(CPInformationTemplateLayout) layout items:(NSArray<__kindof CPInformationItem *> *) items actions:(NSArray<CPTextButton *> *) actions;
 ```
 
-#### Discussion
+## Discussion
 
 The template can display up to 10 information items. If `items` contains more objects, the template uses only the first 10. Likewise, the template displays three actions maximum. If `actions` contains more than that, the template uses only the first three.
 

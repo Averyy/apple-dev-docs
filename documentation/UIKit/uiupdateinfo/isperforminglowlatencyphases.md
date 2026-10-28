@@ -23,7 +23,7 @@ var isPerformingLowLatencyPhases: Bool { get }
 @property (nonatomic, readonly, getter=isPerformingLowLatencyPhases) BOOL performingLowLatencyPhases;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) between the [`beforeLowLatencyEventDispatch`](../uiupdateactionphase/beforelowlatencyeventdispatch.md) and [`afterLowLatencyCATransactionCommit`](../uiupdateactionphase/afterlowlatencycatransactioncommit.md) UI update phases. Keep any code you run in this part of the UI update as minimal as possible, especially when [`isImmediatePresentationExpected`](./isimmediatepresentationexpected.md) is `true`. Defer any processing that isn’t critical for the current UI update until [`afterLowLatencyCATransactionCommit`](../uiupdateactionphase/afterlowlatencycatransactioncommit.md).
 

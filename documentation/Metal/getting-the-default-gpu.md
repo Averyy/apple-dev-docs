@@ -5,7 +5,7 @@
 
 Select the system’s default GPU device on which to run your Metal code.
 
-#### Overview
+## Overview
 
 To use the Metal framework, start by getting a GPU device. All of the instances your app needs to interact with Metal come from an [`MTLDevice`](./mtldevice.md) that you acquire at runtime. Some devices, such as those with iOS and tvOS have a single GPU that you can access by calling [`MTLCreateSystemDefaultDevice()`](./mtlcreatesystemdefaultdevice%28%29.md).
 

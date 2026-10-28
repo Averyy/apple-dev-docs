@@ -15,7 +15,7 @@ The style to use when drawing line endings.
 lineCap?: "butt" | "round" | "square";
 ```
 
-#### Discussion
+## Discussion
 
 The three options for line endings are `butt` (squared-off ends), `round` (rounded ends), or `square` (ends that have a half-square extension). The default line cap is `round`.
 

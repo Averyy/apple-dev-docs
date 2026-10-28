@@ -25,7 +25,7 @@ var timebase: CMTimebase { get }
 @property (retain, readonly) CMTimebaseRef timebase;
 ```
 
-#### Discussion
+## Discussion
 
 The default for this property is the clock for an added [`AVSampleBufferAudioRenderer`](../avsamplebufferaudiorenderer.md) object. If you haven’t added a renderer, the timebase is the system host clock.
 

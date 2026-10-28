@@ -25,7 +25,7 @@ class func customScheme(_ customScheme: String) -> Self
 + (instancetype) callbackWithCustomScheme:(NSString *) customScheme;
 ```
 
-#### Discussion
+## Discussion
 
 The following example creates a session that requires a callback with a custom URL scheme:
 

@@ -19,7 +19,7 @@ var magnification: CGFloat { get set }
 @property CGFloat magnification;
 ```
 
-#### Discussion
+## Discussion
 
 To animate the magnification, use the object’s animator. The default value is `1.0`.
 

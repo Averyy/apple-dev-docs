@@ -21,7 +21,7 @@ case chargingActive(ElectricVehicleChargingReason.ActiveReason)
 
 - [Providing charging history for electric vehicles](../../providing-informative-charging-history-for-electric-vehicles.md)
 
-#### Discussion
+## Discussion
 
 When your app provides status for a load event, communicate charging activity using this method. The [`ElectricVehicleChargingReason.ActiveReason`](../../electricvehiclechargingreason/activereason.md) arguments you provide explain why charging starts, such as when cleaner grid conditions or lower rates become available. For example:
 

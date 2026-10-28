@@ -11,11 +11,11 @@ Called to start the audio I/O engine
 virtual IOReturn performAudioEngineStart();
 ```
 
-#### Return Value
+## Return Value
 
 Must return kIOReturnSuccess on a successful start of the engine.
 
-#### Overview
+## Overview
 
 This method is called by startAudioEngine(). This must be overridden by the subclass. No call to the superclass' implementation is necessary. The subclass' implementation must start up the audio I/O engine. This includes any audio engine that needs to be started as well as any interrupts that need to be enabled.
 

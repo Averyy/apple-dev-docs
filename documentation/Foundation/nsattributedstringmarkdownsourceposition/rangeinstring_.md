@@ -21,11 +21,11 @@ Returns a range indicating the source portion within a Markdown string.
 - (NSRange) rangeInString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A range that represents the source portion within a source Markdown string.
 
-#### Discussion
+## Discussion
 
 Use this method to access the marked-up region of `string` with an NSRange, rather than making manual calculations based on row and column values.
 

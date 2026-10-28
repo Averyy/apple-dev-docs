@@ -15,7 +15,7 @@ A response that contains a single Game Center achievement localization v2 image 
 object GameCenterAchievementLocalizationV2ImageLinkageResponse
 ```
 
-#### Overview
+## Overview
 
 - data:
 - links:

@@ -25,7 +25,7 @@ var fileSystemRepresentation: UnsafePointer<CChar> { get }
 @property (readonly) const char * fileSystemRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 This returns a null-terminated C string in file system representation.
 

@@ -17,7 +17,7 @@ Effective per-layer state for a configured KV cache.
 struct KVCacheRuntimeReport
 ```
 
-#### Overview
+## Overview
 
 Prefer [`KVCacheStatus`](./kvcachestatus.md) for application diagnostics. This report remains useful when directly applying a configuration to a raw cache array.
 

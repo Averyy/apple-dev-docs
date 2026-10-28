@@ -23,11 +23,11 @@ func indexPathsToDeleteForSupplementaryView(ofKind elementKind: String) -> [Inde
 - (NSArray<NSIndexPath *> *) indexPathsToDeleteForSupplementaryViewOfKind:(NSString *) elementKind;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects indicating the supplementary views you want to remove or an empty array if you do not want to remove any views of the given kind.
 
-#### Discussion
+## Discussion
 
 The collection view calls this method whenever you delete cells or sections to the collection view. Implementing this method gives your layout object an opportunity to remove any supplementary views that are no longer needed.
 

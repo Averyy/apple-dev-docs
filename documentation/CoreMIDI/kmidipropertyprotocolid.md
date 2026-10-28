@@ -23,7 +23,7 @@ let kMIDIPropertyProtocolID: CFString
 extern CFStringRef const kMIDIPropertyProtocolID;
 ```
 
-#### Discussion
+## Discussion
 
 The system sets this value on endpoints when it creates them. Drivers can dynamically change the endpoint’s protocol as a result of a MIDI-CI negotiation, by setting this property.
 

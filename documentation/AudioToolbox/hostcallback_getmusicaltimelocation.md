@@ -24,7 +24,7 @@ typealias HostCallback_GetMusicalTimeLocation = (UnsafeMutableRawPointer?, Unsaf
 typedef int (*)(void *, unsigned int *, float *, unsigned int *, double *) __attribute__((nonblocking)) HostCallback_GetMusicalTimeLocation;
 ```
 
-#### Discussion
+## Discussion
 
 If you named your callback function `MyHostCallback_GetMusicalTimeLocation`, you would declare it like this:
 

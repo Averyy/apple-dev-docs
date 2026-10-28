@@ -5,7 +5,7 @@
 
 Use proven methods to rapidly create and play back performant particle effects.
 
-#### Overview
+## Overview
 
 Particle emitters in SpriteKit are one of the most powerful tools for building visual effects. However, if used incorrectly, particle emitters can be a bottleneck in the design and implementation of your app. Consider the following tips:
 

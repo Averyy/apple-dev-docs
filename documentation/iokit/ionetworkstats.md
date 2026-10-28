@@ -16,7 +16,7 @@ typedef struct IONetworkStats {
 } IONetworkStats;
 ```
 
-#### Overview
+## Overview
 
 Generic network statistics structure.
 

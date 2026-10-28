@@ -24,7 +24,7 @@ static let linear: CAMediaTimingFunctionName
 extern CAMediaTimingFunctionName const kCAMediaTimingFunctionLinear;
 ```
 
-#### Discussion
+## Discussion
 
 This is a Bézier timing function with the control points (0.0,0.0) and (1.0,1.0).
 

@@ -24,11 +24,11 @@ init!(newObjectIn context: JSContext!)
 + (JSValue *) valueWithNewObjectInContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 An empty JavaScript object value.
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to declaring an empty object literal `{}` or using the `new Object()` syntax in JavaScript.
 

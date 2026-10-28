@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether the given object is known to have a s
 func isKnownUniquelyReferenced<T>(_ object: inout T?) -> Bool where T : AnyObject
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `object` is known to have a single strong reference; otherwise, `false`. If `object` is `nil`, the return value is `false`.
 
-#### Discussion
+## Discussion
 
 The `isKnownUniquelyReferenced(_:)` function is useful for implementing the copy-on-write optimization for the deep storage of value types:
 

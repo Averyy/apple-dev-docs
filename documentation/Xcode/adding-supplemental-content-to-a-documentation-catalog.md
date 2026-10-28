@@ -5,11 +5,11 @@
 
 Include articles and extension files to extend your source documentation comments or provide supporting conceptual content.
 
-#### Overview
+## Overview
 
 The process of crafting great documentation is an art. Your content is unique; you know which elements, beyond source documentation comments, provide the most value to your readers. For information about adding supplemental content to a documentation catalog with DocC, see [Adding Supplemental Content to a Documentation Catalog Swift.Org](https://www.swift.org/documentation/docc/adding-supplemental-content-to-a-documentation-catalog).
 
-##### Add articles to explain concepts or describe tasks
+### Add articles to explain concepts or describe tasks
 
 If your documentation catalog includes an article file with the name `GettingStarted.md`, Xcode displays this article in the documentation viewer with a document icon.
 
@@ -42,7 +42,7 @@ To add an article to your documentation catalog in Xcode, do the following:
 
 ![A screenshot that shows the Xcode file template chooser with the Article File template in a selected state.](https://developer.apple.com/tutorials/images/com.apple.Xcode/adding-supplemental-content-to-a-documentation-catalog-2@2x.png)
 
-##### Add extension files to append to or override source documentation comments
+### Add extension files to append to or override source documentation comments
 
 DocC supports supplementing or completely replacing source documentation comments with content in extension files. To add an extension file to your documentation catalog, do the following:
 

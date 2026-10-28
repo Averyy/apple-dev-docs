@@ -12,11 +12,11 @@ virtual bool start(
  IOService *provider);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the IOAudioEngine was successfully started.
 
-#### Overview
+## Overview
 
 Subclasses will want to override start(IOService *, IOAudioDevice *) rather than this one.
 

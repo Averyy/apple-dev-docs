@@ -25,7 +25,7 @@ func string(fromValue value: Double, unit: LengthFormatter.Unit) -> String
 - (NSString *) stringFromValue:(double) value unit:(NSLengthFormatterUnit) unit;
 ```
 
-#### Return Value
+## Return Value
 
 A localized string that combines the provided value and unit.
 

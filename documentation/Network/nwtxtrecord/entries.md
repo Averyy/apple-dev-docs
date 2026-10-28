@@ -21,7 +21,7 @@ Get all entries present in the TXT record.
 var entries: [String : NWTXTRecord.Entry] { get }
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary representing all entries in the TXT record, preserving original key case.
 

@@ -19,7 +19,7 @@ class let boundsDidChangeNotification: NSNotification.Name
 extern NSNotificationName NSViewBoundsDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification posts only when the view’s [`postsBoundsChangedNotifications`](./postsboundschangednotifications.md) property is [`true`](../../Swift/true.md).
 

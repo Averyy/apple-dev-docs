@@ -15,7 +15,7 @@ Converts the represented gesture recognizer’s current velocity to a SwiftUI co
 func velocity(in coordinateSpace: some CoordinateSpaceProtocol) -> CGPoint?
 ```
 
-#### Return Value
+## Return Value
 
 The represented gesture recognizer’s current velocity converted to the given `coordinateSpace`, or `nil` if the represented gesture recognizer doesn’t respond to `-velocityInView:` selector.
 

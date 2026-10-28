@@ -18,7 +18,7 @@ A type that reads and writes an accessory’s settings.
 protocol HomeAccessorySettingsProvider
 ```
 
-#### Overview
+## Overview
 
 A provider has two responsibilities:
 

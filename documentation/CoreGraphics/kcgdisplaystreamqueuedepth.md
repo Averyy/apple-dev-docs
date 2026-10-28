@@ -10,7 +10,7 @@
 extern CFStringRef const kCGDisplayStreamQueueDepth;
 ```
 
-#### Discussion
+## Discussion
 
 Controls how many frames deep the frame queue will be.  Defaults to N.
 

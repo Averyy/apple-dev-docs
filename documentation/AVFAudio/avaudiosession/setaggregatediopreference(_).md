@@ -22,7 +22,7 @@ func setAggregatedIOPreference(_ inIOType: AVAudioSession.IOType) throws
 - (BOOL) setAggregatedIOPreference:(AVAudioSessionIOType) inIOType error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Starting with iOS 10, [`AVCaptureSession`](../../AVFoundation/avcapturesession.md) has changed its default audio input configuration on iPhone and iPad devices that support the Live Photos feature. This change allows taking a Live Photo without interrupting background audio playback. Configure your preferred audio input behavior by setting your aggregated I/O preference.
 

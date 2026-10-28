@@ -21,7 +21,7 @@ Creates a new dictionary whose keys are the groupings returned by the given clos
 init<S, E>(grouping values: S, by keyForValue: (S.Element) throws(E) -> Key) throws(E) where Value == [S.Element], S : Sequence, E : Error
 ```
 
-#### Discussion
+## Discussion
 
 The arrays in the “values” position of the new dictionary each contain at least one element, with the elements in the same order as the source sequence.
 

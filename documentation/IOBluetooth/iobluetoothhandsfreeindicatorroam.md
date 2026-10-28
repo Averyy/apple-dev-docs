@@ -19,7 +19,7 @@ let IOBluetoothHandsFreeIndicatorRoam: String
 extern NSString * const IOBluetoothHandsFreeIndicatorRoam;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for the roaming status indicator are:
 

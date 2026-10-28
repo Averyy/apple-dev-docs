@@ -17,7 +17,7 @@ Normalization mode for discrete Fourier Transforms.
 enum FFTNorm
 ```
 
-##### See Also
+### See Also
 
 - [`MLXFFT`](./mlxfft.md)
 

@@ -13,7 +13,7 @@
 kIOOutputCommandMask = 0xff00
 ```
 
-#### Discussion
+## Discussion
 
 Define the command field in the return code.
 

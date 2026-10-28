@@ -32,7 +32,7 @@ var factoryPresets: [AUAudioUnitPreset]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<AUAudioUnitPreset *> * factoryPresets;
 ```
 
-#### Discussion
+## Discussion
 
 A preset provides audio unit users with an easily-selectable, fine-tuned set of parameters defined by the developer.
 

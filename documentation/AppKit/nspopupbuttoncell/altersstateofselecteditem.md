@@ -19,7 +19,7 @@ var altersStateOfSelectedItem: Bool { get set }
 @property BOOL altersStateOfSelectedItem;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md) (which is the default value), the state of the selected item is set to [`NSOnState`](../nsonstate.md). When the value of this property is [`false`](../../Swift/false.md), the items in the menu are left alone. When you change the value of this property, the state of the currently selected item is updated appropriately.
 

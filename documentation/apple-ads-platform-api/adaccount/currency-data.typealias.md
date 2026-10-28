@@ -32,11 +32,11 @@ string AdAccount.Currency
 - `BRL`: Brazilian Real.
 - `IDR`: Indonesian Rupiah.
 
-#### Discussion
+## Discussion
 
 The `AdAccount` currency is inherited from the parent org at creation.
 
-##### Example
+### Example
 
 ```json
 {

@@ -24,7 +24,7 @@ var requiredBillingContactFields: Set<PKContactField> { get set }
 @property (nonatomic, strong) NSSet<NSString *> * requiredBillingContactFields;
 ```
 
-#### Discussion
+## Discussion
 
 See [`PKContactField`](../pkcontactfield.md) for the list of possible contact fields.
 

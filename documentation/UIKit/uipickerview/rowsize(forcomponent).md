@@ -22,11 +22,11 @@ func rowSize(forComponent component: Int) -> CGSize
 - (CGSize) rowSizeForComponent:(NSInteger) component;
 ```
 
-#### Return Value
+## Return Value
 
 The size of rows in the given component. This is generally the size required to display the largest string or view used as a row in the component.
 
-#### Discussion
+## Discussion
 
 A picker view fetches the value of this property by calling the [`pickerView(_:widthForComponent:)`](../uipickerviewdelegate/pickerview%28_,widthforcomponent%29.md) and [`pickerView(_:rowHeightForComponent:)`](../uipickerviewdelegate/pickerview%28_,rowheightforcomponent%29.md) delegate methods, and caches it. The default value is (`0`, `0`).
 

@@ -23,11 +23,11 @@ optional func accessibilityAttributedScrollStatus(for scrollView: UIScrollView) 
 - (NSAttributedString *) accessibilityAttributedScrollStatusForScrollView:(UIScrollView *) scrollView;
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string describing the content.
 
-#### Discussion
+## Discussion
 
 Your implementation of this method returns a description of the content that’s currently visible in the scroll view. Use this method (instead of the [`accessibilityScrollStatus(for:)`](./accessibilityscrollstatus%28for%29.md) method) when you want to include attributes that specify which language to use when speaking the text. For more information, see [`UIAccessibilitySpeechAttributeLanguage`](../uiaccessibilityspeechattributelanguage.md).
 

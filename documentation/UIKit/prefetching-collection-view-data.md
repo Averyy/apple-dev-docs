@@ -12,7 +12,7 @@ Load data for collection view cells before they display.
 - Mac Catalyst 10.0+
 - Xcode 14.2+
 
-#### Overview
+## Overview
 
 A collection view displays an ordered collection of cells in customizable layouts. The [`UICollectionViewDataSourcePrefetching`](./uicollectionviewdatasourceprefetching.md) protocol helps provide a smoother user experience by prefetching the data necessary for upcoming collection view cells. When you enable prefetching, the collection view requests the data before it needs to display the cell. When it’s time to display the cell, the data is already locally cached.
 
@@ -22,7 +22,7 @@ The image below shows cells outside the bounds of the collection view that have 
 
 > **Note**: The storyboard in this project contains a collection view controller with a collection view that has Clips To Bounds disabled. With this configuration, you can visualize the cells before they display.
 
-##### Enable prefetching
+### Enable prefetching
 
 The root view controller uses an instance of the `CustomDataSource` class to provide data to its [`UICollectionView`](./uicollectionview.md) instance. The `CustomDataSource` class implements the `UICollectionViewDataSourcePrefetching` protocol to begin fetching the data required to populate cells.
 
@@ -40,7 +40,7 @@ collectionView.dataSource = dataSource
 collectionView.prefetchDataSource = dataSource
 ```
 
-##### Load data asynchronously
+### Load data asynchronously
 
 Prefetching data is a tool to use when loading data is a slow or expensive process — for example, when fetching data over the network. In these circumstances, it’s best to perform data loading asynchronously. In this sample, the `AsyncFetcher` class fetches data asynchronously, simulating a network request.
 
@@ -74,7 +74,7 @@ func configure(with data: DisplayData?) {
 }
 ```
 
-##### Populate cells for display
+### Populate cells for display
 
 Before populating a cell, the `CustomDataSource` checks for any prefetched data that it can use. If none is available, the `CustomDataSource` makes a fetch request and the cell updates in the fetch request’s completion handler.
 
@@ -115,7 +115,7 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
 }
 ```
 
-##### Cancel unnecessary fetches
+### Cancel unnecessary fetches
 
 The sample implements the [`collectionView(_:cancelPrefetchingForItemsAt:)`](./uicollectionviewdatasourceprefetching/collectionview%28_,cancelprefetchingforitemsat%29.md) delegate method to cancel any in-progress data fetches that are no longer required.
 

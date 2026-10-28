@@ -22,7 +22,7 @@ convenience init(alertStyleWithIdentifier identifier: NSTouchBarItem.Identifier)
 + (instancetype) alertStyleGroupItemWithIdentifier:(NSTouchBarItemIdentifier) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 You can control spacing between items, but it is recommended to use [`fixedSpaceLarge`](../nstouchbaritem/identifier-swift.struct/fixedspacelarge.md) to maintain consistency.
 

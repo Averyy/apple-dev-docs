@@ -22,7 +22,7 @@ class let microphoneInjectionCapabilitiesChangeNotification: NSNotification.Name
 extern NSNotificationName const AVAudioSessionMicrophoneInjectionCapabilitiesChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Query the notification’s `userInfo` dictionary for [`AVAudioSessionMicrophoneInjectionIsAvailableKey`](../avaudiosessionmicrophoneinjectionisavailablekey.md) to determine whether microphone injection is available.
 

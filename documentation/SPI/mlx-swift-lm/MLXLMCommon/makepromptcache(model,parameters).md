@@ -17,7 +17,7 @@ Construct the model’s cache for use when generating.
 func makePromptCache(model: any LanguageModel, parameters: GenerateParameters? = nil) throws -> [KVCache]
 ```
 
-#### Discussion
+## Discussion
 
 This function will defer the cache construction to the model if it has a `newCache` method, otherwise it will make a default KV cache.
 

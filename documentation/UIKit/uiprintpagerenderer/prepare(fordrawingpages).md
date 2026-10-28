@@ -22,7 +22,7 @@ func prepare(forDrawingPages range: NSRange)
 - (void) prepareForDrawingPages:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method before it requests drawing for a range of pages. You can optionally override this method to perform setup tasks. The default implementation does nothing.
 

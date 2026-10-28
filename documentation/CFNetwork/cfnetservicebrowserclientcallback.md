@@ -24,11 +24,11 @@ typealias CFNetServiceBrowserClientCallBack = (CFNetServiceBrowser, CFOptionFlag
 typedef void (*)(struct __CFNetServiceBrowser *, unsigned long, const void *, CFStreamError *, void *) CFNetServiceBrowserClientCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 If you name your callback `MyNetServiceBrowserClientCallBack`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 The callback function for a CFNetServiceBrowser is called one or more times when domains or services are found as the result of calling [`CFNetServiceBrowserSearchForDomains(_:_:_:)`](./cfnetservicebrowsersearchfordomains%28_,_,_%29.md) and [`CFNetServiceBrowserSearchForServices(_:_:_:_:)`](./cfnetservicebrowsersearchforservices%28_,_,_,_%29.md).
 

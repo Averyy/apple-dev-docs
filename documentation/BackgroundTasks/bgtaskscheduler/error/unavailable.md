@@ -19,7 +19,7 @@ A task scheduling error that indicates the app or extension can’t schedule bac
 static var unavailable: BGTaskScheduler.Error.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error usually occurs for one of three reasons:
 

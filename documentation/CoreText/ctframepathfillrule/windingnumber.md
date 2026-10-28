@@ -25,7 +25,7 @@ case windingNumber
 kCTFramePathFillWindingNumber
 ```
 
-#### Discussion
+## Discussion
 
 Text is filled in the area that would be painted if the path were given to [`CGContextFillPath`](../../CoreGraphics/cgcontextfillpath.md).
 

@@ -25,7 +25,7 @@ attribute String responseType;
 attribute XMLHttpRequestResponseType responseType;
 ```
 
-#### Discussion
+## Discussion
 
 Valid values for this attribute are the empty string, `blob`, `document`, `json,` and `text`.
 

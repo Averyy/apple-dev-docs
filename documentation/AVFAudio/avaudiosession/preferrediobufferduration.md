@@ -23,7 +23,7 @@ var preferredIOBufferDuration: TimeInterval { get }
 @property (readonly) NSTimeInterval preferredIOBufferDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property indicates the buffer duration selected using the [`setPreferredIOBufferDuration(_:)`](./setpreferrediobufferduration%28_%29.md) method.
 

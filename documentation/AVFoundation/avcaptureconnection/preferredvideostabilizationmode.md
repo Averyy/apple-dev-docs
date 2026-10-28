@@ -22,7 +22,7 @@ var preferredVideoStabilizationMode: AVCaptureVideoStabilizationMode { get set }
 @property (nonatomic) AVCaptureVideoStabilizationMode preferredVideoStabilizationMode;
 ```
 
-#### Discussion
+## Discussion
 
 The property only applies to a video connection, and defaults to [`AVCaptureVideoStabilizationMode.off`](../avcapturevideostabilizationmode/off.md).
 

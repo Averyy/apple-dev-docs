@@ -25,11 +25,11 @@ class func classFallbacksForKeyedArchiver() -> [String]
 + (NSArray<NSString *> *) classFallbacksForKeyedArchiver;
 ```
 
-#### Return Value
+## Return Value
 
 An array of string objects that specify the names of classes in preferred order for unarchiving
 
-#### Discussion
+## Discussion
 
 [`NSKeyedArchiver`](../../Foundation/nskeyedarchiver.md) calls this method and stores the result inside the archive. If the actual class of an object doesn’t exist at the time of unarchiving, [`NSKeyedUnarchiver`](../../Foundation/nskeyedunarchiver.md) goes through the stored list of classes and uses the first one that does exists as a substitute class for decoding the object. The default implementation of this method returns an empty array.
 

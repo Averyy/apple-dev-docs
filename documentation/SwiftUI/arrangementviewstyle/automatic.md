@@ -24,7 +24,7 @@ nonisolated static var automatic: AutomaticArrangementViewStyle { get }
 
 Available when `Self` is `AutomaticArrangementViewStyle`.
 
-#### Overview
+## Overview
 
 When you specify this style, the arrangement view uses [`SplitArrangementViewStyle`](../splitarrangementviewstyle.md).
 

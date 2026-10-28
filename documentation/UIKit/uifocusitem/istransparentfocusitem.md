@@ -23,7 +23,7 @@ optional var isTransparentFocusItem: Bool { get }
 @property (nonatomic, readonly) BOOL isTransparentFocusItem;
 ```
 
-#### Discussion
+## Discussion
 
 The system ignores this value when the item is focusable, in which case the item is never considered transparent.
 

@@ -25,7 +25,7 @@ var XPC_ACTIVITY_STATE_DEFER: Int { get }
 XPC_ACTIVITY_STATE_DEFER
 ```
 
-#### Discussion
+## Discussion
 
 An app may pass this value to [`xpc_activity_set_state(_:_:)`](./xpc_activity_set_state%28_,_%29.md) to indicate that the system needs to defer the activity (place it back into the [`XPC_ACTIVITY_STATE_WAIT`](./xpc_activity_state_wait.md) state) until satisfying its criteria again. Deferring an activity doesn’t reset any of its time-based criteria; it remains past due. Do this in response to observing [`xpc_activity_should_defer(_:)`](./xpc_activity_should_defer%28_%29.md).
 

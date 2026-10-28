@@ -19,7 +19,7 @@ The shape of the axes where normalization occurs.
 @property (nonatomic, copy, readonly) NSArray<NSNumber *> * normalizedShape;
 ```
 
-#### Discussion
+## Discussion
 
 Define the shape of the axes in the dimensions `[w]`, `[h, w]`, or `[c, h, w]`, where `w` is width, `h` is height, and `c` is channel count.
 

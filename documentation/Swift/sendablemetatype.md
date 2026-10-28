@@ -21,7 +21,7 @@ A type whose metatype can be shared across arbitrary isolation domains without i
 protocol SendableMetatype : ~Copyable, ~Escapable
 ```
 
-#### Overview
+## Overview
 
 When a generic type `T` conforms to `SendableMetatype`, its metatype `T.Type` conforms to `Sendable`. All concrete types implicitly conform to the `SendableMetatype` protocol, so its primary purpose is in generic code to prohibit the use of isolated conformances along with the generic type.
 

@@ -15,7 +15,7 @@ The structure for getting the port status of a USB 3 hub.
 struct IOUSB30HubPortStatusExt;
 ```
 
-#### Discussion
+## Discussion
 
 For information about this type, see section 10.16.2.6 (Get Port Status) of the USB 3.1 specification at [http://www.usb.org](http://www.usb.org).
 

@@ -25,7 +25,7 @@ protocol INStartPhotoPlaybackIntentHandling : NSObjectProtocol
 @protocol INStartPhotoPlaybackIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INStartPhotoPlaybackIntentHandling`](./instartphotoplaybackintenthandling.md) protocol to resolve, confirm, and handle requests to search the user’s photos and initiate playback of a slideshow. Adopt this protocol in an object of your Intents extension that’s capable of performing the search and determining the number of results. Siri doesn’t display the photos found during the search. After a successful search, Siri launches your app so that it can begin the slideshow.
 

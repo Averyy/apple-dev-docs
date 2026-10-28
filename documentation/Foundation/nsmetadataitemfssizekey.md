@@ -23,7 +23,7 @@ let NSMetadataItemFSSizeKey: String
 extern NSString * const NSMetadataItemFSSizeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSNumber`](./nsnumber.md) object that indicates the size (in bytes) of the file on disk.
 

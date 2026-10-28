@@ -21,7 +21,7 @@ The localized, human-readable name of the app extension.
 var localizedName: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this string if you need to display the name of the app extension in your app’s interface.
 

@@ -9,9 +9,9 @@ Get a list of video asset resource IDs for a specific asset library.
 **Availability**:
 - App Store Connect API 4.5+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

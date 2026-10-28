@@ -23,7 +23,7 @@ var metadataVersion: Data { get }
 @property (nonatomic, readonly) NSData * metadataVersion;
 ```
 
-#### Discussion
+## Discussion
 
 When the [`metadataVersion`](./metadataversion.md) changes, system updates the dataless representation of the item on disk, but it doesn’t attempt to download the content.
 

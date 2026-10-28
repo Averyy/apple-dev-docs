@@ -18,7 +18,7 @@ A Boolean value indicating whether the app shares files.
 - **Name**: `UIFileSharingEnabled` (Application supports iTunes file sharing)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 If you set this key to `YES`, your app can share files with the user. Place the files in a `Documents` folder located in the app’s home directiory. The default value is `NO`.
 

@@ -19,7 +19,7 @@ func value(for dimension: NSTextBlock.Dimension) -> CGFloat
 - (CGFloat) valueForDimension:(NSTextBlockDimension) dimension;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the specified dimension. This value should be interpreted according to the value type returned by [`valueType(for:)`](./valuetype%28for%29.md).
 

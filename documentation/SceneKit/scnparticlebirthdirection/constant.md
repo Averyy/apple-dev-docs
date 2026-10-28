@@ -25,7 +25,7 @@ case constant
 SCNParticleBirthDirectionConstant
 ```
 
-#### Discussion
+## Discussion
 
 When using this mode, the [`emittingDirection`](../scnparticlesystem/emittingdirection.md) property determines the base direction for all particles, and the [`spreadingAngle`](../scnparticlesystem/spreadingangle.md) property adds random variation to this direction.
 

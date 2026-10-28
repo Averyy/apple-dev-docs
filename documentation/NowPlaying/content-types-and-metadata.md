@@ -5,7 +5,7 @@
 
 Describe the media your app is playing.
 
-#### Overview
+## Overview
 
 Use content types to tell the system what kind of media your app is playing. Each content type provides metadata fields appropriate for its media category, such as the song title and artist for music, or the show name and season for TV episodes.
 

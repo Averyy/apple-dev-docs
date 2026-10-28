@@ -22,7 +22,7 @@ var isContentAwareDistortionCorrectionEnabled: Bool { get set }
 @property (nonatomic, getter=isContentAwareDistortionCorrectionEnabled) BOOL contentAwareDistortionCorrectionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 You can set this value to true only if [`isContentAwareDistortionCorrectionSupported`](./iscontentawaredistortioncorrectionsupported.md) returns true.
 

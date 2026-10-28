@@ -25,11 +25,11 @@ convenience init(dictionary otherDictionary: [AnyHashable : Any], copyItems flag
 - (instancetype) initWithDictionary:(NSDictionary<id,id> *) otherDictionary copyItems:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized object—which might be different than the original receiver—containing the keys and values found in `otherDictionary`.
 
-#### Discussion
+## Discussion
 
 After an immutable dictionary has been initialized in this way, it cannot be modified.
 

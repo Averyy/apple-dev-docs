@@ -28,7 +28,7 @@ func showPriceConsentIfNeeded()
 
 - [Handling Subscriptions Billing](../handling-subscriptions-billing.md)
 
-#### Discussion
+## Discussion
 
 Call this method if the system called your delegate’s [`paymentQueueShouldShowPriceConsent(_:)`](../skpaymentqueuedelegate/paymentqueueshouldshowpriceconsent%28_%29.md) method, and you chose to delay showing the price consent sheet.
 

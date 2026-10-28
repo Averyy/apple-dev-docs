@@ -15,11 +15,11 @@ Fetches reports for targeting keywords within an ad group.
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to fetch reports for a high volume of targeting keywords in your campaigns. See [`ReportingKeyword`](./reportingkeyword.md) for [`Condition`](./condition.md) operators and field values to filter results with a [`Selector`](./selector.md). The `orderBy` [`Selector`](./selector.md) specifies fields to sort the records list by `ASCENDING` or `DESCENDING`. All [`ReportingKeyword`](./reportingkeyword.md) fields are available to the `orderBy` [`Selector`](./selector.md).
 
-##### Payload example: Get keyword-level within ad group reports
+### Payload example: Get keyword-level within ad group reports
 
 **Request**:
 

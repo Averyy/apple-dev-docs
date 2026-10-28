@@ -20,7 +20,7 @@ Creates a new button with the specified configuration and registers the primary 
 @preconcurrency convenience init(configuration: UIButton.Configuration, primaryAction: UIAction? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 If the primary action contains a title or an image, this method copies them to the configuration and the button displays them.
 

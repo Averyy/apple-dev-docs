@@ -19,11 +19,11 @@ Compares ranges from the set of matches the aggregator provides to determine nav
 func compare(_ foundRange: UITextRange, toRange: UITextRange, document: Self.DocumentIdentifier?) -> ComparisonResult
 ```
 
-#### Return Value
+## Return Value
 
 Returns the result of comparing the two text ranges.
 
-#### Discussion
+## Discussion
 
 The system calls this method during a find session to determine which [`UITextRange`](../uitextrange.md) to highlight next when a user taps the “next” or “previous” button.
 

@@ -12,7 +12,7 @@ Detect and classify human activity in real time using computer vision and machin
 - Mac Catalyst 14.0+
 - Xcode 14.2+
 
-#### Overview
+## Overview
 
 The Action & Vision sample app leverages several capabilities available in Vision and Core ML in iOS 14 and later. The app provides an example of how you can use these technologies together to help players improve their bean-bag tossing performance.
 
@@ -26,13 +26,13 @@ The app analyzes player performance in a game of bean bag toss. In this easy-to-
 
 After each throw, the app also provides real-time feedback that indicates your throw’s type, speed, and trajectory, along with your score.
 
-##### Configure the project and prepare your environment
+### Configure the project and prepare your environment
 
 You need to run the sample app on a physical device with an A12 processor or later, running iOS 14.
 
 Some Vision algorithms require a stable scene with a fixed camera position and stationary background. To analyze your own gameplay, mount your iOS device to a tripod and keep it fixed on the field of play. Alternatively, try the app by downloading and analyzing [a prerecorded video](https://developer.apple.com/sample-code/ml/sample.mov) of a bean bag toss player in action.
 
-##### Analyze the field of play
+### Analyze the field of play
 
 Before gameplay can begin, the app analyzes the scene to find the location of the gameboard. It detects its location by using an instance of [VNCoreMLRequest](./vncoremlrequest.md) to run inference on a custom object-detection model created using [Create ML](../CreateML/CreateML.md). The app has a model trained using photos of gameboards, taken from various angles and distances, in both indoor and outdoor environments. To further improve the model’s accuracy, the training included images with people in the frame, and bean bags on and around the board. The app performs the request and retrieves its top observation to find the gameboard’s bounding rectangle.
 
@@ -40,27 +40,27 @@ Next, the app performs a [VNDetectContoursRequest](./vndetectcontoursrequest.md)
 
 To learn more about about contour detection, see the WWDC20 session 10673: [Explore Computer Vision APIs](https://developer.apple.com/videos/play/wwdc2020/10673).
 
-##### Determine scene stability
+### Determine scene stability
 
 Some Vision algorithms require a stable scene to produce accurate results. To determine scene stability, the app uses [VNTranslationalImageRegistrationRequest](./vntranslationalimageregistrationrequest.md), a request that compares two images to calculate the x-axis and y-axis shift between them. The app analyzes video frames until the shift reaches a minimum difference threshold, at which point the app considers the scene stable.
 
-##### Identify the player
+### Identify the player
 
 With the field of play established, the app is ready to start the game when a player enters the scene. To detect a player entering the frame, the app performs [VNDetectHumanBodyPoseRequest](./vndetecthumanbodyposerequest.md), a request available in iOS 14, that detects key body points of the face, torso, arms, and legs. The app performs this request on each video frame, and uses the data points it produces to draw a bounding box around the player. The app also uses the detected body points to determine the throw type.
 
-For more information about using human body-pose detection, see [Detecting Human Body Poses in Images](./detecting_human_body_poses_in_images.md) and the WWDC20 session [10653: Detect Body and Hand Pose with Vision](https://developer.apple.com/videos/play/wwdc2020/10653).
+For more information about using human body-pose detection, see [Detecting Human Body Poses in Images](./detecting-human-body-poses-in-images.md) and the WWDC20 session [10653: Detect Body and Hand Pose with Vision](https://developer.apple.com/videos/play/wwdc2020/10653).
 
-##### Detect the player’s throw trajectory
+### Detect the player’s throw trajectory
 
 The app uses Vision’s [VNDetectTrajectoriesRequest](./vndetecttrajectoriesrequest.md) to analyze the player’s throw. This request follows objects moving on a parabolic path. Detecting a parabola requires more than a single data point, so this is a *stateful* request that builds evidence of the object’s movement over time. The app creates a single instance of the request and performs it multiple times over a sequence of video frames. After the request collects enough data points to recognize the trajectory, it calls its completion handler, and passes it the observations that contain the trajectory coordinates and timestamps. The app provides a data visualization by progressively drawing a line that traces the bag’s trajectory. When the request stops producing observations for more than 20 frames, the app considers the throw complete, and calculates the points that the player scored.
 
 The app knows the pixel dimensions of the gameboard, and uses them as a reference to determine the distance of the player’s throw. Because the request also provides the detected trajectory’s duration, the app uses the time and distance to measure the throw’s speed.
 
-To learn more about using `VNDetectTrajectoriesRequest`, see [Identifying Trajectories in Video](./identifying_trajectories_in_video.md).
+To learn more about using `VNDetectTrajectoriesRequest`, see [Identifying Trajectories in Video](./identifying-trajectories-in-video.md).
 
 > **Note**: `VNDetectTrajectoriesRequest` detects multiple, concurrent trajectories, so an app needs to apply its own business logic to filter the trajectories to only those of interest. For example, the sample app knows the location of the gameboard, and it discards any trajectories that move in the opposite direction.
 
-##### Determine the throw type
+### Determine the throw type
 
 To determine the throw type, the app uses another custom Core ML model, one trained using the Action Classification template available in Create ML. The app’s model training used video clips of people performing overhand, underhand, and underleg throws, and also included a negative training set with players performing actions other than throwing.
 

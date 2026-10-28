@@ -22,7 +22,7 @@ A type that represents the document’s stored content.
 associatedtype Snapshot
 ```
 
-#### Discussion
+## Discussion
 
 Define this type to represent all the data that your document stores. When someone issues a Save command, SwiftUI asks your document for a value of this type by calling the document’s [`snapshot(contentType:)`](./snapshot%28contenttype%29.md) method. SwiftUI sends the snapshot that you provide to the document’s [`fileWrapper(snapshot:configuration:)`](./filewrapper%28snapshot,configuration%29.md) method, where you serialize the contents of the snapshot into a file wrapper.
 

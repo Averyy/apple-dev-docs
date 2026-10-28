@@ -26,11 +26,11 @@ func fileSystemAttributes(atPath path: String) -> [AnyHashable : Any]?
 - (NSDictionary *) fileSystemAttributesAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDictionary` object that describes the attributes of the mounted file system on which `path` resides. See `File-System Attribute Keys` for a description of the keys available in the dictionary.
 
-#### Discussion
+## Discussion
 
 Because this method does not return error information, it has been deprecated as of OS X v10.5. Use [`attributesOfFileSystem(forPath:)`](./attributesoffilesystem%28forpath%29.md) instead.
 

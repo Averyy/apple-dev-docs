@@ -5,7 +5,7 @@
 
 Support conversions between the Apple event descriptor types and Foundation object classes.
 
-#### Overview
+## Overview
 
 If your app uses Cocoa Scripting support to handle Apple events sent by Final Cut Pro, it must support conversions between certain Apple event descriptor types used by Final Cut Pro and the respective Foundation classes. These conversions are not supported by Cocoa Scripting.
 

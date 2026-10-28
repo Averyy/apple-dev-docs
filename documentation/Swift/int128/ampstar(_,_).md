@@ -21,7 +21,7 @@ Returns the product of the two given values, wrapping the result in case of any 
 static func &* (lhs: Int128, rhs: Int128) -> Int128
 ```
 
-#### Discussion
+## Discussion
 
 The overflow multiplication operator (`&*`) discards any bits that overflow the fixed width of the integer type. In the following example, the product of `10` and `50` is greater than the maximum representable `Int8` value, so the result is the partial value after discarding the overflowing bits.
 

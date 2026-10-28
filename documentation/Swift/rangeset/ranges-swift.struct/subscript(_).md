@@ -23,7 +23,7 @@ subscript(i: RangeSet<Bound>.Ranges.Index) -> RangeSet<Bound>.Ranges.Element { g
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Overview
+## Overview
 
 The following example accesses an element of an array through its subscript to print its value:
 

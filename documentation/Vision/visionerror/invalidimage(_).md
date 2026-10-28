@@ -21,7 +21,7 @@ An error that indicates the input image is invalid.
 case invalidImage(String)
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you pass an invalid image to an operation, like passing an image with no dimensions.
 

@@ -5,7 +5,7 @@
 
 Locate performance issues using the Performance timeline.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: The Performance timeline feature is only applicable to Apple GPUs. For other GPU architectures, see [Analyzing non-Apple GPU performance using counter statistics](./analyzing-non-apple-gpu-performance-using-counter-statistics.md).
 
@@ -15,7 +15,7 @@ Apple GPUs run vertex, fragment, and compute tasks in parallel whenever possible
 
 For information on using the Performance timeline to optimize your Metal workload and profiling your workload in different GPU execution modes, see [Optimizing GPU performance](./optimizing-gpu-performance.md).
 
-##### View your shaders in the timeline
+### View your shaders in the timeline
 
 The top section has the Vertex, Fragment, and Compute GPU tracks, which display the beginning time and duration of individual passes running with overlap. Below the GPU tracks are the aggregated shader tracks that combine the individual shaders. You can view the timeline of individual shaders in a waterfall-like fashion by expanding the aggregated shader tracks.
 
@@ -25,7 +25,7 @@ The bottom section has a separate Counters timeline, which includes GPU counters
 - **Limiter and utilization**: GPUs process many different kinds of actions in parallel, including arithmetic, memory access, and rasterization. Limiter counters include time the GPU spends executing work and any stalls in a subsystem that prevent the GPU from starting new work. Utilization counters include time the GPU spends executing work in a subsystem without stalls. For more information, see [Reducing shader bottlenecks](./reducing-shader-bottlenecks.md).
 - **Bandwidth**: The GPU Read Bandwidth and GPU Write Bandwidth counters measure how much and how often the GPU is accessing system memory. For more information, see [Measuring the GPU’s use of memory bandwidth](./measuring-the-gpus-use-of-memory-bandwidth.md).
 
-##### Display additional information
+### Display additional information
 
 Clicking any track in the Performance timeline selects it and displays additional information about the track in the sidebar.
 
@@ -41,7 +41,7 @@ Similarly, clicking any element in the Performance timeline selects it and displ
 
 ![A screenshot of the Performance timeline that highlights the Max Theoretical Occupancy line in the runtime shader instruction costs section in the sidebar, which shows 100 percent.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-gt-max-theoretical-occupancy@2x.png)
 
-##### Limit your scope with filters
+### Limit your scope with filters
 
 Adjust the track-filtering criteria with the filter field at the bottom of the GPU timeline or Counters timeline. You can type filter terms into the field, and the GPU timeline or Counters timeline shows tracks with names that match those terms. For example, you can simplify the Counters timeline to only show limiter counters by adding “limiter” to the filter field.
 
@@ -49,7 +49,7 @@ Adjust the track-filtering criteria with the filter field at the bottom of the G
 
 For any filter term, you can click it and choose to include or exclude tracks that match that term.
 
-##### Search for specific elements
+### Search for specific elements
 
 Choose Find > Find to display the search bar above the Performance timeline. You can type search terms into the search bar’s text field to find matching command encoders and shaders.
 
@@ -57,7 +57,7 @@ For any search term, you can click it and choose to include or exclude elements 
 
 The two arrow buttons to the right of the text field let you move to the previous or the next matching element in the timeline.
 
-##### Focus on the time for an element
+### Focus on the time for an element
 
 Focusing on the time for an element collapses the nonrelevant time ranges in the Performance timeline:
 
@@ -66,7 +66,7 @@ Focusing on the time for an element collapses the nonrelevant time ranges in the
 
 To exit the focus mode, click the Expand Timeline button at the bottom of the Performance timeline.
 
-##### Minimize performance bottlenecks
+### Minimize performance bottlenecks
 
 - Look for abnormally long passes. Check whether the GPU time for various tasks matches your expectation or exceeds the budget time.
 - Try overlapping GPU tasks. Apple GPUs run vertex, fragment, and compute tasks in parallel whenever possible. For example, independent render passes and compute passes can run in parallel. If you observe nonoverlapping work, check whether your GPU work is overserialized. Also, use concurrent compute passes wherever possible so dispatches that touch different resources can execute concurrently.

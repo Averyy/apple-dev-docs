@@ -5,7 +5,7 @@
 
 Manipulate audio components in compound clips based on each clip’s role.
 
-#### Overview
+## Overview
 
 When you reference a compound clip in a timeline, you can manipulate its audio components based on the clip’s role. By default, Final Cut Pro merges components from the compound clip with the same main role into a single component. Override this behavior to see the individual subroles by setting the `ref-clip` element’s `useAudioSubroles` attribute to 1.
 

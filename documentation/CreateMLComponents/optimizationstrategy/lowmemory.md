@@ -21,7 +21,7 @@ An optimization strategy that minimizes memory use.
 case lowMemory
 ```
 
-#### Discussion
+## Discussion
 
 Select this strategy when solving large problems that run out of memory when using the `fast` optimization strategy, or when you need to keep memory use low.
 

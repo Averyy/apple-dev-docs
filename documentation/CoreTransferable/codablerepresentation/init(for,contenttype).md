@@ -21,7 +21,7 @@ Creates a transfer representation for a given type and type identifier.
 init(for itemType: Item.Type = Item.self, contentType: UTType) where Encoder == JSONEncoder, Decoder == JSONDecoder
 ```
 
-#### Discussion
+## Discussion
 
 This initializer uses JSON for encoding and decoding.
 

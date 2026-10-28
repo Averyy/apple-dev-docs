@@ -25,11 +25,11 @@ class NSPersistentStore
 @interface NSPersistentStore : NSObject
 ```
 
-#### Overview
+## Overview
 
 Core Data provides four store types—SQLite, Binary, XML, and In-Memory (the XML store is not available on iOS); these are described in Persistent Store Features. Core Data also provides subclasses of `NSPersistentStore` that you can use to define your own store types: [`NSAtomicStore`](./nsatomicstore.md) and [`NSIncrementalStore`](./nsincrementalstore.md). The Binary and XML stores are examples of atomic stores that inherit functionality from `NSAtomicStore`.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 You should not subclass `NSPersistentStore` directly. Core Data only supports subclassing of [`NSAtomicStore`](./nsatomicstore.md) and [`NSIncrementalStore`](./nsincrementalstore.md).
 

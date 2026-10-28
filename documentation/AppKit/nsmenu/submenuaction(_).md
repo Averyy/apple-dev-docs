@@ -19,7 +19,7 @@ func submenuAction(_ sender: Any?)
 - (void) submenuAction:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 You may override this method to implement different behavior. Never invoke this method directly.
 

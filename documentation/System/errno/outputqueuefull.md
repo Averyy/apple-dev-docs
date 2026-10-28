@@ -25,7 +25,7 @@ static var outputQueueFull: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The corresponding C error is `EQFULL`.
 

@@ -23,11 +23,11 @@ class func relun(a: Float, b: Float) -> Self
 + (instancetype) relunLayerWithA:(float) a b:(float) b;
 ```
 
-#### Return Value
+## Return Value
 
 A new `MLCActivationLayer` instance.
 
-#### Discussion
+## Discussion
 
 The [`relun(a:b:)`](./relun%28a,b%29.md) factory type method creates an activation descriptor using [`init(type:a:b:)`](../mlcactivationdescriptor/init%28type,a,b%29.md), where `type =` [`MLCActivationType.relun`](../mlcactivationtype/relun.md), `a = alpha`, and `b = beta`, and passes that descriptor to [`init(descriptor:)`](./init%28descriptor%29.md).
 

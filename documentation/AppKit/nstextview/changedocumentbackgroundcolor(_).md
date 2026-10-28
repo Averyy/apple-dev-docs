@@ -19,7 +19,7 @@ func changeDocumentBackgroundColor(_ sender: Any?)
 - (void) changeDocumentBackgroundColor:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method gets the new color by sending a [`color`](../nscolorpanel/color.md) message to  `sender`.
 

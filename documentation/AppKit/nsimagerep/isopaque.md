@@ -19,7 +19,7 @@ var isOpaque: Bool { get set }
 @property (getter=isOpaque) BOOL opaque;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the image should be treated as fully opaque; otherwise, [`false`](../../Swift/false.md) to indicate the image may include some transparent regions.
 

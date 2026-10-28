@@ -15,11 +15,11 @@ Pagination metadata returned in query responses, including page size, offset, an
 object QueryPaginationResult
 ```
 
-#### Discussion
+## Discussion
 
 The `QueryPaginationResult` object is returned in the `pagination` field of query responses. It echoes `offset` from the request and provides `totalCount` when requested, but `pageSize` reports the number of rows actually returned in this response, not the requested page size. On the last page of a result set, this is often smaller than the `pageSize` you requested. Don’t rely on `result.length == pagination.pageSize` to detect the last page; instead, compare `offset + pagination.pageSize` against `totalCount`.
 
-##### Example
+### Example
 
 A request with `pagination: { "offset": 150, "pageSize": 50 }` against a result set with 180 total matches returns only the remaining 30 rows on this page:
 

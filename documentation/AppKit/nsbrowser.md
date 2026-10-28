@@ -19,7 +19,7 @@ class NSBrowser
 @interface NSBrowser : NSControl
 ```
 
-#### Overview
+## Overview
 
 A browser displays information using a set of columns, which are indexed from left to right. Each successive column displays the next level down in the data hierarchy. This class uses the [`NSBrowserCell`](./nsbrowsercell.md) class to implement its user interface.
 
@@ -40,11 +40,11 @@ Browser
            |---Rows [0..*]
 ```
 
-##### Superclass overrides
+### Superclass overrides
 
 - [`isOpaque`](./nsview/isopaque.md) returns [`true`](../Swift/true.md) when the browser doesn’t have a title and its background color’s alpha component is `1.0`; otherwise, it returns [`false`](../Swift/false.md).
 
-##### Protocol implementations
+### Protocol implementations
 
 - The [`NSBrowser`](./nsbrowser.md) implementation of [`namesOfPromisedFilesDropped(atDestination:)`](./nsdragginginfo/namesofpromisedfilesdropped%28atdestination%29.md) provides the names of the files that the browser promises to create at a specified location, the result of sending `browser:namesOfPromisedFilesDroppedAtDestination:forDraggedRowsWithIndexes:inColumn:` to the delegate.
 

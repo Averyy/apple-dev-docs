@@ -22,7 +22,7 @@ weak var delegate: (any EKCalendarChooserDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<EKCalendarChooserDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 This object should conform to [`EKCalendarChooserDelegate`](../ekcalendarchooserdelegate.md).
 

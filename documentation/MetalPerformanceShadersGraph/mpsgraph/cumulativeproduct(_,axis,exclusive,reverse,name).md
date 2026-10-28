@@ -24,7 +24,7 @@ func cumulativeProduct(_ tensor: MPSGraphTensor, axis: Int, exclusive: Bool, rev
 - (MPSGraphTensor *) cumulativeProductWithTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis exclusive:(BOOL) exclusive reverse:(BOOL) reverse name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 

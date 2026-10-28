@@ -19,7 +19,7 @@ func NSDrawBitmap(_ rect: NSRect, _ width: Int, _ height: Int, _ bps: Int, _ spp
 extern void NSDrawBitmap(NSRect rect, NSInteger width, NSInteger height, NSInteger bps, NSInteger spp, NSInteger bpp, NSInteger bpr, BOOL isPlanar, BOOL hasAlpha, NSColorSpaceName colorSpaceName, const unsigned char * const data[5]);
 ```
 
-#### Discussion
+## Discussion
 
 This function is marginally obsolete. Most applications are better served using the [`NSBitmapImageRep`](./nsbitmapimagerep.md) class to read and display bitmap images.
 

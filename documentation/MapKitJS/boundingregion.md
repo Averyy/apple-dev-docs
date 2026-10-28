@@ -15,7 +15,7 @@ A rectangular area on a map, which coordinates of the rectangle’s northeast an
 class BoundingRegion
 ```
 
-#### Overview
+## Overview
 
 Similar to a [`CoordinateRegion`](./coordinateregion.md), [`BoundingRegion`](./boundingregion.md) represents a rectangular area on the 2D-projected surface. However, instead of describing a center coordinate and a span, MapKit JS defines a bounding region by the coordinates of the rectangle’s northeast and southwest corners.
 

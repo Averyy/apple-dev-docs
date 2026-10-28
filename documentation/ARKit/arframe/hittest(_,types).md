@@ -26,11 +26,11 @@ func hitTest(_ point: CGPoint, types: ARHitTestResult.ResultType) -> [ARHitTestR
 
 - [Displaying an AR Experience with Metal](../displaying-an-ar-experience-with-metal.md)
 
-#### Return Value
+## Return Value
 
 A list of results, sorted from nearest to farthest (in distance from the camera).
 
-#### Discussion
+## Discussion
 
 Hit testing searches for real-world objects or surfaces detected through the AR session’s processing of the camera image. A 2D point in the image coordinates can refer to any point along a 3D line that starts at the device camera and extends in a direction determined by the device orientation and camera projection. This method searches along that line, returning all objects that intersect it in order of distance from the camera.
 

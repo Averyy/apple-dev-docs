@@ -21,7 +21,7 @@ The asynchronous sequence that emits storefront information when the system upda
 static var updates: Storefront.Storefronts { get }
 ```
 
-#### Discussion
+## Discussion
 
 The storefront value can change at any time. Use [`updates`](./updates.md) to listen for changes in this value. Respond to storefront changes by refreshing the list of your available products.
 

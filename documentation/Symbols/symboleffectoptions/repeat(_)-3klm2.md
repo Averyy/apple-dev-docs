@@ -21,7 +21,7 @@ Sets the preferred repeat behavior.
 static func `repeat`(_ behavior: SymbolEffectOptions.RepeatBehavior) -> SymbolEffectOptions
 ```
 
-#### Return Value
+## Return Value
 
 A new set of symbol effect options with the preferred repeat behavior.
 

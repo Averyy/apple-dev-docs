@@ -15,7 +15,7 @@ The request body for updating an existing Campaign object.
 object CampaignUpdate
 ```
 
-#### Discussion
+## Discussion
 
 The `CampaignUpdate` object is the request payload for modifying an existing campaign. Only the fields listed here can be changed after creation. Immutable fields such as `billingEvent`, `promotedObjectType`, and `promotedObjectId` aren’t present. Include only the fields you want to modify.
 
@@ -23,7 +23,7 @@ Both `dailyBudget` and `sharedBudgets` can be present on a campaign and function
 
 To pause (`PAUSED`) or resume (`ENABLED`) delivery without deleting the campaign, use `status`.
 
-##### Example
+### Example
 
 ```json
 {

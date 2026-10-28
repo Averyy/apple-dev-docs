@@ -25,7 +25,7 @@ class CTFrame
 typedef const struct __CTFrame * CTFrameRef;
 ```
 
-#### Overview
+## Overview
 
 A frame contains multiple lines of text. The frame object is the output resulting from the text-framing process performed by a [`CTFramesetter`](./ctframesetter.md) object.
 

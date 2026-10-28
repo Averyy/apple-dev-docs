@@ -17,7 +17,7 @@ let kSKMaximumTerms: CFString!
 const CFStringRef kSKMaximumTerms;
 ```
 
-#### Discussion
+## Discussion
 
 The maximum number of number unique terms to index in each document. Specified as a CFNumber object.
 

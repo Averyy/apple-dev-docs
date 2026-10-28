@@ -28,7 +28,7 @@ Asynchronously creates a 2D texture array by generating it from images.
 @preconcurrency static func texture2DArray(slices: [CGImage], named resourceName: String? = nil, options: TextureResource.CreateOptions) throws -> TextureResource
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit creates a [`MTLTextureType.type2DArray`](../../Metal/mtltexturetype/type2darray.md) texture with `arrayLength == slices.count` from an array of images.
 

@@ -25,7 +25,7 @@ var offset: SCNVector3 { get set }
 @property (nonatomic) SCNVector3 offset;
 ```
 
-#### Discussion
+## Discussion
 
 Some types of fields apply forces whose magnitude is relative to the distance between an object and the field’s center. (For details on each type of field, see the methods listed in Creating Physics Fields.) Changing the offset changes the effects of these field types.
 

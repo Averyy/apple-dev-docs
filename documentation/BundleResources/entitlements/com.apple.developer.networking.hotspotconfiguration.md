@@ -16,7 +16,7 @@ A Boolean value indicating whether your app can use the hotspot manager to confi
 - **Name**: `com.apple.developer.networking.HotspotConfiguration` (Hotspot Configuration)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 This key indicates whether your app may use the [`NEHotspotConfigurationManager`](../../NetworkExtension/nehotspotconfigurationmanager.md) and [`NEHotspotConfiguration`](../../NetworkExtension/nehotspotconfiguration.md) classes to configure Wi-Fi networks.
 

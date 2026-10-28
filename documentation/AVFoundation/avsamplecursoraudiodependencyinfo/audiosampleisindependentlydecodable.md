@@ -25,7 +25,7 @@ var audioSampleIsIndependentlyDecodable: ObjCBool
 BOOL audioSampleIsIndependentlyDecodable;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) for Immediate Playout Frames (IPFs) and Independent Frames (IFs).
 

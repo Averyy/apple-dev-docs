@@ -5,7 +5,7 @@
 
 Receive rendered media (movies), editing descriptions for project timelines, library archives, and FCPXML for other Final Cut Pro items in your app.
 
-#### Overview
+## Overview
 
 After your users have finished working on their project in Final Cut Pro, they’re ready to bring it over to your app for final processing. Maybe your users plan to upload their project to an asset management server, or perhaps they need to archive or catalog the entire Final Cut Pro library.
 
@@ -27,7 +27,7 @@ When your users have finished editing their projects in Final Cut Pro and want t
 
 > 💡 **Tip**:  When you create the custom share destination for your app in Final Cut Pro, use that opportunity to test the communications between Final Cut Pro and your app. As your own first user, you can identify and fix any bugs before you distribute the custom share destination file to your users.
 
-##### Signal Your App’s Capabilities
+### Signal Your App’s Capabilities
 
 Your app must advertise its ability to interact with Final Cut Pro and provide the information necessary for sharing a project. Add the following entry to the `Info.plist` file in your app’s bundle:
 
@@ -39,7 +39,7 @@ Your app must advertise its ability to interact with Final Cut Pro and provide t
 
 The value for this entry is an empty dictionary; the content is reserved for future use by Final Cut Pro.
 
-##### Describe Your Scripting Terminology
+### Describe Your Scripting Terminology
 
 Your app must supply scripting definitions for the events, object classes, and associated properties that Final Cut Pro uses to interact with your app. Specifically, your app must:
 
@@ -47,7 +47,7 @@ Your app must supply scripting definitions for the events, object classes, and a
 - Implement the command-handler classes that are referenced from the scripting definitions. Specifically, implement the command handler for the `make` event using the Cocoa class name specified in your scripting definition. (See [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164) for more information.)
 - Implement the object classes and associated properties according to key-value coding (KVC) and other conventions. Specifically, implement the object class for the `asset` object class, using the Cocoa class name specified in the scripting definition. (See [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164) for details.) Cocoa Scripting support gets the properties’ values when Final Cut Pro asks for those properties through `Get` `Property` `Apple` events.
 
-##### Provide Responses to Apple Events
+### Provide Responses to Apple Events
 
 Once Final Cut Pro confirms that your app can interact with it through Apple events, it sends your app a series of Apple events. Your app responds by telling Final Cut Pro what kind of data your users want to receive and by providing a location for the data. Specifically, Final Cut Pro uses Apple events to find out:
 
@@ -59,7 +59,7 @@ Once Final Cut Pro confirms that your app can interact with it through Apple eve
 
 For information about responding to each of these Apple events, see [Responding to Apple Events from Final Cut Pro](./responding-to-apple-events-from-final-cut-pro.md).
 
-##### Create a Custom Share Destination in Final Cut Pro
+### Create a Custom Share Destination in Final Cut Pro
 
 Once your app is set up to interact with Final Cut Pro, it’s time to create the actual share destination that your users will select in Final Cut Pro. (For more information, see [Create share destinations in Final Cut Pro](https://support.apple.com/guide/final-cut-pro/create-share-destinations-ver9fd008a21/mac).)
 
@@ -69,7 +69,7 @@ Once your app is set up to interact with Final Cut Pro, it’s time to create th
 
 ![Screenshot of the Destinations pane in Final Cut Pro Preferences. In the Destinations list on the left, MyAppCustomDestination is selected as the custom share destination for your app. The “Open with” field on the right shows MyApp as the target application. ](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/media-3234547.png)
 
-##### Distribute a Custom Share Destination to Your Users
+### Distribute a Custom Share Destination to Your Users
 
 Your users need the custom share destination you created for your app installed on their own systems so that it’s available in the list of share destinations in Final Cut Pro. (See [Create share destinations in Final Cut Pro: Share destinations between Final Cut Pro users](https://support.apple.com/guide/final-cut-pro/create-share-destinations-ver9fd008a21/10.4.7/mac/10.14) for more information.)
 

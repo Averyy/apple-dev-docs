@@ -24,7 +24,7 @@ var availability: EKEventAvailability { get set }
 @property (nonatomic) EKEventAvailability availability;
 ```
 
-#### Discussion
+## Discussion
 
 This setting is used by CalDAV and Exchange servers to indicate how the event should be treated for scheduling purposes.
 

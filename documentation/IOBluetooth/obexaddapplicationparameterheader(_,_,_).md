@@ -19,11 +19,11 @@ func OBEXAddApplicationParameterHeader(_ inHeaderData: UnsafeRawPointer!, _ inHe
 OBEXError OBEXAddApplicationParameterHeader(const void *inHeaderData, uint32_t inHeaderDataLength, CFMutableDictionaryRef dictRef);
 ```
 
-#### Return Value
+## Return Value
 
 Error code, kOBEXSuccess (0) if success.
 
-#### Discussion
+## Discussion
 
 Application Request/Response Parameter headers - OBEX Spec, 2.2.11: Byte Sequence
 

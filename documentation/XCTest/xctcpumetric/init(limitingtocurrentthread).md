@@ -24,7 +24,7 @@ init(limitingToCurrentThread limitToCurrentThread: Bool)
 - (instancetype) initLimitingToCurrentThread:(BOOL) limitToCurrentThread;
 ```
 
-#### Discussion
+## Discussion
 
 If `limitToCurrentThread` is `true`, the returned metric only records data related to CPU use on the current thread. In a single-threaded context, a thread-limited metric provides lower variance and greater precision than a whole-process metric.
 

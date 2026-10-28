@@ -13,7 +13,7 @@
 kUSBEndpointPropertiesVersion3 = 0x03
 ```
 
-#### Discussion
+## Discussion
 
 Version that has support for USB3 SuperSpeed Endpoint Companion fields.
 

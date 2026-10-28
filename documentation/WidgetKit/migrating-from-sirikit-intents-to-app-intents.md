@@ -5,7 +5,7 @@
 
 Configure your widgets for backward compatibility.
 
-#### Overview
+## Overview
 
 Starting with iOS 17 and macOS 14, you use App Intents to create configurable widgets. If you have an existing configurable widgets that uses SiriKit Intents, you can add App Intents while continuing to support older operating system versions.
 
@@ -13,7 +13,7 @@ If the minimum version your app supports is iOS 17, macOS 14, or watchOS 10, use
 
 For additional information about converting custom intents to App Intents, watch the Tech Talks session video [Migrate custom intents to App Intents](https://developer.apple.com/videos/play/tech-talks/10168).
 
-##### Convert SiriKit Intents to App Intents
+### Convert SiriKit Intents to App Intents
 
 Xcode provides automatic conversion from SiriKit Intents to App Intents. Follow these steps to convert an existing intent to an app intent:
 
@@ -25,7 +25,7 @@ Xcode provides automatic conversion from SiriKit Intents to App Intents. Follow 
 
 Xcode generates source files for new types that conform to the [`CustomIntentMigratedAppIntent`](../AppIntents/customintentmigratedappintent.md) protocol, and sets the `intentClassName` property to the name of the SiriKit Intent.
 
-##### Update the widget configuration
+### Update the widget configuration
 
 In the widget’s `body` method, add code that does the following:
 
@@ -70,7 +70,7 @@ After you create app intent types, and switch to using `AppIntentConfiguration`,
 
 > ❗ **Important**: If the name or type of the parameters don’t match, the system omits the parameter from the app intent, and the user’s configuration is lost. For example, if the `INIntent` parameter is an `INPerson`, use `IntentPerson` for the app intent type. If the parameter’s type is an enum or custom object, the new type must conform to `AppEnum` or `TransientAppEntity`, respectively.
 
-##### Implement an app intent timeline provider
+### Implement an app intent timeline provider
 
 To generate timeline entries that use app intents, create a timeline provider that conforms to [`AppIntentTimelineProvider`](./appintenttimelineprovider.md). The functionality of an `AppIntentTimelineProvider` is the same as an `IntentTimelineProvider`; the difference is the associated `Intent` type. For an `AppIntentTimelineProvider`, the `Intent` type is `WidgetConfigurationIntent`; for an `IntentTimelineProvider`, it’s an `INIntent`.
 
@@ -83,7 +83,7 @@ When designing the timeline entries that the timeline providers generate, consid
 
 The first approach involves maintaining separate types, possibly duplicating properties in both types, but it’s simpler conceptually. The second approach reduces any duplication, but requires optional types for the intent properties.
 
-##### Display content based on an app intent
+### Display content based on an app intent
 
 WidgetKit displays a widget’s content by calling the widget configuration’s `content` closure. If you have separate types for your timeline entries, you need to provide a separate content closure for each type.
 

@@ -23,7 +23,7 @@ var controlsDelegateCallbackQueue: dispatch_queue_t? { get }
 @property (nonatomic, readonly, nullable) dispatch_queue_t controlsDelegateCallbackQueue;
 ```
 
-#### Discussion
+## Discussion
 
 Call the [`setControlsDelegate(_:queue:)`](./setcontrolsdelegate%28_,queue%29.md) method to specify the dispatch queue on which to call the controls delegate methods.
 

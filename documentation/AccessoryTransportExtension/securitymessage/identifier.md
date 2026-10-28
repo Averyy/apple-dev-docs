@@ -15,7 +15,7 @@ An optional Bluetooth identifier that the system uses to derive HPKE keys.
 let identifier: String?
 ```
 
-#### Discussion
+## Discussion
 
 The system provides this identifier when delivering [`SecurityMessage.KeyType.encapsulatedKey`](./keytype-swift.enum/encapsulatedkey.md) to your extension. Forward it to your accessory for key derivation.
 

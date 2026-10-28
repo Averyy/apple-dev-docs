@@ -19,7 +19,7 @@ A CSS media type as defined by the [CSS specification](https://www.w3.org/TR/med
 struct CSSMediaType
 ```
 
-#### Overview
+## Overview
 
 Media types are one of several media queries that influence the `@media` CSS at-rule; this rule is used by webpages to apply parts of a style sheet depending on the media properties specified.
 

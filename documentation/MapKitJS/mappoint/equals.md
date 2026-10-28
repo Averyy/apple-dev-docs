@@ -15,7 +15,7 @@ Indicates whether two map points are equal.
 equals(anotherPoint: MapPoint): boolean;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the `x` and `y` values of the map point exactly match the corresponding values of `anotherPoint`. Returns `false` if the values aren’t an exact match.
 

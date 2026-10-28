@@ -14,7 +14,7 @@ Apply MSAA to enhance the rendering of edges with custom resolve options and imm
 - tvOS 17.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 MSAA improves the rendering of lines and edges by using several color and depth samples per pixel. An MSAA texture normally stores two or four samples per pixel. But some GPU devices support eight samples per pixel. After the app renders a scene to the MSAA texture, it *resolves* it to a normal texture that contains one sample per pixel. The built-in resolve uses a simple average, but sometimes you want to use a custom resolve.
 
@@ -28,7 +28,7 @@ The sample displays a user interface for you to control the code paths to use MS
 
 There’s a checkbox to toggle MSAA on and off. There’s also a list of reduced resolutions—ranging from one-sixteenth resolution to full-resolution—that makes it easier to see the difference MSAA makes. Pressing the space bar on a macOS device or tapping the display on an iOS device causes the shards to rotate.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample, you need Xcode 12 or later on a macOS, iOS, or tvOS device or simulator. To experience the tile-based custom resolve feature, you need a physical device that supports [`MTLGPUFamily.apple4`](./mtlgpufamily/apple4.md), such as:
 
@@ -38,7 +38,7 @@ To run this sample, you need Xcode 12 or later on a macOS, iOS, or tvOS device o
 
 On a device with an Intel or AMD GPU, or on a simulator, this sample runs with the custom resolve in immediate-mode rendering (IMR) only.
 
-##### Check for MSAA support
+### Check for MSAA support
 
 GPUs on Apple devices can support a variety of sample counts but need to support at least a sample count of four. The app checks the device’s supported sample count with [`supportsTextureSampleCount(_:)`](./mtldevice/supportstexturesamplecount%28_%29.md) and uses a default sample count of four.
 
@@ -50,7 +50,7 @@ for (int i = 0; i < AAPLSampleCountOptionsCount; i++)
 }
 ```
 
-##### Create a multisample texture
+### Create a multisample texture
 
 The app needs to create a multisample texture before rendering the scene. The following code shows that the texture declaration is the same as a normal texture.
 
@@ -98,7 +98,7 @@ _resolveResultTexture = [_device newTextureWithDescriptor:_resolveTextureDescrip
 _resolveResultTexture.label = @"Resolved Texture";
 ```
 
-##### Configure the render pipeline
+### Configure the render pipeline
 
 The renderer ensures the render pipeline state object (PSO) has the current sample count as the texture to use as a render target. It also decides the correct fragment function depending on whether HDR is enabled or not. The app uses a separate custom resolve step if HDR is enabled, so it doesn’t apply tone-mapping. But if antialiasing is disabled, then it uses a fragment function that applies tone-mapping. If the HDR resolve option is chosen in the UI, then toggling MSAA on and off shows the result of using tone-mapping. The following code shows how the renderer customizes the render pipeline descriptor before it creates the PSO.
 
@@ -132,7 +132,7 @@ renderPassDescriptor.colorAttachments[0].texture = _multisampleTexture;
 renderPassDescriptor.colorAttachments[0].resolveTexture = shouldResolve ? _resolveResultTexture : nil;
 ```
 
-##### Use a custom resolve in IMR
+### Use a custom resolve in IMR
 
 The built-in resolve averages the color samples in the texture together to create the final pixel color in the resolve texture. But developers can use a custom resolve by using a compute kernel. Devices that don’t support tile-based rendering need to use a compute kernel. The compute kernel reads the multisample texture and writes a normal texture. The following code shows a compute kernel that accumulates the samples and calculates their average.
 
@@ -177,7 +177,7 @@ computeEncoder.label = @"Resolve on Compute";
 [computeEncoder endEncoding];
 ```
 
-##### Use a custom resolve to tone-map an HDR image
+### Use a custom resolve to tone-map an HDR image
 
 Images with HDR need a tone-mapping operator before they’re output to a computer display. The sample shows how to use a custom resolve to prepare the image. The following code shows the simple tone-mapping operator that uses luminance to scale the input color.
 
@@ -206,7 +206,7 @@ for (uint i = 0; i < count; ++i)
 }
 ```
 
-##### Use a tile-based resolve on an Apple silicon device
+### Use a tile-based resolve on an Apple silicon device
 
 On Apple silicon devices, this app can resolve a multisample texture using a tile-based resolve, allowing the device to perform the resolve before the device saves the tile to memory. The app gains two advantages: The multisample texture doesn’t need to be stored, saving memory space, and it doesn’t require a second render or compute pass, saving compute time and memory bandwidth.
 

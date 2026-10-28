@@ -20,7 +20,7 @@ var symbolConfiguration: NSImage.SymbolConfiguration? { get set }
 @property (copy, nullable) NSImageSymbolConfiguration * symbolConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 If a symbol configuration isn’t provided, the image view uses a default size, weight, and scale provided by the system. The default value is `nil`.
 

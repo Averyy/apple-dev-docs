@@ -19,7 +19,7 @@ var attributedStringForCandidate: ((CandidateType, Int) -> NSAttributedString)? 
 @property (copy, nullable) NSAttributedString *(^)(id, long) attributedStringForCandidate;
 ```
 
-#### Discussion
+## Discussion
 
 This property is not required if the object type of your candidates is [`NSString`](../../Foundation/nsstring.md), [`NSAttributedString`](../../Foundation/nsattributedstring.md), or [`NSTextCheckingResult`](../../Foundation/nstextcheckingresult.md). The default value of this property is `nil`.
 

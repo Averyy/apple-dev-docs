@@ -24,7 +24,7 @@ class GLKEffectPropertyTexture
 @interface GLKEffectPropertyTexture : GLKEffectProperty
 ```
 
-#### Overview
+## Overview
 
 The [`GLKEffectPropertyTexture`](./glkeffectpropertytexture.md) class defines properties that are used to configure an OpenGL texturing operation. The texturing operation combines an input color and a color sampled from the texture and outputs a new color to the next stage of calculations. The [`envMode`](./glkeffectpropertytexture/envmode.md) property determines the function used to calculate the output color from the two input colors.
 

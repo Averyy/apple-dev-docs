@@ -21,7 +21,7 @@ A unique value for an authorization session, provided by the authorization engin
 typedef void * AuthorizationSessionId;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`GetSessionId`](./authorizationcallbacks/getsessionid.md) function to retrieve the authorization session ID.
 

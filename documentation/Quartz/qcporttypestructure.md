@@ -21,7 +21,7 @@ let QCPortTypeStructure: String
 extern NSString * const QCPortTypeStructure;
 ```
 
-#### Discussion
+## Discussion
 
 The port type for an array, dictionary, or other structure, such as an [`NSArray`](../Foundation/nsarray.md) or [`NSDictionary`](../Foundation/nsdictionary.md) object.
 

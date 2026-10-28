@@ -23,7 +23,7 @@ var readableContentGuide: UILayoutGuide { get }
 @property (nonatomic, strong, readonly) UILayoutGuide * readableContentGuide;
 ```
 
-#### Discussion
+## Discussion
 
 This layout guide defines an area that can easily be read without forcing users to move their head to track the lines. The readable content area follows the following rules:
 

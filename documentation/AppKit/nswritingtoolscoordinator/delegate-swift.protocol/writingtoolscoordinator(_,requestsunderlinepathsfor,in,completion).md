@@ -24,7 +24,7 @@ func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsCoordinato
 - (void) writingToolsCoordinator:(NSWritingToolsCoordinator *) writingToolsCoordinator requestsUnderlinePathsForRange:(NSRange) range inContext:(NSWritingToolsCoordinatorContext *) context completion:(void (^)(NSArray<NSBezierPath *> *bezierPaths)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 When applying proofreading marks to your view’s content, the coordinator calls this method to retrieve a shape to draw under the specified text. You provide the shape using one or more Bezier paths, and the coordinator draws and animates that shape during the proofreading session.
 

@@ -21,7 +21,7 @@ var customizableViewControllers: [UIViewController]? { get set }
 @property (nonatomic, copy, nullable) NSArray<__kindof UIViewController *> * customizableViewControllers;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls which items in the tab bar can be rearranged by the user. When the user taps the More item on the tab bar view, a custom interface appears displaying any items that did not fit on the main tab bar. This interface also contains an Edit button that allows the user to rearrange the items. Only the items whose associated view controllers are in this array can be rearranged from this interface. If the array is empty or the value of this property is `nil`, the tab bar does not allow any items to be rearranged.
 

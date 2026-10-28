@@ -23,7 +23,7 @@ var isActive: Bool { get set }
 @property (nonatomic, assign, getter=isActive) BOOL active;
 ```
 
-#### Discussion
+## Discussion
 
 When the user taps in the search field of a managed search bar, the search controller automatically displays the search results controller. Usually, you get the value of this property to determine whether the search results are displayed. However, you can set this property to [`true`](../../Swift/true.md) to force the search interface to appear, even if the user hasn’t tapped in the search field.
 

@@ -19,7 +19,7 @@ var usesLazyFetching: Bool { get set }
 @property BOOL usesLazyFetching;
 ```
 
-#### Discussion
+## Discussion
 
 When enabled the controller uses a number of techniques that typically make managing large data sets more efficient. As with all optimizations, you should use suitable performance analysis tools (such as Instruments) to determine the best solution.
 

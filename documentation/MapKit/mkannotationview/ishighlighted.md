@@ -24,7 +24,7 @@ var isHighlighted: Bool { get set }
 @property (nonatomic, getter=isHighlighted) BOOL highlighted;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t set the value of this property directly. The map view sets it in response to touch events entering or exiting the annotation view’s bounds.
 

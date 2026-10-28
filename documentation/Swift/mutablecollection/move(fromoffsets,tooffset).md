@@ -21,7 +21,7 @@ Moves all the elements at the specified offsets to the specified destination off
 mutating func move(fromOffsets source: IndexSet, toOffset destination: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Pass an offset as `destination` to indicate where in the collection the moved elements should be inserted. Of the elements that are not represented by the offsets in `source`, those before `destination` are moved toward the beginning of the collection to make room for the moved elements, while those at or after `destination` are moved toward the end.
 

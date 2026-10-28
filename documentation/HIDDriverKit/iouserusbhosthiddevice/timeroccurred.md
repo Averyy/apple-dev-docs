@@ -16,7 +16,7 @@ Handles timeout-related actions when retrying input report requests.
 virtual void TimerOccurred(OSAction *action, uint64_t time);
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. When the service needs to retry an input request, it delays the start of that request by a short amount of time. This method processes that delay and begins the new request.
 

@@ -25,7 +25,7 @@ class let newAccessLogEntryNotification: NSNotification.Name
 extern NSNotificationName const AVPlayerItemNewAccessLogEntryNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s object is the player item.
 

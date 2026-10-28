@@ -22,7 +22,7 @@ A polygon that defines the boundary of an area in the image.
 var boundingRegion: NormalizedRegion { get }
 ```
 
-#### Discussion
+## Discussion
 
 Similar to a bounding box, however it can have more than 4 points comprising the boundary.
 

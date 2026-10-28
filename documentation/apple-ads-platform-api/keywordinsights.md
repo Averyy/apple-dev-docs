@@ -15,11 +15,11 @@ Insights for keyword reporting rows.
 object KeywordInsights
 ```
 
-#### Discussion
+## Discussion
 
 The `KeywordInsights` object provides performance insights attached to a keyword report row. Currently includes bid recommendation data.
 
-##### Example
+### Example
 
 ```json
 {

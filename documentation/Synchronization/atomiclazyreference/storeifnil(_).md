@@ -21,11 +21,11 @@ Atomically initializes this reference if its current value is nil, then returns 
 func storeIfNil(_ desired: consuming Instance) -> Instance
 ```
 
-#### Return Value
+## Return Value
 
 The value of `Instance` that was successfully stored within the lazy reference. This may or may not be the same value of `Instance` that was passed to this function.
 
-#### Discussion
+## Discussion
 
 The following example demonstrates how this can be used to implement a thread-safe lazily initialized reference:
 

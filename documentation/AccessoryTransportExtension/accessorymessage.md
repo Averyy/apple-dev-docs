@@ -19,7 +19,7 @@ struct AccessoryMessage
 
 - [Receiving iOS notifications on an accessory](./receiving-ios-notifications-on-an-accessory.md)
 
-#### Overview
+## Overview
 
 Create accessory messages in your app’s [`AccessoryDataProvider`](./accessorydataprovider.md) extension and send them using [`send(message:)`](../AccessoryNotifications/notificationsforwarding/accessorynotificationssession/send%28message%29.md). The system encrypts the message before delivering it to the transport extension.
 

@@ -27,7 +27,7 @@ class func updateConversionValue(_ conversionValue: Int)
 
 - [SKAdNetwork 2 release notes](../skadnetwork-2-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Apps that ad networks advertise call [`updateConversionValue(_:)`](./updateconversionvalue%28_%29.md) or [`registerAppForAdNetworkAttribution()`](./registerappforadnetworkattribution%28%29.md) when the app first launches, to register the attribution.
 

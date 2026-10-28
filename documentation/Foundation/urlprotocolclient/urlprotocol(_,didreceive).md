@@ -26,7 +26,7 @@ func urlProtocol(_ protocol: URLProtocol, didReceive challenge: URLAuthenticatio
 - (void) URLProtocol:(NSURLProtocol *) protocol didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *) challenge;
 ```
 
-#### Discussion
+## Discussion
 
 The protocol client guarantees that it will answer the request on the same thread that called this method. The client may add a default credential to the challenge it issues to the connection delegate, if `protocol` did not provide one.
 

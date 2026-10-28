@@ -24,11 +24,11 @@ init?(leaderboardIdentifier identifier: String, forPlayer playerID: String)
 - (instancetype) initWithLeaderboardIdentifier:(NSString *) identifier forPlayer:(NSString *) playerID;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized score object, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 Your game explicitly allocates and initializes a score object using the designated player and current date when it needs to report a new score to Game Center.
 

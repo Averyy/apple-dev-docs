@@ -24,7 +24,7 @@ protocol MTLFXSpatialScaler : MTLFXSpatialScalerBase
 @protocol MTLFXSpatialScaler <MTLFXSpatialScalerBase>
 ```
 
-#### Overview
+## Overview
 
 The MetalFX spatial scaler increases the size of your input texture to a larger output texture. You can use the scaler to upscale every frame of your app’s scene or rendering in real time. With a scaler, you can draw more complicated scenes in less time by intentionally rendering to a lower resolution to save time before upscaling.
 

@@ -23,7 +23,7 @@ func attributedTitle(for state: UIControl.State) -> NSAttributedString?
 - (NSAttributedString *) attributedTitleForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The title for the specified state. If no attributed title has been set for the specific state, this method returns the attributed title associated with the [`normal`](../uicontrol/state-swift.struct/normal.md) state. If no attributed title has been set for [`normal`](../uicontrol/state-swift.struct/normal.md), returns `nil`.
 

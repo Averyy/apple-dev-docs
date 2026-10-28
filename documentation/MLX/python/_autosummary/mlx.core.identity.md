@@ -6,17 +6,20 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.id
 
 # mlx.core.identity
 
-**identity(*n: int*, *dtype: Dtype | None = float32*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Create a square identity matrix.
+```python
+identity(n: int, dtype: Dtype | None = float32, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Create a square identity matrix.
 
-**n** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The number of rows and columns in the output.
-**dtype** ([Dtype](mlx.core.Dtype.md#mlx.core.Dtype)*, **optional*) – Data type of the output array. Defaults to float32.
-**stream** ([Stream](stream_class.md#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to None.
+**Parameters:**
 
-Returns:
-An identity matrix of size n x n.
+- **n** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The number of rows and columns in the output.
+- **dtype** ([Dtype](mlx.core.Dtype.md#mlx.core.Dtype), *optional*) – Data type of the output array. Defaults to float32.
+- **stream** ([Stream](stream_class.md#mlx.core.Stream), *optional*) – Stream or device. Defaults to None.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: An identity matrix of size n x n.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

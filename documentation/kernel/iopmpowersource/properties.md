@@ -9,7 +9,7 @@
 OSDictionary *properties;
 ```
 
-#### Overview
+## Overview
 
 Stores power source state
 

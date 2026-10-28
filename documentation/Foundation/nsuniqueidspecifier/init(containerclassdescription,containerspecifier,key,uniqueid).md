@@ -20,11 +20,11 @@ init(containerClassDescription classDesc: NSScriptClassDescription, containerSpe
 - (instancetype) initWithContainerClassDescription:(NSScriptClassDescription *) classDesc containerSpecifier:(NSScriptObjectSpecifier *) container key:(NSString *) property uniqueID:(id) uniqueID;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSUniqueIDSpecifier` object, initialized with the given arguments.
 
-#### Discussion
+## Discussion
 
 Invokes the super class’s [`init(containerClassDescription:containerSpecifier:key:)`](../nsscriptobjectspecifier/init%28containerclassdescription,containerspecifier,key%29.md) method and sets the ID to `uniqueID`.
 

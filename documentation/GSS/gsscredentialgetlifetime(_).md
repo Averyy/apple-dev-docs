@@ -23,7 +23,7 @@ func GSSCredentialGetLifetime(_ cred: gss_cred_id_t) -> OM_uint32
 OM_uint32 GSSCredentialGetLifetime(gss_cred_id_t cred);
 ```
 
-#### Return Value
+## Return Value
 
 The time in seconds that the credential has before it expires. The time is 0 if the call fails, or [`GSS_C_INDEFINITE`](./gss_c_indefinite.md) if the credential never expires.
 

@@ -25,7 +25,7 @@ func CFPlugInCreate(_ allocator: CFAllocator!, _ plugInURL: CFURL!) -> CFPlugIn!
 extern CFPlugInRefCFPlugInCreate(CFAllocatorRef allocator, CFURLRef plugInURL);
 ```
 
-#### Return Value
+## Return Value
 
 A new plug-in. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

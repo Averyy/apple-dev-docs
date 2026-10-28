@@ -23,7 +23,7 @@ static func == (lhs: Publishers.Zip3<A, B, C>, rhs: Publishers.Zip3<A, B, C>) ->
 
 Available when `A` conforms to `Publisher`, `A` conforms to `Equatable`, `B` conforms to `Publisher`, `B` conforms to `Equatable`, `C` conforms to `Publisher`, `C` conforms to `Equatable`, `A.Failure` is `B.Failure`, and `B.Failure` is `C.Failure`.
 
-#### Return Value
+## Return Value
 
 `true` if the corresponding upstream publishers of each zip publisher are equal; otherwise `false`.
 

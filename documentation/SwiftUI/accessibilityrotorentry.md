@@ -21,7 +21,7 @@ A struct representing an entry in an Accessibility Rotor.
 struct AccessibilityRotorEntry<ID> where ID : Hashable
 ```
 
-#### Overview
+## Overview
 
 An Accessibility Rotor is a shortcut for Accessibility users to quickly navigate to specific elements of the user interface, and optionally specific ranges of text within those elements.
 

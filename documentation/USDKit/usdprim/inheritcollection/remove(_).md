@@ -20,7 +20,7 @@ Removes a specific inherit arc from the prim.
 func remove(_ primPath: USDLayer.Path) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the inherit cannot be removed.
 

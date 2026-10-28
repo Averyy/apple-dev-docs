@@ -23,7 +23,7 @@ case failureRequiringAppLaunchPreviousRideNeedsCompletion
 INListRideOptionsIntentResponseCodeFailureRequiringAppLaunchPreviousRideNeedsCompletion
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when the user must provide feedback for the previous ride before getting a new ride. Specify this code to redirect the user to your app so that the user can complete or cancel the previous ride. For example, you might use this code if the user still needs to pay for the previous ride.
 

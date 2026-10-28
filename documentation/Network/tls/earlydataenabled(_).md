@@ -21,7 +21,7 @@ Enable early data (0-RTT) for TLS.
 func earlyDataEnabled(_ enabled: Bool) -> TLS
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: This may have security implications for application data. In particular, TLS early data is replayable by a network attacker. You must account for this when sending data before the handshake is confirmed. See RFC 8446 for more information. You MUST NOT enable fast open without a specific application profile that defines its use.
 

@@ -15,7 +15,7 @@ Returns a menu item representing a section header for a logical grouping of menu
 static func sectionHeader(title: String) -> NSMenuItem
 ```
 
-#### Discussion
+## Discussion
 
 Use section headers to provide context to a group of menu items. Items created using this method are non-interactive and don’t perform actions.
 

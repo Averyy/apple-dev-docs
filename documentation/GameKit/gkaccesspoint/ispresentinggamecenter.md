@@ -28,7 +28,7 @@ var isPresentingGameCenter: Bool { get }
 
 - [Adding an access point to your game](../adding-an-access-point-to-your-game.md)
 
-#### Discussion
+## Discussion
 
 This property is [`true`](../../Swift/true.md) when the player taps the access point control and [`false`](../../Swift/false.md) when the player dismisses the Game Center dashboard. This is an observable property.
 

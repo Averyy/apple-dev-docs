@@ -19,7 +19,7 @@ func imageBrowserSelectionDidChange(_ aBrowser: IKImageBrowserView!)
 - (void) imageBrowserSelectionDidChange:(IKImageBrowserView *) aBrowser;
 ```
 
-#### Discussion
+## Discussion
 
 This method signals that the user changes the selection in the image browser view. You can implement this method if you want to perform custom tasks at that time.
 

@@ -25,11 +25,11 @@ class func discreteProgress(totalUnitCount unitCount: Int64) -> Progress
 + (NSProgress *) discreteProgressWithTotalUnitCount:(int64_t) unitCount;
 ```
 
-#### Return Value
+## Return Value
 
 A new progress instance with its containing progress object set to `nil.`
 
-#### Discussion
+## Discussion
 
 Use this method to create the top-level progress object that your custom classes return. The receiver of the returned progress object can add it to a progress tree using `Progress/addChild(_:withPendingUnitCount:)`.
 

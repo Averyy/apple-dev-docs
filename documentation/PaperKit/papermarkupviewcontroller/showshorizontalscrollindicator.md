@@ -20,7 +20,7 @@ A Boolean value that controls whether the horizontal scroll indicator is visible
 @preconcurrency var showsHorizontalScrollIndicator: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Default is `true`.
 

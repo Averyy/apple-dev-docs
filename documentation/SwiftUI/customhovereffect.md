@@ -19,7 +19,7 @@ A type that represents how a view should change when a pointer hovers over a vie
 protocol CustomHoverEffect
 ```
 
-#### Overview
+## Overview
 
 Custom hover effects apply their inactive values when the effect is inactive, and their active values when the effect is active. For example, the following effect causes a view to be partially transparent when inactive, but animate to fully opaque when active:
 

@@ -19,7 +19,7 @@ func invokeDefaultMethod(withArguments arguments: [Any]!) -> Any!
 - (id) invokeDefaultMethodWithArguments:(NSArray *) arguments;
 ```
 
-#### Return Value
+## Return Value
 
 The result of invoking the default method.
 

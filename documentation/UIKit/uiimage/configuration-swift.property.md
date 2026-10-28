@@ -25,7 +25,7 @@ var configuration: UIImage.Configuration? { get }
 @property (nonatomic, copy, readonly, nullable) UIImageConfiguration * configuration;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access the traits associated with the image. The system uses the specified traits to determine which variant of the image to load and draw, falling back on the current environment for any unspecified traits. The default value of this property is a configuration object with unspecified traits.
 

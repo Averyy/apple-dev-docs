@@ -25,7 +25,7 @@ static let aiff: AVFileType
 extern AVFileType const AVFileTypeAIFF;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `public.aiff-audio`. Files of this type have an `.aif` or `.aiff` extension.
 

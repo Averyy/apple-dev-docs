@@ -20,7 +20,7 @@ Sets the descriptor object for the specified sample buffer attachment.
 - (void) setObject:(MTLComputePassSampleBufferAttachmentDescriptor *) attachment atIndexedSubscript:(NSUInteger) attachmentIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The method copies the `attachment` parameter’s contents into the attachment at the specified index.
 

@@ -21,7 +21,7 @@ Indicates whether two colors are equal.
 static func == (lhs: Color, rhs: Color) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean that’s set to `true` if the two colors are equal.
 

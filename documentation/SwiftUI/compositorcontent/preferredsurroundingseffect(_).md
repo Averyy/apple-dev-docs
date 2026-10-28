@@ -17,11 +17,11 @@ nonisolated
 func preferredSurroundingsEffect(_ effect: SurroundingsEffect?) -> some CompositorContent
 ```
 
-#### Return Value
+## Return Value
 
 A CompositorContent that exhibits the specified preference.
 
-#### Discussion
+## Discussion
 
 Use this modifier to indicate a preference for the appearance of passthrough video when displaying the modified compositor content. For example, you can enhance the immersiveness of a scene that uses the default [`mixed`](../immersionstyle/mixed.md) immersion style by applying the [`systemDark`](../surroundingseffect/systemdark.md) preference to a compositor content inside the scene.
 

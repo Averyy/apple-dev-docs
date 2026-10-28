@@ -13,7 +13,7 @@ Present multiple complications for a single complication family using descriptor
 - watchOS 7.1+
 - Xcode 12.5+
 
-#### Overview
+## Overview
 
 The Coffee Tracker app records a user’s caffeine intake over the course of a 24-hour period. Each time the user adds a drink, the app recalculates the current caffeine levels and the equivalent cups of coffee consumed. It then updates the complication timeline and estimates the decrease in the user’s caffeine level over the next 24 hours.
 
@@ -25,7 +25,7 @@ This sample provides three different complications.
 
 For most complication families, the app provides both the Caffeine Dose and the Total Cups complication; however, some families have enough space to display the Both Caffeine and Cups complication instead. For example, for the [`CLKComplicationFamily.graphicCircular`](./clkcomplicationfamily/graphiccircular.md) family, Coffee Tracker provides a Caffeine Dose and a Total Cups complication, while it only provides the Both Caffeine and Cups complication for the  [`CLKComplicationFamily.graphicBezel`](./clkcomplicationfamily/graphicbezel.md) family.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 To add the complication to an active watch face, start by building and running the sample code project in the simulator, and follow these steps:
 
@@ -37,7 +37,7 @@ To add the complication to an active watch face, start by building and running t
 
 For more information on setting up watch faces, see [Change the watch face on your Apple Watch](https://support.apple.com/en-us/HT205536).
 
-##### Define the Complications Supported by the App
+### Define the Complications Supported by the App
 
 The Coffee Tracker app declares constants that contain an identifier and a display name for each type of complication that the app supports. The system uses the identifiers to define the different types of complications. It shows the display names when the user scrolls through the complications while configuring a watch face.
 
@@ -113,7 +113,7 @@ handler([both, caffeine, cups])
 
 The complications appear in the same order as the descriptor array. When the user configures a complication, the picker shows the first three items from the array that support the complication’s family. If there are more than three, the picker displays a More button to provide access to the additional complications.
 
-##### Create Timeline Entries for Each Type of Complication
+### Create Timeline Entries for Each Type of Complication
 
 When the system calls the complication data source’s [`getCurrentTimelineEntry(for:withHandler:)`](./clkcomplicationdatasource/getcurrenttimelineentry%28for,withhandler%29.md), [`getTimelineEntries(for:after:limit:withHandler:)`](./clkcomplicationdatasource/gettimelineentries%28for,after,limit,withhandler%29.md), or [`getLocalizableSampleTemplate(for:withHandler:)`](./clkcomplicationdatasource/getlocalizablesampletemplate%28for,withhandler%29.md) method to request new timeline entries, it passes a [`CLKComplication`](./clkcomplication.md) object that contains the complication’s [`family`](./clkcomplication/family.md) and  [`identifier`](./clkcomplication/identifier.md).
 

@@ -24,7 +24,7 @@ var paddingRight: Int { get set }
 @property (nonatomic, readwrite) NSUInteger paddingRight;
 ```
 
-#### Discussion
+## Discussion
 
 Default value: 0.
 

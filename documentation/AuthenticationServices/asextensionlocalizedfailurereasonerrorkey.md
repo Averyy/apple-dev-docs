@@ -22,7 +22,7 @@ let ASExtensionLocalizedFailureReasonErrorKey: String
 extern NSErrorUserInfoKey const ASExtensionLocalizedFailureReasonErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 When canceling a request, your extension calls [`cancelRequest(withError:)`](./asaccountauthenticationmodificationextensioncontext/cancelrequest%28witherror%29.md). The system informs the user that the request failed. To show additional information regarding the failure, use this key to set a string value in the error’s `userInfo` dictionary.
 

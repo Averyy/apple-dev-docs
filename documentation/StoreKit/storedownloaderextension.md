@@ -20,7 +20,7 @@ An app extension that uses the system implementation to schedule Apple-hosted as
 protocol StoreDownloaderExtension : ManagedDownloaderExtension
 ```
 
-#### Overview
+## Overview
 
 You can optionally implement the inherited `ManagedDownloaderExtension` requirements, but don’t implement any of the inherited `BADownloaderExtension` requirements for which this protocol provides a default implementation. For more information, see [Background Assets](../BackgroundAssets/BackgroundAssets.md).
 

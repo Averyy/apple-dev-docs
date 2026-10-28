@@ -25,7 +25,7 @@ func resume()
 - (void) resume;
 ```
 
-#### Discussion
+## Discussion
 
 All listeners start suspended and must be resumed before they begin processing incoming requests.
 

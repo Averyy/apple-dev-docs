@@ -15,7 +15,7 @@ A Boolean value that indicates whether the system initially hides the status bar
 - **Name**: `UIStatusBarHidden` (Status bar is initially hidden)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 If `YES`, the system hides the status bar. If `NO`, it displays the status bar.
 

@@ -22,14 +22,14 @@ nonisolated
 init(xStart: CGFloat? = nil, xEnd: CGFloat? = nil, yStart: CGFloat? = nil, yEnd: CGFloat? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 - xStart: The x start position. If `xStart` is `nil` then the rectangle will start at the leading edge of the plotting area.
 - xEnd: The x end position. If `xEnd` is `nil` then the rectangle will end at the trailing edge of the plotting area.
 - yStart: The y start position. If `yStart` is `nil` then the rectangle will start at the leading edge of the plotting area.
 - yEnd: The y end position. If `yEnd` is `nil` then the rectangle will end at the trailing edge of the plotting area.
 
-##### Discussion
+### Discussion
 
 Use this initializer to create one rectangle with any optional x start, x end, y start, and y end position. If no parameters are specified the rectangle will fill the plotting area of the chart.
 

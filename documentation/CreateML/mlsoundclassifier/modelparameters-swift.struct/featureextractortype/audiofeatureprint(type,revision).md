@@ -19,7 +19,7 @@ Represents the Audio Feature Print extractor.
 case audioFeaturePrint(type: MLSoundClassifier.ModelParameters.FeaturePrintType = .sound, revision: Int = 1)
 ```
 
-#### Discussion
+## Discussion
 
 The case uses the newest version of [`MLSoundClassifier.ModelParameters.FeaturePrintType.sound`](../featureprinttype/sound.md) if you don’t provide associated values for `type` and `revision`.
 

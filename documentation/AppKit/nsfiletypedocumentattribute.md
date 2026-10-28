@@ -15,7 +15,7 @@ The document type for interpreting the document.
 extern NSAttributedStringDocumentAttributeKey NSFileTypeDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../Foundation/nsstring.md) object indicating which document type was used to interpret the document, specified as a UTI; for reading, this is available along with [`NSDocumentTypeDocumentAttribute`](./nsdocumenttypedocumentattribute.md), but for writing the two are mutually exclusive.
 

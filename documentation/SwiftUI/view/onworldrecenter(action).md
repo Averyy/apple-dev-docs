@@ -23,7 +23,7 @@ nonisolated
 func onWorldRecenter(action: @escaping @MainActor (WorldRecenterPhase) -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 struct ContentView: View {

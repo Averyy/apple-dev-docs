@@ -14,7 +14,7 @@
 CFTypeRef (*GetDebugProperty)(IOFireWireLibDeviceRef self, void *interface, CFStringRef inPropertyName, CFTypeID *outPropertyType);
 ```
 
-#### Discussion
+## Discussion
 
 Do not use this function.
 

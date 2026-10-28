@@ -5,13 +5,13 @@
 
 Audit your app for common accessibility issues with Accessibility Inspector.
 
-#### Overview
+## Overview
 
 In Accessibility Inspector, the *Audits pane* provides the ability to audit your app for a few of the most common accessibility issues. An *audit* inspects a particular screen in your app and provides feedback about the issues it encounters in your UI, such as insufficient contrast, text clipping, or missing element descriptions. Use this pane to perform audits, view audit results with explanations, view fix suggestions, or save audit results for later.
 
 ![Audits pane with one audit result that lists two element description issues.](https://developer.apple.com/tutorials/images/com.apple.Accessibility/accessibility-inspector-audit-result@2x.png)
 
-##### Target your app
+### Target your app
 
 In Accessibility Inspector, the *target menu* displays a list of connected devices and apps you can inspect. To begin an audit, choose your app from this menu.
 
@@ -19,11 +19,11 @@ Selecting an app to audit causes the *Run Audit button* and *Options menu* to ap
 
 ![Audits pane showing the Run Audit button that begins an audit, and the Options menu that allows selection of the types of audits to perform.](https://developer.apple.com/tutorials/images/com.apple.Accessibility/accessibility-inspector-audits-pane-empty@2x.png)
 
-##### Choose which types of audits to perform
+### Choose which types of audits to perform
 
 The *Options menu* lets you configure the types of audits to run depending on the platform you test on. Select the checkbox next to the corresponding type of test to include it in the audit. Listed below are the platform-specific types of tests you can select from the Options menu.
 
-###### All platforms
+#### All platforms
 
 **Element description**. This test checks each element’s accessibility label. All accessible elements must provide some context-specific, descriptive label.
 
@@ -33,7 +33,7 @@ The *Options menu* lets you configure the types of audits to run depending on th
 
 **Element detection**. This test checks whether any elements contain inaccessible content that your app might need to expose as separate accessibility children.
 
-###### iOS, watchOS, and tvOS
+#### iOS, watchOS, and tvOS
 
 **Clipped text**. This test checks whether clipping might occur for any text labels at larger Dynamic Type sizes.
 
@@ -41,13 +41,13 @@ The *Options menu* lets you configure the types of audits to run depending on th
 
 **Dynamic Type**. This test checks whether the text in your app supports Dynamic Type, letting people adjust the size of the text in your app according to their system preference for font size.
 
-###### macOS
+#### macOS
 
 **Parent/child**. This test checks the integrity of the accessibility hierarchy by making sure each parent-child pair forms a closed loop. For example, if parent object lists a child as part of its accessibility children, but the child object doesn’t refer to that object as its parent, this parent-child pair is invalid. Invalid parent-child pairs can prevent an assistive app from correctly traversing an app’s accessibility hierarchy.
 
 **Action**. This test checks whether an element’s accessibility action is valid for that type of element.
 
-##### Run an audit for every screen
+### Run an audit for every screen
 
 After you choose which types of tests to perform, you can begin auditing your UI. To test the accessibility of every workflow in your app, make sure to run an audit for each of the screens in your app. For example, a to-do list app might audit each of the following screens: first launch experience, login screen, empty to-do list, to-do list with tasks, and the screen for adding a new task.
 
@@ -55,7 +55,7 @@ Click the *Run Audit button* to begin an audit for the current screen. Accessibi
 
 ![Audits pane showing one audit result. A label that shows the number of each type of audit issue appears next to the audit result name. The result shows two element description audit issues that provide more detail when disclosed.](https://developer.apple.com/tutorials/images/com.apple.Accessibility/accessibility-inspector-audit-result-annotated@2x.png)
 
-##### Interact with the audit issues
+### Interact with the audit issues
 
 Each audit issue identifies a particular element in the UI that raises a potential accessibility concern. You can interact with these issues in Accessibility Inspector to get more details.
 
@@ -63,25 +63,25 @@ Each audit issue identifies a particular element in the UI that raises a potenti
 - To draw a highlight over the element in question, click the issue.
 - To inspect the element in question in the *Inspection pane*, double-click the issue.
 
-##### Capture a screenshot of each audit issue
+### Capture a screenshot of each audit issue
 
 The Audits pane lets you quickly capture a screenshot of any audit issue from the most recent audit. Click the *Capture icon* next to an audit issue to show a screenshot of the current screen with a blue highlight over the element in question.
 
 ![Screenshot of a blue rectangle over an image in a sample app where Accessibility Inspector reported an audit issue.](https://developer.apple.com/tutorials/images/com.apple.Accessibility/capture-screenshot-audit-issue@2x.png)
 
-##### View fix suggestions for audit issues
+### View fix suggestions for audit issues
 
 Each audit issue presents a corresponding fix suggestion to help you resolve that issue in your app. Click the *Fix suggestions icon* next to an audit issue to receive a fix suggestion for the element in question. For example, a fix suggestion might provide guidance for specific colors, font sizes, or APIs to use to address the audit issue.
 
 ![Fix suggestion for a missing element description audit issue that recommends setting the accessibility label for the element.](https://developer.apple.com/tutorials/images/com.apple.Accessibility/accessibility-inspector-audit-fix-suggestion@2x.png)
 
-##### Export and save audit results
+### Export and save audit results
 
 You might want to keep a record of audit results to share with app designers or reference later while resolving audit issues. To generate an HTML document with audit results for your app, choose File > Save Audit Report As…
 
 This export provides a single HTML file that contains a summary of every audit result from the Audits pane. You can navigate through the details of each result, including screenshots, descriptions, and fix suggestions for each audit issue.
 
-##### Add audits to your UI tests
+### Add audits to your UI tests
 
 In addition to performing accessibility audits manually in Accessibility Inspector, you can automate these audits in your UI tests. Calling [`performAccessibilityAudit(for:_:)`](../XCUIAutomation/xcuiapplication/performaccessibilityaudit%28for,_%29.md) on your [`XCUIApplication`](../XCUIAutomation/xcuiapplication.md) audits the current screen for accessibility issues the same way that running an audit in Accessibility Inspector does. If the UI test finds any audit issues, it automatically fails.
 

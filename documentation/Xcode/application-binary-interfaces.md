@@ -4,7 +4,7 @@
 
 Write assembly instructions that adhere to the application binary interfaces of Apple platforms.
 
-#### Overview
+## Overview
 
 The CPUs found in Apple products define rules for how to call functions, manage the stack, and perform other operations. If your code includes assembly instructions, you must adhere to these rules to operate correctly with compiler-generated code. If you don’t adhere to them, your code might crash or behave unexpectedly.
 

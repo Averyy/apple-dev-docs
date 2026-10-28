@@ -12,7 +12,7 @@ virtual void LoginCompletion (
  FWSBP2LoginCompleteParams *params );
 ```
 
-#### Overview
+## Overview
 
 See IOFireWireSBP2Lib.h for details regarding the FWSBP2LogoutCompleteParams structure that is passed in to the completion.
 

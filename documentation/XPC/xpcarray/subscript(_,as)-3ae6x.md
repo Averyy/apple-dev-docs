@@ -21,7 +21,7 @@ Reads the value associated with the given key as an XPC dictionary.
 subscript(index: Int, as type: XPCDictionary.Type = XPCDictionary.self) -> XPCDictionary? { get }
 ```
 
-#### Return Value
+## Return Value
 
 The value at the specified index in the array.
 

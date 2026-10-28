@@ -19,7 +19,7 @@ The large plain style for segmented controls.
 UISegmentedControlStylePlain
 ```
 
-#### Discussion
+## Discussion
 
 This style is the default.
 

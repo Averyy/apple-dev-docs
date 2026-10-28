@@ -24,7 +24,7 @@ var spotDirection: GLKVector3 { get set }
 @property (nonatomic, assign) GLKVector3 spotDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The default direction is `[0.0, 0.0, -1.0]`.
 

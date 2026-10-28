@@ -20,7 +20,7 @@ A default collision object.
 case `default`
 ```
 
-#### Discussion
+## Discussion
 
 When two objects of this type collide, RealityKit computes the full contact details (contact points, normal vectors, penetration depths, and so on) and stores them in the contact set.
 

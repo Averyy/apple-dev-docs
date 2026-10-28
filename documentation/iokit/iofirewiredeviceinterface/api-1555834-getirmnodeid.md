@@ -14,7 +14,7 @@
 IOReturn (*GetIRMNodeID)(IOFireWireLibDeviceRef self, UInt32 checkGeneration, UInt16 *outIRMNodeID);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

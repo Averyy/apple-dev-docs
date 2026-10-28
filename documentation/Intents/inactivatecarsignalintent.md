@@ -23,13 +23,13 @@ class INActivateCarSignalIntent
 @interface INActivateCarSignalIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 When the user asks for an audible or visual signal from the car, Siri creates an `INActivateCarSignalIntent` object. This intent object can contain the name of the user’s car and the signal options. Use this object to trigger audible and visual signals from the car.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INActivateCarSignalIntentHandling`](./inactivatecarsignalintenthandling.md) protocol. Your handler should confirm the request and create an [`INActivateCarSignalIntentResponse`](./inactivatecarsignalintentresponse.md) object with the results.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object.
 
@@ -38,7 +38,7 @@ The following table lists additional attributes of this intent object.
 | Supported by | Siri Intents, Siri Suggestions |
 | Always requires unlocked device? | Yes |
 
-##### Example Phrases
+### Example Phrases
 
 Uers can ask Siri to activate their car’s signals in a variety of ways. The table below provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive, and Siri may recognize many other phrases.
 

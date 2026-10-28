@@ -23,7 +23,7 @@ var isExternalSyncSupported: Bool { get }
 @property (nonatomic, readonly, getter=isExternalSyncSupported) BOOL externalSyncSupported;
 ```
 
-#### Discussion
+## Discussion
 
 See [`follow(_:videoFrameDuration:delegate:)`](./follow%28_,videoframeduration,delegate%29.md) for more information on external sync.
 

@@ -17,7 +17,7 @@ Find the indices that keep `sorted` sorted when inserting `values`.
 func search(sorted: MLXArray, values: MLXArray, side: SearchSortedSide = .left, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 `.uint32` array in the same shape as `values`
 

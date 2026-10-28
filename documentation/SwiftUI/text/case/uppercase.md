@@ -21,7 +21,7 @@ Displays text in all uppercase characters.
 case uppercase
 ```
 
-#### Discussion
+## Discussion
 
 For example, “Hello” would be displayed as “HELLO”.
 

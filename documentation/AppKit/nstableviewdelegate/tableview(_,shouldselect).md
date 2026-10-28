@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, shouldSelect tableColumn: NSTa
 - (BOOL) tableView:(NSTableView *) tableView shouldSelectTableColumn:(NSTableColumn *) tableColumn;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to permit selection, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The delegate can implement this method to disallow selection of particular columns.
 

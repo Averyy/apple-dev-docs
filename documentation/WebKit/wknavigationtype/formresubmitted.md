@@ -23,7 +23,7 @@ case formResubmitted
 WKNavigationTypeFormResubmitted
 ```
 
-#### Discussion
+## Discussion
 
 This type of action occurs when the forward or backward navigation causes the web view to resubmit a form. It also occurs when a reload operation causes the resubmission of the form.
 

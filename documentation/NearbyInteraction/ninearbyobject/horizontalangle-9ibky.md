@@ -18,7 +18,7 @@ An angle in radians that indicates the azimuthal direction to the nearby object.
 @property (nonatomic, readonly) float horizontalAngle;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets a value of this property when [`isCameraAssistanceEnabled`](../ninearbypeerconfiguration/iscameraassistanceenabled.md) is `true`.
 

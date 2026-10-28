@@ -16,11 +16,11 @@ Allocates a buffer of type bufferType.
 IOReturn (*LowLatencyCreateBuffer)(void *self, void **buffer, IOByteCount size, UInt32 bufferType);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, or kIOReturnNotOpen if the interface is not open for exclusive access. If the buffer can't be allocated, it will return kIOReturnNoMemory.
 
-#### Discussion
+## Discussion
 
 This function allocates a buffer of type bufferType. The buffer can then be used with the LowLatencyIsochReadPipeAsync() or LowLatencyIsochWritePipeAsync() calls.
 

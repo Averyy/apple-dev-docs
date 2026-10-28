@@ -24,7 +24,7 @@ let GCProductCategoryArcadeStick: String
 extern NSString * const GCProductCategoryArcadeStick;
 ```
 
-#### Discussion
+## Discussion
 
 Use this product category to determine whether a [`GCController`](./gccontroller.md) object is an arcade stick.
 

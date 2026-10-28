@@ -10,7 +10,7 @@ Display an interactive car model using gestures in a reality view.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample demonstrates how to create and display a 3D car model that responds to gestures within visionOS. It uses the [`ModelEntity`](../RealityKit/modelentity.md) initializer to asynchronously load a model by its filename, and it implements the [`DragGesture`](../SwiftUI/draggesture.md) protocol on the `ModelEntity`, to interact with the model.
 
@@ -21,7 +21,7 @@ At launch, the app’s main view generates the following:
 
 [Video: A screenshot of a visionOS app in Simulator, displaying a 3D car entity and a translucent window labeled 'Use gestures to move the car'.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sample-car-example-1-main-view.mov)
 
-##### Set up the gestures for the entity
+### Set up the gestures for the entity
 
 To make sure the car locks on the ground, the sample creates an `SIMD3` extension with the `grounded` variable to lock the y-axis to 0 during a drag gesture movement:
 
@@ -109,7 +109,7 @@ var scaleGesture: some Gesture {
 
 The `initialScale` variable resets back to `nil` once the gesture ends.
 
-##### Load the 3D car model
+### Load the 3D car model
 
 The `CarView` loads in a USDZ file as a [`ModelEntity`](../RealityKit/modelentity.md) instance and creates a `bounds` containing a bounding box of the outer dimensional size of the `car` entity:
 
@@ -140,7 +140,7 @@ struct CarView: View {
 }
 ```
 
-##### Set the collision component
+### Set the collision component
 
 The app uses the `bounds` property to generate a bounding box with [`ShapeResource`](../RealityKit/shaperesource.md), which serves as a collision bound for the [`CollisionComponent`](../RealityKit/collisioncomponent.md). This enables the collision component to interact with the environment:
 
@@ -213,7 +213,7 @@ struct CarView: View {
 
 Finally, the app adds the `car` entity to the `RealityView`.
 
-##### Run the immersive scene
+### Run the immersive scene
 
 The sample structure includes an `ImmersiveSpace` entry to the scene to include in the app’s environment:
 
@@ -255,7 +255,7 @@ struct MainView: View {
 }
 ```
 
-###### Related samples
+#### Related samples
 
 - [Creating an immersive space in visionOS](./creating-immersive-spaces-in-visionos-with-swiftui.md)
   Enhance your visionOS app by adding an immersive space using RealityKit.

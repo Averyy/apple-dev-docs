@@ -23,7 +23,7 @@ init<OtherOutput>(_ match: Regex<OtherOutput>.Match)
 
 Available when `Output` is `AnyRegexOutput`.
 
-#### Discussion
+## Discussion
 
 You can use this initializer to convert a `Regex.Match` with strongly-typed captures into a match with the type-eraser `AnyRegexOutput` as its output type.
 

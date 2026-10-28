@@ -5,7 +5,7 @@
 
 Register and authenticate users with passkeys and security keys, without using passwords.
 
-#### Overview
+## Overview
 
 Eliminating passwords simplifies account creation and authentication for apps and websites. Additionally, it reduces risks that arise from the reuse of one password across multiple services, brute force attacks, and social engineering that bad actors use to obtain credential information. By implementing public-private authentication according to the [W3C Web Authentication](https://www.w3.org/TR/webauthn-2/) specification, your users no longer need to remember complicated passwords or rely on password managers.
 

@@ -25,7 +25,7 @@ var decodeTimeStamp: CMTime
 CMTime decodeTimeStamp;
 ```
 
-#### Discussion
+## Discussion
 
 If the samples are in presentation order, this must be set to `kCMTimeInvalid`.
 

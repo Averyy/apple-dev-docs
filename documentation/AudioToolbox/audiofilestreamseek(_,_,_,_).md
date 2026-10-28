@@ -24,11 +24,11 @@ func AudioFileStreamSeek(_ inAudioFileStream: AudioFileStreamID, _ inPacketOffse
 extern OSStatus AudioFileStreamSeek(AudioFileStreamID inAudioFileStream, SInt64 inPacketOffset, SInt64 *outDataByteOffset, AudioFileStreamSeekFlags *ioFlags);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 After you call this function, the parser assumes the next data passed to the [`AudioFileStreamParseBytes(_:_:_:_:)`](./audiofilestreamparsebytes%28_,_,_,_%29.md) function starts from the byte offset returned in the `outDataByteOffset` parameter.
 

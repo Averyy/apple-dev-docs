@@ -5,7 +5,7 @@
 
 Verify your implementation of Apple In-App Purchases by testing your code throughout its development.
 
-#### Overview
+## Overview
 
 Use the Apple sandbox and Xcode test environments to test your implementation of Apple In-App Purchases using the StoreKit framework. Comprehensive testing can help you:
 
@@ -35,7 +35,7 @@ TestFlight lets you get feedback from members of your team or from external test
 
 None of the test environments charge users when they test buying a product. The App Store doesn’t send emails for purchases or refunds made in the test environments.
 
-##### Control the test environment
+### Control the test environment
 
 To set up and run test scenarios, you often need to control the test environment. For example, you may want to reset a test account to rerun the same test multiple times, or mimic actions users take outside your app that affect the test conditions. The following table shows the capabilities each tool has to control the test environment:
 
@@ -50,7 +50,7 @@ To set up and run test scenarios, you often need to control the test environment
 
 For more information about speeding up renewal periods for testing, see [Test Apple In-App Purchases](https://developer.apple.com/help/app-store-connect/test-in-app-purchases-main/test-in-app-purchases).
 
-##### Test common StoreKit scenarios
+### Test common StoreKit scenarios
 
 All apps that offer Apple In-App Purchases need to support restoring purchases, displaying Apple In-App Purchases to the customer, and handling basic transactions. The following table lists common test scenarios and whether they’re testable in the sandbox or Xcode:
 
@@ -70,7 +70,7 @@ All apps that offer Apple In-App Purchases need to support restoring purchases, 
 | Manage subscriptions within your app with [`showManageSubscriptions(in:)`](./appstore/showmanagesubscriptions%28in%29.md) and [`manageSubscriptionsSheet(isPresented:)`](../SwiftUI/view/managesubscriptionssheet%28ispresented%29.md) | Yes | Yes |
 | Initiate a refund request. For more information, see [Testing refund requests](./testing-refund-requests.md). | Yes | Yes |
 
-##### Test subscriptions and Ask to Buy
+### Test subscriptions and Ask to Buy
 
 Depending on the Apple In-App Purchases your app offers, you may need to test scenarios that involve auto-renewing subscriptions, introductory offers, promotional offers, and Ask to Buy. The following table lists test scenarios and whether they’re testable in the sandbox or Xcode:
 

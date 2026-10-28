@@ -19,7 +19,7 @@ init(url: URL, readOnly: Bool) throws
 - (instancetype) initWithURL:(NSURL *) url readOnly:(BOOL) readOnly error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 In Swift the methods returns an attachment object; in Objective-C the methods returns an attachment object on success, or `nil` if an error occurred
 

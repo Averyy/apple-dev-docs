@@ -17,7 +17,7 @@ Context of values that work together to provide an [`EmbeddingModel`](./embeddin
 struct EmbedderModelContext
 ```
 
-#### Overview
+## Overview
 
 This is created using a [`EmbedderModelFactory`](./embeddermodelfactory.md) and often used inside a [`EmbedderModelContainer`](./embeddermodelcontainer.md).
 

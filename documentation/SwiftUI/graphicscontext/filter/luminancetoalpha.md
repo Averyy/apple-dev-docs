@@ -21,11 +21,11 @@ Returns a filter that sets the opacity of each pixel based on its luminance.
 static var luminanceToAlpha: GraphicsContext.Filter { get }
 ```
 
-#### Return Value
+## Return Value
 
 A filter that applies a luminance to alpha transformation.
 
-#### Discussion
+## Discussion
 
 The filter computes the luminance of each pixel and uses it to define the opacity of the result, combined with black (zero) color components.
 

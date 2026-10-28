@@ -19,7 +19,7 @@ func weight(of fontObj: NSFont) -> Int
 - (NSInteger) weightOfFont:(NSFont *) fontObj;
 ```
 
-#### Return Value
+## Return Value
 
 An approximation of the weight of the given font, where 0 indicates the lightest possible weight, 5 indicates a normal or book weight, and 9 or more indicates a bold or heavier weight. Because this method returns only an approximation of a font’s weight, it is not guaranteed to return the exact weight with which `fontObj` was initialized.
 

@@ -26,7 +26,7 @@ var titleMenuProvider: (([UIMenuElement]) -> UIMenu?)? { get set }
 
 - [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
-#### Discussion
+## Discussion
 
 UIKit calls this closure to create a context menu that appears when a person taps the title of the navigation item. UIKit passes in a set of menu element suggestions that you can either use directly or modify in this closure to customize the menu.
 

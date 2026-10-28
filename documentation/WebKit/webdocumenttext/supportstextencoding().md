@@ -20,7 +20,7 @@ func supportsTextEncoding() -> Bool
 - (BOOL) supportsTextEncoding;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the web document supports text encoding; otherwise, [`false`](../../Swift/false.md).
 

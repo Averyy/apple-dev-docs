@@ -25,7 +25,7 @@ func class_createInstance(_ cls: AnyClass?, _ extraBytes: Int) -> Any?
 extern idclass_createInstance(Class cls, size_t extraBytes);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of the class `cls`.
 

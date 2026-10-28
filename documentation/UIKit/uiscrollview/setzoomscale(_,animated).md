@@ -23,7 +23,7 @@ func setZoomScale(_ scale: CGFloat, animated: Bool)
 - (void) setZoomScale:(CGFloat) scale animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 The new scale value should be between the [`minimumZoomScale`](./minimumzoomscale.md) and the [`maximumZoomScale`](./maximumzoomscale.md).
 

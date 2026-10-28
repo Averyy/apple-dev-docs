@@ -24,7 +24,7 @@ let HKPredicateKeyPathECGClassification: String
 extern NSString * const HKPredicateKeyPathECGClassification;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant whenever you want to include the ECG’s classification in a predicate format string. Add a `%K` placeholder to the format string, and then pass this constant as an argument.
 

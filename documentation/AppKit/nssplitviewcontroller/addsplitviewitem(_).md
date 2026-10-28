@@ -19,7 +19,7 @@ func addSplitViewItem(_ splitViewItem: NSSplitViewItem)
 - (void) addSplitViewItem:(NSSplitViewItem *) splitViewItem;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method you can use in place of the [`insertSplitViewItem(_:at:)`](./insertsplitviewitem%28_,at%29.md) method when you want to add a split view item to the end of the [`splitViewItems`](./splitviewitems.md) array. Calling this method implicitly calls the [`insertSplitViewItem(_:at:)`](./insertsplitviewitem%28_,at%29.md) method.
 

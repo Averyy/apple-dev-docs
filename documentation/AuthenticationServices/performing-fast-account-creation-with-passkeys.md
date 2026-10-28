@@ -12,11 +12,11 @@ Allow people to quickly create an account with passkeys and associated domains.
 - Mac Catalyst 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC25 session 279: [What’s new in passkeys](https://developer.apple.com/videos/play/wwdc2025/279).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To configure the sample code project, do the following:
 

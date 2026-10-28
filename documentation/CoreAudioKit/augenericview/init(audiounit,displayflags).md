@@ -19,7 +19,7 @@ init(audioUnit inAudioUnit: AudioUnit, displayFlags inFlags: AUGenericViewDispla
 - (AUGenericView *) initWithAudioUnit:(AudioUnit) inAudioUnit displayFlags:(AUGenericViewDisplayFlags) inFlags;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized audio unit associated with the generic view, with display flags set.
 

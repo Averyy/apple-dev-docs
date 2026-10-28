@@ -16,11 +16,11 @@ Returns a list of accounts a person added since a time specified by the provided
 func accountHistory(since token: FinanceStore.HistoryToken? = nil, isMonitoring: Bool = true) -> FinanceStore.History<Account>
 ```
 
-#### Return Value
+## Return Value
 
 A `History` that describes the accounts.
 
-#### Discussion
+## Discussion
 
 Use this method to list and monitor accounts present in a person’s Wallet. If provided, the framework uses the `since` history token as a starting point to evaluate which accounts to return.
 

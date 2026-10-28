@@ -19,7 +19,7 @@ class IOBluetoothSDPUUID
 @interface IOBluetoothSDPUUID : NSData
 ```
 
-#### Overview
+## Overview
 
 The IOBluetoothSDPUUID class can represent a UUID of any valid size (16, 32 or 128 bits). It provides the ability to compare two UUIDs no matter what their size as well as the ability to promote the size of a UUID to a larger one.
 

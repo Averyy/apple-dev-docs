@@ -20,7 +20,7 @@ struct es_event_signal_t
 typedef struct { ... } es_event_signal_t;
 ```
 
-#### Overview
+## Overview
 
 Endpoint Security doesn’t generate this event if a process sends a signal to itself.
 

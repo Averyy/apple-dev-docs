@@ -25,7 +25,7 @@ func rotate(by worldRotation: SCNQuaternion, aroundTarget worldTarget: SCNVector
 - (void) rotateBy:(SCNQuaternion) worldRotation aroundTarget:(SCNVector3) worldTarget;
 ```
 
-#### Discussion
+## Discussion
 
 The effects of this method are animatable; that is, calling this method during an implicit-animation transaction animates the rotation effect. (See [Animating SceneKit Content](../animating-scenekit-content.md).)
 

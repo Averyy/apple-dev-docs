@@ -20,7 +20,7 @@ func ODNodeGetTypeID() -> CFTypeID
 extern CFTypeID ODNodeGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type ID for an Open Directory node.
 

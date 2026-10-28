@@ -21,7 +21,7 @@ let SRErrorDomain: String
 extern NSErrorDomain SRErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about error domains, see [Error domains](../CoreFoundation/error-domains.md).
 

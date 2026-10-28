@@ -24,7 +24,7 @@ var isVisible: Bool { get }
 @property (nonatomic, readonly, getter=isVisible) BOOL visible;
 ```
 
-#### Discussion
+## Discussion
 
 On Apple TV, you can set this property to [`true`](../../Swift/true.md) to move the focus to the access point. This is an observable property.
 

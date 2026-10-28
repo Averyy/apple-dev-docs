@@ -15,7 +15,7 @@ The block signature for a routine that copies data from guest physical memory in
 typedef _Bool (^)(unsigned long long, unsigned long long, void *) PGReadMemory;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if the block copied the data successfully; otherwise [`false`](../Swift/false.md).
 

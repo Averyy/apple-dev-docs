@@ -22,11 +22,11 @@ func AudioSessionAddPropertyListener(_ inID: AudioSessionPropertyID, _ inProc: A
 extern OSStatus AudioSessionAddPropertyListener(AudioSessionPropertyID inID, AudioSessionPropertyListener inProc, void *inClientData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 When an audio session property value changes, and you have added a listener callback for that property, the audio session object invokes the callback.
 

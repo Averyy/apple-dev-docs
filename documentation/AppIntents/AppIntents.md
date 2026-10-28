@@ -15,7 +15,7 @@ Make content and actions discoverable by Apple Intelligence and support system e
 - visionOS 1.0+
 - watchOS 9.0+
 
-#### Overview
+## Overview
 
 Make your app’s actions and data available outside your app using the App Intents framework. Every app has code to perform specific actions, such as playing music or displaying photos. Apps also have data, such as songs or photos, that people might want to use outside your app.
 

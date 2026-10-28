@@ -24,7 +24,7 @@ func presentationIndexPath(forDataSourceIndexPath dataSourceIndexPath: IndexPath
 - (NSIndexPath *) presentationIndexPathForDataSourceIndexPath:(NSIndexPath *) dataSourceIndexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The index path of the same item in the presentation layer of your object, or `nil` if the item is not in the presentation layer.
 

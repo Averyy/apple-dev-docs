@@ -170,8 +170,11 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://developer.apple.com/documentation/storekit/automaticproductplaceholdericon/4278999-producticonborder"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 42
   }

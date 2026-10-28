@@ -11,11 +11,11 @@ Forces the control to be flushed out to the hardware.
 virtual IOReturn flushValue();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the result of performValueChange() - kIOReturnSuccess on success.
 
-#### Overview
+## Overview
 
 This function calls performValueChange() directly with the current value of the IOAudioControl.
 

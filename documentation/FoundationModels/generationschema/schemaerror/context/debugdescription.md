@@ -20,7 +20,7 @@ A string representation of the debug description.
 let debugDescription: String
 ```
 
-#### Discussion
+## Discussion
 
 This string is not localized and is not appropriate for display to end users.
 

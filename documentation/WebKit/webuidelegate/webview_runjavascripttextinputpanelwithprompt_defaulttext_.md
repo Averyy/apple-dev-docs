@@ -17,7 +17,7 @@ Displays a JavaScript text input panel and returns the entered text.
 - (NSString *) webView:(WebView *) sender runJavaScriptTextInputPanelWithPrompt:(NSString *) prompt defaultText:(NSString *) defaultText;
 ```
 
-#### Discussion
+## Discussion
 
 This method is used to provide an alternative prompt panel when JavaScript code calls `prompt`. Delegates should visually indicate that this panel comes from JavaScript. The panel should have an OK and Cancel button, and an editable text field. If you do not implement this method, a JavaScript text input panel is displayed.
 

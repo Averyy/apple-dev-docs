@@ -24,7 +24,7 @@ class THCredentials
 @interface THCredentials : NSObject
 ```
 
-#### Overview
+## Overview
 
 A Thread network defines parameters that all connected devices use. [`THCredentials`](./thcredentials.md) provides these parameters.
 

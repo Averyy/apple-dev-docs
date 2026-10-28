@@ -24,7 +24,7 @@ var originalFilename: String? { get set }
 @property (nonatomic, copy, nullable) NSString * originalFilename;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to track the original name of the file from which you import an asset resource even if you use the [`addResource(with:data:options:)`](../phassetcreationrequest/addresource%28with,data,options%29.md) method to create a resource from data instead of from a file. After creating the asset, this information is available in the [`originalFilename`](../phassetresource/originalfilename.md) property of the corresponding [`PHAssetResource`](../phassetresource.md) object.
 

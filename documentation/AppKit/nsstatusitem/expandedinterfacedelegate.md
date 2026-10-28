@@ -19,7 +19,7 @@ weak var expandedInterfaceDelegate: (any NSStatusItemExpandedInterfaceDelegate)?
 @property (weak, nullable) id<NSStatusItemExpandedInterfaceDelegate> expandedInterfaceDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 Status items that assign an [`NSMenu`](../nsmenu.md) to their button don’t receive expanded interface callbacks — the system handles the expanded menu interface automatically. The delegate shows the expanded interface, such as an [`NSWindow`](../nswindow.md) positioned beneath the status item, in response to [`statusItem(_:didBegin:)`](../nsstatusitemexpandedinterfacedelegate/statusitem%28_,didbegin%29.md), and dismisses the interface in response to [`statusItemDidEndExpandedInterfaceSession(_:animated:)`](../nsstatusitemexpandedinterfacedelegate/statusitemdidendexpandedinterfacesession%28_,animated%29.md).
 

@@ -20,7 +20,7 @@ A type-erased container for a value stored in a Universal Scene Description file
 struct USDValue
 ```
 
-#### Overview
+## Overview
 
 `USDValue` wraps the various concrete value types USD recognises (numerics, strings, vectors, tokens, paths, asset paths, time codes, and so on) so they can be passed through generic APIs without exposing the underlying C++ representation.
 

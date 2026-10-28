@@ -22,7 +22,7 @@ An attribute to define how punctuation should be spoken.
 enum IncludesPunctuationAttribute
 ```
 
-#### Overview
+## Overview
 
 When `true`, all punctuation will be spoken. When `false`, no punctuation will be spoken. If this attribute is not present, the user’s settings will be used.
 

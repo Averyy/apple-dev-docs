@@ -25,7 +25,7 @@ func xpc_string_create_with_format_and_arguments(_ fmt: UnsafePointer<CChar>, _ 
 extern xpc_object_txpc_string_create_with_format_and_arguments(const char *fmt, va_list ap);
 ```
 
-#### Return Value
+## Return Value
 
 A new string object.
 

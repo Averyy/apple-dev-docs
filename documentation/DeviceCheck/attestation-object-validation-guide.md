@@ -5,7 +5,7 @@
 
 Use this guide to validate your implementation of verifying the attestation object verification process.
 
-##### Example setup
+### Example setup
 
 Consider we have an example iOS Application with the following properties:
 
@@ -31,7 +31,7 @@ After calling [`attestKey(_:clientDataHash:completionHandler:)`](./dcappattestse
 
 You may use this guide as a reference to cross-check your attestation object validation operations against this sample attestation object, to ensure you are producing the correct results at each step, in your use case.
 
-##### Walking through the validation steps
+### Walking through the validation steps
 
 1. Verify that the `x5c` array contains the intermediate and leaf certificates for App Attest, starting from the credential certificate in the first data buffer in the array (`credcert`). Verify the validity of the certificates using Apple’s [App Attest root certificate](https://www.apple.com/certificateauthority/private).
 

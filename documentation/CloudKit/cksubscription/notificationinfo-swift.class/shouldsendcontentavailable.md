@@ -25,7 +25,7 @@ var shouldSendContentAvailable: Bool { get set }
 @property (assign) BOOL shouldSendContentAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../../Swift/true.md), the server includes the `content-available` flag in the push notification’s payload. That flag causes the system to wake or launch an app that isn’t currently running. The app then receives background execution time to download any data for the push notification, such as the set of changed records. If the app is already running in the foreground, the inclusion of this flag has no additional effect and the system delivers the notification to the app delegate for processing as usual.
 

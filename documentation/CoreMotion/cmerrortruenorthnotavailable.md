@@ -24,7 +24,7 @@ var CMErrorTrueNorthNotAvailable: CMError { get }
 CMErrorTrueNorthNotAvailable
 ```
 
-#### Discussion
+## Discussion
 
 This error usually indicates that the device’s location isn’t yet available.
 

@@ -25,7 +25,7 @@ typealias NSInteger = Int
 typedef long NSInteger;
 ```
 
-#### Discussion
+## Discussion
 
 When building 32-bit applications, NSInteger is a 32-bit integer. A 64-bit application treats NSInteger as a 64-bit integer.
 

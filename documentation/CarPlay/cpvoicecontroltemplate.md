@@ -22,7 +22,7 @@ class CPVoiceControlTemplate
 @interface CPVoiceControlTemplate : CPTemplate
 ```
 
-#### Overview
+## Overview
 
 CarPlay navigation apps must show a voice control indicator during audio input by presenting a voice control template. When creating the template, provide one or more [`CPVoiceControlState`](./cpvoicecontrolstate.md) objects. To switch between states, call the [`activateVoiceControlState(withIdentifier:)`](./cpvoicecontroltemplate/activatevoicecontrolstate%28withidentifier%29.md) method.
 

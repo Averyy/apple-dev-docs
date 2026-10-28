@@ -21,7 +21,7 @@ func insertNewButtonImage(_ newButtonImage: NSImage, in buttonCell: NSButtonCell
 - (void) insertNewButtonImage:(NSImage *) newButtonImage in:(NSButtonCell *) buttonCell;
 ```
 
-#### Discussion
+## Discussion
 
 This method should perform application-specific manipulation of the image before it’s inserted and displayed by the button cell.
 

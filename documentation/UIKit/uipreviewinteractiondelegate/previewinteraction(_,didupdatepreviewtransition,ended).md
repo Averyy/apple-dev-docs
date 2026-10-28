@@ -23,7 +23,7 @@ func previewInteraction(_ previewInteraction: UIPreviewInteraction, didUpdatePre
 - (void) previewInteraction:(UIPreviewInteraction *) previewInteraction didUpdatePreviewTransition:(CGFloat) transitionProgress ended:(BOOL) ended;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called repeatedly during the preview phase of the preview interaction. Use the supplied `transitionProgress` parameter to update the UI to reflect the progress of the interaction. For example, the *peek* effect in view controller preview transitions progressively blurs everything except the appropriate view.
 

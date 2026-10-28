@@ -23,11 +23,11 @@ init(barButtonItems: [UIBarButtonItem], representativeItem: UIBarButtonItem?)
 - (instancetype) initWithBarButtonItems:(NSArray<UIBarButtonItem *> *) barButtonItems representativeItem:(UIBarButtonItem *) representativeItem;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized bar button item group.
 
-#### Discussion
+## Discussion
 
 When you use this initializer to create a group for a navigation bar, it produces the same result as [`fixedGroup(representativeItem:items:)`](./fixedgroup%28representativeitem,items%29.md) (Swift) or [`fixedGroupWithRepresentativeItem:items:`](./fixedgroupwithrepresentativeitem_items_.md) (Objective-C).
 

@@ -19,7 +19,7 @@ Asks the delegate to return the locations of text input elements inside the spec
 func indirectScribbleInteraction(_ interaction: any UIInteraction, requestElementsIn rect: CGRect, completion: @escaping ([Self.ElementIdentifier]) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Each rectangle returned by the completion handler represents an area where the user can start writing even if it’s not a text input field itself.
 

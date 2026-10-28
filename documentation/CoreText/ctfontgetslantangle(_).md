@@ -25,7 +25,7 @@ func CTFontGetSlantAngle(_ font: CTFont) -> CGFloat
 extern CGFloat CTFontGetSlantAngle(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed slant angle of the font. This is equivalent to the italic or caret angle with any skew from the transformation matrix applied.
 

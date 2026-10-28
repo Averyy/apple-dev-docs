@@ -19,7 +19,7 @@ static let contentArray: NSBindingName
 extern NSBindingName NSContentArrayBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

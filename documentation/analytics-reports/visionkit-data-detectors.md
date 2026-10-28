@@ -5,7 +5,7 @@
 
 Review your app’s use of data detector invocation for VisionKit.
 
-#### Overview
+## Overview
 
 The data in this report contains aggregated details about data detector invocation for VisionKit. It  includes the data detector type and the gesture someone uses to invoke it.
 
@@ -22,7 +22,7 @@ The data in this report contains aggregated details about data detector invocati
   - Individual rows will only appear if they have a value of 5 or more.
 - Data Context: You can analyze your data with additional context by comparing it with the data in the [App Sessions Context](./app-sessions-context.md) report, which provides a count of unique devices that use your app on a specific day. For example, if your app performed an action detailed in this report on 10 unique devices on a specific day, and the App Sessions Context report shows there were 100 unique devices running your app that day, then you can approximate that 10% of the devices running your app performed that action.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |
@@ -37,7 +37,7 @@ The data in this report contains aggregated details about data detector invocati
 | Event Type | The gesture that the user invokes to interact with the data detector, for example, tap or long press | `string` |
 | Types | The different types of data detectors found, for example, phone number, airline flight, or address | `string` |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

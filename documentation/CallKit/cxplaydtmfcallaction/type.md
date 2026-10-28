@@ -23,7 +23,7 @@ var type: CXPlayDTMFCallAction.ActionType { get set }
 @property (nonatomic) CXPlayDTMFCallActionType type;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [`CXPlayDTMFCallAction.ActionType`](./actiontype.md).
 

@@ -19,7 +19,7 @@ func sizeToFit()
 - (void) sizeToFit;
 ```
 
-#### Discussion
+## Discussion
 
 Use this after you use [`style`](./style-swift.property.md) to re-size the progress indicator.
 

@@ -22,7 +22,7 @@ class MLMediaObject
 @interface MLMediaObject : NSObject
 ```
 
-#### Overview
+## Overview
 
 A media object belongs to a single media source but can be referenced by several groups within that source. In other words, an object can appear in multiple places in the group hierarchy under a single media source. In iTunes, a movie that was purchased through the iTunes Store is referenced by both the Purchased playlist and the Movies playlist. If a user adds the movie to his own playlist, the group respresenting that playlist will also reference the movie. All three groups reference the same media object.
 

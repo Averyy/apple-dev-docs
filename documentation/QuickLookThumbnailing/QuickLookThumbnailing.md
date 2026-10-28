@@ -13,7 +13,7 @@ Generate thumbnails for common file types and add a Thumbnail Extension to your 
 - macOS 10.15+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 You may want to create a miniature representation, or *thumbnail*, of a file and its contents to display within your app. The QuickLookThumbnailing framework provides an API to generate thumbnails using the [`QLThumbnailGenerator`](./qlthumbnailgenerator.md) object. It can generate thumbnails for common file types, including:
 

@@ -18,7 +18,7 @@ The area of the live video in view coordinates that the data scanner searches fo
 var regionOfInterest: CGRect? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If you add interface objects to the live video (using the [`overlayContainerView`](./overlaycontainerview.md) property) that might hide items from a person, set this property to restrict the scanning area. The default value is the bounds of the view.
 

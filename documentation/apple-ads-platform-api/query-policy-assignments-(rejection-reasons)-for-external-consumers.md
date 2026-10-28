@@ -9,7 +9,7 @@ Query paginated policy assignment rejection reason details.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint returns rejection reason details for policy assignments associated with brands. Use it to identify why a creative, asset, or brand entity was rejected so you can take corrective action.
 
@@ -19,7 +19,7 @@ The request supports standard `filters`, `sorting`, and `pagination` via `Policy
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -27,7 +27,7 @@ See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of suppor
 
 The request body is a [`QueryRequest`](./queryrequest.md)-shaped object composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
-#### Request Body
+## Request Body
 
 `PolicyAssignmentQueryRequest`
 
@@ -37,9 +37,9 @@ The request body is a [`QueryRequest`](./queryrequest.md)-shaped object composed
 | `sorting` | array | No | Array of sort directives. Each entry specifies a `field` and `order` (`ASC` or `DESC`). |
 | `pagination` | object | No | Pagination object with `pageSize` (default: 20), `offset` (default: 0), and optional `fetchTotalCount` (boolean). When `fetchTotalCount` is `true`, the response includes the total count of matching records. |
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Query rejection reasons for a specific brand, sorted by ID descending.
 
@@ -71,7 +71,7 @@ POST /v1/rejection-reasons/business-brands/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

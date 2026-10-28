@@ -16,7 +16,7 @@ get pointOfInterestFilter(): PointOfInterestFilter | null;
 set pointOfInterestFilter(value: PointOfInterestFilter | null);
 ```
 
-#### Discussion
+## Discussion
 
 If you provide a [`PointOfInterestFilter`](../pointofinterestfilter.md) and set [`includePointsOfInterest`](./includepointsofinterest.md) to `false`, the filter takes precedence and MapKit JS ignores the Boolean.
 

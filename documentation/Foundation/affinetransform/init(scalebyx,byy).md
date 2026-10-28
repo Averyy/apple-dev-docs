@@ -15,7 +15,7 @@ Creates an affine transformation matrix from scaling values.
 init(scaleByX x: CGFloat, byY y: CGFloat)
 ```
 
-#### Discussion
+## Discussion
 
 The matrix takes the following form:
 

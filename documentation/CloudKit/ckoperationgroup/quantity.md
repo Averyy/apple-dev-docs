@@ -25,7 +25,7 @@ var quantity: Int { get set }
 @property (assign) NSUInteger quantity;
 ```
 
-#### Discussion
+## Discussion
 
 This property shows the number of operations that you expect to be in this operation group. It’s the developer’s responsibility to set this value.
 

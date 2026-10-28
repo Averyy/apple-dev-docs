@@ -19,7 +19,7 @@ class func standard() -> WebPreferences!
 + (WebPreferences *) standardPreferences;
 ```
 
-#### Return Value
+## Return Value
 
 A WebPreferences object containing the standard set of preferences that may be used by all WebView objects.
 

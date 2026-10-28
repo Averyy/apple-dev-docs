@@ -22,7 +22,7 @@ var hasActiveDrop: Bool { get }
 @property (nonatomic, readonly) BOOL hasActiveDrop;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the table view is tracking a drop session.
 

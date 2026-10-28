@@ -20,7 +20,7 @@ var kSecCSCheckAllArchitectures: UInt32 { get }
 kSecCSCheckAllArchitectures
 ```
 
-#### Discussion
+## Discussion
 
 By default, only the native architecture is validated.
 

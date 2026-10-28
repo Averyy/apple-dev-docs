@@ -11,7 +11,7 @@ Change the appearance of a rendered onscreen element when a player gazes at it.
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 In visionOS, both SwiftUI views and RealityKit entities can take advantage of *hover effects*, which change the appearance of a rendered onscreen element when a player gazes at it or highlights it using assistive technologies. In visionOS 26, fully immersive apps that render their own content using Metal can also use hover effects.
 
@@ -19,7 +19,7 @@ This sample code project demonstrates how to pass in uniforms and attributes to 
 
 [Video: A video of a 3D cuboid containing white text on a swirling green background floating against a swirling purple background. After a moment, the cuboid shatters into pieces that explode outward in various directions. The pieces highlight, and then a spatial tap gesture occurs on each piece to return them all to their original position.](https://developer.apple.com/tutorials/videos/com.apple.compositorservices/CS-HoverEffects.mp4)
 
-#### Understand the flow
+## Understand the flow
 
 To protect privacy, Metal shaders can’t get information about where a person using an Apple Vision Pro device is currently looking. RealityKit apps can add gaze highlighting using a [`HoverEffectComponent`](../RealityKit/hovereffectcomponent.md). For Full Space Metal apps, that’s not an option. Instead, Compositor Services provides a privacy-preserving mechanism for highlighting the virtual objects that Metal renders. The system does the gaze testing and highlight rendering, not the app.
 
@@ -31,7 +31,7 @@ Compositor Services provides your app with an `Integer` frame buffer for passing
 
 ![An image of fragments, where each fragment has a different color](https://developer.apple.com/tutorials/images/com.apple.compositorservices/CS-HoverEffects-TrackingAreas.png)
 
-#### Declare the immersive space
+## Declare the immersive space
 
 In `CompositorServicesHoverEffectApp`, the app declares a [`WindowGroup`](../SwiftUI/windowgroup.md) for a small SwiftUI window that shows at launch, and an [`ImmersiveSpace`](../SwiftUI/immersivespace.md) that puts the app in Full Space mode when a player activates it. The app declares the space to [`ImmersionStyle`](../SwiftUI/immersionstyle.md) with [`full`](../SwiftUI/immersionstyle/full.md). The body of the `ImmersiveSpace` displays a `CompositorLayer` that the `makeCompositorLayer()` function creates, configures, and returns.
 
@@ -42,7 +42,7 @@ ImmersiveSpace(id: AppModel.immersiveSpaceId) {
 .immersionStyle(selection: .constant(.full), in: .full)
 ```
 
-#### Set up the compositor layer
+## Set up the compositor layer
 
 The `makeCompositorLayer()` function first sets up the depth and color buffers by specifying their format.
 
@@ -64,7 +64,7 @@ Then it enables foveation if the device supports it. For more information on usi
         }
 ```
 
-#### Set up tracking areas
+## Set up tracking areas
 
 Then `makeCompositorLayer()` checks whether the app is running in visionOS 26 or later. If it is, it enables hover effects by specifying a [`trackingAreasFormat`](./layerrenderer/configuration-swift.struct/trackingareasformat.md) value of [`MTLPixelFormat.r8Uint`](../Metal/mtlpixelformat/r8uint.md), which tells the system to enable gaze tracking and highlighting using unsigned integer values to represent different draw calls.
 
@@ -90,7 +90,7 @@ Rendered scenes look better with MSAA, so the app offers it as a configurable op
             }
 ```
 
-#### Override maximum render quality
+## Override maximum render quality
 
 If the player requests a specific render quality, the function passes that value into the configuration.
 
@@ -113,7 +113,7 @@ Then, in the trailing closure, it calls the `render(_:)` function.
 }
 ```
 
-#### Set up rendering
+## Set up rendering
 
 The `render(_:)` function creates a high-priority asynchronous task so that the rendering work doesn’t occur on the main thread. Then it creates a `RenderData` object, which is an [`Actor`](../Swift/actor.md) object that holds all of the app’s render-related objects. Using an `actor` ensures that all code affecting the rendering data runs in the same global concurrency thread pool.
 
@@ -128,7 +128,7 @@ Task(priority: .high) {
     await renderData.setUpShaderPipeline()
 ```
 
-#### Listen for spatial events
+## Listen for spatial events
 
 Next, the sample app checks whether it’s running in visionOS 26 or later again. If it is, it registers a closure that the renderer calls whenever that renderer generates a spatial event, such as a gesture the player makes while gazing at content with hover effects on.
 
@@ -151,7 +151,7 @@ if #available(visionOS 26.0, *) {
 }
 ```
 
-#### Start the render loop
+## Start the render loop
 
 The last thing the `render(_:renderData:)` function does is call the `renderLoop()` function on the render data actor. By putting the render loop on the actor, it ensures all attempts to read and write render data happen in the same concurrent context.
 
@@ -208,7 +208,7 @@ Next, it iterates through the array of `LayerRenderer.Drawable` objects and pass
 }
 ```
 
-#### Handle draw calls and MSAA
+## Handle draw calls and MSAA
 
 Before processing a draw call, `handleDrawable(_:_:)` retrieves all the objects it needs, including the draw calls, device anchor, renderer pass descriptor, encoder, and viewports. It also calls the `setUpMSAA(drawable:offset:)` function to cache the textures the system needs when resolving the correct object ID for pixels that system anti-aliasing impacts in a compute shader. The function adds the color, depth, and tracking to the drawable’s texture cache because the compute shader needs access to that information.
 
@@ -233,7 +233,7 @@ func setUpMSAA(drawable: LayerRenderer.Drawable,
     }
 ```
 
-#### Add a hover effect to the drawable’s tracking area
+## Add a hover effect to the drawable’s tracking area
 
 The sample app then iterates through each of the drawable’s draw calls using `handleDrawCall(encoder:drawable:drawCall:id:)`. A critical step for gaze tracking happens here. When running in visionOS 26 or later, the system creates a tracking area for the drawable and then calls `addHoverEffect()` on it, passing the raw value from the tracking area into a *uniform*, which is a constant value that the app passes to its shaders.
 
@@ -245,7 +245,7 @@ if #available(visionOS 26.0, *), appModel.withHover, drawCall.hasHover {
 }
 ```
 
-#### Return hover indices from your fragment shader
+## Return hover indices from your fragment shader
 
 In addition to returning the fragment color, for hover effects to work, the app’s fragment shader also needs to return the object index of the fragment’s corresponding draw call. Without the object index, the system can’t perform gaze testing or highlighting.
 
@@ -267,7 +267,7 @@ return FragmentOut {
 };
 ```
 
-#### Implement a custom resolver for MSAA support
+## Implement a custom resolver for MSAA support
 
 At this point, hover effects work, however, gaze tracking isn’t taking system-provided anti-aliasing into account. Because Metal’s MSAA resolve ignores integer buffers, and MSAA needs to compute a value from all the MSAA samples, the app uses a compute shader to resolve the MSAA samples of the tracking area textures.
 

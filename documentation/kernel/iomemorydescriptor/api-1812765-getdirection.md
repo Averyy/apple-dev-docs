@@ -11,11 +11,11 @@ Gets the direction of memory transfers associated with the descriptor.
 virtual IODirection getDirection(void);
 ```
 
-#### Return Value
+## Return Value
 
 The transfer direction. 
 
-#### Overview
+## Overview
 
 This method returns the direction with which the memory descriptor was created.
 

@@ -21,7 +21,7 @@ Returns a ray that’s transformed by the inverse of the specified projective tr
 func unapplying(_ transform: ProjectiveTransform3DFloat) -> Ray3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed ray.
 

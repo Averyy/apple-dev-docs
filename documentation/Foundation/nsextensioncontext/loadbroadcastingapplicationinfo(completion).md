@@ -52,7 +52,7 @@ func loadBroadcastingApplicationInfo() async -> (String, String, NSImage?)
 - (void) loadBroadcastingApplicationInfoWithCompletion:(void (^)(NSString *bundleID, NSString *displayName, NSImage *appIcon)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

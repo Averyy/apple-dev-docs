@@ -20,7 +20,7 @@ typealias CGDisplayBlendFraction = Float
 typedef float CGDisplayBlendFraction;
 ```
 
-#### Discussion
+## Discussion
 
 The blend fraction ranges from 0 (no color) to 1 (full intensity). If you specify 0, the blend color is not applied. If you specify 1, the user sees only the blend color on the screen.
 

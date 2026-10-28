@@ -15,7 +15,7 @@ The currency used in the transaction to bill or refund the customer.
 string pricingCurrency
 ```
 
-#### Discussion
+## Discussion
 
 Maximum length: 128. Use a three-letter ISO 4217 currency code to specify the currency.
 

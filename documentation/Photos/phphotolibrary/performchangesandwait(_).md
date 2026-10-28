@@ -29,7 +29,7 @@ func performChangesAndWait(_ changeBlock: @escaping () -> Void) throws
 - [Requesting Changes to the Photo Library](../../PhotoKit/requesting-changes-to-the-photo-library.md)
 - [Uploading asset resources in the background](../../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 Do not call this method from the main thread. Your change block, and the work that Photos performs on your behalf to apply the changes it requests, take some time to execute. (Photos may need to prompt the user to perform changes, so this method can block execution indefinitely.) Use this method if you are already performing work on a background queue that results in a change to be applied to the Photos library. To request changes from the main queue, use the [`performChanges(_:completionHandler:)`](./performchanges%28_,completionhandler%29.md) method instead.
 

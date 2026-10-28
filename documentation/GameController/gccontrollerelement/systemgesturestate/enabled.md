@@ -24,7 +24,7 @@ case enabled
 GCSystemGestureStateEnabled
 ```
 
-#### Discussion
+## Discussion
 
 If you enable system gestures, the system sends the input to the gesture recognizer and only sends it to your app if it doesn’t recognize a gesture. If it does recognize a gesture, it doesn’t send any input to your app.
 

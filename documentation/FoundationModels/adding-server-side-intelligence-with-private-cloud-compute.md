@@ -5,7 +5,7 @@
 
 Access a larger context window and stronger reasoning by routing session requests through Private Cloud Compute.
 
-#### Overview
+## Overview
 
 The on-device Apple Intelligence model is useful for apps that need an always-available solution that doesn’t require a network connection. However, you may find that the feature you build needs more capabilities than the on-device model provides. The server-based model — accessed through Private Cloud Compute (PCC) — provides a larger 32K-token context size and stronger reasoning for handling long documents or extended multiturn conversations.
 
@@ -13,7 +13,7 @@ Typically, you need to handle authentication and manage API keys with server mod
 
 > ❗ **Important**: To develop with PCC you must meet certain eligibility requirements. To learn more and request access to the managed entitlement, see [Accessing Private Cloud Compute](https://developer.apple.com/private-cloud-compute/).
 
-#### Use the server-based Apple Intelligence model
+## Use the server-based Apple Intelligence model
 
 Choosing when to use PCC depends on your feature and is best made after evaluating your feature. This process helps you understand the quality of your specific feature, and whether it meets your expectations when using the on-device model. Start with the on-device model and evaluate it with the [Evaluations](../Evaluations/Evaluations.md) framework. If you determine your feature needs more reasoning capability or context size, then use PCC.
 
@@ -63,7 +63,7 @@ case .unavailable(let other):
 
 > **Note**: Model availability depends on whether the device and region supports Apple Intelligence. For a list of supported devices, see [Apple Intelligence](https://www.apple.com/apple-intelligence/).
 
-#### Handle usage limits from using PCC
+## Handle usage limits from using PCC
 
 A [`PrivateCloudComputeLanguageModel`](./privatecloudcomputelanguagemodel.md)  provides a [`LanguageModelError`](./languagemodelerror.md) that you use to proactively respond to usage quota scenarios, like when a person is approaching their request limit per day. When a person approaches or exceeds the daily quota, the framework provides a direct path for you to add system UI so the person can subscribe to iCloud+ to get more access.
 
@@ -107,7 +107,7 @@ To configure a simulated usage limit option in Xcode:
 3. Select either “Approaching Quota Usage Limit” or “Quota Usage Limit Reached” from the “Simulated Apple Foundation Models Availability” drop-down menu.
 4. Click Close and run your project.
 
-#### Enable extended reasoning
+## Enable extended reasoning
 
 Reasoning allows the model to spend more effort to explore the prompt you provide. This effort generates extra text that the model uses when it generates a response. The framework provides three reasoning levels, [`ContextOptions.ReasoningLevel.light`](./contextoptions/reasoninglevel-swift.enum/light.md), [`ContextOptions.ReasoningLevel.moderate`](./contextoptions/reasoninglevel-swift.enum/moderate.md), and [`ContextOptions.ReasoningLevel.deep`](./contextoptions/reasoninglevel-swift.enum/deep.md). A lower reasoning effort reduces latency, while deeper reasoning trades latency for more analysis on complex, multi-step problems.
 

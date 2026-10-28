@@ -19,7 +19,7 @@ var replyToAddresses: [MEEmailAddress] { get }
 @property (nonatomic, copy, readonly) NSArray<MEEmailAddress *> * replyToAddresses;
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the Reply-To header in the message.
 

@@ -22,7 +22,7 @@ init(name: String, float value: GLKMatrix2)
 - (instancetype) initWithName:(NSString *) name floatMatrix2:(GLKMatrix2) value;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized uniform object whose type is set to [`SKUniformType.floatMatrix2`](../skuniformtype/floatmatrix2.md).
 

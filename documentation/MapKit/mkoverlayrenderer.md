@@ -24,7 +24,7 @@ class MKOverlayRenderer
 @interface MKOverlayRenderer : NSObject
 ```
 
-#### Overview
+## Overview
 
 An overlay renderer draws the visual representation of an overlay object — that is, an object that conforms to the [`MKOverlay`](./mkoverlay.md) protocol. This class defines the drawing infrastructure the map view uses. Subclasses need to override the [`draw(_:zoomScale:in:)`](./mkoverlayrenderer/draw%28_,zoomscale,in%29.md) method to draw the contents of the overlay.
 

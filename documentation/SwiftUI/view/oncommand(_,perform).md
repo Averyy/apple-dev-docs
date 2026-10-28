@@ -16,11 +16,11 @@ nonisolated
 func onCommand(_ selector: Selector, perform action: (() -> Void)?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that triggers `action` when the `command` occurs.
 
-#### Discussion
+## Discussion
 
 This view or one of the views it contains must be in focus in order for the action to trigger. Other actions for the same command on views *closer* to the view in focus take priority, potentially overriding this action.
 

@@ -16,11 +16,11 @@ Sends a request on the default control endpoint.
 - (BOOL) sendDeviceRequest:(IOUSBDeviceRequest) request data:(NSMutableData *) data bytesTransferred:(NSUInteger *) bytesTransferred completionTimeout:(NSTimeInterval) completionTimeout error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the request completes successfully; otherwise, `NO`.
 
-#### Discussion
+## Discussion
 
 This method sends a synchronous request on the default control endpoint, and doesn’t return until the request completes or times out.
 

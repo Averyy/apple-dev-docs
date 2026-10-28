@@ -26,7 +26,7 @@ func getCString(_ bytes: UnsafeMutablePointer<CChar>)
 - (void) getCString:(char *) bytes;
 ```
 
-#### Discussion
+## Discussion
 
 `buffer` must be large enough to contain the resulting C-string plus a terminating NULL character (which this method adds—`[string cStringLength]`).
 

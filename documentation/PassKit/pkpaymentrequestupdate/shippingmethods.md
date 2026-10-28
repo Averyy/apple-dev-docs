@@ -24,7 +24,7 @@ var shippingMethods: [PKShippingMethod] { get set }
 @property (nonatomic, copy) NSArray<PKShippingMethod *> * shippingMethods;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is an empty array that indicates there’s no update to the shipping methods.
 

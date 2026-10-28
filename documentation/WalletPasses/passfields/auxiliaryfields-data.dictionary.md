@@ -23,7 +23,7 @@ object PassFields.AuxiliaryFields
 - [Creating a poster event pass using semantic tags](../creating-an-event-pass-using-semantic-tags.md)
 - [Supporting semantic tags in Wallet passes](../supporting-semantic-tags-in-wallet-passes.md)
 
-#### Discussion
+## Discussion
 
 Use this field to provide information that people might not need every time they use the pass.
 

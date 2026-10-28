@@ -23,7 +23,7 @@ var leftView: UIView? { get set }
 @property (nonatomic, strong, nullable) UIView * leftView;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the left overlay view to indicate the intended behavior of the text field. For example, you might display a magnifying glass in this location to indicate that the text field is a search field. The left overlay view flips automatically in a right-to-left user interface.
 

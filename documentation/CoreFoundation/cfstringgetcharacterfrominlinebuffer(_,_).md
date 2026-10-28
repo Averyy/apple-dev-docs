@@ -25,11 +25,11 @@ func CFStringGetCharacterFromInlineBuffer(_ buf: UnsafeMutablePointer<CFStringIn
 static UniChar CFStringGetCharacterFromInlineBuffer(CFStringInlineBuffer *buf, CFIndex idx);
 ```
 
-#### Return Value
+## Return Value
 
 A Unicode character, or `0` if a location outside the original range is specified.
 
-#### Discussion
+## Discussion
 
 This function accesses one of the characters of a string written to an in-line buffer. It is typically called from within a loop to access each character in the buffer in sequence. You should initialize the buffer with the [`CFStringInitInlineBuffer(_:_:_:)`](./cfstringinitinlinebuffer%28_,_,_%29.md) function. The in-line buffer functions, along with the [`CFStringInlineBuffer`](./cfstringinlinebuffer.md) structure, give you fast access to the characters of a CFString object. The technique for in-line buffer access combines the convenience of one-at-a-time character access with the efficiency of bulk access.
 

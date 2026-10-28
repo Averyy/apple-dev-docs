@@ -15,7 +15,7 @@ The vertical scroll indicator’s insets.
 final var verticalScrollIndicatorInsets: NSEdgeInsets { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Default is `NSEdgeInsetsZero`.
 

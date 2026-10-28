@@ -25,7 +25,7 @@ convenience init(objects: [Any], forKeys keys: [any NSCopying])
 - (instancetype) initWithObjects:(NSArray<id> *) objects forKeys:(NSArray<id<NSCopying>> *) keys;
 ```
 
-#### Discussion
+## Discussion
 
 This method steps through the `objects` and `keys` arrays, creating entries in the new dictionary as it goes. An `NSInvalidArgumentException` is raised if the objects and keys arrays do not have the same number of elements.
 

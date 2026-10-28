@@ -19,7 +19,7 @@ class VZVirtioConsoleDeviceConfiguration
 @interface VZVirtioConsoleDeviceConfiguration : VZConsoleDeviceConfiguration
 ```
 
-#### Overview
+## Overview
 
 A [`VZVirtioConsoleDeviceConfiguration`](./vzvirtioconsoledeviceconfiguration.md) object enables serial communication between the guest-operating system and host computer through the Virtio interface. The device sets up one or more ports through [`VZVirtioConsolePortConfiguration`](./vzvirtioconsoleportconfiguration.md) on the Virtio console device.
 

@@ -26,7 +26,7 @@ var minimumSSLProtocolVersion: Int { get set }
 @property (assign) NSUInteger minimumSSLProtocolVersion;
 ```
 
-#### Discussion
+## Discussion
 
 Values for `SSLProtocol` are defined in `<Security/SecureTransport.h>`. If set to a non-zero value, the SSL handshake will not accept any protocol version less than the minimum.
 

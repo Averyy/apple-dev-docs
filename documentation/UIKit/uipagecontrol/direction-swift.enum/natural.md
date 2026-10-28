@@ -23,7 +23,7 @@ case natural
 UIPageControlDirectionNatural
 ```
 
-#### Discussion
+## Discussion
 
 Use this case to lay out the page control’s indicators in the natural direction of the system’s locale. By default, this means [`UIPageControl.Direction.leftToRight`](./lefttoright.md) for left-to-right languages and [`UIPageControl.Direction.rightToLeft`](./righttoleft.md) for right-to-left languages.
 

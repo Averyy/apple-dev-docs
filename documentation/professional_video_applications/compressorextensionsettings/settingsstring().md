@@ -20,11 +20,11 @@ func settingsString() -> String!
 - (NSString *) settingsString;
 ```
 
-#### Return Value
+## Return Value
 
 A UTF-8 XML escaped string with the current encoder settings.
 
-#### Discussion
+## Discussion
 
 When the current encoder settings are updated, the Compressor app calls this method to receive and store the updated settings on its end to keep the settings persistent across extension sessions.
 

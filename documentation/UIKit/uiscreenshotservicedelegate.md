@@ -23,7 +23,7 @@ protocol UIScreenshotServiceDelegate : NSObjectProtocol
 @protocol UIScreenshotServiceDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 When the user captures a screenshot of your app’s windows, UIKit calls the methods of this protocol to retrieve PDF data for those windows, and then it provides that data to the user. Adopt this protocol in a custom object of your app, and assign that object to the [`UIScreenshotService`](./uiscreenshotservice.md) object associated with one of your window scenes. Use your custom delegate object to generate PDF content for the windows in the associated window-scene object.
 

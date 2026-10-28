@@ -23,7 +23,7 @@ string storeType
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 This field appears in the [`JWSAppTransactionDecodedPayload`](./jwsapptransactiondecodedpayload.md). The only possible value is `CONSUMER`.
 

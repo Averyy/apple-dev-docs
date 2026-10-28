@@ -12,7 +12,7 @@ A wrapper around an IETF language tag.
 struct LanguageTag
 ```
 
-#### Overview
+## Overview
 
 To learn more about the IETF worldwide standard for language tags, see [RFC5646](https://tools.ietf.org/html/rfc5646).
 

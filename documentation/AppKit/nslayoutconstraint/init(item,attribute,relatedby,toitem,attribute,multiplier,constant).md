@@ -19,11 +19,11 @@ convenience init(item view1: Any, attribute attr1: NSLayoutConstraint.Attribute,
 + (instancetype) constraintWithItem:(id) view1 attribute:(NSLayoutAttribute) attr1 relatedBy:(NSLayoutRelation) relation toItem:(id) view2 attribute:(NSLayoutAttribute) attr2 multiplier:(CGFloat) multiplier constant:(CGFloat) c;
 ```
 
-#### Return Value
+## Return Value
 
 A constraint object relating the two provided views with the specified relation, attributes, multiplier, and constant.
 
-#### Discussion
+## Discussion
 
 Constraints represent linear equations of the form `view1.attr1 <relation> multiplier × view2.attr2 + c`. If the constraint you wish to express does not have a second view and attribute, use `nil` and [`NSLayoutConstraint.Attribute.notAnAttribute`](./attribute/notanattribute.md).
 

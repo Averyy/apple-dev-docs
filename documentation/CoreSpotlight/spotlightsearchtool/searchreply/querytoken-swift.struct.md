@@ -19,7 +19,7 @@ An opaque type you use to identify a single call to the Spotlight search tool.
 struct QueryToken
 ```
 
-#### Overview
+## Overview
 
 When processing a request, a model might call the Spotlight search tool multiple times to retrieve results. Each time the model calls the Spotlight search tool’s [`call(arguments:)`](../../../FoundationModels/tool/call%28arguments%29.md) method, the tool generates a new `QueryToken` to track that request. When delivering results to your app, the tool includes this token in the [`SpotlightSearchTool.SearchReply`](../searchreply.md) structures it delivers. Use the token to associate that data with a specific query.
 

@@ -24,7 +24,7 @@ final var isResponding: Bool { get }
 
 - [Generating content and performing tasks with Foundation Models](../generating-content-and-performing-tasks-with-foundation-models.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: You should not call any of the respond methods while this property is `true`.
 

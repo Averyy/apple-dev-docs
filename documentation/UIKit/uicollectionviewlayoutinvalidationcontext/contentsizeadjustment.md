@@ -23,7 +23,7 @@ var contentSizeAdjustment: CGSize { get set }
 @property (nonatomic) CGSize contentSizeAdjustment;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to update the size of the collection view’s content area. The default value of this property is [`CGSizeZero`](../../CoreGraphics/cgsizezero.md). Changing the value causes the collection view to add the specified height and width values to its [`contentSize`](../uiscrollview/contentsize.md) property. Thus, positive values grow the content area and negative values shrink it.
 

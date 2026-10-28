@@ -25,7 +25,7 @@ func NSDecimalMultiplyByPowerOf10(_ result: UnsafeMutablePointer<Decimal>, _ num
 extern NSCalculationError NSDecimalMultiplyByPowerOf10(NSDecimal *result, const NSDecimal *number, short power, NSRoundingMode roundingMode);
 ```
 
-#### Discussion
+## Discussion
 
 Multiplies `number` by `power` of 10 and stores the product, possibly rounded off according to `roundingMode`, in `result`.
 

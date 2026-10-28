@@ -19,7 +19,7 @@ var usesFontLeading: Bool { get set }
 @property BOOL usesFontLeading;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if it uses the information in the font metrics, [`false`](../../Swift/false.md) otherwise.
 

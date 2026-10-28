@@ -20,7 +20,7 @@ var errAuthorizationSuccess: OSStatus { get }
 errAuthorizationSuccess
 ```
 
-#### Discussion
+## Discussion
 
 This result code is an alias for [`errSecSuccess`](./errsecsuccess.md).
 

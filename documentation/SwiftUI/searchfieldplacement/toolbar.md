@@ -20,7 +20,7 @@ The search field appears in the toolbar.
 static let toolbar: SearchFieldPlacement
 ```
 
-#### Discussion
+## Discussion
 
 The precise placement depends on the platform:
 

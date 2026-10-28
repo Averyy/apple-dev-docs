@@ -12,7 +12,7 @@ Hardware sensors provide your app with information about the world or details ab
 - Apply course, heading, location, and altitude information to hiking or driving directions.
 - Find other nearby devices and exchange data with them securely.
 
-#### Obtain access to the relevant hardware
+## Obtain access to the relevant hardware
 
 System frameworks limit access to some types of sensor data, making that data available only to apps that receive proper authorization. Request that authorization programmatically using the APIs that your framework provides. In addition to that request, provide a localized description of how you intend to use the data in your app’s [information property list](../BundleResources/managing-your-app-s-information-property-list.md). When presenting your request, the system displays your description to help the person make an informed choice about whether to grant access.
 
@@ -38,13 +38,13 @@ The following table lists sensors you might find on an Apple device, along with 
 
 > **Note**: If your app generates personal information from sensor data, it’s important to secure that data. Individual samples from a sensor might not represent personally sensitive information, but a larger set of samples might. For example, the [pedometer service](../CoreMotion/CoreMotion.md) uses accumulated accelerometer and gyroscope data to determine step counts and fitness information, which is personal health data.
 
-#### Minimize the amount of sensor data you collect
+## Minimize the amount of sensor data you collect
 
 Enable sensors only when you need the data they offer, and disable them again as soon as you have what you need. For example, start collecting pedometer data when someone starts a workout, and stop collecting that data when the workout ends. Enabling a sensor at the last second prevents it from generating data your app won’t use. Disabling the sensor when you’re done prevents unnecessary collection, and also gives the system the option to power down the associated hardware to save energy.
 
 In the framework for a given sensor, look for APIs that reduce the amount of time spent collecting data when properly configured. Some sensors offer variable data collection rates, or configurable accuracy. For example, location services let you specify the level of precision you require for location values. If you’re using someone’s location to search for nearby restaurants, an approximate location helps your app narrow the list of results. Reducing the accuracy or frequency of updates helps the system manage your app’s power usage, and improve battery life.
 
-#### Apply someone’s location to your app’s content
+## Apply someone’s location to your app’s content
 
 Incorporate location data into your app to improve the experience people have using your app. Location data provides context for interpreting or displaying your app’s content. A to-do app might remind someone to pick up their clothes when they’re close to the dry cleaner. Apps that search for real-world points of interest can limit results to those that are nearby. An app that provides driving or walking directions can use the person’s location to guide them to their destination.
 
@@ -56,7 +56,7 @@ Make every effort to turn off location services when you don’t need them. Apar
 
 The system provides each location value as a geographical latitude and longitude. To convert these coordinates to a more people-friendly address, create a [reverse geocoding request](../MapKit/mkreversegeocodingrequest.md). The [GeoToolbox framework](../GeoToolbox/GeoToolbox.md) also provides utilities to working with addresses and place-names.
 
-#### Track device-related motion
+## Track device-related motion
 
 Many Apple devices have sensors that report device-related movements, the device’s attitude in space, its altitude relative to sea level, and other motion-related details. You can use this data as contextual information, or as a form of input to your app. For example, a game might use accelerometer and gyroscope values as input.
 
@@ -66,7 +66,7 @@ When you want to analyze sensor data over a longer period of time, use [SensorKi
 
 Even if you don’t collect sensor data for your app, the system still uses sensor data for specific features. On iPhone and iPad, the system uses the accelerometers to determine the device’s orientation relative to the ground and detect changes between portrait and landscape orientations. System apps like Workout and Fitness use sensor data to record workouts and contribute that information to a person’s health data.
 
-#### Capture information about someone’s surroundings
+## Capture information about someone’s surroundings
 
 On iPhone and iPad, cameras can capture details about a person’s surroundings and make it available to your app. On [Apple Vision Pro](../visionOS/visionOS.md), the camera input is an integral part of a person’s experience, and the system blends that input with your app’s content seamlessly. System frameworks also have access to the camera input, and you use these frameworks to:
 
@@ -80,7 +80,7 @@ To capture details about a person’s environment on iPhone or iPad, adopt the [
 
 While ARKit manages interactions between virtual and real content in an augmented reality app, the [RoomPlan](../RoomPlan/RoomPlan.md) framework helps someone create a 3D model of their room, which you can then use in your app. The framework is meant for apps that help people plan out content in their environment. For example, an interior design app might use this framework to create a virtual version of someone’s room and place furniture and decorations. The framework requires you to present a [special interactive view](../RoomPlan/roomcaptureview.md), which instructs the person how to scan their room, so you can’t capture environmental details casually.
 
-#### Detect nearby devices and iBeacons
+## Detect nearby devices and iBeacons
 
 Some apps use proximity to other devices to perform actions. For example, near-field communication (NFC) hardware allows someone to pay for things using their iPhone. Some government and commercial entities are also adopting NFC for identity verification. Many Apple devices also support iBeacon, which allows proximity detection in other situations.
 

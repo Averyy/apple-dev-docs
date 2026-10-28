@@ -25,7 +25,7 @@ class var linkedModelSearchPath: MLParameterKey { get }
 @property (class, nonatomic, readonly) MLParameterKey * linkedModelSearchPath;
 ```
 
-#### Discussion
+## Discussion
 
 The value type for the [`linkedModelSearchPath`](./linkedmodelsearchpath.md) key is a [`String`](../../Swift/string.md).
 

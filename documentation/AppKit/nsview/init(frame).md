@@ -19,11 +19,11 @@ init(frame frameRect: NSRect)
 - (instancetype) initWithFrame:(NSRect) frameRect;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized view or `nil` if AppKit couldn’t create the object.
 
-#### Discussion
+## Discussion
 
 Insert the view into your window’s view hieararchy before you can do anything with it. This method is the designated initializer for the [`NSView`](../nsview.md) class.
 

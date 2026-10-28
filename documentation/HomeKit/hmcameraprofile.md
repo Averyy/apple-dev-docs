@@ -24,7 +24,7 @@ class HMCameraProfile
 @interface HMCameraProfile : HMAccessoryProfile
 ```
 
-#### Overview
+## Overview
 
 Each profile control is optional, because an individual camera vendor may not support all of the features defined by the HomeKit camera specifications.
 

@@ -5,15 +5,15 @@
 
 Create a subfolder, a manifest file, and cutscene metadata.
 
-#### Overview
+## Overview
 
 You can use cutscenes to show animated explanations or introductions to concepts and scenarios. You place cutscenes alongside playground pages in a chapter.
 
-##### Add a Subfolder to a Chapter Folder
+### Add a Subfolder to a Chapter Folder
 
 Add a cutscene by creating a new folder inside a chapter folder. The name of the subfolder must end with the suffix .cutscenepage. Cutscene folders require two parts: a manifest property list named `Manifest.plist`, and a PrivateResources folder that contains the HTML content of the cutscene.
 
-##### Add Cutscene Resources
+### Add Cutscene Resources
 
 Create cutscenes in Swift Playgrounds by using HTML and any resources that you reference in the HTML. The HTML you write for cutscenes can include CSS, JavaScript, and SVG for animations. Your cutscene can also include media such as images, sound, and video.
 
@@ -21,7 +21,7 @@ Place all of the resources used in a cutscene in its PrivateResources folder.
 
 > ❗ **Important**: To localize a cutscene, enclose the cutscene files in a localization folder, such as en.lproj for English, inside the PrivateResources folder.
 
-##### Add the Cutscene Manifest
+### Add the Cutscene Manifest
 
 In Xcode, create a property list file called `Manifest.plist` in the cutscene subfolder. Choose `File > New > File`, then choose the Property List template from `iOS > Resources`. Use the manifest property list to list a cutscene’s name and to reference the HTML file that defines the cutscene.
 

@@ -25,7 +25,7 @@ var BNNSSGDMomentumVariant0: BNNSOptimizerSGDMomentumVariant { get }
 BNNSSGDMomentumVariant0
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

@@ -23,7 +23,7 @@ optional var restorationParent: (any UIStateRestoring)? { get }
 @property (nonatomic, readonly, nullable) id<UIStateRestoring> restorationParent;
 ```
 
-#### Discussion
+## Discussion
 
 Returning an object from this property lets you use the same restoration identifier for objects with similar behavior but different parents. When registering objects, the [`registerObject(forStateRestoration:restorationIdentifier:)`](../uiapplication/registerobject%28forstaterestoration,restorationidentifier%29.md) method checks the value of this property, using the value as the containing scope for the object. For example, an object associated with a view controller can make the view controller its parent.
 

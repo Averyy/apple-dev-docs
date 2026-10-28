@@ -23,7 +23,7 @@ var externalIdentifier: String { get set }
 @property (nonatomic, copy) NSString * externalIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 An external identifier for the merchant that the app developer provides. If you request a payment token for another merchant, always use the same external identifier for that merchant in your app.
 

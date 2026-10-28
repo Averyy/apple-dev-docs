@@ -19,7 +19,7 @@ func revert(toContentsOf inAbsoluteURL: URL, ofType inTypeName: String) throws
 - (BOOL) revertToContentsOfURL:(NSURL *) inAbsoluteURL ofType:(NSString *) inTypeName error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

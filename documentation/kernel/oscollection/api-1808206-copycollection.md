@@ -12,11 +12,11 @@ virtual OSCollection *copyCollection(
  OSDictionary *cycleDict = 0);
 ```
 
-#### Return Value
+## Return Value
 
 The newly copied collecton, `NULL` on failure.
 
-#### Overview
+## Overview
 
 This function copies the collection and all of the contained collections recursively. Objects that are not derived from OSCollection are retained rather than copied.
 

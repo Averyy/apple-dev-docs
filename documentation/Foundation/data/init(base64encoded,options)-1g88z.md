@@ -21,7 +21,7 @@ Initialize a `Data` from a Base-64, UTF-8 encoded `Data`.
 init?(base64Encoded base64Data: Data, options: Data.Base64DecodingOptions = [])
 ```
 
-#### Discussion
+## Discussion
 
 Returns nil when the input is not recognized as valid Base-64.
 

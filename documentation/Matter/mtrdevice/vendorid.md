@@ -26,7 +26,7 @@ var vendorID: NSNumber? { get }
 @property (nonatomic, copy, readonly, nullable) NSNumber * vendorID;
 ```
 
-#### Discussion
+## Discussion
 
 A non-nil value if the vendor identifier has been determined from the device, nil if unknown.
 

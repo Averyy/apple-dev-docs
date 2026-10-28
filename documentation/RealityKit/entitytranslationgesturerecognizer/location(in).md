@@ -18,11 +18,11 @@ Returns the unprojected location of the gesture represented by the receiver in t
 @preconcurrency func location(in entity: Entity?) -> SIMD3<Float>?
 ```
 
-#### Return Value
+## Return Value
 
 The 3D position identifying the location of the gesture in the space specified.
 
-#### Discussion
+## Discussion
 
 The location is typically the result of a centroid of touches for a gesture, unprojected onto the associated `entity`, and then converted into the space of the entity passed in, or world space if `nil` is passed in.
 

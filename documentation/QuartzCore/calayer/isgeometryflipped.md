@@ -24,7 +24,7 @@ var isGeometryFlipped: Bool { get set }
 @property (getter=isGeometryFlipped) BOOL geometryFlipped;
 ```
 
-#### Discussion
+## Discussion
 
 If the layer is providing the backing for a layer-backed view, the view is responsible for managing the value in this property. For standalone layers, this property controls whether geometry values for the layer are interpreted using the standard or flipped coordinate system. The value of this property does not affect the rendering of the layer’s content.
 

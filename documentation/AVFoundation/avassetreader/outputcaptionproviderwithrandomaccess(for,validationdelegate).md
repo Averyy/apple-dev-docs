@@ -18,7 +18,7 @@ Attaches the output to the reader and returns a tuple with an output provider fo
 func outputCaptionProviderWithRandomAccess(for output: AVAssetReaderTrackOutput, validationDelegate: (any AVAssetReaderCaptionValidationHandling)? = nil) -> sending (AVAssetReaderOutput.Provider<AVCaptionGroup>, AVAssetReaderOutput.RandomAccessController)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple with an output provider for reading caption groups, and an associated random access controller.
 

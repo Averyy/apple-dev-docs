@@ -24,7 +24,7 @@ var range: PHASENumericPair { get }
 @property (nonatomic, strong, readonly) PHASENumericPair * range;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an ordered pair that defines the range of possible output values along the *y* axis for the [`evaluate(x:)`](./evaluate%28x%29.md) function. The first number in the pair is the minimum output value, and the second number in the pair is the maximum output value.
 

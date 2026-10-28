@@ -21,7 +21,7 @@ The locale in which the system performs the app intent.
 var locale: Locale { get }
 ```
 
-#### Discussion
+## Discussion
 
 The locale for a person’s request can differ from the app’s current locale in a few cases:
 

@@ -24,7 +24,7 @@ static let push: CATransitionType
 extern CATransitionType const kCATransitionPush;
 ```
 
-#### Discussion
+## Discussion
 
 The [Common Transition Subtypes](../common-transition-subtypes.md) are used with this transition.
 

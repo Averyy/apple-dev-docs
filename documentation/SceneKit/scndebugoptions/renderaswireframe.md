@@ -25,7 +25,7 @@ static var renderAsWireframe: SCNDebugOptions { get }
 SCNDebugOptionRenderAsWireframe
 ```
 
-#### Discussion
+## Discussion
 
 Unlike the [`showWireframe`](./showwireframe.md) option, this option disables normal surface rendering, displaying only the wireframe for each geometry.
 

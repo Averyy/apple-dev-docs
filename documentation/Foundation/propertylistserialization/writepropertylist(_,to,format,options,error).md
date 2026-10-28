@@ -25,7 +25,7 @@ class func writePropertyList(_ plist: Any, to stream: OutputStream, format: Prop
 + (NSInteger) writePropertyList:(id) plist toStream:(NSOutputStream *) stream format:(NSPropertyListFormat) format options:(NSPropertyListWriteOptions) opt error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes written to the stream. A return value of `0` indicates that an error occurred.
 

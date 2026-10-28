@@ -21,7 +21,7 @@ func QLThumbnailCopyDocumentURL(_ thumbnail: QLThumbnail!) -> Unmanaged<CFURL>!
 extern CFURLRefQLThumbnailCopyDocumentURL(QLThumbnailRef thumbnail);
 ```
 
-#### Return Value
+## Return Value
 
 The URL of the document that you’re requesting a thumbnail for.
 

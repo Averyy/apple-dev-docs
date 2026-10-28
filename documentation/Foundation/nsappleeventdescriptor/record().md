@@ -20,11 +20,11 @@ class func record() -> NSAppleEventDescriptor
 + (NSAppleEventDescriptor *) recordDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 An Apple event descriptor whose data has yet to be set, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 An Apple event record is a descriptor whose data is a set of descriptors keyed by four-character codes. You can add information to the descriptor with methods such as [`setAttribute(_:forKeyword:)`](./setattribute%28_,forkeyword%29.md), [`setDescriptor(_:forKeyword:)`](./setdescriptor%28_,forkeyword%29.md), and [`setParam(_:forKeyword:)`](./setparam%28_,forkeyword%29.md).
 

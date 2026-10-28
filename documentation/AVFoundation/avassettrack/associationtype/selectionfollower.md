@@ -25,7 +25,7 @@ static let selectionFollower: AVAssetTrack.AssociationType
 extern AVTrackAssociationType const AVTrackAssociationTypeSelectionFollower;
 ```
 
-#### Discussion
+## Discussion
 
 For example, a follower of an audio track could be a subtitle track in the same language. When the user chooses a language for audio, the subtitle language “follows” the audio language selection.
 

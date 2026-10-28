@@ -24,7 +24,7 @@ func clamp(lowerBound: Double, upperBound: Double)
 - (void) clampWithLowerBound:(double) lowerBound upperBound:(double) upperBound;
 ```
 
-#### Discussion
+## Discussion
 
 For example, if you specify lower and upper bounds of `-0.5` and `0.5`, this operation replaces values less than `-0.5` with `-0.5` and values greater than `0.5` with `0.5`.
 

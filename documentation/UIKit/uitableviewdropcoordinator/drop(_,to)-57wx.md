@@ -23,7 +23,7 @@ func drop(_ dragItem: UIDragItem, to target: UIDragPreviewTarget) -> any UIDragA
 - (id<UIDragAnimating>) dropItem:(UIDragItem *) dragItem toTarget:(UIDragPreviewTarget *) target;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to animate drops to any view in your app. For example, you might use this method to drop items onto a tab bar or toolbar that is part of your interface.
 

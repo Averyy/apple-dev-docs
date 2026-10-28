@@ -24,7 +24,7 @@ protocol UIDataSourceModelAssociation
 @protocol UIDataSourceModelAssociation
 ```
 
-#### Overview
+## Overview
 
 Your data source objects can adopt this protocol to assist a corresponding table or collection view during the state restoration process. Those classes use the methods of this protocol to ensure that the same data objects (and not just the same row indexes) are scrolled into view and selected.
 

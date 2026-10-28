@@ -23,7 +23,7 @@ var requiresExclusiveTouchType: Bool { get set }
 @property (nonatomic) BOOL requiresExclusiveTouchType;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the gesture recognizer automatically ignores new touches whose type doesn’t match the type of the initial touch. When the value is [`false`](../../Swift/false.md), the gesture recognizer receives all touches whose types are listed in the [`allowedTouchTypes`](./allowedtouchtypes.md) property.
 

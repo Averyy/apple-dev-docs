@@ -24,11 +24,11 @@ init(bufferRadius: Float, minCoordinate min: vector_float2, maxCoordinate max: v
 - (instancetype) initWithBufferRadius:(float) bufferRadius minCoordinate:(vector_float2) min maxCoordinate:(vector_float2) max nodeClass:(Class) nodeClass;
 ```
 
-#### Return Value
+## Return Value
 
 A new mesh graph.
 
-#### Discussion
+## Discussion
 
 A newly created graph contains no obstacles and no graph nodes. First, use the [`addObstacles(_:)`](./addobstacles%28_%29.md) method to add obstacles. Next, use the [`triangulate()`](./triangulate%28%29.md) method to fill the open space between obstacles with a web of graph nodes, allowing pathfinding operations to result in smooth paths around obstacles.
 

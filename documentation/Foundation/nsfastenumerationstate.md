@@ -25,7 +25,7 @@ struct NSFastEnumerationState
 typedef struct { ... } NSFastEnumerationState;
 ```
 
-#### Overview
+## Overview
 
 For more information, see [`countByEnumerating(with:objects:count:)`](./nsfastenumeration/countbyenumerating%28with,objects,count%29.md).
 

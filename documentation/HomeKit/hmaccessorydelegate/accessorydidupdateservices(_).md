@@ -24,7 +24,7 @@ optional func accessoryDidUpdateServices(_ accessory: HMAccessory)
 - (void) accessoryDidUpdateServices:(HMAccessory *) accessory;
 ```
 
-#### Discussion
+## Discussion
 
 Accessories provide their services via the [`services`](../hmaccessory/services.md) property.
 

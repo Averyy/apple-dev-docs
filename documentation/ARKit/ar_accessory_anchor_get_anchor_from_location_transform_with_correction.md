@@ -15,7 +15,7 @@ Get the transform from an anchor to the coordinate system of a location on the a
 extern simd_float4x4 ar_accessory_anchor_get_anchor_from_location_transform_with_correction(ar_accessory_anchor_t accessory_anchor, const char *location_name, ar_transform_correction_t transform_correction);
 ```
 
-#### Return Value
+## Return Value
 
 The origin from anchor transform.
 

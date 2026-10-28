@@ -10,13 +10,13 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Program a STM32 microcontroller directly with low-level Swift code.
 
-#### Overview
+## Overview
 
 This tutorial will guide you through setting up a baremetal STM32 project with Embedded Swift to create a simple LED blinking application with text output to UART, the “Hello World” of embedded systems. Concretely, we’ll be using the STM32F746G-DISCO (discovery) development board, but the setup will work (with only small tweaks) on most other STM32 devices.
 
 We will be writing a full firmware from scratch including low-level boot code, direct hardware register configuration, a custom linker script and more. Besides educational purposes, this level of control is typically only needed in specialized setups because it involves more work and more complexity. If you want a simpler path to get started, you can integrate with an existing embedded SDK (like STCube or BSPs) instead, which offers higher-level APIs and hardware abstraction. Check out [Integrating with embedded platforms](./integratingwithplatforms.md) for guidance on common integration patterns.
 
-#### Overall plan
+## Overall plan
 
 The entire baremetal project will consist of:
 
@@ -30,13 +30,13 @@ The entire baremetal project will consist of:
 
 Let’s get started!
 
-#### Prerequisites
+## Prerequisites
 
 - Mac or Linux
 - STM32F746G-DISCO board connected over a USB cable
 - Swift toolchain installed using swiftly
 
-#### Step 1: Create a New Swift Package
+## Step 1: Create a New Swift Package
 
 Create a new directory for your project and initialize a Swift package:
 
@@ -62,7 +62,7 @@ struct STM32BlinkLED {
 
 Let’s work on getting this print to actually work and produce text into UART.
 
-#### Step 2: Download Arm Toolchain for Embedded
+## Step 2: Download Arm Toolchain for Embedded
 
 We’re going to use the [Arm Toolchain for Embedded](https://github.com/arm/arm-toolchain/tree/arm-software/arm-software/embedded) (formerly called “LLVM Toolchain for ARM”) to provide us with basic C-level helper code, concretely memset, memcpy, and an allocator (malloc, free).
 
@@ -87,7 +87,7 @@ STM32BlinkLED
 |- Package.swift
 ```
 
-#### Step 3: Configure the Package
+## Step 3: Configure the Package
 
 Edit the `Package.swift` file to configure your project for embedded development, specifically let’s use Swift MMIO as a dependency, and let’s create two helper targets “Registers” and “Support”:
 
@@ -124,7 +124,7 @@ $ mkdir Sources/Support
 $ mkdir Sources/Support/include
 ```
 
-#### Step 4: Generate MMIO register descriptions using SVD2Swift
+## Step 4: Generate MMIO register descriptions using SVD2Swift
 
 SVD2Swift is a tool provided by Swift MMIO that automatically generates Swift code from SVD (System View Description) files. SVD files contain detailed descriptions of all the memory-mapped registers in a microcontroller, making them invaluable for embedded development. Using this generated code gives us type-safe access to the hardware registers of the STM32F7 microcontroller.
 
@@ -139,7 +139,7 @@ $ .build/debug/SVD2Swift --input stm32f7x6.patched.svd --output Sources/Register
 
 Tip: If a build fails for any reason, it’s often useful to add the `--verbose` flag to `swift build` to see a full list of commands the build system runs.
 
-#### Step 5: Create a toolset.json file
+## Step 5: Create a toolset.json file
 
 Create a `toolset.json` file in the project directory to configure the build with essential settings for ARMv7-based STM32 microcontrollers. This file defines options for the Swift compiler, C compiler, and linker:
 
@@ -172,7 +172,7 @@ ld.lld: error: libclang_rt.builtins.a: No such file or directory
 clang: error: ld.lld command failed with exit code 1 (use -v to see invocation)
 ```
 
-#### Step 6: Create a Linker Script and Startup Code
+## Step 6: Create a Linker Script and Startup Code
 
 Let’s now create a linker script, an interrupt vector and startup code.
 
@@ -302,7 +302,7 @@ ld.lld: error: undefined symbol: stdout
 
 We’re not going to actually try to provide the `stdout` symbol, instead let’s provide our own custom `putchar` that will be routed to the UART.
 
-#### Step 7: Add UART code
+## Step 7: Add UART code
 
 Create a new file at `Sources/STM32BlinkLED/UART.swift`:
 
@@ -352,7 +352,7 @@ public func putchar(_ value: CInt) -> CInt {
 }
 ```
 
-#### Step 8: Package up and Boot the Firmware
+## Step 8: Package up and Boot the Firmware
 
 The firmware should now build successfully, and we are finally ready to boot the firmware! We’re going to use the `elf2hex` script to convert the ELF file that `swift build` produced into a format that’s suitable for flashing, and then we’ll use the `st-flash` tool from the opensource stlink package to actually run the firmware. We’ll also use the `minicom` program to receive the text over UART, which will be presented on the host system as a serial port (also known as “COM port”).
 
@@ -396,7 +396,7 @@ $ st-flash --connect-under-reset --format ihex write .build/release/STM32BlinkLE
 
 Flashing should succeed and the firmware will run, but at this point, you won’t see any UART output yet, and that’s expected. While we’ve created the functions to initialize UART and transmit data, we haven’t actually called the initialization routine from our main application. The LED won’t blink either since we haven’t configured the GPIO pins for it. In the next step, we’ll update our main application file to call our UART initialization function and configure the LED pin properly.
 
-#### Step 9: Configuring pins for UART and LED
+## Step 9: Configuring pins for UART and LED
 
 Now let’s update the main application file to actually use our UART setup and blink an LED. Open the `Sources/STM32BlinkLED/STM32BlinkLED.swift` file and replace its contents with:
 
@@ -487,7 +487,7 @@ $ make monitor
 
 You should now see “Hello from Embedded Swift on STM32F7!” followed by LED status messages in the minicom terminal, and the LED on your board should be blinking.
 
-#### Conclusion
+## Conclusion
 
 Congratulations! You’ve successfully set up and programmed an STM32 microcontroller in baremetal mode using Embedded Swift. This simple LED blinking project demonstrates the fundamental concepts of embedded programming:
 
@@ -498,7 +498,7 @@ Congratulations! You’ve successfully set up and programmed an STM32 microcontr
 
 From here, you can expand the project to include more complex functionality like interfacing with sensors, implementing communication protocols, or adding user input.
 
-#### Next Steps
+## Next Steps
 
 - Add button input to control the LED patterns
 - Implement proper timer-based delays instead of the busy-wait approach

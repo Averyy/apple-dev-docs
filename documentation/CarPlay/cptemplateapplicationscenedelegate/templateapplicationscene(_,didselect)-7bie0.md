@@ -21,7 +21,7 @@ optional func templateApplicationScene(_ templateApplicationScene: CPTemplateApp
 - (void) templateApplicationScene:(CPTemplateApplicationScene *) templateApplicationScene didSelectNavigationAlert:(CPNavigationAlert *) navigationAlert;
 ```
 
-#### Discussion
+## Discussion
 
 If your navigation app posts a navigation alert while in the background, CarPlay displays a notification banner to the user. If the user taps the banner, CarPlay brings your navigation app to the foreground and calls this method.
 

@@ -20,11 +20,11 @@ object Photographer
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 - [Using Markdown with Apple News Format](../AppleNews/using-markdown-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Use the `Photographer` component to name the contributor whose photographs appear in the article. An [`Illustrator`](./illustrator.md) component is also available.
 
-##### Example
+### Example
 
 ```json
 {

@@ -20,11 +20,11 @@ Creates a new data table with an additional column that contains the combined va
 func pack(columnsNamed: String..., to: String, type: MLDataTable.PackType = .sequence, filling: MLDataValue = MLDataValue.invalid) -> MLDataTable
 ```
 
-#### Return Value
+## Return Value
 
 A new data table.
 
-#### Discussion
+## Discussion
 
 This function performs the inverse of [`unpack(columnNamed:valueTypes:indexSubset:keySubset:)`](./unpack%28columnnamed,valuetypes,indexsubset,keysubset%29.md).
 

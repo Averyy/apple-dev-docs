@@ -15,13 +15,13 @@ The response object for an ad group query, containing matched results and pagina
 object AdGroupQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `AdGroupQueryResponse` object is returned by the ad group query endpoint.
 
 Use the `QueryRequest` body with `filters` to scope results to a specific campaign, status, or set of ad group IDs.
 
-##### Example
+### Example
 
 ```json
 {

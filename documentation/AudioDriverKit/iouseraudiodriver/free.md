@@ -15,7 +15,7 @@ Performs any final cleanup for the service.
 virtual void free();
 ```
 
-#### Discussion
+## Discussion
 
 Override this method inherited from [`IOService`](../../DriverKit/ioservice.md).
 

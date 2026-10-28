@@ -6,7 +6,7 @@ Play, record, and process audio, and find and play content from Apple Music and 
 
 Whether you’re adding audio touches to your app’s UI, or building your own audio-editing app, Apple has the audio technologies you need. Audio plays an important role in many apps, with specialized audio hardware built in to all Apple devices. The software you use to access that hardware ensures playback is efficient, and helps you work with a wide variety of audio formats.
 
-##### Add user interface sounds and haptic feedback
+### Add user interface sounds and haptic feedback
 
 You can enhance your app with audio and haptic feedback. Consider the feedback that the system apps provide: Mail plays a whoosh when you send an email, Camera plays a shutter click when you take a photo, and Photos provides haptic feedback when editing photos. These sensory cues create engaging and tactile experiences.
 
@@ -20,13 +20,13 @@ Haptic feedback delivers a tactile effect that draws attention and reinforces ac
 - The simplest way to support custom [haptic feedback](../ApplePencil/playing-haptic-feedback-in-your-app.md) is to use the support available in your app’s UI framework. For example, provide [sensory feedback](../SwiftUI/sensoryfeedback.md) in SwiftUI or  [generate feedback](../UIKit/uifeedbackgenerator.md) in UIKit, to provide feedback for common interactions like selection events or value changes.
 - When you require more advanced control, use [Core Haptics](../CoreHaptics/CoreHaptics.md) to deliver customized haptic feedback on supported devices like iPhone and Apple Watch. This framework allows you to deliver nuanced tactile feedback by combining haptic patterns with audio. Using Core Haptics, you can define continuous or transient haptic events with precise control over intensity and sharpness, making it ideal for enhancing interactions in games, music apps, or productivity tools.
 
-##### Play music from the Apple Music catalog and user libraries
+### Play music from the Apple Music catalog and user libraries
 
 Add music playback to your app for a rich, engaging experience that feels deeply personal. You might create an app to help people find new music or rediscover their old favorites, a fitness app that plays a motivating soundtrack to power someone’s workout, or a meditation app with a playlist of ambient soundscapes.
 
 Play music from Apple Music’s vast catalog with [MusicKit](https://developer.apple.com/musickit/), a combination of client frameworks and the [Apple Music API](../AppleMusicAPI/AppleMusicAPI.md). Discover and fetch content from Apple Music, including artists, albums, playlists, and more, with features that enable you search the catalog and browse the latest charts. You can also use MusicKit to provide access to personalized features, including a person’s music library, recommendations, and recently played history. MusicKit client frameworks provide the APIs needed to authenticate subscribers and start and control playback on a device. Client frameworks are available for apps on [Apple platforms](../MusicKit/MusicKit.md), [web applications](https://js-cdn.music.apple.com/musickit/v1/index.html) using JavaScript, and [Android applications](https://developer.apple.com/musickit/android/) using the available SDK.
 
-##### Perform basic playback and recording of audio files
+### Perform basic playback and recording of audio files
 
 You can provide audio feedback in response to user input, play background music for your app or game, or record audio in a journaling or note-taking app.
 
@@ -37,7 +37,7 @@ Two classes in the [AVFAudio](../AVFAudio/AVFAudio.md) framework provide high-le
 
 Together, these classes provide a straightforward way to add rich audio features into your app.
 
-##### Perform advanced playback, recording, and processing
+### Perform advanced playback, recording, and processing
 
 When your needs grow beyond simple playback and recording of local audio files, Apple provides APIs that support advanced cases. For example, you can use these APIs to play streaming audio, enable musicians to mix custom backing tracks for practice or performance, or support a singer in a karaoke app by adding effects like reverb or delay.
 
@@ -45,7 +45,7 @@ Use the [AVFAudio](../AVFAudio/AVFAudio.md) framework’s [`AVAudioEngine`](../A
 
 > **Note**: In addition to the robust capabilities that `AVAudioEngine` provides on its own, it also works great when integrating with other audio technologies. For example, it provides a convenient way to capture and process audio buffers for use with frameworks like [Sound Analysis](../SoundAnalysis/SoundAnalysis.md) and [Speech](../Speech/Speech.md).
 
-##### Play spatial audio in games and immersive experiences
+### Play spatial audio in games and immersive experiences
 
 Spatial audio enhances games and immersive experiences by providing realistic, directional sounds that react to a person’s position and environment. In games, you can use it to simulate sounds like footsteps approaching from behind, explosions on a distant battlefield, or ambient noises tied to virtual locations, making gameplay more engaging. For immersive experiences on Apple Vision Pro, spatial audio supports environmental sounds that change with the listener’s position and head movements. These use cases rely on precise sound positioning, head-tracking, and environmental effects to align audio with visual and interactive elements.
 
@@ -55,7 +55,7 @@ Apple provides several frameworks that you can use to play Spatial Audio, depend
 - [`AVAudioEngine`](../AVFAudio/avaudioengine.md) supports spatial audio mixing with its [`AVAudioEnvironmentNode`](../AVFAudio/avaudioenvironmentnode.md), which enables 3D sound positioning, reverb, and distance attenuation. It’s integrated into a flexible node-based architecture, which makes it ideal for games or apps that need to support spatial audio mixing alongside general audio tasks like playback, recording, or effects processing. While effective for simpler spatial audio needs, it’s best suited for apps with mixed audio requirements.
 - [PHASE](../PHASE/PHASE.md) is Apple’s most advanced framework for immersive spatial audio, specifically intended for 3D games and immersive experiences. It manages a dynamic environment where sound sources and listeners are positioned in 3D space, and supports head-tracked audio, occlusion, reverb, and distance-based effects. Its focus is spatial audio over general audio processing, making it ideal for highly immersive apps.
 
-##### Intelligently identify music and sounds
+### Intelligently identify music and sounds
 
 Build apps that intelligently identify sounds and music by creating dynamic, context-aware interactions that respond to music and audio. You can use this functionality to add recognition of songs, ambient sounds, or specific audio cues, and to power features like identifying a song that someone hears while walking down the street, syncing workout apps with music tempo for custom exercise cues, or prompting questions in a companion app during the presentation of educational content.
 
@@ -64,7 +64,7 @@ Two frameworks perform intelligent identification of music and sounds:
 - [ShazamKit](../ShazamKit/ShazamKit.md) integrates audio recognition into your apps, enabling identification of music from Shazam’s expansive catalog or custom audio from your own catalog. Use ShazamKit to synchronize your app state with audio cues to enhance its experience with context-aware interactions.
 - [Sound Analysis](../SoundAnalysis/SoundAnalysis.md) enables you to analyze and classify sounds in real-time or from recorded files, including environmental sound detection and activity identification. For example, it can identify sounds like a dog barking, a siren, or glass breaking to drive app actions, such as alerting people to emergencies, enhancing accessibility apps by describing ambient sounds, or powering interactive experiences that respond to specific noises. You can train custom models with tools like Create ML to recognize unique sounds relevant to your app, such as musical instruments for a music education tool or appliance beeps for a smart home app. The framework’s on-device processing ensures private, low-latency performance.
 
-##### Support speech synthesis and transcription
+### Support speech synthesis and transcription
 
 Integrating speech synthesis or transcription into your app can create intuitive and accessible user experiences. Speech synthesis enables apps to vocalize text, which you can use to read content aloud to people with visual impairments, power language learning tools with accurate pronunciation, or enhance navigation apps with spoken directions. Speech transcription converts spoken words to text, which enables features like hands-free note taking or real-time captioning during video playback or voice calls. These capabilities make apps more inclusive and capable by supporting a wide variety of use cases.
 
@@ -72,7 +72,7 @@ To synthesize speech, use [`AVSpeechSynthesizer`](../AVFAudio/avspeechsynthesize
 
 The [Speech](../Speech/Speech.md) framework provides speech transcription, converting audio to text in real-time or from recordings. It supports voice command interfaces, dictation for note-taking apps, or live captioning for accessibility in video conferencing. With on-device and cloud-based options, developers can balance privacy and accuracy, enabling features like transcribing voice memos or live speeches.
 
-##### Play and process MIDI data
+### Play and process MIDI data
 
 MIDI (Musical Instrument Digital Interface) is a protocol that enables precise control of virtual instruments, enabling you to compose music, trigger synthesized sounds or audio samples, or teach music theory through interactive playback. Recording MIDI data enables people to capture performances, edit compositions, or integrate with digital audio workstations (DAWs), making it ideal for music creation apps, virtual instrument simulators, or educational tools that provide real-time feedback to students.
 
@@ -82,7 +82,7 @@ Apple provides several technologies to play and process MIDI data:
 - **[Audio Toolbox](../AudioToolbox/AudioToolbox.md)**: A framework that defines the [`MusicSequence`](../AudioToolbox/musicsequence.md) and [Music Player](../AudioToolbox/music-player.md) APIs that allow you to create, edit, and play MIDI sequences. A music sequence manages MIDI events and tracks, enabling your app to record, edit, and sequence musical performances, while a music player handles playback. These tools are perfect for building apps that compose or arrange music, such as educational platforms that teach songs or DAW-like apps that create complex MIDI arrangements.
 - **[Core MIDI](../CoreMIDI/CoreMIDI.md)**: A framework that handles MIDI data communication between apps, hardware devices, and virtual instruments. It enables you to send and receive MIDI messages for real-time playback of virtual instruments or control of external synthesizers and devices. With support for MIDI over USB, Bluetooth, and network connections, Core MIDI is essential for building apps that integrate with MIDI controllers or DAWs, ensuring low-latency music production.
 
-##### Create and host Audio Unit plug-ins
+### Create and host Audio Unit plug-ins
 
 Creating Audio Unit plug-ins enables you to build advanced audio processing tools for music production, sound design, or multimedia apps. These plug-ins enable people to apply effects like equalization, delay, or reverb, or generate sounds through virtual instruments. Developing Audio Unit plug-ins enables you to provide customizable audio solutions for musicians and producers, while hosting plugins in your app expands its capabilities for people seeking professional-grade audio processing. This is ideal for building DAWs, audio editors, or live performance tools within Apple’s audio ecosystem.
 

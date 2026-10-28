@@ -29,11 +29,11 @@ func uploadTask(withStreamedRequest request: URLRequest) -> URLSessionUploadTask
 
 - [Uploading streams of data](../uploading-streams-of-data.md)
 
-#### Return Value
+## Return Value
 
 The new session upload task.
 
-#### Discussion
+## Discussion
 
 An HTTP upload request is any request that contains a request body, such as a `POST` or `PUT` request. Upload tasks require you to provide a request object so that you can provide metadata for the upload, such as HTTP request headers.
 

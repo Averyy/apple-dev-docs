@@ -17,7 +17,7 @@ static var zero: Self { get }
 
 Available when `Self` conforms to `ExpressibleByIntegerLiteral`.
 
-#### Discussion
+## Discussion
 
 Zero is the identity element for addition. For any value, `x + .zero == x` and `.zero + x == x`.
 

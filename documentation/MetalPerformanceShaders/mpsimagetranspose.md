@@ -24,7 +24,7 @@ class MPSImageTranspose
 @interface MPSImageTranspose : MPSUnaryImageKernel
 ```
 
-#### Overview
+## Overview
 
 An [`MPSImageTranspose`](./mpsimagetranspose.md) filter applies a matrix transposition to the source image by exchanging its rows with its columns.
 

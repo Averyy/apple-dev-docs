@@ -19,7 +19,7 @@ Creates a new filter by using the playback style you specify.
 + (PHPickerFilter *) playbackStyleFilter:(PHAssetPlaybackStyle) playbackStyle;
 ```
 
-#### Return Value
+## Return Value
 
 A new filter with the playback style you specify.
 

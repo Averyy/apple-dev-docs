@@ -23,7 +23,7 @@ func setAttachmentSize(_ attachmentSize: CGSize, forGlyphRange glyphRange: NSRan
 - (void) setAttachmentSize:(CGSize) attachmentSize forGlyphRange:(NSRange) glyphRange;
 ```
 
-#### Discussion
+## Discussion
 
 For a glyph corresponding to an attachment, this method should be called to set the size for the attachment cell to occupy. The glyph’s value should be [`NSControlGlyph`](../../AppKit/nscontrolglyph.md).
 

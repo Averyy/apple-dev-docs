@@ -14,7 +14,7 @@
 #define kREPORT_LUNS_HeaderSize
 ```
 
-#### Discussion
+## Discussion
 
 Size of the REPORT_LUNS header as defined in the SPC-3 specification.
 

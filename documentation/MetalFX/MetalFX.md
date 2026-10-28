@@ -13,7 +13,7 @@ Boost your Metal app’s performance by upscaling lower-resolution content to sa
 - macOS 13.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 The `MetalFX` framework integrates with [Metal](../Metal/Metal.md) to upscale a relatively low-resolution image to a higher output resolution in less time than it takes to render directly to the output resolution.
 

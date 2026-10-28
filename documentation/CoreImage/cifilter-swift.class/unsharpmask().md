@@ -24,11 +24,11 @@ class func unsharpMask() -> any CIFilter & CIUnsharpMask
 + (CIFilter<CIUnsharpMask> *) unsharpMaskFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the unsharp mask filter to an image. The effect increases the contrast of the edge between pixels of different colors within the defined radius property.
 

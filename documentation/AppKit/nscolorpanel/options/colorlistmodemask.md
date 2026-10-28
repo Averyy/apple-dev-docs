@@ -19,7 +19,7 @@ static var colorListModeMask: NSColorPanel.Options { get }
 NSColorPanelColorListModeMask
 ```
 
-#### Discussion
+## Discussion
 
 Custom color list.
 

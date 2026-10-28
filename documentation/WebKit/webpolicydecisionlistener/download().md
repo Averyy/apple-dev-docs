@@ -20,7 +20,7 @@ func download()
 - (void) download;
 ```
 
-#### Discussion
+## Discussion
 
 This method converts a location change that may be in progress to a download operation without having to stop and restart the download. You might invoke this method based on the content’s MIME type.
 

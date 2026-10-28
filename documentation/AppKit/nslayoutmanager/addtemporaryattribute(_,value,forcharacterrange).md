@@ -19,7 +19,7 @@ func addTemporaryAttribute(_ attrName: NSAttributedString.Key, value: Any, forCh
 - (void) addTemporaryAttribute:(NSAttributedStringKey) attrName value:(id) value forCharacterRange:(NSRange) charRange;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) if `attrName` or `value` is `nil`.
 

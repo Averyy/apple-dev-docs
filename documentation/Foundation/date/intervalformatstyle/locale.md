@@ -21,7 +21,7 @@ The locale for formatting the date and time interval components.
 var locale: Locale
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`autoupdatingCurrent`](../../nslocale/autoupdatingcurrent.md). If you set this property to `nil`, the formatter resets to use `autoupdatingCurrent.`
 

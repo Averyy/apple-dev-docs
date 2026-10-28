@@ -23,7 +23,7 @@ class MPNowPlayingSession
 @interface MPNowPlayingSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`AVPlayer`](../AVFoundation/avplayer.md) object can have only one Now Playing session. An [`AVPlayerViewController`](../AVKit/avplayerviewcontroller.md) manages its own player and Now Playing session, so you can’t add your own Now Playing session.
 

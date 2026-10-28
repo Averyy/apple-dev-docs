@@ -22,7 +22,7 @@ nonisolated
 struct MeshGradient
 ```
 
-#### Overview
+## Overview
 
 Each vertex has a position, a color and four surrounding Bezier control points (leading, top, trailing, bottom) that define the tangents connecting the vertex with its four neighboring vertices. (Vertices on the corners or edges of the mesh have less than four neighbors, they ignore their extra control points.) Control points may either be specified explicitly or implicitly.
 

@@ -25,7 +25,7 @@ func xpc_connection_set_finalizer_f(_ connection: xpc_connection_t, _ finalizer:
 extern void xpc_connection_set_finalizer_f(xpc_connection_t connection, xpc_finalizer_t finalizer);
 ```
 
-#### Discussion
+## Discussion
 
 For many uses of context objects, this API allows for a convenient shorthand for freeing them. For example, for a context object allocated with `malloc(3)`:
 

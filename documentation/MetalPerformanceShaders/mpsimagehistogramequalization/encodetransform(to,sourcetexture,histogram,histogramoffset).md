@@ -24,7 +24,7 @@ func encodeTransform(to commandBuffer: any MTLCommandBuffer, sourceTexture sourc
 - (void) encodeTransformToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceTexture:(id<MTLTexture>) source histogram:(id<MTLBuffer>) histogram histogramOffset:(NSUInteger) histogramOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The transform function will not begin to execute until after the command buffer has been enqueued and committed. This step will need to be repeated with the new [`MPSKernel`](../mpskernel.md) object if the [`copy(with:device:)`](../mpskernel/copy%28with,device%29.md) or [`copy(with:)`](../../Foundation/nscopying/copy%28with%29.md) method is called. The transform is stored as internal state to the object. You still need to call the [`encode(commandBuffer:sourceTexture:destinationTexture:)`](../mpsunaryimagekernel/encode%28commandbuffer,sourcetexture,destinationtexture%29.md) afterward to apply the transform to produce a result texture.
 

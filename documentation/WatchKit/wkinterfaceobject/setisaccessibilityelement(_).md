@@ -19,7 +19,7 @@ func setIsAccessibilityElement(_ isAccessibilityElement: Bool)
 - (void) setIsAccessibilityElement:(BOOL) isAccessibilityElement;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to change the accessibility status of your interface objects.
 

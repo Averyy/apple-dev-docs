@@ -13,13 +13,13 @@ Access texture data from the CPU by copying it to a buffer.
 - macOS 14.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 Metal optimizes textures for fast access by the GPU, but it doesn’t allow you to directly access a texture’s contents from the CPU. When your app code needs to change or read a texture’s contents, you use Metal to copy data between textures and CPU-accessible memory — either system memory or a Metal buffer allocated using shared storage. This sample configures drawable textures for read access and copies rendered pixel data from those textures to a Metal buffer.
 
 Run the sample, then tap or click on a single point to read the pixel data stored at that point. Alternatively, drag out a rectangle to capture pixel data for a region on the screen. The sample converts your selection to a rectangle in the drawable texture’s coordinate system. Next, it renders an image to the texture. Finally, it copies the pixel data from the selected rectangle into a buffer for the sample to process further.
 
-##### Configure the drawable texture for read access
+### Configure the drawable texture for read access
 
 By default, MetalKit views create drawable textures for rendering only, so other Metal commands can’t access the texture. The code below creates a view whose textures include read access. Because the sample needs to get a texture whenever the user selects part of the view, the code configures the view’s Metal layer to wait indefinitely for a new drawable.
 
@@ -31,7 +31,7 @@ _view.colorPixelFormat = MTLPixelFormatBGRA8Unorm;
 
 Because configuring the drawable textures for read access means that Metal may not apply some optimizations, only change the drawable configuration when necessary. For similar reasons, don’t configure the view to wait indefinitely in performance-sensitive apps.
 
-##### Determine which pixels to copy
+### Determine which pixels to copy
 
 The `AAPLViewController` class manages user interaction. When a user interacts with a view, AppKit and UIKit send events with positions specified in the view’s coordinate system. To determine which pixels to copy from the Metal drawable texture, the app transforms these view coordinates into the Metal texture coordinate system.
 
@@ -69,7 +69,7 @@ In iOS, the app reads the view’s `contentScaleFactor` and applies a scaling tr
 }
 ```
 
-##### Render the pixel data
+### Render the pixel data
 
 When the user selects a rectangle in the view, the view controller calls the `renderAndReadPixelsFromView:withRegion` method to render the drawable’s contents and copy them to a Metal buffer.
 
@@ -98,7 +98,7 @@ const id<MTLBuffer> pixelBuffer = [self readPixelsWithCommandBuffer:commandBuffe
                                                            withSize:readSize];
 ```
 
-##### Copy pixel data to a buffer
+### Copy pixel data to a buffer
 
 The renderer’s `readPixelsWithCommandBuffer:fromTexture:atOrigin:withSize:` method encodes the commands to copy the texture. Because the sample passes the same command buffer into this method, Metal encodes these new commands after the render pass. Metal automatically manages the dependencies on the destination texture, and ensures that rendering completes before copying the texture data.
 
@@ -141,7 +141,7 @@ Finally, it commits the command buffer and calls [`waitUntilCompleted()`](./mtlc
 [commandBuffer waitUntilCompleted];
 ```
 
-##### Read the pixels from the buffer
+### Read the pixels from the buffer
 
 The app calls the buffer’s [`contents()`](./mtlbuffer/contents%28%29.md) method to get a pointer to the pixel data.
 

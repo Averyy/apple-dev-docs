@@ -19,7 +19,7 @@ func SCNetworkSetSetCurrent(_ set: SCNetworkSet) -> Bool
 Boolean SCNetworkSetSetCurrent(SCNetworkSetRef set);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the current set was updated; `FALSE` if an error occurred.
 

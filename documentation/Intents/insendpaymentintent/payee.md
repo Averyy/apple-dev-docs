@@ -32,7 +32,7 @@ var payee: INPerson? { get }
 @property (atomic, copy, readonly, nullable) INPerson * payee;
 ```
 
-#### Discussion
+## Discussion
 
 Use the payee information to determine which account receives the payment.
 

@@ -31,7 +31,7 @@ extern CFStringRef const kSecClass;
 - [Storing an Identity in the Keychain](./storing-an-identity-in-the-keychain.md)
 - [Storing Keys in the Keychain](./storing-keys-in-the-keychain.md)
 
-#### Discussion
+## Discussion
 
 Possible values for this key are listed in [Item class values](./item-class-keys-and-values.md#Item-class-values).
 

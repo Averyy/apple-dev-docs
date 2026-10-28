@@ -19,7 +19,7 @@ static let allPages: NSPrintInfo.AttributeKey
 extern NSPrintInfoAttributeKey const NSPrintAllPages;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../../Swift/true.md), includes all pages in output.
 

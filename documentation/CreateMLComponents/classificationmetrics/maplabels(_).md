@@ -21,7 +21,7 @@ Returns new classification metrics where the labels are the result of applying a
 func mapLabels<T>(_ transform: (Label) throws -> T) rethrows -> ClassificationMetrics<T> where T : Hashable
 ```
 
-#### Discussion
+## Discussion
 
 The transformation can combine separate labels into one. The metrics will be adjusted accordingly by combining counts from the original labels. An example of this is combining mixed cased labels into lowercase:
 

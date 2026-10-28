@@ -15,7 +15,7 @@ An error a validator emits when a value isn’t a `Uuid` or isn’t castable to 
 interface ValueNotUuidError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueNotConvertibleToTypeError`.
 

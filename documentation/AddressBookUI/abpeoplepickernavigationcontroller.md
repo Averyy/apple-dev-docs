@@ -23,13 +23,13 @@ class ABPeoplePickerNavigationController
 @interface ABPeoplePickerNavigationController : UINavigationController
 ```
 
-#### Overview
+## Overview
 
 In iOS 8 and later bringing up a people-picker navigtion controller does not require the app to have access to a user’s contacts, and the user will not be prompted to grant access. If the app does not itself have access to the user’s contacts, a temporary copy of the contact selected by the user will be returned to the app.
 
 See PeoplePicker: Picking a Person or Property for a sample project illustrating the use of a people-picker navigation controller.
 
-##### Subclassing
+### Subclassing
 
 The `ABPeoplePickerNavigationController` class does not support subclassing.
 

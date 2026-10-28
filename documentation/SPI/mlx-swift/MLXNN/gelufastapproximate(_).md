@@ -17,7 +17,7 @@ A fast approximation to Gaussian Error Linear Unit.
 func geluFastApproximate(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 x * sigmoid(1.702 * x)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`GELU`](./gelu.md)

@@ -19,7 +19,7 @@ Generate random integers from the given interval (`low:` and `high:`) with a giv
 func randInt<T>(low: any ScalarOrArray, high: any ScalarOrArray, _ shape: [Int]? = nil, type: T.Type, key: MLXArray? = nil, stream: StreamOrDevice = .default) -> MLXArray where T : HasDType, T : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 The values are sampled with equal probability from the integers in half-open interval `[lb, ub)`. The lower and upper bound can be scalars or arrays and must be roadcastable to `shape`.  The integer results will be of the given `type`.
 

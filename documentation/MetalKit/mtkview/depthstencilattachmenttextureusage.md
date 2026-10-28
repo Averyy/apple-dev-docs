@@ -24,7 +24,7 @@ var depthStencilAttachmentTextureUsage: MTLTextureUsage { get set }
 @property (nonatomic) MTLTextureUsage depthStencilAttachmentTextureUsage;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`renderTarget`](../../Metal/mtltextureusage/rendertarget.md).
 

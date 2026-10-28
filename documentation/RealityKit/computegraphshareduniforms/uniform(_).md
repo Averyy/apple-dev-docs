@@ -19,7 +19,7 @@ Returns the stored uniform value for the given type, or `nil` if none has been s
 func uniform<V>(_ type: V.Type) -> V? where V : BitwiseCopyable
 ```
 
-#### Return Value
+## Return Value
 
 The stored value, or `nil`.
 

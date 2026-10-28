@@ -24,7 +24,7 @@ subscript(attachmentIndex: Int) -> MTLRenderPipelineColorAttachmentDescriptor! {
 - (MTLRenderPipelineColorAttachmentDescriptor *) objectAtIndexedSubscript:(NSUInteger) attachmentIndex;
 ```
 
-#### Return Value
+## Return Value
 
 An [`MTLRenderPipelineColorAttachmentDescriptor`](../mtlrenderpipelinecolorattachmentdescriptor.md) instance that describes the render pipeline information for a color attachment.
 

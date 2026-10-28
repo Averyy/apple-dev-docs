@@ -24,11 +24,11 @@ init(buffer: any MTLBuffer, descriptor: MPSMatrixDescriptor)
 - (instancetype) initWithBuffer:(id<MTLBuffer>) buffer descriptor:(MPSMatrixDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSMatrix`](../mpsmatrix.md) object or `nil`, if failure.
 
-#### Discussion
+## Discussion
 
 The dimensions and stride of the matrix are specified by the [`MPSMatrixDescriptor`](../mpsmatrixdescriptor.md) object. The size of the provided [`MTLBuffer`](../../Metal/mtlbuffer.md) object must be large enough to store the following amount of bytes:
 

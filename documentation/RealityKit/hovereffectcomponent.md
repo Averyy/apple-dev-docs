@@ -19,7 +19,7 @@ A component that applies a visual effect to a hierarchy of entities when a perso
 struct HoverEffectComponent
 ```
 
-#### Overview
+## Overview
 
 Add a HoverEffectComponent to an entity to convey the entity can receive gestures or to separate parts that can be interacted with independently.
 
@@ -48,7 +48,7 @@ The example code above produces the following scene.
 
 [Video: A video of a living room scene with 1 3D black rectangle in the center of it. The rectangle starts glowing with a feathered effect that moves around slowly.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/hovereffectcomponent-scene-default-effect-1.mp4)
 
-##### Hierarchical behavior
+### Hierarchical behavior
 
 The `HoverEffectComponent` applies its effect to an entity’s entire hierarchy, which means that all the entity’s descendent entities inherit the effect when a person looks at (or selects) an entity.
 
@@ -91,7 +91,7 @@ In this example only the highest entity in the hierarchy has a `HoverEffectCompo
 
 [Video: A video of a living room scene with three black rectangles arranged in a column. All three of the rectangles start glowing with a feathered effect that moves around slowly.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/hovereffectcomponent-scene-default-effect-3.mp4)
 
-##### Grouping multiple hover effects
+### Grouping multiple hover effects
 
 The optional [`groupID`](./hovereffectcomponent/hovereffect-swift.struct/groupid.md) connects entities so that they activate their hover effects together, which is independent from the entities’ hierarchy. When someone hovers over any entity in the group, all entities with the same [`HoverEffectComponent.GroupID`](./hovereffectcomponent/groupid.md) instance start their hover effects together.
 
@@ -153,7 +153,7 @@ In this example, the top and middle entities, `entityA` and `entityB`, have a [`
 
 [Video: A video of a living room scene with three black rectangles arranged in a column. The top two rectangles start glowing as the gaze pointer hovers over the top rectangle and as it continues over the middle rectange. The bottom rectangle begins glowing only when the gaze pointer hovers over it.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/hovereffectcomponent-groupid.mp4)
 
-##### Styles
+### Styles
 
 You can customize the visual effect of the `HoverEffectComponent` through the use of styles.
 
@@ -181,7 +181,7 @@ let hoverComponent = HoverEffectComponent(.highlight(
 
 [Video: A screen recording of a living room with a black rectangle in the center of it. The rectangle begins to glow with a bright green feathered effect.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/hovereffectcomponent-highlight.mp4)
 
-##### Opacity functions
+### Opacity functions
 
 Customize how a `HoverEffectComponent` presents on a partially or fully transparent material with the following opacity functions:
 
@@ -203,7 +203,7 @@ Customize how a `HoverEffectComponent` presents on a partially or fully transpar
 
 > **Note**: Opacity functions can’t be applied to `HoverEffectComponents` that use [`HoverEffectComponent.ShaderHoverEffectInputs`](./hovereffectcomponent/shaderhovereffectinputs.md).
 
-##### Shader inputs
+### Shader inputs
 
 Pass [`HoverEffectComponent.ShaderHoverEffectInputs`](./hovereffectcomponent/shaderhovereffectinputs.md) to the `HoverEffectComponent` constructor with [`shader(_:)`](./hovereffectcomponent/hovereffect-swift.struct/shader%28_%29.md) to activate the `Hover State` Shader Graph node in a [`ShaderGraphMaterial`](./shadergraphmaterial.md). Apply the [`ShaderGraphMaterial`](./shadergraphmaterial.md) to the entity’s [`ModelComponent`](./modelcomponent.md) when using this effect.
 

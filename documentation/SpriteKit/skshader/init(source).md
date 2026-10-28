@@ -25,7 +25,7 @@ init(source: String)
 - (instancetype) initWithSource:(NSString *) source;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized shader object.
 

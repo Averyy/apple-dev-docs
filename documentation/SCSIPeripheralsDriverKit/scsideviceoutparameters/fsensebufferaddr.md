@@ -15,7 +15,7 @@ The virtual address of the buffer that the dext creates to transfer sense data.
 uint64_t fSenseBufferAddr;
 ```
 
-#### Discussion
+## Discussion
 
 The framework uses this address to create an [`IOMemoryDescriptor`](../../DriverKit/iomemorydescriptor.md) in the kernel that [`fSenseLengthRequested`](./fsenselengthrequested.md) specifies and maps to the dext process.
 

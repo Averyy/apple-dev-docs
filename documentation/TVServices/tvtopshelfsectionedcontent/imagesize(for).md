@@ -19,7 +19,7 @@ class func imageSize(for shape: TVTopShelfSectionedItem.ImageShape) -> CGSize
 + (CGSize) imageSizeForImageShape:(TVTopShelfSectionedItemImageShape) shape;
 ```
 
-#### Return Value
+## Return Value
 
 The recommended size of the image, in points.
 

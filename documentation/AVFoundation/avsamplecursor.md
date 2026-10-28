@@ -25,7 +25,7 @@ class AVSampleCursor
 @interface AVSampleCursor : NSObject
 ```
 
-#### Overview
+## Overview
 
 You position a sample cursor at a specific media sample in a sequence of samples contained in a higher-level object, like an [`AVAssetTrack`](./avassettrack.md). You can move it to a new position in that sequence either backwards or forwards, either in decode order or in presentation order. You can also request moving it according to a count of samples or a delta in time.
 

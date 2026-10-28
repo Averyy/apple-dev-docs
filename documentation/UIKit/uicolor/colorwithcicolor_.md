@@ -19,7 +19,7 @@ Creates a color object that encapsulates a Core Image color.
 + (UIColor *) colorWithCIColor:(CIColor *) ciColor;
 ```
 
-#### Return Value
+## Return Value
 
 The `UIColor` object corresponding to the specified Core Image color.
 

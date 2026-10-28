@@ -17,7 +17,7 @@ Errors that can occur when managing 3D model association with categories and att
 enum Error
 ```
 
-#### Overview
+## Overview
 
 The `modelFileURL` functions can throw an error of this type, such as `CapturedRoom/ModelProvider/modelFileURL(for:)-42iz3`.
 

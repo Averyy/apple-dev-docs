@@ -23,7 +23,7 @@ var majorRadiusTolerance: CGFloat { get }
 @property (nonatomic, readonly) CGFloat majorRadiusTolerance;
 ```
 
-#### Discussion
+## Discussion
 
 This value determines the accuracy of the value in the [`majorRadius`](./majorradius.md) property. Add this value to the radius to get the maximum touch radius. Subtract the value to get the minimum touch radius.
 

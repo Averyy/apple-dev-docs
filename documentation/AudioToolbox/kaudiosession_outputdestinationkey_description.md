@@ -22,7 +22,7 @@ let kAudioSession_OutputDestinationKey_Description: CFString!
 extern CFStringRef const kAudioSession_OutputDestinationKey_Description;
 ```
 
-#### Discussion
+## Discussion
 
 A [`CFString`](../CoreFoundation/cfstring.md) object, defined by the accessory, that describes the audio output destination and that is suitable for displaying in a user interface.
 

@@ -19,7 +19,7 @@
 extern UTType * const UTTypeTarArchive;
 ```
 
-#### Discussion
+## Discussion
 
 A tar Archive.
 

@@ -23,11 +23,11 @@ consuming func mapError<NewFailure>(_ transform: (Failure) -> NewFailure) -> Res
 
 Available when `Failure` conforms to `Error`.
 
-#### Return Value
+## Return Value
 
 A `Result` instance with the result of evaluating `transform` as the new failure value if this instance represents a failure.
 
-#### Discussion
+## Discussion
 
 Use this method when you need to transform the value of a `Result` instance when it represents a failure. The following example transforms the error value of a result by wrapping it in a custom `Error` type:
 

@@ -23,7 +23,7 @@ class CFAllocator
 typedef const struct __CFAllocator * CFAllocatorRef;
 ```
 
-#### Overview
+## Overview
 
 CFAllocator is an opaque type that allocates and deallocates memory for you. You never have to allocate, reallocate, or deallocate memory directly for Core Foundation objects—and rarely should you. You pass CFAllocator objects into functions that create objects; these functions have “Create” embedded in their names, for example, `CFStringCreateWithPascalString`. The creation functions use the allocators to allocate memory for the objects they create.
 

@@ -16,11 +16,11 @@ Returns the current position of the element, in the graph’s coordinate space.
 float3 element::position()
 ```
 
-#### Return Value
+## Return Value
 
 The position as a 3D vector (x, y, z)
 
-#### Discussion
+## Discussion
 
 > **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/element__position.svg)
 

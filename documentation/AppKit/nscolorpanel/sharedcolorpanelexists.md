@@ -19,7 +19,7 @@ class var sharedColorPanelExists: Bool { get }
 @property (class, readonly) BOOL sharedColorPanelExists;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the `NSColorPanel` has been created already; otherwise [`false`](../../Swift/false.md).
 

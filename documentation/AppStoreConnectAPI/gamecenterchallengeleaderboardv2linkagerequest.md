@@ -15,7 +15,7 @@ The data structure that represents a Game Center challenge leaderboard linkage r
 object GameCenterChallengeLeaderboardV2LinkageRequest
 ```
 
-#### Overview
+## Overview
 
 - data:
 

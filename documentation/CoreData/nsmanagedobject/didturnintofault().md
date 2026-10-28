@@ -25,7 +25,7 @@ func didTurnIntoFault()
 - (void) didTurnIntoFault;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to clear out custom data caches—transient values declared as entity properties are typically already cleared out by the time this method is invoked (see, for example, [`refresh(_:mergeChanges:)`](../nsmanagedobjectcontext/refresh%28_,mergechanges%29.md)).
 

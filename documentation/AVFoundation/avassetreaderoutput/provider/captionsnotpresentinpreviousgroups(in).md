@@ -20,7 +20,7 @@ func captionsNotPresentInPreviousGroups(in captionGroup: AVCaptionGroup) -> [AVC
 
 Available when `Payload` is `AVCaptionGroup`.
 
-#### Return Value
+## Return Value
 
 An array of AVCaption objects.
 

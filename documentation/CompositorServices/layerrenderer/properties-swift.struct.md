@@ -20,7 +20,7 @@ struct Properties
 
 - [Drawing fully immersive content using Metal](../drawing-fully-immersive-content-using-metal.md)
 
-#### Overview
+## Overview
 
 Use the layer’s properties to configure other parts of your app. For example, use them to configure your app’s render pipeline.
 

@@ -15,7 +15,7 @@ A Boolean value that determines whether to center the map on the user’s locati
 tracksUserLocation?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

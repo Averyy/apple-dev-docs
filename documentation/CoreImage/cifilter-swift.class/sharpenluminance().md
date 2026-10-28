@@ -24,11 +24,11 @@ class func sharpenLuminance() -> any CIFilter & CISharpenLuminance
 + (CIFilter<CISharpenLuminance> *) sharpenLuminanceFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the sharpen luminance filter to an image. The effect increases image detail by adjusting the luminance of each pixel within the `radius` property. Sharpening the luminance doesn’t effect the chroma data of each pixel.
 

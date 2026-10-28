@@ -32,7 +32,7 @@ func chooseBestHostingPlayer() async -> GKPlayer?
 
 - [Exchanging data between players in real-time games](../exchanging-data-between-players-in-real-time-games.md)
 
-#### Discussion
+## Discussion
 
 This method estimates which player has the best network connection using a variety of metrics such as bandwidth, latency, and network reliability. Use this method to choose the player that acts as the server when you implement a client-server topology on top of the match’s peer-to-peer connection.
 

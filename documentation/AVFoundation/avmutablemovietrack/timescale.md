@@ -24,7 +24,7 @@ var timescale: CMTimeScale { get set }
 @property (nonatomic, readwrite) CMTimeScale timescale;
 ```
 
-#### Discussion
+## Discussion
 
 The default media time is `0`. Set this property on any new, empty tracks before any edits are performed on the track.
 

@@ -25,7 +25,7 @@ var age: Int { get set }
 @property (nonatomic, assign) NSInteger age;
 ```
 
-#### Discussion
+## Discussion
 
 The system treats this value as a personality trait and defaults to `0`.
 

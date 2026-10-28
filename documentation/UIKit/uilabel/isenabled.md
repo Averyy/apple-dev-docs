@@ -23,7 +23,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines only how the label draws its text. The label dims the text somewhat when not enabled to indicate it’s not active. The default value of this property is [`true`](../../Swift/true.md).
 

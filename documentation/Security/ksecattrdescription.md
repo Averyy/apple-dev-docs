@@ -25,7 +25,7 @@ let kSecAttrDescription: CFString
 extern CFStringRef const kSecAttrDescription;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and specifies a user-visible string describing this kind of item (for example, “Disk image password”).
 

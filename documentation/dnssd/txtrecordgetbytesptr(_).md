@@ -25,7 +25,7 @@ func TXTRecordGetBytesPtr(_ txtRecord: UnsafePointer<TXTRecordRef>!) -> UnsafeRa
 const void *TXTRecordGetBytesPtr(const TXTRecordRef *txtRecord);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to the raw bytes inside the TXTRecordRef which you can pass directly to [`DNSServiceRegister(_:_:_:_:_:_:_:_:_:_:_:_:)`](./dnsserviceregister%28_,_,_,_,_,_,_,_,_,_,_,_%29.md) or to [`DNSServiceUpdateRecord(_:_:_:_:_:_:)`](./dnsserviceupdaterecord%28_,_,_,_,_,_%29.md).
 

@@ -21,7 +21,7 @@ Indicates that the player item uses the default behavior for determining variant
 AVVariantPreferenceNone
 ```
 
-#### Discussion
+## Discussion
 
 By default, a player item bases variant selection on the available bandwidth, compatibility of the indicated codec or codecs, dimensions of the visual output, and number of available audio output channels.
 

@@ -19,7 +19,7 @@ An error that indicates the app is hidden or in the background.
 case backgroundCreationForbidden
 ```
 
-#### Discussion
+## Discussion
 
 Apps must perform image creation only when running in the foreground.
 

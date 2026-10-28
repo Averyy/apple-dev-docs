@@ -19,7 +19,7 @@ var usesTabsForIndentation: Bool { get }
 @property (readonly) BOOL usesTabsForIndentation;
 ```
 
-#### Discussion
+## Discussion
 
 The `usesTabsForIndentation` property determines whether tab characters are used to indent text instead of space characters when possible. When the indentation width isn’t a multiple of the tab width, space characters are used to pad the indentation to the appropriate width.
 

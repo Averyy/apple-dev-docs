@@ -26,7 +26,7 @@ func exportClip(to url: URL, duration: TimeInterval) async throws
 - (void) exportClipToURL:(NSURL *) url duration:(NSTimeInterval) duration completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Export buffered content as a clip to the specified URL
 

@@ -27,7 +27,7 @@ func BNNSFilterCreateLayerLoss(_ layer_params: UnsafeRawPointer, _ filter_params
 BNNSFilterBNNSFilterCreateLayerLoss(const void *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 You use a loss layer to compute forward and backward loss.
 

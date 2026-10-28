@@ -21,7 +21,7 @@ Indicates that a control to activate a tab has been pressed (touch down).
 static let tab: SensoryFeedback.PressFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Only plays feedback on visionOS.
 

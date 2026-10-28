@@ -22,7 +22,7 @@ The app account token you provided during the subscription purchase, if one exis
 var appAccountToken: UUID? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If you include an app account token in the purchase options when the customer purchases or changes the subscription,  this property is the app account token you provide. If you don’t provide an app account token, this property is `nil`.
 

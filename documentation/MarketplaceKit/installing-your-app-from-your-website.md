@@ -5,7 +5,7 @@
 
 Manage the installation of an app that you develop and distribute through your website.
 
-#### Overview
+## Overview
 
 Alternative distribution apps approved for download from your website install when people navigate to a special URL scheme; see [Distributing your app from your website](./distributing-your-app-from-your-website.md).
 
@@ -23,7 +23,7 @@ After the device receives a license, the system requests the app data from your 
 
 ![A diagram that shows the flow of installing your app from your website. When a person taps download from their device on your webpage, your webpage retrieves an authentication token from your App web server’s token endpoint, then your app webpage issues an installation request to the device. Next, the device provides the authentication token to the token endpoint and receives back an access token. Then the device requests an app license from the marketplacekit endpoints, after receiving the license, the device issues a restore request to the marketplacekit endpoints and downloads and installs the app.](https://developer.apple.com/tutorials/images/com.apple.MarketplaceKit/installing-your-app-from-your-website-1@2x.png)
 
-#### Authenticate the page visitor
+## Authenticate the page visitor
 
 To restrict download access to a specific set of people, include a token in the `MarketplaceKitURIScheme` request. If you include the optional `token` parameter in the URL, [MarketplaceKit](./MarketplaceKit.md) passes the value to your athentication server to begin authorization. The system looks for details about your authentication server at the following URL:
 
@@ -107,11 +107,11 @@ When the system makes subsequent calls to your web server for app licenses, app 
 
 > **Note**: For more information on implementing an authentication service, such as generating the tokens, refer to OAuth 2.0 Authorization Framework Specification, [IETF RFC 6749](https://datatracker.ietf.org/doc/html/rfc6749). All communication between your server and device needs to occur over TLS.
 
-#### Retrieve a license for the app from your web server
+## Retrieve a license for the app from your web server
 
 If your website doesn’t require authentication or the device is already successfully authorized to act on behalf of the page visitor, the system requests an app license from your web server. To process license requests, your web server implements an endpoint that serves generated licenses by using [App License Delivery SDK](../AppLicenseDeliverySDK/AppLicenseDeliverySDK.md).
 
-#### Serve a restore request
+## Serve a restore request
 
 When your server responds with a license, the system requests to download your app. Your web server needs to provide a JSON file at the following URL:
 

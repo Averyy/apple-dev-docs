@@ -33,7 +33,7 @@ var contact: CNContact { get }
 @property (atomic, copy, readonly) CNContact * contact;
 ```
 
-#### Discussion
+## Discussion
 
 This property is used for properties that may or may not be in labeled arrays.
 

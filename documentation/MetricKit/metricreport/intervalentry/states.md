@@ -22,7 +22,7 @@ let states: [MetricManager.ReportedState]
 
 - [Monitoring app performance with MetricKit](../../monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 This array contains all the StateReporting states that occurred within the interval. The array may be empty if no StateReporting context was active during the interval.
 

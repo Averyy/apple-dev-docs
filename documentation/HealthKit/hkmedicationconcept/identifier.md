@@ -25,7 +25,7 @@ var identifier: HKHealthConceptIdentifier { get }
 @property (nonatomic, copy, readonly) HKHealthConceptIdentifier * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Each concept has one stable identifier that stays the same across devices. You can use this identifier to directly compare medications, for example, to check whether two objects represent the same medication.
 

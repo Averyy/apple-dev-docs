@@ -20,11 +20,11 @@ Configures the export session for resumable export.
 func configureForResumableExport() async -> AVAssetExportSession.ResumptionState
 ```
 
-#### Return Value
+## Return Value
 
 A `ResumptionState` indicating whether resumption is available and whether the export will resume from a previous state.
 
-#### Discussion
+## Discussion
 
 This method validates that the export session’s current configuration supports resumption and checks the temporary directory for any partial results from previous export attempts.
 

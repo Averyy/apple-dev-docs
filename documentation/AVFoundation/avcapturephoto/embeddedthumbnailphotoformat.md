@@ -22,7 +22,7 @@ var embeddedThumbnailPhotoFormat: [String : Any]? { get }
 @property (readonly, nullable) NSDictionary<NSString *,id> * embeddedThumbnailPhotoFormat;
 ```
 
-#### Discussion
+## Discussion
 
 See [Video settings](../video-settings.md) for possible keys and values.
 

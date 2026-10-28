@@ -23,7 +23,7 @@ protocol ContactResolver : Sendable
 
 - [Making your indexed content available to Foundation Models](./making-your-indexed-content-available-to-foundation-models.md)
 
-#### Overview
+## Overview
 
 When a search involves people, the search tool needs to know how to resolve references to “I” or “me” in any conversations. Implement this protocol in a custom type and assign it to the Spotlight search tool you use with your Foundation models session. Your custom type returns a [`ResolvedContact`](./resolvedcontact.md) structure, which contains any information your app uses to refer to the person. For example, fill the structure with name information, email addresses, or phone numbers from the account your app manages.
 

@@ -5,13 +5,13 @@
 
 Manage keys you use to sign JSON web tokens and connect marketplaces with apps.
 
-#### Overview
+## Overview
 
 Use alternative distribution keys to establish an alternative marketplace. To create an alternative distribution key, you must have an existing alternative marketplace app in App Store Connect. If a marketplace app doesn’t already exist, see [Create a marketplace app](https://developer.apple.com/help/app-store-connect/distributing-apps-in-the-european-union/create-an-marketplace-app) before continuing.
 
 After you create these keys, generate JSON web tokens (JWTs) to connect your marketplace to the apps it distributes. Unlike the auth tokens referenced in [Generating Tokens for API Requests](./generating-tokens-for-api-requests.md), this JWT — the marketplace token — is specifically created by your marketplace and shared with the app developer to upload to App Store Connect.
 
-##### Generate your private key
+### Generate your private key
 
 App Store Connect uses a private cryptographic key to generate a signature for each app that your alternative marketplace distributes. During registration, marketplace apps create a public-private key pair, and send the public key to App Store Connect. The private key you create uses an Elliptic Curve Digital Signature Algorithm (ECDSA) with the P-256 curve and the SHA-256 hash algorithm.
 
@@ -25,7 +25,7 @@ This command creates the file `private_key.pem`, which contains your private key
 
 > ❗ **Important**:  Secure your private keys as you do other credentials, such as passwords. Don’t share your private keys, store keys in a code repository, or include keys in client-side code. Share only your public key.
 
-##### Generate your public key
+### Generate your public key
 
 Next, you create a public key from the private key you created in the previous section. The public key is a PEM-encoded PKCS#8 EC key that uses the P-256 curve. In Terminal, enter the following command:
 
@@ -35,7 +35,7 @@ openssl ec -in private_key.pem -pubout > public_key.pem
 
 This command creates the file `public_key.pem`, which contains your public key. Run this command any time to generate a copy of your public key file. To request your existing public key from App Store Connect, see [`Read an App’s Alternative Distribution Key`](./get-v1-apps-_id_-alternativedistributionkey.md).
 
-##### Create an alternative distribution key
+### Create an alternative distribution key
 
 Next, upload your public key to App Store Connect using the endpoint described in [`Add an Alternative Distribution Key`](./post-v1-alternativedistributionkeys.md).
 
@@ -63,13 +63,13 @@ POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys
 }
 ```
 
-##### Obtain Developer ID
+### Obtain Developer ID
 
 When developers request to distribute their app on your marketplace, you give them a JWT that’s signed with the private key you created earlier. They upload the JWT to App Store Connect, which uses your public key to verify that the token signature is authentic and creates the relationship to your app marketplace.
 
 Ask the app developer for their Developer ID, to learn more, see [Manage distribution on an alternative app marketplace](https://developer.apple.com/help/app-store-connect/distributing-apps-in-the-european-union/manage-distribution-on-an-alternative-app-marketplace).
 
-##### Create the JSON web token
+### Create the JSON web token
 
 Generate the marketplace token after creating the alternative distribution key and receiving the Developer ID from the app developer. To generate a signed JWT:
 
@@ -94,7 +94,7 @@ The JWT payload contains information specific to the App Store Connect APIs, suc
 | `aud` | The *audience* registered claim identifies the intended recipient of the token. Because the token is for App Store Connect APIs, use `appstoreconnect-v1` as the audience. |
 | `pid` | The *principal developer identifier* registered claim identifies the user (or “Holder”) of the token. Because the user of the token is the alternative distribution app developer, use the app’s Developer ID, as a `String`. |
 
-##### Sign the token and share it with the app developer
+### Sign the token and share it with the app developer
 
 After creating the JWT, sign it with the private key you created earlier using ECDSA with the P-256 curve and the SHA-256 hash algorithm. A decoded token has the following format:
 

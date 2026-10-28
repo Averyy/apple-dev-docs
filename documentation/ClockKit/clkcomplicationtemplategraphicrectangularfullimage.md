@@ -21,7 +21,7 @@ class CLKComplicationTemplateGraphicRectangularFullImage
 @interface CLKComplicationTemplateGraphicRectangularFullImage : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicRectangular`](./clkcomplicationfamily/graphicrectangular.md) family.
 

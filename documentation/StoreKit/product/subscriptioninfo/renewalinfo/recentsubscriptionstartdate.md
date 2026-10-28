@@ -22,7 +22,7 @@ The earliest start date of a subscription in a series of auto-renewable subscrip
 var recentSubscriptionStartDate: Date { get }
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Don’t use the [`recentSubscriptionStartDate`](./recentsubscriptionstartdate.md) date to calculate days of paid service. For more information about paid days of service, see [Net revenue after a year](https://developer.apple.com/app-store/subscriptions/#revenue-after-one-year).
 

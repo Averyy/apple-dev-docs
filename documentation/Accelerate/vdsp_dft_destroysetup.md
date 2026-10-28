@@ -21,7 +21,7 @@ Releases a single-precision setup structure.
 void vDSP_DFT_DestroySetup(vDSP_DFT_Setup __Setup);
 ```
 
-#### Discussion
+## Discussion
 
 Destroying a setup with shared data is safe; this function only releases memory that’s not needed by other undestroyed setups.
 

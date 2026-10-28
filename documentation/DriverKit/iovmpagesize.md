@@ -18,7 +18,7 @@ The number of bytes in a virtual memory page.
 extern uint64_t IOVMPageSize;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant in places where you want to specify the size of a virtual memory page.
 

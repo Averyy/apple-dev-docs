@@ -17,7 +17,7 @@ static var secondary: NSBox.BoxType { get }
 static const NSBoxType NSBoxSecondary;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the secondary box appearance.
 

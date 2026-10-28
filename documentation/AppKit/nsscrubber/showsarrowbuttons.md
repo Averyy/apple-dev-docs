@@ -19,7 +19,7 @@ var showsArrowButtons: Bool { get set }
 @property BOOL showsArrowButtons;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

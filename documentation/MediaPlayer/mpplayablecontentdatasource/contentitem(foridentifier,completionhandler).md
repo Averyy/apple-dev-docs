@@ -28,7 +28,7 @@ optional func contentItem(forIdentifier identifier: String) async throws -> MPCo
 - (void) contentItemForIdentifier:(NSString *) identifier completionHandler:(void (^)(MPContentItem *, NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Client apps should always call the completion handler after loading has finished.
 

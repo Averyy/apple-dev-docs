@@ -4,11 +4,11 @@
 
 Create a basic article and then add advanced design features.
 
-#### Overview
+## Overview
 
 In these tutorials, you’ll download `article.json` files and follow steps to add code. Preview your changes in News Preview as you go. If you are not familiar with JSON or Apple News Format, see [JSON Concepts and Article Structure](./json-concepts-and-article-structure.md) before you get started.
 
-##### Requirements
+### Requirements
 
 Before beginning the tutorial, make sure you have the following installed:
 

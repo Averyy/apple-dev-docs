@@ -25,11 +25,11 @@ func makeTexture(descriptor: MTLTextureDescriptor, offset: Int) -> (any MTLTextu
 - (id<MTLTexture>) newTextureWithDescriptor:(MTLTextureDescriptor *) descriptor offset:(NSUInteger) offset;
 ```
 
-#### Return Value
+## Return Value
 
 A new texture, or `nil` if the heap is not a placement heap.
 
-#### Discussion
+## Discussion
 
 You can call the method with the following restrictions:
 

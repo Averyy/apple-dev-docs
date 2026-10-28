@@ -2970,8 +2970,13 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://developer.apple.com/documentation/foundation/nsbundle",
+      "https://developer.apple.com/documentation/swiftui/fruta_building_a_feature-rich_app_with_swiftui",
+      "https://developer.apple.com/documentation/xcode/Print-pipeline-UIDs"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 742
   }

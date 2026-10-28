@@ -21,7 +21,7 @@ The promotional image, if the loading task is successful.
 var promotionalIcon: Image? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` while the image is loading, or if the system can’t access the promotional image for any reason. Use this value as a convenience to access the image in code that doesn’t depend on the reason an image may not be accessible.
 

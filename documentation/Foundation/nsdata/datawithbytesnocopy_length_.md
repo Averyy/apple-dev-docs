@@ -21,7 +21,7 @@ Creates a data object that holds a given number of bytes from a given buffer.
 + (instancetype) dataWithBytesNoCopy:(void *) bytes length:(NSUInteger) length;
 ```
 
-#### Discussion
+## Discussion
 
 The returned object takes ownership of the `bytes` pointer and frees it on deallocation. Therefore, `bytes` must point to a memory block allocated with `malloc`.
 

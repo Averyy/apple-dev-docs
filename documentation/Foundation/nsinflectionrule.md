@@ -21,7 +21,7 @@ A rule that affects how an attributed string performs automatic grammatical agre
 @interface NSInflectionRule : NSObject
 ```
 
-#### Overview
+## Overview
 
 Most apps can rely on loading localized strings to perform automatic grammar agreement. Typically, your app’s strings files use the Markdown extension syntax to indicate portions of the string that may require inflection to agree grammatically. This transformation occurs when you load the attributed string with methods like `NSLocalizedAttributedString`.
 

@@ -5,7 +5,7 @@
 
 Create a banner to promote your app on the App Store from a website.
 
-#### Overview
+## Overview
 
 Smart App Banners vastly improve users’ browsing experience compared to other promotional methods. In iOS, Smart App Banners  provide a consistent look and feel that users come to recognize. They trust that tapping the banner will take them to the App Store and not a third-party advertisement. They appreciate unobtrusive banners at the top of a webpage, instead of a full screen that interrupts their experience with the web content. And with a large and prominent Close button, a banner is easy to dismiss. When the user returns to the webpage, the banner doesn’t reappear.
 
@@ -17,7 +17,7 @@ If the app is already installed on a user’s device, the Smart App Banner intel
 
 Smart App Banners automatically determine whether the user’s device supports your app. If it doesn’t, or if your app is unavailable in the user’s location, the banner doesn’t appear.
 
-##### Implement a Smart App Banner on Your Website
+### Implement a Smart App Banner on Your Website
 
 To add a Smart App Banner to your website, include the following meta tag in the `head` element of each page where you’d like the banner to appear:
 
@@ -40,7 +40,7 @@ You can generate the `app-argument` parameter for each page dynamically with a s
 
 > **Note**:  You can’t display Smart App Banners inside a frame. Banners don’t appear in the iOS simulator.
 
-##### Provide Navigational Context to Your App
+### Provide Navigational Context to Your App
 
 Implement the [`application(_:open:sourceApplication:annotation:)`](../UIKit/uiapplicationdelegate/application%28_,open,sourceapplication,annotation%29.md): method in your app delegate, which fires when your app is launched from a URL. Then provide logic that can interpret the URL you pass. The value you set for the `app-argument` parameter is available as the [`NSURL`](../Foundation/nsurl.md) [`url`](../Foundation/nsurlcomponents/url.md) object.
 

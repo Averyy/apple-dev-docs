@@ -19,7 +19,7 @@ var titlebar: UITitlebar? { get }
 @property (nonatomic, readonly, nullable) UITitlebar * titlebar;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to configure the title bar displayed across the top of a window in your Mac app built with Mac Catalyst.
 

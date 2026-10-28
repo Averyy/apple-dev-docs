@@ -27,7 +27,7 @@ convenience init(from mesh: MeshResource) throws
 convenience init(from descriptors: [MeshDescriptor]) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to convert visual or physics geometry you already have into acoustic geometry, without duplicating the data:
 

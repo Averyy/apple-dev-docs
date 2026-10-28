@@ -41,7 +41,7 @@ static SCNVector3 SCNVector3Make(float x, float y, float z);
 static SCNVector3 SCNVector3Make(CGFloat x, CGFloat y, CGFloat z);
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`SCNVector3`](./scnvector3.md) structure.
 

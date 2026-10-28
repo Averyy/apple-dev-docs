@@ -23,7 +23,7 @@ var previousIndexPathsForInteractivelyMovingItems: [IndexPath]? { get }
 @property (nonatomic, copy, readonly, nullable) NSArray<NSIndexPath *> * previousIndexPathsForInteractivelyMovingItems;
 ```
 
-#### Discussion
+## Discussion
 
 This property is filled when an interactive move is in progress or has just ended. Use this property together with the [`targetIndexPathsForInteractivelyMovingItems`](./targetindexpathsforinteractivelymovingitems.md) property to determine what changes you need to make to the affected items. For most other updates, the value of this property is `nil`.
 

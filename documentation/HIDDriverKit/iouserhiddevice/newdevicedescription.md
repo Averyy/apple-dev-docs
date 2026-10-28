@@ -16,11 +16,11 @@ Creates and returns a new dictionary that describes the HID device.
 virtual OSDictionary * newDeviceDescription();
 ```
 
-#### Return Value
+## Return Value
 
 An `OSDictionary` that describes the device.
 
-#### Discussion
+## Discussion
 
 Override this method and return a dictionary of key-value pairs that describe the device. The supported keys are:
 

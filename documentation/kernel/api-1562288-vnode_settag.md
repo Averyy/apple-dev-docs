@@ -15,11 +15,11 @@ Set a vnode filesystem-specific "tag."
 void vnode_settag(vnode_t vp, int tag);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 Sets a tag indicating which filesystem a vnode belongs to, e.g. VT_HFS, VT_UDF, VT_ZFS. The kernel never inspects this data, though the filesystem tags are defined in vnode.h; it is for the benefit of user programs via getattrlist.
 

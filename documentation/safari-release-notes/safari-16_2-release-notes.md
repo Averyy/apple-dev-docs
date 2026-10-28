@@ -5,20 +5,20 @@
 
 Released December 13, 2022 — Version 16.2 (18614.3.7)
 
-#### Overview
+## Overview
 
 Safari 16.2 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadOS 16.2, and iOS 16.2.
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added support for additional values for the  `font-variant-alternates` property: `annotation(value-name)`, `character-variant(value-name)`, `ornaments(value-name)`, `styleset(value-name)`, `stylistic(value-name)`, `swash(value-name)`, along with the associated `@font-feature-values` at-rule.
 - Added support for `last baseline` alignment for Flexbox and Grid.
 - Added support for `color-mix()`.
 - Added support for Gradient Interpolation Color Spaces.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed backgrounds with a `fixed` attachment to behave like `scroll` inside transformed elements.
 - Fixed calculating inline `min-content` size to include the `aspect-ratio` and add the `min-content` block computation.
@@ -39,9 +39,9 @@ Safari 16.2 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed `font-variant` shorthand parsing to allow the `font-variant-east-asian` property in any position.
 - Fixed scroll snapping on a date input with `scroll-margin` applied.
 
-##### Rendering
+### Rendering
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed applying `lineWidth` and `strokeStyle` when drawing on .
 - Fixed `contain: content` breaking scrolling when applied to the body.
@@ -50,21 +50,21 @@ Safari 16.2 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed applying transforms to table sections: `tbody`, `thead`, and `tfoot`.
 - Fixed: transform changes recompute overflow.
 
-##### Media
+### Media
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed updating MediaSessionInfo for a media element when a `srcObject` is used.
 
-##### Web API
+### Web API
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed SharedWorker to honor `Upgrade-Insecure-Request`.
 
-##### WebDriver
+### WebDriver
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Element Click command failing on iOS.
 - Fixed: Enabled `touch` pointer input source subtype on iOS.

@@ -24,7 +24,7 @@ var preferredVolume: Float { get set }
 @property (nonatomic) float preferredVolume;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for audio data is `1.0`, which indicates typical playback level. Set the value for this property in the range of `0.0` to `1.0`. For nonaudio media, the default value is `0.0`.
 

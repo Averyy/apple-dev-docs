@@ -25,7 +25,7 @@ func CGPDFScannerPopName(_ scanner: CGPDFScannerRef, _ value: UnsafeMutablePoint
 extern bool CGPDFScannerPopName(CGPDFScannerRef scanner, const char **value);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the string is retrieved successfully; otherwise, [`false`](../Swift/false.md).
 

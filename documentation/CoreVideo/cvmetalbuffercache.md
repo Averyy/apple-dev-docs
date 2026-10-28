@@ -24,7 +24,7 @@ class CVMetalBufferCache
 typedef struct __CVMetalBufferCache * CVMetalBufferCacheRef;
 ```
 
-#### Overview
+## Overview
 
 A Core Video Metal buffer cache creates and manages [`CVMetalBuffer`](./cvmetalbuffer.md) buffers. You use a Metal buffer cache to directly read from or write to GPU-based Core Video image buffers in rendering, or for sharing data with Metal kernels.
 

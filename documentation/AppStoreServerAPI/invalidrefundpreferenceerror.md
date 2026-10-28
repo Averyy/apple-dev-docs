@@ -15,7 +15,7 @@ An error that indicates an invalid refund preference value.
 object InvalidRefundPreferenceError
 ```
 
-#### Discussion
+## Discussion
 
 This error applies to the [`refundPreference`](./refundpreference.md) value you provide in a [`ConsumptionRequest`](./consumptionrequest.md), or the [`refundPreferenceV1`](./refundpreferencev1.md) value in a [`ConsumptionRequestV1`](./consumptionrequestv1.md).
 

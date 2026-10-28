@@ -25,7 +25,7 @@ func copy(withVariations variations: CFDictionary?) -> CGFont?
 extern CGFontRefCGFontCreateCopyWithVariations(CGFontRef font, CFDictionaryRef variations);
 ```
 
-#### Return Value
+## Return Value
 
 The font object.
 

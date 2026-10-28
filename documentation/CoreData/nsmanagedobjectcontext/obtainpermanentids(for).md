@@ -25,13 +25,13 @@ func obtainPermanentIDs(for objects: [NSManagedObject]) throws
 - (BOOL) obtainPermanentIDsForObjects:(NSArray<NSManagedObject *> *) objects error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method converts the object ID of each managed object in `objects` to a permanent ID. Although the object will have a permanent ID, it will still respond positively to [`isInserted`](../nsmanagedobject/isinserted.md) until it is saved. Any object that already has a permanent ID is ignored.
 
 Any object not already assigned to a store is assigned based on the same rules Core Data uses for assignment during a save operation (first writable store supporting the entity, and appropriate for the instance and its related items).
 
-##### Special Considerations
+### Special Considerations
 
 This method results in a transaction with the underlying store which changes the file’s modification date.
 

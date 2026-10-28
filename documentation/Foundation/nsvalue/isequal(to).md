@@ -25,11 +25,11 @@ func isEqual(to value: NSValue) -> Bool
 - (BOOL) isEqualToValue:(NSValue *) value;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if both value objects are equal; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The [`NSValue`](../nsvalue.md) class compares the type and contents of each value object to determine equality.
 

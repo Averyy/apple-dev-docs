@@ -29,7 +29,7 @@ typedef vImage_AffineTransform_Double vImage_CGAffineTransform;
 
 - [Applying geometric transforms to images](./applying-geometric-transforms-to-images.md)
 
-#### Discussion
+## Discussion
 
 This structure represents the 3x2 matrix :
 

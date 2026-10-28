@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_MPROTECT: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_MPROTECT
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`mprotect`](./es_events_t/mprotect.md), which has the type [`es_event_mprotect_t`](./es_event_mprotect_t.md).
 

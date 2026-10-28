@@ -22,7 +22,7 @@ A type-erased instance of the layout protocol.
 struct AnyLayout
 ```
 
-#### Overview
+## Overview
 
 Use an `AnyLayout` instance to enable dynamically changing the type of a layout container without destroying the state of the subviews. For example, you can create a layout that changes between horizontal and vertical layouts based on the current Dynamic Type setting:
 

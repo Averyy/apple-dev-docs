@@ -8,11 +8,11 @@ Query impression share and search term popularity data for your apps.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 To look deeply into performance across your campaign group and identify growth opportunities, use the search term popularity and impression share APIs. Both endpoints apply only to App Store app campaigns (`promotedObjectType` `APPSTORE_APP`). Apple Maps (`BUSINESS_BRAND`) campaigns have no Insights equivalent.
 
-#### Query the Available Endpoints
+## Query the Available Endpoints
 
 Query the following endpoints to retrieve insights data:
 
@@ -21,7 +21,7 @@ Query the following endpoints to retrieve insights data:
 | `POST` | `/v1/insights/apps/impression-share/query` | Retrieves impression share data for the specified keywords and time range. See [`Impression Share Query`](./query-app-impression-share-data.md). |
 | `POST` | `/v1/insights/apps/search-term-popularity/query` | Retrieves search term popularity rankings by App Store country or region and genre. See [`Search Term Popularity Query`](./query-app-search-term-popularity-data.md). |
 
-##### Measure Impression Share
+### Measure Impression Share
 
 Impression share reports measure your share of available impressions relative to competitors for a given set of keywords or app categories. The report shows how often your ad appeared in any ad position for a specific search term, out of the total number of searches on that search term, in the same App Store country or region. Use impression share data to understand how competitive you are on a given search term and how much headroom exists to increase reach.
 
@@ -48,7 +48,7 @@ The `lowImpressionShare` and `highImpressionShare` fields use single-digit preci
 
 Each row also returns `rank` (the app’s stack-ranked position by impression share for that search term and country, `1` = highest) and `searchPopularity1to5` (relative search volume for the term, `5` = most popular).
 
-##### Discover Search Term Popularity
+### Discover Search Term Popularity
 
 Search term popularity reports show the relative ranking of search terms by volume within a given App Store country or region and genre. Use search term popularity data to discover high-volume search terms, understand seasonal trends, and prioritize keyword additions.
 

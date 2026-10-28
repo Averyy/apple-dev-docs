@@ -16,11 +16,11 @@ Sets the active protocol to use for communicating with the USB device.
 virtual kern_return_t setProtocol(uint16_t protocol);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 At startup, the [`Start`](./start.md) method sets the protocol to the report protocol.
 

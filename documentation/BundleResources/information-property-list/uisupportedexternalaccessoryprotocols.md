@@ -15,7 +15,7 @@ The protocols that the app uses to communicate with external accessory hardware.
 - **Name**: `UISupportedExternalAccessoryProtocols` (Supported external accessory protocols)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 Add this key to your app’s `Info.plist` file, and set the value to the names of the hardware protocols your app supports. You format protocol names as reverse-DNS strings. For example, the string “`com.apple.myProtocol`” might represent a custom protocol that Apple defines. Manufacturers can define custom protocols for their accessories or work with other manufacturers and organizations to define standard protocols for different accessory types.
 

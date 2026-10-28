@@ -21,7 +21,7 @@ weak var sessionProvider: (any ARSessionProviding)? { get set }
 @property (nonatomic, weak, nullable) NSObject<ARSessionProviding> * sessionProvider;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to set the coaching overlay’s [`session`](./session.md) when loading from a storyboard. If you set this property at runtime, the coaching overlay keeps its [`session`](./session.md) property up to date for you. If your app recreates its [`ARSession`](../arsession.md) at any point, you may find it convienient to set the [`sessionProvider`](./sessionprovider.md) once rather than update the coaching overlay’s [`session`](./session.md) manually.
 

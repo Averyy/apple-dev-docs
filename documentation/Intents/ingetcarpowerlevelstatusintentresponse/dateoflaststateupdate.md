@@ -31,7 +31,7 @@ var dateOfLastStateUpdate: DateComponents? { get set }
 @property (atomic, copy, readwrite, nullable) NSDateComponents * dateOfLastStateUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 When creating a response object, you must set this property to the date and time when the system captured the charge status for the electric vehicle.
 

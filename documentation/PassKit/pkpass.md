@@ -24,7 +24,7 @@ class PKPass
 @interface PKPass : PKObject
 ```
 
-#### Overview
+## Overview
 
 The properties of this class correspond to fields of the pass. For details about what individual fields mean, see [`Pass`](../WalletPasses/pass.md).
 

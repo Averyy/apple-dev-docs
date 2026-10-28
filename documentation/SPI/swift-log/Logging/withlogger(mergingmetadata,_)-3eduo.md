@@ -22,15 +22,15 @@ Runs `operation` with a copy of [`current`](./logger/current.md) that has `metad
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func withLogger<Result, Failure>(mergingMetadata metadata: @autoclosure () -> Logger.Metadata, _ operation: nonisolated(nonsending)) async throws(Failure) -> Result where Failure : Error
+nonisolated(nonsending)
+func withLogger<Result, Failure>(mergingMetadata metadata: @autoclosure () -> Logger.Metadata, _ operation: nonisolated(nonsending)) async throws(Failure) -> Result where Failure : Error
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by `operation`.
 
-#### Discussion
+## Discussion
 
 Use this overload at request boundaries and any point where context should accumulate. Nested [`withLogger(mergingMetadata:_:)`](./withlogger%28mergingmetadata,_%29-3eduo.md) scopes layer on top of each other.
 

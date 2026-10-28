@@ -19,7 +19,7 @@ var soundName: SRAcousticSettings.Accessibility.BackgroundSounds.Name { get }
 @property (nonatomic, assign, readonly) SRAcousticSettingsAccessibilityBackgroundSoundsName soundName;
 ```
 
-#### Discussion
+## Discussion
 
 Accessibility Background sounds name
 

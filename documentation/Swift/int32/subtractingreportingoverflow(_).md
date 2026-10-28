@@ -21,7 +21,7 @@ Returns the difference obtained by subtracting the given value from this value, 
 func subtractingReportingOverflow(_ other: Int32) -> (partialValue: Int32, overflow: Bool)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the result of the subtraction along with a Boolean value indicating whether overflow occurred. If the `overflow` component is `false`, the `partialValue` component contains the entire difference. If the `overflow` component is `true`, an overflow occurred and the `partialValue` component contains the truncated result of `rhs` subtracted from this value.
 

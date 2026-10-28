@@ -29,7 +29,7 @@ protocol GKInviteEventListener
 
 - [Finding multiple players for a game](./finding-multiple-players-for-a-game.md)
 
-#### Overview
+## Overview
 
 Implement the methods in the [`GKInviteEventListener`](./gkinviteeventlistener.md) protocol to accept invitations from other players or handle when other players accept invitations from the local player.
 

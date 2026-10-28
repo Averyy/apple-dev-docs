@@ -21,7 +21,7 @@ let NFCISO15693TagResponseErrorKey: String
 extern NSString * const NFCISO15693TagResponseErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 Check for the presence of this key in the [`userInfo`](../Foundation/nserror/userinfo.md) dictionary of an [`NSError`](../Foundation/nserror.md) object to determine whether a tag responded with a command error. When a command error occurs, the [`code`](../Foundation/nserror/code.md) property contains an error code defined in the ISO15693-3 specification.
 

@@ -24,7 +24,7 @@ var kAudioFormatProperty_ChannelLayoutName: AudioFormatPropertyID { get }
 kAudioFormatProperty_ChannelLayoutName
 ```
 
-#### Discussion
+## Discussion
 
 The a name for a particular channel layout. Set the `inSpecifier` parameter to an [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) structure containing the layout description. The value is a `CFStringRef` object. The caller is responsible for releasing the returned string.
 

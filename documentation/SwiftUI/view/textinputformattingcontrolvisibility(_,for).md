@@ -22,7 +22,7 @@ nonisolated
 func textInputFormattingControlVisibility(_ visibility: Visibility, for placement: TextInputFormattingControlPlacement.Set) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 A [`TextEditor`](../texteditor.md) with a binding to an `AttributedString` offers built-in controls for formatting text. These controls appear in different placements depending on the platform. By default, `TextEditor` shows them in the context menu and in the keyboard toolbar on iOS. See [`TextInputFormattingControlPlacement.Set`](../textinputformattingcontrolplacement/set.md) for the available placements.
 

@@ -24,7 +24,7 @@ var kExtAudioFileProperty_PacketTable: ExtAudioFilePropertyID { get }
 kExtAudioFileProperty_PacketTable
 ```
 
-#### Discussion
+## Discussion
 
 By setting this property with a nonnegative number (which may be the value `0`), you override the corresponding settings for the values contained in the file. If you use a value of `-1` for either the priming or remainder frames, the extended audio file object uses the corresponding value stored in the file.
 

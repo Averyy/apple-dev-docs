@@ -15,7 +15,7 @@ The type of the descriptor.
 uint8_t bDescriptorType;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible values, see [`tIOUSBDescriptorType`](../../iokit/tiousbdescriptortype.md).
 

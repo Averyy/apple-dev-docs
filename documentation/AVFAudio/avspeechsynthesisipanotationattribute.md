@@ -25,7 +25,7 @@ let AVSpeechSynthesisIPANotationAttribute: String
 extern NSString * const AVSpeechSynthesisIPANotationAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the speech synthesizer uses an `AVSpeechSynthesisIPANotationAttribute` instance to control pronunciation of a proper name.
 

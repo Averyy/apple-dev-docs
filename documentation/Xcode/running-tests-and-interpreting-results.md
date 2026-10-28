@@ -5,7 +5,7 @@
 
 Determine whether your project’s code behaves as you expect by running tests and understanding the results.
 
-#### Overview
+## Overview
 
 At different points in the software development workflow you’ll want to run subsets of your tests:
 
@@ -13,7 +13,7 @@ At different points in the software development workflow you’ll want to run su
 - When your change is ready for code review or integration, running all of the tests for the affected target can uncover any unexpected regressions.
 - Finally, Xcode Cloud can run a complete set of tests with multiple configurations on a schedule, providing greater confidence in the correctness of your code while managing the increased execution time required for completing so many tests.
 
-#### Run tests from a test plan
+## Run tests from a test plan
 
 To run all the tests in the active test plan, you have two options: you can run them in Xcode (choose Product > Test), or you can run the `xcodebuild` command in Terminal:
 
@@ -23,7 +23,7 @@ To run all the tests in the active test plan, you have two options: you can run 
 
 Configure which tests the test runner runs when you perform this action by editing the test plan for your Xcode target’s scheme. For more information, see [Customizing the build schemes for a project](./customizing-the-build-schemes-for-a-project.md). If your build scheme includes more than one test plan, choose Product > Test Plan to select a test plan to run. View the active plan under the Test navigator, choose View > Navigators > Tests. When you select a different test plan or a different build scheme, the Test navigator updates to display that plan. Expand the outline view for the plan to see the targets, suites, test functions, and parameterized test cases it includes. Items you disable or mark to be skipped appear dimmed.
 
-#### Interpret test results
+## Interpret test results
 
 After your test run, Xcode displays a status icon in the Test navigator next to the test plan and next to each item in its outline view.
 
@@ -52,7 +52,7 @@ Tests functions you write with Swift Testing capture the state of variables you 
 
 ![The source editor display the implementation for a test with a  red-filled rounded diamond-shaped icon that contains an ex in the gutter and a debug message to the right. Arguments for the parameterized function is expanded to show the current videoName argument is Scotland Coast. The debug messages associated with the failure for this argument indicates that the video in the video library with that name is nil. ](https://developer.apple.com/tutorials/images/com.apple.Xcode/running-tests-and-interpreting-results-debug-expanded-gap-arguments@2x.png)
 
-#### Access additional information in the test report
+## Access additional information in the test report
 
 Each test run produces a test report. Locate these reports in Xcode in the Report navigator by choosing View > Navigators > Reports, then select the Test action under your build scheme name.
 
@@ -68,7 +68,7 @@ Further information can be found under the additional sections of the report:
 
 When you run tests with `xcodebuild` in Terminal, the command outputs an Xcode Test Results (`.xcresults`) bundle that contains session results, code coverage (if enabled), and other logs. You can open this file in Xcode to view or share it with other members of your development team.
 
-#### Run a single test function
+## Run a single test function
 
 Navigate to the Swift file that contains the test function you want to run in Xcode. Move the pointer over the diamond icon alongside the function declaration in the editor gutter, and click the gray play icon:
 
@@ -86,7 +86,7 @@ To run a single test function in Terminal, run `xcodebuild` by giving the test f
 % xcodebuild test -scheme SampleApp -only-testing SampleAppTests/SampleAppTests/testEmptyArrayWhenNoOverlappingNotes
 ```
 
-#### Run a parameterized test function with a specific input
+## Run a parameterized test function with a specific input
 
 Clicking the play icon next to the parameterized test function runs all test cases for that test. To select a specific test case to run, click the expansion arrow before the test function name in the Test navigator, move the pointer over the diamond icon alongside the specific test case, then click the gray play icon.
 
@@ -94,7 +94,7 @@ Clicking the play icon next to the parameterized test function runs all test cas
 
 When you pass one or more collections to a `@Test` macro that supports parameterization, the macro generates a test case for each element or element pair. Each test case represents a unique set of input parameters that the test runner passes to the test function. If the test fails for one or more inputs, the corresponding diagnostics indicate which inputs to examine. Selecting the specific test case runs the test function with just the input for that case which is useful when debugging. For more information on implementing parameterized tests, see [Implementing parameterized tests](../Testing/parameterizedtesting.md).
 
-#### Run a group of the test functions
+## Run a group of the test functions
 
 To run test functions defined under a common type or suite, move the pointer over the diamond icon alongside the type’s declaration in the editor gutter, and click the gray play icon. In Swift Testing, a *test suite* is any type that includes the definition for one or more test functions.
 
@@ -116,13 +116,13 @@ To run the test functions in a test case in Terminal, run `xcodebuild` by giving
 % xcodebuild test -scheme SampleApp -only-testing SampleAppTests/SampleAppTests
 ```
 
-#### View and run tests by tag
+## View and run tests by tag
 
 In Swift Testing, you can use the  [`tags(_:)`](../Testing/trait/tags%28_%29.md) trait to annotate a group of related tests. These additional groups can be identified in the outline view under the Tags section of the Test navigator. Click the tag icon at the top of the Test navigator to view test functions organized by their tags. For more information about declaring tags and adding tags to tests, see [Adding tags to tests](../Testing/addingtags.md).
 
 To run all of the test functions associated with a tag or a single test function under the tag group, move the pointer over the tag or test function, then click the gray play icon.
 
-#### Run testing repeatedly to determine reliability
+## Run testing repeatedly to determine reliability
 
 Control-click the diamond icon next to a test function or test suite type and select “Run ** Repeatedly”. In the panel that appears, choose when to stop running the test. Options include:
 

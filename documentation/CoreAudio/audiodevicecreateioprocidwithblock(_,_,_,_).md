@@ -20,11 +20,11 @@ func AudioDeviceCreateIOProcIDWithBlock(_ outIOProcID: UnsafeMutablePointer<Audi
 extern OSStatus AudioDeviceCreateIOProcIDWithBlock(AudioDeviceIOProcID*outIOProcID, AudioObjectID inDevice, dispatch_queue_t inDispatchQueue, AudioDeviceIOBlock inIOBlock);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Creates an AudioDeviceIOProcID from an AudioDeviceIOBlock
 

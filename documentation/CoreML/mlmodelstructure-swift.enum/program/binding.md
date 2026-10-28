@@ -21,7 +21,7 @@ An enum representing a binding.
 enum Binding
 ```
 
-#### Overview
+## Overview
 
 A Binding  is either a previously defined name of a variable or a constant value in the Program.
 

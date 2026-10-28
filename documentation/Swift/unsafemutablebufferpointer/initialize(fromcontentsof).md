@@ -21,11 +21,11 @@ Initializes the buffer’s memory with every element of the source.
 func initialize(fromContentsOf source: some Collection<Element>) -> UnsafeMutableBufferPointer<Element>.Index
 ```
 
-#### Return Value
+## Return Value
 
 The index one past the last element of the buffer initialized by this function.
 
-#### Discussion
+## Discussion
 
 Prior to calling the `initialize(fromContentsOf:)` method on a buffer, the memory referenced by the buffer must be uninitialized, or the `Element` type must be a trivial type. After the call, the memory referenced by the buffer up to, but not including, the returned index is initialized. The buffer must reference enough memory to accommodate `source.count` elements.
 

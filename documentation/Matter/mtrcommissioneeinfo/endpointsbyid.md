@@ -25,7 +25,7 @@ var endpointsById: [NSNumber : MTREndpointInfo]? { get }
 @property (nonatomic, copy, readonly, nullable) NSDictionary<NSNumber *,MTREndpointInfo *> * endpointsById;
 ```
 
-#### Discussion
+## Discussion
 
 Use `rootEndpoint` and `-[MTREndpointInfo children]` to traverse endpoints in composition order.
 

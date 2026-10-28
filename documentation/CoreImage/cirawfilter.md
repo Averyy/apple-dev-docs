@@ -24,7 +24,7 @@ class CIRAWFilter
 @interface CIRAWFilter : CIFilter
 ```
 
-#### Overview
+## Overview
 
 Use this class to generate a [`CIImage`](./ciimage.md) object based on the configuration parameters you provide.
 

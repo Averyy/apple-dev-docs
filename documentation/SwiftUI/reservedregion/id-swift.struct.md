@@ -21,7 +21,7 @@ An identifier for a reserved region.
 struct ID
 ```
 
-#### Overview
+## Overview
 
 Compare identifiers to find out whether two values describe the same reserved region.
 

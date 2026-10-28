@@ -25,11 +25,11 @@ func CFStringCreateWithCString(_ alloc: CFAllocator!, _ cStr: UnsafePointer<CCha
 extern CFStringRefCFStringCreateWithCString(CFAllocatorRef alloc, const char *cStr, CFStringEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 An immutable string containing `cStr` (after stripping off the `NULL` terminating character), or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 A C string is a string of 8-bit characters terminated with an 8-bit `NULL`. Unichar and Unichar32 are not considered C strings.
 

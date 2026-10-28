@@ -20,7 +20,7 @@ func typeDescription(for projectType: PHProjectType) -> PHProjectTypeDescription
 - (PHProjectTypeDescription *) typeDescriptionForProjectType:(PHProjectType) projectType;
 ```
 
-#### Return Value
+## Return Value
 
 The [`PHProjectTypeDescription`](../phprojecttypedescription.md) for the given project type.  The returned description’s project type must match the given project type.
 

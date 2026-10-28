@@ -13,11 +13,11 @@
 errno_t sock_getpeername(socket_t so, struct sockaddr *peername, int peernamelen);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Retrieves the remote address of a connected socket. See 'man 2 getpeername'.
 

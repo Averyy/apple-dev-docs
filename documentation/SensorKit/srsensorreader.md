@@ -23,7 +23,7 @@ class SRSensorReader
 @interface SRSensorReader : NSObject
 ```
 
-#### Overview
+## Overview
 
 To acquire data from a particular sensor using a reader, an app creates an instance of this class using [`init(sensor:)`](./srsensorreader/init%28sensor%29.md) and passes in one sensor from the available options in `Sensors`.
 

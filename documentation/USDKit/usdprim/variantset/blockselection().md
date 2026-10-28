@@ -20,7 +20,7 @@ Blocks the variant selection by authoring an explicit empty value on the current
 func blockSelection() throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the selection cannot be blocked.
 

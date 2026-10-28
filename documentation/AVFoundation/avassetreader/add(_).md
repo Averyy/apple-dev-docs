@@ -26,7 +26,7 @@ func add(_ output: AVAssetReaderOutput)
 - (void) addOutput:(AVAssetReaderOutput *) output;
 ```
 
-#### Discussion
+## Discussion
 
 Add outputs to read from one or more tracks of an asset. You can only add outputs that retrieve media data from the asset that you associate with the asset reader.
 

@@ -20,7 +20,7 @@ var isSnapshot: Bool { get }
 @property (atomic, readonly, getter=isSnapshot) BOOL snapshot;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the racing wheel is a snapshot at a moment in time of a real device; otherwise, it’s an actual racing wheel.
 

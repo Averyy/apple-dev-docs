@@ -22,7 +22,7 @@ optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppabl
 - (void) textDroppableView:(UIView<UITextDroppable> *) textDroppableView willPerformDrop:(id<UITextDropRequest>) drop;
 ```
 
-#### Discussion
+## Discussion
 
 If you need to modify the drag items before the drop operation happens, provide the text view a [`pasteDelegate`](../uitextpasteconfigurationsupporting/pastedelegate.md) object that implements the [`paste(itemProviders:)`](../uipasteconfigurationsupporting/paste%28itemproviders%29.md) method. In the implementation, do the item conversion and paste the text.
 

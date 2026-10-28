@@ -19,7 +19,7 @@ Placement for commands that relate to importing and exporting data using formats
 static let importExport: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 Empty by default in macOS.
 

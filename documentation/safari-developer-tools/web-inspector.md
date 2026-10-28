@@ -5,13 +5,13 @@
 
 Use Web Inspector to inspect and debug your HTML, CSS, and JavaScript.
 
-#### Overview
+## Overview
 
 Web Inspector helps you inspect all the resources and activity on webpages, service workers, Mac and Home Screen web apps, and JavaScript running inside your applications, making development more efficient across Apple platforms. The clean, unified design puts each core function in a separate tab, which you can rearrange to fit your workflow.
 
 The most complete resource for Web Inspector is the [Web Inspector Reference](https://webkit.org/web-inspector/), and help links in Web Inspector itself can take you to help specific to the current part of the tools you are using.
 
-#### The Interface
+## The Interface
 
 Web Inspector is divided into multiple tabs, with navigation and details sidebars, a main content area, a console prompt at the bottom, and optionally a split console visible in every tab. Learn more about [Web Inspector’s interface](https://webkit.org/web-inspector/web-inspector-interface/) as well as how to quickly navigate Web Inspector with [keyboard shortcuts](https://webkit.org/web-inspector/keyboard-shortcuts/).
 

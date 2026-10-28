@@ -24,7 +24,7 @@ var pixelBuffer: CVPixelBuffer { get }
 @property (nonatomic, readonly) CVPixelBufferRef pixelBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 [`VNCoreMLRequest`](../vncoremlrequest.md) produces observations that contain images in pixel buffer format. The confidence level is always `1.0`.
 

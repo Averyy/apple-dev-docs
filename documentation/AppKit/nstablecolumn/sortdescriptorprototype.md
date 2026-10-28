@@ -20,7 +20,7 @@ var sortDescriptorPrototype: NSSortDescriptor? { get set }
 @property (copy, nullable) NSSortDescriptor * sortDescriptorPrototype;
 ```
 
-#### Discussion
+## Discussion
 
 A table column is considered sortable if it has a sort descriptor that specifies the sorting direction, a key to sort by, and a selector that defines how to sort.
 

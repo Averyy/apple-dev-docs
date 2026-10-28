@@ -18,7 +18,7 @@ An event object that the framework passes to the events sequence in the monitor.
 struct Event
 ```
 
-#### Overview
+## Overview
 
 The framework delivers these events to an asynchronous sequence in the monitor that your app processes.
 

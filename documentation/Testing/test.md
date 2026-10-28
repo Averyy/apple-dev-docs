@@ -23,7 +23,7 @@ A type representing a test or suite.
 struct Test
 ```
 
-#### Overview
+## Overview
 
 An instance of this type may represent:
 

@@ -21,7 +21,7 @@ Whether this span has the same `Unicode.Scalar`s as `other`.
 func unicodeScalarsEqual(to other: some Sequence<Unicode.Scalar>) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(n)
 

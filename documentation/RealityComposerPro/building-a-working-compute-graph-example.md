@@ -5,7 +5,7 @@
 
 Combine emission, initialization, simulation, and output nodes into a swirling ring of particles colored from a gradient texture.
 
-#### Overview
+## Overview
 
 The example on this page illustrates how to combine emission, initialization, simulation, and output nodes into a complete effect: a gradient spiral of colored particles.
 
@@ -13,13 +13,13 @@ The example on this page illustrates how to combine emission, initialization, si
 
 **To try it yourself:** build a new Compute Graph asset in Reality Composer Pro and wire each phase as shown below. See [Introducing Compute Graph](./introducing-compute-graph.md) for how to create and attach a Compute Graph. Swap `gradient-sixcolors.png` (in the Sample Texture 2D node of the Simulate Phase) for any horizontal gradient texture to restyle the effect without touching a single node.
 
-#### View the completed Compute Graph
+## View the completed Compute Graph
 
 Before you begin, review the complete Compute Graph below to familiarize yourself with each section. Subsequent sections in this article describe each phase in more detail.
 
 ![A screenshot of the complete Reality Composer Pro 3 Compute Graph described in this article.](https://developer.apple.com/tutorials/images/RealityComposerPro/ComputeGraphComplete@2x.png)
 
-#### Emit particles continuously
+## Emit particles continuously
 
 Continuous emission keeps a steady stream of particles going, while the burst provides an initial gust of particles so the effect doesn’t start sparse.
 
@@ -27,7 +27,7 @@ For this example, in the Emitter section, set the `rate (float)` to 20000 and th
 
 ![A screenshot of the example Compute Graph's Emitter section node and settings.](https://developer.apple.com/tutorials/images/RealityComposerPro/ComputeGraph0@2x.png)
 
-#### Initialize particle color from position
+## Initialize particle color from position
 
 For the Set Position part of the Initialize Phase, the nodes grouped inside the comment box labeled Circle turn a single Random Float into a spawn point on a ring. A multiply node scales the random value by 6.28 (2 * pi) into a full-circle angle in radians. Sine and Cosine then feed a Compose float3 with z pinned to 0, producing a unit circle in the XY plane.
 
@@ -37,7 +37,7 @@ The result is particles spawning evenly around a ring that breathes in and out o
 
 ![A screenshot of the example Compute Graph's Initialize Phase, with a series of nodes connecting to the Set Position node.](https://developer.apple.com/tutorials/images/RealityComposerPro/ComputeGraph1@2x.png)
 
-#### Set particle velocity and lifetime
+## Set particle velocity and lifetime
 
 Still in the Initialize Phase, add and configure nodes as shown below.
 
@@ -51,7 +51,7 @@ For the Set Lifetime part of the Initialize Phase, a Random node scaled by 5.0 f
 
 Note that in the image above, the y (float) of the Decompose Node connects to the x (float) of the Compose Node.
 
-#### Simulate particle motion
+## Simulate particle motion
 
 In the Simulate Phase, standard physics integration moves each live particle every frame, for as long as it exists. A series of operators feeds into a Sample Texture 2D node, which connects to a gradient texture — a simple `.png` file with the color gradient (shown below). These nodes connect, in turn, to the Set Color node.
 
@@ -69,7 +69,7 @@ Paired with Integrate, it layers continuous low-amplitude turbulence over the ta
 
 ![A screenshot of the example Compute Graph's Simulate Phase with a series of nodes connected to the Set Color and Noise Force nodes in the Simulate Phase.](https://developer.apple.com/tutorials/images/RealityComposerPro/ComputeGraphColor2@2x.png)
 
-#### Fade particles in and out
+## Fade particles in and out
 
 In the Output Phase, add a Fade In/Out node. It needs no inputs — it fades each particle in and out automatically, based on that particle’s own age and lifetime, rather than reading a value from an upstream node. The phase’s Constants node also configures the rendered look: this example uses an Octagon topology for each particle’s billboard, with `billboard_material` as the material. The fade affects opacity only; the color sampled during Simulation keeps updating every frame and carries through unchanged as each particle fades in and out.
 

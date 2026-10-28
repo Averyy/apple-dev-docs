@@ -25,7 +25,7 @@ var skipControlLocalizedLabelBundleKey: String? { get set }
 @property (nonatomic, readonly, nullable) NSString * skipControlLocalizedLabelBundleKey;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of the property is nil, the skip button may contain a generic label depending on the implementation of the UI that’s in use. To ensure the best available user experience in various playback configurations, including external playback, set a value for this property that provides localized translations of skip control labels.
 

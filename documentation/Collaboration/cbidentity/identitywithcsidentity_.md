@@ -15,11 +15,11 @@ Returns an identity object created from the specified Core Services Identity opa
 + (CBIdentity *) identityWithCSIdentity:(CSIdentityRef) csIdentity;
 ```
 
-#### Return Value
+## Return Value
 
 The identity object for use with the Collaboration framework.
 
-#### Discussion
+## Discussion
 
 This method is used for interoperability with the Core Services Identity API.
 

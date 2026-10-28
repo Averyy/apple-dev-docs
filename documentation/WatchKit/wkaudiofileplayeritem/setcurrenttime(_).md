@@ -21,7 +21,7 @@ func setCurrentTime(_ currentTime: TimeInterval)
 - (void) setCurrentTime:(NSTimeInterval) currentTime;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to seek a specific point in a sound file or to implement fast-forward and rewind functions.
 

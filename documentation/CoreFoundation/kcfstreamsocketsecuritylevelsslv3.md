@@ -25,7 +25,7 @@ let kCFStreamSocketSecurityLevelSSLv3: CFString
 extern CFStringRef const kCFStreamSocketSecurityLevelSSLv3;
 ```
 
-#### Discussion
+## Discussion
 
 If SSL version 3 is not available, specifies that SSL version 2 be set as the security protocol for a socket stream.
 

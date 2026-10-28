@@ -19,7 +19,7 @@ class var imageSize: CGSize { get }
 @property (class, nonatomic, readonly) CGSize imageSize;
 ```
 
-#### Discussion
+## Discussion
 
 The standard image size for inset items is 1740 x 560 points. For more information about configuring the images for an inset interface, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/tvos/icons-and-images/top-shelf-images/).
 

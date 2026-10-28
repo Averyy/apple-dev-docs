@@ -19,7 +19,7 @@ func font() -> NSFont!
 - (NSFont *) font;
 ```
 
-#### Return Value
+## Return Value
 
 The font used in the control’s label.
 

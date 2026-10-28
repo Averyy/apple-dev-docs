@@ -25,7 +25,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 The semantics of this method are the same as those used for [`Operation`](../operation.md). This method sets state information in the receiver that is then reflected by the [`isCancelled`](./iscancelled.md) property. Threads that support cancellation should periodically call the [`isCancelled`](./iscancelled.md) method to determine if the thread has in fact been cancelled, and exit if it has been.
 

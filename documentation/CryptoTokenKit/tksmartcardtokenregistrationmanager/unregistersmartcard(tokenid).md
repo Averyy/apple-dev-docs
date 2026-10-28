@@ -22,7 +22,7 @@ func unregisterSmartCard(tokenID: String) throws
 - (BOOL) unregisterSmartCardWithTokenID:(NSString *) tokenID error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 In case the tokenID is not found, failure is returned.
 

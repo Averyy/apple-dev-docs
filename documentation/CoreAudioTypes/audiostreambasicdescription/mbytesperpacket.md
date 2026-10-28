@@ -25,7 +25,7 @@ var mBytesPerPacket: UInt32
 UInt32 mBytesPerPacket;
 ```
 
-#### Discussion
+## Discussion
 
 To indicate variable packet size, set this field to `0`. For a format that uses variable packet size, specify the size of each packet using an [`AudioStreamPacketDescription`](../audiostreampacketdescription.md) structure.
 

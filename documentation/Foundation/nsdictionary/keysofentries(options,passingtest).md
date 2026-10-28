@@ -25,7 +25,7 @@ func keysOfEntries(options opts: NSEnumerationOptions = [], passingTest predicat
 - (NSSet<id> *) keysOfEntriesWithOptions:(NSEnumerationOptions) opts passingTest:(BOOL (^)(KeyType key, ObjectType obj, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 The set of keys whose corresponding value satisfies `predicate`.
 

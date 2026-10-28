@@ -16,7 +16,7 @@ nonisolated
 init(nsColor: NSColor)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create a SwiftUI color from an [`NSColor`](../../AppKit/nscolor.md) instance. The new color preserves the adaptability of the original. For example, you can create a rectangle using [`linkColor`](../../AppKit/nscolor/linkcolor.md) to see how the shade adjusts to match the user’s system settings:
 

@@ -20,7 +20,7 @@ var items: UnsafeMutablePointer<AuthorizationItem>?
 AuthorizationItem * items;
 ```
 
-#### Discussion
+## Discussion
 
 If `count` is greater than `1`, `items` points to the first item in an array of such items. You should set this parameter to `NULL` if there are no items.
 

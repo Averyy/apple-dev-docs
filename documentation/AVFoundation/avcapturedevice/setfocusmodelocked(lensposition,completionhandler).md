@@ -26,7 +26,7 @@ func setFocusModeLocked(lensPosition: Float) async -> CMTime
 - (void) setFocusModeLockedWithLensPosition:(float) lensPosition completionHandler:(void (^)(CMTime syncTime)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method is the only way to set the value of the [`lensPosition`](./lensposition.md) property. This method throws an exception if you set the value to an unsupported level.
 

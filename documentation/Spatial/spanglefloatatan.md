@@ -19,11 +19,11 @@
 static SPAngleFloat SPAngleFloatAtan(float x);
 ```
 
-#### Return Value
+## Return Value
 
 The inverse tangent of the specified value.
 
-#### Discussion
+## Discussion
 
 Returns the inverse tangent of the specified value.
 

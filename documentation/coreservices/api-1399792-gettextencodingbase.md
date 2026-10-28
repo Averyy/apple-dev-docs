@@ -15,11 +15,11 @@ Returns the base encoding of the specified text encoding.
 TextEncodingBase GetTextEncodingBase(TextEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 The base encodingportion of the specified text encoding. 
 
-#### Discussion
+## Discussion
 
 See the data type  [`TextEncodingRun`](./textencodingrun.md)
 

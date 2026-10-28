@@ -20,7 +20,7 @@ func readMultipleBlock(readConfiguration: NFCISO15693ReadMultipleBlocksConfigura
 - (void) readMultipleBlocksWithConfiguration:(NFCISO15693ReadMultipleBlocksConfiguration *) readConfiguration completionHandler:(void (^)(NSData *data, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Performs read operation using Read Multiple Blocks command (0x23 command code) as defined in ISO15693-3 specification. Multiple Read Multiple Blocks commands will be sent if necessary to complete the operation.
 

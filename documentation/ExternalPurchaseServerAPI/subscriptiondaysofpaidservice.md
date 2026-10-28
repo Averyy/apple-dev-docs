@@ -15,7 +15,7 @@ The total number of days of paid service for the subscription.
 int32 subscriptionDaysOfPaidService
 ```
 
-#### Discussion
+## Discussion
 
 Provide the days of paid service for the subscription, calculating it as follows:
 

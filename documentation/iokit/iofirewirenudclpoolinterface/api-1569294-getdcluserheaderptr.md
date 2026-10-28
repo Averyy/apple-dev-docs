@@ -14,7 +14,7 @@
 UInt32 *(*GetDCLUserHeaderPtr)(NuDCLRef dcl);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

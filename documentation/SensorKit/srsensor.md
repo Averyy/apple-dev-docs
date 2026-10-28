@@ -25,7 +25,7 @@ typedef NSString * SRSensor;
 
 - [Configuring your project for sensor reading](./configuring-your-project-for-sensor-reading.md)
 
-#### Discussion
+## Discussion
 
 Use the properties in this structure to access the different sensors.
 

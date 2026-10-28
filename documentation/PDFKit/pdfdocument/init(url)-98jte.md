@@ -24,7 +24,7 @@ init?(url: URL)
 - (instancetype) initWithURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A `PDFDocument` instance initialized with the data at the passed-in URL or `NULL` if the object could not be initialized or if the URL is invalid.
 

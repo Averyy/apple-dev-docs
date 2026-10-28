@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Avoid abbreviations.
 
-#### Overview
+## Overview
 
 Abbreviations, especially non-standard ones, are effectively terms-of-art, because understanding depends on correctly translating them into their non-abbreviated forms.
 

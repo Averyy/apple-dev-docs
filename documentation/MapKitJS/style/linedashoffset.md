@@ -16,7 +16,7 @@ get lineDashOffset(): number;
 set lineDashOffset(lineDashOffset: number);
 ```
 
-#### Discussion
+## Discussion
 
 This has no effect if you set `lineDash` to draw solid lines. The default line dash offset is `0`.
 

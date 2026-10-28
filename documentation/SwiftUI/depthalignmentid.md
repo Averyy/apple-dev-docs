@@ -15,7 +15,7 @@ A type that defines a custom depth alignment guide.
 protocol DepthAlignmentID
 ```
 
-#### Overview
+## Overview
 
 SwiftUI provides guides for the front, center, and back of a view. Conform to this protocol when you need to align views on some other plane along the depth axis, the way [`AlignmentID`](./alignmentid.md) lets you add guides across width and height.
 

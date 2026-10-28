@@ -16,7 +16,7 @@ The extension invalidate operation timed out.
 case extensionInvalidateTimeout
 ```
 
-#### Discussion
+## Discussion
 
 This can occur if the extension takes too long to return from [`invalidate()`](../contactproviderextension/invalidate%28%29.md).
 

@@ -17,7 +17,7 @@ The strategy to use when parsing a single value from `@Option` arguments.
 struct SingleValueParsingStrategy
 ```
 
-#### Overview
+## Overview
 
 > **See Also**: [`ArrayParsingStrategy`](./arrayparsingstrategy.md)
 
@@ -50,11 +50,11 @@ struct SingleValueParsingStrategy
   Creates an optional property that reads its value from a labeled option.
 - [init(wrappedValue: Value, name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./option/init%28wrappedvalue,name,parsing,help,completion%29-7ilku.md)
   Creates a property with a default value that reads its value from a labeled option.
-- [init(name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> Value)](./option/init%28name,parsing,help,completion,transform%29-2wf44.md)
+- [init(name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> Value)](./option/init%28name,parsing,help,completion,transform%29-2wf44.md)
   Creates a required property that reads its value from a labeled option, parsing with the given closure.
-- [init<T>(name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./option/init%28name,parsing,help,completion,transform%29-25g7b.md)
+- [init<T>(name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./option/init%28name,parsing,help,completion,transform%29-25g7b.md)
   Creates an optional property that reads its value from a labeled option, parsing with the given closure.
-- [init(wrappedValue: Value, name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> Value)](./option/init%28wrappedvalue,name,parsing,help,completion,transform%29-2llve.md)
+- [init(wrappedValue: Value, name: NameSpecification, parsing: SingleValueParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> Value)](./option/init%28wrappedvalue,name,parsing,help,completion,transform%29-2llve.md)
   Creates a property with a default value that reads its value from a labeled option, parsing with the given closure.
 
 

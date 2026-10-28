@@ -15,11 +15,11 @@ Starts the current service and associates it with the specified provider.
 virtual kern_return_t Start(IOService *provider);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the service-starting result. Return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) to inidicate success. To indicate a failure, see [IOKit Constants](../../iokit/iokit_constants.md) for error definitions.
 
-#### Discussion
+## Discussion
 
 After successfully matching the specified `provider` to your driver’s service, the system instantiates your service object and calls this method. Use this method to configure your driver’s data structures and setup the associated hardware. You might also store a reference to the `provider` object for later use. After configuring your driver, call the [`RegisterService`](../../DriverKit/ioservice/registerservice.md) method to let the system know your service is running.
 

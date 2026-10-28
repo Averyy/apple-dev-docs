@@ -24,7 +24,7 @@ var value: Float { get set }
 @property (readwrite) float value;
 ```
 
-#### Discussion
+## Discussion
 
 Think of the value as the control point’s y-coordinate.
 

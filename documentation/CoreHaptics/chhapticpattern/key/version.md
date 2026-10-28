@@ -24,7 +24,7 @@ static let version: CHHapticPattern.Key
 extern CHHapticPatternKey CHHapticPatternKeyVersion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this version number to determine the scope of supported keys for a haptic dictionary.
 

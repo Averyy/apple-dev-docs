@@ -15,7 +15,7 @@ Gets the current range of the slider control.
 IOUserVideoSliderRange GetRange();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

@@ -25,7 +25,7 @@ var argumentStringValue: String? { get }
 @property (nonatomic, readonly, nullable) NSString * argumentStringValue;
 ```
 
-#### Discussion
+## Discussion
 
 The `argumentStringValue` property can be `nil` if the argument can’t be decoded. For example, redacted arguments or the last component can’t be decoded.
 

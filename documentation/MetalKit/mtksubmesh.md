@@ -24,7 +24,7 @@ class MTKSubmesh
 @interface MTKSubmesh : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`MTKSubmesh`](./mtksubmesh.md) class provides a container for a segment of mesh data that can be rendered in a single draw call. A submesh can only be initialized as part of a [`MTKMesh`](./mtkmesh.md) object. Each submesh contains an index buffer with which the parent’s mesh data can be rendered. Actual submesh vertex data resides in the submesh’s parent mesh. For more information on Model I/O submeshes, see [`MDLSubmesh`](../ModelIO/mdlsubmesh.md).
 

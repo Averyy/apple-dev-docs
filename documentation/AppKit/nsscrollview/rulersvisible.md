@@ -19,7 +19,7 @@ var rulersVisible: Bool { get set }
 @property BOOL rulersVisible;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the scroll view displays its rulers (creating them if needed). When the value of this property is [`false`](../../Swift/false.md), the scroll view doesn’t display its rulers.
 

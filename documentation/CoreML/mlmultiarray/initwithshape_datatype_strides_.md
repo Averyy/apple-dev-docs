@@ -21,7 +21,7 @@ Creates the object with specified strides.
 - (instancetype) initWithShape:(NSArray<NSNumber *> *) shape dataType:(MLMultiArrayDataType) dataType strides:(NSArray<NSNumber *> *) strides;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of the object are left uninitialized; the client must initialize it.
 

@@ -15,7 +15,7 @@ Removes participants from a group chat.
 final func removeGroupChatParticipants(_ request: RCSService.RemoveGroupChatParticipantsRequest) async throws -> RCSService.RemoveGroupChatParticipantsRequest.Result
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `RCSService.Error` if there was an error while performing the operation.
 

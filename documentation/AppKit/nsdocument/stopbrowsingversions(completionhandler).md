@@ -23,7 +23,7 @@ func stopBrowsingVersions() async
 - (void) stopBrowsingVersionsWithCompletionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

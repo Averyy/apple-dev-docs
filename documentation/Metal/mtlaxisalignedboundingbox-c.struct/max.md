@@ -18,7 +18,7 @@
 MTLPackedFloat3 max;
 ```
 
-#### Discussion
+## Discussion
 
 Maximum point
 

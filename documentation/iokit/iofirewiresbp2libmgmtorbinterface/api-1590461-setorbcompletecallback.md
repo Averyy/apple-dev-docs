@@ -16,7 +16,7 @@ Sets the ORB completion routine.
 void (*setORBCompleteCallback)(void *self, void *refCon, IOFWSBP2ORBCompleteCallback callback);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the completion routine to be called when the ORB finishes execution. The refCon set with setRefCon will also be passed as the third argument to the completion handler.
 

@@ -17,7 +17,7 @@ Take elements along an axis.
 func take(_ indices: MLXArray, axis: Int, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The elements are taken from `indices` along the specified axis.
 
@@ -28,7 +28,7 @@ let array = MLXArray(0 ..< 12, [3, 4])
 let col = array.take([0, 2], axis: 1)
 ```
 
-##### See Also
+### See Also
 
 - [`take(_:stream:)`](./take%28_,stream%29.md)
 - [`take(_:_:axis:stream:)`](../take%28_,_,axis,stream%29.md)

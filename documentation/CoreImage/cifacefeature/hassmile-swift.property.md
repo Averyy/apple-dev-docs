@@ -24,7 +24,7 @@ var hasSmile: Bool { get }
 @property (assign, readonly) BOOL hasSmile;
 ```
 
-#### Discussion
+## Discussion
 
 To detect smiles, `/CIDetector/featuresInImage:options:` needs to be called with the [`CIDetectorSmile`](../cidetectorsmile.md) option set to true.
 

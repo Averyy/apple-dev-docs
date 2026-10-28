@@ -25,7 +25,7 @@ static let announcement: UIAccessibility.Notification
 extern const UIAccessibilityNotifications UIAccessibilityAnnouncementNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification includes a parameter that is an [`NSString`](../../../Foundation/nsstring.md) object that contains the announcement. An assistive app outputs the announcement string in the parameter.
 

@@ -21,7 +21,7 @@ Accesses nested properties of the result’s return value.
 subscript(dynamicMember keyPath: KeyPath<ResolvedIntentResult.ValueKeyPath, Never>) -> DynamicPropertyPath { get }
 ```
 
-#### Overview
+## Overview
 
 For example:
 

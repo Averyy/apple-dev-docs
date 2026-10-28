@@ -18,7 +18,7 @@ A Boolean value that indicates whether keyboard shortcuts for menu items are ign
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 Set this key to `YES` if your app uses gesture recognizers in contexts where accidental keyboard shortcuts would interfere with the gesture interaction.
 

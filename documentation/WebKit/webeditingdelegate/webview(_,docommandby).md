@@ -19,11 +19,11 @@ optional func webView(_ webView: WebView!, doCommandBy selector: Selector!) -> B
 - (BOOL) webView:(WebView *) webView doCommandBySelector:(SEL) selector;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver will perform `command`; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Implement this method if you want to perform `command` instead of letting the web view perform `command`.
 

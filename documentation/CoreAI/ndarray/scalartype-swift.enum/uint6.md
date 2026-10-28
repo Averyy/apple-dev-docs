@@ -19,7 +19,7 @@ A 6-bit unsigned integer.
 case uint6
 ```
 
-#### Discussion
+## Discussion
 
 Six-bit unsigned integers can represent values in the range [0, 63]. This type is used for quantization and in lookup tables.
 

@@ -19,7 +19,7 @@ var isHidden: Bool { get set }
 @property (getter=isHidden) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 Hidden menu items (or items with a hidden superitem) do not appear in a menu and do not participate in command key matching.
 

@@ -22,11 +22,11 @@ Runs an operation in the background and provides a way to cancel the operation b
 func performBackgroundTask<T>(options: LongRunningTaskOptions = [], operation: @escaping () async throws -> T, onCancel: @escaping @Sendable (IntentCancellationReason) -> Void) async throws -> T where Self : CancellableIntent
 ```
 
-#### Return Value
+## Return Value
 
 The value you return from the `operation` closure.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Throws an error if the operation fails or the system can’t run the operation.
 

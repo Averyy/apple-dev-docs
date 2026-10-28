@@ -19,7 +19,7 @@ class FSGenericURLResource
 @interface FSGenericURLResource : FSResource
 ```
 
-#### Overview
+## Overview
 
 An `FSGenericURLResource` is a completely abstract resource. The only reference to its contents is a single URL, the contents of which are arbitrary. This URL might represent a PCI locator string like `/pci@f0000000/usb@5`, or some sort of network address for a remote file system. FSKit leaves interpretation of the URL and its contents entirely up to your implementation.
 

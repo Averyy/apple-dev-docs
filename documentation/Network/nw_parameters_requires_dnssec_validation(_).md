@@ -25,7 +25,7 @@ func nw_parameters_requires_dnssec_validation(_ parameters: nw_parameters_t) -> 
 bool nw_parameters_requires_dnssec_validation(nw_parameters_t parameters);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that determines whether a connection requires DNSSEC validation when resolving endpoints.
 

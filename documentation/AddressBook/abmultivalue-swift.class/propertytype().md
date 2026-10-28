@@ -19,7 +19,7 @@ func propertyType() -> ABPropertyType
 - (ABPropertyType) propertyType;
 ```
 
-#### Discussion
+## Discussion
 
 If the multivalue list is empty or its values are of different types, it returns `kABErrorInProperty`.
 

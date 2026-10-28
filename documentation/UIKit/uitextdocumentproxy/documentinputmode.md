@@ -24,7 +24,7 @@ var documentInputMode: UITextInputMode? { get }
 @property (nonatomic, readonly, nullable) UITextInputMode * documentInputMode;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value of this key to configure the keyboard for the specified region and language.
 

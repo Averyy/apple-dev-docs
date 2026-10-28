@@ -19,11 +19,11 @@
 static simd_packed_float4 SPSphericalCoordinates3DFloatGetPackedVector(SPSphericalCoordinates3DFloat coords);
 ```
 
-#### Return Value
+## Return Value
 
 A new packed simd vector, where `x` is the radius, `y` is the inclination (in radians), and `z` is the azimuth (in radians).
 
-#### Discussion
+## Discussion
 
 Creates a packed simd vector from a Spatial spherical coordinates structure.
 

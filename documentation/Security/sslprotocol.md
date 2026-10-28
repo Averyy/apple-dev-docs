@@ -25,7 +25,7 @@ enum SSLProtocol
 enum SSLProtocol : int;
 ```
 
-#### Overview
+## Overview
 
 The descriptions given here apply to the functions [`SSLSetProtocolVersion`](./sslsetprotocolversion.md) and [`SSLGetProtocolVersion`](./sslgetprotocolversion.md). For the functions [`SSLSetProtocolVersionEnabled`](./sslsetprotocolversionenabled.md) and [`SSLGetProtocolVersionEnabled`](./sslgetprotocolversionenabled.md), only the following values are used. For these functions, each constant except [`SSLProtocol.sslProtocolAll`](./sslprotocol/sslprotocolall.md) specifies a single protocol version.
 

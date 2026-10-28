@@ -23,7 +23,7 @@ weak var dataSource: (any UITableViewDataSource)? { get set }
 @property (nonatomic, weak, nullable) id<UITableViewDataSource> dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 The data source must adopt the [`UITableViewDataSource`](../uitableviewdatasource.md) protocol. The data source isn’t retained.
 

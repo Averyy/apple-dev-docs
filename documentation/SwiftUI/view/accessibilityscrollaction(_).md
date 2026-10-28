@@ -22,7 +22,7 @@ nonisolated
 func accessibilityScrollAction(_ handler: @escaping (Edge) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
 ```
 
-#### Discussion
+## Discussion
 
 For example, this is how a scroll action to trigger a refresh could be added to a view.
 

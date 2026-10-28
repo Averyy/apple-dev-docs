@@ -19,11 +19,11 @@ func SKIndexGetAnalysisProperties(_ inIndex: SKIndex!) -> Unmanaged<CFDictionary
 CFDictionaryRef SKIndexGetAnalysisProperties(SKIndexRef inIndex);
 ```
 
-#### Return Value
+## Return Value
 
 A CFDictionary object containing the index’s text-analysis properties. On failure, returns `NULL`.
 
-#### Discussion
+## Discussion
 
 The text analysis properties of an index determine how searches behave when querying the index. You set the analysis properties when creating an index with the [`SKIndexCreateWithURL(_:_:_:_:)`](./api-1446111-skindexcreatewithurl.md) or [`SKIndexCreateWithMutableData(_:_:_:_:)`](./api-1447500-skindexcreatewithmutabledata.md) functions. For more information on text-analysis properties, see [Text Analysis Keys](./search_kit/text_analysis_keys.md).
 

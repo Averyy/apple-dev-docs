@@ -23,7 +23,7 @@ func draw(at point: CGPoint, in context: CGContext)
 - (void) drawAtPoint:(CGPoint) point inContext:(CGContextRef) context;
 ```
 
-#### Discussion
+## Discussion
 
 You can specify the origin as (`NSMinX(typographicBounds) + glyphOrigin.x, NSMinY(typographicBounds) + glyphOrigin.y)` relative to the line fragment group coordinate system.
 

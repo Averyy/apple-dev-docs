@@ -27,7 +27,7 @@ struct LocalizedStringKey
 - [Adding a search interface to your app](./adding-a-search-interface-to-your-app.md)
 - [Preparing views for localization](./preparing-views-for-localization.md)
 
-#### Overview
+## Overview
 
 Initializers for several SwiftUI types – such as [`Text`](./text.md), [`Toggle`](./toggle.md), [`Picker`](./picker.md) and others –  implicitly look up a localized string when you provide a string literal. When you use the initializer `Text("Hello")`, SwiftUI creates a `LocalizedStringKey` for you and uses that to look up a localization of the `Hello` string. This works because `LocalizedStringKey` conforms to [`ExpressibleByStringLiteral`](../Swift/expressiblebystringliteral.md).
 

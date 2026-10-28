@@ -21,7 +21,7 @@ Creates an instance of the observation registrar.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 You don’t need to create an instance of [`ObservationRegistrar`](../observationregistrar.md) when using the [`Observable()`](../observable%28%29.md) macro to indicate observably of a type.
 

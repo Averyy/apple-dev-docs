@@ -17,7 +17,7 @@ The images associated with the `UserInput`.
 var videos: [UserInput.Video]
 ```
 
-#### Discussion
+## Discussion
 
 If the [`prompt`](./prompt-swift.property.md) is a [`UserInput.Prompt.chat(_:)`](./prompt-swift.enum/chat%28_%29.md) this will collect the videos from the chat messages, otherwise these are the stored videos with the [`UserInput`](../userinput.md).
 

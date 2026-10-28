@@ -21,11 +21,11 @@ Wrapper type that defines a task-local value key.
 final class TaskLocal<Value> where Value : Sendable
 ```
 
-#### Overview
+## Overview
 
 A task-local value is a value that can be bound and read in the context of a [`Task`](./task.md). It is implicitly carried with the task, and is accessible by any child tasks it creates (such as TaskGroup or `async let` created tasks).
 
-##### Task-local declarations
+### Task-local declarations
 
 Task locals must be declared as static properties or global properties, like this:
 
@@ -40,7 +40,7 @@ enum Example {
 var contextualNumber: Int = 12
 ```
 
-##### Default values
+### Default values
 
 Reading a task local value when no value was bound to it results in returning its default value. For a task local declared as optional (such as e.g. `TraceID?`), this defaults to nil, however a different default value may be defined at declaration site of the task local, like this:
 
@@ -53,7 +53,7 @@ enum Example {
 
 The default value is returned whenever the task-local is read from a context which either: has no task available to read the value from (e.g. a synchronous function, called without any asynchronous function in its call stack), or no value was bound within the scope of the current task or any of its parent tasks.
 
-##### Reading task-local values
+### Reading task-local values
 
 Reading task local values is simple and looks the same as-if reading a normal static property:
 
@@ -67,13 +67,13 @@ print(traceID)
 
 It is possible to perform task-local value reads from either asynchronous or synchronous functions.
 
-##### Binding task-local values
+### Binding task-local values
 
 Task local values cannot be `set` directly and must instead be bound using the scoped `$traceID.withValue() { ... }` operation. The value is only bound for the duration of that scope, and is available to any child tasks which are created within that scope.
 
 Detached tasks do not inherit task-local values, however tasks created using the `Task { ... }` initializer do inherit task-locals by copying them to the new asynchronous task, even though it is an un-structured task.
 
-##### Using task local values outside of tasks
+### Using task local values outside of tasks
 
 It is possible to bind and read task local values outside of tasks.
 
@@ -106,11 +106,11 @@ Task {
 
 In either cases listed above, the binding and reading of the task-local value works as expected.
 
-##### Task local values, without tasks
+### Task local values, without tasks
 
 If a task local value is bound in a context executing outside of a task (e.g. on a plain old Thread), the task local will fall-back to managing a thread-local value for the scope of the `withValue` function. In other words, this task locals work as expected even if used in a context without an active swift concurrency task.
 
-##### Examples
+### Examples
 
 ```swift
 enum Example {

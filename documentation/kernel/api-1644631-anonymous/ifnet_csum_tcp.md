@@ -13,7 +13,7 @@
 IFNET_CSUM_TCP = 0x00000002
 ```
 
-#### Discussion
+## Discussion
 
 Hardware will calculate TCP checksums.
 

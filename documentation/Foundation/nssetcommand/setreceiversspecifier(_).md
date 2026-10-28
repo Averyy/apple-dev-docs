@@ -20,7 +20,7 @@ func setReceiversSpecifier(_ receiversRef: NSScriptObjectSpecifier?)
 - (void) setReceiversSpecifier:(NSScriptObjectSpecifier *) receiversRef;
 ```
 
-#### Discussion
+## Discussion
 
 When the command is executed, it sets attributes or relationships in the objects specified by `receiversRef`.
 

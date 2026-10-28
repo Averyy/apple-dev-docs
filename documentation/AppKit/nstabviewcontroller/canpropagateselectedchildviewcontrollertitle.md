@@ -19,7 +19,7 @@ var canPropagateSelectedChildViewControllerTitle: Bool { get set }
 @property BOOL canPropagateSelectedChildViewControllerTitle;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../Swift/true.md) and the tab view controller’s own title is `nil`, the tab view controller gets its title from the [`title`](../nsviewcontroller/title.md) property of the selected child view controller. When this property is [`false`](../../Swift/false.md), the tab view controller always provides the title, which may be `nil`. The default value of this property is [`true`](../../Swift/true.md).
 

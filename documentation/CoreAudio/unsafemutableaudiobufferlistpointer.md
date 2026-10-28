@@ -21,7 +21,7 @@ A wrapper for a pointer to an `AudioBufferList`.
 struct UnsafeMutableAudioBufferListPointer
 ```
 
-#### Overview
+## Overview
 
 Like `UnsafeMutablePointer`, this type provides no automated memory management and the user must therefore take care to allocate and free memory appropriately.
 

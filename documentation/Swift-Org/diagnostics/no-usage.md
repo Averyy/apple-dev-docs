@@ -8,13 +8,13 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 These diagnostics are emitted when a value is computed or defined but never used, which often indicates a programming mistake such as a missing assignment or an unintentionally discarded result.
 
 The `NoUsage` group covers a range of unused-value situations like calling a function and ignoring its return value or declaring a variable or constant that is never read.
 
-#### Example
+## Example
 
 ```swift
 func sortedCopy(_ array: [Int]) -> [Int] {
@@ -25,7 +25,7 @@ func sortedCopy(_ array: [Int]) -> [Int] {
 }
 ```
 
-#### How to fix
+## How to fix
 
 - Use the result, or assign it to `_` to explicitly discard it:
 

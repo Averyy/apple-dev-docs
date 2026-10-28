@@ -24,7 +24,7 @@ func close(_ item: FSItem, context: FSContext) async
 - (void) closeItem:(FSItem *) item context:(FSContext *) context replyHandler:(void (^)()) reply;
 ```
 
-#### Discussion
+## Discussion
 
 FSKit calls this method when fully closing a file, and after the kernel finalizes all caching for the item.
 

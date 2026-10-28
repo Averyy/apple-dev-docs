@@ -21,7 +21,7 @@ The count of file system objects in the directory.
 var directoryEntryCount: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is a count of objects that are actually in the file system, so it excludes virtual items like “`.`” and “`..`”. This property is useful for quickly identifying an empty directory for backup and syncing. If the URL isn’t a directory, or the file system can’t cheaply compute the value, the value is `nil`.
 

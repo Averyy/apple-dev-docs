@@ -14,7 +14,7 @@ Draw a scene without rendering hidden geometry by checking whether each object i
 - tvOS 17.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 This sample demonstrates how to use a visibility result buffer to perform *fragment counting* and *occlusion culling*. The visibility result buffer stores an array of integers that contain the number of times a fragment passes the depth and stencil tests. Before a draw call, the app sets the location of the 64-bit counter in the buffer and the hardware increments the counter during rasterization.
 
@@ -30,7 +30,7 @@ The occlusion-culling mode is more complex, rendering multiple spheres and using
 
 The app creates Metal objects, renders 3D objects, and demonstrates two ways to use the visibility result buffer. First, it initializes the visibility result buffers and creates the sphere and icosahedron geometry. Next, it uses shared code to position and render the sphere and icosahedron geometry. Lastly, the app uses the state of the segment control to render either the fragment-counting mode or occlusion-culling mode.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample, you need Xcode 12 and a physical device that supports [`MTLGPUFamily.apple3`](./mtlgpufamily/apple3.md), such as:
 
@@ -40,7 +40,7 @@ To run this sample, you need Xcode 12 and a physical device that supports [`MTLG
 
 This sample can only run on a physical device because it uses the counting occlusion query features that Simulator doesn’t support.
 
-##### Create the visibility result buffer
+### Create the visibility result buffer
 
 At initialization time, the app creates a set of visibility result buffers used in the fragment-counting and occlusion-culling modes. A visibility result buffer is an array of `uint64_t` integers stored in an [`MTLBuffer`](./mtlbuffer.md). The app allows up to three frames to be in flight with the `AAPLMaxBuffersInFlight` constant. However, if the app uses only a single buffer for recording and reading visibility results, a data race condition might occur if the GPU simultaneously writes to the visibility result buffer while the CPU reads from that same buffer. To prevent this, the app uses a ring of buffers that contains one more buffer than the number of frames in flight. The `AAPLNumVisibilityBuffers` constant stores this value. At the end of the `loadMetalWithView:` method, the app creates the buffers using the shared resource storage mode to allow CPU access.
 
@@ -78,7 +78,7 @@ _visibilityBufferWriteIndex = (_visibilityBufferWriteIndex + 1) % AAPLNumVisibil
 _readFromVisibilityResultBuffer = _visibilityBuffer[_visibilityBufferReadIndex].contents;
 ```
 
-##### Create the proxy geometry
+### Create the proxy geometry
 
 For the occlusion-culling mode, the app procedurally generates two geometric 3D primitives: a sphere and an icosahedron. The app uses an icosahedron as proxy geometry for the sphere in occlusion testing because it approximates a sphere using only 20 vertices.
 
@@ -117,7 +117,7 @@ const double animationAdjustmentFactor = 4;
 const double icosahedronRadius = animationAdjustmentFactor * sphereRadius;
 ```
 
-##### Render the geometry
+### Render the geometry
 
 For convenience, the app stores all the matrices and colors for each object in a single array of `AAPLFrameDataPerObject` structures.
 
@@ -152,7 +152,7 @@ The vertex shader uses the `meshIndex` value to get the index to retrieve the ma
 }
 ```
 
-##### Count the visible fragments
+### Count the visible fragments
 
 The fragment-counting mode of the app counts the number of fragments rendered for the green sphere. It has two main steps performed by the `updateFragmentCountingMode:` and `renderFragmentCountingMode:` methods. The update method sets the projection and view matrices and the color for the first object, the red sphere. Then it sets up the matrices and color for the second object, the green sphere. Next comes the rendering phase in the `renderFragmentCountingMode:` method. Before the app renders the frame, it reads the first element from the visibility result buffer and copies it to the `numVisibleFragments` property. The view controller uses this value to update the label.
 
@@ -187,7 +187,7 @@ Next, it sets the render pipeline, depth state, and per-frame constant data buff
 [self renderMeshWithIndex:(uint32_t)AAPLGreenSphereIndex];
 ```
 
-##### Skip the draw calls with occlusion culling
+### Skip the draw calls with occlusion culling
 
 In the occlusion-culling mode, the app uses the visibility result buffer to determine which spheres to draw. Then it disables depth writes (but not the depth test) and tests proxy geometry against the image to generate visibility results for the next frame. It counts the number of drawn spheres in the `numSpheresDrawn` property for the view controller to use to update the UI label. Like the first mode, there’s an update method `updateOcclusionCullingMode:` that sets the projection and model-view matrices and the color for each sphere.
 

@@ -15,7 +15,7 @@ Specifies if device can be used as default system output device
 kern_return_t SetCanBeDefaultSystemOutputDevice(bool in_can_be_default);
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

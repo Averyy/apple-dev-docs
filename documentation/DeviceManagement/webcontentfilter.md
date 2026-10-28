@@ -19,7 +19,7 @@ The payload that configures web content filters.
 object WebContentFilter
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.webcontent-filter` as the payload type.
 
@@ -31,7 +31,7 @@ Matching discards a `www` subdomain prefix if present, so if the system doesn’
 
 All filtering options are active simultaneously. The system only permits URLs and sites that pass all rules.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -43,7 +43,7 @@ All filtering options are active simultaneously. The system only permits URLs an
 | Allowed in user enrollment | iOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

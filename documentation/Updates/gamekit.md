@@ -5,25 +5,25 @@
 
 Learn about important changes to GameKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [GameKit](../GameKit/GameKit.md).
 
-#### June 2025
+## June 2025
 
 - Use a GameKit Configuration file in Xcode to configure Game Activities and Challenges.
 - Test leaderboard score submissions by receiving system notifications when they happen. On iOS, open Settings > Developer, then turn on Notify About Score Submissions.
 - Use [`GKGameActivity`](../GameKit/gkgameactivity.md) to present players with ways to engage each other in your game.
 - Configure challenges in Xcode or App Store Connect and use  [`GKChallengeDefinition`](../GameKit/gkchallengedefinition.md) to retrieve the metadata you define.
 
-#### June 2024
+## June 2024
 
-##### Dashboard
+### Dashboard
 
 - Create a [`GKGameCenterViewController`](../GameKit/gkgamecenterviewcontroller.md) object using the [`init(leaderboardSetID:)`](../GameKit/gkgamecenterviewcontroller/init%28leaderboardsetid%29.md) initializer to display a set of leaderboards in the dashboard.
 - Use the [`init(player:)`](../GameKit/gkgamecenterviewcontroller/init%28player%29.md) initializer to display a player’s profile in the dashboard.
 
-##### Voice chat
+### Voice chat
 
 - Use SharePlay to allow voice chat in your real-time games instead of [`GKVoiceChat`](../GameKit/gkvoicechat.md) which is deprecated. When you present a [`GKMatchmakerViewController`](../GameKit/gkmatchmakerviewcontroller.md) object, it automatically shows a SharePlay button on iOS. To implement a custom SharePlay experience, see [`GKMatchmaker`](../GameKit/gkmatchmaker.md).
 

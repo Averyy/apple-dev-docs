@@ -15,7 +15,7 @@ Creates an asynchronous iterator that produces anchor update elements on this as
 func makeAsyncIterator() -> AnchorUpdateSequence<AnchorType>.Iterator<AnchorType>
 ```
 
-#### Return Value
+## Return Value
 
 An Iterator for `AnchorUpdate`.
 

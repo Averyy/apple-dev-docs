@@ -21,7 +21,7 @@ var customTestMirror: Mirror { get }
 
 - [Describing and reflecting values](../describing-values.md)
 
-#### Discussion
+## Discussion
 
 Do not use this property directly. To get the test reflection of a value, use `Swift/Mirror/init(reflectingForTest:)-(CustomTestReflectable)`.
 

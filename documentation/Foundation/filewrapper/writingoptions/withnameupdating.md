@@ -25,7 +25,7 @@ static var withNameUpdating: FileWrapper.WritingOptions { get }
 NSFileWrapperWritingWithNameUpdating
 ```
 
-#### Discussion
+## Discussion
 
 This option is necessary when your application passes a URL in the `originalContentsURL` parameter to the [`write(to:options:originalContentsURL:)`](../write%28to,options,originalcontentsurl%29.md) method. Without using this option (and reusing child file wrappers properly), subsequent invocations of [`write(to:options:originalContentsURL:)`](../write%28to,options,originalcontentsurl%29.md) would not be able to reliably create hard links in a new file package, because the record of names in the old file package would be out of date.
 

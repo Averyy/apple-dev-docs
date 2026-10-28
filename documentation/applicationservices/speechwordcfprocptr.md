@@ -19,7 +19,7 @@ typealias SpeechWordCFProcPtr = (SpeechChannel, SRefCon, CFString, CFRange) -> V
 typedef void (*SpeechWordCFProcPtr)(SpeechChannel chan, SRefCon refCon, CFStringRef aString, CFRange wordRange);
 ```
 
-#### Discussion
+## Discussion
 
 A word callback function defined by the `SpeechWordCFProcPtr` is the Core Foundation-based equivalent of a word callback function defined by [`SpeechWordProcPtr`](./speechwordprocptr.md). The Speech Synthesis Manager calls a speech channel’s word callback function just before it pronounces a word. You might use such a callback function, for example, to highlight the word about to be spoken in a window.
 

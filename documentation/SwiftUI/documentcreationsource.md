@@ -19,7 +19,7 @@ Describes the source used to create a new document.
 struct DocumentCreationSource
 ```
 
-#### Overview
+## Overview
 
 On iOS, you can declare custom creation sources and use them in [`NewDocumentButton`](./newdocumentbutton.md).
 

@@ -19,7 +19,7 @@ var VMX_REASON_TRIPLE_FAULT: Int { get }
 VMX_REASON_TRIPLE_FAULT
 ```
 
-#### Discussion
+## Discussion
 
 The logical processor encountered an exception while attempting to call the double-fault handler. That exception didn’t itself cause a VM exit due to the exception bitmap.
 

@@ -27,7 +27,7 @@ func BNNSFilterCreateLayerEmbedding(_ layer_params: UnsafePointer<BNNSLayerParam
 BNNSFilterBNNSFilterCreateLayerEmbedding(const BNNSLayerParametersEmbedding *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function in conjunction with [`BNNSLayerParametersEmbedding`](./bnnslayerparametersembedding.md) to create an embedding layer that accesses dictionary items based on the integer indices that the input tensor defines.
 

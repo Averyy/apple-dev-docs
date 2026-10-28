@@ -19,7 +19,7 @@ The list style that describes the behavior and appearance of an inset list.
 struct InsetListStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`inset`](./liststyle/inset.md) to construct this style.
 

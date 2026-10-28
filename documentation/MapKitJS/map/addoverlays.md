@@ -15,11 +15,11 @@ Adds multiple overlays to the map.
 addOverlays(overlays: Overlay[]): Overlay[];
 ```
 
-#### Return Value
+## Return Value
 
 Returns the array of overlays.
 
-#### Discussion
+## Discussion
 
 MapKit JS adds the overlays to the end of the map’s [`overlays`](./overlays.md) array.
 

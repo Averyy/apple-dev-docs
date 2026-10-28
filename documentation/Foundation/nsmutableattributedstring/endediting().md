@@ -25,7 +25,7 @@ func endEditing()
 - (void) endEditing;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method in a subclass to consolidate changes made since a previous call to [`beginEditing()`](./beginediting%28%29.md). When you call this method, the string notifies observers of the changes.
 

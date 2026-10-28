@@ -25,11 +25,11 @@ func indexOfObject(passingTest predicate: (Any, Int, UnsafeMutablePointer<ObjCBo
 - (NSUInteger) indexOfObjectPassingTest:(BOOL (^)(ObjectType obj, NSUInteger idx, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 The lowest index whose corresponding value in the array passes the test specified by `predicate`. If no objects in the array pass the test, returns `NSNotFound`.
 
-#### Discussion
+## Discussion
 
 If the block parameter is `nil` this method will raise an exception.
 

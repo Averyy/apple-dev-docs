@@ -21,7 +21,7 @@ Creates a view that represents the body of a disclosure group.
 @MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI calls this method for each instance of [`DisclosureGroup`](../disclosuregroup.md) that you create within a view hierarchy where this style is the current [`DisclosureGroupStyle`](../disclosuregroupstyle.md).
 

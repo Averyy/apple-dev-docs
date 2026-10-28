@@ -18,7 +18,7 @@ A type containing the information to use when performing a translation.
 struct Configuration
 ```
 
-#### Overview
+## Overview
 
 Specify the source and target languages to use in a translation session with this object. Initialize an instance of this type using the [`init(source:target:)`](./configuration/init%28source,target%29.md) and passing in the `source` and `target` languages. When you pass this configuration into the [`translationTask(_:action:)`](../../SwiftUI/view/translationtask%28_,action%29.md)  function, the framework uses the languages you specify for translation.
 

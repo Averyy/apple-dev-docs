@@ -19,7 +19,7 @@ var alternateImage: NSImage? { get set }
 @property (strong, nullable) NSImage * alternateImage;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the image displayed by the button when it’s in its alternate state, or `nil` if there is no alternate image. Note that some button types don’t display an alternate image. Buttons don’t display images by default. Setting this property may redraw the contents of the button.
 

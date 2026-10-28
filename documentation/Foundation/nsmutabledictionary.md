@@ -25,7 +25,7 @@ class NSMutableDictionary
 @interface NSMutableDictionary : NSDictionary
 ```
 
-#### Overview
+## Overview
 
 In Swift, you can use this type instead of a [`Dictionary`](../Swift/dictionary.md) variable in cases that require reference semantics.
 
@@ -33,7 +33,7 @@ The `NSMutableDictionary` class declares the programmatic interface to objects t
 
 `NSMutableDictionary` is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableDictionary`](../CoreFoundation/cfmutabledictionary.md). See [Toll-Free Bridging](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
-##### Setting Values Using Subscripting
+### Setting Values Using Subscripting
 
 In addition to the provided instance methods, such as [`setObject(_:forKey:)`](./nsmutabledictionary/setobject%28_,forkey%29.md), you can access `NSDictionary` values by their keys using *subscripting*.
 
@@ -51,11 +51,11 @@ id value = @"someValue";
 mutableDictionary[@"someKey"] = value;
 ```
 
-##### Subclassing Notes
+### Subclassing Notes
 
 There should typically be little need to subclass `NSMutableDictionary`. If you do need to customize behavior, it is often better to consider composition rather than subclassing.
 
-###### Methods to Override
+#### Methods to Override
 
 In a subclass, you must override both of its primitive methods:
 

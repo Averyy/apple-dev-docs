@@ -28,7 +28,7 @@ init(cgAffineTransform transform: CGAffineTransform)
 + (NSValue *) valueWithCGAffineTransform:(CGAffineTransform) transform;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains the affine transform information.
 

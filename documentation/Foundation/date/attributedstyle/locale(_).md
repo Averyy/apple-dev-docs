@@ -23,7 +23,7 @@ Modifies the date attributed style to use the specified locale.
 func locale(_ locale: Locale) -> Date.AttributedStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date attributed style with the provided locale.
 

@@ -23,7 +23,7 @@ static let permissiveContentTransformations: SystemLanguageModel.Guardrails
 
 - [Improving the safety of generative model output](../../improving-the-safety-of-generative-model-output.md)
 
-#### Discussion
+## Discussion
 
 The `permissiveContentTransform` guardrail model lets the model handle potentially unsafe content, such as summarizing a news article. In this mode, requests you make to the model that generate a `String` will not throw [`LanguageModelError.guardrailViolation(_:)`](../../languagemodelerror/guardrailviolation%28_%29.md) errors. However, the model may still sometimes refuse to respond to a sensitive prompt, in which case it generates a `String` refusal message.
 

@@ -15,7 +15,7 @@ Allows a task to terminate itself
 void MPExit(OSStatus status);
 ```
 
-#### Discussion
+## Discussion
 
 When called from within a preemptive task, the task terminates, and the value indicated by the parameter `status` is sent to the termination message queue you specified in  [`MPCreateTask`](./api-1585779-mpcreatetask.md). Note that you cannot call `MPExit` from outside a preemptive task. 
 

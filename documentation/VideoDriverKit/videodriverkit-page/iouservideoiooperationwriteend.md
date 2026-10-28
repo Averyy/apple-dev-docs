@@ -15,7 +15,7 @@ This operation is called just after writing data to the device’s stream buffer
 constexpr const IOUserVideoIOOperation IOUserVideoIOOperationWriteEnd;
 ```
 
-#### Discussion
+## Discussion
 
 It is required that this operation be handled if the device has output streams.
 

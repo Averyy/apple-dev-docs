@@ -21,7 +21,7 @@ The orientation of the interface from the user’s perspective.
 struct InterfaceOrientation
 ```
 
-#### Overview
+## Overview
 
 By default, device previews appear right side up, using orientation [`portrait`](./interfaceorientation/portrait.md). You can change the orientation with a call to the [`previewInterfaceOrientation(_:)`](./view/previewinterfaceorientation%28_%29.md) modifier:
 

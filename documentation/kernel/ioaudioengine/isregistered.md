@@ -9,7 +9,7 @@
 bool isRegistered;
 ```
 
-#### Overview
+## Overview
 
 Internal state variable to keep track or whether registerService() has been called.
 

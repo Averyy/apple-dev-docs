@@ -15,11 +15,11 @@ Gets the custom property value for a given qualifier.
 virtual kern_return_t GetCustomPropertyValueWithQualifier(OSObject *in_qualifier_data, OSObject **out_data);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success.
 
-#### Discussion
+## Discussion
 
 The base class returns the custom property value set on the object without looking at contents of the qualifier data. If the value returned is dependent on qualfier, subclass IOUserVideoCustomProperty and override this method.
 

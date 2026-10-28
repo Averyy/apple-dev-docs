@@ -20,7 +20,7 @@ class let didTerminateNotification: NSNotification.Name
 extern NSNotificationName const NSTaskDidTerminateNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSTask` object that the system terminated. This notification doesn’t contain a `userInfo` dictionary.
 

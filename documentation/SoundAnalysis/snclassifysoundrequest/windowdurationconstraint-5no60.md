@@ -22,7 +22,7 @@ A range or list of sound duration times the request’s underlying sound classif
 var windowDurationConstraint: SNTimeDurationConstraint { get }
 ```
 
-#### Discussion
+## Discussion
 
 Configure the request’s [`windowDuration`](./windowduration.md) property with a value that satisfies the window duration constraint.
 

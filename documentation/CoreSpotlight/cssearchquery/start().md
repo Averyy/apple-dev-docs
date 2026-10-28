@@ -27,7 +27,7 @@ func start()
 
 - [Searching for information in your app](../searching-for-information-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 This method uses the configured search parameters and query string to begin a search of the index. It then delivers the results of that search to the closures in the [`foundItemsHandler`](./founditemshandler.md) and [`completionHandler`](./completionhandler.md) properties of the query object.
 

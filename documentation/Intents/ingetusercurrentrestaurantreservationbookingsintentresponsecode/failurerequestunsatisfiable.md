@@ -16,7 +16,7 @@ case failureRequestUnsatisfiable
 INGetUserCurrentRestaurantReservationBookingsIntentResponseCodeFailureRequestUnsatisfiable
 ```
 
-#### Discussion
+## Discussion
 
 Use this code if the intent object contained a specific reservation identifier and restaurant, but that the reservation’s restaurant did not match the specified restaurant.
 

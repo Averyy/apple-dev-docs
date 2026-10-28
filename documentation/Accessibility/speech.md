@@ -4,13 +4,13 @@
 
 A person may have a speech disability or prefer to connect without using their voice.
 
-#### Overview
+## Overview
 
 People who are unable to speak, have a speech disability, or prefer to communicate through text can use Apple’s speech accessibility features to communicate through their Apple devices. Design and develop your app to support speech accessibility features and provide a great experience for people who rely on these features.
 
 ![An illustration that shows two people. On the left, a person is sitting at a desk and communicating using speech synthesis features on a Mac. On the right, a person is sitting at a desk and communicating through a text message exchange on an iPad.](https://developer.apple.com/tutorials/images/com.apple.Accessibility/accessibility-scene-speech@2x.png)
 
-##### Related videos
+### Related videos
 
 - [Extend Speech Synthesis with personal and custom voices](https://developer.apple.com/videos/play/wwdc2023/10033)
   Bring the latest advancements in Speech Synthesis to your apps. Learn how you can integrate your custom speech synthesizer and voices into iOS and macOS. We’ll show you how SSML is used to generate expressive speech synthesis, and explore how Personal Voice can enable your augmentative and assistive communication app to speak on a person’s behalf in an authentic way.

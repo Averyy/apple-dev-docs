@@ -19,7 +19,7 @@ func addCursorRect(_ rect: NSRect, cursor object: NSCursor)
 - (void) addCursorRect:(NSRect) rect cursor:(NSCursor *) object;
 ```
 
-#### Discussion
+## Discussion
 
 Cursor rectangles aren’t subject to clipping by superviews, nor are they intended for use with rotated views. You should explicitly confine a cursor rectangle to the view’s visible rectangle to prevent improper behavior.
 

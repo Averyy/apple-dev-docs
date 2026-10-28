@@ -25,7 +25,7 @@ static let startsMediaSession: UIAccessibilityTraits
 extern const UIAccessibilityTraits UIAccessibilityTraitStartsMediaSession;
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait to silence the audio output of an assistive app, such as VoiceOver, during a media session that you don’t want to interrupt. For example, you might use this trait to silence VoiceOver speech while the user is recording audio.
 

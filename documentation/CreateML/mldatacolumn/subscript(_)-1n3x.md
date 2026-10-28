@@ -40,7 +40,7 @@ subscript(slice: Range<Int>) -> MLDataColumn<Element> { get }
 subscript<R>(slice: R) -> MLDataColumn<Element> where R : RangeExpression, R.Bound == Int { get }
 ```
 
-#### Return Value
+## Return Value
 
 A MLUntypedColumn containing the subsequence of this MLUntypedColumn’s elements indicated by the mask MLUntypedColumn.
 

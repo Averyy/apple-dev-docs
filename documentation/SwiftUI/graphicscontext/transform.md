@@ -21,7 +21,7 @@ The current transform matrix, defining user space coordinates.
 var transform: CGAffineTransform { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Modify this matrix to transform content that you subsequently draw into the context. Changes that you make don’t affect existing content.
 

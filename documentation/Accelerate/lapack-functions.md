@@ -5,7 +5,7 @@
 
 An updated BLAS interface supporting ILP64 is available.
 
-#### Overview
+## Overview
 
 > **Note**: An updated BLAS interface supporting ILP64 is available.  Please compile with -DACCELERATE_NEW_LAPACK to access the new headers and -DACCELERATE_LAPACK_ILP64 for ILP64 support.
 

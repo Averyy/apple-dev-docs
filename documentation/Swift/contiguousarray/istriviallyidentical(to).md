@@ -21,7 +21,7 @@ Returns a boolean value indicating whether this array is identical to `other`.
 func isTriviallyIdentical(to other: ContiguousArray<Element>) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Two array values are identical if there is no way to distinguish between them.
 

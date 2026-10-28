@@ -23,7 +23,7 @@ func configureWithOpaqueBackground()
 - (void) configureWithOpaqueBackground;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method replaces any previous values you specified for the bar appearance properties.
 

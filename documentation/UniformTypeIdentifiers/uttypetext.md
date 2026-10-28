@@ -21,7 +21,7 @@ A base type that represents all text-encoded data, including text with markup.
 extern UTType * const UTTypeText;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.text`.
 

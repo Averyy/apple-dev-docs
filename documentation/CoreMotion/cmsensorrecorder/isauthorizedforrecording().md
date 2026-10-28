@@ -24,7 +24,7 @@ class func isAuthorizedForRecording() -> Bool
 + (BOOL) isAuthorizedForRecording;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the app is authorized to record sensor data or [`false`](../../Swift/false.md) if it is not.
 

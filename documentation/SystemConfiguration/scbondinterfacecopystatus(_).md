@@ -19,7 +19,7 @@ func SCBondInterfaceCopyStatus(_ bond: SCBondInterface) -> SCBondStatus?
 SCBondStatusRefSCBondInterfaceCopyStatus(SCBondInterfaceRef bond);
 ```
 
-#### Return Value
+## Return Value
 
 The status associated with the interface. You must release the returned value.
 

@@ -19,7 +19,7 @@ protocol FxPrincipalDelegate
 @protocol FxPrincipalDelegate
 ```
 
-#### Overview
+## Overview
 
 When the host application first launches your XPC Service, your XPC calls +[`startServicePrincipal(with:)`](./fxprincipal/startserviceprincipal%28with%29.md) to get communication with the host application started. Passing in a delegate allows you to know which host application and version launched your XPC service.
 

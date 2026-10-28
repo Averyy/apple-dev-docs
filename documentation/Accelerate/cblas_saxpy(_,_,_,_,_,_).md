@@ -25,7 +25,7 @@ func cblas_saxpy(_ N: __LAPACK_int, _ ALPHA: Float, _ X: UnsafePointer<Float>?, 
 void cblas_saxpy(const __LAPACK_int N, const float ALPHA, const float *X, const __LAPACK_int INCX, float *Y, const __LAPACK_int INCY);
 ```
 
-#### Discussion
+## Discussion
 
 On return, the contents of vector Y are replaced with the result. The value computed is `(alpha * X[i]) + Y[i]`.
 

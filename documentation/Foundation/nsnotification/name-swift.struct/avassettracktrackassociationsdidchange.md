@@ -21,7 +21,7 @@ A notification the system posts when the track associations for an asset track c
 static let AVAssetTrackTrackAssociationsDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification only for changes that occur after an asset’s track’s [`availableTrackAssociationTypes`](../../../AVFoundation/avassettrack/availabletrackassociationtypes.md) property reaches a [`AVKeyValueStatus.loaded`](../../../AVFoundation/avkeyvaluestatus/loaded.md) status.
 

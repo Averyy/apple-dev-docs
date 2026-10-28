@@ -21,7 +21,7 @@ Set the maximum pacing rate for this TCP connection, in bytes per second.
 func setMaximumPacingRateBytesPerSecond(_ maximumPacingRateBytesPerSecond: UInt64?)
 ```
 
-#### Discussion
+## Discussion
 
 TCP pacing spreads out packet transmission to avoid bursts and reduce network congestion. The actual on-wire rate is the minimum of this cap and the rate computed from the congestion window and RTT, so this value never increases throughput above what congestion control allows.
 

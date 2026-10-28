@@ -21,7 +21,7 @@ Returns a ray that results from rotating with the specified quaternion.
 func rotated(by quaternion: simd_quatd) -> Ray3D
 ```
 
-#### Return Value
+## Return Value
 
 The ray that results from rotating with the specified quaternion.
 

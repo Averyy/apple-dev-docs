@@ -24,7 +24,7 @@ func setObject(_ object: Any!, forKeyedSubscript key: Any!)
 - (void) setObject:(id) object forKeyedSubscript:(id) key;
 ```
 
-#### Discussion
+## Discussion
 
 This method is equivalent to the [`setValue(_:forProperty:)`](./setvalue%28_,forproperty%29.md) method, but provides Objective-C subscripting support.
 

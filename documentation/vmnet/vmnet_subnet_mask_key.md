@@ -20,7 +20,7 @@ let vmnet_subnet_mask_key: UnsafePointer<CChar>
 extern const char * const vmnet_subnet_mask_key;
 ```
 
-#### Discussion
+## Discussion
 
 You must also specify `vmnet_start_address_key` and `vmnet_end_address_key` that you supply in the `interface_desc` and `interface_param` dictionaries.
 

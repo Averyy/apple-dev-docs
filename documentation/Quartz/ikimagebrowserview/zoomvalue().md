@@ -19,7 +19,7 @@ func zoomValue() -> Float
 - (float) zoomValue;
 ```
 
-#### Return Value
+## Return Value
 
 The zoom value.
 

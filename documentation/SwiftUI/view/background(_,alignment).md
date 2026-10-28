@@ -28,7 +28,7 @@ func background<Background>(_ background: Background, alignment: Alignment = .ce
 
 - [Building layouts with stack views](../building-layouts-with-stack-views.md)
 
-#### Discussion
+## Discussion
 
 Use `background(_:alignment:)` when you need to place one view behind another, with the background view optionally aligned with a specified edge of the frontmost view.
 

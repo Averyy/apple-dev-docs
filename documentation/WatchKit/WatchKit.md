@@ -9,7 +9,7 @@ Build watchOS apps that use features the app delegate monitors or controls, such
 **Availability**:
 - watchOS 2.0+
 
-#### Overview
+## Overview
 
 The WatchKit framework provides infrastructure for creating watchOS apps, including an extension delegate that manages background tasks, extended runtime sessions, and Siri intents. The framework also performs other support tasks, such as accessing information about the user’s Apple Watch.
 

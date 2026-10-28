@@ -16,7 +16,7 @@ A message that tells people why the app is requesting access to the device’s m
 - **Name**: `NSEnterpriseMCAMUsageDescription` (Main Camera Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 The system uses this string in visionOS 2-2.3 to tell someone why your app requests permission to use the main camera. In newer versions of visionOS, the system uses the value of [`NSMainCameraUsageDescription`](./nsmaincamerausagedescription.md) instead.
 

@@ -20,7 +20,7 @@ Gets the current status relative to a particular asset pack.
 - (void) getStatusRelativeToAssetPack:(BAAssetPack *) assetPack completionHandler:(void (^)(BAAssetPackStatus status, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method checks whether any version of the specified asset pack is currently downloaded. If one is, then it determines the version relationship between the downloaded asset pack and the specified asset pack. If they have different version numbers, then the status value that it passes to the completion handler will contain [`BAAssetPackStatusOutOfDate`](../baassetpackstatus/baassetpackstatusoutofdate.md). The status value will contain [`BAAssetPackStatusUpdateAvailable`](../baassetpackstatus/baassetpackstatusupdateavailable.md) only if the relevant asset pack on the server hasn’t been further updated since the initialization of the provided [`BAAssetPack`](../baassetpack.md) instance.
 

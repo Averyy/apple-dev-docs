@@ -20,11 +20,11 @@ A property that identifies the content margins of a widget.
 var widgetContentMargins: EdgeInsets { get }
 ```
 
-#### Return Value
+## Return Value
 
 Returns the content margins for the current widget presentation context.
 
-#### Discussion
+## Discussion
 
 The content margins of a widget depend on the context in which it appears. The system applies default content margins. However, if you disable automatic application of default content margins with [`contentMarginsDisabled()`](../widgetconfiguration/contentmarginsdisabled%28%29.md), the system uses the `widgetContentMargins` property in combination with [`padding(_:)`](../view/padding%28_%29.md) to selectively apply default content margins.
 

@@ -5,7 +5,7 @@
 
 Use a Markdown-syntax string to iniitalize an attributed string with standard or custom attributes.
 
-#### Overview
+## Overview
 
 You can use familiar Markdown syntax to initialize an attributed string with both its initial text and attributes for things like inline styles and links. In many cases, this produces easier-to-read code than manually setting attributes on ranges of an existing attributed string.
 

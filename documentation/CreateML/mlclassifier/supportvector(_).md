@@ -15,7 +15,7 @@ A classifier that predicts a binary target value by maximizing the separation be
 case supportVector(MLSupportVectorClassifier)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t create an [`MLClassifier`](../mlclassifier.md) using one of its enumeration cases. Use the classifier’s initializer instead.
 

@@ -19,7 +19,7 @@ func quickLook(with event: NSEvent)
 - (void) quickLookWithEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSEvent.EventType.quickLook`](../nsevent/eventtype/quicklook.md) event type supports this method. The only valid properties of an [`NSEvent.EventType.quickLook`](../nsevent/eventtype/quicklook.md) event are [`locationInWindow`](../nsevent/locationinwindow.md) and [`modifierFlags`](../nsevent/modifierflags-swift.property.md). A Quick Look event does not come in through the normal event mechanism; therefore, there is no corresponding event mask for it, nor should you attempt to look for it in a [`sendEvent(_:)`](../nswindow/sendevent%28_%29.md) message or with the [`nextEvent(matching:)`](../nswindow/nextevent%28matching%29.md) methods.
 

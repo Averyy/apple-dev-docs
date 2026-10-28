@@ -19,7 +19,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized entropy device.
 

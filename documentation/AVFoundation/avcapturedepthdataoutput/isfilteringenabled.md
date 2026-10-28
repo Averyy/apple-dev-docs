@@ -22,7 +22,7 @@ var isFilteringEnabled: Bool { get set }
 @property (nonatomic, getter=isFilteringEnabled) BOOL filteringEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is [`true`](../../Swift/true.md) (the default), the capture output smooths noise and fills in missing or invalid values (caused by low light or lens occlusion) in depth data maps by temporally interpolating between previous and subsequent frames of captured depth data.
 

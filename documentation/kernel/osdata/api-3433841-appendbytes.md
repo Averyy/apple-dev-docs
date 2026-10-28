@@ -24,7 +24,7 @@ bool appendBytes(const OSData *aDataObj);
 virtual bool appendBytes(const OSData *aDataObj);
 ```
 
-#### Return Value
+## Return Value
 
 true on success or false on failure, due to allocation failure.
 

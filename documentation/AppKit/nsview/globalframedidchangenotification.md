@@ -21,7 +21,7 @@ class let globalFrameDidChangeNotification: NSNotification.Name
 extern NSNotificationName NSViewGlobalFrameDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the surface’s view. This notification does not contain a `userInfo` dictionary.
 

@@ -20,7 +20,7 @@ optional func concludeDragOperation(_ sender: (any NSDraggingInfo)?)
 - (void) concludeDragOperation:(id<NSDraggingInfo>) sender;
 ```
 
-#### Discussion
+## Discussion
 
 For this method to be invoked, the previous [`performDragOperation(_:)`](./performdragoperation%28_%29.md) must have returned [`true`](../../Swift/true.md).
 

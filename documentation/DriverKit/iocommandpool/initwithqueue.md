@@ -16,11 +16,11 @@
 virtual bool initWithQueue(IODispatchQueue *queue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if command pool was successfully initialized.
 
-#### Discussion
+## Discussion
 
 Primary initializer for an IOCommandPool object.
 

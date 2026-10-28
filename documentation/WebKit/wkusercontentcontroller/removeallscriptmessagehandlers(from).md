@@ -23,7 +23,7 @@ func removeAllScriptMessageHandlers(from contentWorld: WKContentWorld)
 - (void) removeAllScriptMessageHandlersFromContentWorld:(WKContentWorld *) contentWorld;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove all message handlers in the specified content world. Message handlers in other content worlds are unaffected.
 

@@ -23,7 +23,7 @@ func specifyHistogram(_ histogram: vImage.PixelBuffer<Format>.Histogram888, dest
 
 Available when `Format` is `vImage.Planar8x3`.
 
-#### Discussion
+## Discussion
 
 *Histogram specification* is a technique that allows you to calculate the histogram of a reference image and apply it to an input image.
 

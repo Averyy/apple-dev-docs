@@ -23,7 +23,7 @@ var averageActivePace: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * averageActivePace;
 ```
 
-#### Discussion
+## Discussion
 
 During regular updates, this property is set to the user’s average active pace since [`startUpdates(from:withHandler:)`](../cmpedometer/startupdates%28from,withhandler%29.md) was called. When you perform historical queries, the property is set to the average active pace between [`startDate`](./startdate.md) and [`endDate`](./enddate.md).
 

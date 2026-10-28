@@ -26,7 +26,7 @@ convenience init(recipients: [INPerson]?, content: String?, speakableGroupName: 
 - (instancetype) initWithRecipients:(NSArray<INPerson *> *) recipients content:(NSString *) content speakableGroupName:(INSpeakableString *) speakableGroupName conversationIdentifier:(NSString *) conversationIdentifier serviceName:(NSString *) serviceName sender:(INPerson *) sender;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent or `nil` if the object could not be created.
 

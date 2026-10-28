@@ -24,7 +24,7 @@ static let annotation: UIApplication.LaunchOptionsKey
 extern UIApplicationLaunchOptionsKey const UIApplicationLaunchOptionsAnnotationKey;
 ```
 
-#### Discussion
+## Discussion
 
 The presence of this key indicates that custom data was provided by the app that requested the opening of the URL. The value of this key is a property-list object containing the custom data. The same object is also passed to the annotation parameter of the  [`application(_:open:sourceApplication:annotation:)`](../../uiapplicationdelegate/application%28_,open,sourceapplication,annotation%29.md) method. The contents of this property-list object are specific to the app that made the request.
 

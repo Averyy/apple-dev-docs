@@ -21,7 +21,7 @@ A notification that posts after a context finishes saving changes to its managed
 static let didSaveObjectIDsNotification: Notification.Name
 ```
 
-#### Discussion
+## Discussion
 
 This notification’s `object` is the saved context. Don’t peform any asynchronous work or block the calling thread. [`NSManagedObjectContext`](../nsmanagedobjectcontext.md) posts notifications to the same thread that creates it.
 

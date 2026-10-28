@@ -25,7 +25,7 @@ var sharpness: Float { get set }
 @property (nonatomic) float sharpness;
 ```
 
-#### Discussion
+## Discussion
 
 The smaller the value, the more blurry the pattern. Values range from 0.0 to 1.0.
 

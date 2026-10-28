@@ -5,7 +5,7 @@
 
 Analyze how often your app starts an Ultra Wideband (UWB) ranging session through Nearby Interaction.
 
-#### Overview
+## Overview
 
 The data in this report details the aggregated number of Ultra Wideband ranging sessions your app starts by using the Nearby Interaction framework.
 
@@ -22,7 +22,7 @@ The data in this report details the aggregated number of Ultra Wideband ranging 
   - Individual rows will only appear if they have a value of 5 or more.
 - Data Context: You can analyze your data with additional context by comparing it with the data in the [App Sessions Context](./app-sessions-context.md) report, which provides a count of unique devices that use your app on a specific day. For example, if your app performed an action detailed in this report on 10 unique devices on a specific day, and the App Sessions Context report shows there were 100 unique devices running your app that day, then you can approximate that 10% of the devices running your app performed that action.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |
@@ -40,7 +40,7 @@ The data in this report details the aggregated number of Ultra Wideband ranging 
 | Is Extended Distance Measurement Enabled | True if the app requested the “extended distance measurement” mode, which is available on second-generation Ultra Wideband chips. This mode enables longer operating range. | `boolean` |
 | Is Live Activity Active | True if the app has an active live activity during the session. If the app has an active live activity, it can continue the session if the app is in the background. | `boolean` |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

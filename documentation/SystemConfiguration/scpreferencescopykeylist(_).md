@@ -19,7 +19,7 @@ func SCPreferencesCopyKeyList(_ prefs: SCPreferences) -> CFArray?
 CFArrayRefSCPreferencesCopyKeyList(SCPreferencesRef prefs);
 ```
 
-#### Return Value
+## Return Value
 
 An array of currently defined preference keys. You must release the returned value.
 

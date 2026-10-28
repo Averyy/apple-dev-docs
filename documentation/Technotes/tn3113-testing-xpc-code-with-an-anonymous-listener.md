@@ -5,7 +5,7 @@
 
 Use an anonymous XPC listener to simplify your XPC testing and debugging.
 
-#### Overview
+## Overview
 
 Testing and debugging XPC code is tricky because there are two processes involved.  Imagine you have an app with an embedded XPC service.  To debug this you have to run two instances of the debugger, one connected to the app and another to the service, and then switch between them.  This works, but it’s quite inconvenient.  Fortunately there is a better way, a technique that allows you to test and debug all your XPC code in a single process.
 
@@ -81,7 +81,7 @@ let myConnection = MyConnection(connection: connection)
 
 You now have an XPC connection between your client code and your listener, with all the code running in the same test program.  This makes it much easier to debug your XPC code.  And the same technique is perfect for unit tests.
 
-#### Revision History
+## Revision History
 
 - **2022-04-12** Added syntax highlighting to the code listings (r. 89366505).
 - **2022-02-08** Republished as TN3113.  Expanded the introduction to clarify the overall concept.  Made other minor editorial changes.

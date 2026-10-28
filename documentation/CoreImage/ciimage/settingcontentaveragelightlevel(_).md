@@ -24,11 +24,11 @@ func settingContentAverageLightLevel(_ average: Float) -> CIImage
 - (CIImage *) imageBySettingContentAverageLightLevel:(float) average;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIImage`](../ciimage.md).
 
-#### Discussion
+## Discussion
 
 Changing this value will alter the behavior of the `CIToneMapHeadroom` and `CISystemToneMap` filters.
 

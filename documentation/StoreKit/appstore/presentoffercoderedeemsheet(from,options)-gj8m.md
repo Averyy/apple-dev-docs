@@ -20,11 +20,11 @@ static func presentOfferCodeRedeemSheet(from window: NSWindow, options: Set<Rede
 
 - [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
 
-#### Return Value
+## Return Value
 
 A [`VerificationResult`](../verificationresult.md) containing the [`Transaction`](../transaction.md) that the redemption produces.
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`StoreKitError`](../storekiterror.md) if the system cannot present the sheet or the redemption fails.
 

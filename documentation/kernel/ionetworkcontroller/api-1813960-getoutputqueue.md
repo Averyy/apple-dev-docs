@@ -11,7 +11,7 @@ Gets the IOOutputQueue object created by createOutputQueue().
 virtual IOOutputQueue * getOutputQueue() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a reference to the output queue object created by createOutputQueue().
 

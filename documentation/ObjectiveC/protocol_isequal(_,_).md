@@ -25,7 +25,7 @@ func protocol_isEqual(_ proto: Protocol?, _ other: Protocol?) -> Bool
 extern BOOL protocol_isEqual(Protocol *proto, Protocol *other);
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](./yes.md) if `proto` is the same as `other`, otherwise [`NO`](./no.md).
 

@@ -25,7 +25,7 @@ var isHidden: Bool { get }
 @property (nonatomic, readonly) BOOL isHidden;
 ```
 
-#### Discussion
+## Discussion
 
 You can still submit scores to a hidden leaderboard.
 

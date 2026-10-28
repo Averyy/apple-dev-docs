@@ -22,7 +22,7 @@ static let toggleInspector: NSToolbarItem.Identifier
 extern NSToolbarItemIdentifier NSToolbarToggleInspectorItemIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 When selected, this item sends a `toggleInspector:` message to the first responder.
 

@@ -25,11 +25,11 @@ func CGRectIsInfinite(_ rect: CGRect) -> Bool
 extern bool CGRectIsInfinite(CGRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if the specified rectangle is infinite; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 An infinite rectangle is one that has no defined bounds. Infinite rectangles can be created as output from a tiling filter. For example, the Core Image framework perspective tile filter creates an image whose extent is described by an infinite rectangle.
 

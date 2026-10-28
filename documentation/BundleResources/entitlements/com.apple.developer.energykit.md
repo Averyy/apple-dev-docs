@@ -19,7 +19,7 @@ The entitlement the system requires for an app to use the EnergyKit framework.
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 This entitlement works with the [EnergyKit](../../EnergyKit/EnergyKit.md) framework, which provides insights and suggestions to manage home device electricity usage.
 

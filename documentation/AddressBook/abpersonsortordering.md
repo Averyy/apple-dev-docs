@@ -23,7 +23,7 @@ typealias ABPersonSortOrdering = UInt32
 typedef uint32_t ABPersonSortOrdering;
 ```
 
-#### Discussion
+## Discussion
 
 See [Sort Order](./api-1619730-sort-order.md).
 

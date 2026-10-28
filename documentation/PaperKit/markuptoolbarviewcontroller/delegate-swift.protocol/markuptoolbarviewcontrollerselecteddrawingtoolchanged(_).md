@@ -17,7 +17,7 @@ Called when the `selectedDrawingTool` changes.
 func markupToolbarViewControllerSelectedDrawingToolChanged(_ toolbar: MarkupToolbarViewController)
 ```
 
-#### Discussion
+## Discussion
 
 Default implementation provided.
 

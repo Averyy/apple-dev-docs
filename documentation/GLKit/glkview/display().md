@@ -23,7 +23,7 @@ func display()
 - (void) display;
 ```
 
-#### Discussion
+## Discussion
 
 This method causes your drawing method to be called immediately and then presents the rendered image to the screen. Your application typically calls this method inside of a rendering loop, such as the one provided by the [`GLKViewController`](../glkviewcontroller.md) class, in order to provide a continuous smooth animation.
 

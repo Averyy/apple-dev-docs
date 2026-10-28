@@ -23,7 +23,7 @@ case `default`
 UITextSpellCheckingTypeDefault
 ```
 
-#### Discussion
+## Discussion
 
 The default behavior is to enable spell-checking whenever autocorrection is also enabled.
 

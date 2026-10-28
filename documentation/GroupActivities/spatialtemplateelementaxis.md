@@ -15,7 +15,7 @@ An axis to use when aligning elements in a spatial template.
 struct SpatialTemplateElementAxis
 ```
 
-#### Overview
+## Overview
 
 When configuring the elements of a spatial template, you can specify directions that orient a participant with the x- or z-axis of the shared coordinate space. These alignments rotate the participant around the y-axis to face the specified axis.
 

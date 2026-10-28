@@ -13,11 +13,11 @@
 errno_t mbuf_copy_pkthdr(mbuf_t dest, const mbuf_t src);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Copies the packet header from src to dest.
 

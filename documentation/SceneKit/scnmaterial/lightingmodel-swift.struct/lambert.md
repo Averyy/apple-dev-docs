@@ -25,7 +25,7 @@ static let lambert: SCNMaterial.LightingModel
 extern SCNLightingModel const SCNLightingModelLambert;
 ```
 
-#### Discussion
+## Discussion
 
 This shading model is based on Lambert’s Law of diffuse reflectance, calculating the color of a point on a surface with the following formula:
 

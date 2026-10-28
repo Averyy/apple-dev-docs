@@ -21,11 +21,11 @@ Increments the retain count of a font.
 extern CGFontRefCGFontRetain(CGFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 The same font you specified in the `font` parameter.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md), except that it does not cause an error if the `font` parameter is `NULL`.
 

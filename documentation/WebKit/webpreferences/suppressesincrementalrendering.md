@@ -19,7 +19,7 @@ var suppressesIncrementalRendering: Bool { get set }
 @property (nonatomic) BOOL suppressesIncrementalRendering;
 ```
 
-#### Discussion
+## Discussion
 
 Pass [`true`](../../Swift/true.md) to suppress incremental rendering, or [`false`](../../Swift/false.md) otherwise.
 

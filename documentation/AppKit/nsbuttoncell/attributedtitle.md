@@ -20,7 +20,7 @@ var attributedTitle: NSAttributedString { get set }
 @property (copy) NSAttributedString * attributedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the attributes string that appears on the button when it’s in its normal state, or an empty attributed string if the button doesn’t display a title. A button’s title is always displayed if the button doesn’t use its alternate contents for highlighting or displaying the alternate state. By default, a button’s title is “Button.” Setting this property redraws the button if necessary.
 

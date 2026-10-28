@@ -20,7 +20,7 @@ A tool that scans machine-readable codes in an image.
 struct BarcodeReaderTool
 ```
 
-#### Overview
+## Overview
 
 When the model encounters an image containing machine-readable codes, it can call this tool to decode them. The tool returns an array of `Barcode` results, each containing the decoded content and the symbology type.
 

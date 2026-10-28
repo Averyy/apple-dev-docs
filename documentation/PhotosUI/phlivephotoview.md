@@ -36,7 +36,7 @@ class PHLivePhotoView
 
 - [Displaying Live Photos](../PhotoKit/displaying-live-photos.md)
 
-#### Overview
+## Overview
 
 Use a Live Photo view to display the photo and control playback of its motion and sound content. In iOS and tvOS, you can obtain Live Photo objects from the Photos library, using the [`PHPickerViewController`](./phpickerviewcontroller.md) or [`PHAsset`](../Photos/phasset.md) and [`PHImageManager`](../Photos/phimagemanager.md) classes, or by creating one from asset resources exported from a Photos library. In macOS, Live Photo objects are available only when editing Live Photo content in a photo editing extension that runs in the Photos app—see the [`PHContentEditingInput`](../Photos/phcontenteditinginput.md) class to access Live Photo content in an editing session.
 

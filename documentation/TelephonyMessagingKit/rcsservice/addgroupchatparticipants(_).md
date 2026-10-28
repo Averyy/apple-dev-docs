@@ -15,7 +15,7 @@ Adds participants to a group chat.
 final func addGroupChatParticipants(_ request: RCSService.AddGroupChatParticipantsRequest) async throws -> RCSService.AddGroupChatParticipantsRequest.Result
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`RCSService.Error`](./error.md) if there was an error while performing the operation.
 

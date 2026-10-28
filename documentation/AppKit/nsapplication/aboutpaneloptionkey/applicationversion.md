@@ -19,7 +19,7 @@ static let applicationVersion: NSApplication.AboutPanelOptionKey
 extern NSAboutPanelOptionKey const NSAboutPanelOptionApplicationVersion;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSString`](../../../Foundation/nsstring.md) object with the app version (“Version 1.0”). If not specified, AppKit obtains the version string from the `CFBundleShortVersionString` key in the app’s `Info.plist` file. If neither is available, AppKit uses the build version, printed as `Version x.x`.
 

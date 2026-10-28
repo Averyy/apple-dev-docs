@@ -5,11 +5,11 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 4.3.1 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### Improvements
+### Improvements
 
 - You can now create and update localized metadata in 11 additional languages. To learn more, see [Managing metadata in your app by using locale shortcodes](./managing-metadata-in-your-app-by-using-locale-shortcodes.md).
 - `BRAZIL_GAMBLING_NOT_VERIFIED` content status is available when calling [`Read app availablity territories`](./get-v2-appavailabilities-_id_-territoryavailabilities.md). This status indicates that your app is missing Real Money Gambling (RMG) verification, so it’s not available for sale in Brazil.

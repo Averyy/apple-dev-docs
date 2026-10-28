@@ -20,7 +20,7 @@ var session: ARSession? { get set }
 @property (nonatomic, strong, nullable) ARSession * session;
 ```
 
-#### Discussion
+## Discussion
 
 The coaching overlay monitors your app’s [`ARSession`](../arsession.md) and reacts according to its tracking status. You don’t need to set this property if you set [`sessionProvider`](./sessionprovider.md) instead.
 

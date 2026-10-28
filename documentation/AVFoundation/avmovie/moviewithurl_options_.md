@@ -20,11 +20,11 @@ Returns a new movie object from a movie header stored in a QuickTime movie file 
 + (instancetype) movieWithURL:(NSURL *) URL options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A movie object.
 
-#### Discussion
+## Discussion
 
 Upon creation, the values of the [`defaultMediaDataStorage`](./defaultmediadatastorage.md) property and any associated [`mediaDataStorage`](../avmovietrack/mediadatastorage.md) properties are `nil`.
 

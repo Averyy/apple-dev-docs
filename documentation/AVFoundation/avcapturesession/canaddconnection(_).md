@@ -24,7 +24,7 @@ func canAddConnection(_ connection: AVCaptureConnection) -> Bool
 - (BOOL) canAddConnection:(AVCaptureConnection *) connection;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if you can add the connection; otherwise, [`false`](../../Swift/false.md).
 

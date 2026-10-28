@@ -23,7 +23,7 @@ static var videoZoomChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedS
 AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditionVideoZoomChanged
 ```
 
-#### Discussion
+## Discussion
 
 This condition switches cameras when the video zoom factor changes, either by setting a value for the device’s [`videoZoomFactor`](../videozoomfactor.md) property or calling its [`ramp(toVideoZoomFactor:withRate:)`](../ramp%28tovideozoomfactor,withrate%29.md) method.
 

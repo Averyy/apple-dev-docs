@@ -21,7 +21,7 @@ A hint at the height, in points, of a Quick Look app’s previews.
 
 **Default**: `800.0`
 
-#### Discussion
+## Discussion
 
 If the app’s generator takes too long to produce the preview, Quick Look uses this key.
 

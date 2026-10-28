@@ -24,7 +24,7 @@ func MACaptionAppearanceCopyWindowColor(_ domain: MACaptionAppearanceDomain, _ b
 extern CGColorRefMACaptionAppearanceCopyWindowColor(MACaptionAppearanceDomain domain, MACaptionAppearanceBehavior *behavior);
 ```
 
-#### Return Value
+## Return Value
 
 The preferred color displayed behind all other caption elements.
 

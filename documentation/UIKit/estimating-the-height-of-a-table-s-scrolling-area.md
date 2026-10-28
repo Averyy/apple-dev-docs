@@ -5,7 +5,7 @@
 
 Provide height estimates for your table view’s headers, footers, and rows to ensure that scrolling accurately reflects the size of your content.
 
-#### Overview
+## Overview
 
 Whenever possible, table views use height estimates for cells, headers, and footers to improve performance and scrolling behavior. Before a table view appears onscreen, it must compute the height of its content view, because it needs that information to configure scrolling-related parameters. If you don’t provide estimated heights for items, the table view must compute the actual height of items up front, which can be expensive.
 

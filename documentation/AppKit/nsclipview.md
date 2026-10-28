@@ -19,13 +19,13 @@ class NSClipView
 @interface NSClipView : NSView
 ```
 
-#### Overview
+## Overview
 
 An [`NSClipView`](./nsclipview.md) holds the document view of an [`NSScrollView`](./nsscrollview.md), clipping the document view to its frame, handling the details of scrolling in an efficient manner, and updating the [`NSScrollView`](./nsscrollview.md) when the document view’s size or position changes.
 
 You don’t typically use the [`NSClipView`](./nsclipview.md) class directly; it’s provided primarily as the scrolling machinery for the [`NSScrollView`](./nsscrollview.md) class. However, you might use the [`NSClipView`](./nsclipview.md) class to implement a class similar to [`NSScrollView`](./nsscrollview.md).
 
-##### Interaction with NSScrollView
+### Interaction with NSScrollView
 
 When using an [`NSClipView`](./nsclipview.md) within an [`NSScrollView`](./nsscrollview.md) (the usual configuration), you should access the [`NSScrollView`](./nsscrollview.md) properties that control background drawing state, rather than accessing these properties of the [`NSClipView`](./nsclipview.md). This recommendation applies to the following properties:
 

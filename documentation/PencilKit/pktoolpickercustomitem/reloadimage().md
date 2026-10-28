@@ -22,7 +22,7 @@ func reloadImage()
 - (void) reloadImage;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method requests a new image for the custom tool item from the [`imageProvider`](./configuration-swift.struct/imageprovider.md) of the [`configuration`](./configuration-v7e5.md).
 

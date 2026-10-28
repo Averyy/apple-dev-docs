@@ -5,7 +5,7 @@
 
 Reorients a spherical clip within a 360 project. 
 
-#### Overview
+## Overview
 
 This element changes the direction in which the camera points. The element also assists leveling the horizon of the clip.
 

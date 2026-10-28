@@ -22,11 +22,11 @@ nonisolated
 func onContinueUserActivity(_ activityType: String, perform action: @escaping (NSUserActivity) -> ()) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that handles incoming user activities.
 
-#### Discussion
+## Discussion
 
 Use this view modifier to receive [`NSUserActivity`](../../Foundation/nsuseractivity.md) instances in a particular scene within your app. The scene that SwiftUI routes the incoming user activity to depends on the structure of your app, what scenes are active, and other configuration. For more information, see [`handlesExternalEvents(matching:)`](../scene/handlesexternalevents%28matching%29.md).
 

@@ -16,7 +16,7 @@ Orient the particle by setting its `axisY` to the velocity’s current direction
 void orient_to_velocity()
 ```
 
-#### Discussion
+## Discussion
 
 Adding this node will cause a `float3 axisY` attribute to be added, if one doesn’t already exist.
 

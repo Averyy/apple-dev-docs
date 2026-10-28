@@ -24,7 +24,7 @@ static let dietaryCholesterol: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierDietaryCholesterol;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use mass units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

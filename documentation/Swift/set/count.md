@@ -23,7 +23,7 @@ var count: Int { get }
 
 Available when `Element` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1).
 

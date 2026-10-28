@@ -20,7 +20,7 @@ var input: Any? { get set }
 @property (nonatomic, strong, nullable) id input;
 ```
 
-#### Return Value
+## Return Value
 
 The input for the first action in the workflow. Should be a data type the action can use, or a type that can be converted to one the action can use. Use `setInput:` to set the input data for the workflow.
 

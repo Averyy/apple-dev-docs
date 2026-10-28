@@ -17,11 +17,11 @@ Insert dependencies between arrays in the graph. The outputs are identical to `i
 func depends(inputs: [MLXArray], dependencies: [MLXArray]) -> [MLXArray]
 ```
 
-#### Return Value
+## Return Value
 
 Outputs which depends on the `dependencies`
 
-##### See Also
+### See Also
 
 - [`depends(input:dependencies:)`](./depends%28input,dependencies%29.md)
 

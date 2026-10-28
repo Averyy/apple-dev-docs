@@ -19,7 +19,7 @@ The color transformer for resolving the indicator color.
 @property (nonatomic, copy, readwrite, nullable) UIConfigurationColorTransformer indicatorColorTransformer;
 ```
 
-#### Discussion
+## Discussion
 
 Use this color transformer to set a custom color for [`indicator`](./indicator.md). For example, the following code uses a grayscale color for the indicator instead of the default color.
 

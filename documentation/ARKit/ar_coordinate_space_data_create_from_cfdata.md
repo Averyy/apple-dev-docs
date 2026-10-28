@@ -15,11 +15,11 @@ Create and initialize an `ar_coordinate_space_data_t` object from a `CFDataRef`.
 extern ar_coordinate_space_data_tar_coordinate_space_data_create_from_cfdata(CFDataRef cfData);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `ar_coordinate_space_data_t`.
 
-#### Discussion
+## Discussion
 
 > **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
 

@@ -19,7 +19,7 @@ var isLoading: Bool { get }
 @property (nonatomic, readonly, getter=isLoading) BOOL loading;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the data source is in the process of loading its content; otherwise, [`false`](../../Swift/false.md).
 

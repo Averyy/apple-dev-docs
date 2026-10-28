@@ -25,7 +25,7 @@ case invalidOfferPrice
 SKErrorInvalidOfferPrice
 ```
 
-#### Discussion
+## Discussion
 
 An offer price can become invalid if you change the price of the base subscription such that it is lower than the offer price. Offers must always represent a discounted price.
 

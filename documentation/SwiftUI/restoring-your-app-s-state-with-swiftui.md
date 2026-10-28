@@ -12,7 +12,7 @@ Provide app continuity for users by preserving their current activities.
 - Mac Catalyst 14.0+
 - Xcode 12.0+
 
-#### Overview
+## Overview
 
 This SwiftUI sample project demonstrates how to preserve your appʼs state information and restore the app to that previous state on subsequent launches. During a subsequent launch, restoring your interface to the previous interaction point provides continuity for the user, and lets them finish active tasks quickly.
 
@@ -20,17 +20,17 @@ When using your app, the user performs actions that affect the user interface. F
 
 This sample app demonstrates the use of state preservation and restoration for scenarios where the system interrupts the app. The sample project manages a set of products. Each product has a title, an image, and other metadata you can view and edit. The project shows how to preserve and restore a product in its `DetailView`.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 In Xcode, select your development team on the iOS target’s Signing and Capabilities tab.
 
-##### Enable state preservation and restoration
+### Enable state preservation and restoration
 
 This sample code project uses SwiftUI’s [`Scene`](./scene.md) to manage the app’s user interface with its life cycle managed by the system. On iOS, state restoration is especially important at the window or scene level, because windows come and go frequently. It’s necessary to save and restore state associated with each one. On the iPad, it’s especially important because an app in the switcher is not necessarily running. Scene-level state restoration preserves the illusion they are running.
 
 To support state preservation and restoration, this sample uses [`NSUserActivity`](../Foundation/nsuseractivity.md) objects. For each user activity, the app must supply an activity type defined in its `Info.plist`.
 
-##### Use scene storage
+### Use scene storage
 
 SwiftUI has the concept of “storing scene data” or [`SceneStorage`](./scenestorage.md). Operating similar to [`State`](./state.md), scene storage is a property wrapper type that consists of a key/value pair. The key makes it possible for the system to save and restore the value correctly. The value is required to be of a `plist` type, so the system can save and restore it correctly. iOS ingests this scene storage using the key/value and then reads and writes to persisted, per-scene storage. The OS manages saving and restoring scene storage on the user’s behalf. The underlying data that backs scene storage is not directly available, so the app must access it via `@SceneStorage` property wrapper. The OS makes no guarantees as to when and how often the data will be persisted. The data in scene storage is not necessarily equivalent to an application’s data model. Scene storage is intended to be used *with* the data model. Ultimately, consider scene storage a “state scoped to a scene”. Don’t use scene storage with sensitive data.
 
@@ -48,7 +48,7 @@ Each view that needs its own state preservation implements a `@SceneStorage` pro
 
 > **Note**: Each scene storage key must be unique, and properly scoped to the area or use within the app. Because this scene storage is local to the app, it’s not necessary to prefix it with the app’s bundle identifier. Use some disambiguating prefix where needed to ensure its uniqueness.
 
-##### Restore the app state with an activity object
+### Restore the app state with an activity object
 
 An `NSUserActivity` object captures the app’s state at the current moment in time. For example, include information about the data the app is currently displaying. The system saves the provided object and returns it to the app the next time it launches. The sample creates a new `NSUserActivity` object when the user closes the app or the app enters the background.
 
@@ -64,7 +64,7 @@ Each SwiftUI view that wants to handle incoming `NSUserActivities` must specify 
 }
 ```
 
-##### Test state restoration
+### Test state restoration
 
 This sample restores the following user interface:
 

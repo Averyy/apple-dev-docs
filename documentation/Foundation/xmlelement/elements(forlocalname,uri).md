@@ -20,7 +20,7 @@ func elements(forLocalName localName: String, uri URI: String?) -> [XMLElement]
 - (NSArray<NSXMLElement *> *) elementsForLocalName:(NSString *) localName URI:(NSString *) URI;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSXMLElement` objects or an empty array if no matching children could be found.
 

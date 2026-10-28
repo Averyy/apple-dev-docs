@@ -25,7 +25,7 @@ func makeMachineLearningCommandEncoder() -> (any MTL4MachineLearningCommandEncod
 - (id<MTL4MachineLearningCommandEncoder>) machineLearningCommandEncoder;
 ```
 
-#### Return Value
+## Return Value
 
 The created [`MTL4MachineLearningCommandEncoder`](../mtl4machinelearningcommandencoder.md) instance , or `nil` if the function fails.
 

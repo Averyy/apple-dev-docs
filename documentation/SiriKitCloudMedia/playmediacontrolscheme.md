@@ -25,7 +25,7 @@ string PlayMediaControlScheme
 - `advertisement`: No controls are available by default. You may enable `nextTrack`, `previousTrack`, `skipForward`, `skipBackward`, and `seekToPlaybackPosition`. If the user attempts to use one of these controls and it isn’t available, Siri informs the user that they can’t use the control because of the advertisement.
 - `custom`: No controls are available by default. You may enable `nextTrack`, `previousTrack`, `skipForward`, `skipBackward`, and `seekToPlaybackPosition`.
 
-#### Discussion
+## Discussion
 
 The controls for `likeTrack`, `dislikeTrack`, and `bookmarkTrack` aren’t available by default for any of these schemes. You may enable them in any control scheme except for `internetRadio`.
 

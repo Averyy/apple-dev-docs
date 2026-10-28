@@ -20,7 +20,7 @@ func accessibilityRange(for point: NSPoint) -> NSRange
 - (NSRange) accessibilityRangeForPosition:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The range of characters that make up the glyph at the given point.
 

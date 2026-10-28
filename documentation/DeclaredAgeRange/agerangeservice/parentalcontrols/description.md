@@ -18,7 +18,7 @@ A list of active parental controls, for debugging purposes.
 var description: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Returns a comma separated list of the parental control options currently enabled.
 

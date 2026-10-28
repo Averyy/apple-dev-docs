@@ -21,11 +21,11 @@ Creates an action animation containing a single event definition from an action.
 @preconcurrency static func makeActionAnimation<T>(for action: T, duration: TimeInterval = 1.0, name: String = "", bindTarget: BindTarget? = nil, blendLayer: Int32 = 0, repeatMode: AnimationRepeatMode = .none, fillMode: AnimationFillMode = [], trimStart: TimeInterval? = nil, trimEnd: TimeInterval? = nil, trimDuration: TimeInterval? = nil, offset: TimeInterval = 0, delay: TimeInterval = 0, speed: Float = 1.0) throws -> AnimationResource where T : EntityAction
 ```
 
-#### Return Value
+## Return Value
 
 An animation resource to play the given action.
 
-#### Discussion
+## Discussion
 
 > **Note**: Duration is clamped to a positive, small non zero value, if duration is zero or less.
 

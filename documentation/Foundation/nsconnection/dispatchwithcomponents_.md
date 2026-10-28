@@ -16,7 +16,7 @@ Allows subclasses to ask a connection object to dispatch component data.
 - (void) dispatchWithComponents:(NSArray *) components;
 ```
 
-#### Discussion
+## Discussion
 
 [`Port`](../port.md) subclasses should use this method to ask a connection object to dispatch Distributed Objects component data received over the wire. This will decode the data, authenticate, and send the message.
 

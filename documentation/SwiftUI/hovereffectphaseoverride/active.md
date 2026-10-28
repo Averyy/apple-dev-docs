@@ -15,7 +15,7 @@ Immediately transition to the active phase.
 static var active: HoverEffectPhaseOverride { get }
 ```
 
-#### Discussion
+## Discussion
 
 Applying this override causes a hover effect to become active immediately, regardless of whether the view is hovered or not. The transition will use the animations defined by the effect, but will ignore any delays. The effect remains active until this override is removed.
 

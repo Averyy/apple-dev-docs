@@ -5,7 +5,7 @@
 
 Build an evaluation that runs your intelligence-powered feature against samples and scores each response.
 
-#### Overview
+## Overview
 
 Evaluations replace manual spot checks with structured, repeatable measurements of your model’s output quality. Define what success looks like by translating broad quality goals into concrete metrics, then run those metrics as often as you need, catching regressions, comparing prompt strategies, and building confidence before shipping.
 
@@ -42,7 +42,7 @@ The sections that follow fill in each member.
 
 To see these four steps in use in a complete app, with code-based and model-judge scoring, synthetic data, and tool-call evaluation, see [Book Tracker: Using Evaluations to evaluate an intelligent feature](./book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
 
-#### Provide input
+## Provide input
 
 Define your dataset. Each sample carries a [`prompt`](./modelsample/prompt.md) that the model receives and an optional [`expected`](./modelsample/expected.md) value:
 
@@ -63,7 +63,7 @@ struct LetterCountEvaluation: Evaluation {
 
 Building a large, comprehensive sample set by hand is tedious; see [Generating synthetic datasets](./generating-synthetic-evaluation-datasets.md) for more details on generating samples synthetically.
 
-#### Define the subject
+## Define the subject
 
 The *subject* is the model feature you’re testing. Implement the [`subject(from:)`](./evaluation/subject%28from%29.md) method to call your intelligence-powered feature the same way you do in your app. The framework calls this method once for each sample in your dataset, and you return a [`ModelSubject`](./modelsubject.md) that wraps the output alongside any conversation transcript:
 
@@ -84,7 +84,7 @@ func subject(from sample: ModelSample<Int>) async throws -> ModelSubject<Int> {
 
 You can inspect both the output and the transcript in the detailed results.
 
-#### Add evaluators
+## Add evaluators
 
 Add evaluators that score each response. For guidance on choosing between code-based and model-judge evaluators, see [Designing specific, measurable criteria in an evaluation suite](./designing-evaluation-criteria.md). Declare a [`Metric`](./metric.md) for each measurement, then return one of its result values: [`passing(rationale:)`](./metric/passing%28rationale%29.md) or [`failing(rationale:)`](./metric/failing%28rationale%29.md) for binary checks, and [`scoring(_:rationale:)`](./metric/scoring%28_,rationale%29.md) for continuous values.
 
@@ -110,7 +110,7 @@ var evaluators: Evaluators {
 }
 ```
 
-#### Aggregate the metric summary
+## Aggregate the metric summary
 
 Finally, implement [`aggregateMetrics(using:)`](./evaluation/aggregatemetrics%28using%29.md) to define how the framework summarizes your metrics into high-level statistics:
 
@@ -136,7 +136,7 @@ func aggregateMetrics(using aggregator: inout MetricsAggregator) {
 }
 ```
 
-#### Run your evaluation
+## Run your evaluation
 
 To run an evaluation, attach the [`EvaluationTrait`](./evaluationtrait.md) to a test function using the [`evaluates(_:info:recordTranscripts:)`](../Testing/testtrait/evaluates%28_,info,recordtranscripts%29.md) test trait.
 
@@ -199,7 +199,7 @@ Use these lookups to identify failing samples for review, build follow-up datase
 
 For guidance on interpreting results and iterating on your feature, see [Designing effective evaluations](./designing-effective-evaluations.md).
 
-#### Evaluate tool-calling behavior
+## Evaluate tool-calling behavior
 
 Your intelligence-powered features may rely on tools that fetch live data, perform calculations, or trigger actions. Evaluations let you verify that the model passes the correct arguments and calls tools in the expected order.
 
@@ -282,7 +282,7 @@ For a side-by-side view, choose Compare and select a run for each side. This fig
 
 For more on evaluating tool calling, see [Evaluating tool-calling behavior](./evaluating-tool-calling-behavior.md).
 
-#### Evaluate subjective quality with a model judge
+## Evaluate subjective quality with a model judge
 
 Not every quality dimension has a clear-cut programmatic test. For subjective criteria such as tone, helpfulness, or fluency, use a [`ModelJudgeEvaluator`](./modeljudgeevaluator.md) to have a language model score responses on your behalf. Provide a rating scale and evaluation instructions, then add the model judge to your evaluators list:
 

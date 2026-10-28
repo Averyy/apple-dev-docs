@@ -16,7 +16,7 @@ struct vnop_allocate_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 Advisory locking is somewhat complicated. VNOP_ADVLOCK is overloaded for both flock() and POSIX advisory locking usage, though not all filesystems support both (or any). VFS provides an advisory locking mechanism for filesystems which can take advantage of it; vfs_setlocklocal() marks a filesystem as using VFS advisory locking support.
 

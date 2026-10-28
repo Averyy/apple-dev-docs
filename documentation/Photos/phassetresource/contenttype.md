@@ -24,7 +24,7 @@ var contentType: UTType { get }
 @property (nonatomic, copy, readonly) UTType * contentType;
 ```
 
-#### Discussion
+## Discussion
 
 This resource’s data can be retrieved via [`PHAssetResourceManager`](../phassetresourcemanager.md)
 

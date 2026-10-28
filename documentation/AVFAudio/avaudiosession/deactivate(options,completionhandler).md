@@ -28,7 +28,7 @@ func deactivate(options: AVAudioSessionDeactivationOptions = []) async throws ->
 - (void) deactivateWithOptions:(AVAudioSessionDeactivationOptions) options completionHandler:(void (^)(BOOL deactivated, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns immediately without blocking the calling thread. The system calls the completion handler with the result.
 

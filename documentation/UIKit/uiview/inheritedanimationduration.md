@@ -23,11 +23,11 @@ class var inheritedAnimationDuration: TimeInterval { get }
 @property (class, nonatomic, readonly) NSTimeInterval inheritedAnimationDuration;
 ```
 
-#### Return Value
+## Return Value
 
 The duration of the current animation.
 
-#### Discussion
+## Discussion
 
 This method only returns a non-zero value if called within a [`UIView`](../uiview.md) animation block.
 

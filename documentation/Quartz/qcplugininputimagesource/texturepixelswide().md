@@ -22,7 +22,7 @@ func texturePixelsWide() -> Int
 - (NSUInteger) texturePixelsWide;
 ```
 
-#### Return Value
+## Return Value
 
 The width of the texture, expressed in pixels.
 

@@ -12,11 +12,11 @@ Enhance the look of an exported 3D model by substituting object bounding boxes w
 - Mac Catalyst 18.2+
 - Xcode 16.2+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC23 session 10192: [Explore enhancements to RoomPlan](https://developer.apple.com/wwdc23/10192).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before you run the `RoomPlanExporter` target in Xcode:
 

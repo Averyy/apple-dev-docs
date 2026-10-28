@@ -21,11 +21,11 @@ func launchApplication(at url: URL, options: NSWorkspace.LaunchOptions = [], con
 - (NSRunningApplication *) launchApplicationAtURL:(NSURL *) url options:(NSWorkspaceLaunchOptions) options configuration:(NSDictionary<NSString *,id> *) configuration error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 If the app is already running, and [`newInstance`](./launchoptions/newinstance.md) is not specified in the `options` dictionary, then a reference to the existing app is returned; otherwise a new application reference is returned. If the application could not be launched, `nil` is returned and the error is specified in `error`.
 
-#### Discussion
+## Discussion
 
 It is safe to call this method from any thread in your app in macOS 10.6 and later.
 

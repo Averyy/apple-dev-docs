@@ -21,11 +21,11 @@ Decodes a previously-archived object graph, returning the root object.
 + (id) unarchiveTopLevelObjectWithData:(NSData *) data error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The unarchived object, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 This method produces an error if `data` does not contain valid keyed data.
 

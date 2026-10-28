@@ -5,7 +5,7 @@
 
 Error codes in the Cocoa error domain.
 
-#### Overview
+## Overview
 
 The constants in this enumeration are [`NSError`](./nserror.md) code numbers in the Cocoa error domain ([`NSCocoaErrorDomain`](./nscocoaerrordomain.md)). Other frameworks, most notably the Application Kit, provide their own [`NSCocoaErrorDomain`](./nscocoaerrordomain.md) error codes.
 

@@ -17,7 +17,7 @@ The metadata associated with the setting that requires a password for App Store 
 static let requirePasswordForPurchases: SettingMetadata<Bool>
 ```
 
-#### Discussion
+## Discussion
 
 Use `requirePasswordForPurchases` to access metadata for the [`requirePasswordForPurchases`](./requirepasswordforpurchases-swift.property.md) setting.
 

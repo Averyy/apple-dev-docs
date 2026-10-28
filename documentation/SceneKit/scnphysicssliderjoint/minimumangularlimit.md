@@ -25,7 +25,7 @@ var minimumAngularLimit: CGFloat { get set }
 @property (nonatomic) CGFloat minimumAngularLimit;
 ```
 
-#### Discussion
+## Discussion
 
 The default (and minimum) value of this property is `-M_PI`. With this value, the joint can spin clockwise (relative to the first body) with no limit.
 

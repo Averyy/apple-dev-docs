@@ -19,7 +19,7 @@ The color transformer for resolving the text color.
 @property (nonatomic, copy, nullable) UIConfigurationColorTransformer colorTransformer;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `nil`, the configuration uses [`color`](../uilistcontentconfiguration-swift.struct/textproperties-swift.struct/color.md) without any transformations.
 

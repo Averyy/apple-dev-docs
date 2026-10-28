@@ -16,7 +16,7 @@ The currently connected peripheral has outdated firmware and can't be used.
 case connectedPeripheralFirmwareOutOfDate
 ```
 
-#### Discussion
+## Discussion
 
 The connection view title corresponding to this state should be in the following format:
 

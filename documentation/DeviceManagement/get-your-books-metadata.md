@@ -9,9 +9,9 @@ Fetch metadata for your books by using their identifiers.
 **Availability**:
 - VPP License Management 2.1+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

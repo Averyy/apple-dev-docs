@@ -24,7 +24,7 @@ func removeChildren()
 - (void) removeChildren;
 ```
 
-#### Discussion
+## Discussion
 
 This function removes all members from the [`children`](./children.md) array.
 

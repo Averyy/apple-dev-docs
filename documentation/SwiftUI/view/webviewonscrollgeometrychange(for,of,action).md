@@ -20,11 +20,11 @@ nonisolated
 func webViewOnScrollGeometryChange<T>(for type: T.Type, of transform: @escaping (ScrollGeometry) -> T, action: @escaping (T, T) -> Void) -> some View where T : Hashable
 ```
 
-#### Return Value
+## Return Value
 
 A view that invokes the action when the relevant part of a web view’s scroll geometry changes.
 
-#### Discussion
+## Discussion
 
 > **Note**: The content size of web content may exceed the current size of the view’s frame, however it will never be smaller than it.
 

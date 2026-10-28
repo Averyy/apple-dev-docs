@@ -20,7 +20,7 @@ func viewportBounds(for textViewportLayoutController: NSTextViewportLayoutContro
 - (CGRect) viewportBoundsForTextViewportLayoutController:(NSTextViewportLayoutController *) textViewportLayoutController;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGRect`](../../CoreFoundation/cgrect.md).
 

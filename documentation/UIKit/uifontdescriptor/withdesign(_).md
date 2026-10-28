@@ -24,11 +24,11 @@ func withDesign(_ design: UIFontDescriptor.SystemDesign) -> UIFontDescriptor?
 - (UIFontDescriptor *) fontDescriptorWithDesign:(UIFontDescriptorSystemDesign) design;
 ```
 
-#### Return Value
+## Return Value
 
 The new font descriptor, if the original font descriptor is from a system UI font; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 This method changes the design of an existing font descriptor that describes a system UI font — for example, a font descriptor created by methods such as [`systemFont(ofSize:)`](../uifont/systemfont%28ofsize%29.md), [`preferredFont(forTextStyle:)`](../uifont/preferredfont%28fortextstyle%29.md), or [`preferredFontDescriptor(withTextStyle:)`](./preferredfontdescriptor%28withtextstyle%29.md). If the original font descriptor doesn’t describe a system font, this method returns `nil`.
 

@@ -23,7 +23,7 @@ init(title: String)
 - (instancetype) initWithTitle:(NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized default card template object.
 

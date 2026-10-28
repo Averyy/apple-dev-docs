@@ -10,7 +10,7 @@ Use windows, volumes, and immersive spaces to teach people about the Earth.
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 You can use visionOS scene types and styles to share information in fun and compelling ways. Features like volumes and immersive spaces let you put interactive virtual objects into people’s environments, or put people into a virtual environment.
 
@@ -20,7 +20,7 @@ Hello World uses these tools to teach people about the Earth — the planet we c
 
 The app uses SwiftUI to define its interface, including both 2D and 3D elements. To create, customize, and manage 3D models and effects, it also relies on the RealityKit framework and Reality Composer Pro.
 
-##### Create an entry point into the app
+### Create an entry point into the app
 
 Hello World constructs the scene that it displays at launch — the first scene that appears in the `WorldApp` structure — using a [`Window`](../SwiftUI/window.md).
 
@@ -36,7 +36,7 @@ Window(String(localized: "Hello World", comment: "The name of the app. This is t
 
 Like other platforms — for example, macOS and iOS — visionOS displays a window group as a familiar-looking window. In visionOS, people can resize and move windows around the Shared Space. Even if your app offers a sophisticated 3D experience, a window is a great starting point for an app because it eases people into the experience. It’s also a good place to provide instructions and controls.
 
-##### Present different modules using a navigation stack
+### Present different modules using a navigation stack
 
 After you watch a brief introductory animation that shows the text “Hello World” typing in, the `Modules` view that defines the primary scene’s content presents options to explore different aspects of the world. This view contains a table of contents at the root of a [`NavigationStack`](../SwiftUI/navigationstack.md).
 
@@ -69,7 +69,7 @@ enum Module: String, Identifiable, CaseIterable, Equatable {
 }
 ```
 
-##### Display an interactive globe in a new scene
+### Display an interactive globe in a new scene
 
 The `globe` module opens with a few facts about the Earth in the main window next to a decorative, flat image that supports the content. To help people understand even more, the module includes a View Globe button that opens a 3D interactive globe in a new window.
 
@@ -87,7 +87,7 @@ To be able to open multiple scene types, Hello World includes the [`UIApplicatio
 </dict>
 ```
 
-##### Declare a volume for the globe
+### Declare a volume for the globe
 
 With the key in place, the app makes use of a second [`WindowGroup`](../SwiftUI/windowgroup.md) in its [`App`](../SwiftUI/app.md) declaration. This new window group uses the `Globe` view as its content.
 
@@ -106,7 +106,7 @@ This window group creates a *volume* — which is a container that has three dim
 
 The `Globe` view inside the volume contains 3D content, but is still just a SwiftUI view. It contains two elements: a view that draws a model of the Earth, and an ornament that provides a control panel that people can use to configure the model’s appearance.
 
-##### Open and dismiss the globe volume
+### Open and dismiss the globe volume
 
 The globe module presents a View Globe button that people can tap to display or dismiss the volume, depending on the current state. Hello World achieves this behavior by creating a [`Toggle`](../SwiftUI/toggle.md) with the button style, and embedding it in a custom `GlobeToggle` view.
 
@@ -136,7 +136,7 @@ struct GlobeToggle: View {
 
 When someone taps the toggle, the `isShowingGlobe` state changes, and the [`onChange(of:initial:_:)`](../SwiftUI/view/onchange%28of,initial,_%29-4psgg.md) modifier calls the [`openWindow`](../SwiftUI/environmentvalues/openwindow.md) or [`dismissWindow`](../SwiftUI/environmentvalues/dismisswindow.md) action to open or dismiss the volume, respectively. The view gets these actions from the environment and uses an identifier that matches the volume’s identifier.
 
-##### Display objects that orbit the Earth
+### Display objects that orbit the Earth
 
 You use windows in visionOS the same way you do in other platforms. But even 2D windows in visionOS provide a small amount of depth you can use to create 3D effects — like elements that appear in front of other elements. Hello World takes advantage of this depth to present small models inline with 2D content.
 
@@ -196,7 +196,7 @@ When you add 3D effects to a 2D window, keep this guidance in mind:
 - **Ensure that elements don’t exceed the available depth.** Excess depth causes elements to clip. Account for any position or orientation changes that might occur after initial placement.
 - **Avoid models intersecting with the backing glass.** Again, account for potential movement after initial placement.
 
-##### Show Earth’s relationship to its satellites in an immersive space
+### Show Earth’s relationship to its satellites in an immersive space
 
 People can visualize how satellites move around the Earth because the app’s orbit module displays the Earth, the Moon, and a communications satellite together as a single system. People can move the system anywhere in their environment or resize it using standard gestures. They can also move themselves around the system to get different perspectives.
 
@@ -251,7 +251,7 @@ There are a few key differences from the version that appears in the “[Open an
 - The dismiss action in this case doesn’t require an identifier because people can only open one space at a time, even across apps.
 - The open and dismiss actions for spaces operate asynchronously, and so they appear inside a [`Task`](../Swift/task.md).
 
-##### View the solar system from space using full immersion
+### View the solar system from space using full immersion
 
 The app’s final module gives people a sense of the Earth’s place in the solar system. Like other modules, this one includes information and a decorative image next to a button that leads to another visualization — in this case so people can experience Earth from space.
 
@@ -293,9 +293,9 @@ This control appears in the main window to provide a way to begin the fully imme
 
 > **Note**: To learn more about monitoring the state of the immersive space and coupling it with a window, see [Associating a window with an immersive space](./associating-a-window-with-an-immersive-space.md).
 
-#### See Also
+## See Also
 
-###### Related samples
+#### Related samples
 
 - [Happy Beam](./happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
@@ -304,7 +304,7 @@ This control appears in the main window to provide a way to begin the fully imme
 - [Diorama](./diorama.md)
   Design scenes for your visionOS app using Reality Composer Pro.
 
-###### Related articles
+#### Related articles
 
 - [Creating your first visionOS app](./creating-your-first-visionos-app.md)
   Build a new visionOS app using SwiftUI and add platform-specific features.
@@ -317,7 +317,7 @@ This control appears in the main window to provide a way to begin the fully imme
 - [Positioning and sizing windows](./positioning-and-sizing-windows.md)
   Influence the initial geometry of windows that your app presents.
 
-###### Related videos
+#### Related videos
 
 - [Platforms State of the Union](https://developer.apple.com/videos/play/wwdc2023/102)
   Learn about the latest tools, technologies, and advancements to help you create even better apps across Apple platforms, including the all-new visionOS.

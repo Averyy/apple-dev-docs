@@ -25,7 +25,7 @@ case reverse
 AVSampleBufferRequestDirectionReverse
 ```
 
-#### Discussion
+## Discussion
 
 The number of previous samples allowed is subject to the [`limitCursor`](../limitcursor.md), [`preferredMinSampleCount`](../preferredminsamplecount.md), and [`maxSampleCount`](../maxsamplecount.md) property values.
 

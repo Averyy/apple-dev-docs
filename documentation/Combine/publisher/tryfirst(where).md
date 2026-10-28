@@ -21,11 +21,11 @@ Publishes the first element of a stream to satisfy a throwing predicate closure,
 func tryFirst(where predicate: @escaping (Self.Output) throws -> Bool) -> Publishers.TryFirstWhere<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that only publishes the first element of a stream that satisfies the predicate.
 
-#### Discussion
+## Discussion
 
 Use [`tryFirst(where:)`](./tryfirst%28where%29.md) when you need to republish only the first element of a stream that satisfies an error-throwing closure you specify. The publisher ignores all elements after the first. If this publisher doesn’t receive any elements, it finishes without publishing. If the predicate closure throws an error, the publisher fails.
 

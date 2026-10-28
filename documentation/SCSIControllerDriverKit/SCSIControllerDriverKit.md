@@ -9,13 +9,13 @@ Develop drivers for SCSI protocol-based devices.
 **Availability**:
 - DriverKit 20.4+
 
-#### Overview
+## Overview
 
 The SCSIControllerDriverKit framework supports the development of DriverKit extension (dext) drivers for devices that communicate using SCSI protocols.
 
 Develop your driver by subclassing [`IOUserSCSIParallelInterfaceController`](./iouserscsiparallelinterfacecontroller.md), overriding all methods the framework declares as pure virtual. Then package your driver in an app that uses the [System Extensions](../SystemExtensions/SystemExtensions.md) framework to install and upgrade the driver on a Mac.
 
-##### Creating a driver
+### Creating a driver
 
 When you subclass [`IOUserSCSIParallelInterfaceController`](./iouserscsiparallelinterfacecontroller.md), update the [`IOKitPersonalities`](../BundleResources/information-property-list/iokitpersonalities.md) key of your driver extension’s information property list file with information to match your driver to appropriate hardware. For this class, always include the keys and values in the following table:
 

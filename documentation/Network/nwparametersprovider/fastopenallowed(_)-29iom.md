@@ -21,7 +21,7 @@ Allow fast open to be used on a connection.
 func fastOpenAllowed(_ allowed: Bool) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 Use fast open for an outbound connection, which may be done at any protocol level. Use of fast open requires that the caller send idempotent data on the connection before the connection may move into the ready state.
 

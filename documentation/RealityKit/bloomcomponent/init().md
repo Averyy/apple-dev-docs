@@ -20,7 +20,7 @@ Creates a Bloom Component.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Default scope is .unbounded
 

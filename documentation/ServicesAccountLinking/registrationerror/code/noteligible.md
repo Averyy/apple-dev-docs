@@ -21,7 +21,7 @@ case notEligible
 SALRegistrationErrorNotEligible
 ```
 
-#### Discussion
+## Discussion
 
 Contact the Apple channel partnership program to resolve.
 

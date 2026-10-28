@@ -25,7 +25,7 @@ struct URLResourceKey
 typedef NSString * NSURLResourceKey;
 ```
 
-#### Discussion
+## Discussion
 
 To request information using one of these keys, pass it to the `forKey:` parameter of the [`getResourceValue(_:forKey:)`](./nsurl/getresourcevalue%28_,forkey%29.md) instance method.
 

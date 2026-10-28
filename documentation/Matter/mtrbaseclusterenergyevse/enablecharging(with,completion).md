@@ -29,7 +29,7 @@ func enableCharging(with params: MTREnergyEVSEClusterEnableChargingParams) async
 - (void) enableChargingWithParams:(MTREnergyEVSEClusterEnableChargingParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command allows a client to enable the EVSE to charge an EV, and to provide or update the maximum and minimum charge current.
 

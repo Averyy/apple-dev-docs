@@ -23,7 +23,7 @@ func applicationFinishedRestoringState()
 - (void) applicationFinishedRestoringState;
 ```
 
-#### Discussion
+## Discussion
 
 After other object decoding has completed, the system calls this method. This allows a view controller to complete setup after other state restoration, relying on the system to ensure that the states of all objects from the restoration archive have been decoded.
 

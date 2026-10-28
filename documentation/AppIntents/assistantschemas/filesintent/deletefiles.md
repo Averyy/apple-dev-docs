@@ -21,7 +21,7 @@ The app intent conforms to the schema for deleting files.
 var deleteFiles: some AssistantSchemas.Intent { get }
 ```
 
-#### Overview
+## Overview
 
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.files.deleteFiles` schema:
 

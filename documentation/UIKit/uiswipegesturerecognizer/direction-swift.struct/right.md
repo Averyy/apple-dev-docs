@@ -23,7 +23,7 @@ static var right: UISwipeGestureRecognizer.Direction { get }
 UISwipeGestureRecognizerDirectionRight
 ```
 
-#### Discussion
+## Discussion
 
 This direction is the default.
 

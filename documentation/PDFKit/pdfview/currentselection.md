@@ -24,7 +24,7 @@ var currentSelection: PDFSelection? { get set }
 @property (nonatomic, strong, nullable) PDFSelection * currentSelection;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `NULL` if no selection exists.
 

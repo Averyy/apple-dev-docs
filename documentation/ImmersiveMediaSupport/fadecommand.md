@@ -19,7 +19,7 @@ A command type for color fading during immersive media playback.
 struct FadeCommand
 ```
 
-#### Overview
+## Overview
 
 Color fades are used to either fading in into the video frame from the requested color or fading out of the video frame to the requested color. The fade commands are usually used for fading in at the start of the playback and fading out at the end of the playback. These commands are also used during immersive camera view switches during the playback.
 

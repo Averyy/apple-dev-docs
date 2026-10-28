@@ -19,7 +19,7 @@ var canRemove: Bool { get }
 @property (readonly) BOOL canRemove;
 ```
 
-#### Discussion
+## Discussion
 
 Bindings can use this method to control the enabling of user interface objects.
 

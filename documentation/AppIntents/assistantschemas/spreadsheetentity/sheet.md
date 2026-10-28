@@ -21,7 +21,7 @@ The app entity describes a sheet in a spreadsheet.
 var sheet: some AssistantSchemas.Entity { get }
 ```
 
-#### Overview
+## Overview
 
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation. The following example shows an app entity that conforms to the `.spreadsheet.sheet` schema:
 

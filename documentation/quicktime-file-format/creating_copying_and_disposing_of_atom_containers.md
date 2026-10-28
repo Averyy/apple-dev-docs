@@ -4,7 +4,7 @@
 
 Manage atoms in atom containers.
 
-#### Overview
+## Overview
 
 Before you can add atoms to an atom container, you must first create the container by calling `QTNewAtomContainer`. The code sample shown in the following calls `QTNewAtomContainer` to create an atom container.
 

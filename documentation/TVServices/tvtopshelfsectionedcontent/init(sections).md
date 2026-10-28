@@ -19,7 +19,7 @@ init(sections: [TVTopShelfItemCollection<TVTopShelfSectionedItem>])
 - (instancetype) initWithSections:(NSArray<TVTopShelfItemCollection<TVTopShelfSectionedItem *> *> *) sections;
 ```
 
-#### Return Value
+## Return Value
 
 A new sectioned content object containing the specified sections.
 

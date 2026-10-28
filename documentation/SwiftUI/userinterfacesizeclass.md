@@ -21,7 +21,7 @@ A set of values that indicate the visual size available to the view.
 enum UserInterfaceSizeClass
 ```
 
-#### Overview
+## Overview
 
 You receive a size class value when you read either the [`horizontalSizeClass`](./environmentvalues/horizontalsizeclass.md) or [`verticalSizeClass`](./environmentvalues/verticalsizeclass.md) environment value. The value tells you about the amount of space available to your views in a given direction. You can read the size class like any other of the [`EnvironmentValues`](./environmentvalues.md), by creating a property with the [`Environment`](./environment.md) property wrapper:
 

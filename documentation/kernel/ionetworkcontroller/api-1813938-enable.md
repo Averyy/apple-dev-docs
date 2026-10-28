@@ -12,11 +12,11 @@ virtual IOReturn enable(
  IONetworkInterface *interface);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnUnsupported. Drivers that override this method must return kIOReturnSuccess on success, or an error code otherwise.
 
-#### Overview
+## Overview
 
 This method is called by an interface client to enable the controller. Upon receiving this command, the controller driver must bring up the hardware and become ready to transmit and receive packets. A driver should also delay the allocation of most runtime resources until this method is called in order to conserve system resources. This method call is synchronized by the workloop's gate.
 

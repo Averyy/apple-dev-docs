@@ -15,7 +15,7 @@ The stylus side button nearest the tip.
 extern GCInputButtonName GCInputStylusPrimaryButton;
 ```
 
-#### Discussion
+## Discussion
 
 A spatial stylus has at least two buttons arranged vertically along the barrel.  The primary button is the button nearest the tip.
 

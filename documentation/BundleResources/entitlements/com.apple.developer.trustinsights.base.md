@@ -15,7 +15,7 @@ A string that describes the insight suite an app should use with the TrustInsigh
 - **Name**: `com.apple.developer.trustinsights.base`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This entitlement works with the [Trust Insights](../../TrustInsights/TrustInsights.md) framework, which allows your app to request insights relating to transactional activities.
 

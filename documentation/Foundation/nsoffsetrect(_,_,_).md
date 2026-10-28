@@ -20,7 +20,7 @@ func NSOffsetRect(_ aRect: NSRect, _ dX: Double, _ dY: Double) -> NSRect
 extern NSRect NSOffsetRect(NSRect aRect, CGFloat dX, CGFloat dY);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of `aRect`, with its location shifted by `dX` along the x axis and by `dY` along the y axis.
 

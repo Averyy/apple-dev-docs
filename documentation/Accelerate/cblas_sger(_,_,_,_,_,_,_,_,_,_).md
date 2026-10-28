@@ -25,7 +25,7 @@ func cblas_sger(_ ORDER: CBLAS_ORDER, _ M: __LAPACK_int, _ N: __LAPACK_int, _ AL
 void cblas_sger(const enum CBLAS_ORDER ORDER, const __LAPACK_int M, const __LAPACK_int N, const float ALPHA, const float *X, const __LAPACK_int INCX, const float *Y, const __LAPACK_int INCY, float *A, const __LAPACK_int LDA);
 ```
 
-#### Discussion
+## Discussion
 
 Computes `alpha*x*y' + A`.
 

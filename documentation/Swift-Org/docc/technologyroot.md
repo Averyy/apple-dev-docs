@@ -20,7 +20,7 @@ Configures an article to become a top-level page.
 @TechnologyRoot
 ```
 
-#### Overview
+## Overview
 
 If your documentation only consists of articles, without any framework documentation or other top-level pages, DocC will use the only article or the article with the same base name as the documentation catalog (’.docc’ directory) as the top-level page. If the documentation doesn’t contain an article with the same base name as the documentation catalog, DocC will synthesize a minimal top-level page.
 
@@ -36,7 +36,7 @@ To customize which article is the top-level page of your documentation, add a `T
 
 > **Earlier Versions**:  Before Swift-DocC 6.0, article-only documentation catalogs require one of the articles to be marked as a `TechnologyRoot`.
 
-##### Containing Elements
+### Containing Elements
 
 The following items can include a technology root element:
 

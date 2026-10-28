@@ -24,7 +24,7 @@ var boostAmount: Float { get set }
 @property (readwrite) float boostAmount;
 ```
 
-#### Discussion
+## Discussion
 
 The value should be in the range of `0...1`. A value of `0` indicates no global tone curve (linear response), and a value of `1` indicates full global tone curve. The default value is `1`.
 

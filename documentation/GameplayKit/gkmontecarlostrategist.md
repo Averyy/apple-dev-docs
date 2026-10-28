@@ -24,17 +24,17 @@ class GKMonteCarloStrategist
 @interface GKMonteCarloStrategist : NSObject
 ```
 
-#### Overview
+## Overview
 
 To use this strategy, you indicate whether a possible states of your game model represents a win, and the strategist randomly searches possible game model states in order to find moves that will likely result in winning the game. You provide information about your game model to the strategist by implementing the [`GKGameModel`](./gkgamemodel.md), [`GKGameModelPlayer`](./gkgamemodelplayer.md), and [`GKGameModelUpdate`](./gkgamemodelupdate.md) protocols in your custom classes, then use the strategist’s methods to find optimal moves.
 
-##### Choosing a Strategist
+### Choosing a Strategist
 
 The Monte Carlo strategist is one of several strategist classes that GameplayKit provides. The key advantage of the [`GKMonteCarloStrategist`](./gkmontecarlostrategist.md) class is performance. By using random sampling to make educated guesses about which sequences of moves to simulate, this strategy can arrive at a decision quickly even for games with large and complex state spaces. The cost of this strategy is strength of gameplay: because the strategist randomly samples possible moves, it may miss the best moves. Additionally, this strategy doesn’t need a scoring method to rate each game model state—instead, your game model class needs to implement only the [`isWin(for:)`](./gkgamemodel/iswin%28for%29.md) method.
 
 See the [`GKStrategist`](./gkstrategist.md) protocol for alternate strategies, as well as the methods and properties supported by all strategist classes.
 
-##### Using a Monte Carlo Strategist
+### Using a Monte Carlo Strategist
 
 Using the Monte Carlo strategist in a game requires the following steps:
 

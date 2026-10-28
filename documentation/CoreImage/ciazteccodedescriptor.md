@@ -24,7 +24,7 @@ class CIAztecCodeDescriptor
 @interface CIAztecCodeDescriptor : CIBarcodeDescriptor
 ```
 
-#### Overview
+## Overview
 
 An Aztec code symbol is a 2D barcode format defined by the ISO/IEC 24778:2008 standard. It encodes data in concentric square rings around a central bullseye pattern.
 

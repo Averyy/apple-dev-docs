@@ -23,7 +23,7 @@ init(attributedName: NSAttributedString, target: Any?, selector: Selector)
 - (instancetype) initWithAttributedName:(NSAttributedString *) attributedName target:(id) target selector:(SEL) selector;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized custom action object.
 

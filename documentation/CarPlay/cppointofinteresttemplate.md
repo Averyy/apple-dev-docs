@@ -22,7 +22,7 @@ class CPPointOfInterestTemplate
 @interface CPPointOfInterestTemplate : CPTemplate
 ```
 
-#### Overview
+## Overview
 
 The Point of Interest template displays selectable instances of [`CPPointOfInterest`](./cppointofinterest.md) as annotations on the template’s map, and as items in a scrollable picker that the template overlays on the map. When the user selects a point of interest, the template displays a detail card that contains secondary information and optional actions the user can perform. The template manages clustering points of interest, selecting a point of interest, and zooming and panning the map.
 

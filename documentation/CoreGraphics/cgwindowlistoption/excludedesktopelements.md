@@ -18,7 +18,7 @@ static var excludeDesktopElements: CGWindowListOption { get }
 kCGWindowListExcludeDesktopElements
 ```
 
-#### Discussion
+## Discussion
 
 Exclude any windows from the list that are elements of the desktop, including the background picture and desktop icons. You may combine this option with the other options.
 

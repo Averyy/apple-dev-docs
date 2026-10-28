@@ -29,7 +29,7 @@ class func sentenceEmbedding(for language: NLLanguage) -> NLEmbedding?
 
 - [Finding similarities between pieces of text](../finding-similarities-between-pieces-of-text.md)
 
-#### Return Value
+## Return Value
 
 An [`NLEmbedding`](../nlembedding.md) if available, otherwise `nil`.
 

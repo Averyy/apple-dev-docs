@@ -24,11 +24,11 @@ func makeMovieHeader(fileType: AVFileType) throws -> Data
 - (NSData *) movieHeaderWithFileType:(AVFileType) fileType error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSData`](../../Foundation/nsdata.md) object containing the movie header.
 
-#### Discussion
+## Discussion
 
 The created movie header is a pure reference movie, with no base URL, suitable for use on the pasteboard.
 

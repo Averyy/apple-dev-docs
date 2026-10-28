@@ -16,7 +16,7 @@ get showsPointsOfInterest(): boolean;
 set showsPointsOfInterest(showsPointsOfInterest: boolean);
 ```
 
-#### Discussion
+## Discussion
 
 This property determines whether the map shows points of interest in standard and hybrid modes. A point of interest can be an airport, park, museum, hospital, and so on. The map represents a point of interest with its name and a color-coded icon.
 

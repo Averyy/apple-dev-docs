@@ -17,11 +17,11 @@ Augments or replaces the default set of trusted root certificates for this sessi
 OSStatus SSLSetTrustedRoots(SSLContextRef context, CFArrayRef trustedRoots, Boolean replaceExisting);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Each successive call to this function with the `replaceExisting` parameter set to `false` results in accumulation of additional root certificates. To see the current set of trusted root certificates, call the [`SSLCopyTrustedRoots`](./sslcopytrustedroots.md) function.
 

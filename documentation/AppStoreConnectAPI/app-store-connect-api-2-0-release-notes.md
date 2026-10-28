@@ -5,21 +5,21 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 2.0 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New features
+### New features
 
 - Added support for creating, managing, and submitting for review your In-App Purchases and auto-renewable subscriptions, using the resources now available in the [In-App Purchase](./in-app-purchase.md) and [Auto-Renewable Subscriptions](./auto-renewable-subscriptions.md) collections. The [Promoted Purchases](./promoted-purchases.md) resources can now manage promoted In-App Purchases and auto-renewable subscriptions, including their visibility and images. The resources in the [In-App Purchase and Subscription App Store Review Submissions](./in-app-purchase-and-subscription-app-store-review-submissions.md) collection manage submissions for review.
 - The [Customer Reviews](./customer-reviews.md) and [Customer Review Responses](./customer-review-responses.md) resources support retrieving customer reviews for your app that appear on the App Store, and managing your responses to the customer reviews.
 - [Power and Performance Metrics and Logs](./power-and-performance-metrics-and-logs.md) adds a new `HANGS` diagnostic type filter for [`List all diagnostic signatures for a build`](./get-v1-builds-_id_-diagnosticsignatures.md), updates the schema for responses in [`xcodeMetrics`](./xcodemetrics.md), and adds support for long-lived tokens as described in [Generating Tokens for API Requests](./generating-tokens-for-api-requests.md).
 
-##### Deprecations
+### Deprecations
 
 - The [`List all In-App Purchases for an app v1`](./get-v1-apps-_id_-inapppurchases.md) endpoint is now deprecated and replaced with the [`List all In-App Purchases for an app`](./get-v1-apps-_id_-inapppurchasesv2.md) endpoint.
 
-##### Removals
+### Removals
 
 - App Store Connect APIs for declaring IDFA usage are now removed. In your app, APIs that offer IDFA functionality are still available but require obtaining the user’s permission using [App Tracking Transparency](../AppTrackingTransparency/AppTrackingTransparency.md). You may also need to provide information about IDFA usage in your app’s privacy details on the App Store. For more information, see [User Privacy and Data Use](https://developer.apple.com/app-store/user-privacy-and-data-use/) and [App Privacy Details](https://developer.apple.com/app-store/app-privacy-details/).
 

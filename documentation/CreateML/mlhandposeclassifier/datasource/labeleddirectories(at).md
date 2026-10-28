@@ -19,7 +19,7 @@ Creates a data source from a folder with subfolders that each contain images of 
 case labeledDirectories(at: URL)
 ```
 
-#### Discussion
+## Discussion
 
 - at: The URL to a folder in the file system that contains folders of hand pose images. The data source uses the name of each folder as the classification label for the hand pose images it contains.
 

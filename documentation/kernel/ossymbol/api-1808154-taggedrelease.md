@@ -13,7 +13,7 @@ virtual void taggedRelease(
  const intfreeWhen) const;
 ```
 
-#### Overview
+## Overview
 
 Because OSSymbol shares instances, the reference-counting functions must synchronize access to the class-internal tables used to track those instances.
 

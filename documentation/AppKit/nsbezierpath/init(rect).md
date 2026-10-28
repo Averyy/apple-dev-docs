@@ -19,11 +19,11 @@ init(rect: NSRect)
 + (NSBezierPath *) bezierPathWithRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 A new path object with the rectangular path.
 
-#### Discussion
+## Discussion
 
 The path is constructed by starting at the origin of `aRect` and adding line segments in a counterclockwise direction.
 

@@ -17,7 +17,7 @@ An object that represents a networking extension process.
 @interface BENetworkingProcess : NSObject
 ```
 
-#### Overview
+## Overview
 
 A browser app can have one or more networking extensions, each of which need a separate bundle identifier. The app can launch only one instance of each networking extension.
 

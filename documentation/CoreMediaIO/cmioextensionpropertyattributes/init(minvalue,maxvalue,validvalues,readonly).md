@@ -20,7 +20,7 @@ init(minValue: ObjectType?, maxValue: ObjectType?, validValues: [ObjectType]?, r
 - (instancetype) initWithMinValue:(ObjectType) minValue maxValue:(ObjectType) maxValue validValues:(NSArray<id> *) validValues readOnly:(BOOL) readOnly;
 ```
 
-#### Discussion
+## Discussion
 
 Configure the attributes of a property by optionally specifying:
 

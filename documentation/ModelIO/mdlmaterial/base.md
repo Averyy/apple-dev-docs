@@ -24,7 +24,7 @@ var base: MDLMaterial? { get set }
 @property (nonatomic, retain, nullable) MDLMaterial * baseMaterial;
 ```
 
-#### Discussion
+## Discussion
 
 When you use the [`property(with:)`](./property%28with%29.md), [`propertyNamed(_:)`](./propertynamed%28_%29.md), or [`subscript(_:)`](./subscript%28_%29-323j3.md) method to access material properties, the [`MDLMaterial`](../mdlmaterial.md) class first checks whether the material itself has a material property with the specified name or semantic. If not, those methods forward to the corresponding method of the other [`MDLMaterial`](../mdlmaterial.md) object specified by this property.
 

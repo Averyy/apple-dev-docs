@@ -14,7 +14,7 @@
 kAECanSwitchLayer = 0x00000040
 ```
 
-#### Discussion
+## Discussion
 
 The application switch preference—if both the client and server allow interaction, and if the client application is the active application on the local computer and is waiting for a reply (that is, it has set the `kAEWaitReply` flag), `AEInteractWithUser` brings the server directly to the foreground. Otherwise, `AEInteractWithUser` uses the Notification Manager to request that the user bring the server application to the foreground.
 

@@ -23,7 +23,7 @@ static let microphone: AVCaptureDevice.DeviceType
 extern AVCaptureDeviceType const AVCaptureDeviceTypeMicrophone;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS and tvOS, the system only exposes one capture device of this type. The audio routing subsystem decides which physical microphone to use, be it a built-in microphone, a wired headset, or an external microphone. The microphone device’s [`localizedName`](../localizedname.md) changes as the audio subsystem switches to a different physical device.
 

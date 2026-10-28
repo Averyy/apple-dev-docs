@@ -24,7 +24,7 @@ var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm { get set }
 @property (nonatomic, copy) AVAudioTimePitchAlgorithm audioTimePitchAlgorithm;
 ```
 
-#### Discussion
+## Discussion
 
 See [Time pitch algorithm settings](../time-pitch-algorithm-settings.md) for possible values. The system throws an exception if you set this property to a value other than one of the defined constants.
 

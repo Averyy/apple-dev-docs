@@ -25,7 +25,7 @@ struct SparseOpaqueSubfactor_Double
 typedef struct { ... } SparseOpaqueSubfactor_Double;
 ```
 
-#### Overview
+## Overview
 
 - **`attributes`**: Attributes of subfactor. Notably transpose indicates whether it should be considered as the transpose of its underlying contents (e.g. should it count as L or L^T if `.contents=SparseSubfactorL`).
 - **`contents`**: Subfactor this represents, e.g. L or Q.

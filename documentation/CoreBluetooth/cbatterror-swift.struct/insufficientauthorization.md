@@ -21,7 +21,7 @@ Reading or writing the attribute’s value failed for lack of authorization.
 static var insufficientAuthorization: CBATTError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates you must obtain authorization before reading or writing the attribute’s value.
 

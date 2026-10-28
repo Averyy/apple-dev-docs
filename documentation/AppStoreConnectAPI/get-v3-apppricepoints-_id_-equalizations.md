@@ -13,9 +13,9 @@ List all equivalent app prices points to a base price point.
 
 - [App Store Connect API 2.3 release notes](./app-store-connect-api-2-3-release-notes.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

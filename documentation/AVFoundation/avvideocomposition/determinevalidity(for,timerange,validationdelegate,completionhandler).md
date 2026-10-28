@@ -30,7 +30,7 @@ func isValid(for asset: AVAsset?, timeRange: CMTimeRange, validationDelegate: (a
 - (void) determineValidityForAsset:(AVAsset *) asset timeRange:(CMTimeRange) timeRange validationDelegate:(id<AVVideoCompositionValidationHandling>) validationDelegate completionHandler:(void (^)(BOOL isValid, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 During validation, the video composition calls the validation delegate, if one exists, with a reference to any trouble spots in the video composition.
 

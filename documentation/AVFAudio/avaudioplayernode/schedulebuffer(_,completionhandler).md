@@ -29,7 +29,7 @@ func scheduleBuffer(_ buffer: AVAudioPCMBuffer) async
 - (void) scheduleBuffer:(AVAudioPCMBuffer *) buffer completionHandler:(AVAudioNodeCompletionHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

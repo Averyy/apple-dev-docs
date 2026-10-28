@@ -30,7 +30,7 @@ var charactersRemaining: NSNumber! { get set }
 @property (atomic, strong) NSNumber * charactersRemaining;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to a non-`nil` value when you want to make the character count view appear in the compose view (changing the value redraws the character count view). The default value of this property is `nil`.
 

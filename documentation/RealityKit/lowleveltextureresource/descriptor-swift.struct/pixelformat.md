@@ -18,7 +18,7 @@ The size and bit layout of all pixels in the texture.
 var pixelFormat: MTLPixelFormat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLTextureDescriptor.pixelFormat`.
 

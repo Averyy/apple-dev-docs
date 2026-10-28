@@ -24,7 +24,7 @@ var kAudioFormatProperty_ValidateChannelLayout: AudioFormatPropertyID { get }
 kAudioFormatProperty_ValidateChannelLayout
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the validity of the [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) struct provided as the specifier. The property value and size are not used and must be set to `NULL`. This is useful if the layout has come from an untrusted source such as a file. It returns `noErr` if the `AudioChannelLayout` is OK, [`kAudio_ParamError`](../CoreAudioTypes/kaudio_paramerror.md) if there is a structural problem with the layout, or [`kAudioFormatUnknownFormatError`](./kaudioformatunknownformaterror.md) for unrecognized layout tags or channel labels.
 

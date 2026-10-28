@@ -20,7 +20,7 @@ func ColorSyncUnregisterDevice(_ deviceClass: CFString!, _ deviceID: CFUUID!) ->
 extern bool ColorSyncUnregisterDevice(CFStringRef deviceClass, CFUUIDRef deviceID);
 ```
 
-#### Return Value
+## Return Value
 
 `true` on success and `false` in case of failure.
 

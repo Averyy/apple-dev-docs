@@ -22,7 +22,7 @@ var metadata: [String : Any] { get }
 @property (readonly) NSDictionary<NSString *,id> * metadata;
 ```
 
-#### Discussion
+## Discussion
 
 See `CGImageProperties` for possible keys and values. Metadata captured with a photo may include image orientation, Exif camera properties, and Live Photo metadata.
 

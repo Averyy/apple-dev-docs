@@ -24,11 +24,11 @@ init(width: Int, height: Int, pixelFormat: MTLPixelFormat, commandBuffer: (any M
 - (instancetype) initWithWidth:(NSUInteger) width height:(NSUInteger) height pixelFormat:(MTLPixelFormat) pixelFormat commandBuffer:(id<MTLCommandBuffer>) commandBuffer mtlTextureProvider:(id<MTLTexture> (^)()) block;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIRenderDestination`](../cirenderdestination.md) object for rendering to a Metal texture.
 
-#### Discussion
+## Discussion
 
 The destination’s [`colorSpace`](./colorspace.md) property will default to a [`CGColorSpace`](../../CoreGraphics/cgcolorspace.md) created with [`sRGB`](../../CoreGraphics/cgcolorspace/srgb.md), [`extendedSRGB`](../../CoreGraphics/cgcolorspace/extendedsrgb.md), or [`genericGrayGamma2_2`](../../CoreGraphics/cgcolorspace/genericgraygamma2_2.md).
 

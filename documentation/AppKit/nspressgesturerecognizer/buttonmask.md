@@ -19,7 +19,7 @@ var buttonMask: Int { get set }
 @property NSUInteger buttonMask;
 ```
 
-#### Discussion
+## Discussion
 
 Bit 0 represents the primary button, bit 1 is the secondary button, and so on. So to track clicks of the secondary button, assign the value `0x2` (which corresponds to a `1` in bit 1) to this property. The default value of this property is `0x1`, which detects clicks in the primary mouse button.
 

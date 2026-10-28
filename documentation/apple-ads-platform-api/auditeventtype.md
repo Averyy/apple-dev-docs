@@ -21,7 +21,7 @@ string AuditEventType
 - `UPDATE`: The system modifies one or more fields on an existing entity. Both `oldValues` and `newValues` are populated.
 - `DELETE`: The system soft-deletes the entity. Because it implements deletion as a record update, `newValues` is populated. Expect fields such as the deleted flag, status, and transaction ID to appear with their updated values. `oldValues` reflects the pre-deletion state of each changed field.
 
-#### Discussion
+## Discussion
 
 Use `AuditEventType` values in the `eventType` filter of an [`AuditQuery`](./auditquery.md) request to narrow results to specific change operations:
 

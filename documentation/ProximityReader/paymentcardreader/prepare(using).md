@@ -21,11 +21,11 @@ func prepare(using token: PaymentCardReader.Token) async throws -> PaymentCardRe
 
 - [Adding support for Tap to Pay on iPhone to your app](../adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 
-#### Return Value
+## Return Value
 
 [`PaymentCardReaderSession`](../paymentcardreadersession.md) when successful.
 
-#### Discussion
+## Discussion
 
 Call this function to configure Tap to Pay on iPhone on someone’s device. This method verifies that the device is able to read contactless cards and is properly configured to process transactions.
 

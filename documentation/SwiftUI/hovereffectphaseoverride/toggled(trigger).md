@@ -15,7 +15,7 @@ Immediately transition to the opposite of an effect’s current phase.
 static func toggled(trigger: some Equatable) -> HoverEffectPhaseOverride
 ```
 
-#### Discussion
+## Discussion
 
 Applying this override causes an effect to transition to the opposite of its current phase at the moment the override is applied. If the effect is `active`, this is equivalent to applying the `inactive` override (and vice versa). Hover effects may be applied outside the app process, so this override allows the current phase to be toggled without needing to know the current phase.
 

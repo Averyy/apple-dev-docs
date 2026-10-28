@@ -24,7 +24,7 @@ class PKPaymentSummaryItem
 @interface PKPaymentSummaryItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 For shipping cost, use the [`PKShippingMethod`](./pkshippingmethod.md) subclass.
 

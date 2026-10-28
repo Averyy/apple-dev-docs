@@ -18,7 +18,7 @@ A priority that keeps the item in the toolbar longer than items with the default
 static let high: ToolbarItemVisibilityPriority
 ```
 
-#### Discussion
+## Discussion
 
 Use for frequently used actions that need to stay visible as the toolbar shrinks.
 

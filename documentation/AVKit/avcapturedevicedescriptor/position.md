@@ -21,7 +21,7 @@ var position: AVCaptureDevice.Position { get }
 @property (nonatomic, readonly) AVCaptureDevicePosition position;
 ```
 
-#### Discussion
+## Discussion
 
 This value matches the [`position`](../../AVFoundation/avcapturedevice/position-swift.property.md) of the camera it describes. Position describes the hardware, not the direction the camera faces in relation to your view.
 

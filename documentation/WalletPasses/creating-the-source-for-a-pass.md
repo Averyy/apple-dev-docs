@@ -5,7 +5,7 @@
 
 Create the directory structure and add source files and images to define a pass.
 
-#### Overview
+## Overview
 
 The source for your pass includes all the information the system needs to show it to the user:
 
@@ -15,7 +15,7 @@ The source for your pass includes all the information the system needs to show i
 
 Create the source in a directory that you use to create the final distributable pass [`Bundle`](../Foundation/bundle.md). For information on building a pass from the source, see [Building a Pass](./building-a-pass.md).
 
-##### Create the Directory and add Files for the Pass
+### Create the Directory and add Files for the Pass
 
 First create a directory to hold all the source files. The name of the directory is the name of the final pass file followed by `.pass`. For example, `Lift It Membership.pass` is the name of the top-level directory for the source of the Lift It membership pass.
 
@@ -25,7 +25,7 @@ The following figure shows the directory structure for a simple pass that’s lo
 
 ![A file structure diagram that shows the files and directories for an example pass. At the top is a directory called simple.pass. Inside that directory are the icon and background images files at different resolutions and the pass.json file. There are two localization directories, one called en.lproj for the English localization and one called zh-Hans.lproj for Simplified Chinese. Inside each of the localization folders are the image files for the logo and the pass.strings file.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/media-3744498@2x.png)
 
-##### Add the images for the Pass
+### Add the images for the Pass
 
 Customize the look of your pass by using images for a logo and other items. All passes require an icon:
 
@@ -34,7 +34,7 @@ Customize the look of your pass by using images for a logo and other items. All 
 
 Some types of passes include other types of images, such as a background. For more information, see [Pass Design and Creation.](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/Creating.html#//apple_ref/doc/uid/TP40012195-CH4-SW1)
 
-##### Add Localization to the Pass
+### Add Localization to the Pass
 
 Expand your audience by localizing the strings and images of your pass to different languages and regions.
 
@@ -50,7 +50,7 @@ Localize an image by adding the location-specific image files to each localizati
 
 > **Note**:  Adding an image of the same name to the top-level folder of the pass overrides any localized versions. In addition, the localized image of a pass may not update after adding the pass to Wallet.
 
-##### Localize the Strings
+### Localize the Strings
 
 When a user opens a pass, the system localizes displayed strings in two different ways. The system localizes pass fields that contain dates, times, and currencies that use standard formats in the `pass.json` file. For example, in the pass shown above, the expiration date value is an ISO 8601 date in [`PassFieldContent`](./passfieldcontent.md):
 

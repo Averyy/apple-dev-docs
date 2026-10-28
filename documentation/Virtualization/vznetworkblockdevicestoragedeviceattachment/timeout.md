@@ -19,7 +19,7 @@ var timeout: TimeInterval { get }
 @property (readonly) NSTimeInterval timeout;
 ```
 
-#### Discussion
+## Discussion
 
 When the timeout expires, the client attempts to reconnect with the server. If after several retries, the client can’t reestablish a connection to the server, the framework invokes the [`attachment(_:didEncounterError:)`](../vznetworkblockdevicestoragedeviceattachmentdelegate/attachment%28_,didencountererror%29.md) delegate method.
 

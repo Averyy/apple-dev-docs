@@ -15,7 +15,7 @@ Pass a `CFURLRef` in the `speechInfo` parameter to write to this file, or `NULL`
 var soOutputToFileWithCFURL: OSType { get }
 ```
 
-#### Discussion
+## Discussion
 
 This selector works with the `SetSpeechInfo` function.
 

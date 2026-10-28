@@ -15,7 +15,7 @@ Sets the current sample rate for the clock device.
 kern_return_t SetSampleRate(double in_sample_rate);
 ```
 
-#### Discussion
+## Discussion
 
 Changing the sample rate will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the sample rate.
 

@@ -29,7 +29,7 @@ func didChangeSize(_ oldSize: CGSize)
 
 - [Scaling a Scene’s Content to Fit the View](../scaling-a-scene-s-content-to-fit-the-view.md)
 
-#### Discussion
+## Discussion
 
 This method is intended to be overridden in a subclass. Typically, you use this method to adjust the positions of nodes in the scene.
 

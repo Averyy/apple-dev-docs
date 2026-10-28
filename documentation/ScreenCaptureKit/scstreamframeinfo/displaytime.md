@@ -24,7 +24,7 @@ static let displayTime: SCStreamFrameInfo
 extern SCStreamFrameInfo const SCStreamFrameInfoDisplayTime;
 ```
 
-#### Discussion
+## Discussion
 
 For a frame event, this value represents the time the window server displays the frame.
 

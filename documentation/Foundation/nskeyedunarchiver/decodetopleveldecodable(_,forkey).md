@@ -22,7 +22,7 @@ Decodes a top-level decodable value associated with a given key.
 func decodeTopLevelDecodable<T>(_ type: T.Type, forKey key: String) throws -> T? where T : Decodable
 ```
 
-#### Discussion
+## Discussion
 
 If the archive is not a valid property list, this method throws the [`DecodingError.dataCorrupted(_:)`](../../Swift/decodingerror/datacorrupted%28_%29.md) error. If a value within the archive fails to decode, this method throws the corresponding error.
 

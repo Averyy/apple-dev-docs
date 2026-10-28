@@ -21,7 +21,7 @@ init(title: String?, gridButtons: [CPGridButton])
 - (instancetype) initWithTitle:(NSString *) title gridButtons:(NSArray<CPGridButton *> *) gridButtons;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized grid template.
 

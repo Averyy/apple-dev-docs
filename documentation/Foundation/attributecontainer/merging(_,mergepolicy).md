@@ -21,7 +21,7 @@ Returns an attribute container by merging the container’s attributes with thos
 func merging(_ other: AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy = .keepNew) -> AttributeContainer
 ```
 
-#### Return Value
+## Return Value
 
 An attribute container created by merging the source container’s attributes with those in another attribute container.
 

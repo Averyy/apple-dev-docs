@@ -24,7 +24,7 @@ class HKVisionPrism
 @interface HKVisionPrism : NSObject
 ```
 
-#### Overview
+## Overview
 
 To include prism information in a glasses prescription, start by creating an [`HKVisionPrism`](./hkvisionprism.md) object.
 

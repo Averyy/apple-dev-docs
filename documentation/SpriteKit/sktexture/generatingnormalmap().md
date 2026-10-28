@@ -25,11 +25,11 @@ func generatingNormalMap() -> Self
 - (instancetype) textureByGeneratingNormalMap;
 ```
 
-#### Return Value
+## Return Value
 
 A new texture object that contains a normal map.
 
-#### Discussion
+## Discussion
 
 A normal map texture is similar to an image texture, but instead of holding image data to be displayed onscreen, every texel represents a normal vector. Normal map textures are used to simulate 3D lighting (see the [`normalTexture`](../skspritenode/normaltexture.md) property) or used to generate velocity values (see [`velocityField(with:)`](../skfieldnode/velocityfield%28with%29.md)).
 

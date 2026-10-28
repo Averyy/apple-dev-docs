@@ -16,7 +16,7 @@ Manipulates a pool of commands which inherit from IOCommand.
 class IOCommandPool : OSObject
 ```
 
-#### Overview
+## Overview
 
 The IOCommandPool class is used to manipulate a pool of commands which inherit from IOCommand. It includes a factory method to create a pool of a certain size. Once the factory method is invoked, the semaphore is set to zero. The caller must then put commands in the pool by creating the command (via the controller's factory method or a memory allocation) and calling the returnCommand method with the newly created command as its argument.
 

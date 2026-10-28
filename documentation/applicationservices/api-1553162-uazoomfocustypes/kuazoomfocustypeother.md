@@ -13,7 +13,7 @@
 kUAZoomFocusTypeOther = 0
 ```
 
-#### Discussion
+## Discussion
 
 An event is requesting focus.
 

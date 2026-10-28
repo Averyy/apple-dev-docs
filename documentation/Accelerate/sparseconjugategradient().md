@@ -25,11 +25,11 @@ func SparseConjugateGradient() -> SparseIterativeMethod
 static SparseIterativeMethod SparseConjugateGradient();
 ```
 
-#### Return Value
+## Return Value
 
 A [`SparseIterativeMethod`](./sparseiterativemethod.md) structure that represents a default conjugate gradient method.
 
-#### Discussion
+## Discussion
 
 Use CG to solve *Ax = b* when *A* is symmetric positive-definite. The method may break down or fail to converge if *A* isn’t positive-definite.
 

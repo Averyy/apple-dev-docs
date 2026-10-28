@@ -25,11 +25,11 @@ func prepareToRecord() -> Bool
 - (BOOL) prepareToRecord;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Calling this method creates an audio file at the URL you used to create the recorder. If a file already exists at that location, this method overwrites it.
 

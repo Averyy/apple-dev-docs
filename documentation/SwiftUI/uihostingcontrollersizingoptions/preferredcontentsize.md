@@ -19,7 +19,7 @@ The hosting controller tracks its content’s ideal size in its preferred conten
 static let preferredContentSize: UIHostingControllerSizingOptions
 ```
 
-#### Discussion
+## Discussion
 
 Use this option when using a hosting controller with a container view controller that requires up-to-date knowledge of the hosting controller’s ideal size.
 

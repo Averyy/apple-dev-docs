@@ -23,7 +23,7 @@ var automaticModeOptions: NSTextInsertionIndicator.AutomaticModeOptions { get se
 
 - [Adopting the system text cursor in custom text views](../adopting-the-system-text-cursor-in-custom-text-views.md)
 
-#### Discussion
+## Discussion
 
 Defaults to [`showEffectsView`](./automaticmodeoptions-swift.struct/showeffectsview.md).
 

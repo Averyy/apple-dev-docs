@@ -19,7 +19,7 @@ func windowDidLoad()
 - (void) windowDidLoad;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation does nothing.
 

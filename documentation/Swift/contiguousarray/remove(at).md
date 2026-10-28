@@ -22,11 +22,11 @@ Removes and returns the element at the specified position.
 mutating func remove(at index: Int) -> Element
 ```
 
-#### Return Value
+## Return Value
 
 The element at the specified index.
 
-#### Discussion
+## Discussion
 
 All the elements following the specified position are moved up to close the gap.
 

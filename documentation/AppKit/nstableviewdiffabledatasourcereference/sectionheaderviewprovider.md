@@ -19,7 +19,7 @@ var sectionHeaderViewProvider: NSTableViewDiffableDataSourceReferenceSectionHead
 @property (copy, nullable) NSTableViewDiffableDataSourceSectionHeaderViewProvider sectionHeaderViewProvider;
 ```
 
-#### Discussion
+## Discussion
 
 This property replaces the [`tableView(_:viewFor:row:)`](../nstableviewdelegate/tableview%28_,viewfor,row%29.md) method for group rows when the `tableColumn` parameter in [`tableView(_:viewFor:row:)`](../nstableviewdelegate/tableview%28_,viewfor,row%29.md) would be `nil`. Setting this property means the table view never invokes its delegate’s [`tableView(_:isGroupRow:)`](../nstableviewdelegate/tableview%28_,isgrouprow%29.md) method. Instead, it uses the current snapshot’s sections.
 

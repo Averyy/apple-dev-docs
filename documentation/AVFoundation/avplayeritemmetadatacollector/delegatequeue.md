@@ -25,7 +25,7 @@ var delegateQueue: dispatch_queue_t? { get }
 @property (nonatomic, readonly, nullable) dispatch_queue_t delegateQueue;
 ```
 
-#### Discussion
+## Discussion
 
 This property is not key-value observable.
 

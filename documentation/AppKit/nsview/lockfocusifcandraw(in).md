@@ -21,7 +21,7 @@ func lockFocusIfCanDraw(in context: NSGraphicsContext) -> Bool
 - (BOOL) lockFocusIfCanDrawInContext:(NSGraphicsContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; otherwise, returns [`false`](../../Swift/false.md).
 

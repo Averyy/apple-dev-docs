@@ -23,7 +23,7 @@ func skipToNextItem()
 - (void) skipToNextItem;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method when already at the last item in the playback queue ends playback.
 

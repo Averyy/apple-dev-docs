@@ -22,11 +22,11 @@ Starts or continues decoding a code unit sequence into Unicode scalar values.
 mutating func decode<I>(_ input: inout I) -> UnicodeDecodingResult where I : IteratorProtocol, Self.CodeUnit == I.Element
 ```
 
-#### Return Value
+## Return Value
 
 A `UnicodeDecodingResult` instance, representing the next Unicode scalar, an indication of an error, or an indication that the UTF sequence has been fully decoded.
 
-#### Discussion
+## Discussion
 
 To decode a code unit sequence completely, call this method repeatedly until it returns `UnicodeDecodingResult.emptyInput`. Checking that the iterator was exhausted is not sufficient, because the decoder can store buffered data from the input iterator.
 

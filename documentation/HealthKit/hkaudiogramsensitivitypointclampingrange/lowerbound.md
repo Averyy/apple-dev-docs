@@ -23,7 +23,7 @@ var lowerBound: HKQuantity? { get }
 @property (nonatomic, copy, readonly, nullable) HKQuantity * lowerBound;
 ```
 
-#### Discussion
+## Discussion
 
 The lower bound of the clamping range, if any, in dBHL.
 

@@ -20,7 +20,7 @@ The function used to respond to action skipped events.
 mutating func actionSkipped(event: Self.EventType)
 ```
 
-#### Discussion
+## Discussion
 
 An event interval can be skipped due to scrubbing or a choppy frame rate. Necessary for stateful actions to maintain consistent state.
 

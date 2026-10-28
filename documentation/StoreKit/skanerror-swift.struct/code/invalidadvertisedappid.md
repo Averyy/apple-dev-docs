@@ -22,7 +22,7 @@ case invalidAdvertisedAppId
 SKANErrorInvalidAdvertisedAppId
 ```
 
-#### Discussion
+## Discussion
 
 Ad networks provide an advertised app identifier when signing an ad impression. If you’re providing a StoreKit-rendered ad, check that the value you set for [`SKStoreProductParameterITunesItemIdentifier`](../../skstoreproductparameteritunesitemidentifier.md) in [`loadProduct(withParameters:completionBlock:)`](../../skstoreproductviewcontroller/loadproduct%28withparameters,completionblock%29.md) is a valid app identifer. If you’re providing a view-through ad, check the value of [`advertisedAppStoreItemIdentifier`](../../skadimpression/advertisedappstoreitemidentifier.md).
 

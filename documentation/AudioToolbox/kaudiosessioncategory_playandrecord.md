@@ -23,7 +23,7 @@ var kAudioSessionCategory_PlayAndRecord: Int { get }
 kAudioSessionCategory_PlayAndRecord
 ```
 
-#### Discussion
+## Discussion
 
 Your audio continues with the Silent switch set to silent and with the screen locked. (The switch is called the *Ring/Silent switch* on iPhone.)
 

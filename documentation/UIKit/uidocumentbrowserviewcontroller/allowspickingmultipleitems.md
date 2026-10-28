@@ -26,7 +26,7 @@ var allowsPickingMultipleItems: Bool { get set }
 
 - [Customizing the document browser](../customizing-the-browser.md)
 
-#### Discussion
+## Discussion
 
 By default, this property is set to [`false`](../../Swift/false.md).
 

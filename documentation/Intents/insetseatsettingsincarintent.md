@@ -24,7 +24,7 @@ class INSetSeatSettingsInCarIntent
 @interface INSetSeatSettingsInCarIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 Automotive venders can add support for this intent to an Intents extension that they ship with their automotive apps. When the user asks Siri to change a seat-related setting, Siri creates an [`INSetSeatSettingsInCarIntent`](./insetseatsettingsincarintent.md) object and delivers it to the app’s Intents extension. You use the intent to identify which setting the user wants to change.
 
@@ -32,7 +32,7 @@ This class contains properties for multiple types of seat-related settings, but 
 
 The object that handles this intent must adopt the [`INSetSeatSettingsInCarIntentHandling`](./insetseatsettingsincarintenthandling.md) protocol. Use this intent object to identify which setting changed and to create an [`INSetSeatSettingsInCarIntentResponse`](./insetseatsettingsincarintentresponse.md) object indicating the results of changing the seat settings.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 
@@ -41,7 +41,7 @@ The following table lists additional attributes of this intent object:
 | Supported by | Siri Intents (in conjunction with CarPlay) |
 | Always requires unlocked device | Yes |
 
-##### Example Phrases
+### Example Phrases
 
 Users can ask Siri to change the seat settings in a vehicle in a variety of ways. The table below provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases.
 

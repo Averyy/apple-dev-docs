@@ -5,7 +5,7 @@
 
 Manage compatible Game Center-enabled versions.
 
-#### Overview
+## Overview
 
 Use a `gameCenterEnabledVersions` resource to indicate which versions of your app support Game Center. For more information see [Game Center Configuration Guide for App Store Connect](https://developer.apple.com/help/app-store-connect/configure-game-center/overview-of-game-center).
 

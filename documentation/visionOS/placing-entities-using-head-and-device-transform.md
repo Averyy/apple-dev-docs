@@ -10,7 +10,7 @@ Query and react to changes in the position and rotation of Apple Vision Pro.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to create and display content that appears at a person’s head location, and follows a person’s view as they move their head in immersive spaces. It uses [`AnchorEntity`](../RealityKit/anchorentity.md) and [`queryDeviceAnchor(atTimestamp:)`](../ARKit/worldtrackingprovider/querydeviceanchor%28attimestamp%29.md) to get the transform of the person’s head and Apple Vision Pro to place content relative to them.
 
@@ -25,7 +25,7 @@ The sample code project uses RealityKit and ARKit, respectively, to position the
 
 > **Note**: See [Design considerations for vision and motion](https://developer.apple.com/videos/play/wwdc2023/10078?time=678) and [Motion](https://developer.apple.com/design/human-interface-guidelines/motion) in the Human Interface Guidelines for guidance on continuously head-tracked entities.
 
-#### Show entities at a person’s head position
+## Show entities at a person’s head position
 
 To launch the hummingbird feeder at the position of the wearer’s head, the sample uses `AnchorEntity` with the anchoring target of [`AnchoringComponent.Target.head`](../RealityKit/anchoringcomponent/target-swift.enum/head.md). This target provides the center of the wearer’s head, rather than the position of the device itself. You can only use `AnchorEntity` in an immersive space. Although it allows you to anchor content to the wearer’s head, you can’t access its transform because there’s no authorization required. If you attempt to access the transform, the property returns the identity transform instead.
 
@@ -58,7 +58,7 @@ func startHeadPositionMode(content: RealityViewContent) {
 }
 ```
 
-#### Move entities relative to device transform
+## Move entities relative to device transform
 
 This sample contains a hummingbird that reacts to the wearer while they move around. It achieves this by creating a [`System`](../RealityKit/system.md) and using `queryDeviceAnchor` to update the entities in the scene with each scene update.
 

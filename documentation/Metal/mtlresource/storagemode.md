@@ -30,7 +30,7 @@ var storageMode: MTLStorageMode { get }
 - [Setting resource storage modes](../setting-resource-storage-modes.md)
 - [Synchronizing a managed resource in macOS](../synchronizing-a-managed-resource-in-macos.md)
 
-#### Discussion
+## Discussion
 
 The storage mode is set when you create the resource and cannot be changed.
 

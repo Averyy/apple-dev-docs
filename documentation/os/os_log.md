@@ -25,7 +25,7 @@ Sends a default-level message to the logging system.
 
 - [Generating Log Messages from Your Code](./generating-log-messages-from-your-code.md)
 
-#### Discussion
+## Discussion
 
 Calling this function is equivalent to calling the [`os_log_with_type`](./os_log_with_type.md) function and specifying a log type of [`OS_LOG_TYPE_DEFAULT`](../kernel/os_log_type_t/os_log_type_default.md).
 

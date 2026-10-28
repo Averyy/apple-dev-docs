@@ -22,7 +22,7 @@ func CVGetHostClockMinimumTimeDelta() -> UInt32
 extern uint32_t CVGetHostClockMinimumTimeDelta();
 ```
 
-#### Return Value
+## Return Value
 
 The smallest valid increment in the system time.
 

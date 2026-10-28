@@ -25,11 +25,11 @@ func sortedArray(using sortDescriptors: [NSSortDescriptor]) -> [Any]
 - (NSArray<id> *) sortedArrayUsingDescriptors:(NSArray<NSSortDescriptor *> *) sortDescriptors;
 ```
 
-#### Return Value
+## Return Value
 
 An NSArray containing the set’s content sorted as specified by `sortDescriptors`.
 
-#### Discussion
+## Discussion
 
 The first descriptor specifies the primary key path to be used in sorting the set’s contents. Any subsequent descriptors are used to further refine sorting of objects with duplicate values. See [`NSSortDescriptor`](../nssortdescriptor.md) for additional information.
 

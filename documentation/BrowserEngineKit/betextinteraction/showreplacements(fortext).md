@@ -22,7 +22,7 @@ func showReplacements(forText text: String)
 - (void) showReplacementsForText:(NSString *) text;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to present system UI for suggesting text replacements, for example, when your browser text view receives [`promptForReplace(_:)`](../berespondereditactions/promptforreplace%28_%29.md).
 

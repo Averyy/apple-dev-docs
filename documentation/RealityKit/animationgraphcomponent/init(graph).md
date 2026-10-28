@@ -20,7 +20,7 @@ Creates a component that drives skeletal animation on an entity using the suppli
 init(graph: AnimationGraphResource)
 ```
 
-#### Discussion
+## Discussion
 
 Per-instance evaluation state initializes when the entity becomes active in a scene, so accessors such as [`activeNodes`](./activenodes.md) return an empty array until the first evaluation tick has run.
 

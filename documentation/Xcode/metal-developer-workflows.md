@@ -4,11 +4,11 @@
 
 Locate and fix issues related to your app’s use of the Metal API and GPU functions.
 
-#### Overview
+## Overview
 
 Metal comes with a comprehensive suite of advanced developer tools to help you debug and optimize your Metal apps.
 
-##### Runtime diagnostics
+### Runtime diagnostics
 
 You can enable API Validation when running your app to check for incorrect Metal API usage. For more information, see [Validating your app’s Metal API usage](./validating-your-apps-metal-api-usage.md).
 
@@ -16,7 +16,7 @@ Enable Shader Validation when running your app to check for issues like out-of-b
 
 The Metal Performance HUD offers a visual overlay to catch performance issues while your app is running. For more information, see [Monitoring your Metal app’s graphics performance](./monitoring-your-metal-apps-graphics-performance.md).
 
-##### Runtime performance analysis
+### Runtime performance analysis
 
 The Metal system trace tool in Instruments provides a visual timeline of the parallel work on the CPU and the GPU, and the memory usage of your Metal app.
 
@@ -24,7 +24,7 @@ The Metal system trace tool in Instruments provides a visual timeline of the par
 
 You can begin profiling with the Game Performance template (see [Analyzing the performance of your Metal app](./analyzing-the-performance-of-your-metal-app.md)) or the Game Memory template (see [Analyzing the memory usage of your Metal app](./analyzing-the-memory-usage-of-your-metal-app.md)).
 
-##### Advanced Metal debugging and profiling
+### Advanced Metal debugging and profiling
 
 The Metal debugger in Xcode provides advanced tools for debugging and profiling your Metal app.
 

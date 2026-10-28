@@ -24,11 +24,11 @@ func dropDestination<T>(for type: T.Type = T.self, isEnabled: Bool = true, actio
 
 - [Reordering items in lists, stacks, grids, and custom layouts](../reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
 
-#### Return Value
+## Return Value
 
 A view that provides a drop destination for a drop operation of the specified type.
 
-#### Discussion
+## Discussion
 
 The dropped content can be provided as binary data, file URLs, or file promises.
 

@@ -20,7 +20,7 @@ class NSAlert
 @interface NSAlert : NSObject
 ```
 
-#### Overview
+## Overview
 
 The methods of the [`NSAlert`](./nsalert.md) class let you specify an alert’s urgency, message text, button titles, and a custom icon. The class also supports a help button and other ways to offer contextual help specific to an alert.
 

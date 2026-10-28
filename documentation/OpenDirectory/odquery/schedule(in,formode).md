@@ -20,7 +20,7 @@ func schedule(in inRunLoop: RunLoop!, forMode inMode: String!)
 - (void) scheduleInRunLoop:(NSRunLoop *) inRunLoop forMode:(NSString *) inMode;
 ```
 
-#### Discussion
+## Discussion
 
 A delegate must be set prior to calling this method; otherwise, results may be lost due to the lack of a receiver.
 

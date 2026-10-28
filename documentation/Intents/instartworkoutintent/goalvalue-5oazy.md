@@ -19,7 +19,7 @@ The user-supplied numerical goal of the workout.
 final var goalValue: Double? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the user specified a goal, this property contains the numerical value of that goal. For example, if the user specifies a 40 minute workout then this property has the value `40`. You get the units associated with this goal from the [`workoutGoalUnitType`](./workoutgoalunittype.md) property.
 

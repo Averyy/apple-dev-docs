@@ -17,7 +17,7 @@ Implementation of LoRA `Linear` replacement layer.
 class LoRALinear
 ```
 
-#### Overview
+## Overview
 
 This layer implements the LoRA capabilities for `Linear` layers, specifically:
 
@@ -30,7 +30,7 @@ This layer implements the LoRA capabilities for `Linear` layers, specifically:
 
 This is not typically used directly – `LoRATrain.convert(model:layers:)` is used to add the adapter layers to a given model.
 
-##### See Also
+### See Also
 
 - [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
 - [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314)

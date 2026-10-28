@@ -17,7 +17,7 @@ A category for electricity usage during periods that the framework suggests a pe
 var avoid: Measure?
 ```
 
-#### Discussion
+## Discussion
 
 The framework might put electricity usage in this category when:
 

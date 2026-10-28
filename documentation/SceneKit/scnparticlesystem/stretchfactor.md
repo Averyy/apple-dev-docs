@@ -25,7 +25,7 @@ var stretchFactor: CGFloat { get set }
 @property (nonatomic) CGFloat stretchFactor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to create visual effects that show streaks of motion, such as fireworks. If the [`orientationMode`](./orientationmode.md) property value is [`SCNParticleOrientationMode.free`](../scnparticleorientationmode/free.md), a non-default stretch factor stretches particle images in the y-axis direction of each particle’s local coordinate space.
 

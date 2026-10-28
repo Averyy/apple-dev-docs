@@ -17,7 +17,7 @@ Parse the value immediately after the option while allowing repeating options, j
 static var unconditionalSingleValue: ArrayParsingStrategy { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is identical to `.singleValue` except that the value will be read from the input immediately after the option, even if it could be interpreted as an option.
 

@@ -19,7 +19,7 @@ var rightAnchor: NSLayoutXAxisAnchor { get }
 @property (strong, readonly) NSLayoutXAxisAnchor * rightAnchor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this anchor to create constraints with the view’s right edge. You can only combine this anchor with a subset of the [`NSLayoutXAxisAnchor`](../../UIKit/nslayoutxaxisanchor.md) anchors. You can combine a `rightAnchor` with another `rightAnchor`, a `leftAnchor`, or a `centerXAnchor`. For more information, see [`NSLayoutAnchor`](../../UIKit/nslayoutanchor.md).
 

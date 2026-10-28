@@ -15,11 +15,11 @@ virtual UInt32 inputPacket(
  void *param = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of packets that were submitted to the network stack, or zero if the packet was enqueued.
 
-#### Overview
+## Overview
 
 The packet provided to this method may be added to an input queue managed by the interface object, which the driver can use to postpone the packet handoff to the network stack, until all received packets have been added to the input queue. A subsequent call to `flushInputQueue()`, will transfer the entire contents of the input queue to the network stack. This input queue is not protected by a lock. Drivers that leverage this input queue must either access the queue from a single thread, or enforce serialized access.
 

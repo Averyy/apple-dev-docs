@@ -14,7 +14,7 @@ Avoid stalls between CPU and GPU work by using multiple instances of a resource.
 - tvOS 17.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 In this sample code project, you learn how to manage data dependencies and avoid processor stalls between the CPU and the GPU.
 
@@ -26,7 +26,7 @@ The sample stores the triangle vertices in a buffer that’s shared between the 
 
 > **Note**: The Xcode project contains schemes for running the sample on macOS, iOS, and tvOS. The default scheme is macOS, which runs the sample on your Mac.
 
-##### Understand the solution to data dependencies and processor stalls
+### Understand the solution to data dependencies and processor stalls
 
 Resource sharing creates a *data dependency* between the processors; the CPU needs to finish writing to the resource before the GPU reads it. If the GPU reads the resource before the CPU writes to it, the GPU reads undefined resource data. If the GPU reads the resource while the CPU is writing to it, the GPU reads incorrect resource data.
 
@@ -38,7 +38,7 @@ However, because the CPU and GPU are separate processors, you can make them work
 
 ![A diagram that shows the CPU and the GPU simultaneously accessing multiple copies of a buffer in each frame.](https://developer.apple.com/tutorials/images/com.apple.metal/cpu-gpu-synchronization-3-ContinuousWork.png)
 
-##### Initialize data with the CPU
+### Initialize data with the CPU
 
 Define a custom `AAPLVertex` structure that represents a vertex. Each vertex has a position and a color:
 
@@ -90,7 +90,7 @@ for(NSUInteger t = 0; t < NumTriangles; t++)
 _triangles = triangles;
 ```
 
-##### Allocate data storage
+### Allocate data storage
 
 Calculate the total storage size of your triangle vertices. Your app renders 50 triangles; each triangle has 3 vertices, totaling 150 vertices, and each vertex is the size of `AAPLVertex`:
 
@@ -113,7 +113,7 @@ for(NSUInteger bufferIndex = 0; bufferIndex < MaxFramesInFlight; bufferIndex++)
 
 Upon initialization, the contents of the buffer instances in the `_vertexBuffers` array are empty.
 
-##### Update data with the CPU
+### Update data with the CPU
 
 In each frame, at the start of the [`drawInMTKView:`](../MetalKit/mtkviewdelegate/draw%28in%29.md) render loop, use the CPU to update the contents of one buffer instance in the `updateState` method:
 
@@ -146,7 +146,7 @@ After you update a buffer instance, you don’t access its data with the CPU for
 
 > **Note**: You need to finalize all CPU writes to one buffer instance before you commit a command buffer that references it. Otherwise, the GPU may begin reading the buffer instance while the CPU is still writing to it.
 
-##### Encode GPU commands
+### Encode GPU commands
 
 Next, you encode commands that reference the buffer instance in a render pass:
 
@@ -166,7 +166,7 @@ Next, you encode commands that reference the buffer instance in a render pass:
                   vertexCount:_totalVertexCount];
 ```
 
-##### Commit and execute GPU commands
+### Commit and execute GPU commands
 
 At the end of the render loop, call your command buffer’s [`commit()`](./mtlcommandbuffer/commit%28%29.md) method to submit your work to the GPU:
 
@@ -183,7 +183,7 @@ vertexShader(const uint vertexID [[ vertex_id ]],
              constant vector_uint2 *viewportSizePointer  [[ buffer(AAPLVertexInputIndexViewportSize) ]])
 ```
 
-##### Reuse multiple buffer instances in your app
+### Reuse multiple buffer instances in your app
 
 For each frame, perform the following steps, as described above. A full frame’s work is finished when both processors have completed their work.
 
@@ -210,7 +210,7 @@ _currentBuffer = (_currentBuffer + 1) % MaxFramesInFlight;
 
 > **Note**: Core Animation provides optimized displayable resources, commonly referred to as *drawables*, for you to render content and display it onscreen. Drawables are efficient yet expensive system resources, so Core Animation limits the number of drawables that you can use simultaneously in your app. The default limit is 3, but you can set it to 2 with the [`maximumDrawableCount`](../QuartzCore/cametallayer/maximumdrawablecount.md) property (2 and 3 are the only supported values). Because the maximum number of drawables is 3, this sample creates 3 buffer instances. You donʼt need to create more buffer instances than the maximum number of drawables available.
 
-##### Manage the rate of CPU and GPU work
+### Manage the rate of CPU and GPU work
 
 When you have multiple instances of a buffer, you can make the CPU start work for frame `n+1` with one instance, while the GPU finishes work for frame `n` with another instance. This implementation improves your app’s efficiency by making the CPU and the GPU work simultaneously. However, you need to manage your app’s rate of work so you don’t exceed the number of buffer instances available.
 
@@ -240,7 +240,7 @@ __block dispatch_semaphore_t block_semaphore = _inFlightSemaphore;
 
 The [`addCompletedHandler(_:)`](./mtlcommandbuffer/addcompletedhandler%28_%29.md) method registers a block of code that’s called immediately after the GPU has finished executing the associated command buffer. Because you use only one command buffer per frame, receiving the completion callback indicates that the GPU has completed the frame.
 
-##### Set the mutability of your buffers
+### Set the mutability of your buffers
 
 Your app performs all per-frame rendering setup on a single thread. First it writes data to a buffer instance with the CPU. After that, it encodes rendering commands that reference the buffer instance. Finally, it commits a command buffer for GPU execution. Because these tasks always happen in this order on a single thread, the app guarantees that it finishes writing data to a buffer instance before it encodes a command that references the buffer instance.
 

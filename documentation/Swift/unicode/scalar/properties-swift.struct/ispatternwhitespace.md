@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is recommended to be treated as wh
 var isPatternWhitespace: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “Pattern_White_Space” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 

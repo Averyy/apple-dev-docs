@@ -15,7 +15,7 @@ A Boolean value indicating whether the remote end supports end-to-end encryption
 let supportsEndToEndEncryption: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Before your app sends a message or performs a request that may be end-to-end encrypted, ensure that the remote end supports end-to-end encryption by checking this property.
 

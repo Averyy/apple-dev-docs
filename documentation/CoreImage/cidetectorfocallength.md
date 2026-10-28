@@ -24,7 +24,7 @@ let CIDetectorFocalLength: String
 extern NSString * const CIDetectorFocalLength;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../Foundation/nsnumber.md) object whose value is a floating-point number. Use this option with the [`CIDetectorTypeRectangle`](./cidetectortyperectangle.md) detector type to control the effect of the [`CIDetectorAspectRatio`](./cidetectoraspectratio.md) option on feature detection.
 

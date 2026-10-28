@@ -25,7 +25,7 @@ init(managedObjectModel model: NSManagedObjectModel)
 - (instancetype) initWithManagedObjectModel:(NSManagedObjectModel *) model;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver, initialized with `model`.
 

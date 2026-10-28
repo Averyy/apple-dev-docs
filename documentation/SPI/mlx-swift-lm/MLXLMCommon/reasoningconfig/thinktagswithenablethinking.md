@@ -17,7 +17,7 @@ Generic `<think>`/`</think>` protocol toggled by the `enable_thinking` chat-temp
 static let thinkTagsWithEnableThinking: ReasoningConfig
 ```
 
-#### Discussion
+## Discussion
 
 This deliberately declares no budget transition. Sharing delimiters and a template flag does not imply that two model families were trained to respond to the same forced early-stop sequence.
 

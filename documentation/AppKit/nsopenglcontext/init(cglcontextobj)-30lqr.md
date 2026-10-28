@@ -19,11 +19,11 @@ init?(cglContextObj context: CGLContextObj)
 - (NSOpenGLContext *) initWithCGLContextObj:(CGLContextObj) context;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized context.
 
-#### Discussion
+## Discussion
 
 If your application already has a CGL context, you can wrap a [`NSOpenGLContext`](../nsopenglcontext.md) object around it using this method. This method retains the CGL context by calling `CGLRetainContext(_:)`.
 

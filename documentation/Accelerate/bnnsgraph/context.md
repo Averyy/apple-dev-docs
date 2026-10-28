@@ -21,7 +21,7 @@ A wrapper around a compiled graph object that adds a required modifiable context
 class Context
 ```
 
-#### Overview
+## Overview
 
 A [`BNNSGraph.Context`](./context.md) instance provides a wrapper around the C API [`bnns_graph_t`](../bnns_graph_t.md) and [`bnns_graph_context_t`](../bnns_graph_context_t.md) types. Because this class manages its own memory, you don’t need to call [`BNNSGraphContextDestroy(_:)`](../bnnsgraphcontextdestroy%28_%29.md) to deallocate its resources.
 

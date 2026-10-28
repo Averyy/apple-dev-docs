@@ -21,11 +21,11 @@ Returns the double-precision element-wise product of the sums of two pairs of ve
 static func multiply<S, T, U>(addition additionAB: (a: S, b: T), addition additionCD: (c: U, d: U)) -> [Double] where S : AccelerateBuffer, T : AccelerateBuffer, U : AccelerateBuffer, S.Element == Double, T.Element == Double, U.Element == Double
 ```
 
-#### Return Value
+## Return Value
 
 The output vector `E` in `E = (A + B) * (C + D)`.
 
-#### Discussion
+## Discussion
 
 This function calculates the products of the first `N` elements of the addition of vectors `A` and `B` and the addition of vectors `C` and `D`, as follows:
 

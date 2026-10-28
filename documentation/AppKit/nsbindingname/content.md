@@ -19,7 +19,7 @@ static let content: NSBindingName
 extern NSBindingName NSContentBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

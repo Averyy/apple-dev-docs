@@ -15,7 +15,7 @@ Creates the default configuration for a circular monogram cell.
 + (instancetype) cellConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`TVMonogramContentConfiguration`](../tvmonogramcontentconfiguration-swift.struct.md) instance.
 

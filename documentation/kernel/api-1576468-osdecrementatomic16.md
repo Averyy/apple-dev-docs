@@ -15,11 +15,11 @@
 SInt16 OSDecrementAtomic16(volatile SInt16 *address);
 ```
 
-#### Return Value
+## Return Value
 
 The value before the decrement.
 
-#### Discussion
+## Discussion
 
 The OSDecrementAtomic16 function decrements the value at the specified address by one and returns the original value.
 

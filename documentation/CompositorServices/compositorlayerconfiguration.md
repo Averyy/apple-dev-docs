@@ -21,7 +21,7 @@ An interface for specifying the texture configurations and rendering behaviors t
 
 - [Drawing fully immersive content using Metal](./drawing-fully-immersive-content-using-metal.md)
 
-#### Overview
+## Overview
 
 If you use a custom configuration for your Metal rendering engine, adopt this protocol in a custom type and use it to specify the configuration options you need. In your custom type, implement the [`makeConfiguration(capabilities:configuration:)`](./compositorlayerconfiguration/makeconfiguration%28capabilities,configuration%29.md) method and use it to modify the default set of rendering options. When specifying your configuration, validate choices against the actual capabilities of the current device.
 

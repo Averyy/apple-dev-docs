@@ -23,7 +23,7 @@ An activation function that returns beta if its input is less than a specified t
 case threshold(alpha: Float, beta: Float)
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

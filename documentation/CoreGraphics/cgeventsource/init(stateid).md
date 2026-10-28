@@ -20,11 +20,11 @@ init?(stateID: CGEventSourceStateID)
 extern CGEventSourceRefCGEventSourceCreate(CGEventSourceStateID stateID);
 ```
 
-#### Return Value
+## Return Value
 
 A new event source, or `NULL` if the specified source state is not valid. When you no longer need the event source, you should release it using the function `CFRelease`.
 
-#### Discussion
+## Discussion
 
 If two or more event sources are using the same source state and one of them is released, the remaining event sources will behave as if all keys and buttons on input devices are up in generating new events from this source.
 

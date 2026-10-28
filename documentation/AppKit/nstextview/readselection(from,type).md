@@ -19,11 +19,11 @@ func readSelection(from pboard: NSPasteboard, type: NSPasteboard.PasteboardType)
 - (BOOL) readSelectionFromPasteboard:(NSPasteboard *) pboard type:(NSPasteboardType) type;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the data was successfully read, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The new data is placed at the current insertion point, replacing the current selection if one exists.
 

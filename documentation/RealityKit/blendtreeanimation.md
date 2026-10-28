@@ -20,7 +20,7 @@ A collection of animations on the same property that the framework blends to a s
 struct BlendTreeAnimation<Value> where Value : AnimatableData
 ```
 
-#### Overview
+## Overview
 
 This structure provides a way to form a single animation by mixing several other animations together. You define a source node for each animation, and a weight, which determines how much each individual animation takes effect in the resulting animation.
 
@@ -31,7 +31,7 @@ To create the blended animation, you define a *blend tree* that sprouts from [`r
 
 Because source nodes reference no other nodes, they represent leaf nodes in the tree.
 
-##### Blending two skeletal movements to a single movement
+### Blending two skeletal movements to a single movement
 
 The following animation plays a sampling of the animations named `anim1` and `anim2`. To fine-tune the interplay between the two animations, the code sets a blend weight for each animation. The weight of `0.25` for `anim1` determines that the first animation’s behavior is 25% prominent in the final result. The `anim2` weight is `0.75`, as the cumulative blend weight across all animations in the tree needs to equal `1`. This determines that the second animation influences 75% of the visual behavior of the blended animation.
 

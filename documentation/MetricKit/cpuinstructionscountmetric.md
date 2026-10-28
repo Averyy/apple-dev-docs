@@ -18,7 +18,7 @@ A metric that measures the total number of CPU instructions the app executed.
 struct CPUInstructionsCountMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.cpuInstructionsCount(_:)`](./metricresult/cpuinstructionscount%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 

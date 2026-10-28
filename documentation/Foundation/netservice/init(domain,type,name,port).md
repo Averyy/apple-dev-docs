@@ -26,7 +26,7 @@ init(domain: String, type: String, name: String, port: Int32)
 - (instancetype) initWithDomain:(NSString *) domain type:(NSString *) type name:(NSString *) name port:(int) port;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to create a service that you wish to publish on the network. Although you can also use this method to create a service you wish to resolve on the network, it is generally more appropriate to use the [`init(domain:type:name:)`](./init%28domain,type,name%29.md) method instead.
 

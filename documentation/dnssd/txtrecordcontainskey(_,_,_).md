@@ -25,7 +25,7 @@ func TXTRecordContainsKey(_ txtLen: UInt16, _ txtRecord: UnsafeRawPointer!, _ ke
 int TXTRecordContainsKey(uint16_t txtLen, const void *txtRecord, const char *key);
 ```
 
-#### Return Value
+## Return Value
 
 Returns 1 if the TXT Record contains the specified key. Otherwise, it returns 0.
 

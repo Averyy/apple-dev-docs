@@ -23,7 +23,7 @@ var textColor: UIColor! { get set }
 @property (nonatomic, strong, null_resettable) UIColor * textColor;
 ```
 
-#### Discussion
+## Discussion
 
 If you’re using styled text, assigning a new value to this property applies the color to the entirety of the string in the [`attributedText`](./attributedtext.md) property. If you want to apply the color to only a portion of the text, create a new attributed string with the desired style information and associate it with the label. If you aren’t using styled text, this property applies to the entire text string in the [`text`](./text.md) property.
 

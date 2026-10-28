@@ -23,7 +23,7 @@ var contentDescription: String? { get set }
 @property (copy, nullable) NSString * contentDescription;
 ```
 
-#### Discussion
+## Discussion
 
 A description may consist of an abstract, table of contents, reference to a graphical representation of content, a free-text account of the content, or other matter.
 

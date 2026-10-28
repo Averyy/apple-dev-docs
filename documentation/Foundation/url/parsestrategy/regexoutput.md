@@ -21,7 +21,7 @@ The type returned when capturing matching substrings with this strategy.
 typealias RegexOutput = URL
 ```
 
-#### Discussion
+## Discussion
 
 This strategy returns the [`URL`](../../url.md) type when performing regex capture.
 

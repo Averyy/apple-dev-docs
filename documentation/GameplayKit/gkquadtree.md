@@ -24,7 +24,7 @@ class GKQuadtree<ElementType> where ElementType : NSObject
 @interface GKQuadtree : NSObject
 ```
 
-#### Overview
+## Overview
 
 A quadtree manages its structure to optimize for spatial searches—unlike a basic data structure such as an array or dictionary, a quadtree can find all elements occupying a specific position or region very quickly. The quadtree partitioning strategy divides space into four quadrants at each level, as illustrated in [Figure 1](./gkquadtree.md#1965707). When a quadrant contains more than one object, the tree subdivides that region into four smaller quadrants, adding a level to the tree.
 

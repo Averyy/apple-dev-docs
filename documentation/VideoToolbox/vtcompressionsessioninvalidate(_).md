@@ -24,7 +24,7 @@ func VTCompressionSessionInvalidate(_ session: VTCompressionSession)
 extern void VTCompressionSessionInvalidate(VTCompressionSessionRef session);
 ```
 
-#### Discussion
+## Discussion
 
 When you finish using a compression session you created, call `VTCompressionSessionInvalidate` to tear it down, and then call [`CFRelease`](../CoreFoundation/cfrelease.md) to release its memory.
 

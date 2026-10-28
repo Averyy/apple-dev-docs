@@ -21,7 +21,7 @@ When the buffer is full, discard the oldest element in the buffer.
 case bufferingNewest(Int)
 ```
 
-#### Discussion
+## Discussion
 
 This strategy enforces keeping at most the specified number of newest values.
 

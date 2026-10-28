@@ -17,7 +17,7 @@ An error in Wi-Fi Aware.
 enum WAError
 ```
 
-#### Overview
+## Overview
 
 Wi-Fi Aware may throw a [`WAError`](./waerror.md) to indicate when an underlying issue occurs, with the [Network](../Network/Network.md) framework throwing an `NWError`. If the `NWError` occurs due to Wi-Fi Aware, then the `Network/NWError/wifiAware` property on `Network/NWError` can provide access to additional information about the underlying Wi-Fi Aware error.
 

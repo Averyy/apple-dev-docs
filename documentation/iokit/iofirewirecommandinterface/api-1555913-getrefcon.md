@@ -16,7 +16,7 @@ Gets the refcon associated with this command
 void *(*GetRefCon)(IOFireWireLibCommandRef self);
 ```
 
-#### Return Value
+## Return Value
 
 void
 

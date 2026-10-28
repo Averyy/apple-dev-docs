@@ -21,7 +21,7 @@ init(items: [any CPListTemplateItem], header: String, headerSubtitle: String?, h
 - (instancetype) initWithItems:(NSArray<id<CPListTemplateItem>> *) items header:(NSString *) header headerSubtitle:(NSString *) headerSubtitle headerImage:(UIImage *) headerImage headerButton:(CPButton *) headerButton sectionIndexTitle:(NSString *) sectionIndexTitle;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized list section.
 

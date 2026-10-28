@@ -25,7 +25,7 @@ var cookieAcceptPolicy: HTTPCookie.AcceptPolicy { get set }
 @property NSHTTPCookieAcceptPolicy cookieAcceptPolicy;
 ```
 
-#### Discussion
+## Discussion
 
 The default cookie accept policy is [`HTTPCookie.AcceptPolicy.always`](../httpcookie/acceptpolicy/always.md). Changing the cookie policy affects all currently running applications using the cookie storage.
 

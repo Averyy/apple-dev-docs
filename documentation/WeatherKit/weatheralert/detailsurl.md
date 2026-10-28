@@ -21,7 +21,7 @@ The site for more details about the weather alert.
 var detailsURL: URL
 ```
 
-#### Discussion
+## Discussion
 
 This is required for attribution.
 

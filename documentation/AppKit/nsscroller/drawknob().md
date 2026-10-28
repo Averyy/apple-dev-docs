@@ -19,7 +19,7 @@ func drawKnob()
 - (void) drawKnob;
 ```
 
-#### Discussion
+## Discussion
 
 You should never need to invoke this method directly, but may wish to override it to customize the appearance of the knob.
 

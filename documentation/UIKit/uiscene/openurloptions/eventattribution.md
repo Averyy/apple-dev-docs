@@ -22,7 +22,7 @@ var eventAttribution: UIEventAttribution? { get }
 @property (nonatomic, readonly, nullable) UIEventAttribution * eventAttribution;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about event attribution data, see [`UIEventAttribution`](../../uieventattribution.md).
 

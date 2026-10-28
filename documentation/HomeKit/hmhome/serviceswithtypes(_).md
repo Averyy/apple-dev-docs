@@ -24,7 +24,7 @@ func servicesWithTypes(_ serviceTypes: [String]) -> [HMService]?
 - (NSArray<HMService *> *) servicesWithTypes:(NSArray<NSString *> *) serviceTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of found services. Returns `nil` if no matching services are found.
 

@@ -17,7 +17,7 @@ An error that indicates a model-URL query failed to return a result.
 case nonExistingFile(url: URL)
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when the app hasn’t associated a URL to the attributes in a model-URL query.
 

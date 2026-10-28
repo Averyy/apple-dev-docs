@@ -30,7 +30,7 @@ func setOverrideTraitCollection(_ collection: UITraitCollection?, forChild child
 - [Choosing a specific interface style for your iOS app](../choosing-a-specific-interface-style-for-your-ios-app.md)
 - [Creating a custom container view controller](../creating-a-custom-container-view-controller.md)
 
-#### Discussion
+## Discussion
 
 Usually, traits are passed unmodified from the parent view controller to its child view controllers. When implementing a custom container view controller, you can use this method to change the traits of any embedded child view controllers to something more appropriate for your layout. Making such a change alters other view controller behaviors associated with that child. For example, modal presentations behave differently in a horizontally compact versus horizontally regular environment. You might also make such a change to force the same set of traits on the child view controller regardless of the actual trait environment.
 

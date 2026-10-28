@@ -25,7 +25,7 @@ func CGImageMetadataCreateMutable() -> CGMutableImageMetadata
 extern CGMutableImageMetadataRefCGImageMetadataCreateMutable();
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGMutableImageMetadata`](./cgmutableimagemetadata.md) object that contains no metadata information, or `NULL` if an error occurs. You are responsible for releasing the returned object.
 

@@ -21,7 +21,7 @@ func beginGeneratingDeviceOrientationNotifications()
 - (void) beginGeneratingDeviceOrientationNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 You must call this method before attempting to get orientation data from the device. This method enables the device’s accelerometer hardware and begins the delivery of acceleration events to the device. The device subsequently uses these events to post [`orientationDidChangeNotification`](./orientationdidchangenotification.md) notifications when the device orientation changes and to update the [`orientation`](./orientation.md) property.
 

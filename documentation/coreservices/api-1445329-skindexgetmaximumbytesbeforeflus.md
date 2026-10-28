@@ -19,7 +19,7 @@ func SKIndexGetMaximumBytesBeforeFlush(_ inIndex: SKIndex!) -> CFIndex
 CFIndex SKIndexGetMaximumBytesBeforeFlush(SKIndexRef inIndex);
 ```
 
-#### Discussion
+## Discussion
 
 This function is rarely needed and is likely to be deprecated. Apple recommends using the [`SKIndexFlush(_:)`](./api-1450667-skindexflush.md) function along with the default memory size limit for index updates. Refer to the [`SKIndexSetMaximumBytesBeforeFlush(_:_:)`](./api-1448696-skindexsetmaximumbytesbeforeflus.md) function for more information.
 

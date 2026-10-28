@@ -17,7 +17,7 @@ Returns a QuantizedLinear layer that applies the same linear transformation up t
 static func from(linear: Linear, groupSize: Int = 64, bits: Int = 4) -> QuantizedLinear
 ```
 
-#### Return Value
+## Return Value
 
 A new `QuantizedLayer`
 

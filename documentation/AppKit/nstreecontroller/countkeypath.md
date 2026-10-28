@@ -19,7 +19,7 @@ var countKeyPath: String? { get set }
 @property (copy, nullable) NSString * countKeyPath;
 ```
 
-#### Discussion
+## Discussion
 
 Specifying this key path (if the data is available in the model object) can increase performance, but disables insert and remove functionality.
 

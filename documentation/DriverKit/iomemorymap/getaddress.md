@@ -18,7 +18,7 @@ Returns the address of the memory block.
 uint64_t GetAddress();
 ```
 
-#### Return Value
+## Return Value
 
 The address of the first byte of the memory block in the current process.
 

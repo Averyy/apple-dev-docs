@@ -16,7 +16,7 @@ Mask of scaling features.
 IOOptionBits scalerFeatures;
 ```
 
-#### Discussion
+## Discussion
 
 The following are defined:
 

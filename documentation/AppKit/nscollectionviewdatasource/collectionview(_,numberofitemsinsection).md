@@ -21,11 +21,11 @@ func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection s
 - (NSInteger) collectionView:(NSCollectionView *) collectionView numberOfItemsInSection:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 The number of items in the specified section.
 
-#### Discussion
+## Discussion
 
 All data source objects must implement this method. Your implementation should quickly return the number of items in the specified section.
 

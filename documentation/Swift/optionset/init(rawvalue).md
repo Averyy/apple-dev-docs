@@ -22,7 +22,7 @@ Creates a new option set from the given raw value.
 init(rawValue: Self.RawValue)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer always succeeds, even if the value passed as `rawValue` exceeds the static properties declared as part of the option set. This example creates an instance of `ShippingOptions` with a raw value beyond the highest element, with a bit mask that effectively contains all the declared static members.
 

@@ -19,11 +19,11 @@ class func withOBEXSession(_ inOBEXSession: IOBluetoothOBEXSession!) -> Self!
 + (instancetype) withOBEXSession:(IOBluetoothOBEXSession *) inOBEXSession;
 ```
 
-#### Return Value
+## Return Value
 
 A newly created OBEXFileTransferServices object on success, nil on failure
 
-#### Discussion
+## Discussion
 
 This object must be constructed with a valid IOBluetoothOBEXSession. The given IOBluetoothOBEXSession does not need to be connected to the remote server. This module can be manually connected through the connect() method.
 

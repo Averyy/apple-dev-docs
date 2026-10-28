@@ -21,7 +21,7 @@ Returns the generated image to the delegate.
 @objc func imagePlaygroundViewController(_ imagePlaygroundViewController: ImagePlaygroundViewController, didCreateImageAt imageURL: URL)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve the image at the specified location. After you finish retrieving the image, dismiss the [`ImagePlaygroundViewController`](../../imageplaygroundviewcontroller.md) from your app’s interface.
 

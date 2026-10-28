@@ -19,7 +19,7 @@ func viewDidMoveToSuperview()
 - (void) viewDidMoveToSuperview;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation does nothing; subclasses can override this method to perform whatever actions are necessary.
 

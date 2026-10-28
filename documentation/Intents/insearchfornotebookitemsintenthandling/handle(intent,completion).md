@@ -30,7 +30,7 @@ func handle(intent: INSearchForNotebookItemsIntent) async -> INSearchForNotebook
 - (void) handleSearchForNotebookItems:(INSearchForNotebookItemsIntent *) intent completion:(void (^)(INSearchForNotebookItemsIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 In your implementation of this method, perform the search based on the available criteria, create a response object with the results, and call the provided completion handler.
 

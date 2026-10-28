@@ -20,7 +20,7 @@ Reads a video file as an async sequence of video frames.
 func applied(to url: URL, eventHandler: EventHandler?) async throws -> VideoReader.AsyncFrames
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence of `VideoFrames`.
 

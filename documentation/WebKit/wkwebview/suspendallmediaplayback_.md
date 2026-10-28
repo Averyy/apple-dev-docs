@@ -19,7 +19,7 @@ Changes whether the webpage is suspending playback of all media in the page.
 - (void) suspendAllMediaPlayback:(void (^)(void)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Pass `true` to pause all media the web view is playing. Neither the user or web page can resume playback until you call this method again with `false`.
 

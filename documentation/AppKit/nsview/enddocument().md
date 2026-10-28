@@ -19,7 +19,7 @@ func endDocument()
 - (void) endDocument;
 ```
 
-#### Discussion
+## Discussion
 
 If you override this method, call the superclass implementation.
 

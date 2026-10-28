@@ -18,7 +18,7 @@ Makes a region of memory writable for use in just-in-time (JIT) compilation.
 extern void be_memory_inline_jit_restrict_rwx_to_rw_with_witness_impl();
 ```
 
-#### Overview
+## Overview
 
 You don’t call this function directly. Call [`be_memory_inline_jit_restrict_rwx_to_rw_with_witness`](./be_memory_inline_jit_restrict_rwx_to_rw_with_witness.md) instead.
 

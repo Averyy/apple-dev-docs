@@ -25,7 +25,7 @@ func NSCopyMemoryPages(_ source: UnsafeRawPointer, _ dest: UnsafeMutableRawPoint
 extern void NSCopyMemoryPages(const void *source, void *dest, NSUInteger bytes);
 ```
 
-#### Discussion
+## Discussion
 
 Copies (or copies on write) `byteCount` bytes from `source` to `destination`.
 

@@ -26,7 +26,7 @@ var isViable: Bool { get }
 @property (nonatomic, readonly, getter=isViable) BOOL viable;
 ```
 
-#### Discussion
+## Discussion
 
 Evaluates to [`true`](../../Swift/true.md) if the session can read and write data, [`false`](../../Swift/false.md) otherwise. Use Key-Value Observing to watch this property.
 

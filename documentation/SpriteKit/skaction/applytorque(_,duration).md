@@ -25,11 +25,11 @@ class func applyTorque(_ torque: CGFloat, duration: TimeInterval) -> SKAction
 + (SKAction *) applyTorque:(CGFloat) torque duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the torque is applied continuously to the physics body for the duration of the action. This action generates an angular acceleration on the body without causing any linear acceleration.
 

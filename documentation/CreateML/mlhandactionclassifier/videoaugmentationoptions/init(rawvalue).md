@@ -19,7 +19,7 @@ Creates an option set from an integer.
 init(rawValue: Int)
 ```
 
-#### Discussion
+## Discussion
 
 - rawValue: An integer that represents the option set’s underlying raw value.
 

@@ -25,7 +25,7 @@ let kSecTrustEvaluationDate: CFString
 extern CFStringRef const kSecTrustEvaluationDate;
 ```
 
-#### Discussion
+## Discussion
 
 This key is present after the results become available from performing the trust evaluation. The value is a [`CFDate`](../CoreFoundation/cfdate.md) object representing when the evaluation took place.
 

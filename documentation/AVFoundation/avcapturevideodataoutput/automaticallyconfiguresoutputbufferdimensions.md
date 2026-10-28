@@ -22,7 +22,7 @@ var automaticallyConfiguresOutputBufferDimensions: Bool { get set }
 @property (nonatomic) BOOL automaticallyConfiguresOutputBufferDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 In most configurations, [`AVCaptureVideoDataOutput`](../avcapturevideodataoutput.md) delivers full-resolution buffers that match the video dimensions of the capture device’s [`activeFormat`](../avcapturedevice/activeformat.md) property. When this property is [`true`](../../Swift/true.md), the output is free to scale the buffers delivered to [`captureOutput(_:didOutput:from:)`](../avcapturevideodataoutputsamplebufferdelegate/captureoutput%28_,didoutput,from%29.md) to a size suitable for preview (approximately the size of the screen).
 

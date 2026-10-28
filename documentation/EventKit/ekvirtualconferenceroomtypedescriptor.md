@@ -24,7 +24,7 @@ class EKVirtualConferenceRoomTypeDescriptor
 @interface EKVirtualConferenceRoomTypeDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 To present a list of rooms where a virtual conference takes place, your virtual conference provider creates one or more room type descriptors. Each descriptor contains a user-visible title and an identifier of your choosing. When users create events using one of the rooms you provide, EventKit calls [`fetchVirtualConference(identifier:completionHandler:)`](./ekvirtualconferenceprovider/fetchvirtualconference%28identifier,completionhandler%29.md) and passes the room’s identifier.
 

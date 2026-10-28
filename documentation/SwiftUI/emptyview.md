@@ -22,7 +22,7 @@ A view that doesn’t contain any content.
 nonisolated struct EmptyView
 ```
 
-#### Overview
+## Overview
 
 You will rarely, if ever, need to create an `EmptyView` directly. Instead, `EmptyView` represents the absence of a view.
 

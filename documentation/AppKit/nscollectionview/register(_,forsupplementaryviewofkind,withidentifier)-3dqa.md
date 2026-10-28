@@ -19,7 +19,7 @@ func register(_ viewClass: AnyClass?, forSupplementaryViewOfKind kind: NSCollect
 - (void) registerClass:(Class) viewClass forSupplementaryViewOfKind:(NSCollectionViewSupplementaryElementKind) kind withIdentifier:(NSUserInterfaceItemIdentifier) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to register the classes that represent the supplementary views in your collection view. When you request a view using the [`makeSupplementaryView(ofKind:withIdentifier:for:)`](./makesupplementaryview%28ofkind,withidentifier,for%29.md) method, the collection view recycles an existing view with the same `identifier` and `kind` values or creates a new one by instantiating your class and calling the [`init(frame:)`](../nsview/init%28frame%29.md) method of the resulting object.
 

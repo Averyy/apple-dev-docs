@@ -21,7 +21,7 @@ A protocol for defining a constraint on the value of a certain attribute.
 protocol AttributedTextValueConstraint : Hashable, Sendable, AttributedTextFormattingDefinition
 ```
 
-#### Overview
+## Overview
 
 Used as an [`AttributedTextFormattingDefinition`](./attributedtextformattingdefinition.md), this constrains the [`AttributeKey`](./attributedtextvalueconstraint/attributekey.md)’s value using the `constrain(_:)-(Attributes)` function.
 

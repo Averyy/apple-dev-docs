@@ -17,7 +17,7 @@ Combine the `.short` and `.long` specifications to allow both long and short lab
 static var shortAndLong: NameSpecification { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, a property named `verbose` would be converted to both the long `--verbose` and short `-v` labels.
 

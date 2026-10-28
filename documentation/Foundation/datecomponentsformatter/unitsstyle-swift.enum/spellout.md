@@ -25,7 +25,7 @@ case spellOut
 NSDateComponentsFormatterUnitsStyleSpellOut
 ```
 
-#### Discussion
+## Discussion
 
 For example, the quantity of 3 years, 9 months, 26 days, 19 hours, and 17 seconds is displayed in the U.S. English locale as “three years, nine months, twenty-six days, nineteen hours, seventeen seconds”.
 

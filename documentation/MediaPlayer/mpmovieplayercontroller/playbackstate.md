@@ -23,7 +23,7 @@ var playbackState: MPMoviePlaybackState { get }
 @property (nonatomic, readonly) MPMoviePlaybackState playbackState;
 ```
 
-#### Discussion
+## Discussion
 
 The playback state is affected by programmatic calls to play, pause, or stop the movie player. It can also be affected by user interactions or by the network, in cases where streaming content cannot be buffered fast enough.
 

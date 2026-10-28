@@ -23,7 +23,7 @@ var style: UIBarButtonItem.Style { get set }
 @property (nonatomic, assign, readwrite) UIBarButtonItemStyle style;
 ```
 
-#### Discussion
+## Discussion
 
 One of the constants defined in [`UIBarButtonItem.Style`](./style-swift.enum.md). The default value is [`UIBarButtonItem.Style.plain`](./style-swift.enum/plain.md).
 

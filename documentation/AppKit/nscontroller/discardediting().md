@@ -20,7 +20,7 @@ func discardEditing()
 - (void) discardEditing;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver invokes [`discardEditing`](../../ObjectiveC/nsobject-swift.class/discardediting.md) on any current editors.
 

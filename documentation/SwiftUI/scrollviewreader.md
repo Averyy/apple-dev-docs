@@ -22,7 +22,7 @@ A view that provides programmatic scrolling, by working with a proxy to scroll t
 nonisolated struct ScrollViewReader<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 The scroll view reader’s content content builder receives a [`ScrollViewProxy`](./scrollviewproxy.md) instance; you use the proxy’s [`scrollTo(_:anchor:)`](./scrollviewproxy/scrollto%28_,anchor%29.md) to perform scrolling.
 

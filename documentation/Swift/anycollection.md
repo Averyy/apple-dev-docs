@@ -22,7 +22,7 @@ A type-erased wrapper over any collection with indices that support forward trav
 struct AnyCollection<Element>
 ```
 
-#### Overview
+## Overview
 
 An `AnyCollection` instance forwards its operations to a base collection having the same `Element` type, hiding the specifics of the underlying collection.
 

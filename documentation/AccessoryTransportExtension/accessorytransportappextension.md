@@ -20,13 +20,13 @@ protocol AccessoryTransportAppExtension : AppExtension
 - [Receiving iOS notifications on an accessory](./receiving-ios-notifications-on-an-accessory.md)
 - [Forwarding notifications to your accessory using the internet transport type](./forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
-#### Overview
+## Overview
 
 Implement this protocol in an extension with an `EXExtensionPointIdentifier` value of `com.apple.accessory-transport-extension` to relay data to your accessory. The extension supports sharing Wi-Fi networks and forwarding iOS system notifications.
 
 > ❗ **Important**: The system requires your app extension to have the [`com.apple.developer.accessory-transport-extension`](../BundleResources/entitlements/com.apple.developer.accessory-transport-extension.md) entitlement to use this protocol.
 
-#### Wi-Fi network sharing
+## Wi-Fi network sharing
 
 Use this extension with [Wi-Fi Infrastructure](../WiFiInfrastructure/WiFiInfrastructure.md) to share a Wi-Fi network with your accessory. The system calls your extension’s [`accept(sessionRequest:)`](./accessorytransportappextension/accept%28sessionrequest%29.md) method when it needs to establish a transport session for Wi-Fi sharing.
 
@@ -65,7 +65,7 @@ class MyTransportEventHandler: AccessoryTransportSession.EventHandler {
 
 After accepting a session, your extension connects directly to the accessory using [`ASAccessorySession`](../AccessorySetupKit/asaccessorysession.md) and delivers Wi-Fi network data using [`WINetworkSharingProvider`](../WiFiInfrastructure/winetworksharingprovider.md).
 
-#### Notification forwarding
+## Notification forwarding
 
 For notification forwarding, set up your extension the same way as for Wi-Fi network sharing. The system invokes your extension to relay encrypted notification data from your app’s [`AccessoryDataProvider`](./accessorydataprovider.md) extension to your accessory.
 
@@ -94,7 +94,7 @@ The system encrypts data using keys through your app’s [`AccessoryTransportSec
 
 > **Note**:  Call [`cancel(error:)`](./accessorytransportsession/cancel%28error%29.md) on the session if your extension encounters an error that requires terminating the session.
 
-#### Support Bluetooth in the background
+## Support Bluetooth in the background
 
 The system suspends your transport extension when it’s idle, and relaunches or resumes the extension when your accessory sends an update for a characteristic to which your extension subscribes (for more information on characteristics, see [Transferring Data Between Bluetooth Low Energy Devices](../CoreBluetooth/transferring-data-between-bluetooth-low-energy-devices.md)). If the system calls your central manager delegate’s [`centralManager(_:willRestoreState:)`](../CoreBluetooth/cbcentralmanagerdelegate/centralmanager%28_,willrestorestate%29.md) method so your extension can reconstitute its prior session state, the system initiates a *cold relaunch*. If your extension’s objects remain in memory and the system doesn’t call the method, the restart of the accessory is a *warm resume*, because your existing state persists unchanged. In either case, to restore a prior Bluetooth session, configure your extension’s target properties and use the [Core Bluetooth](../CoreBluetooth/CoreBluetooth.md) framework’s [`CBCentralManager`](../CoreBluetooth/cbcentralmanager.md), as shown below.
 

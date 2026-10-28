@@ -21,7 +21,7 @@ Sets the sizes that a widget supports.
 @preconcurrency func supportedFamilies(_ families: [WidgetFamily]) -> some WidgetConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A widget configuration that supports the sizes you specify.
 

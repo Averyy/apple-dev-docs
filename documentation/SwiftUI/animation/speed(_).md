@@ -21,11 +21,11 @@ Changes the duration of an animation by adjusting its speed.
 func speed(_ speed: Double) -> Animation
 ```
 
-#### Return Value
+## Return Value
 
 An animation with the adjusted speed.
 
-#### Discussion
+## Discussion
 
 Setting the speed of an animation changes the duration of the animation by a factor of `speed`. A higher speed value causes a faster animation sequence due to a shorter duration. For example, a one-second animation with a speed of `2.0` completes in half the time (half a second).
 

@@ -9,19 +9,19 @@ Create a new ad group within a campaign, defining targeting, bid strategy, and s
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint creates an ad group that belongs to a single campaign via `campaignId`, which is required at creation and immutable afterward. The ad group defines its own targeting, bid strategy, and schedule, scoped within the campaign’s supply placement and budget.
 
 The `pricingModel` field is also required: use `CPT` for tap-billed campaigns and `CPM` for impression-billed campaigns using the `MANUAL_CPM` bid strategy.
 
-#### Payload Examples
+## Payload Examples
 
 **App Store Ad Group**:
 
 An ad group for an App Store campaign targeting iPhone users aged 18–34 who have not yet downloaded the app.
 
-##### Request
+### Request
 
 ```http
 POST /v1/adgroups
@@ -66,7 +66,7 @@ POST /v1/adgroups
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -124,7 +124,7 @@ POST /v1/adgroups
 
 An App Store ad group using the `MAX_CONVERSIONS` automated bid strategy, which pairs with the `INSTALL` goal to optimize bids toward app installs. The `bid` field is optional and acts as a ceiling rather than a fixed price.
 
-##### Request
+### Request
 
 ```http
 POST /v1/adgroups
@@ -164,7 +164,7 @@ POST /v1/adgroups
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -217,7 +217,7 @@ POST /v1/adgroups
 
 An automated ad group for an Apple Maps campaign. The `automatedKeywordsOptIn` field is `true`, enabling Search Match to automatically identify and target relevant search queries. Separately, omitting `locationGroup` means the ad group defaults to targeting all of the brand’s locations.
 
-##### Request
+### Request
 
 ```http
 POST /v1/adgroups
@@ -230,7 +230,7 @@ POST /v1/adgroups
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -256,7 +256,7 @@ POST /v1/adgroups
 
 An Apple Maps ad group using radius targeting.
 
-##### Request
+### Request
 
 ```http
 POST /v1/adgroups
@@ -291,7 +291,7 @@ POST /v1/adgroups
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -338,7 +338,7 @@ POST /v1/adgroups
 
 An Apple Maps ad group using geo location targeting (locality + daypart). Up to 1,000 geo targets total. Cannot combine with radius targeting.
 
-##### Request
+### Request
 
 ```http
 POST /v1/adgroups
@@ -377,7 +377,7 @@ POST /v1/adgroups
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -428,7 +428,7 @@ POST /v1/adgroups
 
 An Apple Maps ad group using daypart targeting to restrict delivery to specific hours. Supported for `BUSINESS_BRAND` campaigns per the `AdGroupTargetingCreate` schema. The `daypart` values are hourly slot integers 0–167 (0 = Sunday 12:00 AM, 24 = Monday 12:00 AM, and so on).
 
-##### Request
+### Request
 
 ```http
 POST /v1/adgroups
@@ -472,7 +472,7 @@ POST /v1/adgroups
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

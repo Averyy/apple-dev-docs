@@ -23,7 +23,7 @@ mutating func next() -> JoinedSequence<Base>.Iterator.Element?
 
 Available when `Base` conforms to `Sequence` and `Base.Element` conforms to `Sequence`.
 
-#### Discussion
+## Discussion
 
 Once `nil` has been returned, all subsequent calls return `nil`.
 

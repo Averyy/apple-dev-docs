@@ -25,7 +25,7 @@ var frequency: Float { get set }
 @property (nonatomic) float frequency;
 ```
 
-#### Discussion
+## Discussion
 
 The valid range of values is `20 Hz` through `(SampleRate/2)`.
 

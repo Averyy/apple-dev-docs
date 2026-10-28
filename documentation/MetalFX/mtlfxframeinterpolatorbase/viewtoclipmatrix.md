@@ -24,7 +24,7 @@ var viewToClipMatrix: simd_float4x4 { get set }
 @property (nonatomic) simd_float4x4 viewToClipMatrix;
 ```
 
-#### Discussion
+## Discussion
 
 Set this to your unmodified projection matrix. Its depth range has to agree with [`isDepthReversed`](./isdepthreversed.md): when that property is `NO` this matrix maps the near plane to a clip z of 0, and when it is `YES` it maps the near plane to a clip z of 1. Both a left-handed and a right-handed matrix are fine, as long as it is the one that produced [`depthTexture`](./depthtexture.md).
 

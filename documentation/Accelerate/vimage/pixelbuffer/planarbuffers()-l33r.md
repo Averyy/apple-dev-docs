@@ -23,11 +23,11 @@ func planarBuffers() -> [vImage.PixelBuffer<vImage.Planar8>]
 
 Available when `Format` is `vImage.InterleavedFx4`.
 
-#### Return Value
+## Return Value
 
 An array of planar pixel buffers.
 
-#### Discussion
+## Discussion
 
 This function treats 32-bit floating point pixels represented by the range `0 ... 1` as the [`Pixel_8`](../../pixel_8.md) range `0 … 255`.
 

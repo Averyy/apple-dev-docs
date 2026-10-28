@@ -21,11 +21,11 @@ Replaces slices along the specified indices with the given replacement values.
 func replacing(atIndices indices: MLTensor, with replacement: some MLTensorScalar, alongAxis axis: Int) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The updated tensor.
 
-#### Discussion
+## Discussion
 
 For example:
 

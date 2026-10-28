@@ -19,7 +19,7 @@ func setClassOfDevice(_ classOfDevice: BluetoothClassOfDevice, forTimeInterval s
 - (IOReturn) setClassOfDevice:(BluetoothClassOfDevice) classOfDevice forTimeInterval:(NSTimeInterval) seconds;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the whether setting the class of device value was successful. 0 if success, error code otherwise.
 

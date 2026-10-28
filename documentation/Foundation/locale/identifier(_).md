@@ -21,7 +21,7 @@ Returns the locale identifier, in the specified standard format.
 func identifier(_ type: Locale.IdentifierType) -> String
 ```
 
-#### Return Value
+## Return Value
 
 The locale identifier, formatted in accordance with the specified identifier type.
 

@@ -5,7 +5,7 @@
 
 Test your Apple In-App Purchases before making your app available in the App Store.
 
-#### Overview
+## Overview
 
 Users can buy promoted Apple In-App Purchases from the App Store, but you need to test this flow before making your product publicly available. Apple provides a system URL that triggers your app using the `itms-services://` protocol, so you can test Apple In-App Purchases before they’re available in the App Store.
 

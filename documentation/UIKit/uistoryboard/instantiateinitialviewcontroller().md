@@ -25,11 +25,11 @@ func instantiateInitialViewController() -> UIViewController?
 - (UIViewController *) instantiateInitialViewController;
 ```
 
-#### Return Value
+## Return Value
 
 The initial view controller in the storyboard.
 
-#### Discussion
+## Discussion
 
 Every storyboard file has an initial view controller that represents the default view controller to create. Typically, you use the initial view controller as the root view controller for a window. However, you can also instantiate the initial view controller when transitioning to content in a new storyboard file. This method creates a new instance of the initial view controller using its [`init(coder:)`](../uiviewcontroller/init%28coder%29.md) method.
 

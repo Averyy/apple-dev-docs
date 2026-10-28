@@ -24,11 +24,11 @@ func topK(_ source: MPSGraphTensor, k: Int, name: String?) -> [MPSGraphTensor]
 - (NSArray<MPSGraphTensor *> *) topKWithSourceTensor:(MPSGraphTensor *) source k:(NSUInteger) k name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor array of size 2
 
-#### Discussion
+## Discussion
 
 Finds the k largest values along the minor dimension of the input. The source must have at least k elements along its minor dimension. The first element of the result array corresponds to the top values, and the second element of the result array corresponds to the indices of the top values.
 

@@ -25,7 +25,7 @@ func CMSimpleQueueGetCapacity(_ queue: CMSimpleQueue) -> Int32
 extern int32_t CMSimpleQueueGetCapacity(CMSimpleQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 The number of elements that the queue can hold. Returns `0` if there is an error.
 

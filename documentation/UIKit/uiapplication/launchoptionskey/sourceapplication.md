@@ -25,7 +25,7 @@ static let sourceApplication: UIApplication.LaunchOptionsKey
 extern UIApplicationLaunchOptionsKey const UIApplicationLaunchOptionsSourceApplicationKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSString`](../../../Foundation/nsstring.md) object containing the bundle ID of the app that made the request. If the request originated from another app belonging to your team, UIKit sets the value of this key to the ID of that app. If the team identifier of the originating app is different than the team identifier of the current app, the value of the key is `nil`.
 

@@ -10,11 +10,11 @@ Augment the macOS Photos app with extensions that support project creation.
 - macOS 11.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 Starting in macOS 10.13, you can create Photos project extensions. This sample app shows you how to implement a slideshow extension that transitions between photos by zooming in on a region of interest (ROI) with significant meaning in an asset, for example, faces that are relevant to a user, as opposed to faces in a crowd. The app demonstrates the computation of saliency based on an ROI’s weight and quality and the process of subscribing to change notifications so your extension can respond to asset modifications.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 In the extension’s `Info.plist` file, choose the extension type by entering `slideshow` in the field at `NSExtension` > `NSExtensionAttributes` > [`PHProjectCategory`](../PhotosUI/phprojectcategory.md). Add more categories to the information property list for your extension to appear in other categories in the Create menu.
 
@@ -24,7 +24,7 @@ From within the Photos app, access the Create categories by choosing File > Crea
 
 Because the project extension runs inside the Photos app, the sample emulates the grid layout of the user’s photo assets. Pressing the play button in the upper-right corner of the extension starts the slideshow.
 
-##### Customize the Focus Rectangle of the Zoom Transition
+### Customize the Focus Rectangle of the Zoom Transition
 
 The sample code project contains custom `Animator` and `AssetModel` classes.
 
@@ -39,7 +39,7 @@ return sortedRois.last?.rect
 
 The `weight` of an ROI represents the pervasiveness of the ROI in the project as a whole. The `quality` score represents the quality of the ROI in the individual asset, based on factors such as sharpness, visibility, and prominence in the photo. Adding these two values is a heuristic for determining the ROI’s relative importance throughout a photo project.
 
-##### Respond to Asset Changes in the Project
+### Respond to Asset Changes in the Project
 
 To respond to asset changes in the Photos Library, your app extension needs to monitor change notifications. Register for change observation as soon as the project begins or resumes. In the [`PHProjectExtensionController`](../PhotosUI/phprojectextensioncontroller.md) protocol, the [`beginProject(with:projectInfo:completion:)`](../PhotosUI/phprojectextensioncontroller/beginproject%28with,projectinfo,completion%29.md) and [`resumeProject(with:completion:)`](../PhotosUI/phprojectextensioncontroller/resumeproject%28with,completion%29.md) methods provide points for your extension to begin monitoring changes.
 
@@ -73,7 +73,7 @@ func photoLibraryDidChange(_ changeInstance: PHChange) {
 }
 ```
 
-##### Support Copy and Paste
+### Support Copy and Paste
 
 If your extension handles the paste action, implement the [`validateMenuItem:`](../ObjectiveC/nsobject-swift.class/validatemenuitem_.md) delegate method to handle pasteboard contents.
 

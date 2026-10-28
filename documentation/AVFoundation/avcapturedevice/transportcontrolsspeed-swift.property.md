@@ -19,7 +19,7 @@ var transportControlsSpeed: AVCaptureDevice.TransportControlsSpeed { get }
 @property (nonatomic, readonly) AVCaptureDeviceTransportControlsSpeed transportControlsSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 For devices that support transport control, the value of this property indicates the current playback speed of the deck. The following table gives examples of the meaning of values:
 

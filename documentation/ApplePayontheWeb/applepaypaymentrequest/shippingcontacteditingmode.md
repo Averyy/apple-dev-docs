@@ -20,7 +20,7 @@ ApplePayShippingContactEditingMode shippingContactEditingMode;
 
 - [Apple Pay on the Web Version 12 Release Notes](../apple-pay-on-the-web-version-12-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Set the value to `storePickup` for an in-store or other pickup to prevent the user from editing the shipping address.
 

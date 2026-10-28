@@ -27,7 +27,7 @@ optional func confirm(intent: INResumeWorkoutIntent) async -> INResumeWorkoutInt
 - (void) confirmResumeWorkout:(INResumeWorkoutIntent *) intent completion:(void (^)(INResumeWorkoutIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method validates that your app is currently able to resume the user’s workout. For example, verifying that a workout is currently paused.
 

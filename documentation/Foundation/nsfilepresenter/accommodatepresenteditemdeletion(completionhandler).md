@@ -29,7 +29,7 @@ optional func accommodatePresentedItemDeletion() async throws
 - (void) accommodatePresentedItemDeletionWithCompletionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 A file coordinator calls this method when your object’s presented item is about to be deleted. You can use this method to perform any actions that are needed to prepare for the deletion. For example, document objects typically use this method to close the document.
 

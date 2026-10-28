@@ -16,11 +16,11 @@ Returns the drawable at the specified index in the array.
 cp_drawable_tcp_drawable_array_get_drawable(cp_drawable_array_t drawable_array, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The drawable available for drawing at the specified index.
 
-#### Discussion
+## Discussion
 
 The [`cp_drawable_t`](./cp_drawable_t.md) type contains the textures and other information you need to set up your render descriptor in Metal.
 

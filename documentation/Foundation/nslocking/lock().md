@@ -26,7 +26,7 @@ func lock()
 - (void) lock;
 ```
 
-#### Discussion
+## Discussion
 
 An application protects a critical section of code by requiring a thread to acquire a lock before executing the code. Once the critical section is completed, the thread relinquishes the lock by invoking [`unlock()`](./unlock%28%29.md).
 

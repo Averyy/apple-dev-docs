@@ -23,7 +23,7 @@ protocol CustomStage : Generable, Decodable, Encodable, Sendable
 
 - [Making your indexed content available to Foundation Models](./making-your-indexed-content-available-to-foundation-models.md)
 
-#### Overview
+## Overview
 
 A custom stage is a generable type that implements app-specific data transformations for queries. When using Foundation Models, you can use the Spotlight search tool to find app-specific content related to a prompt. The model uses the Spotlight search tool to create queries, each of which might involve require several steps to deliver the final results. For example, a query might fetch items from your app’s Spotlight index, count the number of items it fetched, and assign relevance scores to each item. Each of these steps is a *stage* in the query pipeline, and a custom stage lets you integrate your app’s custom transformations.
 

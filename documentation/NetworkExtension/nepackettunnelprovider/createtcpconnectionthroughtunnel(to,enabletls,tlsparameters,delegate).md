@@ -26,7 +26,7 @@ func createTCPConnectionThroughTunnel(to remoteEndpoint: NWEndpoint, enableTLS: 
 - (NWTCPConnection *) createTCPConnectionThroughTunnelToEndpoint:(NWEndpoint *) remoteEndpoint enableTLS:(BOOL) enableTLS TLSParameters:(NWTLSParameters *) TLSParameters delegate:(id) delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create a TCP connection to an endpoint inside the private network.
 

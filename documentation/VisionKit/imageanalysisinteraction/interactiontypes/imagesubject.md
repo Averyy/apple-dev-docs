@@ -18,7 +18,7 @@ An option that enables people to use a long-press gesture on a subject in an ima
 static let imageSubject: ImageAnalysisInteraction.InteractionTypes
 ```
 
-#### Discussion
+## Discussion
 
 For more information about image subjects, see [`ImageAnalysisInteraction.Subject`](../subject.md).
 

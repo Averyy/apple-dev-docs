@@ -19,7 +19,7 @@ A transformer that generates a modified output color from an input color.
 struct UIConfigurationColorTransformer
 ```
 
-#### Overview
+## Overview
 
 A color transformer takes an input color and modifies it to produce a different output color. For example, you might have a color transformer that returns a grayscale or reduced alpha version of the input color.
 

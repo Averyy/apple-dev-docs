@@ -25,7 +25,7 @@ var playCommand: MPRemoteCommand { get }
 @property (nonatomic, readonly) MPRemoteCommand * playCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to register your app’s handler for pausing the currently playing track. In your handler, play the current item from the point at which the track was paused, or from the beginning if the item was not paused. You can disable the command if your app does not support it.
 

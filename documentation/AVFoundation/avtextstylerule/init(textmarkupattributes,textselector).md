@@ -24,7 +24,7 @@ init?(textMarkupAttributes: [String : Any] = [:], textSelector: String?)
 - (instancetype) initWithTextMarkupAttributes:(NSDictionary<NSString *,id> *) textMarkupAttributes textSelector:(NSString *) textSelector;
 ```
 
-#### Return Value
+## Return Value
 
 A text style rule object initialized with the specified attributes and range information.
 

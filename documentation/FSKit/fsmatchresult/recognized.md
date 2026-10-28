@@ -19,7 +19,7 @@ case recognized
 FSMatchResultRecognized
 ```
 
-#### Discussion
+## Discussion
 
 This match result is appropriate when the file system module identifies the resource’s format but can’t use it. For example, if the resource uses a newer version than the module supports, the module can name the resource but can’t safely do anything with it.
 

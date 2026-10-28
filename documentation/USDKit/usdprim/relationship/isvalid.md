@@ -20,7 +20,7 @@ A Boolean value indicating whether this relationship is valid.
 var isValid: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 A relationship’s validity is connected to a [`USDStage`](../../usdstage.md). A relationship becomes invalid when the lifetime of its stage ends.
 

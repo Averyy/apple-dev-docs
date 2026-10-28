@@ -29,7 +29,7 @@ var memoryCapacity: Int { get set }
 
 - [Accessing cached data](../accessing-cached-data.md)
 
-#### Discussion
+## Discussion
 
 At the time this property is set, the in-memory cache will truncate its contents to the size given, if necessary.
 

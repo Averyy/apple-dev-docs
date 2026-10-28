@@ -15,11 +15,11 @@ Attempts to enter a critical region.
 OSStatus MPEnterCriticalRegion(MPCriticalRegionID criticalRegion, Duration timeout);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 If another task currently occupies the critical region, the current task is blocked until the critical region is released or until the designated timeout expires. Otherwise the task enters the critical region and `MPEnterCriticalRegion` increments the region’s use count. 
 

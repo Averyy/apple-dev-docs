@@ -19,11 +19,11 @@ func IOBluetoothFindNumberOfRegistryEntriesOfClassName(_ deviceType: UnsafePoint
 extern long IOBluetoothFindNumberOfRegistryEntriesOfClassName(const char *deviceType);
 ```
 
-#### Return Value
+## Return Value
 
 Number of HID devices.
 
-#### Overview
+## Overview
 
 Returns total number of registry entries with the provided device classname. For example, [`IOHIPointing`](../kernel/iohipointing.md).
 

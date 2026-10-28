@@ -6,7 +6,7 @@
 
 An atom that holds a list of actual metadata values that are present in the metadata atom.
 
-#### Overview
+## Overview
 
 The metadata item list atom holds a list of actual metadata values that are present in the metadata atom. The metadata items are formatted as a list of items. The metadata item list atom is of type `‘ilst’` and contains a number of metadata items, each of which is an atom.
 

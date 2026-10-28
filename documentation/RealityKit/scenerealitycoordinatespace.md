@@ -20,7 +20,7 @@ The coordinate space that represents the center of a RealityKit scene.
 struct SceneRealityCoordinateSpace
 ```
 
-#### Overview
+## Overview
 
 The center, or origin, of a RealityKit scene varies depending on the platform and context:
 

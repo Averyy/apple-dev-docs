@@ -16,7 +16,7 @@ A Boolean that indicates whether the app can act as a user’s default email cli
 - **Name**: `com.apple.developer.mail-client`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 The system launches the default mail client in iOS whenever a user opens a `mailto:` link. Since email is a critical avenue for communication, Apple requires that email apps must meet specific functional criteria aimed at ensuring private and accurate access for users.
 

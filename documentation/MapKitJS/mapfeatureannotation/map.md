@@ -15,7 +15,7 @@ The map that the annotation is on.
 get map(): Map | null;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t move the map feature annotation to a different map.
 

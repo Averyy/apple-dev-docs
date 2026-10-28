@@ -21,7 +21,7 @@ Performs a regression on a data frame.
 func applied(to input: DataFrame, eventHandler: EventHandler? = nil) async throws -> DataFrame
 ```
 
-#### Return Value
+## Return Value
 
 A data frame of regressions.
 

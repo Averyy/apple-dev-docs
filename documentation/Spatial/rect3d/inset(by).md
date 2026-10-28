@@ -25,7 +25,7 @@ func inset(by dXYZ: Size3D) -> Rect3D
 static SPRect3D SPRect3DInset(SPRect3D rect, SPSize3D dXYZ);
 ```
 
-#### Return Value
+## Return Value
 
 A new rectangle with the same center point after applying the specified inset amount.
 

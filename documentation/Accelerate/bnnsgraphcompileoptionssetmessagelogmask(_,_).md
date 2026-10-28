@@ -25,7 +25,7 @@ func BNNSGraphCompileOptionsSetMessageLogMask(_ options: bnns_graph_compile_opti
 void BNNSGraphCompileOptionsSetMessageLogMask(bnns_graph_compile_options_t options, uint32_t log_level_mask);
 ```
 
-#### Discussion
+## Discussion
 
 The default log mask is [`BNNSGraphMessageLevelUnsupported`](./bnnsgraphmessagelevelunsupported.md) | [`BNNSGraphMessageLevelWarning`](./bnnsgraphmessagelevelwarning.md) | [`BNNSGraphMessageLevelError`](./bnnsgraphmessagelevelerror.md).
 

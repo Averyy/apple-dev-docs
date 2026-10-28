@@ -20,7 +20,7 @@ var stat: stat
 struct stat stat;
 ```
 
-#### Discussion
+## Discussion
 
 The returned structure’s information is equivalent to that returned by the `stat(2)` system call.
 

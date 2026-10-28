@@ -25,7 +25,7 @@ func goToNextPage(_ sender: Any?)
 - (void) goToNextPage:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 PDF Kit records the move in its page history.
 

@@ -17,7 +17,7 @@ The activity’s schedule has an interval that is too long.
 case intervalTooLong
 ```
 
-#### Discussion
+## Discussion
 
 The maximum interval length for monitoring device activity events is one week.
 

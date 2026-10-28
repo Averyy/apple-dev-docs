@@ -23,11 +23,11 @@ func deletionRanges(for textSelection: NSTextSelection, direction: NSTextSelecti
 - (NSArray<NSTextRange *> *) deletionRangesForTextSelection:(NSTextSelection *) textSelection direction:(NSTextSelectionNavigationDirection) direction destination:(NSTextSelectionNavigationDestination) destination allowsDecomposition:(BOOL) allowsDecomposition;
 ```
 
-#### Return Value
+## Return Value
 
 An array of text ranges to delete.
 
-#### Discussion
+## Discussion
 
 The selection after deletion contains a zero-length range starting at the location of the first range returned. The framework ignores the destination when `textSelection` has a non-empty selection. The `allowsDecomposition` parameter only applies to the [`NSTextSelectionNavigation.Direction.backward`](./direction/backward.md) direction and [`NSTextSelectionNavigation.Destination.character`](./destination/character.md) with a zero-length selection.
 

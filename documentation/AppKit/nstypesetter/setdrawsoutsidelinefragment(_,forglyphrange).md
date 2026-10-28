@@ -19,7 +19,7 @@ func setDrawsOutsideLineFragment(_ flag: Bool, forGlyphRange glyphRange: NSRange
 - (void) setDrawsOutsideLineFragment:(BOOL) flag forGlyphRange:(NSRange) glyphRange;
 ```
 
-#### Discussion
+## Discussion
 
 This can happen when text is set at a fixed line height. For example, if the user specifies a fixed line height of 12 points and sets the font size to 24 points, the glyphs will exceed their layout rectangles.
 

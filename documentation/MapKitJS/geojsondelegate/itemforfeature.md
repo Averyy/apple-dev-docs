@@ -18,11 +18,11 @@ itemForFeature?(
 ): Item | null;
 ```
 
-#### Return Value
+## Return Value
 
 A map item for the `feature`.
 
-#### Discussion
+## Discussion
 
 MapKit JS calls this method for every GeoJSON `feature`.
 

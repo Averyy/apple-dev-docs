@@ -11,11 +11,11 @@ Returns the storage increment of the OSData object.
 virtual unsigned int getCapacityIncrement() const;
 ```
 
-#### Return Value
+## Return Value
 
 The storage increment of the OSData object.
 
-#### Overview
+## Overview
 
 An OSData object allocates storage for bytes in multiples of the capacity increment.
 

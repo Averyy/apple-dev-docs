@@ -16,7 +16,7 @@ get subtitle(): string | null;
 set subtitle(value: string | null | undefined);
 ```
 
-#### Discussion
+## Discussion
 
 The text to show in a callout on a second line in smaller type, if not empty.
 

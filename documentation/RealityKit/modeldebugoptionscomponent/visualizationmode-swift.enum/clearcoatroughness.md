@@ -20,7 +20,7 @@ A mode that displays the clearcoat roughness channel of a material as the surfac
 case clearcoatRoughness
 ```
 
-#### Discussion
+## Discussion
 
 Add a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `clearcoatRoughness` to an entity to tell RealityKit to draw the entity’s calculated clearcoat roughness as its surface color. Clearcoat is a way to render objects that have a shiny transparent coating or veneer, such as the surface of a car with a coat of wax or items shrinkwrapped in clear plastic. The clearcoat roughness value represents the shininess of the clearcoat and is only used on parts of the entity that have a `clearcoat` value greater than zero. RealityKit draws the clearcoat roughness value as a grayscale value from black (`0.0`) to white (`1.0`), with lighter areas representing parts with a shinier clearcoat.
 

@@ -21,7 +21,7 @@ Create a new `FilePath` by resolving `subpath` relative to `self`, ensuring that
 func lexicallyResolving(_ subpath: FilePath) -> FilePath?
 ```
 
-#### Discussion
+## Discussion
 
 `subpath` will be lexically normalized (see `lexicallyNormalize`) as part of resolution, meaning any contained `.` and `..` components will be collapsed without resolving symlinks. Any root in `subpath` will be ignored.
 

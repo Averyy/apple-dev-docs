@@ -25,11 +25,11 @@ init?(url: URL, append shouldAppend: Bool)
 - (instancetype) initWithURL:(NSURL *) url append:(BOOL) shouldAppend;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized output stream that can write to `url`.
 
-#### Discussion
+## Discussion
 
 The stream must be opened before it can be used.
 

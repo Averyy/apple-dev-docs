@@ -23,7 +23,7 @@ func setViewControllers(_ viewControllers: [UIViewController], animated: Bool)
 - (void) setViewControllers:(NSArray<UIViewController *> *) viewControllers animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to update or replace the current view controller stack without pushing or popping each controller explicitly. In addition, this method lets you update the set of controllers without animating the changes, which might be appropriate at launch time when you want to return the navigation controller to a previous state.
 

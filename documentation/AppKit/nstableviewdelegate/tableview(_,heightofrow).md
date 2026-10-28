@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFlo
 - (CGFloat) tableView:(NSTableView *) tableView heightOfRow:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The height of the row. The height doesn’t include intercell spacing and must be greater than zero.
 
-#### Discussion
+## Discussion
 
 Implement this method if your table supports varying row heights.
 

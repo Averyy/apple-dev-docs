@@ -21,7 +21,7 @@ static let horizontalUnits: NSAccessibility.Attribute
 extern NSAccessibilityAttributeName const NSAccessibilityHorizontalUnitsAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 See [Measurement Unit Attributes](../../measurement-unit-attributes.md) for possible values.
 

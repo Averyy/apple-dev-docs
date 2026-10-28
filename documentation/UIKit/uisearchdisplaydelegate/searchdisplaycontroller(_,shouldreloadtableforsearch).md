@@ -21,11 +21,11 @@ optional func searchDisplayController(_ controller: UISearchDisplayController, s
 - (BOOL) searchDisplayController:(UISearchDisplayController *) controller shouldReloadTableForSearchString:(NSString *) searchString;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the display controller should reload the data in its table view, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If you don’t implement this method, then the results table is reloaded as soon as the search string changes.
 

@@ -20,7 +20,7 @@ class func invalidateClassDescriptionCache()
 + (void) invalidateClassDescriptionCache;
 ```
 
-#### Discussion
+## Discussion
 
 You should rarely need to invoke this method. Use it whenever a registered `NSClassDescription` object might be replaced by a different version, such as when you have loaded a new provider of `NSClassDescription` objects, or when you are about to remove a provider of `NSClassDescription` objects.
 

@@ -19,7 +19,7 @@ var extendedLanguageTag: String? { get set }
 @property (nonatomic, copy, nullable) NSString * extendedLanguageTag;
 ```
 
-#### Discussion
+## Discussion
 
 `MediaToolbox` uses this property to group similar language tracks together or to match audio and caption tracks. Set this value to `nil` if the track doesn’t have a language tag.
 

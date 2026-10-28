@@ -19,7 +19,7 @@ static func unignoredChildren(from originalChildren: [Any]) -> [Any]
 extern NSArray *NSAccessibilityUnignoredChildren(NSArray *originalChildren);
 ```
 
-#### Discussion
+## Discussion
 
 This function first tests whether `originalChildren` contains any ignored objects. If the array contains no ignored objects, the function returns `originalChildren`. If the array contains ignored objects, this function returns a new array that contains the contents of `originalChildren`, but with each ignored object replaced by its unignored descendant.
 

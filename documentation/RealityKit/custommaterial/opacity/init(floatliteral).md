@@ -19,7 +19,7 @@ Creates an opacity object from a single value.
 init(floatLiteral value: Float)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates an object that defines the opacity of an entity using a single value for the entire entity. This value is available to the material’s surface shader function, but RealityKit draws the entity fully opaque unless the surface shader function calls `params.surface().set_opacity()`.
 

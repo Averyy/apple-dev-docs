@@ -29,7 +29,7 @@ init(timeRange: CMTimeRange)
 + (NSValue *) valueWithCMTimeRange:(CMTimeRange) timeRange;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains the time range information.
 

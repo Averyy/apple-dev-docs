@@ -21,7 +21,7 @@ A severity that indicates extra attention should be given to the dialog, for exa
 static let critical: DialogSeverity
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, a dialog with critical severity will display a large caution symbol with the app icon as an overlay.
 

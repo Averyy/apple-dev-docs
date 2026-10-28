@@ -19,7 +19,7 @@ var momentumPhase: NSEvent.Phase { get }
 @property (readonly) NSEventPhase momentumPhase;
 ```
 
-#### Discussion
+## Discussion
 
 This property is valid for [`NSScrollWheel`](../nsscrollwheel.md) events. With the Magic Mouse and some trackpads, the user can use a scroll wheel or flick gesture resulting in a stream of scroll events that dissipate over time.
 

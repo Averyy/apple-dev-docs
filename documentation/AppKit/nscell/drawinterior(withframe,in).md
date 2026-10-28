@@ -19,7 +19,7 @@ func drawInterior(withFrame cellFrame: NSRect, in controlView: NSView)
 - (void) drawInteriorWithFrame:(NSRect) cellFrame inView:(NSView *) controlView;
 ```
 
-#### Discussion
+## Discussion
 
 Text-type `NSCell` objects display their contents in a rectangle slightly inset from `cellFrame` using a global `NSText` object. Image-type `NSCell` objects display their contents centered within `cellFrame`. If the proper attributes are set, this method also displays the dotted-line rectangle to indicate if the control is the first responder and highlights the cell. This method is invoked from the [`drawCellInside(_:)`](../nscontrol/drawcellinside%28_%29.md) method of `NSControl` to visually update what the cell displays when its contents change. The drawing done by the `NSCell` implementation is minimal and becomes more complex in objects such as `NSButtonCell` and `NSSliderCell`.
 

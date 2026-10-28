@@ -23,11 +23,11 @@ optional func soundIdentifierForFocusUpdate(in context: UIFocusUpdateContext) ->
 
 - [Using custom sounds for focus movement](../using-custom-sounds-for-focus-movement.md)
 
-#### Return Value
+## Return Value
 
 The identifier of the sound to be played. Return `nil` if you want to let the parent focus environment determine which sound to play.
 
-#### Discussion
+## Discussion
 
 Use this method to return a custom sound when the focus environment object gains focus. Return [`default`](../uifocussoundidentifier/default.md) to play the default system sound, or return [`none`](../uifocussoundidentifier/none.md) to avoid playing a sound altogether. If you previously registered custom sounds using the [`register(_:forSoundIdentifier:)`](../uifocussystem/register%28_,forsoundidentifier%29.md) method of [`UIFocusSystem`](../uifocussystem.md), you may also return an identifier for a sound that you registered.
 

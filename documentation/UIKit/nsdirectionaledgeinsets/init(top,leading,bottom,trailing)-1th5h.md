@@ -24,11 +24,11 @@ init(top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat)
 static NSDirectionalEdgeInsets NSDirectionalEdgeInsetsMake(CGFloat top, CGFloat leading, CGFloat bottom, CGFloat trailing);
 ```
 
-#### Return Value
+## Return Value
 
 A directional inset structure.
 
-#### Discussion
+## Discussion
 
 An inset is a margin around a rectangle. Positive values represent margins closer to the center of the rectangle, while negative values represent margins further from the center.
 

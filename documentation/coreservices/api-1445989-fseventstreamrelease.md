@@ -18,7 +18,7 @@ func FSEventStreamRelease(_ streamRef: FSEventStreamRef)
 void FSEventStreamRelease(FSEventStreamRef streamRef);
 ```
 
-#### Discussion
+## Discussion
 
 Decrements the stream's refcount. The refcount is initially one and is incremented via FSEventStreamRetain(). If the refcount reaches zero then the stream is deallocated.
 

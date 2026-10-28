@@ -21,7 +21,7 @@ A time style with all components represented.
 static let complete: Date.FormatStyle.TimeStyle
 ```
 
-#### Discussion
+## Discussion
 
 A `complete` time style represents the hour, minute, second, day period, and time zone components in the format. For example, `9:54:29 PM CDT`, ``for locale `en_US`.
 

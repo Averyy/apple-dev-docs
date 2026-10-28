@@ -22,7 +22,7 @@ init?(url setupPayloadURL: URL?)
 - (instancetype) initWithURL:(NSURL *) setupPayloadURL;
 ```
 
-#### Discussion
+## Discussion
 
 For details about the payload’s content, please join the [MFi Program](https://developer.apple.com/programs/mfi/).
 

@@ -17,7 +17,7 @@ A protocol that defines a service that a device can publish or subscribe to.
 protocol WAService : CustomStringConvertible, Decodable, Encodable, Hashable, Identifiable, Sendable
 ```
 
-#### Overview
+## Overview
 
 A service represents a specific function or use case that’s performed over Wi-Fi Aware. Services are specific functionality and protocols that your app can publish or subscribe to on other devices.
 

@@ -21,7 +21,7 @@ var isAutoStillImageStabilizationEnabled: Bool { get set }
 @property (nonatomic, getter=isAutoStillImageStabilizationEnabled) BOOL autoStillImageStabilizationEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default setting is [`true`](../../Swift/true.md), unless you are capturing a RAW photo (By definition, RAW photos are unprocessed, and image stabilization involves processing the captured image).
 

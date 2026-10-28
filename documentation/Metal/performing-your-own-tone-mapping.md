@@ -5,7 +5,7 @@
 
 Apply your own tone mapping to get the exact behavior you want.
 
-#### Overview
+## Overview
 
 To perform your own EDR tone mapping, create a Metal layer, give it an extended linear color space, and set its [`wantsExtendedDynamicRangeContent`](../QuartzCore/cametallayer/wantsextendeddynamicrangecontent.md) property to [`true`](../Swift/true.md). For example, the code below creates a Metal layer with an extended color space that linearly maps pixel values to luminance values:
 
@@ -19,14 +19,14 @@ metalLayer.colorspace = colorspace;
 CGColorSpaceRelease(colorspace);
 ```
 
-##### Understand EDR pixel values
+### Understand EDR pixel values
 
 On Macs that support EDR, a `1.0` value for a pixel corresponds to the maximum standard dynamic range (SDR) brightness level, but this brightness level doesn’t have to correspond to the maximum brightness of the display. If the display can produce higher brightness levels, additional range (headroom) may be available.  The amount of headroom may vary, depending on the actual display characteristics:
 
 - If the UI brightness level is at `100` nits and the panel is capable of a maximum brightness of `400` nits, then enabling EDR allows values up to `4.0` to be displayed at `400` nits.
 - On the same panel, if the user adjusts the UI brightness level to `200` nits, then 1.0 values are displayed at `200` nits, and `2.0` values are at `400` nits.
 
-##### Map your content to the available range
+### Map your content to the available range
 
 The actual upper bound on displayable values may vary from moment to moment. To determine the current upper bound, read the [`NSScreen`](../AppKit/nsscreen.md) object’s [`maximumExtendedDynamicRangeColorComponentValue`](../AppKit/nsscreen/maximumextendeddynamicrangecolorcomponentvalue.md) property. Note that even on a display that supports EDR, the current maximum might be 1.0, if the display is set to the maximum possible brightness.
 

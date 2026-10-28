@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_Depth: CFString
 extern CFStringRef const kVTCompressionPropertyKey_Depth;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only supported by video encoders for formats that are tied to particular pixel formats (for example, 16-bit RGB, 24-bit RGB).
 

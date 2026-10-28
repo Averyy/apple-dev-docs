@@ -16,7 +16,7 @@ get items(): Item[];
 set items(items: Item | Item[] | null);
 ```
 
-#### Discussion
+## Discussion
 
 Access the original GeoJSON data in the [`data`](./data.md) object. To retrieve the data as MapKit JS items, use the [`items`](./items.md) or [`getFlattenedItemList()`](./getflatteneditemlist.md) objects.
 

@@ -1,0 +1,52 @@
+# init(_:)
+
+**Framework**: RealityKit  
+**Kind**: init  
+**Role**: Initializer
+
+Creates a scattering data set from an array of ten octave-band scattering coefficients.
+
+**Availability**:
+- iOS 27.0+
+- iPadOS 27.0+
+- Mac Catalyst 27.0+
+- macOS 27.0+
+- tvOS 27.0+
+- visionOS 27.0+
+
+## Declaration
+
+```swift
+init(_ coefficients: [Float])
+```
+
+**Other overloads**:
+
+```swift
+init(_ coefficientByFrequency: [Float : Float])
+```
+
+## Discussion
+
+The scattering coefficient is a value between zero and one that describes the proportion of incident sound energy that is diffused or redirected by a surface, rather than absorbed.
+
+Values below zero will be reset to zero, and values above one will be reset to one.
+
+The coefficients provided correspond to the following center frequencies:
+
+```
+31.5Hz, 63Hz, 125Hz, 250Hz, 500Hz, 1kHz, 2kHz, 4kHz, 8kHz, 16kHz
+```
+
+Example usage:
+
+```
+let data = Audio.Scattering([0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10])
+```
+
+> **Precondition**: Ten elements are provided.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/audio/scattering/init(_:)-4cprw)*

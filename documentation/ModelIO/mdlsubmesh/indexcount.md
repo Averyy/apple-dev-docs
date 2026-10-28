@@ -24,7 +24,7 @@ var indexCount: Int { get }
 @property (nonatomic, readonly) NSUInteger indexCount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this index count when rendering the submesh.
 

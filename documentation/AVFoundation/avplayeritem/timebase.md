@@ -26,7 +26,7 @@ var timebase: CMTimebase? { get }
 @property (nonatomic, readonly, nullable) CMTimebaseRef timebase;
 ```
 
-#### Discussion
+## Discussion
 
 The system uses timebase information to synchronize playback of the current item with the host clock. You can use this property to access the timebase information, but you can’t use it to set the time or the rate of playback.
 

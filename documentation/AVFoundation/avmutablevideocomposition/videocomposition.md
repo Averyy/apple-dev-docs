@@ -20,11 +20,11 @@ Creates a new mutable video composition.
 + (AVMutableVideoComposition *) videoComposition;
 ```
 
-#### Return Value
+## Return Value
 
 A newly created and initialized instance of `AVMutableVideoComposition`.
 
-#### Discussion
+## Discussion
 
 The returned `AVMutableVideoComposition` has the following properties:
 

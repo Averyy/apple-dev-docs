@@ -25,7 +25,7 @@ class RPBroadcastActivityViewController
 @interface RPBroadcastActivityViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 The view controller displays the broadcast services currently installed on the device. On iPad, you must present the broadcast activity view controller as a popover.
 

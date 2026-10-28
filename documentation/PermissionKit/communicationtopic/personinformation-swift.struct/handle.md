@@ -19,7 +19,7 @@ The handle to identify and communicate with the person.
 var handle: CommunicationHandle
 ```
 
-#### Discussion
+## Discussion
 
 A handle can be an email address, phone number, username, or any other person identifier.
 

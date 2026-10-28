@@ -25,7 +25,7 @@ class func raise(_ name: NSExceptionName, format: String, arguments argList: CVa
 + (void) raise:(NSExceptionName) name format:(NSString *) format arguments:(va_list) argList;
 ```
 
-#### Discussion
+## Discussion
 
 The user-defined dictionary of the generated object is `nil`.
 

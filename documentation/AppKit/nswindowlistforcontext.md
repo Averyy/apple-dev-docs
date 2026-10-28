@@ -15,7 +15,7 @@ Gets information about an application’s onscreen windows.
 extern void NSWindowListForContext(NSInteger context, NSInteger size, NSInteger list[]);
 ```
 
-#### Discussion
+## Discussion
 
 Provides an ordered list of onscreen windows for a particular application, identified by `context`, which is a window server connection ID. It fills `list` with up to `size` window numbers; the order of windows in the array is the same as their order in the window server’s screen list (their front-to-back order on the screen). Use the count obtained by the [`NSCountWindowsForContext`](./nscountwindowsforcontext.md) function to specify the size of the array for this function.
 

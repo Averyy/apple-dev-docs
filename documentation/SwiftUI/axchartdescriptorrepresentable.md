@@ -21,7 +21,7 @@ A type to generate an `AXChartDescriptor` object that you use to provide informa
 protocol AXChartDescriptorRepresentable
 ```
 
-#### Overview
+## Overview
 
 Note that you may use the `@Environment` property wrapper inside the implementation of your `AXChartDescriptorRepresentable`, in which case you should implement `updateChartDescriptor`, which will be called when the `Environment` changes.
 

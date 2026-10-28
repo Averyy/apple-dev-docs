@@ -24,11 +24,11 @@ Watches for updates to a required config value for the given config key.
 func watchRequiredIntArray<Return>(forKey key: ConfigKey, isSecret: Bool = false, fileID: String = #fileID, line: UInt = #line, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<[Int], any Error>) async throws -> Return) async throws -> Return where Return : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The result produced by the handler.
 
-#### Discussion
+## Discussion
 
 Use this method to observe changes to configuration values that must be present. The handler receives an async sequence that produces the current value whenever it changes, or an error if the configuration value is missing or can’t be converted.
 

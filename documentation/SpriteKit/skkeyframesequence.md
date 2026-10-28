@@ -30,7 +30,7 @@ class SKKeyframeSequence
 - [Using Keyframe Sequence to effect Custom Interpolation](./using-keyframe-sequence-to-effect-custom-interpolation.md)
 - [Animating Particle Properties Across Disparate Values](./animating-particle-properties-across-disparate-values.md)
 
-#### Overview
+## Overview
 
 The primary use for an [`SKKeyframeSequence`](./skkeyframesequence.md) object is to animate properties on particles emitted by an [`SKEmitterNode`](./skemitternode.md) object, but it can also be used for your general interpolation needs across a discrete set of inputs.
 

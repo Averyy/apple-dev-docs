@@ -15,11 +15,11 @@ Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to get id
 bool SMART_Get_Identify_Data(SCSIDeviceOutParameters *request, UInt64 bufAddr, SCSIDeviceInParameters *response, UInt64 senseBufAddr);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the call successfully fills the CDB; `false`, otherwise.
 
-#### Discussion
+## Discussion
 
 Use this method in your dext to prefill a 16-byte CDB for the standard SMART SCSI Command to get identify data.
 

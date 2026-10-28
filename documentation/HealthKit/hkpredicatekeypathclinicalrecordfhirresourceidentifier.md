@@ -23,7 +23,7 @@ let HKPredicateKeyPathClinicalRecordFHIRResourceIdentifier: String
 extern NSString * const HKPredicateKeyPathClinicalRecordFHIRResourceIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The FHIR resource identifier is only unique for a particular resource type from a given source. To uniquely identify a FHIR resource, you must compare the identifier, the resource type, and the source.
 

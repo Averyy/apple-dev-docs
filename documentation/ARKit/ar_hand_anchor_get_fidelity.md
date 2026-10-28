@@ -15,7 +15,7 @@ Get the fidelity of the hand anchor.
 extern ar_hand_fidelity_t ar_hand_anchor_get_fidelity(ar_hand_anchor_t hand_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 The fidelity of the anchor.
 

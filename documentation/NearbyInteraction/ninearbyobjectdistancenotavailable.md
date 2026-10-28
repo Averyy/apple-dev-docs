@@ -22,7 +22,7 @@ extern float NINearbyObjectDistanceNotAvailable;
 
 - [Initiating and maintaining a session](./initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 The framework sets [`distance`](./ninearbyobject/distance-9atp7.md) to the value of this property if it’s unable to acquire distance at any given time.
 

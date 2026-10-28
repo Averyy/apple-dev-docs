@@ -25,7 +25,7 @@ var storefront: String { get set }
 @property (nonatomic, copy) NSString * storefront;
 ```
 
-#### Discussion
+## Discussion
 
 This property uses the ISO 3166-1 alpha-3 region code representation. The default value is `USA`.
 

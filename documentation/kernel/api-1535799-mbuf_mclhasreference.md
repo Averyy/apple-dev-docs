@@ -13,11 +13,11 @@
 int mbuf_mclhasreference(mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 0 if there is no reference by another mbuf, 1 otherwise.
 
-#### Discussion
+## Discussion
 
 Check if a cluster of an mbuf is referenced by another mbuf. References may be taken, for example, as a result of a call to mbuf_split or mbuf_copym
 

@@ -25,7 +25,7 @@ func willRemove(from coordinator: NSPersistentStoreCoordinator?)
 - (void) willRemoveFromPersistentStoreCoordinator:(NSPersistentStoreCoordinator *) coordinator;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation does nothing. You can override this method in a subclass in order to perform any clean-up before the store is removed from the coordinator (and deallocated).
 

@@ -21,11 +21,11 @@ Creates and initializes a new 3D node.
 + (instancetype) nodeWithViewportSize:(CGSize) viewportSize;
 ```
 
-#### Return Value
+## Return Value
 
 A newly created and initialized [`SK3DNode`](../sk3dnode.md) object.
 
-#### Discussion
+## Discussion
 
 The node must be configured with a SceneKit scene before it renders anything.
 

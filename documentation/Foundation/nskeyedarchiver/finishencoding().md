@@ -25,7 +25,7 @@ func finishEncoding()
 - (void) finishEncoding;
 ```
 
-#### Discussion
+## Discussion
 
 No more values can be encoded after this method is called. You must call this method when finished.
 

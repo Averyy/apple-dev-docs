@@ -19,7 +19,7 @@ Provides additional information about a session if it originated within the app.
 var localSession: DropSession.LocalSession?
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to `nil` if drag originated outside the app.
 

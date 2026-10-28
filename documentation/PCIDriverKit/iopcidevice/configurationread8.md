@@ -16,7 +16,7 @@ Reads an 8-bit data value synchronously from the device’s configuration space.
 void ConfigurationRead8(uint64_t offset, uint8_t *readData);
 ```
 
-#### Discussion
+## Discussion
 
 - offset: An offset into the configuration space. This method ignores bits 0 and 1. For a list of possible offset values, see [Configuration Data Offsets](../configuration-data-offsets-enum.md).
 

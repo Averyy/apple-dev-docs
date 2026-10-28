@@ -23,7 +23,7 @@ var flushUpdates: Bool { get set }
 @property (nonatomic) BOOL flushUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 - Before entering an animation scope, for invalidations that happened previously without animation.
 - Before entering a nested animation scope, for invalidations that happened in the outer animation scope.

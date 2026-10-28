@@ -24,7 +24,7 @@ var bounds: CGRect { get }
 @property (nonatomic, readonly) CGRect bounds;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property represents the smallest rectangle that completely encloses all points in the path, including any control points for Bézier and quadratic curves.
 

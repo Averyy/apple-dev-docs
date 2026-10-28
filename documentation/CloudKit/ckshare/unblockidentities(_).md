@@ -25,7 +25,7 @@ func unblockIdentities(_ blockedIdentities: [CKShare.BlockedIdentity])
 - (void) unblockIdentities:(NSArray<CKShareBlockedIdentity *> *) blockedIdentities;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove specified identities from the [`blockedIdentities`](./blockedidentities.md) array. Unblocked identities can request access again if the [`allowsAccessRequests`](./allowsaccessrequests.md) is enabled.
 

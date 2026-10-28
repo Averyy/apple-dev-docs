@@ -23,7 +23,7 @@ var backingStoreIdentity: Data? { get }
 @property (nonatomic, readonly, nullable) NSData * backingStoreIdentity;
 ```
 
-#### Discussion
+## Discussion
 
 Changes to this identifier indicate that the system has dropped its backing store and is creating a new one. The system may create a new backing store if the old store becomes corrupted. The file provider extension can also request a new backing store by calling [`reimportItems(below:completionHandler:)`](../nsfileprovidermanager/reimportitems%28below,completionhandler%29.md).
 

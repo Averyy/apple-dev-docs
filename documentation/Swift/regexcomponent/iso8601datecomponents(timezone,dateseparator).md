@@ -23,7 +23,7 @@ static func iso8601DateComponents(timeZone: TimeZone, dateSeparator: Date.ISO860
 
 Available when `Self` is `DateComponents.ISO8601FormatStyle`.
 
-#### Return Value
+## Return Value
 
 A `RegexComponent` to match an ISO 8601 date string, not any time zone that may be in the string.
 

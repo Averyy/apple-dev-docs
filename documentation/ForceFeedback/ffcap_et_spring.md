@@ -18,7 +18,7 @@ var FFCAP_ET_SPRING: Int { get }
 FFCAP_ET_SPRING
 ```
 
-#### Discussion
+## Discussion
 
 The effect represents a spring force effect.
 

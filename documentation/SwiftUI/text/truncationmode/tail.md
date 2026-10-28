@@ -21,7 +21,7 @@ Truncate at the end of the line.
 case tail
 ```
 
-#### Discussion
+## Discussion
 
 Use this kind of truncation to omit characters from the end of the string. For example, you could truncate the English alphabet as “abcd…”.
 

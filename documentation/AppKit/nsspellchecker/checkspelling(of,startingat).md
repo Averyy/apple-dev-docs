@@ -19,11 +19,11 @@ func checkSpelling(of stringToCheck: String, startingAt startingOffset: Int) -> 
 - (NSRange) checkSpellingOfString:(NSString *) stringToCheck startingAt:(NSInteger) startingOffset;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the range of the first misspelled word.
 
-#### Discussion
+## Discussion
 
 Wrapping occurs, but no ignored-words dictionary is used.
 

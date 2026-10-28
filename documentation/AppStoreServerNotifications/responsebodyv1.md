@@ -22,7 +22,7 @@ object responseBodyV1
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 - [Receiving App Store Server Notifications](./receiving-app-store-server-notifications.md)
 
-#### Discussion
+## Discussion
 
 Use the information in the response body to react quickly to changes in your users’ subscription states. The fields available in a notification sent to your server depend on the [`notification_type`](./responsebodyv1/notification_type.md), which indicates the event that triggered the notification.
 

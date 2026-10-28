@@ -24,7 +24,7 @@ func isDeviceCertified(for performanceTier: NSDeviceCertification) -> Bool
 - (BOOL) isDeviceCertifiedFor:(NSDeviceCertification) performanceTier;
 ```
 
-#### Return Value
+## Return Value
 
 `True` if the device meets the requirements for the given performance tier.
 

@@ -25,7 +25,7 @@ func CFPlugInRemoveInstanceForFactory(_ factoryID: CFUUID!)
 extern void CFPlugInRemoveInstanceForFactory(CFUUIDRef factoryID);
 ```
 
-#### Discussion
+## Discussion
 
 If the instance counts of every factory in a plug-in are zero, the plug-in can be unloaded.
 

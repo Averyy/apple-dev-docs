@@ -27,7 +27,7 @@ static let unarchiveFromDataTransformerName: NSValueTransformerName
 extern NSValueTransformerName const NSUnarchiveFromDataTransformerName;
 ```
 
-#### Discussion
+## Discussion
 
 The transformer this property references returns the [`NSData`](../nsdata.md) instance created by archiving the value. This transformer requires that an object supports [`NSCoding`](../nscoding.md) in order for the transformer to archive and unarchive.
 

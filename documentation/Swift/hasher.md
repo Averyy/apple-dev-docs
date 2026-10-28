@@ -22,7 +22,7 @@ The universal hash function used by `Set` and `Dictionary`.
 struct Hasher
 ```
 
-#### Overview
+## Overview
 
 `Hasher` can be used to map an arbitrary sequence of bytes to an integer hash value. You can feed data to the hasher using a series of calls to mutating `combine` methods. When you’ve finished feeding the hasher, the hash value can be retrieved by calling `finalize()`:
 

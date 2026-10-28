@@ -19,7 +19,7 @@ var startingColumn: Int { get }
 @property (readonly) NSInteger startingColumn;
 ```
 
-#### Return Value
+## Return Value
 
 The table column at which this text table block starts.
 

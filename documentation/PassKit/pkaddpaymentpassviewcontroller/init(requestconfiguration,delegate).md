@@ -22,11 +22,11 @@ init?(requestConfiguration configuration: PKAddPaymentPassRequestConfiguration, 
 - (instancetype) initWithRequestConfiguration:(PKAddPaymentPassRequestConfiguration *) configuration delegate:(id<PKAddPaymentPassViewControllerDelegate>) delegate;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized add payment view controller.
 
-#### Discussion
+## Discussion
 
 Adding payment passes requires a special entitlement issued by Apple. If your app does not include this entitlement, this method returns `nil`. For more information on requesting this entitlement, see the Card Issuers section on [developer.apple.com/apple-pay/](https://developer.apple.com/apple-pay/).
 

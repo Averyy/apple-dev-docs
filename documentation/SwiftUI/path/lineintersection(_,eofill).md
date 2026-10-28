@@ -21,11 +21,11 @@ Returns a new path with a line from this path that overlaps the filled regions o
 func lineIntersection(_ other: Path, eoFill: Bool = false) -> Path
 ```
 
-#### Return Value
+## Return Value
 
 A new path.
 
-#### Discussion
+## Discussion
 
 The line of the resulting path is the line of this path that overlaps the filled region of `other`.
 

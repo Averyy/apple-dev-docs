@@ -21,7 +21,7 @@ An animation that makes the layers of a symbol-based image disappear separately 
 + (instancetype) effect;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the disappear effect options.
 

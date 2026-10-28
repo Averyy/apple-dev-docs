@@ -19,7 +19,7 @@ func arrangeInFront(_ sender: Any?)
 - (void) arrangeInFront:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Windows associated with the app but not listed in the Window menu are not ordered to the front.
 

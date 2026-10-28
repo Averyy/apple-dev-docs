@@ -24,7 +24,7 @@ var loopRange: AVBeatRange { get set }
 @property (nonatomic) AVBeatRange loopRange;
 ```
 
-#### Discussion
+## Discussion
 
 You set the loop by specifying its beat range.
 

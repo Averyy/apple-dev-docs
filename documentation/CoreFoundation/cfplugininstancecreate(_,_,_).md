@@ -25,11 +25,11 @@ func CFPlugInInstanceCreate(_ allocator: CFAllocator!, _ factoryUUID: CFUUID!, _
 extern void *CFPlugInInstanceCreate(CFAllocatorRef allocator, CFUUIDRef factoryUUID, CFUUIDRef typeUUID);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IUnknown interface for the new plug-in.
 
-#### Discussion
+## Discussion
 
 The plug-in host uses this function to create an instance of the given type. Unless the plug-in is using dynamic registration, this function causes the plug-in’s code to be loaded into memory.
 

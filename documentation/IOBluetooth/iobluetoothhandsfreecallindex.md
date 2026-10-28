@@ -19,7 +19,7 @@ let IOBluetoothHandsFreeCallIndex: String
 extern NSString * const IOBluetoothHandsFreeCallIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Calls keep their index number until they are ended. New calls are assigned the lowest available index number.
 

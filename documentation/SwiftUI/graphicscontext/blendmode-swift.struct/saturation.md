@@ -21,7 +21,7 @@ A mode that uses the luminance and hue values of the background with the saturat
 static var saturation: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 Areas of the background that have no saturation — namely, pure gray areas — don’t produce a change.
 

@@ -19,11 +19,11 @@ func PMSessionGetDestinationType(_ printSession: PMPrintSession, _ printSettings
 OSStatus PMSessionGetDestinationType(PMPrintSession printSession, PMPrintSettings printSettings, PMDestinationType *destTypeP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007). 
 
-#### Discussion
+## Discussion
 
 You must call this function between the creation and release of a printing session. See the function [`PMCreateSession(_:)`](./api-1463247-pmcreatesession.md).
 

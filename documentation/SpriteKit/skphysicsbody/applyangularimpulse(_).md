@@ -25,7 +25,7 @@ func applyAngularImpulse(_ impulse: CGFloat)
 - (void) applyAngularImpulse:(CGFloat) impulse;
 ```
 
-#### Discussion
+## Discussion
 
 This method affects the body’s angular velocity without changing the body’s linear velocity.
 

@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether two values are equal.
 static func == (a: Unicode.UTF32, b: Unicode.UTF32) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
 

@@ -21,7 +21,7 @@ Creates and returns a ordered set that contains a single given object.
 + (instancetype) orderedSetWithObject:(ObjectType) object;
 ```
 
-#### Return Value
+## Return Value
 
 A new ordered set containing `object`.
 

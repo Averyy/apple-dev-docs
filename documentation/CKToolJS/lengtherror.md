@@ -15,7 +15,7 @@ The base class of length-related validation errors.
 interface LengthError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValidationError`.
 

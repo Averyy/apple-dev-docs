@@ -29,11 +29,11 @@ class func sourceOverCompositing() -> any CIFilter & CICompositeOperation
 - [Applying a Chroma Key Effect](../applying-a-chroma-key-effect.md)
 - [Simulating Scratchy Analog Film](../simulating-scratchy-analog-film.md)
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the source-over compositing filter to an image. The effect creates the result by overlaying the input image over the background image. Unlike the other source compositing filters, source-over doesn’t subtract parts of the image.
 

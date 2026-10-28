@@ -21,7 +21,7 @@ The system can’t complete the requested operation because Game Center doesn’
 static var gameUnrecognized: GKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Ensure the app’s `bundleID` is correct.
 

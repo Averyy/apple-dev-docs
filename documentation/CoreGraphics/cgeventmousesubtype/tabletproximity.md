@@ -18,7 +18,7 @@ case tabletProximity
 kCGEventMouseSubtypeTabletProximity
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that the mouse event originated from a tablet device with the pen in proximity but not necessarily touching the tablet, and that the various `kCGTabletProximity` field selectors may be used to obtain tablet-specific data from the mouse event. This is often used with mouse move events originating from a tablet.
 

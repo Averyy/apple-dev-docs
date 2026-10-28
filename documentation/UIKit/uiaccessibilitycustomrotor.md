@@ -24,7 +24,7 @@ class UIAccessibilityCustomRotor
 @interface UIAccessibilityCustomRotor : NSObject
 ```
 
-#### Overview
+## Overview
 
 You might use an instance of this class to find the next link in an article, or the next misspelled word in a document.
 

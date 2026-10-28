@@ -15,11 +15,11 @@ Sets the output latency of the clock device.
 kern_return_t SetOutputLatency(uint32_t in_latency);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Drivers can change the output latency of the clock device dynamically. If successful, changing the available output latency sends a notification to the host to update the object state.
 

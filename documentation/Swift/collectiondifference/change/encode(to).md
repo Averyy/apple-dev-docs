@@ -23,7 +23,7 @@ func encode(to encoder: any Encoder) throws
 
 Available when `ChangeElement` conforms to `Decodable` and `Encodable`.
 
-#### Discussion
+## Discussion
 
 If the value fails to encode anything, `encoder` will encode an empty keyed container in its place.
 

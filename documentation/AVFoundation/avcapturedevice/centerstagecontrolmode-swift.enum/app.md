@@ -23,7 +23,7 @@ case app
 AVCaptureCenterStageControlModeApp
 ```
 
-#### Discussion
+## Discussion
 
 In this mode, the app has exclusive control of Center Stage, and the system disallows user control through Control Center.
 

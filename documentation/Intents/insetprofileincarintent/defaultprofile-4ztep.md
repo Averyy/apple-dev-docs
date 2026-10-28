@@ -28,7 +28,7 @@ A Boolean value indicating whether to make the profile the default profile.
 @property (atomic, copy, readonly, nullable) NSNumber * defaultProfile;
 ```
 
-#### Discussion
+## Discussion
 
 When the value in this property is [`true`](../../Swift/true.md), the user wants to make the profile the default profile for the vehicle.
 

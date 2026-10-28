@@ -25,7 +25,7 @@ var participants: [CKShare.Participant] { get }
 @property (copy, readonly) NSArray<CKShareParticipant *> * participants;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s value contains all of the share’s participants that the current user has permissions to see. At a minimum, it includes the share’s owner and the current user.
 

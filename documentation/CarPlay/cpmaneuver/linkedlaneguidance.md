@@ -21,7 +21,7 @@ unowned(unsafe) var linkedLaneGuidance: CPLaneGuidance { get set }
 @property (nonatomic, assign) CPLaneGuidance * linkedLaneGuidance;
 ```
 
-#### Discussion
+## Discussion
 
 This value is optional; however [`CPManeuver`](../cpmaneuver.md) requires this value if there is a corresponding lane guidance value.
 

@@ -23,7 +23,7 @@ var layoutMargins: UIEdgeInsets { get set }
 @property (nonatomic) UIEdgeInsets layoutMargins;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 11 and later, use the [`directionalLayoutMargins`](./directionallayoutmargins.md) property to specify layout margins instead of this property. The leading and trailing edge insets in the [`directionalLayoutMargins`](./directionallayoutmargins.md) property are synchronized with the left and right insets in this property. For example, setting the [`leading`](../nsdirectionaledgeinsets/leading.md) directional edge inset to 20 points causes the [`left`](../uiedgeinsets/left.md) inset of this property to be set to 20 points on a system with a left-to-right language.
 

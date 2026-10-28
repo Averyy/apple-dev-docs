@@ -20,7 +20,7 @@ object Error
 - [Handling Requests and Responses](./handling-requests-and-responses.md)
 - [HTTP Status Codes](./http-status-codes.md)
 
-#### Discussion
+## Discussion
 
 If a request is unsuccessful, the `errors` in the response may contain an Error object for each problem that occurred.
 

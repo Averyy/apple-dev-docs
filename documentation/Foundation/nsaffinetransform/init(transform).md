@@ -28,7 +28,7 @@ convenience init(transform: AffineTransform)
 - (instancetype) initWithTransform:(NSAffineTransform *) transform;
 ```
 
-#### Return Value
+## Return Value
 
 A new transform object initialized with the matrix values of `aTransform`.
 

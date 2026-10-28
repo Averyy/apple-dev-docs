@@ -25,7 +25,7 @@ protocol NSURLConnectionDataDelegate : NSURLConnectionDelegate
 @protocol NSURLConnectionDataDelegate <NSURLConnectionDelegate>
 ```
 
-#### Overview
+## Overview
 
 The `NSURLConnectionDataDelegate` protocol describes methods that should be implemented by the delegate for an instance of the [`NSURLConnection`](./nsurlconnection.md) class. Many methods in this protocol existed as part of an informal protocol in previous versions of macOS and iOS.
 

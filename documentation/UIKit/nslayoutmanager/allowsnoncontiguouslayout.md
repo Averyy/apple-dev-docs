@@ -23,7 +23,7 @@ var allowsNonContiguousLayout: Bool { get set }
 @property (nonatomic) BOOL allowsNonContiguousLayout;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about noncontiguous layout, see [Noncontiguous Layout](../nslayoutmanager.md#Noncontiguous-Layout).
 

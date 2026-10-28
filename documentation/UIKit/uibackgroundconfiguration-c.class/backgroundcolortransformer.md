@@ -19,7 +19,7 @@ The color transformer for resolving the background color.
 @property (nonatomic, copy, nullable) UIConfigurationColorTransformer backgroundColorTransformer;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `nil`, the configuration uses `backgroundColor` without any transformations.
 

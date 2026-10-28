@@ -23,7 +23,7 @@ init(repeating scalar: Int64)
 
 Available when `Scalar` is `Int64`.
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

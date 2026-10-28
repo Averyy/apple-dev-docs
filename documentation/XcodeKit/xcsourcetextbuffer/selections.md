@@ -19,7 +19,7 @@ var selections: NSMutableArray { get }
 @property (strong, readonly) NSMutableArray<XCSourceTextRange *> * selections;
 ```
 
-#### Discussion
+## Discussion
 
 An empty range represents an insertion point. Modifying the lines of text in the buffer automatically updates the selections to match.
 

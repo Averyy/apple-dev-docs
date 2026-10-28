@@ -20,11 +20,11 @@ string Ad.SystemStatus
 - `RUNNING`: The ad is active and eligible to serve.
 - `NOT_RUNNING`: The system has identified a condition preventing the ad from delivering.
 
-#### Discussion
+## Discussion
 
 The `SystemStatus` reports whether the platform currently allows the ad to serve, distinct from the advertiser-set [`Ad.Status`](./status-data.typealias.md).
 
-##### Example
+### Example
 
 ```json
 {

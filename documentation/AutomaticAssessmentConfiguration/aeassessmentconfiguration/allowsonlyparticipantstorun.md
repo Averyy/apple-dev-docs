@@ -20,7 +20,7 @@ var allowsOnlyParticipantsToRun: Bool { get set }
 @property (nonatomic, assign) BOOL allowsOnlyParticipantsToRun;
 ```
 
-#### Discussion
+## Discussion
 
 Only validly signed participants can be permitted. The launch allowlist pins each entry to the code signing identifier and team identifier read from its signature, so an unsigned or invalidly signed participant has no identity to pin and is denied launch even though you configured it as a participant. This holds regardless of [`requiresSignatureValidation`](../aeassessmentbinaryexecutable/requiressignaturevalidation.md).
 

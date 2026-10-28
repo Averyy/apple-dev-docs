@@ -24,11 +24,11 @@ class func textImageGenerator() -> any CIFilter & CITextImageGenerator
 + (CIFilter<CITextImageGenerator> *) textImageGeneratorFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates a text image. The effect takes the input string property and the scale factor to scale up the text. You commonly combine this filter with other filters to create a watermark on images.
 

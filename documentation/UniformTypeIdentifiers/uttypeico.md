@@ -21,7 +21,7 @@ A type that represents Windows icon data.
 extern UTType * const UTTypeICO;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.microsoft.ico`.
 

@@ -29,11 +29,11 @@ static SparseMatrix_Complex_Double SparseConvertFromCoordinate(int rowCount, int
 
 - [Creating a sparse matrix from coordinate format arrays](./creating-a-sparse-matrix-from-coordinate-format-arrays.md)
 
-#### Return Value
+## Return Value
 
 A new `SparseMatrix_Complex_Double` object, using the memory you provided in the `storage` parameter.
 
-#### Discussion
+## Discussion
 
 For symmetric (Hermitian) matrices, entries are accepted in either triangle (if they are in the “wrong” triangle as specified by attributes.triangle, they are transposed, and if an entry is already present, are treated as duplicates and summed). For triangular matrices, entries in the “wrong” triangle as specified by attributes.triangle are treated as out-of-range and dropped.
 

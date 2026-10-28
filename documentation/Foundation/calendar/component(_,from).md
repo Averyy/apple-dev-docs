@@ -21,7 +21,7 @@ Returns the value for one component of a date.
 func component(_ component: Calendar.Component, from date: Date) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The value for the component.
 

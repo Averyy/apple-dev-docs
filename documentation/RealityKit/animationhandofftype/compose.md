@@ -20,7 +20,7 @@ Adds the new animation to existing animations, and immediately starts the new an
 static var compose: AnimationHandoffType { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this handoff for additive animations. If the new animation isn’t additive, then `compose` adds the new animation and removes the existing animation.
 

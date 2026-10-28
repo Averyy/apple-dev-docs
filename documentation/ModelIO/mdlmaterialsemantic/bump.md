@@ -24,7 +24,7 @@ case bump
 MDLMaterialSemanticBump
 ```
 
-#### Discussion
+## Discussion
 
 The local gradients in a bump map produce variation in the direction of surface normal vectors.
 

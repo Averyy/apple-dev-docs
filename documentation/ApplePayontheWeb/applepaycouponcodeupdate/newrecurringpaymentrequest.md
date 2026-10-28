@@ -16,7 +16,7 @@ An updated request for a recurring payment.
 ApplePayRecurringPaymentRequest newRecurringPaymentRequest;
 ```
 
-#### Discussion
+## Discussion
 
 Provide this object to update the [`recurringPaymentRequest`](../applepaypaymentrequest/recurringpaymentrequest.md) value in the original [`ApplePayPaymentRequest`](../applepaypaymentrequest.md), if necessary, after the user updated the coupon code.
 

@@ -25,7 +25,7 @@ var bottomRadius: CGFloat { get set }
 @property (nonatomic) CGFloat bottomRadius;
 ```
 
-#### Discussion
+## Discussion
 
 The cone is centered in its local coordinate system. For example, the base of a cone whose bottom radius is `5.0` extends from `-5.0` to `5.0` along the x- and z-axes.
 

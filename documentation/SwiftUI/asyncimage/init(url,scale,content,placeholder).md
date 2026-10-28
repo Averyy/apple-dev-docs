@@ -22,7 +22,7 @@ Loads and displays a modifiable image from the specified URL using a custom plac
 nonisolated init<I, P>(url: URL?, scale: CGFloat = 1, @ContentBuilder content: @escaping (Image) -> I, @ContentBuilder placeholder: @escaping () -> P) where Content == _ConditionalContent<I, P>, I : View, P : View
 ```
 
-#### Discussion
+## Discussion
 
 Until the image loads, SwiftUI displays the placeholder view that you specify. When the load operation completes successfully, SwiftUI updates the view to show content that you specify, which you create using the loaded image. For example, you can show a green placeholder, followed by a tiled version of the loaded image:
 

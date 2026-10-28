@@ -21,7 +21,7 @@ Creates a new activity only if one is not already present.
 OS_ACTIVITY_FLAG_IF_NONE_PRESENT
 ```
 
-#### Discussion
+## Discussion
 
 When you include this flag when calling a function that creates an activity, if an activity already exists, the function returns that activity. Otherwise, the function creates and returns a new activity.
 

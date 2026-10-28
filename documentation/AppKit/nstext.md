@@ -19,7 +19,7 @@ class NSText
 @interface NSText : NSView
 ```
 
-#### Overview
+## Overview
 
 [`NSText`](./nstext.md) draws text for user interface objects, provides text editing capabilities, and controls text attributes such as type size, font, and color.
 

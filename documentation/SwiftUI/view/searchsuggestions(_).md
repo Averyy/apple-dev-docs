@@ -27,7 +27,7 @@ func searchSuggestions<S>(@ContentBuilder _ suggestions: () -> S) -> some View w
 - [Scoping a search operation](../scoping-a-search-operation.md)
 - [Suggesting search terms](../suggesting-search-terms.md)
 
-#### Discussion
+## Discussion
 
 You can suggest search terms during a search operation by providing a collection of view to this modifier. The interface presents the suggestion views as a list of choices when someone activates the search interface. Associate a string with each suggestion view by adding the [`searchCompletion(_:)`](./searchcompletion%28_%29.md) modifier to the view. For example, you can suggest fruit types by displaying their emoji, and provide the corresponding search string as a search completion in each case:
 

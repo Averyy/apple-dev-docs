@@ -20,7 +20,7 @@ An object that reports the result of the flashing lights processor.
 struct Result
 ```
 
-#### Overview
+## Overview
 
 An [`MAFlashingLightsProcessor.Result`](./result.md) object is the result of calling [`processSurface(_:outSurface:timestamp:options:)`](./processsurface%28_,outsurface,timestamp,options%29.md). This object indicates whether the method successfully processed the input surface, the intensity of flashing lights in the input surface, and the amount of mitigation in the output surface.
 

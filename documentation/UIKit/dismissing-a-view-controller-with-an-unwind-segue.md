@@ -5,7 +5,7 @@
 
 Configure an unwind segue in your storyboard file that dynamically chooses the most appropriate view controller to display next.
 
-#### Overview
+## Overview
 
 To handle the dismissal of a view controller, create an unwind segue. Unlike the segues that you use to present view controllers, an unwind segue promises the dismissal of the current view controller without promising a specific target for the resulting transition. Instead, UIKit determines the target of an unwind segue programmatically at runtime.
 
@@ -13,7 +13,7 @@ UIKit determines the target of an unwind segue at runtime, so you aren’t restr
 
 ![An illustration showing the problem of connecting an unwind segue to a specific view controller. There might be multiple targets to choose from. ](https://developer.apple.com/tutorials/images/com.apple.uikit/media-3375405@2x.png)
 
-##### Define an unwind action on a parent view controller
+### Define an unwind action on a parent view controller
 
 The presence of an unwind segue action method tells UIKit that a view controller is a potential destination for an unwind segue. Before configuring any unwind segues in your storyboard, add this action method to at least one of your view controllers. If no view controller has an unwind action, Xcode prevents you from creating unwind segues. This action method has the following format:
 
@@ -31,7 +31,7 @@ The presence of an unwind segue action method tells UIKit that a view controller
 
 You don’t need to do anything in your unwind segue action methods. The presence of the method is enough to dismiss the current view controller. However, you can use the method to perform relevant tasks during the dismissal process. For example, you might pass data from the dismissed view controller back to the parent that presented it. If you do, you can use the provided [`UIStoryboardSegue`](./uistoryboardsegue.md) object to retrieve the starting and ending view controllers.
 
-##### Connect a triggering object to the exit control
+### Connect a triggering object to the exit control
 
 In your storyboard, create an unwind segue by right-clicking a triggering object and dragging to the Exit control at the top of your view controller’s scene. You may trigger the segue from any object that supports the target-action design pattern, such as a control or gesture recognizer attached to your view controller.
 

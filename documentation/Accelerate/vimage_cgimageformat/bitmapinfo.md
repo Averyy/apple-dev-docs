@@ -29,7 +29,7 @@ CGBitmapInfo bitmapInfo;
 
 - [Building a Basic Image-Processing Workflow](../building-a-basic-image-processing-workflow.md)
 
-#### Discussion
+## Discussion
 
 For example, ARGB8888 is [`CGImageAlphaInfo.first`](../../CoreGraphics/cgimagealphainfo/first.md) `|` [`byteOrderDefault`](../../CoreGraphics/cgbitmapinfo/byteorderdefault.md), and BGRA8888 is [`CGImageAlphaInfo.first`](../../CoreGraphics/cgimagealphainfo/first.md) `|` [`byteOrder32Little`](../../CoreGraphics/cgbitmapinfo/byteorder32little.md).
 

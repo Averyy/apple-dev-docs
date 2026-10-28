@@ -25,7 +25,7 @@ var encryptionScope: CKRecordZone.EncryptionScope { get set }
 @property (assign) CKRecordZoneEncryptionScope encryptionScope;
 ```
 
-#### Discussion
+## Discussion
 
 Zone encryption scope defaults to `CKRecordZoneEncryptionScopePerRecord` and can only be modified before zone creation. Attempting to change the encryption scope of an existing zone is invalid and results in an error.
 

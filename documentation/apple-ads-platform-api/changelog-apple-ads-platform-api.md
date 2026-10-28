@@ -5,13 +5,13 @@
 
 A log of changes to the Apple Ads Platform API.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: The Apple Ads Platform API supersedes the [Apple Ads Campaign Management API](../apple_ads/apple-search-ads-campaign-management-api-5.md), which will be sunset on January 26, 2027.
 
 API 1.0 is the current version.
 
-##### 1.0
+### 1.0
 
 Released in August, 2026
 

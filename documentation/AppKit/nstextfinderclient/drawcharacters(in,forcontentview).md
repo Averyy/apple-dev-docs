@@ -19,7 +19,7 @@ optional func drawCharacters(in range: NSRange, forContentView view: NSView)
 - (void) drawCharactersInRange:(NSRange) range forContentView:(NSView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 If the character range partially intersects a glyph range, then the full glyph is drawn to avoid additional layout.
 

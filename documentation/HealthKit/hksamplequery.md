@@ -28,7 +28,7 @@ class HKSampleQuery
 
 - [Executing Observer Queries](./executing-observer-queries.md)
 
-#### Overview
+## Overview
 
 You can use sample queries to search for any concrete subclasses of the [`HKSample`](./hksample.md) class, including [`HKCategorySample`](./hkcategorysample.md), [`HKCorrelation`](./hkcorrelation.md), [`HKQuantitySample`](./hkquantitysample.md), and [`HKWorkout`](./hkworkout.md) objects.
 

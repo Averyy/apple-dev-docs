@@ -25,11 +25,11 @@ init?(standardFormatWithSampleRate sampleRate: Double, channels: AVAudioChannelC
 - (instancetype) initStandardFormatWithSampleRate:(double) sampleRate channels:(AVAudioChannelCount) channels;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioFormat` instance, or `nil` if the initialization fails.
 
-#### Discussion
+## Discussion
 
 The returned `AVAudioFormat` instance uses the [`AVAudioCommonFormat.pcmFormatFloat32`](../avaudiocommonformat/pcmformatfloat32.md) format.
 

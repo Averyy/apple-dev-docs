@@ -25,11 +25,11 @@ func UTTypeCreateAllIdentifiersForTag(_ inTagClass: CFString, _ inTag: CFString,
 CFArrayRef UTTypeCreateAllIdentifiersForTag(CFStringRef inTagClass, CFStringRef inTag, CFStringRef inConformingToUTI);
 ```
 
-#### Return Value
+## Return Value
 
 An array of uniform type identifiers, or `NULL` if inTagClass is not a known tag class
 
-#### Discussion
+## Discussion
 
 This function is used to translate a type declared using another declaration mechanism (for example, MIME types) into a uniform type identifier. This function searches all UTI declarations for a matching translation and returns all possible results. If a conforming parameter is assigned, the search is reduced to the subset of type identifiers that conform to that type.
 

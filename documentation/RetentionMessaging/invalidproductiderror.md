@@ -15,7 +15,7 @@ An error that indicates the product ID is invalid.
 object InvalidProductIdError
 ```
 
-#### Overview
+## Overview
 
 The [`Configure Default Message`](./configure-default-message.md) endpoint returns this error if the system can’t find [`productId`](./productid.md) or it’s otherwise invalid.
 

@@ -25,7 +25,7 @@ let MPMediaPlaylistPropertyPlaylistAttributes: String
 extern NSString * const MPMediaPlaylistPropertyPlaylistAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSNumber`](../Foundation/nsnumber.md) object containing an [`NSInteger`](../ObjectiveC/nsinteger.md) data type. Fields in the `NSInteger` identify the attributes of the playlist. A playlist may have any combination of attributes described in [`MPMediaPlaylistAttribute`](./mpmediaplaylistattribute.md). Can be used to build a media property predicate as described in [`MPMediaQuery`](./mpmediaquery.md).
 

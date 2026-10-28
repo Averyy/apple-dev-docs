@@ -22,11 +22,11 @@ func retargetedPreview(with newTarget: UIDragPreviewTarget) -> UITargetedDragPre
 - (UITargetedDragPreview *) retargetedPreviewWithTarget:(UIDragPreviewTarget *) newTarget;
 ```
 
-#### Return Value
+## Return Value
 
 A new targeted drag preview.
 
-#### Discussion
+## Discussion
 
 You can use this method in the drop interaction delegate’s implementation of the [`dropInteraction(_:previewForDropping:withDefault:)`](../uidropinteractiondelegate/dropinteraction%28_,previewfordropping,withdefault%29.md) method to replace the current targeted drag item preview with a different one.
 

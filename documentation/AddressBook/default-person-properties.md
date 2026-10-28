@@ -5,7 +5,7 @@
 
 The properties that a person record contains by default.
 
-#### Overview
+## Overview
 
 You can add your own properties with the `ABPerson` method [`addPropertiesAndTypes(_:)`](./abperson/addpropertiesandtypes%28_%29.md).
 

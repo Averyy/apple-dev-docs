@@ -23,7 +23,7 @@ var backItem: UINavigationItem? { get }
 @property (nonatomic, strong, readonly, nullable) UINavigationItem * backItem;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`leftBarButtonItem`](../uinavigationitem/leftbarbuttonitem.md) property of the topmost navigation item is `nil`, the navigation bar displays a back button whose title is derived from the item in this property.
 

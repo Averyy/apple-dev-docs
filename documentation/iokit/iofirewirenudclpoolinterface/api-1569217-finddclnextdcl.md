@@ -16,11 +16,11 @@ Get the next pointer for a NuDCL
 NuDCLRef (*FindDCLNextDCL)(IOFireWireLibNuDCLPoolRef self, NuDCLRef dcl);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the DCL immediately following this DCL in program order (ignoring branches) or 0 for none.
 
-#### Discussion
+## Discussion
 
 Applies: Any NuDCLRef
 

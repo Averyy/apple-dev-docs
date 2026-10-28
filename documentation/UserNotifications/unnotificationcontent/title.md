@@ -32,7 +32,7 @@ var title: String { get }
 @property (atomic, copy, readonly) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 When a title is present, the system attempts to display a notification alert. If your app isn’t authorized to display alert-based notifications, the system ignores this property.
 

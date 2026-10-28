@@ -13,7 +13,7 @@ Store app preferences in iCloud and share them among instances of your app runni
 - macOS 10.13+
 - Xcode 11.6+
 
-#### Overview
+## Overview
 
 This sample demonstrates how to store preference, configuration, and app-state data in the iCloud key-value store using the [`NSUbiquitousKeyValueStore`](./nsubiquitouskeyvaluestore.md) class. You can then share this data with every instance of your app on every device connected to a userʼs iCloud account.
 
@@ -23,7 +23,7 @@ In this sample the user picks a background color. App instances running on other
 
 The key-value store is not a replacement for [`UserDefaults`](./userdefaults.md) or other local techniques for saving the same data. The key-value store’s purpose is to synchronize key-value data between app instances running on different devices of the same user. If iCloud is not enabled or is not available on a given device, the app still keeps a local copy of the data in [`UserDefaults`](./userdefaults.md).
 
-#### Configure the Sample Code Project
+## Configure the Sample Code Project
 
 To configure your Xcode project first you need change the Bundle Identifiers for both macOS and iOS targets to match your own. Next, to work with iCloud and [`NSUbiquitousKeyValueStore`](./nsubiquitouskeyvaluestore.md), you need set up an iCloud key-value store ID for both targets. This sample already has the both targets’ iCloud capabilities set up, with the `PrefsInCloud.entitlements` file already created. You need to fill in your own key-value store IDs in those entitlement files to complete the configurations.
 
@@ -45,7 +45,7 @@ The desired color represents a value (numbered 0 to 3) which is uploaded to iClo
 
 > ❗ **Important**: The key-value store is intended for storing data that changes infrequently. As you test your devices, if the app on a device makes frequent changes to the key-value store, the system may defer the synchronization of some changes in order to minimize the number of round trips to the server. The more frequently the app make changes, the more likely the changes will be deferred and will not immediately show up on the other devices.
 
-#### Register to Respond to Key-Value Store Changes
+## Register to Respond to Key-Value Store Changes
 
 The sample uses [`NotificationCenter`](./notificationcenter.md) to register as an observer to the notification [`didChangeExternallyNotification`](./nsubiquitouskeyvaluestore/didchangeexternallynotification.md). The following example installs the app as the observer to respond to the key-value store changes:
 
@@ -58,7 +58,7 @@ NotificationCenter.default.addObserver(self,
 
 Immediately following the call to `addObserver`, obtain the key-value store changes since last launch by calling `synchronize()`. The operating system controls when keys and values are uploaded to iCloud. Calling `synchronize()` simply stores a local cache of them and notifies iCloud of new data waiting to be uploaded.
 
-#### Respond to Key-Value Store Changes
+## Respond to Key-Value Store Changes
 
 The sample uses [`NotificationCenter`](./notificationcenter.md) to register as an observer to the notification [`didChangeExternallyNotification`](./nsubiquitouskeyvaluestore/didchangeexternallynotification.md) to detect for value changes in iCloud.
 

@@ -25,7 +25,7 @@ class ETAResponse
 @interface MKETAResponse : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t create instances of this class directly. Instead, you initiate a request for the travel time by calling the [`calculateETA(completionHandler:)`](./calculateeta%28completionhandler%29.md) method of an [`MKDirections`](../mkdirections.md) object. The completion handler you pass to that method receives an `MKDirections.ETAResponse` object with the results.
 

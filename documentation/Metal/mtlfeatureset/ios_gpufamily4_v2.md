@@ -26,7 +26,7 @@ MTLFeatureSet_iOS_GPUFamily4_v2
 
 - [Detecting GPU features and Metal software versions](../detecting-gpu-features-and-metal-software-versions.md)
 
-#### Discussion
+## Discussion
 
 This feature set corresponds with Apple A11 devices running iOS 12.
 

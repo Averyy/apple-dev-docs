@@ -22,7 +22,7 @@ nonisolated
 func userActivity<P>(_ activityType: String, element: P?, _ update: @escaping (P, NSUserActivity) -> ()) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The scope of the activity applies only to the scene or window the view is in.
 

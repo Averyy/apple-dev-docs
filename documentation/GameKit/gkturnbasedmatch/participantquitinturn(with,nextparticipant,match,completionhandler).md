@@ -33,7 +33,7 @@ func participantQuitInTurn(with matchOutcome: GKTurnBasedMatch.Outcome, nextPart
 - (void) participantQuitInTurnWithOutcome:(GKTurnBasedMatchOutcome) matchOutcome nextParticipant:(GKTurnBasedParticipant *) nextParticipant matchData:(NSData *) matchData completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Your game calls this method on an instance of your game that is processing the current player’s turn, but that player has left the match. For example, the player may have willingly resigned from the match or that player may have been eliminated by the other players (based on your game’s internal logic).
 

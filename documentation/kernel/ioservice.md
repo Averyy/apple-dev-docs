@@ -15,7 +15,7 @@ The base class for most I/O Kit families, devices, and drivers.
 class IOService : IORegistryEntry
 ```
 
-#### Overview
+## Overview
 
 [`IOService`](./ioservice.md) provides general utility functions that are useful across all families. It defines APIs used to publish services, instantiates other services based on the existence of a providing service such as driver stacking, destroys a service and its dependent stack, and notifies interested parties of service state changes.
 
@@ -25,7 +25,7 @@ Matching dictionaries are associated with [`IOService`](./ioservice.md) classes 
 
 [`IOService`](./ioservice.md) performs matching based on several criteria: the C++ class (using [`OSMetaClass`](./osmetaclass.md) dynamic casting), the registry entry name, a registry path to the service (which includes device tree paths), a name assigned by BSD, or  location (point of attachment).
 
-##### Instantiate Drivers
+### Instantiate Drivers
 
 Drivers are subclasses of [`IOService`](./ioservice.md), and the catalogue manages their availability. The system instantiates drivers based on the publication of an [`IOService`](./ioservice.md) they use (for example, an [`IOPCIDevice`](./iopcidevice.md) or [`IOUSBHostDevice`](../USBDriverKit/iousbhostdevice.md)), or when they are added to the catalogue and the I/O services they use are already available.
 
@@ -41,7 +41,7 @@ The driver should only consider itself ready for work when the system calls its 
 
 After the drivers are synchronously started, the system delivers the installed “matched” notifications that match the registered service.
 
-##### Match with Service Properties
+### Match with Service Properties
 
 Here are the service properties you can use when setting up the matching dictionary.
 

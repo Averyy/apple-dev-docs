@@ -15,7 +15,7 @@ The group context associated with this message.
 let groupContext: RCSGroupContext?
 ```
 
-#### Discussion
+## Discussion
 
 This property is non-`nil` when the message is part of a group conversation.
 

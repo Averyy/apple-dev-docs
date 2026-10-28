@@ -27,7 +27,7 @@ func CGRectEqualToRect(_ rect1: CGRect, _ rect2: CGRect) -> Bool
 extern bool CGRectEqualToRect(CGRect rect1, CGRect rect2);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the two specified rectangles have equal size and origin values, or if both rectangles are null rectangles. Otherwise, [`false`](../Swift/false.md).
 

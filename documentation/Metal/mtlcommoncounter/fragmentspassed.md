@@ -24,7 +24,7 @@ static let fragmentsPassed: MTLCommonCounter
 extern MTLCommonCounter MTLCommonCounterFragmentsPassed;
 ```
 
-#### Discussion
+## Discussion
 
 The render pass sends fragments that pass the scissor, depth, and stencil tests to the visibility and blend stages.
 

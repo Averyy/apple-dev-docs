@@ -22,7 +22,7 @@ case time
 UIApplicationShortcutIconTypeTime
 ```
 
-#### Discussion
+## Discussion
 
 ![Clock icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934528@2x.png)
 

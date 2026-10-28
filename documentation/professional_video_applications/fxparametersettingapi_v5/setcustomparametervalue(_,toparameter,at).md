@@ -24,11 +24,11 @@ func setCustomParameterValue(_ value: any NSCopying & NSSecureCoding & NSObjectP
 
 - [Analyzing media](../../Professional-Video-Applications/analyzing-media.md)
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the value is set successfully; `NO` otherwise.
 
-#### Discussion
+## Discussion
 
 Depending on the host application, the time value may be relative to the start of the timeline or to the start of the clip. See [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md).
 

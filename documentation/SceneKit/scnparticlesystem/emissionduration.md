@@ -25,7 +25,7 @@ var emissionDuration: CGFloat { get set }
 @property (nonatomic) CGFloat emissionDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The [`birthRate`](./birthrate.md) property determines the number of particles spawned during this duration. You can randomize the duration with the [`emissionDurationVariation`](./emissiondurationvariation.md) property.
 

@@ -12,7 +12,7 @@ void FreeSCSIParallelTask (
  SCSIParallelTaskIdentifierreturnTask );
 ```
 
-#### Overview
+## Overview
 
 The FreeSCSIParallelTask method is called by the client when a SCSIParallelTask has been completed and the associated returnTask needs to be returned to the pool.
 

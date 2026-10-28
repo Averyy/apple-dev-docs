@@ -18,7 +18,7 @@ The request data blob for the web presentment raw request.
 var requestData: Data
 ```
 
-#### Discussion
+## Discussion
 
 The system encodes this according to the specified request type.
 

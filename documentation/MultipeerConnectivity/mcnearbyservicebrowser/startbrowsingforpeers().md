@@ -26,7 +26,7 @@ func startBrowsingForPeers()
 - (void) startBrowsingForPeers;
 ```
 
-#### Discussion
+## Discussion
 
 After this method is called (until you call [`stopBrowsingForPeers()`](./stopbrowsingforpeers%28%29.md)), the framework calls your delegate’s [`browser(_:foundPeer:withDiscoveryInfo:)`](../mcnearbyservicebrowserdelegate/browser%28_,foundpeer,withdiscoveryinfo%29.md) and [`browser(_:lostPeer:)`](../mcnearbyservicebrowserdelegate/browser%28_,lostpeer%29.md) methods as new peers are found and lost.
 

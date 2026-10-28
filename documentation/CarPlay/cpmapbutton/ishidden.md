@@ -21,7 +21,7 @@ var isHidden: Bool { get set }
 @property (nonatomic, assign, getter=isHidden) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

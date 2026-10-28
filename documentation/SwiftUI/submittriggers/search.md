@@ -21,7 +21,7 @@ Defines triggers originating from search fields constructed from searchable modi
 static let search: SubmitTriggers
 ```
 
-#### Discussion
+## Discussion
 
 In the example below, only the search field or search completions placed by the searchable modifier will trigger the view model to submit its current search query.
 

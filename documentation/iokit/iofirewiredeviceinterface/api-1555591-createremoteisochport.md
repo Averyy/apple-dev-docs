@@ -16,7 +16,7 @@ Creates a remote isochronous port object and returns an interface to it. A remot
 IOFireWireLibRemoteIsochPortRef (*CreateRemoteIsochPort)(IOFireWireLibDeviceRef self, Boolean inTalking, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOFireWireLibRemoteIsochPortRef. Returns 0 upon failure
 

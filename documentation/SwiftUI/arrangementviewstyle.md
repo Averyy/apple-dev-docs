@@ -22,7 +22,7 @@ A style that indicates how an arrangement view lays out a primary and secondary 
 @preconcurrency protocol ArrangementViewStyle
 ```
 
-#### Overview
+## Overview
 
 Set an arrangement view style with the [`arrangementViewStyle(_:)`](./view/arrangementviewstyle%28_%29.md) view modifier on an [`ArrangementView`](./arrangementview.md), as the following example shows:
 

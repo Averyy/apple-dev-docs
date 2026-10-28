@@ -20,11 +20,11 @@ func addPopupMenu(withName name: String, parameterID: UInt32, defaultValue: UInt
 - (BOOL) addPopupMenuWithName:(NSString *) name parameterID:(UInt32) parameterID defaultValue:(UInt32) defaultValue menuEntries:(NSArray *) entries parameterFlags:(FxParameterFlags) flags;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the application successfully creates a popup menu parameter; `NO` otherwise.
 
-#### Discussion
+## Discussion
 
 Use [`getIntValue(_:fromParameter:at:)`](../fxparameterretrievalapi_v6/getintvalue%28_,fromparameter,at%29.md) to retrieve the menu parameter index value as an integer.
 

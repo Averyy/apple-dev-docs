@@ -23,7 +23,7 @@ var automaticallyShowsCancelButton: Bool { get set }
 @property (nonatomic) BOOL automaticallyShowsCancelButton;
 ```
 
-#### Discussion
+## Discussion
 
 By default, [`UISearchController`](../uisearchcontroller.md) shows the search bar’s cancel button when search becomes active and hides it when the user dismisses search. You can take over responsibility for showing and hiding the cancel button by setting this property to [`false`](../../Swift/false.md). If you set the search bar’s [`showsCancelButton`](../uisearchbar/showscancelbutton.md) property, this property becomes [`false`](../../Swift/false.md).
 

@@ -19,7 +19,7 @@ Constants that determine the style of the indicator that appears on a button.
 enum Indicator
 ```
 
-#### Overview
+## Overview
 
 Use these constants to set the value of the [`indicator`](./indicator-swift.property.md) property.
 

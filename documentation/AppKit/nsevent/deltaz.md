@@ -19,7 +19,7 @@ var deltaZ: CGFloat { get }
 @property (readonly) CGFloat deltaZ;
 ```
 
-#### Discussion
+## Discussion
 
 This value is typically `0.0`.
 

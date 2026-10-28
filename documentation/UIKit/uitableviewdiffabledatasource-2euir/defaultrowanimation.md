@@ -20,7 +20,7 @@ The default type of animation to use when inserting or deleting rows.
 @preconcurrency var defaultRowAnimation: UITableView.RowAnimation { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`UITableView.RowAnimation.automatic`](../uitableview/rowanimation/automatic.md).
 

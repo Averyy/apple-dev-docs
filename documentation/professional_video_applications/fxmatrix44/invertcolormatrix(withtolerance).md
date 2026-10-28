@@ -19,7 +19,7 @@ func invertColorMatrix(withTolerance tolerance: Double) -> Bool
 - (BOOL) invertColorMatrixWithTolerance:(double) tolerance;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the invert succeeded; otherwise [`false`](../../Swift/false.md).
 

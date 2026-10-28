@@ -19,7 +19,7 @@ The app was terminated by the system watchdog for failing to respond in time.
 static let watchdog: CrashDiagnostic.TerminationCategory
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to [`watchdogTerminationCount`](../../foregroundterminationmetric/watchdogterminationcount.md) and [`watchdogTerminationCount`](../../backgroundterminationmetric/watchdogterminationcount.md).
 

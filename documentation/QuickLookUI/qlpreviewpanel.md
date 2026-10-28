@@ -19,13 +19,13 @@ class QLPreviewPanel
 @interface QLPreviewPanel : NSPanel
 ```
 
-#### Overview
+## Overview
 
 Every application has a single shared instance of [`QLPreviewPanel`](./qlpreviewpanel.md) accessible through [`shared()`](./qlpreviewpanel/shared%28%29.md). The preview panel follows the responder chain and adapts to the first responder willing to control it. A preview panel controller provides the content through methods defined in the [`QLPreviewPanelDataSource`](./qlpreviewpaneldatasource.md) protocol.
 
 You can’t subclass [`QLPreviewPanel`](./qlpreviewpanel.md); you can, however, customize its behavior using a [`delegate`](./qlpreviewpanel/delegate.md). See the [`QLPreviewPanelDelegate`](./qlpreviewpaneldelegate.md) protocol for the methods to customize a preview panel’s behavior.
 
-##### Take control of the preview panel
+### Take control of the preview panel
 
 A preview panel has no controller until an object in the responder chain accepts control of it. The panel sends `acceptsPreviewPanelControl(_:)` to each object in the responder chain, and the first object to return `true` becomes the panel’s controller. Implement these methods in your window controller or delegate.
 
@@ -91,6 +91,8 @@ A controlling object also implements `beginPreviewPanelControl(_:)` and `endPrev
 - [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](../AppKit/nsuserinterfacevalidations.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 

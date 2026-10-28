@@ -21,7 +21,7 @@ func vSdot(_ n: Int32, _ x: UnsafePointer<vFloat>, _ y: UnsafePointer<vFloat>) -
 extern float vSdot(int32_t n, const vFloat *x, const vFloat *y);
 ```
 
-#### Return Value
+## Return Value
 
 The dot product of the two vectors.
 

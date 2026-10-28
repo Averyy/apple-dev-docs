@@ -21,7 +21,7 @@ A Boolean value that indicates whether the VoiceOver screen reader is in use.
 var accessibilityVoiceOverEnabled: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The state changes as the user turns on or off the VoiceOver screen reader.
 

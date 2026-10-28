@@ -19,7 +19,7 @@ Returns the data for providing a Live Text interaction with a bitmap image in th
 final func analyze(_ ciImage: CIImage, orientation: CGImagePropertyOrientation, configuration: ImageAnalyzer.Configuration) async throws -> ImageAnalysis
 ```
 
-#### Return Value
+## Return Value
 
 The data items that the analyzer finds in the image.
 

@@ -15,7 +15,7 @@ A Boolean value that determines if an overlay is visible.
 visible?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

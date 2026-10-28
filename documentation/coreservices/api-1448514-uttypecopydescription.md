@@ -25,11 +25,11 @@ func UTTypeCopyDescription(_ inUTI: CFString) -> Unmanaged<CFString>?
 CFStringRef UTTypeCopyDescription(CFStringRef inUTI);
 ```
 
-#### Return Value
+## Return Value
 
 A localized string describing the type, or `NULL` if no type description is available.
 
-#### Discussion
+## Discussion
 
 The localized string that describes the uniform type is found in the type’s declaration.
 

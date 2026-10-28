@@ -20,7 +20,7 @@ The transformations of the joints in the pose.
 var jointTransforms: JointTransforms
 ```
 
-#### Discussion
+## Discussion
 
 Each joint transformation has a corresponding name in [`jointNames`](./jointnames.md) at the same index.
 

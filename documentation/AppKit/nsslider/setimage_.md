@@ -17,7 +17,7 @@ Sets the image the slider displays in the bar behind its knob.
 - (void) setImage:(NSImage *) backgroundImage;
 ```
 
-#### Discussion
+## Discussion
 
 The slider may scale and distort `barImage` to fit inside the bar.
 

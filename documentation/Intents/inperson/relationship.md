@@ -32,7 +32,7 @@ var relationship: INPersonRelationship? { get }
 @property (atomic, copy, readonly, nullable) INPersonRelationship relationship;
 ```
 
-#### Discussion
+## Discussion
 
 SiriKit sets the value of this property for you based on information provided by the user. For example, if the user says “send a message to my brother”, Siri sets this property to [`brother`](../inpersonrelationship/brother.md). However, if the user said “send a message to Shelly” and Shelly happened to be my spouse, Siri would not set this property.
 

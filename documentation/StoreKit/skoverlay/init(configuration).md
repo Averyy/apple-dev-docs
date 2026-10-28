@@ -22,7 +22,7 @@ init(configuration: SKOverlay.Configuration)
 - (instancetype) initWithConfiguration:(SKOverlayConfiguration *) configuration;
 ```
 
-#### Discussion
+## Discussion
 
 Pass an [`SKOverlay.AppConfiguration`](./appconfiguration.md) as the `configuration` parameter if you want to display the overlay in an app. To recommend an App Clip’s corresponding app, pass an [`SKOverlay.AppClipConfiguration`](./appclipconfiguration.md) object to the initializer. For more information, see [Recommending your app to App Clip users](../../AppClip/recommending-your-app-to-app-clip-users.md).
 

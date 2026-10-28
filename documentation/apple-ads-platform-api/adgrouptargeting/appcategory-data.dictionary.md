@@ -15,7 +15,7 @@ App category targeting based on App Store categories, with include and exclude s
 object AdGroupTargeting.AppCategory
 ```
 
-#### Discussion
+## Discussion
 
 The `appCategory` field is one of only two `AdGroupTargeting` dimensions that support both `include` and `exclude`. Used with App Store campaigns. Uses the [`TargetingData`](../targetingdata.md) `include`/`exclude` shape.
 

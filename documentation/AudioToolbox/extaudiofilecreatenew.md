@@ -15,17 +15,17 @@ Deprecated. Use the [`ExtAudioFileCreateWithURL(_:_:_:_:_:_:)`](./extaudiofilecr
 extern OSStatus ExtAudioFileCreateNew(const struct FSRef *inParentDir, CFStringRef inFileName, AudioFileTypeID inFileType, const AudioStreamBasicDescription *inStreamDesc, const AudioChannelLayout *inChannelLayout, ExtAudioFileRef*outExtAudioFile);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Creates a new audio file.
 
 If the file to be created is in a compressed format, it is permissible for the sample rate in inStreamDesc to be 0, since in all cases, the file’s encoding AudioConverter may produce audio at a different sample rate than the source. The file will be created with the audio format actually produced by the encoder.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated. Use the [`ExtAudioFileCreateWithURL(_:_:_:_:_:_:)`](./extaudiofilecreatewithurl%28_,_,_,_,_,_%29.md) function instead.
 

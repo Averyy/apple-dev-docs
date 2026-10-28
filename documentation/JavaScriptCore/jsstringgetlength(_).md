@@ -24,7 +24,7 @@ func JSStringGetLength(_ string: JSStringRef!) -> Int
 size_t JSStringGetLength(JSStringRef string);
 ```
 
-#### Return Value
+## Return Value
 
 The number of Unicode characters in `string`.
 

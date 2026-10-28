@@ -5,7 +5,7 @@
 
 Modernize the iOS apps you choose to run on a Mac with Apple silicon, or opt out of running on a Mac altogether.
 
-#### Overview
+## Overview
 
 iOS Apps on Mac runs your unmodified iPhone and iPad apps on Apple silicon with no porting process. Your apps use the same frameworks and infrastructure that Mac Catalyst apps use to run, but without the need to recompile for the Mac platform.
 
@@ -17,7 +17,7 @@ In some cases, you might choose to prevent your app from running in macOS altoge
 
 > **Note**: Although you can run your iOS apps unmodified on a Mac with Apple silicon, Mac Catalyst lets you build your app specifically for macOS and customize your app’s behavior on that platform. Mac Catalyst also supports deployment on both Apple silicon and Intel-based Mac computers. For more information about how to build your app with Mac Catalyst, see [Mac Catalyst](../UIKit/mac-catalyst.md).
 
-##### Determine whether your app makes sense in macOS
+### Determine whether your app makes sense in macOS
 
 iOS and macOS support many of the same frameworks and features, and most iOS apps run smoothly in macOS. However, you might choose to opt out of running your iOS app in macOS under the following circumstances:
 
@@ -34,7 +34,7 @@ You don’t need to opt out apps that rely on single-finger touch input or make 
 
 If you ultimately decide that it doesn’t seem beneficial for your app to run in macOS, you can opt out in App Store Connect, as described below.
 
-##### Adopt features that offer a better user experience
+### Adopt features that offer a better user experience
 
 Some iOS features make it easier for your app to run in macOS and improve the overall user experience. Consider adopting the following features in your iOS apps whenever possible:
 
@@ -46,7 +46,7 @@ Some iOS features make it easier for your app to run in macOS and improve the ov
 
 > **Note**: If you design your iPad app for a full-screen experience (for instance, your app is a game), you can add the keys [`UILaunchToFullScreenByDefaultOnMac`](../BundleResources/information-property-list/uilaunchtofullscreenbydefaultonmac.md) and [`UISupportsTrueScreenSizeOnMac`](../BundleResources/information-property-list/uisupportstruescreensizeonmac.md) to your app’s `Info.plist` file to provide a pixel-perfect, edge-to-edge, full-screen experience when the app runs on a Mac.
 
-##### Audit your code to handle environment differences
+### Audit your code to handle environment differences
 
 When your iOS app runs in macOS, the system automatically maps iOS features to the appropriate replacements in macOS. If you make assumptions about the current environment or device, audit your code to remove those assumptions. If you perform any validation checks, test on a Mac with Apple silicon to make sure those checks continue to work correctly. Specifically, don’t assume that:
 
@@ -65,7 +65,7 @@ When you check for specific features, fall back to reasonable default behaviors 
 
 For more information about how to handle environment differences, see [Adapting iOS code to run in the macOS environment](./adapting-ios-code-to-run-in-the-macos-environment.md).
 
-##### Test your app in macOS
+### Test your app in macOS
 
 Xcode supports debugging, testing, and profiling your iOS app natively on a Mac with Apple silicon. When you open your iOS project in Xcode 12 or later, you have the option to build your app and run it directly in macOS. This option doesn’t run your app in a Simulator; it runs it as an iOS App on Mac. You can then test whether your app’s features work as expected.
 
@@ -80,7 +80,7 @@ When you use [app thinning](https://help.apple.com/xcode/mac/current/#/devbbdc5c
 
 Use [TestFlight](https://testflight.apple.com) to distribute your app to your testers, or create an archive and export it using the ad-hoc or development distribution method. During the export process, Xcode creates an appropriately signed app for you to distribute to your testers. For more information, see [Distributing your app to registered devices](../Xcode/distributing-your-app-to-registered-devices.md).
 
-##### Choose whether to include your iOS app in the Mac App Store
+### Choose whether to include your iOS app in the Mac App Store
 
 After you sign the updated developer agreement, the App Store automatically makes compatible iOS apps available to users of a Mac with Apple silicon. However, if you’re planning to ship a macOS version of your app, or if your app doesn’t make sense for a Mac, you can change your app’s availability in App Store Connect.
 

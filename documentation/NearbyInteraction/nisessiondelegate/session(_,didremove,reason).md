@@ -26,11 +26,11 @@ optional func session(_ session: NISession, didRemove nearbyObjects: [NINearbyOb
 
 - [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 The session invokes this callback to notify an app when an interaction ended for the argument `reason`. After Nearby Interaction calls this function, the framework no longer calls [`session(_:didUpdate:)`](./session%28_,didupdate%29.md) for the argument `trackedObjects`.
 
-##### Restart the Session on Timeout
+### Restart the Session on Timeout
 
 A peer may exceed the supported range for too long or a session may fail to start after the initial attempt. If the peer remains nearby or comes back within the supported range, an app may want to try again. To handle this situation, check for [`NINearbyObject.RemovalReason.timeout`](../ninearbyobject/removalreason/timeout.md) in this callback and then restart the session. In the following code, the app implements a hypothetical `shouldResume(_:NINearbyObject)` function with app-specific logic that determinations whether to retry. The function may check how many times it’s retried and failed, whether an accessory indicated it stopped, and whether the existing configuration suffices unchanged. Then, the app calls [`run(_:)`](../nisession/run%28_%29.md) again on the session.
 

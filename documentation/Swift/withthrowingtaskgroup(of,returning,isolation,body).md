@@ -22,7 +22,7 @@ Starts a new scope that can contain a dynamic number of throwing child tasks.
 func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of childTaskResultType: ChildTaskResult.Type = ChildTaskResult.self, returning returnType: GroupResult.Type = GroupResult.self, isolation: isolated (any Actor)? = #isolation, body: (inout ThrowingTaskGroup<ChildTaskResult, any Error>) async throws -> GroupResult) async rethrows -> GroupResult where ChildTaskResult : Sendable
 ```
 
-#### Discussion
+## Discussion
 
 A group *always* waits for all of its child tasks to complete before it returns. Even canceled tasks must run until completion before this function returns. Canceled child tasks cooperatively react to cancellation and attempt to return as early as possible. After this function returns, the task group is always empty.
 
@@ -47,7 +47,7 @@ group.cancelAll()
 return first + second
 ```
 
-### Error Handling
+## Error Handling
 
 Throwing an error in one of the child tasks of a task group doesn’t immediately cancel the other tasks in that group. However, throwing out of the `body` of the `withThrowingTaskGroup` method does cancel the group, and all of its child tasks. For example, if you call `next()` in the task group and propagate its error, all other tasks are canceled. For example, in the code below, nothing is canceled and the group doesn’t throw an error:
 

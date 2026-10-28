@@ -15,7 +15,7 @@ The starting point for routing directions.
 origin: string | CoordinateData | Place;
 ```
 
-#### Discussion
+## Discussion
 
 The `orgin` can be a string that’s an address, a coordinate, or a [`Place`](../place.md) object.
 

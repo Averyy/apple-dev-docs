@@ -16,7 +16,7 @@ get size(): Size;
 set size(_: Size);
 ```
 
-#### Discussion
+## Discussion
 
 You can’t set the size of the user-location annotation.
 

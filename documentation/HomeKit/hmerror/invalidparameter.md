@@ -20,7 +20,7 @@ An error indicating the object is invalid for the given operation.
 static var invalidParameter: HMError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, the home object issues an error when attempting to add a room that exists in another home.
 

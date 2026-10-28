@@ -20,7 +20,7 @@ XCTAttachmentLifetimeDeleteOnSuccess
 
 - [Adding Attachments to Tests, Activities, and Issues](../../adding-attachments-to-tests-activities-and-issues.md)
 
-#### Discussion
+## Discussion
 
 [`XCTAttachment.Lifetime.deleteOnSuccess`](./deleteonsuccess.md) is the default lifetime for all new attachments. This lifetime indicates that an attachment should be discarded if its test passes successfully, to save on storage space.
 

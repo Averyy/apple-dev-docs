@@ -12,7 +12,7 @@ virtual void handleStop(
  IOService *provider );
 ```
 
-#### Overview
+## Overview
 
 IOHIDEventService will call this method from stop() to signal that the hardware should be quiesced and the driver stopped. A subclass that overrides this method should end its implementation by calling the version in super.
 

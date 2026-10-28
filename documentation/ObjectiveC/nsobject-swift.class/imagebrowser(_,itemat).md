@@ -19,11 +19,11 @@ func imageBrowser(_ aBrowser: IKImageBrowserView!, itemAt index: Int) -> Any!
 - (id) imageBrowser:(IKImageBrowserView *) aBrowser itemAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 An `IKImageBrowserItem` object.
 
-#### Discussion
+## Discussion
 
 Your data source must implement this method. The returned object must implement the required methods of the IKImageBrowserItem protocol.
 

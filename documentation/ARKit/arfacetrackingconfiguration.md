@@ -25,7 +25,7 @@ class ARFaceTrackingConfiguration
 - [Verifying Device Support and User Permission](./verifying-device-support-and-user-permission.md)
 - [Choosing Which Camera Feed to Augment](./choosing-which-camera-feed-to-augment.md)
 
-#### Overview
+## Overview
 
 A face-tracking configuration detects faces within 3 meters of the device’s front camera. When ARKit detects a face, it creates an [`ARFaceAnchor`](./arfaceanchor.md) object that provides information about a person’s facial position, orientation, topology, and expressions.
 

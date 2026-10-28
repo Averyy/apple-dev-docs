@@ -21,7 +21,7 @@ var address: Int { get }
 @property (nonatomic, assign, readonly) NSUInteger address;
 ```
 
-#### Discussion
+## Discussion
 
 This property functions solely as a unique identifer.
 

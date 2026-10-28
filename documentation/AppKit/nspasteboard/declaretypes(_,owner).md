@@ -19,17 +19,17 @@ func declareTypes(_ newTypes: [NSPasteboard.PasteboardType], owner newOwner: Any
 - (NSInteger) declareTypes:(NSArray<NSString *> *) newTypes owner:(id) newOwner;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver’s new change count.
 
-#### Discussion
+## Discussion
 
 This method is the equivalent of invoking [`clearContents()`](./clearcontents%28%29.md), implicitly writing the first pasteboard item, and then calling [`addTypes(_:owner:)`](./addtypes%28_,owner%29.md) to promise types for the first pasteboard item.
 
 > **Note**:  In macOS 10.5 and earlier, this method is the first step in writing data to the pasteboard and must precede the messages that actually write the data. A [`declareTypes(_:owner:)`](./declaretypes%28_,owner%29.md) message essentially changes the contents of the receiver: It invalidates the current contents of the receiver and increments its change count.
 
-##### Special Considerations
+### Special Considerations
 
 In general, you should not use this method with [`writeObjects(_:)`](./writeobjects%28_%29.md), since [`writeObjects(_:)`](./writeobjects%28_%29.md) will always write additional items to the pasteboard, and will not affect items already on the pasteboard, including the item implicitly created by this method.
 

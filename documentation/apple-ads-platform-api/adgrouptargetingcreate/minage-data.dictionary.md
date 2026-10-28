@@ -15,7 +15,7 @@ Minimum age targeting, setting the lower bound of the target age range.
 object AdGroupTargetingCreate.MinAge
 ```
 
-#### Discussion
+## Discussion
 
 Used with App Store campaigns. Uses the [`TargetingDataCreate`](../targetingdatacreate.md) `include`/`exclude` shape.
 

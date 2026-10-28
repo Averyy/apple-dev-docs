@@ -19,7 +19,7 @@ Display the system-calling UI for your app’s VoIP services, and coordinate you
 - [Sending End-to-End Encrypted VoIP Calls](./sending-end-to-end-encrypted-voip-calls.md)
 - [Preparing your app to be the default calling app](./preparing-your-app-to-be-the-default-calling-app.md)
 
-#### Overview
+## Overview
 
 Use CallKit to integrate your calling services with other call-related apps in the system. CallKit provides the calling interface, and you handle the back-end communication with your VoIP service. See [Making and receiving VoIP calls](./making-and-receiving-voip-calls.md) for more information.
 
@@ -27,13 +27,13 @@ For incoming and outgoing calls, CallKit displays the same interfaces as the Pho
 
 In addition to handling calls, you can use a Call Directory app extension to provide caller ID information and a list of blocked numbers associated with your service. See [Identifying and blocking calls](./identifying-and-blocking-calls.md) for more information.
 
-##### Manage user privacy
+### Manage user privacy
 
 With a person’s permission, an installed health research app that uses [SensorKit](../SensorKit/SensorKit.md) entitlements may collect Speech Metrics data while your CallKit app is in use. To prevent this, you can set the [`SRResearchDataGeneration`](../BundleResources/information-property-list/srresearchdatageneration.md) information property list key to `NO`.
 
 > ❗ **Important**:  When a person makes a call in your app that uses CallKit, your app provides the contact information of the recipient to the system. The system may use that information to indicate communication with that person as a suggestion in the Journal app, or in other apps that use the [Journaling Suggestions](../JournalingSuggestions/JournalingSuggestions.md) framework.
 
-##### Become the default calling app
+### Become the default calling app
 
 In iOS and iPadOS 18.2 and later, a person may select an app — other than the Phone app or FaceTime — to place calls by default. To make your CallKit or [LiveCommunicationKit](../LiveCommunicationKit/LiveCommunicationKit.md) app support the default calling app setting, see [Preparing your app to be the default calling app](./preparing-your-app-to-be-the-default-calling-app.md).
 

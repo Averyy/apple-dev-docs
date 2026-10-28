@@ -10,7 +10,7 @@ framework: "Swift-Org/diagnostics"
 
 Embedded Swift is a subset of the Swift language that that introduces some restrictions on the use of language features to eliminate the need for the Swift runtime. These restrictions are captured by the `EmbeddedRestrictions` diagnostic group.
 
-#### Overview
+## Overview
 
 The Embedded Swift compilation model can produce extremely small binaries without external dependencies, suitable for restricted environments including embedded (microcontrollers) and baremetal setups (no operating system at all), and low-level environments (firmware, kernels, device drivers, low-level components of userspace OS runtimes). While the vast majority of Swift language features are available in Embedded Swift, there are some language features that require the full Swift standard library and runtime, which are not available in Embedded Swift.
 

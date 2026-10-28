@@ -23,7 +23,7 @@ class UIDragPreview
 @interface UIDragPreview : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`UIDragPreview`](./uidragpreview.md) object is a visual representation of the drag item. The preview is displayed while the user moves the item across the screen with their finger (after the lift animation completes). The preview disappears when the user lifts their finger, triggering the start of the drop or cancellation animation.
 

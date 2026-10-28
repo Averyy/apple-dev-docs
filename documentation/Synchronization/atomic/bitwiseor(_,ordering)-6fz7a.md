@@ -24,7 +24,7 @@ func bitwiseOr(_ operand: UInt16, ordering: AtomicUpdateOrdering) -> (oldValue: 
 
 Available when `Value` is `UInt16`.
 
-#### Return Value
+## Return Value
 
 A tuple containing the original value before the operation and the new value after the operation.
 

@@ -25,11 +25,11 @@ func CGRectIsNull(_ rect: CGRect) -> Bool
 extern bool CGRectIsNull(CGRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the specified rectangle is null; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 A null rectangle is the equivalent of an empty set. For example, the result of intersecting two disjoint rectangles is a null rectangle. A null rectangle cannot be drawn and interacts with other rectangles in special ways.
 

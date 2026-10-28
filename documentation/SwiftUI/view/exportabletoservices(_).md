@@ -16,7 +16,7 @@ nonisolated
 func exportableToServices<T>(_ payload: @autoclosure @escaping () -> [T]) -> some View where T : Transferable
 ```
 
-#### Discussion
+## Discussion
 
 If the associated view supports selection, the exported item should reflect that selected subpart.
 

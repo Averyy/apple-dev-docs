@@ -25,7 +25,7 @@ func CFPreferencesGetAppBooleanValue(_ key: CFString, _ applicationID: CFString,
 extern Boolean CFPreferencesGetAppBooleanValue(CFStringRef key, CFStringRef applicationID, Boolean *keyExistsAndHasValidFormat);
 ```
 
-#### Return Value
+## Return Value
 
 The preference data for the specified key and application, or if no value was located, `false`.
 

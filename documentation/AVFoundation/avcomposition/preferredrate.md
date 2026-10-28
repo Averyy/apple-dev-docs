@@ -21,7 +21,7 @@ The asset’s rate preference for playing its media.
 var preferredRate: Float { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is typically, but not always, 1.0.
 

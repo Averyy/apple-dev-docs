@@ -28,7 +28,7 @@ extern OSStatus AudioComponentInstanceNew(AudioComponent inComponent, AudioCompo
 
 - [Hosting Audio Unit Extensions Using the AUv2 API](./hosting-audio-unit-extensions-using-the-auv2-api.md)
 
-#### Return Value
+## Return Value
 
 A result code.
 

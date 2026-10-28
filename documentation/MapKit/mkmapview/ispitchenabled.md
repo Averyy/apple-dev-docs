@@ -23,7 +23,7 @@ var isPitchEnabled: Bool { get set }
 @property (nonatomic, getter=isPitchEnabled) BOOL pitchEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../Swift/true.md) and the framework associates a valid camera with the map, the map view uses the camera’s pitch angle to tilt the plane of the map. When this property is [`false`](../../Swift/false.md), the map ignores the camera’s pitch angle and the map displays as if the user is looking straight down onto it.
 

@@ -25,7 +25,7 @@ var configurationData: Data? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSData * configurationData;
 ```
 
-#### Discussion
+## Discussion
 
 [`configurationData`](./configurationdata.md) can provide token-implementation-specific additional data, which the app that hosts the token driver extension and configures the token provides. The system doesn’t interpret this data in any way.
 

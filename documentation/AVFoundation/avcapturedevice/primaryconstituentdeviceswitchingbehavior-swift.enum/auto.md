@@ -23,7 +23,7 @@ case auto
 AVCapturePrimaryConstituentDeviceSwitchingBehaviorAuto
 ```
 
-#### Discussion
+## Discussion
 
 This mode places no restrictions on when a camera switch can occur.
 

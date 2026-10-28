@@ -19,7 +19,7 @@ The color of the stroke.
 @property (nonatomic, strong, nullable) UIColor * strokeColor;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `nil`, the stroke color is the view’s tint color. Use [`clear`](../uicolor/clear.md) for a transparent stroke with no color.
 

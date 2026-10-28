@@ -21,7 +21,7 @@ A type for using a localized string argument as an attribute.
 struct LocalizedStringArgumentAttributes
 ```
 
-#### Overview
+## Overview
 
 You use the this scope’s attributes when creating an attributed string from a [`LocalizedStringResource`](../../localizedstringresource.md). The process creating the attributed string may not have access to the original arguments passed to the interpolation. Instead, the attributed string marks formatted runs with this type, allowing you to retrieve the original values.
 

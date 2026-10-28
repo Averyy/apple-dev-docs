@@ -25,11 +25,11 @@ func CGImageMetadataCreateXMPData(_ metadata: CGImageMetadata, _ options: CFDict
 extern CFDataRefCGImageMetadataCreateXMPData(CGImageMetadataRef metadata, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFData`](../CoreFoundation/cfdata.md) object with an XMP representation of the metadata, or `NULL` if an error occurs.
 
-#### Discussion
+## Discussion
 
 Use this function to create sidecar files with metadata for image formats that don’t support embedded XMP, or that you cannot edit due to other format restrictions. For example, use this function to create the data for proprietary RAW camera formats.
 

@@ -20,7 +20,7 @@ An array of visual adornments that appear on the markup canvas.
 @preconcurrency var adornments: [MarkupAdornment] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Adornments are supplementary visual elements you place on the canvas above the primary markup content. You position adornments using anchor points and configure them to respond to interaction, zoom scaling, and movement.
 

@@ -21,7 +21,7 @@ Explicit construction from an UnsafeMutablePointer.
 init?<U>(_ from: UnsafeMutablePointer<U>?)
 ```
 
-#### Discussion
+## Discussion
 
 Returns nil if `from` is nil.
 

@@ -21,7 +21,7 @@ A format that displays a 32-bit integer as yes or no.
 case answer
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to format the interpolated value as either `YES` or `NO`. The formatter converts all positive and negative nonzero values to `YES`, and only zero to `NO`. The following example applies the answer formatter to the 32-bit integer value `0`:
 

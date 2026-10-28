@@ -22,7 +22,7 @@ optional func itemThumbnailData(for csc: UICloudSharingController) -> Data?
 - (NSData *) itemThumbnailDataForCloudSharingController:(UICloudSharingController *) csc;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to return image data representing the shared recording. Returning `nil` tells the [`UICloudSharingController`](../uicloudsharingcontroller.md) instance to display the generic image. Not implementing this method is the same as returning `nil`.
 

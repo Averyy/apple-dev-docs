@@ -23,7 +23,7 @@ enum SelectionStyle
 enum UITableViewCellSelectionStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You use these constants to set the value of the [`selectionStyle`](./selectionstyle-swift.property.md) property.
 

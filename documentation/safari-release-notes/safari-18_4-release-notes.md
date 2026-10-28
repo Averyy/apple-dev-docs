@@ -5,47 +5,47 @@
 
 Released March 31, 2025 — 18.4 (20621.1.15)
 
-#### Overview
+## Overview
 
 Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, macOS Sonoma, and macOS Ventura.
 
-##### Authentication
+### Authentication
 
-###### New Features
+#### New Features
 
 - Added support for setting a pin on a security key when a registration requires it.  (122660610)
 
-##### Browser
+### Browser
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where sites would log out automatically after a brief time.  (99829958)
 
-##### Canvas
+### Canvas
 
-###### New Features
+#### New Features
 
 - Added CanvasRenderingContext2D support for unprefixed `letterSpacing` and `wordSpacing`.  (140614722)
 
-###### Deprecations
+#### Deprecations
 
 - Removed support for `webKitBackingStorePixelRatio`.  (123980544)
 - Removed support for the prefixed `webkitImageSmoothingEnabled` to use the standard `imageSmoothingEnabled` property.  (141128458)
 - Removed non-standard legacy alias of Canvas Compositing including `setAlpha` and `setCompositeOperation`.  (141510218)
 
-##### Connection Security
+### Connection Security
 
-###### New Features
+#### New Features
 
 - Added the ability to view certificate detail from Page Menu > more > Connection Security Details on iOS, iPadOS, and in visionOS, or Safari > Connection Security Details… on macOS.  (139300381)
 
-###### Deprecations
+#### Deprecations
 
 - Removed the lock icon from the Smart Search field for HTTPS connection. (107993392)  (107993392)
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added support for `writing-mode: sideways-rl` and `writing-mode: sideways-lr`.  (81519211)
 - Added support for the `::details-content` pseudo-element.  (129786929)
@@ -55,7 +55,7 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Added support for the CSS `shape()` function.  (142276582)
 - Added support for gradients with only one stop.  (142796999)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed table `border-color` to be `currentColor` by default.  (48382483)
 - Fixed combining CSS `clip-path` with any property that creates a new stacking context makes `<img>` element disappear.  (86091397)
@@ -96,17 +96,17 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Fixed View Transitions to stop running when the user navigates with a swipe.  (142844150)
 - Fixed top-level and nesting selector to have zero specificity matching a recent specification update.  (143765827)
 
-###### Deprecations
+#### Deprecations
 
 - Removed the non-standard `CSSUnknownRule` interface.  (142380626)
 
-##### Editing
+### Editing
 
-###### New Features
+#### New Features
 
 - Implemented `ClipboardItem.support()` which gives the page author the ability to understand which formats are [supported during Clipboard operations](https://w3c.github.io/clipboard-apis/#dom-clipboarditem-supports). It also now returns a TypeError for a new `ClipboardItem()` with an empty Array.  (136008522)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `document.execCommand("copy")` only triggering if there is a selection.  (27792460)
 - Fixed an issue where iCloud Notes pasted text copied from a plain text document in Safari as raw markup.  (124788252)
@@ -118,45 +118,45 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Fixed sometimes being unable to select text for non-editable content.  (143296175)
 - Fixed missing selection handles after selecting text across multiple lines.  (143720155)
 
-##### Forms
+### Forms
 
-###### New Features
+#### New Features
 
 - Improved `<input type="file" webkitdirectory>` support on iOS.  (125457578)
 - Added `alpha` and `colorspace` attributes to `<input type=color>`.  (137737348)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `<textarea>` to handle switching direction.  (73475239)
 - Fixed setting a `datetime-local` input to a large value cause a crash.  (135733092)
 - Fixed `<datalist>` dropdown keyboard interactions to align with platform conventions.  (143012287)
 - Fixed: Disabled all Writing Tools app menu items, except “Compose”, for empty editable content.  (143332082)
 
-##### Home Screen Web Apps
+### Home Screen Web Apps
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Wake Lock API for Home Screen Web Apps.  (108573133)
 
-##### HTML
+### HTML
 
-###### New Features
+#### New Features
 
 - Implemented `<details>` and `<summary>` disclosure triangle as a list item.  (95148788)
 
-###### Deprecations
+#### Deprecations
 
 - Removed the `composite` attribute on an `<img>` element.  (143109250)
 
-##### Images
+### Images
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed broken WebP images in lockdown mode.  (144224372)
 
-##### JavaScript
+### JavaScript
 
-###### New Features
+#### New Features
 
 - Completed the [Iterator Helpers proposal](https://github.com/tc39/proposal-iterator-helpers) by implementing `map()`, `filter()`, `take()`, `drop()`, and `flatMap()` methods.  (103171739)
 - Updated `JSON.parse` to provide the reviver function access to the input source text and extended `JSON.stringify` behavior to support object placeholders.  (131579181)
@@ -174,7 +174,7 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Added support for `Error.isError`.  (141132351)
 - Added `"never"` and `"formalSymbol"` to the `currencyDisplay` option for `Intl.NumberFormat`.  (141504278)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Array destructuring assignment to close the iterator if an evaluation throws an exception.  (121960887)
 - Fixed: Updated `Intl.DurationFormat#resolvedOptions` to the latest specification.  (136276429)
@@ -190,25 +190,25 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Fixed `Array.prototype.toReversed` to fill holes with `undefined`.  (142197604)
 - Fixed: Increased the `matchLimit` for regular expressions, allowing complex matches on longer strings.  (143202375)
 
-###### Deprecations
+#### Deprecations
 
 - Removed obsoleted methods for `Temporal.PlainTime` and `Temporal.PlainDateTime` to align with specification changes.  (135509670)
 
-##### Loading
+### Loading
 
-###### New Features
+#### New Features
 
 - Added `noopener-allow-popups` support in Cross-Origin-Opener-Policy.  (129664445)
 
-##### Media
+### Media
 
-###### New Features
+#### New Features
 
 - Added support for Ogg Opus and Ogg Vorbis on macOS Sequoia 15.4, iOS 18.4, iPadOS 18.4, and visionOS 2.4.  (131407707)
 - Added support for the Image Capture API.  (136860809)
 - Added WebM support to MediaRecorder.  (137560454)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed handling an empty `srcAttr` in Media Element.  (132042925)
 - Fixed getUserMedia video track `getSettings()` returning a stale value for `torch` and `whiteBalanceMode` constraints.  (137870391)
@@ -219,33 +219,33 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Fixed seek not completing for WebM under some circumstances.  (143372794)
 - Fixed MediaRecorderPrivateEncoder writing frames out of order.  (143956063)
 
-##### Networking
+### Networking
 
-###### New Features
+#### New Features
 
 - Added support for Cookies Having Independent Partitioned State (CHIPS).  (116143212)
 - Added support for cookies’ `Partitioned` attribute for opt-in partitioned cookies.  (142317056)
 - Blocked partitioned cookies for known tracking domains.  (144184516)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed optimistically upgraded navigations to set a timeout based on current network conditions.  (135972599)
 
-###### Deprecations
+#### Deprecations
 
 - Changed 3DES cipher to show a warning to users that it is a legacy TLS cipher.  (138948491)
 
-##### PDF
+### PDF
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed switching a PDF from continuous to discrete mode displaying the page(s) that are at the top of the window, even when barely visible.  (137608841)
 - Fixed the “Previous Page” context menu option not navigating to previous page in 2-up continuous mode.  (139817364)
 - Fixed main frame PDFs served with a CSP sandbox header not loading.  (141166987)
 
-##### Rendering
+### Rendering
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed computing the baseline for replaced elements with an intrinsic ratio but no intrinsic size as flex items.  (74279029)
 - Fixed flickering caused by extra resize events dispatched when rotating from landscape to portrait on iOS.  (93767145)
@@ -287,59 +287,59 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Fixed setting up inline continuations correctly when not inserting a new child.  (143388080)
 - Fixed adding a `margin-top` to a `<rt>` also adds a bottom margin.  (143720832)
 
-##### Scrolling
+### Scrolling
 
-###### New Features
+#### New Features
 
 - Added support for Scroll To Text Fragment feature detection with `document.fragmentDirective`.  (139631353)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed changes to the “scrolling” attribute on an iframe element already in the DOM to take effect.  (98911472)
 
-##### Security
+### Security
 
-###### New Features
+#### New Features
 
 - Added support for CSP Hash Reporting keywords: `report-sha256`, `report-sha384`, and `report-sha512`.  (142458671)
 
-###### Deprecations
+#### Deprecations
 
 - Removed support for `Clear-Site-Data: *` for `executionContexts` as Safari was the only browser to ship it.  (120821984)
 
-##### Service Workers
+### Service Workers
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed handling the case of busy looping service workers in a process containing web pages.  (138626537)
 - Fixed an unexpected failure when serving a redirected response from cache for a navigation loaded via service worker navigation preload.  (146113615)
 
-##### Spatial Web
+### Spatial Web
 
-###### New Features
+#### New Features
 
 - Added support behind a feature flag for the `controls` attribute on `<img>` elements for spatial images in visionOS.  (129784451)
 - Added support for Writing Tools in visionOS.  (135210076)
 
-##### Storage
+### Storage
 
-###### New Features
+#### New Features
 
 - Added support for partitioned cookies in `Clear-Site-Data: Cookies`.  (140403030)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the Storage Access API to consider `AllExceptPartitioned` as not currently having cookie access, ensuring sites can request access to first-party cookie.  (143508260)
 
-##### SVG
+### SVG
 
-###### New Features
+#### New Features
 
 - Added support for `SVGImageElement.prototype.decode()`.  (135404215)
 - Added support for the `lh` length type.  (142068343)
 - Added support for the `ch` length type for character width, but does not include support for upright vertical character width.  (142463263)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed not propagating the bounding box for empty `text` to ancestors.  (115217040)
 - Fixed SVG masks not working as a `mask-image`.  (127327715)
@@ -352,23 +352,23 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Fixed synthesizing a `viewBox` in `<img>` only for the document element `<svg>`.  (141733733)
 - Fixed `SVGElement.prototype.ownerSVGElement` on the outermost `<svg>` in `foreignObject`.  (143625675)
 
-###### Deprecations
+#### Deprecations
 
 - Removed the SVG 1.1 kerning property.  (116965514)
 - Removed SVGDocument alias to XMLDocument.  (123121696)
 
-##### Tables
+### Tables
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed table row direction to be determined by the table’s direction, not the section.  (99343532)
 - Fixed missing behavior for `rowspan="0"` on HTML tables where 0 means span over all the remaining rows.  (133910430)
 - Fixed Table Root to also account for `fill-available` in a fixed table layout.  (137297914)
 - Fixed table section and row background to not be treated as opaque.  (142588505)
 
-##### Text
+### Text
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where a thick underline would not show on short content.  (64705955)
 - Fixed: The changes for GB18030-2022 now properly impact GBK as well, as required by the Encoding Standard.  (136368583)
@@ -376,9 +376,9 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Fixed the boundary style calculation when `text-spacing: text-autospace` is applied.  (137153961)
 - Fixed displaying OpenType-SVG color fonts.  (137496217) (FB15426148)
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added support for `element.focus({ focusVisible: true })`.  (97021844)
 - Added support for `PublicKeyCredential.toJSON()`.  (109419228)
@@ -390,7 +390,7 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Added support for X25519 for Web Cryptography.  (141346336)
 - Added support for `dialog.requestClose()`.  (143388390)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Aligned some MIME type handling in EME with the MIME Sniffing standard.  (114311586)
 - Fixed `window.history.replaceState('', '', '')` having no effect on macOS.  (117782346)
@@ -408,19 +408,19 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Fixed `Range.getClientRects` to take surrogate pairs into account.  (142098484)
 - Fixed tokenization of the rel attribute of the link element and Link header.  (142600096)
 
-###### Deprecations
+#### Deprecations
 
 - Removed wheel event handling for `<input type="number">` to match platform conventions.  (99318505)
 
-##### Web Authentication
+### Web Authentication
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `.catch()` for conditional mediation  not getting passed the abort reason that was thrown.  (112178073)
 
-##### Web Extensions
+### Web Extensions
 
-###### New Features
+#### New Features
 
 - Added support for loading Safari Web Extensions that have been Developer ID-signed and notarized.  (40429283)
 - Added support for temporarily installing web extensions from disk without requiring an Xcode project.  (98208121)
@@ -433,7 +433,7 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Added support for `documentId` to `scripting` and `tabs`.  (141291546)
 - Added support for `match_about_blank` and `match_origin_as_fallback` to inject content scripts and styles into more frames.  (145875291)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed CORS for Web Extension pages to respect granted per-site permissions.
 
@@ -450,9 +450,9 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Fixed `webRequest` event listeners to honor `extraInfoSpec` for better performace.  (142907168)
 - Fixed web extension resources to be treated as UTF-8 by default.  (143079179)
 
-##### Web Inspector
+### Web Inspector
 
-###### New Features
+#### New Features
 
 - Added support for `ignoreList` in sourcemaps.  (130630075)
 - Added support for viewport presets in Responsive Design Mode.  (131541189)
@@ -463,7 +463,7 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Added support for `DOMRect` in `console.screenshot`.  (141650264)
 - Added an orientation toggle to rotate a viewport preset in Responsive Design Mode.  (142632311)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed ensuring that all of the Desktop Sites on iPad site-specific hacks are disabled when the site-specific hacks setting is turned off in Web Inspector.  (50035167)
 - Fixed style rules to stay editable after being modified by CSSOM in JavaScript.  (124650808)
@@ -472,55 +472,55 @@ Safari 18.4 is available for iOS 18.4, iPadOS 18.4, visionOS 2.4, macOS 15.4, ma
 - Fixed the overview icon to be inverted dark mode in the Graphics tab.  (140602803)
 - Fixed recorded WebGL objects not getting highlighted correctly in the Graphics tab.  (140625113)
 
-##### WebAssembly
+### WebAssembly
 
-###### New Features
+#### New Features
 
 - Added support for JIT-less Wasm.  (113768974)
 - Added support for the new Wasm Exception Specification.  (131409318)
 - Implemented relaxed laneselect SIMD instructions.  (138484223)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Wasm legacy `catch_all` instruction to correctly catch thrown JS primitives.  (135972897)
 
-##### WebDriver
+### WebDriver
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a crash that could occur when simulating drag events with the right mouse button.  (137068514)
 
-##### WebKit
+### WebKit
 
-###### New Features
+#### New Features
 
 - Added support for `WKWebExtension`, `WKWebExtensionContext`, and `WKWebExtensionController` Swift and Objective-C classes to support integrating Web Extensions into WebKit-based browsers.  (121537087)
 
-##### WebRTC
+### WebRTC
 
-###### New Features
+#### New Features
 
 - Added support for MediaSession capture mute API.  (131386187)
 - Added support for stuns server URIs.  (136505783)
 - Added support for enumerated visible network interfaces.  (137067672)
 - Added support for the Speaker Selection API on macOS.  (140918327)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `MediaSession.setMicrophoneActive(true)` prompting repeatedly if the microphone was muted by the user-agent once.  (135941062)
 - Fixed `setCameraActive` to not unmute microphone if the user-agent previously muted both camera and microphone.  (136221456)
 - Fixed AirPods unmuting to not unmute the camera if website muted the camera.  (137065964)
 - Fixed voice search to not re-prompt for camera or microphone permission after a page-initiated same origin navigation.  (138122655)
 
-##### WKWebView
+### WKWebView
 
-###### New Features
+#### New Features
 
 - Added support for customizing the file upload flow for file inputs.  (130219174)
 - Added support for WKNavigationAction/buttonNumber and WKNavigationAction/modifierFlags as API on iOS.  (136865172)
 - Added support for the Writing Tools API in visionOS.  (140412673)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed calling `WKWebView.evaluateJavaScript` in an async context when nothing is returned by JS.  (139618495) (FB15755273)
 

@@ -12,11 +12,11 @@ IOMemoryDescriptor * GetDataBuffer (
  SCSITaskIdentifierrequest );
 ```
 
-#### Return Value
+## Return Value
 
 An IOMemoryDescriptor associated with the request. May be NULL if data transfer direction is kSCSIDataTransfer_NoDataTransfer.
 
-#### Overview
+## Overview
 
 Accessor method to retrieve the data buffer associated with the specified request.
 

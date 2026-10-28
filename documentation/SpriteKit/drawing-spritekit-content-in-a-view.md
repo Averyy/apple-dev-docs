@@ -5,7 +5,7 @@
 
 Display visual content using SpriteKit.
 
-#### Overview
+## Overview
 
 Display SpriteKit content on the screen by configuring a SpriteKit renderer, its scene, and the visual objects you lay out on top of the scene. SpriteKit provides objects that are designed specifically for various types of content (see [Nodes for Scene Building](./nodes-for-scene-building.md)), but for simplicity, this article displays an image in a view.
 
@@ -15,7 +15,7 @@ Display SpriteKit content on the screen by configuring a SpriteKit renderer, its
 
 Because the code in this article sets up a view, you put the lines from each of the following code listings into a view controller’s [`viewDidLoad()`](../UIKit/uiviewcontroller/viewdidload%28%29.md) function.
 
-##### Create the Scene
+### Create the Scene
 
 Everything displayed with SpriteKit is done through a scene object, which is an instance of [`SKScene`](./skscene.md). Use the following code to set up a basic scene:
 
@@ -30,7 +30,7 @@ When you pass the `size` of the view’s `bounds` to the scene initializer, you 
 
 For further discussion about how setting the `anchorPoint` changes an object’s position in the view, see [Using the Anchor Point to Move the Sprite’s Frame](https://developer.apple.com/library/archive/documentation/GraphicsAnimation/Conceptual/SpriteKit_PG/Sprites/Sprites.html#//apple_ref/doc/uid/TP40013043-CH9-SW36).
 
-##### Lay Out Visual Content on Top of the Scene
+### Lay Out Visual Content on Top of the Scene
 
 You use node objects to display graphics in a SpriteKit view. SpriteKit provides different nodes depending on the content (see Nodes that Draw in  [Nodes for Scene Building](./nodes-for-scene-building.md)). In this case, use an [`SKSpriteNode`](./skspritenode.md) to display an image in the view:
 
@@ -44,7 +44,7 @@ scene.addChild(image)
 
 The functions to lay out content in a scene are covered in more detail in [Accessing and Modifying the Node Tree](./accessing-and-modifying-the-node-tree.md).
 
-##### Present the Scene Inside a View
+### Present the Scene Inside a View
 
 After you set up the scene, you display it in the view by calling [`presentScene(_:)`](./skview/presentscene%28_%29.md):
 

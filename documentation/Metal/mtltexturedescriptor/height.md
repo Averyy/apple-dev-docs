@@ -24,7 +24,7 @@ var height: Int { get set }
 @property (nonatomic, readwrite) NSUInteger height;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`. The value needs to be greater than or equal to `1`. For a 1D texture, the value needs to be `1`.
 

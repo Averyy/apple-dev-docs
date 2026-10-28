@@ -21,7 +21,7 @@ Draws the contents of a layer object at the specified point.
 func draw(_ layer: CGLayer, at point: CGPoint)
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to calling the [`draw(_:in:)`](./draw%28_,in%29.md) method with a rectangle whose origin is the specified point and whose size matches that of the specified layer.
 

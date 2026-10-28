@@ -23,7 +23,7 @@ var canPerformReactionEffects: Bool { get }
 @property (nonatomic, readonly) BOOL canPerformReactionEffects;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) when a device’s [`reactionEffectsEnabled`](./reactioneffectsenabled.md) and its active format’s [`reactionEffectsSupported`](./format/reactioneffectssupported.md) property values are [`true`](../../Swift/true.md).
 

@@ -24,11 +24,11 @@ class func edges() -> any CIFilter & CIEdges
 + (CIFilter<CIEdges> *) edgesFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the edges filter to an image. The effect uses the `intensity` to compute and highlight edges of items within the image.
 

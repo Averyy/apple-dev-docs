@@ -25,7 +25,7 @@ func CTFontCollectionCreateMatchingFontDescriptorsWithOptions(_ collection: CTFo
 extern CFArrayRefCTFontCollectionCreateMatchingFontDescriptorsWithOptions(CTFontCollectionRef collection, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CTFontDescriptor`](./ctfontdescriptor.md) objects that match the collection definition, or `NULL` if there are none.
 

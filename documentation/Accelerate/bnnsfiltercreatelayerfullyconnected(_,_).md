@@ -27,11 +27,11 @@ func BNNSFilterCreateLayerFullyConnected(_ layer_params: UnsafePointer<BNNSLayer
 BNNSFilterBNNSFilterCreateLayerFullyConnected(const BNNSLayerParametersFullyConnected *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use a fully connected layer to construct each output feature from a linear combination of all input features. Fully connected layers compute the matrix-vector product of a weights matrix and the input vector.
 
-##### Applying a Fully Connected Filter With a 2D Weights Matrix
+### Applying a Fully Connected Filter With a 2D Weights Matrix
 
 In the case where your input data is a vector and your weights data is a matrix, provide the weights as an *m x n* row-major matrix where *m* is the number of fully connected results, and *n* is the number of items in the input.
 

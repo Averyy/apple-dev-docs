@@ -21,7 +21,7 @@ Whether the system preference for Reduce Motion is enabled.
 var accessibilityReduceMotion: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this property’s value is true, UI should avoid large animations, especially those that simulate the third dimension.
 

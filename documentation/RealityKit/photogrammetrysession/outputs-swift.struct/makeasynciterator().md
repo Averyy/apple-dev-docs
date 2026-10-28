@@ -18,11 +18,11 @@ Creates an asynchronous iterator for the collection.
 func makeAsyncIterator() -> PhotogrammetrySession.Outputs.Iterator
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous iterator.
 
-#### Discussion
+## Discussion
 
 This method creates an asynchronous iterator for the collection. Typically, you won’t call this method. Instead, use a `try`-`await`-`in` loop inside of an `async` task, which creates an iterator implicitly and waits for the session to publish new [`PhotogrammetrySession.Output`](../output.md) objects, as the following example demonstrates.
 

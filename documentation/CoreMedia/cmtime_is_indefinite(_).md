@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether a given time is indefinite.
 func CMTIME_IS_INDEFINITE(_ time: CMTime) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the time represents an indefinite time; otherwise, [`false`](../Swift/false.md).
 

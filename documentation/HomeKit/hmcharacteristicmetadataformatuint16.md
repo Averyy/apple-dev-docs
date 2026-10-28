@@ -24,7 +24,7 @@ let HMCharacteristicMetadataFormatUInt16: String
 extern NSString * const HMCharacteristicMetadataFormatUInt16;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSNumber`](../Foundation/nsnumber.md) object containing an unsigned 16-bit integer with a range `[0, 65535]`.
 

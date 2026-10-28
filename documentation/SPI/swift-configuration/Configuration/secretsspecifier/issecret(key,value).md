@@ -26,11 +26,11 @@ func isSecret(key: KeyType, value: ValueType) -> Bool
 
 Available when `KeyType` conforms to `Hashable`, `KeyType` conforms to `Sendable`, and `ValueType` conforms to `Sendable`.
 
-#### Return Value
+## Return Value
 
 `true` if the value should be treated as secret; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This method evaluates the secrets specifier against the provided key-value pair to determine if the value contains sensitive information that should be protected from disclosure.
 

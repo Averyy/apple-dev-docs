@@ -25,7 +25,7 @@ init(asset: any AVAsset & AVFragmentMinding, mindingInterval: TimeInterval)
 - (instancetype) initWithAsset:(AVAsset<AVFragmentMinding> *) asset mindingInterval:(NSTimeInterval) mindingInterval;
 ```
 
-#### Return Value
+## Return Value
 
 The new fragmented asset minder.
 

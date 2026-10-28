@@ -33,7 +33,7 @@ var taskTitles: [INSpeakableString]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<INSpeakableString *> * taskTitles;
 ```
 
-#### Discussion
+## Discussion
 
 When creating a new task list, use the strings in this property to populate the task list with a set of initial tasks.
 

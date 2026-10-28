@@ -23,7 +23,7 @@ var mediaTypesRequiringUserActionForPlayback: WKAudiovisualMediaTypes { get set 
 @property (nonatomic) WKAudiovisualMediaTypes mediaTypesRequiringUserActionForPlayback;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`WKAudiovisualMediaTypeNone`](../wkaudiovisualmediatypes/wkaudiovisualmediatypenone.md) to indicate that no user gestures are required to begin playing media.
 

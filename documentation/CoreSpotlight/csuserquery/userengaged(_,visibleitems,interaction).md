@@ -19,7 +19,7 @@ Notifies the system that someone engaged with a specific search result in your a
 func userEngaged(_ item: CSUserQuery.Item, visibleItems: [CSUserQuery.Item], interaction: CSUserQuery.UserInteractionKind)
 ```
 
-#### Discussion
+## Discussion
 
 When someone selects or interacts with a specific search result in your app’s UI, call this method to tell Spotlight about the interaction. Reporting this type of engagement helps Spotlight deliver better results more quickly in future queries. It also improves the ranked results Spotlight delivers to your app. The system keeps all information about these interactions on the current device
 

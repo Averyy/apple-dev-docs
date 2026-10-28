@@ -24,7 +24,7 @@ func draw(at point: CGPoint)
 - (void) drawAtPoint:(CGPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 This method draws the entire image in the current graphics context, respecting the image’s orientation setting. In the default coordinate system, images are situated down and to the right of the specified point. This method respects any transforms applied to the current graphics context, however.
 

@@ -3,7 +3,7 @@
 **Framework**: IOKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 IOHIDValue defines a value at a given time from a parsed item (IOHIDElement) contained within a Human Interface Device (HID) object. It is used to obtain either integer or data element values along with scaled values based on physical or calibrated settings. IOHIDValue is a CFType object and as such conforms to all the conventions expected such object.
 
@@ -11,7 +11,7 @@ This documentation assumes that you have a basic understanding of the material c
 
 All of the information described in this document is contained in the header file `IOHIDValue.h` found at `/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDValue.h`.
 
-##### Included Headers
+### Included Headers
 
 - <CoreFoundation/CoreFoundation.h>
 - <IOKit/hid/IOHIDBase.h>

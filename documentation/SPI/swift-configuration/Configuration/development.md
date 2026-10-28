@@ -10,11 +10,11 @@ framework: "swift-configuration/Configuration"
 
 Learn about tools and conventions used to develop the Swift Configuration package.
 
-#### Overview
+## Overview
 
 The Swift Configuration package is developed using modern Swift development practices and tools. This guide covers the development workflow, code organization, and tooling used to maintain the package.
 
-##### Process
+### Process
 
 We follow an open process and discuss development on GitHub issues, pull requests, and on the [Swift Forums](https://forums.swift.org/c/server/serverdev/14). Details on how to submit an issue or a pull requests can be found in [CONTRIBUTING.md](https://github.com/apple/swift-configuration/blob/main/CONTRIBUTING.md).
 
@@ -22,7 +22,7 @@ Large features and changes go through a lightweight proposals process - to learn
 
 > ❗ **Important**: To ensure productive use of contributor and maintainer time and resources, contributors must first agree their proposed change with a maintainer in an issue. Pull requests opened without prior discussion may be closed without review. If there is no issue already tracking the problem or feature request, please file a new one using your own voice (see “AI tools” usage below).
 
-##### AI tools
+### AI tools
 
 Human discourse is an essential part of open source development. To encourage productive collaboration between contributors and maintainers, please refrain from using AI tools for the following:
 
@@ -32,9 +32,9 @@ Human discourse is an essential part of open source development. To encourage pr
 
 Contributors who feel more comfortable writing in another language may use automated translation tools, but must include their original content in their preferred language.
 
-##### Repository structure
+### Repository structure
 
-###### Package organization
+#### Package organization
 
 The package contains several Swift targets organized by functionality:
 
@@ -42,9 +42,9 @@ The package contains several Swift targets organized by functionality:
 - **ConfigurationTesting** - Testing utilities for external configuration providers.
 - **ConfigurationTestingInternal** - Internal testing utilities and helpers.
 
-##### Development tools
+### Development tools
 
-###### Running CI checks locally
+#### Running CI checks locally
 
 You can run the Github Actions workflows locally using [act](https://github.com/nektos/act). To run all the jobs that run on a pull request, use the following command:
 
@@ -72,7 +72,7 @@ If you’d like `act` to always run with certain flags, these can be be placed i
 --action-offline-mode
 ```
 
-###### Code generation with gyb
+#### Code generation with gyb
 
 This package uses the “generate your boilerplate” (gyb) [script](https://github.com/swiftlang/swift/blob/main/utils/gyb.py) from the Swift repository to stamp out repetitive code for each supported primitive type.
 
@@ -86,7 +86,7 @@ If you’re adding a new `.gyb` file, also make sure to add it to the exclude li
 
 After running this script, also [run the formatter](./development.md#code-formatting) before opening a PR.
 
-###### Code formatting
+#### Code formatting
 
 The project uses swift-format for consistent code style. You can run CI checks locally using [`act`](https://github.com/nektos/act).
 
@@ -96,7 +96,7 @@ To run formatting checks:
 act --bind workflow_call -j soundness --input format_check_enabled=true
 ```
 
-###### Testing
+#### Testing
 
 The package includes comprehensive test suites for all components:
 
@@ -109,7 +109,7 @@ Run tests using Swift Package Manager:
 swift test --enable-all-traits
 ```
 
-###### Documentation
+#### Documentation
 
 Documentation is written using DocC and includes:
 
@@ -124,16 +124,16 @@ Preview documentation locally:
 SWIFT_PREVIEW_DOCS=1 swift package --disable-sandbox preview-documentation --target Configuration
 ```
 
-##### Contributing guidelines
+### Contributing guidelines
 
-###### Code style
+#### Code style
 
 - Follow Swift API Design Guidelines.
 - Use meaningful names for types, methods, and variables.
 - Include comprehensive documentation for all APIs, not only public types.
 - Write unit tests for new functionality.
 
-###### Provider development
+#### Provider development
 
 When developing new configuration providers:
 
@@ -142,7 +142,7 @@ When developing new configuration providers:
 3. Run compatibility tests using `ProviderCompatTest`.
 4. Add documentation to all symbols, not just `public`.
 
-###### Documentation requirements
+#### Documentation requirements
 
 All APIs must include:
 

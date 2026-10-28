@@ -25,7 +25,7 @@ optional func templateApplicationScene(_ templateApplicationScene: CPTemplateApp
 
 - [Displaying Content in CarPlay](../displaying-content-in-carplay.md)
 
-#### Discussion
+## Discussion
 
 CarPlay calls this method when it launches your navigation app and connects the scene. Create an instance of your map-drawing view controller and assign it to the window’s root view controller. Use the interface controller to present your user interface templates. You must set both the window’s root view controller and the scene’s root template before returning from this method.
 

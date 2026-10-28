@@ -5,7 +5,7 @@
 
 Expand a small set of manually written evaluation samples into a larger dataset.
 
-#### Overview
+## Overview
 
 When you create evaluation samples manually, you get tight control over quality, but the process is time-consuming. Use a model to synthetically produce a much larger dataset from a small initial set, which gives you broader coverage for testing consistency and quality across inputs.
 
@@ -15,7 +15,7 @@ The framework adds a `makeSamples(_:targetCount:sessionProvider:validator:)` met
 
 To see a command-line generator that expands a curated dataset for a real feature, see [Book Tracker: Using Evaluations to evaluate an intelligent feature](./book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
 
-#### Create your initial dataset
+## Create your initial dataset
 
 Start by creating your initial dataset of samples. For guidance on dataset design principles, including golden sets, user profiles, and challenge cases, see [Designing datasets to test your feature](./designing-evaluation-datasets.md). Include an optional *expected* value as a benchmark if your evaluation compares model output against a known answer. For evaluations that score output without a reference answer, such as model-judge assessments of tone or fluency, omit the expected value and generate prompt-only samples.
 
@@ -78,7 +78,7 @@ let dataset: [ModelSample<TaskItem>] = [
 
 This initial dataset covers all five `TaskCategory` cases, includes both urgent and non-urgent tasks, and mixes items with and without due dates.
 
-#### Generate synthetic samples
+## Generate synthetic samples
 
 Create additional samples by calling `makeSamples(_:targetCount:sessionProvider:validator:)` with a prompt that describes the data you want to generate. For example:
 
@@ -110,7 +110,7 @@ The `targetCount` parameter sets the total size of the resulting dataset, includ
 
 > ❗ **Important**: If you generate samples from a non-test target, such as a command-line tool that writes the dataset to disk, set “Enable Testing Search Paths” (`ENABLE_TESTING_SEARCH_PATHS`) to `YES` and add `$(DEVELOPER_DIR)/..` to “Runpath Search Paths” (`LD_RUNPATH_SEARCH_PATHS`).
 
-#### Validate the synthetic samples
+## Validate the synthetic samples
 
 Use a combination of programmatic validation and manual review to catch errors, duplicates, or distribution mismatches in synthetic data before relying on it for evaluation.
 
@@ -153,7 +153,7 @@ When you manually review the output, look for:
 - **Category imbalance**: Watch for the model representing one category more than the others.
 - **Semantic duplicates**: The generator removes identical prompts automatically, but keeps semantically similar prompts with different wording for example, “Schedule a dentist visit” and “Book a dental appointment”. Decide whether these near-duplicates help or hurt your evaluation: varied phrasings test robustness, but they can also skew your distribution if many cluster under the same category.
 
-#### Customize the generation process
+## Customize the generation process
 
 The `makeSamples(_:targetCount:sessionProvider:validator:)` method handles prompt construction, deduplication, and batch grouping for you. Pass a `sessionProvider` closure to control which model and instructions the generator uses:
 
@@ -210,7 +210,7 @@ for try await sample in generator.run() {
 let rejected = await generator.invalidSamples
 ```
 
-#### Improve your synthetic generation results
+## Improve your synthetic generation results
 
 The quality of your generated samples depends on the seeds you start with, the prompts you use to expand them, and how you validate the output. For deeper guidance on each of these factors, see [Designing datasets to test your feature](./designing-evaluation-datasets.md).
 

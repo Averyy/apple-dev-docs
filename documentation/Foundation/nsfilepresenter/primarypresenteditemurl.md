@@ -19,7 +19,7 @@ optional var primaryPresentedItemURL: URL? { get }
 @property (copy, readonly, nullable) NSURL * primaryPresentedItemURL;
 ```
 
-#### Discussion
+## Discussion
 
 This property supports App Sandbox in macOS.
 

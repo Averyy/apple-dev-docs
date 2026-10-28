@@ -20,7 +20,7 @@ class NSScriptCoercionHandler
 @interface NSScriptCoercionHandler : NSObject
 ```
 
-#### Overview
+## Overview
 
 A shared instance of this class coerces (converts) object values to objects of another class using information supplied by classes that register with it. Coercions frequently are required during key-value coding.
 

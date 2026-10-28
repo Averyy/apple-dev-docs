@@ -22,7 +22,7 @@ var layout: MSMessageLayout? { get set }
 @property (nonatomic, copy, nullable) MSMessageLayout * layout;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to a concrete subclass of the abstract [`MSMessageLayout`](../msmessagelayout.md) class.
 

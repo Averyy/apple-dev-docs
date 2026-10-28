@@ -15,7 +15,7 @@ Sets a Boolean value indicating if the device is hidden.
 kern_return_t SetIsHidden(bool in_is_hidden);
 ```
 
-#### Discussion
+## Discussion
 
 A bool value where true indicates that the device is not included in the normal list of devices provided and cannot be the default device. Hidden devices can only be discovered by it’s unique identifier
 

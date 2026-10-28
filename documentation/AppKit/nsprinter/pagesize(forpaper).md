@@ -19,7 +19,7 @@ func pageSize(forPaper paperName: NSPrinter.PaperName) -> NSSize
 - (NSSize) pageSizeForPaper:(NSPrinterPaperName) paperName;
 ```
 
-#### Return Value
+## Return Value
 
 The size of the page, measured in points in the user coordinate space. The returned size is zero if the specified paper name is not recognized or its entry in the PPD file cannot be parsed.
 

@@ -71,15 +71,6 @@ let maximumNumberOfLoginAttempts = 10
 var currentLoginAttempt = 0
 ```
 
-<!--
-  - test: `constantsAndVariables`
-
-  ```swifttest
-  -> let maximumNumberOfLoginAttempts = 10
-  -> var currentLoginAttempt = 0
-  ```
--->
-
 This code can be read as:
 
 “Declare a new constant called `maximumNumberOfLoginAttempts`,
@@ -118,22 +109,6 @@ if environment == "development" {
 // Now maximumNumberOfLoginAttempts has a value, and can be read.
 ```
 
-<!--
-  - test: `constantsWithDeferredInitialization`
-
-  ```swifttest
-  -> var environment = "development"
-  -> let maximumNumberOfLoginAttempts: Int
-  -> if environment == "development" {
-         maximumNumberOfLoginAttempts = 100
-     } else {
-         maximumNumberOfLoginAttempts = 10
-     }
-  >> print(maxNumberOfLoginAttempts)
-  << 100
-  ```
--->
-
 In this example,
 the maximum number of login attempts is constant,
 and its value depends on the environment.
@@ -154,16 +129,6 @@ separated by commas:
 var x = 0.0, y = 0.0, z = 0.0
 ```
 
-<!--
-  - test: `multipleDeclarations`
-
-  ```swifttest
-  -> var x = 0.0, y = 0.0, z = 0.0
-  >> print(x, y, z)
-  << 0.0 0.0 0.0
-  ```
--->
-
 ### Type Annotations
 
 You can provide a *type annotation* when you declare a constant or variable,
@@ -177,14 +142,6 @@ to indicate that the variable can store `String` values:
 ```swift
 var welcomeMessage: String
 ```
-
-<!--
-  - test: `typeAnnotations`
-
-  ```swifttest
-  -> var welcomeMessage: String
-  ```
--->
 
 The colon in the declaration means “…of type…,”
 so the code above can be read as:
@@ -200,30 +157,12 @@ The `welcomeMessage` variable can now be set to any string value without error:
 welcomeMessage = "Hello"
 ```
 
-<!--
-  - test: `typeAnnotations`
-
-  ```swifttest
-  -> welcomeMessage = "Hello"
-  >> print(welcomeMessage)
-  << Hello
-  ```
--->
-
 You can define multiple related variables of the same type on a single line,
 separated by commas, with a single type annotation after the final variable name:
 
 ```swift
 var red, green, blue: Double
 ```
-
-<!--
-  - test: `typeAnnotations`
-
-  ```swifttest
-  -> var red, green, blue: Double
-  ```
--->
 
 > Note: It's rare that you need to write type annotations in practice.
 > If you provide an initial value for a constant or variable at the point that it's defined,
@@ -243,16 +182,6 @@ let π = 3.14159
 let 你好 = "你好世界"
 let 🐶🐮 = "dogcow"
 ```
-
-<!--
-  - test: `constantsAndVariables`
-
-  ```swifttest
-  -> let π = 3.14159
-  -> let 你好 = "你好世界"
-  -> let 🐶🐮 = "dogcow"
-  ```
--->
 
 Constant and variable names can't contain
 whitespace characters, mathematical symbols, arrows, private-use Unicode scalar values,
@@ -280,17 +209,6 @@ friendlyWelcome = "Bonjour!"
 // friendlyWelcome is now "Bonjour!"
 ```
 
-<!--
-  - test: `constantsAndVariables`
-
-  ```swifttest
-  -> var friendlyWelcome = "Hello!"
-  -> friendlyWelcome = "Bonjour!"
-  /> friendlyWelcome is now \"\(friendlyWelcome)\"
-  </ friendlyWelcome is now "Bonjour!"
-  ```
--->
-
 Unlike a variable, the value of a constant can't be changed after it's set.
 Attempting to do so is reported as an error when your code is compiled:
 
@@ -300,23 +218,6 @@ languageName = "Swift++"
 // This is a compile-time error: languageName cannot be changed.
 ```
 
-<!--
-  - test: `constantsAndVariables_err`
-
-  ```swifttest
-  -> let languageName = "Swift"
-  -> languageName = "Swift++"
-  // This is a compile-time error: languageName cannot be changed.
-  !$ error: cannot assign to value: 'languageName' is a 'let' constant
-  !! languageName = "Swift++"
-  !! ^~~~~~~~~~~~
-  !! /tmp/swifttest.swift:1:1: note: change 'let' to 'var' to make it mutable
-  !! let languageName = "Swift"
-  !! ^~~
-  !! var
-  ```
--->
-
 ### Printing Constants and Variables
 
 You can print the current value of a constant or variable with the `print(_:separator:terminator:)` function:
@@ -325,15 +226,6 @@ You can print the current value of a constant or variable with the `print(_:sepa
 print(friendlyWelcome)
 // Prints "Bonjour!"
 ```
-
-<!--
-  - test: `constantsAndVariables`
-
-  ```swifttest
-  -> print(friendlyWelcome)
-  <- Bonjour!
-  ```
--->
 
 The `print(_:separator:terminator:)` function
 is a global function that prints one or more values
@@ -349,27 +241,6 @@ pass an empty string as the terminator --- for example,
 For information about parameters with default values,
 see [Default Parameter Values](Functions.md#Default-Parameter-Values).
 
-<!--
-  - test: `printingWithoutNewline`
-
-  ```swifttest
-  >> let someValue = 10
-  -> print(someValue, terminator: "")
-  -> print(someValue)
-  << 1010
-  ```
--->
-
-<!--
-  QUESTION: have I referred to Xcode's console correctly here?
-  Should I mention other output streams, such as the REPL / playgrounds?
--->
-
-<!--
-  NOTE: this is a deliberately simplistic description of what you can do with print().
-  It will be expanded later on.
--->
-
 Swift uses *string interpolation* to include the name of a constant or variable
 as a placeholder in a longer string,
 and to prompt Swift to replace it with the current value of that constant or variable.
@@ -379,15 +250,6 @@ Wrap the name in parentheses and escape it with a backslash before the opening p
 print("The current value of friendlyWelcome is \(friendlyWelcome)")
 // Prints "The current value of friendlyWelcome is Bonjour!"
 ```
-
-<!--
-  - test: `constantsAndVariables`
-
-  ```swifttest
-  -> print("The current value of friendlyWelcome is \(friendlyWelcome)")
-  <- The current value of friendlyWelcome is Bonjour!
-  ```
--->
 
 > Note: All options you can use with string interpolation
 > are described in [String Interpolation](StringsAndCharacters.md#String-Interpolation).
@@ -405,14 +267,6 @@ Single-line comments begin with two forward-slashes (`//`):
 // This is a comment.
 ```
 
-<!--
-  - test: `comments`
-
-  ```swifttest
-  -> // This is a comment.
-  ```
--->
-
 Multiline comments start with a forward-slash followed by an asterisk (`/*`)
 and end with an asterisk followed by a forward-slash (`*/`):
 
@@ -420,15 +274,6 @@ and end with an asterisk followed by a forward-slash (`*/`):
 /* This is also a comment
 but is written over multiple lines. */
 ```
-
-<!--
-  - test: `comments`
-
-  ```swifttest
-  -> /* This is also a comment
-     but is written over multiple lines. */
-  ```
--->
 
 Unlike multiline comments in C,
 multiline comments in Swift can be nested inside other multiline comments.
@@ -441,16 +286,6 @@ The second block is then closed, followed by the first block:
     /* This is the second, nested multiline comment. */
 This is the end of the first multiline comment. */
 ```
-
-<!--
-  - test: `comments`
-
-  ```swifttest
-  -> /* This is the start of the first multiline comment.
-        /* This is the second, nested multiline comment. */
-     This is the end of the first multiline comment. */
-  ```
--->
 
 Nested multiline comments enable you to comment out large blocks of code quickly and easily,
 even if the code already contains multiline comments.
@@ -467,15 +302,6 @@ if you want to write multiple separate statements on a single line:
 let cat = "🐱"; print(cat)
 // Prints "🐱".
 ```
-
-<!--
-  - test: `semiColons`
-
-  ```swifttest
-  -> let cat = "🐱"; print(cat)
-  <- 🐱
-  ```
--->
 
 ## Integers
 
@@ -530,17 +356,6 @@ with its `min` and `max` properties:
 let minValue = UInt8.min  // minValue is equal to 0, and is of type UInt8
 let maxValue = UInt8.max  // maxValue is equal to 255, and is of type UInt8
 ```
-
-<!--
-  - test: `integerBounds`
-
-  ```swifttest
-  -> let minValue = UInt8.min  // minValue is equal to 0, and is of type UInt8
-  -> let maxValue = UInt8.max  // maxValue is equal to 255, and is of type UInt8
-  >> print(minValue, maxValue)
-  << 0 255
-  ```
--->
 
 The values of these properties are of the appropriate-sized number type
 (such as `UInt8` in the example above)
@@ -619,13 +434,6 @@ For example,
 the next `Float` value after 0.001 is 0.0010000002,
 which is smaller than the spacing after 10,000.
 
-<!---
-var n: Float = 10_000
-print(n.nextUp)
-n = 0.001
-print(n.nextUp)
--->
-
 Floating-point numbers have values for
 negative zero, infinity, and negative infinity,
 which represent overflow and underflow in calculations.
@@ -697,17 +505,6 @@ let meaningOfLife = 42
 // meaningOfLife is inferred to be of type Int
 ```
 
-<!--
-  - test: `typeInference`
-
-  ```swifttest
-  -> let meaningOfLife = 42
-  // meaningOfLife is inferred to be of type Int
-  >> print(type(of: meaningOfLife))
-  << Int
-  ```
--->
-
 Likewise, if you don't specify a type for a floating-point literal,
 Swift infers that you want to create a `Double`:
 
@@ -715,17 +512,6 @@ Swift infers that you want to create a `Double`:
 let pi = 3.14159
 // pi is inferred to be of type Double
 ```
-
-<!--
-  - test: `typeInference`
-
-  ```swifttest
-  -> let pi = 3.14159
-  // pi is inferred to be of type Double
-  >> print(type(of: pi))
-  << Double
-  ```
--->
 
 Swift always chooses `Double` (rather than `Float`)
 when inferring the type of floating-point numbers.
@@ -737,17 +523,6 @@ a type of `Double` will be inferred from the context:
 let anotherPi = 3 + 0.14159
 // anotherPi is also inferred to be of type Double
 ```
-
-<!--
-  - test: `typeInference`
-
-  ```swifttest
-  -> let anotherPi = 3 + 0.14159
-  // anotherPi is also inferred to be of type Double
-  >> print(type(of: anotherPi))
-  << Double
-  ```
--->
 
 The literal value of `3` has no explicit type in and of itself,
 and so an appropriate output type of `Double` is inferred
@@ -771,19 +546,6 @@ let octalInteger = 0o21           // 17 in octal notation
 let hexadecimalInteger = 0x11     // 17 in hexadecimal notation
 ```
 
-<!--
-  - test: `numberLiterals`
-
-  ```swifttest
-  -> let decimalInteger = 17
-  -> let binaryInteger = 0b10001       // 17 in binary notation
-  -> let octalInteger = 0o21           // 17 in octal notation
-  -> let hexadecimalInteger = 0x11     // 17 in hexadecimal notation
-  >> print(binaryInteger, octalInteger, hexadecimalInteger)
-  << 17 17 17
-  ```
--->
-
 Floating-point literals can be decimal (with no prefix),
 or hexadecimal (with a `0x` prefix).
 They must always have a number (or hexadecimal number) on both sides of the decimal point.
@@ -791,27 +553,6 @@ Decimal floats can also have an optional *exponent*,
 indicated by an uppercase or lowercase `e`;
 hexadecimal floats must have an exponent,
 indicated by an uppercase or lowercase `p`.
-
-<!--
-  - test: `float-required-vs-optional-exponent-err`
-
-  ```swifttest
-  -> let hexWithout = 0x1.5
-  !$ error: hexadecimal floating point literal must end with an exponent
-  !! let hexWithout = 0x1.5
-  !!                       ^
-  ```
--->
-
-<!--
-  - test: `float-required-vs-optional-exponent`
-
-  ```swifttest
-  -> let hexWith = 0x1.5p7
-  -> let decimalWithout = 0.5
-  -> let decimalWith = 0.5e7
-  ```
--->
 
 For decimal numbers with an exponent of `x`,
 the base number is multiplied by 10ˣ:
@@ -833,16 +574,6 @@ let exponentDouble = 1.21875e1
 let hexadecimalDouble = 0xC.3p0
 ```
 
-<!--
-  - test: `numberLiterals`
-
-  ```swifttest
-  -> let decimalDouble = 12.1875
-  -> let exponentDouble = 1.21875e1
-  -> let hexadecimalDouble = 0xC.3p0
-  ```
--->
-
 Numeric literals can contain extra formatting to make them easier to read.
 Both integers and floats can be padded with extra zeros
 and can contain underscores to help with readability.
@@ -853,16 +584,6 @@ let paddedDouble = 000123.456
 let oneMillion = 1_000_000
 let justOverOneMillion = 1_000_000.000_000_1
 ```
-
-<!--
-  - test: `numberLiterals`
-
-  ```swifttest
-  -> let paddedDouble = 000123.456
-  -> let oneMillion = 1_000_000
-  -> let justOverOneMillion = 1_000_000.000_000_1
-  ```
--->
 
 ## Numeric Type Conversion
 
@@ -896,24 +617,6 @@ let tooBig: Int8 = Int8.max + 1
 // and so this will also report an error
 ```
 
-<!--
-  - test: `constantsAndVariablesOverflowError`
-
-  ```swifttest
-  -> let cannotBeNegative: UInt8 = -1
-  // UInt8 can't store negative numbers, and so this will report an error
-  -> let tooBig: Int8 = Int8.max + 1
-  // Int8 can't store a number larger than its maximum value,
-  // and so this will also report an error
-  !! /tmp/swifttest.swift:2:29: error: arithmetic operation '127 + 1' (on type 'Int8') results in an overflow
-  !! let tooBig: Int8 = Int8.max + 1
-  !!                    ~~~~~~~~ ^ ~
-  !! /tmp/swifttest.swift:1:31: error: negative integer '-1' overflows when stored into unsigned type 'UInt8'
-  !! let cannotBeNegative: UInt8 = -1
-  !!                                ^
-  ```
--->
-
 Because each numeric type can store a different range of values,
 you must opt in to numeric type conversion on a case-by-case basis.
 This opt-in approach prevents hidden conversion errors
@@ -935,18 +638,6 @@ let twoThousand: UInt16 = 2_000
 let one: UInt8 = 1
 let twoThousandAndOne = twoThousand + UInt16(one)
 ```
-
-<!--
-  - test: `typeConversion`
-
-  ```swifttest
-  -> let twoThousand: UInt16 = 2_000
-  -> let one: UInt8 = 1
-  -> let twoThousandAndOne = twoThousand + UInt16(one)
-  >> print(twoThousandAndOne)
-  << 2001
-  ```
--->
 
 Because both sides of the addition are now of type `UInt16`,
 the addition is allowed.
@@ -974,18 +665,6 @@ let pi = Double(three) + pointOneFourOneFiveNine
 // pi equals 3.14159, and is inferred to be of type Double
 ```
 
-<!--
-  - test: `typeConversion`
-
-  ```swifttest
-  -> let three = 3
-  -> let pointOneFourOneFiveNine = 0.14159
-  -> let pi = Double(three) + pointOneFourOneFiveNine
-  /> pi equals \(pi), and is inferred to be of type Double
-  </ pi equals 3.14159, and is inferred to be of type Double
-  ```
--->
-
 Here, the value of the constant `three` is used to create a new value of type `Double`,
 so that both sides of the addition are of the same type.
 Without this conversion in place, the addition would not be allowed.
@@ -998,16 +677,6 @@ let integerPi = Int(pi)
 // integerPi equals 3, and is inferred to be of type Int
 ```
 
-<!--
-  - test: `typeConversion`
-
-  ```swifttest
-  -> let integerPi = Int(pi)
-  /> integerPi equals \(integerPi), and is inferred to be of type Int
-  </ integerPi equals 3, and is inferred to be of type Int
-  ```
--->
-
 Floating-point values are always truncated when used to initialize a new integer value in this way.
 This means that `4.75` becomes `4`, and `-3.9` becomes `-3`.
 
@@ -1016,12 +685,6 @@ This means that `4.75` becomes `4`, and `-3.9` becomes `-3`.
 > The literal value `3` can be added directly to the literal value `0.14159`,
 > because number literals don't have an explicit type in and of themselves.
 > Their type is inferred only at the point that they're evaluated by the compiler.
-
-<!--
-  NOTE: this section on explicit conversions could be included in the Operators section.
-  I think it's more appropriate here, however,
-  and helps to reinforce the “just use Int” message.
--->
 
 ## Type Aliases
 
@@ -1036,14 +699,6 @@ such as when working with data of a specific size from an external source:
 typealias AudioSample = UInt16
 ```
 
-<!--
-  - test: `typeAliases`
-
-  ```swifttest
-  -> typealias AudioSample = UInt16
-  ```
--->
-
 Once you define a type alias,
 you can use the alias anywhere you might use the original name:
 
@@ -1051,16 +706,6 @@ you can use the alias anywhere you might use the original name:
 var maxAmplitudeFound = AudioSample.min
 // maxAmplitudeFound is now 0
 ```
-
-<!--
-  - test: `typeAliases`
-
-  ```swifttest
-  -> var maxAmplitudeFound = AudioSample.min
-  /> maxAmplitudeFound is now \(maxAmplitudeFound)
-  </ maxAmplitudeFound is now 0
-  ```
--->
 
 Here, `AudioSample` is defined as an alias for `UInt16`.
 Because it's an alias,
@@ -1079,15 +724,6 @@ Swift provides two Boolean constant values,
 let orangesAreOrange = true
 let turnipsAreDelicious = false
 ```
-
-<!--
-  - test: `booleans`
-
-  ```swifttest
-  -> let orangesAreOrange = true
-  -> let turnipsAreDelicious = false
-  ```
--->
 
 The types of `orangesAreOrange` and `turnipsAreDelicious`
 have been inferred as `Bool` from the fact that
@@ -1108,19 +744,6 @@ if turnipsAreDelicious {
 // Prints "Eww, turnips are horrible."
 ```
 
-<!--
-  - test: `booleans`
-
-  ```swifttest
-  -> if turnipsAreDelicious {
-        print("Mmm, tasty turnips!")
-     } else {
-        print("Eww, turnips are horrible.")
-     }
-  <- Eww, turnips are horrible.
-  ```
--->
-
 Conditional statements such as the `if` statement are covered in more detail in [Control Flow](ControlFlow.md).
 
 Swift's type safety prevents non-Boolean values from being substituted for `Bool`.
@@ -1133,21 +756,6 @@ if i {
 }
 ```
 
-<!--
-  - test: `booleansNotBoolean`
-
-  ```swifttest
-  -> let i = 1
-  -> if i {
-        // this example will not compile, and will report an error
-     }
-  !$ error: type 'Int' cannot be used as a boolean; test for '!= 0' instead
-  !! if i {
-  !!   ^
-  !! ( != 0)
-  ```
--->
-
 However, the alternative example below is valid:
 
 ```swift
@@ -1156,17 +764,6 @@ if i == 1 {
     // this example will compile successfully
 }
 ```
-
-<!--
-  - test: `booleansIsBoolean`
-
-  ```swifttest
-  -> let i = 1
-  -> if i == 1 {
-        // this example will compile successfully
-     }
-  ```
--->
 
 The result of the `i == 1` comparison is of type `Bool`,
 and so this second example passes the type checking.
@@ -1191,16 +788,6 @@ let http404Error = (404, "Not Found")
 // http404Error is of type (Int, String), and equals (404, "Not Found")
 ```
 
-<!--
-  - test: `tuples`
-
-  ```swifttest
-  -> let http404Error = (404, "Not Found")
-  /> http404Error is of type (Int, String), and equals (\(http404Error.0), \"\(http404Error.1)\")
-  </ http404Error is of type (Int, String), and equals (404, "Not Found")
-  ```
--->
-
 The `(404, "Not Found")` tuple groups together an `Int` and a `String`
 to give the HTTP status code two separate values:
 a number and a human-readable description.
@@ -1223,18 +810,6 @@ print("The status message is \(statusMessage)")
 // Prints "The status message is Not Found".
 ```
 
-<!--
-  - test: `tuples`
-
-  ```swifttest
-  -> let (statusCode, statusMessage) = http404Error
-  -> print("The status code is \(statusCode)")
-  <- The status code is 404
-  -> print("The status message is \(statusMessage)")
-  <- The status message is Not Found
-  ```
--->
-
 If you only need some of the tuple's values,
 ignore parts of the tuple with an underscore (`_`)
 when you decompose the tuple:
@@ -1244,16 +819,6 @@ let (justTheStatusCode, _) = http404Error
 print("The status code is \(justTheStatusCode)")
 // Prints "The status code is 404".
 ```
-
-<!--
-  - test: `tuples`
-
-  ```swifttest
-  -> let (justTheStatusCode, _) = http404Error
-  -> print("The status code is \(justTheStatusCode)")
-  <- The status code is 404
-  ```
--->
 
 Alternatively,
 access the individual element values in a tuple using index numbers starting at zero:
@@ -1265,30 +830,11 @@ print("The status message is \(http404Error.1)")
 // Prints "The status message is Not Found".
 ```
 
-<!--
-  - test: `tuples`
-
-  ```swifttest
-  -> print("The status code is \(http404Error.0)")
-  <- The status code is 404
-  -> print("The status message is \(http404Error.1)")
-  <- The status message is Not Found
-  ```
--->
-
 You can name the individual elements in a tuple when the tuple is defined:
 
 ```swift
 let http200Status = (statusCode: 200, description: "OK")
 ```
-
-<!--
-  - test: `tuples`
-
-  ```swifttest
-  -> let http200Status = (statusCode: 200, description: "OK")
-  ```
--->
 
 If you name the elements in a tuple,
 you can use the element names to access the values of those elements:
@@ -1299,17 +845,6 @@ print("The status code is \(http200Status.statusCode)")
 print("The status message is \(http200Status.description)")
 // Prints "The status message is OK".
 ```
-
-<!--
-  - test: `tuples`
-
-  ```swifttest
-  -> print("The status code is \(http200Status.statusCode)")
-  <- The status code is 200
-  -> print("The status message is \(http200Status.description)")
-  <- The status message is OK
-  ```
--->
 
 Tuples are particularly useful as the return values of functions.
 A function that tries to retrieve a web page might return the `(Int, String)` tuple type
@@ -1348,18 +883,6 @@ let convertedNumber = Int(possibleNumber)
 // The type of convertedNumber is "optional Int"
 ```
 
-<!--
-  - test: `optionals`
-
-  ```swifttest
-  -> let possibleNumber = "123"
-  -> let convertedNumber = Int(possibleNumber)
-  // convertedNumber is inferred to be of type "Int?", or "optional Int"
-  >> print(type(of: convertedNumber))
-  << Optional<Int>
-  ```
--->
-
 Because the initializer in the code above might fail,
 it returns an *optional* `Int`, rather than an `Int`.
 
@@ -1383,18 +906,6 @@ serverResponseCode = nil
 // serverResponseCode now contains no value
 ```
 
-<!--
-  - test: `optionals`
-
-  ```swifttest
-  -> var serverResponseCode: Int? = 404
-  /> serverResponseCode contains an actual Int value of \(serverResponseCode!)
-  </ serverResponseCode contains an actual Int value of 404
-  -> serverResponseCode = nil
-  // serverResponseCode now contains no value
-  ```
--->
-
 If you define an optional variable without providing a default value,
 the variable is automatically set to `nil`:
 
@@ -1402,15 +913,6 @@ the variable is automatically set to `nil`:
 var surveyAnswer: String?
 // surveyAnswer is automatically set to nil
 ```
-
-<!--
-  - test: `optionals`
-
-  ```swifttest
-  -> var surveyAnswer: String?
-  // surveyAnswer is automatically set to nil
-  ```
--->
 
 You can use an `if` statement to find out whether an optional contains a value
 by comparing the optional against `nil`.
@@ -1428,17 +930,6 @@ if convertedNumber != nil {
 }
 // Prints "convertedNumber contains some integer value."
 ```
-
-<!--
-  - test: `optionals`
-
-  ```swifttest
-  -> if convertedNumber != nil {
-        print("convertedNumber contains some integer value.")
-     }
-  <- convertedNumber contains some integer value.
-  ```
--->
 
 You can't use `nil` with non-optional constants or variables.
 If a constant or variable in your code needs to work with
@@ -1511,19 +1002,6 @@ if let actualNumber = Int(possibleNumber) {
 // Prints "The string "123" has an integer value of 123".
 ```
 
-<!--
-  - test: `optionals`
-
-  ```swifttest
-  -> if let actualNumber = Int(possibleNumber) {
-        print("The string \"\(possibleNumber)\" has an integer value of \(actualNumber)")
-     } else {
-        print("The string \"\(possibleNumber)\" couldn't be converted to an integer")
-     }
-  <- The string "123" has an integer value of 123
-  ```
--->
-
 This code can be read as:
 
 “If the optional `Int` returned by `Int(possibleNumber)` contains a value,
@@ -1551,20 +1029,6 @@ if let myNumber = myNumber {
 // Prints "My number is 123".
 ```
 
-<!--
-  - test: `optionals`
-
-  ```swifttest
-  -> let myNumber = Int(possibleNumber)
-  // Here, myNumber is an optional integer
-  -> if let myNumber = myNumber {
-         // Here, myNumber is a non-optional integer
-         print("My number is \(myNumber)")
-     }
-  <- My number is 123
-  ```
--->
-
 This code starts by checking whether `myNumber` contains a value,
 just like the code in the previous example.
 If `myNumber` has a value,
@@ -1586,17 +1050,6 @@ if let myNumber {
 }
 // Prints "My number is 123".
 ```
-
-<!--
-  - test: `optionals`
-
-  ```swifttest
-  -> if let myNumber {
-         print("My number is \(myNumber)")
-     }
-  <- My number is 123
-  ```
--->
 
 You can use both constants and variables with optional binding.
 If you wanted to manipulate the value of `myNumber`
@@ -1633,35 +1086,6 @@ if let firstNumber = Int("4") {
 // Prints "4 < 42 < 100".
 ```
 
-<!--
-  - test: `multipleOptionalBindings`
-
-  ```swifttest
-  -> if let firstNumber = Int("4"), let secondNumber = Int("42"), firstNumber < secondNumber && secondNumber < 100 {
-        print("\(firstNumber) < \(secondNumber) < 100")
-     }
-  <- 4 < 42 < 100
-
-  -> if let firstNumber = Int("4") {
-         if let secondNumber = Int("42") {
-             if firstNumber < secondNumber && secondNumber < 100 {
-                 print("\(firstNumber) < \(secondNumber) < 100")
-             }
-         }
-     }
-  <- 4 < 42 < 100
-  ```
--->
-
-<!--
-  The example above uses multiple optional bindings
-  to show that you can have more than one
-  and to show the short-circuiting behavior.
-  It has multiple Boolean conditions
-  to show that you should join logically related conditions
-  using the && operator instead of a comma.
--->
-
 Constants and variables created with optional binding in an `if` statement
 are available only within the body of the `if` statement.
 In contrast, the constants and variables created with a `guard` statement
@@ -1685,17 +1109,6 @@ let greeting = "Hello, " + (name ?? "friend") + "!"
 print(greeting)
 // Prints "Hello, friend!"
 ```
-
-<!--
-.. testcode:: optionalFallback
-
-   ```swifttest
-   -> let name: String? = nil
-   -> let greeting = "Hello, " + (name ?? "friend") + "!"
-   -> print(greeting)
-   <- Hello, friend!
-   ```
--->
 
 For more information about using `??` to provide a fallback value,
 see [Nil-Coalescing Operator](BasicOperators.md#Nil-Coalescing-Operator).
@@ -1783,18 +1196,6 @@ let assumedString: String! = "An implicitly unwrapped optional string."
 let implicitString: String = assumedString // Unwrapped automatically
 ```
 
-<!--
-  - test: `implicitlyUnwrappedOptionals`
-
-  ```swifttest
-  -> let possibleString: String? = "An optional string."
-  -> let forcedString: String = possibleString! // requires an exclamation point
-
-  -> let assumedString: String! = "An implicitly unwrapped optional string."
-  -> let implicitString: String = assumedString // no need for an exclamation point
-  ```
--->
-
 You can think of an implicitly unwrapped optional as
 giving permission for the optional to be force-unwrapped if needed.
 When you use an implicitly unwrapped optional value,
@@ -1813,17 +1214,6 @@ let optionalString = assumedString
 // The type of optionalString is "String?" and assumedString isn't force-unwrapped.
 ```
 
-<!--
-  - test: `implicitlyUnwrappedOptionals`
-
-  ```swifttest
-  -> let optionalString = assumedString
-  // The type of optionalString is "String?" and assumedString isn't force-unwrapped.
-  >> print(type(of: optionalString))
-  << Optional<String>
-  ```
--->
-
 If an implicitly unwrapped optional is `nil` and you try to access its wrapped value,
 you'll trigger a runtime error.
 The result is exactly the same as if you write an exclamation point
@@ -1839,17 +1229,6 @@ if assumedString != nil {
 // Prints "An implicitly unwrapped optional string."
 ```
 
-<!--
-  - test: `implicitlyUnwrappedOptionals`
-
-  ```swifttest
-  -> if assumedString != nil {
-        print(assumedString!)
-     }
-  <- An implicitly unwrapped optional string.
-  ```
--->
-
 You can also use an implicitly unwrapped optional with optional binding,
 to check and unwrap its value in a single statement:
 
@@ -1859,17 +1238,6 @@ if let definiteString = assumedString {
 }
 // Prints "An implicitly unwrapped optional string."
 ```
-
-<!--
-  - test: `implicitlyUnwrappedOptionals`
-
-  ```swifttest
-  -> if let definiteString = assumedString {
-        print(definiteString)
-     }
-  <- An implicitly unwrapped optional string.
-  ```
--->
 
 ## Memory Safety
 
@@ -1943,23 +1311,6 @@ func canThrowAnError() throws {
 }
 ```
 
-<!--
-  - test: `errorHandling`
-
-  ```swifttest
-  >> enum SimpleError: Error {
-  >>    case someError
-  >> }
-  >> let condition = true
-  -> func canThrowAnError() throws {
-        // this function may or may not throw an error
-  >>    if condition {
-  >>       throw SimpleError.someError
-  >>    }
-     }
-  ```
--->
-
 A function indicates that it can throw an error
 by including the `throws` keyword in its declaration.
 When you call a function that can throw an error,
@@ -1976,22 +1327,6 @@ do {
     // an error was thrown
 }
 ```
-
-<!--
-  - test: `errorHandling`
-
-  ```swifttest
-  -> do {
-  ->    try canThrowAnError()
-  >>    print("No Error")
-  ->    // no error was thrown
-  -> } catch {
-  >>    print("Error")
-  ->    // an error was thrown
-  -> }
-  << Error
-  ```
--->
 
 A `do` statement creates a new containing scope,
 which allows errors to be propagated to one or more `catch` clauses.
@@ -2013,32 +1348,6 @@ do {
     buyGroceries(ingredients)
 }
 ```
-
-<!--
-  - test: `errorHandlingTwo`
-
-  ```swifttest
-  >> enum SandwichError: Error {
-  >>     case outOfCleanDishes
-  >>     case missingIngredients([String])
-  >> }
-  >> func washDishes() { print("Wash dishes") }
-  >> func buyGroceries(_ shoppingList: [String]) { print("Buy \(shoppingList)") }
-  -> func makeASandwich() throws {
-         // ...
-     }
-  >> func eatASandwich() {}
-
-  -> do {
-         try makeASandwich()
-         eatASandwich()
-     } catch SandwichError.outOfCleanDishes {
-         washDishes()
-     } catch SandwichError.missingIngredients(let ingredients) {
-         buyGroceries(ingredients)
-     }
-  ```
--->
 
 In this example, the `makeASandwich()` function will throw an error
 if no clean dishes are available
@@ -2121,14 +1430,6 @@ without impacting performance in production.
 
 ### Debugging with Assertions
 
-<!--
-  If your code triggers an assertion while running in a debug environment,
-  such as when you build and run an app in Xcode,
-  you can see exactly where the invalid state occurred
-  and query the state of your app at the time that the assertion was triggered.
-  An assertion also lets you provide a suitable debug message as to the nature of the assert.
--->
-
 You write an assertion by calling the
 [`assert(_:_:file:line:)`](https://developer.apple.com/documentation/swift/assert(_:_:file:line:)) function
 from the Swift standard library.
@@ -2142,17 +1443,6 @@ assert(age >= 0, "A person's age can't be less than zero.")
 // This assertion fails because -3 isn't >= 0.
 ```
 
-<!--
-  - test: `assertions-1`
-
-  ```swifttest
-  -> let age = -3
-  -> assert(age >= 0, "A person's age can't be less than zero.")
-  xx assert
-  // This assertion fails because -3 isn't >= 0.
-  ```
--->
-
 In this example, code execution continues if `age >= 0` evaluates to `true`,
 that is, if the value of `age` is nonnegative.
 If the value of `age` is negative, as in the code above,
@@ -2165,26 +1455,6 @@ for example, when it would just repeat the condition as prose.
 ```swift
 assert(age >= 0)
 ```
-
-<!--
-  - test: `assertions-2`
-
-  ```swifttest
-  >> let age = -3
-  -> assert(age >= 0)
-  xx assert
-  ```
--->
-
-<!--
-  - test: `assertionsCanUseStringInterpolation`
-
-  ```swifttest
-  -> let age = -3
-  -> assert(age >= 0, "A person's age can't be less than zero, but value is \(age).")
-  xx assert
-  ```
--->
 
 If the code already checks the condition,
 you use the
@@ -2201,22 +1471,6 @@ if age > 10 {
     assertionFailure("A person's age can't be less than zero.")
 }
 ```
-
-<!--
-  - test: `assertions-3`
-
-  ```swifttest
-  >> let age = -3
-  -> if age > 10 {
-         print("You can ride the roller-coaster or the ferris wheel.")
-     } else if age >= 0 {
-         print("You can ride the ferris wheel.")
-     } else {
-         assertionFailure("A person's age can't be less than zero.")
-     }
-  xx assert
-  ```
--->
 
 ### Enforcing Preconditions
 
@@ -2235,17 +1489,6 @@ For example:
 // In the implementation of a subscript...
 precondition(index > 0, "Index must be greater than zero.")
 ```
-
-<!--
-  - test: `preconditions`
-
-  ```swifttest
-  >> let index = -1
-  // In the implementation of a subscript...
-  -> precondition(index > 0, "Index must be greater than zero.")
-  xx assert
-  ```
--->
 
 You can also call the
 [`preconditionFailure(_:file:line:)`](https://developer.apple.com/documentation/swift/preconditionfailure(_:file:line:)) function
@@ -2269,35 +1512,3 @@ by one of the switch's other cases.
 > unlike assertions or preconditions,
 > you can be sure that execution always halts
 > if it encounters a stub implementation.
-
-<!--
-  "\ " in the first cell below lets it be empty.
-  Otherwise RST treats the row as a continuation.
-
-  ============ =====  ==========  ===============================
-  \            Debug  Production  Production with ``-Ounchecked``
-  ============ =====  ==========  ===============================
-  Assertion    Yes    No          No
-  ------------ -----  ----------  -------------------------------
-  Precondition Yes    Yes         No
-  ------------ -----  ----------  -------------------------------
-  Fatal Error  Yes    Yes         Yes
-  ============ =====  ==========  ===============================
--->
-
-<!--
-  TODO: In Xcode, can you set a breakpoint on assertion/precondition failure?
-  If so, mention that fact and give a link to a guide that shows you how.
-  In LLDB, 'breakpoint set -E swift' catches when errors are thrown,
-  but doesn't stop at assertions.
--->
-
-<!--
-This source file is part of the Swift.org open source project
-
-Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
-Licensed under Apache License v2.0 with Runtime Library Exception
-
-See https://swift.org/LICENSE.txt for license information
-See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
--->

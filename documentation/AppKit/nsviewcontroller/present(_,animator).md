@@ -19,7 +19,7 @@ func present(_ viewController: NSViewController, animator: any NSViewControllerP
 - (void) presentViewController:(NSViewController *) viewController animator:(id<NSViewControllerPresentationAnimator>) animator;
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this method unless you want to use a custom animator. To use one of the standard animators to present another view controller, instead call one of the dedicated presentation methods:
 

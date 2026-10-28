@@ -21,7 +21,7 @@ protocol NCWidgetSearchViewDelegate : NSObjectProtocol
 @protocol NCWidgetSearchViewDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The `NCWidgetSearchViewDelegate` protocol defines methods that enable user searches in the search view controller of a Today widget. The [`delegate`](./ncwidgetsearchviewcontroller/delegate.md) of an [`NCWidgetSearchViewController`](./ncwidgetsearchviewcontroller.md) must adopt the [`NCWidgetSearchViewDelegate`](./ncwidgetsearchviewdelegate.md) protocol.
 

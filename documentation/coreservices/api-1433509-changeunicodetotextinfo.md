@@ -15,11 +15,11 @@ Changes the mapping information contained in the specifiedUnicode converter obje
 OSStatus ChangeUnicodeToTextInfo(UnicodeToTextInfo ioUnicodeToTextInfo, ConstUnicodeMappingPtr iUnicodeMapping);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 The function replaces the mapping table information that currentlyexists in the specified Unicode converter object with the informationcontained in the new Unicode mapping structure you provide. 
 

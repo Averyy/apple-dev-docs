@@ -6,7 +6,7 @@
 
 A table of sample numbers.
 
-#### Overview
+## Overview
 
 The layout of a partial sync sample table is as follows.
 

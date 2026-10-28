@@ -20,7 +20,7 @@ func performTransactionInWiredMode(using credential: Credential, instanceAID: Da
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Discussion
+## Discussion
 
 After you call this method, the system shows an authorization screen to the person using the app. If they choose to authorize, the specified instance receives an authentication token. The instance receives this token through the broker interface on the Secure Element as described in the [Apple Business Register](https://register.apple.com/login) Secure Element documents.
 

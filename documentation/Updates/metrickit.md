@@ -5,19 +5,19 @@
 
 Learn about important changes to MetricKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [MetricKit](../MetricKit/MetricKit.md).
 
-#### June 2026
+## June 2026
 
-##### Metric manager
+### Metric manager
 
 - Adopt [`MetricManager`](../MetricKit/metricmanager.md) to receive metric and diagnostic reports through asynchronous sequences. `MetricManager` replaces [`MXMetricManager`](../MetricKit/mxmetricmanager.md) and its subscriber protocol. For an overview of the MetricKit reporting model, see [Monitoring app performance with MetricKit](../MetricKit/monitoring-app-performance-with-metrickit.md).
 - Receive daily aggregated performance data through [`MetricReport`](../MetricKit/metricreport.md), which conforms to `Codable` and `Sendable` for straightforward serialization and safe cross-actor use.
 - Receive event-based diagnostic data through [`DiagnosticReport`](../MetricKit/diagnosticreport.md). Handle each metric type using [`MetricResult`](../MetricKit/metricresult.md). For information on working with metric values and diagnostic data in MetricKit reports, see [Analyzing app performance with MetricKit](../MetricKit/analyzing-app-performance-with-metrickit.md).
 
-##### State-contextualized metrics
+### State-contextualized metrics
 
 - Use the [StateReporting](../StateReporting/StateReporting.md) framework with MetricKit to segment performance data by app-defined states in addition to intervals. For information on integrating the StateReporting framework with MetricKit, see [Getting started with StateReporting](../StateReporting/getting-started-with-statereporting.md).
 

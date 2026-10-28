@@ -21,7 +21,7 @@ init(label: String)
 
 - [003: Logger propagation in libraries](../api-003-acceptingloggers.md)
 
-#### Discussion
+## Discussion
 
 The `label` should identify the creator of the `Logger`. This can be an application, a sub-system, or a datatype.
 

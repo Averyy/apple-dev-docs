@@ -19,7 +19,7 @@ weak var parent: NSWindow? { get set }
 @property (weak, nullable) NSWindow * parentWindow;
 ```
 
-#### Discussion
+## Discussion
 
 This property should be set from a subclass when it is overridden by a subclass’s implementation. It should not be set otherwise.
 

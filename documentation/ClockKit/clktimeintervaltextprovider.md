@@ -25,7 +25,7 @@ class CLKTimeIntervalTextProvider
 
 - [Creating a timeline entry](./creating-a-timeline-entry.md)
 
-#### Overview
+## Overview
 
 This provider creates strings like “10:15–11:15AM” where the time range may span hours, days, or some larger time interval. The text provider takes into account the user’s region and locale settings.
 

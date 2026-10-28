@@ -19,7 +19,7 @@ object InvalidTransactionTypeNotSupportedError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 The [`Send Consumption Information V1`](./send-consumption-information-v1.md) endpoint returns this error if the `transactionId` doesn’t represent a supported in-app purchase. Be sure to provide the same `transactionId` that you receive to your [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) endpoint in a notification with a `CONSUMPTION_REQUEST` [`notificationType`](../AppStoreServerNotifications/notificationtype.md).
 

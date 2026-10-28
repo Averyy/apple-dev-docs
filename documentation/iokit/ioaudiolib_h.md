@@ -5,9 +5,9 @@
 
 C interface to IOAudio functions
 
-#### Overview
+## Overview
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/audio/IOAudioTypes.h>
 

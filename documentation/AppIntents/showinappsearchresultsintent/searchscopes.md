@@ -22,7 +22,7 @@ The scope of the search in your app’s content.
 static var searchScopes: Self.Criteria.SearchScopes { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to indicate the portions of your content the type searches. The type of this property depends on the search criteria you use. For example, if your app intent supports [`StringSearchCriteria`](../stringsearchcriteria.md), the value of this type is an array of [`StringSearchScope`](../stringsearchscope.md) values.
 

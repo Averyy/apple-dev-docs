@@ -21,7 +21,7 @@ The total allocated size of the file, in bytes.
 var totalFileAllocatedSize: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The property returns `nil` if the information isn’t available. The allocated size in bytes may include space that metadata uses. This can be less than the value that [`totalFileSize`](./totalfilesize.md) returns after if it’s a compressed resource.
 

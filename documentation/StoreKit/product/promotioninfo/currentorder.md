@@ -21,7 +21,7 @@ static var currentOrder: [Product.PromotionInfo] { get async throws }
 
 - [Supporting promoted Apple In-App Purchases in your app](../../supporting-promoted-in-app-purchases-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 This asynchronous array returns a list of [`Product.PromotionInfo`](../promotioninfo.md) objects in the custom order they appear in on the device.
 

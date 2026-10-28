@@ -19,7 +19,7 @@ func layoutIfNeeded()
 - (void) layoutIfNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 Before displaying a window that uses constraints-based layout the system invokes this method to ensure that the layout of all views is up to date. This method updates the layout if needed, first invoking [`updateConstraintsIfNeeded()`](./updateconstraintsifneeded%28%29.md) to ensure that all constraints are up to date. This method is called automatically by the system, but may be invoked manually if you need to examine the most up to date layout.
 

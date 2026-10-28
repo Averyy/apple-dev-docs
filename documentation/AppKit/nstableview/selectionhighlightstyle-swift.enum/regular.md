@@ -17,7 +17,7 @@ case regular
 NSTableViewSelectionHighlightStyleRegular
 ```
 
-#### Discussion
+## Discussion
 
 The regular highlight style of NSTableView. In OS X v10.7 a light blue (returned by sending `NSColor` a [`alternateSelectedControlColor`](../../nscolor/alternateselectedcontrolcolor.md) message) or light gray color (returned by sending NSColor a [`secondarySelectedControlColor`](../../nscolor/secondaryselectedcontrolcolor.md) message).
 

@@ -18,7 +18,7 @@ The fraction of the task that completed between 0 and 1 inclusive.
 var fractionCompleted: Double { get }
 ```
 
-#### Discussion
+## Discussion
 
 When using CareKit, the value is clamped to ensure it’s within the proper range.
 

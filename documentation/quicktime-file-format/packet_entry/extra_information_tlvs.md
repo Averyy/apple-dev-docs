@@ -6,7 +6,7 @@
 
 A list of extra informtion that extends the hint track format without changing the version.
 
-#### Overview
+## Overview
 
 The extra information TLVs listed in the following table are present if and only if the X bit is set in the flags field. This provides a way of extending the hint track format without changing the version, while allowing backward compatibility.
 

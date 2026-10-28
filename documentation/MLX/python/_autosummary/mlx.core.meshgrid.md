@@ -6,20 +6,23 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.me
 
 # mlx.core.meshgrid
 
-**meshgrid(**arrays: array*, *sparse: bool | None = False*, *indexing: str | None = 'xy'*, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)[[array](mlx.core.array.md#mlx.core.array), ...]**
-: Generate multidimensional coordinate grids from 1-D coordinate arrays
+```python
+meshgrid(*arrays: array, sparse: bool | None = False, indexing: str | None = 'xy', stream: StreamOrDevice = None) → tuple[array, ...]
+```
 
-Parameters:
+Generate multidimensional coordinate grids from 1-D coordinate arrays
 
-***arrays** ([array](mlx.core.array.md#mlx.core.array)) – Input arrays.
-**sparse** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If `True`, a sparse grid is returned in which each output
+**Parameters:**
+
+- **\*arrays** ([array](mlx.core.array.md#mlx.core.array)) – Input arrays.
+- **sparse** ([bool](https://docs.python.org/3/builtins/functions.html#bool), *optional*) – If `True`, a sparse grid is returned in which each output
 array has a single non-zero element. If `False`, a dense grid is returned.
 Defaults to `False`.
-**indexing** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Cartesian (‘xy’) or matrix (‘ij’) indexing of the output arrays.
+- **indexing** ([str](https://docs.python.org/3/builtins/stdtypes.html#str), *optional*) – Cartesian (‘xy’) or matrix (‘ij’) indexing of the output arrays.
 Defaults to `'xy'`.
 
-Returns:
-The output arrays.
+**Returns:**
+: The output arrays.
 
-Return type:
-[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([array](mlx.core.array.md#mlx.core.array))
+**Return type:**
+: [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([array](mlx.core.array.md#mlx.core.array))

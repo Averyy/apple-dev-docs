@@ -14,7 +14,7 @@
 kUSBInformationDeviceIsInternalBit = 2
 ```
 
-#### Discussion
+## Discussion
 
 The USB device is internal to the enclosure (all the hubs it attaches to are captive)
 

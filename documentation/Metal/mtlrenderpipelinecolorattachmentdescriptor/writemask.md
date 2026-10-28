@@ -24,7 +24,7 @@ var writeMask: MTLColorWriteMask { get set }
 @property (nonatomic) MTLColorWriteMask writeMask;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of `writeMask` is all ones, [`all`](../mtlcolorwritemask/all.md), which allows all color channels to be blended. The `MTLColorWriteMask` values `MTLColorWriteMaskRed`, `MTLColorWriteMaskGreen`, `MTLColorWriteMaskBlue`, and `MTLColorWriteMaskAlpha` limit blending to one color channel, and these values can be bitwise combined. `MTLColorWriteMaskNone` does not allow any color channels to be blended.
 

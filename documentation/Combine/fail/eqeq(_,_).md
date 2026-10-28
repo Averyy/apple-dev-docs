@@ -23,7 +23,7 @@ static func == (lhs: Fail<Output, Failure>, rhs: Fail<Output, Failure>) -> Bool
 
 Available when `Failure` conforms to `Equatable` and `Error`.
 
-#### Return Value
+## Return Value
 
 `true` if the publishers have equal `error` properties; otherwise `false`.
 

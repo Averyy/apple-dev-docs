@@ -11,11 +11,11 @@ Deletes a targeting keyword in an ad group.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 To delete targeting keywords, include the associated `campaignId` and `adgroupId` in the URI with the `keywordId`. This is a soft deletion.
 
-##### Payload example: Delete a targeting keyword
+### Payload example: Delete a targeting keyword
 
 **Request**:
 

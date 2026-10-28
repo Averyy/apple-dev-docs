@@ -24,13 +24,13 @@ A multi-producer single-consumer channel.
 struct MultiProducerSingleConsumerAsyncChannel<Element, Failure> where Failure : Error
 ```
 
-#### Overview
+## Overview
 
 The [`MultiProducerSingleConsumerAsyncChannel`](./multiproducersingleconsumerasyncchannel.md) provides a [`MultiProducerSingleConsumerAsyncChannel.Source`](./multiproducersingleconsumerasyncchannel/source.md) to send values to the channel. The channel supports different back pressure strategies to control the buffering and demand. The channel will buffer values until its backpressure strategy decides that the producer have to wait.
 
 This channel is also suitable for the single-producer single-consumer use-case
 
-#### Using a MultiProducerSingleConsumerAsyncChannel
+## Using a MultiProducerSingleConsumerAsyncChannel
 
 To use a [`MultiProducerSingleConsumerAsyncChannel`](./multiproducersingleconsumerasyncchannel.md) you have to create a new channel with its source first by calling the [`makeChannel(of:throwing:backpressureStrategy:)`](./multiproducersingleconsumerasyncchannel/makechannel%28of,throwing,backpressurestrategy%29.md) method. Afterwards, you can pass the source to the producer and the channel to the consumer.
 
@@ -45,7 +45,7 @@ let channel = channelAndSource.takeChannel()
 let source = consume channelAndSource.source
 ```
 
-##### Asynchronous producing
+### Asynchronous producing
 
 Values can be send to the source from asynchronous contexts using [`send(contentsOf:)`](./multiproducersingleconsumerasyncchannel/source/send%28contentsof%29-1h7t9.md) and [`send(_:)`](./multiproducersingleconsumerasyncchannel/source/send%28_%29-5rwh7.md). Backpressure results in calls to the `send` methods to be suspended. Once more elements should be produced the `send` methods will be resumed.
 
@@ -63,7 +63,7 @@ try await withThrowingTaskGroup(of: Void.self) { group in
 }
 ```
 
-##### Synchronous produceing
+### Synchronous produceing
 
 Values can also be send to the source from synchronous context. Backpressure is also exposed on the synchronous contexts; however, it is up to the caller to decide how to properly translate the backpressure to underlying producer e.g. by blocking the thread.
 
@@ -92,11 +92,11 @@ do {
 }
 ```
 
-##### Multiple producers
+### Multiple producers
 
 To support multiple producers the source offers a [`makeAdditionalSource()`](./multiproducersingleconsumerasyncchannel/source/makeadditionalsource%28%29.md) method to produce a new source.
 
-##### Terminating the production of values
+### Terminating the production of values
 
 The consumer can be terminated through multiple ways:
 
@@ -105,7 +105,7 @@ The consumer can be terminated through multiple ways:
 
 In both cases, if there are still elements buffered by the channel, then the consumer will receive all buffered elements. Afterwards it will be terminated.
 
-##### Observing termination of the consumer
+### Observing termination of the consumer
 
 When the consumer stops consumption by either deiniting the channel or the task calling [`next(isolation:)`](./multiproducersingleconsumerasyncchannel/next%28isolation%29.md) getting cancelled, the source will get notified about the termination if a termination callback has been set before by calling [`setOnTerminationCallback(_:)`](./multiproducersingleconsumerasyncchannel/source/setonterminationcallback%28_%29.md).
 

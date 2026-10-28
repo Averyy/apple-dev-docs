@@ -22,7 +22,7 @@ weak var delegate: (any NCWidgetListViewDelegate)? { get set }
 @property (weak, nullable) id<NCWidgetListViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 A list view controller’s delegate provides a custom view controller for each object in [`contents`](./contents.md). The delegate also performs editing-related functions, such as responding to interaction with an Add (+) button and reordering and removing rows.
 

@@ -15,7 +15,7 @@ Gets type of source that was used to load an accessory.
 extern ar_accessory_source_type_t ar_accessory_get_source_type(ar_accessory_t accessory);
 ```
 
-#### Return Value
+## Return Value
 
 The source type.
 

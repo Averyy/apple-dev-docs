@@ -32,7 +32,7 @@ convenience init(image: NSImage)
 + (instancetype) attachmentWithImage:(NSImage *) image;
 ```
 
-#### Discussion
+## Discussion
 
 Creates an attachment with a [`uniformTypeIdentifier`](./uniformtypeidentifier.md) of `"public.png"`. Equivalent to calling [`init(image:quality:)`](./init%28image,quality%29.md) with a `quality` value of [`XCTAttachment.ImageQuality.original`](./imagequality/original.md).
 

@@ -24,7 +24,7 @@ var middleButton: GCControllerButtonInput? { get }
 @property (nonatomic, readonly, nullable) GCControllerButtonInput * middleButton;
 ```
 
-#### Discussion
+## Discussion
 
 If the mouse doesn’t have a middle button, this property is `nil`.
 

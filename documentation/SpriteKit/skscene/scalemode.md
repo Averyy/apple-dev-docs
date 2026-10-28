@@ -29,7 +29,7 @@ var scaleMode: SKSceneScaleMode { get set }
 
 - [Scaling a Scene’s Content to Fit the View](../scaling-a-scene-s-content-to-fit-the-view.md)
 
-#### Discussion
+## Discussion
 
 It is possible for a scene’s size to differ from the size of the view it is presented in. The scale mode determines how the visible portion of the scene is mapped to the view. The possible values are listed in [`SKSceneScaleMode`](../skscenescalemode.md). The default value is [`SKSceneScaleMode.fill`](../skscenescalemode/fill.md).
 

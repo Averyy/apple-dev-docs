@@ -5,7 +5,7 @@
 
 Create and update version-specific, localized metadata for custom product pages.
 
-#### Overview
+## Overview
 
 Use `appCustomProductPageLocalizations` to manage app preview sets and app screenshot sets for different languages for your custom product page.
 

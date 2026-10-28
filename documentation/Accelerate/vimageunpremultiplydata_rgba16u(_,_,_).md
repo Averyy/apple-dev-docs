@@ -25,11 +25,11 @@ func vImageUnpremultiplyData_RGBA16U(_ src: UnsafePointer<vImage_Buffer>, _ dest
 vImage_Error vImageUnpremultiplyData_RGBA16U(const vImage_Buffer *src, const vImage_Buffer *dest, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function divides color channels by the alpha channel using the following code:
 

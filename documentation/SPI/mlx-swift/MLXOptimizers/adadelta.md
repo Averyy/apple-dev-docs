@@ -17,13 +17,13 @@ The AdaDelta optimizer with a learning rate [1].
 class AdaDelta
 ```
 
-#### Overview
+## Overview
 
 Our AdaDelta implementation follows the original paper. In detail,
 
 [1]: Zeiler, M.D., 2012. ADADELTA: an adaptive learning rate method. arXiv preprint arXiv:1212.5701.
 
-##### See Also
+### See Also
 
 - [MLXOptimizers](./MLXOptimizers.md)
 

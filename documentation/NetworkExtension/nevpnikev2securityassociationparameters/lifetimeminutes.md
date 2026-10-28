@@ -24,7 +24,7 @@ var lifetimeMinutes: Int32 { get set }
 @property int32_t lifetimeMinutes;
 ```
 
-#### Discussion
+## Discussion
 
 The default is 60 for IKE Security Associations, and 30 for Child Security Associations. Before the end of the lifetime is reached, IKEv2 will attempt to negotiate new keys for the Security Association in order to maintain the IKEv2 session.
 

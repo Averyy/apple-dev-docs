@@ -25,7 +25,7 @@ func CTFontCopyFontDescriptor(_ font: CTFont) -> CTFontDescriptor
 extern CTFontDescriptorRefCTFontCopyFontDescriptor(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 A normalized font descriptor for a font containing enough information to recreate this font at a later time.
 

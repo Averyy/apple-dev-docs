@@ -20,7 +20,7 @@ static var stopTrackedRaycasts: ARSession.RunOptions { get }
 ARSessionRunOptionStopTrackedRaycasts
 ```
 
-#### Discussion
+## Discussion
 
 By default, when you call the [`run(_:options:)`](../run%28_,options%29.md) method on a session that is running or has run before, the session keeps tracking any [`ARTrackedRaycast`](../../artrackedraycast.md) objects that you previously added by calling [`trackedRaycast(_:updateHandler:)`](../trackedraycast%28_,updatehandler%29.md).
 

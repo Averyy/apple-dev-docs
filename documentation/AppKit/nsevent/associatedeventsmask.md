@@ -19,7 +19,7 @@ var associatedEventsMask: NSEvent.EventTypeMask { get }
 @property (readonly) NSEventMask associatedEventsMask;
 ```
 
-#### Discussion
+## Discussion
 
 This property pertains to mouse events. It’s used to determine whether the input device issuing the event can simultaneously issue events of type [`NSEvent.EventType.pressure`](./eventtype/pressure.md). This can be useful if you need to determine whether to initiate or begin initiating a pressure-related action when a mouse event occurs.
 

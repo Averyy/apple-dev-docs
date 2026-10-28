@@ -23,7 +23,7 @@ struct RepresentationTypes
 enum QLThumbnailGenerationRequestRepresentationTypes : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Thumbnails come in one of three different types:
 

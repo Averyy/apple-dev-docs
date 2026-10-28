@@ -25,11 +25,11 @@ func CFNumberCompare(_ number: CFNumber!, _ otherNumber: CFNumber!, _ context: U
 extern CFComparisonResult CFNumberCompare(CFNumberRef number, CFNumberRef otherNumber, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFComparisonResult`](./cfcomparisonresult.md) constant that indicates whether `number` is equal to, less than, or greater than `otherNumber`.
 
-#### Discussion
+## Discussion
 
 When comparing two CFNumber objects using this function, one or both objects can represent a special-case number such as signed 0, signed infinity, or NaN.
 

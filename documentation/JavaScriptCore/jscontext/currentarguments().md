@@ -24,11 +24,11 @@ class func currentArguments() -> [Any]!
 + (NSArray *) currentArguments;
 ```
 
-#### Return Value
+## Return Value
 
 The current callback arguments, or `nil` if not within native code called from JavaScript.
 
-#### Discussion
+## Discussion
 
 Call this method within an Objective-C or Swift block or method invoked from within JavaScript to obtain an array of [`JSValue`](../jsvalue.md) objects representing the arguments to the JavaScript function responsible for that callback.
 

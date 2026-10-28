@@ -5,7 +5,7 @@
 
 Request access to the Registration API and register an ID to use the web service.
 
-#### Overview
+## Overview
 
 An e-commerce platform that’s enrolled in the Apple Developer program as an organization can apply to use the Apple Pay Web Merchant Registration API by completing the following steps:
 
@@ -15,7 +15,7 @@ An e-commerce platform that’s enrolled in the Apple Developer program as an or
 
 After you create your payment platform integrator ID, you can access a domain-verification file. You need to host a domain-verification file on a merchant’s domain before registering the merchant. For more information about domain verification, see [Preparing merchant domains for verification](./preparing-merchant-domains-for-verification.md).
 
-##### Create a payment platform integrator ID
+### Create a payment platform integrator ID
 
 To use the Apple Pay Web Merchant Registration API, you need an Apple Pay payment platform integrator ID. This unique ID identifies you as an entity that can register merchants who wish to accept Apple Pay payments. Create your payment platform integrator ID and register it in your Apple Developer account. Payment platform integrator IDs never expire.
 
@@ -29,7 +29,7 @@ To create your payment platform integrator ID, log in to your Apple Developer ac
 
 The identifier name you enter is your payment platform integrator ID. If you have multiple environments, such as production and sandbox, you may choose to create additional payment platform integrator IDs for other environments.
 
-##### Create payment processing and merchant identity certificates
+### Create payment processing and merchant identity certificates
 
 To complete your Apple Pay setup, create the two certificates associated with your payment platform integrator ID:
 

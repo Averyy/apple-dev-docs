@@ -21,7 +21,7 @@ Calculates the negative absolute value of each element in the supplied single-pr
 extern void vDSP_vnabs(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code calculates the negative absolute values of the elements of an array:
 

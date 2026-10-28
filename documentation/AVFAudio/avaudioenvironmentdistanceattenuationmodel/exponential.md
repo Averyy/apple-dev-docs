@@ -25,7 +25,7 @@ case exponential
 AVAudioEnvironmentDistanceAttenuationModelExponential
 ```
 
-#### Discussion
+## Discussion
 
 The framework calculates this value as `distanceGain = (distance / referenceDistance) ^ (-rolloffFactor)`.
 

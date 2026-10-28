@@ -15,7 +15,7 @@ Misspelled text that isn’t necessarily visibly marked as misspelled (`NSNumber
 extern NSAttributedStringKey const NSAccessibilityMisspelledTextAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 Beginning in macOS 10.9, VoiceOver no longer checks for this attribute; instead, VoiceOver uses [`NSAccessibilityMarkedMisspelledTextAttribute`](./nsaccessibilitymarkedmisspelledtextattribute.md).
 

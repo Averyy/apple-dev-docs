@@ -3,19 +3,19 @@
 **Framework**: IOKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 IOHIDQueue defines an object used to queue values from input parsed items (IOHIDElement) contained within a Human Interface Device (HID) object. This object is useful when you need to keep track of all values of an input element, rather than just the most recent one. IOHIDQueue is a CFType object and as such conforms to all the conventions expected such object.
 
 IOHIDQueue should be considered optional and is only useful for working with complex input elements. These elements include those whose length are greater than sizeof(CFIndex) or elements that are duplicate items. Whenever possible please defer to using IOHIDManagerRegisterInputValueCallback or IOHIDDeviceRegisterInputValueCallback.
 
-** Note:**Absolute element values (based on a fixed origin) will only be placed on a queue if there is a change in value.
+ **Note:**Absolute element values (based on a fixed origin) will only be placed on a queue if there is a change in value.
 
 This documentation assumes that you have a basic understanding of the material contained in [Introduction to Accessing Hardware From Applications](https://developer.apple.com/library/archive/documentation/DeviceDrivers/Conceptual/AccessingHardware/AH_Intro/AH_Intro.html#//apple_ref/doc/uid/TP40002714).
 
 All of the information described in this document is contained in the header file `IOHIDQueue.h` found at `/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDQueue.h`.
 
-##### Included Headers
+### Included Headers
 
 - <CoreFoundation/CoreFoundation.h>
 - <IOKit/hid/IOHIDBase.h>

@@ -27,7 +27,7 @@ func BNNSFilterCreateLayerBroadcastMatMul(_ layer_params: UnsafePointer<BNNSLaye
 BNNSFilterBNNSFilterCreateLayerBroadcastMatMul(const BNNSLayerParametersBroadcastMatMul *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use broadcast matrix to perform matrix multiplication on the last two indices of two tensors.
 

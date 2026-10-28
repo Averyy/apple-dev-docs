@@ -31,7 +31,7 @@ SKProductDiscountPaymentModeFreeTrial
 
 - [Implementing introductory offers in your app](../../implementing-introductory-offers-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 With a free trial payment mode, the price is 0, so users pay nothing during the discount period.
 

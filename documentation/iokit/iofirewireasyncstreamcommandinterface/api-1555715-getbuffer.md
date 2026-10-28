@@ -16,7 +16,7 @@ Set the command refCon value and callback handler, and submit the command to Fir
 void (*GetBuffer)(IOFireWireLibCommandRef self, UInt32 *outSize, void **outBuf);
 ```
 
-#### Discussion
+## Discussion
 
 Availability: (for interfaces obtained with ID)
 

@@ -15,7 +15,7 @@ Get or set the surface order.
 static const NSOpenGLContextParameter NSOpenGLCPSurfaceOrder;
 ```
 
-#### Discussion
+## Discussion
 
 If the surface order is set to 1 (the default), the order is above the window (default). If the value is –1, the order is below the window.
 

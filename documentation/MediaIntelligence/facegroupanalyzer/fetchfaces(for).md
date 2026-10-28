@@ -24,7 +24,7 @@ final func fetchFaces(for entityIDs: [FaceGroupAnalyzer.Entity.ID]) throws -> so
 
 - [Detecting and grouping faces in images](../detecting-and-grouping-faces-in-images.md)
 
-#### Return Value
+## Return Value
 
 An async sequence of `(entityID, faces)` pairs.
 

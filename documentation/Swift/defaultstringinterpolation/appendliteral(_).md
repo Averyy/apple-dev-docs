@@ -21,7 +21,7 @@ Appends a literal segment of a string interpolation.
 mutating func appendLiteral(_ literal: String)
 ```
 
-#### Discussion
+## Discussion
 
 You don’t need to call this method directly. It’s used by the compiler when interpreting string interpolations.
 

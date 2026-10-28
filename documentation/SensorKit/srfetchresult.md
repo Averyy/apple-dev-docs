@@ -21,7 +21,7 @@ class SRFetchResult<SampleType> where SampleType : AnyObject
 @interface SRFetchResult : NSObject
 ```
 
-#### Overview
+## Overview
 
 A sensor reader’s [`delegate`](./srsensorreader/delegate.md) receives instances of this class from the [`sensorReader(_:didCompleteFetch:)`](./srsensorreaderdelegate/sensorreader%28_,didcompletefetch%29.md) when a fetch request finishes successfully.
 

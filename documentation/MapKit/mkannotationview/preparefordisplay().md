@@ -24,7 +24,7 @@ func prepareForDisplay()
 - (void) prepareForDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to prepare the content of your annotation view.
 

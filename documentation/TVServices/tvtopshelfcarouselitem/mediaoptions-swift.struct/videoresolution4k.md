@@ -19,7 +19,7 @@ static var videoResolution4K: TVTopShelfCarouselItem.MediaOptions { get }
 TVTopShelfCarouselItemVideoResolution4K
 ```
 
-#### Discussion
+## Discussion
 
 Specify this constant, or the [`videoResolutionHD`](./videoresolutionhd.md) constant, but not both.
 

@@ -19,7 +19,7 @@ Allows providing custom behavior to handle navigation changes and to coordinate 
 protocol NavigationDeciding
 ```
 
-#### Overview
+## Overview
 
 For example, you might use these methods to restrict navigation from specific links within your content.
 

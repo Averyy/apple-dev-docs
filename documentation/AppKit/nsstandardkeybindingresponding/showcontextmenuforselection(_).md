@@ -17,7 +17,7 @@ optional func showContextMenuForSelection(_ sender: Any?)
 - (void) showContextMenuForSelection:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Present a context menu at the text cursor position, selection, or wherever is appropriate for your responder.
 

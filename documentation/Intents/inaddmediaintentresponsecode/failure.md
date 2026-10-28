@@ -24,7 +24,7 @@ case failure
 INAddMediaIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code for both transient and unrecoverable errors that would prevent your app from adding the media.
 

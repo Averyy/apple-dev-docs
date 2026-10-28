@@ -22,7 +22,7 @@ struct IOHardwareCursorInfo {
 };
 ```
 
-#### Overview
+## Overview
 
 This structure is used by IOFramebuffer to return the data of a hardware cursor by convertCursorImage() after conversion based on the IOHardwareCursorDescriptor passed to that routine.
 

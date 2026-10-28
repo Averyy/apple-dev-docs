@@ -5,13 +5,13 @@
 
 Train a machine learning model to assign multiple labels to an image.
 
-#### Overview
+## Overview
 
 A single-label image classifier takes an input image and assigns one label, which helps identify the most relevant subject in the image. However, there’s often additional information and context in an image that identifying the most relevant subject doesn’t consider. A multi-label image classifier takes an input image and assigns multiple labels. A multi-label classifier is better at describing an image where there are multiple subjects, or when the environment is relevant.
 
 Training a multi-label image classifier is similar to training a single-label image classifier. You collect and label images, build an estimator pipeline, train and evaluate the model, and export the model to use with [Vision](../Vision/Vision.md). For more information about single-label image classifiers, see [Creating an Image Classifier Model](../CreateML/creating-an-image-classifier-model.md).
 
-##### Prepare your training data
+### Prepare your training data
 
 First, collect images and assign labels. Put all images in a folder and create a JSON file in the same folder. For example if you have two images, then your folder contains three files: `image1.jpg`, `image2.jpg`, and `annotations.json`. The JSON file contains the labels for each image. The following example includes possible labels for two images: `image1.jpg` is an image of a potted aloe plant on a window sill and `image2.jpg` is an image of a potted cactus with a person standing next to it.
 
@@ -54,7 +54,7 @@ let annotatedFeatures = annotatedFiles.map {
 }
 ```
 
-##### Build a multi-label estimator pipeline
+### Build a multi-label estimator pipeline
 
 After preparing your training data, you can create your estimator pipeline. When using Create ML Components, you compose estimators and transformers into pipelines that you can train to produce models. As with a single-label image classifier, use an image reader and a feature extractor. But the last component is a [`FullyConnectedNetworkMultiLabelClassifier`](./fullyconnectednetworkmultilabelclassifier.md) instead of a [`FullyConnectedNetworkClassifier`](./fullyconnectednetworkclassifier.md).
 
@@ -68,7 +68,7 @@ let estimator = ImageReader()
     .appending(FullyConnectedNetworkMultiLabelClassifier<Float, String>(labels: labels))
 ```
 
-##### Train and evaluate the model
+### Train and evaluate the model
 
 When you validate as you train, you can stop training when the validation metrics stop improving. So set aside some of the images for validation. Then, call the [`fitted(to:validateOn:eventHandler:)`](./supervisedestimator/fitted%28to,validateon,eventhandler%29.md) method to train.
 
@@ -93,7 +93,7 @@ let metrics = try MultiLabelClassificationMetrics(
 print(metrics.meanAveragePrecision)
 ```
 
-##### Export the model to use with Vision
+### Export the model to use with Vision
 
 After you train the model, you can export it as a [Core ML](../CoreML/CoreML.md) model.
 

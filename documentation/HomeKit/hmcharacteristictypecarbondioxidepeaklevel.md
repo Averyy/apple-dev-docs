@@ -24,7 +24,7 @@ let HMCharacteristicTypeCarbonDioxidePeakLevel: String
 extern NSString * const HMCharacteristicTypeCarbonDioxidePeakLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a floating point number in units of parts per million.
 

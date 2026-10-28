@@ -27,7 +27,7 @@ var accessibilityHint: String? { get set }
 
 - [Supporting VoiceOver in your app](../supporting-voiceover-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 The hint is a brief, localized description of the result of performing an action on the element without identifying the element or the action. For example, the hint for a table row that contains an email message might be “Selects the message,” but not “Tap this row to select the message.”
 

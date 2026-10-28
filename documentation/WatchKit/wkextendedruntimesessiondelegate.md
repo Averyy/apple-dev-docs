@@ -23,7 +23,7 @@ protocol WKExtendedRuntimeSessionDelegate : NSObjectProtocol
 
 - [Using extended runtime sessions](./using-extended-runtime-sessions.md)
 
-#### Overview
+## Overview
 
 Implement these methods to track the changes to your session’s state.
 

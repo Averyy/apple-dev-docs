@@ -21,7 +21,7 @@ var actions: [CPAlertAction] { get }
 @property (nonatomic, strong, readonly) NSArray<CPAlertAction *> * actions;
 ```
 
-#### Discussion
+## Discussion
 
 The array must include at least one action.
 

@@ -30,7 +30,7 @@ class URLSessionTask
 - [Uploading data to a website](./uploading-data-to-a-website.md)
 - [Uploading streams of data](./uploading-streams-of-data.md)
 
-#### Overview
+## Overview
 
 The [`URLSessionTask`](./urlsessiontask.md) class is the base class for tasks in a URL session. Tasks are always part of a session; you create a task by calling one of the task creation methods on a [`URLSession`](./urlsession.md) instance. The method you call determines the type of task.
 

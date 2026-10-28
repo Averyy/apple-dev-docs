@@ -21,7 +21,7 @@ The probability of precipitation for the day part.
 var precipitationChance: Double
 ```
 
-#### Discussion
+## Discussion
 
 The value is from `0` (no chance of precipitation) to `1` (100% chance of precipitation).
 

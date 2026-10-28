@@ -24,7 +24,7 @@ var interPupillaryDistance: Float { get set }
 @property (nonatomic, assign) float interPupillaryDistance;
 ```
 
-#### Discussion
+## Discussion
 
 Each viewpoint is assumed to be horizontally offset from the camera’s position by half the interocular distance.
 

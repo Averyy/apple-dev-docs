@@ -20,7 +20,7 @@ var isAuthorizationRequiredForPlayback: Bool { get }
 @property (nonatomic, readonly, getter=isAuthorizationRequiredForPlayback) BOOL authorizationRequiredForPlayback;
 ```
 
-#### Discussion
+## Discussion
 
 This property reports whether authorization is required for the item’s content to be played. If it does not require authorization, then none of the other authorization-related  methods or properties apply (though they will return sensible values where possible).
 

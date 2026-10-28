@@ -19,7 +19,7 @@ case automatic
 NSBezelStyleAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 The system picks which style of button to display automatically based on context and content. This ensures the button displays correctly in toolbars, forms, and touch bar.
 

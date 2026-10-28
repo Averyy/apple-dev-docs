@@ -15,7 +15,7 @@ Deletes a source record when the target record is deleted.
 const String NONE;
 ```
 
-#### Discussion
+## Discussion
 
 See [`CKRecord.ReferenceAction`](../../CloudKit/ckrecord/referenceaction.md) in CloudKit Framework Reference.
 

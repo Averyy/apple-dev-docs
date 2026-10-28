@@ -21,7 +21,7 @@ The type of BCP 47 language identifiers.
 case bcp47
 ```
 
-#### Discussion
+## Discussion
 
 An example of this type is `th-TH-u-ca-gregory-nu-thai`.
 

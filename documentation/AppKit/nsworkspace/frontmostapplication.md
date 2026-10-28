@@ -19,11 +19,11 @@ var frontmostApplication: NSRunningApplication? { get }
 @property (strong, readonly, nullable) NSRunningApplication * frontmostApplication;
 ```
 
-#### Return Value
+## Return Value
 
 The running app instance for the app that receives key events.
 
-#### Discussion
+## Discussion
 
 This value is key-value observing compliant.
 

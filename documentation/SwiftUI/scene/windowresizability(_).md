@@ -20,11 +20,11 @@ nonisolated
 func windowResizability(_ resizability: WindowResizability) -> some Scene
 ```
 
-#### Return Value
+## Return Value
 
 A scene that uses the specified resizability strategy.
 
-#### Discussion
+## Discussion
 
 Use this scene modifier to apply a value of type [`WindowResizability`](../windowresizability.md) to a [`Scene`](../scene.md) that you define in your [`App`](../app.md) declaration. The value that you specify indicates the strategy the system uses to place minimum and maximum size restrictions on windows that it creates from that scene.
 

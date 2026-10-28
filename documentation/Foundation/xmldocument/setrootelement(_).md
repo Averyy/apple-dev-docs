@@ -20,7 +20,7 @@ func setRootElement(_ root: XMLElement)
 - (void) setRootElement:(NSXMLElement *) root;
 ```
 
-#### Discussion
+## Discussion
 
 As a side effect, this method removes all other children, including `NSXMLNode` objects representing comments and processing-instructions.
 

@@ -13,11 +13,11 @@
 errno_t ifnet_find_by_name(const char *ifname, ifnet_t *interface);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Find an interface by the name including the unit number. Caller must call ifnet_release on any non-null interface return value.
 

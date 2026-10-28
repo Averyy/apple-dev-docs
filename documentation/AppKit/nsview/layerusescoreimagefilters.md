@@ -19,7 +19,7 @@ var layerUsesCoreImageFilters: Bool { get set }
 @property BOOL layerUsesCoreImageFilters;
 ```
 
-#### Discussion
+## Discussion
 
 If your view uses a custom layer and you assigned Core Image to that layer directly, you must set this property to [`true`](../../Swift/true.md) to let AppKit know of that fact. In macOS 10.9 and later, AppKit prefers to render layer trees out-of-process but cannot do so if any layers have Core Image filters attached to them. Specifying [`true`](../../Swift/true.md) for property lets AppKit know that it must move rendering of the layer hierarchy back into your app’s process. If the value of this property is [`false`](../../Swift/false.md), adding a filter to the view’s layer triggers an exception.
 

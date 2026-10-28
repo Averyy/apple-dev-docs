@@ -19,7 +19,7 @@ The type of object that’s detected.
 @property (readonly) CNDetectionType detectionType;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of a detection type are a face, torso, cat, or dog.
 

@@ -21,7 +21,7 @@ Storage for values or objects related to this notification.
 var userInfo: [AnyHashable : Any]?
 ```
 
-#### Discussion
+## Discussion
 
 The user information dictionary stores any additional objects that objects receiving the notification might use.
 

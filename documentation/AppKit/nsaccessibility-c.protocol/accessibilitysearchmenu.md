@@ -15,7 +15,7 @@ The search menu for the search field.
 @property (strong, nullable) id accessibilitySearchMenu;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a search field.
 

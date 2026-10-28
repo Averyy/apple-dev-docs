@@ -26,7 +26,7 @@ func setOpacity(_ opacity: Float, at time: CMTime)
 - (void) setOpacity:(float) opacity atTime:(CMTime) time;
 ```
 
-#### Discussion
+## Discussion
 
 Sets a fixed opacity to apply from the specified time until the next time at which an opacity is set; this is the same as setting a flat ramp for that time range. Before the first time for which an opacity is set, the opacity is held constant at `1.0`; after the last specified time, the opacity is held constant at the last value.
 

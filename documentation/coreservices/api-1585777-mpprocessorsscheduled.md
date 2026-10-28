@@ -15,11 +15,11 @@ Returns the number of active processors available on the host computer.
 ItemCount MPProcessorsScheduled(void);
 ```
 
-#### Return Value
+## Return Value
 
 The number of active processors available on the host computer. 
 
-#### Discussion
+## Discussion
 
 The number of active processors is defined as the number of processors scheduled to run tasks. This number varies while the system is running. Advanced power management facilities may stop or start scheduling processors in the system to control power consumption or to maintain a proper operating temperature.
 

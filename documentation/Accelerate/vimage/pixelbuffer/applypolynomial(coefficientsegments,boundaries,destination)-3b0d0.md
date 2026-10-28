@@ -23,7 +23,7 @@ func applyPolynomial(coefficientSegments: [[Float]], boundaries: [Float], destin
 
 Available when `Format` is `vImage.PlanarF`.
 
-#### Discussion
+## Discussion
 
 The following code shows an example of applying three polynomials to a [`vImage.PlanarF`](../planarf.md) buffer:
 

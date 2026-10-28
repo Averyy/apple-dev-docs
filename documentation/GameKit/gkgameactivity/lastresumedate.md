@@ -24,7 +24,7 @@ var lastResumeDate: Date? { get }
 @property (nonatomic, strong, readonly, nullable) NSDate * lastResumeDate;
 ```
 
-#### Discussion
+## Discussion
 
 - If the activity was first started, this will be the same as the start date.
 - If the activity was paused and resumed, this will be the date when the activity was resumed.

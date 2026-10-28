@@ -16,11 +16,11 @@ Parses the specified array of elements.
 virtual bool parseElements(OSArray *elements);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if parsing was successful, or `false` if an error occurred.
 
-#### Discussion
+## Discussion
 
 This method searches the elements array for [`IOHIDElement`](../iohidelement.md) objects relevant to keyboard, digitizer, pointer, scrolling, and LED events. It stores a reference to each relevant element it finds, and uses those objects later to obtain relevant information for events.
 

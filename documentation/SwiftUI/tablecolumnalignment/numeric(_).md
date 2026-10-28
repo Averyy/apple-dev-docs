@@ -19,7 +19,7 @@ Column alignment appropriate for numeric content.
 static func numeric(_ numberingSystem: Locale.NumberingSystem) -> TableColumnAlignment
 ```
 
-#### Discussion
+## Discussion
 
 Use this alignment when a table column is primarily displaying numeric content, so that the values are easy to visually scan and compare.
 

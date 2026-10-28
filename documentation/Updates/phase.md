@@ -5,21 +5,21 @@
 
 Learn about important changes to PHASE.
 
-#### Overview
+## Overview
 
 Browse notable changes in [PHASE](../PHASE/PHASE.md).
 
-#### June 2024
+## June 2024
 
-##### AirPods head tracking
+### AirPods head tracking
 
 - Adjust the [`PHASEListener`](../PHASE/phaselistener.md) orientation to match someone’s head pose provided via compatible AirPods by setting the new [`automaticHeadTrackingFlags`](../PHASE/phaselistener/automaticheadtrackingflags.md) property to [`orientation`](../PHASE/phaseautomaticheadtrackingflags/orientation.md). To observe this property, the system requires your app to have the [`com.apple.developer.coremotion.head-pose`](../BundleResources/entitlements/com.apple.developer.coremotion.head-pose.md) entitlement.
 
-##### Personalized spatial audio profile
+### Personalized spatial audio profile
 
 - Tailor [`PHASESource`](../PHASE/phasesource.md) output according to a person’s personalized spatial audio profile that they configure in Settings by adding the [`com.apple.developer.spatial-audio.profile-access`](../BundleResources/entitlements/com.apple.developer.spatial-audio.profile-access.md) entitlement to your app.
 
-##### Spatial audio toggle in Control Center
+### Spatial audio toggle in Control Center
 
 - Instruct [PHASE](../PHASE/PHASE.md) to ignore the new system spatial audio toggle in Control Center by adding the [`AVGameBypassSystemSpatialAudio`](../BundleResources/information-property-list/avgamebypasssystemspatialaudio.md) key to your app’s `Info.plist`.
 

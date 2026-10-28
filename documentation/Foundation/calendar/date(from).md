@@ -21,7 +21,7 @@ Returns a date created from the specified components.
 func date(from components: DateComponents) -> Date?
 ```
 
-#### Return Value
+## Return Value
 
 A new `Date`, or nil if a date could not be found which matches the components.
 

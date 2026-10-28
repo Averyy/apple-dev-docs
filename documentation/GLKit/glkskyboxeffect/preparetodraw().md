@@ -24,7 +24,7 @@ func prepareToDraw()
 - (void) prepareToDraw;
 ```
 
-#### Discussion
+## Discussion
 
 When the skybox shader is bound, the following state variables are altered:
 

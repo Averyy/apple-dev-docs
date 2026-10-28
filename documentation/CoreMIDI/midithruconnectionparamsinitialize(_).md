@@ -23,7 +23,7 @@ func MIDIThruConnectionParamsInitialize(_ inConnectionParams: UnsafeMutablePoint
 extern void MIDIThruConnectionParamsInitialize(MIDIThruConnectionParams *inConnectionParams);
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience function that fills the connection structure with default values. Set the source and destination to create a simple, unmodified thru connection.
 

@@ -19,7 +19,7 @@ optional func slideshowDidStop()
 - (void) slideshowDidStop;
 ```
 
-#### Discussion
+## Discussion
 
 TImage Kit invokes this method when the slideshow stops. Implement this method to perform custom tasks at that time.
 

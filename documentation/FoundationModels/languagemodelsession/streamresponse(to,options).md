@@ -31,11 +31,11 @@ final func streamResponse(to prompt: String, options: GenerationOptions = Genera
 - [Composing dynamic sessions with instructions and profiles](../composing-dynamic-sessions-with-instructions-and-profiles.md)
 - [Running a Core AI model in a Foundation Models session](../running-a-core-ai-model-in-a-foundation-models-session.md)
 
-#### Return Value
+## Return Value
 
 A response stream that produces aggregated tokens.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: If running in the background, use the non-streaming [`respond(to:options:)`](./respond%28to,options%29-6a2gb.md) method to reduce the likelihood of encountering [`LanguageModelError.rateLimited(_:)`](../languagemodelerror/ratelimited%28_%29.md) errors.
 

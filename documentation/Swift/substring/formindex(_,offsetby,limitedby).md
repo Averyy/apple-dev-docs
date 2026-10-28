@@ -21,11 +21,11 @@ Offsets the given index by the specified distance, or so that it equals the give
 func formIndex(_ i: inout Self.Index, offsetBy distance: Int, limitedBy limit: Self.Index) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `i` has been offset by exactly `distance` steps without going beyond `limit`; otherwise, `false`. When the return value is `false`, the value of `i` is equal to `limit`.
 
-#### Discussion
+## Discussion
 
 The value passed as `distance` must not offset `i` beyond the bounds of the collection, unless the index passed as `limit` prevents offsetting beyond those bounds.
 

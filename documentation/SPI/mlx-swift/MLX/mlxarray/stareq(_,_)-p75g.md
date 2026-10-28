@@ -17,7 +17,7 @@ Element-wise multiplication.
 static func *= (lhs: inout MLXArray, rhs: MLXArray)
 ```
 
-#### Discussion
+## Discussion
 
 Multiply two arrays with [Numpy Style Broadcasting](../broadcasting.md) and store the result in the left-hand side array.
 
@@ -30,7 +30,7 @@ let b = MLXArray([4, 5, 6])
 a *= b
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`multiply(_:_:stream:)`](../multiply%28_,_,stream%29.md)

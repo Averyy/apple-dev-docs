@@ -26,11 +26,11 @@ class func contentURL(forProductID productID: String) -> URL?
 
 - [Unlocking purchased content](../unlocking-purchased-content.md)
 
-#### Return Value
+## Return Value
 
 The local location for the previously downloaded flie.
 
-#### Discussion
+## Discussion
 
 Use this method to locate the content on subsequent launches of your app.
 

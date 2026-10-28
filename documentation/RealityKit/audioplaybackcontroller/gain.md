@@ -21,7 +21,7 @@ The individual gain in decibels of the audio playback controller output.
 @preconcurrency var gain: AudioPlaybackController.Decibel { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The gain must be zero or negative, where zero is nominal loudness and negative infinity is silent. If the gain is positive, it will be reset to zero.
 

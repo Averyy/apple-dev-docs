@@ -20,11 +20,11 @@ func ODRecordDelete(_ record: ODRecordRef!, _ error: UnsafeMutablePointer<Unmana
 extern bool ODRecordDelete(ODRecordRef record, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the record is successfully deleted; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 After deleting the record, you should release it with the `CFRelease` function.
 

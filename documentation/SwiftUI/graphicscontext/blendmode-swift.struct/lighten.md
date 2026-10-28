@@ -21,7 +21,7 @@ A mode that creates composite image samples by choosing the lighter samples from
 static var lighten: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 When you draw in this mode, source image samples that are lighter than the background replace the background. Otherwise, the background image samples remain unchanged.
 

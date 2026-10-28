@@ -25,7 +25,7 @@ func save(_ record: CKRecord, completionHandler: @escaping @Sendable (CKRecord?,
 - (void) saveRecord:(CKRecord *) record completionHandler:(void (^)(CKRecord *record, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameters:
 

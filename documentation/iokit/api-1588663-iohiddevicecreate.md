@@ -16,11 +16,11 @@ Creates an element from an io_service_t.
 IOHIDDeviceRef IOHIDDeviceCreate(CFAllocatorRef allocator, io_service_t service);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new IOHIDDeviceRef.
 
-#### Discussion
+## Discussion
 
 The io_service_t passed in this method must reference an object in the kernel of type IOHIDDevice.
 

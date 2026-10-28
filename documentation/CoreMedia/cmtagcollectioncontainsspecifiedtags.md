@@ -21,11 +21,11 @@ Determines if a tag collection contains a subset of tags.
 extern Boolean CMTagCollectionContainsSpecifiedTags(CMTagCollectionRef tagCollection, const CMTag *containedTags, CMItemCount containedTagCount);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the tag collection contains all tags from the `containedTags` array.
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  Using a value of `containedTagCount` greater than the number of elements in the array starting from `containedTags` causes undefined behavior.
 

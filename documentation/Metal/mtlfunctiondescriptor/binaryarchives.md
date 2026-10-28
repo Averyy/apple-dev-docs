@@ -28,7 +28,7 @@ var binaryArchives: [any MTLBinaryArchive]? { get set }
 
 - [Compiling binary archives from a custom configuration script](../compiling-binary-archives-from-a-custom-configuration-script.md)
 
-#### Discussion
+## Discussion
 
 If you specify an archive that includes a fully compiled version of this function, Metal uses the compiled version rather than creating a new one.
 

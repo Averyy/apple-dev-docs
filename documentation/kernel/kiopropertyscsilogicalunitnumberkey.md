@@ -13,7 +13,7 @@
 #define kIOPropertySCSILogicalUnitNumberKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is the SCSI Logical Unit Number for the device server controlled by the driver.
 

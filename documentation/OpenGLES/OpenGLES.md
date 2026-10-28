@@ -13,7 +13,7 @@ Create 3D and 2D graphics effects with this compact, efficient subset of OpenGL.
 - tvOS 9.0+ - Deprecated in 12.0
 - visionOS 1.0+ - Deprecated in 1.0
 
-#### Overview
+## Overview
 
 OpenGL ES provides a C-based interface for hardware-accelerated 2D and 3D graphics rendering. The OpenGL ES framework (`OpenGLES.framework`) in iOS provides implementations of versions 1.1, 2.0, and 3.0 of the OpenGL ES specification.
 

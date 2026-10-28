@@ -29,7 +29,7 @@ func handle(intent: INSetSeatSettingsInCarIntent) async -> INSetSeatSettingsInCa
 - (void) handleSetSeatSettingsInCar:(INSetSeatSettingsInCarIntent *) intent completion:(void (^)(INSetSeatSettingsInCarIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should communicate the seat setting changes to the vehicle. When done, execute the provided block with a response object indicating whether or not the operation was successful.
 

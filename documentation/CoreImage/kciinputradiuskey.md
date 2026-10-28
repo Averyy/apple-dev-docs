@@ -24,7 +24,7 @@ let kCIInputRadiusKey: String
 extern NSString * const kCIInputRadiusKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for a scalar value ([`NSNumber`](../Foundation/nsnumber.md)) that specifies the distance from the center of an effect.
 

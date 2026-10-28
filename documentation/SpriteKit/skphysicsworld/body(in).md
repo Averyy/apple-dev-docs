@@ -29,7 +29,7 @@ func body(in rect: CGRect) -> SKPhysicsBody?
 
 - [Searching the World for Physics Bodies](../searching-the-world-for-physics-bodies.md)
 
-#### Return Value
+## Return Value
 
 The first physics body discovered that intersects the rectangle. If no body intersects the rectangle, this method returns `nil`.
 

@@ -24,11 +24,11 @@ class func coreMLModel() -> any CIFilter & CICoreMLModel
 + (CIFilter<CICoreMLModel> *) coreMLModelFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the Core ML model filter to an image. The effect filters the image using a trained Core ML model to produce the result. Specifying the head index allows you to produce a result from various components of a multiheaded coreML model.
 

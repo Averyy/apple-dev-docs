@@ -25,7 +25,7 @@ func CTFontCreateCopyWithSymbolicTraits(_ font: CTFont, _ size: CGFloat, _ matri
 extern CTFontRefCTFontCreateCopyWithSymbolicTraits(CTFontRef font, CGFloat size, const CGAffineTransform *matrix, CTFontSymbolicTraits symTraitValue, CTFontSymbolicTraits symTraitMask);
 ```
 
-#### Return Value
+## Return Value
 
 A new font reference in the same family with the given symbolic traits. or `NULL` if none is found in the system.
 

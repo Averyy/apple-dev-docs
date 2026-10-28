@@ -18,7 +18,7 @@ The name of the product, as defined in the package manifest.
 var name: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This name is unique among the products of the package in which it is defined.
 

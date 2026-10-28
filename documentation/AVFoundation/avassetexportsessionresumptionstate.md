@@ -20,7 +20,7 @@ The current resumption state of the export session.
 @interface AVAssetExportSessionResumptionState : NSObject
 ```
 
-#### Overview
+## Overview
 
 Configure a resumable export session with [`configureForResumableExportWithCompletionHandler:`](./avassetexportsession/configureforresumableexportwithcompletionhandler_.md).
 

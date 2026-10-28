@@ -26,11 +26,11 @@ func createUDPSession(to remoteEndpoint: NWEndpoint, from localEndpoint: NWHostE
 - (NWUDPSession *) createUDPSessionToEndpoint:(NWEndpoint *) remoteEndpoint fromEndpoint:(NWHostEndpoint *) localEndpoint;
 ```
 
-#### Return Value
+## Return Value
 
 A [`NWUDPSession`](../nwudpsession.md) object. The remote endpoint is in the process of being resolved. You can observe the session’s `state` property using KVO to determine when the session can be used to send and receive UDP datagrams.
 
-#### Discussion
+## Discussion
 
 This method provides a convenient way to create UDP connections from a Network Extension Provider. It is preferred over using the sockets API. For instance, the Tunnel Provider can use this method to create a UDP connection with the tunnel server that can be used to tunnel network data.
 

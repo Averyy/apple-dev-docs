@@ -15,11 +15,11 @@ Initialize and validate file creation parameters with respect to the current con
 int vnode_authattr_new(vnode_t dvp, struct vnode_attr *vap, int noauth, vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 KAUTH_RESULT_ALLOW for success, an error to indicate invalid or disallowed attributes.
 
-#### Discussion
+## Discussion
 
 vnode_authattr_new() will fill in unitialized values in the vnode_attr struct with defaults, and will validate the structure with respect to the current context for file creation.
 

@@ -24,7 +24,7 @@ var transform: GLKEffectPropertyTransform { get set }
 @property (nonatomic, retain) GLKEffectPropertyTransform * transform;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is the identity matrix.
 

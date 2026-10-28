@@ -23,7 +23,7 @@ class UICalendarSelection
 @interface UICalendarSelection : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t use this object directly in your calendar view to track date selection. Use the subclass [`UICalendarSelectionSingleDate`](./uicalendarselectionsingledate.md) to track a single date selection, or [`UICalendarSelectionMultiDate`](./uicalendarselectionmultidate.md) to track multiple date selections.
 

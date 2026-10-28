@@ -25,7 +25,7 @@ func SCNMatrix4Invert(_ m: SCNMatrix4) -> SCNMatrix4
 extern SCNMatrix4 SCNMatrix4Invert(SCNMatrix4 m);
 ```
 
-#### Return Value
+## Return Value
 
 The inverse matrix of the specified matrix, or the original matrix if it is not invertible.
 

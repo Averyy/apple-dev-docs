@@ -25,11 +25,11 @@ func CMTimeMakeWithSeconds(_ seconds: Float64, preferredTimescale: Int32) -> CMT
 extern CMTime CMTimeMakeWithSeconds(Float64 seconds, int32_t preferredTimescale);
 ```
 
-#### Return Value
+## Return Value
 
 A time structure.
 
-#### Discussion
+## Discussion
 
 Specify a positive preferred timescale value, or the resulting time is [`invalid`](./cmtime/invalid.md).
 

@@ -22,7 +22,7 @@ var enabledSemanticSegmentationMatteTypes: [AVSemanticSegmentationMatte.MatteTyp
 @property (nonatomic, copy) NSArray<NSString *> * enabledSemanticSegmentationMatteTypes;
 ```
 
-#### Discussion
+## Discussion
 
 You may set this property to the array of matte types you’d like delivered with [`AVCapturePhoto`](../avcapturephoto.md). The array may only contain values present in [`availableSemanticSegmentationMatteTypes`](../avcapturephotooutput/availablesemanticsegmentationmattetypes.md).
 

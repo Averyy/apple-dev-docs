@@ -23,7 +23,7 @@ optional func isPrivate(for context: WKWebExtensionContext) -> Bool
 - (BOOL) isPrivateForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `NO` if not implemented. This value is cached and will not change for the duration of the window or its contained tabs.
 

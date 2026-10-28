@@ -22,7 +22,7 @@ var isEnabled: Bool { get set }
 @property (getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 If the picker is currently displayed as a popover, and you set the value of this property to [`false`](../../Swift/false.md), the picker is dismissed.
 

@@ -21,7 +21,7 @@ A sign display strategy to always show the sign, with a configurable behavior fo
 static func always(showZero: Bool = true) -> CurrencyFormatStyleConfiguration.SignDisplayStrategy
 ```
 
-#### Return Value
+## Return Value
 
 A sign display strategy that always displays the sign, and uses the specified handling of zero values.
 

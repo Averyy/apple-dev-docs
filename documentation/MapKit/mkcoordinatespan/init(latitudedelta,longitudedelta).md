@@ -21,7 +21,7 @@ Creates a new [`MKCoordinateSpan`](../mkcoordinatespan.md) from the specified va
 init(latitudeDelta: CLLocationDegrees, longitudeDelta: CLLocationDegrees)
 ```
 
-#### Return Value
+## Return Value
 
 A span with the specified delta values.
 

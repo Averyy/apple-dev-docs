@@ -23,7 +23,7 @@ func dismissTemplate(animated: Bool)
 - (void) dismissTemplateAnimated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method when there’s no modal template displayed has no effect.
 

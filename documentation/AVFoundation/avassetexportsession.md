@@ -28,7 +28,7 @@ class AVAssetExportSession
 
 - [Exporting video to alternative formats](./exporting-video-to-alternative-formats.md)
 
-#### Overview
+## Overview
 
 You configure this object to export an instance of [`AVAsset`](./avasset.md) by setting an export preset, an output file type, and an output URL.
 

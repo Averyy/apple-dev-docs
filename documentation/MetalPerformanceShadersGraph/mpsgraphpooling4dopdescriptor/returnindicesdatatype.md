@@ -24,7 +24,7 @@ var returnIndicesDataType: MPSDataType { get set }
 @property (nonatomic, readwrite) MPSDataType returnIndicesDataType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this in conjunction with [`maxPooling4DReturnIndices(_:descriptor:name:)`](../mpsgraph/maxpooling4dreturnindices%28_,descriptor,name%29.md) API. Currently MPSGraph supports the following datatypes: `MPSDataTypeInt32`. Default value: `MPSDataTypeInt32`.
 

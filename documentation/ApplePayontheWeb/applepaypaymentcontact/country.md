@@ -16,7 +16,7 @@ The name of the country or region for the contact.
 DOMString country;
 ```
 
-#### Discussion
+## Discussion
 
 This is the colloquial name of the country or region, for example, *United States*. The [`countryCode`](./countrycode.md) property contains the code.
 

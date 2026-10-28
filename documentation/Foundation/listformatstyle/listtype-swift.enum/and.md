@@ -21,7 +21,7 @@ Specifies an *and* list type.
 case and
 ```
 
-#### Discussion
+## Discussion
 
 This width creates a list like `One, Two, and Three` in U.S. English.
 

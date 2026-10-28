@@ -21,7 +21,7 @@ Returns the underlying system handle associated with the specified dispatch sour
 extern uintptr_t dispatch_source_get_handle(dispatch_source_t source);
 ```
 
-##### Return Value
+### Return Value
 
 The return value should be interpreted according to the type of the dispatch source, and can be one of the following:
 
@@ -33,7 +33,7 @@ The return value should be interpreted according to the type of the dispatch sou
 - [`DISPATCH_SOURCE_TYPE_VNODE`](./dispatch_source_type_vnode.md): file descriptor (`int`)
 - `Dispatch Source Memory Pressure Event Flags`: file descriptor (`int`)
 
-#### Discussion
+## Discussion
 
 The handle returned is a reference to the underlying system object being monitored by the dispatch source.
 

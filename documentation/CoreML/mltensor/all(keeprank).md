@@ -21,7 +21,7 @@ Computes logical AND on elements across all axes of a tensor where the scalar ty
 func all(keepRank: Bool = false) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The reduced Boolean tensor.
 

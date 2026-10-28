@@ -25,7 +25,7 @@ static func disabled(if condition: @autoclosure @escaping @Sendable () throws ->
 
 Available when `Self` is `ConditionTrait`.
 
-#### Return Value
+## Return Value
 
 An instance of [`ConditionTrait`](../conditiontrait.md) that evaluates the closure you provide.
 

@@ -19,13 +19,13 @@ string BrandsReportingCreative.CreativeType
 
 - `LOCAL_ADS_SEARCH_CREATIVE`: An Ads on Apple Maps creative.
 
-#### Discussion
+## Discussion
 
 This identifies the creative format captured in the report row, which for Brands campaigns always describes the same Ads on Apple Maps unit type.
 
 The `creativeType` field shares its enum with the App Store reporting equivalent, but Brands (Apple Maps) creative reports only ever return `LOCAL_ADS_SEARCH_CREATIVE`.
 
-##### Example
+### Example
 
 ```json
 {

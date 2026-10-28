@@ -27,7 +27,7 @@ func CVBufferGetAttachments(_ buffer: CVBuffer, _ attachmentMode: CVAttachmentMo
 extern CFDictionaryRefCVBufferGetAttachments(CVBufferRef buffer, CVAttachmentMode attachmentMode);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Foundation dictionary with all attachments identified by keys, or [`nil`](../ObjectiveC/nil-227m0.md) if the attachment mode is invalid. The dictionary is empty if the buffer has no attachments.
 

@@ -17,7 +17,7 @@ A component that adds a cloth-compatible collider to an entity.
 struct ClothColliderComponent
 ```
 
-#### Overview
+## Overview
 
 A cloth collider belongs to the simulation root defined by its closest ancestor entity with a [`ClothSimulationComponent`](./clothsimulationcomponent.md), if any.
 

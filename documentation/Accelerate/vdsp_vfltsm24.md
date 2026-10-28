@@ -21,7 +21,7 @@ Converts and scales a vector of signed 24-bit integers to single-precision float
 extern void vDSP_vfltsm24(const vDSP_int24 *__A, vDSP_Stride __IA, const float *__B, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The input and output values must point to different, non-overlapping regions of memory; it doesn’t work in-place.
 

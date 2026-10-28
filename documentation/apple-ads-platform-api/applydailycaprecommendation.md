@@ -15,11 +15,11 @@ Request object for applying or dismissing a daily budget recommendation.
 object ApplyDailyCapRecommendation
 ```
 
-#### Discussion
+## Discussion
 
 The `ApplyDailyCapRecommendation` object is the request body for applying or dismissing a daily budget recommendation.
 
-##### Example
+### Example
 
 ```json
 {

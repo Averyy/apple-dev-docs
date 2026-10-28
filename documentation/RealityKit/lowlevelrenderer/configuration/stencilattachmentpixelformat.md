@@ -18,7 +18,7 @@ The pixel format of the stencil attachment in the render pass the renderer encod
 var stencilAttachmentPixelFormat: MTLPixelFormat { get }
 ```
 
-#### Discussion
+## Discussion
 
 Relevant when the render pass uses a separate stencil attachment rather than a packed depth-stencil format. Use this format when compiling your own `MTLRenderPipelineState` objects for draw calls issued inside the `render(using:_:)` callback.
 

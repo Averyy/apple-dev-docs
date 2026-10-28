@@ -22,7 +22,7 @@ object TextStyle
 - [Applying Apple News Format Fonts](../AppleNews/applying-apple-news-format-fonts.md)
 - [Supporting Dark Mode for Your Article](../AppleNews/supporting-dark-mode-for-your-article.md)
 
-#### Discussion
+## Discussion
 
 A `TextStyle` object defines a style that you can apply to ranges of text. Include a property, with a name that you define and a `TextStyle` object for the value, in the [`ArticleDocument.textStyles`](./articledocument/textstyles-data.dictionary.md) object. Then,  you can use that property’s name string together with HTML, Markdown, or [`InlineTextStyle`](./inlinetextstyle.md) to apply the style to a range of text.
 
@@ -30,7 +30,7 @@ If you’re using Markdown syntax to style your text, see the [Inline Text Style
 
 You can use this object in [`ArticleDocument.textStyles`](./articledocument/textstyles-data.dictionary.md).
 
-##### Example
+### Example
 
 ```json
 {

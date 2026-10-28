@@ -22,7 +22,7 @@ func GLKVector4Project(_ vectorToProject: GLKVector4, _ projectionVector: GLKVec
 static GLKVector4 GLKVector4Project(GLKVector4 vectorToProject, GLKVector4 projectionVector);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 

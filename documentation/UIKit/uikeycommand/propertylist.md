@@ -23,7 +23,7 @@ var propertyList: Any? { get }
 @property (nonatomic, readonly, nullable) id propertyList;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`propertyList`](./propertylist.md) to associate a small amount of data to the command.
 

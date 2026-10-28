@@ -20,7 +20,7 @@ Adds an AVAssetTrackPlan to this AVAssetWritingPlanner, with a block to be calle
 - (void) planTrack:(AVAssetTrackPlan *) trackPlan withSegmentsGeneratedBy:(void (^)(AVPlannedSegmentWritingRequest *segmentWriteRequest)) writingSegmentCallbackBlock;
 ```
 
-#### Discussion
+## Discussion
 
 This method throws NSInternalInconsistencyException if a trackPlan with the same assemblyTrackID already exists in the planner, or if called after executePlanWithCompletionHandler: has been invoked.
 

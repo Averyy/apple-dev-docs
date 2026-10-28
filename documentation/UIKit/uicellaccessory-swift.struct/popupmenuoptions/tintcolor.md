@@ -18,7 +18,7 @@ The tint color to apply to the accessory.
 var tintColor: UIColor?
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`, which means that the accessory uses the system default tint color.
 

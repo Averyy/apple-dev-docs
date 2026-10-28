@@ -12,7 +12,7 @@ bool isModuleLoaded(
  OSDictionary *driver ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the associated kernel module has been loaded into the kernel for a particular driver personality on which it depends.
 

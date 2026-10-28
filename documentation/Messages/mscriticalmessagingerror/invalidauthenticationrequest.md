@@ -16,7 +16,7 @@ The authentication request isn’t valid.
 case invalidAuthenticationRequest
 ```
 
-#### Discussion
+## Discussion
 
 The framework isn’t able to validate the authentication request.
 

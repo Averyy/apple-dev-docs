@@ -17,7 +17,7 @@ Removes the last read from store.
 func decline() async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method should be used after a read, when the merchant receives the [`PaymentCardReadResult`](../paymentcardreadresult.md) and decides to not accept the payment. It must be called within the 60 seconds allowance time window and the payment must not have been included in a batch, otherwise an error will be thrown.
 

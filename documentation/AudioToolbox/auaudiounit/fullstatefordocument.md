@@ -32,7 +32,7 @@ var fullStateForDocument: [String : Any]? { get set }
 @property (atomic, copy, nullable) NSDictionary<NSString *,id> * fullStateForDocument;
 ```
 
-#### Discussion
+## Discussion
 
 Hosts may use this property to save and restore the state of an audio unit being used. Some state, such as a parameter value, is suitable for saving in a user preset. Other state, such as a synthesizer’s primary tuning setting, could be considered global state suitable for saving in a user document.
 

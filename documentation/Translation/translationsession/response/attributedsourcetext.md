@@ -18,7 +18,7 @@ The original translated text, including style formatting and links.
 let attributedSourceText: AttributedString?
 ```
 
-#### Discussion
+## Discussion
 
 When translating attributed strings using any translation method, the framework makes a best effort to preserve both visual formatting and defined attributes. This enables use cases like timestamp synchronization for captions or lyrics. For examples of translating text with preserved attributes, see [`attributedSourceText`](../request/attributedsourcetext.md).
 

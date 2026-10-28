@@ -23,7 +23,7 @@ var isPersistent: Bool { get }
 @property (nonatomic, readonly, getter=isPersistent) BOOL persistent;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the data store writes data to disk, or [`false`](../../Swift/false.md) if it doesn’t.
 

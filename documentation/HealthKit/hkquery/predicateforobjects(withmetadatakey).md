@@ -24,11 +24,11 @@ class func predicateForObjects(withMetadataKey key: String) -> NSPredicate
 + (NSPredicate *) predicateForObjectsWithMetadataKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches any object whose metadata contains the provided key.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that finds all objects with a specific key stored in their metadata. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 

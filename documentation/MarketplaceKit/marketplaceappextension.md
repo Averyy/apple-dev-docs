@@ -21,7 +21,7 @@ protocol MarketplaceAppExtension : AppExtension, Sendable
 - [Installing apps from an alternative marketplace](./installing-apps-from-an-alternative-marketplace.md)
 - [Reauthenticating a person to manage apps](./reauthenticating-a-person-to-manage-apps.md)
 
-#### Overview
+## Overview
 
 You provide this extension to enable the operating system to facilitate some tasks for your app even if it isn’t running, such as:
 
@@ -30,7 +30,7 @@ You provide this extension to enable the operating system to facilitate some tas
 - Launching your app storefront for a specific app.
 - Handling failures in requests to your marketplace server.
 
-##### Define the extension point identifier
+### Define the extension point identifier
 
 To set up your marketplace extension in Xcode, use a generic extension template and set the `EXExtensionPointIdentifier` key in the `Info.plist` file to `com.apple.marketplace.extension`:
 

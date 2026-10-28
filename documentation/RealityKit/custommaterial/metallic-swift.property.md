@@ -19,7 +19,7 @@ The reflectiveness of an entity.
 var metallic: CustomMaterial.Metallic { get set }
 ```
 
-#### Discussion
+## Discussion
 
 In physically based rendering, the `metallic` property represents the reflectiveness of an entity. Use this property to specify whether the entity displays metallic qualities and reflects the surrounding environment, or displays dielectric qualities and doesn’t reflect the environment. With custom materials, RealityKit doesn’t automatically use the values set on this property. To render a custom material using the metallic property, set [`lightingModel`](./lightingmodel-swift.property.md) to [`CustomMaterial.LightingModel.lit`](./lightingmodel-swift.enum/lit.md) or [`CustomMaterial.LightingModel.clearcoat`](./lightingmodel-swift.enum/clearcoat.md) and call `params.surface().set_roughness()` from its surface shader.
 

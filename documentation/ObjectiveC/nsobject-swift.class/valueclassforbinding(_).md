@@ -19,11 +19,11 @@ func valueClassForBinding(_ binding: NSBindingName) -> AnyClass?
 - (Class) valueClassForBinding:(NSBindingName) binding;
 ```
 
-#### Return Value
+## Return Value
 
 The class of the value that will be returned for `binding`.
 
-#### Discussion
+## Discussion
 
 This method is used by Interface Builder to determine the appropriate transformers for a binding.
 

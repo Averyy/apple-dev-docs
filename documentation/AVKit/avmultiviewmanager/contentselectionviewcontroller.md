@@ -16,7 +16,7 @@ A view controller that presents a user interface to select additional video cont
 final var contentSelectionViewController: AVContentSelectionViewController? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Implement this property to add custom user interface elements. The primary role of this interface is to provide a way for people to add videos.
 

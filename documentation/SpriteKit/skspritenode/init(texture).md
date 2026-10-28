@@ -25,11 +25,11 @@ convenience init(texture: SKTexture?)
 - (instancetype) initWithTexture:(SKTexture *) texture;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized sprite object.
 
-#### Discussion
+## Discussion
 
 The [`size`](./size.md) property of the sprite is set to the dimensions of the texture. The [`color`](./color.md) property is set to white with an alpha of zero `(1.0,1.0,1.0,0.0)`.
 

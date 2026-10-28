@@ -21,7 +21,7 @@ nonisolated
 init<V>(value: V, in bounds: ClosedRange<V> = 0...1, @ContentBuilder label: () -> Label, @ContentBuilder currentValueLabel: () -> CurrentValueLabel) where BoundsLabel == EmptyView, MarkedValueLabels == EmptyView, V : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create a gauge that displays a value within a range you supply with labels that describe the purpose of the gauge and its current value. In the example below, a gauge using the [`circular`](../gaugestyle/circular.md) style shows its current value of `67` along with a label describing the (BPM) for the gauge:
 

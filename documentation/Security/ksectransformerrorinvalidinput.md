@@ -25,7 +25,7 @@ var kSecTransformErrorInvalidInput: CFIndex { get }
 kSecTransformErrorInvalidInput
 ```
 
-#### Discussion
+## Discussion
 
 This can occur if the data set for an attribute does not meet certain requirements such as correct key usage for signing data.
 

@@ -20,7 +20,7 @@ let kSecGuestAttributeCanonical: CFString
 extern CFStringRef const kSecGuestAttributeCanonical;
 ```
 
-#### Discussion
+## Discussion
 
 This object plus the process ID ([`kSecGuestAttributePid`](./ksecguestattributepid.md)) uniquely identify the guest.
 

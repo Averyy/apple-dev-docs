@@ -8,7 +8,7 @@ Build negative keyword create and update requests, and read responses and query 
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Each negative keyword call has a matching object. Send [`NegativeKeywordCreate`](./negativekeywordcreate.md) to create a negative keyword and [`NegativeKeywordUpdate`](./negativekeywordupdate.md) to change one. [`NegativeKeywordResponse`](./negativekeywordresponse.md) wraps the negative keyword that create and update calls return, and [`NegativeKeywordQueryResponse`](./negativekeywordqueryresponse.md) wraps the list that query calls return, along with pagination.
 

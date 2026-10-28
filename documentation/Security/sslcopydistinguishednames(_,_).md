@@ -24,11 +24,11 @@ func SSLCopyDistinguishedNames(_ context: SSLContext, _ names: UnsafeMutablePoin
 OSStatus SSLCopyDistinguishedNames(SSLContextRef context, CFArrayRef*names);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The list of distinguished names is provided by the server if the context reference represents a client; if the context reference represents a server, the list of distinguished names is specified with the [`SSLSetCertificateAuthorities(_:_:_:)`](./sslsetcertificateauthorities%28_,_,_%29.md) function.
 

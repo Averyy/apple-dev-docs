@@ -21,7 +21,7 @@ Initialize a ComputeGraphSimulation for the given pipelines
 convenience init(pipelines: ComputeNodeGraph.Pipelines, commandQueue: any MTLCommandQueue)
 ```
 
-#### Discussion
+## Discussion
 
 The simulation will use the provided command queue for operations such as [`fastForward()`](./fastforward%28%29.md) and resetting the system.
 

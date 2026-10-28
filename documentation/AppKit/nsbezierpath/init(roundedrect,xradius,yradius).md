@@ -19,11 +19,11 @@ init(roundedRect rect: NSRect, xRadius: CGFloat, yRadius: CGFloat)
 + (NSBezierPath *) bezierPathWithRoundedRect:(NSRect) rect xRadius:(CGFloat) xRadius yRadius:(CGFloat) yRadius;
 ```
 
-#### Return Value
+## Return Value
 
 A new path object with the rounded rectangular path.
 
-#### Discussion
+## Discussion
 
 The path is constructed in a counter-clockwise direction, starting at the top-left corner of the rectangle. If either one of the radius parameters contains the value `0.0`, the returned path is a plain rectangle without rounded corners.
 

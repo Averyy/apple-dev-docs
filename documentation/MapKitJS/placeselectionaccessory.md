@@ -19,7 +19,7 @@ class PlaceSelectionAccessory
 
 - [MapKit JS 5](./mapkit-js-5.md)
 
-#### Overview
+## Overview
 
 For more information on places, see [Identifying unique locations with Place IDs](../MapKit/identifying-unique-locations-with-place-ids.md).
 

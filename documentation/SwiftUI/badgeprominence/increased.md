@@ -19,7 +19,7 @@ The highest level of prominence for a badge.
 static let increased: BadgeProminence
 ```
 
-#### Discussion
+## Discussion
 
 This level of prominence should be used for badges that display a value that requires user action, such as number of updates or account errors.
 

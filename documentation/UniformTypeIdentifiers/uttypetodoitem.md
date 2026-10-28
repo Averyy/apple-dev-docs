@@ -21,7 +21,7 @@ A type that represents a to-do item.
 extern UTType * const UTTypeToDoItem;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.to-do-item`.
 

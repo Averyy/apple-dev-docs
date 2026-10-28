@@ -23,13 +23,13 @@ protocol CLSContextProvider
 @protocol CLSContextProvider
 ```
 
-#### Overview
+## Overview
 
 The primary class of a ClassKit context provider extension adopts the [`CLSContextProvider`](./clscontextprovider.md) protocol. The protocol’s one required method tells the app extension to create or update the descendants of a given context. Schoolwork causes this method to fill in your context hierarchy incrementally as the teacher browses your app’s content.
 
 You still build contexts in your main app to support your app’s normal operation, as described in [Advertising your app’s assignable content](./advertising-your-app-s-assignable-content.md). By also creating a context provider app extension, you enable Schoolwork to advertise your content without having to rely on the teacher first running your app.
 
-##### Create a ClassKit Context Provider App Extension
+### Create a ClassKit Context Provider App Extension
 
 Create a ClassKit context provider by adding a new target to your project in Xcode using File > New > Target. Choose the ClassKit context provider template and give it a name.
 

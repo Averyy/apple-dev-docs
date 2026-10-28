@@ -23,7 +23,7 @@ var merchantDomain: String? { get set }
 @property (nonatomic, copy, nullable) NSString * merchantDomain;
 ```
 
-#### Discussion
+## Discussion
 
 This value is optional; provide the top-level domain for the merchant if it’s available.
 

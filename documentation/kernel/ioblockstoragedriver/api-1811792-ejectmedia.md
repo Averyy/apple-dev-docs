@@ -9,11 +9,11 @@
 virtual IOReturn ejectMedia();
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Overview
+## Overview
 
 Eject the media from the device. The driver is responsible for tearing down the media object it created before proceeding with the eject. If the tear-down fails, an error should be returned.
 

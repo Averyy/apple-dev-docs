@@ -9,7 +9,7 @@
 AbsoluteTime minimumInterval;
 ```
 
-#### Overview
+## Overview
 
 The smallest timer interval requested by all timer event targets.
 

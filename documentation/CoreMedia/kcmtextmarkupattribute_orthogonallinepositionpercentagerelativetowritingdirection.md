@@ -25,7 +25,7 @@ let kCMTextMarkupAttribute_OrthogonalLinePositionPercentageRelativeToWritingDire
 extern CFStringRef const kCMTextMarkupAttribute_OrthogonalLinePositionPercentageRelativeToWritingDirection;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute’s value must be a non-negative `CFNumber` that expresses the position of the center of the cue relative to the writing direction. The line position is orthogonal (or perpendicular) to the writing direction — that is, for a horizontal writing direction it’s vertical, and for a vertical writing direction, it’s horizontal. This attribute expresses the line position as a percentage of the dimensions of the video frame in the relevant direction. For example, 0 percent is the top of the video frame and 100 percent is the bottom of the video frame for horizontal writing layout.
 

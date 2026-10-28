@@ -4,7 +4,7 @@
 
 Measure your app’s size, optimize its assets and settings, and adopt technologies that help streamline installation over a mobile internet connection.
 
-#### Overview
+## Overview
 
 Even when your users are in areas with good mobile network coverage, their download speeds can vary, or their data plan may limit the amount of available high-speed data. To ensure that app downloads don’t take a long time or result in additional costs to users, the App Store limits the size of the apps they can install over a mobile connection. If an app’s size exceeds the limit, users need to connect to a Wi-Fi network to install it. Keep your app well below the size limit to maximize your app’s possible install base and minimize installation time.
 
@@ -30,7 +30,7 @@ To learn more about viewing the file sizes of a build in App Store Connect, see 
 
 The following two sections describe how you can generate a size report with Xcode, and how you can automate its creation.
 
-##### Create the app size report
+### Create the app size report
 
 While App Store Connect provides the most accurate measurements of your app’s size, Xcode’s built-in reporting tools can create an app size report for you. It provides close estimates of your app’s download and installation sizes. To create an app size report:
 
@@ -60,7 +60,7 @@ On Demand Resources size: Zero KB compressed, Zero KB uncompressed
 
 With the app size report you generate, you’re now ready to perform some basic optimizations, such as checking your binaries for unused assets, to reduce the size of your app. For more information, see [Doing basic optimization to reduce your app’s size](./doing-basic-optimization-to-reduce-your-app-s-size.md).
 
-##### Automate the generation of the app size report
+### Automate the generation of the app size report
 
 Instead of creating the app size report with Xcode, you may want to automate its generation in build scripts or continuous integration workflows. Run the following command to use `xcodebuild` to export your app for distribution and create an app thinning size report:
 

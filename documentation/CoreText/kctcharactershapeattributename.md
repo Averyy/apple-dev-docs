@@ -27,7 +27,7 @@ let kCTCharacterShapeAttributeName: CFString
 extern CFStringRef const kCTCharacterShapeAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 Value must be a [`CFNumber`](../CoreFoundation/cfnumber.md) object. Default is value is `0` (disabled). A non-zero value is interpreted as Apple Type Services `kCharacterShapeType` selector `+ 1` (see `<ATS/SFNTLayoutTypes.h>` for selectors). For example, an attribute value of `1` corresponds to `kTraditionalCharactersSelector`.
 

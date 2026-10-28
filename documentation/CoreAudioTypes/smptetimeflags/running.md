@@ -23,7 +23,7 @@ static var running: SMPTETimeFlags { get }
 kSMPTETimeRunning
 ```
 
-#### Discussion
+## Discussion
 
 Time is running.
 

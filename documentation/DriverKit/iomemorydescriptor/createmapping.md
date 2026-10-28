@@ -18,11 +18,11 @@ Maps the contents of the memory block to the address space of the current proces
 virtual kern_return_t CreateMapping(uint64_t options, uint64_t address, uint64_t offset, uint64_t length, uint64_t alignment, IOMemoryMap **map);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 
-#### Discussion
+## Discussion
 
 Use this method to map a memory buffer created by another process into the address space of the current process.
 

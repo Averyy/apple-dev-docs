@@ -11,7 +11,7 @@ Provides the formatted localized string in the installation package for the curr
 localizedStringWithFormat(stringKey, args...)
 ```
 
-#### Return Value
+## Return Value
 
 The localized string, if found in the installation package; `null` otherwise.
 

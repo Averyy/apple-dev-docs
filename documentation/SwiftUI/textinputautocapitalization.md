@@ -20,7 +20,7 @@ The kind of autocapitalization behavior applied during text input.
 struct TextInputAutocapitalization
 ```
 
-#### Overview
+## Overview
 
 Pass an instance of `TextInputAutocapitalization` to the [`textInputAutocapitalization(_:)`](./view/textinputautocapitalization%28_%29.md) view modifier.
 

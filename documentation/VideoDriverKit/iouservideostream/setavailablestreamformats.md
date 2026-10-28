@@ -15,7 +15,7 @@ Sets the available descriptions for the stream.
 kern_return_t SetAvailableStreamFormats(const IOUserVideoStreamBasicDescription *in_formats, uint32_t in_num_formats);
 ```
 
-#### Discussion
+## Discussion
 
 Changing the available formats will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the stream formats.
 

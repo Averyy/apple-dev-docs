@@ -20,7 +20,7 @@ typealias CGDisplayReservationInterval = Float
 typedef float CGDisplayReservationInterval;
 ```
 
-#### Discussion
+## Discussion
 
 A fade reservation interval is a period of time during which a specific display is reserved for a fade operation. Fade reservation intervals range from 1 to `kCGMaxDisplayReservationInterval` seconds.
 

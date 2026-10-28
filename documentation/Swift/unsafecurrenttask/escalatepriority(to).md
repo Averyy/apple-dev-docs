@@ -21,7 +21,7 @@ Escalate the task `priority` of the passed in task to the `newPriority`.
 func escalatePriority(to newPriority: TaskPriority)
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: This API should rarely be used, and instead you can rely on structured concurrency and implicit priority escalation which happens when a higher priority task awaits on a result of a lower priority task.
 >

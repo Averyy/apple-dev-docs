@@ -15,7 +15,7 @@ The mode switch key.
 static let modeSwitch: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

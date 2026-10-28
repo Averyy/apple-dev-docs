@@ -15,7 +15,7 @@ The user’s email address.
 attribute string email;
 ```
 
-#### Discussion
+## Discussion
 
 Validate and persist this information from your app to your server. Subsequent authorization requests do not contain the user object, however, the user’s email is provided in the identity token for all requests. For more information, visit [Authenticating users with Sign in with Apple](../../SigninwithApple/authenticating-users-with-sign-in-with-apple.md).
 

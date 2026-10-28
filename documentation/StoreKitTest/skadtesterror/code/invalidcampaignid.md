@@ -21,7 +21,7 @@ case invalidCampaignId
 SKAdTestErrorCodeInvalidCampaignId
 ```
 
-#### Discussion
+## Discussion
 
 A campaign ID is an integer that is greater than or equal to one and less than or equal to one hundred.
 

@@ -15,7 +15,7 @@ The base class for all video objects.
 class IOUserVideoObject;
 ```
 
-#### Overview
+## Overview
 
 Don’t subclass `IOUserVideoObject` or allocate it directly.
 

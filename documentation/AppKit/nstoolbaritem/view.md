@@ -19,7 +19,7 @@ var view: NSView? { get set }
 @property (strong, nullable) NSView * view;
 ```
 
-#### Discussion
+## Discussion
 
 Many properties of [`NSToolbarItem`](../nstoolbaritem.md) automatically forward changes to the associated custom [`NSView`](../nsview.md) object, if the view has a property or accessor method with a matching name.
 

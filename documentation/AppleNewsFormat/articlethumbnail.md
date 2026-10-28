@@ -20,11 +20,11 @@ object ArticleThumbnail
 - [Creating an Article Link](../AppleNews/creating-an-article-link.md)
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md)
 
-#### Discussion
+## Discussion
 
 Use the `ArticleThumbnail` object to display the thumbnail of an article. Use this component inside an [`ArticleLink`](./articlelink.md) component. The value of the `URL` property is automatically populated to reference the thumbnail image associated with the article (using the `articleIdentifier` property of the `ArticleLink` component). To provide a custom thumbnail, use another component, such as [`Image`](./image.md).
 
-##### Example
+### Example
 
 ```json
 {

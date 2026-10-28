@@ -4,7 +4,7 @@
 
 Define the possible values for the quality bits in the `flags` field of the `CM2Header` structure. 
 
-#### Overview
+## Overview
 
 To determine the value of the quality flag, you mask the `flags` field of the profile header with the `cmQualityMask` mask, right shift 16 bits, then compare the result to the enumerated constants shown here. For more information on the quality flag, see [Flag Mask Definitions for Version 2.x Profiles](./api-1560699-flag_mask_definitions_for_versio.md).
 

@@ -5,7 +5,7 @@
 
 The opaque data type used by the functions described in Managing Map Tables.
 
-#### Overview
+## Overview
 
 For macOS 10.5 and later, see also [`NSMapTable`](./nsmaptable.md).
 

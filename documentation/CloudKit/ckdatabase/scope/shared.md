@@ -25,7 +25,7 @@ case shared
 CKDatabaseScopeShared
 ```
 
-#### Discussion
+## Discussion
 
 Records in a shared database:
 

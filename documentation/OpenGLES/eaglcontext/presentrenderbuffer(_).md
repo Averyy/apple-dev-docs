@@ -24,11 +24,11 @@ func presentRenderbuffer(_ target: Int) -> Bool
 - (BOOL) presentRenderbuffer:(NSUInteger) target;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The renderbuffer to be displayed must have been allocated storage using the [`renderbufferStorage(_:from:)`](./renderbufferstorage%28_,from%29.md) method. The exact semantics for how and when the renderbuffer contents are displayed is controlled by the drawable object.
 

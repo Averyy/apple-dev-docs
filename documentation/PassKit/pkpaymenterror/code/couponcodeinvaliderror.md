@@ -23,7 +23,7 @@ case couponCodeInvalidError
 PKPaymentCouponCodeInvalidError
 ```
 
-#### Discussion
+## Discussion
 
 Use this error code if the coupon code entered in the payment sheet is invalid. You can use [`paymentCouponCodeInvalidError(localizedDescription:)`](../../pkpaymentrequest/paymentcouponcodeinvaliderror%28localizeddescription%29.md) to create an expired coupon error object.
 

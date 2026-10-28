@@ -12,7 +12,7 @@ Asserts that an expression is false.
 func XCTAssertFalse(_ expression: @autoclosure () throws -> Bool, _ message: @autoclosure () -> String = "", file: StaticString = #filePath, line: UInt = #line)
 ```
 
-#### Discussion
+## Discussion
 
 This function generates a failure when `expression == true`.
 

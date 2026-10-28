@@ -16,7 +16,7 @@ Get or set an `XPCEndpoint` value in this dictionary.
 subscript(key: String) -> XPCEndpoint? { get set }
 ```
 
-#### Return Value
+## Return Value
 
 A previously-set endpoint value. If no endpoint was previously set for `key`, returns `nil`.
 

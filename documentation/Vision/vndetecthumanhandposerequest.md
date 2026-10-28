@@ -24,7 +24,7 @@ class VNDetectHumanHandPoseRequest
 @interface VNDetectHumanHandPoseRequest : VNImageBasedRequest
 ```
 
-#### Overview
+## Overview
 
 The framework provides the detected hand pose as a `VNIdentifiedPointsObservation`.
 

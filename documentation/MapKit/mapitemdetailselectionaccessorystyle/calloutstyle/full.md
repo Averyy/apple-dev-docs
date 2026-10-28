@@ -19,7 +19,7 @@ A rich, detailed callout style that is suitable for large map views.
 static var full: MapItemDetailSelectionAccessoryStyle.CalloutStyle { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this style for map views on iPadOS and macOS. Use the sheet presentation to display full detail place information on iOS.
 

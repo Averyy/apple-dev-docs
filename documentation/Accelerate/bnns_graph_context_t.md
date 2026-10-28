@@ -25,7 +25,7 @@ struct bnns_graph_context_t
 typedef struct { ... } bnns_graph_context_t;
 ```
 
-#### Overview
+## Overview
 
 The [`bnns_graph_context_t`](./bnns_graph_context_t.md) object wraps a [`bnns_graph_t`](./bnns_graph_t.md) instance and adds mutable data storage. BNNS requires mutability to support dynamic shapes and other execution objects.
 

@@ -22,7 +22,7 @@ A description of view changes to apply when a view is added to and removed from 
 @preconcurrency protocol Transition
 ```
 
-#### Overview
+## Overview
 
 A transition should generally be made by applying one or more modifiers to the `content`. For symmetric transitions, the `isIdentity` property on `phase` can be used to change the properties of modifiers. For asymmetric transitions, the phase itself can be used to change those properties. Transitions should not use any identity-affecting changes like `.id`, `if`, and `switch` on the `content`, since doing so would reset the state of the view they’re applied to, causing wasted work and potentially surprising behavior when it appears and disappears.
 

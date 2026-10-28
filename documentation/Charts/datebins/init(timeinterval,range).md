@@ -22,7 +22,7 @@ nonisolated
 init(timeInterval: TimeInterval, range: ClosedRange<Date>)
 ```
 
-#### Return Value
+## Return Value
 
 The bins.
 

@@ -21,7 +21,7 @@ Returns the vector scaled by the specified size.
 func scaled(by size: Size3D) -> Vector3D
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The scaled vector.
 

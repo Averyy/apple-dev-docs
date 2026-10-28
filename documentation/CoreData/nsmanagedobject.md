@@ -33,7 +33,7 @@ class NSManagedObject
 - [Modeling data](./modeling-data.md)
 - [Using Core Data in the background](./using-core-data-in-the-background.md)
 
-#### Overview
+## Overview
 
 A managed object has an associated entity description ([`NSEntityDescription`](./nsentitydescription.md)) that provides metadata about the object, including the name of the entity that the object represents and the names of its attributes and relationships. A managed object also has an associated managed object context that tracks changes to the object graph.
 
@@ -41,13 +41,13 @@ You can’t use instances of direct subclasses of [`NSObject`](../ObjectiveC/nso
 
 If you instantiate a managed object directly, you must call the designated initializer [`init(entity:insertInto:)`](./nsmanagedobject/init%28entity,insertinto%29.md).
 
-##### Data Storage
+### Data Storage
 
 In some respects, an `NSManagedObject` acts like a dictionary—it’s a generic container object that provides efficient storage for the properties defined by its associated `NSEntityDescription` instance. `NSManagedObject` supports a range of common types for attribute values, including string, date, and number (see [`NSAttributeDescription`](./nsattributedescription.md) for full details). Therefore, typically you don’t need to define instance variables in subclasses. Sometimes, however, you want to use types that aren’t supported directly, such as colors and C structures. For example, in a graphics application you might want to define a Rectangle entity that has color and bounds attributes that are an instance of `NSColor` and an `NSRect` struct, respectively. For some types you can use a transformable attribute, for others this may require you to create a subclass of `NSManagedObject`.
 
 > **Note**: The default value for [`automaticallyNotifiesObservers(forKey:)`](../ObjectiveC/nsobject-swift.class/automaticallynotifiesobservers%28forkey%29.md) is `false` for managed properties of a `NSManagedObject`, and `true` for unmanaged properties.
 
-##### Faulting
+### Faulting
 
 Managed objects typically represent data held in a persistent store. In some situations a managed object may be a *fault*—an object whose property values haven’t yet been loaded from the external data store. When you access persistent property values, the fault “fires” and the data is retrieved from the store automatically. This can be a comparatively expensive process (potentially requiring a round trip to the persistent store), and you may wish to avoid unnecessarily firing a fault. See [Faulting and Uniquing](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/FaultingandUniquing.html#//apple_ref/doc/uid/TP40001075-CH18) for more details on faults.
 
@@ -55,15 +55,15 @@ You can safely invoke the following methods and properties on a fault without ca
 
 Although the `description` property doesn’t cause a fault to fire, if you implement a custom `description` that accesses the object’s persistent properties, this does cause a fault to fire. You are strongly discouraged from overriding `description` in this way.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 In combination with the entity description in the managed object model, `NSManagedObject` provides a rich set of default behaviors including support for arbitrary properties and value validation. If you decide to subclass `NSManagedObject` to implement custom features, make sure you don’t disrupt Core Data’s behavior.
 
-###### Methods and Properties You Must Not Override
+#### Methods and Properties You Must Not Override
 
 `NSManagedObject` itself customizes many features of `NSObject` so that managed objects can be properly integrated into the Core Data infrastructure. Core Data relies on the `NSManagedObject` implementation of the following methods and properties, which you therefore absolutely must not override: [`primitiveValue(forKey:)`](./nsmanagedobject/primitivevalue%28forkey%29.md), [`setPrimitiveValue(_:forKey:)`](./nsmanagedobject/setprimitivevalue%28_,forkey%29.md), [`isEqual(_:)`](../ObjectiveC/nsobjectprotocol/isequal%28_%29.md), [`hash`](../ObjectiveC/nsobjectprotocol/hash.md), [`superclass`](../ObjectiveC/nsobjectprotocol/superclass.md), [`class`](../ObjectiveC/nsobject-c.protocol/class.md), [`self()`](../ObjectiveC/nsobjectprotocol/self%28%29.md), [`isProxy()`](../ObjectiveC/nsobjectprotocol/isproxy%28%29.md), [`isKind(of:)`](../ObjectiveC/nsobjectprotocol/iskind%28of%29.md), [`isMember(of:)`](../ObjectiveC/nsobjectprotocol/ismember%28of%29.md), [`conforms(to:)`](../ObjectiveC/nsobjectprotocol/conforms%28to%29.md), [`responds(to:)`](../ObjectiveC/nsobjectprotocol/responds%28to%29.md), [`managedObjectContext`](./nsmanagedobject/managedobjectcontext.md), [`entity`](./nsmanagedobject/entity-swift.property.md), [`objectID`](./nsmanagedobject/objectid.md), [`isInserted`](./nsmanagedobject/isinserted.md), [`isUpdated`](./nsmanagedobject/isupdated.md), [`isDeleted`](./nsmanagedobject/isdeleted.md), and [`isFault`](./nsmanagedobject/isfault.md), [`alloc`](../ObjectiveC/nsobject-swift.class/alloc.md), [`allocWithZone:`](../ObjectiveC/nsobject-swift.class/allocwithzone_.md), [`new`](../ObjectiveC/nsobject-swift.class/new.md),  [`instancesRespond(to:)`](../ObjectiveC/nsobject-swift.class/instancesrespond%28to%29.md), [`instanceMethod(for:)`](../ObjectiveC/nsobject-swift.class/instancemethod%28for%29.md), [`method(for:)`](../ObjectiveC/nsobject-swift.class/method%28for%29.md), [`methodSignatureForSelector:`](../ObjectiveC/nsobject-swift.class/methodsignatureforselector_.md), [`instanceMethodSignatureForSelector:`](../ObjectiveC/nsobject-swift.class/instancemethodsignatureforselector_.md), or [`isSubclass(of:)`](../ObjectiveC/nsobject-swift.class/issubclass%28of%29.md).
 
-###### Methods and Properties You Shouldn’t Override
+#### Methods and Properties You Shouldn’t Override
 
 As with any class, you are strongly discouraged from overriding the key-value observing methods such as [`willChangeValue(forKey:)`](../ObjectiveC/nsobject-swift.class/willchangevalue%28forkey%29.md) and [`didChangeValue(forKey:withSetMutation:using:)`](../ObjectiveC/nsobject-swift.class/didchangevalue%28forkey,withsetmutation,using%29.md). Avoid overriding `description`—if this method fires a fault during a debugging operation, the results may be unpredictable. Also avoid overriding [`init(entity:insertInto:)`](./nsmanagedobject/init%28entity,insertinto%29.md), or `dealloc`. Changing values in the [`init(entity:insertInto:)`](./nsmanagedobject/init%28entity,insertinto%29.md) method won’t be noticed by the context, and if you aren’t careful, those changes may not be saved. Perform most initialization customization in one of the `awake…` methods. If you do override [`init(entity:insertInto:)`](./nsmanagedobject/init%28entity,insertinto%29.md), make sure you adhere to the requirements set out in the method description. See [`init(entity:insertInto:)`](./nsmanagedobject/init%28entity,insertinto%29.md).
 
@@ -71,7 +71,7 @@ Don’t override `dealloc` because [`didTurnIntoFault()`](./nsmanagedobject/didt
 
 In summary, for [`init(entity:insertInto:)`](./nsmanagedobject/init%28entity,insertinto%29.md) and `dealloc`, Core Data reserves exclusive control over the life cycle of the managed object (that is, raw memory management). This is so that the framework can provide features such as uniquing and by consequence, relationship maintenance, as well as much better performance than would be possible otherwise.
 
-###### Additional Override Considerations
+#### Additional Override Considerations
 
 The following methods are intended to be fine grained and aren’t suitable for large-scale operations. Don’t fetch or save in these methods. In particular, they shouldn’t have side effects on the managed object context.
 
@@ -82,13 +82,13 @@ The following methods are intended to be fine grained and aren’t suitable for 
 
 In addition, if you plan to override `awakeFromInsert`, `awakeFromFetch`, and validation methods, first invoke `super.method()`, the superclass’s implementation. Don’t modify relationships in [`awakeFromFetch()`](./nsmanagedobject/awakefromfetch%28%29.md)—see the method description for details.
 
-###### Custom Accessor Methods
+#### Custom Accessor Methods
 
 Typically, you don’t need to write custom accessor methods for properties that are defined in the entity of a managed object’s corresponding managed object model. If you need to do so, follow the implementation patterns described in Managed Object Accessor Methods in [Core Data Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075).
 
 Core Data automatically generates accessor methods (and primitive accessor methods) for you. For attributes and to-one relationships, Core Data generates the standard get and set accessor methods; for to-many relationships, Core Data generates the indexed accessor methods as described in [Achieving Basic Key-Value Coding Compliance](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/AccessorConventions.html#//apple_ref/doc/uid/20002174) in [Key-Value Coding Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#//apple_ref/doc/uid/10000107i). You do however need to declare the accessor methods or use Objective-C properties to suppress compiler warnings. For a full discussion, see Managed Object Accessor Methods in [Core Data Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075).
 
-###### Custom Instance Variables
+#### Custom Instance Variables
 
 By default, `NSManagedObject` stores its properties in an internal structure as objects, and in general Core Data is more efficient working with storage under its own control rather than by using custom instance variables.
 
@@ -98,7 +98,7 @@ Sometimes it’s convenient to represent variables as scalars—in drawing appli
 
 If you define custom instance variables for example to store derived attributes or other transient properties, clean up these variables in [`didTurnIntoFault()`](./nsmanagedobject/didturnintofault%28%29.md) rather than `dealloc`.
 
-###### Validation Methods
+#### Validation Methods
 
 `NSManagedObject` provides consistent hooks for validating property and inter-property values. You typically shouldn’t override [`validateValue(_:forKey:)`](./nsmanagedobject/validatevalue%28_,forkey%29.md). Instead implement methods of the form `validate<Key>:error:`, as defined by the NSKeyValueCoding protocol. If you want to validate inter-property values, you can override [`validateForUpdate()`](./nsmanagedobject/validateforupdate%28%29.md) and/or related validation methods.
 

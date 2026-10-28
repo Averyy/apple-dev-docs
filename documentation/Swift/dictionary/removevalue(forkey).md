@@ -24,11 +24,11 @@ mutating func removeValue(forKey key: Key) -> Value?
 
 Available when `Key` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The value that was removed, or `nil` if the key was not present in the dictionary.
 
-#### Discussion
+## Discussion
 
 If the key is found in the dictionary, this method returns the key’s associated value. On removal, this method invalidates all indices with respect to the dictionary.
 

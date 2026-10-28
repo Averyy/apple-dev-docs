@@ -16,7 +16,7 @@ static IOFilterInterruptEventSource * filterInterruptEventSource(
  int intIndex = 0);
 ```
 
-#### Return Value
+## Return Value
 
 a new event source if succesful, 0 otherwise.
 

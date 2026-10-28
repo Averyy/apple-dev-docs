@@ -25,7 +25,7 @@ var exportedInterface: NSXPCInterface? { get set }
 @property (retain, nullable) NSXPCInterface * exportedInterface;
 ```
 
-#### Discussion
+## Discussion
 
 This value is required if a exported object is set.
 

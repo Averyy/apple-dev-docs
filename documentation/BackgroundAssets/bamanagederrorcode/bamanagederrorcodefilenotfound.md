@@ -20,7 +20,7 @@ An error code that indicates the system couldn’t find a file at the specified 
 BAManagedErrorCodeFileNotFound
 ```
 
-#### Discussion
+## Discussion
 
 Refer to the value in `-[NSError userInfo]` for the key `NSFilePathErrorKey` for the file path.
 

@@ -27,7 +27,7 @@ func state() async -> ASCredentialIdentityStoreState
 - (void) getCredentialIdentityStoreStateWithCompletion:(void (^)(ASCredentialIdentityStoreState *state)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to find out the current state of the store before attempting to call other store methods. Examine the [`ASCredentialIdentityStoreState`](../ascredentialidentitystorestate.md) value passed to your completion handler to find out whether the store is enabled and whether it supports incremental updates.
 

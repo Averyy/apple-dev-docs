@@ -30,7 +30,7 @@ class SKPhysicsJointPin
 - [Pinning and Rotating Physics Bodies](./pinning-and-rotating-physics-bodies.md)
 - [Connecting Bodies with Joints](./connecting-bodies-with-joints.md)
 
-#### Overview
+## Overview
 
 An [`SKPhysicsJointPin`](./skphysicsjointpin.md) object allows two physics bodies to independently rotate around the anchor point as if pinned together. You can configure how far the two objects may rotate and the resistance to rotation.
 

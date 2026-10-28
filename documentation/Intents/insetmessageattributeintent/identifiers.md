@@ -30,7 +30,7 @@ var identifiers: [String]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<NSString *> * identifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Each string in this property corresponds to a message identifier that you use to locate the corresponding message in your app. The identifiers themselves are in the [`identifier`](../inmessage/identifier.md) property of an [`INMessage`](../inmessage.md) object returned during a search.
 

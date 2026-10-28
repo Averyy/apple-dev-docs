@@ -29,7 +29,7 @@ extern CFStringRef const kSecImportItemLabel;
 
 - [Importing an Identity](./importing-an-identity.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type `CFStringRef`. The format of the string is implementation specific.
 

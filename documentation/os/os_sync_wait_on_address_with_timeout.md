@@ -21,13 +21,13 @@ An atomic compare-and-wait operation with a timeout, used to implement higher-le
 extern int os_sync_wait_on_address_with_timeout(void *addr, uint64_t value, size_t size, os_sync_wait_on_address_flags_t flags, os_clockid_t clockid, uint64_t timeout_ns);
 ```
 
-#### Return Value
+## Return Value
 
 If the calling thread is woken up by a call to [`os_sync_wake_by_address_all`](./os_sync_wake_by_address_all.md) or [`os_sync_wake_by_address_any`](./os_sync_wake_by_address_any.md), or the value at `addr` is different than expected, this function returns successfully and the return value indicates the number of outstanding waiters blocked on this address.
 
 In the event of an error or a timeout, the function returns `-1` with `errno` set.
 
-#### Discussion
+## Discussion
 
 This function reads a value from `addr`, compares it to the expected `value`, and blocks the current thread for up to `timeout_ns` nanoseconds if the two are equal. This sequence of operations is atomic with respect to other concurrent operations performed on `addr` with [Futex Conditional Wait Primitives](./synchronization.md#Futex-Conditional-Wait-Primitives).
 
@@ -35,7 +35,7 @@ Pass consistent values across wait and wake APIs for `addr`, `size`, and `flags`
 
 > ❗ **Important**: Use this function only for implementing synchronization primitives that don’t have a sense of ownership, such as condition variables or semaphores. In particular, this function doesn’t provide priority inversion avoidance. For locking APIs, use existing OS primitives, such as `pthread` threads or [Unfair Locking](./synchronization.md#Unfair-Locking) APIs. For synchronization and threading managed by the OS, use a higher-level API, such as [Dispatch](../Dispatch/Dispatch.md).
 
-##### Error Codes
+### Error Codes
 
 When this function returns `-1`, the global variable `errno` contains either an error code from [`os_sync_wait_on_address`](./os_sync_wait_on_address.md) or one of the following errors.
 

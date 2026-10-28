@@ -6,64 +6,68 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fa
 
 # mlx.core.fast.metal_kernel
 
-**metal_kernel(*name: str*, *input_names: Sequence[str]*, *output_names: Sequence[str]*, *source: str*, *header: str = ''*, *ensure_row_contiguous: bool = True*, *atomic_outputs: bool = False*, *compile_options: object | None = None*) → [object](https://docs.python.org/3/builtins/functions.html#object)**
-: A jit-compiled custom Metal kernel defined from a source string.
+```python
+metal_kernel(name: str, input_names: Sequence[str], output_names: Sequence[str], source: str, header: str = '', ensure_row_contiguous: bool = True, atomic_outputs: bool = False, compile_options: object | None = None) → object
+```
+
+A jit-compiled custom Metal kernel defined from a source string.
+
 Full documentation: [Custom Metal Kernels](../../dev/custom_metal_kernels.md#custom-metal-kernels).
 
-Parameters:
+**Parameters:**
 
-**name** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – Name for the kernel.
-**input_names** (*List**[*[str](https://docs.python.org/3/builtins/stdtypes.html#str)*]*) – The parameter names of the inputs in the
+- **name** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – Name for the kernel.
+- **input_names** (*List*[[str](https://docs.python.org/3/builtins/stdtypes.html#str)]) – The parameter names of the inputs in the
 function signature.
-**output_names** (*List**[*[str](https://docs.python.org/3/builtins/stdtypes.html#str)*]*) – The parameter names of the outputs in the
+- **output_names** (*List*[[str](https://docs.python.org/3/builtins/stdtypes.html#str)]) – The parameter names of the outputs in the
 function signature.
-**source** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – Source code. This is the body of a function in Metal,
+- **source** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – Source code. This is the body of a function in Metal,
 the function signature will be automatically generated.
-**header** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – Header source code to include before the main function.
+- **header** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – Header source code to include before the main function.
 Useful for helper functions or includes that should live outside of
 the main function body.
-**ensure_row_contiguous** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – Whether to ensure the inputs are row contiguous
+- **ensure_row_contiguous** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – Whether to ensure the inputs are row contiguous
 before the kernel runs. Default: `True`.
-**atomic_outputs** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – Whether to use atomic outputs in the function signature
+- **atomic_outputs** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – Whether to use atomic outputs in the function signature
 e.g. `device atomic<float>`. Default: `False`.
-**compile_options** ([dict](https://docs.python.org/3/builtins/stdtypes.html#dict)*, **optional*) – Options to compile the Metal kernel
+- **compile_options** ([dict](https://docs.python.org/3/builtins/stdtypes.html#dict), *optional*) – Options to compile the Metal kernel
 with. Supported options:
 
 `"math_mode"`: The Metal math mode: `"safe"`, `"relaxed"`,
 or `"fast"`. `"safe"` preserves IEEE behavior for special
 values such as `exp(-inf) == 0`. Default: `"safe"`.
 
-Returns:
-Callable `metal_kernel`.
+**Returns:**
+: Callable `metal_kernel`.
 
 Example
 
-  ```
-  def exp_elementwise(a: mx.array):
-      source = '''
-          uint elem = thread_position_in_grid.x;
-          T tmp = inp[elem];
-          out[elem] = metal::exp(tmp);
-      '''
+```
+def exp_elementwise(a: mx.array):
+    source = '''
+        uint elem = thread_position_in_grid.x;
+        T tmp = inp[elem];
+        out[elem] = metal::exp(tmp);
+    '''
 
-      kernel = mx.fast.metal_kernel(
-          name="myexp",
-          input_names=["inp"],
-          output_names=["out"],
-          source=source
-      )
-      outputs = kernel(
-          inputs=[a],
-          template=[("T", mx.float32)],
-          grid=(a.size, 1, 1),
-          threadgroup=(256, 1, 1),
-          output_shapes=[a.shape],
-          output_dtypes=[a.dtype],
-          verbose=True,
-      )
-      return outputs[0]
+    kernel = mx.fast.metal_kernel(
+        name="myexp",
+        input_names=["inp"],
+        output_names=["out"],
+        source=source
+    )
+    outputs = kernel(
+        inputs=[a],
+        template=[("T", mx.float32)],
+        grid=(a.size, 1, 1),
+        threadgroup=(256, 1, 1),
+        output_shapes=[a.shape],
+        output_dtypes=[a.dtype],
+        verbose=True,
+    )
+    return outputs[0]
 
-  a = mx.random.normal(shape=(4, 16)).astype(mx.float16)
-  b = exp_elementwise(a)
-  assert mx.allclose(b, mx.exp(a))
-  ```
+a = mx.random.normal(shape=(4, 16)).astype(mx.float16)
+b = exp_elementwise(a)
+assert mx.allclose(b, mx.exp(a))
+```

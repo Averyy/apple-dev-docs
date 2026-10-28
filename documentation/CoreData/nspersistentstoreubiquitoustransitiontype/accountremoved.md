@@ -25,7 +25,7 @@ case accountRemoved
 NSPersistentStoreUbiquitousTransitionTypeAccountRemoved
 ```
 
-#### Discussion
+## Discussion
 
 It is only possible to discern this state when the application is running, and therefore this transition type will only be posted if the account is removed while the application is running or in the background.
 

@@ -19,7 +19,7 @@ All base decisions made automatically during recording in the given time range.
 - (NSArray<CNDecision *> *) baseDecisionsInTimeRange:(CMTimeRange) timeRange;
 ```
 
-#### Return Value
+## Return Value
 
 An array of base decisions in a given time range. These apply if no user decision overrides them.
 

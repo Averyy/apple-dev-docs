@@ -24,7 +24,7 @@ class let didBecomeVisibleNotification: NSNotification.Name
 extern NSNotificationName const UIWindowDidBecomeVisibleNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the visible window. This notification doesn’t contain a `userInfo` dictionary.
 

@@ -32,7 +32,7 @@ class SKEmitterNode
 - [Animate the Warping of a Sprite](./animate-the-warping-of-a-sprite.md)
 - [Animating Particle Properties Across Disparate Values](./animating-particle-properties-across-disparate-values.md)
 
-#### Overview
+## Overview
 
 A [`SKEmitterNode`](./skemitternode.md) object is a node that automatically creates and renders small particle sprites. Particles are privately owned by [SpriteKit](./SpriteKit.md)—your game cannot access the generated sprites. For example, you cannot add physics shapes to particles. Emitter nodes are often used to create smoke, fire, sparks, and other particle effects. A *particle* is similar to an [`SKSpriteNode`](./skspritenode.md) object; it renders a textured or untextured image that is sized, colorized, and blended into the scene. However, particles differ from sprites in two important ways:
 

@@ -21,7 +21,7 @@ var isExplicitContent: Bool { get set }
 @property (nonatomic, assign, getter=isExplicitContent) BOOL explicitContent;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the list item displays an explicit content indicator beside its primary text. The default value is [`false`](../../Swift/false.md).
 

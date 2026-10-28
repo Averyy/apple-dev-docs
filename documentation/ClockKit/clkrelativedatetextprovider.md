@@ -25,13 +25,13 @@ class CLKRelativeDateTextProvider
 
 - [Creating a timeline entry](./creating-a-timeline-entry.md)
 
-#### Overview
+## Overview
 
 You use a relative date text provider to implement timers or other relative time values in an efficient way. Instead of using multiple timeline entries to replicate a countdown timer, create a single timeline entry with a relative date text provider. When the user views the clock face, ClockKit automatically updates the relative time value in your complication, providing up-to-date time information.
 
 When creating the formatted string, the relative date text provider creates the longest string that fits in the given space. It includes as many of the requested date elements as it can, but may truncate elements or use abbreviations as needed. The formatted string takes into account the user’s region and locale settings.
 
-##### Date Format Options
+### Date Format Options
 
 When creating a `CLKRelativeDateTextProvider` object, you must specify which calendar units you want included in the resulting date. Only the following calendar units are supported:
 

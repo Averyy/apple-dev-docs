@@ -25,7 +25,7 @@ init(contentsOf fileURL: URL) throws
 - (instancetype) initWithContentsOfURL:(NSURL *) fileURL error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The file must have a `.storekit` extension. Create a configuration file in Xcode by selecting File > New > File and choosing StoreKit Configuration File.
 

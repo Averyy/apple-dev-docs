@@ -14,11 +14,11 @@ virtual IOReturn message(
  void *argument = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code defined by the message type.
 
-#### Overview
+## Overview
 
 A provider may deliver messages via the `message` method to its clients informing them of state changes, such as `kIOMessageServiceIsTerminated` or `kIOMessageServiceIsSuspended`. Certain messages are defined by the I/O Kit in `IOMessage.h` while others may be family dependent. This method is implemented in the client to receive messages.
 

@@ -13,11 +13,11 @@
 errno_t ifmaddr_address(ifmultiaddr_t ifmaddr, struct sockaddr *out_multicast, u_int32_t addr_size);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success.
 
-#### Discussion
+## Discussion
 
 Copies the multicast address to out_multicast.
 

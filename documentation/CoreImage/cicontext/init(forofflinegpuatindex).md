@@ -17,11 +17,11 @@ Creates an OpenGL-based Core Image context using a GPU that is not currently dri
 init?(forOfflineGPUAtIndex index: UInt32)
 ```
 
-#### Return Value
+## Return Value
 
 A Core Image context.
 
-#### Discussion
+## Discussion
 
 GPU devices that are not currently being used to drive a display can be used for Core Image rendering. Use the [`offlineGPUCount()`](./offlinegpucount%28%29.md) method to determine whether any such GPUs are available.
 

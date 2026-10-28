@@ -22,11 +22,11 @@ nonisolated
 func foregroundStyle<S1, S2, S3>(_ primary: S1, _ secondary: S2, _ tertiary: S3) -> some View where S1 : ShapeStyle, S2 : ShapeStyle, S3 : ShapeStyle
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the given foreground styles.
 
-#### Discussion
+## Discussion
 
 SwiftUI uses these styles when rendering child views that don’t have an explicit rendering style, like images, text, shapes, and so on.
 

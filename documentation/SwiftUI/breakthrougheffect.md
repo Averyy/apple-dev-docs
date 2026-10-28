@@ -15,7 +15,7 @@ The way a presentation shows through content in front of it.
 struct BreakthroughEffect
 ```
 
-#### Overview
+## Overview
 
 In a volumetric scene, 3D models and other app content can end up between the person using your app and a sheet or popover. Breakthrough keeps the presentation legible anyway. Pass a value of this type to [`presentationBreakthroughEffect(_:)`](./view/presentationbreakthrougheffect%28_%29.md) to choose how strongly it comes through:
 

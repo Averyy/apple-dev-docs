@@ -23,7 +23,7 @@ Returns a new permute layer.
 convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, permutation: [Int], filterParameters: BNNSFilterParameters? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The number of input dimensions must be equal to number of output dimensions.
 

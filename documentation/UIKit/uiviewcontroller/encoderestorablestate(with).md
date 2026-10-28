@@ -23,7 +23,7 @@ func encodeRestorableState(with coder: NSCoder)
 - (void) encodeRestorableStateWithCoder:(NSCoder *) coder;
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this method directly. The system calls this method during the state preservation process to give your view controller or view-controller subclass a chance to save state-related information.
 

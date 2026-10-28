@@ -23,7 +23,7 @@ typealias AVMIDIEventListBlock = (Int64, UInt8, UnsafePointer<MIDIEventList>) ->
 typedef int (^)(long long, unsigned char, const struct MIDIEventList *) __attribute__((nonblocking)) AVMIDIEventListBlock;
 ```
 
-#### Discussion
+## Discussion
 
 A block used by an audio unit to send or receive MIDIEventList data.
 

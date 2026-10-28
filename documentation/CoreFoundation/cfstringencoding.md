@@ -25,7 +25,7 @@ typealias CFStringEncoding = UInt32
 typedef UInt32 CFStringEncoding;
 ```
 
-#### Discussion
+## Discussion
 
 This type is used to define the constants for the built-in encodings (see [`CFStringBuiltInEncodings`](./cfstringbuiltinencodings.md) for a list) and for platform-dependent encodings (see [External String Encodings](./external-string-encodings.md)). If CFString does not recognize or support the string encoding of a particular string, CFString functions will identify the string’s encoding as [`kCFStringEncodingInvalidId`](./kcfstringencodinginvalidid.md).
 

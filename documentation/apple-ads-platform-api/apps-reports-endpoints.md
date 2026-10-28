@@ -8,7 +8,7 @@ Retrieve App Store performance metrics for campaigns, ad groups, ads, keywords, 
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 All five endpoints share one `POST` query structure. Each request takes a `timeRange`, `filters`, and `sorting`, and returns rows with total and granular metrics. Ad group, ad, keyword, and search term reports require a `campaignId` filter.
 

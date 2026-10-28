@@ -15,7 +15,7 @@ Returns a copy of the padding object.
 copy(): Padding;
 ```
 
-#### Return Value
+## Return Value
 
 A [`Padding`](../padding.md) object that is a copy of the original.
 

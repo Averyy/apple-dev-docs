@@ -16,7 +16,7 @@ A structure that represents a transaction relating to a specific financial accou
 struct Transaction
 ```
 
-#### Overview
+## Overview
 
 This can include transactions such as a deposit to or a withdrawn from bank account, a credit card transaction.
 

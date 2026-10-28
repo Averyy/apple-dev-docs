@@ -21,7 +21,7 @@ The frame was dropped because it was late.
 case frameWasLate
 ```
 
-#### Discussion
+## Discussion
 
 When a video capture client has indicated that late video frames should be dropped and the current frame is late. This condition is typically caused by the client’s processing taking too long.
 

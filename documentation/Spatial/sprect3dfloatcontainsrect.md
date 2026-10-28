@@ -19,11 +19,11 @@
 static bool SPRect3DFloatContainsRect(SPRect3DFloat rect, SPRect3DFloat other);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the first rectangle contains the second rectangle.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the first rectangle contains the second rectangle.
 

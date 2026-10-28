@@ -15,7 +15,7 @@ Changes the specified property of the receiver’s resource.
 - (BOOL) setProperty:(id) property forKey:(NSString *) propertyKey;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the modification was successful, [`false`](../../Swift/false.md) otherwise.
 

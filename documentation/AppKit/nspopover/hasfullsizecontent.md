@@ -19,7 +19,7 @@ var hasFullSizeContent: Bool { get set }
 @property BOOL hasFullSizeContent;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the value of this property to [`true`](../../Swift/true.md) extends the frame of the content view by the height of the arrow region on all four sides of the frame. This causes the [`contentViewController`](./contentviewcontroller.md) view to extend to the window’s bounds.
 

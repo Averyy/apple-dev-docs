@@ -22,7 +22,7 @@ func GLKQuaternionRotateVector4(_ quaternion: GLKQuaternion, _ vector: GLKVector
 static GLKVector4 GLKQuaternionRotateVector4(GLKQuaternion quaternion, GLKVector4 vector);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 

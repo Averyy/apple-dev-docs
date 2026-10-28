@@ -22,7 +22,7 @@ The type of scene that represents the body of this scene.
 associatedtype Body : Scene
 ```
 
-#### Discussion
+## Discussion
 
 When you create a custom scene, Swift infers this type from your implementation of the required [`body`](./body-swift.property.md) property.
 

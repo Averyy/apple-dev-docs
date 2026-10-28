@@ -25,7 +25,7 @@ func ColorSyncProfileCreateWithName(_ name: CFString!) -> Unmanaged<ColorSyncPro
 extern ColorSyncProfileRefColorSyncProfileCreateWithName(CFStringRef name);
 ```
 
-#### Return Value
+## Return Value
 
 A new profile, or `NULL` in case of failure.
 

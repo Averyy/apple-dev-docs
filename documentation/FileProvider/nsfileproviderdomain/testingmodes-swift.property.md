@@ -23,7 +23,7 @@ var testingModes: NSFileProviderDomain.TestingModes { get set }
 @property (assign, readwrite) NSFileProviderDomainTestingModes testingModes;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value is `[]` (Swift) or `0` (Objective-C) and all testing modes are disabled. To enable a testing mode, assign its value to this property. You can combine multiple modes:
 

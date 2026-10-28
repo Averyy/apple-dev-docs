@@ -16,7 +16,7 @@ A metric that measures the total data uploaded over a cellular connection.
 struct TotalCellularUploadMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.totalCellularUpload(_:)`](./metricresult/totalcellularupload%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 

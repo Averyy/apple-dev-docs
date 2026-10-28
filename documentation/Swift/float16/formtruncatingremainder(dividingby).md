@@ -21,7 +21,7 @@ Replaces this value with the remainder of itself divided by the given value usin
 mutating func formTruncatingRemainder(dividingBy other: Float16)
 ```
 
-#### Discussion
+## Discussion
 
 Performing truncating division with floating-point values results in a truncated integer quotient and a remainder. For values `x` and `y` and their truncated integer quotient `q`, the remainder `r` satisfies `x == y * q + r`.
 

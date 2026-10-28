@@ -21,7 +21,7 @@ An array of promotional offers available for the auto-renewable subscription.
 let promotionalOffers: [Product.SubscriptionOffer]
 ```
 
-#### Discussion
+## Discussion
 
 This array is empty if you haven’t set up promotional offers in App Store Connect.
 

@@ -24,7 +24,7 @@ var triangleCount: Int { get }
 @property (nonatomic, readonly) NSUInteger triangleCount;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is valid only after calling the [`triangulate()`](./triangulate%28%29.md) to create a mesh around the current configuration of obstacles.
 

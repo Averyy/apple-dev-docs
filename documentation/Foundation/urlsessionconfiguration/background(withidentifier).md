@@ -29,11 +29,11 @@ class func background(withIdentifier identifier: String) -> URLSessionConfigurat
 
 - [Downloading files in the background](../downloading-files-in-the-background.md)
 
-#### Return Value
+## Return Value
 
 A configuration object that causes the system to perform upload and download tasks in a separate process.
 
-#### Discussion
+## Discussion
 
 Use this method to initialize a configuration object suitable for transferring data files while the app runs in the background. A session configured with this object hands control of the transfers over to the system, which handles the transfers in a separate process. In iOS, this configuration makes it possible for transfers to continue even when the app itself is suspended or terminated.
 

@@ -4,7 +4,7 @@
 
 Improve your app’s performance by analyzing memory-use metrics and making changes to maximize memory efficiency.
 
-#### Overview
+## Overview
 
 The memory (RAM) on a device is a limited resource that’s shared by apps, operating system processes, and the kernel. iOS has techniques for satisfying the various demands on memory, but these techniques come at the expense of speed and responsiveness. For example, iOS might transfer a memory-intensive app to solid-state storage when the app is running in the background. The app then incurs a delay when coming back to the foreground or attempting to run a background task.
 
@@ -12,7 +12,7 @@ If the app is using too much memory, iOS sends it a warning. You get notificatio
 
 Because the device shares memory between apps and iOS processes, one app using too much memory can compromise the user experience across the whole device. Limiting the amount of memory an app uses can benefit users even when they’re using other apps.
 
-##### Understand memory-use metrics
+### Understand memory-use metrics
 
 The Xcode Organizer and MetricKit each provide two metrics about memory use in an app. The first metric is peak memory use, which is the highest memory use observed in any of the samples taken. iOS collects this metric by sampling the app’s memory use periodically throughout the day. The second metric is memory use observed on suspension, measured when the app enters the background.
 
@@ -26,7 +26,7 @@ Data structures defined in the app’s executable or linked libraries and framew
 
 ![Illustration showing how memory is considered to be in use when it's written to.](https://developer.apple.com/tutorials/images/com.apple.Xcode/reducing-your-app-s-memory-use-written@2x.png)
 
-##### View data on memory use
+### View data on memory use
 
 View your app’s memory use in the Memory pane of the Xcode Organizer window or by using [MetricKit](../MetricKit/MetricKit.md).
 

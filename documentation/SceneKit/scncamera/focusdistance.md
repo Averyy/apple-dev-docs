@@ -25,7 +25,7 @@ var focusDistance: CGFloat { get set }
 @property (nonatomic) CGFloat focusDistance;
 ```
 
-#### Discussion
+## Discussion
 
 Objects at this distance from the camera appear perfectly focused. Objects nearer to or farther from the camera than this distance appear increasingly blurred, with the behavior of the blur effect depending on the [`fStop`](./fstop.md), [`apertureBladeCount`](./aperturebladecount.md) and [`focalBlurSampleCount`](./focalblursamplecount.md) properties. The default focus distance is `2.5`.
 

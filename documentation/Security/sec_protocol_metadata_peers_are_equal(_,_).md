@@ -23,11 +23,11 @@ func sec_protocol_metadata_peers_are_equal(_ metadataA: sec_protocol_metadata_t,
 bool sec_protocol_metadata_peers_are_equal(sec_protocol_metadata_t metadataA, sec_protocol_metadata_t metadataB);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if both metadata values refer to the same peer, and false otherwise.
 
-#### Discussion
+## Discussion
 
 Compare peer information for two `sec_protocol_metadata` instances. This comparison does not include protocol configuration options, e.g., ciphersuites.
 

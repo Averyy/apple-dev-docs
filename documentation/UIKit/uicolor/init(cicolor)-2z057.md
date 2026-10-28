@@ -23,7 +23,7 @@ init(ciColor: CIColor)
 - (UIColor *) initWithCIColor:(CIColor *) ciColor;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized color object.
 

@@ -28,11 +28,11 @@ class func predicateForObjects(from workout: HKWorkout) -> NSPredicate
 
 - [Adding samples to a workout](../adding-samples-to-a-workout.md)
 
-#### Return Value
+## Return Value
 
 A predicate that matches any objects that have been added to the provided workout.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that matches all the HealthKit objects for a given workout. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 

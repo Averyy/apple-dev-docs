@@ -21,7 +21,7 @@ The distance from the top of the image to its baseline.
 let baseline: CGFloat
 ```
 
-#### Discussion
+## Discussion
 
 If the image has no baseline, this value is equivalent to the image’s height.
 

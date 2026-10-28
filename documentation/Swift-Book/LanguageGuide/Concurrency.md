@@ -72,28 +72,6 @@ listPhotos(inGallery: "Summer Vacation") { photoNames in
 }
 ```
 
-<!--
-  - test: `async-via-nested-completion-handlers`
-
-  ```swifttest
-  >> struct Data {}  // Instead of actually importing Foundation
-  >> func listPhotos(inGallery name: String, completionHandler: ([String]) -> Void ) {
-  >>   completionHandler(["IMG001", "IMG99", "IMG0404"])
-  >> }
-  >> func downloadPhoto(named name: String, completionHandler: (Data) -> Void) {
-  >>     completionHandler(Data())
-  >> }
-  >> func show(_ image: Data) { }
-  -> listPhotos(inGallery: "Summer Vacation") { photoNames in
-         let sortedNames = photoNames.sorted()
-         let name = sortedNames[0]
-         downloadPhoto(named: name) { photo in
-             show(photo)
-         }
-     }
-  ```
--->
-
 Even in this simple case,
 because the code has to be written as a series of completion handlers,
 you end up writing nested closures.
@@ -127,33 +105,8 @@ func listPhotos(inGallery name: String) async -> [String] {
 }
 ```
 
-<!--
-  - test: `async-function-shape`
-
-  ```swifttest
-  -> func listPhotos(inGallery name: String) async -> [String] {
-         let result = // ... some asynchronous networking code ...
-  >>     ["IMG001", "IMG99", "IMG0404"]
-         return result
-     }
-  ```
--->
-
 For a function or method that's both asynchronous and throwing,
 you write `async` before `throws`.
-
-<!--
-  - test: `async-comes-before-throws`
-
-  ```swifttest
-  >> func right() async throws -> Int { return 12 }
-  >> func wrong() throws async -> Int { return 12 }
-  !$ error: 'async' must precede 'throws'
-  !! func wrong() throws async -> Int { return 12 }
-  !! ^~~~~~
-  !! async
-  ```
--->
 
 When calling an asynchronous method,
 execution suspends until that method returns.
@@ -180,26 +133,6 @@ let name = sortedNames[0]
 let photo = await downloadPhoto(named: name)
 show(photo)
 ```
-
-<!--
-  - test: `defining-async-function`
-
-  ```swifttest
-  >> struct Data {}  // Instead of actually importing Foundation
-  >> func downloadPhoto(named name: String) async -> Data { return Data() }
-  >> func show(_ image: Data) { }
-  >> func listPhotos(inGallery name: String) async -> [String] {
-  >>     return ["IMG001", "IMG99", "IMG0404"]
-  >> }
-  >> func f() async {
-  -> let photoNames = await listPhotos(inGallery: "Summer Vacation")
-  -> let sortedNames = photoNames.sorted()
-  -> let name = sortedNames[0]
-  -> let photo = await downloadPhoto(named: name)
-  -> show(photo)
-  >> }
-  ```
--->
 
 Because the `listPhotos(inGallery:)` and `downloadPhoto(named:)` functions
 both need to make network requests,
@@ -258,14 +191,6 @@ only certain places in your program can call asynchronous functions or methods:
 - Code in an unstructured child task,
   as shown in [Unstructured Concurrency](Concurrency.md#Unstructured-Concurrency) below.
 
-<!--
-  SE-0296 specifically calls out that top-level code is *not* an async context,
-  contrary to what you might expect.
-  If that gets changed, add this bullet to the list above:
-
-  - Code at the top level that forms an implicit main function.
--->
-
 The [`Task.sleep(for:tolerance:clock:)`][] method
 is useful when writing simple code
 to learn how concurrency works.
@@ -281,18 +206,6 @@ func listPhotos(inGallery name: String) async throws -> [String] {
     return ["IMG001", "IMG99", "IMG0404"]
 }
 ```
-
-<!--
-  - test: `sleep-in-toy-code`
-
-  ```swifttest
-  >> struct Data {}  // Instead of actually importing Foundation
-  -> func listPhotos(inGallery name: String) async throws -> [String] {
-         try await Task.sleep(for: .seconds(2))
-         return ["IMG001", "IMG99", "IMG0404"]
-  }
-  ```
--->
 
 The version of `listPhotos(inGallery:)` in the code above
 is both asynchronous and throwing,
@@ -341,18 +254,6 @@ working through the project's architecture one layer at a time.
 There's no way to take a bottom-up approach,
 because synchronous code can't ever call asynchronous code.
 
-<!--
-  OUTLINE
-
-  ## Asynchronous Closures
-
-  like how you can have an async function, a closure con be async
-  if a closure contains 'await' that implicitly makes it async
-  you can mark it explicitly with "async -> in"
-
-  (discussion of @MainActor closures can probably go here too)
--->
-
 ## Asynchronous Sequences
 
 The `listPhotos(inGallery:)` function in the previous section
@@ -372,21 +273,6 @@ for try await line in handle.bytes.lines {
 }
 ```
 
-<!--
-  - test: `async-sequence`
-
-  ```swifttest
-  -> import Foundation
-
-  >> func f() async throws {
-  -> let handle = FileHandle.standardInput
-  -> for try await line in handle.bytes.lines {
-         print(line)
-     }
-  >> }
-  ```
--->
-
 Instead of using an ordinary `for`-`in` loop,
 the example above writes `for` with `await` after it.
 Like when you call an asynchronous function or method,
@@ -402,30 +288,6 @@ by adding conformance to the [`AsyncSequence`] protocol.
 
 [`Sequence`]: https://developer.apple.com/documentation/swift/sequence
 [`AsyncSequence`]: https://developer.apple.com/documentation/swift/asyncsequence
-
-<!--
-  TODO what happened to ``Series`` which was supposed to be a currency type?
-  Is that coming from Combine instead of the stdlib maybe?
-
-  Also... need a real API that produces a async sequence.
-  I'd prefer not to go through the whole process of making one here,
-  since the protocol reference has enough detail to show you how to do that.
-  There's nothing in the stdlib except for the AsyncFooSequence types.
-  Maybe one of the other conforming types from an Apple framework --
-  how about FileHandle.AsyncBytes (myFilehandle.bytes.lines) from Foundation?
-
-  https://developer.apple.com/documentation/swift/asyncsequence
-  https://developer.apple.com/documentation/foundation/filehandle
-
-  if we get a stdlib-provided async sequence type at some point,
-  rewrite the above to fit the same narrative flow
-  using something like the following
-
-  let names = await listPhotos(inGallery: "Winter Vacation")
-  for await photo in Photos(names: names) {
-      show(photo)
-  }
--->
 
 ## Calling Asynchronous Functions in Parallel
 
@@ -448,23 +310,6 @@ let photos = [firstPhoto, secondPhoto, thirdPhoto]
 show(photos)
 ```
 
-<!--
-  - test: `defining-async-function`
-
-  ```swifttest
-  >> func show(_ images: [Data]) { }
-  >> func ff() async {
-  >> let photoNames = ["IMG001", "IMG99", "IMG0404"]
-  -> let firstPhoto = await downloadPhoto(named: photoNames[0])
-  -> let secondPhoto = await downloadPhoto(named: photoNames[1])
-  -> let thirdPhoto = await downloadPhoto(named: photoNames[2])
-
-  -> let photos = [firstPhoto, secondPhoto, thirdPhoto]
-  -> show(photos)
-  >> }
-  ```
--->
-
 This approach has an important drawback:
 Although the download is asynchronous
 and lets other work happen while it progresses,
@@ -486,25 +331,6 @@ async let thirdPhoto = downloadPhoto(named: photoNames[2])
 let photos = await [firstPhoto, secondPhoto, thirdPhoto]
 show(photos)
 ```
-
-<!--
-  - test: `calling-with-async-let`
-
-  ```swifttest
-  >> struct Data {}  // Instead of actually importing Foundation
-  >> func show(_ images: [Data]) { }
-  >> func downloadPhoto(named name: String) async -> Data { return Data() }
-  >> let photoNames = ["IMG001", "IMG99", "IMG0404"]
-  >> func f() async {
-  -> async let firstPhoto = downloadPhoto(named: photoNames[0])
-  -> async let secondPhoto = downloadPhoto(named: photoNames[1])
-  -> async let thirdPhoto = downloadPhoto(named: photoNames[2])
-
-  -> let photos = await [firstPhoto, secondPhoto, thirdPhoto]
-  -> show(photos)
-  >> }
-  ```
--->
 
 In this example,
 all three calls to `downloadPhoto(named:)` start
@@ -639,24 +465,6 @@ Finally,
 the task group returns the array of downloaded photos
 as its overall result.
 
-<!--
-TODO:
-In the future,
-we could extend the example above
-to show how you can limit the number of concurrent tasks
-that get spun up by a task group.
-There isn't a specific guideline we can give
-in terms of how many concurrent tasks to run --
-it's more "profile your code, and then adjust".
-
-See also:
-https://developer.apple.com/videos/play/wwdc2023/10170?time=688
-
-We could also show withDiscardingTaskGroup(...)
-since that's optimized for child tasks
-whose values aren't collected.
--->
-
 ### Task Cancellation
 
 Swift concurrency uses a cooperative cancellation model.
@@ -765,153 +573,6 @@ Because the task is still running when the cancellation handler starts,
 avoid sharing state between the task and its cancellation handler,
 which could create a race condition.
 
-<!--
-  OUTLINE
-
-  - cancellation propagates (Konrad's example below)
-
-  ::
-
-      let handle = Task.detached {
-      await withTaskGroup(of: Bool.self) { group in
-          var done = false
-          while done {
-          await group.addTask { Task.isCancelled } // is this child task canceled?
-          done = try await group.next() ?? false
-          }
-      print("done!") // <1>
-      }
-
-      handle.cancel()
-      // done!           <1>
--->
-
-<!--
-  Not for WWDC, but keep for future:
-
-  task have deadlines, not timeouts --- like "now + 20 ms" ---
-  a deadline is usually what you want anyhow when you think of a timeout
-
-  - this chapter introduces the core ways you use tasks;
-  for the full list what you can do,
-  including the unsafe escape hatches
-  and ``Task.current()`` for advanced use cases,
-  see the Task API reference [link to stdlib]
-
-  - task cancellation isn't part of the state diagram below;
-  it's an independent property that can happen in any state
-
-  [PLACEHOLDER ART]
-
-  Task state diagram
-
-     |
-     v
-  Suspended <-+
-     |        |
-     v        |
-  Running ----+
-     |
-     v
-  Completed
-
-  [PLACEHOLDER ART]
-
-  Task state diagram, including "substates"
-
-     |
-     v
-  Suspended <-----+
-  (Waiting) <---+ |
-     |          | |
-     v          | |
-  Suspended     | |
-  (Schedulable) / |
-     |            |
-     v            |
-  Running --------+
-     |
-     v
-  Completed
-
-  .. _Concurrency_ChildTasks:
-
-  Adding Child Tasks to a Task Group
-
-  - awaiting ``withGroup`` means waiting for all child tasks to complete
-
-  - a child task can't outlive its parent,
-  like how ``async``-``let`` can't outlive the (implicit) parent
-  which is the function scope
-
-  - awaiting ``addTask(priority:operation:)``
-  means waiting for that child task to be added,
-  not waiting for that child task to finish
-
-  - ?? maybe cover ``TaskGroup.next``
-  probably nicer to use the ``for await result in someGroup`` syntax
-
-  quote from the SE proposal --- I want to include this fact here too
-
-  > There's no way for reference to the child task to
-  > escape the scope in which the child task is created.
-  > This ensures that the structure of structured concurrency is maintained.
-  > It makes it easier to reason about
-  > the concurrent tasks that are executing within a given scope,
-  > and also enables various optimizations.
--->
-
-<!--
-  OUTLINE
-
-  .. _Concurrency_TaskPriority:
-
-  Setting Task Priority
-
-  - priority values defined by ``Task.Priority`` enum
-
-  - type property ``Task.currentPriority``
-
-  - The exact result of setting a task's priority depends on the executor
-
-  - TR: What's the built-in stdlib executor do?
-
-  - Child tasks inherit the priority of their parents
-
-  - If a high-priority task is waiting for a low-priority one,
-  the low-priority one gets scheduled at high priority
-  (this is known as :newTerm:`priority escalation`)
-
-  - In addition, or instead of, setting a low priority,
-  you can use ``Task.yield()`` to explicitly pass execution to the next scheduled task.
-  This is a sort of cooperative multitasking for long-running work.
-
-You can explicitly insert a suspension point
-by calling the [`Task.yield()`][] method.
-
-[`Task.yield()`]: https://developer.apple.com/documentation/swift/task/yield()
-
-```swift
-func generateSlideshow(forGallery gallery: String) async {
-    let photos = await listPhotos(inGallery: gallery)
-    for photo in photos {
-        // ... render a few seconds of video for this photo ...
-        await Task.yield()
-    }
-}
-```
-
-Assuming the code that renders video is synchronous,
-it doesn't contain any suspension points.
-The work to render video could also take a long time.
-However,
-you can periodically call `Task.yield()`
-to explicitly add suspension points.
-Structuring long-running code this way
-lets Swift balance between making progress on this task,
-and letting other tasks in your program make progress on their work.
--->
-
 ### Unstructured Concurrency
 
 In addition to the structured approaches to concurrency
@@ -936,7 +597,6 @@ The new task defaults to running without any actor isolation
 and doesn't inherit the current task's priority or task-local state.
 Both of these operations return a task that you can interact with ---
 for example, to wait for its result or to cancel it.
-<!-- TODO: In SE-0461 terms, Task.detached runs as an @concurrent function. -->
 
 ```swift
 let newPhoto = // ... some photo data ...
@@ -951,13 +611,6 @@ see [`Task`](https://developer.apple.com/documentation/swift/task).
 
 [`Task.init(name:priority:operation:)`]: https://developer.apple.com/documentation/swift/task/init(name:priority:operation:)-43wmk
 [`Task.detached(name:priority:operation:)`]: https://developer.apple.com/documentation/swift/task/detached(name:priority:operation:)-795w1
-
-<!--
-  TODO Add some conceptual guidance about
-  when to make a method do its work in a detached task
-  versus making the method itself async?
-  (Pull from my 2021-04-21 notes from Ben's talk rehearsal.)
--->
 
 ## Isolation
 
@@ -1020,23 +673,6 @@ in a way that's still safe and correct.
 > Your code interacts with the main actor;
 > the main thread is a lower-level implementation detail.
 
-<!--
-TODO: Discuss the SE-0478 syntax for 'using @MainActor'
-
-When you're writing UI code,
-you often want all of it to be isolated to the main actor.
-To do this, you can write `using @MainActor`
-at the top of a Swift file to apply that attribute by default
-to all the code in the file.
-If there's a specific function or property
-that you want to exclude from `using @MainActor`,
-you can use the `nonisolated` modifier on that declaration
-to override the default.
-Modules can be configured to be built using `using @MainActor` by default.
-This can be overridden on a per-file basis
-by writing `using nonisolated` at the top of a file.
--->
-
 There are several ways to run work on the main actor.
 To ensure a function always runs on the main actor,
 mark it with the `@MainActor` attribute:
@@ -1076,12 +712,6 @@ Because the `downloadAndShowPhoto(named:)` function isn't on the main actor,
 the work in `downloadPhoto(named:)` also doesn't run on the main actor.
 Only the work in `show(_:)` to update the UI runs on the main actor,
 because that function is marked with the `@MainActor` attribute.
-<!-- TODO
-When updating for SE-0461,
-this is a good place to note
-that downloadPhoto(named:) runs
-on whatever actor you were on when you called it.
--->
 
 To ensure that a closure runs on the main actor,
 you write `@MainActor` before the capture list and before `in`,
@@ -1207,24 +837,6 @@ actor TemperatureLogger {
     }
 }
 ```
-
-<!--
-  - test: `actors, actors-implicitly-sendable`
-
-  ```swifttest
-  -> actor TemperatureLogger {
-         let label: String
-         var measurements: [Int]
-         private(set) var max: Int
-
-         init(label: String, measurement: Int) {
-             self.label = label
-             self.measurements = [measurement]
-             self.max = measurement
-         }
-     }
-  ```
--->
 
 You introduce an actor with the `actor` keyword,
 followed by its definition in a pair of braces.
@@ -1398,59 +1010,6 @@ You can define your own singleton global actors
 using the `@globalActor` attribute,
 as described in [globalActor](../ReferenceManual/Attributes.md#globalActor).
 
-<!--
-  OUTLINE
-
-  Add this post-WWDC when we have a more solid story to tell around Sendable
-
-   .. _Concurrency_ActorIsolation:
-
-   Actor Isolation
-
-   TODO outline impact from SE-0313 Control Over Actor Isolation
-   about the 'isolated' and 'nonisolated' keywords
-
-   - actors protect their mutable state using :newTerm:`actor isolation`
-   to prevent data races
-   (one actor reading data that's in an inconsistent state
-   while another actor is updating/writing to that data)
-
-   - within an actor's implementation,
-   you can read and write to properties of ``self`` synchronously,
-   likewise for calling methods of ``self`` or ``super``
-
-   - method calls from outside the actor are always async,
-   as is reading the value of an actor's property
-
-   - you can't write to a property directly from outside the actor
-
-   - The same actor method can be called multiple times, overlapping itself.
-   This is sometimes referred to as *reentrant code*.
-   The behavior is defined and safe... but might have unexpected results.
-   However, the actor model doesn't require or guarantee
-   that these overlapping calls behave correctly (that they're *idempotent*).
-   Encapsulate state changes in a synchronous function
-   or write them so they don't contain an ``await`` in the middle.
-
-   - If a closure is ``@Sendable`` or ``@escaping``
-   then it behaves like code outside of the actor
-   because it could execute concurrently with other code that's part of the actor
-
-   exercise the log actor, using its client API to mutate state
-
-   ::
-
-       let logger = TemperatureSensor(lines: [
-           "Outdoor air temperature",
-           "25 C",
-           "24 C",
-       ])
-       print(await logger.getMax())
-
-       await logger.update(with: "27 C")
-       print(await logger.getMax())
--->
-
 ## Sendable Types
 
 Tasks and actors let you divide a program
@@ -1496,16 +1055,6 @@ In general, there are three ways for a type to be sendable:
   or a class that serializes access to its properties
   on a particular thread or queue.
 
-<!--
-  There's no example of the third case,
-  where you serialize access to the class's members,
-  because the stdlib doesn't include the locking primitives you'd need.
-  Implementing it in terms of NSLock or some Darwin API
-  isn't a good fit for TSPL.
-  Implementing it in terms of isKnownUniquelyReferenced(_:)
-  and copy-on-write is also probably too involved for TSPL.
--->
-
 For a detailed list of the semantic requirements,
 see the [`Sendable`](https://developer.apple.com/documentation/swift/sendable) protocol reference.
 
@@ -1530,26 +1079,6 @@ let reading = TemperatureReading(measurement: 45)
 await logger.addReading(from: reading)
 ```
 
-<!--
-  - test: `actors`
-
-  ```swifttest
-  -> struct TemperatureReading: Sendable {
-         var measurement: Int
-     }
-
-  -> extension TemperatureLogger {
-         func addReading(from reading: TemperatureReading) {
-             measurements.append(reading.measurement)
-         }
-     }
-
-  -> let logger = TemperatureLogger(label: "Tea kettle", measurement: 85)
-  -> let reading = TemperatureReading(measurement: 45)
-  -> await logger.addReading(from: reading)
-  ```
--->
-
 Because `TemperatureReading` is a structure that has only sendable properties,
 and the structure isn't marked `public` or `@usableFromInline`,
 it's implicitly sendable.
@@ -1561,16 +1090,6 @@ struct TemperatureReading {
     var measurement: Int
 }
 ```
-
-<!--
-  - test: `actors-implicitly-sendable`
-
-  ```swifttest
-  -> struct TemperatureReading {
-         var measurement: Int
-     }
-  ```
--->
 
 To explicitly mark a type as not being sendable,
 write an unavailable conformance to `Sendable`:
@@ -1584,58 +1103,6 @@ struct FileDescriptor {
 extension FileDescriptor: Sendable {}
 ```
 
-<!--
-The example above is based on a Swift System API.
-https://github.com/apple/swift-system/blob/main/Sources/System/FileDescriptor.swift
-
-See also this PR that adds Sendable conformance to FileDescriptor:
-https://github.com/apple/swift-system/pull/112
--->
-
 You can also use an unavailable conformance
 to suppress implicit conformance to a protocol,
 as discussed in [Implicit Conformance to a Protocol](Protocols.md#Implicit-Conformance-to-a-Protocol).
-
-<!--
-  LEFTOVER OUTLINE BITS
-
-  - like classes, actors can inherit from other actors
-
-  - actors can also inherit from ``NSObject``,
-  which lets you mark them ``@objc`` and do interop stuff with them
-
-  - every actor implicitly conforms to the ``Actor`` protocol,
-  which has no requirements
-
-  - you can use the ``Actor`` protocol to write code that's generic across actors
-
-  - In the future, when we get distributed actors,
-    the TemperatureSensor example
-    might be a good example to expand when explaining them.
-
-  ::
-
-      while let result = try await group.next() { }
-      for try await result in group { }
-
-  how much should you have to understand threads to understand this?
-  Ideally you don't have to know anything about them.
-
-  How do you meld async-await-Task-Actor with an event driven model?
-  Can you feed your user events through an async sequence or Combine
-  and then use for-await-in to spin an event loop?
-  I think so --- but how do you get the events *into* the async sequence?
-
-  Probably don't cover unsafe continuations (SE-0300) in TSPL,
-  but maybe link to them?
--->
-
-<!--
-This source file is part of the Swift.org open source project
-
-Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
-Licensed under Apache License v2.0 with Runtime Library Exception
-
-See https://swift.org/LICENSE.txt for license information
-See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
--->

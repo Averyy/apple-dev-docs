@@ -20,11 +20,11 @@ init?(processIdentifier pid: pid_t)
 - (SBApplication *) initWithProcessIdentifier:(pid_t) pid;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `SBApplication` that you can use to communicate with the target application specified by the process ID. Returns `nil` if no such application can be found or if the application does not have a scripting interface.
 
-#### Discussion
+## Discussion
 
 You should avoid using this method unless you know nothing about an external application but its PID. In most cases, it is better to use [`init(bundleIdentifier:)`](./init%28bundleidentifier%29.md), which will dynamically locate the external application’s path at runtime, or [`init(url:)`](./init%28url%29-6xbe5.md), which is not dependent on the external application being open at the time the method is called.
 

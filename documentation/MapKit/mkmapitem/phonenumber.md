@@ -25,7 +25,7 @@ var phoneNumber: String? { get set }
 @property (nonatomic, copy, nullable) NSString * phoneNumber;
 ```
 
-#### Discussion
+## Discussion
 
 If there’s a relevant phone number associated with the location, such as for a business at the location, use this property to specify that value.
 

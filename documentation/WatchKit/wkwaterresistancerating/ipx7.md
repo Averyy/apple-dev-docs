@@ -19,7 +19,7 @@ case ipx7
 WKWaterResistanceRatingIPX7
 ```
 
-#### Discussion
+## Discussion
 
 This rating indicates a water resistance of IPX7 under IEC standard 60529. Apple Watch is splash and water resistant, but submerging the watch is not recommended.
 

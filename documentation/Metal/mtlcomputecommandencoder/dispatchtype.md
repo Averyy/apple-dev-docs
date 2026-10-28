@@ -25,7 +25,7 @@ var dispatchType: MTLDispatchType { get }
 @property (readonly) MTLDispatchType dispatchType;
 ```
 
-#### Discussion
+## Discussion
 
 You set this property when you create the command encoder, and it doesn’t change for the remainder of the encoding.
 

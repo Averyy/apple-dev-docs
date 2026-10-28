@@ -14,7 +14,7 @@ A function that manipulates the location of a model’s vertices, run once per v
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -35,7 +35,7 @@ A function that manipulates the location of a model’s vertices, run once per v
 | --- | --- |
 | `Out` | Token |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Model Position Offset`**: The offset to each vertices model position.
 - **`Color`**: The color of each vertex.
@@ -51,7 +51,7 @@ A function that manipulates the location of a model’s vertices, run once per v
 - **`User Attribute Half2 0`**: A user-defined attribute the node attaches to each vertex of the object.
 - **`User Attribute Half2 1`**: A user-defined attribute the node attaches to each vertex of the object.
 
-### Discussion
+## Discussion
 
 The Geometry Modifier node can be used to cause a material to affect the geometry of any object to which it’s applied, in addition to the objects texture. Connect the output of the Geometry modifier node to the `Custom Geometry Modifier` output of your material. Below is an example of a simple node graph that uses the Geometry Modifier node to alter the *Y* model positions of vertices.
 

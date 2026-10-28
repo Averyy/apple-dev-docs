@@ -18,7 +18,7 @@ Download (or retrieve from cache) a snapshot of a repository.
 func download(id: String, revision: String?, matching patterns: [String], useLatest: Bool, progressHandler: @Sendable @escaping (Progress) -> Void) async throws -> URL
 ```
 
-#### Return Value
+## Return Value
 
 Local directory URL containing the downloaded files
 

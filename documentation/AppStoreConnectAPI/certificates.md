@@ -5,7 +5,7 @@
 
 Create, download, and revoke signing certificates for app development and distribution.
 
-#### Overview
+## Overview
 
 The `certificates` resource represents the digital certificates you use to sign your iOS or Mac apps for development and distribution. You can create new certificates, revoke existing certificates, and download certificates.
 

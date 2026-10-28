@@ -19,7 +19,7 @@ struct FSCompleteIOFlags
 enum FSCompleteIOFlags : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 This type is an option set in Swift. In Objective-C, the cases of this enumeration combine to create a bit field.
 

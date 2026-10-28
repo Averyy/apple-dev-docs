@@ -23,7 +23,7 @@ The reflexive pronoun form to apply when using this custom pronoun behavior.
 var reflexiveForm: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The English pronoun “herself” is an example of the reflexive form.
 

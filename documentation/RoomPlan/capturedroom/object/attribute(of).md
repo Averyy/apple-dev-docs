@@ -17,7 +17,7 @@ Checks an object for specific attribute types.
 func attribute<T>(of attributeType: T.Type) -> T? where T : CapturedRoomAttribute
 ```
 
-#### Discussion
+## Discussion
 
 This function provides details about an object based on attribute type. For example, the following code checks whether an object the framework observes during a scan resembles a dining table:
 

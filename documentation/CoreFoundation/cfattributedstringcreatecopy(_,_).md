@@ -25,7 +25,7 @@ func CFAttributedStringCreateCopy(_ alloc: CFAllocator!, _ aStr: CFAttributedStr
 extern CFAttributedStringRefCFAttributedStringCreateCopy(CFAllocatorRef alloc, CFAttributedStringRef aStr);
 ```
 
-#### Return Value
+## Return Value
 
 An immutable attributed string with characters and attributes identical to those of `aStr`. Returns `NULL` if there was a problem copying the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

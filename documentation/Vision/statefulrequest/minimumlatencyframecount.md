@@ -22,7 +22,7 @@ The minimum number of frames that the request has to process before reporting an
 var minimumLatencyFrameCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 The request provides this information after it’s initialized with its required parameters.
 

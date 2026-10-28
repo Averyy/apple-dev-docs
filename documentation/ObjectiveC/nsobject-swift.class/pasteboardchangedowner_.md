@@ -15,7 +15,7 @@ Notifies a prior owner of the specified pasteboard (and owners of representation
 - (void) pasteboardChangedOwner:(NSPasteboard *) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Pasteboard owners only need to implement this method if they need to know when they have lost ownership.
 

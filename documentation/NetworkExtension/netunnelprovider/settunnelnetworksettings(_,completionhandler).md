@@ -32,7 +32,7 @@ func setTunnelNetworkSettings(_ tunnelNetworkSettings: NETunnelNetworkSettings?)
 
 - [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
-#### Discussion
+## Discussion
 
 Use this method to specify the settings to be used by network communication that traverses the tunnel. If you are implementing a Packet Tunnel Provider, pass a [`NEPacketTunnelNetworkSettings`](../nepackettunnelnetworksettings.md) object containing virtual IP configuration, DNS settings, proxy settings, the tunnel MTU, and IP routes. If you are implementing an App Proxy Provider, pass a [`NETunnelNetworkSettings`](../netunnelnetworksettings.md) containing DNS settings and proxy settings.
 

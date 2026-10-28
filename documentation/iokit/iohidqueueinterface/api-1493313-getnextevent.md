@@ -16,7 +16,7 @@ Reads next event from the queue.
 IOReturn (*getNextEvent)(void *self, IOHIDEventStruct *event, AbsoluteTime maxTime, uint32_t timeoutMS);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 

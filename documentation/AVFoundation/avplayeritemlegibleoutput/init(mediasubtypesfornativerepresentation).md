@@ -28,11 +28,11 @@ init(mediaSubtypesForNativeRepresentation subtypes: [NSNumber])
 
 - [init](../api-1805461-init.md)
 
-#### Return Value
+## Return Value
 
 An initialized instance of `AVPlayerItemLegibleOutput`.
 
-#### Discussion
+## Discussion
 
 When creating an instance you add media subtype FourCC codes as `NSNumber` objects to the `subtypes` array to elect to receive that type as a [`CMSampleBuffer`](../../CoreMedia/cmsamplebuffer.md) instead of an attributed string. FourCC codes are converted to `NSNumber` objects as shown:
 

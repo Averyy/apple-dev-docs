@@ -23,7 +23,7 @@ static var bySentences: NSString.EnumerationOptions { get }
 NSStringEnumerationBySentences
 ```
 
-#### Discussion
+## Discussion
 
 Enumerates by sentences.
 

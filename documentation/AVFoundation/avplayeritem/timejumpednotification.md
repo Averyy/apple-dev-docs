@@ -25,7 +25,7 @@ class let timeJumpedNotification: NSNotification.Name
 extern NSNotificationName const AVPlayerItemTimeJumpedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s object is the player item.
 

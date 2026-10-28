@@ -15,11 +15,11 @@ Gets the transport type of the clock device.
 IOUserAudioTransportType GetTransportType();
 ```
 
-#### Return Value
+## Return Value
 
 The clock device’s transport type.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

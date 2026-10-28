@@ -19,7 +19,7 @@ A default implementation that provides the interaction view’s root view contro
 func presentingViewController(for interaction: ImageAnalysisInteraction) -> UIViewController?
 ```
 
-#### Return Value
+## Return Value
 
 The interaction view’s root view controller.
 

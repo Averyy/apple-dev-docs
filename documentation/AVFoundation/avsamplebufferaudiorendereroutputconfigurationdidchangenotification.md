@@ -21,7 +21,7 @@ A notification that indicates the hardware configuration does not match the enqu
 extern NSNotificationName const AVSampleBufferAudioRendererOutputConfigurationDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The output configuration of the playback hardware might change during the playback session if other clients play content with different format. In such cases, if the media content format does not match the hardware configuration it would produce suboptimal rendering of the enqueued media data. When the framework detects such mismatch it will issue this notification, so the client can flush the renderer and re-enqueue the sample buffers from the current media playhead, which will configure the hardware based on the format of newly enqueued sample buffers.
 

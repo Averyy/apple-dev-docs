@@ -23,7 +23,7 @@ optional func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequ
 - (BOOL) webView:(UIWebView *) webView shouldStartLoadWithRequest:(NSURLRequest *) request navigationType:(UIWebViewNavigationType) navigationType;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the web view should begin loading content; otherwise, [`false`](../../Swift/false.md) .
 

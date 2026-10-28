@@ -19,7 +19,7 @@ typealias SpeechSyncProcPtr = (SpeechChannel, SRefCon, OSType) -> Void
 typedef void (*SpeechSyncProcPtr)(SpeechChannel chan, SRefCon refCon, OSType syncMessage);
 ```
 
-#### Discussion
+## Discussion
 
 The Speech Synthesis Manager calls a speech channel’s synchronizationcallback function whenever it encounters a synchronization commandembedded in a text buffer. You might use the synchronization callbackfunction to provide a callback not ordinarily provided. For example,you might inset synchronization commands at the end of every sentencein a text buffer, or you might enter synchronization commands afterevery numeric value in the text. However, to synchronize your applicationwith phonemes or words, it makes more sense to use the built-inphoneme and word callback functions, defined in [`SpeechPhonemeProcPtr`](./speechphonemeprocptr.md).
 

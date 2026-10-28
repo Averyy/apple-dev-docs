@@ -19,7 +19,7 @@ func ABRecordCopyUniqueId(_ record: ABRecordRef!) -> Unmanaged<CFString>!
 extern CFStringRefABRecordCopyUniqueId(ABRecordRef record);
 ```
 
-#### Return Value
+## Return Value
 
 The unique ID correspondingto `record`. You are responsible forreleasing this object.
 

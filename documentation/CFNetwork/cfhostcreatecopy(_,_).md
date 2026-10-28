@@ -26,11 +26,11 @@ func CFHostCreateCopy(_ alloc: CFAllocator?, _ host: CFHost) -> Unmanaged<CFHost
 extern CFHostRefCFHostCreateCopy(CFAllocatorRef alloc, CFHostRef host);
 ```
 
-#### Return Value
+## Return Value
 
 A valid CFHost object or `NULL` if the copy could not be created. The new host contains a copy of all previously resolved data from the original host. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function is thread safe.
 

@@ -23,7 +23,7 @@ var uniqueIdentifier: String { get set }
 @property (copy) NSString * uniqueIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property is required because it’s the only way to identify searchable items in the index when you need to access or delete them. When you create a searchable item, the system generates a UUID by default, but you can replace the default value with a unique identifier that makes sense in the context of your app. If you want to use a custom value for [`uniqueIdentifier`](./uniqueidentifier.md), be sure to set it before the item is indexed for the first time.
 

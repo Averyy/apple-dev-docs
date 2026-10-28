@@ -20,7 +20,7 @@ typealias CGDisplayStreamFrameAvailableHandler = (CGDisplayStreamFrameStatus, UI
 typedef void (^)(enum CGDisplayStreamFrameStatus, unsigned long long, struct __IOSurface *, const struct CGDisplayStreamUpdate *) CGDisplayStreamFrameAvailableHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The handler is called whenever the display stream has updated content to process as well as when other events occur. Each time a new frame is generated, the block receives an `IOSurface` object that contains the pixel data as well as an update object that describes the frame update.
 

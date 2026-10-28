@@ -26,7 +26,7 @@ func waitForNonExistence(timeout: TimeInterval) -> Bool
 - (BOOL) waitForNonExistenceWithTimeout:(NSTimeInterval) timeout;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

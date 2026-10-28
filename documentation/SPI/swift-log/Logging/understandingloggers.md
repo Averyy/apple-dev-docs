@@ -10,7 +10,7 @@ framework: "swift-log/Logging"
 
 Learn how to create and configure loggers, set log levels, and use metadata to add context to your log messages.
 
-#### Overview
+## Overview
 
 Create or retrieve a logger to get an instance for logging messages. Log messages have a level that you use to indicate the message’s importance.
 
@@ -26,7 +26,7 @@ SwiftLog defines seven log levels, represented by [`Logger.Level`](./logger/leve
 
 Once a message is sent to a logger, a log handler processes it. The app using the logger configures the handler, usually for the environment in which that app runs, processing messages appropriate to that environment. If the app doesn’t provide its own log handler, SwiftLog defaults to using a [`StreamLogHandler`](./streamloghandler.md) that outputs log messages to `STDOUT`.
 
-##### Loggers
+### Loggers
 
 Loggers are used to emit log messages at different severity levels:
 
@@ -54,7 +54,7 @@ requestLogger[metadataKey: "request-id"] = "\(UUID())"
 
 This value type behavior makes loggers safe to pass between functions and modify without unexpected side effects.
 
-##### Log Levels
+### Log Levels
 
 Log levels can be changed per logger without affecting others:
 
@@ -65,7 +65,7 @@ logger.logLevel = .debug
 
 For guidance on what level to use for a message, see [001: Choosing log levels](./api-001-choosingloglevels.md).
 
-##### Logging Metadata
+### Logging Metadata
 
 Metadata provides contextual information crucial for debugging:
 
@@ -81,7 +81,7 @@ Output:
 2019-03-13T18:30:02+0000 info: request-uuid=F8633013-3DD8-481C-9256-B296E43443ED Processing request
 ```
 
-##### Source vs Label
+### Source vs Label
 
 A [`Logger`](./logger.md) has an immutable `label` that identifies its creator, while each log message carries a `source` parameter that identifies where the message originated. Use `source` for filtering messages from specific subsystems.
 

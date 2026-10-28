@@ -18,7 +18,7 @@ Posted when the current device’s ability to send text messages changes.
 static let MFMessageComposeViewControllerTextMessageAvailabilityDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification when the value [`canSendText()`](../../../MessageUI/mfmessagecomposeviewcontroller/cansendtext%28%29.md) returns has changed.
 

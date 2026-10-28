@@ -23,7 +23,7 @@ var activeExternalDisplayFrameRate: Double { get }
 @property (nonatomic, readonly) double activeExternalDisplayFrameRate;
 ```
 
-#### Discussion
+## Discussion
 
 Observe this property to determine if the configured frame rate matches the max frame rate ([`activeVideoMinFrameDuration`](../avcapturedevice/activevideominframeduration.md)) of the device. When the [`isActive`](./isactive.md) property becomes `false`, this property changes to 0.
 

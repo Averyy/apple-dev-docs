@@ -30,7 +30,7 @@ Available when `DelegateType` inherits `NSObject`, `DelegateType` conforms to `N
 @preconcurrency init(_ delegateType: DelegateType.Type = DelegateType.self)
 ```
 
-#### Discussion
+## Discussion
 
 Call this initializer indirectly by creating a property with the [`NSApplicationDelegateAdaptor`](../nsapplicationdelegateadaptor.md) property wrapper from inside your [`App`](../app.md) declaration:
 

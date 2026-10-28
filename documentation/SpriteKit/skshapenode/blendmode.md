@@ -25,7 +25,7 @@ var blendMode: SKBlendMode { get set }
 @property (nonatomic) SKBlendMode blendMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`SKBlendMode.alpha`](../skblendmode/alpha.md).
 

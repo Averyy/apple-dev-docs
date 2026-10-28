@@ -21,7 +21,7 @@ Dequeues a buffer from the queue, if it’s ready.
 func dequeueIfDataReady() -> CMBuffer?
 ```
 
-#### Return Value
+## Return Value
 
 A buffer or `nil` if the buffer is empty or the data isn’t ready.
 

@@ -19,7 +19,7 @@ func getHeader() -> String!
 - (NSString *) getHeader;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the header text of the device selector panel.
 

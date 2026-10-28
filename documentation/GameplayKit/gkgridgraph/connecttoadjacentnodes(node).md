@@ -24,7 +24,7 @@ func connectToAdjacentNodes(node: GKGridGraphNode)
 - (void) connectNodeToAdjacentNodes:(GKGridGraphNode *) node;
 ```
 
-#### Discussion
+## Discussion
 
 Nodes attached through this method do not become part of the grid itself, but instead can represent positions of game entities in the grid. Use nodes connected in this way to find paths between such positions.
 

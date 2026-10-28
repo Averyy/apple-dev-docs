@@ -24,11 +24,11 @@ func segueForUnwinding(to toViewController: UIViewController, from fromViewContr
 - (UIStoryboardSegue *) segueForUnwindingToViewController:(UIViewController *) toViewController fromViewController:(UIViewController *) fromViewController identifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 A segue object for managing the transitions between the two view controllers.
 
-#### Discussion
+## Discussion
 
 If you implement a custom container view controller that also uses segue unwinding, you must override this method. In your custom implementation, instantiate and return a segue object that performs whatever animation and other steps that are necessary to unwind the view controllers.
 

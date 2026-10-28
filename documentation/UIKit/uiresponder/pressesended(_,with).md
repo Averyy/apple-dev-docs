@@ -27,7 +27,7 @@ func pressesEnded(_ presses: Set<UIPress>, with event: UIPressesEvent?)
 
 - [Handling key presses made on a physical keyboard](../handling-key-presses-made-on-a-physical-keyboard.md)
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the user stops pressing one or more buttons. Use this method to take any needed actions in response to the end of the press.The default implementation of this method forwards the message up the responder chain. When creating your own subclasses, call `super` to forward any events that you don’t handle yourself.
 

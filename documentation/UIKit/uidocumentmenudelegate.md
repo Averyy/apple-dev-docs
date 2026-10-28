@@ -24,7 +24,7 @@ protocol UIDocumentMenuDelegate : NSObjectProtocol
 @protocol UIDocumentMenuDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The document menu calls the methods of this protocol when the user selects a document picker or dismisses the menu. If the user selects a document picker, set the picker’s delegate and present it.
 

@@ -25,7 +25,7 @@ init(proxyHost host: String, port: Int, type: String?, realm: String?, authentic
 - (instancetype) initWithProxyHost:(NSString *) host port:(NSInteger) port type:(NSString *) type realm:(NSString *) realm authenticationMethod:(NSString *) authenticationMethod;
 ```
 
-#### Return Value
+## Return Value
 
 A new protection space object, with the given host, port, proxyType, realm, and authenticationMethod.
 

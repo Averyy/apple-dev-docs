@@ -25,7 +25,7 @@ var isBinaural: Bool { get }
 @property (nonatomic, readonly, getter=isBinaural) BOOL binaural;
 ```
 
-#### Discussion
+## Discussion
 
 A binaural variant may originate from a direct binaural recording or from the processing of a multichannel audio source.
 

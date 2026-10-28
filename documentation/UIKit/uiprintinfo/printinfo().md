@@ -22,7 +22,7 @@ class func printInfo() -> UIPrintInfo
 + (UIPrintInfo *) printInfo;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `UIPrintInfo` or `nil` if the object could not be created.
 

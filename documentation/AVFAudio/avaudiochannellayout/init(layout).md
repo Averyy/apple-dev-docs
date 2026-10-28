@@ -25,11 +25,11 @@ init(layout: UnsafePointer<AudioChannelLayout>)
 - (instancetype) initWithLayout:(const AudioChannelLayout *) layout;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioChannelLayout` object.
 
-#### Discussion
+## Discussion
 
 If the audio channel layout object’s tag is [`kAudioChannelLayoutTag_UseChannelDescriptions`](../../CoreAudioTypes/kaudiochannellayouttag_usechanneldescriptions.md), this initializer attempts to convert it to a more specific tag.
 

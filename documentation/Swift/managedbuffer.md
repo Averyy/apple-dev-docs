@@ -21,7 +21,7 @@ A class whose instances contain a property of type `Header` and raw storage for 
 class ManagedBuffer<Header, Element> where Element : ~Copyable
 ```
 
-#### Overview
+## Overview
 
 Note that the `Element` array is suitably-aligned **raw memory**. You are expected to construct and—if necessary—destroy objects there yourself, using the APIs on `UnsafeMutablePointer<Element>`. Typical usage stores a count and capacity in `Header` and destroys any live elements in the `deinit` of a subclass.
 

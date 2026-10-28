@@ -25,7 +25,7 @@ static let frameRate: SCNScene.Attribute
 extern SCNSceneAttribute const SCNSceneFrameRateAttributeKey;
 ```
 
-#### Discussion
+## Discussion
 
 This value (in an [`NSNumber`](../../../Foundation/nsnumber.md) object) may be present in scenes loaded from scene files produced using external tools, but has no effect on SceneKit’s rendering of the scene.
 

@@ -20,7 +20,7 @@ Only keep a low-resolution proxy of the skybox, reducing memory usage.
 static var discard: EnvironmentResource.SkyboxMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The skybox is not needed for lighting with `VirtualEnvironmentProbeComponent` and `ImageBasedLightComponent`.
 

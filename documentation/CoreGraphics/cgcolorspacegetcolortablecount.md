@@ -21,7 +21,7 @@ Returns the number of entries in the color table of an indexed color space.
 extern size_t CGColorSpaceGetColorTableCount(CGColorSpaceRef space);
 ```
 
-#### Return Value
+## Return Value
 
 The number of entries in the color table of the `space` parameter if the color space is an indexed color space; otherwise, returns `0`.
 

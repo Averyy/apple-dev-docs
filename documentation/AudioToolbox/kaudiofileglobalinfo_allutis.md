@@ -24,7 +24,7 @@ var kAudioFileGlobalInfo_AllUTIs: AudioFilePropertyID { get }
 kAudioFileGlobalInfo_AllUTIs
 ```
 
-#### Discussion
+## Discussion
 
 If you access this property, your app is responsible for releasing the [`CFArray`](../CoreFoundation/cfarray.md) object.
 

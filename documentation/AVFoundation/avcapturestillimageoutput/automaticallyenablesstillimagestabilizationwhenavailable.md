@@ -21,7 +21,7 @@ var automaticallyEnablesStillImageStabilizationWhenAvailable: Bool { get set }
 @property (nonatomic) BOOL automaticallyEnablesStillImageStabilizationWhenAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 If [`isStillImageStabilizationSupported`](./isstillimagestabilizationsupported.md) returns [`true`](../../Swift/true.md), image stabilization may be applied to reduce blur commonly found in low light photos. When stabilization is enabled, still image captures incur additional latency.
 

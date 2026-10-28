@@ -19,7 +19,7 @@ static let vibrantDark: NSAppearance.Name
 extern NSAppearanceName const NSAppearanceNameVibrantDark;
 ```
 
-#### Discussion
+## Discussion
 
 Vibrant appearances use color blending to make the foreground appearance stand out from the background more prominently.
 

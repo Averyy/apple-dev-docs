@@ -23,7 +23,7 @@ func fulfill(withDateEnded dateEnded: Date)
 - (void) fulfillWithDateEnded:(NSDate *) dateEnded;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method instead of [`fulfill()`](../cxaction/fulfill%28%29.md) to note a time other than the current time that the call ended.
 

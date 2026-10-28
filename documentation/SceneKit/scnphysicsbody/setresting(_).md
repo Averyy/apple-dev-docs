@@ -25,7 +25,7 @@ func setResting(_ resting: Bool)
 - (void) setResting:(BOOL) resting;
 ```
 
-#### Discussion
+## Discussion
 
 When a body is at rest, SceneKit assumes that the body will not move unless another body collides with it, you change the body’s position or velocity directly, or you apply a force to the body. Resting bodies don’t participate in the physics simulation, reducing the performance cost of physics calculations and ensuring that those bodies don’t move unexpectedly.
 

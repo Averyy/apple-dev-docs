@@ -24,7 +24,7 @@ var value: Double { get set }
 @property (nonatomic) double value;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`.
 

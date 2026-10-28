@@ -37,7 +37,7 @@ var displayName: String { get }
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 The display name for a player depends on whether the player is a friend of the local player on the device. If the player is a friend of the local player, the display name is the actual name of the player. If the player isn’t a friend, the display name is the player’s alias.
 

@@ -5,7 +5,7 @@
 
 Declare support for well-known actions and content by applying system-defined schemas to your app intents, app entities, and app enumerations.
 
-#### Overview
+## Overview
 
 Help the system correctly understand your app and its intents, entities, and enumerations by conforming your types to system-defined schemas whenever possible. Each schema tells the system how to interpret one of your app’s types. For example, when an email app conforms one of its intents to the `.mail.createDraft` schema, the system knows it can invoke that intent to create a new email draft in that app. This information enhances the system’s understanding of your app’s content and helps facilitate interactions with Siri, Apple Intelligence, and other system features.
 

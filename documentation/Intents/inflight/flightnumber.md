@@ -32,7 +32,7 @@ var flightNumber: String { get }
 @property (atomic, copy, readonly) NSString * flightNumber;
 ```
 
-#### Discussion
+## Discussion
 
 This property doesn’t include the IATA or ICAO code of the airline associated with the flight.
 

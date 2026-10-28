@@ -24,7 +24,7 @@ init(title: String, identifier: EKVirtualConferenceRoomTypeIdentifier)
 - (instancetype) initWithTitle:(NSString *) title identifier:(EKVirtualConferenceRoomTypeIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 An object that describes a location where a virtual conference takes place.
 

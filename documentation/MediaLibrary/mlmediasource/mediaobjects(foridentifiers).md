@@ -22,11 +22,11 @@ func mediaObjects(forIdentifiers mediaObjectIdentifiers: [String]) -> [String : 
 - (NSDictionary<NSString *,MLMediaObject *> *) mediaObjectsForIdentifiers:(NSArray<NSString *> *) mediaObjectIdentifiers;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of media objects matching the specified identifiers.
 
-#### Discussion
+## Discussion
 
 The media source must have finished loading before this method returns valid data. Specifically, the root media group must be available before the lookup methods will succeed. Otherwise, the return value is undefined.
 

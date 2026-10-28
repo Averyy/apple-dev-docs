@@ -9,7 +9,7 @@ Provide the content key for a specific protected asset.
 **Availability**:
 - SiriKit Cloud Media 1.0.2+
 
-#### Discussion
+## Discussion
 
 If your service implements content protection, the client requests an item’s content protection key from this endpoint after each of the following events:
 

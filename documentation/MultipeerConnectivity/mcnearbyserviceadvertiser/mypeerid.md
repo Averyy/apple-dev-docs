@@ -34,7 +34,7 @@ var myPeerID: MCPeerID { get }
 @property (atomic, readonly) MCPeerID * myPeerID;
 ```
 
-#### Discussion
+## Discussion
 
 This value is set when you initialize the object, and cannot be changed later.
 

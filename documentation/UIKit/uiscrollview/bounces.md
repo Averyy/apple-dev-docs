@@ -23,7 +23,7 @@ var bounces: Bool { get set }
 @property (nonatomic) BOOL bounces;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the scroll view bounces when it encounters a boundary of the content. Bouncing visually indicates that scrolling has reached an edge of the content. If the value is [`false`](../../Swift/false.md), scrolling stops immediately at the content boundary without bouncing. The default value is [`true`](../../Swift/true.md).
 

@@ -21,7 +21,7 @@ The column where the text ends in the Markdown source.
 @property (readonly) NSInteger endColumn;
 ```
 
-#### Discussion
+## Discussion
 
 This property uses `1`-based counting. Columns represent UTF-8 indices; for multi-byte characters, the column indicates the first byte.
 

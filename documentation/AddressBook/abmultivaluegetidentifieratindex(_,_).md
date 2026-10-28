@@ -23,7 +23,7 @@ func ABMultiValueGetIdentifierAtIndex(_ multiValue: ABMultiValue!, _ index: CFIn
 extern ABMultiValueIdentifier ABMultiValueGetIdentifierAtIndex(ABMultiValueRef multiValue, CFIndex index);
 ```
 
-#### Return Value
+## Return Value
 
 Identifier of the value at `index` within `multiValue`.
 

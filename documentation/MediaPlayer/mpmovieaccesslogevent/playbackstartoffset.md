@@ -23,7 +23,7 @@ var playbackStartOffset: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval playbackStartOffset;
 ```
 
-#### Discussion
+## Discussion
 
 If the playback start offset is unknown, this property’s value is negative.
 

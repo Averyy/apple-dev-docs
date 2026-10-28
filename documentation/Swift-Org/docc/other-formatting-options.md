@@ -10,11 +10,11 @@ framework: "Swift-Org/docc"
 
 Improve the presentation and structure of your content by incorporating special page elements.
 
-#### Overview
+## Overview
 
 DocC offers support for various types of elements such as [tables](./adding-tables-of-data.md), notes, and asides.
 
-##### Add Notes and Other Asides
+### Add Notes and Other Asides
 
 There may be circumstances when you want to get the reader’s attention to provide additional advice, or to warn them about common errors or requisite configuration. For those situations, use an aside.
 
@@ -84,7 +84,7 @@ If you prefer, both these multi-element syntaxes can sometimes be more clear whe
 
 > 💡 **Tip**:  If you have much information to provide about a subtopic, consider using a subsection rather than a multi-paragraph aside. This can help with the flow of the text and make the information appear less visually heavy on the page.
 
-##### Include Special Characters in Text
+### Include Special Characters in Text
 
 To escape one or more special characters, precede each with a backslash (`\`).
 

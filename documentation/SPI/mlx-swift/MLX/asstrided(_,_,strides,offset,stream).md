@@ -21,11 +21,11 @@ func asStrided(_ array: MLXArray, _ shape: (some Collection<Int>)? = [Int]?.none
 
 - [Converting From Python](./converting-python.md)
 
-#### Return Value
+## Return Value
 
 The output array which is the strided view of the input
 
-#### Discussion
+## Discussion
 
 The resulting array will always be as if the provided array was row contiguous regardless of the provided arrays storage order and current strides.
 
@@ -50,7 +50,7 @@ let b = asStrided(a, [4, 4], strides: [-4, -1], offset: 15)
 let same = MLXArray((0 ..< 16).reversed(), [4, 4])
 ```
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 

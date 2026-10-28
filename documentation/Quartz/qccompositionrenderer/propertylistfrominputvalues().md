@@ -22,11 +22,11 @@ func propertyListFromInputValues() -> Any!
 - (id) propertyListFromInputValues;
 ```
 
-#### Return Value
+## Return Value
 
 A property list object.
 
-#### Discussion
+## Discussion
 
 This is a convenience method that allows you to easily save the set of input values on a composition. Typically, you store the set of values in application preferences.
 

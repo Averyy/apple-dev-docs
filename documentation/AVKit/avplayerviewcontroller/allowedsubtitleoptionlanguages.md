@@ -19,7 +19,7 @@ var allowedSubtitleOptionLanguages: [String]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSString *> * allowedSubtitleOptionLanguages;
 ```
 
-#### Discussion
+## Discussion
 
 When this property value is `nil` (the default), the player view controller UI presents all available subtitle options. The Auto subtitle option is only available when this property value is `nil` and [`requiresFullSubtitles`](./requiresfullsubtitles.md) is `false`.
 

@@ -21,7 +21,7 @@ A Boolean value that indicates whether an Apple In-App Purchase transaction exis
 let hasCurrentEntitlement: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`hasCurrentEntitlement`](./hascurrententitlement.md) property to determine whether a purchase may succeed, for a porduct that people can purchase only once. For example, if hasCurrentEntitlement is false, you may choose not to display a purchase button for the product, because the person has already purchased it.
 

@@ -16,7 +16,7 @@ Opens a connection to a device that is not already open.
 void (*close)(void *self);
 ```
 
-#### Discussion
+## Discussion
 
 Closes an exclusive access to the device. When a device is closed it may be unloaded by the kernel. If it is unloaded and then later reappears it will be represented by a different object. You won't be able to use this user client on the new object. The new object will have to be looked up in the IORegistry and a new user client will have to be opened on it.
 

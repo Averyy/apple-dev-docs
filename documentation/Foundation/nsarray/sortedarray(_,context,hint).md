@@ -25,7 +25,7 @@ func sortedArray(_ comparator: (Any, Any, UnsafeMutableRawPointer?) -> Int, cont
 - (NSArray<id> *) sortedArrayUsingFunction:(long (*)(id, id, void *)) comparator context:(void *) context hint:(NSData *) hint;
 ```
 
-#### Discussion
+## Discussion
 
 The new array contains references to the receiving array’s elements, not copies of them.
 

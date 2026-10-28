@@ -19,7 +19,7 @@ var isTitled: Bool { get set }
 @property (getter=isTitled) BOOL titled;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the columns in a browser display titles.
 

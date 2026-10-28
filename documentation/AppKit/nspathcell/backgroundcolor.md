@@ -20,7 +20,7 @@ var backgroundColor: NSColor? { get set }
 @property (copy, nullable) NSColor * backgroundColor;
 ```
 
-#### Return Value
+## Return Value
 
 The background color.
 

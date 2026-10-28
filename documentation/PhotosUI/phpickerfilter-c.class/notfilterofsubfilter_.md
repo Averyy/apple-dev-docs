@@ -19,7 +19,7 @@ Creates a new filter that excludes the filter you specify.
 + (PHPickerFilter *) notFilterOfSubfilter:(PHPickerFilter *) subfilter;
 ```
 
-#### Return Value
+## Return Value
 
 A new filter that excludes the filter you specify.
 

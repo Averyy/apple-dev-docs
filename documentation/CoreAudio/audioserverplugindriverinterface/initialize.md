@@ -19,11 +19,11 @@
 int (*)(struct AudioServerPlugInDriverInterface **, const struct AudioServerPlugInHostInterface *) Initialize;
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 This method is called to initialize the instance of the plug-in.
 

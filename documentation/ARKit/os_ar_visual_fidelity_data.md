@@ -19,7 +19,7 @@ protocol OS_ar_visual_fidelity_data : NSObjectProtocol
 @protocol OS_ar_visual_fidelity_data <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Provides real-time information about user eye positioning and field of view verification for regulatory compliance in medical and therapeutic applications.
 

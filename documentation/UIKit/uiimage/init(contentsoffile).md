@@ -24,11 +24,11 @@ init?(contentsOfFile path: String)
 - (instancetype) initWithContentsOfFile:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `UIImage` object, or `nil` if the method could not find the file or initialize the image from its contents.
 
-#### Discussion
+## Discussion
 
 This method loads the image data into memory and marks it as purgeable. If the data is purged and needs to be reloaded, the image object loads that data again from the specified path.
 

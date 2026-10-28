@@ -19,7 +19,7 @@ Computes the solution of a triangular system of linear equations `AX = B`.
 func solveTriangular(_ a: MLXArray, _ b: MLXArray, upper: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 -Parameters:
 

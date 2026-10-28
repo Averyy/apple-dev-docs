@@ -25,7 +25,7 @@ case brief
 NSDateComponentsFormatterUnitsStyleBrief
 ```
 
-#### Discussion
+## Discussion
 
 For example, the quantity of 3 years, 9 months, 26 days, 19 hours, and 17 seconds is displayed in the U.S. English locale as “3yrs 9mths 26days 19hr 17sec”.
 

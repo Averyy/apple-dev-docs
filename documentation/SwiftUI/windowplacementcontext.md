@@ -16,7 +16,7 @@ A type which represents contextual information used for sizing and positioning w
 struct WindowPlacementContext
 ```
 
-#### Overview
+## Overview
 
 The placement context provides information to be used when providing a new placement via the closure provided to the `defaultWindowPlacement(_:)` modifier.
 

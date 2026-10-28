@@ -21,11 +21,11 @@ Use explicit language.
 static func explicit(_ language: Locale.Language) -> TypesettingLanguage
 ```
 
-#### Return Value
+## Return Value
 
 A `TypesettingLanguage`.
 
-#### Discussion
+## Discussion
 
 An explicit language will be used for typesetting. For example, if used with Thai language the line heights will be as tall as needed to accommodate Thai.
 

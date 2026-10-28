@@ -22,7 +22,7 @@ Returns the size of the extra padding added to any drawing layer used to rasteri
 var displayPadding: EdgeInsets { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this function returns an empty set of insets.
 

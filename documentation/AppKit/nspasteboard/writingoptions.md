@@ -19,7 +19,7 @@ struct WritingOptions
 enum NSPasteboardWritingOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 For possible values, see [Pasteboard Writing Options](../pasteboard-writing-options.md).
 

@@ -23,7 +23,7 @@ var selfSizingInvalidation: UICollectionView.SelfSizingInvalidation { get set }
 @property (nonatomic) UICollectionViewSelfSizingInvalidation selfSizingInvalidation;
 ```
 
-#### Discussion
+## Discussion
 
 > **Related Sessions from WWDC22**:  Session 10068: [What’s new in UIKit](https://developer.apple.com/wwdc22/10068)
 

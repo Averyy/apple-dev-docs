@@ -20,7 +20,7 @@ func exceptionHangingMask() -> Int
 - (NSUInteger) exceptionHangingMask;
 ```
 
-#### Return Value
+## Return Value
 
 A bit mask composed of one or more constants specifying the types of exceptions that will halt execution for debugging. See [System Hang Constants](../system-hang-constants.md) for information about the constants.
 

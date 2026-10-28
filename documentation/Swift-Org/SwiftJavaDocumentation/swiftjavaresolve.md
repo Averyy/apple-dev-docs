@@ -10,7 +10,7 @@ framework: "Swift-Org/SwiftJavaDocumentation"
 
 Download Java dependencies for use in Swift builds.
 
-#### Overview
+## Overview
 
 `swift-java resolve` reads the Java dependencies declared in a [swift-java.config](./swiftjavaconfigfile.md) and fetches them, then writes a `<SwiftModule>.swift-java.classpath` file into the `--output-directory`.
 
@@ -55,7 +55,7 @@ OPTIONS:
   -h, --help              Show help information.
 ```
 
-##### Example
+### Example
 
 You can use `swift-java resolve` explicitly on the command line:
 

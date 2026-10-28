@@ -18,11 +18,11 @@ Creates the default configuration you use to style a cell that’s in a sidebar 
 + (instancetype) sidebarSubtitleCellConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 The default configuration for a cell that’s in a sidebar list and contains subtitle text.
 
-#### Discussion
+## Discussion
 
 Create this configuration to update the content and styling of a cell in a sidebar collection view list. When you apply this configuration to a cell, the cell displays one primary label and one subtitle label below the primary label. Both labels resize automatically based on the length of the text you provide and the device’s Dynamic Type and accessibility settings.
 

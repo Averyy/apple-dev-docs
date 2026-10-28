@@ -20,7 +20,7 @@ An option that enables the clipping feature.
 static let clipContents: PortalComponent.Options
 ```
 
-#### Discussion
+## Discussion
 
 If this option is in the option set, the user-defined geometry for [`clippingMode`](../clippingmode-swift.property.md) clips the contents within the portal world.
 

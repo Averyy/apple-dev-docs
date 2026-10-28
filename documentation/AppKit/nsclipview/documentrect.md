@@ -19,7 +19,7 @@ var documentRect: NSRect { get }
 @property (readonly) NSRect documentRect;
 ```
 
-#### Discussion
+## Discussion
 
 The document rectangle is used in conjunction with an [`NSClipView`](../nsclipview.md) object’s bounds rectangle to determine values for the indicators of relative position and size between the [`NSClipView`](../nsclipview.md) and its document view. For example, [`NSScrollView`](../nsscrollview.md) uses these rectangles to set the size and position of the knobs in its scrollers. When the document view is much larger than the [`NSClipView`](../nsclipview.md), the knob is small; when the document view is near the same size, the knob is large; and when the document view is the same size or smaller, there is no knob.
 

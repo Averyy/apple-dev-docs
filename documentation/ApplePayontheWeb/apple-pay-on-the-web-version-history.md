@@ -4,7 +4,7 @@
 
 Learn about features in each version of Apple Pay on the Web.
 
-#### Overview
+## Overview
 
 Specify the Apple Pay version your website supports when you create a session by calling [`ApplePaySession`](./applepaysession/applepaysession.md) or by creating an [`ApplePayRequest`](./applepayrequest.md). Keep in mind that customers using Apple Pay may be running any version of Apple Pay. The operating system of the customer’s device determines the version of Apple Pay that it runs. To support all customers, make sure your app works properly with all Apple Pay versions. See [`supportsVersion`](./applepaysession/supportsversion.md) for more information.
 

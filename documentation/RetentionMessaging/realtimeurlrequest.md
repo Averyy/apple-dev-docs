@@ -19,7 +19,7 @@ object RealtimeUrlRequest
 
 - [Retention Messaging API changelog](./retention-messaging-changelog.md)
 
-#### Discussion
+## Discussion
 
 To configure your `Get Retention Message` endpoint’s URL, call [`Configure Realtime URL`](./configure-realtime-url.md) and provide the URL in this request body. For more information, see [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md).
 

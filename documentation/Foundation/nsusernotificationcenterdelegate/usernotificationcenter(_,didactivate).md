@@ -21,7 +21,7 @@ optional func userNotificationCenter(_ center: NSUserNotificationCenter, didActi
 - (void) userNotificationCenter:(NSUserNotificationCenter *) center didActivateNotification:(NSUserNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 This would be a good time to take action in response to user interacting with a specific notification.
 

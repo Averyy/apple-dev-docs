@@ -17,7 +17,7 @@ Evaluate with array offset for batched inference with different positions per se
 func callAsFunction(_ x: MLXArray, offset: MLXArray) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 The input with rotary positional encoding applied
 

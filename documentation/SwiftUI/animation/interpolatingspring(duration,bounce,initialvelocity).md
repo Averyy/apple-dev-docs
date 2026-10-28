@@ -22,7 +22,7 @@ An interpolating spring animation that uses a damped spring model to produce val
 static func interpolatingSpring(duration: TimeInterval = 0.5, bounce: Double = 0.0, initialVelocity: Double = 0.0) -> Animation
 ```
 
-#### Return Value
+## Return Value
 
 A spring animation.
 

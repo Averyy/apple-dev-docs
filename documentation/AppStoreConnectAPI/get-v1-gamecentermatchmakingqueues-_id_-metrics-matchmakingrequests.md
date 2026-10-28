@@ -9,9 +9,9 @@ Get the match requests that a specific queue processes.
 **Availability**:
 - App Store Connect API 3.1+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

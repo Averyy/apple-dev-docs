@@ -17,7 +17,7 @@ The coordinate space of this object.
 func coordinateSpace(correction: ARKitCoordinateSpace.Correction) -> ARKitCoordinateSpace
 ```
 
-#### Return Value
+## Return Value
 
 The coordinate space.
 

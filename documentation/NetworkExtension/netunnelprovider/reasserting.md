@@ -24,7 +24,7 @@ var reasserting: Bool { get set }
 @property BOOL reasserting;
 ```
 
-#### Discussion
+## Discussion
 
 The Tunnel Provider should set this property to [`true`](../../Swift/true.md) whenever it starts to reconnect to the tunnel server. Once the Tunnel Provider completes the process of reconnecting it should set this property to [`false`](../../Swift/false.md).
 

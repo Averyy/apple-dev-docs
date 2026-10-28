@@ -15,7 +15,7 @@ An array of location objects.
 attribute CKDBLocation[]? value;
 ```
 
-#### Discussion
+## Discussion
 
 Each object in this array is a CKDBLocation object used to represent coordinates.
 

@@ -24,7 +24,7 @@ func addTangentBasis(forTextureCoordinateAttributeNamed textureCoordinateAttribu
 - (void) addTangentBasisForTextureCoordinateAttributeNamed:(NSString *) textureCoordinateAttributeName tangentAttributeNamed:(NSString *) tangentAttributeName bitangentAttributeNamed:(NSString *) bitangentAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 Surface-space tangent and bitangent vectors can be used to produce shading effects that follow the “flow” of a surface or to generate normal map textures. Model I/O  calculates tangent and bitangent vectors based on vertex positions and texture coordinates using a common definition: The tangent vector at a point is tangent to the surface and parallel to the texture coordinate s-axis, and the bitangent vector is tangent to the surface and parallel to the texture coordinate t-axis.
 

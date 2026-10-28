@@ -24,11 +24,11 @@ Returns the contents of a localized asset file at the specified relative path.
 
 - [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
-#### Return Value
+## Return Value
 
 The file’s contents or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 All asset packs share the same namespace, so you can treat the overall collection of downloaded asset packs as if it were a single root directory that contains all of your subdirectories and asset files, regardless of the specific asset pack in which any particular file resides. This method searches in only the downloaded asset packs that are localized in the specified language. If there’s a file-path collision across multiple such asset packs, then it’s undefined from which asset pack the file will be read.
 

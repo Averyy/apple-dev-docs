@@ -22,7 +22,7 @@ Set a closure to be called when the browser’s state changes.
 final func onStateUpdate(_ handler: @escaping @isolated(any) @Sendable (NetworkBrowser<Provider>, NetworkBrowser<Provider>.State) -> Void) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 The closure may be called multiple times until the browser is cancelled.
 

@@ -24,7 +24,7 @@ class VNGenerateObjectnessBasedSaliencyImageRequest
 @interface VNGenerateObjectnessBasedSaliencyImageRequest : VNImageBasedRequest
 ```
 
-#### Overview
+## Overview
 
 The resulting observation, [`VNSaliencyImageObservation`](./vnsaliencyimageobservation.md), encodes this data as a heat map, which you can use to highlight regions of interest.
 

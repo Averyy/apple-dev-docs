@@ -21,7 +21,7 @@ Returns whether the graph contains a node with the given key.
 func contains(node: ComputeNodeGraph.NodeID) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the graph contains the node; otherwise, `false`.
 

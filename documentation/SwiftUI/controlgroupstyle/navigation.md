@@ -22,7 +22,7 @@ The navigation control group style.
 
 Available when `Self` is `NavigationControlGroupStyle`.
 
-#### Discussion
+## Discussion
 
 Use this style to group controls related to navigation, such as back/forward buttons or timeline navigation controls.
 

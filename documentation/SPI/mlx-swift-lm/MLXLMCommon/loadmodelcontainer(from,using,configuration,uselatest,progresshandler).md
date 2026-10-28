@@ -17,11 +17,11 @@ Load a model given a [`ModelConfiguration`](./modelconfiguration.md), downloadin
 func loadModelContainer(from downloader: any Downloader, using tokenizerLoader: any TokenizerLoader, configuration: ModelConfiguration, useLatest: Bool = false, progressHandler: @Sendable @escaping (Progress) -> Void = { _ in }) async throws -> sending ModelContainer
 ```
 
-#### Return Value
+## Return Value
 
 A [`ModelContainer`](./modelcontainer.md)
 
-#### Discussion
+## Discussion
 
 Returns a [`ModelContainer`](./modelcontainer.md) holding a [`ModelContext`](./modelcontext.md) inside an actor providing isolation control for the values.
 

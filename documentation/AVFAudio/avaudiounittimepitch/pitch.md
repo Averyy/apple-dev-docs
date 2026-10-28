@@ -24,7 +24,7 @@ var pitch: Float { get set }
 @property (nonatomic) float pitch;
 ```
 
-#### Discussion
+## Discussion
 
 The audio unit measures the pitch in *cents*, a logarithmic value you use for measuring musical intervals. One octave is equal to 1200 cents. One musical semitone is equal to 100 cents.
 

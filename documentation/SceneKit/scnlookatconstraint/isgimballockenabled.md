@@ -25,7 +25,7 @@ var isGimbalLockEnabled: Bool { get set }
 @property (nonatomic) BOOL gimbalLockEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), constrained nodes are limited in rotation around a roll axis (the vector pointing from the constrained node to the target node). If the value of this property is [`false`](../../Swift/false.md) (the default), constrained nodes rotate freely around this axis when the constraint adjusts their orientation.
 

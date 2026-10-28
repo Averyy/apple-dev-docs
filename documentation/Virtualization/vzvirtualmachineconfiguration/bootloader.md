@@ -19,7 +19,7 @@ var bootLoader: VZBootLoader? { get set }
 @property (strong, nullable) VZBootLoader * bootLoader;
 ```
 
-#### Discussion
+## Discussion
 
 Assign the boot loader object that contains information about how to load your guest operating system. For example, to configure your VM with a Linux operating system, assign a [`VZLinuxBootLoader`](../vzlinuxbootloader.md) object.
 

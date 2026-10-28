@@ -21,7 +21,7 @@ struct PaymentCardTransactionRequest
 
 - [Adding support for Tap to Pay on iPhone to your app](./adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 
-#### Overview
+## Overview
 
 Create a `PaymentCardTransactionRequest` to specify the amount of a purchase or refund. After you create this object, pass it to the [`readPaymentCard(_:)`](./paymentcardreadersession/readpaymentcard%28_%29-8jol5.md) or [`readPaymentCard(_:vasRequest:stopOnVASResult:)`](./paymentcardreadersession/readpaymentcard%28_,vasrequest,stoponvasresult%29.md) method of [`PaymentCardReaderSession`](./paymentcardreadersession.md) to read the card associated with the transaction.
 

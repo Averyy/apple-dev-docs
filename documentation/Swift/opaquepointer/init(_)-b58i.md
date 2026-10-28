@@ -21,7 +21,7 @@ Converts a typed `UnsafePointer` to an opaque C pointer.
 init?<T>(_ from: UnsafePointer<T>?) where T : ~Copyable
 ```
 
-#### Discussion
+## Discussion
 
 The result is `nil` if `from` is `nil`.
 

@@ -21,7 +21,7 @@ This element represents the label part of the label / content pair.
 case label
 ```
 
-#### Discussion
+## Discussion
 
 For example, it might be the explanatory text to the left of a control, describing what the control does.
 

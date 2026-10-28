@@ -21,7 +21,7 @@ Inserts a given number of new items into this array at the specified position, u
 mutating func insert<E>(addingCount newItemCount: Int, at index: Int, initializingWith initializer: @_lifetime(0: copy 0) (inout OutputSpan<Element>) throws(E) -> Void) throws(E) where E : Error
 ```
 
-#### Discussion
+## Discussion
 
 Existing elements in the array’s storage are moved towards the back as needed to make room for the new items.
 

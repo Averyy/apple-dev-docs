@@ -16,7 +16,7 @@ The language and region used for the displayed Apple Pay button.
 attribute ApplePayButtonLocale locale;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of button locales, see [`ApplePayButtonLocale`](../applepaybuttonlocale.md).
 

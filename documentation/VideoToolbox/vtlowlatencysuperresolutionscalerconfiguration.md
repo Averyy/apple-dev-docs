@@ -24,7 +24,7 @@ class VTLowLatencySuperResolutionScalerConfiguration
 @interface VTLowLatencySuperResolutionScalerConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this object to configure a [`VTFrameProcessor`](./vtframeprocessor.md). Query this interface also for important operating details, like the pixel buffer attributes required for frames you submit to the processor.
 

@@ -15,7 +15,7 @@ The opacity of the fill color.
 fillOpacity?: number;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property can be in the range of `0` (fully transparent) to `1` (fully opaque). The default fill opacity is `0.1`.
 

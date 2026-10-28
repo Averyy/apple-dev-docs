@@ -18,11 +18,11 @@ Associates a custom dispatch queue with the service and assigns the specified na
 virtual kern_return_t SetDispatchQueue(const IODispatchQueueName name, IODispatchQueue *queue);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../error-codes.md).
 
-#### Discussion
+## Discussion
 
 In your driver’s [`Start`](./start.md) method, call this method once for each unique queue name you designated in your class definition file. This method registers the dispatch queue with that name and assigns it to your service. When calling the methods of your service, DriverKit uses the appropriate dispatch queue. If DriverKit calls a method before you set the dispatch queue that method uses, the method runs on the default queue.
 

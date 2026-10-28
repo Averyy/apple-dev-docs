@@ -25,7 +25,7 @@ extern void vDSP_desampD(const double *__A, vDSP_Stride __DF, const double *__F,
 
 - [Resampling a signal with decimation](./resampling-a-signal-with-decimation.md)
 
-#### Discussion
+## Discussion
 
 This is the same as [`vDSP_desamp`](./vdsp_desamp.md), except for the types of the `A`, `F`, and `C` parameters.
 

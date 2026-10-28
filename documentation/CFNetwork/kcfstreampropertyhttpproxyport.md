@@ -24,7 +24,7 @@ let kCFStreamPropertyHTTPProxyPort: CFString
 extern CFStringRef const kCFStreamPropertyHTTPProxyPort;
 ```
 
-#### Discussion
+## Discussion
 
 HTTP Proxy Host property. If an HTTP CFStream is using an HTTP proxy, the value of this property is a CFNumber containing the port number of the proxy server.
 

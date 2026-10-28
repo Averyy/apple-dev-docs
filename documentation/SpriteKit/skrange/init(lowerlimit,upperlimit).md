@@ -25,7 +25,7 @@ init(lowerLimit lower: CGFloat, upperLimit upper: CGFloat)
 - (instancetype) initWithLowerLimit:(CGFloat) lower upperLimit:(CGFloat) upper;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized range object.
 

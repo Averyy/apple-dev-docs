@@ -23,7 +23,7 @@ func applyPolynomial(coefficientSegments: [[Float]], boundaries: [Float], destin
 
 Available when `Format` is `vImage.InterleavedFx3`.
 
-#### Discussion
+## Discussion
 
 The following code shows an example of applying three polynomials to an [`vImage.InterleavedFx3`](../interleavedfx3.md) buffer:
 

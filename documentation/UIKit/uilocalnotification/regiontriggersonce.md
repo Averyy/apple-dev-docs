@@ -22,7 +22,7 @@ var regionTriggersOnce: Bool { get set }
 @property (nonatomic, assign) BOOL regionTriggersOnce;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the user is notified only upon the first crossing the boundary of the target [`region`](./region.md). After the first crossing, the local notification is unscheduled. When the value of this property is [`false`](../../Swift/false.md), notifications are delivered with each boundary crossing. The default value of this property is [`true`](../../Swift/true.md).
 

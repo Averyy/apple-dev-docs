@@ -5,13 +5,13 @@
 
 Download symbols for Apple system frameworks using Xcode or Terminal.
 
-#### Overview
+## Overview
 
 To make symbols from the operating system frameworks identifiable in a crash report, you need to collect them from a device using Xcode, or by using the command line in Terminal. These symbols are specific to the operating system release, and the model and the CPU architecture of the device. For example, the symbols for an iPhone running iOS 26 aren’t the same as the symbols for the same iPhone running iOS 26.2.
 
 After you collect the symbols, the system saves them in `~/Library/Developer/Xcode/<iOS|watchOS|tvOS|visionOS> DeviceSupport`.
 
-#### Collect system framework symbols from a device
+## Collect system framework symbols from a device
 
 For iOS, iPadOS, tvOS, visionOS, and watchOS apps, Xcode automatically copies operating system binaries that contain symbols from each device you connect to your Mac.
 
@@ -53,7 +53,7 @@ Located Work 00008103-000D585C36D0801E
 [Work] Finished
 ```
 
-#### Download system framework symbols for watchOS in Terminal
+## Download system framework symbols for watchOS in Terminal
 
 You can download operating system symbols specific to a watchOS release from the command line without pairing an Apple Watch to your Mac. Enter `xcodebuild -prepareDeviceSupport` with the `-platform`, `-osVersion`, and `-buildVersion` in Terminal.
 

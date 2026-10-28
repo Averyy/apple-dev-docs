@@ -20,7 +20,7 @@ Describes a single joint of a `Skeleton`
 struct Joint
 ```
 
-#### Overview
+## Overview
 
 Joints form the hierarchical structure of a skeleton. Each joint has a unique name, a rest pose transform relative to its parent, and an optional list of child joints. The hierarchy is expressed through nesting using the `JointBuilder` result builder.
 

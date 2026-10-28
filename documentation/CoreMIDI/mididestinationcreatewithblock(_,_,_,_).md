@@ -25,11 +25,11 @@ func MIDIDestinationCreateWithBlock(_ client: MIDIClientRef, _ name: CFString, _
 extern OSStatus MIDIDestinationCreateWithBlock(MIDIClientRef client, CFStringRef name, MIDIEndpointRef *outDest, MIDIReadBlock readBlock);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code.
 
-#### Discussion
+## Discussion
 
 The specified readBlock gets called when clients send MIDI to your virtual destination.
 

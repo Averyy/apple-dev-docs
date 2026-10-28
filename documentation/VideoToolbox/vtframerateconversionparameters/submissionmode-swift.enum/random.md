@@ -22,7 +22,7 @@ case random
 VTFrameRateConversionParametersSubmissionModeRandom
 ```
 
-#### Discussion
+## Discussion
 
 If this value is set, the internal cache will be cleared during the processWithParameters call.
 

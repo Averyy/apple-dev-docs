@@ -15,7 +15,7 @@ A flag to indicate whether samples use big-endian values.
 FormatFlagIsBigEndian
 ```
 
-#### Discussion
+## Discussion
 
 Set this flag for big-endian values; clear it for little-endian.
 

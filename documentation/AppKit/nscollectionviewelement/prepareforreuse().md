@@ -20,7 +20,7 @@ optional func prepareForReuse()
 - (void) prepareForReuse;
 ```
 
-#### Discussion
+## Discussion
 
 The recycling of content is an important technique for improving performance of a collection view. Instead of creating all views from scratch, the collection view recycles views and view controllers that move offscreen. When your app subsequently calls the [`makeItem(withIdentifier:for:)`](../nscollectionview/makeitem%28withidentifier,for%29.md) or [`makeSupplementaryView(ofKind:withIdentifier:for:)`](../nscollectionview/makesupplementaryview%28ofkind,withidentifier,for%29.md) method, the collection view retrieves a recycled object from the appropriate storage, calls this method, and then returns the object to your app.
 

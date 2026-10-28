@@ -21,7 +21,7 @@ Returns the vector rotated by the specified quaternion around the origin.
 func rotated(by quaternion: simd_quatd) -> Vector3D
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The rotated vector.
 

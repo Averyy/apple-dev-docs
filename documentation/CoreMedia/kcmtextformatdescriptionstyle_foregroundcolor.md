@@ -25,7 +25,7 @@ let kCMTextFormatDescriptionStyle_ForegroundColor: CFString
 extern CFStringRef const kCMTextFormatDescriptionStyle_ForegroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary contains values for `kCMTextFormatDescriptionColor_Red`, `kCMTextFormatDescriptionColor_Green`, and so on.
 

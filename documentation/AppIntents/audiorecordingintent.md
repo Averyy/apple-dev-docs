@@ -21,7 +21,7 @@ An app intent that starts, stops or otherwise modifies audio recording state.
 protocol AudioRecordingIntent : SystemIntent
 ```
 
-#### Overview
+## Overview
 
 Adopt this protocol to create an app intent for audio recording functionality and tell the system that your app records audio. As a result of this intent, the system displays an audio recording indicator.
 

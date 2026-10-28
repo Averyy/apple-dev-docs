@@ -21,7 +21,7 @@ The values that determine how to decode a type’s coding keys from JSON keys.
 enum KeyDecodingStrategy
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  Key decoding strategies other than [`JSONDecoder.KeyDecodingStrategy.useDefaultKeys`](./keydecodingstrategy-swift.enum/usedefaultkeys.md) may have a noticeable performance cost because those strategies may inspect and transform each key.
 

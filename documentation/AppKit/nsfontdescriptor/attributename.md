@@ -19,7 +19,7 @@ struct AttributeName
 typedef NSString * NSFontDescriptorAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 You can retrieve the values for these attributes using [`object(forKey:)`](./object%28forkey%29.md).
 

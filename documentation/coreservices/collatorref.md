@@ -20,7 +20,7 @@ typealias CollatorRef = OpaquePointer
 typedef struct OpaqueCollatorRef *CollatorRef;
 ```
 
-#### Discussion
+## Discussion
 
 You can obtain a `CollatorRef` value from the function  [`UCCreateCollator(_:_:_:_:)`](./api-1390403-uccreatecollator.md). 
 

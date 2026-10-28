@@ -21,7 +21,7 @@ func setCharacterIndex(_ charIndex: Int, forGlyphAt glyphIndex: Int)
 - (void) setCharacterIndex:(NSUInteger) charIndex forGlyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This method is for use by the glyph-generation mechanism and doesn’t perform any invalidation or generation of the glyphs or layout. This method should be invoked only during glyph generation and typesetting, in almost all cases only by the glyph generator or typesetter. For example, a custom glyph generator or typesetter might invoke it.
 

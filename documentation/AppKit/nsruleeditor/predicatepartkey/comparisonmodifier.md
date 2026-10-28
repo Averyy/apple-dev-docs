@@ -19,7 +19,7 @@ static let comparisonModifier: NSRuleEditor.PredicatePartKey
 extern NSRuleEditorPredicatePartKey const NSRuleEditorPredicateComparisonModifier;
 ```
 
-#### Discussion
+## Discussion
 
 This value is optional. If not specified, [`NSComparisonPredicate.Modifier.direct`](../../../Foundation/nscomparisonpredicate/modifier/direct.md) is assumed.
 

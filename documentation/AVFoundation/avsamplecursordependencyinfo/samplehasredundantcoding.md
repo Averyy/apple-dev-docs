@@ -25,7 +25,7 @@ var sampleHasRedundantCoding: ObjCBool
 BOOL sampleHasRedundantCoding;
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates the sample has redundant coding when [`sampleIndicatesWhetherItHasRedundantCoding`](./sampleindicateswhetherithasredundantcoding.md) is `true`.
 

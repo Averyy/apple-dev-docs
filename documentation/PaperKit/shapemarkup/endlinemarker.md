@@ -19,7 +19,7 @@ The line marker used at the end of an open shape path.
 var endLineMarker: ShapeMarkup.LineMarker { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Line markers are only visible on open paths. Use `shape.supportsLineMarkers` to check whether the current shape supports line markers. Closed shapes like `.rectangle` and `.ellipse` ignore this property.
 

@@ -17,7 +17,7 @@ Saves the current KV cache to disk.
 func saveCache(to url: URL) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Use [`loadPromptCacheSnapshot(url:)`](../loadpromptcachesnapshot%28url%29.md) and an initializer that accepts a `promptCache` to restore the saved cache and model state in a future session.
 

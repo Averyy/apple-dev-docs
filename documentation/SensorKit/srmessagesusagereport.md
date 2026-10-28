@@ -21,7 +21,7 @@ class SRMessagesUsageReport
 @interface SRMessagesUsageReport : NSObject
 ```
 
-#### Overview
+## Overview
 
 This object describes the frequency that the user sends or receives messages, and the relative amount of time the user uses the Messages app.
 

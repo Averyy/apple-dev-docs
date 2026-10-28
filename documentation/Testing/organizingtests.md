@@ -5,7 +5,7 @@
 
 Organize tests into test suites.
 
-#### Overview
+## Overview
 
 When working with a large selection of test functions, it can be helpful to organize them into test suites.
 
@@ -20,7 +20,7 @@ In addition to containing test functions and any other members that a Swift type
 
 By default, tests contained within a suite run in parallel with each other. For more information about test parallelization, see [Running tests serially or in parallel](./parallelization.md).
 
-##### Customize a suite’s name
+### Customize a suite’s name
 
 To customize a test suite’s name, supply a string literal as an argument to the `@Suite` attribute:
 
@@ -32,7 +32,7 @@ To customize a test suite’s name, supply a string literal as an argument to th
 
 To further customize the appearance and behavior of a test function, use [traits](./traits.md) such as [`tags(_:)`](./trait/tags%28_%29.md).
 
-#### Test functions in test suite types
+## Test functions in test suite types
 
 If a type contains a test function declared as an instance method (that is, without either the `static` or `class` keyword), the testing library calls that test function at runtime by initializing an instance of the type, then calling the test function on that instance. If a test suite type contains multiple test functions declared as instance methods, each one is called on a distinct instance of the type. Therefore, the following test suite and test function:
 
@@ -55,11 +55,11 @@ Are equivalent to:
 }
 ```
 
-##### Constraints on test suite types
+### Constraints on test suite types
 
 When using a type as a test suite, it’s subject to some constraints that are not otherwise applied to Swift types.
 
-###### An initializer may be required
+#### An initializer may be required
 
 If a type contains test functions declared as instance methods, it must be possible to initialize an instance of the type with a zero-argument initializer. The initializer may be any combination of:
 
@@ -94,7 +94,7 @@ struct MenuTests {
 
 The compiler emits an error when presented with a test suite that doesn’t meet this requirement.
 
-###### Test suite types must always be available
+#### Test suite types must always be available
 
 Although `@available` can be applied to a test function to limit its availability at runtime, a test suite type (and any types that contain it) must *not* be annotated with the `@available` attribute:
 

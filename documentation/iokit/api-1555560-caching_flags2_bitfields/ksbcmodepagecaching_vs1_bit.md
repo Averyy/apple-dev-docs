@@ -14,7 +14,7 @@
 kSBCModePageCaching_VS1_Bit = 3
 ```
 
-#### Discussion
+## Discussion
 
 VS1 Bit definition.
 

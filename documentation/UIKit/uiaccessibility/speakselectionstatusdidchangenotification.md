@@ -24,7 +24,7 @@ static let speakSelectionStatusDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UIAccessibilitySpeakSelectionStatusDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification doesn’t include a parameter. Observe this notification using the default notification center.
 

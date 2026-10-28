@@ -19,11 +19,11 @@ Creates the default configuration you use to style a footer in a plain list.
 + (instancetype) plainFooterConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 The default configuration for a footer in a plain list.
 
-#### Discussion
+## Discussion
 
 Create this configuration to update the content and styling of a footer in a table view or collection view list.
 

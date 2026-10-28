@@ -25,11 +25,11 @@ class func confirmationRequired(with billPayeeToConfirm: INBillPayee?) -> Self
 + (instancetype) confirmationRequiredWithBillPayeeToConfirm:(INBillPayee *) billPayeeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INBillPayeeResolutionResult`](../inbillpayeeresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to a single value but want the user to confirm that value.
 

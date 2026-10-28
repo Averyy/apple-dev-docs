@@ -27,7 +27,7 @@ var receiptProperties: [String : Any]? { get }
 @property (nonatomic, readonly, nullable) NSDictionary<NSString *,id> * receiptProperties;
 ```
 
-#### Discussion
+## Discussion
 
 Receipt properties include [`SKReceiptPropertyIsExpired`](../skreceiptpropertyisexpired.md), [`SKReceiptPropertyIsRevoked`](../skreceiptpropertyisrevoked.md), and [`SKReceiptPropertyIsVolumePurchase`](../skreceiptpropertyisvolumepurchase.md).
 

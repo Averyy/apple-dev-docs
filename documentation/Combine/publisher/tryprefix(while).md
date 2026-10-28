@@ -21,11 +21,11 @@ Republishes elements while an error-throwing predicate closure indicates publish
 func tryPrefix(while predicate: @escaping (Self.Output) throws -> Bool) -> Publishers.TryPrefixWhile<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that passes through elements until the predicate throws or indicates publishing should finish.
 
-#### Discussion
+## Discussion
 
 Use [`tryPrefix(while:)`](./tryprefix%28while%29.md) to emit values from the upstream publisher that meet a condition you specify in an error-throwing closure. The publisher finishes when the closure returns `false`. If the closure throws an error, the publisher fails with that error.
 

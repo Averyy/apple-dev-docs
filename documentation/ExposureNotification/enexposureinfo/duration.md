@@ -23,7 +23,7 @@ var duration: TimeInterval { get }
 @property (nonatomic, assign, readonly) NSTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 When reporting the duration of an exposure, the values are stored as seconds rounded up to the next minute. A duration value caps at 30 minutes (1800 seconds).
 

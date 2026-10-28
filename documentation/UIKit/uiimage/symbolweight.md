@@ -24,7 +24,7 @@ enum SymbolWeight
 enum UIImageSymbolWeight : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The definition of a symbol image includes multiple scale and weight variants. The weight variants offer a way to progressively thicken some or all of the image’s lines. Weights do not correspond to a specific line thickness.
 

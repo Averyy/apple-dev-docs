@@ -19,7 +19,7 @@ var incomingMTU: BluetoothL2CAPMTU { get }
 @property (readonly) BluetoothL2CAPMTU incomingMTU;
 ```
 
-#### Discussion
+## Discussion
 
 The incoming MTU represents the maximum L2CAP packet size for packets being sent by the remote device.
 

@@ -21,11 +21,11 @@ func CGDisplayFadeOperationInProgress() -> boolean_t
 extern boolean_t CGDisplayFadeOperationInProgress();
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, a fade operation is currently in progress; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 You may call this function from any task running in the system. The calling task need not have a valid fade reservation.
 

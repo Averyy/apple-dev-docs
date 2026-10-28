@@ -22,7 +22,7 @@ class AVCaptureEventInteraction
 @interface AVCaptureEventInteraction : NSObject
 ```
 
-#### Overview
+## Overview
 
 The system Camera app allows people to perform capture functions by pressing hardware buttons on their iOS device. UIKit apps can add similar functionality by using this type to register handlers that respond to interactions from device hardware.
 

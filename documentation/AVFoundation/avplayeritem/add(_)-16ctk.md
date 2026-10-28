@@ -26,7 +26,7 @@ func add(_ output: AVPlayerItemOutput)
 - (void) addOutput:(AVPlayerItemOutput *) output;
 ```
 
-#### Discussion
+## Discussion
 
 When you add an [`AVPlayerItemOutput`](../avplayeritemoutput.md) object to an item, the samples associated with that output object are processed according to the rules for mixing, composing, or excluding content that the [`AVPlayer`](../avplayer.md) object honors for the specific media type. For example, video media is composed according to the instructions provided by the player item’s video composition object and audio media is mixed according to the parameters of its audio mix object.
 

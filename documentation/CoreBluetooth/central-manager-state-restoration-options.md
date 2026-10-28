@@ -5,7 +5,7 @@
 
 Restore central manager state in scene-based apps.
 
-#### Overview
+## Overview
 
 In scene-based apps that adopt [`UISceneDelegate`](../UIKit/uiscenedelegate.md), the `launchOptions` dictionary is always `nil` on launch, and apps can no longer rely on the system to hand back central manager identifiers at launch.
 

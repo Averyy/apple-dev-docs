@@ -19,7 +19,7 @@ The requirements for an object that provides the configuration for a content vie
 @protocol UIContentConfiguration <NSObject, NSCopying>
 ```
 
-#### Overview
+## Overview
 
 This protocol provides a blueprint for a content-configuration object, which encompasses default styling and content for a content view. The content configuration encapsulates all of the supported properties and behaviors for content view customization. You use the configuration to create the content view.
 

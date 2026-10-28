@@ -21,7 +21,7 @@ Creates a classification distribution.
 init<C>(_ classifications: C) where C : Collection, C.Element == Classification<Label>
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: The classifications must contain unique labels.
 

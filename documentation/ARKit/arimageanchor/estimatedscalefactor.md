@@ -20,7 +20,7 @@ var estimatedScaleFactor: CGFloat { get }
 @property (nonatomic, readonly) CGFloat estimatedScaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 1.0, which means that a version of this image that ARKit recognizes in the physical environment exactly matches its reference image [`physicalSize`](../arreferenceimage/physicalsize.md).
 

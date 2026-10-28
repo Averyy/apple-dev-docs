@@ -23,11 +23,11 @@ typealias UIContextMenuContentPreviewProvider = () -> UIViewController?
 typedef UIViewController *(^)(void) UIContextMenuContentPreviewProvider;
 ```
 
-#### Return Value
+## Return Value
 
 The view controller to display in place of the system’s standard view controller. If you want UIKit to present your content using a default view controller, return `nil`.
 
-#### Discussion
+## Discussion
 
 Use this handler to load or create your custom view controller, configure it with your content, and return it to UIKit.
 

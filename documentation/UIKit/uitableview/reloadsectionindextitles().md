@@ -23,7 +23,7 @@ func reloadSectionIndexTitles()
 - (void) reloadSectionIndexTitles;
 ```
 
-#### Discussion
+## Discussion
 
 This method gives you a way to update the section index after inserting or deleting sections without having to reload the whole table.
 

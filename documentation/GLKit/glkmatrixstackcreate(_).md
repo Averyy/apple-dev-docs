@@ -22,11 +22,11 @@ func GLKMatrixStackCreate(_ alloc: CFAllocator?) -> Unmanaged<GLKMatrixStack>?
 GLKMatrixStackRefGLKMatrixStackCreate(CFAllocatorRef alloc);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix stack, or `NULL` if an error occurred.
 
-#### Discussion
+## Discussion
 
 A matrix stack is a Core Foundation type. Ownership follows [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029) in [Memory Management Programming Guide for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/CFMemoryMgmt.html#//apple_ref/doc/uid/10000127i).
 

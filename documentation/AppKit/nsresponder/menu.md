@@ -19,7 +19,7 @@ var menu: NSMenu? { get set }
 @property (strong, nullable) NSMenu * menu;
 ```
 
-#### Discussion
+## Discussion
 
 For `NSApplication` this menu is the same as the menu returned by its [`mainMenu`](../nsapplication/mainmenu.md) property.
 

@@ -21,7 +21,7 @@ Generates a double-precision vector that contains monotonically incrementing or 
 extern void vDSP_vgenD(const double *__A, const double *__B, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to generate and return a vector populated with ramped values.
 

@@ -21,11 +21,11 @@ Returns the distance between two indices.
 func distance(from start: CollectionDifference<ChangeElement>.Index, to end: CollectionDifference<ChangeElement>.Index) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The distance between `start` and `end`. The result can be negative only if the collection conforms to the `BidirectionalCollection` protocol.
 
-#### Discussion
+## Discussion
 
 Unless the collection conforms to the `BidirectionalCollection` protocol, `start` must be less than or equal to `end`.
 

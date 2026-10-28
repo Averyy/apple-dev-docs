@@ -22,7 +22,7 @@ optional func previewInteraction(_ previewInteraction: UIPreviewInteraction, did
 - (void) previewInteraction:(UIPreviewInteraction *) previewInteraction didUpdateCommitTransition:(CGFloat) transitionProgress ended:(BOOL) ended;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called repeatedly during the commit phase of the preview interaction. Use the supplied `transitionProgress` parameter to update the UI to reflect the progress of the interaction. For example, the *pop* effect in view controller preview transitions progressively increases the size of the child view controller as the transition progresses.
 

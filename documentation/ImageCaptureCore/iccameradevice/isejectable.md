@@ -23,7 +23,7 @@ var isEjectable: Bool { get }
 @property (nonatomic, readonly, getter=isEjectable) BOOL ejectable;
 ```
 
-#### Discussion
+## Discussion
 
 Soft ejecting an SD card is equivalent to unmounting it in Finder without physically removing it from the host.
 

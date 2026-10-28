@@ -24,7 +24,7 @@ func annotationsChanged(on page: PDFPage)
 - (void) annotationsChangedOnPage:(PDFPage *) page;
 ```
 
-#### Discussion
+## Discussion
 
 When the `PDFView` object receives this message, it rescans for tool tips and pop-ups and informs the `PDFThumbailView` objects so the thumbnail images can be redrawn.
 

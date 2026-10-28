@@ -5,7 +5,7 @@
 
 Contain shared resources on which events and projects depend.
 
-#### Overview
+## Overview
 
 A container for relevant data on which events and projects depend, such as media assets, video formats, and effects. For more information on media assets and formats, see [Shared Resources and Reference Elements](./fcpxml-reference.md#Shared-Resources-and-Reference-Elements).
 

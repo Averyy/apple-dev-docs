@@ -25,7 +25,7 @@ case equalPowerPanning
 AVAudio3DMixingRenderingAlgorithmEqualPowerPanning
 ```
 
-#### Discussion
+## Discussion
 
 This is analogous to the pan knob on a mixing board channel strip.
 

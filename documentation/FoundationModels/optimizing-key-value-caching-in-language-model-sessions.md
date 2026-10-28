@@ -5,7 +5,7 @@
 
 Prevent repeated token processing by preserving the cached state across turns.
 
-#### Overview
+## Overview
 
 When using a language model session for multi-turn conversations, model providers might maintain a key-value (KV) cache of previously processed tokens. This cache allows the model to skip reprocessing content it’s already seen, so each new turn only processes the tokens you add. Because the cache can affect processing latency and costs associated with using generated and cached tokens, it’s up to the model provider to determine how they manage the cache. How you structure and manage your session determines whether the provider preserves or invalidates that cache.
 
@@ -13,7 +13,7 @@ Some workflows require the prefix to change between turns. Dynamic instructions 
 
 For more information about using dynamic instructions, see [Composing dynamic sessions with instructions and profiles](./composing-dynamic-sessions-with-instructions-and-profiles.md).
 
-#### Set up a stable session foundation
+## Set up a stable session foundation
 
 A session typically arranges its content into a token sequence with a specific order, like instructions appearing at the top, tool definitions coming next, and then transcript entries follow at the end. Each cached value in the sequence depends on every token that precedes it. When a token changes at any position, the system recomputes the cached values from that point forward. Each segment that the system recomputes adds latency that a person experiences while waiting for a response.
 
@@ -49,7 +49,7 @@ session.prewarm(
 
 Prewarming works best when there’s time to finish loading the model and caching the prompt before a request. Prewarm the model when you know usage is at least one or two seconds in the future. That way, when the first call to [`respond(to:options:)`](./languagemodelsession/respond%28to,options%29.md) occurs, the cached portion is already warm and only the remaining tokens need computation. This eliminates the need to compute every segment on the first turn and prevents unnecessary latency.
 
-#### Consider model accuracy from transcript modification
+## Consider model accuracy from transcript modification
 
 Modifying the transcript impacts model accuracy because there’s no reliable way for the model to distinguish between information that never existed and information that did exist but was removed from the context. A model treats whatever’s in the context as the complete picture and reasons confidently from incomplete evidence. Carefully consider when and how you modify session history. Not only does modifying session history incur a cache invalidation, several categories of accuracy problems occur:
 
@@ -64,7 +64,7 @@ Carefully consider when to remove a tool because the [`Transcript`](./transcript
 
 Adding a new tool late in a conversation can produce unexpected behavior. The model follows patterns established in earlier turns and might not incorporate a newly available tool into its responses.
 
-#### Preserve the cache with dynamic instructions
+## Preserve the cache with dynamic instructions
 
 The framework re-evaluates a [`DynamicInstructions`](./dynamicinstructions.md) body before each model request. When the resolved instructions or tools change between turns the system updates the prefix and invalidates any cached values.
 
@@ -95,7 +95,7 @@ struct PresentationInstructions: DynamicInstructions {
 
 Design your dynamic profiles so transitions between your profiles occur at natural boundaries in the conversation rather than on every turn. Switching from one profile to another typically changes the entire prefix — which invalidates the cache for the full transcript — so treat it as a deliberate reset.
 
-#### Prefer stateless history transforms
+## Prefer stateless history transforms
 
 Attach input filters to a profile with the [`historyTransform(_:)`](./languagemodelsession/dynamicprofile/historytransform%28_%29.md) modifier to transform the transcript before each model request. Prefer stateless transforms over stateful ones because they don’t modify the global transcript, so they’re easier to understand with respect to cache consistency.
 
@@ -130,7 +130,7 @@ Profile {
 }
 ```
 
-#### Manage transcript growth within the context window
+## Manage transcript growth within the context window
 
 Every element in the session — instructions, tool definitions, and all transcript entries — counts toward the context size. As the conversation grows, the transcript eventually approaches the available context.
 
@@ -142,7 +142,7 @@ When the transcript grows beyond the context window, the framework throws [`Lang
 
 For more information about managing the context window, see [Managing the context window](./managing-the-context-window.md).
 
-#### Restore sessions from saved transcripts
+## Restore sessions from saved transcripts
 
 If preserving the full conversation history matters more than the first-response latency, like when a person expects to continue exactly where they left off, consider rehydrating a session from a previous state. Persist a session’s [`transcript`](./languagemodelsession/transcript.md) and use it when initializing a session with [`init(model:tools:transcript:)`](./languagemodelsession/init%28model,tools,transcript%29.md) or [`init(profile:history:)`](./languagemodelsession/init%28profile,history%29.md)
 
@@ -162,7 +162,7 @@ session.prewarm()
 
 The reprocessing latency on the first call is proportional to the size of the restored transcript. If the saved transcript is large, consider trimming it to the most relevant entries before rehydrating.
 
-#### Profile cache performance with Instruments
+## Profile cache performance with Instruments
 
 Use the Foundation Models instrument to measure how your session uses tokens and where latency occurs. The instrument shows asset load times, token counts, and durations for each request, so you can identify whether cache invalidation is causing unexpected reprocessing. Use the instrument to determine your cache hit rate by dividing the cached input tokens by the total input tokens. When this rate is low between turns, it signals that the system invalidated the cache and the model reprocessed the full prefix.
 

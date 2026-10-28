@@ -15,7 +15,7 @@ Returns a new complication descriptor with an associated user activity.
 - (instancetype) initWithIdentifier:(NSString *) identifier displayName:(NSString *) displayName supportedFamilies:(NSArray<NSNumber *> *) supportedFamilies userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 If the user taps on a complication specified by this descriptor, the system launches the app and calls [`handle(_:)`](../../WatchKit/wkextensiondelegate/handle%28_%29-5pyj1.md), passing the user activity. Your [`handle(_:)`](../../WatchKit/wkextensiondelegate/handle%28_%29-5pyj1.md) method should update the app so that it’s in the specified state.
 

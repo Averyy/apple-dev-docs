@@ -5,15 +5,15 @@
 
 Create and play a transient haptic pattern from a dictionary literal inline.
 
-#### Overview
+## Overview
 
 This article describes how to define the haptic pattern for a single haptic tap and how to play that haptic pattern through a haptic engine.
 
-##### Create a haptic engine
+### Create a haptic engine
 
 The [`CHHapticEngine`](./chhapticengine.md) is your app’s interface to the haptic device. An instance of a haptic engine allows you to create a [`CHHapticPatternPlayer`](./chhapticpatternplayer.md) or [`CHHapticAdvancedPatternPlayer`](./chhapticadvancedpatternplayer.md) to play individual haptics. Create the haptic engine as described in [Preparing your app to play haptics](./preparing-your-app-to-play-haptics.md).
 
-##### Specify a dictionary literal
+### Specify a dictionary literal
 
 The next step is to create a dictionary literal representing the haptic. The following represents a single haptic tap:
 
@@ -47,7 +47,7 @@ NSDictionary* hapticDict = @{
 
 Each entry in the dictionary shown above is a haptic event, with an event type, a start time, and a duration. In this case, the event type is [`hapticTransient`](./chhapticevent/eventtype/haptictransient.md) because a single tap is a transient pattern — a quick impulse. The time is `CHHapticTimeImmediate` to indicate that the event begins immediately, right after time `0`. The duration of `1.0` indicates that the event lasts one second.
 
-##### Create a haptic pattern player from the dictionary
+### Create a haptic pattern player from the dictionary
 
 Initialize a [`CHHapticPattern`](./chhapticpattern.md) from the dictionary you just created.
 
@@ -85,7 +85,7 @@ If you call [`start(atTime:)`](./chhapticpatternplayer/start%28attime%29.md) on 
 
 Haptic players are inexpensive, lightweight objects, so create and discard them freely. Unless your app requires real-time, latency-free haptic feedback in response to user interaction — like precise ticks on a dial — you can create your player right before playing the haptic.
 
-##### Start the engine and play the haptic pattern
+### Start the engine and play the haptic pattern
 
 Start the haptic engine before you play a haptic player, and stop the engine once you’ve finished playing all haptic patterns. Play the haptic by calling the player’s [`start(atTime:)`](./chhapticpatternplayer/start%28attime%29.md) method.
 

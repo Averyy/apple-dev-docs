@@ -24,7 +24,7 @@ protocol CIRoundedQRCodeGenerator : CIFilterProtocol
 @protocol CIRoundedQRCodeGenerator <CIFilter>
 ```
 
-#### Overview
+## Overview
 
 Generate a QR Code image for message data.
 

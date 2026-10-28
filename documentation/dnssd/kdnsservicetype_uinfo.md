@@ -23,7 +23,7 @@ var kDNSServiceType_UINFO: Int { get }
 kDNSServiceType_UINFO
 ```
 
-#### Discussion
+## Discussion
 
 IANA-Reserved
 

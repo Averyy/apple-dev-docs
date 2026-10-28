@@ -5,7 +5,7 @@
 
 Specifies the equalization to apply to a clip.
 
-#### Overview
+## Overview
 
 The valid values for equalization to apply can be one of the following:
 

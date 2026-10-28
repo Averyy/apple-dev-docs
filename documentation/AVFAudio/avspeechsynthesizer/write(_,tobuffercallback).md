@@ -25,7 +25,7 @@ func write(_ utterance: AVSpeechUtterance, toBufferCallback bufferCallback: @esc
 - (void) writeUtterance:(AVSpeechUtterance *) utterance toBufferCallback:(AVSpeechSynthesizerBufferCallback) bufferCallback;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to receive audio buffers to store or further process synthesized speech.
 

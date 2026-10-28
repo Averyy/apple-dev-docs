@@ -20,7 +20,7 @@ class AMBundleAction
 @interface AMBundleAction : AMAction
 ```
 
-#### Overview
+## Overview
 
 Automator loads action bundles from standard locations in the file system: `/System/Library/Automator`, `/Library/Automator`, and `~/Library/Automator`.
 

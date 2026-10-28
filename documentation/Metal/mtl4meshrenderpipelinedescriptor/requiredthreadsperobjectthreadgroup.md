@@ -24,7 +24,7 @@ var requiredThreadsPerObjectThreadgroup: MTLSize { get set }
 @property (nonatomic, readwrite) MTLSize requiredThreadsPerObjectThreadgroup;
 ```
 
-#### Discussion
+## Discussion
 
 This argument is optional, unless this pipeline uses `CooperativeTensors`, in which case you are responsible for providing it.
 

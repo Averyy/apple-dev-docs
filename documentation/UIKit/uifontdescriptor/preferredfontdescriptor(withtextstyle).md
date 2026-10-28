@@ -24,7 +24,7 @@ class func preferredFontDescriptor(withTextStyle style: UIFont.TextStyle) -> UIF
 + (UIFontDescriptor *) preferredFontDescriptorWithTextStyle:(UIFontTextStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 The new font descriptor.
 

@@ -25,7 +25,7 @@ protocol SCNNodeRendererDelegate : NSObjectProtocol
 @protocol SCNNodeRendererDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Typically, you use a node renderer delegate to perform custom rendering that is anchored at a location in the scene. For example, you can attach a node with a renderer delegate to part of a scene in order to add a special effect rendered using your own Metal or OpenGL drawing code, such as a fluid simulation. To provide a renderer delegate for an [`SCNNode`](./scnnode.md) object, use its [`rendererDelegate`](./scnnode/rendererdelegate.md) property.
 

@@ -20,11 +20,11 @@ optional func textView(_ textView: NSTextView, clickedOnLink link: Any, at charI
 - (BOOL) textView:(NSTextView *) textView clickedOnLink:(id) link atIndex:(NSUInteger) charIndex;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the click was handled; otherwise, [`false`](../../Swift/false.md) to allow the next responder to handle it.
 
-#### Discussion
+## Discussion
 
 The delegate can use this method to handle the click on the link. It is invoked by [`clicked(onLink:at:)`](../nstextview/clicked%28onlink,at%29.md).
 

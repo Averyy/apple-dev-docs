@@ -24,7 +24,7 @@ var isLowBalanceGateNotificationEnabled: Bool { get }
 @property (nonatomic, assign, readonly, getter=isLowBalanceGateNotificationEnabled) BOOL lowBalanceGateNotificationEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The Suica network determines the value and usage of this property.
 

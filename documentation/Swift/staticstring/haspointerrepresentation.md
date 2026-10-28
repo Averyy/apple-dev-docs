@@ -21,7 +21,7 @@ A Boolean value that indicates whether the static string stores a pointer to a n
 var hasPointerRepresentation: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If `hasPointerRepresentation` is `false`, the static string stores a single Unicode scalar value.
 

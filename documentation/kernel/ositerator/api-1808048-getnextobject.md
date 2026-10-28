@@ -11,11 +11,11 @@ Advances to and returns the next object in the iteration.
 virtual OSObject *getNextObject() = 0;
 ```
 
-#### Return Value
+## Return Value
 
 The next object in the iteration context, `NULL` if there is no next object or if the iterator is no longer valid.
 
-#### Overview
+## Overview
 
 The returned object will be released if removed from the collection; if you plan to store the reference, you should call retain on that object.
 

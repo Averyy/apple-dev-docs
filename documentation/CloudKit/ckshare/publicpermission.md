@@ -25,7 +25,7 @@ var publicPermission: CKShare.ParticipantPermission { get set }
 @property (assign) CKShareParticipantPermission publicPermission;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property’s value to be more permissive than [`CKShare.ParticipantPermission.none`](./participantpermission/none.md) allows any user with the share’s URL to join. CloudKit removes all public participants when you save the share if you set the property’s value to [`CKShare.ParticipantPermission.none`](./participantpermission/none.md).
 

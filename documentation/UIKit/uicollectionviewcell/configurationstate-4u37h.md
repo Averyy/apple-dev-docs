@@ -20,7 +20,7 @@ The current configuration state of the cell.
 @objc(_bridgedConfigurationState) @preconcurrency dynamic var configurationState: UICellConfigurationState { get }
 ```
 
-#### Discussion
+## Discussion
 
 To add your own custom state, see [`UIConfigurationStateCustomKey`](../uiconfigurationstatecustomkey.md).
 

@@ -14,7 +14,7 @@
 kSBCModePageCaching_DISC_Mask = (1 << kSBCModePageCaching_DISC_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask for use with flags field.
 

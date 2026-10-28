@@ -23,7 +23,7 @@ func gss_inquire_name(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ input_n
 OM_uint32 gss_inquire_name(OM_uint32 *minor_status, gss_name_t input_name, int *name_is_MN, gss_OID*MN_mech, gss_buffer_set_t*attrs);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 

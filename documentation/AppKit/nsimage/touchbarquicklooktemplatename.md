@@ -22,7 +22,7 @@ class let touchBarQuickLookTemplateName: String
 extern NSImageName const NSImageNameTouchBarQuickLookTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for Quick Look](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793521@2x.png)
 

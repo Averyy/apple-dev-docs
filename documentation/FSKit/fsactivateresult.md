@@ -19,7 +19,7 @@ class FSActivateResult
 @interface FSActivateResult : FSVolumeHandlerResult
 ```
 
-#### Overview
+## Overview
 
 Use this type in your implementation of [`activateVolume(options:replyHandler:)`](./fsvolume/handler/activatevolume%28options,replyhandler%29.md).
 

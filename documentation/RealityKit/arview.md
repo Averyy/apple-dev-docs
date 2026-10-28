@@ -31,7 +31,7 @@ A view that enables you to display an AR experience with RealityKit.
 - [Implementing scene understanding and reconstruction in your RealityKit app](./realitykit-scene-understanding.md)
 - [Using Metal performance shaders to create custom postprocess effects](./using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
 
-#### Overview
+## Overview
 
 Use an [`ARView`](./arview.md) instance to display rendered 3D graphics to the user. You typically add a single view to your app’s storyboard, and then provide an outlet for that view in your code. Alternatively, you can create and add a view to your view hierarchy programmatically at runtime, as you would any other view.
 

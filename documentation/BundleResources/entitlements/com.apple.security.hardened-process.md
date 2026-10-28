@@ -21,7 +21,7 @@ A Boolean value that indicates whether the executable opts in to additional secu
 
 **Default**: `true`
 
-#### Discussion
+## Discussion
 
 Xcode adds this entitlement to your app or extension when you add the Enhanced Security capability. For more information, see [Enabling enhanced security for your app](../../Xcode/enabling-enhanced-security-for-your-app.md).
 

@@ -9,11 +9,11 @@ Get information about a specific Configuration in an organization.
 **Availability**:
 - Apple Business API 2.6+
 
-#### Overview
+## Overview
 
 > **Note**: Use this API to retrieve the `customSettingsValues` for a `CUSTOM_SETTING` Configuration.
 
-##### Example
+### Example
 
 **Request**:
 

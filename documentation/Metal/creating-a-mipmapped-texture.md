@@ -5,7 +5,7 @@
 
 Decide whether a texture that you’re creating needs mipmaps.
 
-#### Overview
+## Overview
 
 In Metal, the same [`MTLTexture`](./mtltexture.md) object owns all of the mipmaps for a texture. When you create the texture descriptor for a new texture, you determine many of the texture’s fixed properties, including how many mipmaps it has. Set the [`mipmapLevelCount`](./mtltexturedescriptor/mipmaplevelcount.md) property to the number of mipmap levels you want the texture to have. The default value is `1`, which means that Metal doesn’t create mipmaps.
 
@@ -56,7 +56,7 @@ func makeMipTexture(for device: MTLDevice, with size: MTLSize) -> MTLTexture? {
 
 When you create a texture, Metal doesn’t initialize mipmap levels. You need to provide data for any mipmap levels that the GPU accesses. Further, Metal doesn’t keep track of which mipmaps you’ve filled in, or which contain uninitialized or stale data. You’ll need to keep track of that information yourself.
 
-##### Load a mipmapped texture using MetalKit
+### Load a mipmapped texture using MetalKit
 
 If you use MetalKit to create a texture, and the source data includes multiple mipmaps, MetalKit automatically creates the texture with the correct number of mipmaps and copies the source data into the appropriate mipmap levels. If the source data doesn’t include mipmaps, MetalKit creates a texture with just one texture image.
 

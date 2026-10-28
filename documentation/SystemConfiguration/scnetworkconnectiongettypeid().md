@@ -19,7 +19,7 @@ func SCNetworkConnectionGetTypeID() -> CFTypeID
 CFTypeID SCNetworkConnectionGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier of all `SCNetworkConnection` instances.
 

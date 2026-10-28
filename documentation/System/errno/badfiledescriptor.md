@@ -25,7 +25,7 @@ static var badFileDescriptor: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A file descriptor argument was out of range, referred to no open file, or a read (write) request was made to a file that was only open for writing (reading).
 

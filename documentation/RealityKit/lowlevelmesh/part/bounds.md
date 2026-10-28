@@ -20,7 +20,7 @@ The model-space bounding box of this part.
 var bounds: BoundingBox
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit uses this bounding box for culling the mesh against the active camera.
 

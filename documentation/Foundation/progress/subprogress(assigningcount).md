@@ -21,11 +21,11 @@ Returns a Subprogress which can be passed to any method that reports progress It
 func subprogress(assigningCount count: Int) -> Subprogress
 ```
 
-#### Return Value
+## Return Value
 
 A `Subprogress` instance.
 
-#### Discussion
+## Discussion
 
 Delegates a portion of totalUnitCount to a future child `ProgressManager` instance.
 

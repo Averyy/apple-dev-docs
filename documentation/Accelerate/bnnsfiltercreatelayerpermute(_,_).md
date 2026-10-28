@@ -27,7 +27,7 @@ func BNNSFilterCreateLayerPermute(_ layer_params: UnsafePointer<BNNSLayerParamet
 BNNSFilterBNNSFilterCreateLayerPermute(const BNNSLayerParametersPermute *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use a permute layer to copy one tensor to another while permuting the order of the axes. For example, given a [`BNNSDataLayoutImageCHW`](./bnnsdatalayoutimagechw.md) tensor containing the following values:
 

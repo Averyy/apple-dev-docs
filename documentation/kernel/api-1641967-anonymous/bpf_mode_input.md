@@ -13,7 +13,7 @@
 BPF_MODE_INPUT = 1
 ```
 
-#### Discussion
+## Discussion
 
 Enable input only.
 

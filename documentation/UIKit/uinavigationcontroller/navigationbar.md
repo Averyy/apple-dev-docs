@@ -23,7 +23,7 @@ var navigationBar: UINavigationBar { get }
 @property (nonatomic, readonly) UINavigationBar * navigationBar;
 ```
 
-#### Discussion
+## Discussion
 
 It is permissible to customize the appearance of the navigation bar using the methods and properties of the [`UINavigationBar`](../uinavigationbar.md) class but you must never change its [`frame`](../uiview/frame.md), [`bounds`](../uiview/bounds.md), or [`alpha`](../uiview/alpha.md) values or modify its view hierarchy directly. To show or hide the navigation bar, you should always do so through the navigation controller by changing its [`isNavigationBarHidden`](./isnavigationbarhidden.md) property or calling the [`setNavigationBarHidden(_:animated:)`](./setnavigationbarhidden%28_,animated%29.md) method.
 

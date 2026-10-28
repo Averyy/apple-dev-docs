@@ -20,11 +20,11 @@ func FFDeviceCreateEffect(_ deviceReference: FFDeviceObjectReference!, _ uuidRef
 extern HRESULT FFDeviceCreateEffect(FFDeviceObjectReference deviceReference, CFUUIDRef uuidRef, FFEFFECT *pEffectDefinition, FFEffectObjectReference*pEffectReference);
 ```
 
-#### Return Value
+## Return Value
 
 If the method succeeds, the return value is FF_OK. If the method fails, the return value can be one of the following error values:
 
-#### Discussion
+## Discussion
 
 FFERR_INVALIDPARAM
 
@@ -42,7 +42,7 @@ FFERR_INTERNAL
 
 FFERR_EFFECTTYPEMISMATCH
 
-#### Discussion
+## Discussion
 
 When you are finished with the effect, FFReleaseEffect must be called on the reference received in this function to dispose of the API effect object.
 

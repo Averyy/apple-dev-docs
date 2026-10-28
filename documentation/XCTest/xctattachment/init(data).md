@@ -16,7 +16,7 @@ convenience init(data payload: Data)
 + (instancetype) attachmentWithData:(NSData *) payload;
 ```
 
-#### Discussion
+## Discussion
 
 Creates an attachment with a [`uniformTypeIdentifier`](./uniformtypeidentifier.md) of `"``public.data"`.
 

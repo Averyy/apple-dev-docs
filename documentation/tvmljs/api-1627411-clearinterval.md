@@ -17,7 +17,7 @@ void clearInterval(
 );
 ```
 
-#### Discussion
+## Discussion
 
 This function stops the function associated with the identifier created by the [`setInterval`](./api-1627337-setinterval.md) function from executing.
 

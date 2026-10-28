@@ -17,7 +17,7 @@ A logger that logs to `stderr`.
 struct StderrHandler
 ```
 
-#### Overview
+## Overview
 
 Callers can set `StderrHandler.logLevel` to filter output by level.
 

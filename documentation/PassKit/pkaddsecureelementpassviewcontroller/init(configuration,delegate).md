@@ -22,7 +22,7 @@ init?(configuration: PKAddSecureElementPassConfiguration, delegate: (any PKAddSe
 - (instancetype) initWithConfiguration:(PKAddSecureElementPassConfiguration *) configuration delegate:(id<PKAddSecureElementPassViewControllerDelegate>) delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must adopt the [`PKAddSecureElementPassViewControllerDelegate`](../pkaddsecureelementpassviewcontrollerdelegate.md) protocol. The view controller doesn’t retain the delegate.
 

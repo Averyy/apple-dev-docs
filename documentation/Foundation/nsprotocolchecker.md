@@ -20,7 +20,7 @@ class NSProtocolChecker
 @interface NSProtocolChecker : NSProxy
 ```
 
-#### Overview
+## Overview
 
 A [`NSProtocolChecker`](./nsprotocolchecker.md) object can be particularly useful when an object with many methods, only a few of which ought to be remotely accessible, is made available using the distributed objects system.
 

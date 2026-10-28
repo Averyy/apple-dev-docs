@@ -24,7 +24,7 @@ case linearGain
 kAudioUnitParameterUnit_LinearGain
 ```
 
-#### Discussion
+## Discussion
 
 Typically used as a relative measure of audio gain.
 

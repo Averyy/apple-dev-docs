@@ -29,7 +29,7 @@ func startMonitoring(for region: CLRegion)
 - [Determining the proximity to an iBeacon device](../determining-the-proximity-to-an-ibeacon-device.md)
 - [Monitoring the user’s proximity to geographic regions](../monitoring-the-user-s-proximity-to-geographic-regions.md)
 
-#### Discussion
+## Discussion
 
 You must call this method once for each region you want to monitor. If an existing region with the same identifier is already being monitored by the app, the old region is replaced by the new one. The regions you add using this method are shared by all location manager objects in your app and stored in the [`monitoredRegions`](./monitoredregions.md) property.
 

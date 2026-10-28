@@ -19,11 +19,11 @@ func abortEditing() -> Bool
 - (BOOL) abortEditing;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if there was a field editor associated with the control; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If there was a field editor, this method removes the field editor’s delegate.
 

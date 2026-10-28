@@ -25,7 +25,7 @@ typealias MIDIDeviceListRef = MIDIObjectRef
 typedef MIDIObjectRef MIDIDeviceListRef;
 ```
 
-#### Discussion
+## Discussion
 
 This object doesn’t own the devices, so disposing it doesn’t dispose the devices it references.
 

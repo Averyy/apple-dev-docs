@@ -22,7 +22,7 @@ case bookmark
 UIApplicationShortcutIconTypeBookmark
 ```
 
-#### Discussion
+## Discussion
 
 ![Bookmark quick action icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934534@2x.png)
 

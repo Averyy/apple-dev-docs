@@ -5,13 +5,13 @@
 
 Set up your environment to use Verify with Wallet.
 
-#### Overview
+## Overview
 
 Verify with Wallet allows you to verify a person’s information using their digital ID stored in Apple Wallet. Verify with Wallet streamlines the verification experience in apps that use age or identity verification by allowing people to share information from their digital ID.
 
 To request a digital ID stored in Apple Wallet, you use the [`PKIdentityNationalIDCardDescriptor`](./pkidentitynationalidcarddescriptor.md). You need the `in-app-identity-presentment` entitlement to use this API, and you can [submit your request here](https://developer.apple.com/contact/request/verify-with-wallet/). For more information on the Verify with Wallet API and entitlement requirements, see [Get started with the Verify with Wallet API](https://developer.apple.com/wallet/get-started-with-verify-with-wallet/).
 
-#### Set up your developer account
+## Set up your developer account
 
 After you add the `in-app-identity-presentment` entitlement, you’ll set up your developer account. Complete the following steps in the Certificates, Identifiers, & Profiles section of the Apple Developer website:
 
@@ -21,7 +21,7 @@ After you add the `in-app-identity-presentment` entitlement, you’ll set up you
 4. Add the ‘In App Identity Presentment Merchant IDs’ capability to your App ID and select the associated Merchant IDs.
 5. Generate a new provisioning profile with these changes.
 
-#### Configure your app’s entitlement file
+## Configure your app’s entitlement file
 
 Choose the `document-type` you want to add the entitlement to from the entitlement request you submitted. For more information, see [Managing your app’s information property list values](../BundleResources/managing-your-app-s-information-property-list.md).
 

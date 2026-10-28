@@ -19,7 +19,7 @@ init?(fromMetadataQueryString queryString: String)
 + (NSPredicate *) predicateFromMetadataQueryString:(NSString *) queryString;
 ```
 
-#### Discussion
+## Discussion
 
 For details of the format of the query string, see [File Metadata Query Expression Syntax](https://developer.apple.com/library/archive/documentation/Carbon/Conceptual/SpotlightQuery/Concepts/QueryFormat.html#//apple_ref/doc/uid/TP40001849).
 

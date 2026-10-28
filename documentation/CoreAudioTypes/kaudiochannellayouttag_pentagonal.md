@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_Pentagonal: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_Pentagonal
 ```
 
-#### Discussion
+## Discussion
 
 A pentagonal recording uses 72° loudspeaker separation layout. Your channels must be laid out in the following order:
 

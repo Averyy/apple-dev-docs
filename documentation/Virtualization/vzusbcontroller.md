@@ -19,7 +19,7 @@ class VZUSBController
 @interface VZUSBController : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t create a `VZUSBController` directly. You need to first configure USB controllers on a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) through a subclass of [`VZUSBControllerConfiguration`](./vzusbcontrollerconfiguration.md). When you create a [`VZVirtualMachine`](./vzvirtualmachine.md) from the configuration, the USB controllers are available through the [`usbControllers`](./vzvirtualmachine/usbcontrollers.md) property.
 

@@ -19,7 +19,7 @@ var backgroundFilters: [CIFilter] { get set }
 @property (copy) NSArray<__kindof CIFilter *> * backgroundFilters;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`CIFilter`](../../CoreImage/cifilter-swift.class.md) objects. This array represents the background filters stored in the [`backgroundFilters`](../../QuartzCore/calayer/backgroundfilters.md) property of the view’s layer. If the view does not have a layer, setting the value of this property has no effect.
 

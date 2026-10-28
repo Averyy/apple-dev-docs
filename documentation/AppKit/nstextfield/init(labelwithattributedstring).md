@@ -19,11 +19,11 @@ convenience init(labelWithAttributedString attributedStringValue: NSAttributedSt
 + (instancetype) labelWithAttributedString:(NSAttributedString *) attributedStringValue;
 ```
 
-#### Return Value
+## Return Value
 
 A text field that displays the specified attributed string as a static label.
 
-#### Discussion
+## Discussion
 
 The text field determines its line-break mode by inspecting the paragraph style attributes in the attributed string.
 

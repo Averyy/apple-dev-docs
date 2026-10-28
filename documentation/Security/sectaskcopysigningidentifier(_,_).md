@@ -20,7 +20,7 @@ func SecTaskCopySigningIdentifier(_ task: SecTask, _ error: UnsafeMutablePointer
 CFStringRefSecTaskCopySigningIdentifier(SecTaskRef task, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A string representing the code signing identifier for the task, or `NULL` on error. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this string’s memory when you are done with it.
 

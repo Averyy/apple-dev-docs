@@ -23,7 +23,7 @@ static var verticalWhitespace: CharacterClass { get }
 
 Available when `Self` is `CharacterClass`.
 
-#### Discussion
+## Discussion
 
 This character class is equivalent to `\v` in regex syntax.
 

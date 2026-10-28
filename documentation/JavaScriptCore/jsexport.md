@@ -24,11 +24,11 @@ protocol JSExport
 @protocol JSExport
 ```
 
-#### Overview
+## Overview
 
 Implement this protocol to export your Objective-C classes and their instance methods, class methods, and properties to JavaScript code.
 
-##### Export Objective-C Objects to JavaScript
+### Export Objective-C Objects to JavaScript
 
 When you create a JavaScript value from an instance of an Objective-C class, and the [`JSValue`](./jsvalue.md) class doesn’t specify a copying convention, JavaScriptCore creates a JavaScript wrapper object. For certain classes, JavaScriptCore automatically copies values to the appropriate JavaScript type; for example, [`NSString`](../Foundation/nsstring.md) instances become JavaScript strings.
 
@@ -36,7 +36,7 @@ JavaScript supports inheritance using a chain of prototype objects. For each Obj
 
 In addition to the prototype object, JavaScriptCore produces a JavaScript constructor object for each Objective-C class.
 
-##### Expose Objective-C Methods and Properties to JavaScript
+### Expose Objective-C Methods and Properties to JavaScript
 
 By default, no methods or properties of the Objective-C class have exposure to JavaScript. Instead, you must choose methods and properties to export. For each protocol that a class conforms to, if the protocol incorporates the [`JSExport`](./jsexport.md) protocol, JavaScriptCore interprets that protocol as a list of methods and properties to export to JavaScript.
 
@@ -83,7 +83,7 @@ Wrapped Objective-C properties, parameters, and return values convert according 
 
 > **Note**:  If a class declares conformance to the [`JSExport`](./jsexport.md) protocol, JavaScriptCore ignores its normal copying conventions for built-in types. For example, if you define a custom [`NSString`](../Foundation/nsstring.md) subclass that conforms to the [`JSExport`](./jsexport.md) protocol and pass an instance of that class to the `valueWithObject:` method, the result is a JavaScript wrapper object for the custom class, not a JavaScript string primitive.
 
-##### Customize Export of Objective-C Selectors
+### Customize Export of Objective-C Selectors
 
 When exporting a selector that takes one or more arguments, JavaScriptCore generates a corresponding function name using the following conversion:
 

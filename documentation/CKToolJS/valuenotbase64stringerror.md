@@ -15,7 +15,7 @@ An error a validator emits when a value isn’t a `Base64` string or isn’t cas
 interface ValueNotBase64StringError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueNotConvertibleToTypeError`.
 

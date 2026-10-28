@@ -20,7 +20,7 @@ Removes a specific reference arc from the prim.
 func remove(_ reference: USDPrim.Reference) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the reference cannot be removed.
 

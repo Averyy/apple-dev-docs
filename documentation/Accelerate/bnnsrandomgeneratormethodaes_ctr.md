@@ -25,7 +25,7 @@ var BNNSRandomGeneratorMethodAES_CTR: BNNSRandomGeneratorMethod { get }
 BNNSRandomGeneratorMethodAES_CTR
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Don’t use this method for cryptographic applications.
 

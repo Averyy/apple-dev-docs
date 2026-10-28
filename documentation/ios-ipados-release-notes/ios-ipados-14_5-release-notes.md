@@ -5,64 +5,64 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 14.5 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 14.5. The SDK comes bundled with Xcode 12.5. For information on the compatibility requirements for Xcode 12.5, see [Xcode 12.5 Release Notes](../Xcode-Release-Notes/xcode-12_5-release-notes.md).
 
-##### Accessibility
+### Accessibility
 
-###### New Features
+#### New Features
 
 - Many SF Symbols now have default accessibility labels. (70305995)
 
-##### Battery Health
+### Battery Health
 
-###### Resolved Issues
+#### Resolved Issues
 
 - iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max battery health reporting system will recalibrate maximum battery capacity and peak performance capability to address inaccurate estimates of battery health reporting for some users. For more information, see [About recalibration of battery health reporting in iOS 14.5](https://support.apple.com/HT212247).
 
-##### Combine
+### Combine
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Using [`Published`](../Combine/published.md) in a subclass of a type conforming to [`ObservableObject`](../Combine/observableobject.md) now correctly publishes changes. (71816443)
 
-##### Display
+### Display
 
-###### Resolved Issues
+#### Resolved Issues
 
 - iOS & iPadOS 14.5 includes an optimization to reduce the appearance of a dim glow that might appear at reduced brightness levels with black backgrounds.
 
-##### Privacy
+### Privacy
 
-###### New Features
+#### New Features
 
 - iPad (8th generation),  iPad Air (4th generation), iPad Pro 11-inch (2nd generation), and iPad Pro 12.9-inch (4th generation) now mute the built-in microphone when its Smart Folio is closed. To avoid unnecessarily recording the muted signal, the default behavior is to interrupt an audio session that is using the built-in microphone when the Smart Folio is closed. You can opt out of the playback interruption when the Smart Folio is closed by using the new [`AVAudioSession.CategoryOptions`](../AVFAudio/avaudiosession/categoryoptions-swift.struct.md) [`overrideMutedMicrophoneInterruption`](../AVFAudio/avaudiosession/categoryoptions-swift.struct/overridemutedmicrophoneinterruption.md), allowing the audio session to continue playing uninterrupted while microphone input remains muted. For more information, see [Handling audio interruptions](../AVFAudio/handling-audio-interruptions.md). (57042856)
 
-##### Siri
+### Siri
 
-###### New Features
+#### New Features
 
 - For Music, Podcasts, and Audiobooks requests, updated dialogs for app selection are now available. To ensure your app is set up to participate in Siri app selection, see  [Improving Siri Media Interactions and App Selection](../SiriKit/improving-siri-media-interactions-and-app-selection.md). (74555773)
 
-##### SKAdNetwork
+### SKAdNetwork
 
-###### New Features
+#### New Features
 
 - With view-through attribution, [`SKAdNetwork`](../StoreKit/skadnetwork.md) now supports all ad formats for promoting apps. (70345857)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - You’re now able to use either version 1.0 or version 2.0 signatures when generated using iOS & iPadOS 14.5 and later. (71474331)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - Added [`TitleAndIconLabelStyle`](../SwiftUI/titleandiconlabelstyle.md), a new style for [`Label`](../SwiftUI/label.md) views that shows both the title and icon of the label using a system-standard layout. In most cases, labels show both title and icon by default. However, some containers might apply a different default label style to their content, such as only showing icons within toolbars on macOS and iOS. To opt in to showing both the title and the icon, apply the title and icon label style: `Label("Lightning", systemImage: "bolt.fill").labelStyle(TitleAndIconLabelStyle())`. (64646578)
 - Types conforming to any style protocol, such as [`ButtonStyle`](../SwiftUI/buttonstyle.md) or [`ToggleStyle`](../SwiftUI/togglestyle.md), are now enforced to be value types. Styles must be structures or enumerations, not classes, and conforming a class to a style protocol may trigger an assertion. This is the same restriction that the system has always enforced on types conforming to [`View`](../SwiftUI/view.md). (62886135)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - You can now apply multiple [`sheet(isPresented:onDismiss:content:)`](../SwiftUI/view/sheet%28ispresented,ondismiss,content%29.md) and [`fullScreenCover(item:onDismiss:content:)`](../SwiftUI/view/fullscreencover%28item,ondismiss,content%29.md) modifiers in the same view hierarchy. (74246633)
 - Drop locations are now accurate when using [`onDrop(of:delegate:)`](../SwiftUI/view/ondrop%28of,delegate%29-6lin8.md). (74030674)
@@ -82,15 +82,15 @@ The iOS & iPadOS 14.5 SDK provides support to develop apps for iPhone, iPad, and
 - A [`TabView`](../SwiftUI/tabview.md) with [`PageTabViewStyle`](../SwiftUI/pagetabviewstyle.md) now correctly invokes [`onAppear(perform:)`](../SwiftUI/view/onappear%28perform%29.md) and [`onDisappear(perform:)`](../SwiftUI/view/ondisappear%28perform%29.md) for its tabs. (71225006)
 - [`InlinePickerStyle`](../SwiftUI/inlinepickerstyle.md) now resolves as an in-line section if applied to a [`Picker`](../SwiftUI/picker.md) within a [`List`](../SwiftUI/list.md) on iOS, watchOS, and tvOS, using a checkmark to indicate the selected option. (71383311)
 
-##### WebKit
+### WebKit
 
-###### New Features
+#### New Features
 
 - Apps and websites can now receive privacy-preserving attributions for ad clicks which navigate users to websites. (70502338)
 
-##### Xcode
+### Xcode
 
-###### Deprecations
+#### Deprecations
 
 - Don’t use the iOS [`MinimumOSVersion`](../BundleResources/information-property-list/minimumosversion.md) information property list key to declare the minimum release of macOS in which your app runs. Use [`LSMinimumSystemVersion`](../BundleResources/information-property-list/lsminimumsystemversion.md) instead. (73890473)
 

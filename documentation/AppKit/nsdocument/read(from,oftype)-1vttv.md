@@ -20,7 +20,7 @@ func read(from url: URL, ofType typeName: String) throws
 - (BOOL) readFromURL:(NSURL *) url ofType:(NSString *) typeName error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method just creates an NSFileWrapper and invokes `[self readFromFileWrapper:theFileWrapper ofType:typeName error:outError]`.
 

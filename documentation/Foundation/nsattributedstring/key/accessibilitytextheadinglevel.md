@@ -21,7 +21,7 @@ nonisolated
 static let accessibilityTextHeadingLevel: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../../nsnumber.md) object with a value that is a number in the range of `0` to `6`. Use `0` to indicate the absence of a specific heading level, and use other numbers to indicate the heading level.
 

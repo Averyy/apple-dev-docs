@@ -26,7 +26,7 @@ var currentPath: NWPath? { get }
 @property (nonatomic, readonly, nullable) NWPath * currentPath;
 ```
 
-#### Discussion
+## Discussion
 
 Use Key-Value Observing (KVO) to watch for changes to this property. For information about KVO, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 

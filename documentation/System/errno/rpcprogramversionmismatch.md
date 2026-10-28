@@ -25,7 +25,7 @@ static var rpcProgramVersionMismatch: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The requested version of the program isn’t available on the remote host.
 

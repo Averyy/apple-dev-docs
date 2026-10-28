@@ -21,7 +21,7 @@ The transition is being applied to a view that is about to be inserted into the 
 case willAppear
 ```
 
-#### Discussion
+## Discussion
 
 In this phase, a transition should show the appearance that will be animated from to make the appearance transition.
 

@@ -22,7 +22,7 @@ var videoMaxScaleAndCropFactor: CGFloat { get }
 @property (nonatomic, readonly) CGFloat videoMaxScaleAndCropFactor;
 ```
 
-#### Discussion
+## Discussion
 
 The value defines the largest value you can set the [`videoScaleAndCropFactor`](./videoscaleandcropfactor.md) property to, which only applies to a video connection.
 

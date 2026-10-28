@@ -21,7 +21,7 @@ The slice of the input which was captured, if there was a capture.
 var substring: Substring? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If nothing was captured, `substring` is `nil`.
 

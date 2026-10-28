@@ -17,7 +17,7 @@ A specification for how to represent a property as a command-line argument label
 struct NameSpecification
 ```
 
-#### Overview
+## Overview
 
 You can specify the names for an option or flag by using either string literal syntax or using one or more of the `NameSpecification` members. For example, to specify that the `verbose` property should have the names `-v` and `--verbose`, all of the following declarations are equivalent:
 
@@ -42,7 +42,7 @@ var verbose = false
   An individual property name translation.
 ### Initializers
 - [init<S>(S)](./namespecification/init%28_%29.md)
-- [init(arrayLiteral: NameSpecification.Element...)](./namespecification/init%28arrayliteral%29.md)
+- [init(arrayLiteral: Element...)](./namespecification/init%28arrayliteral%29.md)
 ### Type Properties
 - [static var long: NameSpecification](./namespecification/long.md)
   Use the property’s name converted to lowercase with words separated by hyphens.

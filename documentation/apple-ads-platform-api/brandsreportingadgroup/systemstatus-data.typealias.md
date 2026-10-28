@@ -20,11 +20,11 @@ string BrandsReportingAdGroup.SystemStatus
 - `RUNNING`: The ad group is active and serving ads.
 - `NOT_RUNNING`: The ad group isn’t serving ads. Check `systemStatusReasons` for the specific cause.
 
-#### Discussion
+## Discussion
 
 This is a point-in-time snapshot; an ad group that later changes to `NOT_RUNNING` won’t retroactively update in an already-generated report.
 
-##### Example
+### Example
 
 ```json
 {

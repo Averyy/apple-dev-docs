@@ -14,7 +14,7 @@ A vector from a position in the scene to the view reference point.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Output | Type |
 | --- | --- |

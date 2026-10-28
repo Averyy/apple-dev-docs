@@ -20,7 +20,7 @@ The paragraph style of the text.
 extern NSAttributedStringKey const NSParagraphStyleAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSParagraphStyle`](./nsparagraphstyle.md) object. Use this attribute to apply multiple attributes to a range of text. If you do not specify this attribute, the string uses the default paragraph attributes, as returned by the [`default`](./nsparagraphstyle/default.md) method of [`NSParagraphStyle`](./nsparagraphstyle.md).
 

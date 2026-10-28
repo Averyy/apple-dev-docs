@@ -4,19 +4,19 @@
 
 Create the user interface for your watchOS app by nesting stacks.
 
-#### Overview
+## Overview
 
 watchOS apps use a simplified, stack-based layout model for their user interfaces. Xcode automatically groups elements into horizontal and vertical stacks, and you can fine-tune the layout by modifying the element’s attributes. Additionally, you can ensure that your interface works as expected on all Apple Watch sizes by using resizable elements and size-specific customizations.
 
-As you add items to the storyboard, Xcode stacks them vertically, with each item on its own line ([Figure 1](./storyboard_support/building_watchos_app_interfaces_using_the_storyboard.md#3295988)).
+As you add items to the storyboard, Xcode stacks them vertically, with each item on its own line ([Figure 1](./building-watchos-app-interfaces-using-the-storyboard.md#3295988)).
 
 ![A screenshot of a storyboard scene with three buttons stacked horizontally.](https://developer.apple.com/tutorials/images/com.apple.watchkit/media-3295988@2x.png)
 
-Use Groups to create horizontal or vertical stacks ([Figure 2](./storyboard_support/building_watchos_app_interfaces_using_the_storyboard.md#3172421)). Groups don’t have a default visual representation, but you can configure a background color or image as needed. Nest Groups, as necessary, to create more complex layouts.
+Use Groups to create horizontal or vertical stacks ([Figure 2](./building-watchos-app-interfaces-using-the-storyboard.md#3172421)). Groups don’t have a default visual representation, but you can configure a background color or image as needed. Nest Groups, as necessary, to create more complex layouts.
 
 ![A screenshot with a Group containing a horizontal stack of buttons.](https://developer.apple.com/tutorials/images/com.apple.watchkit/media-3172421@2x.png)
 
-##### Customize the Layout Using Attributes
+### Customize the Layout Using Attributes
 
 You can fine-tune an interface element’s size and layout using the Attributes inspector. All interface elements have the following attributes:
 

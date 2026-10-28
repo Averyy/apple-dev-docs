@@ -20,7 +20,7 @@ let staleDate: Date?
 
 - [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
 
-#### Discussion
+## Discussion
 
 When time reaches the configured stale date, the system considers the Live Activity out of date, and the [`ActivityState`](../activitystate.md) of the Live Activity changes to [`ActivityState.stale`](../activitystate/stale.md).
 

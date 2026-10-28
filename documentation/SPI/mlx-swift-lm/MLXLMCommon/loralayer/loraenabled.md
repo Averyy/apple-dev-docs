@@ -18,7 +18,7 @@ When false the layer behaves as the underlying base layer (no LoRA term added). 
 var loraEnabled: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 A default implementation is provided so existing `LoRALayer` conformers continue to compile unchanged — they appear as non-toggleable (always-on) layers, and `setLoRAEnabled(_:)` is a no-op for them. The four built-in implementations (`LoRALinear`, `QLoRALinear`, `DoRALinear`, `QDoRALinear`) override this with a stored property to provide the real toggle.
 

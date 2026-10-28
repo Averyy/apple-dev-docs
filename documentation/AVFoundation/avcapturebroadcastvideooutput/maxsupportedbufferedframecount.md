@@ -23,7 +23,7 @@ class var maxSupportedBufferedFrameCount: Int { get }
 @property (class, nonatomic, readonly) NSInteger maxSupportedBufferedFrameCount;
 ```
 
-#### Discussion
+## Discussion
 
 This class property returns the system-imposed limit for buffered frame count to ensure optimal performance and memory usage in broadcast workflows. The limit is determined based on system capabilities.
 

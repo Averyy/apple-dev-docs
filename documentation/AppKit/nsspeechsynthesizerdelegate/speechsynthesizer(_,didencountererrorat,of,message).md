@@ -20,7 +20,7 @@ optional func speechSynthesizer(_ sender: NSSpeechSynthesizer, didEncounterError
 - (void) speechSynthesizer:(NSSpeechSynthesizer *) sender didEncounterErrorAtIndex:(NSUInteger) characterIndex ofString:(NSString *) string message:(NSString *) message;
 ```
 
-#### Discussion
+## Discussion
 
 The synthesizer sends an error delegate message whenever it encounters a syntax error within a command embedded in the string it is processing. This can be useful during application debugging, to detect problems with commands that you have embedded in strings that your application speaks. It can also be useful if your application allows users to embed commands within strings. Your application might display an alert indicating that the synthesizer encountered a problem in processing an embedded command.
 

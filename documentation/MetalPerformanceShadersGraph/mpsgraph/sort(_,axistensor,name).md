@@ -24,7 +24,7 @@ func sort(_ tensor: MPSGraphTensor, axisTensor: MPSGraphTensor, name: String?) -
 - (MPSGraphTensor *) sortWithTensor:(MPSGraphTensor *) tensor axisTensor:(MPSGraphTensor *) axisTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 

@@ -20,7 +20,7 @@ func endUndoGroup() -> Bool
 - (BOOL) endUndoGroup;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the undo group was successfully ended; otherwise [`false`](../../Swift/false.md).
 

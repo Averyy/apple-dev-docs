@@ -25,7 +25,7 @@ func readRSSI()
 - (void) readRSSI;
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, when you call this method to retrieve the Received Signal Strength Indicator (RSSI) of the peripheral while connected to the central manager, the peripheral calls the [`peripheralDidUpdateRSSI(_:error:)`](../cbperipheraldelegate/peripheraldidupdaterssi%28_,error%29.md) method of its delegate object. If retrieving the RSSI value of the peripheral succeeds, you can access it through the peripheral’s [`rssi`](./rssi.md) property.
 

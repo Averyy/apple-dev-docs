@@ -20,7 +20,7 @@ var frameIndex: LayerFrameIndex { get }
 cp_layer_frame_index_t cp_frame_get_frame_index(cp_frame_t frame);
 ```
 
-#### Discussion
+## Discussion
 
 The layer assigns a unique index number to each frame, starting at the first frame and incrementing the index by `1` for each new frame.
 

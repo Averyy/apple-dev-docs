@@ -19,11 +19,11 @@ init!(device: IOBluetoothDevice!, delegate inDelegate: (any IOBluetoothHandsFree
 - (instancetype) initWithDevice:(IOBluetoothDevice *) device delegate:(id<IOBluetoothHandsFreeDelegate>) inDelegate;
 ```
 
-#### Return Value
+## Return Value
 
 A newly created IOBluetoothHandsFreeAudioGateway object on success, nil on failure
 
-#### Discussion
+## Discussion
 
 This method should be called on a subclass (IOBluetoothHandsFreeDevice or IOBluetoothHandsFreeAudioGateway) to get full functionality.
 

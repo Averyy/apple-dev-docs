@@ -19,7 +19,7 @@ func addAnnotation(_ location: CLLocationCoordinate2D, with image: UIImage?, cen
 - (void) addAnnotation:(CLLocationCoordinate2D) location withImage:(UIImage *) image centerOffset:(CGPoint) offset;
 ```
 
-#### Discussion
+## Discussion
 
 This method adds an image to the map at the specified geographic location. The image is positioned just above the actual coordinate and centered on the coordinate horizontally.
 

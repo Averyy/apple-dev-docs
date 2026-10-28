@@ -16,11 +16,11 @@ Adds an element to the transaction.
 IOReturn (*addElement)(void *self, IOHIDElementCookie elementCookie);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 If the element has already been added to transaction, an error will be returned.
 

@@ -27,7 +27,7 @@ var compoundIndexes: [[Any]] { get set }
 @property (strong) NSArray<NSArray<id> *> * compoundIndexes;
 ```
 
-#### Discussion
+## Discussion
 
 The arrays contained in the returned array contain instances of `NSAttributeDescription`, `NSRelationshipDescription` that represent properties of the entity, or of `NSString` that match the name of attributes or relationships of the entity.
 

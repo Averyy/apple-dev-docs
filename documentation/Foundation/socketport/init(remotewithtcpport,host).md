@@ -19,11 +19,11 @@ convenience init?(remoteWithTCPPort port: UInt16, host hostName: String?)
 - (instancetype) initRemoteWithTCPPort:(unsigned short) port host:(NSString *) hostName;
 ```
 
-#### Return Value
+## Return Value
 
 A TCP/IP socket port of type `SOCK_STREAM` that can connect to the remote host `hostName` on port `port`.
 
-#### Discussion
+## Discussion
 
 A connection is not opened to the remote host until data is sent.
 

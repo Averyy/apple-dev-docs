@@ -23,7 +23,7 @@ func link(with graphs: [MLCInferenceGraph]) -> Bool
 - (BOOL) linkWithGraphs:(NSArray<MLCInferenceGraph *> *) graphs;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the operation was successful.
 

@@ -29,7 +29,7 @@ func makeComputePipelineState(descriptor: MTLComputePipelineDescriptor, options:
 - (void) newComputePipelineStateWithDescriptor:(MTLComputePipelineDescriptor *) descriptor options:(MTLPipelineOption) options completionHandler:(MTLNewComputePipelineStateWithReflectionCompletionHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use the compute pipeline state to configure a compute pass by calling the [`setComputePipelineState(_:)`](../mtlcomputecommandencoder/setcomputepipelinestate%28_%29.md) method of an [`MTLComputeCommandEncoder`](../mtlcomputecommandencoder.md) instance.
 

@@ -22,7 +22,7 @@ var centerStageRectOfInterest: CGRect { get set }
 @property (nonatomic) CGRect centerStageRectOfInterest;
 ```
 
-#### Discussion
+## Discussion
 
 Apps that require cropping the output from Center Stage can use this property to guide how it performs its framing. The rectangle’s origin is top-left and is relative to the coordinate space of the output pixel buffer. The default value of this property is a rectangle with a normalized (`0`-`1`) coordinate space, where (`0`,`0`) represents the top left of the picture area, and (`1`,`1`) represents the bottom-right of the unrotated picture. The system applies the rectangle of interest prior to rotation, mirroring, or scaling.
 

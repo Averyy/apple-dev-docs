@@ -17,7 +17,7 @@ Creates a campaign to promote an app.
 - [Apple Ads Campaign Management API 3](./apple-search-ads-campaign-management-api-3.md)
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 Essential points for creating campaigns are:
 
@@ -29,7 +29,7 @@ Essential points for creating campaigns are:
 
 After creating a campaign, see [`Create an Ad Group`](./create-an-ad-group.md).
 
-##### Payload example: Create a campaign with a manual bid strategy
+### Payload example: Create a campaign with a manual bid strategy
 
 **Request**:
 
@@ -102,7 +102,7 @@ POST https://api.searchads.apple.com/api/v5/campaigns
 }
 ```
 
-##### Payload example: Create a campaign with a Maximize Conversions bid strategy
+### Payload example: Create a campaign with a Maximize Conversions bid strategy
 
 - Set the `biddingStrategy` value to `MAX_CONVERSIONS`. If not specified, `biddingStrategy` defaults to `MANUAL_CPT`.
 - A `targetCpa` is required.

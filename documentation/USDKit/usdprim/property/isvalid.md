@@ -20,7 +20,7 @@ A Boolean value indicating whether this property is valid.
 var isValid: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 A property’s validity is connected to a [`USDStage`](../../usdstage.md). A property becomes invalid when the lifetime of its stage ends.
 

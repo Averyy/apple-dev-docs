@@ -21,7 +21,7 @@ Returns a Boolean that indicates whether the demand requests fewer than the give
 static func < (lhs: Subscribers.Demand, rhs: Int) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 If `lhs` is `.unlimited`, then the result is always `false`. Otherwise, the operator compares the demand’s `max` value to `rhs`.
 

@@ -5,7 +5,7 @@
 
 Check whether your app can use ARKit and respect user privacy at runtime.
 
-#### Overview
+## Overview
 
 ARKit requires iOS 11.0 or later and an iOS device with an A9 or later processor. Some ARKit features require later iOS versions or specific devices. ARKit also uses a device camera, so you need to configure iOS privacy controls so the user can permit camera access for your app.
 
@@ -17,7 +17,7 @@ How to handle device compatibility support depends on how your app uses ARKit:
 
 > 💡 **Tip**:  Check the [`isSupported`](./arconfiguration/issupported.md) property before offering AR features in your app’s UI, so that users on unsupported devices aren’t disappointed by trying to access those features.
 
-##### Handle User Consent and Privacy
+### Handle User Consent and Privacy
 
 For your app to use ARKit, the user must explicitly grant your app permission for camera access. ARKit automatically asks the user for permission the first time your app runs an AR session.
 

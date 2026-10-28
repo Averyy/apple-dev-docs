@@ -19,7 +19,7 @@ func sort(using comparator: Selector)
 - (void) sortUsingSelector:(SEL) comparator;
 ```
 
-#### Discussion
+## Discussion
 
 The comparator message is sent to each object in the matrix and has as its single argument another object in the array. The comparison method is used to compare two elements at a time and should return `NSOrderedAscending` if the receiver is smaller than the argument, `NSOrderedDescending` if the receiver is larger than the argument, and `NSOrderedSame` if they are equal.
 

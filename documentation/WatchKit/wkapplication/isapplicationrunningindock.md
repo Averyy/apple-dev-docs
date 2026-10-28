@@ -19,7 +19,7 @@ var isApplicationRunningInDock: Bool { get }
 @property (nonatomic, readonly) BOOL isApplicationRunningInDock;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains [`true`](../../Swift/true.md) if the app is running in the dock; otherwise, [`false`](../../Swift/false.md).
 

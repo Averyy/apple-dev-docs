@@ -19,11 +19,11 @@ func hasReadableProperty(forKey key: String) -> Bool
 - (BOOL) hasReadablePropertyForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the described class has a readable property identified by the specified key; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 To determine if a property is read-only, invoke [`hasWritableProperty(forKey:)`](./haswritableproperty%28forkey%29.md)/
 

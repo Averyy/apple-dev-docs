@@ -25,7 +25,7 @@ enum SCNFilterMode
 enum SCNFilterMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Texture filtering determines the appearance of a material property’s contents when portions of the material surface appear larger or smaller than the original texture image. For example, when a texture is applied to a plane that recedes away from the camera into the distance:
 

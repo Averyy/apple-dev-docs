@@ -21,7 +21,7 @@ Configures all Map controls in the environment to have the specified visibility
 @preconcurrency func mapControlVisibility(_ visibility: Visibility) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 MapCompass, MapScaleView, and MapPitchToggle may automatically show and hide based on the current state of the Map. That may not be appropriate for all use cases, where always showing a control may be desirable.
 

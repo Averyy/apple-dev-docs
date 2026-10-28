@@ -21,11 +21,11 @@ final func updateShoppingCart(_ shoppingCart: CustomerEngagement.ShoppingCart) a
 
 - [Adding support for Tap to Share to your app](../adding-support-for-tap-to-share-to-your-app.md)
 
-#### Return Value
+## Return Value
 
 [`CustomerEngagement.ShoppingCartToken`](../customerengagement/shoppingcarttoken.md) for making payment request using [`requestPayment(for:using:delegate:)`](./requestpayment%28for,using,delegate%29.md).
 
-#### Discussion
+## Discussion
 
 This function can be called repeatedly as the shopping cart is populated, and each update replaces the entire shopping cart.
 

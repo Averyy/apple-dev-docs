@@ -12,11 +12,11 @@ virtual bool hasPCIPowerManagement(
  IOOptionBits state = 0);
 ```
 
-#### Return Value
+## Return Value
 
 true if the specified state is supported
 
-#### Overview
+## Overview
 
 This method will look at the device's capabilties registers and determine whether or not the device supports the PCI BUS Power Management Specification.
 

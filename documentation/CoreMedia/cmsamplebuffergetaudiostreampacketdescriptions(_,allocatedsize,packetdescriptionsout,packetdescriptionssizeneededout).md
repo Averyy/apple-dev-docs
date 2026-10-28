@@ -25,11 +25,11 @@ func CMSampleBufferGetAudioStreamPacketDescriptions(_ sbuf: CMSampleBuffer, allo
 extern OSStatus CMSampleBufferGetAudioStreamPacketDescriptions(CMSampleBufferRef sbuf, size_t packetDescriptionsSize, AudioStreamPacketDescription *packetDescriptionsOut, size_t *packetDescriptionsSizeNeededOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 Creates an array of `AudioStreamPacketDescriptions` for the variable bytes per packet or variable frames per packet audio data in the provided `CMSampleBuffer`. Constant bit rate, constant frames-per-packet audio yields a return value of `noErr` and no packet descriptions.
 

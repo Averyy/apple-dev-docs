@@ -23,7 +23,7 @@ var collaborationIdentifier: String { get }
 @property (nonatomic, copy, readonly) NSString * collaborationIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This identifier is unique across platforms and sharing sessions.
 

@@ -26,7 +26,7 @@ class NetService
 @interface NSNetService : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`NetService`](./netservice.md) class represents a network service, either one your application publishes or is a client of. This class and the [`NetServiceBrowser`](./netservicebrowser.md) class use multicast DNS to convey information about network services to and from your application. The API of [`NetService`](./netservice.md) provides a convenient way to publish the services offered by your application and to resolve the socket address for a service.
 

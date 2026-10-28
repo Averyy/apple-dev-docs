@@ -21,7 +21,7 @@ The default set of effect options.
 + (instancetype) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of effect options.
 

@@ -25,7 +25,7 @@ var redoMenuItemTitle: String { get }
 @property (copy, readonly) NSString * redoMenuItemTitle;
 ```
 
-#### Discussion
+## Discussion
 
 Returns “Redo” if no action name has been assigned or `nil` if there is nothing to redo.
 

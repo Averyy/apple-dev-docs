@@ -25,7 +25,7 @@ var contactTestBitMask: Int { get set }
 @property (nonatomic) NSUInteger contactTestBitMask;
 ```
 
-#### Discussion
+## Discussion
 
 When two physics bodies overlap, a contact may occur. SceneKit compares the body’s contact mask to the other body’s category mask by performing a bitwise AND operation. If the result is a nonzero value, SceneKit creates an [`SCNPhysicsContact`](../scnphysicscontact.md) object describing the contact and sends messages to the  [`contactDelegate`](../scnphysicsworld/contactdelegate.md) object of the scene’s physics world. For best performance, only set bits in the contact mask for interactions you are interested in.
 

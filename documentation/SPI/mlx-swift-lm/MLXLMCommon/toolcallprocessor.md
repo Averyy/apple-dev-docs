@@ -17,7 +17,7 @@ Processes generated text to detect and extract tool calls during streaming gener
 class ToolCallProcessor
 ```
 
-#### Overview
+## Overview
 
 `ToolCallProcessor` handles the streaming detection of tool calls in model output, buffering partial content and extracting complete tool calls when detected.
 

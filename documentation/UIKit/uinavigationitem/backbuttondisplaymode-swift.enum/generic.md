@@ -23,7 +23,7 @@ case generic
 UINavigationItemBackButtonDisplayModeGeneric
 ```
 
-#### Discussion
+## Discussion
 
 When you set the [`backButtonDisplayMode`](../backbuttondisplaymode-swift.property.md) property to this value, the navigation item attempts to display these titles for its Back button in the following order:
 

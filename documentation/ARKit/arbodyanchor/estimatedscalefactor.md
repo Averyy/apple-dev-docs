@@ -20,7 +20,7 @@ var estimatedScaleFactor: CGFloat { get }
 @property (nonatomic, readonly) CGFloat estimatedScaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 1.0. If you set [`automaticSkeletonScaleEstimationEnabled`](../arbodytrackingconfiguration/automaticskeletonscaleestimationenabled.md) to [`true`](../../Swift/true.md) on [`ARBodyTrackingConfiguration`](../arbodytrackingconfiguration.md), ARKit sets this property to a value between 0.0 and 1.0.
 

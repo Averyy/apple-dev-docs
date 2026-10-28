@@ -21,7 +21,7 @@ func validate(_ impression: SKAdImpression, publicKey: String) throws
 - (BOOL) validateImpression:(SKAdImpression *) impression publicKey:(NSString *) publicKey error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The cryptographic key pair you use for testing may be a different key pair than you use in production. For testing, use keys from the same key pair to sign the ad impression for testing and call [`validate(_:publicKey:)`](./validate%28_,publickey%29.md).
 

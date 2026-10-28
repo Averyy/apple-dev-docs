@@ -19,7 +19,7 @@ static var showsPaperSize: NSPrintPanel.Options { get }
 NSPrintPanelShowsPaperSize
 ```
 
-#### Discussion
+## Discussion
 
 This control is separate from any accessory views.
 

@@ -18,7 +18,7 @@ var FFJOFS_X: Int32 { get }
 #define FFJOFS_X
 ```
 
-#### Discussion
+## Discussion
 
 Axis and Button field offsets, used in **FFEFFECT.dwTriggerButton** and **FFEFFECT.rgdwAxes[***n***]**.
 

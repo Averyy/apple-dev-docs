@@ -22,7 +22,7 @@ case copy
 UIDropOperationCopy
 ```
 
-#### Discussion
+## Discussion
 
 This operation is used most often. When the user performs a drop activity, the [`dropInteraction(_:performDrop:)`](../uidropinteractiondelegate/dropinteraction%28_,performdrop%29.md) delegate method is called. Your implementation of this delegate method should copy the data from the drag items to the destination view.
 

@@ -21,7 +21,7 @@ The identifier of an app entity that you associate with the user activity.
 var appEntityIdentifier: EntityIdentifier? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 By associating an app entity with a user activity, you make the entity available to Siri and Apple Intelligence. To clear the association with the app entity, set `appEntityIdentifier` to `nil`.
 

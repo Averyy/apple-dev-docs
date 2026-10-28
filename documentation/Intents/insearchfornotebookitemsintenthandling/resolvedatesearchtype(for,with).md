@@ -29,7 +29,7 @@ optional func resolveDateSearchType(for intent: INSearchForNotebookItemsIntent) 
 - (void) resolveDateSearchTypeForSearchForNotebookItems:(INSearchForNotebookItemsIntent *) intent withCompletion:(void (^)(INDateSearchTypeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve how to use a date value when searching. Use this method to verify that you can perform a date-based search for the type specified by the [`dateSearchType`](../insearchfornotebookitemsintent/datesearchtype.md) property of the intent. If the type is [`INDateSearchType.unknown`](../indatesearchtype/unknown.md) or you don’t consider dates when performing the search, return a resolution indicating you don’t need the date type. Return a successful resolution if you support searching using the specified type or return a different result if you don’t support the user requested type.
 

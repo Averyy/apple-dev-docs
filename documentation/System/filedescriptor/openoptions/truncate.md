@@ -25,7 +25,7 @@ static var truncate: FileDescriptor.OpenOptions { get }
 
 - [Adopting Swift File Options](../../adopting-file-options.md)
 
-#### Discussion
+## Discussion
 
 If this option is specified and the file exists, the file is truncated to zero bytes before any other operations are performed.
 

@@ -21,7 +21,7 @@ var jsHandleCreationEnabled: Bool { get set }
 @property (nonatomic, getter=isJSHandleCreationEnabled, setter=setJSHandleCreationEnabled:) BOOL jsHandleCreationEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 A boolean indicating whether or not `window.webkit.createJSHandle` is available.
 

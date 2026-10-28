@@ -25,7 +25,7 @@ func writeCompactedSize(sourceAccelerationStructure accelerationStructure: any M
 - (void) writeCompactedAccelerationStructureSize:(id<MTLAccelerationStructure>) accelerationStructure toBuffer:(MTL4BufferRange) buffer;
 ```
 
-#### Discussion
+## Discussion
 
 This size is potentially smaller than the acceleration structure. To perform compaction, you typically read this size from the buffer once the command buffer completes. You then use it to allocate a new, potentially smaller acceleration structure. Finally, you call the [`copyAndCompact(sourceAccelerationStructure:destinationAccelerationStructure:)`](./copyandcompact%28sourceaccelerationstructure,destinationaccelerationstructure%29.md) method to perform the copy.
 

@@ -21,7 +21,7 @@ A content transition that indicates the views attempt to interpolate their conte
 static let interpolate: ContentTransition
 ```
 
-#### Discussion
+## Discussion
 
 Text views can interpolate transitions when the text views have identical strings. Matching glyph pairs can animate changes to their color, position, size, and any variable properties. Interpolation can apply within a [`Font.Design`](../font/design.md) case, but not between cases, or between entirely different fonts. For example, you can interpolate a change between [`thin`](../font/weight/thin.md) and [`black`](../font/weight/black.md) variations of a font, since these are both cases of [`Font.Weight`](../font/weight.md). However, you can’t interpolate between the default design of a font and its Italic version, because these are different fonts. Any changes that can’t show an interpolated animation use an opacity animation instead.
 

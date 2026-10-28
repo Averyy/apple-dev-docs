@@ -15,7 +15,7 @@ Posted when web history items have been loaded from a URL.
 static let WebHistoryLoaded: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the web history that loaded the history items. This notification does not contain a `userInfo` dictionary.
 

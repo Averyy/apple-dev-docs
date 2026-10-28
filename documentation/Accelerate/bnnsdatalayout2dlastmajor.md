@@ -25,7 +25,7 @@ var BNNSDataLayout2DLastMajor: BNNSDataLayout { get }
 BNNSDataLayout2DLastMajor
 ```
 
-#### Discussion
+## Discussion
 
 The value `(i, j)` is at index `i * stride[0] + j * stride[1]`.
 

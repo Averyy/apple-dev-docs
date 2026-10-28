@@ -13,11 +13,11 @@
 uint8_t IOUSBGetEndpointSynchronizationType(const IOUSBEndpointDescriptor *descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 tEndpointSynchronizationType indicating the type found.
 
-#### Discussion
+## Discussion
 
 Extract the synchronization type of an  endpoint from an endpoint descriptor
 

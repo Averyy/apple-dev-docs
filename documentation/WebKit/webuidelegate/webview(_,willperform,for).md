@@ -19,7 +19,7 @@ optional func webView(_ webView: WebView!, willPerform action: WebDragDestinatio
 - (void) webView:(WebView *) webView willPerformDragDestinationAction:(WebDragDestinationAction) action forDraggingInfo:(id<NSDraggingInfo>) draggingInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked after the last invocation of the [`webView(_:dragDestinationActionMaskFor:)`](./webview%28_,dragdestinationactionmaskfor%29.md) method, when the dragged content is dropped and the sender is about to perform the destination action. No action is taken if you do not implement this method.
 

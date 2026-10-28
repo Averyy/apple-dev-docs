@@ -14,7 +14,7 @@ Author, compose, and manipulate Universal Scene Description content from Swift.
 - tvOS 27.0+
 - visionOS 27.0+
 
-#### Overview
+## Overview
 
 USDKit is the Swift API for authoring, composing, and manipulating Universal Scene Description (USD) content. USD is an open scene-interchange format originated by Pixar and now stewarded by the Alliance for OpenUSD; it represents 3D scenes, assets, and animations across digital-content-creation tools and runtime engines. USDKit exposes a curated subset of OpenUSD through a hand-written, ABI-stable Swift surface.
 

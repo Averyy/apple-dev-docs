@@ -23,7 +23,7 @@ init<OtherOutput>(_ regex: Regex<OtherOutput>)
 
 Available when `Output` is `AnyRegexOutput`.
 
-#### Discussion
+## Discussion
 
 You can use this initializer to convert a `Regex` with strongly-typed captures into a `Regex` with `AnyRegexOutput` as its output type.
 

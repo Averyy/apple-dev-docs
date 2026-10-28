@@ -19,7 +19,7 @@ func cancelComposition()
 - (void) cancelComposition;
 ```
 
-#### Discussion
+## Discussion
 
 This method calls the method originalString: to obtain the original text and sends that text to the client using a call to the `IMKTextInput`  protocol method `insertText(_:replacementRange:)`
 

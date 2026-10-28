@@ -26,11 +26,11 @@ func children(matching type: XCUIElement.ElementType) -> XCUIElementQuery
 - (XCUIElementQuery *) childrenMatchingType:(XCUIElementType) type;
 ```
 
-#### Return Value
+## Return Value
 
 A new query that defines a search that extends the search criteria of the receiver. The new search finds all direct children of elements that match the original search and are of the requested type. For a list of the types, see [`XCUIElement.ElementType`](../xcuielement/elementtype.md).
 
-#### Discussion
+## Discussion
 
 If you need to match all descendants including elements that aren’t direct child elements, use the [`descendants(matching:)`](./descendants%28matching%29.md) method.
 

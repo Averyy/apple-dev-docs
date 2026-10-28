@@ -23,7 +23,7 @@ var automaticallyUpdatesConfiguration: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL automaticallyUpdatesConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) to have the button call [`updated(for:)`](./configuration-swift.struct/updated%28for%29.md) (Swift) or [`updatedConfigurationForButton:`](../uibuttonconfiguration/updatedconfigurationforbutton_.md) (Objective-C) when the button state changes and apply the changes to the button. The default value is [`true`](../../Swift/true.md).
 

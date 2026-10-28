@@ -5,7 +5,7 @@
 
 Request permission to read and share data in your app.
 
-#### Overview
+## Overview
 
 To help protect people’s privacy, HealthKit requires fine-grain authorization. You need to request permission to both read and share each data type before your app attempts to use the data. However, you don’t need to request permission for all data types at once. Instead, it might make more sense to wait until you need to access the data before asking for permission.
 
@@ -17,7 +17,7 @@ Additionally, to protect the privacy of Apple Vision Pro owner data, in a Guest 
 
 Requesting permission to read and share data is only one part of protecting personal privacy. For more information, see [Protecting user privacy](./protecting-user-privacy.md).
 
-#### Enable HealthKit
+## Enable HealthKit
 
 Before you can request authorization to read or save HealthKit data, you need to add the HealthKit capability to your app. You also need to provide custom messages for the Health permissions sheet.
 
@@ -27,7 +27,7 @@ For projects created using Xcode 13 or later, set these keys in the Target Prope
 
 Finally, check that Health data is available on the current device by calling [`isHealthDataAvailable()`](./hkhealthstore/ishealthdataavailable%28%29.md) before calling any other HealthKit methods. For more information, see [Setting up HealthKit](./setting-up-healthkit.md).
 
-#### Request permission
+## Request permission
 
 To request permission to read or write data, start by creating the HealthKit data types that you want to read or write. The following example creates data types for active energy burned, distance cycling, distance walking or running, distance in a wheelchair, and heart rate:
 
@@ -123,7 +123,7 @@ After people review data type access, a second screen prompts them to choose how
 
 > ❗ **Important**:  A person can change the permissions for your app at any time using either the Settings or Health app. After prompting for HealthKit authorization, your app appears in the Health app’s Sources tab, even if the person didn’t allow permission to read and share data.
 
-#### Respond to limited authorization
+## Respond to limited authorization
 
 When someone grants your app access to only a recent window of data rather than their full history, your app is in a limited authorization state for those data types. Time-bound authorization applies only to sample types.
 
@@ -146,11 +146,11 @@ let predicate = HKQuery.predicateForSamples(
 
 > 💡 **Tip**: If your app makes inferences on partial data, consider informing people that granting full access improves your app’s experience.
 
-#### Check for authorization before saving data
+## Check for authorization before saving data
 
 If someone grants permission to share a data type, you can create new samples of that type and save them to the HealthKit store. However, before attempting to save any data, check whether your app is authorized to share that data type by calling the [`authorizationStatus(for:)`](./hkhealthstore/authorizationstatus%28for%29.md) method. If you haven’t yet requested permission, any attempts to save fail with an [`HKError.Code.errorAuthorizationNotDetermined`](./hkerror/code/errorauthorizationnotdetermined.md) error. If they’ve denied permission, attempts to save fail with an [`HKError.Code.errorAuthorizationDenied`](./hkerror/code/errorauthorizationdenied.md) error.
 
-#### Support Guest User sessions on Vision Pro
+## Support Guest User sessions on Vision Pro
 
 To protect their privacy, people can put their Vision Pro in a Guest User session before sharing it. This session lets the owner control which apps the guest can use and what data they can see. For more information, refer to [Let another person use your Apple Vision Pro with Guest User](https://support.apple.com/en-us/117742).
 
@@ -167,7 +167,7 @@ The system doesn’t display the authorization sheet during a Guest User session
 
 If your app receives an [`HKError.Code.errorNotPermissibleForGuestUserMode`](./hkerror/code/errornotpermissibleforguestusermode.md) error, you can silently ignore the error for passive or periodic saves. Silently dropping the changes ensures that they don’t persist past the Guest User session without interrupting the guest’s experience. However, if the guest performs an action that can obviously result in saving data (for example, tapping a Save button), you can display an alert telling them that the action isn’t available during a Guest User session.
 
-#### Specify required clinical record types
+## Specify required clinical record types
 
 If your app requires access to specific clinical record data to function properly, specify the required clinical record types in your app’s information property list using the [`NSHealthRequiredReadAuthorizationTypeIdentifiers`](../BundleResources/information-property-list/nshealthrequiredreadauthorizationtypeidentifiers.md) key. This key defines the data types that your app needs to have permission to read. Set the value to an array of strings containing the type identifiers for your required types. For a list of type identifiers, see [`HKClinicalTypeIdentifier`](./hkclinicaltypeidentifier.md).
 

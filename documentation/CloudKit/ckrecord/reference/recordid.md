@@ -26,7 +26,7 @@ var recordID: CKRecord.ID { get }
 @property (nonatomic, copy, readonly) CKRecordID * recordID;
 ```
 
-#### Discussion
+## Discussion
 
 Use the ID in this property to fetch the record on the other end of the link.
 

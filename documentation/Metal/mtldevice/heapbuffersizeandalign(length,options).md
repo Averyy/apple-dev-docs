@@ -25,11 +25,11 @@ func heapBufferSizeAndAlign(length: Int, options: MTLResourceOptions = []) -> MT
 - (MTLSizeAndAlign) heapBufferSizeAndAlignWithLength:(NSUInteger) length options:(MTLResourceOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 An [`MTLSizeAndAlign`](../mtlsizeandalign.md) instance.
 
-#### Discussion
+## Discussion
 
 Use this method to help estimate an appropriate size for a new heap before you create it.
 

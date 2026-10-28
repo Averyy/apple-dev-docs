@@ -40,7 +40,7 @@ func selection(from startPoint: NSPoint, to endPoint: NSPoint) -> PDFSelection?
 - (PDFSelection *) selectionFromPoint:(NSPoint) startPoint toPoint:(NSPoint) endPoint;
 ```
 
-#### Discussion
+## Discussion
 
 Either point may be the one closer to the start of the page. In determining the selection, the points are sorted first top to bottom and then left to right.
 

@@ -25,7 +25,7 @@ var currentChunkStorageRange: AVSampleCursorStorageRange { get }
 @property (nonatomic, readonly) AVSampleCursorStorageRange currentChunkStorageRange;
 ```
 
-#### Discussion
+## Discussion
 
 If the current chunk isn’t stored contiguously in its storage container, the property value’s [`offset`](../avsamplecursorstoragerange/offset.md) is `-1`. In such cases use [`AVSampleBufferGenerator`](../avsamplebuffergenerator.md) to obtain the sample data.
 

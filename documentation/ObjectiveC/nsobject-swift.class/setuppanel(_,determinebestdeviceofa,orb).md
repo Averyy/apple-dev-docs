@@ -19,11 +19,11 @@ func setupPanel(_ aPanel: DRSetupPanel!, determineBestDeviceOfA deviceA: DRDevic
 - (DRDevice *) setupPanel:(DRSetupPanel *) aPanel determineBestDeviceOfA:(DRDevice *) deviceA orB:(DRDevice *) device;
 ```
 
-#### Return Value
+## Return Value
 
  One of the two device objects passed in.
 
-#### Discussion
+## Discussion
 
 When the setup panel is first displayed and again, each time a new device appears, the setup panel will ask the delegate to compare two devices to determine which is most suitable for their content to burn.
 

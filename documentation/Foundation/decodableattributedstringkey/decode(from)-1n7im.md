@@ -23,11 +23,11 @@ static func decode(from decoder: any Decoder) throws -> Self.Value
 
 Available when `Value` conforms to `Decodable`.
 
-#### Return Value
+## Return Value
 
 The decoded value.
 
-#### Discussion
+## Discussion
 
 The default implementation calls down to the value’s [`init(from:)`](../../Swift/decodable/init%28from%29.md) method.
 

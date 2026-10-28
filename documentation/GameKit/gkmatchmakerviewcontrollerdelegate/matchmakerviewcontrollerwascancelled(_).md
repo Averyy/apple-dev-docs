@@ -29,7 +29,7 @@ func matchmakerViewControllerWasCancelled(_ viewController: GKMatchmakerViewCont
 
 - [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
 
-#### Discussion
+## Discussion
 
 This method needs to dismiss the view controller.
 

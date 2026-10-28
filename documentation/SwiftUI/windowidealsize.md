@@ -15,7 +15,7 @@ A type which defines the size a window should use when zooming.
 struct WindowIdealSize
 ```
 
-#### Overview
+## Overview
 
 Use this type in conjunction with the `Scene.windowIdealSize(_:)` modifier to override the default behavior for how windows behave when performing a zoom.
 

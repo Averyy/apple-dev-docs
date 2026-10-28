@@ -21,11 +21,11 @@ Calls a closure with an unsafe reference to the current task.
 @abi(nonisolated(nonsending) func withUnsafeCurrentTaskNonsendingExportedImpl<T>(body: nonisolated(nonsending) (UnsafeCurrentTask?) async throws -> T) async rethrows -> T) @export(implementation) nonisolated(nonsending) func withUnsafeCurrentTask<T>(body: nonisolated(nonsending) (UnsafeCurrentTask?) async throws -> T) async rethrows -> T
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure.
 
-#### Discussion
+## Discussion
 
 If you call this function from the body of an asynchronous function, the unsafe task handle passed to the closure is always non-`nil` because an asynchronous function always runs in the context of a task.
 

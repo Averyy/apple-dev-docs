@@ -28,11 +28,11 @@ class func authorizationStatus(for accessLevel: PHAccessLevel) -> PHAuthorizatio
 
 - [Delivering an Enhanced Privacy Experience in Your Photos App](../../PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
 
-#### Return Value
+## Return Value
 
 The app’s authorization status.
 
-#### Discussion
+## Discussion
 
 For more information about accessing the user’s Photos library, see [Delivering an Enhanced Privacy Experience in Your Photos App](../../PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md).
 

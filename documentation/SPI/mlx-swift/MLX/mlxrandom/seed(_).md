@@ -17,7 +17,7 @@ Seed the global PRNG.
 static func seed(_ seed: UInt64)
 ```
 
-##### See Also
+### See Also
 
 - [`key(_:)`](./key%28_%29.md)
 - [`MLXRandom.RandomState`](./randomstate.md)

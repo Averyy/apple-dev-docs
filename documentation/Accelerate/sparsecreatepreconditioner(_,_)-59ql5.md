@@ -25,7 +25,7 @@ func SparseCreatePreconditioner(_ type: SparsePreconditioner_t, _ A: SparseMatri
 static SparseOpaquePreconditioner_Float SparseCreatePreconditioner(SparsePreconditioner_t type, SparseMatrix_Float A);
 ```
 
-#### Return Value
+## Return Value
 
 A [`SparseOpaquePreconditioner_Float`](./sparseopaquepreconditioner_float.md) structure.  You must free the resource through a call to [`SparseCleanup(_:)`](./sparsecleanup%28_%29-45lq7.md) after you finish with the object.
 

@@ -16,11 +16,11 @@ Returns a transform matrix appropriate for rendering 3D content to match the ima
 - (simd_float4x4) projectionMatrixForOrientation:(UIInterfaceOrientation) orientation viewportSize:(CGSize) viewportSize zNear:(CGFloat) zNear zFar:(CGFloat) zFar;
 ```
 
-#### Return Value
+## Return Value
 
 A projection matrix that provides an aspect fill and rotation for the provided viewport size and orientation.
 
-#### Discussion
+## Discussion
 
 This method has no effect on ARKit, and the `zNear` and `zFar` parameters have no relationships to ARKit camera state. Instead, this method uses those parameters as well as the camera’s state to construct a projection matrix for use in your own rendering code.
 

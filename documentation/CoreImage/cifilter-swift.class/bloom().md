@@ -24,11 +24,11 @@ class func bloom() -> any CIFilter & CIBloom
 + (CIFilter<CIBloom> *) bloomFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the bloom filter to an image. The effect softens edges and adds a slight blur effect.
 

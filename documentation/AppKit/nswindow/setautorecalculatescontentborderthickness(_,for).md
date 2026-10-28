@@ -19,7 +19,7 @@ func setAutorecalculatesContentBorderThickness(_ flag: Bool, for edge: NSRectEdg
 - (void) setAutorecalculatesContentBorderThickness:(BOOL) flag forEdge:(NSRectEdge) edge;
 ```
 
-#### Discussion
+## Discussion
 
 Turning off a border’s auto-recalculation status sets its border thickness to `0.0`.
 

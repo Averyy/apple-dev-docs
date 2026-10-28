@@ -21,7 +21,7 @@ Compares two tags’s values for equality.
 static Boolean CMTagCategoryValueEqualToValue(CMTag tag1, CMTag tag2);
 ```
 
-#### Discussion
+## Discussion
 
 This comparison doesn’t take tag data type into account and checks only for equality of the underlying raw 64-bit value.
 

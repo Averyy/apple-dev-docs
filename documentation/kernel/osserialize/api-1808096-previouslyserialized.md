@@ -12,11 +12,11 @@ virtual bool previouslySerialized(
  const OSMetaClassBase *object);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `object` has already been serialized by this OSSerialize object and a reference to it is successfully added to the XML stream, `false` otherwise.
 
-#### Overview
+## Overview
 
 This function both reduces the size of generated XML by emitting shorter references to existing objects with the same value (particularly for OSString, OSSymbol, and OSData), and also preserves instance references so that the user-space I/O Kit library can reconstruct an identical graph of object relationships.
 

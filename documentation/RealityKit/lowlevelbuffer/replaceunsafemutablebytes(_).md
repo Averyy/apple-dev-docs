@@ -20,7 +20,7 @@ Replace the buffer’s contents synchronously on the CPU.
 final func replaceUnsafeMutableBytes(_ callback: (UnsafeMutableRawBufferPointer) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The buffer’s contents are unspecified, and it is the caller’s responsibility to populate the buffer with valid data. The buffer provided is only valid for the lifetime of the callback.
 

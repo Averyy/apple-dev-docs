@@ -19,11 +19,11 @@ func PMPrinterCopyDescriptionURL(_ printer: PMPrinter, _ descriptionType: CFStri
 OSStatus PMPrinterCopyDescriptionURL(PMPrinter printer, CFStringRef descriptionType, CFURLRef  _Nullable *fileURL);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 You can use this function to locate the PostScript printer description (PPD) file for a printer.
 

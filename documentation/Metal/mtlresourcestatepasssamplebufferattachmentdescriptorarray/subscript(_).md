@@ -24,7 +24,7 @@ subscript(attachmentIndex: Int) -> MTLResourceStatePassSampleBufferAttachmentDes
 - (MTLResourceStatePassSampleBufferAttachmentDescriptor *) objectAtIndexedSubscript:(NSUInteger) attachmentIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The requested [`MTLResourceStatePassSampleBufferAttachmentDescriptor`](../mtlresourcestatepasssamplebufferattachmentdescriptor.md) object.
 

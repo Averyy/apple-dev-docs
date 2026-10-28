@@ -19,7 +19,7 @@ func interpolatedColor(atLocation location: CGFloat) -> NSColor
 - (NSColor *) interpolatedColorAtLocation:(CGFloat) location;
 ```
 
-#### Discussion
+## Discussion
 
 This method does not simply return the color values used to initialize the receiver. Instead, it computes the value that would be drawn at the specified location.
 

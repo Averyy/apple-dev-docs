@@ -18,7 +18,7 @@ Transform a type-safe Message into a legacy Notification
 static func makeNotification(_ message: MFMessageComposeViewController.TextMessageAvailabilityDidChangeMessage) -> Notification
 ```
 
-#### Return Value
+## Return Value
 
 A Notification compatible with Objective-C observers
 

@@ -19,11 +19,11 @@ func AEGetCoercionHandler(_ fromType: DescType, _ toType: DescType, _ handler: U
 OSErr AEGetCoercionHandler(DescType fromType, DescType toType, AECoercionHandlerUPP *handler, SRefCon *handlerRefcon, Boolean *fromTypeIsDesc, Boolean isSysHandler);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Thread safe starting in OS X v10.2.
 

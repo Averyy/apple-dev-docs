@@ -22,7 +22,7 @@ var profileIdentifier: STWebHistory.ProfileIdentifier? { get set }
 @property (nonatomic, copy, nullable) STWebHistoryProfileIdentifier profileIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. This identifier represents a profile and allows you to keep your browsing separate for topics like work, personal, or school. Using `nil` will report web history without a profile identifier. Web browsers with a “default” profile may want to use `nil` in order to match any web history reported prior to this API.
 

@@ -21,7 +21,7 @@ Copies the contents of a single-precision submatrix to another single-precision 
 extern void vDSP_mmov(const float *__A, float *__C, vDSP_Length __M, vDSP_Length __N, vDSP_Length __TA, vDSP_Length __TC);
 ```
 
-#### Discussion
+## Discussion
 
 This function treats the input and output matrices as row-major order.
 

@@ -23,7 +23,7 @@ static var whitespace: CharacterClass { get }
 
 Available when `Self` is `CharacterClass`.
 
-#### Discussion
+## Discussion
 
 This character class is equivalent to `\s` in regex syntax.
 

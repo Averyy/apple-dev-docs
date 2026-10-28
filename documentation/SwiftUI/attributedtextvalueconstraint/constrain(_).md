@@ -22,7 +22,7 @@ Enforce constraints on the attribute.
 func constrain(_ container: inout Self.Attributes)
 ```
 
-#### Discussion
+## Discussion
 
 A function that transforms the [`AttributeKey`](./attributekey.md) on the given `container` so it represents a formatting that the conforming type defines to be valid.
 

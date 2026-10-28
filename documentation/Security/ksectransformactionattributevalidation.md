@@ -21,7 +21,7 @@ let kSecTransformActionAttributeValidation: CFString
 extern CFStringRef const kSecTransformActionAttributeValidation;
 ```
 
-#### Discussion
+## Discussion
 
 Allows a block to be called to validate the new value for an attribute. The default is no validation and any CFTypeRef can be used as the new value. The block should return NULL if the value is ok to set on the attribute or a CFErrorRef otherwise.
 

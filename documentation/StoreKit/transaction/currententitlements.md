@@ -30,7 +30,7 @@ static var currentEntitlements: Transaction.Transactions { get }
 - [Supporting business model changes by using the app transaction](../supporting-business-model-changes-by-using-the-app-transaction.md)
 - [Supporting monthly subscriptions with a 12-month commitment](../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
-#### Discussion
+## Discussion
 
 The current entitlements sequence emits the latest transaction for each product the customer has an entitlement to, specifically:
 

@@ -21,7 +21,7 @@ A message that an undo manager sends after redoing a change.
 struct DidRedoChangeMessage
 ```
 
-#### Overview
+## Overview
 
 The undo manager posts this message after you call [`redo()`](./redo%28%29.md). Because this is a “did”-style message, the undo manager sends the message after it performs the redo.
 

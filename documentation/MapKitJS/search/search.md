@@ -18,11 +18,11 @@ search(
 ): Promise<SearchResponse>;
 ```
 
-#### Return Value
+## Return Value
 
 A promise that resolves with a [`SearchResponse`](../searchresponse.md) on success, or rejects with an `Error` on failure.
 
-#### Discussion
+## Discussion
 
 The [`search()`](./search.md) method returns a set of locations that matches a user-entered query or a [`SearchAutocompleteResult`](../searchautocompleteresult.md).
 

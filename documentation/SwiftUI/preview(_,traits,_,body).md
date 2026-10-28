@@ -18,11 +18,11 @@ Creates a preview of a SwiftUI view using the specified traits.
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Preview(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>, _ additionalTraits: PreviewTrait<Preview.ViewTraits>..., @ContentBuilder body: @escaping @MainActor () -> any View)
+@freestanding(declaration)
+macro Preview(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>, _ additionalTraits: PreviewTrait<Preview.ViewTraits>..., @ContentBuilder body: @escaping @MainActor () -> any View)
 ```
 
-#### Overview
+## Overview
 
 This macro behaves like [`Preview(_:body:)`](./preview%28_,body%29.md) except that it also enables you to customize the appearance of the preview by adding one or more traits, which are instances of [`PreviewTrait`](../DeveloperToolsSupport/previewtrait.md). For example, you can display a preview at a fixed size using the [`fixedLayout(width:height:)`](../DeveloperToolsSupport/previewtrait/fixedlayout%28width,height%29.md) trait:
 

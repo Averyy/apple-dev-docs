@@ -5,7 +5,7 @@
 
 Get notifications when the contents of a directory hierarchy change.
 
-#### Overview
+## Overview
 
 The file system events API provides a way for your application to ask for notification when the contents of a directory hierarchy are modified. For example, your application can use this to quickly detect when the user modifies a file within a project bundle using another application.
 

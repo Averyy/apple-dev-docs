@@ -26,15 +26,15 @@ func CFNetServiceMonitorGetTypeID() -> CFTypeID
 extern CFTypeID CFNetServiceMonitorGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type ID.
 
-#### Discussion
+## Discussion
 
 This function is thread safe.
 
-##### Version-Notes
+### Version-Notes
 
 Introduced in OS X v10.4.
 

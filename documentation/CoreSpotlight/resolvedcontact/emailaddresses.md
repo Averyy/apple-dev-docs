@@ -19,7 +19,7 @@ The email addresses for this contact.
 var emailAddresses: [String]
 ```
 
-#### Discussion
+## Discussion
 
 Specify each email address as a separate string in the array.
 

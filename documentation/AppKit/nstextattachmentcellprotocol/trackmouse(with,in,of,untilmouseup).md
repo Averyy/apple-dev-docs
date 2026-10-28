@@ -21,11 +21,11 @@ func trackMouse(with theEvent: NSEvent, in cellFrame: NSRect, of controlView: NS
 - (BOOL) trackMouse:(NSEvent *) theEvent inRect:(NSRect) cellFrame ofView:(NSView *) controlView untilMouseUp:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the cell successfully finished tracking the mouse, or [`false`](../../Swift/false.md) if tracking was unsuccessful.
 
-#### Discussion
+## Discussion
 
 The [`NSTextAttachmentCell`](../nstextattachmentcell-swift.class.md) implementation of this method calls upon `aTextView`’s delegate to handle the event. If `theEvent` is a mouse-up event for a double click, the text attachment cell calls the [`textView(_:doubleClickedOn:in:at:)`](../nstextviewdelegate/textview%28_,doubleclickedon,in,at%29.md) method of its delegate and returns [`true`](../../Swift/true.md). Otherwise, depending on whether the user clicks or drags the cell, it sends the delegate a [`textView(_:clickedOn:in:at:)`](../nstextviewdelegate/textview%28_,clickedon,in,at%29.md): or a [`textView(_:draggedCell:in:event:at:)`](../nstextviewdelegate/textview%28_,draggedcell,in,event,at%29.md) message and returns [`true`](../../Swift/true.md). The [`NSTextAttachmentCell`](../nstextattachmentcell-swift.class.md) implementation returns [`false`](../../Swift/false.md) only if `flag` is [`false`](../../Swift/false.md) and the mouse is dragged outside of `cellFrame`. The delegate methods are invoked only if the delegate responds.
 

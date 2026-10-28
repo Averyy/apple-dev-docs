@@ -25,7 +25,7 @@ var NSTimeIntervalSince1970: Double { get }
 #define NSTimeIntervalSince1970
 ```
 
-#### Discussion
+## Discussion
 
 1 January 1970 is the epoch (or starting point) for Unix time.
 

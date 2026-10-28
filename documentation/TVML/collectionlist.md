@@ -4,7 +4,7 @@
 
 Contains other layout elements.
 
-#### Overview
+## Overview
 
 Here’s an example of a `collectionList` element that contains a `shelf` and two `lockup` elements.
 
@@ -25,13 +25,13 @@ Here’s an example of a `collectionList` element that contains a `shelf` and tw
 </collectionList>
 ```
 
-##### Subelements of collectionList
+### Subelements of collectionList
 
 - [carousel](./carousel.md)
 - [grid](./grid.md)
 - [shelf](./shelf.md)
 
-##### Elements that use collectionList
+### Elements that use collectionList
 
 - [searchTemplate](./searchtemplate.md)
 - [stackTemplate](./stacktemplate.md)

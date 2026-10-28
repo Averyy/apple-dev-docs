@@ -24,7 +24,7 @@ weak var entity: GKEntity? { get }
 @property (nonatomic, weak, readonly, nullable) GKEntity * entity;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property in a component subclass to refer back to the owning entity and its attributes. An entity may be an instance either of the [`GKEntity`](../gkentity.md) class or of a custom subclass. In the latter case, a custom entity class can provide storage for state or resources accessed by multiple components.
 

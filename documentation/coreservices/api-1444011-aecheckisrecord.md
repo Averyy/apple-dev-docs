@@ -19,11 +19,11 @@ func AECheckIsRecord(_ theDesc: UnsafePointer<AEDesc>!) -> Bool
 Boolean AECheckIsRecord(const AEDesc *theDesc);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the descriptor is an `AERecord` or an `AppleEvent`, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 Thread safe starting in OS X v10.2.
 

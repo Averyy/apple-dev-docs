@@ -5,7 +5,7 @@
 
 Create, download, and revoke pass type ids for app development and distribution.
 
-#### Overview
+## Overview
 
 The `passTypeId` resource represents a pass type certificates unique identifier that you can register, modify, and delete. You need a pass type ID before you can create a pass type certificate with the [Certificates](./certificates.md) resource.
 

@@ -12,11 +12,11 @@ Enhance your app’s experience by incorporating haptic and sound feedback into 
 - Mac Catalyst 13.0+
 - Xcode 12.5+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10278: Practice Audio Haptic Design](https://developer.apple.com/videos/play/wwdc21/10278/).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 - You must run the sample on iPhone 8 or later.
 

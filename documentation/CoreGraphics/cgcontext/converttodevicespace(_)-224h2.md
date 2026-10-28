@@ -25,7 +25,7 @@ func convertToDeviceSpace(_ size: CGSize) -> CGSize
 extern CGSize CGContextConvertSizeToDeviceSpace(CGContextRef c, CGSize size);
 ```
 
-#### Return Value
+## Return Value
 
 The size in device space coordinates.
 

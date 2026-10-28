@@ -19,7 +19,7 @@ var usbDevices: [any VZUSBDeviceConfiguration] { get set }
 @property (copy, readwrite) NSArray<id<VZUSBDeviceConfiguration>> * usbDevices;
 ```
 
-#### Discussion
+## Discussion
 
 This list represents a set of USB devices that a VM starts with. For each entry in the list, the system creates a corresponding runtime object in the [`usbDevices`](../vzusbcontroller/usbdevices.md) property.
 

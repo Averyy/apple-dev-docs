@@ -19,7 +19,7 @@ var CPU_BASED_CR3_LOAD: UInt32 { get }
 CPU_BASED_CR3_LOAD
 ```
 
-#### Discussion
+## Discussion
 
 In conjunction with the CR3-target controls, this value determines whether executions of MOV to CR3 cause VM exits.
 

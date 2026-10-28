@@ -21,7 +21,7 @@ Sets the clipping path to the intersection of the current clipping path with the
 extern void CGContextClipToRects(CGContextRef c, const CGRect *rects, size_t count);
 ```
 
-#### Discussion
+## Discussion
 
 This function sets the clipping path to the intersection of the current clipping path and the region within the specified rectangles.
 

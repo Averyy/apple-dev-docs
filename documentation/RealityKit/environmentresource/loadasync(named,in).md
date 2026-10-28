@@ -20,11 +20,11 @@ Asynchronously loads an environment resource from a bundle.
 @preconcurrency static func loadAsync(named name: String, in bundle: Bundle? = nil) -> LoadRequest<EnvironmentResource>
 ```
 
-#### Return Value
+## Return Value
 
 The environment resource that loads from the specified bundle.
 
-#### Discussion
+## Discussion
 
 If your image file is at the path `Foo.skybox/Bar.exr` in your Xcode project, use `Bar` for the name parameter. You need to call this function with the `async` keyword from an asynchronous context, such as from within a [`Task`](../../Swift/task.md) closure.
 

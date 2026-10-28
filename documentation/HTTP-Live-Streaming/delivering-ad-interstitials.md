@@ -5,7 +5,7 @@
 
 Insert ad interstitials into HTTP Live Streaming (HLS) media playlists.
 
-#### Overview
+## Overview
 
 An HLS interstitial is alternate content, such as an advertisement, that the player inserts into a stream at a specific point without altering the primary media. Use the `#EXT-X-DATERANGE` tag in your HLS media playlists to deliver client-side interstitial advertising. Place an exact segment boundary at each interstitial cue point in your encoded media when possible. Use `X-SNAP` to let the player correct splice timing automatically. Include `CUE=POST` when you deliver a post-roll interstitial.
 
@@ -26,7 +26,7 @@ Use the following attributes with `#EXT-X-DATERANGE` for interstitial delivery:
 
 Interstitial media can be delivered using one of two methods:
 
-#### Reference the interstitial directly with the asset URI
+## Reference the interstitial directly with the asset URI
 
 Use `X-ASSET-URI` when you know the interstitial media playlist and it’s available when you create the HLS playlist. This attribute points directly to the interstitial’s HLS media playlist.
 
@@ -34,7 +34,7 @@ Use `X-ASSET-URI` when you know the interstitial media playlist and it’s avail
 #EXT-X-DATERANGE:ID="ad_break_1",CLASS="com.apple.hls.interstitial",START-DATE="2023-10-27T10:00:00Z",PLANNED-DURATION=30.0,X-ASSET-URI="https://ad-server.example.com/ads/midroll1.m3u8",X-RESUME-OFFSET=0,X-TIMELINE-OCCUPIES="RANGE",X-TIMELINE-STYLE="PRIMARY"
 ```
 
-#### Resolve interstitials at playback
+## Resolve interstitials at playback
 
 Use `X-ASSET-LIST` when you need flexibility to determine the interstitial media at playback or download time, or when no interstitial may be available. This attribute points to a JSON response that contains the interstitial media playlist information.
 

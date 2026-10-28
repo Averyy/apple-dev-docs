@@ -25,7 +25,7 @@ var requiresSecureCoding: Bool { get set }
 @property (readwrite) BOOL requiresSecureCoding;
 ```
 
-#### Discussion
+## Discussion
 
 If you set the archiver to require secure coding, it throws an exception if you attempt to archive a class which doesn’t conform to [`NSSecureCoding`](../nssecurecoding.md).
 

@@ -21,11 +21,11 @@ Modifies the ISO 8601 date format style to include the month in the formatted ou
 func month() -> Date.ISO8601FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 An ISO 8601 date format style modified to include the month.
 
-#### Discussion
+## Discussion
 
 The following example shows an ISO 8601 format with, and without, a month.
 

@@ -15,11 +15,11 @@ A single impression share data row.
 object ImpressionShareRow
 ```
 
-#### Discussion
+## Discussion
 
 Each `ImpressionShareRow` represents one combination of date, search term, and country or region in an impression share report. The date field present depends on the granularity chosen in [`ImpressionShareTimeRange`](./impressionsharetimerange.md): `day` for `DAILY` granularity, `week` for `WEEKLY_SUN_SAT` granularity.
 
-##### Impression share encoding
+### Impression share encoding
 
 The `lowImpressionShare` and `highImpressionShare` fields use a tiered encoding:
 
@@ -31,7 +31,7 @@ The `lowImpressionShare` and `highImpressionShare` fields use a tiered encoding:
 
 When both fields are equal and less than `0.91`, the value is a precise single-digit percentage. When `highImpressionShare` is `1`, the app holds more than 90% impression share for that term.
 
-##### Example
+### Example
 
 ```json
 {

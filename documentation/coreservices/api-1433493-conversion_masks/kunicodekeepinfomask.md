@@ -14,7 +14,7 @@
 kUnicodeKeepInfoMask = 1L << kUnicodeKeepInfoBit
 ```
 
-#### Discussion
+## Discussion
 
 A mask for setting the keep-information control flag which governs whether the Unicode Converter keeps the current state stored in the Unicode converter object before converting the text string. 
 

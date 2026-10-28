@@ -5,11 +5,11 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 4.4 provides resources that enable you to automate actions you take in App Store Connect.
 
-#### Added
+## Added
 
 - Use [Subscription plan availability](./subscription-plan-availability.md) to configure monthly subscriptions with a 12-month commitment.
 - Added `STORAGE` to [`MetricCategory`](./metriccategory.md). Track your app’s storage footprint over time to catch regressions in data usage and binary size.
@@ -17,17 +17,17 @@ App Store Connect API version 4.4 provides resources that enable you to automate
 - Metric goals are now available for Battery Usage, Disk Writes, Hang Rate, Hitches, Memory, and Storage metrics, so you can prioritize performance engineering across more areas. Similar-app goals now cover Hang Rate, On-screen Battery Usage, Disk Writes, and Storage. Launch Time similar-app goals are more accurate, establishing new baselines. To learn more, see [`MetricCategory`](./metriccategory.md).
 - Added a `ZERO_ZERO` value to [`AppStoreAgeRating`](./appstoreagerating.md), representing Vietnam’s 00+ age-rating classification.
 
-#### Changed
+## Changed
 
 - Background Assets now supports multiple locales, so your app can deliver only the assets that match a customer’s locale preference. Use [`List all background assets for an app`](./get-v1-apps-_id_-backgroundassets.md) with the `filter[versions.locale]` parameter to read the uploaded locales.
 
-#### Deprecated
+## Deprecated
 
 - The user role permission `ACCESS_TO_REPORTS` for App Store Connect API is deprecated. See [`UserRole`](./userrole.md) for available alternatives.
 - The [Subscription availability](./subscription-availability.md) resource is deprecated. Use [Subscription plan availability](./subscription-plan-availability.md) instead.
 - The `goalKeys` property of [`xcodeMetrics.ProductData.MetricCategories.Metrics`](./xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary/metrics-data.dictionary.md) is deprecated.
 
-#### Removed
+## Removed
 
 - Removed the `GET /v1/appStoreVersions/{id}/relationships/ageRatingDeclaration` and `GET /v1/appStoreVersions/{id}/ageRatingDeclaration` endpoints. Use [`Read the age-rating declaration`](./get-v1-appinfos-_id_-ageratingdeclaration.md) instead.
 

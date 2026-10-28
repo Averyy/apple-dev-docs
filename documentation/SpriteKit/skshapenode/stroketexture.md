@@ -25,7 +25,7 @@ var strokeTexture: SKTexture? { get set }
 @property (nonatomic, retain, nullable) SKTexture * strokeTexture;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. If a stroke texture is specified, the [`strokeColor`](./strokecolor.md) property is ignored and the stroked portion of the shape node is rendered using the texture instead.
 

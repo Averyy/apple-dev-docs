@@ -16,7 +16,7 @@ The power adapter's revision. The value associated with this key is a CFNumberRe
 #define kIOPSPowerAdapterRevisionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key may be present in the dictionary returned from [`IOPSCopyExternalPowerAdapterDetails`](./api-1523866-iopscopyexternalpoweradapterdeta.md) This key might not be defined in the adapter details dictionary.
 

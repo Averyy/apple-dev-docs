@@ -24,7 +24,7 @@ case automatic
 PHASEUpdateModeAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 In this mode, the framework updates internal states at an optimized rate opaque to the app.
 

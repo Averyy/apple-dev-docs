@@ -5,7 +5,7 @@
 
 Learn about the default keys in the information property list file.
 
-#### Overview
+## Overview
 
 After you create a Safari app extension target in Xcode, you need to modify the information property list file, `Info.plist.` You make changes to identify your new Safari app extension, and specify its capabilities and access limits under the `NSExtension` key.
 
@@ -21,7 +21,7 @@ A Safari app extension includes these entries by default:
 
 Although `SFSafariContentScript`, `SFSafariToolbarItem`, and `SFSafariWebsiteAccess` are all default keys, they’re not required because they specify features that may or may not exist in your Safari app extension. To learn more about feature keys, see [Setting Safari app extension feature keys](./setting-safari-app-extension-feature-keys.md).
 
-##### Review the sample information property list
+### Review the sample information property list
 
 The code example below represents the overall structure of a typical `NSExtension` dictionary. Keep this structure in mind as you configure each element of your app extension.
 

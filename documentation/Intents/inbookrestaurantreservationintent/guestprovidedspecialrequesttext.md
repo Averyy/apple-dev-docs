@@ -30,7 +30,7 @@ var guestProvidedSpecialRequestText: String? { get set }
 @property (atomic, copy, nullable) NSString * guestProvidedSpecialRequestText;
 ```
 
-#### Discussion
+## Discussion
 
 This property inclues and special requests made during booking. For example, the user might of asked for a non-smoking table or included special dietary requests when making a reservation. You should forward any special requests to the restaurant.
 

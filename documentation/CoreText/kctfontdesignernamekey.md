@@ -23,7 +23,7 @@ let kCTFontDesignerNameKey: CFString
 extern CFStringRef const kCTFontDesignerNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The name specifier for the designer name.
 

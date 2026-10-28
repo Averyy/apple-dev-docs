@@ -20,7 +20,7 @@ struct CGWindowListOption
 enum CGWindowListOption : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 This type is used in conjunction with the constants described in [Window List Option Constants](./window-list-option-constants.md).
 

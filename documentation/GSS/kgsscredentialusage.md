@@ -23,7 +23,7 @@ var kGSSCredentialUsage: String { get }
 #define kGSSCredentialUsage
 ```
 
-#### Discussion
+## Discussion
 
 Set to one of the following: `kGSS_C_INITIATE` (the default), `kGSS_C_ACCEPT`, or `kGSS_C_BOTH`.
 

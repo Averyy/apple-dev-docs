@@ -16,7 +16,7 @@ The credential installation is pending but isn’t complete.
 case installationPending
 ```
 
-#### Discussion
+## Discussion
 
 A credential is in this state after sending the provisioning request but before installation actually completes or fails.
 

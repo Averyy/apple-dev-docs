@@ -20,7 +20,7 @@ Creates content with the specified kind and generation identifier.
 init(kind: GeneratedContent.Kind, id: GenerationID? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer provides a convenient way to create content from its kind representation.
 

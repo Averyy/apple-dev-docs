@@ -15,7 +15,7 @@ Posted by a WebView object when a load begins, including a load that is initiate
 static let WebViewProgressStarted: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the WebView that began loading. This notification does not contain a `userInfo` dictionary.
 

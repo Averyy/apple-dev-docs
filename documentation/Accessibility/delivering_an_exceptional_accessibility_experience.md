@@ -12,7 +12,7 @@ Make improvements to your app’s interaction model to support assistive technol
 - Mac Catalyst 12.0+
 - Xcode 11.3+
 
-#### Overview
+## Overview
 
 To provide an exceptional accessibility experience, you need to think about how users with accessibility needs interact with your app. For example, your app should:
 
@@ -23,11 +23,11 @@ To provide an exceptional accessibility experience, you need to think about how 
 
 This sample code project shows how to provide an exceptional accessibility experience for VoiceOver. The sample app contains a gallery of dogs available for adoption. With VoiceOver enabled, the system reads aloud information about each dog as you swipe through the list. You’ll also hear details about the dog—such as the age, gender, and attitude—mark the dog as a favorite, and view a gallery with more photos of the lovable canine.
 
-##### Get started
+### Get started
 
 To see the sample app in action, use Xcode to build and run the app on your iOS device. Be sure to turn on VoiceOver, which you can do from Settings under *General > Accessibility > VoiceOver*.
 
-##### Improve carousel navigation
+### Improve carousel navigation
 
 To preview each pup available for adoption, the user swipes left and right across the collection view at the top of the screen. There is, however, a problem with this interaction when VoiceOver is on, the assistive technology doesn’t recognize visible elements, such as the favorite and gallery buttons, and it doesn’t know the details of the dog until the user reaches the end of the list. This behavior is far from being an exceptional accessibility experience.
 
@@ -88,7 +88,7 @@ With VoiceOver on, the carousel accessibility element adds two new gestures on t
 
 The sample’s use of [`CarouselAccessibilityElement`](x-source-tag://CarouselAccessibilityElement) also makes it possible for the user to swipe to the favorite and gallery buttons for every dog in the list, rather than having the buttons reachable only at the end of the list. Although the gestures to swipe through the list of dogs is different when VoiceOver is on, this difference makes it easier for users needing assistance to preview each dog.
 
-##### Display non-modal modal views
+### Display non-modal modal views
 
 When the user taps the gallery button, the app displays a full-screen modal view. However, in the sample this modal view isn’t from a view controller that the app presents modally. Instead, it’s a view with a transparent background displayed on top of the app’s main view. Because of the transparent background, parts of the underlying view are still available to VoiceOver, and VoiceOver doesn’t know that those visible parts should not be available.
 
@@ -106,7 +106,7 @@ override var accessibilityViewIsModal: Bool {
 
 [View in Source](x-source-tag://is_modal)
 
-##### Group labels
+### Group labels
 
 When referring to separate elements belonging in the same context, it’s essential to convey a single set of information about the items. For example, the sample app displays a title label, such as *NAME*, and a value label, such as the dog’s name. These are two separate elements—*title* and *value*—but they are part of the same context.
 
@@ -128,7 +128,7 @@ elements.append(nameElement)
 
 [View in Source](x-source-tag://grouping_elements)
 
-##### Add custom actions
+### Add custom actions
 
 The sample app also displays the name of the animal shelter housing the dog. Next to the shelter name are two buttons: one initiates a call to the shelter and the other displays the location of the shelter. To make the buttons available to VoiceOver users, the app uses [`UIAccessibilityCustomAction`](../UIKit/uiaccessibilitycustomaction.md) to specify a name for the action along with the object and selector to use when performing the action. With the custom action, VoiceOver users can access the action using the VoiceOver rotor.
 

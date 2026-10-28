@@ -25,7 +25,7 @@ var currentChunkStorageURL: URL? { get }
 @property (nonatomic, readonly, nullable) NSURL * currentChunkStorageURL;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is `nil`, the storage location of the chunk is the URL of the sample cursor’s track’s asset, if it has one.
 

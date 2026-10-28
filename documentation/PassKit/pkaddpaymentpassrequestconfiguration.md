@@ -23,7 +23,7 @@ class PKAddPaymentPassRequestConfiguration
 @interface PKAddPaymentPassRequestConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 The encryption scheme, cardholder name, and primary account suffix are required for configuration. The configuration information is used for setup and display only. It should not contain any sensitive information.
 

@@ -21,11 +21,11 @@ Omits elements from the upstream publisher until an error-throwing closure retur
 func tryDrop(while predicate: @escaping (Self.Output) throws -> Bool) -> Publishers.TryDropWhile<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that skips over elements until the provided closure returns `false`, and then republishes all remaining elements. If the predicate closure throws, the publisher fails with an error.
 
-#### Discussion
+## Discussion
 
 Use [`tryDrop(while:)`](./trydrop%28while%29.md) to omit elements from an upstream until an error-throwing closure you provide returns false, after which the remaining items in the stream are published. If the closure throws, no elements are emitted and the publisher fails with an error.
 

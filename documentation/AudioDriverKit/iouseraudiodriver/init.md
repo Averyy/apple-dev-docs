@@ -15,11 +15,11 @@ Handles the basic initialization of the service.
 virtual bool init();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if initialization was successful, or `false` if an error occurred.
 
-#### Discussion
+## Discussion
 
 Override this method inherited from [`IOService`](../../DriverKit/ioservice.md).
 

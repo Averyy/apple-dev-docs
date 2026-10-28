@@ -10,13 +10,13 @@ framework: "Swift-Org/SwiftJavaDocumentation"
 
 Choosing the right swift-java tool for your interop task.
 
-#### Overview
+## Overview
 
 swift-java has two directions of interop, each with a preferred entry point. Start here to figure out which tool matches your task, then follow the links to the per-tool documentation.
 
-##### Which mode should I use?
+### Which mode should I use?
 
-###### Calling Swift from Java
+#### Calling Swift from Java
 
 To call Swift code from Java you use **jextract**, in either its `jni` or `ffm` mode:
 
@@ -25,7 +25,7 @@ To call Swift code from Java you use **jextract**, in either its `jni` or `ffm` 
 
 Start with JNI mode unless you have a specific need only FFM mode can meet. Switching modes means passing `--mode jni` or `--mode ffm` to the command line tool, or setting `"mode": "jni"` / `"mode": "ffm"` in `swift-java.config` when using the [SwiftPM Plugin](./swiftpmplugin.md).
 
-###### Calling Java from Swift
+#### Calling Java from Swift
 
 Swift can call Java types directly as long as your Swift program creates or obtains an in-process reference to a JVM. This also works on Android.
 
@@ -36,7 +36,7 @@ SwiftJava offers a collection of **Swift macros** for calling Java types from Sw
 - Hand-write `@JavaClass` and friends when you only need one or two entry points in a Java library (see [Features: JavaKit macros](./featuresjavakitmacros.md)).
 - Use `swift-java wrap-java` source generation to generate Swift wrapper types for a whole Java API surface. See [swift-java wrap-java](./swiftjavawrapjava.md).
 
-##### Talks and videos
+### Talks and videos
 
 - [Explore Swift and Java interoperability](https://www.youtube.com/watch?v=QSHO-GUGidA) session from WWDC25.
 

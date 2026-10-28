@@ -34,7 +34,7 @@ nonisolated
 func accessibilityInputLabels<S>(_ inputLabels: [S], isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier> where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Provide labels in descending order of importance. Voice Control and Full Keyboard Access use the input labels.
 

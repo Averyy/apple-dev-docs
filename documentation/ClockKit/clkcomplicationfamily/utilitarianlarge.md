@@ -19,7 +19,7 @@ case utilitarianLarge
 CLKComplicationFamilyUtilitarianLarge
 ```
 
-#### Discussion
+## Discussion
 
 The following figure shows the size and location of the utilitarian large complication.
 

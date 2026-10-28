@@ -24,7 +24,7 @@ class MatchPattern
 @interface WKWebExtensionMatchPattern : NSObject
 ```
 
-#### Overview
+## Overview
 
 All match patterns are specified as strings. Apart from the special `<all_urls>` pattern, match patterns consist of three parts: scheme, host, and path.
 

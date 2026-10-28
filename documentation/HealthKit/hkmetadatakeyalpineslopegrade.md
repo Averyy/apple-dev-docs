@@ -28,7 +28,7 @@ extern NSString * const HKMetadataKeyAlpineSlopeGrade;
 
 - [Receiving Downhill Skiing and Snowboarding Data](./receiving-downhill-skiing-and-snowboarding-data.md)
 
-#### Discussion
+## Discussion
 
 Set this key on quantity samples that represent distance, or on workout segments. Set its value to an [`HKQuantity`](./hkquantity.md) object with a percent unit, where 100% indicates a 45 degree slope.
 

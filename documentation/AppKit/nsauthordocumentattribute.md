@@ -15,7 +15,7 @@ The author of the document.
 extern NSAttributedStringDocumentAttributeKey NSAuthorDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../Foundation/nsstring.md) object containing author name.
 

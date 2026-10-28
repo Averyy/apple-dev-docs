@@ -19,7 +19,7 @@ struct ModalResponse
 typedef NSInteger NSModalResponse;
 ```
 
-#### Discussion
+## Discussion
 
 The response value that a button returns can depend on which method is used to present the dialog. See [`alertWithMessageText:defaultButton:alternateButton:otherButton:informativeTextWithFormat:`](../nsalert/alertwithmessagetext_defaultbutton_alternatebutton_otherbutton_informativetextwithformat_.md), [`runModal()`](../nsalert/runmodal%28%29.md), and [`addButton(withTitle:)`](../nsalert/addbutton%28withtitle%29.md) for examples.
 

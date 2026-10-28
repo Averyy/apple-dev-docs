@@ -25,7 +25,7 @@ var notANumberSymbol: String! { get set }
 @property (copy, null_resettable) NSString * notANumberSymbol;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to the string “`NaN`”.
 

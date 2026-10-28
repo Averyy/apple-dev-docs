@@ -22,7 +22,7 @@ var enableFallback: Bool { get set }
 @property BOOL enableFallback;
 ```
 
-#### Discussion
+## Discussion
 
 Wi-Fi Assist allows connections for foreground apps to switch over to cellular data when Wi-Fi connectivity is poor. When this value is `true`, the device brings up a tunnel over celluar to carry traffic that’s eligible for Wi-Fi Assist and also requires VPN. Enabling fallback requires that the server support multiple tunnels for a single user.
 

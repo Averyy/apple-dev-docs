@@ -24,7 +24,7 @@ var duration: CFTimeInterval { get }
 @property (nonatomic, readonly) CFTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 This value is in an undefined state until the system calls the target’s selector at least once.
 

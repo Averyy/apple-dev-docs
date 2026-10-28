@@ -5,7 +5,7 @@
 
 Key used in a user notification’s description dictionary that indicates the relevance of a result.
 
-#### Overview
+## Overview
 
 The relevance value indicates the relevance of the content of a result object. The relevance is computed based on the value of the result itself, not on its relevance to the other results returned by the query.
 

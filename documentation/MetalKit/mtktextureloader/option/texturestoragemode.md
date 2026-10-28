@@ -24,7 +24,7 @@ static let textureStorageMode: MTKTextureLoader.Option
 extern MTKTextureLoaderOption const MTKTextureLoaderOptionTextureStorageMode;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object containing a [`MTLStorageMode`](../../../Metal/mtlstoragemode.md) value.
 

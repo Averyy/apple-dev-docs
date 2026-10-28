@@ -14,7 +14,7 @@ protocol PROXPCProtocol : FxXPCProtocol
 @protocol PROXPCProtocol <FxXPCProtocol>
 ```
 
-#### Overview
+## Overview
 
 The protocol used by PluginManager plug-ins that also handle dynamic registration.
 

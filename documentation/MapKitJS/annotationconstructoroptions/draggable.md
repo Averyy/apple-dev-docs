@@ -15,7 +15,7 @@ A Boolean value that determines whether the user can drag the annotation.
 draggable?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

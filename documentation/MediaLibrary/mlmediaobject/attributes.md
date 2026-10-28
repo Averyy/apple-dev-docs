@@ -22,7 +22,7 @@ var attributes: [String : Any] { get }
 @property (copy, readonly) NSDictionary<NSString *,id> * attributes;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible object attribute keys, see [Media Object Attribute Keys](../media-object-attribute-keys.md).
 

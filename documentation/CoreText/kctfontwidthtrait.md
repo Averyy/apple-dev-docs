@@ -25,7 +25,7 @@ let kCTFontWidthTrait: CFString
 extern CFStringRef const kCTFontWidthTrait;
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the relative interglyph spacing for a given font. The value returned is a [`CFNumber`](../CoreFoundation/cfnumber.md) object representing a float between `-1.0` and `1.0`. The value of `0.0` corresponds to regular glyph spacing, and negative values represent condensed glyph spacing.
 

@@ -23,7 +23,7 @@ enum PHPickerConfigurationSelection
 enum PHPickerConfigurationSelection : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 This enumeration defines the possible values of the photo picker configuration ([`PHPickerConfiguration`](./phpickerconfiguration-swift.struct.md)) property [`selection`](./phpickerconfiguration-swift.struct/selection-swift.property.md).
 

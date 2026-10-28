@@ -22,11 +22,11 @@ Applies the given transaction mutation function to all animations used within th
 nonisolated func transaction(value: some Equatable, _ transform: @escaping (inout Transaction) -> Void) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that wraps this view and applies a transformation to all transactions used within the view whenever `value` changes.
 
-#### Discussion
+## Discussion
 
 Use this modifier to change or replace the animation used in a view. Consider three identical views controlled by a button that changes all three simultaneously:
 

@@ -18,7 +18,7 @@ The conversion value is invalid.
 static var invalidConversionValue: SKANError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Apps provide a conversion value when calling [`updatePostbackConversionValue(_:completionHandler:)`](../skadnetwork/updatepostbackconversionvalue%28_,completionhandler%29.md) or [`updateConversionValue(_:)`](../skadnetwork/updateconversionvalue%28_%29.md). Check that the conversion value you provide is within the allowed range.
 

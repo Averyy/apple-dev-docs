@@ -21,7 +21,7 @@ Generates images programmatically from the description and style information you
 final class ImageCreator
 ```
 
-#### Overview
+## Overview
 
 Use an `ImageCreator` object to generate images programmatically from your app on devices that support the capability. You provide a description of the image content, as a text string or as a combination of text and images. The system’s generative models use that information to generate one or more images and return them to your code.
 

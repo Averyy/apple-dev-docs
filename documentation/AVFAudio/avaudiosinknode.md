@@ -25,7 +25,7 @@ class AVAudioSinkNode
 @interface AVAudioSinkNode : AVAudioNode
 ```
 
-#### Overview
+## Overview
 
 You use an `AVAudioSinkNode` to receive audio data through [`AVAudioSinkNodeReceiverBlock`](./avaudiosinknodereceiverblock.md). You only use it in the input chain.
 

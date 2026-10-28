@@ -24,7 +24,7 @@ class MPSImageStatisticsMinAndMax
 @interface MPSImageStatisticsMinAndMax : MPSUnaryImageKernel
 ```
 
-#### Overview
+## Overview
 
 The minimum and maximum values are written to the destination image at the following pixel locations:
 

@@ -19,7 +19,7 @@ func AXObserverAddNotification(_ observer: AXObserver, _ element: AXUIElement, _
 AXError AXObserverAddNotification(AXObserverRef observer, AXUIElementRef element, CFStringRef notification, void *refcon);
 ```
 
-#### Return Value
+## Return Value
 
 If unsuccessful, `AXObserverAddNotification` may return one of the following error codes, among others:
 

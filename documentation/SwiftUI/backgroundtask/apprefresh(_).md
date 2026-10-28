@@ -20,7 +20,7 @@ A task that updates your app’s state in the background for a matching identifi
 static func appRefresh(_ identifier: String) -> BackgroundTask<Void, Void>
 ```
 
-#### Return Value
+## Return Value
 
 A background task that you can handle with your app or extension.
 

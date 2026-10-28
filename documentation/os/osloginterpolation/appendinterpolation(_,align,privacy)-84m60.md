@@ -21,7 +21,7 @@ Appends an interpolated textual representation of a type.
 mutating func appendInterpolation<T>(_ value: @autoclosure @escaping () -> T, align: OSLogStringAlignment = .none, privacy: OSLogPrivacy = .auto) where T : CustomStringConvertible
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this function directly. The system calls it automatically when interpolating values of this type. When specifying the value in your string, you may include any of the indicated parameters to change the default presentation of that value.
 

@@ -21,7 +21,7 @@ The home directory for the current user.
 static var homeDirectory: URL { get }
 ```
 
-#### Discussion
+## Discussion
 
 This URL is the equivalent of the shell value `~/`.
 

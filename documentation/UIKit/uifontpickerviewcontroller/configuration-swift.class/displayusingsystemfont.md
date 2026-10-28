@@ -22,7 +22,7 @@ var displayUsingSystemFont: Bool { get set }
 @property (nonatomic) BOOL displayUsingSystemFont;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the font picker uses each font face to display that font face name in the font picker. Set this property to [`true`](../../../Swift/true.md) if you want the font picker to display all font names in the system font instead.
 

@@ -15,7 +15,7 @@ A Boolean value that indicates whether the App Store completed the request to ex
 boolean complete
 ```
 
-#### Discussion
+## Discussion
 
 The request is complete when this value is `TRUE`. For more information about the subscription-renewal-date extension, see [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md).
 

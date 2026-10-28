@@ -22,7 +22,7 @@ static var user: NSToolbarItem.VisibilityPriority { get }
 static const NSToolbarItemVisibilityPriority NSToolbarItemVisibilityPriorityUser;
 ```
 
-#### Discussion
+## Discussion
 
 The toolbar pushes these items to the overflow menu last.
 

@@ -25,7 +25,7 @@ static var withoutOverwriting: NSData.WritingOptions { get }
 NSDataWritingWithoutOverwriting
 ```
 
-#### Discussion
+## Discussion
 
 You can’t combine this constant with [`atomic`](./atomic.md) because atomic allows the system to overwrite the original file.
 

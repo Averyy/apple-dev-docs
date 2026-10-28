@@ -11,7 +11,7 @@ Is the current execution context on the work thread?
 virtual bool onThread() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if IOThreadSelf() == workThread.
 

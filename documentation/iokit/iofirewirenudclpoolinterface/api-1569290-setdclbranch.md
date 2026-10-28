@@ -16,11 +16,11 @@ Set the branch pointer for a NuDCL
 IOReturn (*SetDCLBranch)(NuDCLRef dcl, NuDCLRef branchDCL);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn error code.
 
-#### Discussion
+## Discussion
 
 Program execution will jump to the DCL pointed to by 'branchDCL', after the DCL is executed. If set to 0, execution will stop after this DCL.
 

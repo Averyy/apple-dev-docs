@@ -24,7 +24,7 @@ class LayerRenderer
 
 - [Drawing fully immersive content using Metal](./drawing-fully-immersive-content-using-metal.md)
 
-#### Overview
+## Overview
 
 A layer renderer type creates a bridge between a SwiftUI scene and the Metal code you use to draw fully immersive experiences. When you present an immersive space with [`CompositorLayer`](./compositorlayer.md) content, the system creates a `LayerRenderer` type and makes it available to the content’s closure. Use the information in the layer renderer to set up your app’s rendering loop, and to start drawing frames of content.
 

@@ -16,7 +16,7 @@ A CSS color, a gradient, or a pattern used to fill shapes and text.
 attribute custom fillStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This property can be set to any CSS color—for example “red”, rgb(255,0,0), #ff0000, or rgba(255,0,0,1). This property can also be set to a gradient object or a pattern object.
 

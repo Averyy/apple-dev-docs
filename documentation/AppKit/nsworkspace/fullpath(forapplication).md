@@ -21,11 +21,11 @@ func fullPath(forApplication appName: String) -> String?
 - (NSString *) fullPathForApplication:(NSString *) appName;
 ```
 
-#### Return Value
+## Return Value
 
 The full path for the app, or `nil` if the specified app was not found.
 
-#### Discussion
+## Discussion
 
 It is safe to call this method from any thread of your app.
 

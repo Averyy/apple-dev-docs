@@ -21,7 +21,7 @@ The values that determine how to encode a type’s coding keys as JSON keys.
 enum KeyEncodingStrategy
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  Key encoding strategies other than [`JSONEncoder.KeyEncodingStrategy.useDefaultKeys`](./keyencodingstrategy-swift.enum/usedefaultkeys.md) may have a noticeable performance cost because those strategies may inspect and transform each key.
 

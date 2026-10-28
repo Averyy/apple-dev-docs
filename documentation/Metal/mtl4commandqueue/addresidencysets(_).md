@@ -20,7 +20,7 @@ Applies multiple residency sets to a queue, which Metal applies to the queue’s
 func addResidencySets(_ residencySets: [any MTLResidencySet])
 ```
 
-#### Discussion
+## Discussion
 
 Each command queue can maintain a list of up to 32 different residency sets. See [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](../mtlresidencyset.md) for more information.
 

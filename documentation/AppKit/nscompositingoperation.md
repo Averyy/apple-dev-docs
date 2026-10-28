@@ -19,7 +19,7 @@ enum NSCompositingOperation
 enum NSCompositingOperation : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The type of operation, the source image, and the destination image determine the final output.
 

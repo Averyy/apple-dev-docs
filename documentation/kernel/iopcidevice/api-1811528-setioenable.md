@@ -13,11 +13,11 @@ virtual bool setIOEnable(
  bool exclusive = false );
 ```
 
-#### Return Value
+## Return Value
 
 True if the I/O space response was previously enabled, false otherwise.
 
-#### Overview
+## Overview
 
 This method sets the I/O space response bit in the device's command config space register to the passed value, and returns the previous state of the enable. The exclusive option allows only one exclusive device on the bus to be enabled concurrently, this should be only for temporary access.
 

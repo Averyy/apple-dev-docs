@@ -29,11 +29,11 @@ OSStatus SecIdentityCopyPrivateKey(SecIdentityRef identityRef, SecKeyRef*private
 
 - [Parsing an Identity](./parsing-an-identity.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 An identity is a digital certificate together with its associated private key.
 

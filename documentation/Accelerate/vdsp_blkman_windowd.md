@@ -21,7 +21,7 @@ Creates a double-precision Blackman window.
 extern void vDSP_blkman_windowD(double *__C, vDSP_Length __N, int __Flag);
 ```
 
-#### Discussion
+## Discussion
 
 The [`vDSP_blkman_window`](./vdsp_blkman_window.md) and [`vDSP_blkman_windowD`](./vdsp_blkman_windowd.md) functions create a Blackman window vector using the following operation:
 

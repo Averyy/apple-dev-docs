@@ -25,7 +25,7 @@ case parameters
 MLModelErrorParameters
 ```
 
-#### Discussion
+## Discussion
 
 Core ML typically throws (Swift) or returns (Objective-C) this error when an app queries the model for a parameter it doesn’t support.
 

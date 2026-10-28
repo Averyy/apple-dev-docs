@@ -17,7 +17,7 @@ A MetadataProvider automatically injects runtime-generated metadata to all logs 
 struct MetadataProvider
 ```
 
-##### Example
+### Example
 
 A metadata provider may be used to automatically inject metadata such as trace IDs:
 
@@ -36,7 +36,7 @@ Baggage.withValue(baggage) {
 }
 ```
 
-##### Metadata with Attributes
+### Metadata with Attributes
 
 Metadata providers can return values that carry attributes via string interpolation:
 

@@ -24,7 +24,7 @@ func VTCompressionSessionGetTypeID() -> CFTypeID
 extern CFTypeID VTCompressionSessionGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The [`CFTypeID`](../CoreFoundation/cftypeid.md) of the compression session object.
 

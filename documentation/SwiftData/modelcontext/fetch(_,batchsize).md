@@ -22,11 +22,11 @@ Returns a collection of typed models, in batches, which match the criteria of th
 func fetch<T>(_ descriptor: FetchDescriptor<T>, batchSize: Int) throws -> FetchResultsCollection<T> where T : PersistentModel
 ```
 
-#### Return Value
+## Return Value
 
 The collection of typed models that satisfy the criteria of the fetch descriptor. If no models match the criteria, the collection is empty.
 
-#### Discussion
+## Discussion
 
 As you access the models in the returned collection (either sequentially, or directly using subscripting), the context automatically fetches the necessary batches.
 

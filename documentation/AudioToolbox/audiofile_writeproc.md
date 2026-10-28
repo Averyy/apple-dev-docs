@@ -24,15 +24,15 @@ typealias AudioFile_WriteProc = (UnsafeMutableRawPointer, Int64, UInt32, UnsafeR
 typedef int (*)(void *, long long, unsigned int, const void *, unsigned int *) AudioFile_WriteProc;
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 If you named your function `MyAudioFile_WriteProc`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 This callback function is invoked when Audio File Services needs to write data.
 

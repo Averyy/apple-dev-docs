@@ -25,11 +25,11 @@ func canBeConverted(to encoding: UInt) -> Bool
 - (BOOL) canBeConvertedToEncoding:(NSStringEncoding) encoding;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver can be converted to `encoding` without loss of information. Returns [`false`](../../Swift/false.md) if characters would have to be changed or deleted in the process of changing encodings.
 
-#### Discussion
+## Discussion
 
 If you plan to actually convert a string, the `dataUsingEncoding:...` methods return `nil` on failure, so you can avoid the overhead of invoking this method yourself by simply trying to convert the string.
 

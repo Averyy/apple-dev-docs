@@ -19,11 +19,11 @@ func PMCreatePageFormat(_ pageFormat: UnsafeMutablePointer<PMPageFormat?>) -> OS
 OSStatus PMCreatePageFormat(PMPageFormat  _Nullable *pageFormat);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function allocates memory for a new page format object in your application’s memory space and sets its reference count to 1. The new page format object is empty and unusable until you call [`PMSessionDefaultPageFormat(_:_:)`](./api-1462217-pmsessiondefaultpageformat.md) or [`PMCopyPageFormat(_:_:)`](./api-1464669-pmcopypageformat.md).
 

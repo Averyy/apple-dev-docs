@@ -21,7 +21,7 @@ A message the system sends when a port becomes invalid.
 struct DidBecomeInvalidMessage
 ```
 
-#### Overview
+## Overview
 
 A [`SocketPort`](../socketport.md) object can’t detect when its connection to a remote port is lost, even if the remote port is on the same machine. Therefore, it can’t invalidate itself and post this message. Instead, your app needs to detect the timeout error when sending the next message.
 

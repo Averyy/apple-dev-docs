@@ -21,7 +21,7 @@ var sessionIdentifier: String { get }
 @property (copy, readonly) NSString * sessionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to correlate the current stream with other streams that use the keyboard.
 

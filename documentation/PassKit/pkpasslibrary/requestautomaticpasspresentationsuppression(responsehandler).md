@@ -24,15 +24,15 @@ class func requestAutomaticPassPresentationSuppression(responseHandler: @escapin
 + (PKSuppressionRequestToken) requestAutomaticPassPresentationSuppressionWithResponseHandler:(void (^)(PKAutomaticPassPresentationSuppressionResult result)) responseHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A [`PKPassLibrary`](../pkpasslibrary.md) value that represents this request. Use this token to end the suppression of Apple Pay passes.
 
-#### Discussion
+## Discussion
 
 If the device doesn’t support this feature, this method fails immediately and returns a token value of `0`. However, PassKit still calls the response handler.
 
-#### Discussion
+## Discussion
 
 Use this method only in apps that must stay in the foreground when operating near NFC or other RF readers. This method prevents the device from automatically displaying the Apple Pay passes when it detects a compatible reader. This suppression occurs only while the app is in the foreground. The system automatically reenables the Apple Pay interface when the app goes to the background. If the app resumes, the system automatically suppresses the Apple Pay interface again.
 

@@ -25,7 +25,7 @@ func MKMapPointEqualToPoint(_ point1: MKMapPoint, _ point2: MKMapPoint) -> Bool
 static BOOL MKMapPointEqualToPoint(MKMapPoint point1, MKMapPoint point2);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the `x` and `y` values in both points are exactly the same, or [`false`](../Swift/false.md) if one or both values are different.
 

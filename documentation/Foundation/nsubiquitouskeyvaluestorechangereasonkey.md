@@ -25,7 +25,7 @@ let NSUbiquitousKeyValueStoreChangeReasonKey: String
 extern NSString * const NSUbiquitousKeyValueStoreChangeReasonKey;
 ```
 
-#### Discussion
+## Discussion
 
 When the iCloud key-value store changes due to an external source, the system generates a [`didChangeExternallyNotification`](./nsubiquitouskeyvaluestore/didchangeexternallynotification.md) notification. That notification can include this key. The value of this key is an [`NSNumber`](./nsnumber.md) that indicates the reason for the change. Possible values include one of the constants [`NSUbiquitousKeyValueStoreServerChange`](./nsubiquitouskeyvaluestoreserverchange.md), [`NSUbiquitousKeyValueStoreInitialSyncChange`](./nsubiquitouskeyvaluestoreinitialsyncchange.md), [`NSUbiquitousKeyValueStoreQuotaViolationChange`](./nsubiquitouskeyvaluestorequotaviolationchange.md), or [`NSUbiquitousKeyValueStoreAccountChange`](./nsubiquitouskeyvaluestoreaccountchange.md).
 

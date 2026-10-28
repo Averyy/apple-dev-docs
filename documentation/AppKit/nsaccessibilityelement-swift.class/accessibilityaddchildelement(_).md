@@ -19,7 +19,7 @@ func accessibilityAddChildElement(_ childElement: NSAccessibilityElement)
 - (void) accessibilityAddChildElement:(NSAccessibilityElement *) childElement;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method sets up the proper parent-child relationship between the current element and the provided child element.
 

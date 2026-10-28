@@ -22,7 +22,7 @@ var didJustJoin: Bool { get }
 @property (readonly, getter=didJustJoin) BOOL justJoined;
 ```
 
-#### Discussion
+## Discussion
 
 This property is useful in the Maintaining state to differentiate whether the Maintain command is for the initial join, or the subsequent periodic callback.
 

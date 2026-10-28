@@ -23,7 +23,7 @@ func makeTransformer() -> NumericImputer<Element>.Transformer
 
 Available when `Element` conforms to `BinaryFloatingPoint`, `Decodable`, and `Encodable`.
 
-#### Discussion
+## Discussion
 
 > **Note**: You can’t use incremental fitting with an impute transformer when using the `median` strategy.
 

@@ -25,7 +25,7 @@ static var notSupported: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The attempted operation isn’t supported for the type of object referenced.
 

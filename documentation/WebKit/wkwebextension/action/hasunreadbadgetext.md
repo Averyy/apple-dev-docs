@@ -23,7 +23,7 @@ var hasUnreadBadgeText: Bool { get set }
 @property (nonatomic) BOOL hasUnreadBadgeText;
 ```
 
-#### Discussion
+## Discussion
 
 This property is automatically set to `YES` when [`badgeText`](./badgetext.md) changes and is not empty. If [`badgeText`](./badgetext.md) becomes empty or the popup associated with the action is presented, this property is automatically set to `NO`. Additionally, it should be set to `NO` by the app when the badge has been presented to the user. This property is useful for higher-level notification badges when extensions might be hidden behind an action sheet.
 

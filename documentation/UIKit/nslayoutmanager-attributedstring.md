@@ -5,7 +5,7 @@
 
 The text storage object from which the `NSGlyphGenerator` object procures characters for glyph generation.
 
-#### Overview
+## Overview
 
 **Swift**:
 

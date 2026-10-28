@@ -24,7 +24,7 @@ class XCTHitchMetric
 @interface XCTHitchMetric : NSObject
 ```
 
-#### Discussion
+## Discussion
 
 A hitch occurs when your app doesn’t prepare the content it displays in time for the system to render it in the next screen update. For more information, see [Understanding hitches in your app](../Xcode/understanding-hitches-in-your-app.md).
 

@@ -21,7 +21,7 @@ Returns an iterator over the elements of this collection.
 func makeIterator() -> CollectionOfOne<Element>.Iterator
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

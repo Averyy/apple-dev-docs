@@ -25,7 +25,7 @@ struct FileAttributeType
 typedef NSString * NSFileAttributeType;
 ```
 
-#### Discussion
+## Discussion
 
 These strings are the possible values for the [`type`](./fileattributekey/type.md) attribute key contained in the dictionary object returned by [`attributesOfItem(atPath:)`](./filemanager/attributesofitem%28atpath%29.md).
 

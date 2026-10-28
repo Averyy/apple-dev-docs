@@ -25,7 +25,7 @@ class TKSmartCardSlot
 @interface TKSmartCardSlot : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the [`TKSmartCardSlotManager`](./tksmartcardslotmanager.md) class to manage all the smart card reader slots available to the system. You can retrieve the names of available smart card reader slots for a system using the [`slotNames`](./tksmartcardslotmanager/slotnames.md) property of a manager object, and access instances of [`TKSmartCardSlot`](./tksmartcardslot.md) using the  [`getSlot(withName:reply:)`](./tksmartcardslotmanager/getslot%28withname,reply%29.md) method.
 

@@ -25,7 +25,7 @@ case easeOut
 SKActionTimingEaseOut
 ```
 
-#### Discussion
+## Discussion
 
 By creating two separate actions, a [`moveTo(x:duration:)`](../skaction/moveto%28x,duration%29.md) and a [`moveTo(y:duration:)`](../skaction/moveto%28y,duration%29.md), and setting the former to [`SKActionTimingMode.easeOut`](./easeout.md), you can visualize the effect of this timing mode by tracing the path of a circular shape node running the actions in a group:
 

@@ -5,20 +5,20 @@
 
 Learn about important changes to PencilKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [PencilKit](../PencilKit/PencilKit.md).
 
-#### June 2026
+## June 2026
 
-##### Strokes
+### Strokes
 
 - Access and assign a stable identity to strokes and stroke paths using the `id` property on [`PKStroke`](../PencilKit/pkstroke-swift.struct.md) and [`PKStrokePath`](../PencilKit/pkstrokepath-swift.struct.md), which conform to `Identifiable`.
 - Select strokes programmatically and respond to selection changes using the [`selection`](../PencilKit/pkcanvasview/selection.md) property and the [`canvasViewSelectionDidChange(_:)`](../PencilKit/pkcanvasviewdelegate/canvasviewselectiondidchange%28_%29.md) delegate method.
 - Erase portions of a drawing along a path using [`erasePath(_:mask:transform:)`](../PencilKit/pkdrawing-swift.struct/erasepath%28_,mask,transform%29-shn.md), or get a new drawing with the erasure applied using [`erasingPath(_:mask:transform:)`](../PencilKit/pkdrawing-swift.struct/erasingpath%28_,mask,transform%29-9dpi9.md).
 - Convert a stroke path to a `CGPath` using the [`bezierRepresentation`](../PencilKit/pkstrokepathreference/bezierrepresentation.md) property, or create a stroke path from a bezier path using [`init(bezierPath:creationDate:pointProvider:)`](../PencilKit/pkstrokepath-swift.struct/init%28bezierpath,creationdate,pointprovider%29.md).
 
-##### Handwriting recognition
+### Handwriting recognition
 
 - Recognize handwritten text, search within ink, and generate indexable string content using [`PKStrokeRecognizer`](../PencilKit/pkstrokerecognizer.md).
 

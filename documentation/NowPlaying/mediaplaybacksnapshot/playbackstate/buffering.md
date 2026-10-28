@@ -21,7 +21,7 @@ Playback is buffering content.
 case buffering
 ```
 
-#### Discussion
+## Discussion
 
 Use this state when playback is delayed while loading additional content.
 

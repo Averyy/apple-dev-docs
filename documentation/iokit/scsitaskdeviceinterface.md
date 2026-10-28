@@ -18,7 +18,7 @@ typedef struct SCSITaskDeviceInterface {
 } SCSITaskDeviceInterface;
 ```
 
-#### Overview
+## Overview
 
 After rendezvous with a SCSITask Device in the IORegistry you can create an instance of this interface as a proxy to the IOService. Once you have this interface, or one of its subclasses, you can create SCSITasks to send to the device. Use the CreateSCSITask method to create new SCSITask instances for this device.
 

@@ -25,7 +25,7 @@ func setHostedPlayer(_ playerID: String, connected: Bool)
 - (void) setHostedPlayer:(NSString *) playerID connected:(BOOL) connected;
 ```
 
-#### Discussion
+## Discussion
 
 When setting up a hosted match, each device needs to create a matchmaker view controller and display it to the player. Then, when a new player connects to your server, your server needs to notify all participating devices already connected to your server. Each participating device then calls this method to update that player’s status in the matchmaking interface. Similarly, if a player disconnects from the server, your server informs each device so the devices can update their user interface.
 

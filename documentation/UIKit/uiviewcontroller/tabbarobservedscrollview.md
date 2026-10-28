@@ -21,7 +21,7 @@ var tabBarObservedScrollView: UIScrollView? { get set }
 @property (nonatomic, strong, nullable) UIScrollView * tabBarObservedScrollView;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, the position of the tab bar remains fixed while content scrolls underneath it. Use this property in your tvOS apps to create an interface where the tab bar scrolls with the rest of your content. When you set the value of this property to a scroll view, UIKit synchronizes the position of the tab bar with the current scroll position of that scroll view. The default value of this property is `nil`.
 

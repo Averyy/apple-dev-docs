@@ -22,7 +22,7 @@ The context of the current state-processing update.
 struct Transaction
 ```
 
-#### Overview
+## Overview
 
 Use a transaction to pass an animation between views in a view hierarchy.
 

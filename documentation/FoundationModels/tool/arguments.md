@@ -25,7 +25,7 @@ associatedtype Arguments : ConvertibleFromGeneratedContent
 
 - [Expanding generation with tool calling](../expanding-generation-with-tool-calling.md)
 
-#### Discussion
+## Discussion
 
 Typically arguments are either a [`Generable`](../generable.md) type or [`GeneratedContent`](../generatedcontent.md).
 

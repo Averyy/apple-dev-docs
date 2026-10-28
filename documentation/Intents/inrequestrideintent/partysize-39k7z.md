@@ -19,7 +19,7 @@ The number of passengers that the ride must accommodate.
 final var partySize: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The party size includes the total number of passengers.
 

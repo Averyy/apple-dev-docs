@@ -25,7 +25,7 @@ static let supportsZoom: UIAccessibilityTraits
 extern const UIAccessibilityTraits UIAccessibilityTraitSupportsZoom;
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait to characterize an accessibility element that supports zoom functionality, like letting a person perform expand and pinch gestures to zoom in and out. If you assign this trait to an element, you also need to implement [`accessibilityZoomIn(at:)`](../../ObjectiveC/nsobject-swift.class/accessibilityzoomin%28at%29.md) and [`accessibilityZoomOut(at:)`](../../ObjectiveC/nsobject-swift.class/accessibilityzoomout%28at%29.md).
 

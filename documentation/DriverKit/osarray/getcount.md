@@ -18,7 +18,7 @@ Returns count of members in array.
 virtual uint32_t getCount() const;
 ```
 
-#### Return Value
+## Return Value
 
 Count of members in array.
 

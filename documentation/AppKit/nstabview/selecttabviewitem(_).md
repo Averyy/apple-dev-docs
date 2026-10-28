@@ -19,7 +19,7 @@ func selectTabViewItem(_ tabViewItem: NSTabViewItem?)
 - (void) selectTabViewItem:(NSTabViewItem *) tabViewItem;
 ```
 
-#### Discussion
+## Discussion
 
 If there is a delegate and the delegate supports it, sends the delegate the [`tabView(_:shouldSelect:)`](../nstabviewdelegate/tabview%28_,shouldselect%29.md) message.
 

@@ -21,7 +21,7 @@ enum ProcessCapability
 
 - [Managing the browser extension life cycle](./managing-the-browser-extension-lifecycle.md)
 
-#### Overview
+## Overview
 
 To grant a capability to an extension, call the `grantCapability(_:)` method for the relevant process:
 

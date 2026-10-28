@@ -13,7 +13,7 @@
 kIONetworkFeatureNoBSDWait = 0x001
 ```
 
-#### Discussion
+## Discussion
 
 Set this bit in the value returned by getFeatures() to disable the automatic wait for "IOBSD" resource by the IONetworkController::start() method.
 

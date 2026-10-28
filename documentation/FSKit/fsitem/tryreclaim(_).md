@@ -19,11 +19,11 @@ func tryReclaim(_ reclaimBlock: @escaping () -> Void) -> Bool
 - (BOOL) tryReclaimWithBlock:(void (^)()) reclaimBlock;
 ```
 
-#### Return Value
+## Return Value
 
 `true` (Swift) or YES (Obj-C)  if the reclaim block ran; otherwise, `false` (Swift) or `NO` (Obj-C). When your [`reclaimItem(_:replyHandler:)`](../fsvolume/handler/reclaimitem%28_,replyhandler%29.md) implementation receives a `false`/`NO` return value, call `replyHandler(nil)`.
 
-#### Discussion
+## Discussion
 
 Invoke this method in your implementation of the [`reclaimItem(_:replyHandler:)`](../fsvolume/handler/reclaimitem%28_,replyhandler%29.md) operation.
 

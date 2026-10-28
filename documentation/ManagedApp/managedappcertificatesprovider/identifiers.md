@@ -18,7 +18,7 @@ An asynchronous sequence of arrays of certificate identifiers provided by the MD
 var identifiers: some AsyncSequence<Array<String>, Never> { get async }
 ```
 
-#### Discussion
+## Discussion
 
 Use [`certificate(withIdentifier:)`](./certificate%28withidentifier%29.md) to look up an identifier to obtain the associated certificate. The sequence yields an array of identifiers when:
 

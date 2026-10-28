@@ -19,7 +19,7 @@ class WKPickerItem
 @interface WKPickerItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 You create picker items yourself and assign them to a [`WKInterfacePicker`](./wkinterfacepicker.md) object in your interface. For each item, you can specify a title string, an image, or both based on the style of the picker.
 

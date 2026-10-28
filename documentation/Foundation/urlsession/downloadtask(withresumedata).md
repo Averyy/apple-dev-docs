@@ -29,11 +29,11 @@ func downloadTask(withResumeData resumeData: Data) -> URLSessionDownloadTask
 
 - [Pausing and resuming downloads](../pausing-and-resuming-downloads.md)
 
-#### Return Value
+## Return Value
 
 The new session download task.
 
-#### Discussion
+## Discussion
 
 After you create the task, you must start it by calling its [`resume()`](../urlsessiontask/resume%28%29.md) method.
 

@@ -33,7 +33,7 @@ init(_ titleResource: LocalizedStringResource, @ContentBuilder content: () -> Co
 init<S>(_ title: S, @ContentBuilder content: () -> Content) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a [`Text`](../text.md) label on your behalf, and treats the localized key similar to [`init(_:tableName:bundle:comment:)`](../text/init%28_,tablename,bundle,comment%29.md). See `Text` for more information about localizing strings.
 

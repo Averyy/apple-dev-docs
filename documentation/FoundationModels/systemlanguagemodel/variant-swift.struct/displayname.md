@@ -19,7 +19,7 @@ The user-facing name of the variant.
 let displayName: String
 ```
 
-#### Discussion
+## Discussion
 
 For example, `"AFM 3 Core"` or `"AFM 3 Core Advanced"`.
 

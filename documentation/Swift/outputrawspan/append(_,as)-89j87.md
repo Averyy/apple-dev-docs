@@ -21,7 +21,7 @@ Appends the given value’s bytes to this span’s bytes.
 mutating func append<T>(_ value: T, as type: T.Type) where T : BitwiseCopyable, T : ConvertibleToBytes
 ```
 
-#### Discussion
+## Discussion
 
 There must be at least `MemoryLayout<T>.size` bytes available in the span.
 

@@ -16,7 +16,7 @@
 kSENSE_EOM_Set
 ```
 
-#### Discussion
+## Discussion
 
 End Of Medium bit is set.
 

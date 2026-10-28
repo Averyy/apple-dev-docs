@@ -15,11 +15,11 @@ The payload that configures parental control for dictation and profanity.
 object ParentalControlDictationAndProfanity
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.ironwood.support` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |

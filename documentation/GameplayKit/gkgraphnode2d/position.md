@@ -24,7 +24,7 @@ var position: vector_float2 { get set }
 @property (nonatomic) vector_float2 position;
 ```
 
-#### Discussion
+## Discussion
 
 You specify a position when creating a node, but you can also change a node’s position after initialization.
 

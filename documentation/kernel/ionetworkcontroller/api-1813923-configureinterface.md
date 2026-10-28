@@ -12,11 +12,11 @@ virtual bool configureInterface(
  IONetworkInterface *interface);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the operation was successful, false otherwise (this will cause attachInterface() to fail and return 0).
 
-#### Overview
+## Overview
 
 This method configures an interface object that was created by createInterface(). Subclasses can override this method to customize and examine the interface object that will be attached to the controller as a client.
 

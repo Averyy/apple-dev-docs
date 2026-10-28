@@ -25,7 +25,7 @@ func component(_ unit: NSCalendar.Unit, from date: Date) -> Int
 - (NSInteger) component:(NSCalendarUnit) unit fromDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSInteger` value for the requested component.
 

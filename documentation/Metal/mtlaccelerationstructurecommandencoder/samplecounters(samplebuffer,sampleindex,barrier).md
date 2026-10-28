@@ -29,7 +29,7 @@ func sampleCounters(sampleBuffer: any MTLCounterSampleBuffer, sampleIndex: Int, 
 
 - [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
-#### Discussion
+## Discussion
 
 Inserting a barrier ensures that any work you encoded with this encoder is complete before the GPU samples the hardware counters. If you don’t insert a barrier, the GPU can sample the counters concurrently with other commands encoded by this encoder. Using a barrier leads to more repeatable counter results but can negatively impact performance.
 

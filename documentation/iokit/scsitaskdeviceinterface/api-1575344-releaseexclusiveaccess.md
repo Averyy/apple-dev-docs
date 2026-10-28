@@ -16,11 +16,11 @@ Method to release exclusive access to the device so that other clients can send 
 IOReturn (*ReleaseExclusiveAccess)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if exclusive access was released, else some appropriate error.
 
-#### Discussion
+## Discussion
 
 Once a SCSITaskDeviceInterface is opened, the client may request exclusive access to the device. Once the client has successfully gained exclusive access, it becomes the Logical Unit Driver and all in-kernel Logical Unit Drivers (if any are matched on the device) are quiesced. This method releases this access and unquiesces the in-kernel drivers (if any).
 

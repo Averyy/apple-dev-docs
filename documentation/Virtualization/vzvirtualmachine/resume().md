@@ -19,7 +19,7 @@ func resume() async throws
 - (void) resumeWithCompletionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to resume a VM that’s in the [`VZVirtualMachine.State.paused`](./state-swift.enum/paused.md) state. To determine if a VM is in a state that allows you to resume it, check the VM’s [`canResume`](./canresume.md) property.
 

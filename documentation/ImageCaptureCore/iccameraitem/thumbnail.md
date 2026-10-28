@@ -23,7 +23,7 @@ var thumbnail: CGImage? { get }
 @property (nonatomic, readonly, nullable) CGImageRef thumbnail;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` until you call [`requestThumbnail()`](./requestthumbnail%28%29.md).
 

@@ -20,7 +20,7 @@ A bitmask used to define the collision group to which an entity belongs.
 struct CollisionGroup
 ```
 
-#### Overview
+## Overview
 
 Use collision groups along with [`CollisionFilter`](./collisionfilter.md) to define custom collision properties for entities in your scene and to control which entities collide with which others. By default, all entities that participate in the physics simulation collide with all other participating entities. There are times, however, when you need certain entities to not collide with certain other entities, and that’s where collision groups and filters come into play.
 

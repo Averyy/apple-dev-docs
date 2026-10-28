@@ -20,7 +20,7 @@ Result type for manual segment completion control.
 enum SegmentResult
 ```
 
-#### Overview
+## Overview
 
 Return this type from the segment handler to explicitly control how each segment completes, including saving custom client state for resumable exports or canceling segments.
 

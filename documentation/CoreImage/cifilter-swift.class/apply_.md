@@ -15,7 +15,7 @@ Produces a [`CIImage`](../ciimage.md) object by applying a kernel function.
 - (CIImage *) apply:(CIKernel *) k;
 ```
 
-#### Discussion
+## Discussion
 
 If you are implementing a custom filter, this method needs to be called from within the [`outputImage`](./outputimage.md) method in order to apply your kernel function to the [`CIImage`](../ciimage.md) object. For example, if the kernel function has this signature:
 

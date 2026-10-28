@@ -25,11 +25,11 @@ class func turbulenceField(withSmoothness smoothness: CGFloat, animationSpeed sp
 + (SKFieldNode *) turbulenceFieldWithSmoothness:(CGFloat) smoothness animationSpeed:(CGFloat) speed;
 ```
 
-#### Return Value
+## Return Value
 
 A new turbulence field node.
 
-#### Discussion
+## Discussion
 
 The acceleration’s magnitude is proportional to a body’s velocity.
 

@@ -24,15 +24,15 @@ typealias AURenderCallback = (UnsafeMutableRawPointer, UnsafeMutablePointer<Audi
 typedef int (*)(void *, enum AudioUnitRenderActionFlags *, const struct AudioTimeStamp *, unsigned int, unsigned int, struct AudioBufferList *) __attribute__((nonblocking)) AURenderCallback;
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 If you named your callback function `MyAURenderCallback`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 You can use this callback function with both the audio unit render notification API (see the [`AudioUnitAddRenderNotify(_:_:_:)`](./audiounitaddrendernotify%28_,_,_%29.md) function) and the render input callback (see the `kAudioUnitProperty_SetRenderCallback` property).
 

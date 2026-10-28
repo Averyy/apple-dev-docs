@@ -20,7 +20,7 @@ var supportedEffects: UInt32
 UInt32 supportedEffects;
 ```
 
-#### Discussion
+## Discussion
 
 This value can be a combination of one or more of the following values:
 

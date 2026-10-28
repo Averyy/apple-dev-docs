@@ -21,7 +21,7 @@ Generates an assertion if a given condition is false.
 #define NSAssert5(condition, desc, arg1, arg2, arg3, arg4, arg5)
 ```
 
-#### Discussion
+## Discussion
 
 The `NSAssert5` macro evaluates the condition and serves as a front end to the assertion handler.
 

@@ -25,7 +25,7 @@ static let file: ProgressKind
 extern NSProgressKind const NSProgressKindFile;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this value for the progress [`kind`](../progress/kind.md), set a value in the user info dictionary for the [`fileOperationKindKey`](../progressuserinfokey/fileoperationkindkey.md).
 

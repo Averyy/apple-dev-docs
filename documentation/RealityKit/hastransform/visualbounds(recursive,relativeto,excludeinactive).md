@@ -25,11 +25,11 @@ Computes a bounding box for the entity in the specified space, optionally includ
 
 - [Controlling the layout behavior of a reality view](../controlling-the-layout-behavior-of-a-realityview.md)
 
-#### Return Value
+## Return Value
 
 The bounding box.
 
-#### Discussion
+## Discussion
 
 The method has complexity `O(n)`, where `n` is the number of entities in the hierarchy.
 

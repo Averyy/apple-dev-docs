@@ -22,7 +22,7 @@ nonisolated
 func accessibilityAction<Label>(action: @escaping () -> Void, @ContentBuilder label: () -> Label) -> some View where Label : View
 ```
 
-#### Discussion
+## Discussion
 
 For example, this is how a custom action to compose a new email could be added to a view.
 

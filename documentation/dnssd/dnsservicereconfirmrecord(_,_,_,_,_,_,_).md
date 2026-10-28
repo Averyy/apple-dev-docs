@@ -25,7 +25,7 @@ func DNSServiceReconfirmRecord(_ flags: DNSServiceFlags, _ interfaceIndex: UInt3
 DNSServiceErrorType DNSServiceReconfirmRecord(DNSServiceFlags flags, uint32_t interfaceIndex, const char *fullname, uint16_t rrtype, uint16_t rrclass, uint16_t rdlen, const void *rdata);
 ```
 
-#### Discussion
+## Discussion
 
 Causes the record to be flushed from the daemon’s cache (as well as all other daemons’ caches on the network) if the record is determined to be invalid.
 

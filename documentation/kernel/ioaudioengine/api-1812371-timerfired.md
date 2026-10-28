@@ -11,7 +11,7 @@ Indicates the timer has fired.
 virtual void timerFired();
 ```
 
-#### Overview
+## Overview
 
 This method is called by timerCallback to indicate the timer has fired. This method calls performErase() and performFlush() to do erase head processing and audio engine flushing each time the timer event fires.
 

@@ -24,7 +24,7 @@ var graphs: [String : GKGraph] { get }
 @property (nonatomic, readonly) NSDictionary<NSString *,GKGraph *> * graphs;
 ```
 
-#### Discussion
+## Discussion
 
 When you define pathfinding graphs in the Xcode SpriteKit scene editor, Xcode automatically adds them to this array.
 

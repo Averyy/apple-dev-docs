@@ -23,7 +23,7 @@ var mask: UIView? { get set }
 @property (nonatomic, strong, nullable) UIView * maskView;
 ```
 
-#### Discussion
+## Discussion
 
 The view’s alpha channel determines how much of the view’s content and background shows through. Fully or partially opaque pixels allow the underlying content to show through but fully transparent pixels block that content.
 

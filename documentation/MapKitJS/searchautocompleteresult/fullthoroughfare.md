@@ -15,7 +15,7 @@ A combination of the thoroughfare and subthoroughfare.
 fullThoroughfare: string | null;
 ```
 
-#### Discussion
+## Discussion
 
 For example, depending on the search terms, an autocompletion result for the [`fullThoroughfare`](./fullthoroughfare.md) for Golden Gate Park in San Francisco, CA could be is `"1054 John F Kennedy Dr"`.
 

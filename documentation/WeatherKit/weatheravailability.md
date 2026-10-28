@@ -21,7 +21,7 @@ A structure that indicates the availability of data at the requested location.
 struct WeatherAvailability
 ```
 
-#### Overview
+## Overview
 
 `WeatherAvailability` represents the availability of data at the requested location. Weather alerts, or minute forecast data may be temporarily unavailable from the data provider, or unsupported in some regions. Other data sets are expected to be supported for all geographic locations, for example, current weather, and therefore are not included in `WeatherAvailability`.
 

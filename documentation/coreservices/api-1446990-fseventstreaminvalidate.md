@@ -18,7 +18,7 @@ func FSEventStreamInvalidate(_ streamRef: FSEventStreamRef)
 void FSEventStreamInvalidate(FSEventStreamRef streamRef);
 ```
 
-#### Discussion
+## Discussion
 
 Invalidates the stream, like CFRunLoopSourceInvalidate() does for a CFRunLoopSourceRef. It will be unscheduled from any runloops or dispatch queues upon which it had been scheduled.
 

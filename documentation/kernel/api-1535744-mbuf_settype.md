@@ -13,11 +13,11 @@
 errno_t mbuf_settype(mbuf_t mbuf, mbuf_type_t new_type);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Sets the type of mbuf.
 

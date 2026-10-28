@@ -25,7 +25,7 @@ var adImpressionIdentifier: String { get set }
 
 - [Generating the signature to validate view-through ads](../generating-the-signature-to-validate-view-through-ads.md)
 
-#### Discussion
+## Discussion
 
 Ad networks set the value of this property to a random value (nonce) at the time of the ad impression.
 

@@ -21,7 +21,7 @@ func createCredentialRegistrationRequest(challenge: Data, name: String, userID: 
 - (ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest *) createCredentialRegistrationRequestWithChallenge:(NSData *) challenge name:(NSString *) name userID:(NSData *) userID requestStyle:(ASAuthorizationPlatformPublicKeyCredentialRegistrationRequestStyle) requestStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Create a request to register a new platform credential.
 

@@ -24,11 +24,11 @@ func childObjects(of objectClass: AnyClass) -> [MDLObject]
 - (NSArray<MDLObject *> *) childObjectsOfClass:(Class) objectClass;
 ```
 
-#### Return Value
+## Return Value
 
 An array of objects of the specified type, or an empty array if no such objects exist.
 
-#### Discussion
+## Discussion
 
 This method searches the asset’s entire child object hierarchy to find all objects of the specified type contained in the asset.
 

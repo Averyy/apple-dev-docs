@@ -15,7 +15,7 @@ An asynchronous sequence of remote handle updates produced by this service.
 final var remoteHandleUpdates: some AsyncSequence<RCSService.RemoteHandleUpdate, Never> { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 Use a `for`-`await`-`in` loop to receive [`RCSService.RemoteHandleUpdate`](./remotehandleupdate.md) instances from this property.
 

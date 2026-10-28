@@ -17,7 +17,7 @@ An event that occurred, indicating an update to the available shared networks.
 struct NetworkEvent
 ```
 
-#### Overview
+## Overview
 
 A `NetworkEvent` provides a snapshot of the current shared network’s state, along with flags indicating system events that might require action from your app extension. Each event contains the complete list of networks currently shared with your accessory.
 

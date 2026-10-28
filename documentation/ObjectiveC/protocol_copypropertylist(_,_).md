@@ -25,11 +25,11 @@ func protocol_copyPropertyList(_ proto: Protocol, _ outCount: UnsafeMutablePoint
 extern objc_property_t*protocol_copyPropertyList(Protocol *proto, unsigned int *outCount);
 ```
 
-#### Return Value
+## Return Value
 
 A C array of pointers of type `objc_property_t` describing the properties declared by `proto`. Any properties declared by other protocols adopted by this protocol are not included. The array contains `*outCount` pointers followed by a `NULL` terminator. You must free the array with `free()`.
 
-#### Discussion
+## Discussion
 
 If the protocol declares no properties, `NULL` is returned and `*outCount` is `0`.
 

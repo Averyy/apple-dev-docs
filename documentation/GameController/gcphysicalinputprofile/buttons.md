@@ -24,7 +24,7 @@ var buttons: [String : GCControllerButtonInput] { get }
 @property (nonatomic, strong, readonly) NSDictionary<NSString *,GCControllerButtonInput *> * buttons;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`GCInputXboxPaddleOne`](../gcinputxboxpaddleone-offv.md) constant to get the P1 paddle button for an Xbox controller.
 

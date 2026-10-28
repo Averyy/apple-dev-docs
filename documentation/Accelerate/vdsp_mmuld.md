@@ -21,7 +21,7 @@ Performs an out-of-place multiplication of two double-precision real matrices.
 extern void vDSP_mmulD(const double *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, double *__C, vDSP_Stride __IC, vDSP_Length __M, vDSP_Length __N, vDSP_Length __P);
 ```
 
-#### Discussion
+## Discussion
 
 The following code multiplies the matrices `a` and `b`, and writes the result to matrix `c`:
 

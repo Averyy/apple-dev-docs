@@ -24,7 +24,7 @@ static let serviceUUIDs: CBConnectionEventMatchingOption
 extern CBConnectionEventMatchingOption const CBConnectionEventMatchingOptionServiceUUIDs;
 ```
 
-#### Discussion
+## Discussion
 
 A connected peer with any matching service UUIDs results in a call to [`centralManager(_:connectionEventDidOccur:for:)`](../cbcentralmanagerdelegate/centralmanager%28_,connectioneventdidoccur,for%29.md).
 

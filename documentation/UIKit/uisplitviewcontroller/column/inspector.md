@@ -21,7 +21,7 @@ case inspector
 UISplitViewControllerColumnInspector
 ```
 
-#### Overview
+## Overview
 
 By default, the split view controller hides the `inspector` column. To show the `inspector` column, call [`show(_:)`](../show%28_%29.md).
 

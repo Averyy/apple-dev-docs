@@ -25,11 +25,11 @@ func CTRunGetStringIndicesPtr(_ run: CTRun) -> UnsafePointer<CFIndex>?
 extern const CFIndex *CTRunGetStringIndicesPtr(CTRunRef run);
 ```
 
-#### Return Value
+## Return Value
 
 A valid pointer to an array of [`CFIndex`](../CoreFoundation/cfindex.md) structures, or `NULL`.
 
-#### Discussion
+## Discussion
 
 The indices are the character indices that originally spawned the glyphs that make up the run. They can be used to map the glyphs in the run back to the characters in the backing store. The string indices array will have a length equal to the value returned by [`CTRunGetGlyphCount(_:)`](./ctrungetglyphcount%28_%29.md). The caller should be prepared for this function to return `NULL` even if there are glyphs in the stream. If this function returns `NULL`, the caller must allocate its own buffer and call [`CTRunGetStringIndices(_:_:_:)`](./ctrungetstringindices%28_,_,_%29.md) to fetch the indices.
 

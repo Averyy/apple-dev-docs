@@ -18,7 +18,7 @@ A class you use to configure and control a URL filter.
 class NEURLFilterManager
 ```
 
-#### Overview
+## Overview
 
 The system performs URL filtering on your behalf according to your configuration and URL data set. The system filters all URL requests initiated with the [WebKit](../WebKit/WebKit.md) and [`URLSession`](../Foundation/urlsession.md) APIs.
 
@@ -85,7 +85,7 @@ Neither the Bloom filter nor PIR supports wildcards or regular expressions. For 
 
 Instances of this class are thread-safe.
 
-#### Configure the PIR server
+## Configure the PIR server
 
 URL filtering requires that your app’s information property list contain a top-level `NSPIRConfiguration` dictionary. The dictionary includes two keys:
 

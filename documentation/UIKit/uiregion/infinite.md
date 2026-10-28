@@ -23,7 +23,7 @@ class var infinite: UIRegion { get }
 @property (class, nonatomic, readonly) UIRegion * infiniteRegion;
 ```
 
-#### Return Value
+## Return Value
 
 A shared region object that encompasses an infinite area.
 

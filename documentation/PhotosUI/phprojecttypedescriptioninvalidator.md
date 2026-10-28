@@ -19,7 +19,7 @@ protocol PHProjectTypeDescriptionInvalidator : NSObjectProtocol
 @protocol PHProjectTypeDescriptionInvalidator <NSObject>
 ```
 
-#### Overview
+## Overview
 
 An object adheres to this protocol to implement custom behavior when you invalidate project information, such as type description and footer text.
 

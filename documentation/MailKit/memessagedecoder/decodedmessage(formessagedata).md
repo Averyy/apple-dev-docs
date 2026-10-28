@@ -20,11 +20,11 @@ func decodedMessage(forMessageData data: Data) -> MEDecodedMessage?
 - (MEDecodedMessage *) decodedMessageForMessageData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 An object that represents the decoded message, or `nil` if the message isn’t encrypted or signed.
 
-#### Discussion
+## Discussion
 
 When MailKit needs the original unencoded data for a message, it invokes this method and passes the raw MIME data for the message. If you determine that the message isn’t encoded and your extension doesn’t need to do anything, return `nil,` and MailKit decodes the message data normally.
 

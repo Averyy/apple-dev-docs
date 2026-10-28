@@ -25,7 +25,7 @@ class NLContextualEmbedding
 @interface NLContextualEmbedding : NSObject
 ```
 
-#### Overview
+## Overview
 
 `NLContextualEmbedding` provides a dense vector representation of natural language utterances using models trained with contextualized language understanding. Unlike static word embeddings provided by `NLEmbedding`, contextual embeddings dynamically adjust based on surrounding words, enabling deeper language comprehension.
 

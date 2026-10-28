@@ -20,7 +20,7 @@ Computes the transformation matrix at the specified time.
 func transform(at time: USDStage.TimeCode) -> USDValue.Matrix4d
 ```
 
-#### Return Value
+## Return Value
 
 The transformation matrix.
 

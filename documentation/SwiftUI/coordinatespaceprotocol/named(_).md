@@ -23,11 +23,11 @@ static func named(_ name: some Hashable) -> NamedCoordinateSpace
 
 Available when `Self` is `NamedCoordinateSpace`.
 
-#### Return Value
+## Return Value
 
 A named coordinate space identified by the given value.
 
-#### Discussion
+## Discussion
 
 Use the `coordinateSpace(_:)` modifier to assign a name to the local coordinate space of a  parent view. Child views can then refer to that coordinate space using `.named(_:)`.
 

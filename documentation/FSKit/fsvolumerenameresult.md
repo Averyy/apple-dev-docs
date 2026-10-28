@@ -19,7 +19,7 @@ class FSVolumeRenameResult
 @interface FSVolumeRenameResult : FSVolumeHandlerResult
 ```
 
-#### Overview
+## Overview
 
 Use this type in your implementation of [`setVolumeName(_:context:replyHandler:)`](./fsvolume/renamehandler/setvolumename%28_,context,replyhandler%29.md).
 

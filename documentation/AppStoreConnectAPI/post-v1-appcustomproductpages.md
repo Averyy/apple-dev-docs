@@ -9,9 +9,9 @@ Add a custom product page for your app.
 **Availability**:
 - App Store Connect API 1.7+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -24,7 +24,7 @@ func hasPerformanceProfile(_ performanceProfile: NSProcessPerformanceProfile) ->
 - (BOOL) hasPerformanceProfile:(NSProcessPerformanceProfile) performanceProfile;
 ```
 
-#### Return Value
+## Return Value
 
 True if the system is running under the given performance profile. If the profile isn’t [`sustained`](../../Metal/nsprocessperformanceprofile/sustained.md), the app might cause the device to throttle under a heavy workload.
 

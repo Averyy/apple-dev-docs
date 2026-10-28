@@ -21,7 +21,7 @@ A message the system sends when the system clock changes.
 struct SystemClockDidChangeMessage
 ```
 
-#### Overview
+## Overview
 
 Various events can initiate this message, such as a call to `settimeofday(_:_:)`, or if the person using the device changes values in Settings.
 

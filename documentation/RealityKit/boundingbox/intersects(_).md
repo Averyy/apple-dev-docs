@@ -20,7 +20,7 @@ Checks whether the bounding box intersects the specified bounds.
 func intersects(_ boundingBox: BoundingBox) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean that’s `true` if the box intersects the specified bounds.
 

@@ -19,7 +19,7 @@ class VZMultipleDirectoryShare
 @interface VZMultipleDirectoryShare : VZDirectoryShare
 ```
 
-#### Overview
+## Overview
 
 This directory share exposes multiple directories from the host file system to the guest VM.
 

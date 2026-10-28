@@ -21,11 +21,11 @@ Modifies the format style to use the specified sign display strategy for display
 func sign(strategy: IntegerFormatStyle<Value>.Configuration.SignDisplayStrategy) -> IntegerFormatStyle<Value>
 ```
 
-#### Return Value
+## Return Value
 
 An integer format style modified to use the specified sign display strategy.
 
-#### Discussion
+## Discussion
 
 The following example creates a default [`IntegerFormatStyle`](../integerformatstyle.md) for the `en_US` locale, and a second style that displays a sign for all values except zero. It then applies each style to an array of integers. The formatting that the modified style applies adds the negative (`-`) or positive (`+`) sign to all the numbers.
 

@@ -20,11 +20,11 @@ init(data: Data, options mask: XMLNode.Options = []) throws
 - (instancetype) initWithData:(NSData *) data options:(NSXMLNodeOptions) mask error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSXMLDocument` object, or  `nil` if initialization fails because of parsing errors or other reasons.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for the `NSXMLDocument` class.
 

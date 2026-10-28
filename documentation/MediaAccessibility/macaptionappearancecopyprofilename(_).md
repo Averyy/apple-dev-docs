@@ -22,11 +22,11 @@ func MACaptionAppearanceCopyProfileName(_ profileID: CFString) -> CFString
 extern CFStringRefMACaptionAppearanceCopyProfileName(CFStringRef profileID);
 ```
 
-#### Return Value
+## Return Value
 
 A human-readable name of the provided profileID
 
-#### Discussion
+## Discussion
 
 Copies the human-readable name of a profileID
 

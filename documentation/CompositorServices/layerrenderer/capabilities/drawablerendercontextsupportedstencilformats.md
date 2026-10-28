@@ -16,7 +16,7 @@ An array of metal pixel formats the layer renderer drawable supports with its re
 var drawableRenderContextSupportedStencilFormats: [MTLPixelFormat] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The pixel formats in this property tell you which [`MTLPixelFormat`](../../../Metal/mtlpixelformat.md) pixel arrangements and characteristics the layer supports for its stencil textures with the `RenderContext`.
 

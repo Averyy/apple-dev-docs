@@ -24,7 +24,7 @@ var isModified: Bool { get set }
 @property (nonatomic, getter=isModified) BOOL modified;
 ```
 
-#### Discussion
+## Discussion
 
 The value is true if you’ve modified the movie since you created it, saved it, or had its modified state cleared.
 

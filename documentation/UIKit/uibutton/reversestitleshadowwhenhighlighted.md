@@ -25,7 +25,7 @@ var reversesTitleShadowWhenHighlighted: Bool { get set }
 @property (nonatomic) BOOL reversesTitleShadowWhenHighlighted;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the shadow changes from engrave to emboss appearance when highlighted. The default value is [`false`](../../Swift/false.md).
 

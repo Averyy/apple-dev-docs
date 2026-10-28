@@ -20,7 +20,7 @@ typealias UCKeyCharSeq = UInt16
 typedef UInt16 UCKeyCharSeq;
 ```
 
-#### Discussion
+## Discussion
 
 The Unicode keyboard-layout ( `'uchr'`) resource contains the data necessary to map virtual key codes to Unicode character codes for a given keyboard layout. The `'uchr'` format consists of a header information section and five key mapping data sections. The `UCKeyCharSeq` type is a 16-bit value used in the third key mapping section of the `'uchr'` resource to specify the output of a dead-key state.
 

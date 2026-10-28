@@ -17,7 +17,7 @@ A fixed maximum number of steps per update is manually configured.
 static func fixed(steps: Int) -> ClothSimulationComponent.MaximumStepsPerUpdate
 ```
 
-#### Return Value
+## Return Value
 
 A fixed maximum-steps-per-update configuration.
 

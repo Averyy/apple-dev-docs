@@ -25,7 +25,7 @@ static let IES: SCNLight.LightType
 extern SCNLightType const SCNLightTypeIES;
 ```
 
-#### Discussion
+## Discussion
 
 The intensity of a photometric light varies in different directions from the light source, much like the illumination from a real-world light source. The position of the containing node determines the location of the light source, and the orientation of the node determines the relative directions specified by the photometric profile. Spotlight angle attributes do not apply to photometric lights.
 

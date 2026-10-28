@@ -41,7 +41,7 @@ protocol INMessagesDomainHandling : INSearchForMessagesIntentHandling, INSendMes
 @protocol INMessagesDomainHandling <INSendMessageIntentHandling, INSearchForMessagesIntentHandling>
 ```
 
-#### Overview
+## Overview
 
 The [`INMessagesDomainHandling`](./inmessagesdomainhandling.md) protocol is a convenience protocol that adopts all of the protocols used to handle message-related intents. When your app adopts all of the protocols associated with messages, you can adopt this one protocol instead of adopting the [`INSendMessageIntentHandling`](./insendmessageintenthandling.md), [`INSearchForMessagesIntentHandling`](./insearchformessagesintenthandling.md), and [`INSetMessageAttributeIntent`](./insetmessageattributeintent.md) protocols separately.
 

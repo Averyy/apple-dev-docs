@@ -5,7 +5,7 @@
 
 Manage workouts, workout sessions, and activity summaries.
 
-#### Overview
+## Overview
 
 A workout is a sample that contains data about an exercise or fitness activity. You save workout data using the [`HKWorkout`](./hkworkout.md) class. In many ways, workouts are identical to any other HealthKit sample—the same advice and APIs apply to both workouts and samples. However, workouts do have a number of unique features, described in [`HKWorkout`](./hkworkout.md).
 

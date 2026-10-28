@@ -37,7 +37,7 @@ var actionIdentifier: String { get }
 - [Declaring your actionable notification types](../declaring-your-actionable-notification-types.md)
 - [Handling notifications and notification-related actions](../handling-notifications-and-notification-related-actions.md)
 
-#### Discussion
+## Discussion
 
 This parameter may contain one the identifier of one of your [`UNNotificationAction`](../unnotificationaction.md) objects or it may contain a system-defined identifier. The system defined identifiers are [`UNNotificationDefaultActionIdentifier`](../unnotificationdefaultactionidentifier.md) and [`UNNotificationDismissActionIdentifier`](../unnotificationdismissactionidentifier.md), which indicate that the user opened the app or dismissed the notification without any further actions.
 

@@ -37,7 +37,7 @@ var identifier: String { get }
 - [Declaring your actionable notification types](../declaring-your-actionable-notification-types.md)
 - [Generating a remote notification](../generating-a-remote-notification.md)
 
-#### Discussion
+## Discussion
 
 Use this string to differentiate the different types of notifications that your app can send. To assign a category to a local notification, assign this string to the [`categoryIdentifier`](../unmutablenotificationcontent/categoryidentifier.md) property of the content object. To assign a category to a remote notification, use the string as the value of the `category` key in the notification payload `aps` dictionary.
 

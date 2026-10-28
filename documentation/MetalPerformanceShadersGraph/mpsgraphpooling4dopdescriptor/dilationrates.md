@@ -24,7 +24,7 @@ var dilationRates: [NSNumber] { get set }
 @property (nonatomic, copy, readwrite) NSArray<NSNumber *> * dilationRates;
 ```
 
-#### Discussion
+## Discussion
 
 Default value: `@[ @1, @1, @1, @1 ]`
 

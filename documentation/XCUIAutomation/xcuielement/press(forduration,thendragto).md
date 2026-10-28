@@ -25,7 +25,7 @@ func press(forDuration duration: TimeInterval, thenDragTo otherElement: XCUIElem
 - (void) pressForDuration:(NSTimeInterval) duration thenDragToElement:(XCUIElement *) otherElement;
 ```
 
-#### Discussion
+## Discussion
 
 This interaction is suitable for table-cell reordering and similar operations.
 

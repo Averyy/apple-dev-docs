@@ -14,7 +14,7 @@
 #define kUSBSerialNumberStringIndex
 ```
 
-#### Discussion
+## Discussion
 
 The field in the USB Device Descriptor corresponding to the index for the serial number's string
 

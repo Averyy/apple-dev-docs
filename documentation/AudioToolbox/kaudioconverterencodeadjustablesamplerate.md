@@ -24,7 +24,7 @@ var kAudioConverterEncodeAdjustableSampleRate: AudioConverterPropertyID { get }
 kAudioConverterEncodeAdjustableSampleRate
 ```
 
-#### Discussion
+## Discussion
 
 For encoding audio converters a) with a specified output sample rate of `0` and b) that are capable of performing sample rate conversion on the input data, this property provides a way to set output sample rate.
 

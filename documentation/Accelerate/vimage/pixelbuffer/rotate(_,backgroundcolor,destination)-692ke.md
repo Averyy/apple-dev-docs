@@ -23,7 +23,7 @@ func rotate(_ rotation: vImage.Rotation, backgroundColor: Pixel_ARGB_16U? = (0, 
 
 Available when `Format` is `vImage.Interleaved16Ux4`.
 
-#### Discussion
+## Discussion
 
 Use this function to either rotate an image by a multiple of 90° or by an angle, which you specify in degrees or radians.
 

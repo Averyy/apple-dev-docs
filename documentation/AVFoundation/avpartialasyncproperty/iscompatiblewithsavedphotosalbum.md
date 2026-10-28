@@ -21,7 +21,7 @@ static var isCompatibleWithSavedPhotosAlbum: AVAsyncProperty<Root, Bool> { get }
 
 Available when `Root` inherits `AVAsset`.
 
-#### Discussion
+## Discussion
 
 Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 

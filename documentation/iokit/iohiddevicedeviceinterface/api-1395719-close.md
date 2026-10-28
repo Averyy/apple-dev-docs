@@ -16,11 +16,11 @@ Closes the task's connection to the IOHIDDevice.
 IOReturn (*close)(void *self, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService.
 
-#### Discussion
+## Discussion
 
 Releases the client's access to the IOHIDDevice.
 

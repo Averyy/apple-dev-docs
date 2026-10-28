@@ -26,7 +26,7 @@ class PKIdentityAuthorizationController
 
 - [Requesting identity data from a Wallet pass](./requesting-identity-data-from-a-wallet-pass.md)
 
-#### Overview
+## Overview
 
 Use this class to request [`PKIdentityElement`](./pkidentityelement.md) objects from a mobile driver’s license or state identification card. When you request identity information, the system prompts the user for approval.
 

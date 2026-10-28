@@ -34,7 +34,7 @@ class SKProductsRequest
 - [Implementing promotional offers in your app](./implementing-promotional-offers-in-your-app.md)
 - [Testing a product request](./testing-a-product-request.md)
 
-#### Overview
+## Overview
 
 Your app uses an [`SKProductsRequest`](./skproductsrequest.md) object to present localized prices and other information to the user without having to maintain that list of product information itself.
 

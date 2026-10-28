@@ -15,7 +15,7 @@ RTFD formatted file contents.
 extern NSPasteboardType NSRTFDPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`rtfd`](./nspasteboard/pasteboardtype/rtfd.md) instead.
 

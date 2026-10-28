@@ -5,11 +5,11 @@
 
 Add a custom font to your app and use it in your app’s interface.
 
-#### Overview
+## Overview
 
 Your app isn’t limited to the custom fonts provided by iOS. If your company has its own branded font, for example, you can use it in your app. Add the font file that contains your font to your app bundle, then use your font the same way you use any of the iOS-provided custom fonts.
 
-##### Add the font file to your Xcode project
+### Add the font file to your Xcode project
 
 To add a font file to your Xcode project, select *File > Add Files to “Your Project Name”* from the menu bar, or drag the file from Finder and drop it into your Xcode project. You can add True Type Font (.ttf) and Open Type Font (.otf) files.
 
@@ -19,7 +19,7 @@ Also, make sure the font file is a target member of your app; otherwise, the pro
 
 ![A screenshot of the File Inspector showing that the selected font file is a member of the CustomFont target.](https://developer.apple.com/tutorials/images/com.apple.uikit/adding-a-custom-font-to-your-app-2@2x.png)
 
-##### Register your font file with iOS
+### Register your font file with iOS
 
 After adding the font file to your project, you need to let iOS know about the font. To do this, add the key “Fonts provided by application” to the information property list (the raw key name is `UIAppFonts`). Xcode creates an array value for the key; add the names of each font file as items of the array. Be sure to include the file extension as part of the name.
 
@@ -27,13 +27,13 @@ After adding the font file to your project, you need to let iOS know about the f
 
 Include each font file you add to your project in this array; otherwise, the font will not be available to your app.
 
-##### Use your custom font in Interface Builder
+### Use your custom font in Interface Builder
 
 After you add the font file to your Xcode project and its *Info.plist*, you can begin assigning the font to UI objects like [`UILabel`](./uilabel.md) and [`UITextField`](./uitextfield.md). If you’re using Interface Builder, assign the UI object’s *Font* setting to your custom font using the Attribute Inspector.
 
 ![Screenshot of Interface Builder showing that the font for the label is 'CustomFont 17.0.'](https://developer.apple.com/tutorials/images/com.apple.uikit/adding-a-custom-font-to-your-app-4@2x.png)
 
-##### Use your custom font in source code
+### Use your custom font in source code
 
 You can create an instance of your custom font in source code. To do this, you need to know the font name.  However, the name of the font isn’t always obvious, and rarely matches the font file name. A quick way to find the font name is to get the list of fonts available to your app, which you can do with the following code:
 

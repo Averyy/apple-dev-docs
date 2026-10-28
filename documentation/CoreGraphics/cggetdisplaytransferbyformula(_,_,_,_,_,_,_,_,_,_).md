@@ -20,11 +20,11 @@ func CGGetDisplayTransferByFormula(_ display: CGDirectDisplayID, _ redMin: Unsaf
 extern CGError CGGetDisplayTransferByFormula(CGDirectDisplayID display, CGGammaValue *redMin, CGGammaValue *redMax, CGGammaValue *redGamma, CGGammaValue *greenMin, CGGammaValue *greenMax, CGGammaValue *greenGamma, CGGammaValue *blueMin, CGGammaValue *blueMax, CGGammaValue *blueGamma);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. To interpret the result code, see [`CGError`](./cgerror.md).
 
-#### Discussion
+## Discussion
 
 For information about the gamma transfer formula, see the description of the function [`CGSetDisplayTransferByFormula(_:_:_:_:_:_:_:_:_:_:)`](./cgsetdisplaytransferbyformula%28_,_,_,_,_,_,_,_,_,_%29.md).
 

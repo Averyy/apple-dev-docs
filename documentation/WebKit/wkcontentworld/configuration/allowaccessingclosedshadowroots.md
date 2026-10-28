@@ -21,7 +21,7 @@ var allowAccessingClosedShadowRoots: Bool { get set }
 @property (nonatomic) BOOL allowAccessingClosedShadowRoots;
 ```
 
-#### Discussion
+## Discussion
 
 A boolean value indicating whether every shadow root should be treated as open mode shadow root or not.
 

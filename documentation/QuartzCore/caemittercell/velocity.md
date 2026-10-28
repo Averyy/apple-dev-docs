@@ -24,7 +24,7 @@ var velocity: CGFloat { get set }
 @property CGFloat velocity;
 ```
 
-#### Discussion
+## Discussion
 
 The velocity of the cell will vary by a random amount within the range specified by [`velocityRange`](./velocityrange.md).
 

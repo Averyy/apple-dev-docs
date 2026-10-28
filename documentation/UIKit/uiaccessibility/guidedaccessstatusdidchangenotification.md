@@ -24,7 +24,7 @@ static let guidedAccessStatusDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UIAccessibilityGuidedAccessStatusDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification doesn’t include a parameter. Observe this notification using the default notification center.
 

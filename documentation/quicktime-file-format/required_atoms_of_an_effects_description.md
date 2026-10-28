@@ -5,7 +5,7 @@
 
 Specify the required atoms for your effects description.
 
-#### Overview
+## Overview
 
 There are several required atoms that an effect description must contain. The first is the `kParameterWhatName` atom. The `kParameterWhatName` atom contains the name of the effect. This specifies which of the available effects to use.
 

@@ -27,7 +27,7 @@ UIGestureRecognizerStateCancelled
 
 - [About the Gesture Recognizer State Machine](../../about-the-gesture-recognizer-state-machine.md)
 
-#### Discussion
+## Discussion
 
 The gesture recognizer sends its action message (or messages) at the next cycle of the run loop and resets its state to [`UIGestureRecognizer.State.possible`](./possible.md).
 

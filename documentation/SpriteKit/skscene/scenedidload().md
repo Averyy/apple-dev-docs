@@ -29,7 +29,7 @@ func sceneDidLoad()
 
 - [Controlling User Interaction on Nodes](../controlling-user-interaction-on-nodes.md)
 
-#### Discussion
+## Discussion
 
 This method is intended to be overridden in a subclass. It is the preferred location to peform custom setup after the scene has been initialized or decoded.
 

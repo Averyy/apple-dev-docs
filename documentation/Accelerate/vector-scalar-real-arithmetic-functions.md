@@ -5,7 +5,7 @@
 
 Perform element-wise operations on combinations of vectors of real values and scalar values.
 
-#### Overview
+## Overview
 
 The vDSP library provides a suite of general-purpose, high-performance arithmetic functions that are alternatives to `for` loops and `map` when you apply operations on collections of floating-point values.
 

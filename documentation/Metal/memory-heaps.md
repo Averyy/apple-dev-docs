@@ -5,7 +5,7 @@
 
 Take control of your app’s GPU memory management by creating a large memory allocation for various buffers, textures, and other resources.
 
-#### Overview
+## Overview
 
 Use an [`MTLHeap`](./mtlheap.md) to quickly create and destroy GPU resources. Heaps can also help your apps save memory by aliasing portions of it in multiple places.
 

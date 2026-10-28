@@ -20,7 +20,7 @@ static let providerName: CMIOExtensionProperty
 extern CMIOExtensionProperty const CMIOExtensionPropertyProviderName;
 ```
 
-#### Discussion
+## Discussion
 
 The property state for this property is a string with a read-only attribute.
 

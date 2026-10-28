@@ -13,11 +13,11 @@
 errno_t ifnet_set_capabilities_enabled(ifnet_t interface, u_int32_t new_caps, u_int32_t mask);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Sets the interface capabilities to new_caps. This function lets you specify which capabilities you want to change using the mask. The kernel will effectively take the lock, then set the interface's flags to (if_capenable & ~mask) | (new_caps & mask).
 

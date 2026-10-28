@@ -20,7 +20,7 @@ func NSStringFromPoint(_ aPoint: NSPoint) -> String
 extern NSString *NSStringFromPoint(NSPoint aPoint);
 ```
 
-#### Return Value
+## Return Value
 
 A string of the form “{a, b}”, where a and b are the x and y coordinates of `aPoint`.
 

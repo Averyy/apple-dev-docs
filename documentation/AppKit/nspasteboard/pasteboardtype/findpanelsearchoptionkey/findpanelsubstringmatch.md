@@ -19,7 +19,7 @@ static let findPanelSubstringMatch: NSPasteboard.PasteboardType.FindPanelSearchO
 extern NSPasteboardTypeFindPanelSearchOptionKey NSFindPanelSubstringMatch;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../../../../Foundation/nsnumber.md) object containing one of the values defined in [`NSFindPanelSubstringMatchType`](../../../nsfindpanelsubstringmatchtype.md).
 

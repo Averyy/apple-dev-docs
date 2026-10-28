@@ -15,7 +15,7 @@ Gets the current stereo panning channels.
 void GetPanningChannels(IOUserVideoObjectPropertyElement *out_left_channel, IOUserVideoObjectPropertyElement *out_right_channel);
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to this value.
 

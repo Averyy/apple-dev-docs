@@ -19,7 +19,7 @@ class func estimated(_ estimatedDimension: CGFloat) -> Self
 + (instancetype) estimatedDimension:(CGFloat) estimatedDimension;
 ```
 
-#### Discussion
+## Discussion
 
 The final size of the dimension is determined when the content is rendered.
 

@@ -5,7 +5,7 @@
 
 Leverage the latest PencilKit features while providing a good user experience in earlier versions of the OS that don’t support those features.
 
-#### Overview
+## Overview
 
 In iPadOS 17, PencilKit becomes even more expressive by introducing the monoline, fountain pen, watercolor, and crayon inks. Earlier versions of the OS can’t render [`PKDrawing`](./pkdrawing-swift.struct.md) objects that use these inks because the system doesn’t contain a version of PencilKit that supports them. As a result, earlier versions of the OS throw an error when attempting to load a [`PKDrawing`](./pkdrawing-swift.struct.md) object that contains these inks from data.
 
@@ -14,7 +14,7 @@ You can handle this situation in your app in one of two ways:
 - Support backward compatibility. Let people use the new inks when your app runs in the latest version of the OS. Before you save a drawing and sync the data to other devices, check its required content version to determine if it uses the new inks. If it does, provide a good fallback experience for devices that can’t load that drawing, like syncing a fallback drawing that’s compatible with the earlier version of PencilKit.
 - Restrict the use of new features. Limit which inks are available when your app runs in any version of the OS. This approach ensures that the PencilKit data your app saves is compatible with the earlier version of PencilKit, but it doesn’t let people take advantage of the new inks.
 
-##### Support backward compatibility using the required content version
+### Support backward compatibility using the required content version
 
 To support backward compatibility, PencilKit introduces content versioning through [`PKContentVersion`](./pkcontentversion.md). Data model types like [`PKDrawing`](./pkdrawing-swift.struct.md), [`PKStroke`](./pkstroke-swift.struct.md), [`PKInkingTool`](./pkinkingtool-swift.struct.md), and [`PKInk`](./pkink-swift.struct.md) contain a [`requiredContentVersion`](./pkink-swift.struct/requiredcontentversion.md) property that PencilKit populates automatically. The value of this property indicates which version of PencilKit is required to load the underlying data:
 
@@ -46,7 +46,7 @@ func updateDrawing(_ drawing: PKDrawing, at index: Int) {
 }
 ```
 
-##### Limit available inks using the maximum supported content version
+### Limit available inks using the maximum supported content version
 
 If your app is unable to support backward compatibility for different versions of the OS, use the [`maximumSupportedContentVersion`](./pktoolpicker/maximumsupportedcontentversion.md) property to limit which inks are available in your app. This limitation ensures that the data your app saves is compatible with the earlier version of PencilKit so you can load it on devices with earlier versions of the OS.
 

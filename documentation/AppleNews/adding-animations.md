@@ -5,7 +5,7 @@
 
 Use animations to affect how parts of your article come into view the first time they appear.
 
-#### Overview
+## Overview
 
 **On this page, you’ll learn how to apply animations to components.**
 
@@ -17,7 +17,7 @@ The images below display some animations. In the first image, the pull quote get
 
 ![Side-by-side screenshots of an Apple News article on iPhone showing the effect of scrolling with a move-in animation.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3625690@2x.png)
 
-##### Create Animations
+### Create Animations
 
 1. Copy the example code [Scale Fade Animation: Copy This Code](./adding-animations.md#Scale-Fade-Animation-Copy-This-Code).
 2. Paste the code inside the `pullquote` component in your `article.json` file, after the closing quotation mark that ends the `text` property.
@@ -30,7 +30,7 @@ Your code should look like the example code [Animations: Result](./adding-animat
 
 After you make these changes in your code, you can preview your working `article.json` file in News Preview to see the animations.
 
-###### Scale Fade Animation: Copy This Code
+#### Scale Fade Animation: Copy This Code
 
 ```json
 ,
@@ -42,7 +42,7 @@ After you make these changes in your code, you can preview your working `article
               }
 ```
 
-###### Move-In Animation: Copy This Code
+#### Move-In Animation: Copy This Code
 
 ```json
           "animation": {
@@ -51,7 +51,7 @@ After you make these changes in your code, you can preview your working `article
           },
 ```
 
-###### Fade-In Animation: Copy This Code
+#### Fade-In Animation: Copy This Code
 
 ```json
 ,
@@ -62,7 +62,7 @@ After you make these changes in your code, you can preview your working `article
               }
 ```
 
-###### Animations: Result
+#### Animations: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -134,11 +134,11 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Previous
+### Previous
 
 [Adding Color to Text Ranges](./adding-color-to-text-ranges.md)
 
-##### Next
+### Next
 
 [Adding a Scene](./adding-a-scene.md)
 

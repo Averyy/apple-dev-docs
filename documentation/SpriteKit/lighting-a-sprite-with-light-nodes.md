@@ -5,7 +5,7 @@
 
 Add lighting and shadows to your scene with light nodes.
 
-#### Overview
+## Overview
 
 You can use a sprite’s lighting properties, [`lightingBitMask`](./skspritenode/lightingbitmask.md), [`shadowCastBitMask`](./skspritenode/shadowcastbitmask.md) and [`shadowedBitMask`](./skspritenode/shadowedbitmask.md), to apply effects such as illumination and shadow casting and receiving. These can be used in conjunction with normal mapping to simulate 3D lighting.
 

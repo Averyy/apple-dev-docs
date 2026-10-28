@@ -5,7 +5,7 @@
 
 Recreate the byte array for version 3 postbacks that win and don’t win attribution.
 
-#### Overview
+## Overview
 
 Check your postback’s version, and use the version-specific instructions to combine the parameters to validate the postback. The order of the parameters depends on the version of the postback you receive.
 
@@ -37,7 +37,7 @@ version + '\u2063' + ad-network-id + '\u2063' + campaign-id + '\u2063' + app-id 
 
 ```
 
-##### Receive the winning postback with attribution
+### Receive the winning postback with attribution
 
 The following JSON example shows a version 3 install-validation postback the device sends to an ad network that wins the attribution. This example contains all possible parameters and a valid signature:
 
@@ -57,7 +57,7 @@ The following JSON example shows a version 3 install-validation postback the dev
 }
 ```
 
-##### Receive a nonwinning postback, without attribution
+### Receive a nonwinning postback, without attribution
 
 In iOS 14.6 and later, ad networks that sign ads with version 3 may receive a postback for their qualifying ad impression that don’t win the attribution. Such postbacks have a `did-win` value of `false`, and don’t include `source-app-id` or `conversion-value`.
 

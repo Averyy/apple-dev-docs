@@ -22,7 +22,7 @@ A type that represents the words of a binary integer.
 struct Words
 ```
 
-#### Overview
+## Overview
 
 The `Words` type must conform to the `RandomAccessCollection` protocol with an `Element` type of `UInt` and `Index` type of `Int`.
 

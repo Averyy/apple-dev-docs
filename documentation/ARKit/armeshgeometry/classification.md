@@ -20,7 +20,7 @@ var classification: ARGeometrySource? { get }
 @property (nonatomic, strong, readonly, nullable) ARGeometrySource * classification;
 ```
 
-#### Discussion
+## Discussion
 
 Each element of the array ([`ARGeometrySource`](../argeometrysource.md)) is a classification that corresponds to one face in the geometry. The `count` of this property represents the number of faces in the geometry. The default value at each index is `0`, –– the raw value for [`ARMeshClassification.none`](../armeshclassification/none.md).
 

@@ -25,7 +25,7 @@ func makeArchive(url: URL) throws -> any MTL4Archive
 - (id<MTL4Archive>) newArchiveWithURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A [`MTL4Archive`](../mtl4archive.md) instance, or `nil` if the function failed.
 

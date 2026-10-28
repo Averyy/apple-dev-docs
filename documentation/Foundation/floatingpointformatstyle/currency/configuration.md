@@ -21,7 +21,7 @@ The type the format style uses for configuration settings.
 typealias Configuration = CurrencyFormatStyleConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 [`FloatingPointFormatStyle.Currency`](../currency.md) uses [`CurrencyFormatStyleConfiguration`](../../currencyformatstyleconfiguration.md) for its configuration type.
 

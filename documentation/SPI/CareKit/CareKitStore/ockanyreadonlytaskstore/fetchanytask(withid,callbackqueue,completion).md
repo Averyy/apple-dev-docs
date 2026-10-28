@@ -18,7 +18,7 @@ Asynchronously retrieve an array of tasks from the store using its user-defined 
 func fetchAnyTask(withID id: String, callbackQueue: DispatchQueue, completion: @escaping @Sendable (Result<OCKAnyTask, OCKStoreError>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 If a task with the specified identifier isn’t found, the completion handler receives an error.
 

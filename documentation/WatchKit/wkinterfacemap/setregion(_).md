@@ -19,7 +19,7 @@ func setRegion(_ coordinateRegion: MKCoordinateRegion)
 - (void) setRegion:(MKCoordinateRegion) coordinateRegion;
 ```
 
-#### Discussion
+## Discussion
 
 This method changes the currently visible region of the map. The method may adjust the map rectangle slightly to fit the available display space for the map. The adjusted region always includes the entire region you specified.
 

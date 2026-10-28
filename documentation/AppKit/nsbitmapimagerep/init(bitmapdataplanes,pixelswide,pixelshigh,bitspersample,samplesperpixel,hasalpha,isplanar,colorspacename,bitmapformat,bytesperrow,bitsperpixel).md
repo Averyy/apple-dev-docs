@@ -19,7 +19,7 @@ init?(bitmapDataPlanes planes: UnsafeMutablePointer<UnsafeMutablePointer<UInt8>?
 - (instancetype) initWithBitmapDataPlanes:(unsigned char **) planes pixelsWide:(NSInteger) width pixelsHigh:(NSInteger) height bitsPerSample:(NSInteger) bps samplesPerPixel:(NSInteger) spp hasAlpha:(BOOL) alpha isPlanar:(BOOL) isPlanar colorSpaceName:(NSColorSpaceName) colorSpaceName bitmapFormat:(NSBitmapFormat) bitmapFormat bytesPerRow:(NSInteger) rBytes bitsPerPixel:(NSInteger) pBits;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`NSBitmapImageRep`](../nsbitmapimagerep.md) object or `nil` if the object cannot be initialized.
 

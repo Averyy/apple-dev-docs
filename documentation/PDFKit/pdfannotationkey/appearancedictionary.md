@@ -24,7 +24,7 @@ static let appearanceDictionary: PDFAnnotationKey
 extern PDFAnnotationKey PDFAnnotationKeyAppearanceDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 PDFKit typically generates this property when saving a PDF document. If present, PDFKit uses the contents of the dictionary to render the annotation. PDFKit clears this value if either of the following occurs:
 

@@ -24,7 +24,7 @@ class MTL4CompilerTaskOptions
 @interface MTL4CompilerTaskOptions : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can configure task-specific settings that affect a compilation task by creating an instance of this class, setting its properties, and passing it to one of the applicable methods of an [`MTL4Compiler`](./mtl4compiler.md) instance.
 

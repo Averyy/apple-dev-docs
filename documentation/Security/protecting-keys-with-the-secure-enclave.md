@@ -5,7 +5,7 @@
 
 Create an extra layer of security for your private keys.
 
-#### Overview
+## Overview
 
 Keeping a private key in a keychain is a great way to secure it. The key data is encrypted on disk and accessible only to your app or the apps you authorize. However, to use the key, you must briefly copy a plain-text version of it into system memory. While this presents a reasonably small attack surface, there’s still the chance that if your app is compromised, the key could also become compromised. As an added layer of protection, you can protect a private key using the Secure Enclave.
 
@@ -21,7 +21,7 @@ The steps required to create a key pair with the Secure Enclave are similar to t
 
 > **Note**:  This article describes how to use the Security framework to access the Secure Enclave. To access it with [Apple CryptoKit](../CryptoKit/CryptoKit.md) instead, use that framework’s [`SecureEnclave`](../CryptoKit/secureenclave.md) enumeration.
 
-##### Specify access control
+### Specify access control
 
 You start by using an attribute dictionary to describe the key, but in this case, one of the attributes is an access control object. Use [`SecAccessControlCreateWithFlags(_:_:_:_:)`](./secaccesscontrolcreatewithflags%28_,_,_,_%29.md) to create a suitable object:
 
@@ -51,7 +51,7 @@ By specifying the [`privateKeyUsage`](./secaccesscontrolcreateflags/privatekeyus
 
 You could also combine the [`privateKeyUsage`](./secaccesscontrolcreateflags/privatekeyusage.md) flag with other flags to obtain additional protection for your key. For example, if you include the [`biometryAny`](./secaccesscontrolcreateflags/biometryany.md) flag, you instruct the system to make the key available only when the system can authenticate the user with Touch ID or Face ID (or a fallback passcode). See [`SecAccessControlCreateFlags`](./secaccesscontrolcreateflags.md) for the complete list of available flags.
 
-##### Assemble the attributes
+### Assemble the attributes
 
 Using the access control object, you then create an attribute dictionary:
 
@@ -91,7 +91,7 @@ The above attribute dictionary is structurally similar to the one described in [
 - The type and size attributes reflect that Secure Enclave only supports 256-bit elliptic curve keys.
 - The private key attribute dictionary includes the access control object generated in the previous step to indicate how the key can be used.
 
-##### Create a key pair
+### Create a key pair
 
 With the attributes dictionary in hand, you create the key pair just as you do outside the Secure Enclave, with a call to the [`SecKeyCreateRandomKey(_:_:)`](./seckeycreaterandomkey%28_,_%29.md) function:
 
@@ -119,7 +119,7 @@ if (!privateKey) {
 
 Notice that you still receive a reference to the private key object, even though it’s created by the Secure Enclave. The private key is logically part of the keychain, and you can later obtain a reference to it in the usual way. But the key data is encoded, and only the Secure Enclave can make use of the key.
 
-##### Use the secured key
+### Use the secured key
 
 In most respects, key management proceeds as usual. You rely on the [`SecKeyCopyPublicKey(_:)`](./seckeycopypublickey%28_%29.md) function to obtain the public key from the private key, as described in [Getting an Existing Key](./getting-an-existing-key.md). You handle and release errors in the usual way. And while Swift manages the memory for you, in Objective-C, after you’re done with any generated items, you release their memory:
 

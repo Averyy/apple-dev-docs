@@ -23,7 +23,7 @@ The subject pronoun form to apply when using this custom pronoun behavior.
 var subjectForm: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 In the English phrase “she reads,” the pronoun “she” exhibits the subject form.
 

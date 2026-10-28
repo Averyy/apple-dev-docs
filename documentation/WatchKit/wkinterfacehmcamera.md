@@ -19,7 +19,7 @@ class WKInterfaceHMCamera
 @interface WKInterfaceHMCamera : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 Do not subclass or create instances of this class yourself. Instead, define an outlet in your interface controller class and connect it to the corresponding object in your storyboard file. For example, to refer to a camera interface object in your interface, define a property with the following syntax in your interface controller class:
 

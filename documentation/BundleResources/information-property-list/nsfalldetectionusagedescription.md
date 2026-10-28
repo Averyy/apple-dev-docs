@@ -17,7 +17,7 @@ A message to the user that explains the app’s request for permission to access
 - **Name**: `NSFallDetectionUsageDescription` (Privacy - Fall Detection Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  If your app uses the [`CMFallDetectionManager`](../../CoreMotion/cmfalldetectionmanager.md), the app requires this key.
 

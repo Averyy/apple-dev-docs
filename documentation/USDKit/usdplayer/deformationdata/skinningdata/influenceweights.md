@@ -20,7 +20,7 @@ Influence weights (0.0–1.0) corresponding 1:1 with `influenceJointIndices`.
 let influenceWeights: [Float]
 ```
 
-#### Discussion
+## Discussion
 
 Weights for each vertex sum to 1.0.
 

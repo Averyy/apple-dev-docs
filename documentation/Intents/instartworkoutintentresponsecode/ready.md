@@ -27,7 +27,7 @@ INStartWorkoutIntentResponseCodeReady
 
 - [Confirming the Details of an Intent](../../SiriKit/confirming-the-details-of-an-intent.md)
 
-#### Discussion
+## Discussion
 
 During the confirmation phase of an intent, use this code to signal that your app is ready and able to act on the intent.
 

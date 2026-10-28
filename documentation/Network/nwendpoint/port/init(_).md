@@ -21,7 +21,7 @@ Initializes a port with a string.
 init?(_ service: String)
 ```
 
-#### Discussion
+## Discussion
 
 Port strings are expected to be numeric values between 0 and 65535. Initializing with any other string will fail.
 

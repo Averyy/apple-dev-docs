@@ -15,7 +15,7 @@ The attributes for a rule that you create.
 object GameCenterMatchmakingRuleCreateRequest.Data.Attributes
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for the `type` field are:
 

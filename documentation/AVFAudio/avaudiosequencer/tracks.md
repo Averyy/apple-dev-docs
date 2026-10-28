@@ -24,7 +24,7 @@ var tracks: [AVMusicTrack] { get }
 @property (nonatomic, readonly) NSArray<AVMusicTrack *> * tracks;
 ```
 
-#### Discussion
+## Discussion
 
 The track indices start at `0`, and don’t include the tempo track.
 

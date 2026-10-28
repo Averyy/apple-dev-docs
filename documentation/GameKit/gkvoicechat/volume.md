@@ -38,7 +38,7 @@ var volume: Float { get set }
 
 - [Adding voice chat to multiplayer games](../adding-voice-chat-to-multiplayer-games.md)
 
-#### Discussion
+## Discussion
 
 GameKit mixes voice data received from all other players and scales it by the `volume` property. The `volume` property has a range between `0.0` and `1.0`, inclusive. To mute the entire channel, set the volume to `0.0`. To play the voice data at full volume, set the volume to `1.0`. The default value is `1.0`.
 

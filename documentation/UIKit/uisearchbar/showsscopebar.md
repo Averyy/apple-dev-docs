@@ -23,7 +23,7 @@ var showsScopeBar: Bool { get set }
 @property (nonatomic) BOOL showsScopeBar;
 ```
 
-#### Discussion
+## Discussion
 
 If the search bar is owned by a [`UISearchController`](../uisearchcontroller.md), then setting this property implicitly sets the search controller’s [`automaticallyShowsScopeBar`](../uisearchcontroller/automaticallyshowsscopebar.md) property to [`false`](../../Swift/false.md).
 

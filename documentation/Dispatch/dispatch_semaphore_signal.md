@@ -21,11 +21,11 @@ Signals (increments) a semaphore.
 extern intptr_t dispatch_semaphore_signal(dispatch_semaphore_t dsema);
 ```
 
-#### Return Value
+## Return Value
 
 If the previous value was less than zero, this function wakes a process currently waiting.
 
-#### Discussion
+## Discussion
 
 Increment the counting semaphore. If the previous value was less than zero, this function wakes a thread currently waiting in [`dispatch_semaphore_wait`](./dispatch_semaphore_wait.md).
 

@@ -21,7 +21,7 @@ class NSOpenGLView
 @interface NSOpenGLView : NSView
 ```
 
-#### Overview
+## Overview
 
 An [`NSOpenGLView`](./nsopenglview.md) object maintains an [`NSOpenGLPixelFormat`](./nsopenglpixelformat.md) and [`NSOpenGLContext`](./nsopenglcontext.md) object into which OpenGL calls can be rendered. The view provides methods for accessing and managing the [`NSOpenGLPixelFormat`](./nsopenglpixelformat.md) and [`NSOpenGLContext`](./nsopenglcontext.md) objects, as well as notifications of visible region changes.
 

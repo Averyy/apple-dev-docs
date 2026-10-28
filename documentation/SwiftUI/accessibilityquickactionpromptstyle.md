@@ -15,7 +15,7 @@ A presentation style that displays a prompt to the user when the accessibility q
 struct AccessibilityQuickActionPromptStyle
 ```
 
-#### Overview
+## Overview
 
 Don’t use this type directly. Instead, use [`prompt`](./accessibilityquickactionstyle/prompt.md).
 

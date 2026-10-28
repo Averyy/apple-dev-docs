@@ -16,7 +16,7 @@ typedef struct IOUSBDeviceDescriptor {
 } IOUSBDeviceDescriptor;
 ```
 
-#### Overview
+## Overview
 
 Descriptor for a USB Device. See the USB Specification at [http://www.usb.org](http://www.usb.org).
 

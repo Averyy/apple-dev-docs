@@ -15,7 +15,7 @@ Tells the system whether the device supports being woken up when a specially for
 kern_return_t SetWakeOnMagicPacketSupport(bool isSupported);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 

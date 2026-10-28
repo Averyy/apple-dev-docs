@@ -22,7 +22,7 @@ var usePrecomputedFlow: Bool { get }
 @property (nonatomic, readonly) BOOL usePrecomputedFlow;
 ```
 
-#### Discussion
+## Discussion
 
 If `false` this configuration computes the optical flow on the fly.
 

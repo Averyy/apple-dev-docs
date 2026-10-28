@@ -24,11 +24,11 @@ func accessibilityScroll(_ direction: UIAccessibilityScrollDirection) -> Bool
 - (BOOL) accessibilityScroll:(UIAccessibilityScrollDirection) direction;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the scrolling action succeeds; otherwise, [`NO`](../no.md). By default, this method returns [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 Implement this method if a view in the view hierarchy supports a scroll by page action.
 

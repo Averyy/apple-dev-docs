@@ -22,7 +22,7 @@ var colorMaximumLinearExposure: CGFloat { get set }
 @property (nonatomic, assign) CGFloat colorMaximumLinearExposure;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is 1.0 which means only SDR colors can be picked.
 

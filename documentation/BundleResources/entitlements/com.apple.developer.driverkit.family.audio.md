@@ -16,7 +16,7 @@ A Boolean value that indicates whether the device supports audio functionality.
 - **Name**: `com.apple.developer.driverkit.family.audio`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Add this entitlement to the default entitlements file that Xcode creates for your driver project.
 

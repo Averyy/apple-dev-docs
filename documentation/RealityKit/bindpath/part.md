@@ -20,7 +20,7 @@ An individual piece of a larger path that refers to the target of an animation.
 enum Part
 ```
 
-#### Overview
+## Overview
 
 Path-based instances of [`bindTarget`](../animationdefinition/bindtarget.md), or those identified by the [`BindTarget.path(_:)`](../bindtarget/path%28_%29.md) call, consist of one or more components identified by these enumeration options.
 

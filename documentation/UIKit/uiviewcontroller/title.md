@@ -23,7 +23,7 @@ var title: String? { get set }
 @property (nonatomic, copy, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 Set the title to a human-readable string that describes the view. If the view controller has a valid navigation item or tab-bar item, assigning a value to this property updates the title text of those objects.
 

@@ -25,7 +25,7 @@ func addSharedObserver(_ observer: NSObject, forKey key: String, options: NSKeyV
 - (void) addSharedObserver:(NSObject *) observer forKey:(NSString *) key options:(NSKeyValueObservingOptions) options context:(void *) context;
 ```
 
-#### Discussion
+## Discussion
 
 This method works like `-[NSObject addObserver: forKey: options: context:]`, but observations on nested and computed properties are disallowed. Observers are not registered until `setSharedObservers` is called on the observable.
 

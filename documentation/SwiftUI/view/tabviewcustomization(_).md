@@ -20,7 +20,7 @@ nonisolated
 func tabViewCustomization(_ customization: Binding<TabViewCustomization>?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Only the [`sidebarAdaptable`](../tabviewstyle/sidebaradaptable.md) style supports supports customization. Specifying a non-nil [`TabViewCustomization`](../tabviewcustomization.md) object using this modifier enables customization.
 

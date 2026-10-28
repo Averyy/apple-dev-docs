@@ -20,7 +20,7 @@ Creates a new resource instance for a single solver using the given rig and an a
 convenience init(rig: IKRig) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: Validation errors for the given rig structure.
 

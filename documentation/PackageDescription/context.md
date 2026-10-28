@@ -15,7 +15,7 @@ The context information for a Swift package.
 struct Context
 ```
 
-#### Overview
+## Overview
 
 The context encapsulates states that are known when Swift Package Manager interprets the package manifest, for example the location in the file system where the current package resides.
 

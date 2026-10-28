@@ -20,7 +20,7 @@ The maximum number of instances this low-level instance data draws when set on a
 final var instanceCapacity: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 [`instanceCount`](./instancecount.md) must be less than or equal to the `instanceCapacity` determined on initialization.
 

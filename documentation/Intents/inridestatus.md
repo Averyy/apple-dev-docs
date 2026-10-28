@@ -28,7 +28,7 @@ class INRideStatus
 - [Providing Live Status Updates](../SiriKit/providing-live-status-updates.md)
 - [Handling an Intent](../SiriKit/handling-an-intent.md)
 
-#### Overview
+## Overview
 
 When the user books a ride or requests the status of a ride, you create an [`INRideStatus`](./inridestatus.md) object as part of your response and fill it with the relevant information. A ride status object conveys information about the current status of a ride, such as whether the ride is ongoing, completed, or has yet to occur. This object also contains details about the ride such as the pickup location, drop-off location, and information about the driver and vehicle. Siri and Maps display the information in this object to the user at appropriate times.
 

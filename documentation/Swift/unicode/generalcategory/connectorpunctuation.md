@@ -21,7 +21,7 @@ A connecting punctuation mark, like a tie.
 case connectorPunctuation
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Connector_Punctuation` (abbreviated `Pc`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

@@ -25,7 +25,7 @@ let kCLDistanceFilterNone: CLLocationDistance
 extern const CLLocationDistance kCLDistanceFilterNone;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant to specify that any change in location should trigger a new location update.
 

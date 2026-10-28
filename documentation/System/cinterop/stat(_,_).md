@@ -21,11 +21,11 @@ Calls the C `stat()` function.
 static func stat(_ path: UnsafePointer<CChar>, _ s: inout CInterop.Stat) -> Int32
 ```
 
-#### Return Value
+## Return Value
 
 0 on success, -1 on error (check `Errno.current`).
 
-#### Discussion
+## Discussion
 
 This is a direct wrapper around the C `stat()` system call. For a more ergonomic Swift API, use `Stat` instead.
 

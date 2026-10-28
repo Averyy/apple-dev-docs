@@ -21,7 +21,7 @@ An enumeration of behaviors to apply when merging attributes.
 enum AttributeMergePolicy
 ```
 
-#### Overview
+## Overview
 
 Use an [`AttributedString.AttributeMergePolicy`](./attributemergepolicy.md) when working with methods like [`mergeAttributes(_:mergePolicy:)`](./mergeattributes%28_,mergepolicy%29.md) to indicate how to resolve conflicts between multiple sets of attributes. When a source string and a merging attribute container both contain a given attribute with different values, the merge policy determines how to resolve the conflict.
 

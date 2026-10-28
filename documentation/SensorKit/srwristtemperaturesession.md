@@ -21,7 +21,7 @@ class SRWristTemperatureSession
 @interface SRWristTemperatureSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the [`startDate`](./srwristtemperaturesession/startdate.md) and [`duration`](./srwristtemperaturesession/duration.md) properties to get the range of time of the measurements. Use the [`temperatures`](./srwristtemperaturesession/temperatures-8bqrl.md) property to get the sequence of measurements.
 

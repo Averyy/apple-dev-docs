@@ -27,7 +27,7 @@ var domainIdentifier: String? { get set }
 
 - [Generating summary and priority data for indexed items](../generating-summary-and-priority-data-for-indexed-items.md)
 
-#### Discussion
+## Discussion
 
 Specify a domain identifier to group items together and make it easier to delete them from the index. For example, to delete a user activity, set this property on the [`contentAttributeSet`](../../Foundation/nsuseractivity/contentattributeset.md) property of the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object and then call [`deleteSearchableItems(withDomainIdentifiers:completionHandler:)`](../cssearchableindex/deletesearchableitems%28withdomainidentifiers,completionhandler%29.md) on your app’s index.
 

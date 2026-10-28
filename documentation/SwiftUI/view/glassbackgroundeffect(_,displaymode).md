@@ -16,11 +16,11 @@ nonisolated
 func glassBackgroundEffect<S>(_ effect: S, displayMode: GlassBackgroundDisplayMode = .always) -> some View where S : GlassBackgroundEffect
 ```
 
-#### Return Value
+## Return Value
 
 A view with a glass background.
 
-#### Discussion
+## Discussion
 
 Use this modifier to add a glass material that may include thickness, specularity, glass blur, shadows, and other effects. Because of its physical depth, the background influences z-axis layout. For different effect, the background may influences x-axis and y-axis layout.
 

@@ -25,11 +25,11 @@ var propertiesToFetch: [Any]? { get set }
 @property (nonatomic, copy, nullable) NSArray * propertiesToFetch;
 ```
 
-#### Discussion
+## Discussion
 
 Property descriptions can either be instances of [`NSPropertyDescription`](../nspropertydescription.md) or [`NSString`](../../Foundation/nsstring.md). The property descriptions may represent attributes, to-one relationships, or expressions. The name of an attribute or relationship description must match the name of a description on the fetch request’s entity.
 
-##### Special Considerations
+### Special Considerations
 
 You must set the entity for the fetch request before setting this value; otherwise, [`NSFetchRequest`](../nsfetchrequest.md) throws an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) exception.
 

@@ -19,7 +19,7 @@ var keyEquivalentWidth: CGFloat { get }
 @property (readonly) CGFloat keyEquivalentWidth;
 ```
 
-#### Discussion
+## Discussion
 
 To set the menu item’s key equivalent, use the [`keyEquivalent`](../nsmenuitem/keyequivalent.md) property of [`NSMenuItem`](../nsmenuitem.md).
 

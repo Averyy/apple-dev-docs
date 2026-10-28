@@ -19,11 +19,11 @@ Creates a new instance of this structure with a size value that best matches the
 static func closest(to size: CGSize) -> ImagePlaygroundOptions.SizeSpecification
 ```
 
-#### Return Value
+## Return Value
 
 A structure with a supported size that most closely matches the requested value in `size`.
 
-#### Discussion
+## Discussion
 
 This method finds the supported image size that’s closest to the value in the `size` parameter. The method considers both the resolution and aspect ratio of the requested size when choosing the output size.
 

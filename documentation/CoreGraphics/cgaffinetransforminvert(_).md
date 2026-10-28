@@ -25,11 +25,11 @@ func CGAffineTransformInvert(_ t: CGAffineTransform) -> CGAffineTransform
 extern CGAffineTransform CGAffineTransformInvert(CGAffineTransform t);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transformation matrix. If the affine transform passed in parameter `t` cannot be inverted, the affine transform is returned unchanged.
 
-#### Discussion
+## Discussion
 
 Inversion is generally used to provide reverse transformation of points within transformed objects. Given the coordinates (x,y), which have been transformed by a given matrix to new coordinates (x’,y’), transforming the coordinates (x’,y’) by the inverse matrix produces the original coordinates (x,y).
 

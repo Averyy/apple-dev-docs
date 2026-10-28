@@ -5,7 +5,7 @@
 
 Enable network access and write access to a shared group container.
 
-#### Overview
+## Overview
 
 Custom keyboards operate in a sandboxed environment running in an isolated process. This sandbox’s default configuration disallows access to the network and prevents writing to the containing app’s shared group containers (reading is permitted). Open access lets you do things like store keyboard configuration, perform more complex analysis on text the user typed, or provide advanced features that require server support.
 
@@ -13,7 +13,7 @@ By setting the [RequestsOpenAccess](https://developer.apple.com/library/archive/
 
 > ❗ **Important**:  Enabling open access shouldn’t be done lightly. Keyboards handle some of the most sensitive user data. See [Gain user trust](./configuring-open-access-for-a-custom-keyboard.md#Gain-user-trust) below.
 
-##### Determine whether you need open access
+### Determine whether you need open access
 
 Give careful consideration to whether you truly need open access. Although open access makes many things possible for a custom keyboard, it also increases your responsibilities. Consider the following lists describing the capabilities and privacy considerations with open access enabled or disabled.
 
@@ -40,7 +40,7 @@ However, with [RequestsOpenAccess](https://developer.apple.com/library/archive/d
 
 You can determine whether your keyboard has open access by using the [`hasFullAccess`](./uiinputviewcontroller/hasfullaccess.md) property on [`UIInputViewController`](./uiinputviewcontroller.md).
 
-##### Gain user trust
+### Gain user trust
 
 The following table describes areas that are especially important for establishing and maintaining user trust.
 

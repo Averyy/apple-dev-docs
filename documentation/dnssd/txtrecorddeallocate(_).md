@@ -25,7 +25,7 @@ func TXTRecordDeallocate(_ txtRecord: UnsafeMutablePointer<TXTRecordRef>!)
 void TXTRecordDeallocate(TXTRecordRef *txtRecord);
 ```
 
-#### Discussion
+## Discussion
 
 Releases any resources allocated in the course of preparing a TXT Record using TXTRecordCreate()/TXTRecordSetValue()/TXTRecordRemoveValue(). Ownership of the buffer provided in TXTRecordCreate() returns to the client.
 

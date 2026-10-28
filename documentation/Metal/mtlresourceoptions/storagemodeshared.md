@@ -24,7 +24,7 @@ static var storageModeShared: MTLResourceOptions { get }
 MTLResourceStorageModeShared
 ```
 
-#### Discussion
+## Discussion
 
 This is the default storage mode for [`MTLBuffer`](../mtlbuffer.md) instances on integrated GPUs and both [`MTLBuffer`](../mtlbuffer.md) and [`MTLTexture`](../mtltexture.md) instances on Apple silicon GPUs. On non-Apple family GPUs, the shared storage mode isn’t available for [`MTLTexture`](../mtltexture.md) instances.
 

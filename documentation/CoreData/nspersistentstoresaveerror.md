@@ -25,7 +25,7 @@ var NSPersistentStoreSaveError: Int { get }
 NSPersistentStoreSaveError
 ```
 
-#### Discussion
+## Discussion
 
 This code pertains to errors such as permissions problems.
 

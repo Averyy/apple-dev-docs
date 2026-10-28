@@ -5,7 +5,7 @@
 
 Provide a security mechanism for your implementation.
 
-#### Overview
+## Overview
 
 For more information on the attributes of a mechanism, see [RFC 5587](https://tools.ietf.org/html/rfc5587).
 

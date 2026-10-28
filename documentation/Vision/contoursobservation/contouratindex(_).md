@@ -21,7 +21,7 @@ Retrieves the contour object at the specified index, irrespective of hierarchy.
 func contourAtIndex(_ index: Int) -> ContoursObservation.Contour?
 ```
 
-#### Return Value
+## Return Value
 
 The contour object at the specified index, or `nil` if the index is invalid.
 

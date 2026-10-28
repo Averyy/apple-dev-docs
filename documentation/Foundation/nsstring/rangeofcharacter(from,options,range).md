@@ -25,11 +25,11 @@ func rangeOfCharacter(from searchSet: CharacterSet, options mask: NSString.Compa
 - (NSRange) rangeOfCharacterFromSet:(NSCharacterSet *) searchSet options:(NSStringCompareOptions) mask range:(NSRange) rangeOfReceiverToSearch;
 ```
 
-#### Return Value
+## Return Value
 
 The range in the receiver of the first character found from `aSet` within `aRange`. Returns a range of `{``NSNotFound``, 0}` if none of the characters in `aSet` are found.
 
-#### Discussion
+## Discussion
 
 This method does not perform any Unicode normalization on the receiver, so canonically equivalent forms will not be matched. For example, searching the string “strüdel”—containing the decomposed characters “`u`” (`U+0075 LATIN SMALL LETTER U`) and “`¨`” (`U+0308 COMBINING DIAERESIS`)—with a character set containing the precomposed character “`ü`” (`U+00FC LATIN SMALL LETTER U WITH DIAERESIS`) would return the range `{``NSNotFound``, 0}`, because none of the characters in the set are found.
 

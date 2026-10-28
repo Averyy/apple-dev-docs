@@ -19,7 +19,7 @@ The alpha threshold for clipping the stroke rendering for supported inks.
 var threshold: CGFloat { get }
 ```
 
-#### Discussion
+## Discussion
 
 Only pixels with an alpha greater than the threshold are drawn. A threshold of `0` has no effect on rendering; a threshold of `1` draws nothing. Thresholds apply only to some inks, such as `.reed`.
 

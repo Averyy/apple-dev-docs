@@ -25,7 +25,7 @@ var sources: [SCNGeometrySource] { get }
 @property (nonatomic, readonly) NSArray<SCNGeometrySource *> * geometrySources;
 ```
 
-#### Discussion
+## Discussion
 
 Each [`SCNGeometrySource`](../scngeometrysource.md) object describes an attribute of all vertices in the geometry (such as vertex position, surface normal vector, color, or texture mapping coordinates) identified by the source’s [`semantic`](../scngeometrysource/semantic-swift.property.md) property. A geometry always has at least one source (for the [`vertex`](../scngeometrysource/semantic-swift.struct/vertex.md) semantic), typically has additional sources for use in lighting and shading, and may have other sources for skeletal animation or surface subdivision information.
 

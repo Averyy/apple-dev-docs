@@ -5,13 +5,13 @@
 
 Define the record types, object classes, and event types that let your app interact with Final Cut Pro.
 
-#### Overview
+## Overview
 
 As the target application of a Final Cut Pro custom share destination, your app must respond to the Apple events that Final Cut Pro sends to get information about the kind of data your users want. (See [Responding to Apple Events from Final Cut Pro](./responding-to-apple-events-from-final-cut-pro.md).) Your app must also supply *scripting definitions* to define the Apple events along with their associated objects and record types. The tables in the following sections describe the definitions your app needs for its interactions with Final Cut Pro.
 
 > **Note**:  For an example of a complete scripting definition, see [Review a Scripting Definition Example: Asset Management Suite](./creating-scripting-definitions-for-custom-share-destinations.md#Review-a-Scripting-Definition-Example-Asset-Management-Suite).
 
-##### Define Record Types
+### Define Record Types
 
 `asset location—`Describes the location of the files associated with an object of a class asset. (See [Define Object Classes](./creating-scripting-definitions-for-custom-share-destinations.md#Define-Object-Classes).)
 
@@ -31,7 +31,7 @@ As the target application of a Final Cut Pro custom share destination, your app 
 | `has archive` | `boolean` | Set to `true` if the application requires a library archive as the exported output. |
 | `has library description` | `boolean` | Set to `true` if the application requires FCPXML as the exported output. |
 
-##### Define Object Classes
+### Define Object Classes
 
 `asset—`Represents an asset object that corresponds to the exported output from Final Cut Pro.
 
@@ -50,7 +50,7 @@ Your app needs only to return an object specifier with which Final Cut Pro can a
 
 When an asset object is not a document, handling an `Open` `Document` Apple event to associate files to an asset might be a bit awkward. Because Cocoa Scripting handles the `Open` `Document` Apple event, you need a custom document controller to override the behavior of Cocoa when your app opens a file and when it associates a file (based on matching the URL) with either an existing asset object or with a new asset object. You may need some customization to ensure that the files handled through the `Open` `Document` Apple event are properly associated to the asset object.
 
-##### Define Event Types
+### Define Event Types
 
 `make—`Creates a new asset object.
 
@@ -63,7 +63,7 @@ When an asset object is not a document, handling an `Open` `Document` Apple even
 
 > **Note**: Final Cut Pro doesn’t use the `at` and `with data` parameters itself, but they are inherited from the respective event definitions (or `make` event definitions) in the standard suite. They’re included here in case your app needs to support these parameters for other clients.
 
-##### Specify an Access Group for Your App
+### Specify an Access Group for Your App
 
 To enable access from a sandboxed application to the objects and events in your app, your app must specify `com.apple.assetmanagement.import` as the access group for:
 
@@ -73,7 +73,7 @@ To enable access from a sandboxed application to the objects and events in your 
 
 The [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164) describes how to use classes and categories to create scriptable apps (referred to as Cocoa scripting) in the Cocoa application framework.
 
-##### Review a Scripting Definition Example: Asset Management Suite
+### Review a Scripting Definition Example: Asset Management Suite
 
 An app that interacts with Final Cut Pro must support the events and object classes described in the previous tables. The following code shows a complete example of a scripting definition used by an asset-management app.
 

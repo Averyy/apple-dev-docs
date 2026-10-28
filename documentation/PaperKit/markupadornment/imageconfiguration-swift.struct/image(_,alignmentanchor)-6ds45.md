@@ -12,7 +12,7 @@ Creates an image configuration using a custom image.
 static func image(_ image: UIImage, alignmentAnchor: CGPoint = .zero) -> MarkupAdornment.ImageConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 An `ImageConfiguration` for the custom image.
 

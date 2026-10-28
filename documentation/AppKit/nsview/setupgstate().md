@@ -21,7 +21,7 @@ func setUpGState()
 - (void) setUpGState;
 ```
 
-#### Discussion
+## Discussion
 
 This method is automatically invoked when the graphics state object created using [`allocateGState()`](./allocategstate%28%29.md) needs to be initialized. The default implementation does nothing. Your subclass can override it to set the current font, line width, or any other graphics state parameter except coordinate transformations and the clipping path—these are established by the frame and bounds rectangles and by methods such as [`scaleUnitSquare(to:)`](./scaleunitsquare%28to%29.md) and [`translateOrigin(to:)`](./translateorigin%28to%29.md). Note that `drawRect:` can further transform the coordinate system and clipping path for whatever temporary effects it needs.
 

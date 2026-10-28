@@ -19,7 +19,7 @@ init(size: CGSize)
 - (instancetype) initWithSize:(CGSize) size;
 ```
 
-#### Discussion
+## Discussion
 
 The new text container must be added to an [`NSLayoutManager`](../nslayoutmanager.md) object before it can be used. The text container must also have an associated [`NSTextView`](../nstextview.md) object for text to be displayed. This method is the designated initializer for the `NSTextContainer` class.
 

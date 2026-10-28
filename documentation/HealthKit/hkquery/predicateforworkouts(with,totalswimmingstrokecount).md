@@ -26,11 +26,11 @@ class func predicateForWorkouts(with operatorType: NSComparisonPredicate.Operato
 + (NSPredicate *) predicateForWorkoutsWithOperatorType:(NSPredicateOperatorType) operatorType totalSwimmingStrokeCount:(HKQuantity *) totalSwimmingStrokeCount;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches workouts based on the number of strokes while swimming.
 
-#### Discussion
+## Discussion
 
 This convenience method creates a predicate that compares the number of swimming strokes during a workout with a target number. The following sample uses the convenience method and a predicate format string to create equivalent predicates.
 

@@ -23,7 +23,7 @@ func hasItemsConforming(toTypeIdentifiers typeIdentifiers: [String]) -> Bool
 - (BOOL) hasItemsConformingToTypeIdentifiers:(NSArray<NSString *> *) typeIdentifiers;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a drag item in the session conforms to any UTI in the specified array; otherwise, [`false`](../../Swift/false.md).
 

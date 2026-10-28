@@ -25,11 +25,11 @@ typealias CFArrayEqualCallBack = (UnsafeRawPointer?, UnsafeRawPointer?) -> Darwi
 typedef unsigned char (*)(const void *, const void *) CFArrayEqualCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `value1` and `value2` are equal, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This callback is passed to [`CFArrayCreate(_:_:_:_:)`](./cfarraycreate%28_,_,_,_%29.md) in a [`CFArrayCallBacks`](./cfarraycallbacks.md) structure.
 

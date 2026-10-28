@@ -16,11 +16,11 @@ Get bus generation number.
 IOReturn (*GetBusGeneration)(IOFireWireLibDeviceRef self, UInt32 *outGeneration);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if a valid bus generation has been returned in 'outGeneration'.
 
-#### Discussion
+## Discussion
 
 The bus generation number stays constant between bus resets and can be used in combination with a FireWire node ID to uniquely identify nodes on the bus. Pass the generation number to functions that take or return FireWire node IDs.
 

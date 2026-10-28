@@ -22,7 +22,7 @@ Constructs an asynchronous throwing stream from a given element-producing closur
 init(unfolding produce: @escaping @Sendable () async throws -> Element?) where Failure == any Error
 ```
 
-#### Discussion
+## Discussion
 
 Use this convenience initializer when you have an asynchronous function that can produce elements for the stream, and don’t want to invoke a continuation manually. This initializer “unfolds” your closure into a full-blown asynchronous stream. The created stream handles adherence to the `AsyncSequence` protocol automatically. To terminate the stream with an error, throw the error from your closure.
 

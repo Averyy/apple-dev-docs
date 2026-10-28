@@ -25,7 +25,7 @@ struct ProxyRepresentation<Item, ProxyRepresentation> where Item : Transferable,
 
 - [Choosing a transfer representation for a model type](./choosing-a-transfer-representation-for-a-model-type.md)
 
-#### Overview
+## Overview
 
 Use this representation to rely on an existing transfer representation that’s suitable for the type. For example,  a `Note` type might use the [`String`](../Swift/string.md) structure’s built-in [`Transferable`](./transferable.md) conformance — a plain text representation — so it can be pasted into any text editor:
 

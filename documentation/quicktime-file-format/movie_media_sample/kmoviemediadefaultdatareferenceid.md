@@ -6,7 +6,7 @@
 
 An identifier for the data reference to use when instantiating the embedded movie for this sample.
 
-#### Overview
+## Overview
 
 This atom contains a `QTAtomID` that indicates the ID of the data reference to use when instantiating the embedded movie for this sample. If this atom is not present, the data reference with an ID of `1` is used.
 

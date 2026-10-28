@@ -19,7 +19,7 @@ class ScreenSaverView
 @interface ScreenSaverView : NSView
 ```
 
-#### Overview
+## Overview
 
 [`ScreenSaverView`](./screensaverview.md) provides the interface for your screen saver, including the content you animate onscreen and an optional configuration sheet. Create your own custom subclass and add it to your screen saver bundle. Use your subclass to create the animations that you want to appear onscreen, and to specify additional animation details.
 

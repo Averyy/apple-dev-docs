@@ -17,7 +17,7 @@ A message that posts when the radio access technology changes for one of the ser
 struct RadioAccessTechnologyDidChangeMessage
 ```
 
-#### Overview
+## Overview
 
 Use the [`serviceIdentifier`](./radioaccesstechnologydidchangemessage/serviceidentifier.md) property  as the key in [`serviceCurrentRadioAccessTechnology`](./servicecurrentradioaccesstechnology.md) to get the value of the new radio access technology for the service.
 

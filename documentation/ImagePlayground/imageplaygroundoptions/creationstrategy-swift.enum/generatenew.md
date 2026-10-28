@@ -19,7 +19,7 @@ An option to create a brand new image, driven primarily by the specified concept
 case generateNew
 ```
 
-#### Discussion
+## Discussion
 
 This option provides the most reliable way to generate the image and apply prompts to it.
 

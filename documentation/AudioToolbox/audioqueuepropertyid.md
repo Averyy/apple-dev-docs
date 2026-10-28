@@ -24,7 +24,7 @@ typealias AudioQueuePropertyID = UInt32
 typedef UInt32 AudioQueuePropertyID;
 ```
 
-#### Discussion
+## Discussion
 
 To receive a notification that a specific audio queue property has changed:
 

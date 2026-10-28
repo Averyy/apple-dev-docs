@@ -21,7 +21,7 @@ string SubscriptionOfferMode
 - `PAY_UP_FRONT`: A constant that indicates a subscription offer is billed one time, up front.
 - `FREE_TRIAL`: A constant that indicates a subscription offer is a free trial.
 
-#### Discussion
+## Discussion
 
 ## See Also
 

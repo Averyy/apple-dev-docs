@@ -26,7 +26,7 @@ optional func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsC
 - (void) writingToolsCoordinator:(UIWritingToolsCoordinator *) writingToolsCoordinator requestsDecorationContainerViewForRange:(NSRange) range inContext:(UIWritingToolsCoordinatorContext *) context completion:(void (^)(UIView *)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 If your view uses multiple [`NSTextContainer`](../../nstextcontainer.md) objects to draw text in different regions, use this method to provide Writing Tools with the view to use for the specified range of text. After calling your delegate’s [`writingToolsCoordinator(_:requestsSingleContainerSubrangesOf:in:completion:)`](./writingtoolscoordinator%28_,requestssinglecontainersubrangesof,in,completion%29.md) method, Writing Tools calls this method for each subrange of text you provided. Find or provide a view situated visibly below the specified text in your text view. It’s also satisfactory to provide a view that’s visually in front of the text. Writing Tools uses the provided view to host any proofreading marks for the specified range of text.
 

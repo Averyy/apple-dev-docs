@@ -25,7 +25,7 @@ var has_position: Bool
 bool has_position;
 ```
 
-#### Discussion
+## Discussion
 
 When `false`, the `position` value should not be used.
 

@@ -9,7 +9,7 @@ Retrieve performance metrics for keywords.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Keyword performance reports return one row per keyword. Each row contains a `metadata` object with keyword identifiers (including `campaignId`, `adGroupId`, `text`, and `matchType`), `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`. Rows may also include an optional `insights` object whose `bidRecommendation` field surfaces a recommended bid for the keyword.
 
@@ -17,11 +17,11 @@ Filter by the required `campaignId` in the `filters` array, optionally narrowed 
 
 See [`Filter`](./filter.md) for the full set of supported comparison operators.
 
-#### Request Body
+## Request Body
 
 See [`AppsReportingRequest`](./appsreportingrequest.md).
 
-##### groupBy Dimensions
+### groupBy Dimensions
 
 `deviceClass`, `countryOrRegion`
 
@@ -44,13 +44,13 @@ Always filter keyword reports by the required `campaignId`, optionally narrowed 
 | --- | --- |
 | Filter by `campaignId` | Required to scope results and avoid retrieving all keywords across the account. |
 
-#### Payload Examples
+## Payload Examples
 
 **By Ad Group**:
 
 Retrieve daily keyword metrics for all keywords in a specific ad group.
 
-##### Request
+### Request
 
 Filters by `campaignId`, narrowed to a specific ad group with `adGroupId`, with no `groupBy` dimension, returning daily keyword metrics aggregated across all devices and countries for January 2025.
 
@@ -83,7 +83,7 @@ POST /v1/reports/apps/keywords/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -153,7 +153,7 @@ POST /v1/reports/apps/keywords/query
 
 Retrieve keyword metrics grouped by country to see which App Store countries or regions are driving installs for each keyword.
 
-##### Request
+### Request
 
 Filters by `campaignId`, narrowed to a specific ad group with `adGroupId`, and groups results by `countryOrRegion`, returning daily keyword metrics split by App Store country or region for January 2025.
 
@@ -189,7 +189,7 @@ POST /v1/reports/apps/keywords/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

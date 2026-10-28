@@ -21,7 +21,7 @@ Returns a vector that results from unapplying the specified projective transform
 static SPVector3D SPVector3DUnapplyProjectiveTransform(SPVector3D vector, SPProjectiveTransform3D transform);
 ```
 
-#### Return Value
+## Return Value
 
 The vector that results from unapplying the specified projective transform.
 

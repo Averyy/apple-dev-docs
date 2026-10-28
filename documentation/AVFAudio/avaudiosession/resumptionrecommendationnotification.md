@@ -28,7 +28,7 @@ extern NSNotificationName const AVAudioSessionResumptionRecommendationNotificati
 
 - [Handling audio interruptions](../handling-audio-interruptions.md)
 
-#### Discussion
+## Discussion
 
 The userInfo dictionary contains an [`AVAudioSession.ResumptionContext`](./resumptioncontext.md) object accessible via [`resumptionContextKey`](./resumptioncontextkey.md).
 

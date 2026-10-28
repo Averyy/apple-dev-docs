@@ -19,7 +19,7 @@ var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection { get set }
 @property NSUserInterfaceLayoutDirection userInterfaceLayoutDirection;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies the general user interface layout flow directions. For subclasses that have multiple visual components in a single cell instance, this property should specify the directionality or flow of components.
 

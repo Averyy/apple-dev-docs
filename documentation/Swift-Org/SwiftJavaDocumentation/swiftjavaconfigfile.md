@@ -10,25 +10,25 @@ framework: "Swift-Org/SwiftJavaDocumentation"
 
 SwiftJava tools can be configured using the `swift-java.config` file.
 
-#### Overview
+## Overview
 
 The `swift-java.config` file lives alongside each target that needs swift-java code generation. It selects tool modes, sets output paths, and controls per-mode filters. Below: the file layout, then the full list of supported keys.
 
-##### The swift-java.config file
+### The swift-java.config file
 
 You can refer to the `SwiftJavaConfigurationShared/Configuration` struct to learn about the supported options.
 
 Configuration from the config files may be overriden or augmented by explicit command line parameters, please refer to the options documentation for details on their behavior.
 
-##### Comments
+### Comments
 
 The configuration is a JSON 5 file, which among other things allows `//` and `/* */` comments, so feel free to add line comments explaining rationale for some of the settings in your configuration.
 
-##### Supported configuration options
+### Supported configuration options
 
-##### General
+### General
 
-###### logLevel
+#### logLevel
 
 - **Type:** `LogLevel?`
 
@@ -46,9 +46,9 @@ The minimum log level at which log messages will be printed at by swift-java.
 
 ---
 
-##### jextract
+### jextract
 
-###### javaPackage
+#### javaPackage
 
 - **Type:** `String?`
 
@@ -64,7 +64,7 @@ Example:
 
 ---
 
-###### swiftModule
+#### swiftModule
 
 - **Type:** `String?`
 
@@ -72,7 +72,7 @@ The name of the Swift module into which the resulting Swift types will be genera
 
 ---
 
-###### nativeLibraryName
+#### nativeLibraryName
 
 - **Type:** `String?`
 
@@ -80,7 +80,7 @@ The name of the native library to load at runtime via `System.loadLibrary()`. De
 
 ---
 
-###### overrideStaticBlockLibraryLoading
+#### overrideStaticBlockLibraryLoading
 
 - **Type:** `[String]?`
 
@@ -90,7 +90,7 @@ When `nil` (the default), the standard loading calls are emitted. When set to an
 
 ---
 
-###### inputSwiftDirectory
+#### inputSwiftDirectory
 
 - **Type:** `String?`
 
@@ -98,7 +98,7 @@ Directory containing Swift files which should be extracted into Java bindings (j
 
 ---
 
-###### outputSwiftDirectory
+#### outputSwiftDirectory
 
 - **Type:** `String?`
 
@@ -106,7 +106,7 @@ The directory where generated Swift files should be written. Generally used with
 
 ---
 
-###### outputJavaDirectory
+#### outputJavaDirectory
 
 - **Type:** `String?`
 
@@ -114,7 +114,7 @@ The directory where generated Java files should be written. Generally used with 
 
 ---
 
-###### maxVariadicOverloads
+#### maxVariadicOverloads
 
 - **Type:** `Int?`
 - **Default:** `3`
@@ -140,7 +140,7 @@ The reason for this is that Swift cannot “splat” an array into a `...` param
 
 ---
 
-###### mode
+#### mode
 
 - **Type:** `JExtractGenerationMode?`
 - **Default:** `ffm`
@@ -154,7 +154,7 @@ Determine `jextract` source generation mode, using JNI or FFM.
 
 ---
 
-###### writeEmptyFiles
+#### writeEmptyFiles
 
 - **Type:** `Bool?`
 - **Default:** `false`
@@ -163,7 +163,7 @@ Some build systems require an output to be present when it was “expected”, e
 
 ---
 
-###### minimumInputAccessLevelMode
+#### minimumInputAccessLevelMode
 
 - **Type:** `AccessLevelMode?`
 - **Default:** `public`
@@ -178,7 +178,7 @@ The lowest access level of Swift declarations that should be extracted, defaults
 
 ---
 
-###### memoryManagementMode
+#### memoryManagementMode
 
 - **Type:** `JExtractMemoryManagementMode?`
 - **Default:** `explicit`
@@ -192,7 +192,7 @@ The memory management mode to use for the generated code. By default, the user m
 
 ---
 
-###### asyncFuncMode
+#### asyncFuncMode
 
 - **Type:** `JExtractAsyncFuncMode?`
 - **Default:** `completableFuture`
@@ -206,7 +206,7 @@ The mode to use for extracting asynchronous Swift functions. By default async me
 
 ---
 
-###### javaSourceLevel
+#### javaSourceLevel
 
 - **Type:** `JavaSourceLevel?`
 - **Default:** `22`
@@ -224,7 +224,7 @@ The Java source level to target when generating Java code.
 
 ---
 
-###### enableJavaCallbacks
+#### enableJavaCallbacks
 
 - **Type:** `Bool?`
 - **Default:** `false`
@@ -233,7 +233,7 @@ By enabling this mode, JExtract will generate Java code that allows you to imple
 
 ---
 
-###### generatedJavaSourcesListFileOutput
+#### generatedJavaSourcesListFileOutput
 
 - **Type:** `String?`
 
@@ -241,7 +241,7 @@ If specified, JExtract will output to this file a list of paths to all generated
 
 ---
 
-###### singleType
+#### singleType
 
 - **Type:** `String?`
 
@@ -249,7 +249,7 @@ If set, only generate bindings for this single Swift type name
 
 ---
 
-###### linkerExportListOutput
+#### linkerExportListOutput
 
 - **Type:** `String?`
 
@@ -257,7 +257,7 @@ If set, JExtract (JNI mode) will write a linker version script to this path, lis
 
 ---
 
-###### swiftFilterInclude
+#### swiftFilterInclude
 
 - **Type:** `[String]?`
 
@@ -273,7 +273,7 @@ Plain names (no separator) match both: a filename without `.swift`, or the top-l
 
 ---
 
-###### swiftFilterExclude
+#### swiftFilterExclude
 
 - **Type:** `[String]?`
 
@@ -281,7 +281,7 @@ Exclude Swift source files or types matching these patterns during jextract. Sam
 
 ---
 
-###### importedModuleStubs
+#### importedModuleStubs
 
 - **Type:** `[String: [String]]?`
 
@@ -302,7 +302,7 @@ Example:
 
 ---
 
-###### specialize
+#### specialize
 
 - **Type:** `[String: SpecializationConfigEntry]?`
 
@@ -358,7 +358,7 @@ Configuration entry for specializing a generic type into a concrete Java class. 
 
 ---
 
-###### staticBuildConfigurationFile
+#### staticBuildConfigurationFile
 
 - **Type:** `String?`
 
@@ -401,9 +401,9 @@ The configuration option is a path with a file generated like above, which will 
 
 ---
 
-##### wrap-java
+### wrap-java
 
-###### classpath
+#### classpath
 
 - **Type:** `String?`
 
@@ -411,7 +411,7 @@ The Java class path that should be passed along to the swift-java tool.
 
 ---
 
-###### classes
+#### classes
 
 - **Type:** `[String: String]?`
 - **Default:** empty dictionary (`[:]`)
@@ -431,7 +431,7 @@ Example:
 
 ---
 
-###### extendClasses
+#### extendClasses
 
 - **Type:** `[JavaFullyQualifiedTypeName]?`
 
@@ -439,7 +439,7 @@ Java classes whose Swift wrapper type is owned by another module, but which this
 
 ---
 
-###### sourceCompatibility
+#### sourceCompatibility
 
 - **Type:** `JavaVersion?`
 
@@ -456,7 +456,7 @@ Compile for the specified Java SE release.
 
 ---
 
-###### targetCompatibility
+#### targetCompatibility
 
 - **Type:** `JavaVersion?`
 
@@ -473,7 +473,7 @@ Generate class files suitable for the specified Java SE release.
 
 ---
 
-###### javaFilterInclude
+#### javaFilterInclude
 
 - **Type:** `[String]?`
 
@@ -481,7 +481,7 @@ Filter input Java types by their package prefix if set
 
 ---
 
-###### javaFilterExclude
+#### javaFilterExclude
 
 - **Type:** `[String]?`
 
@@ -489,7 +489,7 @@ Exclude input Java types by their package prefix or exact match
 
 ---
 
-###### singleSwiftFileOutput
+#### singleSwiftFileOutput
 
 - **Type:** `String?`
 
@@ -497,9 +497,9 @@ If set, place all generated code in this single Swift file instead of one file p
 
 ---
 
-##### dependencies
+### dependencies
 
-###### dependencies
+#### dependencies
 
 - **Type:** `[JavaDependencyDescriptor]?`
 
@@ -527,7 +527,7 @@ Example:
 
 ---
 
-###### mavenRepositories
+#### mavenRepositories
 
 - **Type:** `[MavenRepositoryDescriptor]?`
 

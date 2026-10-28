@@ -23,7 +23,7 @@ enum NEFilterAction
 enum NEFilterAction : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The control provider receives a filter report when the data provider issues a verdict with the [`shouldReport`](./nefilterverdict/shouldreport.md) property set to [`true`](../Swift/true.md). The report contains an [`action`](./nefilterreport/action.md) property set to one of the values listed here.
 

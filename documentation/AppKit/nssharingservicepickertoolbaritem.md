@@ -22,7 +22,7 @@ class NSSharingServicePickerToolbarItem
 @interface NSSharingServicePickerToolbarItem : NSToolbarItem
 ```
 
-#### Overview
+## Overview
 
 An [`NSSharingServicePickerToolbarItem`](./nssharingservicepickertoolbaritem.md) object is a standard item you add to your window’s toolbar. When someone clicks it, the item displays the macOS share sheet. Use this item to share the selected or focal content from the current window. For example, you might share the photo someone is viewing, the currently selected text, or the window’s associated document.
 

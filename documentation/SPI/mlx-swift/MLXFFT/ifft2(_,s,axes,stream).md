@@ -19,11 +19,11 @@ Two dimensional inverse discrete Fourier Transform.
 func ifft2(_ array: MLXArray, s: [Int]? = nil, axes: [Int]? = [-2, -1], stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Inverse DFT of the input along the given axes
 
-##### See Also
+### See Also
 
 - [MLXFFT](./MLXFFT.md)
 

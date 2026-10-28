@@ -19,7 +19,7 @@ var bottomAnchor: NSLayoutYAxisAnchor { get }
 @property (strong, readonly) NSLayoutYAxisAnchor * bottomAnchor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this anchor to create constraints with the view’s bottom edge. You can only combine this anchor with other [`NSLayoutYAxisAnchor`](../../UIKit/nslayoutyaxisanchor.md) anchors. For more information, see [`NSLayoutAnchor`](../../UIKit/nslayoutanchor.md).
 

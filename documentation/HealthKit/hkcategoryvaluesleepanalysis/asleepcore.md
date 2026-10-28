@@ -24,7 +24,7 @@ case asleepCore
 HKCategoryValueSleepAnalysisAsleepCore
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to stage N2 of the American Academy of Sleep Medicine’s scoring model. Stage N2 is also referred to as light or intermediate sleep. It accounts for a major part of the time spent asleep. The [`HKCategoryValueSleepAnalysis.asleepCore`](./asleepcore.md) value also includes stage N1, which makes up only a small portion of the night.
 

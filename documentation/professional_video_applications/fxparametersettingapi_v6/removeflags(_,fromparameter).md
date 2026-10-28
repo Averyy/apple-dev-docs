@@ -20,11 +20,11 @@ func removeFlags(_ flags: FxParameterFlags, fromParameter parameterID: UInt32) -
 - (BOOL) removeFlags:(FxParameterFlags) flags fromParameter:(UInt32) parameterID;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the method successfully removes the flags; otherwise, `NO`.
 
-#### Discussion
+## Discussion
 
 Use this method to remove one or more parameter flags without changing the value of other flags.
 

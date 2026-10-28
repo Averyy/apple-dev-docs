@@ -24,7 +24,7 @@ nonisolated
 func alert(isPresented: Binding<Bool>, content: () -> Alert) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you need to show an alert to the user. The example below displays an alert that is shown when the user toggles a Boolean value that controls the presentation of the alert:
 

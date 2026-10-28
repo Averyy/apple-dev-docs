@@ -18,7 +18,7 @@ Container type used for storing and retrieving app specific information that can
 associatedtype AppContext : Decodable, Encodable, Sendable = Never
 ```
 
-#### Discussion
+## Discussion
 
 Default Value: `Never`
 

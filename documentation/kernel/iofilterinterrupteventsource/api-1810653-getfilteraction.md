@@ -11,7 +11,7 @@ Get'ter for filterAction variable.
 virtual Filter getFilterAction() const;
 ```
 
-#### Return Value
+## Return Value
 
 value of filterAction.
 

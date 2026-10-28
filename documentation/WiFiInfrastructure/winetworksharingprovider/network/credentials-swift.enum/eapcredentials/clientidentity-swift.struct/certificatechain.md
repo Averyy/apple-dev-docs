@@ -17,7 +17,7 @@ The certificate chain of the client.
 let certificateChain: [Data]
 ```
 
-#### Discussion
+## Discussion
 
 An array of DER encoded X.509 Intermediate and Root certificates.
 

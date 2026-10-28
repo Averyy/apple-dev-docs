@@ -21,7 +21,7 @@ typealias ABAddressBookRequestAccessCompletionHandler = (Bool, CFError?) -> Void
 typedef void (^)(_Bool, struct __CFError *) ABAddressBookRequestAccessCompletionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Address book request access completion handler blocks are used with [`ABAddressBookCreateWithOptions(_:_:)`](./abaddressbookcreatewithoptions%28_,_%29.md). If you had a view controller that wanted to display the count of users with the name “Smith” in the address book, you might implement something like the code shown in the following code listing.
 

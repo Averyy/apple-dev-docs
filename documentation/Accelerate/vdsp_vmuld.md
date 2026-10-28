@@ -21,7 +21,7 @@ Calculates the double-precision element-wise product of two vectors, using the s
 extern void vDSP_vmulD(const double *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the products of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`, as follows:
 

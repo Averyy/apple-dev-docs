@@ -20,7 +20,7 @@ func acquireDevice() throws
 - (BOOL) acquireDeviceWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Before invoking this method, the racing wheel doesn’t deliver events to your app. Since only one app may receive racing wheel events at a time, this method can fail to acquire the device.
 

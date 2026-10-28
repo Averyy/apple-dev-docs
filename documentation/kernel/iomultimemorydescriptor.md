@@ -15,7 +15,7 @@ The IOMultiMemoryDescriptor object describes a memory area made up of several ot
 class IOMultiMemoryDescriptor : IOMemoryDescriptor
 ```
 
-#### Overview
+## Overview
 
 The IOMultiMemoryDescriptor object represents multiple ranges of memory, specified as an ordered list of IOMemoryDescriptors. The descriptors are chained end-to-end to make up a single contiguous buffer.
 

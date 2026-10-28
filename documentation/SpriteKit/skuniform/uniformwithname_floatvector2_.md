@@ -18,7 +18,7 @@ Creates and initializes a new uniform object that holds a vector of two floating
 + (instancetype) uniformWithName:(NSString *) name floatVector2:(GLKVector2) value;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized uniform object whose type is set to [`SKUniformType.floatVector2`](../skuniformtype/floatvector2.md).
 

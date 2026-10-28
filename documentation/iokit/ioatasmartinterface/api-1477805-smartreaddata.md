@@ -16,7 +16,7 @@ Retrieves 512 byte device SMART data structure.
 IOReturn (*SMARTReadData)(void *interface, ATASMARTData *data);
 ```
 
-#### Discussion
+## Discussion
 
 See section 8.54.5 of ATA/ATAPI-6. Will return an appropiate error if command can not be completed.
 

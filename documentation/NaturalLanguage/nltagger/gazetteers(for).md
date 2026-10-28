@@ -25,7 +25,7 @@ func gazetteers(for tagScheme: NLTagScheme) -> [NLGazetteer]
 - (NSArray<NLGazetteer *> *) gazetteersForTagScheme:(NLTagScheme) tagScheme;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NLGazetteer`](../nlgazetteer.md).
 

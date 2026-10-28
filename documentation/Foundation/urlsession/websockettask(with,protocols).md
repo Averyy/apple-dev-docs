@@ -25,7 +25,7 @@ func webSocketTask(with url: URL, protocols: [String]) -> URLSessionWebSocketTas
 - (NSURLSessionWebSocketTask *) webSocketTaskWithURL:(NSURL *) url protocols:(NSArray<NSString *> *) protocols;
 ```
 
-#### Discussion
+## Discussion
 
 During the WebSocket handshake, the task uses the provided protocols to negotiate a preferred protocol with the server.
 

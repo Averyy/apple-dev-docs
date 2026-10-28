@@ -19,7 +19,7 @@ Returns a raw data representation of the rendered content.
 func dataRepresentation() -> Data
 ```
 
-#### Return Value
+## Return Value
 
 A new [`NSData`](../../Foundation/nsdata.md) object that contains the entire contents of the drawing.
 

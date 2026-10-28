@@ -23,7 +23,7 @@ var extendedLayoutIncludesOpaqueBars: Bool { get set }
 @property (nonatomic, assign) BOOL extendedLayoutIncludesOpaqueBars;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md).
 

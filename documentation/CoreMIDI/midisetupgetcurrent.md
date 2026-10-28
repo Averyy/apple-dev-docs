@@ -15,11 +15,11 @@ Returns the system’s current MIDISetup.
 extern OSStatus MIDISetupGetCurrent(MIDISetupRef *outSetup);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code.
 
-#### Discussion
+## Discussion
 
 As of CoreMIDI 1.1, it is usually not necessary to call this function, as CoreMIDI manages a single persistent MIDISetup itself.
 

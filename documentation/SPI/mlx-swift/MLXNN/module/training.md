@@ -17,7 +17,7 @@ Flag to indicate whether the module is being trained.  Manipulated via [`train(_
 var training: Bool { get }
 ```
 
-##### See Also
+### See Also
 
 - [`didSetTrain(_:)`](./didsettrain%28_%29.md)
 

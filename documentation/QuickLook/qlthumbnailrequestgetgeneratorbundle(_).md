@@ -21,11 +21,11 @@ func QLThumbnailRequestGetGeneratorBundle(_ thumbnail: QLThumbnailRequest!) -> U
 extern CFBundleRefQLThumbnailRequestGetGeneratorBundle(QLThumbnailRequestRef thumbnail);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the bundle object representing the generator’s bundle.
 
-#### Discussion
+## Discussion
 
 Thread-safety: This function should be called in the same thread as the thumbnail request is made in; generally, this is the same thread in which the `GenerateThumbnailForURL` callback was invoked.
 

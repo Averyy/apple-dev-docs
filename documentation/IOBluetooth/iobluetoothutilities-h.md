@@ -5,7 +5,7 @@
 
 See the Overview section above for header-level documentation.
 
-###### Included Headers
+#### Included Headers
 
 - <stdio.h>
 - <stdlib.h>

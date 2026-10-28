@@ -21,7 +21,7 @@ class HMAccessorySetupManager
 @interface HMAccessorySetupManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class to provides steps for the user to add one or more accessories to a particular home, and follow up with additional setup. These APIs don’t require that the current app has home data authorization.
 

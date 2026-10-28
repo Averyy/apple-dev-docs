@@ -29,7 +29,7 @@ extern CFStringRef const kSecPublicKeyAttrs;
 
 - [Generating New Cryptographic Keys](./generating-new-cryptographic-keys.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is a [`CFDictionary`](../CoreFoundation/cfdictionary.md) containing key-value pairs for attributes specific to the public key to be generated.
 

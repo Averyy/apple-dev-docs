@@ -21,7 +21,7 @@ The type of element produced by this asynchronous sequence.
 typealias Element = Notification
 ```
 
-#### Discussion
+## Discussion
 
 The sequence produces [`Notification`](../../notification.md) elements.
 

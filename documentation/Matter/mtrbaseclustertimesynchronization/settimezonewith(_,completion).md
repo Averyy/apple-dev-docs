@@ -29,7 +29,7 @@ func setTimeZoneWith(_ params: MTRTimeSynchronizationClusterSetTimeZoneParams) a
 - (void) setTimeZoneWithParams:(MTRTimeSynchronizationClusterSetTimeZoneParams *) params completion:(void (^)(MTRTimeSynchronizationClusterSetTimeZoneResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is used to set the time zone of the node.
 

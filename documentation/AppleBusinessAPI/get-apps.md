@@ -9,11 +9,11 @@ Get a list of apps for an organization using the built-in device management in A
 **Availability**:
 - Apple Business API 2.6+
 
-#### Overview
+## Overview
 
 > ❗ **Important**: This endpoint requires the built-in device management service to be turned on for the organization. If you need to manage apps without the built-in device management, use the [Apps and Books for Organizations](../DeviceManagement/apps-and-books-for-organizations.md) API instead.
 
-##### Example
+### Example
 
 **Request**:
 

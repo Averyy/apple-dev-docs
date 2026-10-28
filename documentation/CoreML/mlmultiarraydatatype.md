@@ -25,7 +25,7 @@ enum MLMultiArrayDataType
 enum MLMultiArrayDataType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 All elements of an [`MLMultiArray`](./mlmultiarray.md) instance must be of the same type and must be defined in [`MLMultiArrayDataType`](./mlmultiarraydatatype.md).
 

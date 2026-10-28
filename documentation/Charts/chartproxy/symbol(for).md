@@ -21,7 +21,7 @@ Returns the symbol for the given data value. Returns `nil` if the symbol scale i
 func symbol<P>(for value: P) -> AnyChartSymbolShape? where P : Plottable
 ```
 
-#### Return Value
+## Return Value
 
 The symbol corresponding to the data value, or `nil` if the data value is incompatible with the chart.
 

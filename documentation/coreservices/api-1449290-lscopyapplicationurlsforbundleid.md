@@ -19,7 +19,7 @@ func LSCopyApplicationURLsForBundleIdentifier(_ inBundleIdentifier: CFString, _ 
 CFArrayRef LSCopyApplicationURLsForBundleIdentifier(CFStringRef inBundleIdentifier, CFErrorRef  _Nullable *outError);
 ```
 
-#### Return Value
+## Return Value
 
 The URLs for any applications with the specified bundle identifier returned in a `CFArray`. If no application is found, `NULL` is returned and `outError` (if not `NULL`) is populated with [`kLSApplicationNotFoundErr`](./klsapplicationnotfounderr.md).
 

@@ -25,7 +25,7 @@ var results: [Any] { get }
 @property (copy, readonly) NSArray * results;
 ```
 
-#### Discussion
+## Discussion
 
 The array is a proxy object that is primarily intended for use with Cocoa bindings. While it is possible to copy the proxy array and receive a “snapshot” of the complete current query results, it is generally not recommended due to performance and memory issues. To access individual result array elements, use the [`resultCount`](./resultcount.md) and [`result(at:)`](./result%28at%29.md) methods.
 

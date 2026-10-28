@@ -25,7 +25,7 @@ func doubleTap()
 - (void) doubleTap;
 ```
 
-#### Discussion
+## Discussion
 
 This method is available in iOS and for Touch Bar interactions in macOS.
 

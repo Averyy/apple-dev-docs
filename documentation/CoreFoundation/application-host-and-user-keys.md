@@ -5,7 +5,7 @@
 
 Keys used to specify the common preference domains.
 
-#### Overview
+## Overview
 
 Not all combinations of application, host, and user are supported preference domains. Specifically, `kCFPreferencesAnyHost` is not supported in any combination with other options.
 

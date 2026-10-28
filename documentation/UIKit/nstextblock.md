@@ -28,17 +28,17 @@ class NSTextBlock
 
 - [Adding tables to attributed strings in UIKit](./adding-tables-to-attributed-strings.md)
 
-#### Overview
+## Overview
 
 A text block lets you control how a paragraph looks and where it sits — you can configure its content dimensions, margin, border, padding, and colors.
 
 You create a text block, configure its properties, then assign it to a paragraph by setting the [`textBlocks`](./nsparagraphstyle/textblocks.md) property on an [`NSMutableParagraphStyle`](./nsmutableparagraphstyle.md) and applying that style to a range in an `NSMutableAttributedString`. To represent a cell inside a table, use [`NSTextTableBlock`](./nstexttableblock.md) instead.
 
-##### Understand content dimensions
+### Understand content dimensions
 
 Each text block has three layers around its content: padding, border, and margin. You can configure the width of each layer per edge using [`setWidth(_:type:for:rectEdge:)`](./nstextblock/setwidth%28_,type,for,rectedge%29.md), or set all edges at once using [`setWidth(_:type:for:)`](./nstextblock/setwidth%28_,type,for%29.md). Use [`NSTextBlock.Dimension`](./nstextblock/dimension.md) to set the content area’s width, height, and minimum or maximum constraints. Use [`NSTextBlock.ValueType`](./nstextblock/valuetype.md) to specify whether a dimension is an absolute point value or a percentage.
 
-##### Configure visual appearance
+### Configure visual appearance
 
 Set a background color using [`backgroundColor`](./nstextblock/backgroundcolor.md). Configure border colors per edge using `setBorderColor(_:for:)`, or apply a single color to all four edges at once using [`setBorderColor(_:)`](./nstextblock/setbordercolor%28_%29.md).
 

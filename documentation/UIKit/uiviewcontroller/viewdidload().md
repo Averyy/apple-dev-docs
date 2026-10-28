@@ -29,7 +29,7 @@ func viewDidLoad()
 - [Customizing a document-based app’s launch experience](../customizing-a-document-based-app-s-launch-experience.md)
 - [Making a view into a drag source](../making-a-view-into-a-drag-source.md)
 
-#### Discussion
+## Discussion
 
 This method is called after the view controller has loaded its view hierarchy into memory. This method is called regardless of whether the view hierarchy was loaded from a nib file or created programmatically in the [`loadView()`](./loadview%28%29.md) method. You usually override this method to perform additional initialization on views that were loaded from nib files.
 

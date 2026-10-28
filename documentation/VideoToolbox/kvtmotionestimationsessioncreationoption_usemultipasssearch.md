@@ -24,7 +24,7 @@ let kVTMotionEstimationSessionCreationOption_UseMultiPassSearch: CFString!
 extern CFStringRef const kVTMotionEstimationSessionCreationOption_UseMultiPassSearch;
 ```
 
-#### Discussion
+## Discussion
 
 [`VTMotionEstimationSessionCreate`](./vtmotionestimationsessioncreate.md) takes a dictionary of creation options, `motionVectorProcessorSelectionOptions`. You can supply [`kVTMotionEstimationSessionCreationOption_UseMultiPassSearch`](./kvtmotionestimationsessioncreationoption_usemultipasssearch.md) with `kCFBooleanTrue` to provide higher quality motion estimation. True-motion achieves higher quality by running the motion estimator in multiple passes. The default is `kCFBooleanFalse`.
 

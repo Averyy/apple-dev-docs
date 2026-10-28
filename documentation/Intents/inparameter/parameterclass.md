@@ -22,7 +22,7 @@ var parameterClass: AnyClass { get }
 @property (nonatomic, readonly) Class parameterClass;
 ```
 
-#### Discussion
+## Discussion
 
 When fetching the parameter’s value, you can use the class information in this property to obtain the type information for that value.
 

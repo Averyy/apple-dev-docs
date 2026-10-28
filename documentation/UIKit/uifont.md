@@ -29,13 +29,13 @@ class UIFont
 - [Adding a custom font to your app](./adding-a-custom-font-to-your-app.md)
 - [Scaling fonts automatically](./scaling-fonts-automatically.md)
 
-#### Overview
+## Overview
 
 Use `UIFont` to access your font’s characteristics within your app. The system also uses it to access glyph information during layout. Font objects are immutable, so it’s safe to use them from multiple threads in your app.
 
 In Objective-C, don’t create font objects using the `alloc` and `init` methods. Instead, use class methods of [`UIFont`](./uifont.md), such as [`preferredFont(forTextStyle:)`](./uifont/preferredfont%28fortextstyle%29.md), to look up and retrieve the desired font object. These methods check for an existing font object with the specified characteristics and return it if it exists. Otherwise, they create a new font object based on the desired font characteristics.
 
-##### Understanding font metrics
+### Understanding font metrics
 
 Rely on a font’s metrics to understand how its glyphs occupy vertical space relative to the baseline, a shared reference line that text aligns to. Check a font’s [`pointSize`](./uifont/pointsize.md) to find the nominal size you requested when creating it, and use its [`ascender`](./uifont/ascender.md) and [`descender`](./uifont/descender.md) properties to measure the ascent (the space above the baseline that the font reserves for its tallest glyphs) and descent (the space below the baseline that the font reserves for its lowest-reaching glyphs), as the first diagram shows. Use [`leading`](./uifont/leading.md) and [`lineHeight`](./uifont/lineheight.md) to find the extra space a font recommends between lines of text and the total vertical space a single line of text occupies, as the second diagram shows.
 

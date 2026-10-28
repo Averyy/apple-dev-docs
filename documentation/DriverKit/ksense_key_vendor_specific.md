@@ -16,7 +16,7 @@
 kSENSE_KEY_VENDOR_SPECIFIC
 ```
 
-#### Discussion
+## Discussion
 
 Device server indicates a vendor specific condition.
 

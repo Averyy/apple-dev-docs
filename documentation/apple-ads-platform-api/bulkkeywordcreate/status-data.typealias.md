@@ -20,11 +20,11 @@ string BulkKeywordCreate.Status
 - `ENABLED`: Keyword is active and eligible to serve.
 - `PAUSED`: Keyword is paused and will not serve.
 
-#### Discussion
+## Discussion
 
 Set this within each item’s `data` to determine whether the keyword begins serving as soon as the bulk create request completes.
 
-##### Example
+### Example
 
 ```json
 {

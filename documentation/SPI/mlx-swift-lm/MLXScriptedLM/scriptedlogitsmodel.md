@@ -17,7 +17,7 @@ A model that emits scripted tokens by boosting them in a wrapped model’s logit
 final class ScriptedLogitsModel
 ```
 
-#### Overview
+## Overview
 
 The wrapped model (usually small with random weights) does the real work: cache updates, prefill chunking, and state. This model only raises the scripted token above each logits row’s maximum, so samplers, processors, and masks still see a realistic distribution.
 

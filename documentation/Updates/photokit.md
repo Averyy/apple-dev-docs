@@ -5,13 +5,13 @@
 
 Learn about important changes to PhotoKit and PhotosUI.
 
-#### Overview
+## Overview
 
 Browse notable changes in [PhotoKit](../PhotoKit/PhotoKit.md).
 
-#### June 2024
+## June 2024
 
-##### Spatial media
+### Spatial media
 
 Integrate spatial media from someone’s Photos library into your app using PhotoKit and PhotosUI:
 

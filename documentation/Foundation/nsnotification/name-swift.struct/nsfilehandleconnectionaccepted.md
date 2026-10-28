@@ -25,7 +25,7 @@ static let NSFileHandleConnectionAccepted: NSNotification.Name
 extern NSNotificationName const NSFileHandleConnectionAcceptedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 To cause the posting of this notification, you must send either [`acceptConnectionInBackgroundAndNotify()`](../../filehandle/acceptconnectioninbackgroundandnotify%28%29.md) or [`acceptConnectionInBackgroundAndNotify(forModes:)`](../../filehandle/acceptconnectioninbackgroundandnotify%28formodes%29.md) to an `NSFileHandle` object representing a server stream-type socket.
 

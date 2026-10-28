@@ -21,11 +21,11 @@ Invokes the given closure with a pointer to the given argument.
 func withUnsafePointer<T, E, Result>(to value: inout T, _ body: (UnsafePointer<T>) throws(E) -> Result) throws(E) -> Result where E : Error, T : ~Copyable, Result : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure.
 
-#### Discussion
+## Discussion
 
 The `withUnsafePointer(to:_:)` function is useful for calling Objective-C APIs that take in parameters by const pointer.
 

@@ -23,7 +23,7 @@ var name: String? { get set }
 @property (nonatomic, copy, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Assign a string to this property that uniquely identifies the gesture recognizer. Use this name to distinguish one gesture recognizer from another during debugging, or to specify a relationship between gestures in SwiftUI and UIKit.
 

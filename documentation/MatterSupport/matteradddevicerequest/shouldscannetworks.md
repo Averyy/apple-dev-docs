@@ -19,7 +19,7 @@ A flag that indicates whether to receive network scan results.
 var shouldScanNetworks: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The app receives the network scan results, or an empty list if no scan occurred. Even if the property is set to `true`, the scan may not occur if the accessory doesn’t support scanning.
 

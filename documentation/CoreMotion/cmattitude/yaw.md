@@ -28,7 +28,7 @@ var yaw: Double { get }
 
 - [Getting processed device-motion data](../getting-processed-device-motion-data.md)
 
-#### Discussion
+## Discussion
 
 A yaw is a rotation around an axis that runs vertically through the device. It is perpendicular to the body of the device, with its origin at the center of gravity and directed toward the bottom of the device.
 

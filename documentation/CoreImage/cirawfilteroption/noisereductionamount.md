@@ -26,7 +26,7 @@ static let noiseReductionAmount: CIRAWFilterOption
 extern CIRAWFilterOption const kCIInputNoiseReductionAmountKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value must be an [`NSNumber`](../../Foundation/nsnumber.md) object that specifies a floating-point value between `0.0` and `1.0`. The value has no effect if the image used for initialization is not RAW.
 

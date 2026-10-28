@@ -21,7 +21,7 @@ func beginSheet(_ sheet: NSWindow, modalFor docWindow: NSWindow, modalDelegate: 
 - (void) beginSheet:(NSWindow *) sheet modalForWindow:(NSWindow *) docWindow modalDelegate:(id) modalDelegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This method displays the sheet modally on the specified window and returns control to the caller. Most events targeted at `docWindow` are prohibited while the sheet is displayed but the app’s main run loop runs normally otherwise.
 

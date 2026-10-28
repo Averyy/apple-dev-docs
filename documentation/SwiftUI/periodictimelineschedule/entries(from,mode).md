@@ -21,7 +21,7 @@ Provides a sequence of periodic dates starting from around a given date.
 func entries(from startDate: Date, mode: TimelineScheduleMode) -> PeriodicTimelineSchedule.Entries
 ```
 
-#### Discussion
+## Discussion
 
 A [`TimelineView`](../timelineview.md) that you create with a schedule calls this method to ask the schedule when to update its content. The method returns a sequence of equally spaced dates in increasing order that represent points in time when the timeline view should update.
 

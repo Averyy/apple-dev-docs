@@ -24,7 +24,7 @@ class MTL4CommitOptions
 @interface MTL4CommitOptions : NSObject
 ```
 
-#### Overview
+## Overview
 
 You pass these options as a parameter when you call [`commit:count:options:`](./mtl4commandqueue/commit_count_options_.md).
 

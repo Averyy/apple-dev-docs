@@ -5,7 +5,7 @@
 
 Use shareable events to synchronize your app’s work across multiple devices or processes.
 
-#### Overview
+## Overview
 
 The following figure and code show a shareable event that synchronizes graphics rendering on one device with compute processing on another.
 

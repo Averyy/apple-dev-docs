@@ -22,7 +22,7 @@ let kCFProxyAutoConfigurationHTTPResponseKey: CFString
 extern CFStringRef const kCFProxyAutoConfigurationHTTPResponseKey;
 ```
 
-#### Discussion
+## Discussion
 
 A `CFHTTPMessageRef` value found in the user info dictionary of an authentication error returned to the [`CFNetworkCopyProxiesForAutoConfigurationScript(_:_:_:)`](./cfnetworkcopyproxiesforautoconfigurationscript%28_,_,_%29.md) function or to a [`CFProxyAutoConfigurationResultCallback`](./cfproxyautoconfigurationresultcallback.md) callback.
 

@@ -25,7 +25,7 @@ case moveToPoint
 kCGPathElementMoveToPoint
 ```
 
-#### Discussion
+## Discussion
 
 The element holds a single point for the destination. See the function [`CGPathMoveToPoint`](../cgpathmovetopoint.md).
 

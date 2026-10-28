@@ -25,7 +25,7 @@ func clip(to rect: CGRect)
 extern void CGContextClipToRect(CGContextRef c, CGRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 This function sets the specified graphics context’s clipping region to the area which intersects both the current clipping path and the specified rectangle.
 

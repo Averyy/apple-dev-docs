@@ -23,7 +23,7 @@ var isAvailable: Bool { get }
 @property (nonatomic, readonly, getter=isAvailable) BOOL available;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `true`, you may create new speech recognition tasks. When value of this property is `false`, speech recognition services are not available.
 

@@ -22,7 +22,7 @@ class let touchBarCommunicationAudioTemplateName: String
 extern NSImageName const NSImageNameTouchBarCommunicationAudioTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for communication audio](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825109@2x.png)
 

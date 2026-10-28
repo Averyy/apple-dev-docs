@@ -21,7 +21,7 @@ struct ElectricalLoadDevice
 
 - [Providing charging history for electric vehicles](./providing-informative-charging-history-for-electric-vehicles.md)
 
-#### Overview
+## Overview
 
 This structure represents the device tied to load events you submit. The device’s [`type`](./electricalloaddevice/type.md) can be an electric vehicle or an HVAC device.
 

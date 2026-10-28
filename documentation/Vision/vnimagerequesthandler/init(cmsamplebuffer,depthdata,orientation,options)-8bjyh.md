@@ -24,7 +24,7 @@ init(cmSampleBuffer sampleBuffer: CMSampleBuffer, depthData: AVDepthData, orient
 - (instancetype) initWithCMSampleBuffer:(CMSampleBufferRef) sampleBuffer depthData:(AVDepthData *) depthData orientation:(CGImagePropertyOrientation) orientation options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Discussion
+## Discussion
 
 Sample buffers may contain metadata, like the camera intrinsics. Vision algorithms that support this metadata use it in their analysis, unless overwritten by the options you specify.
 

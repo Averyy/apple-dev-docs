@@ -21,7 +21,7 @@ func takePicture()
 - (void) takePicture;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method in conjunction with a custom overlay view to initiate the programmatic capture of a still image. This supports taking more than one picture without leaving the interface, but requires that you hide the default image picker controls.
 

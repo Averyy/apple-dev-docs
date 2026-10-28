@@ -21,7 +21,7 @@ An object you use to divide dynamic options into sections.
 struct IntentItemSection<Result> where Result : _IntentValue
 ```
 
-#### Overview
+## Overview
 
 The system returns an `IntentItemSection` within an [`IntentItemCollection`](./intentitemcollection.md).
 

@@ -19,11 +19,11 @@ func finalLayoutAttributesForDisappearingItem(at itemIndexPath: IndexPath) -> NS
 - (NSCollectionViewLayoutAttributes *) finalLayoutAttributesForDisappearingItemAtIndexPath:(NSIndexPath *) itemIndexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The layout attributes object that describes the item’s position and properties at the end of animations.
 
-#### Discussion
+## Discussion
 
 When your app removes items from the collection view, the collection view calls this method for each item you remove. Use this method to specify the layout attributes of the item after it has been removed. For example, you might return attributes that position the item offscreen or set its final alpha to `0`. The collection view uses the attributes you return as the end point for any animations. (The start point of the animation is the item’s current location and attributes.) If you return `nil`, the layout uses the item’s current attributes for both the start point and end point of the animation.
 

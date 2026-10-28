@@ -12,11 +12,11 @@ virtual IONetworkController * getController(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the parent `IONetworkController` object.
 
-#### Overview
+## Overview
 
 The controller object passed to init() will be retained until the interface closes the controller. Subclasses can safely call this method before the controller is closed.
 

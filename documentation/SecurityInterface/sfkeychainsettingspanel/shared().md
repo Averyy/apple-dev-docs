@@ -19,7 +19,7 @@ class func shared() -> SFKeychainSettingsPanel!
 + (SFKeychainSettingsPanel *) sharedKeychainSettingsPanel;
 ```
 
-#### Discussion
+## Discussion
 
 If the shared object has not already been created, this method allocates and initializes the object first.
 

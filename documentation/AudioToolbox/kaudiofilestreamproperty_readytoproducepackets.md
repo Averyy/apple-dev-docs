@@ -22,7 +22,7 @@ var kAudioFileStreamProperty_ReadyToProducePackets: AudioFileStreamPropertyID { 
 kAudioFileStreamProperty_ReadyToProducePackets
 ```
 
-#### Discussion
+## Discussion
 
 A `UInt32` value that is `0` until the parser has parsed up to the beginning of the audio data. Once the parser has reached the audio data, the value of this property is set to `1`, at which point all the audio file stream properties that can be known are known.
 

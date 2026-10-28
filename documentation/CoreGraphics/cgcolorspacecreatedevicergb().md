@@ -25,11 +25,11 @@ func CGColorSpaceCreateDeviceRGB() -> CGColorSpace
 extern CGColorSpaceRefCGColorSpaceCreateDeviceRGB();
 ```
 
-#### Return Value
+## Return Value
 
 A device-dependent RGB color space. In Objective-C, you’re responsible for releasing this object by calling [`CGColorSpaceRelease`](./cgcolorspacerelease.md). If unsuccessful, returns `NULL`.
 
-#### Discussion
+## Discussion
 
 Colors in a device-dependent color space are not transformed or otherwise modified when displayed on an output device—that is, there is no attempt to maintain the visual appearance of a color. As a consequence, colors in a device color space often appear different when displayed on different output devices. For this reason, device color spaces are not recommended when color preservation is important.
 

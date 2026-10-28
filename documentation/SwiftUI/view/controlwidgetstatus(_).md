@@ -37,7 +37,7 @@ The status of the control described by the modified label.
 @preconcurrency func controlWidgetStatus<S>(_ status: S) -> some View where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 This text appears in Control Center when your control’s state changes. You can customize the text by applying this modifier to the control’s value label:
 

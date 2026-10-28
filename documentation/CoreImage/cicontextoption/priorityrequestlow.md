@@ -24,7 +24,7 @@ static let priorityRequestLow: CIContextOption
 extern CIContextOption const kCIContextPriorityRequestLow;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is True, then rendering with the context from a background thread takes lower priority than other GPU usage from the main thread. This allows your app to perform Core Image rendering without disturbing the frame rate of UI animations.
 

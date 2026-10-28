@@ -21,7 +21,7 @@ Whether `self` is equivalent to `other` under Unicode Canonical Equivalence.
 func isCanonicallyEquivalent(to other: UTF8Span) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(n)
 

@@ -21,7 +21,7 @@ Name substituted for the purposes of familiarity.
 var nickname: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 An example of a nickname would be Bill.
 

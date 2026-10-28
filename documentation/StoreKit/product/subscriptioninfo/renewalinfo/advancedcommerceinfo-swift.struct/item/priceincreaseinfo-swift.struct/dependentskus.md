@@ -21,7 +21,7 @@ An array of one or more SKUs on which the current subscription offer depends.
 let dependentSKUs: [String]
 ```
 
-#### Discussion
+## Discussion
 
 You can provide a list of SKUs and create a contingency scenario in which a person’s refusal to agree to a price increase results in the App Store canceling other, bundled services (the *dependent SKUs*). If the price increase requires a personʼs consent, and they don’t consent but instead cancel the subscription in the Manage Subscriptions view, the App Store cancels the dependent SKUs.
 

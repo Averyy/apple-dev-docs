@@ -24,11 +24,11 @@ convenience init(toAvoid obstacles: [GKObstacle], maxPredictionTime: TimeInterva
 + (instancetype) goalToAvoidObstacles:(NSArray<GKObstacle *> *) obstacles maxPredictionTime:(NSTimeInterval) maxPredictionTime;
 ```
 
-#### Return Value
+## Return Value
 
 A new goal object.
 
-#### Discussion
+## Discussion
 
 The `maxPredictionTime` parameter controls how far in the future a predicted collision must be in order for the agent to take action to avoid it. For example, if this parameter has a low value, an agents speeding toward an obstacle will not swerve or slow until a collision is imminent (and depending on the properties of that agent, it might not be able to move quickly enough to avoid colliding). If this parameter has a high value, the agent will change course leisurely, well before colliding.
 

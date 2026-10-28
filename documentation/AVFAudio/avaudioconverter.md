@@ -25,7 +25,7 @@ class AVAudioConverter
 @interface AVAudioConverter : NSObject
 ```
 
-#### Overview
+## Overview
 
 The audio converter class transforms audio between file formats and audio encodings.
 

@@ -24,7 +24,7 @@ class MPSImageHistogramSpecification
 @interface MPSImageHistogramSpecification : MPSUnaryImageKernel
 ```
 
-#### Overview
+## Overview
 
 [`MPSImageHistogramSpecification`](./mpsimagehistogramspecification.md) is a generalized version of histogram equalization operation. The histogram specification filter converts the image so that its histogram matches the desired histogram.
 

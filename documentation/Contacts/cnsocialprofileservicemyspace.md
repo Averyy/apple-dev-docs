@@ -24,7 +24,7 @@ let CNSocialProfileServiceMySpace: String
 extern NSString * const CNSocialProfileServiceMySpace;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

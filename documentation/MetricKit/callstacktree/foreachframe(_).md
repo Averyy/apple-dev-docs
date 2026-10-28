@@ -23,7 +23,7 @@ func forEachFrame(_ body: (CallStackFrame) throws -> Void) rethrows
 
 - [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 Use this method for optimized traversal of the entire call stack tree.
 

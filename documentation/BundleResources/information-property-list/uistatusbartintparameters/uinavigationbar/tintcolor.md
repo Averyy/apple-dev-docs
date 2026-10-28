@@ -18,7 +18,7 @@ The tint color to apply to the background of the navigation bar.
 - **Name**: `TintColor`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 The possible dictionary keys and values are:
 

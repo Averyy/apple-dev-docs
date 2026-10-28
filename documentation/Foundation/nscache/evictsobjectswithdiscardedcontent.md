@@ -25,7 +25,7 @@ var evictsObjectsWithDiscardedContent: Bool { get set }
 @property BOOL evictsObjectsWithDiscardedContent;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the cache will evict a discardable-content object after its content is discarded. If [`false`](../../Swift/false.md), it will not. The default value is [`true`](../../Swift/true.md).
 

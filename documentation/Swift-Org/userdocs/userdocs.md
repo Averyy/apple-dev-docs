@@ -9,7 +9,7 @@ framework: "Swift-Org/userdocs"
 
 Language support for Swift in Visual Studio Code.
 
-#### Overview
+## Overview
 
 This extension adds language support for Swift to Visual Studio Code, providing a seamless experience for developing Swift applications on platforms such as macOS, Linux and Windows. It supports:
 

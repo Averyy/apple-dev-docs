@@ -20,7 +20,7 @@ Creates an expectation using key-value observing the test fulfills when the valu
 func expectation<T, V>(that keyPath: KeyPath<T, V>, on observedObject: T, options: NSKeyValueObservingOptions = [.initial, .new, .old], willSatisfy predicate: XCTKeyPathExpectation<T, V>.Predicate? = nil) -> XCTKeyPathExpectation<T, V> where T : NSObject
 ```
 
-#### Return Value
+## Return Value
 
 Creates and returns an expectation for the test case.
 

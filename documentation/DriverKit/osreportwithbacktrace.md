@@ -18,7 +18,7 @@ Generates a backtrace and message for debugging.
 void OSReportWithBacktrace(const char *str, ...);
 ```
 
-#### Discussion
+## Discussion
 
 Generates a backtrace and message for debugging. May be inoperative on release OS builds.
 

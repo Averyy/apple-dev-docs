@@ -26,7 +26,7 @@ An array of strings that represent the types of information an app can request a
 - `InProcessOneTimeLinks`: Add this value to generate single-use links for collaborative sharing using [`oneTimeURL(for:)`](../../CloudKit/ckshare/onetimeurl%28for%29.md).
 - `InProcessShareAccessRequests`: Add this value to handle access requests for collaborative sharing.
 
-#### Discussion
+## Discussion
 
 To add this entitlement, your app needs to use [CloudKit](../../CloudKit/CloudKit.md) to implement a collaborative multi-user sharing feature with a custom sharing UI that displays information about sharing participants.
 

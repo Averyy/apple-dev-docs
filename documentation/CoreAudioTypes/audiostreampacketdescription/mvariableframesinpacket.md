@@ -25,7 +25,7 @@ var mVariableFramesInPacket: UInt32
 UInt32 mVariableFramesInPacket;
 ```
 
-#### Discussion
+## Discussion
 
 For formats with a constant number of frames per packet, this value is `0`.
 

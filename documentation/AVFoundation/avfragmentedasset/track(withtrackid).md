@@ -26,11 +26,11 @@ func track(withTrackID trackID: CMPersistentTrackID) -> AVFragmentedAssetTrack?
 - (AVFragmentedAssetTrack *) trackWithTrackID:(CMPersistentTrackID) trackID;
 ```
 
-#### Return Value
+## Return Value
 
 A fragmented asset track, or `nil` if no track with the specified identifier is available.
 
-#### Discussion
+## Discussion
 
 Apple discourages the use of this method in iOS 15, tvOS 15, and macOS 12 or later. Load a track asynchronously using [`loadTrack(withTrackID:completionHandler:)`](./loadtrack%28withtrackid,completionhandler%29.md) instead.
 

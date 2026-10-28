@@ -16,7 +16,7 @@ Set the buffer where read data should be stored.
 void (*SetBuffer)(IOFireWireLibCommandRef self, UInt32 size, void *buf);
 ```
 
-#### Discussion
+## Discussion
 
 Availability: (for interfaces obtained with ID)
 

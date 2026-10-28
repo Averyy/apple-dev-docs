@@ -23,13 +23,13 @@ class INGetCarPowerLevelStatusIntent
 @interface INGetCarPowerLevelStatusIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 When asked for the car’s power level, Siri creates an `INGetCarPowerLevelStatusIntent` object. This intent object can contain the name of the user’s car. Use this object to provide information about the car’s current power level.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INGetCarPowerLevelStatusIntentHandling`](./ingetcarpowerlevelstatusintenthandling.md) protocol. Your handler should confirm the request and create an [`INGetCarPowerLevelStatusIntentResponse`](./ingetcarpowerlevelstatusintentresponse.md) object with the results.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 
@@ -38,7 +38,7 @@ The following table lists additional attributes of this intent object:
 | Supported by | Siri Intents, Siri Suggestions |
 | Always requires unlocked device? | Yes |
 
-##### Example Phrases
+### Example Phrases
 
 Users can ask Siri for their car’s power level in a variety of ways. The table below provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive, and Siri may recognize many other phrases.
 

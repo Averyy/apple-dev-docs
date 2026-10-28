@@ -25,7 +25,7 @@ var addressComponents: [NSTextCheckingKey : String]? { get }
 @property (copy, readonly, nullable) NSDictionary<NSString *,NSString *> * addressComponents;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary keys are described in [Keys for Address Components](../keys-for-address-components.md).
 

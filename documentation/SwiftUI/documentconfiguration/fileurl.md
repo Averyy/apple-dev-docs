@@ -19,7 +19,7 @@ A URL of an open document.
 var fileURL: URL? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the document has never been saved, returns `nil`.
 

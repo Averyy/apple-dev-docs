@@ -25,7 +25,7 @@ var positiveInfinitySymbol: String { get set }
 @property (copy) NSString * positiveInfinitySymbol;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to the string “`+∞`”.
 

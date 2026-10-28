@@ -21,7 +21,7 @@ A paragraph separator, which is specifically (and only) U+2029 PARAGRAPH SEPARAT
 case paragraphSeparator
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Paragraph_Separator` (abbreviated `Zp`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

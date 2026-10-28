@@ -16,7 +16,7 @@ A signed data object that contains details about the insight.
 final let signedPayload: Data
 ```
 
-#### Discussion
+## Discussion
 
 This data is a signed data object that represents Trust Insights Data. Trust Insights Data is the data package that contains assessments of the legitimacy of end user activity that Trust Insights returns.
 

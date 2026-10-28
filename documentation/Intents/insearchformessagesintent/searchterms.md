@@ -31,7 +31,7 @@ var searchTerms: [String]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<NSString *> * searchTerms;
 ```
 
-#### Discussion
+## Discussion
 
 When this property contains one or more [`NSString`](../../Foundation/nsstring.md) objects, your search should return only messages whose contents contain one of the specified strings. Use the operator in the [`searchTermsOperator`](./searchtermsoperator.md) property to determine whether to search for messages containing all, some, or none of the specified terms.
 

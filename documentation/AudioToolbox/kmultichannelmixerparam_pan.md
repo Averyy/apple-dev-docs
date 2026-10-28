@@ -24,7 +24,7 @@ var kMultiChannelMixerParam_Pan: AudioUnitParameterID { get }
 kMultiChannelMixerParam_Pan
 ```
 
-#### Discussion
+## Discussion
 
 Global scope. The value should be a number between `-1.0` and `1.0`, where `-1.0` represents far left and `1.0` represents far right. The default value is `0`. Setting [`kAudioUnitProperty_MatrixLevels`](./kaudiounitproperty_matrixlevels.md) overrides any value set for `kMultiChannelMixerParam_Pan` and vice versa.
 

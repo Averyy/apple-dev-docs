@@ -25,15 +25,15 @@ func obtainPermanentIDs(for array: [NSManagedObject]) throws -> [NSManagedObject
 - (NSArray<NSManagedObjectID *> *) obtainPermanentIDsForObjects:(NSArray<NSManagedObject *> *) array error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the object IDs for the objects in `array`.
 
-#### Discussion
+## Discussion
 
 The returned array must return the object IDs in the same order as the objects appear in `array`.
 
-#### Discussion
+## Discussion
 
 This method is called before [`execute(_:with:)`](./execute%28_,with%29.md) with a save request, to assign permanent IDs to newly-inserted objects.
 

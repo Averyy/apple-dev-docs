@@ -24,7 +24,7 @@ class NCWidgetController
 @interface NCWidgetController : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `NCWidgetController` class defines an object that both a Today widget and the containing app that delivers the widget can use to specify whether the widget has content to display. Because this class helps a widget and its containing app coordinate the display of the widget’s content, a widget that doesn’t communicate with its containing app is unlikely to use this class.
 

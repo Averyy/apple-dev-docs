@@ -25,11 +25,11 @@ class URLCredentialStorage
 @interface NSURLCredentialStorage : NSObject
 ```
 
-#### Overview
+## Overview
 
 The shared cache stores and retrieves instances of [`URLCredential`](./urlcredential.md). You can store password-based credentials permanently, based on the [`URLCredential.Persistence`](./urlcredential/persistence-swift.enum.md) they were created with. Certificate-based credentials are never stored permanently.
 
-##### Subclassing notes
+### Subclassing notes
 
 The [`URLCredentialStorage`](./urlcredentialstorage.md) class is meant to be used as-is, but you can subclass it if you have specific needs, such as screening which credentials are stored.
 

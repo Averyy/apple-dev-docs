@@ -22,7 +22,7 @@ Creates a query with the specified record type and predicate.
 convenience init(recordType: CKRecord.RecordType, predicate: NSPredicate)
 ```
 
-#### Discussion
+## Discussion
 
 You can’t change the record type and predicate of a query after you create it. If you want to search for a different set of records using a different set of search criteria, create a new query. You can add sort descriptors to the query and change them later as necessary.
 

@@ -25,7 +25,7 @@ var loadedTimeRanges: [NSValue] { get }
 @property (nonatomic, readonly) NSArray<NSValue *> * loadedTimeRanges;
 ```
 
-#### Discussion
+## Discussion
 
 The time ranges that this property provides may be discontinuous.
 

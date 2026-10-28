@@ -16,7 +16,7 @@ A change that invalidates a combination of factors covered by the other invalida
 struct Tuple<Invalidation1, Invalidation2> where Invalidation1 : NSViewInvalidating, Invalidation2 : NSViewInvalidating
 ```
 
-#### Overview
+## Overview
 
 The system uses this type when a change invalidates multiple aspects of a view. Use a tuple of the static values defined in [`NSViewInvalidating`](../../nsviewinvalidating.md) when more than one invalidation type applies to a change.
 

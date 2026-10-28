@@ -13,11 +13,11 @@ Initializes a browser engine audio session.
 ## Declaration
 
 ```swift
-@objc
-(initWithAudioSession:) init(audioSession: AVAudioSession)
+@objc(initWithAudioSession:)
+init(audioSession: AVAudioSession)
 ```
 
-#### Discussion
+## Discussion
 
 [`BEAudioSession`](../beaudiosession-7bb2q.md) wraps the specified [AVFoundation](../../AVFoundation/AVFoundation.md) audio session.
 

@@ -19,7 +19,7 @@ An account for use in importing and exporting credentials.
 struct ASImportableAccount
 ```
 
-#### Overview
+## Overview
 
 This type is a representation of `Account` as defined in the Credential Exchange Format (CXF) specification. You can supply a JSON representation of a CXF `Account` to initialize an instance of this struct by using a [`JSONDecoder`](../Foundation/jsondecoder.md) and calling [`decode(_:from:)`](../Foundation/jsondecoder/decode%28_,from%29.md). When using a [`JSONDecoder`](../Foundation/jsondecoder.md), set the [`dateDecodingStrategy`](../Foundation/jsondecoder/datedecodingstrategy-swift.property.md) property of the decoder to [`JSONDecoder.DateDecodingStrategy.secondsSince1970`](../Foundation/jsondecoder/datedecodingstrategy-swift.enum/secondssince1970.md).
 

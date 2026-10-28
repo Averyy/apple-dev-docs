@@ -19,7 +19,7 @@ class VZVirtioFileSystemDeviceConfiguration
 @interface VZVirtioFileSystemDeviceConfiguration : VZDirectorySharingDeviceConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use `VZVirtioFileSystemDeviceConfiguration` to create a Virtio file system device which allows the host to expose directories to a guest using a [`tag`](./vzvirtiofilesystemdeviceconfiguration/tag.md) label.
 
@@ -114,7 +114,7 @@ static func createMultipleDirectoryShareDeviceConfiguration() -> VZVirtioFileSys
     sharingConfiguration.share = multipleDirectoryShare;
 ```
 
-##### Mounting shared directories
+### Mounting shared directories
 
 > ❗ **Important**:  The commands required to mount shared directories in a guest VM aren’t commands that your app can execute or that you can script from inside your application to a VM; the user must perform them either interactively or as part of a script while logged in to the guest. You must communicate these requirements to the user of your app.
 
@@ -125,7 +125,7 @@ Mounting a shared directory requires the user to execute a command in a terminal
 
 The `tag` argument is the file system device configuration label — `Projects` in the single directory case and `myfiles` in the multiple directory case in these examples — and `directory` is the mount point in the guest file system to which the framework attaches the shared directories.
 
-##### Automounting shared directories in macOS VMs
+### Automounting shared directories in macOS VMs
 
 In macOS 13 and later, it’s possible to specify a file system device that macOS 13 or later guest VMs automount using the [`macOSGuestAutomountTag`](./vzvirtiofilesystemdeviceconfiguration/macosguestautomounttag.md) property. The example below demonstrates sharing a single macOS directory, to a macOS guest:
 

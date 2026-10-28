@@ -25,11 +25,11 @@ init(format: AVAudioFormat, packetCapacity: AVAudioPacketCount)
 - (instancetype) initWithFormat:(AVAudioFormat *) format packetCapacity:(AVAudioPacketCount) packetCapacity;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudioCompressedBuffer`](../avaudiocompressedbuffer.md) instance.
 
-#### Discussion
+## Discussion
 
 This fails if the format is PCM or if the format has variable bytes per packet (for example, `format.streamDescription->mBytesPerPacket == 0`).
 

@@ -5,7 +5,7 @@
 
 Implement a driver that interacts with network interfaces such as Ethernet adaptors. 
 
-#### Overview
+## Overview
 
 For most types of network interfaces, the use of kernel extensions is deprecated. Instead, create a DriverKit extension using [NetworkingDriverKit](../../NetworkingDriverKit/NetworkingDriverKit.md).
 

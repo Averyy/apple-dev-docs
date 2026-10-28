@@ -5,35 +5,35 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27. The SDK comes bundled with Xcode 27. For information on the compatibility requirements for Xcode 27, see [Xcode 27 Release Notes](../Xcode-Release-Notes/xcode-27-release-notes.md).
 
-##### AirPlay
+### AirPlay
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: AirPlay to Home Theaters fails when a PIN or password is required. (176462871)
 
-##### AirPods Max 2
+### AirPods Max 2
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: You cannot update AirPods Max 2 firmware beta in iOS 27 Beta 1 and macOS 27 Beta 1. AirPods Max 2 firmware beta updates are supported in iOS 27 Beta 2 and macOS 27 Beta 2. (178280323)
 
-##### AirPort Utility
+### AirPort Utility
 
-###### Deprecations
+#### Deprecations
 
 - AirPort Utility will no longer be available for new downloads from the App Store. If you previously downloaded the app, you can still re-download it. When using AirPort Utility on iOS 27 and later, functionality is not guaranteed. (158364073)
 
-##### App Intents
+### App Intents
 
-###### New Features
+#### New Features
 
 - You can now pass a name parameter of type `AttributedString` to the `notes.createNote` and `notes.updateNote` schemas. (173431080)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Non-SF Symbol custom images for app entities might not always appear in Siri. (175031314)
 - Fixed: Default values from schemas might not be applied for parameters that are of “Set” type. (175534195)
@@ -42,55 +42,55 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: AppEntity instances have a cumulative size limit of 10MB, including all child properties and their values. Your app might crash if an entity exceeds this limit, and the exception is logged. (181763422)
 - Fixed: The notes.appendText schema erroneously disappeared from the SDK. (182532125)
 
-###### Known Issues
+#### Known Issues
 
 - Existing entities that conformed to @AppEntity(schema: .photos.asset) in prior releases might no longer compile in the 27 SDKs because new properties were added to the schema in this release. (181800016) (FB23652582)
 
   **Workaround:** To continue conforming to the schema, adopt the additional properties and move the code behind an availability check.
 
-###### Deprecations
+#### Deprecations
 
 - The `calendar.deleteEvents` schema has been renamed to `calendar.deleteEvent`. (176751155)
 
-##### Apple Intelligence Report
+### Apple Intelligence Report
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When you view Apple Intelligence Report entries for Home Intelligence, some data that was sent to Private Cloud Compute won’t appear in the report. (176056930)
 
-##### Apple Wallet
+### Apple Wallet
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Updating to iOS 27.0 Beta 3 or 4 might cause Digital ID to expire and become unavailable for presentation affecting any device signed in to the same Apple Account, not just the device being updated. (182055786)
 
-##### AudioAccessoryKit
+### AudioAccessoryKit
 
-###### New Features
+#### New Features
 
 - AudioAccessoryKit now allows third-party audio accessory manufacturers to provide headphone information to the system to support fixed spatial audio. It is only available for developer testing on iPhone and iPad in this release, and will be available to customers in the EU in a future iOS 27 and iPadOS 27 release. (178275661)
 
-##### Background Assets
+### Background Assets
 
-###### New Features
+#### New Features
 
 - You can reduce your app’s storage usage with localized asset packs. The system delivers the appropriately localized asset packs based on the user’s preferred languages. (163944365)
 
-##### Battery / Power Management
+### Battery / Power Management
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Devices with a deeply discharged battery might fail to boot into the OS and remain stuck on the red dead battery icon screen indefinitely until the device is rebooted or the power adapter is unplugged and reconnected. (177346712)
 
-##### Camera
+### Camera
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In the Camera app, Portrait mode blur effect might render incorrectly for photos. (177335723)
 
-##### CarPlay
+### CarPlay
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `CPNavigationSession` ETA Tray panel items might not receive focus. (177508893)
 - Fixed: The panel delegate method `panelDidHide(_ panel: CPMapPanel)` might not be called. (177590525)
@@ -99,50 +99,50 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Your vehicle’s next and previous track steering wheel buttons might not function correctly in CarPlay. (177832695)
 - Fixed: In CarPlay, playback of stereo music content might be silent after playback of Spatial Audio content. (178189709)
 
-###### Known Issues
+#### Known Issues
 
 - Siri might respond more slowly than expected in CarPlay, particularly under higher device temperatures or poor network conditions. (178952858)
 
   **Workaround:** Try the request again after the device has cooled down or once you are in an area with better cellular reception.
 
-##### Clock
+### Clock
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: You might be unable to stop a ringing alarm from the lock screen without unlocking your device. (177728602)
 
-##### CloudKit
+### CloudKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Saving a `CKShare` in which an administrator participant has changed their own role to `CKShareParticipantRole.privateUser` (self-demotion) has no effect. (177621316)
 
-##### Communication Safety
+### Communication Safety
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Sensitive QRCode detected as non-sensitive, preventing 3rd party developers from testing API functionality. (183962032)
 
-##### Control Center
+### Control Center
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The “Add a Control” button in edit mode might appear small and clipped. (170774279)
 
-###### Known Issues
+#### Known Issues
 
 - Gathering `PowerProfiler` and `Lookback` traces through the `Performance Trace` Control Center widget might fail to produce traces. (184729556)
 
   **Workaround:** Gather traces on iOS 27.0 beta 1 or earlier.
 
-##### Core AI
+### Core AI
 
-###### New Features
+#### New Features
 
 - iOS 27 includes Neural Engine improvements for Apple Intelligence capable devices. The system now restricts background access to the Neural Engine, similar to GPU usage restrictions. Large model loading (over 1 GB) performance is improved on the Neural Engine. Neural Engine memory usage is now attributed to your app process instead of the system, and appears in the Allocations instrument. (174796039)
 - Access to the Neural engine when your app is in the background requires the new entitlement: “com.apple.developer.background-tasks.continued-processing.inference”. (179282606)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `AIModelCache` entries might not honor the cache policy you provide, causing re-specialization to occur more often than expected. (169746264)
 - Fixed: When inference runs on the GPU, `InferenceFunction.encode` blocks until all compute is complete instead of returning as soon as encoding is done, unless the model is specialized with a preferred compute device of GPU. (175789258)
@@ -156,15 +156,15 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: App-group support might not work as expected on certain model types. (179732320)
 - Fixed: On-device specialization might fail when loading an `.aimodelc` compiled ahead of time using Xcode 27 Beta 2 or earlier. (181264112)
 
-##### Core Bluetooth
+### Core Bluetooth
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Channel Sounding API in Core Bluetooth is not returning ranging results. (178333845)
 
-##### Core Spotlight
+### Core Spotlight
 
-###### Known Issues
+#### Known Issues
 
 - Creating a SpotlightSearchTool without a configuration and using it with a LanguageModelSession backed by the on-device system language model fails with an error reporting that the number of tokens provided exceeds the maximum allowed. The tool’s default configuration is sized for models with large context windows, so the tool’s description and parameter schema alone exceed the on-device model’s context window before any prompt is added. (183770678)
 
@@ -180,79 +180,79 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
   To search a specific kind of content, pass a domain: `.focused(.communications)`, `.focused(.calendar)`, `.focused(.documents)`, `.focused(.visualMedia)`, or `.focused(.audio)`. A focused guide exposes a smaller set of search capabilities than the default configuration. Sessions backed by a model with a larger context window can continue to use the default configuration.
 
-##### Developer Settings
+### Developer Settings
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Deep links into Settings > Developer > Paired Macs might silently fail to navigate to the target Mac computer. The Paired Macs pane loads correctly when entered manually. (178063365)
 
-##### Dictation
+### Dictation
 
-###### New Features
+#### New Features
 
 - Dictation can now be powered by a new on-device model that boosts accuracy. To enable this, go to Keyboard settings > Dictation and Toggle on “Advanced Dictation Preview”. (178444388)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The “New Line” and “All Caps” formatting commands might not work reliably in the dictation UI. (177959708)
 - Fixed: When you explicitly dictate punctuation— such as “Period” or “Colon” — both the spoken command word and the punctuation character might be inserted instead of the punctuation character alone. (178078177)
 - Fixed: Dictation might not recognize names from your contacts. (178079519)
 - Fixed: Dictation might insert extra words at the end of a dictated passage that you did not speak. (178269104)
 
-###### Known Issues
+#### Known Issues
 
 - Voice Editing commands such as “Change X to Y”, “Delete X”, and “Undo/Redo” might not work reliably. (173448573)
 
-##### Family Settings
+### Family Settings
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Family member’s Ask To Buy, Apple Cash, Purchases, Subscription rows cannot be accessed. (178546389)
 
-##### Files
+### Files
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Deleting files from Recently Deleted might fail with an error or experience significant delays. (179787658)
 - Fixed: Users might be unable to delete or open a file whose name contains certain Unicode characters if the name was created before this issue was addressed. (181179631)
 
-##### Finder
+### Finder
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Suggested names for a file or folder might be more generic than its contents. For example, a folder containing only bird photos might receive suggestions like “Wildlife” or “Animal Photos” rather than bird-specific names. (178093786)
 
-##### FindMy
+### FindMy
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Siri might not be able to find some of the people sharing location with you in FindMy. (178384345)
 
-##### First-Party App Search
+### First-Party App Search
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Search assets might download slowly for languages and regions other than English and the United States, causing degraded search experiences for first-party apps up to a few hours after you install or upgrade to the latest OS, change your device language, or region. (178186226)
 
-##### Fitness+
+### Fitness+
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: On larger iPhones in landscape orientation, the Workout Detail view may display duplicate title text and action buttons when browsing workouts or meditations. (177964121)
 
-##### Foundation
+### Foundation
 
-###### New Features
+#### New Features
 
 - `volumeAvailableCapacityKey` is truncated to 3 significant decimal digits at the block count level (e.g., 123,456,789 blocks becomes 123,000,000 blocks). (75545872)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `+[NSURL URLWithString:]` no longer double-encodes the `%` of valid percent-escape sequences when encoding other invalid characters. (161588649) (FB20439045)
 
-##### Foundation Models
+### Foundation Models
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Private Cloud Compute might not work when you use simulators. (177684296)
 - Fixed: When using the on-device Apple Foundation Model for both tool calling and guided generation, some prompts might cause the model to call tools excessively. (177748926)
@@ -261,145 +261,145 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: `onPrompt` might not be called when applied to a `Profile` without instructions. (177902488)
 - Fixed: `PrivateCloudComputeLanguageModel` always uses greedy decoding. (178181782)
 
-##### Game Center
+### Game Center
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When you trigger the Access Point, its completion handler is never invoked. (172683368)
 
-##### Game Controller
+### Game Controller
 
-###### New Features
+#### New Features
 
 - The PlayStation® Access™ controller is now supported on macOS, iPadOS, and iOS. You can create custom input profiles in game controller settings and save them to your Apple device. (168071382)
 
-##### Gaussian Splats
+### Gaussian Splats
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When 3DGS content rendered by a GaussianSplatComponent is moved offscreen and then returns to the visible area, some splats might be missing or truncated. Camera or asset movement can restore rendering. (183538823)
 
-##### Hardware Security
+### Hardware Security
 
-###### New Features
+#### New Features
 
 - arm64e.x1 introduces additional hardware security and performance instructions, including CPA2 for stronger MIE protection. Devices with support for arm64e.x1 include iPhone models with A20 Pro or later chips, Mac computers with M6 or later chips, and Apple Watch models with S11 or later chips. You can access arm64e.x1 and CPA2 in Xcode through the enhanced security pane and a build setting. Learn more in the [Enhanced Security article](../Xcode/enabling-enhanced-security-for-your-app.md). (152103975)
 
-##### HealthKit
+### HealthKit
 
-###### New Features
+#### New Features
 
 - HealthKit now supports heart rate and cycling power zones. (135746152)
 - Updated HealthKit permissions flow now lets users grant apps access to limited history or full history. (172310874)
 - HealthKit adds support for tracking menopausal state and bleeding after menopause; two new sample types are available. `HKCategoryTypeIdentifierMenopausalState` records a person’s current menopausal state. Values defined by `HKCategoryValueMenopausalState` are `menopause`, `perimenopause`, and `none`. `HKCategoryTypeIdentifierBleedingAfterMenopause` records bleeding episodes occurring after menopause. Values use the existing vaginal bleeding flow levels: `unspecified`, `light`, `medium`, and `heavy`. Both types are read/write, classified under Reproductive Health, and require the standard HealthKit category type authorization. (178532053)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: null unit might incorrectly convert to count and percent units. (171273931) (FB22066297)
 
-##### Hearing Test
+### Hearing Test
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: During a Hearing Test, visual feedback might not appear when you tap the screen to indicate a tone was heard. (176360906)
 
-##### Home Screen
+### Home Screen
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Switching between many different posters with different icon tints may cause system sluggishness. (178435221)
 - Fixed: The Home Screen Customization on a newly setup device might not save. (178576719)
 
-##### HomeKit
+### HomeKit
 
-###### New Features
+#### New Features
 
 - When Apple Intelligence in the Home app is enabled, your HomeKit Secure Video recordings are processed on-device and through Private Cloud Compute for video descriptions and search. (178858470)
 - Apple Intelligence for Home requires an iCloud+ subscription starting at 2TB. (181282161)
 
-##### Image Playground
+### Image Playground
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When VoiceOver is enabled and the gallery contains only one image, the prompt input UI might not appear. (175357842)
 - Fixed: When Image Wand encounters an error — such as an unsupported flow or unsafe output — you might see the misleading message “Connect to Wi-Fi to create images” even when your device is already connected to Wi-Fi. (177710762)
 - Fixed: If required models are downloading, you might see an error message instead of download progress information. (177833994)
 - Fixed: In the Image Playground photo picker, the All and Suggested tabs are missing, which might limit the number of photos available for you to choose from. (178256174)
 
-##### iPhone Mirroring
+### iPhone Mirroring
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In rare cases, iPhone Mirroring may not resize correctly even after pressing the home button in the mirroring app. (180961142)
 - Fixed: Restarting an app while iPhone Mirroring is active can result in the screen appearing to freeze and resizing being disabled. (181023494)
 - Fixed: iPhone Mini does not resize properly during iPhone Mirroring. (181057810)
 
-##### Keyboard
+### Keyboard
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Unlocalized text can appear for paste candidates. (180881635)
 
-##### LDCM
+### LDCM
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When your device’s charging port is wet but empty, you might see a dialog instructing you to unplug a charger or accessory even though nothing is connected. (175484509)
 
-##### Lock Screen
+### Lock Screen
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: After dismissing Lock Screen, the Lock Screen grabber might appear in the incorrect location or orientation. (178174745)
 - Fixed: Siri and Search may still be available when locked even if they are disabled under “Allow Access When Locked” in Settings. (178283603)
 - Fixed: Portions of Depth Effect–enabled wallpapers might appear earlier than expected while pulling down Notification Center. (181621150)
 
-###### Known Issues
+#### Known Issues
 
 - Starting a Vision Pro Guest Mode session might result in two Live Activities on screen at the same time. (178200601)
 
   **Workaround:** Dismiss the Lock Screen and re-lock the device.
 
-##### Mail
+### Mail
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Emails might display content that doesn’t match their subject line. (169101671)
 
-##### Mail Banners
+### Mail Banners
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Mail banners for early flights will show the flight status as delayed. (173869986)
 
-##### Media Sharing Extensions
+### Media Sharing Extensions
 
-###### New Features
+#### New Features
 
 - New frameworks allow you to add media sharing protocols through extension at the system level and enable media apps to use these extensions through a common API framework. (168722808)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Due to a mismatch in runtime checks with the mandatory entitlement for `MediaSharingExtensions`, extensions using the new `MediaDeviceExtension` framework can build but don’t run on target devices. (178179521)
 
-##### Messages
+### Messages
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Stickers attached to a message from an unknown sender do not appear. (177453147)
 - Fixed: GIFs and pasted images might render as the incorrect size. (177657977)
 - Fixed: HDR screenshots might appear garbled when sent in Messages. (180859837)
 
-##### Metal
+### Metal
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When you use a sampler to read from a texture with clamp-to-edge addressing mode, the result might be clamped to zero. (172520325)
 - Fixed: On devices in the Apple 10 GPU family, using a sampler to read from a texture with clamp-to-edge addressing mode might produce results that are clamped to zero. (177318505)
 
-##### MetricKit
+### MetricKit
 
-###### New Features
+#### New Features
 
 - `CrashDiagnostic` now includes a `terminationCategory` that maps to the corresponding case in `ForegroundTerminationMetric` and `BackgroundTerminationMetric`. (96078210) (FB10494149)
 - Apps that emit developer-defined states through the `StateReporting` framework now receive metrics and diagnostics in the context of those states. (159889985)
@@ -409,168 +409,168 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - `LocationActivityTimeMetric` now includes a `reducedAccuracy` property that reports the time your app spent tracking location using reduced accuracy (`kCLLocationAccuracyReduced`). Xcode’s simulated metric payloads also include sample data for this accuracy level, so you can test against it before your app receives real reports. (170513251)
 - `HitchTimeMetric.ratio` and `SignpostIntervalMetric.hitchTimeRatio` now use the new `HitchTimeRatio` type, a `Dimension` subclass that expresses hitch time as a ratio of milliseconds hitching per second of tracked duration. Recompile your app with the latest SDK to pick up this type change and avoid any crashes on launch. (180024784) (FB23242495)
 
-###### Deprecations
+#### Deprecations
 
 - The original MetricKit APIs — including `MXMetricManager`, `MXMetricManagerSubscriber`, `MXMetricPayload`, and `MXDiagnosticPayload` — are no longer recommended for new adoption. Use `MetricManager` instead. (174892111)
 - The `scrollHitchTime(_:)` case of `MetricResult` and the `ScrollHitchTimeMetric` type are no longer part of the new Swift MetricKit API, and `MetricReport` values no longer contain scroll hitch entries. Use the `hitchTime(_:)` case and `HitchTimeMetric` instead, which report per-app animation hitch time. Recompile your app with the latest SDK to avoid a missing symbol crash if it references `ScrollHitchTimeMetric` or `scrollHitchTime(_:)`. (180455992)
 
-##### Nearby Interaction
+### Nearby Interaction
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Channel Sounding API in Nearby Interaction does not return ranging results. (178073051)
 
-##### Network Security
+### Network Security
 
-###### New Features
+#### New Features
 
 - Starting in 27.0 operating systems, select system processes now enforce stricter network security (TLS) requirements. These new requirements might cause connections to fail if the server does not meet them. The affected processes are those involved in MDM, DDM, Automated Device Enrollment, configuration profile installation, app installation, and software updates. Servers must support TLS 1.2 at minimum, using cipher suites and certificates that meet App Transport Security (ATS) requirements.
 
   For additional details on affected processes, requirements, and how to audit and diagnose failures in managed environments, please reference [Prepare your network environment for stricter security requirements](https://support.apple.com/en-us/126655). For additional details on ATS and the new requirements, please reference [Preventing Insecure Network Connections](../Security/preventing-insecure-network-connections.md) and [NSRequiresNIAPTLSPackageVersion](../BundleResources/information-property-list/nsrequiresniaptlspackageversion.md). (176055825)
 
-##### NetworkExtension
+### NetworkExtension
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When an active VPN configuration sets `includeAllNetworks` to true, `excludeLocalNetworks` fails to exclude wired connections to CarPlay. (176839377)
 
-##### Notifications
+### Notifications
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Critical alerts are automatically turned on for any apps that request your permission to enable notifications. (179179362)
 
-##### Now Playing
+### Now Playing
 
-###### Known Issues
+#### Known Issues
 
 - `RemoteMediaSession` and `RemoteMediaSessionRepresentable` always provision Now Playing start and update push tokens for the `production` APNs environment, even if the `aps-environment` configuration is set to `development`. (186036238)
 
   **Workaround:** Use the `production` environment for testing and validation.
 
-##### NowPlaying
+### NowPlaying
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Newly created RemoteMediaSession won’t be visible in control center if created while the app is open in the foreground. (183641494)
 
-##### On Demand Resources
+### On Demand Resources
 
-###### Deprecations
+#### Deprecations
 
 - On Demand Resources and the `NSBundleResourceRequest` API are deprecated. Use Background Assets instead. (170066290)
 
-##### PencilKit
+### PencilKit
 
-###### Deprecations
+#### Deprecations
 
 - `__PKStrokeRenderState` has been renamed to `PKStrokeRenderStateReference`, with `PKStrokeRenderStateReference.init(…)` replacing `PKStrokeRenderState.asObjCRenderState()`. (176410709)
 
-##### PhotoKit
+### PhotoKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The `addedDate` property on `PHAsset` might return `nil` even though it’s marked as non-nullable. (175050631)
 
-###### Deprecations
+#### Deprecations
 
 - The `originalFilename` property on `PHAssetResource` is incorrectly marked as non-nullable, which misrepresents the property value; a new, nullable `filename` property is available as a replacement. (175412725) (FB22589474)
 
-##### Photos
+### Photos
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When opened from a grid of Photos search results in Siri on iPadOS, the single-photo viewer might appear blank. (169236746)
 - Fixed: You might see a slight shift in color hues after applying Spatial Reframing to photos. (176384327)
 - Fixed: When sharing a Live Photo from the Photos app, you might not be able to disable the Live Photo effect prior to sending. (178093956)
 - Fixed: Photos app might quit unexpectedly when you re-enter the Extend tool on a photo that has already been extended. (178164434)
 
-##### Photos Edit
+### Photos Edit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: A thin white line might be visible in photos that have had Spatial Reframing applied. (178183850)
 
-##### Podcasts
+### Podcasts
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: On first launch after updating, you might experience longer-than-expected library migration times, which might last several minutes. (175524004)
 
-##### RealityKit
+### RealityKit
 
-###### New Features
+#### New Features
 
 - The Gaussian Splat Component API in RealityKit will be available in an upcoming release. (178061856)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Some MaterialX 1.39 nodes are not supported. (172875414)
 - Fixed: `ComputeGraphComponents` stored in a Reality file do not render when loaded. (177674901)
 - Fixed: When `OpacityComponent` is applied to an entity with opaque materials, `RealityRenderer` renders the opaque materials with transparency, revealing interior surfaces. Only the frontmost surface should appear with partial transparency. (177976245)
 
-##### Related Receipts
+### Related Receipts
 
-###### Known Issues
+#### Known Issues
 
 - The disclaimer “Siri found in Mail or Photos. Not shared with card issuer” does not appear below displayed transaction related receipts in Wallet for Apple Pay, Apple Card, and Apple Cash. (178202101)
 
-##### Reminders
+### Reminders
 
-###### Known Issues
+#### Known Issues
 
 - After you tap “Add to Reminders” in Messages, the “New Reminder” interface presents the reminder with an empty title field. (180040003)
 
   **Workaround:** Tap “Add to Reminders” in the “New Reminder” interface to create the reminder, then edit the title in the Reminders app.
 
-##### Safari
+### Safari
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Safari tab bar might enter a state where it does not appear on screen. (177812052)
 - Fixed: Safari Intelligence features might appear as available before assets are fully downloaded. If you use the feature before assets are available, it won’t function correctly. (178099724)
 - Fixed: On iPad, the tip prompting users to automatically organize their tabs might not appear in Safari. (178280800)
 
-##### Safari Extensions
+### Safari Extensions
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Turning on or off Safari extensions created via the “Describe an Extension” feature might not take effect until Safari is relaunched. (179293939)
 
-##### Screen Time
+### Screen Time
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Screen Time restrictions might not apply to child accounts despite being configured. (175437403)
 
-##### Security
+### Security
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail. (183456836)
 
-##### SensorKit
+### SensorKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: PPG sensor reader might return no samples when attempting to fetch data. (178275291)
 
-##### ShaderGraph
+### ShaderGraph
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The `realitykit_hair_surfaceshader` node does not support `DiffuseLightProbeGroupComponent`. Materials built with this node might not respond to diffuse light probe group lighting. (177976666)
 
-##### Shortcuts
+### Shortcuts
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Focus automations migrated from iOS 26 to iOS 27 do not work. (179514725)
 - Fixed: Writing Tools actions are unavailable in Shortcuts. (179846468)
 - Fixed: The Use Model action might fail to run when using the On-Device option for some output types. (181071784)
 - Fixed: Shortcuts containing the Send Message action might fail to import or share. (182745894)
 
-###### Known Issues
+#### Known Issues
 
 - If an app intent uses Duration or `LPLinkMetadata`, creating a shortcut with that intent and then attempting to edit it with “Describe a change” might fail. (166068090)
 
@@ -579,9 +579,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
   **Workaround:** Define only one number-related type in the `UnionValue` parameter (for example, use only Int or only Double, not both).
 
-##### Siri
+### Siri
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Siri ignores custom values for navigation preferences, transport, and incident types in apps that use `maps.startNavigation` or `maps.reportIncident` intent schemas. (175230813)
 - Fixed: When location data is unavailable or only coarse-accuracy location data is available, Maps searches initiated through Siri might return empty or imprecise results. (175380461)
@@ -622,7 +622,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Siri encounters an error when asked to compose emails if the Mail app is not open in the background. (181041601)
 - As of beta 5, Siri AI conversation history no longer syncs to devices running a prior beta. iCloud sync works between devices updated to beta 5. No existing conversations will be lost. (182145010)
 
-###### Known Issues
+#### Known Issues
 
 - After Siri returns photo search results and you select photos, Siri might not detect which photos are selected on screen. Commands like “Send these” might apply to all photos returned from the search rather than only the selected ones. (171728298)
 
@@ -647,43 +647,43 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
   **Workaround:** Reduce voice expressivity from the fastest pace, or turn off expressive voices.
 
-##### Sleep Focus
+### Sleep Focus
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Sleep Focus may not automatically toggle on/off after a reboot or update until the user unlocks the device. (179960164)
 
-##### StandBy
+### StandBy
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: StandBy Clocks may be missing. (178061326)
 
-##### Status Bar
+### Status Bar
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Status bar might appear blurred while apps are in the foreground. (179470940)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - Offer code redemption APIs now return a `VerificationResult` when redemption completes. If a redemption succeeds, your app receives a `VerificationResult` that contains a `Transaction` object. If a redemption fails, your app receives an error that describes what caused the redemption to fail. (141012819)
 - StoreKit now includes the `Transaction.OwnershipType.assigned` and `Transaction.RevocationType.assignmentRevoked` enum values to support volume purchases. `Transaction` query methods now additionally return transactions assigned to the Managed Apple Account. (156749517)
 - New `Product.ProductType` APIs represent subscription Bundles and subscription Suites. New APIs in `Product.SubscriptionInfo.BundledSubscription` let you fetch merchandising data about subscriptions contained in a Bundle. Transaction and RenewalInfo contain new fields that provide information about purchases and customer status regarding Bundles and Suites. (160501742)
 - `partnerName` and `partnerId` properties for Advanced Commerce API are available in [Transaction.AdvancedCommerceInfo](../StoreKit/transaction/advancedcommerceinfo-swift.struct.md) and [RenewalInfo.AdvancedCommerceInfo](../StoreKit/product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct.md). (167808780)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The refund request, offer code redemption, and manage subscriptions sheets might fail to present in TestFlight. (180999342) (FB23487953)
 - Fixed: `Storefront` API might return incorrect metadata when running in the TestFlight environment. (181766819) (FB23646993)
 - Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases. (181842500)
 - Fixed: Transactions fail to finish. (183165269)
 
-##### StoreKit Testing in Xcode
+### StoreKit Testing in Xcode
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The unified app receipt is not updated after forcing a subscription expiration with `SKTestSession`. (102093015) (FB11767567)
 - Fixed: The `SKTestSession` `disableDialogs` setting is not always respected for all system dialogs. (154390284) (FB18403150)
@@ -694,32 +694,32 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode. (178441109)
 - Fixed: Intro offer eligibility does not reset immediately after calling `SKTestSession.clearTransactions()`. (183933307) (FB24137836)
 
-###### Known Issues
+#### Known Issues
 
 - Changing the storefront or locale using `SKTestSession` doesn’t propagate through `Storefront.updates`. (184155259)
 - Failed purchases using `SKTestSession` might display error dialogs even when `dialogsDisabled` is set to true. (184255116)
 
-##### Suggestions in Messages
+### Suggestions in Messages
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The app icon shown for navigation suggestions is always the Apple Maps icon. If the suggestion is selected, the user’s preferred navigation app is correctly launched. (178193147)
 
-##### Swift Charts
+### Swift Charts
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When your project has a minimum deployment target lower than 27.0, using conditionals inside a `Chart` closure produces the warning “Conformance of `_ConditionalContent<TrueContent, FalseContent>` to `ChartContent` is only available in ‘’ 27.0 or newer,” and the app might crash at runtime when that content is loaded. (174168981)
 
-##### SwiftData
+### SwiftData
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: You might experience a deadlock for @Query when saving a ModelContext on a background actor while scheduling new async tasks for a ModelActor. (178113288)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - You can now use `.toolbarColorScheme(colorScheme, for: .statusBar)` to set a preferred status bar color scheme. (55162154) (FB7234376)
 - `AsyncImage` now automatically caches downloaded images using HTTP caching protocols, allowing servers to control caching behavior via standard headers. You can customize caching for specific images using the new `AsyncImage` initializers that accept `URLRequest` with custom `cachePolicy` settings. Additionally, you can set a custom `URLSession` using the new `View.asyncImageURLSession(_:)` API to control how all child `AsyncImage` views perform data tasks. (78212597)
@@ -806,7 +806,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - The `makeFileWrapper` closure of `FileWrapperDocumentWriter` now receives a second argument, `previous: FileWrapper?`, holding the `FileWrapper` from the document’s most recent read or write when one is available. Package documents can mutate `previous` in place and return it so that `FileWrapper` only writes children whose contents changed, avoiding rewriting an entire package on every save. Documents stored as a single file can ignore the second argument and return a fresh `FileWrapper` as before. Existing call sites must update their closures to accept the new parameter. (180301399)
 - `DocumentReader.Source` and `DocumentWriter.Destination` now default to `URL`. Conforming types that read from or write to a file URL no longer need to declare `typealias Source = URL` or `typealias Destination = URL`. (180301692)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In apps built with the 2027 SDKs, tapping the status bar to scroll a `ScrollView` to its top correctly updates a bound `scrollPosition`. Previously, the binding could be left holding a stale value because the scroll-to-top transition didn’t drive the scroll-phase updates that propagate to the binding. (111501113) (FB12477370)
 - Fixed: A custom `TextRenderer` applied via `.textRenderer(_:)` now takes effect on a `Text` view that also has `.textSelection(.enabled)` applied. Previously, the custom renderer was dropped on selectable text, falling back to default rendering. (151015350)
@@ -822,52 +822,52 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - The `makeDocument:` and `makeReadableDocument:` closures passed to `DocumentGroup` initializers are now `@MainActor`-isolated. SwiftUI invokes these factories on the main actor when constructing a document instance, allowing the closure body to access main-actor state — including the supplied `URLDocumentConfiguration` — without hopping isolation domains. (180302065)
 - `URLDocumentConfiguration` is a `@MainActor`-isolated `@Observable` reference type and no longer conforms to `Sendable`. Code that captured a configuration in a `Sendable` closure or stored it in a `Sendable` value should drop the constraint and access the configuration on the main actor. (180302075)
 
-###### Known Issues
+#### Known Issues
 
 - Progress reported in `DocumentReader.read(from:progress:)` and `DocumentWriter.write(snapshot:to:previous:progress:)` might not be presented. (158441261)
 
-###### Deprecations
+#### Deprecations
 
 - The `FileDocument` protocol is deprecated. Use `ReadableDocument` for read-only documents or `Document` for documents that support reading and writing. (178776840)
 
-##### System
+### System
 
-###### New Features
+#### New Features
 
 - System now provides Swift APIs for the C `stat`, `lstat`, `fstat`, and `fstatat` system calls. This includes a new `Stat` type with initializers from `FilePath`, `FileDescriptor`, or a C string; `FilePath.stat()` and `FileDescriptor.stat()` instance methods; and supporting types (`FileType`, `FileMode`, `FileFlags`, `UserID`, `GroupID`, `DeviceID`, and `Inode`). See [SYS-0006](https://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md) for more details. (160612181)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [SYS-0006](https://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [SYS-0008](https://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details. (177911316)
 
-##### System Experience
+### System Experience
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When Siri is off and your iPad is extended to an external display where Spotlight is on screen, disconnecting the display might cause the system to crash. (176281601)
 - Fixed: After using iPhone Mirroring or other non-main display experiences, a black pill may appear on the CarPlay screen. (177893758)
 
-##### System Stability
+### System Stability
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Devices might freeze or panic when idle. (178343305)
 
-##### TextKit
+### TextKit
 
-###### New Features
+#### New Features
 
 - `NSTextTable` and its related objects and types are available to UIKit clients starting with OS 27 releases. (159870239)
 
-##### Trust Insights
+### Trust Insights
 
-###### New Features
+#### New Features
 
 - You can now use the TrustInsights framework in your apps by declaring the TrustInsights capability on your app target in Xcode. The framework requires an entitlement and internet connectivity to return results. (154949256)
 
-##### UIKit
+### UIKit
 
-###### New Features
+#### New Features
 
 - When linked on iOS 27, tvOS 27, macCatalyst 27, or visionOS 27 SDKs, you can use `UIScene.extendStateRestoration` and `UIScene.completeStateRestoration` to extend state restoration for `UIScene.ActivationState.background` to `UIScene.ActivationState.foreground` lifecycle transitions. (161843040)
 - iOS and iPadOS apps built with the 27.0 SDK or later are required to include a launch screen. Your app’s `Info.plist` must contain one of the following keys: `UILaunchStoryboardName`, `UILaunchStoryboards`, `UILaunchScreen`, or `UILaunchScreens`. Apps that don’t include a launch screen are rejected when the App Store begins accepting apps built with the 27.0 SDK. (168247372)
@@ -879,7 +879,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Use `UINavigationItem.navigationBarMinimization` to control navigation bar minimization behavior. This property replaces `UINavigationItem.barMinimizeBehavior` and `UINavigationItem.barMinimizationSafeAreaAdjustment`. (177953926)
 - The container view of a `UIScrollEdgeElementContainerInteraction` may contribute its size and position to the overall shape of the scroll edge effect. (179191941) (FB23027596)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In apps built with the iOS 27.0 SDK, the deprecated status bar accessors on `UIApplication`  — including `statusBarFrame`, `statusBarOrientation`, `statusBarStyle`, and `isStatusBarHidden` — might return NaN or null values. (162044221)
 - Fixed: On iPad, if your iPad app is built with the iOS 27 SDK and its `UISupportedInterfaceOrientations` doesn’t include all four interface orientations, the app is treated as non-continuously resizable. Beginning with iOS 27, supported interface orientations should no longer be a condition for continuous resizability. (166422120)
@@ -895,60 +895,60 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: On iPad, if your iPhone-only app is built with the iOS 27 SDK and sets `UIRequiresFullScreen`, its scene receives continuous resize updates when the user resizes the window. Each resize should instead be delivered as a discrete change to a new `UIScreen` with an updated bounds. (178562971)
 - Fixed: On iPad, if your iPhone-only app is built with the iOS 27 SDK and supports only portrait or only landscape interface orientations, its layout breaks when the iPad is in an orientation the app doesn’t support. (178573319)
 
-###### Deprecations
+#### Deprecations
 
 - Apps built with the latest SDK must adopt the scene-based life cycle or they fail to launch. For migration guidance, see [Transitioning to the UIKit scene-based life cycle](../UIKit/transitioning-to-the-uikit-scene-based-life-cycle.md). (141837548)
 - `canOpenURL:` is deprecated. Attempt to open the URL and handle any failure instead of validating it first. Using universal links instead of custom URL schemes removes the need for this validation entirely. (179874781)
 
-##### USDKit
+### USDKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Some types of USD attributes cannot be read or modified. (170653056)
 - Fixed: Array, vector, matrix, and quaternion types cannot be authored using USDKit. (178071414)
 
-##### VideoToolbox
+### VideoToolbox
 
-###### New Features
+#### New Features
 
 - `VTLowLatencySuperResolutionScalerConfiguration` now supports a 1.5x scale factor. Call `+supportedScaleFactorsForFrameWidth:frameHeight:` to discover the scale factors available for your source dimensions. (177635243)
 - `VTLowLatencyFrameInterpolationConfiguration` now supports arbitrary source dimensions up to 1080p. (179040806)
 
-##### Voice Control
+### Voice Control
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Voice Control might not respond when using Flexible Item Names to describe items on the screen. (184088006)
 
-##### Watch Connectivity
+### Watch Connectivity
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The `WCSession.transferCurrentComplicationUserInfo` method does not work with complications built using WidgetKit on watchOS. (113202790) (FB12819178)
 
-##### Weather Highlights
+### Weather Highlights
 
-###### Deprecations
+#### Deprecations
 
 - Weather Highlights is currently only available in US English. (164408676)
 
-##### WidgetKit
+### WidgetKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Your widget extension might not render its timeline when it uses an App Intent with a `@UnionValue` parameter, and content such as images might not appear. This affects `WidgetConfigurationIntent` types that you declare with a `@UnionValue` property. (177493357)
 
-##### Writing Tools
+### Writing Tools
 
-###### Known Issues
+#### Known Issues
 
 - Writing Tools becomes unresponsive when you interact with the Plus button while Writing Tools is in use. (177097101)
 
   **Workaround:** Force quit Messages to resolve the issue.
 
-##### Xcode
+### Xcode
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Simulator might display a black wallpaper and blank app icons temporarily during first boot. (179746601)
 

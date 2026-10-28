@@ -14,11 +14,11 @@ CMError CMGetProfileByAVID (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 If the Display Manager supports ColorSync, the `CMGetProfileByAVID` function calls on the Display Manager to get the profile for the specified display. This is the case if the version of the Display Manager is 2.2.5 or higher (if `gestaltDisplayMgrAttr` has the `gestaltDisplayMgrColorSyncAware` bit set). 
 

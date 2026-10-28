@@ -24,7 +24,7 @@ optional func layerWillDraw(_ layer: CALayer)
 - (void) layerWillDraw:(CALayer *) layer;
 ```
 
-#### Discussion
+## Discussion
 
 The [`layerWillDraw(_:)`](./layerwilldraw%28_%29.md) method is called before [`draw(_:in:)`](./draw%28_,in%29.md). You can use this method to configure any layer state affecting contents prior to [`draw(_:in:)`](./draw%28_,in%29.md) such as [`contentsFormat`](../calayer/contentsformat.md) and [`isOpaque`](../calayer/isopaque.md).
 

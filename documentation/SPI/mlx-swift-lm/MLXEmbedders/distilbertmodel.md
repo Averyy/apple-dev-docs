@@ -17,7 +17,7 @@ A streamlined version of the BERT model.
 class DistilBertModel
 ```
 
-#### Overview
+## Overview
 
 DistilBERT is a small, fast, cheap and light Transformer model trained by distilling BERT base. It has less parameters than bert-base-uncased and runs faster while preserving the majority of BERT’s performance.
 

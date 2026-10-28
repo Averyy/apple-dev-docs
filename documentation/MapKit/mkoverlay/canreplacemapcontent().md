@@ -25,11 +25,11 @@ optional func canReplaceMapContent() -> Bool
 - (BOOL) canReplaceMapContent;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the map view can skip the loading and drawing of the underlying map tiles, or [`false`](../../Swift/false.md) if the map view needs to draw the tiles.
 
-#### Discussion
+## Discussion
 
 The map view uses the return value of this method as a hint to determine whether it loads and renders its tiles. If your overlay covers its designated region entirely with opaque content, and effectively replaces the content of underlying map tiles, implement this method and return [`true`](../../Swift/true.md). Doing so alleviates the need for the map to render its tiles.
 

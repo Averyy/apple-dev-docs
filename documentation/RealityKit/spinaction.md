@@ -20,7 +20,7 @@ An action which animates the transform of an entity to rotate around a specified
 struct SpinAction
 ```
 
-#### Overview
+## Overview
 
 This action rotates an entity around itself from a specified [`localAxis`](./spinaction/localaxis.md) gradually adjusting its local transform. The [`localAxis`](./spinaction/localaxis.md) specifies which cartesian axis around which to rotate in local space. The full spin completes after the action has ended.
 

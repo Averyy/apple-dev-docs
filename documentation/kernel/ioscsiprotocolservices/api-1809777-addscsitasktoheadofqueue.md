@@ -12,7 +12,7 @@ void AddSCSITaskToHeadOfQueue (
  SCSITask *request );
 ```
 
-#### Overview
+## Overview
 
 Internal method called to add a SCSITask to the head of the processing queue.
 

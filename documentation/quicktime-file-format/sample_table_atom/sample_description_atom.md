@@ -6,7 +6,7 @@
 
 An atom that stores information that allows you to decode samples in the media.
 
-#### Overview
+## Overview
 
 See [`Sample description atom`](../sample_description_atom.md).
 

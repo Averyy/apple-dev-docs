@@ -14,11 +14,11 @@ Create a data entry form for collecting and changing data managed by SwiftData.
 - tvOS 17.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 Adding and editing data are fundamental features of data-driven apps, but how an app provides these features is unique to the app. This sample shows one approach, which is to use a data-entry form with SwiftData that lets someone add, edit, and store data about animals.
 
-##### Define the data model
+### Define the data model
 
 Before SwiftData can store data from your app, the app must define the data model that represents the data. SwiftData uses model classes to construct the schema of the data model. For example, the sample app stores data about animals, and groups those animals into categories. To define the schema for this data model, the sample defines two model classes: `Animal` and `AnimalCategory`.
 
@@ -64,7 +64,7 @@ The model class also has two properties:
 - **`name`**: The name of the category. Each category name must be unique across all animal categories. To ensure this uniqueness, the model class applies the [`Attribute(_:originalName:hashModifier:)`](./attribute%28_,originalname,hashmodifier%29.md) macro to the property with the option [`unique`](./schema/attribute/option/unique.md). This option ensures a property’s value is unique across all models of the same type. For a complete list of options, see [`Schema.Attribute.Option`](./schema/attribute/option.md).
 - **`animal`**: The list of animals contained in the category. The model class applies the [`Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)`](./relationship%28_,deleterule,minimummodelcount,maximummodelcount,originalname,inverse,hashmodifier%29.md) macro to this property to form a relationship between the model classes `AnimalCategory` and `Animal`. To learn more about the relationship, see [Defining data relationships with enumerations and model classes](./defining-data-relationships-with-enumerations-and-model-classes.md).
 
-##### Design the data editor
+### Design the data editor
 
 When deciding how people add and edit data in your app, consider the user experience. The sample app, for instance, lets someone add and edit information about animals using a custom data entry view, named `AnimalEditor`.
 
@@ -138,7 +138,7 @@ Finally, to make the purpose of the editor clear to the person using it, `Animal
 }
 ```
 
-##### Set default values
+### Set default values
 
 The `AnimalEditor` view declares its state variables with default values for a new animal, setting `name` to an empty string, `selectedDiet` to `herbivorous`, and leaving `selectedCategory` as `nil`. But the editor also supports editing an existing animal.
 
@@ -155,7 +155,7 @@ If someone edits an animal, the editor needs to show the values of the animal to
 }
 ```
 
-##### Save the data changes
+### Save the data changes
 
 To allow a person to save the changes they made in the editor, the editor provides a Save button in the toolbar:
 
@@ -206,7 +206,7 @@ After saving the data, the Save button’s action closes the editor by calling [
 
 > **Note**: The `AnimalEditor` view retrieves the model context from the view’s environment by creating a reference to the context with `@Environment(\.modelContext) private var modelContext`. For more information, see [`modelContext`](../SwiftUI/environmentvalues/modelcontext.md).
 
-##### Discard the data changes
+### Discard the data changes
 
 To discard changes that someone made, the editor provides a Cancel button in the toolbar:
 

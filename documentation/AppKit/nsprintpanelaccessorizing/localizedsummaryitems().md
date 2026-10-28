@@ -21,11 +21,11 @@ func localizedSummaryItems() -> [[NSPrintPanel.AccessorySummaryKey : String]]
 - (NSArray<NSDictionary<NSString *,NSString *> *> *) localizedSummaryItems;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSDictionary` objects, each of which contains a `NSPrintPanelAccessorySummaryItemNameKey` and `NSPrintPanelAccessorySummaryItemDescriptionKey` key. The values for the keys are both strings. This method must not return `nil`.
 
-#### Discussion
+## Discussion
 
 Accessory panels must implement this method to return information about the panel’s current settings. The returned array should contain a dictionary for each setting that is managed by the accessory panel and each dictionary should contain two key-value pairs identifying the name of the setting and its current value.
 

@@ -20,7 +20,7 @@ func NSRectFromCGRect(_ cgrect: CGRect) -> NSRect
 static NSRect NSRectFromCGRect(CGRect cgrect);
 ```
 
-#### Return Value
+## Return Value
 
 An `NSRect` typecast from a `CGRect`.
 

@@ -16,7 +16,7 @@ Returns an autoreleased node object with a specified session and name.
 + (instancetype) nodeWithSession:(ODSession *) inSession name:(NSString *) inName error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The created node object.
 

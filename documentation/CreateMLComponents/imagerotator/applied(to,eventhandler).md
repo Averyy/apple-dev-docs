@@ -20,7 +20,7 @@ Rotates the image and then scales and crops the rotated image to fit the extent 
 func applied(to image: CIImage, eventHandler: EventHandler? = nil) -> CIImage
 ```
 
-#### Return Value
+## Return Value
 
 The rotated image.
 

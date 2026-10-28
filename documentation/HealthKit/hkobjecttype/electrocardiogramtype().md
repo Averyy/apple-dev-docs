@@ -24,11 +24,11 @@ class func electrocardiogramType() -> HKElectrocardiogramType
 + (HKElectrocardiogramType *) electrocardiogramType;
 ```
 
-#### Return Value
+## Return Value
 
 The shared [`HKElectrocardiogramType`](../hkelectrocardiogramtype.md) instance.
 
-#### Discussion
+## Discussion
 
 This method returns an instance of the [`HKElectrocardiogramType`](../hkelectrocardiogramtype.md) concrete subclass. Use this type to request permission to read [`HKElectrocardiogram`](../hkelectrocardiogram.md) objects from the HealthKit store.
 

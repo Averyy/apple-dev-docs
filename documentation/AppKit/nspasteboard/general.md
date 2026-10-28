@@ -19,11 +19,11 @@ class var general: NSPasteboard { get }
 @property (class, strong, readonly) NSPasteboard * generalPasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 The general pasteboard.
 
-#### Discussion
+## Discussion
 
 Invokes [`init(name:)`](./init%28name%29.md) to obtain the pasteboard.
 

@@ -17,7 +17,7 @@ An error that indicates the merchant is invalid or unknown.
 case invalidMerchant
 ```
 
-#### Discussion
+## Discussion
 
 There is an issue with the merchant details in the token provided by your payment service provider.
 

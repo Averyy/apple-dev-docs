@@ -21,7 +21,7 @@ A specific set of zone IDs to exclude from this scope. If you know that you donâ
 @property (copy, readonly) NSSet<CKRecordZoneID *> * excludedZoneIDs;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: A scope with a non-nil [`zoneIDs`](./zoneids.md) always has an empty `excludedZoneIDs`.
 

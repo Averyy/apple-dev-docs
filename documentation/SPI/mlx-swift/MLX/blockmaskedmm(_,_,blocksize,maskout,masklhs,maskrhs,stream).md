@@ -17,7 +17,7 @@ Matrix multiplication with block masking.
 func blockMaskedMM(_ a: MLXArray, _ b: MLXArray, blockSize: Int = 64, maskOut: MLXArray? = nil, maskLHS: MLXArray? = nil, maskRHS: MLXArray? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Perform the (possibly batched) matrix multiplication of two arrays and with blocks of size `blockSize x blockSize` optionally masked out.
 
@@ -29,7 +29,7 @@ Assuming `a` with shape (…, `M`, `K`) and b with shape (…, `K`, `N`)
 
 > **Note**: Only `block_size=64` and `block_size=32` are currently supported
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`multiply(_:_:stream:)`](./multiply%28_,_,stream%29.md)

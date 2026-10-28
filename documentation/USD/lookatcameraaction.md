@@ -4,11 +4,11 @@
 
 An action that reorients an object to face the user’s camera.
 
-#### Overview
+## Overview
 
 By default, the [duration](./duration.md) specifies the amount of time the prim looks at the camera. To look at the camera indefinitely, place this action in a `GroupAction` that repeats infinitely.
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Action "LookAtCameraAction"

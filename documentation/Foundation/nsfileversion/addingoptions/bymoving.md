@@ -23,7 +23,7 @@ static var byMoving: NSFileVersion.AddingOptions { get }
 NSFileVersionAddingByMoving
 ```
 
-#### Discussion
+## Discussion
 
 When adding a file, you can specify this option if you want to create the version by moving the source file to the specified location.
 

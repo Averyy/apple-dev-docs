@@ -5,7 +5,7 @@
 
 Change a localized string for different interface widths and devices.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: In Xcode 15 and later, use Dynamic Type instead of width variants and string catalogs to create device variants. For more information, see [Supporting multiple languages in your app](./supporting-multiple-languages-in-your-app.md) and  [Localizing and varying text with a string catalog](./localizing-and-varying-text-with-a-string-catalog.md).
 
@@ -17,11 +17,11 @@ The key for a rule is the string that you pass to [`Text`](../SwiftUI/text.md) s
 
 To create plural variants for formatted strings that contain amounts, see [Localizing strings that contain plurals](./localizing-strings-that-contain-plurals.md).
 
-##### Add a strings dictionary file to your project
+### Add a strings dictionary file to your project
 
 To add a `.stringsdict` file to your project, choose File > New > File from Template. In the sheet that appears, select the platform, enter `strings` in the Filter field, select Stringsdict File, and click Next. In the dialog that appears, enter a name for the file, choose a location, and click Create.
 
-##### Provide string variants for different widths
+### Provide string variants for different widths
 
 A *width rule* specifies variants for different available widths in the user interface. It contains a single dictionary with a single key-value pair. The key in the dictionary is `NSStringVariableWidthRuleType` and the value is another dictionary with key-value pairs for each variant. The key for a variant is a width and the value is a string.
 
@@ -58,7 +58,7 @@ In the code above, if the width is `2`, the macro returns `Hi`. If the width is 
 
 To get a variant for a specific width in your code, see the [`variantFittingPresentationWidth(_:)`](../Foundation/nsstring/variantfittingpresentationwidth%28_%29.md) method.
 
-##### Provide device-specific string variants
+### Provide device-specific string variants
 
 A *device rule* specifies a different string depending on the device. For example, your universal app may present different instructions to the user when running on an iOS device than when running on a Mac.
 

@@ -25,7 +25,7 @@ static let kindKey: NSKeyValueChangeKey
 extern NSKeyValueChangeKey const NSKeyValueChangeKindKey;
 ```
 
-#### Discussion
+## Discussion
 
 A value of [`NSKeyValueChange.setting`](../nskeyvaluechange/setting.md) indicates that the observed object has received a [`setValue(_:forKey:)`](../../ObjectiveC/nsobject-swift.class/setvalue%28_,forkey%29.md) message, or that the key-value-coding-compliant set method for the key has been invoked, or that one of the [`willChangeValue(forKey:)`](../../ObjectiveC/nsobject-swift.class/willchangevalue%28forkey%29.md) or [`didChangeValue(forKey:)`](../../ObjectiveC/nsobject-swift.class/didchangevalue%28forkey%29.md) methods has otherwise been invoked.
 

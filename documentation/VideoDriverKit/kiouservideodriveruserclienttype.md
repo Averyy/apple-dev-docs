@@ -15,7 +15,7 @@ User client type required for connection to the Host.
 #define kIOUserVideoDriverUserClientType
 ```
 
-#### Overview
+## Overview
 
 Passed as an argument to [`NewUserClient`](../DriverKit/ioservice/newuserclient.md) when Core Video Host is creating a new user client.
 

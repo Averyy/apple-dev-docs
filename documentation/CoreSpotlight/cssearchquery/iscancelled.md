@@ -23,7 +23,7 @@ var isCancelled: Bool { get }
 @property (readonly, getter=isCancelled) BOOL cancelled;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `true` if you canceled it, and `false` if it’s still running or able to run.
 

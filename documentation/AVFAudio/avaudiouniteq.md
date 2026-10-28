@@ -24,7 +24,7 @@ class AVAudioUnitEQ
 @interface AVAudioUnitEQ : AVAudioUnitEffect
 ```
 
-#### Overview
+## Overview
 
 The [`AVAudioUnitEQFilterParameters`](./avaudiouniteqfilterparameters.md) class encapsulates the filter parameters that the [`bands`](./avaudiouniteq/bands.md) property array returns.
 

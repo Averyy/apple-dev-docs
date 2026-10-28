@@ -17,7 +17,7 @@ An error type that only includes an exit code.
 struct ExitCode
 ```
 
-#### Overview
+## Overview
 
 If you’re printing custom error messages yourself, you can throw this error to specify the exit code without adding any additional output to standard out or standard error.
 

@@ -21,7 +21,7 @@ Draws the contents of a layer object into the specified rectangle.
 extern void CGContextDrawLayerInRect(CGContextRef context, CGRect rect, CGLayerRef layer);
 ```
 
-#### Discussion
+## Discussion
 
 The contents are scaled, if necessary, to fit into the rectangle.
 

@@ -25,7 +25,7 @@ static let angularVelocity: SCNParticleSystem.ParticleProperty
 extern SCNParticleProperty const SCNParticlePropertyAngularVelocity;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is a floating-point scalar (an [`NSNumber`](../../../Foundation/nsnumber.md) object for particle property controllers, or a single `float` value for particle event or modifier blocks).
 

@@ -19,7 +19,7 @@ func updateTrackingAreas()
 - (void) updateTrackingAreas;
 ```
 
-#### Discussion
+## Discussion
 
 You should override this method to remove out of date tracking areas and add recomputed tracking areas; your implementation should call `super`.
 

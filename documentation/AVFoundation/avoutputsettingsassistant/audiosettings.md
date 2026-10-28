@@ -24,7 +24,7 @@ var audioSettings: [String : Any]? { get }
 @property (nonatomic, readonly, nullable) NSDictionary<NSString *,id> * audioSettings;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property may change as a result of setting a new value for the [`sourceAudioFormat`](./sourceaudioformat.md) property. See [Audio settings](../audio-settings.md) for keys and values.
 

@@ -19,11 +19,11 @@ class func favoriteDevices() -> [Any]!
 + (NSArray *) favoriteDevices;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an array of device objects representing the user’s favorite devices. If the user has no favorites, nil is returned.
 
-#### Discussion
+## Discussion
 
 The resulting array contains IOBluetoothDevice objects.
 

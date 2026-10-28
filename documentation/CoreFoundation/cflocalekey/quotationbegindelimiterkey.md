@@ -25,7 +25,7 @@ static let quotationBeginDelimiterKey: CFLocaleKey!
 extern CFLocaleKey const kCFLocaleQuotationBeginDelimiterKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a [`CFString`](../cfstring.md) object.
 

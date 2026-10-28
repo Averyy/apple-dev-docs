@@ -15,7 +15,7 @@ A message identifier and status information for a message.
 object GetMessageListResponseItem
 ```
 
-#### Discussion
+## Discussion
 
 The [`Get Message List`](./get-message-list.md) endpoint returns an array of these values in its response.
 

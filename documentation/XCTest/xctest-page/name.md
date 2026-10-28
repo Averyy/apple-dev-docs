@@ -16,7 +16,7 @@ var name: String { get }
 @property (copy, readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Must be overridden by subclasses.
 

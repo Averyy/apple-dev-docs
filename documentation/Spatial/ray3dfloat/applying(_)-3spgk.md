@@ -21,7 +21,7 @@ Returns a ray that’s transformed by the specified pose.
 func applying(_ pose: Pose3DFloat) -> Ray3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed ray. This function rotates the ray’s direction by the pose’s rotation and offsets the ray’s origin by the pose’s position.
 

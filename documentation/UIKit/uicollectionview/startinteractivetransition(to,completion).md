@@ -23,11 +23,11 @@ func startInteractiveTransition(to layout: UICollectionViewLayout, completion: U
 - (UICollectionViewTransitionLayout *) startInteractiveTransitionToCollectionViewLayout:(UICollectionViewLayout *) layout completion:(UICollectionViewLayoutInteractiveTransitionCompletion) completion;
 ```
 
-#### Return Value
+## Return Value
 
 The intermediate transition layout object responsible for managing the interactive transition behavior.
 
-#### Discussion
+## Discussion
 
 Call this method when you want to change the layout of your collection view using an intermediate transition. When you call this method, the collection view quietly makes the returned transition layout object its current layout object. It is your responsibility to set up a gesture recognizer or other touch-event handling code to track the transition progress. As progress changes, update the [`transitionProgress`](../uicollectionviewtransitionlayout/transitionprogress.md) property of the transition layout object and invalidate the layout. Invalidating its layout causes the transition layout object to update the position of items based on the new progress value.
 

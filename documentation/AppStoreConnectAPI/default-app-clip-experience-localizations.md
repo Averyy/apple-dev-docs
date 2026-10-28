@@ -5,7 +5,7 @@
 
 Read and manage the metadata of your default App Clip experience.
 
-#### Overview
+## Overview
 
 The `appClipDefaultExperienceLocalizations` resource represents metadata that appears on your App Clip card, specific to a locale, for a default App Clip experience. For example, use this resource to read and update localized text that appears on the App Clip card.
 

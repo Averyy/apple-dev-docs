@@ -15,7 +15,7 @@ The list of file URLs that collectively represent the media asset.
 @property (nonatomic, readonly) NSArray<NSURL *> * constituentFileURLs;
 ```
 
-#### Discussion
+## Discussion
 
 The list of file URLs that constitute the asset are returned only for QuickTime reference movies, or if the MediaExtension format reader implements this property [MEFileInfo setConstituentFileNames:].
 

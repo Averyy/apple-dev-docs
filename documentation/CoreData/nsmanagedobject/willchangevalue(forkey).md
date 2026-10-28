@@ -25,7 +25,7 @@ func willChangeValue(forKey key: String)
 - (void) willChangeValueForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 For more details, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 

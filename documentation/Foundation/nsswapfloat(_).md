@@ -25,7 +25,7 @@ func NSSwapFloat(_ x: NSSwappedFloat) -> NSSwappedFloat
 static NSSwappedFloat NSSwapFloat(NSSwappedFloat x);
 ```
 
-#### Discussion
+## Discussion
 
 Swaps the bytes of `x` and returns the resulting value. Bytes are swapped from each low-order position to the corresponding high-order position and vice versa. For example, if the bytes of `x` are numbered from 1 to 4, this function swaps bytes 1 and 4, and bytes 2 and 3.
 

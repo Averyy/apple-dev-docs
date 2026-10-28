@@ -25,11 +25,11 @@ typealias CFAllocatorCopyDescriptionCallBack = (UnsafeRawPointer?) -> Unmanaged<
 typedef const struct __CFString *(*)(const void *) CFAllocatorCopyDescriptionCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 A CFString object that describes the allocator. The caller is responsible for releasing this object.
 
-#### Discussion
+## Discussion
 
 A prototype for a function callback that provides a description of the data pointed to by the `info` field. In implementing this function, return a reference to a CFString object that describes your allocator, particularly some characteristics of your program-defined data.
 

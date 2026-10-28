@@ -19,7 +19,7 @@ func PMPrinterGetPrinterResolutionCount(_ printer: PMPrinter, _ countP: UnsafeMu
 OSStatus PMPrinterGetPrinterResolutionCount(PMPrinter printer, UInt32 *countP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. The result code `kPMNotImplemented` indicates that the printer driver does not support multiple resolution settings.
 

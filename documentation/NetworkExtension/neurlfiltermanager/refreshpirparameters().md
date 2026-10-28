@@ -18,7 +18,7 @@ Refetches PIR parameters from the server.
 func refreshPIRParameters() async throws
 ```
 
-#### Discussion
+## Discussion
 
 In most cases, you don’t need to perform an explicit refetch because the PIR system on the device refetches PIR parameters from the server periodically to stay up-to-date with the server side. However, in the case of a significant server database change, PIR parameters may change. In this case, you may want to trigger an explicit refresh to make the new set of PIR parameters effective immediately.
 

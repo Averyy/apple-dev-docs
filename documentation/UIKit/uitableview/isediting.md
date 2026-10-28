@@ -23,7 +23,7 @@ var isEditing: Bool { get set }
 @property (nonatomic, getter=isEditing) BOOL editing;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the table view is in editing mode: The cells of the table might show an insertion or deletion control on the left side of each cell and a reordering control on the right side, depending on how the cell is configured. (See [`UITableViewCell`](../uitableviewcell.md) for details.) Tapping a control causes the table view to invoke the data source method [`tableView(_:commit:forRowAt:)`](../uitableviewdatasource/tableview%28_,commit,forrowat%29.md). The default value is [`false`](../../Swift/false.md).
 

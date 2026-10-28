@@ -13,7 +13,7 @@ virtual void command_received(
  void *);
 ```
 
-#### Overview
+## Overview
 
 This call is handled internally by power management. It is not intended to be overridden or called by drivers.
 

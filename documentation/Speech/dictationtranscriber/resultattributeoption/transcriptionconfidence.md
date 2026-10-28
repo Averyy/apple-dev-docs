@@ -19,7 +19,7 @@ Includes confidence attributes in a transcription’s attributed string.
 case transcriptionConfidence
 ```
 
-#### Discussion
+## Discussion
 
 These are `Foundation/AttributeScopes/SpeechAttributes/ConfidenceAttribute` attributes.
 

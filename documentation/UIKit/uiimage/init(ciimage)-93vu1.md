@@ -23,7 +23,7 @@ init(ciImage: CIImage)
 - (instancetype) initWithCIImage:(CIImage *) ciImage;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `UIImage` object. In Objective-C, this method returns `nil` if the `ciImage` parameter is `nil`.
 

@@ -24,7 +24,7 @@ func update(deltaTime seconds: TimeInterval)
 - (void) updateWithDeltaTime:(NSTimeInterval) seconds;
 ```
 
-#### Discussion
+## Discussion
 
 A state machine calls this method when its own [`update(deltaTime:)`](../gkstatemachine/update%28deltatime%29.md) method is called—typically, in preparation for each animation frame to be rendered in your game. Override this method to implement per-frame logic specific to this state in the state machine.
 

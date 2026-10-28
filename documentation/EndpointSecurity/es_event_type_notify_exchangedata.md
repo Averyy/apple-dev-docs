@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_EXCHANGEDATA: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_EXCHANGEDATA
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`exchangedata`](./es_events_t/exchangedata.md), which has the type [`es_event_exchangedata_t`](./es_event_exchangedata_t.md).
 

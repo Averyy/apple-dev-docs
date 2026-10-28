@@ -24,7 +24,7 @@ func DisposeMusicEventIterator(_ inIterator: MusicEventIterator) -> OSStatus
 extern OSStatus DisposeMusicEventIterator(MusicEventIterator inIterator);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

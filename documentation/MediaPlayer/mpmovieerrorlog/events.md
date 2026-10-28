@@ -23,7 +23,7 @@ var events: [Any]! { get }
 @property (nonatomic, readonly) NSArray * events;
 ```
 
-#### Discussion
+## Discussion
 
 An ordered collection of [`MPMovieErrorLogEvent`](../mpmovieerrorlogevent.md) instances that represent the chronological sequence of events in the movie error log.
 

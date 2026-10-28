@@ -19,7 +19,7 @@ var cyanComponent: CGFloat { get }
 @property (readonly) CGFloat cyanComponent;
 ```
 
-#### Discussion
+## Discussion
 
 Access this property only for colors in the [`deviceCMYK`](../nscolorspacename/devicecmyk.md) color space. Accessing it for other color types raises an exception.
 

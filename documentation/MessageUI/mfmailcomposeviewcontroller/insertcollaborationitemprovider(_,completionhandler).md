@@ -24,7 +24,7 @@ func insertCollaborationItemProvider(_ itemProvider: NSItemProvider) async -> Bo
 - (void) insertCollaborationItemProvider:(NSItemProvider *) itemProvider completionHandler:(void (^)(BOOL )) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Returns YES if the item provider was added to the composition successfully.
 

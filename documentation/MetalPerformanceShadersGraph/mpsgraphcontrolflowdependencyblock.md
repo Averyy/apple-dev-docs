@@ -24,7 +24,7 @@ typealias MPSGraphControlFlowDependencyBlock = () -> [MPSGraphTensor]
 typedef NSArray<MPSGraphTensor *> *(^)() MPSGraphControlFlowDependencyBlock;
 ```
 
-#### Return Value
+## Return Value
 
 A valid tensor with the results forwarded to the return of `controlDependency` call.
 

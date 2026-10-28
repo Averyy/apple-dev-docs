@@ -20,7 +20,7 @@ typealias ColorSyncCMMIterateCallback = (ColorSyncCMM?, UnsafeMutableRawPointer?
 typedef _Bool (*)(struct ColorSyncCMM *, void *) ColorSyncCMMIterateCallback;
 ```
 
-#### Discussion
+## Discussion
 
 Return `false` to stop the iteration.
 

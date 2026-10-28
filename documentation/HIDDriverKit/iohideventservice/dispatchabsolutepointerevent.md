@@ -16,11 +16,11 @@ Dispatches an absolute pointer event to the system.
 virtual kern_return_t dispatchAbsolutePointerEvent(uint64_t timeStamp, IOFixed x, IOFixed y, uint32_t buttonState, IOOptionBits options, bool accelerate);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Call this method from your event service to dispatch a keyboard event to the system. Typically, you call this method after determining that a report contains data representing a mouse- or pointer-related event.
 

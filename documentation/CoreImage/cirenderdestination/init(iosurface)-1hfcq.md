@@ -24,11 +24,11 @@ init(ioSurface surface: IOSurface)
 - (instancetype) initWithIOSurface:(IOSurface *) surface;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIRenderDestination`](../cirenderdestination.md) object for rendering to an `IOSurface` object.
 
-#### Discussion
+## Discussion
 
 The destination’s [`colorSpace`](./colorspace.md) property will default to a [`CGColorSpace`](../../CoreGraphics/cgcolorspace.md) created by querying the `IOSurface` object’s attributes.
 

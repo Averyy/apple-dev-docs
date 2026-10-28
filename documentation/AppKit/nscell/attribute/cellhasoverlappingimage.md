@@ -19,7 +19,7 @@ case cellHasOverlappingImage
 NSCellHasOverlappingImage
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSCell.Attribute.cellHasImageHorizontal`](./cellhasimagehorizontal.md) for more details.
 

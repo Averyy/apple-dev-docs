@@ -22,11 +22,11 @@ A value type for a string with associated attributes for portions of its text.
 struct AttributedString
 ```
 
-#### Overview
+## Overview
 
 Attributed strings are character strings that have attributes for individual characters or ranges of characters. Attributes provide traits like visual styles for display, accessibility for guided access, and hyperlink data for linking between data sources. Attribute keys provide the name and value type of each attribute. System frameworks like Foundation and SwiftUI define common keys, and you can define your own in custom extensions.
 
-##### String Attributes
+### String Attributes
 
 You can apply an attribute to an entire string, or to a range within the string. The string represents each range with consistent attributes as a *run*.
 
@@ -65,7 +65,7 @@ You can access portions of the string with unique combinations of attributes by 
 
 You can define your own custom attributes by creating types that conform to [`AttributedStringKey`](./attributedstringkey.md), and collecting them in an [`AttributeScope`](./attributescope.md). Custom keys should also extend [`AttributeDynamicLookup`](./attributedynamiclookup.md), so callers can use dot-syntax to access the attribute.
 
-##### Creating Attributed Strings with Markdown
+### Creating Attributed Strings with Markdown
 
 You can create an attributed string by passing a standard [`String`](../Swift/string.md) or [`Data`](./data.md) instance that contains Markdown to initializers like [`init(markdown:options:baseURL:)`](./attributedstring/init%28markdown,options,baseurl%29-52n3u.md). The attributed string creates attributes by parsing the markup in the string.
 
@@ -84,7 +84,7 @@ By declaring new attributes that conform to [`MarkdownDecodableAttributedStringK
 
 Localized attributed strings can also use the extension syntax to indicate parts of the string where the system can apply automatic grammar agreement. See the initializers that take a `localized:` parameter for examples of this extension syntax, as used with automatic grammar agreement.
 
-##### Attribute Scopes
+### Attribute Scopes
 
 The [`AttributedString`](./attributedstring.md) API defines keys for common uses, such as text styling, semantically marking up formattable types like dates and numbers, and hyperlinking. You can find these in the [`AttributeScopes`](./attributescopes.md) enumeration, which contains attributes for AppKit, Foundation, SwiftUI, and UIKit.
 

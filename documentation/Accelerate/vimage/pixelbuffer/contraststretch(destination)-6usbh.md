@@ -23,7 +23,7 @@ func contrastStretch(destination: vImage.PixelBuffer<vImage.Planar8>)
 
 Available when `Format` is `vImage.Planar8`.
 
-#### Discussion
+## Discussion
 
 Use this function to evenly distributes a histogram’s pixel values across the full range of available pixel values.
 

@@ -19,11 +19,11 @@
 static simd_float3 SPRotationAxis3DFloatGetVector(SPRotationAxis3DFloat axis);
 ```
 
-#### Return Value
+## Return Value
 
 A three-element vector that contains the axis values.
 
-#### Discussion
+## Discussion
 
 Returns the @p x, @p y, and @p z components of the axis expressed as a simd vector.
 

@@ -25,7 +25,7 @@ var allObjects: [Any] { get }
 @property (copy, readonly) NSArray<id> * allObjects;
 ```
 
-#### Discussion
+## Discussion
 
 This array contains all the remaining objects of the enumerator in enumerated order. It does not contain objects that have already been enumerated with previous [`nextObject()`](./nextobject%28%29.md) messages.
 

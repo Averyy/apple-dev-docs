@@ -19,7 +19,7 @@ func transmitRate() -> Double
 - (double) transmitRate;
 ```
 
-#### Discussion
+## Discussion
 
 Dynamically queries the interface for the current transmit rate. Returns 0 in the case of an error, or if the interface is not participating in a network.
 

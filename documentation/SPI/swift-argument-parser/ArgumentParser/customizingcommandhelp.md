@@ -10,7 +10,7 @@ framework: "swift-argument-parser/ArgumentParser"
 
 Define your command’s abstract, extended discussion, or usage string, and set the flags used to invoke the help display.
 
-#### Overview
+## Overview
 
 In addition to configuring the command name and subcommands, as described in [Defining Commands and Subcommands](./commandsandsubcommands.md), you can also configure a command’s help text by providing an abstract, discussion, or custom usage string.
 
@@ -67,7 +67,7 @@ hello!
 ...
 ```
 
-##### Adding a Banner Inherited by Subcommands
+### Adding a Banner Inherited by Subcommands
 
 An abstract and discussion describe a single command. To show information that applies to your whole tool — a copyright notice, for example — pass `helpBanner` to the root command’s [`CommandConfiguration`](./commandconfiguration.md). The banner appears above the overview, and every subcommand inherits it.
 
@@ -128,7 +128,7 @@ Unlike `abstract` and `discussion`, a banner is printed verbatim and is never wr
 
 Banners appear wherever the help screen is shown — for the help flags, the `help` subcommand, and when a user runs a command that only groups subcommands. They do not appear in the short usage message printed when a user passes invalid arguments.
 
-##### Modifying the Help Flag Names
+### Modifying the Help Flag Names
 
 Users can see the help screen for a command by passing either the `-h` or the `--help` flag, by default. If you need to use one of those flags for another purpose, you can provide alternative names when configuring a root command.
 
@@ -192,11 +192,11 @@ OPTIONS:
   -?, --help              Show help information.
 ```
 
-##### Hiding Commands
+### Hiding Commands
 
 You may not want to show every one of your command as part of your command-line interface. To render a command invisible (but still usable), pass `shouldDisplay: false` to the [`CommandConfiguration`](./commandconfiguration.md) initializer.
 
-##### Generating Help Text Programmatically
+### Generating Help Text Programmatically
 
 The help screen is automatically shown to users when they call your command with the help flag. You can generate the same text from within your program by calling the `helpMessage()` method.
 
@@ -213,6 +213,8 @@ When generating help text for a subcommand, call `helpMessage(for:)` on the `Par
 ## See Also
 
 ### Essentials
+- [Using ArgumentParser Tools](./usingargumentparsertools.md)
+  Learn how to provide input to command-line tools built with `ArgumentParser`.
 - [Getting Started with ArgumentParser](./gettingstarted.md)
   Learn to set up and customize a simple command-line tool.
 - [protocol ParsableCommand](./parsablecommand.md)

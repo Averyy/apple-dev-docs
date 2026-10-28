@@ -20,7 +20,7 @@ Replaces all inherit arcs with the specified list.
 func set(_ primPaths: [USDLayer.Path]) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the inherits cannot be set.
 

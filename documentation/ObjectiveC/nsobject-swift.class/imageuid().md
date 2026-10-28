@@ -19,11 +19,11 @@ func imageUID() -> String!
 - (NSString *) imageUID;
 ```
 
-#### Return Value
+## Return Value
 
 The string that identifies the data source item
 
-#### Discussion
+## Discussion
 
 Your data source must implement this method. The image browser view uses this identifier to associate the data source item and  its cache.
 

@@ -25,7 +25,7 @@ init(options: NSPointerFunctions.Options = [])
 + (NSHashTable<id> *) hashTableWithOptions:(NSPointerFunctionsOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A hash table with given pointer functions options.
 

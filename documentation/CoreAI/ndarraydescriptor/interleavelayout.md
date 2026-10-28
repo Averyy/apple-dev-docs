@@ -19,7 +19,7 @@ Returns the interleaved layout of this ndArray, or `nil` if there is no interlea
 var interleaveLayout: NDArray.InterleaveLayout? { get }
 ```
 
-#### Discussion
+## Discussion
 
 In the common case where the model was not explicitly converted with interleave specified on a tensor, this property will be `nil`.
 

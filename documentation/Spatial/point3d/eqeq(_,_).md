@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether two values are equal.
 static func == (lhs: Point3D, rhs: Point3D) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether two values are equal.
 

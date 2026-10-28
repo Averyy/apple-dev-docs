@@ -21,13 +21,13 @@ object ArticleDocument.textStyles
 - [Defining and Applying Text Styles](../../AppleNews/defining-and-applying-text-styles.md)
 - [Using HTML with Apple News Format](../../AppleNews/using-html-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 `Article Document.textStyles` is an object containing the text style objects that components in your article can refer to inline from their text, using HTML or Markdown. See [Using HTML with Apple News Format](../../AppleNews/using-html-with-apple-news-format.md) and [Using Markdown with Apple News Format](../../AppleNews/using-markdown-with-apple-news-format.md). You can also refer to these text style objects in an [`InlineTextStyle`](../inlinetextstyle.md) object within a component.
 
 You provide each component layout object as a key-value pair. In each pair, you create a key that’s meaningful to you. The value of each pair is a [`TextStyle`](../textstyle.md) object.
 
-##### Example
+### Example
 
 ```json
 {

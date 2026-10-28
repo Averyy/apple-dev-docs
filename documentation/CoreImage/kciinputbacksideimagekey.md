@@ -24,7 +24,7 @@ let kCIInputBacksideImageKey: String
 extern NSString * const kCIInputBacksideImageKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key needs to be a [`CIImage`](./ciimage.md) instance.
 

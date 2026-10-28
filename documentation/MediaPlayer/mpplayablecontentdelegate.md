@@ -24,7 +24,7 @@ protocol MPPlayableContentDelegate : NSObjectProtocol
 @protocol MPPlayableContentDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 After the media player determines that a media item should play, the app’s content delegate requests to initiate playback.
 

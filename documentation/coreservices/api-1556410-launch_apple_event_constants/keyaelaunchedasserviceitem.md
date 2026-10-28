@@ -14,7 +14,7 @@
 keyAELaunchedAsServiceItem = 'svit'
 ```
 
-#### Discussion
+## Discussion
 
 If present in a `kAEOpenApplication` event, the receiving application was launched as a service item and should only perform actions suitable to that environment—for example, it probably shouldn't open an untitled document.
 

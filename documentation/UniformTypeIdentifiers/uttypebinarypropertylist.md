@@ -21,7 +21,7 @@ A type that represents a binary property list.
 extern UTType * const UTTypeBinaryPropertyList;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.binary-property-list`.
 

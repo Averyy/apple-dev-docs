@@ -21,11 +21,11 @@ convenience init(carbonFootprint: Measurement<UnitMass>)
 + (instancetype) routeDetailWithCarbonFootprint:(NSMeasurement<NSUnitMass *> *) carbonFootprint;
 ```
 
-#### Return Value
+## Return Value
 
 A new @c CPRouteDetail instance representing the carbon footprint
 
-#### Discussion
+## Discussion
 
 Use this method to display the estimated carbon emissions for the route. This helps environmentally-conscious users evaluate and compare the environmental impact of different route options.
 

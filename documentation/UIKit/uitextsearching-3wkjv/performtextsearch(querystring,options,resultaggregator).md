@@ -19,7 +19,7 @@ Searches for ranges of text matching the string across all searchable documents 
 func performTextSearch(queryString: String, options: UITextSearchOptions, resultAggregator: UITextSearchAggregator<Self.DocumentIdentifier>)
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method during a find session to perform the search. Your implenentation should search for matching text ranges in your app’s documents and call [`foundRange(_:searchString:document:)`](../uitextsearchaggregator-swift.struct/foundrange%28_,searchstring,document%29.md) on the aggregator object to add them to the set of matching ranges.
 

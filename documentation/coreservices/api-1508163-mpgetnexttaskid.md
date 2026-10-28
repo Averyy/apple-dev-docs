@@ -15,11 +15,11 @@ Obtains the next task ID in the list of available tasks.
 OSStatus MPGetNextTaskID(MPProcessID owningProcessID, MPTaskID *taskID);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 By iterating on this function, you can obtain the IDs of all the tasks in a given process. These tasks may be running, ready, or blocked. Generally you would only use this function in diagnostic programs.  
 

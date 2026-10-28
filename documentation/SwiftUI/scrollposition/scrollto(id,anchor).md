@@ -21,7 +21,7 @@ Scrolls the position of the scroll view to a view with a identity value and anch
 mutating func scrollTo(id: some Hashable & Sendable, anchor: UnitPoint? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Inform the scroll view of which layout it should look for view’s with the identity value you provide using the [`scrollTargetLayout(isEnabled:)`](../view/scrolltargetlayout%28isenabled%29.md) modifier.
 

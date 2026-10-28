@@ -23,7 +23,7 @@ unowned(unsafe) var peoplePickerDelegate: (any ABPeoplePickerNavigationControlle
 @property (nonatomic, assign, nullable) id<ABPeoplePickerNavigationControllerDelegate> peoplePickerDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 Optional to get the selected contact, selected property or cancellation of the people picker.
 

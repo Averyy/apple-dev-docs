@@ -24,11 +24,11 @@ func AudioConverterNew(_ inSourceFormat: UnsafePointer<AudioStreamBasicDescripti
 extern OSStatus AudioConverterNew(const AudioStreamBasicDescription *inSourceFormat, const AudioStreamBasicDescription *inDestinationFormat, AudioConverterRef*outAudioConverter);
 ```
 
-#### Return Value
+## Return Value
 
 A  result code.
 
-#### Discussion
+## Discussion
 
 For a pair of linear PCM formats, the following conversions are supported:
 

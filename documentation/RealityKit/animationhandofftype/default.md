@@ -20,7 +20,7 @@ Provides the default behavior.
 static var `default`: AnimationHandoffType { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the `layerId` in the `playAnimation()` call is a non-zero value, the default behavior is a [`compose`](./compose.md) handoff . If the `layerId` is `0,` then the default behavior is a `snapshotAndReplace(applyToAllLayers: true)` handoff.
 

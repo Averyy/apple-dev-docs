@@ -20,11 +20,11 @@ Loads a ShaderGraphMaterial from a bundle.
 init(named name: String, from file: String, in bundle: Bundle? = nil) async throws
 ```
 
-#### Return Value
+## Return Value
 
 A ShaderGraphMaterial object from the file with the name specified.
 
-#### Discussion
+## Discussion
 
 Supported file formats are USD (.usd, .usda, .usdc, .usdz) and Reality File (.reality).
 

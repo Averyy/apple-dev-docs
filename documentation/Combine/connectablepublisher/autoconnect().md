@@ -26,11 +26,11 @@ func autoconnect() -> Publishers.Autoconnect<Self>
 - [Controlling Publishing with Connectable Publishers](../controlling-publishing-with-connectable-publishers.md)
 - [Replacing Foundation Timers with Timer Publishers](../replacing-foundation-timers-with-timer-publishers.md)
 
-#### Return Value
+## Return Value
 
 A publisher which automatically connects to its upstream connectable publisher.
 
-#### Discussion
+## Discussion
 
 Use [`autoconnect()`](./autoconnect%28%29.md) to simplify working with [`ConnectablePublisher`](../connectablepublisher.md) instances, such as [`Timer.TimerPublisher`](../../Foundation/timer/timerpublisher.md) in the Foundation framework.
 

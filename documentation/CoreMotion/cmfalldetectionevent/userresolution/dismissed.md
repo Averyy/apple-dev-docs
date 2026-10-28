@@ -19,7 +19,7 @@ case dismissed
 CMFallDetectionEventUserResolutionDismissed
 ```
 
-#### Discussion
+## Discussion
 
 The user can dismiss the alert by pressing the digital crown or tapping the close button.
 

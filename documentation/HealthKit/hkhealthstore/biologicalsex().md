@@ -28,11 +28,11 @@ func biologicalSex() throws -> HKBiologicalSexObject
 
 - [About the HealthKit framework](../about-the-healthkit-framework.md)
 
-#### Return Value
+## Return Value
 
 An object containing information about someone’s biological sex.
 
-#### Discussion
+## Discussion
 
 For a list of possible values, see [`HKBiologicalSex`](../hkbiologicalsex.md).
 

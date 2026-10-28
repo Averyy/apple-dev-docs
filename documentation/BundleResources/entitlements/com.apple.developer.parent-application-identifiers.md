@@ -15,7 +15,7 @@ A list of parent application identifiers for an App Clip with exactly one entry.
 - **Name**: `com.apple.developer.parent-application-identifiers` (Parent Application Identifiers)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 The Parent Application Identifiers entitlement establishes a secure association between an App Clip and its corresponding app. Add it only to an App Clip target.
 

@@ -19,11 +19,11 @@
 static SPScaledPose3DFloat SPScaledPose3DFloatRotate(SPScaledPose3DFloat scaledPose, SPRotation3DFloat rotation);
 ```
 
-#### Return Value
+## Return Value
 
 A scaled pose with a rotation that’s rotated by the specified rotation structure.
 
-#### Discussion
+## Discussion
 
 Returns a scaled pose with a rotation that’s rotated by the specified rotation.
 

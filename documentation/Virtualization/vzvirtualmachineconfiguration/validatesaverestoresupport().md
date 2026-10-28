@@ -19,7 +19,7 @@ func validateSaveRestoreSupport() throws
 - (BOOL) validateSaveRestoreSupportWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to verify that a virtual machine with this configuration is savable.
 

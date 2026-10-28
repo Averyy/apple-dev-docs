@@ -21,7 +21,7 @@ Returns a new matrix from a Spatial affine transform.
 init(_ affineTransform: AffineTransform3DFloat)
 ```
 
-#### Discussion
+## Discussion
 
 Values rounded to a representable value, if necessary.
 

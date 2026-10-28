@@ -17,7 +17,7 @@ The maximum surcharge percentage the payment processor may apply to the transact
 case surchargePercent(Double)
 ```
 
-#### Discussion
+## Discussion
 
 The payment processor determines the final surcharge amount when they process the transaction. The percentage value is between 1 and 100 and up to two decimal places.
 

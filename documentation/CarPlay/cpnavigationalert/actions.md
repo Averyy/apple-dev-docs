@@ -21,7 +21,7 @@ var actions: [CPAlertAction] { get }
 @property (nonatomic, copy, readonly) NSArray<CPAlertAction *> * actions;
 ```
 
-#### Discussion
+## Discussion
 
 If the alert was created with the older @c primaryAction / @c secondaryAction initializer, this property returns those actions as an array for backward compatibility.
 

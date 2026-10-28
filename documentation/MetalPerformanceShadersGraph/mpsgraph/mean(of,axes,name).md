@@ -24,7 +24,7 @@ func mean(of tensor: MPSGraphTensor, axes: [NSNumber], name: String?) -> MPSGrap
 - (MPSGraphTensor *) meanOfTensor:(MPSGraphTensor *) tensor axes:(NSArray<NSNumber *> *) axes name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object.
 

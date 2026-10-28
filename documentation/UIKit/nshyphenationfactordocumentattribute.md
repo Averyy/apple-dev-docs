@@ -20,7 +20,7 @@ The hyphenation factor of the document.
 extern NSAttributedStringDocumentAttributeKey const NSHyphenationFactorDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../Foundation/nsnumber.md) object containing a float. A value of 0 indicates that hyphenation is off, and a value of 1 indicates full hyphenation.
 

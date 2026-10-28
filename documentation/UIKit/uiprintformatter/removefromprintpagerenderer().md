@@ -22,7 +22,7 @@ func removeFromPrintPageRenderer()
 - (void) removeFromPrintPageRenderer;
 ```
 
-#### Discussion
+## Discussion
 
 A print formatter is typically associated with a pages of a [`UIPrintPageRenderer`](../uiprintpagerenderer.md) object through the [`addPrintFormatter(_:startingAtPageAt:)`](../uiprintpagerenderer/addprintformatter%28_,startingatpageat%29.md) method.
 

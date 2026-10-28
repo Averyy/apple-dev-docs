@@ -22,11 +22,11 @@ typealias PHASEPullStreamRenderHandler = (UnsafeMutablePointer<ObjCBool>, Unsafe
 typedef int (^)(_Bool *, const struct AudioTimeStamp *, unsigned int, struct AudioBufferList *) PHASEPullStreamRenderBlock;
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code. If an error is returned, the audio data should be assumed to be invalid.
 
-#### Discussion
+## Discussion
 
 Block to supply audio data to PHASEPullStreamNode
 

@@ -20,11 +20,11 @@ func ODNodeCopySupportedRecordTypes(_ node: ODNodeRef!, _ error: UnsafeMutablePo
 extern CFArrayRefODNodeCopySupportedRecordTypes(ODNodeRef node, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 An array of supported record types.
 
-#### Discussion
+## Discussion
 
 If `inNode` does not support checking for supported record types, all possible record types are returned.
 

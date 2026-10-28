@@ -25,7 +25,7 @@ static let top: VerticalAlignment
 
 - [Laying out a simple view](../laying-out-a-simple-view.md)
 
-#### Discussion
+## Discussion
 
 Use this guide to align the top edges of views:
 

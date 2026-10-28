@@ -25,7 +25,7 @@ func dominantLanguage(forScript script: String) -> String?
 - (NSString *) dominantLanguageForScript:(NSString *) script;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a BCP-47 language tag, such as `"en"` or `"fr"`, that identifies the dominant language.
 

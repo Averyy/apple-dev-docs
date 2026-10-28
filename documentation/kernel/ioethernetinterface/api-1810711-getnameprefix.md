@@ -11,11 +11,11 @@ Returns a string containing the prefix to use when creating a BSD name for this 
 virtual const char * getNamePrefix() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to a constant C string "en". Therefore, Ethernet interfaces will be registered with BSD as en0, en1, etc.
 
-#### Overview
+## Overview
 
 The BSD name for each interface object is created by concatenating a string returned by this method, with an unique unit number assigned by IONetworkStack.
 

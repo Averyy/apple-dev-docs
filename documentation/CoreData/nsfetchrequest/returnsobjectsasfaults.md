@@ -25,7 +25,7 @@ var returnsObjectsAsFaults: Bool { get set }
 @property (nonatomic) BOOL returnsObjectsAsFaults;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) if the objects resulting from a fetch using the [`NSFetchRequest`](../nsfetchrequest.md) are faults; otherwise, it is [`false`](../../Swift/false.md). The default value is [`true`](../../Swift/true.md). This setting is not used if the result type (see [`resultType`](./resulttype.md)) is `NSManagedObjectIDResultType`, as object IDs do not have property values. You can set [`returnsObjectsAsFaults`](./returnsobjectsasfaults.md) to [`false`](../../Swift/false.md) to gain a performance benefit if you know you will need to access the property values from the returned objects.
 

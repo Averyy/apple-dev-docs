@@ -23,7 +23,7 @@ func update<Element>(repeating repeatedValue: Element) where Base == UnsafeMutab
 
 Available when `Base` conforms to `Collection`.
 
-#### Discussion
+## Discussion
 
 The buffer slice’s memory must be initialized or its `Element` must be a trivial type.
 

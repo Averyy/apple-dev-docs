@@ -21,7 +21,7 @@ The framer options to use with this framer.
 var options: NWProtocolFramer.Options
 ```
 
-#### Discussion
+## Discussion
 
 Framer implementations can provide extensions with chainable functions that internally set keys on this options object.
 

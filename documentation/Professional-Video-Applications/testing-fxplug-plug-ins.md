@@ -5,7 +5,7 @@
 
 Test and debug FxPlug plug-ins using a variety of methods.
 
-#### Overview
+## Overview
 
 A number of subtle rendering situations can arise during the normal use of your plug-in, and your users expect your plug-in to handle them all correctly. You can test for most rendering issues by creating a single project that tests your plug-in for a variety of common scenarios, including:
 
@@ -16,7 +16,7 @@ A number of subtle rendering situations can arise during the normal use of your 
 
 > **Note**:  The test projects described in this article outline how to test a filter. To test a generator, simply use your own generator instead of the Checkerboard generator, and disregard applying a filter. To ensure correct results, use pixel transforms on the input and output image; see [Optimizing FxPlug plug-ins](./optimizing-fxplug-plug-ins.md). To test for correctness, check the results of your generator.
 
-##### Set up a test project
+### Set up a test project
 
 1. In Motion, create a new project with the following custom settings: Resolution: 1920 x 1080 pixels; Field Order: None; Aspect Ratio: Square (1.0); Frame Rate: 30 fps; Duration: 10 seconds.
 2. Add three layers to your project—each containing the same generator. Click the Library tab, select the Generators category, and highlight the built-in Checkerboard generator. (If you prefer, you can test using your own FxGenerator generator instead of the built-in Checkerboard generator). Click Apply three times to add three copies of the generator to the canvas. (If you’re testing with your own generator, use that plug-in instead of the Checkerboard generator). You should now have an HD project with square pixels and three generators in the timeline.
@@ -24,7 +24,7 @@ A number of subtle rendering situations can arise during the normal use of your 
 4. Set the pixel aspect ratio for the middle generator. Highlight the middle generator in the layer list, and change its width to 960 pixels and its pixel aspect ratio to Anamorphic 2:1. This changes the generator to have a pixel aspect ratio of 2, which should highlight any problems your plug-ins have with non-square pixels.
 5. Keep the third and final layer’s settings as they are.
 
-##### Test for pixel aspect ratio correctness
+### Test for pixel aspect ratio correctness
 
 Test your plug-in filter by applying it to each generator in each layer of the project. As you deactivate the top layer, the middle layer should look the same. Likewise, as you deactivate the middle layer, the bottom layer should look the same. If you find that isn’t the case, you aren’t handling non-square pixels correctly. The simplest way to do so is to use the input and output image’s pixel transforms.
 
@@ -38,14 +38,14 @@ If any of your layers are squeezed or stretched out, as shown in the following i
 
 ![Image showing checkerboard pattern in Motion with stretched shapes that are no longer square.](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/media-3586106@2x.png)
 
-##### Test the correctness of your point parameters
+### Test the correctness of your point parameters
 
 Another important test for your plug-in is to make sure that your point parameters are creating their effects in the correct place, and that any parameters using absolute pixels create the same look, regardless of the pixel aspect ratio.
 
 1. In the top layer in the checkerboard generator, adjust the Size parameter. Set the size of each checker in absolute pixels.
 2. Make the same adjustment to the Size parameter for the middle and bottom layers. Although the second layer (anamorphic) has half as many pixels across as the layer with a pixel aspect ratio of 1, the checkers should remain the same size in both layers for any given value of the parameter.
 
-##### Test for proxy resolution correctness
+### Test for proxy resolution correctness
 
 Proxy resolution uses uniform scaling, while pixel aspect ratio uses non-uniform scaling. If you’re using pixel transforms to do your scaling and the results of your tests for pixel aspect ratio correctness are good, then testing your proxy resolution should be a simple matter.
 
@@ -64,7 +64,7 @@ The following figure shows the checkerboard generator at half resolution, and co
 
 ![Image showing render resolution set to Half in Motion, with the squares in the checkerboard pattern correctly scaled.](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/media-3586105@2x.png)
 
-##### Testing for correct thumbnail previews
+### Testing for correct thumbnail previews
 
 If you have pixel aspect ratio and proxy resolution working correctly, your plug-in is probably handling thumbnail generation properly. Check by opening the layer list and examining the previews. If the previews show any enlargement or cropping, then your plug-in isn’t handling thumbnail generation correctly.
 
@@ -76,13 +76,13 @@ The preview should show a smaller version of the entire layer in the layer list,
 
 ![Image showing the thumbnail rendered correctly.](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/media-3586103@2x.png)
 
-##### Troubleshoot rendering problems
+### Troubleshoot rendering problems
 
 Any number of things can go wrong when dealing with non-square pixels and proxy resolution. The most common problem is that some aspect of your effect grows or shrinks inappropriately when applied to non-uniformly scaled footage. Circles get stretched or compressed into ovals, or things are twice as large as they should be.
 
 Transform the coordinates of each pixel from the output image’s pixel space into full-sized, square-pixel image coordinates, using the inverse pixel transform. Then perform your computations on those coordinates as you would normally—without scaling them. Finally, transform the computed coordinates back into the input image’s pixel space using the pixel transform to sample the input image. See [Optimizing FxPlug plug-ins](./optimizing-fxplug-plug-ins.md) for more information on pixel transforms.
 
-##### Debug your plug-in
+### Debug your plug-in
 
 To test your plug-in code in a target application, choose Project > Scheme > Edit Scheme in your Xcode project window, and then, below the Info tab for the Run action, choose Motion or Final Cut Pro as the executable.
 

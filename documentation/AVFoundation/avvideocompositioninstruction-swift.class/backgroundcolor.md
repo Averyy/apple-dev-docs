@@ -24,7 +24,7 @@ var backgroundColor: CGColor? { get }
 @property (nonatomic, retain, readonly, nullable) CGColorRef backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 Only solid BGRA colors are supported; patterns and other supported colors are ignored. If the rendered pixel buffer does not have alpha, the alpha value of the background color is ignored.
 

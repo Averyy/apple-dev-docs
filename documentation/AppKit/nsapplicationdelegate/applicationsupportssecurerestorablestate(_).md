@@ -20,7 +20,7 @@ optional func applicationSupportsSecureRestorableState(_ app: NSApplication) -> 
 - (BOOL) applicationSupportsSecureRestorableState:(NSApplication *) app;
 ```
 
-#### Return Value
+## Return Value
 
 `true` when the app supports secure state restoration; otherwise, `false`.
 

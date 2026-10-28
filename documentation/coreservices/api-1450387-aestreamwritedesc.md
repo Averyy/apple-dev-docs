@@ -19,11 +19,11 @@ func AEStreamWriteDesc(_ ref: AEStreamRef!, _ newType: DescType, _ data: UnsafeR
 OSStatus AEStreamWriteDesc(AEStreamRef ref, DescType newType, const void *data, Size length);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Use this routine to write the data for a descriptor to the stream. When using this routine, you must supply all of the descriptor data at once. 
 

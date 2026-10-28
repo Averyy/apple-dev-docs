@@ -22,7 +22,7 @@ init(availableBookings: [INRestaurantReservationBooking], code: INGetAvailableRe
 - (instancetype) initWithAvailableBookings:(NSArray<INRestaurantReservationBooking *> *) availableBookings code:(INGetAvailableRestaurantReservationBookingsIntentCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 

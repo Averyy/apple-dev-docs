@@ -16,7 +16,7 @@ Creates an isochronous channel object and returns an interface to it. An isochro
 IOFireWireLibIsochChannelRef (*CreateIsochChannel)(IOFireWireLibDeviceRef self, Boolean doIrm, UInt32 packetSize, IOFWSpeed prefSpeed, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOFireWireLibIsochChannelRef. Returns 0 upon failure
 

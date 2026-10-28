@@ -24,7 +24,7 @@ let GLKTextureLoaderGenerateMipmaps: String
 extern NSString * const GLKTextureLoaderGenerateMipmaps;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../Foundation/nsnumber.md) object that specifies a boolean value. If [`false`](../Swift/false.md), only the texture is loaded. If [`true`](../Swift/true.md), a full set of mipmap levels are generated for the texture when the texture is created. The `GL_TEXTURE_MIN_FILTER` parameter for the texture is changed to `GL_LINEAR_MIPMAP_LINEAR` when mipmaps are generated. If the key is not specified, the default value is [`false`](../Swift/false.md).
 

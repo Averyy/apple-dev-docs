@@ -16,7 +16,7 @@ A connection view’s central manager is scanning for nearby peripherals.
 case searchingForPeripherals
 ```
 
-#### Discussion
+## Discussion
 
 The connection view title corresponding to this state should be in one of the following formats:
 

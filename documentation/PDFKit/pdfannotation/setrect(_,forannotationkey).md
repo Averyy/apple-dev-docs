@@ -40,7 +40,7 @@ func setRect(_ value: NSRect, forAnnotationKey key: PDFAnnotationKey) -> Bool
 - (BOOL) setRect:(NSRect) value forAnnotationKey:(PDFAnnotationKey) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the value sets successfully; otherwise, [`false`](../../Swift/false.md).
 

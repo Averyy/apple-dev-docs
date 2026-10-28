@@ -19,7 +19,7 @@ The hosting controller’s view automatically invalidate its intrinsic content s
 static let intrinsicContentSize: UIHostingControllerSizingOptions
 ```
 
-#### Discussion
+## Discussion
 
 Use this option when the hosting controller’s view is being laid out with Auto Layout.
 

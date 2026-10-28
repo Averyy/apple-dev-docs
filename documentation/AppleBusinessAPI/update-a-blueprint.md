@@ -9,13 +9,13 @@ Update an existing Blueprint in an organization.
 **Availability**:
 - Apple Business API 2.6+
 
-#### Overview
+## Overview
 
 > **Note**: Only the fields included in the request are updated. Any omitted fields retain their existing values.
 
 > **Note**: Any invalid resource IDs will be dropped from the request during Blueprint update.
 
-##### Example
+### Example
 
 **Request**:
 

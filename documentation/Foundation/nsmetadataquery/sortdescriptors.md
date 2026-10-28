@@ -25,7 +25,7 @@ var sortDescriptors: [NSSortDescriptor] { get set }
 @property (copy) NSArray<NSSortDescriptor *> * sortDescriptors;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property while a query is running stops the query and discards the current results. The receiver immediately starts a new query.
 

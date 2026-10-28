@@ -18,7 +18,7 @@ var kDADiskDescriptionMatchVolumeMountable: Unmanaged<CFDictionary>
 extern CFDictionaryRef kDADiskDescriptionMatchVolumeMountable;
 ```
 
-#### Discussion
+## Discussion
 
 Predefined CFDictionary object containing a set of disk description keys and values appropriate for matching mountable volumes using DARegister*Callback().
 

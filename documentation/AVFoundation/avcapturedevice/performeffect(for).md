@@ -23,7 +23,7 @@ func performEffect(for reactionType: AVCaptureReactionType)
 - (void) performEffectForReaction:(AVCaptureReactionType) reactionType;
 ```
 
-#### Discussion
+## Discussion
 
 The entries in the [`reactionEffectsInProgress`](./reactioneffectsinprogress.md) property may not reflect one-to-one with calls to this method. Depending on reaction style or resource limits, the system may coalesce overlapping reactions of the same type by extending an existing reaction rather than overlaying a new one.
 

@@ -24,7 +24,7 @@ class MPSImageGaussianPyramid
 @interface MPSImageGaussianPyramid : MPSImagePyramid
 ```
 
-#### Overview
+## Overview
 
 The Gaussian image pyramid kernel is enqueued as an in-place operation using the [`encode(commandBuffer:inPlaceTexture:fallbackCopyAllocator:)`](./mpsunaryimagekernel/encode%28commandbuffer,inplacetexture,fallbackcopyallocator%29.md) method. All mip-map levels (after level 1) present in the provided image are filled using the provided filter kernel. The `fallbackCopyAllocator` parameter is not used. The Gaussian image pyramid kernel ignores the [`clipRect`](./mpsunaryimagekernel/cliprect.md) and [`offset`](./mpsunaryimagekernel/offset.md) properties, and fills the entirety of the mip-map levels. Recall the size of the nth mip-map level as:
 

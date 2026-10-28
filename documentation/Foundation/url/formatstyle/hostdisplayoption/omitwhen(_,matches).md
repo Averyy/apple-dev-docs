@@ -21,7 +21,7 @@ Returns a display option that displays the host component when a specified compo
 static func omitWhen(_ component: URL.FormatStyle.Component, matches requirements: Set<String>) -> URL.FormatStyle.HostDisplayOption
 ```
 
-#### Return Value
+## Return Value
 
 A display option that omits the host component when a specified component meets the specified requirements.
 

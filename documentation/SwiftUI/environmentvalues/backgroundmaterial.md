@@ -21,7 +21,7 @@ The material underneath the current view.
 var backgroundMaterial: Material? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the current background isn’t one of the standard materials. If you set a material, the standard content styles enable their vibrant rendering modes.
 

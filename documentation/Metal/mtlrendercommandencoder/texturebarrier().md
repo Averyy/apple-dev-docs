@@ -22,7 +22,7 @@ func textureBarrier()
 - (void) textureBarrier;
 ```
 
-#### Discussion
+## Discussion
 
 Use a barrier if you use the same texture for both an input to a shader and as a rendering destination for the render pass.
 

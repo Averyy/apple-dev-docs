@@ -29,7 +29,7 @@ Available when `Format` conforms to `StaticPixelFormat`.
 - [Applying flood fills to an image](../../applying-flood-fills-to-an-image.md)
 - [Optimizing image-processing performance](../../optimizing-image-processing-performance.md)
 
-#### Return Value
+## Return Value
 
 A Core Graphics image that contains the source buffer’s contents.
 

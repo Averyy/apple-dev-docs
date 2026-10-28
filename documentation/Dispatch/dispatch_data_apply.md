@@ -21,11 +21,11 @@ Traverses the memory of a dispatch data object and executes custom code on each 
 extern bool dispatch_data_apply(dispatch_data_t data, dispatch_data_applier_t applier);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether the traversal completed successfully. Typically, this value is `true` if the applier block was executed on all of the regions or there was nothing to traverse. If it is `false`, it means the block terminated the traversal early.
 
-#### Discussion
+## Discussion
 
 For each contiguous memory region, this function creates a temporary dispatch data object and passes it to the specified applier function. This new object, plus the other parameters to the block, provide direct access to the specific memory region being examined. Once the applier block returns, the temporary dispatch data object is released. (The original object in the `data` parameter is not touched.)
 

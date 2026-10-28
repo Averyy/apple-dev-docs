@@ -27,7 +27,7 @@ var fetchRecordsCompletionBlock: (([CKRecord.ID : CKRecord]?, (any Error)?) -> V
 @property (nonatomic, copy, nullable) void (^fetchRecordsCompletionBlock)(NSDictionary<CKRecordID *,CKRecord *> *recordsByRecordID, NSError *operationError);
 ```
 
-#### Discussion
+## Discussion
 
 This property is a closure that returns no value and has the following parameters:
 

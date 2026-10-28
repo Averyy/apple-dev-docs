@@ -5,7 +5,7 @@
 
 Use the latest API to support Apple In-App Purchases in new or existing apps, or the original API to support Apple In-App Purchases in earlier operating systems.
 
-#### Overview
+## Overview
 
 The StoreKit framework provides two APIs to implement a store in your app and offer Apple In-App Purchases:
 
@@ -22,7 +22,7 @@ An app can use both the [Apple In-App Purchase](./in-app-purchase.md) API and th
 
 Both APIs provide access to your data in the App Store, such as your configured Apple In-App Purchases and transaction information for your customers. Apple In-App Purchases that users make using either API are fully available to both APIs.
 
-##### Use the Apple In-App Purchase API to access new features
+### Use the Apple In-App Purchase API to access new features
 
 The following features are available only with the Swift-based [Apple In-App Purchase](./in-app-purchase.md) APIs:
 
@@ -34,7 +34,7 @@ The following features are available only with the Swift-based [Apple In-App Pur
 - Presenting the App Store sheet for managing subscriptions. For more information, see [`showManageSubscriptions(in:subscriptionGroupID:)`](./appstore/showmanagesubscriptions%28in,subscriptiongroupid%29.md).
 - Transaction information in JSON Web Signature (JWS) format. For more information, see [`Transaction`](./transaction.md).
 
-##### Use the Original API to support certain features
+### Use the Original API to support certain features
 
 You might need to use the [Original API for Apple In-App Purchase](./original-api-for-in-app-purchase.md) for the following features, if your app supports them:
 

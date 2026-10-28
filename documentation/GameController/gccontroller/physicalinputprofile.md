@@ -24,7 +24,7 @@ var physicalInputProfile: GCPhysicalInputProfile { get }
 @property (nonatomic, strong, readonly) GCPhysicalInputProfile * physicalInputProfile;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience property that returns the [`extendedGamepad`](./extendedgamepad.md) or [`microGamepad`](./microgamepad.md) properties.
 

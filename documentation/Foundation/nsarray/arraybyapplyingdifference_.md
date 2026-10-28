@@ -21,7 +21,7 @@ Creates a new array by applying a difference object to an existing array.
 - (NSArray<id> *) arrayByApplyingDifference:(NSOrderedCollectionDifference<id> *) difference;
 ```
 
-#### Discussion
+## Discussion
 
 The following example computes the difference between two arrays, then applies the difference to create an array that duplicates the original:
 

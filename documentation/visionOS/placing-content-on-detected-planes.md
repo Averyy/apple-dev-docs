@@ -10,13 +10,13 @@ Detect horizontal surfaces like tables and floors, as well as vertical planes li
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 Flat surfaces are an ideal place to position content in an app that uses a Full Space in visionOS. They provide a place for virtual 3D content to live alongside a person’s surroundings. Use plane detection in ARKit to detect these kinds of surfaces and filter the available planes based on criteria your app might need, such as the size of the plane, its proximity to someone, or a required plane orientation.
 
 [Video: A video that pans across a room showing a debug visualization of detected planes. Each plane has a label for the type of plane, including a table, a wall, and a floor. The visualization's plane extents match the shape of the item, so the table visualization is round to match the round table and the others are rectangles.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/plane-detection.mp4)
 
-##### Use RealityKit anchor entities for basic plane anchoring
+### Use RealityKit anchor entities for basic plane anchoring
 
 If you don’t need a specific plane in your app and you’re rendering your app’s 3D content in RealityKit, you can use an [`AnchorEntity`](../RealityKit/anchorentity.md) instead. This approach lets you attach 3D content to a plane without prompting the person for world-sensing permission and without any particular knowledge of where that plane is relative to the person.
 
@@ -28,7 +28,7 @@ AnchorEntity(.plane(.horizontal, classification: .table, minimumBounds: [0.5, 0.
 
 Anchor entities don’t let you choose a specific plane in a person’s surroundings, but rather let you ask for a plane with certain characteristics. When you need more specific plane selection or real-time information about the plane’s position and orientation in the world, use `ARKitSession` and `PlaneDetectionProvider`.
 
-##### Configure an ARKit session for plane detection
+### Configure an ARKit session for plane detection
 
 Plane-detection information comes from an [`ARKitSession`](../ARKit/arkitsession.md) that’s configured to use a [`PlaneDetectionProvider`](../ARKit/planedetectionprovider.md). You can choose to detect horizontal planes, vertical planes, or both. Each plane that ARKit detects comes with a classification, like [`PlaneAnchor.Classification.table`](../ARKit/planeanchor/classification-swift.enum/table.md) or [`PlaneAnchor.Classification.floor`](../ARKit/planeanchor/classification-swift.enum/floor.md). You can use these classifications to further refine which kinds of planes your app uses to present content. Plane detection requires [`ARKitSession.AuthorizationType.worldSensing`](../ARKit/arkitsession/authorizationtype/worldsensing.md) authorization.
 
@@ -57,7 +57,7 @@ Task {
 }
 ```
 
-##### Create and update entities associated with each plane
+### Create and update entities associated with each plane
 
 If you’re displaying content that needs to appear attached to a particular plane, update your content whenever you receive new information from ARKit. When a plane is no longer available in the person’s surroundings, ARKit sends a removal event. Respond to these events by removing content associated with the plane.
 

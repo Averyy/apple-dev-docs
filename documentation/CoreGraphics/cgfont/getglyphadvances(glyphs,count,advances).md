@@ -25,7 +25,7 @@ func getGlyphAdvances(glyphs: UnsafePointer<CGGlyph>, count: Int, advances: Unsa
 extern bool CGFontGetGlyphAdvances(CGFontRef font, const CGGlyph *glyphs, size_t count, int *advances);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) unless the advance widths can’t be provided for some reason.
 

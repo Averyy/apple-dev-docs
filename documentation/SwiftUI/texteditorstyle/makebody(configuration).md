@@ -21,7 +21,7 @@ Creates a view that represents the body of a text editor.
 @MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method for each [`TextEditor`](../texteditor.md) instance in a view hierarchy where this style is the current text editor style.
 

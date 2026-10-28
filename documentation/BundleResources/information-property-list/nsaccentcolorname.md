@@ -19,7 +19,7 @@ The name of a color in an asset catalog to use for a target’s global accent co
 - **Name**: `NSAccentColorName`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This `Info.plist` value controls the global tint color (iOS and watchOS) or accent color (macOS) for the target.  When set in a widget extension, the widget configuration user interface uses this color as the tint color while editing a widget.
 

@@ -21,7 +21,7 @@ typealias ABPersonCompositeNameFormat = UInt32
 typedef uint32_t ABPersonCompositeNameFormat;
 ```
 
-#### Discussion
+## Discussion
 
 See [Composite Name Format](./api-1619815-composite-name-format.md).
 

@@ -15,11 +15,11 @@ Returns an `ABPerson` instance initialized with the given data.
 init!(VCardRepresentation vCardData: Data!)
 ```
 
-#### Return Value
+## Return Value
 
 An `ABPerson` instance initialized with the given data.
 
-#### Discussion
+## Discussion
 
 Version 2.1 and 3.0 of the vCard format are supported. If `vCardData` is `nil` or is not a valid vCard format, this method returns `nil`.
 

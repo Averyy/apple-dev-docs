@@ -15,7 +15,7 @@ A dictionary key for the user readable name string of the codec.
 extern VTExtensionPropertiesKey const kVTExtensionProperties_CodecNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key points to a `CFStringRef` with the name of the codec from the supplied format description. This name will be the one listed in the extension CodecInfo array with the key CodecName.
 

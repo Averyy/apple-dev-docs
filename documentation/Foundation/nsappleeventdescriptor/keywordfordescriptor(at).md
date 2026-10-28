@@ -20,7 +20,7 @@ func keywordForDescriptor(at index: Int) -> AEKeyword
 - (AEKeyword) keywordForDescriptorAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The keyword (a four-character code) for the descriptor at the one-based location specified by `anIndex`, or 0 if an error occurs.
 

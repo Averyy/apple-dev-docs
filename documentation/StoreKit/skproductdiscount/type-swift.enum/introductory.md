@@ -27,7 +27,7 @@ case introductory
 SKProductDiscountTypeIntroductory
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Implementing introductory offers in your app](../../implementing-introductory-offers-in-your-app.md).
 

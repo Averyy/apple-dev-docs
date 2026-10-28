@@ -19,7 +19,7 @@ func PMGetUnadjustedPageRect(_ pageFormat: PMPageFormat, _ pageRect: UnsafeMutab
 OSStatus PMGetUnadjustedPageRect(PMPageFormat pageFormat, PMRect *pageRect);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 

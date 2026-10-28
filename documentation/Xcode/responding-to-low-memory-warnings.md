@@ -5,7 +5,7 @@
 
 Detect when your app is using excessive memory, and bring memory use under control.
 
-#### Overview
+## Overview
 
 iOS sends your app a warning when its memory use approaches the limit of available device memory. The amount of memory use that triggers a memory warning corresponds to the yellow region in Xcode’s memory gauge. Your app can receive a memory warning in any of these ways:
 

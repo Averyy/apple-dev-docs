@@ -16,7 +16,7 @@ get showsUserLocation(): boolean;
 set showsUserLocation(value: boolean);
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `true` to determine the user’s location and make it visible on the map as a pulsing blue dot annotation.
 

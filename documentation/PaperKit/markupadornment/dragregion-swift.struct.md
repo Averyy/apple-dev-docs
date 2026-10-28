@@ -12,7 +12,7 @@ The movement behavior and interaction constraints for a markup adornment.
 struct DragRegion
 ```
 
-#### Overview
+## Overview
 
 A `DragRegion` determines if and how people can reposition an adornment within the markup canvas. You can configure adornments to remain fixed in place or allow people to move them freely.
 

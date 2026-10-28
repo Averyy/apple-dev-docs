@@ -20,7 +20,7 @@ var backgroundColor: NSColor { get set }
 @property (copy) NSColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default background color is light gray.
 

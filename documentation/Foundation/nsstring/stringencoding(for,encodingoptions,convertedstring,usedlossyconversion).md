@@ -25,7 +25,7 @@ class func stringEncoding(for data: Data, encodingOptions opts: [StringEncodingD
 + (NSStringEncoding) stringEncodingForData:(NSData *) data encodingOptions:(NSDictionary<NSString *,id> *) opts convertedString:(NSString **) string usedLossyConversion:(BOOL *) usedLossyConversion;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSStringEncoding` value, or `0` if a string encoding could not be determined.
 

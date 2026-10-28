@@ -23,7 +23,7 @@ var segmentsDownloadedDuration: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval segmentsDownloadedDuration;
 ```
 
-#### Discussion
+## Discussion
 
 If the accumulated media duration is unknown, this property’s value is negative.
 

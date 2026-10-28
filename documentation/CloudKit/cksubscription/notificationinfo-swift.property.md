@@ -26,7 +26,7 @@ var notificationInfo: CKSubscription.NotificationInfo? { get set }
 @property (copy, nullable) CKNotificationInfo * notificationInfo;
 ```
 
-#### Discussion
+## Discussion
 
 If you want the system to display your subscription’s push notifications, assign a value to this property. The server uses the configuration you provide to determine the delivery options for notifications. For example, you can specify the text to display to the user, and the sound to play. You can also specify which fields of the record to include in the notification’s payload.
 

@@ -20,7 +20,7 @@ Presents the updated texture to the renderer as soon as possible.
 func present()
 ```
 
-#### Discussion
+## Discussion
 
 Needs to be called after all commands in the command buffer have been executed (e.g. after `MTLCommandBuffer.waitUntilCompleted()`). When you call this method, the drawable will make the new texture content available to the renderer immediately.
 

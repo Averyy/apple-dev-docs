@@ -20,7 +20,7 @@ var identifier: NSUserInterfaceItemIdentifier? { get set }
 @property (copy, nullable) NSUserInterfaceItemIdentifier identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Identifiers are used during window restoration operations to uniquely identify the windows of the application. You can set the value of this string programmatically or in Interface Builder. If you create an item in Interface Builder and do not set a value for this string, a unique value is created for the item when the nib file is loaded. For programmatically created views, you typically set this value after creating the item but before adding it to a window.
 

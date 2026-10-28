@@ -25,15 +25,15 @@ func primitiveValue(forKey key: String) -> Any?
 - (id) primitiveValueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the property specified by `key`. Returns `nil` if no value has been set.
 
-#### Discussion
+## Discussion
 
 This method does not invoke the access notification methods ([`willAccessValue(forKey:)`](./willaccessvalue%28forkey%29.md) and [`didAccessValue(forKey:)`](./didaccessvalue%28forkey%29.md)). This method is used primarily by subclasses that implement custom accessor methods that need direct access to the receiver’s private storage.
 
-##### Special Considerations
+### Special Considerations
 
 Subclasses should not override this method.
 

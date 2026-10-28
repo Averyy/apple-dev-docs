@@ -20,7 +20,7 @@ Embeds a code example from the project’s code snippets.
 @Snippet(path: String, slice: String?)
 ```
 
-#### Overview
+## Overview
 
 Use a `Snippet` directive to embed a code example from the project’s “Snippets” directory on the page. The `path` argument is the relative path from the package’s top-level “Snippets” directory to your snippet file without the `.swift` extension.
 

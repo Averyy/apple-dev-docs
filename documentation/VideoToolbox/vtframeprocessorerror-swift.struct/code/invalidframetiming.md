@@ -24,7 +24,7 @@ case invalidFrameTiming
 VTFrameProcessorInvalidFrameTiming
 ```
 
-#### Discussion
+## Discussion
 
 The time stamp is either invalid or out-of-order.
 

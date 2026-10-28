@@ -17,7 +17,7 @@ Create appropriate caches for each layer type.
 func newCache(parameters: GenerateParameters?) throws -> [KVCache]
 ```
 
-#### Discussion
+## Discussion
 
 Sliding-window layers use the smaller of the architecture window and `GenerateParameters.maxKVSize`; full-attention layers use the requested limit.
 

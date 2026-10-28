@@ -5,7 +5,7 @@
 
 Set the layout and frequency of ads automatically inserted in an article.
 
-#### Overview
+## Overview
 
 Apple News places ads in any of the following locations:
 
@@ -24,7 +24,7 @@ In addition to the location requirements, Apple News makes decisions about ad pl
 - Both the size of your article and the arrangement of the components affect ad placement.
 - Two ads can’t appear in the same viewport, which is the section of the article that’s currently visible within a person’s device frame.
 
-##### Adjust Your Ads Settings
+### Adjust Your Ads Settings
 
 To control the placement of ads in your channel, use News Publisher. For more information, see [Apple News and ads](https://support.apple.com/guide/adguide/apple-news-and-ads-apd070650e01/icloud) in the Ads on Apple News User Guide.
 

@@ -18,7 +18,7 @@ Compares two objects
 virtual bool isEqualTo(const OSMetaClassBase *anObject) const;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation only compares the object pointers, however many container classes override to provide deeper comparison.
 

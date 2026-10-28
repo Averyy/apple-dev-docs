@@ -23,7 +23,7 @@ static var beginFromCurrentState: UIView.KeyframeAnimationOptions { get }
 UIViewKeyframeAnimationOptionBeginFromCurrentState
 ```
 
-#### Discussion
+## Discussion
 
 If this option isn’t present, any in-flight animations are allowed to finish before the new animation is started. If another animation isn’t in flight, this option has no effect.
 

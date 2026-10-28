@@ -19,7 +19,7 @@ func withMatrix(_ matrix: AffineTransform) -> NSFontDescriptor
 - (NSFontDescriptor *) fontDescriptorWithMatrix:(NSAffineTransform *) matrix;
 ```
 
-#### Return Value
+## Return Value
 
 The new font descriptor.
 

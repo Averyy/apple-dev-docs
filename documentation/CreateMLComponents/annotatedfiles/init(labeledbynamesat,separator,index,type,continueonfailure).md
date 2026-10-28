@@ -21,7 +21,7 @@ Reads training examples from a directory containing files having their labels in
 init(labeledByNamesAt url: URL, separator: Character = ".", index: Int = 0, type: UTType, continueOnFailure: Bool = false) throws
 ```
 
-#### Discussion
+## Discussion
 
 Take for example this directory structure:
 

@@ -24,7 +24,7 @@ var paddingValues: [NSNumber] { get set }
 @property (nonatomic, copy, readwrite) NSArray<NSNumber *> * paddingValues;
 ```
 
-#### Discussion
+## Discussion
 
 Must be six numbers, two for each spatial dimension. For example `paddingValues[0]` defines the explicit padding amount before the first spatial dimension (slowest running index of spatial dimensions), `paddingValues[1]` defines the padding amount after the first spatial dimension etc. Use only with `paddingStyle = MPSGraphPaddingStyleExplicit`. Default value: `@[ @0, @0, @0, @0, @0, @0 ]`
 

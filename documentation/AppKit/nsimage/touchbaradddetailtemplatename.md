@@ -22,7 +22,7 @@ class let touchBarAddDetailTemplateName: String
 extern NSImageName const NSImageNameTouchBarAddDetailTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for add detail](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793473@2x.png)
 

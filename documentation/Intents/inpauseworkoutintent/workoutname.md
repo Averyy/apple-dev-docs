@@ -32,7 +32,7 @@ var workoutName: INSpeakableString? { get }
 @property (atomic, copy, readonly, nullable) INSpeakableString * workoutName;
 ```
 
-#### Discussion
+## Discussion
 
 If the user paused a specific workout, this property contains the wourkout name. The workout name can be user-specified, a workout name defined in your app’s global vocabulary file, or a custom workout name spoken by the user.
 

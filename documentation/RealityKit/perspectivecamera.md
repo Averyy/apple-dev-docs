@@ -21,7 +21,7 @@ A virtual camera that establishes the rendering perspective.
 @preconcurrency class PerspectiveCamera
 ```
 
-#### Overview
+## Overview
 
 During an AR session, RealityKit automatically uses the device’s camera to define the perspective from which to render the scene. When rendering a scene outside of an AR session (with the view’s [`cameraMode`](./arview/cameramode-swift.property.md) property set to [`ARView.CameraMode.nonAR`](./arview/cameramode-swift.enum/nonar.md)), RealityKit uses a [`PerspectiveCamera`](./perspectivecamera.md) instead. You can add a perspective camera anywhere in your scene to control the point of view. If you don’t explicitly provide one, RealityKit creates a default camera for you.
 

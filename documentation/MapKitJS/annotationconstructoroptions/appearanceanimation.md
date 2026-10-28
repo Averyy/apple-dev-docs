@@ -15,7 +15,7 @@ A CSS animation that runs when the annotation appears on the map.
 appearanceAnimation?: string;
 ```
 
-#### Discussion
+## Discussion
 
 CSS animation running when the annotation appears. The default value is `""` (empty string).
 

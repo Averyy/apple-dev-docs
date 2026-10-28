@@ -22,7 +22,7 @@ var bracketSettings: AVCaptureBracketedStillImageSettings? { get }
 @property (readonly, nullable) AVCaptureBracketedStillImageSettings * bracketSettings;
 ```
 
-#### Discussion
+## Discussion
 
 When you request a bracketed capture using the [`AVCapturePhotoBracketSettings`](../avcapturephotobracketsettings.md) class, you specify an array of [`AVCaptureBracketedStillImageSettings`](../avcapturebracketedstillimagesettings.md) objects indicating the capture setting variations (such as exposure compensation) to apply to each image in the bracket. This property indicates the settings associated with this particular photo, or `nil` if this photo is not part of a bracketed capture.
 

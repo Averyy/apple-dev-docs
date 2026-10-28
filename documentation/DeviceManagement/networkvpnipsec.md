@@ -19,11 +19,11 @@ The declaration to configure a VPN using the IPSec sub-type.
 object NetworkVPNIPSec
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.network.vpn.ipsec` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Specify `com.apple.configuration.network.vpn.ipsec` as the declaration type.
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration examples
+### Configuration examples
 
 **Shared secret**:
 

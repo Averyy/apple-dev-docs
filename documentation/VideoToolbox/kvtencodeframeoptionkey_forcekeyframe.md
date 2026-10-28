@@ -24,7 +24,7 @@ let kVTEncodeFrameOptionKey_ForceKeyFrame: CFString
 extern CFStringRef const kVTEncodeFrameOptionKey_ForceKeyFrame;
 ```
 
-#### Discussion
+## Discussion
 
 This value is set in the `frameProperties` dictionary passed to [`VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:sourceFrameRefcon:infoFlagsOut:)`](./vtcompressionsessionencodeframe%28_,imagebuffer,presentationtimestamp,duration,frameproperties,sourceframerefcon,infoflagsout%29.md); it determines whether the current frame is forced to be a keyframe or not. Note that it may not be possible for the encoder to accommodate all requests.
 

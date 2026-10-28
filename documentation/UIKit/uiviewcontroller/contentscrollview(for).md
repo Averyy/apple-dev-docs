@@ -23,11 +23,11 @@ func contentScrollView(for edge: NSDirectionalRectEdge) -> UIScrollView?
 - (UIScrollView *) contentScrollViewForEdge:(NSDirectionalRectEdge) edge;
 ```
 
-#### Return Value
+## Return Value
 
 The scroll view the view controller observes for the edge.
 
-#### Discussion
+## Discussion
 
 Toolbars, navigation bars, and tab bars adjust their appearance when the edge of a scroll view’s content aligns with the edge of the bar. If you want to disable this behavior for one or more edges, override this method and return `nil` for the appropriate edge. If you don’t set a scroll view with [`setContentScrollView(_:for:)`](./setcontentscrollview%28_,for%29.md) or [`setContentScrollView(_:)`](./setcontentscrollview%28_%29.md), the default implementation of this method returns `nil`.
 

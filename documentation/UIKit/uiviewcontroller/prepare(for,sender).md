@@ -29,7 +29,7 @@ func prepare(for segue: UIStoryboardSegue, sender: Any?)
 
 - [Customizing the behavior of segue-based presentations](../customizing-the-behavior-of-segue-based-presentations.md)
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses override this method and use it to configure the new view controller prior to it being displayed. The segue object contains information about the transition, including references to both view controllers that are involved.
 

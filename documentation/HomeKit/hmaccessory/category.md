@@ -24,7 +24,7 @@ var category: HMAccessoryCategory { get }
 @property (nonatomic, strong, readonly) HMAccessoryCategory * category;
 ```
 
-#### Discussion
+## Discussion
 
 The accessory’s [`category`](./category.md) property contains an instance of the [`HMAccessoryCategory`](../hmaccessorycategory.md) class that indicates the kind of accessory, like light bulb, garage door opener, or faucet. Use this information to help users distinguish among different accessories in their environment.
 

@@ -16,7 +16,7 @@ The module identifier of the package with which this instance is associated.
 let moduleAID: Data
 ```
 
-#### Discussion
+## Discussion
 
 The combination of the package identifier and this identifier indicates what type the associated applet instance is.
 

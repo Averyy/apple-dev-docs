@@ -19,7 +19,7 @@ func ABCopyDefaultCountryCode(_ addressBook: ABAddressBookRef!) -> Unmanaged<CFS
 extern CFStringRefABCopyDefaultCountryCode(ABAddressBookRef addressBook);
 ```
 
-#### Return Value
+## Return Value
 
 A string with the default country code. You are responsible for releasing this object.
 

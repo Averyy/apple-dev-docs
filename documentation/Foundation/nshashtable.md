@@ -25,7 +25,7 @@ class NSHashTable<ObjectType> where ObjectType : AnyObject
 @interface NSHashTable : NSObject
 ```
 
-#### Overview
+## Overview
 
 The hash table is modeled after [`NSSet`](./nsset.md) with the following differences:
 
@@ -39,7 +39,7 @@ Because of its options, `NSHashTable` is not a set because it can behave differe
 
 When configuring hash tables, note that only the options listed in [`NSHashTableOptions`](./nshashtableoptions.md) guarantee that the rest of the API will work correctly—including copying, archiving, and fast enumeration. While other [`NSPointerFunctions`](./nspointerfunctions.md) options are used for certain configurations, such as to hold arbitrary pointers, not all combinations of the options are valid. With some combinations the hash table may not work correctly, or may not even be initialized correctly.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 `NSHashTable` is not suitable for subclassing.
 

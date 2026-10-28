@@ -29,7 +29,7 @@ func recordProgram(with params: MTRChannelClusterRecordProgramParams) async thro
 - (void) recordProgramWithParams:(MTRChannelClusterRecordProgramParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Record a specific program or series when it goes live. This functionality enables DVR recording features.
 

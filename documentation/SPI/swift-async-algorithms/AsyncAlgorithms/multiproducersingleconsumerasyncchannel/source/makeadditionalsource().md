@@ -24,11 +24,11 @@ Creates a new source which can be used to send elements to the channel concurren
 mutating func makeAdditionalSource() -> sending MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source
 ```
 
-#### Return Value
+## Return Value
 
 A new source for sending elements to the channel.
 
-#### Discussion
+## Discussion
 
 The channel will only automatically be finished if all existing sources have been deinited.
 

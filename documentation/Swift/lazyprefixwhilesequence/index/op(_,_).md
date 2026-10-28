@@ -23,7 +23,7 @@ static func < (lhs: LazyPrefixWhileCollection<Base>.Index, rhs: LazyPrefixWhileC
 
 Available when `Base` conforms to `Collection`.
 
-#### Discussion
+## Discussion
 
 This function is the only requirement of the `Comparable` protocol. The remainder of the relational operator functions are implemented by the standard library for any type that conforms to `Comparable`.
 

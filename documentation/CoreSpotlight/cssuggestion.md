@@ -27,7 +27,7 @@ class CSSuggestion
 
 - [Building a search interface for your app](./building-a-search-interface-for-your-app.md)
 
-#### Overview
+## Overview
 
 Your app uses `CSSuggestion` objects to populate a contextual menu of suggestions.
 

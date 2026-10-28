@@ -19,7 +19,7 @@ var pasteboardItems: [NSPasteboardItem]? { get }
 @property (copy, readonly, nullable) NSArray<NSPasteboardItem *> * pasteboardItems;
 ```
 
-#### Discussion
+## Discussion
 
 If an error occurs when retrieving the pasteboard items, the value of this property is `nil`.
 

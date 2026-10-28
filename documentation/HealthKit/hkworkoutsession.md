@@ -28,7 +28,7 @@ class HKWorkoutSession
 
 - [Running workout sessions](./running-workout-sessions.md)
 
-#### Overview
+## Overview
 
 The session fine-tunes Apple Watch’s sensors for the specified activity. All workout sessions generate high-frequency heart rate samples; however, an outdoor cycling activity generates accurate location data, while an indoor cycling activity doesn’t.
 

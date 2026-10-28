@@ -21,7 +21,7 @@ static IOAudioLevelControl *create(
  UInt32 usage = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a newly allocted and initialized level IOAudioControl
 

@@ -26,7 +26,7 @@ var stencilPixelFormat: MTLPixelFormat { get }
 @property (nonatomic, readonly) MTLPixelFormat stencilPixelFormat;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property, along with the [`depthPixelFormat`](./depthpixelformat.md) and [`colorPixelFormat`](./colorpixelformat.md) properties, if you perform custom drawing with Metal (see the [`SCNSceneRendererDelegate`](../scnscenerendererdelegate.md) and [`SCNNodeRendererDelegate`](../scnnoderendererdelegate.md) classes) and need to create a new [`MTLRenderPipelineState`](../../Metal/mtlrenderpipelinestate.md) object to change the GPU state as part of your rendering.
 

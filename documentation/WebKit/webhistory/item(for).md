@@ -19,7 +19,7 @@ func item(for URL: URL!) -> WebHistoryItem!
 - (WebHistoryItem *) itemForURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 The web history item that represents visits to the specified URL, or `nil` if none was found.
 

@@ -17,7 +17,7 @@ A collection of materials that cloth colliders and cloth bodies can use in this 
 var materials: ClothSimulationComponent.MaterialCollection
 ```
 
-#### Discussion
+## Discussion
 
 Cloth bodies and colliders can refer to these materials by specifying the material name via [`materialNames`](../clothbodycomponent/materialnames.md) and [`materialNames`](../clothcollidercomponent/materialnames.md).
 

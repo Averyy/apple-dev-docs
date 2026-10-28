@@ -19,11 +19,11 @@
 static SPRotationAxis3D SPRotationAxis3DMake(double x, double y, double z);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation axis.
 
-#### Discussion
+## Discussion
 
 Creates an axis with the specified components.
 

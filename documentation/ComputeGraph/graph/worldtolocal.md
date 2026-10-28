@@ -16,11 +16,11 @@ Returns the transformation matrix from world space to local space.
 float4x4 graph::worldToLocal()
 ```
 
-#### Return Value
+## Return Value
 
 A 4x4 transformation matrix for world-to-local conversion.
 
-#### Discussion
+## Discussion
 
 This matrix transforms coordinates from the scene’s coordinate system to the graph’s local coordinate system. It is the inverse of the local-to-world matrix.
 

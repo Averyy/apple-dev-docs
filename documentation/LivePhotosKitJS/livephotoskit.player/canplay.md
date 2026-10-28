@@ -15,7 +15,7 @@ A Boolean value that indicates whether the Player is able to begin playback.
 readonly attribute Boolean canPlay;
 ```
 
-#### Discussion
+## Discussion
 
 Even if this property is `false`, playback can be initiated by calling [`play`](./play.md) or (if [`showsNativeControls`](./showsnativecontrols.md) is `true`) positioning the pointer over the LIVE badge.  When playback is attempted, if this value is `false`, every effort is made to load the rest of the required resources.  When successful, playback starts.
 

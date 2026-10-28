@@ -25,11 +25,11 @@ func CFPreferencesSynchronize(_ applicationID: CFString, _ userName: CFString, _
 extern Boolean CFPreferencesSynchronize(CFStringRef applicationID, CFStringRef userName, CFStringRef hostName);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if synchronization was successful, `false` if an error occurred.
 
-#### Discussion
+## Discussion
 
 This function is the primitive synchronize mechanism for the higher level preference function [`CFPreferencesAppSynchronize(_:)`](./cfpreferencesappsynchronize%28_%29.md); it writes updated preferences to permanent storage, and reads the latest preferences from permanent storage. Only the exact domain specified is modified. Note that to modify “Any User” preferences requires root privileges (or Admin privileges prior to OS X v10.7)—see [Authorization Services Programming Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/authorization_concepts/01introduction/introduction.html#//apple_ref/doc/uid/TP30000995).
 

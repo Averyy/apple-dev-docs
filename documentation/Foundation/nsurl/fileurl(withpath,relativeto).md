@@ -29,7 +29,7 @@ class func fileURL(withPath path: String, relativeTo baseURL: URL?) -> URL
 
 - [Improving performance and stability when accessing the file system](../improving-performance-and-stability-when-accessing-the-file-system.md)
 
-#### Discussion
+## Discussion
 
 Better to use `fileURLWithPath:isDirectory:relativeToURL:` if you know if the path is a directory vs non-directory, as it saves an I/O.
 

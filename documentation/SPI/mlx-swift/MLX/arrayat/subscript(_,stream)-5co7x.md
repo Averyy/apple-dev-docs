@@ -17,7 +17,7 @@ Provide indices for the `at` property:
 subscript(indices: any MLXArrayIndex..., stream stream: StreamOrDevice = .default) -> ArrayAtIndices { get }
 ```
 
-#### Overview
+## Overview
 
 ```swift
 let idx = MLXArray([0, 1, 0, 1])
@@ -27,7 +27,7 @@ a2 = a2.at[idx].add(1)
 
 This is specifically the `a2.at[idx]` part.
 
-##### See Also
+### See Also
 
 ```
 - ``MLXArray/at``

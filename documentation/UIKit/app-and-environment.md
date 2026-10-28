@@ -5,7 +5,7 @@
 
 Manage life-cycle events and your app’s UI scenes, and get information about traits and the environment in which your app runs.
 
-#### Overview
+## Overview
 
 From the moment a person opens your app, a number of things can happen that your app may need to handle or adjust to, such as switching to another app, receiving a call, switching Dark Mode on or off, or rotating the device. UIKit communicates some changes as life cycle events, and others as trait changes.
 

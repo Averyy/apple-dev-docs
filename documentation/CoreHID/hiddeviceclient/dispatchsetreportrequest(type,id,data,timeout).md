@@ -19,7 +19,7 @@ func dispatchSetReportRequest(type: HIDReportType, id: HIDReportID? = nil, data:
 
 - [Creating virtual devices](../creatingvirtualdevices.md)
 
-#### Discussion
+## Discussion
 
 Many HID devices accept set report requests to send data to the device or alter functionality. Exactly how a device interprets a set report depends on the device specific implementation, but most devices conform to the reports that they declare in their report [`descriptor`](./descriptor.md). This function throws if another client obtains the device.
 

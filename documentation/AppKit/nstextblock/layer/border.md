@@ -19,7 +19,7 @@ case border
 NSTextBlockLayerBorder
 ```
 
-#### Discussion
+## Discussion
 
 There’s space between padding and margin, typically with color, to present a visible boundary.
 

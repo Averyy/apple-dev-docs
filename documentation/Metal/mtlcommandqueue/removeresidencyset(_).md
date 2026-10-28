@@ -29,7 +29,7 @@ func removeResidencySet(_ residencySet: any MTLResidencySet)
 
 - [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
 
-#### Discussion
+## Discussion
 
 The method doesn’t remove the residency set from command buffers the queue owns with a [`status`](../mtlcommandbuffer/status.md) property that’s equal to [`MTLCommandBufferStatus.committed`](../mtlcommandbufferstatus/committed.md) or [`MTLCommandBufferStatus.scheduled`](../mtlcommandbufferstatus/scheduled.md).
 

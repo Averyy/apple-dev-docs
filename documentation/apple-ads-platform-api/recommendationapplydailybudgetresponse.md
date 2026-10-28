@@ -15,7 +15,7 @@ Response envelope returned when applying or dismissing a daily budget recommenda
 object RecommendationApplyDailyBudgetResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `RecommendationApplyDailyBudgetResponse` object is the top-level response body for `POST /recommendations/daily-budgets/apply`.
 

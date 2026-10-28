@@ -21,7 +21,7 @@ The column number to which the cell belongs.
 @property (readonly) NSInteger column;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `0`-based, with the first column at `0`, the second column at `1`, and so on. Header rows are always at row `0`, with subsequent rows starting at `1`. If The intent is not a cell, this value is `0`.
 

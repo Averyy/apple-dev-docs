@@ -15,11 +15,11 @@ Returns an index path for the item with the specified identifier in the collecti
 func indexPath(for itemIdentifier: ItemIdentifierType) -> IndexPath?
 ```
 
-#### Return Value
+## Return Value
 
 The item’s index path, or `nil` if no item is found with the provided item identifier.
 
-#### Discussion
+## Discussion
 
 This method is a constant time operation, O(1), which means you can look up an index path from its corresponding item identifier with no significant overhead.
 

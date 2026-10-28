@@ -21,7 +21,7 @@ A type that represents assembly language source code.
 extern UTType * const UTTypeAssemblyLanguageSource;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.assembly-source`.
 

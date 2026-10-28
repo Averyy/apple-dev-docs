@@ -22,7 +22,7 @@ Initializes a new [`AsyncStream`](../asyncstream.md) and an [`AsyncStream.Contin
 static func makeStream(of elementType: Element.Type = Element.self, bufferingPolicy limit: AsyncStream<Element>.Continuation.BufferingPolicy = .unbounded) -> (stream: AsyncStream<Element>, continuation: AsyncStream<Element>.Continuation)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the stream and its continuation. The continuation should be passed to the producer while the stream should be passed to the consumer.
 

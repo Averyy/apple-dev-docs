@@ -22,7 +22,7 @@ func adjust(toPickerWheelValue pickerWheelValue: String)
 - (void) adjustToPickerWheelValue:(NSString *) pickerWheelValue;
 ```
 
-#### Discussion
+## Discussion
 
 This method generates a test failure if the specified value isn’t available.
 

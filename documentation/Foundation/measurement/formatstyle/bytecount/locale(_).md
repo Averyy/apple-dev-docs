@@ -21,7 +21,7 @@ Modifies the format style to use the specified locale.
 func locale(_ locale: Locale) -> Measurement<UnitType>.FormatStyle.ByteCount
 ```
 
-#### Return Value
+## Return Value
 
 A format style that uses the specified locale.
 

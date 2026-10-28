@@ -24,7 +24,7 @@ func pauseInteractiveTransition()
 - (void) pauseInteractiveTransition;
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method in the middle of an interruptible animation to pause it.
 

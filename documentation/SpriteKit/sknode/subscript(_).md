@@ -29,7 +29,7 @@ subscript(name: String) -> [SKNode] { get }
 
 - [Searching the Node Tree](../searching-the-node-tree.md)
 
-#### Return Value
+## Return Value
 
 An array of `SKNode` objects that match the name. If no matching nodes are found, an empty array is returned.
 

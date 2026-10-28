@@ -20,11 +20,11 @@ func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Ident
 - (NSArray<NSString *> *) toolbarAllowedItemIdentifiers:(NSToolbar *) toolbar;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSString`](../../Foundation/nsstring.md) objects, each of which contains an identifier for an available toolbar item. The array must contain all of the items returned by the [`toolbarDefaultItemIdentifiers(_:)`](./toolbardefaultitemidentifiers%28_%29.md) method.
 
-#### Discussion
+## Discussion
 
 This method is called for tab view interfaces that use the [`NSTabViewController.TabStyle.toolbar`](./tabstyle-swift.enum/toolbar.md) style. Use this method to specify all possible items that may be included in the toolbar. The order of the items in the array is used to set their position in the toolbar configuration palette. If you include custom identifiers in the returned array, you must also override the [`toolbar(_:itemForItemIdentifier:willBeInsertedIntoToolbar:)`](./toolbar%28_,itemforitemidentifier,willbeinsertedintotoolbar%29.md) method to specify the content for those toolbar items.
 

@@ -18,7 +18,7 @@ Handle changes to data within the finance store.
 func didReceiveData(for types: [FinanceStore.BackgroundDataType]) async
 ```
 
-#### Discussion
+## Discussion
 
 The entry point of a `BackgroundDeliveryExtension`, called when data changes within the finance store. From here, use the FinanceKit API to query and process those changes.
 

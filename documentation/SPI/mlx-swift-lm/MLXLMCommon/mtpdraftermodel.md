@@ -17,7 +17,7 @@ Protocol for Multi-Token Prediction (MTP) speculative drafter models.
 protocol MTPDrafterModel : BaseLanguageModel
 ```
 
-#### Overview
+## Overview
 
 Mirrors `EmbeddingModel`’s relationship to `BaseLanguageModel`: this protocol refines `BaseLanguageModel` with drafter-specific surface, so implementations inherit weight loading and `sanitize` hooks while defining their own forward signature.
 

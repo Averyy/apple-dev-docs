@@ -24,11 +24,11 @@ func doubleValue(for unit: HKUnit) -> Double
 - (double) doubleValueForUnit:(HKUnit *) unit;
 ```
 
-#### Return Value
+## Return Value
 
 The quantity’s value in the provided units.
 
-#### Discussion
+## Discussion
 
 This method converts the quantity’s value to the desired units. You do not need to know the quantity’s original units. You can request the value in whatever units you want, as long as they are compatible with the quantity. This lets each application (or each locale) work with its preferred units.
 

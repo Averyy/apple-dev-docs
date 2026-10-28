@@ -23,7 +23,7 @@ var coreSpotlightExporter: NSCoreDataCoreSpotlightDelegate { get }
 @property (nonatomic, readonly) NSCoreDataCoreSpotlightDelegate * coreSpotlightExporter;
 ```
 
-#### Discussion
+## Discussion
 
 Spotlight support isn’t available in a compatible iPad or iPhone app running in visionOS.
 

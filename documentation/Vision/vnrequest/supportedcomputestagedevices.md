@@ -20,7 +20,7 @@ The collection of compute devices per stage that a request supports.
 var supportedComputeStageDevices: [VNComputeStage : [MLComputeDevice]] { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 A dictionary of per-stage compute devices; otherwise, `nil` if an error occurs.
 

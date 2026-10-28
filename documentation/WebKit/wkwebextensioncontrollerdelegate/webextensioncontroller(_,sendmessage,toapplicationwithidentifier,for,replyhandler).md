@@ -27,7 +27,7 @@ optional func webExtensionController(_ controller: WKWebExtensionController, sen
 - (void) webExtensionController:(WKWebExtensionController *) controller sendMessage:(id) message toApplicationWithIdentifier:(NSString *) applicationIdentifier forExtensionContext:(WKWebExtensionContext *) extensionContext replyHandler:(void (^)(id replyMessage, NSError *error)) replyHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be implemented by the app to handle one-off messages to applications.
 

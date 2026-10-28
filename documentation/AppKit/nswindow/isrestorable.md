@@ -19,7 +19,7 @@ var isRestorable: Bool { get set }
 @property (getter=isRestorable) BOOL restorable;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) if you want the window to be preserved or [`false`](../../Swift/false.md) if you do not want it preserved. By default, the value of this property is [`true`](../../Swift/true.md) if the window’s [`styleMask`](./stylemask-swift.property.md) property includes the [`NSTitledWindowMask`](../nstitledwindowmask.md) flag. For other windows, the value is [`false`](../../Swift/false.md). Setting a value explicitly overrides the default values.
 

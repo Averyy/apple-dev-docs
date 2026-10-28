@@ -33,7 +33,7 @@ var isCompleted: Bool { get }
 @property (atomic, readonly, getter=isCompleted) BOOL completed;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`true`](../../Swift/true.md) if the `percentComplete` property is equal to `100.0`; otherwise, it’s [`false`](../../Swift/false.md).
 

@@ -20,11 +20,11 @@ typealias AEEventHandlerProcPtr = (UnsafePointer<AppleEvent>?, UnsafeMutablePoin
 typedef OSErr (*AEEventHandlerProcPtr)(const AppleEvent *theAppleEvent, AppleEvent *reply, SRefCon handlerRefcon);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145). Your handler should always return `noErr` if it successfully handled the Apple event. If an error occurs, your handler should return either `errAEEventNotHandled` or some other nonzero result code. For more information, see the Discussion section.
 
-#### Discussion
+## Discussion
 
 An Apple event handler should extract any parameters and attributes from the Apple event, perform the requested action, and add parameters to the reply Apple event if appropriate. You must provide an Apple event handler for each Apple event your application supports. The `AEProcessAppleEvent(_:)` function calls one of your Apple event handlers when it processes an Apple event.
 

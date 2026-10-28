@@ -25,7 +25,7 @@ var entityName: String? { get }
 @property (nonatomic, strong, readonly, nullable) NSString * entityName;
 ```
 
-#### Discussion
+## Discussion
 
 The entity name property is populated whenever the NSFetchRequest is created with `NSFetchRequest/init(entityName:)` or [`init(entityName:)`](./init%28entityname%29-5anoo.md).
 

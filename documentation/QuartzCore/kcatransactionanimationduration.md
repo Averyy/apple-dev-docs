@@ -24,7 +24,7 @@ let kCATransactionAnimationDuration: String
 extern NSString * const kCATransactionAnimationDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key must be an instance of [`NSNumber`](../Foundation/nsnumber.md).
 

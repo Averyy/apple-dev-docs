@@ -20,11 +20,11 @@ var image: CGImage! { get }
 @property (atomic, readonly) CGImageRef image;
 ```
 
-#### Return Value
+## Return Value
 
 An image.
 
-#### Discussion
+## Discussion
 
 Your data source must implement this method.
 

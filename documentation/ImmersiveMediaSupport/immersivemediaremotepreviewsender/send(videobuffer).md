@@ -15,7 +15,7 @@ Sends the video frame to the receivers.
 func send(videoBuffer: CMSampleBuffer) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: This function throws if anything fails while sending the frame, for example, if the frame has an invalid format or data.
 

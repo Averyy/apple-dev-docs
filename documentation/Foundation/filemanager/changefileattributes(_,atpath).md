@@ -26,17 +26,17 @@ func changeFileAttributes(_ attributes: [AnyHashable : Any] = [:], atPath path: 
 - (BOOL) changeFileAttributes:(NSDictionary *) attributes atPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if *all* changes succeed. If any change fails, returns [`false`](../../Swift/false.md), but it is undefined whether any changes actually occurred.
 
-#### Discussion
+## Discussion
 
 As in the POSIX standard, the app either must own the file or directory or must be running as superuser for attribute changes to take effect. The method attempts to make all changes specified in attributes and ignores any rejection of an attempted modification.
 
 The `NSFilePosixPermissions` value must be initialized with the code representing the POSIX file-permissions bit pattern. `NSFileHFSCreatorCode` and `NSFileHFSTypeCode` will only be heeded when `path` specifies a file.
 
-##### Special Considerations
+### Special Considerations
 
 Because this method does not return error information, it has been deprecated as of OS X v10.5. Use [`setAttributes(_:ofItemAtPath:)`](./setattributes%28_,ofitematpath%29.md) instead.
 

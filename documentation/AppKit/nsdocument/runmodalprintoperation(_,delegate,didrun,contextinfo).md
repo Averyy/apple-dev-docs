@@ -19,7 +19,7 @@ func runModalPrintOperation(_ printOperation: NSPrintOperation, delegate: Any?, 
 - (void) runModalPrintOperation:(NSPrintOperation *) printOperation delegate:(id) delegate didRunSelector:(SEL) didRunSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Overrides of [`printShowingPrintPanel:`](./printshowingprintpanel_.md) can invoke this method.
 

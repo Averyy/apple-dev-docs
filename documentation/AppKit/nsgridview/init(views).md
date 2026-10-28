@@ -19,7 +19,7 @@ convenience init(views rows: [[NSView]])
 + (instancetype) gridViewWithViews:(NSArray<NSArray<NSView *> *> *) rows;
 ```
 
-#### Discussion
+## Discussion
 
 This method creates an autoreleased grid view large enough to hold the passed array of rows. Each element in the array is itself an array of views for that row.
 

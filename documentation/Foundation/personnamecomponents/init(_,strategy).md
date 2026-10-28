@@ -21,7 +21,7 @@ Creates a person name components object from a given string by applying the prov
 init<S>(_ value: S.ParseInput, strategy: S) throws where S : ParseStrategy, S.ParseOutput == PersonNameComponents
 ```
 
-#### Discussion
+## Discussion
 
 This method uses a combination of locale rules and the provided parse strategy object to determine the most likely name components for a particular string representation. Parsing name components from a representation created for an existing name components object may not produce equivalent results.
 

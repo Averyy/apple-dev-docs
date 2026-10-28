@@ -15,7 +15,7 @@ A coordinate space data object.
 struct CoordinateSpaceData
 ```
 
-#### Overview
+## Overview
 
 > **Note**: The underlying data needs to be sent to each participant in the shared coordinate space.
 

@@ -24,7 +24,7 @@ optional func download(_ download: BADownload, finishedWithFileURL fileURL: URL)
 - (void) download:(BADownload *) download finishedWithFileURL:(NSURL *) fileURL;
 ```
 
-#### Discussion
+## Discussion
 
 Prefer to access downloaded assets in-place, rather than moving or copying them. This enables the system to include those assets when evaluating which files it can safely delete when a person’s device is running low on disk space.
 

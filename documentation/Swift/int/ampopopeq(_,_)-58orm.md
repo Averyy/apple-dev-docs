@@ -21,7 +21,7 @@ Returns the result of shifting a value’s binary representation the specified n
 static func &<<= (lhs: inout Int, rhs: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The `&<<=` operator performs a *masking shift*, where the value used as `rhs` is masked to produce a value in the range `0..<lhs.bitWidth`. The shift is performed using this masked value.
 

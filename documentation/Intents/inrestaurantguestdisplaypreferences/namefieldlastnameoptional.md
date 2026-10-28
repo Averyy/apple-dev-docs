@@ -30,7 +30,7 @@ var nameFieldLastNameOptional: Bool { get set }
 @property (atomic) BOOL nameFieldLastNameOptional;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md), which prevents completion of the reservation if the last name field is empty.
 

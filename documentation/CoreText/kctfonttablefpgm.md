@@ -23,7 +23,7 @@ var kCTFontTableFpgm: Int { get }
 kCTFontTableFpgm
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for font program.
 

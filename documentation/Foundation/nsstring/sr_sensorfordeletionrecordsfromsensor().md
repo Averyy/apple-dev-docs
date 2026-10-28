@@ -21,11 +21,11 @@ func sr_sensorForDeletionRecordsFromSensor() -> SRSensor?
 - (SRSensor) sr_sensorForDeletionRecordsFromSensor;
 ```
 
-#### Return Value
+## Return Value
 
 May return nil if there is no deletion record available for this sensor
 
-#### Discussion
+## Discussion
 
 Returns a sensor stream that contains deletion records of the sensor
 

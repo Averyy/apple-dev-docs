@@ -25,7 +25,7 @@ var previewingGestureRecognizerForFailureRelationship: UIGestureRecognizer { get
 @property (nonatomic, readonly) UIGestureRecognizer * previewingGestureRecognizerForFailureRelationship;
 ```
 
-#### Discussion
+## Discussion
 
 Use this gesture recognizer by implementing a delegate object for it that conforms to the [`UIGestureRecognizerDelegate`](../uigesturerecognizerdelegate.md) protocol. The protocol methods let you prevent a preview (peek) press from interfering with an app’s other supported gestures. For example, you could delay a preview’s presentation until after other gestures fail, or you could allow simultaneous recognition of a press and other gestures during a preview’s presentation.
 

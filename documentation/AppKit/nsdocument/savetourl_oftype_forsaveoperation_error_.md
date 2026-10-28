@@ -17,11 +17,11 @@ Saves the contents of the document to a file or file package located by a URL, f
 - (BOOL) saveToURL:(NSURL *) url ofType:(NSString *) typeName forSaveOperation:(NSSaveOperationType) saveOperation error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the document contents were successfully saved; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 You can override this method to do things that need to be done before or after any save operation. If you override this method, you must call `super` at some point in your implementation.
 

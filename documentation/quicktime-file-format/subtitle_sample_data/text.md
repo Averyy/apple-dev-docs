@@ -6,7 +6,7 @@
 
 The subtitle text.
 
-#### Overview
+## Overview
 
 The subtitle text is Unicode text, encoded either as UTF-8 text or UTF-16 text beginning with a UTF-16 BYTE ORDER MARK (`'\uFEFF'`) in big or little endian order. There is no null termination for the text.
 

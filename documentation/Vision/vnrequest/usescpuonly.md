@@ -24,7 +24,7 @@ var usesCPUOnly: Bool { get set }
 @property (nonatomic, readwrite) BOOL usesCPUOnly;
 ```
 
-#### Discussion
+## Discussion
 
 This value defaults to [`false`](../../Swift/false.md) to signify that the Vision request is free to leverage the GPU to accelerate its processing.
 

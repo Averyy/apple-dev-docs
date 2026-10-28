@@ -17,11 +17,11 @@ Provides a URL to the 3D model for the given category.
 func modelFileURL(for category: CapturedRoom.Object.Category) throws -> URL?
 ```
 
-#### Return Value
+## Return Value
 
 The 3D model that the app associates to the given object’s category via [`setModelFileURL(_:for:)`](./setmodelfileurl%28_,for%29-4law9.md); or, `nil` if no 3D model URL associates to the given category.
 
-#### Discussion
+## Discussion
 
 This function throws [`CapturedRoom.ModelProvider.Error.nonExistingFile(url:)`](./error/nonexistingfile%28url%29.md) if a 3D model doesn’t exist at the given URL.
 

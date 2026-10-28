@@ -24,11 +24,11 @@ optional func accessibilityAttributedPageContent() -> NSAttributedString?
 - (NSAttributedString *) accessibilityAttributedPageContent;
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string that contains the text displayed on the current page.
 
-#### Discussion
+## Discussion
 
 The system tries to call this method before calling the [`accessibilityPageContent()`](./accessibilitypagecontent%28%29.md) method.
 

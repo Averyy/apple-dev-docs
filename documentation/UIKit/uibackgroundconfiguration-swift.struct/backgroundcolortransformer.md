@@ -19,7 +19,7 @@ The color transformer for resolving the background color.
 var backgroundColorTransformer: UIConfigurationColorTransformer? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `nil`, the configuration uses [`backgroundColor`](./backgroundcolor.md) without any transformations.
 

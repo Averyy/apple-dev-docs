@@ -25,7 +25,7 @@ class SCNMaterial
 @interface SCNMaterial : NSObject
 ```
 
-#### Overview
+## Overview
 
 When you create a material, you define a collection of visual attributes and their options, which you can then reuse for multiple geometries in a scene.
 

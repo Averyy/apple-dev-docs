@@ -15,7 +15,7 @@ An array of sort descriptor dictionaries that specify how to order the fetched r
 attribute Object[] sortBy;
 ```
 
-#### Discussion
+## Discussion
 
 For details set [Fetching Records Using a Query (records/query)](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/QueryingRecords.html#//apple_ref/doc/uid/TP40015240-CH5) in [CloudKit Web Services Reference](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html#//apple_ref/doc/uid/TP40015240)
 

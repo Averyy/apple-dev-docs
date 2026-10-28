@@ -25,7 +25,7 @@ func CFBagCreateCopy(_ allocator: CFAllocator!, _ theBag: CFBag!) -> CFBag!
 extern CFBagRefCFBagCreateCopy(CFAllocatorRef allocator, CFBagRef theBag);
 ```
 
-#### Return Value
+## Return Value
 
 A new bag that contains the same values as `theBag`, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

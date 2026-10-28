@@ -19,7 +19,7 @@ func animateOneFrame()
 - (void) animateOneFrame;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method each time the timer animating the screen saver fires. The time between calls to this method is always at least [`animationTimeInterval`](./animationtimeinterval.md). The system locks focus on your view before it calls this method, so you can use this method to draw content. You can also let [`draw(_:)`](./draw%28_%29.md) perform the drawing, in which case you use this method to call [`setNeedsDisplay(_:)`](../../AppKit/nsview/setneedsdisplay%28_%29.md) to mark your view as dirty. The default implementation of this method does nothing.
 

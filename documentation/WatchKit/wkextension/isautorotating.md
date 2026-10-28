@@ -19,7 +19,7 @@ var isAutorotating: Bool { get set }
 @property (nonatomic, getter=isAutorotating) BOOL autorotating;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`false`](../../Swift/false.md).
 

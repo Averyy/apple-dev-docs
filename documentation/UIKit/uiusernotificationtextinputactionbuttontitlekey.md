@@ -23,7 +23,7 @@ let UIUserNotificationTextInputActionButtonTitleKey: String
 extern NSString * const UIUserNotificationTextInputActionButtonTitleKey;
 ```
 
-#### Description
+## Description
 
 The value of this key is an [`NSString`](../Foundation/nsstring.md) object. When the user chooses to provide a text response to a notification, UIKit displays an interface for entering that response. The value of this key is used on the button that the user taps to accept that text and attach it to the notification.
 

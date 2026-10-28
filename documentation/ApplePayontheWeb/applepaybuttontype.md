@@ -16,7 +16,7 @@ A type that indicates the button types that you can display to initiate Apple Pa
 enum ApplePayButtonType
 ```
 
-#### Overview
+## Overview
 
 The values for the button type:
 

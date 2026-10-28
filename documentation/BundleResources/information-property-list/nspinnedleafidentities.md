@@ -17,7 +17,7 @@ A list of allowed leaf certificates for a given domain name.
 - **Name**: `NSPinnedLeafIdentities`
 - **Type**: array of dictionary 
 
-#### Discussion
+## Discussion
 
 Provide an array of dictionaries as the value for this key. Each dictionary in the array contains the [`SPKI-SHA256-BASE64`](./nspinnedleafidentities/spki-sha256-base64.md) key with a value that represents the Base64-encoded SHA-256 digest of an X.509 certificate’s DER-encoded ASN.1 Subject Public Key Info (SPKI) structure.
 

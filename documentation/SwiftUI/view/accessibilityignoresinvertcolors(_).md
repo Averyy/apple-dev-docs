@@ -22,7 +22,7 @@ nonisolated
 func accessibilityIgnoresInvertColors(_ active: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to suppress Smart Invert in a view that shouldn’t be inverted. Or pass an `active` argument of `false` to begin following the Smart Invert setting again when it was previously disabled.
 

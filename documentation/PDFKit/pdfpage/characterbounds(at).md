@@ -40,7 +40,7 @@ func characterBounds(at index: Int) -> NSRect
 - (NSRect) characterBoundsAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 In the unlikely event that there is more than one character at the specified index point, only the bounds of the first character is returned.
 

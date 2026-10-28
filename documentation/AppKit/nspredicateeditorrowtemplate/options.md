@@ -19,7 +19,7 @@ var options: Int { get }
 @property (readonly) NSUInteger options;
 ```
 
-#### Return Value
+## Return Value
 
 The comparison predicate options for the receiver. See [`NSComparisonPredicate.Options`](../../Foundation/nscomparisonpredicate/options-swift.struct.md) for possible values. Returns `0` if this does not apply (for example, for a compound template initialized with [`init(compoundTypes:)`](./init%28compoundtypes%29.md)).
 

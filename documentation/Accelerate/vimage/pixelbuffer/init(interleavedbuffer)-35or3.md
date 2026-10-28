@@ -23,7 +23,7 @@ init(interleavedBuffer: vImage.PixelBuffer<vImage.Interleaved8x4>)
 
 Available when `Format` is `vImage.InterleavedFx4`.
 
-#### Discussion
+## Discussion
 
 This function treats floating point pixels represented by the range `0 ... 1` as the [`UInt8`](../../../kernel/uint8.md) range `0 ... 255`.
 

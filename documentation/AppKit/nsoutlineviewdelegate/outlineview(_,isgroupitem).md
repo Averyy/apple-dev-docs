@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, isGroupItem item: Any) -
 - (BOOL) outlineView:(NSOutlineView *) outlineView isGroupItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to indicate a particular row should have the “group row” style drawn for that row, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the cell in that row is an instance of `NSTextFieldCell` and contains only a string value, the “group row” style attributes are automatically applied for that cell.
 

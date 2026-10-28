@@ -5,7 +5,7 @@
 
 Measure HTTP-based network performance and usage of your apps.
 
-#### Overview
+## Overview
 
 As a component of Instruments, a performance-analysis and testing tool for iOS, iPadOS, watchOS, tvOS, and macOS apps, the HTTP Traffic instrument intercepts, records, and visualizes targeted processes.
 
@@ -15,7 +15,7 @@ The instrument internally gathers detailed information—including header and bo
 
 > **Related sessions from WWDC21**:  Session 10212: [Analyze HTTP traffic in Instruments](https://developer.apple.com/videos/play/wwdc2021/10212/)
 
-##### Launch Instruments and start recording
+### Launch Instruments and start recording
 
 From Xcode’s Product menu, choose Profile. After Instruments launches, select the Network template, then click Choose.
 
@@ -27,7 +27,7 @@ The Network Connections and HTTP Traffic instruments appear in a new window, alo
 
 Click the Record button in the toolbar. A dialog appears that explains the risks associated with capturing HTTP traffic and storing it unencrypted. If you accept this risk, click Record Anyway. The app launches and the instrument starts monitoring.
 
-##### View the track hierarchy
+### View the track hierarchy
 
 The HTTP Traffic track is the topmost track. It shows all HTTP traffic for the current recording session. You can also view a break down of the captured traffic across different dimensions using a hierarchy of the HTTP Traffic instrument subtracks. To reveal the subtracks, click the disclosure triangle next to HTTP Traffic.
 
@@ -44,7 +44,7 @@ let session = URLSession(configuration:.default)
 session.sessionDescription = "Main Session"
 ```
 
-##### View tasks and transactions
+### View tasks and transactions
 
 There are times when completing a [`URLSession`](./urlsession.md) task requires several rounds of requests and responses. Each pair of requests and responses is a *transaction*.
 

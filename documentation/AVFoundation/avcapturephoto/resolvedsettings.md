@@ -23,7 +23,7 @@ var resolvedSettings: AVCaptureResolvedPhotoSettings { get }
 @property (readonly) AVCaptureResolvedPhotoSettings * resolvedSettings;
 ```
 
-#### Discussion
+## Discussion
 
 To determine which [`capturePhoto(with:delegate:)`](../avcapturephotooutput/capturephoto%28with,delegate%29.md) call produced this photo capture result, match this [`AVCaptureResolvedPhotoSettings`](../avcaptureresolvedphotosettings.md) object’s [`uniqueID`](../avcaptureresolvedphotosettings/uniqueid.md) value to the [`uniqueID`](../avcapturephotosettings/uniqueid.md) property of the photo settings object you requested capture with. You can also use this object to find out which values the photo output has chosen for automatic settings.
 

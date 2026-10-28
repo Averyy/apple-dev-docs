@@ -20,7 +20,7 @@ Returns a string formatted to contain the data from an offset structure.
 class func string(for offset: UIOffset) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string that corresponds to `offset`.
 

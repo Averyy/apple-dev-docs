@@ -25,7 +25,7 @@ var queuePriority: Operation.QueuePriority { get set }
 @property NSOperationQueuePriority queuePriority;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the relative priority of the operation. This value is used to influence the order in which operations are dequeued and executed. The returned value always corresponds to one of the predefined constants. (For a list of valid values, see [`Operation.QueuePriority`](./queuepriority-swift.enum.md).) If no priority is explicitly set, this method returns `NSOperationQueuePriorityNormal`.
 

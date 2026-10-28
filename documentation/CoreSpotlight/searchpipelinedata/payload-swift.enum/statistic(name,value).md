@@ -19,7 +19,7 @@ A scalar value with a stastical calculation your stage produced.
 case statistic(name: String, value: Double)
 ```
 
-#### Discussion
+## Discussion
 
 Use this type to specify summation, average, minimum, maximum, median, or standard deviation values. Specify the name of the statistic you generated together with the numerical value.
 

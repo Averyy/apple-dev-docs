@@ -22,7 +22,7 @@ let OSBundleUsageDescriptionKey: String
 extern NSString * const OSBundleUsageDescriptionKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key is required for all DriverKit extensions and must be in the extension’s `Info.plist` file. Failure to include this key results in an error at activation time. For system extensions that are not DriverKit extensions, use [`NSSystemExtensionUsageDescriptionKey`](./nssystemextensionusagedescriptionkey.md) instead.
 

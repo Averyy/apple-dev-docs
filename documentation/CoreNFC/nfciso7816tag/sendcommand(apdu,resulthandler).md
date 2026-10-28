@@ -18,7 +18,7 @@ Sends an application protocol data unit (APDU) to the tag and receives a respons
 func sendCommand(apdu: NFCISO7816APDU, resultHandler: @escaping @Sendable (Result<NFCISO7816ResponseAPDU, any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 When you send a `SELECT` command with a [`p1Parameter`](../nfciso7816apdu/p1parameter.md) value of `0x04`, your app must support one of the applications listed in the [`ISO7816 application identifiers for NFC Tag Reader Session`](../../BundleResources/entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers.md) property list key. Otherwise, the `resultHandler` receives an [`NFCReaderError.Code.readerErrorSecurityViolation`](../nfcreadererror-swift.struct/code/readererrorsecurityviolation.md) error.
 

@@ -16,7 +16,7 @@ A set of actions for viewing and updating PINs, passwords, and signing abilities
 struct JPKIPassContents
 ```
 
-#### Overview
+## Overview
 
 Supports access to installed digital identities associated with the pass. You can use these actions to perform all operations to view, modify, and act on the credientials the applet contains.
 

@@ -15,7 +15,7 @@ The vendor ID for the device.
 var vendorID: UInt32?
 ```
 
-#### Discussion
+## Discussion
 
 The vendor ID designates the vendor that produced the device. Combine the vendor ID with the [`productID`](./productid.md) to determine the exact device.
 

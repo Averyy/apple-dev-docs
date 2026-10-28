@@ -22,7 +22,7 @@ var showsPaperOrientation: Bool { get set }
 @property (nonatomic) BOOL showsPaperOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md).
 

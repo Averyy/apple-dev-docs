@@ -19,7 +19,7 @@ typealias FxDrawingCoordinates = Int
 typedef NSUInteger FxDrawingCoordinates;
 ```
 
-#### Discussion
+## Discussion
 
 The `Y` coordinate component increases upwardly in all coordinate spaces.
 

@@ -24,11 +24,11 @@ class var main: UIScreen { get }
 @property (class, nonatomic, readonly) UIScreen * mainScreen;
 ```
 
-#### Return Value
+## Return Value
 
 The screen object for the device.
 
-#### Discussion
+## Discussion
 
 Apple discourages the use of this symbol. Use a [`UIScreen`](../uiscreen.md) instance found through context instead. For example, reference the screen that displays a view through the [`screen`](../uiwindowscene/screen.md) property on the window scene managing the window containing the view.
 

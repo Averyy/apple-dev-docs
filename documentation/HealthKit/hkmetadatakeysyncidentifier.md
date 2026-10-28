@@ -24,7 +24,7 @@ let HKMetadataKeySyncIdentifier: String
 extern NSString * const HKMetadataKeySyncIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value. If you add this key to an object’s metadata, you must also add the [`HKMetadataKeySyncVersion`](./hkmetadatakeysyncversion.md) key.
 

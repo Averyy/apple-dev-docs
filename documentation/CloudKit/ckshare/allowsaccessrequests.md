@@ -25,7 +25,7 @@ var allowsAccessRequests: Bool { get set }
 @property (assign, readwrite) BOOL allowsAccessRequests;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is `NO`. When this property is `YES`, uninvited users can request access to the share if they discover the share URL. When this property is `NO`, the server prevents uninvited users from requesting access and does not indicate whether the share exists.
 

@@ -22,7 +22,7 @@ func evaluateURL(_ url: URL) async -> Bool
 - (void) evaluateURL:(NSURL *) url completionHandler:(void (^)(BOOL shouldBlock)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Evaluates whether a URL should be blocked.
 

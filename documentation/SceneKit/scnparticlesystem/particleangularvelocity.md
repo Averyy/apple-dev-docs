@@ -25,7 +25,7 @@ var particleAngularVelocity: CGFloat { get set }
 @property (nonatomic) CGFloat particleAngularVelocity;
 ```
 
-#### Discussion
+## Discussion
 
 A particle’s angle (or orientation) is independent from its direction of motion. For example, a smoke effect may use a small image of a cloud for each particle, which stays at the same angle as the smoke rises, but a snow effect may use an image that flips and rotates as each snowflake falls. The [`orientationMode`](./orientationmode.md) property determines whether and how particles are allowed to rotate, and the [`particleAngle`](./particleangle.md) and [`particleAngularVelocity`](./particleangularvelocity.md) properties determine rotation angles and rates. You can randomize the rotations of newly spawned particles with the [`particleAngleVariation`](./particleanglevariation.md) property.
 

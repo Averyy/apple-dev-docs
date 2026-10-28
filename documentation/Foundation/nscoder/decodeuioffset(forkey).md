@@ -24,11 +24,11 @@ func decodeUIOffset(forKey key: String) -> UIOffset
 - (UIOffset) decodeUIOffsetForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The offset data.
 
-#### Discussion
+## Discussion
 
 Use this method to decode offset information that was previously encoded using the [`encode(_:forKey:)`](./encode%28_,forkey%29-9d1qy.md) method.
 

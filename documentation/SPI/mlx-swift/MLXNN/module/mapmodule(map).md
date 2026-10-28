@@ -17,7 +17,7 @@ Function that will turn a `(Module) -> Result?` into a function suitable for use
 static func mapModule<Result>(map: @escaping (Module) -> Result? = { $0 }) -> (ModuleItem) -> Result?
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 
@@ -28,7 +28,7 @@ let typeNames = module.mapParameters { module in
 }
 ```
 
-##### See Also
+### See Also
 
 - [Module Filter and Map Functions](../module-filters.md)
 - [`ModuleValue.module(_:)`](../modulevalue/module%28_%29.md)

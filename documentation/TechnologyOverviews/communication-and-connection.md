@@ -8,7 +8,7 @@ Staying connected with friends and family is an important part of people’s eve
 
 ---
 
-#### Keep people informed with notifications
+## Keep people informed with notifications
 
 Notifications are a way to draw someone’s attention to important or time-sensitive information. When your app is running, you can [schedule local notifications](../UserNotifications/scheduling-a-notification-locally-from-your-app.md) in play a sound or display information at a certain time or place. If your app is running, it receives local notifications quietly so it can display its own interface. If your app isn’t running, the system displays a notification interface to alert the person to the event.
 
@@ -22,7 +22,7 @@ Because push notifications are a potential disruption, apps must receive authori
 
 ---
 
-#### Make your content available to Siri
+## Make your content available to Siri
 
 Siri is Apple’s intelligent voice assistant, and people use it regularly to interact with their devices. When you add support for [App Intents](../AppIntents/AppIntents.md) to your app, you give Siri the ability to interact with your app’s features. For example, if someone asks Siri to “play my favorite playlist” from your music app, Siri finds the requested playlist and instructs your app to start playing music.
 
@@ -32,7 +32,7 @@ The [App Intents](../AppIntents/AppIntents.md) framework helps you add the infor
 
 ---
 
-#### Share your app’s activities
+## Share your app’s activities
 
 SharePlay is a way for people to enjoy app-specific activities together over FaceTime. If your app offers activities that people can share, make those activities available using the [Group Activities](../GroupActivities/GroupActivities.md) framework.
 

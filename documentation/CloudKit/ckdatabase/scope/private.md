@@ -25,7 +25,7 @@ case `private`
 CKDatabaseScopePrivate
 ```
 
-#### Discussion
+## Discussion
 
 Records in a private database:
 

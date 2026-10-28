@@ -23,7 +23,7 @@ var isExplicitItem: Bool { get }
 @property (nonatomic, readonly, getter=isExplicitItem) BOOL explicitItem;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the media item contains explicit content.
 

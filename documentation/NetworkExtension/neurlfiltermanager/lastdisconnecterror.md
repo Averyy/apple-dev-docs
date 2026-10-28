@@ -18,7 +18,7 @@ The most recent error that caused the URL Filter to stop.
 var lastDisconnectError: NEURLFilterManager.Error? { get async }
 ```
 
-#### Discussion
+## Discussion
 
 You can check this property after an unexpected status change to determine what caused the filter to stop.
 

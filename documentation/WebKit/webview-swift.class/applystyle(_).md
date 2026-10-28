@@ -19,7 +19,7 @@ func applyStyle(_ style: DOMCSSStyleDeclaration!)
 - (void) applyStyle:(DOMCSSStyleDeclaration *) style;
 ```
 
-#### Discussion
+## Discussion
 
 This method does nothing if there is no current selection or if the current selection is collapsed.
 

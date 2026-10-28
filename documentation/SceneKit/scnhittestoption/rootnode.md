@@ -25,7 +25,7 @@ static let rootNode: SCNHitTestOption
 extern SCNHitTestOption const SCNHitTestRootNodeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`SCNNode`](../scnnode.md) object. Hit-testing searches only the child node hierarchy under this node. When hit-testing takes place in the screen space of an [`SCNSceneRenderer`](../scnscenerenderer.md) object with the [`hitTest(_:options:)`](../scnscenerenderer/hittest%28_,options%29.md) method, the default value is the presented scene’s root node. When hit-testing is in a node using its [`hitTestWithSegment(from:to:options:)`](../scnnode/hittestwithsegment%28from,to,options%29.md), the default value is the node.
 

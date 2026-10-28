@@ -15,7 +15,7 @@ The horizontal scroll bar for the scroll view.
 @property (strong, nullable) id accessibilityHorizontalScrollBar;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a scrollable view.
 

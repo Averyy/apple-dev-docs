@@ -25,11 +25,11 @@ func object_getIndexedIvars(_ obj: Any?) -> UnsafeMutableRawPointer?
 extern void *object_getIndexedIvars(id obj);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to any extra bytes allocated with `obj`. If `obj` was not allocated with any extra bytes, then dereferencing the returned pointer is undefined.
 
-#### Discussion
+## Discussion
 
 This function returns a pointer to any extra bytes allocated with the instance (as specified by [`class_createInstance(_:_:)`](./class_createinstance%28_,_%29.md) with extraBytes>0). This memory follows the object’s ordinary ivars, but may not be adjacent to the last ivar.
 

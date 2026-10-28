@@ -19,7 +19,7 @@ A link to help documentation.
 var helpAnchor: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is for macOS.
 

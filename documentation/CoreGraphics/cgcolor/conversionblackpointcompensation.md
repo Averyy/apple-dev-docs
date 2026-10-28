@@ -25,7 +25,7 @@ class let conversionBlackPointCompensation: CFString
 extern CFStringRef const kCGColorConversionBlackPointCompensation;
 ```
 
-#### Discussion
+## Discussion
 
 ICC profiles specify how to convert the lightest level of white between color spaces, but they do not specify how black should be converted. To account for this, set a value of [`true`](../../Swift/true.md) for this key when creating a color conversion with the [`CGColorConversionInfoCreateFromList`](../cgcolorconversioninfocreatefromlist.md) function.
 

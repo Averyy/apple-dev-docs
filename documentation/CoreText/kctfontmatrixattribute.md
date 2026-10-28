@@ -25,7 +25,7 @@ let kCTFontMatrixAttribute: CFString
 extern CFStringRef const kCTFontMatrixAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 If unspecified it defaults to the unit matrix. The value for this key is a [`CFData`](../CoreFoundation/cfdata.md) object containing a [`CGAffineTransform`](../CoreFoundation/cgaffinetransform.md) object.
 

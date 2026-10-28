@@ -25,7 +25,7 @@ case ready
 INSearchForNotebookItemsIntentResponseCodeReady
 ```
 
-#### Discussion
+## Discussion
 
 Return this response code during the confirmation phase after you have verified that you are able to perform the search. Don’t return this response code when handling the intent; doing so causes the device to display an error.
 

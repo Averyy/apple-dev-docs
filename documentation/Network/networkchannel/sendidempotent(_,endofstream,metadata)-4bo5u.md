@@ -23,7 +23,7 @@ func sendIdempotent<Content>(_ content: Content, endOfStream: Bool = false, @Pro
 
 Available when `ApplicationProtocol` conforms to `StreamProtocol`.
 
-#### Discussion
+## Discussion
 
 This may be called before the connection is ready, in which case the send will be enqueued until the connection is ready to send.
 

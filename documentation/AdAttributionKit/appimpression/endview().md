@@ -17,7 +17,7 @@ Ends the view-through impression when the ad content corresponding to the impres
 func endView() async throws
 ```
 
-#### Discussion
+## Discussion
 
 End the view-through impression, as the following example shows:
 

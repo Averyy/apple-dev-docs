@@ -24,7 +24,7 @@ func perform(_ requests: [VNRequest]) throws
 - (BOOL) performRequests:(NSArray<VNRequest *> *) requests error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The function returns after all requests have either completed or failed. Check individual requests and errors for their respective successes and failures.
 

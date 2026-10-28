@@ -5,7 +5,7 @@
 
 Lock virtual content to the real world.
 
-#### Overview
+## Overview
 
 RealityKit anchors all entities in a scene to an anchor target in the same scene, such as the ground, an image, or a position relative to its parent view. RealityKit provides several types you can use as the target for your anchors.
 

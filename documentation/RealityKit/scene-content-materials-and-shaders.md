@@ -5,7 +5,7 @@
 
 Apply textures to the surface of your scene’s 3D objects to give each object a unique appearance.
 
-#### Overview
+## Overview
 
 Materials define the appearance of 3D models in RealityKit, by defining how their surfaces interact with light. Materials can also occlude objects behind them, hold shaders, or act as portals to view other worlds with [`PortalMaterial`](./portalmaterial.md).
 

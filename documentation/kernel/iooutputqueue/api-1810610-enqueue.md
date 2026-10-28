@@ -13,11 +13,11 @@ virtual UInt32 enqueue(
  void *param) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a return code.
 
-#### Overview
+## Overview
 
 This method is called by a client to add a packet, or a chain of packets, to the queue. A packet is described by an mbuf chain, while a chain of packets is constructed by linking multiple mbuf chains via the m_nextpkt field.
 

@@ -31,7 +31,7 @@ func currentTimelineEntry(for complication: CLKComplication) async -> CLKComplic
 - [Loading future timeline events](../loading-future-timeline-events.md)
 - [Sharing an Apple Watch face](../sharing-an-apple-watch-face.md)
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must create a timeline entry with the data to display right now. Assign a date to your timeline entry that reflects the current time or a time before the current time. If your complication supports past timeline entries, the entry you return from this method must come after all past entries that you provide using the [`getTimelineEntries(for:before:limit:withHandler:)`](./gettimelineentries%28for,before,limit,withhandler%29.md) method.
 

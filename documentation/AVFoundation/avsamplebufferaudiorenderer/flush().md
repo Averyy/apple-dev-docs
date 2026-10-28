@@ -27,7 +27,7 @@ func flush()
 - (void) flush;
 ```
 
-#### Discussion
+## Discussion
 
 Additional sample buffers can be appended after -flush.
 

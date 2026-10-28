@@ -27,7 +27,7 @@ func BNNSOptimizerStep(_ function: BNNSOptimizerFunction, _ OptimizerAlgFields: 
 int BNNSOptimizerStep(BNNSOptimizerFunction function, const void *OptimizerAlgFields, size_t number_of_parameters, BNNSNDArrayDescriptor **parameters, const BNNSNDArrayDescriptor **gradients, BNNSNDArrayDescriptor **accumulators, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use [`BNNSOptimizerStep(_:_:_:_:_:_:_:)`](./bnnsoptimizerstep%28_,_,_,_,_,_,_%29.md) to update a set of parameters using a supplied optimization algorithm.
 

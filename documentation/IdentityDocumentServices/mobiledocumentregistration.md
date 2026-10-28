@@ -17,7 +17,7 @@ A type you use to register mobile documents.
 struct MobileDocumentRegistration
 ```
 
-#### Overview
+## Overview
 
 Mobile documents, or “mdocs”, are a document format defined in ISO 18013-5.
 

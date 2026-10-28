@@ -22,11 +22,11 @@ class var activityCategory: UIActivity.Category { get }
 @property (class, nonatomic, readonly) UIActivityCategory activityCategory;
 ```
 
-#### Return Value
+## Return Value
 
 The assigned category of the activity. The default implementation returns [`UIActivity.Category.action`](./category/action.md).
 
-#### Discussion
+## Discussion
 
 Override this property to define a different activity category for your custom activity.
 

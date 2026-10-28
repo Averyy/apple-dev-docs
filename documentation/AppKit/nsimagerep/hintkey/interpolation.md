@@ -19,7 +19,7 @@ static let interpolation: NSImageRep.HintKey
 extern NSImageHintKey const NSImageHintInterpolation;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) with an [`NSImageInterpolation`](../../nsimageinterpolation.md) value.
 

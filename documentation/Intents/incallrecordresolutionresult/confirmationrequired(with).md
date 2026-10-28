@@ -24,11 +24,11 @@ class func confirmationRequired(with callRecordToConfirm: INCallRecord?) -> Self
 + (instancetype) confirmationRequiredWithCallRecordToConfirm:(INCallRecord *) callRecordToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCallRecordResolutionResult`](../incallrecordresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can’t resolve the parameter to a call record, and it has to get confirmed by the user to proceed.
 

@@ -5,11 +5,11 @@
 
 Create and modify events and reminders in a person’s database.
 
-#### Overview
+## Overview
 
 Once you have permission to access a person’s Calendar and Reminder data, you can create, display, and edit events and reminders.
 
-##### Create Events
+### Create Events
 
 Create a new event with the [`init(eventStore:)`](./ekevent/init%28eventstore%29.md) method of the [`EKEvent`](./ekevent.md) class.
 
@@ -23,7 +23,7 @@ You can edit the details of a new event or an event you previously fetched from 
 
 > **Note**:  In iOS, you have the option of letting users modify event data with the event view controllers provided in the EventKit UI framework. For information on how to use these event view controllers, see [EventKit UI](../EventKitUI/EventKitUI.md).
 
-###### Save and Delete Events
+#### Save and Delete Events
 
 > ❗ **Important**:  If your app modifies a user’s Calendar database, it must get confirmation from the user before doing so. An app should never modify the Calendar database without specific instruction from the user.
 
@@ -33,7 +33,7 @@ If you are saving a recurring event, your changes can apply to all future occurr
 
 > **Note**:  If you pass `NO` to the `commit` parameter, make sure that you later invoke the [`commit()`](./ekeventstore/commit%28%29.md) method to permanently save your changes.
 
-##### Create Reminders
+### Create Reminders
 
 Reminders are tasks that may be tied to a specific time or location. They are similar to calendar events, but can be marked complete and may not necessarily span an exact period of time.
 
@@ -45,13 +45,13 @@ You can create reminders using the [`init(eventStore:)`](./ekreminder/init%28eve
 
 Like events, reminders can trigger time-based or location-based alarms to alert the user of a certain task. Read “`Setting an Alarm`” for more information on how to attach alarms to calendar items.
 
-###### Save and Delete Reminders
+#### Save and Delete Reminders
 
 To save a reminder to the Calendar database, call the [`save(_:commit:)`](./ekeventstore/save%28_,commit%29.md) method. To remove an event, call the [`remove(_:commit:)`](./ekeventstore/remove%28_,commit%29.md) method. The [`title`](./ekcalendar/title.md) and [`calendars`](./ekeventstore/calendars.md) properties must explicitly be set before you save the reminder.
 
 > **Note**:  Just like when saving or removing events, make sure that if you pass `NO` to the `commit` parameter, you later invoke the [`commit()`](./ekeventstore/commit%28%29.md) method to save your changes.
 
-###### Edit Reminders
+#### Edit Reminders
 
 To associate a start date or due date with a reminder, use the [`startDateComponents`](./ekreminder/startdatecomponents.md) and [`dueDateComponents`](./ekreminder/duedatecomponents.md) properties. To complete a reminder, set the completed property to `YES`, which automatically sets [`completionDate`](./ekreminder/completiondate.md) to the current date.
 

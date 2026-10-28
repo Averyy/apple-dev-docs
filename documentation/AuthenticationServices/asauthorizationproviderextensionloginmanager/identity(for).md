@@ -19,7 +19,7 @@ func identity(for keyType: ASAuthorizationProviderExtensionKeyType) -> SecIdenti
 - (SecIdentityRef) copyIdentityForKeyType:(ASAuthorizationProviderExtensionKeyType) keyType;
 ```
 
-#### Return Value
+## Return Value
 
 The identity if it exists, or `nil` if it doesn’t.
 

@@ -15,7 +15,7 @@ The session is disconnecting from a streaming endpoint.
 case disconnecting
 ```
 
-#### Discussion
+## Discussion
 
 The [`FoveatedStreamingSession`](../../foveatedstreamingsession.md) briefly enters this state after you call [`disconnect()`](../disconnect%28%29.md) while it completes the disconnection.
 

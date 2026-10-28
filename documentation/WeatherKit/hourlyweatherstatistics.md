@@ -21,7 +21,7 @@ A structure that holds a collection of hour weather statistics data.
 struct HourlyWeatherStatistics<T> where T : Decodable, T : Encodable, T : Equatable, T : Sendable
 ```
 
-#### Overview
+## Overview
 
 Weather statistics for each hour are derived from data for that hour, collected over all years since the baseline start date.
 

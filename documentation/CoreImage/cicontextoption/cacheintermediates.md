@@ -24,7 +24,7 @@ static let cacheIntermediates: CIContextOption
 extern CIContextOption const kCIContextCacheIntermediates;
 ```
 
-#### Discussion
+## Discussion
 
 If a context caches intermediate buffers, then subsequent renders of a similar image using the same context may be able to render faster. If a context does not cache intermediate buffers, then it may use less memory.
 

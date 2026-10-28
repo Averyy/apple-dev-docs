@@ -24,7 +24,7 @@ protocol CNChangeHistoryEventVisitor : NSObjectProtocol
 @protocol CNChangeHistoryEventVisitor <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Implement this protocol to receive events that describe when a user adds, updates, or deletes contacts or groups outside your app.
 

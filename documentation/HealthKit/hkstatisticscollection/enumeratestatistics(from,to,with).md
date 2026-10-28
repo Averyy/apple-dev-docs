@@ -24,7 +24,7 @@ func enumerateStatistics(from startDate: Date, to endDate: Date, with block: @es
 - (void) enumerateStatisticsFromDate:(NSDate *) startDate toDate:(NSDate *) endDate withBlock:(void (^)(HKStatistics *result, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method enumerates the statistics in chronological order. It calls the block once for each time interval between the start and end dates. If there are no samples for a particular time interval, the corresponding statistic object has a `nil`-valued quantity.
 

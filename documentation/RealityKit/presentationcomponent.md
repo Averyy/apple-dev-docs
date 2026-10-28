@@ -15,7 +15,7 @@ A component that presents a SwiftUI modal presentation from a RealityKit entity.
 struct PresentationComponent
 ```
 
-#### Overview
+## Overview
 
 Popovers that this component presents initially rotate themselves to face the active camera and appear with a breakthrough effect by default. To change the breakthrough effect on the presented view, use the `presentationBreakthroughEffect` modifier, like in the following example:
 

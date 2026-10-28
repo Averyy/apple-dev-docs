@@ -20,11 +20,11 @@ Returns a filter that applies `shader` to the color of each source pixel.
 static func colorShader(_ shader: Shader) -> GraphicsContext.Filter
 ```
 
-#### Return Value
+## Return Value
 
 A filter that applies the shader  as a color filter.
 
-#### Discussion
+## Discussion
 
 For a shader function to act as a color filter it must have a function signature matching:
 

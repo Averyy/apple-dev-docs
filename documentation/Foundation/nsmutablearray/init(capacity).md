@@ -25,11 +25,11 @@ init(capacity numItems: Int)
 - (instancetype) initWithCapacity:(NSUInteger) numItems;
 ```
 
-#### Return Value
+## Return Value
 
 An array initialized with enough memory to hold `numItems` objects. The returned object might be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 Mutable arrays expand as needed; `numItems` simply establishes the object’s initial capacity.
 

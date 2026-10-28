@@ -23,7 +23,7 @@ init(text: String?, detailText: String?, image: UIImage?, showsDisclosureIndicat
 - (instancetype) initWithText:(NSString *) text detailText:(NSString *) detailText image:(UIImage *) image showsDisclosureIndicator:(BOOL) showsDisclosureIndicator;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized list item.
 

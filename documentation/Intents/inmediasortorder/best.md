@@ -24,7 +24,7 @@ case best
 INMediaSortOrderBest
 ```
 
-#### Discussion
+## Discussion
 
 The app displays the sorted media items with those items matching the highest number of search fields first.
 

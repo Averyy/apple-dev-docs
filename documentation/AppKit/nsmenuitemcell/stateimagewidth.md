@@ -19,7 +19,7 @@ var stateImageWidth: CGFloat { get }
 @property (readonly) CGFloat stateImageWidth;
 ```
 
-#### Discussion
+## Discussion
 
 If the menu item has multiple images associated with it (to indicate any of the available states: on, off, or mixed), this property contains the width of the largest image. You can set the state images for a menu item using the setOnStateImage:, setOffStateImage:, and setMixedStateImage: methods of [`NSMenuItem`](../nsmenuitem.md).
 

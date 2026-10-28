@@ -25,7 +25,7 @@ func schedule(in runLoop: RunLoop, forMode mode: RunLoop.Mode)
 - (void) scheduleInRunLoop:(NSRunLoop *) runLoop forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 This method should not be called directly.
 

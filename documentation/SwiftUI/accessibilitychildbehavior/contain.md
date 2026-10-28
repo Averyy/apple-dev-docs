@@ -21,7 +21,7 @@ Any child accessibility elements become children of the new accessibility elemen
 static let contain: AccessibilityChildBehavior
 ```
 
-#### Discussion
+## Discussion
 
 Use this behavior when you want a view to be an accessibility container. An accessibility container groups child accessibility elements which improves navigation. For example, all children of an accessibility container are navigated in order before navigating through the next accessibility container.
 

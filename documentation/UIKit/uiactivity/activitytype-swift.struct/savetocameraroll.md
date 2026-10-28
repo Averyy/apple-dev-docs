@@ -22,7 +22,7 @@ static let saveToCameraRoll: UIActivity.ActivityType
 extern UIActivityType const UIActivityTypeSaveToCameraRoll;
 ```
 
-#### Discussion
+## Discussion
 
 When using this service, you can provide a [`UIImage`](../../uiimage.md) object as data for image-based activity items. For image and video items, you can provide an [`NSURL`](../../../Foundation/nsurl.md) object with a path to the video.
 

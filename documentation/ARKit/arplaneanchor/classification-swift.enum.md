@@ -16,7 +16,7 @@ Possible characterizations of real-world surfaces represented by plane anchors.
 enum Classification
 ```
 
-#### Overview
+## Overview
 
 You get values of this type from a plane anchor’s [`classification`](./classification-2r4x8.md) property, identifying both the likely type of real-world surface for a detected plane anchor and the state of ARKit’s plane classification process.
 

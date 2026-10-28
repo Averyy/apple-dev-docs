@@ -26,7 +26,7 @@ func remoteObjectProxyWithErrorHandler(_ handler: @escaping @Sendable (any Error
 - (id) remoteObjectProxyWithErrorHandler:(void (^)(NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 If the message sent to the proxy has a reply handler, then either the error handler or the reply handler is called exactly once.
 

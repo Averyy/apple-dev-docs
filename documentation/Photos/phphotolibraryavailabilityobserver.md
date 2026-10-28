@@ -24,7 +24,7 @@ protocol PHPhotoLibraryAvailabilityObserver : NSObjectProtocol
 @protocol PHPhotoLibraryAvailabilityObserver <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Observing changes to the photo library’s availability is primarily of concern with Mac apps created using macOS and Mac Catalyst, where the library may reside on an external drive or in cloud storage.
 

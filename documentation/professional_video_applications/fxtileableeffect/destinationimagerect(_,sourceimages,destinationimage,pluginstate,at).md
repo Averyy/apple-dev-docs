@@ -24,7 +24,7 @@ func destinationImageRect(_ destinationImageRect: UnsafeMutablePointer<FxRect>, 
 
 - [Working with tiled images](../../Professional-Video-Applications/working-with-tiled-images.md)
 
-#### Discussion
+## Discussion
 
 This method is called when the plug-in wants to calculate the output bounds of your plug-in when rendering at a particular time. It will pass in an array of images, the plug-in state returned from your plug-in’s [`pluginState(_:at:quality:)`](./pluginstate%28_,at,quality%29.md) method, and the render time. If your plug-in is unable to calculate the output rectangle at the given time, it should return `NO` and fill out the `outError` parameter with an `NSError` that uses the [`FxPlugErrorDomain`](../fxplugerrordomain.md) and appropriate (possibly custom) error code.
 

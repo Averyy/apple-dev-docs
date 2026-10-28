@@ -18,7 +18,7 @@ An object that defines the shape of custom pointers.
 enum UIPointerShape
 ```
 
-#### Overview
+## Overview
 
 If the desired pointer shape can be expressed as a rounded rectangle, use [`UIPointerShape.roundedRect(_:radius:)`](./uipointershape-swift.enum/roundedrect%28_,radius%29.md) for best results.
 

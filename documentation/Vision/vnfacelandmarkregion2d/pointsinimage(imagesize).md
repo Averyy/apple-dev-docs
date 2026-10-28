@@ -20,7 +20,7 @@ Returns an array containing landmark points in the coordinate space of the speci
 func pointsInImage(imageSize: CGSize) -> [CGPoint]
 ```
 
-#### Return Value
+## Return Value
 
 An array containing a [`CGPoint`](../../CoreFoundation/cgpoint.md) for each landmark the system detects in the image, expressed in the coordinate space of the specified image size.
 

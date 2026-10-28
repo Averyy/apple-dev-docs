@@ -25,7 +25,7 @@ init(source: String, uniforms: [SKUniform])
 - (instancetype) initWithSource:(NSString *) source uniforms:(NSArray<SKUniform *> *) uniforms;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized shader object.
 

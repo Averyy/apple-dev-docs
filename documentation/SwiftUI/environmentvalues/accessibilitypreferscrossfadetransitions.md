@@ -21,7 +21,7 @@ A Boolean value that indicates whether the Reduce Motion and the Prefer Cross-Fa
 var accessibilityPrefersCrossFadeTransitions: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If this property’s value is true, UI should avoid Slide animations and prefer Cross-Fade transitions instead
 

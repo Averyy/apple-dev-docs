@@ -24,7 +24,7 @@ var matchDomains: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * matchDomains;
 ```
 
-#### Discussion
+## Discussion
 
 If the destination host name of a HTTP connection shares a suffix with one of these strings then the proxy settings will be used for the HTTP connection. Otherwise the proxy settings will not be used.
 

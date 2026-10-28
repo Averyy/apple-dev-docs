@@ -20,7 +20,7 @@ var series: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * series;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if the media item isn’t an episode in a TV series.
 

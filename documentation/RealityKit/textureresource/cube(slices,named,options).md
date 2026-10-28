@@ -28,7 +28,7 @@ Asynchronously creates a cube texture resource from face images.
 @preconcurrency static func cube(slices: [CGImage], named resourceName: String? = nil, options: TextureResource.CreateOptions) throws -> TextureResource
 ```
 
-#### Discussion
+## Discussion
 
 Provide the cube faces in the following order: [`+X`, `-X`, `+Y`, `-Y`, `+Z`, `-Z`].
 

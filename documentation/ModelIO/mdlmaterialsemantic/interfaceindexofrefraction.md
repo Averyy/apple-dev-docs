@@ -24,7 +24,7 @@ case interfaceIndexOfRefraction
 MDLMaterialSemanticInterfaceIndexOfRefraction
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the `n1` parameter in Schlick’s equation for approximating Fresnel reflection effects. Typically, one assumes a the medium surrounding a material is air or empty space, so a value of 1.0 suffices for most uses of this semantic.
 

@@ -19,7 +19,7 @@ Creates and returns a new function identifier with the specified value.
 init(_ rawValue: Int)
 ```
 
-#### Return Value
+## Return Value
 
 A new function identifier type.
 

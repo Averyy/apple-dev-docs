@@ -20,7 +20,7 @@ Removes a specific specializes arc from the prim.
 func remove(_ primPath: USDLayer.Path) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the specializes cannot be removed.
 

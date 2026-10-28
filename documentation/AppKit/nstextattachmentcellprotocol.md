@@ -19,7 +19,7 @@ protocol NSTextAttachmentCellProtocol : NSObjectProtocol
 @protocol NSTextAttachmentCell <NSObject>
 ```
 
-#### Overview
+## Overview
 
 With the exceptions of [`cellBaselineOffset()`](./nstextattachmentcellprotocol/cellbaselineoffset%28%29.md), [`attachment`](./nstextattachmentcellprotocol/attachment.md), and [`attachment`](./nstextattachmentcellprotocol/attachment.md), all of these methods are implemented by the [`NSCell`](./nscell.md) class.For general information on text attachments, see [`NSAttributedString`](../Foundation/nsattributedstring.md) and [`NSTextView`](./nstextview.md).
 

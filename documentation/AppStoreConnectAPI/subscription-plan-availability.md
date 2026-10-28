@@ -5,7 +5,7 @@
 
 Create and manage subscription plan availability for auto-renewable subscriptions.
 
-#### Overview
+## Overview
 
 The `subscriptionPlanAvailabilities` resource lets you control which subscription plan type — monthly or up-front — is available for a subscription in specific territories.
 

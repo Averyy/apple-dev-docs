@@ -19,7 +19,7 @@ var isVertical: Bool { get }
 @property (readonly, getter=isVertical) BOOL vertical;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property is [`true`](../../Swift/true.md) for a vertical font or [`false`](../../Swift/false.md) otherwise.
 

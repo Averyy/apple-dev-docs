@@ -3,13 +3,13 @@
 **Framework**: Core Foundation  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 Several functions return a preference value as a Core Foundation property list object.
 
 You can use the function [`CFGetTypeID(_:)`](./cfgettypeid%28_%29.md) to determine the value’s type. For more information about property lists, see [Property List Programming Topics for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFPropertyLists/CFPropertyLists.html#//apple_ref/doc/uid/10000130i).
 
-##### Overview
+### Overview
 
 Core Foundation provides a simple, standard way to manage user (and application) preferences. Core Foundation stores preferences as key-value pairs that are assigned a scope using a combination of user name, application ID, and host (computer) names. This makes it possible to save and retrieve preferences that apply to different classes of users. Core Foundation preferences is useful to all applications that support user preferences. Note that modification of some preferences domains (those not belonging to the “Current User”) requires root privileges (or Admin privileges prior to OS X v10.6)—see [Authorization Services Programming Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/authorization_concepts/01introduction/introduction.html#//apple_ref/doc/uid/TP30000995) for information on how to gain suitable privileges.
 

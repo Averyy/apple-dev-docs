@@ -15,11 +15,11 @@ A bulk request to create multiple negative keywords.
 object NegativeKeywordCreateBulkRequest
 ```
 
-#### Discussion
+## Discussion
 
 The `NegativeKeywordCreateBulkRequest` object allows creating multiple negative keywords in a single API call.
 
-##### Example
+### Example
 
 ```json
 {

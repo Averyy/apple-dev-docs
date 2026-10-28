@@ -33,7 +33,7 @@ func update(promotionOrder: [SKProduct]) async throws
 
 - [Promoting Apple In-App Purchases](../promoting-in-app-purchases.md)
 
-#### Discussion
+## Discussion
 
 The default order of promoted Apple In-App Purchase products is set in App Store Connect. You can override this order per device. For example, you can promote an Apple In-App Purchase product that unlocks a specific level in your game when a user reaches the level immediately before the specified level.
 

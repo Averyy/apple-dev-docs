@@ -20,7 +20,7 @@ sequence <ApplePayLineItem> additionalLineItems;
 
 - [Apple Pay on the Web Version 12 Release Notes](../apple-pay-on-the-web-version-12-release-notes.md)
 
-#### Discussion
+## Discussion
 
 A line item can describe an additional charge or discount, and can consist of positive or negative numbers.
 

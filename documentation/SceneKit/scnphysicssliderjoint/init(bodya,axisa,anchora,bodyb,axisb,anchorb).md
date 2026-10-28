@@ -25,11 +25,11 @@ convenience init(bodyA: SCNPhysicsBody, axisA: SCNVector3, anchorA: SCNVector3, 
 + (instancetype) jointWithBodyA:(SCNPhysicsBody *) bodyA axisA:(SCNVector3) axisA anchorA:(SCNVector3) anchorA bodyB:(SCNPhysicsBody *) bodyB axisB:(SCNVector3) axisB anchorB:(SCNVector3) anchorB;
 ```
 
-#### Return Value
+## Return Value
 
 A new slider joint behavior.
 
-#### Discussion
+## Discussion
 
 This method defines the location where the bodies are pinned together. To define their sliding or rotation motion relative to that point, use the properties listed in Limiting the Motion of a Slider Joint.
 

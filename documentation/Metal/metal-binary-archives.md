@@ -4,7 +4,7 @@
 
 Distribute precompiled GPU-specific binaries as part of your app to avoid runtime compilation of Metal shaders.
 
-#### Overview
+## Overview
 
 Metal supports the widest range of devices available by compiling to Metal intermediate representation (Metal IR), but this comes with a tradeoff. Metal IR libraries are smaller and more flexible, but your app still needs to compile shader functions for the device’s GPU at runtime. This isn’t always desirable; for example, you might want to precompile shaders you use for visual presentation while your app performs other loading or setup. When you’re ready to increase the size of your application bundle in exchange for avoiding runtime compilation, you can precompile shaders to *binary archives*. Binary archives are GPU-specific slices you ship individually or as part of a larger Metal library.
 

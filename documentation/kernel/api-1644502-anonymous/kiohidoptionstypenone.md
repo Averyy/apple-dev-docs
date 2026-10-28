@@ -13,7 +13,7 @@
 kIOHIDOptionsTypeNone = 0x00
 ```
 
-#### Discussion
+## Discussion
 
 Default option.
 

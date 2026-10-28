@@ -32,7 +32,7 @@ var xScale: CGFloat { get set }
 - [About Node Property Propagation](../about-node-property-propagation.md)
 - [Getting Started with Nodes](../getting-started-with-nodes.md)
 
-#### Discussion
+## Discussion
 
 The [`xScale`](./xscale.md) property scales the width of the node and all of its descendants. The scale value affects how a node’s frame is calculated, its hit test area, how it is drawn, and other similar characteristics. The default value is `1.0`.
 

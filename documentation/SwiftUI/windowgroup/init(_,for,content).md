@@ -39,7 +39,7 @@ nonisolated
 init<S, D, C>(_ title: S, for type: D.Type, @ContentBuilder content: @escaping (Binding<D?>) -> C) where Content == PresentedWindowContent<D, C>, S : StringProtocol, D : Decodable, D : Encodable, D : Hashable, C : View
 ```
 
-#### Discussion
+## Discussion
 
 The window group uses the specified content as a template to create each window in the group.
 

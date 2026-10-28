@@ -23,11 +23,11 @@ optional func application(_ application: UIApplication, handlerFor intent: INInt
 - (id) application:(UIApplication *) application handlerForIntent:(INIntent *) intent;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of a type capable of handling the specified intent; otherwise, `nil` if your app doesn’t handle the intent. Return an instance of a type that conforms to the handling intents protocol for the same type as the provided intent.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The system only invokes this method in apps that support multiple scenes. For more information, see [Specifying the scenes your app supports](../specifying-the-scenes-your-app-supports.md).
 

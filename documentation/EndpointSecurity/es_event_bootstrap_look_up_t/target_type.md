@@ -18,7 +18,7 @@ var target_type: es_bootstrap_target_type_t
 es_bootstrap_target_type_t target_type;
 ```
 
-#### Discussion
+## Discussion
 
 Discriminator for the `target` union of `es_event_bootstrap_look_up_t`. Selects between a running owner of the looked-up service port (PROCESS) and a lazy-launched or not-yet-running owner (JOB).
 

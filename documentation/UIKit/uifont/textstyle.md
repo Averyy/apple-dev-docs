@@ -24,7 +24,7 @@ struct TextStyle
 typedef NSString * UIFontTextStyle;
 ```
 
-#### Overview
+## Overview
 
 Pass these constants to the [`preferredFont(forTextStyle:)`](./preferredfont%28fortextstyle%29.md) method of [`UIFont`](../uifont.md) or the [`preferredFontDescriptor(withTextStyle:)`](../uifontdescriptor/preferredfontdescriptor%28withtextstyle%29.md) method of [`UIFontDescriptor`](../uifontdescriptor.md) to retrieve the corresponding font information.
 

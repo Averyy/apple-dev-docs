@@ -24,7 +24,7 @@ case adjustmentBasePhoto
 PHAssetResourceTypeAdjustmentBasePhoto
 ```
 
-#### Discussion
+## Discussion
 
 When you edit an asset, you have the option of resuming the most recent edit made. This process uses a [`PHAdjustmentData`](../phadjustmentdata.md) object to describe the edit, and an extra copy of the photo data representing the state of the asset before the edit. For details, see [`PHAsset`](../phasset.md).
 

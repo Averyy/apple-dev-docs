@@ -16,7 +16,7 @@ class func nonStrict() -> XCTExpectedFailure.Options
 + (XCTExpectedFailureOptions *) nonStrictOptions;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an options instance that specifies that an unfulfilled expected failure doesn’t generate a test failure.
 

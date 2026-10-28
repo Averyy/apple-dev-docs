@@ -21,7 +21,7 @@ Removes a specific tag from a collection.
 extern OSStatus CMTagCollectionRemoveTag(CMMutableTagCollectionRef tagCollection, CMTag tagToRemove);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `0` on success and a value from Tag Collection Error Codes on failure.
 

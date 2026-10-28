@@ -20,7 +20,7 @@ A path component for a nested scene.
 case scene(String)
 ```
 
-#### Discussion
+## Discussion
 
 This path component indicates that another component follows, and at the same time specifies the entity, scene, or property that animates.
 

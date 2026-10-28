@@ -23,7 +23,7 @@ var isCinematicVideoMetadataCaptureSupported: Bool { get }
 @property (nonatomic, readonly, getter=isCinematicVideoMetadataCaptureSupported) BOOL cinematicVideoMetadataCaptureSupported;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `true` if the format supports capturing cinematic video metadata alongside video. The metadata enables post-capture cinematic video editing using the Cinematic framework.
 

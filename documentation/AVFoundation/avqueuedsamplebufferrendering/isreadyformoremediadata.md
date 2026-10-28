@@ -26,7 +26,7 @@ var isReadyForMoreMediaData: Bool { get }
 @property (readonly, getter=isReadyForMoreMediaData) BOOL readyForMoreMediaData;
 ```
 
-#### Discussion
+## Discussion
 
 An object conforming to `AVQueuedSampleBufferRendering` keeps track of the occupancy levels of its internal queues for the benefit of clients that enqueue sample buffers from non-real-time sources, for example, clients that can supply sample buffers faster than they are consumed, and so need to decide when to hold back. Clients enqueueing sample buffers from non-real-time sources may hold off from generating or obtaining more sample buffers to enqueue when the value of `readyForMoreMediaData` is `NO`. It is safe to call [`enqueue(_:)`](./enqueue%28_%29.md) when `readyForMoreMediaData` is `NO`, but don’t enqueue sample buffers without bound.
 

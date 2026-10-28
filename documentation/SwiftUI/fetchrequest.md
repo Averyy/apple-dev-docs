@@ -22,7 +22,7 @@ A property wrapper type that retrieves entities from a Core Data persistent stor
 @propertyWrapper @preconcurrency struct FetchRequest<Result> where Result : NSFetchRequestResult
 ```
 
-#### Overview
+## Overview
 
 Use a `FetchRequest` property wrapper to declare a [`FetchedResults`](./fetchedresults.md) property that provides a collection of Core Data managed objects to a SwiftUI view. The request infers the entity type from the `Result` placeholder type that you specify. Condition the request with an optional predicate and sort descriptors. For example, you can create a request to list all `Quake` managed objects that the [Loading and displaying a large data feed](./loading-and-displaying-a-large-data-feed.md) sample code project defines to store earthquake data, sorted by their `time` property:
 

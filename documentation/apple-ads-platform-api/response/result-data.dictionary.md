@@ -15,7 +15,7 @@ Placeholder for the response payload, whose actual shape depends on each endpoin
 object Response.Result
 ```
 
-#### Discussion
+## Discussion
 
 The `Response.Result` object represents the generic `result` field on the base [`Response`](../response.md) type. Each endpoint returns a more specific type in its place, such as `Campaign` or `UserAccessResult`. See the endpoint’s own documentation for the concrete shape it returns.
 

@@ -24,7 +24,7 @@ class INCarSeatResolutionResult
 @interface INCarSeatResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INCarSeatResolutionResult`](./incarseatresolutionresult.md) object is what you return when resolving parameters containing a [`INCarSeat`](./incarseat.md) value. Use the creation method that best reflects your ability to successfully resolve the parameter. For additional resolution options, see [`INIntentResolutionResult`](./inintentresolutionresult.md).
 

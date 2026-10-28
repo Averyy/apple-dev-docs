@@ -23,7 +23,7 @@ func IOIteratorReset(_ iterator: io_iterator_t)
 void IOIteratorReset(io_iterator_t iterator);
 ```
 
-#### Discussion
+## Discussion
 
 If an iterator is invalid, or if the caller wants to start over, IOIteratorReset will set the iteration back to the beginning.
 

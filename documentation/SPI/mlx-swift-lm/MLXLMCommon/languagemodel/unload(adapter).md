@@ -17,7 +17,7 @@ Unloads an adapter from the model.
 func unload(adapter: ModelAdapter)
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 

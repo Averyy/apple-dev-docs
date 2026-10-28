@@ -20,7 +20,7 @@ case missingAgeRatingExceptionRequest
 
 - [Providing age-rating appropriate content](../providing-age-rating-appropriate-content.md)
 
-#### Discussion
+## Discussion
 
 The framework throws this error if your app calls [`presentAgeExceptionApproveInPersonSheet()`](../applibrary/app/presentageexceptionapproveinpersonsheet%28%29.md) when there’s no age-rating exception requests for the app in the [`currentAgeExceptionRequests()`](../applibrary/currentageexceptionrequests%28%29.md) list.
 

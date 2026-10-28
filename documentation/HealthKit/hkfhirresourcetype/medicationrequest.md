@@ -27,7 +27,7 @@ extern HKFHIRResourceType const HKFHIRResourceTypeMedicationRequest;
 
 - [Accessing Health Records](../accessing-health-records.md)
 
-#### Discussion
+## Discussion
 
 FHIR renamed the resource type for medication requests and orders. FHIR DSTU2 uses the [`medicationOrder`](./medicationorder.md) resource type, while FHIR R4 uses the [`medicationRequest`](./medicationrequest.md) resource type.
 

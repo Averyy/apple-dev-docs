@@ -18,7 +18,7 @@ The buffer queue size.
 var sinkBufferQueueSize: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property translates to the [`kCMIOStreamPropertyOutputBufferQueueSize`](../kcmiostreampropertyoutputbufferqueuesize.md) property.
 

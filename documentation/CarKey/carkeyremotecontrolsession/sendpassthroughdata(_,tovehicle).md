@@ -19,7 +19,7 @@ Sends the specified custom data to the vehicle.
 func sendPassthroughData(_ passthroughData: Data, toVehicle vehicleID: String) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to send data that is custom to your specific vehicle. This method passes the data unmodified directly to the vehicle, and it is up to you to format the data exactly how the vehicle needs it.
 

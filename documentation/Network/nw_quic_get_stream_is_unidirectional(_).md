@@ -25,7 +25,7 @@ func nw_quic_get_stream_is_unidirectional(_ options: nw_protocol_options_t) -> B
 bool nw_quic_get_stream_is_unidirectional(nw_protocol_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the QUIC stream is unidirectional.
 

@@ -18,7 +18,7 @@ The number of mipmap levels for the texture.
 var mipmapLevelCount: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLTextureDescriptor.mipmapLevelCount`.
 

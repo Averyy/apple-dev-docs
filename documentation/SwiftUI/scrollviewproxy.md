@@ -21,7 +21,7 @@ A proxy value that supports programmatic scrolling of the scrollable views withi
 struct ScrollViewProxy
 ```
 
-#### Overview
+## Overview
 
 You don’t create instances of `ScrollViewProxy` directly. Instead, your [`ScrollViewReader`](./scrollviewreader.md) receives an instance of `ScrollViewProxy` in its `content` content builder. You use actions within this content builder, such as button and gesture handlers or the [`onChange(of:perform:)`](./view/onchange%28of,perform%29.md) method, to call the proxy’s [`scrollTo(_:anchor:)`](./scrollviewproxy/scrollto%28_,anchor%29.md) method.
 

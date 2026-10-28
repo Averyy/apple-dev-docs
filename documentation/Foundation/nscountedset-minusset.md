@@ -5,7 +5,7 @@
 
 Removes each object in another given set from the receiving set, if present.
 
-#### Overview
+## Overview
 
 For each object in `otherSet` that is present in the set, this method decrements the associated count. If the count for an object is decremented to `0`, the object is removed from the set.
 

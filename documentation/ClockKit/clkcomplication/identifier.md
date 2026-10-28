@@ -23,7 +23,7 @@ var identifier: String { get }
 
 - [Creating a timeline entry](../creating-a-timeline-entry.md)
 
-#### Discussion
+## Discussion
 
 In watchOS 7 and later, ClockKit represents a complication by its [`family`](./family.md) and its [`CLKComplicationDescriptor`](../clkcomplicationdescriptor.md). Descriptors often represent categories of information that the complication can display. For example, a weather app may support `Condition`, `Temperature`, and `Precipitation` descriptors.
 

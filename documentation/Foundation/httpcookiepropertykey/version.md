@@ -25,7 +25,7 @@ static let version: HTTPCookiePropertyKey
 extern NSHTTPCookiePropertyKey const NSHTTPCookieVersion;
 ```
 
-#### Discussion
+## Discussion
 
 Must be either `"0"` or `"1"`. The default is `"0"`. This cookie attribute is optional.
 

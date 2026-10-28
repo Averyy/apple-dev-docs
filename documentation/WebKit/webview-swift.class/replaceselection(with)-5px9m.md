@@ -20,7 +20,7 @@ func replaceSelection(with node: DOMNode!)
 - (void) replaceSelectionWithNode:(DOMNode *) node;
 ```
 
-#### Discussion
+## Discussion
 
 If the current selection is collapsed (a range is selected with the same nodes and offsets for the start and end) then no content is removed when inserting the node, and the selection is collapsed and moved to the end of the inserted content. If no content is selected, the node is not inserted.
 

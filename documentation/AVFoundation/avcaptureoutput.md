@@ -28,7 +28,7 @@ class AVCaptureOutput
 
 - [Setting up a capture session](./setting-up-a-capture-session.md)
 
-#### Overview
+## Overview
 
 This class provides an abstract interface to connect capture output destinations, such as files and streams, to a capture session.
 

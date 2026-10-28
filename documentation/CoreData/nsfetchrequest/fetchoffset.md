@@ -25,7 +25,7 @@ var fetchOffset: Int { get set }
 @property (nonatomic) NSUInteger fetchOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`.
 

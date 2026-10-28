@@ -15,7 +15,7 @@ An abstract class that provides a common interface for Look Around views.
 abstract class AbstractLookAround extends EventTarget
 ```
 
-#### Discussion
+## Discussion
 
 You can’t initialize an abstract class; use [`LookAround`](./lookaround.md) or [`LookAroundPreview`](./lookaroundpreview.md) to create a Look Around view.
 

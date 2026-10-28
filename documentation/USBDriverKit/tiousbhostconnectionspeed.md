@@ -15,7 +15,7 @@ Constants indicating the connection speed of the device.
 enum tIOUSBHostConnectionSpeed : unsigned int;
 ```
 
-#### Discussion
+## Discussion
 
 This enumeration matches the default speed ID mappings defined in XHCI 1.0 Table 147.
 

@@ -23,7 +23,7 @@ case ending
 MKAnnotationViewDragStateEnding
 ```
 
-#### Discussion
+## Discussion
 
 A user action indicates the user dropped the view. The map view automatically moves annotation views to this state in response to appropriate user actions.
 

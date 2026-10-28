@@ -15,7 +15,7 @@ An object representing the latitude and longitude for a point on the Earth’s s
 class Coordinate implements CoordinateData
 ```
 
-#### Overview
+## Overview
 
 A [`Coordinate`](./coordinate.md) is a point on a spherical representation of the Earth at a specific degree of latitude (`90` and -`90`) and longitude (`180` to -`180`) that you use to search for locations, place annotations, and other objects on the map.
 

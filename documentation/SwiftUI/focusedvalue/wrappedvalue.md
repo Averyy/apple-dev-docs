@@ -21,7 +21,7 @@ The value for the focus key given the current scope and state of the focused vie
 var wrappedValue: Value? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` when nothing in the focused view hierarchy exports a value.
 

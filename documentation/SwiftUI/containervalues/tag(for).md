@@ -21,11 +21,11 @@ The tag value for the given type if the container values contains one.
 func tag<V>(for type: V.Type) -> V? where V : Hashable
 ```
 
-#### Return Value
+## Return Value
 
 The tag value for the given type if the subview has one, otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 Tag values are set using the `View/tag` modifier.
 

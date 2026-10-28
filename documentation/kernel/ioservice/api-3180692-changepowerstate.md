@@ -24,11 +24,11 @@ virtual kern_return_t ChangePowerState(uint32_t powerFlags);
 kern_return_t ChangePowerState(uint32_t powerFlags, OSDispatchMethod supermethod);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md). 
 
-#### Discussion
+## Discussion
 
 If the new state is different than the device's current state, this method places an asynchronous request to change the state to the new value. If the change is successful, the system subsequently calls the [`SetPowerState`](./api-3180704-setpowerstate.md) method of your service. 
 

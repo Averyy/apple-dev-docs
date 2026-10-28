@@ -5,13 +5,13 @@
 
 A person may have difficulty remembering a sequence of steps, or they may find an overly complex user interface difficult to process and manage.
 
-#### Overview
+## Overview
 
 People who need support with comprehension, attention, or communication can use Apple’s cognitive accessibility features to stay focused, streamline tasks, or limit the number of decisions to make. Design and develop your app to support cognitive accessibility features and provide a great experience for people who rely on these features.
 
 ![An illustration that shows a person in a room with an easel, desk, lamp, computer chair, Mac, and their pet cat. The person is holding a paintbrush and painting while wearing AirPods to maintain focus on their task.](https://developer.apple.com/tutorials/images/com.apple.Accessibility/accessibility-scene-cognitive@2x.png)
 
-##### Related videos
+### Related videos
 
 - [Meet Assistive Access](https://developer.apple.com/videos/play/wwdc2023/10032)
   Learn how Assistive Access can help people with cognitive disabilities more easily use iPhone and iPad. Discover the design principles that guide Assistive Access and find out how the system experience adapts to lighten cognitive load. We’ll show you how Assistive Access works and what you can do to support this experience in your app.

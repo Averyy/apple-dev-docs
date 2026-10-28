@@ -24,7 +24,7 @@ let UNNotificationDismissActionIdentifier: String
 extern NSString * const UNNotificationDismissActionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The system delivers this action only if your app configured the notification’s category object with the [`customDismissAction`](./unnotificationcategoryoptions/customdismissaction.md) option. To trigger this action, the user must explicitly dismiss the notification interface. For example, the user must tap the Dismiss button or swipe down on the notification interface in watchOS to trigger this action.
 

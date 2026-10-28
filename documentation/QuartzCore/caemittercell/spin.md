@@ -24,7 +24,7 @@ var spin: CGFloat { get set }
 @property CGFloat spin;
 ```
 
-#### Discussion
+## Discussion
 
 The spin of the cell will vary by a random amount with the range specified by [`spinRange`](./spinrange.md).
 

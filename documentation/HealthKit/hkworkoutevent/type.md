@@ -24,7 +24,7 @@ var type: HKWorkoutEventType { get }
 @property (assign, readonly) HKWorkoutEventType type;
 ```
 
-#### Discussion
+## Discussion
 
 For a description of possible events, see [`HKWorkoutEventType`](../hkworkouteventtype.md).
 

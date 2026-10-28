@@ -16,7 +16,7 @@ Get the flags currently set for this command.
 UInt32 (*GetFlags)(IOFireWireLibVectorCommandRef self);
 ```
 
-#### Return Value
+## Return Value
 
 The flags set in SetFlags
 

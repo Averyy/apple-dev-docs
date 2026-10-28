@@ -25,7 +25,7 @@ var checkingTypes: NSTextCheckingTypes { get }
 @property (readonly) NSTextCheckingTypes checkingTypes;
 ```
 
-#### Discussion
+## Discussion
 
 The supported subset of checking types are specified in [`NSTextCheckingResult.CheckingType`](../nstextcheckingresult/checkingtype.md). Those constants can be combined using the C-bitwise OR operator.
 

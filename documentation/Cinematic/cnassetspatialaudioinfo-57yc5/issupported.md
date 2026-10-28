@@ -17,7 +17,7 @@
 @property (class, readonly) BOOL isSupported;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates whether the current device supports Audio Mix.
 

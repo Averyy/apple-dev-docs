@@ -13,7 +13,7 @@
 kCUPSPPDDomain = 6
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the CUPS domain.
 

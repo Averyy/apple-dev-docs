@@ -22,7 +22,7 @@ class func composers() -> MPMediaQuery
 + (MPMediaQuery *) composersQuery;
 ```
 
-#### Return Value
+## Return Value
 
 A media query that matches all media items and that has a grouping type of [`MPMediaGrouping.composer`](../mpmediagrouping/composer.md).
 

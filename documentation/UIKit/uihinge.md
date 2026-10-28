@@ -24,7 +24,7 @@ class UIHinge
 @interface UIHinge : NSObject
 ```
 
-#### Overview
+## Overview
 
 You observe hinge state by adding a `UIHingeInteraction` to a view and reading it from the update delivered to its handler.
 

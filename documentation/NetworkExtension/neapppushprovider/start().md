@@ -22,7 +22,7 @@ func start()
 - (void) start;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NEAppPushProvider`](../neapppushprovider.md) subclass must override this method to create a connection with its server.
 

@@ -29,7 +29,7 @@ void SecRequestSharedWebCredential(CFStringRef fqdn, CFStringRef account, void (
 
 - [Managing Shared Credentials](./managing-shared-credentials.md)
 
-#### Discussion
+## Discussion
 
 This function requests one or more shared passwords for a given website, depending on whether the optional account parameter is supplied. To obtain results, the website specified in the `fqdn` parameter must be one that matches an entry in the calling app’s [`Associated Domains Entitlement`](../BundleResources/entitlements/com.apple.developer.associated-domains.md).
 

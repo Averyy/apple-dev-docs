@@ -15,7 +15,7 @@ A decoded JSON Web Signature header containing transaction or renewal informatio
 object JWSDecodedHeader
 ```
 
-#### Discussion
+## Discussion
 
 All JWS representations, including the [`signedPayload`](./signedpayload.md), contain a JWS header. When you Base64 URL-decode the header, use the [`JWSDecodedHeader`](../AppStoreServerAPI/jwsdecodedheader.md) object to read its contents. Use the information in the [`JWSDecodedHeader`](./jwsdecodedheader.md) to validate the JWS signature. For more information about validating signatures, see the JSON Web Signature (JWS) [IETF RFC 7515](https://datatracker.ietf.org/doc/html/rfc7515) specification.
 

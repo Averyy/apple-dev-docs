@@ -21,7 +21,7 @@ The scroll bounce mode for the horizontal axis of scrollable views.
 var horizontalScrollBounceBehavior: ScrollBounceBehavior { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`scrollBounceBehavior(_:axes:)`](../view/scrollbouncebehavior%28_,axes%29.md) view modifier to set this value in the [`Environment`](../environment.md).
 

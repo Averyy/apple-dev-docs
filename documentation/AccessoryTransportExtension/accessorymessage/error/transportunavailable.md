@@ -15,7 +15,7 @@ An error indicating the transport is unavailable.
 case transportUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 The system attempts delivery on a different transport if available when you return this error.
 

@@ -25,7 +25,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to cancel any active calls to coordinate the reading or writing of a file. If the block passed to the file coordination call has not yet been executed—perhaps because the file coordinator is still waiting for a response from other file presenters—the file coordinator method stops waiting for a response, does not execute its block, and returns an error object with the error code [`NSUserCancelledError`](../nsusercancellederror-swift.var.md). However, if the block is already being executed, the file coordinator method does not return until the block finishes executing.
 

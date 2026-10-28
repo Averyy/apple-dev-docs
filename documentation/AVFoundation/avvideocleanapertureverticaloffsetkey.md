@@ -24,7 +24,7 @@ let AVVideoCleanApertureVerticalOffsetKey: String
 extern NSString * const AVVideoCleanApertureVerticalOffsetKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an instance of `NSNumber`.
 

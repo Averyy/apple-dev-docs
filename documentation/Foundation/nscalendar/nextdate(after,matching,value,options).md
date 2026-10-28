@@ -25,7 +25,7 @@ func nextDate(after date: Date, matching unit: NSCalendar.Unit, value: Int, opti
 - (NSDate *) nextDateAfterDate:(NSDate *) date matchingUnit:(NSCalendarUnit) unit value:(NSInteger) value options:(NSCalendarOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDate` object.
 

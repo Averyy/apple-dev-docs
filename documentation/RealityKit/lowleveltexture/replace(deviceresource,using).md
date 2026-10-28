@@ -21,7 +21,7 @@ Replaces this object’s underlying texture with an existing [`LowLevelDeviceRes
 func replace(deviceResource: LowLevelDeviceResource, using commandBuffer: (any MTLCommandBuffer)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 While it’s valid to replace a LowLevelTexture with an externally-managed texture having different dimensions, the LowLevelTexture will remember its initial size and calling replace(using:) to obtain a new MTLTexture will respect the initial size.
 

@@ -23,7 +23,7 @@ let kVTCompressionPropertyKey_StereoCameraBaseline: CFString
 extern CFStringRef const kVTCompressionPropertyKey_StereoCameraBaseline;
 ```
 
-#### Discussion
+## Discussion
 
 This property sets a value for the [`kCMFormatDescriptionExtension_StereoCameraBaseline`](../CoreMedia/kcmformatdescriptionextension_stereocamerabaseline.md) format description on the output samples. The value is an unsigned 32-bit integer in micrometers, or thousandths of a millimeter (for example 63123 micrometers is 63.123 millimeters).
 

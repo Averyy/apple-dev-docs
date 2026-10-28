@@ -16,7 +16,7 @@ An object that identifies a media playback or streaming environment.
 struct MediaEnvironment
 ```
 
-#### Overview
+## Overview
 
 To stream media in your browser app, create an instance of `MediaEnvironment` and call [`activate()`](./mediaenvironment/activate%28%29.md) before beginning media playback or capture, for example, by calling the [`AVCaptureSession`](../AVFoundation/avcapturesession.md) class’s [`makeCaptureSession()`](./mediaenvironment/makecapturesession%28%29.md) method.
 

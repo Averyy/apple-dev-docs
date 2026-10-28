@@ -24,7 +24,7 @@ var depthDataQuality: AVDepthData.Quality { get }
 @property (readonly) AVDepthDataQuality depthDataQuality;
 ```
 
-#### Discussion
+## Discussion
 
 A device typically generates depth data maps by comparing images and calculating disparity. If features are lacking in either input image, it may be difficult to find matching key points, resulting in a depth data map with substantial holes. These holes can be filled with depth data filtering, but still may produce a map of overall poor quality.
 

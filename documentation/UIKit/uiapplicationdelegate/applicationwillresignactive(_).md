@@ -30,7 +30,7 @@ optional func applicationWillResignActive(_ application: UIApplication)
 - [About the background execution sequence](../about-the-background-execution-sequence.md)
 - [Transitioning to the UIKit scene-based life cycle](../transitioning-to-the-uikit-scene-based-life-cycle.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  If you’re using scenes (see [Scenes](../scenes.md)), UIKit will not call this method. Use [`sceneWillResignActive(_:)`](../uiscenedelegate/scenewillresignactive%28_%29.md) instead to pause any activity or save state. UIKit posts a [`willResignActiveNotification`](../uiapplication/willresignactivenotification.md) regardless of whether your app uses scenes.
 

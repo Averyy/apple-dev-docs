@@ -23,7 +23,7 @@ var localizedDescription: String? { get set }
 @property (nonatomic, copy, nullable) NSString * localizedDescription;
 ```
 
-#### Discussion
+## Discussion
 
 This property provides a user-visible description that clearly identifies the card.
 

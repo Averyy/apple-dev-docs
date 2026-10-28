@@ -5,7 +5,7 @@
 
 Property dictionary key and constant values.
 
-#### Overview
+## Overview
 
 Property dictionary key and constant values for a dictionary populated by [`VTSessionCopySupportedPropertyDictionary(_:supportedPropertyDictionaryOut:)`](./vtsessioncopysupportedpropertydictionary%28_,supportedpropertydictionaryout%29.md).
 

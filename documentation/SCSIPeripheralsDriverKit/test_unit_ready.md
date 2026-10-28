@@ -15,11 +15,11 @@ Fills a Command Descriptor Block (CDB) to test whether the unit is ready.
 bool TEST_UNIT_READY(SCSIDeviceOutParameters *request, SCSIDeviceInParameters *response, UInt64 senseBufAddr);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the call successfully fills the CDB; `false`, otherwise.
 
-#### Discussion
+## Discussion
 
 Use this method in your dext to prefill a 16-byte CDB for the standard `TEST UNIT READY` SCSI command.
 

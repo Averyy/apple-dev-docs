@@ -25,11 +25,11 @@ func NSIntersectionRange(_ range1: NSRange, _ range2: NSRange) -> NSRange
 extern NSRange NSIntersectionRange(NSRange range1, NSRange range2);
 ```
 
-#### Return Value
+## Return Value
 
 A range describing the intersection of `range1` and `range2`—that is, a range containing the indices that exist in both ranges.
 
-#### Discussion
+## Discussion
 
 If the returned range’s length field is 0, then the two ranges don’t intersect, and the value of the location field is undefined.
 

@@ -21,7 +21,7 @@ Calculates the force upon the spring given a current position, target, and veloc
 func force<V>(target: V, position: V, velocity: V) -> V where V : VectorArithmetic
 ```
 
-#### Discussion
+## Discussion
 
 This value is in units of the vector type per second squared.
 

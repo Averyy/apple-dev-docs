@@ -27,7 +27,7 @@ func prediction(from input: Self.Input) async throws -> Self.Output
 func prediction<S>(from input: S) async throws -> [Self.Output] where S : Sequence, Self.Input == S.Element
 ```
 
-#### Return Value
+## Return Value
 
 A regression.
 

@@ -5,7 +5,7 @@
 
 Connect the on-device system to your server.
 
-#### Overview
+## Overview
 
 For the Live Caller ID Lookup extension, your client-side app needs your [`serviceURL`](./livecalleridlookupextensioncontext/serviceurl.md) so the system can fetch information from your server. Communication between the system and the server uses protocol buffer messages over HTTP. For more information, see [Homomorphic Encryption Protobuf](https://github.com/apple/swift-homomorphic-encryption-protobuf).
 
@@ -15,7 +15,7 @@ Implement your server with the following HTTP endpoints:
 - `/key`
 - `/queries`
 
-##### Get configuration and status
+### Get configuration and status
 
 The system calls the configuration endpoint periodically to get information about the use case configuration and evaluation key status. Set up the following `/config` endpoint by posting to `/config`:
 
@@ -28,7 +28,7 @@ The system calls the configuration endpoint periodically to get information abou
 | Response field | `configs` | A field that maps from the use case names to the corresponding configuration. |
 | Response field | `key_info` | A list of the `KeyStatus` objects. |
 
-##### Upload the evaluation key
+### Upload the evaluation key
 
 You store the evaluation key on your server. When the system detects a new evaluation key, it uses the `/key` endpoint to upload it. Set up the following `/key` endpoint to upload an evaluation key by posting to `/key`:
 
@@ -38,7 +38,7 @@ You store the evaluation key on your server. When the system detects a new evalu
 | Header | `Authorization` | The value that contains a private access token. |
 | Request body | `EvaluationKeys` | A serialized protocol buffer message. |
 
-##### Update PIR requests
+### Update PIR requests
 
 The system updates your private information retrieval (PIR) request through the `/queries` endpoint. Set up the `/queries` endpoint to evaluate PIR requests.
 

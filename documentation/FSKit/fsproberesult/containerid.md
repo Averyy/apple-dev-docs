@@ -19,7 +19,7 @@ var containerID: FSContainerIdentifier? { get }
 @property (readonly, nullable) FSContainerIdentifier * containerID;
 ```
 
-#### Discussion
+## Discussion
 
 This value is non-`nil` unless the result is [`FSMatchResult.notRecognized`](../fsmatchresult/notrecognized.md). For formats that lack a durable UUID on which to base a container identifier — which is only legal for a [`FSUnaryFileSystem`](../fsunaryfilesystem.md) — this value may be a random UUID.
 

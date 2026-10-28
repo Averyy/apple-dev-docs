@@ -19,7 +19,7 @@ An error thrown by a live assistance extension when handling a request.
 enum LiveAssistanceRequestError
 ```
 
-#### Overview
+## Overview
 
 Throw this error from your implementations of [`prepareAssistanceRequest(_:)`](./liveassistanceextension/prepareassistancerequest%28_%29.md) and [`resumeRequest(_:)`](./liveassistanceextension/resumerequest%28_%29.md) to end requests that you can’t service.
 

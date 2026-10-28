@@ -22,7 +22,7 @@ var style: UISwitch.Style { get }
 @property (nonatomic, readonly) UISwitchStyle style;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns the resolved style based on the user interface idiom, and never returns [`UISwitch.Style.automatic`](./style-swift.enum/automatic.md).
 

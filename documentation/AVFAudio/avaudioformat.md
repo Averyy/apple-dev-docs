@@ -25,7 +25,7 @@ class AVAudioFormat
 @interface AVAudioFormat : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`AVAudioFormat`](./avaudioformat.md) class wraps Core Audio’s [`AudioStreamBasicDescription`](../CoreAudioTypes/audiostreambasicdescription.md), and includes convenience initializers and accessors for common formats, including Core Audio’s standard deinterleaved 32-bit floating point format.
 

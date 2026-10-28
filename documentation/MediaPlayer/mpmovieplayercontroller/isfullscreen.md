@@ -23,7 +23,7 @@ var isFullscreen: Bool { get set }
 @property (nonatomic, getter=isFullscreen) BOOL fullscreen;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). Changing the value of this property causes the movie player to enter or exit full-screen mode immediately. If you want to animate the transition to full-screen mode, use the [`setFullscreen(_:animated:)`](./setfullscreen%28_,animated%29.md) method instead.
 

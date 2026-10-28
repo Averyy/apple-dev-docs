@@ -21,7 +21,7 @@ A serialization format used to encode a compute node graph.
 enum Format
 ```
 
-#### Overview
+## Overview
 
 Use a value of this type with [`data(using:)`](./data%28using%29.md) to choose how the graph is written. Both formats round-trip through [`init(data:)`](./init%28data%29.md), which detects the format automatically when reading.
 

@@ -6,7 +6,7 @@
 
 The total movie duration of all image frames contained in an object’s view.
 
-#### Overview
+## Overview
 
 In an object that uses a single frame to represent a view, the duration is the image track’s sample duration time.
 

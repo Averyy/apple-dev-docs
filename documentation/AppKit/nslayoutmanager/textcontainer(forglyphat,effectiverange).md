@@ -19,11 +19,11 @@ func textContainer(forGlyphAt glyphIndex: Int, effectiveRange effectiveGlyphRang
 - (NSTextContainer *) textContainerForGlyphAtIndex:(NSUInteger) glyphIndex effectiveRange:(NSRangePointer) effectiveGlyphRange;
 ```
 
-#### Return Value
+## Return Value
 
 The text container in which the glyph at `glyphIndex` is laid out.
 
-#### Discussion
+## Discussion
 
 This method causes glyph generation and layout for the line fragment containing the specified glyph, or if noncontiguous layout is not enabled, up to and including that line fragment. If noncontiguous layout is not enabled and `effectiveGlyphRange` is not `NULL`, this method additionally causes glyph generation and layout for the entire text container containing the specified glyph.
 

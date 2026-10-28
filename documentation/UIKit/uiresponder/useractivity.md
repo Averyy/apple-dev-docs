@@ -23,7 +23,7 @@ var userActivity: NSUserActivity? { get set }
 @property (nonatomic, strong, nullable) NSUserActivity * userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 By setting the [`userActivity`](./useractivity.md) property on a responder, the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object becomes managed by UIKit. User activities managed by UIKit are saved automatically at appropriate times. You can lazily add state data representing the user’s activity using the [`updateUserActivityState(_:)`](./updateuseractivitystate%28_%29.md) override. Multiple responders can share a single [`NSUserActivity`](../../Foundation/nsuseractivity.md) instance, in which case they all get an [`updateUserActivityState(_:)`](./updateuseractivitystate%28_%29.md) callback.
 

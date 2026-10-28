@@ -23,11 +23,11 @@ Removes and returns the element at the specified position.
 mutating func remove(at i: Self.Index) -> Self.Element
 ```
 
-#### Return Value
+## Return Value
 
 The removed element.
 
-#### Discussion
+## Discussion
 
 All the elements following the specified position are moved to close the gap. This example removes the middle element from an array of measurements.
 

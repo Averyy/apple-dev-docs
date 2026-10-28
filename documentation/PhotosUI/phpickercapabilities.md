@@ -23,7 +23,7 @@ struct PHPickerCapabilities
 enum PHPickerCapabilities : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 This enumeration defines the possible values for the photo picker configuration ([`PHPickerConfiguration`](./phpickerconfiguration-swift.struct.md)) property [`disabledCapabilities`](./phpickerconfiguration-swift.struct/disabledcapabilities.md).
 

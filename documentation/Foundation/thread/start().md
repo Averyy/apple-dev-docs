@@ -25,7 +25,7 @@ func start()
 - (void) start;
 ```
 
-#### Discussion
+## Discussion
 
 This method asynchronously spawns the new thread and invokes the receiver’s [`main()`](./main%28%29.md) method on the new thread. The [`isExecuting`](./isexecuting.md) property returns [`true`](../../Swift/true.md) once the thread starts executing, which may occur after the [`start()`](./start%28%29.md) method returns.
 

@@ -15,11 +15,11 @@ Returns a text encoding specification in which any meta-valueshave been resolved
 TextEncoding ResolveDefaultTextEncoding(TextEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 A text encoding specificationcontaining only real base encoding values. 
 
-#### Discussion
+## Discussion
 
 This function is useful for application developers who areproviding APIs that take text encoding specifications as parameters.All APIs in the Unicode Converter and Text Encoding Converter performthis translation automatically.  
 

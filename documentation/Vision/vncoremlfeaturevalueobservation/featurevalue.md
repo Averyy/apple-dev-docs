@@ -25,7 +25,7 @@ var featureValue: MLFeatureValue { get }
 @property (nonatomic, copy, readonly) MLFeatureValue * featureValue;
 ```
 
-#### Discussion
+## Discussion
 
 Refer to [Core ML](../../CoreML/CoreML.md) documentation and the model itself to learn about proper handling of the content.
 

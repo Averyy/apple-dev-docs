@@ -21,7 +21,7 @@ A preferred alignment for a navigation bar’s title.
 struct ToolbarTitleAlignment
 ```
 
-#### Overview
+## Overview
 
 Use values of this type with the [`toolbarTitleAlignment(_:)`](./view/toolbartitlealignment%28_%29.md) modifier to override the title alignment the system would use.
 

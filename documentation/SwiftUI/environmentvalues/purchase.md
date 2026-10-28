@@ -22,7 +22,7 @@ An action that starts an in-app purchase.
 @preconcurrency var purchase: PurchaseAction { get }
 ```
 
-#### Discussion
+## Discussion
 
 Read this environment value to get an `PurchaseAction` instance for a given [`Environment`](../environment.md). Call the instance to start an in-app purchase. You call the instance directly because it defines a `PurchaseAction/callAsFunction(_:options:)` method that Swift calls when you call the instance.
 

@@ -25,11 +25,11 @@ func localizedString(for date: Date, relativeTo referenceDate: Date) -> String
 - (NSString *) localizedStringForDate:(NSDate *) date relativeToDate:(NSDate *) referenceDate;
 ```
 
-#### Return Value
+## Return Value
 
 A string that represents the date interval between two dates.
 
-#### Discussion
+## Discussion
 
 ```swift
 let tenMinutesAgo = Date(timeIntervalSinceNow: -600)

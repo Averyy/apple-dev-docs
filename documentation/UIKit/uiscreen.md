@@ -28,7 +28,7 @@ class UIScreen
 - [Presenting content on a connected display](./presenting-content-on-a-connected-display.md)
 - [Building a desktop-class iPad app](./building-a-desktop-class-ipad-app.md)
 
-#### Overview
+## Overview
 
 A [`UIScreen`](./uiscreen.md) object provides information about the screens attached to an iOS, iPadOS, or tvOS device. A screen object for an iOS or iPadOS device has information about the integrated display or an attached display. A screen object for a tvOS device represents the television connected to the device. In a compatible iPad or iPhone app running in visionOS, don’t rely on screen-related properties to configure your app.
 

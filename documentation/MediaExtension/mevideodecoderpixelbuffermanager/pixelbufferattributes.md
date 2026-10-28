@@ -19,7 +19,7 @@ var pixelBufferAttributes: [String : Any] { get set }
 @property (nonatomic, copy, readwrite) NSDictionary<NSString *,id> * pixelBufferAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 The decoder can update this dictionary before it requests a new pixel buffer.
 

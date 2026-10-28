@@ -23,7 +23,7 @@ func widthForSegment(at segment: Int) -> CGFloat
 - (CGFloat) widthForSegmentAtIndex:(NSUInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 A float value specifying the width of the segment. If the value is {0.0}, [`UISegmentedControl`](../uisegmentedcontrol.md) automatically sizes the segment.
 

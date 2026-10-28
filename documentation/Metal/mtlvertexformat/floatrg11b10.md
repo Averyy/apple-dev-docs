@@ -24,7 +24,7 @@ case floatRG11B10
 MTLVertexFormatFloatRG11B10
 ```
 
-#### Discussion
+## Discussion
 
 The 11-bit components for red and green each store five exponent bits and six mantissa bits. The 10-bit blue component stores five exponent bits and five mantissa bits.
 

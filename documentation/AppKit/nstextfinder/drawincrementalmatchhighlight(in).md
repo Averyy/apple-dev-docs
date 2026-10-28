@@ -19,7 +19,7 @@ class func drawIncrementalMatchHighlight(in rect: NSRect)
 + (void) drawIncrementalMatchHighlightInRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 If [`incrementalSearchingShouldDimContentView`](./incrementalsearchingshoulddimcontentview.md) is [`false`](../../Swift/false.md), it is recommended to highlight incremental matches in your own view. However, some applications may choose to show incremental search values in a different manner.
 

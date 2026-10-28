@@ -15,7 +15,7 @@ Enables or disables the queue.
 virtual kern_return_t SetEnable(bool isEnable);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 

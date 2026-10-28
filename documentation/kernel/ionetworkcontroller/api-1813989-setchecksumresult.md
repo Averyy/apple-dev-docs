@@ -17,11 +17,11 @@ virtual bool setChecksumResult(
  UInt32 param1 = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the checksum family is valid and the packet has been encoded with the checksum result provided, false otherwise.
 
-#### Overview
+## Overview
 
 A network controller that can verify the checksum(s) for a received packet, should call this method to encode the result on the packet, before passing it up towards the protocol stacks.
 

@@ -13,11 +13,11 @@ virtual bool getVlanTagDemand(
  UInt32 *vlanTag);
 ```
 
-#### Return Value
+## Return Value
 
 true if vlanTag has been set and should be used. false if no vlan tag stuffing is required for this packet.
 
-#### Overview
+## Overview
 
 A network controller that can insert 802.1Q vlan tags for output packets must call this method to obtain vlan tag information that it must insert into the given output packet.
 

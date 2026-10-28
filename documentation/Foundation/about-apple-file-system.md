@@ -5,7 +5,7 @@
 
 Use high-level APIs to get the most out of Apple File System.
 
-#### Overview
+## Overview
 
 Apple File System replaces HFS Plus as the default file system for iOS 10.3 and later, and for macOS High Sierra and later. Apple File System offers improved file system fundamentals as well as several new features, including cloning, snapshots, space sharing, fast directory sizing, atomic safe-save, and sparse files.
 
@@ -13,7 +13,7 @@ Using high-level APIs in Foundation, such as [`FileManager`](./filemanager.md) a
 
 If you need to interact with the file system directly, without using any frameworks or the operating system, read [Apple File System Reference](https://developer.apple.com/go/?id=apfs-file-format-spec).
 
-##### Clones Reduce the Cost of Copying
+### Clones Reduce the Cost of Copying
 
 A clone is a copy of a file or directory that occupies no additional space on disk. Clones let you make fast, power-efficient file copies on the same volume. The [`copyItem(at:to:)`](./filemanager/copyitem%28at,to%29.md) and [`copyItem(atPath:toPath:)`](./filemanager/copyitem%28atpath,topath%29.md) methods of [`FileManager`](./filemanager.md) automatically create a clone for Apple File System volumes, as shown in the listing below.
 
@@ -33,7 +33,7 @@ Modifications to the data are written elsewhere, and both files continue to shar
 
 ![](https://developer.apple.com/tutorials/images/com.apple.foundation/media-2991758@2x.png)
 
-##### Free Space Is Shared Between Volumes
+### Free Space Is Shared Between Volumes
 
 Many files systems, including HFS Plus, support only a single volume per partition. Because free space can’t be shared across partitions, each volume’s size is set when partitioning the storage device, and each volume can only grow into its available free space. In contrast, Apple File System supports multiple volumes within a single partition, which allows all of those volumes to share their free space. All of the volumes in an Apple File System partition can grow and shrink independently; space that’s freed when one volume shrinks can be used when another volume grows.
 
@@ -49,7 +49,7 @@ if let attributes = try? FileManager.default.attributesOfFileSystem(forPath: "/"
 
 Computing the sum of each volume’s available free space isn’t a reliable way to determine the total free space within a partition. In general, check whether the space required to perform a particular operation is available on the volume, rather than trying to calculate the partition’s total free space.
 
-##### Sparse Files Don’t Allocate Empty Blocks
+### Sparse Files Don’t Allocate Empty Blocks
 
 In file systems that support sparse files, including Apple File System, on-disk blocks are allocated only when those blocks are actually written to. This behavior lets files that contain blank sections, such as disk images and database dumps, be saved on disk more efficiently.
 

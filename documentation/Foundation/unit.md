@@ -25,13 +25,13 @@ class Unit
 @interface NSUnit : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each instance of an [`Unit`](./unit.md) subclass consists of a [`symbol`](./unit/symbol.md), which can be used to create string representations of [`NSMeasurement`](./nsmeasurement.md) objects with the [`MeasurementFormatter`](./measurementformatter.md) class.
 
 The [`Dimension`](./dimension.md) subclass is an abstract class that represents a dimensional unit, which can be converted into different units of the same type. The Foundation framework provides several concrete [`Dimension`](./dimension.md) subclasses to represent the most common physical quantities, including mass, length, duration, and speed.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 [`Unit`](./unit.md) is intended for subclassing. For dimensional units, you should use one of the Apple provided [`Dimension`](./dimension.md) subclasses listed in Table 1 of [`Dimension`](./dimension.md), or create a custom subclass of [`Dimension`](./dimension.md). You can create a direct subclass of [`Unit`](./unit.md) to represent a custom dimensionless unit, such as a count, score, or ratio.
 

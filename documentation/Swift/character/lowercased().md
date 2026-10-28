@@ -21,7 +21,7 @@ Returns a lowercased version of this character.
 func lowercased() -> String
 ```
 
-#### Discussion
+## Discussion
 
 Because case conversion can result in multiple characters, the result of `lowercased()` is a string.
 

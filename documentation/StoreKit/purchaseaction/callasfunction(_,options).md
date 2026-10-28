@@ -22,11 +22,11 @@ Starts an Apple In-App Purchase for the indicated product and purchase options.
 @preconcurrency func callAsFunction(_ product: Product, options: Set<Product.PurchaseOption> = []) async throws -> Product.PurchaseResult
 ```
 
-#### Return Value
+## Return Value
 
 The result of the purchase, [`Product.PurchaseResult`](../product/purchaseresult.md).
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the [`PurchaseAction`](../purchaseaction.md) structure with the `product` and `options` as arguments.
 

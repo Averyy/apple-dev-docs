@@ -23,7 +23,7 @@ var multipleSelectionBackgroundView: UIView? { get set }
 @property (nonatomic, strong, nullable) UIView * multipleSelectionBackgroundView;
 ```
 
-#### Discussion
+## Discussion
 
 If this property isn’t `nil`, this view becomes the background view for a selected cell when the table view allows multiple row selections. You enable multiple row selections through the [`allowsMultipleSelection`](../uitableview/allowsmultipleselection.md) and [`allowsMultipleSelectionDuringEditing`](../uitableview/allowsmultipleselectionduringediting.md) properties of [`UITableView`](../uitableview.md).
 

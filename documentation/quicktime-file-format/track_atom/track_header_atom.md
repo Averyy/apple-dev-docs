@@ -6,7 +6,7 @@
 
 An atom that specifies the characteristics of a single track within a movie.
 
-#### Overview
+## Overview
 
 See [`Track header atom`](../track_header_atom.md).
 

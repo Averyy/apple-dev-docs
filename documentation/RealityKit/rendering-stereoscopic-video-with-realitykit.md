@@ -10,7 +10,7 @@ Render stereoscopic video in visionOS with RealityKit.
 - visionOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 visionOS offers a range of options for programmatic video playback, including:
 
@@ -30,7 +30,7 @@ To supply frames, the app attaches its video renderer to a render synchronizer a
 
 > **Note**: By default, 3D video in visionOS uses the Multiview High Efficiency Video Encoding (MV-HEVC) format, supported by MPEG4 and QuickTime. For information about converting a file like the one in this sample to MV-HEVC, see [Converting side-by-side 3D video to multiview HEVC and spatial video](../AVFoundation/converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md).
 
-#### Structure the app
+## Structure the app
 
 The structure of the app is simple. `PlayerModel` is an [`Observable`](../Observation/observable.md) custom type that’s injected into the SwiftUI [`Environment`](../SwiftUI/environment.md) for visibility to the root `ContentView`. This model includes a property of type `PlayerState`, which is a Swift enumeration that reflects the current player state. It also includes an instance of type `LoopingVideoPlayer`, which exposes the underlying [`AVSampleBufferVideoRenderer`](../AVFoundation/avsamplebuffervideorenderer.md).
 
@@ -61,7 +61,7 @@ For simplicity, the following modifiers are applied to create a window with fixe
 - [`windowResizability(_:)`](../SwiftUI/scene/windowresizability%28_%29.md)
 - [`windowStyle(_:)`](../SwiftUI/scene/windowstyle%28_%29.md)
 
-#### Create an entity to render video content
+## Create an entity to render video content
 
 Use the `PlayerModel` as a property exposed from `ContentView`:
 
@@ -117,7 +117,7 @@ Finally, the sample applies these modifiers to initialize the player, and to beg
 }
 ```
 
-#### Prepare for continuous playback
+## Prepare for continuous playback
 
 `LoopingVideoPlayer` is a custom type that coordinates continuous playback of the sample video. To achieve this, it manages multiple instances of another custom type, `SerialProcessor`.
 
@@ -166,7 +166,7 @@ func load() async throws {
 }
 ```
 
-#### Loop playback
+## Loop playback
 
 The app begins playback by calling `loop(rate:)` for the first time. The initial rate of the render synchronizer is `0.0`, meaning that playback has stopped. Passing `1.0` starts playback at the natural rate of the media.
 
@@ -220,7 +220,7 @@ func stop() {
 }
 ```
 
-#### Load the side-by-side video
+## Load the side-by-side video
 
 Each `SerialProcessor` is an actor that traverses the video track from start to finish, extracting each individual video frame for processing. Processing converts these input frames from the single-layer, side-by-side input format to a multi-layer, output format.
 
@@ -255,7 +255,7 @@ let videoTrackOutputProvider = assetReader.outputProvider(for: videoTrackOutput)
 try assetReader.start()
 ```
 
-#### Create the video frame-transfer session and output pixel-buffer pool
+## Create the video frame-transfer session and output pixel-buffer pool
 
 To prepare for processing the video input, the sample creates a [`VTPixelTransferSession`](../VideoToolbox/vtpixeltransfersession.md) to read raw [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md) input and write processed `CVPixelBuffers` as output.
 
@@ -293,7 +293,7 @@ else {
 }
 ```
 
-#### Enqueue frames to the receiver
+## Enqueue frames to the receiver
 
 Each playback pass runs in a single task that owns the receiver. Before the pass begins, the player flushes the receiver to discard any frames left over from the previous loop. The task then starts the processor and repeatedly awaits the next transformed sample buffer, enqueueing each one.
 
@@ -320,7 +320,7 @@ private func process(with processor: SerialProcessor) {
 }
 ```
 
-#### Transform side-by-side input to multi-layer output
+## Transform side-by-side input to multi-layer output
 
 The processor creates individual left- and right-eye images in the transformation function. It specifies layer ID `0` for the left eye, and `1` for the right eye.
 

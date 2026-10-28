@@ -24,7 +24,7 @@ func denyConnection(fromPeer peerID: String!)
 - (void) denyConnectionFromPeer:(NSString *) peerID;
 ```
 
-#### Discussion
+## Discussion
 
 When your session acts as a server, client peers can discover your session and attempt to connect to it. When a client attempts to connect to the session, the delegate’s [`session(_:didReceiveConnectionRequestFromPeer:)`](../gksessiondelegate/session%28_,didreceiveconnectionrequestfrompeer%29.md) method is called to decide whether the peer should be connected. Your application calls this method to reject the request or [`acceptConnection(fromPeer:)`](./acceptconnection%28frompeer%29.md) to accept it.
 

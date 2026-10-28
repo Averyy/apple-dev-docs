@@ -25,7 +25,7 @@ func string(fromValue value: Double, unit: MassFormatter.Unit) -> String
 - (NSString *) stringFromValue:(double) value unit:(NSMassFormatterUnit) unit;
 ```
 
-#### Return Value
+## Return Value
 
 A localized string that combines the provided value and unit.
 

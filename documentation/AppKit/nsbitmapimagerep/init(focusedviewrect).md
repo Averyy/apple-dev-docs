@@ -21,11 +21,11 @@ init?(focusedViewRect rect: NSRect)
 - (instancetype) initWithFocusedViewRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the initialized object or `nil` If for any reason the new object can’t be initialized.
 
-#### Discussion
+## Discussion
 
 This method uses imaging operators to read the image data into a buffer; the object is then created from that data. The object is initialized with information about the image obtained from the window server.
 

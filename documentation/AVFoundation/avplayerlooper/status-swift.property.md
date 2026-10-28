@@ -24,7 +24,7 @@ var status: AVPlayerLooper.Status { get }
 @property (readonly) AVPlayerLooperStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`AVPlayerLooper.Status.failed`](./status-swift.enum/failed.md) or [`AVPlayerLooper.Status.cancelled`](./status-swift.enum/cancelled.md), you can no longer use the looper for playback. You need to create a new instance to begin looping again.
 

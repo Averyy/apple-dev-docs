@@ -24,7 +24,7 @@ init(memberAnnotations: [any MKAnnotation])
 - (instancetype) initWithMemberAnnotations:(NSArray<id<MKAnnotation>> *) memberAnnotations;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`MKClusterAnnotation`](../mkclusterannotation.md) object or `nil` if the object could not be created.
 

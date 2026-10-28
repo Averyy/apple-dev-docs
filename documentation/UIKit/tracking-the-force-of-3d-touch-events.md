@@ -4,7 +4,7 @@
 
 Manipulate your content based on the force of touches.
 
-#### Overview
+## Overview
 
 A touch on the screen primarily conveys the location of that touch. However, devices that support 3D Touch also report the amount of force imparted by the user’s finger onto the screen. (Similarly, Apple Pencil reports the amount of force at its tip to the connected device.) You can use both the touch location and the force value as input to your app. For example, a drawing app might use force to set the thickness of the current line.
 

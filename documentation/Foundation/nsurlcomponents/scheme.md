@@ -25,7 +25,7 @@ var scheme: String? { get set }
 @property (copy, nullable) NSString * scheme;
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the URL `http://www.example.com/index.html`, the scheme is `http`.
 

@@ -23,7 +23,7 @@ case tanhShrink
 MLCActivationTypeTanhShrink
 ```
 
-#### Discussion
+## Discussion
 
 This activation type implements the function `f(x) = x - tanh(x)`.
 

@@ -20,7 +20,7 @@ enum ApplePayPaymentTiming
 
 - [Apple Pay on the Web Version 14 Release Notes](./apple-pay-on-the-web-version-14-release-notes.md)
 
-#### Overview
+## Overview
 
 The following are the payment timing values:
 

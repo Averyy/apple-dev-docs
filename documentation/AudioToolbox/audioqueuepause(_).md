@@ -24,11 +24,11 @@ func AudioQueuePause(_ inAQ: AudioQueueRef) -> OSStatus
 extern OSStatus AudioQueuePause(AudioQueueRef inAQ);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Pausing an audio queue does not affect buffers or reset the audio queue. To resume playback or recording, call [`AudioQueueStart(_:_:)`](./audioqueuestart%28_,_%29.md).
 

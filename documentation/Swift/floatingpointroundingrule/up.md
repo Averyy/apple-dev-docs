@@ -21,7 +21,7 @@ Round to the closest allowed value that is greater than or equal to the source.
 case up
 ```
 
-#### Discussion
+## Discussion
 
 The following example shows the results of rounding numbers using this rule:
 

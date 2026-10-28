@@ -20,7 +20,7 @@ A set of masks that determine whether entities can collide during simulations.
 struct CollisionFilter
 ```
 
-#### Overview
+## Overview
 
 Use Collision filters in combination with collision groups to define which entities collide with which other entities in a scene. For more information on using collision filters, see [`CollisionGroup`](./collisiongroup.md)
 

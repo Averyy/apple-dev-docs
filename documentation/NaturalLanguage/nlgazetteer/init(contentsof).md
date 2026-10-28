@@ -25,7 +25,7 @@ init(contentsOf url: URL) throws
 - (instancetype) initWithContentsOfURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an [`NLGazetteer`](../nlgazetteer.md) from an `.mlmodel` file saved by [`MLGazetteer`](../../CreateML/mlgazetteer.md) in the `Create ML` framework.
 

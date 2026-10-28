@@ -19,7 +19,7 @@ var shadowBlurRadius: CGFloat { get set }
 @property CGFloat shadowBlurRadius;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the shadow’s blur radius, as measured in the default user coordinate space. A value of `0` produces no blur, while larger values produce an increasingly large blurred shadow. This value must not be negative. The default value is `0`.
 

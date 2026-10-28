@@ -26,7 +26,7 @@ object SoftwareUpdateEnforcementSpecific
 - [Phases of software update enforcement](./phases-of-software-update-enforcement.md)
 - [Returning a managed device to service](./returning-a-managed-device-to-service.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.softwareupdate.enforcement.specific` as the declaration type.
 
@@ -40,7 +40,7 @@ The system can only install a supplemental software update on a device that alre
 
 If the device isn’t running at the target date-time, the system enforces the software update 1 hour after restarting, or when the device meets all required conditions, such as minimum battery level.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -52,7 +52,7 @@ If the device isn’t running at the target date-time, the system enforces the s
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration example
+### Configuration example
 
 This configuration enforces a software update to a specific OS version and build at a specified time.
 

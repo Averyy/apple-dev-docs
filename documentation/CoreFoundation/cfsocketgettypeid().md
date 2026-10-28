@@ -25,7 +25,7 @@ func CFSocketGetTypeID() -> CFTypeID
 extern CFTypeID CFSocketGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFSocket opaque type.
 

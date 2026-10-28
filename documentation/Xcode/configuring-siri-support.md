@@ -5,7 +5,7 @@
 
 Enable your app and its Intents extension to resolve, confirm, and handle user-driven Siri requests for your app’s services.
 
-#### Overview
+## Overview
 
 To process user requests that originate from Siri, first add the Siri capability to your app’s target. This informs the system that your app is ready to resolve, confirm, and handle SiriKit intents, typically through its Intents extension; in iOS 14 and later, you can choose to perform each of these steps from within your app.
 
@@ -13,7 +13,7 @@ After you configure your app to process SiriKit intents, add code — to your ap
 
 > **Note**: watchOS doesn’t support all intent types. For example, a watchOS app can’t start a video call or handle intents in the CarPlay domain. Check an intent’s availability information to determine whether you can use it on watchOS.
 
-##### Add the Siri capability to your target
+### Add the Siri capability to your target
 
 Follow the steps in [Add a capability](./adding-capabilities-to-your-app.md#Add-a-capability) to add the capability to your app’s target, making sure you select the Siri capability from Xcode’s Capabilities library. For watchOS apps with separate WatchKit extensions, you must add the capability to the WatchKit Extension target. The capability isn’t available for macOS.
 
@@ -21,15 +21,15 @@ Follow the steps in [Add a capability](./adding-capabilities-to-your-app.md#Add-
 
 After you add the Siri capability, Xcode automatically updates the entitlements file of your target to include the [`Siri Entitlement`](../BundleResources/entitlements/com.apple.developer.siri.md). The App Store requires this entitlement for any app that contains an Intents extension that handles non-shortcut Siri requests.
 
-##### Handle SiriKit intents in an Intents extension
+### Handle SiriKit intents in an Intents extension
 
-Use an Intents extension to respond to the user’s request from Siri quickly and without incurring the performance cost of loading the entire app into memory. To use an extension, you must first complete a number of additional configuration steps, such as adding one or more Intents extensions to your app’s target and specifying the types of intents those extensions support. For more information, see [Add an Intents App Extension to Your Project](../SiriKit/intent_handling_infrastructure/creating_an_intents_app_extension.md#2864127).
+Use an Intents extension to respond to the user’s request from Siri quickly and without incurring the performance cost of loading the entire app into memory. To use an extension, you must first complete a number of additional configuration steps, such as adding one or more Intents extensions to your app’s target and specifying the types of intents those extensions support. For more information, see [Add an Intents App Extension to Your Project](../SiriKit/creating-an-intents-app-extension.md#2864127).
 
-##### Handle SiriKit intents directly in your app
+### Handle SiriKit intents directly in your app
 
 In iOS 14 and later, you can choose not to use an Intents extension, and instead respond to the user’s request directly from within your iOS app. To do this, override the [`application(_:handlerFor:)`](../UIKit/uiapplicationdelegate/application%28_,handlerfor%29.md) method in your app delegate and use it to map incoming intents to the objects that are capable of handling them.
 
-In the same way you configure an Intents extension, you must specify the types of intents that your iOS app supports. For more information, see [Specify the Intents Your Extension Supports](../SiriKit/intent_handling_infrastructure/creating_an_intents_app_extension.md#2864128).
+In the same way you configure an Intents extension, you must specify the types of intents that your iOS app supports. For more information, see [Specify the Intents Your Extension Supports](../SiriKit/creating-an-intents-app-extension.md#2864128).
 
 ## See Also
 

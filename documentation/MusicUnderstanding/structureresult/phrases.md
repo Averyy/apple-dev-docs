@@ -21,7 +21,7 @@ The time range of each phrase in the song.
 let phrases: [CMTimeRange]
 ```
 
-#### Discussion
+## Discussion
 
 A phrase is a group of bars that form a distinct part of a song.
 

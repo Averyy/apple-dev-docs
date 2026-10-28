@@ -21,7 +21,7 @@ The measurement system used by the locale, like metric or the US system.
 var measurementSystem: Locale.MeasurementSystem { get }
 ```
 
-#### Discussion
+## Discussion
 
 When called on the special [`Locale`](../locale.md) instances [`current`](./current.md) or [`autoupdatingCurrent`](./autoupdatingcurrent.md), if the user overrode the default measurement system, this property provides the user’s preference.
 

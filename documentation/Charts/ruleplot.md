@@ -21,7 +21,7 @@ Chart content that represents a collection of data using a single horizontal or 
 struct RulePlot<Content>
 ```
 
-#### Overview
+## Overview
 
 Use `RulePlot` when you want to visualize data in the same way as with [`RuleMark`](./rulemark.md), but you want to visualize an entire data collection with a single plot.
 

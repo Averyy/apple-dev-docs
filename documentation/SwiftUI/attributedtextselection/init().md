@@ -21,7 +21,7 @@ Initialize the default selection for a new text editor.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 The default selection is an insertion point at the end of the text.
 

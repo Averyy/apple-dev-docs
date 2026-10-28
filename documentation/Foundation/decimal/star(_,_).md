@@ -21,11 +21,11 @@ Multiplies two decimal numbers.
 static func * (lhs: Decimal, rhs: Decimal) -> Decimal
 ```
 
-#### Return Value
+## Return Value
 
 The result of multiplying `lhs` by `rhs`.
 
-#### Discussion
+## Discussion
 
 If the result of this operation requires more precision than the `Decimal` type can provide, the result is rounded using the [`NSDecimalNumber.RoundingMode.plain`](../nsdecimalnumber/roundingmode/plain.md) rounding mode. To specify a different rounding mode, use the [`NSDecimalMultiply(_:_:_:_:)`](../nsdecimalmultiply%28_,_,_,_%29.md) function instead.
 

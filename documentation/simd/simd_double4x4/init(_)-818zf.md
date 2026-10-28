@@ -21,7 +21,7 @@ Returns a new 4 x 4 double-precision matrix from a Spatial pose.
 init(_ pose: Pose3DFloat)
 ```
 
-#### Discussion
+## Discussion
 
 Values are rounded to a representable value, if necessary.
 

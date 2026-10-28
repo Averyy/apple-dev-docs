@@ -23,7 +23,7 @@ case unknown
 INPaymentStatusUnknown
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant when the financial transaction has not yet occurred and you are unable to determine its state.
 

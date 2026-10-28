@@ -21,7 +21,7 @@ Submits a work item for execution using the specified attributes and returns the
 func sync<T>(flags: DispatchWorkItemFlags, execute work: () throws -> T) rethrows -> T
 ```
 
-#### Return Value
+## Return Value
 
 The return value of the item in the `work` parameter.
 

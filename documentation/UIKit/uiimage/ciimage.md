@@ -23,7 +23,7 @@ var ciImage: CIImage? { get }
 @property (nonatomic, readonly, nullable) CIImage * CIImage;
 ```
 
-#### Discussion
+## Discussion
 
 If the `UIImage` object was initialized using a [`CGImage`](../../CoreGraphics/cgimage.md), the value of the property is `nil`.
 

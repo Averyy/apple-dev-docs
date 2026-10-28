@@ -19,7 +19,7 @@ A dataset the hand action classifier task uses to evaluate the model that’s di
 var validation: MLHandActionClassifier.ModelParameters.ValidationData
 ```
 
-#### Discussion
+## Discussion
 
 The task produces [`validationMetrics`](../validationmetrics.md) by evaluating the model with the [`validation`](./validation.md) dataset.
 

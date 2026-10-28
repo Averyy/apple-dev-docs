@@ -24,7 +24,7 @@ var lightType: MDLLightType { get set }
 @property (nonatomic, readwrite) MDLLightType lightType;
 ```
 
-#### Discussion
+## Discussion
 
 Light types determine both the shape and the style of illumination provided by a light.
 

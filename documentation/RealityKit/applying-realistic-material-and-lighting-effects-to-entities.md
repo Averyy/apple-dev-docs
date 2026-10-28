@@ -5,13 +5,13 @@
 
 Enhance the appearance of objects in a RealityKit scene with Physically Based Rendering (PBR).
 
-#### Overview
+## Overview
 
 A [`Material`](./material.md) instance describes the surface properties of an entity and controls how RealityKit renders that entity. A [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md) is a type of material that closely approximates the way light bounces off objects in the real world. It creates very realistic rendered objects that look natural when placed into an AR scene.
 
 When you import models from USDZ files, RealityKit automatically creates one or more [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md) instances from the PBR material settings in the file. You can also create PBR materials manually, either to change the appearance of an entity loaded from a USDZ file at runtime, or to use PBR rendering with procedurally created entities.
 
-##### Create a material and specify core properties
+### Create a material and specify core properties
 
 PBR materials use three core properties to define an object’s fundamental appearance: [`baseColor`](./physicallybasedmaterial/basecolor-swift.property.md), [`roughness`](./physicallybasedmaterial/roughness-swift.property.md), and [`metallic`](./physicallybasedmaterial/metallic-swift.property.md). The [`baseColor`](./physicallybasedmaterial/basecolor-swift.property.md) property defines the underlying color of the entity as it would look under soft, bright, neutral lighting with no shadows or highlights. The `roughness` property is a measure of how the surface of the entity scatters the light that it reflects. A material with a low `roughness` looks shiny, while one with a high `roughness` has a matte appearance. The `metallic` property defines how the material reflects the environment around the entity. The figure below illustrates the visual effects of changing the [`metallic`](./physicallybasedmaterial/metallic-swift.property.md) and [`roughness`](./physicallybasedmaterial/roughness-swift.property.md) values of a [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md) while keeping its [`baseColor`](./physicallybasedmaterial/basecolor-swift.property.md) unchanged.
 
@@ -59,7 +59,7 @@ if let roughnessResource = try? TextureResource.load(named: "entity_roughness") 
 
 For [`metallic`](./physicallybasedmaterial/metallic-swift.property.md) and [`roughness`](./physicallybasedmaterial/roughness-swift.property.md) maps, use a grayscale image. If you use a color image, RealityKit only uses the red channel.
 
-##### Add a normal map
+### Add a normal map
 
 *Normal mapping* is a real-time rendering technique that captures fine surface details for a model using a texture instead of increasing the number of polygons in the model. It works by storing *surface normals*, which are vectors perpendicular to the surface of the model, from a much higher resolution version of the same 3D object. A normal map stores vectors by storing its `X`, `Y`, and `Z` value as the `R`, `G`, and `B` components of the corresponding pixel in a UV-mapped image. RealityKit uses those normals to do lighting calculations, which results in much more realistic highlights, shadows, and reflections without incurring the computational cost of using a much higher resolution 3D model.
 
@@ -78,7 +78,7 @@ if let normalResource = try? TextureResource.load(named: "entity_normals") {
 }
 ```
 
-##### Specify blending and opacity
+### Specify blending and opacity
 
 By default, RealityKit materials are opaque, but RealityKit can render entities with transparency to simulate real-world objects. To render a material with transparency, change the [`blending`](./physicallybasedmaterial/blending-swift.property.md) value from `.opaque` to `.transparent`. The `.transparent` enumeration case takes an associated value that controls the amount of transparency.
 
@@ -102,7 +102,7 @@ if let opacityResource = try? TextureResource.load(named: "entity_opacity") {
 
 You can change the behavior of an alpha map to function as a *mask* rather than a transparency map. When using an alpha mask, RealityKit draws every pixel of the entity either fully transparent or fully opaque with no partially transparency. Use the [`opacityThreshold`](./physicallybasedmaterial/opacitythreshold.md) property to enable alpha masking. If you specify a value greater than `0.0`, RealityKit uses the image texture as a mask, and renders any pixel with a value of less than or equal to [`opacityThreshold`](./physicallybasedmaterial/opacitythreshold.md) as fully transparent. RealityKit draws any pixel value greater than [`opacityThreshold`](./physicallybasedmaterial/opacitythreshold.md) as fully opaque.
 
-##### Add specular highlights
+### Add specular highlights
 
 RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](./physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](./physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
 
@@ -157,7 +157,7 @@ if let sheenResource = try? TextureResource.load(named: "entity_sheen") {
 }
 ```
 
-##### Use anisotropy for directional highlights
+### Use anisotropy for directional highlights
 
 By default, PBR materials are *isotropic*; in other words, an entity that uses a [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md) reflects light uniformly in all directions, mimicking the behavior of most real-world objects. Some objects, including those with many small parallel striations such as vinyl records, CDs, or straight hair, reflect light more in some directions than others, resulting in stretched or oblong specular highlights called *anisotropic* highlights.
 

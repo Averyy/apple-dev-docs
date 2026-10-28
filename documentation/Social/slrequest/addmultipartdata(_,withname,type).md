@@ -19,7 +19,7 @@ func addMultipartData(_ data: Data!, withName name: String!, type: String!)
 - (void) addMultipartData:(NSData *) data withName:(NSString *) name type:(NSString *) type;
 ```
 
-#### Discussion
+## Discussion
 
 Possible parameter values are dependent on the target service. This information, as well as guidance on when to use a multipart POST body, is documented by the service provider. For links to documentation for the supported services, see Table 1 in [`SLRequest`](../slrequest.md).
 

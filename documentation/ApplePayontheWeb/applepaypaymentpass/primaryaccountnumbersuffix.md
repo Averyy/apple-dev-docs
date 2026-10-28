@@ -16,7 +16,7 @@ A version of the primary account number suitable for display in your UI.
 required DOMString primaryAccountNumberSuffix;
 ```
 
-#### Discussion
+## Discussion
 
 Note that this value is typically the last four or five digits of the account number, but the number of digits can vary by issuer. This value is not related to the value of the [`primaryAccountIdentifier`](./primaryaccountidentifier.md) value.
 

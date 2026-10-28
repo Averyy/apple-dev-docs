@@ -19,7 +19,7 @@ A global list of merchants to use when reading loyalty cards.
 var vasMerchants: [VASRequest.Merchant]
 ```
 
-#### Discussion
+## Discussion
 
 When you try to read a loyalty card from your [`PaymentCardReaderSession`](../../paymentcardreadersession.md) object, specify a custom [`VASRequest`](../../vasrequest.md) object to override this list.
 

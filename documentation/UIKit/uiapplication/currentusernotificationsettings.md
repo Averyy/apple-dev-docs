@@ -23,11 +23,11 @@ var currentUserNotificationSettings: UIUserNotificationSettings? { get }
 @property (nonatomic, readonly, nullable) UIUserNotificationSettings * currentUserNotificationSettings;
 ```
 
-#### Return Value
+## Return Value
 
 A user notification settings object indicating the types of notifications that your app may use.
 
-#### Discussion
+## Discussion
 
 If you configure local or remote notifications with unavailable notification types, the system does not display the corresponding alerts to the user. The system does still deliver the local and remote notifications to your app.
 

@@ -22,7 +22,7 @@ Chart content that represents data using the area of one or more regions.
 @preconcurrency struct AreaMark
 ```
 
-#### Overview
+## Overview
 
 Use `AreaMark` to represent data as filled regions on a chart. To create a simple area mark chart, plot a date or an ordered string property on the x-axis, and a number on the y-axis. For example, suppose you have data that represents the cost of a cheeseburger over time, stored in an array of `Food` structures:
 
@@ -66,7 +66,7 @@ The resulting chart automatically scales and labels the axes based on the data, 
 
 If you want only the line without filling in the area below the line, use [`LineMark`](./linemark.md) instead.
 
-##### Add detail with a stacked area chart
+### Add detail with a stacked area chart
 
 To represent an additional dimension of information, you can create a stacked area chart. For example, suppose you have another data set that represents the same cost data from the previous example, but which is broken into the component costs for the burger, bun, and cheese:
 
@@ -101,7 +101,7 @@ The chart automatically assigns a different color to each region, and adds a leg
 
 ![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of 0 to 1.5 on the y-axis. Three irregular, non-intersecting, monotonically increasing, piecewise linear curves start near the lower left and continue toward the upper right. The area under the bottom curve is filled with blue. The area above the bottom curve and below the next curve is filled with green. The area above the second and below the top curve is filled with orange. A legend below the chart area indicates that blue corresponds to Burger, green to Cheese, and orange to Bun.](https://developer.apple.com/tutorials/images/com.apple.Charts/AreaMark-2-macOS@2x.png)
 
-##### Stack the data in different ways
+### Stack the data in different ways
 
 You can highlight different aspects of the data by stacking it in different ways. For example, the previous chart shows the absolute contributions of each ingredient to the cheeseburger’s total cost. To see the relative contributions instead, you can create a normalized chart by setting the area mark’s `stacking` parameter to [`normalized`](./markstackingmethod/normalized.md):
 
@@ -133,7 +133,7 @@ Chart(cheeseburgerCostByItem) { cost in
 
 ![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of -1 to 1 on the y-axis. Three irregular, piecewise linear horizontal regions appear near the middle of the chart, growing from small on the left to larger on the right. The top region is filled with orange, the middle region is filled with green, and the bottom region is filled with blue. A legend below the chart area indicates that blue corresponds to Burger, green to Cheese, and orange to Bun.](https://developer.apple.com/tutorials/images/com.apple.Charts/AreaMark-4-macOS@2x.png)
 
-##### Create a range area chart
+### Create a range area chart
 
 You can also use area marks to create a range area chart, where you provide an interval to fill in for each data point. To do this, you provide either a date or ordered string category for the x-axis and a range of values for the y-axis, or vice versa. For example, suppose you record the minimum and maximum temperatures every day in a `Weather` structure:
 

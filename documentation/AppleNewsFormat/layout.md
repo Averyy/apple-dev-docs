@@ -22,7 +22,7 @@ object Layout
 - [Planning the Layout for Your Article](../AppleNews/planning-the-layout-for-your-article.md)
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md)
 
-#### Discussion
+## Discussion
 
 Use the `Layou`t object to define the column-system rules for the components in your document. The column system controls the horizontal position and spacing of your components. The News app uses this information to automatically resize your article for different screen sizes. Configuring your article with 20 columns, a 60-point margin, and a 20-point gutter should give you a sufficiently flexible layout.
 
@@ -30,7 +30,7 @@ After you define your article’s layout, add its components to [`ArticleDocumen
 
 You can use object in [`ArticleDocument`](./articledocument.md).
 
-##### Example
+### Example
 
 ```json
 {

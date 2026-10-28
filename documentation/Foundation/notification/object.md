@@ -21,7 +21,7 @@ An object that the poster wishes to send to observers.
 var object: Any?
 ```
 
-#### Discussion
+## Discussion
 
 Typically this is the object that posted the notification.
 

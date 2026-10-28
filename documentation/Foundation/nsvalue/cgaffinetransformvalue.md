@@ -24,7 +24,7 @@ var cgAffineTransformValue: CGAffineTransform { get }
 @property (nonatomic, readonly) CGAffineTransform CGAffineTransformValue;
 ```
 
-#### Return Value
+## Return Value
 
 The CoreGraphics affine transform representation of the value.
 

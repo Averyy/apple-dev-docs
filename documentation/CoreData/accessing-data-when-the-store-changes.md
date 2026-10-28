@@ -5,13 +5,13 @@
 
 Guarantee that a context won’t see store changes until you tell it to look.
 
-#### Overview
+## Overview
 
 Query generations give your UI a stable view of data in the database, regardless of changes happening to the store underneath. Whenever you read from a context, you see the same generation, or snapshot, of data until you choose to advance it to a later generation.
 
 Use query generations when you want to isolate your view context from any changes made in the store by background threads in your app, app extensions, CloudKit, or other sources.
 
-##### Ensure the correct type and mode for the persistent store
+### Ensure the correct type and mode for the persistent store
 
 To use query generations, the persistent store must be an [`NSSQLiteStoreType`](./nssqlitestoretype.md) in write-ahead logging (WAL) journal mode. Core Data creates SQLite stores with WAL mode enabled by default.
 
@@ -31,7 +31,7 @@ CoreData: sql: pragma journal_mode=wal
 
 If you try to use query generations with a store that’s not an [`NSSQLiteStoreType`](./nssqlitestoretype.md) in WAL journal mode, your contexts gracefully revert to unpinned behavior.
 
-##### Pin the context to a store generation
+### Pin the context to a store generation
 
 By default, contexts are unpinned, and read from the store at the generation of the most recent transaction. Pinned contexts read from the store at the generation of a specific transaction.
 
@@ -68,7 +68,7 @@ Nested contexts inherit their parent’s generation. They’re implicitly unpinn
 
 A generation doesn’t include stores added to the store coordinator after the generation’s creation. Additionally, if you remove a store from the coordinator, don’t try to load data from the deleted store into a context.
 
-##### Update the view context to the current store generation
+### Update the view context to the current store generation
 
 Advance a context to the generation of the most recent transaction, and pin it there, by calling [`setQueryGenerationFrom(_:)`](./nsmanagedobjectcontext/setquerygenerationfrom%28_%29.md) and passing the [`current`](./nsquerygenerationtoken/current.md) token. The context updates to the specified generation lazily on the next read (fetching or faulting) operation.
 
@@ -92,7 +92,7 @@ Alternatively, update a context’s generation by calling any of the following.
 
 Update contexts to the [`current`](./nsquerygenerationtoken/current.md) generation as soon as a specific generation is no longer needed. Query generations hold a file lock open to maintain the integrity of the journal for the duration of a query generation. Once no contexts refer to a query generation, it expires, and the system can reclaim the journal disk space.
 
-##### Refresh objects
+### Refresh objects
 
 Refresh any managed objects registered to the context after you change the context’s query generation or unpin the context. Managed objects don’t automatically refresh, as this behavior may not be desirable and is difficult to revert.
 

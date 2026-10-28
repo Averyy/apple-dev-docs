@@ -21,7 +21,7 @@ var relativeDateStyle: CLKRelativeDateStyle { get set }
 @property (nonatomic) CLKRelativeDateStyle relativeDateStyle;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible values, see [`CLKRelativeDateStyle`](../clkrelativedatestyle.md).
 

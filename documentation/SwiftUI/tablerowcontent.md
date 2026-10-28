@@ -20,7 +20,7 @@ A type used to represent table rows.
 @preconcurrency protocol TableRowContent<TableRowValue>
 ```
 
-#### Overview
+## Overview
 
 Like with the [`View`](./view.md) protocol, you can create custom table row content by declaring a type that conforms to the `TableRowContent` protocol and implementing the required [`tableRowBody`](./tablerowcontent/tablerowbody-swift.property.md) property.
 

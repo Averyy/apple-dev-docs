@@ -12,7 +12,7 @@ SCSITaskAttribute GetTaskAttribute (
  SCSIParallelTaskIdentifierparallelTask );
 ```
 
-#### Return Value
+## Return Value
 
 an SCSITaskAttribute value.
 

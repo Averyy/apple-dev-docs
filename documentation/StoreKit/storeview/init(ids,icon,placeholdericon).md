@@ -22,7 +22,7 @@ nonisolated
 init(ids productIDs: some Collection<String>, @ViewBuilder icon: @escaping (Product, ProductIconPhase) -> Icon, @ViewBuilder placeholderIcon: () -> PlaceholderIcon)
 ```
 
-#### Discussion
+## Discussion
 
 The store view shows the custom `placeholderIcon` until all products finish loading. After the products finish loading, the view asynchronously loads and displays each product’s promotional image.
 

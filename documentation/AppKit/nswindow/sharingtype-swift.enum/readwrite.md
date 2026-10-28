@@ -19,7 +19,7 @@ static var readWrite: NSWindow.SharingType { get }
 static const NSWindowSharingType NSWindowSharingReadWrite;
 ```
 
-#### Discussion
+## Discussion
 
 The window’s contents can be read and modified by another process.
 

@@ -20,7 +20,7 @@ optional func ignoreModifierKeys(for session: NSDraggingSession) -> Bool
 - (BOOL) ignoreModifierKeysForDraggingSession:(NSDraggingSession *) session;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the modifier keys will be ignored, [`false`](../../Swift/false.md) otherwise.
 

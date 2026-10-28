@@ -20,11 +20,11 @@ func CGCaptureAllDisplaysWithOptions(_ options: CGCaptureOptions) -> CGError
 extern CGError CGCaptureAllDisplaysWithOptions(CGCaptureOptions options);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 
-#### Discussion
+## Discussion
 
 This function allows you to specify one or more options to use during capture of all attached displays.
 

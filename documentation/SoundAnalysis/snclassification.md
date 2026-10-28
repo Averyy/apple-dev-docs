@@ -25,7 +25,7 @@ class SNClassification
 @interface SNClassification : NSObject
 ```
 
-#### Overview
+## Overview
 
 An `SNClassification` represents a single sound classification prediction, and the sound classifier model’s confidence in that prediction.
 

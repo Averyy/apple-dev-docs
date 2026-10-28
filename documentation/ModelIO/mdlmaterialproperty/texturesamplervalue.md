@@ -24,7 +24,7 @@ var textureSamplerValue: MDLTextureSampler? { get set }
 @property (nonatomic, retain, nullable) MDLTextureSampler * textureSamplerValue;
 ```
 
-#### Discussion
+## Discussion
 
 Unlike the URL to a texture image, a texture sampler object specifies both a texture image and parameters for rendering that image.
 

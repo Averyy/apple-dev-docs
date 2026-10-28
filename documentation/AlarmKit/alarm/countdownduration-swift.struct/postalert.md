@@ -17,7 +17,7 @@ The duration applied after the alarm has alerted at least once and moves back to
 var postAlert: TimeInterval?
 ```
 
-#### Discussion
+## Discussion
 
 For example, this would be the snooze duration for an alarm.  A timer with a repeat button could set this value to be the same as `preAlert`, or it could leave the value as `nil`.  If the value is `nil` we will use the `preAlert` duration for post-alarm countdowns.
 

@@ -22,7 +22,7 @@ func CTFontManagerRequestFonts(_ fontDescriptors: CFArray, _ completionHandler: 
 extern void CTFontManagerRequestFonts(CFArrayRef fontDescriptors, void (^completionHandler)(CFArrayRef unresolvedFontDescriptors));
 ```
 
-#### Discussion
+## Discussion
 
 On iOS, fonts registered by font provider apps in the [`CTFontManagerScope.persistent`](./ctfontmanagerscope/persistent.md) scope aren’t automatically available to other apps. Other apps must call this function to make the fonts available for font descriptor matching.
 

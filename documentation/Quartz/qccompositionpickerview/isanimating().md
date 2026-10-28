@@ -21,7 +21,7 @@ func isAnimating() -> Bool
 - (BOOL) isAnimating;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a composition is animating in the composition picker view; [`false`](../../Swift/false.md) otherwise.
 

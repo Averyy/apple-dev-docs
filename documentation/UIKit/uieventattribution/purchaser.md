@@ -22,7 +22,7 @@ var purchaser: String { get }
 @property (nonatomic, copy, readonly) NSString * purchaser;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the name of the party that purchased the ad or other content. For example, for an in-app ad, this would contain the name of the company or individual that purchased the advertisement. The system may truncate this field if it’s longer than 100 characters.
 

@@ -17,7 +17,7 @@ Describe extra parameters.
 func describeExtra(_ indent: Int) -> String
 ```
 
-#### Discussion
+## Discussion
 
 This will print a description of [`ModuleValue.other(_:)`](../modulevalue/other%28_%29.md) ivars, e.g.:
 
@@ -33,7 +33,7 @@ public override func describeExtra(_ indent: Int) -> String {
 }
 ```
 
-##### See Also
+### See Also
 
 - [`description(indent:)`](./description%28indent%29.md)
 

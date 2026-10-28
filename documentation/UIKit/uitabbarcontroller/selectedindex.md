@@ -23,7 +23,7 @@ var selectedIndex: Int { get set }
 @property (nonatomic) NSUInteger selectedIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This property nominally represents an index into the array of the [`viewControllers`](./viewcontrollers.md) property. However, if the selected view controller is currently the More navigation controller, this property contains the value `NSNotFound`. Setting this property changes the selected view controller to the one at the designated index in the [`viewControllers`](./viewcontrollers.md) array. To select the More navigation controller itself, you must change the value of the [`selectedViewController`](./selectedviewcontroller.md) property instead.
 

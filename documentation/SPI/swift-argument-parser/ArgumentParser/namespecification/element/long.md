@@ -14,10 +14,10 @@ Use the property’s name, converted to lowercase with words separated by hyphen
 ## Declaration
 
 ```swift
-static var long: NameSpecification.Element { get }
+static var long: Element { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, a property named `allowLongNames` would be converted to the label `--allow-long-names`.
 

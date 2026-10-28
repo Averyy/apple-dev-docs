@@ -16,7 +16,7 @@ Tells the migration extension to begin exporting its resources, using options de
 final func exportResources<SupportedOptions>(request: MigrationRequestWithOptions<SupportedOptions>? = nil, progress: Progress? = nil) async throws -> AppMigrationTester.ResourcesExportResult where SupportedOptions : CaseIterable, SupportedOptions : Hashable, SupportedOptions : RawRepresentable, SupportedOptions : Sendable, SupportedOptions.RawValue == String
 ```
 
-#### Return Value
+## Return Value
 
 The results of the export.
 

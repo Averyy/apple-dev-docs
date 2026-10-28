@@ -21,7 +21,7 @@ A service that executes jobs.
 protocol SerialExecutor : Executor
 ```
 
-##### Custom Actor Executors
+### Custom Actor Executors
 
 By default, all actor types execute tasks on a shared global concurrent pool. The global pool does not guarantee any thread (or dispatch queue) affinity, so actors are free to use different threads as they execute tasks.
 

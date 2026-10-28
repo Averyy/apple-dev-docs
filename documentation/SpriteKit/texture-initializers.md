@@ -5,11 +5,11 @@
 
 See the various ways to create and use textures in SpriteKit.
 
-#### Overview
+## Overview
 
 Use these functions to create a new texture. While doing so, you should be aware of the memory implications of texture memory, and the other ways to get textures other than `SKTexture` initializers.
 
-##### Memory Considerations
+### Memory Considerations
 
 When creating textures you should be aware of the memory consumed as a result of their file size dimensions. Often, the memory available to prepared textures is limited by hardware because textures are loaded in VRAM. Consider the following tips:
 
@@ -17,7 +17,7 @@ When creating textures you should be aware of the memory consumed as a result of
 - Avoid loading too many textures in a single pass through the rendering loop. The process of decoding an image from disk is an expensive one and can therefore cause a few frames to be skipped. To avoid performance hiccups, preload textures ahead of time, such as when the scene is loaded.
 - If you frequently use that same textures together (for example, all the grass tiles any time grass is displayed in a scene) then you should consider bundling them into an [`SKTextureAtlas`](./sktextureatlas.md) to increase loading and runtime peformance.
 
-##### Ways to Access Textures
+### Ways to Access Textures
 
 In addition to the [Texture Initializers](./texture-initializers.md) in `SKTexture`, the following other classes vend textures, too:
 

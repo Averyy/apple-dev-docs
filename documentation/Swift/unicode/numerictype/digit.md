@@ -21,7 +21,7 @@ A digit that does not meet the requirements of the `decimal` numeric type.
 case digit
 ```
 
-#### Discussion
+## Discussion
 
 Scalars with this numeric type are often those that represent a decimal digit but would not typically be used to write a base-10 number, such as “④” (U+2463 CIRCLED DIGIT FOUR).
 

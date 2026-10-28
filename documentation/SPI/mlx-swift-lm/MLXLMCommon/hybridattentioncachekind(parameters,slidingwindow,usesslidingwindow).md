@@ -17,7 +17,7 @@ Full-attention kind if the layer is not sliding-window; otherwise the architectu
 func hybridAttentionCacheKind(parameters: GenerateParameters?, slidingWindow: Int?, usesSlidingWindow: Bool) throws -> CacheLayerKind
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`KVCacheConfigurationError`](./kvcacheconfigurationerror.md) when the request or window is invalid.
 

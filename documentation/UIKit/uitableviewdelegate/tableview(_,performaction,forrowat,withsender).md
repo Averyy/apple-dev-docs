@@ -22,7 +22,7 @@ optional func tableView(_ tableView: UITableView, performAction action: Selector
 - (void) tableView:(UITableView *) tableView performAction:(SEL) action forRowAtIndexPath:(NSIndexPath *) indexPath withSender:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The table view invokes this method for a given `action` if the user taps Copy or Paste in the editing menu. The delegate can do whatever is appropriate for the action; for example, for a copy, it can extract the relevant cell content for the row at `indexPath` and write it to the general pasteboard or an application (private) pasteboard. See [`UIPasteboard`](../uipasteboard.md) for further information.
 

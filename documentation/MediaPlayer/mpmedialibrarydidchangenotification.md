@@ -18,7 +18,7 @@ Indicates the media library has changed.
 extern NSString * const MPMediaLibraryDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 When the system posts this notification, your app should reevaluate items or playlists that you previously cached.
 

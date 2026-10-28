@@ -21,7 +21,7 @@ A repeat behavior that prefers to repeat indefinitely using periodic animations.
 static var periodic: SymbolEffectOptions.RepeatBehavior { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new behavior that prefers to repeat indefinitely using periodic animation.
 

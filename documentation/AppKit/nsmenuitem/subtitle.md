@@ -17,7 +17,7 @@ var subtitle: String? { get set }
 @property (copy, nullable) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 Used to specify a standard subtitle for the menu item.
 

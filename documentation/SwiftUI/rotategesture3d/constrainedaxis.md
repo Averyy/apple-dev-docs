@@ -15,7 +15,7 @@ An axis around which the rotation is constrained.
 var constrainedAxis: RotationAxis3D?
 ```
 
-#### Discussion
+## Discussion
 
 If the axis is `nil`, the rotation is unconstrained.
 

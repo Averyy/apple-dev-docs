@@ -20,11 +20,11 @@ optional func tokenField(_ tokenField: NSTokenField, styleForRepresentedObject r
 - (NSTokenStyle) tokenField:(NSTokenField *) tokenField styleForRepresentedObject:(id) representedObject;
 ```
 
-#### Return Value
+## Return Value
 
 The style that should be used to display the representedObject. Possible values are shown in NSTokenStyle Values.
 
-#### Discussion
+## Discussion
 
 If the delegate implements this method and returns an [`NSTokenField.TokenStyle`](../nstokenfield/tokenstyle-swift.enum.md) that differs from the style set by [`tokenStyle`](../nstokenfield/tokenstyle-swift.property.md), the value the delegate returns is preferred.
 

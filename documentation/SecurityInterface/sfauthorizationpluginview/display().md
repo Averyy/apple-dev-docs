@@ -19,7 +19,7 @@ func display()
 - (void) displayView;
 ```
 
-#### Discussion
+## Discussion
 
 It’s not likely that you will want to override this method, but if you do, be sure to call `[super displayView]`. If you don’t call `[super displayView]`, your custom view will not get displayed.
 

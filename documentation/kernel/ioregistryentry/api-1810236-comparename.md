@@ -13,11 +13,11 @@ virtual bool compareName(
  OSString **matched = 0 ) const;
 ```
 
-#### Return Value
+## Return Value
 
 True if the name compared true with the entry's global name.
 
-#### Overview
+## Overview
 
 This method is called during IOService name matching and elsewhere from the compareNames method. It should be overridden to provide non-standard name matching.
 

@@ -16,7 +16,7 @@ A URL you provide for receiving life-cycle notifications from the Apple Pay serv
 DOMString tokenNotificationURL;
 ```
 
-#### Discussion
+## Discussion
 
 The [`tokenNotificationURL`](./tokennotificationurl.md) is optional. Set this property to receive notifications for life-cycle updates to the merchant token, for example, when the card issuer or the user deletes the merchant token.
 

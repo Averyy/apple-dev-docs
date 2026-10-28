@@ -5,7 +5,7 @@
 
 Set a storage mode that defines the memory location and access permissions of a resource.
 
-#### Overview
+## Overview
 
 Storage modes are only set when creating an instance, and the system default allows for access to memory from both the CPU and GPU. Metal selects the default mode for resources depending on hardware.
 
@@ -20,7 +20,7 @@ Use [`MTLStorageMode.memoryless`](./mtlstoragemode/memoryless.md), only availabl
 
 For more guidance on which mode to choose, see [Choosing a resource storage mode for Apple GPUs](./choosing-a-resource-storage-mode-for-apple-gpus.md) and [Choosing a resource storage mode for Intel and AMD GPUs](./choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md).
 
-##### Set a storage mode for a buffer
+### Set a storage mode for a buffer
 
 Create a new [`MTLBuffer`](./mtlbuffer.md) with the [`makeBuffer(length:options:)`](./mtldevice/makebuffer%28length,options%29.md) method and set its storage mode in the method’s `options` parameter.
 
@@ -42,7 +42,7 @@ id <MTLBuffer> buffer = [_device newBufferWithLength:256
 
 > **Note**:  The storage mode options in [`MTLResourceOptions`](./mtlresourceoptions.md) are equivalent to the storage mode values in [`MTLStorageMode`](./mtlstoragemode.md). When you create a new buffer, you can combine multiple resource options but you can set only one storage mode.
 
-##### Set a storage mode for a texture
+### Set a storage mode for a texture
 
 Create a new [`MTLTextureDescriptor`](./mtltexturedescriptor.md) and set its storage mode in the descriptor’s [`storageMode`](./mtlresource/storagemode.md) property. Then create a new [`MTLTexture`](./mtltexture.md) with the [`makeTexture(descriptor:)`](./mtldevice/maketexture%28descriptor%29.md) method.
 

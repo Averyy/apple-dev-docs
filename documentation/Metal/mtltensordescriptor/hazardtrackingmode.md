@@ -24,7 +24,7 @@ var hazardTrackingMode: MTLHazardTrackingMode { get set }
 @property (nonatomic, readwrite) MTLHazardTrackingMode hazardTrackingMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`MTLHazardTrackingMode.default`](../mtlhazardtrackingmode/default.md).
 

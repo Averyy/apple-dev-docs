@@ -20,7 +20,7 @@ The usage quota state for a Private Cloud Compute language model.
 struct QuotaUsage
 ```
 
-#### Overview
+## Overview
 
 A quota describes the model’s per-user request budget and where the caller currently sits relative to it. Quotas are orthogonal to a model’s availability — a model can be available even after its usage limit has been reached.
 

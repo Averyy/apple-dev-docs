@@ -25,7 +25,7 @@ static let image: UIAccessibilityTraits
 extern const UIAccessibilityTraits UIAccessibilityTraitImage;
 ```
 
-#### Discussion
+## Discussion
 
 You can combine this trait with the button or link traits.
 

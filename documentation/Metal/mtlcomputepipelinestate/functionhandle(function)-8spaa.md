@@ -25,7 +25,7 @@ func functionHandle(function: any MTL4BinaryFunction) -> (any MTLFunctionHandle)
 - (id<MTLFunctionHandle>) functionHandleWithBinaryFunction:(id<MTL4BinaryFunction>) function;
 ```
 
-#### Return Value
+## Return Value
 
 A function handle corresponding to the function if the binary function matches a function in this pipeline state, otherwise `nil`.
 

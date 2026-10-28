@@ -19,7 +19,7 @@ static var transient: NSWindow.CollectionBehavior { get }
 NSWindowCollectionBehaviorTransient
 ```
 
-#### Discussion
+## Discussion
 
 This is the default behavior if `windowLevel` isn’t equal to [`normal`](../level-swift.struct/normal.md).
 

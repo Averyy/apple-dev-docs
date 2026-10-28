@@ -25,7 +25,7 @@ static let none: URLFileProtection
 extern NSURLFileProtectionType const NSURLFileProtectionNone;
 ```
 
-#### Discussion
+## Discussion
 
 A file with this type of protection can be read from or written to at any time.
 

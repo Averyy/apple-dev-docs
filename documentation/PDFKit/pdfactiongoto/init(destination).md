@@ -24,7 +24,7 @@ init(destination: PDFDestination)
 - (instancetype) initWithDestination:(PDFDestination *) destination;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `PDFActionGoTo` instance, or `NULL` if the object could not be initialized.
 

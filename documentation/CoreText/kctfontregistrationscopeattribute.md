@@ -25,7 +25,7 @@ let kCTFontRegistrationScopeAttribute: CFString
 extern CFStringRef const kCTFontRegistrationScopeAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an integer represented as a [`CFNumber`](../CoreFoundation/cfnumber.md) object containing one of the [`CTFontManagerScope`](./ctfontmanagerscope.md) enumerated values. A value of `NULL` can be returned for font descriptors that are not registered.
 

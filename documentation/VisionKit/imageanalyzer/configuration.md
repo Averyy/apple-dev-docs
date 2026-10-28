@@ -23,7 +23,7 @@ struct Configuration
 
 - [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
-#### Overview
+## Overview
 
 Create an `ImageAnalyzer.Configuration` structure to specify the criteria when analyzing an image. Then pass the configuration object to the `ImageAnalyzer` [`analyze(_:configuration:)`](./analyze%28_,configuration%29.md) or similar method to find the items you want.
 

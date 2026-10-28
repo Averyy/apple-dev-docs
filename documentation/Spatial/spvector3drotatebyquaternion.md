@@ -21,7 +21,7 @@ Returns a vector that results from rotating with the specified quaternion.
 static SPVector3D SPVector3DRotateByQuaternion(SPVector3D vector, simd_quatd quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 The vector that results from rotating with the specified quaternion.
 

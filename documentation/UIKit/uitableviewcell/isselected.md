@@ -23,7 +23,7 @@ var isSelected: Bool { get set }
 @property (nonatomic, getter=isSelected) BOOL selected;
 ```
 
-#### Discussion
+## Discussion
 
 The selection affects the appearance of labels, image, and background. When the selected state of a cell is set to [`true`](../../Swift/true.md), it draws the background for selected cells with its title in white. The default value is [`false`](../../Swift/false.md). If you set the selection state to [`true`](../../Swift/true.md) through this property, the transition to the new state appearance is not animated. For animated selected-state transitions, see the [`setSelected(_:animated:)`](./setselected%28_,animated%29.md) method.
 

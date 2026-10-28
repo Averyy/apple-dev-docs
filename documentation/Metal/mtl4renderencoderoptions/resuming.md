@@ -24,7 +24,7 @@ static var resuming: MTL4RenderEncoderOptions { get }
 MTL4RenderEncoderOptionResuming
 ```
 
-#### Discussion
+## Discussion
 
 Pass this option to [`makeRenderCommandEncoder(descriptor:options:)`](../mtl4commandbuffer/makerendercommandencoder%28descriptor,options%29.md) to specify that Metal can stitch the work a render command encoder encodes with a prior “suspending” render command encoder.
 

@@ -18,7 +18,7 @@ Checks whether the data queue contains data to process.
 bool IsDataAvailable();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the queue contains data to process, or `false` if it is empty.
 

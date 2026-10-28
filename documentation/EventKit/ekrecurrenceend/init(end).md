@@ -24,11 +24,11 @@ convenience init(end endDate: Date)
 + (instancetype) recurrenceEndWithEndDate:(NSDate *) endDate;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized recurrence end.
 
-#### Discussion
+## Discussion
 
 The end date argument must be a valid `NSDate` and not `nil`; otherwise an exception will be raised.
 

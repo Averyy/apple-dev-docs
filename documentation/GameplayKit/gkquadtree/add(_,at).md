@@ -24,11 +24,11 @@ func add(_ element: ElementType, at point: vector_float2) -> GKQuadtreeNode
 - (GKQuadtreeNode *) addElement:(ElementType) element withPoint:(vector_float2) point;
 ```
 
-#### Return Value
+## Return Value
 
 The tree node containing the newly added object.
 
-#### Discussion
+## Discussion
 
 The [`GKQuadtree`](../gkquadtree.md) class automatically creates nodes to manage the objects you add to the tree. If you expect to remove an element you’ve added, keep a reference to the node this method returns so you can use the [`remove(_:using:)`](./remove%28_,using%29.md) method to remove that object quickly.
 

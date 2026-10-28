@@ -19,7 +19,7 @@ func handleSave(_ command: NSScriptCommand) -> Any?
 - (id) handleSaveScriptCommand:(NSScriptCommand *) command;
 ```
 
-#### Discussion
+## Discussion
 
 If there’s a corresponding document and the window is the main window of the document, it forwards the `save` command to the corresponding document. Otherwise, this method does nothing.
 

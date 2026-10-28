@@ -23,7 +23,7 @@ class func cpu() -> Self
 + (instancetype) cpuDevice;
 ```
 
-#### Return Value
+## Return Value
 
 A device that uses the CPU.
 

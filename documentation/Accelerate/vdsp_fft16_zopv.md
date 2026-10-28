@@ -21,7 +21,7 @@ Performs a 16-element FFT on split-complex data.
 void vDSP_FFT16_zopv(float *__Or, float *__Oi, const float *__Ir, const float *__Ii, FFTDirection __Direction);
 ```
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**:  To learn how the vDSP library scales and arranges the FFT output, see [Understanding data packing for Fourier transforms](./understanding-data-packing-for-fourier-transforms.md).
 

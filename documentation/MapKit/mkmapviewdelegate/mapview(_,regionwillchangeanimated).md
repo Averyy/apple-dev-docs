@@ -24,7 +24,7 @@ optional func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: B
 - (void) mapView:(MKMapView *) mapView regionWillChangeAnimated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 The framework calls this method at the beginning of a change to the map’s visible region.
 

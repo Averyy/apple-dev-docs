@@ -8,7 +8,7 @@ Read budget and Target CPA recommendations and their history, and build the requ
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 These objects carry the data for [Recommendations Endpoints](./recommendations-endpoints.md). Read [`DailyCapRecommendation`](./dailycaprecommendation.md) and [`TargetCpaRecommendation`](./targetcparecommendation.md) in query responses, and read their history objects after you apply or dismiss one. Send [`ApplyDailyCapRecommendation`](./applydailycaprecommendation.md) or [`ApplyTargetCpaRecommendation`](./applytargetcparecommendation.md) to apply or dismiss a recommendation.
 

@@ -24,11 +24,11 @@ func SSLSetEnabledCiphers(_ context: SSLContext, _ ciphers: UnsafePointer<SSLCip
 OSStatus SSLSetEnabledCiphers(SSLContextRef context, const SSLCipherSuite *ciphers, size_t numCiphers);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 You can call this function, for example, to limit cipher suites to those that use exportable key sizes or to those supported by a particular protocol version.
 

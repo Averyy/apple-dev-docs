@@ -22,7 +22,7 @@ init(text: Binding<String>, selection: Binding<TextSelection?>, prompt: Text? = 
 
 Available when `Label` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 The following example shows a text field with a binding to the current selection:
 

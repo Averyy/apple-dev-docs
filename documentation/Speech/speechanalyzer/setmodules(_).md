@@ -20,7 +20,7 @@ Adds or removes modules.
 final func setModules(_ newModules: [any SpeechModule]) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Modules can be added or removed to the analyzer mid-stream. A newly-added module will immediately begin analysis on new audio input, but it will not have access to already-analyzed audio. However, you may keep a copy of previously-analyzed audio and provide it to a separate analyzer.
 

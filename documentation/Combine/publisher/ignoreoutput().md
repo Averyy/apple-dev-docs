@@ -21,11 +21,11 @@ Ignores all upstream elements, but passes along the upstream publisher’s compl
 func ignoreOutput() -> Publishers.IgnoreOutput<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that ignores all upstream elements.
 
-#### Discussion
+## Discussion
 
 Use the [`ignoreOutput()`](./ignoreoutput%28%29.md) operator to determine if a publisher is able to complete successfully or would fail.
 

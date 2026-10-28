@@ -20,7 +20,7 @@ var objectSpecifier: NSScriptObjectSpecifier? { get }
 @property (retain, readonly, nullable) NSScriptObjectSpecifier * objectSpecifier;
 ```
 
-#### Return Value
+## Return Value
 
 A fully specified object specifier to the receiver within the application.
 

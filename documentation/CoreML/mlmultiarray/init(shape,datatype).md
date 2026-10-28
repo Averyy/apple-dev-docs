@@ -25,7 +25,7 @@ init(shape: [NSNumber], dataType: MLMultiArrayDataType) throws
 - (instancetype) initWithShape:(NSArray<NSNumber *> *) shape dataType:(MLMultiArrayDataType) dataType error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method allocates a contiguous region of memory for the multiarray’s shape. You must set the contents of memory. The multiarray frees the memory in its deinitializer (Swift) or [`dealloc`](../../ObjectiveC/nsobject-swift.class/dealloc.md) method (Objective-C).
 

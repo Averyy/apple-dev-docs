@@ -21,7 +21,7 @@ The encrypted data.
 var ciphertext: Data { get }
 ```
 
-#### Discussion
+## Discussion
 
 The length of the ciphertext of a sealed box is the same as the length of the plaintext you encrypt.
 

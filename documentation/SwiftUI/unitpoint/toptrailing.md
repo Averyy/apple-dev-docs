@@ -21,7 +21,7 @@ A point that’s in the top, trailing corner of a view.
 static let topTrailing: UnitPoint
 ```
 
-#### Discussion
+## Discussion
 
 This point occupies the position where the horizontal and vertical alignment guides intersect for [`topTrailing`](../alignment/toptrailing.md) alignment. The trailing edge appears on the right in a left-to-right language environment and on the left in a right-to-left environment.
 

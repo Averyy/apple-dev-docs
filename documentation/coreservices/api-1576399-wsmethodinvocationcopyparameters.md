@@ -15,11 +15,11 @@ Creates a copy of the parameters dictionary and sets the order in an array.
 CFDictionaryRef WSMethodInvocationCopyParameters(WSMethodInvocationRef invocation, CFArrayRef *parameterOrder);
 ```
 
-#### Return Value
+## Return Value
 
 a `CFDictionaryRef`
 
-#### Discussion
+## Discussion
 
 Copies the parameters from the invocation. The resulting dictionary contains the parameter dictionary. The `parameterOrder` output parameter, if not `NULL`, will contain the order used to serialize the parameters.
 

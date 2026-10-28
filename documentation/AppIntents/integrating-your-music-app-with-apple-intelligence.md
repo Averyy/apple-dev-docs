@@ -12,7 +12,7 @@ Adopt the audio and clock schemas so people can play music and set alarms with S
 - Mac Catalyst 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC26 session [343: Explore advanced App Intents features for Siri and Apple Intelligence](https://developer.apple.com/wwdc26/343/).
 

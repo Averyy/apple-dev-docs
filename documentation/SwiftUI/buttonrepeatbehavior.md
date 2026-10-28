@@ -21,7 +21,7 @@ The options for controlling the repeatability of button actions.
 struct ButtonRepeatBehavior
 ```
 
-#### Overview
+## Overview
 
 Use values of this type with the [`buttonRepeatBehavior(_:)`](./view/buttonrepeatbehavior%28_%29.md) modifier.
 

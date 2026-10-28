@@ -23,7 +23,7 @@ enum ContentVerticalAlignment
 enum UIControlContentVerticalAlignment : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You use these constants as the value of the [`contentVerticalAlignment`](./contentverticalalignment-swift.property.md) property.
 

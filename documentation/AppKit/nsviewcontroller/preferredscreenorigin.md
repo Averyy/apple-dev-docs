@@ -19,7 +19,7 @@ var preferredScreenOrigin: NSPoint { get set }
 @property NSPoint preferredScreenOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to position the lower-left corner of the app extension’s  primary view in screen space. To specify the desired primary view size for an app extension’s view controller, use the [`preferredContentSize`](./preferredcontentsize.md) property.
 

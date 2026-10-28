@@ -5,7 +5,7 @@
 
 Manage users on your App Store Connect team.
 
-#### Overview
+## Overview
 
 The `users` resource represents an App Store Connect user. You can change or delete users, but you cannot add them directly. To add users, create a `userInvitation`. App Store Connect adds the user to your team when they accept the invitation.
 

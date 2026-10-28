@@ -35,7 +35,7 @@ var timeScope: GKLeaderboard.TimeScope { get set }
 @property (atomic, assign) GKLeaderboardTimeScope timeScope;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines how far back in time to look for scores. The default value is [`GKLeaderboard.TimeScope.allTime`](./timescope-swift.enum/alltime.md). See [`GKLeaderboard.TimeScope`](./timescope-swift.enum.md) for more information.
 

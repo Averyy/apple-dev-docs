@@ -24,7 +24,7 @@ func MusicEventIteratorHasNextEvent(_ inIterator: MusicEventIterator, _ outHasNe
 extern OSStatus MusicEventIteratorHasNextEvent(MusicEventIterator inIterator, Boolean *outHasNextEvent);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

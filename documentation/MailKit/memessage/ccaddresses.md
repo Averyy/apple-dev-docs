@@ -19,7 +19,7 @@ var ccAddresses: [MEEmailAddress] { get }
 @property (nonatomic, copy, readonly) NSArray<MEEmailAddress *> * ccAddresses;
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the Cc header in the message.
 

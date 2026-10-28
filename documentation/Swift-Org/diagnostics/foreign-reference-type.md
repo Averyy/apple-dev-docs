@@ -10,7 +10,7 @@ framework: "Swift-Org/diagnostics"
 
 Warnings related to foreign reference types imported from C and C++.
 
-#### Overview
+## Overview
 
 Swift imports C and C++ types annotated with `SWIFT_SHARED_REFERENCE` as *foreign reference types* (FRTs). Their memory is managed in a similar manner to native Swift classes: the compiler automatically inserts calls to retain and release operations that maintain an FRT’s reference count.
 
@@ -25,7 +25,7 @@ Without these annotations, the compiler can generate code with a superfluous or 
 warning: cannot infer ownership of foreign reference value returned by 'returnsFRT()'
 ```
 
-#### Fixing the warning
+## Fixing the warning
 
 To address these warnings, you should add the appropriate annotation to your C or C++ function declaration:
 

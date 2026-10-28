@@ -5,7 +5,7 @@
 
 Receive incoming Voice-over-IP (VoIP) push notifications and use them to display the system call interface to the user.
 
-#### Overview
+## Overview
 
 If your app provides Voice-over-IP (VoIP) phone services, you may use PushKit to handle incoming calls on user devices. PushKit provides an efficient way to manage calls that doesn’t require your app to be running to receive calls. When it detects a call for a specific user, your server sends a push notification to the user’s device with information about that call. Upon receiving the notification, the device wakes up your app and gives it time to notify the user and connect to your call service.
 
@@ -15,7 +15,7 @@ For apps built using the iOS 13 SDK or later, PushKit requires you to use CallKi
 
 For information about how to configure your app to app to support PushKit, see [Supporting PushKit Notifications in Your App](./supporting-pushkit-notifications-in-your-app.md).
 
-##### Create a Call Provider Object to Manage Calls in Your App
+### Create a Call Provider Object to Manage Calls in Your App
 
 VoIP apps must use CallKit to present the system’s call-related interfaces. You present these interfaces using a [`CXProvider`](../CallKit/cxprovider.md) object, which manages user interactions for both incoming and outgoing calls. Create a provider object early in your app’s life cycle and make it available to your app’s call-related code.
 
@@ -36,7 +36,7 @@ callProvider?.setDelegate(callManager, queue: nil)
 
 Each provider object represents a single instance of your app’s phone service and facilitates interactions with the system. Apps need only one provider object to manage phone calls for the current user. If your service allows multiple users or multiple accounts per user, you are responsible for mapping incoming calls to the appropriate user accounts.
 
-##### Generate Push Notifications from Your Server
+### Generate Push Notifications from Your Server
 
 Your servers handle most of the call-related work required to connect users. Each time the user opens your app on a device, create a connection from that app to your server. When the user initiates a phone call, use that connection to communicate the details of the call back to your server. Your server must then try to connect the call initiator with the call recipient. If the recipient’s app is running and has an active connection with the server, communicate directly with the app using your existing connection. If the app is not running, generate a push notification to wake up the app.
 
@@ -49,7 +49,7 @@ When configuring the HTTP request for VoIP push notifications, always configure 
 
 For information about configuring a custom server to generate push notifications, see [Setting up a remote notification server](../UserNotifications/setting-up-a-remote-notification-server.md). For information about how to send push notifications, see [Sending notification requests to APNs](../UserNotifications/sending-notification-requests-to-apns.md).
 
-##### Respond to VoIP Push Notifications in Your App
+### Respond to VoIP Push Notifications in Your App
 
 When one of your users initiates a phone call, your server must connect to your app on the recipient’s device. If your server doesn’t have an active network connection to the app, you can ask the app to check in by sending it a push notification. Construct the push notification request on your server and send it to APNs for delivery to the user’s device. For VoIP push notifications, the system launches or wakes your app and delivers the notification to your app’s [`PKPushRegistry`](./pkpushregistry.md) object, which calls the [`pushRegistry(_:didReceiveIncomingPushWith:for:completion:)`](./pkpushregistrydelegate/pushregistry%28_,didreceiveincomingpushwith,for,completion%29.md) method of its delegate. Use that method to display the incoming call UI and to establish a connection to your VoIP server.
 
@@ -99,7 +99,7 @@ If the system allows your call to proceed, the [`reportNewIncomingCall(with:upda
 
 For more information about how to handle user interactions with the call interface, see the methods of [`CXProviderDelegate`](../CallKit/cxproviderdelegate.md).
 
-##### Respond to Call Hang Ups and Failures
+### Respond to Call Hang Ups and Failures
 
 Many things can go wrong when connecting a VoIP call, and CallKit makes it easy to handle problems when they occur.
 

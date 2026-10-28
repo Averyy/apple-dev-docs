@@ -25,7 +25,7 @@ func copyCurrentSampleFormatDescription() -> CMFormatDescription
 - (CMFormatDescriptionRef) copyCurrentSampleFormatDescription;
 ```
 
-#### Return Value
+## Return Value
 
 The current sample’s format description.
 

@@ -20,7 +20,7 @@ Creates a collision group from a raw value.
 init(rawValue: UInt32)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer succeeds even if the value passed as `rawValue` exceeds the static properties declared as part of the option set. Usually, you will want to create each collision groups setting a different bit flag for each value, so that multiple individual groups can be combined using [`OptionSet`](../../Swift/optionset.md) methods.
 

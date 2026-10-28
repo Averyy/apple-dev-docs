@@ -25,11 +25,11 @@ func CMVideoFormatDescriptionGetDimensions(_ videoDesc: CMVideoFormatDescription
 extern CMVideoDimensions CMVideoFormatDescriptionGetDimensions(CMVideoFormatDescriptionRef videoDesc);
 ```
 
-#### Return Value
+## Return Value
 
 The video dimensions of the given video format.
 
-#### Discussion
+## Discussion
 
 This does not take into account pixel aspect ratio or clean aperture tags.
 

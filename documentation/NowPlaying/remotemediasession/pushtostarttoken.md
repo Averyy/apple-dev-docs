@@ -24,7 +24,7 @@ Available when `Attributes` conforms to `RemoteMediaSessionAttributes`.
 
 - [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
-#### Discussion
+## Discussion
 
 The push token for a [`RemoteMediaSession`](../remotemediasession.md) may change over time. Use the [`pushToStartTokenUpdates`](./pushtostarttokenupdates.md) asynchronous sequence to receive an updated push-to-start token.
 

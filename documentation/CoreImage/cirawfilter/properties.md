@@ -24,7 +24,7 @@ var properties: [AnyHashable : Any] { get }
 @property (readonly) NSDictionary * properties;
 ```
 
-#### Discussion
+## Discussion
 
 This dictionary contains the same contents as the [Image Properties](../../ImageIO/image-properties.md) accessed using [`CGImageSourceCopyProperties(_:_:)`](../../ImageIO/cgimagesourcecopyproperties%28_,_%29.md).
 

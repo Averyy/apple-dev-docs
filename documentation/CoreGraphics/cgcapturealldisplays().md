@@ -20,11 +20,11 @@ func CGCaptureAllDisplays() -> CGError
 extern CGError CGCaptureAllDisplays();
 ```
 
-#### Return Value
+## Return Value
 
 A result code. To interpret the result code, see [`CGError`](./cgerror.md).
 
-#### Discussion
+## Discussion
 
 This function captures all attached displays in a single operation. When an application captures a display, Quartz doesn’t allow other applications and system services to use the display or change its configuration. This can provide a more immersive environment for your application.
 

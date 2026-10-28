@@ -21,11 +21,11 @@ init(frame: CGRect, sticker: MSSticker?)
 - (instancetype) initWithFrame:(CGRect) frame sticker:(MSSticker *) sticker;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized sticker view.
 
-#### Discussion
+## Discussion
 
 If the sticker image is larger than the view’s frame, the view scales down the sticker to fit. If the frame is larger than the sticker image, the view centers the image in the frame.
 

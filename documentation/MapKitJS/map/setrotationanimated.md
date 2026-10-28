@@ -15,11 +15,11 @@ Changes the map’s rotation setting to the number of specified degrees.
 setRotationAnimated(degrees: number, animated?: boolean): Map | null;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the map object.
 
-#### Discussion
+## Discussion
 
 By default, MapKit JS animates the rotation change. This function changes the map’s rotation even if [`isRotationEnabled`](./isrotationenabled.md) is `false`.
 

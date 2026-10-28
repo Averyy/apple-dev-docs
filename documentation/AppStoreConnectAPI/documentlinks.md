@@ -15,7 +15,7 @@ Self-links to documents that can contain information for one or more resources.
 object DocumentLinks
 ```
 
-#### Discussion
+## Discussion
 
 All the response data constitutes a *document*.
 

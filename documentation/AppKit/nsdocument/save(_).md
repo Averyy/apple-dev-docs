@@ -20,7 +20,7 @@ func save(_ sender: Any?)
 - (void) saveDocument:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation saves the document in two different ways, depending on whether the document has a file path and a document type assigned. If path and type are assigned, it simply writes the document under its current file path and type after making a backup copy of the previous file. If the document is new (no file path and type), it runs the modal Save panel to get the file location under which to save the document. It writes the document to this file, sets the document’s file location and document type (if a native type), and clears the document’s edited status.
 

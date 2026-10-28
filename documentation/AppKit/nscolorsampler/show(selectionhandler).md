@@ -23,7 +23,7 @@ func sample() async -> NSColor?
 - (void) showSamplerWithSelectionHandler:(void (^)(NSColor *selectedColor)) selectionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method displays the color-sampling interface and returns immediately. The color-sampling interface magnifies the onscreen pixels and makes it easier for the user to select a single pixel. When the user clicks any mouse button, AppKit dismisses the interface and calls `selectionHandler` with the results.
 

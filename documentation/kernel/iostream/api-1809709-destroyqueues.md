@@ -12,7 +12,7 @@ virtual IOReturn destroyQueues(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the queues were successfully destroyed. The queues cannot be destroyed while the stream is open by a client.
 

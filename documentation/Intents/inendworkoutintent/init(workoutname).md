@@ -23,11 +23,11 @@ init(workoutName: INSpeakableString?)
 - (instancetype) initWithWorkoutName:(INSpeakableString *) workoutName;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Typically, you don’t create instances of this class yourself. Siri creates instances when the user asks to end a workout. However, you can use this method during testing to create intent objects that validate your intent handling code paths.
 

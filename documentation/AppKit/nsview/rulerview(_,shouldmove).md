@@ -19,7 +19,7 @@ func rulerView(_ ruler: NSRulerView, shouldMove marker: NSRulerMarker) -> Bool
 - (BOOL) rulerView:(NSRulerView *) ruler shouldMoveMarker:(NSRulerMarker *) marker;
 ```
 
-#### Discussion
+## Discussion
 
 If the client returns [`true`](../../Swift/true.md) the ruler view allows the user to move the marker; if the client returns [`false`](../../Swift/false.md) the marker doesn’t move.
 

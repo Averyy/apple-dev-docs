@@ -23,7 +23,7 @@ typealias Pixel_16F16F = (UInt16, UInt16)
 typedef uint16_t[2] Pixel_16F16F;
 ```
 
-#### Discussion
+## Discussion
 
 A two-channel, 16-bit floating-point per channel pixel.
 

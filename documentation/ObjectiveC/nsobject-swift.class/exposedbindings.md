@@ -19,11 +19,11 @@ var exposedBindings: [NSBindingName] { get }
 @property (copy, readonly) NSArray<NSString *> * exposedBindings;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the bindings exposed by the receiver.
 
-#### Discussion
+## Discussion
 
 A subclass can override this method to remove bindings that are exposed by a superclass that are not appropriate for the subclass.
 

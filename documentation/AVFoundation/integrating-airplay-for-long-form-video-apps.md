@@ -12,7 +12,7 @@ Integrate AirPlay features and implement a dedicated external playback experienc
 - Mac Catalyst 13.0+
 - Xcode 11.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [507: Best Practices for 3rd Party AirPlay](https://developer.apple.com/videos/play/wwdc19/507/).
 

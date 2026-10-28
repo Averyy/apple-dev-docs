@@ -19,7 +19,7 @@ optional func canExportSlideshowItem(at index: Int, toApplication applicationBun
 - (BOOL) canExportSlideshowItemAtIndex:(NSUInteger) index toApplication:(NSString *) applicationBundleIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the export button should be enabled for an item; otherwise [`false`](../../Swift/false.md).
 

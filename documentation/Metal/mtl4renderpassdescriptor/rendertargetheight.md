@@ -24,7 +24,7 @@ var renderTargetHeight: Int { get set }
 @property (nonatomic) NSUInteger renderTargetHeight;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is non-zero, you need to assign it to be smaller than or equal to the minimum height of all attachments.
 

@@ -23,7 +23,7 @@ var boundaryIdentifiers: [any NSCopying]? { get }
 @property (nonatomic, copy, readonly, nullable) NSArray<id<NSCopying>> * boundaryIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 If you haven’t added any boundary identifiers to the collision behavior, this property’s value is `nil`.
 

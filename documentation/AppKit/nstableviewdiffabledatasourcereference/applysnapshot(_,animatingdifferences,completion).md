@@ -23,7 +23,7 @@ func applySnapshot(_ snapshot: NSDiffableDataSourceSnapshotReference, animatingD
 - (void) applySnapshot:(NSDiffableDataSourceSnapshot<id,id> *) snapshot animatingDifferences:(BOOL) animatingDifferences completion:(void (^)()) completion;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

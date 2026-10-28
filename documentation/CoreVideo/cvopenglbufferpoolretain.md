@@ -15,11 +15,11 @@ Retains an OpenGL buffer pool.
 extern CVOpenGLBufferPoolRefCVOpenGLBufferPoolRetain(CVOpenGLBufferPoolRef openGLBufferPool);
 ```
 
-#### Return Value
+## Return Value
 
 For convenience, the same buffer pool object you wanted to retain.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to `CFRetain`, but is `NULL` safe.
 

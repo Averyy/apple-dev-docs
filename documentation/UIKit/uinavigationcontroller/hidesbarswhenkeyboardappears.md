@@ -22,7 +22,7 @@ var hidesBarsWhenKeyboardAppears: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL hidesBarsWhenKeyboardAppears;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set to [`true`](../../Swift/true.md), the appearance of the keyboard causes the navigation controller to hide its navigation bar and toolbar. The default value of this property is [`false`](../../Swift/false.md).
 

@@ -20,7 +20,7 @@ init(orTestWith subTests: [NSSpecifierTest])
 - (instancetype) initOrTestWithTests:(NSArray<NSSpecifierTest *> *) subTests;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSLogicalTest` object initialized to perform an `OR` operation with the `NSSpecifierTest` objects in `subTests`.
 

@@ -25,7 +25,7 @@ var builtInPlugInsURL: URL? { get }
 @property (copy, readonly, nullable) NSURL * builtInPlugInsURL;
 ```
 
-#### Discussion
+## Discussion
 
 This is the appropriate path for modern application and framework bundles. This may not be a URL for non-standard bundle formats or for some older bundle formats.
 

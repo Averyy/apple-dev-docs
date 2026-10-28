@@ -21,7 +21,7 @@ var springLoadingHighlight: NSSpringLoadingHighlight { get }
 @property (readonly) NSSpringLoadingHighlight springLoadingHighlight;
 ```
 
-#### Discussion
+## Discussion
 
 During a spring-loaded operation, a destination may initiate animated highlighting to visually cue the user that spring-loading has been engaged or disengaged.
 

@@ -25,7 +25,7 @@ var kAudioFormatFlagIsBigEndian: AudioFormatFlags { get }
 kAudioFormatFlagIsBigEndian
 ```
 
-#### Discussion
+## Discussion
 
 Set this flag to indicate the format is big endian, and clear to indicate it’s little endian.
 

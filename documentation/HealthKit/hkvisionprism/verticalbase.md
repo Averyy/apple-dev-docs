@@ -24,7 +24,7 @@ var verticalBase: HKPrismBase { get }
 @property (nonatomic, readonly) HKPrismBase verticalBase;
 ```
 
-#### Discussion
+## Discussion
 
 This value can be either [`HKPrismBase.in`](../hkprismbase/in.md) or [`HKPrismBase.out`](../hkprismbase/out.md).
 

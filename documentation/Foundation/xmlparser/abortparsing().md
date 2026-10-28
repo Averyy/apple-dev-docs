@@ -25,7 +25,7 @@ func abortParsing()
 - (void) abortParsing;
 ```
 
-#### Discussion
+## Discussion
 
 If you invoke this method, the delegate, if it implements [`parser(_:parseErrorOccurred:)`](../xmlparserdelegate/parser%28_,parseerroroccurred%29.md), is informed of the cancelled parsing operation.
 

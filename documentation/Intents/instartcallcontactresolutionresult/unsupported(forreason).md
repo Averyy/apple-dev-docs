@@ -23,11 +23,11 @@ class func unsupported(forReason reason: INStartCallContactUnsupportedReason) ->
 + (instancetype) unsupportedForReason:(INStartCallContactUnsupportedReason) reason;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INStartCallContactResolutionResult`](../instartcallcontactresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a resolution result object when your app doesn’t support the intent parameter for the specified reason.
 

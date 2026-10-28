@@ -15,7 +15,7 @@ An object you use to transfer data to or from a USB endpoint.
 class IOUSBHostPipe;
 ```
 
-#### Overview
+## Overview
 
 Use an [`IOUSBHostPipe`](./iousbhostpipe.md) object to manage data transfers to and from a device. A pipe represents a one-way data conduit between your driver and one of the device’s USB endpoints. You use pipes to perform synchronous, asynchronous, or isochronous data transfers between your code and the device.
 

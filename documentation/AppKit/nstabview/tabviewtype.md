@@ -19,7 +19,7 @@ var tabViewType: NSTabView.TabType { get set }
 @property NSTabViewType tabViewType;
 ```
 
-#### Discussion
+## Discussion
 
 The supported values for this property are listed in [`NSTabView.TabType`](./tabtype.md). The default value of this property is [`NSTabView.TabType.topTabsBezelBorder`](./tabtype/toptabsbezelborder.md).
 

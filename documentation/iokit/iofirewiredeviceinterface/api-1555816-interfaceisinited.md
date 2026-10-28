@@ -16,7 +16,7 @@ Determine whether interface has been properly inited.
 Boolean (*InterfaceIsInited)(IOFireWireLibDeviceRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if interface is inited and false if is it not.
 

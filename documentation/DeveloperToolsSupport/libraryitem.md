@@ -21,7 +21,7 @@ A single item to add to the Xcode library.
 struct LibraryItem
 ```
 
-#### Overview
+## Overview
 
 Declare a library item to describe an entry in the Xcode library. Xcode discovers and validates library items that you place in the context of a [`LibraryContentProvider`](./librarycontentprovider.md) instance.
 

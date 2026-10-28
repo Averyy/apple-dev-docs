@@ -19,7 +19,7 @@ All decisions within the given time range.
 - (NSArray<CNDecision *> *) decisionsInTimeRange:(CMTimeRange) timeRange;
 ```
 
-#### Return Value
+## Return Value
 
 An array of decisions within the given time range.
 

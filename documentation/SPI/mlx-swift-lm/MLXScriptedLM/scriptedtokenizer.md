@@ -17,7 +17,7 @@ A deterministic `Tokenizer` for scripted tests.
 struct ScriptedTokenizer
 ```
 
-#### Overview
+## Overview
 
 Encoding is longest-match over a [`ScriptedVocabulary`](./scriptedvocabulary.md), with atomic specials matched first. `decode(encode(s)) == s` for every string, so text survives the decode and re-encode that `ChatSession` performs on each turn.
 

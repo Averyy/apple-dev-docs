@@ -21,7 +21,7 @@ Retrieves a tag’s value as an uninterpreted 64-bit wide unsigned integer.
 static CMTagValue CMTagGetValue(CMTag tag);
 ```
 
-#### Discussion
+## Discussion
 
 Prefer using another method from Retrieving Tag Values that automatically interprets a tag to calling this method and performing your own typecast.
 

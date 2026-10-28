@@ -23,7 +23,7 @@ weak var dataSource: (any UICollectionViewDataSource)? { get set }
 @property (nonatomic, weak, nullable) id<UICollectionViewDataSource> dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 The data source must adopt the [`UICollectionViewDataSource`](../uicollectionviewdatasource.md) protocol. The collection view maintains a weak reference to the data source object.
 

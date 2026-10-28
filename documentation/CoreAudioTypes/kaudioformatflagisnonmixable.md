@@ -25,7 +25,7 @@ var kAudioFormatFlagIsNonMixable: AudioFormatFlags { get }
 kAudioFormatFlagIsNonMixable
 ```
 
-#### Discussion
+## Discussion
 
 Only use this flag when interacting with the stream format information of the hardware abstraction layer (HAL). It isn’t a valid flag for any other use.
 

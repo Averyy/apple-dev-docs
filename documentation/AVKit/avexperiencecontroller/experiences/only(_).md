@@ -15,7 +15,7 @@ Returns a set of experiences for the provided list.
 static func only<C>(_ experiences: C) -> AVExperienceController.Experiences where C : Collection, C.Element == AVExperienceController.Experience
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when the use case requires a specific set of experiences.
 

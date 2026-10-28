@@ -19,7 +19,7 @@ class let willTerminateNotification: NSNotification.Name
 extern NSNotificationName NSApplicationWillTerminateNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification on the main actor in response to the [`terminate(_:)`](./terminate%28_%29.md) method, and only posted if the delegate method [`applicationShouldTerminate(_:)`](../nsapplicationdelegate/applicationshouldterminate%28_%29.md) returns [`true`](../../Swift/true.md). The notification object is [`shared`](./shared.md). This notification doesn’t contain a `userInfo` dictionary.
 

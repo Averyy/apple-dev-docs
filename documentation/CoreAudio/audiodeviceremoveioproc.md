@@ -14,11 +14,11 @@
 extern OSStatus AudioDeviceRemoveIOProc(AudioDeviceID inDevice, AudioDeviceIOProc inProc);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Unregisters the given AudioDeviceIOProc from the AudioDevice. This routine has been deprecated in favor of AudioDeviceDestroyIOProcID().
 

@@ -15,7 +15,7 @@ Invokes your synchronization callback function.
 void InvokeSpeechSyncUPP(SpeechChannel chan, SRefCon refCon, OSType syncMessage, SpeechSyncUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 You should not need to call the `InvokeSpeechSyncUPP` function,because the system calls your synchronization callback function for you.
 

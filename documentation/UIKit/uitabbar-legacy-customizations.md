@@ -5,7 +5,7 @@
 
 Customize appearance information directly on the tab bar object.
 
-#### Overview
+## Overview
 
 In iOS 13 and later, customize your tab bar using the [`standardAppearance`](./uitabbar/standardappearance.md) property. You may also continue to use these legacy accessors to customize your tab bar’s appearance directly.
 

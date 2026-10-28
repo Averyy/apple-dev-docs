@@ -19,7 +19,7 @@ class var systemBrown: NSColor { get }
 @property (class, strong, readonly) NSColor * systemBrownColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this color when you want a tint color that looks great on both light and dark backgrounds.
 

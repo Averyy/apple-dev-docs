@@ -19,7 +19,7 @@ var canMakeTextStandardSize: Bool { get }
 @property (nonatomic, readonly) BOOL canMakeTextStandardSize;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the current text size is a multiple of 1; otherwise, [`false`](../../Swift/false.md).
 

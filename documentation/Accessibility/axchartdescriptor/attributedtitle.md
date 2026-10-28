@@ -26,7 +26,7 @@ var attributedTitle: NSAttributedString? { get set }
 @property (nonatomic, copy, nullable) NSAttributedString * attributedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 If you set the value of this property, the system uses this value instead of [`title`](./title.md).
 

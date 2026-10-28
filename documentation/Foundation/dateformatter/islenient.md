@@ -25,7 +25,7 @@ var isLenient: Bool { get set }
 @property (getter=isLenient) BOOL lenient;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver has been set to use heuristics when parsing a string to guess at the date which is intended, otherwise [`false`](../../Swift/false.md).
 

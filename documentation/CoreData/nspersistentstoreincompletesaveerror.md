@@ -25,7 +25,7 @@ var NSPersistentStoreIncompleteSaveError: Int { get }
 NSPersistentStoreIncompleteSaveError
 ```
 
-#### Discussion
+## Discussion
 
 The stores or objects that failed are in the corresponding user info dictionary of the `NSError` object.
 

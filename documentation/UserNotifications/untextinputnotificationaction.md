@@ -28,7 +28,7 @@ class UNTextInputNotificationAction
 
 - [Declaring your actionable notification types](./declaring-your-actionable-notification-types.md)
 
-#### Overview
+## Overview
 
 Use [`UNTextInputNotificationAction`](./untextinputnotificationaction.md) objects to define an action that allows the user to provide a custom text-based response. When the user selects an action of this type, the system displays controls for the user to enter or dictate the text content. That text is then included in the response object that’s delivered to your app.
 

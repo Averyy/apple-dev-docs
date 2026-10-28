@@ -21,7 +21,7 @@ Interactions with the App Store, such as managing subscriptions, verifying devic
 enum AppStore
 ```
 
-#### Overview
+## Overview
 
 Use these static functions and variables to perform tasks like showing the manage subscriptions sheet, getting the device verification ID, determining whether users can make purchases, and more.
 
@@ -70,8 +70,7 @@ Use these static functions and variables to perform tasks like showing the manag
 ### Deprecated
 - [static func presentOfferCodeRedeemSheet(in: UIWindowScene) async throws](./appstore/presentoffercoderedeemsheet%28in%29.md)
   Displays a sheet in the window scene that enables customers to redeem an offer code that you configure in App Store Connect.
-- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View
-](../SwiftUI/view/offercoderedemption%28ispresented,oncompletion%29.md)
+- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View\n](../SwiftUI/view/offercoderedemption%28ispresented,oncompletion%29.md)
 - [static func presentOfferCodeRedeemSheet(from: NSViewController) async throws](./appstore/presentoffercoderedeemsheet%28from%29.md)
   Displays a sheet in the view that enables customers to redeem an offer code that you configure in App Store Connect.
 ### Type Methods

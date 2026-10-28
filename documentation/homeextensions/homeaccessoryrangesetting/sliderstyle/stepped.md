@@ -17,7 +17,7 @@ A slider that moves in discrete steps and displays tick marks.
 case stepped
 ```
 
-#### Discussion
+## Discussion
 
 The step size is the setting’s `step` value, or 1 if you don’t provide one. Without a `step` value, the slider doesn’t display tick labels.
 

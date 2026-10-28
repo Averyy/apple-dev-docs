@@ -25,7 +25,7 @@ weak var skeleton: SCNNode? { get set }
 @property (nonatomic, weak, nullable) SCNNode * skeleton;
 ```
 
-#### Discussion
+## Discussion
 
 If you replace a skinner’s skeleton by assigning a different node to this property, the new skeleton must have the same structure as the skeleton it replaces. That is, the hierarchy of nodes must match, although the current state of each node may not.
 

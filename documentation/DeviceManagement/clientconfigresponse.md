@@ -15,7 +15,7 @@ The response that contains the client configuration.
 object ClientConfigResponse
 ```
 
-#### Discussion
+## Discussion
 
 Client config should be checked regularly in order to verify expected values for the various fields.
 

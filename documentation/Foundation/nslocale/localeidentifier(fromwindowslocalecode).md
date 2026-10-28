@@ -25,7 +25,7 @@ class func localeIdentifier(fromWindowsLocaleCode lcid: UInt32) -> String?
 + (NSString *) localeIdentifierFromWindowsLocaleCode:(uint32_t) lcid;
 ```
 
-#### Return Value
+## Return Value
 
 The locale identifier.
 

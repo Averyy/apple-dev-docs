@@ -5,7 +5,7 @@
 
 Request and process a preauthentication for dynamic WS-Trust authentication.
 
-#### Overview
+## Overview
 
 Federation enables authentication between security domains, such as from a local identity provider (IdP) to a cloud IdP. Platform SSO supports federated authentication with WS-Trust and dynamic WS-Trust. Use dynamic WS-Trust when the federation for a user can change.
 
@@ -13,7 +13,7 @@ The system sends a preauthentication request when the [`federationType`](./asaut
 
 If the user isn’t federated, the login proceeds as a normal password authentication to the IdP.
 
-##### Create the preauthentication network request
+### Create the preauthentication network request
 
 The following table specifies the query string parameters that the system uses to create a preauthentication network request:
 
@@ -31,7 +31,7 @@ Accept: application/json
 client-request-id: DCAB01D3-B1FE-4E1C-802F-B3EBDCDF9E67
 ```
 
-##### Receive the preauthentication network response
+### Receive the preauthentication network response
 
 If the http status is `200`, the response body loads as JSON. If the body is valid JSON, then the system evaluates the [`federationPredicate`](./asauthorizationproviderextensionloginconfiguration/federationpredicate.md) to determine whether the user is federated.
 

@@ -25,11 +25,11 @@ func CFDataGetTypeID() -> CFTypeID
 extern CFTypeID CFDataGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFData opaque type.
 
-#### Discussion
+## Discussion
 
 CFMutableData objects have the same type identifier as CFData objects.
 

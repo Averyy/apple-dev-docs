@@ -21,11 +21,11 @@ Formats the string using a localized hour-minute-second time pattern.
 func formatted() -> String
 ```
 
-#### Return Value
+## Return Value
 
 A localized formatted string that describes the duration, such as `1:30:56` for a duration of 1 hour, 30 minutes, and 56 seconds in the U.S. English locale. In the Finnish locale, this returns `1.30.56`.
 
-#### Discussion
+## Discussion
 
 The following example shows the effect of applying the default formatting to a duration of two seconds:
 

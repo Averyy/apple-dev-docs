@@ -23,7 +23,7 @@ A builder expression that describes the process of importing and exporting an it
 <Self.Item> var body: Self.Body { get }
 ```
 
-#### Discussion
+## Discussion
 
 Combine multiple existing transfer representations to compose a single transfer representation that describes how to transfer an item in multiple scenarios.
 

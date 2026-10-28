@@ -18,11 +18,11 @@ itemForFeatureCollection?<D extends GeoJSONTypes.FeatureCollection>(
 ): ItemCollection<D> | Item[] | null;
 ```
 
-#### Return Value
+## Return Value
 
 A map item or an array of map items.
 
-#### Discussion
+## Discussion
 
 MapKit JS calls this method for every GeoJSON `FeatureCollection` object. The framework also calls this method after constructing subitems and calling their delegate functions.
 

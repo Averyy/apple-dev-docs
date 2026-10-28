@@ -24,7 +24,7 @@ struct AUVoiceIOOtherAudioDuckingConfiguration
 struct AUVoiceIOOtherAudioDuckingConfiguration;
 ```
 
-#### Overview
+## Overview
 
 Use this structure to specify whether to enable advanced ducking and set the ducking level of other non-voice audio in a voice chat. Advanced ducking ducks other non-voice audio based on the presence of voice activity from local and remote chat participants. Setting a higher level of ducking could increase the clarity of voice chat.
 

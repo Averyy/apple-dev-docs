@@ -20,7 +20,7 @@ An interface for a node that’s a member of a blend tree.
 protocol BlendTreeNode
 ```
 
-#### Overview
+## Overview
 
 This protocol specifies the common functionality for the animations that compose a [`BlendTreeAnimation`](./blendtreeanimation.md). The animation defines a [`root`](./blendtreeanimation/root.md) node of this type. To define the tree, you assign the root node one of the follow structures that adopt this protocol:
 

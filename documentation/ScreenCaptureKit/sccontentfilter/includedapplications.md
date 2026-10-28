@@ -18,7 +18,7 @@ var includedApplications: [SCRunningApplication] { get }
 @property (nonatomic, readonly, nonnull) NSArray<SCRunningApplication *> * includedApplications;
 ```
 
-#### Discussion
+## Discussion
 
 Applications that are included in the content filter
 

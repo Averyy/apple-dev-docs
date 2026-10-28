@@ -15,7 +15,7 @@ The system of measurement that displays on the map.
 distances?: DistanceUnitSystem;
 ```
 
-#### Discussion
+## Discussion
 
 Sets the system of measurement for displaying map distances. See [`DistanceUnitSystem`](../distanceunitsystem.md) for accepted values.
 

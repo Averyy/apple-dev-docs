@@ -19,7 +19,7 @@ The search item added by a [`searchable(text:isPresented:placement:prompt:)`](..
 static let search: ToolbarDefaultItemKind
 ```
 
-#### Discussion
+## Discussion
 
 Use a `.search` default item kind with [`init(kind:placement:)`](../defaulttoolbaritem/init%28kind,placement%29.md) to customize the [`ToolbarItemPlacement`](../toolbaritemplacement.md) of a default item kind. The search default item kind can be placed in the [`bottomBar`](../toolbaritemplacement/bottombar.md) on all supported platforms. On iOS, it can also be placed in the top bar.
 

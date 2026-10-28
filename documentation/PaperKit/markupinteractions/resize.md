@@ -19,7 +19,7 @@ Allows resizing.
 static let resize: MarkupInteractions
 ```
 
-#### Discussion
+## Discussion
 
 This only controls manual resizing through direct interaction (drag handles, gestures). Programmatic resizing via the `frame` property always works. For `ShapeMarkup` elements, automatic content-driven resizing from the `autoresizing` property still occurs independently of this setting.
 

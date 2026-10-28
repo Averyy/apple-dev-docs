@@ -21,7 +21,7 @@ init(audioSession: AVAudioSession?)
 - (instancetype) initWithAudioSession:(AVAudioSession *) audioSession;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when the provided `AVAudioSession` is in .record mode or you plan to switch it to record mode.
 

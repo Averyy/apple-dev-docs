@@ -25,11 +25,11 @@ convenience init(named name: String)
 + (instancetype) atlasNamed:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A new texture atlas object.
 
-#### Discussion
+## Discussion
 
 If the texture atlas cannot be found, an exception is thrown.
 

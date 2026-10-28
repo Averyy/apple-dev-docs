@@ -25,11 +25,11 @@ var mutableString: NSMutableString { get }
 @property (retain, readonly) NSMutableString * mutableString;
 ```
 
-#### Return Value
+## Return Value
 
 The mutable string object.
 
-#### Discussion
+## Discussion
 
 The receiver tracks changes to this string and keeps its attribute mappings up to date.
 

@@ -17,11 +17,11 @@ Returns a Boolean value that indicates whether to scale image representations to
 - (BOOL) scalesWhenResized;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if image representations are scaled to fit the receiver; otherwise, [`false`](../../Swift/false.md). The default value is [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Images are not resized during drawing if this method returns [`true`](../../Swift/true.md). They are only resized when you assign a new value to the [`size`](./size.md) property.
 

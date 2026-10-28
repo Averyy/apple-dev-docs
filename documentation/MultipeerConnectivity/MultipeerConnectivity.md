@@ -16,13 +16,13 @@ Support peer-to-peer connectivity and the discovery of nearby devices.
 
 > **Deprecated**: Multipeer Connectivity is deprecated. Migrate any code using this framework to the [Network](../Network/Network.md) framework. For advice on how to do that, see [TN3213: Moving from Multipeer Connectivity to Network framework](../Technotes/tn3213-moving-from-multipeer-connectivity-to-network-framework.md).
 
-#### Overview
+## Overview
 
 The Multipeer Connectivity framework supports the discovery of services provided by nearby devices and supports communicating with those services through message-based data, streaming data, and resources (such as files). In iOS, the framework uses infrastructure Wi-Fi networks, peer-to-peer Wi-Fi, and Bluetooth personal area networks for the underlying transport. In macOS and tvOS, it uses infrastructure Wi-Fi, peer-to-peer Wi-Fi, and Ethernet.
 
 > ❗ **Important**:  Apps that use the local network must provide a usage string in their `Info.plist` with the key [`NSLocalNetworkUsageDescription`](../BundleResources/information-property-list/nslocalnetworkusagedescription.md). Apps that use Bonjour must also declare the services they browse, using the [`NSBonjourServices`](../BundleResources/information-property-list/nsbonjourservices.md) key.
 
-##### Architecture
+### Architecture
 
 When working with the Multipeer Connectivity framework, your app must interact with several types of objects:
 
@@ -33,7 +33,7 @@ When working with the Multipeer Connectivity framework, your app must interact w
 - Browser view controller objects ([`MCBrowserViewController`](./mcbrowserviewcontroller.md)) provide a standard user interface that allows the user to choose nearby peers to add to a session.
 - Peer IDs ([`MCPeerID`](./mcpeerid.md)) uniquely identify an app running on a device to nearby peers.
 
-##### Discovery Phase and Session Phase
+### Discovery Phase and Session Phase
 
 This framework is used in two phases: the discovery phase and the session phase.
 

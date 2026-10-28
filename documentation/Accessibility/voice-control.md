@@ -5,13 +5,13 @@
 
 An interface for navigating a device using voice commands to tap, swipe, type, and more.
 
-#### Overview
+## Overview
 
 Voice Control is an assistive technology that lets people interact with their devices using only their voice. People speak commands to perform gestures, interact with screen elements, dictate and edit text, and more. Learn more about testing your app with Voice Control to make sure it works well for people who use this assistive technology.
 
 ![](https://developer.apple.com/tutorials/images/com.apple.Accessibility/voice-control@2x.png)
 
-###### Learn to use Voice Control
+#### Learn to use Voice Control
 
 - [Voice Control](https://www.apple.com/accessibility/pdf/Voice_Control_Tech_Brief_Sept_2019.pdf)
 - [Use Voice Control to interact with iPhone](https://support.apple.com/guide/iphone/use-voice-control-iph2c21a3c88/ios)

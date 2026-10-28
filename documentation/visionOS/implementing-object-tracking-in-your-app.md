@@ -5,7 +5,7 @@
 
 Create engaging interactions by training models to recognize and track real-world objects in people’s surroundings.
 
-#### Overview
+## Overview
 
 When implementing object tracking in your iOS or visionOS app, you can seamlessly integrate real-world objects in people’s surroundings to enhance their immersive experiences. By tracking the 3D position and orientation of an object, or several objects, your app can augment the objects with virtual content and measure the relative spatial distance between them.
 
@@ -22,7 +22,7 @@ To add object tracking to your app, start with a physical object’s 3D model, t
 
 Implementing object tracking requires either an iPhone with iOS 27 or later, or an Apple Vision Pro with visionOS 2 or later. The machine learning training in Create ML requires a Mac with Apple silicon and macOS 15 or later. Reference object files trained with macOS 27 and Xcode 27 or later require iOS 27 or visionOS 27 and later.
 
-#### Ensure your objects are suitable for object tracking
+## Ensure your objects are suitable for object tracking
 
 For object tracking to work best in your app, make sure your object is *rigid*. A rigid object maintains its shape and appearance during tracking. For example, a pair of scissors is challenging to track because it changes shape while a person uses it.
 
@@ -30,7 +30,7 @@ By default, object tracking delivers pose updates at a lower frequency and consu
 
 For moving or handheld objects, like surgical instruments or power tools, set [`highFrameRateTrackingEnabled`](../ARKit/referenceobject/configuration/highframeratetrackingenabled.md) when you create the object tracking session in visionOS, or assign the object to [`trackingObjects`](../ARKit/arworldtrackingconfiguration/trackingobjects.md) in iOS. This gives you a precise pose update on every frame. For best results, train your reference object in extended mode. For more information, see [Train a machine learning model with the 3D model asset in Create ML](./implementing-object-tracking-in-your-app.md#Train-a-machine-learning-model-with-the-3D-model-asset-in-Create-ML) later in this article.
 
-#### Obtain a 3D model of your object
+## Obtain a 3D model of your object
 
 You use [Create ML](https://developer.apple.com/machine-learning/create-ml/) to begin the machine learning training to obtain your reference object file. Create ML requires a 3D model asset in the USDZ file format that represents your real-world object. You can obtain your 3D model using computer-aided design (CAD) software to accurately model an object’s geometry and apply physically based rendering (PBR) materials to it, and save it in the USDZ file format. Using this method, the 3D model can realistically represent objects that consist of multiple parts made from different materials, like glass, metal, plastic, wood, and other common materials. This method is helpful for capturing objects that are entirely or partly transparent, shiny, or reflective. The better the 3D model represents the appearance of the physical object, the better the quality of tracking is in visionOS.
 
@@ -43,7 +43,7 @@ Before beginning the training process in Create ML with the 3D model asset, keep
 
 > **Note**: While training the machine learning model with the 3D model asset, Create ML ignores any animations, virtual cameras, and lights within the asset, treating them as static.
 
-#### Train a machine learning model with the 3D model asset in Create ML
+## Train a machine learning model with the 3D model asset in Create ML
 
 Object tracking requires a reference object file to track the spatial location and orientation of the corresponding real-world object. You use Create ML to train a machine learning model to create a reference object file unique to your object. The training of machine learning models with your 3D asset and the creation of the reference object file both run locally on your Mac. You can either train a model with the Create ML developer tool that comes with Xcode, or with the Create ML command-line tool.
 
@@ -91,7 +91,7 @@ Create ML supports training multiple machine learning models in the same object-
 
 After inspecting your 3D model asset and configuring the training settings, click Train to begin the training process. A progress bar indicates the amount of time until the machine learning training is complete. The machine learning training can take a few hours, depending on the configuration of your Mac. A more advanced processor and additional RAM significantly improve the training time.
 
-##### Train your assets with the Create ML command-line tool
+### Train your assets with the Create ML command-line tool
 
 Starting with Xcode 26, which requires macOS 15.4 or later, you can train a machine learning model with your 3D asset by running the Create ML developer tool from a command line prompt. With an asset in the USDZ file format, you can use the tool to train the asset and get a reference object file to use for object tracking.
 
@@ -127,7 +127,7 @@ After you run the tool, it starts training your object. Use the help option (`-h
 % xcrun createml objecttracker -h
 ```
 
-#### Export the reference object file
+## Export the reference object file
 
 When training is complete, Create ML provides the reference object file for you to use in your app. Click the Output tab and save the resulting reference object file.
 
@@ -137,7 +137,7 @@ Use the Reference Object Compiler in Xcode to remove the USDZ data from the refe
 
 ![An Xcode screenshot of the Build Settings pane showing the Remove USDZ files from Reference Object option enabled.](https://developer.apple.com/tutorials/images/com.apple.visionOS/stripping-usd@2x.png)
 
-#### Integrate the reference object file into your app
+## Integrate the reference object file into your app
 
 After generating the reference object file, set up object tracking in your app using Reality Composer Pro, RealityKit, or ARKit. For more information about each of these methods, see [Using a reference object with Reality Composer Pro](./using-a-reference-object-with-reality-composer-pro.md), [Using a reference object with RealityKit](./using-a-reference-object-with-realitykit.md), [Using a reference object with ARKit in visionOS](./using-a-reference-object-with-arkit-in-visionos.md), and [Using a reference object with ARKit in iOS](./using-a-reference-object-with-arkit-in-ios.md).
 

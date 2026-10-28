@@ -10,7 +10,7 @@ A 16-bit integer that identifies a collection of movie tracks that contain alter
 
 - [QuickTime File Format change log](../revision_history.md)
 
-#### Overview
+## Overview
 
 This same identifier appears in each `'tkhd'` atom of the other tracks in the group. QuickTime chooses one track from the group to be used when the movie is played. The choice may be based on such considerations as playback quality, language, or the capabilities of the computer.
 

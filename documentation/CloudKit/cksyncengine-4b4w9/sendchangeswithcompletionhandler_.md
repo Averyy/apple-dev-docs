@@ -21,7 +21,7 @@ Sends pending local changes to the server.
 - (void) sendChangesWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If the send fails, the completion handler’s `error` parameter is an object that describes that failure; otherwise, it’s `nil`.
 

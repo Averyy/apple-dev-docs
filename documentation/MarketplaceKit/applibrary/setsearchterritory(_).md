@@ -17,7 +17,7 @@ nonisolated
 final func setSearchTerritory(_ territory: String?) async
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to an ISO 3166-1 alpha-2, two-letter country code. Any system-wide app search, such as through Lookup, Safari, or Spotlight, that a person starts after you set this property results in apps matching the criteria available in that country.
 

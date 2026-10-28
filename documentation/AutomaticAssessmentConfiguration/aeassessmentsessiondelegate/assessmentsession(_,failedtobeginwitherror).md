@@ -22,7 +22,7 @@ optional func assessmentSession(_ session: AEAssessmentSession, failedToBeginWit
 - (void) assessmentSession:(AEAssessmentSession *) session failedToBeginWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 After your app calls a session’s [`begin()`](../aeassessmentsession/begin%28%29.md) method, the session asynchronously disables the appropriate system services and then calls its delegate’s [`assessmentSessionDidBegin(_:)`](./assessmentsessiondidbegin%28_%29.md) method. However, if the session fails to start for any reason, it calls the [`assessmentSession(_:failedToBeginWithError:)`](./assessmentsession%28_,failedtobeginwitherror%29.md) method instead. Don’t start any assessments if your app receives this callback.
 

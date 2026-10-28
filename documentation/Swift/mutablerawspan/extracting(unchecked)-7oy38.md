@@ -21,11 +21,11 @@ Constructs a new span over the bytes within the supplied range of positions with
 mutating func extracting(unchecked bounds: Range<Int>) -> MutableRawSpan
 ```
 
-#### Return Value
+## Return Value
 
 A `MutableRawSpan` over the bytes within `bounds`.
 
-#### Discussion
+## Discussion
 
 The returned span represents a mutation of this span.
 

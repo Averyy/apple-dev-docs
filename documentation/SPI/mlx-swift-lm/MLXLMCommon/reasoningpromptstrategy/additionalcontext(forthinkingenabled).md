@@ -17,11 +17,11 @@ Maps a “thinking enabled” preference to the chat-template `additionalContext
 func additionalContext(forThinkingEnabled thinkingEnabled: Bool?) throws -> [String : any Sendable]?
 ```
 
-#### Return Value
+## Return Value
 
 The `additionalContext` to merge into the rendered prompt, or `nil` when no context needs to be injected.
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`ReasoningError.cannotDisableReasoning`](../reasoningerror/cannotdisablereasoning.md) when `false` is requested on a non-suppressible strategy ([`ReasoningPromptStrategy.alwaysOn`](./alwayson.md) or [`ReasoningPromptStrategy.none`](./none.md)).
 

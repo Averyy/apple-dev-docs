@@ -23,7 +23,7 @@ var allowsImageOutput: Bool { get }
 @property (nonatomic, readonly) BOOL allowsImageOutput;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), this renderer can be used to generate [`CGImage`](../../CoreGraphics/cgimage.md) objects.
 

@@ -23,7 +23,7 @@ var isDualCameraFusionEnabled: Bool { get }
 @property (readonly, getter=isDualCameraFusionEnabled) BOOL dualCameraFusionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the [`AVCapturePhotoSettings`](../avcapturephotosettings.md) property [`isAutoDualCameraFusionEnabled`](../avcapturephotosettings/isautodualcamerafusionenabled.md).
 

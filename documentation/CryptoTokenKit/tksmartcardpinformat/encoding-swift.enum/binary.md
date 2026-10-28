@@ -23,7 +23,7 @@ case binary
 TKSmartCardPINEncodingBinary
 ```
 
-#### Discussion
+## Discussion
 
 Characters are encoded in Binary format (for example, `1234` is encoded as `01h 02h 03h 04h`).
 

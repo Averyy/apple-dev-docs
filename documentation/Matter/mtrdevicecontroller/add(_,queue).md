@@ -25,7 +25,7 @@ func add(_ delegate: any MTRDeviceControllerDelegate, queue: dispatch_queue_t)
 - (void) addDeviceControllerDelegate:(id<MTRDeviceControllerDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
-#### Discussion
+## Discussion
 
 Multiple delegates can be added to monitor MTRDeviceController state changes. Note that there should only be one delegate that responds to pairing related callbacks.
 

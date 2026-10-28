@@ -19,7 +19,7 @@ var isDetached: Bool { get }
 @property (readonly, getter=isDetached) BOOL detached;
 ```
 
-#### Discussion
+## Discussion
 
 When [`isDetached`](./isdetached.md) is [`true`](../../Swift/true.md), the detached window is automatically created. This property does not apply when detaching a popover results in a window returned by [`detachableWindow(for:)`](../nspopoverdelegate/detachablewindow%28for%29.md).
 

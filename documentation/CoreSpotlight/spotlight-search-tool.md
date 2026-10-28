@@ -5,7 +5,7 @@
 
 Make your app’s indexed content available to the system’s Foundation models as additional context to use when answering prompts.
 
-#### Overview
+## Overview
 
 Your app’s Spotlight search index provides fast access to your app’s content when you need to find something. The [`SpotlightSearchTool`](./spotlightsearchtool.md) provides an efficient way for the Foundation Models framework to access the content in that index and use it to answer prompts. Include this tool in the Foundation Models session you use to run prompts that require your app’s custom content. Configure the search tool as needed to customize its behavior or the search behaviors.
 

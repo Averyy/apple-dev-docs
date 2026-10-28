@@ -25,7 +25,7 @@ var allowsPersistentDNS: Bool { get set }
 @property BOOL allowsPersistentDNS;
 ```
 
-#### Discussion
+## Discussion
 
 This should only be set for hostnames whose resolutions are not expected to change across networks. Defaults to `NO`.
 

@@ -25,11 +25,11 @@ func hasMemberInPlane(_ thePlane: UInt8) -> Bool
 - (BOOL) hasMemberInPlane:(uint8_t) thePlane;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver has at least one member in `thePlane`, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method makes it easier to find the plane containing the members of the current character set. The Basic Multilingual Plane (BMP) is plane `0`.
 

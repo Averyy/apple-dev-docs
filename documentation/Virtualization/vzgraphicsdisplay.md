@@ -19,7 +19,7 @@ class VZGraphicsDisplay
 @interface VZGraphicsDisplay : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate a `VZGraphicsDisplay` directly. Graphics displays are first configured on a [`VZGraphicsDeviceConfiguration`](./vzgraphicsdeviceconfiguration.md) subclass. When you create a [`VZVirtualMachine`](./vzvirtualmachine.md) from the configuration, the displays are available through the [`displays`](./vzgraphicsdevice/displays.md) property of the configuration’s [`VZGraphicsDevice`](./vzgraphicsdevice.md).
 

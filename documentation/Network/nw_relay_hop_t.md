@@ -25,7 +25,7 @@ typealias nw_relay_hop_t = any OS_nw_relay_hop
 typedef NSObject<OS_nw_relay_hop> * nw_relay_hop_t;
 ```
 
-#### Discussion
+## Discussion
 
 Relay servers are secure HTTP proxies that allow proxying TCP traffic using the `CONNECT` method and UDP traffic using the `connect-udp` protocol defined in [RFC 9298](https://www.rfc-editor.org/rfc/rfc9298.html).
 

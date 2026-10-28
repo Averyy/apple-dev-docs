@@ -17,11 +17,11 @@ Imports one or more certificates, keys, or identities and adds them to a keychai
 OSStatus SecKeychainItemImport(CFDataRef importedData, CFStringRef fileNameOrExtension, SecExternalFormat *inputFormat, SecExternalItemType *itemType, SecItemImportExportFlags flags, const SecKeyImportExportParameters *keyParams, SecKeychainRef importKeychain, CFArrayRef*outItems);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 When you pass this function a `CFDataRef` object containing the external representation of one or more keys, certificates, or identities, [`SecKeychainItemImport`](./seckeychainitemimport.md) attempts to determine the format and contents of the data. To ensure that this process is successful, you should specify values for one or more of the parameters `fileNameOrExtension`, `inputFormat`, and `itemType`. To have the function add the imported items to a keychain, specify a non-`NULL` value for the `importKeychain` parameter. To have the function return `SecKeychainItemRef` objects for the imported items, specify a non-`NULL` value for the `outItems` parameter.
 
@@ -40,7 +40,7 @@ if (SecCertificateGetTypeID() == theID)
 
 You can pass in `NULL` for both `outItems` and `importKeychain` to determine what is inside a given external data representation. When you do, the function returns the input format and the item type without modifying the data in any way.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated in macOS 10.7 and later; use [`SecItemImport(_:_:_:_:_:_:_:_:)`](./secitemimport%28_,_,_,_,_,_,_,_%29.md) instead.
 

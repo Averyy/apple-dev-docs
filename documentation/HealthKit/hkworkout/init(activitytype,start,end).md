@@ -26,11 +26,11 @@ convenience init(activityType workoutActivityType: HKWorkoutActivityType, start 
 + (instancetype) workoutWithActivityType:(HKWorkoutActivityType) workoutActivityType startDate:(NSDate *) startDate endDate:(NSDate *) endDate;
 ```
 
-#### Return Value
+## Return Value
 
 A workout activity.
 
-#### Discussion
+## Discussion
 
 The workout’s duration is calculated from its start and end times. The workout’s total distance, total energy burned, workout events, device, and metadata are all set to `nil`.
 

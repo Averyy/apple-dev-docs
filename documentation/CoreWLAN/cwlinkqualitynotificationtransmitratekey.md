@@ -19,7 +19,7 @@ let CWLinkQualityNotificationTransmitRateKey: String
 extern NSString * const CWLinkQualityNotificationTransmitRateKey;
 ```
 
-#### Discussion
+## Discussion
 
 NSNumber containing the current transmit rate value for the WLAN interface. Found in the *userInfo* dictionary for the *CWLinkQualityChangedNotification*.
 

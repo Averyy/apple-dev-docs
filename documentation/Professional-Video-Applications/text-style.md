@@ -4,7 +4,7 @@
 
 Describes text style for a segment of text.
 
-#### Overview
+## Overview
 
 Use a `text-style` element to describe text styles to apply to the content of an element. Or use `text-style` in combination with a `text-style-def` element to define a shared text style that multiple `text-style` elements reference.
 

@@ -24,7 +24,7 @@ func CATransform3DRotate(_ t: CATransform3D, _ angle: CGFloat, _ x: CGFloat, _ y
 extern CATransform3D CATransform3DRotate(CATransform3D t, CGFloat angle, CGFloat x, CGFloat y, CGFloat z);
 ```
 
-#### Discussion
+## Discussion
 
 If the vector has zero length, the behavior is undefined: `t` = `rotation(angle, x, y, z) * t`.
 

@@ -22,7 +22,7 @@ typealias CompletionHandler = (UIPrintInteractionController, Bool, (any Error)?)
 typedef void (^)(UIPrintInteractionController *, _Bool, NSError *) UIPrintInteractionCompletionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You implement this block as the final argument of [`present(animated:completionHandler:)`](./present%28animated,completionhandler%29.md), [`present(from:animated:completionHandler:)`](./present%28from,animated,completionhandler%29.md), or [`present(from:in:animated:completionHandler:)`](./present%28from,in,animated,completionhandler%29.md). When a print job concludes, you can reset any state set up for printing and do related housekeeping tasks. If the print job encountered an error, it is likely to be a programming error, so you might want to log the error for debugging purposes.
 

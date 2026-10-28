@@ -24,7 +24,7 @@ var specularTint: MDLMaterialProperty { get }
 @property (nonatomic, retain, readonly) MDLMaterialProperty * specularTint;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is zero—specular highlights entirely use the color of the reflected light source.
 

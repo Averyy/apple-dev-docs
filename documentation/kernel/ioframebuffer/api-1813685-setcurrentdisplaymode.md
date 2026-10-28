@@ -13,11 +13,11 @@ virtual IOReturn setDisplayMode(
  IOIndexdepth );
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code. A return other than kIOReturnSuccess will prevent the system from using the device.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses should implement this method to set the current mode and depth. Other than at enableController() time, this is the only method that should change the framebuffer format and is synchronized with clients and attached accelerators to make sure access to the device is disallowed during the change.
 

@@ -27,7 +27,7 @@ var allowsMultipleSelectionDuringEditing: Bool { get set }
 
 - [Handling row selection in a table view](../handling-row-selection-in-a-table-view.md)
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). If you set it to [`true`](../../Swift/true.md), check marks appear next to selected rows in editing mode. In addition, [`UITableView`](../uitableview.md) doesn’t query for editing styles when it goes into editing mode. If you access [`indexPathsForSelectedRows`](./indexpathsforselectedrows.md), you can get the index paths that identify the selected rows.
 

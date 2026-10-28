@@ -16,7 +16,7 @@ Converts an unsigned 32-bit little-endian value to theequivalent big-endian valu
 #define EndianU32_LtoB(value)
 ```
 
-#### Return Value
+## Return Value
 
 The equivalent big-endianvalue.
 

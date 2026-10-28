@@ -19,7 +19,7 @@ var blendingMode: NSVisualEffectView.BlendingMode { get set }
 @property NSVisualEffectBlendingMode blendingMode;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`NSVisualEffectView.BlendingMode.behindWindow`](./blendingmode-swift.enum/behindwindow.md) (the default), the visual effect view blurs the content behind the window. When the value is [`NSVisualEffectView.BlendingMode.withinWindow`](./blendingmode-swift.enum/withinwindow.md), it blurs the content behind the view of the current window.
 

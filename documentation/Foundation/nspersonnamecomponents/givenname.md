@@ -25,7 +25,7 @@ var givenName: String? { get set }
 @property (copy, nullable) NSString * givenName;
 ```
 
-#### Discussion
+## Discussion
 
 In some locales, this is also known as a “first name” or “forename.”
 

@@ -16,7 +16,7 @@ Tells your app that import completed with a given status.
 final func registerImportCompletion(with status: MigrationStatus) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this method in a unit test to evaluate how your app handles a post-migration launch. You can uses success or failure statuses to see the different messages presented to the person using the app.
 

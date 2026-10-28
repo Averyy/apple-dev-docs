@@ -19,7 +19,7 @@ A structure that represents a detected subject, face, torso or pet at a particul
 struct CNDetection
 ```
 
-#### Overview
+## Overview
 
 Specifies the type, distance bounds, and time of the detection. Detections obtained from the Cinematic script include a unique number that can tracks the detection over time.
 

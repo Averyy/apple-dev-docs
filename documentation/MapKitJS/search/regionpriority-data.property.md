@@ -16,11 +16,11 @@ get regionPriority(): RegionPriority;
 set regionPriority(value: RegionPriority);
 ```
 
-#### Discussion
+## Discussion
 
 For more information on region priorities, see [`RegionPriority`](./regionpriority-data.var.md).
 
-#### Discussion
+## Discussion
 
 Use this property to filter places that exist outside the bounds of a region that may have the same name.
 

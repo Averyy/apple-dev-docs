@@ -20,7 +20,7 @@ The participant device that sent the message.
 var source: Participant
 ```
 
-#### Discussion
+## Discussion
 
 Each device has a unique participant. Use this property to determine the origin of the message.
 

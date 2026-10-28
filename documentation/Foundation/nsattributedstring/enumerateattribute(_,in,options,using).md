@@ -25,7 +25,7 @@ func enumerateAttribute(_ attrName: NSAttributedString.Key, in enumerationRange:
 - (void) enumerateAttribute:(NSAttributedStringKey) attrName inRange:(NSRange) enumerationRange options:(NSAttributedStringEnumerationOptions) opts usingBlock:(void (^)(id value, NSRange range, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 If this method is called by an instance of [`NSMutableAttributedString`](../nsmutableattributedstring.md), mutation (deletion, addition, or change) is allowed only if the mutation is within the range provided to the block. After a mutation, the enumeration continues with the range immediately following the processed range, adjusting for any change in length caused by the mutation. For example, if `block` is called with a range starting at location `N`, and the block deletes all the characters in the provided range, the next call will also pass `N` as the location of the range.
 

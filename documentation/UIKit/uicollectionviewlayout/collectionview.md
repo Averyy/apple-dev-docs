@@ -23,7 +23,7 @@ var collectionView: UICollectionView? { get }
 @property (nonatomic, readonly, nullable) UICollectionView * collectionView;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view object sets the value of this property when a new layout object is assigned to it.
 

@@ -21,7 +21,7 @@ The scope of the changes to send.
 var scope: CKSyncEngine.SendChangesOptions.Scope { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When creating the next batch of changes to send to the server, consult this and only send changes within this scope.
 

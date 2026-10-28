@@ -24,7 +24,7 @@ var isSuspended: Bool { get }
 @property (nonatomic, readonly, getter=isSuspended) BOOL suspended;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value observable.
 

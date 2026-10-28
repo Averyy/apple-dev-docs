@@ -6,7 +6,7 @@
 
 The type of this movie atom.
 
-#### Overview
+## Overview
 
 This field must be set to `'moov'`.
 

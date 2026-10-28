@@ -23,7 +23,7 @@ protocol SACrashDetectionDelegate : NSObjectProtocol
 @protocol SACrashDetectionDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Upon app launch, immediately set the delegate so it receives Crash Detection events. If the app isn’t running, the system launches it in the background and then sends the event.
 

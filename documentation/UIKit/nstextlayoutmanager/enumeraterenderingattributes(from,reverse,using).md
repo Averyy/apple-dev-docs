@@ -23,7 +23,7 @@ func enumerateRenderingAttributes(from location: any NSTextLocation, reverse: Bo
 - (void) enumerateRenderingAttributesFromLocation:(id<NSTextLocation>) location reverse:(BOOL) reverse usingBlock:(BOOL (^)(NSTextLayoutManager *textLayoutManager, NSDictionary<NSString *,id> *attributes, NSTextRange *textRange)) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method only enumerates ranges with text that specify rendering attributes. Returning `false` from `block` breaks out of the enumeration.
 

@@ -23,7 +23,7 @@ var minSupportedExternalSyncFrameDuration: CMTime { get }
 @property (nonatomic, readonly) CMTime minSupportedExternalSyncFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property as the minimum allowable frame duration to pass to `AVCaptureDeviceInput/follow:externalSyncDevice:videoFrameDuration:delegate:` when you want to follow an external sync device. This property returns `kCMTimeInvalid` when the device’s’ current configuration does not support external sync device following.
 

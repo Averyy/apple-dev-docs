@@ -19,7 +19,7 @@ var style: NSTableViewRowAction.Style { get }
 @property (readonly) NSTableViewRowActionStyle style;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set at creation time and cannot be changed later.
 

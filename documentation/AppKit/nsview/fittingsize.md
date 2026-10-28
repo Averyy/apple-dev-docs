@@ -19,7 +19,7 @@ var fittingSize: NSSize { get }
 @property (readonly) NSSize fittingSize;
 ```
 
-#### Discussion
+## Discussion
 
 AppKit sets this property to the best size available for the view, considering all of the constraints it and its subviews hold and satisfying a preference to make the view as small as possible. The size values in this property are never negative.
 

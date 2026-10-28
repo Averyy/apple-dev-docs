@@ -17,7 +17,7 @@ As [`logitProcessor(parameters:)`](./logitprocessor%28parameters%29.md), additio
 func logitProcessor(parameters: GenerateParameters, model: any LanguageModel) -> LogitProcessor?
 ```
 
-#### Discussion
+## Discussion
 
 Suppression runs last so that no processor composed before it can reintroduce a masked id – for multimodal placeholder tokens, emitting one is never valid output.
 

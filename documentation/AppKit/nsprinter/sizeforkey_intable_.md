@@ -15,7 +15,7 @@ Returns the size data type associated with the specified key.
 - (NSSize) sizeForKey:(NSString *) key inTable:(NSString *) table;
 ```
 
-#### Return Value
+## Return Value
 
 The size value. Returns `NSZeroSize` if the key is not in the table or the receiver lacks a PPD file.
 

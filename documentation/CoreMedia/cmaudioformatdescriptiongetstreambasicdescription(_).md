@@ -25,7 +25,7 @@ func CMAudioFormatDescriptionGetStreamBasicDescription(_ desc: CMAudioFormatDesc
 extern const AudioStreamBasicDescription *CMAudioFormatDescriptionGetStreamBasicDescription(CMAudioFormatDescriptionRef desc);
 ```
 
-#### Discussion
+## Discussion
 
 This API is specific to audio format descriptions, and returns `NULL` if used with a non-audio format descriptions.
 

@@ -25,7 +25,7 @@ class SCNParticlePropertyController
 @interface SCNParticlePropertyController : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use particle property controllers to change the properties of individual particles in an [`SCNParticleSystem`](./scnparticlesystem.md) object over time, with Core Animation semantics. For example, by associating a keyframe animation with a particle system’s [`color`](./scnparticlesystem/particleproperty/color.md) property, you can create a flame effect with particles that change from blue to white to orange as they rise.
 

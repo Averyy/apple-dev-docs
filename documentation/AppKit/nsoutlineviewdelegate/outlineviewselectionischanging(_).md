@@ -20,7 +20,7 @@ optional func outlineViewSelectionIsChanging(_ notification: Notification)
 - (void) outlineViewSelectionIsChanging:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked as a result of posting an [`selectionIsChangingNotification`](../nsoutlineview/selectionischangingnotification.md).
 

@@ -20,7 +20,7 @@ Returns the spec at the given path, or `nil` if no spec is authored there.
 func spec(at path: USDLayer.Path) -> USDLayer.Spec?
 ```
 
-#### Return Value
+## Return Value
 
 The spec at `path`, or `nil` if none exists.
 

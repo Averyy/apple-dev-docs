@@ -14,7 +14,7 @@
 - (BOOL) setCredentialsUsingKerberosCache:(NSString *) inCacheName error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Unsupported method.
 

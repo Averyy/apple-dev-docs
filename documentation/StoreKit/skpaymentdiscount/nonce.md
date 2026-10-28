@@ -27,7 +27,7 @@ var nonce: UUID { get }
 @property (nonatomic, copy, readonly) NSUUID * nonce;
 ```
 
-#### Discussion
+## Discussion
 
 Your server generates a unique [`nonce`](./nonce.md) when it creates the [`signature`](./signature.md) string for the payment discount. The string representation of the [`nonce`](./nonce.md) must be lowercase.
 

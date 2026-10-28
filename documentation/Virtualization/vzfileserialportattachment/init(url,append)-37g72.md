@@ -19,7 +19,7 @@ init(url: URL, append shouldAppend: Bool) throws
 - (instancetype) initWithURL:(NSURL *) url append:(BOOL) shouldAppend error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A file-based serial port attachment on success, or `nil` if initialization failed.
 

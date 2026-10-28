@@ -29,7 +29,7 @@ class NSArray
 
 - [Implementing Handoff in Your App](./implementing-handoff-in-your-app.md)
 
-#### Overview
+## Overview
 
 You can use this type in Swift instead of an [`Array`](../Swift/array.md) constant in cases that require reference semantics.
 
@@ -37,7 +37,7 @@ You can use this type in Swift instead of an [`Array`](../Swift/array.md) consta
 
 `NSArray` is “toll-free bridged” with its Core Foundation counterpart, [`CFArray`](../CoreFoundation/cfarray.md). See [Toll-Free Bridging](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
-##### Creating NSArray Objects Using Array Literals
+### Creating NSArray Objects Using Array Literals
 
 In addition to the provided initializers, such as [`initWithObjects:`](./nsarray/initwithobjects_.md), you can create an `NSArray` object using an *array literal*.
 
@@ -66,7 +66,7 @@ You should not terminate the list of objects with `nil` when using this literal 
 
 In Swift, the `NSArray` class conforms to the `ArrayLiteralConvertible` protocol, which allows it to be initialized with array literals. For more information about object literals in Swift, see [Literal Expression](https://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/Expressions.html#//apple_ref/doc/uid/TP40014097-CH32-ID390) in [The Swift Programming Language (Swift 4.1)](https://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097).
 
-##### Accessing Values Using Subscripting
+### Accessing Values Using Subscripting
 
 In addition to the provided instance methods, such as [`object(at:)`](./nsarray/object%28at%29.md), you can access `NSArray` values by their indexes using *subscripting*.
 
@@ -82,14 +82,14 @@ let value = array[3]
 id value = array[3];
 ```
 
-##### Subclassing Notes
+### Subclassing Notes
 
 There is typically little reason to subclass `NSArray`. The class does well what it is designed to do—maintain an ordered collection of objects. But there are situations where a custom `NSArray` object might come in handy. Here are a few possibilities:
 
 - Changing how `NSArray` stores the elements of its collection. You might do this for performance reasons or for better compatibility with legacy code.
 - Acquiring more information about what is happening to the collection (for example, statistics gathering).
 
-###### Methods to Override
+#### Methods to Override
 
 Any subclass of `NSArray`    *must* override the primitive instance methods [`count`](./nsarray/count.md) and [`object(at:)`](./nsarray/object%28at%29.md). These methods must operate on the backing store that you provide for the elements of the collection. For this backing store you can use a static array, a standard `NSArray` object, or some other data type or mechanism. You may also choose to override, partially or fully, any other `NSArray` method for which you want to provide an alternative implementation.
 
@@ -97,7 +97,7 @@ You might want to implement an initializer for your subclass that is suited to t
 
 Remember that `NSArray` is the public interface for a class cluster and what this entails for your subclass. You must provide the storage for your subclass and implement the primitive methods that directly act on that storage.
 
-###### Alternatives to Subclassing
+#### Alternatives to Subclassing
 
 Before making a custom subclass of `NSArray`, investigate [`NSPointerArray`](./nspointerarray.md) and the corresponding Core Foundation type, [`CFArray`](../CoreFoundation/cfarray.md). Because `NSArray` and `CFArray` are “toll-free bridged,” you can substitute a `CFArray` object for a `NSArray` object in your code (with appropriate casting). Although they are corresponding types, `CFArray` and `NSArray` do not have identical interfaces or implementations, and you can sometimes do things with `CFArray` that you cannot easily do with `NSArray`. For example, `CFArray` provides a set of callbacks, some of which are for implementing custom retain-release behavior. If you specify `NULL` implementations for these callbacks, you can easily get a non-retaining array.
 

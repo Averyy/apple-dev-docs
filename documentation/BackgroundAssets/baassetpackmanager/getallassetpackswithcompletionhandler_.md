@@ -20,7 +20,7 @@ Gets the asset packs that are available to download.
 - (void) getAllAssetPacksWithCompletionHandler:(void (^)(NSSet<BAAssetPack *> *assetPacks, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method may attempt to get the latest asset-pack information from the server.
 

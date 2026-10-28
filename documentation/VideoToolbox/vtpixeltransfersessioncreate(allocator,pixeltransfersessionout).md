@@ -24,7 +24,7 @@ func VTPixelTransferSessionCreate(allocator: CFAllocator?, pixelTransferSessionO
 extern OSStatus VTPixelTransferSessionCreate(CFAllocatorRef allocator, VTPixelTransferSessionRef*pixelTransferSessionOut);
 ```
 
-#### Discussion
+## Discussion
 
 The function creates a session for transferring images between [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md) objects.
 

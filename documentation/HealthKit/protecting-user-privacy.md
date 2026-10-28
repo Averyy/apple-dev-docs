@@ -5,7 +5,7 @@
 
 Respect and safeguard your user’s privacy.
 
-#### Overview
+## Overview
 
 Because health data can be sensitive, HealthKit provides users with fine-grained control over the information that apps can share. The user must explicitly grant each app permission to read and write data to the HealthKit store. Users can grant or deny permission separately for each type of data.
 
@@ -13,11 +13,11 @@ For example, a user could let your app read step count data, but prevent it from
 
 > ❗ **Important**:  Apps must include usage descriptions, or it will crash when you request authorization to access HealthKit data. Include the [`NSHealthShareUsageDescription`](../BundleResources/information-property-list/nshealthshareusagedescription.md) key to read, and [`NSHealthUpdateUsageDescription`](../BundleResources/information-property-list/nshealthupdateusagedescription.md) key to write data to Healthkit. For projects created using Xcode 13 or later, set these keys in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set these keys in the apps `Info.plist` file. For more information, see [`Information Property List`](../BundleResources/information-property-list.md).
 
-##### Access encrypted data
+### Access encrypted data
 
 The user’s device stores all HealthKit data locally. For security, the device encrypts the HealthKit store when the user locks the device. As a result, your app may not be able to read data from the store when it runs in the background. However, your app can still write to the store, even when the phone is locked. HealthKit temporarily caches the data and saves it to the encrypted store as soon as the user unlocks the phone.
 
-##### Specify how your app uses the health data
+### Specify how your app uses the health data
 
 In addition, your app must not access the HealthKit APIs unless the use is for health or fitness purposes and this usage is clear in both your marketing text and your user interface. Specifically, the following guidelines apply to all HealthKit apps:
 
@@ -27,7 +27,7 @@ In addition, your app must not access the HealthKit APIs unless the use is for h
 - If the user consents, you may share their HealthKit data with a third party for medical research.
 - You must clearly disclose to the user how you and your app will use their HealthKit data.
 
-##### Provide a privacy policy
+### Provide a privacy policy
 
 You must also provide a privacy policy for any app that uses the HealthKit framework. You can find guidance on creating a privacy policy at the following sites:
 

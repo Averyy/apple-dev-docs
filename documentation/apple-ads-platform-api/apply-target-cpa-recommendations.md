@@ -9,15 +9,15 @@ Apply one or more target CPA recommendations.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Applying a target CPA recommendation applies the recommendation’s `recommendedTargetCPA` value and moves the recommendation to `APPLIED` state. You can override the suggested value by passing `appliedTargetCPA` in the request. The response is a history record with both the recommended and applied values, plus the performance context behind the recommendation.
 
-#### Payload Examples
+## Payload Examples
 
 This example applies a target CPA recommendation, overriding the suggested CPA with $5.00. The response confirms the recommendation is now `APPLIED`.
 
-##### Request
+### Request
 
 ```http
 POST /v1/recommendations/target-cpas/apply
@@ -35,7 +35,7 @@ POST /v1/recommendations/target-cpas/apply
 ]
 ```
 
-##### Response
+### Response
 
 ```json
 {

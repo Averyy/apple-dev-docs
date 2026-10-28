@@ -21,7 +21,7 @@ Generates a default mirror for all ancestor classes.
 case generated
 ```
 
-#### Discussion
+## Discussion
 
 This case is the default when initializing a `Mirror` instance.
 

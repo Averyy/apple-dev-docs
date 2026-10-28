@@ -19,7 +19,7 @@ A Boolean value that indicates whether you use Apple’s service to host your as
 - **Name**: `BAUsesAppleHosting`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Use this key if you set the [`BAHasManagedAssetPacks`](./bahasmanagedassetpacks.md) key to  `YES`. Then, if you set this key to `YES`, use the StoreKit `StoreDownloaderExtension` protocol in your extension; otherwise, use the Background Assets `ManagedDownloaderExtension` protocol.
 

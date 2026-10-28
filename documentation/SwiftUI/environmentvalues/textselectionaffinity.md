@@ -21,7 +21,7 @@ A representation of the direction or association of a selection or cursor relati
 var textSelectionAffinity: TextSelectionAffinity { get set }
 ```
 
-#### Discussion
+## Discussion
 
 You can configure the selection affinity on a given hierarchy by using the [`textSelectionAffinity(_:)`](../view/textselectionaffinity%28_%29.md) modifier.
 

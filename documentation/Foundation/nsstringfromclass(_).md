@@ -25,7 +25,7 @@ func NSStringFromClass(_ aClass: AnyClass) -> String
 extern NSString *NSStringFromClass(Class aClass);
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the name of `aClass`. If `aClass` is `nil`, returns `nil`.
 

@@ -19,7 +19,7 @@ var windows: [NSWindow] { get }
 @property (copy, readonly) NSArray<NSWindow *> * windows;
 ```
 
-#### Discussion
+## Discussion
 
 The order of this array corresponds to the visual order of the tabs in this tab group, arranged from the leading edge of the tab bar to the trailing edge. You can monitor this property for changes using key-value observing.
 

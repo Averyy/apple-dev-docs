@@ -24,7 +24,7 @@ func reductionOr(with tensor: MPSGraphTensor, axis: Int, name: String?) -> MPSGr
 - (MPSGraphTensor *) reductionOrWithTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

@@ -21,7 +21,7 @@ A format that displays a 32-bit integer as a date.
 case secondsSince1970
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to format the interpolated value as a date and time, such as `2007-01-09 09:41:00`. The formatter considers the value you provide as a duration, in seconds, and adds it to the UNIX epoch to calculate the date it displays. The UNIX epoch is a method of describing a specific point in time using the elapsed number of seconds since 00:00:00 UTC January 1, 1970.
 

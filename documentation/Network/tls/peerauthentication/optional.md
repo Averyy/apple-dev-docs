@@ -21,7 +21,7 @@ Requests the peer certificate, but if none is provided, proceed with the connect
 case optional
 ```
 
-#### Discussion
+## Discussion
 
 This is for servers. Clients will ignore this option.
 

@@ -21,7 +21,7 @@ Performs a 32-element FFT on interleaved-complex data.
 void vDSP_FFT32_copv(float *__Output, const float *__Input, FFTDirection __Direction);
 ```
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**:  To learn how the vDSP library scales and arranges the FFT output, see [Understanding data packing for Fourier transforms](./understanding-data-packing-for-fourier-transforms.md).
 

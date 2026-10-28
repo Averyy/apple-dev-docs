@@ -20,7 +20,7 @@ Creates a [`NSUnderlineStyle`](../nsunderlinestyle.md) from `Text.LineStyle`.
 init(_ lineStyle: Text.LineStyle)
 ```
 
-#### Return Value
+## Return Value
 
 A new [`NSUnderlineStyle`](../nsunderlinestyle.md).
 

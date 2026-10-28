@@ -25,7 +25,7 @@ func SCNMatrix4IsIdentity(_ m: SCNMatrix4) -> Bool
 extern bool SCNMatrix4IsIdentity(SCNMatrix4 m);
 ```
 
-#### Return Value
+## Return Value
 
 True if the elements on the matrix’s diagonal are `1.0` and all other elements are `0.0`.
 

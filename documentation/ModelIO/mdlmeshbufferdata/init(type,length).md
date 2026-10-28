@@ -24,11 +24,11 @@ init(type: MDLMeshBufferType, length: Int)
 - (instancetype) initWithType:(MDLMeshBufferType) type length:(NSUInteger) length;
 ```
 
-#### Return Value
+## Return Value
 
 A new memory buffer for mesh data.
 
-#### Discussion
+## Discussion
 
 All bytes in the newly created buffer are zero.
 

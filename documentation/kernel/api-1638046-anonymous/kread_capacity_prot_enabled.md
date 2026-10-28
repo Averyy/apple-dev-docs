@@ -13,7 +13,7 @@
 kREAD_CAPACITY_PROT_Enabled = 0x01
 ```
 
-#### Discussion
+## Discussion
 
 Protection Information enabled.
 

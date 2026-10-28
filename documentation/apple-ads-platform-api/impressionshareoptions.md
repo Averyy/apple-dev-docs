@@ -15,11 +15,11 @@ Report options for impression share queries.
 object ImpressionShareOptions
 ```
 
-#### Discussion
+## Discussion
 
 The `ImpressionShareOptions` object controls how a query aggregates impression share data. Set `impressionShareReportType` in the `options` field of an [`ImpressionShareQueryRequest`](./impressionsharequeryrequest.md) to choose between first-slot-only or all-slots data.
 
-##### Example
+### Example
 
 ```json
 {

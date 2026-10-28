@@ -21,7 +21,7 @@ An image-analysis request that finds projected rectangular regions in an image.
 struct DetectRectanglesRequest
 ```
 
-#### Overview
+## Overview
 
 A rectangle-detection request locates regions of an image with a rectangular shape, like credit cards, business cards, documents, and signs. The request returns its observations in the form of [RectangleObservation](./rectangleobservation.md) objects, which contain normalized coordinates of bounding boxes containing a rectangle.
 

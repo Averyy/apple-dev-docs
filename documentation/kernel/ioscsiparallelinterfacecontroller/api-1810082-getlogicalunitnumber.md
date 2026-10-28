@@ -12,11 +12,11 @@ SCSILogicalUnitNumber GetLogicalUnitNumber (
  SCSIParallelTaskIdentifierparallelTask );
 ```
 
-#### Return Value
+## Return Value
 
 returns a valid 64-bit logical unit number.
 
-#### Overview
+## Overview
 
 Method to get the logical unit number associated with a request.
 

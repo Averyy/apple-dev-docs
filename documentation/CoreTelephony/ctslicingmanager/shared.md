@@ -17,7 +17,7 @@ A shared singleton instance for accessing network slicing functionality.
 static let shared: CTSlicingManager
 ```
 
-#### Discussion
+## Discussion
 
 Use this shared instance to access all network slicing capabilities. The `CTSlicingManager` uses a singleton pattern to ensure consistent state management across your app.
 

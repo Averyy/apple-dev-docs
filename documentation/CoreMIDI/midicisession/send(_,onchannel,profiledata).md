@@ -23,7 +23,7 @@ func send(_ profile: MIDICIProfile, onChannel channel: MIDIChannelNumber, profil
 - (BOOL) sendProfile:(MIDICIProfile *) profile onChannel:(MIDIChannelNumber) channel profileData:(NSData *) profileSpecificData;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the data was successfully sent, otherwise [`false`](../../Swift/false.md).
 

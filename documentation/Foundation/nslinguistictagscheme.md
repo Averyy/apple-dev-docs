@@ -25,7 +25,7 @@ struct NSLinguisticTagScheme
 typedef NSString * NSLinguisticTagScheme;
 ```
 
-#### Discussion
+## Discussion
 
 When initializing a linguistic tagger with [`init(tagSchemes:options:)`](./nslinguistictagger/init%28tagschemes,options%29.md), you specify one or more tag schemes that correspond to the kind of information you’re interested in for a selection of natural language text. To ensure optimal performance, avoid specifying tag schemes that you won’t use.
 

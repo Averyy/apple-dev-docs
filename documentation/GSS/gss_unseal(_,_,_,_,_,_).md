@@ -24,7 +24,7 @@ func gss_unseal(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ context_handl
 OM_uint32 gss_unseal(OM_uint32 *minor_status, gss_ctx_id_t context_handle, gss_buffer_t input_message_buffer, gss_buffer_t output_message_buffer, int *conf_state, int *qop_state);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 

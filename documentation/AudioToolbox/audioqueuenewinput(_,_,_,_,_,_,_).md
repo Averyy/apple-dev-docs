@@ -24,7 +24,7 @@ func AudioQueueNewInput(_ inFormat: UnsafePointer<AudioStreamBasicDescription>, 
 extern OSStatus AudioQueueNewInput(const AudioStreamBasicDescription *inFormat, AudioQueueInputCallback inCallbackProc, void *inUserData, CFRunLoopRef inCallbackRunLoop, CFStringRef inCallbackRunLoopMode, UInt32 inFlags, AudioQueueRef*outAQ);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 

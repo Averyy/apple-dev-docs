@@ -25,7 +25,7 @@ func multiplying(byPowerOf10 power: Int16) -> NSDecimalNumber
 - (NSDecimalNumber *) decimalNumberByMultiplyingByPowerOf10:(short) power;
 ```
 
-#### Discussion
+## Discussion
 
 This method uses the default behavior when handling calculation errors and when rounding.
 

@@ -21,7 +21,7 @@ A Boolean value indicating whether this decimal is subnormal.
 var isSubnormal: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 A *subnormal* value is a nonzero number that has a lesser magnitude than the smallest normal number. Subnormal values do not use the full precision available to values of a type.
 

@@ -15,11 +15,11 @@ Enables or disables multicast support for your service.
 virtual kern_return_t SetAllMulticastModeEnable(bool enable);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 
-#### Discussion
+## Discussion
 
 Override this method and use it to enable multicast mode on your device.
 

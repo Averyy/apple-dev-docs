@@ -5,7 +5,7 @@
 
 The keys that you include in your global vocabulary file to show how users engage your app from Siri.
 
-#### Overview
+## Overview
 
 The `IntentPhrases` key contains sample phrases that a user might speak to initiate the handling of one of your intents. The value of this key is an array of dictionaries, each of which defines one of the sample phrases to speak. Each dictionary contains the following keys:
 

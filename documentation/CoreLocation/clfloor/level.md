@@ -25,7 +25,7 @@ var level: Int { get }
 @property (nonatomic, readonly) NSInteger level;
 ```
 
-#### Discussion
+## Discussion
 
 Level values represent logical levels above or below ground level and are not intended to correspond to any numbering scheme in use by the building itself. The ground floor of a building is always represented by the value `0`. Floors above the ground floor are represented by positive integers, so a value of `1` represents the floor above ground level, a value of `2` represents two floors above ground level, and so on. Floors below the ground floor are represented by corresponding negative integers, with a value of -1 representing the floor immediately below ground level and so on.
 

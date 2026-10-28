@@ -19,7 +19,7 @@ func selectAll(_ sender: Any?)
 - (void) selectAll:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the table allows multiple selection, this action method selects all rows or all columns, according to whether rows or columns were most recently selected. If nothing has been recently selected, this method selects all rows. If this table doesn’t allow multiple selection, this method does nothing.
 

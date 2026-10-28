@@ -21,7 +21,7 @@ Defines secondary text scale
 static let secondary: Text.Scale
 ```
 
-#### Discussion
+## Discussion
 
 When specified a uses a secondary text scale.
 

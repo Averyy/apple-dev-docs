@@ -20,7 +20,7 @@ var suspended: Bool { get set }
 @property BOOL suspended;
 ```
 
-#### Discussion
+## Discussion
 
 See [`DistributedNotificationCenter.SuspensionBehavior`](./suspensionbehavior.md) for details on how the receiver delivers notifications to their observers when normal notification delivery is suspended.
 

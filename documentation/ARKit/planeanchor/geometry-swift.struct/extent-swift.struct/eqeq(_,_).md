@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two plane extents are equal.
 static func == (lhs: PlaneAnchor.Geometry.Extent, rhs: PlaneAnchor.Geometry.Extent) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two plane extents are equal; otherwise, `false`.
 

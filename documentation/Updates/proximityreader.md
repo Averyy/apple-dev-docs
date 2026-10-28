@@ -5,11 +5,11 @@
 
 Learn about important changes to ProximityReader.
 
-#### Overview
+## Overview
 
 Browse notable changes in [ProximityReader](../ProximityReader/ProximityReader.md).
 
-#### June 2024
+## June 2024
 
 - Display instructions to merchants on how to use Tap to Pay on iPhone using [`ProximityReaderDiscovery`](../ProximityReader/proximityreaderdiscovery.md).
 

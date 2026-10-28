@@ -24,7 +24,7 @@ var skinType: HKFitzpatrickSkinType { get }
 @property (readonly) HKFitzpatrickSkinType skinType;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible skin types, see [`HKFitzpatrickSkinType`](../hkfitzpatrickskintype.md).
 

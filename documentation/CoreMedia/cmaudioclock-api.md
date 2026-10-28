@@ -5,7 +5,7 @@
 
 A specialized reference clock that synchronizes with audio sources.
 
-#### Overview
+## Overview
 
 An audio clock is a specialized [`CMClock`](./cmclock.md) that you use to synchronize with audio sources. For details on clocks and synchronization, see [`CMClock`](./cmclock.md).
 

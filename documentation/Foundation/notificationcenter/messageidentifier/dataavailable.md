@@ -23,7 +23,7 @@ static var dataAvailable: NotificationCenter.BaseMessageIdentifier<FileHandle.Da
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<FileHandle.DataAvailableMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`FileHandle.DataAvailableMessage`](../../filehandle/dataavailablemessage.md).
 

@@ -26,7 +26,7 @@ func handleTimerEvent()
 
 - [Maintaining a Reliable Network Connection](../maintaining-a-reliable-network-connection.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to have your extension check its connection to the server, and trigger a reconnect if necessary.
 

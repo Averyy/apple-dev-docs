@@ -20,7 +20,7 @@ var kAuthorizationComment: String { get }
 #define kAuthorizationComment
 ```
 
-#### Discussion
+## Discussion
 
 The comments appear in the policy database for the administrator to understand what the rule is for. Rule comments are not the same as localized descriptions which are presented to the user.
 

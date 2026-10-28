@@ -21,7 +21,7 @@ An option to format Boolean values as yes or no strings.
 case answer
 ```
 
-#### Discussion
+## Discussion
 
 This option formats a Boolean true value as `YES` and a Boolean false value as `NO`.
 

@@ -19,7 +19,7 @@ An unspecialized source model asset.
 struct AIModelAsset
 ```
 
-#### Overview
+## Overview
 
 Use a model asset to inspect a model’s structure and metadata without specializing it for a specific device. This lets you query model information without performing specialization, which is an expensive operation. You create a model asset by providing the URL of an `.aimodel` bundle on disk:
 

@@ -24,7 +24,7 @@ var kAudioFileGlobalInfo_MIMETypesForType: AudioFilePropertyID { get }
 kAudioFileGlobalInfo_MIMETypesForType
 ```
 
-#### Discussion
+## Discussion
 
 If you access this property, your app is responsible for releasing the [`CFArray`](../CoreFoundation/cfarray.md) object.
 

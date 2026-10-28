@@ -26,7 +26,7 @@ optional func resolveGuestProvidedSpecialRequestText(for intent: INBookRestauran
 - (void) resolveGuestProvidedSpecialRequestTextForBookRestaurantReservation:(INBookRestaurantReservationIntent *) intent withCompletion:(void (^)(INStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve any special requests for the reservation. For example, the guest requires a booster seat for a child or one of the guests has a food allergy.
 

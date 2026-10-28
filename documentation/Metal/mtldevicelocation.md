@@ -21,7 +21,7 @@ enum MTLDeviceLocation
 enum MTLDeviceLocation : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Check the location of a GPU by checking the [`location`](./mtldevice/location.md) property of its [`MTLDevice`](./mtldevice.md) instance.
 

@@ -40,7 +40,7 @@ extern CFArrayRefABGroupCopyArrayOfAllMembers(ABRecordRef group);
 extern CFArrayRefABGroupCopyArrayOfAllMembers(ABGroupRef group);
 ```
 
-#### Return Value
+## Return Value
 
 An array of ABPersonobjects representing the people in `group`.If this group doesn’t contain any people, this function returnsan empty array. You are responsible for releasing this object.
 

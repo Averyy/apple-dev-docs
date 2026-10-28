@@ -32,7 +32,7 @@ var attachments: [UNNotificationAttachment] { get set }
 @property (atomic, copy, readwrite) NSArray<UNNotificationAttachment *> * attachments;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to include images or movies, or to include playable audio files, with the contents of an alert. The system displays the attachments alongside the title and body of your alert. You can also customize the presentation of attachments using a notification content app extension.
 

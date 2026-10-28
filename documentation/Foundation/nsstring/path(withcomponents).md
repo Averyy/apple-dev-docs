@@ -25,11 +25,11 @@ class func path(withComponents components: [String]) -> String
 + (NSString *) pathWithComponents:(NSArray<NSString *> *) components;
 ```
 
-#### Return Value
+## Return Value
 
 A string built from the strings in `components` by concatenating them (in the order they appear in the array) with a path separator between each pair.
 
-#### Discussion
+## Discussion
 
 This method doesn’t clean up the path created; use [`standardizingPath`](./standardizingpath.md) to resolve empty components, references to the parent directory, and so on.
 

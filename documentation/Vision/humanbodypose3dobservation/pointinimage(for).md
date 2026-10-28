@@ -20,7 +20,7 @@ Returns a 2D point for the joint name you specify, relative to the input image.
 func pointInImage(for jointName: HumanBodyPose3DObservation.JointName) -> NormalizedPoint
 ```
 
-#### Return Value
+## Return Value
 
 A projection of the 3D position onto the original 2D image in normalized, lower left origin coordinates.
 

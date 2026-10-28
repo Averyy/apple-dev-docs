@@ -18,7 +18,7 @@ An action for the subscription offers entry point.
 var action: MusicSubscriptionOffer.Action
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`subscribe`](../action/subscribe.md).
 

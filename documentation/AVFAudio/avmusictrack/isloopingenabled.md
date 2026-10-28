@@ -24,7 +24,7 @@ var isLoopingEnabled: Bool { get set }
 @property (nonatomic, getter=isLoopingEnabled) BOOL loopingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t set [`loopRange`](./looprange.md), the framework loops the full track.
 

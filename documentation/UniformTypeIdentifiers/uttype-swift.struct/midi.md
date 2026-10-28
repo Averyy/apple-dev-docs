@@ -21,7 +21,7 @@ A type that represents data in MIDI audio format.
 static var midi: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.midi-audio`.
 

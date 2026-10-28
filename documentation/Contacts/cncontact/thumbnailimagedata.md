@@ -32,7 +32,7 @@ var thumbnailImageData: Data? { get }
 @property (atomic, copy, readonly, nullable) NSData * thumbnailImageData;
 ```
 
-#### Discussion
+## Discussion
 
 The [`thumbnailImageData`](./thumbnailimagedata.md) property is derived from the [`imageData`](./imagedata.md) property, including cropping information from vCards or edits from contact viewing. It is recommended that you fetch this property only when you need to access its value, such as when you need to display the contact’s profile thumbnail picture.
 

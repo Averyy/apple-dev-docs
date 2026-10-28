@@ -23,7 +23,7 @@ let kCMFormatDescriptionCameraCalibration_LensFrameAdjustmentsPolynomialY: CFStr
 extern CFStringRef const kCMFormatDescriptionCameraCalibration_LensFrameAdjustmentsPolynomialY;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies a three element polynomial for mapping y axis UV parameters with an adjustment using the equation `y' = polynomialY[0] + polynomialY[1]*y + polynomialY[2]*y^3`.
 

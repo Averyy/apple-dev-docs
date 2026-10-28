@@ -20,11 +20,11 @@ func isEqual(_ rightValue: any NSCopying & NSSecureCoding & NSObjectProtocol) ->
 - (BOOL) isEqual:(NSObject<NSCopying,NSSecureCoding> *) rightValue;
 ```
 
-#### Return Value
+## Return Value
 
 True if the two values are equal, false otherwise.
 
-#### Discussion
+## Discussion
 
 The host application will sometimes need to know whether two custom parameters are equivalent. When it needs to know that, it will call this method on one custom parameter object, and pass it the other as `rightValue`.
 

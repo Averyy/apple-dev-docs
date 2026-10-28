@@ -26,7 +26,7 @@ let kIOSurfaceIsGlobal: CFString
 extern CFStringRef const kIOSurfaceIsGlobal;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

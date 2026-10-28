@@ -18,7 +18,7 @@ Creates a document creation source with the given identifier.
 init(id: String)
 ```
 
-#### Discussion
+## Discussion
 
 Use different sources to distinguish between document creation flows in your app.
 

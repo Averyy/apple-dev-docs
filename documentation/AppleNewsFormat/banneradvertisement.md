@@ -21,7 +21,7 @@ object BannerAdvertisement
 
 - [Apple News Format Release Notes](../AppleNews/apple-news-format-release-notes.md)
 
-#### Discussion
+## Discussion
 
 `The BannerAdvertisement` object spans the full width of your display. A range of different banner heights are available depending on the availability of advertising content through Advertising Platforms.(An advertisement can appear inside a `Container` component only if the container is full-width.)
 
@@ -36,7 +36,7 @@ Keep these points in mind when including a banner advertisement in your article:
 
 For information about medium, fixed-sized advertisements, see [`MediumRectangleAdvertisement`](./mediumrectangleadvertisement.md).
 
-##### Example
+### Example
 
 ```json
 {

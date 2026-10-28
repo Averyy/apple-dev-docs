@@ -22,7 +22,7 @@ func createCredentialAssertionRequest(challenge: Data) -> ASAuthorizationSecurit
 - (ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest *) createCredentialAssertionRequestWithChallenge:(NSData *) challenge;
 ```
 
-#### Return Value
+## Return Value
 
 A security key credential registration request.
 

@@ -23,7 +23,7 @@ func removeItem(_ item: any UIDynamicItem)
 - (void) removeItem:(id<UIDynamicItem>) item;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

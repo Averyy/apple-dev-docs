@@ -24,11 +24,11 @@ class func textureCubeDescriptor(pixelFormat: MTLPixelFormat, size: Int, mipmapp
 + (MTLTextureDescriptor *) textureCubeDescriptorWithPixelFormat:(MTLPixelFormat) pixelFormat size:(NSUInteger) size mipmapped:(BOOL) mipmapped;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a texture descriptor object for a cube texture.
 
-#### Discussion
+## Discussion
 
 For a cube texture, the property values describe one slice, which is any one of its six sides. Each slice is a square.
 

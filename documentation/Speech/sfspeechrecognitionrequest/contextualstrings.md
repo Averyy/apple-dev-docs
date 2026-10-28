@@ -23,7 +23,7 @@ var contextualStrings: [String] { get set }
 @property (nonatomic, copy) NSArray<NSString *> * contextualStrings;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify short custom phrases that are unique to your app. You might include phrases with the names of characters, products, or places that are specific to your app. You might also include domain-specific terminology or unusual or made-up words. Assigning custom phrases to this property improves the likelihood of those phrases being recognized.
 

@@ -19,7 +19,7 @@ class NSGlyphInfo
 @interface NSGlyphInfo : NSObject
 ```
 
-#### Overview
+## Overview
 
 Glyphs are the graphic representations of characters, stored in a font, that the text system draws on a display or printed page. Before text can be laid out, the layout manager (<[`NSLayoutManager`](./nslayoutmanager.md)) generates a stream of glyphs, using the character and font information specified by the attributed string and contained in the font file. [`NSGlyphInfo`](./nsglyphinfo.md) represents a glyph attribute value ([`NSGlyphInfoAttributeName`](./nsglyphinfoattributename.md)) in an attributed string ([`NSAttributedString`](../Foundation/nsattributedstring.md)) and provides a means to override the standard glyph generation process and substitute a specified glyph over the attribute’s range.
 

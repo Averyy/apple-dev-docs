@@ -24,7 +24,7 @@ func MACaptionAppearanceCopyBackgroundColor(_ domain: MACaptionAppearanceDomain,
 extern CGColorRefMACaptionAppearanceCopyBackgroundColor(MACaptionAppearanceDomain domain, MACaptionAppearanceBehavior *behavior);
 ```
 
-#### Return Value
+## Return Value
 
 The preferred color shown behind the text and above the window color.
 

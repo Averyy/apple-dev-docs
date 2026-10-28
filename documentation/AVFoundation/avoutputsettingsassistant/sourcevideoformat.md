@@ -24,7 +24,7 @@ var sourceVideoFormat: CMVideoFormatDescription? { get set }
 @property (nonatomic, retain, nullable) CMVideoFormatDescriptionRef sourceVideoFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which means the assistant doesn’t know the video format. Setting a value for this property helps the assistant generate more complete video settings. After setting a value, requery the [`videoSettings`](./videosettings.md) property to get the latest values.
 

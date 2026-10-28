@@ -21,7 +21,7 @@ Creates a mutable buffer by copying another PCM buffer’s audio data.
 convenience init(copying source: AVAudioPCMBuffer)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer allocates a new mutable buffer and copies all audio data channel by channel.
 

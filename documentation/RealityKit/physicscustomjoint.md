@@ -20,7 +20,7 @@ A joint with six degrees of freedom that can be individually specified.
 struct PhysicsCustomJoint
 ```
 
-#### Overview
+## Overview
 
 A custom joint allows you to choose the restraints of all 6 degrees of freedom. You can set a [`PhysicsCustomJoint.MotionLimit`](./physicscustomjoint/motionlimit.md) for each degrees’ motion.
 

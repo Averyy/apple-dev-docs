@@ -21,7 +21,7 @@ Retrieves a Metal texture that your app’s shaders can write to when they run o
 func replace(using commandBuffer: any MTLCommandBuffer) -> any MTLTexture
 ```
 
-#### Discussion
+## Discussion
 
 The buffer’s contents are in an uninitialized state.
 

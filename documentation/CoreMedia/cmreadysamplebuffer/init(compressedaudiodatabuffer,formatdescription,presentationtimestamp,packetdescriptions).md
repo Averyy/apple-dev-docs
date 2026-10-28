@@ -23,7 +23,7 @@ init(compressedAudioDataBuffer content: Content, formatDescription: CMAudioForma
 
 Available when `Content` is `CMReadOnlyDataBlockBuffer`.
 
-#### Discussion
+## Discussion
 
 Use this init when the audio format where the packet size isn’t constant, such as variable bit rate or when the channels have unequal sizes. The `packetDescriptions` are used along with `presentationTimeStamp` to calculate the sample count, sample sizes & sample timings.
 

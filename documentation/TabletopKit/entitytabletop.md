@@ -15,7 +15,7 @@ A protocol for the table surface in your game when you render it using RealityKi
 protocol EntityTabletop : Tabletop
 ```
 
-#### Overview
+## Overview
 
 To create a [`TableSetup`](./tablesetup.md) object that configures your game table, pass an object that conforms to either the [`Tabletop`](./tabletop.md) or `EntityTabletop` protocol to the `TableSetup` initializer. If you render your table surface using RealityKit, conform to the `EntityTabletop` protocol. Implement your `EntityTabletop` structure to set the protocol properties, such as the `shape`, `entity`, and `id` properties.
 

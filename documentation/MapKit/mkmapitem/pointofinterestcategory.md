@@ -25,7 +25,7 @@ var pointOfInterestCategory: MKPointOfInterestCategory? { get set }
 @property (nonatomic, copy, nullable) MKPointOfInterestCategory pointOfInterestCategory;
 ```
 
-#### Discussion
+## Discussion
 
 If the map item doesn’t correspond to a point of interest, or if the point of interest isn’t one of the known values in [`MKPointOfInterestCategory`](../mkpointofinterestcategory.md), [`pointOfInterestCategory`](./pointofinterestcategory.md) is `nil`.
 

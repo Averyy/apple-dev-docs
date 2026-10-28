@@ -19,7 +19,7 @@ var matchesOnlyOnBestFittingAxis: Bool { get set }
 @property BOOL matchesOnlyOnBestFittingAxis;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the image is drawn only on the best fitting axis; otherwise, [`false`](../../Swift/false.md). This property defaults to [`false`](../../Swift/false.md).
 

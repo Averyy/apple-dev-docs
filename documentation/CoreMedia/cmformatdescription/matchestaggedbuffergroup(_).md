@@ -21,7 +21,7 @@ Whether the format description matches a set of tagged buffers.
 func matchesTaggedBufferGroup(_ taggedBuffers: [CMTaggedBuffer]) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the description contains a tag collection matching the tags of the buffer group, `false` otherwise.
 

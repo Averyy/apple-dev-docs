@@ -21,7 +21,7 @@ var totalPauses: Int { get }
 @property (readonly) NSInteger totalPauses;
 ```
 
-#### Discussion
+## Discussion
 
 The framework records a pause when the user stops entering text for more than 5 seconds.
 

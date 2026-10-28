@@ -40,11 +40,11 @@ class func incompleteAchievementImage() -> NSImage
 + (NSImage *) incompleteAchievementImage;
 ```
 
-#### Return Value
+## Return Value
 
 A common image that represents an incomplete achievement.
 
-#### Discussion
+## Discussion
 
 In macOS versions earlier than macOS 11, this class method returns an [`NSImage`](../../AppKit/nsimage.md) object but otherwise works the same as in iOS, Mac Catalyst, and tvOS.
 

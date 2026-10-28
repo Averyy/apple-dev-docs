@@ -21,7 +21,7 @@ func vSswap(_ n: Int32, _ x: UnsafeMutablePointer<vFloat>, _ y: UnsafeMutablePoi
 extern void vSswap(int32_t n, vFloat *x, vFloat *y);
 ```
 
-#### Discussion
+## Discussion
 
 Each element of vector `x` is replaced by the corresponding element of `y`, and vice versa.
 

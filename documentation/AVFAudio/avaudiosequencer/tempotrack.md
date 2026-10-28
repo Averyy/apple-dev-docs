@@ -24,7 +24,7 @@ var tempoTrack: AVMusicTrack { get }
 @property (nonatomic, readonly) AVMusicTrack * tempoTrack;
 ```
 
-#### Discussion
+## Discussion
 
 Each sequence has a single tempo track. The framework places all tempo events into this track along with other appropriate events, such as the time signature from a MIDI file.
 

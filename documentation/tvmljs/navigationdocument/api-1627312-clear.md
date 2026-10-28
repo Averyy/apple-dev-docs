@@ -15,7 +15,7 @@ Removes all documents currently on the stack.
 void clear();
 ```
 
-#### Discussion
+## Discussion
 
 No animations are performed when this function is called. All documents currently on the stack are immediately removed.
 

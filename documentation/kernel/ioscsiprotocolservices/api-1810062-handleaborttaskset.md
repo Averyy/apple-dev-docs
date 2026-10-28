@@ -12,11 +12,11 @@ virtual SCSIServiceResponse HandleAbortTaskSet (
  UInt8theLogicalUnit );
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSIServiceResponse.
 
-#### Overview
+## Overview
 
 HandleAbortTaskSet instructs the Protocol Services driver to abort the task set.
 

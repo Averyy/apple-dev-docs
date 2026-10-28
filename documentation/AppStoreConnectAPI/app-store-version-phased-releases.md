@@ -5,7 +5,7 @@
 
 Manage phased releases of updates to your app.
 
-#### Overview
+## Overview
 
 `appStoreVersionPhasedReleases` handles your process of releasing app updates to customers in stages. Use this resource to set up your process for an app update. This resource is not available for the first version of an app, only for subsequent releases.
 

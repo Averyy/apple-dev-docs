@@ -16,7 +16,7 @@ Returns a new extension provider with the specified source and dispatch queue.
 + (instancetype) providerWithSource:(id<CMIOExtensionProviderSource>) source clientQueue:(dispatch_queue_t) clientQueue;
 ```
 
-#### Return Value
+## Return Value
 
 A new extension provider.
 

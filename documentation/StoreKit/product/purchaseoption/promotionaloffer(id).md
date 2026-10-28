@@ -20,7 +20,7 @@ Sets a promotional offer for the transaction in the testing environment.
 static func promotionalOffer(id identifier: String) -> Product.PurchaseOption
 ```
 
-#### Discussion
+## Discussion
 
 Use this purchase option when you test your app in Xcode using [StoreKit Test](../../../StoreKitTest/StoreKitTest.md) and call [`buyProduct(identifier:options:)`](../../../StoreKitTest/sktestsession/buyproduct%28identifier,options%29.md). This method makes it possible to test promotional offers without supplying a signature.
 

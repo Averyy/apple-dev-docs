@@ -20,7 +20,7 @@ func dispatchRawAppleEvent(_ theAppleEvent: UnsafePointer<AppleEvent>, withRawRe
 - (OSErr) dispatchRawAppleEvent:(const AppleEvent *) theAppleEvent withRawReply:(AppleEvent *) theReply handlerRefCon:(SRefCon) handlerRefCon;
 ```
 
-#### Discussion
+## Discussion
 
 The `theReply` parameter always specifies a reply Apple event, never `nil`. However, the handler should not fill out the reply if the descriptor type for the reply event is `typeNull`, indicating the sender does not want a reply.
 

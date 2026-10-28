@@ -25,7 +25,7 @@ func NSHashInsert(_ table: NSHashTable<AnyObject>, _ pointer: UnsafeRawPointer?)
 extern void NSHashInsert(NSHashTable *table, const void *pointer);
 ```
 
-#### Discussion
+## Discussion
 
 Inserts `pointer`, which must not be `NULL`, into `table`. If `pointer` matches an item already in the table, the previous pointer is released using the `release` callback function that was specified when the table was created.
 

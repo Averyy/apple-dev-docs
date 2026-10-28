@@ -21,7 +21,7 @@ A mode that darkens background image samples to reflect the source image samples
 static var colorBurn: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 Source image sample values that specify white do not produce a change.
 

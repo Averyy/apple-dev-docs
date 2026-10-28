@@ -25,11 +25,11 @@ func beginInterval(_ name: StaticString, id: OSSignpostID = .exclusive) -> OSSig
 
 - [Recording Performance Data](../recording-performance-data.md)
 
-#### Return Value
+## Return Value
 
 The interval state that the signposter derives from the specified `id` parameter.
 
-#### Discussion
+## Discussion
 
 The signposter uses a signpost ID to pair the beginning and the end of a signposted interval, which is necessary because multiple intervals with the same configuration and scope can be in-flight simultaneously. If only one interval with a specific configuration can execute at any particular time, use [`exclusive`](../ossignpostid/exclusive.md) for the `id` parameter. Otherwise, use the [`makeSignpostID()`](./makesignpostid%28%29.md) and [`makeSignpostID(from:)`](./makesignpostid%28from%29.md) methods to generate a signpost identifier.
 

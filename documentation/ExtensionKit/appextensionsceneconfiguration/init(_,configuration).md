@@ -22,7 +22,7 @@ Creates a scene configuration object from a closure and extension configuration.
 @preconcurrency init<Content, Configuration>(_ content: @autoclosure @escaping @MainActor () -> Content, configuration: Configuration? = nil) where Content : AppExtensionScene, Configuration : AppExtensionConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 To provide a user interface, the extension’s `configuration` must be an [`AppExtensionSceneConfiguration`](../appextensionsceneconfiguration.md), which combines an [`AppExtensionScene`](../appextensionscene.md) with an optional non-UI [`AppExtensionConfiguration`](../../ExtensionFoundation/appextensionconfiguration.md). The `configuration` value you pass manages global interprocess communications with the host process, while the `content` value defines the extension’s user interface.
 

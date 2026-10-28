@@ -19,7 +19,7 @@ optional var pixelFormatsWithReducedResolutionDecodeSupport: [NSNumber] { get }
 @property (readonly) NSArray<NSNumber *> * pixelFormatsWithReducedResolutionDecodeSupport;
 ```
 
-#### Discussion
+## Discussion
 
 This array contains [`CMPixelFormatType`](../../CoreMedia/cmpixelformattype.md) values. The system queries this property on the extension when [Video Toolbox](../../VideoToolbox/VideoToolbox.md) queries the [`kVTDecompressionPropertyKey_PixelFormatsWithReducedResolutionSupport`](../../VideoToolbox/kvtdecompressionpropertykey_pixelformatswithreducedresolutionsupport.md) on the hosting [`VTDecompressionSession`](../../VideoToolbox/vtdecompressionsession.md).
 

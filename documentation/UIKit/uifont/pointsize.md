@@ -24,7 +24,7 @@ var pointSize: CGFloat { get }
 @property (nonatomic, readonly) CGFloat pointSize;
 ```
 
-#### Discussion
+## Discussion
 
 For an explanation of how this metric relates to a font’s other metrics, see [`UIFont`](../uifont.md).
 

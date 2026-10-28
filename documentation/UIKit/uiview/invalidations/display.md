@@ -20,7 +20,7 @@ A change that requires the system to redraw a view’s content.
 struct Display
 ```
 
-#### Overview
+## Overview
 
 Use [`display`](../../uiviewinvalidating/display.md) to create an instance of this type.
 

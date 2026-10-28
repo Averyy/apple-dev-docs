@@ -26,7 +26,7 @@ var previousServerChangeToken: CKServerChangeToken? { get set }
 @property (nonatomic, copy, nullable) CKServerChangeToken * previousServerChangeToken;
 ```
 
-#### Discussion
+## Discussion
 
 Each fetch request returns a unique token in addition to any changes. The token passes as a parameter to your [`fetchRecordChangesCompletionBlock`](./fetchrecordchangescompletionblock.md) handler. During a subsequent fetch request, providing the previous token causes the server to return only the changes that occur after the previous fetch request. Tokens are opaque data objects that you can write to disk safely and reuse later.
 

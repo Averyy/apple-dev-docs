@@ -22,7 +22,7 @@ case failure
 INSendRideFeedbackIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code for both transient and unrecoverable errors that prevented you from recording the feedback for the ride.
 

@@ -23,7 +23,7 @@ static var horizontalWhitespace: CharacterClass { get }
 
 Available when `Self` is `CharacterClass`.
 
-#### Discussion
+## Discussion
 
 This character class is equivalent to `\h` in regex syntax.
 

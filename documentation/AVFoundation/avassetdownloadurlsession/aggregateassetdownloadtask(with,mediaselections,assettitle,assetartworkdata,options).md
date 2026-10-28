@@ -25,11 +25,11 @@ func aggregateAssetDownloadTask(with URLAsset: AVURLAsset, mediaSelections: [AVM
 - (AVAggregateAssetDownloadTask *) aggregateAssetDownloadTaskWithURLAsset:(AVURLAsset *) URLAsset mediaSelections:(NSArray<AVMediaSelection *> *) mediaSelections assetTitle:(NSString *) title assetArtworkData:(NSData *) artworkData options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An aggregate asset download task.
 
-#### Discussion
+## Discussion
 
 This method may return `nil` if you call it on an invalidated session.
 

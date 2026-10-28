@@ -16,7 +16,7 @@ A key that ignores the system spatial-audio toggle in Control Center.
 - **Name**: `AVGameBypassSystemSpatialAudio` (Game Bypasses System Spatial Audio)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 In iOS 18 and tvOS 18 and later, the system automatically adds spatial audio to the output for games. To opt out of automatic spatial audio and support just your preferred spatial audio setup, add this key to your app’s `Info.plist`.
 

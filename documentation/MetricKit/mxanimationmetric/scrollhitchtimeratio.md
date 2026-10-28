@@ -25,7 +25,7 @@ var scrollHitchTimeRatio: Measurement<Unit> { get }
 @property (strong, readonly, nonnull) NSMeasurement<NSUnit *> * scrollHitchTimeRatio;
 ```
 
-#### Discussion
+## Discussion
 
 Hitches are user-perceivable animation issues, such as pauses or jumps that occur during scrolling.
 

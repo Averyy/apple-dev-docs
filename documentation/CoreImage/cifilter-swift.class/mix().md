@@ -24,11 +24,11 @@ class func mix() -> any CIFilter & CIMix
 + (CIFilter<CIMix> *) mixFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the mix filter to an image. The effect uses the amount property to interpolate between the input image and the background image, resulting in both images visible in the output image.
 

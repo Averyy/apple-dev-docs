@@ -19,7 +19,7 @@ Returns the finished unselected image.
 - (UIImage *) finishedUnselectedImage;
 ```
 
-#### Return Value
+## Return Value
 
 The finished unselected image.
 

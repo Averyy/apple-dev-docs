@@ -24,11 +24,11 @@ class func withMicroGamepad() -> GCController
 + (GCController *) controllerWithMicroGamepad;
 ```
 
-#### Return Value
+## Return Value
 
 A snapshot with a micro gamepad profile.
 
-#### Discussion
+## Discussion
 
 A snapshot is a copy of a real or virtual controller at a moment in time with its current element values. Unlike other controllers, you can set the values of a snapshot’s [`GCControllerElement`](../gccontrollerelement.md) objects.
 

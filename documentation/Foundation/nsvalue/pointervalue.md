@@ -25,7 +25,7 @@ var pointerValue: UnsafeMutableRawPointer? { get }
 @property (readonly, nullable) void * pointerValue;
 ```
 
-#### Return Value
+## Return Value
 
 The value as a pointer to void. If the value object was not created to hold a pointer-sized data item, the result is undefined.
 

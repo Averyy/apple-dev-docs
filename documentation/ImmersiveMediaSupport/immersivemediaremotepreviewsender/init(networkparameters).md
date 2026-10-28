@@ -15,7 +15,7 @@ Creates a preview sender using the specified network parameters, if any.
 init(networkParameters: NWParameters? = nil) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: This function throws if anything fails during initialization.
 

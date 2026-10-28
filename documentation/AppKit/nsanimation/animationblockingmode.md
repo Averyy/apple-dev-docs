@@ -19,7 +19,7 @@ var animationBlockingMode: NSAnimation.BlockingMode { get set }
 @property NSAnimationBlockingMode animationBlockingMode;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property determines whether the animation blocks a given thread. The default value of this property is [`NSAnimation.BlockingMode.blocking`](./blockingmode/blocking.md), which means that the animation runs on the main thread in a custom run-loop mode that blocks user events. When changing the value of this property, the new blocking mode takes effect the next time the animation is started and has no effect on an in-progress animation.
 

@@ -24,11 +24,11 @@ convenience init(player: AVQueuePlayer, templateItem itemToLoop: AVPlayerItem)
 + (instancetype) playerLooperWithPlayer:(AVQueuePlayer *) player templateItem:(AVPlayerItem *) itemToLoop;
 ```
 
-#### Return Value
+## Return Value
 
 An new instance of `AVPlayerLooper`.
 
-#### Discussion
+## Discussion
 
 Creating an instance of this class using this method is equivalent to calling [`init(player:templateItem:timeRange:)`](./init%28player,templateitem,timerange%29.md) and passing a value of [`invalid`](../../CoreMedia/cmtimerange/invalid.md) for the `timeRange` parameter.
 

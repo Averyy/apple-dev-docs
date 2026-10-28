@@ -4,7 +4,7 @@
 
 Back up your files, collaborate with others, and tag your releases with Git source control support in Xcode.
 
-#### Overview
+## Overview
 
 *Source control* is the practice of tracking and managing changes to your code. Manage your Xcode project with source control to keep a rich history of the changes you make, and collaborate on code faster and more effectively.
 

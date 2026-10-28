@@ -17,11 +17,11 @@ Indicates that the app receives and displays post-processed scan results when th
 func captureView(shouldPresent roomDataForProcessing: CapturedRoomData, error: (any Error)?) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 This implementation always returns `true`.
 
-#### Discussion
+## Discussion
 
 If your app’s room-capture view [`delegate`](../roomcaptureview/delegate.md) doesn’t implement [`captureView(shouldPresent:error:)`](./captureview%28shouldpresent,error%29.md), then the framework calls this default implementation.
 

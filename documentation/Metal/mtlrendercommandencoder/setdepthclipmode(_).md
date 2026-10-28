@@ -25,7 +25,7 @@ func setDepthClipMode(_ depthClipMode: MTLDepthClipMode)
 - (void) setDepthClipMode:(MTLDepthClipMode) depthClipMode;
 ```
 
-#### Discussion
+## Discussion
 
 You can use depth clipping to ignore fragments outside the z-axis boundaries of a viewing volume.
 

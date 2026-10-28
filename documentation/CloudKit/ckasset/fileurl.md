@@ -25,7 +25,7 @@ var fileURL: URL? { get }
 @property (copy, readonly, nullable) NSURL * fileURL;
 ```
 
-#### Discussion
+## Discussion
 
 After you create an asset, use the URL in this property to access the asset’s contents. The URL in this property is different from the one you specify when creating the asset.
 

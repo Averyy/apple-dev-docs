@@ -24,11 +24,11 @@ class func animatedImage(with images: [UIImage], duration: TimeInterval) -> UIIm
 + (UIImage *) animatedImageWithImages:(NSArray<UIImage *> *) images duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new image object.
 
-#### Discussion
+## Discussion
 
 All images included in the animated image should share the same size and scale.
 

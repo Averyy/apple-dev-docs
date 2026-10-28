@@ -20,7 +20,7 @@ nonisolated
 func customizationBehavior(_ behavior: TabCustomizationBehavior, for placements: AdaptableTabBarPlacement...) -> some TabContent<Self.TabValue>
 ```
 
-#### Discussion
+## Discussion
 
 The [`sidebarAdaptable`](../tabviewstyle/sidebaradaptable.md) style supports customization of the tab bar and sidebar on iPad. To enable customization, attach a [`TabViewCustomization`](../tabviewcustomization.md) to the [`TabView`](../tabview.md) using [`tabViewCustomization(_:)`](../view/tabviewcustomization%28_%29.md).
 

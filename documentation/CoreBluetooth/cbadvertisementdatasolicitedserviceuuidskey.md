@@ -25,7 +25,7 @@ let CBAdvertisementDataSolicitedServiceUUIDsKey: String
 extern NSString * const CBAdvertisementDataSolicitedServiceUUIDsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an array of one or more [`CBUUID`](./cbuuid.md) objects, representing [`CBService`](./cbservice.md) UUIDs.
 

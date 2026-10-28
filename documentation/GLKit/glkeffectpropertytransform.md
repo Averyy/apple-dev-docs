@@ -24,7 +24,7 @@ class GLKEffectPropertyTransform
 @interface GLKEffectPropertyTransform : GLKEffectProperty
 ```
 
-#### Overview
+## Overview
 
 The [`GLKEffectPropertyTransform`](./glkeffectpropertytransform.md) class defines properties that provide the coordinate transformations to be performed when rendering the effect.
 

@@ -25,7 +25,7 @@ func nw_quic_get_remote_idle_timeout(_ metadata: nw_protocol_metadata_t) -> UInt
 uint64_t nw_quic_get_remote_idle_timeout(nw_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 The `idle_timeout` value from the peer’s transport parameters, in milliseconds.
 

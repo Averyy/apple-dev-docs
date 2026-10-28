@@ -25,7 +25,7 @@ var groupIdentifier: String? { get }
 @property (nonatomic, retain, readonly, nullable) NSString * groupIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If your game is configured to be part of a game group in App Store Connect, this property holds the identifier you assigned to the achievement in the game group. If the game isn’t part of a game group, this property is `nil`.
 

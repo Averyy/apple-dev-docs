@@ -23,7 +23,7 @@ func refreshSourcesIfNecessary()
 - (void) refreshSourcesIfNecessary;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to pull new data from remote sources if the local data is out of date.
 

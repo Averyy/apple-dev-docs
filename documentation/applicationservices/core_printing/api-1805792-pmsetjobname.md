@@ -16,11 +16,11 @@ OSStatus PMSetJobName (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. The result code `kPMInvalidParameter` is returned if you attempt to set the job name to an invalid file name or a null string.
 
-#### Overview
+## Overview
 
 Valid after calling `PMBegin` and creating a print settings object.
 

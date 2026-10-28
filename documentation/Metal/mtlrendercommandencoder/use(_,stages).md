@@ -22,7 +22,7 @@ Ensures the shaders in the render pass’s subsequent draw commands have access 
 func use(_ heap: any MTLHeap, stages: MTLRenderStages)
 ```
 
-#### Discussion
+## Discussion
 
 You can make the resources in `heap` *resident* (available in GPU memory) for the remaining duration of the render pass by calling this method. Call the method before encoding draw calls that may access resources within `heap` through an argument buffer. The method ensures each resource is in a format that’s compatible with the shaders that depend on it.
 

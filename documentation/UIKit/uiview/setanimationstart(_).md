@@ -24,7 +24,7 @@ class func setAnimationStart(_ startDate: Date)
 + (void) setAnimationStartDate:(NSDate *) startDate;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method between the [`beginAnimations(_:context:)`](./beginanimations%28_,context%29.md) and [`commitAnimations()`](./commitanimations%28%29.md) methods to specify the start time for that set of animations. And call this method prior to changing the animatable properties of your views. (Do not call this method in conjunction with a block-based animation.) If you do not call this method, the start time is set to the value returned by the [`CFAbsoluteTimeGetCurrent()`](../../CoreFoundation/cfabsolutetimegetcurrent%28%29.md) function, which begins the animations as soon as possible.
 

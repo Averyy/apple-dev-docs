@@ -23,7 +23,7 @@ optional func addAnimations(_ animation: @escaping () -> Void)
 - (void) addAnimations:(void (^)()) animation;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add new animation blocks to your custom animator object. The animations in the specified block should run alongside any previously configured animations, starting at the current time and finishing at the same time as any original animations. Your implementation must be able to handle multiple calls to this method.
 

@@ -25,7 +25,7 @@ let kCVImageBufferDisplayWidthKey: CFString
 extern CFStringRef const kCVImageBufferDisplayWidthKey;
 ```
 
-#### Discussion
+## Discussion
 
 The display width value is of type [`CFNumber`](../CoreFoundation/cfnumber.md).
 

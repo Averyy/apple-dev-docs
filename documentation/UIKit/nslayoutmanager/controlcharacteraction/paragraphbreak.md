@@ -23,7 +23,7 @@ static var paragraphBreak: NSLayoutManager.ControlCharacterAction { get }
 NSControlCharacterActionParagraphBreak
 ```
 
-#### Discussion
+## Discussion
 
 The value in [`firstLineHeadIndent`](../../nsparagraphstyle/firstlineheadindent.md) is used for the following glyph.
 

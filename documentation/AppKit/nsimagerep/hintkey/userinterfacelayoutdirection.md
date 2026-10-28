@@ -19,7 +19,7 @@ static let userInterfaceLayoutDirection: NSImageRep.HintKey
 extern NSImageHintKey const NSImageHintUserInterfaceLayoutDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) with an [`NSUserInterfaceLayoutDirection`](../../nsuserinterfacelayoutdirection.md) value.
 

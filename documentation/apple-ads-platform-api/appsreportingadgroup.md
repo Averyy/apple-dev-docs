@@ -15,13 +15,13 @@ Ad group metadata for apps report rows.
 object AppsReportingAdGroup
 ```
 
-#### Discussion
+## Discussion
 
 The `AppsReportingAdGroup` object is the ad group metadata embedded in apps ad group report rows. It captures the ad group’s configuration at report time, including its `pricingModel` (`CPA`, `CPM`, or `CPT`) and `bidStrategy`. The `campaign` field provides a lightweight `ReportingCampaignMin` summary for quick access to the parent campaign context.
 
 The response populates the dimension fields (`countryOrRegion`, `deviceClass`, `gender`, `ageRange`, `locality`, `countryCode`, `adminArea`) based on which `groupBy` dimensions you specify in the report request. Each populated dimension field generates one report row per unique value of that dimension.
 
-##### Example
+### Example
 
 ```json
 {

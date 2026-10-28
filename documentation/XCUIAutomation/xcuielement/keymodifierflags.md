@@ -26,7 +26,7 @@ struct KeyModifierFlags
 enum XCUIKeyModifierFlags : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these flags with the [`typeKey(_:modifierFlags:)`](./typekey%28_,modifierflags%29-6gaoi.md) and [`perform(withKeyModifiers:block:)`](./perform%28withkeymodifiers,block%29.md) methods to simulate combination keystrokes while an action occurs.
 

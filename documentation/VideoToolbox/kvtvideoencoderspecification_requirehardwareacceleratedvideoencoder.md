@@ -24,7 +24,7 @@ let kVTVideoEncoderSpecification_RequireHardwareAcceleratedVideoEncoder: CFStrin
 extern CFStringRef const kVTVideoEncoderSpecification_RequireHardwareAcceleratedVideoEncoder;
 ```
 
-#### Discussion
+## Discussion
 
 This key is set in the `encoderSpecification` passed in to [`VTCompressionSessionCreate(allocator:width:height:codecType:encoderSpecification:imageBufferAttributes:compressedDataAllocator:outputCallback:refcon:compressionSessionOut:)`](./vtcompressionsessioncreate%28allocator,width,height,codectype,encoderspecification,imagebufferattributes,compresseddataallocator,outputcallback,refcon,compressionsessionout%29.md).  Set it to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) to require hardware-accelerated encoding.  If hardware acceleration is not possible, the [`VTCompressionSessionCreate(allocator:width:height:codecType:encoderSpecification:imageBufferAttributes:compressedDataAllocator:outputCallback:refcon:compressionSessionOut:)`](./vtcompressionsessioncreate%28allocator,width,height,codectype,encoderspecification,imagebufferattributes,compresseddataallocator,outputcallback,refcon,compressionsessionout%29.md) call fails. Setting this key automatically implies that [`kVTVideoEncoderSpecification_EnableHardwareAcceleratedVideoEncoder`](./kvtvideoencoderspecification_enablehardwareacceleratedvideoencoder.md) is enabled; there is no need to set both.
 

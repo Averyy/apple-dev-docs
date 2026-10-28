@@ -17,7 +17,7 @@ Create 3D games and add 3D content to apps using high-level scene descriptions, 
 
 > **Deprecated**: SceneKit is deprecated, use [RealityKit](../RealityKit/RealityKit.md) instead. For more information, see WWDC25 session 288: [Bring your SceneKit projects to RealityKit](https://developer.apple.com/videos/play/wwdc2025/288/).
 
-#### Overview
+## Overview
 
 SceneKit combines a high-performance rendering engine with a descriptive API for import, manipulation, and rendering of 3D assets. Unlike lower-level APIs such as Metal and OpenGL that require you to implement in precise detail the rendering algorithms that display a scene, SceneKit requires only descriptions of your scene’s contents and the actions or animations you want it to perform.
 

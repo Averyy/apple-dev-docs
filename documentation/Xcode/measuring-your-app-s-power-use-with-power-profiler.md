@@ -5,7 +5,7 @@
 
 Profile your app’s power impact whether or not your device is connected to Xcode.
 
-#### Overview
+## Overview
 
 Various subsystems of a device require the device to draw additional power from its battery when your app uses them. Using these subsystems efficiently can reduce your app’s power demand, increasing the time before someone needs to recharge the battery and improving their experience of using your app. For more information, see [Analyzing your app’s battery use](./analyzing-your-app-s-battery-use.md).
 
@@ -13,7 +13,7 @@ Use Power Profiler in Instruments to gather and analyze data on your app’s use
 
 Create a plan to adopt power-efficient designs and API best practice to reduce your app’s power consumption, based on what you find in your analysis. Compare the trace data before and after you make changes to verify that the changes reduce your app’s power consumption.
 
-##### Record and analyze a power trace using Instruments
+### Record and analyze a power trace using Instruments
 
 Make sure your device is available in Xcode, either wirelessly or using a cable, and set the run destination in Xcode to the device you want to use. For more information, see [Running your app on simulated or physical devices](./running-your-app-on-simulated-or-physical-devices.md). Record a power trace by following these steps:
 
@@ -46,7 +46,7 @@ Higher values for power impact metrics represent greater power use. You can comp
 
 Click the disclosure triangle next to your app’s track to reveal lanes that provide more detailed information about your app’s usage of device subsystems.
 
-##### Gather power-consumption data on a device
+### Gather power-consumption data on a device
 
 Some scenarios are difficult to replicate on a device that’s connected to your Mac, for example, low-battery situations, and using your app with CarPlay. In these cases, collect a performance trace on the device, and transfer it to your Mac later to analyze in Instruments. People testing your app can also collect performance traces as they use your app, and share the trace files with you.
 
@@ -80,7 +80,7 @@ To send the power trace to your Mac or another developer:
 
 In Finder, double-click the `*.aar` file you receive to expand it into a `*.atrc` file that you can open in Instruments.
 
-##### Make changes to reduce power usage
+### Make changes to reduce power usage
 
 Combine the information from Power Profiler with data you gather using other tools to identify how your app’s features use power, and plan your performance-engineering work.
 

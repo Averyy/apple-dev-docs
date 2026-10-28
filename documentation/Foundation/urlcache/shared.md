@@ -29,7 +29,7 @@ class var shared: URLCache { get set }
 
 - [Accessing cached data](../accessing-cached-data.md)
 
-#### Discussion
+## Discussion
 
 If your app doesn’t have special caching requirements or constraints, the default shared cache instance should be acceptable. Alternatively, you can create a custom [`URLCache`](../urlcache.md) object and set it as the shared cache instance (use `+[NSURLCache setSharedURLCache]` in Objective-C). You should do so before making any calls to this method.
 

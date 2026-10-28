@@ -19,7 +19,7 @@ var mediaExtensionProperties: AVMediaExtensionProperties? { get }
 @property (nonatomic, readonly, nullable) AVMediaExtensionProperties * mediaExtensionProperties;
 ```
 
-#### Discussion
+## Discussion
 
 If the system decodes the asset using a MediaExtension format reader, the property value contains a valid object that describes the extension. Otherwise, this property value is `nil`.
 

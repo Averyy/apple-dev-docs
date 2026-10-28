@@ -18,7 +18,7 @@ nonisolated
 func shortcutsLinkStyle(_ style: ShortcutsLinkStyle) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the specified shortcuts button style on its child views.
 

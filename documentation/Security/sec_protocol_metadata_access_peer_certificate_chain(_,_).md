@@ -23,11 +23,11 @@ func sec_protocol_metadata_access_peer_certificate_chain(_ metadata: sec_protoco
 bool sec_protocol_metadata_access_peer_certificate_chain(sec_protocol_metadata_t metadata, void (^handler)(sec_certificate_t certificate));
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the peer certificates were accessible, false otherwise.
 
-#### Discussion
+## Discussion
 
 Get the certificate chain of the protocol instance peer.
 

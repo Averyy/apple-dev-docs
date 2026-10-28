@@ -13,7 +13,7 @@
 typedef struct SBCModePageCaching SBCModePageCaching;
 ```
 
-#### Discussion
+## Discussion
 
 Caching Mode Page (PAGE CODE 0x08) format.
 

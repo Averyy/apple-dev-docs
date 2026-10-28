@@ -19,11 +19,11 @@ func AECoerceDesc(_ theAEDesc: UnsafePointer<AEDesc>!, _ toType: DescType, _ res
 OSErr AECoerceDesc(const AEDesc *theAEDesc, DescType toType, AEDesc *result);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145). If `AECoerceDesc` returns a nonzero result code, it returns a null descriptor record (a descriptor record of type `typeNull`, which does not contain any data) unless the Apple Event Manager is not available because of limited memory.
 
-#### Discussion
+## Discussion
 
 See the Version Notes section for the [`AECoercePtr(_:_:_:_:_:)`](./api-1441846-aecoerceptr.md) function for information on when to use descriptor-based versus pointer-based coercion handlers starting in OS X version 10.2.
 

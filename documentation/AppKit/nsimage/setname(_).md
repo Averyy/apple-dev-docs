@@ -19,11 +19,11 @@ func setName(_ string: NSImage.Name?) -> Bool
 - (BOOL) setName:(NSImageName) string;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver was successfully registered with the given name; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the receiver is already registered under a different name, this method unregisters the other name. If a different image is already registered under the name specified in `aString`, this method does nothing and returns [`false`](../../Swift/false.md).
 

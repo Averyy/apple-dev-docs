@@ -5,11 +5,11 @@
 
 Learn about important changes to XCUIAutomation.
 
-#### Overview
+## Overview
 
 Browse notable changes in [XCUIAutomation](../XCUIAutomation/XCUIAutomation.md).
 
-#### June 2025
+## June 2025
 
 - Record UI tests in Xcode using an updated interface. For more information, see [Recording UI automation for testing](../XCUIAutomation/recording-ui-automation-for-testing.md).
 - Simulate volume-button presses in Simulator with [`XCUIDevice.Button.volumeUp`](../XCUIAutomation/xcuidevice/button/volumeup.md) and [`XCUIDevice.Button.volumeDown`](../XCUIAutomation/xcuidevice/button/volumedown.md).

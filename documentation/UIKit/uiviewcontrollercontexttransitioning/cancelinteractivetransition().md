@@ -24,7 +24,7 @@ func cancelInteractiveTransition()
 - (void) cancelInteractiveTransition;
 ```
 
-#### Discussion
+## Discussion
 
 While tracking user interactions, gesture recognizers or your interactive animator object should call this method when interactions suggest that the user wants to cancel or abort the view controller transition. For example, if the user reverses the swipe direction and touch events end, suggesting that the user decided against the transition, you would call this method.
 

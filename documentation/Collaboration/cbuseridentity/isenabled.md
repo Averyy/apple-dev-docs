@@ -19,11 +19,11 @@ var isEnabled: Bool { get }
 @property (nonatomic, readonly, getter=isEnabled) BOOL enabled;
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the identity can authenticate; otherwise, `FALSE`.
 
-#### Discussion
+## Discussion
 
 If the identity does not have authentication credentials (a password or certificate), it is not able to log in. However, an identity with authentication credentials does not ensure that it is enabled. Any identity can be disabled.
 

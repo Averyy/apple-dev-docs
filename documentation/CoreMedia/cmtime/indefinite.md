@@ -25,7 +25,7 @@ static let indefinite: CMTime
 extern const CMTime kCMTimeIndefinite;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t test a time against this constant using (`time ==` [`indefinite`](./indefinite.md)) because there are many that are also indefinite. Use [`CMTIME_IS_INDEFINITE(_:)`](../cmtime_is_indefinite%28_%29.md) instead.
 

@@ -23,7 +23,7 @@ var minimumZoomScale: CGFloat { get set }
 @property (nonatomic) CGFloat minimumZoomScale;
 ```
 
-#### Discussion
+## Discussion
 
 This value determines how small the content can be scaled. The default value is `1.0`.
 

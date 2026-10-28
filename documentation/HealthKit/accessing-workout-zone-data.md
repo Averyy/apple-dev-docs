@@ -5,13 +5,13 @@
 
 Provide training insights to people on your app using workout zone data.
 
-#### Overview
+## Overview
 
 *Workout zones* divide measurements like heart rate and cycling power into ranges that represent training intensities. People configure their preferred zones in Health Settings, where they can choose between system-generated zones based on their health metrics, or manually defined custom ranges.
 
 HealthKit calculates the time someone spends in a zone during workouts, and makes the data and other workout statistics available to your app. With permission, your app can use data from workout zones to provide a view of training intensity across all of a person’s workout apps.
 
-#### Ask to read workout data
+## Ask to read workout data
 
 Before you can access someone’s workout zone data, you must ask their permission.
 
@@ -32,7 +32,7 @@ try await healthStore.requestAuthorization(
 
 Request permission to read the specific quantity types used for zones, such as heart rate to access heart rate zones, and cycling power to for cycling power zones.
 
-#### Add samples for automatic zone calculation
+## Add samples for automatic zone calculation
 
 When you add heart rate or cycling power samples to an [`HKWorkoutBuilder`](./hkworkoutbuilder.md) or [`HKLiveWorkoutBuilder`](./hkliveworkoutbuilder.md), the system automatically calculates the zone the sample falls into, and tracks the duration in each zone. The system calculates the data for live workout sessions and past workouts that you create programmatically. You don’t need to call any additional methods to enable zone calculation.
 
@@ -40,7 +40,7 @@ The system uses a person’s preferred zone configuration from Health Settings f
 
 Note: You can provide custom zones for a specific workout by calling [`setCustomZoneConfiguration(_:for:)`](./hkworkoutbuilder/setcustomzoneconfiguration%28_,for%29.md) before beginning data collection.
 
-#### Retrieve zone data from completed workouts
+## Retrieve zone data from completed workouts
 
 Access zone configurations and durations from saved workouts to display training intensity information.
 
@@ -73,7 +73,7 @@ The [`HKWorkoutZoneGroup`](./hkworkoutzonegroup.md) contains both the configurat
 
 For workouts with multiple activities, access zone data at the activity level using [`zoneGroupsByType`](./hkworkoutactivity/zonegroupsbytype.md) to see zone information specific to each activity’s time range.
 
-#### Check zone configuration sources
+## Check zone configuration sources
 
 Workouts can use different zone configurations, and comparing time-in-zone across workouts requires planning for those differences. For accuracy, identify the origin and configuration of workout zones, and include it in your interpretation and display of the zone data.
 
@@ -97,7 +97,7 @@ case .app:
 
 System-generated zones update when the person’s health metrics change, but zones configured by the person remain constant until the person modifies them in Health Settings. App-defined zones apply only to the specific workout in which they were set.
 
-#### Access the person’s preferred workout zones
+## Access the person’s preferred workout zones
 
 In Health Settings, people can choose automatic zones that the system configures based on their health metrics or configure manual zones by setting custom boundaries themselves. When you need to display zone information outside the context of a specific workout, call the [`preferredWorkoutZoneConfiguration(for:)`](./hkhealthstore/preferredworkoutzoneconfiguration%28for%29.md) method, which returns either the automatic or custom zone configuration, depending on which one is active in Settings:
 
@@ -114,7 +114,7 @@ if let preferredConfig = try await healthStore.preferredWorkoutZoneConfiguration
 }
 ```
 
-#### Receive live zone updates during workouts
+## Receive live zone updates during workouts
 
 Implement the [`HKLiveWorkoutBuilderDelegate`](./hkliveworkoutbuilderdelegate.md) protocol to receive notifications when someone changes zones during an active workout session.
 
@@ -142,7 +142,7 @@ The [`HKLiveWorkoutZoneUpdate`](./hkliveworkoutzoneupdate.md) structure provides
 
 For more information about running workout sessions, see [Running workout sessions](./running-workout-sessions.md).
 
-#### Set custom zones for a workout
+## Set custom zones for a workout
 
 You can configure custom zone boundaries for a workout when your app needs to apply a specific training model or zone scheme.
 

@@ -24,7 +24,7 @@ enum Kind
 
 - [Finding the best moments in a video](../finding-the-best-moments-in-a-video.md)
 
-#### Overview
+## Overview
 
 [`MediaIntelligenceVideoAsset.Kind`](./kind-swift.enum.md) describes how the framework reads a video.
 

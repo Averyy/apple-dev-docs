@@ -22,7 +22,7 @@ optional func dropInteraction(_ interaction: UIDropInteraction, sessionDidEnd se
 - (void) dropInteraction:(UIDropInteraction *) interaction sessionDidEnd:(id<UIDropSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method if you need to clean up resources you created during the session.
 

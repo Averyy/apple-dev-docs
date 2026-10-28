@@ -24,7 +24,7 @@ case restricted
 ATTrackingManagerAuthorizationStatusRestricted
 ```
 
-#### Discussion
+## Discussion
 
 When the system restricts tracking for the device:
 

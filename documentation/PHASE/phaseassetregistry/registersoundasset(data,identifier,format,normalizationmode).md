@@ -24,7 +24,7 @@ func registerSoundAsset(data: Data, identifier: String?, format: AVAudioFormat, 
 - (PHASESoundAsset *) registerSoundAssetWithData:(NSData *) data identifier:(NSString *) identifier format:(AVAudioFormat *) format normalizationMode:(PHASENormalizationMode) normalizationMode error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A sound asset object. If an error occurs, the function returns `nil`.
 

@@ -21,7 +21,7 @@ case notSupported
 NFCNDEFStatusNotSupported
 ```
 
-#### Discussion
+## Discussion
 
 You cannot perform read and write operations on the tag.
 

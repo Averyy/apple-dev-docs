@@ -23,7 +23,7 @@ var signedDate: Date { get }
 
 Available when `SignedType` is `Product.SubscriptionInfo.RenewalInfo`.
 
-#### Discussion
+## Discussion
 
 Use the [`signedDate`](./signeddate-8x9bg.md) to verify whether the certificate used to sign the transaction was valid when the App Store signed the transaction.
 

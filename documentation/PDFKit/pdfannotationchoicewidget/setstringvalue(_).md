@@ -19,7 +19,7 @@ func setStringValue(_ value: String!)
 - (void) setStringValue:(NSString *) value;
 ```
 
-#### Discussion
+## Discussion
 
 If the widget annotation object is backed by PDF form data, this method updates the value associated with the appropriate field in the form object.
 

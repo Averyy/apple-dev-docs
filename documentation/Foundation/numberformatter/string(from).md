@@ -25,7 +25,7 @@ func string(from number: NSNumber) -> String?
 - (NSString *) stringFromNumber:(NSNumber *) number;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the formatted value of `number` using the receiver’s current settings.
 

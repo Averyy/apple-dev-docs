@@ -11,7 +11,7 @@ Sends a dataAvailableNotification message to the specified mach port.
 virtual void sendDataAvailableNotification();
 ```
 
-#### Overview
+## Overview
 
 This method sends a message to the mach port passed to setNotificationPort(). It is used to indicate that data is available in the queue.
 

@@ -19,7 +19,7 @@ func MDQuerySetSortComparatorBlock(_ query: MDQuery!, _ comparator: ((UnsafePoin
 void MDQuerySetSortComparatorBlock(MDQueryRef query, CFComparisonResult (^comparator)(const CFTypeRef attrs1[], const CFTypeRef attrs2[]));
 ```
 
-#### Discussion
+## Discussion
 
 You may set the comparator block as many times as you like, even while the query is executing. Whenever the comparator block is set, all results are re-sorted using the new comparator block before the function returns. The block can be NULL to cancel custom sorting and revert to the default sorting.
 

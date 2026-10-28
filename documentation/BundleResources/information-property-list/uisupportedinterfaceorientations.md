@@ -26,7 +26,7 @@ The interface orientations supported by your app.
 
 **Default**: `UIInterfaceOrientationPortrait`
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**: To set supported orientations for specific platforms and devices, add platform- or device-specific keys to the information property list. For more information, see [Add platform- and device-specific properties](../managing-your-app-s-information-property-list.md#Add-platform-and-device-specific-properties).
 

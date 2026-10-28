@@ -25,7 +25,7 @@ var particleVelocityVariation: CGFloat { get set }
 @property (nonatomic) CGFloat particleVelocityVariation;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a nonzero value for this property randomizes the effect of the [`particleVelocity`](./particlevelocity.md) property. SceneKit randomly adjusts the initial speed of each particle by up to half the [`particleVelocityVariation`](./particlevelocityvariation.md) value. For example, if the [`particleVelocity`](./particlevelocity.md) value is `10.0` units per second and the [`particleVelocityVariation`](./particlevelocityvariation.md) value is `5.0` units per second, newly spawned particles have random velocities between `7.5` and `12.5` units per second.
 

@@ -25,7 +25,7 @@ func CFLocaleGetIdentifier(_ locale: CFLocale!) -> CFLocaleIdentifier!
 extern CFLocaleIdentifierCFLocaleGetIdentifier(CFLocaleRef locale);
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of `locale`’s identifier. This may not be the same string that was used to create the locale—it may be canonicalized. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

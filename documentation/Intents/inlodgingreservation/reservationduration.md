@@ -33,7 +33,7 @@ var reservationDuration: INDateComponentsRange { get }
 @property (atomic, copy, readonly) INDateComponentsRange * reservationDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The beginning and end times for the reservation indicate the earliest time the user can check in and the latest time they can check out.
 

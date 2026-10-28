@@ -15,11 +15,11 @@ Get the name of a vnode from the VFS namecache.
 const char * vnode_getname(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 The name, or NULL if unavailable.
 
-#### Discussion
+## Discussion
 
 Not all vnodes have names, and vnode names can change (notably, hardlinks). Use this routine at your own risk. The string is returned with a refcount incremented in the cache; callers must call vnode_putname() to release that reference.
 

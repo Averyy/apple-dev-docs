@@ -15,7 +15,7 @@ The structure for the platform capability descriptor.
 struct IOUSBPlatformCapabilityDescriptor;
 ```
 
-#### Overview
+## Overview
 
 See USB 3.1 9.6.2.4: Platform Descriptor.
 

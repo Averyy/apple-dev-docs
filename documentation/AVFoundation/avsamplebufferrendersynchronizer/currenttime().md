@@ -25,7 +25,7 @@ func currentTime() -> CMTime
 - (CMTime) currentTime;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CMTime`](../../CoreMedia/cmtime.md) object.
 

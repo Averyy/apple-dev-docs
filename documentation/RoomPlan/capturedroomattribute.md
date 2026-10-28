@@ -17,7 +17,7 @@ Details about an object in the room that the framework observes during a scan.
 protocol CapturedRoomAttribute : CaseIterable, RawRepresentable, Sendable where Self.RawValue == String
 ```
 
-#### Overview
+## Overview
 
 If the framework identifies details about an [`CapturedRoom.Object`](./capturedroom/object.md) during a scan, it adds an adopter of this protocol that represents that detail to the object’s [`attributes`](./capturedroom/object/attributes.md) array. For example, details the framework recognizes as a stool with a star-shaped base contains both of the [`ChairType.stool`](./chairtype/stool.md) and [`ChairLegType.star`](./chairlegtype/star.md) options in the `attributes` array for the object that represents the physical stool.
 

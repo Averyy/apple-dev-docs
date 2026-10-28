@@ -16,7 +16,7 @@ The object you use to access USB devices from user space, returned by all versio
 typedef IOUSBDeviceInterface942 IOUSBDeviceInterface;
 ```
 
-#### Overview
+## Overview
 
 The functions listed here will work with any version of the IOUSBDeviceInterface, including the one shipped with OS X version 10.0.
 

@@ -23,7 +23,7 @@ var isManualHitTestingEnabled: Bool { get set }
 @property (nonatomic, getter=isManualHitTestingEnabled) BOOL manualHitTestingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md).
 

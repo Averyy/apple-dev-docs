@@ -20,11 +20,11 @@ func AudioHardwareDestroyAggregateDevice(_ inDeviceID: AudioObjectID) -> OSStatu
 extern OSStatus AudioHardwareDestroyAggregateDevice(AudioObjectID inDeviceID);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 This routine destroys the given AudioAggregateDevice.
 

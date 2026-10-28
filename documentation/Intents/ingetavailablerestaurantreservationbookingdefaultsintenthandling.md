@@ -22,7 +22,7 @@ protocol INGetAvailableRestaurantReservationBookingDefaultsIntentHandling : NSOb
 @protocol INGetAvailableRestaurantReservationBookingDefaultsIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INGetAvailableRestaurantReservationBookingDefaultsIntentHandling`](./ingetavailablerestaurantreservationbookingdefaultsintenthandling.md) protocol to resolve, confirm, and handle requests for default values for the system to use when pre-fetching reservation times. The system delivers an [`INGetAvailableRestaurantReservationBookingDefaultsIntent`](./ingetavailablerestaurantreservationbookingdefaultsintent.md) object to your handler before it asks your Intents extension for any initial reservation times. Use this intent object to provide a set of reasonable default values that are likely to yield good results when doing an initial search for available reservation times. For example, the default date provided by your handler should represent a date and time when the restaurant is open and has available tables.
 

@@ -17,7 +17,7 @@ The parameter values for the adapter modules.
 let parameters: ModuleParameters
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: This contains MLXArray which is not Sendable, but in this case we ensure that they are fully evaluated and never updated.  These static MLXArrays are usable across threads but we cannot prove so to the type checker so this is left as `@unchecked Sendable`.
 

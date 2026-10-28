@@ -24,7 +24,7 @@ var hasNotes: Bool { get }
 @property (nonatomic, readonly) BOOL hasNotes;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the calendar item has notes; otherwise it does not.
 

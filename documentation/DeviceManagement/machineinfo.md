@@ -26,7 +26,7 @@ object MachineInfo
 - [Implementing Platform SSO during Automated Device Enrollment](./implementing-platform-sso-during-automated-device-enrollment.md)
 - [Deploying software updates using declarative management](./deploying-software-updates-using-declarative-management.md)
 
-#### Discussion
+## Discussion
 
 This dictionary is CMS-signed with the device identity certificate. The system includes the device’s certificate and all necessary intermediate certificates. The certificate chain should validate against the Apple Root CA.
 

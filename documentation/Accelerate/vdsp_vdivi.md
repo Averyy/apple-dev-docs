@@ -21,7 +21,7 @@ Divides two integer vectors.
 extern void vDSP_vdivi(const int *__B, vDSP_Stride __IB, const int *__A, vDSP_Stride __IA, int *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the first `N` elements of `A` divided by the corresponding element in `B`, writing the result to `C`:
 

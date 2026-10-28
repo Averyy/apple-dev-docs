@@ -11,7 +11,7 @@ Registers a device to receive update notifications for an order.
 - iPadOS 16.0+
 - macOS 13.0+
 
-#### Discussion
+## Discussion
 
 When the system modifies an order, use the [`PushToken`](./pushtoken.md) to send a push notification to the device. In the notification, set the push topic as the order type identifier and leave the payload empty.
 

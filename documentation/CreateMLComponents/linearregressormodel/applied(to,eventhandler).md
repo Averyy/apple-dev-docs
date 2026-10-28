@@ -21,7 +21,7 @@ Performs a regression on a single input.
 func applied(to input: MLShapedArray<Scalar>, eventHandler: EventHandler? = nil) async throws -> Scalar
 ```
 
-#### Return Value
+## Return Value
 
 A regression.
 

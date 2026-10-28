@@ -24,7 +24,7 @@ weak var delegate: (any AVAssetResourceLoaderDelegate)? { get }
 @property (nonatomic, weak, readonly, nullable) id<AVAssetResourceLoaderDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate object is responsible for indicating whether or not it is able to handle a resource request. And for those requests it does handle, the delegate object must initiate the loading of the requested resource.
 

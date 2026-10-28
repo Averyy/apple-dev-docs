@@ -29,7 +29,7 @@ func makeDynamicLibrary(url: URL) throws -> any MTLDynamicLibrary
 
 - [Compiling and linking Metal dynamic libraries](../compiling-and-linking-metal-dynamic-libraries.md)
 
-#### Return Value
+## Return Value
 
 A new [`MTLDynamicLibrary`](../mtldynamiclibrary.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 

@@ -23,11 +23,11 @@ class func jpegPhotoDataRepresentation(forJPEGSampleBuffer JPEGSampleBuffer: CMS
 + (NSData *) JPEGPhotoDataRepresentationForJPEGSampleBuffer:(CMSampleBufferRef) JPEGSampleBuffer previewPhotoSampleBuffer:(CMSampleBufferRef) previewPhotoSampleBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing a JPEG representation of the requested photo capture results, or `nil` if the sample buffers cannot be packaged for output.
 
-#### Discussion
+## Discussion
 
 After you request a photo capture with the [`capturePhoto(with:delegate:)`](./capturephoto%28with,delegate%29.md) method, the photo capture output delivers results to your delegate as one or more [`CMSampleBuffer`](../../CoreMedia/cmsamplebuffer.md) objects. (See the [`photoOutput(_:didFinishProcessingPhoto:previewPhoto:resolvedSettings:bracketSettings:error:)`](../avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,previewphoto,resolvedsettings,bracketsettings,error%29.md) method.) To repackage the sample buffer’s content for output as a JPEG file, use this class method. Optionally, you can include metadata in the resulting JPEG output by attaching it to the sample buffer before calling this method.
 

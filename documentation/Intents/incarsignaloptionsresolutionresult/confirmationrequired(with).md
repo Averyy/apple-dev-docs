@@ -23,11 +23,11 @@ class func confirmationRequired(with carSignalOptionsToConfirm: INCarSignalOptio
 + (instancetype) confirmationRequiredWithCarSignalOptionsToConfirm:(INCarSignalOptions) carSignalOptionsToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new `INCarSignalOptionsResolutionResult` object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to the specified value, but you still want the user to confirm that value.
 

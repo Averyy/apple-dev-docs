@@ -20,7 +20,7 @@ init(int32 signedInt: Int32)
 + (NSAppleEventDescriptor *) descriptorWithInt32:(SInt32) signedInt;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor containing the specified integer value, or `nil` if an error occurs.
 

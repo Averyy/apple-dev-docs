@@ -19,7 +19,7 @@ func AXUIElementCopyParameterizedAttributeValue(_ element: AXUIElement, _ parame
 AXError AXUIElementCopyParameterizedAttributeValue(AXUIElementRef element, CFStringRef parameterizedAttribute, CFTypeRef parameter, CFTypeRef  _Nullable *result);
 ```
 
-#### Return Value
+## Return Value
 
 If unsuccessful, `AXUIElementCopyParameterizedAttributeValue` may return one of the following error codes, among others:
 

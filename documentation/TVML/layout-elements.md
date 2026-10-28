@@ -4,7 +4,7 @@
 
 Organize and display multiple elements in a structured layout.
 
-#### Overview
+## Overview
 
 Each compound element organizes its contained elements differently. For example, a `shelf` element displays its information horizontally, while a `grid` element can display information horizontally and vertically.
 

@@ -24,7 +24,7 @@ protocol INUpdateMediaAffinityIntentHandling : NSObjectProtocol
 @protocol INUpdateMediaAffinityIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INUpdateMediaAffinityIntentHandling`](./inupdatemediaaffinityintenthandling.md) protocol to resolve, confirm, and handle requests that indicate the user’s preference for a media item. Adopt this protocol in an object of your Intents extension capable of providing feedback for media.
 

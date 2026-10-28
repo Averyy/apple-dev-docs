@@ -15,11 +15,11 @@ Returns the encoding specifications for all the destinationtext encodings to whi
 OSStatus TECGetDestinationTextEncodings(TextEncoding inputEncoding, TextEncoding destinationEncodings[], ItemCount maxDestinationEncodings, ItemCount *actualDestinationEncodings);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 This function ignores duplicate direct text encoding specifications.If you used the  [`TECCountDestinationTextEncodings`](./api-1571805-teccountdestinationtextencodings.md) function to determine the size of the `destinationEncodings[]` array,the number of available encodings may be fewer than the number ofarray elements, because `TECCountDestinationTextEncodings` includesduplicates in its count.
 

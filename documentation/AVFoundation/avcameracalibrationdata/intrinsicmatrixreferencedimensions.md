@@ -24,7 +24,7 @@ var intrinsicMatrixReferenceDimensions: CGSize { get }
 @property (nonatomic, readonly) CGSize intrinsicMatrixReferenceDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 The [`intrinsicMatrix`](./intrinsicmatrix.md) property measures focal length and principal point offset in pixels, but those values are meaningful only in the context of an image of this size.
 

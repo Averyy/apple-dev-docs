@@ -19,7 +19,7 @@ The app was terminated for executing an illegal or undefined instruction.
 static let illegalInstruction: CrashDiagnostic.TerminationCategory
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to [`illegalInstructionTerminationCount`](../../foregroundterminationmetric/illegalinstructionterminationcount.md) and [`illegalInstructionTerminationCount`](../../backgroundterminationmetric/illegalinstructionterminationcount.md).
 

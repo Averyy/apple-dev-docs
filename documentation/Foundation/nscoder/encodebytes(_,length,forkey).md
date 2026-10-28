@@ -25,7 +25,7 @@ func encodeBytes(_ bytes: UnsafePointer<UInt8>?, length: Int, forKey key: String
 - (void) encodeBytes:(const uint8_t *) bytes length:(NSUInteger) length forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method if they perform keyed coding.
 

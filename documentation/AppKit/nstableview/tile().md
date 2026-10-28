@@ -19,7 +19,7 @@ func tile()
 - (void) tile;
 ```
 
-#### Discussion
+## Discussion
 
 Also resets cursor rectangles for the header view and line scroll amounts for the `NSScrollView` object.
 

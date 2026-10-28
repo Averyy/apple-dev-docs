@@ -22,7 +22,7 @@ convenience init(systemImageName: String)
 + (instancetype) iconWithSystemImageName:(NSString *) systemImageName;
 ```
 
-#### Return Value
+## Return Value
 
 A Home Screen quick action icon initialized with the specified system symbol image.
 

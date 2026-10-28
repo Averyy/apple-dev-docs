@@ -22,7 +22,7 @@ var largeContentTitle: String? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSString * largeContentTitle;
 ```
 
-#### Discussion
+## Discussion
 
 To present content in the large content viewer, you can provide either [`largeContentTitle`](../uilargecontentvieweritem/largecontenttitle.md) or [`largeContentImage`](../uilargecontentvieweritem/largecontentimage.md), or both.
 

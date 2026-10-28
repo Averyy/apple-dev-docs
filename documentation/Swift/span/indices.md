@@ -21,7 +21,7 @@ The indices that are valid for subscripting the span, in ascending order.
 var indices: Range<Span<Element>.Index> { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

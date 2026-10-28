@@ -21,7 +21,7 @@ func clearAllMenuItems()
 - (void) clearAllMenuItems;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove all menu items that you added using the [`addMenuItem(with:title:action:)`](./addmenuitem%28with,title,action%29-1q2zj.md) or [`addMenuItem(withImageNamed:title:action:)`](./addmenuitem%28withimagenamed,title,action%29.md) method. This method does not remove menu items that you configured in the storyboard file.
 

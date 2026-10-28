@@ -10,11 +10,11 @@ framework: "mlx-swift/MLX"
 
 Automatic vectorization with `vmap`.
 
-#### Overview
+## Overview
 
 `vmap` transforms a function so that it operates independently over a batch axis. This is convenient for evaluating a function over many inputs without writing explicit loops.
 
-#### Basics of vmap
+## Basics of vmap
 
 Let’s start with a simple example:
 
@@ -44,7 +44,7 @@ let vf = vmap(add, inAxes: (0, nil))
 
 Here `x` is mapped over its first axis while `y` is used as a broadcast value.
 
-#### Nested Mapping
+## Nested Mapping
 
 You can nest calls to `vmap` to map over multiple axes. Each nested `vmap` introduces another batch dimension in the result.
 

@@ -19,11 +19,11 @@ func onStateValue() -> String!
 - (NSString *) onStateValue;
 ```
 
-#### Return Value
+## Return Value
 
 The string associated with the on state of a radio button or checkbox control.
 
-#### Discussion
+## Discussion
 
 This is a required string for controls of types [`PDFAnnotationButtonWidget`](../pdfannotationbuttonwidget.md) and [`PDFAnnotationButtonWidget`](../pdfannotationbuttonwidget.md). The off state is always labeled “Off”.
 

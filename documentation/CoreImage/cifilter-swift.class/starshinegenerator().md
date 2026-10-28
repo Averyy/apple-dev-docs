@@ -24,11 +24,11 @@ class func starShineGenerator() -> any CIFilter & CIStarShineGenerator
 + (CIFilter<CIStarShineGenerator> *) starShineGeneratorFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates a star-shine image. The effect is similar to a supernova effect. You can use this filter to simulate a lens flare.
 

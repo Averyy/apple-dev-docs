@@ -20,7 +20,7 @@ protocol Attachable : ~Copyable
 
 - [Migrating a test from XCTest](./migratingfromxctest.md)
 
-#### Overview
+## Overview
 
 To attach an attachable value to a test, pass it to [`record(_:named:sourceLocation:)`](./attachment/record%28_,named,sourcelocation%29.md). To further configure an attachable value before you attach it, use it to initialize an instance of [`Attachment`](./attachment.md) and set its properties before passing it to [`record(_:sourceLocation:)`](./attachment/record%28_,sourcelocation%29.md).
 

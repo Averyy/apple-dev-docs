@@ -10,7 +10,7 @@ Build a virtual audio device by creating a custom driver plug-in.
 - macOS 12.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 This sample shows how to create a minimal Audio Server plug-in. Written in standard C, the sample provides the minimal implementation you need to publish a single, functioning audio device to the system. The audio device provides the following features:
 

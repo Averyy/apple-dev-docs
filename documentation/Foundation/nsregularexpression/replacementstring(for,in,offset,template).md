@@ -25,11 +25,11 @@ func replacementString(for result: NSTextCheckingResult, in string: String, offs
 - (NSString *) replacementStringForResult:(NSTextCheckingResult *) result inString:(NSString *) string offset:(NSInteger) offset template:(NSString *) templ;
 ```
 
-#### Return Value
+## Return Value
 
 A replacement string.
 
-#### Discussion
+## Discussion
 
 For clients implementing their own replace functionality, this is a method to perform the template substitution for a single result, given the string from which the result was matched, an offset to be added to the location of the result in the string (for example, in cases that modifications to the string moved the result since it was matched), and a replacement template.
 

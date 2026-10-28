@@ -21,7 +21,7 @@ A type that represents a GNU zip archive.
 extern UTType * const UTTypeGZIP;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `org.gnu.gnu-zip-archive`.
 

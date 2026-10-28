@@ -23,7 +23,7 @@ optional func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManage
 - (void) locationManagerDidPauseLocationUpdates:(CLLocationManager *) manager;
 ```
 
-#### Discussion
+## Discussion
 
 When the location manager detects that the device’s location is not changing, it can pause the delivery of updates in order to shut down the appropriate hardware and save power. When it does this, it calls this method to let your app know that this has happened.
 

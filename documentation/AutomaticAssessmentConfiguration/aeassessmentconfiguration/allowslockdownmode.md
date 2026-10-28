@@ -20,7 +20,7 @@ var allowsLockdownMode: Bool { get set }
 @property (nonatomic, assign) BOOL allowsLockdownMode;
 ```
 
-#### Discussion
+## Discussion
 
 When set to `false`, the assessment session will only start if Lockdown Mode is not enabled on the device. Defaults to `true`, which doesn’t enforce the requirement.
 

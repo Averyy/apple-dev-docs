@@ -5,7 +5,7 @@
 
 Host a domain verification file on each domain before requesting registration.
 
-#### Overview
+## Overview
 
 Before making a [`Register Merchant`](./register-merchant.md) request, prepare each domain included in the request for verification.
 
@@ -13,7 +13,7 @@ After you set up the payment platform integrator ID in your Apple Developer acco
 
 You can find the domain-verification file for each of your payment platform integrator IDs in your Apple Developer account.
 
-#### Host the domain-verification file
+## Host the domain-verification file
 
 Host the domain-verification file at the following path for each domain you’re registering:
 

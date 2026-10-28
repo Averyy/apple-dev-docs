@@ -19,11 +19,11 @@ func view(atColumn column: Int) -> Any?
 - (id) viewAtColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The view for the specified column.
 
-#### Discussion
+## Discussion
 
 This is the only way to access cell views after the row view has been removed from the table.
 

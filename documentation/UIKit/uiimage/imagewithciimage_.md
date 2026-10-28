@@ -19,7 +19,7 @@ Creates and returns an image object that contains a Core Image object.
 + (UIImage *) imageWithCIImage:(CIImage *) ciImage;
 ```
 
-#### Return Value
+## Return Value
 
 A new image object.
 

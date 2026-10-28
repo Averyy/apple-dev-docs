@@ -20,7 +20,7 @@ Performs the image flipper operation on the input image.
 func applied(to image: CIImage, eventHandler: EventHandler? = nil) -> CIImage
 ```
 
-#### Return Value
+## Return Value
 
 The flipped image.
 

@@ -18,11 +18,11 @@ Initializes a new targeted drag item preview with a URL and a drag item preview.
 convenience init(forURL url: URL, target: UIDragPreviewTarget)
 ```
 
-#### Return Value
+## Return Value
 
 A targeted drag preview for a URL based on the drag item preview target.
 
-#### Discussion
+## Discussion
 
 This method creates a targeted drag item preview of the URL. The URL preview is a one-line, textual representation that might not show the full URL string. Don’t use a file URL.
 

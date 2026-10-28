@@ -19,7 +19,7 @@ enum NSControlTint
 enum NSControlTint : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by the [`controlTint`](./nscell/controltint.md) property.
 

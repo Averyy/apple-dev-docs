@@ -14,7 +14,7 @@ The normal-to-world transformation Matrix3x3 (Float).
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Output | Type |
 | --- | --- |

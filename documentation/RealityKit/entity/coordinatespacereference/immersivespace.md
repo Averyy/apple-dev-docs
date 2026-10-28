@@ -15,7 +15,7 @@ A reference to an opened immersive space.
 case immersiveSpace
 ```
 
-#### Discussion
+## Discussion
 
 You can use this enum case to get an entity’s relative transform to the immersive space:
 

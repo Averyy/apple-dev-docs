@@ -15,11 +15,11 @@ The response object for an ad group operation.
 object AdGroupResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `AdGroupResponse` object is the single-item response envelope returned by create, update, and delete ad group operations.
 
-##### Example
+### Example
 
 ```json
 {

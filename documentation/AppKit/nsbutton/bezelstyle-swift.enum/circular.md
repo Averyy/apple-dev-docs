@@ -19,7 +19,7 @@ case circular
 NSBezelStyleCircular
 ```
 
-#### Discussion
+## Discussion
 
 Use this button type to display either a single character:
 

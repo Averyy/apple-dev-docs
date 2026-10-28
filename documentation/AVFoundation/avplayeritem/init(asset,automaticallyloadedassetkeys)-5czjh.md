@@ -22,7 +22,7 @@ Creates a player item for the asset, and automatically loads values for the spec
 @preconcurrency convenience init(asset: AVAsset, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>] = [])
 ```
 
-#### Discussion
+## Discussion
 
 The system automatically loads values for the specified property identifiers before the player item reaches an [`AVPlayerItem.Status.readyToPlay`](./status-swift.enum/readytoplay.md) state. In this state, calling [`status(of:)`](../avasynchronouskeyvalueloading/status%28of%29.md) on a specified property identifier returns a value of [`AVAsyncProperty.Status.loaded(_:)`](../avasyncproperty/status/loaded%28_%29.md) or [`AVAsyncProperty.Status.failed(_:)`](../avasyncproperty/status/failed%28_%29.md).
 

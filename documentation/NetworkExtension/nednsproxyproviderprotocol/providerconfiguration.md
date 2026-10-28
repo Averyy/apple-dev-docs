@@ -23,7 +23,7 @@ var providerConfiguration: [String : Any]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,id> * providerConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 This dictionary is passed as-is through the `options` parameter when the framework starts a DNS proxy by calling the proxy’s [`startProxy(options:completionHandler:)`](../nednsproxyprovider/startproxy%28options,completionhandler%29.md) function.
 

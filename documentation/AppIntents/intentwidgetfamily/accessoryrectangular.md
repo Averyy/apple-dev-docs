@@ -20,7 +20,7 @@ A rectangular widget.
 case accessoryRectangular
 ```
 
-#### Discussion
+## Discussion
 
 The accessory rectangular widget can appear as a complication in watchOS or on the Lock Screen in iOS.
 

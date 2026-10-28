@@ -23,7 +23,7 @@ typealias xpc_peer_requirement_t = OS_xpc_peer_requirement
 typedef NSObject<OS_xpc_peer_requirement> * xpc_peer_requirement_t;
 ```
 
-#### Discussion
+## Discussion
 
 XPC peer requirement is an abstract type that represents a validated requirement on peers.
 

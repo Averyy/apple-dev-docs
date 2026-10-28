@@ -16,7 +16,7 @@ The start time of the predicted event.
 let predictedStartTime: Date
 ```
 
-#### Discussion
+## Discussion
 
 The resolution of the time isn’t exact and is limited for privacy.
 

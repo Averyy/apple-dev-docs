@@ -20,7 +20,7 @@ var wifiAwarePairedDeviceID: ASAccessory.WiFiAwarePairedDeviceID { get }
 @property (nonatomic, assign, readonly) ASAccessoryWiFiAwarePairedDeviceID wifiAwarePairedDeviceID;
 ```
 
-#### Discussion
+## Discussion
 
 Use this identifier to establish a connection to the accessory using Wi-Fi Aware Framework.
 

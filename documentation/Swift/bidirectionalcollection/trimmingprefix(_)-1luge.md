@@ -23,7 +23,7 @@ func trimmingPrefix(_ regex: some RegexComponent) -> Self.SubSequence
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 A collection containing the elements that does not match `regex` from the start.
 

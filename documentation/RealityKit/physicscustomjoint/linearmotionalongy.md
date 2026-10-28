@@ -20,7 +20,7 @@ The linear motion limits along the y-axis.
 var linearMotionAlongY: PhysicsCustomJoint.MotionLimit
 ```
 
-#### Discussion
+## Discussion
 
 This property sets the limits of `pin1` along the y-axis of `pin0`.
 

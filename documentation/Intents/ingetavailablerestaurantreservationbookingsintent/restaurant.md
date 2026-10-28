@@ -31,7 +31,7 @@ var restaurant: INRestaurant { get set }
 @property (atomic, copy) INRestaurant * restaurant;
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to determine the restaurant at which to create the reservation.
 

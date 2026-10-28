@@ -5,17 +5,17 @@
 
 Provide users access to the data your app stores on their behalf.
 
-#### Overview
+## Overview
 
 User data in CloudKit belongs to the user. For this reason, apps that integrate with CloudKit need to provide users with a way to view and export their data.
 
-##### Identify Containers and Record Types
+### Identify Containers and Record Types
 
 To be sure that you’re querying all of the data that your app stores, cross-reference the list of containers your app has access to in Xcode, and assemble a list of those containers’ identifiers.
 
 The CloudKit Dashboard lists the different record types you define for each container in your app. Assemble a list of these types and make sure that each type has a queryable index on its `recordName` field.
 
-##### Associate Record Types with Containers
+### Associate Record Types with Containers
 
 Associate the record types with the container they appear in. The example below uses a dictionary to represent the relationship between containers and the record types they contain:
 
@@ -33,7 +33,7 @@ let containerRecordTypes: [CKContainer: [String]] = [
 let containers = Array(containerRecordTypes.keys)
 ```
 
-##### Find and List All Records
+### Find and List All Records
 
 Store user data in a container’s private database. Use the containers in the example above to find all record zones in the private database for each container that your app uses.
 

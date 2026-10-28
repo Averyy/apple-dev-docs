@@ -22,7 +22,7 @@ A type that iterates over a collection using its indices.
 struct IndexingIterator<Elements> where Elements : Collection
 ```
 
-#### Overview
+## Overview
 
 The `IndexingIterator` type is the default iterator for any collection that doesn’t declare its own. It acts as an iterator by using a collection’s indices to step over each value in the collection. Most collections in the standard library use `IndexingIterator` as their iterator.
 

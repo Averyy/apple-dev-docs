@@ -23,7 +23,7 @@ var requiredThreadsPerTileThreadgroup: MTLSize { get }
 @property (readonly) MTLSize requiredThreadsPerTileThreadgroup;
 ```
 
-#### Discussion
+## Discussion
 
 The required size of every tile shader threadgroup.
 

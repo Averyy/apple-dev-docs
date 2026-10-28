@@ -23,7 +23,7 @@ var altitude: NSNumber? { get set }
 @property (strong, nullable) NSNumber * altitude;
 ```
 
-#### Discussion
+## Discussion
 
 Negative values lie below sea level.
 

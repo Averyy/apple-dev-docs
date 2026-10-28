@@ -21,7 +21,7 @@ func invalidateDetents()
 - (void) invalidateDetents;
 ```
 
-#### Discussion
+## Discussion
 
 When an external input (like a captured property) to a custom detent changes, call this method to notify the sheet to re-evaluate the detent.
 

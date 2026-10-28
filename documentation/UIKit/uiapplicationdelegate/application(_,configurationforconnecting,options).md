@@ -29,11 +29,11 @@ optional func application(_ application: UIApplication, configurationForConnecti
 - [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 - [Specifying the scenes your app supports](../specifying-the-scenes-your-app-supports.md)
 
-#### Return Value
+## Return Value
 
 The configuration object containing the information needed to create the scene.
 
-#### Discussion
+## Discussion
 
 Implement this method if you don’t include scene-configuration data in your app’s `Info.plist` file, or if you want to alter the scene configuration data dynamically. UIKit calls this method shortly before creating a new scene. In your implementation, return a [`UISceneConfiguration`](../uisceneconfiguration.md) object with the scene details, including the type of scene to create, the delegate object you use to manage the scene, and the storyboard containing the initial view controller to display.
 

@@ -21,7 +21,7 @@ var deleteToDeletes: [SRKeyboardMetrics.ProbabilityMetric<UnitDuration>] { get }
 @property (strong, readonly) NSArray<SRKeyboardProbabilityMetric<NSUnitDuration *> *> * deleteToDeletes;
 ```
 
-#### Discussion
+## Discussion
 
 Each entry in the array is a distribution of [`deleteToDelete`](./deletetodelete.md) for a key’s position in a word.
 

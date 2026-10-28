@@ -19,7 +19,7 @@ struct NotificationResponse
 
 - [Responding to forwarded notifications](./responding-to-forwarded-notifications.md)
 
-#### Overview
+## Overview
 
 Create an instance of this structure when a person responds to a notification on your accessory. Send it to the system using [`sendResponse(_:)`](./notificationsforwarding/accessorynotificationssession/sendresponse%28_%29.md) after receiving the response data through [`messageHandler(_:)`](./notificationsforwarding/accessorynotificationshandler/messagehandler%28_%29.md).
 

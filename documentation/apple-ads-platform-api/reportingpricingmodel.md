@@ -21,7 +21,7 @@ string ReportingPricingModel
 - `CPM`: Cost-per-thousand-impressions.
 - `CPT`: Cost-per-tap.
 
-#### Discussion
+## Discussion
 
 The `ReportingPricingModel` mirrors [`PricingModel`](./pricingmodel.md) for use in report rows and filters. See [`PricingModel`](./pricingmodel.md) for the full description of each value.
 

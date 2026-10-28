@@ -24,7 +24,7 @@ case inStore
 PKPaymentButtonTypeInStore
 ```
 
-#### Discussion
+## Discussion
 
 This button looks like:
 

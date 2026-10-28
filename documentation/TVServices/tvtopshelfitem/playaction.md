@@ -19,7 +19,7 @@ var playAction: TVTopShelfAction? { get set }
 @property (nonatomic, strong, nullable) TVTopShelfAction * playAction;
 ```
 
-#### Discussion
+## Discussion
 
 In a carousel inteface, the first of two buttons invites the user to play the content associated with the current item. The action object you assign to this property provides the title and image to use for that button. When selected, the system loads the action’s URL.
 

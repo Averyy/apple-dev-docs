@@ -22,7 +22,7 @@ func location(in view: UIView?) -> CGPoint
 - (CGPoint) locationInView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The location of the scroll update in the specified view’s coordinate system.
 

@@ -18,7 +18,7 @@ The number of path levels to preserve when parsing.
 var segments: UInt
 ```
 
-#### Discussion
+## Discussion
 
 With a path of `/a/b/c/d`, setting `segments` to `2` keeps `/a/b`.
 

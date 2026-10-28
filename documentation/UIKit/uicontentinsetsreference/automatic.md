@@ -23,7 +23,7 @@ case automatic
 UIContentInsetsReferenceAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 When you set this value on a section in a collection view, the section defaults to using the content insets reference value of the collection view.
 

@@ -15,7 +15,7 @@ Creates an asynchronous iterator that produces `CameraFrame` elements on this as
 func makeAsyncIterator() -> CameraFrameProvider.CameraFrameUpdates.Iterator
 ```
 
-#### Return Value
+## Return Value
 
 An Iterator for `Events`
 

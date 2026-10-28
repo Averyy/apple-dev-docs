@@ -25,11 +25,11 @@ func commonPrefix(with str: String, options mask: NSString.CompareOptions = []) 
 - (NSString *) commonPrefixWithString:(NSString *) str options:(NSStringCompareOptions) mask;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing characters the receiver and `aString` have in common, starting from the beginning of each up to the first characters that aren’t equivalent.
 
-#### Discussion
+## Discussion
 
 The returned string is based on the characters of the receiver. For example, if the receiver is “Ma¨dchen” and `aString` is “Mädchenschule”, the string returned is “Ma¨dchen”, not “Mädchen”.
 

@@ -14,7 +14,7 @@ Receive and handle merchant token life-cycle updates from Apple Pay.
 
 - [Receiving and handling merchant token notifications](../ApplePayMerchantTokenManagementAPI/receiving-and-handling-merchant-token-notifications.md)
 
-#### Discussion
+## Discussion
 
 You implement this endpoint on your server to receive notifications about merchant token life-cycle events. When a life-cycle event affects the merchant token — for example, the card’s expiration date changes, or the user or issuer deletes the token — Apple Pay calls this endpoint to notify you.
 

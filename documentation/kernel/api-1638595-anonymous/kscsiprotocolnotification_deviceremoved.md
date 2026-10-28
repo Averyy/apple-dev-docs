@@ -13,7 +13,7 @@
 kSCSIProtocolNotification_DeviceRemoved = 0x69000010
 ```
 
-#### Discussion
+## Discussion
 
 Private message sent between a SCSI protocol service provider and SCSI application layer driver to indicate device removal.
 

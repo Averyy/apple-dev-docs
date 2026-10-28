@@ -20,7 +20,7 @@ var rangeContainerObject: Any? { get set }
 @property (retain, nullable) id rangeContainerObject;
 ```
 
-#### Discussion
+## Discussion
 
 Instances of `NSRangeSpecifier` contain object specifiers representing the first or last element in a range of elements, and these specifiers are evaluated in the context of `container`.
 

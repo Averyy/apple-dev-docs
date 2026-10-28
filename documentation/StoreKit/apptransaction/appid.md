@@ -21,7 +21,7 @@ The unique identifier the App Store uses to identify the app.
 let appID: UInt64?
 ```
 
-#### Discussion
+## Discussion
 
 The App Store assigns this value. This value is the app’s Apple ID in App Store Connect. In the [`sandbox`](../appstore/environment/sandbox.md) and [`xcode`](../appstore/environment/xcode.md) environments, this value is `nil`.
 

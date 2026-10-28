@@ -25,7 +25,7 @@ var comparator: Comparator { get }
 @property (readonly) NSComparator comparator;
 ```
 
-#### Discussion
+## Discussion
 
 Call this property only for sort descriptors initialized with [`init(key:ascending:comparator:)`](./init%28key,ascending,comparator%29.md).
 

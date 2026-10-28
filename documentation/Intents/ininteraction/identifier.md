@@ -37,7 +37,7 @@ var identifier: String { get set }
 
 - [Deleting Donated Shortcuts](../../SiriKit/deleting-donated-shortcuts.md)
 
-#### Discussion
+## Discussion
 
 This property is initialized to a new UUID at initialization time, but you can change it if you want to use a different identification scheme. The identifier you assign to this property must be unique within your app.
 

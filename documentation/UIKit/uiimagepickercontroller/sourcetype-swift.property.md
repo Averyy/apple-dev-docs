@@ -22,7 +22,7 @@ var sourceType: UIImagePickerController.SourceType { get set }
 @property (nonatomic) UIImagePickerControllerSourceType sourceType;
 ```
 
-#### Discussion
+## Discussion
 
 Prior to running the picker interface, set this value to the desired source type. The source type you set must be available and an exception is thrown if it is not. If you change this property while the picker is visible, the picker interface changes to match the new value in this property.
 

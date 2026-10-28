@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two accessory anchors are equal.
 static func == (lhs: AccessoryAnchor, rhs: AccessoryAnchor) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two accessory anchors are equal; otherwise, `false`.
 

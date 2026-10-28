@@ -24,11 +24,11 @@ func evaluatePredicate(in system: GKRuleSystem) -> Bool
 - (BOOL) evaluatePredicateWithSystem:(GKRuleSystem *) system;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the rule is satisfied (and its action should be executed); otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The [`GKNSPredicateRule`](../gknspredicaterule.md) class overrides this method to use its [`predicate`](./predicate.md) property for testing the rule. Subclasses of [`GKNSPredicateRule`](../gknspredicaterule.md) do not need to override this method.
 

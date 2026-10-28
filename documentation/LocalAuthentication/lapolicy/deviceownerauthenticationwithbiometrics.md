@@ -23,7 +23,7 @@ case deviceOwnerAuthenticationWithBiometrics
 LAPolicyDeviceOwnerAuthenticationWithBiometrics
 ```
 
-#### Discussion
+## Discussion
 
 You use the [`LAPolicy.deviceOwnerAuthenticationWithBiometrics`](./deviceownerauthenticationwithbiometrics.md) policy when calling the [`evaluatePolicy(_:localizedReason:reply:)`](../lacontext/evaluatepolicy%28_,localizedreason,reply%29.md) method to authenticate the user with biometrics.
 

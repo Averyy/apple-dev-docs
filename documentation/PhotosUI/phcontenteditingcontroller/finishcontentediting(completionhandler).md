@@ -28,7 +28,7 @@ func finishContentEditing() async -> PHContentEditingOutput?
 - (void) finishContentEditingWithCompletionHandler:(void (^)(PHContentEditingOutput *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Photos calls this method when the user chooses to end the editing session. Your extension view controller should:
 

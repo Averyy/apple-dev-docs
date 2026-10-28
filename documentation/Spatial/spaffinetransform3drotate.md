@@ -21,7 +21,7 @@ Returns a transform that results from applying the specified rotation.
 static SPAffineTransform3D SPAffineTransform3DRotate(SPAffineTransform3D transform, SPRotation3D rotation);
 ```
 
-#### Return Value
+## Return Value
 
 The transform that results from applying the specified rotation.
 

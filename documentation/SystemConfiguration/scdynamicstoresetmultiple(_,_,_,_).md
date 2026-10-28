@@ -19,7 +19,7 @@ func SCDynamicStoreSetMultiple(_ store: SCDynamicStore?, _ keysToSet: CFDictiona
 Boolean SCDynamicStoreSetMultiple(SCDynamicStoreRef store, CFDictionaryRef keysToSet, CFArrayRef keysToRemove, CFArrayRef keysToNotify);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the dynamic store updates were successful; otherwise, `FALSE`.
 

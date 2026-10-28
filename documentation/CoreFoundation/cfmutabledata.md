@@ -23,7 +23,7 @@ class CFMutableData
 typedef struct __CFData * CFMutableDataRef;
 ```
 
-#### Overview
+## Overview
 
 CFMutableData manages dynamic binary data. The basic interface for managing binary data is provided by [`CFData`](./cfdata.md). CFMutableData adds functions to modify the contents of a binary data object.
 

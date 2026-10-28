@@ -20,11 +20,11 @@ optional func application(_ sender: NSApplication, delegateHandlesKey key: Strin
 - (BOOL) application:(NSApplication *) sender delegateHandlesKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if your delegate handles the key or [`false`](../../Swift/false.md) if it does not.
 
-#### Discussion
+## Discussion
 
 Implement this method and return [`true`](../../Swift/true.md) if your delegate handles the specified `key`, Your delegate must be able get or set the scriptable property or element that corresponds to that key. You need to handle only your app’s custom commands. The app already implements methods for each of the keys that it handles, where the method name matches the key.
 

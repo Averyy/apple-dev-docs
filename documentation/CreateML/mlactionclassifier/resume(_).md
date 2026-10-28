@@ -15,7 +15,7 @@ Begins or continues an asynchronous action classifier training session.
 static func resume(_ session: MLTrainingSession<MLActionClassifier>) throws -> MLJob<MLActionClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLJob`](../mljob.md) that represents the action classifier training session.
 

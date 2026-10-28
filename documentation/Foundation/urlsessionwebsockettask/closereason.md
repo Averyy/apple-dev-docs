@@ -25,7 +25,7 @@ var closeReason: Data? { get }
 @property (copy, readonly, nullable) NSData * closeReason;
 ```
 
-#### Discussion
+## Discussion
 
 The close reason provides further information about why a connection closed, beyond that provided by the [`closeCode`](./closecode-swift.property.md). The value of this property isn’t defined by [RFC 6455](https://tools.ietf.org/html/rfc6455); the endpoints define how it’s used.
 

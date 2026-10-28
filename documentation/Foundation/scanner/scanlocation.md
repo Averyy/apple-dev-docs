@@ -25,7 +25,7 @@ var scanLocation: Int { get set }
 @property NSUInteger scanLocation;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an `NSRangeException` if `index` is beyond the end of the string being scanned.
 

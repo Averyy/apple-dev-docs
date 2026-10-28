@@ -25,11 +25,11 @@ func base64EncodedString(options: NSData.Base64EncodingOptions = []) -> String
 - (NSString *) base64EncodedStringWithOptions:(NSDataBase64EncodingOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A Base64 encoded string.
 
-#### Discussion
+## Discussion
 
 By default, no line endings are inserted.
 

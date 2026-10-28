@@ -15,7 +15,7 @@ The file type.
 static let fileType: NSAttributedString.DocumentReadingOptionKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../nsstring.md) object indicating a document type to be forced when loading the document, specified as a UTI string; mutually exclusive with [`documentType`](./documenttype.md).
 

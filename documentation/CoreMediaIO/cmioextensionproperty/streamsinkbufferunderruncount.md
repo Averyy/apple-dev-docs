@@ -20,7 +20,7 @@ static let streamSinkBufferUnderrunCount: CMIOExtensionProperty
 extern CMIOExtensionProperty const CMIOExtensionPropertyStreamSinkBufferUnderrunCount;
 ```
 
-#### Discussion
+## Discussion
 
 The system updates this value every time you don’t service a stream’s buffer fast enough.
 

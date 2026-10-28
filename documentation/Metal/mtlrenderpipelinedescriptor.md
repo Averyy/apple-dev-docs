@@ -31,7 +31,7 @@ class MTLRenderPipelineDescriptor
 - [Improving rendering performance with vertex amplification](./improving-rendering-performance-with-vertex-amplification.md)
 - [Rendering to multiple texture slices in a draw command](./rendering-to-multiple-texture-slices-in-a-draw-command.md)
 
-#### Overview
+## Overview
 
 An [`MTLRenderPipelineDescriptor`](./mtlrenderpipelinedescriptor.md) instance configures the state of the pipeline to use during a rendering pass, including rasterization (such as multisampling), visibility, blending, tessellation, and graphics function state. Use standard allocation and initialization techniques to create an [`MTLRenderPipelineDescriptor`](./mtlrenderpipelinedescriptor.md) object. Then configure and use the descriptor to create an [`MTLRenderPipelineState`](./mtlrenderpipelinestate.md) object.
 
@@ -41,7 +41,7 @@ Setting the [`fragmentFunction`](./mtlrenderpipelinedescriptor/fragmentfunction.
 
 If the vertex shader has an argument with per-vertex input attributes, set the [`vertexDescriptor`](./mtlrenderpipelinedescriptor/vertexdescriptor.md) property to an [`MTLVertexDescriptor`](./mtlvertexdescriptor.md) object that describes the organization of that vertex data.
 
-##### Multisampling and the render pipeline
+### Multisampling and the render pipeline
 
 If a color attachment supports multisampling (essentially, the attachment is an [`MTLTextureType.type2DMultisample`](./mtltexturetype/type2dmultisample.md) type color texture), you can create multiple samples per fragment, and the following rendering pipeline descriptor properties determine coverage:
 

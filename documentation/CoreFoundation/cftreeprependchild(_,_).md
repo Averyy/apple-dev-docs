@@ -25,7 +25,7 @@ func CFTreePrependChild(_ tree: CFTree!, _ newChild: CFTree!)
 extern void CFTreePrependChild(CFTreeRef tree, CFTreeRef newChild);
 ```
 
-#### Discussion
+## Discussion
 
 When a child tree is added to another tree, the child tree is retained by its new parent.
 

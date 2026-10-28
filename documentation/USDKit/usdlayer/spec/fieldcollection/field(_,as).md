@@ -20,7 +20,7 @@ Typed field accessor.
 func field<T>(_ name: USDToken, as type: T.Type) -> T? where T : USDValueProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The field’s value as `T`, or `nil` if the field is unauthored or holds a different type.
 

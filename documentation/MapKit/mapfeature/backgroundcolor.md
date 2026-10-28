@@ -21,7 +21,7 @@ The background color associated with the map feature.
 var backgroundColor: Color? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this feature doesn’t have a background color this property is `nil`.
 

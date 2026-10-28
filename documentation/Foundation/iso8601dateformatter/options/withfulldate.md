@@ -23,7 +23,7 @@ static var withFullDate: ISO8601DateFormatter.Options { get }
 NSISO8601DateFormatWithFullDate
 ```
 
-#### Discussion
+## Discussion
 
 The date representation includes the year, month, and day. Equivalent to specifying [`withYear`](./withyear.md), [`withMonth`](./withmonth.md), and [`withDay`](./withday.md)
 

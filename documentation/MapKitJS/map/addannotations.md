@@ -15,11 +15,11 @@ Adds an array of annotations to the map.
 addAnnotations(annotations: Annotation[]): Annotation[];
 ```
 
-#### Return Value
+## Return Value
 
 Returns the array of annotations.
 
-#### Discussion
+## Discussion
 
 The map shows annotations that have their [`animates`](../annotation/animates.md) property set to `true` in a staggered manner, in order of latitude.
 

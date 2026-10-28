@@ -5,7 +5,7 @@
 
 Launch and open documents in other apps from your current app process.
 
-#### Overview
+## Overview
 
 macOS Launch Services is an API that enables a running app to open other apps or their document files, similar to the Finder or the Dock. Using Launch Services, an app can perform such tasks as:
 

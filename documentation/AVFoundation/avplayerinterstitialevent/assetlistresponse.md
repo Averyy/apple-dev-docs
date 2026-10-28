@@ -25,7 +25,7 @@ var assetListResponse: [AnyHashable : any Sendable]? { get }
 @property (readonly, nullable) NSDictionary * assetListResponse;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if there is no asset list loaded for the event. If this value is `nil` and the event’s [`templateItems`](./templateitems.md) is empty, then an asset list read is expected. If this value is `nil` and [`templateItems`](./templateitems.md) isn’t empty, an asset list read isn’t expected.
 

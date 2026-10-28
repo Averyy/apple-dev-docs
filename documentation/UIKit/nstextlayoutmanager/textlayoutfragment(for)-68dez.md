@@ -23,7 +23,7 @@ func textLayoutFragment(for location: any NSTextLocation) -> NSTextLayoutFragmen
 - (NSTextLayoutFragment *) textLayoutFragmentForLocation:(id<NSTextLocation>) location;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSTextLayoutFragment`](../nstextlayoutfragment.md).
 

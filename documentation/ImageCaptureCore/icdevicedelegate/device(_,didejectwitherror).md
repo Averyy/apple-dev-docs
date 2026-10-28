@@ -23,7 +23,7 @@ optional func device(_ device: ICDevice, didEjectWithError error: (any Error)?)
 - (void) device:(ICDevice *) device didEjectWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Execution of the delegate callback occurs on the main thread.
 

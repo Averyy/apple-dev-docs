@@ -25,7 +25,7 @@ var isSensitive: Bool { get set }
 @property BOOL sensitive;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set to [`true`](../../Swift/true.md), any sessions established for the receiver will begin and end by sending a reset command to the Smart Card. This is recommended anytime potentially sensitive information is transferred.
 

@@ -19,7 +19,7 @@ weak var pulldownTarget: AnyObject? { get set }
 @property (weak, nullable) id pulldownTarget;
 ```
 
-#### Discussion
+## Discussion
 
 Specify a custom action method to replace the system popover and color picker. For a color well with the [`NSColorWell.Style.minimal`](./style/minimal.md) or [`NSColorWell.Style.expanded`](./style/expanded.md) style, clicks in the color area normally display a popover with the system color picker.  If you specify a value for this property and the [`pulldownAction`](./pulldownaction.md) property, clicks in the color area execute your custom action method instead.
 

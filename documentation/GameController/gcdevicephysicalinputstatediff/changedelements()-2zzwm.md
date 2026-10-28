@@ -24,11 +24,11 @@ func changedElements() -> (some Sequence<any GCPhysicalInputElement>)?
 
 - [Handling input events](../handling-input-events.md)
 
-#### Return Value
+## Return Value
 
 A sequence that contains the changed elements in no particular order.
 
-#### Discussion
+## Discussion
 
 Returns `nil` if there’s no previous input state, either because this is the first input state or Game Controller discards the prior input state because the queue is full.
 

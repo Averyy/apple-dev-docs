@@ -19,7 +19,7 @@ let descriptor: Data
 
 - [Creating virtual devices](../../creatingvirtualdevices.md)
 
-#### Discussion
+## Discussion
 
 A report descriptor defines details about the device and the type of interactions that it can have, such as the type of input it can generate, and the queries it responds to. This is the raw descriptor in byte form.
 

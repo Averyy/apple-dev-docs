@@ -25,7 +25,7 @@ let kCGPDFXOutputCondition: CFString
 extern CFStringRef const kCGPDFXOutputCondition;
 ```
 
-#### Discussion
+## Discussion
 
 This key is optional. If present, the value of this key must be a [`CFString`](../CoreFoundation/cfstring.md) object.
 

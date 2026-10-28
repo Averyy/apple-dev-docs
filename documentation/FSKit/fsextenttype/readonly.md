@@ -19,7 +19,7 @@ case readOnly
 FSExtentTypeReadOnly
 ```
 
-#### Discussion
+## Discussion
 
 Use this type to represent ranges in the file that data can be read but not written to.
 

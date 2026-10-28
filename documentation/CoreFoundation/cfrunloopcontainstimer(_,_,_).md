@@ -25,11 +25,11 @@ func CFRunLoopContainsTimer(_ rl: CFRunLoop!, _ timer: CFRunLoopTimer!, _ mode: 
 extern Boolean CFRunLoopContainsTimer(CFRunLoopRef rl, CFRunLoopTimerRef timer, CFRunLoopMode mode);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `timer` is in mode `mode` of the run loop `rl`, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 If `timer` was added to [`commonModes`](./cfrunloopmode/commonmodes.md), this function returns `true` if `mode` is either [`commonModes`](./cfrunloopmode/commonmodes.md) or any of the modes that has been added to the set of common modes.
 

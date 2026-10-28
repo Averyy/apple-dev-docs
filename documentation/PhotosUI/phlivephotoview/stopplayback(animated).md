@@ -19,7 +19,7 @@ func stopPlayback(animated: Bool)
 - (void) stopPlaybackAnimated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method with a value of `false` is the same as calling [`stopPlayback()`](./stopplayback%28%29.md).
 

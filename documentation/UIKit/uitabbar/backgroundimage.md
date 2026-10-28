@@ -23,7 +23,7 @@ var backgroundImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * backgroundImage;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify a stretchable background image, the tab bar stretches your image to fill the available space. If your image is not stretchable and not large enough to fill the available space, the tab bar tiles the image. For information about how stretching works, see the [`UIImage.ResizingMode`](../uiimage/resizingmode-swift.enum.md) type in [`UIImage`](../uiimage.md).
 

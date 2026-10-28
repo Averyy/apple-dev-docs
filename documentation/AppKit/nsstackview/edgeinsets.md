@@ -19,7 +19,7 @@ var edgeInsets: NSEdgeInsets { get set }
 @property NSEdgeInsets edgeInsets;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `(0, 0, 0, 0)`. Edge insets remain as they are if you change the value of a stack view’s [`orientation`](./orientation.md) property or the value of its inherited [`userInterfaceLayoutDirection`](../nsview/userinterfacelayoutdirection.md) property.
 

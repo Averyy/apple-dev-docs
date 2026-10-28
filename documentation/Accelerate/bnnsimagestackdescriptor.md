@@ -25,7 +25,7 @@ struct BNNSImageStackDescriptor
 typedef struct { ... } BNNSImageStackDescriptor;
 ```
 
-#### Overview
+## Overview
 
 Image stack descriptor (DEPRECATED, Use BNNSNDArrayDescriptor)
 

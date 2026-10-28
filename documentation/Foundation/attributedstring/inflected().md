@@ -21,7 +21,7 @@ Applies automatic grammar agreement inflection rules to the attributed string an
 func inflected() -> AttributedString
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string that represents the effect of applying inflection rules to the source attributed string.
 

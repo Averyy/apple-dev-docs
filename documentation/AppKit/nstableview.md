@@ -19,7 +19,7 @@ class NSTableView
 @interface NSTableView : NSControl
 ```
 
-#### Overview
+## Overview
 
 Table views are displayed in scroll views. Beginning with macOS v10.7, you can use [`NSView`](./nsview.md) objects (most commonly customized [`NSTableCellView`](./nstablecellview.md) objects) instead of cells for specifying rows and columns. You can still use [`NSCell`](./nscell.md) objects for each row and column item if you prefer.
 
@@ -29,11 +29,11 @@ To customize a table view’s behavior without subclassing `NSTableView`, use th
 
 > ❗ **Important**:  It’s possible that your data source methods for populating the table view may be called before [`awakeFromNib()`](../ObjectiveC/nsobject-swift.class/awakefromnib%28%29.md) is called if the data source is specified in Interface Builder. You should defend against this by having the data source’s [`numberOfRows(in:)`](./nstableviewdatasource/numberofrows%28in%29.md) method return `0` for the number of rows when the data source has not yet been configured. In [`awakeFromNib()`](../ObjectiveC/nsobject-swift.class/awakefromnib%28%29.md), when the data source is initialized you should always call `reloadData` on the table view.
 
-##### Subclassing
+### Subclassing
 
 Subclassing `NSTableView` is usually not necessary. Instead, you customize the table view using a delegate object (an object conforming to the [`NSTableViewDelegate`](./nstableviewdelegate.md) protocol) and a data source object (conforming to the [`NSTableViewDataSource`](./nstableviewdatasource.md) protocol), or by subclassing one of the following subcomponents: cells (when using [`NSCell`](./nscell.md)-based table views), the row cell view or the row view (when using [`NSView`](./nsview.md)-based table views), the table column class, or table column header classes.
 
-##### Enabling the Table View
+### Enabling the Table View
 
 Use the [`isEnabled`](./nscontrol/isenabled.md) property to enable or disable the table view, which the view inherits from [`NSControl`](./nscontrol.md). This property affects the visual appearance of the table view differently depending on whether you use a view- or a cell-based table view. When you change the property’s value for a cell-based table view, the system manages the visual appearance of that table view’s rows, and updates them to a state that reflects the value. Because view-based table views permit complex items in their cells, it’s the developer’s responsibility to update each cell’s appearance as appropriate.
 

@@ -26,7 +26,7 @@ subscript(id: IKRig.JointCollection.Element.ID) -> IKRig.JointCollection.Element
 subscript(name: String) -> IKRig.JointCollection.Element? { get set }
 ```
 
-#### Overview
+## Overview
 
 The following set scenarios are ignored:
 

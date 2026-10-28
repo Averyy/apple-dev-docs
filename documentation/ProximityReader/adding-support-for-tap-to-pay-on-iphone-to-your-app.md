@@ -5,7 +5,7 @@
 
 Configure your app to use Tap to Pay on iPhone to read contactless payment cards.
 
-#### Overview
+## Overview
 
 Tap to Pay on iPhone lets an app use the person’s iPhone to read contactless payment cards without any additional hardware. Merchants use your app to request payments from customers, and process the financial transactions using the back-end payment services you offer. Your app uses the [ProximityReader](./ProximityReader.md) framework to read the payment method someone presents. You then pass that payment method and transaction details to the payment service provider you use to handle financial transactions.
 
@@ -16,7 +16,7 @@ The region or payment service provider may require a specific iOS version for me
 - For a list of supported regions and payment service providers, see [https://developer.apple.com/tap-to-pay/#regions](https://developer.apple.com/tap-to-pay/#regions).
 - For additional merchant-related information, see [Frequently asked questions](https://register.apple.com/tap-to-pay-on-iphone/faq/) for Tap to Pay on iPhone.
 
-##### Verify the current device supports Tap to Pay on iPhone
+### Verify the current device supports Tap to Pay on iPhone
 
 Before you attempt to use Tap to Pay on iPhone, verify that the current device supports the feature. Tap to Pay on iPhone is available only on iPhone, starting with iPhone XS. To determine if the feature is available on the current device, check the value of the [`isSupported`](./paymentcardreader/issupported.md) static property before you do anything else. If the feature is available, create a [`PaymentCardReader`](./paymentcardreader.md) object to manage further interactions and to start sessions to read payment cards.
 
@@ -37,7 +37,7 @@ public class MyPaymentProcessor {
 }
 ```
 
-##### Display the Terms and Conditions interface to the merchant
+### Display the Terms and Conditions interface to the merchant
 
 The first time a merchant runs your app, present an interface for them to accept the Terms and Conditions for Tap to Pay on iPhone. Accepting the terms and conditions registers that merchant with Tap to Pay on iPhone, and allows them to begin using the feature. Merchants need to accept the terms and conditions only once for a given merchant identifier, even if they use the feature on a different device.
 
@@ -65,7 +65,7 @@ extension MyPaymentProcessor {
 }
 ```
 
-##### Create a session to read payment cards from the current device
+### Create a session to read payment cards from the current device
 
 Each time your app launches, create a [`PaymentCardReaderSession`](./paymentcardreadersession.md) to handle the reading of payment card information. You create this session using the [`prepare(using:)`](./paymentcardreader/prepare%28using%29.md) method of your [`PaymentCardReader`](./paymentcardreader.md) object. The initial configuration of the device can take up to two minutes, but subsequent requests typically take only a few seconds. The [`events`](./paymentcardreader/events.md) property provides an asynchronous stream of events that you can use to display a progress UI to the merchant.
 
@@ -110,7 +110,7 @@ If the merchant closes your app while configuration is in progress, the [`prepar
 
 > ❗ **Important**: When your app goes into the background, the current session ends. When that happens, set any variables that contain the session to `nil`. When your app returns to the foreground, call [`prepare(using:)`](./paymentcardreader/prepare%28using%29.md) every time to create a new session.
 
-##### Present the UI to request someone’s payment details
+### Present the UI to request someone’s payment details
 
 Once you have a [`PaymentCardReaderSession`](./paymentcardreadersession.md) you can use it to display a sheet to the merchant’s customer asking them for their payment method. The sheet displays a standard system payment UI and waits for the customer to present their card or other payment method to the merchant’s iPhone. As soon as the iPhone collects the payment information, the sheet closes and the session returns a [`PaymentCardReadResult`](./paymentcardreadresult.md) to your app. If the sheet wasn’t able to collect a payment information, it returns a [`PaymentCardReaderSession.ReadError`](./paymentcardreadersession/readerror.md) to let you know that a problem occurred. Make sure your app handles the different types of errors that can occur for transactions.
 
@@ -149,7 +149,7 @@ extension MyPaymentProcessor {
 
 Catch any errors that happen during a payment read operation and take appropriate action. For more information about the errors that can occur, see [`PaymentCardReaderSession.ReadError`](./paymentcardreadersession/readerror.md).
 
-##### Capture PIN information as part of a transaction
+### Capture PIN information as part of a transaction
 
 Some cards require the customer to enter an associated personal identification number (PIN) to complete a transaction. If the current card requires a PIN, the system UI automatically asks the person to enter it after reading the card. After the person enters the PIN and completes the transaction, the session returns a [`PaymentCardReadResult`](./paymentcardreadresult.md) structure that contains the encrypted PIN data along with the rest of the transaction data.
 
@@ -190,7 +190,7 @@ extension MyPaymentProcessor {
 
 > ❗ **Important**: When capturing a PIN from a merchant’s customer, do not display any correlatable data in an unsecure manner. A nonexhaustive list of correlatable data includes: phone numbers, email addresses, last 4 digits of payment cards with the expiry date, and so on. If you must display any correlatable data during PIN capture, the best practice is to show only a portion of the data. For example, show only the last 4 digits of the person’s phone number: XXX-XXX-1234.
 
-##### Turn off card reader functionality when not in use
+### Turn off card reader functionality when not in use
 
 If payment processing is one of several features of your app, you can turn off the card reader functionality when not in use. The simplest way to turn off this functionality is to deallocate the [`PaymentCardReader`](./paymentcardreader.md) and [`PaymentCardReaderSession`](./paymentcardreadersession.md) objects you currently have. The following method sets the `reader` and `session` variables of the previously defined `MyPaymentProcessor` class to `nil`:
 

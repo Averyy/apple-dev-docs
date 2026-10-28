@@ -21,11 +21,11 @@ Decodes an integer value associated with a given key.
 - (int) decodeIntForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The integer value associated with the key `key`. Returns `0` if `key` does not exist.
 
-#### Discussion
+## Discussion
 
 If the archived value was encoded with a different size but is still an integer, the type is coerced. If the archived value is too large to fit into the default size for an integer, the method raises an `NSRangeException`.
 

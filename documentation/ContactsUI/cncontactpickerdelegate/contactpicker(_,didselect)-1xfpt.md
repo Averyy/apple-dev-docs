@@ -39,7 +39,7 @@ optional func contactPicker(_ picker: CNContactPicker, didSelect contactProperty
 - (void) contactPicker:(CNContactPicker *) picker didSelectContactProperty:(CNContactProperty *) contactProperty;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate method ia called when the user selects a single property of the contact.
 

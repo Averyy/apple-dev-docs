@@ -23,11 +23,11 @@ optional func insertTextPlaceholder(with size: CGSize) -> UITextPlaceholder
 - (UITextPlaceholder *) insertTextPlaceholderWithSize:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 The placeholder object that was inserted into the text input.
 
-#### Discussion
+## Discussion
 
 If the `size.height` is less than or equal to zero, then the placeholder displays inline using the current line’s height.
 

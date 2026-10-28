@@ -24,7 +24,7 @@ var maximumValue: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * maximumValue;
 ```
 
-#### Discussion
+## Discussion
 
 This value only applies to characteristics with a number type.
 

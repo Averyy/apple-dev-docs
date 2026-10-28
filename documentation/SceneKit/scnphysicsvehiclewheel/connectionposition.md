@@ -25,7 +25,7 @@ var connectionPosition: SCNVector3 { get set }
 @property SCNVector3 connectionPosition;
 ```
 
-#### Discussion
+## Discussion
 
 This vector is expressed in the coordinate space of the node containing the vehicle’s chassis. When you create a wheel from a node, SceneKit uses the node’s [`position`](../scnnode/position.md) property as the wheel’s connection point.
 

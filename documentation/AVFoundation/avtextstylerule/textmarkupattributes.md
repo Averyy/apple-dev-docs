@@ -24,7 +24,7 @@ var textMarkupAttributes: [String : Any] { get }
 @property (nonatomic, readonly) NSDictionary<NSString *,id> * textMarkupAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 The supported keys for this dictionary are defined in `CMTextMarkup.h`.
 

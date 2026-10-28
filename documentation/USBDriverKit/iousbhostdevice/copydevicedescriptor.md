@@ -15,11 +15,11 @@ Returns the device descriptor.
 virtual const IOUSBDeviceDescriptor * CopyDeviceDescriptor();
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the device descriptor, or `NULL` if the service is terminating. It’s your responsibility to free the returned descriptor.
 
-#### Discussion
+## Discussion
 
 This method searches the descriptor cache for the specified descriptor. If the descriptor isn’t in the cache, the method retrieves it from the device using a `GET_DESCRIPTOR` control request (USB 2.0, section 9.4.3) and adds it to the cache. When making a `GET_DESCRIPTOR` control request, this method acquires the service’s workloop lock and may call [`commandSleep`](../../kernel/iocommandgate/api-1573818-commandsleep.md).
 

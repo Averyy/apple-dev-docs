@@ -22,7 +22,7 @@ case application
 - [Routing and streaming media to remote devices](../../routing-and-streaming-media-to-remote-devices.md)
 - [Routing media to third-party devices](../../routing-media-to-third-party-devices.md)
 
-#### Discussion
+## Discussion
 
 Use this mode when you want to start your app’s counterpart on the remote device, enabling app-to-application communication and custom playback experiences. The remote application can handle the provided URL and maintain bidirectional communication through the [`AVSystemRoute.DataChannel`](../datachannel.md) returned by [`start()`](../../avsystemroutesession-gp78/start%28%29.md).
 

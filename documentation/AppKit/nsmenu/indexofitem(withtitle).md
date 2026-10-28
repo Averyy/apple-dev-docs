@@ -19,7 +19,7 @@ func indexOfItem(withTitle title: String) -> Int
 - (NSInteger) indexOfItemWithTitle:(NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 The integer index of the menu item or, if no such menu item is in the menu, –1.
 

@@ -24,7 +24,7 @@ static var allowBluetoothHFP: AVAudioSession.CategoryOptions { get }
 AVAudioSessionCategoryOptionAllowBluetoothHFP
 ```
 
-#### Discussion
+## Discussion
 
 You can use this option only with the [`record`](../category-swift.struct/record.md) and  [`playAndRecord`](../category-swift.struct/playandrecord.md) categories.
 

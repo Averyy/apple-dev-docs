@@ -5,7 +5,7 @@
 
 Retrieve a GPU’s counter data at a time the GPU supports.
 
-#### Overview
+## Overview
 
 You can sample a GPU device’s performance counter data at different times, including:
 
@@ -23,7 +23,7 @@ The sections below explain how to identify when you can sample a GPU’s counter
 
 Each GPU vendor defines its own private data format for its counter sample buffers, which means your app can’t read the contents of each buffer directly. Instead, your app can transform the data from the vendor’s internal format to the standard Metal formats by *resolving* each sample buffer. See [Converting a GPU’s counter data into a readable format](./converting-a-gpus-counter-data-into-a-readable-format.md) for the next steps that resolve the data within a counter sample buffer.
 
-##### Check which boundaries a GPU supports
+### Check which boundaries a GPU supports
 
 You can inspect a GPU device instance to see whether it supports a specific sample boundary by calling its [`supportsCounterSampling(_:)`](./mtldevice/supportscountersampling%28_%29.md) method with each [`MTLCounterSamplingPoint`](./mtlcountersamplingpoint.md) case.
 
@@ -118,7 +118,7 @@ func samplingBoundariesFor(_ device: MTLDevice) -> [MTLCounterSamplingPoint] {
 
 This method checks for multiple sample boundaries and returns those the GPU supports in an array.
 
-##### Sample counters at stage boundaries
+### Sample counters at stage boundaries
 
 For a GPU device that can sample counters at stage boundaries ( [`MTLCounterSamplingPoint.atStageBoundary`](./mtlcountersamplingpoint/atstageboundary.md)), you can sample its counters between the stages of a pass. When the GPU starts or finishes a stage, it samples the counters and copies the results into a counter sample buffer.
 
@@ -183,7 +183,7 @@ Each type of pass has different boundary types and corresponding properties in t
 | [`MTLBlitPassDescriptor`](./mtlblitpassdescriptor.md) | [`MTLBlitPassSampleBufferAttachmentDescriptor`](./mtlblitpasssamplebufferattachmentdescriptor.md) | [`sampleBuffer`](./mtlblitpasssamplebufferattachmentdescriptor/samplebuffer.md) ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) [`startOfEncoderSampleIndex`](./mtlblitpasssamplebufferattachmentdescriptor/startofencodersampleindex.md) ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) [`endOfEncoderSampleIndex`](./mtlblitpasssamplebufferattachmentdescriptor/endofencodersampleindex.md) |
 | [`MTLResourceStatePassDescriptor`](./mtlresourcestatepassdescriptor.md) | [`MTLResourceStatePassSampleBufferAttachmentDescriptor`](./mtlresourcestatepasssamplebufferattachmentdescriptor.md) | [`sampleBuffer`](./mtlresourcestatepasssamplebufferattachmentdescriptor/samplebuffer.md) ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) [`startOfEncoderSampleIndex`](./mtlresourcestatepasssamplebufferattachmentdescriptor/startofencodersampleindex.md) ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) [`endOfEncoderSampleIndex`](./mtlresourcestatepasssamplebufferattachmentdescriptor/endofencodersampleindex.md) |
 
-##### Sample counters at command boundaries
+### Sample counters at command boundaries
 
 You can encode specific commands to sample a counter’s data during a pass for a GPU that supports any of the following boundaries:
 

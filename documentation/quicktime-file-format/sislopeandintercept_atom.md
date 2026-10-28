@@ -6,7 +6,7 @@
 
 An atom that contains parameters relevant to a decompressor component.
 
-#### Overview
+## Overview
 
 > **Note**: The siSlopeAndIntercept atom is deprecated in the QuickTime file format. The information that follows documents existing content containing this atom and should not be used for new development.
 

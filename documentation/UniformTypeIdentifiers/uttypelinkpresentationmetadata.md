@@ -19,7 +19,7 @@
 extern UTType * const UTTypeLinkPresentationMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 Serialized LinkPresentation metadata.
 

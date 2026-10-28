@@ -20,7 +20,7 @@ A joint that allows one degree of rotational freedom between two entity pins, si
 struct PhysicsRevoluteJoint
 ```
 
-#### Overview
+## Overview
 
 `PhysicsRevoluteJoint` allows one rotational degree of freedom along the x-axis of two entity pins.
 

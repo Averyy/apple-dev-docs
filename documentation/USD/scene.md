@@ -5,11 +5,11 @@
 
 The scene to which the action transitions.
 
-#### Overview
+## Overview
 
 An asset should assign this relationship a scene prim, as defined through the [sceneLibrary](./scenelibrary.md) `kind` metadata.
 
-##### Declaration
+### Declaration
 
 ```other
 rel scene

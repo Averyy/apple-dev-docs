@@ -19,7 +19,7 @@ A value that the vehicle can return to indicate the status of a particular vehic
 struct FunctionStatus
 ```
 
-#### Overview
+## Overview
 
 A [`FunctionStatus`](./functionstatus.md) type wraps the custom code that the vehicle returns. You define the status codes and their meanings for your vehicle’s features. For example, you might define status codes to represent the locked, unlocked, and unknown states of your vehicle’s door-locking system.
 

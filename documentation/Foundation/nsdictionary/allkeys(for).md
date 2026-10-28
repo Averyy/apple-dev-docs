@@ -25,11 +25,11 @@ func allKeys(for anObject: Any) -> [Any]
 - (NSArray<id> *) allKeysForObject:(ObjectType) anObject;
 ```
 
-#### Return Value
+## Return Value
 
 A new array containing the keys corresponding to all occurrences of `anObject` in the dictionary. If no object matching `anObject` is found, returns an empty array.
 
-#### Discussion
+## Discussion
 
 Each object in the dictionary is sent an [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) message to determine if it’s equal to `anObject`.
 

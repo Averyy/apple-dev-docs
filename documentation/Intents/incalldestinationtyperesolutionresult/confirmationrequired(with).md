@@ -24,11 +24,11 @@ class func confirmationRequired(with callDestinationTypeToConfirm: INCallDestina
 + (instancetype) confirmationRequiredWithCallDestinationTypeToConfirm:(INCallDestinationType) callDestinationTypeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCallDestinationTypeResolutionResult`](../incalldestinationtyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter but want the user to confirm the value before proceeding.
 

@@ -15,7 +15,7 @@ The Audible audiobooks format.
 Audible
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

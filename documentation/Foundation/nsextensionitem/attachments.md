@@ -33,7 +33,7 @@ var attachments: [NSItemProvider]? { get set }
 @property (atomic, copy, nullable) NSArray<NSItemProvider *> * attachments;
 ```
 
-#### Discussion
+## Discussion
 
 Populate this array with images, videos, URLs, and so on. It’s not meant to be an array of alternative data formats or types, but is instead a collection to include in a social media post, for example. These items are always typed [`NSItemProvider`](../nsitemprovider.md).
 

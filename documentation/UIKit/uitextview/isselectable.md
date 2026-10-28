@@ -23,7 +23,7 @@ var isSelectable: Bool { get set }
 @property (nonatomic, getter=isSelectable) BOOL selectable;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls the ability of the user to select content and interact with URLs and text attachments. The default value is [`true`](../../Swift/true.md).
 

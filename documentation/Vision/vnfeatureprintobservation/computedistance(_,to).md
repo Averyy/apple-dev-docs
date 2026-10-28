@@ -24,7 +24,7 @@ func computeDistance(_ outDistance: UnsafeMutablePointer<Float>, to featurePrint
 - (BOOL) computeDistance:(float *) outDistance toFeaturePrintObservation:(VNFeaturePrintObservation *) featurePrint error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Shorter distances indicate greater similarity between feature prints.
 

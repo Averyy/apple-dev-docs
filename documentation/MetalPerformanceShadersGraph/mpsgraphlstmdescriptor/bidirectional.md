@@ -24,7 +24,7 @@ var bidirectional: Bool { get set }
 @property (nonatomic, readwrite) BOOL bidirectional;
 ```
 
-#### Discussion
+## Discussion
 
 If set to `YES` then the input sequence is traversed in both directions and the two results are concatenated together on the channel-axis. Default value: `NO`.
 

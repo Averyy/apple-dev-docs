@@ -15,11 +15,11 @@ A genre name and its structure.
 object Album.Genre
 ```
 
-#### Discussion
+## Discussion
 
 Genres are hierarchical beginning with the genre `Music`.
 
-#### Data example
+## Data example
 
 The feed export is in Parquet format. This data example is in JSON format for illustrative purposes.
 

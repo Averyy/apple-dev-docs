@@ -23,7 +23,7 @@ var uuid: UUID { get }
 @property (nonatomic, readonly) NSUUID * uuid;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to select a specific external sync device.
 

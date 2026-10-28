@@ -16,7 +16,7 @@ Performs any final cleanup for the service.
 virtual void free();
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to perform any final cleanup of your device service, such as deallocating memory you allocated. The system calls this method at some point after it calls your service’s [`Stop`](../iouserhideventservice/stop.md) method.
 

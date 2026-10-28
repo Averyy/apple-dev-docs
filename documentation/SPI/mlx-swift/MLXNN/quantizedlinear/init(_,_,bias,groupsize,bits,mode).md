@@ -17,7 +17,7 @@ Applies an affine transformation to the input using a quantized weight matrix.
 convenience init(_ inputDimensions: Int, _ outputDimensions: Int, bias: Bool = true, groupSize: Int = 64, bits: Int = 4, mode: QuantizationMode = .affine)
 ```
 
-#### Discussion
+## Discussion
 
 This is the quantized version of [`Linear`](../linear.md).  Typically this is used via [`quantize(model:groupSize:bits:predicate:)`](./quantize%28model,groupsize,bits,predicate%29.md).
 

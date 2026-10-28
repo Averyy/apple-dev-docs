@@ -19,7 +19,7 @@ var hasPreciseScrollingDeltas: Bool { get }
 @property (readonly) BOOL hasPreciseScrollingDeltas;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to [`true`](../../Swift/true.md) if precise scrolling deltas are available; otherwise, [`false`](../../Swift/false.md).
 

@@ -21,7 +21,7 @@ Returns the negative value of each element in the supplied single-precision vect
 static func negative<U>(_ vector: U) -> [Float] where U : AccelerateBuffer, U.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code calculates the negative values of the elements of an array:
 

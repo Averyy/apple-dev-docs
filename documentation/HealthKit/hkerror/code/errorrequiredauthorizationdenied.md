@@ -28,7 +28,7 @@ HKErrorRequiredAuthorizationDenied
 
 - [Authorizing access to health data](../../authorizing-access-to-health-data.md)
 
-#### Discussion
+## Discussion
 
 You can specify required clinical record types using the [`NSHealthRequiredReadAuthorizationTypeIdentifiers`](../../../BundleResources/information-property-list/nshealthrequiredreadauthorizationtypeidentifiers.md) `Info.plist` key.
 

@@ -21,7 +21,7 @@ The default type for an otherwise-unconstrained Boolean literal.
 typealias BooleanLiteralType = Bool
 ```
 
-#### Discussion
+## Discussion
 
 When you create a constant or variable using one of the Boolean literals `true` or `false`, the resulting type is determined by the `BooleanLiteralType` alias. For example:
 

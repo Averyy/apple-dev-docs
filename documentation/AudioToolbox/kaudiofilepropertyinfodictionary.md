@@ -24,7 +24,7 @@ var kAudioFilePropertyInfoDictionary: AudioFilePropertyID { get }
 kAudioFilePropertyInfoDictionary
 ```
 
-#### Discussion
+## Discussion
 
 If you access this property, your app is responsible for releasing the [`CFDictionary`](../CoreFoundation/cfdictionary.md) object.
 

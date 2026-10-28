@@ -27,7 +27,7 @@ var regularization_func: BNNSOptimizerRegularizationFunction
 BNNSOptimizerRegularizationFunction regularization_func;
 ```
 
-#### Discussion
+## Discussion
 
 The AdamW optimizer ignores this parameter.
 

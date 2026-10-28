@@ -19,11 +19,11 @@ class func constraints(withVisualFormat format: String, options opts: NSLayoutCo
 + (NSArray<NSLayoutConstraint *> *) constraintsWithVisualFormat:(NSString *) format options:(NSLayoutFormatOptions) opts metrics:(NSDictionary<NSString *,id> *) metrics views:(NSDictionary<NSString *,id> *) views;
 ```
 
-#### Return Value
+## Return Value
 
 An array of constraints that, combined, express the constraints between the provided views and their parent view as described by the visual format string. The constraints are returned in the same order they were specified in the visual format string.
 
-#### Discussion
+## Discussion
 
 For more information, see [`NSLayoutConstraint`](../nslayoutconstraint.md).
 

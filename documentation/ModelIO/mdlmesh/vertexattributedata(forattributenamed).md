@@ -24,11 +24,11 @@ func vertexAttributeData(forAttributeNamed name: String) -> MDLVertexAttributeDa
 - (MDLVertexAttributeData *) vertexAttributeDataForAttributeNamed:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 The vertex data for the specified attribute, or `nil` if the mesh does not contain vertex data for the specified attribute.
 
-#### Discussion
+## Discussion
 
 Calling this data is equivalent to using the mesh’s [`vertexDescriptor`](./vertexdescriptor.md) object to find the index of the [`MDLMeshBuffer`](../mdlmeshbuffer.md) object corresponding to the specified vertex attribute in the mesh’s [`vertexBuffers`](./vertexbuffers.md) array, then using the vertex buffer’s [`map()`](../mdlmeshbuffer/map%28%29.md) method to gain read-only access to the vertex buffer’s data.
 

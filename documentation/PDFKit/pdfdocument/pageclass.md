@@ -24,7 +24,7 @@ var pageClass: AnyClass { get }
 @property (nonatomic, readonly) Class pageClass;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to supply a custom page class, subclass `PDFDocument` and implement this method to return your custom class. Note that your custom class must be a subclass of [`PDFPage`](../pdfpage.md); otherwise, the behavior is undefined.
 

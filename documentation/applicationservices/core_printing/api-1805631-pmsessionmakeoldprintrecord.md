@@ -18,11 +18,11 @@ OSStatus PMSessionMakeOldPrintRecord (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 You must call this function between the creation and release of a printing session. See the function [`PMCreateSession`](../api-1463247-pmcreatesession.md).
 
@@ -30,7 +30,7 @@ You can use `PMSessionMakeOldPrintRecord` to create an old-style print record to
 
 In macOS, the function always creates a LaserWriter 8 compatible print record.
 
-##### Special Considerations
+### Special Considerations
 
 The proper way to keep page format information for use in macOS is with a flattened `PMPageFormat` object. Typically applications don't keep print settings with a document but if that is appropriate for a given application, the proper way to do so is to use a flattened `PMPrintSettings` object.
 

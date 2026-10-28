@@ -5,7 +5,7 @@
 
 Restrict your app’s components to their expected contexts.
 
-#### Overview
+## Overview
 
 You define launch environment and library constraints in constraint dictionaries that you either save in `launchd` property list files, or in separate property list files that you use in code signing. The constraint dictionaries you create contain *facts* and *operations*. Facts are assertions that properties of the executable the operating system is launching, or the library your process is loading, match conditions you specify. Operations allow for rich combinations of facts.
 
@@ -15,7 +15,7 @@ Your process can load a dynamic library if all of the facts and operations at th
 
 `launchd` tests constraints that you specify in `launchd` property list files when it needs to start your launch daemon or agent. If the executable specified in the `launchd` property list doesn’t satisfy the constraint in the property list, then `launchd` doesn’t start the process.
 
-##### Constrain the executable’s launch environment
+### Constrain the executable’s launch environment
 
 Construct the launch constraint by adding keys and values that represent constraint facts, and operators that combine facts using logical operations. Use facts from the list below in your launch constraint.
 
@@ -62,7 +62,7 @@ This example of a launch constraint uses a `team-identifier` fact to require tha
 </plist>
 ```
 
-##### Build complex checks with operators
+### Build complex checks with operators
 
 Constraint dictionaries can include any of the following operators, to build complex checks. An operator can take the place of a value in a fact, in which case each of the values in the operator expression applies to the fact that contains the operator. An operator can also take the place of the fact key itself, in which case the values of the operator expression are themselves key-value pairs that name facts. As dictionaries only contain one instance of any particular key, use operators to compose multiple tests that use the same fact.
 
@@ -98,7 +98,7 @@ The launch constraint in the example below uses the `$or` operator to require th
 </plist>
 ```
 
-##### Construct an entitlements query
+### Construct an entitlements query
 
 An entitlements query is an array of query operations. Each operation is an array with two entries: an integer operation code, and a parameter that can be an integer, a string, or a Boolean value. The operations either select specific information about the entitlements, or match the currently-selected information against a value specified in the parameter.
 

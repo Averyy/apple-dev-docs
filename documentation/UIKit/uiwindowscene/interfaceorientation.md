@@ -24,7 +24,7 @@ var interfaceOrientation: UIInterfaceOrientation { get }
 @property (nonatomic, readonly) UIInterfaceOrientation interfaceOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 The interface orientation normally corresponds to the device orientation, but it might also be different. For example, the interface orientation does not always match the device orientation when the user enables rotation lock for the device.
 

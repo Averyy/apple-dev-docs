@@ -25,7 +25,7 @@ init<S>(_ keysAndValues: S, uniquingKeysWith combine: (Value, Value) async throw
 
 Available when `Key` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 You use this initializer to create a dictionary when you have a sequence of key-value tuples that might have duplicate keys. As the dictionary is built, the initializer calls the `combine` closure with the current and new values for any duplicate keys. Pass a closure as `combine` that returns the value to use in the resulting dictionary: The closure can choose between the two values, combine them to produce a new value, or even throw an error.
 

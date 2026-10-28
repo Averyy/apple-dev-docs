@@ -5,7 +5,7 @@
 
 Import and export a certificate from a file.
 
-#### Overview
+## Overview
 
 Certificates are not secret and you often want to share them to disseminate a public key, but [`SecCertificate`](./seccertificate.md) is an opaque type that you can’t distribute directly. Instead, you create a Distinguished Encoding Rules (DER) encoded data representation of the certificate using the [`SecCertificateCopyData(_:)`](./seccertificatecopydata%28_%29.md) function:
 

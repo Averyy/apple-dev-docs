@@ -9,7 +9,7 @@ Manage merchant registration through your web platform.
 **Availability**:
 - Apple Pay Web Merchant Registration API 1.0+
 
-#### Overview
+## Overview
 
 The Apple Pay Web Merchant Registration API is a REST API that enables platform integrators such as payment-service providers and e-commerce platforms to register web merchants who want to offer Apple Pay on the web.
 
@@ -17,7 +17,7 @@ As a platform integrator, you manage Apple Pay configuration on the merchants’
 
 > **Note**:  This API is available in production and in sandbox environments. To use this API in the sandbox environment, call the endpoints using the domain `apple-pay-gateway-cert.apple.com`.  For example, the sandbox endpoint for [`Register Merchant`](./register-merchant.md) is: `POST https://apple-pay-gateway-cert.apple.com/paymentservices/registerMerchant`.
 
-##### API Requirements for Use
+### API Requirements for Use
 
 To use the Apple Pay Web Merchant Registration API,  you must meet the following requirements:
 

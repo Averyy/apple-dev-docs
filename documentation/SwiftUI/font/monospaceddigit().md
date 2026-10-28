@@ -21,11 +21,11 @@ Returns a modified font that uses fixed-width digits, while leaving other charac
 func monospacedDigit() -> Font
 ```
 
-#### Return Value
+## Return Value
 
 A font that uses fixed-width numeric characters.
 
-#### Discussion
+## Discussion
 
 This modifier only affects numeric characters, and leaves all other characters unchanged. If the base font doesn’t support fixed-width, or *monospace* digits, the font remains unchanged.
 

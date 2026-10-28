@@ -21,7 +21,7 @@ static let encrypted: AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse
 extern AVExternalStorageDeviceReasonNotRecommendedForCaptureUse AVExternalStorageDeviceReasonNotRecommendedForCaptureUseEncrypted;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that the storage device is not recommended for capture as it is encrypted.
 

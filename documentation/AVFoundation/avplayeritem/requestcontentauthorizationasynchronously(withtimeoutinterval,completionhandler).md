@@ -23,7 +23,7 @@ func requestContentAuthorization(withTimeoutInterval timeoutInterval: TimeInterv
 - (void) requestContentAuthorizationAsynchronouslyWithTimeoutInterval:(NSTimeInterval) timeoutInterval completionHandler:(void (^)()) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method will present the user with the opportunity to authorize the content (for example, by launching iTunes and prompting the user to enter their Apple ID and password).
 

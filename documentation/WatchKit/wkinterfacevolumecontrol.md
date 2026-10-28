@@ -19,7 +19,7 @@ class WKInterfaceVolumeControl
 @interface WKInterfaceVolumeControl : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 Configure your app’s audio source and the appearance of the volume control in your storyboard file. Use the [`WKInterfaceVolumeControl`](./wkinterfacevolumecontrol.md) instance to change the volume’s tint color at runtime.
 
@@ -41,7 +41,7 @@ During the initialization of your interface controller, WatchKit creates a new i
 
 After selecting the volume control, the user can increase or decrease the audio’s volume using the crown. The system automatically handles changing the audio source’s volume. You cannot access or change the volume programmatically in your app.
 
-##### Interface Builder Configuration Options
+### Interface Builder Configuration Options
 
 Xcode lets you configure your volume control in your storyboard file. The following table lists the attributes you can configure and their meaning.
 

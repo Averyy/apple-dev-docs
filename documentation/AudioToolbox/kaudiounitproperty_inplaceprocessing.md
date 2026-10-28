@@ -24,7 +24,7 @@ var kAudioUnitProperty_InPlaceProcessing: AudioUnitPropertyID { get }
 kAudioUnitProperty_InPlaceProcessing
 ```
 
-#### Discussion
+## Discussion
 
 Indicates whether an audio unit can process input data directly within its input buffer (`1`) or not (0). You may want to disable in-place processing to allow your host application to manage the processing buffers.
 

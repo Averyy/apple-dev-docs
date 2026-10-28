@@ -19,7 +19,7 @@ func flagsChanged(with event: NSEvent)
 - (void) flagsChanged:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Use this method to update the state of your gesture recognizer in whatever way is appropriate.
 

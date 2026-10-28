@@ -25,7 +25,7 @@ func xpc_string_create(_ string: UnsafePointer<CChar>) -> xpc_object_t
 extern xpc_object_txpc_string_create(const char *string);
 ```
 
-#### Return Value
+## Return Value
 
 A new string object.
 

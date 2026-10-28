@@ -13,7 +13,7 @@
 kSCSIProtocolFeature_ProtocolSpecificAsyncNotification = 14
 ```
 
-#### Discussion
+## Discussion
 
 Used to determine if the SCSI Protocol Services Driver supports asynchronous notifications from the drive. This is used to prevent polling for media, specifically for SATAPI devices on AHCI buses.
 

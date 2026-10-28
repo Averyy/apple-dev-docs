@@ -16,7 +16,7 @@ An unexpected error occurred while setting up the event stream.
 case connectionError
 ```
 
-#### Discussion
+## Discussion
 
 Handle this error by retrying at a later time.
 

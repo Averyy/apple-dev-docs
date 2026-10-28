@@ -21,11 +21,11 @@ Provides the relative ordering of two items according to the ordering of the pro
 func compare(_ lhs: Compared, _ rhs: Compared) -> ComparisonResult
 ```
 
-#### Return Value
+## Return Value
 
 The relative ordering for the compared properties.
 
-#### Discussion
+## Discussion
 
 The method returns flipped comparisons if the sort order is [`SortOrder.reverse`](../sortorder/reverse.md).
 

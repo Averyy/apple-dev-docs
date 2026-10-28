@@ -20,7 +20,7 @@ An event that takes place when the action event exits its time interval.
 static var ended: ActionEventType { get }
 ```
 
-#### Discussion
+## Discussion
 
 End is also raised when the animation terminates before the action event completes.
 

@@ -22,7 +22,7 @@ var perPageContentInsets: UIEdgeInsets { get set }
 @property (nonatomic) UIEdgeInsets perPageContentInsets;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies the margins to apply to each printed page. All margins are respected, so the top inset value represents the top margin of every page, the left inset value represents the left margin of every page, and so on. If the per-page insets are smaller than the printable area of the page, or smaller than the printable area after the values in the [`contentInsets`](./contentinsets.md) property are applied, the value in this property is effectively ignored.
 

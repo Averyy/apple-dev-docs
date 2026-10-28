@@ -22,7 +22,7 @@ optional func pointerInteraction(_ interaction: UIPointerInteraction, regionFor 
 - (UIPointerRegion *) pointerInteraction:(UIPointerInteraction *) interaction regionForRequest:(UIPointerRegionRequest *) request defaultRegion:(UIPointerRegion *) defaultRegion;
 ```
 
-#### Return Value
+## Return Value
 
 A `UIPointerRegion` in which to apply a pointer style. Return `nil` to indicate that this interaction typically doesn’t customize the pointer for the current location.
 

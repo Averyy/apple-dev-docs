@@ -24,11 +24,11 @@ func VTPixelTransferSessionTransferImage(_ session: VTPixelTransferSession, from
 extern OSStatus VTPixelTransferSessionTransferImage(VTPixelTransferSessionRef session, CVPixelBufferRef sourceBuffer, CVPixelBufferRef destinationBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 `noErr` if successful or an error code, such as `kVTPixelTransferNotSupportedErr`, if the operation failed.
 
-#### Discussion
+## Discussion
 
 By default, the full width and height of `sourceBuffer` are scaled to the full width and height of `destinationBuffer`.   By default, all existing attachments on `destinationBuffer` are removed and new attachments are set that describe the transferred image.  Unrecognized attachments on `sourceBuffer` are propagated to destinationBuffer. Some properties modify this behavior; see `VTPixelTransferProperties.h` for more details.
 

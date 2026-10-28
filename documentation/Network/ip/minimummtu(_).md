@@ -21,7 +21,7 @@ Configure IP to use the minimum MTU value.
 func minimumMTU(_ useMinimumMTU: Bool) -> IP
 ```
 
-#### Discussion
+## Discussion
 
 The minimum MTU value is 1280 bytes for IPv6 (`IPV6_USE_MIN_MTU`). This value has no effect for IPv4.
 

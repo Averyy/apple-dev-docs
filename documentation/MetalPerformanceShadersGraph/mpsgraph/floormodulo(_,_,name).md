@@ -24,11 +24,11 @@ func floorModulo(_ primaryTensor: MPSGraphTensor, _ secondaryTensor: MPSGraphTen
 - (MPSGraphTensor *) floorModuloWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 
-#### Discussion
+## Discussion
 
 Creates a floorModulo operation and returns the result tensor, it supports broadcasting as well, returns 0 if divisor is 0.
 

@@ -30,7 +30,7 @@ var requiresManualRequest: Bool { get set }
 @property (atomic) BOOL requiresManualRequest;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md), which indicates that your service can place reservations with the restaurant electronically. Change the value to [`true`](../../Swift/true.md) if your service must manually contact the restaurant in order to make the reservation.
 

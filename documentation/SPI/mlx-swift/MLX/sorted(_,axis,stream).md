@@ -21,7 +21,7 @@ func sorted(_ array: MLXArray, axis: Int, stream: StreamOrDevice = .default) -> 
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Sorting](./sorting.md)
 - [`sorted(_:stream:)`](./sorted%28_,stream%29.md)

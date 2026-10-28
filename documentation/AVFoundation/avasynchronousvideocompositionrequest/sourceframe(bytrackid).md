@@ -26,7 +26,7 @@ func sourceFrame(byTrackID trackID: CMPersistentTrackID) -> CVPixelBuffer?
 - (CVPixelBufferRef) sourceFrameByTrackID:(CMPersistentTrackID) trackID;
 ```
 
-#### Return Value
+## Return Value
 
 A pixel buffer, or `nil` if not found.
 

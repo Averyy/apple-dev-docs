@@ -21,7 +21,7 @@ A type that represents Rich Text Format data.
 static var rtf: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.rtf`.
 

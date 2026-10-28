@@ -18,7 +18,7 @@ Get or set the entire metadata storage as a dictionary.
 var metadata: Logger.Metadata { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: `LogHandler`s must treat logging metadata as a value type. This means that the change in metadata must only affect this very `LogHandler`.
 

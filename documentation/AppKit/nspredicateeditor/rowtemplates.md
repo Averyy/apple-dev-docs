@@ -19,7 +19,7 @@ var rowTemplates: [NSPredicateEditorRowTemplate] { get set }
 @property (copy) NSArray<NSPredicateEditorRowTemplate *> * rowTemplates;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is a single compound [`NSPredicateEditorRowTemplate`](../nspredicateeditorrowtemplate.md) object.
 

@@ -3,7 +3,7 @@
 **Framework**: dnssd  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 This section describes the functions, callbacks, and data structures that make up the DNS Service Discovery API.
 

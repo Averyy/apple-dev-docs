@@ -24,7 +24,7 @@ var verificationData: Data? { get }
 @property (nonatomic, copy, readonly, nullable) NSData * verificationData;
 ```
 
-#### Discussion
+## Discussion
 
 Use the data in this property to cryptographically verify that [`samlAttributeQueryResponse`](./samlattributequeryresponse.md) came from the account provider.
 

@@ -23,7 +23,7 @@ var compactTabIdentifiers: [String]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSString *> * compactTabIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is is `nil`, which would make all tabs available.
 

@@ -19,7 +19,7 @@ var CPU_BASED2_UNRESTRICTED: UInt32 { get }
 CPU_BASED2_UNRESTRICTED
 ```
 
-#### Discussion
+## Discussion
 
 Must be `1`.
 

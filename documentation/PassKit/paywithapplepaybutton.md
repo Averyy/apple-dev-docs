@@ -21,7 +21,7 @@ A type that provides a button to pay with Apple pay.
 @preconcurrency struct PayWithApplePayButton<Fallback> where Fallback : View
 ```
 
-#### Overview
+## Overview
 
 Use this structure as the SwiftUI equivalent to [`PKPaymentButton`](./pkpaymentbutton.md). For design guidance, see Human Interface Guidelines > Apple Pay > [Using Apple Pay buttons](https://developer.apple.com/design/human-interface-guidelines/apple-pay#Using-Apple-Pay-buttons).
 

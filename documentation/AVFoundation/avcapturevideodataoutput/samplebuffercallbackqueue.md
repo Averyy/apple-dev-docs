@@ -24,7 +24,7 @@ var sampleBufferCallbackQueue: dispatch_queue_t? { get }
 @property (nonatomic, readonly, nullable) dispatch_queue_t sampleBufferCallbackQueue;
 ```
 
-#### Discussion
+## Discussion
 
 You set the queue using [`setSampleBufferDelegate(_:queue:)`](./setsamplebufferdelegate%28_,queue%29.md).
 

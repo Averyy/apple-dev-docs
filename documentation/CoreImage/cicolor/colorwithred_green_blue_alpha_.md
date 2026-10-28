@@ -20,11 +20,11 @@ Create a Core Image color object in the sRGB color space with the specified red,
 + (instancetype) colorWithRed:(CGFloat) red green:(CGFloat) green blue:(CGFloat) blue alpha:(CGFloat) alpha;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIColor`](../cicolor.md) instance.
 
-#### Discussion
+## Discussion
 
 On macOS before 10.10, the CIColor’s color space will be Generic RGB.
 

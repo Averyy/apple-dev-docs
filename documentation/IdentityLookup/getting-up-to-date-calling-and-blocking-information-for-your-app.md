@@ -5,13 +5,13 @@
 
 Implement the Live Caller ID Lookup app extension to provide call-blocking and identity services.
 
-#### Overview
+## Overview
 
 With the Live Caller ID Lookup app extension, you can provide caller ID and call-blocking services from a server you maintain. The app extension tells the system how to communicate with your server. When someone’s device receives a phone call, the system communicates with your back-end server to retrieve caller ID and blocking information, and then displays that information on the incoming call screen and in the device’s recent phone calls.
 
 > **Note**:  The Live Caller ID Lookup app extension requires you to use Apple relay servers to support making calls to your server endpoints. This requires endpoint validation from Apple. If you’re interested in using the app extension, [submit your request](https://icloud.developer.apple.com/dashboard/identity). For more information on the server side API, see the [Live Caller ID Lookup example](https://github.com/apple/live-caller-id-lookup-example) and the [Swift homomorphic encryption library](https://github.com/apple/swift-homomorphic-encryption).
 
-##### Add the app extension to your project
+### Add the app extension to your project
 
 To use the Live Caller ID Lookup app extension, you need to add it to your Xcode project by choosing File > New > Target, selecting its template, and clicking Next.
 
@@ -19,7 +19,7 @@ To use the Live Caller ID Lookup app extension, you need to add it to your Xcode
 
 When you add this target to your project, it provides the initial files you need for your app extension.
 
-##### Configure your PIR server
+### Configure your PIR server
 
 After you add the app extension, configure your PIR server. Live Caller ID Lookup requires that your app extension’s information property list contains a top-level `NSPIRConfiguration`. The dictionary contains the following two keys:
 
@@ -73,7 +73,7 @@ struct MyAppExtension: LiveCallerIDLookupProtocol {
 }
 ```
 
-##### Manage the app extension
+### Manage the app extension
 
 After configuring your data and connecting the app extension to the server, you have access to several functions and variables through the [`LiveCallerIDLookupManager`](./livecalleridlookupmanager.md) class. This allows you to manage the state of the app extension.
 
@@ -89,7 +89,7 @@ if LiveCallerIDLookupManager.shared.status(forExtensionWithIdentifier: extension
 try await LiveCallerIDLookupManager.shared.openSettings()
 ```
 
-##### Refresh the data
+### Refresh the data
 
 The system fetches data from the parameters in the [`LiveCallerIDLookupExtensionContext`](./livecalleridlookupextensioncontext.md) structure to communicate with the server. If you need to update the extension context, use the [`reset(forExtensionWithIdentifier:)`](./livecalleridlookupmanager/reset%28forextensionwithidentifier%29.md) method. This reregisters your app extension so the system caches the new parameters.
 

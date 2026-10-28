@@ -18,7 +18,7 @@ Sets the handler block to run when the timer fires.
 virtual kern_return_t SetHandler(OSAction *action);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 

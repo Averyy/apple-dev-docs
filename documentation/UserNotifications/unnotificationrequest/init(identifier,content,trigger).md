@@ -25,11 +25,11 @@ convenience init(identifier: String, content: UNNotificationContent, trigger: UN
 + (instancetype) requestWithIdentifier:(NSString *) identifier content:(UNNotificationContent *) content trigger:(UNNotificationTrigger *) trigger;
 ```
 
-#### Return Value
+## Return Value
 
 A new notification request object.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to schedule the delivery of a local notification. This method creates the request object that you subsequently pass to the [`add(_:withCompletionHandler:)`](../unusernotificationcenter/add%28_,withcompletionhandler%29.md) method.
 

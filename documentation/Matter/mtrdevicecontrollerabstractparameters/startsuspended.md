@@ -25,7 +25,7 @@ var startSuspended: Bool { get set }
 @property (nonatomic, assign) BOOL startSuspended;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to NO.
 

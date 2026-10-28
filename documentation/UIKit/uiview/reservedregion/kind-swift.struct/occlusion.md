@@ -19,7 +19,7 @@ A region that covers part of your view.
 static let occlusion: UIView.ReservedRegion.Kind
 ```
 
-#### Discussion
+## Discussion
 
 An occlusion region is an area where an element, such as the Dynamic Island, a camera, or window controls, cover your content. Place important views and controls outside this area so people can see and use them.
 

@@ -32,7 +32,7 @@ var mediaName: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * mediaName;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property in conjunction with other properties to narrow down a user’s search.  For example, “Play the album requestedAlbumName”.
 

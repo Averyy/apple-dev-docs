@@ -19,7 +19,7 @@ var importsGraphics: Bool { get set }
 @property BOOL importsGraphics;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the cell can import images into its text and support the RTFD text format.
 

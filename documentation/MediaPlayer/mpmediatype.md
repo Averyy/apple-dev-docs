@@ -25,7 +25,7 @@ struct MPMediaType
 enum MPMediaType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Media item types are possible values for the [`MPMediaItemPropertyMediaType`](./mpmediaitempropertymediatype.md) property. A media item can have more than one media item type.
 

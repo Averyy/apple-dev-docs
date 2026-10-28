@@ -24,7 +24,7 @@ var label: String? { get set }
 @property (nonatomic, copy, nullable) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 The name of the effect isn’t used directly by GLKit, but is printed when, for example, you log the object to the console via the [`NSLog(_:_:)`](../../Foundation/nslog%28_,_%29.md) function in Swift, or the [`NSLog`](../../Foundation/nslog.md) function in Objective-C.
 

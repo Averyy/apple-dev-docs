@@ -18,7 +18,7 @@ The represented gesture recognizer’s current translation in the coordinate spa
 var localTranslation: CGPoint? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the gesture recognizer does not implement a `translationInView:` method, returns nil.
 

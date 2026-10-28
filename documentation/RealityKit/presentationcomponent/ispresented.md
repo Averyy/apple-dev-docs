@@ -15,7 +15,7 @@ A boolean value that indicates whether the content is presented.
 var isPresented: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If you initialize the component with a binding, that binding will mirror the value of this property. If the component is initialized without a binding, this property will default to `true`.
 

@@ -28,13 +28,13 @@ protocol ExpressibleByConfigInt : CustomStringConvertible
 
 - [Choosing reader methods](./choosing-reader-methods.md)
 
-#### Overview
+## Overview
 
 Conform your custom types to this protocol to enable automatic conversion when using the `as:` parameter with configuration reader methods such as [`int(forKey:as:isSecret:fileID:line:)`](./configreader/int%28forkey,as,issecret,fileid,line%29-11fn2.md).
 
 > 💡 **Tip**: If your type is an integer-based enum, you don’t need to explicitly conform it to [`ExpressibleByConfigInt`](./expressiblebyconfigint.md), as the same conversions work for types that conform to `RawRepresentable` with an `Int` raw value automatically.
 
-#### Custom types
+## Custom types
 
 For other custom types, conform to the protocol [`ExpressibleByConfigInt`](./expressiblebyconfigint.md) by providing a failable initializer and the `configInt` property:
 

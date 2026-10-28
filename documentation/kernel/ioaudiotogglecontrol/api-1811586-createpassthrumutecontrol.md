@@ -15,7 +15,7 @@ static IOAudioToggleControl *createPassThruMuteControl (
  UInt32cntrlID);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a newly allocated and initialized mute IOAudioControl
 

@@ -25,7 +25,7 @@ let NSFileHandleNotificationFileHandleItem: String
 extern NSString * const NSFileHandleNotificationFileHandleItem;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is the `NSFileHandle` object representing the “near” end of a socket connection.
 

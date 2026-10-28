@@ -23,7 +23,7 @@ typealias UITableViewDiffableDataSourceReferenceCellProvider = (UITableView, Ind
 typedef UITableViewCell *(^)(UITableView *, NSIndexPath *, id) UITableViewDiffableDataSourceCellProvider;
 ```
 
-#### Return Value
+## Return Value
 
 A non-`nil` configured cell object. The cell provider must return a valid cell object to the table view.
 

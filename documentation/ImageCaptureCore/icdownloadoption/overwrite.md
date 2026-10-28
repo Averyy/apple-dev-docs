@@ -23,7 +23,7 @@ static let overwrite: ICDownloadOption
 extern ICDownloadOption const ICOverwrite;
 ```
 
-#### Discussion
+## Discussion
 
 Specify this value as an [`NSNumber`](../../Foundation/nsnumber.md) object.
 

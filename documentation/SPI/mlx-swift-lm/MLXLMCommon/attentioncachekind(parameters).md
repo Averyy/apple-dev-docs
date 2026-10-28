@@ -17,7 +17,7 @@ Build a standard full-attention cache kind that honors the requested capacity.
 func attentionCacheKind(parameters: GenerateParameters?) throws -> CacheLayerKind
 ```
 
-#### Discussion
+## Discussion
 
 The capacity is the unified view of [`maxKVSize`](./generateparameters/maxkvsize.md) and the capacity carried by [`kvCache`](./generateparameters/kvcache.md).
 

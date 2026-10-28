@@ -25,11 +25,11 @@ init(from fromAccount: INPaymentAccount?, to toAccount: INPaymentAccount?, trans
 - (instancetype) initWithFromAccount:(INPaymentAccount *) fromAccount toAccount:(INPaymentAccount *) toAccount transactionAmount:(INPaymentAmount *) transactionAmount transactionScheduledDate:(INDateComponentsRange *) transactionScheduledDate transactionNote:(NSString *) transactionNote;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Normally, you don’t create instances of this class yourself. Instead, SiriKit creates instances when the user asks to transfer money between accounts. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths.
 

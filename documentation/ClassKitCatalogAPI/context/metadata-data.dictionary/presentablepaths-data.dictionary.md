@@ -15,7 +15,7 @@ The identifier path of a context to use as one of the presentable paths in a con
 object Context.Metadata.PresentablePaths
 ```
 
-#### Discussion
+## Discussion
 
 Use one or more presentable paths in a context’s [`Context.Metadata`](../metadata-data.dictionary.md) to supplement your app’s native context hierarchy and affect the way the catalog displays your content. For example, your app might define four contexts as children of the main app context:
 

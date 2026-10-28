@@ -23,7 +23,7 @@ case restricted
 ENStatusRestricted
 ```
 
-#### Discussion
+## Discussion
 
 When in this state, the app cannot enable exposure notification.
 

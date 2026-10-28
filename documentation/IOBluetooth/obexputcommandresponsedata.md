@@ -19,7 +19,7 @@ struct OBEXPutCommandResponseData
 struct OBEXPutCommandResponseData;
 ```
 
-#### Overview
+## Overview
 
 Is readable when the event is of type kOBEXSessionEventTypePutCommandResponseReceived (see OBEXSessionEventTypes).
 

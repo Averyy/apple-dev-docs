@@ -21,7 +21,7 @@ var applicationUsageByCategory: [SRDeviceUsageReport.CategoryKey : [SRDeviceUsag
 @property (copy, readonly) NSDictionary<NSString *,NSArray<SRApplicationUsage *> *> * applicationUsageByCategory;
 ```
 
-#### Discussion
+## Discussion
 
 The framework interprets the category using the primary genre an app supplies in its `iTunesMetadata.plist`.
 

@@ -21,7 +21,7 @@ var isHeadTracking: Bool { get }
 @property (nonatomic, readonly, getter=isHeadTracking) BOOL headTracking;
 ```
 
-#### Discussion
+## Discussion
 
 The host sets this property when the user enables or disables head tracking. When YES, the spatial Audio Unit should use head tracking data to adjust spatialization. When NO, the host has disabled head tracking.
 

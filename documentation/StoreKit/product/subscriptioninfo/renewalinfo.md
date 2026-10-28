@@ -28,7 +28,7 @@ struct RenewalInfo
 - [Supporting subscription offer codes in your app](../../supporting-subscription-offer-codes-in-your-app.md)
 - [Testing failing subscription renewals and Apple In-App Purchases](../../testing-failing-subscription-renewals-and-in-app-purchases.md)
 
-#### Overview
+## Overview
 
 `Product.SubscriptionInfo.RenewalInfo` provides information about the next subscription renewal period. Check the [`state`](./status-swift.struct/state.md) to determine whether the subscription will be active (subscribed), expired, or in another state at the next renewal period.
 

@@ -20,7 +20,7 @@ struct FFCONSTANTFORCE
 struct FFCONSTANTFORCE;
 ```
 
-#### Overview
+## Overview
 
 A pointer to a single FFCONSTANTFORCE structure for an effect is passed in the **lpvTypeSpecificParams** member of the FFEFFECT structure.
 

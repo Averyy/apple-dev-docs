@@ -17,7 +17,7 @@ Sets the user type for the alias record referenced by a pointer.
 void SetAliasUserTypeWithPtr(AliasPtr alias, OSType userType);
 ```
 
-#### Discussion
+## Discussion
 
 This routine is thread safe.
 

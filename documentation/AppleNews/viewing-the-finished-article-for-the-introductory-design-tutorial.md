@@ -5,7 +5,7 @@
 
 See the full JSON code from this tutorial.
 
-#### Overview
+## Overview
 
 This page brings together all of the Apple News Format features from this tutorial as a template that you can use for your News articles. If you followed the steps throughout this tutorial, the following example code should match the code in your `article.json` file.
 
@@ -417,11 +417,11 @@ You can copy or download this template (which is also the `article.json` file in
 }
 ```
 
-##### Previous
+### Previous
 
 [Adding a Podcast](./adding-a-podcast.md)
 
-##### Next
+### Next
 
 [Setting Up the Advanced Tutorials](./setting-up-the-advanced-tutorials.md)
 

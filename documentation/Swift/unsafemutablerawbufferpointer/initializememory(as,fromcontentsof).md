@@ -21,11 +21,11 @@ Initializes the buffer’s memory with every element of the source, binding the 
 func initializeMemory<C>(as type: C.Element.Type, fromContentsOf source: C) -> UnsafeMutableBufferPointer<C.Element> where C : Collection
 ```
 
-#### Return Value
+## Return Value
 
 A typed buffer referencing the initialized elements. The returned buffer references memory starting at the same base address as this buffer, and its count is equal to `source.count`
 
-#### Discussion
+## Discussion
 
 When calling the `initializeMemory(as:fromContentsOf:)` method, the memory referenced by the buffer must be uninitialized, or initialized to a trivial type. The buffer must reference enough memory to store `source.count` elements, and its `baseAddress` must be properly aligned for accessing `C.Element`.
 

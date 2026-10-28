@@ -26,7 +26,7 @@ func createReferenceObject(transform: simd_float4x4, center: simd_float3, extent
 - (void) createReferenceObjectWithTransform:(simd_float4x4) transform center:(simd_float3) center extent:(simd_float3) extent completionHandler:(void (^)(ARReferenceObject *referenceObject, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: This method is valid only when running a session with [`ARObjectScanningConfiguration`](../arobjectscanningconfiguration.md), which enables the high-fidelity spatial data collection needed for scanning reference objects. Calling this method on a session with a different configuration immediately invokes your `completionHandler` with an error.
 

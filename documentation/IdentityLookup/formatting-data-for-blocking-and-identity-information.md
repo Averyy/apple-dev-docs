@@ -5,7 +5,7 @@
 
 Set up your PIR payload for call blocking and identity information.
 
-#### Overview
+## Overview
 
 With Live Caller ID Lookup, when a device receives an incoming call, the system reaches out to a third-party service to fetch private information retrieval (PIR) data from your server. You need to format that data so the system can make the following requests:
 
@@ -14,14 +14,14 @@ With Live Caller ID Lookup, when a device receives an incoming call, the system 
 
 For more information, see the [Swift homomorphic encryption library](https://github.com/apple/swift-homomorphic-encryption).
 
-##### Block a caller
+### Block a caller
 
 The blocking information request is a single byte with two defined values:
 
 - **0**: This value means don’t block the caller.
 - **1**: This value means block the caller.
 
-##### Identify caller information
+### Identify caller information
 
 The identity request displays caller information on the device. This information is a serialized protocol buffer message of type `CallIdentity`. The following example shows the response formatting for an identity request:
 

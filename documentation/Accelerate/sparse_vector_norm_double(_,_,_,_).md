@@ -25,11 +25,11 @@ func sparse_vector_norm_double(_ nz: sparse_dimension, _ x: UnsafePointer<Double
 double sparse_vector_norm_double(sparse_dimension nz, const double * restrictx, const sparse_index * restrictindx, sparse_norm norm);
 ```
 
-#### Return Value
+## Return Value
 
 The requested norm.
 
-#### Discussion
+## Discussion
 
 Compute the specified norm of the sparse vector x.  Specify one of:
 

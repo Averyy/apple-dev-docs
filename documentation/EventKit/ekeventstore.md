@@ -30,7 +30,7 @@ class EKEventStore
 - [Accessing the event store](./accessing-the-event-store.md)
 - [Creating events and reminders](./creating-events-and-reminders.md)
 
-#### Overview
+## Overview
 
 The `EKEventStore` class is an app’s point of contact for accessing calendar and reminder data.
 

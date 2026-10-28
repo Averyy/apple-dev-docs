@@ -19,7 +19,7 @@ var interval: TimeInterval { get set }
 @property NSTimeInterval interval;
 ```
 
-#### Discussion
+## Discussion
 
 For repeating activities, the value of this property is also the suggested interval between invocations. See [Configure Scheduler Properties](../nsbackgroundactivityscheduler.md#Configure-Scheduler-Properties).
 

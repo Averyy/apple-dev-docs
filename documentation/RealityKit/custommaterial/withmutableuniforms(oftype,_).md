@@ -19,7 +19,7 @@ Calls the given closure with an inout reference to the underlying storage bound 
 mutating func withMutableUniforms<UniformsType>(ofType: UniformsType.Type, _ callback: (inout UniformsType, inout CustomMaterial.ResourceStorage<UniformsType>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 This method operates like [`withMutableUniforms(ofType:stage:_:)`](./withmutableuniforms%28oftype,stage,_%29.md) but sets the same value for all stages at once.
 

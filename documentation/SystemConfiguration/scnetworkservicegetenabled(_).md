@@ -19,7 +19,7 @@ func SCNetworkServiceGetEnabled(_ service: SCNetworkService) -> Bool
 Boolean SCNetworkServiceGetEnabled(SCNetworkServiceRef service);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the service is enabled; otherwise, `FALSE`.
 

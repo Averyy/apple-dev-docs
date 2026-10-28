@@ -21,11 +21,11 @@ Asks the subview for its dimensions and alignment guides.
 func dimensions(in proposal: ProposedViewSize) -> ViewDimensions
 ```
 
-#### Return Value
+## Return Value
 
 A [`ViewDimensions`](../viewdimensions.md) instance that includes a height and width, as well as a set of alignment guides.
 
-#### Discussion
+## Discussion
 
 Call this method to ask a subview of a custom [`Layout`](../layout.md) type about its size and alignment properties. You can call it from your implementation of any of that protocol’s methods, like [`placeSubviews(in:proposal:subviews:cache:)`](../layout/placesubviews%28in,proposal,subviews,cache%29.md) or [`sizeThatFits(proposal:subviews:cache:)`](../layout/sizethatfits%28proposal,subviews,cache%29.md), to get information for your layout calculations.
 

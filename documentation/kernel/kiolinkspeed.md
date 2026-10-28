@@ -15,7 +15,7 @@ A property of IONetworkController objects.
 #define kIOLinkSpeed
 ```
 
-#### Discussion
+## Discussion
 
 The kIOLinkSpeed property is a property of IONetworkController objects. It has an OSNumber value that describes the speed of the link established over the active medium in bits per second.
 

@@ -19,11 +19,11 @@
 static SPSize3DFloat SPSize3DFloatMakeWithVector(simd_float3 xyz);
 ```
 
-#### Return Value
+## Return Value
 
 A new size stucture.
 
-#### Discussion
+## Discussion
 
 Creates a single-precision size structure with dimensions specified as a 3-element SIMD vector.
 

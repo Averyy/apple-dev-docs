@@ -23,7 +23,7 @@ var borderStyle: UITextField.BorderStyle { get set }
 @property (nonatomic) UITextBorderStyle borderStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is [`UITextField.BorderStyle.none`](./borderstyle-swift.enum/none.md). If the value is set to the [`UITextField.BorderStyle.roundedRect`](./borderstyle-swift.enum/roundedrect.md) style, the custom background image associated with the text field is ignored.
 

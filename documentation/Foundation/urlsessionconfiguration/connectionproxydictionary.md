@@ -25,7 +25,7 @@ var connectionProxyDictionary: [AnyHashable : Any]? { get set }
 @property (copy, nullable) NSDictionary * connectionProxyDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls which proxy tasks within sessions based on this configuration use when connecting to remote hosts.
 

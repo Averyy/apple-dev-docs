@@ -22,7 +22,7 @@ A convenience for a `spring` animation with a lower `duration` value, intended f
 static var interactiveSpring: Animation { get }
 ```
 
-#### Discussion
+## Discussion
 
 This uses the default parameter values.
 

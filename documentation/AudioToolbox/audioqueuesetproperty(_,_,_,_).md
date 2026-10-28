@@ -24,7 +24,7 @@ func AudioQueueSetProperty(_ inAQ: AudioQueueRef, _ inID: AudioQueuePropertyID, 
 extern OSStatus AudioQueueSetProperty(AudioQueueRef inAQ, AudioQueuePropertyID inID, const void *inData, UInt32 inDataSize);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 

@@ -20,7 +20,7 @@ func ODSessionGetTypeID() -> CFTypeID
 extern CFTypeID ODSessionGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type ID for a session.
 

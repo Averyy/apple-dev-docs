@@ -20,7 +20,7 @@ func ODQueryGetTypeID() -> CFTypeID
 extern CFTypeID ODQueryGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type ID for an Open Directory query.
 

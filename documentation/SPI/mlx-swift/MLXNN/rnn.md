@@ -17,7 +17,7 @@ An Elman recurrent layer.
 class RNN
 ```
 
-#### Overview
+## Overview
 
 See [`init(inputSize:hiddenSize:bias:nonLinearity:)`](./rnn/init%28inputsize,hiddensize,bias,nonlinearity%29.md)
 

@@ -19,11 +19,11 @@ class var autosavesDrafts: Bool { get }
 @property (class, readonly) BOOL autosavesDrafts;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiving subclass of [`NSDocument`](../nsdocument.md) supports autosaving of drafts; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The system expects that an [`NSDocument`](../nsdocument.md) subclass that returns [`true`](../../Swift/true.md) from this property can properly handle save operations that use the [`NSDocument.SaveOperationType.autosaveAsOperation`](./saveoperationtype/autosaveasoperation.md) save operation type.
 

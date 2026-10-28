@@ -17,7 +17,7 @@ Indicates whether the device supports muting audio output.
 let canMute: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When `true`, the device supports mute/unmute functionality, allowing users to temporarily silence audio without changing the volume level. When `false`, mute controls should not be presented in the user interface for this device.
 

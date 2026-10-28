@@ -25,7 +25,7 @@ static let mpeg4CMAFCompliant: AVFileTypeProfile
 extern AVFileTypeProfile const AVFileTypeProfileMPEG4CMAFCompliant;
 ```
 
-#### Discussion
+## Discussion
 
 To learn more about CMAF, see [About the Common Media Application Format with HTTP Live Streaming (HLS)](../../HTTP-Live-Streaming/about-the-common-media-application-format-with-http-live-streaming-hls.md).
 

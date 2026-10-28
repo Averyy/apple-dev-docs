@@ -5,7 +5,7 @@
 
 A dictionary (associative array) with information about the current system version.
 
-#### Overview
+## Overview
 
 The dictionary contains the contents of `/System/Library/CoreServices/SystemVersion.plist`. See the manual entry for `sw_vers`.
 

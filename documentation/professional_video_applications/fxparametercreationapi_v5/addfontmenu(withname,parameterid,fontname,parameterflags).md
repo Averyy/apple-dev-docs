@@ -20,7 +20,7 @@ func addFontMenu(withName name: String, parameterID: UInt32, fontName: String, p
 - (BOOL) addFontMenuWithName:(NSString *) name parameterID:(UInt32) parameterID fontName:(NSString *) fontName parameterFlags:(FxParameterFlags) flags;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the application successfully creates a font parameter; `NO` otherwise.
 

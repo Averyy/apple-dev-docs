@@ -25,11 +25,11 @@ func continueSpeaking() -> Bool
 - (BOOL) continueSpeaking;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if speech resumes; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method only has an effect if the speech synthesizer is in a paused state.
 

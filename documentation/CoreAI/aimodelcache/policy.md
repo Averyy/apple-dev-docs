@@ -23,7 +23,7 @@ struct Policy
 
 - [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
-#### Overview
+## Overview
 
 Defines the conditions under which the system may purge specialized assets in an [`AIModelCache`](../aimodelcache.md).
 

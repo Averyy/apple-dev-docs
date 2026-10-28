@@ -25,7 +25,7 @@ func encodeCInt(_ value: Int32, forKey key: String)
 - (void) encodeInt:(int) value forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method if they perform keyed coding.
 

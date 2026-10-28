@@ -21,7 +21,7 @@ The desired pixel format of the observation.
 final var outputPixelFormatType: OSType { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`kCVPixelFormatType_OneComponent8`](../../CoreVideo/kcvpixelformattype_onecomponent8.md).
 

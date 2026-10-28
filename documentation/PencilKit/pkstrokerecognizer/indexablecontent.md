@@ -23,7 +23,7 @@ final var indexableContent: String? { get async }
 
 - [Recognizing handwriting and converting it to text](../recognizing-handwriting-and-converting-to-text.md)
 
-#### Discussion
+## Discussion
 
 The string may contain multiple concatenated candidate matches for recognized text in the drawing.
 

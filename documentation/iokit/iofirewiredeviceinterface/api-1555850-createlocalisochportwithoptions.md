@@ -16,11 +16,11 @@ Create a local isoch port
 IOFireWireLibLocalIsochPortRef (*CreateLocalIsochPortWithOptions)(IOFireWireLibDeviceRef self, Boolean inTalking, DCLCommand *dclProgram, UInt32 startEvent, UInt32 startState, UInt32 startMask, IOVirtualRange dclProgramRanges[], UInt32 dclProgramRangeCount, IOVirtualRange bufferRanges[], UInt32 bufferRangeCount, IOFWIsochPortOptions options, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if a valid speed has been returned in 'outSpeed'. Returns kIOFireWireBusReset if 'checkGeneration' does not match the current bus generation number.
 
-#### Discussion
+## Discussion
 
 Same as CreateLocalIsochPort(), above, but allows additional options to be passed. Availability: IOFireWireDeviceInterface_v8 and newer
 

@@ -15,7 +15,7 @@ Sends the disposition for an incoming message.
 final func sendMessage(_ content: RCSMessage.DispositionNotification, to destination: RCSHandle.URI, using cellularServiceID: CellularServiceID, messageID: RCSMessageID, group: RCSHandle.Group? = nil) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Your app can send this message so recipients can see if your app received and displayed a given message.
 

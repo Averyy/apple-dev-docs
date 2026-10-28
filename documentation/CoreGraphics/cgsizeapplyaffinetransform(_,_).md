@@ -25,7 +25,7 @@ func CGSizeApplyAffineTransform(_ size: CGSize, _ t: CGAffineTransform) -> CGSiz
 extern CGSize CGSizeApplyAffineTransform(CGSize size, CGAffineTransform t);
 ```
 
-#### Return Value
+## Return Value
 
 A new size resulting from applying the specified affine transform to the existing size.
 

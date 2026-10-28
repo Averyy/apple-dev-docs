@@ -19,7 +19,7 @@ func imageURL(for traits: TVTopShelfItem.ImageTraits) -> URL?
 - (NSURL *) imageURLForTraits:(TVTopShelfItemImageTraits) traits;
 ```
 
-#### Return Value
+## Return Value
 
 The image associated with the specified traits; otherwise, `nil` if you did not previously assign an image with the specified traits.
 

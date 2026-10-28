@@ -23,7 +23,7 @@ func start()
 - (void) start;
 ```
 
-#### Discussion
+## Discussion
 
 Set the [`delegate`](./delegate.md) before calling this method; otherwise, the method call is ignored.
 

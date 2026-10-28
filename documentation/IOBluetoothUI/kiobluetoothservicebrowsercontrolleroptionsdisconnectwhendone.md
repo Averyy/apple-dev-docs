@@ -17,7 +17,7 @@ var kIOBluetoothServiceBrowserControllerOptionsDisconnectWhenDone: Int { get }
 kIOBluetoothServiceBrowserControllerOptionsDisconnectWhenDone
 ```
 
-#### Discussion
+## Discussion
 
 - disconnect from the device when UI operations are finished.
 

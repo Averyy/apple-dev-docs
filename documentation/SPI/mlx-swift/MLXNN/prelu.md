@@ -17,7 +17,7 @@ Applies the element-wise parametric ReLU.
 class PReLU
 ```
 
-#### Overview
+## Overview
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 maximum(0, x) + alpha * minimum(0, x)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`prelu(_:alpha:)`](./prelu%28_,alpha%29.md)

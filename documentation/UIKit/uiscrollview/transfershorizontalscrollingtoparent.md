@@ -23,7 +23,7 @@ var transfersHorizontalScrollingToParent: Bool { get set }
 @property (nonatomic) BOOL transfersHorizontalScrollingToParent;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`, in which case when the scroll view reaches either end of its horizontal scroll axis it transfers scroll events to a containing scroll view. To stop this behavior, set the property to `false`.
 

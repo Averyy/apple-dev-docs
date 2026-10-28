@@ -17,7 +17,7 @@ A type that configures the layer with the default texture configurations and ren
 @preconcurrency struct DefaultCompositorLayerConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use this type when your Metal rendering engine uses the default rendering options.
 

@@ -19,7 +19,7 @@ func presentError(_ error: any Error, modalFor window: NSWindow, delegate: Any?,
 - (void) presentError:(NSError *) error modalForWindow:(NSWindow *) window delegate:(id) delegate didPresentSelector:(SEL) didPresentSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 When the user dismisses the alert and any recovery possible for the error and chosen by the user has been attempted, sends the message `didPresentSelector` to the specified `delegate`. The method selected by `didPresentSelector` must have the same signature as:
 

@@ -19,7 +19,7 @@ var childFrames: [Any]! { get }
 @property (nonatomic, copy, readonly) NSArray * childFrames;
 ```
 
-#### Discussion
+## Discussion
 
 Each child web frame is an instance of `WebFrame` and corresponds to an HTML frameset or `iframe` element.
 

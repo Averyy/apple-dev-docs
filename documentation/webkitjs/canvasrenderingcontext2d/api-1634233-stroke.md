@@ -18,7 +18,7 @@ void stroke(
 );
 ```
 
-#### Discussion
+## Discussion
 
 The stroke style can be a color, gradient, or pattern.
 

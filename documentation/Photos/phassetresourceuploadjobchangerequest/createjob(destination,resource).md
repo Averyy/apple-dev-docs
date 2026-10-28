@@ -22,7 +22,7 @@ class func createJob(destination: URLRequest, resource: PHAssetResource)
 + (void) createJobWithDestination:(NSURLRequest *) destination resource:(PHAssetResource *) resource;
 ```
 
-#### Discussion
+## Discussion
 
 - Parameter:
 

@@ -24,11 +24,11 @@ init(name: PDFActionNamedName)
 - (instancetype) initWithName:(PDFActionNamedName) name;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `PDFActionNamed` instance, or `NULL` if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 See [`PDFActionNamed`](../pdfactionnamed.md) for the names of named actions you can specify.
 

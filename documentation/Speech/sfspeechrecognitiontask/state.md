@@ -23,7 +23,7 @@ var state: SFSpeechRecognitionTaskState { get }
 @property (nonatomic, readonly) SFSpeechRecognitionTaskState state;
 ```
 
-#### Discussion
+## Discussion
 
 Check the value of this property to get the state of the in-progress speech recognition session. For valid values, see [`SFSpeechRecognitionTaskState`](../sfspeechrecognitiontaskstate.md).
 

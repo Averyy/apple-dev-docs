@@ -16,7 +16,7 @@ nonisolated
 struct CheckboxToggleStyle
 ```
 
-#### Overview
+## Overview
 
 Use the [`checkbox`](./togglestyle/checkbox.md) static variable to create this style:
 

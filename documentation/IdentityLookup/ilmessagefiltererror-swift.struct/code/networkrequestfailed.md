@@ -22,7 +22,7 @@ case networkRequestFailed
 ILMessageFilterErrorNetworkRequestFailed
 ```
 
-#### Discussion
+## Discussion
 
 The network request failed (the `NSUnderlyingErrorKey` in the [`userInfo`](../../../Foundation/nserror/userinfo.md) dictionary of the [`ILMessageFilterError`](../../ilmessagefiltererror-swift.struct.md) may have additional details).
 

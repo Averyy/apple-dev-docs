@@ -24,7 +24,7 @@ let HKMetadataKeyWorkoutBrandName: String
 extern NSString * const HKMetadataKeyWorkoutBrandName;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

@@ -25,7 +25,7 @@ class RPBroadcastMP4ClipHandler
 @interface RPBroadcastMP4ClipHandler : RPBroadcastHandler
 ```
 
-#### Overview
+## Overview
 
 Subclass this class to handle movie clips as ReplayKit records them during the broadcast. The system calls [`processMP4Clip(with:setupInfo:finished:)`](./rpbroadcastmp4cliphandler/processmp4clip%28with,setupinfo,finished%29.md) when a movie clip is available for processing.
 

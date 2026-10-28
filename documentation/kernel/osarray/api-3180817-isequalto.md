@@ -24,11 +24,11 @@ bool isEqualTo(const OSArray *anArray);
 virtual bool isEqualTo(const OSArray *anArray);
 ```
 
-#### Return Value
+## Return Value
 
 true if both arrays have equal counts and all members compare successfully with isEqualTo.
 
-#### Discussion
+## Discussion
 
 If the arrays have equal counts, each member is compared with the other at the same index with isEqualTo(). Otherwise false is returned.
 

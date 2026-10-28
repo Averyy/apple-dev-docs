@@ -24,7 +24,7 @@ func elementTensorReferenceType() -> MTLTensorReferenceType?
 - (MTLTensorReferenceType *) elementTensorReferenceType;
 ```
 
-#### Return Value
+## Return Value
 
 A description of the tensor type that this array holds, or `nil` if this struct member doesn’t hold a tensor.
 

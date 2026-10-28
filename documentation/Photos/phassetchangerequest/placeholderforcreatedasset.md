@@ -24,7 +24,7 @@ var placeholderForCreatedAsset: PHObjectPlaceholder? { get }
 @property (nonatomic, strong, readonly, nullable) PHObjectPlaceholder * placeholderForCreatedAsset;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property if you need to reference the asset created by a change request within the same change block. For example, the following code, when included in a photo library change block, creates an asset and then adds it to a collection.
 

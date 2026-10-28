@@ -17,7 +17,7 @@ Imports resources to the app, in response to a request from the migration system
 func importResources(at url: URL, request: ResourcesImportRequest) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method in your app extension to import files to your app from the source device. You can accomplish this task by moving all files from the directory indicated by `url` to an appropriate location for your app, such as the documents directory.
 

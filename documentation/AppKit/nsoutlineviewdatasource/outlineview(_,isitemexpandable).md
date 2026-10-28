@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, isItemExpandable item: A
 - (BOOL) outlineView:(NSOutlineView *) outlineView isItemExpandable:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `item` can be expanded to display its children, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method may be called quite often, so it must be efficient.
 

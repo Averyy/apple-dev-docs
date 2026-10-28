@@ -15,7 +15,7 @@ The HID specification compliant unit code for this element.
 var unit: UInt32?
 ```
 
-#### Discussion
+## Discussion
 
 The unit code specifies the physical units for the physical value, such as Seconds or Amperes.
 

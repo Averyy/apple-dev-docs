@@ -16,7 +16,7 @@
 kINQUIRY_Byte6_MULTIP_Bit
 ```
 
-#### Discussion
+## Discussion
 
 MULTIP bit definition.
 

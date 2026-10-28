@@ -19,7 +19,7 @@ case tvOS_GPUFamily1_v2
 MTLFeatureSet_tvOS_GPUFamily1_v2
 ```
 
-#### Discussion
+## Discussion
 
 This feature set corresponds with Apple A8 devices running tvOS 10.
 

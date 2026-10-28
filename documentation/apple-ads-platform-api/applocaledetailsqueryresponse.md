@@ -15,11 +15,11 @@ Paginated response object for app locale detail queries.
 object AppLocaleDetailsQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The [`Query App Locale Details`](./query-default-product-page-locale-details-by-adam-id.md) endpoint returns `AppLocaleDetailsQueryResponse` as the top-level envelope.
 
-##### Example
+### Example
 
 ```json
 {

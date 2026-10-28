@@ -21,11 +21,11 @@ Indicates whether two colors are equal.
 extern bool CGColorEqualToColor(CGColorRef color1, CGColorRef color2);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that, if [`true`](../Swift/true.md), indicates that the specified colors are equal. If the colors are not equal, the value is [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Two colors are equal if they share the same color space and numerically equal color components.
 

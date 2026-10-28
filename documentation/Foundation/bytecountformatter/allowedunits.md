@@ -25,7 +25,7 @@ var allowedUnits: ByteCountFormatter.Units { get set }
 @property NSByteCountFormatterUnits allowedUnits;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is [`NSByteCountFormatterUseDefault`](../nsbytecountformatterunits/nsbytecountformatterusedefault.md), the formatter uses platform-appropriate settings; otherwise will only the specified units are used.
 

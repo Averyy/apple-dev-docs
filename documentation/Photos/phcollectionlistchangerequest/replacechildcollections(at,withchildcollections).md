@@ -24,7 +24,7 @@ func replaceChildCollections(at indexes: IndexSet, withChildCollections collecti
 - (void) replaceChildCollectionsAtIndexes:(NSIndexSet *) indexes withChildCollections:(id<NSFastEnumeration>) collections;
 ```
 
-#### Discussion
+## Discussion
 
 To ensure that the index set you specify is valid even if the collection list has changed since you fetched it, create a change request with a snapshot of the collection list’s contents using the [`init(for:childCollections:)`](./init%28for,childcollections%29.md) method before rearranging child collections.
 

@@ -31,7 +31,7 @@ optional var callHostBlock: CallHostBlock? { get set }
 @property (atomic, copy, nullable) CallHostBlock callHostBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The host must set a block on this property to use it.
 

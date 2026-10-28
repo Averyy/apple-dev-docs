@@ -20,7 +20,7 @@ An asynchronous sequence that returns the attached file as a series of bytes.
 struct AsyncBytes
 ```
 
-#### Overview
+## Overview
 
 To access the attachment file as an asynchronous sequence of bytes, get a data reader from the attachment store, and then access its [`bytes`](../hkattachmentdatareader/bytes.md) using a `for-await-in` loop.
 

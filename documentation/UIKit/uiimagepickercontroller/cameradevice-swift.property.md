@@ -21,7 +21,7 @@ var cameraDevice: UIImagePickerController.CameraDevice { get set }
 @property (nonatomic) UIImagePickerControllerCameraDevice cameraDevice;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`UIImagePickerController.CameraDevice.rear`](./cameradevice-swift.enum/rear.md).
 

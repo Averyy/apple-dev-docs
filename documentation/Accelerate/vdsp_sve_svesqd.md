@@ -21,7 +21,7 @@ Calculates the sum of values and the sum of squares in a double-precision vector
 extern void vDSP_sve_svesqD(const double *__A, vDSP_Stride __IA, double *__Sum, double *__SumOfSquares, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the sum of values and the sum of squares of the first `N` elements of `A` and writes the result to `Sum` and `SumOfSquares` respectively:
 

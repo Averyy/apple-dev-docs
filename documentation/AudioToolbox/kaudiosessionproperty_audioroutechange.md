@@ -23,11 +23,11 @@ var kAudioSessionProperty_AudioRouteChange: Int { get }
 kAudioSessionProperty_AudioRouteChange
 ```
 
-#### Discussion
+## Discussion
 
 A [`CFDictionary`](../CoreFoundation/cfdictionary.md) object containing the reason the audio route changed along with details on the previous and current audio route.
 
-#### Discussion
+## Discussion
 
 The dictionary contains the keys and corresponding values described in [Audio Route Change Dictionary Keys](./audio-route-change-dictionary-keys.md).
 

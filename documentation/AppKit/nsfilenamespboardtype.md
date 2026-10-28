@@ -15,7 +15,7 @@ An array of `NSString` objects designating one or more filenames.
 extern NSPasteboardType NSFilenamesPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`writeObjects(_:)`](./nspasteboard/writeobjects%28_%29.md) to write file URLs to the pasteboard.
 

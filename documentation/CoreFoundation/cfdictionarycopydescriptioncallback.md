@@ -25,11 +25,11 @@ typealias CFDictionaryCopyDescriptionCallBack = (UnsafeRawPointer?) -> Unmanaged
 typedef const struct __CFString *(*)(const void *) CFDictionaryCopyDescriptionCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 A text description of `value`.
 
-#### Discussion
+## Discussion
 
 This callback is passed to [`CFDictionaryCreate(_:_:_:_:_:_:)`](./cfdictionarycreate%28_,_,_,_,_,_%29.md) in a [`CFDictionaryKeyCallBacks`](./cfdictionarykeycallbacks.md) structure or [`CFDictionaryValueCallBacks`](./cfdictionaryvaluecallbacks.md). This callback is used by the [`CFCopyDescription(_:)`](./cfcopydescription%28_%29.md) function.
 

@@ -22,11 +22,11 @@ Copies the bytes of data from the type into a raw memory buffer.
 func copyBytes(to ptr: UnsafeMutableRawBufferPointer) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes copied.
 
-#### Discussion
+## Discussion
 
 The following example copies the bytes from the raw memory buffer into the provided raw memory buffer:
 

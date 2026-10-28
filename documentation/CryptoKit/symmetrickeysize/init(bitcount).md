@@ -21,7 +21,7 @@ Creates a new key size of the given length.
 init(bitCount: Int)
 ```
 
-#### Discussion
+## Discussion
 
 In most cases, you can use one of the standard key sizes, like bits256. If instead you need a key with a non-standard size, use the [`init(bitCount:)`](./init%28bitcount%29.md) initializer to create a custom key size.
 

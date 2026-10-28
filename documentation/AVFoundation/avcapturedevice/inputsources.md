@@ -19,7 +19,7 @@ var inputSources: [AVCaptureDevice.InputSource] { get }
 @property (nonatomic, readonly) NSArray<AVCaptureDeviceInputSource *> * inputSources;
 ```
 
-#### Discussion
+## Discussion
 
 Some devices can capture data from one of multiple data sources (different input jacks on the same audio device, for example). For devices with multiple possible data sources, you can use this property to enumerate the possible choices.
 

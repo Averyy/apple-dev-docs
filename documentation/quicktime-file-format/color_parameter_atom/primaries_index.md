@@ -6,7 +6,7 @@
 
 A 16-bit unsigned integer containing an index into a table specifying the CIE 1931 xy chromaticity coordinates of the white point and the red, green, and blue primaries.
 
-#### Overview
+## Overview
 
 The table of primaries specifies the white point and the red, green, and blue primary color points for a video system.
 

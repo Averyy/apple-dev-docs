@@ -25,7 +25,7 @@ var kLinearPCMFormatFlagIsBigEndian: AudioFormatFlags { get }
 kLinearPCMFormatFlagIsBigEndian
 ```
 
-#### Discussion
+## Discussion
 
 This flag is a synonym for [`kAudioFormatFlagIsBigEndian`](./kaudioformatflagisbigendian.md).
 

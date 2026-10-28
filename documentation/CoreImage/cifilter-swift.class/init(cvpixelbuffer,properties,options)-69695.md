@@ -26,7 +26,7 @@ init!(cvPixelBuffer pixelBuffer: CVPixelBuffer!, properties: [AnyHashable : Any]
 + (CIFilter *) filterWithCVPixelBuffer:(CVPixelBufferRef) pixelBuffer properties:(NSDictionary *) properties options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Discussion
+## Discussion
 
 Note that when using this initializer, you should pass in a CVPixelBufferRef with one of the following Raw pixel format types kCVPixelFormatType_14Bayer_GRBG, kCVPixelFormatType_14Bayer_RGGB, kCVPixelFormatType_14Bayer_BGGR, kCVPixelFormatType_14Bayer_GBRG as well as the root properties attachment from the CMSampleBufferRef.
 

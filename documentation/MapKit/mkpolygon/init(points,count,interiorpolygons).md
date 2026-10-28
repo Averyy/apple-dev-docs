@@ -25,7 +25,7 @@ convenience init(points: UnsafePointer<MKMapPoint>, count: Int, interiorPolygons
 + (instancetype) polygonWithPoints:(const MKMapPoint *) points count:(NSUInteger) count interiorPolygons:(NSArray<MKPolygon *> *) interiorPolygons;
 ```
 
-#### Return Value
+## Return Value
 
 A new polygon object.
 

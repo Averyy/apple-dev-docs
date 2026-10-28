@@ -25,7 +25,7 @@ func CFSocketCreateWithSocketSignature(_ allocator: CFAllocator!, _ signature: U
 extern CFSocketRefCFSocketCreateWithSocketSignature(CFAllocatorRef allocator, const CFSocketSignature *signature, CFOptionFlags callBackTypes, CFSocketCallBack callout, const CFSocketContext *context);
 ```
 
-#### Return Value
+## Return Value
 
 The new CFSocket object, or `NULL` if an error occurred. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

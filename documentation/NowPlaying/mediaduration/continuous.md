@@ -21,7 +21,7 @@ Content with no defined duration that isn’t a live broadcast.
 case continuous
 ```
 
-#### Discussion
+## Discussion
 
 Use this case for ongoing playback such as a soundscape, a looping recording, or a continuously generated stream.
 

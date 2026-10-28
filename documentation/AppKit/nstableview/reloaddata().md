@@ -19,7 +19,7 @@ func reloadData()
 - (void) reloadData;
 ```
 
-#### Discussion
+## Discussion
 
 This method forces a redraw of all the visible cells in the table view. If you want to update the value in a single cell, column, or row, it is more efficient to use [`frameOfCell(atColumn:row:)`](./frameofcell%28atcolumn,row%29.md), [`rect(ofColumn:)`](./rect%28ofcolumn%29.md), or [`rect(ofRow:)`](./rect%28ofrow%29.md) in conjunction with the [`setNeedsDisplay(_:)`](../nsview/setneedsdisplay%28_%29.md) method of [`NSView`](../nsview.md). If you just want to update the scroller, use [`noteNumberOfRowsChanged()`](./notenumberofrowschanged%28%29.md); if the height of a set of rows changes, use [`noteHeightOfRows(withIndexesChanged:)`](./noteheightofrows%28withindexeschanged%29.md).
 

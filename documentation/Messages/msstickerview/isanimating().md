@@ -21,7 +21,7 @@ func isAnimating() -> Bool
 - (BOOL) isAnimating;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the sticker is animating; otherwise, [`false`](../../Swift/false.md).
 

@@ -29,7 +29,7 @@ func start(with params: MTROvenCavityOperationalStateClusterStartParams?) async 
 - (void) startWithParams:(MTROvenCavityOperationalStateClusterStartParams *) params completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command SHALL be supported if the device supports remotely starting the operation.
 

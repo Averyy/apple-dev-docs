@@ -23,11 +23,11 @@ func sec_certificate_copy_ref(_ certificate: sec_certificate_t) -> Unmanaged<Sec
 SecCertificateRefsec_certificate_copy_ref(sec_certificate_t certificate);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying `SecCertificateRef` instance.
 
-#### Discussion
+## Discussion
 
 Copy a retained reference to the underlying `SecCertificateRef` instance.
 

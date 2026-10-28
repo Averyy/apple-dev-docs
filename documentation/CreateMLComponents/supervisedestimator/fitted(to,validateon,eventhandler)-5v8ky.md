@@ -21,11 +21,11 @@ Fits a transformer to an async sequence of examples while validating with a vali
 func fitted<Input, Validation>(to input: Input, validateOn validation: Validation, eventHandler: EventHandler?) async throws -> Self.Transformer where Input : AsyncSequence, Validation : Sequence, Input.Element == AnnotatedFeature<Self.Transformer.Input, Self.Annotation>, Validation.Element == AnnotatedFeature<Self.Transformer.Input, Self.Annotation>
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 
-#### Discussion
+## Discussion
 
 Note that the async sequence is collected before fitting the estimator. This may result in increased memory use. Consider using the update method to train progressively in batches.
 

@@ -16,7 +16,7 @@ A custom quality for the model, with specifics defined by the photogrammetry ses
 case custom
 ```
 
-#### Discussion
+## Discussion
 
 If you select `.custom`, you can define unique detail parameters by configuring the session with a [`PhotogrammetrySession.Configuration.CustomDetailSpecification`](../../configuration-swift.struct/customdetailspecification-swift.struct.md) instance in a [`customDetailSpecification`](../../configuration-swift.struct/customdetailspecification-swift.property.md). The configuration lets you precisely control the model’s detail level, processing efficiency, and output file size by adjusting properties such as [`maximumPolygonCount`](../../configuration-swift.struct/customdetailspecification-swift.struct/maximumpolygoncount.md), [`textureFormat`](../../configuration-swift.struct/customdetailspecification-swift.struct/textureformat-swift.property.md), and more.
 

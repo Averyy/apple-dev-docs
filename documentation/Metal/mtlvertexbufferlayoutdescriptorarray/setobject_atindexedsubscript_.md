@@ -20,7 +20,7 @@ Sets the state of the specified vertex buffer layout.
 - (void) setObject:(MTLVertexBufferLayoutDescriptor *) bufferDesc atIndexedSubscript:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 If this method is called with `nil` for `bufferDesc` for any legal index, the [`MTLVertexBufferLayoutDescriptor`](../mtlvertexbufferlayoutdescriptor.md) object in the array is set to the default values.
 

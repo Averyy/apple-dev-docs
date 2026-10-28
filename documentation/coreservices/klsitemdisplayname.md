@@ -20,7 +20,7 @@ let kLSItemDisplayName: CFString!
 const CFStringRef kLSItemDisplayName;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`LSCopyDisplayNameForURL(_:_:)`](./api-1446850-lscopydisplaynameforurl.md) or the URL resource property [`kCFURLLocalizedNameKey`](../CoreFoundation/kcfurllocalizednamekey.md)/[`localizedNameKey`](../Foundation/urlresourcekey/localizednamekey.md) instead.
 

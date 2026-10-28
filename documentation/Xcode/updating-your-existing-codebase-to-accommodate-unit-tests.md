@@ -5,7 +5,7 @@
 
 Remove coupling between components to increase test coverage and reliability.
 
-#### Overview
+## Overview
 
 Adding unit tests to existing projects can be difficult, because design choices made without considering testability can couple together distinct classes or subsystems, making it impossible to test them in isolation. When two components in your software are tightly coupled, you can only use one of them correctly when it’s integrated with the other in a specific way. Sometimes, this coupling means your tests attempt network connections or interact with the filesystem, which makes the tests slow and their results non-deterministic. Removing the coupling makes it possible to introduce unit tests, but requires code changes in places where you don’t already have test coverage, which is risky.
 
@@ -15,7 +15,7 @@ When the code you’re testing is coupled to another part of your project or a f
 
 The following sections propose changes that remove couplings in situations where coupling between the code under consideration and another component blocks testing. Each solution demonstrates how a test function works with the changed code to assert its behavior.
 
-##### Replace a concrete type with a protocol
+### Replace a concrete type with a protocol
 
 When your code relies on a specific type whose behavior makes testing difficult, create a protocol that lists the methods and properties used by your code. You can use this approach when interacting with components in your own codebase or with APIs from other sources outside of your control, including platform SDKs and Swift packages. Examples of such problematic dependencies include those that access external state, including user documents or databases, or those that don’t have deterministic results, including network connections or random value generators.
 
@@ -123,7 +123,7 @@ class AttachmentOpenerTests: XCTestCase {
 }
 ```
 
-##### Replace named type with metatype value
+### Replace named type with metatype value
 
 When one class in your app creates and uses instances of another class, and the created objects introduce testing difficulties, it can be hard to test the class where they’re created. Parameterize the type of the created object and use a required initializer to create an instance. Examples of this difficult testing situation include a controller that creates a new document on the filesystem in response to a person’s action, or a method that interprets JSON received from a web service and creates new Core Data managed objects that represent the received data.
 
@@ -277,7 +277,7 @@ class DocumentLoaderTests: XCTestCase {
 }
 ```
 
-##### Subclass and override untestable methods
+### Subclass and override untestable methods
 
 When a class combines custom logic with interactions or behavior that make the class hard to test, introduce a subclass that overrides some of the class’s methods to make the others easier to test. It’s common to design classes that contain both app-specific logic, and interactions with the environment or frameworks that render behavior difficult to control in tests. A common example is a [`UIViewController`](../UIKit/uiviewcontroller.md) subclass, which has app-specific code in its action methods and also loads views or presents other view controllers.
 
@@ -409,7 +409,7 @@ Add UI tests to verify the behavior of the real class in an end-to-end workflow 
 
 Subclassing and overriding untestable methods is the first step in redesigning existing code so app logic and integration with frameworks or external data are separated. Dividing the code this way makes it easier to understand which parts of your project implement the app’s features and which integrate with the rest of the system, and it also reduces the chance of introducing logic bugs when you change your code to take advantage of new APIs or adopt different technologies.
 
-##### Inject a singleton
+### Inject a singleton
 
 If your code uses a singleton object to gain access to globally-available state or behavior, turn the singleton into a parameter that you can replace to support isolation for testing. Singleton use can be spread throughout a codebase, which makes it hard to know the singleton’s state when it’s used by the component you’re trying to test. Running tests in different orders may produce different outcomes.
 

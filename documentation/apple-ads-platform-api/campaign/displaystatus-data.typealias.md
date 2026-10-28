@@ -24,11 +24,11 @@ string Campaign.DisplayStatus
 - `PROCESSING`: The campaign was recently created or modified and is being processed.
 - `DELETED`: The campaign has been soft-deleted.
 
-#### Discussion
+## Discussion
 
 Because it merges both inputs into one label, a campaign set to `ENABLED` can still display as `ON_HOLD` or `LIMITED` when a system condition intervenes.
 
-##### Example
+### Example
 
 ```json
 {

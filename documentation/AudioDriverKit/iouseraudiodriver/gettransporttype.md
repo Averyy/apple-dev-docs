@@ -15,11 +15,11 @@ Gets the transport type of the driver.
 IOUserAudioTransportType GetTransportType();
 ```
 
-#### Return Value
+## Return Value
 
 The transport type of the driver.
 
-#### Discussion
+## Discussion
 
 Getting the value synchronizes by using the work queue created by the object.
 

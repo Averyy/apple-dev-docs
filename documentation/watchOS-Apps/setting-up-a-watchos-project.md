@@ -4,11 +4,11 @@
 
 Create a new watchOS project or add a watch target to an existing iOS project.
 
-#### Overview
+## Overview
 
 Before you start a new watchOS project, you need to decide how you’re going to distribute that project: as a watch-only app or as a watchOS app with an iOS app. If your app is only available on Apple Watch, create a new watch-only project. If you want both a watchOS and an iOS app that deliver related experiences, either create a new watchOS app with a companion iOS app or add a watchOS target to an existing iOS project.
 
-##### Create a new watchOS project
+### Create a new watchOS project
 
 To create a new watchOS project:
 
@@ -20,7 +20,7 @@ To create a new watchOS project:
 
 ![A screenshot of Xcode’s project option sheet. The project name is set to MyWatchApp, and the Watch-only App setting is selected.](https://developer.apple.com/tutorials/images/com.apple.watchOS-Apps/setting-up-a-watchos-project-project-settings@2x.png)
 
-##### Add a watchOS target to an existing iOS app
+### Add a watchOS target to an existing iOS app
 
 To add a watchOS target to an existing iOS project:
 

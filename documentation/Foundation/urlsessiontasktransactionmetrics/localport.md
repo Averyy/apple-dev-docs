@@ -21,7 +21,7 @@ The port number of the local interface for the connection.
 var localPort: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For multipath protocols, this is the local port of the initial flow. If the app didn’t use the connection, this value is `nil`.
 

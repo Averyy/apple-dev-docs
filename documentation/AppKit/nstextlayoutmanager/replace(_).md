@@ -19,7 +19,7 @@ func replace(_ textContentManager: NSTextContentManager)
 - (void) replaceTextContentManager:(NSTextContentManager *) textContentManager;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to replace the current [`NSTextContentManager`](../nstextcontentmanager.md) with a new one, leaving all related objects intact. This method makes sure the [`NSTextLayoutManager`](../nstextlayoutmanager.md) doesn’t get deallocated while migrating to the new manager.
 

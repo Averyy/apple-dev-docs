@@ -24,11 +24,11 @@ func objectForKeyedSubscript(_ key: Any!) -> JSValue!
 - (JSValue *) objectForKeyedSubscript:(id) key;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the named property, or the JavaScript `undefined` value if no property exists by that name.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to the [`forProperty(_:)`](./forproperty%28_%29.md) method, but provides Objective-C subscripting support.
 

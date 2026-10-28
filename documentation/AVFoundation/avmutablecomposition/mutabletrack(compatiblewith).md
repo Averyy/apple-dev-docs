@@ -25,11 +25,11 @@ func mutableTrack(compatibleWith track: AVAssetTrack) -> AVMutableCompositionTra
 - (AVMutableCompositionTrack *) mutableTrackCompatibleWithTrack:(AVAssetTrack *) track;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable composition track, of `nil` if a compatible track isn’t available.
 
-#### Discussion
+## Discussion
 
 To optimize performance, limit the number of tracks to only what you need to present media data in parallel. To present media data of the same type serially, even from multiple assets, use a single track of that media type. You use this method to identify a suitable existing target track for an insertion.
 

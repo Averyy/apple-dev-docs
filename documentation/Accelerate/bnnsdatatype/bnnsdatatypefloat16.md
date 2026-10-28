@@ -19,7 +19,7 @@
 BNNSDataTypeFloat16
 ```
 
-#### Discussion
+## Discussion
 
 Storage data type
 

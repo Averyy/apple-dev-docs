@@ -18,7 +18,7 @@ Creates a ray-cast query originating from a point in the view, centered on the c
 @preconcurrency func makeRaycastQuery(from point: CGPoint, allowing target: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment) -> ARRaycastQuery?
 ```
 
-#### Return Value
+## Return Value
 
 A query result.
 

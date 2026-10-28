@@ -17,7 +17,7 @@ A lightweight typealias for a horizontal and vertical `UIUserInterfaceSizeClass`
 typealias SizeClass = (horizontal: UIUserInterfaceSizeClass, vertical: UIUserInterfaceSizeClass)
 ```
 
-#### Discussion
+## Discussion
 
 See [Adaptivity and Layout](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/) on the Human Interface Guidelines for all possible combinations.
 

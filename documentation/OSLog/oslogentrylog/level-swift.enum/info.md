@@ -25,7 +25,7 @@ case info
 OSLogEntryLogLevelInfo
 ```
 
-#### Discussion
+## Discussion
 
 This log level captures information that may be helpful but isn’t essential for troubleshooting errors.
 

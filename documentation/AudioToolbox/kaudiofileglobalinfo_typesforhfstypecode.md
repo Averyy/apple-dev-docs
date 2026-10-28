@@ -24,7 +24,7 @@ var kAudioFileGlobalInfo_TypesForHFSTypeCode: AudioFilePropertyID { get }
 kAudioFileGlobalInfo_TypesForHFSTypeCode
 ```
 
-#### Discussion
+## Discussion
 
 When accessing this property, provide a pointer, in the `inSpecifier` parameter, to an `HFSTypeCode`.
 

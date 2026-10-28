@@ -21,7 +21,7 @@ Allocates uninitialized memory for the specified number of instances of type `El
 static func allocate(capacity count: Int) -> UnsafeMutableBufferPointer<Element>
 ```
 
-#### Discussion
+## Discussion
 
 The resulting buffer references a region of memory that is bound to `Element` and is `count * MemoryLayout<Element>.stride` bytes in size.
 

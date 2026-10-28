@@ -27,7 +27,7 @@ var isLowPower: Bool { get }
 
 - [Finding multiple GPUs on an Intel-based Mac](../finding-multiple-gpus-on-an-intel-based-mac.md)
 
-#### Discussion
+## Discussion
 
 Some systems contain multiple GPUs that run with different performance and energy characteristics. At runtime, choose a GPU that best matches your performance needs while considering the current state of the system. For example, your app may choose a lower-power GPU if it doesn’t need the best possible performance on a MacBook Pro that’s running on battery power. For more information on discovering and selecting GPUs at runtime, see [Multi-GPU systems](../multi-gpu-systems.md).
 

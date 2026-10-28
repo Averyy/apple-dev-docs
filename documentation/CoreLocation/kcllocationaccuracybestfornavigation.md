@@ -25,7 +25,7 @@ let kCLLocationAccuracyBestForNavigation: CLLocationAccuracy
 extern const CLLocationAccuracy kCLLocationAccuracyBestForNavigation;
 ```
 
-#### Discussion
+## Discussion
 
 This level of accuracy is intended for use in navigation apps that require precise position information at all times. Because of the extra power requirements, use this level of accuracy only while the device is plugged in.
 

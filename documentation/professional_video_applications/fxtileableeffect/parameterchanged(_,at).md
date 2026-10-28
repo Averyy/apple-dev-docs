@@ -26,7 +26,7 @@ optional func parameterChanged(_ paramID: UInt32, at time: CMTime) throws
 - [Thread safety in plug-ins](../../Professional-Video-Applications/thread-safety-in-plug-ins.md)
 - [Versioning and obsoleting old plug-ins](../../Professional-Video-Applications/versioning-and-obsoleting-old-plug-ins.md)
 
-#### Discussion
+## Discussion
 
 Use this method to change, enable, disable, hide, or show other parameters. This method is called each time the user changes a parameter. You can use this method to update other parameters (such as hiding or showing them). You have full access to the [`FxParameterCreationAPI_v5`](../fxparametercreationapi_v5.md) or later, [`FxParameterRetrievalAPI_v6`](../fxparameterretrievalapi_v6.md) or later, and [`FxParameterSettingAPI_v5`](../fxparametersettingapi_v5.md) or later, within this method.
 

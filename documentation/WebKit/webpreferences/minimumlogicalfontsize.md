@@ -19,7 +19,7 @@ var minimumLogicalFontSize: Int32 { get set }
 @property (nonatomic) int minimumLogicalFontSize;
 ```
 
-#### Discussion
+## Discussion
 
 The minimum logical font size is the smallest font size that will display in a web view when the content’s font size is imprecisely specified. This includes content with logical sizes (such as `small`) or with a font size specified as a percentage of the default.
 

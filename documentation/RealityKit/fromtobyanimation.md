@@ -20,7 +20,7 @@ An animation that starts, stops, or increments by a specific value.
 struct FromToByAnimation<Value> where Value : AnimatableData
 ```
 
-#### Overview
+## Overview
 
 To animate an entity or scene, this structure gradually changes a parameter’s value over time. You can specify a *from* value, which represents the animated property’s initial value at the beginning of the animation. You can also specify a *to* value, which determines the value of the property at the end of the animation. Alternatively, you can set a *by* value. The framework adds the *by* value to the property’s initial state to calculate the value at the end of the animation.
 
@@ -28,7 +28,7 @@ To specify the property that this struct animates, define `bindTarget` in the in
 
 [`init(name:from:to:by:duration:timing:isAdditive:bindTarget:blendLayer:repeatMode:fillMode:trimStart:trimEnd:trimDuration:offset:delay:speed:)`](./fromtobyanimation/init%28name,from,to,by,duration,timing,isadditive,bindtarget,blendlayer,repeatmode,fillmode,trimstart,trimend,trimduration,offset,delay,speed%29.md).
 
-##### Configure the animation inputs
+### Configure the animation inputs
 
 This animation supports varying input combinations, which exhibit the following behavior. When you specify:
 

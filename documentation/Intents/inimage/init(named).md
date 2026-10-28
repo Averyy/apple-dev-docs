@@ -25,7 +25,7 @@ convenience init(named name: String)
 + (instancetype) imageNamed:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An image object that contains the bundled image file, or `nil` if the system can’t find an image with the specified filename.
 

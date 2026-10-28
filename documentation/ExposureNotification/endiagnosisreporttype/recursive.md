@@ -23,7 +23,7 @@ case recursive
 ENDiagnosisReportTypeRecursive
 ```
 
-#### Discussion
+## Discussion
 
 This case is not used.
 

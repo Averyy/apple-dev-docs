@@ -20,7 +20,7 @@ string originalTransactionId
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Extending the renewal date for auto-renewable subscriptions](./extending-the-renewal-date-for-auto-renewable-subscriptions.md)
 
-#### Discussion
+## Discussion
 
 The App Store generates an original transaction identifier when a customer makes a successful in-app purchase. Most App Store Server API endpoints accept an `originalTransactionId`.
 

@@ -24,7 +24,7 @@ class AVAudioUnitDelay
 @interface AVAudioUnitDelay : AVAudioUnitEffect
 ```
 
-#### Overview
+## Overview
 
 A delay unit delays the input signal by the specified time interval and then blends it with the input signal. You can also control the amount of high-frequency roll-off to simulate the effect of a tape delay.
 

@@ -25,11 +25,11 @@ func CTFontCollectionCreateCopyWithFontDescriptors(_ original: CTFontCollection,
 extern CTFontCollectionRefCTFontCollectionCreateCopyWithFontDescriptors(CTFontCollectionRef original, CFArrayRef queryDescriptors, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the original font collection augmented by the new font descriptors and options.
 
-#### Discussion
+## Discussion
 
 The new font descriptors are merged with the existing descriptors to create a single set.
 

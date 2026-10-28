@@ -9,21 +9,21 @@ Retrieve the advertiser resources available to your organization, filtered by re
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Advertiser resources are brands and content providers available across your organization that you can delegate to an ad account. This endpoint returns all resources visible to the authenticated caller for the given `resourceType`. It takes no account-scoping parameter. The `resourceType` query parameter is required. Omitting it returns an error. See [`AdvertiserResourceType`](./advertiserresourcetype.md) for supported values.
 
 Each resource in the response identifies itself by its `resourceId`, `resourceType`, and `resourceName`. Use the returned `resourceId` values when creating or updating delegations on an ad account via [`Update Ad Accounts`](./put-ad-accounts-_id_.md).
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 ```
 GET /v1/advertiser-resources?resourceType=CONTENT_PROVIDER
 ```
 
-##### Response
+### Response
 
 ```json
 {

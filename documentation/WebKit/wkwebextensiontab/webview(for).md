@@ -23,7 +23,7 @@ optional func webView(for context: WKWebExtensionContext) -> WKWebView?
 - (WKWebView *) webViewForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 The web view’s [`WKWebViewConfiguration`](../wkwebviewconfiguration.md) must have its [`webExtensionController`](../wkwebviewconfiguration/webextensioncontroller.md) property set to match the controller of the given context; otherwise `nil` will be used. Defaults to `nil` if not implemented. If `nil`, some critical features will not be available for this tab, such as content injection or modification.
 

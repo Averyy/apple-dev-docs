@@ -16,7 +16,7 @@ A string, suitable for display, that describes the card.
 DOMString displayName;
 ```
 
-#### Discussion
+## Discussion
 
 The display name enables a user to recognize a particular card from a list of cards.
 

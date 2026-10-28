@@ -21,7 +21,7 @@ The symbol used to represent “AM”, localized to the Calendar’s `locale`.
 var amSymbol: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for English in the Gregorian calendar, returns `"AM"`.
 

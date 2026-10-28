@@ -15,7 +15,7 @@ The types of authorizations necessary for detecting planes.
 static var requiredAuthorizations: [ARKitSession.AuthorizationType] { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to pass plane detection requirements to the [`requestAuthorization(for:)`](../arkitsession/requestauthorization%28for%29.md) method.
 

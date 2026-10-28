@@ -19,7 +19,7 @@ class WKInterfacePicker
 @interface WKInterfacePicker : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 The picker presents one or more [`WKPickerItem`](./wkpickeritem.md) objects to the user. These Items may consist of text, images, or a combination of the two. The user interacts with a picker by tapping it, using the crown to scroll through items, and tapping again to select an item. A single interface controller may contain multiple pickers, each with its own set of items.
 
@@ -61,7 +61,7 @@ Do not subclass or create instances of this class yourself. Instead, define outl
 
 During the initialization of your interface controller, WatchKit creates a new instance of this class and assigns it to your outlet. At that point, you can use the object in your outlet to make changes to the onscreen picker.
 
-##### Interface Builder Configuration Options
+### Interface Builder Configuration Options
 
 Xcode lets you configure information about your picker interface object in your storyboard file. The following table lists the attributes you can configure and their meaning.
 

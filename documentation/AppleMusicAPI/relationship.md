@@ -15,7 +15,7 @@ A to-one or to-many relationship from one resource object to others.
 object Relationship
 ```
 
-#### Discussion
+## Discussion
 
 A to-one relationship contains a single object in the `data` array.
 

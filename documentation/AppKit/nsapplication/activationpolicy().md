@@ -19,7 +19,7 @@ func activationPolicy() -> NSApplication.ActivationPolicy
 - (NSApplicationActivationPolicy) activationPolicy;
 ```
 
-#### Return Value
+## Return Value
 
 The app’s current activation policy.
 

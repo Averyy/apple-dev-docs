@@ -23,7 +23,7 @@ var force: CGFloat { get }
 @property (nonatomic, readonly) CGFloat force;
 ```
 
-#### Discussion
+## Discussion
 
 While all buttons can be “down” or “up”, some physical buttons also have a notion of a “force” with which they’re pressed. For analog buttons, force returns a value between 0 and 1, and for digital buttons it returns 0 or 1.
 

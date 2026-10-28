@@ -29,7 +29,7 @@ func operationalDataset(with params: MTRThreadNetworkDirectoryClusterGetOperatio
 - (void) getOperationalDatasetWithParams:(MTRThreadNetworkDirectoryClusterGetOperationalDatasetParams *) params completion:(void (^)(MTRThreadNetworkDirectoryClusterOperationalDatasetResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Retrieves the Thread Operational Dataset with the given Extended PAN ID.
 

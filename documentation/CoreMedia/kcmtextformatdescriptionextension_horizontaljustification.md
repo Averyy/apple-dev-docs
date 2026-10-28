@@ -25,7 +25,7 @@ let kCMTextFormatDescriptionExtension_HorizontalJustification: CFString
 extern CFStringRef const kCMTextFormatDescriptionExtension_HorizontalJustification;
 ```
 
-#### Discussion
+## Discussion
 
 The value needs to be `SInt8` and contains a [`CMTextJustificationValue`](./cmtextjustificationvalue.md).
 

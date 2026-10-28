@@ -19,7 +19,7 @@ Given prompt tokens generate text using the given model and parameters.
 func generate(promptTokens: [Int], parameters: GenerateParameters, model: any LanguageModel, tokenizer: Tokenizer, extraEOSTokens: Set<String>? = nil, didGenerate: ([Int]) -> GenerateDisposition) throws -> GenerateResult
 ```
 
-#### Discussion
+## Discussion
 
 [`generate(input:cache:state:parameters:context:components:wiredMemoryTicket:tools:)`](./generate%28input,cache,state,parameters,context,components,wiredmemoryticket,tools%29.md) returning `AsyncStream<Generation>` is the preferred call.
 

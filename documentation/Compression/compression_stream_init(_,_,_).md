@@ -25,14 +25,14 @@ func compression_stream_init(_ stream: UnsafeMutablePointer<compression_stream>,
 extern compression_status compression_stream_init(compression_stream *stream, compression_stream_operation operation, compression_algorithm algorithm);
 ```
 
-##### Return Value
+### Return Value
 
 A value of type [`compression_status`](./compression_status.md), interpreted as follows:
 
 - [`COMPRESSION_STATUS_OK`](./compression_status_ok.md) means the stream object was successfully initialized.
 - [`COMPRESSION_STATUS_ERROR`](./compression_status_error.md) means an error occurred.
 
-#### Discussion
+## Discussion
 
 After success of this function, set the `dst_ptr`, `dst_size`, `src_ptr`, and `src_size` fields of the stream structure to their respective values. You can then pass stream structure to the [`compression_stream_process(_:_:)`](./compression_stream_process%28_,_%29.md) function.
 

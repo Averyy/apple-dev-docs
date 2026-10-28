@@ -37,7 +37,7 @@ var image: INImage? { get }
 
 - [Improving interactions between Siri and your messaging app](../../SiriKit/improving-interactions-between-siri-and-your-messaging-app.md)
 
-#### Discussion
+## Discussion
 
 Only show the person’s image to the user in appropriate situations. The value of this property is specified automatically at initialization time and can’t be changed later.
 

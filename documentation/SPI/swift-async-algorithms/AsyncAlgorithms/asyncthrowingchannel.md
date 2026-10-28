@@ -23,7 +23,7 @@ An error-throwing channel for sending elements from on task to another with back
 final class AsyncThrowingChannel<Element, Failure> where Element : Sendable, Failure : Error
 ```
 
-#### Overview
+## Overview
 
 The `AsyncThrowingChannel` class is intended to be used as a communication types between tasks, particularly when one task produces values and another task consumes those values. The back pressure applied by `send(_:)` via suspension/resume ensures that the production of values does not exceed the consumption of values from iteration. This method suspends after enqueuing the event and is resumed when the next call to `next()` on the `Iterator` is made, or when `finish()`/`fail(_:)` is called from another Task. As `finish()` and `fail(_:)` induce a terminal state, there is no more need for a back pressure management. Those functions do not suspend and will finish all the pending iterations.
 

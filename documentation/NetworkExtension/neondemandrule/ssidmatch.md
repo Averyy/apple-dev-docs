@@ -24,7 +24,7 @@ var ssidMatch: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * SSIDMatch;
 ```
 
-#### Discussion
+## Discussion
 
 An array of [`NSString`](../../Foundation/nsstring.md) objects. If the Service Set Identifier (SSID) of the current primary connected network matches one of the strings in this array and all of the other conditions in the rule match, then the rule matches. If this property is nil (the default), then the current primary connected network SSID does not factor into the rule match.
 

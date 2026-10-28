@@ -9,11 +9,11 @@
 virtual bool isMediaEjectable() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the media is ejectable, false otherwise.
 
-#### Overview
+## Overview
 
 Ask the driver whether the media is ejectable.
 

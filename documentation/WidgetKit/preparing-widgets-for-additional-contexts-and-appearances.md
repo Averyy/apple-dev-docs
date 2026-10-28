@@ -5,7 +5,7 @@
 
 Create widgets that support additional platforms and adapt to their context.
 
-#### Overview
+## Overview
 
 Widgets change their appearance to best fit their context. For example, widgets on the Home Screen, Today View, and on Mac use accented colors and a clear glass presentation with a specific tint color, or they appear in a full color rendering. In CarPlay, small widgets appear scaled up and in full color, while Lock Screen widgets and WidgetKit complications use more restrained colors because they’re smaller, always visible, and support tinted modes for each platform. Because all widgets appear in more than one context, make sure your widgets and their SwiftUI views support all applicable rendering modes.
 
@@ -56,23 +56,23 @@ var body: some View {
 }
 ```
 
-##### Make your background views removable
+### Make your background views removable
 
 In many contexts, the system removes your widget’s background views to match the system appearance. To control which components of your widget the system removes, group them into background containers and mark them as removable. For more information, refer to [Displaying the right widget background](./displaying-the-right-widget-background.md).
 
-##### Support Always On
+### Support Always On
 
 If you create accessory widgets and WidgetKit complications, make sure to use SwiftUI’s [`isLuminanceReduced`](../SwiftUI/environmentvalues/isluminancereduced.md) environment variable to detect Always On and color your views to look great with reduced luminance. For design guidance, see [Human Interface Guidelines > Always On](https://developer.apple.com/design/human-interface-guidelines/always-on) and [Human Interface Guidelines > Widgets](https://developer.apple.com/design/human-interface-guidelines/widgets).
 
-##### Update your small widget to support StandBy and CarPlay
+### Update your small widget to support StandBy and CarPlay
 
 On iPhone in StandBy, the Lock Screen shows two widgets side by side on a dark background. In CarPlay, widgets appear on a dedicated Widgets screen. For both appearances, WidgetKit uses your [`WidgetFamily.systemSmall`](./widgetfamily/systemsmall.md) widget and scales it to fit available space. For more information about supporting StandBy and CarPlay, refer to [Adding StandBy and CarPlay support to your widget](./adding-standby-and-carplay-support-to-your-widget.md).
 
-##### Indicate that a widget might not fit a specific context
+### Indicate that a widget might not fit a specific context
 
 By default, the system suggests widgets in many contexts, and people can choose widgets in the widget gallery to personalize their system experience. However, a widget might not be a good fit for a specific context. For example, a widget that relies on high-resolution photos and background colors for its functionality may not work well on the Lock Screen, where the system applies a vibrant treatment to the widget. To indicate that a widget doesn’t work well in a specific context, use [`disfavoredLocations(_:for:)`](../SwiftUI/widgetconfiguration/disfavoredlocations%28_,for%29.md) and provide the applicable [`WidgetLocation`](./widgetlocation.md). As a result, the widget appears in the widget gallery’s “Other” section for the disfavored location.
 
-##### Verify font sizes in macOS
+### Verify font sizes in macOS
 
 When people place an iPhone widget on a Mac desktop, the system renders it using iOS font metrics. However, a native Mac app’s widgets use macOS font sizing. If you’re sharing code across your iOS and macOS targets in your Xcode project, make sure to verify font sizing in macOS and adjust it for macOS as needed.
 

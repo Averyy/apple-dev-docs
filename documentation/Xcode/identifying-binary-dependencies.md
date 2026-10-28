@@ -5,15 +5,15 @@
 
 Find out if a package dependency references a binary and verify the binary’s authenticity.
 
-#### Overview
+## Overview
 
 When you add a source-based package dependency to your app, you can inspect the source code, contribute bug fixes, and recompile the source code if needed. However, a package author may have chosen to distribute their code in binary form. For example, a company may prefer to distribute binaries instead of source files to protect intellectual property. In general, taking on a dependency always requires careful consideration because you’re adding code to your app; even more so if you’re adding a binary dependency. As a result, it’s important you know how to identify a binary dependency.
 
-##### Review binary dependencies
+### Review binary dependencies
 
 Carefully consider whether you want to add a binary dependency, because doing so comes with drawbacks. For example, a binary dependency is less portable because it can only support platforms that its included binaries support, and binary dependencies are only available for Apple platforms. If you have a choice between a source-based dependency and a binary dependency, use the source-based dependency if it provides the same functionality.
 
-##### Identify a binary dependency
+### Identify a binary dependency
 
 To find out whether a package dependency is a binary dependency or if a source-based package depends on one:
 

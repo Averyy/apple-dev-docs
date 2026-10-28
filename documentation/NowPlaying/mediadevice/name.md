@@ -18,7 +18,7 @@ The human-readable name of the device.
 let name: String
 ```
 
-#### Discussion
+## Discussion
 
 The system displays this name in the Now Playing interface. Use a descriptive name that helps people identify the device.
 

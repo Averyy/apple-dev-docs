@@ -20,7 +20,7 @@ class ARMatteGenerator
 @interface ARMatteGenerator : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class when you want full control over occluding your app’s virtual content, based on people ARKit recognizes in the camera feed.
 

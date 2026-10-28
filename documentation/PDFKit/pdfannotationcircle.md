@@ -19,7 +19,7 @@ class PDFAnnotationCircle
 @interface PDFAnnotationCircle : PDFAnnotation
 ```
 
-#### Overview
+## Overview
 
 A PDFAnnotationCircle object displays an ellipse on a page. Circle annotations are like square annotations (instances of the PDFAnnotationSquare class) apart from the shape.
 

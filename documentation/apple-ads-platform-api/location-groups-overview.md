@@ -8,13 +8,13 @@ Organize business locations into named groups that define which locations an ad 
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 A location group is a named collection of business locations associated with a brand. Instead of targeting every location a brand operates, you can define groups (such as all locations in a metro area, a specific region, or a custom set for a promotional push) and apply that group to an ad group’s targeting configuration. The location group only scopes which locations are in play. You set the schedule, creatives, and bids on the ad group or ad itself, not per location group.
 
 A location group doesn’t affect which viewers see the ad or how close they are to any given location. Geo and radius targeting on the ad group control that separately.
 
-#### Understand Key Concepts
+## Understand Key Concepts
 
 The following terms explain how location groups fit into your targeting strategy:
 
@@ -25,7 +25,7 @@ The following terms explain how location groups fit into your targeting strategy
 | **Ad group targeting** | Associate a location group with an ad group to restrict delivery to those locations. |
 | **systemStatus** | System-managed state: `VALID`, `INVALID`, `PENDING`, or `DELETED`. You can’t update or delete groups with `INVALID` or `PENDING` status. |
 
-#### Follow the Workflow
+## Follow the Workflow
 
 Use location groups to build a targeted geographic strategy for an Apple Maps campaign:
 
@@ -36,7 +36,7 @@ Use location groups to build a targeted geographic strategy for an Apple Maps ca
 5. **Maintain the group.** As brand footprint changes (new store openings, closures, seasonal popups), update the group using [`Update Location Group`](./update-location-group.md) to add or remove location IDs without rebuilding your campaign structure. For `DYNAMIC` groups, the system automatically adds new locations that satisfy the group’s rules, so they don’t require a manual update.
 6. **Remove unused groups.** When a group is no longer needed, call [`Delete Location Group`](./delete-location-group.md) to clean up. Deletion is permanent. Ad groups targeting a deleted group lose that targeting constraint immediately and continue to serve only if they also target other location groups.
 
-#### Review Location Group Fields
+## Review Location Group Fields
 
 A location group object exposes the following fields:
 
@@ -57,7 +57,7 @@ A location group object exposes the following fields:
 | `creationTime` | string (ISO 8601) | When the group was created. |
 | `modificationTime` | string (ISO 8601) | When the group was last modified. |
 
-#### Note Group Size Limits
+## Note Group Size Limits
 
 Location groups enforce the following limits on size and structure:
 

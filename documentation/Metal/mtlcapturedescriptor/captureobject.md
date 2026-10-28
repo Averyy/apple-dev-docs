@@ -24,7 +24,7 @@ var captureObject: Any? { get set }
 @property (nonatomic, strong, nullable) id captureObject;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, but you need to set an instance before using this descriptor to start a capture session.
 

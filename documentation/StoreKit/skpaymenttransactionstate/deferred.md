@@ -31,7 +31,7 @@ SKPaymentTransactionStateDeferred
 
 - [Processing a transaction](../processing-a-transaction.md)
 
-#### Discussion
+## Discussion
 
 Update your UI to show the deferred state, and wait for another callback that indicates the final status.
 

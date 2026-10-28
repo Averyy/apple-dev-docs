@@ -29,7 +29,7 @@ optional func resolveNextTriggerTime(for intent: INSnoozeTasksIntent) async -> I
 - (void) resolveNextTriggerTimeForSnoozeTasks:(INSnoozeTasksIntent *) intent withCompletion:(void (^)(INDateComponentsRangeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve when tasks should begin to snooze. Use the intent object to obtain information about the tasks to be snoozed. Use the information in the [`INTask`](../intask.md) object to look up the corresponding task information in your app’s data structures. Return a resolution that includes as much information as you have available about the task.
 

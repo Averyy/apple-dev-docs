@@ -18,11 +18,11 @@ Returns the list of Bayer RAW pixel formats supported for photo data in the spec
 - (NSArray<NSNumber *> *) supportedRawPhotoPixelFormatTypesForFileType:(AVFileType) fileType;
 ```
 
-#### Return Value
+## Return Value
 
 An array of pixel format types supported for encoding in the specified file type.
 
-#### Discussion
+## Discussion
 
 When you issue a photo capture request, you can separately specify the format for capturing or encoding image data and the container format for producing output files containing that data. However, each file type supports only a specific set of image data types.
 

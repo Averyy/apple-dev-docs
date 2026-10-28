@@ -24,7 +24,7 @@ init(value: String?, type: INPersonHandleType, label: INPersonHandleLabel?)
 - (instancetype) initWithValue:(NSString *) value type:(INPersonHandleType) type label:(INPersonHandleLabel) label;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized person handle object.
 

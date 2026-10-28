@@ -21,7 +21,7 @@ protocol BEExtensionProcess : NSObjectProtocol
 @protocol BEExtensionProcess <NSObject>
 ```
 
-#### Overview
+## Overview
 
 This protocol is common across extension processes for networking ([`BENetworkingProcess`](./benetworkingprocess.md)), rendering ([`BERenderingProcess`](./berenderingprocess.md)), and web content ([`BEWebContentProcess`](./bewebcontentprocess.md)).
 

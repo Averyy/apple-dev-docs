@@ -24,7 +24,7 @@ let CIDetectorNumberOfAngles: String
 extern NSString * const CIDetectorNumberOfAngles;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an `NSNumber` object containing the number 1, 3, 5, 7, 9, or 11. At higher numbers of angles, face detection in video becomes more accurate, but at a higher computational cost.
 

@@ -14,7 +14,7 @@ Run concurrent blit commands and then a compute dispatch in a single pass with a
 - tvOS 26.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 This sample demonstrates how to use Metal 4’s unified compute encoder to combine texture data and create a grayscale version of it at the same time. The app runs blit and dispatch operations in a single compute pass, then renders the results with a render pass.
 
@@ -32,7 +32,7 @@ An [`MTL4ComputeCommandEncoder`](./mtl4computecommandencoder.md) instance combin
 
 The app also reuses its one argument table by modifying the arguments in the table as necessary. For example, each blit command copies from a different source texture, and the dispatch command needs access to both composite textures. Metal processes bindings at draw and dispatch time, allowing the renderer to reconfigure bindings so that you don’t have to create new argument tables.
 
-##### Create long-term resources
+### Create long-term resources
 
 The renderer’s initializer creates the fundamental Metal instances it needs: a command queue, a reusable command buffer, and the default library. For more information on how these work, see [Drawing a triangle with Metal 4](./drawing-a-triangle-with-metal-4.md).
 
@@ -59,7 +59,7 @@ The initializer also creates buffers, textures, an argument table, a shared even
 
 The renderer stores and reuses them for every frame.
 
-##### Load textures from image files
+### Load textures from image files
 
 The `createTextures` helper method starts by loading the contents from the app’s two TGA files into textures:
 
@@ -119,7 +119,7 @@ NSUInteger bytesPerRow = 4 * textureDescriptor.width;
            bytesPerRow:bytesPerRow];
 ```
 
-##### Create textures for the composite images
+### Create textures for the composite images
 
 The app creates two additional textures to store the composite images, by configuring an instance of [`MTLTextureDescriptor`](./mtltexturedescriptor.md) with dimensions that fit both source images. The first texture stores the composite color texture that the compute pass creates from the background and chyron textures. The second texture stores the grayscale equivalent of the composite color texture.
 
@@ -148,7 +148,7 @@ textureDescriptor.usage = MTLTextureUsageShaderWrite | MTLTextureUsageShaderRead
 compositeGrayscaleTexture = [device newTextureWithDescriptor:textureDescriptor];
 ```
 
-##### Create an argument table
+### Create an argument table
 
 The renderer binds resources to shader parameters by creating an argument table that stores buffer and texture bindings:
 
@@ -171,7 +171,7 @@ The compute pass binds two textures for the color input and grayscale output. Th
 
 > 💡 **Tip**: Minimize an app’s memory footprint by setting the binding counts to only what the renderer needs.
 
-##### Compile a render pipeline
+### Compile a render pipeline
 
 The renderer compiles a render pipeline at launch time by creating an instance of [`MTL4Compiler`](./mtl4compiler.md) with a default configuration:
 
@@ -210,7 +210,7 @@ renderPipelineState = [compiler newRenderPipelineStateWithDescriptor:pipelineDes
                                                                error:&error];
 ```
 
-##### Compile a compute pipeline with a grayscale kernel
+### Compile a compute pipeline with a grayscale kernel
 
 The renderer compiles a compute pipeline with the `convertToGrayscale` kernel function.
 
@@ -269,7 +269,7 @@ outTexture.write(half4(grayValue, grayValue, grayValue, 1.0), gridId);
 
 The kernel first checks whether the thread’s grid coordinates are within the texture’s bounds, then returns early if they aren’t. This check handles the case where the grid size exceeds the texture’s size.
 
-##### Calculate the threadgroup count
+### Calculate the threadgroup count
 
 The renderer calculates how many threadgroups to dispatch based on the composite texture’s dimensions.
 
@@ -296,7 +296,7 @@ threadgroupCount.depth = 1;
 
 This calculation ensures the grid covers an area that’s at least as large as the texture, which is why the kernel checks whether each thread’s coordinates are within bounds.
 
-##### Combine textures with concurrent blit commands
+### Combine textures with concurrent blit commands
 
 The renderer encodes a compute pass that combines two operations with a compute encoder:
 
@@ -367,7 +367,7 @@ The unified compute encoder automatically improves the app’s runtime performan
 
 > **Note**: Metal runs copy commands sequentially when they write to overlapping regions of a destination texture.
 
-##### Synchronize the blit and dispatch stages with a barrier
+### Synchronize the blit and dispatch stages with a barrier
 
 The renderer resolves an access conflict between the blit and dispatch stages by encoding an intrapass barrier:
 
@@ -383,7 +383,7 @@ The barrier forces the GPU to wait until the blit stage completes before startin
 
 For more information about access conflicts and synchronization, see [Resource synchronization](./resource-synchronization.md) and [Synchronizing stages within a pass](./synchronizing-stages-within-a-pass.md).
 
-##### Convert the composite texture to grayscale
+### Convert the composite texture to grayscale
 
 The renderer converts the composite color texture to grayscale by dispatching the `convertToGrayscale` kernel:
 
@@ -408,7 +408,7 @@ After encoding the dispatch command, the renderer ends the compute pass:
 [computeEncoder endEncoding];
 ```
 
-##### Render the composite textures
+### Render the composite textures
 
 The renderer creates a render encoder to draw a rectangle for both the color and grayscale composite textures:
 
@@ -497,7 +497,7 @@ After encoding both draw commands, the renderer ends the render pass.
 [renderEncoder endEncoding];
 ```
 
-##### Submit the command buffer to the GPU
+### Submit the command buffer to the GPU
 
 After encoding the compute and render passes, the renderer finalizes and submits the command buffer to the Metal device by committing the command buffer to the device’s command queue:
 

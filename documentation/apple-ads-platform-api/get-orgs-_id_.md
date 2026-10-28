@@ -9,19 +9,19 @@ Retrieve the details of a specific organization by its ID.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves the details of a specific organization by its ID. To retrieve your organization ID, call [`Get Me Details`](./get-current-user-details.md), which returns the `orgId` bound to the authenticated user.
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 ```
 GET /v1/orgs/987654321
 ```
 
-##### Response
+### Response
 
 ```json
 {

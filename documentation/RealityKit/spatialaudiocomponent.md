@@ -20,7 +20,7 @@ A component that configures how sounds emit from an entity into a person’s env
 struct SpatialAudioComponent
 ```
 
-#### Overview
+## Overview
 
 The audio system continuously updates the position and orientation of spatial audio sources automatically, so sounds come from an entity wherever it goes and wherever it points. Spatial audio sources incorporate a person’s environment acoustics so that they blend in naturally with the surrounding area. The system distance-attenuates the spatial audio sources so they become quieter the farther away they are from the person.
 

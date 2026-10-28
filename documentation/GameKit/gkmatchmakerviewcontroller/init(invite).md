@@ -24,11 +24,11 @@ init?(invite: GKInvite)
 - (id) initWithInvite:(GKInvite *) invite;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized matchmaker view controller object. If an error occurs, returns `nil`.
 
-#### Discussion
+## Discussion
 
 The interface shows the status of the other players accepting and declining their invitations until the game starts.
 

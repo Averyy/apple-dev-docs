@@ -22,7 +22,7 @@ class INRestaurantGuest
 @interface INRestaurantGuest : INPerson
 ```
 
-#### Overview
+## Overview
 
 An [`INRestaurantGuest`](./inrestaurantguest.md) object identifies the user assigned to a reservation and includes contact information used to communicate changes or updates to the reservation. During the creation of a reservation, the system sends a [`INGetRestaurantGuestIntent`](./ingetrestaurantguestintent.md) intent to your Intents extension and asks it to provide the identity of the guest to assign to the reservation. You create an instance of this class and associate it with your response to that intent.
 

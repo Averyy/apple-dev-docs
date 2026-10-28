@@ -26,7 +26,7 @@ var storageBehaviorConfiguration: MTRDeviceStorageBehaviorConfiguration? { get s
 @property (nonatomic, copy, nullable) MTRDeviceStorageBehaviorConfiguration * storageBehaviorConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is nil, a default storage behavior configuration will be used.
 

@@ -12,11 +12,11 @@ Speed up OpenGL ES or OpenGL app development. Use math libraries, background tex
 - macOS 10.8+
 - tvOS 9.0+
 
-#### Overview
+## Overview
 
 The GLKit framework provides functions and classes that reduce the effort required to create new shader-based apps or to port existing apps that rely on fixed-function vertex or fragment processing provided by earlier versions of OpenGL ES or OpenGL.
 
-##### GLKit Features
+### GLKit Features
 
 GLKit provides functionality in four key areas:
 

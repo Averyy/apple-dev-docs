@@ -5,13 +5,13 @@
 
 A prim that provides the transform to which this action animates.
 
-#### Overview
+## Overview
 
 To provide a transform, assign an [Xformable](https://openusd.org/docs/api/class_usd_geom_xformable.html) prim to this property.
 
 The prims in the list of [affectedObjects](./affectedobjects.md) animate from their current transform to the transform that this prim specifies. Include in the prim the transformational operations that implement the transform animation. For more information, see [xformOp](https://openusd.org/docs/api/class_usd_geom_xform_op.html).
 
-##### Declaration
+### Declaration
 
 ```other
 rel xformTarget

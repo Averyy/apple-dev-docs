@@ -19,7 +19,7 @@ var mediaEnhanceBoosting: SRAcousticSettings.Accessibility.HeadphoneAccommodatio
 @property (nonatomic, assign, readonly) SRAcousticSettingsAccessibilityHeadphoneAccommodationsMediaEnhanceBoosting mediaEnhanceBoosting;
 ```
 
-#### Discussion
+## Discussion
 
 Soft Sounds boost level
 

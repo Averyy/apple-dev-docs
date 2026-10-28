@@ -20,7 +20,7 @@ var defaultRenderQuality: LayerRenderer.RenderQuality { get }
 
 - [Defining layer renderer quality](../../defining-layer-renderer-quality.md)
 
-#### Discussion
+## Discussion
 
 This should be used as the base render quality value for the platform.
 

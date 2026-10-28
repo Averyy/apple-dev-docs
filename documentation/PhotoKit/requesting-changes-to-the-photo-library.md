@@ -5,7 +5,7 @@
 
 Create, delete, or modify assets and collections in a photo library by making change requests.
 
-#### Overview
+## Overview
 
 Because [`PHAsset`](../Photos/phasset.md), [`PHAssetCollection`](../Photos/phassetcollection.md), and [`PHCollectionList`](../Photos/phcollectionlist.md) instances are immutable objects, you can’t make changes to them. To modify the Photos assets or collections these objects represent, use the shared photo library to execute a change block. Inside the change block, create change request objects. Then apply a change block with one of the methods listed in Updating the Library. The changes you request take effect after Photos runs the change block and calls your completion handler.
 
@@ -21,7 +21,7 @@ Modifying items. You modify an existing asset or collection by creating a change
 
 After creating a change request, use its properties and instance methods to modify the corresponding features of the asset or collection it represents. For example, to set an asset’s [`isFavorite`](../Photos/phasset/isfavorite.md) property, set the [`isFavorite`](../Photos/phassetchangerequest/isfavorite.md) property of a change request created from that asset. To add to an asset collection, call the [`addAssets(_:)`](../Photos/phassetcollectionchangerequest/addassets%28_%29.md) method on an asset collection change request.
 
-##### Create an Asset for an Album
+### Create an Asset for an Album
 
 Use a change block to combine several changes to the photo library into a single atomic update. The following code uses a change block to create an asset from an image and add that asset to an album.
 

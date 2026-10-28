@@ -21,7 +21,7 @@ The standard prominence of a background
 static let standard: BackgroundProminence
 ```
 
-#### Discussion
+## Discussion
 
 This is the default level of prominence and doesn’t require any adjustment to achieve satisfactory contrast with the background.
 

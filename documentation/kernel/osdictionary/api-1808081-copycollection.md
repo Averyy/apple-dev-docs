@@ -12,11 +12,11 @@ OSCollection * copyCollection(
  OSDictionary *cycleDict = 0);
 ```
 
-#### Return Value
+## Return Value
 
 The newly copied dictionary, with a retain count of 1, or `NULL` if there is insufficient memory to do the copy.
 
-#### Overview
+## Overview
 
 The receiving dictionary, and any collections it contains, recursively, are copied. Objects that are not derived from OSCollection are retained rather than copied.
 

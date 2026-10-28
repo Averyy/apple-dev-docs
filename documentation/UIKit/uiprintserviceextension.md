@@ -23,7 +23,7 @@ class UIPrintServiceExtension
 @interface UIPrintServiceExtension : NSObject
 ```
 
-#### Overview
+## Overview
 
 Support cloud printing by creating an extension instead of requiring users to install a managed configuration profile to set up an AirPrint printer. Create an extension by subclassing `UIPrintServiceExtension`. By creating your own extension, you can expose a cloud printer destination to a [`UIPrinterPickerController`](./uiprinterpickercontroller.md). The extension matches printer destinations that fulfill the specified print-job attributes.
 

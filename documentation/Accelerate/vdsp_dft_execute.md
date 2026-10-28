@@ -25,7 +25,7 @@ void vDSP_DFT_Execute(const struct vDSP_DFT_SetupStruct *__Setup, const float *_
 
 - [Performing Fourier transforms on interleaved-complex data](./performing-fourier-transforms-on-interleaved-complex-data.md)
 
-#### Discussion
+## Discussion
 
 This function uses the following operation for a real transform. That is, when the [`vDSP_DFT_zrop_CreateSetup`](./vdsp_dft_zrop_createsetup.md) function provides the setup structure:
 

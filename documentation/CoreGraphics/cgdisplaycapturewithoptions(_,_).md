@@ -20,11 +20,11 @@ func CGDisplayCaptureWithOptions(_ display: CGDirectDisplayID, _ options: CGCapt
 extern CGError CGDisplayCaptureWithOptions(CGDirectDisplayID display, CGCaptureOptions options);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. To interpret the result code, see [`CGError`](./cgerror.md).
 
-#### Discussion
+## Discussion
 
 This function allows you to specify one or more options to use during capture of a display.
 

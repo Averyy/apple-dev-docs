@@ -25,7 +25,7 @@ func readInBackgroundAndNotify(forModes modes: [RunLoop.Mode]?)
 - (void) readInBackgroundAndNotifyForModes:(NSArray<NSString *> *) modes;
 ```
 
-#### Discussion
+## Discussion
 
 See [`readInBackgroundAndNotify()`](./readinbackgroundandnotify%28%29.md) for details of how this method operates. This method differs from [`readInBackgroundAndNotify()`](./readinbackgroundandnotify%28%29.md) in that `modes` specifies the run-loop mode (or modes) in which [`readCompletionNotification`](./readcompletionnotification.md) can be posted.
 

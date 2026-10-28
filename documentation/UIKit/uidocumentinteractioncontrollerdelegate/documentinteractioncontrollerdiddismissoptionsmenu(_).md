@@ -22,7 +22,7 @@ optional func documentInteractionControllerDidDismissOptionsMenu(_ controller: U
 - (void) documentInteractionControllerDidDismissOptionsMenu:(UIDocumentInteractionController *) controller;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to remove any additional views or content you placed underneath the options menu in your [`documentInteractionControllerWillPresentOptionsMenu(_:)`](./documentinteractioncontrollerwillpresentoptionsmenu%28_%29.md) method.
 

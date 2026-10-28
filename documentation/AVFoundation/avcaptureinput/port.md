@@ -23,7 +23,7 @@ class Port
 @interface AVCaptureInputPort : NSObject
 ```
 
-#### Overview
+## Overview
 
 Instances of [`AVCaptureInput`](../avcaptureinput.md) have one or more input ports, one for each data stream they can produce. For example, an [`AVCaptureDeviceInput`](../avcapturedeviceinput.md) object presenting one video data stream has one port.
 

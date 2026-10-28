@@ -25,7 +25,7 @@ static let fileContentIdentifierKey: URLResourceKey
 extern NSURLResourceKey const NSURLFileContentIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 APFS allows only cloned files and their originals to have the same identifier.
 

@@ -15,7 +15,7 @@ Represents a FireWire device.
 class IOFireWireDevice : IOFireWireNub
 ```
 
-#### Overview
+## Overview
 
 The FireWire family tries to read the configuration ROM of each device on the FireWire bus. For each device that responds with its bus information block, the FireWire family publishes an `IOFireWireDevice` object in the I/O Registry. An `IOFireWireDevice` object keeps track of the device's node ID, copies config ROM properties into the object's property list, and scans the config ROM for unit directories, publishing an `IOFireWireUnit` object for each unit directory it finds.
 

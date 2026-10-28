@@ -24,7 +24,7 @@ var port: Int { get }
 @property (readonly) NSInteger port;
 ```
 
-#### Discussion
+## Discussion
 
 If the object was initialized by calling [`init(domain:type:name:port:)`](./init%28domain,type,name,port%29.md) (whether by your code or by a browser object), then the value was set when the object was first initialized.
 

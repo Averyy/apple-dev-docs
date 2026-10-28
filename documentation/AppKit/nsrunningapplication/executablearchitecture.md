@@ -19,7 +19,7 @@ var executableArchitecture: Int { get }
 @property (readonly) NSInteger executableArchitecture;
 ```
 
-#### Discussion
+## Discussion
 
 The returned value will be one of the constants in Mach-O Architecture in [`Bundle`](../../Foundation/bundle.md).
 

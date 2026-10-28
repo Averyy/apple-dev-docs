@@ -10,7 +10,7 @@ framework: "Swift-Org/SwiftlyDocs"
 
 Install swift toolchains with Swiftly.
 
-#### Overview
+## Overview
 
 Installing a swift toolchain using swiftly involves downloading it securely and extracting it into a well-known location in your account. This guides you through the different ways you can install a swift toolchain. Follow the [Getting started with swiftly](./getting-started.md) guide to install swiftly.
 

@@ -31,7 +31,7 @@ protocol MTLCommandBuffer : NSObjectProtocol
 - [Simplifying GPU resource management with residency sets](./simplifying-gpu-resource-management-with-residency-sets.md)
 - [Tracking the resource residency of argument buffers](./tracking-the-resource-residency-of-argument-buffers.md)
 
-#### Overview
+## Overview
 
 A command buffer represents a chunk of work for the GPU that stores the commands you encode to it, as well as any resources those commands need. You primarily use a command buffer to:
 

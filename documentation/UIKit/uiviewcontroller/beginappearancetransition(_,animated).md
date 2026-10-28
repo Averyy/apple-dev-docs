@@ -23,7 +23,7 @@ func beginAppearanceTransition(_ isAppearing: Bool, animated: Bool)
 - (void) beginAppearanceTransition:(BOOL) isAppearing animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 If you are implementing a custom container controller, use this method to tell the child that its views are about to appear or disappear. Do not invoke [`viewWillAppear(_:)`](./viewwillappear%28_%29.md), [`viewWillDisappear(_:)`](./viewwilldisappear%28_%29.md), [`viewDidAppear(_:)`](./viewdidappear%28_%29.md), or [`viewDidDisappear(_:)`](./viewdiddisappear%28_%29.md) directly.
 

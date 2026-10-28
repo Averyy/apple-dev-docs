@@ -19,7 +19,7 @@ var defaultButtonCell: NSButtonCell? { get set }
 @property (retain, nullable) NSButtonCell * defaultButtonCell;
 ```
 
-#### Discussion
+## Discussion
 
 This cell draws itself as the focal element for keyboard interface control, unless another button cell is focused on, in which case the default button cell temporarily draws itself as normal and disables its key equivalent.
 

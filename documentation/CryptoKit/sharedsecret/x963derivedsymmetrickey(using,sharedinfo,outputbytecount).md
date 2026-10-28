@@ -21,7 +21,7 @@ Derives a symmetric encryption key from the secret using x9.63 key derivation.
 func x963DerivedSymmetricKey<H, SI>(using hashFunction: H.Type, sharedInfo: SI, outputByteCount: Int) -> SymmetricKey where H : HashFunction, SI : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The derived symmetric key.
 

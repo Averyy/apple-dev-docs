@@ -20,7 +20,7 @@ The shadow-filtering algorithm this light uses.
 var quality: SpotLightComponent.Shadow.QualityMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set to [`medium`](./qualitymode/medium.md) or [`high`](./qualitymode/high.md) to opt the light into soft shadows, whose penumbra widens with [`lightSize`](./lightsize.md) and with the distance between the caster and the receiving surface. The default value is [`low`](./qualitymode/low.md), which produces a hard-edged shadow whose appearance is independent of [`lightSize`](./lightsize.md).
 

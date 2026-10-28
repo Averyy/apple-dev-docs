@@ -22,7 +22,7 @@ case peerEnded
 NINearbyObjectRemovalReasonPeerEnded
 ```
 
-#### Discussion
+## Discussion
 
 The framework provides this removal reason when the peer app calls [`invalidate()`](../../nisession/invalidate%28%29.md).
 

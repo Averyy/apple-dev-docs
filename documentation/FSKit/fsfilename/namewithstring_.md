@@ -15,7 +15,7 @@ Creates a filename by copying a character sequence from a string instance.
 + (instancetype) nameWithString:(NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer copies the UTF-8 representation of the characters in `string`. If `string` contains a `NUL` character, the sequence terminates.
 

@@ -24,7 +24,7 @@ init(data: Data) throws
 - (instancetype) initWithData:(NSData *) data error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 If there’s a problem encoding the data you supply, this method sets the `error` parameter based on the type of problem:
 

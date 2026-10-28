@@ -25,11 +25,11 @@ func vImageSymmetricPiecewiseGamma_PlanarF(_ src: UnsafePointer<vImage_Buffer>, 
 vImage_Error vImageSymmetricPiecewiseGamma_PlanarF(const vImage_Buffer *src, const vImage_Buffer *dest, const float exponentialCoeffs[3], const float gamma, const float linearCoeffs[2], const float boundary, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The piecewise gamma calculation combines a linear and an exponential (gamma) curve on two regions of the input interval, separated by a specified boundary value. When the input is greater than or equal to the boundary value, the function uses the gamma curve to generate the output; otherwise, the function uses the linear curve. This function differs from [`vImagePiecewiseGamma_PlanarF(_:_:_:_:_:_:_:)`](./vimagepiecewisegamma_planarf%28_,_,_,_,_,_,_%29.md) in that it’s symmetric about zero.
 

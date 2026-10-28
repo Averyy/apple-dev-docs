@@ -15,7 +15,7 @@ Creates a binary target that references a remote artifact.
 static func binaryTarget(name: String, url: String, checksum: String) -> Target
 ```
 
-#### Discussion
+## Discussion
 
 Binary targets are only available on Apple platforms.
 

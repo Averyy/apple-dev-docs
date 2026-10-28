@@ -5,7 +5,7 @@
 
 Configure your system to enable the debugging of custom kernel extensions from a second Mac.
 
-#### Overview
+## Overview
 
 The kernel supports every other process on the system, including the debugger itself, so you can’t debug it using normal techniques. If you develop a kernel extension (kext), you have several options to debug it:
 
@@ -15,7 +15,7 @@ The kernel supports every other process on the system, including the debugger it
 
 Use the Kernel Debug Kit to set up two-machine debugging and an optional core-dump server. Use two-machine debugging to dynamically examine the state of your kext at runtime. If you don’t save core-dump files directly to the Mac you use for debugging, a core-dump server captures them automatically over the network.
 
-##### Install the Kernel Debug Kit
+### Install the Kernel Debug Kit
 
 The Kernel Debug Kit (KDK) provides the tools and support you need to debug the kernel. This separate download includes custom versions of the kernel that include extra assertions and error checking to help you catch problems.
 
@@ -29,7 +29,7 @@ To use the KDK to perform two-machine debugging:
 
 The KDK includes instructions on how to install the custom kernels you use during debugging. It also provides detailed instructions for setting up the connection between your computers. For more information, sign in and download the appropriate KDK from [https://developer.apple.com/download/more/](https://developer.apple.com/download/more/).
 
-##### Debug the Kext
+### Debug the Kext
 
 To begin a debugging session, designate one machine as the debugging machine and the other as the target. Run `lldb` from Terminal on your debugging machine and use the `kdp-remote` command to connect to the remote computer. The `kdp-remote` command accepts the hostname or IP address and creates a debugger connection to the corresponding Mac. Specify the name or IP address of your target Mac as the parameter to the command.
 

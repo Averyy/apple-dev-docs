@@ -19,7 +19,7 @@ func SCDynamicStoreCopyLocalHostName(_ store: SCDynamicStore?) -> CFString?
 CFStringRefSCDynamicStoreCopyLocalHostName(SCDynamicStoreRef store);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the current local host name, or `NULL` if the name has not been set or if an error occurred. You must release the return value.
 

@@ -21,7 +21,7 @@ The type the format style uses for configuration settings.
 typealias Configuration = NumberFormatStyleConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 [`Decimal.FormatStyle.Percent`](../percent.md) uses [`NumberFormatStyleConfiguration`](../../../numberformatstyleconfiguration.md) for its configuration type.
 

@@ -15,7 +15,7 @@ Tells the driver to stop IO on an video device.
 virtual kern_return_t StopDevice(IOUserVideoObjectID in_object_id, IOUserVideoStartStopFlags in_flags);
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation always returns `kIOReturnSuccess`. Subclass and override this method to handle any hardware specific things when IO is stopping, then call the superclass implementation to update IO state. StopIO will be called on the video device.
 

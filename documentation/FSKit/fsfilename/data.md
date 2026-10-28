@@ -19,7 +19,7 @@ var data: Data { get }
 @property (readonly) NSData * data;
 ```
 
-#### Discussion
+## Discussion
 
 This property always provides a value.
 

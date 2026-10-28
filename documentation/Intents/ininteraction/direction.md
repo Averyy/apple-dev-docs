@@ -33,7 +33,7 @@ var direction: INInteractionDirection { get set }
 @property (atomic, assign) INInteractionDirection direction;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to convey whether the interaction involved information moving to or from the current device. For example, starting a video call from this device indicates an outgoing interaction, which means you should set this property to [`INInteractionDirection.outgoing`](../ininteractiondirection/outgoing.md). The default value of this property is [`INInteractionDirection.unspecified`](../ininteractiondirection/unspecified.md).
 

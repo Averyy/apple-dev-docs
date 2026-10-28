@@ -10,7 +10,7 @@ framework: "mlx-swift/MLXNN"
 
 Pre-built filter and map functions in `Module`.
 
-#### Overview
+## Overview
 
 [`Module`](./module.md) provides a number of pre-build filter and map functions for use in:
 
@@ -20,7 +20,7 @@ Pre-built filter and map functions in `Module`.
 
 See those methods for more information.
 
-#### Examples
+## Examples
 
 The `filterMap()` method has several options for controlling the traversal of the modules, parameters and other values in the model.  Here is an example that limits the traversal to just local parameters and produces a `NestedDictionary` of the shapes:
 

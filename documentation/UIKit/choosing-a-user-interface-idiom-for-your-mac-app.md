@@ -5,7 +5,7 @@
 
 Select the iPad or the Mac user interface idiom in your Mac app built with Mac Catalyst.
 
-#### Overview
+## Overview
 
 A Mac app built with Mac Catalyst can run in either [`UIUserInterfaceIdiom.pad`](./uiuserinterfaceidiom/pad.md) or [`UIUserInterfaceIdiom.mac`](./uiuserinterfaceidiom/mac.md) user interface idioms. To choose the idiom in which your app runs, select from the following options after you turn on Mac Catalyst in your Xcode project:
 
@@ -14,13 +14,13 @@ A Mac app built with Mac Catalyst can run in either [`UIUserInterfaceIdiom.pad`]
 
 > **Note**:  To learn more about turning on Mac Catalyst in your Xcode project, see [Creating a Mac version of your iPad app](./creating-a-mac-version-of-your-ipad-app.md).
 
-##### Start with the iPad idiom
+### Start with the iPad idiom
 
 By default, Xcode selects Scale Interface to Match iPad after you turn on Mac Catalyst. This option provides a simplified approach for bringing your iPad app to the Mac. Your Mac app runs in the [`UIUserInterfaceIdiom.pad`](./uiuserinterfaceidiom/pad.md) idiom, which tells macOS to scale the app’s user interface to match the Mac display environment while preserving iPad-like appearance and view metrics.
 
 When testing your app you may find that adopting controls that look and behave like those in AppKit or providing crisper-looking text can enhance the user experience of your app. If this is the case, change to the [`UIUserInterfaceIdiom.mac`](./uiuserinterfaceidiom/mac.md) by selecting Optimize Interface for Mac. However, selecting this option may require you to make additional changes to your app.
 
-##### Update your app to use the Mac idiom
+### Update your app to use the Mac idiom
 
 Choosing Optimize Interface for Mac means your Mac app runs in the [`UIUserInterfaceIdiom.mac`](./uiuserinterfaceidiom/mac.md) user interface idiom, which changes the interface of your app. Some controls change their size and appearance, and interacting with them feels identical to interacting with AppKit controls. For example, [`UIButton`](./uibutton.md) appears identical to [`NSButton`](../AppKit/nsbutton.md).
 
@@ -38,7 +38,7 @@ if traitCollection.userInterfaceIdiom == .mac {
 
 [`UIPageControl`](./uipagecontrol.md) isn’t available to apps running in the Mac idiom. If you attempt to display this control in a view, your app throws an exception. Replace it with similar functionality when the user interface idiom is [`UIUserInterfaceIdiom.mac`](./uiuserinterfaceidiom/mac.md).
 
-##### Determine the current user interface idiom
+### Determine the current user interface idiom
 
 To determine if your app is running in the Mac idiom, compare the value of the [`userInterfaceIdiom`](./uitraitcollection/userinterfaceidiom.md) property with [`UIUserInterfaceIdiom.mac`](./uiuserinterfaceidiom/mac.md). When the comparison is [`true`](../Swift/true.md), you can tailor the behavior of your app for the Mac; for example, to display a different child view.
 
@@ -55,7 +55,7 @@ view.addSubview(childViewController.view)
 childViewController.didMove(toParent: self)
 ```
 
-##### Set the preferred behavioral style
+### Set the preferred behavioral style
 
 When adopting the Mac idiom, some controls such as [`UIButton`](./uibutton.md) and [`UISlider`](./uislider.md) appear identical to their AppKit counterparts. However, there may be situations where you want to take advantage of the Mac idiom in your app but keep a control’s iPad appearance and behavior. For instance, consider an iPad app that displays a slider with a custom thumb image. By default, the Mac version of the app, built with Mac Catalyst, displays a standard macOS slider when the user interface idiom is [`UIUserInterfaceIdiom.mac`](./uiuserinterfaceidiom/mac.md).
 
@@ -79,7 +79,7 @@ if slider.traitCollection.userInterfaceIdiom == .mac {
 
 There are some properties and methods of [`UIButton`](./uibutton.md) and [`UISlider`](./uislider.md) not supported in the Mac idiom when the behavioral style is [`UIBehavioralStyle.mac`](./uibehavioralstyle/mac.md), and calling these throws an exception; for example, setting a button’s title or image for any control state other than [`normal`](./uicontrol/state-swift.struct/normal.md), and setting a slider’s thumb image, minimum or maximum track image, tint color, or value image. However, these properties and methods are available for use in the Mac idiom when the control’s behavioral style is [`UIBehavioralStyle.pad`](./uibehavioralstyle/pad.md).
 
-##### Provide a different code path
+### Provide a different code path
 
 Even when your Mac app runs in the [`UIUserInterfaceIdiom.pad`](./uiuserinterfaceidiom/pad.md) idiom, you may need to change the appearance or behavior of your Mac app. Use the `targetEnvironment()` compilation conditional to choose a different code path depending on the target environment.
 

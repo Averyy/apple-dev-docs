@@ -5,7 +5,7 @@
 
 Make your presentation app’s actions available in the Shortcuts app by adopting schemas for common presentation actions.
 
-#### Overview
+## Overview
 
 The `.presentation` domain defines app schemas that provide a structured representation for common presentation actions and content. Apply schemas in the `.presentation` domain to make your app’s presentation functionality available as actions in the Shortcuts app. Schemas in this domain don’t make your conforming types discoverable by Apple Intelligence and Siri.
 

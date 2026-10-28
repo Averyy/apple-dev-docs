@@ -22,7 +22,7 @@ var url: URL? { get set }
 @property (nonatomic, copy, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 The value stored in this property is an [`NSURL`](../../Foundation/nsurl.md) object. The associated array of representation types is [`typeListURL`](./typelisturl.md), which includes type `kUTTypeURL`. Setting this property replaces all current items in the pasteboard with the new item.  If the first item has no value of the indicated type, `nil` is returned.
 

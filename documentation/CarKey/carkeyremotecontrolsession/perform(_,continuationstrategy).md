@@ -19,11 +19,11 @@ Sends a request to the vehicle to start an action that has a separate stopping p
 func perform(_ enduringAction: RemoteKeylessEntryConfigurableEnduringAction, continuationStrategy: CarKeyRemoteControlSession.ContinuationStrategy) throws -> RemoteKeylessEntryConfigurableEnduringAction.EnduringExecutionRequest
 ```
 
-#### Return Value
+## Return Value
 
 An object you use to get the results of the initial request and stop the action.
 
-#### Discussion
+## Discussion
 
 Call this method for vehicle features that that have both a start and stop point. For example, use it to start raising or lowering the top of a convertible. This method sends the request to the vehicle asynchronously.
 

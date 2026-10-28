@@ -24,7 +24,7 @@ init<Data, ID, RowContent>(_ data: Binding<Data>, id: KeyPath<Data.Element, ID>,
 
 Available when `SelectionValue` is `Never` and `Content` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 The following example creates a list to display a collection of favorite foods allowing the user to delete or move elements from the collection.
 

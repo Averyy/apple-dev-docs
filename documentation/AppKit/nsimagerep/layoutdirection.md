@@ -19,7 +19,7 @@ var layoutDirection: NSImage.LayoutDirection { get set }
 @property NSImageLayoutDirection layoutDirection;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [`NSImage.LayoutDirection`](../nsimage/layoutdirection.md). The default value for new image representation objects is [`NSImage.LayoutDirection.unspecified`](../nsimage/layoutdirection/unspecified.md).
 

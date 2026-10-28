@@ -19,7 +19,7 @@ The font sizing option preferred by the user.
 var preferredContentSizeCategory: UIContentSizeCategory { get set }
 ```
 
-#### Discussion
+## Discussion
 
 With Dynamic Type, users can ask that apps display text using fonts that are larger or smaller than the normal font size defined by the system. For example, a user with a visual impairment might request a larger default font size to make it easier to read text. Use the value of this property to request a [`UIFont`](../uifont.md) object that matches the user’s requested size.
 

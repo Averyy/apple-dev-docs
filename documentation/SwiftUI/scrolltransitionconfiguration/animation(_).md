@@ -21,11 +21,11 @@ Sets the animation with which the transition will be applied.
 func animation(_ animation: Animation) -> ScrollTransitionConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A copy of this configuration with the animation set to the given value.
 
-#### Discussion
+## Discussion
 
 If the transition is interactive, the given animation will be used to animate the effect toward the current interpolated value, causing the effect to lag behind the current scroll position.
 

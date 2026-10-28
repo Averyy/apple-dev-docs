@@ -17,7 +17,7 @@ Returns all remaining arguments.
 var remainingArguments: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The returned values include any positional arguments after the first `--`, if there is one.
 

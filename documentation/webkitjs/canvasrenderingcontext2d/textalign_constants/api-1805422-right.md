@@ -3,7 +3,7 @@
 **Framework**: WebKit JS  
 **Kind**: uid
 
-#### Overview
+## Overview
 
 Specifies right-justified text. The left edge of the bounding box is aligned with the x-coordinate.
 

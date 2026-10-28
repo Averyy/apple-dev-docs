@@ -25,7 +25,7 @@ optional func requestDidComplete(_ request: any SNRequest)
 - (void) requestDidComplete:(id<SNRequest>) request;
 ```
 
-#### Discussion
+## Discussion
 
 The analyzer calls this method when it finishes processing the request.
 

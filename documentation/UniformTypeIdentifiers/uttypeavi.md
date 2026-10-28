@@ -21,7 +21,7 @@ A type that represents data in AVI movie format.
 extern UTType * const UTTypeAVI;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.avi`.
 

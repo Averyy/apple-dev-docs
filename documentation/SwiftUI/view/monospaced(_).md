@@ -22,11 +22,11 @@ nonisolated
 func monospaced(_ isActive: Bool = true) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view whose child views’ fonts use fixed-width characters, while leaving other characters proportionally spaced.
 
-#### Discussion
+## Discussion
 
 If a child view’s base font doesn’t support fixed-width, the font remains unchanged.
 

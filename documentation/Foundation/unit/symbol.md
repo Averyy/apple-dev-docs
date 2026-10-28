@@ -25,7 +25,7 @@ var symbol: String { get }
 @property (copy, readonly) NSString * symbol;
 ```
 
-#### Discussion
+## Discussion
 
 The symbol of a unit is a string that can be used to designate a number as a quantity of a particular unit in user-readable representations. Units typically have symbols that are abbreviated and standardized, so as to be easily and unambiguously conveyed. For example, the `milePerHour` unit has the symbol `mph`. If a unit does not have a standardized or well-understood symbol, the lowercase name of the unit can be used. For example, the `metricCup` unit has the symbol `metric cup`.
 

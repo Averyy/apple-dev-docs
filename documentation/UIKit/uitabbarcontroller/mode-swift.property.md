@@ -27,7 +27,7 @@ var mode: UITabBarController.Mode { get set }
 
 - [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
-#### Discussion
+## Discussion
 
 On iPad, the display mode determines whether the system can display the tab bar as a sidebar. For more information, see [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md).
 

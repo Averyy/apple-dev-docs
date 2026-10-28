@@ -22,7 +22,7 @@ The request’s predicate.
 @preconcurrency var nsPredicate: NSPredicate? { get nonmutating set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to cause the associated [`FetchRequest`](../fetchrequest.md) to execute a fetch with a new predicate, producing an updated collection of results.
 

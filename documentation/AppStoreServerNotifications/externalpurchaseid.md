@@ -19,7 +19,7 @@ string externalPurchaseId
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 The `externalPurchaseId` is the field of an [`externalPurchaseToken`](./externalpurchasetoken.md) that uniquely identifies the token.
 

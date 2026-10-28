@@ -24,7 +24,7 @@ var screen: UIScreen { get set }
 @property (nonatomic, strong) UIScreen * screen;
 ```
 
-#### Discussion
+## Discussion
 
 By default, UIKit sets this property to the primary device screen. If additional screens are attached to the device, you can assign a different screen object to display the window on that screen. A window is always displayed on only one screen.
 

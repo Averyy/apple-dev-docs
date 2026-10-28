@@ -23,7 +23,7 @@ optional func playerViewControllerSkipToPreviousChannel(_ playerViewController: 
 - (void) playerViewController:(AVPlayerViewController *) playerViewController skipToPreviousChannel:(void (^)(BOOL success)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Each call to this method should advance one channel, relative to the previous request, even if the prior request hasn’t yet completed. Adopt this method and replace the current player item with one that reflects the previous channel’s content, and call the completion block to dismiss the channel’s interstitial view.
 

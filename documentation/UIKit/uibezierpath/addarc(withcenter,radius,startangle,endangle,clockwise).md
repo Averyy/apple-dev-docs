@@ -24,7 +24,7 @@ func addArc(withCenter center: CGPoint, radius: CGFloat, startAngle: CGFloat, en
 - (void) addArcWithCenter:(CGPoint) center radius:(CGFloat) radius startAngle:(CGFloat) startAngle endAngle:(CGFloat) endAngle clockwise:(BOOL) clockwise;
 ```
 
-#### Discussion
+## Discussion
 
 This method adds the specified arc beginning at the current point. The created arc lies on the perimeter of the specified circle. When drawn in the default coordinate system, the start and end angles are based on the unit circle shown in the image in [`init(arcCenter:radius:startAngle:endAngle:clockwise:)`](./init%28arccenter,radius,startangle,endangle,clockwise%29.md). For example, specifying a start angle of `0` radians, an end angle of `π` radians, and setting the `clockwise` parameter to [`true`](../../Swift/true.md) draws the bottom half of the circle. However, specifying the same start and end angles but setting the `clockwise` parameter set to [`false`](../../Swift/false.md) draws the top half of the circle.
 

@@ -21,7 +21,7 @@ var bodyVariants: [NSAttributedString] { get set }
 @property (nonatomic, copy) NSArray<NSAttributedString *> * bodyVariants;
 ```
 
-#### Discussion
+## Discussion
 
 The variant strings should be provided as localized, displayable content. The system will select the first variant that fits the available space.
 

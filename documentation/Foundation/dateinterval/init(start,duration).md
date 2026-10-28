@@ -21,7 +21,7 @@ Initializes an interval with the specified start date and duration.
 init(start: Date, duration: TimeInterval)
 ```
 
-#### Discussion
+## Discussion
 
 Precondition: `duration >= 0`
 

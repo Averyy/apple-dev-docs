@@ -26,7 +26,7 @@ class let completedInitialCloudSyncNotification: NSNotification.Name
 extern NSNotificationName const NSUbiquitousUserDefaultsCompletedInitialSyncNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification is posted on the main queue.
 

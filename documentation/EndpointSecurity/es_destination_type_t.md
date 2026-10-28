@@ -20,7 +20,7 @@ struct es_destination_type_t
 typedef enum { ... } es_destination_type_t;
 ```
 
-#### Overview
+## Overview
 
 Use this type to determine how to parse file information in types like [`es_event_create_t`](./es_event_create_t.md) and [`es_event_rename_t`](./es_event_rename_t.md). Both of those types have a `destination` member, which is a `union` of either an existing file path or a parent directory and name of a potential file. To determine which member of the union to access, consult the event’s `destination_type` member, which is of this type.
 

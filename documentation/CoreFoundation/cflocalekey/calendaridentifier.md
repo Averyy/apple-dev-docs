@@ -25,7 +25,7 @@ static let calendarIdentifier: CFLocaleKey!
 extern CFLocaleKey const kCFLocaleCalendarIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a CFString containing the calendar identifier (for possible values, see [Locale Calendar Identifiers](../locale-calendar-identifiers.md)).
 

@@ -31,7 +31,7 @@ var signals: INCarSignalOptions { get set }
 @property (atomic, assign, readwrite) INCarSignalOptions signals;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you assign a value to this property only after handling the intent.
 

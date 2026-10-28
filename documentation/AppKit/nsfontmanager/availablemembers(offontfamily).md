@@ -19,11 +19,11 @@ func availableMembers(ofFontFamily fam: String) -> [[Any]]?
 - (NSArray<NSArray *> *) availableMembersOfFontFamily:(NSString *) fam;
 ```
 
-#### Return Value
+## Return Value
 
 The available members of `family`. See the following discussion for a specific description.
 
-#### Discussion
+## Discussion
 
 Each entry of the returned `NSArray` is another `NSArray` with four members, as follows:
 

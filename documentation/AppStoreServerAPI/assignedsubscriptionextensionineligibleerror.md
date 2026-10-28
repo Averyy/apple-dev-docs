@@ -19,7 +19,7 @@ object AssignedSubscriptionExtensionIneligibleError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 A request returns this error if you call the [`Extend a Subscription Renewal Date`](./extend-a-subscription-renewal-date.md) endpoint with an `originalTransactionId` that belongs to a subscription an organization or group assigns to the customer.
 

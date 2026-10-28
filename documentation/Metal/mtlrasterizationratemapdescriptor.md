@@ -24,7 +24,7 @@ class MTLRasterizationRateMapDescriptor
 @interface MTLRasterizationRateMapDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 To create a new rate map, first create an [`MTLRasterizationRateMapDescriptor`](./mtlrasterizationratemapdescriptor.md) instance and set its property values. Then, create a new rasterization rate-map by calling an [`MTLDevice`](./mtldevice.md) instance’s
 [`makeRasterizationRateMap(descriptor:)`](./mtldevice/makerasterizationratemap%28descriptor%29.md) method.

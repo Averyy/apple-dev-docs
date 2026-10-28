@@ -18,7 +18,7 @@ Selects a subject to track at the supplied coordinates.
 final func selectSubject(at unitPoint: CGPoint) async throws
 ```
 
-#### Discussion
+## Discussion
 
 There may be times when more than one subject is in a video frame. Use this method to track a specific subject within that frame by passing a  location within the frame. The coordinates are relative to the top left of the video frame, and are values between `0` and `1`. If the framework doesn’t detect a subject at the passed coordinates, the method throws an error.
 

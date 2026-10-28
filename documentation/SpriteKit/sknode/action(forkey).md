@@ -29,7 +29,7 @@ func action(forKey key: String) -> SKAction?
 
 - [Controlling Actions Precisely by Using Names](../controlling-actions-precisely-by-using-names.md)
 
-#### Return Value
+## Return Value
 
 If an action exists that matches the key, the action object is returned. Otherwise, `nil` is returned.
 

@@ -17,7 +17,7 @@ Called when [`train(_:)`](./train%28_%29.md) is updated.
 func didSetTrain(_ mode: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 This is provided for subclasses to override.
 

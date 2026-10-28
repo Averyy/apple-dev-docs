@@ -22,7 +22,7 @@ class MPMediaLibrary
 @interface MPMediaLibrary : NSObject
 ```
 
-#### Overview
+## Overview
 
 A user may sync their device, changing the contents on the device, while your app is running. You can use the notification provided by this class to ensure that your app’s cache of the user’s library is up-to-date.
 

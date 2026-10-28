@@ -19,7 +19,7 @@ struct CFXMLDocumentInfo
 typedef struct { ... } CFXMLDocumentInfo;
 ```
 
-#### Overview
+## Overview
 
 A pointer to this structure is included in the CFXMLNode object passed to your application when the parser encounters the XML declaration. Use the [`CFXMLNodeGetInfoPtr`](./cfxmlnodegetinfoptr.md) function to obtain the pointer.
 

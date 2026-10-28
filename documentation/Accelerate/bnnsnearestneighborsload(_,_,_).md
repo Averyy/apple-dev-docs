@@ -25,11 +25,11 @@ func BNNSNearestNeighborsLoad(_ knn: BNNSNearestNeighbors?, _ n_new_samples: UIn
 int BNNSNearestNeighborsLoad(BNNSNearestNeighbors knn, const unsigned int n_new_samples, const void *data_ptr);
 ```
 
-#### Return Value
+## Return Value
 
 `0` when the load is successful; otherwise, a nonzero value.
 
-#### Discussion
+## Discussion
 
 The following code generates eight 2D data points and loads them into a k-nearest neighbors object with a single call to the [`BNNSNearestNeighborsLoad(_:_:_:)`](./bnnsnearestneighborsload%28_,_,_%29.md) function. The code then computes the four nearest neighbors, based on Euclidean distance, to the sample data point at index 7 of the samples data:
 

@@ -25,7 +25,7 @@ static var networkUnreachable: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A socket operation was attempted to an unreachable network.
 

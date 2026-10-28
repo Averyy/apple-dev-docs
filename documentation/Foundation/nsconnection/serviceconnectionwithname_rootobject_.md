@@ -16,11 +16,11 @@ Creates and returns a new connection object representing a vended service on the
 + (instancetype) serviceConnectionWithName:(NSString *) name rootObject:(id) root;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSConnection` object representing the vended service or `nil` if there was a problem setting up the connection object.
 
-#### Discussion
+## Discussion
 
 This method creates the server-side of a connection object and registers it with the default system port name server. Clients wishing to connect to this service can request a communications port from the same port server and use that port to communicate.
 

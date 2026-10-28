@@ -15,7 +15,7 @@ Obtains the list of properties available in the record list. Use [`ABPickerAddPr
 extern CFArrayRefABPickerCopyProperties(ABPickerRef inPicker);
 ```
 
-#### Return Value
+## Return Value
 
 An array with the list of properties available in the record list.
 

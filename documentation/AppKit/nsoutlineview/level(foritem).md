@@ -19,11 +19,11 @@ func level(forItem item: Any?) -> Int
 - (NSInteger) levelForItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 The indentation level for `item`. If `item` is `nil` (which is the root item), returns `–1`.
 
-#### Discussion
+## Discussion
 
 The levels are zero-based—that is, the first level of displayed items is level `0`.
 

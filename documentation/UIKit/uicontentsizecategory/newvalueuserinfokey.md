@@ -24,7 +24,7 @@ static let newValueUserInfoKey: String
 extern NSString * const UIContentSizeCategoryNewValueKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key’s value is an [`NSString`](../../Foundation/nsstring.md) object that reflects the new value of the [`preferredContentSizeCategory`](../uiapplication/preferredcontentsizecategory.md) property.
 

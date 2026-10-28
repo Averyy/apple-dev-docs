@@ -19,7 +19,7 @@ The text the subtitle label of the button displays.
 var subtitle: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property matches the string value of the [`attributedSubtitle`](./attributedsubtitle.md) property. To change the button subtitle when the button state changes, use [`configurationUpdateHandler`](../configurationupdatehandler-swift.property.md) or [`updateConfiguration()`](../updateconfiguration%28%29.md).
 

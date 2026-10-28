@@ -9,13 +9,13 @@ List all categories on the App Store, including the category and subcategory hie
 **Availability**:
 - App Store Connect API 1.2+
 
-#### Discussion
+## Discussion
 
 Use this endpoint to retrieve the list of available App Store categories and subcategories. Associate an app with categories using the [`Modify an app info`](./patch-v1-appinfos-_id_.md) endpoint.
 
 The first example retrieves the full category and subcategory hierarchy in one request. The second example retrieves just the top-level categories for macOS apps.
 
-##### Get All App Categories and Subcategories
+### Get All App Categories and Subcategories
 
 **Request**:
 
@@ -1548,7 +1548,7 @@ GET https://api.appstoreconnect.apple.com/v1/appCategories?include=parent&limit=
 }
 ```
 
-##### Get All Top-Level Categories that Apply to macOS Apps
+### Get All Top-Level Categories that Apply to macOS Apps
 
 **Request**:
 

@@ -24,7 +24,7 @@ class MPSGraphConvolution2DOpDescriptor
 @interface MPSGraphConvolution2DOpDescriptor : MPSGraphObject
 ```
 
-#### Overview
+## Overview
 
 Use an instance of this class is to add a 2D-convolution operator with the desired properties to the graph.
 

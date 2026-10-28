@@ -22,7 +22,7 @@ func finishedHandlingError(_ error: any Error, recovered: Bool)
 - (void) finishedHandlingError:(NSError *) error recovered:(BOOL) recovered;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by default when handling of an error (including any user interaction) is complete. Subclasses need to call this method only if they override [`handleError(_:userInteractionPermitted:)`](./handleerror%28_,userinteractionpermitted%29.md) and do not call the superclass implementation (`super`). If you override this method, you must call `super`.
 

@@ -25,7 +25,7 @@ func CGImageDestinationCreateWithDataConsumer(_ consumer: CGDataConsumer, _ type
 extern CGImageDestinationRefCGImageDestinationCreateWithDataConsumer(CGDataConsumerRef consumer, CFStringRef type, size_t count, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 An image destination, or `NULL` if an error occurs. You are responsible for releasing this object using [`CFRelease`](../CoreFoundation/cfrelease.md).
 

@@ -5,7 +5,7 @@
 
 Constants describing known values of the [`authenticationMethod`](./urlprotectionspace/authenticationmethod.md) property of a [`URLProtectionSpace`](./urlprotectionspace.md).
 
-#### Overview
+## Overview
 
 These constants are also used with the [`URLProtectionSpace`](./urlprotectionspace.md) initializers [`init(host:port:protocol:realm:authenticationMethod:)`](./urlprotectionspace/init%28host,port,protocol,realm,authenticationmethod%29.md) and [`init(proxyHost:port:type:realm:authenticationMethod:)`](./urlprotectionspace/init%28proxyhost,port,type,realm,authenticationmethod%29.md).
 

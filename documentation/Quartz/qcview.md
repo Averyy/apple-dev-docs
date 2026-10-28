@@ -21,7 +21,7 @@ class QCView
 @interface QCView : NSView
 ```
 
-#### Overview
+## Overview
 
 The view can be set to render a composition automatically when it is placed onscreen. The view stops rendering when it is placed offscreen. When not rendering, the view is filled with the current erase color. The rendered composition automatically synchronizes to the vertical retrace of the monitor.
 

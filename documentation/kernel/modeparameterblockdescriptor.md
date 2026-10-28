@@ -13,7 +13,7 @@
 typedef struct ModeParameterBlockDescriptor ModeParameterBlockDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 General mode parameter block descriptor.
 

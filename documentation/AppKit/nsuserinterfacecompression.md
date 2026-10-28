@@ -19,7 +19,7 @@ protocol NSUserInterfaceCompression
 @protocol NSUserInterfaceCompression
 ```
 
-#### Overview
+## Overview
 
 A control that adopts this protocol has the ability to resize itself when space is at a premium.
 

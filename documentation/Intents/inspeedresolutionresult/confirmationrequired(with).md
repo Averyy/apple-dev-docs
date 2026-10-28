@@ -24,11 +24,11 @@ class func confirmationRequired(with speedToConfirm: Measurement<UnitSpeed>?) ->
 + (instancetype) confirmationRequiredWithSpeedToConfirm:(NSMeasurement<NSUnitSpeed *> *) speedToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INSpeedResolutionResult`](../inspeedresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to the specified object but you want the user to confirm that value.
 

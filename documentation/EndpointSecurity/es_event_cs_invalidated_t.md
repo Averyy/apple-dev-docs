@@ -20,7 +20,7 @@ struct es_event_cs_invalidated_t
 typedef struct { ... } es_event_cs_invalidated_t;
 ```
 
-#### Overview
+## Overview
 
 Endpoint Security generates this event as a result of removing the `CS_VALID` bit from a process’s CS flags. This occurs in the following situations:
 

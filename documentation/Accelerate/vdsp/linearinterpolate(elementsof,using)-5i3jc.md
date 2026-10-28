@@ -25,7 +25,7 @@ static func linearInterpolate<T, U>(elementsOf vector: T, using controlVector: U
 
 - [Using linear interpolation to construct new data points](../using-linear-interpolation-to-construct-new-data-points.md)
 
-#### Discussion
+## Discussion
 
 Single-precision and double-precision [`linearInterpolate(elementsOf:using:)`](./linearinterpolate%28elementsof,using%29-49r3c.md) functions return an array of an arbitrary length that’s constructed from the linearly interpolated values in a source array. Pass [`linearInterpolate(elementsOf:using:)`](./linearinterpolate%28elementsof,using%29-49r3c.md) a control vector that defines the interpolation: the integer part of each element in the control vector is the zero-based index of the first element of a pair of adjacent values in the source array, and the fractional part defines the linear interpolation between the values at those indices.
 

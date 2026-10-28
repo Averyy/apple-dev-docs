@@ -9,7 +9,7 @@ Present an interface through which users can pair their devices with other Bluet
 **Availability**:
 - macOS 10.2+
 
-#### Overview
+## Overview
 
 The BluetoothUI framework provides interfaces that allow user selection of Bluetooth services.
 

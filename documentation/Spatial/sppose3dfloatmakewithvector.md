@@ -19,11 +19,11 @@
 static SPPose3DFloat SPPose3DFloatMakeWithVector(simd_float3 position, simd_quatf rotation);
 ```
 
-#### Return Value
+## Return Value
 
 A new pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a pose with the specified position and rotation.
 

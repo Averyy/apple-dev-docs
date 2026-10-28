@@ -19,7 +19,7 @@ The compiled pipelines used to execute the simulation.
 var pipelines: ComputeNodeGraph.Pipelines? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When `nil`, the pipelines from [`resource`](./resource.md) are used. Assigning a value overrides the resource’s pipelines without replacing the loaded assets.
 

@@ -24,7 +24,7 @@ class MTLMotionKeyframeData
 @interface MTLMotionKeyframeData : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`MTLMotionKeyframeData`](./mtlmotionkeyframedata.md) instance describes the location of geometry data for a keyframe. The exact type of data can vary, depending on which kind of motion descriptor you create. For an [`MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor`](./mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md) instance, the buffer data is a list of bounding boxes. For an [`MTLAccelerationStructureMotionTriangleGeometryDescriptor`](./mtlaccelerationstructuremotiontrianglegeometrydescriptor.md), the buffer data is a list of vertices.
 

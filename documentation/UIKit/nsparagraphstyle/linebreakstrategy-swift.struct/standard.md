@@ -24,7 +24,7 @@ static var standard: NSParagraphStyle.LineBreakStrategy { get }
 NSLineBreakStrategyStandard
 ```
 
-#### Discussion
+## Discussion
 
 This strategy optimizes for displaying shorter strings that are common in UI labels. This strategy may be unsuitable for large amounts of text.
 

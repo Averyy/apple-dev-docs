@@ -23,7 +23,7 @@ optional func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool
 - (BOOL) searchBarShouldEndEditing:(UISearchBar *) searchBar;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if editing should stop, otherwise [`false`](../../Swift/false.md).
 

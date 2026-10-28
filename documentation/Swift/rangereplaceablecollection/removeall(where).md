@@ -22,7 +22,7 @@ Removes all the elements that satisfy the given predicate.
 mutating func removeAll(where shouldBeRemoved: (Self.Element) throws -> Bool) rethrows
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove every element in a collection that meets particular criteria. The order of the remaining elements is preserved. This example removes all the odd values from an array of numbers:
 

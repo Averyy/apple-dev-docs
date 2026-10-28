@@ -24,7 +24,7 @@ let kVTHDRPerFrameMetadataGenerationOptionsKey_HDRFormats: CFString
 extern CFStringRef const kVTHDRPerFrameMetadataGenerationOptionsKey_HDRFormats;
 ```
 
-#### Discussion
+## Discussion
 
 This key represents a CFArrayRef. Only a value of [`kVTHDRPerFrameMetadataGenerationHDRFormatType_DolbyVision`](./kvthdrperframemetadatagenerationhdrformattype_dolbyvision.md) is supported.
 

@@ -15,11 +15,11 @@ Removes a component from the Component Manager’s registration list.
 OSErr UnregisterComponent(Component aComponent);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/component_manager.md#1668759). If there are open connections to the component, returns a `validInstancesExist` error.
 
-#### Discussion
+## Discussion
 
 Most components are registered at startup and remain registered until the computer is shut down. However, you may want to provide some services temporarily. In that case you dispose of the component that provides the temporary service by using this function. 
 

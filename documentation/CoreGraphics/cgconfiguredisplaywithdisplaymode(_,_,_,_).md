@@ -20,11 +20,11 @@ func CGConfigureDisplayWithDisplayMode(_ config: CGDisplayConfigRef?, _ display:
 extern CGError CGConfigureDisplayWithDisplayMode(CGDisplayConfigRef config, CGDirectDisplayID display, CGDisplayModeRef mode, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. If the request to change modes is successful, the result is `kCGErrorSuccess`. For other possible values, see [`CGError`](./cgerror.md).
 
-#### Discussion
+## Discussion
 
 This function allows you to specify a display mode with which to configure the display using a transaction. Before using this function, call [`CGBeginDisplayConfiguration(_:)`](./cgbegindisplayconfiguration%28_%29.md) to acquire the display configuration token for the desired display. Call [`CGCompleteDisplayConfiguration(_:_:)`](./cgcompletedisplayconfiguration%28_,_%29.md) to execute the transaction.
 

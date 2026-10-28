@@ -24,7 +24,7 @@ class func localizedName(forCategory category: String) -> String
 + (NSString *) localizedNameForCategory:(NSString *) category;
 ```
 
-#### Return Value
+## Return Value
 
 The localized name for the filter category.
 

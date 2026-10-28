@@ -25,7 +25,7 @@ func setTileGroup(_ tileGroup: SKTileGroup, andTileDefinition tileDefinition: SK
 - (void) setTileGroup:(SKTileGroup *) tileGroup andTileDefinition:(SKTileDefinition *) tileDefinition forColumn:(NSUInteger) column row:(NSUInteger) row;
 ```
 
-#### Discussion
+## Discussion
 
 This function is for use when you’re creating a tile map programmatically, versus creating it ahead of time with the scene editor.
 

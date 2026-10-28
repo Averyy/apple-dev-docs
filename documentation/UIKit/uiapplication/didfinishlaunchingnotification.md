@@ -24,7 +24,7 @@ class let didFinishLaunchingNotification: NSNotification.Name
 extern NSNotificationName const UIApplicationDidFinishLaunchingNotification;
 ```
 
-#### Discussion
+## Discussion
 
 If the app was launched as a result of in remote notification targeted at it or because another app opened a URL resource claimed the posting app (the notification `object`), this notification contains a `userInfo` dictionary. You can access the contents of the dictionary using the [`url`](./launchoptionskey/url.md) and [`sourceApplication`](./launchoptionskey/sourceapplication.md) constants (for URLs), the [`remoteNotification`](./launchoptionskey/remotenotification.md) constant (for remote notifications), and the [`localNotification`](./launchoptionskey/localnotification.md) constant (for local notifications). If the notification was posted for a normal app launch, there is no `userInfo` dictionary.
 

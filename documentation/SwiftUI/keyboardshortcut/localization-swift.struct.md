@@ -19,7 +19,7 @@ Options for how a keyboard shortcut participates in automatic localization.
 struct Localization
 ```
 
-#### Overview
+## Overview
 
 A shortcut’s `key` that is defined on an US-English keyboard layout might not be reachable on international layouts. For example the shortcut `⌘[` works well for the US layout but is hard to reach for German users. On the German keyboard layout, pressing `⌥5` will produce `[`, which causes the shortcut to become `⌥⌘5`. If configured, which is the default behavior, automatic shortcut remapping will convert it to `⌘Ö`.
 

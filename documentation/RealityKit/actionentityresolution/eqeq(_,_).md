@@ -20,7 +20,7 @@ Indicates whether two action entity resolutions are equal.
 static func == (lhs: ActionEntityResolution, rhs: ActionEntityResolution) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value set to `true` if the action entity resolutions are equal.
 

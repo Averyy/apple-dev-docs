@@ -19,7 +19,7 @@ var estimatedItemSize: NSSize { get set }
 @property NSSize estimatedItemSize;
 ```
 
-#### Discussion
+## Discussion
 
 Providing an estimated item size lets the collection view defer some of the calculations needed to determine the size of its content, which can improve performance. Instead of explicitly computing the size of each item, the flow layout assumes that offscreen items have the estimated size. The estimated size is used only until an actual value is calculated. The default value of this property is [`NSZeroSize`](../../Foundation/nszerosize.md).
 

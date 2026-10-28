@@ -22,7 +22,7 @@ weak var preferredParticipantForExternalPlayback: (any AVRoutingPlaybackParticip
 @property (nonatomic, weak, nullable) id<AVRoutingPlaybackParticipant> preferredParticipantForExternalPlayback;
 ```
 
-#### Discussion
+## Discussion
 
 This participant takes precedence over all others to play on external playback interfaces (specifically for AirPlay video and Apple Lightning Digital AV Adapters).
 

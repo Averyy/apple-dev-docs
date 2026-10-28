@@ -16,7 +16,7 @@ An opaque object that identifies the device on which the scene (from which this 
 var remoteDeviceIdentifier: RemoteDeviceIdentifier? { get }
 ```
 
-#### Discussion
+## Discussion
 
 When accessed in a context that is being presented on the local device, this value will be `nil`.
 

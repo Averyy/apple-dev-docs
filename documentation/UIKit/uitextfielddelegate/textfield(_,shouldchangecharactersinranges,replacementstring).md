@@ -21,11 +21,11 @@ optional func textField(_ textField: UITextField, shouldChangeCharactersInRanges
 - (BOOL) textField:(UITextField *) textField shouldChangeCharactersInRanges:(NSArray<NSValue *> *) ranges replacementString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 Returns YES if the text at the `ranges` should be replaced.
 
-#### Discussion
+## Discussion
 
 Asks the delegate if the text at the specified `ranges` should be replaced with `string`.
 

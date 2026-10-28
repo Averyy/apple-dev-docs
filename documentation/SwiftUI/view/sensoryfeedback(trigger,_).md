@@ -29,7 +29,7 @@ nonisolated
 func sensoryFeedback<T>(trigger: T, _ feedback: @escaping (T, T) -> SensoryFeedback?) -> some View where T : Equatable
 ```
 
-#### Discussion
+## Discussion
 
 For example, you could play different feedback for different state transitions:
 

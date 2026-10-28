@@ -15,11 +15,11 @@ Disposes the specified setup object.
 extern OSStatus MIDISetupDispose(MIDISetupRef setup);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 As of CoreMIDI 1.1, it is usually not necessary to call this function, as CoreMIDI manages a single persistent MIDISetup itself.
 

@@ -19,7 +19,7 @@ Registers an existing collaboration object on a server.
 - (void) registerCKShare:(CKShare *) share container:(CKContainer *) container allowedSharingOptions:(CKAllowedSharingOptions *) allowedOptions;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when a [`CKShare`](../../CloudKit/ckshare.md) currently exists on the server. When the system invokes the share sheet with a `CKShare` that you register with this method, it allows the owner to make modifications to the share settings, and allows a participant to view the share settings.
 

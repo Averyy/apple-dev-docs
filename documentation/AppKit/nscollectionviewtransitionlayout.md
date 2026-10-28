@@ -19,7 +19,7 @@ class NSCollectionViewTransitionLayout
 @interface NSCollectionViewTransitionLayout : NSCollectionViewLayout
 ```
 
-#### Overview
+## Overview
 
 Transition layout objects are commonly used to implement interactive transitions between layouts, where the transition itself is driven by a gesture recognizer.
 

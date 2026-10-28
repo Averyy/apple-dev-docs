@@ -20,7 +20,7 @@ class ARSkeleton
 @interface ARSkeleton : NSObject
 ```
 
-#### Overview
+## Overview
 
 As a collection of joints, this protocol describes the state of a human body whose movements ARKit can track.
 

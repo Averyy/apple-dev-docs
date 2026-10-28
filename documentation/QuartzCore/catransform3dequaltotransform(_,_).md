@@ -24,7 +24,7 @@ func CATransform3DEqualToTransform(_ a: CATransform3D, _ b: CATransform3D) -> Bo
 extern bool CATransform3DEqualToTransform(CATransform3D a, CATransform3D b);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `a` and `b` are exactly equal, otherwise [`false`](../Swift/false.md).
 

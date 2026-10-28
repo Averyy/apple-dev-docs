@@ -21,7 +21,7 @@ var isSpeaking: Bool { get }
 @property (readonly, getter=isSpeaking) BOOL speaking;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) when the receiver is generating synthesized speech, [`false`](../../Swift/false.md) otherwise.
 

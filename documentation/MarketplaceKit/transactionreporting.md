@@ -22,7 +22,7 @@ enum TransactionReporting
 - [Distributing your app on an alternative app marketplace](./distributing-your-app-on-an-alternative-marketplace.md)
 - [Reporting transactions for the Core Technology Commission](./reporting-transactions-for-core-technology-commission.md)
 
-#### Overview
+## Overview
 
 Track any eligible purchases, related to your app, that you offer a person and report them to Apple using tokens provided by this enumeration. For more information, see [Reporting transactions for the Core Technology Commission](./reporting-transactions-for-core-technology-commission.md).
 

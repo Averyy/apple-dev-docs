@@ -20,7 +20,7 @@ Creates a new column of typed values by applying the given thread-safe transform
 func mapMissing<T>(_ lazyTransform: @escaping (MLDataValue) -> T?) -> MLDataColumn<T> where T : MLDataValueConvertible
 ```
 
-#### Return Value
+## Return Value
 
 A new `MLDataColumn` column.
 

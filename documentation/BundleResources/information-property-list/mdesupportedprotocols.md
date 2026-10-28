@@ -15,7 +15,7 @@ A dictionary that declares which media sharing extension protocols an app suppor
 - **Name**: `MDESupportedProtocols`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 Add this key to your media app’s Info pane in Xcode to declare support for one or more media device extension protocols. Each dictionary entry maps a protocol identifier to an application identifier on the remote device:
 

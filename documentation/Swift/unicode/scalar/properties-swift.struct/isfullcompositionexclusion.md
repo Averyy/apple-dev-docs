@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is excluded from composition when 
 var isFullCompositionExclusion: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “Full_Composition_Exclusion” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 

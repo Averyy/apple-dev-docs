@@ -27,7 +27,7 @@ optional func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPromp
 - (void) webView:(WKWebView *) webView runJavaScriptTextInputPanelWithPrompt:(NSString *) prompt defaultText:(NSString *) defaultText initiatedByFrame:(WKFrameInfo *) frame completionHandler:(void (^)(NSString *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 For user security, implementations of this method should call attention to the fact that a specific website controls the content in this panel. A simple formula for identifying the controlling website is `frame.request.URL.host`. The panel should have two buttons (typically OK and Cancel) and a field in which to enter text.
 

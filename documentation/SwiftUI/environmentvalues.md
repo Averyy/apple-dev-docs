@@ -21,7 +21,7 @@ A collection of environment values propagated through a view hierarchy.
 struct EnvironmentValues
 ```
 
-#### Overview
+## Overview
 
 SwiftUI exposes a collection of values to your app’s views in an `EnvironmentValues` structure. To read a value from the structure, declare a property using the [`Environment`](./environment.md) property wrapper and specify the value’s key path. For example, you can read the current locale:
 

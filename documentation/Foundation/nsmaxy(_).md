@@ -20,7 +20,7 @@ func NSMaxY(_ aRect: NSRect) -> Double
 static CGFloat NSMaxY(NSRect aRect);
 ```
 
-#### Return Value
+## Return Value
 
 The largest y coordinate value within `aRect`.
 

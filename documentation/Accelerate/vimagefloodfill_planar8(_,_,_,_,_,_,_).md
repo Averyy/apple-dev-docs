@@ -25,15 +25,15 @@ func vImageFloodFill_Planar8(_ srcDest: UnsafePointer<vImage_Buffer>, _ tempBuff
 vImage_Error vImageFloodFill_Planar8(const vImage_Buffer *srcDest, void *tempBuffer, vImagePixelCount seedX, vImagePixelCount seedY, Pixel_8 newValue, int connectivity, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
-#### Discussion
+## Discussion
 
 The flood-fill function sets all pixels that are neighboring and identical to the seed pixel to a new color. The operation continues until it reaches the image boundary or until it sets all pixels within the connected component to the new value.
 
-##### Optimize performance with temporary buffers
+### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 

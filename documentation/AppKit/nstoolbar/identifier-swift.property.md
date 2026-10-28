@@ -22,7 +22,7 @@ var identifier: NSToolbar.Identifier { get }
 @property (copy, readonly) NSToolbarIdentifier identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to distinguish toolbars in your app. Multiple toolbars can share the same identifier, and you might do so for windows that display similar content. When two or more toolbars share an identifier, they synchronize their state and display the same set of items.
 

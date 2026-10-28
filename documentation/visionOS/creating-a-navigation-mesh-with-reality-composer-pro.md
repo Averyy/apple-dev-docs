@@ -14,7 +14,7 @@ Move a character around a game level by defining its walkable surface and drivin
 - visionOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 This sample shows you how to build a navigation mesh in [Reality Composer Pro](https://developer.apple.com/reality-composer-pro/) and [RealityKit](../RealityKit/RealityKit.md) to control the movement of an entity around a game level. When a person taps a spot on the ground, the character turns, plays a walk cycle, and follows the shape of the terrain to reach the tapped destination.
 
@@ -24,7 +24,7 @@ This sample uses almost no Swift. The navigation mesh generated in Reality Compo
 
 > **Note**: For more on initializing the runtime and passing messages between Script Graphs and [SwiftUI](../SwiftUI/SwiftUI.md), see [Designing no-code games with Reality Composer Pro 3](./designing-no-code-games-in-reality-composer-pro-3.md).
 
-#### Generate the navigation mesh
+## Generate the navigation mesh
 
 A navigation mesh represents the walkable surface that an entity can stand on. Reality Composer Pro generates this mesh according to configurable parameters on a [`NavigationMeshComponent`](../RealityKit/navigationmeshcomponent.md) in the scene. Specify a Shapes list to restrict mesh generation to inside those shapes.
 
@@ -36,7 +36,7 @@ The sample also reduces Walkable Climb Height to `0.01`, which prevents the mesh
 
 Under Advanced, the sample sets Max Simplification Error to `0.01`. This parameter controls how closely the edges of the mesh follow the shape of the voxelized representation of the surface. Values smaller than Cell Size can create jagged edges that conform to the shape of those voxels, and equal or slightly larger values create edges that smooth out the voxel shapes.
 
-#### Bridge gaps with off-mesh connections
+## Bridge gaps with off-mesh connections
 
 Generation produces polygons only where geometry exists. Gaps in the geometry produce islands in the navigation mesh that are inaccessible to each other. An off-mesh connection is a manual link that bridges those islands.
 
@@ -48,7 +48,7 @@ This sample sets Bidirectional to `true` to allow the character to walk back and
 
 ![A screenshot of the Reality Composer Pro viewport showing an off-mesh connection drawn as a line with directional cones and radius circles spanning a gap in the terrain. In the inspector, the Configuration and Off Mesh Connections settings are visible, showing values scaled appropriately for the scene.](https://developer.apple.com/tutorials/images/com.apple.visionOS/navmesh-off-mesh-connection@3x.png)
 
-#### Move the character with a behavior tree
+## Move the character with a behavior tree
 
 For an entity to navigate along a navigation mesh, it needs a [`NavigationComponent`](../RealityKit/navigationcomponent.md), but this component alone doesn’t move the entity.
 
@@ -68,7 +68,7 @@ On the player entity, a Script Graph named `PlayerLogic` responds to the scene e
 
 ![A screenshot of a Script Graph that sets the Navigation Target parameter on the entity.](https://developer.apple.com/tutorials/images/com.apple.visionOS/navmesh-set-nav-target@3x.png)
 
-#### Drive animation and orientation
+## Drive animation and orientation
 
 In addition to moving the entity around the scene, this sample demonstrates how to animate an entity in sync with movement across the mesh, orienting the entity along the direction of movement and alternating between idle and walking animations based on whether the entity is moving.
 

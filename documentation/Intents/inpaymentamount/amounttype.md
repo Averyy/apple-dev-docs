@@ -31,7 +31,7 @@ var amountType: INAmountType { get }
 @property (atomic, assign, readonly) INAmountType amountType;
 ```
 
-#### Discussion
+## Discussion
 
 When processing an intent, use this property to determine if the user wanted to pay the minimum amount, the amount due, or the current balance due for the bill. You can then map each constant to the appropriate amount when creating your response. If this value is [`INAmountType.unknown`](../inamounttype/unknown.md), use the value in the [`amount`](./amount.md) property to determine the payment amount.
 

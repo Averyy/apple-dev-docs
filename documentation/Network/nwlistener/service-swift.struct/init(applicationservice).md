@@ -21,7 +21,7 @@ Creates a listener for apps that listen for connections from a network device pi
 init(applicationService: String)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to setup a listener for application services.
 

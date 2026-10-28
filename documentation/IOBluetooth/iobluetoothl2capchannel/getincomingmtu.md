@@ -15,11 +15,11 @@ Returns the current incoming MTU for the L2CAP channel.
 - (BluetoothL2CAPMTU) getIncomingMTU;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the current incoming MTU for the L2CAP channel.
 
-#### Discussion
+## Discussion
 
 The incoming MTU represents the maximum L2CAP packet size for packets being sent by the remote device.
 

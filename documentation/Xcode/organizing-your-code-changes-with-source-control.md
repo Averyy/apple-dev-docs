@@ -5,13 +5,13 @@
 
 Use Git branches and tags to streamline your collaboration and manage features and releases.
 
-#### Overview
+## Overview
 
 If you need to keep track of multiple feature and release timelines simultaneously, you can organize different versions of your code into branches and annotate your significant changes or milestones with tags.
 
 ![Conceptual diagram that shows three rows of commits, each row representing a branch. Each commit in the topmost branch contains a tag that associates the commit with a release version number.](https://developer.apple.com/tutorials/images/com.apple.Xcode/organizing-your-code-changes-with-source-control-1@2x.png)
 
-##### Organize new feature or bug fix changes in a branch
+### Organize new feature or bug fix changes in a branch
 
 When you update source code to add a new feature or to fix a bug, keep all the changes together in a branch so that you can work with them as a unit. For example, if you develop a feature on a separate branch and later decide to delay it, don’t merge it into your release branch.
 
@@ -23,7 +23,7 @@ Continue making code changes, and periodically test, stage, commit, and push you
 
 > 💡 **Tip**: You can create a new branch from the current branch with uncommitted changes, and your changes become part of the new branch. You can’t switch to another branch if you have uncommitted changes, so commit your changes or stash them before switching to another branch.
 
-##### Set aside work in progress to make other changes
+### Set aside work in progress to make other changes
 
 When you have work in progress that you aren’t ready to commit and you need to switch to another branch, stash your changes to save them without committing them to the repository. Choose Integrate > Stash Changes, and optionally enter a description of your changes.
 
@@ -37,7 +37,7 @@ To add the changes to your current work, Control-click the stashed change item a
 
 When you no longer need the stashed changes, Control-click the stashed change item and choose Delete to remove it.
 
-##### Mark releases and significant milestones
+### Mark releases and significant milestones
 
 Add tags to commits that represent a significant milestone, like a release or large feature addition, to make them easy to find in the source control history.
 

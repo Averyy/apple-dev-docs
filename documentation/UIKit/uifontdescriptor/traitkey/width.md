@@ -24,7 +24,7 @@ static let width: UIFontDescriptor.TraitKey
 extern UIFontDescriptorTraitKey const UIFontWidthTrait;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object. The valid value range is from `-1.0` to `1.0`. The value of `0.0` corresponds to the regular glyph spacing.
 

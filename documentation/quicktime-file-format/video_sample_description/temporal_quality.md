@@ -6,7 +6,7 @@
 
 A 32-bit integer that indicates the degree of temporal compression.
 
-#### Overview
+## Overview
 
 Contains a value from 0 to 1023 indicating the degree of temporal compression.
 

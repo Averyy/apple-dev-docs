@@ -25,7 +25,7 @@ convenience init(characters: UnsafePointer<unichar>, length: Int)
 - (instancetype) initWithCharacters:(const unichar *) characters length:(NSUInteger) length;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSString` object containing `length` characters taken from `characters`. The returned object may be different from the original receiver.
 

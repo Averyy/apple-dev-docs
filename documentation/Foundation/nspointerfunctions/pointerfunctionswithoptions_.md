@@ -21,7 +21,7 @@ Returns a new `NSPointerFunctions` object initialized with the given options.
 + (NSPointerFunctions *) pointerFunctionsWithOptions:(NSPointerFunctionsOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSPointerFunctions` object initialized with the given options.
 

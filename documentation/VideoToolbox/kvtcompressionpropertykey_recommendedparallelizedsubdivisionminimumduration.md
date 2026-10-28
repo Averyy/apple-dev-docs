@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_RecommendedParallelizedSubdivisionMinimumDuration:
 extern CFStringRef const kVTCompressionPropertyKey_RecommendedParallelizedSubdivisionMinimumDuration;
 ```
 
-#### Discussion
+## Discussion
 
 For best results, ensure that the total duration of a parallelized subdivision is greater than or equal to this value.
 

@@ -25,7 +25,7 @@ static let completeUntilFirstUserAuthentication: FileProtectionType
 extern NSFileProtectionType const NSFileProtectionCompleteUntilFirstUserAuthentication;
 ```
 
-#### Discussion
+## Discussion
 
 After the user unlocks the device for the first time, your app can access the file and continue to access it even if the user subsequently locks the device.
 

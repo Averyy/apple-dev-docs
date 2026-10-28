@@ -22,7 +22,7 @@ init(from decoder: any Decoder) throws
 
 Available when `Value` conforms to `AnimatableData`.
 
-#### Discussion
+## Discussion
 
 Throws an error if reading from `decoder` fails, or if the data is corrupted or otherwise invalid.
 

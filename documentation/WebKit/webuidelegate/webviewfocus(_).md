@@ -19,7 +19,7 @@ optional func webViewFocus(_ sender: WebView!)
 - (void) webViewFocus:(WebView *) sender;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this method brings a web view’s window into focus. If you display multiple web views in a window then you might also want to focus the input on `sender`, using [`webView(_:makeFirstResponder:)`](./webview%28_,makefirstresponder%29.md).
 

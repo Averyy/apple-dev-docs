@@ -15,7 +15,7 @@ MPEG-4 TwinVQ audio object format.
 MPEG4TwinVQ
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

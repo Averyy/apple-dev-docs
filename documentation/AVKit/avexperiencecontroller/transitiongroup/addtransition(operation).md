@@ -15,7 +15,7 @@ Adds a transition to the group, suspending it until all transitions are ready to
 mutating func addTransition(operation: sending @escaping @isolated(any) () async -> ChildTransitionResult)
 ```
 
-#### Discussion
+## Discussion
 
 Call [`transition(to:)`](../transition%28to%29.md) on an [`AVExperienceController`](../../avexperiencecontroller.md) within the operation closure. The transition suspends until all transitions have been added to the group, then perform together with the others.
 

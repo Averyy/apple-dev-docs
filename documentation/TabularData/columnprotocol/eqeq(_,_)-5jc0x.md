@@ -23,11 +23,11 @@ static func == (lhs: Self, rhs: Self.Element) -> [Bool]
 
 Available when `Element` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 A Boolean array.
 
-#### Discussion
+## Discussion
 
 - lhs: A column type.
 - rhs: A value of the same type as the column.

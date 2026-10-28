@@ -24,7 +24,7 @@ var releaseCurve: PHASECurveType { get }
 @property (nonatomic, readonly) PHASECurveType releaseCurve;
 ```
 
-#### Discussion
+## Discussion
 
 This mathematical curve shapes signal progress during the time it takes to transition from maximum sound reduction to no reduction.
 

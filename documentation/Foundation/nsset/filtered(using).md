@@ -25,11 +25,11 @@ func filtered(using predicate: NSPredicate) -> Set<AnyHashable>
 - (NSSet<id> *) filteredSetUsingPredicate:(NSPredicate *) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 A new set containing the objects in the receiving set for which `predicate` returns true.
 
-#### Discussion
+## Discussion
 
 The following example illustrates the use of this method.
 

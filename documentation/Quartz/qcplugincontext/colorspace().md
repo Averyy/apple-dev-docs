@@ -22,11 +22,11 @@ func colorSpace() -> Unmanaged<CGColorSpace>!
 - (CGColorSpaceRef) colorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 An RGB color space; `NULL` if the custom patch execution mode is not consumer.
 
-#### Discussion
+## Discussion
 
 If the method returns a color space, it must be an RGB color space.
 

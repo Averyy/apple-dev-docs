@@ -17,7 +17,7 @@ The current policy for filtering websites.
 var blockedByFilter: WebContentSettings.FilterPolicy? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Setting any filter policy besides `.none` will disable Safari private browsing. The value is `nil` unless you specify a policy. Your app can block up to 50 web domains and specify up to 50 web domains exceptions at once.
 

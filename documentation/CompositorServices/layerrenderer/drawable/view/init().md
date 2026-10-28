@@ -16,7 +16,7 @@ Creates a view type.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Fetch the view associated with a drawable instead of using this initializer.
 

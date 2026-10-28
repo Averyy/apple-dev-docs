@@ -23,11 +23,11 @@ func parse(_ value: String) throws -> Format.FormatInput
 
 Available when `Format` conforms to `FormatStyle` and `Format.FormatInput` conforms to `BinaryInteger`.
 
-#### Return Value
+## Return Value
 
 The parsed integer value.
 
-#### Discussion
+## Discussion
 
 Use this method to repeatedly parse integer strings with the same [`IntegerParseStrategy`](../integerparsestrategy.md). To parse a single integer string, use the initializers inherited from [`BinaryInteger`](../../Swift/binaryinteger.md) that take a [`String`](../../Swift/string.md) and a [`FormatStyle`](../formatstyle.md) as parameters.
 

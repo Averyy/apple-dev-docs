@@ -17,7 +17,7 @@ Applies the Leaky Rectified Linear Unit.
 func leakyRelu(_ x: MLXArray, negativeSlope: Float = 0.01) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 MLX.maximum(negativeSlope * x, x)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`LeakyReLU`](./leakyrelu.md)

@@ -5,13 +5,13 @@
 
 Collect quality example videos that effectively train action classifiers.
 
-#### Overview
+## Overview
 
 Create a robust action classifier by collecting high-quality videos that clearly show a person performing each action you want the classifier to recognize. In addition, gather videos of unrelated actions the classifier might witness. Use these to create a *negative class* of irrelevant actions, so the classifier distinguishes between these two types.
 
 For general information about how to create an action classifier, see [Creating an Action Classifier Model](./creating-an-action-classifier-model.md).
 
-##### Collect Videos for Each Action
+### Collect Videos for Each Action
 
 Action classifiers learn from example videos of a human performing an action. Create ML uses the [Vision](../Vision/Vision.md) framework to locate key body parts, called *landmarks*, in each video frame. Action classifiers learn how to recognize a human body’s movements by tracking these landmarks frame by frame. Keep the landmarks clearly visible by applying the following guidelines as you record example videos, or when assessing videos from other sources.
 
@@ -28,7 +28,7 @@ You typically want an action classifier to work with any human that uses your ap
 
 If you want your app to recognize actions more generally or from various camera angles, add more example videos that capture the action from multiple directions.
 
-##### Collect Videos for a Negative Class
+### Collect Videos for a Negative Class
 
 A negative class is a category of one or more actions that aren’t important to the action classifier. Negative classes help the classifier distinguish between the actions you want it to recognize and potential nonactions it might encounter in your app.
 

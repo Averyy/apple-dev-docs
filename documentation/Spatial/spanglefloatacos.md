@@ -19,11 +19,11 @@
 static SPAngleFloat SPAngleFloatAcos(float x);
 ```
 
-#### Return Value
+## Return Value
 
 The inverse cosine of the specified value.
 
-#### Discussion
+## Discussion
 
 Returns the inverse cosine of the specified value.
 

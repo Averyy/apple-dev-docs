@@ -16,7 +16,7 @@ A UInt32 whose value indicates the clock domain to which this object belongs. Cl
 var clockDomain: UInt32 { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 A value of 0 indicates that the clock domain for the object is unspecified and should be assumed to be separate from every other object’s clock domain, even if they have the value of 0 as their clock domain as well.
 

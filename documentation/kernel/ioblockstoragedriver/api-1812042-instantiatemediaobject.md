@@ -15,11 +15,11 @@ virtual IOMedia * instantiateMediaObject(
  char *mediaName);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the created IOMedia object, or a null on error.
 
-#### Overview
+## Overview
 
 This method creates an IOMedia object from the supplied parameters. It is a convenience method to wrap the handful of steps to do the job.
 

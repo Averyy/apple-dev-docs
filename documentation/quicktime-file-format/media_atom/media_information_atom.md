@@ -6,7 +6,7 @@
 
 This atom contains data specific to the media type for use by the media handler component.
 
-#### Overview
+## Overview
 
 See [Media information atoms](../media_information_atoms.md).
 

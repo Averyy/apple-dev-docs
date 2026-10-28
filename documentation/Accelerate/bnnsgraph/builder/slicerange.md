@@ -21,7 +21,7 @@ A structure that represents a range.
 struct SliceRange
 ```
 
-#### Overview
+## Overview
 
 You can use standard Swift range operators to specify the range in slice operation. However, the `BNNSGraph.Builder.SliceRange` structure provides additional functionality:
 

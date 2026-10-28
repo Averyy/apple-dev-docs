@@ -10,11 +10,11 @@ framework: "swift-configuration/Configuration"
 
 Create a custom configuration provider to integrate a new data source.
 
-#### Overview
+## Overview
 
 Swift Configuration provides built-in providers for common data sources like environment variables, JSON files, and YAML files. When you need to integrate with other configuration sources – such as custom file formats, remote configuration servers, or custom databases – you implement a custom type that conforms to the [`ConfigProvider`](./configprovider.md) protocol.
 
-##### Choose your provider type
+### Choose your provider type
 
 Some data sources are inherently immutable, such as command-line arguments, while others change over time, such as files on disk.
 
@@ -26,7 +26,7 @@ Identify the provider type most similar to your data source and follow the recom
 | [Immutable](./implementing-a-provider.md#Implement-an-immutable-provider) | Values loaded once, never change | Command-line arguments, in-memory values, test fixtures, immutable files |
 | [Dynamic](./implementing-a-provider.md#Implement-a-dynamic-provider) | Values change over time | Remote servers, watched files |
 
-##### Understand the provider protocol
+### Understand the provider protocol
 
 The [`ConfigProvider`](./configprovider.md) protocol defines five methods and one property:
 
@@ -66,7 +66,7 @@ The three access patterns serve different needs:
 
 > 💡 **Tip**: For more details on access patterns, check out [Choosing the access pattern](./choosing-access-patterns.md).
 
-##### Implement a file-based provider
+### Implement a file-based provider
 
 To support custom file formats like TOML or XML, you don’t need to implement a whole provider yourself - the library comes with the following generic file providers that handle any format implementing the [`FileConfigSnapshot`](./fileconfigsnapshot.md) protocol:
 
@@ -165,7 +165,7 @@ let reloadingProvider = try await ReloadingFileProvider<TOMLSnapshot>(
 
 > 💡 **Tip**: For examples of file snapshot types, check out [the source for JSONSnapshot](https://github.com/apple/swift-configuration/blob/main/Sources/Configuration/Providers/Files/JSONSnapshot.swift) or [the source for YAMLSnapshot](https://github.com/apple/swift-configuration/blob/main/Sources/Configuration/Providers/Files/YAMLSnapshot.swift).
 
-##### Implement an immutable provider
+### Implement an immutable provider
 
 For non-file-based providers that represent immutable data in memory, the implementation is similar to the file snapshot implementation:
 
@@ -244,7 +244,7 @@ struct ImmutableDictionarySnapshot: ConfigSnapshot {
 
 > 💡 **Tip**: For examples of immutable providers, check out [the source for EnvironmentVariablesProvider](https://github.com/apple/swift-configuration/blob/main/Sources/Configuration/Providers/EnvironmentVariables/EnvironmentVariablesProvider.swift), [the source for CommandLineArgumentsProvider](https://github.com/apple/swift-configuration/blob/main/Sources/Configuration/Providers/CLI/CommandLineArgumentsProvider.swift), or [the source for  InMemoryProvider](https://github.com/apple/swift-configuration/blob/main/Sources/Configuration/Providers/InMemory/MutableInMemoryProvider.swift).
 
-##### Implement a dynamic provider
+### Implement a dynamic provider
 
 For providers that retrieve configuration from remote servers or files on disk, implement meaningful “fetch” behavior that contacts the authoritative source. For providers whose internal representation might change over time, also implement “watch” behavior.
 
@@ -362,7 +362,7 @@ struct RemoteConfigSnapshot: ConfigSnapshot {
 
 > 💡 **Tip**: For examples of dynamic providers, check out [the source for ReloadingFileProvider](https://github.com/apple/swift-configuration/blob/main/Sources/Configuration/Providers/Files/ReloadingFileProvider.swift) or [the source for MutableInMemoryProvider](https://github.com/apple/swift-configuration/blob/main/Sources/Configuration/Providers/InMemory/MutableInMemoryProvider.swift).
 
-##### Integrate with Service Lifecycle
+### Integrate with Service Lifecycle
 
 Providers that need background tasks (such as polling or maintaining connections) should conform to the `Service` protocol from [swift-service-lifecycle](https://github.com/swift-server/swift-service-lifecycle):
 
@@ -398,7 +398,7 @@ let serviceGroup = ServiceGroup(
 try await serviceGroup.run()
 ```
 
-##### Test your provider
+### Test your provider
 
 Use `ProviderCompatTest` from the `ConfigurationTesting` module to verify your provider implementation. Your provider must contain specific test data for the tests to pass:
 
@@ -428,7 +428,7 @@ import ConfigurationTesting
 
 > 💡 **Tip**: For file-based providers, create a test fixture file containing the required test data and load it during tests using temporary files or bundle resources.
 
-##### Name your provider
+### Name your provider
 
 Use the `Provider` suffix for all providers.
 
@@ -447,7 +447,7 @@ If this provider offered a provider that fetched updates from a Lunar service, t
 
 > **Note**: You don’t have to follow these recommendations, always prefer to follow correct Swift API design guidelines, whenever in conflict with the above recommendations.
 
-##### Ensure thread safety
+### Ensure thread safety
 
 Make all providers `Sendable` because configuration can be accessed from multiple isolation domains. Follow these patterns:
 

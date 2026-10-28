@@ -19,7 +19,7 @@ A description of where one per-splat property lives within a buffer.
 struct BufferDescriptor
 ```
 
-#### Overview
+## Overview
 
 Express the stride and offset in bytes. The framework finds the value for each splat by starting at the offset and advancing one stride per splat.
 

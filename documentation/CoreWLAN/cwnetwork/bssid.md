@@ -19,7 +19,7 @@ var bssid: String? { get }
 @property (readonly, nullable) NSString * bssid;
 ```
 
-#### Discussion
+## Discussion
 
 Returns a UTF-8 string formatted as <00:00:00:00:00:00>.
 

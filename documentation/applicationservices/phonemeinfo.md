@@ -21,7 +21,7 @@ typedef struct PhonemeInfo {
 } PhonemeInfo;
 ```
 
-#### Overview
+## Overview
 
 Ordinarily, you use a phoneme information structure to show the user how to enter text to represent a particular phoneme when the `'PHON'` input mode is activated.
 

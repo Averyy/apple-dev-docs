@@ -19,7 +19,7 @@ init?(name: NSFontCollection.Name, visibility: NSFontCollection.Visibility)
 + (NSMutableFontCollection *) fontCollectionWithName:(NSFontCollectionName) name visibility:(NSFontCollectionVisibility) visibility;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable font collection object.
 

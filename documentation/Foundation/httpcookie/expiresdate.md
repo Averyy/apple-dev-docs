@@ -25,7 +25,7 @@ var expiresDate: Date? { get }
 @property (copy, readonly, nullable) NSDate * expiresDate;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if there is no specific expiration date, as with session-only cookies. The expiration date is the date when the cookie should be deleted.
 

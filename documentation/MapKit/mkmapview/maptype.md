@@ -26,7 +26,7 @@ var mapType: MKMapType { get set }
 @property (nonatomic) MKMapType mapType;
 ```
 
-#### Discussion
+## Discussion
 
 Changing the value in this property may cause the receiver to begin loading new map content. For example, changing from [`MKMapType.standard`](../mkmaptype/standard.md) to [`MKMapType.satellite`](../mkmaptype/satellite.md) might cause it to begin loading the satellite imagery for the map. If the map needs new data, however, it loads asynchronously and MapKit sends appropriate messages to the receiver’s delegate indicating the status of the operation.
 

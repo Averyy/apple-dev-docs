@@ -25,7 +25,7 @@ func MTREventNameForID(_ clusterID: MTRClusterIDType, _ eventID: MTREventIDType)
 extern NSString *MTREventNameForID(MTRClusterIDType clusterID, MTREventIDType eventID);
 ```
 
-#### Discussion
+## Discussion
 
 For unknown IDs, a string ‘<Unknown clusterID %d>’ (if the cluster ID is not known) or ‘<Unknown eventID %d>’ (if the cluster ID is known but the event ID is not known) will be returned.
 

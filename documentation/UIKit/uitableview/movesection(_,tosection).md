@@ -23,7 +23,7 @@ func moveSection(_ section: Int, toSection newSection: Int)
 - (void) moveSection:(NSInteger) section toSection:(NSInteger) newSection;
 ```
 
-#### Discussion
+## Discussion
 
 You can combine section-move operations with section-insertion and section-deletion operations within a [`beginUpdates()`](./beginupdates%28%29.md)–[`endUpdates()`](./endupdates%28%29.md) block to have all changes occur together as a single animation.
 

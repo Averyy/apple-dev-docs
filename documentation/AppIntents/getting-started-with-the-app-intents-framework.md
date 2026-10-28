@@ -5,7 +5,7 @@
 
 Make your app’s actions and content available to the rest of the system using the App Intents framework.
 
-#### Overview
+## Overview
 
 People use apps to view and interact with their content, but they can also interact with that content in other ways. Someone might use Siri while driving to perform actions using your app, like sending a message or creating a note. When Spotlight displays your content in search results, the person can tap that result to launch your app to display the content there. Widgets can display your content from the Home Screen, Lock Screen and other places, and even let people interact with that content. All of these features rely your app supporting the App Intents framework, which provides the infrastructure to make your content available from outside your app. Make the adoption of this framework a core feature of every app you create.
 
@@ -13,7 +13,7 @@ People use apps to view and interact with their content, but they can also inter
 
 With the App Intents framework, your code remains the source of truth and you use the framework’s protocols and other types to make your content available to the system. You can integrate support for app intents into your existing types or create entirely separate types. You decide which of your app’s actions and data types you want to make available, and typically focus on types that people recognize. For example, a travel app might expose data objects for travel destinations and actions to display or navigate to a specific destination.
 
-##### Express your app’s actions using app intents
+### Express your app’s actions using app intents
 
 When someone interacts with your app’s interface, your app responds by performing an action. In a fitness app, someone can start or stop a workout. In an email or messaging app, someone can edit and send messages. In a web browser, someone can view the page at a specific URL, create or close tabs, or create a bookmark to the current page. An *app intent* defines one of your app’s actions and the data you require to perform that action, and the system uses the app intents you create as the gateway to your app’s features.
 
@@ -32,7 +32,7 @@ Whether you define a custom app intent or use one of the predefined schemas, the
 
 For more information about defining and implementing app intents for your app, see [Creating your first app intent](./creating-your-first-app-intent.md). For additional information about how to implement app intents, see [App intents](./app-intents.md).
 
-##### Express your app’s custom data types using app entities
+### Express your app’s custom data types using app entities
 
 Every app uses data objects to manage key information and the app creates and manages those objects at runtime. A fitness app might create a data object for each workout session, and track the workout duration and effort in that object. An email or messaging app might use data objects to track the contents of a message or its recipients. A web browser might use data objects to manage visible tabs or someone’s personal bookmarks. An *app entity* is a lightweight version of one of your data objects, and the system uses the app entities you create as a gateway to your app’s data.
 
@@ -51,7 +51,7 @@ Query objects help the system find your app entities at runtime. For each of you
 
 > ❗ **Important**: Make your app entity types transferable to support exchanging them with other processes. For more information about adding transferable support, see the [Core Transferable](../CoreTransferable/CoreTransferable.md) framework.
 
-##### Wrap finite lists of options in app enums
+### Wrap finite lists of options in app enums
 
 Many apps use enumerations or static types to define constants with special meaning. An *app enum* is a lightweight version of that type you use to define app intent parameters or app entity properties. A shopping app might use an app entity to represent an item of clothing someone can purchase, and use an app enum to represent the possible sizes for those clothes. Similarly, an app entity for a calendar invitation might include a variable with an app enum to indicate whether the person accepted, declined, or is tentative about the meeting.
 
@@ -63,7 +63,7 @@ An app enum’s main job is to provide descriptive information about its options
 
 For more information about how to create app enums, see [App enums](./app-enums.md).
 
-##### Improve the app intent experience with App Shortcuts
+### Improve the app intent experience with App Shortcuts
 
 App Shortcuts provide a polished experience for people wanting to use your app’s actions from the Shortcuts app and other places in the system. An App Shortcut is a combination of an app intent with some additional data, such as spoken phrases that trigger an app intent in Siri. People run them on their own or combine them in the Shortcuts app to create custom workflows.
 
@@ -71,7 +71,7 @@ To provide App Shortcuts for your app intents, create a type that conforms to th
 
 For more information about creating App Shortcuts, see [App Shortcuts](./app-shortcuts.md).
 
-##### Run app intents in the foreground and background
+### Run app intents in the foreground and background
 
 Some app intents require your app to run in the foreground, but many can run quietly in the background. Rather than require your app to run every time, you can provide an [app extension](./app-extension.md) to run some of your app intents in the background. Providing an app extension helps minimize disruptions, especially in iOS, iPadOS, tvOS, visionOS, and watchOS when another app is already in the foreground.
 
@@ -79,7 +79,7 @@ If an app intent can run in both the foreground and background, consider placing
 
 > **Note**: Some intents require your app to run in the foreground, and automatically launch your app if it’s not running. For example, the [`OpenIntent`](./openintent.md) protocol defines an app intent that launches your app to display a specific item. Place the code for these app intents only in your app.
 
-##### Donate app intents and app entities to the system
+### Donate app intents and app entities to the system
 
 Some system features use a person’s past actions to suggest actions they might want to take in the future. When someone uses the Shortcuts app or a feature like Siri to run app intent code, the system collects the app intents and uses them to generate suggestions. In your app, make similar donations when someone performs actions through your app’s interface. Your donations give the system a more complete picture of the actions that someone cares about, and help the system improve its suggestions.
 
@@ -87,7 +87,7 @@ An app can also donate app entities to give the system additional context about 
 
 For more information about donating app intents and app entities, see [Donations and discovery](./donations-and-discovery.md).
 
-##### Offer visual representations of your content
+### Offer visual representations of your content
 
 System features like Siri and the Shortcuts app display information from your app intents and entities visually. If someone uses Siri while looking at their iPhone, the system might choose to display results visually in addition to speaking those results. If you want to provide a more visually engaging interface for your custom content, provide a *snippet* for your app intent, which is a set of SwiftUI views you create programmatically and include with your app intent.
 
@@ -95,7 +95,7 @@ An app intent can also use snippets to request confirmation for a particular val
 
 For information about creating snippets and other visual elements for your app intents and entities, see [Visual presentation](./visual-presentation.md).
 
-##### Provide a deeper integration with system features
+### Provide a deeper integration with system features
 
 The app intents, app entities, and app enums you create provide the foundational code you need to interact with the other parts of the system. To make sure your code integrates well with specific features, review the requirements for that feature and make sure you add the relevant support to your code. For example:
 

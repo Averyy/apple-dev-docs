@@ -23,7 +23,7 @@ func setDefaultApplication(at applicationURL: URL, toOpenContentTypeOfFileAt url
 - (void) setDefaultApplicationAtURL:(NSURL *) applicationURL toOpenContentTypeOfFileAtURL:(NSURL *) url completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method sets the default app to open files of the type specified by the file `url`. If a change requires user consent, the system asks the user for consent asynchronously before invoking the completion handler.
 

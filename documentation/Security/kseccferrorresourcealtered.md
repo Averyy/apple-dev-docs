@@ -20,7 +20,7 @@ let kSecCFErrorResourceAltered: CFString
 extern CFStringRef const kSecCFErrorResourceAltered;
 ```
 
-#### Discussion
+## Discussion
 
 This key is present when a modified resource is found.
 

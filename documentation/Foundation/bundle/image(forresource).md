@@ -19,11 +19,11 @@ func image(forResource name: NSImage.Name) -> NSImage?
 - (NSImage *) imageForResource:(NSImageName) name;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSImage` object associated with the specified name, or `nil` if no file is found.
 
-#### Discussion
+## Discussion
 
 This method accommodates Apple’s naming conventions for high-resolution versions of the image. For example, if your bundle contains files named `button.png`, `button@2x.png`, and `button.pdf` then `imageForResource:@"button"` returns an `NSImage` object backed by all three files. Each time the `NSImage` object is drawn, it selects the representation best for the drawing context.
 

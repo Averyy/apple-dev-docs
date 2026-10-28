@@ -19,7 +19,7 @@ var verticalLineScroll: CGFloat { get set }
 @property CGFloat verticalLineScroll;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the amount by which the scroll view scrolls itself vertically when scrolling line by line, expressed in the content view’s coordinate system. This value is used when the user clicks the scroll arrows on the vertical scroll bar without holding down a modifier key.
 

@@ -5,7 +5,7 @@
 
 Encode a compute pass that runs computations in parallel on a thread grid, processing and manipulating Metal resource data on multiple cores of a GPU.
 
-#### Overview
+## Overview
 
 Your app can perform large-scale computation or prepare data for a subsequent GPU pass by encoding a compute pass that works on Metal resources in parallel. Compute passes are the part of your Metal pipeline meant for heavy parallelization of tasks requiring fast math, such as ray tracing.
 
@@ -20,7 +20,7 @@ The following two samples demonstrate basic compute passes:
 - See [Performing calculations on a GPU](./performing-calculations-on-a-gpu.md) for an example of configuring and running a compute pass that performs basic parallel math.
 - See [Combining blit and compute operations in a single pass](./combining-blit-and-compute-operations-in-a-single-pass.md) for an example of using a compute pass to modify data for a render pass.
 
-##### Kernel arguments and argument tables
+### Kernel arguments and argument tables
 
 Compute commands that execute your code on GPU call *kernel functions* in your Metal shader, annotated with `[[kernel]]`. Each kernel has associated argument tables, such as the buffer argument table `[[buffer(n)]]`, used to access data associated with kernel arguments. In addition to annotations describing any argument table, some kernel arguments need information on their address space. For more information, see the following sections of the [Metal Shading Language Specification (PDF):](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf)
 
@@ -38,7 +38,7 @@ For more information on function stitching, dynamic libraries, and ray tracing, 
 
 For information on per-architecture support for function tables in compute passes and other restrictions, see the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf).
 
-##### Argument buffers and memory residency
+### Argument buffers and memory residency
 
 Compute kernels can access argument data to populate a Metal structure, using an [`MTLBuffer`](./mtlbuffer.md) created by an [`MTLArgumentEncoder`](./mtlargumentencoder.md). For an in-depth discussion of argument buffers, see [Improving CPU performance by using argument buffers](./improving-cpu-performance-by-using-argument-buffers.md). Using a resource in an argument buffer requires that it’s resident in GPU memory for the duration of the pass. For a resource to be resident, allocate it with either the [`MTLStorageMode.shared`](./mtlstoragemode/shared.md) or [`MTLStorageMode.managed`](./mtlstoragemode/managed.md) mode.
 
@@ -48,7 +48,7 @@ Resources become resident on a per-instance basis by calling methods like [`useR
 
 When using resident resources, avoid data corruption by using an appropriate [`MTLHazardTrackingMode`](./mtlhazardtrackingmode.md) or by manually managing memory barriers and fences for untracked resources with the methods in Synchronizing Across Command Execution.
 
-##### Using tile memory in a compute pass
+### Using tile memory in a compute pass
 
 Apple family GPUs offer fast, integrated graphics memory called *tile memory* that’s shared between subsequent passes for fast access to data. Compute passes can reserve this memory space for threadgroup memory or imageblock memory, giving your compute functions the ability to access temporary data at low latency across your shaders.
 

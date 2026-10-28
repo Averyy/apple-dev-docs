@@ -21,7 +21,7 @@ class func wellKnowTypeTextPayload(string text: String, locale: Locale) -> Self?
 + (instancetype) wellKnowTypeTextPayloadWithString:(NSString *) text locale:(NSLocale *) locale;
 ```
 
-#### Return Value
+## Return Value
 
 An NDEF payload record.
 

@@ -25,11 +25,11 @@ func CMBufferQueueEnqueue(_ queue: CMBufferQueue, buffer buf: CMBuffer) -> OSSta
 extern OSStatus CMBufferQueueEnqueue(CMBufferQueueRef queue, CMBufferRef buf);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Result Codes`.
 
-#### Discussion
+## Discussion
 
 The buffer is retained by the queue, so the client can safely release the buffer if it has no further use for it. If the compare callback is non-`NULL`, this API performs an insertion sort using that compare operation. If the validation callback is non-`NULL`, this API calls it; if it returns a nonzero `OSStatus`, the buffer will not be enqueued and this API will return the same error `OSStatus`.
 

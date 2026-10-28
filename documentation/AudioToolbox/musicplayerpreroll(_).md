@@ -24,11 +24,11 @@ func MusicPlayerPreroll(_ inPlayer: MusicPlayer) -> OSStatus
 extern OSStatus MusicPlayerPreroll(MusicPlayer inPlayer);
 ```
 
-#### Return Value
+## Return Value
 
 A result code
 
-#### Discussion
+## Discussion
 
 Call this function in advance of playback to reduce a music player’s startup latency. If you call [`MusicPlayerStart(_:)`](./musicplayerstart%28_%29.md) without first calling this function, the player will call this function before beginning playback.
 

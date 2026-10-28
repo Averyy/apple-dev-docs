@@ -25,7 +25,7 @@ func class_addProtocol(_ cls: AnyClass?, _ protocol: Protocol) -> Bool
 extern BOOL class_addProtocol(Class cls, Protocol *protocol);
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](./yes.md) if the protocol was added successfully, otherwise [`NO`](./no.md) (for example, the class already conforms to that protocol).
 

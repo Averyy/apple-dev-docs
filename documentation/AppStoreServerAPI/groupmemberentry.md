@@ -19,7 +19,7 @@ object GroupMemberEntry
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 The [`Get Group Members`](./get-group-members.md) endpoint returns a `GroupMemberEntry` for each member of a group.
 

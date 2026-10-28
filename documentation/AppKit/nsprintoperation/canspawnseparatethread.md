@@ -19,7 +19,7 @@ var canSpawnSeparateThread: Bool { get set }
 @property BOOL canSpawnSeparateThread;
 ```
 
-#### Discussion
+## Discussion
 
 If `canSpawnSeparateThread` is [`true`](../../Swift/true.md), an `NSThread` object is detached when the print panel is dismissed (or immediately, if the panel is not to be displayed). The new thread performs the print operation, so that control can return to your application. A thread is detached only if the print operation is run using the [`runModal(for:delegate:didRun:contextInfo:)`](./runmodal%28for,delegate,didrun,contextinfo%29.md) method. If `canSpawnSeparateThread` is [`false`](../../Swift/false.md), the operation runs on the current thread, blocking the application until the operation completes.
 

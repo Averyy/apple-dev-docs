@@ -24,7 +24,7 @@ var lodAverage: Bool { get set }
 @property (nonatomic) BOOL lodAverage;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is [`true`](../../Swift/true.md), an average LOD may be used across four fragment shader threads. If this value is [`false`](../../Swift/false.md), no averaging is performed and each thread accesses its own LOD.
 

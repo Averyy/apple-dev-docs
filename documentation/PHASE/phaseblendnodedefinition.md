@@ -24,13 +24,13 @@ class PHASEBlendNodeDefinition
 @interface PHASEBlendNodeDefinition : PHASESoundEventNodeDefinition
 ```
 
-#### Overview
+## Overview
 
 This class defines a threshold and a numeric parameter the app increases and decreases to fade between child nodes. Each child node defines a range within the threshold in which the child node plays audio. As the app moves the blend parameter value between `0` and the threshold, the blend node plays the audio of its child nodes whose range and fade curve overlap at the current value.
 
 ![Illustration of a flowchart that represents a sound event node tree. The chart contains three boxes, which represent nodes. At left, a box labeled Blend Node extends an arrow, which points to a box in the upper right that’s labeled, Sampler Node Cobblestone Footstep. The box labeled Random Node extends another arrow, which points to a box in the lower right that’s labeled, Sampler Node Grass Footstep. A verticle bar ranges from top sampler node to the bottom sampler node to indicate the range in which both just one node actively plays audio, or both nodes actively play audio, and to what volume they play. ](https://developer.apple.com/tutorials/images/com.apple.phase/media-3918862@2x.png)
 
-##### Play a Blend of Simultaneous Audio Data
+### Play a Blend of Simultaneous Audio Data
 
 To gradually change the audio that a sound event plays, define blend thresholds and a number metaparameter that incrementally increases or decreases between the thresholds. For example, the following code sets up a sound event hierarchy containing two sampler nodes that play audio, with each one modeling a different terrain. The app sets the metaparameter value based on the value of the terrain the player stands on. When the app starts a sound event from this hierarchy, PHASE plays:
 

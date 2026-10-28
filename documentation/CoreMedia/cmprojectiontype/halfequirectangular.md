@@ -25,7 +25,7 @@ case halfEquirectangular
 kCMProjectionType_HalfEquirectangular
 ```
 
-#### Discussion
+## Discussion
 
 The video frames map onto the interior of a 3D half-sphere projection.
 

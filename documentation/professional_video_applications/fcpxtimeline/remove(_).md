@@ -19,7 +19,7 @@ func remove(_ observer: any FCPXTimelineObserver)
 - (void) removeTimelineObserver:(NSObject<FCPXTimelineObserver> *) observer;
 ```
 
-#### Discussion
+## Discussion
 
 Once this method is invoked, the observer no longer gets notified of further Final Cut Pro timeline changes.
 

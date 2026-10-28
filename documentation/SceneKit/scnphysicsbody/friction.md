@@ -25,7 +25,7 @@ var friction: CGFloat { get set }
 @property (nonatomic) CGFloat friction;
 ```
 
-#### Discussion
+## Discussion
 
 This property simulates the roughness of the body’s surface. When two bodies are in contact and a force is applied that would cause them to slide against one another, the friction values for both bodies determine their resistance to motion. If both bodies’ friction value is `0.0`, they slide freely against each other. If both bodies’ friction value is `1.0`, they do not slide at all. The default friction is `0.5`.
 

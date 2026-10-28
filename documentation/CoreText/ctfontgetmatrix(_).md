@@ -25,7 +25,7 @@ func CTFontGetMatrix(_ font: CTFont) -> CGAffineTransform
 extern CGAffineTransform CTFontGetMatrix(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 The transformation matrix for the given font reference. This is the matrix that was provided when the font was created.
 

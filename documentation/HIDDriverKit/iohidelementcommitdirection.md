@@ -16,7 +16,7 @@ The commit direction for an HID element.
 typedef enum { ... } IOHIDElementCommitDirection;
 ```
 
-#### Overview
+## Overview
 
 Passing a value of [`kIOHIDElementCommitDirectionOut`](./iohidelementcommitdirection/kiohidelementcommitdirectionout.md) issues a [`setReport`](./iohiddevice/setreport.md) call to the device. Before issuing this call, set your desired value on the element with the [`setValue`](./iohidelement/setvalue.md) or [`setDataValue`](./iohidelement/setdatavalue.md) functions.
 

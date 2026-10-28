@@ -21,7 +21,7 @@ Returns whether a section with the given title exists in the collection.
 func contains(sectionTitle title: SectionTitle) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

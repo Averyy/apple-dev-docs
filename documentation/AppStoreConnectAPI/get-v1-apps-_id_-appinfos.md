@@ -9,11 +9,11 @@ Get information about an app that is currently live on App Store, or that goes l
 **Availability**:
 - App Store Connect API 1.2+
 
-#### Discussion
+## Discussion
 
 Use this endpoint to retrieve the derived app-level information for an app. If the app has both a “Ready for Sale” version and a version you’re preparing for release, it will have two app infos. One represents information about the app currently in the App Store, and the other represents the information that takes effect when you release the next version. Use the `appStoreState` attribute to differentiate them.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

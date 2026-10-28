@@ -15,7 +15,7 @@ Configuration object for visual fidelity monitoring.
 typedef NSObject<OS_ar_visual_fidelity_configuration> * ar_visual_fidelity_configuration_t;
 ```
 
-#### Discussion
+## Discussion
 
 Contains field of view specification and settings for device fit monitoring.
 

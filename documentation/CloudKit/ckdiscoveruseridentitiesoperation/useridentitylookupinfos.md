@@ -27,7 +27,7 @@ var userIdentityLookupInfos: [CKUserIdentity.LookupInfo] { get set }
 @property (nonatomic, copy) NSArray<CKUserIdentityLookupInfo *> * userIdentityLookupInfos;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to view or change the lookup info that CloudKit uses to discover user identities. If you intend to modify this property’s value, do so before you execute the operation or submit it to a queue.
 

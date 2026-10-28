@@ -5,7 +5,7 @@
 
 The submissions of builds for beta app review, including the status of submissions.
 
-#### Overview
+## Overview
 
 A `betaAppReviewSubmissions` resource represents Apple’s review of a build before its distribution through TestFlight. Create a beta app review submission when you are ready to submit a build. App Store Connect validates the beta app review submission to ensure it includes necessary information such as `appEncryptionDeclarations`, `betaAppReviewDetails`, and so on, and submits the build to the review team.
 

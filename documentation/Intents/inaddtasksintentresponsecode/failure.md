@@ -25,7 +25,7 @@ case failure
 INAddTasksIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code for both transient and unrecoverable errors that prevented you from adding the tasks to the task list.
 

@@ -19,7 +19,7 @@ class let didProcessEditingNotification: NSNotification.Name
 extern NSNotificationName NSTextStorageDidProcessEditingNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The framework posts this notification after a text storage finishes processing edits in [`processEditing()`](./processediting%28%29.md). Observers other than the delegate shouldn’t make further changes to the text storage. The notification object is the text storage object that processed the edits. This notification doesn’t contain a `userInfo` dictionary.
 

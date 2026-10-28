@@ -25,11 +25,11 @@ func keyForChildFileWrapper(_ child: FileWrapper) -> String?
 - (NSString *) keyForFileWrapper:(NSFileWrapper *) child;
 ```
 
-#### Return Value
+## Return Value
 
 Dictionary key used to store the file wrapper in the directory’s list of file wrappers. The dictionary key is a unique filename, which may not be the same as the passed-in file wrapper’s preferred filename if more than one file wrapper in the directory’s dictionary of children has the same preferred filename. See [Accessing File Wrapper Identities](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileWrappers/FileWrappers.html#//apple_ref/doc/uid/TP40010672-CH13-SW1) in [File System Programming Guide](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010672) for more information about the file-wrapper list structure. Returns `nil` if the file wrapper specified in `child` is not a child of the directory.
 
-#### Discussion
+## Discussion
 
 This method raises `NSInternalInconsistencyException` if the receiver is not a directory file wrapper.
 

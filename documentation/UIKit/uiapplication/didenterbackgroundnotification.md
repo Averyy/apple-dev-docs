@@ -24,7 +24,7 @@ class let didEnterBackgroundNotification: NSNotification.Name
 extern NSNotificationName const UIApplicationDidEnterBackgroundNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The `object` of the notification is the [`UIApplication`](../uiapplication.md) object. There is no `userInfo` dictionary.
 

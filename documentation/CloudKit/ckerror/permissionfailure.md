@@ -21,7 +21,7 @@ An error that occurs when the user doesn’t have permission to save or fetch da
 static var permissionFailure: CKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error typically occurs in the public database in one of these circumstances:
 

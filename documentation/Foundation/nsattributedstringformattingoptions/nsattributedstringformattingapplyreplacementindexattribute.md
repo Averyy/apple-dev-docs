@@ -21,7 +21,7 @@ An option to apply to the replaced portions of text in a format string.
 NSAttributedStringFormattingApplyReplacementIndexAttribute
 ```
 
-#### Discussion
+## Discussion
 
 When creating an attributed string from a format string, specify this option to apply an attribute to all substituted text. Consider the creation of an attributed string using the format string `“Count: %d; Total: %d”`. After generating the attributed string, the creation method applies the [`replacementIndex`](../nsattributedstring/key/replacementindex.md) attribute to the both integer values in the resulting string.
 

@@ -14,7 +14,7 @@
 #define IOCreateDisplayInfoDictionary(f, o)
 ```
 
-#### Discussion
+## Discussion
 
 IOCreateDisplayInfoDictionary() was renamed IODisplayCreateInfoDictionary(). IOCreateDisplayInfoDictionary() is now a macro for IODisplayCreateInfoDictionary() for compatibility with older code.
 

@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_OpticalMemorySBCDevice = 0x07
 ```
 
-#### Discussion
+## Discussion
 
 SBC Device.
 

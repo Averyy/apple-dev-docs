@@ -13,7 +13,7 @@
 kPMPrintAllPages = -1
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that all pages of a document should be printed.
 

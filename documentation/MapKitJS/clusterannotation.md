@@ -15,7 +15,7 @@ An annotation type that groups multiple annotations together.
 class ClusterAnnotation extends MarkerAnnotation
 ```
 
-#### Discussion
+## Discussion
 
 The framework creates a [`ClusterAnnotation`](./clusterannotation.md) when it groups annotations in a cluster. You can replace the annotation or update its properties using the [`annotationForCluster`](./map/annotationforcluster.md) delegate method.
 

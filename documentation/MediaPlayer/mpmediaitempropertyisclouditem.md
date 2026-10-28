@@ -25,7 +25,7 @@ let MPMediaItemPropertyIsCloudItem: String
 extern NSString * const MPMediaItemPropertyIsCloudItem;
 ```
 
-#### Discussion
+## Discussion
 
 A media item is an iCloud item if it’s available in the iCloud Music Library, or if it’s part of the Apple Music subscription service and isn’t already on the device. This value is an [`NSNumber`](../Foundation/nsnumber.md) object that represents a `BOOL` data type.
 

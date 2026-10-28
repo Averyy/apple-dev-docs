@@ -15,7 +15,7 @@ The status of the schema string validation.
 attribute boolean isValid;
 ```
 
-#### Discussion
+## Discussion
 
 `true` if the schema can be applied to the container environment. Otherwise `false`.
 

@@ -19,7 +19,7 @@ var isBezeled: Bool { get set }
 @property (getter=isBezeled) BOOL bezeled;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains [`true`](../../Swift/true.md) if the date picker has a bezeled boarder; otherwise, [`false`](../../Swift/false.md).
 

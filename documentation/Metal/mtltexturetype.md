@@ -24,7 +24,7 @@ enum MTLTextureType
 enum MTLTextureType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 For a `MTLTextureTypeCube` texture, the property values describe one slice, which is any one of its six sides. For example, [`mipmapLevelCount`](./mtltexture/mipmaplevelcount.md) is the number of mipmap levels for one slice, not the total sum of mipmap levels in six slices. By definition, the [`width`](./mtltexture/width.md) and [`height`](./mtltexture/height.md) of a cube texture are the same value.
 

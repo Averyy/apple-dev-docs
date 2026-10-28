@@ -5,11 +5,11 @@
 
 Authenticate users with access keys stored in Apple Wallet.
 
-#### Overview
+## Overview
 
 Platform Single Sign-on (Platform SSO) configured for Authenticated Guest Mode with Tap to Login supports authentication using an access key within Apple Wallet. With this configuration, users log in on a shared Mac with just the tap of their iPhone or Apple Watch on a supported NFC reader.
 
-#### Explore how access keys work with Platform SSO
+## Explore how access keys work with Platform SSO
 
 Access keys consist of a credential stored in the Secure Element of supported iPhone and Apple Watch devices and a pass available to users within Apple Wallet. When the reader prompts users to authenticate with an access key, Apple Wallet selects the right key — and, if the key supports Express Mode and the user has turned it on, presents it automatically.
 
@@ -19,7 +19,7 @@ Access key creation and management require Credential Manager functionality and 
 
 Before provisioning any keys, the user must sign in with their Managed Apple Account or Apple Account on a compatible iPhone and turn on two-factor authentication. Student IDs are an exception and don’t require two-factor authentication.
 
-#### Secure access keys
+## Secure access keys
 
 Access keys in Apple Wallet take full advantage of the privacy and security built into iPhone and Apple Watch because the device’s Secure Element stores their credentials. This makes them hardware-backed and encrypted, and helps to protect them from tampering and extraction attempts.
 
@@ -27,7 +27,7 @@ Apple Wallet never shares when or where a person uses their keys with Apple, and
 
 For more information, see [Access using Apple Wallet](https://support.apple.com/guide/security/sec75f6d5040) in the Apple Platform Security guide.
 
-#### Provision access keys
+## Provision access keys
 
 A user creates an access key through the following process that the Credential Manager provides:
 
@@ -49,7 +49,7 @@ The Credential Manager finalizes the access key pass and includes card art and u
 
 The Credential Manager uses the Apple Access Platform to provide the access key pass securely back to the device. The device stores the access key pass and makes it available in Wallet.
 
-#### Configure the NFC reader
+## Configure the NFC reader
 
 Use the [`ExtensibleSSO`](../DeviceManagement/extensiblesso.md) configuration or the [`ExtensibleSingleSignOn`](../DeviceManagement/extensiblesinglesignon.md) profile to configure what the reader attached to the Mac uses for the NFC transaction.
 
@@ -62,17 +62,17 @@ The configuration specifies:
 
 For more information, see [Configuring Platform Single Sign-on](../DeviceManagement/configuring-platform-single-sign-on.md).
 
-#### Use access keys
+## Use access keys
 
 Each NFC transaction consists of multiple phases.
 
-##### Poll the reader
+### Poll the reader
 
 The NFC reader broadcasts the contactless polling loop and waits for an eligible device using the Enhanced Contactless Polling (ECP) protocol from Apple.
 
 The ECP protocol enables the NFC reader to broadcast various configuration and capability information in the contactless polling loop to Apple devices before the transaction initiates. This information includes values such as the `AccessKeyReaderGroupIdentifier` that the extensible SSO configuration provides and the Terminal Capabilities Identifier (TCI). The TCI includes information like support for Express Mode.
 
-##### Initiate the transaction
+### Initiate the transaction
 
 When within range of the NFC reader, the device listens to the contactless polling loop to receive the ECP settings of the reader.
 
@@ -82,19 +82,19 @@ Using the `AccessKeyReaderGroupIdentifier` that the ECP message provides, the de
 - If multiple access keys are relevant and Express Mode is turned on, Apple Wallet automatically selects the one set for use with Express Mode.
 - If multiple access keys are relevant and Express Mode is turned off, users can select an access key manually before the transaction.
 
-##### Perform the transaction
+### Perform the transaction
 
 The device verifies the reader identity up to the root CA that the Credential Manager provisions. If the checks pass, the device uses the provisioned key material. Otherwise, if the device can’t verify the reader identity, it uses random ephemeral key material instead.
 
 The reader and the device perform a contactless transaction using the Aliro protocol. At the beginning of the transaction, Platform SSO requests a one-time code from the identity provider, which becomes part of an embedded assertion. The device signs the assertion with the private key.
 
-##### Decide on the requested access
+### Decide on the requested access
 
 The reader provides the Platform SSO extension with the user name and public key from the access key pass as well as a signed embedded assertion. The extension sends them back to the identity provider to authorize or deny access.
 
 > **Note**:  The identity provider decides whether to authorize the user based on the provided credential and provides the decision back to Platform SSO. The Apple Access Platform isn’t involved in this authorization process.
 
-#### Decommission an access key
+## Decommission an access key
 
 An access key might become obsolete — for example, when a user loses their device or the identity provider deactivates the user account. In those cases, the identity provider initiates the following process:
 

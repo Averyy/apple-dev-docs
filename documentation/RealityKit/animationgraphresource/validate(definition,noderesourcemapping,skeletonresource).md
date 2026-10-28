@@ -20,11 +20,11 @@ Compiles an animation graph definition and returns any diagnostic messages the c
 static func validate(definition: Data, nodeResourceMapping: [Int : AnimationResource] = [:], skeletonResource: SkeletonResource) -> [String]
 ```
 
-#### Return Value
+## Return Value
 
 An array of diagnostic messages produced by the compiler. An empty array indicates the definition compiled cleanly.
 
-#### Discussion
+## Discussion
 
 Call this method to validate a definition at editor time without paying the cost of holding on to the compiled resource and without having to handle a thrown error. To produce a usable [`AnimationGraphResource`](../animationgraphresource.md), call [`init(definition:nodeResourceMapping:skeletonResource:)`](./init%28definition,noderesourcemapping,skeletonresource%29.md) instead.
 

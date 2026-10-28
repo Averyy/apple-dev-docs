@@ -23,7 +23,7 @@ func location(in view: UIView) -> CGPoint
 - (CGPoint) locationInView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The location point of the drag activity, in the coordinate system of the specified view.
 

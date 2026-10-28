@@ -17,7 +17,7 @@ The attributes associated with this metadata value, if any.
 var attributes: Logger.MetadataValueAttributes { get set }
 ```
 
-#### Discussion
+## Discussion
 
 **Getting:** When the value is a [`Logger.MetadataValue.stringConvertible(_:)`](./stringconvertible%28_%29.md) wrapping an `AttributedStringCarrier`, returns that carrier’s attributes. For all other cases returns empty attributes.
 

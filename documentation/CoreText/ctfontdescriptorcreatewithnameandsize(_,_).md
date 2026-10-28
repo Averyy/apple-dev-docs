@@ -25,7 +25,7 @@ func CTFontDescriptorCreateWithNameAndSize(_ name: CFString, _ size: CGFloat) ->
 extern CTFontDescriptorRefCTFontDescriptorCreateWithNameAndSize(CFStringRef name, CGFloat size);
 ```
 
-#### Return Value
+## Return Value
 
 A new font descriptor reference with the given PostScript name and point size.
 

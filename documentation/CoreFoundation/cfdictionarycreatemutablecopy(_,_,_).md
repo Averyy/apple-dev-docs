@@ -25,7 +25,7 @@ func CFDictionaryCreateMutableCopy(_ allocator: CFAllocator!, _ capacity: CFInde
 extern CFMutableDictionaryRefCFDictionaryCreateMutableCopy(CFAllocatorRef allocator, CFIndex capacity, CFDictionaryRef theDict);
 ```
 
-#### Return Value
+## Return Value
 
 A new dictionary that contains the same values as `theDict`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

@@ -21,7 +21,7 @@ func setFocusedColumn(_ focusedColumn: Int)
 - (void) setFocusedColumn:(NSInteger) focusedColumn;
 ```
 
-#### Discussion
+## Discussion
 
 This method will redisplay the previously focused column and (if required) the new `focusedColumn`.
 

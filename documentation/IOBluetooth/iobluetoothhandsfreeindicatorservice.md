@@ -19,7 +19,7 @@ let IOBluetoothHandsFreeIndicatorService: String
 extern NSString * const IOBluetoothHandsFreeIndicatorService;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for the carrier network connection indicator are:
 

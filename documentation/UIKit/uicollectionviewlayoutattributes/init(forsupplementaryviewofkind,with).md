@@ -23,11 +23,11 @@ convenience init(forSupplementaryViewOfKind elementKind: String, with indexPath:
 + (instancetype) layoutAttributesForSupplementaryViewOfKind:(NSString *) elementKind withIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A new layout attributes object whose precise type matches the type of the class used to call this method.
 
-#### Discussion
+## Discussion
 
 Use this method to create a layout attributes object for a supplementary view in the collection view. Like cells, supplementary views present data that is managed by the collection view’s data source. But unlike cells, supplementary views are typically designed for a special purpose. For example, header and footer views are laid out differently than cells and can be provided for individual sections or for the collection view as a whole.
 

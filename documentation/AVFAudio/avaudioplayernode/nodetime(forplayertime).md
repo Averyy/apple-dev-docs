@@ -25,11 +25,11 @@ func nodeTime(forPlayerTime playerTime: AVAudioTime) -> AVAudioTime?
 - (AVAudioTime *) nodeTimeForPlayerTime:(AVAudioTime *) playerTime;
 ```
 
-#### Return Value
+## Return Value
 
 A node time, or `nil` if the player isn’t playing.
 
-#### Discussion
+## Discussion
 
 For more information about this method and its inverse [`playerTime(forNodeTime:)`](./playertime%28fornodetime%29.md), see [Player timeline](../avaudioplayernode.md#Player-timeline).
 

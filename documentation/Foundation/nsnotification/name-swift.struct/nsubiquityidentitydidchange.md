@@ -25,7 +25,7 @@ static let NSUbiquityIdentityDidChange: NSNotification.Name
 extern NSNotificationName const NSUbiquityIdentityDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system generates this notification when the user logs into or out of an iCloud account or enables or disables the syncing of documents and data. This notification is your cue to update caches and any interface elements displaying iCloud–related content. For example, hide all references to iCloud files when the user logs out of iCloud.
 

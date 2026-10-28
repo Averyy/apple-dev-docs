@@ -24,7 +24,7 @@ let HMCharacteristicTypeObstructionDetected: String
 extern NSString * const HMCharacteristicTypeObstructionDetected;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding Boolean value is `true` when the accessory detects an obstruction.
 

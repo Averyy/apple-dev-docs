@@ -24,7 +24,7 @@ static let restingHeartRate: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierRestingHeartRate;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use count/time units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

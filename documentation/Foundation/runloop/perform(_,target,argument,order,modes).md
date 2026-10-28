@@ -25,7 +25,7 @@ func perform(_ aSelector: Selector, target: Any, argument arg: Any?, order: Int,
 - (void) performSelector:(SEL) aSelector target:(id) target argument:(id) arg order:(NSUInteger) order modes:(NSArray<NSString *> *) modes;
 ```
 
-#### Discussion
+## Discussion
 
 This method sets up a timer to perform the `aSelector` message on the receiver at the start of the next run loop iteration. The timer is configured to run in the modes specified by the `modes` parameter. When the timer fires, the thread attempts to dequeue the message from the run loop and perform the selector. It succeeds if the run loop is running and in one of the specified modes; otherwise, the timer waits until the run loop is in one of those modes.
 

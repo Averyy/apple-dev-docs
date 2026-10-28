@@ -23,7 +23,7 @@ func prepare(forCollectionViewUpdates updateItems: [UICollectionViewUpdateItem])
 - (void) prepareForCollectionViewUpdates:(NSArray<UICollectionViewUpdateItem *> *) updateItems;
 ```
 
-#### Discussion
+## Discussion
 
 When items are inserted or deleted, the collection view notifies its layout object so that it can adjust the layout as needed. The first step in that process is to call this method to let the layout object know what changes to expect. After that, additional calls are made to gather layout information for inserted, deleted, and moved items that are going to be animated around the collection view.
 

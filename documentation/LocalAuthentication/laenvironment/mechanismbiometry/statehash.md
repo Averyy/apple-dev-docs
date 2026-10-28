@@ -22,7 +22,7 @@ var stateHash: Data { get }
 @property (nonatomic, readonly) NSData * stateHash;
 ```
 
-#### Discussion
+## Discussion
 
 The application specific state of the biometric enrollment as returned by @c LAContext.domainState.biometry.stateHash
 

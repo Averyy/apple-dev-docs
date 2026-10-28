@@ -21,11 +21,11 @@ Updates the buffer’s initialized memory with every element of the source.
 func update(fromContentsOf source: some Collection<Element>) -> UnsafeMutableBufferPointer<Element>.Index
 ```
 
-#### Return Value
+## Return Value
 
 An index one past the index of the last element updated.
 
-#### Discussion
+## Discussion
 
 Prior to calling the `update(fromContentsOf:)` method on a buffer, the first `source.count` elements of the buffer’s memory must be initialized, or the buffer’s `Element` type must be a trivial type. The buffer must reference enough initialized memory to accommodate `source.count` elements.
 

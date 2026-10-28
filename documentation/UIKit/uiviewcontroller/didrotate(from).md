@@ -23,7 +23,7 @@ func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation)
 - (void) didRotateFromInterfaceOrientation:(UIInterfaceOrientation) fromInterfaceOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses may override this method to perform additional actions immediately after the rotation. For example, you might use this method to reenable view interactions, start media playback again, or turn on expensive drawing or live updates. By the time this method is called, the [`interfaceOrientation`](./interfaceorientation.md) property is already set to the new orientation. Your implementation of this method must call `super` at some point during its execution.
 

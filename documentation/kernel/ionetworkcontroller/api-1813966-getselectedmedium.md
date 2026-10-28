@@ -11,11 +11,11 @@ Gets the current selected medium.
 virtual const IONetworkMedium * getSelectedMedium() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the current selected medium, the default medium, or 0.
 
-#### Overview
+## Overview
 
 If the driver has previously called setSelectedMedium() to indicate its current media selection, then this method will return that medium object. Otherwise, the driver's property table is consulted and a default medium property is examined, and the corresponding entry in the medium dictionary is returned.
 

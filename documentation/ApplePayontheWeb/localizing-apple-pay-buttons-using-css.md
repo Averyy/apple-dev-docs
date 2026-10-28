@@ -5,7 +5,7 @@
 
 Set the language of an Apple Pay button.
 
-#### Overview
+## Overview
 
 You can set the language of Apple Pay buttons by setting the `-webkit-locale` CSS property or the `lang` HTML attribute. For example, to display the Buy with Apple Pay button with the text in French, you can use code like this:
 

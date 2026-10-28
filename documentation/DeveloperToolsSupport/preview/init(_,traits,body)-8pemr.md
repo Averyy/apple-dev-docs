@@ -22,7 +22,7 @@ Creates a preview of a SwiftUI view.
 init(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>..., body: @escaping @MainActor () -> any View)
 ```
 
-#### Discussion
+## Discussion
 
 Preview macros expand into a declaration that calls this initializer. Don’t use this initializer directly. Instead use one of the macros, like [`Preview(_:body:)`](../../SwiftUI/preview%28_,body%29.md).
 

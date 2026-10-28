@@ -19,11 +19,11 @@ func cancelButtonRect(forBounds rect: NSRect) -> NSRect
 - (NSRect) cancelButtonRectForBounds:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 The updated bounding rectangle to use for the cancel button. The default value is the value passed into the `rect` parameter.
 
-#### Discussion
+## Discussion
 
 Subclasses can override this method to return a new bounding rectangle for the cancel button cell. You might use this method to provide a custom layout for the search field control.
 

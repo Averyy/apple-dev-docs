@@ -21,11 +21,11 @@ Generates a locale-aware string representation of an instance of person name com
 func formatted() -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string, formatted according to the default style.
 
-#### Discussion
+## Discussion
 
 The [`formatted()`](./formatted%28%29.md) method creates a string representation of a person’s name suitable for most uses.
 

@@ -15,11 +15,11 @@ Returns the crop box of a page in a PDF document.
 extern CGRect CGPDFDocumentGetCropBox(CGPDFDocumentRef document, int page);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle that represents the crop box for the specified page, expressed in default PDF user space units (points).
 
-#### Discussion
+## Discussion
 
 The replacement function for this one is [`getBoxRect(_:)`](./cgpdfpage/getboxrect%28_%29.md), which gets the rectangle associated with a type of box (art, media, crop, bleed trim) that represents a content region or page dimensions of a PDF page. For more information see [`CGPDFPage`](./cgpdfpage.md).
 

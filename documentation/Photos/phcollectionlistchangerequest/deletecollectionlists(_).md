@@ -28,7 +28,7 @@ class func deleteCollectionLists(_ collectionLists: any NSFastEnumeration)
 
 - [Requesting Changes to the Photo Library](../../PhotoKit/requesting-changes-to-the-photo-library.md)
 
-#### Discussion
+## Discussion
 
 Call this method within a photo library change block to delete collection lists. For details on change blocks, see [`PHPhotoLibrary`](../phphotolibrary.md).
 

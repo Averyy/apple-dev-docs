@@ -25,7 +25,7 @@ class var urlPathAllowed: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * URLPathAllowedCharacterSet;
 ```
 
-#### Discussion
+## Discussion
 
 The path component of a URL is the component immediately following the host component (if present). It ends wherever the query or fragment component begins. For example, in the URL `http://www.example.com/index.php?key1=value1`, the path component is `/index.php`.
 

@@ -15,7 +15,7 @@ The type of values managed by a selector control.
 typedef uint32_t IOUserAudioSelectorValue;
 ```
 
-#### Discussion
+## Discussion
 
 AudioDriverKit selectors use [`uint32_t`](../kernel/uint32_t.md) values.
 

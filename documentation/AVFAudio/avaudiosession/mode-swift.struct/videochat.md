@@ -24,7 +24,7 @@ static let videoChat: AVAudioSession.Mode
 extern AVAudioSessionMode const AVAudioSessionModeVideoChat;
 ```
 
-#### Discussion
+## Discussion
 
 This mode is appropriate for video chat apps that use the [`playAndRecord`](../category-swift.struct/playandrecord.md) or [`record`](../category-swift.struct/record.md) categories. When you set this mode, the session optimizes the device’s tonal equalization for voice and reduces the set of allowed audio routes to only those suitable for video chat. Setting this mode also causes the system to automatically apply the [`allowBluetoothHFP`](../categoryoptions-swift.struct/allowbluetoothhfp.md) and [`defaultToSpeaker`](../categoryoptions-swift.struct/defaulttospeaker.md) category options.
 

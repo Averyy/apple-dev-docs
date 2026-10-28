@@ -21,7 +21,7 @@ A vector mask with the result of a pointwise equality comparison.
 static func .== (a: Self, b: Self) -> SIMDMask<Self.MaskStorage>
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

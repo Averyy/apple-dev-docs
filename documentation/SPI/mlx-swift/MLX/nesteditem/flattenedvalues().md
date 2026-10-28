@@ -17,11 +17,11 @@ Return a flattened representation of the structured contents as an array of valu
 func flattenedValues() -> [Element]
 ```
 
-#### Discussion
+## Discussion
 
 This is typically called via [`flattenedValues()`](../nesteddictionary/flattenedvalues%28%29.md). Note that unlike [`flattened(prefix:)`](./flattened%28prefix%29.md) this cannot be reconstructed back into the original structure, but can be used with [`replacingValues(with:)`](../nesteddictionary/replacingvalues%28with%29.md) in a similar fashion.
 
-##### See Also
+### See Also
 
 - [`flattened(prefix:)`](./flattened%28prefix%29.md)
 - [`flattenedValues()`](../nesteddictionary/flattenedvalues%28%29.md)

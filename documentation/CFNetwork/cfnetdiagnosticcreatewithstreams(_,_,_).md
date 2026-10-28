@@ -24,11 +24,11 @@ func CFNetDiagnosticCreateWithStreams(_ alloc: CFAllocator?, _ readStream: CFRea
 extern CFNetDiagnosticRefCFNetDiagnosticCreateWithStreams(CFAllocatorRef alloc, CFReadStreamRef readStream, CFWriteStreamRef writeStream);
 ```
 
-#### Discussion
+## Discussion
 
 This function uses references to a read steam and a write stream (or just a read stream or just a write stream) to create a reference to an instance of a CFNetDiagnostic object. You can pass the reference to [`CFNetDiagnosticDiagnoseProblemInteractively(_:)`](./cfnetdiagnosticdiagnoseprobleminteractively%28_%29.md) to open a Network Diagnostics window or to [`CFNetDiagnosticCopyNetworkStatusPassively(_:_:)`](./cfnetdiagnosticcopynetworkstatuspassively%28_,_%29.md) to get a description of the connection referenced by `readStream` and `writeStream`.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe as long as another thread does not alter the same CFNetDiagnosticRef at the same time.
 

@@ -23,11 +23,11 @@ optional func textViewShouldBeginEditing(_ textView: UITextView) -> Bool
 - (BOOL) textViewShouldBeginEditing:(UITextView *) textView;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if an editing session should be initiated; otherwise, [`false`](../../Swift/false.md) to disallow editing.
 
-#### Discussion
+## Discussion
 
 When the user performs an action that would normally initiate an editing session, the text view calls this method first to see if editing should actually proceed. In most circumstances, you would simply return [`true`](../../Swift/true.md) from this method to allow editing to proceed.
 

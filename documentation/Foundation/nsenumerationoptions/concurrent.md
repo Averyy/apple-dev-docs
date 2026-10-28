@@ -25,7 +25,7 @@ static var concurrent: NSEnumerationOptions { get }
 NSEnumerationConcurrent
 ```
 
-#### Discussion
+## Discussion
 
 The order of invocation is nondeterministic and undefined; this flag is a hint and may be ignored by the implementation under some circumstances; the code of the Block must be safe against concurrent invocation.
 

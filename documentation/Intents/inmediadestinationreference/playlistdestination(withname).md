@@ -24,7 +24,7 @@ class func playlistDestination(withName playlistName: String) -> Self
 + (instancetype) playlistDestinationWithName:(NSString *) playlistName;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INMediaDestinationReference`](../inmediadestinationreference.md) object or `nil` if unable to create.
 

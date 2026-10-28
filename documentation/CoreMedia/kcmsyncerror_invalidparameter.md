@@ -25,7 +25,7 @@ var kCMSyncError_InvalidParameter: OSStatus { get }
 kCMSyncError_InvalidParameter
 ```
 
-#### Discussion
+## Discussion
 
 Indicates `NULL` or zero was passed for a required parameter.
 

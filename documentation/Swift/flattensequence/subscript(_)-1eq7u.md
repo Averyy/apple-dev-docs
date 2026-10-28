@@ -23,7 +23,7 @@ subscript(position: FlattenSequence<Base>.Index) -> Base.Element.Element { get }
 
 Available when `Base` conforms to `Collection` and `Base.Element` conforms to `Collection`.
 
-#### Overview
+## Overview
 
 > **Precondition**: `position` is a valid position in `self` and `position != endIndex`.
 

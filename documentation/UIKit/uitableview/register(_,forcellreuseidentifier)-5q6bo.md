@@ -25,7 +25,7 @@ func register(_ nib: UINib?, forCellReuseIdentifier identifier: String)
 - (void) registerNib:(UINib *) nib forCellReuseIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Before dequeueing any cells, call this method or the [`register(_:forCellReuseIdentifier:)`](./register%28_,forcellreuseidentifier%29-3l3ct.md) method to tell the table view how to create new cells. If a cell of the specified type isn’t currently in a reuse queue, the table view uses the provided information to create a new cell object automatically.
 

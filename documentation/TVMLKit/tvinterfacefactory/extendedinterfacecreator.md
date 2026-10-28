@@ -25,7 +25,7 @@ var extendedInterfaceCreator: (any TVInterfaceCreating)? { get set }
 
 - [Creating TVML Elements](../creating-tvml-elements.md)
 
-#### Discussion
+## Discussion
 
 An app can extend or override framework implementation by setting the [`extendedInterfaceCreator`](./extendedinterfacecreator.md) property. An app must provide its own methods to handle custom registered elements.
 

@@ -21,7 +21,7 @@ A default animation instance.
 static let `default`: Animation
 ```
 
-#### Discussion
+## Discussion
 
 The `default` animation is [`spring(response:dampingFraction:blendDuration:)`](./spring%28response,dampingfraction,blendduration%29.md) with:
 

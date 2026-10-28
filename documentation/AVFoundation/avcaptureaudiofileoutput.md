@@ -19,7 +19,7 @@ class AVCaptureAudioFileOutput
 @interface AVCaptureAudioFileOutput : AVCaptureFileOutput
 ```
 
-#### Overview
+## Overview
 
 `AVCaptureAudioFileOutput` implements the complete file recording interface declared by [`AVCaptureFileOutput`](./avcapturefileoutput.md) for writing media data to audio files. In addition, you can configure options specific to the audio file formats, including writing metadata collections to each file and specifying audio encoding options. `AVCaptureAudioFileOutput` does not, however, support [`startRecording(to:recordingDelegate:)`](./avcapturefileoutput/startrecording%28to,recordingdelegate%29.md)—use [`startRecording(to:outputFileType:recordingDelegate:)`](./avcaptureaudiofileoutput/startrecording%28to,outputfiletype,recordingdelegate%29.md) instead.
 

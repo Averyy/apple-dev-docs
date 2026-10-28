@@ -23,7 +23,7 @@ func layerNorm(weight: some BNNSGraph.Builder.OperationParameter<T>, bias: some 
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This function performs layer normalization of `self` with an affine transform using `weight` and `bias`.
 

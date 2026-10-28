@@ -24,7 +24,7 @@ func VTDecompressionSessionInvalidate(_ session: VTDecompressionSession)
 extern void VTDecompressionSessionInvalidate(VTDecompressionSessionRef session);
 ```
 
-#### Discussion
+## Discussion
 
 When you finish with a decompression session you created, call this function to tear it down, and then [`CFRelease`](../CoreFoundation/cfrelease.md) to release your object reference.
 

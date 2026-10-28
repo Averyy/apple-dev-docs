@@ -23,7 +23,7 @@ class var softShrink: MLCActivationLayer { get }
 @property (class, nonatomic, readonly) MLCActivationLayer * softShrinkLayer;
 ```
 
-#### Discussion
+## Discussion
 
 This factory creates an activation descriptor using [`init(type:a:)`](../mlcactivationdescriptor/init%28type,a%29.md), where `type =` [`MLCActivationType.softShrink`](../mlcactivationtype/softshrink.md) and `a = 0.5`, and passes that descriptor to [`init(descriptor:)`](./init%28descriptor%29.md).
 

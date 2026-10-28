@@ -21,7 +21,7 @@ Calculates the discrete double-precision Fourier transform for a vector.
 void vDSP_DFT_ExecuteD(const struct vDSP_DFT_SetupStructD *__Setup, const double *__Ir, const double *__Ii, double *__Or, double *__Oi);
 ```
 
-#### Discussion
+## Discussion
 
 This function uses the following operation for a real transform. That is, when the [`vDSP_DFT_zrop_CreateSetupD`](./vdsp_dft_zrop_createsetupd.md) function provides the setup structure:
 

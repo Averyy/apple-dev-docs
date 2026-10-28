@@ -19,7 +19,7 @@ A Boolean value that indicates whether to determine matches using an item’s ty
 var contentType: Bool?
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property to `true` to give the model the option to match items based on their `CSSearchableItemAttributes/contentType` attribute. If you don’t specify a value for this property, the default value is `false`.
 

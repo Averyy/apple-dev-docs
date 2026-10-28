@@ -24,7 +24,7 @@ enum HKAppleWalkingSteadinessClassification
 enum HKAppleWalkingSteadinessClassification : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Walking Steadiness classifications measures the ability of the user to move with a steady, even gait. You can use the [`HKAppleWalkingSteadinessClassificationForQuantity`](./hkapplewalkingsteadinessclassificationforquantity.md), [`HKAppleWalkingSteadinessMaximumQuantityForClassification`](./hkapplewalkingsteadinessmaximumquantityforclassification.md), and [`HKAppleWalkingSteadinessMinimumQuantityForClassification`](./hkapplewalkingsteadinessminimumquantityforclassification.md) methods to convert between Walking Steadiness scores and the [`HKAppleWalkingSteadinessClassification.low`](./hkapplewalkingsteadinessclassification/low.md), [`HKAppleWalkingSteadinessClassification.veryLow`](./hkapplewalkingsteadinessclassification/verylow.md), or [`HKAppleWalkingSteadinessClassification.ok`](./hkapplewalkingsteadinessclassification/ok.md) classifications.
 

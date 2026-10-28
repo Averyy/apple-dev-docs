@@ -21,7 +21,7 @@ Creates a per-minute update schedule.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`entries(from:mode:)`](./entries%28from,mode%29.md) method to get the sequence of dates.
 

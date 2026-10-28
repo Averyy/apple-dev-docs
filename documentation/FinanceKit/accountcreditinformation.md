@@ -16,7 +16,7 @@ A structure that describes the credit information associated with an account.
 struct AccountCreditInformation
 ```
 
-#### Overview
+## Overview
 
 Credit information includes credit limits, payment dates, and minimum payment dates and amounts for current and upcoming payments.
 

@@ -24,7 +24,7 @@ class func confirmationRequired(with callCapabilityToConfirm: INCallCapability) 
 + (instancetype) confirmationRequiredWithCallCapabilityToConfirm:(INCallCapability) callCapabilityToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCallCapabilityResolutionResult`](../incallcapabilityresolutionresult.md) object.
 

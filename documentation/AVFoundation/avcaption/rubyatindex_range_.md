@@ -18,7 +18,7 @@ Returns the ruby text at the index position.
 - (AVCaptionRuby *) rubyAtIndex:(NSInteger) index range:(NSRange *) outRange;
 ```
 
-#### Return Value
+## Return Value
 
 The ruby text.
 

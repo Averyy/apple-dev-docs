@@ -13,7 +13,7 @@ Create and update a persistent store to cache read-only network data.
 - macOS 14.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 This sample app displays a list that contains a day’s worth of earthquakes, showing their time, location, and size. To help people visualize the list, the app also pinpoints each earthquake on a map. You can select an earthquake in the list to highlight it on the map.
 
@@ -29,7 +29,7 @@ The app uses SwiftData to persistently store the data that it downloads. By cach
 
 > **Note**: To learn how the app manages data presentation with queries and predicates, see [Filtering and sorting persistent data](./filtering-and-sorting-persistent-data.md).
 
-##### Define the app’s data model
+### Define the app’s data model
 
 The app represents the information it needs for its interface by defining a `Quake` class. The class definition includes the [`Model()`](./model%28%29.md) macro to tell the system to store the data persistently using SwiftData:
 
@@ -62,7 +62,7 @@ The model includes the following fields:
 
 The `Quake` model can embed a location instance because the `Location` structure conforms to the [`Codable`](../Swift/codable.md) protocol.
 
-##### Model the server data
+### Model the server data
 
 The app loads data from a U.S. Geological Survey (USGS) server, which provides earthquake data in [GeoJSON](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) format. To interpret this data, the app defines a `GeoFeatureCollection` structure with property names that match the names of relevant JSON properties:
 
@@ -90,7 +90,7 @@ struct GeoFeatureCollection: Decodable {
 
 The structure and its substructures include elements relevant to this app, namely magnitude, time, and location information. They omit many other fields that the server provides because the app doesn’t need them. The structure also conforms to the [`Decodable`](../Swift/decodable.md) protocol so the app can use the structure to decode the downloaded data.
 
-##### Download data from the server
+### Download data from the server
 
 To retrieve data, the app defines a `fetchFeatures()` method that uses a [`URLSession`](../Foundation/urlsession.md) to store the earthquake JSON in a `data` property:
 
@@ -118,7 +118,7 @@ do {
 
 For other examples of decoding JSON data, see [Using JSON with custom types](../Foundation/using-json-with-custom-types.md).
 
-##### Translate server data into model data
+### Translate server data into model data
 
 After retrieving a collection of features, the app interprets each feature as an earthquake. The `Quake` class defines a convenience initializer that creates a new earthquake from a feature instance:
 
@@ -137,7 +137,7 @@ convenience init(from feature: GeoFeatureCollection.Feature) {
 
 This enables the app to translate the data from a format that the server provides to a format that’s convenient for the app. For example, the initializer converts longitude and latitude coordinates that appear as anonymous elements in the feature’s `geometry.coordinates` array into named parameters.
 
-##### Insert or update new earthquake data
+### Insert or update new earthquake data
 
 As the app creates new earthquake instances, it persistently stores any that have a magnitude greater than zero by calling the model context’s [`insert(_:)`](./modelcontext/insert%28_%29.md) method for each one:
 

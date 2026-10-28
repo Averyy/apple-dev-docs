@@ -31,7 +31,7 @@ SKProductDiscountPaymentModePayUpFront
 
 - [Implementing introductory offers in your app](../../implementing-introductory-offers-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 With a pay up front payment mode, users pay the discounted price one time, and receive the product for duration of the discount period.
 

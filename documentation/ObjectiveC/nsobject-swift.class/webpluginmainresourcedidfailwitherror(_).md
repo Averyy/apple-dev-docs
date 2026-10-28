@@ -19,7 +19,7 @@ func webPlugInMainResourceDidFailWithError(_ error: (any Error)!)
 - (void) webPlugInMainResourceDidFailWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This message is invoked when the underlying `NSURLConnection` object for the main resource sends the connection:didFailWithError: message to its delegate.
 

@@ -20,7 +20,7 @@ A view that displays the Apple Pay Later visual merchandising widget.
 @preconcurrency struct PayLaterView<FallbackView> where FallbackView : View
 ```
 
-#### Overview
+## Overview
 
 Use this view to display a widget that allows people to learn more about the Apple Pay Later feature.
 

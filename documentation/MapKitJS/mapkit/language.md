@@ -20,7 +20,7 @@ set language(language: string);
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 The ID of the language you pass as an initialization option, or according to the user’s browser preference. You can change the language property dynamically, which no longer requires that you reload the containing page. If the language choice isn’t available, MapKit JS picks the best match.
 

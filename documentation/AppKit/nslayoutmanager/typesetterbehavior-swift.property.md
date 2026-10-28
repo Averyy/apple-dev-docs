@@ -19,7 +19,7 @@ var typesetterBehavior: NSLayoutManager.TypesetterBehavior { get set }
 @property NSTypesetterBehavior typesetterBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 The typesetter behavior affects glyph spacing and line height.
 

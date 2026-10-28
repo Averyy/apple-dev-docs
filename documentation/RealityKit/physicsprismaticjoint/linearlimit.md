@@ -20,7 +20,7 @@ A limit of the translation between the pins in the direction of the x-axis.
 var linearLimit: ClosedRange<Float>?
 ```
 
-#### Discussion
+## Discussion
 
 If defined, this limits the translation of `pin1` from `pin0`, in the direction of the x-axis of `pin0`. There is no limit if this property is `nil`.
 

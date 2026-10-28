@@ -21,7 +21,7 @@ The optional subdivision of the region used by this locale.
 var subdivision: Locale.Subdivision? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the `sd` key of the Unicode BCP 47 extension.
 

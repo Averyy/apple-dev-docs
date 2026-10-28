@@ -15,7 +15,7 @@ Release any claim to a buffer, sending it back to free lists.
 void buf_brelse(buf_t bp);
 ```
 
-#### Discussion
+## Discussion
 
 buf_brelse() cleans up buffer state and releases a buffer to the free lists. If the buffer is not marked invalid and its pages are dirty (e.g. a delayed write was made), its data will be commited to backing store. If it is marked invalid, its data will be discarded completely. A valid, cacheable buffer will be put on a list and kept in the buffer hash so it can be found again; otherwise, it will be dissociated from its vnode and treated as empty. Which list a valid buffer is placed on depends on the use of buf_markaged(), whether it is metadata, and the B_LOCKED flag. A B_LOCKED buffer will not be available for reuse by other files, though its data may be paged out. Note that buf_brelse() is intended for use with traditionally allocated buffers.
 

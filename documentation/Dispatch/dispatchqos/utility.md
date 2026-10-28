@@ -21,7 +21,7 @@ The quality-of-service class for tasks that the user does not track actively.
 static let utility: DispatchQoS
 ```
 
-#### Discussion
+## Discussion
 
 Utility tasks have a lower priority than default, user-initiated, and user-interactive tasks, but a higher priority than background tasks. Assign this quality-of-service class to tasks that do not prevent the user from continuing to use your app. For example, you might assign this class to long-running tasks whose progress the user does not follow actively.
 

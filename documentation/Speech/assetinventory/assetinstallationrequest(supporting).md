@@ -20,7 +20,7 @@ Returns an installation request object, which is used to initiate the asset down
 static func assetInstallationRequest(supporting modules: [any SpeechModule]) async throws -> AssetInstallationRequest?
 ```
 
-#### Discussion
+## Discussion
 
 If the current status is `.installed`, returns nil, indicating that nothing further needs to be done.
 

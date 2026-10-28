@@ -23,7 +23,7 @@ class QLThumbnailRepresentation
 @interface QLThumbnailRepresentation : NSObject
 ```
 
-#### Overview
+## Overview
 
 QuickLook Thumbnailing is a non-UI framework, so your app doesn’t have to link to either [UIKit](../UIKit/UIKit.md) or [AppKit](../AppKit/AppKit.md). Quicklook Thumbnailing generates a thumbnail as a Core Graphics image object and makes the thumbnail available as the [`cgImage`](./qlthumbnailrepresentation/cgimage.md) property. If an app links to AppKit or UIKit, the thumbnail is available through the [`nsImage`](./qlthumbnailrepresentation/nsimage.md) or [`uiImage`](./qlthumbnailrepresentation/uiimage.md) properties.
 

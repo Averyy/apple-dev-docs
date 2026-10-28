@@ -20,7 +20,7 @@ An object that defines the color of the light an entity emits.
 struct EmissiveColor
 ```
 
-#### Overview
+## Overview
 
 With physically based rendering (PBR), you can give entities in RealityKit the appearance of emitting light. Define the color of the light the entity emits by using this object.
 

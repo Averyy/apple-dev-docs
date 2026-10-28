@@ -25,13 +25,13 @@ var includesPendingChanges: Bool { get set }
 @property (nonatomic) BOOL includesPendingChanges;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) if when the fetch is executed, the fetch will match against currently unsaved changes in the managed object context; otherwise the value is [`false`](../../Swift/false.md). The default value is [`true`](../../Swift/true.md).
 
 If the value is [`false`](../../Swift/false.md), the fetch request doesn’t check unsaved changes and only returns objects that matched the predicate in the persistent store.
 
-##### Special Considerations
+### Special Considerations
 
 A value of [`true`](../../Swift/true.md) is not supported in conjunction with the result type [`dictionaryResultType`](../nsfetchrequestresulttype/dictionaryresulttype.md), including calculation of aggregate results (such as `max` and `min`). For dictionaries, the array returned from the fetch reflects the current state in the persistent store, and does not take into account any pending changes, insertions, or deletions in the context.
 

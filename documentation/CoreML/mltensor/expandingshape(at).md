@@ -27,7 +27,7 @@ func expandingShape(at axes: Int...) -> MLTensor
 func expandingShape(at axes: [Int]) -> MLTensor
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 

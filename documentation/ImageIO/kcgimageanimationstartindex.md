@@ -25,7 +25,7 @@ let kCGImageAnimationStartIndex: CFString
 extern CFStringRef const kCGImageAnimationStartIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CFNumber`](../CoreFoundation/cfnumber.md) that contains an unsigned integer. To override the start index value in the image file, include this property in the options dictionary when animating an image.
 

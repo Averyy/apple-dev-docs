@@ -22,13 +22,13 @@ A slice of an `Array`, `ContiguousArray`, or `ArraySlice` instance.
 struct ArraySlice<Element>
 ```
 
-#### Overview
+## Overview
 
 The `ArraySlice` type makes it fast and efficient for you to perform operations on sections of a larger array. Instead of copying over the elements of a slice to new storage, an `ArraySlice` instance presents a view onto the storage of a larger array. And because `ArraySlice` presents the same interface as `Array`, you can generally perform the same operations on a slice as you could on the original array.
 
 For more information about using arrays, see `Array` and `ContiguousArray`, with which `ArraySlice` shares most properties and methods.
 
-### Slices Are Views onto Arrays
+## Slices Are Views onto Arrays
 
 For example, suppose you have an array holding the number of absences from each class during a session.
 
@@ -63,7 +63,7 @@ if firstHalfSum > secondHalfSum {
 
 > ❗ **Important**: Long-term storage of `ArraySlice` instances is discouraged. A slice holds a reference to the entire storage of a larger array, not just to the portion it presents, even after the original array’s lifetime ends. Long-term storage of a slice may therefore prolong the lifetime of elements that are no longer otherwise accessible, which can appear to be memory and object leakage.
 
-### Slices Maintain Indices
+## Slices Maintain Indices
 
 Unlike `Array` and `ContiguousArray`, the starting index for an `ArraySlice` instance isn’t always zero. Slices maintain the same indices of the larger array for the same elements, so the starting index of a slice depends on how it was created, letting you perform index-based operations on either a full array or a slice.
 

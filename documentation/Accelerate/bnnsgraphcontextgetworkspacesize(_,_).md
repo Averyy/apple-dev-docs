@@ -25,11 +25,11 @@ func BNNSGraphContextGetWorkspaceSize(_ context: bnns_graph_context_t, _ functio
 size_t BNNSGraphContextGetWorkspaceSize(bnns_graph_context_t context, const char *function);
 ```
 
-#### Return Value
+## Return Value
 
 The minimum size, in bytes, for the workspace, or `SIZE_T_MAX` if the query fails.
 
-#### Discussion
+## Discussion
 
 Call this function to obtain the minimum size of the workspace that the BNNSGraphContextExecute function requires. If you call either [`BNNSGraphContextSetBatchSize(_:_:_:)`](./bnnsgraphcontextsetbatchsize%28_,_,_%29.md) or [`BNNSGraphContextSetDynamicShapes(_:_:_:_:)`](./bnnsgraphcontextsetdynamicshapes%28_,_,_,_%29.md), call this function afterwards to obtain the new workspace size.
 

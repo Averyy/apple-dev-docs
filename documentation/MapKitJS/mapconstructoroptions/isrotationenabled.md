@@ -15,7 +15,7 @@ A Boolean value that determines whether the user may rotate the map using the co
 isRotationEnabled?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

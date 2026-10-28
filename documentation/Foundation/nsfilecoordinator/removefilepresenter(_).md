@@ -25,7 +25,7 @@ class func removeFilePresenter(_ filePresenter: any NSFilePresenter)
 + (void) removeFilePresenter:(id<NSFilePresenter>) filePresenter;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to unregister file presenters before those objects are deallocated, even in a garbage-collected application.
 

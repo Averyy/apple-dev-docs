@@ -24,11 +24,11 @@ Creates a file provider using a file path from a configuration reader.
 init(snapshotType: Snapshot.Type = Snapshot.self, parsingOptions: Snapshot.ParsingOptions = .default, config: ConfigReader) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer reads the file path from the provided configuration reader and creates a snapshot from that file.
 
-#### Configuration keys
+## Configuration keys
 
 - `filePath` (string, required): The path to the configuration file to read.
 - `allowMissing` (bool, optional, default: false): A flag controlling how the provider handles a missing file. When `false` (the default), if the file is missing or malformed, throws an error. When `true`, if the file is missing, treats it as empty. Malformed files still throw an error.

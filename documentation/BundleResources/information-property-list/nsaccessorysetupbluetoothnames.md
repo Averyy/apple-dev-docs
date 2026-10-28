@@ -15,7 +15,7 @@ An array of strings that represent the Bluetooth device names or substrings for 
 - **Name**: `NSAccessorySetupBluetoothNames` (AccessorySetupKit - Bluetooth Names)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 Each entry is a full or partial name which the accessory advertises and helps AccessorySetupKit identify it.
 

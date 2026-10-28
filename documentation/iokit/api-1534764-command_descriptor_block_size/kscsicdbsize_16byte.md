@@ -14,7 +14,7 @@
 kSCSICDBSize_16Byte = 16
 ```
 
-#### Discussion
+## Discussion
 
 Use this for a 16-byte CDB.
 

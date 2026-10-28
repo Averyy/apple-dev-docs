@@ -20,7 +20,7 @@ Copies multiple offsets within a source placement sparse buffer to a destination
 - (void) copyBufferMappingsFromBuffer:(id<MTLBuffer>) sourceBuffer toBuffer:(id<MTLBuffer>) destinationBuffer operations:(const MTL4CopySparseBufferMappingOperation[]) operations count:(NSUInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring the source destination sparse buffers have the same `placementSparsePageSize` when you create them via [`makeBuffer(length:options:placementSparsePageSize:)`](../mtldevice/makebuffer%28length,options,placementsparsepagesize%29.md).
 

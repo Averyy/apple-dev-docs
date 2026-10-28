@@ -15,11 +15,11 @@ Allocates and initializes an instance of the Boolean control class.
 static OSSharedPtr<IOUserAudioBooleanControl> Create(IOUserAudioDriver *in_driver, bool in_is_settable, bool in_control_value, IOUserAudioObjectPropertyElement in_control_element, IOUserAudioObjectPropertyScope in_control_scope, IOUserAudioClassID in_control_class_id);
 ```
 
-#### Return Value
+## Return Value
 
 A poiner to an [`IOUserAudioBooleanControl`](../iouseraudiobooleancontrol.md), if allocation and initialization succeeded.
 
-#### Discussion
+## Discussion
 
 If you subclass [`IOUserAudioBooleanControl`](../iouseraudiobooleancontrol.md) to override this class’ behavior, don’t use [`Create`](./create.md) to allocate and initialize the custom subclass.
 

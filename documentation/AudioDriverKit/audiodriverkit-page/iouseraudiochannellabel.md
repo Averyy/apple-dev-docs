@@ -15,7 +15,7 @@ Constants to set the preferred channel layout on an audio device.
 enum IOUserAudioChannelLabel : uint32_t;
 ```
 
-#### Discussion
+## Discussion
 
 These channel labels attempt to list all labels in common use. Due to the ambiguities in channel labeling by various groups, there may be some overlap or duplication in the labels below. Use the label which most clearly describes what you mean.
 

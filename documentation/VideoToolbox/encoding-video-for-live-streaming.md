@@ -10,11 +10,11 @@ Configure a compression session to encode video for live streaming.
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to configure and use a `VTCompressionSession` object to encode video for live streaming.
 
-##### Create a compression session
+### Create a compression session
 
 Create a `VTCompressionSession` object and specify the required dimensions and `codecType`. Optionally, specify `sourceImageBufferAttributes` to provide a description of the source pixel buffers.
 
@@ -38,7 +38,7 @@ guard err == noErr, let compressionSession = compressionSessionOut else {
 }
 ```
 
-##### Configure the compression session
+### Configure the compression session
 
 Get the suggested encoder settings dictionary for the encode preset.
 
@@ -232,13 +232,13 @@ private func configureVTCompressionSession(session: VTCompressionSession, option
 }
 ```
 
-##### Encode video frames
+### Encode video frames
 
 Call `VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:infoFlagsOut:outputHandler:)` and submit each uncompressed frame to the `VTCompressionSession` object for encoding. The object calls the `outputHandler` block for each encoded frame. Check whether a frame drop or error occurs after frame encoding.
 
 Call `VTCompressionSessionCompleteFrames(_:untilPresentationTimeStamp:)` to indicate to the `VTCompressionSession` object that the app submitted all uncompressed video frames for encoding.
 
-##### Perform compression and encoding
+### Perform compression and encoding
 
 You can use the movie file `/Assets/video.m4v` to test this app. Copy the file to your desktop or other working directory, and then open Terminal to that directory and run the following command, where `xxx` is a unique string that Xcode generates. Use autocomplete before the `xxx` component to complete the path for that directory.
 

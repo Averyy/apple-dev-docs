@@ -17,11 +17,11 @@ Grants the specified capability to the process.
 func grantCapability(_ capability: ProcessCapability) throws -> ProcessCapability.Grant
 ```
 
-#### Return Value
+## Return Value
 
 A [`ProcessCapability.Grant`](../processcapability/grant.md) object that represents the granted capability.
 
-#### Discussion
+## Discussion
 
 When the process no longer needs the capability, call [`invalidate()`](../processcapability/grant/invalidate%28%29.md) on the returned object.
 

@@ -24,7 +24,7 @@ var dataCodewordCount: Int { get }
 @property (readonly) NSInteger dataCodewordCount;
 ```
 
-#### Discussion
+## Discussion
 
 Used to determine the level of error correction in conjunction with the number of data layers. Valid values are 1 to 2048. Compact symbols can have up to 64 message codewords.
 

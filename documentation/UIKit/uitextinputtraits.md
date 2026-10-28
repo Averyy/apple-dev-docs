@@ -28,7 +28,7 @@ protocol UITextInputTraits : NSObjectProtocol
 
 - [Configuring a custom keyboard interface](./configuring-a-custom-keyboard-interface.md)
 
-#### Overview
+## Overview
 
 For a custom text object to support keyboard input, it must adopt this protocol to interact properly with the text-input management system. The [`UITextField`](./uitextfield.md) and [`UITextView`](./uitextview.md) classes automatically support this protocol.
 

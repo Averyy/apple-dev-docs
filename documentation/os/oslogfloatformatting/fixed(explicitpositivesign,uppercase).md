@@ -21,7 +21,7 @@ Creates a custom fixed-point format with a system-determined precision value.
 static func fixed(explicitPositiveSign: Bool = false, uppercase: Bool = false) -> OSLogFloatFormatting
 ```
 
-#### Return Value
+## Return Value
 
 A custom fixed-point format for floating-point numbers.
 

@@ -24,7 +24,7 @@ struct AudioFileRegion
 struct AudioFileRegion;
 ```
 
-#### Overview
+## Overview
 
 Typically, a region consists of at least two markers designating the beginning and end of the segment. Other markers might define additional meta information such as sync point.
 

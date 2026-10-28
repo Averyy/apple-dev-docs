@@ -19,7 +19,7 @@ var artist: String? { get }
 @property (nonatomic, readonly, nullable) NSString * artist;
 ```
 
-#### Discussion
+## Discussion
 
 If you do not set the artist name directly at initialization time, the asset object obtains the information from the audio file’s metadata.
 

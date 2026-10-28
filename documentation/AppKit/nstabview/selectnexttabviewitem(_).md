@@ -19,7 +19,7 @@ func selectNextTabViewItem(_ sender: Any?)
 - (void) selectNextTabViewItem:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the currently visible item is the last item in the sequence, this method does nothing, and the last pane remains displayed.
 

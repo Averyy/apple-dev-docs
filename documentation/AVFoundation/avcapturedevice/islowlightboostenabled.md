@@ -22,7 +22,7 @@ var isLowLightBoostEnabled: Bool { get }
 @property (nonatomic, readonly, getter=isLowLightBoostEnabled) BOOL lowLightBoostEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property indicates whether the capture device currently enhancing images to improve quality due to low light conditions. When this property is [`true`](../../Swift/true.md), the capture device has switched into a special mode in which it perceives more light in images.
 

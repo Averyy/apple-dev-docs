@@ -29,7 +29,7 @@ func beginCommandBuffer(allocator: any MTL4CommandAllocator)
 
 - [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
-#### Discussion
+## Discussion
 
 Attaches the command buffer to the specified [`MTL4CommandAllocator`](../mtl4commandallocator.md) and declares that the application is ready to encode commands into the command buffer.
 

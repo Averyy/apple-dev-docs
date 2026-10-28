@@ -19,7 +19,7 @@ static let editable: NSBindingName
 extern NSBindingName NSEditableBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

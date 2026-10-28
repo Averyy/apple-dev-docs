@@ -14,7 +14,7 @@ Build interactive experiences with Foundation Models and Private Cloud Compute u
 - visionOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 Picking up a new craft can be time-consuming, and the Origami app eases you into the art of folding paper into intricate shapes using an easy-to-follow tutorial as your guide. But it’s not just about folding paper; you can use Origami to learn any craft you can make from supplies you have on hand, like crocheting, knitting, or sewing.
 
@@ -26,7 +26,7 @@ Those two interactions rely on multimodal prompting: *Brainstorm* turns photos o
 
 Brainstorm and Coach use [`LanguageModelSession`](./languagemodelsession.md) to accept images and text. You attach a [`CGImage`](../CoreGraphics/cgimage.md) to a [`Prompt`](./prompt.md), add the text that frames it, and the session returns a [`Generable`](./generable.md) value you can render. The picture isn’t a side channel that feeds a separate vision step. It sits in the prompt as a peer to the text and the same model processes the two together.
 
-#### Configure the sample code project
+## Configure the sample code project
 
 For best performance, run Origami on device to experience Apple Intelligence and Private Cloud Compute (PCC). You need a device that supports Apple Intelligence, running iOS 27, iPadOS 27, or macOS 27 or later.
 
@@ -39,7 +39,7 @@ By default, Origami runs every mode on the on-device [`SystemLanguageModel`](./s
 
 Origami works with images you choose from your Photos library. The project provides a folder called `Sample Photos` that contains images you can add to your library to use with the app.
 
-#### Configure a session for each task
+## Configure a session for each task
 
 Origami runs a single long-lived [`LanguageModelSession`](./languagemodelsession.md) and switches its configuration based on what the app is doing. The sample defines three modes:
 
@@ -132,7 +132,7 @@ The full sample applies the same on-device branching to `.brainstorm`, dropping 
 
 A dynamic profile keeps mode-specific configuration in one place and out of the code that sends prompts. For more information, see [Composing dynamic sessions with instructions and profiles](./composing-dynamic-sessions-with-instructions-and-profiles.md).
 
-#### Adopt Private Cloud Compute
+## Adopt Private Cloud Compute
 
 Origami runs every mode on the on-device [`SystemLanguageModel`](./systemlanguagemodel.md) by default, so the project builds and runs without additional configuration. To route Brainstorm, the tutorial generator, and Coach through Private Cloud Compute (PCC) instead, swap the `serverModel` initializer in `OrchestratorProfile` to [`PrivateCloudComputeLanguageModel`](./privatecloudcomputelanguagemodel.md) and add the managed PCC entitlement to your build:
 
@@ -144,7 +144,7 @@ When `serverModel` is the PCC model, `.tutorial` activates `.reasoningLevel(.dee
 
 For PCC eligibility and details on requesting access to the managed entitlement, see [Adding server-side intelligence with Private Cloud Compute](./adding-server-side-intelligence-with-private-cloud-compute.md).
 
-#### Attach photos to a prompt
+## Attach photos to a prompt
 
 Origami uses a small pattern throughout: wrap a `UIImage` or `NSImage` in an [`Attachment`](./attachment.md), give it a label, and place it in a [`Prompt`](./prompt.md). `Photo.toPrompt()` does exactly that and returns a prompt that contains a single image attachment:
 
@@ -200,7 +200,7 @@ extension LanguageModelSession {
 
 The text and images go in together as one prompt, in one call. The framework accepts a variety of image types, handles image orientation, and provides tools for reading text and barcodes found in a picture. For more information, see [Analyzing images with multimodal prompting](./analyzing-images-with-multimodal-prompting.md).
 
-#### Shape the response into Swift types
+## Shape the response into Swift types
 
 A multimodal prompt’s response comes back as a typed value the app renders directly. Origami marks its result types with `@Generable` and annotates fields with `@Guide` to steer the model. The analysis types tie each result back to the photo that produced it through an [`ImageReference`](./imagereference.md):
 
@@ -242,7 +242,7 @@ enum ImageCategory: String, Codable {
 
 Describing the output as types lets the model fill in a structure instead of providing freeform text. For more information, see [Generating Swift data structures with guided generation](./generating-swift-data-structures-with-guided-generation.md).
 
-#### Generate ideas from inspiration photos
+## Generate ideas from inspiration photos
 
 Brainstorm runs two passes on the same session. The first pass is `streamProjectImageAnalysis`, which classifies each photo into the session’s context and streams back an `ImageAnalysisList`. Because that call places the photos into the session’s transcript, the model has already seen them by the time the second pass runs. The second pass asks for ideas with a short, text-only prompt:
 
@@ -256,7 +256,7 @@ try await brainstorm.processStream(stream)
 
 The phrase “with this” refers to images the session already holds, so the idea prompt carries no attachments of its own. Splitting the work into an analysis pass and an idea pass keeps each prompt focused, and the session’s memory of the photos ties the two together.
 
-#### Coach progress from a photo
+## Coach progress from a photo
 
 In Origami, Coach is built from two pieces working together:
 
@@ -314,7 +314,7 @@ The `isCurrentStepComplete` field only gates step advancement; the model still p
 
 Because the photos come from people, the sample designs for refusals and guardrail violations so the app responds gracefully when the model declines. For more information, see [Improving the safety of generative model output](./improving-the-safety-of-generative-model-output.md).
 
-#### Stream partial results
+## Stream partial results
 
 The same [`LanguageModelSession.ResponseStream`](./languagemodelsession/responsestream.md) API supports different presentation patterns. Brainstorm shows ideas progressively as they finalize. Its `processStream` walks the [`PartiallyGenerated`](./generable/partiallygenerated.md) value and advances an index, filling in each idea as more text streams in:
 
@@ -357,7 +357,7 @@ func processStream(_ stream: LanguageModelSession.ResponseStream<CoachFeedback>)
 
 Animate responses when partial output reads well, and buffer them when it doesn’t. Streaming consumes context as the response grows, so a long-running session tracks its budget across turns. For more information, see [Managing the context window](./managing-the-context-window.md).
 
-#### Go further with Origami
+## Go further with Origami
 
 The same building blocks reach beyond Brainstorm and Coach. A separate, on-device session backed by [`SystemLanguageModel`](./systemlanguagemodel.md) powers a tap-to-explain terminology feature. After the app generates a tutorial, it makes a one-shot `respond(to:generating:)` call to pull out the terms worth explaining along the way. Origami uses the same prompt-and-decode API described earlier, just on a smaller model.
 

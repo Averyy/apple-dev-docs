@@ -20,11 +20,11 @@ Creates a new column of integers by converting the elements of another column.
 init(ints: MLUntypedColumn)
 ```
 
-#### Return Value
+## Return Value
 
 A new untyped column of integers; otherwise an invalid column if any element of the given column cannot be converted to [`Int`](../../Swift/int.md).
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a column of integers from another column. As an example, to create a column with this initializer, first start with a column that is convertible to integers.
 

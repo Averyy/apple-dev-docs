@@ -17,11 +17,11 @@ Returns the character in the receiver’s title that appears underlined for use 
 - (NSString *) mnemonic;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the mnemonic character, or an empty string if no mnemonic character is set.
 
-#### Discussion
+## Discussion
 
 Mnemonics are not supported in macOS
 

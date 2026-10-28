@@ -19,7 +19,7 @@ A dictionary that maps searchable attributes to the items that contain them.
 case groupedItems([SearchableItemAttribute : [SearchableItem]])
 ```
 
-#### Discussion
+## Discussion
 
 The keys correspond to the Spotlight attributes the model can use during queries. The value of each key is the array of searchable items that contain the key.
 

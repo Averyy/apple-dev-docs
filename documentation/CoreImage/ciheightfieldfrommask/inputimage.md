@@ -25,7 +25,7 @@ var inputImage: CIImage? { get set }
 @property (nonatomic, retain, nullable) CIImage * inputImage;
 ```
 
-#### Discussion
+## Discussion
 
 The white values of the input image define those pixels that are inside the height field while the black values define those pixels that are outside. The field varies smoothly and continuously inside the mask, reaching the value 0 at the edge of the mask.
 

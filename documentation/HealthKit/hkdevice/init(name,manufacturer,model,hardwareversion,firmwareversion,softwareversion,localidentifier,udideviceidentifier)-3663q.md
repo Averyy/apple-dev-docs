@@ -24,11 +24,11 @@ init(name: String?, manufacturer: String?, model: String?, hardwareVersion: Stri
 - (instancetype) initWithName:(NSString *) name manufacturer:(NSString *) manufacturer model:(NSString *) model hardwareVersion:(NSString *) hardwareVersion firmwareVersion:(NSString *) firmwareVersion softwareVersion:(NSString *) softwareVersion localIdentifier:(NSString *) localIdentifier UDIDeviceIdentifier:(NSString *) UDIDeviceIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized device object that encapsulates the provided data.
 
-#### Discussion
+## Discussion
 
 Use this method to create a device object representing an arbitrary piece of hardware. In general, the values for these parameters should match the information broadcasted by the hardware.
 

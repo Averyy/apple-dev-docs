@@ -25,7 +25,7 @@ static let volumeIsEncryptedKey: URLResourceKey
 extern NSURLResourceKey const NSURLVolumeIsEncryptedKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a Boolean `NSNumber` object.
 

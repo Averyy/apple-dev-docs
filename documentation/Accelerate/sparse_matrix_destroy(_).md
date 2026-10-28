@@ -25,11 +25,11 @@ func sparse_matrix_destroy(_ A: UnsafeMutableRawPointer!) -> sparse_status
 sparse_status sparse_matrix_destroy(void *A);
 ```
 
-#### Return Value
+## Return Value
 
 [`SPARSE_SUCCESS`](./sparse_success.md) and all memory associated with the matrix object is released.
 
-#### Discussion
+## Discussion
 
 Upon return the matrix, `A`, is no longer valid and any use of the object is undefined.
 

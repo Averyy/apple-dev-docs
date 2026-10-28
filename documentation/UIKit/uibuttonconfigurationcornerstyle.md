@@ -19,7 +19,7 @@ Settings that determine the appearance of the background corner radius.
 enum UIButtonConfigurationCornerStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use this property to control how the button uses the [`cornerRadius`](./uibackgroundconfiguration-c.class/cornerradius.md) property of the button’s [`background`](./uibuttonconfiguration/background.md).
 

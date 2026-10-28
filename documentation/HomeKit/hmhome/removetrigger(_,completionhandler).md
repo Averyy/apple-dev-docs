@@ -26,7 +26,7 @@ func removeTrigger(_ trigger: HMTrigger) async throws
 - (void) removeTrigger:(HMTrigger *) trigger completionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 If `trigger` is enabled, removing it from the home disables it.
 

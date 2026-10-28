@@ -21,7 +21,7 @@ Creates a tag containing a video layer ID.
 static func videoLayerID(_ value: Int64) -> CMTypedTag<Int64>
 ```
 
-#### Return Value
+## Return Value
 
 A new typed tag containing a video layer ID of `value`.
 

@@ -17,7 +17,7 @@ The most likely vocabulary tokens in descending log-probability order.
 let topLogProbabilities: [GenerateTokenLogProbability]
 ```
 
-#### Discussion
+## Discussion
 
 This can include [`chosen`](./chosen.md) when the selected token is among the requested top candidates.
 

@@ -13,7 +13,7 @@
 static const NSDatePickerStyle NSTextFieldDatePickerStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a text field interface.
 

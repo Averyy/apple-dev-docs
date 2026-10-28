@@ -16,7 +16,7 @@ Create a listener object for receiving PHY packets
 IOFireWireLibPHYPacketListenerRef (*CreatePHYPacketListener)(IOFireWireLibDeviceRef self, UInt32 queueCount, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code
 

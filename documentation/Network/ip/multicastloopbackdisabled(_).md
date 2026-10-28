@@ -21,7 +21,7 @@ Specify if multicast packets should be looped back for local delivery.
 func multicastLoopbackDisabled(_ disableMulticastLoopback: Bool) -> IP
 ```
 
-#### Discussion
+## Discussion
 
 By default, a multicast packet sent to a group to which the sending host itself belongs will be looped back for local delivery. `disableMulticastLoopback` disables this behavior and, if set, multicast packets will not be looped back to the sender.
 

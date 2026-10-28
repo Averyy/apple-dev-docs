@@ -21,11 +21,11 @@ func mapParameters<Result>(map: @escaping (MLXArray) -> Result? = { $0 }, isLeaf
 
 - [Creating Modules](../custom-layers.md)
 
-#### Return Value
+## Return Value
 
 `NestedDictionary` of mapped results
 
-#### Discussion
+## Discussion
 
 For example:
 
@@ -45,7 +45,7 @@ filterMap(
     isLeaf: isLeaf)
 ```
 
-##### See Also
+### See Also
 
 - [Module Filter and Map Functions](../module-filters.md)
 - [`mapParameters(map:)`](./mapparameters%28map%29.md)

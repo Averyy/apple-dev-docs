@@ -21,7 +21,7 @@ A Boolean value that indicates whether the app can successfully open the configu
 static var canOpen: Bool { get async }
 ```
 
-#### Discussion
+## Discussion
 
 Use this method if your app configures the [`SKExternalPurchaseLink`](../../BundleResources/information-property-list/skexternalpurchaselink.md) property list key.
 

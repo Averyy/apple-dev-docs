@@ -19,7 +19,7 @@ func textSelection(for selectionGranularity: NSTextSelection.Granularity, enclos
 - (NSTextSelection *) textSelectionForSelectionGranularity:(NSTextSelectionGranularity) selectionGranularity enclosingPoint:(CGPoint) point inContainerAtLocation:(id<NSTextLocation>) location;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSTextSelection`, or `nil` if the text selection is not found.
 

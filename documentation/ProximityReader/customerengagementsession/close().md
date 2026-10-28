@@ -21,7 +21,7 @@ final func close() async throws
 
 - [Adding support for Tap to Share to your app](../adding-support-for-tap-to-share-to-your-app.md)
 
-#### Discussion
+## Discussion
 
 When this device disconnects, any paired device that is still connected receives a notification to close its side of the session.
 

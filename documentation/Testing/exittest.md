@@ -16,7 +16,7 @@ A type describing an exit test.
 struct ExitTest
 ```
 
-#### Overview
+## Overview
 
 Instances of this type describe exit tests you create using the [`expect(processExitsWith:observing:_:sourceLocation:performing:)`](./expect%28processexitswith,observing,_,sourcelocation,performing%29.md) or [`require(processExitsWith:observing:_:sourceLocation:performing:)`](./require%28processexitswith,observing,_,sourcelocation,performing%29.md) macro. You don’t usually need to interact directly with an instance of this type.
 

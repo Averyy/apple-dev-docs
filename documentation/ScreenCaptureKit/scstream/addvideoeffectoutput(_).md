@@ -19,7 +19,7 @@ func addVideoEffectOutput(_ videoEffectOutput: SCVideoEffectOutput) throws
 - (BOOL) addVideoEffectOutput:(SCVideoEffectOutput *) videoEffectOutput error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Add a SCVideoEffectOutput to the SCStream to start camera video effect. Only one video effect output can be active per stream.
 

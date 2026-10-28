@@ -19,11 +19,11 @@ func imageData() -> Data!
 - (NSData *) imageData;
 ```
 
-#### Return Value
+## Return Value
 
 Data containing a picture of this person
 
-#### Discussion
+## Discussion
 
 This method searches only the local file system and operates synchronously. To perform an asynchronous search or to search over a network, use [`beginLoadingImageData(for:)`](./beginloadingimagedata%28for%29.md).
 

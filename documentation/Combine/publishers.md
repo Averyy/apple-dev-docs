@@ -21,7 +21,7 @@ A namespace for types that serve as publishers.
 enum Publishers
 ```
 
-#### Overview
+## Overview
 
 The various operators defined as extensions on [`Publisher`](./publisher.md) implement their functionality as classes or structures that extend this enumeration. For example, the `contains(_:)` operator returns a `Publishers.Contains` instance.
 

@@ -19,7 +19,7 @@ The models aren’t available on the user’s device.
 case modelNotReady
 ```
 
-#### Discussion
+## Discussion
 
 Models are downloaded automatically based on factors like network status, battery level, and system load.
 

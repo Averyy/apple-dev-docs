@@ -17,11 +17,11 @@ Performs a build of all, or a subset, of products and targets in a package.
 func build(_ subset: BuildSubset, parameters: BuildParameters) throws -> BuildResult
 ```
 
-#### Return Value
+## Return Value
 
 The build results.
 
-#### Discussion
+## Discussion
 
 Return any errors encountered during the build in the build result, as well as the log of the build commands that it runs. This method throws an error if the input parameters are invalid, or in case the build can’t be started.
 

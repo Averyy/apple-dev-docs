@@ -30,7 +30,7 @@ func commit()
 - [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
 - [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
-#### Discussion
+## Discussion
 
 The [`commit()`](./commit%28%29.md) method sends the command buffer to the [`MTLCommandQueue`](../mtlcommandqueue.md) instance that owns it, which then schedules it to run on the GPU. If your app calls [`commit()`](./commit%28%29.md) for a command buffer that isn’t enqueued, the method effectively calls [`enqueue()`](./enqueue%28%29.md) for you.
 

@@ -16,7 +16,7 @@ A migration request that uses the default supported options.
 typealias MigrationRequest = MigrationRequestWithOptions<MigrationDefaultSupportedOptions>
 ```
 
-#### Discussion
+## Discussion
 
 This type alias is a [`MigrationRequestWithOptions`](./migrationrequestwithoptions.md) with the `OptionsType` generic constraint [`MigrationDefaultSupportedOptions`](./migrationdefaultsupportedoptions.md). Use this type of request for migrations that don’t need to incorporate any options specific to the counterpart operating system.
 

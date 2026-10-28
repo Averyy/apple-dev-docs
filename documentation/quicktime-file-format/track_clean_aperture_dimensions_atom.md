@@ -6,7 +6,7 @@
 
 An atom that carries the pixel dimensions of the track’s clean aperture.
 
-#### Overview
+## Overview
 
 The type of the track clean aperture dimensions atom is `‘clef’`.
 

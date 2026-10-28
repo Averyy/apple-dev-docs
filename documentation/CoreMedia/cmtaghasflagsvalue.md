@@ -21,11 +21,11 @@ Whether a given tag contains a value for a 64-bit flag field.
 extern Boolean CMTagHasFlagsValue(CMTag tag);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the tag represents a flag field.
 
-#### Discussion
+## Discussion
 
 Prefer using this method over directly comparing a tag’s data type to [`kCMTagDataType_Flags`](./cmtagdatatype/kcmtagdatatype_flags.md).
 

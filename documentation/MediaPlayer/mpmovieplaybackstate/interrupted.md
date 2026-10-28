@@ -21,7 +21,7 @@ case interrupted
 MPMoviePlaybackStateInterrupted
 ```
 
-#### Discussion
+## Discussion
 
 Playback is temporarily interrupted, perhaps because the buffer ran out of content.
 

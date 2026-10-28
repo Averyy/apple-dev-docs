@@ -23,11 +23,11 @@ func setKeepAliveTimeout(_ timeout: TimeInterval, handler keepAliveHandler: (() 
 - (BOOL) setKeepAliveTimeout:(NSTimeInterval) timeout handler:(void (^)()) keepAliveHandler;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the handler was installed or [`false`](../../Swift/false.md) if it was not.
 
-#### Discussion
+## Discussion
 
 In iOS 8 and later, voice-over-IP (VoIP) apps register for [`registerForRemoteNotifications()`](./registerforremotenotifications%28%29.md) remote notifications instead of using this method. Using remote notifications eliminates the need for a timeout handler to check in with the VoIP service. Instead, when a calls arrives for the user, the VoIP service sends a VoIP remote notification to the user’s device. Upon receiving this notification, the device launches or wakes the app as needed so that it can handle the incoming call.
 

@@ -6,11 +6,11 @@
 
 Implement a custom operation that uses Metal kernels to accelerate neural-network training performance.
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC22 session [10063: Accelerate machine learning with Metal](https://developer.apple.com/wwdc22/10063/).
 
-##### Configure the sample code
+### Configure the sample code
 
 1. Follow the instructions in [Getting started with tensorflow-metal](https://developer.apple.com/metal/tensorflow-plugin/).
 2. Install ffmpeg using `brew`.

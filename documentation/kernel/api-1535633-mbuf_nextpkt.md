@@ -13,11 +13,11 @@
 mbuf_t mbuf_nextpkt(const mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The nextpkt.
 
-#### Discussion
+## Discussion
 
 Gets the next packet from the mbuf.
 

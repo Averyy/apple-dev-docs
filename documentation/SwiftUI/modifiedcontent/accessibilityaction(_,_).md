@@ -24,7 +24,7 @@ func accessibilityAction(_ actionKind: AccessibilityActionKind = .default, _ han
 
 Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
-#### Discussion
+## Discussion
 
 For example, this is how a `.default` action to compose a new email could be added to a view.
 

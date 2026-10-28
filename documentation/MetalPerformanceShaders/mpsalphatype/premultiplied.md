@@ -24,7 +24,7 @@ case premultiplied
 MPSAlphaTypePremultiplied
 ```
 
-#### Discussion
+## Discussion
 
 The image uses premultiplied alpha. Alpha is not guaranteed to be 1.
 

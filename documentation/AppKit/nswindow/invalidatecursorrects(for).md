@@ -19,7 +19,7 @@ func invalidateCursorRects(for view: NSView)
 - (void) invalidateCursorRectsForView:(NSView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 If the window is current the key window, window resets the cursor rectangles immediately.
 

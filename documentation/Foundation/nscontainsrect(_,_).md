@@ -20,7 +20,7 @@ func NSContainsRect(_ aRect: NSRect, _ bRect: NSRect) -> Bool
 extern BOOL NSContainsRect(NSRect aRect, NSRect bRect);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `aRect` completely encloses `bRect`. For this condition to be true, `bRect` cannot be empty, and must not extend beyond `aRect` in any direction.
 

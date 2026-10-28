@@ -19,7 +19,7 @@ An async sequence of video frames.
 struct CameraAsyncBuffers
 ```
 
-#### Overview
+## Overview
 
 This sequence allows iterating through the camera frames. Only one iterator can be created per sequence.
 

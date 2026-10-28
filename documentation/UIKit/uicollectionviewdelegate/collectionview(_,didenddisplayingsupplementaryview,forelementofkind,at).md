@@ -23,7 +23,7 @@ optional func collectionView(_ collectionView: UICollectionView, didEndDisplayin
 - (void) collectionView:(UICollectionView *) collectionView didEndDisplayingSupplementaryView:(UICollectionReusableView *) view forElementOfKind:(NSString *) elementKind atIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to detect when a supplementary view is removed from a collection view, as opposed to monitoring the view itself to see when it appears or disappears.
 

@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, contextMenuConf
 - (UITargetedPreview *) collectionView:(UICollectionView *) collectionView contextMenuConfiguration:(UIContextMenuConfiguration *) configuration dismissalPreviewForItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A targeted preview object corresponding to the item at the index path to use during the menu’s dismissal animation.
 
-#### Discussion
+## Discussion
 
 The system calls this method when a context menu dismisses from the collection view. Implement this method to override the default dismissal preview that the collection view generates for the item at `indexPath`.
 

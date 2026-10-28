@@ -28,11 +28,11 @@ extern OSStatus AudioUnitReset(AudioUnit inUnit, AudioUnitScope inScope, AudioUn
 
 - [Migrating Your Audio Unit Host to the AUv3 API](./migrating-your-audio-unit-host-to-the-auv3-api.md)
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 This function resets the render state of an audio unit. For example, with a delay or reverb type of audio unit, it clears all of the delay lines maintained within the audio unit. Typically, you call this function when an audio unit was previously rendering and was taken out of the render chain (for example, if the track it is in gets muted) and is now being added back in (for example, unmuted). Your application should reset the audio unit before adding it back to the render chain so that it does not produce audio from its delay lines that is no longer valid.
 

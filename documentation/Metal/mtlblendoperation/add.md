@@ -24,7 +24,7 @@ case add
 MTLBlendOperationAdd
 ```
 
-#### Discussion
+## Discussion
 
 `RGB = Source.rgb * SBF + Dest.rgb * DBF`
 

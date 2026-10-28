@@ -16,7 +16,7 @@ The URL of the Privacy Pass issuer.
 - **Name**: `PrivacyPassIssuerURL`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This field is required for Live Caller ID extensions and optional for URL filter extensions.
 

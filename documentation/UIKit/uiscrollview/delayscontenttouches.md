@@ -23,7 +23,7 @@ var delaysContentTouches: Bool { get set }
 @property (nonatomic) BOOL delaysContentTouches;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the scroll view delays handling the touch-down gesture until it can determine if scrolling is the intent. If the value is [`false`](../../Swift/false.md) , the scroll view immediately calls [`touchesShouldBegin(_:with:in:)`](./touchesshouldbegin%28_,with,in%29.md). The default value is [`true`](../../Swift/true.md).
 

@@ -18,7 +18,7 @@ Creates a [`StringUserIdentity`](../stringuseridentity.md) with the given string
 static func string(_ value: String) -> StringUserIdentity
 ```
 
-#### Return Value
+## Return Value
 
 A `StringUserIdentity` object with the given string value.
 

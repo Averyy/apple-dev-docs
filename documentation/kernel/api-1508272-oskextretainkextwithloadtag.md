@@ -15,11 +15,11 @@ Retain a loaded kext based on its load tag, and enable autounload for that kext.
 OSReturn OSKextRetainKextWithLoadTag(OSKextLoadTag loadTag);
 ```
 
-#### Return Value
+## Return Value
 
 `kOSReturnSuccess` if the kext was retained. `kOSKextReturnNotFound` if the kext was not found. `kOSKextReturnInvalidArgument` if `loadTag` is `kOSKextInvalidLoadTag`.
 
-#### Discussion
+## Discussion
 
 Retaining a kext prevents it from being unloaded, either explicitly or automatically, and enables autounload for the kext. When autounload is enabled, then shortly after the kext's last reference is dropped, it will be unloaded if there are no outstanding references to it and there are no instances of its Libkern C++ subclasses (if any).
 

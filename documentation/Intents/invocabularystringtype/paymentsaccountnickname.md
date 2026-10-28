@@ -24,7 +24,7 @@ case paymentsAccountNickname
 INVocabularyStringTypePaymentsAccountNickname
 ```
 
-#### Discussion
+## Discussion
 
 Siri puts the nickname in the `nickname` property of the [`INPaymentAccount`](../inpaymentaccount.md) and [`INBillPayee`](../inbillpayee.md) objects.
 

@@ -25,7 +25,7 @@ case permissionFailure
 CKErrorPermissionFailure
 ```
 
-#### Discussion
+## Discussion
 
 This error typically occurs in the public database in one of these circumstances:
 

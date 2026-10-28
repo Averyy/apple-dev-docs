@@ -15,7 +15,7 @@ An input source that a streaming session can request to send.
 enum InputCapability
 ```
 
-#### Overview
+## Overview
 
 A streaming session declares the input capabilities it needs via [`requestedInputCapabilities`](./requestedinputcapabilities.md).
 

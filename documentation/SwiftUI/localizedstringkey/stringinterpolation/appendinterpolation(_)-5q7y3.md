@@ -1,0 +1,80 @@
+# appendInterpolation(_:)
+
+**Framework**: SwiftUI  
+**Kind**: method  
+**Role**: Instance Method
+
+Appends a date range to a string interpolation.
+
+**Availability**:
+- iOS 14.0+
+- iPadOS 14.0+
+- Mac Catalyst 14.0+
+- macOS 11.0+
+- tvOS 14.0+
+- visionOS 1.0+
+- watchOS 7.0+
+
+## Declaration
+
+```swift
+mutating func appendInterpolation(_ dates: ClosedRange<Date>)
+```
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+mutating func appendInterpolation(_ attributedSubstring: AttributedSubstring)
+```
+
+```swift
+@export(implementation)
+mutating func appendInterpolation(_ substring: Substring)
+```
+
+```swift
+mutating func appendInterpolation(_ attributedString: AttributedString)
+```
+
+```swift
+mutating func appendInterpolation(_ image: Image)
+```
+
+```swift
+mutating func appendInterpolation(_ interval: DateInterval)
+```
+
+```swift
+mutating func appendInterpolation(_ resource: LocalizedStringResource)
+```
+
+```swift
+mutating func appendInterpolation(_ string: String)
+```
+
+```swift
+mutating func appendInterpolation(_ text: Text)
+```
+
+```swift
+mutating func appendInterpolation<T>(_ value: T) where T : _FormatSpecifiable
+```
+
+```swift
+@export(implementation)
+mutating func appendInterpolation<T>(_ object: T)
+```
+
+## Discussion
+
+Don’t call this method directly; it’s used by the compiler when interpreting string interpolations.
+
+## Parameters
+
+- `dates`: The closed range of dates to append.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/localizedstringkey/stringinterpolation/appendinterpolation(_:)-5q7y3)*

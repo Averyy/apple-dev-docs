@@ -21,7 +21,7 @@ A structure that provides additional weather information.
 struct WeatherMetadata
 ```
 
-#### Overview
+## Overview
 
 Metadata information includes the location, date of the request, the date the data will expire, and required provider attribution.
 

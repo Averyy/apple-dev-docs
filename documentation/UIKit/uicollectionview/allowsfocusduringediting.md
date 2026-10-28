@@ -23,7 +23,7 @@ var allowsFocusDuringEditing: Bool { get set }
 @property (nonatomic) BOOL allowsFocusDuringEditing;
 ```
 
-#### Discussion
+## Discussion
 
 If you implement [`collectionView(_:canFocusItemAt:)`](../uicollectionviewdelegate/collectionview%28_,canfocusitemat%29.md), its return value takes precedence over the value of this property.
 

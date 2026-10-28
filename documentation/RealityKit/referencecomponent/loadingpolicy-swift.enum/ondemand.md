@@ -20,7 +20,7 @@ Loads the contents from the referenced entity file when your app tells it to.
 case onDemand
 ```
 
-#### Discussion
+## Discussion
 
 Use [`loadReference(at:)`](../loadreference%28at%29-1en8b.md) to load the referenced entity.
 

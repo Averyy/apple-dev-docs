@@ -17,7 +17,7 @@ A class that represents the tab accessory environment trait.
 @interface UITraitTabAccessoryEnvironment : NSObject
 ```
 
-#### Overview
+## Overview
 
 The trait specifies the [`UITabAccessory.Environment`](./uitabaccessory/environment.md), if any, that a view is in. It is set on views inside [`bottomAccessory`](./uitabbarcontroller/bottomaccessory.md). Defaults to [`UITabAccessory.Environment.unspecified`](./uitabaccessory/environment/unspecified.md).
 

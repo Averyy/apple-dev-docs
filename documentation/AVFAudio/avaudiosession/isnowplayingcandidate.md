@@ -19,7 +19,7 @@ var isNowPlayingCandidate: Bool { get }
 @property (readonly) BOOL isNowPlayingCandidate;
 ```
 
-#### Discussion
+## Discussion
 
 Only a single audio session for an app can be a Now Playing candidate. Designating multiple audio sessions for the same app as Now Playing candidates results in none of them being eligible.
 

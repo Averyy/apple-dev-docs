@@ -15,7 +15,7 @@ Posted when a web view ends any operation that changes its contents in response 
 extern NSString * const WebViewDidEndEditingNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the WebView that the user is editing. This notification does not contain a `userInfo` dictionary.
 

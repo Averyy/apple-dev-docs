@@ -23,7 +23,7 @@ class UITextInputContext
 @interface UITextInputContext : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the shared [`UITextInputContext`](./uitextinputcontext.md) object to get information about the type of input your app receives. UIKit apps can receive text input from sources other than the software keyboard, including from dictation, Apple Pencil, and a connected keyboard. Use information about the likely input sources to adjust your UI to accommodate that input. For example, you might increase the size of text fields to accommodate handwriting input from Apple Pencil.
 

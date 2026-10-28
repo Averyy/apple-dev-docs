@@ -16,7 +16,7 @@ A delegate object for the experience controller.
 weak final var delegate: (any AVExperienceController.Delegate)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Provide a delegate to have the system notify your app about transitions and other state changes. Use the delegate callbacks to update your app’s state and user interface in response.
 

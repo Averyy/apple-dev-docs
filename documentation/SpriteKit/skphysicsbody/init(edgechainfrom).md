@@ -29,11 +29,11 @@ init(edgeChainFrom path: CGPath)
 
 - [Shaping a Physics Body to Match a Node’s Graphics](../shaping-a-physics-body-to-match-a-node-s-graphics.md)
 
-#### Return Value
+## Return Value
 
 A new edge-based physics body.
 
-#### Discussion
+## Discussion
 
 An edge has no volume or mass and is always treated as if the [`isDynamic`](./isdynamic.md) property is equal to [`false`](../../Swift/false.md). Edges may only collide with volume-based physics bodies.
 

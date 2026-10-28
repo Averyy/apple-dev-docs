@@ -24,11 +24,11 @@ nonisolated
 func previewLayout(_ value: PreviewLayout) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A preview that uses the given layout.
 
-#### Discussion
+## Discussion
 
 By default, previews use the `PreviewLayout/device` layout, which places the view inside a visual representation of the chosen device. You can instead tell a preview to use a different layout by choosing one of the `PreviewLayout` values, like `PreviewLayout/sizeThatFits`:
 

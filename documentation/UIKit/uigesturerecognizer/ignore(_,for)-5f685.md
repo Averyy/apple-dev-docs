@@ -24,7 +24,7 @@ func ignore(_ touch: UITouch, for event: UIEvent)
 - (void) ignoreTouch:(UITouch *) touch forEvent:(UIEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 If a touch isn’t part of this gesture you may pass it to this method, causing it to be ignored. `UIGestureRecognizer` does not cancel ignored touches on the associated view. This method is intended to be called, not overridden.
 

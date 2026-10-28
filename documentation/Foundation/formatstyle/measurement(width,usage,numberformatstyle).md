@@ -21,11 +21,11 @@ Returns a format style to format measurement units.
 static func measurement<UnitType>(width: Measurement<UnitType>.FormatStyle.UnitWidth, usage: MeasurementFormatUnitUsage<UnitType> = .general, numberFormatStyle: FloatingPointFormatStyle<Double>? = nil) -> Self where Self == Measurement<UnitType>.FormatStyle, UnitType : Dimension
 ```
 
-#### Return Value
+## Return Value
 
 A format style that formats measurements according to the given parameters.
 
-#### Discussion
+## Discussion
 
 Use the dot-notation form of this type method when the call point allows the use of [`Measurement.FormatStyle`](../measurement/formatstyle.md). You typically do this when calling the [`formatted(_:)`](../measurement/formatted%28_%29.md) method of [`Measurement`](../measurement.md).
 

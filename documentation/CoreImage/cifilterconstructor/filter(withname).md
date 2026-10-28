@@ -25,11 +25,11 @@ func filter(withName name: String) -> CIFilter?
 - (CIFilter *) filterWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIFilter`](../cifilter-swift.class.md) object implementing the custom filter.
 
-#### Discussion
+## Discussion
 
 Core Image calls this method when a filter is requested by name using the [`CIFilter`](../cifilter-swift.class.md) class method [`init(name:)`](../cifilter-swift.class/init%28name%29.md) method (or related methods). Your implementation of this method should provide a new instance of the [`CIFilter`](../cifilter-swift.class.md) subclass for your custom filter.
 

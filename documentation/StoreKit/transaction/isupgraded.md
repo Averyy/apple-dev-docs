@@ -25,7 +25,7 @@ let isUpgraded: Bool
 
 - [Supporting monthly subscriptions with a 12-month commitment](../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
-#### Discussion
+## Discussion
 
 If [`isUpgraded`](./isupgraded.md) is `true`, the user has upgraded the subscription represented by this transaction to another subscription. This value appears in the transaction only when the value is `true`. To determine the service that the customer is entitled to, look for another transaction that has a subscription with a higher level of service.
 

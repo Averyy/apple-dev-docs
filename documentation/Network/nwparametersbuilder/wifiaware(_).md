@@ -18,11 +18,11 @@ func wifiAware(_ configurator: (inout WAParameters) -> Void) -> NWParametersBuil
 
 Available when `Top` conforms to `NetworkProtocolOptions` and `each P` conforms to `NetworkProtocolOptions`.
 
-#### Return Value
+## Return Value
 
 The updated parameters, with the configured Wi-Fi Aware parameters applied.
 
-#### Discussion
+## Discussion
 
 If not previously set, parameters will have `WAParameters/defaults` applied initially.
 

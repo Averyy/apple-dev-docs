@@ -20,7 +20,7 @@ Creates a texture contents object from an array of mipmaps.
 init(mipmapLevels: [TextureResource.Contents.MipmapLevel])
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Creating 3D textures requires you to build `MipmapLevel` with `mip()` methods that have a `bytesPerImage` parameter.
 

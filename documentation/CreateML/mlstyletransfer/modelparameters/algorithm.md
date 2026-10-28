@@ -19,7 +19,7 @@ The style transfer task’s training algorithm that prioritizes either speed or 
 var algorithm: MLStyleTransfer.ModelParameters.ModelAlgorithmType
 ```
 
-#### Discussion
+## Discussion
 
 You choose the task’s training algorithm based on your intended use for this model.
 

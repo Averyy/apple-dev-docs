@@ -5,7 +5,7 @@
 
 Respond to notifications when coming out of the suspended state.
 
-#### Overview
+## Overview
 
 When settings or device conditions change, the system generates notifications so that apps can respond accordingly. These notifications are delivered immediately to apps that are running, but their delivery is delayed for apps that are suspended. For a suspended app, pending notifications are delivered as soon after the app begins running again (either in the foreground or in the background).
 

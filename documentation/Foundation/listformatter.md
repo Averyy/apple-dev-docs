@@ -25,7 +25,7 @@ class ListFormatter
 @interface NSListFormatter : NSFormatter
 ```
 
-#### Overview
+## Overview
 
 The list formatter isn’t aware of the context where the formatted string will be used and doesn’t provide capitalization customization of the list items. The formatted result may not be grammatically correct if placed in a sentence, and it should only be used in a standalone manner.
 

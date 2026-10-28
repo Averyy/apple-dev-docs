@@ -8,7 +8,7 @@ An atom that specifies the minimum output value of an interpolation tween atom.
 
 > **Deprecated**: Tween media is deprecated in the QuickTime file format. The information that follows documents existing content containing tween media and should not be used for new development.
 
-#### Overview
+## Overview
 
 If both `kTweenOutputMin` and `kTweenOutputMax` atoms are included for an interpolation tween atom, output values for the tween atom are scaled to be within the minimum and maximum values. For example, if an interpolation tween atom has values between `0` and `4`, and it has `kTweenOutputMin` and `kTweenOutputMax` atoms with values `1` and `2`, respectively, a value of `0` (the minimum value before scaling) is scaled to `1` (the minimum specified by the `kTweenOutputMin` atom), a value of `4` (the maximum value before scaling) is scaled to `2` (the maximum specified by the `kTweenOutputMax` atom), and a value of `3` (three-quarters of the way between the maximum and minimum values before scaling) is scaled to `1.75` (three-quarters of the way between the values of the `kTweenOutputMin` and `kTweenOutputMax` atoms).
 

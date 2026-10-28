@@ -25,7 +25,7 @@ func CGImageMetadataTagCreate(_ xmlns: CFString, _ prefix: CFString?, _ name: CF
 extern CGImageMetadataTagRefCGImageMetadataTagCreate(CFStringRef xmlns, CFStringRef prefix, CFStringRef name, CGImageMetadataType type, CFTypeRef value);
 ```
 
-#### Return Value
+## Return Value
 
 A new [`CGImageMetadataTag`](./cgimagemetadatatag.md) type, or `NULL` if an error occurred.
 

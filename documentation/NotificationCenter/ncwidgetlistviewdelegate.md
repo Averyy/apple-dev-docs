@@ -21,7 +21,7 @@ protocol NCWidgetListViewDelegate : NSObjectProtocol
 @protocol NCWidgetListViewDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The `NCWidgetListViewDelegate` protocol defines methods that handle content display and editing in the list view of a Today widget. The [`delegate`](./ncwidgetlistviewcontroller/delegate.md) of an [`NCWidgetListViewController`](./ncwidgetlistviewcontroller.md) must adopt the `NCWidgetListViewDelegate` protocol.
 

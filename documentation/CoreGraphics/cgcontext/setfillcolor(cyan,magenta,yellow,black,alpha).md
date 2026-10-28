@@ -25,7 +25,7 @@ func setFillColor(cyan: CGFloat, magenta: CGFloat, yellow: CGFloat, black: CGFlo
 extern void CGContextSetCMYKFillColor(CGContextRef c, CGFloat cyan, CGFloat magenta, CGFloat yellow, CGFloat black, CGFloat alpha);
 ```
 
-#### Discussion
+## Discussion
 
 Core Graphics provides convenience functions for each of the device color spaces that allow you to set the fill or stroke color space and the fill or stroke color with one function call.
 

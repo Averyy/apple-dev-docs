@@ -21,11 +21,11 @@ func SecTransformExecute(_ transformRef: SecTransform, _ errorRef: UnsafeMutable
 extern CFTypeRefSecTransformExecute(SecTransformRef transformRef, CFErrorRef*errorRef);
 ```
 
-#### Return Value
+## Return Value
 
 This is the result of the transform. The specific value is determined by the transform being executed.
 
-#### Discussion
+## Discussion
 
 There are two phases that occur when executing a transform. The first phase checks to see if the transforms have all of their required attributes set. If a GroupTransform is being executed, then a required attribute for a transform is valid if it is connected to another attribute that supplies the required value. If any of the required attributes are not set or connected then SecTransformExecute will not run the transform but will return NULL and the apporiate error is placed in the error parameter if it is not NULL.
 

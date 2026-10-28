@@ -26,7 +26,7 @@ optional func advertiserAssistantWillPresentInvitation(_ advertiserAssistant: MC
 - (void) advertiserAssistantWillPresentInvitation:(MCAdvertiserAssistant *) advertiserAssistant;
 ```
 
-#### Discussion
+## Discussion
 
 This call is intended to allow your app to prepare for an invitation that will be presented to the user. For example, your app might stop performing computationally intensive UI updates for views that will be hidden by the invitation.
 

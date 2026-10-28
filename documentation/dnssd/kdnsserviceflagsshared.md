@@ -23,7 +23,7 @@ var kDNSServiceFlagsShared: UInt32 { get }
 kDNSServiceFlagsShared
 ```
 
-#### Discussion
+## Discussion
 
 Flag for registering individual records on a connected DNSServiceRef. Shared indicates that there may be multiple records with this name on the network (e.g. PTR records).
 

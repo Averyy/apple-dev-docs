@@ -27,7 +27,7 @@ func completeAllAssignedActivities(matching contextPath: [String])
 
 - [Recording student progress](../recording-student-progress.md)
 
-#### Discussion
+## Discussion
 
 Schoolwork displays a per-student Done indicator to teachers, along with statistics about task completion for the entire class. Students set this indicator in their own view of the Schoolwork app. Use the [`completeAllAssignedActivities(matching:)`](./completeallassignedactivities%28matching%29.md) method to set the Done status programmatically.
 

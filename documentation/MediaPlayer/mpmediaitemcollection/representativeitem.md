@@ -22,7 +22,7 @@ var representativeItem: MPMediaItem? { get }
 @property (nonatomic, readonly, nullable) MPMediaItem * representativeItem;
 ```
 
-#### Discussion
+## Discussion
 
 The media items in a collection typically share common property values, owing to how you built the collection. For example, if you build a collection based on a predicate that uses the [`MPMediaItemPropertyArtist`](../mpmediaitempropertyartist.md) property, all items in the collection share the same artist name. You can use the `representativeItem` property to efficiently obtain values for such common properties—often more efficiently than fetching an item from the [`items`](./items.md) array.
 

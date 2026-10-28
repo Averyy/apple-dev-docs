@@ -13,11 +13,11 @@
 errno_t sock_socket(int domain, int type, int protocol, sock_upcall callback, void *cookie, socket_t *new_so);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Allocate a socket. Allocating a socket in this manner creates a socket with no associated file descriptor. For more information, see 'man 2 socket'.
 

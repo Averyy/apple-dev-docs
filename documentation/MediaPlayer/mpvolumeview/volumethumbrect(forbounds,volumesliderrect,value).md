@@ -23,11 +23,11 @@ func volumeThumbRect(forBounds bounds: CGRect, volumeSliderRect rect: CGRect, va
 - (CGRect) volumeThumbRectForBounds:(CGRect) bounds volumeSliderRect:(CGRect) rect value:(float) value;
 ```
 
-#### Return Value
+## Return Value
 
 The computed drawing rectangle for the thumb image.
 
-#### Discussion
+## Discussion
 
 The rectangle you return should reflect the size of your thumb image and its current position on the slider’s track.
 

@@ -25,7 +25,7 @@ static let quickTimeMetadataKeyCameraLensModel: AVMetadataKey
 extern AVMetadataKey const AVMetadataQuickTimeMetadataKeyCameraLensModel;
 ```
 
-#### Discussion
+## Discussion
 
 This is track-level metadata for video track that is associated with the camera.
 

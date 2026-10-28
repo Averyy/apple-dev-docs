@@ -15,7 +15,7 @@ The request body you use to create an alternative distribution key.
 object AlternativeDistributionKeyCreateRequest
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to create a new alternative distribution key association in App Store Connect. For more infomation about the request that includes this request body, see [`Add an Alternative Distribution Key`](./post-v1-alternativedistributionkeys.md).
 

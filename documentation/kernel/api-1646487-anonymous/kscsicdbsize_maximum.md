@@ -13,7 +13,7 @@
 kSCSICDBSize_Maximum = 16
 ```
 
-#### Discussion
+## Discussion
 
 This is the largest size a Command Descriptor Block can be as specified in SPC-2.
 

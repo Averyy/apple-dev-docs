@@ -20,7 +20,7 @@ Returns a new object that supplies sample references.
 + (instancetype) assetReaderSampleReferenceOutputWithTrack:(AVAssetTrack *) track;
 ```
 
-#### Return Value
+## Return Value
 
 A sample rererence output object.
 

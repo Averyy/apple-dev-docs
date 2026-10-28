@@ -5,7 +5,7 @@
 
 Make your messaging app available for share sheet suggestions and use SiriKit intents to populate your app’s share extension.
 
-#### Overview
+## Overview
 
 Using the iOS share sheet, people can launch your messaging app instantly from a list of suggestions when sharing content like a link, image, video, or file. The share sheet suggests conversations with people in apps that a person interacts with frequently, and updates its suggestions over time based on a person’s favorite apps and conversations. When a person shares an image in iOS 16 or later, the share sheet prioritizes conversations with people it identifies in the image.
 
@@ -23,11 +23,11 @@ A screenshot of an iPhone with the Safari browser displaying the apple.com homep
 
 ![A screenshot of an iPhone with the Safari browser displaying the apple.com homepage. The person tapped the Share button and selected an app from the list of suggestions. The platforms default sharing interface, based on an SLComposeViewController, is visible. Based on the available metadata, the extension has prepopulated the interface with a recipient (Juan Chavez).](https://developer.apple.com/tutorials/images/com.apple.foundation/media-3379657@2x.png)
 
-##### Add a share extension to your app
+### Add a share extension to your app
 
 To add a share extension to your app, open your app’s project in Xcode and select File > New > Target from the menu bar. Xcode presents a sheet that contains templates for different kinds of targets. Select the share extension template from the iOS pane and follow the steps in Xcode’s interface to add one to your app. For more information, see [Understand Share Extensions](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/Share.html#//apple_ref/doc/uid/TP40014214-CH12-SW2) in the App Extension Programming Guide.
 
-##### Support the send message intent
+### Support the send message intent
 
 Open the Share extension’s `Info.plist`, and expand the [`NSExtension`](../BundleResources/information-property-list/nsextension.md) and [`NSExtensionAttributes`](../BundleResources/information-property-list/nsextension/nsextensionattributes.md) keys. Add a new entry with the [`IntentsSupported`](../BundleResources/information-property-list/nsextension/intentssupported.md) key and select `Array` for its value type. Add the string `INSendMessageIntent` as a new value to the array to declare support for the [`INSendMessageIntent`](../Intents/insendmessageintent.md) intent type.
 
@@ -35,7 +35,7 @@ Open the Share extension’s `Info.plist`, and expand the [`NSExtension`](../Bun
 
 To make debugging easier, set the value of [`NSExtensionActivationRule`](../BundleResources/information-property-list/nsextension/nsextensionattributes/nsextensionactivationrule.md) to `TRUEPREDICATE` when you first add a share extension using Xcode’s template. Replace it with valid activation rules as described in [Declaring Supported Data Types for a Share or Action Extension](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html#//apple_ref/doc/uid/TP40014214-CH21-SW8) before submitting your app for review.
 
-##### Donate a send message intent
+### Donate a send message intent
 
 Donate an [`INSendMessageIntent`](../Intents/insendmessageintent.md) only when a person sends or receives a message in your app and its share extension. Donate a [`CNContact`](../Contacts/cncontact.md) along with [`INSendMessageIntent`](../Intents/insendmessageintent.md) for [`sender`](../Intents/insendmessageintent/sender.md) and [`recipients`](../Intents/insendmessageintent/recipients.md) by adding values to the contact [`contactIdentifier`](../Intents/inperson/contactidentifier.md) field when initializing an [`INPerson`](../Intents/inperson.md).
 
@@ -72,7 +72,7 @@ When a person shares an image in iOS 16 or later with the suggestions from Apple
 
 > 💡 **Tip**:  Both your app and its share extension donate an [`INSendMessageIntent`](../Intents/insendmessageintent.md). Write reusable code by creating an object that donates the intent and is available to both the extension and the app.
 
-##### Populate your share extension’s interface with metadata
+### Populate your share extension’s interface with metadata
 
 When a person selects your app from the list of suggestions, you can access the metadata that you created when your app donated the [`INSendMessageIntent`](../Intents/insendmessageintent.md). Use it to populate your share extension’s interface.
 

@@ -21,7 +21,7 @@ The API an app can use to create and control a custom system VPN configuration.
 
 - `allow-vpn`
 
-#### Discussion
+## Discussion
 
 With the [Personal VPN Entitlement](./com.apple.developer.networking.vpn.api.md) enabled, your app can use the [`NEVPNManager`](../../NetworkExtension/nevpnmanager.md) class to manage a Personal VPN configuration.
 

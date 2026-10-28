@@ -15,7 +15,7 @@ An opaque reference to a web services protocol handler.
 typedef struct OpaqueWSProtocolHandlerRef *WSProtocolHandlerRef;
 ```
 
-#### Discussion
+## Discussion
 
 The `WSProtocolHandlerRef` represents an instance of a protocol handler. Create it using `WSProtocolHandlerCreate`.
 

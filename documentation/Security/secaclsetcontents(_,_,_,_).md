@@ -21,11 +21,11 @@ func SecACLSetContents(_ acl: SecACL, _ applicationList: CFArray?, _ description
 OSStatus SecACLSetContents(SecACLRef acl, CFArrayRef applicationList, CFStringRef description, SecKeychainPromptSelector promptSelector);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Because an ACL entry is always associated with an access instance, when you modify the entry, you are modifying the access instance as well.
 

@@ -21,7 +21,7 @@ Creates a ray from single-precision simd vectors that describe the origin and di
 init(origin: simd_float3 = .zero, direction: simd_float3)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function normalizes the direction vector.
 

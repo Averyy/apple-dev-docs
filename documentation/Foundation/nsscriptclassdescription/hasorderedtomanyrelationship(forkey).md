@@ -19,7 +19,7 @@ func hasOrderedToManyRelationship(forKey key: String) -> Bool
 - (BOOL) hasOrderedToManyRelationshipForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the described class has an ordered to-many relationship identified by the specified key; otherwise, [`false`](../../Swift/false.md).
 

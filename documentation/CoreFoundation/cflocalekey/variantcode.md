@@ -25,7 +25,7 @@ static let variantCode: CFLocaleKey!
 extern CFLocaleKey const kCFLocaleVariantCode;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a CFString containing the variant name. The variant code is arbitrary and application-specific. ICU adds “`_EURO`”  to its locale designations for locales that support the Euro currency. For  “`en_US_POSIX`” the variant is “`POSIX`”, and for “`hy_AM_REVISED`” it is “`REVISED`”.
 

@@ -21,7 +21,7 @@ The disabled customization behavior.
 static var disabled: ToolbarCustomizationBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 Items with this behavior may not be removed or moved by the user. They will be placed before other customizatable items. Use this behavior for the most important items that users need for the app to do common functionality.
 

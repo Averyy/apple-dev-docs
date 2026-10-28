@@ -42,7 +42,7 @@ func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens
 - [Performing a search operation](../performing-a-search-operation.md)
 - [Suggesting search terms](../suggesting-search-terms.md)
 
-#### Discussion
+## Discussion
 
 For more information about using searchable modifiers, see [Adding a search interface to your app](../adding-a-search-interface-to-your-app.md).
 

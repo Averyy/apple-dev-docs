@@ -21,11 +21,11 @@ Increments the retain count of a graphics path.
 extern CGPathRefCGPathRetain(CGPathRef path);
 ```
 
-#### Return Value
+## Return Value
 
 The same path you passed in as the `path` parameter.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md), except that it does not cause an error if the `path` parameter is `NULL`.
 

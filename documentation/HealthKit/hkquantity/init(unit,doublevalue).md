@@ -24,11 +24,11 @@ convenience init(unit: HKUnit, doubleValue value: Double)
 + (instancetype) quantityWithUnit:(HKUnit *) unit doubleValue:(double) value;
 ```
 
-#### Return Value
+## Return Value
 
 A newly instantiated quantity instance.
 
-#### Discussion
+## Discussion
 
 HealthKit uses quantity objects to store data for quantity samples. For more information on using quantity objects, see [`HKQuantitySample`](../hkquantitysample.md).
 

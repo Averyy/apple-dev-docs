@@ -23,7 +23,7 @@ case remediate
 NEFilterActionRemediate
 ```
 
-#### Discussion
+## Discussion
 
 This action results in a “content blocked” page being displayed to the user.
 

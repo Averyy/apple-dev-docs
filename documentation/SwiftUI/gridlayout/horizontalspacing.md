@@ -21,7 +21,7 @@ The horizontal distance between adjacent subviews.
 var horizontalSpacing: CGFloat?
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to `nil` to use default horizonal distances between subviews.
 

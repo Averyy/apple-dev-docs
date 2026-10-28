@@ -24,7 +24,7 @@ var kSequenceTrackProperty_OffsetTime: UInt32 { get }
 kSequenceTrackProperty_OffsetTime
 ```
 
-#### Discussion
+## Discussion
 
 By default this value is 0. A read/write [`MusicTimeStamp`](./musictimestamp.md) value.
 

@@ -15,7 +15,7 @@ A flag to indicate whether samples are floating-point values.
 FormatFlagIsFloat
 ```
 
-#### Discussion
+## Discussion
 
 Set this flag for floating-point samples; clear it for integers.
 

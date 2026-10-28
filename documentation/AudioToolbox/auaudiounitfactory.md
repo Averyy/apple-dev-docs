@@ -28,7 +28,7 @@ protocol AUAudioUnitFactory : NSExtensionRequestHandling
 
 - [Rendering Spatial Audio from Bluetooth headphones](./rendering-spatial-audio-from-bluetooth-headphones.md)
 
-#### Overview
+## Overview
 
 In most cases, if your audio unit specifies parameters to configure its behavior, it should provide a custom user interface to control those parameters. You create this user interface by subclassing the [`AUViewController`](../CoreAudioKit/auviewcontroller.md) class and implementing this protocol on your subclass.
 

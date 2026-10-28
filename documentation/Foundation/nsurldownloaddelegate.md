@@ -19,7 +19,7 @@ protocol NSURLDownloadDelegate : NSObjectProtocol
 @protocol NSURLDownloadDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The [`NSURLDownloadDelegate`](./nsurldownloaddelegate.md) protocol defines methods that allow an object to receive informational callbacks about the asynchronous load of a download’s URL request. Other delegate methods provide facilities that allow the delegate to customize the process of performing an asynchronous URL load.
 

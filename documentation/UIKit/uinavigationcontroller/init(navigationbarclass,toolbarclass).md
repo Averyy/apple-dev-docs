@@ -23,11 +23,11 @@ init(navigationBarClass: AnyClass?, toolbarClass: AnyClass?)
 - (instancetype) initWithNavigationBarClass:(Class) navigationBarClass toolbarClass:(Class) toolbarClass;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized navigation controller object or `nil` if there was a problem initializing the object.
 
-#### Discussion
+## Discussion
 
 To customize the overall appearance of a navigation bar, use [`UIAppearance`](../uiappearance.md) APIs instead of this method. If you use this initialization method to create a navigation bar that uses custom bar subclasses, you are responsible for pushing and setting view controllers before presenting the navigation controller onscreen.
 

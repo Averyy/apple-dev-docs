@@ -24,7 +24,7 @@ final actor SpeechAnalyzer
 
 - [Asking Permission to Use Speech Recognition](./asking-permission-to-use-speech-recognition.md)
 
-#### Overview
+## Overview
 
 The Speech framework provides several modules that can be added to an analyzer to provide specific types of analysis and transcription. Many use cases only need a [`SpeechTranscriber`](./speechtranscriber.md) module, which performs speech-to-text transcriptions.
 
@@ -43,7 +43,7 @@ Analysis is asynchronous. Input, output, and session control are decoupled and t
 
 The analyzer can only analyze one input sequence at a time.
 
-##### Perform analysis
+### Perform analysis
 
 To perform analysis on audio files and streams, follow these general steps:
 
@@ -120,7 +120,7 @@ if let lastSampleTime {
 }
 ```
 
-##### Analyze audio from files or capture devices
+### Analyze audio from files or capture devices
 
 To read audio from a file, asset, or capture device such as a microphone, create an [`AssetInputSequenceProvider`](./assetinputsequenceprovider.md) or [`CaptureInputSequenceProvider`](./captureinputsequenceprovider.md) object.
 
@@ -128,7 +128,7 @@ Get the provider object’s [`analyzerInputs`](./assetinputsequenceprovider/anal
 
 To end the analysis session after processing the audio track or captured audio, call one of the analyzer’s `finish` methods. Otherwise, by default, the analyzer won’t terminate its result streams and will wait for additional audio input sequences or buffers. See the “Finish analysis” section below for more details.
 
-##### Analyze audio from audio buffers
+### Analyze audio from audio buffers
 
 You can analyze audio buffers directly without using [`AssetInputSequenceProvider`](./assetinputsequenceprovider.md) or [`CaptureInputSequenceProvider`](./captureinputsequenceprovider.md).
 
@@ -151,19 +151,19 @@ To skip past part of an audio stream, omit the buffers you want to skip from the
 
 When you resume analysis with a later `AVAudioPCMBuffer` buffer, you may need to supply the correct time-code to account for skipped audio. To do this, pass the time-code of the later buffer as the `bufferStartTime` parameter of the corresponding `AnalyzerInput` object.
 
-##### Analyze autonomously
+### Analyze autonomously
 
 You can and usually should perform analysis using the [`analyzeSequence(_:)`](./speechanalyzer/analyzesequence%28_%29.md) or [`analyzeSequence(from:)`](./speechanalyzer/analyzesequence%28from%29.md) methods; those methods work well with Swift structured concurrency techniques. However, you may prefer that the analyzer proceed independently and perform its analysis autonomously as audio input becomes available in a task managed by the analyzer itself.
 
 To use this capability, create the analyzer with one of the initializers that has an input sequence or file parameter, or call [`start(inputSequence:)`](./speechanalyzer/start%28inputsequence%29.md) or [`start(inputAudioFile:finishAfterFile:)`](./speechanalyzer/start%28inputaudiofile,finishafterfile%29.md). To end the analysis of that input only and start analysis of different input, call one of the `start` methods again. To end the analysis session when the input ends, call [`finalizeAndFinishThroughEndOfInput()`](./speechanalyzer/finalizeandfinishthroughendofinput%28%29.md).
 
-##### Control processing and timing of results
+### Control processing and timing of results
 
 Modules deliver results periodically, but you can manually synchronize their processing and delivery to outside cues.
 
 To deliver a result for a particular time-code, call [`finalize(through:)`](./speechanalyzer/finalize%28through%29.md). To cancel processing of results that are no longer of interest, call [`cancelAnalysis(before:)`](./speechanalyzer/cancelanalysis%28before%29.md).
 
-##### Improve responsiveness
+### Improve responsiveness
 
 By default, the analyzer and modules load the system resources that they require lazily, and unload those resources when they’re deallocated.
 
@@ -175,7 +175,7 @@ To set the priority of analysis work, create the analyzer with a [`SpeechAnalyze
 
 Specific modules may also offer options that improve responsiveness.
 
-##### Finish analysis
+### Finish analysis
 
 To end an analysis session, you must use one of the analyzer’s `finish` methods or parameters, or deallocate the analyzer.
 
@@ -187,13 +187,13 @@ When the analysis session transitions to the *finished* state:
 
 > **Note**: While you can terminate the input sequence you created with a method such as `AsyncStream.Continuation.finish()`, terminating the input sequence does *not* generally finish the analysis session, and you can continue the session with a different input sequence. (See [`finalizeAndFinishThroughEndOfInput()`](./speechanalyzer/finalizeandfinishthroughendofinput%28%29.md) for an exception.)
 
-##### Respond to errors
+### Respond to errors
 
 When the analyzer or its modules’ result streams throw an error, the analysis session becomes finished as described above, and the same error (or a `CancellationError`) is thrown from all waiting methods and result streams.
 
 When this happens, you may wish to terminate the input sequence, or create a new analyzer to continue working on the remaining (and any additional) input.
 
-##### Manage simultaneous analyses
+### Manage simultaneous analyses
 
 The system normally limits simultaneous analyses to a conservative number, considering hardware capabilities of different devices. If you exceed that number, the system throws an [`insufficientResources`](./sfspeecherror/code/insufficientresources.md) error.
 

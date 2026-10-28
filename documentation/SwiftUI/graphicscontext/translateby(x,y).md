@@ -21,7 +21,7 @@ Moves subsequent drawing operations by an amount in each dimension.
 mutating func translateBy(x: CGFloat, y: CGFloat)
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to updating the context’s [`transform`](./transform.md) directly using the given translation amount:
 

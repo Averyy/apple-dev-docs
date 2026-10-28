@@ -20,7 +20,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 To use the configuration in an AR experience, pass it as an argument to your app’s [`run(_:options:)`](../arsession/run%28_,options%29.md) function.
 

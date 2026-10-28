@@ -20,7 +20,7 @@ An activity lifetime policy used by a Group Activity.
 struct LifetimePolicy
 ```
 
-#### Overview
+## Overview
 
 Activities that share content owned by the initiator may wish to customize their lifetime policy so that the activity ends when the initiator leaves.
 

@@ -22,11 +22,11 @@ class func success(with resolvedRestaurant: INRestaurant) -> Self
 + (instancetype) successWithResolvedRestaurant:(INRestaurant *) resolvedRestaurant;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INRestaurantResolutionResult`](../inrestaurantresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you are able to resolve the restaurant successfully to a value in your own internal data structures.
 

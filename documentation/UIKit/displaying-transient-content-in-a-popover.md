@@ -5,7 +5,7 @@
 
 Show a temporary interface on top of your app’s content on iPad.
 
-#### Overview
+## Overview
 
 Use popovers for app content that appears when needed and disappears when someone is finished with it. For example, use popovers to display information about the currently selected item, to display tools and configuration options, or to gather information from a person. You anchor a popover to a specific location onscreen, and the popover floats above the main window. The following image shows how the Calendar app on iPad uses a popover to show detailed meeting information.
 

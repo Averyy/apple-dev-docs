@@ -24,7 +24,7 @@ var canGoToPreviousPage: Bool { get }
 @property (nonatomic, readonly) BOOL canGoToPreviousPage;
 ```
 
-#### Discussion
+## Discussion
 
 The return value will be [`true`](../../Swift/true.md) unless the view is displaying the first page.
 

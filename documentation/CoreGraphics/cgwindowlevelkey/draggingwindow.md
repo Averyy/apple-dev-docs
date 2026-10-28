@@ -18,7 +18,7 @@ case draggingWindow
 kCGDraggingWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for a window being dragged.
 

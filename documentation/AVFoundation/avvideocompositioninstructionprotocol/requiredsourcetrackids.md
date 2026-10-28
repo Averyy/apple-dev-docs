@@ -25,7 +25,7 @@ var requiredSourceTrackIDs: [NSValue]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSValue *> * requiredSourceTrackIDs;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is `nil`, the instruction requires all source tracks for composition.
 

@@ -23,7 +23,7 @@ case requestCancelled
 QLThumbnailErrorRequestCancelled
 ```
 
-#### Discussion
+## Discussion
 
 An app canceled a request to create a thumbnail using QLThumbnailGenerator’s [`cancel(_:)`](../../qlthumbnailgenerator/cancel%28_%29.md) method.
 

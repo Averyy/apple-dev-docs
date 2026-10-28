@@ -19,7 +19,7 @@ string transactionId
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 In a purchase transaction, the `transactionId` matches the original transaction identifier, [`originalTransactionId`](./originaltransactionid.md). When a customer restores a purchase or renews a subscription, the `transactionId` differs.
 

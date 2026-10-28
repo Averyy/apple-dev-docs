@@ -23,7 +23,7 @@ case information
 INRelevantShortcutRoleInformation
 ```
 
-#### Discussion
+## Discussion
 
 Specify this role for relevant shortcuts that represent information that the user may want to glance at, such as the current weather conditions.
 

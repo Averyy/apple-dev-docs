@@ -21,7 +21,7 @@ A type that represents a Windows executable.
 static var exe: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.windows-executable`.
 

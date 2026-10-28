@@ -21,7 +21,7 @@ func compositions(withProtocols protocols: [Any]!, andAttributes attributes: [An
 - (NSArray *) compositionsWithProtocols:(NSArray *) protocols andAttributes:(NSDictionary *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`QCComposition`](../qccomposition.md) objects that meet the supplied criteria.
 

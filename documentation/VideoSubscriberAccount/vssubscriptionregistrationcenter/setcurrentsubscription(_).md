@@ -24,7 +24,7 @@ func setCurrentSubscription(_ currentSubscription: VSSubscription?)
 - (void) setCurrentSubscription:(VSSubscription *) currentSubscription;
 ```
 
-#### Discussion
+## Discussion
 
 Your app uses this method to set a subscription when the subscriber first authenticates or when their subscription changes.
 

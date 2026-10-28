@@ -13,7 +13,7 @@
 kSPCModePagePowerConditionCode = 0x1A
 ```
 
-#### Discussion
+## Discussion
 
 Power Conditions Mode Page value.
 

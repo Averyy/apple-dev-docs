@@ -21,7 +21,7 @@ An action that scales the image and rotates it by 90 degrees counter clockwise.
 case scaleToFillPlus90CCWRotation
 ```
 
-#### Discussion
+## Discussion
 
 Rotation helps to optimize portrait images fit into landscape buffers for algorithms that are rotation agnostic.
 

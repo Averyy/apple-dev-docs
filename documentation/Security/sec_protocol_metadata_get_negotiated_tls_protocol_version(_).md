@@ -23,11 +23,11 @@ func sec_protocol_metadata_get_negotiated_tls_protocol_version(_ metadata: sec_p
 tls_protocol_version_t sec_protocol_metadata_get_negotiated_tls_protocol_version(sec_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 A `tls_protocol_version_t` value.
 
-#### Discussion
+## Discussion
 
 Get the negotiated TLS version.
 

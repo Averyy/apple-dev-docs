@@ -26,11 +26,11 @@ optional func dropInteraction(_ interaction: UIDropInteraction, sessionDidUpdate
 
 - [Making a view into a drop destination](../making-a-view-into-a-drop-destination.md)
 
-#### Return Value
+## Return Value
 
 A drop proposal that contains the operation the delegate intends to perform. You may return a proposal containing the [`UIDropOperation.move`](../uidropoperation/move.md) operation only if the session’s [`allowsMoveOperation`](../uidragdropsession/allowsmoveoperation.md) is [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 You must implement this method if the drop interaction’s view can accept drop activities. If you don’t provide this method, the view cannot accept any drop activities.
 

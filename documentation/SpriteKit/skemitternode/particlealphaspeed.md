@@ -25,7 +25,7 @@ var particleAlphaSpeed: CGFloat { get set }
 @property (nonatomic) CGFloat particleAlphaSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`.
 

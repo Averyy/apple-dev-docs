@@ -23,7 +23,7 @@ class SFSafariExtensionViewController
 
 - [Adjusting settings for a toolbar item](./adjusting-settings-for-a-toolbar-item.md)
 
-#### Overview
+## Overview
 
 If your toolbar item has a popover, your popover view controller should be a subclass of this class. As with other macOS development, typically you want to add your own outlets and actions to the view controller, and provide an XIB file for its user interface.
 

@@ -21,7 +21,7 @@ Sends a request to stop a previously started action.
 final func stop() throws
 ```
 
-#### Discussion
+## Discussion
 
 This method sends the cancellation request asynchronously to the vehicle. If you call the results method again, the method delivers the results of the cancellation request.
 

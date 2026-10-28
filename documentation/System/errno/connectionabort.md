@@ -25,7 +25,7 @@ static var connectionAbort: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A connection abort was caused internal to your host machine.
 

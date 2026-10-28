@@ -25,7 +25,7 @@ typealias CFSetReleaseCallBack = (CFAllocator?, UnsafeRawPointer?) -> Void
 typedef void (*)(const struct __CFAllocator *, const void *) CFSetReleaseCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 This callback is passed to [`CFSetCreate(_:_:_:_:)`](./cfsetcreate%28_,_,_,_%29.md) in a [`CFSetCallBacks`](./cfsetcallbacks.md) structure.
 

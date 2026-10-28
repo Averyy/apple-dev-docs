@@ -20,7 +20,7 @@ A property that specifies the zone configuration that defines the zones for this
 let configuration: HKWorkoutZoneConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 This configuration identifies the source of the zones and contains the zone definitions that the system uses to calculate durations.
 

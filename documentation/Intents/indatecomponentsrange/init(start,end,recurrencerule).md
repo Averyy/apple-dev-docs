@@ -25,11 +25,11 @@ init(start startDateComponents: DateComponents?, end endDateComponents: DateComp
 - (instancetype) initWithStartDateComponents:(NSDateComponents *) startDateComponents endDateComponents:(NSDateComponents *) endDateComponents recurrenceRule:(INRecurrenceRule *) recurrenceRule;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INDateComponentsRange`](../indatecomponentsrange.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to initialize a date range that repeats over time. For example, you could create a range that represents the time range of “every wednesday”. Use the start and end dates to specify the date and time values that you want to repeat and use the `recurrenceRule` property to establish the conditions for repeating the value.
 

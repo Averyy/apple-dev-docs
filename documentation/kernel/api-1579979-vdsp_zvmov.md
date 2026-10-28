@@ -15,7 +15,7 @@ Complex vector copy; single precision.
 void vDSP_zvmov(const DSPSplitComplex *__A, vDSP_Stride __IA, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Copies complex vector `A` to complex vector `C`.
 

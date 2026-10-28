@@ -14,7 +14,7 @@ Gets the message identifier and state of all uploaded messages.
 - [Identifying rate limits](./identifying-rate-limits.md)
 - [Setting up retention messages](./setting-up-retention-messages.md)
 
-#### Discussion
+## Discussion
 
 Call this endpoint to get a list of all uploaded message identifiers and check their current state, [`messageState`](./messagestate.md).
 

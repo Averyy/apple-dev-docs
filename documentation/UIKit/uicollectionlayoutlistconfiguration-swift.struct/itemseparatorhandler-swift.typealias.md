@@ -18,7 +18,7 @@ A closure that provides granular control over list separator appearance.
 typealias ItemSeparatorHandler = (IndexPath, UIListSeparatorConfiguration) -> UIListSeparatorConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 The configuration to use for the separators at `indexPath`.
 

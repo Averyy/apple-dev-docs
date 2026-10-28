@@ -10,7 +10,7 @@ An array of 32-bit values, grouped into entries containing 3 values each.
 
 - [Representing encoder delay explicitly](../example_representing_encoder_delay_explicitly.md)
 
-#### Overview
+## Overview
 
 The layout of the entries in this table is as follows.
 

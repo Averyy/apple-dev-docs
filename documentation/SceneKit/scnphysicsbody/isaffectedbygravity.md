@@ -25,7 +25,7 @@ var isAffectedByGravity: Bool { get set }
 @property (nonatomic, getter=isAffectedByGravity) BOOL affectedByGravity;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md) (the default), and the type of the body is [`SCNPhysicsBodyType.dynamic`](../scnphysicsbodytype/dynamic.md), the [`gravity`](../scnphysicsworld/gravity.md) property of the scene’s [`physicsWorld`](../scnscene/physicsworld.md) object causes the body to accelerate.
 

@@ -23,11 +23,11 @@ func IOObjectConformsTo(_ object: io_object_t, _ className: UnsafePointer<CChar>
 boolean_t IOObjectConformsTo(io_object_t object, const io_name_t className);
 ```
 
-#### Return Value
+## Return Value
 
 If the object handle is valid, and represents an object in the kernel that dynamic casts to the class true is returned, otherwise false.
 
-#### Discussion
+## Discussion
 
 This function uses the OSMetaClass system in the kernel to determine if the object will dynamic cast to a class, specified as a C-string. In other words, if the object is of that class or a subclass.
 

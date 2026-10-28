@@ -19,11 +19,11 @@ func UCCompareTextDefault(_ options: UCCollateOptions, _ text1Ptr: UnsafePointer
 OSStatus UCCompareTextDefault(UCCollateOptions options, const UniChar *text1Ptr, UniCharCount text1Length, const UniChar *text2Ptr, UniCharCount text2Length, Boolean *equivalent, SInt32 *order);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. 
 
-#### Discussion
+## Discussion
 
 You can call the `UCCompareTextDefault` function when you want to use a simple collation function that requires minimum setup. This function uses the system default collation order (that is, the collation order for a `LocaleRef` of `NULL` and a variant of 0), and it does not require a collator object or collation keys. 
 

@@ -21,7 +21,7 @@ A type that represents an MPEG-4 audio layer file.
 extern UTType * const UTTypeMPEG4Audio;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.mpeg-4-audio`.
 

@@ -23,7 +23,7 @@ func scheduleSnapshotRefresh(withPreferredDate preferredFireDate: Date, userInfo
 
 - [Preparing to take your watchOS app’s snapshot](../preparing-to-take-your-watchos-app-s-snapshot.md)
 
-#### Discussion
+## Discussion
 
 Call this method to update your app’s snapshot in the background. When the system triggers the task, it wakes your app in the background and calls your app delegate’s [`handle(_:)`](../wkapplicationdelegate/handle%28_%29-7kiwx.md) method. Use this task to transition to the interface controller you want to display in the snapshot, and to update that controller’s user interface.
 

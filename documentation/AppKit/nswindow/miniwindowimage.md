@@ -19,7 +19,7 @@ var miniwindowImage: NSImage? { get set }
 @property (strong, nullable) NSImage * miniwindowImage;
 ```
 
-#### Discussion
+## Discussion
 
 The miniaturized window image is the image displayed in the Dock when the window is minimized. If you did not assign a custom image to the window, the value of this property is `nil`.
 

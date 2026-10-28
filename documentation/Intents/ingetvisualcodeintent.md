@@ -25,13 +25,13 @@ class INGetVisualCodeIntent
 @interface INGetVisualCodeIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 Siri creates an [`INGetVisualCodeIntent`](./ingetvisualcodeintent.md) object when the user asks for a visual code to use with a scanner. A visual code is a bar code or QR code that embeds information about a transaction. For example, an app might provide a visual code to facilitate payment for services. Apps can also use visual codes to communicate a user’s contact information.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INGetVisualCodeIntentHandling`](./ingetvisualcodeintenthandling.md) protocol. Your handler should confirm the request and create an [`INGetVisualCodeIntentResponse`](./ingetvisualcodeintentresponse.md) object with an image containing the visual code. Siri handles the display of the provided visual code in order to scan it.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 
@@ -42,7 +42,7 @@ The following table lists additional attributes of this intent object:
 
 When performing a search, Siri automatically asks the user to unlock a currently locked device. You don’t need to explicitly ask to unlock the device. In addition, Siri always prompts the user to confirm the request before asking your Intents extension to handle it.
 
-##### Example Phrases
+### Example Phrases
 
 Users can ask Siri to display visual codes in a variety of ways. The table below provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases.
 

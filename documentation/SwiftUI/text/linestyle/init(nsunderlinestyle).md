@@ -21,11 +21,11 @@ Creates a `Text.LineStyle` from `NSUnderlineStyle`.
 init?(nsUnderlineStyle: NSUnderlineStyle)
 ```
 
-#### Return Value
+## Return Value
 
 A new `Text.LineStyle` or `nil` when `nsUnderlineStyle` contains styles not supported by `Text.LineStyle`.
 
-#### Discussion
+## Discussion
 
 > **Note**: Use this initializer only if you need to convert an existing `NSUnderlineStyle` to a SwiftUI `Text.LineStyle`. Otherwise, create a `Text.LineStyle` using an initializer like [`init(pattern:color:)`](./init%28pattern,color%29.md).
 

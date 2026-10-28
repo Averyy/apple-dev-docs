@@ -19,7 +19,7 @@ case light
 NSScrollerKnobStyleLight
 ```
 
-#### Discussion
+## Discussion
 
 This style is particularly good against a dark background.
 

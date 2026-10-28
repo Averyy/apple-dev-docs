@@ -25,7 +25,7 @@ var texture: any MTLTexture { get }
 @property (readonly) id<MTLTexture> texture;
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to configure a [`MTLRenderPipelineColorAttachmentDescriptor`](../../Metal/mtlrenderpipelinecolorattachmentdescriptor.md) object to render to the drawable object.
 

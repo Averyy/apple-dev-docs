@@ -20,7 +20,7 @@ var muteBehavior: CATapMuteBehavior { get set }
 @property (atomic, readwrite, getter=isMuted) CATapMuteBehavior muteBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 Set the tap’s mute behavior. See CATapMuteBehavior above.
 

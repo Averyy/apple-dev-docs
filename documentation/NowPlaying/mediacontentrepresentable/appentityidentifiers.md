@@ -21,7 +21,7 @@ The entities that represent this content, making them available to Siri and Appl
 var appEntityIdentifiers: [EntityIdentifier] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Associate one or more `EntityIdentifier` values with the content so the system can connect the currently playing media to your app’s `AppEntity` types.
 

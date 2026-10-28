@@ -23,7 +23,7 @@ var localizedDescription: String? { get }
 @property (nonatomic, readonly, nullable) NSString * localizedDescription;
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this description for accessibility.
 

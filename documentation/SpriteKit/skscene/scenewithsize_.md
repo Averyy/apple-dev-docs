@@ -21,11 +21,11 @@ Creates and returns a new scene object.
 + (instancetype) sceneWithSize:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A new scene object.
 
-#### Discussion
+## Discussion
 
 This class method allocates a new scene object and calls its [`init(size:)`](./init%28size%29.md) initializer method.
 

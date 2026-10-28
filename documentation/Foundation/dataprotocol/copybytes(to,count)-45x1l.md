@@ -22,7 +22,7 @@ Copies the provided number of bytes from the start of the type into a raw memory
 func copyBytes(to ptr: UnsafeMutableRawBufferPointer, count: Int) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes copied.
 

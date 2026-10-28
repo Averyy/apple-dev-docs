@@ -24,7 +24,7 @@ class func attemptRotationToDeviceOrientation()
 + (void) attemptRotationToDeviceOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 Some view controllers may want to use app-specific conditions to determine what interface orientations are supported. If your view controller does this, when those conditions change, your app should call this class method. The system immediately attempts to rotate to the new orientation.
 

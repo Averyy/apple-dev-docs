@@ -17,7 +17,7 @@ Generator of tokens using MTP (Multi-Token Prediction) speculative decoding.
 struct MTPSpeculativeTokenIterator
 ```
 
-#### Overview
+## Overview
 
 Parallels [`SpeculativeTokenIterator`](./speculativetokeniterator.md) but for Gemma 4 - style drafters that share K/V with the target model and produce K - 1 candidate tokens per round in a single [`draftBlock(target:lastToken:lastHidden:sharedKV:positionDeltas:queryOffset:blockSize:sampler:)`](./mtpdraftermodel/draftblock%28target,lasttoken,lasthidden,sharedkv,positiondeltas,queryoffset,blocksize,sampler%29.md) call (rather than K sequential single-token calls). Every per-round input — `lastToken`, `lastHidden`, `sharedKV`, `positionIds` — is threaded as a method argument, with the target’s last hidden state and per-`layer_type` shared K/V extracted from the [`LMOutput.State`](./lmoutput/state-swift.struct.md) emitted by the target on the previous main-model call. If the drafter needs its own KV cache (Qwen MTP), that cache is owned by this iterator, prefilled over the shifted prompt, and reconciled against accepted target tokens after every verify pass; it is never stored on the shared drafter model.
 

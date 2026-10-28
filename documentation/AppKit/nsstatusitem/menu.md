@@ -19,7 +19,7 @@ var menu: NSMenu? { get set }
 @property (strong, nullable) NSMenu * menu;
 ```
 
-#### Discussion
+## Discussion
 
 When non-`nil`, the status item’s single click action behavior is not used. Setting the value of this property to `nil` removes the menu.
 

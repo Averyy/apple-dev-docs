@@ -21,7 +21,7 @@ Modifies the format style to use the specified scale.
 func scale(_ multiplicand: Double) -> FloatingPointFormatStyle<Value>.Percent
 ```
 
-#### Return Value
+## Return Value
 
 A floating-point format style modified to use the specified scale.
 

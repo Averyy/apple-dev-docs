@@ -23,7 +23,7 @@ func applyGamma(_ gamma: vImage.Gamma, intermediateBuffer: vImage.PixelBuffer<vI
 
 Available when `Format` is `vImage.Interleaved8x2`.
 
-#### Discussion
+## Discussion
 
 This operation applies gamma to an [`vImage.Interleaved8x2`](../interleaved8x2.md) buffer by calling the underlying function [`vImageGamma_Planar8toPlanarF(_:_:_:_:)`](../../vimagegamma_planar8toplanarf%28_,_,_,_%29.md). Therefore, it requires an intermediate [`vImage.InterleavedFx2`](../interleavedfx2.md) buffer. For the best performance, pass an existing [`vImage.InterleavedFx2`](../interleavedfx2.md) buffer to `intermediateBuffer`, alternatively, pass ``nil`` to specify that the function creates the intermediate buffer.
 

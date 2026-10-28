@@ -13,7 +13,7 @@ Adopt message schemas so people can send messages and manage conversations with 
 - macOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 UnicornChat is a SwiftUI app for iPhone, iPad, and Mac that lets people send messages to predefined, fictitious unicorn characters. People can message an individual unicorn or a group of unicorns; the unicorns respond with friendly and upbeat messages. The app supports common message actions like drafting and sending a message, adding a message attachment, editing a message, unsending a message, and reacting to a message.
 
@@ -26,7 +26,7 @@ In addition to providing functionality in the app, this sample code project make
 
 > **Note**: This sample code project is associated with WWDC26 session [240: Build intelligent Siri experiences with App Schemas](https://developer.apple.com/wwdc26/240/).
 
-#### Conform entities to app schemas
+## Conform entities to app schemas
 
 App data is private to the app and Apple Intelligence doesn’t have access to the app’s functionality or context about its content. For example, when a person says “Siri, send a message to Bubbles,” Apple Intelligence needs to resolve that Bubbles is a contact in the UnicornChat app, that UnicornChat is a messaging app that supports a set of defined messaging actions, and that its data is contacts and messages.
 
@@ -168,7 +168,7 @@ struct CustomAttachment: AppEntity {
 
 For more information about creating app entities and implementing app schemas, see [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md) and [Making actions and content discoverable by Apple Intelligence](./making-actions-and-content-discoverable-by-apple-intelligence.md).
 
-#### Make entities transferable
+## Make entities transferable
 
 In addition to conforming entities to an app schema, the app’s entities also conform to the [`Transferable`](../CoreTransferable/transferable.md) protocol. This enables Apple Intelligence to pass the message entities to other apps and system experiences.
 
@@ -185,7 +185,7 @@ extension MessageEntity: Transferable {
 
 ```
 
-#### Index entities in Spotlight
+## Index entities in Spotlight
 
 Apple Intelligence uses the semantic search capabilities of Spotlight to find the app’s content, even when someone describes it vaguely. The following example shows how the app loads entities that represent contacts, conversations, and messages, then donates them to the Spotlight index:
 
@@ -209,7 +209,7 @@ func storeDidFinishLaunching() async throws {
 
 For more information about making app content available to Spotlight, see [Spotlight integration](./spotlight.md).
 
-#### Annotate views and notifications with app entities
+## Annotate views and notifications with app entities
 
 People use Siri to interact with onscreen content. For example, someone might say “Siri, summarize this message.” To fulfill the request, Apple Intelligence needs contextual information about content that’s visible onscreen. To provide the needed context, the sample app annotates its view with app entities that represent the onscreen content. For example, the app’s `MessageRow` view annotates its [`HStack`](../SwiftUI/hstack.md) with an app entity using the [`appEntityIdentifier(_:)`](../SwiftUI/view/appentityidentifier%28_%29.md) modifier:
 
@@ -250,7 +250,7 @@ func scheduleNotification(for message: Message, from author: Contact, in convers
 
 For more information about providing Apple Intelligence with onscreen context by associating app entities with views and other types, see [Providing contextual cues to Apple Intelligence and Siri](./providing-contextual-cues-to-apple-intelligence-and-siri.md).
 
-#### Make actions discoverable by Apple Intelligence and Siri
+## Make actions discoverable by Apple Intelligence and Siri
 
 UnicornChat makes its message actions discoverable by implementing the app intent schemas from the messages domain. Similar to how entity schemas provide Apple Intelligence with an understanding of the app’s content, intent schemas provide Apple Intelligence with an understanding of the app’s message actions. The [Messages](./app-schema-domain-messages.md) domain requires several intents to provide a consistent user experience. The example below shows the intent for sending a message. It conforms to the `.messages.sendMessage` schema. The example also shows the implementation of the required `MessageDestination` union value type that the `destination` property uses:
 
@@ -308,7 +308,7 @@ struct SendMessageIntent: AppIntent {
 
 For more information about making actions discoverable by Apple Intelligence, see [Making actions and content discoverable by Apple Intelligence](./making-actions-and-content-discoverable-by-apple-intelligence.md).
 
-#### Donate app intents to the system
+## Donate app intents to the system
 
 Apple Intelligence can proactively suggest actions based on a person’s past behavior. For example, if a person messages the same contact every morning, Apple Intelligence might proactively suggest the action each morning. The following example shows how the app uses the [`IntentDonationManager`](./intentdonationmanager.md) structure to donate a `SendMessageIntent` when a person sends a message:
 

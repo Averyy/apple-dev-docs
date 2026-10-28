@@ -15,7 +15,7 @@ Get the camera rectification type for this video format.
 extern ar_camera_rectification_type_t ar_camera_video_format_get_camera_rectification_type(ar_camera_video_format_t video_format);
 ```
 
-#### Return Value
+## Return Value
 
 The camera rectification type.
 

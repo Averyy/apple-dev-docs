@@ -15,7 +15,7 @@ Starts the VM and notifies the specified completion handler if startup is succes
 func start(completionHandler: @escaping (Result<Void, any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to start a VM that’s in the [`VZVirtualMachine.State.stopped`](./state-swift.enum/stopped.md) or [`VZVirtualMachine.State.error`](./state-swift.enum/error.md) state. To determine if a VM is in a state that allows you to start it, check the VM’s [`canStart`](./canstart.md) property.
 

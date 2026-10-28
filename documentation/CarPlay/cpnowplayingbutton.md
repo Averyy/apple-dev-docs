@@ -22,7 +22,7 @@ class CPNowPlayingButton
 @interface CPNowPlayingButton : NSObject
 ```
 
-#### Overview
+## Overview
 
 `CPNowPlayingButton` is an abstract base class for defining buttons that the Now Playing template displays. It provides the common functionality that’s present in all buttons available to the template.
 

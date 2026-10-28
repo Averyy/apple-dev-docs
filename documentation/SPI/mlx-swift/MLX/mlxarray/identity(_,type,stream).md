@@ -21,7 +21,7 @@ static func identity(_ n: Int, type: (some HasDType).Type = Float.self, stream: 
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 Example:
 
@@ -30,7 +30,7 @@ Example:
 let r = MLXArray.identity(10)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 - [`eye(_:m:k:type:stream:)`](./eye%28_,m,k,type,stream%29.md)

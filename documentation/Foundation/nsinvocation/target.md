@@ -21,7 +21,7 @@ The receiver’s target, or `nil` if the receiver has no target.
 @property (assign, nullable) id target;
 ```
 
-#### Discussion
+## Discussion
 
 The target is the receiver of the message sent by [`invoke`](./invoke.md).
 

@@ -23,7 +23,7 @@ var signedDate: Date { get }
 
 Available when `SignedType` is `AppTransaction`.
 
-#### Discussion
+## Discussion
 
 Use the [`signedDate`](./signeddate-24zch.md) to verify whether the certificate used to sign the transaction was valid when the App Store signed the transaction.
 

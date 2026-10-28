@@ -27,7 +27,7 @@ var uniqueID: Int64 { get }
 
 - [Tracking photo capture progress](../tracking-photo-capture-progress.md)
 
-#### Discussion
+## Discussion
 
 Creating a [`AVCapturePhotoSettings`](../avcapturephotosettings.md) instance automatically assigns a unique value to this property.
 

@@ -18,7 +18,7 @@ var includedDisplays: [SCDisplay] { get }
 @property (nonatomic, readonly, nonnull) NSArray<SCDisplay *> * includedDisplays;
 ```
 
-#### Discussion
+## Discussion
 
 SCDisplays that are included in the content filter
 

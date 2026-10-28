@@ -5,7 +5,7 @@
 
 Use framework-defined types for common parameter and result data types such as contacts, files, currencies, and more.
 
-#### Overview
+## Overview
 
 When creating your app intents or app entities, use existing types for parameters and properties whenever possible. The App Intents framework provides common data types to represent people, files, currencies, and more. Choose the type that matches your app’s data and fill its properties with data from your app.
 

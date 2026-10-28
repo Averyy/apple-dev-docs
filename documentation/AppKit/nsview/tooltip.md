@@ -19,7 +19,7 @@ var toolTip: String? { get set }
 @property (copy, nullable) NSString * toolTip;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if the view does not currently display tooltip text. Assigning a value to this property causes the tooltip to be displayed for the view. Setting the property to nil cancels the display of the tooltip for the view.
 

@@ -22,7 +22,7 @@ Performs the action at some time after the specified date, at the specified freq
 func schedule(after date: ImmediateScheduler.SchedulerTimeType, interval: ImmediateScheduler.SchedulerTimeType.Stride, tolerance: ImmediateScheduler.SchedulerTimeType.Stride, options: ImmediateScheduler.SchedulerOptions?, _ action: @escaping () -> Void) -> any Cancellable
 ```
 
-#### Discussion
+## Discussion
 
 The immediate scheduler ignores `date` and performs the action immediately.
 

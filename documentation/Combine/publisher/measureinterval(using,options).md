@@ -21,11 +21,11 @@ Measures and emits the time interval between events received from an upstream pu
 func measureInterval<S>(using scheduler: S, options: S.SchedulerOptions? = nil) -> Publishers.MeasureInterval<Self, S> where S : Scheduler
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that emits elements representing the time interval between the elements it receives.
 
-#### Discussion
+## Discussion
 
 Use [`measureInterval(using:options:)`](./measureinterval%28using,options%29.md) to measure the time between events delivered from an upstream publisher.
 

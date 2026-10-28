@@ -17,7 +17,7 @@ An array of indices describing the triangle mesh formed by the plane geometry’
 var triangleIndices: [Int16] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Each 16-bit integer value in this array represents an index into the [`vertices`](./vertices-43kle.md) and [`textureCoordinates`](./texturecoordinates-p801.md) arrays. Each set of three indices identifies the vertices that form a single triangle in the mesh. You can use array as an index buffer for a triangle mesh in GPU-based rendering or to create 3D model asset files.
 

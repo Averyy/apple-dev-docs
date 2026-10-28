@@ -15,11 +15,11 @@ The plugin generates documentation.
 static func documentationGeneration() -> PluginCommandIntent
 ```
 
-#### Return Value
+## Return Value
 
 A `PluginCommandIntent` instance.
 
-#### Discussion
+## Discussion
 
 The intent of the command is to generate documentation, either by parsing the package contents directly or by using the build system support for generating symbol graphs. Invoked by a `generate-documentation` verb to `swift package`.
 

@@ -21,11 +21,11 @@ optional func makeViewController(element: TVViewElement, existingViewController:
 - (UIViewController *) viewControllerForElement:(TVViewElement *) element existingViewController:(UIViewController *) existingViewController;
 ```
 
-#### Return Value
+## Return Value
 
 The new view controller associated with the view element. If the app doesn’t handle this event, you must return `nil`.
 
-#### Discussion
+## Discussion
 
 When possible, update the view controller contained in the `existingViewController` parameter instead of creating a new view controller.
 

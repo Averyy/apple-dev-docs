@@ -21,7 +21,7 @@ Stack marks using a center offset.
 static var center: MarkStackingMethod { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this type to create a stream graph.
 

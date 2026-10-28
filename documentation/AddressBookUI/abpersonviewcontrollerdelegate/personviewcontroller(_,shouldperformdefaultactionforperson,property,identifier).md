@@ -22,7 +22,7 @@ func personViewController(_ personViewController: ABPersonViewController, should
 - (BOOL) personViewController:(ABPersonViewController *) personViewController shouldPerformDefaultActionForPerson:(ABRecordRef) person property:(ABPropertyID) property identifier:(ABMultiValueIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `personViewController` should perform its default action. Your application may quit as a result of this action. [`false`](../../Swift/false.md): if `personViewController` should do nothing. The delegate may perform custom action processing.
 

@@ -15,7 +15,7 @@ A round button with room for a small icon or a single character.
 static const NSBezelStyle NSCircularBezelStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This style has both regular and small variants, but the large variant is available only in gray at this time.
 

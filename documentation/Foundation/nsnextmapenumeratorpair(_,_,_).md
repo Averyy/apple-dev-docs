@@ -25,7 +25,7 @@ func NSNextMapEnumeratorPair(_ enumerator: UnsafeMutablePointer<NSMapEnumerator>
 extern BOOL NSNextMapEnumeratorPair(NSMapEnumerator *enumerator, void **key, void **value);
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../Swift/false.md) if `enumerator` has already iterated over all the elements in the table that `enumerator` is associated with; otherwise, sets `key` and `value` to match the next key-value pair in the table and returns [`true`](../Swift/true.md).
 

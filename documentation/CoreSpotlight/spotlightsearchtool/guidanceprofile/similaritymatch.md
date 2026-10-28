@@ -19,7 +19,7 @@ A Boolean value that indicates whether to perform semantic similarity matching o
 var similarityMatch: Bool?
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property true `true` to give the model the option to perform semantic searches of content. This approach allows the search to return results that match the intent of the provided string and not just the actual search term. For example, if model performs a semantic match against the word “star”, the tool can match items that contain the text “star”, “sun”, or “Betelgeuse”. If you don’t specify a value for this property, the default value is `false`.
 

@@ -25,11 +25,11 @@ class func baseUnit() -> Self
 + (instancetype) baseUnit;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDimension` subclass object from which all other units provided by the subclass are defined.
 
-#### Discussion
+## Discussion
 
 The default implementation returns `nil` to indicate that the `NSDimension` class should not be used directly.
 

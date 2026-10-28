@@ -18,11 +18,11 @@ Moves the directory or file specified by a given path to a different location in
 - (BOOL) movePath:(NSString *) src toPath:(NSString *) dest handler:(id) handler;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the move operation is successful. If the operation is not successful, but the handler method [`fileManager(_:shouldProceedAfterError:)`](../../ObjectiveC/nsobject-swift.class/filemanager%28_,shouldproceedaftererror%29.md) returns [`true`](../../Swift/true.md), [`movePath:toPath:handler:`](./movepath_topath_handler_.md) also returns [`true`](../../Swift/true.md); otherwise returns [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If `source` is a file, the method creates a file at `destination` that holds the exact contents of the original file and then deletes the original file. If `source` is a directory, [`movePath:toPath:handler:`](./movepath_topath_handler_.md) creates a new directory at `destination` and recursively populates it with duplicates of the files and directories contained in `source`. It then deletes the old directory and its contents.  Symbolic links are not traversed, however links are preserved. File or directory attributes—that is, metadata such as owner and group numbers, file permissions, and modification date—are also moved.
 
@@ -30,7 +30,7 @@ The handler callback mechanism is similar to delegation. `NSFileManager` sends [
 
 If a failure in a move operation occurs, either the preexisting path or the new path remains intact, but not both.
 
-##### Special Considerations
+### Special Considerations
 
 Because this method does not return error information, it has been deprecated as of OS X v10.5. Use [`moveItem(at:to:)`](../filemanager/moveitem%28at,to%29.md) instead.
 

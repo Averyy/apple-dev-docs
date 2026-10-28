@@ -25,7 +25,7 @@ optional func metadataOutput(_ output: AVPlayerItemMetadataOutput, didOutputTime
 - (void) metadataOutput:(AVPlayerItemMetadataOutput *) output didOutputTimedMetadataGroups:(NSArray<AVTimedMetadataGroup *> *) groups fromPlayerItemTrack:(AVPlayerItemTrack *) track;
 ```
 
-#### Discussion
+## Discussion
 
 Each group provided in a single invocation of this method will have timing that does not overlap with any other group in the array.
 

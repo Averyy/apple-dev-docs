@@ -21,7 +21,7 @@ var titleAlignment: UINavigationItem.TitleAlignment { get set }
 @property (nonatomic, assign, readwrite) UINavigationItemTitleAlignment titleAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 The navigation bar resolves the alignment of its title automatically based on context, and the navigation item’s style. Use this property to override the system default.
 

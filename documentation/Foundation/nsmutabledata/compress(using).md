@@ -25,7 +25,7 @@ func compress(using algorithm: NSData.CompressionAlgorithm) throws
 - (BOOL) compressUsingAlgorithm:(NSDataCompressionAlgorithm) algorithm error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to compress in-memory data when you want to reduce memory usage and can afford the time to compress and decompress the data. If your data object is already in a compressed format, such as media formats like JPEG images or AAC audio, [`compress(using:)`](./compress%28using%29.md) may provide minimal or no benefit.
 

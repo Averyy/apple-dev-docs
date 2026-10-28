@@ -19,7 +19,7 @@ var showsStateBy: NSCell.StyleMask { get set }
 @property NSCellStyleMask showsStateBy;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the logical `OR` of one or more of the cell masks described in the “Constants” section of [`NSCell`](../nscell.md).
 

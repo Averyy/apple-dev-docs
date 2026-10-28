@@ -17,11 +17,11 @@ Acquire a presentment intent assertion instance from the system.
 static func acquire() async throws -> NFCPresentmentIntentAssertion
 ```
 
-#### Return Value
+## Return Value
 
 A presentment intent assertion instance you use to prevent the default contactless app from launching.
 
-#### Discussion
+## Discussion
 
 The returned object remains valid until any of the following occur:
 

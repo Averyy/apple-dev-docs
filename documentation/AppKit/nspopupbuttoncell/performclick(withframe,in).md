@@ -19,7 +19,7 @@ func performClick(withFrame frame: NSRect, in controlView: NSView)
 - (void) performClickWithFrame:(NSRect) frame inView:(NSView *) controlView;
 ```
 
-#### Discussion
+## Discussion
 
 You normally do not call this method explicitly. It is called by the Application Kit automatically to handle events in the pop-up button.
 

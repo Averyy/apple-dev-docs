@@ -25,7 +25,7 @@ struct WritingOptions
 enum NSFileCoordinatorWritingOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 You must specify only one constant at a time for a given write operation.
 

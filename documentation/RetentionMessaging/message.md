@@ -15,7 +15,7 @@ A message identifier you provide in a real-time response to your Get Retention M
 object message
 ```
 
-#### Discussion
+## Discussion
 
 In your [`RealtimeResponseBody`](./realtimeresponsebody.md) real-time response, you can choose from mutually exclusive options. Include `message` in your response to provide a text-based message (with or without an image) as the retention message the system displays to the customer.
 

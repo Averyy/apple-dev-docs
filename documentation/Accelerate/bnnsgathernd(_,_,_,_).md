@@ -27,7 +27,7 @@ func BNNSGatherND(_ input: UnsafePointer<BNNSNDArrayDescriptor>, _ indices: Unsa
 int BNNSGatherND(const BNNSNDArrayDescriptor *input, const BNNSNDArrayDescriptor *indices, BNNSNDArrayDescriptor *output, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use [`BNNSGatherND(_:_:_:_:)`](./bnnsgathernd%28_,_,_,_%29.md) to gather slices — that you specify by index — into an output tensor.
 

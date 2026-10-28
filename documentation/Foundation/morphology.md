@@ -21,7 +21,7 @@ A description of the grammatical properties of a string.
 struct Morphology
 ```
 
-#### Overview
+## Overview
 
 Use a morphology with an [`InflectionRule`](./inflectionrule.md) to specify how to interpret a specific word when inflecting an [`AttributedString`](./attributedstring.md). This affects grammatical agreement with traits like number and gender, as well as declaring the word’s part of speech.
 

@@ -15,7 +15,7 @@ Creates a new instance from the given value, rounded to the closest possible rep
 init<Source>(_ value: Source) where Source : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 If two representable values are equally close, the result is the value with more trailing zeros in its significand bit pattern.
 

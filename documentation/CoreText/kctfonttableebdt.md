@@ -23,7 +23,7 @@ var kCTFontTableEBDT: Int { get }
 kCTFontTableEBDT
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for an embedded bitmap.
 

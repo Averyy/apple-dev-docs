@@ -21,7 +21,7 @@ case chargingIdle(ElectricVehicleChargingReason.IdleReason)
 
 - [Providing charging history for electric vehicles](../../providing-informative-charging-history-for-electric-vehicles.md)
 
-#### Discussion
+## Discussion
 
 The associated [`ElectricVehicleChargingReason.IdleReason`](../../electricvehiclechargingreason/idlereason.md) explains why charging isn’t active.
 

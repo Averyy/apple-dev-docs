@@ -10,7 +10,7 @@ framework: "Swift-Org/diagnostics"
 
 Warnings that indicate the compiler cannot resolve an `#if canImport(<ModuleName>, _version: <version>)` directive because the module found was not built with a `-user-module-version` flag.
 
-#### Overview
+## Overview
 
 Developers may conditionalize which code is active in a source file based on the module version number of an imported dependency module, like this:
 

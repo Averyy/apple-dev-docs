@@ -17,7 +17,7 @@ Generator of tokens using speculative decoding.
 struct SpeculativeTokenIterator
 ```
 
-#### Overview
+## Overview
 
 This is typically used via a call to [`generate(input:cache:state:parameters:context:draftModel:draftCache:numDraftTokens:components:wiredMemoryTicket:tools:)`](./generate%28input,cache,state,parameters,context,draftmodel,draftcache,numdrafttokens,components,wiredmemoryticket,tools%29.md) returning `AsyncStream<Generation>`.
 

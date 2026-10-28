@@ -22,7 +22,7 @@ var maximumSupportedContentVersion: PKContentVersion { get set }
 @property (nonatomic, assign) PKContentVersion maximumSupportedContentVersion;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`latest`](../pkcontentversion/latest.md).
 

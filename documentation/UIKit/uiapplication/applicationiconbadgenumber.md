@@ -25,7 +25,7 @@ var applicationIconBadgeNumber: Int { get set }
 @property (nonatomic) NSInteger applicationIconBadgeNumber;
 ```
 
-#### Discussion
+## Discussion
 
 Set to 0 (zero) to hide the badge number. The default value of this property is 0.
 

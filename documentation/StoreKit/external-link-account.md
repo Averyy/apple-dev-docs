@@ -5,7 +5,7 @@
 
 Enable qualifying apps to link to an external website for account creation or management.
 
-#### Overview
+## Overview
 
 If you develop a qualifying app, you can complete a request for an entitlement that allows you to link to an external website for account creation or management. For more information about whether your app qualifies and how to request an entitlement, see [Distributing “reader” apps with a link to your website](https://developer.apple.com/support/reader-apps/).
 

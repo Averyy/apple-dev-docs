@@ -18,7 +18,7 @@ static var bordered: BorderedListStyle { get }
 
 Available when `Self` is `BorderedListStyle`.
 
-#### Discussion
+## Discussion
 
 Bordered lists are expected to be inset from their outer containers, but do not have inset style rows or selection.
 

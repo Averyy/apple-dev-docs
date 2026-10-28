@@ -29,7 +29,7 @@ kCLAuthorizationStatusNotDetermined
 
 - [Requesting authorization to use location services](../requesting-authorization-to-use-location-services.md)
 
-#### Discussion
+## Discussion
 
 When the authorization status is Not Determined, request authorization causes the location manager to prompt the user for permission if the app is in the foreground. See [`requestWhenInUseAuthorization()`](../cllocationmanager/requestwheninuseauthorization%28%29.md) and [`requestAlwaysAuthorization()`](../cllocationmanager/requestalwaysauthorization%28%29.md) for more information.
 

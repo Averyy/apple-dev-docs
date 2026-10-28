@@ -31,7 +31,7 @@ var isMissedPickup: Bool { get }
 @property (atomic, readonly, getter=isMissedPickup) BOOL missedPickup;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when your ride service did not pick up of the user, otherise it is [`false`](../../Swift/false.md). The method you use to create an instance of this class automatically sets the value of this property.
 

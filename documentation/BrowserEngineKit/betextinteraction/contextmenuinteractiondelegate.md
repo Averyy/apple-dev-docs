@@ -21,7 +21,7 @@ weak var contextMenuInteractionDelegate: (any UIContextMenuInteractionDelegate)?
 @property (nonatomic, weak) id<UIContextMenuInteractionDelegate> contextMenuInteractionDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 Set this object to receive delegate callbacks from the [`contextMenuInteraction`](./contextmenuinteraction.md).
 

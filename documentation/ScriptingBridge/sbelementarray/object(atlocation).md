@@ -20,11 +20,11 @@ func object(atLocation location: Any) -> Any
 - (ObjectType) objectAtLocation:(id) location;
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the [`SBObject`](../sbobject.md) object identified by `loc` or `nil` if the object couldn’t be located.
 
-#### Discussion
+## Discussion
 
 This method is a generalization of [`object(at:)`](../../Foundation/nsarray/object%28at%29.md) for applications where the “index” is not simply an integer. For example, Finder can specify objects using a [`NSURL`](../../Foundation/nsurl.md) object as a location. In OSA this is known as “absolute position,” a generalization of the notion of “index” in Foundation—it could be an integer, but it doesn’t have to be. A single object may even have a number of different “absolute position” values depending on the container.
 

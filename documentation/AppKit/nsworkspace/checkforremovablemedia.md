@@ -17,7 +17,7 @@ Polls the system’s drives for any disks that have been inserted but not yet mo
 - (void) checkForRemovableMedia;
 ```
 
-#### Discussion
+## Discussion
 
 This method doesn’t wait until such disks are mounted; instead, it requests that the disk be mounted asynchronously and returns immediately. Currently has no effect.
 

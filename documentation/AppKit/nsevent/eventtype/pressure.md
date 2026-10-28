@@ -19,7 +19,7 @@ case pressure
 NSEventTypePressure
 ```
 
-#### Discussion
+## Discussion
 
 This type of event requires a 64-bit processor.
 

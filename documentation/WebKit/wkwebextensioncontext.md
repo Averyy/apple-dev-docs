@@ -24,7 +24,7 @@ class WKWebExtensionContext
 @interface WKWebExtensionContext : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class provides methods for managing the extension’s permissions, allowing it to inject content, run background logic, show popovers, and display other web-based UI to the user.
 

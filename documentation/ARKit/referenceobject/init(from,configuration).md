@@ -15,7 +15,7 @@ Initializes a reference object from a URL, with reference object configuration.
 init(from url: URL, configuration: ReferenceObject.Configuration) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `ObjectTrackingProvider.Error`
 

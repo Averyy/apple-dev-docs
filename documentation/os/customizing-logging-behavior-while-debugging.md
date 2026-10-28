@@ -5,7 +5,7 @@
 
 Control which log events are recorded.
 
-#### Overview
+## Overview
 
 Logging behavior is normally governed by the system. However, while debugging in macOS, you can enable different logging levels for a subsystem using the `log` command-line tool’s `config` argument while logged in as root. The example below shows how to enable debug-level logging for a subsystem:
 

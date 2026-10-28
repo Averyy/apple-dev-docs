@@ -19,7 +19,7 @@ case closingState
 NSDrawerClosingState
 ```
 
-#### Discussion
+## Discussion
 
 The drawer is in the process of closing.
 

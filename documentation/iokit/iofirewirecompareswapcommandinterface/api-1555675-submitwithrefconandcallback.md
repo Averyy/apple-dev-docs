@@ -16,11 +16,11 @@ Set the command refCon value and callback handler, and submit the command to Fir
 IOReturn (*SubmitWithRefconAndCallback)(IOFireWireLibCommandRef self, void *refCon, IOFireWireLibCommandCallback inCallback);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn result code indicating whether or not the command was successfully submitted
 
-#### Discussion
+## Discussion
 
 Availability: (for interfaces obtained with ID)
 

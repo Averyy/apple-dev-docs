@@ -21,7 +21,7 @@ A type that represents Apple icon data.
 extern UTType * const UTTypeICNS;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.icns`.
 

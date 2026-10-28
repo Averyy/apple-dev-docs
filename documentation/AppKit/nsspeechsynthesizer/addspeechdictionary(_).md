@@ -19,7 +19,7 @@ func addSpeechDictionary(_ speechDictionary: [NSSpeechSynthesizer.DictionaryKey 
 - (void) addSpeechDictionary:(NSDictionary<NSString *,id> *) speechDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 See the discussion of [`UseSpeechDictionary(_:_:)`](../../applicationservices/api-1463688-usespeechdictionary.md) in [Speech Synthesis Manager](../../applicationservices/speech_synthesis_manager.md) for more information.
 

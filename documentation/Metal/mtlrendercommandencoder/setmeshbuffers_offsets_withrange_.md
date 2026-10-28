@@ -20,7 +20,7 @@ Assigns multiple buffers to a range of entries in the mesh shader argument table
 - (void) setMeshBuffers:(id<MTLBuffer> const[]) buffers offsets:(const NSUInteger[]) offsets withRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the texture at each index is `nil`.
 

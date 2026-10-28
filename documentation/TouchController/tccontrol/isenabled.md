@@ -22,7 +22,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, assign, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 If disabled, it won’t respond to touches.
 

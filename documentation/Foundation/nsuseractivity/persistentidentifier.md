@@ -28,7 +28,7 @@ var persistentIdentifier: NSUserActivityPersistentIdentifier? { get set }
 
 - [Supporting the creation of Quick Notes](../supporting-the-creation-of-quick-notes.md)
 
-#### Discussion
+## Discussion
 
 Set this property to a value that identifies the user activity so you can later delete it with [`deleteSavedUserActivities(withPersistentIdentifiers:completionHandler:)`](./deletesaveduseractivities%28withpersistentidentifiers,completionhandler%29.md). For example, if the user checks the weather for Cupertino each morning from home, the weather app sets the persistent identifier to the city name (Cupertino). When the user deletes Cupertino from the weather app, the app deletes the user activity associated with the identifier, “Cupertino”.
 

@@ -19,7 +19,7 @@ var representedElementKind: String? { get }
 @property (readonly, nullable) NSString * representedElementKind;
 ```
 
-#### Discussion
+## Discussion
 
 For supplementary and decoration views, you use this string to distinguish between views in a given section. You also use this string to identify the intended purpose of the view in your collection view interface.
 

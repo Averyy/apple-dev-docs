@@ -15,7 +15,7 @@ The MPEG-4 AAC Enhanced Low Delay Version 2 audio object format.
 MPEG4AAC_ELD_V2
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

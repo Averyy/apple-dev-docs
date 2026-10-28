@@ -24,11 +24,11 @@ var guidedAccessRestrictionIdentifiers: [String]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSString *> * guidedAccessRestrictionIdentifiers;
 ```
 
-#### Return Value
+## Return Value
 
 An array of NSString objects, each of which represents a custom restriction.
 
-#### Discussion
+## Discussion
 
 Your delegate must implement this method and return an array with an identifier string for each custom guided access restriction you wish to provide in your app.
 

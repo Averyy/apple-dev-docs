@@ -20,13 +20,13 @@ object DataTable
 - [Adding a JSON Table](../AppleNews/adding-a-json-table.md)
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md)
 
-#### Discussion
+## Discussion
 
 Add a `DataTable` component that uses table data provided in a JSON format. Information about the table, including the data itself, is provided by the `data` property, whose value is a [`RecordStore`](./recordstore.md) object that contains both the table data and information about the data, such as data types and header labels.
 
 You can apply styles to table rows, columns, and cells using a [`ComponentStyle`](./componentstyle.md) object that has a [`TableStyle`](./tablestyle.md) defined.
 
-##### Example
+### Example
 
 ```json
 {

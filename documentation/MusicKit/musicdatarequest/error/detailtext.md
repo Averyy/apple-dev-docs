@@ -21,7 +21,7 @@ Additional detailed information about the cause of the error.
 let detailText: String
 ```
 
-#### Discussion
+## Discussion
 
 This is to help identify possible resolutions.
 

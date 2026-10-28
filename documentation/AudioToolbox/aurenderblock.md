@@ -24,7 +24,7 @@ typealias AURenderBlock = (UnsafeMutablePointer<AudioUnitRenderActionFlags>, Uns
 typedef int (^)(enum AudioUnitRenderActionFlags *, const struct AudioTimeStamp *, unsigned int, long, struct AudioBufferList *, int (^)(enum AudioUnitRenderActionFlags *, const struct AudioTimeStamp *, unsigned int, long, struct AudioBufferList *) __attribute__((nonblocking))) __attribute__((nonblocking)) AURenderBlock;
 ```
 
-#### Discussion
+## Discussion
 
 All realtime operations are implemented using blocks to avoid Objective-C method dispatching and the possibility of blocking.
 

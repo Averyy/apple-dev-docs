@@ -5,7 +5,7 @@
 
 Check regional regulations for possible requirements for your Apple Pay-based implementation.
 
-#### Overview
+## Overview
 
 Some regional regulations may require specific configurations in your Apple Pay implementation, such as including certain options in properties. Below is some guidance on configuring your implementation in current Apple Pay markets.
 

@@ -19,11 +19,11 @@ init?(name fontName: String, size fontSize: CGFloat)
 + (NSFont *) fontWithName:(NSString *) fontName size:(CGFloat) fontSize;
 ```
 
-#### Return Value
+## Return Value
 
 A font object for the specified name and size.
 
-#### Discussion
+## Discussion
 
 The value of the `fontName` parameter is a fully specified family-face name, preferably the PostScript name, such as Helvetica-BoldOblique or Times-Roman. (The Font Book app displays PostScript names of fonts in the Font Info panel.)
 

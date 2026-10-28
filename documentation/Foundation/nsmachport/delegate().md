@@ -25,7 +25,7 @@ func delegate() -> (any NSMachPortDelegate)?
 - (id<NSMachPortDelegate>) delegate;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver’s delegate.
 

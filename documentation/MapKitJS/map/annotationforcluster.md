@@ -22,7 +22,7 @@ set annotationForCluster(
 );
 ```
 
-#### Discussion
+## Discussion
 
 MapKit JS invokes this delegate method when it creates a cluster annotation, or when a member annotation within the cluster changes.
 

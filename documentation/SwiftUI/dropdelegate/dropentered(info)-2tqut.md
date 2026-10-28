@@ -20,7 +20,7 @@ Tells the delegate a validated drop has entered the modified view.
 @preconcurrency func dropEntered(info: DropInfo)
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation does nothing.
 

@@ -19,7 +19,7 @@ protocol TVTopShelfContent : NSObjectProtocol
 @protocol TVTopShelfContent <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Don’t adopt this protocol in your own classes. The TVServices framework adopts this protocol in classes that can contain top shelf content, such as the [`TVTopShelfCarouselContent`](./tvtopshelfcarouselcontent.md) class.
 

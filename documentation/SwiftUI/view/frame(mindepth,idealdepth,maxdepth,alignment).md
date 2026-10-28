@@ -16,11 +16,11 @@ Positions this view within an invisible frame having the specified depth constra
 nonisolated func frame(minDepth: CGFloat? = nil, idealDepth: CGFloat? = nil, maxDepth: CGFloat? = nil, alignment: DepthAlignment = .center) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with flexible dimensions given by the call’s non-`nil` parameters.
 
-#### Discussion
+## Discussion
 
 Always specify at least one size characteristic when calling this method. Pass `nil` or leave out a characteristic to indicate that the frame should adopt this view’s sizing behavior, constrained by the other non-`nil` arguments.
 

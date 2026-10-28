@@ -19,7 +19,7 @@ The default number of frames per second.
 UIViewAnimationOptionPreferredFramesPerSecondDefault
 ```
 
-#### Discussion
+## Discussion
 
 It’s recommended that you use the default value unless you have identified a specific need for an explicit rate.
 

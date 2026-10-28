@@ -22,7 +22,7 @@ convenience init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized toolbar object.
 

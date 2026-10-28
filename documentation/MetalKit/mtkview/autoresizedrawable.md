@@ -24,7 +24,7 @@ var autoResizeDrawable: Bool { get set }
 @property (nonatomic) BOOL autoResizeDrawable;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is [`true`](../../Swift/true.md), the view automatically resizes its underlying color, depth, stencil, and multisample textures when the view is resized. If the value is [`false`](../../Swift/false.md), you must explicitly set [`drawableSize`](./drawablesize.md) to change the size of these objects.
 

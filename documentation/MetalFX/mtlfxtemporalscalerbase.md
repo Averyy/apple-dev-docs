@@ -24,7 +24,7 @@ protocol MTLFXTemporalScalerBase : MTLFXFrameInterpolatableScaler
 @protocol MTLFXTemporalScalerBase <MTLFXFrameInterpolatableScaler>
 ```
 
-#### Overview
+## Overview
 
 The MetalFX temporal scaler increases the size of your input texture to a larger output texture. You can use the scaler to upscale every frame of your app’s scene or rendering in real time. With a scaler, you can draw more complicated scenes in less time by intentionally rendering to a lower resolution to save time before upscaling.
 
@@ -40,13 +40,13 @@ Upscale a rendering by following these steps for every render pass:
 3. Set the scaler’s [`outputTexture`](./mtlfxtemporalscalerbase/outputtexture.md) property to your destination texture.
 4. Encode the upscale commands to a command buffer by calling the temporal scaler’s [`encode(commandBuffer:)`](./mtlfxtemporalscaler/encode%28commandbuffer%29.md) method.
 
-#### Conforming to texture usage requirements
+## Conforming to texture usage requirements
 
 Temporal scalers expose properties, such as [`colorTextureUsage`](./mtlfxtemporalscalerbase/colortextureusage.md), that indicate requirements for your textures to be compatible with it. These properties indicate the minimum set of `MTLTextureUsage` bits that you are responsible for setting in your texture descriptors for this spatial scaler to use them.
 
 Your game or app can set extra usage bits on your textures without losing compatibility, as long at its maintains the minimum set the scaler requests.
 
-#### Assigning input and output textures
+## Assigning input and output textures
 
 When you use an instance of a class that conforms to this protocol, you typically set its input and output textures, as well as other properties, and then encode its work to a command buffer.
 

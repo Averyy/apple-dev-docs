@@ -25,7 +25,7 @@ case roundTowardPositiveInfinity
 kCMTimeRoundingMethod_RoundTowardPositiveInfinity
 ```
 
-#### Discussion
+## Discussion
 
 This method rounds toward [`positiveInfinity`](../cmtime/positiveinfinity.md) if the fraction isn’t equal to `0`.
 

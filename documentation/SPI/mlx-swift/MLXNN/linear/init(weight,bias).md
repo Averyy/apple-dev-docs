@@ -17,7 +17,7 @@ Initializer meant for subclasses to provide weight and bias arrays directly.
 init(weight: MLXArray, bias: MLXArray? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This is used e.g. by [`QuantizedLinear`](../quantizedlinear.md) to provide quantized weights and biases rather than have [`Linear`](../linear.md) compute them.
 

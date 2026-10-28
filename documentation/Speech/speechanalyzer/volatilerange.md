@@ -20,7 +20,7 @@ The range of results that can change.
 final var volatileRange: CMTimeRange? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property conveys the “finalized” idea. Results within the volatile range may be replaced by updated results, but results that lie outside the volatile range will not be replaced. The application can safely consolidate results that lay outside the range.
 

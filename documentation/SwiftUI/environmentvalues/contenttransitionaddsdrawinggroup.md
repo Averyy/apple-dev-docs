@@ -21,7 +21,7 @@ A Boolean value that controls whether views that render content transitions use 
 var contentTransitionAddsDrawingGroup: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Setting this value to `true` causes SwiftUI to wrap content transitions with a [`drawingGroup(opaque:colorMode:)`](../view/drawinggroup%28opaque,colormode%29.md) modifier.
 

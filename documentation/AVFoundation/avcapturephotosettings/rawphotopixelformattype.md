@@ -22,7 +22,7 @@ var rawPhotoPixelFormatType: OSType { get }
 @property (readonly) OSType rawPhotoPixelFormatType;
 ```
 
-#### Discussion
+## Discussion
 
 This property is read-only—you specify a RAW pixel format when creating a settings object with the [`init(rawPixelFormatType:)`](./init%28rawpixelformattype%29.md), [`init(rawPixelFormatType:processedFormat:)`](./init%28rawpixelformattype,processedformat%29.md) initializer.
 

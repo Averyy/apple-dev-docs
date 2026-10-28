@@ -25,7 +25,7 @@ class NSDerivedAttributeDescription
 @interface NSDerivedAttributeDescription : NSAttributeDescription
 ```
 
-#### Overview
+## Overview
 
 Use derived attributes to optimize fetch performance; for example:
 

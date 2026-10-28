@@ -24,7 +24,7 @@ typealias CMGyroHandler = (CMGyroData?, (any Error)?) -> Void
 typedef void (^)(CMGyroData *, NSError *) CMGyroHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Blocks of type `CMGyroHandler` are called when there is gyroscope data to process. You pass the block into [`startGyroUpdates(to:withHandler:)`](./cmmotionmanager/startgyroupdates%28to,withhandler%29.md) as the second argument. Blocks of this type return no value but take two arguments:
 

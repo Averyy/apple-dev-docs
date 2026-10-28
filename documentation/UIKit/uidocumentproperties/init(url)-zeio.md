@@ -22,7 +22,7 @@ init(url: URL)
 - (instancetype) initWithURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 When you initialize a document properties object with a URL, UIKit automatically finds the corresponding metadata and stores it in the document properties object’s [`metadata`](./metadata.md) property.
 

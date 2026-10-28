@@ -24,7 +24,7 @@ var AVAudioSessionSetActiveFlags_NotifyOthersOnDeactivation: Int { get }
 AVAudioSessionSetActiveFlags_NotifyOthersOnDeactivation
 ```
 
-#### Discussion
+## Discussion
 
 This flag works when passed in the `flags` parameter of the [`setActive(_:withFlags:)`](./avaudiosession/setactive%28_,withflags%29.md) instance method. You use this flag only when deactivating your audio session.
 

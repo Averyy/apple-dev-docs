@@ -19,7 +19,7 @@ static let hidden: NSBindingName
 extern NSBindingName NSHiddenBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

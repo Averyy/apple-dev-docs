@@ -23,7 +23,7 @@ var allPresses: Set<UIPress> { get }
 @property (nonatomic, readonly) NSSet<UIPress *> * allPresses;
 ```
 
-#### Return Value
+## Return Value
 
 The set of [`UIPress`](../uipress.md) instances that participated in this event.
 

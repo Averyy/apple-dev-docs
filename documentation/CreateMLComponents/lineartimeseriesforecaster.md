@@ -21,7 +21,7 @@ A time-series forecasting estimator.
 struct LinearTimeSeriesForecaster<Scalar> where Scalar : MLShapedArrayScalar, Scalar : BinaryFloatingPoint
 ```
 
-#### Overview
+## Overview
 
 > **Note**: Only `Float` and `Double` are currently supported as the Scalar type. You may get faster training when using `Float`.
 

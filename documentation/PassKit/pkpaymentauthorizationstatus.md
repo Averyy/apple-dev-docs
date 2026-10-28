@@ -24,7 +24,7 @@ enum PKPaymentAuthorizationStatus
 enum PKPaymentAuthorizationStatus : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You pass the payment authorization status along with related [`errors`](./pkpaymentauthorizationresult/errors.md), if any,  to the completion block in [`PKPaymentAuthorizationResult`](./pkpaymentauthorizationresult.md).
 

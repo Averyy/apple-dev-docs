@@ -16,11 +16,11 @@ Returns the token object representing the conversation in which the receiver was
 @property (retain, readonly) id conversation;
 ```
 
-#### Return Value
+## Return Value
 
 The token object representing the conversation in which the receiver was created.
 
-#### Discussion
+## Discussion
 
 If both ends of the distributed objects connection has [`independentConversationQueueing`](../nsconnection/independentconversationqueueing.md) set to [`false`](../../Swift/false.md) (the default), the conversation object is always `nil`. Otherwise, it is either a proxy (or a copy) of the object created by the sender of the message or a locally created object, depending which end of the connection has independent queueing on.
 

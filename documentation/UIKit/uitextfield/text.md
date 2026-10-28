@@ -23,7 +23,7 @@ var text: String? { get set }
 @property (nonatomic, copy, nullable) NSString * text;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a new value to this property also replaces the value of the [`attributedText`](./attributedtext.md) property with the same text, albeit without any inherent style attributes. Instead the text view styles the new string using the [`font`](./font.md), [`textColor`](./textcolor.md), and other style-related properties of the class.
 

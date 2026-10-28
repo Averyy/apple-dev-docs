@@ -5,7 +5,7 @@
 
 Manage entities that you store as assets on disk.
 
-#### Overview
+## Overview
 
 If you bundle 3D assets with your app, or download them from the network into local file storage, you need a way to load them at runtime. RealityKit provides a collection of methods that you use to load USD and Reality files into [`Entity`](./entity.md) instances.
 

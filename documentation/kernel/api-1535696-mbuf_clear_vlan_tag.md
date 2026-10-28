@@ -13,11 +13,11 @@
 errno_t mbuf_clear_vlan_tag(mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 This function will clear any vlan tag associated with the mbuf.
 

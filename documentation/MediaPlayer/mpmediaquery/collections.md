@@ -22,7 +22,7 @@ var collections: [MPMediaItemCollection]? { get }
 @property (nonatomic, readonly, nullable) NSArray<MPMediaItemCollection *> * collections;
 ```
 
-#### Discussion
+## Discussion
 
 The system groups and sorts the returned array of collections by the `groupingType` of the media query. The following code listing demonstrates how to use this property:
 

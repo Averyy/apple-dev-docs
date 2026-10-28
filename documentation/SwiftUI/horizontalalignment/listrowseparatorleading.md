@@ -19,7 +19,7 @@ A guide marking the leading edge of a `List` row separator.
 static let listRowSeparatorLeading: HorizontalAlignment
 ```
 
-#### Discussion
+## Discussion
 
 Use this guide to align the leading end of the bottom `List` row separator with any other horizontal guide of a view that is part of the cell content.
 

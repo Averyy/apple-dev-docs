@@ -25,7 +25,7 @@ func rollback()
 - (void) rollback;
 ```
 
-#### Discussion
+## Discussion
 
 This method does not refetch data from the persistent store or stores.
 

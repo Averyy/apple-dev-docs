@@ -20,11 +20,11 @@ Creates the specified view controller from the storyboard and initializes it usi
 @preconcurrency func instantiateViewController<ViewController>(identifier: String, creator: ((NSCoder) -> ViewController?)? = nil) -> ViewController where ViewController : UIViewController
 ```
 
-#### Return Value
+## Return Value
 
 The view controller corresponding to the specified identifier string. If no view controller has the given identifier, this method throws an exception.
 
-#### Discussion
+## Discussion
 
 Use this method to create a view controller object to present programmatically. Each time you call this method, it creates a new instance of the view controller using the block you provide.
 

@@ -21,7 +21,7 @@ Set the idle timeout for the QUIC connection, in milliseconds.
 func idleTimeout(_ timeout: Int) -> QUIC
 ```
 
-#### Discussion
+## Discussion
 
 If no packets are sent or received within this timeout, the QUIC connection will be closed.
 

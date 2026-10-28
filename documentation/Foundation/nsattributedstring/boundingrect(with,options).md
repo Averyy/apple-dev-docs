@@ -21,11 +21,11 @@ func boundingRect(with size: NSSize, options: NSString.DrawingOptions = []) -> N
 - (NSRect) boundingRectWithSize:(NSSize) size options:(NSStringDrawingOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 The bounding rectangle in the current graphics context.
 
-#### Discussion
+## Discussion
 
 The origin of the rectangle returned from this method is the first glyph origin.
 

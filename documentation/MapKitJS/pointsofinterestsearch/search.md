@@ -17,11 +17,11 @@ search(
 ): Promise<PointsOfInterestSearchResponse>;
 ```
 
-#### Return Value
+## Return Value
 
 A promise that resolves with a [`PointsOfInterestSearchResponse`](../pointsofinterestsearchresponse.md) on success, or rejects with an `Error` on failure.
 
-#### Discussion
+## Discussion
 
 The [`search()`](./search.md) method returns a set of points of interest within the region defined and matching the [`PointOfInterestFilter`](../pointofinterestfilter.md).
 

@@ -20,11 +20,11 @@ func FFEffectDownload(_ effectReference: FFEffectObjectReference!) -> HRESULT
 extern HRESULT FFEffectDownload(FFEffectObjectReference effectReference);
 ```
 
-#### Return Value
+## Return Value
 
 If the method succeeds, the return value is FF_OK or S_FALSE. If the method fails, the return value can be one of the following error values:
 
-#### Discussion
+## Discussion
 
 FFERR_INVALIDPARAM
 
@@ -40,7 +40,7 @@ FFERR_EFFECTTYPEMISMATCH
 
 If the method returns S_FALSE, the effect has already been downloaded to the device.
 
-#### Discussion
+## Discussion
 
 It is valid to update an effect while it is playing. The semantics of such an operation are explained in the reference for FFEffectSetParameters.
 

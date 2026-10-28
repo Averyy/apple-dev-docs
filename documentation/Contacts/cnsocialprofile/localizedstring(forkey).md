@@ -24,7 +24,7 @@ class func localizedString(forKey key: String) -> String
 + (NSString *) localizedStringForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The localized name of the property.
 

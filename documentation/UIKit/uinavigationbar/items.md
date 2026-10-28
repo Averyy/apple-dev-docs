@@ -23,7 +23,7 @@ var items: [UINavigationItem]? { get set }
 @property (nonatomic, copy, nullable) NSArray<UINavigationItem *> * items;
 ```
 
-#### Discussion
+## Discussion
 
 The bottom item is at index `0`, the back item is at index `n-2`, and the top item is at index `n-1`, where `n` is the number of items in the array.
 

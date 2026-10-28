@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatMakeAtOriginWithVector(SPVector3DFloat origin, SPVector3DFloat size);
 ```
 
-#### Return Value
+## Return Value
 
 A new rectangle stucture.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle at the specified origin using Spatial vectors.
 

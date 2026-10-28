@@ -24,11 +24,11 @@ Returns a value for the specified key from this immutable snapshot.
 func value(forKey key: AbsoluteConfigKey, type: ConfigType) throws -> LookupResult
 ```
 
-#### Return Value
+## Return Value
 
 The lookup result containing the value and encoded key, or nil if not found.
 
-#### Discussion
+## Discussion
 
 Unlike [`value(forKey:type:)`](../configprovider/value%28forkey,type%29.md), this method always returns the same value for identical parameters because the snapshot represents a fixed point in time. Values can be accessed synchronously and efficiently.
 

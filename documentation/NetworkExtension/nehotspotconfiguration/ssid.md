@@ -23,7 +23,7 @@ var ssid: String { get }
 @property (readonly) NSString * SSID;
 ```
 
-#### Discussion
+## Discussion
 
 An SSID is a string of 1-32 characters.
 

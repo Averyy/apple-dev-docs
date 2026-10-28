@@ -24,7 +24,7 @@ func addPlayers(to match: GKMatch)
 - (void) addPlayersToMatch:(GKMatch *) match;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method prior to presenting the view controller to the player. This method updates the view controller’s interface to show the players already connected to the match.
 

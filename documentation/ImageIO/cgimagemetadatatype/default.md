@@ -25,7 +25,7 @@ case `default`
 kCGImageMetadataTypeDefault
 ```
 
-#### Discussion
+## Discussion
 
 When you create new tags, the system assigns this value initially. The system uses the Core Foundation type of the metadata tag’s value to determine an appropriate type. During the serialization process, the system converts the type automatically to a nondefault value.
 

@@ -6,7 +6,7 @@
 
 An atom that holds a list of actual metadata values that are present in the metadata atom.
 
-#### Overview
+## Overview
 
 For more information, see [`Metadata item list atom`](../metadata_item_list_atom.md).
 

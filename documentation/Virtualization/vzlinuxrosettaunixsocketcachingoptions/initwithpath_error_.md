@@ -15,7 +15,7 @@ Creates a new Rosetta caching options object for a UNIX domain socket with the p
 - (instancetype) initWithPath:(NSString *) path error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 You can optionally configure Rosetta to use cached translations from the Rosetta translation daemon communicating through a UNIX domain socket.
 

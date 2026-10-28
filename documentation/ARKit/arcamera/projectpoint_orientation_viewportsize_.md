@@ -16,11 +16,11 @@ Returns the projection of a point from the 3D world space detected by ARKit into
 - (CGPoint) projectPoint:(simd_float3) point orientation:(UIInterfaceOrientation) orientation viewportSize:(CGSize) viewportSize;
 ```
 
-#### Return Value
+## Return Value
 
 The projection of the specified point into a 2D pixel coordinate space whose origin is in the upper left corner and whose size matches that of the `viewportSize` parameter.
 
-#### Discussion
+## Discussion
 
 If you display AR content with SceneKit, the `ARSCNView` class provides an otherwise equivalent [`projectPoint(_:)`](../../SceneKit/scnscenerenderer/projectpoint%28_%29.md) method that requires fewer parameters (because the view can infer its orientation and size).
 

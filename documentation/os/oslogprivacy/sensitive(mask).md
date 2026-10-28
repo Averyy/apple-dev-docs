@@ -21,7 +21,7 @@ Returns a privacy structure that marks an interpolated value as sensitive, and c
 static func sensitive(mask: OSLogPrivacy.Mask) -> OSLogPrivacy
 ```
 
-#### Return Value
+## Return Value
 
 A privacy object that redacts a sensitive value.
 

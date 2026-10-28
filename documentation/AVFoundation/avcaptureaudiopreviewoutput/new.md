@@ -15,7 +15,7 @@ Returns a new audio preview output object.
 + (instancetype) new;
 ```
 
-#### Return Value
+## Return Value
 
 An audio preview output.
 

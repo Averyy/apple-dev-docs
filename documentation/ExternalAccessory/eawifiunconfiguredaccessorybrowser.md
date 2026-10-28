@@ -23,7 +23,7 @@ class EAWiFiUnconfiguredAccessoryBrowser
 @interface EAWiFiUnconfiguredAccessoryBrowser : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`EAWiFiUnconfiguredAccessoryBrowser`](./eawifiunconfiguredaccessorybrowser.md) class gives your app access to the MFi Wireless Accessory Configuration process. You use a browser object to scan for unconfigured accessories, connect them to the user’s Wi-Fi infrastructure, and configure attributes of the accessories. An accessory is represented by an instance of [`EAWiFiUnconfiguredAccessory`](./eawifiunconfiguredaccessory.md).
 

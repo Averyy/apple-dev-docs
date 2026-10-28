@@ -21,11 +21,11 @@ func SecACLUpdateAuthorizations(_ acl: SecACL, _ authorizations: CFArray) -> OSS
 OSStatus SecACLUpdateAuthorizations(SecACLRef acl, CFArrayRef authorizations);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 An ACL entry includes a list of trusted apps, the name of the keychain item as it appears in user prompts, the prompt selector flag, and a list of one or more operations to which this ACL entry applies. Use this method to set a list of operations for an ACL entry, or set the [`kSecACLAuthorizationAny`](./ksecaclauthorizationany.md) tag to allow all operations. Use the [`SecACLSetContents(_:_:_:_:)`](./secaclsetcontents%28_,_,_,_%29.md) method to set the other information.
 

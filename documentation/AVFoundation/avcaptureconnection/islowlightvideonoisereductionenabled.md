@@ -24,7 +24,7 @@ var isLowLightVideoNoiseReductionEnabled: Bool { get set }
 @property (nonatomic, getter=isLowLightVideoNoiseReductionEnabled) BOOL lowLightVideoNoiseReductionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 A `BOOL` indicating whether low light video noise reduction is enabled on the connection. To set this property directly, first set [`automaticallyEnablesLowLightVideoNoiseReduction`](./automaticallyenableslowlightvideonoisereduction.md) to `false`; setting this property while [`automaticallyEnablesLowLightVideoNoiseReduction`](./automaticallyenableslowlightvideonoisereduction.md) is `true` throws an `NSInvalidArgumentException`. This property may only be set to `true` if the connection’s [`isLowLightVideoNoiseReductionSupported`](./islowlightvideonoisereductionsupported.md) property returns `true`, otherwise an `NSInvalidArgumentException` is thrown. This property is key-value observable.
 

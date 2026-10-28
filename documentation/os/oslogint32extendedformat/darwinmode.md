@@ -21,7 +21,7 @@ A format that displays a 32-bit integer as a Darwin file mode.
 case darwinMode
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to format the interpolated value as a Darwin file mode, such as `-rwx------`. Because Darwin uses octal values to represent file modes numerically, pass an octal literal to the formatter. Alternatively, convert the octal value to its 32-bit integer equivalent and interpolate that instead. For more information about using octal literals, see [Numeric Literals](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID323).
 

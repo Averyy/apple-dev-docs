@@ -23,11 +23,11 @@ func IOServiceGetMatchingService(_ mainPort: mach_port_t, _ matching: CFDictiona
 io_service_t IOServiceGetMatchingService(mach_port_t mainPort, CFDictionaryRef matching);
 ```
 
-#### Return Value
+## Return Value
 
 The first service matched is returned on success. The service must be released by the caller.
 
-#### Discussion
+## Discussion
 
 This is the preferred method of finding IOService objects currently registered by IOKit (that is, objects that have had their registerService() methods invoked). To find IOService objects that aren't yet registered, use an iterator as created by IORegistryEntryCreateIterator(). IOServiceAddMatchingNotification can also supply this information and install a notification of new IOServices. The matching information used in the matching dictionary may vary depending on the class of service being looked up.
 

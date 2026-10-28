@@ -25,7 +25,7 @@ var concurrencyType: NSManagedObjectContextConcurrencyType { get }
 @property (readonly) NSManagedObjectContextConcurrencyType concurrencyType;
 ```
 
-#### Discussion
+## Discussion
 
 For more details on concurrency type, see [Concurrency](../nsmanagedobjectcontext.md#Concurrency).
 

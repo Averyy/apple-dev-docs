@@ -25,7 +25,7 @@ var entityVersionHashesByName: [String : Data] { get }
 @property (copy, readonly) NSDictionary<NSString *,NSData *> * entityVersionHashesByName;
 ```
 
-#### Discussion
+## Discussion
 
 Core Data use the dictionary of version hash information is to determine schema compatibility.
 

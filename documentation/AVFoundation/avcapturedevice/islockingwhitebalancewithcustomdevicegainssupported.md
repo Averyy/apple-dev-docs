@@ -22,7 +22,7 @@ var isLockingWhiteBalanceWithCustomDeviceGainsSupported: Bool { get }
 @property (nonatomic, readonly, getter=isLockingWhiteBalanceWithCustomDeviceGainsSupported) BOOL lockingWhiteBalanceWithCustomDeviceGainsSupported;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is [`false`](../../Swift/false.md), calling the [`setWhiteBalanceModeLocked(with:completionHandler:)`](./setwhitebalancemodelocked%28with,completionhandler%29.md) method with a white balance gains value other than [`currentWhiteBalanceGains`](./currentwhitebalancegains.md) throws an exception.
 

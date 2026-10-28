@@ -21,7 +21,7 @@ var matchingID: String? { get set }
 @property (nonatomic, strong, nullable) NSString * matchingID;
 ```
 
-#### Discussion
+## Discussion
 
 See GSMA SGP.22 for description. This property is optional.
 

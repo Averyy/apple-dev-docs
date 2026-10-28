@@ -26,7 +26,7 @@ func union(_ point: SIMD3<Float>) -> BoundingBox
 func union(_ other: BoundingBox) -> BoundingBox
 ```
 
-#### Return Value
+## Return Value
 
 The new bounding box.
 

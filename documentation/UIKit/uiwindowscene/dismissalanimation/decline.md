@@ -23,7 +23,7 @@ case decline
 UIWindowSceneDismissalAnimationDecline
 ```
 
-#### Discussion
+## Discussion
 
 Use this type of animation when the scene contains changes that you don’t want to save. For example, a mail app might use this animation when discarding a draft email message or saving it for later.
 

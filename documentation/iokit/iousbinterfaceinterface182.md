@@ -18,7 +18,7 @@ typedef struct IOUSBInterfaceStruct182 {
 } IOUSBInterfaceInterface182;
 ```
 
-#### Overview
+## Overview
 
 The functions listed here include all of the functions defined for the IOUSBInterfaceInterface and some new functions that are available in macOS 10.0.4 and later.
 
@@ -58,7 +58,7 @@ The functions listed here include all of the functions defined for the IOUSBInte
 - [ReadPipe](./iousbinterfaceinterface182/api-1559746-readpipe.md)
 - [ReadPipeAsync](./iousbinterfaceinterface182/api-1559650-readpipeasync.md)
 - [ReadPipeAsyncTO](./iousbinterfaceinterface182/api-1559295-readpipeasyncto.md)
-  Performs an asynchronous read on a **BULK IN **pipe, with specified timeout values.
+  Performs an asynchronous read on a **BULK IN** pipe, with specified timeout values.
 - [ReadPipeTO](./iousbinterfaceinterface182/api-1559627-readpipeto.md)
   Performs a read on a **BULK IN** pipe, specifying timeout values.
 - [Release](./iousbinterfaceinterface182/api-1559674-release.md)

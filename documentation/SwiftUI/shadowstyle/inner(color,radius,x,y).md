@@ -21,11 +21,11 @@ Creates a custom inner shadow style.
 static func inner(color: Color = .init(.sRGBLinear, white: 0, opacity: 0.55), radius: CGFloat, x: CGFloat = 0, y: CGFloat = 0) -> ShadowStyle
 ```
 
-#### Return Value
+## Return Value
 
 A new shadow style.
 
-#### Discussion
+## Discussion
 
 Inner shadows draw on top of the source content by blurring, tinting, inverting and offsetting its per-pixel alpha values.
 

@@ -23,7 +23,7 @@ static func == (lhs: FlattenCollection<Base>.Index, rhs: FlattenCollection<Base>
 
 Available when `Base` conforms to `Collection` and `Base.Element` conforms to `Collection`.
 
-#### Discussion
+## Discussion
 
 Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
 

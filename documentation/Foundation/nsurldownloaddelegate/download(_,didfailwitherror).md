@@ -19,11 +19,11 @@ optional func download(_ download: NSURLDownload, didFailWithError error: any Er
 - (void) download:(NSURLDownload *) download didFailWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Any partially downloaded file will be deleted.
 
-##### Special Considerations
+### Special Considerations
 
 Once the delegate receives this message, it will receive no further messages for `download`.
 

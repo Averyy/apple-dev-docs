@@ -21,11 +21,11 @@ Computes the components which are indicated by the componentDesc description str
 extern Boolean CFCalendarDecomposeAbsoluteTime(CFCalendarRef calendar, CFAbsoluteTime at, const char *componentDesc, ...);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the function is able to compute the components indicated by the `componentDesc` description string for the given absolute time, and fills the values to the components given in the varargs. Returns `FALSE` if the absolute time falls outside the defined range of the calendar, or the computation cannot be performed.
 
-#### Discussion
+## Discussion
 
 The Weekday ordinality, when requested, refers to the next larger (than Week) of the requested units. Some computations can take a relatively long time to perform.
 

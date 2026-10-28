@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app may have read-only access to file
 - **Name**: `com.apple.security.files.user-selected.read-only` (Access User Selected Files (Read Only))
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the App Sandbox capability in Xcode and set User Selected File to Read Only.
 

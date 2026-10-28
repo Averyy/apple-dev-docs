@@ -19,7 +19,7 @@ var keyViewSelectionDirection: NSWindow.SelectionDirection { get }
 @property (readonly) NSSelectionDirection keyViewSelectionDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property can be one of the values described in [`NSWindow.SelectionDirection`](./selectiondirection.md).
 

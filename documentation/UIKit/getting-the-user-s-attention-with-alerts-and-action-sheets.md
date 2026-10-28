@@ -5,7 +5,7 @@
 
 Present important information to a person or prompt them about an important choice.
 
-#### Overview
+## Overview
 
 Display an alert or action sheet when your app requires additional information or acknowledgment from a person. Alerts and action sheets interrupt your app’s normal flow to display a message to the person. The following image shows an alert, which the person dismisses by selecting one of the listed options.
 
@@ -17,7 +17,7 @@ The following image shows an action sheet. A person dismisses an action sheet by
 
 > ❗ **Important**:  Alerts and action sheets are interruptions to someone’s current task, so use them sparingly and only when absolutely needed. For detailed guidance on when to use them, see “Action sheets” and “Alerts” in [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/presentation).
 
-##### Present an alert
+### Present an alert
 
 To display an alert, create a [`UIAlertController`](./uialertcontroller.md) object, configure it, and then call [`present(_:animated:completion:)`](./uiviewcontroller/present%28_,animated,completion%29.md) with the object as a parameter, as shown in the following code. Configuring the alert controller includes specifying the title and message that you want the person to see and the actions they can select. Add at least one action — represented by a [`UIAlertAction`](./uialertaction.md) object — to an alert controller before you present it.
 
@@ -46,7 +46,7 @@ To display an alert, create a [`UIAlertController`](./uialertcontroller.md) obje
 }
 ```
 
-##### Present an action sheet
+### Present an action sheet
 
 Display an action sheet inside a popover on both iPhone and iPad. To display your action sheet in a popover, specify your popover’s anchor point using the [`popoverPresentationController`](./uiviewcontroller/popoverpresentationcontroller.md) property of your alert controller.
 

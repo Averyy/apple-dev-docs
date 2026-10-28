@@ -15,7 +15,7 @@ The abstract base class that represents an ornament.
 class UIOrnament
 ```
 
-#### Overview
+## Overview
 
 You don’t create an instance of this class directly. Instead use [`UIHostingOrnament`](./uihostingornament.md) when you want to add ornaments to a UIKit view controller.
 

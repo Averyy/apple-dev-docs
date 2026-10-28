@@ -25,7 +25,7 @@ static var readOnlyFileSystem: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 You attempted to modify a file or directory on a file system that was read-only at the time.
 

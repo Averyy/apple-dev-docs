@@ -23,7 +23,7 @@ static let from: UITransitionContextViewControllerKey
 extern UITransitionContextViewControllerKey const UITransitionContextFromViewControllerKey;
 ```
 
-#### Discussion
+## Discussion
 
 This view controller is typically the one presenting the “to” view controller or is the one being replaced by the “to” view controller.
 

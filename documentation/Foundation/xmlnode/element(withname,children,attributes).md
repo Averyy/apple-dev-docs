@@ -20,7 +20,7 @@ class func element(withName name: String, children: [XMLNode]?, attributes: [XML
 + (id) elementWithName:(NSString *) name children:(NSArray<NSXMLNode *> *) children attributes:(NSArray<NSXMLNode *> *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSXMLElement` object or `nil` if the object couldn’t be created.
 

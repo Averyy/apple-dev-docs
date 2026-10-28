@@ -21,7 +21,7 @@ A class representing a binding in the Program
 @interface MLModelStructureProgramBinding : NSObject
 ```
 
-#### Overview
+## Overview
 
 A Binding is either a previously defined name of a variable or a constant value in the Program.
 

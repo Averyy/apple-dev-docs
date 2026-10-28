@@ -15,7 +15,7 @@ Creates the default configuration for a badge.
 + (instancetype) defaultBadgeProperties;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`TVMediaItemContentBadgeProperties`](../tvmediaitemcontentbadgeproperties.md) instance.
 

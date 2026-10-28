@@ -21,11 +21,11 @@ Modifies the date interval format style to include the specified weekday style.
 func weekday(_ format: Date.IntervalFormatStyle.Symbol.Weekday = .abbreviated) -> Date.IntervalFormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date interval format style that includes the specified weekday style.
 
-#### Discussion
+## Discussion
 
 Use a combination of modifier instance methods to customize the format of the date interval. The following example shows a combination date interval format styles that include the weekday:
 

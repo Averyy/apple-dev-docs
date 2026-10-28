@@ -24,7 +24,7 @@ let HKMetadataKeySwimmingStrokeStyle: String
 extern NSString * const HKMetadataKeySwimmingStrokeStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Set this key on workout lap events. Set its value to an [`NSNumber`](../Foundation/nsnumber.md) object that contains a valid value from the  [`HKSwimmingStrokeStyle`](./hkswimmingstrokestyle.md) enumeration.
 

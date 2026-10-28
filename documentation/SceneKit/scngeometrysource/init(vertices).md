@@ -22,11 +22,11 @@ Creates a geometry source from an array of vertex positions.
 convenience init(vertices: [SCNVector3])
 ```
 
-#### Return Value
+## Return Value
 
 A new geometry source whose [`semantic`](./semantic-swift.property.md) property is [`vertex`](./semantic-swift.struct/vertex.md).
 
-#### Discussion
+## Discussion
 
 SceneKit converts this data to its own format to optimize rendering performance. To read the converted data, examine the properties of the created [`SCNGeometrySource`](../scngeometrysource.md) object.
 

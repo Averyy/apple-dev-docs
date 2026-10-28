@@ -33,7 +33,7 @@ func findPlayers(forHostedMatchRequest request: GKMatchRequest) async throws -> 
 - (void) findPlayersForHostedMatchRequest:(GKMatchRequest *) request withCompletionHandler:(void (^)(NSArray<NSString *> *playerIDs, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When GameKit calls this completion handler, your game needs to connect those players to your own server.
 

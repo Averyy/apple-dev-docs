@@ -5,7 +5,7 @@
 
 Submit a report with corrections if you find errors in, or have adjustments to, a successfully submitted transaction.
 
-#### Overview
+## Overview
 
 If you successfully submit a report to the [`Send External Purchase Report`](./send-external-purchase-report.md) endpoint that you later find to be incorrect, you must correct your submission. To send a correction, fill out the [`ExternalPurchaseReport`](./externalpurchasereport.md) request body with a new [`requestIdentifier`](./requestidentifier.md) and the corrections, and call the [`Send External Purchase Report`](./send-external-purchase-report.md) endpoint. Send corrected reports promptly.
 
@@ -16,7 +16,7 @@ There are two types of corrections:
 
 > ❗ **Important**: The [`netAmountTaxExclusive`](./netamounttaxexclusive.md) must represent the correct net amount (excluding taxes) for the transaction, including in line items that are corrections.
 
-##### Correct data in a line item
+### Correct data in a line item
 
 To submit a line item with corrections, use the line item’s original [`lineItemId`](./lineitemid.md) and include the [`restatement`](./restatement.md) flag set to `true`. Make corrections to any type of line item: [`OneTimeBuyLineItem`](./onetimebuylineitem.md), [`SubscriptionBuyLineItem`](./subscriptionbuylineitem.md), and [`RefundLineItem`](./refundlineitem.md).
 
@@ -24,7 +24,7 @@ To submit a line item with corrections, use the line item’s original [`lineIte
 
 Apple uses only the most recent version of the line item.
 
-##### Retract an erroneously submitted line item
+### Retract an erroneously submitted line item
 
 If you submitted a line item in error and want Apple to ignore it, use the same [`lineItemId`](./lineitemid.md) as in the original submission. Set both the [`restatement`](./restatement.md) and [`erroneouslySubmitted`](./erroneouslysubmitted.md) fields to `true`. (You may undo this action by submitting the line item again, with [`restatement`](./restatement.md) set to `true`, and [`erroneouslySubmitted`](./erroneouslysubmitted.md) set to false.) Be sure to include all of the original line item data fields, and recalculate the [`netAmountTaxExclusive`](./netamounttaxexclusive.md) field to correctly represent the net amount with the erroneously submitted line item accounted for.
 

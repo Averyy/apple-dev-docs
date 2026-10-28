@@ -5,13 +5,13 @@
 
 Create collections of tracks that all serve the same purpose, where any track in the group can be substituted for another in a movie.
 
-#### Overview
+## Overview
 
 Alternate groups are collections of tracks that all serve the same purpose, where any track in the group can be substituted for another in a movie. Members of the same alternate group have the same identifier value in the alternate group field in the `'tkhd'` (track header) atom; see [Track reference atoms](./track_reference_atoms.md) for an example of alternate tracks for different languages.
 
 This section provides guidelines for the use of alternate groups in movies to be played on Apple devices.
 
-#### General
+## General
 
 For each alternate group:
 
@@ -20,7 +20,7 @@ For each alternate group:
 - One track in the group must be enabled; that is, the Track Enabled flag must be set (`0x0001`) in its track header (`'tkhd'`).
 - All other tracks in the group must be disabled.
 
-#### Alternate subtitle tracks
+## Alternate subtitle tracks
 
 For an alternate group that contains multiple subtitle (`'sbtl'`) tracks:
 
@@ -38,7 +38,7 @@ If the user or player picks the language of a track pair, the player application
 
 If a track pair is present in a subtitle alternate group, a player that displays the track languages of subtitle tracks may choose to list the language only once. If a player lists both tracks of the pair, the player should display some kind of distinction between the tracks (for example, including the track names from the `'tnam'` user data in a menu).
 
-#### Alternate sound tracks
+## Alternate sound tracks
 
 For an alternate group that contains multiple sound (`'soun'`) tracks:
 
@@ -46,7 +46,7 @@ For an alternate group that contains multiple sound (`'soun'`) tracks:
 - If there is more than one enabled sound track, or if there is an enabled sound track and a non-sound track inside the same alternate group, the player may act as though there is no alternate sound track information.
 - Players may ignore sound tracks that use codecs that are unavailable.
 
-#### Relationships across alternate groups
+## Relationships across alternate groups
 
 An audio alternate group and subtitle alternate group may need to use different languages because the first is the spoken language and the second is the written language and the BCP 47 language tags may differ. If there is not a need to differentiate, use the same language code and optionally extended language tag for tracks in both alternate groups.
 

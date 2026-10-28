@@ -26,7 +26,7 @@ func receive(_ input: Self.Input) -> Subscribers.Demand
 
 - [Processing Published Elements with Subscribers](../processing-published-elements-with-subscribers.md)
 
-#### Return Value
+## Return Value
 
 A `Subscribers.Demand` instance indicating how many more elements the subscriber expects to receive.
 

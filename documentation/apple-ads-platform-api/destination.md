@@ -15,13 +15,13 @@ Post-tap destination entity embedded in a Creative.
 object Destination
 ```
 
-#### Discussion
+## Discussion
 
 The `Destination` object specifies where a tap on the ad sends users. The `destinationType` field is immutable after creation, so changing the destination type requires creating a new ad creative.
 
 For Ads on Apple Maps, `LOCAL_ADS_PLACECARD` is the supported `destinationType`, directing users to the brand’s Maps place card.
 
-##### Example
+### Example
 
 ```json
 {

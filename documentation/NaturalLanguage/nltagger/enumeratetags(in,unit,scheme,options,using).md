@@ -22,7 +22,7 @@ Enumerates a block over the tagger’s string, given a range, token unit, and ta
 func enumerateTags(in range: Range<String.Index>, unit: NLTokenUnit, scheme: NLTagScheme, options: NLTagger.Options = [], using block: (NLTag?, Range<String.Index>) -> Bool)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to iterate your block over the given range of a string. The method divides up the string with the given [`NLTokenUnit`](../nltokenunit.md) and [`NLTagScheme`](../nltagscheme.md) and then calls your block. For example, use the [`lexicalClass`](../nltagscheme/lexicalclass.md) tag scheme to identify which tokens are parts of speech, types of whitespace, or types of punctuation. Use the [`lemma`](../nltagscheme/lemma.md) tag scheme to identify the stem form of each word token, if known.
 

@@ -6,7 +6,7 @@
 
 An atom that holds the integer value for the next unique item identifier to assign.
 
-#### Overview
+## Overview
 
 The metadata format optionally assigns unique identifiers to metadata items for such purposes as defining stable identifiers for external references into the set of metadata items. This is accomplished by including an item information atom in added metadata item atoms contained by the metadata item list atom. Such unique identifiers must be guaranteed to be unique.
 

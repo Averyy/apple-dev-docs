@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatApplyScaledPose(SPVector3DFloat vector, SPScaledPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed vector.
 
-#### Discussion
+## Discussion
 
 Returns a vector that’s transformed by the specified scaled pose.
 

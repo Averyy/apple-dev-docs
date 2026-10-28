@@ -22,7 +22,7 @@ nonisolated
 func containerBackground<V>(for container: ContainerBackgroundPlacement, alignment: Alignment = .center, @ContentBuilder content: () -> V) -> some View where V : View
 ```
 
-#### Discussion
+## Discussion
 
 The following example uses a custom [`View`](../view.md) as a background:
 

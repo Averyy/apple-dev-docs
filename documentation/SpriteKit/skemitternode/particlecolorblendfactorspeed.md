@@ -25,7 +25,7 @@ var particleColorBlendFactorSpeed: CGFloat { get set }
 @property (nonatomic) CGFloat particleColorBlendFactorSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`.
 

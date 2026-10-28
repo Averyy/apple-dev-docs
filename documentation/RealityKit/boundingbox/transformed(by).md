@@ -20,7 +20,7 @@ Transforms the bounding box and finds the bounds of the result.
 func transformed(by transform: float4x4) -> BoundingBox
 ```
 
-#### Return Value
+## Return Value
 
 The bounds of the transformed box.
 

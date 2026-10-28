@@ -21,7 +21,7 @@ The name of the tool that the evaluation expects the model to call.
 var name: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is only valid for single expectations. Accessing this on an [`anyOrder(_:)`](./anyorder%28_%29.md) group is a programming error.
 

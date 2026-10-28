@@ -25,7 +25,7 @@ static var cycling: MKDirectionsTransportType { get }
 MKDirectionsTransportTypeCycling
 ```
 
-#### Discussion
+## Discussion
 
 Use this transportation type to request cycling directions between locations.
 

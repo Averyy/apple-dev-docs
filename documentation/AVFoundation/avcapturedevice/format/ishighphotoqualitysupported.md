@@ -23,7 +23,7 @@ var isHighPhotoQualitySupported: Bool { get }
 @property (nonatomic, readonly, getter=isHighPhotoQualitySupported) BOOL highPhotoQualitySupported;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is [`true`](../../../Swift/true.md), the format produces higher image quality when selecting a quality prioritization of [`AVCapturePhotoOutput.QualityPrioritization.balanced`](../../avcapturephotooutput/qualityprioritization/balanced.md) or [`AVCapturePhotoOutput.QualityPrioritization.quality`](../../avcapturephotooutput/qualityprioritization/quality.md) in comparison to [`AVCapturePhotoOutput.QualityPrioritization.speed`](../../avcapturephotooutput/qualityprioritization/speed.md).
 

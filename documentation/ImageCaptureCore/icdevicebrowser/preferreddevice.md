@@ -19,7 +19,7 @@ var preferredDevice: ICDevice? { get }
 @property (nonatomic, strong, readonly) ICDevice * preferredDevice;
 ```
 
-#### Discussion
+## Discussion
 
 If the client application that calls this method is the autolaunch application associated with a device, and that device is the last one attached (through USB, FireWire, or network), then that device is the preferred device.
 

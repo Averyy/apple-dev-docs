@@ -25,7 +25,7 @@ var locale: Locale { get set }
 @property (nonatomic, copy) NSLocale * locale;
 ```
 
-#### Discussion
+## Discussion
 
 This value determines the locale the test environment uses when it fetches localized metadata for [`SKProductsRequest`](../../StoreKit/skproductsrequest.md). You provide localized metadata in your StoreKit configuration file.
 

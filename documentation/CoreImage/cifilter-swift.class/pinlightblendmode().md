@@ -24,11 +24,11 @@ class func pinLightBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) pinLightBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the pin-light-blend mode filter to an image. The effect calculates the brightness of the colors in the background image. Colors that are lighter than 50 percent gray remain unchanged, while the filter replaces colors that are darker than 50 percent with the corresponding color values of the input image. The effect then uses the calculated result to create the output image.
 

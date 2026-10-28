@@ -21,7 +21,7 @@ Creates a new format description for a tagged buffer group.
 extern OSStatus CMTaggedBufferGroupFormatDescriptionCreateForTaggedBufferGroup(CFAllocatorRef allocator, CMTaggedBufferGroupRef taggedBufferGroup, CMTaggedBufferGroupFormatDescriptionRef*formatDescriptionOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `0` on success and a value from Tagged Buffer Group Error Codes on failure.
 

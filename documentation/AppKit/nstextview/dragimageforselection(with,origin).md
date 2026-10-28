@@ -19,11 +19,11 @@ func dragImageForSelection(with event: NSEvent, origin: NSPointPointer?) -> NSIm
 - (NSImage *) dragImageForSelectionWithEvent:(NSEvent *) event origin:(NSPointPointer) origin;
 ```
 
-#### Return Value
+## Return Value
 
 An appropriate drag image for the drag initiated by `event`. May be `nil`, in which case a default icon will be used.
 
-#### Discussion
+## Discussion
 
 This method is used by [`dragSelection(with:offset:slideBack:)`](./dragselection%28with,offset,slideback%29.md). It can be called by others who need such an image, or can be overridden by subclasses to return a different image.
 

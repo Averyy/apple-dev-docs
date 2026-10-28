@@ -20,7 +20,7 @@ A representation of a portal as an infinite plane.
 struct ClippingPlane
 ```
 
-#### Overview
+## Overview
 
 Use this type with [`init(target:clippingPlane:)`](./init%28target,clippingplane%29.md) to initialize a portal component with the clipping feature in an enabled state.
 

@@ -25,7 +25,7 @@ func finalize()
 - (void) finalize;
 ```
 
-#### Discussion
+## Discussion
 
 This method behaves as described in the `NSObject` class specification under the [`finalize()`](../../ObjectiveC/nsobject-swift.class/finalize%28%29.md) instance method. Note that a `finalize` method must be thread-safe.
 

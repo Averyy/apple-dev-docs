@@ -19,7 +19,7 @@ class let selectedAlternativeStringNotification: NSNotification.Name
 extern NSNotificationName NSTextAlternativesSelectedAlternativeStringNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Arbitrary objects can listen for for this notification to get user selections of alternative strings. The `userInfo` dictionary contains the following information:
 

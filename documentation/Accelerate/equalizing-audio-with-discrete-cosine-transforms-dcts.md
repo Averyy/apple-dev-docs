@@ -10,7 +10,7 @@ Change the frequency response of an audio signal by manipulating frequency-domai
 - macOS 13.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 You can use vDSP functions to shape the output of an audio signal; for example, boosting or cutting the bass or treble of a music track.
 
@@ -26,7 +26,7 @@ Before exploring the code, try building and running the app to familiarize yours
 
 vDSP also provides biquadratic filters that offer an alternative approach for equalizing audio. To learn more about biquadratic filters, see [Applying biquadratic filters to a music loop](./applying-biquadratic-filters-to-a-music-loop.md).
 
-##### Generate the audio samples
+### Generate the audio samples
 
 This sample includes an audio resource, `Rhythm.aif`, that contains a drum loop. The `getAudioSamples(forResource:withExtension:)` function generates an array of single-precision values from the drum loop.
 
@@ -40,7 +40,7 @@ guard let samples = try await AudioUtilities.getAudioSamples(
 
 The `samples` array contains single-precision values that represent the entire content of `Rhythm.aif`. To learn more about the [AVFoundation](../AVFoundation/AVFoundation.md) classes that generate the samples, see [`AVAssetReader`](../AVFoundation/avassetreader.md) and [`AVAssetReaderTrackOutput`](../AVFoundation/avassetreadertrackoutput.md).
 
-##### Configure audio playback
+### Configure audio playback
 
 The `DrumLoopProvider` class conforms to the `SignalProvider` protocol and vends an array of single-precision values that represent audio data. The `AudioEqualizationApp` application file creates an instance of `SignalGenerator` and specifies an instance of `DrumLoopProvider` as the signal provider. It also specifies the [ `naturalTimeScale`](../AVFoundation/avpartialasyncproperty/naturaltimescale.md) of the audio asset as the sample rate.
 
@@ -70,7 +70,7 @@ The sample can render the audio unaltered by returning `page`.
 
 To learn more about using [AVAudioEngine](../AVFAudio/avaudioengine.md) to render audio, see [Building a Signal Generator](../AVFAudio/building-a-signal-generator.md).
 
-##### Define the DCT-based equalization filter
+### Define the DCT-based equalization filter
 
 The sample app builds the envelope array — that controls which parts of the drum loop’s spectrum it zeroes — from variables that define the start and end frequencies, and a value that specifies either band pass or band stop.
 
@@ -103,7 +103,7 @@ The following image visualizes the effect of audio equalization that blocks most
 
 ![Diagram showing a frequency domain audio signal and a band stop filter. Where the band stop filter values are zero, the frequency domain data is zero. Where the band stop filter values are one, the frequency domain data is unchanged.](https://developer.apple.com/tutorials/images/com.apple.accelerate/bandpass_2x.png)
 
-##### Prepare the DCT setups
+### Prepare the DCT setups
 
 The following code creates setup objects that contain all the information required to perform the forward and inverse DCT operations. Creating these setup objects can be expensive, so the sample only does this once.
 
@@ -121,7 +121,7 @@ static let inverseDCT = vDSP.DCT(count: sampleCount,
                                  transformType: .III)!
 ```
 
-##### Equalize the audio with DCT
+### Equalize the audio with DCT
 
 To equalize the audio using a DCT-based filter, the sample app applies a forward DCT transform to the time-domain signal data. It then multiplies the frequency-domain data by the envelope values and applies an inverse transform to the multiplied data.
 

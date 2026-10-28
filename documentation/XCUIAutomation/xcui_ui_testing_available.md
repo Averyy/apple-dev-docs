@@ -26,7 +26,7 @@ var XCUI_UI_TESTING_AVAILABLE: Int32 { get }
 #define XCUI_UI_TESTING_AVAILABLE
 ```
 
-#### Discussion
+## Discussion
 
 This macro returns `1` if the current environment supports UI testing; otherwise, it returns `0`.
 

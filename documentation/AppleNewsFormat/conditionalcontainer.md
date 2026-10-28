@@ -15,11 +15,11 @@ The object for defining conditional properties for a container component, and wh
 object ConditionalContainer
 ```
 
-#### Discussion
+## Discussion
 
 Use the `ConditionalContainer` object to define an array of conditional container properties and the conditions under which to apply them. When a condition is met, the value of a property in `ConditionalContainer` overrides the value of the same property if you define it in the parent `Container` component. See [`Container`](./container.md).
 
-##### Example
+### Example
 
 ```json
 {

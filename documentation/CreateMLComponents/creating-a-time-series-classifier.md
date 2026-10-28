@@ -5,7 +5,7 @@
 
 Train a machine learning model to predict the class label of time-series signals.
 
-#### Overview
+## Overview
 
 Some signals have patterns that repeat over time or have clear trends. For example, the accelerometer data from an Apple Watch while the wearer is exercising. It’s common practice to refer to these signals as *time-series data*. Other examples of time-series data are:
 
@@ -17,7 +17,7 @@ Even though there are patterns to the data, these patterns aren’t trivial to c
 
 Training a time-series classifier with the Create ML Components framework shares common training behavior with other model types.
 
-##### Prepare your training data
+### Prepare your training data
 
 The first step to begin classifying the throwing movement of a baseball is to prepare the data. The model predicts the baseball throw as fastball, breaking ball, or changeup. Organize the data by using the following directory structure:
 
@@ -111,7 +111,7 @@ let validation = result[Int(sampleCount * 0.8) ..< Int(sampleCount * 0.9)]
 let testing = result[Int(sampleCount * 0.9)...]
 ```
 
-##### Build and train a time-series classifier
+### Build and train a time-series classifier
 
 After preparing your training data, configure your classifier model with the number of training iterations and class labels:
 
@@ -138,7 +138,7 @@ let model = try await estimator.fitted(to: training, validateOn: validation) { e
 }
 ```
 
-##### Evaluate the model
+### Evaluate the model
 
 Use your testing set to evaluate your model. Classification provides an accuracy metric with a value between 0 and 1, where 0 represents the least accurate. Look at how accurate it classified your labeled test data to determine whether to export the model.
 
@@ -150,7 +150,7 @@ let metrics = ClassificationMetrics(predictedLabels, testing.map(\.annotation))
 print("Accuracy: (metrics.accuracy)")
 ```
 
-##### Export the model
+### Export the model
 
 When you’re satisfied with the model’s accuracy, export it as a Core ML package:
 

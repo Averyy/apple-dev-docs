@@ -25,7 +25,7 @@ static var noFileProtection: NSData.WritingOptions { get }
 NSDataWritingFileProtectionNone
 ```
 
-#### Discussion
+## Discussion
 
 In this case, the system doesn’t store the file in an encrypted format and your app can access this file at boot time and while the device is unlocked.
 

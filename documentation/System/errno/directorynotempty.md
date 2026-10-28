@@ -25,7 +25,7 @@ static var directoryNotEmpty: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A directory with entries other than `.` and `..` was supplied to a `remove(2)` directory or `rename(2)` call.
 

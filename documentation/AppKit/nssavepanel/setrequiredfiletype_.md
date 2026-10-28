@@ -17,7 +17,7 @@ Specifies the file type (as an extension) or a UTI.
 - (void) setRequiredFileType:(NSString *) type;
 ```
 
-#### Discussion
+## Discussion
 
 If `type` is an extension, it should not include the period that begins the extension. Pass `nil` to indicate any type. File type strings encoding HFS file types are not valid values for this attribute. You need to invoke this method each time the Save panel is used for another file type within the application.
 

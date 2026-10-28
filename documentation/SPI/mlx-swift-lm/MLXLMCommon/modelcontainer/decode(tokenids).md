@@ -17,7 +17,7 @@ Decode token IDs to a string.
 func decode(tokenIds: [Int]) async -> String
 ```
 
-#### Return Value
+## Return Value
 
 Decoded string
 

@@ -24,7 +24,7 @@ var offset: MPSOffset { get set }
 @property (nonatomic, readwrite) MPSOffset offset;
 ```
 
-#### Discussion
+## Discussion
 
 The offset is defined as the position of `clipRect.origin` in source image coordinates. The default value is `{0,0,0}`, indicating that the top left corners of the clip rectangle and the source image align.
 

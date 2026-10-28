@@ -19,7 +19,7 @@ Enables or disables a depth of field effect for virtual content.
 var depthOfField: RealityViewRenderingEffectMode
 ```
 
-#### Discussion
+## Discussion
 
 When you set the focal point of a camera, you actually choose a range of focus rather than a point. Objects outside the range — either too close or too far away — appear out of focus, while objects inside the range appear in focus. The size of the range, known as the depth of field, depends on characteristics of the lens, the focal point, and other factors.
 

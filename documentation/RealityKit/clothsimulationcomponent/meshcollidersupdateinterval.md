@@ -17,7 +17,7 @@ The number of time steps between updates to the mesh colliders in the simulation
 var meshCollidersUpdateInterval: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 In this context, a mesh collider update is referring to when the collider applies and detects collisions. A higher interval results in worse collision detection but better performance and power.
 

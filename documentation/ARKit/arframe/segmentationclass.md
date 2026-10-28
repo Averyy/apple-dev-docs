@@ -20,7 +20,7 @@ enum SegmentationClass
 enum ARSegmentationClass : uint8_t;
 ```
 
-#### Overview
+## Overview
 
 ARKit applies the categories defined in this class based on its interpretation of the camera feed’s pixel data. Only people are identified in a camera feed, and therefore the available pixel classifications are either [`ARFrame.SegmentationClass.person`](./segmentationclass/person.md) or [`ARFrame.SegmentationClass.none`](./segmentationclass/none.md).
 

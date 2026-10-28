@@ -10,11 +10,11 @@ Run a Linux operating system on your Mac using the Virtualization framework.
 - macOS 11.0+
 - Xcode 12.4+
 
-#### Overview
+## Overview
 
 This sample configures a virtual machine for a Linux-based operating system. You run the sample from the command line, and you specify the locations of the Linux kernel to run and initial RAM disk to load as command-line parameters. The sample configures the boot loader that the virtual machine requires to run the guest operating system, and it configures a console device to handle standard input and output. It then starts the virtual machine and exits when the Linux kernel shuts down.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Before you run the sample program:
 
@@ -31,7 +31,7 @@ To launch the virtual machine, run the sample’s executable from Xcode or in Te
 % LinuxVirtualMachine <pathToKernelImage> <pathToRAMDiskImage>
 ```
 
-##### Configure the Boot Parameters for the Virtual Machine
+### Configure the Boot Parameters for the Virtual Machine
 
 The executable uses a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) object and adds some basic information. The sample configures the virtual machine to use two CPUs and 2 GB of RAM. It also configures a serial port using the custom `createConsoleConfiguration` function.
 
@@ -70,7 +70,7 @@ func createBootLoader(kernelURL: URL, initialRamdiskURL: URL) -> VZBootLoader {
 }
 ```
 
-##### Configure the Serial Port Device for Standard In and Out
+### Configure the Serial Port Device for Standard In and Out
 
 During the configuration process, the sample specifies the devices that the virtual machine makes available to the guest operating system. Device types can include network devices, virtual storage devices, sockets, and others.
 
@@ -100,7 +100,7 @@ func createConsoleConfiguration() -> VZSerialPortConfiguration {
 }
 ```
 
-##### Instantiate and Start the Virtual Machine
+### Instantiate and Start the Virtual Machine
 
 After building the configuration data for the virtual machine, the sample uses the [`VZVirtualMachine`](./vzvirtualmachine.md) object to start the execution of the guest operating system.
 

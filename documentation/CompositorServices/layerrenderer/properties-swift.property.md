@@ -16,7 +16,7 @@ The configured properties of the layer renderer.
 var properties: LayerRenderer.Properties { get }
 ```
 
-#### Discussion
+## Discussion
 
 The layer properties include details about the layer’s textures, such as their organization and the location of drawable views in those textures.
 

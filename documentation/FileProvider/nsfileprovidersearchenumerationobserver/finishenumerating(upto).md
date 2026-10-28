@@ -20,7 +20,7 @@ func finishEnumerating(upTo nextPage: NSFileProviderPage?)
 - (void) finishEnumeratingUpToPage:(NSFileProviderPage) nextPage;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method after you make one or more calls to [`didEnumerate(_:)`](./didenumerate%28_%29.md) to provide results to the observer. The collective results you provide in these calls constitues a “page” of results.
 

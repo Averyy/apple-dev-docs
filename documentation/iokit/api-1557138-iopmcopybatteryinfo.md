@@ -16,11 +16,11 @@ Request raw battery data from the system.
 IOReturn IOPMCopyBatteryInfo(mach_port_t masterPort, CFArrayRef *info);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess or an error condition if request failed.
 
-#### Discussion
+## Discussion
 
 WARNING! IOPMCoyBatteryInfo is unsupported on ALL Intel CPU based systems. For PPC CPU based systems, it remains not recommended. For almost all purposes, developers should use the richer IOPowerSources API (with change notifications) instead of using IOPMCopyBatteryInfo. Keys to decipher IOPMCopyBatteryInfo's return CFArray exist in IOPM.h.
 

@@ -20,7 +20,7 @@ Creates a group with the provided name.
 static func named(_ name: String) -> WidgetRelevanceGroup
 ```
 
-#### Discussion
+## Discussion
 
 The system won’t show more than one relevant widget if they are in the same. A widget group doesn’t affect widgets by other apps.
 

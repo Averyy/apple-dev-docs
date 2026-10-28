@@ -5,51 +5,51 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 15.5 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 15.5. The SDK comes bundled with Xcode 13.4. For information on the compatibility requirements for Xcode 13.4, see [Xcode 13.4 Release Notes](../Xcode-Release-Notes/xcode-13_4-release-notes.md).
 
-##### Apple Pay
+### Apple Pay
 
-###### New Features
+#### New Features
 
 - Developers can express payment network preference in [`PKPaymentRequest`](../PassKit/pkpaymentrequest.md). Network preference is determined by the order of [`supportedNetworks`](../PassKit/pkpaymentrequest/supportednetworks.md). This won’t override the user’s default card selection, but if the card is multi-SSD, then the network preference order determines which SSD is selected. (80827905)
 
-##### Authentication
+### Authentication
 
-###### New Features
+#### New Features
 
 - Support is added to the passkey technology preview, enabling signing in to passkey-compatible websites and apps on Mac and iPad using an iPhone with a saved passkey. (87998254)
 
-##### Developer Settings
+### Developer Settings
 
-###### New Features
+#### New Features
 
 - You can now use Settings > Developer Settings > Run Throughput Test to view average results for ping packet loss, idle ping latency, and download and upload speeds. (81870452)
 
-##### Game Controller
+### Game Controller
 
-###### New Features
+#### New Features
 
 - Support is now available for new DualSense adaptive trigger firmware features available via [`GCDualSenseAdaptiveTrigger`](../GameController/gcdualsenseadaptivetrigger.md). (87433163)
 
-##### Health App
+### Health App
 
-###### Known Issues
+#### Known Issues
 
 - The Health app crashes when you attempt to onboard the Blood Oxygen feature from within the app. (87617635)
 - If Health sharing is skipped when setting up an Apple Watch for a family member, it can’t be enabled later. (87210981)
 
-##### HealthKit
+### HealthKit
 
-###### New Features
+#### New Features
 
 - Verifiable health records now support adding vaccination records in the EU Digital COVID Certificate (EU DCC) format to the Wallet and Health apps. (79917344)
 - `HealthKit` query APIs in Swift now support async/await syntax, which simplifies the structure of code that previously used completion callbacks. (74040680)
 
-##### Home
+### Home
 
-###### Known Issues
+#### Known Issues
 
 - You can only pair up to five Matter accessories in a home. (77933589)
 - The iOS device that initiates pairing needs to be logged in to the same iCloud account as the home hub. Only the owner of a home, not an invited user, can pair Matter accessories. (76012945)
@@ -57,22 +57,22 @@ The iOS & iPadOS 15.5 SDK provides support to develop apps for iPhone, iPad, and
 
   **Workaround:** Launch the Home App and create a Home first.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue so that Matter accessories with multiple end points are now reachable in the Home App. (86170578)
 - Fixed an issue so that Matter accessories no longer go to a “No Response” state after pairing with the Home App. (86497690)
 
-##### iTunes
+### iTunes
 
-###### Known Issues
+#### Known Issues
 
 - Purchasing or downloading content again from the iTunes Store and TV app might fail on some devices. (86772291)
 
   **Workaround:** Rebooting the device may resolve the issue.
 
-##### libc++
+### libc++
 
-###### New Features
+#### New Features
 
 - The following new C++20 and C++23 features are now implemented:
 
@@ -83,7 +83,7 @@ The iOS & iPadOS 15.5 SDK provides support to develop apps for iPhone, iPad, and
   - A `.contains()` method for associative containers
   - Added `std::bind_front()` (88131816)
 
-###### Deprecations
+#### Deprecations
 
 - Some extensions in `std::tuple` were removed to fix bugs caused by those extensions:
 
@@ -91,39 +91,39 @@ The iOS & iPadOS 15.5 SDK provides support to develop apps for iPhone, iPad, and
   - A tuple can no longer be constructed from an array.
   - The `std::result_of` and `std::is_literal_type` type traits are no longer available in C++20 mode, as specified in the Standard.
 
-##### Messages
+### Messages
 
-###### Known Issues
+#### Known Issues
 
 - A conversation transcript won’t scroll after viewing a photo in QuickLook. (87855403)
 
   **Workaround:** Back out of the conversation and then reopen it to restore scrolling.
 
-##### Phone
+### Phone
 
-###### Known Issues
+#### Known Issues
 
 - Emergency SOS “Call with 5 Presses” is disabled for all users outside of India to fix an issue that caused this setting to unintentionally default for some users. (86189447)
 
-##### Settings
+### Settings
 
-###### Known Issues
+#### Known Issues
 
 - In the Throughput Test results, the Idle Ping Latency is reported in incorrect units. For example, an actual ping latency of 123.32 ms is shown as 0.12 ms. (87599982)
 
-##### SharePlay
+### SharePlay
 
-###### New Features
+#### New Features
 
 - A new [Group Activities](../GroupActivities/GroupActivities.md) API allows you to present UI that enables starting a SharePlay session from within your app. (88099397)
 
-##### StoreKit
+### StoreKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue so developers using StoreKit 2 can now initiate a subscription offer purchase for a product that the customer currently subscribes to. (89152302)
 
-###### New Features
+#### New Features
 
 - [`SKTestSession`](../StoreKitTest/sktestsession.md) has three new methods to simulate a subscription requiring price increase consent, simulate consenting to a pending price increase, and simulate declining a price increase in automated tests. (84556183)
 - StoreKit records an ad impression if the framework displays an ad for a minimum of 2 seconds, down from the previous minimum of 3 seconds. (85874835)
@@ -142,15 +142,15 @@ The iOS & iPadOS 15.5 SDK provides support to develop apps for iPhone, iPad, and
 
 - [`SKAdNetwork`](../StoreKit/skadnetwork.md) implementation can now be unit tested using the [StoreKit Test](../StoreKitTest/StoreKitTest.md) framework. You can use the `SKAdTestSession` class to test the validity of ad impressions, update conversion values on test postbacks, and receive test postbacks at the server. This class also displays the URL to which the optional developer postback is sent. (59571961)
 
-###### Known Issues
+#### Known Issues
 
 - When testing with StoreKit Testing in Xcode, the following APIs don’t work in the simulator: [`presentCodeRedemptionSheet()`](../StoreKit/skpaymentqueue/presentcoderedemptionsheet%28%29.md), [`paymentQueueShouldShowPriceConsent(_:)`](../StoreKit/skpaymentqueuedelegate/paymentqueueshouldshowpriceconsent%28_%29.md), and [`showPriceConsentIfNeeded()`](../StoreKit/skpaymentqueue/showpriceconsentifneeded%28%29.md). (85982859)
 
   **Workaround:** Test these APIs using an iOS device.
 
-##### UIKit
+### UIKit
 
-###### New Features
+#### New Features
 
 - All animations created with [`UIView`](../UIKit/uiview.md) block APIs or [`UIViewPropertyAnimator`](../UIKit/uiviewpropertyanimator.md) run at up to 120 Hz on iPhones with ProMotion displays. (86175551)
 

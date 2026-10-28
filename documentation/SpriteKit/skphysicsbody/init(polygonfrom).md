@@ -29,7 +29,7 @@ init(polygonFrom path: CGPath)
 
 - [Shaping a Physics Body to Match a Node’s Graphics](../shaping-a-physics-body-to-match-a-node-s-graphics.md)
 
-#### Return Value
+## Return Value
 
 A new volume-based physics body.
 

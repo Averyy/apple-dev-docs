@@ -24,7 +24,7 @@ class HKMedicationConcept
 @interface HKMedicationConcept : NSObject
 ```
 
-#### Overview
+## Overview
 
 A medication concept represents the idea of a medication, like ibuprofen or insulin. It can have clinical significance, or can be created by the person using your app.
 

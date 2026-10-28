@@ -19,7 +19,7 @@ class FCPXObject
 @interface FCPXObject : NSObject
 ```
 
-#### Overview
+## Overview
 
 The ProExtensionHost framework provides a few object classes that act as proxies to certain aspects of the Final Cut Pro timeline. These proxy objects include a currently active sequence in the Final Cut Pro timeline as well as its containers, such as project, event, and library.
 

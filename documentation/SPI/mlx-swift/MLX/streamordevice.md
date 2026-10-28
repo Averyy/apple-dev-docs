@@ -21,7 +21,7 @@ struct StreamOrDevice
 
 - [Using Streams](./using-streams.md)
 
-#### Overview
+## Overview
 
 Use this to control where operations are evaluated:
 
@@ -35,7 +35,7 @@ let b = MLXRandom.uniform([100, 100], stream: .gpu)
 
 If omitted it will use the [`default`](./streamordevice/default.md), which will be [`gpu`](./device/gpu.md) unless set otherwise.
 
-##### See Also
+### See Also
 
 - [Using Streams](./using-streams.md)
 - [`Stream`](./stream.md)

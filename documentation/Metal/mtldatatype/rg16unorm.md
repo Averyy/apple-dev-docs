@@ -24,7 +24,7 @@ case rg16Unorm
 MTLDataTypeRG16Unorm
 ```
 
-#### Discussion
+## Discussion
 
 The color components are in RG order, which stands for red and green.
 

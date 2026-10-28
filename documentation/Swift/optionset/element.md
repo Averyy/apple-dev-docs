@@ -22,7 +22,7 @@ The element type of the option set.
 associatedtype Element = Self
 ```
 
-#### Discussion
+## Discussion
 
 To inherit all the default implementations from the `OptionSet` protocol, the `Element` type must be `Self`, the default.
 

@@ -25,7 +25,7 @@ class NSURLConnection
 @interface NSURLConnection : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  This API is considered legacy. Use [`URLSession`](./urlsession.md) instead.
 
@@ -41,7 +41,7 @@ For greater control, you can create a URL connection object with a delegate obje
 
 For more information about errors, see the `NSURLError.h` header, [Foundation Constants](./foundation-constants.md), and URL Loading System Error Codes in [Error Handling Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ErrorHandlingCocoa/ErrorHandling/ErrorHandling.html#//apple_ref/doc/uid/TP40001806).
 
-##### NSURLConnection Protocols
+### NSURLConnection Protocols
 
 The `NSURLConnection` class works in tandem with three formal protocols: [`NSURLConnectionDelegate`](./nsurlconnectiondelegate.md), [`NSURLConnectionDataDelegate`](./nsurlconnectiondatadelegate.md), and [`NSURLConnectionDownloadDelegate`](./nsurlconnectiondownloaddelegate.md). To use these protocols, you write a class that conforms to them and implement any methods that are appropriate, then provide an instance of that class as the delegate when you create a connection object.
 

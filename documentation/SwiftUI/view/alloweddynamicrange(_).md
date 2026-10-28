@@ -21,11 +21,11 @@ Returns a new view configured with the specified allowed dynamic range.
 nonisolated func allowedDynamicRange(_ range: Image.DynamicRange?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A new view.
 
-#### Discussion
+## Discussion
 
 The following example enables HDR rendering within a view hierarchy:
 

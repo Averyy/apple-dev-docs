@@ -25,11 +25,11 @@ func CFErrorGetCode(_ err: CFError!) -> CFIndex
 extern CFIndex CFErrorGetCode(CFErrorRef err);
 ```
 
-#### Return Value
+## Return Value
 
 The error code of `err`.
 
-#### Discussion
+## Discussion
 
 Note that this function returns the error code for the specified CFError, not an error return for the current call.
 

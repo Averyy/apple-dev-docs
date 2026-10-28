@@ -25,7 +25,7 @@ static func train(trainingData: MLSoundClassifier.DataSource, parameters: MLSoun
 static func train(trainingData: [String : [URL]], parameters: MLSoundClassifier.ModelParameters = .init(), sessionParameters: MLTrainingSessionParameters = _defaultSessionParameters) throws -> MLJob<MLSoundClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLJob`](../mljob.md) that represents the sound classifier training session.
 

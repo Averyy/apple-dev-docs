@@ -5,7 +5,7 @@
 
 Define and update your schema with the CloudKit Schema Language.
 
-#### Overview
+## Overview
 
 CloudKit’s textual representation enables you to simultaneously manage your schema and the application source code that depends on it. The CloudKit command line tools download, verify, and install a schema to your container’s sandbox environment, while the CloudKit dashboard promotes a schema to the production environment.
 
@@ -13,7 +13,7 @@ When publishing a schema, CloudKit attempts to apply changes to the existing sch
 
 For containers with an existing schema, use the CloudKit command line tools to download the container’s schema. Manually constructing your existing schema by hand isn’t recommended, as any mistakes may result in your existing sandbox data becoming inaccessible. A good practice is to integrate the schema into your source code repository.
 
-##### Learn the CloudKit Schema Language Grammar
+### Learn the CloudKit Schema Language Grammar
 
 The grammar for the CloudKit Schema Language contains all the elements to define your schema. Use the grammar to create roles, declare record types and their permissions, as well as specify data types and options for each field in the record.
 
@@ -107,7 +107,7 @@ Multi-line comment
 
 CloudKit doesn’t preserve the comments in your schema when you upload them to CloudKit. Additionally, when you retreive the schema, the order of the elements may differ from the order when the schema was created or updated.
 
-##### Recognize Implicit Fields and Roles
+### Recognize Implicit Fields and Roles
 
 All record types have the following implicitly defined fields:
 
@@ -155,7 +155,7 @@ GRANT CREATE TO "_icloud"
 GRANT READ TO "_world"
 ```
 
-##### View an Example Schema
+### View an Example Schema
 
 This sample schema defines a simple company department and employee information. It demonstrates extending the attributes of system fields and the double quotes necessary for referring to system identifiers.
 

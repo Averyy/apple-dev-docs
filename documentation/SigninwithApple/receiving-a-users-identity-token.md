@@ -5,7 +5,7 @@
 
 Retrieve the user’s information from Apple Account servers
 
-#### Overview
+## Overview
 
 After successfully authenticating the user, the server returns an identity JSON Web Token (JWT), single-use authorization grant code, the state contained in the authorization request, and user identifier to your app. For more information, see [`Request an authorization to the Sign in with Apple server`](../SigninwithAppleRESTAPI/request-an-authorization-to-the-sign-in-with-apple-server.md) and [`id_token`](../SigninwithAppleJS/authorizationi/id_token.md).
 

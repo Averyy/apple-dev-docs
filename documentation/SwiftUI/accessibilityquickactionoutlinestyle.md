@@ -15,7 +15,7 @@ A presentation style that displays a prompt to the user when the accessibility q
 struct AccessibilityQuickActionOutlineStyle
 ```
 
-#### Overview
+## Overview
 
 Don’t use this type directly. Instead, use [`outline`](./accessibilityquickactionstyle/outline.md).
 

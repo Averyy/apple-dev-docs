@@ -19,7 +19,7 @@ var shouldShowLinkedPeople: Bool { get set }
 @property (assign) BOOL shouldShowLinkedPeople;
 ```
 
-#### Discussion
+## Discussion
 
 Linked records represent the same actual person, and typically come from different sources.
 

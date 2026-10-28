@@ -24,7 +24,7 @@ var stepValue: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * stepValue;
 ```
 
-#### Discussion
+## Discussion
 
 This value only applies to characteristics with a number type.
 

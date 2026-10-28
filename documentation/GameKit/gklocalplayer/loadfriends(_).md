@@ -34,7 +34,7 @@ func loadFriends() async throws -> [GKPlayer]
 - [Protecting the player’s privacy using scoped identifiers](../protecting-the-player-s-privacy-using-scoped-identifiers.md)
 - [Connecting players with their friends in your game](../connecting-players-with-their-friends-in-your-game.md)
 
-#### Discussion
+## Discussion
 
 If the [`loadFriendsAuthorizationStatus(_:)`](./loadfriendsauthorizationstatus%28_%29.md) method returns [`GKFriendsAuthorizationStatus.notDetermined`](../gkfriendsauthorizationstatus/notdetermined.md), GameKit presents a prompt to the local player requesting access to their friends that may pause your game. GameKit displays the localized reason that you provide for the [`NSGKFriendListUsageDescription`](../../BundleResources/information-property-list/nsgkfriendlistusagedescription.md) key in the information property list.
 

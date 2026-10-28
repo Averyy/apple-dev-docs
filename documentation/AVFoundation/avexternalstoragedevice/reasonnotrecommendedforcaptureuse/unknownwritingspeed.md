@@ -21,7 +21,7 @@ static let unknownWritingSpeed: AVExternalStorageDevice.ReasonNotRecommendedForC
 extern AVExternalStorageDeviceReasonNotRecommendedForCaptureUse AVExternalStorageDeviceReasonNotRecommendedForCaptureUseUnknownWritingSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that the storage device is not recommended for capture as its writing speed is unknown.
 

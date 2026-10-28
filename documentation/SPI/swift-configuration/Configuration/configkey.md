@@ -24,13 +24,13 @@ A configuration key representing a relative path to a configuration value.
 struct ConfigKey
 ```
 
-#### Overview
+## Overview
 
 Configuration keys consist of hierarchical string components forming paths similar to file system paths or JSON object keys. For example, `["http", "timeout"]` represents the `timeout` value nested under `http`.
 
 Keys support additional context information that providers can use to refine lookups or provide specialized behavior.
 
-#### Usage
+## Usage
 
 Create keys using string literals, arrays, or the initializers:
 

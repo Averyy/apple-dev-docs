@@ -19,7 +19,7 @@ class SFUniversalLink
 @interface SFUniversalLink : NSObject
 ```
 
-#### Overview
+## Overview
 
 Universal links are a bridge between an app and a website that have related content, such as products or services. Typically, clicking a link in a browser takes a person to a website. However, the person may have an app that provides the same content and a better experience.
 

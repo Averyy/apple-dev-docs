@@ -21,11 +21,11 @@ Advances to the next element and returns it, or `nil` if no next element exists.
 mutating func next() -> Element?
 ```
 
-#### Return Value
+## Return Value
 
 The next element in the underlying sequence, if a next element exists; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 Once `nil` has been returned, all subsequent calls return `nil`.
 

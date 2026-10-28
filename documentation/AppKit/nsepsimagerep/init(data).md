@@ -21,11 +21,11 @@ init?(data epsData: Data)
 - (instancetype) initWithData:(NSData *) epsData;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSEPSImageRep` object or `nil` if the object could not be initialized
 
-#### Discussion
+## Discussion
 
 The size of the receiver is set using the bounding box information specified in the EPS header comments.
 

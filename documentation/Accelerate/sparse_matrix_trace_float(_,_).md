@@ -25,11 +25,11 @@ func sparse_matrix_trace_float(_ A: sparse_matrix_float!, _ offset: sparse_index
 float sparse_matrix_trace_float(sparse_matrix_float A, sparse_index offset);
 ```
 
-#### Return Value
+## Return Value
 
 The computed trace.
 
-#### Discussion
+## Discussion
 
 The diagonal is specified by the `offset` parameter where zero is the main diagonal, values greater than one refer to diagonals above the main diagonal (`A[i,i+offset]`), and values less than one refer to diagonals below the main diagonal (`A[i-offset, i]`).
 
@@ -50,9 +50,9 @@ If offset is out of the bounds of the matrix `A`, `0` is returned.
 - [func sparse_matrix_vector_product_dense_float(CBLAS_TRANSPOSE, Float, sparse_matrix_float!, UnsafePointer<Float>!, sparse_stride, UnsafeMutablePointer<Float>!, sparse_stride) -> sparse_status](./sparse_matrix_vector_product_dense_float%28_,_,_,_,_,_,_%29.md)
   Multiplies the dense vector *x* by the sparse matrix *A* and adds the result to the dense vector *y*, with all operands containing single-precision values.
 - [func sparse_vector_triangular_solve_dense_double(CBLAS_TRANSPOSE, Double, sparse_matrix_double!, UnsafeMutablePointer<Double>!, sparse_stride) -> sparse_status](./sparse_vector_triangular_solve_dense_double%28_,_,_,_,_%29.md)
-  Solves the system of equations *x = alpha * T⁻¹ * x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing double-precision values.
+  Solves the system of equations *x = alpha \* T⁻¹ \* x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing double-precision values.
 - [func sparse_vector_triangular_solve_dense_float(CBLAS_TRANSPOSE, Float, sparse_matrix_float!, UnsafeMutablePointer<Float>!, sparse_stride) -> sparse_status](./sparse_vector_triangular_solve_dense_float%28_,_,_,_,_%29.md)
-  Solves the system of equations *x = alpha * T⁻¹ * x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing single-precision values.
+  Solves the system of equations *x = alpha \* T⁻¹ \* x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing single-precision values.
 - [func sparse_outer_product_dense_double(sparse_dimension, sparse_dimension, sparse_dimension, Double, UnsafePointer<Double>!, sparse_stride, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<sparse_matrix_double?>!) -> sparse_status](./sparse_outer_product_dense_double%28_,_,_,_,_,_,_,_,_%29.md)
   Computes the outer product of the dense vector *x* and the sparse vector *y*, with both operands containing double-precision values.
 - [func sparse_outer_product_dense_float(sparse_dimension, sparse_dimension, sparse_dimension, Float, UnsafePointer<Float>!, sparse_stride, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<sparse_matrix_float?>!) -> sparse_status](./sparse_outer_product_dense_float%28_,_,_,_,_,_,_,_,_%29.md)

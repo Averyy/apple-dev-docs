@@ -16,11 +16,11 @@ Rotates content by the specified 3D rotation value.
 func rotation3DEffect(_ rotation: Rotation3D, anchor: UnitPoint3D = .center) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 A rotation effect.
 
-#### Discussion
+## Discussion
 
 This effect causes the content to appear rotated, but doesn’t change the content’s frame. The following code applies a rotation of 45° about the y-axis, using the default anchor point at the center of the content:
 

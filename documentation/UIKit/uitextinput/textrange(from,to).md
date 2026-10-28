@@ -24,7 +24,7 @@ func textRange(from fromPosition: UITextPosition, to toPosition: UITextPosition)
 - (UITextRange *) textRangeFromPosition:(UITextPosition *) fromPosition toPosition:(UITextPosition *) toPosition;
 ```
 
-#### Return Value
+## Return Value
 
 An object that represents the range between `fromPosition` and `toPosition`.
 

@@ -21,7 +21,7 @@ init(image: UIImage, title: String?, subtitle: String?)
 - (instancetype) initWithImage:(UIImage *) image title:(NSString *) title subtitle:(NSString *) subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 When providing an image, your app should provide a @c UIImage that is display-ready. If necessary for the image, provide light and dark styles by using an asset from your asset catalog, prepared with light and dark styles or by using @c UIImageAsset to combine two @c UIImage instances into a single image with both styles.
 

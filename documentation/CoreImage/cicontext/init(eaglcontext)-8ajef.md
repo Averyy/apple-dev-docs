@@ -23,11 +23,11 @@ init(eaglContext: EAGLContext)
 + (CIContext *) contextWithEAGLContext:(EAGLContext *) eaglContext;
 ```
 
-#### Return Value
+## Return Value
 
 A Core Image context that targets OpenGL ES.
 
-#### Discussion
+## Discussion
 
 The OpenGL ES context must support OpenGL ES 2.0. All drawing performed using the methods listed in Drawing Images is rendered directly into the context.
 

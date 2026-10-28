@@ -25,7 +25,7 @@ func setThreadgroupMemoryLength(_ length: Int, offset: Int, index: Int)
 - (void) setThreadgroupMemoryLength:(NSUInteger) length offset:(NSUInteger) offset atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 You can only change the threadgroup memory’s size between tile dispatches (see [`dispatchThreadsPerTile(_:)`](./dispatchthreadspertile%28_%29.md)).
 

@@ -22,7 +22,7 @@ var isFlashScene: Bool { get }
 @property (nonatomic, readonly) BOOL isFlashScene;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value changes depending on the scene currently visible to the camera. For example, you might use this property to highlight the flash control in your app’s camera UI, indicating to the user that the scene is dark enough that enabling the flash might be desirable.
 

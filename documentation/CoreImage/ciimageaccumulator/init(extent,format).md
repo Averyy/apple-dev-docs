@@ -24,7 +24,7 @@ init?(extent: CGRect, format: CIFormat)
 - (instancetype) initWithExtent:(CGRect) extent format:(CIFormat) format;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image accumulator object.
 

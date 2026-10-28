@@ -20,7 +20,7 @@ Properties you use to customize how an arrangement presents views.
 associatedtype ViewProperties
 ```
 
-#### Discussion
+## Discussion
 
 For more information on configuring arrangements with view properties, refer to specific implementations such as [`UIOverlayArrangement`](../../uioverlayarrangement-swift.struct.md) or [`UISplitArrangement`](../../uisplitarrangement-swift.struct.md).
 

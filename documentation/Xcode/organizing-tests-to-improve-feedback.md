@@ -5,7 +5,7 @@
 
 Control the information you receive from your tests at different stages in the software engineering process by creating and configuring test plans.
 
-#### Overview
+## Overview
 
 A mature project benefits from many tests that cover a variety of scenarios. Tests can verify code behavior or measure performance; they can test different products, or the same product on different targets or configurations. They can be long-running UI tests that exercise complex workflows or small unit tests that exercise individual functions, as described in [Testing](./testing.md).
 
@@ -27,7 +27,7 @@ In Xcode 16 and later, you can use tags in your test plans to specify which test
 
 > **Note**: Tags aren’t a replacement for test suites. Suites impose hierarchical structure on test functions at the source level, while tags help you associate tests from different files, suites, and targets.
 
-##### Create schemes to associate test targets with products
+### Create schemes to associate test targets with products
 
 A scheme instructs Xcode to use specific targets when you invoke the building, testing, running, analyzing, profiling, and archiving actions, shown in the figure below. In the test action for a scheme, include the target for the product under test along with the test targets that contain tests relevant to that product.
 
@@ -37,7 +37,7 @@ For information on creating Xcode schemes and assigning targets to schemes, see 
 
 If your product has multiple targets — like an iOS app that contains a static library and a widget extension — create a scheme for each of the individual targets in addition to an “umbrella” scheme that builds the whole product suitable for release. Developers on your team can use the more specific scheme when working on tasks in each target, running only the tests relevant to that target to get faster feedback. When they are ready to integrate their changes, developers can get better assurance that they have not introduced regressions by running the complete collection of tests in the umbrella scheme.
 
-##### Create test plans to organize the tests for a scheme
+### Create test plans to organize the tests for a scheme
 
 A *test plan* is a document in your Xcode project that describes which tests Xcode should run when a developer invokes the test action, shown in the figure below, and the configurations Xcode uses to run the tests.
 
@@ -63,7 +63,7 @@ To select the default test plan for the current scheme:
 
 ![A screenshot of the scheme editor in Xcode with the Test pane shown. The pane include one automatically created Test plan.](https://developer.apple.com/tutorials/images/com.apple.Xcode/organizing-tests-new-test-plan@2x.png)
 
-##### Include or exclude tests from a test plan
+### Include or exclude tests from a test plan
 
 Specify the test targets to use, along with any tags Xcode should use to determine which tests to include or exclude from a test plan:
 
@@ -76,7 +76,7 @@ Specify the test targets to use, along with any tags Xcode should use to determi
 
 To include all your tests in the test plan, leave the Include Tags and  Exclude Tags fields empty.
 
-##### Choose the test suites and functions to run in a test plan
+### Choose the test suites and functions to run in a test plan
 
 To further filter the tests that Xcode runs for a given test plan, select the checkbox in the Included column next to an item in the test plan’s outline view. You can select or deselect any item that matches the conditions from the Include Tags and Exclude Tags fields. The items represent targets, suites, functions, and specific input parameters passed to parameterized test functions. Xcode displays the symbol names for tags under the Tags column next to the suites and functions they annotate. Hold the pointer over an item to display a right arrow button. Click the button to display the source code for that item in the Source editor.
 
@@ -84,7 +84,7 @@ If you exclude a test function or test case from a test plan, Xcode skips over t
 
 Swift Testing and XCTest support ways to modify the effect a test has on the outcome of a test action while still running it. In Swift Testing you use traits to control the runtime conditions under which test should run, see [Enabling and disabling tests](../Testing/enablinganddisabling.md) and [Known issues](../Testing/known-issues.md) to indicate tests you expect to fail. To skip a test because the execution platform or configuration is inappropriate for the test in XCTest, use [`XCTSkipIf(_:_:file:line:)`](../XCTest/xctskipif%28_,_,file,line%29.md) or [`XCTSkipUnless(_:_:file:line:)`](../XCTest/xctskipunless%28_,_,file,line%29.md). To indicate that a test is expected to fail in XCTest, use [`XCTExpectFailure(_:options:)`](../XCTest/xctexpectfailure%28_,options%29.md).
 
-##### Adjust configurations for test plans
+### Adjust configurations for test plans
 
 Each test plan contains one or more configurations that tell Xcode how to set up the runtime environment for the tests. In the Configurations tab of the test plan editor, shown in the figure below, you can set environment variables, enable additional checks such as the address sanitizer and memory management guards, and choose different localization settings for the code.
 
@@ -126,7 +126,7 @@ For more information on the address sanitizer, thread sanitizer, undefined behav
 
 To create additional test plan configurations, click the Add button (+). Xcode runs the tests specified in a test plan once for each of that plan’s configurations.
 
-##### Add a test plan to a scheme
+### Add a test plan to a scheme
 
 You can associate a test plan with more than one scheme, to get the same test suites and functions included with the same configurations in multiple schemes. To add an existing test plan to a scheme, do the following:
 
@@ -135,7 +135,7 @@ You can associate a test plan with more than one scheme, to get the same test su
 3. Choose Add existing Test Plan.
 4. Select the test plan you want to add to the scheme.
 
-##### Run the tests specified in a test plan in Xcode
+### Run the tests specified in a test plan in Xcode
 
 When Xcode runs the test action, it executes the tests in the active test plan once for each configuration in the test plan. To set the active test plan and run the tests specified in that plan, do the following:
 
@@ -145,7 +145,7 @@ When Xcode runs the test action, it executes the tests in the active test plan o
 
 For information about interpreting the results of tests in Xcode, see [Running tests and interpreting results](./running-tests-and-interpreting-results.md).
 
-##### Run tests from the command-line
+### Run tests from the command-line
 
 To run tests using a specific test plan from the command-line, you must explicitly name the test plan to use. To discover the test plans for `SampleApp`, run the following:
 

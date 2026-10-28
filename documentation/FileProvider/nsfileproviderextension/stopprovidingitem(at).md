@@ -22,7 +22,7 @@ func stopProvidingItem(at url: URL)
 - (void) stopProvidingItemAtURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method as soon as all other processes have stopped accessing the given file. You can override this method to remove the document from the local file system, thus freeing up storage space. You must provide placeholders for any documents you remove.
 

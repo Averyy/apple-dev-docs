@@ -24,7 +24,7 @@ func JSValueMakeSymbol(_ ctx: JSContextRef!, _ description: JSStringRef!) -> JSV
 JSValueRefJSValueMakeSymbol(JSContextRef ctx, JSStringRef description);
 ```
 
-#### Return Value
+## Return Value
 
 A unique [`JSValueRef`](./jsvalueref.md) of the symbol type with a description that matches `description`.
 

@@ -5,7 +5,7 @@
 
 Upload images and messages for retention messaging, configure default messages, and complete the setup for promotional-offer and switch-plan messages.
 
-#### Overview
+## Overview
 
 The Retention Messaging API uses images and text that you upload and configure in advance to display retention messages to your customers. There are four types of retention messages:
 
@@ -18,7 +18,7 @@ There are two ways to use the Retention Messaging API. The simplest way is to se
 
 To use this API to choose any retention message type in real time, implement the `Get Retention Message` endpoint on your server. For more information, see [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md). To use promotional-offer and switch-plan messages, upload messages without images and follow the additional setup instructions below.
 
-##### Upload images and messages
+### Upload images and messages
 
 All retention message types include text. For text-based messages with images, upload the images first.
 
@@ -31,7 +31,7 @@ Follow these steps to upload messages:
 
 The system automatically sends your uploaded images and messages to Apple to check. You can associate images with messages at any time; however, the system only displays images and messages to customers that are in an `APPROVED` state.
 
-##### Retrieve identifiers and states of images and messages
+### Retrieve identifiers and states of images and messages
 
 Apple checks the images and messages that you upload, and sets their states. Call [`Get Image List`](./get-image-list.md) and [`Get Message List`](./get-message-list.md) to get the identifier and current state of images and messages.
 
@@ -39,7 +39,7 @@ You can start using a message and image when its [`messageState`](./messagestate
 
 > 💡 **Tip**: Keep a record of the images and messages on your system, including their identifiers, their purpose, and their state. Call [`Get Default Message`](./get-default-message.md) to check the default message you configured for a specific product and locale.
 
-##### Configure default messages
+### Configure default messages
 
 Call [`Configure Default Message`](./configure-default-message.md) to set up default messages. Only text-based messages, with or without images, can be default messages. You can configure a default message for every auto-renewable subscription in every locale for your app.
 
@@ -48,13 +48,13 @@ The system uses a default message in the following cases:
 - If you configure only default messages
 - If the App Store server fails to receive a response from your `Get Retention Message` endpoint for any reason
 
-##### Optionally, prepare to respond in real time
+### Optionally, prepare to respond in real time
 
 To use promotional-offer or switch-plan messages, and to choose any retention message in real time, you need to implement the `Get Retention Message` endpoint. For more information, see [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md) and [Responding to real-time retention messaging requests](./responding-to-realtime-retention-messaging-requests.md).
 
 When you respond in real time, you can best select a retention message that suits the customer and your business needs.
 
-##### Prepare to use promotional-offer retention messages
+### Prepare to use promotional-offer retention messages
 
 A promotional-offer message includes text and a promotional offer that you configure in App Store Connect. When you respond with a promotional-offer message, your server signs the offer.
 
@@ -67,7 +67,7 @@ When you respond to your `Get Retention Message` endpoint in real time, provide 
 
 For information about signing the promotional offer, see [`promotionalOffer`](./promotionaloffer.md).
 
-##### Prepare to use switch-plan retention messages
+### Prepare to use switch-plan retention messages
 
 A switch-plan message includes text and a suggested auto-renewable subscription. The suggested subscription needs to be in the same subscription group as the current subscription. For more information about subscription groups, see [Offer auto-renewable subscription](https://developer.apple.com/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions).
 

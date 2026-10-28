@@ -24,11 +24,11 @@ class func confirmationRequired(with lengthToConfirm: Measurement<UnitLength>?) 
 + (instancetype) confirmationRequiredWithLengthToConfirm:(NSMeasurement<NSUnitLength *> *) lengthToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INLengthResolutionResult`](../inlengthresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to the specified object but you want the user to confirm that value.
 

@@ -14,7 +14,7 @@
 kUSBLowLatencyFrameListBuffer = 2
 ```
 
-#### Discussion
+## Discussion
 
 The buffer will be used for a low latency isoch frame list.
 

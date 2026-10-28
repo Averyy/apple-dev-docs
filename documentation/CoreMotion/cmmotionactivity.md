@@ -23,7 +23,7 @@ class CMMotionActivity
 @interface CMMotionActivity : CMLogItem
 ```
 
-#### Overview
+## Overview
 
 On devices that support motion, you can use a [`CMMotionActivityManager`](./cmmotionactivitymanager.md) or [`CMHeadphoneActivityManager`](./cmheadphoneactivitymanager.md) object to request updates when the current type of motion changes. When a change occurs, the update information is packaged into a [`CMMotionActivity`](./cmmotionactivity.md) object and sent to your app.
 

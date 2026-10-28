@@ -29,7 +29,7 @@ var delegateQueue: OperationQueue { get }
 
 - [Processing URL session data task results with Combine](../processing-url-session-data-task-results-with-combine.md)
 
-#### Discussion
+## Discussion
 
 All delegate method calls and completion handlers related to the session are performed on this queue. The session object keeps a strong reference to this queue until your app exits or the session object is deallocated. If you do not invalidate the session, your app leaks memory until it exits.
 

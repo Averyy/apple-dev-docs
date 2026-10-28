@@ -14,7 +14,7 @@
 kCMIOSampleBufferDiscontinuityFlag_TrickPlay
 ```
 
-#### Discussion
+## Discussion
 
 As a way of syncronizing the graph to a known state.
 

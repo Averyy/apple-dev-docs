@@ -21,7 +21,7 @@ Obtains the value of an instance variable of a class instance.
 extern Ivarobject_getInstanceVariable(id obj, const char *name, void **outValue);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the [`Ivar`](./ivar.md) data structure that defines the type and name of the instance variable specified by `name`.
 

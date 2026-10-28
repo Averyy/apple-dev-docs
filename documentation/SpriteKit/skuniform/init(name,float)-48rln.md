@@ -25,7 +25,7 @@ init(name: String, float value: Float)
 - (instancetype) initWithName:(NSString *) name float:(float) value;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized uniform object whose type is set to [`SKUniformType.float`](../skuniformtype/float.md).
 

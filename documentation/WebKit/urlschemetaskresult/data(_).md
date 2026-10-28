@@ -19,7 +19,7 @@ Data for the resource. This value may contain all of the data or only some of it
 case data(Data)
 ```
 
-#### Discussion
+## Discussion
 
 If you load the data incrementally, multiple of these values may be added to the result sequence to deliver each new portion of data. Each time some new Data is added to the sequence, WebKit appends the data to any previously received data.
 

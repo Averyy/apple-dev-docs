@@ -23,7 +23,7 @@ let CXErrorDomainCallDirectoryManager: String
 extern NSErrorDomain const CXErrorDomainCallDirectoryManager;
 ```
 
-#### Discussion
+## Discussion
 
 See [CallKit Constants](./callkit-constants.md) for possible error codes.
 

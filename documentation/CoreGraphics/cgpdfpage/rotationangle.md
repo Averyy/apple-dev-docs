@@ -25,7 +25,7 @@ var rotationAngle: Int32 { get }
 extern int CGPDFPageGetRotationAngle(CGPDFPageRef page);
 ```
 
-#### Discussion
+## Discussion
 
 The returned value is the value of the `/Rotate` entry in the page’s dictionary.
 

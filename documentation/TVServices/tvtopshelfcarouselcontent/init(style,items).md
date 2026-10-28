@@ -19,7 +19,7 @@ init(style: TVTopShelfCarouselContent.Style, items: [TVTopShelfCarouselItem])
 - (instancetype) initWithStyle:(TVTopShelfCarouselContentStyle) style items:(NSArray<TVTopShelfCarouselItem *> *) items;
 ```
 
-#### Return Value
+## Return Value
 
 A new carousel content object containing the specified items.
 

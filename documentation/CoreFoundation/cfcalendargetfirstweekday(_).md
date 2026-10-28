@@ -25,7 +25,7 @@ func CFCalendarGetFirstWeekday(_ calendar: CFCalendar!) -> CFIndex
 extern CFIndex CFCalendarGetFirstWeekday(CFCalendarRef calendar);
 ```
 
-#### Return Value
+## Return Value
 
 The index of the first weekday of the specified calendar.
 

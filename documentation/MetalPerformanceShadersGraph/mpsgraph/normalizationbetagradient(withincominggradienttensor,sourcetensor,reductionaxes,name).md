@@ -24,11 +24,11 @@ func normalizationBetaGradient(withIncomingGradientTensor incomingGradientTensor
 - (MPSGraphTensor *) normalizationBetaGradientWithIncomingGradientTensor:(MPSGraphTensor *) incomingGradientTensor sourceTensor:(MPSGraphTensor *) sourceTensor reductionAxes:(NSArray<NSNumber *> *) axes name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object.
 
-#### Discussion
+## Discussion
 
 The mean and variance tensors should be outputs of `meanWithTensor:axes:name` and `varianceWithTensor:meanTensor:axes:name`. Use the axes parameter to achieve different types of normalizations. For example (assuming your data is in `NxHxWxC` format) Batch normalization: axes = [0, 1, 2] Instance normalization: axes = [1, 2]
 

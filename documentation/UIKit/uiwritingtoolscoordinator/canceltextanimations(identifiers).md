@@ -22,7 +22,7 @@ func cancelTextAnimations(identifiers: [UUID])
 - (void) cancelTextAnimationsWithIdentifiers:(NSArray<NSUUID *> *) identifiers;
 ```
 
-#### Discussion
+## Discussion
 
 The UUIDs passed in should be those returned when starting the animations. To cancel all ahimations, use [`stopWritingTools()`](./stopwritingtools%28%29.md) instead.
 

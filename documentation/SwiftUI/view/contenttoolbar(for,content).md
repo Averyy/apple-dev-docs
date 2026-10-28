@@ -29,7 +29,7 @@ nonisolated
 func contentToolbar<Content>(for placement: ContentToolbarPlacement, @ToolbarContentBuilder content: () -> Content) -> some View where Content : ToolbarContent
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to add toolbar content that remains consistent regardless of the content view.
 

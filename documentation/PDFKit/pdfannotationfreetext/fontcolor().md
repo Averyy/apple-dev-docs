@@ -19,7 +19,7 @@ func fontColor() -> NSColor!
 - (NSColor *) fontColor;
 ```
 
-#### Return Value
+## Return Value
 
 The font color used in the text field of the annotation.
 

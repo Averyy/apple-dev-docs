@@ -24,7 +24,7 @@ var decoderVersion: CIRAWDecoderVersion { get set }
 @property (retain, readwrite) CIRAWDecoderVersion decoderVersion;
 ```
 
-#### Discussion
+## Discussion
 
 The value should be in the range of `0` to the current decoder version.
 

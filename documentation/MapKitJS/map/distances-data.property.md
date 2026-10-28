@@ -20,7 +20,7 @@ set distances(distances: DistanceUnitSystem);
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 Sets the system of measurement for displaying map distances. See [`DistanceUnitSystem`](../distanceunitsystem.md) for accepted values.
 

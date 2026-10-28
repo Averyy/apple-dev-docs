@@ -21,11 +21,11 @@ Creates a URL credential instance for resolving a client certificate authenticat
 + (NSURLCredential *) credentialWithIdentity:(SecIdentityRef) identity certificates:(NSArray *) certArray persistence:(NSURLCredentialPersistence) persistence;
 ```
 
-#### Return Value
+## Return Value
 
 A new URL credential object, using the provided identity and, optionally, an array of intermediate certificates.
 
-#### Discussion
+## Discussion
 
 When you receive a client certificate authentication challenge ([`NSURLAuthenticationMethodClientCertificate`](../nsurlauthenticationmethodclientcertificate.md)) and want to resolve it successfully, you must supply a credential created using this method.
 

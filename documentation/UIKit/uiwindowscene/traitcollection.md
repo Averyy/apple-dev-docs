@@ -23,7 +23,7 @@ var traitCollection: UITraitCollection { get }
 @property (nonatomic, readonly) UITraitCollection * traitCollection;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get additional information about the current scene, such as the size class and scale factor. For more information about the available traits, see [`UITraitCollection`](../uitraitcollection.md).
 

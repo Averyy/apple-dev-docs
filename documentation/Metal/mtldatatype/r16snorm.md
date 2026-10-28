@@ -24,7 +24,7 @@ case r16Snorm
 MTLDataTypeR16Snorm
 ```
 
-#### Discussion
+## Discussion
 
 The single color component is for red.
 

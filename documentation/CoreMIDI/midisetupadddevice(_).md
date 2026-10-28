@@ -23,11 +23,11 @@ func MIDISetupAddDevice(_ device: MIDIDeviceRef) -> OSStatus
 extern OSStatus MIDISetupAddDevice(MIDIDeviceRef device);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 Only MIDI drivers may call this function.
 

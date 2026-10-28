@@ -25,7 +25,7 @@ convenience init?(from url: URL)
 + (instancetype) tileSetFromURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A new tile set or `nil` if the URL doesn’t point to a valid tile set file.
 

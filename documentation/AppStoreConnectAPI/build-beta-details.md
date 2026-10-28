@@ -5,7 +5,7 @@
 
 TestFlight-specific information about beta builds.
 
-#### Overview
+## Overview
 
 Every build has a `buildBetaDetails` resource that represents TestFlight-specific information about the build.
 

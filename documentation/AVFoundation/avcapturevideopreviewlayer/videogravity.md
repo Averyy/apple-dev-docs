@@ -23,7 +23,7 @@ var videoGravity: AVLayerVideoGravity { get set }
 @property (copy) AVLayerVideoGravity videoGravity;
 ```
 
-#### Discussion
+## Discussion
 
 Options are [`resizeAspect`](../avlayervideogravity/resizeaspect.md), [`resizeAspectFill`](../avlayervideogravity/resizeaspectfill.md), and [`resize`](../avlayervideogravity/resize.md). The default is [`resizeAspect`](../avlayervideogravity/resizeaspect.md).
 

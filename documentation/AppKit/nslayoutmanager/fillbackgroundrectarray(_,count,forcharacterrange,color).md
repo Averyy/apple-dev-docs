@@ -19,7 +19,7 @@ func fillBackgroundRectArray(_ rectArray: UnsafePointer<NSRect>, count rectCount
 - (void) fillBackgroundRectArray:(const NSRect *) rectArray count:(NSUInteger) rectCount forCharacterRange:(NSRange) charRange color:(NSColor *) color;
 ```
 
-#### Discussion
+## Discussion
 
 This is the primitive method used by [`drawBackground(forGlyphRange:at:)`](./drawbackground%28forglyphrange,at%29.md), providing a finer-grained override point for actually filling rectangles with a particular background color for a background color attribute, a selected or marked range highlight, a block decoration, or any other rectangle fill needed by that method. As with [`showPackedGlyphs:length:glyphRange:atPoint:font:color:printingAdjustment:`](./showpackedglyphs_length_glyphrange_atpoint_font_color_printingadjustment_.md), the `charRange` and `color` parameters are passed in merely for informational purposes; the color is already set in the graphics state. If for any reason you modify it, you must restore it before returning from this method.
 

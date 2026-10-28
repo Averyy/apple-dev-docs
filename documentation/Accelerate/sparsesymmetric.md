@@ -29,7 +29,7 @@ SparseSymmetric
 
 - [Creating a sparse matrix from coordinate format arrays](./creating-a-sparse-matrix-from-coordinate-format-arrays.md)
 
-#### Discussion
+## Discussion
 
 The [`SparseTriangle_t`](./sparsetriangle_t.md) field indicates which triangle (upper or lower) represents the matrix.
 

@@ -19,7 +19,7 @@ An object that represents a user’s account.
 struct VSUserAccount
 ```
 
-#### Overview
+## Overview
 
 There are two sources for a `VSUserAccount` instance:
 

@@ -23,7 +23,7 @@ let kCTFontUniqueNameKey: CFString
 extern CFStringRef const kCTFontUniqueNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The name specifier for the unique name.
 

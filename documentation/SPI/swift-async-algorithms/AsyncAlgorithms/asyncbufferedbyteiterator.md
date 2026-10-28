@@ -23,7 +23,7 @@ An `AsyncIterator` that provides a convenient and high-performance implementatio
 struct AsyncBufferedByteIterator
 ```
 
-#### Overview
+## Overview
 
 Bytes are read into an internal buffer of `capacity` bytes via the `readFunction`. Invoking `next()` returns bytes from the internal buffer until it’s empty, and then suspends and awaits another invocation of `readFunction` to refill. If `readFunction` returns 0 (indicating nothing was read), `next()` will return `nil` from then on. Cancellation is checked before each invocation of `readFunction`, which means that many calls to `next()` will not check for cancellation.
 

@@ -21,7 +21,7 @@ Unsafely view a typed span as a raw span.
 init<Element>(unsafeElements span: Span<Element>)
 ```
 
-#### Discussion
+## Discussion
 
 Creates a `RawSpan` over the memory represented by a `Span<Element>`
 

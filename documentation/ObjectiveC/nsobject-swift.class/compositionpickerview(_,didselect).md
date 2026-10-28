@@ -21,7 +21,7 @@ func compositionPickerView(_ pickerView: QCCompositionPickerView!, didSelect com
 - (void) compositionPickerView:(QCCompositionPickerView *) pickerView didSelectComposition:(QCComposition *) composition;
 ```
 
-#### Discussion
+## Discussion
 
 Quartz Composer invokes this method when the selected composition in the composition picker view changes. Implement this method if you want to perform custom tasks at that time.
 

@@ -19,7 +19,7 @@
 BNNSDataTypeUInt8
 ```
 
-#### Discussion
+## Discussion
 
 Storage data type
 

@@ -21,7 +21,7 @@ A base type that represents console log data.
 static var log: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.log`.
 

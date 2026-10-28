@@ -25,11 +25,11 @@ func CMBlockBufferCreateContiguous(allocator structureAllocator: CFAllocator?, s
 extern OSStatus CMBlockBufferCreateContiguous(CFAllocatorRef structureAllocator, CMBlockBufferRef sourceBuffer, CFAllocatorRef blockAllocator, const CMBlockBufferCustomBlockSource *customBlockSource, size_t offsetToData, size_t dataLength, CMBlockBufferFlags flags, CMBlockBufferRef*blockBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `kCMBlockBufferNoErr` if successful.
 
-#### Discussion
+## Discussion
 
 Produces a `CMBlockBuffer` containing a contiguous copy of or reference to the data specified by the parameters. The resulting new `CMBlockBuffer` may contain an allocated copy of the data, or may contain a contiguous `CMBlockBuffer` reference. If the `kCMBlockBufferAlwaysCopyDataFlag` is set in the flags parameter, the resulting `CMBlockBuffer` will contain an allocated copy of the data rather than a reference to the `SourceBuffer`.
 

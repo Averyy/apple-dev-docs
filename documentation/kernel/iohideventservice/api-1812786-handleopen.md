@@ -14,11 +14,11 @@ virtual bool handleOpen(
  void *argument);
 ```
 
-#### Return Value
+## Return Value
 
 true to accept the client open, false otherwise.
 
-#### Overview
+## Overview
 
 This method is called by IOService::open() with the arbitration lock held, and must return true to accept the client open. This method will in turn call handleClientOpen() to qualify the client requesting the open.
 

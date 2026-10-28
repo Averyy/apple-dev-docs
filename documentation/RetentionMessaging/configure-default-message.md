@@ -14,7 +14,7 @@ Configures a default message for a specific product in a specific locale.
 - [Identifying rate limits](./identifying-rate-limits.md)
 - [Setting up retention messages](./setting-up-retention-messages.md)
 
-#### Discussion
+## Discussion
 
 When this request succeeds, the system configures the retention message you specify in the request body as the default message for `productId` in `locale`. You can configure a default message for every auto-renewable subscription’s product ID in every locale for your app.
 
@@ -26,7 +26,7 @@ To replace a default message, call this endpoint again with a different message 
 
 To delete a default message, call [`Delete Default Message`](./delete-default-message.md).
 
-##### Use default messages
+### Use default messages
 
 Configure a default message for each product in each locale. If you implement the `Get Retention Message` endpoint, the system requires a default message for every product in each locale where you provide real-time retention messages. For more information, see [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md).
 

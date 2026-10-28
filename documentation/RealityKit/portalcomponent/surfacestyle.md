@@ -20,7 +20,7 @@ The size of the flat plane mesh that RealityKit generates for a portal.
 struct SurfaceStyle
 ```
 
-#### Overview
+## Overview
 
 The factory entry points [`makePortal(surfaceStyle:boundaryStyle:boundaryMode:)`](./makeportal%28surfacestyle,boundarystyle,boundarymode%29.md) and [`configure(world:portalEntity:surfaceStyle:boundaryStyle:boundaryMode:)`](./configure%28world,portalentity,surfacestyle,boundarystyle,boundarymode%29.md) use this value to build a [`ModelComponent`](../modelcomponent.md) whose mesh is a plane on the entity’s local XY plane, centered at the entity’s origin.
 

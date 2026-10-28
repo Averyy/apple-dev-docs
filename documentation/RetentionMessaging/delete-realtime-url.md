@@ -15,7 +15,7 @@ Deletes the URL for your Get Retention Message endpoint, in the sandbox or produ
 - [Retention Messaging API changelog](./retention-messaging-changelog.md)
 - [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md)
 
-#### Discussion
+## Discussion
 
 Call this endpoint’s sandbox URL to delete the sandbox URL of your `Get Retention Message` endpoint.  Call this endpoint’s production URL to delete the production URL of your `Get Retention Message` endpoint.
 

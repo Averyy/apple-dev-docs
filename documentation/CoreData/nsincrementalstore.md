@@ -25,13 +25,13 @@ class NSIncrementalStore
 @interface NSIncrementalStore : NSPersistentStore
 ```
 
-#### Overview
+## Overview
 
 You use this interface to create persistent stores that load and save data incrementally, allowing for the management of large and/or shared datasets.
 
-##### Subclassing Notes
+### Subclassing Notes
 
-###### Methods to Override
+#### Methods to Override
 
 In a subclass of `NSIncrementalStore`, you *must* override the following methods to provide behavior appropriate for your store:
 
@@ -49,7 +49,7 @@ You can also optionally override the following methods:
 
 There is no need to override the methods that you must otherwise override for a subclass of [`NSPersistentStore`](./nspersistentstore.md).
 
-###### Methods that Should Not Be Overridden
+#### Methods that Should Not Be Overridden
 
 In a subclass of `NSIncrementalStore`, you should not override the following methods:
 

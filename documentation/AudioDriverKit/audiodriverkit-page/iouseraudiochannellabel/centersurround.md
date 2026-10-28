@@ -15,7 +15,7 @@ The center surround channel.
 CenterSurround
 ```
 
-#### Discussion
+## Discussion
 
 Other names for this channel include “Back Center” or “Rear Surround”.
 

@@ -24,7 +24,7 @@ var errorCorrectedPayload: Data { get }
 @property (readonly) NSData * errorCorrectedPayload;
 ```
 
-#### Discussion
+## Discussion
 
 The first codeword indicates the number of data codewords in the errorCorrectedPayload.
 

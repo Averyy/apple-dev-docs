@@ -19,7 +19,7 @@ class var maximumAllowedMemorySize: UInt64 { get }
 @property (class, readonly) uint64_t maximumAllowedMemorySize;
 ```
 
-#### Discussion
+## Discussion
 
 The value in the [`memorySize`](./memorysize.md) property must be less than or equal to the value in this property.
 

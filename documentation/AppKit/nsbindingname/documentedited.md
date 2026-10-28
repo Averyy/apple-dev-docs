@@ -19,7 +19,7 @@ static let documentEdited: NSBindingName
 extern NSBindingName NSDocumentEditedBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

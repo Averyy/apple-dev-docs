@@ -24,7 +24,7 @@ var levelsOfDetailBias: Int { get set }
 @property size_t levelsOfDetailBias;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to 0. Each previous level of detail is twice the resolution of the later. For example, specifying a value of 2 means that the layer has two extra levels of detail: 2x and 4x.
 

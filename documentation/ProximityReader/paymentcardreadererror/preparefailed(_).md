@@ -17,7 +17,7 @@ An error that indicates preparation failed.
 case prepareFailed(String?)
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when a call to the [`prepare(using:)`](../paymentcardreader/prepare%28using%29.md) method fails. Check the description for more details and try to prepare the reader again. If the error persists, contact support.
 

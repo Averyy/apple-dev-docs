@@ -20,7 +20,7 @@ Updates the UI to reflect the state of the data in the snapshot, optionally anim
 @preconcurrency func apply(_ snapshot: NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, animatingDifferences: Bool = true, completion: (() -> Void)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The diffable data source computes the difference between the collection view’s current state and the new state in the applied snapshot, which is an O(*n*) operation, where *n* is the number of items in the snapshot.
 

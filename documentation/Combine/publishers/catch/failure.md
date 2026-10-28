@@ -21,7 +21,7 @@ The kind of errors this publisher might publish.
 typealias Failure = NewPublisher.Failure
 ```
 
-#### Discussion
+## Discussion
 
 This publisher uses the replacement publisher’s failure type.
 

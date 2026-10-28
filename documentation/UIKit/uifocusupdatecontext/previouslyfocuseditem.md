@@ -23,7 +23,7 @@ weak var previouslyFocusedItem: (any UIFocusItem)? { get }
 @property (nonatomic, weak, readonly, nullable) id<UIFocusItem> previouslyFocusedItem;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to `nil` when there was no previously focused item.
 

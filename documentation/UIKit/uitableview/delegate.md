@@ -23,7 +23,7 @@ weak var delegate: (any UITableViewDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UITableViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must adopt the [`UITableViewDelegate`](../uitableviewdelegate.md) protocol. The delegate isn’t retained.
 

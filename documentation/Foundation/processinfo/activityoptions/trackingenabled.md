@@ -25,7 +25,7 @@ static var trackingEnabled: ProcessInfo.ActivityOptions { get }
 NSActivityTrackingEnabled
 ```
 
-#### Discussion
+## Discussion
 
 To help you investigate perfomance issues in your app, use [`trackingEnabled`](./trackingenabled.md) to track the timing of a user interaction by annotating the beginning and end of an activity using a signpost interval.
 

@@ -19,7 +19,7 @@ case componentBased
 NSColorTypeComponentBased
 ```
 
-#### Discussion
+## Discussion
 
 Examples of this type are RGB, CMYK, and HSB colors. Before acessing components that are specific to one colorspace, such as the [`redComponent`](../redcomponent.md) of an RGB color, call [`usingColorSpace(_:)`](../usingcolorspace%28_%29.md).
 

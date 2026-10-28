@@ -25,7 +25,7 @@ let MPLanguageOptionCharacteristicIsAuxiliaryContent: String
 extern NSString * const MPLanguageOptionCharacteristicIsAuxiliaryContent;
 ```
 
-#### Discussion
+## Discussion
 
 A language option that presents audio containing commentary on the presentation would typically have this characteristic.
 

@@ -21,11 +21,11 @@ Returns sample timing information for a sample at the specified index.
 func sampleTimingInfo(at sampleIndex: CMItemIndex) throws -> CMSampleTimingInfo
 ```
 
-#### Return Value
+## Return Value
 
 A structure that contains the decode and presentation timestamps of a sample.
 
-#### Discussion
+## Discussion
 
 The system throws a [`bufferHasNoSampleTimingInfo`](./error/bufferhasnosampletiminginfo.md) error if the buffer doesn’t contain sample timing.
 

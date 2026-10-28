@@ -25,7 +25,7 @@ var audioBufferList: UnsafePointer<AudioBufferList> { get }
 @property (nonatomic, readonly) const AudioBufferList * audioBufferList;
 ```
 
-#### Discussion
+## Discussion
 
 A buffer list is a variable length array that contains an array of audio buffer instances. You use it with lower-level Core Audio and Audio Toolbox API.
 

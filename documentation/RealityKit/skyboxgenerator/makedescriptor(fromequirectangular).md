@@ -18,7 +18,7 @@ Returns a recommended skybox cube texture descriptor (for [`generateSkybox(using
 func makeDescriptor(fromEquirectangular texture: any MTLTexture) throws -> MTLTextureDescriptor
 ```
 
-#### Discussion
+## Discussion
 
 The dimensions of the cubemap are chosen so that the resolution of the input texture is approximately preserved. This method allocates mipmap by default, as mipmaps are needed by [`generateDiffuse(using:fromSkyboxCube:quality:into:)`](../imagebasedlighttexturegenerator/generatediffuse%28using,fromskyboxcube,quality,into%29.md) and [`generateSpecular(using:fromSkyboxCube:quality:into:)`](../imagebasedlighttexturegenerator/generatespecular%28using,fromskyboxcube,quality,into%29.md).
 

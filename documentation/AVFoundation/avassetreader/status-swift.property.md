@@ -24,7 +24,7 @@ var status: AVAssetReader.Status { get }
 @property (readonly) AVAssetReaderStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 Check the value of this property when the [`copyNextSampleBuffer()`](../avassetreaderoutput/copynextsamplebuffer%28%29.md) method on [`AVAssetReaderOutput`](../avassetreaderoutput.md) returns `nil` to determine why the output can’t read more data.
 

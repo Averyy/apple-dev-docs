@@ -19,11 +19,11 @@ class func pairedDevices() -> [Any]!
 + (NSArray *) pairedDevices;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an array of device objects for all of the paired devices on the system. If there are no paired devices, nil is returned.
 
-#### Discussion
+## Discussion
 
 The resulting array contains IOBluetoothDevice objects. The paired devices are currently NOT stored per user, so this is all devices paired by any user.
 

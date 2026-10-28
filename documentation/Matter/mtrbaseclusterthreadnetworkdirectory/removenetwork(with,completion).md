@@ -29,7 +29,7 @@ func removeNetwork(with params: MTRThreadNetworkDirectoryClusterRemoveNetworkPar
 - (void) removeNetworkWithParams:(MTRThreadNetworkDirectoryClusterRemoveNetworkParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Removes the network with the given Extended PAN ID from the ThreadNetworks attribute.
 

@@ -15,7 +15,7 @@ The request to manage licenses.
 object ManageVppLicensesByAdamIdRequest
 ```
 
-#### Discussion
+## Discussion
 
 The maximum number of entries allowed in the `associate*` and `disassociate*` arrays are indicated by the `maxBatchAssociateLicenseCount` or `maxBatchDisassociateLicenseCount` fields available from the [`Service Configuration`](./service-configuration.md) response.
 

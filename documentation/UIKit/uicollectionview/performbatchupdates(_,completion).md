@@ -23,7 +23,7 @@ func performBatchUpdates(_ updates: (() -> Void)?, completion: ((Bool) -> Void)?
 - (void) performBatchUpdates:(void (^)()) updates completion:(void (^)(BOOL finished)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method in cases where you want to make multiple changes to the collection view in one single animated operation, as opposed to in several separate animations. You might use this method to insert, delete, reload, or move cells or use it to change the layout parameters associated with one or more cells. Use the block passed in the `updates` parameter to specify all of the operations you want to perform.
 

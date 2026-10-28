@@ -17,7 +17,7 @@ Initializes a newly created URL handle with the specified URL.
 - (id) initWithURL:(NSURL *) anURL cached:(BOOL) willCache;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses of `NSURLHandle` must override this method.
 

@@ -25,7 +25,7 @@ class CKSubscription
 @interface CKSubscription : NSObject
 ```
 
-#### Overview
+## Overview
 
 A subscription acts like a persistent query on the server that can track the creation, deletion, and modification of records. When changes occur, they trigger the delivery of push notifications so that your app can respond appropriately.
 
@@ -37,7 +37,7 @@ Most of a subscription’s configuration happens at initialization time. You mus
 
 > **Note**: Create subscriptions in the development environment first and then promote them to production. Attempting to create a subscription directly in the production environment results in an error.
 
-##### Handling the Resulting Push Notifications
+### Handling the Resulting Push Notifications
 
 When CloudKit modifies a record and triggers a subscription, the server sends push notifications to all devices with that subscription except for the one that makes the original changes. For subscription-based push notifications, the server can add data to the notification payload that indicates the condition that triggers the notification. In the [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](../UIKit/uiapplicationdelegate/application%28_,didreceiveremotenotification,fetchcompletionhandler%29.md) method of your app delegate, create a [`CKNotification`](./cknotification.md) object from the provided `userInfo` dictionary. You can then query it for the information that’s relevant to the notification.
 

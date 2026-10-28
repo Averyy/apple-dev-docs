@@ -14,7 +14,7 @@ A Boolean value that indicates whether your app can use the Virtualization frame
 - **Name**: `com.apple.security.virtualization` (Virtualization)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 You can read the `VZVirtualMachine` property [`isSupported`](../../Virtualization/vzmachardwaremodel/issupported.md) to check for the availability of virtualization on the system. Calling [`validate()`](../../Virtualization/vzvirtualmachineconfiguration/validate%28%29.md) checks for the availability of the entitlement the framework requires to run guest OSes.
 

@@ -21,7 +21,7 @@ Creates a named subscription for all records in the specified record zone.
 - (instancetype) initWithZoneID:(CKRecordZoneID *) zoneID subscriptionID:(CKSubscriptionID) subscriptionID;
 ```
 
-#### Discussion
+## Discussion
 
 The subscription that this method returns is a zone-based subscription that generates push notifications when CloudKit changes any of the specified record zone’s records.
 

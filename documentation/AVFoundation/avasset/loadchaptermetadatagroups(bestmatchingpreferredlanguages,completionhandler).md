@@ -29,7 +29,7 @@ func loadChapterMetadataGroups(bestMatchingPreferredLanguages preferredLanguages
 - (void) loadChapterMetadataGroupsBestMatchingPreferredLanguages:(NSArray<NSString *> *) preferredLanguages completionHandler:(void (^)(NSArray<AVTimedMetadataGroup *> *, NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns an array of [`AVTimedMetadataGroup`](../avtimedmetadatagroup.md) objects asynchronously. Each object in the array contains an [`AVMetadataItem`](../avmetadataitem.md) that represents the chapter’s title, and the metadata group’s [`timeRange`](../avtimedmetadatagroup/timerange.md) value equals the time range of the chapter title item.
 

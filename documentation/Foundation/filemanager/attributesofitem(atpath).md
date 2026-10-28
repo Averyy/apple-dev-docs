@@ -25,17 +25,17 @@ func attributesOfItem(atPath path: String) throws -> [FileAttributeKey : Any]
 - (NSDictionary<NSString *,id> *) attributesOfItemAtPath:(NSString *) path error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary object that describes the attributes (file, directory, symlink, and so on) of the file specified by `path` (or `nil` if an error occurred in Objective-C). The keys in the dictionary are described in `File Attribute Keys`.
 
-#### Discussion
+## Discussion
 
 If the item at the path is a symbolic link—that is, the value of the [`type`](../fileattributekey/type.md) key in the attributes dictionary is [`typeSymbolicLink`](../fileattributetype/typesymboliclink.md)—you can use the [`destinationOfSymbolicLink(atPath:)`](./destinationofsymboliclink%28atpath%29.md) method to retrieve the path of the item pointed to by the link. You can also use the [`resolvingSymlinksInPath`](../nsstring/resolvingsymlinksinpath.md) method of [`NSString`](../nsstring.md) to resolve links in the path before retrieving the item’s attributes.
 
 As a convenience, [`NSDictionary`](../nsdictionary.md) provides a set of methods (declared as a category on [`NSDictionary`](../nsdictionary.md)) for quickly and efficiently obtaining attribute information from the returned dictionary: [`fileGroupOwnerAccountName()`](../nsdictionary/filegroupowneraccountname%28%29.md), [`fileModificationDate()`](../nsdictionary/filemodificationdate%28%29.md), [`fileOwnerAccountName()`](../nsdictionary/fileowneraccountname%28%29.md), [`filePosixPermissions()`](../nsdictionary/fileposixpermissions%28%29.md), [`fileSize()`](../nsdictionary/filesize%28%29.md), [`fileSystemFileNumber()`](../nsdictionary/filesystemfilenumber%28%29.md), [`fileSystemNumber()`](../nsdictionary/filesystemnumber%28%29.md), and [`fileType()`](../nsdictionary/filetype%28%29.md).
 
-##### Discussion
+### Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

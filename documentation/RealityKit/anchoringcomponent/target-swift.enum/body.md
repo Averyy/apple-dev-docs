@@ -19,7 +19,7 @@ An anchor point attached to a human body in motion within the scene.
 case body
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: macOS, visionOS and tvOS apps don’t track this type of anchor.
 

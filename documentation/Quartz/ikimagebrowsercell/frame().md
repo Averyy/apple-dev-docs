@@ -19,11 +19,11 @@ func frame() -> NSRect
 - (NSRect) frame;
 ```
 
-#### Return Value
+## Return Value
 
 The coordinates of the frame, in the `IKImageBrowserView` coordinate space.
 
-#### Discussion
+## Discussion
 
 Subclasses should not override this method.
 

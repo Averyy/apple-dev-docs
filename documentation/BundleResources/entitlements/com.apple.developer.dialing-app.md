@@ -19,7 +19,7 @@ A Boolean value that indicates whether an app can be the default dialer app on s
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 Add the Default Dialer App entitlement by following these steps:
 

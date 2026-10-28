@@ -30,7 +30,7 @@ class UIStoryboard
 
 - [Displaying and managing views with a view controller](./displaying-and-managing-views-with-a-view-controller.md)
 
-#### Overview
+## Overview
 
 A [`UIStoryboard`](./uistoryboard.md) object manages archived versions of your app’s view controllers. At design time, you configure the content of your view controllers visually, and Xcode saves the data needed to recreate that interface in a storyboard file in your app’s bundle. When you want to create a new view controller programmatically, first create a [`UIStoryboard`](./uistoryboard.md) object and specify the appropriate name and bundle information. Then use that object to instantiate the specific view controller that you want.
 

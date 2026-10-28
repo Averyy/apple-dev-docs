@@ -15,8 +15,8 @@
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func supportsDataEntryType(_ type: UTType) async throws -> Bool
+nonisolated(nonsending)
+func supportsDataEntryType(_ type: UTType) async throws -> Bool
 ```
 
 

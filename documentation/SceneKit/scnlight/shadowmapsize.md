@@ -25,7 +25,7 @@ var shadowMapSize: CGSize { get set }
 @property (nonatomic) CGSize shadowMapSize;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit produces shadows by rendering the silhouettes of scene geometry into a 2D shadow map image and then projecting that image into the rendered scene. A larger shadow map image produces more detailed shadows at a higher cost to rendering performance; a smaller shadow map renders more quickly but results in pixelation at the edges of shadows.
 

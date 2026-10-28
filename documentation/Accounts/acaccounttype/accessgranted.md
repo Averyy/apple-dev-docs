@@ -24,7 +24,7 @@ var accessGranted: Bool { get }
 @property (nonatomic, readonly) BOOL accessGranted;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the application has access to accounts of this type; otherwise [`false`](../../Swift/false.md).
 

@@ -20,7 +20,7 @@ typealias CGWindowLevel = Int32
 typedef int32_t CGWindowLevel;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, application frameworks support the concept of multiple window levels (or layers). Window levels are assigned and managed by each individual framework.
 

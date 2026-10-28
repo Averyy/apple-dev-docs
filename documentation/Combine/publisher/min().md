@@ -23,11 +23,11 @@ func min() -> Publishers.Comparison<Self>
 
 Available when `Output` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 A publisher that publishes the minimum value received from the upstream publisher, after the upstream publisher finishes.
 
-#### Discussion
+## Discussion
 
 Use [`min(by:)`](./min%28by%29.md) to find the minimum value in a stream of elements from an upstream publisher.
 

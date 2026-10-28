@@ -28,7 +28,7 @@ func setScore(on leaderboard: GKLeaderboard, to score: Int, context: Int)
 
 - [Creating activities for your game](../creating-activities-for-your-game.md)
 
-#### Discussion
+## Discussion
 
 The framewwork submits the score to the leaderboard when the activity ends.
 

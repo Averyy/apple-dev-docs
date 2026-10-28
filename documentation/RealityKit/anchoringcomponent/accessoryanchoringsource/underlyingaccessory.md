@@ -15,7 +15,7 @@ A reference to the root accessory object.
 var underlyingAccessory: Accessory? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Provides access to the abstracted ARKit [`Accessory`](../../../ARKit/accessory.md) object.
 

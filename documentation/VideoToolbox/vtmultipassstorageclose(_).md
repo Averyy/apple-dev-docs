@@ -24,7 +24,7 @@ func VTMultiPassStorageClose(_ multiPassStorage: VTMultiPassStorage) -> OSStatus
 extern OSStatus VTMultiPassStorageClose(VTMultiPassStorageRef multiPassStorage);
 ```
 
-#### Discussion
+## Discussion
 
 After this function is called, all functions on the multipass storage object fail. It’s still necessary to release the object by calling [`CFRelease`](../CoreFoundation/cfrelease.md).
 

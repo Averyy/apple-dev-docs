@@ -27,7 +27,7 @@ var allowsCellularAccess: Bool { get set }
 @property (nonatomic, assign) BOOL allowsCellularAccess;
 ```
 
-#### Discussion
+## Discussion
 
 When you send or receive many records, or when you send records with large assets, you might set this property to [`false`](../../Swift/false.md) to avoid consuming too much of the user’s cellular data bandwidth. The default value is [`true`](../../Swift/true.md).
 

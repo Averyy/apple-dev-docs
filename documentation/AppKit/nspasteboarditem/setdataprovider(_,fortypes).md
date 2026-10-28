@@ -19,11 +19,11 @@ func setDataProvider(_ dataProvider: any NSPasteboardItemDataProvider, forTypes 
 - (BOOL) setDataProvider:(id<NSPasteboardItemDataProvider>) dataProvider forTypes:(NSArray<NSString *> *) types;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the data provider was set successfully, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method registers the data provider to be messaged to provide the data for any of the specified types when requested.
 

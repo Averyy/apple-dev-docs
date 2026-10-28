@@ -23,7 +23,7 @@ let NSMetadataUbiquitousItemDownloadingErrorKey: String
 extern NSString * const NSMetadataUbiquitousItemDownloadingErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSError`](./nserror.md) object that describes the problem that occurred when downloading the item from iCloud failed.
 

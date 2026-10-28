@@ -10,7 +10,7 @@ Construct and manage a graphical, event-driven user interface for your macOS app
 - Mac Catalyst 13.0+
 - macOS 10.0+
 
-#### Overview
+## Overview
 
 AppKit contains the objects you need to build the user interface for a macOS app. In addition to drawing windows, buttons, panels, and text fields, it handles all the event management and interaction between your app, people, and macOS.
 

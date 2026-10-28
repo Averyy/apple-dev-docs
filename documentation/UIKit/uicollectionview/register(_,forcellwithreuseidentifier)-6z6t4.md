@@ -25,7 +25,7 @@ func register(_ nib: UINib?, forCellWithReuseIdentifier identifier: String)
 - (void) registerNib:(UINib *) nib forCellWithReuseIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Prior to calling the [`dequeueReusableCell(withReuseIdentifier:for:)`](./dequeuereusablecell%28withreuseidentifier,for%29.md) method of the collection view, you must use this method or the [`register(_:forCellWithReuseIdentifier:)`](./register%28_,forcellwithreuseidentifier%29-3vaho.md) method to tell the collection view how to create a new cell of the given type. If a cell of the specified type is not currently in a reuse queue, the collection view uses the provided information to create a new cell object automatically.
 

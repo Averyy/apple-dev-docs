@@ -19,11 +19,11 @@ func PMSetLastPage(_ printSettings: PMPrintSettings, _ last: UInt32, _ lock: Boo
 OSStatus PMSetLastPage(PMPrintSettings printSettings, UInt32 last, Boolean lock);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007). 
 
-#### Discussion
+## Discussion
 
 Typically, you call this function after the Print dialog is displayed to indicate the number of the last page number to be printed. In macOS, setting the last page provides information used by the progress dialog that is shown during printing.
 

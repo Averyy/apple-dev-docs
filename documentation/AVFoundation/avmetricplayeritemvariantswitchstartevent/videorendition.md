@@ -23,7 +23,7 @@ var videoRendition: AVMetricMediaRendition { get }
 @property (readonly) AVMetricMediaRendition * videoRendition;
 ```
 
-#### Discussion
+## Discussion
 
 Contains information corresponding to the currently selected video rendition.
 

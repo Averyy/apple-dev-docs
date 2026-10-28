@@ -19,7 +19,7 @@ static let data: NSBindingName
 extern NSBindingName NSDataBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

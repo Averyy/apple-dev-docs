@@ -26,7 +26,7 @@ var showsTraffic: Bool { get set }
 @property (nonatomic) BOOL showsTraffic;
 ```
 
-#### Discussion
+## Discussion
 
 The [`mapType`](./maptype.md) property must be set to [`MKMapType.standard`](../mkmaptype/standard.md) or [`MKMapType.hybrid`](../mkmaptype/hybrid.md) for traffic information to be shown. The default value of this property is [`false`](../../Swift/false.md).
 

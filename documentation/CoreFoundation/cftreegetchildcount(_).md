@@ -25,7 +25,7 @@ func CFTreeGetChildCount(_ tree: CFTree!) -> CFIndex
 extern CFIndex CFTreeGetChildCount(CFTreeRef tree);
 ```
 
-#### Return Value
+## Return Value
 
 The number of children in `tree`.
 

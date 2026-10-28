@@ -39,7 +39,7 @@ nonisolated
 func lineLimit(_ number: Int?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to specify a closed range of lines that a [`Text`](../text.md) view or a vertical [`TextField`](../textfield.md) can occupy. When the text of such views occupies more space than the provided limit, a [`Text`](../text.md) view truncates its content while a [`TextField`](../textfield.md) becomes scrollable.
 

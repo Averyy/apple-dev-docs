@@ -19,7 +19,7 @@ var minimumWidth: CGFloat { get set }
 @property CGFloat minimumWidth;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a value of type `CGFloat`, indicating the minimum width of the menu in screen coordinates.
 

@@ -24,7 +24,7 @@ func unmarkText()
 - (void) unmarkText;
 ```
 
-#### Discussion
+## Discussion
 
 After this method is called, the value of [`markedTextRange`](./markedtextrange.md) is `nil`.
 

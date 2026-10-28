@@ -19,11 +19,11 @@ convenience init(markerFormat: NSTextList.MarkerFormat, options: Int)
 - (instancetype) initWithMarkerFormat:(NSTextListMarkerFormat) markerFormat options:(NSUInteger) options;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized text list.
 
-#### Discussion
+## Discussion
 
 The marker format is specified as a constant string, except for a numbering specifier, which takes the form `{`keyword`}`. The currently supported values for keyword include:
 

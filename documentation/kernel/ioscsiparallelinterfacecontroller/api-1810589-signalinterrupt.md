@@ -12,7 +12,7 @@ void SignalInterrupt (
  void );
 ```
 
-#### Overview
+## Overview
 
 Subclasses of IOSCSIParallelInterfaceController should call this method in order to get the secondary interrupt thread scheduled if and only if they will be returning false from their overriden FilterInterruptRequest() method. See the discussion for the FilterInterruptRequest() method for more details.
 

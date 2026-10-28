@@ -15,11 +15,11 @@ Returns a Boolean value indicating whether or not the receiver has marked text.
 - (BOOL) hasMarkedText;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver has marked text, [`false`](../../Swift/false.md) if it doesn’t.
 
-#### Discussion
+## Discussion
 
 Unlike other methods in this protocol, this one is not called by an input server. The text view itself may call this method to determine whether there currently is marked text. `NSTextView`, for example, disables the Edit > Copy menu item when this method returns [`true`](../../Swift/true.md).
 

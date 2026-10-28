@@ -23,7 +23,7 @@ var minimumLineSpacing: CGFloat { get set }
 @property (nonatomic) CGFloat minimumLineSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate object does not implement the [`collectionView(_:layout:minimumLineSpacingForSectionAt:)`](../uicollectionviewdelegateflowlayout/collectionview%28_,layout,minimumlinespacingforsectionat%29.md) method, the flow layout uses the value in this property to set the spacing between lines in a section.
 

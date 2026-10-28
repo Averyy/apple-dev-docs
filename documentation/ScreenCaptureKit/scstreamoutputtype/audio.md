@@ -24,7 +24,7 @@ case audio
 SCStreamOutputTypeAudio
 ```
 
-#### Discussion
+## Discussion
 
 A captured sample buffer wraps an [`AudioBufferList`](../../CoreAudioTypes/audiobufferlist.md) structure that contains the audio samples. The stream configuration’s [`sampleRate`](../scstreamconfiguration/samplerate.md) and [`channelCount`](../scstreamconfiguration/channelcount.md) property values determine of the format of the audio.
 

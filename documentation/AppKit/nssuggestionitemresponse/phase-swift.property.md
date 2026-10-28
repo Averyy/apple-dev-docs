@@ -15,7 +15,7 @@ Describes the phase of results. In other words, whether this batch of items repr
 var phase: NSSuggestionItemResponse<SuggestionItemType>.Phase
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This controls whether or not a indeterminate spinner appears by the control and suggestions menu to indicate to the user that there may be any/more/different/updated suggestions coming.
 

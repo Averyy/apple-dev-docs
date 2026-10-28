@@ -20,7 +20,7 @@ Returns a string formatted to contain the data from a size data structure.
 extern NSString *NSStringFromCGSize(CGSize size);
 ```
 
-#### Return Value
+## Return Value
 
 A string that corresponds to `size`. See [`CGSizeFromString`](./cgsizefromstring.md) for a discussion of the string format.
 

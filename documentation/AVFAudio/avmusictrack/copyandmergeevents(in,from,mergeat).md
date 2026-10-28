@@ -24,7 +24,7 @@ func copyAndMergeEvents(in range: AVBeatRange, from sourceTrack: AVMusicTrack, m
 - (void) copyAndMergeEventsInRange:(AVBeatRange) range fromTrack:(AVMusicTrack *) sourceTrack mergeAtBeat:(AVMusicTimeStamp) mergeStartBeat;
 ```
 
-#### Discussion
+## Discussion
 
 The system won’t modify events originally at or past the start beat. Copying events from track to track follows the same type-exclusion rules as adding events.
 

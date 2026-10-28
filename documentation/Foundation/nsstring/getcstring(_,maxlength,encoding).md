@@ -25,11 +25,11 @@ func getCString(_ buffer: UnsafeMutablePointer<CChar>, maxLength maxBufferCount:
 - (BOOL) getCString:(char *) buffer maxLength:(NSUInteger) maxBufferCount encoding:(NSStringEncoding) encoding;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operation was successful, otherwise [`false`](../../Swift/false.md). Returns [`false`](../../Swift/false.md) if conversion is not possible due to encoding errors or if `buffer` is too small.
 
-#### Discussion
+## Discussion
 
 Note that in the treatment of the `maxBufferCount` argument, this method differs from the deprecated [`getCString(_:maxLength:)`](./getcstring%28_,maxlength%29.md) method which it replaces. (The buffer should include room for `maxBufferCount` bytes; this number should accommodate the expected size of the return value plus the `NULL` termination byte, which this method adds.)
 

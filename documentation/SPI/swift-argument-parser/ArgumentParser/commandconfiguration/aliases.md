@@ -17,7 +17,7 @@ An array of aliases for the command’s name.
 var aliases: [String]
 ```
 
-#### Discussion
+## Discussion
 
 All of the aliases MUST not match the actual command’s name, whether that be the derived name if `commandName` is not provided, or `commandName` itself if provided.
 

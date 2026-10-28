@@ -21,7 +21,7 @@ var draggingFormation: NSDraggingFormation { get set }
 @property NSDraggingFormation draggingFormation;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to change the formation of the drag items. This is generally done during the [`updateDraggingItemsForDrag(_:)`](../nsdraggingdestination/updatedraggingitemsfordrag%28_%29.md) method or whenever you enumerate the dragging items.
 

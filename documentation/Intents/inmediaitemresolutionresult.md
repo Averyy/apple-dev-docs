@@ -24,7 +24,7 @@ class INMediaItemResolutionResult
 @interface INMediaItemResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INMediaItemResolutionResult`](./inmediaitemresolutionresult.md) object when resolving parameters containing an [`INMediaItem`](./inmediaitem.md) value. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

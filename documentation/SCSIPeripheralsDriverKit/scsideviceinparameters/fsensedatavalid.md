@@ -15,7 +15,7 @@ A Boolean value that indicates whether the sense data that the kernel provides i
 bool fSenseDataValid;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `false`.
 

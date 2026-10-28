@@ -19,7 +19,7 @@ func enableSnapshotRestoration()
 - (void) enableSnapshotRestoration;
 ```
 
-#### Discussion
+## Discussion
 
 While snapshot restoration is enabled, the system snapshots the window’s restorable state.
 

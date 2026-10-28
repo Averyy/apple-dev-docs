@@ -23,7 +23,7 @@ func ABAddressBookCopyArrayOfAllGroupsInSource(_ addressBook: ABAddressBook!, _ 
 extern CFArrayRefABAddressBookCopyArrayOfAllGroupsInSource(ABAddressBookRef addressBook, ABRecordRef source);
 ```
 
-#### Return Value
+## Return Value
 
 An array of all groups from a particular source.
 

@@ -31,11 +31,11 @@ func dragContainer<Item, Data>(for itemType: Item.Type = Item.self, in namespace
 
 - [Reordering items in lists, stacks, grids, and custom layouts](../reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
 
-#### Return Value
+## Return Value
 
 A view that can be activated as the source of a drag and drop operation, beginning with user gesture input.
 
-#### Discussion
+## Discussion
 
 Provide the selected identifiers list to SwiftUI using `dragContainerSelection(_:containerNamespace)` modifier. In a case when there’s no selection information available, SwiftUI passes the dragged item identifier to the `payload` closure.
 

@@ -25,7 +25,7 @@ func makeDynamicLibrary(library: any MTLLibrary) throws -> any MTLDynamicLibrary
 - (id<MTLDynamicLibrary>) newDynamicLibrary:(id<MTLLibrary>) library error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLDynamicLibrary`](../mtldynamiclibrary.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 

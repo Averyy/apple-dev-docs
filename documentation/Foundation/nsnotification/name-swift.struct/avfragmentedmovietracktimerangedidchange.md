@@ -20,7 +20,7 @@ A notification the system posts when a fragmented movie minder observes a change
 static let AVFragmentedMovieTrackTimeRangeDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification only for changes that occur after a movie track’s [`timeRange`](../../../AVFoundation/avassettrack/timerange.md) property reaches a [`AVKeyValueStatus.loaded`](../../../AVFoundation/avkeyvaluestatus/loaded.md) status.
 

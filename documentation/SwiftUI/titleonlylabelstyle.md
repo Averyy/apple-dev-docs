@@ -22,7 +22,7 @@ nonisolated
 struct TitleOnlyLabelStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`titleOnly`](./labelstyle/titleonly.md) to construct this style.
 

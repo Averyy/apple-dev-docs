@@ -18,7 +18,7 @@ typedef enum IOPSLowBatteryWarningLevel : unsigned int {
 } IOPSLowBatteryWarningLevel;
 ```
 
-#### Overview
+## Overview
 
 macOS makes no guarantees that the system shall remain in Final Warning for 10 minutes. Batteries are frequently calibrated differently and may provide runtime for more, or less, than the estimated 10 minutes.
 

@@ -23,7 +23,7 @@ var preferences: WKPreferences { get set }
 @property (nonatomic, strong) WKPreferences * preferences;
 ```
 
-#### Discussion
+## Discussion
 
 Use the preferences object in this property to customize the rendering, JavaScript, and other preferences related to your web view. You can also change the preferences by assigning a new WKPreferences object to this property.
 

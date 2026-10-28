@@ -16,7 +16,7 @@ Returns the password policies of a record.
 extern CFDictionaryRefODRecordCopyPasswordPolicy(CFAllocatorRef allocator, ODRecordRef record, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The password policies for the record, or `NULL` if no policies have been set.
 

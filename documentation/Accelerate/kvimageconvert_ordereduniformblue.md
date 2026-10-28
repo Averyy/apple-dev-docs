@@ -25,7 +25,7 @@ var kvImageConvert_OrderedUniformBlue: UInt32 { get }
 kvImageConvert_OrderedUniformBlue
 ```
 
-#### Discussion
+## Discussion
 
 The following shows an 8-bit RGB image converted to a 1-bit planar image with [`vImageConvert_Planar8toPlanar1(_:_:_:_:_:)`](./vimageconvert_planar8toplanar1%28_,_,_,_,_%29.md) using [`kvImageConvert_DitherOrderedReproducible`](./kvimageconvert_ditherorderedreproducible.md). The image on the left uses [`kvImageConvert_OrderedGaussianBlue`](./kvimageconvert_orderedgaussianblue.md), and the image on the right uses [`kvImageConvert_OrderedUniformBlue`](./kvimageconvert_ordereduniformblue.md):
 

@@ -24,7 +24,7 @@ class func predicateForWorkoutActivities(start startDate: Date?, end endDate: Da
 + (NSPredicate *) predicateForWorkoutActivitiesWithStartDate:(NSDate *) startDate endDate:(NSDate *) endDate options:(HKQueryOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that matches workout activities that occur between the specified start and end dates. To use this predicate, call [`predicateForWorkouts(activityPredicate:)`](./predicateforworkouts%28activitypredicate%29.md) to wrap this predicate inside a workout predicate. You can then use the workout predicate in your query.
 

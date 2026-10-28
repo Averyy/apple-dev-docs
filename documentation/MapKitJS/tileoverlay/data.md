@@ -16,7 +16,7 @@ get data(): Record<string, any>;
 set data(data: Record<string, any>);
 ```
 
-#### Discussion
+## Discussion
 
 The `data` object holds a dictionary of custom properties to fill the [`urlTemplate`](./urltemplate.md).
 

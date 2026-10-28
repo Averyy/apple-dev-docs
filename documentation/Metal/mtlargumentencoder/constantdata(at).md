@@ -25,11 +25,11 @@ func constantData(at index: Int) -> UnsafeMutableRawPointer
 - (void *) constantDataAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the location in the buffer to which you should write the constant data.
 
-#### Discussion
+## Discussion
 
 Constants declared contiguously in the Metal shading language (in an array or structure) are contiguous in memory. You can encode contiguous ranges of inlined constant data through a pointer to the first constant.
 

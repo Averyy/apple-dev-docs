@@ -20,11 +20,11 @@ func AudioObjectGetPropertyData(_ inObjectID: AudioObjectID, _ inAddress: Unsafe
 extern OSStatus AudioObjectGetPropertyData(AudioObjectID inObjectID, const AudioObjectPropertyAddress *inAddress, UInt32 inQualifierDataSize, const void *inQualifierData, UInt32 *ioDataSize, void *outData);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Queries an AudioObject to get the data of the given property and places it in the provided buffer.
 

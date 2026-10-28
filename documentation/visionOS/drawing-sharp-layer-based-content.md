@@ -5,7 +5,7 @@
 
 Deliver text and vector images at multiple resolutions from custom Core Animation layers in visionOS.
 
-#### Overview
+## Overview
 
 If your app uses Core Animation layers directly, update your layer code to draw a high-resolution version of your content when appropriate. SwiftUI and UIKit views use Core Animation layers to manage interface content efficiently. When a view draws its content, the underlying layer captures that content and caches it to improve subsequent render operations.
 
@@ -17,7 +17,7 @@ Core Animation on most Apple platforms rasterizes your layer at the same resolut
 
 If you deliver content using custom [`CALayer`](../QuartzCore/calayer.md) objects, you can configure your custom layers to support drawing at different resolutions. If you don’t perform this extra configuration step, each layer rasterizes its content at a @2x scale factor, which is good enough for most content and matches what the layer provides on a Retina display. However, if you opt in to drawing at different resolutions, the layer rasterizes its content at up to @8x scale factor in visionOS, which adds significant detail to text and vector-based content.
 
-##### Request dynamic scaling for custom layers
+### Request dynamic scaling for custom layers
 
 Dynamic content scaling is off by default for all Core Animation layers, and frameworks or apps must turn on this support explicitly. If your interface uses only SwiftUI or UIKit views, you don’t need to do anything to support this feature. SwiftUI and UIKit enable it automatically for views that benefit from the added detail, such as text views and image views with SF Symbols or other vector-based artwork. However, the frameworks don’t enable the feature for all views, including [`UIView`](../UIKit/uiview.md) and [`View`](../SwiftUI/view.md).
 
@@ -47,7 +47,7 @@ Dynamic content scaling works best when the layer contains text or vector-based 
 
 The [`CAShapeLayer`](../QuartzCore/cashapelayer.md) class ignores the value of the [`wantsDynamicContentScaling`](../QuartzCore/calayer/wantsdynamiccontentscaling.md) property and always enables dynamic content scaling. For other Core Animation layers, you must enable the feature explicitly to take advantage of it.
 
-##### Draw the layer’s content dynamically
+### Draw the layer’s content dynamically
 
 Dynamic content scaling requires you to draw your layer’s contents using one of the prescribed methods. If you define a custom subclass of [`CALayer`](../QuartzCore/calayer.md), draw your layer’s content in the [`draw(in:)`](../QuartzCore/calayer/draw%28in%29.md) method. If you use a [`CALayerDelegate`](../QuartzCore/calayerdelegate.md) object to draw the layer’s content, use the delegate’s [`draw(_:in:)`](../QuartzCore/calayerdelegate/draw%28_,in%29.md) method instead.
 
@@ -61,7 +61,7 @@ Some Core Graphics routines are incompatible with dynamic content scaling. Even 
 
 If your app creates timer-based animations, don’t animate layer changes using your drawing method. Calling [`setNeedsDisplay()`](../QuartzCore/calayer/setneedsdisplay%28%29.md) on your layer repeatedly in a short time causes the system to draw the layer multiple times in quick succession. Because visionOS needs a little extra time to draw a layer at high resolution, each redraw request forces it to throw away work. A better option is to animate layer-based properties to achieve the same effect, or use a [`CAShapeLayer`](../QuartzCore/cashapelayer.md) to animate paths when needed.
 
-##### Modify layer hierarchies to improve performance
+### Modify layer hierarchies to improve performance
 
 The backing store for a layer consumes more memory at higher resolutions than at lower resolutions. Measure your app’s memory usage before and after you enable dynamic content scaling to make sure the increased memory cost is worth the benefit. If your app’s memory usage increases too much, limit which layers adopt dynamic content scaling. You can also reduce the amount of memory each layer uses in the following ways:
 

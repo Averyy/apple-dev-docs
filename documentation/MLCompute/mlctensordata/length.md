@@ -23,7 +23,7 @@ var length: Int { get }
 @property (nonatomic, readonly) NSUInteger length;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This value must not exceed length of `bytes`.
 

@@ -19,11 +19,11 @@ func rulerAttributes(in range: NSRange) -> [NSAttributedString.Key : Any]
 - (NSDictionary<NSString *,id> *) rulerAttributesInRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the ruler attributes in the range.
 
-#### Discussion
+## Discussion
 
 The only ruler attribute currently defined is that named by [`paragraphStyle`](./key/paragraphstyle.md). Use this method to obtain attributes that are to be copied or pasted with “copy ruler” operations.
 

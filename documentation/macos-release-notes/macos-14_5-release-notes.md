@@ -5,19 +5,19 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 14.5 SDK provides support to develop apps for Mac computers running Sonoma 14.5. The SDK comes bundled with Xcode 15.4. For information on the compatibility requirements for Xcode 15.4, see [Xcode 15.4 Release Notes](../Xcode-Release-Notes/xcode-15_4-release-notes.md).
 
-##### FaceTime
+### FaceTime
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Users might not be able to approve or decline a FaceTime link call because notifications might not be received on the caller side for them to accept or decline the call.    (125617787)
 
-##### Mac (Designed for iPad) Apps
+### Mac (Designed for iPad) Apps
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: macOS might launch the wrong version for (Designed for iPad) apps after double clicking the icon or after building from Xcode.  (121404522)
 

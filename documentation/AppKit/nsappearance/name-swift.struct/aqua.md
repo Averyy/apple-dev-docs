@@ -19,7 +19,7 @@ static let aqua: NSAppearance.Name
 extern NSAppearanceName const NSAppearanceNameAqua;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant to retrieve the named [`NSAppearance`](../../nsappearance.md) associated with the standard light system appearance. You can assign that appearance object to the views and windows of your interface or to your entire app.
 

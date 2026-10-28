@@ -19,7 +19,7 @@ func showDefinition(for attrString: NSAttributedString?, range targetRange: NSRa
 - (void) showDefinitionForAttributedString:(NSAttributedString *) attrString range:(NSRange) targetRange options:(NSDictionary<NSString *,id> *) options baselineOriginProvider:(NSPoint (^)(NSRange adjustedRange)) originProvider;
 ```
 
-#### Discussion
+## Discussion
 
 This method does not cause scrolling, so clients should perform any necessary scrolling before calling this method.
 

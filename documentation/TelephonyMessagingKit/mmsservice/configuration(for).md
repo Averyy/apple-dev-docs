@@ -15,11 +15,11 @@ Retrieves the MMS configuration for the carrier.
 final func configuration(for cellularServiceID: CellularServiceID) async throws -> MMSService.Configuration
 ```
 
-#### Return Value
+## Return Value
 
 An [`MMSService.Configuration`](./configuration.md) instance that describes the MMS configuration.
 
-#### Discussion
+## Discussion
 
 Fetch the MMS configuration when your app launches and during susbscription change events.
 

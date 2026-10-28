@@ -16,7 +16,7 @@ The rules the system satisfies when generating a strong password for your extens
 - **Name**: `ASAccountAuthenticationModificationPasswordGenerationRequirements`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 For more information about the format and content of this value, see [Customizing Password AutoFill rules](../../../Security/customizing-password-autofill-rules.md).
 

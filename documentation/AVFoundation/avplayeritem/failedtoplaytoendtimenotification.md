@@ -25,7 +25,7 @@ class let failedToPlayToEndTimeNotification: NSNotification.Name
 extern NSNotificationName const AVPlayerItemFailedToPlayToEndTimeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s object is the player item that finished playing.
 

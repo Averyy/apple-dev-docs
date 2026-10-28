@@ -15,11 +15,11 @@ Based on the given text encoding specification, createsand returns a Unicode con
 OSStatus CreateTextToUnicodeInfoByEncoding(TextEncoding iEncoding, TextToUnicodeInfo *oTextToUnicodeInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 You can use this function instead of the  [`CreateTextToUnicodeInfo`](./api-1433598-createtexttounicodeinfo.md)  function whenyou do not need to create a Unicode mapping structure. You simplyspecify the text encoding of the source text. However, this methodis less efficient because the text encoding parameter must be resolvedinternally into a Unicode mapping. 
 

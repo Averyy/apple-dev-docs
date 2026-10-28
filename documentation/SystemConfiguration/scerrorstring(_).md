@@ -24,7 +24,7 @@ func SCErrorString(_ status: Int32) -> UnsafePointer<CChar>
 const char *SCErrorString(int status);
 ```
 
-#### Return Value
+## Return Value
 
 The message string associated with the status or error identified by `status`.
 

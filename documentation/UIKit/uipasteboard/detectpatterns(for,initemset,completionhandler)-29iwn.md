@@ -20,7 +20,7 @@ Determines whether pasteboard items match the specified patterns, without notify
 func detectPatterns(for patterns: Set<UIPasteboard.DetectionPattern>, inItemSet itemSet: IndexSet?, completionHandler: @escaping (Result<[Set<UIPasteboard.DetectionPattern>], any Error>) -> ())
 ```
 
-#### Discussion
+## Discussion
 
 Because this method only detects for the presence of patterns and does not read the contents of the pasteboard, the system doesn’t notify the user about reading the contents of the pasteboard.
 

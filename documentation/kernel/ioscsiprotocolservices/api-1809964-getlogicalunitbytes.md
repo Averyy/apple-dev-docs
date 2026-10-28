@@ -13,7 +13,7 @@ void GetLogicalUnitBytes (
  SCSILogicalUnitBytes *lunBytes );
 ```
 
-#### Overview
+## Overview
 
 Accessor method to retrieve the logical unit bytes associated with the specified request.
 

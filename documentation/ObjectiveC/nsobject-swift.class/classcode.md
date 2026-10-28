@@ -20,7 +20,7 @@ var classCode: FourCharCode { get }
 @property (readonly) FourCharCode classCode;
 ```
 
-#### Discussion
+## Discussion
 
 This property is used by Cocoa’s scripting support classes.
 

@@ -21,7 +21,7 @@ An attribute that doesn’t have an explicit type.
 static let undefined: NSAttributeDescription.AttributeType
 ```
 
-#### Discussion
+## Discussion
 
 Use this attribute type with transient attributues only. Core Data manages the attribute’s value and registers the necessary undo and redo actions.
 

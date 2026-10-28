@@ -23,7 +23,7 @@ case fill
 UIStackViewDistributionFill
 ```
 
-#### Discussion
+## Discussion
 
 When the arranged views don’t fit within the stack view, it shrinks the views according to their compression resistance priority. If the arranged views don’t fill the stack view, it stretches the views according to their hugging priority. If there’s any ambiguity, the stack view resizes the arranged views based on their index in the [`arrangedSubviews`](../arrangedsubviews.md) array.
 

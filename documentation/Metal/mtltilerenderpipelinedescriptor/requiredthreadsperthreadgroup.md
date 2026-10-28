@@ -22,7 +22,7 @@ var requiredThreadsPerThreadgroup: MTLSize { get set }
 @property (nonatomic, readwrite) MTLSize requiredThreadsPerThreadgroup;
 ```
 
-#### Discussion
+## Discussion
 
 Sets the required threads-per-threadgroup during tile dispatches. The `threadsPerTile` argument of any tile dispatch must match to this value if it is set. Setting this to a size of 0 in every dimension disables this property
 

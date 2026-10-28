@@ -15,11 +15,11 @@ Get logical block number associated with a buffer.
 daddr64_t buf_lblkno(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Block number.
 
-#### Discussion
+## Discussion
 
 Logical block number is set on traditionally-used buffers by an argument passed to buf_getblk(), for example by buf_bread().
 

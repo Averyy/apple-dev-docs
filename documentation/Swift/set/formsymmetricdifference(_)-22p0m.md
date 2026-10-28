@@ -23,7 +23,7 @@ mutating func formSymmetricDifference(_ other: Set<Element>)
 
 Available when `Element` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 In the following example, the elements of the `employees` set that are also members of `neighbors` are removed from `employees`, while the elements of `neighbors` that are not members of `employees` are added to `employees`. In particular, the names `"Alicia"`, `"Chris"`, and `"Diana"` are removed from `employees` while the names `"Forlani"` and `"Greta"` are added.
 

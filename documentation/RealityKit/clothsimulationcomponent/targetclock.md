@@ -17,7 +17,7 @@ The clock that this simulation attempts to follow.
 var targetClock: CMClockOrTimebase { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The tempo of this clock can be adjusted to slow down or completely pause the simulation. The simulation may not be able to perfectly follow the target clock due to [`maximumStepsPerUpdate`](./maximumstepsperupdate-swift.property.md).
 

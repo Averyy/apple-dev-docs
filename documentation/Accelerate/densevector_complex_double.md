@@ -25,7 +25,7 @@ struct DenseVector_Complex_Double
 typedef struct { ... } DenseVector_Complex_Double;
 ```
 
-#### Overview
+## Overview
 
 - **`count`**: Number of entries in the vector.
 - **`data`**: The array of complex double values.

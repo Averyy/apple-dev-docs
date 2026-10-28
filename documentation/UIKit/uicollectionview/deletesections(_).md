@@ -23,7 +23,7 @@ func deleteSections(_ sections: IndexSet)
 - (void) deleteSections:(NSIndexSet *) sections;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove the sections and their items from the collection view. You might do this when you remove the sections from your data source object or in response to user interactions with the collection view. The collection view updates the layout of the remaining sections and items to account for the deletions, animating the remaining items into position as needed.
 

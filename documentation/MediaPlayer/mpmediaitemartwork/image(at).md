@@ -41,11 +41,11 @@ func image(at size: CGSize) -> NSImage?
 - (NSImage *) imageWithSize:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 The artwork at the requested size.
 
-#### Discussion
+## Discussion
 
 The returned image is the smallest available image that’s at least as large as the requested size.
 

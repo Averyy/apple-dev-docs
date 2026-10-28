@@ -25,11 +25,11 @@ init(code: INDeleteTasksIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INDeleteTasksIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 After you initialize the response object, create an [`INTask`](../intask.md) object with the updated values you intend to apply to your app’s data structures, and assign that object to the [`deletedTasks`](./deletedtasks.md) property.
 

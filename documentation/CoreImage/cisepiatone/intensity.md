@@ -25,7 +25,7 @@ var intensity: Float { get set }
 @property (nonatomic) float intensity;
 ```
 
-#### Discussion
+## Discussion
 
 A value of 1.0 creates a monochrome sepia image. A value of 0.0 has no effect on the image.
 

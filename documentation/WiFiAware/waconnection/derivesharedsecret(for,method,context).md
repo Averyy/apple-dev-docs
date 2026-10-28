@@ -17,11 +17,11 @@ Derive a unique, high-entropy shared secret for this network connection, which c
 func deriveSharedSecret(for protocolName: WASharedSecret.ProtocolName, method: WASharedSecret.DerivationMethod, context: WASharedSecret.Context = .bundleID) async -> WASharedSecret?
 ```
 
-#### Return Value
+## Return Value
 
 A shared secret unique to the protocol, connection, and context supplied, or `nil` if a secret could not be derived using the provided method.
 
-#### Discussion
+## Discussion
 
 The shared secret can be used to authenticate a [PAKE](https://en.wikipedia.org/wiki/Password-authenticated_key_agreement) like SPAKE2, which is then used to pair and derive long-term asymmetric keys for authentication and encryption of the upper-layer network protocol.
 

@@ -19,7 +19,7 @@ Creates an empty tab sidebar customization.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 To set this customization on a tab view, use the [`tabViewCustomization(_:)`](../view/tabviewcustomization%28_%29.md) modifier.
 

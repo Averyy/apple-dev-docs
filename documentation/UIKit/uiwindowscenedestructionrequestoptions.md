@@ -24,7 +24,7 @@ class UIWindowSceneDestructionRequestOptions
 @interface UIWindowSceneDestructionRequestOptions : UISceneDestructionRequestOptions
 ```
 
-#### Overview
+## Overview
 
 Create a [`UIWindowSceneDestructionRequestOptions`](./uiwindowscenedestructionrequestoptions.md) object before you close one of your app’s scenes using the [`requestSceneSessionDestruction(_:options:errorHandler:)`](./uiapplication/requestscenesessiondestruction%28_,options,errorhandler%29.md) method of [`UIApplication`](./uiapplication.md). Use this object to specify the dismissal animations to apply to the scene’s UI, if that UI is onscreen.
 

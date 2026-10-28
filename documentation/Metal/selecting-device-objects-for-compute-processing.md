@@ -10,17 +10,17 @@ Switch dynamically between multiple GPUs to efficiently execute a compute-intens
 - macOS 10.13+
 - Xcode 12.4+
 
-#### Overview
+## Overview
 
 macOS supports systems that have multiple GPUs, enabling Metal apps to increase their computational power. An example is an iMac Pro that has a built-in discrete GPU and is connected to multiple external GPUs. External GPUs can be more powerful than built-in GPUs, so they’re a great choice for compute-intensive workloads. However, to take advantage of this added power, Metal apps should be prepared to safely handle adding and removing any external GPUs for more robust execution. Metal apps should always perform well, whether one GPU or multiple GPUs are available to the system.
 
-##### Getting started
+### Getting started
 
 Not all Mac computers have multiple GPUs. To check the GPUs in your Mac, choose Apple menu > About this Mac, press the System Report button, and select Graphics/Displays on the left. The GPUs are listed under Video Card.
 
 Optionally, you may connect an external GPU to your Mac via Thunderbolt 3. For this system setup, your Mac needs to be running macOS 10.13.4 or later. Connecting an external GPU allows the sample to perform compute processing on an external GPU and perform graphics rendering on a built-in GPU.
 
-##### Sample simulation modes
+### Sample simulation modes
 
 This sample executes an N-body simulation and continuously renders a subset of the simulation’s intermediate results as it progresses to completion. After the simulation has completed, the sample renders all the N-body particles in their final state, presenting the full set of final results.
 
@@ -39,7 +39,7 @@ The sample runs in one of two modes, depending on how many GPUs are available to
 
 The threads don’t wait on each other; they work independently at different rates. The simulation thread runs as fast as possible and the render thread runs as fast as the display’s frame rate.
 
-##### Handle external GPU notifications
+### Handle external GPU notifications
 
 When an external GPU is connected to the system, this sample performs compute simulations on that external GPU and graphics rendering on a built-in GPU. Otherwise, the sample performs both compute and graphics work on a single built-in GPU.
 
@@ -54,7 +54,7 @@ This sample implements many techniques described in [Selecting device objects fo
 - Respond to External GPU Notifications
 - Deregister from Notifications
 
-##### Transfer simulation data between devices
+### Transfer simulation data between devices
 
 This sample uses two separate classes to encode Metal commands: `AAPLSimulation` for compute commands and `AAPLRenderer` for graphics commands. The sample uses the simulation class to create a compute pipeline, initialize an N-body data set, and execute the simulation. The sample uses the renderer class to create a render pipeline and draw N-body data produced by the simulation. (The sample uses the `AAPLViewController` class to separate work between the simulation and renderer classes.)
 
@@ -68,7 +68,7 @@ When the sample runs on multiple devices, the view controller assigns the simula
 
 ![A flowchart that shows the simulation with two Metal buffers, one on the simulation GPU and the other on the renderer GPU, both backed by the same CPU system memory. On the simulation thread, the simulation produces data and blits it to a new MTLBuffer backed by system memory, then repeats the process. On the render thread, the renderer creates a new MTLBuffer from the same system memory backing and draws the data, then repeats the process.](https://developer.apple.com/tutorials/images/com.apple.metal/4-multi-device-buffer.png)
 
-##### Allocate system memory for a buffer
+### Allocate system memory for a buffer
 
 The sample calls the `vm_allocate` function to allocate a page-aligned buffer, `updateAddress`, backed by system memory. The sample then calls the [`makeBuffer(bytesNoCopy:length:options:deallocator:)`](./mtldevice/makebuffer%28bytesnocopy,length,options,deallocator%29.md) method to create a new [`MTLBuffer`](./mtlbuffer.md), `_updateBuffer`, backed by the same system memory used for the previous buffer.
 

@@ -15,7 +15,7 @@ The maximum number of indexes that are loaded each time the [`loadindexes`](./ap
 readonly attribute int segmentSize;
 ```
 
-#### Discussion
+## Discussion
 
 This property allows you to adjust the number of indexes to be loaded according to the capabilities of your server endpoints.
 

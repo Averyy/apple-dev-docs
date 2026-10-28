@@ -15,7 +15,7 @@ Convenience Macros for working with OBEX Header Identifiers.
 #define GET_HEADER_ID_IS_NULL_TERMINATED_UNICODE_TEXT(HEADER_ID)
 ```
 
-#### Discussion
+## Discussion
 
 The API should shield you from using these, they are included here to completeness.
 

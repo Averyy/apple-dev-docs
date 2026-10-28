@@ -19,7 +19,7 @@ protocol NSEditorRegistration : NSObjectProtocol
 @protocol NSEditorRegistration <NSObject>
 ```
 
-#### Overview
+## Overview
 
 An implementor is responsible for tracking which editors have uncommitted changes, and sending those editors [`commitEditing`](../ObjectiveC/nsobject-swift.class/commitediting.md) and [`discardEditing`](../ObjectiveC/nsobject-swift.class/discardediting.md) messages, as appropriate, to force the editor to submit, or discard, their values.
 

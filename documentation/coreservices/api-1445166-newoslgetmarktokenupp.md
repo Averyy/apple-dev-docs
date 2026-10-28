@@ -19,11 +19,11 @@ func NewOSLGetMarkTokenUPP(_ userRoutine: OSLGetMarkTokenProcPtr!) -> OSLGetMark
 OSLGetMarkTokenUPP NewOSLGetMarkTokenUPP(OSLGetMarkTokenProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 See [`OSLGetMarkTokenUPP`](./oslgetmarktokenupp.md).
 
-#### Discussion
+## Discussion
 
 See the [`OSLGetMarkTokenProcPtr`](./oslgetmarktokenprocptr.md) callback function. 
 

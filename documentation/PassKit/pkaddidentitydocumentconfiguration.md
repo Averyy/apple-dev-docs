@@ -23,7 +23,7 @@ class PKAddIdentityDocumentConfiguration
 @interface PKAddIdentityDocumentConfiguration : PKAddSecureElementPassConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use this class for identity document passes. You provide the underlying metadata that defines the passes.
 

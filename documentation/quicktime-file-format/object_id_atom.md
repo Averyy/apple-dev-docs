@@ -6,7 +6,7 @@
 
 An atom that identifies an object, such as a sprite within a sprite track, in a track input atom.
 
-#### Overview
+## Overview
 
 If the input is operating on an object within the track (for example, a sprite within a sprite track), an object ID atom must be included in the track input atom to identify the object.
 

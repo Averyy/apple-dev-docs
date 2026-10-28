@@ -19,7 +19,7 @@ Informs the delegate when the user finishes writing.
 func indirectScribbleInteraction(_ interaction: any UIInteraction, didFinishWritingInElement elementIdentifier: Self.ElementIdentifier)
 ```
 
-#### Discussion
+## Discussion
 
 Use this to reset placeholders or other UI elements, if appropriate, to their state from before the user started writing.
 

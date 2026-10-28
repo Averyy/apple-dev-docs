@@ -15,11 +15,11 @@ Updates stream formats, in response to the owning audio device changing its samp
 kern_return_t DeviceSampleRateChanged(double in_sample_rate);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method goes through all the available stream formats and selects the closet format with the matching sample rate.
 

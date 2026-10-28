@@ -21,7 +21,7 @@ The function used to respond to action skipped events.
 mutating func actionSkipped(event: Self.EventType)
 ```
 
-#### Discussion
+## Discussion
 
 The animation system can skip over an event interval due to scrubbing or choppy frame rate.
 

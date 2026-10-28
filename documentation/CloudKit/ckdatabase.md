@@ -29,7 +29,7 @@ class CKDatabase
 
 - [Deciding whether CloudKit is right for your app](./deciding-whether-cloudkit-is-right-for-your-app.md)
 
-#### Overview
+## Overview
 
 A database takes requests and operations and applies them to the objects it contains, whether that’s record zones, records, or subscriptions. Each of your app’s users has access to the three separate databases:
 

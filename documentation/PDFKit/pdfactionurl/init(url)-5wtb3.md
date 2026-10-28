@@ -24,7 +24,7 @@ init(url: URL)
 - (instancetype) initWithURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `PDFActionURL` instance, or `NULL` if the object could not be initialized.
 

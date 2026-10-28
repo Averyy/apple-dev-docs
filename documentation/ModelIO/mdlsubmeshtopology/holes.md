@@ -24,7 +24,7 @@ var holes: (any MDLMeshBuffer)? { get set }
 @property (nonatomic, retain, nullable) id<MDLMeshBuffer> holes;
 ```
 
-#### Discussion
+## Discussion
 
 This buffer contains integer values where each integer is the index of a face to be treated as a hole. For example, if there are two holes in a mesh, then this buffer has two entries.
 

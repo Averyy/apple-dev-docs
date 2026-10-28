@@ -21,7 +21,7 @@ Adds a double-precision complex vector to the sum of the product of two double-p
 extern void vDSP_zvmmaaD(const DSPDoubleSplitComplex *__A, vDSP_Stride __IA, const DSPDoubleSplitComplex *__B, vDSP_Stride __IB, const DSPDoubleSplitComplex *__C, vDSP_Stride __IC, const DSPDoubleSplitComplex *__D, vDSP_Stride __ID, const DSPDoubleSplitComplex *__E, vDSP_Stride __IE, const DSPDoubleSplitComplex *__F, vDSP_Stride __IF, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the products of the first `N` complex elements of `A` and `B`, the products of the first `N` compex elements of `C` and `D`, adds the corresponding products, adds the first `N` complex elements of `E`, and writes the result to `F`:
 

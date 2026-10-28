@@ -22,7 +22,7 @@ case typing
 UIWritingToolsCoordinatorTextUpdateReasonTyping
 ```
 
-#### Discussion
+## Discussion
 
 Specify this option when the changes come from the text input system.
 

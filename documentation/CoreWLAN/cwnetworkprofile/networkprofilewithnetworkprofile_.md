@@ -15,7 +15,7 @@ Convenience method for getting a CWNetworkProfile object initialized with the gi
 + (instancetype) networkProfileWithNetworkProfile:(CWNetworkProfile *) networkProfile;
 ```
 
-#### Return Value
+## Return Value
 
 A CWNetworkProfile object.
 

@@ -13,6 +13,7 @@ Parses a new instance of this type from command-line arguments.
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
@@ -24,11 +25,11 @@ Parses a new instance of this type from command-line arguments.
 static func asyncParse(_ arguments: [String]? = nil) async throws -> Self
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of this type.
 
-#### Discussion
+## Discussion
 
 > **Throws**: If parsing failed or arguments contains a help request.
 

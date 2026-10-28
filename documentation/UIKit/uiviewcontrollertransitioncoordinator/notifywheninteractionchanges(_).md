@@ -24,7 +24,7 @@ func notifyWhenInteractionChanges(_ handler: @escaping (any UIViewControllerTran
 - (void) notifyWhenInteractionChangesUsingBlock:(void (^)(id<UIViewControllerTransitionCoordinatorContext>context)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Your handler block is executed any time the transition changes from interactive to noninteractive, including when the transition ends or is canceled. When the user cancels a transition, UIKit executes your context block, calls the [`viewWillDisappear(_:)`](../uiviewcontroller/viewwilldisappear%28_%29.md) method on the presented view controller, and finally calls the [`viewWillAppear(_:)`](../uiviewcontroller/viewwillappear%28_%29.md) method on the original view controller to signal that it’s once again visible.
 

@@ -18,15 +18,15 @@ Excludes a property from the generated `metadataDictionary`.
 ## Declaration
 
 ```swift
-@attached
-(peer) macro ReportableMetadataIgnored()
+@attached(peer)
+macro ReportableMetadataIgnored()
 ```
 
 ## Mentions
 
 - [Getting started with StateReporting](./getting-started-with-statereporting.md)
 
-#### Overview
+## Overview
 
 Attach `@ReportableMetadataIgnored` to any stored property inside a type annotated with [`ReportableMetadata()`](./reportablemetadata%28%29.md) to prevent that property from appearing in the generated `metadataDictionary`. Use this for any property you want to omit — for example, properties that hold sensitive data, cached values that derive from other reported metadata, or fields that are unimportant or too verbose to include in metadata reports.
 

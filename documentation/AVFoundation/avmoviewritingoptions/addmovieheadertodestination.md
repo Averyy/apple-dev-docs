@@ -24,7 +24,7 @@ static var addMovieHeaderToDestination: AVMovieWritingOptions { get }
 AVMovieWritingAddMovieHeaderToDestination
 ```
 
-#### Discussion
+## Discussion
 
 Only an existing movie header is overwritten, all other data is preserved. If the destination file is empty, a file type box is created at the beginning of the file.
 

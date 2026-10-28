@@ -24,11 +24,11 @@ func MACaptionAppearanceAddSelectedLanguage(_ domain: MACaptionAppearanceDomain,
 extern bool MACaptionAppearanceAddSelectedLanguage(MACaptionAppearanceDomain domain, CFStringRef language);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if addition was successful; `false` if an error occurred. Errors are most likely the result of invalid language codes.
 
-#### Discussion
+## Discussion
 
 The added language will appear in the array returned by [`MACaptionAppearanceCopySelectedLanguages(_:)`](./macaptionappearancecopyselectedlanguages%28_%29.md). Call the `MACaptionAppearanceAddSelectedLanguage` function anytime a user selects a specific captioning language from a pop-up menu or other UI affordance. For example, an AVFoundation client may execute the following code:
 

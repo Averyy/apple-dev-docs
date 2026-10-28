@@ -19,7 +19,7 @@ func performDrag(with event: NSEvent)
 - (void) performWindowDragWithEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Your application (or a view) can call this method after receiving and examining a mouse-down event. Upon examination of the event, a view may allow that portion of the window to start a window drag and can hand off the work to the Window Server process by calling this method. Doing so allows the window to participate in space switching and other system features.
 

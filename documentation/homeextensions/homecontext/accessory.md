@@ -18,7 +18,7 @@ The accessory that a person selected in the Home app.
 final var accessory: HMAccessory? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the accessory isn’t available.
 

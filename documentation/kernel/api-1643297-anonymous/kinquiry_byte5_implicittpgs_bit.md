@@ -13,7 +13,7 @@
 kINQUIRY_Byte5_ImplicitTPGS_Bit = 4
 ```
 
-#### Discussion
+## Discussion
 
 Implicit TPGS bit definition.
 

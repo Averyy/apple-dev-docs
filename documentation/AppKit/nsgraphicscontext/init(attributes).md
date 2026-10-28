@@ -19,11 +19,11 @@ init?(attributes: [NSGraphicsContext.AttributeKey : Any] = [:])
 + (NSGraphicsContext *) graphicsContextWithAttributes:(NSDictionary<NSString *,id> *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`NSGraphicsContext`](../nsgraphicscontext.md) object, or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Use this method to create a graphics context for a window or bitmap destination. If you want to create a graphics context for a PDF or PostScript destination, do not use this method; instead, use the [`NSPrintOperation`](../nsprintoperation.md) class to set up the printing environment needed to generate that type of information.
 

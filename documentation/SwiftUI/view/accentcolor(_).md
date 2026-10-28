@@ -24,7 +24,7 @@ nonisolated
 func accentColor(_ accentColor: Color?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use `accentColor(_:)` when you want to apply a broad theme color to your app’s user interface. Some styles of controls use the accent color as a default tint color.
 

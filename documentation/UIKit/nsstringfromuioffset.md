@@ -20,7 +20,7 @@ Returns a string formatted to contain the data from an offset structure.
 extern NSString *NSStringFromUIOffset(UIOffset offset);
 ```
 
-#### Return Value
+## Return Value
 
 A string that corresponds to `offset`.
 

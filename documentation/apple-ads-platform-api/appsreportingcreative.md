@@ -15,13 +15,13 @@ Creative metadata for apps ads.
 object AppsReportingCreative
 ```
 
-#### Discussion
+## Discussion
 
 The `AppsReportingCreative` object is the creative metadata snapshot embedded within `AppsReportingAd` in apps ad report rows. The `creativeType` field identifies the creative format: `DEFAULT_PRODUCT_PAGE` and `CUSTOM_PRODUCT_PAGE` both use App Store product page assets.
 
 The `systemStatus` field reflects the creative’s validity at report time: `INVALID` creatives can’t serve and won’t generate impressions. The `creativeSpec` provides a summary of the creative’s content configuration, and `destination` captures the click-through destination.
 
-##### Example
+### Example
 
 ```json
 {

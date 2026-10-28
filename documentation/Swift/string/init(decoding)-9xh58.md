@@ -21,7 +21,7 @@ Creates a string by interpreting the path component’s content as UTF-8 on Unix
 init(decoding component: FilePath.Component)
 ```
 
-#### Discussion
+## Discussion
 
 If the content of the path component isn’t a well-formed Unicode string, this initializer replaces invalid bytes with U+FFFD. This means that, depending on the semantics of the specific file system, conversion to a string and back to a path component might result in a value that’s different from the original path component.
 

@@ -23,7 +23,7 @@ var USEC_PER_SEC: UInt64 { get }
 #define USEC_PER_SEC
 ```
 
-#### Discussion
+## Discussion
 
 The number of microseconds in one second.
 

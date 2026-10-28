@@ -19,11 +19,11 @@ Creates a new calendar view decoration with the image, color, and size that you 
 @preconcurrency static func image(_ image: UIImage?, color: UIColor? = nil, size: UICalendarView.DecorationSize = .medium) -> UICalendarView.Decoration
 ```
 
-#### Return Value
+## Return Value
 
 A calendar view decoration.
 
-#### Discussion
+## Discussion
 
 The image defaults to `circlebadge.fill` if you don’t specify it.
 

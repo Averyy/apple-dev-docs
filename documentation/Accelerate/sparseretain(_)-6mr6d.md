@@ -25,7 +25,7 @@ func SparseRetain(_ Subfactor: SparseOpaqueSubfactor_Float) -> SparseOpaqueSubfa
 static SparseOpaqueSubfactor_Float SparseRetain(SparseOpaqueSubfactor_Float NumericFactor);
 ```
 
-#### Return Value
+## Return Value
 
 The supplied numeric subfactor object.
 

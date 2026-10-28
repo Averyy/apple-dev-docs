@@ -22,7 +22,7 @@ var preparesCellularRadioForNetworkConnection: Bool { get set }
 @property BOOL preparesCellularRadioForNetworkConnection;
 ```
 
-#### Discussion
+## Discussion
 
 Apps that scan video data output buffers for information that will result in network activity (such as detecting a QRCode containing a URL) should set this property `true` to allow the cellular radio to prepare for an imminent network request. Enabling this property requires a lengthy reconfiguration of the capture render pipeline, so you should set this property to `true` before calling [`startRunning()`](../avcapturesession/startrunning%28%29.md).
 

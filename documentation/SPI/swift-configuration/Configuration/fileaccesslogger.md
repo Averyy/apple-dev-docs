@@ -30,11 +30,11 @@ final class FileAccessLogger
 - [Troubleshooting and access reporting](./troubleshooting.md)
 - [Configuring libraries](./configuring-libraries.md)
 
-#### Overview
+## Overview
 
 This reporter provides persistent logging of configuration access patterns by writing structured event summaries to a file. Each access generates a single-line entry with timestamp, key, value, and provider information, making it easy to analyze configuration usage patterns and debug issues in production.
 
-#### Usage
+## Usage
 
 Create a file access logger and pass it to your configuration reader:
 
@@ -46,7 +46,7 @@ let config = ConfigReader(
 )
 ```
 
-#### Environment variable activation
+## Environment variable activation
 
 The file access logger can be automatically enabled for the entire process using the `CONFIG_ACCESS_LOG_FILE` environment variable:
 
@@ -56,7 +56,7 @@ CONFIG_ACCESS_LOG_FILE=/tmp/access.log ./my-app
 
 This allows operators to enable configuration access logging without recompiling the application, making it useful for debugging production issues.
 
-#### Log format
+## Log format
 
 Each access event generates a single-line entry with the format:
 

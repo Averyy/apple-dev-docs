@@ -25,11 +25,11 @@ func distance(from location: CLLocation) -> CLLocationDistance
 - (CLLocationDistance) distanceFromLocation:(const CLLocation *) location;
 ```
 
-#### Return Value
+## Return Value
 
 The distance (in meters) between the two locations.
 
-#### Discussion
+## Discussion
 
 This method measures the distance between the location in the current object and the value in the `location` parameter. The distance is calculated by tracing a line between the two points that follows the curvature of the Earth, and measuring the length of the resulting arc. The arc is a smooth curve that doesn’t take into account altitude changes between the two locations.
 

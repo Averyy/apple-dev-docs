@@ -22,7 +22,7 @@ case `default`
 PKCanvasViewDrawingPolicyDefault
 ```
 
-#### Discussion
+## Discussion
 
 By default, if the tool picker is visible, respect the pencil interaction setting of the [`prefersPencilOnlyDrawing`](../../UIKit/uipencilinteraction/preferspencilonlydrawing.md) property; otherwise only accept input from Apple Pencil.
 

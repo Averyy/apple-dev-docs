@@ -21,11 +21,11 @@ Returns a string created by using a given format string as a template into which
 + (instancetype) stringWithFormat:(NSString *) format;
 ```
 
-#### Return Value
+## Return Value
 
 A string created by using `format` as a template into which the remaining argument values are substituted without any localization.
 
-#### Discussion
+## Discussion
 
 Pass a comma-separated list of trailing variadic arguments to substitute into `format`.
 

@@ -21,7 +21,7 @@ A structure that approximates the definite integral of a function over a finite 
 struct Quadrature
 ```
 
-#### Overview
+## Overview
 
 The following code illustrates using a Quadrature structure to calculate the area under a curve, defined by `y = sqrt(radius * radius - pow(x - radius, 2))`:
 

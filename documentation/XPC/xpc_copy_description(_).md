@@ -25,7 +25,7 @@ func xpc_copy_description(_ object: xpc_object_t) -> UnsafeMutablePointer<CChar>
 extern char *xpc_copy_description(xpc_object_t object);
 ```
 
-#### Return Value
+## Return Value
 
 A string describing object which contains information useful for debugging. This string should be disposed of with `free(3)` when done.
 

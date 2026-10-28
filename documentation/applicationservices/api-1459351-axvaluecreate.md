@@ -17,7 +17,7 @@ func AXValueCreate(_ theType: AXValueType, _ valuePtr: UnsafeRawPointer) -> AXVa
 AXValueRef AXValueCreate(AXValueType theType, const void *valuePtr);
 ```
 
-#### Discussion
+## Discussion
 
 Encodes a structure pointed to by valuePtr into a CFTypeRef.
 

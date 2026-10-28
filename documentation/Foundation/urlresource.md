@@ -21,7 +21,7 @@ A resource located at a particular file URL within a bundle.
 struct URLResource
 ```
 
-#### Overview
+## Overview
 
 This type is similar to [`LocalizedStringResource`](./localizedstringresource.md) in its ability to provide access to a resource in a bundle, possibly from another process. Use the [`URL`](./url.md) initializer [`init(resource:)`](./url/init%28resource%29.md) to resolve the resource.
 

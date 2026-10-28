@@ -25,7 +25,7 @@ class CLKTimeTextProvider
 
 - [Creating a timeline entry](./creating-a-timeline-entry.md)
 
-#### Overview
+## Overview
 
 This provider supports time values in either the 24-hour or 12-hour format and takes into account the user’s region and locale settings. As needed, the provider automatically shortens the string to fit the available space.
 

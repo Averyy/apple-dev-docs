@@ -21,7 +21,7 @@ let kQLPreviewContentIDScheme: CFString!
 extern CFStringRef const kQLPreviewContentIDScheme;
 ```
 
-#### Discussion
+## Discussion
 
 The `cid` URL scheme permits the HTML of a mail message to refer to the images or other data included in the message. For more information, read [RFC 2111](https://www.rfc-archive.org/getrfc.php?rfc=2111).
 

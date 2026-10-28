@@ -23,7 +23,7 @@ static var automatic: AutomaticPresentationSizing { get }
 
 Available when `Self` is `AutomaticPresentationSizing`.
 
-#### Discussion
+## Discussion
 
 On macOS, `.automatic` resolves to `.form.fitted(horizontal: false, vertical: true)`. On all other platforms, including Mac Catalyst, it resolves to `.form`.
 

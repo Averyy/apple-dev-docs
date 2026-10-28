@@ -24,7 +24,7 @@ case pageFault
 MTLCommandBufferErrorPageFault
 ```
 
-#### Discussion
+## Discussion
 
 The underlying cause may be a buffer read/write attribute mismatch or an out-of-boundary access.
 

@@ -29,7 +29,7 @@ var diskCapacity: Int { get set }
 
 - [Accessing cached data](../accessing-cached-data.md)
 
-#### Discussion
+## Discussion
 
 When set, the on-disk cache will truncate its contents to the given size, if necessary.
 

@@ -24,11 +24,11 @@ class func disambiguation(with massToDisambiguate: [Measurement<UnitMass>]) -> S
 + (instancetype) disambiguationWithMassToDisambiguate:(NSArray<NSMeasurement<NSUnitMass *> *> *) massToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INMassResolutionResult`](../inmassresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when there’s more one value that might match the given parameter. Siri prompts the user to select from among the objects you provide.
 

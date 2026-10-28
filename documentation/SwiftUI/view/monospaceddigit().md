@@ -22,11 +22,11 @@ nonisolated
 func monospacedDigit() -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view whose child views’ fonts use fixed-width numeric characters, while leaving other characters proportionally spaced.
 
-#### Discussion
+## Discussion
 
 Using fixed-width digits allows you to easily align numbers of the same size in a table-like arrangement. This feature is also known as “tabular figures” or “tabular numbers.”
 

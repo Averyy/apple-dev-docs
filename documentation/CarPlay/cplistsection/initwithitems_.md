@@ -17,7 +17,7 @@ Creates a section with list items.
 - (instancetype) initWithItems:(NSArray<id<CPListTemplateItem>> *) items;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized list section.
 

@@ -19,7 +19,7 @@ func prepare()
 - (void) prepareLayout;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method in subclasses to perform layout calculations and caching in advance of rendering the scrubber.
 

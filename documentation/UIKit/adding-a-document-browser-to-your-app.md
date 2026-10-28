@@ -4,7 +4,7 @@
 
 Give people access to their local or remote documents from within your app.
 
-#### Overview
+## Overview
 
 When your app’s main purpose is browsing and working with documents, use a document browser view controller as the root of your app’s view hierarchy. When someone selects a document, you present its view controller modally from your document browser.
 

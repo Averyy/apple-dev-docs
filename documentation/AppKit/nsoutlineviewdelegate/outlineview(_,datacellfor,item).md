@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, dataCellFor tableColumn:
 - (NSCell *) outlineView:(NSOutlineView *) outlineView dataCellForTableColumn:(NSTableColumn *) tableColumn item:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 The cell to use in column `tableColumn` for item `item`, or `nil`. Because the outline view might copy the cell, the cell must properly implement [`copyWithZone:`](../../ObjectiveC/nsobject-swift.class/copywithzone_.md).
 
-#### Discussion
+## Discussion
 
 You can return a different data cell for any table column and item combination. Alternatively, you can return a full-width cell for the entire row.
 

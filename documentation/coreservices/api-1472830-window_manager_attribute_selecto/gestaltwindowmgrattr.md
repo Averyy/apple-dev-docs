@@ -14,7 +14,7 @@
 gestaltWindowMgrAttr = 'wind'
 ```
 
-#### Discussion
+## Discussion
 
 The `Gestalt` selector passed to determine what features of the Window Manager are present. This selector is available with Mac OS 8.5 and later. The `Gestalt` function produces a 32-bit value whose bits you should test to determine which Window Manager features are available.
 

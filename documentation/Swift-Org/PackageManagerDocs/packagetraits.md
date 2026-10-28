@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Define one or more package traits to offer default and configurable features for a package.
 
-#### Overview
+## Overview
 
 Swift packages before version 6.1 offer a non-configurable API surface for each version. Starting with Swift 6.1, packages may offer traits, which express a configurable API surface for a package.
 
@@ -24,7 +24,7 @@ Within the package that defines a trait, the trait expresses conditional compila
 
 Trait names are namespaced within the package that hosts them. A trait name in one package has no impact on any other package. Trait names must be [valid Swift identifiers](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/lexicalstructure#Identifiers) with the addition of the characters of `-` and `+`. Don’t use the trait names `default` or `defaults` (regardless of capitalization). These values aren’t allowed to avoid confusion with the default traits that a package defines.
 
-##### Declare traits
+### Declare traits
 
 Create a trait to define additional functionality, and define it in the [traits](https://docs.swift.org/swiftpm/documentation/packagedescription/package/traits) property of the package manifest. Use [.default(enabledTraits:)](https://docs.swift.org/swiftpm/documentation/packagedescription/trait/default(enabledtraits:)) to provide the set of traits that the package uses by default. If you don’t define a default set of traits to enable, Swift Package Manager enables no traits by default.
 
@@ -59,7 +59,7 @@ For the example above, the default trait is `FeatureA`.
 
 Swift Package Manager treats traits as purely additive, and unifies enabled traits across all packages within the build graph. Design your traits so that they enable additional API (and their dependencies, if needed).
 
-###### Define mutually exclusive traits
+#### Define mutually exclusive traits
 
 The package manifest format doesn’t support declaring mutually exclusive traits. In the rare case that you need to offer mutually exclusive traits, protect that scenario in code:
 
@@ -71,7 +71,7 @@ The package manifest format doesn’t support declaring mutually exclusive trait
 
 > **Note**: Providing mutually exclusive traits can result in compilation errors when a developer enables them.
 
-##### Depend on a package with a trait
+### Depend on a package with a trait
 
 A package dependency that doesn’t specify traits uses the package with its default traits enabled. To enable specific traits, add them to the `traits` parameter in the package dependency declaration.
 
@@ -92,7 +92,7 @@ dependencies: [
 
 > 💡 **Tip**: When you specify traits for a dependency, you explicitly define which traits to enable. The default traits aren’t included automatically. To use both the default and additional traits, add `.defaults` to the list of traits you specify.
 
-##### Use traits in your code
+### Use traits in your code
 
 Use the name of a trait for conditional compilation. Wrap the additional API surface for that trait within a conditional compilation block. For example, if the trait `FeatureA` is defined and enabled, the compiler sees and compiles the function `additionalAPI()`:
 
@@ -104,7 +104,7 @@ public func additionalAPI() {
 #endif // FeatureA
 ```
 
-##### Use a trait to enable conditional dependencies
+### Use a trait to enable conditional dependencies
 
 You can use a trait to optionally include a dependency, or a dependency with specific traits enabled, to support the functionality you expose with a trait. To do so, add the dependency you need to the manifest’s `dependencies` declaration, then use a conditional dependency for a trait or traits defined in the package to add that dependency to a target.
 

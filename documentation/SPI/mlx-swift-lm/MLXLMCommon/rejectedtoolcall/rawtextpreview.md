@@ -17,7 +17,7 @@ A bounded prefix-and-suffix preview of the rejected model output.
 let rawTextPreview: String
 ```
 
-#### Discussion
+## Discussion
 
 This may contain sensitive argument values. Libraries must not log or persist it automatically.
 

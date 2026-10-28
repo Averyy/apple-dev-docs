@@ -24,11 +24,11 @@ init(contentsOf url: URL, options: MLDataTable.ParsingOptions = ParsingOptions()
 
 - [Creating a word tagger model](../creating-a-word-tagger-model.md)
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a data table from either a JavaScript Object Notation (JSON) file or a comma-separated values (CSV) file. Use `options` to customize how the data table imports information from your CSV file. The data table ignores the `options` parameter when importing JSON files.
 
-#### Create a Table from a JSON File
+## Create a Table from a JSON File
 
 This initializer imports data from a JSON file and creates a row from each dictionary in the root JSON array. The data table names its columns with the dictionary’s keys.
 
@@ -78,7 +78,7 @@ let bookTable = try MLDataTable(contentsOf: jsonUrl)
 
 Each entry in JSON array becomes a row in the data table. The set of keys in the JSON dictionaries become the column names in the data table.
 
-#### Create a Table from a CSV File
+## Create a Table from a CSV File
 
 This initializer imports data from a CSV file and creates a row from each line in the CSV file. You can create a CSV file programmatically or use an app like Numbers to export a spreadsheet.
 

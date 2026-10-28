@@ -19,7 +19,7 @@ func selectPreviousTabViewItem(_ sender: Any?)
 - (void) selectPreviousTabViewItem:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the currently visible item is the first item in the sequence, this method does nothing, and the first pane remains displayed.
 

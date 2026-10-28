@@ -15,7 +15,7 @@ Search for location(s) by query.
 case query(String)
 ```
 
-#### Discussion
+## Discussion
 
 Search is based on user’s current location. Examples: “restaurants”, “GSMA Head Office, 25 Walbrook, London, UK”
 

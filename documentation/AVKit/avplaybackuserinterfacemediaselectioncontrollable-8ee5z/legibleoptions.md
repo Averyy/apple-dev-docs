@@ -19,7 +19,7 @@ Array of available subtitle and caption track options.
 var legibleOptions: [AVPlaybackUserInterfaceMediaSelectionOption] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This includes text overlays in different languages, closed captions for accessibility, forced narrative subtitles, and sign language interpretation tracks. May be empty for content without text tracks.
 

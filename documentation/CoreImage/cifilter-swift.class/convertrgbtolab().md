@@ -24,11 +24,11 @@ class func convertRGBtoLab() -> any CIFilter & CIConvertLab
 + (CIFilter<CIConvertLab> *) convertRGBtoLabFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The converted [`CIImage`](../ciimage.md).
 
-#### Discussion
+## Discussion
 
 This filter converts an image from RGB to CIELAB color space. The CIELAB color space expresses color as three values: L* for the perceptual lightness, and a*b* for the colors red, green, blue, and yellow. The RGB color space expresses colors using the intensities of the three primary colors: red, green, and blue.
 

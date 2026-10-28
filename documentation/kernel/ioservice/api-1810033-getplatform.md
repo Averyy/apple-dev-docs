@@ -12,11 +12,11 @@ static IOPlatformExpert * getPlatform(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the IOPlatformExpert instance. It should not be released by the caller.
 
-#### Overview
+## Overview
 
 This method provides an accessor to the platform expert instance for the computer.
 

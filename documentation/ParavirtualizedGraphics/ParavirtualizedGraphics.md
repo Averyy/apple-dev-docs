@@ -10,7 +10,7 @@ Add graphics acceleration to your guest driver stack.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 
-#### Overview
+## Overview
 
 If you have an app that implements hardware-level virtualization, performance inside the virtual machine is critical, particularly for graphics. The ParavirtualizedGraphics framework implements hardware-accelerated graphics for macOS running in a virtual machine, hereafter known as the guest. The operating system provides a graphics driver that runs inside the guest, communicating with the framework in the host operating system to take advantage of Metal-accelerated graphics.
 

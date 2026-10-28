@@ -19,7 +19,7 @@ func supportedWLANChannels() -> Set<CWChannel>?
 - (NSSet<CWChannel *> *) supportedWLANChannels;
 ```
 
-#### Discussion
+## Discussion
 
 Dynamically queries the interface for the supported channels. Returns an array of CWChannel objects, or *nil in the case of an error.*
 

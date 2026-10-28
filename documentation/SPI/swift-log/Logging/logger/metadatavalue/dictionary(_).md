@@ -17,7 +17,7 @@ A metadata value which is a dictionary keyed with strings and storing metadata v
 case dictionary(Metadata)
 ```
 
-#### Discussion
+## Discussion
 
 The type signature of the dictionary is `[String: Logger.MetadataValue]`.
 

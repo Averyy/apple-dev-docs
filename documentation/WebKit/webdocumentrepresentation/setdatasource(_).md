@@ -20,7 +20,7 @@ func setDataSource(_ dataSource: WebDataSource!)
 - (void) setDataSource:(WebDataSource *) dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked soon after the document representation is created.
 

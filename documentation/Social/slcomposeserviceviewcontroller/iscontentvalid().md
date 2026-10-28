@@ -22,11 +22,11 @@ func isContentValid() -> Bool
 - (BOOL) isContentValid;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the current content and attachments are valid for posting, otherwise [`false`](../../Swift/false.md). The default return value is [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 This method is automatically called after each change a user makes to the text in the compose view. You can use this method to determine whether the Post button should be enabled and to update [`charactersRemaining`](./charactersremaining.md), if necessary.
 

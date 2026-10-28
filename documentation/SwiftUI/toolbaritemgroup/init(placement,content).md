@@ -22,7 +22,7 @@ nonisolated
 init(placement: ToolbarItemPlacement = .automatic, @ContentBuilder content: () -> Content)
 ```
 
-#### Discussion
+## Discussion
 
 - placement: Which section of the toolbar all of its vended `ToolbarItem`s should be placed in.
 - content: The content of the group. Each view specified in the `ContentBuilder` will be given its own `ToolbarItem` in the toolbar.

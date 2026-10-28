@@ -24,7 +24,7 @@ var optimizationProfile: MPSGraphOptimizationProfile { get set }
 @property (nonatomic, readwrite) MPSGraphOptimizationProfile optimizationProfile;
 ```
 
-#### Discussion
+## Discussion
 
 Default is MPSGraphOptimizationProfilePerformance.
 

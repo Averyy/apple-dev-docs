@@ -20,7 +20,7 @@ var isActive: Bool { get }
 @property (nonatomic, readonly) BOOL isActive;
 ```
 
-#### Discussion
+## Discussion
 
 If [`activatesAutomatically`](./activatesautomatically.md) is enabled, this flag tells you whether coaching is in progress. Assign a [`delegate`](./delegate.md) to coordinate your actions with the coaching overlay and allow [`coachingOverlayViewWillActivate(_:)`](../arcoachingoverlayviewdelegate/coachingoverlayviewwillactivate%28_%29.md) to notify you when the coaching overlay is active.
 

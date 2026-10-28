@@ -25,7 +25,7 @@ func SparseMultiplyAdd(_ A: SparseMatrix_Complex_Double, _ X: DenseMatrix_Comple
 static void SparseMultiplyAdd(SparseMatrix_Complex_Double A, DenseMatrix_Complex_Double X, DenseMatrix_Complex_Double Y);
 ```
 
-#### Discussion
+## Discussion
 
 - Parameter `A`: (input) sparse matrix.
 - Parameter `X`: (input) dense matrix. Inner dimensions of `A` and `X` must match.

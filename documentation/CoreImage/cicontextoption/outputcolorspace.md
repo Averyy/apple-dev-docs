@@ -24,7 +24,7 @@ static let outputColorSpace: CIContextOption
 extern CIContextOption const kCIContextOutputColorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 This option only affects how Core Image renders using the following methods:
 

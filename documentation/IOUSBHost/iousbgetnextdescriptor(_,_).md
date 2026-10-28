@@ -20,11 +20,11 @@ func IOUSBGetNextDescriptor(_ configurationDescriptor: UnsafePointer<IOUSBConfig
 const IOUSBDescriptorHeader *IOUSBGetNextDescriptor(const IOUSBConfigurationDescriptor *configurationDescriptor, const IOUSBDescriptorHeader *currentDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor pointer, or `nil` if no matching descriptor returns.
 
-#### Discussion
+## Discussion
 
 This method advances the current descriptor by its length, and validates that the new descriptor fits within the bounds of `configurationDescriptor`. Use `nil` for `currentDescriptor` to return the first descriptor after the configuration descriptor.
 

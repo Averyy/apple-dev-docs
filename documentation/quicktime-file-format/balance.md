@@ -5,7 +5,7 @@
 
 Represent balance values with 16-bit fixed-point numbers.
 
-#### Overview
+## Overview
 
 Represent balance values as 16-bit, fixed-point numbers that range from `-1.0` to `+1.0`. The high-order 8 bits contain the integer portion of the value; the low-order 8 bits contain the fractional part. Negative values weight the balance toward the left speaker; positive values emphasize the right channel. Setting the balance to `0` corresponds to a neutral setting.
 

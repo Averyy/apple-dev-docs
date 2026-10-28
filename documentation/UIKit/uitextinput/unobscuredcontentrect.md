@@ -23,11 +23,11 @@ optional var unobscuredContentRect: CGRect { get }
 @property (nonatomic, readonly) CGRect unobscuredContentRect;
 ```
 
-#### Return Value
+## Return Value
 
 The visible content rectangle, or CGRectNull if there is no specific constraint.
 
-#### Discussion
+## Discussion
 
 Account for scroll position, insets, and any custom UI elements (toolbars, accessories, etc.) that obscure content. The system automatically accounts for keyboard obscuring when editing.
 

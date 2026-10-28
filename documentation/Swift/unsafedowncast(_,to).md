@@ -21,11 +21,11 @@ Returns the given instance cast unconditionally to the specified type.
 func unsafeDowncast<T>(_ x: AnyObject, to type: T.Type) -> T where T : AnyObject
 ```
 
-#### Return Value
+## Return Value
 
 The instance `x`, cast to type `T`.
 
-#### Discussion
+## Discussion
 
 The instance passed as `x` must be an instance of type `T`.
 

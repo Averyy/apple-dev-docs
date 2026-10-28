@@ -19,11 +19,11 @@ func desktopImageOptions(for screen: NSScreen) -> [NSWorkspace.DesktopImageOptio
 - (NSDictionary<NSString *,id> *) desktopImageOptionsForScreen:(NSScreen *) screen;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the keys found in [`NSWorkspace.DesktopImageOptionKey`](./desktopimageoptionkey.md).
 
-#### Discussion
+## Discussion
 
 You must call this method from your app’s main thread.
 

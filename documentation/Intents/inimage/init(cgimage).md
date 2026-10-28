@@ -27,7 +27,7 @@ convenience init(cgImage imageRef: CGImage)
 + (instancetype) imageWithCGImage:(CGImageRef) imageRef;
 ```
 
-#### Return Value
+## Return Value
 
 An image object that contains the specified Core Graphics image, or `nil` if that image is invalid.
 

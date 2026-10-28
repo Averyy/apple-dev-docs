@@ -22,11 +22,11 @@ nonisolated
 func transform(_ transform: CGAffineTransform) -> TransformedShape<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A transformed shape, based on its matrix values.
 
-#### Discussion
+## Discussion
 
 Affine transforms present a mathematical approach to applying combinations of rotation, scaling, translation, and skew to shapes.
 

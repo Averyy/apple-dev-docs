@@ -24,7 +24,7 @@ var inputObservation: VNDetectedObjectObservation { get set }
 @property (nonatomic, strong, readwrite) VNDetectedObjectObservation * inputObservation;
 ```
 
-#### Discussion
+## Discussion
 
 Providing an observation not returned from a tracker, such as a user-defined observation, begins a new tracker for the sequence. Providing an observation that was returned from a tracker continues the use of that tracker, to track the region to the next frame.
 

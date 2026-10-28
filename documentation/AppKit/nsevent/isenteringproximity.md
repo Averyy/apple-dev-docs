@@ -19,7 +19,7 @@ var isEnteringProximity: Bool { get }
 @property (readonly, getter=isEnteringProximity) BOOL enteringProximity;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to [`true`](../../Swift/true.md) when the pointing device enters the proximity of its tablet and [`false`](../../Swift/false.md) when it leaves.
 

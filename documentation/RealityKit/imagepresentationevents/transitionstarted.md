@@ -15,7 +15,7 @@ A transition between two viewing modes has started for an image presentation com
 struct TransitionStarted
 ```
 
-#### Overview
+## Overview
 
 Note that a `TransitionStarted` event is not triggered for viewing mode changes that transition immediately to the new mode. For instantaneous transitions, only a `TransitionCompleted` event is fired.
 

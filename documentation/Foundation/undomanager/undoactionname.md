@@ -25,7 +25,7 @@ var undoActionName: String { get }
 @property (copy, readonly) NSString * undoActionName;
 ```
 
-#### Discussion
+## Discussion
 
 The undo action name. Returns an empty string (`@""`) if no action name has been assigned or if there is nothing to undo.
 

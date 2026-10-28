@@ -21,7 +21,7 @@ var trailingSubcaption: String? { get set }
 @property (nonatomic, copy, nullable) NSString * trailingSubcaption;
 ```
 
-#### Discussion
+## Discussion
 
 The trailing subcaption is drawn using gray text, and is positioned below the trailing caption. This text is right aligned and positioned on the same line as the subcaption. This property defaults to `nil`.
 

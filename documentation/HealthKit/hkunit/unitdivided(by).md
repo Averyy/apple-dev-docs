@@ -24,11 +24,11 @@ func unitDivided(by unit: HKUnit) -> HKUnit
 - (HKUnit *) unitDividedByUnit:(HKUnit *) unit;
 ```
 
-#### Return Value
+## Return Value
 
 A new, complex unit.
 
-#### Discussion
+## Discussion
 
 This method creates a new, complex unit by dividing one unit by another. For example, you can create a meters-per-second unit by dividing a meters unit by a seconds unit, as shown below.
 

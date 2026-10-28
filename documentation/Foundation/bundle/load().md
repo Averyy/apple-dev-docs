@@ -25,11 +25,11 @@ func load() -> Bool
 - (BOOL) load;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the method successfully loads the bundle’s code or if the code has already been loaded, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 You can use this method to load the code associated with a dynamically loaded bundle, such as a plug-in or framework. Prior to OS X version 10.5, a bundle would attempt to load its code—if it had any—only once. Once loaded, you could not unload that code. In macOS 10.5 and later, you can unload a bundle’s executable code using the [`unload()`](./unload%28%29.md) method.
 
@@ -37,7 +37,7 @@ You don’t need to load a bundle’s executable code to search the bundle’s r
 
 This method initializes the principal class in the bundle. To add code you want executed after loading, override the [`initialize()`](../../ObjectiveC/nsobject-swift.class/initialize%28%29.md) class method of the principal class.
 
-##### Special Considerations
+### Special Considerations
 
 If an `NSBundle` object calls the [`load()`](./load%28%29.md) method, it calls the [`unload()`](./unload%28%29.md) method before being deallocated. Therefore, you should retain any `NSBundle` object for as long as any code from it is used by the app.
 

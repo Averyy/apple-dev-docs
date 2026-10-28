@@ -24,11 +24,11 @@ init(attribute: any NSObjectProtocol)
 - (instancetype) initWithAttribute:(id<NSObject>) attribute;
 ```
 
-#### Return Value
+## Return Value
 
 A new decision tree.
 
-#### Discussion
+## Discussion
 
 The decision tree returned by this initializer is incomplete. To build a manually defined tree, use the [`rootNode`](./rootnode.md) property to access the node corresponding to the initial attribute, and use [`GKDecisionNode`](../gkdecisionnode.md) methods on that object to create branches leading to child nodes that represent additional attributes to test or final actions.
 

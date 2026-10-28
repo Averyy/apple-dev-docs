@@ -13,7 +13,7 @@
 #define kIOAudioEngineNumCalls
 ```
 
-#### Discussion
+## Discussion
 
 The number of elements in the IOAudioEngineCalls enum.
 

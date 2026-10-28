@@ -23,11 +23,11 @@ optional func application(_ application: UIApplication, handleOpen url: URL) -> 
 - (BOOL) application:(UIApplication *) application handleOpenURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the delegate successfully handled the request; [`false`](../../Swift/false.md) if the attempt to handle the URL failed.
 
-#### Discussion
+## Discussion
 
 If the delegate also implements the [`application(_:open:sourceApplication:annotation:)`](./application%28_,open,sourceapplication,annotation%29.md) method, that method is called instead of this one.
 

@@ -3,7 +3,7 @@
 **Framework**: Metal Performance Shaders  
 **Role**: Article
 
-#### Overview
+## Overview
 
 The [`MPSKernel`](./mpskernel.md) is the base class for all Metal Performance Shaders kernels. It defines the baseline behavior for all kernels, declaring the device to run the kernel on, some debugging options, and a user-friendly label, should one be required. Derived from this class are the [`MPSUnaryImageKernel`](./mpsunaryimagekernel.md) and [`MPSBinaryImageKernel`](./mpsbinaryimagekernel.md) subclasses, which define shared behavior for most image processing kernels (filters) such as edging modes, clipping, and tiling support for image operations that consume one or two source textures. Neither these nor the [`MPSKernel`](./mpskernel.md) class are meant to be used directly. They just provide API abstraction and in some cases may allow some level of polymorphic manipulation of image kernel objects.
 

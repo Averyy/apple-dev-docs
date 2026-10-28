@@ -27,11 +27,11 @@ optional func application(_ application: UIApplication, viewControllerWithRestor
 
 - [About the UI restoration process](../about-the-ui-restoration-process.md)
 
-#### Return Value
+## Return Value
 
 The view controller object to use or `nil` if the app delegate does not supply this view controller. If this method returns `nil`, UIKit tries to find the view controller implicitly using the available restoration path and storyboard information.
 
-#### Discussion
+## Discussion
 
 During state restoration, when UIKit encounters a view controller without a restoration class, it calls this method to ask for the corresponding view controller object. Your implementation of this method should create (or find) the corresponding view controller object and return it. If your app delegate does not provide the view controller, return `nil`.
 

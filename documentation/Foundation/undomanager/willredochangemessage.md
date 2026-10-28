@@ -21,7 +21,7 @@ A message that an undo manager sends before redoing a change.
 struct WillRedoChangeMessage
 ```
 
-#### Overview
+## Overview
 
 The undo manager posts this message after you call [`redo()`](./redo%28%29.md). Because this is a “will”-style message, the undo manager sends the message before it performs the redo.
 

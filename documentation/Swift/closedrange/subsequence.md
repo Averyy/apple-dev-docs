@@ -23,7 +23,7 @@ typealias SubSequence = Slice<ClosedRange<Bound>>
 
 Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
-#### Discussion
+## Discussion
 
 The default subsequence type for collections that don’t define their own is `Slice`.
 

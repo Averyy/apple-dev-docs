@@ -19,7 +19,7 @@ class NSScrubberImageItemView
 @interface NSScrubberImageItemView : NSScrubberItemView
 ```
 
-#### Overview
+## Overview
 
 Provide the image you want to display in the scrubber item to the [`image`](./nsscrubberimageitemview/image.md) property. If you want finer control over the appearance of the image, you can access the underlying image view using the [`imageView`](./nsscrubberimageitemview/imageview.md) property.
 

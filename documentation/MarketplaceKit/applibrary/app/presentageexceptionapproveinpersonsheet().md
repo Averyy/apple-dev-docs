@@ -21,7 +21,7 @@ final func presentAgeExceptionApproveInPersonSheet() async throws
 
 - [Providing age-rating appropriate content](../../providing-age-rating-appropriate-content.md)
 
-#### Discussion
+## Discussion
 
 Call this method when a person wants to display a sheet that enables a parent or guardian to review an installation exception request in person. For more information, see [Providing age-rating appropriate content](../../providing-age-rating-appropriate-content.md).
 

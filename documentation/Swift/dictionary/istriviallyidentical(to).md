@@ -23,7 +23,7 @@ func isTriviallyIdentical(to other: Dictionary<Key, Value>) -> Bool
 
 Available when `Key` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 Two dictionary values are identical if there is no way to distinguish between them.
 

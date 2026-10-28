@@ -20,7 +20,7 @@ func trackedRaycast(_ query: ARRaycastQuery, updateHandler: @escaping ([ARRaycas
 - (ARTrackedRaycast *) trackedRaycast:(ARRaycastQuery *) query updateHandler:(void (^)(NSArray<ARRaycastResult *> *)) updateHandler;
 ```
 
-#### Discussion
+## Discussion
 
 A tracked ray cast wraps a ray-cast query that the session calls repeatedly, each time invoking your update handler to provide you with new results.
 

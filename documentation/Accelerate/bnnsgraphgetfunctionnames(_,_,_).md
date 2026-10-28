@@ -25,7 +25,7 @@ func BNNSGraphGetFunctionNames(_ graph: bnns_graph_t, _ function_name_count: Int
 int BNNSGraphGetFunctionNames(bnns_graph_t graph, size_t function_name_count, const char **function_names);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success, nonzero on failure.
 

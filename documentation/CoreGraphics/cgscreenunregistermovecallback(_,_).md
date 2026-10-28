@@ -21,7 +21,7 @@ func CGScreenUnregisterMoveCallback(_ callback: CGScreenUpdateMoveCallback, _ us
 extern void CGScreenUnregisterMoveCallback(CGScreenUpdateMoveCallback callback, void *userInfo);
 ```
 
-#### Discussion
+## Discussion
 
 When you call this function, the two arguments must match the registered entry to be removed.
 

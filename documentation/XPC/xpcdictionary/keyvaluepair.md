@@ -21,7 +21,7 @@ A type that contains a dictionary’s key-value pair.
 typealias KeyValuePair = (key: String, value: xpc_object_t)
 ```
 
-#### Discussion
+## Discussion
 
 [`XPCDictionary`](../xpcdictionary.md) exposes its values as instances of [`xpc_object_t`](../xpc_object_t.md) even if they were originally set with other types.
 

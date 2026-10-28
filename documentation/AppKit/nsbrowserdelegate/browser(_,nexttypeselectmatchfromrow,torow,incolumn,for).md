@@ -20,7 +20,7 @@ optional func browser(_ browser: NSBrowser, nextTypeSelectMatchFromRow startRow:
 - (NSInteger) browser:(NSBrowser *) browser nextTypeSelectMatchFromRow:(NSInteger) startRow toRow:(NSInteger) endRow inColumn:(NSInteger) column forString:(NSString *) searchString;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the first row that matches `searchString` between `startRowIndex` and `endRowIndex` - 1, or `-1` if there is no match.
 

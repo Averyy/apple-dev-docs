@@ -21,7 +21,7 @@ var dashboardSymbolImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * dashboardSymbolImage;
 ```
 
-#### Discussion
+## Discussion
 
 You use a named image asset to supply variants for both dark and light interface styles, and initialize the image using [`init(named:)`](../../UIKit/uiimage/init%28named%29.md). CarPlay then selects the correct image for the current interface style.
 

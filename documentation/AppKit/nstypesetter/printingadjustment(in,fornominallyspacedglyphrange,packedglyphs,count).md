@@ -19,7 +19,7 @@ class func printingAdjustment(in layoutMgr: NSLayoutManager, forNominallySpacedG
 + (NSSize) printingAdjustmentInLayoutManager:(NSLayoutManager *) layoutMgr forNominallySpacedGlyphRange:(NSRange) nominallySpacedGlyphsRange packedGlyphs:(const unsigned char *) packedGlyphs count:(NSUInteger) packedGlyphsCount;
 ```
 
-#### Return Value
+## Return Value
 
 The interglyph spacing in the specified range when sent to a printer. If the font metrics of the font used for displaying text on the screen is different from the font metrics of the font used in printing, then this interglyph spacing may need to be adjusted slightly to match that used on the screen.
 

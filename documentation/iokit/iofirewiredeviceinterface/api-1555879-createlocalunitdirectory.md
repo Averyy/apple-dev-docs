@@ -16,7 +16,7 @@ Creates a local unit directory object and returns an interface to it. An instanc
 IOFireWireLibLocalUnitDirectoryRef (*CreateLocalUnitDirectory)(IOFireWireLibDeviceRef self, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOFireWireLibLocalUnitDirectoryRef. Returns 0 upon failure
 

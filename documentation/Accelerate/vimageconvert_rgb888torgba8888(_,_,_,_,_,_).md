@@ -25,9 +25,9 @@ func vImageConvert_RGB888toRGBA8888(_: UnsafePointer<vImage_Buffer>, _: UnsafePo
 vImage_Error vImageConvert_RGB888toRGBA8888(const vImage_Buffer *, const vImage_Buffer *, Pixel_8 , const vImage_Buffer *, bool , vImage_Flags );
 ```
 
-#### Discussion
+## Discussion
 
-##### Parameters
+### Parameters
 
 - **rgbSrc**: The source vImage buffer that contains the red, green, and blue channels.
 - **aSrc**: The source vImage buffer that contains the alpha channel. Set this value to `nil` to specify that the function sets the destination alpha as the constant destination alpha value.

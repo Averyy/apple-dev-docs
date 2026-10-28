@@ -20,7 +20,7 @@ The pacing of an animation transition.
 struct AnimationTimingFunction
 ```
 
-#### Overview
+## Overview
 
 Use an animation timing function to control the pace of an animation transition when you call one of an entity’s animated move methods, like `Entity/move(to:relativeTo:duration:timingFunction:)-905k`. If you omit a timing function from the call, the method uses the [`default`](./animationtimingfunction/default.md) timing function.
 

@@ -23,7 +23,7 @@ var largeContentSizeImageInsets: UIEdgeInsets { get set }
 @property (nonatomic) UIEdgeInsets largeContentSizeImageInsets;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`zero`](../uiedgeinsets/zero.md).
 

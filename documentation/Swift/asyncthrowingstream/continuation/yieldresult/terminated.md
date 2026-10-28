@@ -21,7 +21,7 @@ The stream didn’t enqueue the element because the stream was in a terminal sta
 case terminated
 ```
 
-#### Discussion
+## Discussion
 
 This indicates the stream terminated prior to calling `yield`, either because the stream finished normally or through cancellation, or it threw an error.
 

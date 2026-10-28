@@ -20,7 +20,7 @@ optional func splitViewWillResizeSubviews(_ notification: Notification)
 - (void) splitViewWillResizeSubviews:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate implements this method, the system automatically registers it to receive this notification.
 

@@ -24,7 +24,7 @@ class GCGamepad
 @interface GCGamepad : GCPhysicalInputProfile
 ```
 
-#### Overview
+## Overview
 
 The controls associated with the gamepad profile include the following:
 

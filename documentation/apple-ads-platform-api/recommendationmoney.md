@@ -15,7 +15,7 @@ A monetary amount with currency used throughout the Recommendations and Suggesti
 object RecommendationMoney
 ```
 
-#### Discussion
+## Discussion
 
 The `Money` object represents a monetary value in the Recommendations and Suggestions APIs.
 
@@ -23,7 +23,7 @@ The `currency` code corresponds to the ad account’s billing currency. All mone
 
 > **Note**: Don’t set amount fields with leading zeros. Use `"5.00"` rather than `"05.00"`.
 
-##### Example
+### Example
 
 ```json
 {

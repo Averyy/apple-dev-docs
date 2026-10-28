@@ -25,7 +25,7 @@ func copyAndCompact(sourceAccelerationStructure: any MTLAccelerationStructure, d
 - (void) copyAndCompactAccelerationStructure:(id<MTLAccelerationStructure>) sourceAccelerationStructure toAccelerationStructure:(id<MTLAccelerationStructure>) destinationAccelerationStructure;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring that the source and destination acceleration structures don’t overlap in memory. If this is an instance acceleration structure, Metal preserves references to primitive acceleration structures it references.
 

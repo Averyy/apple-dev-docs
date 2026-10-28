@@ -24,7 +24,7 @@ case cfsocks4ErrorRequestFailed
 kCFSOCKS4ErrorRequestFailed
 ```
 
-#### Discussion
+## Discussion
 
 This error is specific to SOCKS4.
 

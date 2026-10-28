@@ -27,11 +27,11 @@ var next: UIResponder? { get }
 
 - [Using responders and the responder chain to handle events](../using-responders-and-the-responder-chain-to-handle-events.md)
 
-#### Return Value
+## Return Value
 
 The next object in the responder chain, or `nil` if this is the last object in the chain.
 
-#### Discussion
+## Discussion
 
 The [`UIResponder`](../uiresponder.md) class doesn’t store or set the next responder automatically, so this method returns `nil` by default. Subclasses must override this method and return an appropriate next responder. For example, [`UIView`](../uiview.md) implements this method and returns the [`UIViewController`](../uiviewcontroller.md) object that manages it (if it has one) or its superview (if it doesn’t). [`UIViewController`](../uiviewcontroller.md) similarly implements the method and returns its view’s superview. [`UIWindow`](../uiwindow.md) returns the application object. The shared [`UIApplication`](../uiapplication.md) object normally returns `nil`, but it returns its app delegate if that object is a subclass of [`UIResponder`](../uiresponder.md) and hasn’t already been called to handle the event.
 

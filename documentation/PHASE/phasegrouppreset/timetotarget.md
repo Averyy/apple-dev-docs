@@ -24,7 +24,7 @@ var timeToTarget: Double { get }
 @property (nonatomic, readonly) double timeToTarget;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the speed of activation when the app calls [`activate()`](./activate%28%29.md). The framework scales the value by [`unitsPerSecond`](../phaseengine/unitspersecond.md).
 

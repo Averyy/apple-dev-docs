@@ -19,7 +19,7 @@ func beginLine(withGlyphAt glyphIndex: Int)
 - (void) beginLineWithGlyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Concrete subclass implementations of [`layoutParagraph(at:)`](./layoutparagraph%28at%29.md) should invoke this method at the beginning of each line.
 

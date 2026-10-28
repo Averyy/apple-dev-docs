@@ -19,7 +19,7 @@ class SearchParameters
 @interface NSAccessibilityCustomRotorSearchParameters : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use these parameters to determine the next matching [`NSAccessibilityCustomRotor.ItemResult`](./itemresult.md).
 

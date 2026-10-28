@@ -23,7 +23,7 @@ var openWindows: [any WKWebExtensionWindow] { get }
 @property (nonatomic, copy, readonly) NSArray<id<WKWebExtensionWindow>> * openWindows;
 ```
 
-#### Discussion
+## Discussion
 
 Provides the windows that are open and visible to the extension, as updated by the [`didOpenWindow(_:)`](./didopenwindow%28_%29.md) and [`didCloseWindow(_:)`](./didclosewindow%28_%29.md) methods.
 

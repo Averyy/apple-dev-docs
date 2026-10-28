@@ -5,7 +5,7 @@
 
 Analyze how users interact with your app on the App Store.
 
-#### Overview
+## Overview
 
 The App Store Discovery and Engagement report provides details about how users engage with your apps on the App Store itself. This includes data about user engagement with your app’s icons, product pages, in-app event pages, and [other install sheets](../StoreKit/skstoreproductviewcontroller.md).
 
@@ -22,7 +22,7 @@ The App Store Discovery and Engagement report provides details about how users e
 
 The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type | Standard Report | Detailed Report |
 | --- | --- | --- | --- | --- |
@@ -42,7 +42,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Counts | The total number of events that occurred. | `integer` | ✔ | ✔ |
 | Unique Counts | The total number of unique users that performed the event. | `integer` | ✔ | ✔ |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

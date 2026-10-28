@@ -20,13 +20,13 @@ func insertChild(_ sender: Any?)
 - (void) insertChild:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The `sender` is typically the object that invoked this method.
 
 If the receiver is in object mode `newObject` is called and the returned object is inserted as a child. If the receiver is in entity mode a new object is created that is appropriate for the relationship as specified by the entity, and `newObject` is not used.
 
-##### Special Considerations
+### Special Considerations
 
 The result of this method is deferred until the next iteration of the run loop so that the error presentation mechanism can provide feedback as a sheet.
 

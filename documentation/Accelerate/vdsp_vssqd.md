@@ -21,7 +21,7 @@ Computes the signed squared value of each element in the supplied double-precisi
 extern void vDSP_vssqD(const double *__A, vDSP_Stride __IA, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_vssq`](./vdsp_vssq.md), except for the types of vectors `A` and `C`.
 

@@ -22,7 +22,7 @@ A type-erased iterator of `Element`.
 struct AnyIterator<Element>
 ```
 
-#### Overview
+## Overview
 
 This iterator forwards its `next()` method to an arbitrary underlying iterator having the same `Element` type, hiding the specifics of the underlying `IteratorProtocol`.
 

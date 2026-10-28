@@ -19,7 +19,7 @@ init?(appearanceNamed name: NSAppearance.Name, bundle: Bundle?)
 - (instancetype) initWithAppearanceNamed:(NSAppearanceName) name bundle:(NSBundle *) bundle;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized appearance object, or `nil` if an error occurs.
 

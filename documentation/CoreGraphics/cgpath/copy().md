@@ -25,7 +25,7 @@ func copy() -> CGPath?
 extern CGPathRefCGPathCreateCopy(CGPathRef path);
 ```
 
-#### Return Value
+## Return Value
 
 A new, immutable copy of the specified path. You are responsible for releasing this object.
 

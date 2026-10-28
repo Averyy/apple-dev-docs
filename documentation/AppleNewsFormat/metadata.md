@@ -23,11 +23,11 @@ object Metadata
 - [Apple News Format Release Notes](../AppleNews/apple-news-format-release-notes.md)
 - [Apple News API Release Notes](../AppleNews/apple-news-api-release-notes.md)
 
-#### Discussion
+## Discussion
 
 For best results, include as many properties as you can even though they aren’t required.
 
-##### Example
+### Example
 
 ```json
 {

@@ -19,7 +19,7 @@ func computedStyle(for element: DOMElement!, pseudoElement: String!) -> DOMCSSSt
 - (DOMCSSStyleDeclaration *) computedStyleForElement:(DOMElement *) element pseudoElement:(NSString *) pseudoElement;
 ```
 
-#### Return Value
+## Return Value
 
 An immutable object describing the computed style of `element` and `pseudoElement` according to the Cascading Style Sheets Specification at `http://www.w3.org/TR/CSS21`. Returns `nil` if the receiver doesn’t display `element`.
 

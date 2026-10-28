@@ -26,7 +26,7 @@ class var minimum: NSDecimalNumber { get }
 @property (class, copy, readonly) NSDecimalNumber * minimumDecimalNumber;
 ```
 
-#### Return Value
+## Return Value
 
 The smallest possible value of an `NSDecimalNumber` object.
 

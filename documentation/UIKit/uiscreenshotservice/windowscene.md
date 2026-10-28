@@ -22,7 +22,7 @@ weak var windowScene: UIWindowScene? { get }
 @property (nonatomic, weak, readonly, nullable) UIWindowScene * windowScene;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access the window scene containing the relevant content.
 

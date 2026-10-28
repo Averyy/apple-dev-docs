@@ -23,7 +23,7 @@ func claimKnownFolders(_ knownFolders: NSFileProviderKnownFolderLocations, local
 - (void) claimKnownFolders:(NSFileProviderKnownFolderLocations *) knownFolders localizedReason:(NSString *) localizedReason completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to claim a set of known folders according to the information in the `knownFolders` parameter. The system only enables sync for these folders in the domain if the set of locations is valid and if the user agrees.
 

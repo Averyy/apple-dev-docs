@@ -19,11 +19,11 @@ func hv_gic_config_set_msi_interrupt_range(_ config: hv_gic_config_t, _ msi_inti
 extern hv_return_t hv_gic_config_set_msi_interrupt_range(hv_gic_config_t config, uint32_t msi_intid_base, uint32_t msi_intid_count);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 
-#### Discussion
+## Discussion
 
 Use this method to configure the range of identifiers supported for MSIs. If it’s outside of the range given by [`hv_gic_get_spi_interrupt_range(_:_:)`](./hv_gic_get_spi_interrupt_range%28_,_%29.md), the method returns an error.
 

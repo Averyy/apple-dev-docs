@@ -21,7 +21,7 @@ func column(of matrix: NSMatrix) -> Int
 - (NSInteger) columnOfMatrix:(NSMatrix *) matrix;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the column in which the specified matrix appears.
 

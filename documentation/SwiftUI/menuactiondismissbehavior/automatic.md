@@ -21,7 +21,7 @@ Use the a dismissal behavior that’s appropriate for the given context.
 static let automatic: MenuActionDismissBehavior
 ```
 
-#### Discussion
+## Discussion
 
 In most cases, the default behavior is [`enabled`](./enabled.md). There are some cases, like [`Stepper`](../stepper.md), that use [`disabled`](./disabled.md) by default.
 

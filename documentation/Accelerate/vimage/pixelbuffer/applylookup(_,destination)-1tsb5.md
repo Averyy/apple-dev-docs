@@ -23,7 +23,7 @@ func applyLookup(_ lookupTable: [Pixel_FFFF], destination: vImage.PixelBuffer<vI
 
 Available when `Format` is `vImage.Planar8`.
 
-#### Discussion
+## Discussion
 
 You can use this function to create pseudo-color images by transforming a grayscale image to an RGB image.
 

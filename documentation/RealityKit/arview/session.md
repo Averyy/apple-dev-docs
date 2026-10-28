@@ -18,7 +18,7 @@ The AR session that supports the view’s rendering.
 @preconcurrency dynamic var session: ARSession { get set }
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit automatically creates a default session that the view manages. If you have an existing or custom session, setting it as the view’s session replaces the default session. If you replace the default session, you need to start it by calling [`run(_:options:)`](../../ARKit/arsession/run%28_,options%29.md). See [`automaticallyConfigureSession`](./automaticallyconfiguresession.md) for more details.
 

@@ -19,7 +19,7 @@ var magnification: CGFloat { get set }
 @property (nonatomic) CGFloat magnification;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1.0`.
 

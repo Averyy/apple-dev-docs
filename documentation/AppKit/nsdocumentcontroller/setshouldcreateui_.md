@@ -17,7 +17,7 @@ Sets whether the window controllers of a document should be created when the doc
 - (void) setShouldCreateUI:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 Sets whether the window controllers (`NSWindowController` instances) of a document should be created when the document is created. When a window controller is created, it loads the nib file containing the window it manages. Often `flag` is set to [`false`](../../Swift/false.md) for scripting or searching operations involving the document’s data.
 

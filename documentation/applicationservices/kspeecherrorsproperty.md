@@ -19,7 +19,7 @@ let kSpeechErrorsProperty: CFString
 const CFStringRef kSpeechErrorsProperty;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this property is a `CFDictionary` object that contains speech-error information. See [Speech Error Keys](./speech_synthesis_manager/speech_error_keys.md) for a description of the keys present in the dictionary.
 

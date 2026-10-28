@@ -31,7 +31,7 @@ nonisolated
 func animation(_ animation: Animation?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that applies `animation` to this view whenever it changes.
 

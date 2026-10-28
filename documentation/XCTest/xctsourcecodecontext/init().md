@@ -16,7 +16,7 @@ convenience init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 The system derives the call stack from `NSThread.callStackReturnAddresses.`
 

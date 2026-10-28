@@ -21,7 +21,7 @@ enum WKMenuItemIcon
 enum WKMenuItemIcon : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the [`addMenuItem(with:title:action:)`](./wkinterfacecontroller/addmenuitem%28with,title,action%29-6pb4t.md) method to configure actions for your interface controller’s menu.
 

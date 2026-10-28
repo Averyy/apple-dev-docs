@@ -25,7 +25,7 @@ func xpc_connection_send_message_with_reply(_ connection: xpc_connection_t, _ me
 extern void xpc_connection_send_message_with_reply(xpc_connection_t connection, xpc_object_t message, dispatch_queue_t replyq, xpc_handler_t handler);
 ```
 
-#### Discussion
+## Discussion
 
 If the given GCD queue is a concurrent queue, XPC cannot guarantee that there will not be multiple reply handlers being invoked concurrently. XPC does not guarantee any ordering for the invocation of reply handers. So if multiple messages are waiting for replies and the connection goes invalid, there is no guarantee that the reply handlers will be invoked in FIFO order. Similarly, XPC does not guarantee that reply handlers will not run concurrently with the connection’s event handler in the case that the reply queue and the connection’s target queue are the same concurrent queue.
 

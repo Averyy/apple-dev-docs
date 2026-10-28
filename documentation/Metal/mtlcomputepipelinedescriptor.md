@@ -28,7 +28,7 @@ class MTLComputePipelineDescriptor
 
 - [Compiling and linking Metal dynamic libraries](./compiling-and-linking-metal-dynamic-libraries.md)
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Before creating a pipeline state, set the [`computeFunction`](./mtlcomputepipelinedescriptor/computefunction.md) property on your descriptor instance. This property tells the GPU which kernel to run.
 

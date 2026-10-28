@@ -20,7 +20,7 @@ var action: es_message_t.__Unnamed_union_action
 union { ... } action;
 ```
 
-#### Discussion
+## Discussion
 
 The action is a `union` of an [`es_event_id_t`](../es_event_id_t.md) named `auth` and an [`es_result_t`](../es_result_t.md) named `notify`. Use the [`action_type`](./action_type.md) field to determine which kind of action this message represents.
 

@@ -23,7 +23,7 @@ static func .&= (a: inout SIMDMask<Storage>, b: SIMDMask<Storage>)
 
 Available when `Storage` is `SIMD32<Int32>`.
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

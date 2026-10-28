@@ -16,7 +16,7 @@ Tells whether the system supports full sleep, or just doze
 boolean_t IOPMSleepEnabled(void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the system supports sleep, false if some hardware prevents full sleep.
 

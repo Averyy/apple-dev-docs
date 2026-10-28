@@ -16,7 +16,7 @@ Get user reference value set on this interface
 void *(*GetRefCon)(IOFireWireLibDeviceRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the user's reference value set on this interface.
 

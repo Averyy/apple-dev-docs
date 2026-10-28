@@ -20,7 +20,7 @@ var attributes: [XMLNode]? { get set }
 @property (copy, nullable) NSArray<NSXMLNode *> * attributes;
 ```
 
-#### Discussion
+## Discussion
 
 To set attributes in an element node using an [`NSDictionary`](../nsdictionary.md) object as the input parameter, see [`setAttributesWith(_:)`](./setattributeswith%28_%29.md).
 

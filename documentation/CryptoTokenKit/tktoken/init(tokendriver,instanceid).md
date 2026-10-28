@@ -25,11 +25,11 @@ init(tokenDriver: TKTokenDriver, instanceID: TKToken.InstanceID)
 - (instancetype) initWithTokenDriver:(TKTokenDriver *) tokenDriver instanceID:(TKTokenInstanceID) instanceID;
 ```
 
-#### Return Value
+## Return Value
 
 A new token object.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer.
 

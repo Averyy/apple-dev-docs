@@ -20,11 +20,11 @@ optional func textView(_ view: NSTextView, writablePasteboardTypesFor cell: any 
 - (NSArray<NSString *> *) textView:(NSTextView *) view writablePasteboardTypesForCell:(id<NSTextAttachmentCell>) cell atIndex:(NSUInteger) charIndex;
 ```
 
-#### Return Value
+## Return Value
 
 An array of types that can be written to the pasteboard for `cell`.
 
-#### Discussion
+## Discussion
 
 This method is invoked after the user clicks `cell` at the specified `charIndex` location in `aTextView`. If the [`textView(_:draggedCell:in:event:at:)`](./textview%28_,draggedcell,in,event,at%29.md) is not used, this method and [`textView(_:write:at:to:type:)`](./textview%28_,write,at,to,type%29.md) allow `aTextView` to take care of attachment dragging and pasting, with the delegate responsible only for writing the attachment to the pasteboard.
 

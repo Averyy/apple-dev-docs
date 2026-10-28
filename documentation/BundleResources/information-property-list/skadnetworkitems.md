@@ -15,7 +15,7 @@ An array of dictionaries containing a list of ad network IDs.
 - **Name**: `SKAdNetworkItems`
 - **Type**: array of dictionary 
 
-#### Discussion
+## Discussion
 
 Apps that display ads and initiate install-validation information to share with ad networks need to include the ad network IDs in this key.
 

@@ -19,7 +19,7 @@ func color(withKey key: NSColor.Name) -> NSColor?
 - (NSColor *) colorWithKey:(NSColorName) key;
 ```
 
-#### Return Value
+## Return Value
 
 The color associated with the given key or `nil` if there is none.
 

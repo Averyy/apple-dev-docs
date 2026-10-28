@@ -8,17 +8,17 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 **Framework**: swift-async-algorithms/AsyncAlgorithms  
 **Role**: Article
 
-#### Overview
+## Overview
 
 - Author(s): [Philippe Hausler](https://github.com/phausler)
 
 [ [Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/AsyncShareSequence.swift) | [Tests](https://github.com/apple/swift-async-algorithms/blob/main/Tests/AsyncAlgorithmsTests/TestShare.swift) ]
 
-#### Introduction
+## Introduction
 
 Many of the AsyncSequence adopting types only permit a one singular consumption. However there are many times that the same produced values are useful in more than one place. Out of that mechanism there are a few approaches to share, distribute, and broadcast those values. This proposal will focus on one concept; sharing. Sharing is where each consumption independently can make forward progress and  get the same values but do not replay from the beginning of time.
 
-#### Motivation
+## Motivation
 
 There are many potential usages for the sharing concept of AsyncSequences.
 
@@ -26,7 +26,7 @@ One such example is the case where a source of data as an asynchronous sequence 
 
 There are many other use cases that have been requested for this family of algorithms. Since the release of AsyncAlgorithms it has perhaps been the most popularly requested set of behaviors as additions to the package.
 
-#### Proposed solution
+## Proposed solution
 
 AsyncAlgorithms will introduce a new extension function on AsyncSequence that will provide a shareable asynchronous sequence that will produce the same values upon iteration from multiple instances of it’s AsyncIterator. Those iterations can take place in multiple isolations.
 
@@ -34,7 +34,7 @@ When values from a differing isolation cannot be coalesced, the two options avai
 
 It is critical to identify that this is one algorithm in the family of algorithms for sharing values. It should not attempt to solve all behavioral requirements but instead serve a common set of them that make cohesive sense together. This proposal is not mutually exclusive to the other algorithms in the sharing family.
 
-#### Detailed design
+## Detailed design
 
 A new extension will be added to return a `Sendable` `AsyncSequence`. This extension will take a buffering policy to identify how the buffer will be handled when iterations do not consume at the same rate.
 
@@ -50,7 +50,7 @@ extension AsyncSequence where Element: Sendable {
 
 The buffer internally to the share algorithm will only extend back to the furthest element available but there will only be a singular buffer shared across all iterators. This ensures that with the application of the buffering policy the storage size is as minimal as possible while still allowing all iterations to avoid dropping values and keeping the memory usage in check. The signature reuses the existing `AsyncBufferSequencePolicy` type to specify the behavior around buffering either responding to how it should limit emitting to the buffer or what should happen when the buffer is exceeded.
 
-#### Runtime Behavior
+## Runtime Behavior
 
 The runtime behaviors fall into a few categories; ordering, iteration isolation, cancellation, and lifetimes. To understand the behaviors there are a terms useful to define. Each creation of the AsyncIterator of the sequence and invocation of next will be referred to a side of the share iteration. The back pressure to the system to fetch a new element or termination is referred to as demand. The limit which is the pending gate for awaiting until the buffer has been serviced used for the `AsyncBufferSequencePolicy.bounded(_ : Int)` policy. The last special definition is that of the extent which is specifically in this case the lifetime of the asynchronous sequence itself.
 
@@ -189,11 +189,11 @@ Task 2 4
 
 In that example output Task 2 can get element 0 and 1 but must await until task 1 has caught up to the specified buffering. This limit means that no additional iteration (and no values are then dropped) is made until the buffer count is below the specified value.
 
-#### Effect on API resilience
+## Effect on API resilience
 
 This is an additive API and no existing systems are changed, however it will introduce a few new types that will need to be maintained as ABI interfaces. Since the intent of this is to provide a mechanism to store AsyncSequences to a shared context the type must be exposed as ABI (for type sizing).
 
-#### Alternatives considered
+## Alternatives considered
 
 It has been considered that the buffering policy would be nested inside the `AsyncShareSequence` type. However since this seems to be something that will be useful for other types it makes sense to use an existing type from a top level type. However if it is determined that a general form of a  buffering policy would require additional behaviors this might be a debatable placement to move back to an interior type similar to AsyncStream.
 

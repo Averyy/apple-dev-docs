@@ -25,7 +25,7 @@ func setFragmentVisibleFunctionTable(_ functionTable: (any MTLVisibleFunctionTab
 - (void) setFragmentVisibleFunctionTable:(id<MTLVisibleFunctionTable>) functionTable atBufferIndex:(NSUInteger) bufferIndex;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the visible function table at each index is `nil`.
 

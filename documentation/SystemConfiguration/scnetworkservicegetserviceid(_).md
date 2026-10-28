@@ -19,7 +19,7 @@ func SCNetworkServiceGetServiceID(_ service: SCNetworkService) -> CFString?
 CFStringRefSCNetworkServiceGetServiceID(SCNetworkServiceRef service);
 ```
 
-#### Return Value
+## Return Value
 
 The service identifier.
 

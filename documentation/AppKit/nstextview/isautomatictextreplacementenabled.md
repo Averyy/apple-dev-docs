@@ -19,7 +19,7 @@ var isAutomaticTextReplacementEnabled: Bool { get set }
 @property (getter=isAutomaticTextReplacementEnabled) BOOL automaticTextReplacementEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if it is enabled, otherwise [`false`](../../Swift/false.md).
 

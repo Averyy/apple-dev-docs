@@ -19,7 +19,7 @@ var VMX_REASON_IO_SMI: Int { get }
 VMX_REASON_IO_SMI
 ```
 
-#### Discussion
+## Discussion
 
 An SMI arrived immediately after retirement of an I/O instruction causing a system-management mode (SMM) VM exit.
 

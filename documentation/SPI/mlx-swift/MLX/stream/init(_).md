@@ -17,7 +17,7 @@ New stream on the given device.
 init(_ device: Device)
 ```
 
-#### Discussion
+## Discussion
 
 Prefer [`withNewDefaultStream(device:_:)`](./withnewdefaultstream%28device,_%29-5bwc3.md)
 

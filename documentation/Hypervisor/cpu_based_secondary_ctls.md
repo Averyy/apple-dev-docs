@@ -19,7 +19,7 @@ var CPU_BASED_SECONDARY_CTLS: UInt32 { get }
 CPU_BASED_SECONDARY_CTLS
 ```
 
-#### Discussion
+## Discussion
 
 Must be `1`.
 

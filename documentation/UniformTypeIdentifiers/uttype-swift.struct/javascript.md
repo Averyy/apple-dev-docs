@@ -21,7 +21,7 @@ A type that represents JavaScript source code.
 static var javaScript: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.netscape.javascript-source`.
 

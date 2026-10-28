@@ -17,7 +17,7 @@ Connects to, or disconnects from, a device when a user requests it in the picker
 func systemRouteController(_ controller: AVSystemRouteController, handle event: AVSystemRouteEvent) async -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the event was handled successfully, `false` otherwise.
 

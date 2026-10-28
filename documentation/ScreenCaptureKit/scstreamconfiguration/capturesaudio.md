@@ -24,7 +24,7 @@ var capturesAudio: Bool { get set }
 @property (nonatomic, assign) BOOL capturesAudio;
 ```
 
-#### Discussion
+## Discussion
 
 A stream doesn’t capture audio by default. Set this value to [`true`](../../Swift/true.md) if you require audio capture.
 

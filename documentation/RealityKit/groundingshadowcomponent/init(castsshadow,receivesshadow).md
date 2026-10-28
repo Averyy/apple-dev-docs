@@ -20,7 +20,7 @@ Creates a grounding shadow component by configuring whether its entity receives 
 init(castsShadow: Bool, receivesShadow: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer is an alternative to [`init(castsShadow:)`](./init%28castsshadow%29.md), which creates a component that, by default, configures an entity to receive grounding shadows from other model entities in the scene.
 

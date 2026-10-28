@@ -16,7 +16,7 @@ A change that invalidates the restorable state of the view.
 struct RestorableState
 ```
 
-#### Overview
+## Overview
 
 Use [`restorableState`](../../nsviewinvalidating/restorablestate.md) to create an instance of this type.
 

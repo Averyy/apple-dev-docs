@@ -15,7 +15,7 @@ A value that describes the type of place the feature represents.
 get featureType(): "" | MapFeatureType;
 ```
 
-#### Discussion
+## Discussion
 
 This is one of the possible [`MapFeatureType`](../mapfeaturetype.md) values.
 

@@ -25,7 +25,7 @@ var shape: (Int, Int, Int, Int, Int, Int, Int, Int)
 ssize_t shape[8];
 ```
 
-#### Discussion
+## Discussion
 
 The first [`rank`](./rank.md) elements specify the size of each dimension.
 

@@ -24,7 +24,7 @@ var acceleration: CMAcceleration { get }
 @property (nonatomic, readonly) CMAcceleration acceleration;
 ```
 
-#### Discussion
+## Discussion
 
 The description of the [`CMAcceleration`](../cmacceleration.md) structure type describes the fields used for measuring acceleration.
 

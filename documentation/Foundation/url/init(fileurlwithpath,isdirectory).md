@@ -23,7 +23,7 @@ Creates a file URL that references the local file or directory at the given path
 init(fileURLWithPath path: String, isDirectory: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 If the path is an empty string, the system interprets it as “.”.
 

@@ -16,7 +16,7 @@ Notifies observers that your help menu content changed.
 extern NSString * const NSPreferencePaneUpdateHelpMenuNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The object of the notification is an array of dictionaries containing the new help menu contents.
 

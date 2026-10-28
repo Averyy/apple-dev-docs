@@ -24,11 +24,11 @@ func initializeMemory<T>(as type: T.Type, repeating repeatedValue: T) -> UnsafeM
 
 Available when `Base` is `UnsafeMutableRawBufferPointer`.
 
-#### Return Value
+## Return Value
 
 A typed buffer of the memory referenced by this raw buffer. The typed buffer contains `self.count / MemoryLayout<T>.stride` instances of `T`.
 
-#### Discussion
+## Discussion
 
 The memory referenced by this buffer slice must be uninitialized or initialized to a trivial type, and must be properly aligned for accessing `T`.
 

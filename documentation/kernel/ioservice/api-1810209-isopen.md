@@ -12,11 +12,11 @@ virtual bool isOpen(
  const IOService *forClient = 0 ) const;
 ```
 
-#### Return Value
+## Return Value
 
 <codetrueif the specific, or any, client has the IOService object open.
 
-#### Overview
+## Overview
 
 Returns the open state of an IOService object with respect to the specified client, or when it is open by any client.
 

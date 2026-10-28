@@ -17,7 +17,7 @@ The postback in the testing environment is malformed.
 static var malformedPostbacks: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Check that all parameters in the postback use the correct type.
 

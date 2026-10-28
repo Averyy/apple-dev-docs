@@ -22,7 +22,7 @@ nonisolated
 struct DefaultButtonLabel
 ```
 
-#### Overview
+## Overview
 
 You don’t use this type directly. Instead, the system creates it automatically when you construct certain types of `Button`.
 

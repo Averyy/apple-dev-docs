@@ -13,7 +13,7 @@
 kINQUIRY_Byte5_PROTECT_Bit = 0
 ```
 
-#### Discussion
+## Discussion
 
 PROTECT bit definition.
 

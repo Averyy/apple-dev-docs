@@ -21,7 +21,7 @@ Creates a run loop scheduler time interval from a binary integer type.
 init?<T>(exactly source: T) where T : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 If `exactly` can’t convert to an `Int`, the resulting time interval is `nil`.
 

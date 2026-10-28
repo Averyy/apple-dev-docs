@@ -24,7 +24,7 @@ var eventStoreIdentifier: String { get }
 @property (nonatomic, readonly) NSString * eventStoreIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If the store is damaged, it’s recreated and given a new identifier. If this value is different from a fetched value, you should take the appropriate action.
 

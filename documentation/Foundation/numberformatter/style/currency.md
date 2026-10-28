@@ -25,7 +25,7 @@ case currency
 NSNumberFormatterCurrencyStyle
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the en_US locale, the number 1234.5678 is represented as $1,234.57; in the fr_FR locale, the number 1234.5678 is represented as 1 234,57 €.
 

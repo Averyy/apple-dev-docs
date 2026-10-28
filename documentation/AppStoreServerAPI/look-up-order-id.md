@@ -14,7 +14,7 @@ Get a customer’s in-app purchases from a receipt using the order ID.
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This endpoint isn’t available in the sandbox environment.
 

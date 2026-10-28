@@ -19,7 +19,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this method directly. Instead, retrieve one of the predefined color objects or create a color using color component values.
 

@@ -24,7 +24,7 @@ var deadPeerDetectionRate: NEVPNIKEv2DeadPeerDetectionRate { get set }
 @property NEVPNIKEv2DeadPeerDetectionRate deadPeerDetectionRate;
 ```
 
-#### Discussion
+## Discussion
 
 The IKEv2 client periodically communicates with the IKEv2 server to detect when communication with the IKEv2 server has been interrupted. This property specifies how frequently this communication takes place. The default is [`NEVPNIKEv2DeadPeerDetectionRate.medium`](../nevpnikev2deadpeerdetectionrate/medium.md).
 

@@ -24,7 +24,7 @@ func variable(with data: Data, shape: [NSNumber], dataType: MPSDataType, name: S
 - (MPSGraphTensor *) variableWithData:(NSData *) data shape:(MPSShape *) shape dataType:(MPSDataType) dataType name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

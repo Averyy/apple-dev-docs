@@ -15,7 +15,7 @@ An event that is triggered whenever a specified piece of metadata is encountered
 attribute  timedMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the metadata this event fires on in the `extraInfo` parameter for the listener. The parameter is an array of keys. Valid key values are: `identifier`, `key`, `stringValue`, and `time`. Passing an empty array or `nil` to observe all timed metadata for HLS streams.
 

@@ -15,7 +15,7 @@ An anchor representing a set of field of view (FoV) boundary polygon points in i
 struct FieldOfViewAnchor
 ```
 
-#### Overview
+## Overview
 
 This anchor provides polygon points that define preset FoV boundaries, allowing applications to visualize these FoVs in the immersive space.
 

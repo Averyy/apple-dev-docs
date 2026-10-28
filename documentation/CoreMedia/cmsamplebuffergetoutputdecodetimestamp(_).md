@@ -25,11 +25,11 @@ func CMSampleBufferGetOutputDecodeTimeStamp(_ sbuf: CMSampleBuffer) -> CMTime
 extern CMTime CMSampleBufferGetOutputDecodeTimeStamp(CMSampleBufferRef sbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The output decode timestamp of the `CMSampleBuffer` or `kCMTimeInvalid` if there is an error.
 
-#### Discussion
+## Discussion
 
 For consistency with [`CMSampleBufferGetOutputPresentationTimeStamp(_:)`](./cmsamplebuffergetoutputpresentationtimestamp%28_%29.md), this function calculates the returned value as:
 

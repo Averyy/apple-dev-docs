@@ -22,7 +22,7 @@ var date: Date { get set }
 @property (nonatomic, strong) NSDate * date;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get and set the currently selected date. The default value of this property is the date when the [`UIDatePicker`](../uidatepicker.md) object is created. Setting this property animates the date picker by spinning the wheels to the new date and time; if you don’t want any animation to occur when you set the date, use the [`setDate(_:animated:)`](./setdate%28_,animated%29.md) method, passing [`false`](../../Swift/false.md) for the `animated` parameter. This behavior of this property is undefined when the mode is set to [`UIDatePicker.Mode.countDownTimer`](./mode/countdowntimer.md); refer instead to the [`countDownDuration`](./countdownduration.md) property.
 

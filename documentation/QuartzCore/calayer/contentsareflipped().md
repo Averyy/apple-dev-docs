@@ -24,11 +24,11 @@ func contentsAreFlipped() -> Bool
 - (BOOL) contentsAreFlipped;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the layer contents are implicitly flipped when rendered or [`false`](../../Swift/false.md) if they are not. This method returns [`false`](../../Swift/false.md) by default.
 
-#### Discussion
+## Discussion
 
 This method provides information about whether the layer’s contents are being flipped during drawing. You should not attempt to override this method and return a different value.
 

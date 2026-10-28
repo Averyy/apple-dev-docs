@@ -12,11 +12,11 @@ virtual IOAudioEngineState setState(
  IOAudioEngineStatenewState);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the old state.
 
-#### Overview
+## Overview
 
 This method simply sets the internal state of the audio engine to the specified state. It does not affect a change to the state. It does however keep other internal state-related attributes consistent. For example, it enables or disables the timer as needed when the state changes to running or stopped.
 

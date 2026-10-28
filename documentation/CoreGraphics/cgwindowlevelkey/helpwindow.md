@@ -18,7 +18,7 @@ case helpWindow
 kCGHelpWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for help windows.
 

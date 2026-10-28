@@ -21,7 +21,7 @@ Creates a data frame from a dictionary literal.
 init(dictionaryLiteral elements: (String, [Any?])...)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this initializer directly. The compiler calls it to create a data frame from a dictionary literal. You create a dictionary literal by enclosing a comma-separated list of key-value pairs in square brackets.
 

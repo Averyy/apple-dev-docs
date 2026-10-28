@@ -19,7 +19,7 @@ class let didResizeSubviewsNotification: NSNotification.Name
 extern NSNotificationName NSSplitViewDidResizeSubviewsNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object consists of the [`NSSplitView`](../nssplitview.md) that has resized its subviews.
 

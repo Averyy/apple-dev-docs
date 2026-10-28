@@ -23,7 +23,7 @@ var alternateIconName: String? { get }
 @property (nonatomic, readonly, nullable) NSString * alternateIconName;
 ```
 
-#### Discussion
+## Discussion
 
 When the system is displaying one of your app’s alternate icons, the value of this property is the name of the alternate icon (from your app’s `Info.plist` file). When the system is displaying your app’s primary icon, the value of this property is `nil`.
 

@@ -30,7 +30,7 @@ func submit(_ taskRequest: BGTaskRequest) throws
 - [Performing long-running tasks on iOS and iPadOS](../performing-long-running-tasks-on-ios-and-ipados.md)
 - [Starting and Terminating Tasks During Development](../starting-and-terminating-tasks-during-development.md)
 
-#### Discussion
+## Discussion
 
 Submitting a task request for an unexecuted task that’s already in the queue replaces the previous task request.
 

@@ -21,7 +21,7 @@ The process became another executable image.
 static let exec: DispatchSource.ProcessEvent
 ```
 
-#### Discussion
+## Discussion
 
 The process has become another executable image via an `exec` or `posix_spawn` function family call.
 

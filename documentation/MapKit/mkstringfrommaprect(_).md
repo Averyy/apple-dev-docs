@@ -25,7 +25,7 @@ func MKStringFromMapRect(_ rect: MKMapRect) -> String
 static NSString *MKStringFromMapRect(MKMapRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 A formatted string containing the origin and size values of the map rectangle.
 

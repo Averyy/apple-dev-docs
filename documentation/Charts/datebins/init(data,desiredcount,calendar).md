@@ -22,7 +22,7 @@ nonisolated
 init(data: [Date], desiredCount: Int? = nil, calendar: Calendar = .autoupdatingCurrent)
 ```
 
-#### Return Value
+## Return Value
 
 The inferred bins.
 

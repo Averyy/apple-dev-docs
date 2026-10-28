@@ -23,7 +23,7 @@ func ABPersonGetCompositeNameFormat() -> ABPersonCompositeNameFormat
 extern ABPersonCompositeNameFormat ABPersonGetCompositeNameFormat();
 ```
 
-#### Return Value
+## Return Value
 
 A constant indicating person-name display order; see [Composite Name Format](./api-1619815-composite-name-format.md).
 

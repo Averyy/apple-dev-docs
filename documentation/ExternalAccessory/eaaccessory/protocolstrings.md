@@ -24,7 +24,7 @@ var protocolStrings: [String] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * protocolStrings;
 ```
 
-#### Discussion
+## Discussion
 
 Protocol names are formatted as reverse-DNS strings. For example, the string “`com.apple.myProtocol`” might represent a custom protocol defined by Apple. Manufacturers can define custom protocols for their accessories or work with other manufacturers and organizations to define standard protocols for different accessory types.
 

@@ -24,7 +24,7 @@ var isSeamless: Bool { get }
 @property (nonatomic, readonly, getter=isSeamless) BOOL seamless;
 ```
 
-#### Discussion
+## Discussion
 
 This property is read-only; you choose whether a noise map tiles seamlessly when creating it with the [`interpolatedValue(at:)`](./interpolatedvalue%28at%29.md) initializer.
 

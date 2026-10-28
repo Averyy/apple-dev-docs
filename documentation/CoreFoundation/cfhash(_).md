@@ -25,11 +25,11 @@ func CFHash(_ cf: CFTypeRef!) -> CFHashCode
 extern CFHashCode CFHash(CFTypeRef cf);
 ```
 
-#### Return Value
+## Return Value
 
 An integer of type [`CFHashCode`](./cfhashcode.md) that represents a hashing value for `cf`.
 
-#### Discussion
+## Discussion
 
 Two objects that are equal (as determined by the [`CFEqual(_:_:)`](./cfequal%28_,_%29.md) function) have the same hashing value. However, the converse is not true: two objects with the same hashing value might not be equal. That is, hashing values are not necessarily unique.
 

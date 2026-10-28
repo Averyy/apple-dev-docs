@@ -15,7 +15,7 @@ Synchronously reads file system metadata from the resource into a buffer.
 func metadataRead(into buffer: UnsafeMutableRawBufferPointer, startingAt offset: off_t, length: Int) throws
 ```
 
-#### Discussion
+## Discussion
 
 This method provides access to the Kernel Buffer Cache, which is the primary system cache for file system metadata. Unlike equivalent kernel APIs, this method doesn’t hold any kernel-level claim to the underlying buffers.
 

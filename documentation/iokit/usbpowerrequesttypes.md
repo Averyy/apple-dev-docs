@@ -16,7 +16,7 @@ typedef enum USBPowerRequestTypes : unsigned int {
 } USBPowerRequestTypes;
 ```
 
-#### Overview
+## Overview
 
 Used to specify what kind of power will be reserved using the IOUSBDevice RequestExtraPower and ReturnExtraPower APIs.
 

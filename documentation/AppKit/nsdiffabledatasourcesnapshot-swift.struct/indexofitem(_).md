@@ -15,7 +15,7 @@ Returns the index of the item in the snapshot with the specified identifier.
 func indexOfItem(_ identifier: ItemIdentifierType) -> Int?
 ```
 
-#### Return Value
+## Return Value
 
 The index of the item in the snapshot, or `nil` if the item with the specified identifier doesn’t exist in the snapshot. This index value is 0-based.
 

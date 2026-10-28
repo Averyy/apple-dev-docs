@@ -15,7 +15,7 @@ A string value the represents the name of the resource group the framework loads
 var resourceGroupName: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The property contains a value only if the framework loads a reference image from a resource group. Otherwise, it’s `nil`.
 

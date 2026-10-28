@@ -17,7 +17,7 @@ The metadata for the constraint that configures the date and time setting.
 static let requireAutomaticDateAndTime: SettingMetadata<Bool>
 ```
 
-#### Discussion
+## Discussion
 
 Use `requireAutomaticDateAndTime`  to access the metadata for [`requireAutomaticDateAndTime`](./requireautomaticdateandtime-swift.property.md). The default value is `false`.
 

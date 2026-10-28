@@ -17,7 +17,7 @@ Generate `count` evenly spaced numbers over interval `[start, stop]` for `Binary
 static func linspace<T>(_ start: T, _ stop: T, count: Int = 50, dtype: DType? = nil, stream: StreamOrDevice = .default) -> MLXArray where T : HasDType, T : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 
@@ -26,7 +26,7 @@ Example:
 let r = MLXArray.linspace(0.0, 1.0)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 - [`linspace(_:_:count:dtype:stream:)`](./linspace%28_,_,count,dtype,stream%29-9yqai.md)

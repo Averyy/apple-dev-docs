@@ -25,7 +25,7 @@ var data: Data { get }
 @property (nonatomic, readonly) NSData * data;
 ```
 
-#### Discussion
+## Discussion
 
 An element’s data is an array of index values identifying vertices in a geometry source. SceneKit interprets the data as an array of unsigned integers, whose size is specified by the [`bytesPerIndex`](./bytesperindex.md) property.
 

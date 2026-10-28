@@ -21,7 +21,7 @@ init(summaryVariants: [String], additionalInformationVariants: [String], selecti
 - (instancetype) initWithSummaryVariants:(NSArray<NSString *> *) summaryVariants additionalInformationVariants:(NSArray<NSString *> *) additionalInformationVariants selectionSummaryVariants:(NSArray<NSString *> *) selectionSummaryVariants;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized route choice.
 

@@ -25,7 +25,7 @@ func CMTimeCodeFormatDescriptionGetTimeCodeFlags(_ desc: CMTimeCodeFormatDescrip
 extern uint32_t CMTimeCodeFormatDescriptionGetTimeCodeFlags(CMTimeCodeFormatDescriptionRef desc);
 ```
 
-#### Discussion
+## Discussion
 
 For possible time code flags see [Time Code Flags](./time-code-flags.md).
 

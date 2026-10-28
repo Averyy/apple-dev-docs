@@ -15,7 +15,7 @@ Abstract class for all work-loop event sources.
 class IOEventSource : OSObject
 ```
 
-#### Overview
+## Overview
 
 The IOEventSource declares the abstract super class that all event sources must inherit from if an IOWorkLoop is to receive events from them.
 

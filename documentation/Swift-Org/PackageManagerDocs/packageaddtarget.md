@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Add a new target to the manifest.
 
-#### Overview
+## Overview
 
 ```
 package add-target [--package-path=<package-path>]

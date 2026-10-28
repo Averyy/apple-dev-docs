@@ -25,7 +25,7 @@ func CFStringGetLength(_ theString: CFString!) -> CFIndex
 extern CFIndex CFStringGetLength(CFStringRef theString);
 ```
 
-#### Return Value
+## Return Value
 
 The number (in terms of UTF-16 code pairs) of characters stored in `theString`.
 

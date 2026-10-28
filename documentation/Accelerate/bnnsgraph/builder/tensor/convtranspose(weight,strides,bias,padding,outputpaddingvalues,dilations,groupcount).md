@@ -23,7 +23,7 @@ func convTranspose(weight: some BNNSGraph.Builder.OperationParameter<T>, strides
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This operation assumes the source tensor is in  `(N, C, spatial dimensions...)` format, where the number of spatial dimensions is either `1` or `2`.
 

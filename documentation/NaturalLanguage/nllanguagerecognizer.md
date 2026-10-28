@@ -29,7 +29,7 @@ class NLLanguageRecognizer
 
 - [Identifying the language in text](./identifying-the-language-in-text.md)
 
-#### Overview
+## Overview
 
 An [`NLLanguageRecognizer`](./nllanguagerecognizer.md) object automatically detects the language of a piece of text. It performs language identification by:
 

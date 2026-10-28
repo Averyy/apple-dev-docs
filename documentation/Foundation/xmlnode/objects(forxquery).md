@@ -20,7 +20,7 @@ func objects(forXQuery xquery: String) throws -> [Any]
 - (NSArray *) objectsForXQuery:(NSString *) xquery error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver acts as the context item for the query (”.”).  If the receiver has been changed after parsing to have multiple adjacent text nodes, you should invoke the `NSXMLElement` method [`normalizeAdjacentTextNodesPreservingCDATA(_:)`](../xmlelement/normalizeadjacenttextnodespreservingcdata%28_%29.md) (with an argument of [`false`](../../Swift/false.md)) to coalesce the text nodes before querying .This convenience method invokes [`objects(forXQuery:constants:)`](./objects%28forxquery,constants%29.md) with `nil` for the `constants` dictionary.
 

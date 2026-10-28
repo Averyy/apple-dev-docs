@@ -8,7 +8,7 @@ Generate a key pair and request an access token to authenticate with the Apple A
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 The Apple Ads Platform API supports the OAuth2 framework. With this framework, you can authenticate using credentials in exchange for an access token to make authenticated requests to the Apple Ads Platform API.
 
@@ -21,7 +21,7 @@ The implementation process:
 - Create a client secret.
 - Request an access token.
 
-#### Invite Users
+## Invite Users
 
 Account administrators invite users with API permissions using the following process:
 
@@ -33,7 +33,7 @@ Account administrators invite users with API permissions using the following pro
 6. In the User Access and Role section, select an API user role. For non-API roles, see [Invite users to your account](https://ads.apple.com/help/advanced/0011-invite-users-to-your-account/).
 7. Click Send Invite. The invited user receives an email with a secure code. The user signs into the secure Apple URL in the email and inputs the provided code, which activates the user’s account.
 
-#### Generate a Private Key
+## Generate a Private Key
 
 API users need to create a private key. If you’re using macOS or a Unix-like operating system, OpenSSL works natively. If you’re on a Windows platform, you need to download [OpenSSL](https://www.openssl.org).
 
@@ -58,7 +58,7 @@ LaZriCQnnqq4Vx+IscLFcrjBj+ulZzKlUQ==
 
 > ❗ **Important**: Always keep your private key secure and never share it. If your private key is compromised, you need to re-create a private key and client secret, and reupload it to your [Apple Ads](https://ads.apple.com) account.
 
-#### Extract a Public Key
+## Extract a Public Key
 
 To extract a public key from your persisted private key, use the following command:
 
@@ -73,7 +73,7 @@ This command takes two parameters:
 
 Open the `public-key.pem` file in a text editor and copy the public key, including the begin and end lines.
 
-#### Upload a Public Key
+## Upload a Public Key
 
 Follow these steps to upload your public key:
 
@@ -91,7 +91,7 @@ keyId a273d0d3-4d9e-458c-a173-0db8619ca7d7
 
 You can make edits to the public key by choosing Account Settings > API > Edit.
 
-#### Create a Client Secret
+## Create a Client Secret
 
 A *client secret* is a JSON web token ([JWT](https://tools.ietf.org/html/rfc7519)) that you create and sign using your private key. Your client secret authenticates token requests to the authorization server. Only you and the authorization server know the client secret.
 
@@ -200,7 +200,7 @@ a0k8cVVtnq-_93fYJIt9Z64CTvlH3uOeh7uaEv3nIxpXhvhkTySpUmY8e04TO09oTyZijiloByv3KFQ9
 2OOJ8L5N5_CeEc5p9LWjT1pcX8ATamOycZz2Q
 ```
 
-#### Request an Access Token
+## Request an Access Token
 
 The client credentials code grant authenticates with your credentials in exchange for an access token. To receive an access token, make a `POST` request from the token endpoint to the authorization server, as shown in the code below. To obtain a new access token after one expires, repeat the same process.
 

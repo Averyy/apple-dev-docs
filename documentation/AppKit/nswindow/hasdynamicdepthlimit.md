@@ -19,7 +19,7 @@ var hasDynamicDepthLimit: Bool { get }
 @property (readonly) BOOL hasDynamicDepthLimit;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the window has a dynamic depth limit; otherwise, [`false`](../../Swift/false.md). When the value of [`hasDynamicDepthLimit`](./hasdynamicdepthlimit.md) is [`false`](../../Swift/false.md), the window uses either its preset depth limit or the default depth limit. A different, and non-dynamic, depth limit can be set using the [`depthLimit`](./depthlimit.md) property.
 

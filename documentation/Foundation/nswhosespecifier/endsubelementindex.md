@@ -20,7 +20,7 @@ var endSubelementIndex: Int { get set }
 @property NSInteger endSubelementIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Used only if the end sub-element identifier is `NSIndexSubelement`.
 

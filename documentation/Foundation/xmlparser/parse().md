@@ -25,7 +25,7 @@ func parse() -> Bool
 - (BOOL) parse;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the parsing operation succeeds; [`false`](../../Swift/false.md) if an error occurs or if the parsing operation aborts.
 

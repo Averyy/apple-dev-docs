@@ -17,11 +17,11 @@ Disposes of a Secure Sockets Layer (SSL) session context.
 OSStatus SSLDisposeContext(SSLContextRef context);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 When you are completely finished with a secure session, you should dispose of the SSL session context in order to release the memory associated with the session.
 

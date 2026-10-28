@@ -21,7 +21,7 @@ A protocol that the system uses to locate previews at runtime.
 protocol PreviewRegistry
 ```
 
-#### Overview
+## Overview
 
 Preview macros make use of this protocol on your behalf. Don’t use it directly. Instead, use one of the preview macros, like [`Preview(_:body:)`](../SwiftUI/preview%28_,body%29.md).
 

@@ -24,7 +24,7 @@ init(cgColor color: CGColor)
 - (instancetype) initWithCGColor:(CGColorRef) color;
 ```
 
-#### Return Value
+## Return Value
 
  An initialized [`CIColor`](../cicolor.md) instance.
 

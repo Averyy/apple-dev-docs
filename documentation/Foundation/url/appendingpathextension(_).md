@@ -21,7 +21,7 @@ Returns a URL by appending the specified path extension to self.
 func appendingPathExtension(_ pathExtension: String) -> URL
 ```
 
-#### Discussion
+## Discussion
 
 If the URL has an empty path, such as `http://www.example.com`, this function returns an unchanged URL.
 

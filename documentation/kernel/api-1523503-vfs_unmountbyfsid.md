@@ -15,7 +15,7 @@ Find a filesystem by ID and unmount it.
 int vfs_unmountbyfsid(fsid_t *fsid, int flags, vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 0 for succcess, nonero for failure.
 

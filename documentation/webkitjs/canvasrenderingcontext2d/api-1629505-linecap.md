@@ -16,7 +16,7 @@ A string specifying the type of end cap to put on lines to be drawn using `lineT
 attribute DOMString lineCap;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are `butt` (no end cap), `round` (round end cap half a line width in radius), and `square` (square end cap half a line width thick).
 

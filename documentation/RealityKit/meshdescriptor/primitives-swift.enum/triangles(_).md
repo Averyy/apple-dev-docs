@@ -20,7 +20,7 @@ Defines one or more triangles with an integer array of indices.
 case triangles([UInt32])
 ```
 
-#### Discussion
+## Discussion
 
 Add three vertex index integers per triangle. For example, you can represent a single triangle with three indices.
 

@@ -21,7 +21,7 @@ A type that contains a snapshot of a monitor’s state information.
 struct State
 ```
 
-#### Overview
+## Overview
 
 Use this type to get more detailed information about the state of the app extensions available to the host app. This type contains [`AppExtensionIdentity`](../../appextensionidentity.md) types for all currently available app extensions. It also contains information about how many disabled extensions are present on the system.
 

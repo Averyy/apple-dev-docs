@@ -16,7 +16,7 @@ Creates a new view and pairs it with the specified authentication context.
 @preconcurrency init(_ title: LocalizedStringResource, context: LAContext) where Label == Text
 ```
 
-#### Discussion
+## Discussion
 
 The authentication is controlled using the provided authentication context. When `evaluatePolicy` or `evaluateAccessControl` is called on this context, the UI will be presented using this view rather than using the standard authentication alert.
 

@@ -22,7 +22,7 @@ var embeddedThumbnailDimensions: CMVideoDimensions { get }
 @property (readonly) CMVideoDimensions embeddedThumbnailDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`embeddedThumbnailPhotoFormat`](../avcapturephotosettings/embeddedthumbnailphotoformat.md) property in your photo settings object to request delivery of a thumbnail image alongside the main photo output from the capture. When you request a thumbnail, the photo output chooses dimensions that best match your requested size while preserving the aspect ratio of the captured photo. Aspect ratio is determined by capture format and by device orientation at the moment of capture.
 

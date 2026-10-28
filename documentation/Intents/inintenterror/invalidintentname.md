@@ -21,7 +21,7 @@ The extension declared support for a nonexistent intent.
 static var invalidIntentName: INIntentError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Check your extension’s `Info.plist` file to make sure all intent names are spelled correctly.
 

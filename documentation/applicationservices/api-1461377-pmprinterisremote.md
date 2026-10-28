@@ -19,11 +19,11 @@ func PMPrinterIsRemote(_ printer: PMPrinter, _ isRemoteP: UnsafeMutablePointer<D
 OSStatus PMPrinterIsRemote(PMPrinter printer, Boolean *isRemoteP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 If this function returns `true`, the printer is hosted by a remote print server and the printer can be considered a shared printer.
 

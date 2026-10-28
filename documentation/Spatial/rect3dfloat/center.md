@@ -23,7 +23,7 @@ var center: Point3DFloat { get }
 static SPPoint3DFloat SPRect3DFloatGetCenter(SPRect3DFloat rect);
 ```
 
-#### Discussion
+## Discussion
 
 Returns a point that represents the center of the rectangle.
 

@@ -24,7 +24,7 @@ class WKWebViewConfiguration
 @interface WKWebViewConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`WKWebViewConfiguration`](./wkwebviewconfiguration.md) object provides information about how to configure a [`WKWebView`](./wkwebview.md) object. Use your configuration object to specify:
 

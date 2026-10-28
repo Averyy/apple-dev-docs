@@ -12,11 +12,11 @@ OSMetaClassBase * metaCast(
  const OSSymbol *toMeta) const;
 ```
 
-#### Return Value
+## Return Value
 
 `this` if the object is derived from the class named by `toMeta`, otherwise `NULL`.
 
-#### Overview
+## Overview
 
 It is far more convenient to use OSDynamicCast.
 

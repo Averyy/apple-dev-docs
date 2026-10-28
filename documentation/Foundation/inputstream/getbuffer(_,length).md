@@ -25,11 +25,11 @@ func getBuffer(_ buffer: UnsafeMutablePointer<UnsafeMutablePointer<UInt8>?>, len
 - (BOOL) getBuffer:(uint8_t **) buffer length:(NSUInteger *) len;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the buffer is available, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Subclasses of `NSInputStream` may return [`false`](../../Swift/false.md) if this operation is not appropriate for the stream type.
 

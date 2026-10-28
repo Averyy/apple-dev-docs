@@ -18,7 +18,7 @@ Returns a Boolean value indicating whether two values are equal.
 static func == (lhs: AssignableDocument.QuestionBox, rhs: AssignableDocument.QuestionBox) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value indicating whether two values are equal.
 

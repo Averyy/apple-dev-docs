@@ -20,7 +20,7 @@ optional func browser(_ browser: NSBrowser, canDragRowsWith rowIndexes: IndexSet
 - (BOOL) browser:(NSBrowser *) browser canDragRowsWithIndexes:(NSIndexSet *) rowIndexes inColumn:(NSInteger) column withEvent:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow the drag operation; [`false`](../../Swift/false.md) to disallow it.
 

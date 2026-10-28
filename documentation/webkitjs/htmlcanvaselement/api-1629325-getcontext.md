@@ -19,11 +19,11 @@ RenderingContext? getContext(
 );
 ```
 
-#### Return Value
+## Return Value
 
 The context object. Currently, always a `CanvasRenderingContext2D` object.
 
-#### Discussion
+## Discussion
 
  Use the `getContext` method to obtain a drawing context for the canvas. All drawing on the canvas is done using the methods and properties of the context.
 

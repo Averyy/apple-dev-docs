@@ -19,11 +19,11 @@ init(name: NSPasteboard.Name)
 + (NSPasteboard *) pasteboardWithName:(NSPasteboardName) name;
 ```
 
-#### Return Value
+## Return Value
 
 The pasteboard associated with the given name, or a new `NSPasteboard` object if the application does not yet have a pasteboard object for the specified name.
 
-#### Discussion
+## Discussion
 
 Other names can be assigned to create private pasteboards for other purposes.
 

@@ -14,7 +14,7 @@ struct IOUSBDeviceCapabilityDescriptorHeader {
 };
 ```
 
-#### Overview
+## Overview
 
 Header for a Device Capability Descriptor for a USB Device. .
 

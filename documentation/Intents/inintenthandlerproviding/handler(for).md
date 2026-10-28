@@ -30,11 +30,11 @@ func handler(for intent: INIntent) -> Any?
 
 - [Dispatching intents to handlers](../../SiriKit/dispatching-intents-to-handlers.md)
 
-#### Return Value
+## Return Value
 
 The object capable of handling the specified intent, or `nil` if your app doesn’t handle the intent. Return an object that conforms to the protocol for handling intents of the same type as the provided `intent`.
 
-#### Discussion
+## Discussion
 
 This method acts as a dispatcher, mapping incoming intents to the object capable of handling them. In your implementation, check the `intent` parameter’s type and return an object capable of handling that type. As SiriKit invokes this method on an arbitrary queue, limit your implementation to just resolving the handler, and dispatch additional work to an alternate queue.
 

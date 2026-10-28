@@ -19,11 +19,11 @@ func CopyPhonemesFromText(_ chan: SpeechChannel, _ text: CFString, _ phonemes: U
 OSErr CopyPhonemesFromText(SpeechChannel chan, CFStringRef text, CFStringRef  _Nullable *phonemes);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `CopyPhonemesFromText` function is the Core Foundation-based equivalent of the [`TextToPhonemes`](./api-1552235-texttophonemes.md) function.
 

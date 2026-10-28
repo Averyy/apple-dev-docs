@@ -21,7 +21,7 @@ Returns the remainder of dividing the first value by the second.
 static func % (lhs: Int32, rhs: Int32) -> Int32
 ```
 
-#### Discussion
+## Discussion
 
 The result of the remainder operator (`%`) has the same sign as `lhs` and has a magnitude less than `rhs.magnitude`.
 

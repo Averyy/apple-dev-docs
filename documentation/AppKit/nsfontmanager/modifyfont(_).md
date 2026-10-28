@@ -19,7 +19,7 @@ func modifyFont(_ sender: Any?)
 - (void) modifyFont:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the action message is [`changeFont:`](../../ObjectiveC/nsobject-swift.class/changefont_.md). This action method causes the receiver to send its action message up the responder chain.
 

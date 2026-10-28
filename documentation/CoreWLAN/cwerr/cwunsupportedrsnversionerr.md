@@ -17,7 +17,7 @@ case cwUnsupportedRSNVersionErr
 kCWUnsupportedRSNVersionErr
 ```
 
-#### Discussion
+## Discussion
 
 Invalid WPA/WPA2 version specified.
 

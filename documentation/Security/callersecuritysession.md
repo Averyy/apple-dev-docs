@@ -25,7 +25,7 @@ var callerSecuritySession: SecuritySessionId { get }
 callerSecuritySession
 ```
 
-#### Discussion
+## Discussion
 
 When you provide this value as the `session` input to the [`SessionGetInfo(_:_:_:)`](./sessiongetinfo%28_,_,_%29.md) function, the function will return the actual session ID via the `sessionId` output.
 

@@ -12,7 +12,7 @@ virtual bool serialize(
  OSSerialize *s) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns false if unable to serialize database, most likely due to memory shortage.
 

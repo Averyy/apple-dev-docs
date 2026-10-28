@@ -20,7 +20,7 @@ class NSGestureRecognizer
 @interface NSGestureRecognizer : NSObject
 ```
 
-#### Overview
+## Overview
 
 A gesture recognizer might recognize a single click, a click and drag, or a sequence of events that imply rotation. You do not create instances of this class directly. This class is an abstract base class that defines the common behavior for all gesture recognizers. When using a gesture recognizer in your app, create an instance of one of the concrete subclasses.
 
@@ -56,7 +56,7 @@ func handleGesture(gestureRecognizer: NSGestureRecognizer) { }
 
 When your code needs additional information about the particulars of a gesture, define your action method to include the gesture recognizer parameter. You almost always want the gesture recognizer object when handling continuous gestures. For example, for a rotation gesture, you would use the gesture recognizer object to get the updated rotation value. You can also use the gesture recognizer object to get the location of where the gesture occurred.
 
-##### State Transitions
+### State Transitions
 
 Gesture recognizers operate within a predefined state machine, transitioning from state to state as they handle events. All gesture recognizers begin in the Possible ([`NSGestureRecognizer.State.possible`](./nsgesturerecognizer/state-swift.enum/possible.md)) state, but the possible transitions differ for continuous and discrete gestures.
 
@@ -71,7 +71,7 @@ The Changed state is optional and may occur multiple times before the Cancelled 
 
 For a list of possible states, see the constants in [`NSGestureRecognizer.State`](./nsgesturerecognizer/state-swift.enum.md).
 
-##### Subclassing Notes
+### Subclassing Notes
 
 You may create a subclass of `NSGestureRecognizer` that recognizes a distinctive gesture—for example, a “check mark” gesture. A custom gesture recognizer implements any appropriate event-related methods to detect its gesture along with a few other methods for managing state information.
 
@@ -79,7 +79,7 @@ All gesture recognizers must update the value in the state property at appropria
 
 > **Note**:  [`NSGestureRecognizer`](./nsgesturerecognizer.md) does not support handing off event tracking to other non-gesture recognizer mechanisms (for example drag and drop and pop-up menus).
 
-###### Methods to Override
+#### Methods to Override
 
 When creating your own gesture recognizer subclass:
 
@@ -88,7 +88,7 @@ When creating your own gesture recognizer subclass:
 
 AppKit waits for a mouse-down event, magnify event, or rotation event to occur before starting the gesture recognition process. A gesture recognizer that used only key-down events to recognize its gesture would not have its [`keyDown(with:)`](./nsgesturerecognizer/keydown%28with%29.md) method called until a mouse-down, magnify, or rotation event started the recognition process.
 
-###### Alternatives to Subclassing
+#### Alternatives to Subclassing
 
 The `NSGestureRecognizer` class defines the common behaviors that can be configured for all concrete gesture recognizers. It also supports a delegate—an object that adopts the [`NSGestureRecognizerDelegate`](./nsgesturerecognizerdelegate.md) protocol—for handling finer-grained customization of some behaviors without the need for subclassing. For example, you can use the delegate to create dependencies between specific gesture recognizer objects.
 

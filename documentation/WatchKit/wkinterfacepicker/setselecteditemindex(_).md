@@ -19,7 +19,7 @@ func setSelectedItemIndex(_ itemIndex: Int)
 - (void) setSelectedItemIndex:(NSInteger) itemIndex;
 ```
 
-#### Discussion
+## Discussion
 
 If the value in `itemIndex` exceeds the number of items in the array, the picker selects the last item. If `itemIndex` is negative, the picker selects the first item in the array.
 

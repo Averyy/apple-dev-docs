@@ -5,7 +5,7 @@
 
 Describe the data your app or third-party SDK collects and the required reasons APIs it uses.
 
-#### Overview
+## Overview
 
 Apps and third-party SDKs — distributed as XCFrameworks, Swift packages, or Xcode projects — can contain a privacy manifest file, named `PrivacyInfo.xcprivacy`. The privacy manifest is a property list that records the following information:
 
@@ -18,7 +18,7 @@ For each type of data your app or third-party SDK collects and category of requi
 
 For information on editing the privacy manifest file, see [Editing property list files](../Xcode/editing-property-list-files.md).
 
-##### Create a privacy manifest
+### Create a privacy manifest
 
 To add the privacy manifest to your app or third-party SDK in Xcode, follow these steps:
 

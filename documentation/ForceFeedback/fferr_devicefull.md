@@ -18,7 +18,7 @@ var FFERR_DEVICEFULL: Int { get }
 #define FFERR_DEVICEFULL
 ```
 
-#### Discussion
+## Discussion
 
 The device is full.
 

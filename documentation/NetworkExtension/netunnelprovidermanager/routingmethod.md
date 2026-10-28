@@ -23,7 +23,7 @@ var routingMethod: NETunnelProviderRoutingMethod { get }
 @property (readonly) NETunnelProviderRoutingMethod routingMethod;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`NETunnelProviderRoutingMethod.destinationIP`](../netunnelproviderroutingmethod/destinationip.md).
 

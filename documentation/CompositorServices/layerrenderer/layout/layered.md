@@ -24,7 +24,7 @@ cp_layer_renderer_layout_layered
 
 - [Drawing fully immersive content using Metal](../../drawing-fully-immersive-content-using-metal.md)
 
-#### Discussion
+## Discussion
 
 The layout uses a single texture to store the content for all rendered views. The type of the texture is [`MTLTextureType.type2DArray`](../../../Metal/mtltexturetype/type2darray.md). The texture map’s slice index indicates which array slot contains each view’s content.
 

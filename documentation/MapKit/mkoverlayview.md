@@ -23,7 +23,7 @@ class MKOverlayView
 @interface MKOverlayView : UIView
 ```
 
-#### Overview
+## Overview
 
 An overlay view provides the visual representation of an overlay object—that is, an object that conforms to the [`MKOverlay`](./mkoverlay.md) protocol. This class defines the drawing infrastructure used by the map view but does not do any actual drawing. Subclasses are expected to override the [`drawMapRect:zoomScale:inContext:`](./mkoverlayview/drawmaprect_zoomscale_incontext_.md) method in order to draw the contents of the overlay view.
 
@@ -31,7 +31,7 @@ The Map Kit framework provides several concrete instances of overlay views. Spec
 
 In iOS 7 and later, use the [`MKOverlayRenderer`](./mkoverlayrenderer.md) class to display overlays instead.
 
-##### Subclassing notes
+### Subclassing notes
 
 You can subclass `MKOverlayView` to create overlays based on custom shapes and content. The only method subclasses are expected to override is the [`drawMapRect:zoomScale:inContext:`](./mkoverlayview/drawmaprect_zoomscale_incontext_.md) method. However, if your class contains content that may not be ready for drawing right away, you should also override the [`canDrawMapRect:zoomScale:`](./mkoverlayview/candrawmaprect_zoomscale_.md) method and use it to report when your class is ready and able to draw.
 

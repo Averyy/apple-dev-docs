@@ -20,7 +20,7 @@ typealias OSLAdjustMarksUPP = OSLAdjustMarksProcPtr
 typedef OSLAdjustMarksProcPtr OSLAdjustMarksUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For a description of an adjust marks callback function, see [`OSLAdjustMarksProcPtr`](./osladjustmarksprocptr.md). 
 

@@ -21,7 +21,7 @@ optional func scribbleInteractionWillBeginWriting(_ interaction: UIScribbleInter
 - (void) scribbleInteractionWillBeginWriting:(UIScribbleInteraction *) interaction;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to hide custom placeholders or other UI elements that can interfere with writing.
 

@@ -16,11 +16,11 @@ Create a requirement that the peer has the specified entitlement
 static func hasEntitlement(_ entitlement: String) -> XPCPeerRequirement
 ```
 
-#### Return Value
+## Return Value
 
 A `XPCPeerRequirement` object representing the requirement
 
-#### Discussion
+## Discussion
 
 - entitlement: The entitlement to check.
 

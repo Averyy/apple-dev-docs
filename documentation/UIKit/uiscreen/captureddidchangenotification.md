@@ -23,7 +23,7 @@ class let capturedDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UIScreenCapturedDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of a screen can be recorded, mirrored, sent over AirPlay, or otherwise cloned to another destination. UIKit sends this notification when the capture status of the screen changes.
 

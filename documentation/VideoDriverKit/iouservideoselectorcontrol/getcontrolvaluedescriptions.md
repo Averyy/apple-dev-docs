@@ -15,11 +15,11 @@ Gets the selector values for the control.
 size_t GetControlValueDescriptions(IOUserVideoSelectorValueDescription *out_control_value_descriptions, size_t in_num_value_descriptions);
 ```
 
-#### Return Value
+## Return Value
 
 Size_t of number of values written to out_control_values.
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the selector control value description.
 

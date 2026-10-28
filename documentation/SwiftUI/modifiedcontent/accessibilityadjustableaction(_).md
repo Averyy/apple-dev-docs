@@ -24,7 +24,7 @@ func accessibilityAdjustableAction(_ handler: @escaping (AccessibilityAdjustment
 
 Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
-#### Discussion
+## Discussion
 
 For example, this is how an adjustable action to navigate through pages could be added to a view.
 

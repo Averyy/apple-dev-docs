@@ -17,7 +17,7 @@ Obtain a new CPU and GPU stream scoped to the block and inherited through `Tasks
 static func withNewDefaultStream<R>(device: Device? = nil, _ body: () throws -> R) rethrows -> R
 ```
 
-#### Discussion
+## Discussion
 
 For example you can get a new stream on the current device:
 

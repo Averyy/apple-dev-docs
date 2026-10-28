@@ -17,7 +17,7 @@ The logging system is a global facility where you can configure the default logg
 enum LoggingSystem
 ```
 
-#### Overview
+## Overview
 
 `LoggingSystem` is set up just once in a given program to set up the desired logging backend implementation. The default behavior, if you don’t define otherwise, sets the [`LogHandler`](./loghandler.md) to use a [`StreamLogHandler`](./streamloghandler.md) that presents its output to `STDOUT`.
 

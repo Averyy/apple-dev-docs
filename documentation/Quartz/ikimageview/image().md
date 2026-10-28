@@ -19,7 +19,7 @@ func image() -> Unmanaged<CGImage>!
 - (CGImageRef) image;
 ```
 
-#### Return Value
+## Return Value
 
 The image.
 

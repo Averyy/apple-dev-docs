@@ -21,7 +21,7 @@ Creates a file path from a URL
 init?(_ url: URL)
 ```
 
-#### Discussion
+## Discussion
 
 The result is nil if `url` doesn’t refer to a local file.
 

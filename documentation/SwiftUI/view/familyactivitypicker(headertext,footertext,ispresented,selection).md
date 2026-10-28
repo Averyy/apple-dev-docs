@@ -17,7 +17,7 @@ Presents an activity picker view as a sheet.
 @preconcurrency func familyActivityPicker(headerText: String? = nil, footerText: String? = nil, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this view modifier to present a `FamilyControls/FamilyActivityPicker`.
 

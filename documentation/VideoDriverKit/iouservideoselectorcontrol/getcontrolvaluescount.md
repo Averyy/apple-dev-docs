@@ -15,7 +15,7 @@ Gets the number of available selector control values.
 size_t GetControlValuesCount();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the selector control value count.
 

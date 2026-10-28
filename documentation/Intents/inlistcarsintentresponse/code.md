@@ -31,7 +31,7 @@ var code: INListCarsIntentResponseCode { get }
 @property (atomic, readonly) INListCarsIntentResponseCode code;
 ```
 
-#### Discussion
+## Discussion
 
 Initializing the response sets the value of this property. You can’t change it.
 

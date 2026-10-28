@@ -24,7 +24,7 @@ let kCIAttributeFilterName: String
 extern NSString * const kCIAttributeFilterName;
 ```
 
-#### Discussion
+## Discussion
 
 The filter name, specified as an [`NSString`](../Foundation/nsstring.md) object.
 

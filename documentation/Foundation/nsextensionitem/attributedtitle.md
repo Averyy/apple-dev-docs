@@ -34,7 +34,7 @@ var attributedTitle: NSAttributedString? { get set }
 @property (atomic, copy, nullable) NSAttributedString * attributedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Alternatively, you can set attributed content in the [`userInfo`](./userinfo.md) dictionary using the [`NSExtensionItemAttributedTitleKey`](../nsextensionitemattributedtitlekey.md) key. However, setting the [`userInfo`](./userinfo.md) dictionary after setting [`attributedTitle`](./attributedtitle.md) overrides this property.
 

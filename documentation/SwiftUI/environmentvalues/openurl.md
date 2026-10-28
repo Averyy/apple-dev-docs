@@ -22,7 +22,7 @@ An action that opens a URL.
 @preconcurrency var openURL: OpenURLAction { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Read this environment value to get an [`OpenURLAction`](../openurlaction.md) instance for a given [`Environment`](../environment.md). Call the instance to open a URL. You call the instance directly because it defines a [`callAsFunction(_:)`](../openurlaction/callasfunction%28_%29.md) method that Swift calls when you call the instance.
 

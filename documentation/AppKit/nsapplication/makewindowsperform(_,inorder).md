@@ -21,7 +21,7 @@ func makeWindowsPerform(_ selector: Selector, inOrder: Bool) -> NSWindow?
 - (NSWindow *) makeWindowsPerform:(SEL) selector inOrder:(BOOL) inOrder;
 ```
 
-#### Return Value
+## Return Value
 
 The window that returned a non-`nil` value or `nil` if all windows returned nil from `aSelector`.
 

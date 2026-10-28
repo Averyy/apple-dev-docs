@@ -30,7 +30,7 @@ class NLTagger
 - [Identifying people, places, and organizations](./identifying-people-places-and-organizations.md)
 - [Identifying parts of speech](./identifying-parts-of-speech.md)
 
-#### Overview
+## Overview
 
 [`NLTagger`](./nltagger.md) supports many different languages and scripts. Use it to segment natural language text into paragraph, sentence, or word units and to tag each unit with information like part of speech, lexical class, lemma, script, and language.
 

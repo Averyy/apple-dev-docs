@@ -19,7 +19,7 @@ var constantAttenuation: Float
 float constantAttenuation;
 ```
 
-#### Discussion
+## Discussion
 
 Lighting falloff is governed by an equation that contains constant, linear, and quadratic terms.
 

@@ -15,11 +15,11 @@ Creates a preemptive task.
 OSStatus MPCreateTask(TaskProc entryPoint, void *parameter, ByteCount stackSize, MPQueueID notifyQueue, void *terminationParameter1, void *terminationParameter2, MPTaskOptions options, MPTaskID *task);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965). If `MPCreateTask` could not create the task because some critical resource was not available, the function returns `kMPInsufficientResourcesErr`. Usually this is due to lack of memory to allocate the internal data structures associated with the task or the stack. The function also returns `kMPInsufficientResourcesErr` if any reserved option bits are set.
 
-#### Discussion
+## Discussion
 
 Tasks are created in the unblocked state, ready for execution. A task can terminate in the following ways:
 

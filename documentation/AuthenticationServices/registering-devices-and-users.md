@@ -5,7 +5,7 @@
 
 Implement device and user registration.
 
-#### Overview
+## Overview
 
 Once you develop a Single Sign-on (SSO) extension, there’s a sequence of steps that it follows to register devices and users with an identity provider (IdP). Platform SSO calls the extension to perform these steps. First, the extension registers a device, and then it registers users on that device.
 
@@ -13,7 +13,7 @@ Your SSO extension needs to implement the [`ASAuthorizationProviderExtensionRegi
 
 For more information, see [Creating extensions that support Platform SSO](./creating-extensions-that-support-platform-sso.md).
 
-##### Register a device
+### Register a device
 
 An SSO extension registers a device using [`beginDeviceRegistration(loginManager:options:completion:)`](./asauthorizationproviderextensionregistrationhandler/begindeviceregistration%28loginmanager,options,completion%29.md). The extension needs to:
 
@@ -33,7 +33,7 @@ When complete, the SSO extension needs to call the completion handler with an [`
 
 For more information on registering devices and users, see [`ASAuthorizationProviderExtensionRegistrationHandler`](./asauthorizationproviderextensionregistrationhandler.md).
 
-##### Register a user
+### Register a user
 
 After the device registration completes successfully with a [`ASAuthorizationProviderExtensionRegistrationResult.success`](./asauthorizationproviderextensionregistrationresult/success.md) result, the SSO extension initiates user registration through [`beginUserRegistration(loginManager:userName:method:options:completion:)`](./asauthorizationproviderextensionregistrationhandler/beginuserregistration%28loginmanager,username,method,options,completion%29.md). All users on a device use the login configuration, including when the system creates new users during login. You can set user-specific login configuration values that the system supports during user registration by creating an instance of [`ASAuthorizationProviderExtensionUserLoginConfiguration`](./asauthorizationproviderextensionuserloginconfiguration.md) and save these values using [`saveUserLoginConfiguration(_:)`](./asauthorizationproviderextensionloginmanager/saveuserloginconfiguration%28_%29.md).
 

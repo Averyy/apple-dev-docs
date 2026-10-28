@@ -12,13 +12,13 @@ Receive up-to-date financial data in your app and its extensions by adding a bac
 - Mac Catalyst 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample code project shows you how to create a background delivery extension with [FinanceKit](./FinanceKit.md). With the extension, you can receive notifications when data changes in [FinanceStore](./financestore.md) and handle it outside of your app’s life cycle. This enables your app and its extensions to access up-to-date information without relying on the app itself.
 
 > **Note**: This sample code project is associated with WWDC25 session 201: [What’s new in Apple Pay](https://developer.apple.com/videos/play/wwdc2025/201).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run the sample app, you need an entitlement from Apple, and to complete the following:
 

@@ -22,11 +22,11 @@ func copy(with zone: NSZone? = nil, device: (any MTLDevice)?) -> Self
 - (instancetype) copyWithZone:(NSZone *) zone device:(id<MTLDevice>) device;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a copy of this MPSKernel. This will fail, returning nil if the device is not supported. Devices must be MTLFeatureSet_iOS_GPUFamily2_v1 or later.
 
-#### Discussion
+## Discussion
 
 Make a copy of this MPSFunction for a new device
 

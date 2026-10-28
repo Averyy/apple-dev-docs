@@ -24,7 +24,7 @@ var sendLevel: Double { get set }
 @property (nonatomic) double sendLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The framework clamps the value to the range between `0` and `1`, where `0` silences the audio and `1` passes the audio through to the output at full volume. The default value is `1`.
 

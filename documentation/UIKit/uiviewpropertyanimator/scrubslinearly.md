@@ -23,7 +23,7 @@ var scrubsLinearly: Bool { get set }
 @property (nonatomic) BOOL scrubsLinearly;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md), which causes the animator to use a linear timing function during scrubbing. Setting the property to [`false`](../../Swift/false.md) causes the animator to use its specified timing curve.
 

@@ -22,7 +22,7 @@ var lensAperture: Float { get }
 @property (nonatomic, readonly) float lensAperture;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a float indicating the size (the `f` number) of the lens diaphragm.
 

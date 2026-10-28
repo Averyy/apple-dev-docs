@@ -6,8 +6,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ne
 
 # mlx.core.new_thread_unsafe_stream
 
-**new_thread_unsafe_stream(*device: Device | DeviceType*) → [Stream](stream_class.md#mlx.core.Stream)**
-: Make a new stream that can be used in any thread.
+```python
+new_thread_unsafe_stream(device: Device | DeviceType) → Stream
+```
+
+Make a new stream that can be used in any thread.
+
 Unlike [new_stream()](mlx.core.new_stream.md#mlx.core.new_stream) which can only work on the thread of creation,
 streams created by this API can be passed to and evaluated anywhere, but
 note that currently all nodes in a graph must be evaluated in sequence

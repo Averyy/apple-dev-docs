@@ -13,11 +13,11 @@ virtual UInt64 getPixelFormatsForDisplayMode(
  IOIndexdepth ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 Return zero.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses must implement this method to return zero.
 

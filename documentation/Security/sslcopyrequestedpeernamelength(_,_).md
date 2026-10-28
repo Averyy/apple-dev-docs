@@ -24,7 +24,7 @@ func SSLCopyRequestedPeerNameLength(_ ctx: SSLContext, _ peerNameLen: UnsafeMuta
 OSStatus SSLCopyRequestedPeerNameLength(SSLContextRef ctx, size_t *peerNameLen);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 

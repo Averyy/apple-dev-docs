@@ -21,7 +21,7 @@ An invisible 3D shape that detects when objects enter or exit a given region of 
 @preconcurrency class TriggerVolume
 ```
 
-#### Overview
+## Overview
 
 A trigger volume is an entity that can participate in collisions because it has a [`CollisionComponent`](./collisioncomponent.md). You use a trigger volume as a sensor that indicates when another collision-capable entity, like a [`ModelEntity`](./modelentity.md), enters the region of space occupied by the trigger volume. You can use the generated [`CollisionEvents`](./collisionevents.md) between the trigger volume and the other entity to trigger an action, like indicating to the user that a projectile hit its target.
 

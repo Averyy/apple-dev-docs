@@ -17,7 +17,7 @@ General array indexing.
 subscript(indices: [any MLXArrayIndex], stream stream: StreamOrDevice = .default) -> MLXArray { get set }
 ```
 
-#### Overview
+## Overview
 
 See [`subscript(_:stream:)`](./subscript%28_,stream%29-375a0.md)
 

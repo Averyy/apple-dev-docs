@@ -16,7 +16,7 @@ A property of IONetworkData objects.
 #define kIONetworkDataSize
 ```
 
-#### Discussion
+## Discussion
 
 The kIONetworkDataSize property is an OSNumber that describes the size of the data buffer of an IONetworkData object.
 

@@ -19,7 +19,7 @@ func reply(toOpenOrPrint reply: NSApplication.DelegateReply)
 - (void) replyToOpenOrPrint:(NSApplicationDelegateReply) reply;
 ```
 
-#### Discussion
+## Discussion
 
 Delegates should invoke this method if an error is encountered in the [`application(_:openFiles:)`](../nsapplicationdelegate/application%28_,openfiles%29.md) or [`application(_:printFiles:withSettings:showPrintPanels:)`](../nsapplicationdelegate/application%28_,printfiles,withsettings,showprintpanels%29.md) delegate methods.
 

@@ -30,7 +30,7 @@ class AVSampleBufferRenderSynchronizer
 - [Implementing flexible enhanced buffering for your content](./implementing-flexible-enhanced-buffering-for-your-content.md)
 - [Supporting AirPlay in your app](./supporting-airplay-in-your-app.md)
 
-#### Overview
+## Overview
 
 This class synchronizes multiple objects that conform to [`AVQueuedSampleBufferRendering`](./avqueuedsamplebufferrendering.md) to a single timeline.
 

@@ -25,7 +25,7 @@ Generates the probabilities of possible languages for the processed text.
 
 - [Identifying the language in text](../identifying-the-language-in-text.md)
 
-#### Return Value
+## Return Value
 
 A dictionary mapping languages with their probabilities, up to `maxHypotheses` languages.
 

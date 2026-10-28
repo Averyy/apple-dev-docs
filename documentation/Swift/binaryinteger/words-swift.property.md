@@ -22,7 +22,7 @@ A collection containing the words of this value’s binary representation, in or
 var words: Self.Words { get }
 ```
 
-#### Discussion
+## Discussion
 
 Negative values are returned in two’s complement representation, regardless of the type’s underlying implementation.
 

@@ -5,11 +5,11 @@
 
 Learn about important changes to Foundation.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Foundation](../Foundation/Foundation.md).
 
-#### June 2025
+## June 2025
 
 - Post and observe concurrency-safe notifications with new features in [`NotificationCenter`](../Foundation/notificationcenter.md) that support Swift-friendly “message” types. Use [`NotificationCenter.MainActorMessage`](../Foundation/notificationcenter/mainactormessage.md) for notification messages bound to the [`MainActor`](../Swift/mainactor.md) and  [`NotificationCenter.AsyncMessage`](../Foundation/notificationcenter/asyncmessage.md) for messages that are [`Sendable`](../Swift/sendable.md). Add an observer to one of these notification message types with the various `addObserver(of:for:using:)` methods in [`NotificationCenter`](../Foundation/notificationcenter.md). Many standard notifications in Foundation, UIKit, and AppKit now offer a message-based API, associating the message with an existing [`Notification.Name`](../Foundation/notification/name-swift.typealias.md). You can also associate a message with a new name for Swift-only notifications.
 - Simplify usage of [`UndoManager`](../Foundation/undomanager.md) on the main actor, now that the undo manager is marked with `@MainActor`. The undo manager also adds a [`setActionName(_:)`](../Foundation/undomanager/setactionname%28_%29-cci9.md) method that takes a [`LocalizedStringResource`](../Foundation/localizedstringresource.md). Use this with the [App Intents](../AppIntents/AppIntents.md) framework, which introduces a new [`UndoableIntent`](../AppIntents/undoableintent.md).
@@ -17,35 +17,35 @@ Browse notable changes in [Foundation](../Foundation/Foundation.md).
 - Get UTF-8 and UTF-16 views of an [`AttributedString`](../Foundation/attributedstring.md) with the [`utf8`](../Foundation/attributedstringprotocol/utf8.md) and [`utf16`](../Foundation/attributedstringprotocol/utf16.md) methods of [`AttributedStringProtocol`](../Foundation/attributedstringprotocol.md).
 - Access multiple ranges of an [`AttributedString`](../Foundation/attributedstring.md) with the new [`DiscontiguousAttributedSubstring`](../Foundation/discontiguousattributedsubstring.md) type. You can get this type from an attributed string with either a [`RangeSet`](../Swift/rangeset.md) of indices, or with the new [`AttributedTextSelection`](../SwiftUI/attributedtextselection.md) type.
 
-#### June 2024
+## June 2024
 
-##### Predicates
+### Predicates
 
 - Use `Regex` regular expressions in predicates to perform pattern matching. You can use either the Swift regex domain specific language or traditional regex literals.
 - Use the new `#Expression` macro when you want behavior similar to `#Predicate` but you need to return a type other than `Bool`.
 - Create compound predicates by writing a `Predicate` that evaluates another `Predicate`.
 
-##### Calendars
+### Calendars
 
 - Perform `Calendar` searches by calling `dates(byMatching:startingAt:in:matchingPolicy:repeatedTimePolicy:direction:)` with `DateComponent` values specifying what to search for, and receiving a `Sequence` of matching dates. You can also repeatedly add `DateComponent` values to a date with `dates(byAdding:startingAt:in:wrappingComponents:)` and receive a sequence. To add `Calendar.Component` values instead, use `dates(byAdding:value:startingAt:in:wrappingComponents:)`.
 
-##### Format styles
+### Format styles
 
 - Use the `DiscreteFormatStyle` protocol to format values that constantly change, but don’t necessarily change the formatted output on every update, such as time displays that truncate the seconds field. The following format style types conform to the new protocol: `Duration.UnitsFormatStyle`, `Duration.TimeFormatStyle`, `Date.FormatStyle`, `Date.FormatStyle.Attributed`, `Date.VerbatimFormatStyle`, `Date.VerbatimFormatStyle.Attributed`, `Date.ISO8601FormatStyle`, `Duration.UnitsFormatStyle.Attributed`, and `Duration.TimeFormatStyle.Attributed`.
 - Set new configuration options on `FormatStyle` to omit specific symbols from the output and suppress grouping of large time values (for example, in order to produce `10000:00` rather than `10,000:00`).
 - Use the `notation` modifier on currency format styles to specify a notation such as `compactName`, similar to how `notation` already works on numeric format styles.
 
-##### Undo manager
+### Undo manager
 
 - Provide custom information for undo actions by setting user info on `UndoManager`. The info can include things like a timestamp of the action’s creation or an icon that complements the action name.
 - Reveal the size of an undo manager’s current undo or redo stack with the properties `undoCount` and `redoCount`.
 
-##### Key-Value observing
+### Key-Value observing
 
 - Add a collection of shared observers to `Observable` objects that you can then add to multiple instance of the observable.
 - Observables now use ARC-style weak references to their observers, preventing crashes when observers deallocate without properly removing themselves.
 
-##### Collections
+### Collections
 
 - You can initialize an `IndexSet` from a Swift `RangeSet`, and vice versa.
 

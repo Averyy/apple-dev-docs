@@ -20,7 +20,7 @@ Creates and returns an image object initialized with the supplied image data.
 + (CIImage *) imageWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 An image object initialized with the supplied data, or `nil` if the method cannot create an image representation from the contents of the supplied data object.
 

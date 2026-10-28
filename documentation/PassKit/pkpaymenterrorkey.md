@@ -24,7 +24,7 @@ struct PKPaymentErrorKey
 typedef NSString * PKPaymentErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use payment error keys if you are creating a payment error without using one of the convenience methods in [`PKPaymentRequest`](./pkpaymentrequest.md) (such as [`paymentBillingAddressInvalidError(withKey:localizedDescription:)`](./pkpaymentrequest/paymentbillingaddressinvaliderror%28withkey,localizeddescription%29.md) or others).
 

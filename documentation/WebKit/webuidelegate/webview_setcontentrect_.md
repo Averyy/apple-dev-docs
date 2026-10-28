@@ -17,7 +17,7 @@ Sets the window’s content view frame to the specified content rectangle.
 - (void) webView:(WebView *) sender setContentRect:(NSRect) frame;
 ```
 
-#### Discussion
+## Discussion
 
 The content view is the highest accessible [`NSView`](../../AppKit/nsview.md) object in the view hierarchy displayed in the window. A web view invokes this method instead of setting the content view’s frame directly, allowing delegates to augment the behavior by, for example, avoiding auto-saving of the size.
 

@@ -22,7 +22,7 @@ var options: UIWindowScene.ActivationRequestOptions? { get set }
 @property (nonatomic, strong, nullable) UIWindowSceneActivationRequestOptions * options;
 ```
 
-#### Discussion
+## Discussion
 
 This property is optional. If you don’t specify options, the system requests a scene using the default options.
 

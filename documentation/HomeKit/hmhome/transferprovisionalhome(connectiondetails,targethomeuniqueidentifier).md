@@ -16,11 +16,11 @@ Transfers a temporary, provisional home to a person’s home hub.
 func transferProvisionalHome(connectionDetails: HMHome.ProvisionalHomeConnectionDetails, targetHomeUniqueIdentifier: UUID) async throws(HMHome.ProvisionalHomeTransferError) -> HMHome.ProvisionalHomeTransferResult
 ```
 
-#### Return Value
+## Return Value
 
 Transfer results for each accessory, allowing you to identify a partially successful transfer.
 
-#### Overview
+## Overview
 
 When you transfer a temporary home to a person’s home hub, HomeKit encodes a snapshot of all paired accessories, creates a secure channel with the connection details’ [`transferToken`](./provisionalhomeconnectiondetails/transfertoken.md), and uses the channel to send the snapshot to the home hub.
 

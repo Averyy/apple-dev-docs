@@ -20,7 +20,7 @@ func transform(_ aPoint: NSPoint) -> NSPoint
 - (NSPoint) transformPoint:(NSPoint) aPoint;
 ```
 
-#### Return Value
+## Return Value
 
 The resulting point after applying the receiver’s transformations.
 

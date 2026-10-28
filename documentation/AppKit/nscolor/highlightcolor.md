@@ -19,11 +19,11 @@ class var highlightColor: NSColor { get }
 @property (class, strong, readonly) NSColor * highlightColor;
 ```
 
-#### Return Value
+## Return Value
 
 The system color for the virtual light source on the screen.
 
-#### Discussion
+## Discussion
 
 This method is invoked by the [`highlight(withLevel:)`](./highlight%28withlevel%29.md) method. For more information, see [`NSColor`](../nscolor.md).
 

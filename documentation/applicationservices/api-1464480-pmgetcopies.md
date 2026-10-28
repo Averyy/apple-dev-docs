@@ -19,7 +19,7 @@ func PMGetCopies(_ printSettings: PMPrintSettings, _ copies: UnsafeMutablePointe
 OSStatus PMGetCopies(PMPrintSettings printSettings, UInt32 *copies);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007). 
 

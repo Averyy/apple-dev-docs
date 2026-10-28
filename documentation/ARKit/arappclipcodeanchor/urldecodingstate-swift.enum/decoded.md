@@ -20,7 +20,7 @@ case decoded
 ARAppClipCodeURLDecodingStateDecoded
 ```
 
-#### Discussion
+## Discussion
 
 The App Clip Code anchor’s [`url`](../url.md) is defined in this state.
 

@@ -23,7 +23,7 @@ var showsSelectionIndicator: Bool { get set }
 @property (nonatomic) BOOL showsSelectionIndicator;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of the property is [`true`](../../Swift/true.md), the picker view shows a clear overlay across the current row. The default value of this property is [`false`](../../Swift/false.md).
 

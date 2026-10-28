@@ -21,7 +21,7 @@ Returns a property list that represents an encoded version of the value you supp
 func encode<Value>(_ value: Value) throws -> Data where Value : Encodable
 ```
 
-#### Discussion
+## Discussion
 
 If there’s a problem encoding the value you supply, this method throws an error based on the type of problem:
 

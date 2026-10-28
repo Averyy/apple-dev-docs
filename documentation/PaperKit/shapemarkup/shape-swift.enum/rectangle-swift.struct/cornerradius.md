@@ -19,7 +19,7 @@ The radius of the rounded rectangle’s corners.
 var cornerRadius: CGFloat?
 ```
 
-#### Discussion
+## Discussion
 
 If `nil` the rectangle does not have a corner radius UI control point.
 

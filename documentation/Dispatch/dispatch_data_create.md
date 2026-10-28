@@ -21,15 +21,15 @@ Creates a new dispatch data object with the specified memory buffer.
 extern dispatch_data_tdispatch_data_create(const void *buffer, size_t size, dispatch_queue_t queue, dispatch_block_t destructor);
 ```
 
-#### Return Value
+## Return Value
 
 A new data object containing the desired data. This object is retained initially. It is your responsibility to release the data object when you are done using it.
 
-#### Discussion
+## Discussion
 
 If buffer is `NULL` or size is `0`, this function returns an empty dispatch object.
 
-#### Discussion
+## Discussion
 
 If you specify the default destructor using the [`DISPATCH_DATA_DESTRUCTOR_DEFAULT`](./dispatch_data_destructor_default.md) constant, this function creates a copy of the data in `buffer` and manages that data internally. If you specify any other value, this function stores a pointer to your buffer and leaves the responsibility of releasing that buffer to the destructor you provide.
 

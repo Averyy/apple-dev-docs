@@ -23,7 +23,7 @@ enum Style
 enum UITabBarItemAppearanceStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 A tab bar adjusts the layout of each item’s icon and title string based on the current trait environment and other factors.
 

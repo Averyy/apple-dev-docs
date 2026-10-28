@@ -25,11 +25,11 @@ func sparse_set_matrix_property(_ A: UnsafeMutableRawPointer!, _ pname: sparse_m
 sparse_status sparse_set_matrix_property(void *A, sparse_matrix_property pname);
 ```
 
-#### Return Value
+## Return Value
 
 [`SPARSE_SUCCESS`](./sparse_success.md) when property is successfully set, otherwise return [`SPARSE_CANNOT_SET_PROPERTY`](./sparse_cannot_set_property.md).
 
-#### Discussion
+## Discussion
 
 The matrix object must not have had values inserted, else [`SPARSE_CANNOT_SET_PROPERTY`](./sparse_cannot_set_property.md) is returned and the property is not set.Certain groups of properties are mutually exclusive and setting multiple values within a group is undefined.
 

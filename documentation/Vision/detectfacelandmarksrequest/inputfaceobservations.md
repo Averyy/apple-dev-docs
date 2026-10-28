@@ -21,7 +21,7 @@ An array of face-observation objects to process as part of the request.
 var inputFaceObservations: [FaceObservation]?
 ```
 
-#### Discussion
+## Discussion
 
 The default is `nil`. When `nil`, Vision first performs a [`DetectFaceRectanglesRequest`](../detectfacerectanglesrequest.md) and processes all faces detected.
 

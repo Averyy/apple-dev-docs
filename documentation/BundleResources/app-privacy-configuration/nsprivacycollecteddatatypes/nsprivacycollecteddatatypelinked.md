@@ -24,7 +24,7 @@ A Boolean that indicates whether your app or third-party SDK links this data typ
 
 - [Describing data use in privacy manifests](../../describing-data-use-in-privacy-manifests.md)
 
-#### Discussion
+## Discussion
 
 For more information, see Data linked to the user in [App privacy details on the App Store](https://developer.apple.com/app-store/app-privacy-details/#linked-data).
 

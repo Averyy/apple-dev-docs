@@ -20,7 +20,7 @@ The brightness threshold for bloom activation.
 var threshold: Float
 ```
 
-#### Discussion
+## Discussion
 
 Only pixels with luminance values above this threshold will contribute to the bloom effect. The value is typically in the range `[0.0, 1.x]`:
 

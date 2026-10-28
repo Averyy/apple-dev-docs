@@ -24,7 +24,7 @@ static let avDepthData: CIImageRepresentationOption
 extern CIImageRepresentationOption const kCIImageRepresentationAVDepthData;
 ```
 
-#### Discussion
+## Discussion
 
 `options` dictionary key for image export methods to represent data as [`AVDepthData`](../../AVFoundation/avdepthdata.md).
 

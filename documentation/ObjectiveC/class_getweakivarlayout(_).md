@@ -25,7 +25,7 @@ func class_getWeakIvarLayout(_ cls: AnyClass?) -> UnsafePointer<UInt8>?
 extern const uint8_t *class_getWeakIvarLayout(Class cls);
 ```
 
-#### Return Value
+## Return Value
 
 A description of the layout of the weak `Ivar`s for `cls`.
 

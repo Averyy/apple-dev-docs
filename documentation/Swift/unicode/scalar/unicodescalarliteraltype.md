@@ -21,7 +21,7 @@ A type that represents a Unicode scalar literal.
 typealias UnicodeScalarLiteralType = Unicode.Scalar
 ```
 
-#### Discussion
+## Discussion
 
 Valid types for `UnicodeScalarLiteralType` are `Unicode.Scalar`, `Character`, `String`, and `StaticString`.
 

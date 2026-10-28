@@ -5,7 +5,7 @@
 
 Build a view controller in storyboards, configure it with custom views, and fill those views with your app’s data.
 
-#### Overview
+## Overview
 
 In the model-view-controller design paradigm, a view controller fits between the view objects that present information onscreen and the data objects that store your app’s content. Specifically, a view controller manages a view hierarchy and the state information needed to keep those views up-to-date. Every UIKit app relies heavily on view controllers to present content, and you frequently define custom view controllers to manage your views and UI-related logic.
 
@@ -17,7 +17,7 @@ Most custom view controllers you create are *content view controllers* — that 
 
 To define a content view controller, start by subclassing [`UIViewController`](./uiviewcontroller.md). If your interface includes a table view or collection view, subclass [`UITableViewController`](./uitableviewcontroller.md) or [`UICollectionViewController`](./uicollectionviewcontroller.md) instead. New Xcode projects include one or more content view controller classes for you to modify, and you can add more.
 
-##### Add views to your view controller
+### Add views to your view controller
 
 [`UIViewController`](./uiviewcontroller.md) contains a content view, accessible from the [`view`](./uiviewcontroller/view.md) property, which serves as the root view of its view hierarchy. To that root view, you add the custom views you need to present your interface. In storyboards, you add views by dragging them onto the view controller scene. For example, the following figure shows a view controller with an image view and button on an iPhone.
 
@@ -25,7 +25,7 @@ To define a content view controller, start by subclassing [`UIViewController`](.
 
 After adding views to a view controller, always add Auto Layout constraints to set the size and position of those views. Constraints are rules that specify how to size and position each view relative to its parent or sibling view, and they ensure that your views automatically adapt to different environments and devices. For more information, see [View layout](./view-layout.md).
 
-##### Store references to important views
+### Store references to important views
 
 At runtime, you may need to access views from your view controller’s code. For example, you might want to fetch the text in a text view or change the image in an image view. For that, you need a reference to the view in your view hierarchy. You create those references using outlets.
 
@@ -49,7 +49,7 @@ In your storyboard, connect each outlet to the corresponding view, as described 
 
 When you instantiate a view controller, UIKit reconnects any outlets that you configured in your storyboard. UIKit reestablishes these connections before calling your view controller’s [`viewDidLoad()`](./uiviewcontroller/viewdidload%28%29.md) method, so you can access the objects in those properties from that method. If you create any views programmatically, you must explicitly assign those views to the appropriate properties of your view controller.
 
-##### Handle events occurring in views and controls
+### Handle events occurring in views and controls
 
 Controls use the target-action design pattern to report user interactions, and some views post notifications or call delegate methods in response to changes. A view controller needs to know about many of these interactions so it can update its views, and you have several ways to make that happen:
 
@@ -77,7 +77,7 @@ To respond to user interactions with controls, define an action method with one 
 
 For information about the target-action design pattern and how to handle control-related events, see [`UIControl`](./uicontrol.md).
 
-##### Prepare your views to appear onscreen
+### Prepare your views to appear onscreen
 
 UIKit gives you several opportunities to configure your view controller and views before displaying them onscreen. When you instantiate your view controller from a storyboard, UIKit creates that object using its [`init(coder:)`](./uiviewcontroller/init%28coder%29.md) method.
 

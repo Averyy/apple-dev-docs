@@ -15,7 +15,7 @@ A map of strings in a vector space that enable your app to find similar strings 
 struct MLWordEmbedding
 ```
 
-#### Overview
+## Overview
 
 Use an [`MLWordEmbedding`](./mlwordembedding.md) to configure and save a word embedding to a file, which you then add to your project in Xcode. Your project uses that word embedding file at runtime to create an [`NLEmbedding`](../NaturalLanguage/nlembedding.md) instance, which finds similar strings based on the proximity of their vectors.
 

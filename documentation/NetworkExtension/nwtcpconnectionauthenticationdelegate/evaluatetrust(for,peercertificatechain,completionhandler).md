@@ -26,7 +26,7 @@ optional func evaluateTrust(for connection: NWTCPConnection, peerCertificateChai
 - (void) evaluateTrustForConnection:(NWTCPConnection *) connection peerCertificateChain:(NSArray<id> *) peerCertificateChain completionHandler:(void (^)(SecTrustRef trust)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The caller can implement this optional protocol method to set up custom policies for peer certificate trust evaluation. If the delegate method is implemented, the caller is responsible for creating and setting up the [`SecTrust`](../../Security/sectrust.md) object and passing it to the completion handler. Otherwise, the default trust evaluation policy is used for the connection.
 

@@ -24,7 +24,7 @@ case `default`
 UIImageSymbolScaleDefault
 ```
 
-#### Discussion
+## Discussion
 
 UIKit chooses the same scale used for similar content in other parts of the system.
 

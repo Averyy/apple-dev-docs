@@ -22,7 +22,7 @@ let kVTCompressionPropertyKey_VBVMaxBitRate: CFString
 extern CFStringRef const kVTCompressionPropertyKey_VBVMaxBitRate;
 ```
 
-#### Discussion
+## Discussion
 
 Defines the maximum bitrate that can enter the video buffering verifier (VBV) model at any time in variable bitrate (VBR) mode.
 

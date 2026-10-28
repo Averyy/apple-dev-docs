@@ -20,7 +20,7 @@ The framework can’t access the working directory.
 case workingDirectory
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when the working directory you provide to [`init(workingDirectory:)`](../facegroupanalyzer/init%28workingdirectory%29.md) or [`purge(workingDirectory:)`](../facegroupanalyzer/purge%28workingdirectory%29.md) doesn’t exist or isn’t accessible. Verify that the URL points to a valid, writable directory before creating an analyzer.
 

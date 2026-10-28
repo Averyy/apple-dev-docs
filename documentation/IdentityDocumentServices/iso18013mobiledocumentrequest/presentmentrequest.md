@@ -18,7 +18,7 @@ A type that represents an individual presentment request.
 struct PresentmentRequest
 ```
 
-#### Discussion
+## Discussion
 
 One or more of these make up an `ISO18013MobileDocumentRequest`.
 

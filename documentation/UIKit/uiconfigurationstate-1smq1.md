@@ -19,7 +19,7 @@ The requirements for an object that encapsulates a view’s state.
 @protocol UIConfigurationState <NSObject, NSCopying, NSSecureCoding>
 ```
 
-#### Overview
+## Overview
 
 This protocol provides a blueprint for a configuration state object, which encompasses a trait collection along with all of the common states that affect a view’s appearance. A configuration state encapsulates the inputs that configure a view for any possible state or combination of states. You use a configuration state with background and content configurations to obtain the default appearance for a specific state.
 

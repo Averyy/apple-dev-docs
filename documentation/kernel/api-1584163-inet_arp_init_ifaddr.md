@@ -13,7 +13,7 @@
 void inet_arp_init_ifaddr(ifnet_t interface, ifaddr_t ipaddr);
 ```
 
-#### Discussion
+## Discussion
 
 This function should be called in two places, when an IP address is added and when the hardware address changes. This function will setup the ifaddr_t for use with the IP ARP functions. This function will also trigger the transmission of a gratuitous ARP packet.
 

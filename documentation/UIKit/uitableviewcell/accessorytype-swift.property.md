@@ -28,7 +28,7 @@ var accessoryType: UITableViewCell.AccessoryType { get set }
 - [Configuring the cells for your table](../configuring-the-cells-for-your-table.md)
 - [Handling row selection in a table view](../handling-row-selection-in-a-table-view.md)
 
-#### Discussion
+## Discussion
 
 The accessory view appears in the right side of the cell in the table view’s normal (default) state. The standard accessory views include the disclosure chevron; for a description of valid [`accessoryType`](./accessorytype-swift.property.md) constants, see [`UITableViewCell.AccessoryType`](./accessorytype-swift.enum.md). The default is [`UITableViewCell.AccessoryType.none`](./accessorytype-swift.enum/none.md). If a custom accessory view is set through the [`accessoryView`](./accessoryview.md) property, the value of this property is ignored. If the cell is enabled and the accessory type is [`UITableViewCell.AccessoryType.detailDisclosureButton`](./accessorytype-swift.enum/detaildisclosurebutton.md), the accessory view tracks touches and, when tapped, sends the data-source object a [`tableView(_:accessoryButtonTappedForRowWith:)`](../uitableviewdelegate/tableview%28_,accessorybuttontappedforrowwith%29.md) message.
 

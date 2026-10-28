@@ -23,7 +23,7 @@ var region: CLRegion? { get set }
 @property (nonatomic, copy, nullable) CLRegion * region;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a value to this property causes the local notification to be delivered when the user crosses the region’s boundary. The region object itself defines whether the notification is triggered when the user enters or exits the region. The default value of this property is `nil`.
 

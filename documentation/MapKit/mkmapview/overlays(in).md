@@ -24,11 +24,11 @@ func overlays(in level: MKOverlayLevel) -> [any MKOverlay]
 - (NSArray<id<MKOverlay>> *) overlaysInLevel:(MKOverlayLevel) level;
 ```
 
-#### Return Value
+## Return Value
 
 An array of objects conforming to the [`MKOverlay`](../mkoverlay.md) protocol that display in the specified map level. If there are no overlays at the specified level, this method returns an empty array.
 
-#### Discussion
+## Discussion
 
 You can use this method to get all of the overlays assigned to a specific map level, which might be a subset of the complete set of overlay objects. For overlapping overlay objects, the order of objects in the array represents their visual order when displayed on the map, with objects in the beginning of the array located behind those at later indexes.
 

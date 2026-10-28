@@ -21,7 +21,7 @@ Updates a Metal vertex buffer synchronously on the CPU.
 func withUnsafeMutableBytes(bufferIndex: Int, _ callback: (UnsafeMutableRawBufferPointer) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The buffer is only valid for the lifetime of the callback.
 

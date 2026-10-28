@@ -22,7 +22,7 @@ weak var delegate: (any UIDocumentBrowserViewControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIDocumentBrowserViewControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate object must implement the [`UIDocumentBrowserViewControllerDelegate`](../uidocumentbrowserviewcontrollerdelegate.md) protocol.
 

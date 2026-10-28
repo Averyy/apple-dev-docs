@@ -17,7 +17,7 @@ Generate a random permutation of the entries of an array.
 static func permutation(_ array: MLXArray, axis: Int = 0, key: (some RandomStateOrKey)? = MLXArray?.none, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Permuted array
 

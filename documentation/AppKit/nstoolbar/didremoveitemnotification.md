@@ -22,7 +22,7 @@ class let didRemoveItemNotification: NSNotification.Name
 extern NSNotificationName NSToolbarDidRemoveItemNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification item is the `NSToolbar` object that removed the item. The `userInfo` dictionary contains the following information:
 

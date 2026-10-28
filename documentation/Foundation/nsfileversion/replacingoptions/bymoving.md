@@ -25,7 +25,7 @@ static var byMoving: NSFileVersion.ReplacingOptions { get }
 NSFileVersionReplacingByMoving
 ```
 
-#### Discussion
+## Discussion
 
 This option results in moving the old version of the file out of the version store instead of copying the new contents into the file’s version. Use this option in conjunction with a file coordinator to make sure the operation is coordinated with other clients of the file.
 

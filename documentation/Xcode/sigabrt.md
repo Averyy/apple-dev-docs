@@ -5,7 +5,7 @@
 
 The process terminated because it received an abort signal.
 
-#### Overview
+## Overview
 
 Typically, the `SIGABRT` signal is sent because the process called the `abort()` function, such as when an app encounters an uncaught Objective-C or C++ language exception. [Addressing language exception crashes](./addressing-language-exception-crashes.md) explains how to handle uncaught language exceptions in more detail. This signal can also come from another process that has the privileges to manage this process’ lifetime, and sent a `SIGABRT` because this process misbehaved in a detectable manner.
 

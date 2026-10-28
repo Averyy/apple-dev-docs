@@ -1874,7 +1874,7 @@
     },
     "https://developer.apple.com/documentation/glkit/glkview": {
       "file_path": "documentation/GLKit/glkview.md",
-      "hash": "46693a74145768d07f03b1ee834960eebfbcf006984a2c4f59e012970ddaa1e7"
+      "hash": "7de14246bc41a57a1dc187b00a172119b7549a3931a22cd3bc8b23de0bc8ec58"
     },
     "https://developer.apple.com/documentation/glkit/glkview/binddrawable()": {
       "file_path": "documentation/GLKit/glkview/binddrawable().md",
@@ -3998,7 +3998,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glkview.json": {
       "file_path": "documentation/GLKit/glkview.md",
-      "hash": "46693a74145768d07f03b1ee834960eebfbcf006984a2c4f59e012970ddaa1e7"
+      "hash": "7de14246bc41a57a1dc187b00a172119b7549a3931a22cd3bc8b23de0bc8ec58"
     },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glkview/binddrawable().json": {
       "file_path": "documentation/GLKit/glkview/binddrawable().md",
@@ -4251,7 +4251,7 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 1062
   }

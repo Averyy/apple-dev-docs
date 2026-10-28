@@ -21,11 +21,11 @@ A Boolean value that indicates whether the group has any remaining tasks.
 var isEmpty: Bool { get }
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the group has no pending tasks; otherwise `false`.
 
-#### Discussion
+## Discussion
 
 At the start of the body of a `withThrowingDiscardingTaskGroup(returning:isolation:body:)` call, the task group is always empty.
 

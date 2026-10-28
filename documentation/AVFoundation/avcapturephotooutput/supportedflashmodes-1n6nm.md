@@ -20,7 +20,7 @@ A Swift array of flash settings this capture output currently supports.
 var supportedFlashModes: [AVCaptureDevice.FlashMode] { get }
 ```
 
-#### Discussion
+## Discussion
 
 To set the flash mode for a capture, set the [`flashMode`](../avcapturephotosettings/flashmode.md) property of your photo settings object to one of the [`AVCaptureDevice.FlashMode`](../avcapturedevice/flashmode-swift.enum.md) values listed in this array.
 

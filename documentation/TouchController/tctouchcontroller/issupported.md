@@ -21,7 +21,7 @@ class var isSupported: Bool { get }
 @property (class, nonatomic, readonly, getter=isSupported) BOOL supported;
 ```
 
-#### Discussion
+## Discussion
 
 Attempting to create a touch controller on an unsupported device will result in a fatal error.
 

@@ -21,11 +21,11 @@ Returns the *k* largest values along the last axis of the tensor.
 func topK(_ k: Int) -> (values: MLTensor, indices: MLTensor)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple of (values, indices) with values containing the top k values along the last axis and indices, a `Int32` tensor, containing the indices to the corresponding values.
 
-#### Discussion
+## Discussion
 
 > **Note**: The tensor must have at least k elements along its last axis and order returned by largest values which are equal is not deterministic.
 

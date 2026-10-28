@@ -30,7 +30,7 @@ optional func localizableSampleTemplate(for complication: CLKComplication) async
 - [Adding Placeholders for Your Complication](../adding-placeholders-for-your-complication.md)
 - [Sharing an Apple Watch face](../sharing-an-apple-watch-face.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method once per supported complication when your extension is installed, and the results are cached. In your implementation, instantiate the appropriate template class and populate the resulting object with localized data. The data you supply should be fake, but it should reflect what your complication would normally look like.
 

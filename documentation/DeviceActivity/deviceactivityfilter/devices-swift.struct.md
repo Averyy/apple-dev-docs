@@ -17,7 +17,7 @@ A type your app uses to indiciate which devices to include in a device activity 
 struct Devices
 ```
 
-#### Overview
+## Overview
 
 Users can control whether a device shares its data with other devices in their circle in iCloud settings.
 

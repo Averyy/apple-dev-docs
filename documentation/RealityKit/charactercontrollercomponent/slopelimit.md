@@ -20,7 +20,7 @@ The slope limit expressed as a limit angle in radians.
 var slopeLimit: Float
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the maximum slope that the character can move over. RealityKit applies this value to characters that are walking on static objects, but not when walking on kinematic or dynamic objects.
 

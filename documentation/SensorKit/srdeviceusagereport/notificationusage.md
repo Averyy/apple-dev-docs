@@ -21,7 +21,7 @@ class NotificationUsage
 @interface SRNotificationUsage : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each instance of this class represents a user notification in a particular app category. For more information, see [`notificationUsageByCategory`](./notificationusagebycategory.md).
 

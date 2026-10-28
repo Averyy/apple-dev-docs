@@ -23,7 +23,7 @@ typealias ABRecordID = Int32
 typedef int32_t ABRecordID;
 ```
 
-#### Discussion
+## Discussion
 
 Valid record IDs are positive integers.
 

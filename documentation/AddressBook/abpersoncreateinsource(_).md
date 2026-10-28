@@ -23,11 +23,11 @@ func ABPersonCreateInSource(_ source: ABRecord!) -> Unmanaged<ABRecord>!
 extern ABRecordRefABPersonCreateInSource(ABRecordRef source);
 ```
 
-#### Return Value
+## Return Value
 
 A new person record in the specified source.
 
-#### Discussion
+## Discussion
 
 To add the newly created person record to the Address Book database, use [`ABAddressBookAddRecord(_:_:_:)`](./abaddressbookaddrecord%28_,_,_%29.md).
 

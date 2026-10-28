@@ -25,7 +25,7 @@ protocol CBPeripheralDelegate : NSObjectProtocol
 @protocol CBPeripheralDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The delegate of a [`CBPeripheral`](./cbperipheral.md) object must adopt the [`CBPeripheralDelegate`](./cbperipheraldelegate.md) protocol. The delegate uses this protocol’s methods to monitor the discovery, exploration, and interaction of a remote peripheral’s services and properties. This protocol doesn’t have any required methods.
 

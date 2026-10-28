@@ -22,7 +22,7 @@ var statusBarStyle: UIStatusBarStyle { get }
 @property (nonatomic, readonly) UIStatusBarStyle statusBarStyle;
 ```
 
-#### Discussion
+## Discussion
 
 To customize the status bar’s style for each of your view controllers, override their [`preferredStatusBarStyle`](../uiviewcontroller/preferredstatusbarstyle.md) property.
 

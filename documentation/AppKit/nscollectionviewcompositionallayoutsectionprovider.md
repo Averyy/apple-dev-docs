@@ -19,7 +19,7 @@ typealias NSCollectionViewCompositionalLayoutSectionProvider = (Int, any NSColle
 typedef NSCollectionLayoutSection *(^)(long, id<NSCollectionLayoutEnvironment>) NSCollectionViewCompositionalLayoutSectionProvider;
 ```
 
-#### Discussion
+## Discussion
 
 You use a section provider to create a compositional layout ([`NSCollectionViewCompositionalLayout`](./nscollectionviewcompositionallayout.md)) that has multiple sections with different layouts. The section provider keeps track of the index of the section that it’s currently creating, so you can configure each section differently.
 

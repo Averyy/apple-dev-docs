@@ -14,7 +14,7 @@
 #define USBmakebmRequestType(direction, type, recipient)
 ```
 
-#### Discussion
+## Discussion
 
 Macro to encode the bRequest field of a Device Request. It is used when constructing an IOUSBDevRequest.
 

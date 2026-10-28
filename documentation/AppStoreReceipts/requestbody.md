@@ -17,7 +17,7 @@ The JSON contents you submit with the request to the App Store.
 object requestBody
 ```
 
-#### Discussion
+## Discussion
 
 To receive a decoded receipt for validation, send a request with the encoded receipt data and app password to the App Store. For receipts that contain auto-renewable subscriptions, optionally include an exclusion flag. Send this JSON data using the HTTP POST request method.
 

@@ -25,11 +25,11 @@ func CMBufferQueueCallForEachBuffer(_ queue: CMBufferQueue, callback: (CMBuffer,
 extern OSStatus CMBufferQueueCallForEachBuffer(CMBufferQueueRef queue, int (*)(const void *, void *)callback, void *refcon);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 If the callback function returns an error, iteration will stop immediately and the error will be returned.
 

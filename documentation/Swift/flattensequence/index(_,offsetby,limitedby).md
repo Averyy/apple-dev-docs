@@ -23,11 +23,11 @@ func index(_ i: FlattenSequence<Base>.Index, offsetBy n: Int, limitedBy limit: F
 
 Available when `Base` conforms to `Collection` and `Base.Element` conforms to `Collection`.
 
-#### Return Value
+## Return Value
 
 An index offset by `distance` from the index `i`, unless that index would be beyond `limit` in the direction of movement. In that case, the method returns `nil`.
 
-#### Discussion
+## Discussion
 
 The following example obtains an index advanced four positions from a string’s starting index and then prints the character at that position. The operation doesn’t require going beyond the limiting `s.endIndex` value, so it succeeds.
 

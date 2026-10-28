@@ -15,7 +15,7 @@ Signifies no preference for what to prioritize when loading the map.
 readonly None: null;
 ```
 
-#### Discussion
+## Discussion
 
 When you use this value, MapKit JS applies its default prioritization, [`PointsOfInterest`](./pointsofinterest.md).
 

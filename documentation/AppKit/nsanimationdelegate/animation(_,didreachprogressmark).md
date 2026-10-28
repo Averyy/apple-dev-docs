@@ -20,7 +20,7 @@ optional func animation(_ animation: NSAnimation, didReachProgressMark progress:
 - (void) animation:(NSAnimation *) animation didReachProgressMark:(NSAnimationProgress) progress;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate typically implements this method to perform some animation effect for the time slice indicated by `progress`, such as redrawing objects in a view with new coordinates or changing the frame location or size of a window or view. As an alternative to this delegation message, you may choose to observe the [`progressMarkNotification`](../nsanimation/progressmarknotification.md) notification.
 

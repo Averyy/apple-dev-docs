@@ -20,11 +20,11 @@ string CampaignUpdate.Status
 - `ENABLED`: The campaign is set to run. Delivery depends on budget availability, eligibility, and system status.
 - `PAUSED`: The advertiser paused the campaign. No ads serve until the status changes to `ENABLED`.
 
-#### Discussion
+## Discussion
 
 Send `status: PAUSED` to stop an existing campaign from competing for delivery, or `ENABLED` to resume it.
 
-##### Example
+### Example
 
 ```json
 {

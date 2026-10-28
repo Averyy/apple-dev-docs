@@ -21,7 +21,7 @@ class NSOpenGLPixelFormat
 @interface NSOpenGLPixelFormat : NSObject
 ```
 
-#### Overview
+## Overview
 
 To render with OpenGL into an [`NSOpenGLContext`](./nsopenglcontext.md), you must specify the context’s pixel format.
 

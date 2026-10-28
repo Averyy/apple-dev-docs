@@ -23,7 +23,7 @@ func resolvedInsertionLocation(for textSelection: NSTextSelection, writingDirect
 - (id<NSTextLocation>) resolvedInsertionLocationForTextSelection:(NSTextSelection *) textSelection writingDirection:(NSTextSelectionNavigationWritingDirection) writingDirection;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an `NSTextLocation` when the `textSelection.isLogical = false AND` `secondarySelectionLocation != nil`. Otherwise, returns nil.
 

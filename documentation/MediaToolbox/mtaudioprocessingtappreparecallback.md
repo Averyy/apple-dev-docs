@@ -24,7 +24,7 @@ typealias MTAudioProcessingTapPrepareCallback = (MTAudioProcessingTap, CMItemCou
 typedef void (*)(const struct opaqueMTAudioProcessingTap *, long, const struct AudioStreamBasicDescription *) MTAudioProcessingTapPrepareCallback;
 ```
 
-#### Overview
+## Overview
 
 A preparation callback that is invoked when the underlying audio machinery is initialized.
 

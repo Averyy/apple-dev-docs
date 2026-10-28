@@ -24,7 +24,7 @@ let GCInputDirectionalCenterButton: String
 extern NSString * const GCInputDirectionalCenterButton;
 ```
 
-#### Discussion
+## Discussion
 
 This input element represents the center button on the cardinal directional pad. For the second-generation Siri Remote and later, this represents the inner ring of the touch surface.
 

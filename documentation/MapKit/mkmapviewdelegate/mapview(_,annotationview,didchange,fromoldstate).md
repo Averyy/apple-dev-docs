@@ -23,7 +23,7 @@ optional func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationVie
 - (void) mapView:(MKMapView *) mapView annotationView:(MKAnnotationView *) view didChangeDragState:(MKAnnotationViewDragState) newState fromOldState:(MKAnnotationViewDragState) oldState;
 ```
 
-#### Discussion
+## Discussion
 
 The drag state typically changes in response to user interactions with the annotation view. However, the annotation view itself is responsible for changing that state as well.
 

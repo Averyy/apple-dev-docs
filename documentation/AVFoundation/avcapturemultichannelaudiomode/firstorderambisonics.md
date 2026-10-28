@@ -23,7 +23,7 @@ case firstOrderAmbisonics
 AVCaptureMultichannelAudioModeFirstOrderAmbisonics
 ```
 
-#### Discussion
+## Discussion
 
 When recording a QuickTime movie file, the system records a stereo audio track with the first-order ambisonics track for backward playback compatibility.
 

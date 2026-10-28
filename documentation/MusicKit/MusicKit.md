@@ -15,7 +15,7 @@ Integrate your app with Apple Music.
 - visionOS 1.0+
 - watchOS 8.0+
 
-#### Overview
+## Overview
 
 Use MusicKit to integrate your app with [Apple Music API](../AppleMusicAPI/AppleMusicAPI.md), a web service you use to access information about music items in the Apple Music catalog. Using MusicKit, you can more easily build apps that tie into Apple Music.
 

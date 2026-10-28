@@ -24,7 +24,7 @@ func setRouteButtonImage(_ image: UIImage?, for state: UIControl.State)
 - (void) setRouteButtonImage:(UIImage *) image forState:(UIControlState) state;
 ```
 
-#### Discussion
+## Discussion
 
 Use this to customize the appearance of the route button for various states such as enabled, disabled, and highlighted.
 

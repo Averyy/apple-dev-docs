@@ -24,7 +24,7 @@ func cancelWriting()
 - (void) cancelWriting;
 ```
 
-#### Discussion
+## Discussion
 
 If the asset writer is in [`AVAssetWriter.Status.failed`](./status-swift.enum/failed.md) or [`AVAssetWriter.Status.completed`](./status-swift.enum/completed.md) state, calling this method has no effect. Otherwise, invoking it blocks the calling thread until the asset writer finishes canceling the writing session.
 

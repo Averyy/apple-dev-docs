@@ -20,11 +20,11 @@ Creates the default configuration you use to style a sidebar list header.
 static func listSidebarHeader() -> UIBackgroundConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 The default configuration for a sidebar list header.
 
-#### Discussion
+## Discussion
 
 Create this configuration to update the styling for the background of a header or footer in a table view or collection view list. When you apply this configuration, the background of the header or footer matches the system default styling for a header or footer in a sidebar list.
 

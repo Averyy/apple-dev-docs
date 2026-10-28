@@ -21,7 +21,7 @@ The color scheme of this environment.
 var colorScheme: ColorScheme { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Read this environment value from within a view to find out if SwiftUI is currently displaying the view using the [`ColorScheme.light`](../colorscheme/light.md) or [`ColorScheme.dark`](../colorscheme/dark.md) appearance. The value that you receive depends on whether the user has enabled Dark Mode, possibly superseded by the configuration of the current presentation’s view hierarchy.
 

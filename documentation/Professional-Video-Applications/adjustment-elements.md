@@ -4,7 +4,7 @@
 
 Alter the audio and video output of story elements by using adjustment elements.
 
-#### Overview
+## Overview
 
 You can apply adjustment to change specific aspects of audio and video, in particular:
 

@@ -23,7 +23,7 @@ func ranges(of regex: some RegexComponent) -> [Range<Self.Index>]
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 A collection or ranges in the receiver of all occurrences of `regex`. Returns an empty collection if `regex` is not found.
 

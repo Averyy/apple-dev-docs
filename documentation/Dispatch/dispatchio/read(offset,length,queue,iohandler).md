@@ -21,7 +21,7 @@ Schedules an asynchronous read operation on the specified channel.
 func read(offset: off_t, length: Int, queue: DispatchQueue, ioHandler: @escaping (Bool, DispatchData?, Int32) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 This function reads the specified data and submits the handler block to queue to process the data. If the `done` parameter of the handler is set to false, it means that only part of the data was read. If the `done` parameter is [`true`](../../Swift/true.md), it means the read operation is complete and the handler will not be submitted again. If an unrecoverable error occurs on the channel’s file descriptor, the `done` parameter is set to true and an appropriate error value is reported in the handler’s error parameter.
 

@@ -15,7 +15,7 @@ The name of the state or province of the place.
 administrativeArea: string | null;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the [`administrativeArea`](../place/administrativearea.md) for Golden Gate Park in San Francisco, California, is “`California"`.
 

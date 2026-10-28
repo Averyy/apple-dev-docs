@@ -22,7 +22,7 @@ nonisolated
 init?(primitivePlottable: Self.PrimitivePlottable)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer fails if there is no corresponding plottable value.
 

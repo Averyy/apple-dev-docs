@@ -23,7 +23,7 @@ struct ResolvedContact
 
 - [Making your indexed content available to Foundation Models](./making-your-indexed-content-available-to-foundation-models.md)
 
-#### Overview
+## Overview
 
 Use this type to specify details about the person or business that uses your app. When a query matches references to a specific person or business, the information in this structure helps the search tool resolve references to that contact. For example, a query that looks for the author of an email uses this information to resolve a request such as “find the emails that I authored.” Fill in as many fields of this structure as possible with the information available to your app.
 

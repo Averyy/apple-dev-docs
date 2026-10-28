@@ -27,7 +27,7 @@ class MKSelectionAccessory
 
 - [Identifying unique locations with Place IDs](./identifying-unique-locations-with-place-ids.md)
 
-#### Overview
+## Overview
 
 Implement [`mapView(_:selectionAccessoryFor:)`](./mkmapviewdelegate/mapview%28_,selectionaccessoryfor%29.md) in your map view delegate to specify a selection accessory for annotation content.
 

@@ -17,7 +17,7 @@ An error occurred when reading a loyalty pass.
 case vasReadFail
 ```
 
-#### Discussion
+## Discussion
 
 The Tap to Pay on iPhone sheet displayed a message indicating that the read failed.
 

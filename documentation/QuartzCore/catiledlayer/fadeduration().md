@@ -24,7 +24,7 @@ class func fadeDuration() -> CFTimeInterval
 + (CFTimeInterval) fadeDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation returns 0.25 seconds.
 

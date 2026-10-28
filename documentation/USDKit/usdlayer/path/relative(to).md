@@ -20,7 +20,7 @@ Returns this path made relative to the given anchor.
 func relative(to anchor: USDLayer.Path) -> USDLayer.Path
 ```
 
-#### Return Value
+## Return Value
 
 A relative version of this path.
 

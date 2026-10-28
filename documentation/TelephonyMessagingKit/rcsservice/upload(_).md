@@ -15,11 +15,11 @@ Uploads a file to the RCS content server.
 final func upload(_ uploadRequest: RCSService.FileUploadRequest) async throws -> RCSService.FileUploadRequest.Metadata
 ```
 
-#### Return Value
+## Return Value
 
 A [`RCSService.FileUploadRequest.Metadata`](./fileuploadrequest/metadata.md) instance that contains information about the uploaded file.
 
-#### Discussion
+## Discussion
 
 Sending a file to a recipient over RCS is a two-step process:
 

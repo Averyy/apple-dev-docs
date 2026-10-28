@@ -33,13 +33,13 @@ class NSLinguisticTagger
 - [Identifying Parts of Speech](./identifying-parts-of-speech.md)
 - [Identifying People, Places, and Organizations](./identifying-people-places-and-organizations.md)
 
-#### Overview
+## Overview
 
 [`NSLinguisticTagger`](./nslinguistictagger.md) provides a uniform interface to a variety of natural language processing functionality with support for many different languages and scripts. You can use this class to segment natural language text into paragraphs, sentences, or words, and tag information about those segments, such as part of speech, lexical class, lemma, script, and language.
 
 When you create a linguistic tagger, you specify what kind of information you’re interested in by passing one or more [`NSLinguisticTagScheme`](./nslinguistictagscheme.md) values. Set the [`string`](./nslinguistictagger/string.md) property to the natural language text you want to analyze, and the linguistic tagger processes it according to the specified tag schemes. You can then enumerate over the tags in a specified range, using the methods described in Enumerating Linguistic Tags, to get the information requested for a given scheme and unit.
 
-##### Thread Safety
+### Thread Safety
 
 A single instance of [`NSLinguisticTagger`](./nslinguistictagger.md) should not be used simultaneously from multiple threads.
 

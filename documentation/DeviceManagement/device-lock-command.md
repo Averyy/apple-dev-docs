@@ -14,7 +14,7 @@ Remotely and immediately lock a device.
 - visionOS 2.0+
 - watchOS 10.0+
 
-#### Discussion
+## Discussion
 
 You can display a message and phone number on the Lock Screen if the user has set a passcode for the device, it isn’t a Shared iPad, and it isn’t in Lost Mode. In macOS, this command uses the Find My framework to lock a device, and fails if there’s no recovery partition on the device.
 
@@ -22,7 +22,7 @@ You can display a message and phone number on the Lock Screen if the user has se
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +32,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, visionOS |
 | Required access right | AllowPasscodeRemovalAndLock |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

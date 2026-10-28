@@ -27,7 +27,7 @@ var perRecordCompletionBlock: ((CKRecord?, CKRecord.ID?, (any Error)?) -> Void)?
 @property (nonatomic, copy, nullable) void (^perRecordCompletionBlock)(CKRecord *record, CKRecordID *recordID, NSError *error);
 ```
 
-#### Discussion
+## Discussion
 
 This property is a closure that returns no value and has the following parameters:
 

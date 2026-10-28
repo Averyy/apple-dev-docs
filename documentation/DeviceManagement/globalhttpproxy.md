@@ -20,13 +20,13 @@ The payload that configures a global HTTP proxy.
 object GlobalHTTPProxy
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.proxy.http.global` as the payload type.
 
 There can only be one payload of this type on the device at any time.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -38,7 +38,7 @@ There can only be one payload of this type on the device at any time.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

@@ -23,7 +23,7 @@ func didCloseWindow(_ closedWindow: any WKWebExtensionWindow)
 - (void) didCloseWindow:(id<WKWebExtensionWindow>) closedWindow;
 ```
 
-#### Discussion
+## Discussion
 
 - closedWindow: The window that was closed.
 

@@ -17,7 +17,7 @@ Compute the LU factorization of the given matrix `A`.
 static func lu(_ a: MLXArray, stream: StreamOrDevice = .default) -> (MLXArray, MLXArray, MLXArray)
 ```
 
-#### Discussion
+## Discussion
 
 Note, unlike the default behavior of `scipy.linalg.lu`, the pivots are indices. To reconstruct the input use `L[P] @ U` for 2 dimensions or `takeAlong(L, P[.ellipsis, .newAxis], axis: -2) @ U` for more than 2 dimensions.
 

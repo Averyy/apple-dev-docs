@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatUnapplyScaledPose(SPVector3DFloat vector, SPScaledPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed vector.
 
-#### Discussion
+## Discussion
 
 Returns a vector that’s transformed by the inverse of the specified scaled pose.
 

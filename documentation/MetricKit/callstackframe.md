@@ -23,7 +23,7 @@ struct CallStackFrame
 
 - [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 Each frame may have sub-frames that form a call tree. The [`binaryUUID`](./callstackframe/binaryuuid.md) references binary metadata in the parent [`binaryInfo`](./callstacktree/binaryinfo-swift.property.md) dictionary. Use [`binaryName(from:)`](./callstackframe/binaryname%28from%29.md) to look up the binary name for a given frame:
 

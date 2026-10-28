@@ -23,7 +23,7 @@ case keyboardLANG4
 UIKeyboardHIDUsageKeyboardLANG4
 ```
 
-#### Discussion
+## Discussion
 
 The [`UIKeyboardHIDUsage.keyboardLANG4`](./keyboardlang4.md) key is the Hiragana key on Japanese language keyboards.
 

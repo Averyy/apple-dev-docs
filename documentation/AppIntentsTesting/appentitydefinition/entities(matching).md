@@ -25,11 +25,11 @@ func entities(matching string: String) async throws -> [AnyAppEntity]
 
 - [Testing your App Intents code](../testing-your-app-intents-code.md)
 
-#### Return Value
+## Return Value
 
 An array of entities that match the search criteria.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Any errors encountered during the query execution.
 

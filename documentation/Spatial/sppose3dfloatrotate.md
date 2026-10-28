@@ -19,11 +19,11 @@
 static SPPose3DFloat SPPose3DFloatRotate(SPPose3DFloat pose, SPRotation3DFloat rotation);
 ```
 
-#### Return Value
+## Return Value
 
 A pose with a rotation that’s rotated by the specified rotation structure.
 
-#### Discussion
+## Discussion
 
 Returns a pose with a rotation that’s rotated by the specified rotation.
 

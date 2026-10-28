@@ -25,7 +25,7 @@ var pixelBufferPool: CVPixelBufferPool? { get }
 @property (nonatomic, readonly, nullable) CVPixelBufferPoolRef pixelBufferPool;
 ```
 
-#### Discussion
+## Discussion
 
 For maximum efficiency, create the pixel buffers of tagged buffer groups using this pool with the [`CVPixelBufferPoolCreatePixelBuffer(_:_:_:)`](../../CoreVideo/cvpixelbufferpoolcreatepixelbuffer%28_,_,_%29.md) function.
 

@@ -24,7 +24,7 @@ Defines whether the content in a documentation extension file replaces in-source
 
 - [Adding Supplemental Content to a Documentation Catalog](./adding-supplemental-content-to-a-documentation-catalog.md)
 
-#### Overview
+## Overview
 
 By default, content from the documentation-extension file is added after the content from the in-source documentation for that symbol.
 
@@ -40,7 +40,7 @@ Place the `DocumentationExtension` directive within a `Metadata` directive in a 
 
 > **Note**:  You can specify a `append` merge behavior but it has the same effect as not defining a `@DocumentationExtension` and results in a warning.
 
-##### Containing Elements
+### Containing Elements
 
 The following items can include a documentation extension element:
 

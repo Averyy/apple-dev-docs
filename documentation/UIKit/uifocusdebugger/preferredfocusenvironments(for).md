@@ -23,11 +23,11 @@ class func preferredFocusEnvironments(for environment: any UIFocusEnvironment) -
 + (id<UIFocusDebuggerOutput>) preferredFocusEnvironmentsForEnvironment:(id<UIFocusEnvironment>) environment;
 ```
 
-#### Return Value
+## Return Value
 
 An object the focus debugger uses to store the results to format for display.
 
-#### Discussion
+## Discussion
 
 Use this method to better understand how the focus system chooses a default focusable item. You call the method from the `lldb` debugger using the following command. In the example, `obj` corresponds to an object that adopts the [`UIFocusEnvironment`](../uifocusenvironment.md) protocol.
 

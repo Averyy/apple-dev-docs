@@ -18,11 +18,11 @@
 - (NSValue *) browserAccessibilityImageDataSize;
 ```
 
-#### Return Value
+## Return Value
 
 An NSValue wrapping a CGSize, or nil if this element does not represent an image.
 
-#### Discussion
+## Discussion
 
 Returns the native pixel dimensions of the image represented by this element.
 

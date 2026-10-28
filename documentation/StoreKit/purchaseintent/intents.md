@@ -23,7 +23,7 @@ static var intents: PurchaseIntent.PurchaseIntents { get }
 - [Supporting win-back offers in your app](../supporting-win-back-offers-in-your-app.md)
 - [Supporting promoted Apple In-App Purchases in your app](../supporting-promoted-in-app-purchases-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Your app receives a purchase intent when customers initiate a purchase outside of your app by selecting a promoted product on the App Store, or redeeming a win-back offer. Use the [`product`](./product.md) object to complete your app’s purchase workflow, including finishing the purchase, unlocking the product, and any other workflows specific to your app.
 

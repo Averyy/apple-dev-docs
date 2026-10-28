@@ -28,7 +28,7 @@ var inputPrimitiveTopology: MTLPrimitiveTopologyClass { get set }
 
 - [Rendering to multiple texture slices in a draw command](../rendering-to-multiple-texture-slices-in-a-draw-command.md)
 
-#### Discussion
+## Discussion
 
 Your app needs to specify this value when layered rendering is enabled.
 

@@ -22,7 +22,7 @@ typealias CVMetalBuffer = CVBuffer
 typedef CVBufferRef CVMetalBufferRef;
 ```
 
-#### Discussion
+## Discussion
 
 Metal buffer based CVPixelBuffer wrapped buffer
 

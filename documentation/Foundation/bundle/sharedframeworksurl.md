@@ -25,7 +25,7 @@ var sharedFrameworksURL: URL? { get }
 @property (copy, readonly, nullable) NSURL * sharedFrameworksURL;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the appropriate path for modern application and framework bundles. This property may not contain a URL for non-standard bundle formats or for some older bundle formats.
 

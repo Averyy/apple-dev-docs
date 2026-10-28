@@ -5,13 +5,13 @@
 
 Install and update your extension in Safari as you make changes in development.
 
-#### Overview
+## Overview
 
 Install your web extension in Safari, then update it as you add features and fix bugs so you can run and test it in Safari.
 
 You can temporarily install your extension folder in macOS Safari for testing without setting up an Xcode project. Use this approach to quickly evaluate your extension in Safari or to complete your initial development work. Then, when you’re ready to test your extension in iOS or distribute your extension, follow the instructions in [Packaging a web extension for Safari](./packaging-a-web-extension-for-safari.md) to create an Xcode project.
 
-##### Temporarily install a web extension folder in macOS Safari
+### Temporarily install a web extension folder in macOS Safari
 
 To temporarily install your web extension folder in macOS Safari, first locate the folder or zip file containing your web extension’s files in Finder, then open Safari.
 
@@ -26,7 +26,7 @@ Safari removes temporary extensions after 24 hours or when you quit Safari.
 
 > ❗ **Important**: Set up your extension in an Xcode project to test your web extension in iOS, send messages between the extension and your app, or distribute your extension. For more information, see [Packaging a web extension for Safari](./packaging-a-web-extension-for-safari.md).
 
-##### Install your Safari web extension in iOS
+### Install your Safari web extension in iOS
 
 If you’re working in iOS, you deploy a Safari web extension in Safari with an iOS app. If you are testing on a device, attach your development iOS device to your computer, then run the containing iOS app to install your web extension in Safari:
 
@@ -40,7 +40,7 @@ When you install the app in iOS for the first time, enable the web extension in 
 
 > **Note**:  You must be a member of the [Apple Developer Program](https://developer.apple.com/programs/) to test on a device. You can test in the iOS simulators before you join the Apple Developer Program.
 
-##### Install your Safari web extension in macOS
+### Install your Safari web extension in macOS
 
 If you’re working in macOS, you use a macOS app to deploy a Safari web extension. Run the containing macOS app to install your web extension in Safari:
 
@@ -49,7 +49,7 @@ If you’re working in macOS, you use a macOS app to deploy a Safari web extensi
 
 When you build your app, Xcode builds your Safari web extension first, then embeds it inside the finished app bundle. As soon as your app runs, your extension is ready for use in Safari.
 
-##### Configure Safari in macOS to run unsigned extensions
+### Configure Safari in macOS to run unsigned extensions
 
 If you’re not part of the Apple Developer Program, or if you haven’t yet configured a developer identity for your existing Xcode project, your Safari web extension won’t be signed with a development certificate. For security purposes, Safari ignores unsigned extensions by default, so your extension won’t show up in Safari Extensions preferences.
 
@@ -93,11 +93,11 @@ If you built the default template extension without modifying it, Safari adds a 
 
 If you have trouble getting your extension to work, see [Troubleshooting your Safari web extension](./troubleshooting-your-safari-web-extension.md).
 
-##### Update your Safari web extension in iOS
+### Update your Safari web extension in iOS
 
 To deploy changes to your extension after installing it the first time, choose Product > Run. Xcode packages the most recent changes to your extension files in the iOS app. As soon as the build completes and Xcode installs the app on your device or selected simulator, your extension updates are ready to use in Safari.
 
-##### Update your Safari web extension in macOS
+### Update your Safari web extension in macOS
 
 To deploy changes to your extension after installing it the first time, choose Product > Build. Xcode packages the most recent changes to your extension files in the macOS app. As soon as the build completes, your extension updates are ready to use in Safari.
 

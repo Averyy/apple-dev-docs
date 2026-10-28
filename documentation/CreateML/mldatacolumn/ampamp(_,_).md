@@ -22,7 +22,7 @@ static func && (a: MLDataColumn<Bool>, b: MLDataColumn<Bool>) -> MLDataColumn<Bo
 
 Available when `Element` is `Bool`.
 
-#### Return Value
+## Return Value
 
 A new column of Booleans if the columns are the same size; otherwise an invalid column.
 

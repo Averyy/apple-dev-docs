@@ -22,7 +22,7 @@ Finds the entire range of all tokens contained completely or partially within th
 func tokenRange(for range: Range<String.Index>) -> Range<String.Index>
 ```
 
-#### Return Value
+## Return Value
 
 The smallest possible range that contains all of the tokens within the range specified in `range`. This result includes a token’s entire range if any part of that token is included within `range`. If the length of `range` is 0, this return value is equivalent to [`tokenRange(at:)`](./tokenrange%28at%29.md).
 

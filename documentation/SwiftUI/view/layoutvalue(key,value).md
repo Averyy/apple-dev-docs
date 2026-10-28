@@ -22,11 +22,11 @@ nonisolated
 func layoutValue<K>(key: K.Type, value: K.Value) -> some View where K : LayoutValueKey
 ```
 
-#### Return Value
+## Return Value
 
 A view that has the specified value for the specified key.
 
-#### Discussion
+## Discussion
 
 Use this method to set a value for a custom property that you define with [`LayoutValueKey`](../layoutvaluekey.md). For example, if you define a `Flexibility` key, you can set the key on a [`Text`](../text.md) view using the key’s type and a value:
 

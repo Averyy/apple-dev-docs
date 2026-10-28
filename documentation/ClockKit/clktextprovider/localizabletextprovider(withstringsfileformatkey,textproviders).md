@@ -19,11 +19,11 @@ class func localizableTextProvider(withStringsFileFormatKey formatKey: String, t
 + (instancetype) localizableTextProviderWithStringsFileFormatKey:(NSString *) formatKey textProviders:(NSArray<CLKTextProvider *> *) textProviders;
 ```
 
-#### Return Value
+## Return Value
 
 A text provider object built from the specified arguments.
 
-#### Discussion
+## Discussion
 
 Use this method to create a compound text provider using a format string, with other text providers to provide the replacement arguments.
 

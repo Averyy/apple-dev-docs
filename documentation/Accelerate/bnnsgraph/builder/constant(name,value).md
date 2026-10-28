@@ -21,7 +21,7 @@ Registers and returns a tensor that contains a constant scalar value.
 func constant<T>(name: String? = nil, value: T) -> BNNSGraph.Builder.Tensor<T> where T : BNNSScalar
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code defines the tensor `x` that contains the single-precision scalar value `10.0`:
 

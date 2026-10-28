@@ -41,7 +41,7 @@ nonisolated
 func accessibilityScrollStatus(_ statusKey: LocalizedStringKey, isEnabled: Bool = true) -> ModifiedContent<Content, Modifier>
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to provide a description of the content at the current position in the scroll view. For example, you could use this modifier to announce the current month being scrolled to in a view that contains a calendar.
 

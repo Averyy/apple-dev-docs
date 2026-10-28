@@ -19,7 +19,7 @@ var usesDefaultHyphenation: Bool { get set }
 @property BOOL usesDefaultHyphenation;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the layout manager makes a best-effort attempt to hyphenate text when wrapping lines. You may override this hyphenation behavior on a per-paragraph basis using the [`hyphenationFactor`](./hyphenationfactor.md) property of [`NSParagraphStyle`](../nsparagraphstyle.md) The default value of this property is [`false`](../../Swift/false.md), which prevents the layout manager from hyphenating text.
 

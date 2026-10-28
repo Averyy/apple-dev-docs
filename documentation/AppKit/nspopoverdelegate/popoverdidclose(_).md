@@ -20,7 +20,7 @@ optional func popoverDidClose(_ notification: Notification)
 - (void) popoverDidClose:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 Invoked on the delegate when the [`didCloseNotification`](../nspopover/didclosenotification.md) notification is sent.
 

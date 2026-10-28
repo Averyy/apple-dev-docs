@@ -25,7 +25,7 @@ var userData: NSMutableDictionary? { get set }
 @property (nonatomic, retain, nullable) NSMutableDictionary * userData;
 ```
 
-#### Discussion
+## Discussion
 
 You use this property to store your own data in a tile definition. For example, you might use this property to specify whether this tile is a platform that a player can land on.
 

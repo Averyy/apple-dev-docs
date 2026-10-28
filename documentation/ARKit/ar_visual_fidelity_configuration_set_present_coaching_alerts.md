@@ -15,7 +15,7 @@ Request whether coaching alerts should be automatically presented to the user.
 extern void ar_visual_fidelity_configuration_set_present_coaching_alerts(ar_visual_fidelity_configuration_t visual_fidelity_configuration, bool present_coaching_alerts);
 ```
 
-#### Discussion
+## Discussion
 
 When enabled, the system will automatically present user notifications with coaching tips whenever validation errors are detected. Alerts use the system notification framework (CFUserNotification) and include localized error descriptions. Fidelity data updates are still provided to the application regardless of this setting.
 

@@ -21,7 +21,7 @@ var applicationFrame: CGRect { get }
 @property (nonatomic, readonly) CGRect applicationFrame;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the bounds rectangle used by the app window, which may be different than the screen bounds themselves. This rectangle is specified in the current coordinate space, which takes into account any interface rotations in effect for the device. Therefore, the value of this property may change when the device rotates between portrait and landscape orientations.
 

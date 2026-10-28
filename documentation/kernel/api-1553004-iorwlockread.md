@@ -24,7 +24,7 @@ void IORWLockRead(struct IORWLock *lock);
 void IORWLockRead(IORWLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Lock the lock for read, allowing multiple readers when there are no writers. If the lock is held for write, block waiting for its unlock. This function may block and so should not be called from interrupt level or while a spin lock is held. Locking the lock recursively from one thread, for read or write, can result in deadlock.
 

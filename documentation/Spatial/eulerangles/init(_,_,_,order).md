@@ -21,7 +21,7 @@ Creates a new Euler angles structure from the specified angle structures and ord
 init(_ x: Angle2D, _ y: Angle2D, _ z: Angle2D, order: EulerAngles.Order)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: In Swift, use [EulerAngles.Order](./order-swift.typealias.md) in place of `__SPEulerAngleOrder`.
 

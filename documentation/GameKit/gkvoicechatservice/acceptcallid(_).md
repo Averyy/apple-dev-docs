@@ -25,7 +25,7 @@ func acceptCallID(_ callID: Int) throws
 - (BOOL) acceptCallID:(NSInteger) callID error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 When a remote user requests a voice chat, the voice chat service calls the client’s [`voiceChatService(_:didReceiveInvitationFromParticipantID:callID:)`](../gkvoicechatclient/voicechatservice%28_,didreceiveinvitationfromparticipantid,callid%29.md) method. The client calls this method to accept the request or [`denyCallID(_:)`](./denycallid%28_%29.md) to reject it.
 

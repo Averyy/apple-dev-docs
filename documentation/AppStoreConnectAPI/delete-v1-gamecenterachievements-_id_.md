@@ -11,9 +11,9 @@ Delete a specific achievement.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Delete a Game Center Achievement`](./delete-v2-gamecenterachievements-_id_.md) instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

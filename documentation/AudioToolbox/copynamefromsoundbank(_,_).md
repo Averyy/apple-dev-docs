@@ -24,7 +24,7 @@ func CopyNameFromSoundBank(_ inURL: CFURL, _ outName: UnsafeMutablePointer<Unman
 extern OSStatus CopyNameFromSoundBank(CFURLRef inURL, CFStringRef*outName);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

@@ -20,7 +20,7 @@ var lastKeyView: NSView? { get set }
 @property (strong, nullable) NSView * lastKeyView;
 ```
 
-#### Discussion
+## Discussion
 
 The last view can be set in the nib file by connecting a view to the receiver’s `_lastKeyView` outlet.
 

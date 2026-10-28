@@ -18,7 +18,7 @@ Creates an `AccessoryWidgetGroup` that generates its label from a localized stri
 
 Available when `Label` is `Label<Text, Image>` and `Content` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 This initializer creates a `Label` view on your behalf. See `Text` for more information about localizing strings.
 

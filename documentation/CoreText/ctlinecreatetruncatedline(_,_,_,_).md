@@ -25,11 +25,11 @@ func CTLineCreateTruncatedLine(_ line: CTLine, _ width: Double, _ truncationType
 extern CTLineRefCTLineCreateTruncatedLine(CTLineRef line, double width, CTLineTruncationType truncationType, CTLineRef truncationToken);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a truncated CTLine object if the call was successful; otherwise, `NULL`.
 
-#### Discussion
+## Discussion
 
 The line specified in `truncationToken` should have a width less than the width specified by the `width` parameter. If the width of the line specified in `truncationToken` is greater than `width` and truncation is needed, the function returns `NULL`.
 

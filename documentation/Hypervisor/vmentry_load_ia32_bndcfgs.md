@@ -19,7 +19,7 @@ var VMENTRY_LOAD_IA32_BNDCFGS: UInt32 { get }
 VMENTRY_LOAD_IA32_BNDCFGS
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

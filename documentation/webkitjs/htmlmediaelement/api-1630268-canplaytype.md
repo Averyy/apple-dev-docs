@@ -18,7 +18,7 @@ DOMString canPlayType(
 );
 ```
 
-#### Return Value
+## Return Value
 
 The possible string values are: “no”, “probably” and “maybe”.
 

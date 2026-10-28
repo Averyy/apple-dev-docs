@@ -21,7 +21,7 @@ An app intent that opens one of your universal links and displays its contents.
 struct OpenURLIntent
 ```
 
-#### Overview
+## Overview
 
 This app intent uses your app’s existing universal link support to open the specified URL. Universal links are a stable and consistent way to refer to the same content in your app or website. Apps that support universal links can return this type as the result of another app intent’s [`perform()`](./appintent/perform%28%29.md) method to display specific content. You can also place the app intent on a button in an interactive widget or Live Activity. When the app intent runs, the system sends the URL to your app’s URL handling code so you can open the referenced content.
 

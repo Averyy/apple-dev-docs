@@ -6,7 +6,7 @@
 
 An atom you use to specify out-of-order video samples.
 
-#### Overview
+## Overview
 
 Video samples in encoded formats have a decode order and a presentation order (also called composition order or display order). The composition offset atom is used when there are out-of-order video samples.
 

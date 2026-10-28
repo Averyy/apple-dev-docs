@@ -25,7 +25,7 @@ static let calendar: NSLocale.Key
 extern NSLocaleKey const NSLocaleCalendar;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSCalendar` object.
 

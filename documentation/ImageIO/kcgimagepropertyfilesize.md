@@ -25,7 +25,7 @@ let kCGImagePropertyFileSize: CFString
 extern CFStringRef const kCGImagePropertyFileSize;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFNumber`](../CoreFoundation/cfnumber.md).
 

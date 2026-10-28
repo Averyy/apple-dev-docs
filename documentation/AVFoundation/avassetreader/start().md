@@ -20,7 +20,7 @@ Prepares the reader to read media data from the asset.
 func start() throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if reading fails to start.
 

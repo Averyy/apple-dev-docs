@@ -20,7 +20,7 @@ func setJobSourceAttributes(_ sourceProperties: [AnyHashable : Any]!)
 - (void) setJobSourceAttributes:(NSDictionary *) sourceProperties;
 ```
 
-#### Discussion
+## Discussion
 
 The Compressor app calls this method when users update the source media attributes for an encoding job. Use the source media attributes to compute encoding values for the encoder settings, such as height, width, and frame rate, that have values set to automatic. See [`kCEAutoHeightKey`](../kceautoheightkey.md), [`kCEAutoWidthKey`](../kceautowidthkey.md), and [`kCEAutoRateKey`](../kceautoratekey.md).
 

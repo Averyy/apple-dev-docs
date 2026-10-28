@@ -22,7 +22,7 @@ enum SearchBarPlacement
 enum UINavigationItemSearchBarPlacement : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants to specify the placement of the search bar that belongs to the navigation item’s search controller ([`searchController`](./searchcontroller.md)).
 

@@ -22,7 +22,7 @@ func dismissPopover(_ sender: Any?)
 - (void) dismissPopover:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method has the same effect as the user tapping the optional close button.
 

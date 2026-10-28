@@ -24,7 +24,7 @@ var triangleCount: Int { get set }
 @property (nonatomic) NSUInteger triangleCount;
 ```
 
-#### Discussion
+## Discussion
 
 If the triangle descriptor contains an index buffer, then the index buffer needs to provide indices for this many triangles. If the triangle descriptor doesn’t provide an index buffer, then the vertex buffer provides 3 vertices for each triangle.
 

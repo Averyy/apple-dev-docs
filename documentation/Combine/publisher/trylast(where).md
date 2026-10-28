@@ -21,11 +21,11 @@ Publishes the last element of a stream that satisfies an error-throwing predicat
 func tryLast(where predicate: @escaping (Self.Output) throws -> Bool) -> Publishers.TryLastWhere<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that only publishes the last element satisfying the given predicate.
 
-#### Discussion
+## Discussion
 
 Use [`tryLast(where:)`](./trylast%28where%29.md) when you need to republish the last element that satisfies an error-throwing closure you specify. If the predicate closure throws an error, the publisher fails.
 

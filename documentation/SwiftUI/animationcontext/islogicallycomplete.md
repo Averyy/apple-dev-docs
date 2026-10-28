@@ -21,7 +21,7 @@ Set this to `true` to indicate that an animation is logically complete.
 var isLogicallyComplete: Bool
 ```
 
-#### Discussion
+## Discussion
 
 This controls when AnimationCompletionCriteria.logicallyComplete completion callbacks are fired. This should be set to `true` at most once in the life of an animation, changing back to `false` later will be ignored. If this is never set to `true`, the behavior is equivalent to if this had been set to `true` just as the animation finished (by returning `nil`).
 

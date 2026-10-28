@@ -20,15 +20,15 @@ nonisolated
 func dragConfiguration(_ configuration: DragConfiguration) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that configures a drag session in a way, described by the `configuration` parameter.
 
-#### Discussion
+## Discussion
 
 Below is a simplified example of a view that supports copy, move and delete operations for drag.
 
-##### Drag to delete into trash bin
+### Drag to delete into trash bin
 
 If a view wants to support drag-to-delete into the trash bin or another location that has similar semantics, it should specify the support for this operation in a drag configuration:
 

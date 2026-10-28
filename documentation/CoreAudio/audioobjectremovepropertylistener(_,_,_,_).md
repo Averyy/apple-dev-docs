@@ -20,11 +20,11 @@ func AudioObjectRemovePropertyListener(_ inObjectID: AudioObjectID, _ inAddress:
 extern OSStatus AudioObjectRemovePropertyListener(AudioObjectID inObjectID, const AudioObjectPropertyAddress *inAddress, AudioObjectPropertyListenerProc inListener, void *inClientData);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Unregisters the given AudioObjectPropertyListenerProc from receiving notifications when the given properties change.
 

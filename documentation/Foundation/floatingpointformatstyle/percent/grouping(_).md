@@ -21,7 +21,7 @@ Modifies the format style to use the specified grouping.
 func grouping(_ group: FloatingPointFormatStyle<Value>.Percent.Configuration.Grouping) -> FloatingPointFormatStyle<Value>.Percent
 ```
 
-#### Return Value
+## Return Value
 
 A floating-point percent format style modified to use the specified grouping.
 

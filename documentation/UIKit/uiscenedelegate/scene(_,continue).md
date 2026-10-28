@@ -23,7 +23,7 @@ optional func scene(_ scene: UIScene, continue userActivity: NSUserActivity)
 - (void) scene:(UIScene *) scene continueUserActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to update the specified scene with the data from the provided activity object. UIKit calls this method on your app’s main thread only after it receives all of the data for an activity object, which might originate from a different device.
 

@@ -24,7 +24,7 @@ func didAppear()
 - [Navigating Between Scenes](../navigating-between-scenes.md)
 - [Working with the watchOS app life cycle](../working-with-the-watchos-app-life-cycle.md)
 
-#### Discussion
+## Discussion
 
 WatchKit calls this method shortly after the interface controller’s contents appear onscreen. Use this method to configure animations or other interface-related tasks.
 

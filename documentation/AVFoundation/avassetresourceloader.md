@@ -24,7 +24,7 @@ class AVAssetResourceLoader
 @interface AVAssetResourceLoader : NSObject
 ```
 
-#### Overview
+## Overview
 
 You do not create resource loader objects yourself. Instead, you retrieve a resource loader from the [`resourceLoader`](./avurlasset/resourceloader.md) property of an [`AVURLAsset`](./avurlasset.md) object and use it to assign your custom delegate object.
 

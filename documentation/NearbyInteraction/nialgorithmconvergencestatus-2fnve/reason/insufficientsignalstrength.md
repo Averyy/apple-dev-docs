@@ -18,7 +18,7 @@ Indicates that the users might be too far apart.
 static let insufficientSignalStrength: NIAlgorithmConvergenceStatus.Reason
 ```
 
-#### Discussion
+## Discussion
 
 Coach the user to resolve the issue, such as by presenting text that instructs the user to move closer to the nearby peer or object.
 

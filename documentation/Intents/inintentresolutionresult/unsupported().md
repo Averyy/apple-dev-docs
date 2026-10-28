@@ -25,11 +25,11 @@ class func unsupported() -> Self
 + (instancetype) unsupported;
 ```
 
-#### Return Value
+## Return Value
 
 A new resolution result object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a resolution result object when your app doesn’t support an intent parameter. When you return a resolution of this type, Siri prompts the user to provide a new value and then passes that value back to you for resolution. The cycle of prompting the user and asking you to resolve the parameter continues until you resolve the parameter successfully.
 

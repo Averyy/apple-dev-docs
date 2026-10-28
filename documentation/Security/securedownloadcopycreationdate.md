@@ -15,7 +15,7 @@ Returns download ticket’s creation date.
 OSStatus SecureDownloadCopyCreationDate(SecureDownloadRef downloadRef, CFDateRef*date);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Download Result Codes](./secure-download-result-codes.md).
 

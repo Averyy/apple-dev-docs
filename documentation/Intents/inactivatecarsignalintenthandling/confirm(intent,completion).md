@@ -27,7 +27,7 @@ optional func confirm(intent: INActivateCarSignalIntent) async -> INActivateCarS
 - (void) confirmActivateCarSignal:(INActivateCarSignalIntent *) intent completion:(void (^)(INActivateCarSignalIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to validate that your app can activate the car’s signals given the data in the provided intent. For example, you should validate that the app can currently access the car. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to activate the car’s signals.
 

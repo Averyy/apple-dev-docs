@@ -25,7 +25,7 @@ var optimizesAuxiliaryContentConfigurations: Bool { get set }
 @property (nonatomic) BOOL optimizesAuxiliaryContentConfigurations;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a download task optimizes its selection of auxiliary content based on its primary download content. For example, if the primary content configuration represents stereo renditions, and auxiliary content configuration represents multichannel audio renditions, the task choses the auxiliary multichannel variant to avoid downloading duplicate video renditions.
 

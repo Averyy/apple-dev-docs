@@ -20,7 +20,7 @@ Creates a component value with the provided poses.
 init(poses: [SkeletalPose])
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: When multiple poses share the same identifier, only the first one is accessible using its identifier.
 

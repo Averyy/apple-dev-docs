@@ -21,7 +21,7 @@ Returns a regular expression that ignores case when matching.
 func ignoresCase(_ ignoresCase: Bool = true) -> Regex<Output>
 ```
 
-#### Return Value
+## Return Value
 
 The modified regular expression.
 

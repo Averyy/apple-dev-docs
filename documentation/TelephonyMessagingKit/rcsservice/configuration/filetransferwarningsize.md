@@ -15,7 +15,7 @@ The size for issuing a warning about file transfers and Rich Card media objects.
 let fileTransferWarningSize: Measurement<UnitInformationStorage>?
 ```
 
-#### Discussion
+## Discussion
 
 This value is equivalent to `FT WARN SIZE` in the RCS specification. Consult the specification for handling pre-recorded video that uses a resolution greater than 480p encoded at 1200 kbps. The specification’s guidance differs based on whether the file size is less than or greater than the warning size value. Your app may need to warn the person sending the video or force recompression to reduce its size.
 

@@ -19,7 +19,7 @@ var pageTitle: String! { get }
 @property (nonatomic, copy, readonly) NSString * pageTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The associated web view notifies its frame load delegate when the page title is loaded by invoking the `webView:didReceiveTitle:forFrame:` delegate method.
 

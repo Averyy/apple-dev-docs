@@ -16,11 +16,11 @@ Method to execute the SCSITask asynchronously.
 IOReturn (*ExecuteTaskAsync)(void *task);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a valid IOReturn code such as kIOReturnSuccess, kIOReturnError, kIOReturnVMError, kIOReturnCannotWire, etc. It will return kIOReturnNotPermitted if the client has not called AddCallbackDispatcherToRunLoop on the SCSITaskDeviceInterface. NOTE: IOReturn is defined as kern_return_t and as such, you may get errors back that do not fall under the IOKit subsystem error domain (sys_iokit) defined in IOReturn.h.
 
-#### Discussion
+## Discussion
 
 This method can be used to execute the SCSITask asynchronously.
 

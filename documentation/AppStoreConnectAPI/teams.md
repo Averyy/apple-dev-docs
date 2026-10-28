@@ -5,7 +5,7 @@
 
 Manage the teams that you add to matchmaking rule sets.
 
-#### Overview
+## Overview
 
 The `team` resource represents an optional game-specific team that Game Center assigns to players using team rules. For more information, see [Assigning players to teams using rules](../GameKit/assigning-players-to-teams-using-rules.md).
 

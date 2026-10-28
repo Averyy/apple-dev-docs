@@ -25,7 +25,7 @@ case always
 NSHTTPCookieAcceptPolicyAlways
 ```
 
-#### Discussion
+## Discussion
 
 This is the default cookie accept policy.
 

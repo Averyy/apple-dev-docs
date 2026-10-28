@@ -15,7 +15,7 @@ SCSI Protocol Driver Family for ATAPI Devices.
 class IOATAPIProtocolTransport : IOSCSIProtocolServices
 ```
 
-#### Overview
+## Overview
 
 IOATAPIProtocolTransport contains all the bus specific support for ATAPI compliant devices. To add vendor specific features or workarounds you will sub-class the appropriate methods of this family.
 

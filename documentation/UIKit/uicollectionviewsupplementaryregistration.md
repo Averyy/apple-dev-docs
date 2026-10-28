@@ -19,7 +19,7 @@ A registration for the collection view’s supplementary views.
 @interface UICollectionViewSupplementaryRegistration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a supplementary registration to register supplementary views, like headers and footers, with your collection view and configure each view for display. You create a supplementary registration with your supplementary view type and data item type as the registration’s generic parameters, passing in a registration handler to configure the view. In the registration handler, you specify how to configure the content and appearance of that type of supplementary view.
 

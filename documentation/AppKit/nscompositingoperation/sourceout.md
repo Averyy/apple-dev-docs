@@ -19,7 +19,7 @@ case sourceOut
 NSCompositingOperationSourceOut
 ```
 
-#### Discussion
+## Discussion
 
 The source image is applied using the formula `R = S*(1 - Da)`.
 

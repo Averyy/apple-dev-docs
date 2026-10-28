@@ -25,11 +25,11 @@ func CTFontDescriptorMatchFontDescriptorsWithProgressHandler(_ descriptors: CFAr
 extern bool CTFontDescriptorMatchFontDescriptorsWithProgressHandler(CFArrayRef descriptors, CFSetRef mandatoryAttributes, CTFontDescriptorProgressHandler progressBlock);
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../Swift/false.md) if the system couldn’t start the matching process.
 
-#### Discussion
+## Discussion
 
 This function returns immediately, but it can take longer to finish the process. The `progressBlock` handler tracks the progress.
 

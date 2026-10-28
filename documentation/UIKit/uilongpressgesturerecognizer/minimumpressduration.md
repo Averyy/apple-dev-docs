@@ -27,7 +27,7 @@ var minimumPressDuration: TimeInterval { get set }
 
 - [Handling long-press gestures](../handling-long-press-gestures.md)
 
-#### Discussion
+## Discussion
 
 The time interval is in seconds. The default duration is `0.5` seconds.
 

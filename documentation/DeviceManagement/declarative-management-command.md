@@ -15,11 +15,11 @@ Enable your server to support declarative management or trigger a declarative ma
 - visionOS 1.1+
 - watchOS 10.0+
 
-#### Discussion
+## Discussion
 
 The server uses this command to turn on the declarative management engine on the device the first time the server sends it. Subsequent commands trigger a declarative management synchronization operation.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -29,7 +29,7 @@ The server uses this command to turn on the declarative management engine on the
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | N/A |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

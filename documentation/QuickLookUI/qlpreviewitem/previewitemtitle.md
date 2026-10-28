@@ -19,7 +19,7 @@ optional var previewItemTitle: String! { get }
 @property (readonly) NSString * previewItemTitle;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t implement a getter method for this property, or if your method returns `nil`, Quick Look examines the URL or content of the previewed item to determine an appropriate title. Return a `non-nil` value for this property to provide a custom title.
 

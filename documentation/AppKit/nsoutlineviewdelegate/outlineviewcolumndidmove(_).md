@@ -20,7 +20,7 @@ optional func outlineViewColumnDidMove(_ notification: Notification)
 - (void) outlineViewColumnDidMove:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked as a result of posting an [`columnDidMoveNotification`](../nsoutlineview/columndidmovenotification.md).
 

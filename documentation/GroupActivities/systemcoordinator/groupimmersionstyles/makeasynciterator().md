@@ -15,7 +15,7 @@ Creates the asynchronous iterator that produces elements of this asynchronous se
 func makeAsyncIterator() -> SystemCoordinator.GroupImmersionStyles.Iterator
 ```
 
-#### Return Value
+## Return Value
 
 An instance of the `AsyncIterator` type used to produce elements of the asynchronous sequence.
 

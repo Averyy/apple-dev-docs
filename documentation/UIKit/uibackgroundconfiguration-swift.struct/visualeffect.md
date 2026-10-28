@@ -19,7 +19,7 @@ The visual effect that the configuration applies to the background.
 var visualEffect: UIVisualEffect? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

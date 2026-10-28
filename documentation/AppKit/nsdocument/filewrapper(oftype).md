@@ -19,11 +19,11 @@ func fileWrapper(ofType typeName: String) throws -> FileWrapper
 - (NSFileWrapper *) fileWrapperOfType:(NSString *) typeName error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A file wrapper containing the document contents, or, if the file wrapper could not be created, `nil`.
 
-#### Discussion
+## Discussion
 
 For backward binary compatibility with OS X v10.3 and earlier, if [`fileWrapperRepresentationOfType:`](./filewrapperrepresentationoftype_.md) is overridden, the default implementation of this method instead invokes `[self fileWrapperRepresentationOfType:typeName]`.
 

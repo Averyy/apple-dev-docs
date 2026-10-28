@@ -21,7 +21,7 @@ An error that occurs when CloudKit attempts to share a record with an existing s
 static var alreadyShared: CKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 A record can exist in only a single share at a time. This error means that one of the following conditions exists:
 

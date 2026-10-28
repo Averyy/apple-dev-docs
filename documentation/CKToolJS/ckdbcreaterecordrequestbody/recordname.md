@@ -15,7 +15,7 @@ The unique name used to identify the record within a zone.
 attribute string? recordName;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is a random UUID.
 

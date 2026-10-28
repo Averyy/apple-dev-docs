@@ -25,7 +25,7 @@ func imp_removeBlock(_ anImp: IMP) -> Bool
 extern BOOL imp_removeBlock(IMP anImp);
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](./yes.md) if the block was released successfully; otherwise, [`NO`](./no.md) (for example, the function returns [`NO`](./no.md) if the block was not used to create `anImp` previously).
 

@@ -17,7 +17,7 @@ Applies the HardShrink activation function.
 func hardShrink(_ x: MLXArray, lambda: Float = 0.5) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is (element-wise):
 

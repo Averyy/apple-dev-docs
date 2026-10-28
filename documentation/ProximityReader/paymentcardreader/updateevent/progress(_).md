@@ -19,7 +19,7 @@ The current update progress, specified as an integer value from 1 to 100.
 case progress(Int)
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the completion percentage of the update process.
 

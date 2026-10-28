@@ -24,7 +24,7 @@ class func predicateForGroupsInContainer(withIdentifier containerIdentifier: Str
 + (NSPredicate *) predicateForGroupsInContainerWithIdentifier:(NSString *) containerIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that you can use to fetch groups from [`CNContactStore`](../cncontactstore.md).
 

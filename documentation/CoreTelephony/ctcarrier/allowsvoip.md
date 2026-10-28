@@ -23,7 +23,7 @@ var allowsVOIP: Bool { get }
 @property (nonatomic, assign, readonly) BOOL allowsVOIP;
 ```
 
-#### Discussion
+## Discussion
 
 A read-only Boolean value that is [`true`](../../Swift/true.md) if the carrier allows making VoIP calls on its network, or [`false`](../../Swift/false.md) if not.
 

@@ -25,11 +25,11 @@ func addTarget(handler: @escaping (MPRemoteCommandEvent) -> MPRemoteCommandHandl
 - (id) addTargetWithHandler:(MPRemoteCommandHandlerStatus (^)(MPRemoteCommandEvent *event)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 An opaque object associated with the designated handler.
 
-#### Discussion
+## Discussion
 
 Call the [`addTarget(handler:)`](./addtarget%28handler%29.md) method to add a block to be called. Remove the handler by calling the [`removeTarget(_:)`](./removetarget%28_%29.md) method, passing in the object returned by this method.
 

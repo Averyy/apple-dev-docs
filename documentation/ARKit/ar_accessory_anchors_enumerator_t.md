@@ -15,11 +15,11 @@ Handler for enumerating a collection of accessory anchors.
 typedef _Bool (^)(NSObject<OS_ar_accessory_anchor> *) ar_accessory_anchors_enumerator_t;
 ```
 
-#### Return Value
+## Return Value
 
 `true` to continue enumerating to the next accessory anchor in the collection, `false` to stop enumerating.
 
-#### Discussion
+## Discussion
 
 > **Note**: Enumeration is not thread-safe. The enumerator must not retain or release objects.
 

@@ -21,7 +21,7 @@ A view of a string’s contents as a collection of characters.
 typealias CharacterView = Substring
 ```
 
-#### Discussion
+## Discussion
 
 Previous versions of Swift provided this view since String itself was not a collection. String is now a collection of characters, so this type is now just an alias for String.
 

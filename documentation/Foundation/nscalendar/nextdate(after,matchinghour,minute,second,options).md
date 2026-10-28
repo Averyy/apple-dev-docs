@@ -25,7 +25,7 @@ func nextDate(after date: Date, matchingHour hourValue: Int, minute minuteValue:
 - (NSDate *) nextDateAfterDate:(NSDate *) date matchingHour:(NSInteger) hourValue minute:(NSInteger) minuteValue second:(NSInteger) secondValue options:(NSCalendarOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDate` object.
 

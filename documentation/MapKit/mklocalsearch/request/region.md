@@ -25,7 +25,7 @@ var region: MKCoordinateRegion { get set }
 @property (nonatomic, assign) MKCoordinateRegion region;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this parameter to narrow the list of search results to those inside or close to the specified region. Specifying a region doesn’t ensure that the results are all inside the region. It’s merely a hint to the search engine.
 

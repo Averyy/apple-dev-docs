@@ -17,7 +17,7 @@ A state that represents a person’s approval of Automatic Sign-In.
 @property (nonatomic, readonly) VSAutoSignInAuthorization authorization;
 ```
 
-#### Discussion
+## Discussion
 
 If the person approves the prompt to enable Automatic Sign-In, the framework sets the value to [`VSAutoSignInAuthorizationGranted`](../vsautosigninauthorization/vsautosigninauthorizationgranted.md). If the person denies the prompt, the framework sets the value to [`VSAutoSignInAuthorizationDenied`](../vsautosigninauthorization/vsautosigninauthorizationdenied.md).
 

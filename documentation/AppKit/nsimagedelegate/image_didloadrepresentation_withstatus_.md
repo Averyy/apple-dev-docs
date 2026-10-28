@@ -15,7 +15,7 @@ Tells the delegate that an incrementally loaded image has been loaded and decomp
 - (void) image:(NSImage *) image didLoadRepresentation:(NSImageRep *) rep withStatus:(NSImageLoadStatus) status;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must implement this method if it wants to support the incremental loading of images. In that case, you must also set up the image object to be loaded lazily, by initializing it using the  [`init(byReferencingFile:)`](../nsimage/init%28byreferencingfile%29.md) or [`init(byReferencing:)`](../nsimage/init%28byreferencing%29.md) method.
 

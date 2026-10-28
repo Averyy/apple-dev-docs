@@ -19,7 +19,7 @@ var name: String? { get set }
 @property (copy, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The default behavior is to not use a name unless set.
 

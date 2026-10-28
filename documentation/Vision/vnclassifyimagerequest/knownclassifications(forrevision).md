@@ -26,7 +26,7 @@ class func knownClassifications(forRevision requestRevision: Int) throws -> [VNC
 + (NSArray<VNClassificationObservation *> *) knownClassificationsForRevision:(NSUInteger) requestRevision error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array of classifications for the revision, or `nil` if an error occurs.
 

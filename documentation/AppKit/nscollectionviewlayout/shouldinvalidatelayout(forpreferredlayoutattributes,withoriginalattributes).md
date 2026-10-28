@@ -19,11 +19,11 @@ func shouldInvalidateLayout(forPreferredLayoutAttributes preferredAttributes: NS
 - (BOOL) shouldInvalidateLayoutForPreferredLayoutAttributes:(NSCollectionViewLayoutAttributes *) preferredAttributes withOriginalAttributes:(NSCollectionViewLayoutAttributes *) originalAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the layout should be invalidated or [`false`](../../Swift/false.md) if it should not.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns NO to indicate that layout is not needed. You can override this method in your custom layout classes and return a different value as needed. Your implementation of this method should determine if the new attributes would cause changes to the layout of other portions of the collection view.
 

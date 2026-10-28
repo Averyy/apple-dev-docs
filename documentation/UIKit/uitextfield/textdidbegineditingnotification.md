@@ -24,7 +24,7 @@ class let textDidBeginEditingNotification: NSNotification.Name
 extern NSNotificationName const UITextFieldTextDidBeginEditingNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The affected text field is stored in the `object` parameter of the notification. The `userInfo` dictionary is not used.
 

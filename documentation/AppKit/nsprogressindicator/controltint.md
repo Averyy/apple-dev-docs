@@ -21,7 +21,7 @@ var controlTint: NSControlTint { get set }
 @property NSControlTint controlTint;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSCell`](../nscell.md) for possible values.
 

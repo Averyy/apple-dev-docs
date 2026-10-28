@@ -24,7 +24,7 @@ func MusicTrackNewParameterEvent(_ inTrack: MusicTrack, _ inTimeStamp: MusicTime
 extern OSStatus MusicTrackNewParameterEvent(MusicTrack inTrack, MusicTimeStamp inTimeStamp, const ParameterEvent *inInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

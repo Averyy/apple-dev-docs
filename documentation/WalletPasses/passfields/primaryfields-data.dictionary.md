@@ -24,7 +24,7 @@ object PassFields.PrimaryFields
 - [Creating a poster event pass using semantic tags](../creating-an-event-pass-using-semantic-tags.md)
 - [Creating the Source for a Pass](../creating-the-source-for-a-pass.md)
 
-#### Discussion
+## Discussion
 
 Use this field to provide information that helps people use the pass, for example, the city departure and destination names for a boarding pass or the type of admission (general, VIP) for an event pass.
 

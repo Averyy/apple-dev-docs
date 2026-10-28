@@ -19,7 +19,7 @@ var isRotatedFromBase: Bool { get }
 @property (readonly, getter=isRotatedFromBase) BOOL rotatedFromBase;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the view or any of its ancestors has had its [`frameRotation`](./framerotation.md) or [`boundsRotation`](./boundsrotation.md) properties modified at any time. The value is still [`true`](../../Swift/true.md) if the rotation factor is changed to a nonzero value and then back to 0.
 

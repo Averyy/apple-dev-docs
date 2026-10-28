@@ -19,7 +19,7 @@ The width of the stroke.
 @property (nonatomic) CGFloat strokeWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`.
 

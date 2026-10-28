@@ -23,7 +23,7 @@ var backAction: UIAction? { get set }
 @property (nonatomic, copy, readwrite, nullable) UIAction * backAction;
 ```
 
-#### Discussion
+## Discussion
 
 If a back button already appears in the navigation bar, setting this property replaces its action without modifying its appearance. Otherwise, setting this property generates a back button with the image or title from the action you specify, unless you use the [`UINavigationItem.ItemStyle.editor`](./itemstyle/editor.md) navigation style.
 

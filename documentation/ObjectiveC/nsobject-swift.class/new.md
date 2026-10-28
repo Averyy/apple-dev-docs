@@ -21,11 +21,11 @@ Allocates a new instance of the receiving class, sends it an [`init()`](./init%2
 + (instancetype) new;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the receiver.
 
-#### Discussion
+## Discussion
 
 This method is a combination of [`alloc`](./alloc.md) and [`init()`](./init%28%29.md). Like [`alloc`](./alloc.md), it initializes the `isa` instance variable of the new object so it points to the class data structure. It then invokes the [`init()`](./init%28%29.md) method to complete the initialization process.
 

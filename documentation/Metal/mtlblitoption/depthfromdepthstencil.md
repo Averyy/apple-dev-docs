@@ -24,7 +24,7 @@ static var depthFromDepthStencil: MTLBlitOption { get }
 MTLBlitOptionDepthFromDepthStencil
 ```
 
-#### Discussion
+## Discussion
 
 You can pass this option to some methods that copy data between a buffer and a texture, including the following:
 

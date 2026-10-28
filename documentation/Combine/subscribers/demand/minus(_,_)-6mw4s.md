@@ -21,7 +21,7 @@ Returns the result of subtracting an integer from a demand.
 static func - (lhs: Subscribers.Demand, rhs: Int) -> Subscribers.Demand
 ```
 
-#### Discussion
+## Discussion
 
 When subtracting any value from `.unlimited`, the result is still `.unlimited`. A negative demand is possible, but be aware that it isn’t usable when requesting values in a subscription.
 

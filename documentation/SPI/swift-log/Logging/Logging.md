@@ -11,7 +11,7 @@ framework: "swift-log/Logging"
 
 A unified, performant, and ergonomic logging API for Swift.
 
-#### Overview
+## Overview
 
 SwiftLog provides a logging API package designed to establish a common API the ecosystem can use. It allows packages to emit log messages without tying them to any specific logging implementation, while applications can choose any compatible logging backend.
 
@@ -22,11 +22,11 @@ SwiftLog is an *API package* which cuts the logging problem in half:
 
 This separation allows libraries to adopt the API while applications choose any compatible logging backend implementation without requiring changes from libraries.
 
-##### Getting Started
+### Getting Started
 
 Use this package if you’re writing a cross-platform application (for example, Linux and macOS) or library, and want to target this logging API.
 
-##### Adding the Dependency
+### Adding the Dependency
 
 Add the dependency to your `Package.swift`:
 
@@ -45,7 +45,7 @@ And to your target:
 )
 ```
 
-##### Basic Usage
+### Basic Usage
 
 ```swift
 // Import the logging API
@@ -64,7 +64,7 @@ This outputs:
 2025-10-24T17:26:47-0700 info MyLogger: [your_app] Hello World!
 ```
 
-##### Default Behavior
+### Default Behavior
 
 SwiftLog provides basic console logging via [`StreamLogHandler`](./streamloghandler.md). By default it uses `stdout`, however, you can configure it to use `stderr` instead:
 

@@ -14,11 +14,11 @@ virtual bool didTerminate(
  bool *defer );
 ```
 
-#### Return Value
+## Return Value
 
 `true`.
 
-#### Overview
+## Overview
 
 Notification that a provider has been terminated, sent after recursing up the stack, in leaf-to-root order.
 

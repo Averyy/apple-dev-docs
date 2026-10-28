@@ -25,7 +25,7 @@ var recordIDs: [CKRecord.ID]? { get set }
 @property (nonatomic, copy, nullable) NSArray<CKRecordID *> * recordIDs;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to view or change the IDs of the records you want to retrieve. If you use the operation that [`fetchCurrentUserRecordOperation()`](./fetchcurrentuserrecordoperation%28%29.md) returns, CloudKit ignores the contents of this property and sets its value to `nil`.
 

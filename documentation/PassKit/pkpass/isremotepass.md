@@ -24,7 +24,7 @@ var isRemotePass: Bool { get }
 @property (nonatomic, assign, readonly, getter=isRemotePass) BOOL remotePass;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the pass is on a paired device, such as an Apple Watch; otherwise, [`false`](../../Swift/false.md).
 

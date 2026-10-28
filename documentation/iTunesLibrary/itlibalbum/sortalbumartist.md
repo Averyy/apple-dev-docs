@@ -20,7 +20,7 @@ var sortAlbumArtist: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * sortAlbumArtist;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, the system uses [`albumArtist`](./albumartist.md) when sorting by album artist.
 

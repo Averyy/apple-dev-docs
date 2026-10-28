@@ -24,11 +24,11 @@ func convolutionTranspose2D(_ source: MPSGraphTensor, weights: MPSGraphTensor, o
 - (MPSGraphTensor *) convolutionTranspose2DWithSourceTensor:(MPSGraphTensor *) source weightsTensor:(MPSGraphTensor *) weights outputShape:(MPSShape *) outputShape descriptor:(MPSGraphConvolution2DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Convolution Tranpose operation is exactly the same as convolution gradint with respect to input image `convolution2DDataGradientWithIncomingGradient`. Weights tensor and source tensors are interpreted as they are in `convolution2DDataGradientWithIncomingGradient`. Convolution with stride `s` downsamples source tensor by factor `s` in spatial dimensions whereas convolution tranpose with stride `s` upsamples source tensor by factor `s`. Convolution transpose can map the same source size to multiple destination sizes. The relationship between the width of the source and the width of the destination is `(sourceWidth - 1)stride + 1 + (kernelWidth - 1)dilationRate <= destinationWidth + paddingLeft + paddingRight` so there are stride -1 values of the width of the destination that give same width of the source. In order to disambiguate, outputShape parameter is used.
 

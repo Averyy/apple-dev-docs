@@ -23,7 +23,7 @@ func GSSCreateName(_ name: CFTypeRef, _ name_type: gss_const_OID, _ error: Unsaf
 gss_name_tGSSCreateName(CFTypeRef name, gss_const_OID name_type, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A GSS name for the given buffer and type, or `NULL` on failure. Release this object with a call to [`gss_release_name(_:_:)`](./gss_release_name%28_,_%29.md) when you are done with it.
 

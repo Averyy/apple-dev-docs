@@ -21,7 +21,7 @@ Indicates a collection of SwiftUI view modifiers to add to the Xcode library.
 func modifiers(base: Self.ModifierBase) -> [LibraryItem]
 ```
 
-#### Discussion
+## Discussion
 
 Xcode adds the [`LibraryItem`](../libraryitem.md) instances returned by your implementation of this method to its Modifiers library. The following restrictions apply:
 

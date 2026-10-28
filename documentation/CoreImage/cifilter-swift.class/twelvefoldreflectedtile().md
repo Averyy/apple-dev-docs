@@ -24,11 +24,11 @@ class func twelvefoldReflectedTile() -> any CIFilter & CITwelvefoldReflectedTile
 + (CIFilter<CITwelvefoldReflectedTile> *) twelvefoldReflectedTileFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The tiled image.
 
-#### Discussion
+## Discussion
 
 This method applies the 12-fold reflected tile filter to an image. The effect produces a 12-way reflected tile image.
 

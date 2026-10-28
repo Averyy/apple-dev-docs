@@ -19,7 +19,7 @@ Returns the on-curve point for the provided floating point parameter.
 func interpolatedPoint(at parametricValue: CGFloat) -> PKStrokePoint
 ```
 
-#### Return Value
+## Return Value
 
 A [`PKStrokePoint`](../pkstrokepoint-swift.struct.md) interpolated from the supplied `parametricValue.`
 

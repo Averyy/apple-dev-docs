@@ -24,7 +24,7 @@ var dataTypes: BEExportOptions.DataTypes { get }
 
 - [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
-#### Discussion
+## Discussion
 
 This property identifies the person’s choice of data to include in the export, as specified in the framework-provided sheet.
 

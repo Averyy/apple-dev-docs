@@ -21,7 +21,7 @@ The entitlement value if the task is successful.
 var value: Value? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` while the value is loading, or if it fails to load for any reason.
 

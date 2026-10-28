@@ -23,7 +23,7 @@ let NSMetadataItemIsUbiquitousKey: String
 extern NSString * const NSMetadataItemIsUbiquitousKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSNumber`](./nsnumber.md) object that contains a Boolean indicating whether the item is stored in the cloud.
 

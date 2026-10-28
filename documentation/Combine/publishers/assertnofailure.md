@@ -21,7 +21,7 @@ A publisher that raises a fatal error upon receiving any failure, and otherwise 
 struct AssertNoFailure<Upstream> where Upstream : Publisher
 ```
 
-#### Overview
+## Overview
 
 Use this function for internal integrity checks that are active during testing but don’t affect performance of shipping code.
 

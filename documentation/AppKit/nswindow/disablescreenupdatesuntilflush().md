@@ -21,7 +21,7 @@ func disableScreenUpdatesUntilFlush()
 - (void) disableScreenUpdatesUntilFlush;
 ```
 
-#### Discussion
+## Discussion
 
 This method can be invoked to synchronize hardware surface flushes with the window’s flushes. The window immediately disables screen updates using the [`NSDisableScreenUpdates()`](../nsdisablescreenupdates%28%29.md) function and reenables screen updates when the window flushes. Sending this message multiple times during a window update cycle has no effect.
 

@@ -24,7 +24,7 @@ static let external: AVCaptureDevice.DeviceType
 extern AVCaptureDeviceType const AVCaptureDeviceTypeExternal;
 ```
 
-#### Discussion
+## Discussion
 
 On iPad, external devices are those that conform to the UVC (USB Video Class) specification.
 

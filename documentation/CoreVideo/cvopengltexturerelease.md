@@ -15,7 +15,7 @@ Releases a Core Video OpenGL texture.
 extern void CVOpenGLTextureRelease(CVOpenGLTextureRef texture);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to `CFRelease`, but is `NULL` safe.
 

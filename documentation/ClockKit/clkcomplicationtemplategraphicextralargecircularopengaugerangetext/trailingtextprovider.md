@@ -22,7 +22,7 @@ var trailingTextProvider: CLKTextProvider { get set }
 @property (nonatomic, copy) CLKTextProvider * trailingTextProvider;
 ```
 
-#### Discussion
+## Discussion
 
 This property supports multicolor text.
 

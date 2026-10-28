@@ -24,7 +24,7 @@ let AVAssetExportPresetMediumQuality: String
 extern NSString * const AVAssetExportPresetMediumQuality;
 ```
 
-#### Discussion
+## Discussion
 
 This preset compresses video in H.264 format and audio in AAC format.
 

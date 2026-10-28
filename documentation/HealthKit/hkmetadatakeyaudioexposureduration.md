@@ -24,7 +24,7 @@ let HKMetadataKeyAudioExposureDuration: String
 extern NSString * const HKMetadataKeyAudioExposureDuration;
 ```
 
-#### Discussion
+## Discussion
 
 Use this key on headphone audio exposure events. It takes an [`HKQuantity`](./hkquantity.md) containing the audio level measured in units of time.
 

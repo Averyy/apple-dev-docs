@@ -23,7 +23,7 @@ A type that represents the number of steps between two `String.Index` values, wh
 typealias IndexDistance = Int
 ```
 
-#### Discussion
+## Discussion
 
 In Swift, *reachability* refers to the ability to produce one value from the other through zero or more applications of `index(after:)`.
 

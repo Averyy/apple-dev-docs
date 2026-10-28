@@ -21,11 +21,11 @@ Sets a UUID to associate the purchase with an account in your system.
 static func appAccountToken(_ token: UUID) -> Product.PurchaseOption
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`Product.PurchaseOption`](../purchaseoption.md) to use in [`purchase(options:)`](../purchase%28options%29.md).
 
-#### Discussion
+## Discussion
 
 When you set the app account token in the purchase options, the App Store returns the same app account token value in the resulting transaction, in [`appAccountToken`](../../transaction/appaccounttoken.md).
 

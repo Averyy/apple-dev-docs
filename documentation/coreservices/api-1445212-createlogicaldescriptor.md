@@ -19,11 +19,11 @@ func CreateLogicalDescriptor(_ theLogicalTerms: UnsafeMutablePointer<AEDescList>
 OSErr CreateLogicalDescriptor(AEDescList *theLogicalTerms, DescType theLogicOperator, Boolean disposeInputs, AEDesc *theDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 The `CreateLogicalDescriptor` function creates a logical descriptor, which specifies a logical operator and one or more logical terms for the Apple Event Manager to evaluate. 
 

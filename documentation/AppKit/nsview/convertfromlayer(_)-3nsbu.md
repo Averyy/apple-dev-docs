@@ -19,11 +19,11 @@ func convertFromLayer(_ point: NSPoint) -> NSPoint
 - (NSPoint) convertPointFromLayer:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The point in the view’s interior coordinate system.
 
-#### Discussion
+## Discussion
 
 The layer’s space is virtual, and doesn’t take into account the layer’s [`contentsScale`](../../QuartzCore/calayer/contentsscale.md) setting.
 

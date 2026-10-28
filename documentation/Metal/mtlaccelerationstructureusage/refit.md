@@ -24,7 +24,7 @@ static var refit: MTLAccelerationStructureUsage { get }
 MTLAccelerationStructureUsageRefit
 ```
 
-#### Discussion
+## Discussion
 
 Apply this option to make a modifiable acceleration structure, which you can update over time, such as for geometry changes. By default, the framework builds immutable acceleration structures for performance. When you apply the [`refit`](./refit.md) option, the framework builds an acceleration structure more conservatively, which can reduce its intersection performance.
 

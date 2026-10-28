@@ -21,7 +21,7 @@ An activation function that returns its input when that is greater than or equal
 BNNSActivationFunctionLeakyRectifiedLinear
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

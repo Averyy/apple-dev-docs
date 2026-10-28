@@ -22,7 +22,7 @@ func widgetSearch(_ controller: NCWidgetSearchViewController, resultSelected obj
 - (void) widgetSearch:(NCWidgetSearchViewController *) controller resultSelected:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 When this method returns, the search view controller is dismissed.
 

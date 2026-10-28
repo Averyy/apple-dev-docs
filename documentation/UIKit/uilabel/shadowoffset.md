@@ -23,7 +23,7 @@ var shadowOffset: CGSize { get set }
 @property (nonatomic) CGSize shadowOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The shadow color must be not be `nil` for this property to have any effect. The default offset size is `(0, -1)`, which indicates a shadow one point above the text. A label draws its text shadows with the specified offset and color and no blurring.
 

@@ -21,11 +21,11 @@ Returns the elements of the sequence, shuffled using the given generator as a so
 func shuffled<T>(using generator: inout T) -> [Self.Element] where T : RandomNumberGenerator
 ```
 
-#### Return Value
+## Return Value
 
 An array of this sequence’s elements in a shuffled order.
 
-#### Discussion
+## Discussion
 
 You use this method to randomize the elements of a sequence when you are using a custom random number generator. For example, you can shuffle the numbers between `0` and `9` by calling the `shuffled(using:)` method on that range:
 

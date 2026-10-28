@@ -23,7 +23,7 @@ var kDNSServiceErr_NATPortMappingUnsupported: Int { get }
 kDNSServiceErr_NATPortMappingUnsupported
 ```
 
-#### Discussion
+## Discussion
 
 The NAT gateway doesn’t support PCP, NAT-PMP or UPnP.
 

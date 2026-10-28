@@ -19,7 +19,7 @@ static let individuallySpokenCharacters: NSSpeechSynthesizer.VoiceAttributeKey
 extern NSVoiceAttributeKey const NSVoiceIndividuallySpokenCharacters;
 ```
 
-#### Discussion
+## Discussion
 
 Each list entry is a dictionary containing two keys: “UnicodeCharBegin”, an integer value containing the beginning Unicode id of this range; and “UnicodeCharEnd”, an integer value containing the ending Unicode id of this range. Your application can use these ranges to determine if the voice can speak the name of an individual character when spoken in character-by-character mode.
 

@@ -15,7 +15,7 @@ A list of FeliCa system codes that the app supports.
 - **Name**: `com.apple.developer.nfc.readersession.felica.systemcodes`
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 Each system code must be a discrete value. The wild card value (0xFF) isn’t allowed.
 

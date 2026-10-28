@@ -15,7 +15,7 @@ The current state of the request.
 attribute string state;
 ```
 
-#### Discussion
+## Discussion
 
 You create and send this property to Apple, and Apple returns it during authentication. Provide information about the state of your app inside of the property, such as “Initial user authentication request”. Use this property to help authenticate the returned response by comparing Apple’s response to the state you sent.
 

@@ -22,7 +22,7 @@ Divides the first value by the second and stores the quotient in the left-hand-s
 static func /= (lhs: inout Self, rhs: Self)
 ```
 
-#### Discussion
+## Discussion
 
 For integer types, any remainder of the division is discarded.
 

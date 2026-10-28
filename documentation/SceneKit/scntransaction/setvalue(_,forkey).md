@@ -25,7 +25,7 @@ class func setValue(_ value: Any?, forKey key: String)
 + (void) setValue:(id) value forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Nested transactions have nested data scope. Setting a value for a key associates it with the current transaction (or innermost nested transaction) only, and reading the value for a key searches through nested transactions (starting from the innermost).
 

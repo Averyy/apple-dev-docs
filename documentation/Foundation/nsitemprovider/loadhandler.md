@@ -25,7 +25,7 @@ typealias LoadHandler = @Sendable (NSItemProvider.CompletionHandler?, AnyClass?,
 typedef void (^)(void (^)(__kindof id<NSSecureCoding>, NSError *), Class, NSDictionary *) NSItemProviderLoadHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this block when registering a type-specific coercion handler with the [`registerItem(forTypeIdentifier:loadHandler:)`](./registeritem%28fortypeidentifier,loadhandler%29.md) method. The parameters for this block are as follows:
 

@@ -25,7 +25,7 @@ typealias nw_txt_record_applier_t = (UnsafePointer<CChar>, nw_txt_record_find_ke
 typedef _Bool (^)(const char *, nw_txt_record_find_key_t, const unsigned char *, unsigned long) nw_txt_record_applier_t;
 ```
 
-#### Return Value
+## Return Value
 
 Return true to continue iterating, or false to stop iterating.
 

@@ -17,17 +17,17 @@ Retrieves the owner and the access control list of a given access object.
 OSStatus SecAccessGetOwnerAndACL(SecAccessRef accessRef, CSSM_ACL_OWNER_PROTOTYPE_PTR*owner, uint32 *aclCount, CSSM_ACL_ENTRY_INFO_PTR*acls);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function is deprecated. Use [`SecAccessCopyOwnerAndACL(_:_:_:_:_:)`](./secaccesscopyownerandacl%28_,_,_,_,_%29.md) instead.
 
 This function returns CSSM structures for use with CSSM API functions.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated in macOS 10.7 and later. Use [`SecAccessCopyOwnerAndACL(_:_:_:_:_:)`](./secaccesscopyownerandacl%28_,_,_,_,_%29.md) instead.
 

@@ -11,11 +11,11 @@ Removes all packets from the queue and returns the head of the packet chain.
 virtual mbuf_t dequeueAll();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the head of a packet chain linking all packets that were held in the queue, or NULL if the queue was empty.
 
-#### Overview
+## Overview
 
 The size of the queue is cleared to zero.
 

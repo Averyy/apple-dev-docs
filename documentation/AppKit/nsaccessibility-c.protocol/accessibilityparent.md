@@ -15,7 +15,7 @@ The accessibility element’s parent in the accessibility hierarchy.
 @property (weak, nullable) id accessibilityParent;
 ```
 
-#### Discussion
+## Discussion
 
 This property must contain a reference to another element in the accessibility hierarchy. If you create an [`NSView`](../nsview.md) subclass, you don’t typically need to set this value. The system automatically sets the parent to the nearest ancestor in the view hierarchy that is also in the accessibility hierarchy. If you use an [`NSAccessibilityElement`](../nsaccessibilityelement-swift.class.md) subclass to represent an interface element that is not backed by a view, you can either set the parent property or you can call the [`element(withRole:frame:label:parent:)`](../nsaccessibilityelement-swift.class/element%28withrole,frame,label,parent%29.md) convenience method, which sets it automatically.
 

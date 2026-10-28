@@ -24,7 +24,7 @@ var motionTransformBuffer: MTL4BufferRange { get set }
 @property (nonatomic) MTL4BufferRange motionTransformBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 Each instance can have a different number of keyframes that you configure via individual instance descriptors.
 

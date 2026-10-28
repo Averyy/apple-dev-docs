@@ -26,7 +26,7 @@ class JSONEncoder
 - [Uploading data to a website](./uploading-data-to-a-website.md)
 - [Encoding and Decoding Custom Types](./encoding-and-decoding-custom-types.md)
 
-#### Overview
+## Overview
 
 The example below shows how to encode an instance of a simple `GroceryProduct` type from a JSON object. The type adopts [`Codable`](../Swift/codable.md) so that it’s encodable as JSON using a [`JSONEncoder`](./jsonencoder.md) instance.
 

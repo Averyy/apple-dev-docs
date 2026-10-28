@@ -24,7 +24,7 @@ let HKMetadataKeyCoachedWorkout: String
 extern NSString * const HKMetadataKeyCoachedWorkout;
 ```
 
-#### Discussion
+## Discussion
 
 Set this key’s value to [`true`](../Swift/true.md) if the workout was performed with a coach or personal trainer; otherwise, set it to [`false`](../Swift/false.md).
 

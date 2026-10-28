@@ -6,7 +6,7 @@
 
 A 16-bit integer that specifies the transfer mode.
 
-#### Overview
+## Overview
 
 The transfer mode specifies which Boolean operation QuickDraw performs when drawing or transferring an image from one location to another. See [Graphics modes](../graphics_modes.md) for more information about graphics modes supported by QuickTime.
 

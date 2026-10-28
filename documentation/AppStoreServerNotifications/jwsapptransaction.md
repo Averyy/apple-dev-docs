@@ -15,7 +15,7 @@ App transaction information signed by the App Store, in JSON Web Signature (JWS)
 string JWSAppTransaction
 ```
 
-#### Discussion
+## Discussion
 
 For more information, refer to [`JWSAppTransaction`](../AppStoreServerAPI/jwsapptransaction.md).
 

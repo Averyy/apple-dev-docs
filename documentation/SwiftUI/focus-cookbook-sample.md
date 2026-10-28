@@ -13,7 +13,7 @@ Create custom focusable views with key-press handlers that accelerate keyboard i
 - macOS 14.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC23 session [10162: The SwiftUI cookbook for focus](https://developer.apple.com/wwdc23/10162/).
 

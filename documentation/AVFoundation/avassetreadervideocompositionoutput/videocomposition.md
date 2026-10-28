@@ -25,7 +25,7 @@ var videoComposition: AVVideoComposition? { get set }
 @property (nonatomic, copy, nullable) AVVideoComposition * videoComposition;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`AVVideoComposition`](../avvideocomposition.md) object that specifies the visual arrangement of video frames read from each source track over the timeline of the source asset.
 

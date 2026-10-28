@@ -25,7 +25,7 @@ case beginningOfSentence
 NSFormattingContextBeginningOfSentence
 ```
 
-#### Discussion
+## Discussion
 
 Use this context for dates or date symbols appearing at the beginning of a sentence.
 

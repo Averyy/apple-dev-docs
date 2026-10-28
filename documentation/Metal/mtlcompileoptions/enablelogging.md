@@ -28,7 +28,7 @@ var enableLogging: Bool { get set }
 
 - [Logging shader debug messages](../logging-shader-debug-messages.md)
 
-#### Discussion
+## Discussion
 
 Because logging incurs overhead, regardless of whether the system prints messages, you need to explicitly enable logging.
 

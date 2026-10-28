@@ -20,7 +20,7 @@ Creates an audio input object.
 init(buffer: CMReadySampleBuffer<CMReadOnlyDataBlockBuffer>)
 ```
 
-#### Discussion
+## Discussion
 
 The audio buffer must not overlap or precede other audio input, as determined by the buffer’s `presentationTimeStamp` value.
 

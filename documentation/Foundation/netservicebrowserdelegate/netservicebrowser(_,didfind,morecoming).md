@@ -24,11 +24,11 @@ optional func netServiceBrowser(_ browser: NetServiceBrowser, didFind service: N
 - (void) netServiceBrowser:(NSNetServiceBrowser *) browser didFindService:(NSNetService *) service moreComing:(BOOL) moreComing;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate uses this message to compile a list of available services. It should wait until `moreServicesComing` is [`false`](../../Swift/false.md) to do a bulk update of user interface elements.
 
-##### Special Considerations
+### Special Considerations
 
 If the delegate chooses to resolve `netService`, it should retain `netService` and set itself as that service’s delegate. The delegate should, therefore, release that service when it receives the [`netServiceDidResolveAddress(_:)`](../netservicedelegate/netservicedidresolveaddress%28_%29.md) or [`netService(_:didNotResolve:)`](../netservicedelegate/netservice%28_,didnotresolve%29.md) delegate messages of the  [`NetService`](../netservice.md) class.
 

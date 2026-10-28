@@ -24,7 +24,7 @@ var hasRotationRate: Bool { get }
 @property (nonatomic, readonly) BOOL hasRotationRate;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the controller provides rotation data; otherwise, [`false`](../../Swift/false.md).
 

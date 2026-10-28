@@ -19,7 +19,7 @@ case latestBehavior
 NSTypesetterLatestBehavior
 ```
 
-#### Discussion
+## Discussion
 
 For OS X v10.2, this behavior is identical to `NSTypesetterBehavior_10_2`. If you use this behavior setting, you cannot necessarily rely on line width and height metrics remaining the same across different versions of macOS.
 

@@ -21,7 +21,7 @@ A Boolean indicating whether the WebSocket protocol skips its handshake and begi
 var skipHandshake: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This option should not be set when communicating with a generic WebSocket server or client. This option allows a custom handshake (or no handshake) to be implemented below the WebSocket layer when both client and server are coordinated.
 

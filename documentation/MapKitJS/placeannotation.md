@@ -19,7 +19,7 @@ class PlaceAnnotation extends MarkerAnnotation
 
 - [MapKit JS 5](./mapkit-js-5.md)
 
-#### Overview
+## Overview
 
 For information on creating annotations and adding them to a map, see [Annotations](./annotations.md).
 

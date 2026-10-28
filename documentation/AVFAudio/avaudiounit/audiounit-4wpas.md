@@ -20,7 +20,7 @@ The underlying Core Audio audio unit.
 @property (nonatomic, readonly) AudioUnit audioUnit;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a reference to the underlying audio unit. The `AVAudioUnit` exposes it here so that you can modify parameters, that you don’t see through `AVAudioUnit` subclasses, using the AudioUnit C API. For example, changing initialization state, stream formats, channel layouts, or connections to other audio units.
 

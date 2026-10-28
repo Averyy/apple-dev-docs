@@ -15,11 +15,11 @@ Invoked when a resolution changes occurs for the window that hosts the layer.
 - (BOOL) layer:(CALayer *) layer shouldInheritContentsScale:(CGFloat) newScale fromWindow:(NSWindow *) window;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that specifies whether to change the layer’s `contentsScale` property.
 
-#### Discussion
+## Discussion
 
 When a resolution change occurs for a given window, the system traverses the layer trees in that window to decide what action, if any, to take for each layer. The system queries the layer’s delegate to determine whether to change the layer’s `contentsScale` property to the new scale (either `2.0` or `1.0`).
 

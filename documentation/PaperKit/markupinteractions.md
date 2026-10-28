@@ -19,7 +19,7 @@ Interactions that people can perform on markup elements.
 struct MarkupInteractions
 ```
 
-#### Overview
+## Overview
 
 Use `MarkupInteractions` to control which actions people can perform on markup elements. By default, all interactions are enabled (`.all`), allowing people to freely select, move, resize, rotate, style, and delete markup.
 

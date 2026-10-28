@@ -5,7 +5,7 @@
 
 Modifies the audio-panning levels.
 
-#### Overview
+## Overview
 
 Use the `adjust-panner` attributes given below to applt the audio=panning levels.
 
@@ -24,7 +24,7 @@ Use the `adjust-panner` attributes given below to applt the audio=panning levels
 | `attenuate_collapse_mix` | The panning effect amount. |
 | `center_balance` | The balance between the center and surround signals. |
 
-##### Pan Modes
+### Pan Modes
 
 Supported values for pan modes:
 

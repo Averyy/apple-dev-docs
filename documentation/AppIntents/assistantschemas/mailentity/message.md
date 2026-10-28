@@ -21,7 +21,7 @@ The app entity describes an email message.
 var message: some AssistantSchemas.Entity { get }
 ```
 
-#### Overview
+## Overview
 
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation. The following example shows an app entity that conforms to the `.mail.message` schema:
 

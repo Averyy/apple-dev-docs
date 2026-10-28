@@ -30,7 +30,7 @@ class ASWebAuthenticationSession
 - [Authenticating a User Through a Web Service](./authenticating-a-user-through-a-web-service.md)
 - [Supporting Single Sign-On in a Web Browser App](./supporting-single-sign-on-in-a-web-browser-app.md)
 
-#### Overview
+## Overview
 
 Use an [`ASWebAuthenticationSession`](./aswebauthenticationsession.md) instance to authenticate a user through a web service, including one run by a third party. Initialize the session with a URL that points to the authentication webpage. When the user starts the authentication session, the operating system shows a modal view telling them which domain the app is authenticating with and asking whether to proceed. If the user proceeds with the authentication attempt, a browser loads and displays the page, from which the user can authenticate. In iOS, the browser is a secure, embedded web view. In macOS, the system opens the user’s default browser if it supports web authentication sessions, or Safari otherwise.
 

@@ -17,7 +17,7 @@
 var kMillisecondScale: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Scale factor for millisecond based times.
 

@@ -19,7 +19,7 @@ var fixedFontFamily: String! { get set }
 @property (nonatomic, copy) NSString * fixedFontFamily;
 ```
 
-#### Discussion
+## Discussion
 
 This preference affects text whose properties indicate that it should be displayed in a fixed font but do not specify a particular font.
 

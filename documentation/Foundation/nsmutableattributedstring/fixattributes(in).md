@@ -25,7 +25,7 @@ func fixAttributes(in range: NSRange)
 - (void) fixAttributesInRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 Removes attachment attributes assigned to characters other than [`character`](../../AppKit/nstextattachment/character.md), assigns default fonts to characters with illegal fonts for their scripts and otherwise corrects font attribute assignments, and assigns the first paragraph style attribute value in each paragraph to all characters of the paragraph.
 

@@ -15,7 +15,7 @@ A source of live data about planes in a person’s surroundings.
 final class PlaneDetectionProvider
 ```
 
-#### Overview
+## Overview
 
 Use this provider to indicate to ARKit the types of plane anchors for your app to detect.
 

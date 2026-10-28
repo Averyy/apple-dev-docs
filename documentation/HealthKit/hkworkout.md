@@ -30,7 +30,7 @@ class HKWorkout
 - [About the HealthKit framework](./about-the-healthkit-framework.md)
 - [Creating a workout route](./creating-a-workout-route.md)
 
-#### Overview
+## Overview
 
 The [`HKWorkout`](./hkworkout.md) class is a concrete subclass of the [`HKSample`](./hksample.md) class; however, they behave somewhat differently than other sample types.
 
@@ -48,7 +48,7 @@ HealthKit supports a wide range of activity types. For a complete list, see [`HK
 
 Workouts are mostly immutable. You set their properties when you instantiate the workout, and they can’t change. However, you can continue to add samples to the workouts.
 
-##### Fill the Activity rings
+### Fill the Activity rings
 
 Workouts can contribute to the Move and Exercise rings in the Activity app. To affect the rings, you must associate one or more active energy burned samples with the workout. Additionally:
 
@@ -60,7 +60,7 @@ The system updates the Move ring based on the active energy burned samples. It u
 
 Create and save workouts on the device that makes the most sense for your application—typically the device processing the user’s workout.
 
-##### Extend workouts
+### Extend workouts
 
 As with many HealthKit classes, don’t subclass the [`HKWorkout`](./hkworkout.md) class. You may extend workouts by adding metadata with custom keys as appropriate for your app.
 

@@ -16,7 +16,7 @@ A snapshot point into enumerating changed contact items.
 struct ContactItemSyncAnchor
 ```
 
-#### Overview
+## Overview
 
 You can break an enumeration of changes into batches with multiple anchors to reduce the memory constraints on the system. During enumeration, you may update the `generationMarker` and `offset` to reflect progress enumerating the changes as they occurred, possibly across mutiple database generations and how many changes occurred within each database generation.
 

@@ -23,7 +23,7 @@ weak var previouslyFocusedView: UIView? { get }
 @property (nonatomic, weak, readonly, nullable) UIView * previouslyFocusedView;
 ```
 
-#### Discussion
+## Discussion
 
 If your app targets tvOS 10 and later, use [`previouslyFocusedItem`](./previouslyfocuseditem.md) instead.
 

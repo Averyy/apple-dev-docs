@@ -19,7 +19,7 @@ func navigateForward(to object: Any)
 - (void) navigateForwardToObject:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 Clears the [`arrangedObjects`](./arrangedobjects.md) array after the selected index, adds the argument to that array, and sets the [`selectedIndex`](./selectedindex.md) to the object’s index.
 

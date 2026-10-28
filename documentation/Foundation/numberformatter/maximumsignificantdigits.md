@@ -25,7 +25,7 @@ var maximumSignificantDigits: Int { get set }
 @property NSUInteger maximumSignificantDigits;
 ```
 
-#### Discussion
+## Discussion
 
 You must set the [`usesSignificantDigits`](./usessignificantdigits.md) property to [`true`](../../Swift/true.md) in order for this property to affect formatting behavior.  By default, the maximum number of significant digits is 6. Values less than 1 are ignored.
 

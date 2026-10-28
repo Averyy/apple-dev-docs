@@ -19,11 +19,11 @@ Removes the user-created detection track.
 final func removeDetectionTrack(_ detectionTrack: CNDetectionTrack) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A flag indicating whether removal of the user-created detection track was successful.
 
-#### Discussion
+## Discussion
 
 It’s not possible to remove tracks created at recording time.
 

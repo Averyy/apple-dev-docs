@@ -24,7 +24,7 @@ static let appleMoveTime: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierAppleMoveTime;
 ```
 
-#### Discussion
+## Discussion
 
 [`appleMoveTime`](./applemovetime.md) measures every full minute where the watch detects the user actively moving. Apple Watch uses the accelerometer and gyroscopes to detect activities that involve full-body movements, like walking, running, or playing in the playground.
 

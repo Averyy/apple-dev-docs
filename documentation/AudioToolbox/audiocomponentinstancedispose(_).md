@@ -24,7 +24,7 @@ func AudioComponentInstanceDispose(_ inInstance: AudioComponentInstance) -> OSSt
 extern OSStatus AudioComponentInstanceDispose(AudioComponentInstance inInstance);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

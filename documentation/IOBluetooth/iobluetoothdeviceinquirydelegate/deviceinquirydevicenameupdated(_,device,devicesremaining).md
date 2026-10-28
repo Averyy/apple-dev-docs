@@ -17,7 +17,7 @@ optional func deviceInquiryDeviceNameUpdated(_ sender: IOBluetoothDeviceInquiry!
 - (void) deviceInquiryDeviceNameUpdated:(IOBluetoothDeviceInquiry *) sender device:(IOBluetoothDevice *) device devicesRemaining:(uint32_t) devicesRemaining;
 ```
 
-#### Discussion
+## Discussion
 
 A device name has been retrieved. Also indicates how many devices are left to be updated.
 

@@ -19,7 +19,7 @@ class VZVirtioSharedMemoryRegionConfiguration
 @interface VZVirtioSharedMemoryRegionConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 A `VZVirtioSharedMemoryRegionConfiguration` represents a memory region that’s continuously shared between the custom Virtio device implementation and the guest. A shared memory region is identified by an ID, whose meaning is specific to the device.
 

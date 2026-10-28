@@ -13,7 +13,7 @@ virtual IOReturn newTemperature(
  IOService *whichZone ) __attribute__((deprecated));
 ```
 
-#### Overview
+## Overview
 
 This call is unused by power management. It is not intended to be called or overridden.
 

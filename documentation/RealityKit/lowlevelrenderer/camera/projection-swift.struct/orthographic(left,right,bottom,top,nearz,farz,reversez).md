@@ -18,7 +18,7 @@ Creates an off-axis orthographic projection from explicit frustum planes.
 static func orthographic(left: Float, right: Float, bottom: Float, top: Float, nearZ: Float, farZ: Float, reverseZ: Bool = true) -> LowLevelRenderer.Camera.Projection
 ```
 
-#### Return Value
+## Return Value
 
 An off-axis orthographic [`LowLevelRenderer.Camera.Projection`](../projection-swift.struct.md).
 

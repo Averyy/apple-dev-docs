@@ -19,7 +19,7 @@ func intercellSpacing() -> NSSize
 - (NSSize) intercellSpacing;
 ```
 
-#### Return Value
+## Return Value
 
 The vertical and horizontal spacing between cells.
 

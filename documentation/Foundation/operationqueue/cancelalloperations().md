@@ -25,7 +25,7 @@ func cancelAllOperations()
 - (void) cancelAllOperations;
 ```
 
-#### Discussion
+## Discussion
 
 This method calls the [`cancel()`](../operation/cancel%28%29.md) method on all operations currently in the queue.
 

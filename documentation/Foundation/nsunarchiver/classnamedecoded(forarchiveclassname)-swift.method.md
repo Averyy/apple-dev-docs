@@ -24,7 +24,7 @@ func classNameDecoded(forArchiveClassName inArchiveName: String) -> String
 - (NSString *) classNameDecodedForArchiveClassName:(NSString *) inArchiveName;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the class that will be used when instantiating objects whose ostensible class, according to the archived data, is `nameInArchive`. Returns `nameInArchive` unless a substitute name has been specified using the instance method (not the class method) [`decodeClassName(_:asClassName:)`](./decodeclassname%28_,asclassname%29-swift.method.md).
 

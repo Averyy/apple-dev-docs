@@ -25,11 +25,11 @@ func tryLock() -> Bool
 - (BOOL) tryLock;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a lock was acquired, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 This method returns immediately after the attempt to acquire a lock.
 

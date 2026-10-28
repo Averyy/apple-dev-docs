@@ -19,7 +19,7 @@ The number of splats the resource renders.
 let count: Int
 ```
 
-#### Discussion
+## Discussion
 
 The framework may render fewer than the buffers contain to meet shared-space rendering constraints.
 

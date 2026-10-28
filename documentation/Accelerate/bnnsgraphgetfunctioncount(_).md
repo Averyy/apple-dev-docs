@@ -25,7 +25,7 @@ func BNNSGraphGetFunctionCount(_ graph: bnns_graph_t) -> Int
 size_t BNNSGraphGetFunctionCount(bnns_graph_t graph);
 ```
 
-#### Return Value
+## Return Value
 
 The number of callable functions in the specified graph, or `SIZE_T_MAX` if the query fails.
 

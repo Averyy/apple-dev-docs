@@ -25,7 +25,7 @@ class var supportsSecureCoding: Bool { get }
 @property (class, readonly) BOOL supportsSecureCoding;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to indicate that `NSURLRequest` implements the [`NSSecureCoding`](../nssecurecoding.md) protocol.
 

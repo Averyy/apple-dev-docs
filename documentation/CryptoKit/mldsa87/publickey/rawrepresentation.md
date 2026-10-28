@@ -21,7 +21,7 @@ A serialized representation of the public key.
 var rawRepresentation: Data { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property provides a representation of the public key in the FIPS 204 standard serialization format.
 

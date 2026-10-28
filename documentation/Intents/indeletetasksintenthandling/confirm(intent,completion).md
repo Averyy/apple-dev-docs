@@ -29,7 +29,7 @@ optional func confirm(intent: INDeleteTasksIntent) async -> INDeleteTasksIntentR
 - (void) confirmDeleteTasks:(INDeleteTasksIntent *) intent completion:(void (^)(INDeleteTasksIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method validates that you can delete the task, but doesn’t delete it yet. If deleting tasks involves contacting a remote server, validate that your server is available and ready to handle requests. In your implementation, execute the provided completion block with a response object that indicates your app’s readiness to delete the task.
 

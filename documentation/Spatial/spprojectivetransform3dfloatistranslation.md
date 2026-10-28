@@ -19,11 +19,11 @@
 static bool SPProjectiveTransform3DFloatIsTranslation(SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the transform only contains a translation.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the transform only contains a translation.
 

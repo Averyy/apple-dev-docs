@@ -15,7 +15,7 @@ An array of strings that appear as variables if [`alertLocalizationKey`](./alert
 readonly attribute String[] alertLocalizationArgs;
 ```
 
-#### Discussion
+## Discussion
 
 For details, read [Apple Push Notification Service](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html#//apple_ref/doc/uid/TP40008194-CH100) in [Local and Remote Notification Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/index.html#//apple_ref/doc/uid/TP40008194).
 

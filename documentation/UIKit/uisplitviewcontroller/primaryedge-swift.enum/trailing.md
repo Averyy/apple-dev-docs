@@ -23,7 +23,7 @@ case trailing
 UISplitViewControllerPrimaryEdgeTrailing
 ```
 
-#### Discussion
+## Discussion
 
 In an interface that is oriented left-to-right, this value corresponds to the right side of the split view interface. For right-to-left interfaces, the trailing edge is on the left side.
 

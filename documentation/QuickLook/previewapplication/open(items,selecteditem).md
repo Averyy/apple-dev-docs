@@ -15,11 +15,11 @@ Previews the provided items.
 final class func open(items: [PreviewItem], selectedItem: PreviewItem? = nil) -> PreviewSession
 ```
 
-#### Return Value
+## Return Value
 
 A `PreviewSession` instance.
 
-#### Discussion
+## Discussion
 
 This method launches the preview application with the provided preview items and, optionally, a selected item.
 

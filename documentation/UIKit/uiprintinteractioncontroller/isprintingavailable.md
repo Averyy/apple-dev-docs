@@ -22,7 +22,7 @@ class var isPrintingAvailable: Bool { get }
 @property (class, nonatomic, readonly, getter=isPrintingAvailable) BOOL printingAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) if the device supports printing, otherwise [`false`](../../Swift/false.md). An application can show or hide any print buttons based on this value.
 

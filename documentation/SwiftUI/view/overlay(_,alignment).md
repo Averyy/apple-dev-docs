@@ -28,11 +28,11 @@ func overlay<Overlay>(_ overlay: Overlay, alignment: Alignment = .center) -> som
 
 - [Building layouts with stack views](../building-layouts-with-stack-views.md)
 
-#### Return Value
+## Return Value
 
 A view that layers `overlay` in front of the view.
 
-#### Discussion
+## Discussion
 
 When you apply an overlay to a view, the original view continues to provide the layout characteristics for the resulting view. In the following example, the heart image is shown overlaid in front of, and aligned to the bottom of the folder image.
 

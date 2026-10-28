@@ -23,7 +23,7 @@ case `default`
 UISearchBarStyleDefault
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`UISearchBar.Style.prominent`](./prominent.md).
 

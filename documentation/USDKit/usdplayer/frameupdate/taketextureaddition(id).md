@@ -20,7 +20,7 @@ Consumes and returns the [`USDPlayer.TextureData`](../texturedata.md) for the gi
 mutating func takeTextureAddition(id: USDPlayer.TextureID) -> USDPlayer.TextureData?
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if not present.
 

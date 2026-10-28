@@ -28,13 +28,13 @@ class HKDocumentQuery
 
 - [Reading data from HealthKit](./reading-data-from-healthkit.md)
 
-#### Overview
+## Overview
 
 Use an `HKDocumentQuery` object to search for documents in the HealthKit store. You can provide a predicate to filter the search results, a sort order for the returned samples, or even a limit to the number of samples returned.
 
 Document queries are immutable: The query’s properties are set when the query is first created. They cannot change.
 
-##### Executing Queries
+### Executing Queries
 
 To create and execute a query, perform the following steps:
 
@@ -77,7 +77,7 @@ let cdaQuery = HKDocumentQuery(documentType: cdaType,
 }
 ```
 
-##### Subclassing Document Queries
+### Subclassing Document Queries
 
 As with many HealthKit classes, don’t subclass the [`HKDocumentQuery`](./hkdocumentquery.md) class.
 

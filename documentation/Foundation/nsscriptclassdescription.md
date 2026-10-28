@@ -20,7 +20,7 @@ class NSScriptClassDescription
 @interface NSScriptClassDescription : NSClassDescription
 ```
 
-#### Overview
+## Overview
 
 A scriptable application provides scriptability information that describes the commands and objects scripters can use in scripts that target the application. That includes information about the classes those scriptable objects are created from.
 

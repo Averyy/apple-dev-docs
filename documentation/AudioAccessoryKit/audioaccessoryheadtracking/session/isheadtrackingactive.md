@@ -15,7 +15,7 @@ Returns `true` when head tracking is currently enabled for this accessory; `fals
 final var isHeadTrackingActive: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this to bootstrap state at session start. After activation, prefer `headTrackingStateDidChange(isActive:)` for updates.
 

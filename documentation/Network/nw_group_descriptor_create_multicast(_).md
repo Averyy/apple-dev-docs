@@ -25,7 +25,7 @@ func nw_group_descriptor_create_multicast(_ multicast_group: nw_endpoint_t) -> n
 nw_group_descriptor_tnw_group_descriptor_create_multicast(nw_endpoint_t multicast_group);
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  In order to use multicast on iOS, your app will need to have the `com.apple.developer.networking.multicast` entitlement.
 

@@ -17,7 +17,7 @@ The metadata for the configuration that specifies websites for the system to shi
 static let webDomains: SettingMetadata<Set<WebDomainToken>>
 ```
 
-#### Discussion
+## Discussion
 
 Use `webDomains` to access the metadata for [`webDomains`](./webdomains-swift.property.md). The default value is an empty set.
 

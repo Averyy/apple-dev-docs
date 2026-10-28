@@ -15,7 +15,7 @@ Creates and returns a text provider with both long and short versions of the tex
 - (instancetype) initWithText:(NSString *) text shortText:(NSString *) shortText;
 ```
 
-#### Return Value
+## Return Value
 
 A text provider initialized with the specified content.
 

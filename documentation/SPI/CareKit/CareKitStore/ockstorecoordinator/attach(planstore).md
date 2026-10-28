@@ -17,7 +17,7 @@ Attaches a new store. The new store must be capable of reading and writing care 
 func attach(planStore: OCKAnyCarePlanStore)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The order is which stores are attached is important.
 

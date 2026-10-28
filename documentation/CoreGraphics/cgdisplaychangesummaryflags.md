@@ -20,7 +20,7 @@ struct CGDisplayChangeSummaryFlags
 enum CGDisplayChangeSummaryFlags : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 For information about how these constants are used, see the callback [`CGDisplayReconfigurationCallBack`](./cgdisplayreconfigurationcallback.md).
 

@@ -5,19 +5,19 @@
 
 Set up your app for direct installation.
 
-#### Overview
+## Overview
 
 You can distribute approved apps in eligible regions from your company website. Use this API to setup your app for web distribution.
 
-##### Establish an alternative distribution key
+### Establish an alternative distribution key
 
 Begin making your app eligible for download from your website by selecting your existing app record, or making a new one in App Store Connect. Next, create a public and private key pair to associate with your app for web distribution. For more information, see [Creating and configuring keys for web distribution](./creating-and-configuring-keys-for-web-distribution.md).
 
-##### Add an alternative distribution domain
+### Add an alternative distribution domain
 
 [`Add an Alternative Distribution Domain`](./post-v1-alternativedistributiondomains.md) to represent your app’s base web domain, from which all traffic must flow. This domain is where people can download and install your web distribution app. This domain is enabled for all apps on your account.
 
-##### Obtain and distribute your alternative distribution package
+### Obtain and distribute your alternative distribution package
 
 Next, you need to obtain the alternative distribution package ID.
 

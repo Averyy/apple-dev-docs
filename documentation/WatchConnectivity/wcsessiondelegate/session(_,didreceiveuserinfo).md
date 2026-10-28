@@ -23,7 +23,7 @@ optional func session(_ session: WCSession, didReceiveUserInfo userInfo: [String
 - (void) session:(WCSession *) session didReceiveUserInfo:(NSDictionary<NSString *,id> *) userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The session object calls this method when it successfully receives a data dictionary from its counterpart. Implement this method to incorporate the data into the app’s content.
 

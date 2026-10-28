@@ -24,11 +24,11 @@ convenience init(goals: [GKGoal])
 + (instancetype) behaviorWithGoals:(NSArray<GKGoal *> *) goals;
 ```
 
-#### Return Value
+## Return Value
 
 A new behavior object. To assign a set of goals to an agent, use its [`behavior`](../gkagent/behavior.md) property.
 
-#### Discussion
+## Discussion
 
 The new behavior contains the specified goals, each with a weight of `1.0`. To change a goal’s weight after creating the behavior, keep a reference to that goal and use the [`setWeight(_:for:)`](./setweight%28_,for%29.md) method.
 

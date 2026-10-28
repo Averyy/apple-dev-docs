@@ -21,7 +21,7 @@ The style to use when formatting the quantity or the name of the unit, such as â
 var unitsStyle: Date.RelativeFormatStyle.UnitsStyle
 ```
 
-#### Discussion
+## Discussion
 
 Express relative date format units in either `wide`, `narrow`, `abbreviated`, or `spellOut` styles. For example:
 

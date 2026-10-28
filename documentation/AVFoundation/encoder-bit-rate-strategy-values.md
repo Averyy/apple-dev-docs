@@ -4,7 +4,7 @@
 
 The constants that represent the possible bit rate strategy values.
 
-#### Overview
+## Overview
 
 You use these values with [`AVEncoderBitRateStrategyKey`](../AVFAudio/avencoderbitratestrategykey.md).
 

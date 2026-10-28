@@ -25,7 +25,7 @@ var internationalCurrencySymbol: String! { get set }
 @property (copy, null_resettable) NSString * internationalCurrencySymbol;
 ```
 
-#### Discussion
+## Discussion
 
 A region typically has a local currency symbol and an international currency symbol. The local symbol is used within the region, while the international currency symbol is used in international contexts to specify that region’s currency unambiguously. The international currency symbol is often represented by a Unicode code point.
 

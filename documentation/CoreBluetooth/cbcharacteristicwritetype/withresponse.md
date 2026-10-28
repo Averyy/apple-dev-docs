@@ -25,7 +25,7 @@ case withResponse
 CBCharacteristicWriteWithResponse
 ```
 
-#### Discussion
+## Discussion
 
 If the write is unsuccessful, the peripheral responds with an error that details the cause of the failure.
 

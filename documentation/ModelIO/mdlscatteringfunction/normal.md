@@ -24,7 +24,7 @@ var normal: MDLMaterialProperty { get }
 @property (nonatomic, retain, readonly) MDLMaterialProperty * normal;
 ```
 
-#### Discussion
+## Discussion
 
 The default normal value is zero (no variation in surface normal vectors). Typically, you assign a texture to this material property to create the appearance of detailed surface contours.
 

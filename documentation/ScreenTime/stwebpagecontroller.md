@@ -30,7 +30,7 @@ class STWebpageController
 @interface STWebpageController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 This class provides a convenient way for you to communicate changes in each webpage, such as when the user starts or stops playing media. When a parent or guardian of the user blocks the webpage’s current URL, the webpage controller:
 

@@ -19,7 +19,7 @@ The current background configuration of the cell.
 @property (nonatomic, copy, nullable) UIBackgroundConfiguration * backgroundConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 [`UITableViewCell`](../uitableviewcell.md) automatically sets up a default background configuration to provide its default appearance.
 

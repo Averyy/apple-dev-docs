@@ -24,11 +24,11 @@ class func opTile() -> any CIFilter & CIOpTile
 + (CIFilter<CIOpTile> *) opTileFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The tiled image.
 
-#### Discussion
+## Discussion
 
 This filter extracts a tile from the image, applies any specified scaling and rotation, and then assembles the image again to give an optical illusion effect.
 

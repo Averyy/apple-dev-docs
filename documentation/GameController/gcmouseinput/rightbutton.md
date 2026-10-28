@@ -24,7 +24,7 @@ var rightButton: GCControllerButtonInput? { get }
 @property (nonatomic, readonly, nullable) GCControllerButtonInput * rightButton;
 ```
 
-#### Discussion
+## Discussion
 
 If the mouse doesn’t have a right button, this property is `nil`.
 

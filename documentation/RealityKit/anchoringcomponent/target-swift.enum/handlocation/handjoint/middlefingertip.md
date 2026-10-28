@@ -15,7 +15,7 @@ An anchor location at the tip of the middle finger.
 static let middleFingerTip: AnchoringComponent.Target.HandLocation.HandJoint
 ```
 
-#### Discussion
+## Discussion
 
 Content anchored this way has its positive y-axis in the direction of the fingernail’s normal and its positive z-axis pointing towards the side where the thumb is.
 

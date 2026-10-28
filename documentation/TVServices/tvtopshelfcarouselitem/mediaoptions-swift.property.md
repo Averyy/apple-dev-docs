@@ -19,7 +19,7 @@ var mediaOptions: TVTopShelfCarouselItem.MediaOptions { get set }
 @property (nonatomic) TVTopShelfCarouselItemMediaOptions mediaOptions;
 ```
 
-#### Discussion
+## Discussion
 
 Specify all of the options that apply to the underlying content. The system adds standard icons for the options you support. For example, if you specify the [`videoResolution4K`](./mediaoptions-swift.struct/videoresolution4k.md) option, the system adds an icon to the detail view indicating that playback in 4K resolution is possible.
 

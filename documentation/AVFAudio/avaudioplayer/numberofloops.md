@@ -25,7 +25,7 @@ var numberOfLoops: Int { get set }
 @property NSInteger numberOfLoops;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of `0` results in the sound playing once. Set a positive integer value to specify the number of times to repeat the sound. For example, a value of `1` plays the sound twice: the original sound and one repetition. Set a negative integer value to loop the sound continuously until you call the [`stop()`](./stop%28%29.md) method.
 

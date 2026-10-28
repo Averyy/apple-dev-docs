@@ -25,7 +25,7 @@ var videoApertureMode: AVVideoApertureMode { get set }
 @property (copy) AVVideoApertureMode videoApertureMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is [`cleanAperture`](../avvideoaperturemode/cleanaperture.md).
 

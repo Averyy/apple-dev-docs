@@ -15,7 +15,7 @@ Caches images for the scroll buttons and knob.
 - (void) drawParts;
 ```
 
-#### Discussion
+## Discussion
 
 It’s invoked only once when the scroller is created. You may want to override this method if you alter the look of the scroller, but you should never invoke it directly.
 

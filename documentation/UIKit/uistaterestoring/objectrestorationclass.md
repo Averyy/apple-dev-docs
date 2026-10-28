@@ -23,7 +23,7 @@ optional var objectRestorationClass: (any UIObjectRestoration.Type)? { get }
 @property (nonatomic, readonly, nullable) Class<UIObjectRestoration> * objectRestorationClass;
 ```
 
-#### Discussion
+## Discussion
 
 If an object has an associated restoration class, the [`object(withRestorationIdentifierPath:coder:)`](../uiobjectrestoration/object%28withrestorationidentifierpath,coder%29.md) method of that class is called during state restoration. That method is responsible for returning the object that matches the provided path identifier information. If this property is`nil`, the object must already exist and be registered with the state restoration engine so that it can be found implicitly. You can register the object using the [`registerObject(forStateRestoration:restorationIdentifier:)`](../uiapplication/registerobject%28forstaterestoration,restorationidentifier%29.md) method at launch time.
 

@@ -19,7 +19,7 @@ var borderType: NSBorderType { get set }
 @property NSBorderType borderType;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSBorderType`](../nsbordertype.md) for a list of possible values.
 

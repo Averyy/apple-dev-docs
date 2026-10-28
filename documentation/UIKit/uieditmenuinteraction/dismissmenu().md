@@ -22,7 +22,7 @@ func dismissMenu()
 - (void) dismissMenu;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to dismiss the menu, for example, from an observer callback in your app.
 

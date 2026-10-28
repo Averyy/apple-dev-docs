@@ -16,7 +16,7 @@ Options that you use to dispatch pointer-related events.
 typedef enum { ... } IOHIDPointerEventOptions;
 ```
 
-#### Overview
+## Overview
 
 Pass these options to the [`dispatchRelativePointerEvent`](./iohideventservice/dispatchrelativepointerevent.md) or [`dispatchAbsolutePointerEvent`](./iohideventservice/dispatchabsolutepointerevent.md) method of [`IOHIDEventService`](./iohideventservice.md).
 

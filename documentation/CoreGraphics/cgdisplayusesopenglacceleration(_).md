@@ -20,11 +20,11 @@ func CGDisplayUsesOpenGLAcceleration(_ display: CGDirectDisplayID) -> boolean_t
 extern boolean_t CGDisplayUsesOpenGLAcceleration(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, Quartz Extreme is used to render in the specified display; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Quartz Extreme is an OpenGL-based, hardware-accelerated window compositor available in macOS 10.2 and later. Quartz Extreme requires a minimum hardware configuration to operate.
 

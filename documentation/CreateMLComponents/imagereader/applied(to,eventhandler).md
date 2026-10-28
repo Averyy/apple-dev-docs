@@ -20,7 +20,7 @@ Reads an image URL as a `CIImage`.
 func applied(to url: URL, eventHandler: EventHandler? = nil) throws -> CIImage
 ```
 
-#### Return Value
+## Return Value
 
 An image.
 

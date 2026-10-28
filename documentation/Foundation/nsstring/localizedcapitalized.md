@@ -25,7 +25,7 @@ var localizedCapitalized: String { get }
 @property (copy, readonly) NSString * localizedCapitalizedString;
 ```
 
-#### Discussion
+## Discussion
 
 A capitalized string is a string with the first character in each word changed to its corresponding uppercase value, and all remaining characters set to their corresponding lowercase values. A “word” is any sequence of characters delimited by spaces, tabs, or line terminators (listed under [`getLineStart(_:end:contentsEnd:for:)`](./getlinestart%28_,end,contentsend,for%29.md)). Some common word delimiting punctuation isn’t considered, so this property may not generally produce the desired results for multiword strings.
 

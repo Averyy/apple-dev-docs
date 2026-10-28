@@ -25,11 +25,11 @@ class var current: NSAssertionHandler { get }
 @property (class, strong, readonly) NSAssertionHandler * currentHandler;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSAssertionHandler` object associated with the current thread.
 
-#### Discussion
+## Discussion
 
 If no assertion handler is associated with the current thread, this method creates one and assigns it to the thread.
 

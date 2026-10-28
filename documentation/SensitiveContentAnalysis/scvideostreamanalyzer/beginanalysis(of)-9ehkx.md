@@ -21,7 +21,7 @@ func beginAnalysis(of decompressionSession: VTDecompressionSession) throws
 - (BOOL) beginAnalysisOfDecompressionSession:(VTDecompressionSessionRef) decompressionSession error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 If the framework detects sensitive content in the video stream, the [`VTDecompressionSession`](../../VideoToolbox/vtdecompressionsession.md) produces blank frames to effectively censor the video stream on the person’s behalf. When your app is ready to show the video stream again, resume analysis by calling [`continueStream()`](./continuestream%28%29.md).
 

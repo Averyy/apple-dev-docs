@@ -21,7 +21,7 @@ An error that occurs when CloudKit rejects the request.
 static var serverRejectedRequest: CKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error is nonrecoverable.
 

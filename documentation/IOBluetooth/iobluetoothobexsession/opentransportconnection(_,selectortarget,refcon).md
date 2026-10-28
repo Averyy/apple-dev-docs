@@ -19,7 +19,7 @@ func openTransportConnection(_ inSelector: Selector!, selectorTarget inTarget: A
 - (OBEXError) openTransportConnection:(SEL) inSelector selectorTarget:(id) inTarget refCon:(void *) inUserRefCon;
 ```
 
-#### Discussion
+## Discussion
 
 Your selector should have the following signature:
 

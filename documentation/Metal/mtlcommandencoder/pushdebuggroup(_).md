@@ -25,7 +25,7 @@ func pushDebugGroup(_ string: String)
 - (void) pushDebugGroup:(NSString *) string;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Naming resources and commands](../../Xcode/naming-resources-and-commands.md).
 

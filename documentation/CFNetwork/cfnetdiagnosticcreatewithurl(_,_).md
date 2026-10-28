@@ -24,15 +24,15 @@ func CFNetDiagnosticCreateWithURL(_ alloc: CFAllocator, _ url: CFURL) -> Unmanag
 extern CFNetDiagnosticRefCFNetDiagnosticCreateWithURL(CFAllocatorRef alloc, CFURLRef url);
 ```
 
-#### Return Value
+## Return Value
 
 CFNetDiagnosticRef that you can pass to [`CFNetDiagnosticDiagnoseProblemInteractively(_:)`](./cfnetdiagnosticdiagnoseprobleminteractively%28_%29.md) or [`CFNetDiagnosticCopyNetworkStatusPassively(_:_:)`](./cfnetdiagnosticcopynetworkstatuspassively%28_,_%29.md). Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function uses a URL to create a reference to an instance of a CFNetDiagnostic object. You can pass the reference to [`CFNetDiagnosticDiagnoseProblemInteractively(_:)`](./cfnetdiagnosticdiagnoseprobleminteractively%28_%29.md) to open a Network Diagnostics window or to [`CFNetDiagnosticCopyNetworkStatusPassively(_:_:)`](./cfnetdiagnosticcopynetworkstatuspassively%28_,_%29.md) to get a description of the connection referenced by `readStream` and `writeStream`.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe as long as another thread does not alter the same CFNetDiagnosticRef at the same time.
 

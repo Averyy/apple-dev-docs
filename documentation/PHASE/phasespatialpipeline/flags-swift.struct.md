@@ -24,7 +24,7 @@ struct Flags
 enum PHASESpatialPipelineFlags : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Each [`PHASESpatialPipeline`](../phasespatialpipeline.md) specifies a flag in its [`init(flags:)`](./init%28flags%29.md) initializer.
 

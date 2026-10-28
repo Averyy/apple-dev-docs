@@ -25,7 +25,7 @@ var BNNSLossFunctionCosineDistance: BNNSLossFunction { get }
 BNNSLossFunctionCosineDistance
 ```
 
-#### Discussion
+## Discussion
 
 [`BNNSLossFunctionCosineDistance`](./bnnslossfunctioncosinedistance.md) performs cosine distance loss computation between labels and predictions.
 

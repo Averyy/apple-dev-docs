@@ -21,7 +21,7 @@ init?(frame frameRect: NSRect, pixelFormat format: NSOpenGLPixelFormat?)
 - (instancetype) initWithFrame:(NSRect) frameRect pixelFormat:(NSOpenGLPixelFormat *) format;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSOpenGLView` object, or `nil` if the object could not be initialized.
 

@@ -19,7 +19,7 @@ var allowedColorSpaces: [NSColorSpace]? { get set }
 @property (copy, nullable) NSArray<NSColorSpace *> * allowedColorSpaces;
 ```
 
-#### Discussion
+## Discussion
 
 If a selected color is outside the allowed color spaces, the picker converts it to the first color space in the array.
 

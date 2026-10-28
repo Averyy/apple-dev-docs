@@ -25,7 +25,7 @@ func attemptRecovery(fromError error: any Error, optionIndex recoveryOptionIndex
 - (void) attemptRecoveryFromError:(NSError *) error optionIndex:(NSUInteger) recoveryOptionIndex delegate:(id) delegate didRecoverSelector:(SEL) didRecoverSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Invoked when an error alert is presented to the user in a document-modal sheet, and the user has selected an error recovery option specified by `error`. After recovery is attempted, your implementation should send `delegate` the message specified in `didRecoverSelector`, passing the provided `contextInfo`.
 

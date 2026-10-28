@@ -13,11 +13,11 @@
 errno_t mbuf_get_vlan_tag(mbuf_t mbuf, u_int16_t *vlan);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error. ENXIO indicates that the vlan tag is not set.
 
-#### Discussion
+## Discussion
 
 This function is used by drivers that support hardware vlan tagging to determine which vlan this packet belongs to. To differentiate between the case where the vlan tag is zero and the case where there is no vlan tag, this function will return ENXIO when there is no vlan.
 

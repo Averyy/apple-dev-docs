@@ -25,7 +25,7 @@ func CFAttributedStringCreateMutableCopy(_ alloc: CFAllocator!, _ maxLength: CFI
 extern CFMutableAttributedStringRefCFAttributedStringCreateMutableCopy(CFAllocatorRef alloc, CFIndex maxLength, CFAttributedStringRef aStr);
 ```
 
-#### Return Value
+## Return Value
 
 A mutable copy of `aStr`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

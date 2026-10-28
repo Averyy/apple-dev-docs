@@ -15,11 +15,11 @@ Adds a local dependency to a named package located at the path and with an optio
 static func package(name: String, path: String, traits: Set<Package.Dependency.Trait> = [.defaults]) -> Package.Dependency
 ```
 
-#### Return Value
+## Return Value
 
 A package dependency.
 
-#### Discussion
+## Discussion
 
 Swift Package Manager uses the package dependency as-is and doesn’t perform any source control access. Local package dependencies are especially useful during development of a new package or when working on multiple tightly coupled packages.
 

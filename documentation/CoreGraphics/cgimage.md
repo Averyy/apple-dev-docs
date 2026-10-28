@@ -25,7 +25,7 @@ class CGImage
 typedef struct CGImage * CGImageRef;
 ```
 
-#### Overview
+## Overview
 
 A bitmap image is a rectangular array of pixels, each of which represents a single sample or data point from a source image.
 

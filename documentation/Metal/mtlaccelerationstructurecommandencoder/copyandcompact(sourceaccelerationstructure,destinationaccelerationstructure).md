@@ -25,7 +25,7 @@ func copyAndCompact(sourceAccelerationStructure: any MTLAccelerationStructure, d
 - (void) copyAndCompactAccelerationStructure:(id<MTLAccelerationStructure>) sourceAccelerationStructure toAccelerationStructure:(id<MTLAccelerationStructure>) destinationAccelerationStructure;
 ```
 
-#### Discussion
+## Discussion
 
 The source and destination acceleration structures can’t overlap in memory. The destination acceleration structure needs to be at least as large as the compact size of the source acceleration structure, which you obtain by using the [`writeCompactedSize(accelerationStructure:buffer:offset:)`](./writecompactedsize%28accelerationstructure,buffer,offset%29.md) method.
 

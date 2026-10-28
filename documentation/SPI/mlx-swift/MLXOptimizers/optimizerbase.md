@@ -17,14 +17,14 @@ The base class for all optimizers. It allows us to implement an optimizer on a p
 class OptimizerBase<State> where State : Updatable
 ```
 
-#### Overview
+## Overview
 
 Subclasses need to implement:
 
 - `func newState(parameter: MLXArray) -> State`
 - `func applySingle(gradient: MLXArray, parameter: MLXArray, state: State) -> (MLXArray, State)`
 
-##### See Also
+### See Also
 
 - [MLXOptimizers](./MLXOptimizers.md)
 

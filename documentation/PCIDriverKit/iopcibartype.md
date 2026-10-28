@@ -14,7 +14,7 @@
 enum IOPCIBARType : unsigned int;
 ```
 
-#### Overview
+## Overview
 
 BAR types for GetBARInfo
 

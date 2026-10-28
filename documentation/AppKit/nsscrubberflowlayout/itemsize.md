@@ -19,7 +19,7 @@ var itemSize: NSSize { get set }
 @property NSSize itemSize;
 ```
 
-#### Discussion
+## Discussion
 
 You can override the value of this property on a per-item basis, by providing a delegate object to the scrubber that conforms to the [`NSScrubberFlowLayoutDelegate`](../nsscrubberflowlayoutdelegate.md) protocol. This delegate object must implement the [`scrubber(_:layout:sizeForItemAt:)`](../nsscrubberflowlayoutdelegate/scrubber%28_,layout,sizeforitemat%29.md) method.
 

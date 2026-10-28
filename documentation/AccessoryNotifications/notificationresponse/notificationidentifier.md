@@ -15,7 +15,7 @@ An identifier for the notification.
 var notificationIdentifier: String
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to [`notificationIdentifier`](../accessorynotification/identifier-swift.struct/notificationidentifier.md) on the accessory notification.
 

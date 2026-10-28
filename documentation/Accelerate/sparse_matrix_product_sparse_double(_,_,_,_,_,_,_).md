@@ -25,13 +25,13 @@ func sparse_matrix_product_sparse_double(_ order: CBLAS_ORDER, _ transa: CBLAS_T
 sparse_status sparse_matrix_product_sparse_double(enum CBLAS_ORDER order, enum CBLAS_TRANSPOSE transa, double alpha, sparse_matrix_double A, sparse_matrix_double B, double * restrictC, sparse_dimension ldc);
 ```
 
-#### Return Value
+## Return Value
 
 On success, [`SPARSE_SUCCESS`](./sparse_success.md) is returned and `C` has been updated with result of the operation.  Will return [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) if order or `transa` is not valid or the leading dimension parameters do not meet their dimension requirements. On error, `C` is unchanged.
 
-#### Discussion
+## Discussion
 
-Multiplies the sparse matrix *B* by the sparse matrix *A* and adds the result to the dense matrix *C* (*C = alpha * op(A) * B + C*, where *op(A)* is either *A* or the transpose of *A*). If *A* is of size *M x K*, then *B* is of size *K x N* and *C* is of size *M x N*.If the desired operation is *C = A * B*, then an efficient option is to create the *C* buffer of zeros and then perform the operation with the zero filled *C*.
+Multiplies the sparse matrix *B* by the sparse matrix *A* and adds the result to the dense matrix *C* (*C = alpha \* op(A) \* B + C*, where *op(A)* is either *A* or the transpose of *A*). If *A* is of size *M x K*, then *B* is of size *K x N* and *C* is of size *M x N*.If the desired operation is *C = A \* B*, then an efficient option is to create the *C* buffer of zeros and then perform the operation with the zero filled *C*.
 
 > ❗ **Important**:  Apple provides the BLAS and LAPACK libraries under the Accelerate framework to be in line with LAPACK 3.9.1. Starting with iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26, and watchOS 26, the libraries are in line with LAPACK 3.12.0. These new interfaces provide additional functionality, as well as a new ILP64 interface. To use the new interfaces, define `ACCELERATE_NEW_LAPACK` before including the Accelerate or vecLib headers. For ILP64 interfaces, also define `ACCELERATE_LAPACK_ILP64`. For Swift projects, specify `ACCELERATE_NEW_LAPACK=1` and `ACCELERATE_LAPACK_ILP64=1` as preprocessor macros in Xcode build settings under Apple Clang - Preprocessing > Preprocessor Macros.
 
@@ -55,9 +55,9 @@ Multiplies the sparse matrix *B* by the sparse matrix *A* and adds the result to
 - [func sparse_matrix_product_sparse_float(CBLAS_ORDER, CBLAS_TRANSPOSE, Float, sparse_matrix_float!, sparse_matrix_float!, UnsafeMutablePointer<Float>!, sparse_dimension) -> sparse_status](./sparse_matrix_product_sparse_float%28_,_,_,_,_,_,_%29.md)
   Multiplies the sparse matrix *B* by the sparse matrix *A* and adds the result to the dense matrix *C*, all with single-precision values.
 - [func sparse_matrix_triangular_solve_dense_double(CBLAS_ORDER, CBLAS_TRANSPOSE, sparse_dimension, Double, sparse_matrix_double!, UnsafeMutablePointer<Double>!, sparse_dimension) -> sparse_status](./sparse_matrix_triangular_solve_dense_double%28_,_,_,_,_,_,_%29.md)
-  Solves the system of equations *B = alpha * T⁻¹  * B* for *B* where *B* is a dense matrix and *T* is a triangular sparse matrix, both with double-precision values.
+  Solves the system of equations *B = alpha \* T⁻¹  \* B* for *B* where *B* is a dense matrix and *T* is a triangular sparse matrix, both with double-precision values.
 - [func sparse_matrix_triangular_solve_dense_float(CBLAS_ORDER, CBLAS_TRANSPOSE, sparse_dimension, Float, sparse_matrix_float!, UnsafeMutablePointer<Float>!, sparse_dimension) -> sparse_status](./sparse_matrix_triangular_solve_dense_float%28_,_,_,_,_,_,_%29.md)
-  Solves the system of equations *B = alpha * T⁻¹  * B* for *B* where *B* is a dense matrix and *T* is a triangular sparse matrix, both with double-precision values.
+  Solves the system of equations *B = alpha \* T⁻¹  \* B* for *B* where *B* is a dense matrix and *T* is a triangular sparse matrix, both with double-precision values.
 
 
 ---

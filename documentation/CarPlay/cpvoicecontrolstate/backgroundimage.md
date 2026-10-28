@@ -21,7 +21,7 @@ var backgroundImage: UIImage? { get }
 @property (nonatomic, strong, readonly, nullable) UIImage * backgroundImage;
 ```
 
-#### Discussion
+## Discussion
 
 The background image fills the entire template view and appears behind all voice control state content, including the state image, title variants, and action buttons.
 

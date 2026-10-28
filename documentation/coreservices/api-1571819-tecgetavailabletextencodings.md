@@ -15,11 +15,11 @@ Returns the text encoding specifications currently configuredin the Text Encodin
 OSStatus TECGetAvailableTextEncodings(TextEncoding availableEncodings[], ItemCount maxAvailableEncodings, ItemCount *actualAvailableEncodings);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 This function ignores duplicate text encoding specifications.If you used the  [`TECCountAvailableTextEncodings`](./api-1571853-teccountavailabletextencodings.md) function to determine the size of the `availableEncodings ` []array, the number of encodings may be fewer than the number of arrayelements, because `TECCountAvailableTextEncodings` includesduplicate text encodings in its count.  
 

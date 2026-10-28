@@ -16,11 +16,11 @@ Performs an asynchronous write on an isochronous pipe and updates the frame list
 IOReturn (*LowLatencyWriteIsochPipeAsync)(void *self, UInt8 pipeRef, void *buf, UInt64 frameStart, UInt32 numFrames, UInt32 updateFrequency, IOUSBLowLatencyIsocFrame *frameList, IOAsyncCallback1 callback, void *refcon);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, or kIOReturnNotOpen if the interface is not open for exclusive access. Will return kIOUSBLowLatencyBufferNotPreviouslyAllocated or kIOUSBLowLatencyFrameListNotPreviouslyAllocated if the buffer or the frameList were not previously allocated using LowLatencyCreateBuffer().
 
-#### Discussion
+## Discussion
 
 The LowLatencyReadIsochPipeAsync() and LowLatencyWriteIsochPipeAsync() calls are analogous to ReadIsochPipeAsync() and WriteIsochPipeAsync(). They differ in that the frame list data is updated at *primary interrupt time*. This means that the client can inspect the frStatus and frActCount fields as soon as the transaction completes, without having to wait for the callback to happen (depending on the value of updateFrequency). The callback will still happen when the all the frames have been received.
 

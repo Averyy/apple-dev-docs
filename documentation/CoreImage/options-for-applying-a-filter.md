@@ -5,7 +5,7 @@
 
 Options that control the application of a custom Core Image filter.
 
-#### Overview
+## Overview
 
 Use these constants only when creating a custom filter for which you are writing the kernel. For more information, see [Core Image Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185). The example on creating a custom filter shows how to use these options.
 

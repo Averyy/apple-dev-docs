@@ -24,7 +24,7 @@ var images: [UIImage]? { get }
 @property (nonatomic, readonly, nullable) NSArray<UIImage *> * images;
 ```
 
-#### Discussion
+## Discussion
 
 For a non-animated image, the value of this property is `nil`.
 

@@ -26,21 +26,21 @@ struct UnsafePointer<Pointee> where Pointee : ~Copyable
 
 - [Using Imported C Functions in Swift](./using-imported-c-functions-in-swift.md)
 
-#### Overview
+## Overview
 
 You use instances of the `UnsafePointer` type to access data of a specific type in memory. The type of data that a pointer can access is the pointer’s `Pointee` type. `UnsafePointer` provides no automated memory management or alignment guarantees. You are responsible for handling the life cycle of any memory you work with through unsafe pointers to avoid leaks or undefined behavior.
 
 Memory that you manually manage can be either *untyped* or *bound* to a specific type. You use the `UnsafePointer` type to access and manage memory that has been bound to a specific type.
 
-### Understanding a Pointer’s Memory State
+## Understanding a Pointer’s Memory State
 
 The memory referenced by an `UnsafePointer` instance can be in one of several states. Many pointer operations must only be applied to pointers with memory in a specific state—you must keep track of the state of the memory you are working with and understand the changes to that state that different operations perform. Memory can be untyped and uninitialized, bound to a type and uninitialized, or bound to a type and initialized to a value. Finally, memory that was allocated previously may have been deallocated, leaving existing pointers referencing unallocated memory.
 
-#### Uninitialized Memory
+## Uninitialized Memory
 
 Memory that has just been allocated through a typed pointer or has been deinitialized is in an *uninitialized* state. Uninitialized memory must be initialized before it can be accessed for reading.
 
-#### Initialized Memory
+## Initialized Memory
 
 *Initialized* memory has a value that can be read using a pointer’s `pointee` property or through subscript notation. In the following example, `ptr` is a pointer to memory initialized with a value of `23`:
 
@@ -50,7 +50,7 @@ let ptr: UnsafePointer<Int> = ...
 // ptr[0] == 23
 ```
 
-### Accessing a Pointer’s Memory as a Different Type
+## Accessing a Pointer’s Memory as a Different Type
 
 When you access memory through an `UnsafePointer` instance, the `Pointee` type must be consistent with the bound type of the memory. If you do need to access memory that is bound to one type as a different type, Swift’s pointer types provide type-safe ways to temporarily or permanently change the bound type of the memory, or to load typed instances directly from raw memory.
 
@@ -94,7 +94,7 @@ let fullInteger = rawPointer.load(as: UInt64.self)   // OK
 let firstByte = rawPointer.load(as: UInt8.self)      // OK
 ```
 
-### Performing Typed Pointer Arithmetic
+## Performing Typed Pointer Arithmetic
 
 Pointer arithmetic with a typed pointer is counted in strides of the pointer’s `Pointee` type. When you add to or subtract from an `UnsafePointer` instance, the result is a new pointer of the same type, offset by that number of instances of the `Pointee` type.
 
@@ -119,7 +119,7 @@ let z = intPointer[2]
 // z == 30
 ```
 
-### Implicit Casting and Bridging
+## Implicit Casting and Bridging
 
 When calling a function or method with an `UnsafePointer` parameter, you can pass an instance of that specific pointer type, pass an instance of a compatible pointer type, or use Swift’s implicit bridging to pass a compatible pointer.
 

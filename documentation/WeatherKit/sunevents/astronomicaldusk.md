@@ -21,7 +21,7 @@ The time of astronomical sunset, when the sun’s center is 18° below the horiz
 var astronomicalDusk: Date?
 ```
 
-#### Discussion
+## Discussion
 
 The sun no longer illuminates the sky, and does not interfere with astronomical observations. This property is optional because it’s possible for the sun to not set on a given day, at extreme latitudes.
 

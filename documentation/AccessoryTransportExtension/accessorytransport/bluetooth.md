@@ -15,7 +15,7 @@ A transport method that uses Bluetooth for data delivery.
 case bluetooth
 ```
 
-#### Discussion
+## Discussion
 
 This transport method prefers [`SecurityMessage.CipherSuite.xWing`](../securitymessage/ciphersuite-swift.enum/xwing.md) cryptography, but supports [`SecurityMessage.CipherSuite.p256`](../securitymessage/ciphersuite-swift.enum/p256.md) as a fallback. The system prioritizes this transport method when the accessory connection is active.
 

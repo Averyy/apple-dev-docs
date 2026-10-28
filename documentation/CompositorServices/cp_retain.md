@@ -16,11 +16,11 @@ Increments the reference count of the specified object.
 void *cp_retain(void *obj);
 ```
 
-#### Return Value
+## Return Value
 
 The retained object.
 
-#### Discussion
+## Discussion
 
 Don’t call this function in Swift code or on types you manage using automatic reference counting (ARC).
 

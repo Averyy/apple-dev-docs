@@ -16,7 +16,7 @@
 kSENSE_EOM_Mask
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use when checking the SENSE_KEY field for the EOM bit.
 

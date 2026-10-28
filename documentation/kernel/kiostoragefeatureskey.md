@@ -15,7 +15,7 @@ A property of any object in the storage stack.
 #define kIOStorageFeaturesKey
 ```
 
-#### Discussion
+## Discussion
 
 kIOStorageFeaturesKey is a property of any object in the storage stack that wishes to express support of additional features, such as Force Unit Access. It is typically defined in the device object below the block storage driver object. It has an OSDictionary value, where each entry describes one given feature.
 

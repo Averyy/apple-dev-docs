@@ -15,7 +15,7 @@ The µLaw 2:1 format.
 ULaw
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

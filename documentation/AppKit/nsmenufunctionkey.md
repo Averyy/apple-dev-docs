@@ -19,7 +19,7 @@ var NSMenuFunctionKey: Int { get }
 NSMenuFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

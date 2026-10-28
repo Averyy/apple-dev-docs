@@ -19,7 +19,7 @@ A user activity to send to the newly activated scene.
 var userActivity: NSUserActivity? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The system sends the `userActivity` to the session’s scene upon activation, regardless of whether the scene session already exists.
 

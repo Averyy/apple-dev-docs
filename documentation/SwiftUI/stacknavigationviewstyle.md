@@ -22,7 +22,7 @@ A navigation view style represented by a view stack that only shows a single top
 struct StackNavigationViewStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`stack`](./navigationviewstyle/stack.md) to construct this style.
 

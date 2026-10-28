@@ -21,7 +21,7 @@ Captures the document’s current state for saving.
 func snapshot(contentType: UTType) async throws -> sending Self.Writer.Snapshot
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI calls this on the main actor when a save is needed. Keep this method lightweight — return a value that represents what to save, and perform actual serialization in [`write(snapshot:to:previous:progress:)`](../documentwriter/write%28snapshot,to,previous,progress%29.md).
 

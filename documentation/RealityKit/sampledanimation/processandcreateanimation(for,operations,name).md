@@ -22,11 +22,11 @@ func processAndCreateAnimation(for skeleton: SkeletonResource? = nil, operations
 
 Available when `Value` is `JointTransforms`.
 
-#### Return Value
+## Return Value
 
 An [`AnimationDefinition`](../animationdefinition.md) containing the processed animation. If root motion extraction is performed, returns an [`AnimationGroup`](../animationgroup.md) containing both the skeletal animation (`SampledAnimation<JointTransforms>`) and extracted root motion (`SampledAnimation<Transform>`). Otherwise returns a `SampledAnimation<JointTransforms>`.
 
-#### Discussion
+## Discussion
 
 Applies a series of skeletal animation processing operations to create a new animation. The function executes operations in the order specified. If skeleton is nil, only additive operations are supported.
 

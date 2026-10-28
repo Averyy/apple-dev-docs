@@ -17,7 +17,7 @@ The type of content that the print job is printing.
 - (NSString *) jobStyleHint;
 ```
 
-#### Return Value
+## Return Value
 
 The content description, or `nil` if no job style hint has been set.
 

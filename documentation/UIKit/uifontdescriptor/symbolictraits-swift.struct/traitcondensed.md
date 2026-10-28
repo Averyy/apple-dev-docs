@@ -24,7 +24,7 @@ static var traitCondensed: UIFontDescriptor.SymbolicTraits { get }
 UIFontDescriptorTraitCondensed
 ```
 
-#### Discussion
+## Discussion
 
 Expanded and condensed traits are mutually exclusive.
 

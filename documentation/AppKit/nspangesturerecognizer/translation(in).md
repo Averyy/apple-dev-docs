@@ -19,11 +19,11 @@ func translation(in view: NSView?) -> NSPoint
 - (NSPoint) translationInView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 A point whose x and y values correspond to the total distance travelled since the beginning of the gesture.
 
-#### Discussion
+## Discussion
 
 The x and y values of the returned point report the total translation over time. They are not delta values from the last time that the translation was reported. To determine the starting point of the gesture, subtract the current translation values from the current location of the mouse in the same view.
 

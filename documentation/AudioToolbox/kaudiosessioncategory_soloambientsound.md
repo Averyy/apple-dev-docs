@@ -23,7 +23,7 @@ var kAudioSessionCategory_SoloAmbientSound: Int { get }
 kAudioSessionCategory_SoloAmbientSound
 ```
 
-#### Discussion
+## Discussion
 
 When you use this category, audio from other apps is silenced. Your audio is silenced by screen locking and by the Silent switch (called the *Ring/Silent switch* on iPhone).
 

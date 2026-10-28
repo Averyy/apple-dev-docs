@@ -23,7 +23,7 @@ func update(_ transformer: inout StandardScaler<Element>.Transformer, with input
 
 Available when `Element` conforms to `BinaryFloatingPoint`, `Decodable`, and `Encodable`.
 
-#### Discussion
+## Discussion
 
 > **Note**: You can’t add new categories on subsequent updates. All categories should be present in the initial update.
 

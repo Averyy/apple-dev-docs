@@ -15,7 +15,7 @@ The options you may provide for requesting estimated arrival times.
 interface EtaRequestOptions
 ```
 
-#### Overview
+## Overview
 
 [`EtaRequestOptions`](./etarequestoptions.md) accepts an array of destinations, but only accepts one `origin`, one `transportType`, and one `departureDate`. In other words, you can request the estimated arrival times from one place to 10 other places via one mode of transportation at one time.
 

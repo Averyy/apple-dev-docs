@@ -19,11 +19,11 @@ Changes made since recording the Cinematic asset.
 - (CNScriptChanges *) changes;
 ```
 
-#### Return Value
+## Return Value
 
 The changes made since recording the Cinematic asset.
 
-#### Discussion
+## Discussion
 
 You can use it to checkpoint and later restore changes made to the Cinematic asset.
 

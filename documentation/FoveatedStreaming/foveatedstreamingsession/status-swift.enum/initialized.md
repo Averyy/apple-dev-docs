@@ -15,7 +15,7 @@ The initial state of the session.
 case initialized
 ```
 
-#### Discussion
+## Discussion
 
 This state indicates that the session isn’t connected to a streaming endpoint.
 

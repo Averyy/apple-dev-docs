@@ -24,11 +24,11 @@ mutating func update(with newMember: Self.Element) -> Self.Element?
 
 Available when `Self` is `Self.Element`.
 
-#### Return Value
+## Return Value
 
 The intersection of `[newMember]` and the set if the intersection was nonempty; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 If `newMember` is not contained in the set but subsumes current members of the set, the subsumed members are returned.
 

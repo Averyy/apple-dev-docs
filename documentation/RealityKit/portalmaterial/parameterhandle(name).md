@@ -20,11 +20,11 @@ Returns a handle for the parameter with the given name.
 static func parameterHandle(name: String) -> MaterialParameters.Handle
 ```
 
-#### Return Value
+## Return Value
 
 A handle that identifies the parameter on any [`PortalMaterial`](../portalmaterial.md) whose program declares an input with the given name.
 
-#### Discussion
+## Discussion
 
 Handles bypass the per-call string lookup that [`setParameter(name:value:)`](./setparameter%28name,value%29.md) and [`getParameter(name:)`](./getparameter%28name%29.md) perform. In performance-sensitive code that updates the same parameter every frame, obtain a handle once during setup and reuse it.
 

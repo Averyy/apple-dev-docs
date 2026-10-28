@@ -23,7 +23,7 @@ class func supportedInputContentMaxScale(device: any MTLDevice) -> Float
 + (float) supportedInputContentMaxScaleForDevice:(id<MTLDevice>) device;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum input content scale the GPU device supports.
 

@@ -19,7 +19,7 @@ A container for credential data that your app provides to an exporter or receive
 struct ASExportedCredentialData
 ```
 
-#### Overview
+## Overview
 
 This type is a wrapper object for multiple [`ASImportableAccount`](./asimportableaccount.md) objects.
 

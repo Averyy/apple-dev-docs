@@ -25,7 +25,7 @@ class NSFileAccessIntent
 @interface NSFileAccessIntent : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class when performing asynchronous operations with a file coordinator using the coordinator’s [`coordinate(with:queue:byAccessor:)`](./nsfilecoordinator/coordinate%28with,queue,byaccessor%29.md) method.
 

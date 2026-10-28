@@ -15,11 +15,11 @@
 SInt8 OSIncrementAtomic8(volatile SInt8 *address);
 ```
 
-#### Return Value
+## Return Value
 
 The value before the increment.
 
-#### Discussion
+## Discussion
 
 The OSIncrementAtomic8 function increments the value at the specified address by one and returns the original value.
 

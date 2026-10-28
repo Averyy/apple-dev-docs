@@ -11,7 +11,7 @@ A type that specifies color modes to use for printing.
 typedef UInt16 PMColorMode;
 ```
 
-#### Overview
+## Overview
 
 This data type is used by functions that are not recommended or deprecated.
 

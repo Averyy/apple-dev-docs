@@ -23,7 +23,7 @@ case keyboardLANG5
 UIKeyboardHIDUsageKeyboardLANG5
 ```
 
-#### Discussion
+## Discussion
 
 The [`UIKeyboardHIDUsage.keyboardLANG5`](./keyboardlang5.md) key is the Zenkaku/Hankaku key on Japanese language keyboards.
 

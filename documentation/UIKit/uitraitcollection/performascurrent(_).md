@@ -23,7 +23,7 @@ func performAsCurrent(_ actions: () -> Void)
 - (void) performAsCurrentTraitCollection:(void (^)()) actions;
 ```
 
-#### Discussion
+## Discussion
 
 The [`current`](./current.md) property is undefined outside the documented methods where UIKit sets it. Use this method when you want to execute code that relies on the [`current`](./current.md) property from outside these methods. You can also use this method if you want to execute some code using the traits of a different trait environment. Prefer this method over manually setting the [`current`](./current.md) property yourself.
 

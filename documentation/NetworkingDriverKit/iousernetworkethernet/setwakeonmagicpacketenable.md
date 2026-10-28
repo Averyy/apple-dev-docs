@@ -15,11 +15,11 @@ Enables or disables support for waking up the device when a specially formatted 
 virtual kern_return_t SetWakeOnMagicPacketEnable(bool enable);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 
-#### Discussion
+## Discussion
 
 Override this method and use it to configure your driver’s wake-on-magic-packet support.
 

@@ -24,7 +24,7 @@ var maxTotalThreadsPerMeshThreadgroup: Int { get set }
 @property (nonatomic, readwrite) NSUInteger maxTotalThreadsPerMeshThreadgroup;
 ```
 
-#### Discussion
+## Discussion
 
 This number represents the maximum size of the product of the components of parameter `threadsPerMeshThreadgroup` that Metal can use when drawing with this pipeline in mesh shader dispatch methods, such as [`drawMeshThreadgroups(threadgroupsPerGrid:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:)`](../mtl4rendercommandencoder/drawmeshthreadgroups%28threadgroupspergrid,threadsperobjectthreadgroup,threadspermeshthreadgroup%29.md).
 

@@ -23,7 +23,7 @@ static var allowInCarPlay: UNNotificationCategoryOptions { get }
 UNNotificationCategoryOptionAllowInCarPlay
 ```
 
-#### Discussion
+## Discussion
 
 Apps must be approved for CarPlay overall and then you must enable CarPlay for the notification types you want displayed. If a category doesn’t explicitly contain this option, notifications of that type aren’t displayed in a CarPlay environment.
 

@@ -21,7 +21,7 @@ A muted emphasis style, that deemphasizes the map’s imagery.
 static var muted: MapStyle.StandardEmphasis { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this style to highlight content you place on the map.
 

@@ -25,11 +25,11 @@ typealias CTRunDelegateGetAscentCallback = (UnsafeMutableRawPointer) -> CGFloat
 typedef double (*)(void *) CTRunDelegateGetAscentCallback;
 ```
 
-#### Return Value
+## Return Value
 
 The typographic ascent of glyphs in the run associated with the run delegate.
 
-#### Discussion
+## Discussion
 
 You would declare the get-ascent function like this if you were to name it `MyGetAscentCallback`:
 

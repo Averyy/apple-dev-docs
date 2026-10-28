@@ -16,7 +16,7 @@ Set the completion handler to be called once the command completes asynchronous 
 void (*SetCallback)(IOFireWireLibCommandRef self, IOFireWireLibCommandCallback inCallback);
 ```
 
-#### Discussion
+## Discussion
 
 Availability: (for interfaces obtained with ID)
 

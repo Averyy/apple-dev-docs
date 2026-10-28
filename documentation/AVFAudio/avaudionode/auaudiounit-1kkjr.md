@@ -18,7 +18,7 @@
 @property (nonatomic, readonly) AUAudioUnit * AUAudioUnit;
 ```
 
-#### Discussion
+## Discussion
 
 An AUAudioUnit wrapping or underlying the implementation’s AudioUnit.
 

@@ -23,7 +23,7 @@ func setImage(_ image: UIImage?, forSegmentAt segment: Int)
 - (void) setImage:(UIImage *) image forSegmentAtIndex:(NSUInteger) segment;
 ```
 
-#### Discussion
+## Discussion
 
 A segment can have only an image or a title; it can’t have both. There’s no default image.
 

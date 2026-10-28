@@ -21,7 +21,7 @@ Returns a `DateInterval` of the weekend contained by the given date, or `nil` if
 func dateIntervalOfWeekend(containing date: Date) -> DateInterval?
 ```
 
-#### Return Value
+## Return Value
 
 A `DateInterval`, or `nil` if the date is not in a weekend.
 

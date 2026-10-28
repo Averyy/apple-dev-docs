@@ -15,7 +15,7 @@ A structure describing a specific Ethernet type and configuration that your driv
 typedef uint32_t IOUserNetworkMediaType;
 ```
 
-#### Discussion
+## Discussion
 
 To specify a media type, combine a media type constant with zero or more configuration options. For example, if your driver supports 10-BaseT Ethernet in full duplex mode, use the following code to configure that media type.
 

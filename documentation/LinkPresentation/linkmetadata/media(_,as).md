@@ -22,11 +22,11 @@ nonisolated
 func media<Media>(_ attachment: LinkMetadata.Attachment, as type: Media.Type) async throws -> Media? where Media : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 A value of the `Transferable` type produced by the media data, or `nil` if there is no media data for the attachment as that type.
 
-#### Discussion
+## Discussion
 
 For example, PNG image data can be extracted as a specific type from the metadata if available:
 

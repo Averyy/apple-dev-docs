@@ -21,8 +21,8 @@ final func makeSimpleSurfaceShader(descriptor: LowLevelMaterialResource.SimpleSu
 **Other overloads**:
 
 ```swift
-nonisolated
-(nonsending) final func makeSimpleSurfaceShader(descriptor: LowLevelMaterialResource.SimpleSurfaceDescriptor) async throws -> sending LowLevelMaterialResource.SurfaceShader
+nonisolated(nonsending)
+final func makeSimpleSurfaceShader(descriptor: LowLevelMaterialResource.SimpleSurfaceDescriptor) async throws -> sending LowLevelMaterialResource.SurfaceShader
 ```
 
 

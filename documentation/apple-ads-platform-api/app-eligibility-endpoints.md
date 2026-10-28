@@ -8,7 +8,7 @@ Check whether apps qualify to run ads and look up rejection reasons for creative
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Not every app is eligible for promotion. Apple evaluates each app against a set of policy and technical criteria before it can serve ads, at a per-placement, per-country level of granularity. Each `EligibilityResponse` row reports a `state` of `ELIGIBLE` or `INELIGIBLE` for a given `adamId`, `supplyPlacement`, `supplySource`, `countryOrRegion`, and `deviceClass`, along with the `minAge` rating required in that market. To retrieve human-readable descriptions of any policy violations returned during ad creative review of App Store ad creatives, use the rejection reasons endpoints on this page.
 
@@ -16,7 +16,7 @@ This eligibility check applies to App Store app promotion (`promotedObjectType: 
 
 Use [Search Apps Endpoints](./search-apps-endpoints.md) to find an app’s `adamId` and full app details, including via [`Get App Details by Adam ID`](./get-app-details-by-adam-id.md), to check its eligibility. Once an app is eligible, use [Product Pages Endpoints](./product-pages-endpoints.md) to discover its product pages to reference in an ad creative.
 
-#### Explore the Endpoints
+## Explore the Endpoints
 
 The following endpoints let you check eligibility and retrieve rejection reasons:
 
@@ -26,7 +26,7 @@ The following endpoints let you check eligibility and retrieve rejection reasons
 | `POST` | `/v1/rejection-reasons/apps/query` | [`Query Rejection Reasons`](./find-rejection-reasons.md) queries rejection reasons for ad creatives associated with an app. |
 | `GET` | `/v1/rejection-reasons/apps/{rejectionReasonId}` | [`Get Rejection Reasons`](./gets-rejection-reasons-by-id.md) retrieves a single rejection reason by ID. |
 
-#### Interpret the Eligibility States
+## Interpret the Eligibility States
 
 The following states apply to `EligibilityResponse.state` values returned by the `POST /v1/eligibilities/apps/query` ([`Check App Eligibility`](./find-apps-eligibilities.md)) endpoint:
 

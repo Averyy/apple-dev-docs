@@ -23,7 +23,7 @@ var identifier: String? { get set }
 @property (nonatomic, copy, nullable) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 When the set of bar button items in a navigation bar or toolbar changes (for example, when pushing or popping view controllers), UIKit automatically animates the transition between the different sets of items. By default, UIKit uses heuristics based on item position and content to determine which items should be matched for these transitions.
 

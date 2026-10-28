@@ -20,7 +20,7 @@ func artwork(forMediaFile mediaFileURL: URL) -> ITLibArtwork?
 - (ITLibArtwork *) artworkForMediaFile:(NSURL *) mediaFileURL;
 ```
 
-#### Return Value
+## Return Value
 
 An [`ITLibArtwork`](../itlibartwork.md) instance representing the media file artwork, or `nil` if the media file doesn’t contain any artwork or the system can’t extract the artwork.
 

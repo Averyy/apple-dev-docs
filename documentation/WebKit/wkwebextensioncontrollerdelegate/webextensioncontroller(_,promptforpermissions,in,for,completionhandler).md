@@ -27,7 +27,7 @@ optional func webExtensionController(_ controller: WKWebExtensionController, pro
 - (void) webExtensionController:(WKWebExtensionController *) controller promptForPermissions:(NSSet<NSString *> *) permissions inTab:(id<WKWebExtensionTab>) tab forExtensionContext:(WKWebExtensionContext *) extensionContext completionHandler:(void (^)(NSSet<NSString *> *allowedPermissions, NSDate *expirationDate)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be implemented by the app to prompt the user for permission and call the completion handler with the set of permissions that were granted and an optional expiration date. If not implemented or the completion handler is not called within a reasonable amount of time, the request is assumed to have been denied. The expiration date can be used to specify when the permissions expire. If `nil`, permissions are assumed to not expire.
 

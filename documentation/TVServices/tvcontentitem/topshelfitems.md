@@ -21,7 +21,7 @@ var topShelfItems: [TVContentItem]? { get set }
 @property (nonatomic, copy, nullable) NSArray<TVContentItem *> * topShelfItems;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is non-`nil`, the content item represents a section item in a sectioned Top Shelf style. For more information, see [`TVTopShelfContentStyle`](../tvtopshelfcontentstyle.md). The title property must also be set to a non-`nil` string.
 

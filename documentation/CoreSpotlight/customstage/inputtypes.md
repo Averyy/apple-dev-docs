@@ -20,7 +20,7 @@ The data types this stage accepts as input.
 static var inputTypes: [SearchPipelineDataType] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Specify at least one input type for your stage. For each input type you specify, implement the corresponding `execute` method that accepts the input type.
 

@@ -24,7 +24,7 @@ func SSLSetSessionConfig(_ context: SSLContext, _ config: CFString) -> OSStatus
 OSStatus SSLSetSessionConfig(SSLContextRef context, CFStringRef config);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 

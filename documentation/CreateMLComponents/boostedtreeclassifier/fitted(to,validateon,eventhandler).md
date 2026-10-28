@@ -21,7 +21,7 @@ Fits a boosted tree classifier model to a collection of examples.
 func fitted(to input: DataFrame, validateOn validation: DataFrame? = nil, eventHandler: EventHandler? = nil) async throws -> TreeClassifierModel<Label>
 ```
 
-#### Return Value
+## Return Value
 
 The fitted boosted tree classifier model.
 

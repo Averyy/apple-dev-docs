@@ -24,7 +24,7 @@ var maxCompatiblePlacementSparsePageSize: MTLSparsePageSize { get set }
 @property (nonatomic, readwrite) MTLSparsePageSize maxCompatiblePlacementSparsePageSize;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter only affects the heap if you set the [`type`](./type.md) property of this descriptor to [`MTLHeapType.placement`](../mtlheaptype/placement.md).
 

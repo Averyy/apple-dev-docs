@@ -15,7 +15,7 @@ The automatic glass background effect.
 struct AutomaticGlassBackgroundEffect
 ```
 
-#### Overview
+## Overview
 
 You can also use [`automatic`](./glassbackgroundeffect/automatic.md) to construct this effect.
 

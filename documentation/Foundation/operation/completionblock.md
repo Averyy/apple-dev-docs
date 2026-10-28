@@ -25,7 +25,7 @@ var completionBlock: (@Sendable () -> Void)? { get set }
 @property (copy, nullable) void (^completionBlock)();
 ```
 
-#### Discussion
+## Discussion
 
 The completion block takes no parameters and has no return value.
 

@@ -11,7 +11,7 @@ Updates an ad group with an ad group identifier.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 To update ad groups, use the associated `campaignId` and `adgroupId` in the resource path.
 
@@ -19,7 +19,7 @@ In the request, specify [`TargetingDimensions`](./targetingdimensions.md) and ap
 
 > **Note**:  You can’t create or update ad groups with geotargeting for campaigns with multiple countries or regions. Use [`UpdateCampaignRequest`](./updatecampaignrequest.md) to clear your geotargeting parameters. Then apply [`TargetingDimensions`](./targetingdimensions.md) in the request payload.
 
-##### Payload example: Update an ad group with targeting
+### Payload example: Update an ad group with targeting
 
 **Request**:
 
@@ -154,7 +154,7 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups
 }
 ```
 
-##### Payload example: Update an ad group without targeting
+### Payload example: Update an ad group without targeting
 
 **Request**:
 
@@ -216,7 +216,7 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgr
 }
 ```
 
-##### Payload example: Update an ad group CPA goal
+### Payload example: Update an ad group CPA goal
 
 **Request**:
 
@@ -298,7 +298,7 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgr
 
 ```
 
-##### Payload example: Update an ad group Search March setting
+### Payload example: Update an ad group Search March setting
 
 Only the name field can be updated in automated ad groups.
 
@@ -359,7 +359,7 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgr
 
 ```
 
-##### Payload example: Update an ad group default bid amount
+### Payload example: Update an ad group default bid amount
 
 Only the name field can be updated in automated ad groups.
 

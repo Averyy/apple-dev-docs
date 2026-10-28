@@ -22,11 +22,11 @@ nonisolated
 func colorMultiply(_ color: Color) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with a color multiplication effect.
 
-#### Discussion
+## Discussion
 
 The following example shows two versions of the same image side by side; at left is the original, and at right is a duplicate with the `colorMultiply(_:)` modifier applied with [`purple`](../shapestyle/purple.md).
 

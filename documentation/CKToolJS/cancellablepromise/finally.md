@@ -17,7 +17,7 @@ CancellablePromise finally(
 );
 ```
 
-#### Discussion
+## Discussion
 
 If you provide a function for the `onfinally` parameter, `CancellablePromise` calls that function after the promise succeeds or fails.
 

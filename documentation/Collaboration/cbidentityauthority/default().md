@@ -19,11 +19,11 @@ class func `default`() -> CBIdentityAuthority
 + (CBIdentityAuthority *) defaultIdentityAuthority;
 ```
 
-#### Return Value
+## Return Value
 
 The local and network-bound identity authorities.
 
-#### Discussion
+## Discussion
 
 The default identity authority is the logical union of the identities in the local and managed authorities.
 

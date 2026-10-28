@@ -19,11 +19,11 @@
 static SPSize3D SPSize3DMakeWithPackedVector(simd_packed_double4 source);
 ```
 
-#### Return Value
+## Return Value
 
 A new size.
 
-#### Discussion
+## Discussion
 
 Creates a Spatial size from a packed simd vector.
 

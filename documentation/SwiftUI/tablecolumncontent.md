@@ -20,7 +20,7 @@ A type used to represent columns within a table.
 @preconcurrency protocol TableColumnContent<TableRowValue, TableColumnSortComparator>
 ```
 
-#### Overview
+## Overview
 
 This type provides the body content of the column, as well as the types of the column’s row values and the comparator used to sort rows.
 

@@ -13,7 +13,7 @@
 var kSpeechRelativeDuration: Int32 { get }
 ```
 
-#### Discussion
+## Discussion
 
 Specify the duration in the tune, relative to the current speech rate (this makes it easier to reuse the tune at a different rate).
 

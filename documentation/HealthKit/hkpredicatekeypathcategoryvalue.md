@@ -24,7 +24,7 @@ let HKPredicateKeyPathCategoryValue: String
 extern NSString * const HKPredicateKeyPathCategoryValue;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant whenever you want to include a sample’s quantity in a predicate format string. Add a `%K` placeholder to the format string, and then pass this constant as an argument.
 

@@ -21,7 +21,7 @@ A mechanism to interface between synchronous and asynchronous code, logging corr
 struct CheckedContinuation<T, E> where E : Error
 ```
 
-#### Overview
+## Overview
 
 A *continuation* is an opaque representation of program state. To create a continuation in asynchronous code, call the `withCheckedContinuation(isolation:function:_:)` or `withCheckedThrowingContinuation(isolation:function:_:)` function. To resume the asynchronous task, call the `resume(returning:)`, `resume(throwing:)`, `resume(with:)`, or `resume()` method.
 

@@ -21,7 +21,7 @@ The percentage of players of this game that earned the achievement.
 var rarityPercent: Double? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The rarity percentage ranges between `0.0` and `100.0`, inclusive, where `0.0` indicates that no player has earned the achievement, and `100.0` indicates that every player has earned the achievement. This property is `nil` if there isn’t enough data to compute the rarity of the achievement.
 

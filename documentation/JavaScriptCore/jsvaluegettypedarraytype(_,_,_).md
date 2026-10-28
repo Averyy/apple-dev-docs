@@ -24,7 +24,7 @@ func JSValueGetTypedArrayType(_ ctx: JSContextRef!, _ value: JSValueRef!, _ exce
 JSTypedArrayType JSValueGetTypedArrayType(JSContextRef ctx, JSValueRef value, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 A value of type [`JSTypedArrayType`](./jstypedarraytype.md) that identifies the typed array type of `value`, or [`kJSTypedArrayTypeNone`](./kjstypedarraytypenone.md) if `value` isn’t a typed array object.
 

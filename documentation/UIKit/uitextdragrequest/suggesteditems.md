@@ -23,7 +23,7 @@ var suggestedItems: [UIDragItem] { get }
 @property (nonatomic, readonly) NSArray<UIDragItem *> * suggestedItems;
 ```
 
-#### Discussion
+## Discussion
 
 The [`suggestedItems`](./suggesteditems.md) property is always an empty array if the text drag delegate doesn’t implement the [`textDraggableView(_:itemsForDrag:)`](../uitextdragdelegate/textdraggableview%28_,itemsfordrag%29.md) method.
 

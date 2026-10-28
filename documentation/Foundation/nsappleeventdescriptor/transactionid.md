@@ -20,7 +20,7 @@ var transactionID: AETransactionID { get }
 @property (readonly) AETransactionID transactionID;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver’s transaction ID (an integer value), or 0 if an error occurs.
 

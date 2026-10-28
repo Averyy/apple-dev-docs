@@ -19,7 +19,7 @@ A container for resources that will be encoded into a CustomMaterial’s custom 
 struct ResourceStorage<UniformsType>
 ```
 
-#### Overview
+## Overview
 
 An object of this type is passed to you in the callback closure passed to [`withMutableUniforms(ofType:stage:_:)`](./withmutableuniforms%28oftype,stage,_%29.md) and allows you to set [`TextureResource`](../textureresource.md) values within your custom uniforms argument buffer.
 

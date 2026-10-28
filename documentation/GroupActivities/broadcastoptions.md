@@ -20,7 +20,7 @@ Options for how to broadcast media on the shared communications channel.
 struct BroadcastOptions
 ```
 
-#### Overview
+## Overview
 
 Use these options to alter how the system presents audio and video associated with an activity’s FaceTime call. For example, you might mirror video during a workout activity to make it easier to follow the instructor’s movements.
 

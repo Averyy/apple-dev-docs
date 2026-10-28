@@ -19,7 +19,7 @@ struct TextStyle
 typedef NSString * NSFontTextStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Pass these constants to [`preferredFont(forTextStyle:options:)`](./preferredfont%28fortextstyle,options%29.md) or [`preferredFontDescriptor(forTextStyle:options:)`](../nsfontdescriptor/preferredfontdescriptor%28fortextstyle,options%29.md) to retrieve the corresponding font or font descriptor.
 

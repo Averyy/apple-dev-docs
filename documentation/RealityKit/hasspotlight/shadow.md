@@ -21,7 +21,7 @@ The shadow for the spotlight.
 @preconcurrency var shadow: SpotLightComponent.Shadow? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `nil` to remove shadows for the light. Set it to an instance of [`SpotLightComponent.Shadow`](../spotlightcomponent/shadow.md) to create shadows.
 

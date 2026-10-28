@@ -22,7 +22,7 @@ class MapKitEventTarget
 - [MapKit JS 6](./mapkit-js-6.md)
 - [Migrating from Version 5 to Version 6](./migrating-from-version-5-to-version-6.md)
 
-#### Discussion
+## Discussion
 
 [`MapKitEventTarget`](./mapkiteventtarget.md) is the base class for all objects that can dispatch events. [`MapKitEventTarget`](./mapkiteventtarget.md) offers an interface that’s similar to the DOM `EventTarget` interface, but with different semantics. Don’t mix them.
 

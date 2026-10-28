@@ -20,7 +20,7 @@ static let shareRecipients: UIActivityItemsConfigurationMetadataKey
 extern UIActivityItemsConfigurationMetadataKey const UIActivityItemsConfigurationMetadataKeyShareRecipients;
 ```
 
-#### Discussion
+## Discussion
 
 A key for an array of INPerson objects representing recipients who will be filled in by default in the compose view if that sharing app supports it.
 

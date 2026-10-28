@@ -24,7 +24,7 @@ var velocityRange: CGFloat { get set }
 @property CGFloat velocityRange;
 ```
 
-#### Discussion
+## Discussion
 
 The range specifies the mean amount the initial [`velocity`](./velocity.md) value change.
 

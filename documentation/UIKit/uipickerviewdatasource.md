@@ -23,7 +23,7 @@ protocol UIPickerViewDataSource : NSObjectProtocol
 @protocol UIPickerViewDataSource <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The data source of a [`UIPickerView`](./uipickerview.md) object must adopt this protocol to mediate between the picker view object and your app’s data model for that picker view. The data source provides the picker view with the number of components, and the number of rows in each component, for displaying the picker view data. Both methods in this protocol are required.
 

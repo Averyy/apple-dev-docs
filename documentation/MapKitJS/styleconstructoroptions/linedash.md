@@ -15,7 +15,7 @@ An array of line and gap lengths for creating a dashed line.
 lineDash?: number[];
 ```
 
-#### Discussion
+## Discussion
 
 This property provides an array to use as the line’s dash pattern where the numbers represent line and gap lengths in CSS pixels. For example, `[10, 5]` means draw for 10 pixels, leave a 5-pixel gap, then repeat. If there’s an odd number of elements in the array, MapKit JS copies and duplicates it. Set to an empty array (`[]`), to draw solid lines. The default line dash array is `[]`.
 

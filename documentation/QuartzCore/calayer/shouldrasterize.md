@@ -24,7 +24,7 @@ var shouldRasterize: Bool { get set }
 @property BOOL shouldRasterize;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the layer is rendered as a bitmap in its local coordinate space and then composited to the destination with any other content. Shadow effects and any filters in the [`filters`](./filters.md) property are rasterized and included in the bitmap. However, the current opacity of the layer is not rasterized. If the rasterized bitmap requires scaling during compositing, the filters in the [`minificationFilter`](./minificationfilter.md) and [`magnificationFilter`](./magnificationfilter.md) properties are applied as needed.
 

@@ -22,7 +22,7 @@ var rangeOfCaptions: NSRange { get }
 @property (readonly) NSRange rangeOfCaptions;
 ```
 
-#### Discussion
+## Discussion
 
 This object only references captions with the same time range. If captions with different start times and durations have similar problems, or if individual captions have multiple problems, the validator generates separate instances of this class for each problem case.
 

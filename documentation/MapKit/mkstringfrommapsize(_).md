@@ -25,7 +25,7 @@ func MKStringFromMapSize(_ size: MKMapSize) -> String
 static NSString *MKStringFromMapSize(MKMapSize size);
 ```
 
-#### Return Value
+## Return Value
 
 A formatted string containing the width and height values of the map size.
 

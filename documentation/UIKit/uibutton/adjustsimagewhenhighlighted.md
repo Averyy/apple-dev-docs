@@ -25,7 +25,7 @@ var adjustsImageWhenHighlighted: Bool { get set }
 @property (nonatomic) BOOL adjustsImageWhenHighlighted;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the image is drawn lighter when the button is highlighted. The default value is [`true`](../../Swift/true.md).
 

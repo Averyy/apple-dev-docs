@@ -21,7 +21,7 @@ Copies the spec at `srcPath` in this layer (and its children) to `dstPath`.
 func copy(from srcPath: USDLayer.Path, to dstPath: USDLayer.Path, in dstLayer: USDLayer? = nil) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` on success.
 

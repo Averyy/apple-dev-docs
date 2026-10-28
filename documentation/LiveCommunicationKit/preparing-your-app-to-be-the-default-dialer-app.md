@@ -5,7 +5,7 @@
 
 Let people configure their device to set your app as the default dialer app.
 
-#### Overview
+## Overview
 
 In addition to adding VoIP calling to your app and preparing it to be the default calling app, LiveCommunicationKit allows you to prepare your app as the default dialer app that can start cellular network conversations:
 
@@ -25,11 +25,11 @@ When someone enters recipient information in the default dialer app to initiate 
 
 When an app forwards a conversation to the system using LiveCommunicationKit, the framework routes the conversation to the configured default calling app which attempts a VoIP conversation. If the VoIP conversation fails, the default calling app can fall back to the system, and the system attempts to handle the conversation as a cellular network conversation.
 
-##### Add the default dialer app entitlement
+### Add the default dialer app entitlement
 
 To prepare your app to be the default dialer app, add the `com.apple.developer.dialing-app` entitlement to the `.entitlements` file in your app’s Xcode project. For details on adding this entitlement, see [`Default Dialer App`](../BundleResources/entitlements/com.apple.developer.dialing-app.md).
 
-##### Start a cellular network conversation
+### Start a cellular network conversation
 
 After adding the default dialer app entitlement, use LiveCommunicationKit to initiate a conversation. If your app doesn’t include VoIP conversation functionality, ask the system to start a conversation using the default calling app:
 
@@ -68,7 +68,7 @@ func startCellularConversation(_ phoneNumber: String, using cellularService: Cel
 
 If your app includes VoIP conversation functionality, handle the VoIP conversation in your app. If the VoIP conversation fails, use `DialRequest` and `TelephonyConversationManager` as shown above to let the system pass the conversation to the configured default calling app. If a person didn’t configure a default calling app, the system handles the conversation as a cellular network conversation.
 
-##### Access recent cellular conversation history
+### Access recent cellular conversation history
 
 If your app includes the [`Default Dialer App`](../BundleResources/entitlements/com.apple.developer.dialing-app.md) entitlement and a person configures it as the default dialer app, your app can access recent conversation history. Displaying recent conversations in your app makes it easy for people to return missed conversations or follow up after a recent conversation. To access the conversation history, use [`ConversationHistoryManager`](./conversationhistorymanager.md) to fetch recent conversations. To update your app’s interface to show recent changes to the conversation history, observe the [`ConversationHistoryManager.ConversationHistoryDidUpdate`](./conversationhistorymanager/conversationhistorydidupdate.md) message as shown in the following example:
 

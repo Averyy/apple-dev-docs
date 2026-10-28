@@ -25,11 +25,11 @@ class UnitIlluminance
 @interface NSUnitIlluminance : NSDimension
 ```
 
-#### Overview
+## Overview
 
 You typically use instances of [`UnitIlluminance`](./unitilluminance.md) to represent specific quantities of illuminance using the [`NSMeasurement`](./nsmeasurement.md) class.
 
-##### Illuminance
+### Illuminance
 
 Illuminance is the luminous flux incident on a surface. The SI unit for illuminance is the lux (lx), which is derived as one lumen per square meter (1lm / 1m2).
 

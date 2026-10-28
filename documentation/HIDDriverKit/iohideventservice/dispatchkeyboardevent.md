@@ -16,11 +16,11 @@ Dispatches a keyboard-related event to the system.
 virtual kern_return_t dispatchKeyboardEvent(uint64_t timeStamp, uint32_t usagePage, uint32_t usage, uint32_t value, IOOptionBits options, bool repeat);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Call this method from your event service to dispatch a keyboard event to the system. Typically, you call this method when handling a report from the device, after you determine that the report contains a keyboard-related event.
 

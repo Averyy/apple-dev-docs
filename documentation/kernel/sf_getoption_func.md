@@ -13,11 +13,11 @@
 typedef errno_t (*sf_getoption_func)(void *cookie, socket_t so, sockopt_t opt);
 ```
 
-#### Return Value
+## Return Value
 
 Return: 0 - The caller will continue with normal processing of the getsockopt. EJUSTRETURN - The caller will return with a value of 0 (no error) from that point without further propagating the get option command. The socket and protocol layers will not see the call. Anything Else - The caller will stop processing and return this error.
 
-#### Discussion
+## Discussion
 
 sf_getoption_func is called before performing getsockopt on a socket.
 

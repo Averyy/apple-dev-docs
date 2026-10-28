@@ -19,7 +19,7 @@ func start() async throws
 - (void) startWithCompletionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to start a VM that’s in the [`VZVirtualMachine.State.stopped`](./state-swift.enum/stopped.md) or [`VZVirtualMachine.State.error`](./state-swift.enum/error.md) state.
 

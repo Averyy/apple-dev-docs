@@ -21,7 +21,7 @@ class func shared() -> QCCompositionPickerPanel!
 + (QCCompositionPickerPanel *) sharedCompositionPickerPanel;
 ```
 
-#### Return Value
+## Return Value
 
 The shared `QCCompositionPickerPanel` object.
 

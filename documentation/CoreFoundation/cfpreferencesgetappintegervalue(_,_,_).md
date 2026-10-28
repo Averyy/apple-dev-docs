@@ -25,7 +25,7 @@ func CFPreferencesGetAppIntegerValue(_ key: CFString, _ applicationID: CFString,
 extern CFIndex CFPreferencesGetAppIntegerValue(CFStringRef key, CFStringRef applicationID, Boolean *keyExistsAndHasValidFormat);
 ```
 
-#### Return Value
+## Return Value
 
 The preference data for the specified key and application. If no value was located, `0` is returned.
 

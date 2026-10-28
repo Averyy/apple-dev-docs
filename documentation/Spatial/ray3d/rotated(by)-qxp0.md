@@ -21,7 +21,7 @@ Returns a ray that results from applying the specified rotation.
 func rotated(by rotation: Rotation3D) -> Ray3D
 ```
 
-#### Return Value
+## Return Value
 
 The ray that results from applying the specified rotation.
 

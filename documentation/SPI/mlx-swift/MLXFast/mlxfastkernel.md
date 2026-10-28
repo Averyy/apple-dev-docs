@@ -17,7 +17,7 @@ Container for a kernel created by [`metalKernel(name:inputNames:outputNames:sour
 typealias MLXFastKernel = MLXFast.MLXFastKernel
 ```
 
-#### Discussion
+## Discussion
 
 The [`MLXFastKernel`](./mlxfastkernel.md) can be used to evaluate the kernel with inputs:
 

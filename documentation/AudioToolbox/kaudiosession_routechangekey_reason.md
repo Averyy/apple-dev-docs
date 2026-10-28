@@ -22,7 +22,7 @@ let kAudioSession_RouteChangeKey_Reason: CFString!
 extern CFStringRef const kAudioSession_RouteChangeKey_Reason;
 ```
 
-#### Discussion
+## Discussion
 
 A [`CFNumber`](../CoreFoundation/cfnumber.md) object that identifies the reason for the audio route change. See [Audio Route Change Reasons](./api-1618380-audio-route-change-reasons.md).
 

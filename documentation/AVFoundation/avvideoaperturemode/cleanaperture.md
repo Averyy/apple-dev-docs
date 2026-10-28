@@ -24,7 +24,7 @@ static let cleanAperture: AVVideoApertureMode
 extern AVVideoApertureMode const AVVideoApertureModeCleanAperture;
 ```
 
-#### Discussion
+## Discussion
 
 An image’s clean aperture is a region of video free from transition artifacts caused by the encoding of the signal.
 

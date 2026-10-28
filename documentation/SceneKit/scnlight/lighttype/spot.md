@@ -25,7 +25,7 @@ static let spot: SCNLight.LightType
 extern SCNLightType const SCNLightTypeSpot;
 ```
 
-#### Discussion
+## Discussion
 
 The position and orientation of the node containing the light determines the area lit by the spotlight, and all lighting attributes affect its appearance.
 

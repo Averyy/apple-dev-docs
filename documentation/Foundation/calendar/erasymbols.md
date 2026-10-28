@@ -21,7 +21,7 @@ A list of eras in this calendar, localized to the Calendar’s `locale`.
 var eraSymbols: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for English in the Gregorian calendar, returns `["BC", "AD"]`.
 

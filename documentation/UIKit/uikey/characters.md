@@ -23,7 +23,7 @@ var characters: String { get }
 @property (nonatomic, readonly) NSString * characters;
 ```
 
-#### Discussion
+## Discussion
 
 When the user holds one or more modifier keys, this property contains the modified characters according to the rules of the particular modifier keys. For example, if the user holds Shift while pressing a letter button on a Latin keyboard, this property contains a capital letter.
 

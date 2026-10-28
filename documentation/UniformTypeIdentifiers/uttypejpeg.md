@@ -21,7 +21,7 @@ A type that represents a JPEG image.
 extern UTType * const UTTypeJPEG;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.jpeg`.
 

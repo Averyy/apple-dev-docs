@@ -16,7 +16,7 @@ A type that indicates calendrical units, such as year, month, day, and hour.
 enum ApplePayRecurringPaymentDateUnit
 ```
 
-#### Overview
+## Overview
 
 The following are the values for the recurring payment date unit:
 

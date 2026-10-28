@@ -24,7 +24,7 @@ let HKMetadataKeyAlgorithmVersion: String
 extern NSString * const HKMetadataKeyAlgorithmVersion;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes an [`NSNumber`](../Foundation/nsnumber.md) containing an [`NSInteger`](../ObjectiveC/nsinteger.md).
 

@@ -26,7 +26,7 @@ protocol UIViewControllerPreviewingDelegate : NSObjectProtocol
 @protocol UIViewControllerPreviewingDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 To learn about 3D Touch, read [Adopting 3D Touch on iPhone](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Adopting3DTouchOniPhone/index.html#//apple_ref/doc/uid/TP40016543).
 

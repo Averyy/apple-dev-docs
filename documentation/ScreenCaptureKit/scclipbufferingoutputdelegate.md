@@ -22,7 +22,7 @@ protocol SCClipBufferingOutputDelegate : NSObjectProtocol
 @protocol SCClipBufferingOutputDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Defines an interface for delegates of SCClipBufferingOutput to respond to events that occur during clip buffering.
 

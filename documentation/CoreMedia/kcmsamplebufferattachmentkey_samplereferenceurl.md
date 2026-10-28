@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_SampleReferenceURL: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_SampleReferenceURL;
 ```
 
-#### Discussion
+## Discussion
 
 This key is only used for sample buffers representing sample references.
 

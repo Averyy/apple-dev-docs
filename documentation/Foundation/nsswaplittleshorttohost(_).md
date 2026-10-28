@@ -25,7 +25,7 @@ func NSSwapLittleShortToHost(_ x: UInt16) -> UInt16
 static unsigned short NSSwapLittleShortToHost(unsigned short x);
 ```
 
-#### Discussion
+## Discussion
 
 Converts the little-endian formatted value in `x` to the current endian format and returns the resulting value. If it is necessary to swap the bytes of `x`, this function calls [`NSSwapShort(_:)`](./nsswapshort%28_%29.md) to perform the swap.
 

@@ -17,7 +17,7 @@ Returns an instance representing the current text-input mode.
 + (UITextInputMode *) currentInputMode;
 ```
 
-#### Return Value
+## Return Value
 
 An object representing the current input mode or `nil` if this object is not set by the text input system.
 

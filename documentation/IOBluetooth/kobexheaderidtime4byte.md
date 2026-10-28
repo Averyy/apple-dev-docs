@@ -17,7 +17,7 @@ var kOBEXHeaderIDTime4Byte: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDTime4Byte
 ```
 
-#### Discussion
+## Discussion
 
 Date/time stamp - 4 byte version for compat. only. Seconds since Jan 1, 1970.
 

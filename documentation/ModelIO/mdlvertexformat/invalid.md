@@ -24,7 +24,7 @@ case invalid
 MDLVertexFormatInvalid
 ```
 
-#### Discussion
+## Discussion
 
 This is the default format value for newly created [`MDLVertexAttribute`](../mdlvertexattribute.md) objects. If a vertex attribute of invalid format is included in a [`MDLMesh`](../mdlmesh.md) object, Model I/O  ignores the other properties of that attribute.
 

@@ -25,7 +25,7 @@ func CFURLClearResourcePropertyCache(_ url: CFURL!)
 extern void CFURLClearResourcePropertyCache(CFURLRef url);
 ```
 
-#### Discussion
+## Discussion
 
 This method is applicable only to URLs that represent file system resources.
 

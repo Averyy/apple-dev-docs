@@ -5,19 +5,19 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 17.2 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 17.3. The SDK comes bundled with Xcode 15.1. For information on the compatibility requirements for Xcode 15.1, see [Xcode 15.1 Release Notes](../Xcode-Release-Notes/xcode-15_1-release-notes.md).
 
-##### Automatic Assessment Configuration
+### Automatic Assessment Configuration
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue in which the app can crash when certain types of audio or video are played. This is also fixed in Autonomous Single App Mode.  (119041990)
 
-##### StoreKit
+### StoreKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Resolved an issue where APIs which provide Transaction values would unexpectedly fail when the purchase price of the transaction is a very large number.  (118883880)
 

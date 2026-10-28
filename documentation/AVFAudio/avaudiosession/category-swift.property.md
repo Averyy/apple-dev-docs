@@ -24,7 +24,7 @@ var category: AVAudioSession.Category { get }
 @property (readonly) AVAudioSessionCategory category;
 ```
 
-#### Discussion
+## Discussion
 
 An audio session category defines a set of audio behaviors for your app. The default category assigned to an audio session is [`soloAmbient`](./category-swift.struct/soloambient.md).
 

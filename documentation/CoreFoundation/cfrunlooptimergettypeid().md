@@ -25,7 +25,7 @@ func CFRunLoopTimerGetTypeID() -> CFTypeID
 extern CFTypeID CFRunLoopTimerGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFRunLoopTimer opaque type.
 

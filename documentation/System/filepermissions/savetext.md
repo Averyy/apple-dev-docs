@@ -21,7 +21,7 @@ Indicates that executable’s text segment should be kept in swap space even aft
 static var saveText: FilePermissions { get }
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see the `chmod(2)` man page’s discussion of `S_ISVTX` (the sticky bit).
 

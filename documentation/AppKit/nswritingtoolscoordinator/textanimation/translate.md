@@ -19,7 +19,7 @@ case translate
 NSWritingToolsCoordinatorTextAnimationTranslate
 ```
 
-#### Discussion
+## Discussion
 
 When Writing Tools inserts text at a given location, it creates an animation to make room for the new text. When preparing for this animation, hide the text between the insertion point and the end of your text storage. When finishing the animation, show the text again.
 

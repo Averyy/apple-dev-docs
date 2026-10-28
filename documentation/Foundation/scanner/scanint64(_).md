@@ -25,11 +25,11 @@ func scanInt64(_ result: UnsafeMutablePointer<Int64>?) -> Bool
 - (BOOL) scanLongLong:(long long *) result;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver finds a valid decimal integer representation, otherwise [`false`](../../Swift/false.md). Overflow is considered a valid decimal integer representation.
 
-#### Discussion
+## Discussion
 
 All overflow digits are skipped. Skips past excess digits in the case of overflow, so the receiver’s position is past the entire decimal representation.
 

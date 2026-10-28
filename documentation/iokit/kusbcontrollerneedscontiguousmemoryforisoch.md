@@ -14,7 +14,7 @@
 #define kUSBControllerNeedsContiguousMemoryForIsoch
 ```
 
-#### Discussion
+## Discussion
 
 Useful property names in USB land.
 

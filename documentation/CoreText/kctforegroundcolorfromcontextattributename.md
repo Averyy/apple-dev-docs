@@ -25,7 +25,7 @@ let kCTForegroundColorFromContextAttributeName: CFString
 extern CFStringRef const kCTForegroundColorFromContextAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 Value must be a [`CFBoolean`](../CoreFoundation/cfboolean.md) object. Default is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md). The reason this exists is because an [`NSAttributedString`](../Foundation/nsattributedstring.md) object defaults to a black color if no color attribute is set. This forces Core Text to set the color in the context. This attribute allows developers to sidestep this, making Core Text set nothing but font information in the [`CGContext`](../CoreGraphics/cgcontext.md). If set, this attribute also determines the color used by [`kCTUnderlineStyleAttributeName`](./kctunderlinestyleattributename.md), in which case it overrides the foreground color.
 

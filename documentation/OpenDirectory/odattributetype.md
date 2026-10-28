@@ -20,7 +20,7 @@ typealias ODAttributeType = NSString
 typedef NSString * ODAttributeType;
 ```
 
-#### Discussion
+## Discussion
 
 See [General Attribute Types](./general-attribute-types.md) and [Configuration Attribute Types](./configuration-attribute-types.md) for recognized attribute type values.
 

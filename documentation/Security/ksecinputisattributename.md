@@ -21,7 +21,7 @@ let kSecInputIsAttributeName: CFString
 extern CFStringRef const kSecInputIsAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 Use one of the values listed in [Input Types](./transform-attributes.md#Input-Types).
 

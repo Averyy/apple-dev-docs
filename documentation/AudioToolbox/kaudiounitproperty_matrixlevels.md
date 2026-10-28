@@ -24,7 +24,7 @@ var kAudioUnitProperty_MatrixLevels: AudioUnitPropertyID { get }
 kAudioUnitProperty_MatrixLevels
 ```
 
-#### Discussion
+## Discussion
 
 Calculate the size required for this property’s value as follows:
 

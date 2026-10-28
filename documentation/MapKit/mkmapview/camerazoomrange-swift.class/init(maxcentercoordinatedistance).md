@@ -24,7 +24,7 @@ convenience init?(maxCenterCoordinateDistance maxDistance: CLLocationDistance)
 - (instancetype) initWithMaxCenterCoordinateDistance:(CLLocationDistance) maxDistance;
 ```
 
-#### Discussion
+## Discussion
 
 The constant, [`MKMapCameraZoomDefault`](../../mkmapcamerazoomdefault.md), specifies the default distance for [`maxCenterCoordinateDistance`](./maxcentercoordinatedistance.md).
 

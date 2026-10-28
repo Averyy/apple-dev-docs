@@ -20,7 +20,7 @@ Extracts features of a particular date.
 func applied(to date: Date, eventHandler: EventHandler? = nil) -> [Scalar]
 ```
 
-#### Return Value
+## Return Value
 
 An array of feature values.
 

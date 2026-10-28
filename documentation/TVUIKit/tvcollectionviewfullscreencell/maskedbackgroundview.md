@@ -19,7 +19,7 @@ var maskedBackgroundView: UIView { get }
 @property (nonatomic, readonly) UIView * maskedBackgroundView;
 ```
 
-#### Discussion
+## Discussion
 
 The `maskedBackgroundView` property returns the current cell’s background view. Modify properties of this view to customize the parallax effect. Generally, you should add an opaque image to the view.
 

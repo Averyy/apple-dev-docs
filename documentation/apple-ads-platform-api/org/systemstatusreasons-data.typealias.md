@@ -34,11 +34,11 @@ string Org.SystemStatusReasons
 - `TERM_NOT_ACCEPTED`: Required terms of service have not been accepted.
 - `USER_REQUESTED_ACCOUNT_SUSPENSION`: The organization was suspended at user request.
 
-#### Discussion
+## Discussion
 
 Most of these reasons trace back to a payment or compliance issue, such as an expired Master Services Agreement or a declined payment method.
 
-##### Example
+### Example
 
 ```json
 {

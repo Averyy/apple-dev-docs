@@ -19,7 +19,7 @@ The text of the cell.
 @property (nonatomic, copy, nullable) NSString * text;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `nil` (no text).
 

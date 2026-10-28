@@ -23,7 +23,7 @@ var outstandingFileTransfers: [WCSessionFileTransfer] { get }
 @property (nonatomic, copy, readonly) NSArray<WCSessionFileTransfer *> * outstandingFileTransfers;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the [`WCSessionFileTransfer`](../wcsessionfiletransfer.md) objects representing the files that are queued for delivery but have not yet been delivered to the counterpart. You can use the objects to cancel specific file transfers.
 

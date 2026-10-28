@@ -8,13 +8,13 @@ Query audit summaries and retrieve change detail records for entities in an ad a
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Change History provides a chronological log of every create, update, and delete operation performed on campaign entities within an ad account. Each entry captures what changed, which entity the change affected, who made the change, and when it occurred. Use it alongside the Reports API to correlate configuration changes with shifts in campaign performance.
 
 > ❗ **Important**: The query endpoint’s summary rows don’t carry a ready-to-use `detailId` by default. If you plan to look up field-level changes with the detail endpoint, set `options.metadata` to `latest` or `snapshot` on the query request so each row’s `metas` array includes a `detailId` you can pass straight to `GET /v1/change-history/{detailId}` ([`Get Change History Detail`](./get-change-details-by-detailid.md)). See Interpret the Response below for the full explanation.
 
-#### Review the Endpoints
+## Review the Endpoints
 
 Change History exposes two endpoints: one to query audit summaries and one to retrieve field-level change details.
 
@@ -23,7 +23,7 @@ Change History exposes two endpoints: one to query audit summaries and one to re
 | `POST` | `/v1/change-history/query` | Queries audit summaries grouped by transaction, returning one row per (`userType`, `modifiedBy`, `transactionId`, `eventType`, `entityType`) combination with a `count` of entity changes for that grouping. See [`Query Change History`](./query-audit-summary-_-grouped-by-transaction.md) for details. |
 | `GET` | `/v1/change-history/{detailId}` | Retrieves field-level before and after values for a single entity change. See [`Get Change History Detail`](./get-change-details-by-detailid.md) for details. |
 
-##### Structure the Request
+### Structure the Request
 
 The change history query endpoint uses a different schema from other `/query` endpoints in the API. The request body supports the following top-level fields:
 
@@ -36,7 +36,7 @@ The change history query endpoint uses a different schema from other `/query` en
   - `timeZone`: controls how the API interprets `eventTime` filter values, using `UTC` (default) or `ORTZ` (converted to UTC server-side using the org’s configured timezone).
   - `metadata`: controls which entity metadata appears in change detail responses, using `none` (default, no metadata), `latest` (joins current entity metadata), or `snapshot` (uses metadata captured at the time of the event).
 
-##### Interpret the Response
+### Interpret the Response
 
 All change history endpoints return a `dataType` field that identifies the response object type. The query endpoint returns `"dataType": "AuditSummary"` and the detail endpoint returns `"dataType": "ChangeDetail"`.
 
@@ -46,7 +46,7 @@ An `AuditSummary` row alone doesn’t carry the `detailId` needed to look up fie
 
 Each [`ChangeDetails`](./changedetails.md) record represents a single entity change within a transaction and contains a `details` array of [`ActivityDetail`](./activitydetail.md) objects. Each [`ActivityDetail`](./activitydetail.md) holds a `changes` array of field change objects, where each entry captures the `field` name, `oldValues`, and `newValues` as string arrays.
 
-##### Filter Results
+### Filter Results
 
 The following fields are available as filter targets on the query endpoint:
 
@@ -63,7 +63,7 @@ The following fields are available as filter targets on the query endpoint:
 | `entityId` | `EQUALS`, `IN` | Restrict results to changes on a specific entity. |
 | `txnId` | `EQUALS`, `IN` | Restrict results to a specific transaction. |
 
-##### Identify Entity Types
+### Identify Entity Types
 
 The `entityType` field in both summary and detail responses identifies which API entity the change affected. It isn’t a closed enum: its value matches the name of whatever API entity changed. Commonly observed values include the following:
 
@@ -79,7 +79,7 @@ The `entityType` field in both summary and detail responses identifies which API
 | `Creative` | Creative object defining pre-tap ad experience and destination |
 | `LocationGroup` | Location group used for geo-targeting in Apple Maps campaigns |
 
-##### Identify Event Types
+### Identify Event Types
 
 The `eventType` field describes the nature of the change in a transaction. The event type determines how the API populates `oldValues` and `newValues` in field change objects:
 

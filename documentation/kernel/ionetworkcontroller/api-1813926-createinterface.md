@@ -11,11 +11,11 @@ Creates a new network interface object.
 virtual IONetworkInterface * createInterface() = 0;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a newly allocated and initialized interface object.
 
-#### Overview
+## Overview
 
 This method is called by attachInterface() to perform allocation and initialization of a new interface object. A subclass of IONetworkController must implement this method and return a matching interface object. For example, IOEthernetController's implementation will return an IOEthernetInterface object when createInterface() is called.
 

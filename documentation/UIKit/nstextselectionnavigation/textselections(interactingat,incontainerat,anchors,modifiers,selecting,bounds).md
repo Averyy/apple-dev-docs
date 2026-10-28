@@ -23,7 +23,7 @@ func textSelections(interactingAt point: CGPoint, inContainerAt containerLocatio
 - (NSArray<NSTextSelection *> *) textSelectionsInteractingAtPoint:(CGPoint) point inContainerAtLocation:(id<NSTextLocation>) containerLocation anchors:(NSArray<NSTextSelection *> *) anchors modifiers:(NSTextSelectionNavigationModifier) modifiers selecting:(BOOL) selecting bounds:(CGRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 An array of text selections.
 

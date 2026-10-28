@@ -22,11 +22,11 @@ Provides a sequence of dates starting around a given date.
 func entries(from startDate: Date, mode: Self.Mode) -> Self.Entries
 ```
 
-#### Return Value
+## Return Value
 
 A sequence of dates in ascending order.
 
-#### Discussion
+## Discussion
 
 A [`TimelineView`](../timelineview.md) that you create calls this method to figure out when to update its content. The method returns a sequence of dates in increasing order that represent points in time when the timeline view should update. Types that conform to the [`TimelineSchedule`](../timelineschedule.md) protocol, like the one returned by [`periodic(from:by:)`](./periodic%28from,by%29.md), or a custom schedule that you define, implement a custom version of this method to implement a particular kind of schedule.
 

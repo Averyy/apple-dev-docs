@@ -19,11 +19,11 @@ func addTypes(_ newTypes: [NSPasteboard.PasteboardType], owner newOwner: Any?) -
 - (NSInteger) addTypes:(NSArray<NSString *> *) newTypes owner:(id) newOwner;
 ```
 
-#### Return Value
+## Return Value
 
 The new change count, or `0` if there was an error adding the types.
 
-#### Discussion
+## Discussion
 
 This method adds promises for the specified types to the first pasteboard item.
 

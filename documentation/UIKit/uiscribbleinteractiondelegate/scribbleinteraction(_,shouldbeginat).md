@@ -21,11 +21,11 @@ optional func scribbleInteraction(_ interaction: UIScribbleInteraction, shouldBe
 - (BOOL) scribbleInteraction:(UIScribbleInteraction *) interaction shouldBeginAtLocation:(CGPoint) location;
 ```
 
-#### Return Value
+## Return Value
 
 Return `false` to disallow writing at the specified location; otherwise return `true`.
 
-#### Discussion
+## Discussion
 
 Use this callback to temporarily suppress Scribble in text input views if your app supports drawing over text or special interaction when using Apple Pencil. In cases like this, consider providing a UI for the user to toggle between drawing and handwriting.
 

@@ -14,11 +14,11 @@ virtual IOReturn performPowerStateChange(
  UInt32 *microsecondsUntilComplete);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on a successful completion
 
-#### Overview
+## Overview
 
 In order to deal with power state changes, a subclass must override this function. Any combination of old and new power states may be passed to this function. If work is to be performed while transitioning to sleep, check for a newPowerState of kIOAudioDeviceSleep. If work is to be performed while transitioning from sleep, check for an oldPowerState of kIOAudioDeviceSleep. A power state of kIOAudioDeviceIdle means the system is awake, but no clients are currently playing or recording audio (i.e. no IOAudioEngines are active). A power state of kIOAudioDeviceActive means that at least one IOAudioEngine is active. It is possible for a power state change to be performed synchronously or asynchronously. In the case of a synchronous power state change, simple leave microsecondsUntilComplete alone and return kIOReturnSuccess. If an asynchronous power state change is needed the driver should do whatever needed to schedule another thread to finish the state change and set the microsecondsUntilComplete to an upper bound on the amount of time it will take to complete the power state change. Then when the power state change is complete, a call must be made to completePowerStateChange(). During an asynchronous power state change, the current power state will remain the same as before the transition began, and the pendingPowerState is set to the new power state that will be set when the change is complete.
 

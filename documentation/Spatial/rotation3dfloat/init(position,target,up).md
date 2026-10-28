@@ -21,7 +21,7 @@ Returns a rotation that’s the look at direction from the eye position to the t
 init(position: Point3DFloat = Point3DFloat(x: 0, y: 0, z: 0), target: Point3DFloat, up: Vector3DFloat = Vector3DFloat(x: 0, y: 1, z: 0))
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function creates a rotation where `+z` is forward.
 

@@ -19,7 +19,7 @@ func unhideRows(at indexes: IndexSet, withAnimation rowAnimation: NSTableView.An
 - (void) unhideRowsAtIndexes:(NSIndexSet *) indexes withAnimation:(NSTableViewAnimationOptions) rowAnimation;
 ```
 
-#### Discussion
+## Discussion
 
 Unhiding a table row causes the [`tableView(_:didAdd:forRow:)`](../nstableviewdelegate/tableview%28_,didadd,forrow%29.md) delegate method to be invoked.
 

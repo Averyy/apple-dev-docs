@@ -21,7 +21,7 @@ Measures the execution of a closure and attaches the specified message.
 func withIntervalSignpost<T>(_ name: StaticString, id: OSSignpostID = .exclusive, _ message: SignpostMetadata, around task: () throws -> T) rethrows -> T
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Don’t create an instance of [`SignpostMetadata`](../signpostmetadata.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
 

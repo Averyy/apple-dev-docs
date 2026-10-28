@@ -14,7 +14,7 @@ Allow applications to access a device’s network configuration settings. Determ
 - tvOS 9.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 This collection of documents describes the programming interfaces of the System Configuration framework. The System Configuration framework provides functions that determine the reachability of target hosts in both a synchronous and an asynchronous manner. It also provides error detection facilities.
 

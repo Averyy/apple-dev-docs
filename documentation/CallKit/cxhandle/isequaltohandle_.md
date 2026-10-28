@@ -19,7 +19,7 @@ Returns a Boolean value that indicates whether a given handle is equal to the re
 - (BOOL) isEqualToHandle:(CXHandle *) handle;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `handle` is equal to the receiver, otherwise [`false`](../../Swift/false.md).
 

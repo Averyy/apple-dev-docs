@@ -23,7 +23,7 @@ var contentInsets: NSDirectionalEdgeInsets { get set }
 @property (nonatomic) NSDirectionalEdgeInsets contentInsets;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property within a grid layout to apply even spacing around each edge of each item. Content insets are applied after applying [`edgeSpacing`](./edgespacing.md).
 

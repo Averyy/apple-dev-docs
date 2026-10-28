@@ -24,7 +24,7 @@ class VNCoreMLFeatureValueObservation
 @interface VNCoreMLFeatureValueObservation : VNObservation
 ```
 
-#### Overview
+## Overview
 
 This type of observation results from performing a [`VNCoreMLRequest`](./vncoremlrequest.md) image analysis with a Core ML model whose role is prediction rather than classification or image-to-image processing.
 

@@ -17,15 +17,15 @@ Fetches sensor data based on the provided request parameters. The reader must be
 final func deletionRecords(matching request: SRFetchRequest) -> some AsyncSequence<SRFetchResponse<SRDeletionRecord>, any Error>
 ```
 
-#### Return Value
+## Return Value
 
 An `AsyncSequence` that yields `SRFetchResponse<SRDeletionRecord>` objects.
 
-#### Discussion
+## Discussion
 
 Creates an asynchronous stream of deletion records. The stream continues to yield data until the fetch request is complete, an error occurs, or the stream is cancelled.
 
-#### Example
+## Example
 
 ```swift
 let fetchRequest = SRFetchRequest()
@@ -40,7 +40,7 @@ for try await response in visitsReader.deletionRecords(matching: fetchRequest) {
 }
 ```
 
-#### Cancellation
+## Cancellation
 
 The stream can be cancelled by breaking out of the iteration loop or by the system when the reader is deallocated. Cancellation stops the fetch operation gracefully.
 

@@ -20,7 +20,7 @@ func activate()
 - (void) activate;
 ```
 
-#### Discussion
+## Discussion
 
 If the target application is not already running, this method launches it.
 

@@ -25,11 +25,11 @@ class var defaultFormatterBehavior: DateFormatter.Behavior { get set }
 @property (class) NSDateFormatterBehavior defaultFormatterBehavior;
 ```
 
-#### Return Value
+## Return Value
 
 The default formatting behavior for instances of the class. For possible values, see [`DateFormatter.Behavior`](./behavior.md).
 
-#### Discussion
+## Discussion
 
 For iOS and for macOS applications linked against macOS 10.5 and later, the default is `NSDateFormatterBehavior10_4`.
 

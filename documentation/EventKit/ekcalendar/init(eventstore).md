@@ -19,7 +19,7 @@ init(eventStore: EKEventStore)
 + (EKCalendar *) calendarWithEventStore:(EKEventStore *) eventStore;
 ```
 
-#### Return Value
+## Return Value
 
 The created calendar.
 

@@ -25,7 +25,7 @@ var standardizingPath: URL? { get }
 @property (copy, readonly, nullable) NSURL * URLByStandardizingPath;
 ```
 
-#### Discussion
+## Discussion
 
 This property only works on URLs with the `file:` path scheme. For all other URLs, it returns a copy of the original URL.
 

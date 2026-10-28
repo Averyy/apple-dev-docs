@@ -25,7 +25,7 @@ var keySystem: AVContentKeySystem { get }
 @property (readonly) AVContentKeySystem keySystem;
 ```
 
-#### Discussion
+## Discussion
 
 Valid values for keySystem are [`fairPlayStreaming`](../avcontentkeysystem/fairplaystreaming.md) and [`clearKey`](../avcontentkeysystem/clearkey.md).
 

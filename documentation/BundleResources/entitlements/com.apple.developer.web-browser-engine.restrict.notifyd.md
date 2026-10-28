@@ -19,7 +19,7 @@ An entitlement that restricts access to system notifications to enhance the secu
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 To enhance the security of a browser app you develop that uses an alternative browser engine, add this entitlement to the app’s web-content extension with a value of `true`.
 

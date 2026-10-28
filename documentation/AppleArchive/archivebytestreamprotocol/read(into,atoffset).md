@@ -22,7 +22,7 @@ Reads data at the supplied offset to the specified buffer, not exceeding the buf
 func read(into buffer: UnsafeMutableRawBufferPointer, atOffset offset: Int64) throws -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes read by the stream.
 

@@ -25,7 +25,7 @@ var set: Set<AnyHashable> { get }
 @property (strong, readonly) NSSet<id> * set;
 ```
 
-#### Discussion
+## Discussion
 
 This returns a proxy object for the receiving ordered set, which acts like an immutable set.
 

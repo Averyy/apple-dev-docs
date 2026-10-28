@@ -22,7 +22,7 @@ An unordered collection of unique elements.
 struct Set<Element> where Element : Hashable
 ```
 
-#### Overview
+## Overview
 
 You use a set instead of an array when you need to test efficiently for membership and you aren’t concerned with the order of the elements in the collection, or when you need to ensure that each element appears only once in a collection.
 
@@ -38,7 +38,7 @@ if ingredients.contains("sugar") {
 // Prints "No thanks, too sweet."
 ```
 
-### Set Operations
+## Set Operations
 
 Sets provide a suite of mathematical set operations. For example, you can efficiently test a set for membership of an element or check its intersection with another set:
 
@@ -73,7 +73,7 @@ print(primes.intersection(favoriteNumbers))
 // Prints "[5, 7]"
 ```
 
-### Sequence and Collection Operations
+## Sequence and Collection Operations
 
 In addition to the `Set` type’s set operations, you can use any nonmutating sequence or collection methods with a set.
 
@@ -113,7 +113,7 @@ let primesStringsSet = Set(primes.map(String.init))
 // 'primesStringsSet' is of type Set<String>
 ```
 
-### Bridging Between Set and NSSet
+## Bridging Between Set and NSSet
 
 You can bridge between `Set` and `NSSet` using the `as` operator. For bridging to be possible, the `Element` type of a set must be a class, an `@objc` protocol (a protocol imported from Objective-C or marked with the `@objc` attribute), or a type that bridges to a Foundation type.
 

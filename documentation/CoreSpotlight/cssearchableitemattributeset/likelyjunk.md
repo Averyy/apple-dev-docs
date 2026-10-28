@@ -23,7 +23,7 @@ var likelyJunk: NSNumber { get set }
 @property (nonatomic, strong, getter=isLikelyJunk) NSNumber * likelyJunk;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is 1, the message is likely to be considered junk; when the value is 0, the message is not likely to be considered junk.
 

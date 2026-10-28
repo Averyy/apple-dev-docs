@@ -19,7 +19,7 @@ Creates an import manager instance.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Create an instance of this class when the system launches your app with an [`NSUserActivity`](../../Foundation/nsuseractivity.md) of type `ASCredentialExchangeActivityType`, then call [`importCredentials(token:)`](./importcredentials%28token%29.md) to import credentials from the source app.
 

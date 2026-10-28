@@ -31,7 +31,7 @@ class func updatePostbackConversionValue(_ fineValue: Int, coarseValue: SKAdNetw
 - [Configuring an advertised app](../configuring-an-advertised-app.md)
 - [Receiving postbacks in multiple conversion windows](../receiving-postbacks-in-multiple-conversion-windows.md)
 
-#### Discussion
+## Discussion
 
 Call this method when the user first launches an app to register the app installation, and optionally again, to update conversion values as the user engages with the app.
 

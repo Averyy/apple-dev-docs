@@ -30,11 +30,11 @@ class func canPreviewItem(_ item: any QLPreviewItem) -> Bool
 + (BOOL) canPreviewItem:(id<QLPreviewItem>) item;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the Quick Look preview controller can display the specified preview item.
 
-#### Discussion
+## Discussion
 
 If the system can’t display an item, but you still attempt to display it, a Quick Look preview controller displays a generic error. Always check whether you can display an item before choosing to do so.
 

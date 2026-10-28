@@ -18,7 +18,7 @@ A caller-allocated array of frames that contains the pixel buffers to receive th
 @property (nonatomic, readonly) NSArray<VTFrameProcessorFrame *> * destinationFrames;
 ```
 
-#### Discussion
+## Discussion
 
 This array must contain the same number of elements as the `interpolationPhase` property.
 

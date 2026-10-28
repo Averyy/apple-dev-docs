@@ -23,7 +23,7 @@ case action
 INRelevantShortcutRoleAction
 ```
 
-#### Discussion
+## Discussion
 
 Specify this role for relevant shortcuts that represent actions that the user may want to perform using your app, such as ordering tomato soup.
 

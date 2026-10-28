@@ -24,7 +24,7 @@ class func decibelHearingLevel() -> Self
 + (instancetype) decibelHearingLevelUnit;
 ```
 
-#### Discussion
+## Discussion
 
 This unit measures the intensity of the sound relative to the quietest sound a typical young, healthy individual can hear.
 

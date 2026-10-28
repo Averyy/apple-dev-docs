@@ -21,7 +21,7 @@ The JSON representation of the subscription renewal information.
 var jsonRepresentation: Data { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [`jsonRepresentation`](./jsonrepresentation.md) is UTF-8 string data that has the same JSON schema as the [`JWSRenewalInfoDecodedPayload`](../../../../AppStoreServerAPI/jwsrenewalinfodecodedpayload.md) object. You can use the JSON data to decode the subscription renewal information into your own data type, or use the [`Product.SubscriptionInfo.RenewalInfo`](../renewalinfo.md) value and its properties directly.
 

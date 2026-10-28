@@ -19,7 +19,7 @@
 @protocol OS_xpc_peer_requirement <NSObject>
 ```
 
-#### Overview
+## Overview
 
 XPC peer requirement is an abstract type that represents a validated requirement on peers.
 

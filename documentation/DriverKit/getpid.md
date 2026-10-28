@@ -16,11 +16,11 @@
 pid_t getpid();
 ```
 
-#### Return Value
+## Return Value
 
 Value of the process ID
 
-#### Discussion
+## Discussion
 
 Returns the process ID (pid) of the current driver instance
 

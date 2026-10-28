@@ -19,7 +19,7 @@ func UAZoomEnabled() -> Bool
 Boolean UAZoomEnabled(void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the Universal Access zoom feature is on, `false` if the zoom feature is off or if the user has zoomed all the way out.
 

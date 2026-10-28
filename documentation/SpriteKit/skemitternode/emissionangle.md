@@ -25,7 +25,7 @@ var emissionAngle: CGFloat { get set }
 @property (nonatomic) CGFloat emissionAngle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`.
 

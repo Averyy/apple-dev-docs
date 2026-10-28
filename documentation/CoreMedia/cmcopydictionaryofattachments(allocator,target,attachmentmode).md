@@ -25,11 +25,11 @@ func CMCopyDictionaryOfAttachments(allocator: CFAllocator?, target: CMAttachment
 extern CFDictionaryRefCMCopyDictionaryOfAttachments(CFAllocatorRef allocator, CMAttachmentBearerRef target, CMAttachmentMode attachmentMode);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Foundation dictionary with all attachments identified by their keys. If no attachment is present, the dictionary is empty. Returns `NULL` for an invalid attachment mode.
 
-#### Discussion
+## Discussion
 
 `CMCopyDictionaryOfAttachments` is a convenience call that returns all attachments with their corresponding keys in a new [`CFDictionary`](../CoreFoundation/cfdictionary.md). Given a `CVBufferRef`, `CMCopyDictionaryOfAttachments` is similar to `CVBufferGetAttachments`, except that the `CFDictionary` that `CMCopyDictionaryOfAttachments` returns isn’t updated for later changes to the attachments.
 

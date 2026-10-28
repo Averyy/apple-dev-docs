@@ -23,7 +23,7 @@ func scopeBarButtonTitleTextAttributes(for state: UIControl.State) -> [NSAttribu
 - (NSDictionary<NSString *,id> *) scopeBarButtonTitleTextAttributesForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The text attributes for the search bar’ button’s title string for `state`.
 

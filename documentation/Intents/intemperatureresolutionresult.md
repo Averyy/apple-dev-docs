@@ -24,7 +24,7 @@ class INTemperatureResolutionResult
 @interface INTemperatureResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INTemperatureResolutionResult`](./intemperatureresolutionresult.md) object is what you return when resolving parameters containing an [`NSMeasurement`](../Foundation/nsmeasurement.md) object with a temperature value. Use the creation method that best reflects your ability to successfully resolve the parameter. For additional resolution options, see [`INIntentResolutionResult`](./inintentresolutionresult.md).
 

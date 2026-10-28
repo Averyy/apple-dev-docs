@@ -21,7 +21,7 @@ Computes a forward or inverse out-of-place, double-precision real FFT.
 extern void vDSP_fft_zropD(FFTSetupD __Setup, const DSPDoubleSplitComplex *__A, vDSP_Stride __IA, const DSPDoubleSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __Log2N, FFTDirection __Direction);
 ```
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**:  To learn how the vDSP library scales and arranges the FFT output, see [Understanding data packing for Fourier transforms](./understanding-data-packing-for-fourier-transforms.md).
 

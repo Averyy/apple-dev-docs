@@ -25,7 +25,7 @@ case msgObjectAdded
 kMIDIMsgObjectAdded
 ```
 
-#### Discussion
+## Discussion
 
 This type’s data is [`MIDIObjectAddRemoveNotification`](../midiobjectaddremovenotification.md).
 

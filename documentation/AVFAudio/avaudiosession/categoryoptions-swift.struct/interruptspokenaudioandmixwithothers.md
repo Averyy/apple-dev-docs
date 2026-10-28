@@ -24,7 +24,7 @@ static var interruptSpokenAudioAndMixWithOthers: AVAudioSession.CategoryOptions 
 AVAudioSessionCategoryOptionInterruptSpokenAudioAndMixWithOthers
 ```
 
-#### Discussion
+## Discussion
 
 You can set this option only if the audio session category is [`playAndRecord`](../category-swift.struct/playandrecord.md), [`playback`](../category-swift.struct/playback.md), or [`multiRoute`](../category-swift.struct/multiroute.md). Setting this option also sets [`mixWithOthers`](./mixwithothers.md).
 

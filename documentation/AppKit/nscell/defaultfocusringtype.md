@@ -19,7 +19,7 @@ class var defaultFocusRingType: NSFocusRingType { get }
 @property (class, readonly) NSFocusRingType defaultFocusRingType;
 ```
 
-#### Return Value
+## Return Value
 
 The default type of focus ring for the receiver (one of the values listed in [`NSFocusRingType`](../nsfocusringtype.md)).
 

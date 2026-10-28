@@ -13,11 +13,11 @@
 errno_t mbuf_set_csum_performed(mbuf_t mbuf, mbuf_csum_performed_flags_t flags, u_int32_t value);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 This is used by the driver to indicate to the stack which checksum operations were performed in hardware.
 

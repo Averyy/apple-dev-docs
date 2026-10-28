@@ -25,7 +25,7 @@ class CGShading
 typedef struct CGShading * CGShadingRef;
 ```
 
-#### Overview
+## Overview
 
 Shading means to fill using a smooth transition between colors across an area. You create a shading using a custom function with a [`CGFunction`](./cgfunction.md) instance. To paint with a Core Graphics shading, you call [`drawShading(_:)`](./cgcontext/drawshading%28_%29.md). This function fills the current clipping path using the specified color gradient, calling your parametric function repeatedly as it draws.
 

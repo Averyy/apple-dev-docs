@@ -23,7 +23,7 @@ var sectionIndexColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * sectionIndexColor;
 ```
 
-#### Discussion
+## Discussion
 
 Table views can display an index along the side of the view, making it easier for users to navigate the contents of the table quickly. This property specifies the color to use for text displayed in this region. A value of `nil` represents the default color.
 

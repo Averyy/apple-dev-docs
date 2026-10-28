@@ -23,7 +23,7 @@ func update(_ model: inout LinearTimeSeriesForecaster<Scalar>.Model, withWindows
 
 Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
-#### Discussion
+## Discussion
 
 For faster updates, consider passing a single [`AnnotatedBatch`](../annotatedbatch.md) with shaped arrays that contain multiple training examples. See [`update(_:with:)`](./update%28_,with%29.md).
 

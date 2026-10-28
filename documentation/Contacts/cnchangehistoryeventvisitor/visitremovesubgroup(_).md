@@ -24,7 +24,7 @@ optional func visitRemoveSubgroup(_ event: CNChangeHistoryRemoveSubgroupFromGrou
 - (void) visitRemoveSubgroupFromGroupEvent:(CNChangeHistoryRemoveSubgroupFromGroupEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Inspect the group and subgroup in the event that the system provides and update your app’s cached data accordingly.
 

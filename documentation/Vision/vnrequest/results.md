@@ -29,7 +29,7 @@ var results: [VNObservation]? { get }
 - [Detecting Human Body Poses in Images](../detecting-human-body-poses-in-images.md)
 - [Recognizing Text in Images](../recognizing-text-in-images.md)
 
-#### Discussion
+## Discussion
 
 If the request fails, this property is [`nil`](../../ObjectiveC/nil-227m0.md). Otherwise, it contains an array of [`VNObservation`](../vnobservation.md) subclasses specific to the [`VNRequest`](../vnrequest.md) subclass.
 

@@ -24,7 +24,7 @@ class var shared: BADownloadManager { get }
 @property (class, strong, readonly) BADownloadManager * sharedManager;
 ```
 
-#### Discussion
+## Discussion
 
 Because the download manager is a shared resource, use the `BADownloadManager/withExclusiveControl(_:)` or [`withExclusiveControl(beforeDate:perform:)`](./withexclusivecontrol%28beforedate,perform%29.md) methods to acquire exclusive control of the manager before you use it to access, schedule, or cancel downloads.
 

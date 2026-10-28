@@ -24,7 +24,7 @@ var maxSamplerStateBindCount: Int { get set }
 @property (nonatomic, readwrite) NSUInteger maxSamplerStateBindCount;
 ```
 
-#### Discussion
+## Discussion
 
 The maximum value of this parameter is 16.
 

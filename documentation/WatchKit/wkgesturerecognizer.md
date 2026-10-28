@@ -19,7 +19,7 @@ class WKGestureRecognizer
 @interface WKGestureRecognizer : NSObject
 ```
 
-#### Overview
+## Overview
 
 Gesture recognizers simplify the event-handling process by tracking touch events for you and calling your custom code when those events match a specific pattern. Gesture recognizers report the results of their tracking to an action method that you define.
 
@@ -30,7 +30,7 @@ You do not subclass [`WKGestureRecognizer`](./wkgesturerecognizer.md) or create 
 - [`WKSwipeGestureRecognizer`](./wkswipegesturerecognizer.md)
 - [`WKTapGestureRecognizer`](./wktapgesturerecognizer.md)
 
-##### Executing Code in Response to a Gesture
+### Executing Code in Response to a Gesture
 
 A gesture recognizer has an associated action method that it calls during the recognition process to report on its progress. You define the action method in your interface controller and connect it to the gesture recognizer in Interface Builder. Action methods must conform to one of the following signatures:
 
@@ -52,7 +52,7 @@ The gesture recognizer calls your action method whenever the value in the [`stat
 
 watchOS supports two broad categories of gesture recognizers: continuous gesture recognizers and discrete gesture recognizer.
 
-###### Continuous Gesture Recognizers
+#### Continuous Gesture Recognizers
 
 ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/media-2557562@2x.png)
 
@@ -63,13 +63,13 @@ Continuous gesture recognizers—for example, pan or long touch recognizers—tr
 - [`WKGestureRecognizerState.ended`](./wkgesturerecognizerstate/ended.md). Return to the normal user interface appearance, indicating that the gesture has ended. Keep any updates.
 - [`WKGestureRecognizerState.cancelled`](./wkgesturerecognizerstate/cancelled.md). Return to the normal user interface appearance, indicating that the gesture has ended. Discard any updates.
 
-###### Discrete Gesture Recognizers
+#### Discrete Gesture Recognizers
 
 ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/media-2557566@2x.png)
 
 Discrete gesture recognizers—for example, tap or swipe recognizers—only trigger a single event as soon as the gesture is recognized. For example, discrete recognizers call their action method when they enter the [`WKGestureRecognizerState.recognized`](./wkgesturerecognizerstate/recognized.md) state. If they enter the [`WKGestureRecognizerState.failed`](./wkgesturerecognizerstate/failed.md) state, they fail silently.
 
-##### Interface Builder Attributes
+### Interface Builder Attributes
 
 Xcode lets you configure information about your gesture recognizer in your storyboard file. The following table lists the attributes you can configure in your storyboard and their meaning.
 

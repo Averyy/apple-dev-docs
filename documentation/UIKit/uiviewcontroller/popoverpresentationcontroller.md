@@ -27,7 +27,7 @@ var popoverPresentationController: UIPopoverPresentationController? { get }
 
 - [Getting the user’s attention with alerts and action sheets](../getting-the-user-s-attention-with-alerts-and-action-sheets.md)
 
-#### Discussion
+## Discussion
 
 If the view controller or one of its ancestors is managed by a popover presentation controller, this property contains that object. This property is `nil` if the view controller is not managed by a popover presentation controller.
 

@@ -19,7 +19,7 @@ let kMDItemAppleLoopsKeyFilterType: CFString!
 const CFStringRef kMDItemAppleLoopsKeyFilterType;
 ```
 
-#### Discussion
+## Discussion
 
 To assist users in identifying loops that will "fit" with their compositions, loops can be tagged with one of the following key filters: "AnyKey" "Minor" "Major" "NeitherKey" "BothKeys". "AnyKey" means that it fits with anything (whether in a major key, minor key or neither). "Minor" fits with compositions in a minor key. "NeitherKey" doesn't work well with compositions that are in major or minor key. "BothKeys" means it fits with major or minor key. 
 

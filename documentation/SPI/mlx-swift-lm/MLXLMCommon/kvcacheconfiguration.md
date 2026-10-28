@@ -21,7 +21,7 @@ struct KVCacheConfiguration
 
 - [KV Cache Quantization](./kv-cache-quantization.md)
 
-#### Overview
+## Overview
 
 This keeps cache capacity, compression, and compatibility semantics in one value so every generation path forwards the same configuration.
 

@@ -15,7 +15,7 @@ Cancels the load request.
 attribute  cancel;
 ```
 
-#### Discussion
+## Discussion
 
 The `cancel` event is invoked when TVMLKit wants to cancel a previous `LoadIndexesRequest`. This could happen if the indexes disappear from view, making the it unnecessary to load data for those indexes. 
 

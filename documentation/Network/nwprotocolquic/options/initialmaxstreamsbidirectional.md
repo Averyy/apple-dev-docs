@@ -21,7 +21,7 @@ A QUIC connection’s initial maximum number of bidirectional streams.
 var initialMaxStreamsBidirectional: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the value of the `initial_max_stream_bidi` transport parameter.
 

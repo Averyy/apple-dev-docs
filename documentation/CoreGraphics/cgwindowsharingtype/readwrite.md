@@ -18,7 +18,7 @@ case readWrite
 kCGWindowSharingReadWrite
 ```
 
-#### Discussion
+## Discussion
 
 The window is shared and its contents can be read and modified by any process.
 

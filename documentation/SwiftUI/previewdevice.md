@@ -23,7 +23,7 @@ A simulator device that runs a preview.
 struct PreviewDevice
 ```
 
-#### Overview
+## Overview
 
 Create a preview device by name, like “iPhone X”, or by model number, like “iPad8,1”. Use the device in a call to the [`previewDevice(_:)`](./view/previewdevice%28_%29.md) modifier to set a preview device that doesn’t change when you change the run destination in Xcode:
 

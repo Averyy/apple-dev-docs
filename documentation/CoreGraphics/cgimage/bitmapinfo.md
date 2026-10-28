@@ -25,7 +25,7 @@ var bitmapInfo: CGBitmapInfo { get }
 extern CGBitmapInfo CGImageGetBitmapInfo(CGImageRef image);
 ```
 
-#### Discussion
+## Discussion
 
 This function returns a constant that specifies:
 

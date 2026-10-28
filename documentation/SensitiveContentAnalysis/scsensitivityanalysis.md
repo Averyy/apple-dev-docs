@@ -27,7 +27,7 @@ class SCSensitivityAnalysis
 
 - [Testing your app’s response to sensitive media](./testing-your-app-s-response-to-sensitive-media.md)
 
-#### Overview
+## Overview
 
 The framework provides an instance of this class to convey the results of content sensitivity checks, for example:
 

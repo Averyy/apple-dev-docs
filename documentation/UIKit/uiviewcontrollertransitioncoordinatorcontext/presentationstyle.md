@@ -24,11 +24,11 @@ var presentationStyle: UIModalPresentationStyle { get }
 @property (nonatomic, readonly) UIModalPresentationStyle presentationStyle;
 ```
 
-#### Return Value
+## Return Value
 
 The modal presentation style associated with the transition or [`UIModalPresentationStyle.none`](../uimodalpresentationstyle/none.md) if the transition is not a modal presentation or dismissal. For a list of possible values, see “Modal Presentation Styles” in [`UIViewController`](../uiviewcontroller.md).
 
-#### Discussion
+## Discussion
 
 When presenting or dismissing a view controller modally, this method returns the presentation style used for that transition. For interface rotations and other events that don’t involve a specific transition between view controllers, this method returns [`UIModalPresentationStyle.none`](../uimodalpresentationstyle/none.md).
 

@@ -20,7 +20,7 @@ A session-related event that appears in the system UI.
 struct GroupSessionEvent
 ```
 
-#### Overview
+## Overview
 
 Use this structure to specify the contents of custom activity-related events. The AV Foundation framework posts media-related events to the system on your app’s behalf; create an instance of this structure if your app posts additional events that don’t route through AV Foundation.
 

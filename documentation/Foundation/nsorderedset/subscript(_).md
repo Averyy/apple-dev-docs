@@ -29,11 +29,11 @@ subscript(idx: Int) -> Any { get set }
 - (ObjectType) objectAtIndexedSubscript:(NSUInteger) idx;
 ```
 
-#### Return Value
+## Return Value
 
 If `idx` is beyond the end of the ordered set (that is, if index is greater than or equal to the value returned by count), an [`rangeException`](../nsexceptionname/rangeexception.md) is raised.
 
-#### Discussion
+## Discussion
 
 This method is the same as [`object(at:)`](./object%28at%29.md).
 

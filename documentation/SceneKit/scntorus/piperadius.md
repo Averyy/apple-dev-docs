@@ -25,7 +25,7 @@ var pipeRadius: CGFloat { get set }
 @property (nonatomic) CGFloat pipeRadius;
 ```
 
-#### Discussion
+## Discussion
 
 In the definition of a torus as a surface of revolution, the pipe radius defines a circle that is rotated around an axis (the Y axis of the torus’ local coordinate space). Rotating the circle around this axis makes it follow a circular path (whose radius is defined by the [`ringRadius`](./ringradius.md) property) and creates the surface of the torus.
 

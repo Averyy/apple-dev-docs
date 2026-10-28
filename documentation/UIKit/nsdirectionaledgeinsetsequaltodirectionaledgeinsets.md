@@ -20,7 +20,7 @@ Compares two directional edge insets to determine if they’re the same.
 static BOOL NSDirectionalEdgeInsetsEqualToDirectionalEdgeInsets(NSDirectionalEdgeInsets insets1, NSDirectionalEdgeInsets insets2);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the edge insets are the same; otherwise, [`false`](../Swift/false.md).
 

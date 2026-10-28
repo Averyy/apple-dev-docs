@@ -20,7 +20,7 @@ Returns the variant set with the specified name, or `nil` if no variant set with
 subscript(name: String) -> USDPrim.VariantSet? { get }
 ```
 
-#### Return Value
+## Return Value
 
 The variant set, or `nil` if no variant set with that name exists on the prim.
 

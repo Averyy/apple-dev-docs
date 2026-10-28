@@ -24,7 +24,7 @@ optional func centralManager(_ central: CBCentralManager, connectionEventDidOccu
 - (void) centralManager:(CBCentralManager *) central connectionEventDidOccur:(CBConnectionEvent) event forPeripheral:(CBPeripheral *) peripheral;
 ```
 
-#### Discussion
+## Discussion
 
 The manager calls this method when it observes a connection event that matches the options provided to [`registerForConnectionEvents(options:)`](../cbcentralmanager/registerforconnectionevents%28options%29.md).
 

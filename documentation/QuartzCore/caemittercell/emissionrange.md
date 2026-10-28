@@ -24,7 +24,7 @@ var emissionRange: CGFloat { get set }
 @property CGFloat emissionRange;
 ```
 
-#### Discussion
+## Discussion
 
 Cells are uniformly distributed across this cone.
 

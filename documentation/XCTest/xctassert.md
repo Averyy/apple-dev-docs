@@ -12,7 +12,7 @@ Asserts that an expression is true.
 #define XCTAssert(expression, ...)
 ```
 
-#### Discussion
+## Discussion
 
 This function generates a failure when `expression == false` and is equivalent to [`XCTAssertTrue`](./xctasserttrue.md).
 

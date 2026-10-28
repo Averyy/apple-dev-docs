@@ -19,7 +19,7 @@ case prohibited
 NSApplicationActivationPolicyProhibited
 ```
 
-#### Discussion
+## Discussion
 
 This corresponds to the value of the `LSBackgroundOnly` key in the application’s `Info.plist` file being `1`. This is also the default for unbundled executables that don’t have `Info.plist` files.
 

@@ -19,7 +19,7 @@ func insertItem(withTitle title: String, at index: Int)
 - (void) insertItemWithTitle:(NSString *) title atIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to move an item, it’s better to invoke [`removeItem(withTitle:)`](./removeitem%28withtitle%29.md) explicitly and then send this method. After adding the item, this method uses the [`synchronizeTitleAndSelectedItem()`](./synchronizetitleandselecteditem%28%29.md) method to make sure the item displayed matches the currently selected item.
 

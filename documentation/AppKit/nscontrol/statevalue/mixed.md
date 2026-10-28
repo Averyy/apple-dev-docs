@@ -19,7 +19,7 @@ static var mixed: NSControl.StateValue { get }
 static const NSControlStateValue NSControlStateValueMixed;
 ```
 
-#### Discussion
+## Discussion
 
 For example, if a checkbox displays the state of more than one selected row in a table and the items have different states, then the checkbox’s state is mixed.
 

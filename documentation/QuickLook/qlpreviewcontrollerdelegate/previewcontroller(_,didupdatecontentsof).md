@@ -22,7 +22,7 @@ optional func previewController(_ controller: QLPreviewController, didUpdateCont
 - (void) previewController:(QLPreviewController *) controller didUpdateContentsOfPreviewItem:(id<QLPreviewItem>) previewItem;
 ```
 
-#### Discussion
+## Discussion
 
 The platform invokes this callback after the preview controller successfully overwrites the file at the `previewItem’`s [`previewItemURL`](../qlpreviewitem/previewitemurl.md) with an updated file.
 

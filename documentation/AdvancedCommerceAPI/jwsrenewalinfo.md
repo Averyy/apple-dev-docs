@@ -15,7 +15,7 @@ Subscription renewal information signed by the App Store, in JSON Web Signature 
 string JWSRenewalInfo
 ```
 
-##### Description
+### Description
 
 This `JWSRenewalInfo` object is identical to the one used in the App Store Server API and by App Store Server Notifications. For details, see [`JWSRenewalInfo`](../AppStoreServerAPI/jwsrenewalinfo.md).
 

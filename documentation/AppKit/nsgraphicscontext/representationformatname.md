@@ -19,7 +19,7 @@ struct RepresentationFormatName
 typedef NSString * NSGraphicsContextRepresentationFormatName;
 ```
 
-#### Discussion
+## Discussion
 
 You use these constants with the [`representationFormat`](./attributekey/representationformat.md) key.
 

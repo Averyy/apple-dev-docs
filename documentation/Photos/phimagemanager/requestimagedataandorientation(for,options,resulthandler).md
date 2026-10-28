@@ -24,11 +24,11 @@ func requestImageDataAndOrientation(for asset: PHAsset, options: PHImageRequestO
 - (PHImageRequestID) requestImageDataAndOrientationForAsset:(PHAsset *) asset options:(PHImageRequestOptions *) options resultHandler:(void (^)(NSData *imageData, NSString *dataUTI, CGImagePropertyOrientation orientation, NSDictionary *info)) resultHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A numeric identifier for the request. If you need to cancel the request before it completes, pass this identifier to the [`cancelImageRequest(_:)`](./cancelimagerequest%28_%29.md) method.
 
-#### Discussion
+## Discussion
 
 When you call this method, Photos loads the largest available representation of the image asset, then calls your `resultHandler` block to provide the requested data. Depending on the options you specify and the current state of the asset, Photos may download asset data from the network.
 

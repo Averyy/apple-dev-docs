@@ -25,7 +25,7 @@ var encodedData: Data { get }
 @property (strong, readonly) NSData * encodedData;
 ```
 
-#### Discussion
+## Discussion
 
 If encoding has not yet finished, invoking this property calls [`finishEncoding()`](./finishencoding%28%29.md) and populates this property with the encoded data. If you initialized the keyed archiver with [`init(forWritingWith:)`](./init%28forwritingwith%29.md) and a specific mutable data instance, this property contains that instance.
 

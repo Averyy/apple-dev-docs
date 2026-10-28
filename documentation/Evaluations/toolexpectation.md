@@ -26,7 +26,7 @@ struct ToolExpectation
 - [Evaluating language model responses](./evaluating-language-model-responses.md)
 - [Evaluating tool-calling behavior](./evaluating-tool-calling-behavior.md)
 
-#### Overview
+## Overview
 
 Most commonly, a `ToolExpectation` identifies a single tool by name and optionally validates its arguments:
 

@@ -19,11 +19,11 @@ func showSearchResults(forQueryString queryString: String) -> Bool
 - (BOOL) showSearchResultsForQueryString:(NSString *) queryString;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the method communicated successfully with Finder; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Finder becomes the active app, if possible. The user can further refine the search via the Finder user interface.
 

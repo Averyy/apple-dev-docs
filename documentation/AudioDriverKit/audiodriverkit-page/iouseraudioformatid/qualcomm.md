@@ -15,7 +15,7 @@ The QUALCOMM PureVoice format.
 QUALCOMM
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

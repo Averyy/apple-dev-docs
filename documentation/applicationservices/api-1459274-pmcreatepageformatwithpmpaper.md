@@ -19,7 +19,7 @@ func PMCreatePageFormatWithPMPaper(_ pageFormat: UnsafeMutablePointer<PMPageForm
 OSStatus PMCreatePageFormatWithPMPaper(PMPageFormat  _Nullable *pageFormat, PMPaper paper);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 

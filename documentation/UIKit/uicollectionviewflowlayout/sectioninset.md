@@ -23,7 +23,7 @@ var sectionInset: UIEdgeInsets { get set }
 @property (nonatomic) UIEdgeInsets sectionInset;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate object does not implement the [`collectionView(_:layout:insetForSectionAt:)`](../uicollectionviewdelegateflowlayout/collectionview%28_,layout,insetforsectionat%29.md) method, the flow layout uses the value in this property to set the margins for each section.
 

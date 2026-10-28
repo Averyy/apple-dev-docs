@@ -25,11 +25,11 @@ optional func metadataQuery(_ query: NSMetadataQuery, replacementValueForAttribu
 - (id) metadataQuery:(NSMetadataQuery *) query replacementValueForAttribute:(NSString *) attrName value:(id) attrValue;
 ```
 
-#### Return Value
+## Return Value
 
 Object that replaces the value of `attrName` in the result object
 
-#### Discussion
+## Discussion
 
 The delegate implementation of this method could convert specific query attribute values to other attribute values, for example, converting date object values to formatted strings for display.
 

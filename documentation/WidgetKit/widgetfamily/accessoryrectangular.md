@@ -26,7 +26,7 @@ case accessoryRectangular
 - [Developing a WidgetKit strategy](../developing-a-widgetkit-strategy.md)
 - [Preparing widgets for additional platforms, contexts, and appearances](../preparing-widgets-for-additional-contexts-and-appearances.md)
 
-#### Discussion
+## Discussion
 
 In watchOS, the accessory rectangular widget can appear as a widget in the Smart Stack or as a complication on a watch face. In iOS and iPadOS, it can appear on the Lock Screen.
 

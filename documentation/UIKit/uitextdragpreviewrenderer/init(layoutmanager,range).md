@@ -22,7 +22,7 @@ convenience init(layoutManager: NSLayoutManager, range: NSRange)
 - (instancetype) initWithLayoutManager:(NSLayoutManager *) layoutManager range:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 A renderer of a text drag preview using the specified layout manager and range.
 

@@ -20,7 +20,7 @@ case management
 
 - [Accessing and using secure element credentials](../../accessing-and-using-secure-element-credentials.md)
 
-#### Discussion
+## Discussion
 
 In this state, the session can list all credentials and can add and delete individual credentials.
 

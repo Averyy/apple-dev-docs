@@ -25,7 +25,7 @@ class INLocationSearchTypeResolutionResult
 @interface INLocationSearchTypeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INLocationSearchTypeResolutionResult`](./inlocationsearchtyperesolutionresult.md) object when resolving parameters containing an [`INLocationSearchType`](./inlocationsearchtype.md) value. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

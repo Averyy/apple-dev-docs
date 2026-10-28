@@ -22,7 +22,7 @@ nonisolated
 func toolbarVisibility(_ visibility: Visibility, for bars: ToolbarPlacement...) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The preferred visibility flows up to the nearest container that renders a bar. This could be a [`NavigationView`](../navigationview.md) or [`TabView`](../tabview.md) in iOS, or the root view of a [`WindowGroup`](../windowgroup.md) in macOS.
 

@@ -10,7 +10,7 @@ Build a structured user interface that simplifies navigation in your app.
 - macOS 10.15+
 - Xcode 13.1+
 
-#### Overview
+## Overview
 
 Just as a table view organizes a list of objects linearly, an outline view organizes objects hierarchically. When an app’s user interface becomes more complex, an outline format helps to organize it.
 
@@ -26,7 +26,7 @@ It does this by setting the highlight appearance in the storyboard, but you can 
 
 When you use `NSOutlineView` with [`NSSplitViewController`](./nssplitviewcontroller.md), your app presents data in a primary-detail format similar to that of the Xcode Project navigator or the Finder.
 
-##### Configure the Split-View Controller
+### Configure the Split-View Controller
 
 An outline view works well as part of a primary-detail user interface. When the user selects an item from the outline view on the left, the detail view shows the results of the selection. For a primary-detail configuration, use [`NSSplitView`](./nssplitview.md), which arranges two or more views in a linear stack running horizontally. The system embeds each view in its own [`NSSplitViewItem`](./nssplitviewitem.md). In this sample project, the left split-view item is a view controller called `OutlineViewController`, and the right split-view item is called `DetailViewController`. The `OutlineViewController` class focuses on how to use [`NSOutlineView`](./nsoutlineview.md).
 
@@ -36,7 +36,7 @@ In a primary-detail user interface, the list view on the left must remain the sa
 
 ![A diagram depicting the two split view items on each side of the sample’s user interface for NSSplitViewController. The split-view item on the right has a lower holding priority than the one on the left.](https://developer.apple.com/tutorials/images/com.apple.appkit/sourceview-diagram2@2x.png)
 
-##### Define Hierarchical Content with a Tree Controller
+### Define Hierarchical Content with a Tree Controller
 
 The [`NSTreeController`](./nstreecontroller.md) class is the data source for the outline view. It acts as the controller when binding [`NSOutlineView`](./nsoutlineview.md) to its hierarchical collection of objects. These objects represent *nodes*, which the `Node` class implements.
 
@@ -86,15 +86,15 @@ do {
 }
 ```
 
-##### Handle Drag and Drop
+### Handle Drag and Drop
 
 Users drag and drop nodes from within the outline view to rearrange them, or drag nodes that represent images out to other apps. Users can also drag image files from the Finder, Photos, Mail, or Safari. For more information, see [Drag and Drop](./drag-and-drop.md). This sample shows how to create promise drags by dragging a copy of an image file using [`NSFilePromiseProvider`](./nsfilepromiseprovider.md).
 
-##### Add a Contextual Menu
+### Add a Contextual Menu
 
 The outline view uses contextual menus, or *shortcut menus*, that provide access to frequently used commands. Control-clicking an outline view node opens its contextual menu. The `NSOutlineView` [`menu(for:)`](./nsview/menu%28for%29.md) function creates these contextual menus. Override this function with the [`NSOutlineView`](./nsoutlineview.md) subclass to return a contextual menu. The contextual menu operations are: add, remove, and rename.
 
-##### Integrate with the Edit Menu
+### Integrate with the Edit Menu
 
 Use the Edit menu to directly affect the contents of the outline view. This sample adds a Delete menu item for deleting items from the outline view. `OutlineViewController` implements the `IBAction` delete function. The user chooses the menu item or presses the Delete key.
 
@@ -116,7 +116,7 @@ func validateUserInterfaceItem(_ item: NSValidatedUserInterfaceItem) -> Bool {
 }
 ```
 
-##### Restore the Outline View
+### Restore the Outline View
 
 This sample saves and restores:
 

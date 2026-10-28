@@ -25,7 +25,7 @@ class SCNPhysicsField
 @interface SCNPhysicsField : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can create many types of field effects, such as gravitation, electromagnetism, and turbulence. To add a field effect to a scene, you create a physics field of the type you want to use and then attach it to the [`physicsField`](./scnnode/physicsfield.md) property of a node in the scene.
 

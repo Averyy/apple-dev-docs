@@ -25,7 +25,7 @@ struct SparseNumericFactorOptions
 typedef struct { ... } SparseNumericFactorOptions;
 ```
 
-#### Overview
+## Overview
 
 [`SparseNumericFactorOptions`](./sparsenumericfactoroptions.md) supports the following types of scaling:
 

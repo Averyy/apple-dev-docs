@@ -20,11 +20,11 @@ typealias OSLGetErrDescProcPtr = (UnsafeMutablePointer<UnsafeMutablePointer<AEDe
 typedef OSErr (*OSLGetErrDescProcPtr)(AEDesc **appDescPtr);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145). Your error descriptor function should return `noErr` if it completes successfully and a nonzero error value if it is unsuccessful. If it returns a nonzero value, the Apple Event Manager continues to resolve the object specifier as if it had never called the error callback function.
 
-#### Discussion
+## Discussion
 
 Your get error descriptor callback function simply supplies a pointer to an address. Shortly after your application calls the [`AEResolve(_:_:_:)`](./api-1449720-aeresolve.md) function, the Apple Event Manager calls your get error descriptor callback function and writes a null descriptor to the address supplied by your callback, overwriting whatever was there previously.
 

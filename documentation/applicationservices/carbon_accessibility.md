@@ -3,21 +3,21 @@
 **Framework**: Application Services  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 This section describes the functions some Carbon developers may need to use to access-enable their applications.
 
 This section describes the constants that define accessibility events and aspects of accessibility objects. The accessibility event constants are defined in `CarbonEvents.h` in the Carbon framework. The accessibility object constants are defined in header files in the ApplicationServices framework.
 
-##### Overview
+### Overview
 
 This document describes the Carbon accessibility API. You use this API to make your Carbon application accessible to assistive applications and technologies, a process called access enabling.
 
-###### Who Should Read This Document?
+#### Who Should Read This Document?
 
 All Carbon application developers should read this document for information on specific functions and constants they may need to access-enable their applications. If you’re unsure which parts of the Carbon accessibility API you need, or if you’re new to accessibility in macOS, be sure to read the documents listed in [See Also](./carbon_accessibility.md#1655632).
 
-###### Organization of This Document
+#### Organization of This Document
 
 This document contains API reference in the following sections:
 
@@ -25,7 +25,7 @@ This document contains API reference in the following sections:
 - [Carbon Accessibility](./carbon_accessibility.md) documents accessibility Carbon events and the constants that define the accessibility event parameters, object attributes, and notifications.
 - [Result Codes](./carbon_accessibility.md#1658117) describes some of the error codes returned by the Carbon accessibility implementation.
 
-###### See Also
+#### See Also
 
 For more information on accessibility in general and access enabling Carbon applications in particular, you should read the following documents:
 

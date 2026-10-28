@@ -16,7 +16,7 @@ The error that occurs when a peripheral connection to the central manager fails.
 case connectionLost
 ```
 
-#### Discussion
+## Discussion
 
 This error doesn’t occur when a connection to the central manager is intentionally disconnected.
 

@@ -41,11 +41,11 @@ convenience init(color: NSColor, size: CGSize)
 - (instancetype) initWithColor:(NSColor *) color size:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized sprite node.
 
-#### Discussion
+## Discussion
 
 Although textured nodes are the most common way to use the [`SKSpriteNode`](../skspritenode.md) class, you can also create sprite nodes without a texture. The behavior of the class changes when the node lacks a texture:
 

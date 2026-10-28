@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is one which is recommended to be 
 var isXIDStart: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The set of scalars `[:XID_Start:]` closes the set `[:ID_Start:]` under NFKC normalization by removing any scalars whose normalized form is not of the form `[:ID_Start:] [:ID_Continue:]*`.
 

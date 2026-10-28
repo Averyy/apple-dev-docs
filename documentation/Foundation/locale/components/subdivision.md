@@ -21,7 +21,7 @@ The optional subdivision of the region used by this locale.
 var subdivision: Locale.Subdivision?
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to override the locale’s regional subdivision of [`region`](./region.md).
 

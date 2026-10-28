@@ -22,7 +22,7 @@ static let otherItemsProxy: NSTouchBarItem.Identifier
 extern NSTouchBarItemIdentifier const NSTouchBarItemIdentifierOtherItemsProxy;
 ```
 
-#### Discussion
+## Discussion
 
 Use this identifier in the [`itemIdentifiers`](../../nstouchbar/itemidentifiers.md) array of an [`NSTouchBar`](../../nstouchbar.md) object, and a special proxy item will be instantiated for you.
 

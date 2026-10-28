@@ -17,7 +17,7 @@ A property that controls the log level for all of CareKit.
 static var level: OSLogType
 ```
 
-#### Discussion
+## Discussion
 
 You set this value from within your CareKit app. To see messages that are helpful for app debugging, use `.fault` or `.error`. To see messages that are helpful for framework debugging, use `.debug` or `.info`.
 

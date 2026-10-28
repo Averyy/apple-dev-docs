@@ -17,7 +17,7 @@ Initialize with a [`NestedItem`](../nesteditem.md).
 init(item: NestedItem<Key, Element>)
 ```
 
-#### Discussion
+## Discussion
 
 This must be a [`NestedItem.dictionary(_:)`](../nesteditem/dictionary%28_%29.md).
 

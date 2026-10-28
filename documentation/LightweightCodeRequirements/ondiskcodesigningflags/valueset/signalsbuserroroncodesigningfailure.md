@@ -21,7 +21,7 @@ Code signing failures on page-in should be rejected as SIGBUS errors.
 static let signalsBusErrorOnCodeSigningFailure: OnDiskCodeSigningFlags.ValueSet
 ```
 
-#### Discussion
+## Discussion
 
 This flag may be present on any on disk signature. This flag only has effect on main executables. This is equivalent to `CS_HARD` in C APIs.
 

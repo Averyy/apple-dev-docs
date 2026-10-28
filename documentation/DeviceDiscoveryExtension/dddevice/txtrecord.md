@@ -19,7 +19,7 @@ A dictionary of metadata for the device that the extension communicates with ove
 var txtRecord: NWTXTRecord? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Particularly, this dictionary provides the human-readable device name with its `“NAME”` key.
 

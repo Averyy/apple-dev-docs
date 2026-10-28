@@ -6,7 +6,7 @@
 
 An atom that defines the portions of the media that are to be used to build up a track for a movie.
 
-#### Overview
+## Overview
 
 You use edit atoms to define the portions of the media that are to be used to build up a track for a movie. The edits themselves are contained in an edit list table, which consists of time offset and duration values for each segment. Edit atoms have an atom type value of `'edts'`.
 

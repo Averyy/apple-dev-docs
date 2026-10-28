@@ -18,7 +18,7 @@ A configuration that controls the list separator appearance in a list section.
 @interface UIListSeparatorConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 To specify list separator appearance for a section, set a default sectionwide [`separatorConfiguration`](./uicollectionlayoutlistconfiguration-c.class/separatorconfiguration.md) on your [`UICollectionLayoutListConfiguration`](./uicollectionlayoutlistconfiguration-swift.struct.md) when you create your list.
 

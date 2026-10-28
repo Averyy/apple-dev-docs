@@ -9,9 +9,9 @@ Fetch metadata for a book from the catalog by using its identifier.
 **Availability**:
 - VPP License Management 2.2+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -21,7 +21,7 @@ A Boolean value that indicates whether the format style should spell out zero-by
 var spellsOutZero: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When this value is true, the format style produces output like `Zero kB`.
 

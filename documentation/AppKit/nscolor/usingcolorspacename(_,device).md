@@ -21,7 +21,7 @@ func usingColorSpaceName(_ name: NSColorSpaceName?, device deviceDescription: [N
 - (NSColor *) colorUsingColorSpaceName:(NSColorSpaceName) name device:(NSDictionary<NSString *,id> *) deviceDescription;
 ```
 
-#### Return Value
+## Return Value
 
 The new NSColor object or `nil` if the specified conversion cannot be done.
 

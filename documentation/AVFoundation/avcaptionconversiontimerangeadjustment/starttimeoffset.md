@@ -22,7 +22,7 @@ var startTimeOffset: CMTime { get }
 @property (readonly) CMTime startTimeOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The value may any numeric value, positive, negative, or zero.
 

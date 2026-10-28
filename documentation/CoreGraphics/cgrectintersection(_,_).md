@@ -25,11 +25,11 @@ func CGRectIntersection(_ r1: CGRect, _ r2: CGRect) -> CGRect
 extern CGRect CGRectIntersection(CGRect r1, CGRect r2);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle that represents the intersection of the two specified rectangles. If the two rectangles do not intersect, returns the null rectangle. To check for this condition, use [`CGRectIsNull(_:)`](./cgrectisnull%28_%29.md).
 
-#### Discussion
+## Discussion
 
 Both rectangles are standardized prior to calculating the intersection.
 

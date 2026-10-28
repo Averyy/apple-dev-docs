@@ -15,11 +15,11 @@ A single row in an Apple Maps campaign report, containing campaign metadata, tot
 object BrandsCampaignReportRow
 ```
 
-#### Discussion
+## Discussion
 
 For `brands` reports, supported `groupBy` dimensions are `deviceClass`, `locationId`, and `supplyPlacement`. These appear as dimension values within the `metadata` object.
 
-##### Example
+### Example
 
 ```json
 {

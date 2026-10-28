@@ -19,7 +19,7 @@ var isFloatingPanel: Bool { get set }
 @property (getter=isFloatingPanel) BOOL floatingPanel;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the receiver is a floating panel, [`false`](../../Swift/false.md) otherwise.
 

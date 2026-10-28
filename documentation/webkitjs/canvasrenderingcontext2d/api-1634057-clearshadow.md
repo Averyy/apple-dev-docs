@@ -16,7 +16,7 @@ Turns shadows off.
 void clearShadow();
 ```
 
-#### Discussion
+## Discussion
 
 When you set a shadow color or shadow blur, and a shadow offset, all subsequent drawing operations include a shadow of the current color and blur, at the specified offset. The `clearShadow` method is a convenient way to turn shadows off.
 

@@ -21,7 +21,7 @@ Creates a `Stat` struct from a `FileDescriptor`.
 init(_ fd: FileDescriptor, retryOnInterrupt: Bool = true) throws(Errno)
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C function is `fstat()`.
 

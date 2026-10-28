@@ -5,7 +5,7 @@
 
 Optimize performance by examining counters for individual passes and commands.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: The Performance counters feature is only applicable to Apple GPUs. For other GPU architectures, see [Analyzing non-Apple GPU performance using counter statistics](./analyzing-non-apple-gpu-performance-using-counter-statistics.md).
 
@@ -15,11 +15,11 @@ The Performance counters show performance statistics from your app’s passes or
 
 The Metal debugger collects data from the passes running without overlap, so only one pass runs at a time on the device when the profiler measures the performance. Additionally, it includes deterministic counters that don’t vary by time, such as the number of vertices in a render pass.
 
-##### View different counter sets for passes or commands
+### View different counter sets for passes or commands
 
 At the top of the graph, you can click the Encoders or the GPU Commands tab to choose to view the counters by pass or command granularity. Then, you can choose which counter set to use for viewing the collection of counters. In addition, clicking the Edit Counters button on the right allows you to create counter sets or to customize existing ones to suit your performance optimization workflow.
 
-##### View performance counters in the assistant editor
+### View performance counters in the assistant editor
 
 The assistant editor allows you to see additional information for individual passes and commands. You can enable the assistant editor by clicking the Adjust Editor Options button and choosing the Assistant option.
 
@@ -35,7 +35,7 @@ The performance counters in the assistant editor let you inspect all the counter
 
 For more information, see [Analyzing draw command and compute dispatch performance with GPU counters](./analyzing-draw-command-and-compute-dispatch-performance-with-gpu-counters.md).
 
-##### View pipeline statistics for a command
+### View pipeline statistics for a command
 
 Selecting a command allows you to look at its pipeline statistics in the assistant editor. You can select Pipeline Statistics from the Assistant Editor drop-down menu to view information about the pipeline state and its performance statistics.
 
@@ -47,7 +47,7 @@ The pipeline statistics in the assistant editor let you look at compiler metrics
 
 For more information, see [Analyzing draw command and compute dispatch performance with pipeline statistics](./analyzing-draw-command-and-compute-dispatch-performance-with-pipeline-statistics.md).
 
-##### Optimize your workload
+### Optimize your workload
 
 There are a few interesting metrics you can investigate when beginning to optimize your workload:
 

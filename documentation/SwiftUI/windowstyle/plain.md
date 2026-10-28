@@ -19,7 +19,7 @@ static var plain: PlainWindowStyle { get }
 
 Available when `Self` is `PlainWindowStyle`.
 
-#### Discussion
+## Discussion
 
 Unlike [`automatic`](./automatic.md), a plain window does not receive a glass background in visionOS or window chrome in macOS. Use this style if you want more control over how these elements are used in your window.
 

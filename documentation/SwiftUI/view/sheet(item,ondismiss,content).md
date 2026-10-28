@@ -22,7 +22,7 @@ nonisolated
 func sheet<Item, Content>(item: Binding<Item?>, onDismiss: (() -> Void)? = nil, @ContentBuilder content: @escaping (Item) -> Content) -> some View where Item : Identifiable, Content : View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you need to present a modal view with content from a custom data source. The example below shows a custom data source `InventoryItem` that the `content` closure uses to populate the display the action sheet shows to the user:
 
@@ -68,7 +68,7 @@ struct InventoryItem: Identifiable {
 
 In vertically compact environments, such as iPhone in landscape orientation, a sheet presentation automatically adapts to appear as a full-screen cover. Use the [`presentationCompactAdaptation(_:)`](./presentationcompactadaptation%28_%29.md) or [`presentationCompactAdaptation(horizontal:vertical:)`](./presentationcompactadaptation%28horizontal,vertical%29.md) modifier to override this behavior.
 
-##### Breakthrough effect
+### Breakthrough effect
 
 In visionOS, most system presentations appear with a breakthrough effect by default. To change how the enclosing presentation breaks through content occluding it, use [`presentationBreakthroughEffect(_:)`](./presentationbreakthrougheffect%28_%29.md), like in the following example:
 

@@ -22,7 +22,7 @@ nonisolated
 func imageScale(_ scale: Image.Scale) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The example below shows the relative scaling effect. The system renders the image at a relative size based on the available space and configuration options of the image it is scaling.
 

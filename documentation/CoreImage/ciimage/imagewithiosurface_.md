@@ -20,11 +20,11 @@ Creates and returns an image from the contents of an IOSurface.
 + (CIImage *) imageWithIOSurface:(IOSurfaceRef) surface;
 ```
 
-#### Return Value
+## Return Value
 
 An image object initialized with the data from the IOSurface object.
 
-#### Discussion
+## Discussion
 
 An IOSurface object is a framebuffer object that is suitable for sharing across process boundaries. You can use it to allow your app to move complex image decompression and drawing logic into a separate process for the purpose of increasing security.
 

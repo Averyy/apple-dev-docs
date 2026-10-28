@@ -25,11 +25,11 @@ func sparse_extract_block_float(_ A: sparse_matrix_float!, _ bi: sparse_index, _
 sparse_status sparse_extract_block_float(sparse_matrix_float A, sparse_index bi, sparse_index bj, sparse_dimension row_stride, sparse_dimension col_stride, float * restrictval);
 ```
 
-#### Return Value
+## Return Value
 
 On success [`SPARSE_SUCCESS`](./sparse_success.md) is return and val has been updated with the block from block index `bi,bj`. If `A` creation requirements are not met, [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) is returned and `val` is unchanged.
 
-#### Discussion
+## Discussion
 
 Extract the `bi,bj`’th block from the sparse matrix `A`.
 

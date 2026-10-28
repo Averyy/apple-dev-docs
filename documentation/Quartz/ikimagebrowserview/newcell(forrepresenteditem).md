@@ -19,11 +19,11 @@ func newCell(forRepresentedItem anItem: Any!) -> IKImageBrowserCell!
 - (IKImageBrowserCell *) newCellForRepresentedItem:(id) anItem;
 ```
 
-#### Return Value
+## Return Value
 
 A new cell.
 
-#### Discussion
+## Discussion
 
 Subclasses can override this method to customize the appearance of the cell that will represent `anItem`.
 

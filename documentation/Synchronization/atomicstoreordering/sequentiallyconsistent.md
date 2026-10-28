@@ -21,7 +21,7 @@ A sequentially consistent store performs a releasing store and also guarantees t
 static var sequentiallyConsistent: AtomicStoreOrdering { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to `std::memory_order_seq_cst` in C++.
 

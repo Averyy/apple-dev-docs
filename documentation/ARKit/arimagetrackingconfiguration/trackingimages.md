@@ -20,7 +20,7 @@ var trackingImages: Set<ARReferenceImage> { get set }
 @property (nonatomic, copy) NSSet<ARReferenceImage *> * trackingImages;
 ```
 
-#### Discussion
+## Discussion
 
 Add members to this set for each image that ARKit searches for in the user’s environment. When ARKit observes a matching image, the framework creates an [`ARImageAnchor`](../arimageanchor.md) object and adds it to the session. If you set [`maximumNumberOfTrackedImages`](../arworldtrackingconfiguration/maximumnumberoftrackedimages.md) to a value greater than `1`, ARKit tracks multiple images as the session progresses, up to a maximum of four.
 

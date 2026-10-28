@@ -20,7 +20,7 @@ func pixelAspectRatio() -> Double
 - (double) pixelAspectRatio;
 ```
 
-#### Return Value
+## Return Value
 
 The pixel aspect ratio of the on-screen control.
 

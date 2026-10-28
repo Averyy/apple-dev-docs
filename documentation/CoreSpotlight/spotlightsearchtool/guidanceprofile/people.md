@@ -19,7 +19,7 @@ A Boolean value that indicates whether to determine matches using the presence o
 var people: Bool?
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property to `true` to give the model the option to match values based on references to people. For example, you might enable this option to match items with a specific creator or author value. If you don’t specify a value for this property, the default value is `false`.
 

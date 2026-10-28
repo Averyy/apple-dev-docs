@@ -16,9 +16,9 @@ Retrieve the status of an asynchronous event.
 - [Managing users](./managing-users.md)
 - [Subscribing to notifications](./subscribing-to-notifications.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

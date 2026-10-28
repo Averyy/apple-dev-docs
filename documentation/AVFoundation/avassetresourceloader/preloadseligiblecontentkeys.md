@@ -24,7 +24,7 @@ var preloadsEligibleContentKeys: Bool { get set }
 @property (nonatomic) BOOL preloadsEligibleContentKeys;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `true` to load eligible keys. This may result in network activity. All work done as a result of setting this property to `true` is performed asynchronously.
 

@@ -20,14 +20,14 @@ Appends sample data to a media file and adds sample references for the added dat
 func append(_ sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) throws -> (decodeTime: CMTime, presentationTime: CMTime)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the decodeTime & presentationTime.
 
 - decodeTime: CMTime structure to receive the decode time in the media of the first sample appended from the sample buffer.
 - presentationTime: CMTime structure to receive the presentation time in the media of the first sample appended from the sample buffer. Pass NULL if you do not need this information.
 
-#### Discussion
+## Discussion
 
 If the ready sample buffer carries sample data, the sample data is written to the container specified by the track property mediaDataStorage if non-nil, or else by the movie property defaultMediaDataStorage if non-nil, and sample references will be appended to the track’s media. If both media data storage properties are nil, the method will fail with an error.
 

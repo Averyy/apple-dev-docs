@@ -20,7 +20,7 @@ A Boolean value that indicates whether the request detects character-bounding bo
 var reportCharacterBoxes: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Set the value to `true` to have the detector return character-bounding boxes as an array of [`VNRectangleObservation`](../vnrectangleobservation.md) objects.
 

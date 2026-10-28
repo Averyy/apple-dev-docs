@@ -25,7 +25,7 @@ func replacingOccurrences(of target: String, with replacement: String, options: 
 - (NSString *) stringByReplacingOccurrencesOfString:(NSString *) target withString:(NSString *) replacement options:(NSStringCompareOptions) options range:(NSRange) searchRange;
 ```
 
-#### Return Value
+## Return Value
 
 A new string in which all occurrences of `target`, matched using `options`, in `searchRange` of the receiver are replaced by `replacement`.
 

@@ -4,7 +4,7 @@
 
 Contains several images to be displayed at a later time.
 
-#### Overview
+## Overview
 
 The `imgDeck` contains a set of `img` elements—images that are part of the related content for another element. When another element, such as `listItemLockup`, is in focus, the information in the `relatedContent` element is also displayed.
 
@@ -19,11 +19,11 @@ The `imgDeck` contains a set of `img` elements—images that are part of the rel
 </relatedContent>
 ```
 
-##### Subelements of imgDeck
+### Subelements of imgDeck
 
 - [img](./img.md)
 
-##### Elements that Use imgDeck
+### Elements that Use imgDeck
 
 - [relatedContent](./relatedcontent.md)
 

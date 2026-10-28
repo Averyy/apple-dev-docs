@@ -23,7 +23,7 @@ func location(in node: SKNode) -> CGPoint
 - (CGPoint) locationInNode:(SKNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 The location of the touch in the node’s coordinate system.
 

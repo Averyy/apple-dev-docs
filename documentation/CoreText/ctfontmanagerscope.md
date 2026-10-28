@@ -25,7 +25,7 @@ enum CTFontManagerScope
 enum CTFontManagerScope : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 On macOS, a user session refers to a login session. On iOS, a user session refers to the current booted session.
 

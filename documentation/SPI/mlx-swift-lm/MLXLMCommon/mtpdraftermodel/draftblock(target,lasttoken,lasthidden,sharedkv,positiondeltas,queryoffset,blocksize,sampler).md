@@ -18,11 +18,11 @@ K-step drafting from a constant position.
 func draftBlock(target: any LanguageModel, lastToken: MLXArray, lastHidden: MLXArray, sharedKV: [String : (MLXArray, MLXArray)], positionDeltas: MLXArray?, queryOffset: Int, blockSize: Int, sampler: any LogitSampler) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 `[B, blockSize - 1]` token array.
 
-#### Discussion
+## Discussion
 
 Returns the proposed tokens as a `[B, blockSize - 1]` MLXArray. The drafter holds no transient round-state on the model instance — every per-round input is threaded as a method argument.
 

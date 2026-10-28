@@ -19,7 +19,7 @@ Returns a copy of the configuration, updated for the given button.
 - (instancetype) updatedConfigurationForButton:(UIButton *) button;
 ```
 
-#### Return Value
+## Return Value
 
 An updated configuration. This method preserves custom values set on the configuration, and updates default values based on the button state.
 

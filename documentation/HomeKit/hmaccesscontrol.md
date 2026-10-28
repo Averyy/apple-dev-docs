@@ -24,7 +24,7 @@ class HMAccessControl
 @interface HMAccessControl : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a concrete subclass, like [`HMHomeAccessControl`](./hmhomeaccesscontrol.md), instead.
 

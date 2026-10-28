@@ -20,7 +20,7 @@ A component that provides functionality for controlling the playback of audio yo
 struct AudioMixGroupsComponent
 ```
 
-#### Overview
+## Overview
 
 When defining an [`AudioMixGroup`](./audiomixgroup.md) for a scene in the Audio Mixer section of Reality Composer Pro, this component exists on the first descendant [`Entity`](./entity.md) in the scene at runtime.
 

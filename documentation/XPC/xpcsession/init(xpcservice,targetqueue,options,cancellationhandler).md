@@ -17,7 +17,7 @@ Establishes a connection to an XPC service with the name you specify.
 convenience init(xpcService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, cancellationHandler: (@Sendable (XPCRichError) -> Void)? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 If the service isn’t found or is unavailable, the connection fails and this method throws an error.
 

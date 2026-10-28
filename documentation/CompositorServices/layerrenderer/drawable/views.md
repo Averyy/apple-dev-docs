@@ -16,7 +16,7 @@ An array of viewports that tell you how to draw to the drawable’s textures
 var views: [LayerRenderer.Drawable.View] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The drawable provides one view for each distinct image you need to render. For example, a stereoscopic display contains a separate view for each eye.
 

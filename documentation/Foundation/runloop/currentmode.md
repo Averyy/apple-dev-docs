@@ -25,7 +25,7 @@ var currentMode: RunLoop.Mode? { get }
 @property (copy, readonly, nullable) NSRunLoopMode currentMode;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver’s current input mode. This method returns the current input mode *only* while the receiver is running; otherwise, it returns `nil`.
 

@@ -21,11 +21,11 @@ func SecTrustedApplicationGetTypeID() -> CFTypeID
 CFTypeID SecTrustedApplicationGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 A value that identifies the opaque type of a [`SecTrustedApplication`](./sectrustedapplication.md) object.
 
-#### Discussion
+## Discussion
 
 This function returns a value that uniquely identifies the opaque type of a [`SecTrustedApplication`](./sectrustedapplication.md) instance. You can compare this value to the [`CFTypeID`](../CoreFoundation/cftypeid.md) identifier obtained by calling the [`CFGetTypeID(_:)`](../CoreFoundation/cfgettypeid%28_%29.md) method on a specific instance. These values might change from release to release or platform to platform.
 

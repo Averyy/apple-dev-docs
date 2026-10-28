@@ -23,7 +23,7 @@ class VZVirtioEntropyDeviceConfiguration
 
 - [Creating and Running a Linux Virtual Machine](./creating-and-running-a-linux-virtual-machine.md)
 
-#### Overview
+## Overview
 
 Use a [`VZVirtioEntropyDeviceConfiguration`](./vzvirtioentropydeviceconfiguration.md) object to expose a source of entropy for the guest operating system’s random-number generator. When you create this object and add it to your virtual machine’s configuration, the virtual machine configures a Virtio-compliant entropy device. The guest operating system uses this device as a seed to generate random numbers.
 

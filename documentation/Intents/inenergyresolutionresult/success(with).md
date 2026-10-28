@@ -24,11 +24,11 @@ class func success(with resolvedEnergy: Measurement<UnitEnergy>) -> Self
 + (instancetype) successWithResolvedEnergy:(NSMeasurement<NSUnitEnergy *> *) resolvedEnergy;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INEnergyResolutionResult`](../inenergyresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you can resolve a parameter successfully to a value in your own internal data structures.
 

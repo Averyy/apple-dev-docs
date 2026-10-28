@@ -24,11 +24,11 @@ var fontDescriptor: UIFontDescriptor { get }
 @property (nonatomic, readonly) UIFontDescriptor * fontDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A font descriptor that describes the font.
 
-#### Discussion
+## Discussion
 
 The font descriptor contains a mutable dictionary of optional attributes for creating a `UIFont` object. See [`UIFontDescriptor`](../uifontdescriptor.md) for more information.
 

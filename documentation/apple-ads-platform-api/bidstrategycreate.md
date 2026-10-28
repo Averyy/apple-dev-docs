@@ -15,7 +15,7 @@ The creation payload for configuring a bid strategy on an ad group or campaign.
 object BidStrategyCreate
 ```
 
-#### Discussion
+## Discussion
 
 The `BidStrategyCreate` object is the creation payload for configuring a bid strategy on an ad group or campaign.
 
@@ -23,7 +23,7 @@ Whenever you include `bidStrategyType`, you must also include the matching `bidS
 
 For manual CPT strategies, set `bidStrategyType` to `MANUAL_CPT` and supply a `bid` value that represents the maximum you’re willing to pay per tap. For automated strategies, set `bidStrategyType` to `MAX_CONVERSIONS` and optionally set a `bid` ceiling.
 
-##### Example
+### Example
 
 ```json
 {

@@ -23,7 +23,7 @@ func pinch(withScale scale: CGFloat, velocity: CGFloat)
 - (void) pinchWithScale:(CGFloat) scale velocity:(CGFloat) velocity;
 ```
 
-#### Discussion
+## Discussion
 
 The system makes a best effort to synthesize the requested scale and velocity, but absolute accuracy isn’t guaranteed. Some values may not be possible based on the size of the element’s frame, and they result in test failures.
 

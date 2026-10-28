@@ -22,7 +22,7 @@ class let touchBarShareTemplateName: String
 extern NSImageName const NSImageNameTouchBarShareTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for share](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793519@2x.png)
 

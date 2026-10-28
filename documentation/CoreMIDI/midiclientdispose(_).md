@@ -23,11 +23,11 @@ func MIDIClientDispose(_ client: MIDIClientRef) -> OSStatus
 extern OSStatus MIDIClientDispose(MIDIClientRef client);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 Don’t explicitly dispose of your client; the system automatically disposes all clients when an app terminates. However, if you call this method to dispose the last or only client owned by an app, the MIDI server may exit if there are no other clients remaining in the system. If this occurs, all subsequent calls by your app to [`MIDIClientCreate(_:_:_:_:)`](./midiclientcreate%28_,_,_,_%29.md) and [`MIDIClientCreateWithBlock(_:_:_:)`](./midiclientcreatewithblock%28_,_,_%29.md) fail.
 

@@ -22,7 +22,7 @@ func GLKMatrix3RotateWithVector3(_ matrix: GLKMatrix3, _ radians: Float, _ axisV
 static GLKMatrix3 GLKMatrix3RotateWithVector3(GLKMatrix3 matrix, float radians, GLKVector3 axisVector);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 

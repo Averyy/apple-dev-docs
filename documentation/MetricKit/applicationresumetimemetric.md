@@ -18,7 +18,7 @@ A metric that measures app resume time durations.
 struct ApplicationResumeTimeMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.applicationResumeTime(_:)`](./metricresult/applicationresumetime%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 

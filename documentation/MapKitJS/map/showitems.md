@@ -22,11 +22,11 @@ showItems(
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Return Value
+## Return Value
 
 Returns the items array that you pass.
 
-#### Discussion
+## Discussion
 
 The method [`showItems()`](./showitems.md) adjusts the map’s [`region`](./region.md) to bring all of the specified items — annotations and overlays — into view. The system only adds items if they’re not already on the map.
 

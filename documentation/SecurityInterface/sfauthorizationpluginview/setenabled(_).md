@@ -19,7 +19,7 @@ func setEnabled(_ inEnabled: Bool)
 - (void) setEnabled:(BOOL) inEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When the authorization plug-in calls this method, the subclass should call [`setEnabled(_:)`](./setenabled%28_%29.md) on the controls that are in its view.
 

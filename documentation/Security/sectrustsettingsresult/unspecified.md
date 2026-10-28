@@ -20,7 +20,7 @@ case unspecified
 kSecTrustSettingsResultUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 This value can be used to specify an allowed error without assigning trust to the certificate.
 

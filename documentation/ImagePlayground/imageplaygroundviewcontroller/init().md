@@ -20,7 +20,7 @@ Creates a new image-generation view controller for you to present.
 @preconcurrency dynamic convenience init()
 ```
 
-#### Return Value
+## Return Value
 
 The view controller to present.
 

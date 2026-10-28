@@ -24,7 +24,7 @@ var kAudioUnitProperty_ParameterIDName: AudioUnitPropertyID { get }
 kAudioUnitProperty_ParameterIDName
 ```
 
-#### Discussion
+## Discussion
 
 In your host application, you specify the desired length for the shortened version of the name by setting the `inDesiredLength` field in this property. For the full-length version of an audio unit parameter name, see the `kAudioUnitProperty_ParameterInfo` property.
 

@@ -19,11 +19,11 @@ func AEInstallEventHandler(_ theAEEventClass: AEEventClass, _ theAEEventID: AEEv
 OSErr AEInstallEventHandler(AEEventClass theAEEventClass, AEEventID theAEEventID, AEEventHandlerUPP handler, SRefCon handlerRefcon, Boolean isSysHandler);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 The parameters `theAEEventClass` and `theAEEventID` specify the event class and event ID of the Apple events handled by the handler for this dispatch table entry. If there is already an entry in the specified dispatch table for the same event class and event ID, it is replaced. For these parameters, you must provide one of the following combinations:
 
@@ -38,7 +38,7 @@ If an Apple event dispatch table contains one entry for an event class and a spe
 
 In addition to the Apple event handler dispatch tables, applications can add entries to special handler dispatch tables, as described in [Managing Special Handler Dispatch Tables](../applicationservices/apple_event_manager.md#1652333). 
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

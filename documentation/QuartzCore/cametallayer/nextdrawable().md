@@ -24,11 +24,11 @@ func nextDrawable() -> (any CAMetalDrawable)?
 - (id<CAMetalDrawable>) nextDrawable;
 ```
 
-#### Return Value
+## Return Value
 
 A Metal drawable. Use the drawable’s [`texture`](../cametaldrawable/texture.md) property to configure a [`MTLRenderPipelineColorAttachmentDescriptor`](../../Metal/mtlrenderpipelinecolorattachmentdescriptor.md) object for rendering to the layer.
 
-#### Discussion
+## Discussion
 
 A [`CAMetalLayer`](../cametallayer.md) object maintains an internal pool of textures for displaying layer content, each wrapped in a [`CAMetalDrawable`](../cametaldrawable.md) object. Use this method to retrieve the next available drawable from the pool. If all drawables are in use, the layer waits up to one second for one to become available, after which it returns `nil`. The [`allowsNextDrawableTimeout`](./allowsnextdrawabletimeout.md) property affects this behavior.
 

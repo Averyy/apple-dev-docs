@@ -23,7 +23,7 @@ func withBNNSTensor<R>(_ body: (BNNSTensor) throws -> R) rethrows -> R
 
 Available when `Format` conforms to `StaticPixelFormat` and `Format.ComponentType` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 Use this function to pass image data to a `BNNSGraph`. For example, the following code creates a graph that calculates the mean value of an image and apply a threshold based on the mean.
 

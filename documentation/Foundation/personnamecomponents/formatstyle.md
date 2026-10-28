@@ -21,13 +21,13 @@ A type used to format a person’s name with a style appropriate for the given l
 struct FormatStyle
 ```
 
-#### Overview
+## Overview
 
 Personal names deserve careful and respectful treatment in your apps. Each locale has its own set of rules and conventions to construct and represent personal names. These rules vary widely across different locales in several ways, including the sort and display order of given and family names, the use of salutations and honorifics, and other concerns related to the grammar, spelling, punctuation, and formatting.
 
 A `PersonNameComponents.FormatStyle` creates human readable text from an instance of [`PersonNameComponents`](../personnamecomponents.md). You can customize the formatting using the [`style`](./formatstyle/style-swift.property.md) and [`locale`](./formatstyle/locale.md) properties. The system automatically caches instances with unique configurations of the format style to enhance performance.
 
-##### Format Styles
+### Format Styles
 
 You can configure a `PersonNameComponents.FormatStyle` to represent names in a variety of styles:
 
@@ -49,7 +49,7 @@ These considerations extend to the availability of certain format styles as well
 
 For more information and examples, see [`style`](./formatstyle/style-swift.property.md).
 
-##### Formatting Person Name Components
+### Formatting Person Name Components
 
 Use either [`formatted()`](./formatted%28%29.md) or [`formatted(_:)`](./formatted%28_%29.md), both instance methods of [`PersonNameComponents`](../personnamecomponents.md), to create a string representation of a name.
 

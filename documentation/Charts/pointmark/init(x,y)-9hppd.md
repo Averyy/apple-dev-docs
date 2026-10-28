@@ -22,7 +22,7 @@ nonisolated
 init<X>(x: PlottableValue<X>, y: CGFloat? = nil) where X : Plottable
 ```
 
-##### Discussion
+### Discussion
 
 Use this initializer to plot a property with x:
 

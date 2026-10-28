@@ -20,7 +20,7 @@ Creates and returns an image object initialized with the supplied image data, us
 + (CIImage *) imageWithData:(NSData *) data options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An image object initialized with the supplied data and set up with the specified options.
 

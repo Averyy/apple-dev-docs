@@ -23,7 +23,7 @@ var content: Array<CMTaggedDynamicBuffer> { get set }
 
 Available when `Content` is `[CMTaggedDynamicBuffer]`.
 
-#### Discussion
+## Discussion
 
 The content type of the sample buffer can not be changed by assigning different content.
 

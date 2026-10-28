@@ -24,7 +24,7 @@ var rate: Float { get set }
 @property (nonatomic) float rate;
 ```
 
-#### Discussion
+## Discussion
 
 The default playback rate is `1.0`, and must be greater than `0.0`.
 

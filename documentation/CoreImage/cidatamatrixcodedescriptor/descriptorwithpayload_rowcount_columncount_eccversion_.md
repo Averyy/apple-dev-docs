@@ -20,7 +20,7 @@ Creates a Data Matrix code descriptor for the given payload and parameters.
 + (instancetype) descriptorWithPayload:(NSData *) errorCorrectedPayload rowCount:(NSInteger) rowCount columnCount:(NSInteger) columnCount eccVersion:(CIDataMatrixCodeECCVersion) eccVersion;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIAztecCodeDescriptor`](../ciazteccodedescriptor.md) instance or `nil` if the parameters are invalid
 

@@ -25,11 +25,11 @@ func localizedString(from dateComponents: DateComponents) -> String
 - (NSString *) localizedStringFromDateComponents:(NSDateComponents *) dateComponents;
 ```
 
-#### Return Value
+## Return Value
 
 A string that represents the formatted relative time from date components.
 
-#### Discussion
+## Discussion
 
 The formatter interprets a negative component value as a date in the past.
 

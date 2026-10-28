@@ -25,7 +25,7 @@ func registeredContentTypes(conformingTo contentType: UTType) -> [UTType]
 - (NSArray<UTType *> *) registeredContentTypesConformingToContentType:(UTType *) contentType;
 ```
 
-#### Return Value
+## Return Value
 
 An array of registered content types.
 

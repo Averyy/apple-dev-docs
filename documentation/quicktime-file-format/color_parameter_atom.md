@@ -10,7 +10,7 @@ A required extension for uncompressed Y´CbCr data formats.
 
 - [QuickTime File Format change log](./revision_history.md)
 
-#### Overview
+## Overview
 
 This atom is a required extension for uncompressed Y´CbCr data formats. The `'colr'` extension is used to map the numerical values of pixels in the file to a common representation of color in which images can be correctly compared, combined, and displayed. The common representation is the CIE XYZ tristimulus values (defined in Publication CIE No. 15.2).
 

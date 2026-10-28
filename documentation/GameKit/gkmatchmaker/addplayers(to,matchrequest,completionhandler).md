@@ -32,7 +32,7 @@ func addPlayers(to match: GKMatch, matchRequest: GKMatchRequest) async throws
 
 - [Finding players for custom server-based games](../finding-players-for-custom-server-based-games.md)
 
-#### Discussion
+## Discussion
 
 Use this method to add more players to an existing match that doesn’t have enough players.
 

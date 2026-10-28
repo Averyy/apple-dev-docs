@@ -25,7 +25,7 @@ let NSAssertionHandlerKey: String
 extern NSString * const NSAssertionHandlerKey;
 ```
 
-#### Discussion
+## Discussion
 
 If you need to customize the behavior of `NSAssertionHandler`, create a subclass, overriding [`handleFailureInMethod:object:file:lineNumber:description:`](./nsassertionhandler/handlefailureinmethod_object_file_linenumber_description_.md) and [`handleFailureInFunction:file:lineNumber:description:`](./nsassertionhandler/handlefailureinfunction_file_linenumber_description_.md), and install your instance into the current thread’s attributes dictionary with this key.
 

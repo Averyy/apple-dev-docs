@@ -25,7 +25,7 @@ typealias ObjectID = Any
 typedef id TKTokenObjectID;
 ```
 
-#### Discussion
+## Discussion
 
 The type of this identifier must support property list serialization and must define its format by the implementation of the token extension.
 

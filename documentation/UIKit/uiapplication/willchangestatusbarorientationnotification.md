@@ -24,7 +24,7 @@ class let willChangeStatusBarOrientationNotification: NSNotification.Name
 extern NSNotificationName const UIApplicationWillChangeStatusBarOrientationNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The userInfo dictionary contains an [`NSNumber`](../../Foundation/nsnumber.md) that encapsulates a `UIInterfaceOrientation` value (see [`UIInterfaceOrientation`](../uiinterfaceorientation.md)). Use [`statusBarOrientationUserInfoKey`](./statusbarorientationuserinfokey.md) to access this value.
 

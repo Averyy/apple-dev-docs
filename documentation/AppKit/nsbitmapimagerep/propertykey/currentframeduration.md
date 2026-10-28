@@ -19,7 +19,7 @@ static let currentFrameDuration: NSBitmapImageRep.PropertyKey
 extern NSBitmapImageRepPropertyKey NSImageCurrentFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The frame duration can be a floating-point value. It is used when reading in, but not when writing out.
 

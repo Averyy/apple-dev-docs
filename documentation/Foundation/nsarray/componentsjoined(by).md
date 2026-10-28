@@ -25,11 +25,11 @@ func componentsJoined(by separator: String) -> String
 - (NSString *) componentsJoinedByString:(NSString *) separator;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSString` object that is the result of interposing `separator` between the elements of the array. If the array has no elements, returns an `NSString` object representing an empty string.
 
-#### Discussion
+## Discussion
 
 For example, this code excerpt writes “`here be dragons`” to the console:
 
@@ -38,7 +38,7 @@ NSArray *pathArray = [NSArray arrayWithObjects:@"here", @"be", @"dragons", nil];
 NSLog(@"%@",[pathArray componentsJoinedByString:@" "]);
 ```
 
-##### Special Considerations
+### Special Considerations
 
 Each element in the array must handle `description`.
 

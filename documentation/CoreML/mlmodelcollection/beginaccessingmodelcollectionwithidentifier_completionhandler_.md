@@ -17,7 +17,7 @@ Requests access to a model collection.
 + (NSProgress *) beginAccessingModelCollectionWithIdentifier:(NSString *) identifier completionHandler:(void (^)(MLModelCollection *modelCollection, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to access a model collection from a deployment (see `Creating and Deploying a Model Collection`). Your app can call this method multiple times, typically each time it needs to access the models in the collection.
 

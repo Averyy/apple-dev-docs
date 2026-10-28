@@ -25,7 +25,7 @@ var height: Int { get }
 @property (readonly) NSUInteger height;
 ```
 
-#### Discussion
+## Discussion
 
 For a 1D texture, the value is `1`.
 

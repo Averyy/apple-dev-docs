@@ -17,7 +17,7 @@ Perform the Walsh-Hadamard transform along the final axis.
 func hadamardTransform(_ array: MLXArray, scale: Float? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Supports sizes `n = m*2^k` for `m` in `(1, 12, 20, 28)` and `2^k <= 8192` for [`DType.float32`](./dtype/float32.md) and `2^k <= 16384` for [`DType.float16`](./dtype/float16.md) and [`DType.bfloat16`](./dtype/bfloat16.md).
 

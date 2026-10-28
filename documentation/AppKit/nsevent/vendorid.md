@@ -19,7 +19,7 @@ var vendorID: Int { get }
 @property (readonly) NSUInteger vendorID;
 ```
 
-#### Discussion
+## Discussion
 
 The tablet is typically a USB device. This method is valid only for mouse events with subtype `NSTabletProximityEventSubtype` and for `NSTabletProximity` events.
 

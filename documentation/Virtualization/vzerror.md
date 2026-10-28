@@ -15,7 +15,7 @@ Errors that you might encounter when configuring or using a VM.
 struct VZError
 ```
 
-#### Overview
+## Overview
 
 The domain for these errors is [`VZErrorDomain`](./vzerrordomain.md). When an error originates in a different component, the [`NSError`](../Foundation/nserror.md) object contains the domain of that component.
 

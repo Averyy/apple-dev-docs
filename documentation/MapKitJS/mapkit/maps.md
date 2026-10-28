@@ -19,7 +19,7 @@ get maps(): Map[];
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library before accessing the array, otherwise, the array throws an `Error`.
 

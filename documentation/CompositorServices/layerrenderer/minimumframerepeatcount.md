@@ -20,7 +20,7 @@ var minimumFrameRepeatCount: Int32 { get set }
 int cp_layer_renderer_get_minimum_frame_repeat_count(cp_layer_renderer_t layer_renderer);
 ```
 
-#### Discussion
+## Discussion
 
 The minimum frame repeat count contains the number of additional frames that display the same content. For example, if this value is `1`, the layer displays the same content for the duration of two screen update cycles.
 

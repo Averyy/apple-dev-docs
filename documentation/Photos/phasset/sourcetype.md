@@ -24,7 +24,7 @@ var sourceType: PHAssetSourceType { get }
 @property (nonatomic, assign, readonly) PHAssetSourceType sourceType;
 ```
 
-#### Discussion
+## Discussion
 
 Assets from some sources can be edited, deleted, or added to collections; assets from other sources do not support these operations. For details, see [`PHAssetSourceType`](../phassetsourcetype.md).
 

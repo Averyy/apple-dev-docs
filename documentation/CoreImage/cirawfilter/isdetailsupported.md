@@ -24,7 +24,7 @@ var isDetailSupported: Bool { get }
 @property (readonly, getter=isDetailSupported) BOOL detailSupported;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, you can adjust the amount of detail enhancement to apply to the image by setting [`detailAmount`](./detailamount.md).
 

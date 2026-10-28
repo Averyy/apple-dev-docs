@@ -21,11 +21,11 @@ Registers a list of traits to observe, and calls a method on the receiving objec
 @MainActor func registerForTraitChanges(_ traits: [UITrait], action: Selector) -> any UITraitChangeRegistration
 ```
 
-#### Return Value
+## Return Value
 
 An opaque token you can use to stop observing trait changes by passing to [`unregisterForTraitChanges(_:)`](./unregisterfortraitchanges%28_%29.md). You don’t have to unregister your observations, and you can safely ignore this value.
 
-#### Discussion
+## Discussion
 
 This is a convenience method for [`registerForTraitChanges(_:target:action:)`](./registerfortraitchanges%28_,target,action%29.md) when the object receiving the registration is the target of the action. For example, when you register for changes on `self`, the `target` is `self`.
 

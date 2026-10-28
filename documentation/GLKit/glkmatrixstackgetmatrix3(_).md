@@ -22,7 +22,7 @@ func GLKMatrixStackGetMatrix3(_ stack: GLKMatrixStack) -> GLKMatrix3
 GLKMatrix3 GLKMatrixStackGetMatrix3(GLKMatrixStackRef stack);
 ```
 
-#### Return Value
+## Return Value
 
 A `3x3` matrix created by taking the top left corner of the top matrix.
 

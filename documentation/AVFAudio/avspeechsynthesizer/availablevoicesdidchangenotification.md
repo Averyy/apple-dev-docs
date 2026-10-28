@@ -25,7 +25,7 @@ class let availableVoicesDidChangeNotification: NSNotification.Name
 extern NSNotificationName AVSpeechSynthesisAvailableVoicesDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification when available voices for speech synthesis on the system change. For example, a new personal voice becomes available and the user authorized the app to access personal voices. Or new 3rd party voices become available through an app the user downloads.
 

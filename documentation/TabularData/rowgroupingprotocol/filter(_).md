@@ -22,7 +22,7 @@ Returns a row grouping containing only the groups that satisfy a predicate.
 func filter(_ isIncluded: (DataFrame.Slice) throws -> Bool) rethrows -> Self
 ```
 
-#### Return Value
+## Return Value
 
 A data frame slice that contains the rows that satisfy the predicate.
 

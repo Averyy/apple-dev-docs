@@ -23,7 +23,7 @@ func setTargetRect(_ targetRect: CGRect, in targetView: UIView)
 - (void) setTargetRect:(CGRect) targetRect inView:(UIView *) targetView;
 ```
 
-#### Discussion
+## Discussion
 
 This target rectangle (`targetRect`) is usually the bounding rectangle of a selection. `UIMenuController` positions the editing menu above this rectangle; if there is not enough space for the menu there, it positions it below the rectangle. The menu’s pointer is placed at the center of the top or bottom of the target rectangle as appropriate. Note that if you make the width or height of the target rectangle zero, `UIMenuController` treats the target area as a line or point for positioning (for example, an insertion caret or a single point).
 

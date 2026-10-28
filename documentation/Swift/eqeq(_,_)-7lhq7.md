@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether the corresponding components of two t
 func == <A, B, C, D>(lhs: (A, B, C, D), rhs: (A, B, C, D)) -> Bool where A : Equatable, B : Equatable, C : Equatable, D : Equatable
 ```
 
-#### Discussion
+## Discussion
 
 For two tuples to compare as equal, each corresponding pair of components must be equal. The following example compares tuples made up of 4 components:
 

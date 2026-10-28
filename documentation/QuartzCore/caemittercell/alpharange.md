@@ -24,7 +24,7 @@ var alphaRange: Float { get set }
 @property float alphaRange;
 ```
 
-#### Discussion
+## Discussion
 
 The range specifies the mean amount by which the alpha component of the [`color`](./color.md) property can vary for the cell.
 

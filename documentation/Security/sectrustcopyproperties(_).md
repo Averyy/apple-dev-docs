@@ -25,11 +25,11 @@ func SecTrustCopyProperties(_ trust: SecTrust) -> CFArray?
 CFArrayRefSecTrustCopyProperties(SecTrustRef trust);
 ```
 
-#### Return Value
+## Return Value
 
 An array, or `NULL` if the trust object has not yet been evaluated. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this array’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 The result is an ordered array of dictionaries, one per certificate in the chain, beginning with the leaf node at index zero (`0`) and continuing up to the anchor (or the last certificate in the chain if no anchor was found).
 

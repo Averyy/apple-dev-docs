@@ -17,7 +17,7 @@ Signs the supplied data with the identity’s private key
 func signature(for data: Data, using request: JPKIPassContents.AuthenticationRequest<Self.IdentityType>) async throws -> JPKIPassContents.Signature<Self.IdentityType>
 ```
 
-#### Discussion
+## Discussion
 
 - Properties:
 

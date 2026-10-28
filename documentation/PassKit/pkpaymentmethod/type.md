@@ -24,7 +24,7 @@ var type: PKPaymentMethodType { get }
 @property (nonatomic, readonly) PKPaymentMethodType type;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible card types, see [`PKPaymentMethodType`](../pkpaymentmethodtype.md).
 

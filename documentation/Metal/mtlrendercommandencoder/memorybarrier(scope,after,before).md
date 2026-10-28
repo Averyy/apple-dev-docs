@@ -25,7 +25,7 @@ func memoryBarrier(scope: MTLBarrierScope, after: MTLRenderStages, before: MTLRe
 - (void) memoryBarrierWithScope:(MTLBarrierScope) scope afterStages:(MTLRenderStages) after beforeStages:(MTLRenderStages) before;
 ```
 
-#### Discussion
+## Discussion
 
 Memory barriers ensure the relevant stages of prior draw commands finish updating resources before starting the stages of subsequent commands that depend on those resources.
 

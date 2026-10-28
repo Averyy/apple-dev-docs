@@ -14,7 +14,7 @@
 kIOCatalogGetContents = 1
 ```
 
-#### Discussion
+## Discussion
 
 Returns a snapshot of the database to the caller.
 

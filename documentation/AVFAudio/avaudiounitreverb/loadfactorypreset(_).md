@@ -24,7 +24,7 @@ func loadFactoryPreset(_ preset: AVAudioUnitReverbPreset)
 - (void) loadFactoryPreset:(AVAudioUnitReverbPreset) preset;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about possible values, see [`AVAudioUnitReverbPreset`](../avaudiounitreverbpreset.md). The default value is [`AVAudioUnitReverbPreset.mediumHall`](../avaudiounitreverbpreset/mediumhall.md).
 

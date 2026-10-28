@@ -25,11 +25,11 @@ func CTFrameGetVisibleStringRange(_ frame: CTFrame) -> CFRange
 extern CFRange CTFrameGetVisibleStringRange(CTFrameRef frame);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFRange` structure containing the backing store range of characters that fit into the frame, or if the function call is not successful or no characters fit in the frame, an empty range.
 
-#### Discussion
+## Discussion
 
 This function can be used to cascade frames, because it returns the range of characters that can be seen in the frame. The next frame would start where this frame ends.
 

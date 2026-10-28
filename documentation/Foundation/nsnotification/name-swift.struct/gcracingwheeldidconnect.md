@@ -16,7 +16,7 @@ A notification that posts after a racing wheel controller connects to the device
 static let GCRacingWheelDidConnect: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the [`GCRacingWheel`](../../../GameController/gcracingwheel.md) object that connects to the device.
 

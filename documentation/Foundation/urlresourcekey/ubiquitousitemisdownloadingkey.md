@@ -25,7 +25,7 @@ static let ubiquitousItemIsDownloadingKey: URLResourceKey
 extern NSURLResourceKey const NSURLUbiquitousItemIsDownloadingKey;
 ```
 
-#### Discussion
+## Discussion
 
 The system returns the read-only value as a Boolean [`NSNumber`](../nsnumber.md). The value is `true` if the system is downloading this item from iCloud; otherwise, `false`.
 

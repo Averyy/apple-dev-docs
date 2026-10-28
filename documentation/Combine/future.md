@@ -25,7 +25,7 @@ final class Future<Output, Failure> where Failure : Error
 
 - [Using Combine for Your App’s Asynchronous Code](./using-combine-for-your-app-s-asynchronous-code.md)
 
-#### Overview
+## Overview
 
 Use a future to perform some work and then asynchronously publish a single element. You initialize the future with a closure that takes a [`Future.Promise`](./future/promise.md); the closure calls the promise with a [`Result`](../Swift/result.md) that indicates either success or failure. In the success case, the future’s downstream subscriber receives the element prior to the publishing stream finishing normally. If the result is an error, publishing terminates with that error.
 
@@ -49,7 +49,7 @@ cancellable = generateAsyncRandomNumberFromFuture()
     .sink { number in print("Got random number \(number).") }
 ```
 
-##### Integrating with Swift Concurrency
+### Integrating with Swift Concurrency
 
 To integrate with the `async`-`await` syntax in Swift 5.5, `Future` can provide its value to an awaiting caller. This is particularly useful because unlike other types that conform to [`Publisher`](./publisher.md) and potentially publish many elements, a `Future` only publishes one element (or fails). By using the [`value`](./future/value-9iwjz.md) property, the above call point looks like this:
 
@@ -58,7 +58,7 @@ let number = await generateAsyncRandomNumberFromFuture().value
 print("Got random number \(number).")
 ```
 
-##### Alternatives to Futures
+### Alternatives to Futures
 
 The `async`-`await` syntax in Swift can also replace the use of a future entirely, for the case where you want to perform some operation after an asynchronous task completes.
 

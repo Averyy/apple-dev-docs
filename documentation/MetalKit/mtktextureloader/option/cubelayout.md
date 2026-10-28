@@ -24,7 +24,7 @@ static let cubeLayout: MTKTextureLoader.Option
 extern MTKTextureLoaderOption const MTKTextureLoaderOptionCubeLayout;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is one of the values listed for [`MTKTextureLoader.CubeLayout`](../cubelayout.md). If this option is omitted, the texture loader does not create a cube texture.
 

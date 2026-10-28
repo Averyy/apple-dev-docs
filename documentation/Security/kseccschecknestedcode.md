@@ -20,7 +20,7 @@ var kSecCSCheckNestedCode: UInt32 { get }
 kSecCSCheckNestedCode
 ```
 
-#### Discussion
+## Discussion
 
 Only code in standard locations is considered.
 

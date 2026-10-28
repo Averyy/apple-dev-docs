@@ -23,7 +23,7 @@ var controls: [AVCaptureControl] { get }
 @property (nonatomic, readonly) NSArray<__kindof AVCaptureControl *> * controls;
 ```
 
-#### Discussion
+## Discussion
 
 You modify the contents of this array by calling the [`addControl(_:)`](./addcontrol%28_%29.md) and [`removeControl(_:)`](./removecontrol%28_%29.md) methods.
 

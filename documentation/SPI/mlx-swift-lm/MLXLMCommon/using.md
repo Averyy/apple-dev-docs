@@ -10,7 +10,7 @@ framework: "mlx-swift-lm/MLXLMCommon"
 
 How to use mlx-swift-lm in your own tools and applications
 
-#### Overview
+## Overview
 
 Using mlx-swift-lm to add LLM, VLM or text embedding capabilities to your own software is straightforward:
 
@@ -36,7 +36,7 @@ print(try await session.respond(to: "What are two things to see in San Francisco
 print(try await session.respond(to: "How about a great place to eat?"))
 ```
 
-#### Downloaders and Tokenizers
+## Downloaders and Tokenizers
 
 There are 3 general ways to select and use concrete Downloader and Tokenizer implementations:
 
@@ -46,7 +46,7 @@ There are 3 general ways to select and use concrete Downloader and Tokenizer imp
 
 If you are [Upgrade From 2.x Release](./upgrade.md) from mlx-swift-lm 2.x the macros will be the simplest way, but consider [Integration Packages](./using.md#Integration-Packages) as there are alternate implementations that may provide features and capabilities that you want.
 
-##### Implementing Protocols
+### Implementing Protocols
 
 The other two methods use exactly this technique to wrap concrete implementations in the mlx-swift-lm protocol.  You can do this yourself if you have custom code or simply wish to see how it works.
 
@@ -111,7 +111,7 @@ let model = try await loadModel(
 )
 ```
 
-##### Integration Packages
+### Integration Packages
 
 Integration packages provide an adapter that encapsulates a concrete implementation.  Adding a dependency on the adapter will transitively add a dependency on the implementation.
 
@@ -125,7 +125,7 @@ No additional integration packages are provided at this time, but feel free to c
 
 See [Xcode projects](./using.md#Xcode-projects) for information about how to hook it up.
 
-##### MLXHuggingFace Macros
+### MLXHuggingFace Macros
 
 To provide parity with mlx-swift-lm 2.x there is a built in integration with the HuggingFace downloader and tokenizer implementations using macros.
 
@@ -184,7 +184,7 @@ print(try await session.respond(to: "How about a great place to eat?"))
 
 See [Upgrade From 2.x Release](./upgrade.md) for more information on upgrading from a 2.x release.
 
-#### Xcode projects
+## Xcode projects
 
 You can read the [Xcode documentation](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
 
@@ -196,7 +196,7 @@ For all integration methods you will need to add:
 
 Beyond that, chose one of the 3 integration methods and add either the adapter packages OR the implementation packages if using macros/local implemenentation.  See <doc#Integration-Packages>.
 
-#### Package.swift / SwiftPM
+## Package.swift / SwiftPM
 
 In your Package.swift add a reference to mlx-swift-lm, chosing either the `main` branch or something that tracks versions:
 

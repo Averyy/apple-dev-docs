@@ -25,7 +25,7 @@ optional func completer(_ completer: MKLocalSearchCompleter, didFailWithError er
 - (void) completer:(MKLocalSearchCompleter *) completer didFailWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to process any errors that occur while generating search results. Even when an error occurs, the search completer starts a new search if it already has a new search string. Depending on the error, you might do nothing or let the user know that you were unable to obtain a list of search completions.
 

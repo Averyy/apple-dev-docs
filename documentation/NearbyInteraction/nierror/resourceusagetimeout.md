@@ -18,7 +18,7 @@ An error code that indicates that the framework timed out the session.
 static var resourceUsageTimeout: NIError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The framework times out a session in some cases to preserve resources, such as battery life. An app needs to watch for timed-out peers. If the app wishes to continue interaction with a timed-out peer device, the app needs to begin a new nearby-interaction session.
 

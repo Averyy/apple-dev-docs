@@ -21,7 +21,7 @@ func sqrt(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`sqrt(stream:)`](./mlxarray/sqrt%28stream%29.md)

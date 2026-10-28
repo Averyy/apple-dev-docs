@@ -25,7 +25,7 @@ let kSecAttrCanWrap: CFString
 extern CFStringRef const kSecAttrCanWrap;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md) and indicates whether this cryptographic key can be used to wrap another key.
 

@@ -19,7 +19,7 @@ A default implementation that indicates that the interaction begins.
 func interaction(_ interaction: ImageAnalysisInteraction, shouldBeginAt point: CGPoint, for interactionType: ImageAnalysisInteraction.InteractionTypes) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 This default implementation returns `true`.
 

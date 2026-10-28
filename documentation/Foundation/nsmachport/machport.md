@@ -25,7 +25,7 @@ var machPort: UInt32 { get }
 @property (readonly) uint32_t machPort;
 ```
 
-#### Discussion
+## Discussion
 
 The Mach port used by the receiver. Cast this value to a mach_port_t when using it with Mach system calls.
 

@@ -25,7 +25,7 @@ func memoryBarrier(scope: MTLBarrierScope)
 - (void) memoryBarrierWithScope:(MTLBarrierScope) scope;
 ```
 
-#### Discussion
+## Discussion
 
 Memory barriers ensure the relevant passes finish updating resources before starting the stages of subsequent commands that depend on those resources.
 

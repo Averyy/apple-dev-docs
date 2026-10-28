@@ -15,7 +15,7 @@ An error that indicates when you reach the maximum number of uploaded images.
 object MaximumNumberOfImagesReachedError
 ```
 
-#### Discussion
+## Discussion
 
 For information about the image limit, see [`Upload Image`](./upload-image.md).
 

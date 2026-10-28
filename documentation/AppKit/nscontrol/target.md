@@ -19,7 +19,7 @@ weak var target: AnyObject? { get set }
 @property (weak, nullable) id target;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `nil`, the application follows the responder chain looking for an object that can respond to the message. See the description of the [`NSActionCell`](../nsactioncell.md) class for details.
 

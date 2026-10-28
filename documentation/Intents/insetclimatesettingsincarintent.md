@@ -24,7 +24,7 @@ class INSetClimateSettingsInCarIntent
 @interface INSetClimateSettingsInCarIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 Automotive vendors can add support for this intent to an Intents extension that they ship with their automotive apps. When the user asks Siri to change a setting related to the vehicle’s climate control, Siri creates an [`INSetClimateSettingsInCarIntent`](./insetclimatesettingsincarintent.md) object and delivers it to the app’s Intents extension. You use the intent to identify which setting the user wants to change.
 
@@ -32,7 +32,7 @@ This class contains properties for multiple types of climate settings, but a giv
 
 The object that handles this intent must adopt the [`INSetClimateSettingsInCarIntentHandling`](./insetclimatesettingsincarintenthandling.md) protocol. Use this intent object to identify which setting changed and to create an [`INSetClimateSettingsInCarIntentResponse`](./insetclimatesettingsincarintentresponse.md) object indicating the results of changing the climate settings.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 
@@ -41,7 +41,7 @@ The following table lists additional attributes of this intent object:
 | Supported by | Siri Intents (in conjunction with CarPlay) |
 | Always requires unlocked device | Yes |
 
-##### Example Phrases
+### Example Phrases
 
 Users can ask Siri to change the climate settings in a vehicle in a variety of ways. The table below provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases.
 

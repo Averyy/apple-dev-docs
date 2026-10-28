@@ -24,7 +24,7 @@ func invalidate()
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 When you remove the display link from all run loop mode, the system releases it. The display link also releases the target.
 

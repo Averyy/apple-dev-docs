@@ -20,7 +20,7 @@ Create a new WebView with the specified URL.
 @preconcurrency init(url: URL?)
 ```
 
-#### Discussion
+## Discussion
 
 For example, you can create a WebView that displays one of two URLs depending on the state of a toggle:
 

@@ -17,7 +17,7 @@ Processor that masks a fixed set of token IDs to `-inf` so they can never be sam
 struct SuppressTokensProcessor
 ```
 
-#### Overview
+## Overview
 
 Port of `SuppressTokensLogitsProcessor` from Hugging Face `transformers`, which is driven by `suppress_tokens` in `generation_config.json`.
 

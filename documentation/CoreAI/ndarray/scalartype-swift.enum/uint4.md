@@ -19,7 +19,7 @@ A 4-bit unsigned integer.
 case uint4
 ```
 
-#### Discussion
+## Discussion
 
 Four-bit unsigned integers can represent values in the range [0, 15]. This type is used for quantization and in lookup tables.
 

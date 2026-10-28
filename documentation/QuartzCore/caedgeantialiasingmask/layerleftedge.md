@@ -22,7 +22,7 @@ static var layerLeftEdge: CAEdgeAntialiasingMask { get }
 kCALayerLeftEdge
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that the left edge of the receiver’s content should be antialiased.
 

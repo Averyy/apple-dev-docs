@@ -23,7 +23,7 @@ func ABMultiValueGetFirstIndexOfValue(_ multiValue: ABMultiValue!, _ value: CFTy
 extern CFIndex ABMultiValueGetFirstIndexOfValue(ABMultiValueRef multiValue, CFTypeRef value);
 ```
 
-#### Return Value
+## Return Value
 
 Location of `value` within `multiValue`, `-1` if `value` is not present in `multiValue`.
 

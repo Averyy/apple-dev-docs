@@ -20,7 +20,7 @@ set isScrollEnabled(value: boolean);
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 You can programmatically cause the map to scroll when scrolling isn’t in an enabled state by changing the map’s [`center`](./center.md) and [`region`](./region.md) coordinates.
 

@@ -24,7 +24,7 @@ var redSpeed: Float { get set }
 @property float redSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 The speed change is defined as the rate of change per second.
 

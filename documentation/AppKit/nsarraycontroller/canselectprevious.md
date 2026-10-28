@@ -19,7 +19,7 @@ var canSelectPrevious: Bool { get }
 @property (readonly) BOOL canSelectPrevious;
 ```
 
-#### Discussion
+## Discussion
 
 This property can be used by a binding to enable user interface items. This property is observable using key-value observing.
 

@@ -25,7 +25,7 @@ var acceptanceStatus: CKShare.ParticipantAcceptanceStatus { get }
 @property (assign, readonly) CKShareParticipantAcceptanceStatus acceptanceStatus;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the current state of the participant’s acceptance of the share. For a list of possible values, see [`CKShare.ParticipantAcceptanceStatus`](../participantacceptancestatus.md).
 

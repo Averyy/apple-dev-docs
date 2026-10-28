@@ -21,7 +21,7 @@ var textStyle: String? { get }
 @property (nonatomic, readonly, nullable) NSString * textStyle;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [Text Style Values](../text-style-values.md).
 

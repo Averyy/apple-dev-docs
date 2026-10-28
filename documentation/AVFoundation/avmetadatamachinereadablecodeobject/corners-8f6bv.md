@@ -19,7 +19,7 @@ The points defining the (x, 	y) locations of the corners.
 @property (readonly) NSArray<NSDictionary *> * corners;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an array of `CFDictionary` objects, each of which has been created from a `CGPoint` struct using the [`dictionaryRepresentation`](../../CoreFoundation/cgpoint/dictionaryrepresentation.md) function, representing the coordinates of the corners of the object with respect to the image in which it resides.
 

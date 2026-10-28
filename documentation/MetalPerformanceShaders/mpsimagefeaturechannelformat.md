@@ -24,7 +24,7 @@ enum MPSImageFeatureChannelFormat
 enum MPSImageFeatureChannelFormat : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 A pixel in an [`MPSImage`](./mpsimage.md) object may have many channels in it, sometimes many more than 4, that exceed the limit of what a [`MTLPixelFormat`](../Metal/mtlpixelformat.md) value can encode. The storage format for a single channel within a pixel can be given by the [`MPSImageFeatureChannelFormat`](./mpsimagefeaturechannelformat.md) type. The number of channels is defined by the [`featureChannels`](./mpsimage/featurechannels.md) property of an [`MPSImage`](./mpsimage.md) object. The size of the pixel is the size of the channel format multiplied by the number of feature channels. No padding is allowed, except to round out to a full byte.
 

@@ -26,11 +26,11 @@ Check that an expression always throws an error matching some condition, and thr
 @freestanding(expression) macro require<R>(_ comment: @autoclosure () -> Comment? = nil, sourceLocation: SourceLocation = #_sourceLocation, performing expression: () async throws -> R, throws errorMatcher: (any Error) async throws -> Bool) -> any Error
 ```
 
-#### Return Value
+## Return Value
 
 The error that was thrown by `expression`.
 
-#### Overview
+## Overview
 
 > **Throws**: An instance of [`ExpectationFailedError`](./expectationfailederror.md) if `expression` does not throw a matching error. The error thrown by `expression` is not rethrown.
 

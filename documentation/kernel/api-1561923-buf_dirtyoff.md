@@ -15,11 +15,11 @@ Get the starting offset of the dirty region associated with a buffer.
 uint32_t buf_dirtyoff(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Dirty offset (0 if not explicitly changed).
 
-#### Discussion
+## Discussion
 
 The dirty offset is zero unless someone explicitly calls buf_setdirtyoff() (which the kernel does not).
 

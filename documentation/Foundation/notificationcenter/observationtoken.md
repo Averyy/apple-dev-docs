@@ -21,7 +21,7 @@ A unique token representing a single observer registration in a notification cen
 struct ObservationToken
 ```
 
-#### Overview
+## Overview
 
 You receive the `ObservationToken` type as a return value from `addObserver(of:for:using:)` and related methods.
 

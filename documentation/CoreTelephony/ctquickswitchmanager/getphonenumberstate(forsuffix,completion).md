@@ -25,14 +25,14 @@ func phoneNumberState(forSuffix phoneNumberSuffix: String) async throws -> CTQui
 - (void) getPhoneNumberStateForSuffix:(NSString *) phoneNumberSuffix completion:(void (^)(CTQuickSwitchState state, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 - Parameters
 
   - phoneNumberSuffix: The last 4 digits of the phone number to check. The framework presents a person with a consent screen to provide this information to the requesting app. If a person denies consent, the app returns [`CTQuickSwitchState.notEnrolled`](../ctquickswitchstate/notenrolled.md) and no error value.
   - completionHandler: A completion handler the framework calls after processing the request. The parameters the framework passes to the completion handler indicate the [`CTQuickSwitchState`](../ctquickswitchstate.md) and an error value that indicates whether the request succeeded, failed, or ended in an unknown state.
 
-#### Discussion
+## Discussion
 
 The framework presents a person with a consent screen to provide this information to the requesting app. If someone denies consent, the app returns [`CTQuickSwitchState.notEnrolled`](../ctquickswitchstate/notenrolled.md) and no error.
 

@@ -16,7 +16,7 @@ A Boolean value that indicates whether the view accepts first responder status.
 @preconcurrency override dynamic var acceptsFirstResponder: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 An [`ARView`](../arview.md) instance sets this value to `true` by default to indicate that it does accept first responder status. See [`NSResponder`](../../AppKit/nsresponder.md) for more information about the responder chain.
 

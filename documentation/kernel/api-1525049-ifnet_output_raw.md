@@ -13,11 +13,11 @@
 errno_t ifnet_output_raw(ifnet_t interface, protocol_family_t protocol_family, mbuf_t packet);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Handles and outbond raw packet on the interface by calling any filters followed by the interface's output function. protocol_family may be zero. If the packet is from a specific protocol the protocol_family will be used to apply protocol filters. All interface filters will be applied to the outgoing packet. Processing, such as calling the protocol preoutput and interface framer functions will be bypassed. The packet will pass through the filters and be sent on the interface as is. ifnet_output_raw will always free the packet chain.
 

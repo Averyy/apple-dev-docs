@@ -25,7 +25,7 @@ var time: CMTime { get set }
 @property (nonatomic, readonly) CMTime time;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is [`invalid`](../../CoreMedia/cmtime/invalid.md) if you initialized the event with a date instead of a time.
 

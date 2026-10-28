@@ -15,7 +15,7 @@ Called when a frame’s scripting object for a page is available. Use the [`webV
 - (void) webView:(WebView *) webView windowScriptObjectAvailable:(WebScriptObject *) windowScriptObject;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked before the page is actually loaded.
 

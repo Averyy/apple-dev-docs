@@ -25,11 +25,11 @@ class func confirmationRequired(with locationSearchTypeToConfirm: INLocationSear
 + (instancetype) confirmationRequiredWithLocationSearchTypeToConfirm:(INLocationSearchType) locationSearchTypeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INLocationSearchTypeResolutionResult`](../inlocationsearchtyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you cannot resolve the parameter to the specified type and want the user to confirm the use of a different type. Do not use this method to resolve location types if you do not support searching by location.
 

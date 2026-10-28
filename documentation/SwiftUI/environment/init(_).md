@@ -31,7 +31,7 @@ init(_ objectType: Value.Type) where Value : AnyObject, Value : Observable
 init<T>(_ objectType: T.Type) where Value == T?, T : AnyObject, T : Observable
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this initializer directly. Instead, declare a property with the [`Environment`](../environment.md) property wrapper, and provide the key path of the environment value that the property should reflect:
 

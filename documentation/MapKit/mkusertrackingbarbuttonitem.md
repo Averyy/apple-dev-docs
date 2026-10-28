@@ -22,7 +22,7 @@ class MKUserTrackingBarButtonItem
 @interface MKUserTrackingBarButtonItem : UIBarButtonItem
 ```
 
-#### Overview
+## Overview
 
 Tapping the button lets the user toggles between modes for displaying the map with and without the current heading applied. The button also reflects the current user tracking mode if set elsewhere. This bar button item is associated to a single map view.
 

@@ -23,7 +23,7 @@ var highlightStateUpdateHandler: ((UIMenuElement, Bool) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^)(UIMenuElement *, _Bool) highlightStateUpdateHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this handler whenever a menu element transitions between highlighted and unhighlighted states. Highlight events include pointer hover, touch down, keyboard navigation, and focus changes.
 

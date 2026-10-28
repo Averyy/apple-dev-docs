@@ -23,11 +23,11 @@ mutating func addTaskUnlessCancelled(name: String?, priority: TaskPriority? = ni
 
 Available when `Failure` conforms to `Error`.
 
-#### Return Value
+## Return Value
 
 `true` if the child task was added to the group; otherwise `false`.
 
-#### Discussion
+## Discussion
 
 This method doesn’t throw an error, even if the child task does. Instead, the corresponding call to `ThrowingTaskGroup.next()` rethrows that error.
 

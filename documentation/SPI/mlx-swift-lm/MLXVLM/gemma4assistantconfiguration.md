@@ -17,7 +17,7 @@ Configuration for the Gemma 4 MTP speculative drafter.
 struct Gemma4AssistantConfiguration
 ```
 
-#### Overview
+## Overview
 
 Mirrors mlx-vlm’s `Gemma4AssistantConfig` (`mlx_vlm/speculative/drafters/gemma4_assistant/config.py` at SHA d49d428). Decodes from a HF `config.json` shape.
 

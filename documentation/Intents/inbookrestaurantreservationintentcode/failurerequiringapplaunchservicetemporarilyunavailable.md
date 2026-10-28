@@ -16,7 +16,7 @@ case failureRequiringAppLaunchServiceTemporarilyUnavailable
 INBookRestaurantReservationIntentCodeFailureRequiringAppLaunchServiceTemporarilyUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when your Intents extension is unable to contact your service and save the reservation data. Maps launches your app and passes it to the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object from your response so that you can try to complete the booking there.
 

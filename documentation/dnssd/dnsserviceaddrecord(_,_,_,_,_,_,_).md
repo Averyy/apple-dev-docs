@@ -25,11 +25,11 @@ func DNSServiceAddRecord(_ sdRef: DNSServiceRef!, _ RecordRef: UnsafeMutablePoin
 DNSServiceErrorType DNSServiceAddRecord(DNSServiceRef sdRef, DNSRecordRef*RecordRef, DNSServiceFlags flags, uint16_t rrtype, uint16_t rdlen, const void *rdata, uint32_t ttl);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success, otherwise returns an error code indicating the error that occurred (the RecordRef is not initialized).
 
-#### Discussion
+## Discussion
 
 The name of the record will be the same as the registered service’s name. The record can later be updated or deregistered by passing the RecordRef initialized by this function to [`DNSServiceUpdateRecord(_:_:_:_:_:_:)`](./dnsserviceupdaterecord%28_,_,_,_,_,_%29.md) or [`DNSServiceRemoveRecord(_:_:_:)`](./dnsserviceremoverecord%28_,_,_%29.md).
 

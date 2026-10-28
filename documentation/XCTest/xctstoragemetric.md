@@ -24,7 +24,7 @@ class XCTStorageMetric
 @interface XCTStorageMetric : NSObject
 ```
 
-#### Overview
+## Overview
 
 `XCTStorageMetric` records the amount of data logically written to the disk in the block argument to [`measure(metrics:block:)`](./xctestcase/measure%28metrics,block%29.md). The logical size of data written is the number of bytes in all requests to write to the disk. The logical size can be different from the size of physically written data, based on how the file system organizes data, and the fact that the disk controller replaces content in fixed-size blocks.
 

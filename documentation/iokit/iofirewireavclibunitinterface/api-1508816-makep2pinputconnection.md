@@ -16,7 +16,7 @@ Increments the point-to-point connection count of a unit input plug.
 IOReturn (*makeP2PInputConnection)(void *self, UInt32 inputPlug, UInt32 chan);
 ```
 
-#### Discussion
+## Discussion
 
 This function is only available if the interface version is > 3.
 

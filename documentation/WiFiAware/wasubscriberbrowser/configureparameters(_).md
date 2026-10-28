@@ -17,7 +17,7 @@ Returns the parameters to use to configure the Wi-Fi Aware subscriber and the su
 func configureParameters(_ parameters: NWParameters?) -> NWParameters
 ```
 
-#### Return Value
+## Return Value
 
 A new `NWParameters`, updated to include the Wi-Fi Aware parameters.
 

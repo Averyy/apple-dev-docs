@@ -25,7 +25,7 @@ func previewingContext(_ previewingContext: any UIViewControllerPreviewing, comm
 - (void) previewingContext:(id<UIViewControllerPreviewing>) previewingContext commitViewController:(UIViewController *) viewControllerToCommit;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to configure and present the commit (pop) view controller, in a way that is appropriate for your app.
 

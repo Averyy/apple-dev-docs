@@ -17,11 +17,11 @@ Creates and returns a text provider built from the specified format string.
 convenience init(format: String, _ args: any CVarArg...)
 ```
 
-#### Return Value
+## Return Value
 
 A text provider object built from the specified arguments.
 
-#### Discussion
+## Discussion
 
 Use this method to create a text provider comprising text and the content of other objects, including other text providers.
 

@@ -5,7 +5,7 @@
 
 Sign Mac code for distribution using either Xcode or command-line tools.
 
-#### Overview
+## Overview
 
 Before shipping a software product for the Mac, you need to first create distribution-signed code, which is code that you package up and submit to either the Mac App Store or the notary service.  The way you do this depends on the type of your product and how you build it:
 
@@ -17,7 +17,7 @@ When you have distribution-signed code, package it for distribution. For more in
 
 > **Note**: If you use a third-party developer tool to build your app, consult its documentation for advice specific to that tool.
 
-#### Export an app from Xcode
+## Export an app from Xcode
 
 If your product is a standalone app that you build with Xcode, follow these steps to export a distribution-signed app:
 
@@ -46,7 +46,7 @@ To export a distribution-signed app from the command line:
 
 For more information about `xcodebuild`, see its man (manual) page.  For information about the keys supported by the export options property list, run `xcodebuild` with the `-help` argument.
 
-#### Export a non-app product built with Xcode
+## Export a non-app product built with Xcode
 
 To archive a non-app product in Xcode, follow the steps in “Export an app from Xcode” above.
 
@@ -91,7 +91,7 @@ The `Products` directory contains two items: the daemon itself (`Daemon`) and th
 
 > ❗ **Important**: When you copy code, use `ditto` rather than `cp` because `ditto` preserves symlinks, which are critical to the structure of Mac frameworks. For more information on this structure, see [Placing content in a bundle](../BundleResources/placing-content-in-a-bundle.md). Symlinks are also useful when dealing with nonstandard code structures.  For more details, see [Embedding nonstandard code structures in a bundle](./embedding-nonstandard-code-structures-in-a-bundle.md).
 
-#### Identify the code to sign
+## Identify the code to sign
 
 To sign your product, first identify each code item that you need to sign. For example, in the `DaemonWithApp` product, there are four code items: `ConfigApp.app`, `Core.framework`, `Share.appex`, and `Daemon`.
 
@@ -126,7 +126,7 @@ In some cases, it might not be obvious whether the code item is a main executabl
 
 `Core.framework` isn’t a main executable, but `Share.appex` is.
 
-#### Determine the signing order
+## Determine the signing order
 
 Sign code from the inside out.  That is, if component `A` depends on component `B`, sign `B` before you sign `A`.  For the `DaemonWithApp` example, sign the components in the following order:
 
@@ -136,7 +136,7 @@ Sign code from the inside out.  That is, if component `A` depends on component `
 
 The app and daemon are independent, so you can sign them in either order.
 
-#### Configure your entitlements
+## Configure your entitlements
 
 A code signature can include *entitlements* — key-value pairs that grant an executable permission to use a service or technology. When macOS runs a process, it grants that process the entitlements that its executable’s code signature claims. For more information, see [`Entitlements`](../BundleResources/entitlements.md).
 
@@ -175,7 +175,7 @@ If you use the entitlements from a development-signed version of your program to
 
 For any other entitlement, see the documentation for that specific entitlement in [`Entitlements`](../BundleResources/entitlements.md).
 
-#### Configure your designated requirements
+## Configure your designated requirements
 
 A code signature includes a designated requirement (DR) that macOS uses to identify the code.  For example, macOS uses the DR to track access to privacy-protected resources like the microphone.  For more information, see [TN3127: Inside Code Signing: Requirements](../Technotes/tn3127-inside-code-signing-requirements.md).
 
@@ -185,7 +185,7 @@ To share access to privacy-protected resources across variants, sign the variant
 
 If you decide to use a custom DR, save it to a requirements file.  Mutually compatible DRs include a code-signing identifier.  If your product has multiple code items, copy this requirements file for each code item and update the code-signing identifier to match that of the code.
 
-#### Embed distribution provisioning profiles
+## Embed distribution provisioning profiles
 
 For security reasons, a provisioning profile needs to authorize most entitlement claims. For example, the `keychain-access-groups` entitlement requires authorization by a provisioning profile. This stops other developers from distributing apps that impersonate your app to access its confidential keychain items.
 
@@ -214,7 +214,7 @@ Modifying the app in this way breaks the seal on its code signature.  You re-sig
 
 > ❗ **Important**: If you build your product with Xcode, you might find that Xcode embeds a provisioning profile within your bundle.  This is a development provisioning profile.  Replace it with a distribution provisioning profile.
 
-#### Confirm your code-signing identity
+## Confirm your code-signing identity
 
 The code you copy from the Xcode archive is typically signed using a development code-signing identity.
 
@@ -245,7 +245,7 @@ The `-p codesigning` argument filters for code-signing identities. The `-v` argu
 
 Each output line includes a SHA-1 hash that uniquely identifies the identity. If you have multiple identities with the same name, sign your code using this hash rather than the identity name.
 
-#### Sign each code item
+## Sign each code item
 
 For all code types, the basic `codesign` command looks like the following:
 
@@ -290,7 +290,7 @@ to-be-signed/Daemon: replacing existing signature
 
 > ❗ **Important**:  Don’t run `codesign` using `sudo` because `codesign` relies on information in your user account when it signs code. Using tools like `sudo` to change user accounts causes problems when `codesign` tries to access this information.
 
-#### Avoid deep code signing
+## Avoid deep code signing
 
 Don’t pass the `--deep` option to `codesign` when you sign code.  This option is helpful in some specific circumstances (for example, in verifying a code signature), but it causes the following problems when signing a complex product:
 

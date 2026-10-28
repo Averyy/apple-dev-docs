@@ -15,11 +15,11 @@ Primary initializer for all variants of memory descriptors.
 static OSPtr<IOMemoryDescriptor> withOptions(void *buffers, UInt32 count, UInt32 offset, task_t task, IOOptionBits options, IOMapper *mapper);
 ```
 
-#### Return Value
+## Return Value
 
 The created IOMemoryDescriptor on success, to be released by the caller, or zero on failure.
 
-#### Discussion
+## Discussion
 
 This method creates and initializes an IOMemoryDescriptor for memory it has three main variants: Virtual, Physical & mach UPL. These variants are selected with the options parameter, see below. This memory descriptor needs to be prepared before it can be used to extract data from the memory described.
 

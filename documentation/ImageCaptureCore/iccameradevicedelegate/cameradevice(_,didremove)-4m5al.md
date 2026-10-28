@@ -24,7 +24,7 @@ func cameraDevice(_ camera: ICCameraDevice, didRemove items: [ICCameraItem])
 - (void) cameraDevice:(ICCameraDevice *) camera didRemoveItems:(NSArray<ICCameraItem *> *) items;
 ```
 
-#### Discussion
+## Discussion
 
 The objects in items are instances of the ICCameraFile class.
 

@@ -19,7 +19,7 @@ func goForward()
 - (void) goForward;
 ```
 
-#### Discussion
+## Discussion
 
 This method works by changing the current item to the item that follows it. This method raises an [`internalInconsistencyException`](../../Foundation/nsexceptionname/internalinconsistencyexception.md) exception if no item follows the current item.
 

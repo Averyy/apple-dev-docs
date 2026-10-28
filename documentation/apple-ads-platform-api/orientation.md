@@ -21,7 +21,7 @@ string Orientation
 - `LANDSCAPE`: The asset is wider than it is tall (width > height).
 - `SQUARE`: The asset has equal width and height.
 
-#### Discussion
+## Discussion
 
 The `Orientation` classifies the aspect ratio of an image or video asset. The system determines the value from the asset’s pixel dimensions when you upload the asset, and returns it as part of the [`Asset`](./asset.md) record.
 

@@ -23,7 +23,7 @@ var DISPATCH_VNODE_RENAME: Int32 { get }
 #define DISPATCH_VNODE_RENAME
 ```
 
-#### Discussion
+## Discussion
 
 The file-system object was renamed in the namespace.
 

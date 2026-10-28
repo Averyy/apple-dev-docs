@@ -9,13 +9,13 @@ Delete the specified article from your channel.
 **Availability**:
 - Apple News API 1.0+
 
-#### Discussion
+## Discussion
 
 If the article is viewed on a device, it may take some time for the News app to refresh the cache so the article disappears on that device.
 
 > ❗ **Important**:  Once you delete the specified article, the action is irrevocable. If you want to remove the article temporarily, use the update operation with `isHidden` set to `true`. See [`Update an Article`](./post-articles-_articleid_.md) and [`Update Article Metadata Fields`](./update-article-metadata-fields.md).
 
-##### Example
+### Example
 
 **Request**:
 

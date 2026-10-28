@@ -23,11 +23,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized timing parameter object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Use this method to create a timing curve based on the default Core Animation timing function.
 

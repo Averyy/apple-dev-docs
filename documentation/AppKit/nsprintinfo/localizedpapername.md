@@ -19,7 +19,7 @@ var localizedPaperName: String? { get }
 @property (copy, readonly, nullable) NSString * localizedPaperName;
 ```
 
-#### Discussion
+## Discussion
 
 This is typically different from the value of [`paperName`](./papername.md), which is almost never suitable for presentation to the user.
 

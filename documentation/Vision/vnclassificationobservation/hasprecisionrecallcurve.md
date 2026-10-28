@@ -24,7 +24,7 @@ var hasPrecisionRecallCurve: Bool { get }
 @property (nonatomic, assign, readonly) BOOL hasPrecisionRecallCurve;
 ```
 
-#### Discussion
+## Discussion
 
 Precision refers to the percentage of your classification results that are relevant, while recall refers to the percentage of total relevant results correctly classified.
 

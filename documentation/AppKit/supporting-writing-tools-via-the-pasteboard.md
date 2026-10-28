@@ -5,7 +5,7 @@
 
 Adopt a simplified version of the Writing Tools experience in a custom view using the pasteboard and macOS services.
 
-#### Overview
+## Overview
 
 Writing Tools works automatically with [`NSTextView`](./nstextview.md) in AppKit, but you can also use it with any custom subclass of [`NSView`](./nsview.md) that has text. To use Writing Tools with a custom view, you have to write some additional code to transfer text between your view and the Writing Tools feature. You also have to provide a contextual menu for your view, which AppKit modifies to allow people to launch the Writing Tools UI.
 
@@ -13,7 +13,7 @@ You can add Writing Tools support to both read-only and editable views. When you
 
 > **Note**: If you display text using [`NSTextView`](./nstextview.md), you don’t need to do additional work to support Writing Tools, but you can customize your app’s behavior when the feature is active. For information about how to customize your app’s behavior, see [Customizing Writing Tools behavior for AppKit views](./customizing-writing-tools-behavior-for-system-views.md).
 
-##### Add a contextual menu to your custom view
+### Add a contextual menu to your custom view
 
 People launch the Writing Tools UI through interactions with your view’s contextual menu. If your view doesn’t currently have a contextual menu, add one and populate it with app-specific commands. For example, you might add commands to cut, copy, or paste text. When you display the menu, the system automatically adds Writing Tools–specific commands to it, based on the level of support your app provides.
 
@@ -34,7 +34,7 @@ self.menu?.addItem(NSMenuItem(title: "Paste",
 
 If you want to customize your view’s contextual menu before you display it, implement the [`menu(for:)`](./nsview/menu%28for%29.md) method to return the menu you want for appropriate events. You can also display a contextual menu programmatically using the menu’s [`popUpContextMenu(_:with:for:)`](./nsmenu/popupcontextmenu%28_,with,for%29.md) method.
 
-##### Provide a requester object to coordinate interactions
+### Provide a requester object to coordinate interactions
 
 The AppKit support for Writing Tools in custom views relies on the same infrastructure that apps use to offer services from the Services menu. Before displaying your view’s contextual menu, AppKit calls the view’s [`validRequestor(forSendType:returnType:)`](./nsresponder/validrequestor%28forsendtype,returntype%29.md) method to determine if your view supports specific types of text data. If you do, you return an [`NSServicesMenuRequestor`](./nsservicesmenurequestor.md) object from that method to enable the Writing Tools feature for your view. AppKit then automatically adds commands to your view’s contextual menu to let someone launch the feature’s UI.
 
@@ -56,7 +56,7 @@ override func validRequestor(forSendType
 
 AppKit uses your requestor object to fetch your view’s selected text, and to deliver the rewritten text back to you. Adopt the [`NSServicesMenuRequestor`](./nsservicesmenurequestor.md) protocol in the object you use to manage the text selection for your view. You can adopt this protocol in your view, or in a separate object you use to manage the backing store for that view.
 
-##### Write your view’s selected text to the pasteboard
+### Write your view’s selected text to the pasteboard
 
 The requestor object you provide to AppKit is responsible for writing your custom view’s text selection to the pasteboard. When someone engages a Writing Tools feature for your view, AppKit calls your requestor object’s [`writeSelection(to:types:)`](./nsservicesmenurequestor/writeselection%28to,types%29.md) method to get the current text. Write text to the pasteboard in the format that your view’s [`validRequestor(forSendType:returnType:)`](./nsresponder/validrequestor%28forsendtype,returntype%29.md) method indicates you support. For example, if you provided a requestor object for the [`rtf`](./nspasteboard/pasteboardtype/rtf.md) type, write data to the pasteboard in the RTF format. You don’t need to write multiple data formats to the pasteboard to ensure interoperability with other apps. For Writing Tools operations, AppKit provides you with a dedicated pasteboard that’s private to the operation.
 
@@ -70,7 +70,7 @@ func writeSelection(to pboard: NSPasteboard,
 }
 ```
 
-##### Read updated text from the pasteboard
+### Read updated text from the pasteboard
 
 If your view contains editable text, implement the [`readSelection(from:)`](./nsservicesmenurequestor/readselection%28from%29.md) method in your requestor object to integrate any rewritten content back into your view. AppKit calls the [`readSelection(from:)`](./nsservicesmenurequestor/readselection%28from%29.md) method after the person accepts any Writing Tools changes. In your implementation, read the updated text from the provided pasteboard and replace your view’s current text selection with the new text.
 
@@ -78,7 +78,7 @@ If your view contains editable text, implement the [`readSelection(from:)`](./ns
 
 Writing Tools calls your view’s [`readSelection(from:)`](./nsservicesmenurequestor/readselection%28from%29.md) method first to handle text insertions and replacements. If you implement that method, insert the provided text, replacing any previous text as needed. If you don’t implement that method in your view, Writing Tools calls the [`insertText(_:replacementRange:)`](./nstextinputclient/inserttext%28_,replacementrange%29.md) method instead.
 
-##### Customize the anchor placement for the Writing Tools popover
+### Customize the anchor placement for the Writing Tools popover
 
 When AppKit displays the Writing Tools UI, it anchors the popover to your entire view. To change the anchor point, you need to supply a new anchor point for your view. For example, you might want to anchor the Writing Tools UI to the rectangle that contains the current text selection instead.
 

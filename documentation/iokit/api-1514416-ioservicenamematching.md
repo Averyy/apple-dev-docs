@@ -23,11 +23,11 @@ func IOServiceNameMatching(_ name: UnsafePointer<CChar>!) -> CFMutableDictionary
 CFMutableDictionaryRef IOServiceNameMatching(const char *name);
 ```
 
-#### Return Value
+## Return Value
 
 The matching dictionary created, is returned on success, or zero on failure. The dictionary is commonly passed to IOServiceGetMatchingServices or IOServiceAddNotification which will consume a reference, otherwise it should be released with CFRelease by the caller.
 
-#### Discussion
+## Discussion
 
 A common matching criteria for IOService is based on its name. IOServiceNameMatching will create a matching dictionary that specifies an IOService with a given name. Some IOServices created from the device tree will perform name matching on the standard compatible, name, model properties.
 

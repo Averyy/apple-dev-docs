@@ -16,7 +16,7 @@ Values that represent the types of operation it’s possible to request evaluati
 @nonexhaustive enum OperationCategory
 ```
 
-#### Discussion
+## Discussion
 
 Selecting the most relevant category is important for usage transparency information and may also have an affect on the behavior of the evaluation and affect the [`InsightEvaluation`](../insightevaluation.md) values.
 

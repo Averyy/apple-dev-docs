@@ -27,7 +27,7 @@ func prediction<Label>(from input: Self.Input) async throws -> ClassificationDis
 func prediction<S, Label>(from input: S) async throws -> [ClassificationDistribution<Label>] where S : Sequence, Label : Hashable, Self.Input == S.Element, Self.Output == ClassificationDistribution<Label>
 ```
 
-#### Return Value
+## Return Value
 
 A classification array.
 

@@ -18,7 +18,7 @@ nonisolated
 func defersSystemGestures(on edges: Edge.Set) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The following code defers the vertical screen edges system gestures of a given canvas.
 

@@ -6,7 +6,7 @@
 
 A string holding a language tag.
 
-#### Overview
+## Overview
 
 A `NULL`-terminated string of UTF-8 characters holding a language tag complying with RFC 4646 (BCP 47).
 

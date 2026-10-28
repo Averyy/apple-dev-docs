@@ -21,7 +21,7 @@ A type of dispatch source for monitoring write operations on a file descriptor.
 #define DISPATCH_SOURCE_TYPE_WRITE
 ```
 
-#### Discussion
+## Discussion
 
 A dispatch source that monitors a file descriptor for available buffer space to write bytes. The handle is a file descriptor (int). The mask is unused (pass zero for now).
 

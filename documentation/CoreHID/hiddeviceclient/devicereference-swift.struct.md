@@ -15,7 +15,7 @@ A reference to a HID device on the system.
 struct DeviceReference
 ```
 
-#### Overview
+## Overview
 
 A device reference exists for every discovered device. Use it to create an [`HIDDeviceClient`](../hiddeviceclient.md), and maintain the reference until someone removes the device.
 

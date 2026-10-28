@@ -21,7 +21,7 @@ Returns a copy of the receiver with the destination positions replaced by a spec
 - (instancetype) gridByReplacingDestPositions:(const vector_float2 *) destPositions;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

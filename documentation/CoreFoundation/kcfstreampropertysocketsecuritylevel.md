@@ -25,7 +25,7 @@ let kCFStreamPropertySocketSecurityLevel: CFString
 extern CFStringRef const kCFStreamPropertySocketSecurityLevel;
 ```
 
-#### Discussion
+## Discussion
 
 See [CFStream Socket Security Level Constants](./cfstream-socket-security-level-constants.md) for specific security level constants to use.
 

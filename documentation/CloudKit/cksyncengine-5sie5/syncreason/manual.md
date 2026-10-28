@@ -21,7 +21,7 @@ A manual sync operation.
 case manual
 ```
 
-#### Discussion
+## Discussion
 
 The sync engine uses this reason only when your app invokes the [`fetchChanges(_:)`](../fetchchanges%28_%29.md) and [`sendChanges(_:)`](../sendchanges%28_%29.md) methods.
 

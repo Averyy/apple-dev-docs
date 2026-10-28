@@ -17,7 +17,7 @@ An error that indicates the framework can’t create a Store and Forward session
 case storeAndForwardNotAllowed
 ```
 
-#### Discussion
+## Discussion
 
 - There’s no previous online session.
 - The person restarted their phone  after the online session creation, and they now require a new online session.

@@ -17,7 +17,7 @@ Motion types for each particle in the body.
 var motionTypes: PerClothVertexData<ClothBodyComponent.ParticleMotionType>
 ```
 
-#### Discussion
+## Discussion
 
 By default, the motion types are set to `.dynamic`.
 

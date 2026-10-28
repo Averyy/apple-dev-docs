@@ -15,7 +15,7 @@ Get the count of camera region anchors in a collection.
 extern size_t ar_camera_region_anchors_get_count(ar_camera_region_anchors_t camera_region_anchors);
 ```
 
-#### Return Value
+## Return Value
 
 The number of camera region anchors in the collection.
 

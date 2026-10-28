@@ -25,7 +25,7 @@ class var linkedModelFileName: MLParameterKey { get }
 @property (class, nonatomic, readonly) MLParameterKey * linkedModelFileName;
 ```
 
-#### Discussion
+## Discussion
 
 The value type for the [`linkedModelFileName`](./linkedmodelfilename.md) key is a [`String`](../../Swift/string.md).
 

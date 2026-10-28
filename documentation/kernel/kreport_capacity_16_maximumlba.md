@@ -13,7 +13,7 @@
 #define kREPORT_CAPACITY_16_MaximumLBA
 ```
 
-#### Discussion
+## Discussion
 
 Maximum LBA supported via READ CAPACITY 16 command.
 

@@ -23,7 +23,7 @@ var estimatedPropertiesExpectingUpdates: UITouch.Properties { get }
 @property (nonatomic, readonly) UITouchProperties estimatedPropertiesExpectingUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a bitmask of constants indicating which touch properties could not be reported immediately, and for which an update is expected later. When this property contains a non empty set, you can expect UIKit to call the [`touchesEstimatedPropertiesUpdated(_:)`](../uiresponder/touchesestimatedpropertiesupdated%28_%29.md) method of your responder or gesture recognizer at a later time with the updated values for the given properties. Attach the value in the [`estimationUpdateIndex`](./estimationupdateindex.md) property to your app’s copy of the touch data. When UIKit calls the [`touchesEstimatedPropertiesUpdated(_:)`](../uiresponder/touchesestimatedpropertiesupdated%28_%29.md) method later, use the estimation update index of the new touch to locate and update your app’s copy of the touch data.
 

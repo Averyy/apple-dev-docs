@@ -21,7 +21,7 @@ Measure the elapsed time to execute a closure.
 func measure(_ work: () throws -> Void) rethrows -> Self.Instant.Duration
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
   let clock = ContinuousClock()

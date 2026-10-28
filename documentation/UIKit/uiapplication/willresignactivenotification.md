@@ -24,7 +24,7 @@ class let willResignActiveNotification: NSNotification.Name
 extern NSNotificationName const UIApplicationWillResignActiveNotification;
 ```
 
-#### Discussion
+## Discussion
 
 An app is active when it is receiving events. An active app can be said to have focus. It gains focus after being launched, loses focus when an overlay window pops up or when the device is locked, and gains focus when the device is unlocked.
 

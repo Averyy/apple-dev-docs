@@ -24,7 +24,7 @@ let kCIInputBrightnessKey: String
 extern NSString * const kCIInputBrightnessKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for a scalar value ([`NSNumber`](../Foundation/nsnumber.md)) that specifies a brightness level.
 

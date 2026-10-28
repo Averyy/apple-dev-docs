@@ -24,11 +24,11 @@ class UICollectionViewLayoutAttributes
 @interface UICollectionViewLayoutAttributes : NSObject
 ```
 
-#### Overview
+## Overview
 
 Layout objects create instances of this class when asked to do so by the collection view. In turn, the collection view uses the layout information to position cells and supplementary views inside its bounds.
 
-##### Subclassing notes
+### Subclassing notes
 
 In most cases, you use this class as-is. If you want to supplement the base layout attributes with custom layout attributes, you can subclass and define whatever properties you want to store the additional layout data. Because layout attribute objects may be copied by the collection view, make sure your subclass conforms to the [`NSCopying`](../Foundation/nscopying.md) protocol by implementing any methods appropriate for copying your custom attributes to new instances of your subclass. In addition to defining your subclass, your [`UICollectionReusableView`](./uicollectionreusableview.md) objects need to implement the [`apply(_:)`](./uicollectionreusableview/apply%28_%29.md) method so that they can apply any custom attributes at layout time.
 

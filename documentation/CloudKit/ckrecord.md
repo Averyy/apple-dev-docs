@@ -30,7 +30,7 @@ class CKRecord
 - [Designing and Creating a CloudKit Database](./designing-and-creating-a-cloudkit-database.md)
 - [Encrypting User Data](./encrypting-user-data.md)
 
-#### Overview
+## Overview
 
 Records are the fundamental objects that manage data in CloudKit. You can define any number of record types for your app, with each record type corresponding to a different type of information. Within a record type, you then define one or more fields, each with a name and a value. Records can contain simple data types, such as strings and numbers, or more complex types, such as geographic locations or pointers to other records.
 
@@ -40,7 +40,7 @@ An important step in using CloudKit is defining the record types your app suppor
 
 Although records behave like dictionaries, there are limitations to the types of values you can assign to keys. The following are the object types that the `CKRecord` class supports. Attempting to specify objects of any other type results in failure. Fields of all types are searchable unless otherwise noted.
 
-##### Supported Data Types
+### Supported Data Types
 
 `CKRecord` fields support the following data types:
 
@@ -55,23 +55,23 @@ Although records behave like dictionaries, there are limitations to the types of
 
 > ❗ **Important**: To ensure the speed of fetching and saving records, the data that a record stores must not exceed 1 MB. Assets don’t count toward this limit, but all other data types do.
 
-##### Defining Records
+### Defining Records
 
 The process for defining your record types depends entirely on your app and the data you’re trying to represent. It’s best to design records that encapsulate data for one unit of information. For example, you might use one record type to store an employee’s name, job title, and date of hire, and use a separate record type to store the employee’s address information. Using different record types lets you manage, manipulate, and validate the two types of information separately.
 
 Use fields that contain [`CKRecord.Reference`](./ckrecord/reference.md) objects to establish relationships between different types of records. After you define your record types, use the iCloud Dashboard to set them up. During development, you can also create new record types programmatically.
 
-##### Indexing the Fields of a Record
+### Indexing the Fields of a Record
 
 Indexes make it possible to search the contents of your records efficiently. During development, the server indexes all fields with data types it can use in the predicate of a query. This automatic indexing makes it easier to experiment with queries during development, but the indexes require space in a database, and require time to generate and maintain.
 
 To manage the indexing behavior of your records in the production environment, use CloudKit Dashboard. When migrating your schema from the development environment to the production environment, enable indexing only for the fields that your app uses in queries, and disable it for all other fields.
 
-##### Customizing Records
+### Customizing Records
 
 Use this class as-is to manage data coming from or going to the server, and don’t subclass it.
 
-##### Storing Records Locally
+### Storing Records Locally
 
 If you store records in a local database, use the [`encodeSystemFields(with:)`](./ckrecord/encodesystemfields%28with%29.md) method to encode and store the record’s metadata. The metadata contains the record ID and the change tag, which you need later to sync records in a local database with those in CloudKit.
 

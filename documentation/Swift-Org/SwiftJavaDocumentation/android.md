@@ -10,9 +10,9 @@ framework: "Swift-Org/SwiftJavaDocumentation"
 
 Hints and patterns for using swift-java on Android.
 
-#### Overview
+## Overview
 
-##### R8/Proguard Rules
+### R8/Proguard Rules
 
 Since swift-java uses JNI and reflection APIs, the R8 optimizer must be told to keep the wrapped types. Otherwise they are stripped from the APK/AAR and calls into them crash at runtime.
 
@@ -25,7 +25,7 @@ For example, if your library’s package is `org.swift.exampleapp`, add the foll
 -keep interface org.swift.exampleapp.** { *; }
 ```
 
-##### Android Core Library Desugaring
+### Android Core Library Desugaring
 
 If you are using [Core Library Desugaring](https://developer.android.com/studio/write/java8-support) in your Android project, enable the `AndroidCoreLibraryDesugaring` trait so that SwiftJava can find classes that desugaring relocates to a `j$` package (for example, `java.util.Optional` becomes `j$.util.Optional`):
 
@@ -47,7 +47,7 @@ let package = Package(
 
 Enabling the trait does **not** bake a fixed `java.*` -> `j$.*` mapping into the binary. Instead it enables a runtime probe: the first time SwiftJava needs to resolve a desugarable class, it checks – once per class name, cached for the life of the process – whether the `j$` name is actually loadable in this process, and falls back to the original `java.*` name otherwise.
 
-##### Android SDK Availability
+### Android SDK Availability
 
 When wrapping the Android SDK (`android.jar`) you can provide the optional `--android-api-version-file` option to `swift-java wrap-java`.
 

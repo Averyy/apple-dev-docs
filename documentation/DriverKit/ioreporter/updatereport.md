@@ -18,11 +18,11 @@ Produce standard reply to IOService::updateReport()
 IOReturn updateReport(IOReportChannelList *channelList, IOReportConfigureAction action, uint32_t & elementCount, uint8_t * & buffer, size_t & capacity);
 ```
 
-#### Return Value
+## Return Value
 
 Appropriate [`IOReturn`](../ioreturn.md) code
 
-#### Discussion
+## Discussion
 
 This method searches channelList for channels tracked by this reporter, writes the corresponding data into ‘destination’, and updates ‘result’.  It should be possible to pass a given set of [`UpdateReport`](../ioservice/updatereport.md) arguments to any and all reporters as well as to `super::updateReport()` and get the right result.
 

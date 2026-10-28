@@ -5,7 +5,7 @@
 
 A bad argument to a system call terminated the process.
 
-#### Overview
+## Overview
 
 System calls are low-level interfaces that ask the operating system to perform an action. This signal indicates that the requested system call doesn’t exist.
 

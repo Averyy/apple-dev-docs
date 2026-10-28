@@ -20,7 +20,7 @@ var requiresSIP: Bool { get set }
 @property (nonatomic, assign) BOOL requiresSIP;
 ```
 
-#### Discussion
+## Discussion
 
 When set to `true`, the assessment session will only start if System Integrity Protection is enabled on the device. Defaults to `false`.
 

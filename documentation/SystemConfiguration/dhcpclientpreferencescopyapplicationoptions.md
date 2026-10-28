@@ -15,7 +15,7 @@ Returns the list of options for the specified application ID.
 UInt8 *DHCPClientPreferencesCopyApplicationOptions(CFStringRef applicationID, CFIndex *count);
 ```
 
-#### Return Value
+## Return Value
 
 The list of options for the specified application ID, or `NULL` if no options are defined or if an error occurred. Use free(3) to release a non-`NULL` return value.
 

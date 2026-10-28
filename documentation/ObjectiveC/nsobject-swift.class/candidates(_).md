@@ -19,11 +19,11 @@ func candidates(_ sender: Any!) -> [Any]!
 - (NSArray *) candidates:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 An array of candidates. The returned array should be an autoreleased object.
 
-#### Discussion
+## Discussion
 
 An input method should look up its currently composed string and return a list of candidate strings that the composed string might map to.
 

@@ -20,7 +20,7 @@ The pixel format and encoding of a texture.
 struct Format
 ```
 
-#### Overview
+## Overview
 
 The texture’s format controls the sampling and conversions (if any) to use when rendering with that texture.
 

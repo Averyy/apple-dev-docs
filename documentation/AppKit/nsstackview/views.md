@@ -19,7 +19,7 @@ var views: [NSView] { get }
 @property (copy, readonly) NSArray<__kindof NSView *> * views;
 ```
 
-#### Discussion
+## Discussion
 
 The `views` array always contains all of the views owned and managed by the stack view, regardless of their gravity area placement and regardless of whether or not they are attached. The index position of each view in the array matches the view ordering within the stack view. A detached view’s index position is its stack view position when attached.
 

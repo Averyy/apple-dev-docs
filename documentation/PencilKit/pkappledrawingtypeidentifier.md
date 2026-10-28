@@ -23,7 +23,7 @@ let PKAppleDrawingTypeIdentifier: CFString
 extern CFStringRef const PKAppleDrawingTypeIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this type when reading or writing drawing data. For example, use this type to determine if you can read data from the pasteboard.
 

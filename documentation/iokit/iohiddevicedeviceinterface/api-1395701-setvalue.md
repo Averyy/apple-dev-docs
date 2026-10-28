@@ -16,11 +16,11 @@ Sets the value for an element.
 IOReturn (*setValue)(void *self, IOHIDElementRef element, IOHIDValueRef value, uint32_t timeout, IOHIDValueCallback callback, void *context, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 
-#### Discussion
+## Discussion
 
 If setting multiple element values, please consider using an IOHIDDeviceTransactionInterface with the kIOHIDTransactionDirectionTypeOutput direction.
 

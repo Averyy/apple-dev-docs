@@ -25,7 +25,7 @@ var options: [String : NSObject] { get }
 @property (nonatomic, copy, readonly) NSDictionary<NSString *,NSObject *> * options;
 ```
 
-#### Discussion
+## Discussion
 
 A dictionary containing key-value pairs that specify numerous settings for the persistent store. For key definitions, see [`NSPersistentStoreCoordinator`](../nspersistentstorecoordinator.md).
 

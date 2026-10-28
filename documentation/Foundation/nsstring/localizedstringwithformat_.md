@@ -21,11 +21,11 @@ Returns a string created by using a given format string as a template into which
 + (instancetype) localizedStringWithFormat:(NSString *) format;
 ```
 
-#### Return Value
+## Return Value
 
 A string created by using `format` as a template into which the following argument values are substituted according to the formatting information in the current locale.
 
-#### Discussion
+## Discussion
 
 Pass a comma-separated list of variadic arguments to substitute into `format`.
 

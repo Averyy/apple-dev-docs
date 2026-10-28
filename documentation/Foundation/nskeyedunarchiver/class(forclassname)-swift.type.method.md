@@ -25,7 +25,7 @@ class func `class`(forClassName codedName: String) -> AnyClass?
 + (Class) classForClassName:(NSString *) codedName;
 ```
 
-#### Return Value
+## Return Value
 
 The class from which `NSKeyedUnarchiver` instantiates an object encoded with the class name `codedName`. Returns `nil` if `NSKeyedUnarchiver` does not have a translation mapping for `codedName`.
 

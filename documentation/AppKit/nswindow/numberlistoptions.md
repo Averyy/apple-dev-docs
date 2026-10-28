@@ -19,7 +19,7 @@ struct NumberListOptions
 enum NSWindowNumberListOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 If you pass `0` instead, then the list the method returns contains window numbers for visible windows on the active space belonging to the calling application.
 

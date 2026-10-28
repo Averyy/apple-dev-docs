@@ -5,7 +5,7 @@
 
 Learn about the architecture and design of the HealthKit framework.
 
-#### Overview
+## Overview
 
 Share health and fitness data between apps using the HealthKit framework. Rather than developers creating custom data types and units, HealthKit constrains data types and units to a predefined list. This ensures that all apps understand what the data means and how they can use it.
 
@@ -13,7 +13,7 @@ Additionally, the framework uses a large number of subclasses, producing deep hi
 
 HealthKit also uses pairs of closely related classes that you need to use together. For example, the [`HKObject`](./hkobject.md) and [`HKObjectType`](./hkobjecttype.md) abstract classes have largely parallel hierarchies of concrete subclasses. When working with objects and object types, you must use matching subclasses.
 
-##### HealthKit data
+### HealthKit data
 
 HealthKit saves a variety of data types in the HealthKit Store:
 
@@ -23,7 +23,7 @@ HealthKit saves a variety of data types in the HealthKit Store:
 - **Source data**: Information about a sample’s source. The [`HKSourceRevision`](./hksourcerevision.md) object contains information about the app or device that saved the sample. The [`HKDevice`](./hkdevice.md) object contains information about the hardware device that generated the data.
 - **Deleted objects**: An object that represents a sample after something deletes it from the HealthKit store. HealthKit uses an [`HKDeletedObject`](./hkdeletedobject.md) instance to temporarily store the UUID of deleted samples. You can use deleted objects to respond when the user or another app deletes an object. For more information, see [`HKAnchoredObjectQuery`](./hkanchoredobjectquery.md) and [`HKDeletedObject`](./hkdeletedobject.md).
 
-##### Properties of objects and samples
+### Properties of objects and samples
 
 The [`HKObject`](./hkobject.md) class is the superclass of all HealthKit sample types. All [`HKObject`](./hkobject.md) subclasses are immutable. Each object has the following properties:
 
@@ -45,7 +45,7 @@ Samples are further divided into four concrete subclasses:
 - **Correlations**: Composite data containing one or more samples. HealthKit uses correlations to represent food and blood pressure. You should always use a correlation when creating food or blood pressure data. See [`HKCorrelation`](./hkcorrelation.md).
 - **Workouts**: Data representing a physical activity, like running, swimming, or even play. Workouts often have *type*, *duration*, *distance*, and *energy burned* properties. You can also associate a workout with additional, fine-grained samples. Unlike correlations, the workout doesn’t contain these samples; however, you can query for them using the workout. For more information, see [`HKWorkout`](./hkworkout.md).
 
-##### Threading
+### Threading
 
 The HealthKit store is thread-safe, and most HealthKit objects are immutable. In general, you can use HealthKit safely in a multithreaded environment.
 
@@ -53,7 +53,7 @@ The HealthKit store is thread-safe, and most HealthKit objects are immutable. In
 
 For more information about multithreading and concurrent programming, see [Concurrency Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091).
 
-##### Syncing data between devices
+### Syncing data between devices
 
 iPhone, Apple Watch, and visionOS each have their own HealthKit store. iPadOS 17 and later also has its own HealthKit store. It is also available on iPadOS apps running on Vision Pro. HealthKit automatically syncs data between these devices. To save space, old data is periodically purged from Apple Watch. Use [`earliestPermittedSampleDate()`](./hkhealthstore/earliestpermittedsampledate%28%29.md) to determine the earliest samples available on Apple Watch.
 

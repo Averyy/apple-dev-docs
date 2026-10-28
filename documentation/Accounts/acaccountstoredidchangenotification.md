@@ -18,7 +18,7 @@ Posted when the accounts managed by this account store changed in the database.
 extern NSString * const ACAccountStoreDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification sent if an account is saved or removed locally or externally. If you receive this notification, you should refetch all account objects.
 

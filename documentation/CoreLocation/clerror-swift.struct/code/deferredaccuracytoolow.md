@@ -25,7 +25,7 @@ case deferredAccuracyTooLow
 kCLErrorDeferredAccuracyTooLow
 ```
 
-#### Discussion
+## Discussion
 
 The accuracy must be set to [`kCLLocationAccuracyBest`](../../kcllocationaccuracybest.md) or [`kCLLocationAccuracyBestForNavigation`](../../kcllocationaccuracybestfornavigation.md).
 

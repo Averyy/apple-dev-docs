@@ -17,7 +17,7 @@ Indicates that the system aggregates data into daily segments within the specifi
 case daily(during: DateInterval)
 ```
 
-#### Discussion
+## Discussion
 
 The system disregards any date components in the interval that are smaller than `.day` and instead uses the start of the day specified by `interval.start` and the end of the day specified by `interval.end`.
 

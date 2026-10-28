@@ -16,7 +16,7 @@ kIOBDBlockStorageDeviceClass is the name of the IOBDBlockStorageDevice class.
 #define kIOBDBlockStorageDeviceClass
 ```
 
-#### Discussion
+## Discussion
 
 kIOBDBlockStorageDeviceClass is the name of the IOBDBlockStorageDevice class.
 

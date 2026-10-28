@@ -15,13 +15,13 @@ The object for applying a style to table cells that meet certain conditions.
 object ConditionalTableCellStyle
 ```
 
-#### Discussion
+## Discussion
 
 Cells in Data Table components and HTML Table components can have conditional styles — styles applied only to cells that meet certain conditions. You can use any table cell style as a conditional style.
 
 For example, you might define a conditional table cell style that changes the background color for a cell at a specific location.
 
-##### Example
+### Example
 
 ```json
 {

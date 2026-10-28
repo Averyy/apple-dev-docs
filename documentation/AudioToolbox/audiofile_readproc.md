@@ -24,15 +24,15 @@ typealias AudioFile_ReadProc = (UnsafeMutableRawPointer, Int64, UInt32, UnsafeMu
 typedef int (*)(void *, long long, unsigned int, void *, unsigned int *) AudioFile_ReadProc;
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 If you named your function `MyAudioFile_ReadProc`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 This callback function is called when Audio File Services needs to read data.
 

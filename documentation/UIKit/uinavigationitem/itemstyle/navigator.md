@@ -22,7 +22,7 @@ case navigator
 UINavigationItemStyleNavigator
 ```
 
-#### Discussion
+## Discussion
 
 Use this style for apps that support a traditional hierarchical navigation model. With this style, the navigation item’s title appears in the center of the navigation bar, and center items ([`centerItemGroups`](../centeritemgroups.md)) appear in the overflow menu.
 

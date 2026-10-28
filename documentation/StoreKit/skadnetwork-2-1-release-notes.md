@@ -5,7 +5,7 @@
 
 A version of SKAdNetwork available in iOS 14 and later.
 
-#### Overview
+## Overview
 
 Use `“2.1”` as the version number when signing ads for this version.
 
@@ -15,7 +15,7 @@ Ad networks are eligible to receive a version 2.1 postback if all three of the f
 - The source app is built with the iOS 14 SDK or later.
 - The advertised app is App Store-signed and running on a device with iOS 14 or later.
 
-##### New features
+### New features
 
 New features include:
 

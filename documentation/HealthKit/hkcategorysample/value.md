@@ -24,7 +24,7 @@ var value: Int { get }
 @property (readonly) NSInteger value;
 ```
 
-#### Discussion
+## Discussion
 
 This value must come from the appropriate category value enumeration. Each category type uses its own enumeration. For more information, see Category Type Identifiers in [HealthKit Constants](../healthkit-constants.md).
 

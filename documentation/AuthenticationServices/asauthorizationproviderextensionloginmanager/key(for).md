@@ -23,7 +23,7 @@ func key(for keyType: ASAuthorizationProviderExtensionKeyType) -> SecKey?
 
 - [Configuring authentication with the identity provider (IdP)](../configuring-authentication-with-the-identity-provider-idp.md)
 
-#### Return Value
+## Return Value
 
 The key identity if it exists, or `nil` if it doesn’t.
 

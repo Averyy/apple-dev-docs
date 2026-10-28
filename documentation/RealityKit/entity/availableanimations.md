@@ -21,7 +21,7 @@ The list of animations associated with the entity.
 @preconcurrency var availableAnimations: [AnimationResource] { get }
 ```
 
-#### Discussion
+## Discussion
 
 When you import an entity from a file, for example by using the [`load(named:in:)`](./load%28named,in%29.md) method, the entity might contain associated animations. Any that RealityKit supports appear in the [`availableAnimations`](./availableanimations.md) array.
 

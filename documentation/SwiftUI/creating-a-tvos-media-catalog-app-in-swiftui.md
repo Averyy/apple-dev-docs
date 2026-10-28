@@ -10,7 +10,7 @@ Build standard content lockups and rows of content shelves for your tvOS app.
 - tvOS 18.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample code project shows how to create the standard content lockups for tvOS, and provides best practices for building out rows of content shelves. It also includes examples for product pages, search views, and tab views, including the new sidebar adaptive tab view style that provides a sidebar in tvOS.
 
@@ -25,7 +25,7 @@ The sample project contains the following examples:
 - `SidebarContentView` shows how to make a sectioned sidebar using the new tab bar APIs in tvOS 18.
 - `HeroHeaderView` gives an example of creating a material gradient to blur content in a certain area, fading it into unblurred content.
 
-##### Create content lockups
+### Create content lockups
 
 The [`borderless`](./primitivebuttonstyle/borderless.md) button style provides the primary lockup style you use in tvOS, including all the focus interactions and hover effects. The button’s title and any nearby section titles automatically move out of the way of the button’s image as it scales up on focus.
 
@@ -68,7 +68,7 @@ Button { /* action */ } label: {
 }
 ```
 
-##### Show information-dense lockups
+### Show information-dense lockups
 
 For lockups with more dense information, consider using the [`card`](./primitivebuttonstyle/card.md) button style, which provides a platter and a more subtle motion effect on focus. Providing containers with padding as the button’s label gives you something similar to the search result lockups on the Apple TV app.
 
@@ -141,7 +141,7 @@ Button { /* action */ } label: {
 }
 ```
 
-##### Display content shelves
+### Display content shelves
 
 Content shelves are usually horizontal stacks in scroll views.
 
@@ -173,7 +173,7 @@ asset.portraitImage
 Text(asset.title)
 ```
 
-##### Show content above and below the fold
+### Show content above and below the fold
 
 For a landing page you can implement above- and below-the-fold appearances through a combination of [`ScrollTargetBehavior`](./scrolltargetbehavior.md) and a background view with a gradient mask.
 
@@ -231,7 +231,7 @@ Image("beach_landscape")
 
 By adjusting the opacity of the gradient stops, rather than swapping out the mask view, you achieve a smooth animation between the above-the-fold appearance, where the material fades out above a certain height to reveal the image behind, and the below-the-fold appearance where the entire image blurs.
 
-##### Snap at the fold point
+### Snap at the fold point
 
 You can implement a custom [`ScrollTargetBehavior`](./scrolltargetbehavior.md) to create a fold-snapping effect. Then add a check to determine whether the target of a scroll event is crossing a fold threshold, and update that target to either the top of the page (if moving upward) or to the top of your first content shelf (if moving downward). With your view already tracking the above/below fold state, it can pass that information into the behavior to indicate which operation to check for.
 
@@ -277,7 +277,7 @@ struct FoldSnappingScrollTargetBehavior: ScrollTargetBehavior {
 }
 ```
 
-##### Provide product highlight pages
+### Provide product highlight pages
 
 It’s common for product pages to use a material gradient appearance with above- and below-the-fold snapping. You most likely need to tune the gradient a little differently to account for a taller bar of content at the bottom of the screen, but you typically want to keep the content’s showcase image, with a suitable blur, as a background for the view when scrolling below.
 
@@ -320,7 +320,7 @@ When displaying your content’s description, allow it to truncate on the page, 
 }
 ```
 
-##### Search for content
+### Search for content
 
 For your search page, prefer using a [`LazyVGrid`](./lazyvgrid.md) to contain your results, and a landscape orientation for the lockups themselves. This allows more content to appear onscreen at one time, with several rows of three to five items per row. A tall content container area makes it much easier to see the effects of changes to your search term.
 

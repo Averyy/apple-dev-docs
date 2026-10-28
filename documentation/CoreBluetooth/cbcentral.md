@@ -25,7 +25,7 @@ class CBCentral
 @interface CBCentral : CBPeer
 ```
 
-#### Overview
+## Overview
 
 The [`CBCentral`](./cbcentral.md) class represents remote central devices (or *centrals*) that have connected to an app implementing the peripheral role on a local device. Remote centrals use universally unique identifiers (UUIDs), represented by [`NSUUID`](../Foundation/nsuuid.md) objects, to identify themselves.
 

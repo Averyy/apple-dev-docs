@@ -27,7 +27,7 @@ class SWUpdateCollaborationParticipantsAction
 
 - [Adding custom collaboration to your app](../SharedWithYou/adding-custom-collaboration-to-your-app.md)
 
-#### Overview
+## Overview
 
 Look up the target collaboration using the provided [`SWCollaborationMetadata`](./swcollaborationmetadata.md). Associate the added participants with the resource on your app’s servers, and remove any identities included in the [`removedIdentities`](./swupdatecollaborationparticipantsaction/removedidentities.md) property.
 

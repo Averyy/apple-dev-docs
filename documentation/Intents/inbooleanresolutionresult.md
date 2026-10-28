@@ -25,7 +25,7 @@ class INBooleanResolutionResult
 @interface INBooleanResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 Return an [`INBooleanResolutionResult`](./inbooleanresolutionresult.md) object when resolving intent parameters that contain a Boolean value. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

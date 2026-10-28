@@ -32,7 +32,7 @@ enum {
 };
 ```
 
-#### Overview
+## Overview
 
 When you call the [`CreateCompDescriptor(_:_:_:_:_:)`](../../coreservices/api-1449155-createcompdescriptor.md) function, you pass one of these comparison operators in the `comparisonOperator` parameter. The `CreateCompDescriptor` function creates a comparison descriptor that specifies how to compare one or more Apple event objects with either another Apple event object or a descriptor.
 

@@ -32,7 +32,7 @@ var isUserInteractionEnabled: Bool { get set }
 - [Handling swipe gestures](../handling-swipe-gestures.md)
 - [Handling tap gestures](../handling-tap-gestures.md)
 
-#### Discussion
+## Discussion
 
 When set to [`false`](../../Swift/false.md), touch, press, keyboard, and focus events intended for the view are ignored and removed from the event queue. When set to [`true`](../../Swift/true.md), events are delivered to the view normally. The default value of this property is [`true`](../../Swift/true.md).
 

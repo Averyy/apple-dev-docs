@@ -20,7 +20,7 @@ A two-dimensional transformation to apply to the entity’s secondary texture co
 var secondaryTextureCoordinateTransform: UnlitMaterial.TextureCoordinateTransform { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property transforms the secondary set. To transform the primary UV coordinates in a material, see [`textureCoordinateTransform`](./texturecoordinatetransform-swift.property.md).
 

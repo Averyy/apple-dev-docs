@@ -19,11 +19,11 @@ optional func accessibilityColumns() -> [Any]?
 - (NSArray *) accessibilityColumns;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the table’s column elements.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityColumns`](../nsaccessibility-c.protocol/accessibilitycolumns.md) property.
 

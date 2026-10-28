@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatScaleBy(SPVector3DFloat vector, float x, float y, float z);
 ```
 
-#### Return Value
+## Return Value
 
 A vector that’s scaled by the specified values.
 
-#### Discussion
+## Discussion
 
 Returns a vector with elements scaled by the specified values.
 

@@ -25,7 +25,7 @@ case insufficientAuthentication
 CBATTErrorInsufficientAuthentication
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates you must authenticate before reading or writing the attribute’s value.
 

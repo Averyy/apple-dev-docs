@@ -19,7 +19,7 @@ var size: NSSize { get }
 @property (readonly) NSSize size;
 ```
 
-#### Discussion
+## Discussion
 
 This corresponds to the size of the backing store in the dock, which may be bigger than the actual tile displayed on the screen.
 

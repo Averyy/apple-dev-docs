@@ -18,7 +18,7 @@ Asynchronously loads a body-tracked entity from a bundle.
 @preconcurrency static func loadBodyTrackedAsync(named name: String, in bundle: Bundle? = nil) -> LoadRequest<BodyTrackedEntity>
 ```
 
-#### Return Value
+## Return Value
 
 A resource loader that publishes the root entity in the loaded file as a [`BodyTrackedEntity`](../bodytrackedentity.md).
 

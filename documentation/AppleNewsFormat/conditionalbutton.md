@@ -15,11 +15,11 @@ The object for defining a button component’s conditional properties, and when 
 object ConditionalButton
 ```
 
-#### Discussion
+## Discussion
 
 Use the `ConditionalButton` object to define an array of conditional button properties and the conditions under which to apply them. When a condition is met, the value of a property in `ConditionalButton` overrides the value of the same property if you define it in the parent button component. See [`LinkButton`](./linkbutton.md).
 
-##### Example
+### Example
 
 ```json
 {

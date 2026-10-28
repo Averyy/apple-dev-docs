@@ -25,7 +25,7 @@ let NSUndoManagerGroupIsDiscardableKey: String
 extern NSString * const NSUndoManagerGroupIsDiscardableKey;
 ```
 
-#### Discussion
+## Discussion
 
 The key has a corresponding value of [`true`](../Swift/true.md), wrapped as a Boolean [`NSNumber`](./nsnumber.md) object, if the undo group as a whole is discardable.
 

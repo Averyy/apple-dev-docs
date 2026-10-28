@@ -15,11 +15,11 @@ Request body for updating an existing budget order.
 object SharedBudgetUpdate
 ```
 
-#### Discussion
+## Discussion
 
 The `SharedBudgetUpdate` object is the partial-update request payload for modifying an existing budget order. Include only the fields you want to change. Fields you leave out of the request body stay unchanged. To extend a budget that is approaching exhaustion, increase the `value.amount`.
 
-##### Example
+### Example
 
 The example below shows every updatable field for reference. In a real request, include only the fields you want to change.
 

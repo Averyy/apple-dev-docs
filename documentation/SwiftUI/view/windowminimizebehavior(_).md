@@ -16,7 +16,7 @@ nonisolated
 func windowMinimizeBehavior(_ behavior: WindowInteractionBehavior) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, windows which support being minimized will move into the Dock when the minimize button is clicked, or the corresponding menu item is selected.
 

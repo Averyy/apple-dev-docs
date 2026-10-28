@@ -21,7 +21,7 @@ Returns the 1D convolution of a single-precision vector.
 static func convolve<T, U>(_ vector: T, withKernel kernel: U) -> [Float] where T : AccelerateBuffer, U : AccelerateBuffer, T.Element == Float, U.Element == Float
 ```
 
-#### Return Value
+## Return Value
 
 The convolution result.
 

@@ -19,7 +19,7 @@ class IKDeviceBrowserView
 @interface IKDeviceBrowserView : NSView
 ```
 
-#### Overview
+## Overview
 
 The [`IKDeviceBrowserView`](./ikdevicebrowserview.md) delegate must conform to the [`IKDeviceBrowserViewDelegate`](./ikdevicebrowserviewdelegate.md) protocol. The delegate provides methods to inform you of selection changes in the browser as well as errors encountered when creating the browser list.
 

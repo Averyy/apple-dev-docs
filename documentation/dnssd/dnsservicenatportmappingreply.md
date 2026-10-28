@@ -25,7 +25,7 @@ typealias DNSServiceNATPortMappingReply = (DNSServiceRef?, DNSServiceFlags, UInt
 typedef void (*)(struct _DNSServiceRef_t *, unsigned int, unsigned int, int, unsigned int, unsigned int, unsigned short, unsigned short, unsigned int, void *) DNSServiceNATPortMappingReply;
 ```
 
-#### Discussion
+## Discussion
 
 The NAT should support either the NAT-PMP or the UPnP IGD protocol for this API to create a successful mapping.
 

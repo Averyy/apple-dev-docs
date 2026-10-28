@@ -23,7 +23,7 @@ A type representing a trait in a trait collection.
 
 - [Providing data to the view hierarchy with custom traits](./providing-data-to-the-view-hierarchy-with-custom-traits.md)
 
-#### Overview
+## Overview
 
 All traits contained in a [`UITraitCollection`](./uitraitcollection.md) conform to this protocol. Three protocols refine `UITraitDefinition`: [`UINSIntegerTraitDefinition`](./uinsintegertraitdefinition.md), [`UICGFloatTraitDefinition`](./uicgfloattraitdefinition.md), or [`UIObjectTraitDefinition`](./uiobjecttraitdefinition.md). You can create custom traits by defining your own object conforming one of these three protocols, as appropriate for your trait value.
 
@@ -51,7 +51,7 @@ If you use your custom trait to implement custom dynamic colors, implement [`aff
 
 A trait type serves as a unique key, identifying a trait within a trait collection. Methods such as [`valueForNSIntegerTrait:`](./uitraitcollection/valuefornsintegertrait_.md) and [`registerForTraitChanges:withHandler:`](./uitraitchangeobservable-7qoet/registerfortraitchanges_withhandler_.md) take a trait type to identify the trait in a collection.
 
-##### Traits in both Swift and Objective-C
+### Traits in both Swift and Objective-C
 
 If you need to access traits from both Swift and Objective-C code, create a type conforming to [`UITraitDefinition`](./uitraitdefinition-64c15.md) in both languages. To define a trait that’s accessible from both Swift and Objective-C, follow these guidelines :
 

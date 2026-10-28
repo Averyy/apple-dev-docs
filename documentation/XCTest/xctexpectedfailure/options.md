@@ -16,7 +16,7 @@ class Options
 @interface XCTExpectedFailureOptions : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create options and provide them to `XCTExpectFailure` functions to tell the test system how to match an expected failure, whether to enable an expected failure during a test, and whether an unfulfilled expected failure generates a test failure.
 

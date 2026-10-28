@@ -24,7 +24,7 @@ func AudioServicesPlayAlertSound(_ inSystemSoundID: SystemSoundID)
 extern void AudioServicesPlayAlertSound(SystemSoundID inSystemSoundID);
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the particular iOS device, this function plays a short sound and may invoke vibration. Calling this function does the following on various iOS devices:
 

@@ -23,7 +23,7 @@ func restoreMachineStateFrom(url saveFileURL: URL) async throws
 - (void) restoreMachineStateFromURL:(NSURL *) saveFileURL completionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to restore a stopped VM to a state previously saved to file through [`saveMachineStateTo(url:completionHandler:)`](./savemachinestateto%28url,completionhandler%29.md).
 

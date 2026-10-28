@@ -19,7 +19,7 @@ class VZNetworkDevice
 @interface VZNetworkDevice : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate a [`VZNetworkDevice`](./vznetworkdevice.md) directly. When you create a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) instance with a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) the system creates the number of network devices based on the number of [`VZVirtioNetworkDeviceConfiguration`](./vzvirtionetworkdeviceconfiguration.md) objects you specify in the VM configuration. Before initializing the virtual machine (VM), validate the configuration using [`validate()`](./vzvirtualmachineconfiguration/validate%28%29.md) to ensure the user’s computer supports the number of network and other devices you’ve specified.  
 

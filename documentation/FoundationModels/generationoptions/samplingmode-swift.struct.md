@@ -20,7 +20,7 @@ A type that defines how values are sampled from a probability distribution.
 struct SamplingMode
 ```
 
-#### Overview
+## Overview
 
 A model builds its response to a prompt in a loop. At each iteration in the loop the model produces a probability distribution for all the tokens in its vocabulary. The sampling mode controls how a token is selected from that distribution.
 

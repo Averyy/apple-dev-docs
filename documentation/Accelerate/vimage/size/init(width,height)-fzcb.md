@@ -21,7 +21,7 @@ Creates a size with dimensions specified as integer values.
 init(width: Int, height: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The height and width must be greater than `0`.
 

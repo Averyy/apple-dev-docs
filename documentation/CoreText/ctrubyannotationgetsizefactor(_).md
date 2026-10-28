@@ -25,7 +25,7 @@ func CTRubyAnnotationGetSizeFactor(_ rubyAnnotation: CTRubyAnnotation) -> CGFloa
 extern CGFloat CTRubyAnnotationGetSizeFactor(CTRubyAnnotationRef rubyAnnotation);
 ```
 
-#### Return Value
+## Return Value
 
 The size factor of `rubyAnnotation`, if the `rubyAnnotation` object is valid; otherwise, `0`.
 

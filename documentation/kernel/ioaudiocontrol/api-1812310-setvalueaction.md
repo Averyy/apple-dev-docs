@@ -16,11 +16,11 @@ static IOReturn setValueAction(
  void *arg4);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the result of setValue() - kIOReturnSuccess on success.
 
-#### Overview
+## Overview
 
 This is needed to allow setValue() to be called on the IOWorkLoop.
 

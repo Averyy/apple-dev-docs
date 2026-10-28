@@ -25,7 +25,7 @@ var abbreviatingWithTildeInPath: String { get }
 @property (copy, readonly) NSString * stringByAbbreviatingWithTildeInPath;
 ```
 
-#### Discussion
+## Discussion
 
 A new string based on the current string object. If the new string specifies a file in the current home directory, the home directory portion of the path is replaced with a tilde (`~`) character. If the string does not specify a file in the current home directory, this method returns a new string object whose path is unchanged from the path in the current string.
 

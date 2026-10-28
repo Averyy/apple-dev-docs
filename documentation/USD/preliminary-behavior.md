@@ -4,13 +4,13 @@
 
 A typed schema that combines one or more triggers with associated actions.
 
-#### Overview
+## Overview
 
 Because it inherits `Typed`, this schema declares a `Preliminary_Behavior` as a type of prim. For more information about typed schemas, see USD Specification > [Typed](http://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-TypedSchema).
 
 To run actions based on a trigger, an asset defines a prim of this type and sets its [triggers](./triggers.md) and [actions](./actions.md).
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Behavior "Preliminary_Behavior" (
@@ -18,7 +18,7 @@ class Preliminary_Behavior "Preliminary_Behavior" (
 )
 ```
 
-##### Trigger animation for a tapped cube
+### Trigger animation for a tapped cube
 
 The following example demonstrates a behavior that applies an `EmphasizeAction` to a cube to flip it. Because the cube defines a tap trigger, the runtime performs the flip when a user taps the cube in an AR experience.
 

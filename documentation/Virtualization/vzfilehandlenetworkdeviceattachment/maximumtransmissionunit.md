@@ -19,7 +19,7 @@ var maximumTransmissionUnit: Int { get set }
 @property (readwrite) NSInteger maximumTransmissionUnit;
 ```
 
-#### Discussion
+## Discussion
 
 The client side of the associated datagram socket must be properly configured with the appropriate values for `SO_SNDBUF`, and `SO_RCVBUF`. Set these using the `setsockopt(_:_:_:_:_:)` system call. The system expects the value of `SO_RCVBUF` to be at least double the value of `SO_SNDBUF`, and for optimal performance, the recommended value of `SO_RCVBUF` is four times the value of `SO_SNDBUF`.
 

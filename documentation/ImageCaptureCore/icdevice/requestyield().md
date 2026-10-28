@@ -21,7 +21,7 @@ func requestYield()
 - (void) requestYield;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method only if the client will communicate with the device directly. The device module may not yield control of the device if it has an open session.
 

@@ -15,7 +15,7 @@ An object that allows a custom annotation to potentially supersede a point of in
 place?: Place | SearchAutocompleteResult;
 ```
 
-#### Discussion
+## Discussion
 
 By using a [`Place`](../place.md) object as an argument to the [`AnnotationConstructorOptions`](../annotationconstructoroptions.md), you can, depending on the exact coordinates and other rendering computations, supersede an Apple-provided item on the map. This can reduce potential visual clutter of two icons representing the same place on a single map.
 

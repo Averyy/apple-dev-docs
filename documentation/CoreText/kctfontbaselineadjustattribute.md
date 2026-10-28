@@ -25,7 +25,7 @@ let kCTFontBaselineAdjustAttribute: CFString
 extern CFStringRef const kCTFontBaselineAdjustAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 This is primarily used when defining font descriptors for a cascade list to keep the baseline of all fonts even. The value associated with this is a float represented as a [`CFNumber`](../CoreFoundation/cfnumber.md) object.
 

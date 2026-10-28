@@ -21,7 +21,7 @@ Returns a point with an origin that’s offset by the specified vector.
 static SPPoint3D SPPoint3DTranslate(SPPoint3D point, SPVector3D offset);
 ```
 
-#### Return Value
+## Return Value
 
 A point that’s offset by the `x`, `y`, and `z` of the vector.
 

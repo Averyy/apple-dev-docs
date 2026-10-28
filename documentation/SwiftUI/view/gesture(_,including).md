@@ -26,7 +26,7 @@ func gesture<T>(_ gesture: T, including mask: GestureMask = .all) -> some View w
 
 - [Adding interactivity with gestures](../adding-interactivity-with-gestures.md)
 
-#### Discussion
+## Discussion
 
 Use this method when you need to attach a gesture to a view. The example below defines a custom gesture that prints a message to the console and attaches it to the view’s [`VStack`](../vstack.md). Inside the [`VStack`](../vstack.md) a red heart [`Image`](../image.md) defines its own [`TapGesture`](../tapgesture.md) handler that also prints a message to the console, and blue rectangle with no custom gesture handlers. Tapping or clicking the image prints a message to the console from the tap gesture handler on the image, while tapping or clicking  the rectangle inside the [`VStack`](../vstack.md) prints a message in the console from the enclosing vertical stack gesture handler.
 

@@ -19,7 +19,7 @@ class var gridColor: NSColor { get }
 @property (class, strong, readonly) NSColor * gridColor;
 ```
 
-#### Return Value
+## Return Value
 
 The system color used for gridlines. For more information, see [`NSColor`](../nscolor.md).
 

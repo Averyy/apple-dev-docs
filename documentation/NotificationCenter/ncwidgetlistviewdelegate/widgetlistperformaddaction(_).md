@@ -21,7 +21,7 @@ optional func widgetListPerformAddAction(_ list: NCWidgetListViewController)
 - (void) widgetListPerformAddAction:(NCWidgetListViewController *) list;
 ```
 
-#### Discussion
+## Discussion
 
 When a widget’s list is in editing mode, the list view controller can display an Add (+) button. The button’s action calls `widgetListPerformAddAction:` in the delegate.
 

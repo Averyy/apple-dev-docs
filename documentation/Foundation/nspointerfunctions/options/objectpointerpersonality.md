@@ -25,7 +25,7 @@ static var objectPointerPersonality: NSPointerFunctions.Options { get }
 NSPointerFunctionsObjectPointerPersonality
 ```
 
-#### Discussion
+## Discussion
 
 As a special case, if you do not use garbage collection and specify this value in conjunction with [`strongMemory`](./strongmemory.md) then the `NSPointerFunctions` object uses `retain` and `release`.
 

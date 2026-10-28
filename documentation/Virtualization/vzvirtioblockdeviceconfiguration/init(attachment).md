@@ -19,7 +19,7 @@ init(attachment: VZStorageDeviceAttachment)
 - (instancetype) initWithAttachment:(VZStorageDeviceAttachment *) attachment;
 ```
 
-#### Return Value
+## Return Value
 
 A block storage device configuration object to include in your virtual machine’s configuration.
 

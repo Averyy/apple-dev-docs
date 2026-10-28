@@ -26,11 +26,11 @@ func relevance() async -> WidgetRelevance<Void>
 - [Keeping a widget up to date](../keeping-a-widget-up-to-date.md)
 - [Increasing the visibility of widgets in Smart Stacks](../widget-suggestions-in-smart-stacks.md)
 
-#### Return Value
+## Return Value
 
 The object that contains attributes that describe when a specific widget is relevant.
 
-#### Discussion
+## Discussion
 
 The system can use the relevance to show this widget in the Smart Stack when the provided relevance matches a person’s context. For example, if you indicate relevance at a specific location, the system could show the widget when a person is at or close to the location.
 

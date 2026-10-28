@@ -25,7 +25,7 @@ func setViewport(_ viewport: MTLViewport)
 - (void) setViewport:(MTLViewport) viewport;
 ```
 
-#### Discussion
+## Discussion
 
 Metal clips fragments that lie outside this viewport, and optionally clamps fragments outside of z-near/z-far range depending on the value you assign to [`setDepthClipMode(_:)`](./setdepthclipmode%28_%29.md).
 

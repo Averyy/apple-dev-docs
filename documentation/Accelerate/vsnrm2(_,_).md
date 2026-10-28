@@ -21,11 +21,11 @@ func vSnrm2(_ count: Int32, _ x: UnsafePointer<vFloat>) -> Float
 extern float vSnrm2(int32_t count, const vFloat *x);
 ```
 
-#### Return Value
+## Return Value
 
 The Euclidean length of `x`.
 
-#### Discussion
+## Discussion
 
 Input is scaled to avoid destructive underflow and overflow.
 

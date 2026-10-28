@@ -25,7 +25,7 @@ case mediumHall
 AVAudioUnitReverbPresetMediumHall
 ```
 
-#### Discussion
+## Discussion
 
 This is the default value for [`AVAudioUnitReverb`](../avaudiounitreverb.md).
 

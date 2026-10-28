@@ -23,11 +23,11 @@ optional func tableView(_ tableView: UITableView, willDeselectRowAt indexPath: I
 - (NSIndexPath *) tableView:(UITableView *) tableView willDeselectRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 An index path that confirms or alters the deselected row. Return an `NSIndexPath` object other than `indexPath` if you want another cell to be deselected. Return `nil` if you don’t want the row deselected.
 
-#### Discussion
+## Discussion
 
 This method is only called if there is an existing selection when the user tries to select a different row. The delegate is sent this method for the previously selected row. You can use [`UITableViewCell.SelectionStyle.none`](../uitableviewcell/selectionstyle-swift.enum/none.md) to disable the appearance of the cell highlight on touch-down.
 

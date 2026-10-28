@@ -19,7 +19,7 @@ uuid appAccountToken
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 When a customer initiates an In-App Purchase in your app, you can optionally generate an app account token and call [`appAccountToken(_:)`](../StoreKit/product/purchaseoption/appaccounttoken%28_%29.md) to associate it with the purchase. If you use the [Original API for Apple In-App Purchase](../StoreKit/original-api-for-in-app-purchase.md), you can provide a UUID in the [`applicationUsername`](../StoreKit/skmutablepayment/applicationusername.md) property. The App Store returns the same UUID in [`appAccountToken`](../StoreKit/transaction/appaccounttoken.md) in the transaction information and subscription renewal information after the customer completes the purchase.
 

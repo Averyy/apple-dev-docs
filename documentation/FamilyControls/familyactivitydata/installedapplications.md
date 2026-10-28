@@ -16,7 +16,7 @@ Applications someone installs on a device.
 var installedApplications: [Application] { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 Each application contains both a `bundleIdentifier` and a `token`.
 

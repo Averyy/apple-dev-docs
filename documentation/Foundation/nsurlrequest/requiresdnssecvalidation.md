@@ -25,7 +25,7 @@ var requiresDNSSECValidation: Bool { get }
 @property (readonly) BOOL requiresDNSSECValidation;
 ```
 
-#### Discussion
+## Discussion
 
 `YES` if the DNS lookup for this request should require DNSSEC validation. Defaults to `NO`.
 

@@ -19,7 +19,7 @@ protocol FxKeyframeAPI_v3
 @protocol FxKeyframeAPI_v3
 ```
 
-#### Overview
+## Overview
 
 These methods allow you to get keyframe information about any parameter your plug-in has. You can also set keyframes, which can be useful for creating presets and automating common uses of your plug-ins.
 

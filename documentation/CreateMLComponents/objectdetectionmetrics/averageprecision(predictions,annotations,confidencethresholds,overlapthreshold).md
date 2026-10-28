@@ -20,7 +20,7 @@ Calculates average precision for all the labels at the bounding box overlap thre
 func averagePrecision<Scalar>(predictions: [[DetectedObject<Label>]], annotations: [ObjectDetectionAnnotation<Label>], confidenceThresholds: [Label : Float] = [:], overlapThreshold: Double = 0.5) -> [Label : Scalar] where Scalar : BinaryFloatingPoint
 ```
 
-#### Return Value
+## Return Value
 
 Average precision for all the labels at the overlap threshold.
 

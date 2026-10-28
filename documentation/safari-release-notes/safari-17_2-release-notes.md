@@ -5,13 +5,13 @@
 
 Released December 11, 2023 — Version 17.2 (19617.1.17)
 
-#### Overview
+## Overview
 
 Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey, and macOS Ventura.
 
-##### Accessibility
+### Accessibility
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed parsing the ARIA `role` attribute to ignore leading and trailing whitespace, including line breaks.  (113923520)
 - Fixed form landmarks being incorrectly exposed when they are missing a label.  (115462091)
@@ -19,21 +19,21 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 - Fixed Play Animation and Pause Animation animated image context menu items sometimes not appearing after setting toggle.  (117215059)
 - Fixed VoiceOver not announcing button labels if the button is in a shadow root.  (118118138)
 
-##### Apple Pay
+### Apple Pay
 
-###### Deprecations
+#### Deprecations
 
 - Deprecated `enabled` in favor of `available` in `shippingContactEditingMode`.  (113159800)
 
-##### AutoFill
+### AutoFill
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed clipping the “Strong Password” button after selecting “Suggest New Password”.  (113701243)
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added support for the CSS Custom Highlight API.  (68662936)
 - Added support for `mask-border` properties.  (82991599)
@@ -52,7 +52,7 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 - Added support for `border-radius` when using  `<coord-box>`  in Motion Path syntax.  (114883507)
 - Added `offset-position` support for `circle()` and `ellipse()`.  (114951375)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the `font-family` descriptor for `@font-palette-values` to accept multiple values.  (105975619)
 - Fixed `:has(:scope)` matching.  (106524140)
@@ -120,30 +120,30 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 - Fixed CSS grid to synthesize the central baseline of grid items in the column axis.  (117424263)
 - Fixed serialization for CSS highlight pseudo-elements.  (117864974)
 
-##### DOM
+### DOM
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed handling tasks scheduled for web pages in the back-forward cache.  (116349535)
 
-###### Deprecations
+#### Deprecations
 
 - Removed the non-standard `incremental` attribute and `search` event.  (48937114)
 
-##### Fonts
+### Fonts
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed COLRv0 font rendering.  (115721319)
 
-##### HTML
+### HTML
 
-###### New Features
+#### New Features
 
 - Added support for the `name` attribute in the `<details>` element.  (114677170)
 - Added support for `one-time-code` as an allowed `autocomplete` field name.  (115684196)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `<input type="number">` not returning the correct value when a decimal is entered.  (107187010)
 - Fixed alert sounds in web apps being replayed when the system play/pause key is pressed. Playing short-duration `<audio>` sources no longer registers the page as the system’s Now Playing application.  (114667001)
@@ -153,20 +153,20 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 - Fixed empty value attributes to not be ignored on image input types.  (114887143)
 - Fixed `[dir=auto]` invalidation with password fields.  (115887776)
 
-##### HTTP
+### HTTP
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed COOP header breaking back and forward behavior when client-side redirects are involved.  (104659192)
 
-##### JavaScript
+### JavaScript
 
-###### New Features
+#### New Features
 
 - Added support for `Intl.NumberFormat`’s FormatApproximately operation.  (113461245)
 - Added support for `import` attributes.  (113940597)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an edge case in the semantics of `for` loops.  (44730906)
 - Fixed: Optimized `Array#splice` to skip result array creation if it is not used at all.  (113367762)
@@ -176,21 +176,21 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 - Fixed global and eval code to throw a TypeError if a function declaration attempts to shadow a non-configurable, non-writable global property.  (114215396)
 - Fixed `Intl.NumberFormat` and `Intl.PluralRules` `roundingIncrement` to match specification changes.  (114219889)
 
-##### Loading
+### Loading
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed navigation to about scheme URLs without opaque paths.  (116238322)
 
-##### Media
+### Media
 
-###### New Features
+#### New Features
 
 - Added unprefixed support for `preservesPitch`.  (66579074)
 - Implemented automatic text track selection for `'metadata'` tracks.  (113004825)
 - Added support for H264 L1T2 for WebCodecs.  (114940765)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where Safari would briefly change `document.visibilityState` to `hidden` when entering fullscreen.  (104984915)
 - Fixed `canplay` event to fire for video elements where the first sample’s presentation time is slightly greater than 0.  (105169372)
@@ -204,21 +204,21 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 - Fixed `object-fit: fill` to work for a video element using a canvas stream `srcObject`.  (116832514)
 - Fixed the limit for the number of real-time audio threads.  (116864442)
 
-##### Networking
+### Networking
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue causing embedded videos in iWork documents to fail.  (116493190)
 
-##### Privacy
+### Privacy
 
-###### New Features
+#### New Features
 
 - Added support for blob partitioning.  (94442816)
 
-##### Rendering
+### Rendering
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the scrollbar not updating on CSS color-scheme change.  (99567600)
 - Fixed ignoring `calc()` values on `<colgroup>` elements.  (106692191)
@@ -227,62 +227,62 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 - Fixed ancestor subgrids’ gutters to add to the extra layer of margin for descendant subgrids.  (114271857)
 - Fixed a bug where swapping to Safari from another app (or tab) would flash black.  (116530284)
 
-##### Safari
+### Safari
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed website notifications delivered through APNS to appear with the domain name and Safari icon, matching the appearance of website notifications delivered through Web Push.  (116612341)
 
-##### Safari Extensions
+### Safari Extensions
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where dynamic declarativeNetRequest rules would not override static rules.  (107044339) (FB12074742)
 - Fixed behavior of `domains`, `requestDomains`, `excludedDomains`, and `excludedRequestDomains` declarativeNetRequest values to match subdomains by default.  (117592996)
 
-##### Scrolling
+### Scrolling
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed clicking and dragging the overlay scrollbar that overlaps a composited, positioned descendant of a container with `overflow: scroll`.  (89598421)
 - Fixed scrolling on nested `pointer-events: auto` inside `pointer-events: none`.  (110954175)
 - Fixed a bug that caused some complicated websites to freeze when scrolling.  (113318934)
 
-##### Service Workers
+### Service Workers
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a cache miss bug in DOMCache that triggered service worker fetch errors.  (115740959) (FB13188943)
 
-##### SVG
+### SVG
 
-###### New Features
+#### New Features
 
 - Added the missing default value `translate` for `animateTransform`.  (113681862)
 - Added support for SVG `<image crossorigin>`.  (114462749)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the motion path anchor point used for SVG when the `transform-box` is not the `view-box`.  (108285569)
 - Fixed `paint-order` property to inherit.  (114030037)
 - Fixed the SVG mask to work as a mask-resource for the CSS `mask-image`.  (114465545)
 - Fixed repainting an SVG element with a CSS reference filter when the filter changes.  (117047658)
 
-##### Text
+### Text
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed font fallback to ignore generic families for Private-Use Area Unicode codepoints.  (115901340) (FB13197885)
 
-##### Web Animations
+### Web Animations
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `color-scheme` to support discrete animation.  (94615599)
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added support for `CanvasRenderingContext2D.reset()`.  (77842434)
 - Enabled responsive images in `<link rel=preload>`.  (83891023)
@@ -291,7 +291,7 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 - Added support for sending mouse events to disabled form controls.  (110656783)
 - Added support for the `title` attribute for pattern validation errors.  (111394402)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `createPattern` to return null for a zero height image.  (104285727)
 - Fixed: Aligned `<script type language>` with the HTML Standard.  (109600797)
@@ -315,15 +315,15 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 - Fixed mouse event handling such that if a drag operation is initiated from a canceled `mousedown` event, all subsequent mouse events are sent to the originating frame until the drag operation ends with a corresponding `mouseup` event.  (116668701)
 - Fixed light dismiss for a popover element within a complex shadow DOM breaks light dismiss calculation.  (117214343)
 
-##### Web Apps
+### Web Apps
 
-###### New Features
+#### New Features
 
 - Added support for copying cookies when saving a website to the Home Screen on iOS and iPadOS.  (104438319)
 - Users can now enable the status bar from the View menu on macOS.  (109663387)
 - Users can now set the current page as the homepage for web apps on macOS.  (112819599)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed many common issues such as an icon appearing blurry with jagged edges, lacking padding, or failing to load by improving how web app icons are loaded. If you supply multiple size variants for the preferred icon kind, all sizes are saved, allowing the most appropriate size to be displayed based on context. For example, the largest size variant is shown in Finder’s Gallery view and Quick Look, a medium sized variant is shown in the Dock and Launchpad, while a smaller sized variant is shown in Spotlight.
 
@@ -344,44 +344,44 @@ Safari 17.2 is available for iOS 17.2, iPadOS 17.2, macOS Sonoma, macOS Monterey
 
   - Fixed an issue that prevents Ignore Screen Time Limits from working in web apps.  (117809075)
 
-##### Web Assembly
+### Web Assembly
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed WebAssembly SIMD vectors that can get corrupted when using `v128.any_true`.  (111050621)
 
-##### Web Inspector
+### Web Inspector
 
-###### New Features
+#### New Features
 
 - Added color palette with CSS variables in color picker.  (112099603)
 - Added a specialized editor for the CSS `steps()` timing function.  (113345146)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Moved the details sidebar to the bottom when Web Inspector is too narrow.  (63567675) (FB7711657)
 - Fixed objects logged to the console with multiple private fields that use the same name.  (109215331)
 
-##### WebDriver
+### WebDriver
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed dispatched mouse events always having `buttons` property set to zero.  (116049187)
 
-##### WebGL
+### WebGL
 
-###### New Features
+#### New Features
 
 - Added support for `EXT_blend_func_extended`.  (115158977)
 - Enabled support for `WEBGL_clip_cull_distance` by default.  (115174172)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a bug where multi-level textures would lose levels in WebGL.  (116362216)
 
-##### WebRTC
+### WebRTC
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed long delays switching audio input in video conferencing applications.  (102724364)
 - Fixed video quality when using TransformStream with Simulcast.  (110395571)

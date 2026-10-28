@@ -25,11 +25,11 @@ func localizedString(forCurrencyCode currencyCode: String) -> String?
 - (NSString *) localizedStringForCurrencyCode:(NSString *) currencyCode;
 ```
 
-#### Return Value
+## Return Value
 
 The localized name of the currency.
 
-#### Discussion
+## Discussion
 
 For example, calling this method on an American English (`en_US`) locale, passing `"JPY"` for `currencyCode`, produces the string `"Japanese Yen"`.
 

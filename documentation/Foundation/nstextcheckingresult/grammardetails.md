@@ -25,7 +25,7 @@ var grammarDetails: [[String : Any]]? { get }
 @property (copy, readonly, nullable) NSArray<NSDictionary<NSString *,id> *> * grammarDetails;
 ```
 
-#### Discussion
+## Discussion
 
 This array of strings is suitable for presenting to the user.
 

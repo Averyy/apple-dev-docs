@@ -24,7 +24,7 @@ func JSObjectHasProperty(_ ctx: JSContextRef!, _ object: JSObjectRef!, _ propert
 bool JSObjectHasProperty(JSContextRef ctx, JSObjectRef object, JSStringRef propertyName);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the object has a property with a name that matches `propertyName`; otherwise, [`false`](../Swift/false.md).
 

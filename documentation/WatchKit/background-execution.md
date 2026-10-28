@@ -5,18 +5,18 @@
 
 Manage background sessions and tasks.
 
-#### Overview
+## Overview
 
 Apps on watchOS primarily run in the foreground to limit the impact on system resources. However, sometimes an app needs to perform an action when it’s not the foreground app. For a limited number of cases, watchOS provides options for running in the background.
 
-##### Handle background notifications
+### Handle background notifications
 
 When the system launches your app in the background, you can:
 
 - Handle background notifications from local or remote notifications with a [`UNUserNotificationCenterDelegate`](../UserNotifications/unusernotificationcenterdelegate.md) delegate. For more information, see [Handling notifications and notification-related actions](../UserNotifications/handling-notifications-and-notification-related-actions.md).
 - Receive push notifications to update your app’s complications with a [`PKPushRegistryDelegate`](../PushKit/pkpushregistrydelegate.md) delegate. For more information, see [PushKit](../PushKit/PushKit.md).
 
-##### Schedule and handle background refresh tasks
+### Schedule and handle background refresh tasks
 
 A watchOS app uses a *background refresh task* to perform work in the background. If your app requires background operations, use one of the following techniques to respond to the task:
 
@@ -25,7 +25,7 @@ A watchOS app uses a *background refresh task* to perform work in the background
 
 In both cases, the system launches your app and gives it a few seconds of background execution time to perform the task. Complete the background task as quickly as possible. For more information, see [Using background tasks](./using-background-tasks.md).
 
-##### Start background sessions
+### Start background sessions
 
 Apps that support workouts, audio playback, or location updates can continue to run in the background until the current session ends. Your app must enable the appropriate background mode in your project’s capabilities, and then start the session while your app is running in the foreground.
 
@@ -33,7 +33,7 @@ Apps that support workouts, audio playback, or location updates can continue to 
 - Use the [`AVAudioSession`](../AVFAudio/avaudiosession.md) class to play extended audio files in the background. For more information, see [Playing Background Audio](./playing-background-audio.md).
 - Use a [`CLLocationManager`](../CoreLocation/cllocationmanager.md) object to start a continuous background location session. For more information, see [`allowsBackgroundLocationUpdates`](../CoreLocation/cllocationmanager/allowsbackgroundlocationupdates.md).
 
-##### Set up extended runtime sessions
+### Set up extended runtime sessions
 
 Extended runtime sessions give your app additional time to run while the session is active. Extended runtime sessions provide support for the following session types:
 

@@ -19,7 +19,7 @@ An entitlement that works with the EnergyKit framework to share energy data and 
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 When you adopt this entitlement, the framework displays device names and energy usage context in the Home app. The information derives from the two load events, [`ElectricVehicleLoadEvent`](../../EnergyKit/electricvehicleloadevent.md) and [`ElectricHVACLoadEvent`](../../EnergyKit/electrichvacloadevent.md), that your app submits to the system. The Home app displays the data in the form of activity logs, historical charts, and trend notifications.
 

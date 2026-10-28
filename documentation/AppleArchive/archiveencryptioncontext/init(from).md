@@ -21,7 +21,7 @@ Returns a new encryption context from the specified encrypted stream.
 init?(from stream: ArchiveByteStream)
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to either reopen an encrypted stream for writing or open an encrypted stream for reading. After you open the encryption context, query the archive properties and insert the credentials necessary to unlock and sign the stream.
 

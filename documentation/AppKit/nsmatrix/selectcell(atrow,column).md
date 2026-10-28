@@ -19,7 +19,7 @@ func selectCell(atRow row: Int, column col: Int)
 - (void) selectCellAtRow:(NSInteger) row column:(NSInteger) col;
 ```
 
-#### Discussion
+## Discussion
 
 If the specified cell is an editable text cell, its text is selected. If either `row` or `column` is –1, then the current selection is cleared (unless the receiver is an `NSRadioModeMatrix` and doesn’t allow empty selection). This method redraws the affected cells.
 

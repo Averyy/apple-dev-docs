@@ -29,7 +29,7 @@ var fillShader: SKShader? { get set }
 
 - [Controlling Shape Drawing with Shaders](../controlling-shape-drawing-with-shaders.md)
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. If a `fillShader` is specified, when the shape node is drawn, the shader is used to determine the output colors for any part of the shape node that’s fillled. SpriteKit implements many fill features using a default shader, such as:
 

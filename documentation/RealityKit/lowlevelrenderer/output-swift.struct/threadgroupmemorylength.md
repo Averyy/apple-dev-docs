@@ -18,7 +18,7 @@ The per-tile size, in bytes, of the persistent threadgroup memory allocation, us
 var threadgroupMemoryLength: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLRenderCommandEncoder.threadgroupMemoryLength`.
 

@@ -23,11 +23,11 @@ optional func applicationShouldAutomaticallyLocalizeKeyCommands(_ application: U
 - (BOOL) applicationShouldAutomaticallyLocalizeKeyCommands:(UIApplication *) application;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to enable automatic shortcut localization for all app-specific menus, or [`false`](../../Swift/false.md) to handle shortcut localization yourself.
 
-#### Discussion
+## Discussion
 
 A keyboard shortcut you specify in one language might be difficult or impossible to reproduce on a keyboard with a different character set or layout. Localized keyboards sometimes rearrange punctuation marks or replace them altogether to make room for a language’s required characters. The new locations of those keys might make it difficult to use your current shortcuts. To ensure your shortcuts are always usable, the system can automatically remap shortcuts, as needed, to accommodate the connected keyboard.
 

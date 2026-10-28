@@ -25,7 +25,7 @@ func CTGlyphInfoGetCharacterIdentifier(_ glyphInfo: CTGlyphInfo) -> CGFontIndex
 extern CGFontIndex CTGlyphInfoGetCharacterIdentifier(CTGlyphInfoRef glyphInfo);
 ```
 
-#### Return Value
+## Return Value
 
 The character identifier of the given glyph info object.
 

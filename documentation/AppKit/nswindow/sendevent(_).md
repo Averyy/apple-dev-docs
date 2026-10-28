@@ -19,7 +19,7 @@ func sendEvent(_ event: NSEvent)
 - (void) sendEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Never invoke this method directly. A right mouse-down event in a window of an inactive application isn’t delivered to the corresponding `NSWindow` object. Instead, a [`sendEvent(_:)`](../nsapplication/sendevent%28_%29.md) message with a window number of `0` delivers it to the NSApplication object.
 

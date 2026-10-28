@@ -23,7 +23,7 @@ init<ValueType, Parameter>(_ keyPath: KeyPath<Intent, Parameter>, _ comparisonOp
 
 Available when `Intent` conforms to `AppIntent`, `WhenCondition` conforms to `ParameterSummary`, and `Otherwise` conforms to `ParameterSummary`.
 
-#### Discussion
+## Discussion
 
 Example:
 

@@ -12,11 +12,11 @@ virtual SCSILogicalUnitNumber ReportHBAHighestLogicalUnitNumber (
  void ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 returns a valid 64-bit logical unit number.
 
-#### Overview
+## Overview
 
 This method is used to query the HBA child class to determine what the highest Logical Unit Number that the controller can address.
 

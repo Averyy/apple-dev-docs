@@ -25,11 +25,11 @@ func throttle<S>(for interval: S.SchedulerTimeType.Stride, scheduler: S, latest:
 
 - [Processing Published Elements with Subscribers](../processing-published-elements-with-subscribers.md)
 
-#### Return Value
+## Return Value
 
 A publisher that emits either the most-recent or first element received during the specified interval.
 
-#### Discussion
+## Discussion
 
 Use [`throttle(for:scheduler:latest:)`](./throttle%28for,scheduler,latest%29.md) to selectively republish elements from an upstream publisher during an interval you specify. Other elements received from the upstream in the throttling interval aren’t republished.
 

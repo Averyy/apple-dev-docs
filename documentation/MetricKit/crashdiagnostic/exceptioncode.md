@@ -19,7 +19,7 @@ Processor specific information about the exception.
 let exceptionCode: UInt64?
 ```
 
-#### Discussion
+## Discussion
 
 Encoded into one or more 64-bit hexadecimal numbers.
 

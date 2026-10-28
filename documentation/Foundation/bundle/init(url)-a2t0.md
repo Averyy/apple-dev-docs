@@ -22,11 +22,11 @@ convenience init?(url: URL)
 + (instancetype) bundleWithURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSBundle` object that corresponds to `url`, or `nil` if `url` does not identify an accessible bundle directory.
 
-#### Discussion
+## Discussion
 
 This method allocates and initializes the returned object if there is no existing `NSBundle` associated with `url`, in which case it returns the existing object.
 

@@ -21,7 +21,7 @@ struct PINToken
 
 - [Adding support for Tap to Pay on iPhone to your app](../adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 
-#### Overview
+## Overview
 
 When the payment card issuer requests the PIN during a transaction, your participating payment service provider must provide this token as part of the response.
 

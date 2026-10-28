@@ -22,7 +22,7 @@ static var eraseFile: AudioFileFlags { get }
 kAudioFileFlags_EraseFile
 ```
 
-#### Discussion
+## Discussion
 
 If set, the [`AudioFileCreateWithURL(_:_:_:_:_:)`](../audiofilecreatewithurl%28_,_,_,_,_%29.md) function erases the contents of an existing file. If not set, then the function fails if the file already exists.
 

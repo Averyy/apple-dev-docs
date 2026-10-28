@@ -24,7 +24,7 @@ unowned(unsafe) var feedbackQueue: dispatch_queue_t? { get set }
 @property (nonatomic, assign, nullable) dispatch_queue_t feedbackQueue;
 ```
 
-#### Discussion
+## Discussion
 
 When you assign a dispatch queue via this method, Metal requires that the queue parameter you provide is a serial queue.
 

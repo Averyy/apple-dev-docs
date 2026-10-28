@@ -26,7 +26,7 @@ var context: UnsafeMutableRawPointer? { get }
 @property (nonatomic, readonly, nullable) void * context;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, the value of this property is a Core OpenGL [`cglContextObj`](../../AppKit/nsopenglcontext/cglcontextobj.md) object.
 

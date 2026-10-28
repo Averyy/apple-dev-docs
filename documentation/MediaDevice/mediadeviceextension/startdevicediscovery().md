@@ -23,7 +23,7 @@ func startDeviceDiscovery()
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Discussion
+## Discussion
 
 Use the `Network`, `WiFiAware`, or `CoreBluetooth` frameworks for service discovery.
 

@@ -24,11 +24,11 @@ init(name: String? = nil, executorPreference taskExecutor: (any TaskExecutor)?, 
 
 Available when `Success` conforms to `Sendable` and `Failure` is `Never`.
 
-#### Return Value
+## Return Value
 
 A reference to the task.
 
-#### Discussion
+## Discussion
 
 You need to keep a reference to the task if you want to cancel it by calling the `Task.cancel()` method. Discarding your reference to a task doesn’t implicitly cancel that task, it only makes it impossible for you to explicitly cancel the task.
 

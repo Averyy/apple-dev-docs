@@ -24,7 +24,7 @@ class let openDefaultApplicationsSettingsURLString: String
 extern NSString * const UIApplicationOpenDefaultApplicationsSettingsURLString;
 ```
 
-#### Discussion
+## Discussion
 
 Create a URL from this value and pass it to the [`open(_:options:completionHandler:)`](./open%28_,options,completionhandler%29.md) method to launch the Settings app and display your app’s custom settings, if it has any:
 

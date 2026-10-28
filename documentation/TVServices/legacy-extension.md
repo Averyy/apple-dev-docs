@@ -5,7 +5,7 @@
 
 Help users discover your app by providing top shelf content and a description of your tvOS app.
 
-#### Overview
+## Overview
 
 In iOS 12 and earlier, you provide Top Shelf information by adding a TVServices app extension to your app. Your extension returns an array describing available content for your app, and the system uses this information to update the Top Shelf. You describe your media to the operating system using [`TVContentItem`](./tvcontentitem.md) objects. Each [`TVContentItem`](./tvcontentitem.md) object represents either a piece of content or acts as a container for other [`TVContentItem`](./tvcontentitem.md) objects. A content object typically includes an image and a title for tvOS to display, along with other metadata related to the content item.
 

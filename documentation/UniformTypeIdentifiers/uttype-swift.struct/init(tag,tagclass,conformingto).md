@@ -21,7 +21,7 @@ Creates a type based on a tag, a tag class, and a supertype that it conforms to.
 init?(tag: String, tagClass: UTTagClass, conformingTo supertype: UTType?)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer returns `nil` if the system doesn’t know the tag.
 

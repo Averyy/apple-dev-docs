@@ -15,7 +15,7 @@ The direction of data transfer for this task.
 uint8_t fTransferDirection;
 ```
 
-#### Discussion
+## Discussion
 
 Use the constants in [`Data Transfer Direction`](../../iokit/api-1534749-data_transfer_direction.md) for this value.
 

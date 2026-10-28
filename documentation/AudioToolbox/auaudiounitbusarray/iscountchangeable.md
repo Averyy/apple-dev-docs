@@ -32,7 +32,7 @@ var isCountChangeable: Bool { get }
 @property (atomic, readonly, getter=isCountChangeable) BOOL countChangeable;
 ```
 
-#### Discussion
+## Discussion
 
 The base implementation default value is [`false`](../../Swift/false.md).
 

@@ -23,7 +23,7 @@ optional func navigationBar(_ navigationBar: UINavigationBar, didPush item: UINa
 - (void) navigationBar:(UINavigationBar *) navigationBar didPushItem:(UINavigationItem *) item;
 ```
 
-#### Discussion
+## Discussion
 
 If pushing an item onto the navigation bar is animated, this method is invoked after the animation ends; otherwise, it is invoked immediately after the push.
 

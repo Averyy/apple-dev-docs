@@ -20,7 +20,7 @@ func tabView(_ tabView: NSTabView, willSelect tabViewItem: NSTabViewItem?)
 - (void) tabView:(NSTabView *) tabView willSelectTabViewItem:(NSTabViewItem *) tabViewItem;
 ```
 
-#### Discussion
+## Discussion
 
 This method is a delegate method called by the [`NSTabView`](../nstabview.md) object when changes occur. Use it to update your UI or perform any tasks before a tab is selected.
 

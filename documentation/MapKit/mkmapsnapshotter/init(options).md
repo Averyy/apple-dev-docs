@@ -25,7 +25,7 @@ init(options: MKMapSnapshotter.Options)
 - (instancetype) initWithOptions:(MKMapSnapshotOptions *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized snapshotter object.
 

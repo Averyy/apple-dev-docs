@@ -26,7 +26,7 @@ var progress: Progress { get }
 @property (strong, readonly) NSProgress * progress;
 ```
 
-#### Discussion
+## Discussion
 
 This [`Progress`](../progress.md) object will begin updating after [`beginAccessingResources(completionHandler:)`](./beginaccessingresources%28completionhandler%29.md) is called.
 

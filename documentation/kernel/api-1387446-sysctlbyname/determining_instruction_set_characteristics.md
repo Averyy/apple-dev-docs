@@ -5,7 +5,7 @@
 
 Interrogate the system for details about the instruction set.
 
-#### Overview
+## Overview
 
 Use parameters with the [`sysctlbyname`](../api-1387446-sysctlbyname.md) interface to check for the existence of Instruction Set Architecture (ISA) features available in Apple silicon and documented at [Arm Architecture Reference Manual for A-profile architecture](https://developer.arm.com/documentation/ddi0487/latest). Implemented features have a parameter value of 1. Features that aren’t implemented have a parameter value of 0. Non-existent features return an error.
 
@@ -18,7 +18,7 @@ The following parameters provide information about the availability of advanced 
   This parameter replaces `hw.optional.neon`.
 - **`hw.optional.floatingpoint`**: General support for floating-point instructions.
 
-##### Determine Advanced SIMD and Floating Point Capabilities
+### Determine Advanced SIMD and Floating Point Capabilities
 
 The following parameters provide information about SIMD and floating point support in the processor.
 
@@ -41,7 +41,7 @@ The following parameters provide information about SIMD and floating point suppo
 - **`hw.optional.arm.FEAT_JSCVT`**: JavaScript conversion instruction.
 - **`hw.optional.arm.FEAT_RDM`**: Advanced SIMD rounding double multiply accumulate instructions.
 
-##### Determine Integer Capabilities
+### Determine Integer Capabilities
 
 The following parameters provide information about integer support in the processor.
 
@@ -49,7 +49,7 @@ The following parameters provide information about integer support in the proces
 - **`hw.optional.arm.FEAT_FlagM2`**: Enhancements to condition flag manipulation instructions.
 - **`hw.optional.armv8_crc32`**: CRC32 instructions.
 
-##### Determine Atomic and Memory Ordering Instruction Capabilities
+### Determine Atomic and Memory Ordering Instruction Capabilities
 
 The following parameters provide information about atomicity and memory capabilities.
 
@@ -60,7 +60,7 @@ The following parameters provide information about atomicity and memory capabili
   This parameter replaces `hw.optional.armv8_1_atomics`.
 - **`hw.optional.arm.FEAT_LSE2`**: Changes to single-copy atomicity and alignment requirements for loads and stores for large systems.
 
-##### Determine Encryption Capabilities
+### Determine Encryption Capabilities
 
 The following parameters provide information about support for instructions that accelerate encryption and decryption in the processor.
 
@@ -75,7 +75,7 @@ The following parameters provide information about support for instructions that
 
   This parameter replaces `hw.optional.armv8_2_sha3`.
 
-##### Determine General Capabilities
+### Determine General Capabilities
 
 The following parameters provide information about other capabiltiies in the processor.
 

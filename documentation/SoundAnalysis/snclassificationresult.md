@@ -25,7 +25,7 @@ class SNClassificationResult
 @interface SNClassificationResult : NSObject
 ```
 
-#### Overview
+## Overview
 
 An `SNClassificationResult` represents the predictions that a sound classification model made for a time span in an audio file or stream. Each result contains one or more classification predictions and a time range within the audio data.
 

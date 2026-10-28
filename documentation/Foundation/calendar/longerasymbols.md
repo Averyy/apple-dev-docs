@@ -21,7 +21,7 @@ A list of longer-named eras in this calendar, localized to the Calendar’s `loc
 var longEraSymbols: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for English in the Gregorian calendar, returns `["Before Christ", "Anno Domini"]`.
 

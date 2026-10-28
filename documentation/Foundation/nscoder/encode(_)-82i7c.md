@@ -20,7 +20,7 @@ func encode(_ size: NSSize)
 - (void) encodeSize:(NSSize) size;
 ```
 
-#### Discussion
+## Discussion
 
 `NSCoder`’s implementation invokes [`encodeValue(ofObjCType:at:)`](./encodevalue%28ofobjctype,at%29.md) to encode `size`.
 

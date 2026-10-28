@@ -24,11 +24,11 @@ convenience init(type quantityType: HKQuantityType, quantity: HKQuantity, start 
 + (instancetype) quantitySampleWithType:(HKQuantityType *) quantityType quantity:(HKQuantity *) quantity startDate:(NSDate *) startDate endDate:(NSDate *) endDate;
 ```
 
-#### Return Value
+## Return Value
 
 A valid quantity sample.
 
-#### Discussion
+## Discussion
 
 HealthKit uses quantity samples to represent sample data using a numeric value. To create a quantity sample, first create the corresponding quantity type and quantity, and then set its start and end dates. You produce a new quantity sample.
 

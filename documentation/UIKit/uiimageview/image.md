@@ -23,7 +23,7 @@ var image: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the main image displayed by the image view. This image is displayed when the image view is in its natural state. When highlighted, the image view displays the image in its [`highlightedImage`](./highlightedimage.md) property instead. If that property is set to `nil`, the image view applies a default highlight to this image. If the [`animationImages`](./animationimages.md) property contains a valid set of images, those images are used instead.
 

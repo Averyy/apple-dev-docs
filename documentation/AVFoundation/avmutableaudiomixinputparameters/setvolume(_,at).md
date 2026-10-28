@@ -25,7 +25,7 @@ func setVolume(_ volume: Float, at time: CMTime)
 - (void) setVolume:(float) volume atTime:(CMTime) time;
 ```
 
-#### Discussion
+## Discussion
 
 This method adds a volume ramp starting at `time`. This volume setting remains in effect until the end of the track unless you set a different volume level to start at a later time.
 

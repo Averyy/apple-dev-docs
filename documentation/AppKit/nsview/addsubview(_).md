@@ -19,7 +19,7 @@ func addSubview(_ view: NSView)
 - (void) addSubview:(NSView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 This method also sets the view as the next responder of `aView`.
 

@@ -5,7 +5,7 @@
 
 Adjust anchor loudness when measurements of speech-gated loudness for a full mix may be inaccurate, such as when speech activity is low.
 
-#### Overview
+## Overview
 
 Apply the adjustment method below to improve the consistency of your anchor loudness, or standard, value for low speech activity. The method’s basis is a statistical model of anchor loudness for a large variety of long-form content that takes advantage of the correlation with other loudness-based measurements. The method uses the following measurements:
 
@@ -18,7 +18,7 @@ For low speech activity, the model ignores the speech-gated loudness value and c
 
 The following examples and source code show how to calculate anchor loudness using program loudness and speech-gated loudness.
 
-##### Determine anchor loudness using different program loudness values
+### Determine anchor loudness using different program loudness values
 
 The following figure shows a visual representation of anchor loudness for an example with a speech-gated loudness of -27 LKFS (loudness, K-weighted, relative to full scale) and different program loudness values.
 

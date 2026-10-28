@@ -14,7 +14,7 @@
 kUnicodeVerticalFormMask = 1L << kUnicodeVerticalFormBit
 ```
 
-#### Discussion
+## Discussion
 
 A mask for setting the vertical form control flag. The vertical form control flag tells the Unicode Converter how to map text elements for which there are both abstract and vertical presentation forms in the destination encoding. 
 

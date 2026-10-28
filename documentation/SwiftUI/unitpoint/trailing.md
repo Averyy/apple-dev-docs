@@ -21,7 +21,7 @@ A point that’s centered vertically on the trailing edge of a view.
 static let trailing: UnitPoint
 ```
 
-#### Discussion
+## Discussion
 
 This point occupies the position where the horizontal and vertical alignment guides intersect for [`trailing`](../alignment/trailing.md) alignment. The trailing edge appears on the right in a left-to-right language environment and on the left in a right-to-left environment.
 

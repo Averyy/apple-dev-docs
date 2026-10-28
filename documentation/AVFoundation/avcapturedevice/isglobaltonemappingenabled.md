@@ -22,7 +22,7 @@ var isGlobalToneMappingEnabled: Bool { get set }
 @property (nonatomic, getter=isGlobalToneMappingEnabled) BOOL globalToneMappingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Tone mapping is a technique used to map the pixel levels in high dynamic range images to a reduced dynamic range (such as mapping from 16-bit to 8-bit), while still retaining an appearance as close to the original image as possible. Normally the active camera uses adaptive, local tone curves to preserve the highest image quality and adapt quickly to changing lighting conditions.
 

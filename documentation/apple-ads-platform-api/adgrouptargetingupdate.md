@@ -15,7 +15,7 @@ The targeting configuration for updating an existing ad group, specifying audien
 object AdGroupTargetingUpdate
 ```
 
-#### Overview
+## Overview
 
 For valid location identifier values and geographic lookup, see [Geo Targeting Endpoints](./geo-targeting-endpoints.md).
 

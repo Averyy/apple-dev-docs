@@ -21,7 +21,7 @@ Returns a subsequence containing the initial elements until `predicate` returns 
 func prefix(while predicate: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(*n*), where *n* is the length of the collection.
 

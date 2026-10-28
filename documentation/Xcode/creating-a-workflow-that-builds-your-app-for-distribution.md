@@ -5,13 +5,13 @@
 
 Configure a workflow to build and sign your app for distribution to testers with TestFlight, in the App Store, or as a notarized app.
 
-#### Overview
+## Overview
 
 Delivering a version of your app to testers with TestFlight, uploading a version that’s eligible for app review, or sharing a notarized version a recipient can trust are key tasks of a continuous deployment (CD) practice. Configure an Xcode Cloud workflow that does multiple tasks, or create separate workflows — depending on your preferences, requirements, and the resulting workflow strategy.
 
 If you’re new to continuous integration and delivery (CI/CD), see [About continuous integration and delivery with Xcode Cloud](./about-continuous-integration-and-delivery-with-xcode-cloud.md). For more information on developing a workflow strategy, see [Developing a workflow strategy for Xcode Cloud](./developing-a-workflow-strategy-for-xcode-cloud.md).
 
-##### Configure the workflow
+### Configure the workflow
 
 When you create a new workflow to create a new version of your app for distribution to testers with TestFlight, in the App Store, or with notarization, make sure to:
 

@@ -21,7 +21,7 @@ init?(voice: NSSpeechSynthesizer.VoiceName?)
 - (instancetype) initWithVoice:(NSSpeechSynthesizerVoiceName) voice;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized speech synthesizer or `nil` when the voice identified by `voiceIdentifier` is not available or when there’s an allocation error.
 

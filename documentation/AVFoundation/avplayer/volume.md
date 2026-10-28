@@ -26,7 +26,7 @@ var volume: Float { get set }
 @property float volume;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0.0` indicates silence; a value of `1.0` (the default) indicates full audio volume for the player instance.
 

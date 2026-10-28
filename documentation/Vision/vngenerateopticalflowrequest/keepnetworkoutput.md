@@ -24,7 +24,7 @@ var keepNetworkOutput: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL keepNetworkOutput;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`false`](../../Swift/false.md). When you set this to [`true`](../../Swift/true.md), the system ignores [`outputPixelFormat`](./outputpixelformat.md). Setting this for revision 1 has no effect because it’s not machine learning-based.
 

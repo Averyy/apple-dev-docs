@@ -20,7 +20,7 @@ The optional time, in seconds, at which the animation stops.
 var trimEnd: TimeInterval? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` by default, which plays the animation until the [`end`](./end.md) frame interval. If you set a value, the animation subtracts an additional seconds duration from the animation data that the [`end`](./end.md) frame interval references.
 

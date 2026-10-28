@@ -19,7 +19,7 @@ var isRichText: Bool { get set }
 @property (getter=isRichText) BOOL richText;
 ```
 
-#### Discussion
+## Discussion
 
 If `flag` is [`true`](../../Swift/true.md) the receiver allows the user to apply attributes to specific ranges of the text; if `flag` is [`false`](../../Swift/false.md) it doesn’t.
 

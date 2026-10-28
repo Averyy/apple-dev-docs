@@ -32,7 +32,7 @@ var unifyResults: Bool { get set }
 @property (atomic) BOOL unifyResults;
 ```
 
-#### Discussion
+## Discussion
 
 A unified contact is an aggregation of properties from a set of linked individual contacts. When the value of this property is [`true`](../../Swift/true.md), the fetch returns unified contacts; otherwise, it returns individual contacts. The default value of this property is [`true`](../../Swift/true.md).
 

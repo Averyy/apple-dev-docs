@@ -17,7 +17,7 @@ A date that indicates when the system needs to invalidate this registration.
 var invalidationDate: Date?
 ```
 
-#### Discussion
+## Discussion
 
 Use this date when you know the expiration time period of a document. If this is `nil`, the registration never expires.
 

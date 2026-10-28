@@ -4,7 +4,7 @@
 
 Create a smooth and responsive drawing experience using UIKit’s predictions for touch locations.
 
-#### Overview
+## Overview
 
 It takes time for UIKit to generate and deliver touch events to your app, and it takes time for your app to process those events and render the results. In fact, it takes enough time that there can be a visible lag between the movements of a person’s finger or Apple Pencil and the rendered results. To minimize the perceived latency between touch input and rendered content, you can incorporate predicted touches into your event handling.
 

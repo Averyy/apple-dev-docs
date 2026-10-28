@@ -29,7 +29,7 @@ class var all: [GKChallengeDefinition] { get async throws }
 + (void) loadChallengeDefinitionsWithCompletionHandler:(void (^)(NSArray<GKChallengeDefinition *> *challengeDefinitions, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Archived challenge definitions are excluded.
 

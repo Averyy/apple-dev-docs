@@ -25,7 +25,7 @@ var playbackStartOffset: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval playbackStartOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “c-start-time”.
 

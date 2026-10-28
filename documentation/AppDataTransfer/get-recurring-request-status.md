@@ -9,7 +9,7 @@ Get the status of an instance of a recurring download request.
 **Availability**:
 - App Data Transfer 1.0+
 
-#### Overview
+## Overview
 
 **Request**:
 

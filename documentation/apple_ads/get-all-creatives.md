@@ -11,11 +11,11 @@ Fetches all creatives within an organization.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Use this endpoint to fetch details of all assigned [`Creative`](./creative.md) objects for your organization.
 
-##### Payload example: Get all creatives
+### Payload example: Get all creatives
 
 **Request**:
 

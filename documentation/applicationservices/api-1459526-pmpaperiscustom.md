@@ -19,11 +19,11 @@ func PMPaperIsCustom(_ paper: PMPaper) -> Bool
 Boolean PMPaperIsCustom(PMPaper paper);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the specified paper is a custom paper; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 You can create a custom paper with the function [`PMPaperCreateCustom(_:_:_:_:_:_:_:)`](./api-1459322-pmpapercreatecustom.md).
 

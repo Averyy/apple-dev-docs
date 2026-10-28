@@ -20,7 +20,7 @@ Configuration for feathering the clipping boundaries.
 struct FeatheredEdge
 ```
 
-#### Overview
+## Overview
 
 Feathering is defined separately for positive and negative edges of each axis, providing fine-grained control over how content fades out near the clipping bounds.
 

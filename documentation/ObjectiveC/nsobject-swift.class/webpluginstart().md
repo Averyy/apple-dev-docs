@@ -19,7 +19,7 @@ func webPlugInStart()
 - (void) webPlugInStart;
 ```
 
-#### Discussion
+## Discussion
 
 The plug-in usually begins its primary task (such as drawing, playing sounds, or animating) in this method. This method may be called more than once, provided that the application has already called [`webPlugInInitialize()`](./webplugininitialize%28%29.md) and that each call to this method is followed later by a call to [`webPlugInStop()`](./webpluginstop%28%29.md).
 

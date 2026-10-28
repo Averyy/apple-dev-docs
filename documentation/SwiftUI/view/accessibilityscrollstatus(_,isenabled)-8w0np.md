@@ -1,0 +1,71 @@
+# accessibilityScrollStatus(_:isEnabled:)
+
+**Framework**: SwiftUI  
+**Kind**: method  
+**Role**: Instance Method
+
+Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
+
+## Declaration
+
+```swift
+nonisolated
+func accessibilityScrollStatus(_ status: Text, isEnabled: Bool = true) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
+```
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated func accessibilityScrollStatus(_ status: LocalizedStringResource, isEnabled: Bool = true) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
+```
+
+```swift
+nonisolated
+func accessibilityScrollStatus(_ status: some StringProtocol, isEnabled: Bool = true) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
+```
+
+```swift
+nonisolated
+func accessibilityScrollStatus(_ statusKey: LocalizedStringKey, isEnabled: Bool = true) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
+```
+
+## Discussion
+
+Use this modifier to provide a description of the content at the current position in the scroll view. For example, you could use this modifier to announce the current month being scrolled to in a view that contains a calendar.
+
+```swift
+@State private var position = ScrollPosition(idType: Month.ID.self)
+
+ScrollView {
+    LazyVStack {
+        ForEach(months) { months in
+            MonthView(month: months)
+        }
+    }
+    .scrollTargetLayout()
+}
+.scrollPosition($position)
+.accessibilityScrollStatus("\(months.name(position.viewID)) \(year)")
+```
+
+By default, VoiceOver announces “Page X of Y” while scrolling.
+
+## Parameters
+
+- `status`: The current status of the scroll view.
+- `isEnabled`: If true the accessibility scroll status is applied; otherwise the accessibility scroll status is unchanged.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/view/accessibilityscrollstatus(_:isenabled:)-8w0np)*

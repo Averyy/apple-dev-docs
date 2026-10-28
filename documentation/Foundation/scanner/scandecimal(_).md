@@ -25,11 +25,11 @@ func scanDecimal(_ dcm: UnsafeMutablePointer<Decimal>?) -> Bool
 - (BOOL) scanDecimal:(NSDecimal *) dcm;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver finds a valid `NSDecimal` representation, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Invoke this method with `NULL` as `decimalValue` to simply scan past an `NSDecimal` representation.
 

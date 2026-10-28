@@ -24,11 +24,11 @@ func converting(toDepthDataType depthDataType: OSType) -> Self
 - (instancetype) depthDataByConvertingToDepthDataType:(OSType) depthDataType;
 ```
 
-#### Return Value
+## Return Value
 
 A new, converted depth data object.
 
-#### Discussion
+## Discussion
 
 This method raises an exception if you pass an invalid `depthDataType` value.
 

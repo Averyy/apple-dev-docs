@@ -19,7 +19,7 @@ An otherwise unspecified cloud-sharing error occurred.
 NSCloudSharingOtherError
 ```
 
-#### Discussion
+## Discussion
 
 For CloudKit sharing, use the [`NSUnderlyingErrorKey`](./nsunderlyingerrorkey.md), whose value is a [`CKErrorDomain`](../CloudKit/ckerrordomain.md) error, to discover the specific error. Refer to the [CloudKit](../CloudKit/CloudKit.md) documentation for the proper response to these errors.
 

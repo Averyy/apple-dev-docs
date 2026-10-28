@@ -26,7 +26,7 @@ var ubiquityIdentityToken: (any NSCoding & NSCopying & NSObjectProtocol)? { get 
 @property (copy, readonly, nullable) id<NSCoding,NSCopying,NSObject> ubiquityIdentityToken;
 ```
 
-#### Discussion
+## Discussion
 
 In iCloud Drive Documents, when iCloud is available, this property contains an opaque object representing the identity of the current user. If iCloud is unavailable or there is no logged-in user, the value of this property is `nil`. Accessing the value of this property is relatively fast, so you can check the value at launch time from your app’s main thread.
 

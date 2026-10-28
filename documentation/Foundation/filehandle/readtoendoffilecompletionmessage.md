@@ -21,7 +21,7 @@ A message a file handle sends when it reads all data in a file, or another proce
 struct ReadToEndOfFileCompletionMessage
 ```
 
-#### Overview
+## Overview
 
 Before adding an observer for this message type, call either [`readToEndOfFileInBackgroundAndNotify()`](./readtoendoffileinbackgroundandnotify%28%29.md) or [`readToEndOfFileInBackgroundAndNotify(forModes:)`](./readtoendoffileinbackgroundandnotify%28formodes%29.md) on an appropriate [`FileHandle`](../filehandle.md) object.
 

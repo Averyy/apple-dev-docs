@@ -25,7 +25,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a formatter is initialized to use the GMT time zone, the [RFC 3339](https://www.ietf.org/rfc/rfc3339) standard format (`"yyyy-MM-dd'T'HH:mm:ssZZZZZ"`), and the following options: [`withInternetDateTime`](./options/withinternetdatetime.md), [`withDashSeparatorInDate`](./options/withdashseparatorindate.md), [`withColonSeparatorInTime`](./options/withcolonseparatorintime.md), and [`withTimeZone`](./options/withtimezone.md).
 

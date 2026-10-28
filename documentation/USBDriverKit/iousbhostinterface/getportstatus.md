@@ -15,7 +15,7 @@ Gets the current port status.
 virtual kern_return_t GetPortStatus(uint32_t *portStatus);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 

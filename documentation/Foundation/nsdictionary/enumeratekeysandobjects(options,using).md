@@ -25,7 +25,7 @@ func enumerateKeysAndObjects(options opts: NSEnumerationOptions = [], using bloc
 - (void) enumerateKeysAndObjectsWithOptions:(NSEnumerationOptions) opts usingBlock:(void (^)(KeyType key, ObjectType obj, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 If the block sets `*stop` to [`true`](../../Swift/true.md), the enumeration stops.
 

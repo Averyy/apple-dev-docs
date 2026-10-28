@@ -15,7 +15,7 @@ The width of a line’s stroke, in CSS pixels.
 lineWidth?: number;
 ```
 
-#### Discussion
+## Discussion
 
 The default line width is `1`.
 

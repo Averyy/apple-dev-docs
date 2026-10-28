@@ -22,7 +22,7 @@ A sequence whose elements are produced via repeated applications of a closure to
 struct UnfoldSequence<Element, State>
 ```
 
-#### Overview
+## Overview
 
 The elements of the sequence are computed lazily and the sequence may potentially be infinite in length.
 

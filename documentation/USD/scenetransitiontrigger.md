@@ -4,11 +4,11 @@
 
 A trigger that fires during scene transitions.
 
-#### Overview
+## Overview
 
 Use this trigger to perform actions after a scene loads. For more information about scenes, see [sceneLibrary](./scenelibrary.md).
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Trigger "SceneTransitionTrigger"

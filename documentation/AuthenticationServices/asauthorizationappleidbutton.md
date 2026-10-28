@@ -32,7 +32,7 @@ class ASAuthorizationAppleIDButton
 @interface ASAuthorizationAppleIDButton : NSControl
 ```
 
-#### Overview
+## Overview
 
 Choose one of the built-in button styles and types, and change the corner radius of the button by setting the [`cornerRadius`](./asauthorizationappleidbutton/cornerradius.md) property, but don’t otherwise modify the style of the button. Don’t use an Apple ID authorization button for any purpose other than to initiate the Sign In with Apple flow.
 

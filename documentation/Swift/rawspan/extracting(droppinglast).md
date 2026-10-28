@@ -21,11 +21,11 @@ Returns a span over all but the given number of trailing bytes.
 func extracting(droppingLast k: Int) -> RawSpan
 ```
 
-#### Return Value
+## Return Value
 
 A span leaving off the specified number of bytes at the end.
 
-#### Discussion
+## Discussion
 
 If the number of bytes to drop exceeds the number of bytes in the span, the result is an empty span.
 

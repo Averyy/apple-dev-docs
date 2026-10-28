@@ -25,7 +25,7 @@ let kCVPixelBufferPoolMinimumBufferCountKey: CFString
 extern CFStringRef const kCVPixelBufferPoolMinimumBufferCountKey;
 ```
 
-#### Discussion
+## Discussion
 
 Include this key in the pool attributes dictionary you pass to [`CVPixelBufferPoolCreate(_:_:_:_:)`](./cvpixelbufferpoolcreate%28_,_,_,_%29.md).
 

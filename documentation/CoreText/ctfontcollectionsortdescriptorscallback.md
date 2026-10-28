@@ -25,7 +25,7 @@ typealias CTFontCollectionSortDescriptorsCallback = (CTFontDescriptor, CTFontDes
 typedef enum CFComparisonResult (*)(const struct __CTFontDescriptor *, const struct __CTFontDescriptor *, void *) CTFontCollectionSortDescriptorsCallback;
 ```
 
-#### Return Value
+## Return Value
 
 The matching font descriptors of a collection in sorted order.
 

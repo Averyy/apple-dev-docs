@@ -10,11 +10,11 @@ Create full-fledged TVML documents by using data binding and queries on simplifi
 - tvOS 12.0+
 - Xcode 14.2+
 
-#### Overview
+## Overview
 
 This sample shows how to combine JavaScript, JSON data, and TVML elements to create compact TVML documents. You start by creating a local server on your computer to store all of the JSON data and TVML documents. The app reads the JSON data and applies it to the TVML document, and then displays movie posters onscreen. The titles display with different colors based on the amount of rental time remaining.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before running the app, you need to set up a local server:
 
@@ -26,7 +26,7 @@ Before running the app, you need to set up a local server:
 
 After testing the sample app in Apple TV simulator, you can close the local server by pressing Control-C in Terminal. Closing the Terminal window also stops the server.
 
-##### Set up the TVML document
+### Set up the TVML document
 
 The TVML document uses the `prototypes` element to create a reusable collection of elements. Use the `prototype` attribute to uniquely identify the elements. The app creates two `lockup` elements that contain movie poster information.
 
@@ -52,7 +52,7 @@ Each `lockup` contains a set of rules, or queries, that change the color of the 
 </rules>
 ```
 
-##### Retrieve the JSON data
+### Retrieve the JSON data
 
 Use an [`XMLHttpRequest`](./xmlhttprequest.md) to retrieve the JSON information from your server. This creates two arrays that hold JSON objects. Each object has the following properties: `type`, `ID`, `url`, `title`, and `hoursRemaining`. The `hoursRemaining` property contains the data that the queries in the previous section use.
 
@@ -70,7 +70,7 @@ Use an [`XMLHttpRequest`](./xmlhttprequest.md) to retrieve the JSON information 
 }
 ```
 
-##### Bind the JSON data
+### Bind the JSON data
 
 You need to add a type and an identifier to each JSON object because creating new `DataItem` objects requires both a type and a unique identifier for each object. The `type` groups like items together and identifies the correct element to populate the `section` element. The `ID` identifies each object and needs to be unique within each type.
 

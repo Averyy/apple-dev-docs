@@ -21,7 +21,7 @@ Minimum loss reduction required to further split a node during the tree learning
 var minimumLossReduction: Double
 ```
 
-#### Discussion
+## Discussion
 
 Larger values can help prevent overfitting by avoiding splits that do not sufficiently reduce the loss function. Defaults to 0.
 

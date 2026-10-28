@@ -22,7 +22,7 @@ class VTFrameRateConversionParameters
 @interface VTFrameRateConversionParameters : NSObject
 ```
 
-#### Overview
+## Overview
 
 This object is used in the processWithParameters call of a VTFrameProcessor class. The output parameter is a destinationFrame where the output frame is returned as a VTFrameProcessorMutableFrame back to the caller function once the processing completes.
 

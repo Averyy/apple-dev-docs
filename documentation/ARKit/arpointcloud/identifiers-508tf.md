@@ -17,7 +17,7 @@ A list of unique identifiers corresponding to detected feature points.
 var identifiers: [UInt64] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Each identifier in this list corresponds to the point vector at the same index in the [`points`](./points-4vkif.md) array.
 

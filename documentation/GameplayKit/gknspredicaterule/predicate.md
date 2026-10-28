@@ -24,7 +24,7 @@ var predicate: NSPredicate { get }
 @property (nonatomic, retain, readonly) NSPredicate * predicate;
 ```
 
-#### Discussion
+## Discussion
 
 When the rule is evaluated, GameplayKit tests this predicate against the GKRuleSystem object evaluating the rule.
 

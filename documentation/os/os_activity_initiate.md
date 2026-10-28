@@ -25,7 +25,7 @@ Synchronously executes a new activity using the provided block.
 
 - [Collecting Log Messages in Activities](./collecting-log-messages-in-activities.md)
 
-#### Discussion
+## Discussion
 
 This function creates a new activity object implicitly as a child of the current activity object on the current thread. The object persists for the duration of the activity block’s execution.
 

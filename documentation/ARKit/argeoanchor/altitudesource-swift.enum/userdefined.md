@@ -20,7 +20,7 @@ case userDefined
 ARAltitudeSourceUserDefined
 ```
 
-#### Discussion
+## Discussion
 
 ARKit records this altitude source when your app defines a geo anchor’s altitude.
 

@@ -23,7 +23,7 @@ func execute(withAppleEvent event: NSAppleEventDescriptor?) async throws -> NSAp
 - (void) executeWithAppleEvent:(NSAppleEventDescriptor *) event completionHandler:(NSUserAppleScriptTaskCompletionHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Pass `nil` as `event` to execute the script’s default “run” handler.
 

@@ -24,7 +24,7 @@ var shadowColor: Any? { get set }
 @property (nonatomic, copy, nullable) id shadowColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default shadow color is black with an alpha of 1/3. If you set this property to `nil`, the shadow is not drawn. The color you specify must be convertible to an RGBA color and may contain alpha information.
 

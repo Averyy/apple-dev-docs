@@ -26,7 +26,7 @@ func point(at index: Int) -> vector_float2
 - (vector_float2) pointAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The vertex at the specified index.
 

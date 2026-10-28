@@ -16,7 +16,7 @@ A proxy that facilitates message passing between the always-on live view and its
 class PlaygroundRemoteLiveViewProxy
 ```
 
-#### Overview
+## Overview
 
 Because playground pages and the always-on live view run in separate processes, you use a [`PlaygroundRemoteLiveViewProxy`](./playgroundremoteliveviewproxy.md) as a wrapper for communicating with the always-on live view.
 

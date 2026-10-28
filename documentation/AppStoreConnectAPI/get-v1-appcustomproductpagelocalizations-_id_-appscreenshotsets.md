@@ -11,9 +11,9 @@ List the app screenshot sets for a specific custom product page localization.
 
 > **Deprecated**: This relationship is deprecated. Use the [`AppAssetLibraryPlacement`](./appassetlibraryplacement.md) relationship instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Other**:
 

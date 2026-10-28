@@ -19,7 +19,7 @@ var refusesFirstResponder: Bool { get set }
 @property BOOL refusesFirstResponder;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property to [`true`](../../Swift/true.md) to prevent the cell from becoming the first responder. To determine whether the cell can become first responder right now, get the value of the [`acceptsFirstResponder`](./acceptsfirstresponder.md) property.
 

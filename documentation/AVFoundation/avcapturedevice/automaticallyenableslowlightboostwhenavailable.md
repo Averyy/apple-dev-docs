@@ -22,7 +22,7 @@ var automaticallyEnablesLowLightBoostWhenAvailable: Bool { get set }
 @property (nonatomic) BOOL automaticallyEnablesLowLightBoostWhenAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). When it’s [`true`](../../Swift/true.md), the device may engage a special low-light boost mode to improve image quality. It switches, at its discretion, to a special boost mode under low light, and back to normal operation when the scene becomes sufficiently lit.
 

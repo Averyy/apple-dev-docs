@@ -20,7 +20,7 @@ var width: Int { get set }
 @property (nonatomic, assign) NSInteger width;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is the width of the captured content.
 

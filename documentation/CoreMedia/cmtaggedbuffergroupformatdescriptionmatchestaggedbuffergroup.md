@@ -21,7 +21,7 @@ Checks to see if a tagged buffer group’s format matches an existing format des
 extern Boolean CMTaggedBufferGroupFormatDescriptionMatchesTaggedBufferGroup(CMTaggedBufferGroupFormatDescriptionRef desc, CMTaggedBufferGroupRef taggedBufferGroup);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` when the format description of `taggedBufferGroup` is equal to the description `desc`.
 

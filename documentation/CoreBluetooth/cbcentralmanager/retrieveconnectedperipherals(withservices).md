@@ -25,11 +25,11 @@ func retrieveConnectedPeripherals(withServices serviceUUIDs: [CBUUID]) -> [CBPer
 - (NSArray<CBPeripheral *> *) retrieveConnectedPeripheralsWithServices:(NSArray<CBUUID *> *) serviceUUIDs;
 ```
 
-#### Return Value
+## Return Value
 
 A list of the peripherals that are currently connected to the system and that contain any of the services specified in the `serviceUUID` parameter.
 
-#### Discussion
+## Discussion
 
 The list of connected peripherals can include those that other apps have connected. You need to connect these peripherals locally using the [`connect(_:options:)`](./connect%28_,options%29.md) method before using them.
 

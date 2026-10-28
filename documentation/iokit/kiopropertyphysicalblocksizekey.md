@@ -14,7 +14,7 @@
 #define kIOPropertyPhysicalBlockSizeKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to define the physical block size of a hard disk drive.
 

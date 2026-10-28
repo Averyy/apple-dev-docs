@@ -20,7 +20,7 @@ The semantic for the second UV channel, also known as UV1.
 case uv1
 ```
 
-#### Discussion
+## Discussion
 
 A shader can access this generic data.
 

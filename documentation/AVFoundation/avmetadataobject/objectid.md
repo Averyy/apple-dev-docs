@@ -23,7 +23,7 @@ var objectID: Int { get }
 @property (readonly) NSInteger objectID;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to a value of -1 when invalid or not available. When used in conjunction with an [`AVCaptureMetadataOutput`](../avcapturemetadataoutput.md), each newly detected object that enters the scene is assigned a unique identifier. [`objectID`](./objectid.md)s are never re-used as objects leave the picture and new ones enter. Objects that leave the picture and then re-enter are assigned a new [`objectID`](./objectid.md). Focus-tracked objects are an exception. They retain the same [`objectID`](./objectid.md) when leaving and re-entering the picture.
 

@@ -17,7 +17,7 @@ A representation of an activity, such as an app or website, that doesn’t revea
 struct Token<T>
 ```
 
-#### Overview
+## Overview
 
 Managed Settings uses a `Token` to preserve user privacy and prevent anyone outside of a Family Sharing group from identifying what apps and websites the family accesses. You can use tokens to restrict and filter device use without accessing personal information.
 

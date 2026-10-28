@@ -23,7 +23,7 @@ struct UITextDirection
 typedef NSInteger UITextDirection;
 ```
 
-#### Overview
+## Overview
 
 This parameter is used in methods declared by the [`UITextInputTokenizer`](./uitextinputtokenizer.md) protocol. This general direction type subsumes constants of the [`UITextStorageDirection`](./uitextstoragedirection.md) and [`UITextLayoutDirection`](./uitextlayoutdirection.md) types.
 

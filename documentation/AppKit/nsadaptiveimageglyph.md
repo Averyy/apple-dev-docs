@@ -19,7 +19,7 @@ class NSAdaptiveImageGlyph
 @interface NSAdaptiveImageGlyph : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`NSAdaptiveImageGlyph`](./nsadaptiveimageglyph.md) contains an image that automatically adapts to different sizes and resolutions. The text system creates instances of this type to represent custom emojis that people create using the system interfaces. This type manages multiple images, along with metadata describing how to adapt those images correctly to different fonts and font attributes.
 

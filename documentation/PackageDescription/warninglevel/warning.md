@@ -15,7 +15,7 @@ Treat as a warning.
 case warning
 ```
 
-#### Discussion
+## Discussion
 
 Warnings will be displayed during compilation but will not cause the build to fail.
 

@@ -21,7 +21,7 @@ var duration: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 Set `duration` to zero to display the alert until dismissed by the user. When `duration` is not zero, [`CPNavigationAlertMinimumDuration`](../cpnavigationalertminimumduration.md) determines the minimum amount of time the alert is visible.
 

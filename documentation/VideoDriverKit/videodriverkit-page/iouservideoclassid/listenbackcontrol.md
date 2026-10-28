@@ -15,7 +15,7 @@ An `IOUserVideoBooleanControl` where true means that the listenback channel is a
 ListenbackControl
 ```
 
-#### Discussion
+## Discussion
 
 This control is for listenback channels that are handled outside of the regular IO channels. If the listenback channel is among the normal IO channels, it will use `IOUserVideoMuteControl`.
 

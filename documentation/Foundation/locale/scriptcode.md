@@ -21,7 +21,7 @@ The script code of the locale, or `nil` if has none.
 var scriptCode: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for the locale “zh-Hant-HK”, returns “Hant”.
 

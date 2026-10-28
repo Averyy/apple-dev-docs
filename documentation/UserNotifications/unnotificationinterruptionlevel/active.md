@@ -25,7 +25,7 @@ case active
 UNNotificationInterruptionLevelActive
 ```
 
-#### Discussion
+## Discussion
 
 This is the default interruption level. Active notifications won’t break through system notification controls.
 

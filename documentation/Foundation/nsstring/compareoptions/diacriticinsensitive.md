@@ -25,7 +25,7 @@ static var diacriticInsensitive: NSString.CompareOptions { get }
 NSDiacriticInsensitiveSearch
 ```
 
-#### Discussion
+## Discussion
 
 For example, ‘ö’ is equal to ‘o’.
 

@@ -15,11 +15,11 @@ Returns a zone of unscanned memory.
 - (NSZone *) zone;
 ```
 
-#### Return Value
+## Return Value
 
 A memory zone of memory that is not scanned.
 
-#### Discussion
+## Discussion
 
 The collector provides a [`NSZoneMalloc`](../nszonemalloc.md)-style allocation interface, primarily for compatibility with existing code that maintains zone affinity. Such memory is unscanned and you must free it using [`NSZoneFree`](../nszonefree.md).  This is exactly equivalent to calling [`NSAllocateCollectable`](../nsallocatecollectable.md) with the option [`NSCollectorDisabledOption`](../nscollectordisabledoption.md).
 

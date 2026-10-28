@@ -21,7 +21,7 @@ A structure that converts between integer values and their textual representatio
 struct IntegerFormatStyle<Value> where Value : BinaryInteger
 ```
 
-#### Overview
+## Overview
 
 Instances of [`IntegerFormatStyle`](./integerformatstyle.md) create localized, human-readable text from [`BinaryInteger`](../Swift/binaryinteger.md) numbers and parse string representations of numbers into instances of [`BinaryInteger`](../Swift/binaryinteger.md) types. All of the Swift standard library’s integer types, such as [`Int`](../Swift/int.md) and [`UInt32`](../Swift/uint32.md), conform to [`BinaryInteger`](../Swift/binaryinteger.md), and therefore work with this format style.
 
@@ -29,7 +29,7 @@ Instances of [`IntegerFormatStyle`](./integerformatstyle.md) create localized, h
 
 > **Note**:  Foundation provides another format style type, [`FloatingPointFormatStyle`](./floatingpointformatstyle.md), for working with numbers that conform to [`BinaryFloatingPoint`](../Swift/binaryfloatingpoint.md). For Foundation’s [`Decimal`](./decimal.md) type, use [`Decimal.FormatStyle`](./decimal/formatstyle.md).
 
-##### Formatting integers
+### Formatting integers
 
 Use the [`formatted()`](../Swift/binaryinteger/formatted%28%29.md) method to create a string representation of an integer using the default [`IntegerFormatStyle`](./integerformatstyle.md) configuration.
 
@@ -71,7 +71,7 @@ let customFormatting = exampleNumber.formatted(
 // customFormatting is "+123456"
 ```
 
-##### Creating an integer format style instance
+### Creating an integer format style instance
 
 The previous examples use static factory methods like [`number`](./formatstyle/number-7fxvo.md) to create format styles within the call to the [`formatted(_:)`](../Swift/binaryinteger/formatted%28_%29-73k3e.md) method. You can also create an [`IntegerFormatStyle`](./integerformatstyle.md) instance and use it to repeatedly format different values with the [`format(_:)`](./integerformatstyle/format%28_%29.md) method:
 
@@ -83,7 +83,7 @@ percentFormatStyle.format(85) // "85%"
 percentFormatStyle.format(100) // "100%"
 ```
 
-##### Parsing integers
+### Parsing integers
 
 You can use [`IntegerFormatStyle`](./integerformatstyle.md) to parse strings into integer values. You can define the format style within the type’s initializer or pass in a format style you create prior to calling the method, as shown here:
 
@@ -96,7 +96,7 @@ let salePrice = try? Int("$120,000",
                           format: priceFormatStyle) // 120000
 ```
 
-##### Matching regular expressions
+### Matching regular expressions
 
 Along with parsing numeric values in strings, you can use the Swift regular expression domain-specific language to match and capture numeric substrings. The following example defines a currency format style to match and capture a currency value using US dollars and `en_US` numeric conventions. The rest of the regular expression ignores any characters prior to a `": "` sequence that precedes the currency substring.
 

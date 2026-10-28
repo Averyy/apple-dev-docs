@@ -24,7 +24,7 @@ enum MPSAlphaType
 enum MPSAlphaType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Some image data is premultiplied. That is to say that the color channels are stored instead as `color*alpha`. This is an optimization for image compositing (alpha blending), but it can get in the way of most other image filters, especially those that apply non-linear effects like the color conversion filters and functions like convolution or resampling filters that look at adjacent pixels, where the alpha may not be the same. The following are some basic conversion cases:
 

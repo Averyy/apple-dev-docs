@@ -23,7 +23,7 @@ func didFocusWindow(_ focusedWindow: (any WKWebExtensionWindow)?)
 - (void) didFocusWindow:(id<WKWebExtensionWindow>) focusedWindow;
 ```
 
-#### Discussion
+## Discussion
 
 This method informs only the specific extension that a window has gained focus. If the intention is to inform all loaded extensions consistently, you should use the respective method on the extension controller instead.
 

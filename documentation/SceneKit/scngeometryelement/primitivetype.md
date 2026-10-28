@@ -25,7 +25,7 @@ var primitiveType: SCNGeometryPrimitiveType { get }
 @property (nonatomic, readonly) SCNGeometryPrimitiveType primitiveType;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [`SCNGeometryPrimitiveType`](../scngeometryprimitivetype.md).
 

@@ -15,13 +15,13 @@ The object for setting borders for component sides or tables.
 object Border
 ```
 
-#### Discussion
+## Discussion
 
 The `Border` object defines a component or a table cell border, including the border stroke style. The border style is the same for all sides of the component or table cell. Use a value of `false` for any side of a border that you don’t want to show.
 
 You can use this object in [`ComponentStyle`](./componentstyle.md), [`TableCellStyle`](./tablecellstyle.md), and [`ConditionalTableCellStyle`](./conditionaltablecellstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

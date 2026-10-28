@@ -15,7 +15,7 @@ A Boolean value indicating whether the instance is infinite.
 var isInfinite: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 For NaN, both `isFinite` and `isInfinite` are false.
 

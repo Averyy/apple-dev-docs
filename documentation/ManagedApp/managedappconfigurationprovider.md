@@ -18,7 +18,7 @@ A class that provides configurations that an MDM admin provisions for a managed 
 class ManagedAppConfigurationProvider
 ```
 
-#### Overview
+## Overview
 
 This class provides objects of a type you define, which decodes and validates the configuration that the framework receives from the MDM server.
 

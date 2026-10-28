@@ -21,7 +21,7 @@ The preferred order of items for menus presented from this view.
 var menuOrder: MenuOrder { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this value for a view hierarchy by calling the [`menuOrder(_:)`](../view/menuorder%28_%29.md) view modifier.
 

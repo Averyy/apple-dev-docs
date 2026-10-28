@@ -19,11 +19,11 @@ Creates a scene session activation request object.
 + (instancetype) request;
 ```
 
-#### Return Value
+## Return Value
 
 A scene session activation request object.
 
-#### Discussion
+## Discussion
 
 When you create a scene session activation request object with this method, [`role`](./role.md) defaults to [`windowApplication`](../uiscenesession/role-swift.struct/windowapplication.md).
 

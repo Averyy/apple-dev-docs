@@ -21,7 +21,7 @@ Returns a size that results from unapplying the specified affine transform.
 func unapplying(_ transform: AffineTransform3D) -> Size3D
 ```
 
-#### Return Value
+## Return Value
 
 The size that results from unapplying the specified affine transform.
 

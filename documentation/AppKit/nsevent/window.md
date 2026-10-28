@@ -19,7 +19,7 @@ weak var window: NSWindow? { get }
 @property (weak, readonly, nullable) NSWindow * window;
 ```
 
-#### Discussion
+## Discussion
 
 Periodic events do not have a window. The result of accessing this property on a periodic event is undefined.
 

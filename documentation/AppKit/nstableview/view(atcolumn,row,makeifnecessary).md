@@ -19,11 +19,11 @@ func view(atColumn column: Int, row: Int, makeIfNecessary: Bool) -> NSView?
 - (NSView *) viewAtColumn:(NSInteger) column row:(NSInteger) row makeIfNecessary:(BOOL) makeIfNecessary;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`NSView`](../nsview.md).
 
-#### Discussion
+## Discussion
 
 This method first attempts to return an available view, which is generally in the visible area. If there is no available view, and `makeIfNecessary` is [`true`](../../Swift/true.md), a prepared temporary view is returned. If `makeIfNecessary` is [`false`](../../Swift/false.md), and the view is not available, `nil` will be returned.
 

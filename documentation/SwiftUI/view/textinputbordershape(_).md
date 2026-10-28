@@ -22,7 +22,7 @@ nonisolated
 func textInputBorderShape(_ shape: TextInputBorderShape) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to customize the border shape of [`TextField`](../textfield.md) and other text input controls. The shape can be applied to individual controls or to a container to affect all text input controls within it.
 

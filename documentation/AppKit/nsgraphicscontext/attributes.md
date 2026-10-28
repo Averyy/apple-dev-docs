@@ -19,7 +19,7 @@ var attributes: [NSGraphicsContext.AttributeKey : Any]? { get }
 @property (copy, readonly, nullable) NSDictionary<NSString *,id> * attributes;
 ```
 
-#### Discussion
+## Discussion
 
 Screen-based graphics contexts do not store attributes, even if you create them using [`init(attributes:)`](./init%28attributes%29.md).
 

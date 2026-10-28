@@ -19,7 +19,7 @@ Creates a surface shader with the specified function constant values.
 init(named name: String, in library: any MTLLibrary, constantValues: MTLFunctionConstantValues)
 ```
 
-#### Discussion
+## Discussion
 
 Function constants allow you to better share code or toggle features in your shaders without runtime performance costs by resolving their values at compile time.
 

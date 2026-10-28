@@ -4,7 +4,7 @@
 
 Creates an unscrollable region of a specified size at the top and bottom of the stack template.
 
-#### Overview
+## Overview
 
 Use the `tv-scrollable-bounds-inset` style to create an unscrollable region of specified size from the top and bottom of the `stackTemplate`. When you use unscrollable regions, the content offset is no longer automatically adjusted to allow “peeking” — the partial view of elements directly above and below the focused element.
 
@@ -46,7 +46,7 @@ Here’s an example that sets the inset (unscrollable space) at the top to 50 po
 </stackTemplate>
 ```
 
-##### Values for tv-scrollable-bounds-inset
+### Values for tv-scrollable-bounds-inset
 
 - **Float**: The amount of unscrollable space, in points, set at  the top, right, bottom, and left of the `stackTemplate`.
 - **Float Float**: The first value determines the amount of unscrollable space in points at both the top and the bottom of the `stackTemplate`. The second value determines the amount of unscrollable space at both the right and left.
@@ -55,7 +55,7 @@ Here’s an example that sets the inset (unscrollable space) at the top to 50 po
 
 > ❗ **Important**: Currently, creating unscrollable regions at the left and right of the `stackTemplate `is not supported and will not have any effect.
 
-##### Elements That Use tv-scrollable-bounds-inset
+### Elements That Use tv-scrollable-bounds-inset
 
 - [stackTemplate](./stacktemplate.md)
 

@@ -22,7 +22,7 @@ A half-precision (16-bit), floating-point value type.
 struct Float16
 ```
 
-#### Overview
+## Overview
 
 On macOS, `Float16` is only available when targeting Apple silicon. On other supported platforms, `Float16` is available for all architectures. If the specified target supports 16-bit floating point arithmetic directly, those instructions will be used; otherwise Float16 arithmetic will be emulated by the swift compiler and runtime.
 

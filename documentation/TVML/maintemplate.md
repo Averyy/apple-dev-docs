@@ -4,13 +4,13 @@
 
 Displays user options for a media item.
 
-#### Overview
+## Overview
 
 Use the `mainTemplate` element to display options to the user; for example, the main page for a movie with options to play the movie, see extra content, and jump to specific scenes. The background area contains an image relating to the product, and the options are contained in a menu bar along the bottom of the screen. The following figure shows the basic layout for a `mainTemplate` page. The default theme for a main template is `dark`.
 
 ![Layout diagram showing a large background area with a menu bar at the bottom.](https://developer.apple.com/tutorials/images/com.apple.TVML/maintemplate-1@2x.png)
 
-##### Main Elements
+### Main Elements
 
 The following listing shows the elements of the mainTemplate element in TVML format.
 
@@ -26,14 +26,14 @@ The following listing shows the elements of the mainTemplate element in TVML for
 </mainTemplate>
 ```
 
-###### Element Descriptions
+#### Element Descriptions
 
 - **[background](./background.md)**: The background elements used on the page, such as `audio`.
 - **[menuBar](./menubar.md)**: A list of displayed menu items.
 - **[menuItem](./menuitem.md)**: Information for an individual menu item.
 - **[section](./section.md)**: An area containing a group of menu items.
 
-##### Example
+### Example
 
 The following listing shows the TVML for a `mainTemplate` example. The example displays a full-screen image as the background. A menu bar contains three navigable options.
 

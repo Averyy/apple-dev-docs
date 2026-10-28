@@ -22,7 +22,7 @@ A navigation split style that resolves its appearance automatically based on the
 @preconcurrency struct AutomaticNavigationSplitViewStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`automatic`](./navigationsplitviewstyle/automatic.md) to construct this style.
 

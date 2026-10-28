@@ -19,7 +19,7 @@ The types of data detectors to apply to the webpage’s content.
 var dataDetectorTypes: WKDataDetectorTypes
 ```
 
-#### Discussion
+## Discussion
 
 Data detectors add interactivity to web content by creating links for specially formatted text. For example, the `.link` type causes the apple.com portion of the text “Visit apple.com” to become a link to the Apple website.
 

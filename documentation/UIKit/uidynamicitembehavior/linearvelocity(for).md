@@ -23,7 +23,7 @@ func linearVelocity(for item: any UIDynamicItem) -> CGPoint
 - (CGPoint) linearVelocityForItem:(id<UIDynamicItem>) item;
 ```
 
-#### Return Value
+## Return Value
 
 The linear velocity of the specified dynamic item, in points per second.
 

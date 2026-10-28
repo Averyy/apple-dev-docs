@@ -21,7 +21,7 @@ A reason that indicates network is unavailable because the system marked the int
 NSURLErrorNetworkUnavailableReasonExpensive
 ```
 
-#### Discussion
+## Discussion
 
 The system determines what constitutes “expensive” based on the nature of the network interface and other factors. iOS 13 considers most cellular networks and personal hotspots expensive, but this may change in the future.
 

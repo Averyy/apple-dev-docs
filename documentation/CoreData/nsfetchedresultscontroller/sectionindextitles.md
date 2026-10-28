@@ -25,11 +25,11 @@ var sectionIndexTitles: [String] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * sectionIndexTitles;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation returns the array created by calling [`sectionIndexTitle(forSectionName:)`](./sectionindextitle%28forsectionname%29.md) on all the known sections. You should override this method if you want to return a different array for the section index.
 
-##### Special Considerations
+### Special Considerations
 
 You only need this method if you use a section index.
 

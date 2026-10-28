@@ -19,7 +19,7 @@ class var genericRGB: NSColorSpace { get }
 @property (class, strong, readonly) NSColorSpace * genericRGBColorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSColorSpace` object. This color-additive color space has red, green, blue, and alpha components. This object corresponds to the Cocoa color space name `NSCalibratedRGBColorSpace`.
 

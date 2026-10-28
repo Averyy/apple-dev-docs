@@ -14,7 +14,7 @@
 gestaltAppleScriptAttr = 'ascr'
 ```
 
-#### Discussion
+## Discussion
 
 A selector you pass to the `Gestalt` function. If AppleScript is not present, the `Gestalt` function returns an error value; otherwise, it returns `noErr` and supplies, in the `response` parameter, a 32-bit value whose bits specify which AppleScript features are available.
 

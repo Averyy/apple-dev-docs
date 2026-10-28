@@ -22,7 +22,7 @@ nonisolated
 func redacted(reason: RedactionReasons) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Adding a redaction is an additive process: any redaction provided will be added to the reasons provided by the parent.
 

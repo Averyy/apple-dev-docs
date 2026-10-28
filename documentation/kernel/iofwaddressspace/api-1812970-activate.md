@@ -11,7 +11,7 @@ Address space is ready for handling requests.
 virtual IOReturn activate();
 ```
 
-#### Return Value
+## Return Value
 
 IOReturn
 

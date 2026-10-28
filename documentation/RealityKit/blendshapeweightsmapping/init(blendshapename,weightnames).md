@@ -20,7 +20,7 @@ Creates a mapping that applies the weight names to mesh parts in a model compone
 init(blendShapeName: String, weightNames: [String])
 ```
 
-#### Discussion
+## Discussion
 
 This creates a mapping that applies the weight names to every mesh part in the [`ModelComponent`](../modelcomponent.md) associated with the [`BlendShapeWeightsComponent`](../blendshapeweightscomponent.md)’s entity.
 

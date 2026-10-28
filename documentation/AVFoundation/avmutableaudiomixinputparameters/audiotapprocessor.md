@@ -24,7 +24,7 @@ var audioTapProcessor: MTAudioProcessingTap? { get set }
 @property (nonatomic, retain, nullable) MTAudioProcessingTapRef audioTapProcessor;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to associate an audio tap with the audio track. You can use the audio tap to access the audio data before it is played, read, or exported.
 

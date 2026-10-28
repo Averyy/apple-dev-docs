@@ -21,7 +21,7 @@ An array of external purchase links for the current storefront that the app conf
 static var eligibleURLs: [URL]? { get async }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property if your app configures the [`SKExternalPurchaseMultiLink`](../../BundleResources/information-property-list/skexternalpurchasemultilink.md) property list key.
 

@@ -25,11 +25,11 @@ func BNNSGraphContextExecute(_ context: bnns_graph_context_t, _ function: Unsafe
 int BNNSGraphContextExecute(bnns_graph_context_t context, const char *function, size_t argument_count, bnns_graph_argument_t *arguments, size_t workspace_size, char *workspace);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success, nonzero on failure.
 
-#### Discussion
+## Discussion
 
 If the underlying model contains dynamic shaped inputs or outputs, you must set these prior to calling this routine with either [`BNNSGraphContextSetDynamicShapes(_:_:_:_:)`](./bnnsgraphcontextsetdynamicshapes%28_,_,_,_%29.md) or [`BNNSGraphContextSetBatchSize(_:_:_:)`](./bnnsgraphcontextsetbatchsize%28_,_,_%29.md). Don’t modify these shapes during execution.
 

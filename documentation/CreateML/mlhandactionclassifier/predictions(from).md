@@ -19,7 +19,7 @@ Generates an array of hand action predictions for each video in a URL array.
 func predictions(from videos: [URL]) throws -> [[MLHandActionClassifier.Prediction]]
 ```
 
-#### Return Value
+## Return Value
 
 A array of prediction arrays. The index of each inner array corresponds to the video URL index in the input array.
 

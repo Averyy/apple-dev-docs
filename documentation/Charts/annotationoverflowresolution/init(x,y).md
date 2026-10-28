@@ -22,7 +22,7 @@ nonisolated
 init(x: AnnotationOverflowResolution.Strategy = .automatic, y: AnnotationOverflowResolution.Strategy = .automatic)
 ```
 
-#### Discussion
+## Discussion
 
 Parameters:
 

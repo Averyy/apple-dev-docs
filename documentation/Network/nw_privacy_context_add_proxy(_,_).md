@@ -25,7 +25,7 @@ func nw_privacy_context_add_proxy(_ privacy_context: nw_privacy_context_t, _ pro
 void nw_privacy_context_add_proxy(nw_privacy_context_t privacy_context, nw_proxy_config_t proxy_config);
 ```
 
-#### Discussion
+## Discussion
 
 If set on `NW_DEFAULT_PRIVACY_CONTEXT`, this proxy will additionally apply to other networking APIs used by the calling process.
 

@@ -17,7 +17,7 @@ Returns a Boolean value that indicates whether the image uses a flipped coordina
 - (BOOL) isFlipped;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the image’s coordinate system is flipped; otherwise, [`false`](../../Swift/false.md). The default is [`false`](../../Swift/false.md).
 

@@ -23,11 +23,11 @@ func bindAndWriteData(_ data: MLCTensorData, to device: MLCDevice) -> Bool
 - (BOOL) bindAndWriteData:(MLCTensorData *) data toDevice:(MLCDevice *) device;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the framework successfully associated the data with the tensor and copied it to the device; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 The caller must guarantee the lifetime of the underlying memory of `data` for the lifetime of the tensor.
 

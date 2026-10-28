@@ -18,7 +18,7 @@ The layout width that the system reserves for the accessory, and then centers th
 var reservedLayoutWidth: UICellAccessory.LayoutDimension
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to ensure consistent horizontal alignment from both system and custom accessories to your content, even when the accessories vary in size.
 

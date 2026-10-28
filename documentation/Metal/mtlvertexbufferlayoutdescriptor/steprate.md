@@ -24,7 +24,7 @@ var stepRate: Int { get set }
 @property (nonatomic, assign) NSUInteger stepRate;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`. The `stepRate` value, in conjunction with the [`stepFunction`](./stepfunction.md) property, determines how often the function fetches new attribute data. The `stepRate` property is generally used when `stepFunction` is [`MTLVertexStepFunction.perInstance`](../mtlvertexstepfunction/perinstance.md). If `stepRate` is equal to `1`, new attribute data is fetched for every instance; if `stepRate` is equal to `2`, new attribute data is fetched for every two instances, and so forth.
 

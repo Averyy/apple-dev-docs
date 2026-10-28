@@ -21,7 +21,7 @@ case missingPushServerEnvironment
 CLLocationPushServiceErrorMissingPushServerEnvironment
 ```
 
-#### Discussion
+## Discussion
 
 A Location Push Service Extension requires that your app has the APNs environment entitlement. For more information, see [`APS Environment Entitlement`](../../../BundleResources/entitlements/aps-environment.md).
 

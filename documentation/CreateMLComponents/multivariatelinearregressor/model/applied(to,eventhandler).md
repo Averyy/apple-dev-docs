@@ -21,7 +21,7 @@ Performs a prediction on a shaped array.
 func applied(to input: MLShapedArray<Scalar>, eventHandler: EventHandler? = nil) async throws -> MLShapedArray<Scalar>
 ```
 
-#### Return Value
+## Return Value
 
 A shaped array of predictions. The shape of the predictions matches the shape of the input except for the last dimension, which is `outputSize`.
 

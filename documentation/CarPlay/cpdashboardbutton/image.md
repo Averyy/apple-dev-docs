@@ -21,7 +21,7 @@ var image: UIImage { get }
 @property (nonatomic, readonly) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 CarPlays doesn’t support animated images. If you provide an animated image, the button displays only the first image in the animation sequence. The maximum supported image size is 30 x 30 points.
 

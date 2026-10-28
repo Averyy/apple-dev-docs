@@ -21,7 +21,7 @@ Returns a URL components object by parsing the URL from an `NSURL` object.
 + (instancetype) componentsWithURL:(NSURL *) url resolvingAgainstBaseURL:(BOOL) resolve;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the new URL components object, or `nil` if the URL could not be parsed.
 

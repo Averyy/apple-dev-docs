@@ -21,7 +21,7 @@ func squeezed(_ array: MLXArray, axes: some Collection<Int>, stream: StreamOrDev
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 - [`squeezed(_:axis:stream:)`](./squeezed%28_,axis,stream%29.md)

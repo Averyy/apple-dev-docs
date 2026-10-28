@@ -25,11 +25,11 @@ func vImageConvert_Planar16UtoRGB16U(_ rSrc: UnsafePointer<vImage_Buffer>, _ gSr
 vImage_Error vImageConvert_Planar16UtoRGB16U(const vImage_Buffer *rSrc, const vImage_Buffer *gSrc, const vImage_Buffer *bSrc, const vImage_Buffer *rgbDest, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The source and destination buffers need to have the same height and width.
 

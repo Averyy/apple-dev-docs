@@ -42,7 +42,7 @@ var markerTintColor: NSColor? { get set }
 @property (nonatomic, copy, nullable) NSColor * markerTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`, which applies the standard color that’s appropriate for the current map style.
 

@@ -21,7 +21,7 @@ func reciprocal(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArra
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`reciprocal(stream:)`](./mlxarray/reciprocal%28stream%29.md)

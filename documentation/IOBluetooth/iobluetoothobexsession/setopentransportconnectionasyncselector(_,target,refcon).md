@@ -19,7 +19,7 @@ func setOpenTransportConnectionAsyncSelector(_ inSelector: Selector!, target inS
 - (void) setOpenTransportConnectionAsyncSelector:(SEL) inSelector target:(id) inSelectorTarget refCon:(void *) inUserRefCon;
 ```
 
-#### Discussion
+## Discussion
 
 You do not need to call this on the session typically, unless you have subclassed the OBEXSession to implement a new transport and that transport supports async opening of connections. If it does not support async open, then using this is pointless.
 

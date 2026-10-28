@@ -20,7 +20,7 @@ ApplePayLineItem total;
 
 - [Apple Pay on the Web Version 12 Release Notes](../apple-pay-on-the-web-version-12-release-notes.md)
 
-#### Discussion
+## Discussion
 
 The total must be a positive number greater than zero. This value is the final amount that the payment request authorizes.
 

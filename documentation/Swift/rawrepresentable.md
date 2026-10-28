@@ -21,13 +21,13 @@ A type that can be converted to and from an associated raw value.
 protocol RawRepresentable<RawValue>
 ```
 
-#### Overview
+## Overview
 
 With a `RawRepresentable` type, you can switch back and forth between a custom type and an associated `RawValue` type without losing the value of the original `RawRepresentable` type. Using the raw value of a conforming type streamlines interoperation with Objective-C and legacy APIs and simplifies conformance to other protocols, such as `Equatable`, `Comparable`, and `Hashable`.
 
 The `RawRepresentable` protocol is seen mainly in two categories of types: enumerations with raw value types and option sets.
 
-### Enumerations with Raw Values
+## Enumerations with Raw Values
 
 For any enumeration with a string, integer, or floating-point raw type, the Swift compiler automatically adds `RawRepresentable` conformance. When defining your own custom enumeration, you give it a raw type by specifying the raw type as the first item in the enumeration’s type inheritance list. You can also use literals to specify values for one or more cases.
 
@@ -51,7 +51,7 @@ for i in 3...6 {
 // Prints "nil"
 ```
 
-### Option Sets
+## Option Sets
 
 Option sets all conform to `RawRepresentable` by inheritance using the `OptionSet` protocol. Whether using an option set or creating your own, you use the raw value of an option set instance to store the instance’s bitfield. The raw value must therefore be of a type that conforms to the `FixedWidthInteger` protocol, such as `UInt8` or `Int`. For example, the `Direction` type defines an option set for the four directions you can move in a game.
 

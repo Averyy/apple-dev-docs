@@ -21,7 +21,7 @@ A type that contains an index and the object at that index.
 typealias IndexValuePair = (index: Int, value: xpc_object_t)
 ```
 
-#### Discussion
+## Discussion
 
 [`XPCArray`](../xpcarray.md) exposes its values as instances of [`xpc_object_t`](../xpc_object_t.md) even if they were originally set with other types.
 

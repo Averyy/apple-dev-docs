@@ -5,7 +5,7 @@
 
 Build a license server that supports the installation of your apps and the apps available in your marketplace.
 
-#### Overview
+## Overview
 
 iOS and iPadOS require each app that installs outside of the App Store to have a license issued by the developer. As the developer of an alternative app marketplace or other app that installs over the web, you use the [App License Delivery SDK](./AppLicenseDeliverySDK.md) to generate a license for each download request for your app. Alternative app marketplaces also create a license for each download request for the apps that they distribute.
 
@@ -15,7 +15,7 @@ The [MarketplaceKit](../MarketplaceKit/MarketplaceKit.md) installation methods t
 
 > ❗ **Important**: Prepare your App License Delivery (ALD) encryption assets and development environment for use with the licensing workflow. For more information, see [Configuring your app licensing environment](./configuring-the-app-licensing-environment.md).
 
-#### Publish your licensing endpoint details
+## Publish your licensing endpoint details
 
 To inform the system of the details of your license server, publish a `marketplace-kit` configuration file in the standard location. The system checks for the file at the following relative path:
 
@@ -57,7 +57,7 @@ Host the file using the `https://` URL scheme with a valid certificate, and don�
 
 For more information about the signing and encryption certificates, see [Configuring your app licensing environment](./configuring-the-app-licensing-environment.md).
 
-#### Handle a dynamic license request
+## Handle a dynamic license request
 
 A license request consists of a single POST to your licensing endpoint. Each POST can contain a request for a license for one or more apps. Your license server sends a single response to the POST which typically includes one license for each requested app. The license request is *dynamic*, meaning that your license server provides a new license for each install request.
 
@@ -145,7 +145,7 @@ let encryptionCertificateKey = try String(contentsOf:
     URL(fileURLWithPath: encryptionCertificateKeyPath))
 ```
 
-#### Decrypt the request payload
+## Decrypt the request payload
 
 The system encrypts the payload `licenseRequest` and sends the request to your server. Then, your license server uses your App License Delivery assets in combination with the payload `licenseKey` to decrypt the `licenseRequest` payload and create a license. To assist with decryption, use [swift-crypto](https://github.com/apple/swift-crypto):
 
@@ -193,7 +193,7 @@ do {
 }
 ```
 
-#### Start a license session
+## Start a license session
 
 The decrypted payload includes details about the apps for which the system requests a license. To assist with creating licenses for the apps, the framework needs your ALD encryption assets.
 
@@ -240,7 +240,7 @@ let session = try provider.createSession(clientRequest: decryptedRequest.bytes)
 
 Review the session’s [`requestedAppleItemIDList`](./aldsession/requestedappleitemidlist.md) list to confirm which of the requested apps you approve for download. If the device isn’t eligible for a particular app — for example, if a required subscription lapsed — you can omit a license for that app in the response.
 
-#### Generate a dynamic license
+## Generate a dynamic license
 
 With the session object, generate a license for each app that you approve for download.
 
@@ -268,7 +268,7 @@ If the system requests a license for multiple apps in its POST, repeat this proc
 
 > ❗ **Important**: In iOS 17.4, set a value less than `Int64.max`; see [iOS & iPadOS 17.4 Release Notes](../ios-ipados-release-notes/ios-ipados-17_4-release-notes.md).
 
-#### Respond with the generated licenses
+## Respond with the generated licenses
 
 The framework assists you with preparing a response to the original POST. Call [`generateLicenseResponse()`](./aldsession/generatelicenseresponse%28%29.md) begin the response:
 
@@ -320,7 +320,7 @@ Then, the system downloads the licensed app(s) from your app web server. For mor
 - [Installing your app from your website](../MarketplaceKit/installing-your-app-from-your-website.md) for alternative marketplace apps or other apps that install from your website.
 - [Installing apps from an alternative marketplace](../MarketplaceKit/installing-apps-from-an-alternative-marketplace.md) for other apps.
 
-#### Track the number of simultaneous app installs for an account
+## Track the number of simultaneous app installs for an account
 
 When the system sends a request to your license server, it includes the authentication token in the header. Use the token to associate the request with a specific person’s account.
 

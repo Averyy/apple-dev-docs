@@ -18,7 +18,7 @@ Creates a suggestions picker with button text defined by the given localized str
 
 Available when `Label` is `Text`.
 
-#### Discussion
+## Discussion
 
 This initializer creates a text view similar to the results of calling [`init(_:tableName:bundle:comment:)`](../../SwiftUI/text/init%28_,tablename,bundle,comment%29.md). See [`Text`](../../SwiftUI/text.md) for more information about localizing strings.
 

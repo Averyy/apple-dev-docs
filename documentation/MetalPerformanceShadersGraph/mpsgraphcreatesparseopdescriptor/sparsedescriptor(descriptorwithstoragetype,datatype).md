@@ -24,7 +24,7 @@ class func sparseDescriptor(descriptorWithStorageType sparseStorageType: MPSGrap
 + (instancetype) descriptorWithStorageType:(MPSGraphSparseStorageType) sparseStorageType dataType:(MPSDataType) dataType;
 ```
 
-#### Return Value
+## Return Value
 
 The descriptor.
 

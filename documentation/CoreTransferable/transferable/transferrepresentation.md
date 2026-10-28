@@ -27,7 +27,7 @@ The representation used to import and export the item.
 
 - [Choosing a transfer representation for a model type](../choosing-a-transfer-representation-for-a-model-type.md)
 
-#### Discussion
+## Discussion
 
 A [`transferRepresentation`](./transferrepresentation.md) can contain multiple representations for different content types.
 

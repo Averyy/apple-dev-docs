@@ -17,7 +17,7 @@ A primitive method to return a data object that represents the data of the recei
 - (NSData *) dataRepresentationOfType:(NSString *) type;
 ```
 
-#### Discussion
+## Discussion
 
 A primitive method overridden by subclasses to return a data object that represents the data of the receiver in a given type (`aType`). The default implementation `raises` an `NSInternalInconsistencyException`. This method is invoked by the default implementation of `fileWrapperRepresentationOfType:.`
 

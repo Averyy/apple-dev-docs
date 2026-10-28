@@ -23,7 +23,7 @@ optional func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIV
 - (void) scrollViewDidEndZooming:(UIScrollView *) scrollView withView:(UIView *) view atScale:(CGFloat) scale;
 ```
 
-#### Discussion
+## Discussion
 
 The scroll view also calls this method after any “bounce” animations. It also calls this method after animated changes to the zoom level and after a zoom-related gesture ends (regardless of whether the gesture resulted in a change to the zoom level).
 

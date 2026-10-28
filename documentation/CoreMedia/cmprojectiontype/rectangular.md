@@ -25,7 +25,7 @@ case rectangular
 kCMProjectionType_Rectangular
 ```
 
-#### Discussion
+## Discussion
 
 Rectangular projection is equivalent to displaying as a 2D texture in the world.
 

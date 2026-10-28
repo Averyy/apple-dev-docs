@@ -23,7 +23,7 @@ var local: NSNumber? { get set }
 @property (strong, getter=isLocal, nullable) NSNumber * local;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is 1, the media is local; when the value is 0, the media is not local.
 

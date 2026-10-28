@@ -5,7 +5,7 @@
 
 Connect to audio hardware and manage the recording or playback process.
 
-#### Overview
+## Overview
 
 This document describes Audio Queue Services, a C programming interface in the Audio Toolbox framework, which is part of Core Audio.
 

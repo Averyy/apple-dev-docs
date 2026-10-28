@@ -17,7 +17,7 @@ The model metadata available while resolving how to load a VLM processor.
 struct VLMProcessorLoadingContext
 ```
 
-#### Overview
+## Overview
 
 External model packages can decode [`configurationData`](./vlmprocessorloadingcontext/configurationdata.md) into their own model configuration type without introducing a dependency from MLXVLM back to that package.
 

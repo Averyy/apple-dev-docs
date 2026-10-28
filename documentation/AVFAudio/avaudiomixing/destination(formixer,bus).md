@@ -26,11 +26,11 @@ func destination(forMixer mixer: AVAudioNode, bus: AVAudioNodeBus) -> AVAudioMix
 - (AVAudioMixingDestination *) destinationForMixer:(AVAudioNode *) mixer bus:(AVAudioNodeBus) bus;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `self` if the specified mixer or input bus matches its connection point. If the mixer or input bus doesn’t match its connection point, or if the source node isn’t in a connected state to the mixer or input bus, the method returns `nil.`
 
-#### Discussion
+## Discussion
 
 When you connect a source node to multiple mixers downstream, setting [`AVAudioMixing`](../avaudiomixing.md) properties directly on the source node applies the change to all of them. Use this method to get the corresponding [`AVAudioMixingDestination`](../avaudiomixingdestination.md) for a specific mixer. Properties set on individual destination instances don’t reflect at the source node level.
 

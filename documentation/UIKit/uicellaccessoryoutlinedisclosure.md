@@ -18,7 +18,7 @@ The outline disclosure system accessory.
 @interface UICellAccessoryOutlineDisclosure : UICellAccessory
 ```
 
-#### Overview
+## Overview
 
 An outline disclosure is a rotating chevron for use in outlines. In iOS and for headers in Mac Catalyst, this accessory appears on the trailing edge. For cells in Mac Catalyst, this accessory appears on the leading edge.
 

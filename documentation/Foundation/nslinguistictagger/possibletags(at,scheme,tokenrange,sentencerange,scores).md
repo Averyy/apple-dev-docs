@@ -27,11 +27,11 @@ func possibleTags(at charIndex: Int, scheme tagScheme: String, tokenRange: NSRan
 - (NSArray<NSString *> *) possibleTagsAtIndex:(NSUInteger) charIndex scheme:(NSString *) tagScheme tokenRange:(NSRangePointer) tokenRange sentenceRange:(NSRangePointer) sentenceRange scores:(NSArray<NSValue *> **) scores;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an array of possible tags for the tag scheme at the specified location, starting with the most likely tag scheme.  For some tag schemes only a single tag will be returned, but for others a list of possibilities will be provided.
 
-#### Discussion
+## Discussion
 
 Calling this method is not recommended; for most use cases, this information is not as useful as what is provided by the methods described in Enumerating Linguistic Tags and Getting Linguistic Tags.
 

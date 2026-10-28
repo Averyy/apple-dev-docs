@@ -24,11 +24,11 @@ class func colorAbsoluteDifference() -> any CIFilter & CIColorAbsoluteDifference
 + (CIFilter<CIColorAbsoluteDifference> *) colorAbsoluteDifferenceFilter;
 ```
 
-#### Return Value
+## Return Value
 
 An image containing the absolute color difference between the two input images.
 
-#### Discussion
+## Discussion
 
 This method applies the color absolute difference filter to an image. This filter calculates the absolute color difference of the red, green, and blue values between the two input images. The alpha channel is the product of the alpha channels from the two input images.
 

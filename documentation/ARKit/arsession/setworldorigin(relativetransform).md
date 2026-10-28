@@ -20,7 +20,7 @@ func setWorldOrigin(relativeTransform: simd_float4x4)
 - (void) setWorldOrigin:(simd_float4x4) relativeTransform;
 ```
 
-#### Discussion
+## Discussion
 
 ARKit defines a world coordinate space for you to use to place virtual content and locate detected objects in an AR experience. By default, this space is based on the initial position and orientation of the device when the session begins. However, after a session begins and has detected useful reference points (such as a plane or image), you may find it helpful to redefine the world coordinate system based on those reference points.
 

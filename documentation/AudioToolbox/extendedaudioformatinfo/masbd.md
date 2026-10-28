@@ -24,7 +24,7 @@ var mASBD: AudioStreamBasicDescription
 AudioStreamBasicDescription mASBD;
 ```
 
-#### Discussion
+## Discussion
 
 An [`AudioStreamBasicDescription`](../../CoreAudioTypes/audiostreambasicdescription.md) struct.
 

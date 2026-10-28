@@ -23,7 +23,7 @@ Returns a new resize layer.
 convenience init?(interpolationMethod: BNNS.InterpolationMethod, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, alignsCorners: Bool, filterParameters: BNNSFilterParameters? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The number of input dimensions must be equal to number of output dimensions. The resize must be in same direction for all dimensions.
 

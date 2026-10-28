@@ -20,7 +20,7 @@ var vertices: ARGeometrySource { get }
 @property (nonatomic, strong, readonly) ARGeometrySource * vertices;
 ```
 
-#### Discussion
+## Discussion
 
 The [`count`](../argeometrysource/count.md) equals the total number of vertices. Since each vertex is the type `SIMD3<Float>`, [`componentsPerVector`](../argeometrysource/componentspervector.md) is three.
 

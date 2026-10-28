@@ -26,11 +26,11 @@ func AUGraphGetIndNode(_ inGraph: AUGraph, _ inIndex: UInt32, _ outNode: UnsafeM
 extern OSStatus AUGraphGetIndNode(AUGraph inGraph, UInt32 inIndex, AUNode *outNode);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 By using AUGraphGetNodeCount in conjunction with this call, you can iterate through the nodes of an audio processing graph.
 

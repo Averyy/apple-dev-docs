@@ -20,7 +20,7 @@ var isContentAuthorizedForPlayback: Bool { get }
 @property (nonatomic, readonly, getter=isContentAuthorizedForPlayback) BOOL contentAuthorizedForPlayback;
 ```
 
-#### Discussion
+## Discussion
 
 This property reports whether the user has provided the necessary credentials to the system in order for the content to be decrypted for playback.
 

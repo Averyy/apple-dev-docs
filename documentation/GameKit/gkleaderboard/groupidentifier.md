@@ -25,7 +25,7 @@ var groupIdentifier: String? { get }
 @property (nonatomic, strong, readonly, nullable) NSString * groupIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If you add the leaderboard to a group in App Store Connect, this property is the leaderboard group ID you enter in App Store Connect.
 

@@ -24,11 +24,11 @@ static func object(withRestorationIdentifierPath identifierComponents: [String],
 + (id<UIStateRestoring>) objectWithRestorationIdentifierPath:(NSArray<NSString *> *) identifierComponents coder:(NSCoder *) coder;
 ```
 
-#### Return Value
+## Return Value
 
 The object to use or `nil` if you do not want to restore this object now.
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should create (or find) the corresponding object and return it. If your restoration class determines that the object shouldn’t be restored, it may return `nil` from this method.
 

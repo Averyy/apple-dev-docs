@@ -25,7 +25,7 @@ static let annotation: UIApplication.OpenURLOptionsKey
 extern UIApplicationOpenURLOptionsKey const UIApplicationOpenURLOptionsAnnotationKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a property list-typed object.
 

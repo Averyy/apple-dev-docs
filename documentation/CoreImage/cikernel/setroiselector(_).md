@@ -24,7 +24,7 @@ func setROISelector(_ method: Selector)
 - (void) setROISelector:(SEL) method;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method is not supported in iOS, and not recommended in macOS 10.11 and later. Supply and use a block-based ROI callback instead using the [`apply(extent:roiCallback:arguments:)`](./apply%28extent,roicallback,arguments%29.md) method. The discussion below applies only to OS X v10.10 and earlier.
 

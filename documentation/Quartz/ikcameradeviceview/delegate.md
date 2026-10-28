@@ -20,7 +20,7 @@ unowned(unsafe) var delegate: (any IKCameraDeviceViewDelegate)! { get set }
 @property (assign) id<IKCameraDeviceViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must conform to the [`IKCameraDeviceViewDelegate`](../ikcameradeviceviewdelegate.md) protocol.
 

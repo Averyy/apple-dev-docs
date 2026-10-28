@@ -20,11 +20,11 @@ init?(suiteName: String, className: String, dictionary classDeclaration: [AnyHas
 - (instancetype) initWithSuiteName:(NSString *) suiteName className:(NSString *) className dictionary:(NSDictionary *) classDeclaration;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized instance. Returns `nil` if the event code value for the class description itself is missing or is not an `NSString`. Also returns `nil` if the superclass name or any of the subdictionaries of descriptions are not of the right type.
 
-#### Discussion
+## Discussion
 
 This method registers `self` with the application’s global instance of [`NSScriptSuiteRegistry`](../nsscriptsuiteregistry.md).
 

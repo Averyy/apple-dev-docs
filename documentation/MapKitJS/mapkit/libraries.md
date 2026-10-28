@@ -15,7 +15,7 @@ The list of available libraries.
 get Libraries(): string[] | undefined;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  The full bundle of MapKit JS doesn’t implement this property.
 

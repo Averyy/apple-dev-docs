@@ -11,7 +11,7 @@ Create a localized display name and description for an In-App Purchase.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Create an In-App Purchase localization`](./post-v2-inapppurchaselocalizations.md) instead.
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 

@@ -19,7 +19,7 @@ var buttonToolTip: String { get }
 @property (copy, readonly) NSString * buttonToolTip;
 ```
 
-#### Discussion
+## Discussion
 
 Override this property’s getter method to provide a custom tool tip. The default implementation returns the name of the receiver’s class. If you want the color picker to have no tool tip, return an empty string.
 

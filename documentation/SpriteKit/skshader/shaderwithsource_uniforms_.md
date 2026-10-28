@@ -21,11 +21,11 @@ Creates a new shader object using the specified source and uniform data.
 + (instancetype) shaderWithSource:(NSString *) source uniforms:(NSArray<SKUniform *> *) uniforms;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized shader object.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Even if their source code is identical, SpriteKit treats two shaders created with [`init(source:uniforms:)`](./init%28source,uniforms%29.md) as two separate shaders. To improve the performance of multiple instances of the same fragment shader code, create [`SKShader`](../skshader.md) instances using [`init(fileNamed:)`](./init%28filenamed%29.md).
 

@@ -22,7 +22,7 @@ case unspecified
 AVCaptionUnitsTypeUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 An unspecified unit type indicates the caption dimension is invalid.
 

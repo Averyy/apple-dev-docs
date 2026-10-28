@@ -23,7 +23,7 @@ case left
 UISegmentedControlSegmentLeft
 ```
 
-#### Discussion
+## Discussion
 
 Applies only when [`numberOfSegments`](../numberofsegments.md) is greater than 1.
 

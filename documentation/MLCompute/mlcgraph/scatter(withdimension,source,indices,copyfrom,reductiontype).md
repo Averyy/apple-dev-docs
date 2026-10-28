@@ -23,11 +23,11 @@ func scatter(withDimension dimension: Int, source: MLCTensor, indices: MLCTensor
 - (MLCTensor *) scatterWithDimension:(NSUInteger) dimension source:(MLCTensor *) source indices:(MLCTensor *) indices copyFrom:(MLCTensor *) copyFrom reductionType:(MLCReductionType) reductionType;
 ```
 
-#### Return Value
+## Return Value
 
 A scatter tensor.
 
-#### Discussion
+## Discussion
 
 The reductionType property must be [`MLCReductionType.none`](../mlcreductiontype/none.md) or [`MLCReductionType.sum`](../mlcreductiontype/sum.md).
 

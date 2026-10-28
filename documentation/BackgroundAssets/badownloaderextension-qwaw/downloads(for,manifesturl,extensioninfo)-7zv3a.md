@@ -20,11 +20,11 @@ Invoked by the system when the extension should check for updated content. This 
 func downloads(for request: BAContentRequest, manifestURL: URL, extensionInfo: BAAppExtensionInfo) -> Set<BADownload>
 ```
 
-#### Return Value
+## Return Value
 
 A set of unique `BAURLDownload` objects that the extension should schedule for download.
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: You cannot use `BADownloadManager` to manually schedule downloads using this method. All downloads to enqueue must be returned.
 

@@ -21,7 +21,7 @@ The number of bits used for the underlying binary representation of values of th
 static var bitWidth: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 The bit width of a `Int` instance is 32 on 32-bit platforms and 64 on 64-bit platforms.
 

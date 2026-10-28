@@ -27,7 +27,7 @@ class AVCaptureSystemExposureBiasSlider
 
 - [Enhancing your app experience with the Camera Control](./enhancing-your-app-experience-with-the-camera-control.md)
 
-#### Overview
+## Overview
 
 This control defines its range by querying the [`systemRecommendedExposureBiasRange`](./avcapturedevice/format/systemrecommendedexposurebiasrange.md) property of the device’s active format. If a device’s [`activeFormat`](./avcapturedevice/activeformat.md) value changes, the slider updates its range with the new format’s system-recommended value.
 

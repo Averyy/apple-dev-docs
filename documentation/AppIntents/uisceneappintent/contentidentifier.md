@@ -21,7 +21,7 @@ var contentIdentifier: String { get }
 
 Available when `Self` conforms to `OpenIntent`.
 
-#### Discussion
+## Discussion
 
 The protocol provides a default implementation of this property and sets its value to the name of the app intent type. You can also reimplement this property to provide a custom value for your app intent.
 

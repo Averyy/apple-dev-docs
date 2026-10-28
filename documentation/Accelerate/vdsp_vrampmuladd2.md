@@ -21,7 +21,7 @@ Multiplies a single-precision, stereo input vector by a value that ramps up on s
 void vDSP_vrampmuladd2(const float *__I0, const float *__I1, vDSP_Stride __IS, float *__Start, const float *__Step, float *__O0, float *__O1, vDSP_Stride __OS, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The functions in this group are similar to [`vDSP_vrampmul`](./vdsp_vrampmul.md), but rather than overwriting the output vector, they add the results to the existing values in the output vector. The following code describes the calculation:
 

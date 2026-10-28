@@ -31,7 +31,7 @@ class PHAsset
 - [Displaying Live Photos](../PhotoKit/displaying-live-photos.md)
 - [Fetching Assets](../PhotoKit/fetching-assets.md)
 
-#### Overview
+## Overview
 
 You fetch assets to begin working with them. Use the class methods listed in Fetching Assets to retrieve one or more [`PHAsset`](./phasset.md) instances representing the assets you want to display or edit.
 

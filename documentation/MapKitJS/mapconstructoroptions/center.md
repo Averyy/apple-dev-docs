@@ -15,7 +15,7 @@ The map coordinate at the center of the map view.
 center?: CoordinateData;
 ```
 
-#### Discussion
+## Discussion
 
 There’s no default value.
 

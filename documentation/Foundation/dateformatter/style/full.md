@@ -23,7 +23,7 @@ case full
 NSDateFormatterFullStyle
 ```
 
-#### Discussion
+## Discussion
 
 Specifies a full style with complete details, such as “Tuesday, April 12, 1952 AD” or “3:30:42 PM Pacific Standard Time”.
 

@@ -23,7 +23,7 @@ var scrollDirection: UICollectionView.ScrollDirection { get set }
 @property (nonatomic) UICollectionViewScrollDirection scrollDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The grid layout scrolls along one axis only, either horizontally or vertically. For the non scrolling axis, the width of the collection view in that dimension serves as starting width of the content.
 

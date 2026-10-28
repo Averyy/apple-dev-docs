@@ -19,7 +19,7 @@ The input values to use when generating the PRF extension, if specified.
 @property (nonatomic, readonly, nullable) ASAuthorizationPublicKeyCredentialPRFAssertionInputValues * inputValues;
 ```
 
-#### Discussion
+## Discussion
 
 If this property isn’t specified, the output only indicates whether there’s support for the extension.
 

@@ -23,7 +23,7 @@ func addContact(_ contact: MIDINetworkHost) -> Bool
 - (BOOL) addContact:(MIDINetworkHost *) contact;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the session successfully added the host, otherwise [`false`](../../Swift/false.md).
 

@@ -25,7 +25,7 @@ func CFStringGetMostCompatibleMacStringEncoding(_ encoding: CFStringEncoding) ->
 extern CFStringEncoding CFStringGetMostCompatibleMacStringEncoding(CFStringEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 The most compatible Mac OS script value for `encoding`.
 

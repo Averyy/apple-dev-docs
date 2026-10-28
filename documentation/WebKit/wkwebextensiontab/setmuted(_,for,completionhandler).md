@@ -27,7 +27,7 @@ optional func setMuted(_ muted: Bool, for context: WKWebExtensionContext) async 
 - (void) setMuted:(BOOL) muted forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 No action is performed if not implemented.
 

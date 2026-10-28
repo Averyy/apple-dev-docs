@@ -20,7 +20,7 @@ A cone-shaped limit of rotational freedom.
 var angularLimitInYZ: (Float, Float)?
 ```
 
-#### Discussion
+## Discussion
 
 The maximum value of rotation in radians from the y and z axes, or `nil` for unlimited.
 

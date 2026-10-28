@@ -28,7 +28,7 @@ convenience init(fromDictionaryRepresentation imageSourceAuxDataInfoDictionary: 
 
 - [Creating auxiliary depth data manually](../creating-auxiliary-depth-data-manually.md)
 
-#### Discussion
+## Discussion
 
 When using `CGImageSource` functions to read from a HEIF, JPEG, or DNG file containing depth data (as well as image data), you can use the  [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](../../ImageIO/cgimagesourcecopyauxiliarydatainfoatindex%28_,_,_%29.md) function to load primitive depth map information, then use this initializer to create an [`AVDepthData`](../avdepthdata.md) object, as shown below.
 

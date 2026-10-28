@@ -19,11 +19,11 @@ func isEqual(to configuration: CWConfiguration) -> Bool
 - (BOOL) isEqualToConfiguration:(CWConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 *YES* if the objects are equal.
 
-#### Discussion
+## Discussion
 
 CWConfiguration objects are considered equal if all their corresponding properties are equal.
 

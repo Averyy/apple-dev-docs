@@ -25,7 +25,7 @@ var isCancelled: Bool { get }
 @property (readonly, getter=isCancelled) BOOL cancelled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). Calling the [`cancel()`](./cancel%28%29.md) method of this object sets the value of this property to [`true`](../../Swift/true.md). Once canceled, an operation must move to the finished state.
 

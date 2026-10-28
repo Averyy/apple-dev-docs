@@ -19,7 +19,7 @@ typealias SpeechSyncUPP = SpeechSyncProcPtr
 typedef SpeechSyncProcPtr SpeechSyncUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see the description of the [`SpeechSyncProcPtr`](./speechsyncprocptr.md) callback function.
 

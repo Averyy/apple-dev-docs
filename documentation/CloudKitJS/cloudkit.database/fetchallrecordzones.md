@@ -15,11 +15,11 @@ Fetches all zones in the database.
 Promise<CloudKit.RecordZonesResponse, CloudKit.CKError> fetchAllRecordZones();
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to a [`CloudKit.RecordZonesResponse`](../cloudkit.recordzonesresponse.md) object or if it fails, a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 See [Fetching Zones (zones/list)](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/GettingAllZones.html#//apple_ref/doc/uid/TP40015240-CH21) in [CloudKit Web Services Reference](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html#//apple_ref/doc/uid/TP40015240).
 

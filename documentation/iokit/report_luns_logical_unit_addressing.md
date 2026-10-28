@@ -16,7 +16,7 @@ typedef struct REPORT_LUNS_LOGICAL_UNIT_ADDRESSING {
 } REPORT_LUNS_LOGICAL_UNIT_ADDRESSING;
 ```
 
-#### Overview
+## Overview
 
 This structure represents a LUN Addressing scheme.
 

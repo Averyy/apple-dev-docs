@@ -23,7 +23,7 @@ func convert(to destination: vImage.PixelBuffer<vImage.Interleaved16Fx2>)
 
 Available when `Format` is `vImage.Interleaved8x2`.
 
-#### Discussion
+## Discussion
 
 This function converts the source values in the range `[0, 255]` to the destination range `[0.0, 1.0]`.
 

@@ -5,7 +5,7 @@
 
 Enable sandboxed apps to use security-scoped bookmark data.
 
-#### Overview
+## Overview
 
 If you want to provide your sandboxed app with persistent access to file-system resources, you must enable security-scoped bookmark and URL access. Security-scoped bookmarks are available starting in macOS v10.7.3.
 

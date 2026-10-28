@@ -18,7 +18,7 @@ A Boolean value that determines whether to show the color selection UI for the t
 var allowsColorSelection: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../../Swift/false.md).
 

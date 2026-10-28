@@ -28,11 +28,11 @@ func applyingSymbolConfiguration(_ configuration: UIImage.SymbolConfiguration) -
 
 - [Configuring and displaying symbol images in your UI](../configuring-and-displaying-symbol-images-in-your-ui.md)
 
-#### Return Value
+## Return Value
 
 A new version of the image object that contains the merged configuration details.
 
-#### Discussion
+## Discussion
 
 This method creates a new image object, merging the traits of `configuration` with the new image’s traits. During the merge, this method gives precedence to explicitly set values in the `configuration` parameter. This method then replaces the current image-related attributes with the attributes in `configuration`. If an attribute in `configuration` contains an unspecified value, this method leaves the current image’s setting intact.
 

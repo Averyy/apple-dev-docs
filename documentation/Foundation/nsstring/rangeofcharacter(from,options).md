@@ -25,11 +25,11 @@ func rangeOfCharacter(from searchSet: CharacterSet, options mask: NSString.Compa
 - (NSRange) rangeOfCharacterFromSet:(NSCharacterSet *) searchSet options:(NSStringCompareOptions) mask;
 ```
 
-#### Return Value
+## Return Value
 
 The range in the receiver of the first character found from `aSet`. Returns a range of `{``NSNotFound``, 0}` if none of the characters in `aSet` are found.
 
-#### Discussion
+## Discussion
 
 Invokes [`rangeOfCharacter(from:options:range:)`](./rangeofcharacter%28from,options,range%29.md) with `mask` for the options and the entire extent of the receiver for the range.
 

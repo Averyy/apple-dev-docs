@@ -23,7 +23,7 @@ var forLastBaselineLayout: UIView { get }
 @property (strong, readonly) UIView * viewForLastBaselineLayout;
 ```
 
-#### Discussion
+## Discussion
 
 For views with multiple rows of text, the last baseline is the baseline for the bottommost row.
 

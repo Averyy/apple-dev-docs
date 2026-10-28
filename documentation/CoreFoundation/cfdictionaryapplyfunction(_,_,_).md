@@ -25,7 +25,7 @@ func CFDictionaryApplyFunction(_ theDict: CFDictionary!, _ applier: ((UnsafeRawP
 extern void CFDictionaryApplyFunction(CFDictionaryRef theDict, CFDictionaryApplierFunction applier, void *context);
 ```
 
-#### Discussion
+## Discussion
 
 If this function iterates over a mutable collection, it is unsafe for the `applier` function to change the contents of the collection.
 

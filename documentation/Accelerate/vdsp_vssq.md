@@ -21,7 +21,7 @@ Computes the signed squared value of each element in the supplied single-precisi
 extern void vDSP_vssq(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This performs the following operation:
 

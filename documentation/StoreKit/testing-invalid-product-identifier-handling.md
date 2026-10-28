@@ -5,7 +5,7 @@
 
 Verify that your app correctly handles invalid product identifiers.
 
-#### Overview
+## Overview
 
 Intentionally include an invalid identifier in your app’s list of product identifiers. Then do one of the following:
 

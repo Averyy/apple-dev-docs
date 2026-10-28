@@ -16,7 +16,7 @@ struct vnop_reclaim_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 VNOP_INACTVE() gives a filesystem a chance to aggressively release resources assocated with a vnode, perhaps even to call vnode_recycle(), but no action is prescribed; it is acceptable for VNOP_INACTIVE to be a no-op and to defer all reclamation until VNOP_RECLAIM(). VNOP_INACTVE() will not be called on a vnode if no persistent reference is ever taken; an important example is a stat(), which takes an iocount, reads its data, and drops that iocount.
 

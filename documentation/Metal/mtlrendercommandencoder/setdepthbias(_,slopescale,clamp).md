@@ -25,7 +25,7 @@ func setDepthBias(_ depthBias: Float, slopeScale: Float, clamp: Float)
 - (void) setDepthBias:(float) depthBias slopeScale:(float) slopeScale clamp:(float) clamp;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to have the render pipeline apply a bias to the rasterized depth after the clipping stage. The bias affects both depth testing and the values the render pipeline writes to the depth render target. If you don’t explicitly call this method, the pipeline doesn’t apply a scale or a bias to a depth value.
 

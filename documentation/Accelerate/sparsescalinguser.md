@@ -25,7 +25,7 @@ var SparseScalingUser: SparseScaling_t { get }
 SparseScalingUser
 ```
 
-#### Discussion
+## Discussion
 
 If scaling is `nil`, the operation doesn’t apply scaling.
 

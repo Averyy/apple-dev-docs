@@ -15,7 +15,7 @@ The last (rightmost and lowest) selected cell.
 @property (strong, readonly, nullable) id selectedCell;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `nil`, there is no selection.
 

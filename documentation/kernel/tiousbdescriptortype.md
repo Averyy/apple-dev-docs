@@ -15,7 +15,7 @@ Constants describing the types of descriptors available for a USB device.
 typedef enum tIOUSBDescriptorType tIOUSBDescriptorType;
 ```
 
-#### Discussion
+## Discussion
 
 When you fetch descriptors from a USB device, the data includes a one-byte value that indicates the type of the descriptor. Use these constants to determine the type. 
 

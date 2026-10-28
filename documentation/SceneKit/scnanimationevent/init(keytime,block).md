@@ -25,11 +25,11 @@ convenience init(keyTime time: CGFloat, block eventBlock: @escaping SCNAnimation
 + (instancetype) animationEventWithKeyTime:(CGFloat) time block:(SCNAnimationEventBlock) eventBlock;
 ```
 
-#### Return Value
+## Return Value
 
 An animation event object.
 
-#### Discussion
+## Discussion
 
 The `time` parameter is relative to the duration of the animation the event is attached to. For example, an event with a time of `0.5` triggers when the animation is halfway complete, and an event with a time of `1.0` triggers when the animation ends.
 

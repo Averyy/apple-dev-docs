@@ -26,7 +26,7 @@ optional func scrollView(_ scrollView: BEScrollView, handle scrollUpdate: BEScro
 - (void) scrollView:(BEScrollView *) scrollView handleScrollUpdate:(BEScrollViewScrollUpdate *) scrollUpdate completion:(void (^)(BOOL handled)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your `BEScrollViewDelegate` receives scroll updates before its delegating scroll view handles them. The system calls this method on the main queue — retrieve information from `scrollUpdate` on the main queue, then process the update asynchronously. Call the `completion` block asynchronously on the main queue when you finish processing.
 

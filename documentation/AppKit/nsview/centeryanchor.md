@@ -19,7 +19,7 @@ var centerYAnchor: NSLayoutYAxisAnchor { get }
 @property (strong, readonly) NSLayoutYAxisAnchor * centerYAnchor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this anchor to create constraints with the view’s vertical center. You can only combine this anchor with other [`NSLayoutYAxisAnchor`](../../UIKit/nslayoutyaxisanchor.md) anchors. For more information, see [`NSLayoutAnchor`](../../UIKit/nslayoutanchor.md).
 

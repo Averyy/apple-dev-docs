@@ -12,11 +12,11 @@ virtual OSArray * getDeviceMemory(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 An OSArray of IODeviceMemory objects, or zero if none are available. The array is retained by the provider, so is valid while attached.
 
-#### Overview
+## Overview
 
 This method returns an array of IODeviceMemory objects representing the physical memory ranges allocated to a memory mapped device.
 

@@ -15,15 +15,15 @@ Initializes the controller in response to a call from the framework.
 virtual kern_return_t UserInitializeController();
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of initialization. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 The first method in the dext that the framework calls is [`UserInitializeController`](./userinitializecontroller.md), which it only calls once per instantiation. Use this method to perform all necessary initialization that the hardware requires before it can accept requests to run. Make all necessary resource allocations during this method call.
 
-##### Queuing considerations
+### Queuing considerations
 
 For best results, use a model with three dispatch queues. DriverKit creates a default queue for you, and you also need to create interrupt auxiliary queues. Because DriverKit dispatch queues are serial, this arrangement prevents calls from DriverKit, interrupts, and I/O work from competing with one another on the same thread.
 

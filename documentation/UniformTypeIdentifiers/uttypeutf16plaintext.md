@@ -21,7 +21,7 @@ A type that represents plain text encoded as UTF-16 in native byte order with an
 extern UTType * const UTTypeUTF16PlainText;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.utf16-plain-text`.
 

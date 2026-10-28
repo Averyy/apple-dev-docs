@@ -24,7 +24,7 @@ init(polygon: MKPolygon)
 - (instancetype) initWithPolygon:(MKPolygon *) polygon;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized polygon renderer object.
 

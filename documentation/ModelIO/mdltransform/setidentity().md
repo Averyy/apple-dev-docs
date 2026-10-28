@@ -24,7 +24,7 @@ func setIdentity()
 - (void) setIdentity;
 ```
 
-#### Discussion
+## Discussion
 
 The identity transform is equivalent to the lack of a transformation, so an object affected by the transform uses the same coordinate space as its parent. Calling this method also erases any time-sampled data, creating a static transform.
 

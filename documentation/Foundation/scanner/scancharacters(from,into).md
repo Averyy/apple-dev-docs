@@ -25,11 +25,11 @@ func scanCharacters(from set: CharacterSet, into result: AutoreleasingUnsafeMuta
 - (BOOL) scanCharactersFromSet:(NSCharacterSet *) set intoString:(NSString **) result;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver scanned any characters, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Invoke this method with `NULL` as `stringValue` to simply scan past a given set of characters.
 

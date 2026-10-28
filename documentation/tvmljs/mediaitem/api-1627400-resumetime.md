@@ -15,7 +15,7 @@ The number of seconds from the beginning of the item at which the item begins pl
 attribute int resumeTime;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to begin playing a media item at a time other than at the beginning of the item. If this property contains anything other than 0, the player displays “Resume” instead of “Play from beginning” on playback.
 

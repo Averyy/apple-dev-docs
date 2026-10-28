@@ -16,7 +16,7 @@ Set FireWire bus generation for which the command object shall be valid. If the 
 void (*SetGeneration)(IOFireWireLibCommandRef self, UInt32 generation);
 ```
 
-#### Discussion
+## Discussion
 
 Availability: (for interfaces obtained with ID)
 

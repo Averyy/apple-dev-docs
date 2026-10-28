@@ -24,7 +24,7 @@ func placeholder(shape: [NSNumber]?, name: String?) -> MPSGraphTensor
 - (MPSGraphTensor *) placeholderWithShape:(MPSShape *) shape name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

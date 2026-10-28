@@ -15,7 +15,7 @@ An event that represents a configuration error.
 class MapKitConfigurationErrorEvent extends Event
 ```
 
-#### Discussion
+## Discussion
 
 The event’s `status` property indicates the configuration error status.
 

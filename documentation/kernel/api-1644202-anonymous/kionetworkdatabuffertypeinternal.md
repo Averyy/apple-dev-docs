@@ -13,7 +13,7 @@
 kIONetworkDataBufferTypeInternal = 0
 ```
 
-#### Discussion
+## Discussion
 
 An internal data buffer allocated by the init() method.
 

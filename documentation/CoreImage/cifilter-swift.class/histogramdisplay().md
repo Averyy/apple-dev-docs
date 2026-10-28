@@ -24,11 +24,11 @@ class func histogramDisplay() -> any CIFilter & CIHistogramDisplay
 + (CIFilter<CIHistogramDisplay> *) histogramDisplayFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method applies the histogram display filter to the result of the output from the [`areaHistogram()`](./areahistogram%28%29.md) filter. This effect shows a graphical representation of the tonal distribution of colors in the image.
 

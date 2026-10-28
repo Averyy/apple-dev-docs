@@ -28,7 +28,7 @@ MTLTextureUsageShaderWrite
 
 - [Optimizing texture data](../optimizing-texture-data.md)
 
-#### Discussion
+## Discussion
 
 Set this option if you access the given texture with a `write()` function in any shader. This option enables the `access::write` attribute for the texture. For more information about texture functions and access attributes, see [Metal Shading Language Guide](https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364).
 

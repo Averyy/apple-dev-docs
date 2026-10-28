@@ -19,7 +19,7 @@ func close()
 - (void) close;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sharingServicePicker(_:didChoose:)`](../nssharingservicepickerdelegate/sharingservicepicker%28_,didchoose%29.md) method will be invoked if the [`delegate`](./delegate.md) is set to `nil`.
 

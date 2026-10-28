@@ -22,7 +22,7 @@ nonisolated
 struct AutomaticLabeledContentStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`automatic`](./labeledcontentstyle/automatic.md) to construct this style.
 

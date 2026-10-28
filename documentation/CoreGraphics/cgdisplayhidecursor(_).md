@@ -20,11 +20,11 @@ func CGDisplayHideCursor(_ display: CGDirectDisplayID) -> CGError
 extern CGError CGDisplayHideCursor(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. To interpret the result code, see [`CGError`](./cgerror.md).
 
-#### Discussion
+## Discussion
 
 This function hides the cursor regardless of its current location. The `display` parameter has no effect. In most cases, the caller must be the foreground application to affect the cursor.
 

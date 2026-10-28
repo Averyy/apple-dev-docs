@@ -17,7 +17,7 @@ End index using numpy conventions.
 func end(_ size: Int32) -> Int32
 ```
 
-#### Discussion
+## Discussion
 
 If `end` is not given it will be `-size - 1` if [`stride`](./stride.md) is negative or `size` if positive.
 

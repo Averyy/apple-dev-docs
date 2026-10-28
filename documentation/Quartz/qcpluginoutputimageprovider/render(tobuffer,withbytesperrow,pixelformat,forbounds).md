@@ -21,11 +21,11 @@ optional func render(toBuffer baseAddress: UnsafeMutableRawPointer!, withBytesPe
 - (BOOL) renderToBuffer:(void *) baseAddress withBytesPerRow:(NSUInteger) rowBytes pixelFormat:(NSString *) format forBounds:(NSRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the image is rendered successfully into the buffer; [`false`](../../Swift/false.md) on failure or if the image provider doesn’t support CPU rendering.
 
-#### Discussion
+## Discussion
 
 The Quartz Composer engine calls this method when it needs pixels. It gives you the base address, the number of row bytes, and the format. Then, you write pixels to the buffer.
 

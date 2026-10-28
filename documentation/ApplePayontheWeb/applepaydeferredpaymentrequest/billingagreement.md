@@ -16,7 +16,7 @@ The localized billing agreement the framework displays to the user prior to paym
 DOMString billingAgreement;
 ```
 
-#### Discussion
+## Discussion
 
 This may include additional details about the cancellation period or penalties for late cancellation. This value is optional.
 

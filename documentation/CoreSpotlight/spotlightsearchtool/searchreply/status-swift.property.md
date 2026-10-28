@@ -19,7 +19,7 @@ An indicator of whether the current query is complete or still in progress.
 let status: SpotlightSearchTool.SearchReply.Status
 ```
 
-#### Discussion
+## Discussion
 
 The of this property is [`SpotlightSearchTool.SearchReply.Status.partial`](./status-swift.enum/partial.md) when the system has more replies to deliver for the same [`queryToken`](./querytoken-swift.property.md) value. When delivering the last reply for a query, the tool sets this value to [`SpotlightSearchTool.SearchReply.Status.complete`](./status-swift.enum/complete.md). Use this value to track changes to the current query. For example, you might choose to partition data for each query and display them separately in your interface.
 

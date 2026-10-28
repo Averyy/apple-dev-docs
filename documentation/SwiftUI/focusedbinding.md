@@ -22,7 +22,7 @@ A convenience property wrapper for observing and automatically unwrapping state 
 struct FocusedBinding<Value>
 ```
 
-#### Overview
+## Overview
 
 If multiple views publish bindings using the same key, the wrapped property will reflect the value of the binding from the view closest to focus.
 

@@ -20,7 +20,7 @@ Creates a video player component from an AV player object.
 init(avPlayer: AVPlayer)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: You can’t use the same `AVPlayer` object with more than one `VideoPlayerComponent`.
 

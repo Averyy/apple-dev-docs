@@ -23,7 +23,7 @@ init(forStoreWith description: NSPersistentStoreDescription, coordinator psc: NS
 - (instancetype) initForStoreWithDescription:(NSPersistentStoreDescription *) description coordinator:(NSPersistentStoreCoordinator *) psc;
 ```
 
-#### Discussion
+## Discussion
 
 After you initialize a Core Spotlight delegate, call the [`startSpotlightIndexing()`](./startspotlightindexing%28%29.md) to begin indexing your store’s contents.
 

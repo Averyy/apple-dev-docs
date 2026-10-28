@@ -23,7 +23,7 @@ var indentationWidth: CGFloat { get set }
 @property (nonatomic) CGFloat indentationWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The overall indentation is the product of [`indentationWidth`](./indentationwidth.md) and [`indentationLevel`](./indentationlevel.md).
 

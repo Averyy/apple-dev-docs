@@ -6,7 +6,7 @@
 
 A reference movie atom may contain an optional quality atom.
 
-#### Overview
+## Overview
 
 Only one quality atom can be present. See [`Quality atom`](../quality_atom.md) for more information.
 

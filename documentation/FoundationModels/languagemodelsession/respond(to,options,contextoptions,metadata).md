@@ -28,7 +28,7 @@ nonisolated(nonsending) final func respond(to prompt: Prompt, options: Generatio
 nonisolated(nonsending) final func respond(to prompt: String, options: GenerationOptions = GenerationOptions(), contextOptions: ContextOptions = ContextOptions(), metadata: [String : any ConvertibleToGeneratedContent] = [:]) async throws -> LanguageModelSession.Response<String>
 ```
 
-#### Return Value
+## Return Value
 
 A string composed of the tokens produced by sampling model output.
 

@@ -28,7 +28,7 @@ func saveToPreferences() async throws
 - (void) saveToPreferencesWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You must call [`loadFromPreferences(completionHandler:)`](./loadfrompreferences%28completionhandler%29.md) at least once before calling this method the first time after your app launches.
 

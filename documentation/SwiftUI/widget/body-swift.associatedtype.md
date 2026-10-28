@@ -21,7 +21,7 @@ The type of configuration representing the content of the widget.
 associatedtype Body : WidgetConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 When you create a custom widget, Swift infers this type from your implementation of the required [`body`](./body-swift.property.md) property.
 

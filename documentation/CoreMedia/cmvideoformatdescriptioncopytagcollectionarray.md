@@ -21,7 +21,7 @@ Copies the multi-image encoding properties as an array of CMTagCollections.
 extern OSStatus CMVideoFormatDescriptionCopyTagCollectionArray(CMVideoFormatDescriptionRef formatDescription, CFArrayRef*tagCollectionsOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns 0 on success or a value from
 

@@ -16,7 +16,7 @@ Get command target address.
 void (*GetTargetAddress)(IOFireWireLibCommandRef self, FWAddress *outAddr);
 ```
 
-#### Discussion
+## Discussion
 
 Availability: (for interfaces obtained with ID)
 

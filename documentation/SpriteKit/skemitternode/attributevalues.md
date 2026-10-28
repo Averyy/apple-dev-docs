@@ -25,7 +25,7 @@ var attributeValues: [String : SKAttributeValue] { get set }
 @property (nonatomic, copy, nonnull) NSDictionary<NSString *,SKAttributeValue *> * attributeValues;
 ```
 
-#### Discussion
+## Discussion
 
 All nodes have their own copy of an attribute value and therefore the attribute values can be different per-node across the same [`SKShader`](../skshader.md). If instead you need all nodes to share the same value, use [`SKUniform`](../skuniform.md). Uniforms can change values every frame, but uniforms cannot vary per-node like attributes can.
 

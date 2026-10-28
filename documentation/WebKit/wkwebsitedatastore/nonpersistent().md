@@ -23,11 +23,11 @@ class func nonPersistent() -> WKWebsiteDataStore
 + (WKWebsiteDataStore *) nonPersistentDataStore;
 ```
 
-#### Return Value
+## Return Value
 
 A new data store object that doesn’t save data to disk.
 
-#### Discussion
+## Discussion
 
 Use a nonpersistent data store to implement private browsing in your web view. This method creates a new data store that stores data only in memory, and doesn’t write that data to disk.
 

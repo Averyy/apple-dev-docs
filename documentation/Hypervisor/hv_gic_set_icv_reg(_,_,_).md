@@ -19,11 +19,11 @@ func hv_gic_set_icv_reg(_ vcpu: hv_vcpu_t, _ reg: hv_gic_icv_reg_t, _ value: UIn
 extern hv_return_t hv_gic_set_icv_reg(hv_vcpu_t vcpu, hv_gic_icv_reg_t reg, uint64_t value);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 
-#### Discussion
+## Discussion
 
 ICV registers are only available when exception level 2 (EL2) is in an enabled state, otherwise the framework returns an error.
 

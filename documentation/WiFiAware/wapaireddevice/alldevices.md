@@ -21,11 +21,11 @@ static var allDevices: WAPairedDevice.DevicesSequence { get }
 
 - [Connecting devices for peer-to-peer Wi-Fi](../connecting-paired-devices.md)
 
-#### Return Value
+## Return Value
 
 A new [`WAPairedDevice.DevicesSequence`](./devicessequence.md) that returns [`WAPairedDevice.Devices`](./devices.md) elements holding a snapshot of the currently paired devices known to the app.
 
-#### Discussion
+## Discussion
 
 This property gets an `AsyncSequence` and provides updates with a new [`WAPairedDevice.Devices`](./devices.md) snapshot when the set of paired devices known to your app changes. The sequence outputs an empty dictionary if there are no paired devices known to your app, or if a person removes all of your app’s paired devices.
 

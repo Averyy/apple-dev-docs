@@ -25,7 +25,7 @@ let kCVImageBufferDisplayMaskRectangle_RightEdgePointsKey: CFString
 extern CFStringRef const kCVImageBufferDisplayMaskRectangle_RightEdgePointsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The points are [`CFArray`](../CoreFoundation/cfarray.md) of unsigned 16-bit integer [`CFNumber`](../CoreFoundation/cfnumber.md) pairs alternating between inset X and inset Y. Inset X is an unsigned offset from the right edge (`0`) towards the left edge (width). Inset Y is an unsigned offset from the top edge (`0`) towards the bottom edge (height).
 

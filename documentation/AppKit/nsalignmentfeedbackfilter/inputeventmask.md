@@ -19,7 +19,7 @@ class var inputEventMask: NSEvent.EventTypeMask { get }
 @property (class, readonly) NSEventMask inputEventMask;
 ```
 
-#### Discussion
+## Discussion
 
 This method retrieves the event types that the filter accepts. This information may be used by an event tracking loop to watch for events that can be passed to the filter.
 

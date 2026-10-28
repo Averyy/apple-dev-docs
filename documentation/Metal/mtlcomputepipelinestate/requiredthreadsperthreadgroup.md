@@ -23,7 +23,7 @@ var requiredThreadsPerThreadgroup: MTLSize { get }
 @property (readonly) MTLSize requiredThreadsPerThreadgroup;
 ```
 
-#### Discussion
+## Discussion
 
 The required size of every compute threadgroup.
 

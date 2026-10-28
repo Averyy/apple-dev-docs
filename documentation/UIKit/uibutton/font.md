@@ -19,7 +19,7 @@ The font used to display text on the button.
 @property (nonatomic, strong) UIFont * font;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, a system font is used. The default value is `nil`.
 

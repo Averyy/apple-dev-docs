@@ -15,11 +15,11 @@ Create a matching dictionary that specifies an IOService match based on BSD devi
 OSDictionary * IOBSDNameMatching(const char *name);
 ```
 
-#### Return Value
+## Return Value
 
 The matching dictionary created, is returned on success, or zero on failure. The dictionary is commonly passed to IOServiceGetMatchingServices or IOServiceAddNotification which will consume a reference, otherwise it should be released with CFRelease by the caller.
 
-#### Discussion
+## Discussion
 
 IOServices that represent BSD devices have an associated BSD name. This function creates a matching dictionary that will match IOService's with a given BSD name.
 

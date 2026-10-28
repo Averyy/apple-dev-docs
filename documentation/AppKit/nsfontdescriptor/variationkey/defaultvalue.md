@@ -19,7 +19,7 @@ static let defaultValue: NSFontDescriptor.VariationKey
 extern NSFontDescriptorVariationKey NSFontVariationAxisDefaultValueKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object.
 

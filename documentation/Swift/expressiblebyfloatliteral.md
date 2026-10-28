@@ -21,7 +21,7 @@ A type that can be initialized with a floating-point literal.
 protocol ExpressibleByFloatLiteral
 ```
 
-#### Overview
+## Overview
 
 The standard library floating-point types—`Float`, `Double`, and `Float80` where available—all conform to the `ExpressibleByFloatLiteral` protocol. You can initialize a variable or constant of any of these types by assigning a floating-point literal.
 
@@ -33,7 +33,7 @@ let threshold = 6.0
 let measurements = [2.2, 4.1, 3.65, 4.2, 9.1]
 ```
 
-### Conforming to ExpressibleByFloatLiteral
+## Conforming to ExpressibleByFloatLiteral
 
 To add `ExpressibleByFloatLiteral` conformance to your custom type, implement the required initializer.
 

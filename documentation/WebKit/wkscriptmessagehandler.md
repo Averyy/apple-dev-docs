@@ -24,7 +24,7 @@ protocol WKScriptMessageHandler : NSObjectProtocol
 @protocol WKScriptMessageHandler <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt the [`WKScriptMessageHandler`](./wkscriptmessagehandler.md) protocol when your app needs a way to respond to JavaScript messages in the web view. When JavaScript code sends a message that specifically targets your message handler, WebKit calls your handler’s [`userContentController(_:didReceive:)`](./wkscriptmessagehandler/usercontentcontroller%28_,didreceive%29.md) method. Use that method to implement your response. For example, you might update other parts of your app in response to web content changes.
 

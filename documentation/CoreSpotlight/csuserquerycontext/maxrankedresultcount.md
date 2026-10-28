@@ -23,7 +23,7 @@ var maxRankedResultCount: Int { get set }
 @property (nonatomic, assign) NSInteger maxRankedResultCount;
 ```
 
-#### Discussion
+## Discussion
 
 Spotlight ranks a limited number of results by default, but you can change the default value to improve performance or better suit your app’s interface. For example, you might want to return only the five most relevant results due to space constraints in your UI.
 

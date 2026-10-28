@@ -24,7 +24,7 @@ size_t numberOfBits(void);
 virtual unsigned int numberOfBits(void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of bits the OSNumber was created with.
 

@@ -25,7 +25,7 @@ let kCLErrorDomain: String
 extern NSString * const kCLErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 This value is used in the [`NSError`](../Foundation/nserror.md) class.
 

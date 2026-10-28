@@ -25,7 +25,7 @@ var query: String? { get }
 @property (copy, readonly, nullable) NSString * query;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the query string. Any percent-encoded characters are not unescaped. If the receiver does not conform to RFC 1808, this property contains `nil`. For example, in the URL `http://www.example.com/index.php?key1=value1&key2=value2`, the query string is `key1=value1&key2=value2`.
 

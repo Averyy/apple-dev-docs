@@ -22,7 +22,7 @@ func setWhiteBalanceModeLocked(whiteBalanceTemperatureAndTintValues: AVCaptureDe
 - (void) setWhiteBalanceModeLockedWithDeviceWhiteBalanceTemperatureAndTintValues:(AVCaptureWhiteBalanceTemperatureAndTintValues) whiteBalanceTemperatureAndTintValues completionHandler:(void (^)(CMTime syncTime)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method takes a [`AVCaptureDevice.WhiteBalanceTemperatureAndTintValues`](./whitebalancetemperatureandtintvalues.md) struct and applies the appropriate [`AVCaptureDevice.WhiteBalanceGains`](./whitebalancegains.md). This method throws an `NSRangeException` if any of the values are set to an unsupported level. This method throws an `NSGenericException` if called without first obtaining exclusive access to the device using [`lockForConfiguration()`](./lockforconfiguration%28%29.md).
 

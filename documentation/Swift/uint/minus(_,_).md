@@ -21,7 +21,7 @@ Subtracts one value from another and produces their difference.
 static func - (lhs: UInt, rhs: UInt) -> UInt
 ```
 
-#### Discussion
+## Discussion
 
 The subtraction operator (`-`) calculates the difference of its two arguments. For example:
 

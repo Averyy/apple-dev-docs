@@ -17,7 +17,7 @@ A counter that increments whenever the network data changes.
 let networksUpdateCounter: UInt64
 ```
 
-#### Discussion
+## Discussion
 
 The counter increments by `1`.
 

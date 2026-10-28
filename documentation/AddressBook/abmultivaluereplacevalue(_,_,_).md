@@ -19,7 +19,7 @@ func ABMultiValueReplaceValue(_ multiValue: ABMutableMultiValueRef!, _ value: CF
 extern bool ABMultiValueReplaceValue(ABMutableMultiValueRef multiValue, CFTypeRef value, CFIndex index);
 ```
 
-#### Return Value
+## Return Value
 
 `true` ifsuccessfully, `false` otherwise.
 

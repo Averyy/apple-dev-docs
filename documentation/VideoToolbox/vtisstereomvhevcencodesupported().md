@@ -24,11 +24,11 @@ func VTIsStereoMVHEVCEncodeSupported() -> Bool
 extern Boolean VTIsStereoMVHEVCEncodeSupported();
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the system supports MV-HEVC encoding; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 A return value of [`true`](../Swift/true.md) doesn’t guarantee that encoding resources are available at all times.
 

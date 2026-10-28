@@ -6,7 +6,7 @@
 
 For uncompressed audio, the number of bytes in a sample for a single channel.
 
-#### Overview
+## Overview
 
 This replaces the older `sampleSize` field, which is set to `16`. This value is calculated by dividing the frame size by the number of channels. The same calculation is performed to calculate the value of this field for compressed audio, but the result of the calculation is not generally meaningful for compressed audio.
 

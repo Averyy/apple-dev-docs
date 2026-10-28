@@ -22,7 +22,7 @@ var printerID: String? { get set }
 @property (nonatomic, copy, nullable) NSString * printerID;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set through user selection in the printing user interface. You may provide a printer ID as a hint (for example, the last printer used from a particular print job). The default value is `nil`.
 

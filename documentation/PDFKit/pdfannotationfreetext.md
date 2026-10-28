@@ -21,7 +21,7 @@ class PDFAnnotationFreeText
 @interface PDFAnnotationFreeText : PDFAnnotation
 ```
 
-#### Overview
+## Overview
 
 Unlike a `PDFAnnotationText` object, a `PDFAnnotationFreeText` object has no open or closed state; its text is always visible. The text annotation performed in Preview uses `PDFAnnotationFreeText`.
 

@@ -28,13 +28,13 @@ protocol MTL4ComputeCommandEncoder : MTL4CommandEncoder
 
 - [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 
-#### Overview
+## Overview
 
 Each Metal 4 compute encoder combines compute dispatch commands, blit commands, and acceleration structure commands into a single pass. The unified nature of this encoder type eliminates the overhead from creating separate encoders like [`MTLComputeCommandEncoder`](./mtlcomputecommandencoder.md), [`MTLBlitCommandEncoder`](./mtlblitcommandencoder.md), and [`MTLAccelerationStructureCommandEncoder`](./mtlaccelerationstructurecommandencoder.md), and then encoding separate passes with them.
 
 Create a compute encoder by calling a factory method of an [`MTL4CommandBuffer`](./mtl4commandbuffer.md) instance, such as [`makeComputeCommandEncoder()`](./mtl4commandbuffer/makecomputecommandencoder%28%29.md).
 
-##### Command stages
+### Command stages
 
 Most compute commands apply to one stage within a pass. The following table shows which stage applies to each command:
 

@@ -19,7 +19,7 @@ A flag representing whether this is a strong decision.
 @property (readonly, getter=isStrongDecision) BOOL strongDecision;
 ```
 
-#### Discussion
+## Discussion
 
 A strong decision keeps focus for as long as possible on the detected subject.
 

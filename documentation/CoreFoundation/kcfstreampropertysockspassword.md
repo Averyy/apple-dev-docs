@@ -25,7 +25,7 @@ let kCFStreamPropertySOCKSPassword: CFString
 extern CFStringRef const kCFStreamPropertySOCKSPassword;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a `CFString` object containing the user’s password.
 

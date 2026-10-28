@@ -21,7 +21,7 @@ The app is suspended or exits while a background data task is processing.
 static var backgroundSessionWasDisconnected: URLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 If your app has created a background data task and the app is then suspended, the task will be invalidated with this error code. To prevent this, when you receive the response, convert the data task to a download task.
 

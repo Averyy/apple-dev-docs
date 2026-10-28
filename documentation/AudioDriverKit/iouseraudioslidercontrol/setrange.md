@@ -15,11 +15,11 @@ Sets the range of possible values for the slider.
 kern_return_t SetRange(IOUserAudioSliderRange in_range);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 If successful, changing the range sends a notification to the host to update the object state.
 

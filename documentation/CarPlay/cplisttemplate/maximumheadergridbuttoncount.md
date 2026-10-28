@@ -21,7 +21,7 @@ class var maximumHeaderGridButtonCount: Int { get }
 @property (class, nonatomic, readonly) NSUInteger maximumHeaderGridButtonCount;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Your list template will display the first @c maximumHeaderGridButtonCount buttons. Any sections beyond that limit will be trimmed.
 

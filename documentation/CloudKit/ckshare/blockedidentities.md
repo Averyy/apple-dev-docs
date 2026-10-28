@@ -25,7 +25,7 @@ var blockedIdentities: [CKShare.BlockedIdentity] { get }
 @property (copy, readonly) NSArray<CKShareBlockedIdentity *> * blockedIdentities;
 ```
 
-#### Discussion
+## Discussion
 
 Identities remain in this list until an owner or administrator calls [`unblockIdentities(_:)`](./unblockidentities%28_%29.md).
 

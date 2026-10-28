@@ -17,11 +17,11 @@ Applies instance normalization [1] on the inputs.
 class InstanceNorm
 ```
 
-##### References
+### References
 
 1. [https://arxiv.org/abs/1607.08022](https://arxiv.org/abs/1607.08022)
 
-##### See also
+### See also
 
 - [Normalization](./normalization.md)
 

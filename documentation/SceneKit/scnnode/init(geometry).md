@@ -25,7 +25,7 @@ init(geometry: SCNGeometry?)
 + (SCNNode *) nodeWithGeometry:(SCNGeometry *) geometry;
 ```
 
-#### Return Value
+## Return Value
 
 A new node object with the geometry attached, or `nil` if initialization is not successful.
 

@@ -21,7 +21,7 @@ Returns a Spatial vector that represents the linear interpolation at `t` between
 static func lerp(from: Vector3DFloat, to: Vector3DFloat, t: Vector3DFloat) -> Vector3DFloat
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation. When `t=0`, the result is the `from` vector. When `t=1.0`, the result is the `to` vector. For any other value of `t`, the result is a linear linear interpolation between the two vectors.
 

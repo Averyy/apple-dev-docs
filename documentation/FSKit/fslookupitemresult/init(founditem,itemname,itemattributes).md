@@ -19,7 +19,7 @@ init?(foundItem: FSItem, itemName: FSFileName, itemAttributes: FSItem.Attributes
 - (instancetype) initWithFoundItem:(FSItem *) foundItem itemName:(FSFileName *) itemName itemAttributes:(FSItemAttributes *) itemAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 A populated result instance, or `nil` if validation fails.
 

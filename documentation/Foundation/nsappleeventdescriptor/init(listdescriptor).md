@@ -20,11 +20,11 @@ convenience init(listDescriptor: ())
 - (instancetype) initListDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 An empty list descriptor, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 You can add items to the empty list descriptor with [`insert(_:at:)`](./insert%28_,at%29.md). The list indices are one-based.
 

@@ -17,7 +17,7 @@ Reshape an array while preserving the size.
 func reshaped(_ newShape: Int..., stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray(0 ..< 12)
@@ -25,7 +25,7 @@ let array = MLXArray(0 ..< 12)
 let r = array.reshaped(4, 3)
 ```
 
-##### See Also
+### See Also
 
 - [Shapes](../shapes.md)
 - [`reshaped(_:_:stream:)`](../reshaped%28_,_,stream%29-96lgr.md)

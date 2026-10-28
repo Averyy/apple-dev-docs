@@ -21,7 +21,7 @@ An opaque type that identifies a specific donation to the system.
 struct IntentDonationIdentifier
 ```
 
-#### Overview
+## Overview
 
 When you donate an app intent, the system returns a unique `IntentDonationIdentifier` instance so you can refer to that donation later. Use that instance to identify the donation later, and to delete it using an [`IntentDonationManager`](./intentdonationmanager.md) if the action no longer applies.
 

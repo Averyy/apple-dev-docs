@@ -25,7 +25,7 @@ func setStencilStoreAction(_ storeAction: MTLStoreAction)
 - (void) setStencilStoreAction:(MTLStoreAction) storeAction;
 ```
 
-#### Discussion
+## Discussion
 
 This method changes the render command encoder’s store action for the stencil attachment. You can assign the default store action for the stencil attachment by configuring the [`storeAction`](../mtlrenderpassattachmentdescriptor/storeaction.md) property of its [`MTLRenderPassStencilAttachmentDescriptor`](../mtlrenderpassstencilattachmentdescriptor.md) (see [`MTLRenderPassDescriptor`](../mtlrenderpassdescriptor.md) and its [`stencilAttachment`](../mtlrenderpassdescriptor/stencilattachment.md) property).
 

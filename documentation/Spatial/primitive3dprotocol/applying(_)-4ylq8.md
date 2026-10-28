@@ -22,7 +22,7 @@ Returns the primitive that results from applying a pose to the primitive.
 func applying(_ pose: Self.Pose) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed primitive.
 

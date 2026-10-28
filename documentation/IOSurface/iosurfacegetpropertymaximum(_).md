@@ -24,7 +24,7 @@ func IOSurfaceGetPropertyMaximum(_ property: CFString) -> Int
 size_t IOSurfaceGetPropertyMaximum(CFStringRef property);
 ```
 
-#### Discussion
+## Discussion
 
 The most important values to obtain are:
 

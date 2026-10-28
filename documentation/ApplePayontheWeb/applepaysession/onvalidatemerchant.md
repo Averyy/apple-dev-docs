@@ -21,7 +21,7 @@ attribute EventHandler onvalidatemerchant;
 - [Providing Merchant Validation](../providing-merchant-validation.md)
 - [Requesting an Apple Pay payment session](../requesting-an-apple-pay-payment-session.md)
 
-#### Discussion
+## Discussion
 
 Use this attribute to request and return a merchant session. You must set this attribute to the following function:
 

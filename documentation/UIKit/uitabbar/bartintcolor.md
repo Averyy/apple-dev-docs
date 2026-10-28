@@ -23,7 +23,7 @@ var barTintColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * barTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify a custom color for the tab bar’s background. The color you specify replaces the appearance provided by the [`barStyle`](./barstyle.md) property.
 

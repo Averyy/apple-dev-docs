@@ -20,7 +20,7 @@ func NSWidth(_ aRect: NSRect) -> Double
 static CGFloat NSWidth(NSRect aRect);
 ```
 
-#### Return Value
+## Return Value
 
 The width of `aRect`.
 

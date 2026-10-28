@@ -21,7 +21,7 @@ A rule that considers a region to be interior to a path based on the number of t
 case evenOdd
 ```
 
-#### Discussion
+## Discussion
 
 This rule plots a ray from any region to be evaluated toward the bounds of the drawing, then counts the closed path elements that the ray crosses. The rule defines interior regions as those where the sum of crossings is an odd number, and exterior regions as those where the sum of crossings is an even number.
 

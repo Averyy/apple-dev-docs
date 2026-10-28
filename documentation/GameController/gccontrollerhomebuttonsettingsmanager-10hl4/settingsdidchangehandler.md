@@ -19,7 +19,7 @@ A block that is scheduled after Home button settings change.
 @property (atomic, copy, nullable) GCControllerHomeButtonSettingsDidChangeHandler settingsDidChangeHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This block is scheduled on the `queue` the `GCControllerHomeButtonSettingsManager` was initialized with.
 

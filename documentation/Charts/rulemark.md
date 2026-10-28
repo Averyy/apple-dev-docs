@@ -22,11 +22,11 @@ Chart content that represents data using a single horizontal or vertical rule.
 @preconcurrency struct RuleMark
 ```
 
-#### Overview
+## Overview
 
 You can use `RuleMark` to plot a horizontal or vertical rule in your chart.
 
-##### Show Range with Rule Marks
+### Show Range with Rule Marks
 
 To create a horizontal line at a `y` position from `xStart` to `xEnd` you use the `init(xStart:xEnd:y:)` or `init(xStart:xEnd:y:)`.  To create a vertical line at an `x` position from `yStart` to `yEnd` you use `init(x:yStart:yEnd:)` or `init(x:yStart:yEnd:)`. The example below uses the `Pollen` structure and the `init(xStart:xEnd:y:)` to map horizontal lines that span from the value of the `startDate` to the value of the `endDate`  for x positions to a pollen `source` property’s y position:
 
@@ -64,7 +64,7 @@ var body: some View {
 
 ![Horizontal rule chart with x-axis showing the month in the year 2020 starting with January and ending with December, and with y-axis showing a pollen source: Trees, Grass, and Weeds. There are 4 rules. 2 for Trees 1 starting in January and going until the end of September and 1 spanning December, 1 for Grass starting in March and going until the end of August, and 1 for Weeds starting in April and going until the end of November.](https://developer.apple.com/tutorials/images/com.apple.Charts/LineSegmentMarkSwift.LineSegmentMarkHorizontalLineSegmentChart@2x.png)
 
-##### Annotate a chart with rule mark
+### Annotate a chart with rule mark
 
 You can annotate a chart with horizontal or vertically spanning rules. This allows viewers to easily compare values over a range to a constant value. Use the [`init(xStart:xEnd:y:)`](./rulemark/init%28xstart,xend,y%29-444cp.md) initializer to represent a constant `y` value or [`init(x:yStart:yEnd:)`](./rulemark/init%28x,ystart,yend%29-6zemd.md) for a constant `x` value. To span the plotting area of a chart with a line, omit the optional start and end parameters and plot a constant value.  The example below results in a line that spans the chart horizontally at the y position of 9000:
 
@@ -96,7 +96,7 @@ var body: some View {
 
 ![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance, and R&D, and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15000, Marketing 8000, Finance 10000. A rule mark at 9000 shows the break even threshold.](https://developer.apple.com/tutorials/images/com.apple.Charts/LineSegmentMarkSwift.LineSegmentMarkBarChartWithHorizontalLineSegmentMark@2x.png)
 
-##### RuleMark in Chart3D
+### RuleMark in Chart3D
 
 To plot a rule in a 3D chart, use the [`init(x:y:z:)`](./rulemark/init%28x,y,z%29.md) initializer.
 

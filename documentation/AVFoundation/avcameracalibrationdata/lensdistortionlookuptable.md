@@ -24,7 +24,7 @@ var lensDistortionLookupTable: Data? { get }
 @property (nonatomic, readonly, nullable) NSData * lensDistortionLookupTable;
 ```
 
-#### Discussion
+## Discussion
 
 Images captured by a camera are geometrically warped by small imperfections in the lens. To project from the 2D image plane back into the 3D world, the images must be distortion corrected, or made rectilinear. Lens distortion is modeled using a one-dimensional lookup table of 32-bit float values evenly distributed along a radius from the center of the distortion to a corner, with each value representing a magnification of the radius. This model assumes symmetrical lens distortion.
 

@@ -17,10 +17,10 @@ Deprecated; only kept for backwards compatibility.
 
 ```swift
 @preconcurrency
-static func custom(_ completion: @escaping @Sendable ([String]) -> [String]) -> CompletionKind
+static func custom(_ completion: @Sendable @escaping ([String]) -> [String]) -> CompletionKind
 ```
 
-#### Discussion
+## Discussion
 
 The same as `custom(@Sendable @escaping ([String], Int, String) -> [String])`, except that the last two closure arguments are not supplied.
 

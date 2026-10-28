@@ -39,11 +39,11 @@ func icon(for size: CGSize) -> NSImage?
 - (NSImage *) iconForSize:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 The action icon, or `nil` if the icon was unable to be loaded.
 
-#### Discussion
+## Discussion
 
 This icon should represent the extension in action sheets or toolbars. The returned image will be the best match for the specified size that is available in the extension’s action icon set. If no matching icon is available, the method will fall back to the extension’s icon.
 

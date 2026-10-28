@@ -21,11 +21,11 @@ func makeSamples(_ prompt: Prompt, targetCount: Int, sessionProvider: (@Sendable
 
 Available when `Element` conforms to `ModelSampleProtocol` and `Generable`.
 
-#### Return Value
+## Return Value
 
 An async throwing stream of newly generated samples.
 
-#### Discussion
+## Discussion
 
 For more control over generation, create a `SampleGenerator` directly.
 

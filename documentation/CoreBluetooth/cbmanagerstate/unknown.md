@@ -25,7 +25,7 @@ case unknown
 CBManagerStateUnknown
 ```
 
-#### Discussion
+## Discussion
 
 This is a temporary state. After Core Bluetooth initializes or resets, it updates the state value.
 

@@ -20,7 +20,7 @@ The function used to respond to action terminated events.
 mutating func actionTerminated(event: Self.EventType)
 ```
 
-#### Discussion
+## Discussion
 
 Action terminated is raised when playback is terminated.
 

@@ -21,7 +21,7 @@ A format style that provides string representations of byte counts.
 struct ByteCountFormatStyle
 ```
 
-#### Overview
+## Overview
 
 The following example creates an `Int` representing 1,024 bytes, and then formats it as an expression of memory storage, with the default byte count format style.
 

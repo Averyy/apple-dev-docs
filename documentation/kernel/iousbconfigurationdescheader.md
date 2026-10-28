@@ -15,7 +15,7 @@ The header of a configuration descriptor.
 typedef struct IOUSBConfigurationDescHeader IOUSBConfigurationDescHeader;
 ```
 
-#### Discussion
+## Discussion
 
 The header of a [`IOUSBConfigurationDescriptor`](../iokit/iousbconfigurationdescriptor.md) that returns the total length of the descriptor.
 

@@ -21,7 +21,7 @@ Return the type preserving attributed variant of this style.
 var attributedStyle: Date.VerbatimFormatStyle.Attributed { get }
 ```
 
-#### Discussion
+## Discussion
 
 This style attributes the formatted date with the `AttributeScopes.FoundationAttributes.DateFormatFieldAttribute`.
 

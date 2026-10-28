@@ -10,7 +10,7 @@ Control force feedback devices attached to the system. Develop plug-ins that ena
 - Mac Catalyst 13.0+
 - macOS 10.2+
 
-#### Overview
+## Overview
 
 The Force Feedback framework contains the public interfaces to the Force Feedback implementation in macOS, including an API that supports the development of Force Feedback plug-ins.
 

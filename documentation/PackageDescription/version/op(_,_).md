@@ -12,7 +12,7 @@ Returns a Boolean value indicating whether the value of the first argument is le
 static func < (lhs: Version, rhs: Version) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 The precedence is determined according to rules described in the [Semantic Versioning 2.0.0](https://semver.org) standard, paragraph 11.
 

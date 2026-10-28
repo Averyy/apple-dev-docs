@@ -21,7 +21,7 @@ A  function defined by a two-dimensional curve that maps an input progress in th
 struct UnitCurve
 ```
 
-#### Overview
+## Overview
 
 The horizontal (x) axis defines the input progress: a single input progress value in the range [0,1] must be provided when evaluating a curve.
 

@@ -25,7 +25,7 @@ func isAllowedValue(_ value: MLFeatureValue) -> Bool
 - (BOOL) isAllowedValue:(MLFeatureValue *) value;
 ```
 
-#### Return Value
+## Return Value
 
 `True` if the given `MLFeatureValue` is acceptable to the model’s input feature, `false` otherwise.
 

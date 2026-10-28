@@ -19,7 +19,7 @@ var currentPoint: NSPoint { get }
 @property (readonly) NSPoint currentPoint;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the point from which the next drawn line or curve segment begins. If the path is empty, accessing this property raises [`genericException`](../../Foundation/nsexceptionname/genericexception.md).
 

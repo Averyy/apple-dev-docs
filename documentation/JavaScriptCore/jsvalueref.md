@@ -24,7 +24,7 @@ typealias JSValueRef = OpaquePointer
 typedef const struct OpaqueJSValue * JSValueRef;
 ```
 
-#### Discussion
+## Discussion
 
 This is the base type for all JavaScript values, and polymorphic functions on them.
 

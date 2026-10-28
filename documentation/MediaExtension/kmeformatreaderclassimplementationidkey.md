@@ -20,7 +20,7 @@ var kMEFormatReaderClassImplementationIDKey: String { get }
 #define kMEFormatReaderClassImplementationIDKey
 ```
 
-#### Discussion
+## Discussion
 
 Format the string similar to the bundle identifier of the format reader. Start with the reverse domain identifier of your developer account, followed by `.formatreader.` and the name of the media format. If you plan to create multiple variants of the same media format, include an additional component to make each format reader identifier unique; for example `com.mycompany.formatreader.mymediaformat.formatvariant`.
 

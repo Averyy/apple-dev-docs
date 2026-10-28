@@ -6,7 +6,7 @@
 
 A 32-bit integer specifying the sample size.
 
-#### Overview
+## Overview
 
 If all the samples are the same size, this field contains that size value. If this field is set to `0`, then the samples have different sizes, and those sizes are stored in the sample size table.
 

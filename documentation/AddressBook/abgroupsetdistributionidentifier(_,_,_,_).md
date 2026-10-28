@@ -19,11 +19,11 @@ func ABGroupSetDistributionIdentifier(_ group: ABGroupRef!, _ person: ABPersonRe
 extern bool ABGroupSetDistributionIdentifier(ABGroupRef group, ABPersonRef person, CFStringRef property, CFStringRef identifier);
 ```
 
-#### Return Value
+## Return Value
 
 `true` ifsuccessful, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 The default distribution identifier is a multi-value list’sprimary identifier. Use this function if you need to change thedistribution identifier for a particular person. For example, ifthe default identifier is a person’s home email but you want touse John’s work email, invoke this function passing kABEmailWorkLabel asthe `identifier` parameter, kABEmailProperty asthe `property` parameter, and John’sperson object as the `person` parameter.
 

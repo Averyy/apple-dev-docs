@@ -15,7 +15,7 @@ The resources are being downloaded into the cache.
 const unsigned short DOWNLOADING;
 ```
 
-#### Discussion
+## Discussion
 
 ```javascript
 const unsigned short DOWNLOADING = 3;

@@ -23,7 +23,7 @@ func MIDIEntityGetNumberOfSources(_ entity: MIDIEntityRef) -> Int
 extern ItemCount MIDIEntityGetNumberOfSources(MIDIEntityRef entity);
 ```
 
-#### Return Value
+## Return Value
 
 The number of sources the entity contains, or 0 if an error occurred.
 

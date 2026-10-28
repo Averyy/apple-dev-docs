@@ -25,7 +25,7 @@ optional func presentedItemDidLose(_ version: NSFileVersion)
 - (void) presentedItemDidLoseVersion:(NSFileVersion *) version;
 ```
 
-#### Discussion
+## Discussion
 
 Your delegate can use this method to determine how to handle the loss of the specified file version. You can try to revert the presented document to a previous version or you might want to prompt the user about how to proceed.
 

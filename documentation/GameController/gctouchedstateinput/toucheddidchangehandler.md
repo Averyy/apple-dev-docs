@@ -25,7 +25,7 @@ var touchedDidChangeHandler: ((any GCPhysicalInputElement, any GCTouchedStateInp
 @property (atomic, copy, nullable) void (^touchedDidChangeHandler)(id<GCPhysicalInputElement>element, id<GCTouchedStateInput>input, BOOL touched);
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get the latest state of the touch input. The block’s parameters are:
 

@@ -19,7 +19,7 @@ var isPlaying: Bool { get }
 @property (readonly, getter=isPlaying) BOOL playing;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the receiver is playing its audio data.
 

@@ -19,11 +19,11 @@
 static bool SPSize3DFloatContainsAnyPoint(SPSize3DFloat size, const SPPoint3DFloat *points, int pointCount);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the size contains any of the specified points.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the size contains any of the specified points.
 

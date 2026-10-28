@@ -27,7 +27,7 @@ var contentType: String? { get set }
 
 - [Generating summary and priority data for indexed items](../generating-summary-and-priority-data-for-indexed-items.md)
 
-#### Discussion
+## Discussion
 
 To learn more about UTIs, see `UTType`.
 

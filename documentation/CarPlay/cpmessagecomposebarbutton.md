@@ -21,7 +21,7 @@ class CPMessageComposeBarButton
 @interface CPMessageComposeBarButton : CPBarButton
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  This button type does not use a handler. Instead, tapping this button activates Siri and initiates the compose message flow.
 

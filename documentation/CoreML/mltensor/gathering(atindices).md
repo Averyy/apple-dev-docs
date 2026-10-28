@@ -21,11 +21,11 @@ Returns a tensor by gathering slices at the specified indices.
 func gathering(atIndices indices: MLTensor) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The gathered tensor.
 
-#### Discussion
+## Discussion
 
 The `indices` tensor is interpreted as a `(rank-1)` dimensional set of one-dimensional lookup vectors, for example:
 

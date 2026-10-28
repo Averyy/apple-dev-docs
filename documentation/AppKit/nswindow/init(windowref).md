@@ -21,15 +21,15 @@ convenience init?(windowRef: UnsafeMutableRawPointer)
 - (NSWindow *) initWithWindowRef:(void *) windowRef;
 ```
 
-#### Return Value
+## Return Value
 
 A Cocoa window created from `windowRef`.
 
-#### Discussion
+## Discussion
 
 For more information on Carbon-Cocoa integration, see Using a Carbon User Interface in a Cocoa Application in Carbon-Cocoa Integration Guide.
 
-##### Special Considerations
+### Special Considerations
 
 For historical reasons, contrary to normal memory management policy `initWithWindowRef:` does *not* retain `windowRef`. It is therefore recommended that you make sure you retain `windowRef` before calling this method. If `windowRef` is still valid when the Cocoa window is deallocated, the Cocoa window will release it.
 

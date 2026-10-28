@@ -25,7 +25,7 @@ var specular: SCNMaterialProperty { get }
 @property (nonatomic, readonly) SCNMaterialProperty * specular;
 ```
 
-#### Discussion
+## Discussion
 
 Specular shading describes the amount and color of light reflected by the material directly toward the viewer, forming a bright highlight on the surface and simulating a glossy or shiny appearance. You adjust the sharpness of specular highlights using the material’s [`shininess`](./shininess.md) property.
 

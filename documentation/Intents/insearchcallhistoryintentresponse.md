@@ -25,7 +25,7 @@ class INSearchCallHistoryIntentResponse
 @interface INSearchCallHistoryIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INSearchCallHistoryIntentResponse`](./insearchcallhistoryintentresponse.md) object to specify the results of searching the user’s call history. After performing a search using the criteria specified in the [`INSearchCallHistoryIntent`](./insearchcallhistoryintent.md) object, create an instance of this class with the results of that search.
 

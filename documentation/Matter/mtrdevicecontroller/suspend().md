@@ -25,7 +25,7 @@ func suspend()
 - (void) suspend;
 ```
 
-#### Discussion
+## Discussion
 
 Suspending an already-suspended controller has no effect.
 

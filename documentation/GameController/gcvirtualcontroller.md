@@ -25,7 +25,7 @@ class GCVirtualController
 
 - [Adding virtual controls to games that support game controllers in iOS](./adding-virtual-controls-to-games-that-support-game-controllers-in-ios.md)
 
-#### Overview
+## Overview
 
 Use a virtual controller to display software controls that you can customize over your game. You create a virtual controller from a configuration where you choose the input elements to display. You can even customize the images for the elements. When you connect the controller to the device, users interact with it similarly to a real controller.
 

@@ -20,7 +20,7 @@ let kSecCodeInfoTime: CFString
 extern CFStringRef const kSecCodeInfoTime;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFDate`](../CoreFoundation/cfdate.md) object. Note that a signer is able to omit this date or pre-date it. Therefore, this is not necessarily the date the code was actually signed. However, you do know that this is the date the signer wanted you to see. Ad-hoc signatures never have secured signing dates.
 

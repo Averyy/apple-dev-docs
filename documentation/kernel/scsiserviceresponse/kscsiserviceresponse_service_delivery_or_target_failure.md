@@ -13,7 +13,7 @@
 kSCSIServiceResponse_SERVICE_DELIVERY_OR_TARGET_FAILURE = 1
 ```
 
-#### Discussion
+## Discussion
 
 The service request failed because of a delivery or target failure.
 

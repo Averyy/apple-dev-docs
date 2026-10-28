@@ -5,7 +5,7 @@
 
 Display selectable, sortable data arranged in rows and columns.
 
-#### Overview
+## Overview
 
 Use a table to display multiple values across a collection of elements. Each element in the collection appears in a different row of the table, while each value for a given element appears in a different column. Narrow displays may adapt to show only the first column of the table.
 

@@ -16,11 +16,11 @@ Returns a flattened data representation of a Quartz event.
 extern CFDataRefCGEventCreateData(CFAllocatorRef allocator, CGEventRef event);
 ```
 
-#### Return Value
+## Return Value
 
 The flattened data representation of the event, or `NULL` if the `event` parameter is invalid. When you no longer need the data object, you should release it using the function `CFRelease`.
 
-#### Discussion
+## Discussion
 
 You can use this function to flatten an event for network transport to another system.
 

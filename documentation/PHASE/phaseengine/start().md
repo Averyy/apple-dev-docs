@@ -24,7 +24,7 @@ func start() throws
 - (BOOL) startAndReturnError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This function throws an error if the framework fails to start the engine.
 

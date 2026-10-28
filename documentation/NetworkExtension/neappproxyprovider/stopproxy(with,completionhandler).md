@@ -27,7 +27,7 @@ func stopProxy(with reason: NEProviderStopReason) async
 - (void) stopProxyWithReason:(NEProviderStopReason) reason completionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by the system to stop the network proxy.
 

@@ -17,7 +17,7 @@ A Boolean value that indicates whether a detected tag is available.
 @property (nonatomic, readonly, getter=isAvailable) BOOL available;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the tag is available in the current reader session. When a tag is removed from an RF field, it becomes unavailable.
 

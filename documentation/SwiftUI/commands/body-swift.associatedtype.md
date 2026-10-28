@@ -20,7 +20,7 @@ The type of commands that represents the body of this command hierarchy.
 associatedtype Body : Commands
 ```
 
-#### Discussion
+## Discussion
 
 When you create custom commands, Swift infers this type from your implementation of the required [`body`](./body-swift.property.md) property.
 

@@ -27,7 +27,7 @@ optional func cut(_ sender: Any?)
 
 - [Using responders and the responder chain to handle events](../using-responders-and-the-responder-chain-to-handle-events.md)
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the user selects the Cut command from an editing menu. Your implementation should write the selected content to the pasteboard and then remove it from your interface.
 

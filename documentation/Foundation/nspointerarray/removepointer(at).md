@@ -25,7 +25,7 @@ func removePointer(at index: Int)
 - (void) removePointerAtIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Elements above `index`, including `NULL` values, slide lower.
 

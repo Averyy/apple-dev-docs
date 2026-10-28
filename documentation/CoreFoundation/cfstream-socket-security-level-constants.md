@@ -5,7 +5,7 @@
 
 Constants for setting the security level of a socket stream.
 
-#### Overview
+## Overview
 
 This enumeration defines the preferred constants for setting the security protocol for a socket stream pair when calling [`CFReadStreamSetProperty(_:_:_:)`](./cfreadstreamsetproperty%28_,_,_%29.md) or [`CFWriteStreamSetProperty(_:_:_:)`](./cfwritestreamsetproperty%28_,_,_%29.md).
 

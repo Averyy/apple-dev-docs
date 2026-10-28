@@ -23,7 +23,7 @@ func move() async -> Bool
 - (void) moveDocumentWithCompletionHandler:(void (^)(BOOL didMove)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method presents the user with a move panel if `[self fileURL]` is non-nil and then tries to save the document to the new location by invoking the [`move(to:completionHandler:)`](./move%28to,completionhandler%29.md) method if the user accepts the location presented by the panel. If a file with the same name already exists at that location, the user will be asked to choose between replacing the pre-existing file, renaming the current document, or canceling the move process. If `[self fileURL]` is `nil`, then the `[self runModalSavePanelForSaveOperation:NSSaveAsOperation delegate:didSaveSelector:contextInfo:]` message is sent instead.
 

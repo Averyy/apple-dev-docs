@@ -15,11 +15,11 @@ A component that adds fluid and immersive interactive behaviors and effects.
 struct ManipulationComponent
 ```
 
-#### Overview
+## Overview
 
 `ManipulationComponent` enables rich interaction on entities in 3D space, including gesture-based movement, and audio feedback. When you apply this to an entity, the system enables intuitive manipulation using hands or input devices like a trackpad.
 
-##### Interaction Features
+### Interaction Features
 
 - **Gestures**:
 
@@ -38,7 +38,7 @@ struct ManipulationComponent
 
 When you add this component to an entity, the system modifies the entity’s transform directly. If you need to apply your own transforms, consider applying them to a **subentity** instead, or listening to component events and responding accordingly.
 
-##### Interaction Lifecycle
+### Interaction Lifecycle
 
 During a typical interaction, the system transitions through several stages, each stage has a specific event in [`ManipulationEvents`](./manipulationevents.md). You can subscribe to these events to implement custom behaviors, audio feedback, analytics, or visual responses:
 

@@ -20,11 +20,11 @@ Creates a path with the specified array of 3D points.
 + (instancetype) pathWithFloat3Points:(vector_float3 *) points count:(size_t) count radius:(float) radius cyclical:(BOOL) cyclical;
 ```
 
-#### Return Value
+## Return Value
 
 A new path object.
 
-#### Discussion
+## Discussion
 
 The `radius` parameter defines the space occupied by the path—think of this space as the volume created by sweeping a sphere of the specified radius along the path from vertex to vertex. Agents with path-related goals will attempt to move to or stay within this volume.
 

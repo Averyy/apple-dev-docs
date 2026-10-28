@@ -20,7 +20,7 @@ init(query: OCKContactQuery)
 
 Available when `Result` is `any OCKAnyContact` and `Query` is `OCKContactQuery`.
 
-#### Discussion
+## Discussion
 
 The result synchronizes with changes in the store.
 

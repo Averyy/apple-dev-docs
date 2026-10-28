@@ -12,7 +12,7 @@ virtual const char * getDeviceTypeName(
  void);
 ```
 
-#### Overview
+## Overview
 
 This method returns a string, used to compare the kIOBlockStorageDeviceTypeKey of our provider. This method is called from probe.
 

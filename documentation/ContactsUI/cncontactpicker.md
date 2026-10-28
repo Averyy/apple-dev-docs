@@ -19,7 +19,7 @@ class CNContactPicker
 @interface CNContactPicker : NSObject
 ```
 
-#### Overview
+## Overview
 
 Before displaying the popover, configure the [`displayedKeys`](./cncontactpicker/displayedkeys.md) property with the information you want to display in the interface.
 

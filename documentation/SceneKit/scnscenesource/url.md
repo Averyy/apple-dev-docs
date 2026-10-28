@@ -25,7 +25,7 @@ var url: URL? { get }
 @property (readonly, nullable) NSURL * url;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if the scene source was not created using the [`sceneSourceWithURL:options:`](./scenesourcewithurl_options_.md) or [`init(url:options:)`](./init%28url,options%29-rw0y.md) method.
 

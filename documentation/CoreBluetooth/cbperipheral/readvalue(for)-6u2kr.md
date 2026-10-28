@@ -25,7 +25,7 @@ func readValue(for characteristic: CBCharacteristic)
 - (void) readValueForCharacteristic:(CBCharacteristic *) characteristic;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method to read the value of a characteristic, the peripheral calls the [`peripheral(_:didUpdateValueFor:error:)`](../cbperipheraldelegate/peripheral%28_,didupdatevaluefor,error%29-1xyna.md) method of its delegate object. If the peripheral successfully reads the value of the characteristic, you can access it through the characteristic’s [`value`](../cbcharacteristic/value.md) property.
 

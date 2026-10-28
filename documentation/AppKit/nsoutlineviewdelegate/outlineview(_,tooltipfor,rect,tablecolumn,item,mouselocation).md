@@ -20,7 +20,7 @@ optional func outlineView(_ outlineView: NSOutlineView, toolTipFor cell: NSCell,
 - (NSString *) outlineView:(NSOutlineView *) outlineView toolTipForCell:(NSCell *) cell rect:(NSRectPointer) rect tableColumn:(NSTableColumn *) tableColumn item:(id) item mouseLocation:(NSPoint) mouseLocation;
 ```
 
-#### Return Value
+## Return Value
 
 If you don’t want a tooltip at that location, return an empty string.
 

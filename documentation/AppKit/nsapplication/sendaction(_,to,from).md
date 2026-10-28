@@ -19,11 +19,11 @@ func sendAction(_ action: Selector, to target: Any?, from sender: Any?) -> Bool
 - (BOOL) sendAction:(SEL) action to:(id) target from:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the action was successfully sent; otherwise [`false`](../../Swift/false.md). This method also returns [`false`](../../Swift/false.md) if `anAction` is `nil`.
 
-#### Discussion
+## Discussion
 
 If `aTarget` is `nil`, [`shared`](./shared.md) looks for an object that can respond to the message—that is, an object that implements a method matching `anAction`. It begins with the first responder of the key window. If the first responder can’t respond, it tries the first responder’s next responder and continues following next responder links up the responder chain. If none of the objects in the key window’s responder chain can handle the message, [`shared`](./shared.md) attempts to send the message to the key window’s delegate.
 

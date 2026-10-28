@@ -17,7 +17,7 @@ An enumeration of data events that the transport extension receives.
 enum DataEvent
 ```
 
-#### Overview
+## Overview
 
 The [`AccessoryTransportSession.EventHandler`](./eventhandler.md) protocol’s [`dataEventHandler(event:)`](./eventhandler/dataeventhandler%28event%29.md) method receives events of this type.
 

@@ -25,7 +25,7 @@ func setFrontFacing(_ frontFacingWinding: MTLWinding)
 - (void) setFrontFacingWinding:(MTLWinding) frontFacingWinding;
 ```
 
-#### Discussion
+## Discussion
 
 The render pass’s default front-facing mode is [`MTLWinding.clockwise`](../mtlwinding/clockwise.md).
 

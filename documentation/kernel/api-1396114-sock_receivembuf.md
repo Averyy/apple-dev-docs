@@ -13,11 +13,11 @@
 errno_t sock_receivembuf(socket_t so, struct msghdr *msg, mbuf_t *data, int flags, size_t *recvlen);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success, EWOULDBLOCK if non-blocking and operation would cause the thread to block, otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Receive data from a socket. Similar to sock_receive though data is returned as a chain of mbufs. See 'man 2 recvmsg' for more information about receiving data.
 

@@ -19,11 +19,11 @@ A class to manage exporting credentials.
 class ASCredentialExportManager
 ```
 
-#### Overview
+## Overview
 
 `ASCredentialExportManager` allows your app to exchange authentication credentials like passwords and passkeys with other apps. Participating apps such as password managers can receive your exported credentials by using the [`ASCredentialImportManager`](./ascredentialimportmanager.md) class.
 
-##### Configure your app
+### Configure your app
 
 To participate in credential exchange, edit your credential provider extension’s information property list and add the following key with a Boolean value of `YES`:
 
@@ -35,7 +35,7 @@ Also, declare the versions of the credential data format your app supports using
 
 The value is an array of strings containing every version your app supports. Currently the only available version is `1.0`.
 
-##### Export credentials
+### Export credentials
 
 To export credentials, your app’s interface needs to allow the person using it to select the credentials they want to export. To begin the process, call the [`requestExport(for:)`](./ascredentialexportmanager/requestexport%28for%29.md) method on an instance of this class. Calling this method brings up an out-of-process system UI that guides the person through the export procedure. The system UI explains the risks of exporting credentials, and then allows them to choose an app to export to. The operating system acts as an intermediary to establish the identities of the password manager apps involved and performs the exchange; this process doesn’t write any data to the file system.
 

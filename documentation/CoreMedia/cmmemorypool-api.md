@@ -5,7 +5,7 @@
 
 An object that optimizes memory allocation when working with large blocks of memory.
 
-#### Overview
+## Overview
 
 An instance of `CMMemoryPool` is a memory allocation service that holds a pool of recently deallocated memory. Its purpose is to speed up subsequent allocations of the same size. Use this API in cases where you need to repeatedly allocate large blocks of memory, such as a video encoding app that outputs compressed data.
 

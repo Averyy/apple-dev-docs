@@ -23,7 +23,7 @@ var inactiveSchedulingPolicy: WKPreferences.InactiveSchedulingPolicy { get set }
 @property (nonatomic) WKInactiveSchedulingPolicy inactiveSchedulingPolicy;
 ```
 
-#### Discussion
+## Discussion
 
 Set this to indicate how a web view that’s not in a window handles tasks; for example, when the web view is in a background tab in a browser. The default value is [`WKPreferences.InactiveSchedulingPolicy.suspend`](./inactiveschedulingpolicy-swift.enum/suspend.md).
 

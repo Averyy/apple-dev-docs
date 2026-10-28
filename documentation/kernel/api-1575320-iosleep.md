@@ -15,7 +15,7 @@ Sleep the calling thread for a number of milliseconds.
 void IOSleep(unsigned int milliseconds);
 ```
 
-#### Discussion
+## Discussion
 
 This function blocks the calling thread for at least the number of specified milliseconds, giving time to other processes.
 

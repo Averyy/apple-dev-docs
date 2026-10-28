@@ -23,11 +23,11 @@ class func confirmationRequired(with stringToConfirm: INSpeakableString?) -> Sel
 + (instancetype) confirmationRequiredWithStringToConfirm:(INSpeakableString *) stringToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INSpeakableStringResolutionResult`](../inspeakablestringresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to the specified value but you want the user to confirm that value.
 

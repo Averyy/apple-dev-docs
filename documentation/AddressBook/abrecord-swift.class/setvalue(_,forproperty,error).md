@@ -19,7 +19,7 @@ func setValue(_ value: Any!, forProperty property: String!, error: ()) throws
 - (BOOL) setValue:(id) value forProperty:(NSString *) property error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The type of the value must match the property’s type (see [Property Types](../property_types.md) for a list of possible property types). If `property` is `nil` or if `value` is not of the correct type, this method raises an exception. If `property` is a multivalue list property, this method checks to see if the values in the multivalue list are the same type. If the multivalue list contains mixed types, the value will not be set successfully.
 

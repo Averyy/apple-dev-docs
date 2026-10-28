@@ -20,11 +20,11 @@ Converts a UIKit text alignment constant value to the matching constant value th
 init(_ nsTextAlignment: NSTextAlignment)
 ```
 
-#### Return Value
+## Return Value
 
 The Core Text alignment that corresponds to the value specified in `nsTextAlignment`.
 
-#### Discussion
+## Discussion
 
 Use this function when you need to map between the UIKit and Core Text constants for text alignment.
 

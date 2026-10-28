@@ -19,7 +19,7 @@ A Boolean value that indicates whether the system prefers that the app reduce it
 @property (nonatomic, readonly) BOOL systemPrefersReducedResourceUsage;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is `YES`, the system has entered a state where it would prefer apps to scale back resource-intensive work. The default value is `NO`.
 

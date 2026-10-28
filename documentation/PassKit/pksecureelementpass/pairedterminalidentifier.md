@@ -24,7 +24,7 @@ var pairedTerminalIdentifier: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * pairedTerminalIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 PassKit can create a Secure Element pass during an exchange with a terminal. For example, when creating a digital car key. You can use this property’s value to identify the terminal.
 

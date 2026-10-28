@@ -15,11 +15,11 @@ Applies the copy rule to a resource at the given path.
 static func copy(_ path: String) -> Resource
 ```
 
-#### Return Value
+## Return Value
 
 A `Resource` instance.
 
-#### Discussion
+## Discussion
 
 If possible, use [`process(_:localization:)`](./process%28_,localization%29.md) and automatically apply optimizations to resources.
 

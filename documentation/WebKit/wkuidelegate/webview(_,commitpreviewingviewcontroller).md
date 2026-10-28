@@ -22,7 +22,7 @@ optional func webView(_ webView: WKWebView, commitPreviewingViewController previ
 - (void) webView:(WKWebView *) webView commitPreviewingViewController:(UIViewController *) previewingViewController;
 ```
 
-#### Discussion
+## Discussion
 
 You must display the previewed view controller inside of your app.
 

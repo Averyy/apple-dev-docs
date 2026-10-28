@@ -19,7 +19,7 @@ enum SelectionMode
 enum NSMenuSelectionMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 This doesn’t apply to menu items that have distinct target-action values.
 

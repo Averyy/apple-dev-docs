@@ -25,7 +25,7 @@ var groupIdentifier: String? { get }
 @property (nonatomic, strong, readonly, nullable) NSString * groupIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 GameKit sets this property when the leaderboard set is part of a game group, and it calls `loadLeaderboardSetsWithCompletionHandler:` for leaderboards that support game groups.
 

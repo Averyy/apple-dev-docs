@@ -16,7 +16,7 @@ Decrements the reference count of the specified object.
 void cp_release(void *obj);
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this function in Swift code or on types you manage using automatic reference counting (ARC).
 

@@ -22,7 +22,7 @@ protocol NSAnimatablePropertyContainer
 @protocol NSAnimatablePropertyContainer
 ```
 
-#### Overview
+## Overview
 
 The [`NSAnimatablePropertyContainer`](./nsanimatablepropertycontainer.md) protocol returns a proxy object for the receiver that can be used to initiate implied animation of property changes. An object’s animator proxy should be treated as if it was the object itself, and may be passed to any code that accepts the object as a parameter. Sending of key-value-coding compliant “set” messages to the proxy will trigger animation for automatically animated properties of its target object.
 

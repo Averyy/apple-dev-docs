@@ -20,11 +20,11 @@ Returns asset-pack downloads to schedule.
 func downloads(for request: BAContentRequest, manifestURL: URL, extensionInfo: BAAppExtensionInfo) -> Set<BADownload>
 ```
 
-#### Return Value
+## Return Value
 
 The downloads to schedule.
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Don’t override this default implementation.
 

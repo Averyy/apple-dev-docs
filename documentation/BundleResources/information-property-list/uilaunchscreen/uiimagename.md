@@ -15,7 +15,7 @@ The name of an image to display during app launch.
 - **Name**: `UIImageName` (Image Name)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Provide a value for this key that’s the name of an image in your asset catalog. You use the same string for the value that you might use when calling the [`init(named:)`](../../../UIKit/uiimage/init%28named%29.md) initializer of [`UIImage`](../../../UIKit/uiimage.md). Because the image comes from your asset catalog, you can use slicing to provide a small image that works on many different platforms.
 

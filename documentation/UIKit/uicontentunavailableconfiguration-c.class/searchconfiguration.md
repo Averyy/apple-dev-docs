@@ -19,7 +19,7 @@ Creates a configuration appropriate for indicating an empty search result.
 + (instancetype) searchConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration.
 

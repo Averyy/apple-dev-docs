@@ -22,7 +22,7 @@ The currency of the subscription’s renewal price.
 var currency: Locale.Currency? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [`currency`](./currency.md) value applies to the product’s [`renewalPrice`](./renewalprice.md) instance.
 

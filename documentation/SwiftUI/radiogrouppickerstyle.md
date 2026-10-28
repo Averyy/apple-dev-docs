@@ -15,7 +15,7 @@ A picker style that presents the options as a group of radio buttons.
 struct RadioGroupPickerStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`radioGroup`](./pickerstyle/radiogroup.md) to construct this style.
 

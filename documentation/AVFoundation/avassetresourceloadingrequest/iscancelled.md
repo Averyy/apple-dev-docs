@@ -24,7 +24,7 @@ var isCancelled: Bool { get }
 @property (nonatomic, readonly, getter=isCancelled) BOOL cancelled;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) when the resource loader cancels the loading of a request, just prior to sending the message [`resourceLoader(_:didCancel:)`](../avassetresourceloaderdelegate/resourceloader%28_,didcancel%29-3nl51.md) to the delegate.
 

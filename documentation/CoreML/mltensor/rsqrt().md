@@ -21,7 +21,7 @@ Computes reverse square root of the tensor’s elements.
 func rsqrt() -> MLTensor
 ```
 
-#### Discussion
+## Discussion
 
 The reverse square root operation is the reciprocal of the square root.
 

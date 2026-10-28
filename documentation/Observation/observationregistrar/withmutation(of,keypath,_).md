@@ -21,7 +21,7 @@ Identifies mutations to the transactions registered for observers.
 func withMutation<Subject, Member, T>(of subject: Subject, keyPath: KeyPath<Subject, Member>, _ mutation: () throws -> T) rethrows -> T where Subject : Observable
 ```
 
-#### Discussion
+## Discussion
 
 This method calls [`willSet(_:keyPath:)`](./willset%28_,keypath%29.md) before the mutation. Then it calls [`didSet(_:keyPath:)`](./didset%28_,keypath%29.md) after the mutation.
 

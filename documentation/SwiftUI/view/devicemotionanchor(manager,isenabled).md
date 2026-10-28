@@ -17,7 +17,7 @@ nonisolated
 func deviceMotionAnchor(manager: CMMotionManager, isEnabled: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 @State private var motionManager = CMMotionManager()

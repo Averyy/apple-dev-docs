@@ -15,7 +15,7 @@ Returns the CFBundleIdentifier for the calling kext as a C string.
 const char * OSKextGetCurrentIdentifier(void);
 ```
 
-#### Return Value
+## Return Value
 
 The CFBundleIdentifier for the calling kext as a C string.
 

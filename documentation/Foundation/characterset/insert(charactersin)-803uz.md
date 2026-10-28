@@ -21,7 +21,7 @@ Insert a closed range of integer values in the `CharacterSet`.
 mutating func insert(charactersIn range: ClosedRange<Unicode.Scalar>)
 ```
 
-#### Discussion
+## Discussion
 
 It is the caller’s responsibility to ensure that the values represent valid `Unicode.Scalar` values, if that is what is desired.
 

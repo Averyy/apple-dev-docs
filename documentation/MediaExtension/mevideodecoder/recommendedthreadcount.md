@@ -19,7 +19,7 @@ optional var recommendedThreadCount: Int { get set }
 @property (readwrite) NSInteger recommendedThreadCount;
 ```
 
-#### Discussion
+## Discussion
 
 The system sets this property on the extension when [Video Toolbox](../../VideoToolbox/VideoToolbox.md) sets [`kVTDecompressionPropertyKey_ThreadCount`](../../VideoToolbox/kvtdecompressionpropertykey_threadcount.md) on the hosting [`VTDecompressionSession`](../../VideoToolbox/vtdecompressionsession.md).
 

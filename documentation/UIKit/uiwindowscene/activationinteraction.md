@@ -23,7 +23,7 @@ class ActivationInteraction
 @interface UIWindowSceneActivationInteraction : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a [`UIWindowScene.ActivationInteraction`](./activationinteraction.md) object when you want to facilitate requesting scene activation when the user pinches open on a view. You initialize the interaction with a closure that the system executes when the user triggers the interaction. The closure should return a [`UIWindowScene.ActivationConfiguration`](./activationconfiguration.md) object. You also provide an error-handler closure that the system executes if the scene activation request fails.
 

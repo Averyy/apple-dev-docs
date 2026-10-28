@@ -20,7 +20,7 @@ The tool for drawing on the canvas.
 @preconcurrency var drawingTool: any PKTool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When a touch is a drawing interaction, the canvas uses this tool to draw.
 

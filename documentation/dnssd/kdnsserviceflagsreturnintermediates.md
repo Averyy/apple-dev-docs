@@ -23,7 +23,7 @@ var kDNSServiceFlagsReturnIntermediates: UInt32 { get }
 kDNSServiceFlagsReturnIntermediates
 ```
 
-#### Discussion
+## Discussion
 
 Flag for returning intermediate results. For example, if a query results in an authoritative NXDomain (name does not exist) then that result is returned to the client. However the query is not implicitly cancelled – it remains active and if the answer subsequently changes (e.g. because a VPN tunnel is subsequently established) then that positive result will still be returned to the client. Similarly, if a query results in a CNAME record, then in addition to following the CNAME referral, the intermediate CNAME result is also returned to the client. When this flag is not set, NXDomain errors are not returned, and CNAME records are followed silently without informing the client of the intermediate steps. (In earlier builds this flag was briefly called kDNSServiceFlagsReturnCNAME.)
 

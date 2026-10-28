@@ -24,7 +24,7 @@ var defaultWebpagePreferences: WKWebpagePreferences! { get set }
 @property (nonatomic, copy, null_resettable) WKWebpagePreferences * defaultWebpagePreferences;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the JavaScript settings and content mode for new webpages. When the web view navigates to a new page, it passes the default preferences to its navigation delegate, which can modify the preferences or pass them as they are.
 

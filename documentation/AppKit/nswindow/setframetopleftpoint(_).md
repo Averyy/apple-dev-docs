@@ -19,7 +19,7 @@ func setFrameTopLeftPoint(_ point: NSPoint)
 - (void) setFrameTopLeftPoint:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 Note that the window server limits window position coordinates to ±16,000; if necessary, adjust `aPoint` relative to the window’s lower-left corner to account for this limit.
 

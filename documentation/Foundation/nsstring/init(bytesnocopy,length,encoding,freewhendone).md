@@ -25,11 +25,11 @@ convenience init?(bytesNoCopy bytes: UnsafeMutableRawPointer, length len: Int, e
 - (instancetype) initWithBytesNoCopy:(void *) bytes length:(NSUInteger) len encoding:(NSStringEncoding) encoding freeWhenDone:(BOOL) freeBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSString` object containing `length` bytes from `bytes` interpreted using the encoding `encoding`. The returned object may be different from the original receiver.
 
-#### Discussion
+## Discussion
 
 If an error occurs during the creation of the string, then `bytes` isn’t freed even if `flag` is [`true`](../../Swift/true.md). In this case, the caller is responsible for freeing the buffer. This allows the caller to continue trying to create a string with the buffer, without having the buffer deallocated.
 

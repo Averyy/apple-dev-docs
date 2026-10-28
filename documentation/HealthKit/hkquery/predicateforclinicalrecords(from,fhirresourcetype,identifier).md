@@ -27,7 +27,7 @@ class func predicateForClinicalRecords(from source: HKSource, fhirResourceType r
 
 - [Accessing Health Records](../accessing-health-records.md)
 
-#### Discussion
+## Discussion
 
 The FHIR resource identifier is only unique for a particular resource type from a given source. To uniquely identify a FHIR resource, you must compare the identifier, the resource type, and the source.
 

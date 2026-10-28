@@ -24,11 +24,11 @@ class func aztecCodeGenerator() -> any CIFilter & CIAztecCodeGenerator
 + (CIFilter<CIAztecCodeGenerator> *) aztecCodeGeneratorFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates an Aztec code as an image. The Aztec barcode code is a low-density barcode defined in the ISO/IEC 24778:2008 standard. This code is commonly used for transport ticketing or boarding passes.
 

@@ -15,7 +15,7 @@ A Boolean value that determines whether the user may scroll the map with a point
 isScrollEnabled?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true.`
 

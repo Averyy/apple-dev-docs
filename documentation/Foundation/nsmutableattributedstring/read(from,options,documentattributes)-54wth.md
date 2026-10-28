@@ -33,7 +33,7 @@ func read(from url: URL, options opts: [NSAttributedString.DocumentReadingOption
 - (BOOL) readFromURL:(NSURL *) url options:(NSDictionary<NSString *,id> *) opts documentAttributes:(NSDictionary<NSString *,id> **) dict error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Filter services can be used to convert the contents of the URL into a format recognized by Cocoa.
 

@@ -28,7 +28,7 @@ class EKRecurrenceRule
 
 - [Creating a recurring event](./creating-a-recurring-event.md)
 
-#### Overview
+## Overview
 
 After you create a recurrence rule, assign it to an event with the method of [`EKEvent`](./ekevent.md).
 

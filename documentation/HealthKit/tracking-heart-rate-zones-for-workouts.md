@@ -13,11 +13,11 @@ Start a workout on iOS or watchOS and track and display heart rate zones.
 - watchOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC26 session 207: [Deliver workout insights with HealthKit workout zones](https://developer.apple.com/wwdc26/207/).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 To configure the sample code project:
 

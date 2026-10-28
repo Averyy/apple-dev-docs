@@ -32,7 +32,7 @@ var phoneticFamilyName: String { get set }
 @property (atomic, copy) NSString * phoneticFamilyName;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a string that specifies the pronunciation of the contact’s family (or last) name.
 

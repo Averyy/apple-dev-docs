@@ -15,11 +15,11 @@ Updates an existing budget order.
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to modify an existing budget order. Use the `id` that returns in the [`Create a Budget Order`](./create-a-budget-order.md) call as a resource.
 
-##### Payload example: Update a budget order
+### Payload example: Update a budget order
 
 **Request**:
 

@@ -17,7 +17,7 @@ Parser for Mistral V13 tool call format: `[TOOL_CALLS]name[ARGS]{"json_args"}`
 struct MistralToolCallParser
 ```
 
-#### Overview
+## Overview
 
 This format is used by Mistral3/Ministral-3 2512 models and Devstral 2. The special tokens `[TOOL_CALLS]` (token ID 9) and `[ARGS]` (ID 32) are used as delimiters. Multiple tool calls use repeated `[TOOL_CALLS]` tokens.
 

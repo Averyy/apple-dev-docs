@@ -15,7 +15,7 @@ The component for adding a TikTok post.
 object TikTok
 ```
 
-#### Discussion
+## Discussion
 
 Use the `tiktok` object to include a TikTok post by specifying a URL for the post.
 

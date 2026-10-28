@@ -12,11 +12,11 @@ virtual IOReturn initiatePowerStateChange(
  UInt32 *microsecondsUntilComplete = NULL);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success
 
-#### Overview
+## Overview
 
 This function must be called on the IOWorkLoop. It calls performPowerStateChange() to let the driver process the state change. If the state change is completed synchronously by the driver (subclass) it calls protectedCompletePowerStateChange(). If done asynchronously it returns the microsecondsUntilComplete that was set by performPowerStateChange(). This function should not be called directly.
 

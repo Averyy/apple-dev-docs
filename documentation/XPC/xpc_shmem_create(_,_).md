@@ -25,11 +25,11 @@ func xpc_shmem_create(_ region: UnsafeMutableRawPointer, _ length: Int) -> xpc_o
 extern xpc_object_txpc_shmem_create(void *region, size_t length);
 ```
 
-#### Return Value
+## Return Value
 
 A new shared memory object.
 
-#### Discussion
+## Discussion
 
 This API is NOT for making a private region of memory shareable. It is to allow for already-shareable regions of memory to be boxed in an XPC object. Do not pass a region allocated with `malloc(3)` or friends to this API.
 

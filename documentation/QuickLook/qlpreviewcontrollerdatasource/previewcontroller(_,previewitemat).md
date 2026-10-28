@@ -23,11 +23,11 @@ func previewController(_ controller: QLPreviewController, previewItemAt index: I
 - (id<QLPreviewItem>) previewController:(QLPreviewController *) controller previewItemAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The preview item to display. The item must be an `NSURL` object, or a custom object that conforms to the [`QLPreviewItem`](../qlpreviewitem.md) protocol.
 
-#### Discussion
+## Discussion
 
 The system invokes this method when the preview controller needs the preview item for a specified index position.
 

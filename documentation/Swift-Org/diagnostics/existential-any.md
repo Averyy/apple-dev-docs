@@ -10,7 +10,7 @@ framework: "Swift-Org/diagnostics"
 
 `any` existential type syntax.
 
-#### Overview
+## Overview
 
 `any` was introduced in Swift 5.6 to explicitly mark “existential types”, i.e., abstract boxed types that conform to a set of constraints. For source compatibility, these are not diagnosed by default except for existential types constrained to protocols with `Self` or associated type requirements (as this was introduced in the same version):
 
@@ -36,7 +36,7 @@ func pass(baz: Baz) {} // `any Baz` required instead of `Baz`
 
 This will become the default in a future language mode.
 
-#### Migration
+## Migration
 
 ```sh
 -enable-upcoming-feature ExistentialAny:migrate

@@ -21,11 +21,11 @@ Creates and returns a date object set to the given number of seconds from 00:00:
 + (instancetype) dateWithTimeIntervalSince1970:(NSTimeInterval) secs;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDate` object set to `secs` seconds from the reference date.
 
-#### Discussion
+## Discussion
 
 This method is useful for creating `NSDate` objects from time_t values returned by BSD system functions.
 

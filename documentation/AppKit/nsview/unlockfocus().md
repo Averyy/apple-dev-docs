@@ -21,7 +21,7 @@ func unlockFocus()
 - (void) unlockFocus;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method after a previous call to the [`lockFocus()`](./lockfocus%28%29.md), [`lockFocusIfCanDraw()`](./lockfocusifcandraw%28%29.md), or [`lockFocusIfCanDraw(in:)`](./lockfocusifcandraw%28in%29.md) method of this view object. Doing so releases focus from the current view and returns it back to the previously focused view, if any. This method raises an `NSInvalidArgumentException` if the current view does not have the focus.
 

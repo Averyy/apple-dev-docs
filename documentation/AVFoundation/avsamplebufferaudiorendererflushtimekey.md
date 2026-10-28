@@ -27,7 +27,7 @@ let AVSampleBufferAudioRendererFlushTimeKey: String
 extern NSString * const AVSampleBufferAudioRendererFlushTimeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSValue`](../Foundation/nsvalue.md) object that wraps a [`CMTime`](../CoreMedia/cmtime.md) value.
 

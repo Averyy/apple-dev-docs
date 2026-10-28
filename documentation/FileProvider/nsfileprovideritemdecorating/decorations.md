@@ -24,7 +24,7 @@ var decorations: [NSFileProviderItemDecorationIdentifier]? { get }
 @property (nonatomic, strong, readonly, nullable) NSArray<NSString *> * decorations;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method to request the item’s decorations. Your implementation should return an array of [`NSFileProviderItemDecorationIdentifier`](../nsfileprovideritemdecorationidentifier.md) instances.
 

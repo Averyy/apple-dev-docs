@@ -23,7 +23,7 @@ var layoutFrame: CGRect { get }
 @property (nonatomic, readonly) CGRect layoutFrame;
 ```
 
-#### Discussion
+## Discussion
 
 The layout guide defines a rectangular space in its owning view’s coordinate system. This property contains a valid [`CGRect`](../../CoreFoundation/cgrect.md) value by the time its owning view’s [`layoutSubviews()`](../uiview/layoutsubviews%28%29.md) method is called.
 

@@ -24,7 +24,7 @@ class CNLabeledValue<ValueType> where ValueType : NSCopying, ValueType : NSSecur
 @interface CNLabeledValue : NSObject
 ```
 
-#### Overview
+## Overview
 
 Labels describe the context for a property. For example, the label for a phone number indicates whether it corresponds to the user’s home, work, or iPhone number.
 

@@ -16,11 +16,11 @@ The caller acknowledges notification of a power state change on a device it has 
 IOReturn IOAllowPowerChange(io_connect_t kernelPort, intptr_t notificationID);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess or an error condition if request failed.
 
-#### Discussion
+## Discussion
 
 Must be used when handling kIOMessageCanSystemSleep and kIOMessageSystemWillSleep messages from IOPMrootDomain system power. The caller should not call IOAllowPowerChange in response to any messages except for these two.
 

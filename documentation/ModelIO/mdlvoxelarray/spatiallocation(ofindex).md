@@ -24,11 +24,11 @@ func spatialLocation(ofIndex index: MDLVoxelIndex) -> vector_float3
 - (vector_float3) spatialLocationOfIndex:(MDLVoxelIndex) index;
 ```
 
-#### Return Value
+## Return Value
 
 The center point for the single voxel at the specified location, in the world coordinate space of the asset from which the voxel array was created.
 
-#### Discussion
+## Discussion
 
 The coordinate space for spatial locations of voxels is the world space of the asset from which the voxel array was created, or for voxel arrays created with the [`init(data:boundingBox:voxelExtent:)`](./init%28data,boundingbox,voxelextent%29.md) initializer, the bounding box specified at initialization.
 

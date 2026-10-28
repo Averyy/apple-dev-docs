@@ -21,7 +21,7 @@ Appends interpolated pointer data with the specified attributes.
 mutating func appendInterpolation(_ pointer: @autoclosure @escaping () -> UnsafeRawPointer, bytes: @autoclosure @escaping () -> Int, format: OSLogPointerFormat = .none, privacy: OSLogPrivacy = .auto, attributes: String)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the framework calls it automatically when you append interpolated pointer data to a log message.
 

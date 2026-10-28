@@ -24,13 +24,13 @@ var magnificationFilter: CALayerContentsFilter { get set }
 @property (copy) CALayerContentsFilter magnificationFilter;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for this property are listed in [Scaling Filters](../scaling-filters.md).
 
 The default value of this property is [`linear`](../calayercontentsfilter/linear.md).
 
-[Figure 1](./api-1410907-magnificationfilter.md#2851435) shows the difference between linear and nearest filtering when a 10 x 10 point image of a circle is magnified by a scale of 10.
+[Figure 1](./magnificationfilter.md#2851435) shows the difference between linear and nearest filtering when a 10 x 10 point image of a circle is magnified by a scale of 10.
 
 ![Circle with different magnification filters](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2851435@2x.png)
 

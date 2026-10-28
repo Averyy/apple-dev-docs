@@ -25,7 +25,7 @@ optional func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, willSpeakRan
 - (void) speechSynthesizer:(AVSpeechSynthesizer *) synthesizer willSpeakRangeOfSpeechString:(NSRange) characterRange utterance:(AVSpeechUtterance *) utterance;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method once for each unit of speech in the utterance’s text, which is generally a word.
 

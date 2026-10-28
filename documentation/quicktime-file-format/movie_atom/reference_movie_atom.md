@@ -6,7 +6,7 @@
 
 A reference movie atom contains references to one or more movies.
 
-#### Overview
+## Overview
 
 For more information, see [Reference movies](../reference_movies.md).
 

@@ -23,7 +23,7 @@ func makeIterator() -> LazyMapSequence<Base, Element>.Iterator
 
 Available when `Base` conforms to `Sequence`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1).
 

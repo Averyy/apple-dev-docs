@@ -21,7 +21,7 @@ Creates a Unicode scalar with the specified numeric value.
 init?(_ v: UInt16)
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code sample creates a `Unicode.Scalar` instance with a value of `"밥"`, the Korean word for rice:
 

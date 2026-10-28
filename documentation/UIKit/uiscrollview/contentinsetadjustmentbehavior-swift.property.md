@@ -23,7 +23,7 @@ var contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior 
 @property (nonatomic) UIScrollViewContentInsetAdjustmentBehavior contentInsetAdjustmentBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies how the safe area insets are used to modify the content area of the scroll view. The default value of this property is [`UIScrollView.ContentInsetAdjustmentBehavior.automatic`](./contentinsetadjustmentbehavior-swift.enum/automatic.md).
 

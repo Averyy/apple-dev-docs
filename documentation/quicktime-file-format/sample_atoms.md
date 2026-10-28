@@ -5,7 +5,7 @@
 
 Atoms that describe samples, which are single elements in a sequence of time-ordered data.
 
-#### Overview
+## Overview
 
 QuickTime stores media data in samples. A sample is a single element in a sequence of time-ordered data. Samples are stored in the media, and they may have varying durations.
 

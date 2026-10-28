@@ -24,7 +24,7 @@ class func predicateForEvaluatingTriggerOccurringBetweenDate(with firstDateCompo
 + (NSPredicate *) predicateForEvaluatingTriggerOccurringBetweenDateWithComponents:(NSDateComponents *) firstDateComponents secondDateWithComponents:(NSDateComponents *) secondDateWithComponents;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate object that represents a condition to evaluate before executing the scene.
 

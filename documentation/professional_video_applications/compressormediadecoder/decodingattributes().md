@@ -20,11 +20,11 @@ func decodingAttributes() -> [AnyHashable : Any]!
 - (NSDictionary *) decodingAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary with key-value pairs specifying the attributes of the decoded video.
 
-#### Discussion
+## Discussion
 
 The decoding attribute dictionary contains the following keys:
 

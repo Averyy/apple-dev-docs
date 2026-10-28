@@ -22,7 +22,7 @@ enum ItemStyle
 enum UINavigationItemStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Navigation styles allow you to customize the behavior and content density of your navigation bar according to your app type.
 

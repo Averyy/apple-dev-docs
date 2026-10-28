@@ -19,7 +19,7 @@ func availableLength(at offset: Int64) -> Int64
 - (int64_t) availableLengthAtOffset:(int64_t) offset;
 ```
 
-#### Return Value
+## Return Value
 
 An integer that specifies the number of available bytes.
 

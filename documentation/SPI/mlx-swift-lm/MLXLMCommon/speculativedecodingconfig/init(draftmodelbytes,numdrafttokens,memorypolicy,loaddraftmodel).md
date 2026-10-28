@@ -17,7 +17,7 @@ Initialize speculative decoding with a draft model loader.
 init(draftModelBytes: Int, numDraftTokens: Int = 5, memoryPolicy: SpeculativeDecodingMemoryPolicy? = nil, loadDraftModel: @escaping @Sendable () async throws -> ModelContainer)
 ```
 
-#### Discussion
+## Discussion
 
 When a memory policy is present, `draftModelBytes` lets `ChatSession` decide whether to use speculative decoding before it loads the draft model. This is the preferred initializer when the draft model may not fit comfortably beside the main model.
 

@@ -5,13 +5,13 @@
 
 Diagnose potential performance issues in your app during development and testing with the Thread Performance Checker tool in Xcode.
 
-#### Overview
+## Overview
 
 Identifying potential performance issues during development saves testing time later. Resolving performance issues, such as priority inversions and non-UI work on the main thread, makes your app responsive. Priority inversions occur when a low-priority thread blocks a higher-priority thread, which can lead to an unresponsive app. Similarly, non-UI work, such as synchronous networking or I/O on the main thread, can block the main thread for hundreds of milliseconds, which prevents people from interacting with your app.
 
 The Thread Performance Checker tool detects priority inversions and non-UI work on the main thread. It doesn’t require any recompilation. Use the Thread Performance Checker tool to detect, diagnose, and resolve performance issues.
 
-##### Understand the detected issues
+### Understand the detected issues
 
 The Thread Performance Checker tool surfaces issues in the Issue navigator and the source editor. Read the diagnostic message carefully.
 
@@ -25,7 +25,7 @@ Click Generate in the description of an issue to generate a fix using intelligen
 
 The issues surfaced point to code in your project that can cause hangs. Hangs occur when your app is unresponsive for hundreds of milliseconds. To learn more about hangs, see [Improving app responsiveness](./improving-app-responsiveness.md) and the WWDC session video [Understand and eliminate hangs from your app](https://developer.apple.com/videos/play/wwdc2021/10258/).
 
-##### Diagnose and resolve priority inversions
+### Diagnose and resolve priority inversions
 
 If you use concurrency primitives, such as [`dispatch_semaphore_wait`](../Dispatch/dispatch_semaphore_wait.md) and [`dispatch_group_wait`](../Dispatch/dispatch_group_wait.md), in your code or invoke APIs that use them, your app is susceptible to priority inversions if there is a mismatch in the quality-of-service (QoS) class of the dispatch queues your app uses. When you use these primitives, the system can’t automatically propagate priority from the higher-priority thread to the lower-priority thread. You can take these precautions to avoid priority inversions in your code:
 
@@ -58,7 +58,7 @@ func initiateBackgroundWork() {
 
 To learn more about priority inversions and QoS, see [Modernizing Grand Central Dispatch Usage](https://developer.apple.com/videos/play/wwdc2017/706/) and [Energy Efficiency Guide for iOS Apps](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/PrioritizeWorkWithQoS.html).
 
-##### Diagnose and eliminate non-UI work on the main thread
+### Diagnose and eliminate non-UI work on the main thread
 
 Long-running synchronous I/O and networking on the main thread can make your app unresponsive. For example, to perform real-time capture, you instantiate an [`AVCaptureSession`](../AVFoundation/avcapturesession.md) object and add appropriate inputs and outputs. Invoking the [`startRunning()`](../AVFoundation/avcapturesession/startrunning%28%29.md) method of an `AVCaptureSession` object on the main thread of your app can lead to hangs. You can take these precautions to avoid non-UI work on the main thread:
 
@@ -66,7 +66,7 @@ Long-running synchronous I/O and networking on the main thread can make your app
 - Use the asynchronous variant of an API that performs I/O to do that work off the main thread.
 - Don’t perform synchronous networking on the main thread of your app. Instead, use an asynchronous networking API, such as [`URLSession`](../Foundation/urlsession.md).
 
-##### Detect runtime issues in tests
+### Detect runtime issues in tests
 
 Xcode detects runtime issues in tests you write using [Swift Testing](../Testing/Testing.md) or [XCTest](../XCTest/XCTest.md), including UI tests that use [XCUIAutomation](../XCUIAutomation/XCUIAutomation.md) to automatically control your app’s UI.
 
@@ -84,7 +84,7 @@ If you configure Xcode to report runtime issues in tests as warnings, Xcode show
 
 ![A screenshot of the Test Report showing a runtime issue that Xcode detected during a test.](https://developer.apple.com/tutorials/images/com.apple.Xcode/diagnosing-performance-issues-early-4@2x.png)
 
-##### Follow profiling guidance with the Thread Performance Checker tool
+### Follow profiling guidance with the Thread Performance Checker tool
 
 Xcode enables the Thread Performance Checker tool by default for the Run action. The Thread Performance Checker tool works by inserting checks to detect issues such as priority inversions and dependencies between operations of different quality-of-service levels. This overhead is minimal in most cases, but some apps can trigger conditions that cause that overhead to appear in their call stacks. If you profile your app and want to be sure that the Thread Performance Checker tool’s overhead never appears in your call stacks, do one of the following:
 

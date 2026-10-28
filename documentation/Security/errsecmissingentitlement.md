@@ -29,7 +29,7 @@ errSecMissingEntitlement
 
 - [Sharing access to keychain items among a collection of apps](./sharing-access-to-keychain-items-among-a-collection-of-apps.md)
 
-#### Overview
+## Overview
 
 The [`SecItemAdd(_:_:)`](./secitemadd%28_,_%29.md) method returns this error when you specify an access group to which your app doesn’t belong:
 

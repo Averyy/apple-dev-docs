@@ -26,7 +26,7 @@ func addItem(withProductID productID: String) async throws -> [MPMediaEntity]
 - (void) addItemWithProductID:(NSString *) productID completionHandler:(void (^)(NSArray<__kindof MPMediaEntity *> *entities, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add media items to a user’s music library. Use the [Apple Music API Reference](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/AppleMusicWebServicesReference/index.html#//apple_ref/doc/uid/TP40017625) to search for content contained in the iTunes, App, Book, and Mac App stores.
 

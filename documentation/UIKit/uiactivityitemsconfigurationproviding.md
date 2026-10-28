@@ -22,7 +22,7 @@ protocol UIActivityItemsConfigurationProviding : NSObjectProtocol
 @protocol UIActivityItemsConfigurationProviding <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The user can share content from your app in a number of ways:
 

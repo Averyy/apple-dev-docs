@@ -24,7 +24,7 @@ var frame: CGRect { get set }
 @property CGRect frame;
 ```
 
-#### Discussion
+## Discussion
 
 The frame rectangle is position and size of the layer specified in the superlayer’s coordinate space. For layers, the frame rectangle is a computed property that is derived from the values in the[`bounds`](./bounds.md), [`anchorPoint`](./anchorpoint.md) and [`position`](./position.md) properties. When you assign a new value to this property, the layer changes its [`position`](./position.md) and [`bounds`](./bounds.md) properties to match the rectangle you specified. The values of each coordinate in the rectangle are measured in points.
 

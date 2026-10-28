@@ -24,7 +24,7 @@ class SCContentSharingPicker
 @interface SCContentSharingPicker : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Avoid creating your own sharing picker. Use the picker provided by the [`shared`](./sccontentsharingpicker/shared.md) static property.
 

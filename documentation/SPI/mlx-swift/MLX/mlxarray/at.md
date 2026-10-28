@@ -17,7 +17,7 @@ Used to apply update at given indices.
 var at: ArrayAt { get }
 ```
 
-#### Discussion
+## Discussion
 
 An assignment through indices `array[indices]` will produce a result where each index will only be updated once.  For example:
 
@@ -39,7 +39,7 @@ This is because the assignment through `array[indices]` writes a sub-array of `a
 
 The `at` property produces an intermediate value that can take a subscript `[]` and produce an [`ArrayAtIndices`](../arrayatindices.md) that has several methods to update values.
 
-##### See Also
+### See Also
 
 - [`ArrayAt`](../arrayat.md)
 - [`ArrayAtIndices`](../arrayatindices.md)

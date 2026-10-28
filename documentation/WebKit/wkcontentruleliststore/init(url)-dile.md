@@ -23,11 +23,11 @@ convenience init!(url: URL!)
 + (instancetype) storeWithURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A content rule store associated with the specified directory.
 
-#### Discussion
+## Discussion
 
 If the specified directory already contains compiled rule lists, this method loads those rules and adds them to the returned object. If you change any rules after creating this object, the store saves those changes to the same directory.
 

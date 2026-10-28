@@ -26,7 +26,7 @@ var operand: NSExpression { get }
 @property (copy, readonly) NSExpression * operand;
 ```
 
-#### Discussion
+## Discussion
 
 The operand for an expression is the object on which the expression’s selector or block will be invoked. The object is the result of evaluating a key path or one of the defined functions. Accessing this property raises an exception if it is not applicable to the expression.
 

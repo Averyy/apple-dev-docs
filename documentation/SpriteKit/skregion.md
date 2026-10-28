@@ -25,7 +25,7 @@ class SKRegion
 @interface SKRegion : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`SKRegion`](./skregion.md) object defines a mathematical shape and is typically used to determine whether a particular point lies inside this area. For example, regions are used to define the area that a physics field can affect. Regions are defined using paths and mathematical shapes and can also be combined using constructive solid geometry.
 

@@ -32,7 +32,7 @@ var identifier: String { get }
 @property (atomic, copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 It is recommended that you use the identifier when re-fetching the container. The identifier can be persisted between app launches.
 

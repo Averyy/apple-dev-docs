@@ -15,7 +15,7 @@ Sets the length of the data in the buffer.
 virtual void setLength(vm_size_t length);
 ```
 
-#### Discussion
+## Discussion
 
 At creation time, the system sets the buffer’s length to its capacity. Use this method to indicate that there are fewer bytes in the buffer than the total overall capacity. For example, you might set the length to minimize the amount of data you transfer. This method doesn’t change the total capacity of the buffer. Changing the length of a buffer allows you to reuse a buffer for multiple transfers of different lengths. 
 

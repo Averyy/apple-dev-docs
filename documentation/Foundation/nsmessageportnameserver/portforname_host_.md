@@ -16,7 +16,7 @@ Returns the `NSPort` object registered under a given name on the local host.
 - (NSPort *) portForName:(NSString *) name host:(NSString *) host;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSPort` object registered under a given name on the local host. Returns `nil` if a port named `name` does not exist.
 

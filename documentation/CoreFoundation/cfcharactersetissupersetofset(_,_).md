@@ -25,7 +25,7 @@ func CFCharacterSetIsSupersetOfSet(_ theSet: CFCharacterSet!, _ theOtherset: CFC
 extern Boolean CFCharacterSetIsSupersetOfSet(CFCharacterSetRef theSet, CFCharacterSetRef theOtherset);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `theSet` is a superset of `theOtherSet`, otherwise `false`.
 

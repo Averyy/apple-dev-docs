@@ -23,7 +23,7 @@ var preferredContentSize: CGSize { get set }
 @property (nonatomic) CGSize preferredContentSize;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property is used primarily when displaying the view controller’s content in a popover but may also be used in other situations. Changing the value of this property while the view controller is being displayed in a popover animates the size change; however, the change is not animated if you specify a width or height of `0.0`.
 

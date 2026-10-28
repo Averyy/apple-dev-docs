@@ -25,11 +25,11 @@ func objc_allocateProtocol(_ name: UnsafePointer<CChar>) -> Protocol?
 extern Protocol *objc_allocateProtocol(const char *name);
 ```
 
-#### Return Value
+## Return Value
 
 A new protocol instance or `nil` if a protocol with the same name as `name` already exists.
 
-#### Discussion
+## Discussion
 
 You must register the returned protocol instance with the [`objc_registerProtocol(_:)`](./objc_registerprotocol%28_%29.md) function before you can use it.
 

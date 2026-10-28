@@ -21,7 +21,7 @@ A notification that posts after a context finishes writing unsaved changes.
 static let NSManagedObjectContextDidSave: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Use [`NSManagedObjectContextDidSaveObjectIDs`](./nsmanagedobjectcontextdidsaveobjectids.md) instead of this notification.
 

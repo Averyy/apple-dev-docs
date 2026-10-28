@@ -17,11 +17,11 @@ Processes the specified raw scan results and returns a detailed representation o
 func capturedRoom(from capturedRoomData: CapturedRoomData) async throws -> CapturedRoom
 ```
 
-#### Return Value
+## Return Value
 
 A captured-room object that provides the key details of a scanned room.
 
-#### Discussion
+## Discussion
 
 You retrieve the argument `capturedRoomData` in one of the following ways:
 

@@ -24,7 +24,7 @@ optional func collectionView(_ collectionView: UICollectionView, previewForDismi
 - (UITargetedPreview *) collectionView:(UICollectionView *) collectionView previewForDismissingContextMenuWithConfiguration:(UIContextMenuConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 A targeted preview object describing the dismissal preview. The interaction animates the presented menu to the preview. Use this method to customize the dismissal animation.
 

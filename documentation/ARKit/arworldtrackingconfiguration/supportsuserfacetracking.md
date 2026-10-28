@@ -20,7 +20,7 @@ class var supportsUserFaceTracking: Bool { get }
 @property (class, nonatomic, readonly) BOOL supportsUserFaceTracking;
 ```
 
-#### Discussion
+## Discussion
 
 Check the value of this property first, before you enable face tracking using [`userFaceTrackingEnabled`](./userfacetrackingenabled.md).
 

@@ -25,7 +25,7 @@ typealias nw_parameters_configure_protocol_block_t = (nw_protocol_options_t) -> 
 typedef void (^)(NSObject<OS_nw_protocol_options> *) nw_parameters_configure_protocol_block_t;
 ```
 
-#### Discussion
+## Discussion
 
 Passing in a block allows you to customize how a protocol will behave in a connection.
 

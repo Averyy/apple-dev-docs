@@ -21,7 +21,7 @@ Modifies the format style to use the specified sign display strategy.
 func sign(strategy: Decimal.FormatStyle.Percent.Configuration.SignDisplayStrategy) -> Decimal.FormatStyle.Percent
 ```
 
-#### Return Value
+## Return Value
 
 A decimal format style modified to use the specified sign display strategy.
 

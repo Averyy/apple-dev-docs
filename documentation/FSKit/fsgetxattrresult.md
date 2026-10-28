@@ -19,7 +19,7 @@ class FSGetXattrResult
 @interface FSGetXattrResult : FSVolumeHandlerResult
 ```
 
-#### Overview
+## Overview
 
 Use this type in your implementation [`getXattr(named:of:context:replyHandler:)`](./fsvolume/xattrhandler/getxattr%28named,of,context,replyhandler%29.md)
 

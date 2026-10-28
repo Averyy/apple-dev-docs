@@ -19,7 +19,7 @@ class NSSharingService
 @interface NSSharingService : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`NSSharingService`](./nssharingservice.md) object provides a consistent user experience for sharing items—[`NSURL`](../Foundation/nsurl.md) objects, [`NSString`](../Foundation/nsstring.md) objects, [`NSImage`](./nsimage.md) objects, video (through file URLs), of any object that implements the [`NSPasteboardWriting`](./nspasteboardwriting.md) protocol—in macOS.
 

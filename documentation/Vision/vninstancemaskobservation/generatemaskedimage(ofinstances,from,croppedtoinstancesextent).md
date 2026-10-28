@@ -24,7 +24,7 @@ func generateMaskedImage(ofInstances instances: IndexSet, from requestHandler: V
 - (CVPixelBufferRef) generateMaskedImageOfInstances:(NSIndexSet *) instances fromRequestHandler:(VNImageRequestHandler *) requestHandler croppedToInstancesExtent:(BOOL) cropResult error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The pixel buffer that contains the image.
 

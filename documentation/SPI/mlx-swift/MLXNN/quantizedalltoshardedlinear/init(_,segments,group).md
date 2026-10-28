@@ -17,7 +17,7 @@ Create a sharded layer from an existing [`QuantizedLinear`](../quantizedlinear.m
 convenience init(_ other: QuantizedLinear, segments: Segments = .count(1), group: MLXDistributed.Group? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 The packed weight, `scales` and `biases` all carry one row per output, so they shard together along the output dimension.
 

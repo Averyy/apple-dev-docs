@@ -21,7 +21,7 @@ The number of UTF-8 code units in the span.
 var count: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

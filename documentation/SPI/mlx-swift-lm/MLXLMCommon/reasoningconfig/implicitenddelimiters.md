@@ -17,7 +17,7 @@ Markers that implicitly leave reasoning without emitting [`endDelimiter`](./endd
 var implicitEndDelimiters: [String]
 ```
 
-#### Discussion
+## Discussion
 
 These markers remain part of the generated stream. They are boundaries, not replacements for the canonical closing delimiter. For example, Qwen3.5 may begin `<tool_call>` directly from its thinking block.
 

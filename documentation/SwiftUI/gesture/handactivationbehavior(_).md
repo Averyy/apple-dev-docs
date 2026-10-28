@@ -16,11 +16,11 @@ Customizes the activation behavior for a gesture when driven by hand or hand-lik
 @preconcurrency func handActivationBehavior(_ behavior: HandActivationBehavior) -> some Gesture<Self.Value>
 ```
 
-#### Return Value
+## Return Value
 
 A new gesture with a preference to activate with the provided behavior.
 
-#### Discussion
+## Discussion
 
 Use [`automatic`](../handactivationbehavior/automatic.md) to allow a gesture to activate with default system behaviors. Use [`pinch`](../handactivationbehavior/pinch.md) when a gesture should only trigger when the hand is pinched.
 

@@ -15,7 +15,7 @@ A response that contains a single Game Center leaderboard localization v2 image 
 object GameCenterLeaderboardLocalizationV2ImageLinkageResponse
 ```
 
-#### Overview
+## Overview
 
 - data:
 - links:

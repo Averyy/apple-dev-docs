@@ -24,7 +24,7 @@ class INFileResolutionResult
 @interface INFileResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INFileResolutionResult`](./infileresolutionresult.md) object is what you return when resolving file related parameters of an intent object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

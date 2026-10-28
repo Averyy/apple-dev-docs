@@ -25,7 +25,7 @@ let kCTFontVariationAxisHiddenKey: CFString
 extern CFStringRef const kCTFontVariationAxisHiddenKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key contains a [`CFBoolean`](../CoreFoundation/cfboolean.md) value that is [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) when the font designer recommends the axis not be exposed directly to end users in application interfaces.
 

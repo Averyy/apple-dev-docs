@@ -21,7 +21,7 @@ Creates a Markdown parsing options instance with the specified values.
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized options instance.
 

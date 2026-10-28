@@ -31,7 +31,7 @@ var formatDescriptions: [Any] { get }
 
 - [Tagging media with video color information](../tagging-media-with-video-color-information.md)
 
-#### Discussion
+## Discussion
 
 The array contains [`CMFormatDescription`](../../CoreMedia/cmformatdescription.md) objects that indicate the format of media samples the track references.
 

@@ -23,11 +23,11 @@ func characterIndexForGlyph(at glyphIndex: Int) -> Int
 - (NSUInteger) characterIndexForGlyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the first character associated with the glyph at the specified index.
 
-#### Discussion
+## Discussion
 
 If noncontiguous layout is not enabled, this method causes generation of all glyphs up to and including `glyphIndex`. This method accepts an index beyond the last glyph, returning an index extrapolated from the last actual glyph index.
 

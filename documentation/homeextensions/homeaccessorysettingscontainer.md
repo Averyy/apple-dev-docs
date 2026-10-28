@@ -18,7 +18,7 @@ A snapshot of an accessory’s settings and their current values.
 protocol HomeAccessorySettingsContainer
 ```
 
-#### Overview
+## Overview
 
 Create a type that adopts this protocol, with a property for each setting. Declare each property with one of the setting property wrappers: [`HomeAccessoryToggleSetting`](./homeaccessorytogglesetting.md), [`HomeAccessoryRangeSetting`](./homeaccessoryrangesetting.md), [`HomeAccessoryEnumSetting`](./homeaccessoryenumsetting.md), [`HomeAccessoryTextFieldSetting`](./homeaccessorytextfieldsetting.md), or [`HomeAccessoryInformationSetting`](./homeaccessoryinformationsetting.md). Each wrapper stores details such as the setting’s identifier and label.
 

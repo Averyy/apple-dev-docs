@@ -15,11 +15,11 @@ The object for defining conditional properties for a divider component, and when
 object ConditionalDivider
 ```
 
-#### Discussion
+## Discussion
 
 Use the `ConditionalDivider` object to define an array of conditional divider properties and the conditions under which to apply them. When a condition is met, the value of a property in `ConditionalDivider` overrides the value of the same property if you define it in the parent `Divider` component. See [`Divider`](./divider.md).
 
-##### Example
+### Example
 
 ```json
 {

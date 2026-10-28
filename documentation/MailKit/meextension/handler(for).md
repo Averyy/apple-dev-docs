@@ -19,11 +19,11 @@ optional func handler(for session: MEComposeSession) -> any MEComposeSessionHand
 - (id<MEComposeSessionHandler>) handlerForComposeSession:(MEComposeSession *) session;
 ```
 
-#### Return Value
+## Return Value
 
 An object that participates in the composition of a mail message.
 
-#### Discussion
+## Discussion
 
 MailKit invokes this method for each compose window it displays.
 

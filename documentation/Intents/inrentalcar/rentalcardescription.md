@@ -32,7 +32,7 @@ var rentalCarDescription: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * rentalCarDescription;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a string that describes the rental car, such as “4 door sedan with air conditioning and an automatic transmission”.
 

@@ -21,7 +21,7 @@ Creates a structure that represents the specified chromaticity of primaries defi
 init(red_x: Float, green_x: Float, blue_x: Float, white_x: Float, red_y: Float, green_y: Float, blue_y: Float, white_y: Float)
 ```
 
-#### Return Value
+## Return Value
 
 A new RGB primaries structure.
 

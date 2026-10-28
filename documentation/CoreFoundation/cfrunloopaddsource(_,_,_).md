@@ -25,7 +25,7 @@ func CFRunLoopAddSource(_ rl: CFRunLoop!, _ source: CFRunLoopSource!, _ mode: CF
 extern void CFRunLoopAddSource(CFRunLoopRef rl, CFRunLoopSourceRef source, CFRunLoopMode mode);
 ```
 
-#### Discussion
+## Discussion
 
 If `source` is a version 0 source, this function calls the `schedule` callback function specified in the context structure for `source`. See [`CFRunLoopSourceContext`](./cfrunloopsourcecontext.md) for more details.
 

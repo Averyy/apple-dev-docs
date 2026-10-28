@@ -23,7 +23,7 @@ let kMIDIPropertyUniqueID: CFString
 extern CFStringRef const kMIDIPropertyUniqueID;
 ```
 
-#### Discussion
+## Discussion
 
 The system assigns unique IDs to all objects. You may set this property on virtual endpoints; however, doing so may fail if the ID isn’t unique.
 

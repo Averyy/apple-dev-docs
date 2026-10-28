@@ -21,7 +21,7 @@ Cascading Style Sheets (CSS)
 static var css: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 **UTI:** public.css
 

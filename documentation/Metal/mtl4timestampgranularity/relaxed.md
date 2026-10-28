@@ -24,7 +24,7 @@ case relaxed
 MTL4TimestampGranularityRelaxed
 ```
 
-#### Discussion
+## Discussion
 
 Using this granularity incurs in the lowest overhead, at the cost of precision. For example, it may sample at command encoder boundaries.
 

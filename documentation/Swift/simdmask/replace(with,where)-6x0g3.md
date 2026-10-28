@@ -23,7 +23,7 @@ mutating func replace(with other: SIMDMask<Storage>, where mask: SIMDMask<Storag
 
 Available when `Storage` is `SIMD4<Int16>`.
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

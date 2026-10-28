@@ -26,11 +26,11 @@ class func predicateForWorkouts(with operatorType: NSComparisonPredicate.Operato
 + (NSPredicate *) predicateForWorkoutsWithOperatorType:(NSPredicateOperatorType) operatorType totalDistance:(HKQuantity *) totalDistance;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate for matching workouts based on the total distance traveled. This predicate works only on workouts.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that matches against a workout’s total distance. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 

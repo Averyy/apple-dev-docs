@@ -25,11 +25,11 @@ func CGRectApplyAffineTransform(_ rect: CGRect, _ t: CGAffineTransform) -> CGRec
 extern CGRect CGRectApplyAffineTransform(CGRect rect, CGAffineTransform t);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed rectangle.
 
-#### Discussion
+## Discussion
 
 Because affine transforms do not preserve rectangles in general, this function returns the smallest rectangle that contains the transformed corner points of the `rect` parameter. If the affine transform `t` consists solely of scaling and translation operations, then the returned rectangle coincides with the rectangle constructed from the four transformed corners.
 

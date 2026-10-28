@@ -18,7 +18,7 @@ static var display: NSView.Invalidations.Display { get }
 
 Available when `Self` is `NSView.Invalidations.Display`.
 
-#### Discussion
+## Discussion
 
 Use this invalidation type to set [`needsDisplay`](../nsview/needsdisplay.md) so that a change in property value triggers the system to redraw the containing view’s content.
 

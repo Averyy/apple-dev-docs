@@ -28,7 +28,7 @@ var MTLCounterErrorValue: UInt64 { get }
 
 - [Converting a GPU’s counter data into a readable format](./converting-a-gpus-counter-data-into-a-readable-format.md)
 
-#### Discussion
+## Discussion
 
 A GPU driver typically sets entries to this value when it encounters an error resolving a counter’s data. The driver also uses this value for counters it doesn’t support within a counter set (see [Confirming which counters and counter sets a GPU supports](./confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
 

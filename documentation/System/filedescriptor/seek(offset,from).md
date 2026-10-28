@@ -22,11 +22,11 @@ Repositions the offset for the given file descriptor.
 func seek(offset: Int64, from whence: FileDescriptor.SeekOrigin) throws -> Int64
 ```
 
-#### Return Value
+## Return Value
 
 The file’s offset location, in bytes from the beginning of the file.
 
-#### Discussion
+## Discussion
 
 The corresponding C function is `lseek`.
 

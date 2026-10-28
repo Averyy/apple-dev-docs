@@ -21,7 +21,7 @@ func compositionPickerViewWillStopAnimating(_ pickerView: QCCompositionPickerVie
 - (void) compositionPickerViewWillStopAnimating:(QCCompositionPickerView *) pickerView;
 ```
 
-#### Discussion
+## Discussion
 
 Quartz Composer invokes  this method whenever the composition picker view stops animating a composition. Implement this method if you want to perform custom tasks at that time.
 

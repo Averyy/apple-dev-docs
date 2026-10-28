@@ -29,11 +29,11 @@ static SparseOpaqueFactorization_Double SparseFactor(SparseFactorization_t type,
 
 - [Solving systems using direct methods](./solving-systems-using-direct-methods.md)
 
-#### Return Value
+## Return Value
 
 A [`SparseOpaqueFactorization_Double`](./sparseopaquefactorization_double.md) structure that represents the matrix factorization.
 
-#### Discussion
+## Discussion
 
 Use this function to calculate the factorization of a sparse matrix to pass to the direct solve functions. The following figure shows a system of equations where the coefficient matrix is sparse:
 

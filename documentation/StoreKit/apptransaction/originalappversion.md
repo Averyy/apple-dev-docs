@@ -25,7 +25,7 @@ let originalAppVersion: String
 
 - [Supporting business model changes by using the app transaction](../supporting-business-model-changes-by-using-the-app-transaction.md)
 
-#### Discussion
+## Discussion
 
 Use this value to determine which app version the customer first purchased or downloaded. This value is comparable to the [`appVersion`](./appversion.md) value.
 

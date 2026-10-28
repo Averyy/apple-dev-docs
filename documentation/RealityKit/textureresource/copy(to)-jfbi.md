@@ -28,7 +28,7 @@ Copies texture data to another texture.
 @preconcurrency func copy(to texture: any MTLTexture) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method blocks until it finishes copying the data. If you have an attached [`TextureResource.DrawableQueue`](./drawablequeue-swift.class.md) on this resource, this function detaches it. This method copies all available mipmap sizes to `texture`.
 

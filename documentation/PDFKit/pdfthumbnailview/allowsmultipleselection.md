@@ -19,11 +19,11 @@ var allowsMultipleSelection: Bool { get set }
 @property (nonatomic) BOOL allowsMultipleSelection;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if users can select multiple thumbnails simultaneously, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 By default, `PDFThumbnailView` allows only a single thumbnail to be selected at one time. When this is the case, you can get the PDF page that corresponds to the selected thumbnail using the `PDFView` method [`currentPage`](../pdfview/currentpage.md).
 

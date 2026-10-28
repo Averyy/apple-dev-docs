@@ -21,7 +21,7 @@ A service type for low-delay tolerant, very low-loss tolerant, inelastic flow, a
 case interactiveVoice
 ```
 
-#### Discussion
+## Discussion
 
 This service type doesn’t work well for bulk transfers because it doesn’t support high throughput.
 

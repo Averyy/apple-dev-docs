@@ -24,11 +24,11 @@ func setFormat(_ format: AVAudioFormat) throws
 - (BOOL) setFormat:(AVAudioFormat *) format error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 - [`false`](../../Swift/false.md) if the operation failed.
 
-#### Discussion
+## Discussion
 
 Audio units can generally be expected to support the [`AVAudioFormat`](../../AVFAudio/avaudioformat.md) standard format (deinterleaved 32-bit float), at any sample rate.
 

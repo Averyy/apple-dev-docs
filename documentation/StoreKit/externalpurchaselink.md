@@ -21,7 +21,7 @@ An enumeration that enables qualifying apps to offer external purchase links.
 enum ExternalPurchaseLink
 ```
 
-#### Overview
+## Overview
 
 This functionality is only available to apps with the [`com.apple.developer.storekit.external-purchase-link`](../BundleResources/entitlements/com.apple.developer.storekit.external-purchase-link.md) entitlement.
 

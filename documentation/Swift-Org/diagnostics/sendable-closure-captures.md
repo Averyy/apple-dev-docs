@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 `@Sendable` closures can be called multiple times concurrently, so any captured values must also be safe to access concurrently. To prevent data races, the compiler prevents capturing mutable values in a `@Sendable` closure.
 

@@ -19,7 +19,7 @@ protocol MERAWProcessorExtension : NSObjectProtocol
 @protocol MERAWProcessorExtension <NSObject>
 ```
 
-#### Discussion
+## Discussion
 
 This protocol provides a factory method to create a new [`MERAWProcessor`](./merawprocessor.md) instance for a codecType implemented by the extension. The Video Toolbox instantiates a single [`MERAWProcessorExtension`](./merawprocessorextension.md), and creates individual [`MERAWProcessor`](./merawprocessor.md) instances as needed. If the `CMVideoFormatDescription` passed to [`makeProcessor(formatDescription:pixelBufferManager:)`](./merawprocessorextension/makeprocessor%28formatdescription,pixelbuffermanager%29.md) is not compatible with the [`MERAWProcessor`](./merawprocessor.md) implementation, the factory call should fail and return [`MEError.Code.unsupportedFeature`](./meerror-swift.struct/code/unsupportedfeature.md).
 

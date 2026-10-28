@@ -17,15 +17,15 @@ Returns the default `NSConnection` object for the current thread.
 + (NSConnection *) defaultConnection;
 ```
 
-#### Return Value
+## Return Value
 
 The default `NSConnection` object for the current thread, creating it if necessary.
 
-#### Discussion
+## Discussion
 
 The default `NSConnection` object uses a single `NSPort` object for both receiving and sending and is useful only for vending an object; use the [`rootObject`](./rootobject-c.property.md) and [`registerName:`](./registername_.md) methods to do this.
 
-##### Special Considerations
+### Special Considerations
 
 The singleton method of `NSConnection` has been deprecated. It was difficult to ensure that the shared connection wasn’t being used by other operations on the thread on which the default connection was requested. Using `[NSConnection new]` ensures that you get a unique connection object, preventing such collisions.
 

@@ -34,7 +34,7 @@ func fetchItemsForIdentityVerificationSignature() async throws -> (URL, Data, Da
 - [Authenticating a player](../authenticating-a-player.md)
 - [Initializing and configuring Game Center](../initializing-and-configuring-game-center.md)
 
-#### Discussion
+## Discussion
 
 Use this method when you need to authenticate with your server. To generate a signature for your authentication server, you perform steps in the game and pass data to the server, which completes the process.
 

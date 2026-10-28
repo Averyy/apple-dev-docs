@@ -12,11 +12,11 @@ Provide quick access to useful actions by adding context menus to your iOS app.
 - Mac Catalyst 14.0+
 - Xcode 12.0+
 
-#### Overview
+## Overview
 
 This sample project demonstrates how to add context menus to user-interface elements such as views, controls, table views, collection views, and web views. Apps enhance and extend context menus with actions, nested submenu actions, and custom previews. For more information on context menu design, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/controls/context-menus/).
 
-##### Create a context menu
+### Create a context menu
 
 This sample shows two ways to create context menus:
 
@@ -27,7 +27,7 @@ Adopt `UIContextMenuInteractionDelegate` to manage the lifecycle of context menu
 
 Context menus with rich content also provide a [`UITargetedPreview`](./uitargetedpreview.md), an object that describes the source view when opening and animating the contextual menu. A `UITargetedPreview` specifies the view to use during animated transitions.
 
-##### Add a context menu to a view
+### Add a context menu to a view
 
 This sample adds a context menu to a `UIView` by calling [`addInteraction(_:)`](./uiview/addinteraction%28_%29.md).
 
@@ -69,7 +69,7 @@ func contextMenuInteraction(_ interaction: UIContextMenuInteraction,
 }
 ```
 
-##### Add a context menu to a table view
+### Add a context menu to a table view
 
 This sample adds a context menu to a [`UITableView`](./uitableview.md) when the user touches and holds a [`UITableViewCell`](./uitableviewcell.md). `UITableView` asks its delegate to provide the context menu by calling [`tableView(_:contextMenuConfigurationForRowAt:point:)`](./uitableviewdelegate/tableview%28_,contextmenuconfigurationforrowat,point%29.md).
 
@@ -102,7 +102,7 @@ override func tableView(_ tableView: UITableView,
 }
 ```
 
-##### Add a context menu to a collection view
+### Add a context menu to a collection view
 
 This sample adds a context menu to a [`UICollectionView`](./uicollectionview.md) when the user touches and holds a [`UICollectionViewCell`](./uicollectionviewcell.md). `UICollectionView` asks its delegate to provide the context menu by calling [`collectionView(_:contextMenuConfigurationForItemAt:point:)`](./uicollectionviewdelegate/collectionview%28_,contextmenuconfigurationforitemat,point%29.md).
 
@@ -119,7 +119,7 @@ override func collectionView(_ collectionView: UICollectionView,
 }
 ```
 
-##### Add a context menu to a control
+### Add a context menu to a control
 
 This sample adds a context menu to a [`UIControl`](./uicontrol.md). UIKit attaches a context menu to a `UIControl` in two different ways:
 
@@ -158,7 +158,7 @@ func contextMenuInteraction(_ interaction: UIContextMenuInteraction,
 }
 ```
 
-##### Add a context menu to a web view
+### Add a context menu to a web view
 
 Select the Basic test case from the sample’s Web Views outline item. When the user touches and holds on the link within the [`WKWebView`](../WebKit/wkwebview.md), the app presents a [`SFSafariViewController`](../SafariServices/sfsafariviewcontroller.md) to show that link content with a set of default `UIAction` items. When the user touches the view controller, the user moves out of the app and into Safari.
 

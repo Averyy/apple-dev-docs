@@ -25,7 +25,7 @@ func setDelegate(_ delegate: (any AVPlayerItemMetadataOutputPushDelegate)?, queu
 - (void) setDelegate:(id<AVPlayerItemMetadataOutputPushDelegate>) delegate queue:(dispatch_queue_t) delegateQueue;
 ```
 
-#### Discussion
+## Discussion
 
 You specify the metadata delegate, and a dispatch queue on which it will be called, to be notified as new metadata is encountered in the source media.
 

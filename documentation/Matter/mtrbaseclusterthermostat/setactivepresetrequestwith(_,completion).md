@@ -29,7 +29,7 @@ func setActivePresetRequestWith(_ params: MTRThermostatClusterSetActivePresetReq
 - (void) setActivePresetRequestWithParams:(MTRThermostatClusterSetActivePresetRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command will set the active preset to the provided preset handle.
 

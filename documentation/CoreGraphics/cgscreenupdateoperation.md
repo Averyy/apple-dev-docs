@@ -20,7 +20,7 @@ struct CGScreenUpdateOperation
 enum CGScreenUpdateOperation : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 For information about how these constants are used, see the function [`CGWaitForScreenUpdateRects(_:_:_:_:_:)`](./cgwaitforscreenupdaterects%28_,_,_,_,_%29.md).
 

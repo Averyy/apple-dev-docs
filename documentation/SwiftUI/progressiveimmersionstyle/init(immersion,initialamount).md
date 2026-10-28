@@ -26,7 +26,7 @@ init(immersion: PartialRangeFrom<Double>, initialAmount: Double? = nil)
 init(immersion: PartialRangeThrough<Double>, initialAmount: Double? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The immersion style affects how windows interact with virtual objects in the environment. In `progressive` immersion, windows always render in front of virtual content, no matter how someone positions the window or the content. This helps people avoid losing track of windows behind virtual content when passthrough is off.
 

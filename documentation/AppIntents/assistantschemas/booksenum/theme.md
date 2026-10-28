@@ -21,7 +21,7 @@ The theme for rendering a book.
 var theme: some AssistantSchemas.Enum { get }
 ```
 
-#### Overview
+## Overview
 
 Use Swift macros that generate additional properties and add protocol conformance for your app enum implementation.
 

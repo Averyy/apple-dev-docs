@@ -21,7 +21,7 @@ Creates a path as the given rounded rectangle, which may have uneven corner radi
 init(roundedRect rect: CGRect, cornerRadii: RectangleCornerRadii, style: RoundedCornerStyle = .continuous)
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience function that creates a path of a rounded rectangle. Using this function is more efficient than creating a path and adding a rounded rectangle to it.
 

@@ -25,7 +25,7 @@ var defaultValue: Float { get }
 @property (readonly) float defaultValue;
 ```
 
-#### Discussion
+## Discussion
 
 The parameter assumes this default value when initialized.
 

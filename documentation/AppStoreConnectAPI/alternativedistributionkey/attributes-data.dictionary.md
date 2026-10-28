@@ -15,7 +15,7 @@ Attributes that describe an alternative distribution key resource.
 object AlternativeDistributionKey.Attributes
 ```
 
-#### Discussion
+## Discussion
 
 For more information on the object that includes these attributes, see [`AlternativeDistributionKey`](../alternativedistributionkey.md).
 

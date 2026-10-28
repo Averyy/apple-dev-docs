@@ -29,7 +29,7 @@ func didReceive(_ request: UNNotificationRequest, withContentHandler contentHand
 - [Modifying content in newly delivered notifications](../modifying-content-in-newly-delivered-notifications.md)
 - [Implementing communication notifications](../implementing-communication-notifications.md)
 
-#### Discussion
+## Discussion
 
 Override this method and use it to modify the [`UNNotificationContent`](../unnotificationcontent.md) object that the system delivers with the notification. At some point during your implementation, execute the `contentHandler` block and pass it your modified content. If you decide not to modify the content, call the `contentHandler` block with the original content from the `request` parameter.
 

@@ -21,7 +21,7 @@ A column encoding error.
 struct ColumnEncodingError
 ```
 
-#### Overview
+## Overview
 
 An error bundles an [`EncodingError`](../Swift/encodingerror.md) with the row and column that produces the error.
 

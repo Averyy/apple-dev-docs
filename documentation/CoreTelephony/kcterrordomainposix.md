@@ -22,7 +22,7 @@ var kCTErrorDomainPOSIX: Int { get }
 kCTErrorDomainPOSIX
 ```
 
-#### Discussion
+## Discussion
 
 POSIX error codes are listed in `sys/errno.h`.
 

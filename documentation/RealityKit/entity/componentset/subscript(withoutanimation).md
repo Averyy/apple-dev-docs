@@ -21,7 +21,7 @@ Gets or sets the component of the specified type, without considering implicit a
 @preconcurrency subscript<T>(withoutAnimation withoutAnimation: T.Type) -> T? where T : Component { get set }
 ```
 
-#### Overview
+## Overview
 
 This is only useful in specialized circumstances, such as in a tight loop, where you are certain there are no animations active.
 

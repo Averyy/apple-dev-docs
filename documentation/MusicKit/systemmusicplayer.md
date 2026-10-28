@@ -19,7 +19,7 @@ An object your app uses to play music by controlling the Music app’s state.
 class SystemMusicPlayer
 ```
 
-#### Overview
+## Overview
 
 The system music player employs the Music app on your behalf. When your app accesses the system music player for the first time, it assumes the current Music app state and controls it as your app runs. The shared state includes the following:
 

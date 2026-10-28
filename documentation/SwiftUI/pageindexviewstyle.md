@@ -20,7 +20,7 @@ An index view style that places a page index view over its content.
 struct PageIndexViewStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`page`](./indexviewstyle/page.md) to construct this style.
 

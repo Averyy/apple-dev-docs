@@ -19,11 +19,11 @@
 static simd_packed_double4 SPSize3DGetPackedVector(SPSize3D size);
 ```
 
-#### Return Value
+## Return Value
 
 A new packed simd vector .
 
-#### Discussion
+## Discussion
 
 Creates a packed simd vector from a Spatial vector.
 

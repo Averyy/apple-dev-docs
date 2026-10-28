@@ -21,7 +21,7 @@ Creates a schedule composed of an explicit sequence of dates.
 init(_ dates: Entries)
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`entries(from:mode:)`](./entries%28from,mode%29.md) method to get the sequence of dates.
 

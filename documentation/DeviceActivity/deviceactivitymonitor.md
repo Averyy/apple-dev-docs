@@ -18,7 +18,7 @@ The object that monitors scheduled device activity.
 class DeviceActivityMonitor
 ```
 
-#### Overview
+## Overview
 
 `DeviceActivityMonitor` provides the entry point into a device activity monitor extension. You should subclass `DeviceActivityMonitor` and designate your subclass as the principal class of your app extension.
 

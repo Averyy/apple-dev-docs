@@ -21,7 +21,7 @@ Indicates whether the sample buffer should be reset before decoding.
 static let resetDecoderBeforeDecoding: CVAttachmentKeyDefinitionWithDefault<CMSampleBufferAttachmentKeyDefinitions.ShouldPropagate, Bool>
 ```
 
-#### Discussion
+## Discussion
 
 This attachment is used at run time to indicate that a sample follows a break in decode sequence and that it is appropriate to reset the decoder before decoding this sample. The getter returns the default value of false if this attachment is not present.
 

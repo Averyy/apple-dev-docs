@@ -19,7 +19,7 @@ var rules: [NEFilterRule] { get }
 @property (copy, readonly) NSArray<NEFilterRule *> * rules;
 ```
 
-#### Discussion
+## Discussion
 
 After applying the [`NEFilterSettings`](../nefiltersettings.md), the system compares each network flow against these rules in order, and acts on the rule of the first [`NEFilterAction`](../nefilteraction.md) that matches.
 

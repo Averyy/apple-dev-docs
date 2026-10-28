@@ -16,7 +16,7 @@ typedef struct IOUSBDFUDescriptor {
 } IOUSBDFUDescriptor;
 ```
 
-#### Overview
+## Overview
 
 USB Device Firmware Update Descriptor. See the USB Device Firmware Update Specification at [http://www.usb.org](http://www.usb.org).
 

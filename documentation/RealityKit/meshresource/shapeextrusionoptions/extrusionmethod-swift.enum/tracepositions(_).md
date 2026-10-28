@@ -20,7 +20,7 @@ Extrudes the shape by sweeping it along a piecewise-linear curve.
 case tracePositions([SIMD3<Float>])
 ```
 
-#### Discussion
+## Discussion
 
 The curve is defined as the set of line segments For each edge in the provided curve, the swept shape (e.g. the 2D path provided in `MeshResource(extruding: Path)`, or text) will be instantiated at the edge’s endpoints. Each instance of the swept shape will be joined together by a strip of geometry.
 

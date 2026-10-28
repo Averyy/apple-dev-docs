@@ -27,7 +27,7 @@ var queryCompletionBlock: ((CKQueryOperation.Cursor?, (any Error)?) -> Void)? { 
 @property (nonatomic, copy, nullable) void (^queryCompletionBlock)(CKQueryCursor *cursor, NSError *operationError);
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

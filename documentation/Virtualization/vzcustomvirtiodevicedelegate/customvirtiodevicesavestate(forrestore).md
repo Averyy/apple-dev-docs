@@ -19,7 +19,7 @@ optional func customVirtioDeviceSaveState(forRestore device: VZCustomVirtioDevic
 - (NSData *) customVirtioDeviceSaveStateForRestore:(VZCustomVirtioDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 Return the state data to save in an [`NSData`](../../Foundation/nsdata.md) object. If there is no state to save, return an empty NSData object ([NSData data]).
 

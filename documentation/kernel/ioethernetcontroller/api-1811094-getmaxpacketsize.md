@@ -12,7 +12,7 @@ virtual IOReturn getMaxPacketSize(
  UInt32 *maxSize) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success, or an error code otherwise.
 

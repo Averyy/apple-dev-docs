@@ -21,7 +21,7 @@ Whether any sample produced a subject.
 var anyInferenceProduced: Bool
 ```
 
-#### Discussion
+## Discussion
 
 False when every `subject(from:)` call threw; aggregate metrics are not meaningful.
 

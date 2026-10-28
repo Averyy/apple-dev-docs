@@ -23,7 +23,7 @@ enum UIUserInterfaceLayoutDirection
 enum UIUserInterfaceLayoutDirection : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 One of these constants is returned by the [`userInterfaceLayoutDirection`](./uiapplication/userinterfacelayoutdirection.md) property. It indicates the directionality of the language in the user interface of the app.
 

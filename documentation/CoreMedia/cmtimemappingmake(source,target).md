@@ -25,11 +25,11 @@ func CMTimeMappingMake(source: CMTimeRange, target: CMTimeRange) -> CMTimeMappin
 extern CMTimeMapping CMTimeMappingMake(CMTimeRange source, CMTimeRange target);
 ```
 
-#### Return Value
+## Return Value
 
 A new time mapping.
 
-#### Discussion
+## Discussion
 
 The source and target parameters must have durations whose epoch is `0`, otherwise the system returns an invalid time mapping.
 

@@ -17,7 +17,7 @@ A structure that describes the environmental impact of grid electricity during s
 struct GridCleanliness
 ```
 
-#### Overview
+## Overview
 
 The [`ElectricityInsightRecord`](../electricityinsightrecord.md) structure’s [`dataByGridCleanliness`](./databygridcleanliness.md) property returns electricity usage by the categories that this structure defines.
 

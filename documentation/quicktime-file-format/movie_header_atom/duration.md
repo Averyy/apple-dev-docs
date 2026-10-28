@@ -6,7 +6,7 @@
 
 A time value that indicates the duration of the movie in time scale units.
 
-#### Overview
+## Overview
 
 Note that this property is derived from the movie’s tracks. The value of this field corresponds to the duration of the longest track in the movie.
 

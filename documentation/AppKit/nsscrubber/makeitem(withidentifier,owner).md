@@ -19,7 +19,7 @@ func makeItem(withIdentifier itemIdentifier: NSUserInterfaceItemIdentifier, owne
 - (NSScrubberItemView *) makeItemWithIdentifier:(NSUserInterfaceItemIdentifier) itemIdentifier owner:(id) owner;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`NSScrubberItemView`](../nsscrubberitemview.md) object.
 

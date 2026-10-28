@@ -24,7 +24,7 @@ string headerPosition
 
 - [Retention Messaging API changelog](./retention-messaging-changelog.md)
 
-#### Discussion
+## Discussion
 
 The `headerPosition` defaults to `ABOVE_BODY`. Include it in your request if you want the header to appear above the image instead.
 

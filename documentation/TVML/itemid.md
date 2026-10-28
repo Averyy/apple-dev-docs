@@ -5,15 +5,15 @@
 
 Mark elements for reuse during DOM updates.
 
-#### Overview
+## Overview
 
 Use the `itemID` attribute to identify which elements are considered the same so they can be reused during DOM updates. When recreating the DOM, TVMLKit makes any necessary changes at the view level while retaining existing cells that have not been modified.
 
-##### Values for itemID
+### Values for itemID
 
 - **String**: The identifier for the item. The identifier must be unique inside its parent DOM element. The identifier does not have to be unique inside of the document.
 
-##### Elements that Use itemID
+### Elements that Use itemID
 
 - [productBundleTemplate](./productbundletemplate.md)
 - [productTemplate](./producttemplate.md)

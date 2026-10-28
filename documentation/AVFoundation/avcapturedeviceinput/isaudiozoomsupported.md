@@ -23,7 +23,7 @@ var isAudioZoomSupported: Bool { get }
 @property (nonatomic, readonly, getter=isAudioZoomSupported) BOOL audioZoomSupported;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `true` if the device supports audio zoom.
 

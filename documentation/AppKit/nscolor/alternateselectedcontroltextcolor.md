@@ -19,7 +19,7 @@ class var alternateSelectedControlTextColor: NSColor { get }
 @property (class, strong, readonly) NSColor * alternateSelectedControlTextColor;
 ```
 
-#### Discussion
+## Discussion
 
 This color is the table and list view equivalent to the [`selectedControlTextColor`](./selectedcontroltextcolor.md) color, which is used for controls in other views.
 

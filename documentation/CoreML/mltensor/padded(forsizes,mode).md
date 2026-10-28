@@ -21,11 +21,11 @@ Returns a padded tensor according to the specified padding sizes and mode.
 func padded(forSizes sizes: [(before: Int, after: Int)], mode: MLTensor.PaddingMode) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The padded tensor.
 
-#### Discussion
+## Discussion
 
 For example:
 

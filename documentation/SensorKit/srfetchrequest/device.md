@@ -21,7 +21,7 @@ var device: SRDevice { get set }
 @property (strong) SRDevice * device;
 ```
 
-#### Discussion
+## Discussion
 
 If the app doesn’t define a value for this property, the framework queries the current device. To get a list of available devices, the app calls [`fetchDevices()`](../srsensorreader/fetchdevices%28%29.md) on its sensor reader.
 

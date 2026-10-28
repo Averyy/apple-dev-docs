@@ -20,7 +20,7 @@ Creates an image accumulator with the specified extent, pixel format, and color 
 + (instancetype) imageAccumulatorWithExtent:(CGRect) extent format:(CIFormat) format colorSpace:(CGColorSpaceRef) colorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The image accumulator object.
 

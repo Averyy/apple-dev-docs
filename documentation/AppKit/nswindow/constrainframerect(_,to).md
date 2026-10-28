@@ -19,11 +19,11 @@ func constrainFrameRect(_ frameRect: NSRect, to screen: NSScreen?) -> NSRect
 - (NSRect) constrainFrameRect:(NSRect) frameRect toScreen:(NSScreen *) screen;
 ```
 
-#### Return Value
+## Return Value
 
 The adjusted frame rectangle.
 
-#### Discussion
+## Discussion
 
 If the window is resizable and the window’s height is greater than the screen height, the rectangle’s height is adjusted to fit within the screen as well. The rectangle’s width and horizontal location are unaffected. You shouldn’t need to invoke this method yourself; it’s invoked automatically (and the modified frame is used to locate and set the size of the window) whenever a titled `NSWindow` object is placed onscreen and whenever its size is changed.
 

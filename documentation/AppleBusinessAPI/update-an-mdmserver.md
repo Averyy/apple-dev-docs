@@ -9,11 +9,11 @@ Update an existing device management service in an organization.
 **Availability**:
 - Apple Business API 2.6+
 
-#### Overview
+## Overview
 
 > **Note**: Only the fields included in the request are updated. Any omitted fields retain their existing values.
 
-##### Example
+### Example
 
 **Request**:
 

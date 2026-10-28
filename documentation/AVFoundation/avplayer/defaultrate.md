@@ -30,7 +30,7 @@ var defaultRate: Float { get set }
 
 - [Controlling the transport behavior of a player](../controlling-the-transport-behavior-of-a-player.md)
 
-#### Discussion
+## Discussion
 
 This value represents the default playback rate the player uses when you call its [`play()`](./play%28%29.md) method. After playback begins, the rate may differ from the default if you modify the player’s [`rate`](./rate.md) value, such as by calling [`pause()`](./pause%28%29.md).
 

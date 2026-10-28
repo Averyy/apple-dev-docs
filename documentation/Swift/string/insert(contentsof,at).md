@@ -21,7 +21,7 @@ Inserts a collection of characters at the specified position.
 mutating func insert<S>(contentsOf newElements: S, at i: String.Index) where S : Collection, S.Element == Character
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method invalidates any existing indices for use with this string.
 

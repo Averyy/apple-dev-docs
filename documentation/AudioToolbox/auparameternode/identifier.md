@@ -32,7 +32,7 @@ var identifier: String { get }
 @property (atomic, copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 All child nodes, under any given parent, must have a unique identifier. From release to release, an audio unit must not change its parameters’ identifiers; this will invalidate any hosts’ documents that refer to the parameters.
 

@@ -29,7 +29,7 @@ nonisolated
 func buttonStyle<S>(_ style: S) -> some View where S : PrimitiveButtonStyle
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to set a specific style for all button instances within a view:
 

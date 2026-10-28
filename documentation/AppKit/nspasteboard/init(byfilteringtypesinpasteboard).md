@@ -15,11 +15,11 @@ Creates a new pasteboard object that supplies the specified pasteboard data in a
 init(byFilteringTypesInPasteboard pboard: NSPasteboard)
 ```
 
-#### Return Value
+## Return Value
 
 The new pasteboard object. This method returns the object in the `pasteboard` parameter if the pasteboard was returned by one of the `pasteboardByFiltering...` methods. This prevents a pasteboard from being expanded multiple times.
 
-#### Discussion
+## Discussion
 
 This process can be thought of as expanding the pasteboard, because the new pasteboard generally contains more representations of the data than `pasteboard`.
 

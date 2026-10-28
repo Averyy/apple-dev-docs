@@ -10,7 +10,7 @@ Retrieve and manage payment life-cycle events for your Apple Pay merchant tokens
 - App Store Connect API 1.0+
 - Apple Pay Merchant Token Management API 1.0.12+
 
-#### Overview
+## Overview
 
 The Apple Pay Merchant Token Management API is a REST API that enables merchants to get the details of a life-cycle event after receiving a merchant token event notification. You can also use this API to inform Apple Pay servers to invalidate your token when it’s no longer in use.
 

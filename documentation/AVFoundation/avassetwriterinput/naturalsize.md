@@ -24,7 +24,7 @@ var naturalSize: CGSize { get set }
 @property (nonatomic) CGSize naturalSize;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`CGSizeZero`](../../CoreGraphics/cgsizezero.md), which indicates the system sets the natural size according to the dimensions of the output track’s format descriptions.
 

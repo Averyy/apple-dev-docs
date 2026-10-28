@@ -24,7 +24,7 @@ var status: PKPaymentAuthorizationStatus { get set }
 @property (nonatomic, assign) PKPaymentAuthorizationStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 See [`PKPaymentAuthorizationStatus`](../pkpaymentauthorizationstatus.md) for the list of status values.
 

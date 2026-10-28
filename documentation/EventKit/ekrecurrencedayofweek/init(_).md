@@ -24,11 +24,11 @@ convenience init(_ dayOfTheWeek: EKWeekday)
 + (instancetype) dayOfWeek:(EKWeekday) dayOfTheWeek;
 ```
 
-#### Return Value
+## Return Value
 
 The new day of the week.
 
-#### Discussion
+## Discussion
 
 The week number of the returned day of the week is `0`.
 

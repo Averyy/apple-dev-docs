@@ -24,11 +24,11 @@ var sublayers: [CALayer]? { get set }
 @property (copy, nullable) NSArray<__kindof CALayer *> * sublayers;
 ```
 
-#### Discussion
+## Discussion
 
 The sublayers are listed in back to front order. The default value of this property is `nil`.
 
-##### Special Considerations
+### Special Considerations
 
 When setting the [`sublayers`](./sublayers.md) property to an array populated with layer objects, each layer in the array must not already have a superlayer—that is, its [`superlayer`](./superlayer.md) property must currently be `nil`.
 

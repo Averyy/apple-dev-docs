@@ -13,7 +13,7 @@
 - **Name**: `EXExtensionPointIdentifier`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 The value of this key is always “com.apple.Home.HomeExtension”. Xcode sets it when you add a Home Extension target to your project.
 

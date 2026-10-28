@@ -21,11 +21,11 @@ Call the given closure with the unsafe buffer pointer addressed by this OutputSp
 mutating func withUnsafeMutableBufferPointer<E, R>(_ body: (UnsafeMutableBufferPointer<Element>, inout Int) throws(E) -> R) throws(E) -> R where E : Error, R : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The return value of the `body` closure.
 
-#### Discussion
+## Discussion
 
 This method provides a way to process or populate an `OutputSpan` using unsafe operations, such as dispatching to code written in legacy (memory-unsafe) languages.
 

@@ -20,7 +20,7 @@ Stores a sample value at the specified index.
 - (void) setObject:(NSNumber *) value atIndexedSubscript:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 The method converts the value to a single precision floating-point value. If the index you specified is out of bounds, this method does nothing.
 

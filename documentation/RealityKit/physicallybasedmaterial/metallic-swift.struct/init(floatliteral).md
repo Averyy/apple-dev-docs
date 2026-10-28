@@ -20,7 +20,7 @@ Creates an object from single value.
 init(floatLiteral value: Float)
 ```
 
-#### Discussion
+## Discussion
 
 In PBR rendering, the `metallic` property represents the reflectiveness of an entity. This initializer creates a new object from a single value to describe the reflectiveness of the entire material. A value of 0.0 creates a *dielectric* (or non-reflective) material. Values greater than 0.0 result in an increasingly *metallic* (or reflective) materials.
 

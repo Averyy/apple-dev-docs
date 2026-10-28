@@ -28,7 +28,7 @@ optional func resolveEnableClimateControl(for intent: INSetClimateSettingsInCarI
 - (void) resolveEnableClimateControlForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *) intent withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the user’s request. The intent object passed to this method a Boolean value that indicates whether you can enable the car’s climate control system.
 

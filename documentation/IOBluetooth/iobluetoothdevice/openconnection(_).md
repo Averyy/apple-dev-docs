@@ -19,11 +19,11 @@ func openConnection(_ target: Any!) -> IOReturn
 - (IOReturn) openConnection:(id) target;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the connection was successfully created (or if asynchronous, if the CREATE_CONNECTION command was successfully issued).
 
-#### Discussion
+## Discussion
 
 If a target is specified, the open connection call is asynchronous and on completion of the CREATE_CONNECTION command, the method -connectionComplete:status: will be called on the specified target. If no target is specified, the call is synchronous and will not return until the connection is open or the CREATE_CONNECTION call has failed. This call with proceed without authentication required, and using the default page timeout value. If authentication or a non-default page timeout is required the method -openConnection:withPageTimeout:authenticationRequired: should be used instead.
 

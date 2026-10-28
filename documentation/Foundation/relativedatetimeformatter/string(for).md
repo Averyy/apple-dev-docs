@@ -25,11 +25,11 @@ func string(for obj: Any?) -> String?
 - (NSString *) stringForObjectValue:(id) obj;
 ```
 
-#### Return Value
+## Return Value
 
 A string that represents the date interval between a date and the current date and time, or `nil` if obj isn’t an instance of [`NSDate`](../nsdate.md).
 
-#### Discussion
+## Discussion
 
 To determine the relative interval, the formatter uses [`date`](../nsdate/date.md) as the reference date.
 

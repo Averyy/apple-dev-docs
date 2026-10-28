@@ -24,7 +24,7 @@ init(participants: [INPerson]?, callTypes: INCallRecordTypeOptions = [], callCap
 - (instancetype) initWithParticipants:(NSArray<INPerson *> *) participants callTypes:(INCallRecordTypeOptions) callTypes callCapability:(INCallCapability) callCapability;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INCallRecordFilter`](../incallrecordfilter.md) object or `nil` if the object could not be initialized.
 

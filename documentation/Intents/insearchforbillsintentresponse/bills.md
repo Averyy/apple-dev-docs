@@ -33,7 +33,7 @@ var bills: [INBillDetails]? { get set }
 @property (atomic, copy, readwrite, nullable) NSArray<INBillDetails *> * bills;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the search results. Each [`INBillDetails`](../inbilldetails.md) object should contain information about a single bill that matches the search criteria. Always provide as much detail as possible in each [`INBillDetails`](../inbilldetails.md) object.
 

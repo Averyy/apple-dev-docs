@@ -20,7 +20,7 @@ case horizontal
 ARPlaneAnchorAlignmentHorizontal
 ```
 
-#### Discussion
+## Discussion
 
 The [`transform`](../../aranchor/transform.md) property for a horizontal plane anchor includes no rotation about the x- or z-axis. Thus, using this anchor’s transform to place a 3D model asset in your scene results in the model appearing “right side up”.
 

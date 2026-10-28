@@ -21,7 +21,7 @@ func stop()
 - (void) stop;
 ```
 
-#### Discussion
+## Discussion
 
 After the JavaScript context has ended and all resources have been released, [`appController(_:didStop:)`](../tvapplicationcontrollerdelegate/appcontroller%28_,didstop%29.md) is called. The app controller cannot be reused after the `stop` method has been called.
 

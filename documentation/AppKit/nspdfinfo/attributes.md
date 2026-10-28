@@ -19,7 +19,7 @@ var attributes: NSMutableDictionary { get }
 @property (readonly) NSMutableDictionary<NSString *,id> * attributes;
 ```
 
-#### Discussion
+## Discussion
 
 Although `attributes` is a read-only property, you can modify the mutable dictionary associated with it. Typically, this dictionary contains custom attributes or parameters that are set by a custom accessory view in the PDF panel.
 

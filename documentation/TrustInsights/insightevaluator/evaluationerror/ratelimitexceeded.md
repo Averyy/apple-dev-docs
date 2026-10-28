@@ -16,7 +16,7 @@ An error that indicates the framework has received too many requests.
 case rateLimitExceeded
 ```
 
-#### Discussion
+## Discussion
 
 This may be due too many evaluation requests either for the app on the particular device or for the app across all devices.
 

@@ -20,7 +20,7 @@ Sends a standard data object to other participants in the group session.
 final func send(_ value: Data, to participants: Participants = .all, completion: @escaping ((any Error)?) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to send data using a standard data object. Your app is responsible for decoding and using the data it receives.
 

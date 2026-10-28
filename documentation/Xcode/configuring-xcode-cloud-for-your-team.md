@@ -5,7 +5,7 @@
 
 Start using continuous integration and delivery with Xcode Cloud as a team.
 
-#### Overview
+## Overview
 
 To adopt continuous integration and delivery (CI/CD) with Xcode Cloud, you’ll need to configure your project or workspace to use Xcode Cloud, create your first workflow, and then start your first build. However, starting to use Xcode Cloud as a team may require additional steps and coordination among team members and administrators — especially in a corporate context.
 
@@ -18,7 +18,7 @@ If you have the required role and permissions to complete the above tasks or som
 
 For additional information about using Xcode Cloud as a team, see [Deep dive into Xcode Cloud for teams](https://developer.apple.com/wwdc22/110375).
 
-##### Connect Xcode Cloud to an admin-managed Git repository
+### Connect Xcode Cloud to an admin-managed Git repository
 
 To start using Xcode Cloud, you need the permissions listed in [Setting up your project to use Xcode Cloud](./setting-up-your-project-to-use-xcode-cloud.md) to grant Xcode Cloud access to your team’s Git repository. If you don’t have the required role or permission, work with your team’s source code management (SCM) administrator and ask them to configure your project to use Xcode Cloud.
 
@@ -32,7 +32,7 @@ To connect Xcode Cloud to an admin-managed Git Repository:
 
 > 💡 **Tip**: If you host your code using [GitHub](https://github.com) or [GitHub Enterprise](https://github.com/enterprise), Xcode Cloud helps you work with your GitHub organization’s administrator. Start the initial configuration as described in [Configuring your first Xcode Cloud workflow](./configuring-your-first-xcode-cloud-workflow.md). When Xcode Cloud asks for permission to access your team’s repository, you can request that the *organization owner* or someone with the *admin* role installs the Xcode Cloud GitHub app that manages access to your team’s repositories. When the they’ve installed the app, you can complete the initial configuration.
 
-##### Create an app record in App Store Connect
+### Create an app record in App Store Connect
 
 Xcode Cloud combines [Xcode](https://developer.apple.com/xcode/), [TestFlight](https://developer.apple.com/testflight/), and [App Store Connect](https://appstoreconnect.apple.com) into a powerful CI/CD system. As a result, you need an app record for your app in App Store Connect to use Xcode Cloud. If you haven’t created an app record for your app, Xcode helps you create one when you configure your project or workspace to use Xcode Cloud.
 
@@ -40,7 +40,7 @@ Xcode Cloud combines [Xcode](https://developer.apple.com/xcode/), [TestFlight](h
 
 For more information about the requirements for creating an app record, see [Set up your App Store Connect account](./setting-up-your-project-to-use-xcode-cloud.md#Set-up-your-App-Store-Connect-account). If you can’t create an app record, let someone who has the required role or permission create an app record in App Store Connect. Then configure your project or workspace to use Xcode Cloud as described in [Configuring your first Xcode Cloud workflow](./configuring-your-first-xcode-cloud-workflow.md).
 
-##### Connect your personal SCM account to Xcode Cloud
+### Connect your personal SCM account to Xcode Cloud
 
 Xcode Cloud uses your personal SCM account to monitor the Git repository for changes. As a result, you need to connect your Xcode Cloud to your SCM account. To do this, open a project or workspace that another team member configured to use Xcode Cloud. If you haven’t connected your personal SCM account to Xcode Cloud, Xcode displays the Cloud Issues button in the toolbar. Click the button, and authorize Xcode Cloud to link your source control account with your Apple Account.
 

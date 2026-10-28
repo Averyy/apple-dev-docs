@@ -26,7 +26,7 @@ Chart content that represents data using points.
 
 - [Creating a chart using Swift Charts](./creating-a-chart-using-swift-charts.md)
 
-#### Overview
+## Overview
 
 You can create different kinds of point charts using the `PointMark` chart content. One common chart you can build with point marks is a scatter plot which displays the relationship between two numerical data properties. To build a scatter plot use the `init(x:y:)`. Provide a `.value` for both the `x` and `y` parameters with a string, used as a label for the data, and the data element to be plotted. The following example plots the `wingLength` and `wingHeight` properties with x and y, respectively:
 
@@ -58,7 +58,7 @@ var body: some View {
 
 ![A scatter plot with wing width plotted on the x-axis and wing height plotted on the y-axis. There are 12 points on the chart that demonstrate a roughly linear relationship between wing width and height.](https://developer.apple.com/tutorials/images/com.apple.Charts/PointMarkSwift.PointMarkScatterChart@2x.png)
 
-##### Adding Additional Data Fields
+### Adding Additional Data Fields
 
 Swift Charts provides three additional modifiers for point mark that each allow you to plot an additional property to a unique visual channel.
 
@@ -98,7 +98,7 @@ Chart(data) {
 
 ![A scatter plot with wing width plotted on the x-axis, wing height plotted on the y-axis, and insect family mapped to a symbol. There are 12 points on the chart that demonstrate a roughly linear relationship between wing width and height. The points appear in 3 clusters of 4 points each, where the points in each cluster have different symbols. The cluster in the lower left has circular points. The cluster in the middle has square points. The cluster in the upper right has triangular points. A legend below the plot maps each symbol to a different insect family. The mappings are circles for Diptera, squares for Hymenoptera, and triangles for Lepidoptera.](https://developer.apple.com/tutorials/images/com.apple.Charts/PointMarkSwift.PointMarkScatterChartModifiedSymbol@2x.png)
 
-##### PointMark in Chart3D
+### PointMark in Chart3D
 
 To make a point in a 3D Chart, use the [`init(x:y:z:)`](./pointmark/init%28x,y,z%29.md) initializer.
 
@@ -117,7 +117,7 @@ Chart3D(data) {
 }
 ```
 
-#### Styling a 3D PointMark
+## Styling a 3D PointMark
 
 3D points also offer symbols, such as  [`sphere`](./chart3dsymbolshape/sphere.md), [`cylinder`](./chart3dsymbolshape/cylinder.md), [`cone`](./chart3dsymbolshape/cone.md), and [`cube`](./chart3dsymbolshape/cube.md). Combined with the [`symbolSize(_:)`](./chart3dcontent/symbolsize%28_%29.md) and [`symbolRotation(_:)`](./chart3dcontent/symbolrotation%28_%29.md) modifiers, you can provide rich customizations for your 3D points:
 

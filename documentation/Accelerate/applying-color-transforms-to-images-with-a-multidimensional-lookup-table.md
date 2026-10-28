@@ -5,7 +5,7 @@
 
 Precompute translation values to optimize color space conversion and other pointwise operations.
 
-#### Overview
+## Overview
 
 When you perform color space conversions or other color transformations, it can be quicker to precompute the conversion values rather than performing the calculation for each individual pixel. The vImage library provides functionality for transforming images using multidimensional lookup tables. A multidimensional lookup table allows you to define such complex color transformations between image formats with the same or different numbers of channels.
 
@@ -15,7 +15,7 @@ An example of a multidimensional lookup table is a 3D lookup table that converts
 
 Each dimension of the RGB cube in the image above contains eight entries — that is, there are 8³ or 512 source samples, which appear as small cubes. Each sample contains four values that represent the CMYK values for the corresponding RGB color. For example, the sample for pure red (RGB `[1, 0, 0]`) contains the CMYK values `[0, 1, 1, 0]`, and the sample for cyan (RGB `[0, 1, 1]`) contains the CMYK values `[1, 0, 0, 0]`.
 
-##### Define the lookup table size
+### Define the lookup table size
 
 Define the number of elements in the lookup table from the number of table entries per channel, the number of source channels, and the number of destination channels. For the RGB to CMYK conversion, in the following example, the lookup table contains four values (for cyan, magenta, yellow, and black) at each point in the RGB cube. The RGB cube contains the number of table entries per channels cubed.
 
@@ -31,7 +31,7 @@ let lookupTableElementCount = Int(pow(Float(entriesPerChannel),
 
 You can set the vImage multidimensional lookup table functions to linearly interpolate between values. A high `entriesPerChannel` value provides greater color fidelity than a low value, but with a corresponding performance and memory overhead.
 
-##### Create the table data
+### Create the table data
 
 Supply the lookup table as a contiguous array of samples that define the lookup table values. The following code iterates over red, green, and blue values and creates an RGB [`CGColor`](../CoreGraphics/cgcolor.md) instance for each permutation. The code converts the RGB color instance to the CMYK color space and populates the lookup table with the cyan, magenta, yellow, and black components.
 
@@ -115,7 +115,7 @@ struct ColorConverter {
 }
 ```
 
-##### Create the lookup table
+### Create the lookup table
 
 Call [`vImageMultidimensionalTable_Create(_:_:_:_:_:_:_:)`](./vimagemultidimensionaltable_create%28_,_,_,_,_,_,_%29.md) to create a multidimensional lookup table from the table data array. Because the code in this example only uses the 32-bit transform function, pass the [`kvImageMDTableHint_Float`](./kvimagemdtablehint_float.md) hint to reduce memory overhead:
 
@@ -171,7 +171,7 @@ vImageMultidimensionalTable_Release(lookupTable);
 
 The lookup table structure is immutable and thread-safe, and therefore you can use it with multiple and concurrent calls to the appropriate transform function. After you finish using the lookup table, call [`vImageMultidimensionalTable_Release(_:)`](./vimagemultidimensionaltable_release%28_%29.md) to free its resources.
 
-##### Apply the transform
+### Apply the transform
 
 vImage provides two functions to apply the multidimensional lookup table to an image: [`vImageMultiDimensionalInterpolatedLookupTable_PlanarF(_:_:_:_:_:_:)`](./vimagemultidimensionalinterpolatedlookuptable_planarf%28_,_,_,_,_,_%29.md) for 32-bit planar buffers, and [`vImageMultiDimensionalInterpolatedLookupTable_Planar16Q12(_:_:_:_:_:_:)`](./vimagemultidimensionalinterpolatedlookuptable_planar16q12%28_,_,_,_,_,_%29.md) for 16Q12 planar buffers.
 
@@ -216,7 +216,7 @@ On return, the four destination planar buffers contain the cyan, magenta, yellow
 
 ![Five images of flowers. The first image is a color photograph of a bunch of flowers. The other four are grayscale images of the cyan, magenta, yellow, and black components of the color photograph converted to CMYK.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3707470@2x.png)
 
-##### Apply multidimensional lookup tables to pixel buffers
+### Apply multidimensional lookup tables to pixel buffers
 
 If you’re creating apps for recent operating systems that support the [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) API, the vImage library includes the [`vImage.MultidimensionalLookupTable`](./vimage/multidimensionallookuptable.md) structure, which provides a simple interface to a [`vImage_MultidimensionalTable`](./vimage_multidimensionaltable.md) structure. A [`vImage.MultidimensionalLookupTable`](./vimage/multidimensionallookuptable.md) structure uses the same lookup table data as a [`vImage_MultidimensionalTable`](./vimage_multidimensionaltable.md) structure. The code below performs an RGB-to-CMYK conversion using 32-bit planar pixel buffers:
 

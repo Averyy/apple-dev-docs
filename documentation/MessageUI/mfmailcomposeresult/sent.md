@@ -22,7 +22,7 @@ case sent
 MFMailComposeResultSent
 ```
 
-#### Discussion
+## Discussion
 
 It is ready to send the next time the user connects to email.
 

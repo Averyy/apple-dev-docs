@@ -19,11 +19,11 @@ Initializes an intent object with the specified ride information.
 - (instancetype) initWithPickupLocation:(CLPlacemark *) pickupLocation dropOffLocation:(CLPlacemark *) dropOffLocation rideOptionName:(INSpeakableString *) rideOptionName partySize:(NSNumber *) partySize paymentMethod:(INPaymentMethod *) paymentMethod scheduledPickupTime:(INDateComponentsRange *) scheduledPickupTime;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Normally, you don’t create instances of this class yourself. Instead, SiriKit creates instances when the user tries to book a ride. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths.
 

@@ -20,7 +20,7 @@ func LSMResultGetScore(_ result: LSMResult, _ n: CFIndex) -> Float
 float LSMResultGetScore(LSMResultRef result, CFIndex n);
 ```
 
-#### Discussion
+## Discussion
 
 A [`nan`](../kernel/api-1557310-nan.md) score typically indicates that the category doesn’t contain any token.
 

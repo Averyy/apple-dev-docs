@@ -23,7 +23,7 @@ class func nonPersistent() -> Self
 + (instancetype) nonPersistentConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 If a [`WKWebExtensionController`](../../wkwebextensioncontroller.md) is associated with a non-persistent configuration, no data will be written to the file system. This is useful for extensions in “private browsing” situations.
 

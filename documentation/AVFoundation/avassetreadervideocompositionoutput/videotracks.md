@@ -24,7 +24,7 @@ var videoTracks: [AVAssetTrack] { get }
 @property (nonatomic, readonly) NSArray<AVAssetTrack *> * videoTracks;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains [`AVAssetTrack`](../avassettrack.md) objects owned by the target asset reader’s asset.
 

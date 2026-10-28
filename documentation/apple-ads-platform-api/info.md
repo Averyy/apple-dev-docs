@@ -15,7 +15,7 @@ Additional context that supplements an error detail’s message, varying by endp
 object Info
 ```
 
-#### Discussion
+## Discussion
 
 `Info` supplements an [`ErrorDetail`](./errordetail.md)’s `message` with structured context, such as the field name, the invalid value, or acceptable alternatives. Its shape depends on the endpoint and the specific error condition, so it carries no fixed set of properties.
 

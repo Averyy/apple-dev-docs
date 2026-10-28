@@ -13,11 +13,11 @@
 errno_t ifmaddr_reference(ifmultiaddr_t ifmaddr);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success. Only error will be EINVAL if ifmaddr is not valid.
 
-#### Discussion
+## Discussion
 
 Increment the reference count of an interface multicast address.
 

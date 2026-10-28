@@ -21,7 +21,7 @@ Sets a start time, interval, and leeway value for a timer source.
 extern void dispatch_source_set_timer(dispatch_source_t source, dispatch_time_t start, uint64_t interval, uint64_t leeway);
 ```
 
-#### Discussion
+## Discussion
 
 Your application can call this function multiple times on the same dispatch timer source object to reset the time interval for the timer source as necessary.
 

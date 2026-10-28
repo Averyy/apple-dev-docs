@@ -21,7 +21,7 @@ Returns the character range of the fragment in the string returned by the string
 var rangeOfFragment: Range<String.Index>? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the component does not exist, nil is returned.
 

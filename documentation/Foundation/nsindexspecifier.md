@@ -20,7 +20,7 @@ class NSIndexSpecifier
 @interface NSIndexSpecifier : NSScriptObjectSpecifier
 ```
 
-#### Overview
+## Overview
 
 The script terms `first` and `front` specify the object with index `0`, while `last` specifies the object with index of `count-1`. A negative index indicates a location by counting backward from the last object in the collection.
 

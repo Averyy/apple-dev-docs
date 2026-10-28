@@ -28,7 +28,7 @@ optional func accessory(_ accessory: HMAccessory, service: HMService, didUpdateV
 
 - [Testing your app with the HomeKit Accessory Simulator](../testing-your-app-with-the-homekit-accessory-simulator.md)
 
-#### Discussion
+## Discussion
 
 This method is called as a result of a change in value initiated by the accessory. Programmatic changes initiated by the app do not result in this method being called.
 

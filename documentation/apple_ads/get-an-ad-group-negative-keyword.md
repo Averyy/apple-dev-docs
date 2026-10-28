@@ -11,11 +11,11 @@ Fetches a specific negative keyword in an ad group.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 To return a specific negative keyword, use the associated `campaignId`, `adgroupId`, and `keywordId` as a resource. You can also use a partial fetch. For more information, see the Use a Partial Fetch section of [Using Apple Ads API Functionality](./using-apple-search-ads-api-functionality.md).
 
-##### Payload example: Get an ad group negative keyword
+### Payload example: Get an ad group negative keyword
 
 **Request**:
 

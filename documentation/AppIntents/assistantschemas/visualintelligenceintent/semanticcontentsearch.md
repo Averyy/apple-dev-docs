@@ -17,7 +17,7 @@ The app intent conforms to the schema for visual search functionality.
 var semanticContentSearch: some AssistantSchemas.Intent { get }
 ```
 
-#### Overview
+## Overview
 
 To integrate your app’s functionality with Visual Intelligence you use Swift macros that generate additional properties and add protocol conformance for your app intent implementation.
 

@@ -16,11 +16,11 @@ Creates an async port.
 IOReturn (*createAsyncPort)(void *self, mach_port_t *port);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 The port must be created before any callbacks can be used.
 

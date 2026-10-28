@@ -24,7 +24,7 @@ class func joule() -> Self
 + (instancetype) jouleUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring energy in joules.
 

@@ -17,7 +17,7 @@ virtual IOReturn eraseOutputSamples(
  IOAudioStream *audioStream);
 ```
 
-#### Return Value
+## Return Value
 
 Must return kIOReturnSuccess if the samples have been erased.
 

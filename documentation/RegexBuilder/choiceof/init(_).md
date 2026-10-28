@@ -21,7 +21,7 @@ Creates a regex component that chooses exactly one of the regex components provi
 init(@AlternationBuilder _ builder: () -> ChoiceOf<Output>)
 ```
 
-#### Discussion
+## Discussion
 
 In this example, `regex` successfully matches either a `"CREDIT"` or `"DEBIT"` substring:
 

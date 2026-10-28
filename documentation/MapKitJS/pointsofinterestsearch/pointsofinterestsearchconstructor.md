@@ -15,7 +15,7 @@ Creates a search object for fetching points of interest.
 constructor(options?: PointsOfInterestSearchConstructorOptions);
 ```
 
-#### Discussion
+## Discussion
 
 To use search, create an instance of a [`PointsOfInterestSearch`](../pointsofinterestsearch.md). When you initialize a search, you can optionally set properties of the search object by providing a dictionary of [`PointsOfInterestSearchOptions`](../pointsofinterestsearchoptions.md).
 

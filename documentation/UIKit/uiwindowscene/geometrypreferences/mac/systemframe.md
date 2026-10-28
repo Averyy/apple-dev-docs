@@ -18,7 +18,7 @@ The preferred frame of the scene, in system coordinates.
 var systemFrame: CGRect? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the preferred frame of the scene in the system coordinate space, where an origin of `(0, 0)` corresponds to the top-left corner of the main display. The default value is [`CGRectNull`](../../../../CoreGraphics/cgrectnull.md), which indicates no preferred frame.
 

@@ -22,7 +22,7 @@ let MFMailComposeErrorDomain: String
 extern NSErrorDomain const MFMailComposeErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 The error domain associated with [`NSError`](../Foundation/nserror.md) objects.
 

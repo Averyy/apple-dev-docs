@@ -24,7 +24,7 @@ func addConnections(to nodes: [GKGraphNode], bidirectional: Bool)
 - (void) addConnectionsToNodes:(NSArray<GKGraphNode *> *) nodes bidirectional:(BOOL) bidirectional;
 ```
 
-#### Discussion
+## Discussion
 
 In GameplayKit, the connections between nodes in a graph are directional. For example, if the [`connectedNodes`](./connectednodes.md) list of Node A contains Node B, then a traveler on the graph can move directly from Node A to Node B. For the reverse to also be true, the [`connectedNodes`](./connectednodes.md) list of Node B must contain Node A. Use the `bidirectional` parameter to choose whether to automatically create connections in both directions or create only one-way connections.
 

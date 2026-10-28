@@ -15,11 +15,11 @@ Sends a vendor-specific Command Descriptor Block (CDB) to the device.
 virtual kern_return_t UserSendCDB(SCSIType05OutParameters command, SCSIType05InParameters *response);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of sending the CDB. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 Call this method to deliver vendor-specific 16-byte commands to the external drive that this dext matches.
 

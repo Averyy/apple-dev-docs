@@ -18,7 +18,7 @@ A card that displays information for a contact. The header is an `OCKHeaderView`
 class OCKSimpleContactView
 ```
 
-#### Overview
+## Overview
 
 ```
     +-------------------------------------------------------+

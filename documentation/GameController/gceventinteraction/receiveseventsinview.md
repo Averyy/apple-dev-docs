@@ -22,7 +22,7 @@ var receivesEventsInView: Bool { get set }
 @property (nonatomic, readwrite) BOOL receivesEventsInView;
 ```
 
-#### Discussion
+## Discussion
 
 If `YES`, events of the types specified by `handledEventTypes` are delivered both through the Game Controller framework and as UIKit event objects to your app’s views and gesture recognizers.
 

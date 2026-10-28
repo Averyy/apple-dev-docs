@@ -15,7 +15,7 @@ An abstract class that provides common interfaces for service objects.
 abstract class Service
 ```
 
-#### Discussion
+## Discussion
 
 You can’t initialize an abstract class. Use specific service classes to create service objects.
 

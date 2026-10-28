@@ -24,7 +24,7 @@ let HMCharacteristicTypeAirParticulateDensity: String
 extern NSString * const HMCharacteristicTypeAirParticulateDensity;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a number in units of micrograms per cubic meter.
 

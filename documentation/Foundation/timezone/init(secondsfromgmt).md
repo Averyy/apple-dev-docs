@@ -21,11 +21,11 @@ Returns a time zone initialized with a specific number of seconds from GMT.
 init?(secondsFromGMT seconds: Int)
 ```
 
-#### Return Value
+## Return Value
 
 A time zone, or `nil` if a valid time zone could not be created from `seconds`.
 
-#### Discussion
+## Discussion
 
 Time zones created with this never have daylight savings and the offset is constant no matter the date. The identifier and abbreviation do NOT follow the POSIX convention (of minutes-west).
 

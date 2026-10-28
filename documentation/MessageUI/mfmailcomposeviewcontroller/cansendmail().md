@@ -22,11 +22,11 @@ class func canSendMail() -> Bool
 + (BOOL) canSendMail;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device is configured for sending email or [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 You should call this method before attempting to display the mail composition interface. If it returns [`false`](../../Swift/false.md), you must not display the mail composition interface.
 

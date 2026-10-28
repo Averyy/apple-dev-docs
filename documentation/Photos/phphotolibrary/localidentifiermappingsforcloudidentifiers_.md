@@ -20,11 +20,11 @@ Retrieves the local identifier mappings for the list of cloud identifiers.
 - (NSDictionary<PHCloudIdentifier *,PHLocalIdentifierMapping *> *) localIdentifierMappingsForCloudIdentifiers:(NSArray<PHCloudIdentifier *> *) cloudIdentifiers;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains a map of cloud identifiers to their corresponding local mappings.
 
-#### Discussion
+## Discussion
 
 Retrieving local identifiers can be an expensive operation, so perform this lookup sparingly. Instead, work with local identifiers and perform mapping work at load and save points. Then store and share the cloud identifiers to make them available on other devices.
 

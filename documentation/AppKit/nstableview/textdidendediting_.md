@@ -17,7 +17,7 @@ Updates the data source based on the newly edited value and selects another cell
 - (void) textDidEndEditing:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 See the [`NSText`](../nstext.md) class specification for more information on this text delegate method.
 

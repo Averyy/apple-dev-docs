@@ -17,7 +17,7 @@ The targets that directly comprise the product, in the order in which they are d
 let targets: [Target]
 ```
 
-#### Discussion
+## Discussion
 
 The product contains the transitive closure of the these targets and their dependencies. For an `ExecutableProduct`, exactly one of the targets in this list must be an `ExecutableTarget`.
 

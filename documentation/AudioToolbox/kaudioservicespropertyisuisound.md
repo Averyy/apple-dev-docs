@@ -24,7 +24,7 @@ var kAudioServicesPropertyIsUISound: AudioServicesPropertyID { get }
 kAudioServicesPropertyIsUISound
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to `1` by default. Set it to `0` for the system sound to always play when passed to [`AudioServicesPlaySystemSound(_:)`](./audioservicesplaysystemsound%28_%29.md), regardless of the user’s setting in sound preferences.
 

@@ -19,7 +19,7 @@ nonisolated
 struct DocumentGroupLaunchScene<Actions> where Actions : View
 ```
 
-#### Overview
+## Overview
 
 You can use this launch scene alongside [`DocumentGroup`](./documentgroup.md) scenes. If you don’t implement a `DocumentGroup` in the app declaration, you can get the same design by implementing a [`DocumentLaunchView`](./documentlaunchview.md).
 

@@ -23,7 +23,7 @@ mutating func merge<E>(_ other: [Key : Value], uniquingKeysWith combine: (Value,
 
 Available when `Key` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 Use the `combine` closure to select a value to use in the updated dictionary, or to combine existing and new values. As the key-values pairs in `other` are merged with this dictionary, the `combine` closure is called with the current and new values for any duplicate keys that are encountered.
 

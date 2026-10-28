@@ -24,7 +24,7 @@ var attenuationEndDistance: Float { get set }
 @property (nonatomic, readwrite) float attenuationEndDistance;
 ```
 
-#### Discussion
+## Discussion
 
 At distances less than the start distance, the light’s illumination is at full intensity. At distances greater than the end distance, the light provides no illumination. At distances in between the start and end distance, the attenuationFalloffExponent property defines the transition from full illumination to no illumination.
 

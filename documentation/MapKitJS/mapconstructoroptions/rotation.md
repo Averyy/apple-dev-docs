@@ -15,7 +15,7 @@ The map’s rotation, in degrees.
 rotation?: number;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.`
 

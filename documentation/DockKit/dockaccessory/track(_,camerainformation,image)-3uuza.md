@@ -18,7 +18,7 @@ Automatically generate and send tracking vectors to the device.
 final func track(_ data: [DockAccessory.Observation], cameraInformation: DockAccessory.CameraInformation, image: CVPixelBuffer) async throws
 ```
 
-#### Discussion
+## Discussion
 
 The device receives tracking vectors based on manually constructed observations.
 

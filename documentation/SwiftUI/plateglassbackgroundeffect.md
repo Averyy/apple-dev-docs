@@ -15,7 +15,7 @@ The plate glass background effect.
 struct PlateGlassBackgroundEffect
 ```
 
-#### Overview
+## Overview
 
 You can also use [`plate`](./glassbackgroundeffect/plate.md) to construct this effect.
 

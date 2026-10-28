@@ -15,7 +15,7 @@ Converts a supported numeric type to a JavaScript number.
 static number toNumber();
 ```
 
-#### Discussion
+## Discussion
 
 If the value passed in isn’t a number, this function throws `ValueNotNumericError`. If the value is numeric but can’t be represented by a JavaScript number, it throws `ValueNotInNumberRangeError`.
 

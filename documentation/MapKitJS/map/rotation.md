@@ -20,7 +20,7 @@ set rotation(rotation: number);
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 This value represents the map’s [`rotation`](./rotation.md) in degrees, where the value 0 means that the top edge of the map view corresponds to true north. The value 90 means the top of the map is pointing due west. The value 180 means the top of the map points due south, and so on.
 

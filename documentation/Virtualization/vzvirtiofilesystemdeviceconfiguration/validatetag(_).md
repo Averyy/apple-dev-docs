@@ -23,7 +23,7 @@ class func validateTag(_ tag: String) throws
 
 - [Running Intel Binaries in Linux VMs](../running-intel-binaries-in-linux-vms.md)
 
-#### Discussion
+## Discussion
 
 The tag can’t be empty and must be fewer than 36 bytes when encoded in UTF-8.
 

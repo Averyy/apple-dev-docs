@@ -20,7 +20,7 @@ Creates a new transform represented as a 4x4 matrix.
 init(matrix: float4x4)
 ```
 
-#### Discussion
+## Discussion
 
 A [`Transform`](../transform.md) component can’t represent every transform that a general 4x4 matrix can . Using a 4x4 matrix during initialization might result in certain transformations, such as shear, being lost.
 

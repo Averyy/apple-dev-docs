@@ -24,11 +24,11 @@ Converts any failure into a new error.
 func mapError<MappedError>(_ transform: @escaping @Sendable (Self.Failure) -> MappedError) -> some AsyncSequence<Self.Element, MappedError> where MappedError : Error
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence that maps the error thrown into the one produced by the transform closure.
 
-#### Discussion
+## Discussion
 
 Use the [`mapError(_:)`](./maperror%28_%29-4j050.md) operator when you need to replace one error type with another.
 

@@ -15,11 +15,11 @@ The addition object for defining links in text components that don’t use HTML 
 object LinkAddition
 ```
 
-#### Discussion
+## Discussion
 
 Use a `Link` addition to add a link in a text component. You can link to an anchor in the same document, to another document in News, or to an external site.
 
-##### Example
+### Example
 
 ```json
 {

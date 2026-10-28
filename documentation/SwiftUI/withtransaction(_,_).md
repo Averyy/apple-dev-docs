@@ -21,7 +21,7 @@ Executes a closure with the specified transaction and returns the result.
 func withTransaction<Result>(_ transaction: Transaction, _ body: () throws -> Result) rethrows -> Result
 ```
 
-#### Return Value
+## Return Value
 
 The result of executing the closure with the specified transaction.
 

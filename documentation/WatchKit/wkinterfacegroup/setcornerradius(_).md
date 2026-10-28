@@ -19,7 +19,7 @@ func setCornerRadius(_ cornerRadius: CGFloat)
 - (void) setCornerRadius:(CGFloat) cornerRadius;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the radius to a value greater than `0.0` causes the group to draw rounded corners on its background. When a corner radius is applied, the group’s background color or image are clipped accordingly.
 

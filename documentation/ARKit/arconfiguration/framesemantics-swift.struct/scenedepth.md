@@ -20,7 +20,7 @@ static var sceneDepth: ARConfiguration.FrameSemantics { get }
 ARFrameSemanticSceneDepth
 ```
 
-#### Discussion
+## Discussion
 
 Enable this option on a world-tracking configuration ([`ARWorldTrackingConfiguration`](../../arworldtrackingconfiguration.md)) to instruct ARKit to provide your app with the distance between the user’s device and the real-world objects in the camera feed. ARKit samples this distance using the LiDAR scanner and provides the results through the [`sceneDepth`](../../arframe/scenedepth.md) property on the session’s [`currentFrame`](../../arsession/currentframe.md).
 

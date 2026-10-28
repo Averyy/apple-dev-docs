@@ -15,7 +15,7 @@ The original transaction identifier of a purchase.
 string originalTransactionId
 ```
 
-#### Discussion
+## Discussion
 
 This value is identical to the transaction identifier ([`transactionId`](./transactionid.md)) except when the user restores or renews a subscription.
 

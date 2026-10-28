@@ -24,7 +24,7 @@ protocol MTLIOScratchBufferAllocator : NSObjectProtocol
 @protocol MTLIOScratchBufferAllocator <NSObject>
 ```
 
-#### Overview
+## Overview
 
 An allocator returns instances of [`MTLIOScratchBuffer`](./mtlioscratchbuffer.md), another type your app implements.
 

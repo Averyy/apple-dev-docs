@@ -25,7 +25,7 @@ convenience init(contentsOf url: URL) throws
 + (instancetype) embeddingWithContentsOfURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a word embedding from an `.mlmodel` file saved by Create ML’s [`MLWordEmbedding`](../../CreateML/mlwordembedding.md).
 

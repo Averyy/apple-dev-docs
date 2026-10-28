@@ -19,7 +19,7 @@ func orderFrontRegardless()
 - (void) orderFrontRegardless;
 ```
 
-#### Discussion
+## Discussion
 
 Normally an `NSWindow` object can’t be moved in front of the key window unless it and the key window are in the same application. You should rarely need to invoke this method; it’s designed to be used when applications are cooperating in such a way that an active application (with the key window) is using another application to display data.
 

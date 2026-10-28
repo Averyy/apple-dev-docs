@@ -24,7 +24,7 @@ var subtitle: String? { get set }
 @property (copy, nullable) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 CloudKit uses this value to set the `subtitle` push notification property. If you set [`subtitleLocalizationKey`](./subtitlelocalizationkey.md), CloudKit ignores this value.
 

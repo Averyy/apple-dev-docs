@@ -18,11 +18,11 @@ nonisolated
 func prefersDefaultFocus(_ prefersDefaultFocus: Bool = true, in namespace: Namespace.ID) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A modified view that sets whether it prefers to be focused by default.
 
-#### Discussion
+## Discussion
 
 This modifier sets the initial focus preference when no other view has focus. Use the environment value [`resetFocus`](../environmentvalues/resetfocus.md) to force a reevaluation of default focus at any time.
 

@@ -20,11 +20,11 @@ Helper function that returns a minimally configured AVAssetWriterInput object fo
 - (AVAssetWriterInput *) resumableAssetWriterInputWithMediaType:(AVMediaType) mediaType outputSettings:(NSDictionary<NSString *,id> *) outputSettings sourceFormatHint:(CMFormatDescriptionRef) sourceFormatHint returningError:(NSError **) errorOut;
 ```
 
-#### Return Value
+## Return Value
 
 A new writer input. Nil if a writer input cannot be created.
 
-#### Discussion
+## Discussion
 
 Clients using AVAssetWriterInput with video compression must use this method to create the writer input for writing the segment. The planner initializes the writer input in such a way that when writing starts, the video encoder’s state is restored to the final state of the last segment. The client should perform additional configurations on the returned writer input as needed, but must apply the same configurations for each segment of the track.
 

@@ -19,7 +19,7 @@ func focus()
 - (void) focus;
 ```
 
-#### Discussion
+## Discussion
 
 When the volume control has the focus, the system highlights it. The user can then use the Digital Crown to increase or decrease the volume.
 

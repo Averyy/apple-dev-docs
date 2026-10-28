@@ -15,7 +15,7 @@ A structure that encapsulates all of the information for describing the basic fo
 struct IOUserAudioStreamBasicDescription;
 ```
 
-#### Discussion
+## Discussion
 
 This structure contains the information needed to describe any constant bit rate format that has channels that are the same size. For variable bit rate data and for constant bit rate data where the channels have unequal sizes, the type requires more data than this type provides. However, where applicable, the framework fills out the appropriate fields correctly for these kinds of formats using separate properties for the additional data.
 

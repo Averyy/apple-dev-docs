@@ -19,7 +19,7 @@ func hv_gic_get_distributor_base_alignment(_ distributor_base_alignment: UnsafeM
 extern hv_return_t hv_gic_get_distributor_base_alignment(size_t *distributor_base_alignment);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 

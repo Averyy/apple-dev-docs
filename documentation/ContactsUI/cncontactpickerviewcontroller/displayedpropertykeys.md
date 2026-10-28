@@ -22,7 +22,7 @@ var displayedPropertyKeys: [String]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSString *> * displayedPropertyKeys;
 ```
 
-#### Discussion
+## Discussion
 
 All the properties of the contact are displayed if this property is not set.
 

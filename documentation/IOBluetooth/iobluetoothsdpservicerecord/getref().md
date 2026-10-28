@@ -19,7 +19,7 @@ func getRef() -> Unmanaged<IOBluetoothSDPServiceRecordRef>!
 - (IOBluetoothSDPServiceRecordRef) getSDPServiceRecordRef;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOBluetoothSDPServiceRecordRef representation of the target IOBluetoothSDPServiceRecord object.
 

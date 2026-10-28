@@ -27,7 +27,7 @@ init?(iccProfileData data: CFData)
 extern CGColorSpaceRefCGColorSpaceCreateWithICCProfile(CFDataRef data);
 ```
 
-#### Return Value
+## Return Value
 
 A new color space based on the specified profile.
 

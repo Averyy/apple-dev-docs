@@ -19,11 +19,11 @@ Creates a configuration for a button that has a bordered style.
 static func bordered() -> UIButton.Configuration
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration object.
 
-#### Discussion
+## Discussion
 
 This style provides an alternative name for the [`gray()`](./gray%28%29.md) style.
 

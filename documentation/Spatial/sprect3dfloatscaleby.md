@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatScaleBy(SPRect3DFloat rect, float x, float y, float z);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle that’s scaled by the specified values.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle with dimensions scaled by the specified values.
 

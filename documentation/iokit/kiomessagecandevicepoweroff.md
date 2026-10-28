@@ -17,7 +17,7 @@
 #define kIOMessageCanDevicePowerOff
 ```
 
-#### Discussion
+## Discussion
 
 Delivered to `kIOAppPowerStateInterest` clients of devices that implement their own idle timeouts. This message type is almost never used.
 

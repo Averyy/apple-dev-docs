@@ -24,7 +24,7 @@ var objectThreadgroupSizeIsMultipleOfThreadExecutionWidth: Bool { get set }
 @property (nonatomic, readwrite) BOOL objectThreadgroupSizeIsMultipleOfThreadExecutionWidth;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this property to [`true`](../../Swift/true.md), you state to Metal that when you use a mesh render pipeline you create from this descriptor, the number of threadgroup threads you dispatch for the object stage is a multiple of its [`objectThreadExecutionWidth`](../mtlrenderpipelinestate/objectthreadexecutionwidth.md). The compiler’s optimizer can use this guarantee to generate more efficient code.
 

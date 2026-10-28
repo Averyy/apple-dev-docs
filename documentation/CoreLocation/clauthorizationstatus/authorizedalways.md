@@ -24,7 +24,7 @@ case authorizedAlways
 kCLAuthorizationStatusAuthorizedAlways
 ```
 
-#### Discussion
+## Discussion
 
 This authorization allows you to use all location services and receive location events whether or not your app is in use.
 

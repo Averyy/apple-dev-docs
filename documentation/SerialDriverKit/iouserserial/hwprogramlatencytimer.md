@@ -15,11 +15,11 @@ Sets the amount of time to wait before sending the current buffer to the device.
 virtual kern_return_t HwProgramLatencyTimer(uint32_t latency);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Override this method and use it to configure a latency timer for the device. Rather than sending buffers only when they’re full, the latency timer ensures that the hardware sends any accumulated data at the specified interval.
 

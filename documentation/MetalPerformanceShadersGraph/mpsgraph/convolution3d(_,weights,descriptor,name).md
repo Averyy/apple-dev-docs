@@ -24,7 +24,7 @@ func convolution3D(_ source: MPSGraphTensor, weights: MPSGraphTensor, descriptor
 - (MPSGraphTensor *) convolution3DWithSourceTensor:(MPSGraphTensor *) source weightsTensor:(MPSGraphTensor *) weights descriptor:(MPSGraphConvolution3DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 

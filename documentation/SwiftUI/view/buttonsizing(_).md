@@ -22,7 +22,7 @@ nonisolated
 func buttonSizing(_ sizing: ButtonSizing) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Views may use the specified button sizing when determining the size they choose to be in their primary axis within their parent view’s proposed size.
 

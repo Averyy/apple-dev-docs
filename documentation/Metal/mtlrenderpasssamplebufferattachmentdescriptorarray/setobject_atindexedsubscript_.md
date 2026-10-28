@@ -20,7 +20,7 @@ Sets the descriptor object for the specified sample buffer attachment.
 - (void) setObject:(MTLRenderPassSampleBufferAttachmentDescriptor *) attachment atIndexedSubscript:(NSUInteger) attachmentIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The method copies the parameter contents into the attachment.
 

@@ -12,7 +12,7 @@ Returns the position of this anchor within the specified markup’s coordinate s
 func location(in markup: PaperMarkup) -> CGPoint?
 ```
 
-#### Return Value
+## Return Value
 
 A `CGPoint` representing the anchor’s position in the markup’s coordinate system, or `nil` if the location is unavailable.
 

@@ -21,7 +21,7 @@ Returns a new CG options structure using the specified parameters.
 init(reportError: ((UnsafePointer<CChar>) -> Void)?, maxIterations: Int32, atol: Double, rtol: Double, reportStatus: ((UnsafePointer<CChar>) -> Void)?)
 ```
 
-#### Return Value
+## Return Value
 
 A new CG options structure.
 

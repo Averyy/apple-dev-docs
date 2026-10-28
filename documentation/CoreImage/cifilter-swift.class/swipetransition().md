@@ -24,11 +24,11 @@ class func swipeTransition() -> any CIFilter & CISwipeTransition
 + (CIFilter<CISwipeTransition> *) swipeTransitionFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The transition image.
 
-#### Discussion
+## Discussion
 
 This method applies the swipe transition filter to an image. The effect transitions from the input image to the target image by simulating a swiping motion.
 

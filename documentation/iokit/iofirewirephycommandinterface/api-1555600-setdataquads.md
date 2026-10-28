@@ -16,7 +16,7 @@ Set the 2 quadlets of data to be sent in a PHY packet.
 void (*SetDataQuads)(IOFireWireLibPHYCommandRef self, UInt32 data1, UInt32 data2);
 ```
 
-#### Discussion
+## Discussion
 
 Available in v1 and newer.
 

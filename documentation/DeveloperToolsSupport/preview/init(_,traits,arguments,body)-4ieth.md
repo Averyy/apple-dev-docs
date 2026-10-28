@@ -16,7 +16,7 @@ Creates a group of previews of an NSViewController.
 init<T>(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], @PreviewBodyBuilder<NSViewController> body: @escaping @MainActor (T) -> NSViewController)
 ```
 
-#### Discussion
+## Discussion
 
 A preview macro expands into a declaration that calls this initializer. Don’t use this initializer directly.
 

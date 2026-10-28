@@ -21,7 +21,7 @@ A type that specifies the format for the minutes in a date format style.
 struct Minute
 ```
 
-#### Overview
+## Overview
 
 The type [`Date.FormatStyle.Symbol.Minute`](./minute.md) includes static factory variables that create custom [`Date.FormatStyle.Symbol.Minute`](./minute.md) objects:
 

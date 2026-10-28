@@ -21,7 +21,7 @@ A specific set of zone IDs to include in the scope.
 @property (copy, readonly, nullable) NSSet<CKRecordZoneID *> * zoneIDs;
 ```
 
-#### Discussion
+## Discussion
 
 For example, if you want to fetch changes for a specific set of zones, you can specify them here. If `nil`, this scope includes all zones except those in `excludedZoneIDs`.
 

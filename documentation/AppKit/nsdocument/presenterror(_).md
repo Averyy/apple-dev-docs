@@ -19,11 +19,11 @@ func presentError(_ error: any Error) -> Bool
 - (BOOL) presentError:(NSError *) error;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if error recovery was done; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method does not return until the user dismisses the alert and, if the error has recovery options and a recovery delegate, the error’s recovery delegate  is sent an [`attemptRecovery(fromError:optionIndex:)`](../../ObjectiveC/nsobject-swift.class/attemptrecovery%28fromerror,optionindex%29.md) message.
 

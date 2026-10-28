@@ -16,11 +16,11 @@ Returns the manufacturer string index in the device descriptor.
 IOReturn (*USBGetManufacturerStringIndex)(void *self, UInt8 *msi);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService.
 
-#### Discussion
+## Discussion
 
 The device does not have to be open to use this function.
 

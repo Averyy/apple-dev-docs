@@ -15,7 +15,7 @@ The name that identifies the record zone.
 attribute string zoneName;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `_defaultZone`, which indicates the default zone of the current database.
 

@@ -25,11 +25,11 @@ class func makeLogHandle(category: String) -> OSLog
 + (os_log_t) makeLogHandleWithCategory:(NSString *) category;
 ```
 
-#### Return Value
+## Return Value
 
 A customized [`OSLog`](../../os/oslog.md) object used for writing custom metrics of the same category.
 
-#### Discussion
+## Discussion
 
 The object returned by this method saves only custom signpost metrics. Other kinds of [`os_log`](../../os/os_log.md) messages aren’t persisted.
 

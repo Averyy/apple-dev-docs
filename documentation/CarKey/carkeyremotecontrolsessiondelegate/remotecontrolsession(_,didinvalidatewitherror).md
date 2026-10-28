@@ -20,7 +20,7 @@ Notifies your delegate object that the session become invalid for the specified 
 func remoteControlSession(_ session: CarKeyRemoteControlSession, didInvalidateWithError: CarKeyErrorCode)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to detect if the system invalidated the session for any reason. The system executes this method on the dispatch queue you specified when you started the session.
 

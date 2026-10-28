@@ -20,7 +20,7 @@ func ODRecordChangePassword(_ record: ODRecordRef!, _ oldPassword: CFString!, _ 
 extern bool ODRecordChangePassword(ODRecordRef record, CFStringRef oldPassword, CFStringRef newPassword, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the password is successfully changed; `false` otherwise.
 

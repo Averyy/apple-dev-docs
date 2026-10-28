@@ -25,7 +25,7 @@ static var traitBold: CTFontSymbolicTraits { get }
 kCTFontTraitBold
 ```
 
-#### Discussion
+## Discussion
 
 Additional detail is available via [`kCTFontWeightTrait`](../kctfontweighttrait.md).
 

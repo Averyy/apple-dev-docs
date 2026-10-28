@@ -18,7 +18,7 @@ typealias AudioDeviceIOBlock = (UnsafePointer<AudioTimeStamp>, UnsafePointer<Aud
 typedef void (^)(const struct AudioTimeStamp *, const struct AudioBufferList *, const struct AudioTimeStamp *, struct AudioBufferList *, const struct AudioTimeStamp *) __attribute__((nonblocking)) AudioDeviceIOBlock;
 ```
 
-#### Discussion
+## Discussion
 
 An AudioDeviceIOBlock is called by an AudioDevice to provide input data read from the device and collect output data to be written to the device for the current IO cycle.
 

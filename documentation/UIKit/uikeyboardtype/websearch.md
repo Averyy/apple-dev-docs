@@ -23,7 +23,7 @@ case webSearch
 UIKeyboardTypeWebSearch
 ```
 
-#### Discussion
+## Discussion
 
 This keyboard type prominently features the space and period (”`.`”) characters.
 

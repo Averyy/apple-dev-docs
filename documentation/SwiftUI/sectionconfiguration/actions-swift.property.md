@@ -21,7 +21,7 @@ Custom actions associated with a section.
 var actions: SectionConfiguration.Actions { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property provides programmatic access to the actions defined on a [`Section`](../section.md). If no actions were specified, the collection will be empty. The following `MailboxView` will put actions into an overflow menu if there are too many to display inline.
 

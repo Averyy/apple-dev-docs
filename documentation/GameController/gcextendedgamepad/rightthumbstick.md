@@ -24,7 +24,7 @@ var rightThumbstick: GCControllerDirectionPad { get }
 @property (nonatomic, readonly) GCControllerDirectionPad * rightThumbstick;
 ```
 
-#### Discussion
+## Discussion
 
 The thumbsticks in the extended gamepad profile are analog buttons.
 

@@ -18,7 +18,7 @@ Scrolls to the containing view to make the text range visible.
 - (void) scrollRangeToVisible:(UITextRange *) range inDocument:(UITextSearchDocumentIdentifier) document;
 ```
 
-#### Discussion
+## Discussion
 
 If the seachable object supports scrolling, use this method to implement scrolling your view to make the highlighted text range visible.
 

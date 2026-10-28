@@ -24,7 +24,7 @@ func GCPoint2Make(_ x: Float, _ y: Float) -> GCPoint2
 static GCPoint2 GCPoint2Make(float x, float y);
 ```
 
-#### Return Value
+## Return Value
 
 A point in a two-dimensional coordinate system.
 

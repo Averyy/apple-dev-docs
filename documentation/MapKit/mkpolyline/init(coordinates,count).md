@@ -25,7 +25,7 @@ convenience init(coordinates coords: UnsafePointer<CLLocationCoordinate2D>, coun
 + (instancetype) polylineWithCoordinates:(const CLLocationCoordinate2D *) coords count:(NSUInteger) count;
 ```
 
-#### Return Value
+## Return Value
 
 A new polyline object.
 

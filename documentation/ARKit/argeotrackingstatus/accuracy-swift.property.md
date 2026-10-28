@@ -20,7 +20,7 @@ var accuracy: ARGeoTrackingStatus.Accuracy { get }
 @property (nonatomic, readonly) ARGeoTrackingAccuracy accuracy;
 ```
 
-#### Discussion
+## Discussion
 
 ARKit populates this property after reaching [`ARGeoTrackingStatus.State.localized`](./state-swift.enum/localized.md). To ensure the best possible user experience, an app must monitor and react to the geo-tracking accuracy. For more information, see [`ARGeoTrackingStatus.Accuracy`](./accuracy-swift.enum.md).
 

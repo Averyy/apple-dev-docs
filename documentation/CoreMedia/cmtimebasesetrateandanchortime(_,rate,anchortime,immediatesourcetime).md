@@ -25,7 +25,7 @@ func CMTimebaseSetRateAndAnchorTime(_ timebase: CMTimebase, rate: Float64, ancho
 extern OSStatus CMTimebaseSetRateAndAnchorTime(CMTimebaseRef timebase, Float64 rate, CMTime timebaseTime, CMTime immediateSourceTime);
 ```
 
-#### Discussion
+## Discussion
 
 The system interpolates `CMTimebaseGetTime`’s results from the anchor time as though the timebase has been running at the requested rate since that time.
 

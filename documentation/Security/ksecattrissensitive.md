@@ -25,7 +25,7 @@ let kSecAttrIsSensitive: CFString
 extern CFStringRef const kSecAttrIsSensitive;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). When set to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), the item can only be exported in an encrypted format. Items of class [`kSecClassKey`](./ksecclasskey.md) have this attribute.
 

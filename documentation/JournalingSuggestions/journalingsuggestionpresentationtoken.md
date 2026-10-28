@@ -19,7 +19,7 @@ struct JournalingSuggestionPresentationToken
 
 - [Receiving journaling suggestions system notifications](./receiving-journaling-suggestions-from-system-notifications.md)
 
-#### Overview
+## Overview
 
 When your app receives a Journaling Suggestion notification, the system launches your app and provides an ID that refers to a specific suggestion from the notification.
 

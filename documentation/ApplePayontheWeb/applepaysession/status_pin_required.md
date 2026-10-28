@@ -15,7 +15,7 @@ The required PIN information was not provided.
 const unsigned short STATUS_PIN_REQUIRED;
 ```
 
-#### Discussion
+## Discussion
 
 Cards on the China Union Pay payment network may require a PIN to authenticate the transaction.
 

@@ -29,11 +29,11 @@ class func isPictureInPictureSupported() -> Bool
 - [Adopting Picture in Picture for video calls](../adopting-picture-in-picture-for-video-calls.md)
 - [Adopting Picture in Picture in a custom player](../adopting-picture-in-picture-in-a-custom-player.md)
 
-#### Return Value
+## Return Value
 
 `true` if the current device supports Picture in Picture playback, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 If Picture in Picture isn’t supported on the current device, attempting to initialize a Picture in Picture controller returns `nil`.
 

@@ -18,7 +18,7 @@ A read-only setting that displays a label and a value.
 final class HomeAccessoryInformationSetting
 ```
 
-#### Overview
+## Overview
 
 People can view the value but can’t change it. The Home app displays the value exactly as you provide it, so format and localize it beforehand.
 

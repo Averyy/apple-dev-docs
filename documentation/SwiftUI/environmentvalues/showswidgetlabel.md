@@ -19,7 +19,7 @@ A Boolean value that indicates whether an accessory family widget can display an
 var showsWidgetLabel: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to determine if you can provide additional content, or possibly move some of the widget’s content out of the main view and into the widget label.
 

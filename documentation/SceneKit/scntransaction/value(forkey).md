@@ -25,11 +25,11 @@ class func value(forKey key: String) -> Any?
 + (id) valueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The object previously associated with the transaction (or an enclosing transaction) using the specified key, or `nil` if no value for that key could be found.
 
-#### Discussion
+## Discussion
 
 Nested transactions have nested data scope. Setting a value for a key associates it with the current transaction (or innermost nested transaction) only, but reading the value for a key searches through nested transactions (starting from the innermost).
 

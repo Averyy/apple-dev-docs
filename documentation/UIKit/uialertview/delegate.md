@@ -23,7 +23,7 @@ weak var delegate: AnyObject? { get set }
 @property (nonatomic, weak, nullable) id delegate;
 ```
 
-#### Discussion
+## Discussion
 
 See [`UIAlertViewDelegate`](../uialertviewdelegate.md) for the methods this delegate should implement.
 

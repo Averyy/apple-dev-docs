@@ -21,11 +21,11 @@ convenience init(fuelMass: Measurement<UnitMass>)
 + (instancetype) routeDetailWithFuelMass:(NSMeasurement<NSUnitMass *> *) fuelMass;
 ```
 
-#### Return Value
+## Return Value
 
 A new @c CPRouteDetail instance representing the fuel mass
 
-#### Discussion
+## Discussion
 
 Use this method to display fuel levels for vehicles that measure fuel by mass, such as compressed natural gas (CNG) vehicles.
 

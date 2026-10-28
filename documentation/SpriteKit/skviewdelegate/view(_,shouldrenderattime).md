@@ -24,7 +24,7 @@ optional func view(_ view: SKView, shouldRenderAtTime time: TimeInterval) -> Boo
 - (BOOL) view:(SKView *) view shouldRenderAtTime:(NSTimeInterval) time;
 ```
 
-#### Return Value
+## Return Value
 
 Return `true` to initiate an update and render for the target time. Return `false` to skip the update and render for the target time.
 

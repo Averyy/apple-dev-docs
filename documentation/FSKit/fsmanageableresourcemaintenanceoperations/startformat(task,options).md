@@ -20,7 +20,7 @@ func startFormat(task: FSTask, options: FSTaskOptions) throws -> Progress
 - (NSProgress *) startFormatWithTask:(FSTask *) task options:(FSTaskOptions *) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An [`Progress`](../../Foundation/progress.md) object that you use to update progress as the format operation progresses. Return `nil` if starting to format the file system encountered an error.
 

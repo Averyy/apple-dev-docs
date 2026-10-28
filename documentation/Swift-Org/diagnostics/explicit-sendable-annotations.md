@@ -10,7 +10,7 @@ framework: "Swift-Org/diagnostics"
 
 Adds a warning for any public types without a `Sendable` annotation.
 
-#### Overview
+## Overview
 
 When enabled, the compiler will emit a warning if a public type has none of the following:
 

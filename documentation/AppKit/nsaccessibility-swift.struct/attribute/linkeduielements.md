@@ -21,7 +21,7 @@ static let linkedUIElements: NSAccessibility.Attribute
 extern NSAccessibilityAttributeName const NSAccessibilityLinkedUIElementsAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the contents of a list item that are displayed in another pane or window.
 

@@ -20,7 +20,7 @@ The total playback time of the animation.
 var duration: TimeInterval { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets a value for this property depending on the underlying animation data and the specified [`speed`](./speed.md).
 

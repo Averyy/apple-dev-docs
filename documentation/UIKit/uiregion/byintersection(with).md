@@ -23,7 +23,7 @@ func byIntersection(with region: UIRegion) -> Self
 - (instancetype) regionByIntersectionWithRegion:(UIRegion *) region;
 ```
 
-#### Return Value
+## Return Value
 
 A new region that contains only the points that are in both the current region and the shape specified by the `region` parameter.
 

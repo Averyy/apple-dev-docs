@@ -19,7 +19,7 @@ object MassExtendRenewalDateResponse
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 The App Store server returns this response when you call the [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md) endpoint. Because the endpoint runs asynchronously, this response means the App Store received your request and is processing it. The request may take multiple hours or days to complete, depending on the number of subscribers.
 

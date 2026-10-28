@@ -19,7 +19,7 @@ func cleanUpAfterDragOperation()
 - (void) cleanUpAfterDragOperation;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses may override this method to clean up any additional data structures used for dragging. In your overridden method, be sure to invoke `super`’s implementation of this method.
 

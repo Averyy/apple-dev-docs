@@ -24,7 +24,7 @@ var birthRate: Float { get set }
 @property float birthRate;
 ```
 
-#### Discussion
+## Discussion
 
 The birth rate of each cell is multiplied by this number to give the actual number of particles created every second. Default value is `1.0`.
 

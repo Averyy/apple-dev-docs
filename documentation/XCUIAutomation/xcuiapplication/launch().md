@@ -26,7 +26,7 @@ func launch()
 - (void) launch;
 ```
 
-#### Discussion
+## Discussion
 
 This call is synchronous. When it returns, the application launches and is ready to handle user events. The system reports any failure in the launch sequence as a test failure and halts the test at this point.
 

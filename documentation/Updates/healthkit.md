@@ -5,36 +5,36 @@
 
 Learn about important changes to HealthKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [HealthKit](../HealthKit/HealthKit.md).
 
-#### June 2026
+## June 2026
 
-##### Workout zones
+### Workout zones
 
 - Access workout zone data for heart rate and cycling power. Read zone configurations and time-in-zone information from workouts using [`HKWorkoutZoneGroup`](../HealthKit/hkworkoutzonegroup.md).
 - Retrieve a person’s preferred zones from Health Settings with [`preferredWorkoutZoneConfiguration(for:)`](../HealthKit/hkhealthstore/preferredworkoutzoneconfiguration%28for%29.md).
 - Provide custom zones for specific workouts using [`HKWorkoutZoneConfiguration`](../HealthKit/hkworkoutzoneconfiguration.md).
 - Receive real-time zone updates during active workout sessions through [`HKLiveWorkoutBuilderDelegate`](../HealthKit/hkliveworkoutbuilderdelegate.md).
 
-##### Menopause API
+### Menopause API
 
 - Record and query menopausal state information using point-in-time samples. Track perimenopause, menopause, or confirmed absence of menopausal state with [`menopausalState`](../HealthKit/hkcategorytypeidentifier/menopausalstate.md) and [`HKCategoryValueMenopausalState`](../HealthKit/hkcategoryvaluemenopausalstate.md). See [Recording and querying menopausal state](../HealthKit/recording-and-querying-menopausal-state.md).
 - Track bleeding that occurs after menopause using [`bleedingAfterMenopause`](../HealthKit/hkcategorytypeidentifier/bleedingaftermenopause.md). This category type uses [`HKCategoryValueVaginalBleeding`](../HealthKit/hkcategoryvaluevaginalbleeding.md) to record bleeding intensity.
 
-#### June 2025
+## June 2025
 
 - Start workout sessions on iOS using [`HKLiveWorkoutBuilder`](../HealthKit/hkliveworkoutbuilder.md).
 - Query medications that a person has added to the Health app, using [`HKUserAnnotatedMedicationQueryDescriptor`](../HealthKit/hkuserannotatedmedicationquerydescriptor.md) and the times they’ve logged that medication using [`HKMedicationDoseEventType`](../HealthKit/hkmedicationdoseeventtype.md).
 
-#### September 2024
+## September 2024
 
 - Apple Watch Series 10 supports the Shallow Depth and Pressure capability. Use [`underwaterDepth`](../HealthKit/hkquantitytypeidentifier/underwaterdepth.md) and [`waterTemperature`](../HealthKit/hkquantitytypeidentifier/watertemperature.md) to read depth and temperature data from shallow dives.
 
-#### June 2024
+## June 2024
 
-##### General
+### General
 
 - Create HealthKit apps for VisionOS.
 - Associate perceived and estimated exertion values with workouts. Use [`workoutEffortScore`](../HealthKit/hkquantitytypeidentifier/workouteffortscore.md) and [`estimatedWorkoutEffortScore`](../HealthKit/hkquantitytypeidentifier/estimatedworkouteffortscore.md) to read and write exertion data. Use [`relateWorkoutEffortSample(_:with:activity:completion:)`](../HealthKit/hkhealthstore/relateworkouteffortsample%28_,with,activity,completion%29.md) to associate exertion data with a workout, and [`HKWorkoutEffortRelationshipQuery`](../HealthKit/hkworkouteffortrelationshipquery.md) to query for associated exertion data.
@@ -42,7 +42,7 @@ Browse notable changes in [HealthKit](../HealthKit/HealthKit.md).
 - Read and write mental well-being samples using the [`HKStateOfMind`](../HealthKit/hkstateofmind.md), [`HKPHQ9Assessment`](../HealthKit/hkphq9assessment.md), and [`HKGAD7Assessment`](../HealthKit/hkgad7assessment.md) data types.
 - Track menstrual flow and intermenstrual bleeding during pregnancy using the [`bleedingDuringPregnancy`](../HealthKit/hkcategorytypeidentifier/bleedingduringpregnancy.md) and [`bleedingAfterPregnancy`](../HealthKit/hkcategorytypeidentifier/bleedingafterpregnancy.md) data types.
 
-#### June 2023
+## June 2023
 
 - Now available in iPadOS. Health data automatically synchronizes between a person’s iPhone, iPad, and Apple Watch.
 - Create custom, interval-based workouts. You can use either distance or time for the intervals, and sync the intervals to a group, such as a workout class.

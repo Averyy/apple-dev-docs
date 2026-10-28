@@ -24,7 +24,7 @@ func homeAccessControl(for user: HMUser) -> HMHomeAccessControl
 - (HMHomeAccessControl *) homeAccessControlForUser:(HMUser *) user;
 ```
 
-#### Return Value
+## Return Value
 
 The access level associated with the user.
 

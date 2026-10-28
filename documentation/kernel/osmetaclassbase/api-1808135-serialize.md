@@ -12,7 +12,7 @@ virtual bool serialize(
  OSSerialize *serializer) const = 0;
 ```
 
-#### Overview
+## Overview
 
 See OSObject::serialize.
 

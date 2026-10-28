@@ -25,7 +25,7 @@ let kSecMatchValidOnDate: CFString
 extern CFStringRef const kSecMatchValidOnDate;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFDate`](../CoreFoundation/cfdate.md). If provided, returned keys, certificates or identities are limited to those that are valid for the given date. Pass a value of [`kCFNull`](../CoreFoundation/kcfnull.md) to indicate the current date.
 

@@ -23,7 +23,7 @@ func currentUpdateInfo() -> UIUpdateInfo?
 - (UIUpdateInfo *) currentUpdateInfo;
 ```
 
-#### Return Value
+## Return Value
 
 During a UI update, returns a [`UIUpdateInfo`](../uiupdateinfo.md) object that describes the current UI update state. Outside a UI update, returns `nil`.
 

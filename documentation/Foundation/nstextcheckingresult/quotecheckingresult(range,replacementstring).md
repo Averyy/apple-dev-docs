@@ -25,7 +25,7 @@ class func quoteCheckingResult(range: NSRange, replacementString: String) -> NST
 + (NSTextCheckingResult *) quoteCheckingResultWithRange:(NSRange) range replacementString:(NSString *) replacementString;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`quote`](./checkingtype/quote.md).
 

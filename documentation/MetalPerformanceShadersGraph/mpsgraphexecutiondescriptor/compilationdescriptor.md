@@ -25,7 +25,7 @@ var compilationDescriptor: MPSGraphCompilationDescriptor? { get set }
 @property (atomic, copy, readwrite, nullable) MPSGraphCompilationDescriptor * compilationDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is nil.
 

@@ -5,7 +5,7 @@
 
 Predefined date and time format styles.
 
-#### Overview
+## Overview
 
 The format for these date and time styles is not exact because they depend on the locale, user preference settings, and the operating system version. Do not use these constants if you want an exact format, for example if you are parsing an external data file which contains date information in a fixed format. There are several different “lengths” of the formats:
 

@@ -24,7 +24,7 @@ static let fitzpatrickSkinType: HKCharacteristicTypeIdentifier
 extern HKCharacteristicTypeIdentifier const HKCharacteristicTypeIdentifierFitzpatrickSkinType;
 ```
 
-#### Discussion
+## Discussion
 
 This type uses values from the [`HKFitzpatrickSkinType`](../hkfitzpatrickskintype.md) enum.
 

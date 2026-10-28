@@ -15,7 +15,7 @@ A property of IONetworkInterface objects.
 #define kIOInterfaceExtraFlags
 ```
 
-#### Discussion
+## Discussion
 
 The kIOInterfaceExtraFlags property has an OSNumber value that specifies the current value of the interface eflags. The eflag constants are defined in bsd/net/if.h.
 

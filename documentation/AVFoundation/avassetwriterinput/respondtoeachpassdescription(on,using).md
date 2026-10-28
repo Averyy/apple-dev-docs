@@ -24,7 +24,7 @@ func respondToEachPassDescription(on queue: dispatch_queue_t, using block: @esca
 - (void) respondToEachPassDescriptionOnQueue:(dispatch_queue_t) queue usingBlock:(dispatch_block_t) block;
 ```
 
-#### Discussion
+## Discussion
 
 A typical implemementation of the callback block performs the following steps:
 

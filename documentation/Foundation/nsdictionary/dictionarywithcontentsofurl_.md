@@ -21,11 +21,11 @@ Creates a dictionary using the keys and values found in a resource specified by 
 + (NSDictionary<id,id> *) dictionaryWithContentsOfURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A new dictionary that contains the dictionary at `aURL`, or `nil` if there is an error or if the contents of the resource are an invalid representation of a dictionary.
 
-#### Discussion
+## Discussion
 
 The dictionary representation in the file identified by `aURL` must contain only property list objects (`NSString`, `NSData`, `NSDate`, `NSNumber`, `NSArray`, or `NSDictionary` objects). For more details, see [Property List Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html#//apple_ref/doc/uid/10000048i). The objects contained by this dictionary are immutable, even if the dictionary is mutable.
 

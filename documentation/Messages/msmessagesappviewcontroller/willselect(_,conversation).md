@@ -25,7 +25,7 @@ func willSelect(_ message: MSMessage, conversation: MSConversation)
 
 - [Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](../adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md)
 
-#### Discussion
+## Discussion
 
 This method is called when the user selects one of your app’s message objects in the transcript while your extension is active. You can access the previously selected message (if any) from the `conversation` object’s  [`selectedMessage`](../msconversation/selectedmessage.md) property.
 

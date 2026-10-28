@@ -23,7 +23,7 @@ var thumbnailIfAvailable: CGImage? { get }
 @property (readonly, nullable) CGImageRef thumbnailIfAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 If a thumbnail is not readily available, accessing this property requests it from the device.
 

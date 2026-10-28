@@ -19,7 +19,7 @@ func ABMultiValueCount(_ multiValue: ABMultiValueRef!) -> CFIndex
 extern CFIndex ABMultiValueCount(ABMultiValueRef multiValue);
 ```
 
-#### Return Value
+## Return Value
 
 The number of entriesin `multiValue`.
 

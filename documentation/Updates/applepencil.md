@@ -5,23 +5,23 @@
 
 Learn about important changes to Apple Pencil.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Apple Pencil](../ApplePencil/ApplePencil.md).
 
-#### June 2024
+## June 2024
 
-##### UIKit
+### UIKit
 
 - Implement custom low-latency drawing if your app doesn’t use PencilKit. Participate in UI updates and influence UI update behavior using [`UIUpdateLink`](../UIKit/uiupdatelink.md).
 
-##### PencilKit
+### PencilKit
 
 - Offer a wider variety of marking tools by creating a configurable tool picker. Create a [`PKToolPicker`](../PencilKit/pktoolpicker.md), add standard system tools or define your own custom tools with [`PKToolPickerCustomItem`](../PencilKit/pktoolpickercustomitem.md), and specify which order the tools appear in. Include an optional [`accessoryItem`](../PencilKit/pktoolpicker/accessoryitem.md) in the tool picker to provide quick access to additional features directly from the picker.
 
-#### May 2024
+## May 2024
 
-##### SwiftUI and UIKit
+### SwiftUI and UIKit
 
 - Perform actions in your app in response to squeeze interactions on Apple Pencil Pro. People can choose their preferred squeeze action in Settings > Apple Pencil > Actions > Squeeze, such as switching drawing tools, showing a contextual palette, or performing an App Shortcut. You can also implement a custom action for squeeze and give people the choice to use your app’s custom behavior instead. In SwiftUI, use [`onPencilSqueeze(perform:)`](../SwiftUI/view/onpencilsqueeze%28perform%29.md). In UIKit, use [`pencilInteraction(_:didReceiveSqueeze:)`](../UIKit/uipencilinteractiondelegate/pencilinteraction%28_,didreceivesqueeze%29.md).
 - Perform actions in your app in response to double-tap interactions on Apple Pencil. People can choose their preferred double-tap action in Settings > Apple Pencil > Actions > Double Tap. In SwiftUI, use [`onPencilDoubleTap(perform:)`](../SwiftUI/view/onpencildoubletap%28perform%29.md). In UIKit, update your implementation to use [`pencilInteraction(_:didReceiveTap:)`](../UIKit/uipencilinteractiondelegate/pencilinteraction%28_,didreceivetap%29.md), which replaces the deprecated [`pencilInteractionDidTap(_:)`](../UIKit/uipencilinteractiondelegate/pencilinteractiondidtap%28_%29.md).
@@ -31,7 +31,7 @@ Browse notable changes in [Apple Pencil](../ApplePencil/ApplePencil.md).
 
 - Check the value of the hover tool preview preference from the Apple Pencil section of the Settings app using [`prefersHoverToolPreview`](../UIKit/uipencilinteraction/prefershovertoolpreview.md).
 
-##### PencilKit
+### PencilKit
 
 - Take advantage of barrel-roll tracking for Apple Pencil Pro when a person makes marker and fountain pen strokes. Support [`PKContentVersion.version3`](../PencilKit/pkcontentversion/version3.md), which includes the version of the inks that incorporate barrel-roll data.
 

@@ -21,7 +21,7 @@ A point that’s centered horizontally on the top edge of a view.
 static let top: UnitPoint
 ```
 
-#### Discussion
+## Discussion
 
 This point occupies the position where the horizontal and vertical alignment guides intersect for [`top`](../alignment/top.md) alignment.
 

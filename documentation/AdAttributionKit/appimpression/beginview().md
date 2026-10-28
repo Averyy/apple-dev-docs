@@ -17,7 +17,7 @@ Begins recording a view-through impression when ad content corresponding to the 
 func beginView() async throws
 ```
 
-#### Discussion
+## Discussion
 
 Begin the view impression process by calling [`beginView()`](./beginview%28%29.md), as  the following example shows:
 

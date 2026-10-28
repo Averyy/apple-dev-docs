@@ -17,15 +17,15 @@ A textual description of the compute graph that produces `outputs`.
 func graphDescription(_ outputs: [MLXArray], namer: NodeNamer? = nil) -> String
 ```
 
-#### Return Value
+## Return Value
 
 The description of the graph
 
-#### Discussion
+## Discussion
 
 The arrays are not evaluated – this describes the graph as it currently stands.
 
-##### See Also
+### See Also
 
 - [`exportToDot(_:namer:)`](./exporttodot%28_,namer%29.md)
 - [`NodeNamer`](./nodenamer.md)

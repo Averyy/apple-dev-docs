@@ -21,7 +21,7 @@ class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeSimpleText
 @interface CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeSimpleText : CLKComplicationTemplateGraphicExtraLargeCircular
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicExtraLarge`](./clkcomplicationfamily/graphicextralarge.md) family. [Figure 1](./clkcomplicationtemplategraphicextralargecircularopengaugesimpletext.md#3667232) shows the layout of the complication and where it appears on the clock face.
 

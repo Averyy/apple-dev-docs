@@ -15,7 +15,7 @@ An item in a subscription to reactivate.
 object SubscriptionReactivateItem
 ```
 
-#### Discussion
+## Discussion
 
 This object is part of the [`SubscriptionReactivateInAppRequest`](./subscriptionreactivateinapprequest.md) that your app uses to reactivate a subscription that would otherwise expire.
 

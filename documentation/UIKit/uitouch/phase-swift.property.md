@@ -23,7 +23,7 @@ var phase: UITouch.Phase { get }
 @property (nonatomic, readonly) UITouchPhase phase;
 ```
 
-#### Discussion
+## Discussion
 
 The property value is a constant that indicates whether the touch began, moved, ended, or was canceled. For descriptions of the possible values of this property, see [`UITouch.Phase`](./phase-swift.enum.md).
 

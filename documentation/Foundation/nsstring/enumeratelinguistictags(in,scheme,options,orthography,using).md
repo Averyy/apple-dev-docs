@@ -27,7 +27,7 @@ func enumerateLinguisticTags(in range: NSRange, scheme: NSLinguisticTagScheme, o
 - (void) enumerateLinguisticTagsInRange:(NSRange) range scheme:(NSLinguisticTagScheme) scheme options:(NSLinguisticTaggerOptions) options orthography:(NSOrthography *) orthography usingBlock:(void (^)(NSLinguisticTag tag, NSRange tokenRange, NSRange sentenceRange, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method.  It is the equivalent of creating an instance of `NSLinguisticTagger`, specifying the receiver as the string to be analyzed, and the orthography (or `nil`) and then invoking the [`NSLinguisticTagger`](../nslinguistictagger.md) method or [`enumerateTags(in:scheme:options:using:)`](../nslinguistictagger/enumeratetags%28in,scheme,options,using%29.md).
 

@@ -23,7 +23,7 @@ class func drop() -> NEFilterNewFlowVerdict
 + (NEFilterNewFlowVerdict *) dropVerdict;
 ```
 
-#### Return Value
+## Return Value
 
 A `NEFilterNewFlowVerdict` object.
 

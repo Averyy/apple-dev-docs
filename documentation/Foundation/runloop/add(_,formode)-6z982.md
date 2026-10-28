@@ -25,7 +25,7 @@ func add(_ aPort: Port, forMode mode: RunLoop.Mode)
 - (void) addPort:(NSPort *) aPort forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 This method schedules the port with the receiver. You can add a port to multiple input modes. When the receiver is running in the specified mode, it dispatches messages destined for that port to the port’s designated handler routine.
 

@@ -24,7 +24,7 @@ func cumulativeSum(_ tensor: MPSGraphTensor, axisTensor: MPSGraphTensor, name: S
 - (MPSGraphTensor *) cumulativeSumWithTensor:(MPSGraphTensor *) tensor axisTensor:(MPSGraphTensor *) axisTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 

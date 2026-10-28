@@ -25,11 +25,11 @@ func peakPower(forChannel channelNumber: Int) -> Float
 - (float) peakPowerForChannel:(NSUInteger) channelNumber;
 ```
 
-#### Return Value
+## Return Value
 
 The audio channel’s current peak power.
 
-#### Discussion
+## Discussion
 
 Before asking the player for its peak power value, you must call [`updateMeters()`](../avaudioplayer/updatemeters%28%29.md) to generate the latest data. The returned value ranges from `–160` dBFS, indicating minimum power, to 0 dBFS, indicating maximum power.
 

@@ -29,11 +29,11 @@ object AppManaged
 - [Installing packages](./installing-packages.md)
 - [Migrating managed devices](./migrating-managed-devices.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.app.managed` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -45,7 +45,7 @@ Specify `com.apple.configuration.app.managed` as the declaration type.
 | Allowed in user scope | macOS |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration examples
+### Configuration examples
 
 **App Store**:
 

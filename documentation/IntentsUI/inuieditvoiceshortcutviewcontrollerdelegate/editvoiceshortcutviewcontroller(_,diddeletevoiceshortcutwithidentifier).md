@@ -24,7 +24,7 @@ func editVoiceShortcutViewController(_ controller: INUIEditVoiceShortcutViewCont
 - (void) editVoiceShortcutViewController:(INUIEditVoiceShortcutViewController *) controller didDeleteVoiceShortcutWithIdentifier:(NSUUID *) deletedVoiceShortcutIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 After the user deletes a shortcut, the shortcut is no longer available to Siri. Your app should reflect this change by displaying an [`INUIAddVoiceShortcutButton`](../inuiaddvoiceshortcutbutton.md) in the view for the action. The button lets the user know the action doesn’t have a shortcut, and provides the option to add one.
 

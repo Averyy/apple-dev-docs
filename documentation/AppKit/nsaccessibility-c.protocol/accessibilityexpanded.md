@@ -15,7 +15,7 @@ A Boolean value that determines whether the accessibility element is in an expan
 @property (getter=isAccessibilityExpanded) BOOL accessibilityExpanded;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on elements that can expand to reveal additional information, such as outline rows and combo boxes.
 

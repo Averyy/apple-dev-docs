@@ -15,11 +15,11 @@ Converts a string to a `Uuid`.
 static Uuid toUuid();
 ```
 
-#### Return Value
+## Return Value
 
 If the value passes validation, this function returns a `Uuid`; otherwise it throws `ValueNotUuidError`. A string passes validation if it is a UUID string.
 
-#### Discussion
+## Discussion
 
 In TypeScript, `Uuid` is a branded string type. In JavaScript, it’s a string.
 

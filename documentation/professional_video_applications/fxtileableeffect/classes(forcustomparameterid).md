@@ -19,11 +19,11 @@ optional func classes(forCustomParameterID parameterID: UInt32) -> Set<AnyHashab
 - (NSSet<Class> *) classesForCustomParameterID:(UInt32) parameterID;
 ```
 
-#### Return Value
+## Return Value
 
 An NSSet of classes of the specified parameter ID.
 
-#### Discussion
+## Discussion
 
 When you make custom parameters, the host needs to know the classes of the parameters to store and unarchive them from disk. This method returns the Objective-C set of classes that the parameters are members of.
 

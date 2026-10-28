@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Take advantage of defaulted parameters when it simplifies common uses.
 
-#### Overview
+## Overview
 
 Any parameter with a single commonly-used value is a candidate for a default. Default arguments improve readability by hiding irrelevant information.
 

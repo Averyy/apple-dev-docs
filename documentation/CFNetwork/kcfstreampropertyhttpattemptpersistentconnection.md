@@ -24,7 +24,7 @@ let kCFStreamPropertyHTTPAttemptPersistentConnection: CFString
 extern CFStringRef const kCFStreamPropertyHTTPAttemptPersistentConnection;
 ```
 
-#### Discussion
+## Discussion
 
 HTTP Attempt Persistent Connection property. The value of this property is a CFBoolean. If this property is set to `kCFBooleanTrue`, the HTTP stream looks for an appropriate existing persistent connection to use. If it cannot find one, the HTTP stream will try to create one.
 

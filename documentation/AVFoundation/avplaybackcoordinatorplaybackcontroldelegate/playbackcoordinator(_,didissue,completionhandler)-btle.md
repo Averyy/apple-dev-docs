@@ -29,7 +29,7 @@ func playbackCoordinator(_ coordinator: AVDelegatingPlaybackCoordinator, didIssu
 - (void) playbackCoordinator:(AVDelegatingPlaybackCoordinator *) coordinator didIssueBufferingCommand:(AVDelegatingPlaybackCoordinatorBufferingCommand *) bufferingCommand completionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The coordinator issues this command when playback is currently in a paused state and the coordinator is expecting playback to start soon. It provides an appropriate opportunity to update your player UI to indicate that playback is in a waiting state.
 

@@ -15,7 +15,7 @@ Class that represents a SCSI Host Bus Adapter.
 class IOSCSIParallelInterfaceController : IOService
 ```
 
-#### Overview
+## Overview
 
 Class that represents a SCSI Host Bus Adapter.
 

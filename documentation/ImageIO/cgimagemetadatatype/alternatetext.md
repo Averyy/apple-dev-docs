@@ -25,7 +25,7 @@ case alternateText
 kCGImageMetadataTypeAlternateText
 ```
 
-#### Discussion
+## Discussion
 
 During serialization, this type becomes an alternate array of strings with `xml:lang` qualifiers in the XMP format.
 

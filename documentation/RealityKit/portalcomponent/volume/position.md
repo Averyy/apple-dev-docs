@@ -20,7 +20,7 @@ The center of the volume in portal-local space, in meters.
 var position: SIMD3<Float>
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `.zero`, which places the box center at the portal entity’s origin.
 

@@ -20,7 +20,7 @@ case gravityAndHeading
 ARWorldAlignmentGravityAndHeading
 ```
 
-#### Discussion
+## Discussion
 
 The y-axis matches the direction of gravity as detected by the device’s motion sensing hardware; that is, the vector `(0,-1,0)` points downward.
 

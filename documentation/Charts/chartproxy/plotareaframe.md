@@ -21,7 +21,7 @@ An anchor to the frame of the chart’s plot.
 var plotAreaFrame: Anchor<CGRect> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The plot is the area between the x and y axes, not including the axes themselves. If the chart is scrollable, the plot frame includes both visible and invisible portions of the plot.
 

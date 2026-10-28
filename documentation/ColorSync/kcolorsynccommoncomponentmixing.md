@@ -25,7 +25,7 @@ var kColorSyncCommonComponentMixing: Unmanaged<CFString>
 extern CFStringRef kColorSyncCommonComponentMixing;
 ```
 
-#### Discussion
+## Discussion
 
 When true, all alternate curves share the component mixing configuration from array index 0, reducing bitstream size.
 

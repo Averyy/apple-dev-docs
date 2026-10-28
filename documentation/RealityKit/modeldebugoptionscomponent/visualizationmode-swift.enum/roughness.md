@@ -20,7 +20,7 @@ A mode that displays the shininess of a material as the surface color.
 case roughness
 ```
 
-#### Discussion
+## Discussion
 
 Add a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `roughness` to an entity to tell RealityKit to draw that entity’s roughness value as its surface color. A high roughness value represents a surface with a matte finish, while a low roughness value represents a shiny or polished surface. When using this mode, RealityKit draws the roughness value as a grayscale value from black (`0.0`) to white (`1.0`), meaning the shinier a part of the entity is, the darker RealityKit draws it.
 

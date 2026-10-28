@@ -19,7 +19,7 @@ An error indicating that an invalid client process reported the incoming call.
 static var invalidClientProcess: CXErrorCodeNotificationServiceExtensionError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Only call the [`reportNewIncomingVoIPPushPayload(_:completion:)`](../cxprovider/reportnewincomingvoippushpayload%28_,completion%29.md) method from a [`UNNotificationServiceExtension`](../../UserNotifications/unnotificationserviceextension.md) object that is responding to an incoming notification request.
 

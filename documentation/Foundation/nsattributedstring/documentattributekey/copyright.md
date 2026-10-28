@@ -15,7 +15,7 @@ The document’s copyright information.
 static let copyright: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../nsstring.md) object containing document copyright info.
 

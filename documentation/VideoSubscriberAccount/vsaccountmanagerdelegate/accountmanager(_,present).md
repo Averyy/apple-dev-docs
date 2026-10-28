@@ -24,7 +24,7 @@ func accountManager(_ accountManager: VSAccountManager, present viewController: 
 - (void) accountManager:(VSAccountManager *) accountManager presentViewController:(UIViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when the `VideoSubscriberAccount` framework requires your app to present an authentication view controller. You must use [`present(_:animated:completion:)`](../../UIKit/uiviewcontroller/present%28_,animated,completion%29.md) to present the view controller before returning from this method.
 

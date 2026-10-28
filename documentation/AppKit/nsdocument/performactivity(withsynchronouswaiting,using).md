@@ -19,7 +19,7 @@ func performActivity(withSynchronousWaiting waitSynchronously: Bool, using block
 - (void) performActivityWithSynchronousWaiting:(BOOL) waitSynchronously usingBlock:(void (^)(void (^activityCompletionHandler)())) block;
 ```
 
-#### Discussion
+## Discussion
 
 The block is passed another block, the activity completion handler, which must be invoked when the activity is complete.
 

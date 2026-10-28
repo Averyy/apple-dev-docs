@@ -20,7 +20,7 @@ typealias CGButtonCount = UInt32
 typedef uint32_t CGButtonCount;
 ```
 
-#### Discussion
+## Discussion
 
 In mouse events, the button count parameter ranges from 0 to 31. See the function [`CGPostMouseEvent`](./cgpostmouseevent.md).
 

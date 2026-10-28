@@ -15,7 +15,7 @@ This initializer allows a user to provide a `nil` default value for an optional 
 
 ```swift
 @preconcurrency
-init<T>(wrappedValue: _OptionalNilComparisonType, help: ArgumentHelp? = nil, completion: CompletionKind? = nil, transform: @escaping @Sendable (String) throws -> T) where Value == T?
+init<T>(wrappedValue: _OptionalNilComparisonType, help: ArgumentHelp? = nil, completion: CompletionKind? = nil, transform: @Sendable @escaping (String) throws -> T) where Value == T?
 ```
 
 ## Parameters

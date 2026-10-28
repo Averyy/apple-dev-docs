@@ -10,7 +10,7 @@ Build a simple `netcat` tool that establishes network connections and transfers 
 - macOS 10.14+
 - Xcode 12.0+
 
-#### Overview
+## Overview
 
 The `netcat` tool (abbreviated `nc` on macOS) is a UNIX tool that lets you:
 
@@ -34,7 +34,7 @@ $ nwcat -l 12345
 
 By default, `nwcat` uses TCP. The `-u` argument switches to UDP, and the `-t` argument adds TLS to TCP connections and DTLS to UDP connections. The `-b` argument enables use of Bonjour service names rather than host names.
 
-##### Create an Outbound Connection
+### Create an Outbound Connection
 
 In the Network framework, a bidirectional flow of data is represented as a connection object ([`nw_connection_t`](./nw_connection_t.md)).  If you’re using TCP, there’s a direct mapping between the connection object and the underlying TCP connection. If you’re using UDP, a connection object represents a bidirectional flow of datagrams between a local port and a port on a specific remote peer.
 
@@ -130,7 +130,7 @@ if (state == nw_connection_state_waiting) {
 
 Make sure you handle the [`nw_connection_state_cancelled`](./nw_connection_state_cancelled.md) state.  Once the connection is no longer needed, you have to release the reference you took when you started the connection.
 
-##### Listen for an Inbound Connection
+### Listen for an Inbound Connection
 
 A listener object, of type [`nw_listener_t`](./nw_listener_t.md), listens for inbound connections and creates a new connection object for each one.  To create a listener object you must supply a parameters object ([`nw_parameters_t`](./nw_parameters_t.md)) to indicate what protocols to use and information about the local endpoint on which you want to listen.
 
@@ -186,7 +186,7 @@ if (g_inbound_connection != NULL) {
 }
 ```
 
-##### Transfer Data
+### Transfer Data
 
 Once you have created and started a connection, either outbound or inbound, you’ll need code to transfer data on that connection.  Each connection has two directions:
 

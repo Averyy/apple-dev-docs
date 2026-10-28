@@ -21,7 +21,7 @@ ID of device containing file
 var deviceID: DeviceID { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C property is `st_dev`.
 

@@ -23,7 +23,7 @@ init(_ wrappedValue: Value)
 
 Available when `Value` conforms to `Observable`.
 
-#### Discussion
+## Discussion
 
 This initializer is equivalent to [`init(wrappedValue:)`](./init%28wrappedvalue%29.md), but is more succinct when when creating bindable objects nested within other expressions. For example, you can use the initializer to create a bindable object inline with code that declares a view that takes a binding as a parameter:
 

@@ -19,7 +19,7 @@ func setSelectedRange(_ charRange: NSRange)
 - (void) setSelectedRange:(NSRange) charRange;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method resets the [`selectionGranularity`](./selectiongranularity.md) property to [`NSSelectionGranularity.selectByCharacter`](../nsselectiongranularity/selectbycharacter.md) and the [`selectionAffinity`](./selectionaffinity.md) property to [`NSSelectionAffinity.upstream`](../nsselectionaffinity/upstream.md).
 

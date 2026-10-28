@@ -16,7 +16,7 @@ get region(): CoordinateRegion | null;
 set region(value: CoordinateRegionData | null);
 ```
 
-#### Discussion
+## Discussion
 
 The system determines the region from the provided bounding box or derives the region from a box enclosing the circle specified by [`center`](../pointsofinterestsearchoptions/center.md) and [`radius`](../pointsofinterestsearchoptions/radius.md).
 

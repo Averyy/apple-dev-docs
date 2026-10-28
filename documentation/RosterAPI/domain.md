@@ -15,7 +15,7 @@ A DNS domain name associated with an Apple School Manager organization.
 object Domain
 ```
 
-#### Discussion
+## Discussion
 
 An organization can generate Managed Apple Accounts in Apple School Manager for the verified domains named in its `Domains` objects. For more information about verifying domains, see [Verify domains in Apple Business Manager and Apple School Manager](https://support.apple.com/en-us/HT212275).
 

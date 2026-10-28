@@ -24,7 +24,7 @@ func analysisStateForEffect() -> FxAnalysisState
 
 - [Analyzing media](../../Professional-Video-Applications/analyzing-media.md)
 
-#### Return Value
+## Return Value
 
 An analysis state ([`FxAnalysisState`](../fxanalysisstate.md)) of not analyzing, requested, started analyzing, completed, or interrupted.
 

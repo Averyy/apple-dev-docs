@@ -24,7 +24,7 @@ let HMCharacteristicTypeChargingState: String
 extern NSString * const HMCharacteristicTypeChargingState;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueChargingState`](./hmcharacteristicvaluechargingstate.md) enumeration.
 

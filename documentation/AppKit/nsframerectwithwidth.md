@@ -15,7 +15,7 @@ Draws a bordered rectangle.
 extern void NSFrameRectWithWidth(NSRect rect, CGFloat frameWidth);
 ```
 
-#### Discussion
+## Discussion
 
 Draws a frame around the inside of `aRect` in the current color and using the `NSCompositeCopy` compositing operation. The width is equal to `frameWidth` in the current coordinate system. Since the frame is drawn inside the rectangle, it will be visible even if drawing is clipped to the rectangle.
 

@@ -21,7 +21,7 @@ Populates a single-precision vector that contains monotonically incrementing or 
 static func formRamp<U, V>(withInitialValue initialValue: inout Float, multiplyingBy vector: U, increment: Float, result: inout V) where U : AccelerateBuffer, V : AccelerateMutableBuffer, U.Element == Float, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to generate and return a vector populated with ramped values with each element multiplied by the corresponding element in a second vector.
 

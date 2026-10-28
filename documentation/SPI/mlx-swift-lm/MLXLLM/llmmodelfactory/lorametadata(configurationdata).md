@@ -21,7 +21,7 @@ func loraMetadata(configurationData: Data) async throws -> LoRAModelMetadata?
 
 - [Using a Model](../using-model.md)
 
-#### Discussion
+## Discussion
 
 The registered model architecture is instantiated so custom `LoRAModel.loraDefaultKeys` implementations remain authoritative. No checkpoint files are read.
 

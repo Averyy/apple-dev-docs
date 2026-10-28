@@ -25,7 +25,7 @@ var layer: CAMetalLayer { get }
 @property (readonly) CAMetalLayer * layer;
 ```
 
-#### Discussion
+## Discussion
 
 When you present the drawable object, it becomes the owning layer’s content.
 

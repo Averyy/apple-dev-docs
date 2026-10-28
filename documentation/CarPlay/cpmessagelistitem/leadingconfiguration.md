@@ -21,7 +21,7 @@ var leadingConfiguration: CPMessageListItemLeadingConfiguration { get set }
 @property (nonatomic, strong) CPMessageListItemLeadingConfiguration * leadingConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 An instance of [`CPMessageListItemLeadingConfiguration`](../cpmessagelistitemleadingconfiguration.md) that describes the visual elements of the list item’s leading region. The region can show a [`CPMessageLeadingItem`](../cpmessageleadingitem.md), an image, and an unread indicator.
 

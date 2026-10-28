@@ -15,11 +15,11 @@ Sends a message to the specified message queue.
 OSStatus MPNotifyQueue(MPQueueID queue, void *param1, void *param2, void *param3);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 This function sends a message to the specified queue, which consist of the three parameters, `param1`, `param2`, and `param3`. The system does not interpret the three values which comprise the text of the message. If tasks are waiting on the specified queue, the first waiting task is unblocked and the task’s  [`MPWaitOnQueue`](./api-1585762-mpwaitonqueue.md)  function completes.
 

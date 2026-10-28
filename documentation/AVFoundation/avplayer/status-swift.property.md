@@ -26,7 +26,7 @@ var status: AVPlayer.Status { get }
 @property (readonly) AVPlayerStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`AVPlayer.Status.failed`](./status-swift.enum/failed.md), check the value of the player’s [`error`](./error.md) property to determine the nature of the failure. If a player reaches a failed state, you can’t use it for playback, and instead need to create a new instance.
 

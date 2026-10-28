@@ -21,7 +21,7 @@ Creates a mutable input parameters object.
 + (instancetype) audioMixInputParameters;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable input parameters object with no volume ramps and [`trackID`](./trackid.md) initialized to [`kCMPersistentTrackID_Invalid`](../../CoreMedia/kcmpersistenttrackid_invalid.md).
 

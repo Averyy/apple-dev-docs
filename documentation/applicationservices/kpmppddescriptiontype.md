@@ -17,7 +17,7 @@ var kPMPPDDescriptionType: String { get }
 #define kPMPPDDescriptionType
 ```
 
-#### Discussion
+## Discussion
 
 Specifies a PostScript printer description (PPD).
 

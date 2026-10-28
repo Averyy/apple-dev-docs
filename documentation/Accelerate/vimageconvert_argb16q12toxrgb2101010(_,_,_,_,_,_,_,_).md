@@ -25,11 +25,11 @@ func vImageConvert_ARGB16Q12ToXRGB2101010(_ src: UnsafePointer<vImage_Buffer>, _
 vImage_Error vImageConvert_ARGB16Q12ToXRGB2101010(const vImage_Buffer *src, const vImage_Buffer *dest, int32_t RGB101010RangeMin, int32_t RGB101010RangeMax, int32_t RGB101010Min, int32_t RGB101010Max, const uint8_t permuteMap[4], vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The `RGB101010RangeMin` and `RGB101010RangeMax` parameters allow you to specify that the function represents source pixel values that are outside of the range `0.0 ... 1.0`. For full-range pixel values, specify `RGB101010RangeMin` and `RGB101010RangeMax` as the following:
 

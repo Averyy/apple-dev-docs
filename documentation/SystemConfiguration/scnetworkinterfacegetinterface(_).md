@@ -19,7 +19,7 @@ func SCNetworkInterfaceGetInterface(_ interface: SCNetworkInterface) -> SCNetwor
 SCNetworkInterfaceRefSCNetworkInterfaceGetInterface(SCNetworkInterfaceRef interface);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying network interface, or `NULL` if the specified interface is a leaf interface.
 

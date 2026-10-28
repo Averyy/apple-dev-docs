@@ -22,7 +22,7 @@ static let originalImage: UIImagePickerController.InfoKey
 extern UIImagePickerControllerInfoKey const UIImagePickerControllerOriginalImage;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a [`UIImage`](../../uiimage.md) object.
 

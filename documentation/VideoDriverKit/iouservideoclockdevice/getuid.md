@@ -15,11 +15,11 @@ Gets the unique identifier of the clock device.
 OSSharedPtr<OSString> GetUID();
 ```
 
-#### Return Value
+## Return Value
 
 The unique identifier.
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

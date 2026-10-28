@@ -23,7 +23,7 @@ func removeAllActivityItems()
 - (void) removeAllActivityItems;
 ```
 
-#### Discussion
+## Discussion
 
 Call the [`save(completion:)`](../clsdatastore/save%28completion%29.md) method on the data store after removing activity items, just as you would when adding items, to propagate the changes to the network:
 

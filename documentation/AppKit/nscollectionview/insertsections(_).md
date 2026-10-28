@@ -19,7 +19,7 @@ func insertSections(_ sections: IndexSet)
 - (void) insertSections:(NSIndexSet *) sections;
 ```
 
-#### Discussion
+## Discussion
 
 This method tells the collection view to insert the specified sections and update itself. Always update your data source object before calling this method. Calling this method kicks off an update (and possible animations) to add the new sections. Specifically, the collection view asks the layout object for any updated layout attributes related to the new sections or any existing sections. If the layout attributes of any visible items changed, those changes are animated into place.
 

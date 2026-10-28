@@ -25,7 +25,7 @@ func cblas_dsyr2k(_ ORDER: CBLAS_ORDER, _ UPLO: CBLAS_UPLO, _ TRANS: CBLAS_TRANS
 void cblas_dsyr2k(const enum CBLAS_ORDER ORDER, const enum CBLAS_UPLO UPLO, const enum CBLAS_TRANSPOSE TRANS, const __LAPACK_int N, const __LAPACK_int K, const double ALPHA, const double *A, const __LAPACK_int LDA, const double *B, const __LAPACK_int LDB, const double BETA, double *C, const __LAPACK_int LDC);
 ```
 
-#### Discussion
+## Discussion
 
 Computes `alpha*A*B`
 

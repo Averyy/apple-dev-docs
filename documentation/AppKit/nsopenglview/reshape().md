@@ -21,7 +21,7 @@ func reshape()
 - (void) reshape;
 ```
 
-#### Discussion
+## Discussion
 
 Cocoa typically calls this method during scrolling and resize operations but may call it in other situations when the view’s rectangles change. The default implementation does nothing. You can override this method if you need to adjust the viewport and display frustum.
 

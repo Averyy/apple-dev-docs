@@ -17,7 +17,7 @@ Posts an [`textDidBeginEditingNotification`](../nscontrol/textdidbegineditingnot
 - (void) textDidBeginEditing:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 For more details, see the [`NSControl`](../nscontrol.md) class specification.
 

@@ -21,7 +21,7 @@ Returns single-precision amplitude values converted to decibels.
 static func amplitudeToDecibels<U>(_ amplitude: U, zeroReference: Float) -> [Float] where U : AccelerateBuffer, U.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 The function uses the following calculation to perform the conversion:
 

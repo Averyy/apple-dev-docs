@@ -21,7 +21,7 @@ Generates an assertion if the current block is not running on the specified disp
 extern void dispatch_assert_queue(dispatch_queue_t queue);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function inside a block to verify that the block is running on the expected dispatch queue. For example, you might pass the main queue to the `queue` parameter to verify that the block is running on the app’s main thread. If you submitted the current block synchronously, the function recursively checks the context of the submitting block to ensure that it is also running on the expected dispatch queue. If the block is not running on the expected queue, this function asserts, logs an explanation to the system log, and terminates the app.
 

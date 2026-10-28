@@ -19,7 +19,7 @@ class PHProjectRegionOfInterest
 @interface PHProjectRegionOfInterest : NSObject
 ```
 
-#### Overview
+## Overview
 
 A region of interest defines a rectangular portion of a photo corresponding to a face. Use a region of interest to determine where to focus, zoom, or crop your image in your project extension; for example, you can customize your slideshow’s transitions based on each photo’s highest-quality region of interest, as shown in [Creating a Slideshow Project Extension for Photos](../PhotoKit/creating-a-slideshow-project-extension-for-photos.md).
 

@@ -19,7 +19,7 @@ var cellClass: AnyClass { get set }
 @property (assign) Class cellClass;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property should be the id of a subclass of [`NSCell`](../nscell.md), which can be obtained by sending the `class` message to either the [`NSCell`](../nscell.md) subclass object or to an instance of that subclass. The default cell class is that set with the class method `setCellClass(_:)`, or [`NSActionCell`](../nsactioncell.md) if no other default cell class has been specified.
 

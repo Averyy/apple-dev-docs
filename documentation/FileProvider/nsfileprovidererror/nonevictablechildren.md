@@ -18,7 +18,7 @@ An error indicating that the File Provider extension can’t evict a directory b
 static var nonEvictableChildren: NSFileProviderError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSFileProviderManager`](../nsfileprovidermanager.md) throws this error when you attempt to evict a directory that contains items that it can’t evict. The system sets the error’s [`underlyingErrors`](../../Foundation/nserror/underlyingerrors.md) property to an array of errors that indicate the nonevictable content.
 

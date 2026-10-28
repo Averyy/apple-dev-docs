@@ -21,7 +21,7 @@ class SRPhoneUsageReport
 @interface SRPhoneUsageReport : NSObject
 ```
 
-#### Overview
+## Overview
 
 This object describes the frequency that a device makes or receives phone calls, and the relative amount of time the user is on a call.
 

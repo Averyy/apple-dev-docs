@@ -25,7 +25,7 @@ protocol Hashable : Equatable, ~Copyable, ~Escapable
 
 - [Adopting Common Protocols](./adopting-common-protocols.md)
 
-#### Overview
+## Overview
 
 You can use any type that conforms to the `Hashable` protocol in a set or as a dictionary key. Many types in the standard library conform to `Hashable`: Strings, integers, floating-point and Boolean values, and even sets are hashable by default. Some other types, such as optionals, arrays and ranges automatically become hashable when their type arguments implement the same.
 
@@ -33,7 +33,7 @@ Your own custom types can be hashable as well. When you define an enumeration wi
 
 Hashing a value means feeding its essential components into a hash function, represented by the `Hasher` type. Essential components are those that contribute to the type’s implementation of `Equatable`. Two instances that are equal must feed the same values to `Hasher` in `hash(into:)`, in the same order.
 
-### Conforming to the Hashable Protocol
+## Conforming to the Hashable Protocol
 
 To use your own custom type in a set or as the key type of a dictionary, add `Hashable` conformance to your type. The `Hashable` protocol inherits from the `Equatable` protocol, so you must also satisfy that protocol’s requirements.
 

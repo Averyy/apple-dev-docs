@@ -5,33 +5,33 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 15.1 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, and macOS Sonoma 14.2. The Xcode 15.1 release supports on-device debugging in iOS 12 and later, tvOS 12 and later, and watchOS 4 and later. Xcode 15.1 requires a Mac running macOS Ventura 13.5 or later.
 
-##### General
+### General
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Executing Unit/UI tests from Xcode on the iOS Simulator takes an extended time to launch on first run of the suite. (115187363)  (110330776) (FB12237092)
 - Fixed: Swift macro definitions from the macOS/iOS/tvOS/watchOS SDKs are not available in Swift Playgrounds.  (112122752) (FB12581131)
 - Fixed: The simulator may crash when opening Settings or Action Button settings on iPhone 15 Pro devices.  (115388496)
 
-##### App Intents
+### App Intents
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Apps that have adopted AppIntents features from iOS 17.0, watchOS 10.0, and macOS 14.0 or beyond but run on iOS 16.0, watchOS 9.0 or macOS 13.0 may crash.  (118082753)
 
-##### Device Support
+### Device Support
 
-###### Known Issues
+#### Known Issues
 
 - Copying debug symbols from an Apple Watch running watchOS 10.3 Beta 2 may take longer than expected, approximately 10-20 minutes.  (120428859)
 
-##### Devices
+### Devices
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue in which files would appear to be missing when downloading the contents of a data container from a device, or when getting the list of files in a container.  (101007362)
 - Fixed: The ability to install apps using IPA files which was present in previous versions of Xcode has now been restored.  (112295481)
@@ -40,51 +40,51 @@ Xcode 15.1 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, and
 - Fixed: Xcode is unable to connect to a watch running watchOS 9 or earlier if it is paired to an iPhone running iOS 17 or later, and may cause excessive battery drain on any such watch in close proximity.  (116557139) (FB13239145)
 - Fixed: Xcode may keep AppleTV display awake after developer is done working with it.  (117165859)
 
-###### Known Issues
+#### Known Issues
 
 - In certain circumstances, an app can’t read the contents of its own data container after replacing the content of the data container using Xcode or devicectl.  (116698465) (FB13253099)
 - Running a WatchApp that requires the companion iOS app to be installed will result in an error if the run destination is set to a Watch via iPhone Simulator pair.  (119640671)
 
   **Workaround:** Select a singular Watch Simulator run destination and then Run.
 
-##### Instruments
+### Instruments
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Leaks instrument never detects leaks.  (115440742)
 
-##### Interface Builder
+### Interface Builder
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed issue that caused Interface Builder documents using custom App fonts to load incorrect font at runtime.  (113624207) (FB12903371)
 
-###### Deprecations
+#### Deprecations
 
 - `@IBDesignable` views are deprecated and will be removed in a future release.  (115873872)
 
-##### Linking
+### Linking
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Binaries using symbols with a weak definition crash at runtime on iOS 14/macOS 12 or older. This impacts primarily C++ projects due to their extensive use of weak symbols.  (114813650) (FB13097713)
 - Fixed: Weak symbol imports are linked as non-weak imports, when used from LTO object files.  (115521975) (FB13171424)
 
-##### Optic ID
+### Optic ID
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Even though Optic ID appears in Simulator, it isn’t possible to simulate Optic ID enrollment.  (112460069)
 
-##### Previews
+### Previews
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: AppKit previews in projects that have a deployment target less than macOS 14.0 will fail to compile.  (113047811)
 
-##### Reality Composer Pro
+### Reality Composer Pro
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Reality Composer Pro now correctly export ACES OCIO names for color spaces to USD when they’re selected by the user in UI, otherwise the existing color space is used.  (106431182)
 - Fixed: Statistics shown in bottom panel ignore Shader Graph Materials when counting Textures.  (109681637)
@@ -101,7 +101,7 @@ Xcode 15.1 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, and
 - Fixed: Directly opening the .rkassets folder with Reality Composer Pro can overwrite parts of the project causing data loss.  (112414255)
 - Fixed: Audio mix groups are not functional at runtime.  (113226910)
 
-###### Known Issues
+#### Known Issues
 
 - Reality Composer Pro might quit unexpectedly after switching audio devices from a Studio Display to another device, such as AirPods or built-in speakers.  (109912081)
 
@@ -110,76 +110,76 @@ Xcode 15.1 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, and
 
   **Workaround:** You can keep a reference to the AudioPlaybackController, either in a variable or a collection, replacing instances of `entity.playAudio(someAudioFileResource)` with `controller = entity.playAudio(someFileResource)` where the `controller` variable keeps a reference to the sound for the expected duration of playback. Keeping a reference to the controller should work around this issue until fix is available.
 
-##### Signing & Distribution
+### Signing & Distribution
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Resolved an issue that prevented `xcodebuild` from installing the Apple eWorldwide Developer Relations intermediate certificate into the keychain.  (81581660)
 
-##### Simulator
+### Simulator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Xcode isn’t offering the latest iOS simulator runtime for downloading when an older one exists.  (116372892)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - New pricing properties `price`, `currency`, and `currencyCode` are now available on [Transaction](../StoreKit/transaction.md). If an offer was applied to the transaction, a new property `offer` is available to see information about it (id, type, payment mode), as well as convenience properties `offerID`, `offerType`, and `offerPaymentMode`.  (106650768)
 
-##### StoreKit Testing in Xcode
+### StoreKit Testing in Xcode
 
-###### New Features
+#### New Features
 
 - New testing functionality to send [Purchase Intents](../StoreKit/purchaseintent.md) to apps using StoreKit Testing in Xcode from the Transaction Manager.  (101034395)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue causing the StoreKit transaction manager to sometimes display duplicate devices in the navigator after launching an app from Xcode.  (117541432)
 
-##### Swift
+### Swift
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Swift apps built with Xcode 15.0 crash on launch on macOS 10.13.  (114820860)
 
-##### Swift Packages
+### Swift Packages
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: If the `Package.swift` file of a Swift App Playground project has been hand-edited to include unit test targets, the app playground fails to build with an error about duplicate commands.  (113752456)
 
-##### Test Report
+### Test Report
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Test Report may present a screenshot or screen recording attachment that is unaccessible  (112145122)
 - Fixed: Test Report’s Gallery View may be missing screenshots in cases with one run destination and one test plan configuration  (117428402)
 
-##### Testing
+### Testing
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Unit test bundles hosted by extension-based WatchKit applications fail to run on device destinations when code coverage is enabled in the active test plan.  (118158060)
 
-##### visionOS
+### visionOS
 
-###### Known Issues
+#### Known Issues
 
 - iOS apps with a deployment target set to 17.2 fail to run on Apple Vision Pro.  (117105090)
 
   **Workaround:** Set the iOS deployment target to 17.0 or earlier in the project or target’s build settings.
 
-##### Xcode Cloud
+### Xcode Cloud
 
-###### New Features
+#### New Features
 
 - Xcode now supports configuring a new Manual start condition in Xcode Cloud workflows.  (112108570)
 
-##### XCTest
+### XCTest
 
-###### Known Issues
+#### Known Issues
 
 - Test Action report logs may appear in less human readable form when os_log’s are output.  (118455129)
 

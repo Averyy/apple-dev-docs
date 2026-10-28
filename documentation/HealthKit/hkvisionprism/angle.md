@@ -25,7 +25,7 @@ var angle: HKQuantity { get }
 @property (nonatomic, copy, readonly) HKQuantity * angle;
 ```
 
-#### Discussion
+## Discussion
 
 This is the orientation of the [`amount`](./amount.md) correction, measured in [`degreeAngle()`](../hkunit/degreeangle%28%29.md) units.
 

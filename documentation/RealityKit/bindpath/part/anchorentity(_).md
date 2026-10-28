@@ -20,7 +20,7 @@ A path component for the scene’s anchor entity.
 case anchorEntity(String)
 ```
 
-#### Discussion
+## Discussion
 
 This path component indicates that another component follows, which either contains or identifies the property of the entity that animates.
 

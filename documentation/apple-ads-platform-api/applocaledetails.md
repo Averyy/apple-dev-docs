@@ -15,11 +15,11 @@ Localized content for an app’s Default Product Page.
 object AppLocaleDetails
 ```
 
-#### Discussion
+## Discussion
 
 The `AppLocaleDetails` object represents the localized metadata and asset groupings for a single locale of an app’s Default Product Page (DPP). The `language` (for example, `"en"`) and `languageCode` (for example, `"en-US"`) fields identify each locale entry.
 
-##### Example
+### Example
 
 ```json
 {

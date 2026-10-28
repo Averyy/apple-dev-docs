@@ -20,7 +20,7 @@ func NSMinY(_ aRect: NSRect) -> Double
 static CGFloat NSMinY(NSRect aRect);
 ```
 
-#### Return Value
+## Return Value
 
 The smallest y coordinate value within `aRect`.
 

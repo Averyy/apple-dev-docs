@@ -14,11 +14,11 @@ CMError CMSetProfileByAVID (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 If you specify a profile that contains the optional profile tag for video card gamma, `CMSetProfileByAVID` extracts the tag and sets the video card based on the tag data. This is the only ColorSync function that sets video card gamma. The tag constant `cmVideoCardGammaTag` is described in [Video Card Gamma Tags](../api-1560164-video_card_gamma_tags.md).
 

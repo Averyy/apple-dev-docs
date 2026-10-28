@@ -20,7 +20,7 @@ The time, in seconds, at which the source animation stops.
 var trimEnd: TimeInterval? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` by default, which plays the animation until `time` = [`duration`](./duration.md). If you set a value, the animation edits the duration according to the specified ending time.
 

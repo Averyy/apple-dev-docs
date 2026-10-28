@@ -16,11 +16,11 @@ Cancels the execution of the action's callbacks.
 kern_return_t Cancel(OSActionCancelHandler handler);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md). 
 
-#### Discussion
+## Discussion
 
 After cancellation, you can only free the action object. You cannot reactivate it. 
 

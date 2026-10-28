@@ -13,11 +13,11 @@
 errno_t mbuf_split(mbuf_t src, size_t offset, mbuf_how_t how, mbuf_t *new_mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error. In the case of failure, the original mbuf chain passed in to src will be preserved.
 
-#### Discussion
+## Discussion
 
 Split an mbuf chain at a specific offset.
 

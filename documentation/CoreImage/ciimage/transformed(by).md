@@ -24,7 +24,7 @@ func transformed(by matrix: CGAffineTransform) -> CIImage
 - (CIImage *) imageByApplyingTransform:(CGAffineTransform) matrix;
 ```
 
-#### Return Value
+## Return Value
 
 The transformed image object.
 

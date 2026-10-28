@@ -19,7 +19,7 @@ var underlinePosition: CGFloat { get }
 @property (readonly) CGFloat underlinePosition;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property is determined by the font’s AFM file. The value is usually negative, which must be considered when drawing in a flipped coordinate system.
 

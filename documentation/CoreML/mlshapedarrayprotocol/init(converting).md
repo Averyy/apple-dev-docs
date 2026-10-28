@@ -27,7 +27,7 @@ init(converting multiArray: MLMultiArray)
 init<T>(converting source: T) where T : MLShapedArrayProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Converting a floating number to an integer uses rounding-towards-zero method.
 

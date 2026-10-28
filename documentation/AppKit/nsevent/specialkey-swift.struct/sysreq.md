@@ -15,7 +15,7 @@ The system request key.
 static let sysReq: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

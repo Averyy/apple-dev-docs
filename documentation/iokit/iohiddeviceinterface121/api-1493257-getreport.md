@@ -16,7 +16,7 @@ Obtains a report from the device.
 IOReturn (*getReport)(void *self, IOHIDReportType reportType, uint32_t reportID, void *reportBuffer, uint32_t *reportBufferSize, uint32_t timeoutMS, IOHIDReportCallbackFunction callback, void *callbackTarget, void *callbackRefcon);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 

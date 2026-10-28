@@ -20,7 +20,7 @@ A result that indicates the user wants to share the activity with the group.
 case activationPreferred
 ```
 
-#### Discussion
+## Discussion
 
 When you receive this result in your completion handler, call the [`activate()`](../groupactivity/activate%28%29.md) method of your [`GroupActivity`](../groupactivity.md) type to advertise the activity to other participants in the group.
 

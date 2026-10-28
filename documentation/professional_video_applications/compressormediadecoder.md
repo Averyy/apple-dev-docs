@@ -19,7 +19,7 @@ protocol CompressorMediaDecoder
 @protocol CompressorMediaDecoder
 ```
 
-#### Overview
+## Overview
 
 The Compressor app configures a decoder object to produce decoded video frames and audio samples based on the encoder attributes and source media properties.
 

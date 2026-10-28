@@ -18,11 +18,11 @@ Reports whether write protection for just-in-time (JIT) compilation is available
 extern int be_memory_inline_jit_restrict_with_witness_supported();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the memory-protection functions are available; `false` otherwise.
 
-#### Overview
+## Overview
 
 If this function returns `true`, your browser’s web content extension can use [`be_memory_inline_jit_restrict_rwx_to_rw_with_witness`](./be_memory_inline_jit_restrict_rwx_to_rw_with_witness.md) and [`be_memory_inline_jit_restrict_rwx_to_rx_with_witness`](./be_memory_inline_jit_restrict_rwx_to_rx_with_witness.md) to protect memory that you use to compile and run JIT code. Otherwise, these functions aren’t available.
 

@@ -25,7 +25,7 @@ static let applicationAccessibilityEnabledDidChangeNotification: NSNotification.
 extern NSNotificationName const AXApplicationAccessibilityEnabledDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Posted on the main thread. The notification’s `object` is `nil` and its `userInfo` dictionary is empty — clients should re-read `AXApplicationAccessibilityEnabled()` when handling the notification.
 

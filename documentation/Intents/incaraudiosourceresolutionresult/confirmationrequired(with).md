@@ -24,11 +24,11 @@ class func confirmationRequired(with carAudioSourceToConfirm: INCarAudioSource) 
 + (instancetype) confirmationRequiredWithCarAudioSourceToConfirm:(INCarAudioSource) carAudioSourceToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCarAudioSourceResolutionResult`](../incaraudiosourceresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to an equivalent audio source and want the user to confirm the replacement value before proceeding.
 

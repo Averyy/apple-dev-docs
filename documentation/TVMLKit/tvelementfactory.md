@@ -21,7 +21,7 @@ class TVElementFactory
 @interface TVElementFactory : NSObject
 ```
 
-#### Overview
+## Overview
 
 You must register new elements before initializing a [`TVApplicationController`](./tvapplicationcontroller.md) object.
 

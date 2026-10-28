@@ -21,7 +21,7 @@ The underlying value referenced by the state variable.
 var wrappedValue: Value { get nonmutating set }
 ```
 
-#### Discussion
+## Discussion
 
 This works identically to `State.wrappedValue`.
 

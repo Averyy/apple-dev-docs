@@ -16,7 +16,7 @@ A list of window IDs to exclude from the sharing picker.
 @property (nonatomic, strong) NSArray<NSNumber *> * excludedWindowIDs;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Using an invalid window ID can cause an error. Use [`CGWindowID`](../../CoreGraphics/cgwindowid.md) values provided by methods such as [`CGWindowListCopyWindowInfo(_:_:)`](../../CoreGraphics/cgwindowlistcopywindowinfo%28_,_%29.md) or a stream window’s [`windowID`](../scwindow/windowid.md) property.
 

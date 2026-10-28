@@ -25,7 +25,7 @@ func CTRubyAnnotationGetTypeID() -> CFTypeID
 extern CFTypeID CTRubyAnnotationGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The [`CFTypeID`](../CoreFoundation/cftypeid.md) of the ruby annotation object.
 

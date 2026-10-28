@@ -20,11 +20,11 @@ Creates and returns an image object with the specified scale and orientation fac
 + (UIImage *) imageWithCGImage:(CGImageRef) cgImage scale:(CGFloat) scale orientation:(UIImageOrientation) orientation;
 ```
 
-#### Return Value
+## Return Value
 
 A new image object for the specified Quartz image, or `nil` if the method could not initialize the image from the specified image reference.
 
-#### Discussion
+## Discussion
 
 This method does not cache the image object. You can use the methods of the Core Graphics framework to create a Quartz image reference.
 

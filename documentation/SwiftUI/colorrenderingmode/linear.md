@@ -21,7 +21,7 @@ The linear sRGB working color space.
 case linear
 ```
 
-#### Discussion
+## Discussion
 
 Color component values outside the range `[0, 1]` produce undefined results. This color space isn’t gamma corrected.
 

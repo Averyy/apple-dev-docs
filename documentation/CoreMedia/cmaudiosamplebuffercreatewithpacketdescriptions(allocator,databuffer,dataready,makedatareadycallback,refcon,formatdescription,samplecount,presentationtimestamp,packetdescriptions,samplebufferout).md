@@ -25,11 +25,11 @@ func CMAudioSampleBufferCreateWithPacketDescriptions(allocator: CFAllocator?, da
 extern OSStatus CMAudioSampleBufferCreateWithPacketDescriptions(CFAllocatorRef allocator, CMBlockBufferRef dataBuffer, Boolean dataReady, CMSampleBufferMakeDataReadyCallback makeDataReadyCallback, void *makeDataReadyRefcon, CMFormatDescriptionRef formatDescription, CMItemCount numSamples, CMTime presentationTimeStamp, const AudioStreamPacketDescription *packetDescriptions, CMSampleBufferRef*sampleBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 Provides an optimization over `CMSampleBufferCreate`() when the caller already has `packetDescriptions` for the audio data. This routine uses the packetDescriptions to create the sizing and timing arrays required to make the sample buffer if necessary.
 

@@ -20,7 +20,7 @@ var ambientIntensity: CGFloat { get }
 @property (nonatomic, readonly) CGFloat ambientIntensity;
 ```
 
-#### Discussion
+## Discussion
 
 This value is based on the internal exposure compensation of the camera device, and scaled to be appropriate for use in rendering architectures that use realistic lighting metrics. A value of 1000 represents “neutral” lighting.
 

@@ -26,7 +26,7 @@ func startMonitoringVisits()
 
 - [Getting the current location of a device](../getting-the-current-location-of-a-device.md)
 
-#### Discussion
+## Discussion
 
 Calling this method begins the delivery of visit-related events to your app. Enabling visit events for one location manager enables visit events for all other location manager objects in your app. When a new visit event arrives, the location manager object delivers the event to the [`locationManager(_:didVisit:)`](../cllocationmanagerdelegate/locationmanager%28_,didvisit%29.md) method of its delegate.
 

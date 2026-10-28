@@ -21,7 +21,7 @@ func QLThumbnailCopyOptions(_ thumbnail: QLThumbnail!) -> Unmanaged<CFDictionary
 extern CFDictionaryRefQLThumbnailCopyOptions(QLThumbnailRef thumbnail);
 ```
 
-#### Return Value
+## Return Value
 
 Options for the provided thumbnail.
 

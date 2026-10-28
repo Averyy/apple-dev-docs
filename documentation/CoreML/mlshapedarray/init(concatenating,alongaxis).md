@@ -21,7 +21,7 @@ Merges a sequence of shaped arrays into one shaped array along an axis.
 init<S>(concatenating shapedArrays: S, alongAxis: Int) where Scalar == S.Element.Scalar, S : Sequence, S.Element : MLShapedArrayProtocol
 ```
 
-#### Discussion
+## Discussion
 
 All shaped arrays in the sequence must have the following:
 

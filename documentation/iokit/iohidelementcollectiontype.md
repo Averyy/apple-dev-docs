@@ -18,7 +18,7 @@ typedef enum IOHIDElementCollectionType : unsigned int {
 } IOHIDElementCollectionType;
 ```
 
-#### Overview
+## Overview
 
 Collections identify a relationship between two or more elements.
 

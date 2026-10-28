@@ -23,7 +23,7 @@ var apportionsSegmentWidthsByContent: Bool { get set }
 @property (nonatomic) BOOL apportionsSegmentWidthsByContent;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), for segments whose width value is `0`, the control attempts to adjust segment widths based on their content widths.
 

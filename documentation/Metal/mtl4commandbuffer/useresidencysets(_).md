@@ -20,7 +20,7 @@ Applies multiple residency sets to a command buffer.
 func useResidencySets(_ residencySets: [any MTLResidencySet])
 ```
 
-#### Discussion
+## Discussion
 
 Each command buffer can maintain a list of up to 32 different residency sets. See [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](../mtlresidencyset.md) for more information.
 

@@ -24,7 +24,7 @@ func addMutableTrack(withMediaType mediaType: AVMediaType, copySettingsFrom trac
 - (AVMutableMovieTrack *) addMutableTrackWithMediaType:(AVMediaType) mediaType copySettingsFromTrack:(AVAssetTrack *) track options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An [`AVMutableMovieTrack`](../avmutablemovietrack.md) object.
 

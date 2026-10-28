@@ -16,7 +16,7 @@ Append an immediate leaf
 IOReturn (*AddEntry_UInt32)(IOFireWireLibLocalUnitDirectoryRef self, int key, UInt32 value, CFStringRef inDesc);
 ```
 
-#### Discussion
+## Discussion
 
 Appends an immediate leaf to a unit directory. Note that only the lower 3 bytes of the passed in value can appear in the unit directory.
 

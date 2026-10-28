@@ -21,7 +21,7 @@ Performs the action at some time after the specified date, at the specified freq
 func schedule(after date: Self.SchedulerTimeType, interval: Self.SchedulerTimeType.Stride, _ action: @escaping () -> Void) -> any Cancellable
 ```
 
-#### Discussion
+## Discussion
 
 The immediate scheduler ignores `date` and performs the action immediately.
 

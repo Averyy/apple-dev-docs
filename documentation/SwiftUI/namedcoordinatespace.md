@@ -21,7 +21,7 @@ A named coordinate space.
 struct NamedCoordinateSpace
 ```
 
-#### Overview
+## Overview
 
 Use the `coordinateSpace(_:)` modifier to assign a name to the local coordinate space of a  parent view. Child views can then refer to that coordinate space using `.named(_:)`.
 

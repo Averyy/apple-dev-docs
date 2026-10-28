@@ -23,7 +23,7 @@ func setPrimaryConstituentDeviceSwitchingBehaviorLockedWith(_ device: AVCaptureD
 - (void) setPrimaryConstituentDeviceSwitchingBehaviorLockedWithDevice:(AVCaptureDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 Before locking a virtual camera’s primary constituent device, check that [`isPrimaryConstituentDeviceSwitchingBehaviorLockedWithDeviceSupported`](./isprimaryconstituentdeviceswitchingbehaviorlockedwithdevicesupported.md) is `true`. If locking is not supported, attempting to lock throws an `NSInvalidArgumentException`. Call [`lockForConfiguration()`](./lockforconfiguration%28%29.md) to acquire exclusive access to the device’s configuration properties. Once a constituent device is locked, it becomes the [`activePrimaryConstituent`](./activeprimaryconstituent.md), and [`primaryConstituentDeviceSwitchingBehavior`](./primaryconstituentdeviceswitchingbehavior-swift.property.md) is updated to `AVCapturePrimaryConstituentDeviceSwitchingBehaviorLocked`. The virtual camera’s properties remain unchanged. Their effective values can be obtained from the [`activePrimaryConstituent`](./activeprimaryconstituent.md). To unlock the primary constituent device, set [`primaryConstituentDeviceSwitchingBehavior`](./primaryconstituentdeviceswitchingbehavior-swift.property.md) to `AVCapturePrimaryConstituentDeviceSwitchingBehaviorAuto`. This may trigger an immediate update of [`activePrimaryConstituent`](./activeprimaryconstituent.md). Locking a different primary constituent device without first unlocking the current one is allowed.
 

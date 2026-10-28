@@ -6,7 +6,7 @@
 
 An atom that defines a text box for a subtitle sample.
 
-#### Overview
+## Overview
 
 This optional extension defines a text box for a subtitle sample, to be used as described in [`Sample extensions`](./subtitle_sample_data/sample_extensions.md). If present, this overrides the default text box in the associated sample description. If the subtitle sample description’s Display flags do not include the Vertical Placement flag (`0x20000000`), the Text Box atom should not be included in any sample of the subtitle track.
 

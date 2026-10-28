@@ -21,7 +21,7 @@ Returns the intersection of two rectangles.
 func intersection(_ other: Rect3D) -> Rect3D?
 ```
 
-#### Return Value
+## Return Value
 
 A new rectangle that is the intersection of two rectangles.
 

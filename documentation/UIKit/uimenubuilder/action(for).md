@@ -24,7 +24,7 @@ func action(for identifier: UIAction.Identifier) -> UIAction?
 - (UIAction *) actionForIdentifier:(UIActionIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 An action object; otherwise, `nil` if there are no actions with the specified identifier.
 

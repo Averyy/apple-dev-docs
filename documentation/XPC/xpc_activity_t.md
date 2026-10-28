@@ -25,7 +25,7 @@ typealias xpc_activity_t = xpc_object_t
 typedef xpc_object_t xpc_activity_t;
 ```
 
-#### Discussion
+## Discussion
 
 This object represents a set of execution criteria and a current execution state for background activity on the system. After registering an activity, the system evaluates its criteria to determine whether the activity is eligible to run under current system conditions. When an activity becomes eligible to run, its execution state updates and an invocation of its handler block occurs.
 

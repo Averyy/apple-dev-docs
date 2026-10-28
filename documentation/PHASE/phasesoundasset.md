@@ -24,7 +24,7 @@ class PHASESoundAsset
 @interface PHASESoundAsset : PHASEAsset
 ```
 
-#### Overview
+## Overview
 
 This class wraps source audio data that an app intends to play. The framework requires a mixer to play a sound asset, and sound event nodes like [`PHASESamplerNodeDefinition`](./phasesamplernodedefinition.md) combine the asset with a mixer. To provide a sound asset to a sound-event node, refer to the asset by the `identifier` you pass into the [`registerSoundAsset(url:identifier:assetType:channelLayout:normalizationMode:)`](./phaseassetregistry/registersoundasset%28url,identifier,assettype,channellayout,normalizationmode%29.md) function.
 

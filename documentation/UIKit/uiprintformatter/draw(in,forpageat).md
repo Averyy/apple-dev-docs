@@ -22,7 +22,7 @@ func draw(in rect: CGRect, forPageAt pageIndex: Int)
 - (void) drawInRect:(CGRect) rect forPageAtIndex:(NSInteger) pageIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by the default implementation of `drawPrintFormatter:forPageAtIndex:` of the [`UIPrintPageRenderer`](../uiprintpagerenderer.md) class for each print formatter associated with a page.
 

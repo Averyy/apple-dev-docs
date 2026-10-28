@@ -28,11 +28,11 @@ func requestContentEditingInput(with options: PHContentEditingInputRequestOption
 
 - [Editing Asset Content](../../PhotoKit/editing-asset-content.md)
 
-#### Return Value
+## Return Value
 
 A numeric identifier for the request. Pass this identifier to the [`cancelContentEditingInputRequest(_:)`](./cancelcontenteditinginputrequest%28_%29.md) method if you need to cancel the request before it completes.
 
-#### Discussion
+## Discussion
 
 When you call this method, Photos downloads the asset’s image or video data (if necessary) and prepares it for editing, then calls your `completionHandler` block to provide a [`PHContentEditingInput`](../phcontenteditinginput.md) object you use for editing.
 

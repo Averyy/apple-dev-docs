@@ -21,7 +21,7 @@ Sets the signing private key that corresponds to the signing public key that you
 func setSigningPrivateKey(_ key: P256.Signing.PrivateKey) throws
 ```
 
-#### Discussion
+## Discussion
 
 If you set this on an encryption stream, you don’t need to set the corresponding public key because Apple Archive derives the public key from the private key.
 

@@ -16,7 +16,7 @@ A number that represents a day.
 long days;
 ```
 
-#### Discussion
+## Discussion
 
 Numbers representing days are 1-based. For example, to represent the third day of a month, use `3`.
 

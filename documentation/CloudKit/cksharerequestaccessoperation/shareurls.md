@@ -25,7 +25,7 @@ var shareURLs: [URL]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSURL *> * shareURLs;
 ```
 
-#### Discussion
+## Discussion
 
 Include multiple URLs to request access to multiple shares simultaneously. The server processes each URL independently.
 

@@ -23,7 +23,7 @@ var maxRecordedDuration: CMTime { get set }
 @property (nonatomic) CMTime maxRecordedDuration;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies a hard limit on the duration of recorded files. Recording is stopped when the limit is reached and the [`fileOutput(_:didFinishRecordingTo:from:error:)`](../avcapturefileoutputrecordingdelegate/fileoutput%28_,didfinishrecordingto,from,error%29.md) delegate method is invoked with an appropriate error. The default value of this property is [`invalid`](../../CoreMedia/cmtime/invalid.md), which indicates no limit.
 

@@ -25,11 +25,11 @@ class UnitElectricResistance
 @interface NSUnitElectricResistance : NSDimension
 ```
 
-#### Overview
+## Overview
 
 You typically use instances of [`UnitElectricResistance`](./unitelectricresistance.md) to represent specific quantities of electric resistance using the [`NSMeasurement`](./nsmeasurement.md) class.
 
-##### Electric Resistance
+### Electric Resistance
 
 Electric resistance is the difficulty of passing an electric current through a conductor. The SI unit for electric resistance is the ohm (Ω), which is derived as the electric resistance that produces one ampere of current between two points in conductor with one volt of electric potential difference (1Ω = 1V/1A).
 

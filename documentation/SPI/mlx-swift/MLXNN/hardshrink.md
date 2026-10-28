@@ -17,7 +17,7 @@ Applies the HardShrink activation function.
 class HardShrink
 ```
 
-#### Overview
+## Overview
 
 This is (element-wise):
 
@@ -31,7 +31,7 @@ if x > lambda {
 }
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`hardShrink(_:lambda:)`](./hardshrink%28_,lambda%29.md)

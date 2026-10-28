@@ -24,7 +24,7 @@ func AudioServicesDisposeSystemSoundID(_ inSystemSoundID: SystemSoundID) -> OSSt
 extern OSStatus AudioServicesDisposeSystemSoundID(SystemSoundID inSystemSoundID);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

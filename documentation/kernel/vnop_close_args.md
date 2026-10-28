@@ -16,7 +16,7 @@ struct vnop_close_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 The open vnop gives a filesystem a chance to initialize a file for operations like reading, writing, and ioctls. VFS promises to send down exactly one VNOP_CLOSE() for each VNOP_OPEN().
 

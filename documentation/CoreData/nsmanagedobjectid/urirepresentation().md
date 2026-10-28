@@ -25,11 +25,11 @@ func uriRepresentation() -> URL
 - (NSURL *) URIRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSURL` object containing a URI that provides an archiveable reference to the object which the receiver represents.
 
-#### Discussion
+## Discussion
 
 If the corresponding managed object has not yet been saved, the object ID (and hence URI) is a temporary value that will change when the corresponding managed object is saved.
 

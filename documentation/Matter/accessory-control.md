@@ -5,7 +5,7 @@
 
 Communicate with commissioned Matter accessories.
 
-#### Overview
+## Overview
 
 Once you’ve commissioned a Matter accessory, use these methods to read and write data, subscribe to data updates, and send commands.
 

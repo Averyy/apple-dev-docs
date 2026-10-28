@@ -17,7 +17,7 @@ var HV_IPA_GRANULE_16KB: hv_ipa_granule_t { get }
 HV_IPA_GRANULE_16KB
 ```
 
-#### Discussion
+## Discussion
 
 Supported intermediate physical address (IPA) granules.
 

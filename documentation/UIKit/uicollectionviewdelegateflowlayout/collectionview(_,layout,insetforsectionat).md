@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, layout collecti
 - (UIEdgeInsets) collectionView:(UICollectionView *) collectionView layout:(UICollectionViewLayout *) collectionViewLayout insetForSectionAtIndex:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 The margins to apply to items in the section.
 
-#### Discussion
+## Discussion
 
 If you do not implement this method, the flow layout uses the value in its [`sectionInset`](../uicollectionviewflowlayout/sectioninset.md) property to set the margins instead. Your implementation of this method can return a fixed set of margin sizes or return different margin sizes for each section.
 

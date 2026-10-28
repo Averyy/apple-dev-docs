@@ -20,7 +20,7 @@ Changed blend shape data.
 let blendShapes: USDPlayer.DeformationData.BlendShapeData.Update?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

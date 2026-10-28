@@ -21,7 +21,7 @@ var context: NSGraphicsContext? { get }
 @property (strong, readonly, nullable) NSGraphicsContext * context;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the graphics context most recently used by your app.
 

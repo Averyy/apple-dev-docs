@@ -21,7 +21,7 @@ Modifies a parse strategy to parse a URL’s fragment component in accordance wi
 func fragment(_ strategy: URL.ParseStrategy.ComponentParseStrategy<String> = .optional) -> URL.ParseStrategy
 ```
 
-#### Return Value
+## Return Value
 
 A modified [`URL.ParseStrategy`](../parsestrategy.md) that incorporates the specified behavior.
 

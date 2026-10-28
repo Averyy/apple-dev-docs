@@ -24,7 +24,7 @@ func UIRectFill(_ rect: CGRect)
 extern void UIRectFill(CGRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 Fills the specified rectangle using the fill color of the current graphics context and the `kCGBlendModeCopy` blend mode.
 

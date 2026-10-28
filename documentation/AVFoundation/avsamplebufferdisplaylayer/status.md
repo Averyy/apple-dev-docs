@@ -26,7 +26,7 @@ var status: AVQueuedSampleBufferRenderingStatus { get }
 @property (nonatomic, readonly) AVQueuedSampleBufferRenderingStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 Apple discourages the use of this symbol in iOS 17, tvOS 17, and macOS 14 and later. Use [`status`](../avsamplebuffervideorenderer/status.md) on [`sampleBufferRenderer`](./samplebufferrenderer.md) instead.
 

@@ -19,7 +19,7 @@ var isTransparent: Bool { get set }
 @property (getter=isTransparent) BOOL transparent;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the button is transparent, when it is [`false`](../../Swift/false.md), the button is not transparent. The default value is [`false`](../../Swift/false.md).
 

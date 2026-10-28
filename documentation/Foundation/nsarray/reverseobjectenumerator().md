@@ -25,11 +25,11 @@ func reverseObjectEnumerator() -> NSEnumerator
 - (NSEnumerator<id> *) reverseObjectEnumerator;
 ```
 
-#### Return Value
+## Return Value
 
 An enumerator object that lets you access each object in the array, in order, from the element at the highest index down to the element at index `0`.
 
-#### Discussion
+## Discussion
 
 When you use this method with mutable subclasses of `NSArray`, you must not modify the array during enumeration.
 

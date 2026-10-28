@@ -16,11 +16,11 @@ Asynchronously generates a texture resource from an in-memory Core Graphics imag
 @preconcurrency static func generate(from cgImage: CGImage, named resourceName: String? = nil, options: TextureResource.CreateOptions) async throws -> TextureResource
 ```
 
-#### Return Value
+## Return Value
 
 A texture resource.
 
-#### Discussion
+## Discussion
 
 This method creates a texture resource from an existing [`CGImage`](../../CoreGraphics/cgimage.md) with specific options. RealityKit uses the resource name to identify resources, and to match texture resources between networked peers. Specify a unique name for each texture resource you load or generate.
 

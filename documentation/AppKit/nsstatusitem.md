@@ -19,7 +19,7 @@ class NSStatusItem
 @interface NSStatusItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`NSStatusBar`](./nsstatusbar.md) method [`statusItem(withLength:)`](./nsstatusbar/statusitem%28withlength%29.md) creates instances of this class and automatically adds them to the menu bar. Use the [`button`](./nsstatusitem/button.md) property to customize the appearance and behavior of the status item.
 

@@ -21,7 +21,7 @@ Uses the nearest ancestor’s implementation of `customMirror` to create a mirro
 case customized(() -> Mirror)
 ```
 
-#### Discussion
+## Discussion
 
 Other classes derived from such an ancestor are given a default mirror. The payload for this option should always be `{ super.customMirror }`:
 

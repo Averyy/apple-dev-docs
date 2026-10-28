@@ -25,7 +25,7 @@ func writeCompactedSize(accelerationStructure: any MTLAccelerationStructure, buf
 - (void) writeCompactedAccelerationStructureSize:(id<MTLAccelerationStructure>) accelerationStructure toBuffer:(id<MTLBuffer>) buffer offset:(NSUInteger) offset;
 ```
 
-#### Discussion
+## Discussion
 
 The GPU writes the compacted size to the buffer as a 32-bit unsigned integer representing the compacted size in bytes. The compacted size may be smaller than the source acceleration structure.
 

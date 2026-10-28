@@ -31,7 +31,7 @@ func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinato
 
 - [Adding Writing Tools support to a custom UIKit view](../../adding-writing-tools-support-to-a-custom-uiview.md)
 
-#### Discussion
+## Discussion
 
 At the start of every operation, the [`UIWritingToolsCoordinator`](../../uiwritingtoolscoordinator.md) object calls this method to request the text to evaluate. Use this method to create one or more [`UIWritingToolsCoordinator.Context`](../context.md) objects with your view’s text. Create only one [`UIWritingToolsCoordinator.Context`](../context.md) object if your view has only one text storage object. If your view contains multiple text storage objects, create separate [`UIWritingToolsCoordinator.Context`](../context.md) objects for each text storage object. Writing Tools returns updates for each context object separately, making it easier for you to incorporate changes into the correct text storage object. Don’t create multiple context objects if your view has only one text storage object.
 

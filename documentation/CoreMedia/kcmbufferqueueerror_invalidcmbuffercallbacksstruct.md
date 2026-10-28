@@ -25,7 +25,7 @@ var kCMBufferQueueError_InvalidCMBufferCallbacksStruct: OSStatus { get }
 kCMBufferQueueError_InvalidCMBufferCallbacksStruct
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that the [`version`](./cmbuffercallbacks/version.md) isn’t `0`, or getDuration is NULL.
 

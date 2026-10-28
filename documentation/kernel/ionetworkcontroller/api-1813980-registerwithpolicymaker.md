@@ -12,11 +12,11 @@ virtual IOReturn registerWithPolicyMaker(
  IOService *policyMaker);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success, kIOReturnUnsupported if the driver does not support power management, or an appropriate error return code. The default return is kIOReturnUnsupported.
 
-#### Overview
+## Overview
 
 Drivers that are able to power manage their hardware should override this method and register with the policy-maker provided by calling IOService::registerPowerDriver(). IONetworkController will call this method before the initial attempt is made to attach a client.
 

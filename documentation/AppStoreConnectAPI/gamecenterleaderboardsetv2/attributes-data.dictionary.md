@@ -13,7 +13,7 @@
 object GameCenterLeaderboardSetV2.Attributes
 ```
 
-#### Overview
+## Overview
 
 - referenceName:
 - vendorIdentifier:

@@ -17,7 +17,7 @@ A visibility value that hides a promoted Apple In-App Purchase on the App Store 
 case hidden
 ```
 
-#### Discussion
+## Discussion
 
 A promoted Apple In-App Purchase with this visibility setting isn’t visible on the App Store on a user’s device.
 

@@ -16,7 +16,7 @@ Defines an opaque data type representing summarization information.
 class SKSummary
 ```
 
-#### Overview
+## Overview
 
 A summarization object contains summarization information, including summary text.
 

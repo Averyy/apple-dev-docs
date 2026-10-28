@@ -19,7 +19,7 @@ class func canExport(toApplication applicationBundleIdentifier: String!) -> Bool
 + (BOOL) canExportToApplication:(NSString *) applicationBundleIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the slideshow can be exported to the specified application; [`false`](../../Swift/false.md) otherwise.
 

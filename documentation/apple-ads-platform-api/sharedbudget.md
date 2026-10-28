@@ -15,13 +15,13 @@ A budget order.
 object SharedBudget
 ```
 
-#### Discussion
+## Discussion
 
 A SharedBudget creates a spending cap across a group of campaigns within an ad account. Campaigns participating in the same SharedBudget draw from a common spend limit. The `startTime` and `endTime` fields define the active window.
 
 The `systemStatus` field reflects whether the budget is currently usable. Common blocking reasons in `systemStatusReasons` include `EXHAUSTED` and `SCHEDULE_PENDING`.
 
-##### Example
+### Example
 
 ```json
 {

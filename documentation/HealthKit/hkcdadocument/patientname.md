@@ -23,7 +23,7 @@ var patientName: String { get }
 @property (copy, readonly) NSString * patientName;
 ```
 
-#### Discussion
+## Discussion
 
 HealthKit automatically extracts the patient’s name from the CDA’s XML data.
 

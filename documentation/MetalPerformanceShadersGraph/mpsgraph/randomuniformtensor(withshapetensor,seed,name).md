@@ -24,11 +24,11 @@ func randomUniformTensor(withShapeTensor shapeTensor: MPSGraphTensor, seed: Int,
 - (MPSGraphTensor *) randomUniformTensorWithShapeTensor:(MPSGraphTensor *) shapeTensor seed:(NSUInteger) seed name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An MPSGraphTensor of shape containing random values in the defined range.
 
-#### Discussion
+## Discussion
 
 Returns a tensor of provided shape of random uniform values in the range [0.0, 1.0). Uses the provided seed value to initalize state. No state is preserved, and all calls with equal seed yield an identical stream of random values.
 

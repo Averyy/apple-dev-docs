@@ -24,11 +24,11 @@ func unifiedContact(withIdentifier identifier: String, keysToFetch keys: [any CN
 - (CNContact *) unifiedContactWithIdentifier:(NSString *) identifier keysToFetch:(NSArray<id<CNKeyDescriptor>> *) keys error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A unified contact matching or linked to the identifier.
 
-#### Discussion
+## Discussion
 
 Due to unification, the returned contact may have a different identifier than you specify. To fetch a batch of contacts by identifiers, use [`predicateForContacts(withIdentifiers:)`](../cncontact/predicateforcontacts%28withidentifiers%29.md) with [`unifiedContacts(matching:keysToFetch:)`](./unifiedcontacts%28matching,keystofetch%29.md). Fetch only the properties that your app uses. You can combine contact keys and contact key descriptors together.
 

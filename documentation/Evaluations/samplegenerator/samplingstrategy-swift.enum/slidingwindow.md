@@ -25,7 +25,7 @@ case slidingWindow
 
 - [Generating synthetic datasets](../../generating-synthetic-evaluation-datasets.md)
 
-#### Discussion
+## Discussion
 
 When the model repeats an inference, this strategy continues retrying as long as there are new windows of examples to show the model.
 

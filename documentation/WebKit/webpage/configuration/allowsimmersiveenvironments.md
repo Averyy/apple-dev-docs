@@ -16,7 +16,7 @@ Indicates whether website immersive environments are allowed.
 var allowsImmersiveEnvironments: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `true` to enable support for website immersive environments. If `false`, requests to present immersive environments are ignored. If `true`, requests are routed through the `onWebViewImmersiveEnvironmentRequest` view modifier callbacks.
 

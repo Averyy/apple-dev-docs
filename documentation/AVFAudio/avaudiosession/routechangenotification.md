@@ -28,7 +28,7 @@ extern NSNotificationName const AVAudioSessionRouteChangeNotification;
 
 - [Responding to audio route changes](../responding-to-audio-route-changes.md)
 
-#### Discussion
+## Discussion
 
 The [`userInfo`](../../Foundation/nsnotification/userinfo.md) dictionary of this notification contains the [`AVAudioSessionRouteChangeReasonKey`](../avaudiosessionroutechangereasonkey.md) and [`AVAudioSessionRouteChangePreviousRouteKey`](../avaudiosessionroutechangepreviousroutekey.md) keys, which provide information about the route change.
 

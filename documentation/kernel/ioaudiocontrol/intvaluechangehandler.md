@@ -15,7 +15,7 @@ typedef IOReturn ( *IntValueChangeHandler)(
    SInt32 newValue);
 ```
 
-#### Return Value
+## Return Value
 
 Must return kIOReturnSuccess when the hardware is successfully updated.
 

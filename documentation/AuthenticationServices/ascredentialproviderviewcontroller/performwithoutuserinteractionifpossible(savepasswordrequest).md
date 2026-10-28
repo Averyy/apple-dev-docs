@@ -22,7 +22,7 @@ func performWithoutUserInteractionIfPossible(savePasswordRequest: ASSavePassword
 - (void) performSavePasswordRequestWithoutUserInteractionIfPossible:(ASSavePasswordRequest *) savePasswordRequest;
 ```
 
-#### Discussion
+## Discussion
 
 To return results, you must call  [`completeSavePasswordRequest(completionHandler:)`](../ascredentialproviderextensioncontext/completesavepasswordrequest%28completionhandler%29.md).
 

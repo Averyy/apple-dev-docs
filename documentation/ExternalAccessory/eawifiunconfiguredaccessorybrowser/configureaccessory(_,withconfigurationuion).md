@@ -22,7 +22,7 @@ func configureAccessory(_ accessory: EAWiFiUnconfiguredAccessory, withConfigurat
 - (void) configureAccessory:(EAWiFiUnconfiguredAccessory *) accessory withConfigurationUIOnViewController:(UIViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 This method stops the search for unconfigured accessories and begins the configuration process of the specified accessory. To guide the user through the configuration process (which can take up to a few minutes to complete), the system displays a modal setup UI on top of the specified view controller. Upon completion of the process, the host app’s delegate receives the accessoryBrowser:didFinishConfiguringAccessory:withError: callback with a status value that it can check. For example, an app might want to tell the user if the configuration failed.
 

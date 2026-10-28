@@ -22,7 +22,7 @@ func setCcRecipients(_ ccRecipients: [String]?)
 - (void) setCcRecipients:(NSArray<NSString *> *) ccRecipients;
 ```
 
-#### Discussion
+## Discussion
 
 This method replaces the previous carbon-copy (Cc) recipients with the new ones listed in the `ccRecipients` parameter. This method doesn’t filter out duplicate email addresses, so if duplicates are present, multiple copies of the email message may be sent to the same address.
 

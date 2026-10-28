@@ -18,7 +18,7 @@ The geographic region that describes the location for this disbursement.
 var region: Locale.Region { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to the [`Locale.Region`](../../Foundation/locale/region-swift.struct.md) for the country or region of the merchant’s principal place of business. Consult with your payment service provider (PSP) to determine the appropriate country or region code.
 

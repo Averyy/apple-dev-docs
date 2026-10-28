@@ -19,11 +19,11 @@ func beginDraggingSession(with items: [NSDraggingItem], event: NSEvent, source: 
 - (NSDraggingSession *) beginDraggingSessionWithItems:(NSArray<NSDraggingItem *> *) items event:(NSEvent *) event source:(id<NSDraggingSource>) source;
 ```
 
-#### Return Value
+## Return Value
 
 The dragging session for the drag, , or `nil` if the method can’t start the session.
 
-#### Discussion
+## Discussion
 
 A basic drag starts by calling `beginDraggingSessionWithItems:event:source:`.
 

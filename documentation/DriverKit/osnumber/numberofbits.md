@@ -18,7 +18,7 @@ Returns the number of bits the OSNumber was created with.
 size_t numberOfBits() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of bits the OSNumber was created with.
 

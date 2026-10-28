@@ -19,7 +19,7 @@ class let itemDidCollapseNotification: NSNotification.Name
 extern NSNotificationName NSOutlineViewItemDidCollapseNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSOutlineView` object in which an item was collapsed. A collapsed item’s children lose their status as being selected. The `userInfo` dictionary contains the following information:
 

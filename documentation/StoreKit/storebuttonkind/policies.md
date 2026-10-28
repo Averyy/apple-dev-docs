@@ -21,7 +21,7 @@ A type of button that people use to display store policies.
 static var policies: StoreButtonKind { get }
 ```
 
-#### Discussion
+## Discussion
 
 This button type is available for [`SubscriptionStoreView`](../subscriptionstoreview.md) only.
 

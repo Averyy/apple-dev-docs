@@ -9,7 +9,7 @@ Share playground data, manage live views, and control the execution of a playgro
 - macOS 12.0+
 - Swift Playgrounds 2.0+
 
-#### Overview
+## Overview
 
 You use Playground Support from within playgrounds to: 
 

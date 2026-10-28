@@ -25,11 +25,11 @@ func backgroundRect(forBounds bounds: CGRect) -> CGRect
 - (CGRect) backgroundRectForBounds:(CGRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 The bounds rectangle in which to draw any standard button content.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns the value in the `bounds` parameter. This rectangle represents the area in which the button draws its standard background content. Subclasses that provide custom background adornments can override this method and return a modified bounds rectangle to prevent the button from drawing over any custom content.
 

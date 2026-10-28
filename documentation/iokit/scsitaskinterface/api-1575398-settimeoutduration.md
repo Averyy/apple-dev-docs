@@ -16,11 +16,11 @@ Method to set the timeout duration for the SCSITask.
 IOReturn (*SetTimeoutDuration)(void *task, UInt32 inTimeoutDurationMS);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSucces or kIOReturnError.
 
-#### Discussion
+## Discussion
 
 This method can be used to set the timeout duration for the SCSITask. The timeout duration is counted in milliseconds. A value of zero is equivalent to "Wait Forever", but on some buses, this isn't possible, so ULONG_MAX is used.
 

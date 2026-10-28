@@ -16,8 +16,8 @@ Asynchronously creates a custom surface shader from a user-authored Metal functi
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func makeSurfaceShader(descriptor: LowLevelMaterialResource.SurfaceShader.Descriptor) async throws -> sending LowLevelMaterialResource.SurfaceShader
+nonisolated(nonsending)
+func makeSurfaceShader(descriptor: LowLevelMaterialResource.SurfaceShader.Descriptor) async throws -> sending LowLevelMaterialResource.SurfaceShader
 ```
 
 **Other overloads**:
@@ -26,11 +26,11 @@ nonisolated
 func makeSurfaceShader(descriptor: LowLevelMaterialResource.SurfaceShader.Descriptor) throws -> sending LowLevelMaterialResource.SurfaceShader
 ```
 
-#### Return Value
+## Return Value
 
 A compiled [`LowLevelMaterialResource.SurfaceShader`](../lowlevelmaterialresource/surfaceshader.md).
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the specified Metal function cannot be found or compiled.
 

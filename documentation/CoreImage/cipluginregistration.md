@@ -19,7 +19,7 @@ protocol CIPlugInRegistration
 @protocol CIPlugInRegistration
 ```
 
-#### Overview
+## Overview
 
 The principal class of an image unit—a loadable bundle containing custom Core Image filters for macOS—must support this protocol.
 

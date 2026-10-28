@@ -21,7 +21,7 @@ case cancelled
 SLComposeViewControllerResultCancelled
 ```
 
-#### Discussion
+## Discussion
 
 This result occurs when the user selects Cancel or the account is unavailable.
 

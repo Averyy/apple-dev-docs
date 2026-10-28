@@ -24,7 +24,7 @@ optional func assetWriter(_ writer: AVAssetWriter, didOutputSegmentData segmentD
 - (void) assetWriter:(AVAssetWriter *) writer didOutputSegmentData:(NSData *) segmentData segmentType:(AVAssetSegmentType) segmentType segmentReport:(AVAssetSegmentReport *) segmentReport;
 ```
 
-#### Discussion
+## Discussion
 
 The asset writer stops normal file writing when you implement this method.
 

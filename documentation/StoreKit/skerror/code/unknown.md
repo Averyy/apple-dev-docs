@@ -24,7 +24,7 @@ case unknown
 SKErrorUnknown
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the underlying cause of the error, see the [`localizedDescription`](../../../Foundation/nserror/localizeddescription.md) property of the error object.
 

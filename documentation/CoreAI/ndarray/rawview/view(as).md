@@ -19,7 +19,7 @@ Consume this raw view to create a typed view.
 consuming func view<T>(as: T.Type = T.self) -> NDArray.View<T> where T : BitwiseCopyable
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: `T` must match `self.scalarType.type`.
 

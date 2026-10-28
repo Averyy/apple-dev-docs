@@ -20,7 +20,7 @@ Manages inherit composition arcs on a prim.
 struct InheritCollection
 ```
 
-#### Overview
+## Overview
 
 Inheritance allows a prim to inherit opinions from another prim within the same layer stack, similar to class inheritance in object-oriented programming. Use `USDPrim.InheritCollection` to add, remove, and query inherit arcs on a prim.
 

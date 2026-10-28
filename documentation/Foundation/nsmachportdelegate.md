@@ -25,7 +25,7 @@ protocol NSMachPortDelegate : PortDelegate
 @protocol NSMachPortDelegate <NSPortDelegate>
 ```
 
-#### Overview
+## Overview
 
 Delegates of [`NSMachPort`](./nsmachport.md) objects optionally adopt this protocol.
 

@@ -23,7 +23,7 @@ func menu(for event: NSEvent) -> NSMenu?
 
 - [Supporting Writing Tools via the pasteboard](../supporting-writing-tools-via-the-pasteboard.md)
 
-#### Discussion
+## Discussion
 
 The view can use information in the mouse event, such as its location over a particular element of the view, to determine what kind of menu to return. For example, a text object might display a text-editing menu when the cursor lies over text and a menu for changing graphics attributes when the cursor lies over an embedded image.
 

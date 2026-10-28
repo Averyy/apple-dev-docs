@@ -23,7 +23,7 @@ class var leakyReLU: MLCActivationLayer { get }
 @property (class, nonatomic, readonly) MLCActivationLayer * leakyReLULayer;
 ```
 
-#### Discussion
+## Discussion
 
 This factory creates an activation descriptor using [`init(type:a:)`](../mlcactivationdescriptor/init%28type,a%29.md), where `type =` [`MLCActivationType.relu`](../mlcactivationtype/relu.md) and `a = 0.01`, and passes that descriptor to [`init(descriptor:)`](./init%28descriptor%29.md).
 

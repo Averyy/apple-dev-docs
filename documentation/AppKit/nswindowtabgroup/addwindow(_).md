@@ -19,7 +19,7 @@ func addWindow(_ window: NSWindow)
 - (void) addWindow:(NSWindow *) window;
 ```
 
-#### Discussion
+## Discussion
 
 This method appends the window to the end of the tab group. If the window is already a member of another tab group, it is first removed from that group.
 

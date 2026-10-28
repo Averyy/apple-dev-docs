@@ -19,11 +19,11 @@ addItems(items: (Overlay | Annotation)[]): (Annotation | Overlay)[];
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Return Value
+## Return Value
 
 Returns an array of items added to the map.
 
-#### Discussion
+## Discussion
 
 Use [`addItems()`](./additems.md) to add elements to the map after importing them from [`importGeoJSON()`](../mapkit/importgeojson.md).
 

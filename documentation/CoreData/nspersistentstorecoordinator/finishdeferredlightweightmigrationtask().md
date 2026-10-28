@@ -25,7 +25,7 @@ func finishDeferredLightweightMigrationTask() throws
 - (BOOL) finishDeferredLightweightMigrationTask:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Enable deferred lightweight migrations before using this method. For more information, see [`NSPersistentStoreDeferredLightweightMigrationOptionKey`](../nspersistentstoredeferredlightweightmigrationoptionkey.md).
 

@@ -24,7 +24,7 @@ func descriptor(for plane: MTLTensorPlaneType) -> MTLTensorAuxiliaryPlaneDescrip
 - (MTLTensorAuxiliaryPlaneDescriptor *) descriptorForPlane:(MTLTensorPlaneType) plane;
 ```
 
-#### Return Value
+## Return Value
 
 The descriptor for the given plane type, or `nil`.
 

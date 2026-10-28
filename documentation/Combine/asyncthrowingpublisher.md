@@ -21,7 +21,7 @@ A publisher that exposes its elements as a throwing asynchronous sequence.
 struct AsyncThrowingPublisher<P> where P : Publisher
 ```
 
-#### Overview
+## Overview
 
 `AsyncThrowingPublisher` conforms to [`AsyncSequence`](../Swift/asyncsequence.md), which allows callers to receive values with the `for`-`await`-`in` syntax, rather than attaching a [`Subscriber`](./subscriber.md). If the upstream publisher terminates with an error, `AsyncThrowingPublisher` throws the error to the awaiting caller.
 

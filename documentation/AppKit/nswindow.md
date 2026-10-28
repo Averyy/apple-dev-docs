@@ -20,7 +20,7 @@ class NSWindow
 @interface NSWindow : NSResponder
 ```
 
-#### Overview
+## Overview
 
 A single [`NSWindow`](./nswindow.md) object corresponds to, at most, one on-screen window. Windows perform two principal functions:
 

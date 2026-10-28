@@ -25,7 +25,7 @@ case none
 AVSampleBufferRequestDirectionNone
 ```
 
-#### Discussion
+## Discussion
 
 When this constant is set, the [`limitCursor`](../limitcursor.md), [`preferredMinSampleCount`](../preferredminsamplecount.md), and [`maxSampleCount`](../maxsamplecount.md) properties are ignored.
 

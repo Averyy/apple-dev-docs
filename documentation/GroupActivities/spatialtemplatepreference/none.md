@@ -15,7 +15,7 @@ An arrangement where the system places spatial Personas based on your app’s co
 static let none: SpatialTemplatePreference
 ```
 
-#### Discussion
+## Discussion
 
 With this option, the system examines your app’s content to determine the best arrangement. For content in a vertical plane such as a window, the system arranges participants side by side and facing the content. For volumes, the system surrounds the volume with the participants. This option is the default.
 

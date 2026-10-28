@@ -27,7 +27,7 @@ class INListRideOptionsIntent
 
 - [Generating a List of Ride Options](../SiriKit/generating-a-list-of-ride-options.md)
 
-#### Overview
+## Overview
 
 Maps creates an [`INListRideOptionsIntent`](./inlistrideoptionsintent.md) object when it needs to display the types of vehicles that your service offers. Use the information in this intent to identify the possible vehicles that you can provide to the user right now. The intent contains information about the user’s pickup and drop-off locations, which you can use to determine ride availability, pricing, and estimated pickup times. This intent object represents a request for information and is not a commitment from the user to book any of the specified rides.
 
@@ -35,7 +35,7 @@ To handle this intent, the handler object in your Intents extension must adopt t
 
 > **Note**:  When implementing ride-booking support, provide a GeoJSON file with the regions for which you are able to provide rides and upload that file as your app’s Routing App Coverage File in App Store Connect. When it needs to suggest apps capable of providing a ride, Maps uses your coverage information to determine whether it should suggest your app. If you do not provide a coverage file and your app is not installed on the user’s device, Maps does not suggest your app. For information about how to create and upload a Routing App Coverage File, see [iTunes Connect Developer Help](https://help.apple.com/itunes-connect/developer/#/dev4ba662442).
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

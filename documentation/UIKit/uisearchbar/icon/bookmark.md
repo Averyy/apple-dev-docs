@@ -22,7 +22,7 @@ case bookmark
 UISearchBarIconBookmark
 ```
 
-#### Discussion
+## Discussion
 
 By default, the corresponding icon is an open book.
 

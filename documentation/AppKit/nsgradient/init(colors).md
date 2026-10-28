@@ -19,7 +19,7 @@ convenience init?(colors colorArray: [NSColor])
 - (instancetype) initWithColors:(NSArray<NSColor *> *) colorArray;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSGradient` object.
 

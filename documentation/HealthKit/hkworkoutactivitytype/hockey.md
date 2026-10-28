@@ -24,7 +24,7 @@ case hockey
 HKWorkoutActivityTypeHockey
 ```
 
-#### Discussion
+## Discussion
 
 HealthKit estimates calories for this activity based on the data from Apple Watch’s sensors. This rate is never lower than the brisk walk burn rate when moving. Calorie calculations differ between indoor and outdoor workouts for this activity.
 

@@ -16,11 +16,11 @@ Creates async eventsource.
 IOReturn (*createAsyncEventSource)(void *self, CFRunLoopSourceRef *source);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 This method will create an async mach port, if one has not already been created.
 

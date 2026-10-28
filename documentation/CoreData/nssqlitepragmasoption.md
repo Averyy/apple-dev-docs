@@ -25,7 +25,7 @@ let NSSQLitePragmasOption: String
 extern NSString * const NSSQLitePragmasOption;
 ```
 
-#### Discussion
+## Discussion
 
 All pragma values must be specified as `NSString` objects. The `fullfsync` and `synchronous` pragmas control the tradeoff between write performance (write to disk speed & cache utilization) and durability (data loss/corruption sensitivity to power interruption). For more information on pragma settings, see [http://sqlite.org/pragma.html](http://sqlite.org/pragma.html).
 

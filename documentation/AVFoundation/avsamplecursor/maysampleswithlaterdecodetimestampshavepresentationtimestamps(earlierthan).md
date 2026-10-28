@@ -25,11 +25,11 @@ func maySamplesWithLaterDecodeTimeStampsHavePresentationTimeStamps(earlierThan c
 - (BOOL) samplesWithLaterDecodeTimeStampsMayHaveEarlierPresentationTimeStampsThanCursor:(AVSampleCursor *) cursor;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if it’s possible for any sample later in decode order than the sample at the position of the receiver can have a presentation timestamp earlier than that of the specified sample cursor; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Undefined results occur if this cursor and the passed in cursor reference different sequences of samples, such as when they’re created by different instances of [`AVAssetTrack`](../avassettrack.md).
 

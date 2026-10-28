@@ -25,7 +25,7 @@ func method_copyArgumentType(_ m: Method, _ index: UInt32) -> UnsafeMutablePoint
 extern char *method_copyArgumentType(Method m, unsigned int index);
 ```
 
-#### Return Value
+## Return Value
 
 A C string describing the type of the parameter at index `index`, or `NULL` if `method` has no parameter index `index`. You must free the string with `free()`.
 

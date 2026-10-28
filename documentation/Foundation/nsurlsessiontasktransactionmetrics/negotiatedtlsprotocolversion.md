@@ -21,7 +21,7 @@ The TLS protocol version the task negotiated with the endpoint for the connectio
 @property (copy, readonly, nullable) NSNumber * negotiatedTLSProtocolVersion;
 ```
 
-#### Discussion
+## Discussion
 
 This value is a 2-byte sequence in host byte order. See [`tls_protocol_version_t`](../../Security/tls_protocol_version_t.md) for possible values. If the task didn’t negotiate an encrypted connection, this value is `nil`.
 

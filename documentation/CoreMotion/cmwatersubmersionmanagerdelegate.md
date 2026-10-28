@@ -27,7 +27,7 @@ protocol CMWaterSubmersionManagerDelegate : NSObjectProtocol
 
 - [Accessing submersion data](./accessing-submersion-data.md)
 
-#### Overview
+## Overview
 
 The system calls your delegate’s methods to provide updated data to your app. When the watch isn’t submerged, your app receives event, measurement, and error messages. However, the measurement updates include only surface pressure and submersion state data. After submersion, the measurement updates include depth and water pressure data. The watch also begins receiving water temperature updates.
 

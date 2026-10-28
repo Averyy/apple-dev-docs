@@ -14,7 +14,7 @@ virtual IOReturn notify(
  UInt32numDCLCommands );
 ```
 
-#### Return Value
+## Return Value
 
 IOKit error code.
 

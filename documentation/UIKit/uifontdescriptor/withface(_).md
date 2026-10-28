@@ -24,7 +24,7 @@ func withFace(_ newFace: String) -> UIFontDescriptor
 - (UIFontDescriptor *) fontDescriptorWithFace:(NSString *) newFace;
 ```
 
-#### Return Value
+## Return Value
 
 The new font descriptor.
 

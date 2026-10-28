@@ -20,7 +20,7 @@ A unique push token that may be used to deliver updates for widgets and widget r
 let token: Data
 ```
 
-#### Discussion
+## Discussion
 
 This token is valid until told otherwise through the [`pushTokenDidChange(_:widgets:)`](../widgetpushhandler/pushtokendidchange%28_,widgets%29.md) method on your push handler.
 

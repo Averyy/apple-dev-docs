@@ -25,7 +25,7 @@ var renamingIdentifier: String? { get set }
 @property (copy, nullable) NSString * renamingIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The renaming identifier is used to resolve naming conflicts between models. When creating a mapping model between two managed object models, a source entity and a destination entity that share the same identifier indicate that an entity mapping should be configured to migrate from the source to the destination.
 

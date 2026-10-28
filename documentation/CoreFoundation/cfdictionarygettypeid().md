@@ -25,11 +25,11 @@ func CFDictionaryGetTypeID() -> CFTypeID
 extern CFTypeID CFDictionaryGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFDictionary opaque type.
 
-#### Discussion
+## Discussion
 
 CFMutableDictionary objects have the same type identifier as CFDictionary objects.
 

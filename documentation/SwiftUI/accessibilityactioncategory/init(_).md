@@ -36,7 +36,7 @@ init(_ name: some StringProtocol)
 init(_ nameKey: LocalizedStringKey)
 ```
 
-#### Discussion
+## Discussion
 
 Extension AccessibilityActionCategory { static let table = AccessibilityActionCategory(“Table Options”) }
 

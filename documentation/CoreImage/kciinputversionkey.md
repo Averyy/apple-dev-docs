@@ -24,7 +24,7 @@ let kCIInputVersionKey: String
 extern NSString * const kCIInputVersionKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for an [`NSNumber`](../Foundation/nsnumber.md) object that specifies a version number.
 

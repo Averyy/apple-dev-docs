@@ -23,7 +23,7 @@ func reportOutgoingCall(with UUID: UUID, connectedAt dateConnected: Date?)
 - (void) reportOutgoingCallWithUUID:(NSUUID *) UUID connectedAtDate:(NSDate *) dateConnected;
 ```
 
-#### Discussion
+## Discussion
 
 An outgoing call should call this method after calling the [`reportOutgoingCall(with:startedConnectingAt:)`](./reportoutgoingcall%28with,startedconnectingat%29.md) and after the call is connected.
 

@@ -36,7 +36,7 @@ nonisolated
 init<S>(_ title: S, text: Binding<String>, prompt: Text?) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`onSubmit(of:_:)`](../view/onsubmit%28of,_%29.md) modifier to invoke an action whenever someone submits this secure field — for example, by pressing the Return key.
 

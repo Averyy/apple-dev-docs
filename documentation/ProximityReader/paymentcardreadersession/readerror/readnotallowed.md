@@ -17,7 +17,7 @@ The read operation isn’t allowed at this time.
 case readNotAllowed
 ```
 
-#### Discussion
+## Discussion
 
 This error usually occurs when there’s an entitlement issue.
 

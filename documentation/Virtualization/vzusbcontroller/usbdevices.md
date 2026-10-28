@@ -19,7 +19,7 @@ var usbDevices: [any VZUSBDevice] { get }
 @property (copy, readonly) NSArray<id<VZUSBDevice>> * usbDevices;
 ```
 
-#### Discussion
+## Discussion
 
 If a [`VZVirtualMachineConfiguration`](../vzvirtualmachineconfiguration.md) contains a USB controller configuration that contains USB devices, those devices appear in the list when you start the virtual machine.
 

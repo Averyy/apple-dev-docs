@@ -31,7 +31,7 @@ var maximumPartySize: NSNumber? { get set }
 @property (atomic, copy, nullable) NSNumber * maximumPartySize;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the maximum party size that the restaurant allows. The system provides the user with this information and prevents the user from booking reservations when the party size exceeds this value.
 

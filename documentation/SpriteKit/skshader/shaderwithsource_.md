@@ -21,7 +21,7 @@ Creates a new shader object using the specified source code.
 + (instancetype) shaderWithSource:(NSString *) source;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized shader object.
 

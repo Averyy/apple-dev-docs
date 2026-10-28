@@ -15,11 +15,11 @@ Returns the character in the alternate title that’s marked as the “keyboard 
 - (NSString *) alternateMnemonic;
 ```
 
-#### Return Value
+## Return Value
 
 The character in the alternate title (the title displayed on the button when it’s in its alternate state) marked as the “keyboard mnemonic.”
 
-#### Discussion
+## Discussion
 
 Mnemonics are not supported in macOS.
 

@@ -16,7 +16,7 @@ Fill the buffer of a network data object with zeroes.
 IOReturn IONetworkResetData(io_connect_t conObject, IONDHandle dataHandle);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success, or an error code otherwise.
 

@@ -26,7 +26,7 @@ func documentDidOpen()
 
 - [Customizing a document-based app’s launch experience](../customizing-a-document-based-app-s-launch-experience.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method after the document view controller opens its document, or when an object assigns an already opened document to the document view controller’s `document` property. Override this method to customize the views that present your document in the view:
 

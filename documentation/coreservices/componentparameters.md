@@ -16,7 +16,7 @@ typedef struct ComponentParameters {
 } ComponentParameters;
 ```
 
-#### Overview
+## Overview
 
 The Component Manager uses the component parameters structure to pass information to your component about a request from an application. Functions which use this data type are  [`CallComponentFunction`](./api-1516603-callcomponentfunction.md) ,  [`CallComponentFunctionWithStorage`](./api-1516610-callcomponentfunctionwithstorage.md) , and  [`DelegateComponentCall`](./api-1516373-delegatecomponentcall.md).The information in this structure completely defines the request. Your component services the request as appropriate.
 

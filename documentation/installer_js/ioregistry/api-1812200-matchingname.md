@@ -11,7 +11,7 @@ Returns the IOKit objects of the specified name.
 matchingName(objectName, [servicePlane])
 ```
 
-#### Return Value
+## Return Value
 
 An array of IOKit object dictionaries.
 

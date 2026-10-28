@@ -21,7 +21,7 @@ Returns a filter that transforms the rasterized form of subsequent graphics prim
 static func projectionTransform(_ matrix: ProjectionTransform) -> GraphicsContext.Filter
 ```
 
-#### Return Value
+## Return Value
 
 A filter that applies a transform.
 

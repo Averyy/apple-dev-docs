@@ -21,7 +21,7 @@ var inputModes: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * inputModes;
 ```
 
-#### Discussion
+## Discussion
 
 An example array entry is `en_US`. A user may switch between multiple languages in the same session.
 

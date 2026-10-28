@@ -25,7 +25,7 @@ typealias CFPlugInDynamicRegisterFunction = (CFPlugIn?) -> Void
 typedef void (*)(struct __CFBundle *) CFPlugInDynamicRegisterFunction;
 ```
 
-#### Discussion
+## Discussion
 
 This callback is called as a plug-in is being loaded. This provides the plugin the means to dynamically register its types and factories with a plug-in’s host. The call is triggered by the presence of [`kCFPlugInDynamicRegistrationKey`](./kcfplugindynamicregistrationkey.md) in the plug-in’s information property list.
 

@@ -34,7 +34,7 @@ var temporalEventTrigger: INTemporalEventTrigger? { get }
 @property (atomic, copy, readonly, nullable) INTemporalEventTrigger * temporalEventTrigger;
 ```
 
-#### Discussion
+## Discussion
 
 Assign the specified trigger, if any, to all of the tasks that you create.
 

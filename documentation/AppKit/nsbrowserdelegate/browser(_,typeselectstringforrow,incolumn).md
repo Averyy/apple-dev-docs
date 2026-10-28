@@ -20,11 +20,11 @@ optional func browser(_ browser: NSBrowser, typeSelectStringForRow row: Int, inC
 - (NSString *) browser:(NSBrowser *) browser typeSelectStringForRow:(NSInteger) row inColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The keyboard-based selection string.
 
-#### Discussion
+## Discussion
 
 Returning the empty string or `nil` (for example, when the cell does not contain text) specifies that the `[``column`, `row``]` cell has no text to search.
 

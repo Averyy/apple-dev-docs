@@ -21,7 +21,7 @@ Siting offset of a component, relative to pixel center.
 struct Offset
 ```
 
-#### Overview
+## Overview
 
 A positive offset value indicates that the sensel/component lies to the right of or below the center of its pixel, while a negative value indicates that the sensel/component lies to the left of or above the center of its pixel. Horizontal and vertical offset magnitudes are respectively in terms of the spacing between horizontally and vertically-adjacent pixel centers.
 

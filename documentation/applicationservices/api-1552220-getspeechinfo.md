@@ -15,11 +15,11 @@ Gets information about a designated speech channel.
 OSErr GetSpeechInfo(SpeechChannel chan, OSType selector, void *speechInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `GetSpeechInfo` functionreturns, in the data structure pointed to by the `speechInfo` parameter,the type of information requested by the `selector` parameteras it applies to the speech channel specified in the `chan` parameter.
 

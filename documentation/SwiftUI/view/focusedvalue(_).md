@@ -26,7 +26,7 @@ func focusedValue<T>(_ object: T?) -> some View where T : AnyObject, T : Observa
 
 - [Building and customizing the menu bar with SwiftUI](../building-and-customizing-the-menu-bar-with-swiftui.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: This initializer only accepts objects conforming to the `Observable` protocol. For reading environment objects that conform to `ObservableObject`, use `focusedObject(_:)`, instead.
 

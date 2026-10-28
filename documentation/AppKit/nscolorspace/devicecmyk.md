@@ -19,7 +19,7 @@ class var deviceCMYK: NSColorSpace { get }
 @property (class, strong, readonly) NSColorSpace * deviceCMYKColorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSColorSpace` object. This color space has cyan, magenta, yellow, black, and alpha components. Typical devices that use the color-subtractive CMYK color space are color printers. This object corresponds to the Cocoa color space name `NSDeviceCMYKColorSpace`.
 

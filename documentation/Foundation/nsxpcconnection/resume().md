@@ -25,7 +25,7 @@ func resume()
 - (void) resume;
 ```
 
-#### Discussion
+## Discussion
 
 All connections start suspended. You must resume them before they start processing received messages or sending messages through the [`remoteObjectProxy()`](../nsxpcproxycreating/remoteobjectproxy%28%29.md) object.
 

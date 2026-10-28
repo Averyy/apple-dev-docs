@@ -16,7 +16,7 @@ The state of the transition that the system provides to the delegate object.
 struct TransitionContext
 ```
 
-#### Overview
+## Overview
 
 When `AVExperienceController` transitions its `experience` from `fromExperience` to `toExperience`, delegate callbacks provide instances of `TransitionContext` to allow clients to respond as the transition progresses or reverts. The normal `Status` sequence is `.preparing` -> `.transitioning` -> `.completed` Once `.completed`, `AVExperienceController`’s `experience` is now the `toExperience`.
 

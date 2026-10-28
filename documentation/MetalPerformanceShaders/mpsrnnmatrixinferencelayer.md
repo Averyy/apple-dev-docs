@@ -24,7 +24,7 @@ class MPSRNNMatrixInferenceLayer
 @interface MPSRNNMatrixInferenceLayer : MPSKernel
 ```
 
-#### Overview
+## Overview
 
 The [`MPSRNNMatrixInferenceLayer`](./mpsrnnmatrixinferencelayer.md) specifies a recurrent neural network layer for inference on [`MPSMatrix`](./mpsmatrix.md) objects. Two types of recurrent layers are supported:
 

@@ -19,7 +19,7 @@ The f-stop value that inversely affects the aperture used to render the Cinemati
 @property float fNumber;
 ```
 
-#### Discussion
+## Discussion
 
 Pass this to the rendering session in the rendering frame attributes to match the selected aperture. Change this property when the user selects a different aperture for the edited movie. Reflect script changes for later restoration by making changes to this property.
 

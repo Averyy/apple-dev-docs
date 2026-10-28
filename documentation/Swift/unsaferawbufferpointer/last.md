@@ -21,7 +21,7 @@ The last element of the collection.
 var last: Self.Element? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the collection is empty, the value of this property is `nil`.
 

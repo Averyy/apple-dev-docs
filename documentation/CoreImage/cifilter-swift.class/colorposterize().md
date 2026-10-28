@@ -24,11 +24,11 @@ class func colorPosterize() -> any CIFilter & CIColorPosterize
 + (CIFilter<CIColorPosterize> *) colorPosterizeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the color posterize filter to an image. The effect remaps red, green, and blue color components to a specified brightness value. The effect mimics the look of a silk-screened poster.
 

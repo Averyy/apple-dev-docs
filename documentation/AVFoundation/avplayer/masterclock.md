@@ -27,7 +27,7 @@ var masterClock: CMClock? { get set }
 @property (nonatomic, retain, nullable) CMClockRef masterClock;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `NULL`, which means that the host clock is the automatic choice. When non-`NULL`, this property overrides the automatic choice of host clock for item time bases. This is most useful when you’re synchronizing video-only movies with audio from another source.
 

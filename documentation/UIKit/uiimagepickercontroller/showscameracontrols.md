@@ -21,7 +21,7 @@ var showsCameraControls: Bool { get set }
 @property (nonatomic) BOOL showsCameraControls;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md), which specifies that the default camera controls are visible in the picker. Set it to [`false`](../../Swift/false.md) to hide the default controls if you want to instead provide a custom overlay view using the [`cameraOverlayView`](./cameraoverlayview.md) property.
 

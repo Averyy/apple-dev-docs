@@ -15,13 +15,13 @@ The response object for a Keyword query, containing matched results and paginati
 object KeywordQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `KeywordQueryResponse` object is returned by the keyword query endpoint and contains the filtered, sorted, and paginated set of `Keyword` objects matching the request.
 
 To narrow results to a specific ad group, campaign, or set of keyword IDs, use the `QueryRequest` body with `filters`, `sorting`, and `pagination`. Multiple filter conditions are combined with AND logic.
 
-##### Example
+### Example
 
 ```json
 {

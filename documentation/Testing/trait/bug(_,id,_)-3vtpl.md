@@ -31,7 +31,7 @@ Available when `Self` is `Bug`.
 - [Interpreting bug identifiers](../bugidentifiers.md)
 - [Enabling and disabling tests](../enablinganddisabling.md)
 
-#### Return Value
+## Return Value
 
 An instance of [`Bug`](../bug.md) that represents the specified bug.
 

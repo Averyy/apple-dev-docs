@@ -27,7 +27,7 @@ var identifier: String { get }
 
 - [Accessing Health Records](../accessing-health-records.md)
 
-#### Discussion
+## Discussion
 
 This identifier is only unique for a particular resource type from a given source. To uniquely identify a FHIR resource, you must compare the [`identifier`](./identifier.md) and [`resourceType`](./resourcetype.md) properties from the [`HKFHIRResource`](../hkfhirresource.md) object and the [`bundleIdentifier`](../hksource/bundleidentifier.md) property from the clinical record’s [`source`](../hkobject/source.md).
 

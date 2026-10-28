@@ -19,7 +19,7 @@ let kSCPropNetProxiesProxyAutoConfigJavaScript: CFString
 extern CFStringRef const kSCPropNetProxiesProxyAutoConfigJavaScript;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is of type [`CFString`](../CoreFoundation/cfstring.md).
 

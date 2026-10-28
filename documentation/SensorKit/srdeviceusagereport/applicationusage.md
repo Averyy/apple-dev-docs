@@ -21,7 +21,7 @@ class ApplicationUsage
 @interface SRApplicationUsage : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each instance of this class represents an app in a particular app category. For more information, see [`applicationUsageByCategory`](./applicationusagebycategory.md).
 

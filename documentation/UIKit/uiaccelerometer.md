@@ -14,7 +14,7 @@ An object that lets you register to receive acceleration-related data from the o
 @interface UIAccelerometer : NSObject
 ```
 
-#### Overview
+## Overview
 
 As a device moves, its hardware reports linear acceleration changes along the primary axes in three-dimensional space. You can use this data to detect both the current orientation of the device (relative to the ground) and any instantaneous changes to that orientation. You might use instantaneous changes as input to a game or to initiate some action in your application.
 

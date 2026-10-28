@@ -22,11 +22,11 @@ func deviceWhiteBalanceGains(for chromaticityValues: AVCaptureDevice.WhiteBalanc
 - (AVCaptureWhiteBalanceGains) deviceWhiteBalanceGainsForChromaticityValues:(AVCaptureWhiteBalanceChromaticityValues) chromaticityValues;
 ```
 
-#### Return Value
+## Return Value
 
 A structure that contains device-specific RGB gain values.
 
-#### Discussion
+## Discussion
 
 This property specifies the current red, green, and blue gain values used for white balance. You can use the values to adjust color casts for a given scene.
 

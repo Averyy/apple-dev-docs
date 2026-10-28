@@ -25,7 +25,7 @@ static let completeUnlessOpen: FileProtectionType
 extern NSFileProtectionType const NSFileProtectionCompleteUnlessOpen;
 ```
 
-#### Discussion
+## Discussion
 
 Files with this type of protection can be created while the device is locked, but once closed, cannot be opened again until the device is unlocked. If the file is opened when unlocked, you may continue to access the file normally, even if the user locks the device. There is a small performance penalty when the file is created and opened, though not when being written to or read from. This can be mitigated by changing the file protection to [`complete`](./complete.md) when the device is unlocked.
 

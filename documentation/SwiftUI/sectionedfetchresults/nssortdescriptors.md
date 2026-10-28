@@ -22,7 +22,7 @@ The request’s sort descriptors, accessed as reference types.
 @preconcurrency var nsSortDescriptors: [NSSortDescriptor] { get nonmutating set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to cause the associated [`SectionedFetchRequest`](../sectionedfetchrequest.md) to execute a fetch with a new collection of [`NSSortDescriptor`](../../Foundation/nssortdescriptor.md) instances. The order of managed objects stored in the results collection may change as a result. Use care to coordinate section and sort updates, as described in [`SectionedFetchRequest.Configuration`](../sectionedfetchrequest/configuration.md).
 

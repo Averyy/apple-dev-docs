@@ -19,7 +19,7 @@ The type of footer to use for the list.
 var footerMode: UICollectionLayoutListConfiguration.FooterMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`UICollectionLayoutListConfiguration.FooterMode.none`](./footermode-swift.enum/none.md).
 

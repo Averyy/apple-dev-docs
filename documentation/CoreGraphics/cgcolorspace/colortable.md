@@ -21,7 +21,7 @@ The entries in the color table of an indexed color space.
 var colorTable: [UInt8]? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the color space is an indexed color space, this array contains color component values for the colors in the color space, in the same format you use when creating an indexed color space with the [`init(indexedBaseSpace:last:colorTable:)`](./init%28indexedbasespace,last,colortable%29.md) initializer.
 

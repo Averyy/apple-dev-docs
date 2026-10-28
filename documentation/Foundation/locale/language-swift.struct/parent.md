@@ -21,7 +21,7 @@ The parent language of this language, if available.
 var parent: Locale.Language? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, the parent language of `en_US_POSIX` is `en_US`.
 

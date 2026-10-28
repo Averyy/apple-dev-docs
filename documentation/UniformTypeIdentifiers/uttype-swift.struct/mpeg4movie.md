@@ -21,7 +21,7 @@ A type that represents an MPEG-4 movie.
 static var mpeg4Movie: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.mpeg-4`.
 

@@ -19,7 +19,7 @@ class NSViewAnimation
 @interface NSViewAnimation : NSAnimation
 ```
 
-#### Overview
+## Overview
 
 An [`NSViewAnimation`](./nsviewanimation.md) object takes an array of dictionaries from which it determines the objects to animate and the effects to apply to them. Each dictionary must have a target object and, optionally, properties that specify beginning and ending frame and whether to fade in or fade out. (See [`NSViewAnimation.Key`](./nsviewanimation/key.md) for further information.) Animations with [`NSViewAnimation`](./nsviewanimation.md) are, by default, in non-blocking mode over a duration of 0.5 seconds using the ease in-out animation curve. But you can configure the animation to have any duration, curve, frame rate, and blocking mode. You may also set progress marks, assign a delegate, and implement delegation methods in order to animate view and windows concurrent with the ones specified as targets in the view-animation dictionary.
 

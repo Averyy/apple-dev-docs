@@ -19,7 +19,7 @@ enum NSAccessibilitySortDirection
 enum NSAccessibilitySortDirection : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 This constant is used with the [`accessibilitySortDirection`](./nsaccessibility-c.protocol/accessibilitysortdirection.md) property.
 

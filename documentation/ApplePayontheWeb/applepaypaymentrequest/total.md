@@ -20,7 +20,7 @@ required ApplePayLineItem total;
 
 - [Apple Pay on the Web Version 4 Release Notes](../apple-pay-on-the-web-version-4-release-notes.md)
 
-#### Discussion
+## Discussion
 
 See [`ApplePayLineItem`](../applepaylineitem.md).
 

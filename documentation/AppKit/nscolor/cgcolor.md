@@ -19,7 +19,7 @@ var cgColor: CGColor { get }
 @property (readonly) CGColorRef CGColor;
 ```
 
-#### Discussion
+## Discussion
 
 This property always contains a valid color, even though the value may be an approximation in some cases. There is no guaranteed round-trip color fidelity.
 

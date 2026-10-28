@@ -20,7 +20,7 @@ func perform(_ pattern: NSHapticFeedbackManager.FeedbackPattern, performanceTime
 - (void) performFeedbackPattern:(NSHapticFeedbackPattern) pattern performanceTime:(NSHapticFeedbackPerformanceTime) performanceTime;
 ```
 
-#### Discussion
+## Discussion
 
 In some cases, the system may override a call to this method. For example, a Force Touch trackpad won’t provide haptic feedback if the user isn’t touching the trackpad.
 

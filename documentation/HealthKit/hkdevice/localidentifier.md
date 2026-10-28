@@ -24,7 +24,7 @@ var localIdentifier: String? { get }
 @property (readonly, nullable) NSString * localIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 For example, Bluetooth peripherals that store data directly into HealthKit use the peripheral’s CoreBluetooth UUID. This ID is only valid on the current hardware running the app. For example, connecting the same Bluetooth device to an iPhone and an Apple Watch produces two different local identifiers. Similarly, updating a device changes the local identifier. Device objects with different local identifiers appear as separate devices in the HealthKit Store.
 

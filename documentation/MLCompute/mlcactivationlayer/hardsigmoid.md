@@ -23,7 +23,7 @@ class var hardSigmoid: MLCActivationLayer { get }
 @property (class, nonatomic, readonly) MLCActivationLayer * hardSigmoidLayer;
 ```
 
-#### Discussion
+## Discussion
 
 This factory creates an activation descriptor using [`init(type:a:b:)`](../mlcactivationdescriptor/init%28type,a,b%29.md), where `type =` [`MLCActivationType.hardSigmoid`](../mlcactivationtype/hardsigmoid.md), `a = 0.2`, and `b = 0.5`, and passes that descriptor to [`init(descriptor:)`](./init%28descriptor%29.md).
 

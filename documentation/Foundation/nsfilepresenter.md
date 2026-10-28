@@ -29,7 +29,7 @@ protocol NSFilePresenter : NSObjectProtocol
 
 - [Improving performance and stability when accessing the file system](./improving-performance-and-stability-when-accessing-the-file-system.md)
 
-#### Overview
+## Overview
 
 Objects that allow the user to view or edit the content of files or directories should adopt the [`NSFilePresenter`](./nsfilepresenter.md) protocol. You use file presenters in conjunction with an [`NSFileCoordinator`](./nsfilecoordinator.md) object to coordinate access to a file or directory among the objects of your application and between your application and other processes. When changes to an item occur, the system notifies objects that adopt this protocol and gives them a chance to respond appropriately.
 
@@ -39,7 +39,7 @@ You can use file presenters to coordinate access to a file or directory among yo
 
 For information about how to use file presenters with a file coordinator object, see [`NSFileCoordinator`](./nsfilecoordinator.md).
 
-##### File Presenters and iOS
+### File Presenters and iOS
 
 If your app enters the background with an active file presenter, any other processes that perform a coordinated read or write on the presented file can deadlock. To prevent this situation, call the coordinator’s [`removeFilePresenter(_:)`](./nsfilecoordinator/removefilepresenter%28_%29.md) type method to remove the file presenter in the [`applicationDidEnterBackground(_:)`](../UIKit/uiapplicationdelegate/applicationdidenterbackground%28_%29.md) method or in response to a [`didEnterBackgroundNotification`](../UIKit/uiapplication/didenterbackgroundnotification.md) notification. Call [`addFilePresenter(_:)`](./nsfilecoordinator/addfilepresenter%28_%29.md) to add the file presenter again in the [`applicationWillEnterForeground(_:)`](../UIKit/uiapplicationdelegate/applicationwillenterforeground%28_%29.md) method or in response to a [`willEnterForegroundNotification`](../UIKit/uiapplication/willenterforegroundnotification.md) notification.
 

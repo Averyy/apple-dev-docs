@@ -17,7 +17,7 @@ typedef struct CM2Header {
 } CM2Header;
 ```
 
-#### Overview
+## Overview
 
 The ColorSync Manager defines the `CM2header` profile structure to support the header format specified by the ICC format specification for version 2.x profiles. For a description of `CMHeader`, the ColorSync 1.0 profile header, see `CMHeader`. To obtain a copy of the International Color Consortium Profile Format Specification, or to get other information about the ICC, visit the ICC Web site at  [http://www.color.org/](http://www.color.org/).
 

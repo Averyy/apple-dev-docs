@@ -24,11 +24,11 @@ func topCandidates(_ maxCandidateCount: Int) -> [VNRecognizedText]
 - (NSArray<VNRecognizedText *> *) topCandidates:(NSUInteger) maxCandidateCount;
 ```
 
-#### Return Value
+## Return Value
 
 An array of the *n* top candidates, sorted by decreasing confidence score.
 
-#### Discussion
+## Discussion
 
 This function returns no more than *n* candidates, but it may return fewer than *n* candidates.
 

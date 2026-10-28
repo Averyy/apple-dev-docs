@@ -13,7 +13,7 @@
 kIODebuggerLockTaken = 0x1
 ```
 
-#### Discussion
+## Discussion
 
 Set if the debugger lock was taken.
 

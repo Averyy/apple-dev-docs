@@ -10,7 +10,7 @@ Secure a video player in an immersive scene with a docking region you can specif
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 In visionOS, all full-screen videos automatically dock when an immersive space is open. This behavior places the video in a fixed position within your immersive space. You can use [`DockingRegionComponent`](./dockingregioncomponent.md) to customize the width and location of the docking region.
 
@@ -24,7 +24,7 @@ The sample app presents an AV player view controller with default playback contr
 
 You can dock a video player by following the steps below.
 
-##### Create an immersive visionOS app
+### Create an immersive visionOS app
 
 In Xcode, choose File > New > Project, select visionOS and Immersive Environment App in the New Project dialog, and click Next.
 
@@ -34,11 +34,11 @@ Enter your product name and organization identifier, and choose between a progre
 
 To continue, include a video in the bundle or provide a URL to an external video in `AVPlayerViewModel.swift`. The Immersive Environment App template launches with a window that includes a single button to show the immersive space. Showing the immersive space starts playing the video and displays the `AVPlayerView` full screen in the window. The system automatically docks this full-screen video in the default docking position.
 
-##### Play the video in the shared space
+### Play the video in the shared space
 
 To play the video in the shared space and immersive space, remove the calls to the `avPlayerViewModel` in the [`onAppear(perform:)`](../SwiftUI/view/onappear%28perform%29.md) and [`onDisappear(perform:)`](../SwiftUI/view/ondisappear%28perform%29.md) methods of `ImmersiveView`. Remove the `ToggleImmersiveSpaceButton` from the `ContentView` and replace it with a button that plays the video. At this point, the app plays the video full screen after someone taps the Play Video button, but the custom immersive space doesn’t appear.
 
-##### Add an immersive scene-viewing option to your video player
+### Add an immersive scene-viewing option to your video player
 
 Create an immersive picker view that toggles the immersive scene through existing immersive space APIs.
 
@@ -77,7 +77,7 @@ AVPlayerView(viewModel: avPlayerViewModel)
 
 ![A screenshot of the visionOS app in Simulator showing the immersive scene picker.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/docking-immersive-picker@2x.png)
 
-##### Create a docking-region component with a docking entity
+### Create a docking-region component with a docking entity
 
 The Immersive Environment App template comes with a Reality Composer Pro project that includes a `Player` entity with the docking region. To customize the docking-region settings in Xcode, open the Reality Composer Pro package and remove the `Video_Dock` entity that contains the `Player` entity.
 

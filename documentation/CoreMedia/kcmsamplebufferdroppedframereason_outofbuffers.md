@@ -25,7 +25,7 @@ let kCMSampleBufferDroppedFrameReason_OutOfBuffers: CFString
 extern CFStringRef const kCMSampleBufferDroppedFrameReason_OutOfBuffers;
 ```
 
-#### Discussion
+## Discussion
 
 The module providing sample buffers        has run out of source buffers.  This condition is typically caused by the client holding onto        buffers for too long and can be alleviated by returning buffers to the provider.
 

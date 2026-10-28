@@ -5,7 +5,7 @@
 
 Customize the Xcode project window and editor area to view and edit project files in a configuration you prefer.
 
-#### Overview
+## Overview
 
 The Xcode *project window* is your primary interface for viewing, editing, and managing all parts of your project. You can configure it to fit your work style and adjust it as you work on different tasks. It’s especially helpful to configure the editor area, where you spend most of your time modifying files. Then use features, like the jump bar, minimap, and tab bar, to navigate quickly around your project files.
 
@@ -25,7 +25,7 @@ To create an Xcode project, see [Creating an Xcode project for an app](./creatin
 
 > **Note**: You can perform most commands described in this document using corresponding menus in the Xcode menu bar. Refer to the menu items for keyboard shortcuts.
 
-##### Show and hide areas of the main window
+### Show and hide areas of the main window
 
 Configure the areas of the main window to focus on your specific task. To show or hide the navigator, inspector, and debug areas:
 
@@ -37,13 +37,13 @@ To switch the navigator, click a navigator in the control above the navigator ar
 
 For information about the coding assistant, which appears in the navigator area when you click the coding assistant button, see [Writing code with intelligence in Xcode](./writing-code-with-intelligence-in-xcode.md).
 
-##### Navigate the project files
+### Navigate the project files
 
 You browse the hierarchy of your project files using the Project navigator. Files that you select in the Project navigator open in the editor area. The editor that appears depends on the type of file that you select. For example, if you select a source file, Xcode opens it in the source editor.
 
 Then you can use the related menu, arrows, and jump bar that appear in the toolbar above the editor to view or open other files in the editor area.
 
-##### Add multiple editor panes to the editor area
+### Add multiple editor panes to the editor area
 
 Use the controls on the editor toolbar to open multiple files in separate editor panes.
 
@@ -54,7 +54,7 @@ Use the controls on the editor toolbar to open multiple files in separate editor
 
 ![An Xcode screenshot of the project editor with the Project navigator on the left and a source file selected. The editor area on the right shows the comparison view above and two source editor panes side-by-side below with the Canvas menu item selected from the Adjust Editor Options pop-up menu.](https://developer.apple.com/tutorials/images/com.apple.Xcode/configuring-editor-area@2x.png)
 
-##### Choose editor options and companion views
+### Choose editor options and companion views
 
 You configure editor panes using controls on the editor toolbar. Use the Adjust Editor Options pop-up menu on the right of the editor toolbar to add options to an editor pane and change the layout of it. You can choose from the following editor options:
 
@@ -70,7 +70,7 @@ You configure editor panes using controls on the editor toolbar. Use the Adjust 
 - **Invisibles**: Shows invisible characters in a file.
 - **Wrap Line**: Wraps lines that exceed the width of the editor.
 
-##### Compare file changes with previous versions
+### Compare file changes with previous versions
 
 For files under source control, you can compare your changes with a previous commit. To toggle the comparsion view, click the Enable/Disable Code Review button on the left of the editor toolbar.
 
@@ -78,7 +78,7 @@ To show the previous commit on the right of an editor, choose Side By Side Compa
 
 Then use the controls on the bottom of the comparison view to select versions of the file to compare.
 
-##### Switch quickly between files using the tab bar
+### Switch quickly between files using the tab bar
 
 Use the *tab bar* that appears above an editor pane to open and pin files that you access frequently. To show the tab bar, choose View > Show Editor Tab Bar. Then add, remove, and pin files:
 

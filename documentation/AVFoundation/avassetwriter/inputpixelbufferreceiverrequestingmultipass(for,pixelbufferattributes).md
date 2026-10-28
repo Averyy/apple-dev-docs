@@ -20,7 +20,7 @@ Attaches the input to the writer and returns a tuple with an input receiver for 
 func inputPixelBufferReceiverRequestingMultiPass(for input: AVAssetWriterInput, pixelBufferAttributes attributes: CVPixelBufferCreationAttributes?) -> sending (AVAssetWriterInput.PixelBufferReceiver, AVAssetWriterInput.MultiPassController)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple with an input receiver for writing pixel buffers, and an associated multi pass controller.
 

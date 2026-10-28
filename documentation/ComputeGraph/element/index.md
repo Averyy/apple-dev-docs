@@ -16,11 +16,11 @@ Returns the index of the current element.
 uint element::index()
 ```
 
-#### Return Value
+## Return Value
 
 The zero-based index of the element
 
-#### Discussion
+## Discussion
 
 Use this function to get the element’s position in the element buffer, which can be useful for creating unique variations or patterns.
 

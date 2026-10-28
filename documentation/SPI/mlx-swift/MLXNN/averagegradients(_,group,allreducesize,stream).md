@@ -17,7 +17,7 @@ Average the gradients across the processes in the group.
 func averageGradients(_ gradients: ModuleParameters, group: MLXDistributed.Group? = nil, allReduceSize: Int = 32 * 1024 * 1024, stream: StreamOrDevice = .cpu) throws -> ModuleParameters
 ```
 
-#### Discussion
+## Discussion
 
 Small gradients are concatenated into batches of at least `allReduceSize` bytes so that they are communicated in one step, which is considerably faster than one call per array.
 

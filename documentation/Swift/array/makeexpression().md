@@ -23,11 +23,11 @@ func makeExpression() -> IntentValueExpression
 
 Available when `Element` conforms to `IntentValueConvertible`.
 
-#### Return Value
+## Return Value
 
 An intent value expression representing this array.
 
-#### Discussion
+## Discussion
 
 The system evaluates the expression when needed, allowing for lazy conversion of the array’s elements.
 

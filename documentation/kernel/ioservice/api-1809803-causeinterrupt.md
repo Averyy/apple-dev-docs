@@ -12,11 +12,11 @@ virtual IOReturn causeInterrupt(
  intsource);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code (`kIOReturnNoInterrupt` is returned if the source is not valid).
 
-#### Overview
+## Overview
 
 Emulates a hardware interrupt, to be called from task level.
 

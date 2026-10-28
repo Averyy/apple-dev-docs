@@ -19,7 +19,7 @@ var numberOfGlyphs: Int { get }
 @property (readonly) NSUInteger numberOfGlyphs;
 ```
 
-#### Discussion
+## Discussion
 
 Glyphs are numbered starting at 0.
 

@@ -25,7 +25,7 @@ case failure
 INPayBillIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code for both transient and unrecoverable errors that prevented you from scheduling the transaction.
 

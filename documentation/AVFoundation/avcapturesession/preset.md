@@ -23,7 +23,7 @@ struct Preset
 typedef NSString * AVCaptureSessionPreset;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a [`sessionPreset`](./sessionpreset.md) value provides a convenient way to configure a capture session for common use cases.
 

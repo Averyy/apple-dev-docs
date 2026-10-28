@@ -24,7 +24,7 @@ var overallScore: Float { get }
 @property (nonatomic, assign, readonly) float overallScore;
 ```
 
-#### Discussion
+## Discussion
 
 This returns a value within the range of `-1` and `1`, where `-1` is least desirable and `1` is most desirable.
 

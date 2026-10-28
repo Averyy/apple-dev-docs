@@ -19,7 +19,7 @@ static let vCard: NSPasteboard.PasteboardType
 extern NSPasteboardType NSVCardPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use `(NSString *)kUTTypeVCard` instead.
 

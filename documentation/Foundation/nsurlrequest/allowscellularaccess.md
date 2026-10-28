@@ -25,7 +25,7 @@ var allowsCellularAccess: Bool { get }
 @property (readonly) BOOL allowsCellularAccess;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the cellular radio can be used; [`false`](../../Swift/false.md) otherwise.
 

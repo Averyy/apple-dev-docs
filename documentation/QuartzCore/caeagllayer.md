@@ -23,7 +23,7 @@ class CAEAGLLayer
 @interface CAEAGLLayer : CALayer
 ```
 
-#### Overview
+## Overview
 
 If you plan to use OpenGL for your rendering, use this class as the backing layer for your views by returning it from your view’s [`layerClass`](../UIKit/uiview/layerclass.md) class method. The returned [`CAEAGLLayer`](./caeagllayer.md) object is a wrapper for a Core Animation surface that is fully compatible with OpenGL ES function calls.
 

@@ -24,7 +24,7 @@ var greenRange: Float { get set }
 @property float greenRange;
 ```
 
-#### Discussion
+## Discussion
 
 The range specifies the mean amount by which the green component of the [`color`](./color.md) property can vary for the cell.
 

@@ -21,7 +21,7 @@ Controls whether a tip obeys the preconfigured display frequency interval.
 typealias IgnoresDisplayFrequency = Tips.IgnoresDisplayFrequency
 ```
 
-#### Overview
+## Overview
 
 Use this option to allow a tip to appear even if the [`displayFrequency(_:)`](../tips/configurationoption/displayfrequency%28_%29.md) has not been satisfied.
 

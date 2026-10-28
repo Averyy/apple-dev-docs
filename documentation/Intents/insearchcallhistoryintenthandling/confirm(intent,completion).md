@@ -29,7 +29,7 @@ optional func confirm(intent: INSearchCallHistoryIntent) async -> INSearchCallHi
 - (void) confirmSearchCallHistory:(INSearchCallHistoryIntent *) intent completion:(void (^)(INSearchCallHistoryIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you’re able to perform the search using the specified criteria. You might use this method to validate that you’ve access to the user’s call history and that there are records to search.
 

@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const OSMetaClassBase *obj) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if equal, false otherwise.
 
-#### Overview
+## Overview
 
 The OSObject is considered equal to the IONetworkMedium object if the OSObject is an IONetworkMedium, and they have similar properties assigned to them during initialization.
 

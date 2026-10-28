@@ -19,7 +19,7 @@ class func startServicePrincipal(with delegate: (any FxPrincipalDelegate)!)
 + (void) startServicePrincipalWithDelegate:(id<FxPrincipalDelegate>) delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Once a connection is established, your delegate will be informed of the host application’s ID and version.
 

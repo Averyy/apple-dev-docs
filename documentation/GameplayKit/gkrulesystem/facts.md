@@ -24,7 +24,7 @@ var facts: [Any] { get }
 @property (nonatomic, retain, readonly) NSArray * facts;
 ```
 
-#### Discussion
+## Discussion
 
 A fact is any object representing a truth claimed by the rule system. You can use any type of object to represent the facts in your system: simple data types like strings and numbers typically suffice, but you can also use custom objects from your game’s data model.
 

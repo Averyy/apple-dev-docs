@@ -20,7 +20,7 @@ An action that applies an impulse to the physics body at its center of mass when
 struct ImpulseAction
 ```
 
-#### Overview
+## Overview
 
 This action requires a [`CollisionComponent`](./collisioncomponent.md) and [`PhysicsBodyComponent`](./physicsbodycomponent.md) with the [`mode`](./physicsbodycomponent/mode.md) set to [`PhysicsBodyMode.dynamic`](./physicsbodymode/dynamic.md). Without these settings, the impulse has no effect on the entity.
 

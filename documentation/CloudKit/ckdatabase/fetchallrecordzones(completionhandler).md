@@ -25,7 +25,7 @@ func fetchAllRecordZones(completionHandler: @escaping @Sendable ([CKRecordZone]?
 - (void) fetchAllRecordZonesWithCompletionHandler:(void (^)(NSArray<CKRecordZone *> *zones, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameters:
 

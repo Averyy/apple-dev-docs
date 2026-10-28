@@ -21,7 +21,7 @@ case requiresOutboundConnection
 kSecTransformMetaAttributeRequiresOutboundConnection
 ```
 
-#### Discussion
+## Discussion
 
 This metadata has a default value of [`true`](../../Swift/true.md) for the output attribute but is [`false`](../../Swift/false.md) for all other attributes.
 

@@ -15,7 +15,7 @@ Unlock a spin lock.
 void IOSimpleLockUnlock(IOSimpleLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Unlock the lock, and restore preemption. Results are undefined if the caller has not locked the lock.
 

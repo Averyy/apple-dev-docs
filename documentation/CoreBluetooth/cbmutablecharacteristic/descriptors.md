@@ -25,7 +25,7 @@ var descriptors: [CBDescriptor]? { get set }
 @property (retain, readwrite, nullable) NSArray<CBDescriptor *> * descriptors;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an array of [`CBDescriptor`](../cbdescriptor.md) objects that provide more information about a characteristic’s value. For example, they may describe the value in human-readable form and describe how to format the value for presentation purposes. For more information about characteristic descriptors, see [`CBDescriptor`](../cbdescriptor.md).
 

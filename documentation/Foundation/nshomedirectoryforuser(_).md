@@ -25,11 +25,11 @@ func NSHomeDirectoryForUser(_ userName: String?) -> String?
 extern NSString *NSHomeDirectoryForUser(NSString *userName);
 ```
 
-#### Return Value
+## Return Value
 
 The path to the home directory for the user specified by `userName`.
 
-#### Discussion
+## Discussion
 
 For more information on file system utilities, see Low-Level File Management Programming Topics.
 

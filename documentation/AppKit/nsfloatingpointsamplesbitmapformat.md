@@ -15,7 +15,7 @@ A format where samples are specified using floating-point numbers.
 static const NSBitmapFormat NSFloatingPointSamplesBitmapFormat;
 ```
 
-#### Discussion
+## Discussion
 
 If this option is not specified, samples are integer values.
 

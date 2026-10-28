@@ -21,11 +21,11 @@ Fetches all suggested entities of this type.
 func suggestedEntities() async throws -> [AnyAppEntity]
 ```
 
-#### Return Value
+## Return Value
 
 An array of suggested app entities.
 
-#### Discussion
+## Discussion
 
 The system uses suggested entities for disambiguation and recommendations in Shortcuts and Siri.
 

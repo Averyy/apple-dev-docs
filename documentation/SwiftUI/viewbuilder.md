@@ -27,7 +27,7 @@ struct ViewBuilder
 - [Declaring a custom view](./declaring-a-custom-view.md)
 - [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
 
-#### Overview
+## Overview
 
 When you build your project in Xcode 26 and earlier, use [`ViewBuilder`](./viewbuilder.md) as a parameter attribute for view-producing closure parameters, allowing those closures to provide multiple child views. For example, the following `contextMenu` function accepts a closure that produces one or more views via the view builder.
 

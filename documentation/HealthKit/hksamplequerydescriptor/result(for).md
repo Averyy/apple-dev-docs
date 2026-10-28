@@ -22,7 +22,7 @@ func result(for healthStore: HKHealthStore) async throws -> [Sample]
 
 Available when `Sample` inherits `HKSample`.
 
-#### Discussion
+## Discussion
 
 The adopting type’s [`Output`](../hkasyncquery/output.md) associated type specifies the values that this method returns. For example, [`HKSampleQueryDescriptor`](../hksamplequerydescriptor.md) returns an array of [`HKQuantitySample`](../hkquantitysample.md) objects.
 

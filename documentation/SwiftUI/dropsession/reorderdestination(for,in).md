@@ -24,7 +24,7 @@ func reorderDestination<Item, CollectionID>(for item: Item.Type, in collectionID
 
 - [Reordering items in lists, stacks, grids, and custom layouts](../reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
 
-#### Discussion
+## Discussion
 
 Use the `ItemID` and `CollectionID` types of your [`reorderContainer(for:in:isEnabled:move:)`](../view/reordercontainer%28for,in,isenabled,move%29.md) modifier to look up the destination value.
 

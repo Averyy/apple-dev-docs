@@ -24,7 +24,7 @@ func enumerateMoves(_ handler: @escaping (Int, Int) -> Void)
 - (void) enumerateMovesWithBlock:(void (^)(NSUInteger fromIndex, NSUInteger toIndex)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 The `toIndex` parameter in the `handler` block is relative to the state of the fetch result after you’ve applied the changes described by the [`removedIndexes`](./removedindexes.md), [`insertedIndexes`](./insertedindexes.md) and [`changedIndexes`](./changedindexes.md) properties. Therefore, if you use this method to update a collection view or similar user interface displaying the contents of the fetch result, update your UI to reflect insertions, removals, and changes before you process moves.
 

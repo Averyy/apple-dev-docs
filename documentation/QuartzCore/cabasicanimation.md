@@ -24,7 +24,7 @@ class CABasicAnimation
 @interface CABasicAnimation : CAPropertyAnimation
 ```
 
-#### Overview
+## Overview
 
 You create an instance of  [`CABasicAnimation`](./cabasicanimation.md) using the inherited [`init(keyPath:)`](./capropertyanimation/init%28keypath%29.md) method, specifying the key path of the property to be animated in the render tree.
 
@@ -60,7 +60,7 @@ animation.fromValue = 1
 animation.toValue = 2
 ```
 
-##### Setting Interpolation Values
+### Setting Interpolation Values
 
 The [`fromValue`](./cabasicanimation/fromvalue.md), [`byValue`](./cabasicanimation/byvalue.md) and [`toValue`](./cabasicanimation/tovalue.md) properties define the values being interpolated between. All are optional, and no more than two should be non-`nil`. The object type should match the type of the property being animated.
 

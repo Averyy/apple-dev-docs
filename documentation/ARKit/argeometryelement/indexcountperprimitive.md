@@ -20,7 +20,7 @@ var indexCountPerPrimitive: Int { get }
 @property (nonatomic, assign, readonly) NSInteger indexCountPerPrimitive;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property relates to the [`primitiveType`](./primitivetype.md). For [`ARGeometryPrimitiveType.triangle`](../argeometryprimitivetype/triangle.md), the value is 3. For more information, see [`ARGeometryPrimitiveType`](../argeometryprimitivetype.md).
 

@@ -20,7 +20,7 @@ var machineIdentifier: VZMacMachineIdentifier { get set }
 @property (copy) VZMacMachineIdentifier * machineIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This value uniquely identifies an instance of a VM. Running two VMs concurrently with the same identifier results in undefined behavior in the guest operating system.
 

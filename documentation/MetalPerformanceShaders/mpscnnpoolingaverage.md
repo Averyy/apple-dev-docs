@@ -24,7 +24,7 @@ class MPSCNNPoolingAverage
 @interface MPSCNNPoolingAverage : MPSCNNPooling
 ```
 
-#### Overview
+## Overview
 
 For each pixel in an image, the filter returns the average value of the pixels in the filter region defined by `kernelWidth` `x` `kernelHeight`.
 

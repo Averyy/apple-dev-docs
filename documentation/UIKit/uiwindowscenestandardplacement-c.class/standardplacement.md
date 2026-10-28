@@ -19,7 +19,7 @@ Creates a placement that indicates the system should present the window using th
 + (instancetype) standardPlacement;
 ```
 
-#### Return Value
+## Return Value
 
 A placement that indicates the system should present the window using the default style of the system in the space.
 

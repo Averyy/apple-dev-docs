@@ -16,7 +16,7 @@ struct vnop_getattr_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 VNOP_ACCESS is currently only called on filesystems which mark themselves as doing their authentication remotely (vfs_setauthopaque(), vfs_authopaque()). A VNOP_ACCESS() calldown may come without any preceding VNOP_OPEN().
 

@@ -27,7 +27,7 @@ var backgroundView: UIView? { get set }
 
 - [Adding headers and footers to table sections](../adding-headers-and-footers-to-table-sections.md)
 
-#### Discussion
+## Discussion
 
 The view in this property appears behind the view in the [`contentView`](./contentview.md) property and displays static background content behind the header or footer. For example, you might assign an image view to this property and use it to display a custom background image.
 

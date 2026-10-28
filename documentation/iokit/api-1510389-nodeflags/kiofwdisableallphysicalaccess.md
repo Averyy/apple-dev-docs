@@ -14,7 +14,7 @@
 kIOFWDisableAllPhysicalAccess = (1 << 1)
 ```
 
-#### Discussion
+## Discussion
 
 Disable all physical memory access
 

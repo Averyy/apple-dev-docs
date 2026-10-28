@@ -20,11 +20,11 @@ func registerLanguage(_ language: String?, byVendor vendor: String?) -> Bool
 - (BOOL) registerLanguage:(NSString *) language byVendor:(NSString *) vendor;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the language is registered, [`false`](../../Swift/false.md) if for some reason it can’t be registered.
 
-#### Discussion
+## Discussion
 
 If your spelling checker supports more than one language, it should invoke this method once for each language. Registering a language-vendor combination causes it to appear in the Spelling panel’s pop-up menu of spelling checkers.
 

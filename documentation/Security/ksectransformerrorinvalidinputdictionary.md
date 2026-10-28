@@ -25,7 +25,7 @@ var kSecTransformErrorInvalidInputDictionary: CFIndex { get }
 kSecTransformErrorInvalidInputDictionary
 ```
 
-#### Discussion
+## Discussion
 
 This error may occur when trying to import a transform from a data representation using the [`SecTransformCreateFromExternalRepresentation(_:_:)`](./sectransformcreatefromexternalrepresentation%28_,_%29.md) function.
 

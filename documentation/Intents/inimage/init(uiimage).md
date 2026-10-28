@@ -27,7 +27,7 @@ convenience init(uiImage image: UIImage)
 + (instancetype) imageWithUIImage:(UIImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 An image object that contains the specified UIKit image, or `nil` if that image is invalid.
 

@@ -21,7 +21,7 @@ An option to display the pointer bytes as an IPv6 network address.
 case ipv6Address
 ```
 
-#### Discussion
+## Discussion
 
 This option formats an `in6_addr` structure as an easily readable string.
 

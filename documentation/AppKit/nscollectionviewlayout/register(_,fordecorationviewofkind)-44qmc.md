@@ -19,7 +19,7 @@ func register(_ viewClass: AnyClass?, forDecorationViewOfKind elementKind: NSCol
 - (void) registerClass:(Class) viewClass forDecorationViewOfKind:(NSCollectionViewDecorationElementKind) elementKind;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method as part of your layout object’s initialization and use it to register any decoration views needed for your layout. Decoration views are visual adornments that you include in your layouts and use to present the collection view’s content. For example, you might use decoration views to implement a dynamic background that can expand or shrink to match the current number of items. The layout object defines and owns the decoration views it uses. Decoration views do not have any ties to the collection view’s data source object.
 

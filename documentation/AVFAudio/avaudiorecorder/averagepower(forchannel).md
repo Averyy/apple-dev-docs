@@ -25,11 +25,11 @@ func averagePower(forChannel channelNumber: Int) -> Float
 - (float) averagePowerForChannel:(NSUInteger) channelNumber;
 ```
 
-#### Return Value
+## Return Value
 
 The audio channel’s current average power.
 
-#### Discussion
+## Discussion
 
 Before asking the player for its average power value, you must call [`updateMeters()`](../avaudioplayer/updatemeters%28%29.md) to generate the latest data. The returned value ranges from `–160` dBFS, indicating minimum power, to 0 dBFS, indicating maximum power.
 

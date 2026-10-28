@@ -25,7 +25,7 @@ func CFUUIDGetTypeID() -> CFTypeID
 extern CFTypeID CFUUIDGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFUUID opaque type.
 

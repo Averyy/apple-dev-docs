@@ -19,7 +19,7 @@ var canStop: Bool { get }
 @property (readonly) BOOL canStop;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the VM is in a state that allows you to stop it. Call the [`stop(completionHandler:)`](./stop%28completionhandler%29.md) to stop the VM.
 

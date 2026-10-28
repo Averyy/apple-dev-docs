@@ -15,11 +15,11 @@ Determines available metadata from the specified metadata types for the first pa
 func detectedMetadata(for keyPaths: Set<PartialKeyPath<NSPasteboard.DetectedMetadata>>) async throws -> NSPasteboard.DetectedMetadata
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSPasteboard.DetectedMetadata`](./detectedmetadata.md) instance containing the metadata for the metadata types found on the pasteboard.
 
-#### Discussion
+## Discussion
 
 This method only gives access to limited types of metadata and doesn’t allow the app to access the contents. As a result, the system doesn’t notify the person using the app about reading the contents of the pasteboard.
 

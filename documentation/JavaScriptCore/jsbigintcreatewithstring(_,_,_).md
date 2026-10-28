@@ -22,11 +22,11 @@ func JSBigIntCreateWithString(_ ctx: JSContextRef, _ string: JSStringRef, _ exce
 JSValueRefJSBigIntCreateWithString(JSContextRef ctx, JSStringRef string, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 A BigInt JSValue of the string, or NULL if an exception is thrown.
 
-#### Discussion
+## Discussion
 
 Creates a JavaScript BigInt with an integer represented in string.
 

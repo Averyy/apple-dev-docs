@@ -22,7 +22,7 @@ let MPSFunctions_AABB_Unbounded: MPSFunctions_AABB
 static const MPSFunctions_AABB MPSFunctions_AABB_Unbounded;
 ```
 
-#### Discussion
+## Discussion
 
 Axis aligned bounding box for color gamut
 

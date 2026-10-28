@@ -25,7 +25,7 @@ func CGPDFContentStreamGetStreams(_ cs: CGPDFContentStreamRef) -> CFArray?
 extern CFArrayRefCGPDFContentStreamGetStreams(CGPDFContentStreamRef cs);
 ```
 
-#### Return Value
+## Return Value
 
 The array of PDF content streams that make up the content stream object represented by the `cs` parameter.
 

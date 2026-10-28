@@ -25,7 +25,7 @@ func CGImageSourceCopyPropertiesAtIndex(_ isrc: CGImageSource, _ index: Int, _ o
 extern CFDictionaryRefCGImageSourceCopyPropertiesAtIndex(CGImageSourceRef isrc, size_t index, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains the properties associated with the image. See `CGImageProperties` for a list of properties that allowed in the dictionary.
 

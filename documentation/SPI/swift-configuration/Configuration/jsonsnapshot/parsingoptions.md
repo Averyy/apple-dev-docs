@@ -24,7 +24,7 @@ Parsing options for JSON snapshot creation.
 struct ParsingOptions
 ```
 
-#### Overview
+## Overview
 
 This struct provides configuration options for parsing JSON data into configuration snapshots, including byte decoding and secrets specification.
 

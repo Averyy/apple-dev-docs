@@ -15,7 +15,7 @@ The reconstruction mode that classifies each face of a mesh anchor.
 case classification
 ```
 
-#### Discussion
+## Discussion
 
 For information about the classification types, see [`classifications`](../../meshanchor/geometry-swift.struct/classifications.md).
 

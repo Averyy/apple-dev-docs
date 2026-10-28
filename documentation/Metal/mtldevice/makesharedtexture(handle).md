@@ -25,11 +25,11 @@ func makeSharedTexture(handle sharedHandle: MTLSharedTextureHandle) -> (any MTLT
 - (id<MTLTexture>) newSharedTextureWithHandle:(MTLSharedTextureHandle *) sharedHandle;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLTexture`](../mtltexture.md) instance if the method completed successfully; otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 Call this method from the same [`MTLDevice`](../mtldevice.md) instance that created the shared texture instance.
 

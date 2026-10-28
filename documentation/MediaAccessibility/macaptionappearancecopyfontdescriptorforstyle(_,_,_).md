@@ -24,7 +24,7 @@ func MACaptionAppearanceCopyFontDescriptorForStyle(_ domain: MACaptionAppearance
 extern CTFontDescriptorRefMACaptionAppearanceCopyFontDescriptorForStyle(MACaptionAppearanceDomain domain, MACaptionAppearanceBehavior *behavior, MACaptionAppearanceFontStyle fontStyle);
 ```
 
-#### Return Value
+## Return Value
 
 The name of the preferred font for the specified style.
 

@@ -30,7 +30,7 @@ func handle(intent: INSearchCallHistoryIntent) async -> INSearchCallHistoryInten
 - (void) handleSearchCallHistory:(INSearchCallHistoryIntent *) intent completion:(void (^)(INSearchCallHistoryIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to search the user’s call history for entries matching the specified parameters. If the search yields results, make a note of those results and prepare to have your app display them. For example, you could include the results in the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object that you create with your response object.
 

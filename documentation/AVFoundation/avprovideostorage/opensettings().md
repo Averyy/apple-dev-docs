@@ -23,7 +23,7 @@ func openSettings()
 - (void) openSettings;
 ```
 
-#### Discussion
+## Discussion
 
 Presents system UI that allows the user to adjust pre-allocated storage capacity.
 

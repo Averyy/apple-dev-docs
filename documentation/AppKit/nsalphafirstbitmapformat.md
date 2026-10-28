@@ -15,7 +15,7 @@ A format where the alpha value comes first.
 static const NSBitmapFormat NSAlphaFirstBitmapFormat;
 ```
 
-#### Discussion
+## Discussion
 
 If this option is not specified, alpha values are the last component specified, as in CMYKA and RGBA.
 

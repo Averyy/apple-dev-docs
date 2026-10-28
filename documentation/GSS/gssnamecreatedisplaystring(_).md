@@ -23,11 +23,11 @@ func GSSNameCreateDisplayString(_ name: gss_name_t) -> Unmanaged<CFString>?
 CFStringRefGSSNameCreateDisplayString(gss_name_t name);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFString` object that contains a string suitable for display to the user. Use `CFRelease` to free this object’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 Do not use the result of this function call to verify ACL subjects.
 

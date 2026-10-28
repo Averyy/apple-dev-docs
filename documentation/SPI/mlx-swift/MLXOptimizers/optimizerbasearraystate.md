@@ -17,7 +17,7 @@ Convenience subclass of OptimizerBase that provides `MLXArray` State.
 class OptimizerBaseArrayState
 ```
 
-##### See Also
+### See Also
 
 - [MLXOptimizers](./MLXOptimizers.md)
 

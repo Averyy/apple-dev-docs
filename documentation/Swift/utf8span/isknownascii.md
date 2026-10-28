@@ -21,7 +21,7 @@ Returns whether contents are known to be all-ASCII. A return value of `true` mea
 var isKnownASCII: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 ASCII-ness is checked and remembered during UTF-8 validation, so this is often equivalent to is-ASCII, but there are some situations where we might return `false` even when the content happens to be all-ASCII.
 

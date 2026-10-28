@@ -24,7 +24,7 @@ var isConnected: Bool { get }
 @property (nonatomic, readonly, getter=isConnected) BOOL connected;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`false`](../../Swift/false.md) for a particular capture device instance, it doesn’t become [`true`](../../Swift/true.md) again. If the same physical device reconnects, the system represents it as a new capture device instance.
 

@@ -29,7 +29,7 @@ func makeBuffer(bytes pointer: UnsafeRawPointer, length: Int, options: MTLResour
 
 - [Copying data to a private resource](../copying-data-to-a-private-resource.md)
 
-#### Return Value
+## Return Value
 
 A new [`MTLBuffer`](../mtlbuffer.md) instance if the method completes successfully; otherwise `nil`.
 

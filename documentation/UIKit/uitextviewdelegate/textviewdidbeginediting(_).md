@@ -23,7 +23,7 @@ optional func textViewDidBeginEditing(_ textView: UITextView)
 - (void) textViewDidBeginEditing:(UITextView *) textView;
 ```
 
-#### Discussion
+## Discussion
 
 Implementation of this method is optional. A text view sends this message to its delegate immediately after the user initiates editing in a text view and before any changes are actually made. You can use this method to set up any editing-related data structures and generally prepare your delegate to receive future editing messages.
 

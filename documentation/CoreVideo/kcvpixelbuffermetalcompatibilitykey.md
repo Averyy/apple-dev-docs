@@ -25,7 +25,7 @@ let kCVPixelBufferMetalCompatibilityKey: CFString
 extern CFStringRef const kCVPixelBufferMetalCompatibilityKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). To use pixel buffers with the Metal framework, see [CVMetalTextureCache](./cvmetaltexturecache-q3j.md).
 

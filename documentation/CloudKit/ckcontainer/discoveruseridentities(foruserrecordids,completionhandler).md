@@ -24,7 +24,7 @@ Fetches the user identities for the specified user record IDs.
 func discoverUserIdentities(forUserRecordIDs userRecordIDs: [CKRecord.ID], completionHandler: @escaping @Sendable (Result<[CKRecord.ID : CKUserIdentity], any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 This closure doesn’t return a value and takes the following parameters:
 

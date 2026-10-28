@@ -15,11 +15,11 @@ Request wrapper for updating a campaign’s daily budget amount.
 object DailyBudgetUpdate
 ```
 
-#### Discussion
+## Discussion
 
 The `DailyBudgetUpdate` object is the update-time counterpart to [`DailyBudget`](./dailybudget.md). It wraps a single `value` field containing the new daily spend cap as a `Money` object.
 
-##### Example
+### Example
 
 ```json
 {

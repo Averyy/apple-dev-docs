@@ -19,7 +19,7 @@ var string: String? { get }
 @property (readonly, nullable) NSString * string;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of the filename’s [`data`](./data.md) is not a valid UTF-8 byte sequence, this property is empty.
 

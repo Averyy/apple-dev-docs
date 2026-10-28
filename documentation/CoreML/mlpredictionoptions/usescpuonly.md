@@ -25,7 +25,7 @@ var usesCPUOnly: Bool { get set }
 @property (nonatomic, readwrite) BOOL usesCPUOnly;
 ```
 
-#### Discussion
+## Discussion
 
 Your model should be restricted to the CPU if it might run in the background or if your app has other GPU intensive tasks.
 

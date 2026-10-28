@@ -5,7 +5,7 @@
 
 Learn how Safari app extensions extend the web-browsing experience in Safari by leveraging web technologies and native code.
 
-#### Overview
+## Overview
 
 A Safari app extension can add new functionality to Safari by reading and modifying webpage content. These capabilities enhance the tools you use, the tasks you can accomplish, and the data you can access in your browser. A Safari app extension is uniquely useful because it can communicate with a native app. Sharing data between an app and Safari lets you integrate app content into Safari or send web data back to the app, enabling a unified experience for a web version and a native version of an app.
 

@@ -20,11 +20,11 @@ func fileAttributesToWrite(to url: URL, ofType typeName: String, for saveOperati
 - (NSDictionary<NSString *,id> *) fileAttributesToWriteToURL:(NSURL *) url ofType:(NSString *) typeName forSaveOperation:(NSSaveOperationType) saveOperation originalContentsURL:(NSURL *) absoluteOriginalContentsURL error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the attributes to be written, or `nil` if unsuccessful.
 
-#### Discussion
+## Discussion
 
 Your subclass of `NSDocument` can override this method to control the attributes that are set during a save operation. An override of this method should return a copy of the dictionary returned by its superclass’s version of this method, with appropriate alterations.
 

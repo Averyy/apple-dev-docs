@@ -15,11 +15,11 @@ Finds the next descriptor matching a specific type within a configuration descri
 const IOUSBDescriptorHeader *IOUSBGetNextAssociatedDescriptorWithType(const IOUSBConfigurationDescriptor *configurationDescriptor, const IOUSBDescriptorHeader *parentDescriptor, const IOUSBDescriptorHeader *currentDescriptor, const uint8_t type);
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor pointer, or `NULL` if no matching descriptor is found.
 
-#### Discussion
+## Discussion
 
 This method uses `getNextAssociatedDescriptor`, and further validates that the returned descriptor’s type field matches the type parameter passed to this method.
 

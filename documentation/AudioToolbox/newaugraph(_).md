@@ -26,11 +26,11 @@ func NewAUGraph(_ outGraph: UnsafeMutablePointer<AUGraph?>) -> OSStatus
 extern OSStatus NewAUGraph(AUGraph*outGraph);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

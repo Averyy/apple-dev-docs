@@ -21,7 +21,7 @@ init(lightContentImage lightImage: UIImage, darkContentImage darkImage: UIImage)
 - (instancetype) initWithLightContentImage:(UIImage *) lightImage darkContentImage:(UIImage *) darkImage;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized image set.
 

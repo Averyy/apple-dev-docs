@@ -20,11 +20,11 @@ A cloned data column of strings.
 var strings: MLDataColumn<String>? { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new data column if the underlying type of the column is [`String`](../../Swift/string.md); otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 This property is functionally equivalent to passing [`String`](../../Swift/string.md)`.self` to [`column(type:)`](./column%28type%29.md). Typically you ensure [`type`](./type.md) is equal to [`MLDataValue.ValueType.string`](../mldatavalue/valuetype/string.md) before getting this property.
 

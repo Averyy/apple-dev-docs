@@ -19,7 +19,7 @@ var animates: Bool { get set }
 @property BOOL animates;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the image view plays animated images automatically using the timing and looping characteristics stored in the image data. The default value of this property is [`true`](../../Swift/true.md).
 

@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 Operations that produce a cumulative result.
 
-#### Overview
+## Overview
 
 There are a number of functions that can produce a cumulative result.  For example:
 

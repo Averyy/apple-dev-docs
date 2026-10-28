@@ -15,7 +15,7 @@ Returns the component identifier for the next registered component that meets th
 Component FindNextComponent(Component aComponent, ComponentDescription *looking);
 ```
 
-#### Return Value
+## Return Value
 
 The component identifier of a component that meets the search criteria or 0 when there are no more matching components. Your application can use the component identifier returned by this function to get more information about the component, using `GetComponentInfo`, or to open the component, using either the [`OpenDefaultComponent`](./api-1516523-opendefaultcomponent.md) function or the [`OpenComponent`](./api-1516607-opencomponent.md) function. See the description of the `Component` data type.
 

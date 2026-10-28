@@ -19,7 +19,7 @@ Creates a new filter by combining the filters in the array.
 + (PHPickerFilter *) anyFilterMatchingSubfilters:(NSArray<PHPickerFilter *> *) subfilters;
 ```
 
-#### Return Value
+## Return Value
 
 A new picker filter.
 

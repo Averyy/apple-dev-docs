@@ -24,7 +24,7 @@ class GKComponent
 @interface GKComponent : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`GKComponent`](./gkcomponent.md) is the abstract superclass for custom component classes you create when building a game with Entity-Component architecture. In this architecture, an *entity* is an object relevant to the game, and a *component* is an object that handles specific aspects of an entity’s behavior in a general way. Because a component’s scope of functionality is limited, you can reuse the same component class for many different kinds of entities.
 

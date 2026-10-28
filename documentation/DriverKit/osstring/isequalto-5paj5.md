@@ -18,11 +18,11 @@ Compares the string with an OSString.
 bool isEqualTo(const OSString *aString) const;
 ```
 
-#### Return Value
+## Return Value
 
 True iff the two strings have the same length and characters.
 
-#### Discussion
+## Discussion
 
 If the passed OSString object has the same length and all characters are identical, true is returned. Otherwise false is returned.
 

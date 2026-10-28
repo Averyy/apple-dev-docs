@@ -23,7 +23,7 @@ var isHovered: Bool { get }
 @property (nonatomic, assign, readonly, getter=isHovered) BOOL hovered;
 ```
 
-#### Discussion
+## Discussion
 
 If you enable pointer interaction by setting [`isPointerInteractionEnabled`](./ispointerinteractionenabled.md), this property indicates the button has an active pointer effect.
 

@@ -25,7 +25,7 @@ func CMBufferQueueIsEmpty(_ queue: CMBufferQueue) -> Bool
 extern Boolean CMBufferQueueIsEmpty(CMBufferQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether the `CMBufferQueue` is empty. If queue is `NULL`, true is returned.
 

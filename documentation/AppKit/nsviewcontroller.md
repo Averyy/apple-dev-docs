@@ -19,7 +19,7 @@ class NSViewController
 @interface NSViewController : NSResponder
 ```
 
-#### Overview
+## Overview
 
 View controller management includes:
 

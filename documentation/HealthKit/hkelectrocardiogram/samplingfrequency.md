@@ -25,7 +25,7 @@ var samplingFrequency: HKQuantity? { get }
 @property (nonatomic, copy, readonly, nullable) HKQuantity * samplingFrequency;
 ```
 
-#### Discussion
+## Discussion
 
 The system records the frequency in [`hertz()`](../hkunit/hertz%28%29.md) units.
 

@@ -15,7 +15,7 @@ The deprecated request payload for setting a cost-per-acquisition goal. Use `bid
 object AdGroupCreate.CpaCap
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated. Use `bidStrategy` with `MAX_CONVERSIONS` instead.
 

@@ -19,7 +19,7 @@ var bccAddresses: [MEEmailAddress] { get }
 @property (nonatomic, copy, readonly) NSArray<MEEmailAddress *> * bccAddresses;
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the Bcc header in the message.
 

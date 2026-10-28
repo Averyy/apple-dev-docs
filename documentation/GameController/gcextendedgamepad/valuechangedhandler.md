@@ -24,7 +24,7 @@ var valueChangedHandler: GCExtendedGamepadValueChangedHandler? { get set }
 @property (nonatomic, copy, nullable) GCExtendedGamepadValueChangedHandler valueChangedHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If multiple elements change values at the same time, the profile calls this block once for each element that changes. If the value of a subelement changes, the profile only calls the block for the containing element.
 

@@ -16,7 +16,7 @@ Sets the login refCon.
 void (*setRefCon)(void *self, void *refCon);
 ```
 
-#### Discussion
+## Discussion
 
 Sets a user defined value on the login that can be retrieved later with the method getRefCon.
 

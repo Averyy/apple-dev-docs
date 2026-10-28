@@ -27,7 +27,7 @@ func CMTimebaseCreateWithMasterTimebase(allocator: CFAllocator?, masterTimebase:
 static OSStatus CMTimebaseCreateWithMasterTimebase(CFAllocatorRef allocator, CMTimebaseRef masterTimebase, CMTimebaseRef*timebaseOut);
 ```
 
-#### Discussion
+## Discussion
 
 The timebase will initially have rate zero and time zero.
 

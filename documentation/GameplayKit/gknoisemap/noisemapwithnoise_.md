@@ -20,11 +20,11 @@ Creates a noise map by sampling from the specified noise object.
 + (instancetype) noiseMapWithNoise:(GKNoise *) noise;
 ```
 
-#### Return Value
+## Return Value
 
 A new noise map object.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to calling the [`noiseMapWithNoise:size:origin:sampleCount:seamless:`](./noisemapwithnoise_size_origin_samplecount_seamless_.md) method with a size of `1.0 x 1.0`, an origin of `[0, 0]`, a sample grid size of `100 x 100`, and a `seamless` parameter of [`false`](../../Swift/false.md).
 

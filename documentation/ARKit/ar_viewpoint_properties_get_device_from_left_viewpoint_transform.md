@@ -15,7 +15,7 @@ Get the transformation matrix that converts from the left viewpoint to the devic
 extern simd_float4x4 ar_viewpoint_properties_get_device_from_left_viewpoint_transform(ar_viewpoint_properties_t viewpoint_properties);
 ```
 
-#### Return Value
+## Return Value
 
 The transform from the left viewpoint to the device origin.
 

@@ -19,7 +19,7 @@ An 8-bit floating-point type with 5 exponent bits and 2 mantissa bits.
 case float8e5m2
 ```
 
-#### Discussion
+## Discussion
 
 FP8 E5M2 format emphasizes dynamic range over precision with its larger exponent field. This type is used for quantization and in some activation functions.
 

@@ -19,7 +19,7 @@ func setBadgeImage(_ image: NSImage, label: String?, forBadgeIdentifier badgeID:
 - (void) setBadgeImage:(NSImage *) image label:(NSString *) label forBadgeIdentifier:(NSString *) badgeID;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to configure your badges. Finder may display the image, the label or both. Your Finder Sync extension typically sets up a fixed number of badges during its `init` method.
 

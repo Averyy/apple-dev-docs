@@ -24,7 +24,7 @@ let AVVideoQualityKey: String
 extern NSString * const AVVideoQualityKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an instance of `NSNumber` 0.0-1.0.
 

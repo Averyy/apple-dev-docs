@@ -21,7 +21,7 @@ Modifies a format style to display a URL’s host component in accordance with t
 func host(_ strategy: URL.FormatStyle.HostDisplayOption = .always) -> URL.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A modified [`URL.FormatStyle`](../formatstyle.md) that incorporates the specified behavior.
 

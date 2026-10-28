@@ -16,7 +16,7 @@ The Bluetooth RSSI (Received Signal Strength Indicator) value from the discovere
 var bluetoothRSSI: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the signal strength in dBm when the session discovered the accessory.
 

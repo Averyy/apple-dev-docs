@@ -21,7 +21,7 @@ The extension of the file or directory last component.
 var `extension`: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If `lastComponent` is `nil` or one of the special path components `.` or `..`, `get` returns `nil` and `set` does nothing.
 

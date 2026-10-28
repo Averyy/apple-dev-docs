@@ -22,7 +22,7 @@ class HKUserAnnotatedMedicationType
 @interface HKUserAnnotatedMedicationType : HKObjectType
 ```
 
-#### Overview
+## Overview
 
 Represents the set of authorizeable HKUserAnnotatedMedications.
 

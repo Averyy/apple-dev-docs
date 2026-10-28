@@ -25,7 +25,7 @@ var calculationMode: SCNMorpherCalculationMode { get set }
 @property (nonatomic) SCNMorpherCalculationMode calculationMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`SCNMorpherCalculationMode.normalized`](../scnmorphercalculationmode/normalized.md). See [`SCNMorpherCalculationMode`](../scnmorphercalculationmode.md) for allowed values.
 

@@ -21,7 +21,7 @@ A task that responds to background URL sessions matching the given predicate.
 static func urlSession(matching: @escaping @Sendable (String) -> Bool) -> BackgroundTask<String, Void>
 ```
 
-#### Return Value
+## Return Value
 
 A background task that you can handle with your app or extension.
 

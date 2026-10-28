@@ -23,7 +23,7 @@ func rmsNorm(scale: some BNNSGraph.Builder.OperationParameter<T>, epsilon: Float
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This function performs `y = x / sqrt(sum_square(x) / size(x) + epsilon) * scale`.
 

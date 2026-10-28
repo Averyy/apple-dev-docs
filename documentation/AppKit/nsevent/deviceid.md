@@ -19,7 +19,7 @@ var deviceID: Int { get }
 @property (readonly) NSUInteger deviceID;
 ```
 
-#### Discussion
+## Discussion
 
 All tablet-pointer events generated in the period between the device entering and leaving tablet proximity have the same device ID. This property is valid only for mouse events with subtype `NSTabletPointEventSubtype` or `NSTabletProximityEventSubtype`, and for `NSTabletPoint` and `NSTabletProximity` events.
 

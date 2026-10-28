@@ -17,7 +17,7 @@ Generate values from a truncated normal distribution in a given `RangeExpression
 static func truncatedNormal(_ range: Range<Float>, _ shape: some Collection<Int> = [], type: (some HasDType & BinaryFloatingPoint).Type = Float.self, key: (some RandomStateOrKey)? = MLXArray?.none, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Specialization to make it easy to call with `Float`:
 

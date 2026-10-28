@@ -22,11 +22,11 @@ Returns a new shape with a line from this shape that does not overlap the filled
 nonisolated func lineSubtraction<T>(_ other: T, eoFill: Bool = false) -> some Shape where T : Shape
 ```
 
-#### Return Value
+## Return Value
 
 A new shape.
 
-#### Discussion
+## Discussion
 
 The line of the resulting shape is the line of this shape that does not overlap the filled region of `other`.
 

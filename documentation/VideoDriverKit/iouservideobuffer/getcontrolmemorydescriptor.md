@@ -15,7 +15,7 @@ Gets the memory descriptior used for video IO that was initialized with or set o
 OSSharedPtr<IOMemoryDescriptor> GetControlMemoryDescriptor();
 ```
 
-#### Return Value
+## Return Value
 
 IOMemoryDescriptor in an OSSharedPtr.
 

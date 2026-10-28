@@ -18,7 +18,7 @@ typedef struct IOATASMARTInterface {
 } IOATASMARTInterface;
 ```
 
-#### Overview
+## Overview
 
 See section 6.14 and section 8.54 of T13:1410D ATA/ATAPI-6 for details on Self-Monitoring, Analysis, and Reporting Technology feature set.
 

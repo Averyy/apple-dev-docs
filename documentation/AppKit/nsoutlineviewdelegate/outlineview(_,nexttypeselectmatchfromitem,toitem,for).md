@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, nextTypeSelectMatchFromI
 - (id) outlineView:(NSOutlineView *) outlineView nextTypeSelectMatchFromItem:(id) startItem toItem:(id) endItem forString:(NSString *) searchString;
 ```
 
-#### Return Value
+## Return Value
 
 The first item—from within the range of `startItem` to `endItem`—that matches the `searchString`, or `nil` if there is no match.
 
-#### Discussion
+## Discussion
 
 Implement this method if you want to control how type selection works.  You should include `startItem` as a possible match, but do not include `endItem`.
 

@@ -19,7 +19,7 @@ static var visible: NSApplication.OcclusionState { get }
 NSApplicationOcclusionStateVisible
 ```
 
-#### Discussion
+## Discussion
 
 If not set, all parts of all windows owned by this app are completely occluded. The menu bar does not count as a window owned by this app, so if only the menu bar is showing then the app is considered not visible. Status items, however, have windows owned by your app. If the status item is present in the menu bar, your app will be considered visible as long as the menu bar is visible.
 

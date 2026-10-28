@@ -17,11 +17,11 @@ Returns data that provides insight into electrical usage for a given device.
 final func energyInsights(forDeviceID deviceID: String, using query: ElectricityInsightQuery, atVenue energyVenueID: UUID) async throws -> AsyncStream<ElectricityInsightRecord<Measurement<UnitEnergy>>>
 ```
 
-#### Return Value
+## Return Value
 
 An `AsyncStream` of [`ElectricityInsightRecord`](../electricityinsightrecord.md)s containing UnitEnergy values for a given device.
 
-#### Discussion
+## Discussion
 
 The system throws [`EnergyKitError.venueUnavailable`](../energykiterror/venueunavailable.md) if a person provides an invalid [`EnergyVenue`](../energyvenue.md) identifier. If another request is in progress, the system throws[`EnergyKitError.inProgress`](../energykiterror/inprogress.md).
 

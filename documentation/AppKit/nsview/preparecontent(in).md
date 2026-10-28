@@ -19,7 +19,7 @@ func prepareContent(in rect: NSRect)
 - (void) prepareContentInRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 During responsive scrolling, AppKit calls this method before asking your view to draw any content in the overdraw region. You can override this method in your own views and use it to prepare the content that is about to be drawn. For example, if your app defers the creation of subviews until they are scrolled into view, you would use this method to create them and add them to your view hierarchy.
 

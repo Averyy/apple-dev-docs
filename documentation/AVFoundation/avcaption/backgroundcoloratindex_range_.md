@@ -18,7 +18,7 @@ Returns the background color at the index position.
 - (CGColorRef) backgroundColorAtIndex:(NSInteger) index range:(NSRange *) outRange;
 ```
 
-#### Return Value
+## Return Value
 
 The background color.
 

@@ -21,7 +21,7 @@ class AVCaptureDeferredPhotoProxy
 @interface AVCaptureDeferredPhotoProxy : AVCapturePhoto
 ```
 
-#### Overview
+## Overview
 
 A photo proxy behaves like a normal [`AVCapturePhoto`](./avcapturephoto.md), and approximates the look of the final rendered image. This object represents intermediate data that the system can render into a final image and ingested into the user’s photo library using the [PhotoKit](../PhotoKit/PhotoKit.md) framework. The intermediate data aren’t accessible by the calling process.
 

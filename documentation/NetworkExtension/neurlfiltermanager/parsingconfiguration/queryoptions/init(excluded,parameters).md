@@ -18,7 +18,7 @@ Creates a new query options configuration with default values.
 init(excluded: Bool = false, parameters: [String]? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The query options default behavior is as follows:
 

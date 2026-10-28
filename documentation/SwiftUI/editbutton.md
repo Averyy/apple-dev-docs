@@ -19,7 +19,7 @@ nonisolated
 struct EditButton
 ```
 
-#### Overview
+## Overview
 
 An edit button toggles the environment’s [`editMode`](./environmentvalues/editmode.md) value for content within a container that supports edit mode. In the following example, an edit button placed inside a [`NavigationView`](./navigationview.md) supports editing of a [`List`](./list.md):
 

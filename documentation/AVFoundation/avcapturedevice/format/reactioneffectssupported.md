@@ -23,7 +23,7 @@ var reactionEffectsSupported: Bool { get }
 @property (nonatomic, readonly) BOOL reactionEffectsSupported;
 ```
 
-#### Discussion
+## Discussion
 
 See [`reactionEffectsEnabled`](../reactioneffectsenabled.md) for more information.
 

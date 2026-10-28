@@ -21,15 +21,15 @@ func update(fromPath path: String) -> Bool
 - (BOOL) updateFromPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the update is carried out, [`false`](../../Swift/false.md) if it isn’t needed.
 
-#### Discussion
+## Discussion
 
 For a directory file wrapper, the contained file wrappers are also sent [`update(fromPath:)`](./update%28frompath%29.md) messages. If nodes in the corresponding directory on the file system have been added or removed, corresponding file wrappers are released or created as needed.
 
-##### Special Considerations
+### Special Considerations
 
 Beginning with OS X v10.6, the preferred method of referring to files is with a `file://` URL. Therefore, this method has been deprecated in favor of [`read(from:options:)`](./read%28from,options%29.md).
 

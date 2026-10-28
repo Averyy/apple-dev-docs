@@ -24,7 +24,7 @@ optional func mapViewWillStartRenderingMap(_ mapView: MKMapView)
 - (void) mapViewWillStartRenderingMap:(MKMapView *) mapView;
 ```
 
-#### Discussion
+## Discussion
 
 The map view calls this method when the map reveals one or more tiles that require rendering.
 

@@ -23,7 +23,7 @@ var canGoForward: Bool { get }
 @property (nonatomic, readonly, getter=canGoForward) BOOL canGoForward;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), able to move forward; otherwise, [`false`](../../Swift/false.md) .
 

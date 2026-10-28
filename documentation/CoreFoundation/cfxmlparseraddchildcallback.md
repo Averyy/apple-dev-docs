@@ -19,7 +19,7 @@ typealias CFXMLParserAddChildCallBack = (CFXMLParser?, UnsafeMutableRawPointer?,
 typedef void (*)(struct __CFXMLParser *, void *, void *, void *) CFXMLParserAddChildCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`CFXMLParserCreateXMLStructureCallBack`](./cfxmlparsercreatexmlstructurecallback.md) function returns NULL for a given structure, that structure is omitted entirely, and this callback will *not* be called for either a NULL child or parent.
 

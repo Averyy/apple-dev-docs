@@ -21,7 +21,7 @@ An error that occurs when a request’s size exceeds the limit.
 static var limitExceeded: CKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The server can change its limits at any time, but the following are general guidelines:
 

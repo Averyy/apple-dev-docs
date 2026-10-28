@@ -25,11 +25,11 @@ func nextUniform() -> Float
 - (float) nextUniform;
 ```
 
-#### Return Value
+## Return Value
 
 A random floating-point value in the range `[0.0, 1.0]`.
 
-#### Discussion
+## Discussion
 
 The distribution of multiple samplings is uniform within the range `[0.0, 1.0]`; that is, the probability of this method returning any one value is approximately equal to that of returning any other value.
 

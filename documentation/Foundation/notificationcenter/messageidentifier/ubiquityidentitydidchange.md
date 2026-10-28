@@ -23,7 +23,7 @@ static var ubiquityIdentityDidChange: NotificationCenter.BaseMessageIdentifier<F
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<FileManager.UbiquityIdentityDidChangeMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`FileManager.UbiquityIdentityDidChangeMessage`](../../filemanager/ubiquityidentitydidchangemessage.md).
 

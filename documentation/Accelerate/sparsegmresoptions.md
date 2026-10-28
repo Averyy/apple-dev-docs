@@ -25,7 +25,7 @@ struct SparseGMRESOptions
 typedef struct { ... } SparseGMRESOptions;
 ```
 
-#### Overview
+## Overview
 
 Use GMRES to solve *Ax = b* when *A* is symmetric indefinite or unsymmetric.
 

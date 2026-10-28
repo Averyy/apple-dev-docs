@@ -24,7 +24,7 @@ var bands: [AVAudioUnitEQFilterParameters] { get }
 @property (nonatomic, readonly) NSArray<AVAudioUnitEQFilterParameters *> * bands;
 ```
 
-#### Discussion
+## Discussion
 
 The number of elements in the array is equal to the number of bands.
 

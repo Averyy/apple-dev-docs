@@ -20,7 +20,7 @@ Sets the torque for each rigid body.
 func setTorque(_ torque: SIMD3<Float>, index: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Inside the force effect update function, you are responsible to compute and output the torque by calling this function for each rigid body. If you omit this function for a rigid body, that rigid body gets zero torque from the effect.
 

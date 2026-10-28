@@ -15,11 +15,11 @@ Opens a session to the host interface.
 virtual kern_return_t Open(IOService *forClient, IOOptionBits options, uint8_t *arg);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method opens a session to the [`IOUSBHostInterface`](../iousbhostinterface.md), and acquires the service’s workloop lock. Only one service at a time may open a session to the interface.
 

@@ -19,7 +19,7 @@ init(content: Any?)
 - (instancetype) initWithContent:(id) content;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized object controller, with its content object set to `content`.
 

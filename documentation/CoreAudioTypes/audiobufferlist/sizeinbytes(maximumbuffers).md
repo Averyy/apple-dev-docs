@@ -19,7 +19,7 @@
 static func sizeInBytes(maximumBuffers: Int) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The size in bytes of an `AudioBufferList` that can hold up to `maximumBuffers` `AudioBuffer`s.
 

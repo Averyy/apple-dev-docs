@@ -28,7 +28,7 @@ func requestAuthorization(for capability: PKPassLibrary.Capability) async -> PKP
 - (void) requestAuthorizationForCapability:(PKPassLibraryCapability) capability completion:(void (^)(PKPassLibraryAuthorizationStatus status)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method before using a capability that requires someone’s explicit permission, like [`PKPassLibrary.Capability.backgroundAddPasses`](./capability/backgroundaddpasses.md). If the person hasn’t decided whether to grant your app that capability, PassKit prompts them for permission and calls your completion handler with their choice. If the person already granted or denied the capability, PassKit calls your completion handler immediately, without showing a prompt.
 

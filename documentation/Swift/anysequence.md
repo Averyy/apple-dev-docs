@@ -22,7 +22,7 @@ A type-erased sequence.
 struct AnySequence<Element>
 ```
 
-#### Overview
+## Overview
 
 An instance of `AnySequence` forwards its operations to an underlying base sequence having the same `Element` type, hiding the specifics of the underlying sequence.
 

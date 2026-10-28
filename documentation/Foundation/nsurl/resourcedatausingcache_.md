@@ -15,17 +15,17 @@ Returns the receiver’s resource data, loading it if necessary.
 - (NSData *) resourceDataUsingCache:(BOOL) shouldUseCache;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver’s resource data.
 
-#### Discussion
+## Discussion
 
 If the receiver has not already loaded its resource data, it will attempt to load it as a blocking operation.
 
 In OS X v10.4, this method requests that the data be sent with gzip compression, however it does not automatically decompress the data if the server complies with this request. Data is automatically decompressed in macOS 10.5 and later.
 
-##### Special Considerations
+### Special Considerations
 
 Use the [`URLSession`](../urlsession.md) or [`NSURLConnection`](../nsurlconnection.md) classes for loading content from remote URLs.
 

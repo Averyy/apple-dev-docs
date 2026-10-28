@@ -5,14 +5,14 @@
 
 Use Core Data in both a single-threaded and multithreaded app.
 
-#### Overview
+## Overview
 
 Core Data works in a multithreaded environment. However, not every object under the Core Data framework is thread safe. To use Core Data in a multithreaded environment, ensure that:
 
 - Bind managed object contexts to the thread (queue) that they’re initialization on.
 - Bind managed objects that you retrieve from a context to the same queue as the context.
 
-##### Comparing Main Queue and Private Queue Contexts
+### Comparing Main Queue and Private Queue Contexts
 
 There are two types of managed object contexts: main queue and private queue. You define the type of context when you initialize it.
 
@@ -20,7 +20,7 @@ A main queue context (as defined by a [`NSManagedObjectContextConcurrencyType.ma
 
 A private queue context (as defined by a [`NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType`](./nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md)) creates its own queue upon initialization. Only use it on that queue. Because the queue is private and internal to the [`NSManagedObjectContext`](./nsmanagedobjectcontext.md) instance, you can only access it through the [`perform(_:)`](./nsmanagedobjectcontext/perform%28_%29.md) and the [`performAndWait(_:)`](./nsmanagedobjectcontext/performandwait%28_%29-ypye.md) methods.
 
-##### Initializing and configuring a context
+### Initializing and configuring a context
 
 Use [`init(concurrencyType:)`](./nsmanagedobjectcontext/init%28concurrencytype%29.md) to create a new context. For example, to create a private queue context:
 
@@ -33,7 +33,7 @@ The parameter you pass during initialization determines what type of [`NSManaged
 
 When you use the [`NSPersistentContainer`](./nspersistentcontainer.md), you configure the [`viewContext`](./nspersistentcontainer/viewcontext.md) property as a main queue ([`NSManagedObjectContextConcurrencyType.mainQueueConcurrencyType`](./nsmanagedobjectcontextconcurrencytype/mainqueueconcurrencytype.md)) context, and configure the contexts associated with [`performBackgroundTask(_:)`](./nspersistentcontainer/performbackgroundtask%28_%29-39sch.md) and [`newBackgroundContext()`](./nspersistentcontainer/newbackgroundcontext%28%29.md) as a private queue ([`NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType`](./nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md)).
 
-##### Avoiding problems
+### Avoiding problems
 
 **In general, avoid doing data processing on the main queue that’s not user-related.** Data processing can be CPU-intensive, and if it’s performed on the main queue, it can result in unresponsiveness in the user interface. If your application processes data, such as importing data into Core Data from JSON, create a private queue context and perform the import on the private context.
 

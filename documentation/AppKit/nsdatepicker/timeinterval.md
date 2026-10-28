@@ -19,7 +19,7 @@ var timeInterval: TimeInterval { get set }
 @property NSTimeInterval timeInterval;
 ```
 
-#### Discussion
+## Discussion
 
 The time interval that represents the receiver’s date range. The date range begins at the date returned by [`dateValue`](./datevalue.md). This method returns 0 when the receiver is not in the NSRangeDateMode mode.
 

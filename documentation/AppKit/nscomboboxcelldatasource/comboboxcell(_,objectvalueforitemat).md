@@ -19,11 +19,11 @@ optional func comboBoxCell(_ comboBoxCell: NSComboBoxCell, objectValueForItemAt 
 - (id) comboBoxCell:(NSComboBoxCell *) comboBoxCell objectValueForItemAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The object corresponding to the item at the specified index in the given combo box cell.
 
-#### Discussion
+## Discussion
 
 An `NSComboBoxCell` object uses this method to populate the items displayed in its pop-up list.
 

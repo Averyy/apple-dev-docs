@@ -16,7 +16,7 @@ Creates a physical address space object and returns an interface to it. This wil
 IOFireWireLibPhysicalAddressSpaceRef (*CreatePhysicalAddressSpace)(IOFireWireLibDeviceRef self, UInt32 inSize, void *inBackingStore, UInt32 inFlags, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOFireWireLibPhysicalAddressSpaceRef. Returns 0 upon failure
 

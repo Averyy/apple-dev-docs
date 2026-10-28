@@ -25,7 +25,7 @@ var steps: [MKRoute.Step] { get }
 @property (nonatomic, readonly) NSArray<MKRouteStep *> * steps;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains one or more [`MKRoute.Step`](./step.md) objects representing distinct portions of the route. Each step corresponds to a single direction that must be followed along the route.
 

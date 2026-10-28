@@ -21,7 +21,7 @@ A digit that is commonly understood to form base-10 numbers.
 case decimal
 ```
 
-#### Discussion
+## Discussion
 
 Specifically, scalars have this numeric type if they occupy a contiguous range of code points representing numeric values `0...9`.
 

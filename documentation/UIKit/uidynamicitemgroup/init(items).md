@@ -23,7 +23,7 @@ init(items: [any UIDynamicItem])
 - (instancetype) initWithItems:(NSArray<id<UIDynamicItem>> *) items;
 ```
 
-#### Return Value
+## Return Value
 
 A new group object containing the items.
 

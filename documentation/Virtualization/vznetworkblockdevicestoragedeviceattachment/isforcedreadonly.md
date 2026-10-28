@@ -19,7 +19,7 @@ var isForcedReadOnly: Bool { get }
 @property (readonly, getter=isForcedReadOnly) BOOL forcedReadOnly;
 ```
 
-#### Discussion
+## Discussion
 
 The `forcedReadOnly` parameter affects how the Virtualization framework exposes the network block device (NBD) client to the guest operating system by the storage controller.
 

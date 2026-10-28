@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, child index: Int, ofItem
 - (id) outlineView:(NSOutlineView *) outlineView child:(NSInteger) index ofItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 The child item at `index` of `item`. If `item` is `nil`, returns the appropriate child item of the root object.
 
-#### Discussion
+## Discussion
 
 Children of a given parent `item` are accessed sequentially. In order for the collapsed state of the outline view to remain consistent when it is reloaded you must always return the same object for a specified `child` and `item`.
 
@@ -32,7 +32,7 @@ Children of a given parent `item` are accessed sequentially. In order for the co
 >
 > Do not call [`reloadData()`](../nstableview/reloaddata%28%29.md) from this method.
 
-##### Special Considerations
+### Special Considerations
 
 The [`outlineView(_:child:ofItem:)`](./outlineview%28_,child,ofitem%29.md) method is called very frequently, so it must be efficient.
 

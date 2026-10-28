@@ -16,7 +16,7 @@ Sets configuration flags for the ORB.
 void (*setCommandFlags)(void *self, UInt32 flags);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the configuration flags for the ORB. These can be any of the following:
 

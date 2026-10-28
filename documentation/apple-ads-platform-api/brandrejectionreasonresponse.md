@@ -15,7 +15,7 @@ A single policy assignment with rejection reason details for a brand entity.
 object BrandRejectionReasonResponse
 ```
 
-#### Discussion
+## Discussion
 
 A `PolicyAssignmentQueryResponse` returns `BrandRejectionReasonResponse` in its `result` array. Each entry identifies the affected brand, the entity and component that triggered the policy assignment, and the rejection reason code, title, and body text.
 

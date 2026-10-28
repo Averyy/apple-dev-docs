@@ -19,7 +19,7 @@ func SecIdentitySetPreferred(_ identity: SecIdentity?, _ name: CFString, _ keyUs
 OSStatus SecIdentitySetPreferred(SecIdentityRef identity, CFStringRef name, CFArrayRef keyUsage);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

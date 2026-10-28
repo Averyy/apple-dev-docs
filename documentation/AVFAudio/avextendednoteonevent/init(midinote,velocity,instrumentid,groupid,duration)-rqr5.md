@@ -24,7 +24,7 @@ init(midiNote: Float, velocity: Float, instrumentID: UInt32, groupID: UInt32, du
 - (instancetype) initWithMIDINote:(float) midiNote velocity:(float) velocity instrumentID:(UInt32) instrumentID groupID:(UInt32) groupID duration:(AVMusicTimeStamp) duration;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`defaultInstrument`](./defaultinstrument.md) when you set `instrumentID`.
 

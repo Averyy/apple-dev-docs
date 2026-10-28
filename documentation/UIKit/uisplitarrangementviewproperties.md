@@ -19,7 +19,7 @@ Properties you use to customize how a split arrangement presents a view.
 @interface UISplitArrangementViewProperties : NSObject
 ```
 
-#### Overview
+## Overview
 
 By default, a split arrangement sizes the primary and secondary views equally when a display has one region. Influence how the arrangement view computes the sizes for each view by setting the split arrangement’s view properties for each placement to use an automatic size, a fixed layout size, a fractional layout size, or an intrinsic content size.
 

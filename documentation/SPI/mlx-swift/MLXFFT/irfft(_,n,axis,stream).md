@@ -17,15 +17,15 @@ Inverse one dimensional discrete Fourier Transform on a real input.
 func irfft(_ array: MLXArray, n: Int? = nil, axis: Int = -1, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Inverse of [`rfft(_:n:axis:stream:)`](./rfft%28_,n,axis,stream%29.md)
 
-#### Discussion
+## Discussion
 
 The output has the same shape as the input except along `axis` in which case it has size `n`.
 
-##### See Also
+### See Also
 
 - [MLXFFT](./MLXFFT.md)
 

@@ -17,7 +17,7 @@ Custom labels, one for each tick mark.
 case custom([LocalizedStringResource])
 ```
 
-#### Discussion
+## Discussion
 
 Provide the labels in the same order as the tick marks. To leave a tick mark unlabeled, specify an empty string as its label. You can set at most 12 labels on a slider.
 

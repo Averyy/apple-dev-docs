@@ -23,11 +23,11 @@ static func units(allowed units: Set<Duration.UnitsFormatStyle.Unit> = [.hours, 
 
 Available when `Self` is `Duration.UnitsFormatStyle`.
 
-#### Return Value
+## Return Value
 
 A duration units format style that uses the specified units.
 
-#### Discussion
+## Discussion
 
 Use the dot-notation form of this type method when the call point allows the use of [`Duration.UnitsFormatStyle`](../../Swift/duration/unitsformatstyle.md). You typically do this when calling the [`formatted(_:)`](../../Swift/duration/formatted%28_%29.md) method of [`Duration`](../../Swift/duration.md).
 

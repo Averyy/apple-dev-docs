@@ -6,7 +6,7 @@
 
 An unsigned 16-bit integer specifying how many fonts are described in this table.
 
-#### Overview
+## Overview
 
 This must be `1`.
 

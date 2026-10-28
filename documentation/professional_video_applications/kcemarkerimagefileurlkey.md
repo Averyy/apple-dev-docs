@@ -19,7 +19,7 @@ var kCEMarkerImageFileURLKey: String { get }
 #define kCEMarkerImageFileURLKey
 ```
 
-#### Discussion
+## Discussion
 
 When [`kCEMarkerKindKey`](./kcemarkerkindkey.md) is available, and both [`kCEMarkerURLKey`](./kcemarkerurlkey.md) and [`kCEMarkerImageFileURLKey`](./kcemarkerimagefileurlkey.md) are set to `nil`, the extension sets the chapter marker image to the specified frame of the source file.
 

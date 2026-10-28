@@ -19,7 +19,7 @@ func hasProperty(forKey key: String) -> Bool
 - (BOOL) hasPropertyForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the described class has a property identified by the specified key; otherwise, [`false`](../../Swift/false.md).
 

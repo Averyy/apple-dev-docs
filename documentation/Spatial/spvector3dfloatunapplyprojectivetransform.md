@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatUnapplyProjectiveTransform(SPVector3DFloat vector, SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed vector.
 
-#### Discussion
+## Discussion
 
 Returns a vector that’s transformed by the inverse of the specified projective transform.
 

@@ -24,7 +24,7 @@ class func lengthFormatterUnit(from unit: HKUnit) -> LengthFormatter.Unit
 + (NSLengthFormatterUnit) lengthFormatterUnitFromUnit:(HKUnit *) unit;
 ```
 
-#### Return Value
+## Return Value
 
 A length formatter unit value. For a list of possible length formatter unit values see [`LengthFormatter.Unit`](../../Foundation/lengthformatter/unit.md).
 

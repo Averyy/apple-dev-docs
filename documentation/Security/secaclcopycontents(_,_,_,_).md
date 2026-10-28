@@ -21,11 +21,11 @@ func SecACLCopyContents(_ acl: SecACL, _ applicationList: UnsafeMutablePointer<C
 OSStatus SecACLCopyContents(SecACLRef acl, CFArrayRef*applicationList, CFStringRef*description, SecKeychainPromptSelector *promptSelector);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 An ACL entry applies to a specific use or set of uses for a specific keychain item. The entry includes a list of trusted applications, the name of the keychain item as it appears in user prompts, the prompt selector flag, and a list of one or more operations to which this ACL entry applies.
 

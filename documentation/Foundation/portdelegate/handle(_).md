@@ -33,7 +33,7 @@ optional func handle(_ message: PortMessage)
 - (void) handlePortMessage:(NSPortMessage *) message;
 ```
 
-#### Discussion
+## Discussion
 
 See [`Port`](../port.md) for more information.
 

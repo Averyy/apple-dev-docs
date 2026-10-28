@@ -17,7 +17,7 @@ typedef struct CMYxyColor {
 } CMYxyColor;
 ```
 
-#### Overview
+## Overview
 
 A color value expressed in the Yxy color space is composed of `capY`, `x`, and `y` component values. Each color component is expressed as a numeric value within the range of 0 to 65535 which maps to 0 to 1.  
 

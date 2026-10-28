@@ -11,13 +11,13 @@ Create app extensions that allow users to send text, stickers, media files, and 
 - iPadOS 10.0+
 - Mac Catalyst 14.0+
 
-#### Overview
+## Overview
 
 You can use the Messages framework to create sticker packs and iMessage apps. You can create sticker packs and iMessage apps as either standalone apps or as app extensions within a containing iOS app. For more information on creating and working with app extensions, see [App extensions](https://developer.apple.com/app-extensions/).
 
 iMessage apps and stickers help people interact and communicate in the context of a Messages conversation. For design guidance, see [Human Interface Guidelines > iMessage apps and stickers](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers).
 
-##### iMessage apps
+### iMessage apps
 
 iMessage apps leverage the full framework to interact with the Messages app.
 
@@ -38,7 +38,7 @@ In iOS 17, Messages allows you to interactively resize iMessage apps with a vert
 - Change your manual touch handling code to use a gesture recognizer instead.
 - Use your [`UIView`](../UIKit/uiview.md) to override [`gestureRecognizerShouldBegin(_:)`](../UIKit/uigesturerecognizerdelegate/gesturerecognizershouldbegin%28_%29.md) and return `NO` when your iMessage app doesn’t own the gesture.
 
-##### Become the default messaging app
+### Become the default messaging app
 
 In iOS and iPadOS 18.2 and later, a person may select an app other than the Messages app to send instant messages. If you wish to make your app the default messages app, see [Preparing your app to be the default messaging app](./preparing-your-app-to-be-the-default-messaging-app.md).
 

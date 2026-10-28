@@ -21,7 +21,7 @@ A sequence of all attribute values a selection has in a certain text.
 struct Attributes<Text>
 ```
 
-#### Overview
+## Overview
 
 The values of a selection are the attribute values of each run that is fully or partially selected, or the typing attributes in the case the selection is an insertion point.
 

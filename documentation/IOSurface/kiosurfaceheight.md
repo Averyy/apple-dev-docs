@@ -24,7 +24,7 @@ let kIOSurfaceHeight: CFString
 extern CFStringRef const kIOSurfaceHeight;
 ```
 
-#### Discussion
+## Discussion
 
 Required for planar IOSurfaces.
 

@@ -20,11 +20,11 @@ Initializes a context without a specific rendering destination, using the specif
 + (CIContext *) contextWithOptions:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized Core Image context.
 
-#### Discussion
+## Discussion
 
 If you create a context without specifying a rendering destination, Core Image automatically chooses and internally manages a rendering destination based on the current device’s capabilities and your settings in the `options` dictionary. You cannot use a context without an explicit destination for the methods listed in Drawing Images. Instead, use the methods listed in Rendering Images.
 

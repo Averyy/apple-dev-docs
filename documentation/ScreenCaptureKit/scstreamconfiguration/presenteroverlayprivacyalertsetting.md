@@ -20,7 +20,7 @@ var presenterOverlayPrivacyAlertSetting: SCPresenterOverlayAlertSetting { get se
 @property (nonatomic, assign) SCPresenterOverlayAlertSetting presenterOverlayPrivacyAlertSetting;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`SCPresenterOverlayAlertSetting.system`](../scpresenteroverlayalertsetting/system.md).
 

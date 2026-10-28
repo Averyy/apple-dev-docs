@@ -25,7 +25,7 @@ func updateEntities(_ entities: [any AppEntity], for context: AppEntityContext) 
 
 - [Donating your app’s data and actions to the system](../donating-your-apps-data-and-actions-to-the-system.md)
 
-#### Discussion
+## Discussion
 
 Replaces any previously donated entities associated with the given context.
 

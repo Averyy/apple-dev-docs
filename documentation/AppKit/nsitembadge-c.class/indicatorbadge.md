@@ -16,7 +16,7 @@ Creates a badge styled as an indicator. In this context, an indicator is simply 
 + (NSItemBadge *) indicatorBadge;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSItemBadge` instance styled as an indicator.
 

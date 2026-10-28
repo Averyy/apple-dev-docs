@@ -24,7 +24,7 @@ var boundingBoxBufferOffset: Int { get set }
 @property (nonatomic) NSUInteger boundingBoxBufferOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The offset needs to be a multiple of [`boundingBoxStride`](./boundingboxstride.md). Check the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
 

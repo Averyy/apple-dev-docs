@@ -21,7 +21,7 @@ Removes all cached resource values and all temporary resource values from the UR
 mutating func removeAllCachedResourceValues()
 ```
 
-#### Discussion
+## Discussion
 
 This method is currently applicable only to URLs for file system resources.
 

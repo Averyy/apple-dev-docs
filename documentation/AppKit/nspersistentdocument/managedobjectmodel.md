@@ -19,7 +19,7 @@ var managedObjectModel: NSManagedObjectModel? { get }
 @property (strong, readonly, nullable) NSManagedObjectModel * managedObjectModel;
 ```
 
-#### Discussion
+## Discussion
 
 By default the Core Data framework creates a merged model from all models in the application bundle (`[NSBundle mainBundle]`). You can reimplement this property and return a specific model to use to create persistent stores. A typical implementation might include code similar to the following fragment:
 
@@ -30,7 +30,7 @@ NSURL *url = [NSURL fileURLWithPath:path];
 NSManagedObjectModel *model = [[NSManagedObjectModel alloc] initWithContentsOfURL:url];
 ```
 
-##### Special Considerations
+### Special Considerations
 
 In applications built in OS X v10.4, by default the Core Data framework creates a merged model from all the models found in the application bundle *and the frameworks against which the application is linked*.
 

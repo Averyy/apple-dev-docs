@@ -13,7 +13,7 @@
 kUSBOptionBitOpenExclusivelyBit = 17
 ```
 
-#### Discussion
+## Discussion
 
 Used in open()'ing the IOUSBDevice or IOUSBInterface by the corresponding user client. Only 1 user client can have exclusive access to those objects
 

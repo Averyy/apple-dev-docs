@@ -19,7 +19,7 @@ var selectionIndexPaths: Set<IndexPath> { get set }
 @property (copy) NSSet<NSIndexPath *> * selectionIndexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the index paths of the currently selected items, where each index path contains a [`section`](../../Foundation/nsindexpath/section.md) number and an index number for the [`item`](../../Foundation/nsindexpath/item.md) in that section. This property is updated automatically when the user selects items interactively. You can also change the selection programmatically by assigning a new value to this property. To animate changes to the selection, call this method on the collection view’s [`animator()`](../nsanimatablepropertycontainer/animator%28%29.md) proxy object instead.
 

@@ -19,11 +19,11 @@ Creates and returns a new session object to access the provisioned vehicles.
 class func start(delegate: any CarKeyRemoteControlSessionDelegate, subscriptionRange subscriptionFunctionIDRange: ClosedRange<Int>? = nil, with delegateCallbackQueue: DispatchQueue? = nil) async throws -> CarKeyRemoteControlSession
 ```
 
-#### Return Value
+## Return Value
 
 A new session object.
 
-#### Discussion
+## Discussion
 
 This method creates a new session object each time you call it. You can have only one active session at a time. If you call this method while a session is already active, the method waits until the previous session becomes invalid before returning the new session. The session object gives you access to the vehicles that your company makes and that the owner added to their Apple Wallet.
 

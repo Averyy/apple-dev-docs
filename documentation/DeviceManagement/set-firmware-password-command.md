@@ -9,7 +9,7 @@ Change or clear the firmware password on a device.
 **Availability**:
 - macOS 10.13+
 
-#### Discussion
+## Discussion
 
 This command has a throttle interval to prevent executing it more frequently than every 30 seconds. Requests that occur within the throttle interval return an error.
 
@@ -21,7 +21,7 @@ Refer to the following sections to determine supported channels and requirements
 
 This command isn’t supported on a Mac with Apple silicon.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ This command isn’t supported on a Mac with Apple silicon.
 | Allowed in user enrollment | N/A |
 | Required access right | DeviceLockAndRemovePasscode |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

@@ -23,7 +23,7 @@ var indexPathsForSelectedItems: [IndexPath]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSIndexPath *> * indexPathsForSelectedItems;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an array of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects, each of which corresponds to a single selected item. If there are no selected items, the value of this property is `nil`.
 

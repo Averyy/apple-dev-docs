@@ -24,7 +24,7 @@ var inheritFrontFacingWinding: Bool { get set }
 @property (nonatomic, readwrite) BOOL inheritFrontFacingWinding;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s default value is [`true`](../../Swift/true.md).
 

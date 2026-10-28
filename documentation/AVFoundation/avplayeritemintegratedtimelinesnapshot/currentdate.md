@@ -25,7 +25,7 @@ var currentDate: Date? { get }
 @property (readonly, nullable) NSDate * currentDate;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if playback doesn’t map to a date.
 

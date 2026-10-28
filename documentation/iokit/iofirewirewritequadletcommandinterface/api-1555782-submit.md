@@ -14,7 +14,7 @@
 IOReturn (*Submit)(IOFireWireLibCommandRef self);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

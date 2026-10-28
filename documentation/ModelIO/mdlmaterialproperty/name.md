@@ -24,7 +24,7 @@ var name: String { get set }
 @property (nonatomic, copy) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 A material property’s name is not used for rendering, but it can be useful in debugging. Model Model I/O  may set a material property’s name to a format-specific value when loading materials from an [`MDLAsset`](../mdlasset.md) object.
 

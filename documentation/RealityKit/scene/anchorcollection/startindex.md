@@ -21,7 +21,7 @@ The position of the first element in a nonempty collection.
 @preconcurrency var startIndex: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the collection is empty, `startIndex` is equal to `endIndex`.
 

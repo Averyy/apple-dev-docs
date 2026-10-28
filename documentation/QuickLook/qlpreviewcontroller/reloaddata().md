@@ -22,7 +22,7 @@ func reloadData()
 - (void) reloadData;
 ```
 
-#### Discussion
+## Discussion
 
 Quick Look recomputes the displayed data only if the current preview item changes.
 

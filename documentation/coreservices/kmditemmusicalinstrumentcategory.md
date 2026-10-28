@@ -19,7 +19,7 @@ let kMDItemMusicalInstrumentCategory: CFString!
 const CFStringRef kMDItemMusicalInstrumentCategory;
 ```
 
-#### Discussion
+## Discussion
 
 Files should have an instrument associated with them ("Other Instrument" is provided as a catch-all). For some categories, such as "Keyboards", there are instrument names which provide a more detailed instrument definition, for example "Piano" or "Organ".
 

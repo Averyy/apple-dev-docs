@@ -17,7 +17,7 @@ Key for an array of strings that specify what this day is called.
 extern NSString * const NSThisDayDesignations;
 ```
 
-#### Discussion
+## Discussion
 
 The default is an array containing two strings, “today” and “now”.
 

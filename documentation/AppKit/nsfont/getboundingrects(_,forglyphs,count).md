@@ -21,7 +21,7 @@ func getBoundingRects(_ bounds: NSRectArray, forGlyphs glyphs: UnsafePointer<NSG
 - (void) getBoundingRects:(NSRectArray) bounds forGlyphs:(const NSGlyph *) glyphs count:(NSUInteger) glyphCount;
 ```
 
-#### Discussion
+## Discussion
 
 Returns in `bounds` an array of the bounding rectangles for the glyphs specified by `glyphs` and rendered by the receiver. The  `glyphCount` must specify the count of glyphs passed in `glyphs`.
 

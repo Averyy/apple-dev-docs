@@ -21,7 +21,7 @@ A type representing continuous, one-dimensional values that can be offset and me
 protocol Strideable<Stride> : Comparable
 ```
 
-#### Overview
+## Overview
 
 You can use a type that conforms to the `Strideable` protocol with the `stride(from:to:by:)` and `stride(from:through:by:)` functions. For example, you can use `stride(from:to:by:)` to iterate over an interval of floating-point values:
 
@@ -51,7 +51,7 @@ let digits = (0..<10).map(String.init)
 // ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 ```
 
-### Conforming to the Strideable Protocol
+## Conforming to the Strideable Protocol
 
 To add `Strideable` conformance to a custom type, choose a `Stride` type that can represent the distance between two instances and implement the `advanced(by:)` and `distance(to:)` methods. For example, this hypothetical `Date` type stores its value as the number of days before or after January 1, 2000:
 

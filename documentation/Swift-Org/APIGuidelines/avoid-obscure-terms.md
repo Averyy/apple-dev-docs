@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Avoid obscure terms if a more common word conveys meaning just as well.
 
-#### Overview
+## Overview
 
 **Term of Art** : *noun* - a word or phrase that has a precise, specialized meaning within a particular field or profession.
 

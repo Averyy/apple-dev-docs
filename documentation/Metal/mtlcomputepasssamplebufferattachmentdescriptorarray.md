@@ -24,7 +24,7 @@ class MTLComputePassSampleBufferAttachmentDescriptorArray
 @interface MTLComputePassSampleBufferAttachmentDescriptorArray : NSObject
 ```
 
-#### Overview
+## Overview
 
 The number of elements in the array is at least the number of elements in an [`MTLDevice`](./mtldevice.md) instance’s [`counterSets`](./mtldevice/countersets.md) property.
 

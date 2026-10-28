@@ -22,7 +22,7 @@ var orientation: UIDeviceOrientation { get set }
 @property (nonatomic) UIDeviceOrientation orientation;
 ```
 
-#### Discussion
+## Discussion
 
 To simulate a change in the physical orientation of a device under test, set the value of the [`orientation`](./orientation.md) property for the shared [`XCUIDevice`](../xcuidevice.md) object to one of the [`UIDeviceOrientation`](../../UIKit/uideviceorientation.md) constants UIKit defines. This impacts the [`orientation`](../../UIKit/uidevice/orientation.md) property UIKit uses to identify a device’s physical orientation. These constants aren’t tied directly to the orientation of your app’s user interface. The example below sets the device orientation to landscape right:
 

@@ -23,7 +23,7 @@ var representativeItem: UIBarButtonItem? { get set }
 @property (nonatomic, strong, readwrite, nullable) UIBarButtonItem * representativeItem;
 ```
 
-#### Discussion
+## Discussion
 
 When space is constrained on the bar, UIKit may display a group’s representative item in place of its actual items. The representative item is a single bar button item that’s unique from the other items in the group. Tapping the representative item calls its action method normally. If you omit that action method, UIKit responds by automatically displaying the group’s items in a standard interface.
 

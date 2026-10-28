@@ -15,11 +15,11 @@ Adds a clock device video box.
 kern_return_t AddClockDevice(IOUserVideoClockDevice *in_clock_device);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if device was successfully added.
 
-#### Discussion
+## Discussion
 
 The box doesn’t own the clock device. The clock device’s reference count will be incremented if it was successfully added.
 

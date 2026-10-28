@@ -25,7 +25,7 @@ func CTLineDraw(_ line: CTLine, _ context: CGContext)
 extern void CTLineDraw(CTLineRef line, CGContextRef context);
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience function because the line could be drawn run-by-run by getting the glyph runs, getting the glyphs out of them, and calling a function such as [`CGContextShowGlyphsAtPositions`](../CoreGraphics/cgcontextshowglyphsatpositions.md). This call can leave the graphics context in any state and does not flush the context after the draw operation.
 

@@ -23,11 +23,11 @@ class func disambiguation(with stringsToDisambiguate: [INSpeakableString]) -> Se
 + (instancetype) disambiguationWithStringsToDisambiguate:(NSArray<INSpeakableString *> *) stringsToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INSpeakableStringResolutionResult`](../inspeakablestringresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when there is more one value that might match the given parameter. The user is asked to select from among the objects you provide.
 

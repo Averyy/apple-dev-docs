@@ -12,7 +12,7 @@ virtual void enterEntry(
  const IORegistryPlane *plane );
 ```
 
-#### Overview
+## Overview
 
 This method recurses into an entry as with enterEntry, but also switches from the current plane to a new one set by the caller.
 

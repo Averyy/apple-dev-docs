@@ -13,7 +13,7 @@
 case success = 0
 ```
 
-#### Discussion
+## Discussion
 
 No error occurred.
 

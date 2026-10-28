@@ -24,7 +24,7 @@ func JSStringIsEqual(_ a: JSStringRef!, _ b: JSStringRef!) -> Bool
 bool JSStringIsEqual(JSStringRef a, JSStringRef b);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the two strings match; otherwise, [`false`](../Swift/false.md).
 

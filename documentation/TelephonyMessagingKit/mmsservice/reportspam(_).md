@@ -15,7 +15,7 @@ Reports an MMS message as spam to the carrier and to partners.
 final func reportSpam(_ message: MMSMessage) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**:
 >

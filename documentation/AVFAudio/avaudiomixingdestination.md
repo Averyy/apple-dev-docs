@@ -25,7 +25,7 @@ class AVAudioMixingDestination
 @interface AVAudioMixingDestination : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can only use a destination instance when a source node provides it. You can’t use it as a standalone instance.
 

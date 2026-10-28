@@ -25,7 +25,7 @@ var serializedRepresentation: Data? { get }
 @property (copy, readonly, nullable) NSData * serializedRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a data object in the format used by the [`fileContents`](../../AppKit/nspasteboard/pasteboardtype/filecontents.md) pasteboard type. This data object is also suitable for passing to [`init(serializedRepresentation:)`](./init%28serializedrepresentation%29.md).
 

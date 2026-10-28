@@ -25,7 +25,7 @@ class AVCaptureSmartFramingMonitor
 
 - [Adopting smart framing in your camera app](./adopting-smart-framing-in-your-camera-app.md)
 
-#### Overview
+## Overview
 
 A smart framing monitor observes its associated device for objects of interest entering and exiting the camera’s field of view and recommends an optimal framing for good photographic composition. This framing recommendation consists of an aspect ratio and zoom factor. You may respond to the device’s framing recommendation by calling [`setDynamicAspectRatio(_:completionHandler:)`](./avcapturedevice/setdynamicaspectratio%28_,completionhandler%29.md) and setting [`videoZoomFactor`](./avcapturedevice/videozoomfactor.md) on the associated device in whatever order best matches your animation between old and new framings.
 

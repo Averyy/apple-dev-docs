@@ -25,7 +25,7 @@ func simdLocalTranslate(by translation: simd_float3)
 - (void) simdLocalTranslateBy:(simd_float3) translation;
 ```
 
-#### Discussion
+## Discussion
 
 The effects of this method are animatable; that is, calling this method during an implicit-animation transaction animates the move. (See [Animating SceneKit Content](../animating-scenekit-content.md).)
 

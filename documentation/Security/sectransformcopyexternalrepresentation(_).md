@@ -21,7 +21,7 @@ func SecTransformCopyExternalRepresentation(_ transformRef: SecTransform) -> CFD
 extern CFDictionaryRefSecTransformCopyExternalRepresentation(SecTransformRef transformRef);
 ```
 
-#### Discussion
+## Discussion
 
 This function returns a CFDictionaryRef that contains sufficient information to be able to recreate this transform. You can pass this CFDictionaryRef to SecTransformCreateFromExternalRepresentation to be able to recreate the transform. The dictionary can also be written out to disk using the techniques described here.
 

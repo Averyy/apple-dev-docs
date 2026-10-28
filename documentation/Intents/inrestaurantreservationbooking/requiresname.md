@@ -30,7 +30,7 @@ var requiresName: Bool { get set }
 @property (atomic) BOOL requiresName;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). Change the value to [`true`](../../Swift/true.md) if the restaurant (or your service) requires the guest’s name to confirm the reservation.
 

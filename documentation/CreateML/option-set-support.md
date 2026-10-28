@@ -5,7 +5,7 @@
 
 Inspect and modify a video augmentation option set with the properties and methods it inherits from standard protocols.
 
-#### Overview
+## Overview
 
 You don’t typically use these properties and methods directly.
 

@@ -25,7 +25,7 @@ protocol EntityStringQuery : EntityQuery
 
 - [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
-#### Overview
+## Overview
 
 EntityStringQuery adds to a [`EntityQuery`](./entityquery.md) the ability to query instances by `String`. The `String` value against which entities are matched typically represents the name a user would use to refer to a particular instance.
 

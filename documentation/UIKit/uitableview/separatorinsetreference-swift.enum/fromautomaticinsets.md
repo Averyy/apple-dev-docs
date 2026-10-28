@@ -23,7 +23,7 @@ case fromAutomaticInsets
 UITableViewSeparatorInsetFromAutomaticInsets
 ```
 
-#### Discussion
+## Discussion
 
 When using this style, the values in the [`separatorInset`](../separatorinset.md) property are interpreted as offsets from the default insets provided by the table view. The table view normally uses its layout margins as the default cell inset value. However, these insets may be modified by other factors, such as the when the [`cellLayoutMarginsFollowReadableWidth`](../celllayoutmarginsfollowreadablewidth.md) property is set to [`true`](../../../Swift/true.md).
 

@@ -10,7 +10,7 @@ framework: "mlx-swift/MLXNN"
 
 Built-in layers.
 
-#### Overview
+## Overview
 
 `MLXNN` provides a number of built-in layers that can be used to build models.
 See also [Activation Functions and Layers](./activations.md) for Activation Layers and [Creating Modules](./custom-layers.md) for examples of their use

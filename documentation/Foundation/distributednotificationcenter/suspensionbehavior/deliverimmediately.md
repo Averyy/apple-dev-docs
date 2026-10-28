@@ -18,7 +18,7 @@ case deliverImmediately
 NSNotificationSuspensionBehaviorDeliverImmediately
 ```
 
-#### Discussion
+## Discussion
 
 The server delivers notifications matching this registration irrespective of whether [`suspended`](../suspended.md) with an argument of [`true`](../../../Swift/true.md) has been called. When a notification with this suspension behavior is matched, it has the effect of first flushing any queued notifications. The effect is as if [`suspended`](../suspended.md) with an argument of [`false`](../../../Swift/false.md) were first called if the application is suspended, followed by the notification in question being delivered, followed by a transition back to the previous suspended or unsuspended state.
 

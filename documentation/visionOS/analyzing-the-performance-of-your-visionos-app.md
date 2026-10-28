@@ -5,7 +5,7 @@
 
 Use the RealityKit Trace template in Instruments to evaluate and improve the performance of your visionOS app.
 
-#### Overview
+## Overview
 
 To maintain the sense of immersion on Apple Vision Pro, the system attempts to provide the device displays with up-to-date imagery at a constant rate and respond to interactions with minimum latency. Any visual choppiness or delay in responsiveness interferes with the spatial experience. Higher power consumption over extended periods of time, or extreme power consumption over shorter periods of time, can trigger thermal mitigations that also impact the quality of the experience. It’s important to minimize your app’s use of system resources to ensure your app performs well on the platform. Many of the same best practices and optimization procedures you use developing for other Apple platforms apply when developing for visionOS as well. For more information about optimizing your app on other platforms, see [Improving your app’s performance](../Xcode/improving-your-app-s-performance.md).
 
@@ -18,7 +18,7 @@ To get useful information specific to rendering bottlenecks, high system power u
 
 > **Note**: You can profile using a real device or a simulator, but to get the most accurate and actionable information, use a real device. Software and hardware differences between a simulator on your Mac and a real device prevent you from relying on timing information. Simulated devices are useful for quick iteration and improving performance aspects that aren’t based on time.
 
-##### Open a new trace document
+### Open a new trace document
 
 To create a new trace document:
 
@@ -42,13 +42,13 @@ The RealityKit Trace template includes the following instruments:
 
 Consider adding other instruments to your trace for specific investigations. For example, you can use the Thermal State instrument to record device thermal states to check if thermal pressures are throttling performance.
 
-##### Profile your workflows
+### Profile your workflows
 
 Click the record button at the top left of the window to start capturing profile data. Perform the actions in your app that you want to investigate. When you complete the actions, click the record button again to stop recording.
 
 To investigate performance issues or analyze system power impact, profile your app in isolation to understand your app’s impact on system performance and ensure you get the most actionable information. For apps that run alongside other apps, profile your app again with those other apps running to understand how people experience your app in conjunction with other apps.
 
-##### Inspect frame rendering performance
+### Inspect frame rendering performance
 
 To maintain a smooth visual experience, the system tries to render new frames for the Apple Vision Pro at 90 frames per second (FPS). The system renders at other frame rates depending on the content it displays and the current surroundings. Each frame has a deadline for rendering based on the target frame rate. Not meeting these deadlines results in dropped frames. This creates a poor spatial experience overall. People tend to notice it in the visual performance of Persona and SharePlay experiences, video playback, and scrolling. The RealityKit Frames instrument displays the time spent rendering each frame in the Frames section of its timeline:
 
@@ -60,7 +60,7 @@ When you zoom out, you can identify areas with a high number of frame drops or w
 
 This provides you with insight into which portion of the rendering pipeline to investigate further. This timeline also includes sections that visualize the Average CPU Frame Time and Average GPU Frame Time to indicate the type of processing that computes the frames. A region of the timeline without a frame block indicates a period of time without changes to a person’s surroundings or app updates. The render server avoids computing new frames to send to the compositor during these periods which helps optimize power use.
 
-##### Monitor system power usage
+### Monitor system power usage
 
 When thermal levels rise to levels that trigger thermal mitigations in the system, performance degrades and negatively impacts the responsiveness of your app. Optimize for power to avoid this negative impact. The timeline for the RealityKit Metrics instrument includes a System Power Impact section to identify areas of high power usage in your app:
 
@@ -70,7 +70,7 @@ If the timeline displays green, the tool considers your app’s impact on system
 
 > **Note**: If the render server can’t maintain the target frame rate of 90 FPS due to thermal pressure, it might reduce its frame rate in half. When this occurs, all frames in the frames track show up as missing their rendering deadlines. Other factors can cause reduced frame rate, including the complexity and frequency of the content the system is processing. Use the Thermal State instrument to determine if thermal conditions are causing the rate limiting or if it’s due to other factors.
 
-##### Identify bottlenecks
+### Identify bottlenecks
 
 The Bottlenecks section of the timeline for the RealityKit Metrics instrument contains markers that indicate high overhead in your app or the render server that contribute to dropped frames and high system power use. When you encounter either of these issues, check if the timeline identifies bottlenecks you can address. Double-click on any of the markers to display more information in the detail area at the bottom of the instruments window. If the detail area is hidden, choose View > Detail Area > Show Detail Area to reveal it. The render server encounters bottlenecks in either the CPU or GPU. The instrument categorizes bottlenecks by their severity and type.
 
@@ -80,7 +80,7 @@ When you select a specific bottleneck, the extended detail provides recommendati
 
 ![An Instruments window shows profile data from the RealityKit Trace template. The top of the window displays timelines for the RealityKit Frames, RealityKit Metrics, Runloops, Time Profiler, and Hangs instruments. The RealityKit Metrics instrument timelines is selected and the detail area at the bottom of the window displays a summary of RealityKit Bottlenecks with an Entity Commits bottleneck selected. The extended detail sidebar, to the right, displays a list of recommendations.](https://developer.apple.com/tutorials/images/com.apple.visionOS/realitykit-metrics-bottleneck-recommendation@2x.png)
 
-##### Explore the metrics that relate to bottlenecks
+### Explore the metrics that relate to bottlenecks
 
 The trace provides additional information you can use to identify changes to make in your app to address these bottlenecks. Click the expansion arrow for the RealityKit Metrics instrument timeline to reveal graphs specific to each major category of work. Use the metrics associated with these graphs to determine which RealityKit feature has the biggest impact on high CPU frame times in the app process or in the render server. When interpreting these graphs, lower indicates better performance and power. The metrics represent values from all apps running, so profile with just your app running when trying to optimize for these metrics.
 
@@ -112,7 +112,7 @@ When you select the timeline for your app’s process, you can choose instrument
 
 To filter the information in the detail area by time, select periods of time in the timeline  above.
 
-##### Detect delays on the main thread
+### Detect delays on the main thread
 
 Select Hangs in your app’s process timeline to identify times in the trace that might have interaction delays. Use the RealityKit Metrics and Time Profiler summaries to better understand the work your app is doing. Choose the following options from the detail area pop-up menu:
 
@@ -121,7 +121,7 @@ Select Hangs in your app’s process timeline to identify times in the trace tha
 
 Optimize any 3D render updates, hit testing, and collision work you find. For more information about addressing hangs in your app, see [Improving app responsiveness](../Xcode/improving-app-responsiveness.md).
 
-##### Manage audio overhead
+### Manage audio overhead
 
 Use the Audio Playback section of your process’s timeline to identify areas of high audio overhead. The system defaults to using spatial audio for your app when running on visionOS. It processes information in real time about your position, surroundings, and the current location of audio sources to generate an immersive audio experience. If you include too many concurrent audio sources that require the system to adapt audio sources to their location within a large space, the increased demand on system resources can lead to delays in the audio output.
 
@@ -133,7 +133,7 @@ To reduce the spatial audio work, limit:
 
 Consider creating a pool of audio players to limit the maximum number of players your app uses. Place players on stationary entities, instead of moving entities, when appropriate. Initializing several audio players at the same time causes a high overhead that affects other aspects of the system, such as rendering performance. Consider the other tasks the system completes during these allocations and space them out over time. For more information, see [Create a great spatial playback experience](https://developer.apple.com/videos/play/wwdc2023/10070).
 
-##### Profile custom materials for optimization
+### Profile custom materials for optimization
 
 Use the Metal System Trace template to profile your custom materials in isolation before adding more visual effects to them. Examine the Metal GPU cost and try to optimize for GPU ALU Instructions and GPU Texture reads and writes per frame. For more information on using this template, see [Analyzing the performance of your Metal app](../Xcode/analyzing-the-performance-of-your-metal-app.md).
 

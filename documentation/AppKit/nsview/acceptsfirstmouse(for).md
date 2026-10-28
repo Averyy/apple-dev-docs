@@ -19,7 +19,7 @@ func acceptsFirstMouse(for event: NSEvent?) -> Bool
 - (BOOL) acceptsFirstMouse:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses can override this method to return [`true`](../../Swift/true.md) if the view should be sent a [`mouseDown(with:)`](../nsresponder/mousedown%28with%29.md) message for an initial mouse-down event, [`false`](../../Swift/false.md) if not.
 

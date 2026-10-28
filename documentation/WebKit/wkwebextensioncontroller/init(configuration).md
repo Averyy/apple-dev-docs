@@ -23,11 +23,11 @@ init(configuration: WKWebExtensionController.Configuration)
 - (instancetype) initWithConfiguration:(WKWebExtensionControllerConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized web extension controller, or nil if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 This is a designated initializer. You can use [`init()`](./init%28%29.md) to initialize an instance with the default configuration. The initializer copies the specified configuration, so mutating the configuration after invoking the initializer has no effect on the web extension controller.
 

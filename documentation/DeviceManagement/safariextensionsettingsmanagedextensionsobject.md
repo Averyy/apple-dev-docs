@@ -19,7 +19,7 @@ The dictionary of managed extensions settings. Each key in the dictionary repres
 object SafariExtensionSettingsManagedExtensionsObject
 ```
 
-#### Discussion
+## Discussion
 
 The composed identifier of a managed extension uses the format “Identifier (TeamIdentifier)”, for example “com.example.app (ABCD1234)”. Use `codesign -dv <path_to_appex>` to show the information you need to generate this string on macOS, using the path to the extension bundle located in the “PlugIns” folder inside the app bundle. For other platforms, request this information from the app developer.
 

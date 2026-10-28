@@ -20,7 +20,7 @@ Adds an existing payload arc to the prim.
 func add(_ payload: USDPrim.Payload, position: USDPrim.ListPosition = .backOfPrependList) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the payload cannot be added.
 

@@ -13,7 +13,7 @@ virtual mbuf_t replacePacket(
  UInt32 size = 0);
 ```
 
-#### Return Value
+## Return Value
 
 If packet allocation was successful, then a replacement will take place and the original packet will be returned. Otherwise, 0 is returned, and the original packet will be left untouched.
 

@@ -21,7 +21,7 @@ A single- or double-precision biquadratic filter.
 struct Biquad<T> where T : vDSP_FloatingPointBiquadFilterable
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  The vDSP biquadratic filters work in place. That is, the source and destination pointers may point to the same memory.
 

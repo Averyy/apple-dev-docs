@@ -29,7 +29,7 @@ func open(_ URL: URL) async -> Bool
 - (void) openURL:(NSURL *) URL completionHandler:(void (^)(BOOL success)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Each extension point determines whether to support this method, or under which conditions to support this method. In iOS,  the Today and iMessage app extension points support this method. An iMessage app extension can use this method only to open its parent app, and only if the parent app is shown on the iOS home screen.
 

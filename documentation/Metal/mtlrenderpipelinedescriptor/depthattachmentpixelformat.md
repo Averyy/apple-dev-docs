@@ -24,7 +24,7 @@ var depthAttachmentPixelFormat: MTLPixelFormat { get set }
 @property (nonatomic) MTLPixelFormat depthAttachmentPixelFormat;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the pixel format of the rendering pipeline state for each attachment is `MTLPixelFormatInvalid`.
 

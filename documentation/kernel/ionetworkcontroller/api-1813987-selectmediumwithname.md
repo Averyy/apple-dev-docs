@@ -12,11 +12,11 @@ virtual IOReturn selectMediumWithName(
  const OSSymbol *mediumName);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the return from selectMedium() if a matching entry was found from the medium dictionary. Returns kIOReturnUnsupported if a medium dictionary does not exist, or kIOReturnBadArgument if the name given does not match any entry in the medium dictionary.
 
-#### Overview
+## Overview
 
 This method is called when a client issues a command for the controller to change its current medium selection. This implementation will look for an entry in the medium dictionary published by the driver that is associated with the key given. If a match is found, then selectMedium() is called to perform the selection, otherwise an error is reported back to the client. Subclasses should override selectMedium() and not this method. This method call is synchronized by the workloop's gate.
 

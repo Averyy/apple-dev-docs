@@ -24,7 +24,7 @@ var sheen: MDLMaterialProperty { get }
 @property (nonatomic, retain, readonly) MDLMaterialProperty * sheen;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.05`—a very slight highlight.
 

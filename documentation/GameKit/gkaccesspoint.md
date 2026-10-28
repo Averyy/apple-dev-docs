@@ -28,7 +28,7 @@ class GKAccessPoint
 
 - [Adding an access point to your game](./adding-an-access-point-to-your-game.md)
 
-#### Overview
+## Overview
 
 The access point displays a control in a corner of your game that opens a Game Center dashboard when the player taps or clicks it.
 

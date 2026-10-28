@@ -14,7 +14,7 @@
 kSBCModePageCaching_FSW_Bit = 7
 ```
 
-#### Discussion
+## Discussion
 
 FSW Bit definition.
 

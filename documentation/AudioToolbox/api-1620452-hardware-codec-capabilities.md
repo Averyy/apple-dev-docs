@@ -5,7 +5,7 @@
 
 A constant to determine which hardware codecs can be used.
 
-#### Overview
+## Overview
 
 Use this property to determine whether a desired set of codecs can be simultaneously instantiated.
 

@@ -25,7 +25,7 @@ var lastRenderTime: AVAudioTime? { get }
 @property (nonatomic, readonly, nullable) AVAudioTime * lastRenderTime;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the engine isn’t running or if you don’t connect the node to an input or output node.
 

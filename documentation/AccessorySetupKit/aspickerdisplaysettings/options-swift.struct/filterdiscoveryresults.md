@@ -24,7 +24,7 @@ ASPickerDisplaySettingsOptionFilterDiscoveryResults
 
 - [Discovering and configuring accessories](../../discovering-and-configuring-accessories.md)
 
-#### Discussion
+## Discussion
 
 When your picker uses this option, your [`ASAccessorySession`](../../asaccessorysession.md) receives events of type [`ASAccessoryEventType.accessoryDiscovered`](../../asaccessoryeventtype/accessorydiscovered.md). Handle this event by examining the discovered accessory. To include it in the picker, create a new [`ASDiscoveredDisplayItem`](../../asdiscovereddisplayitem.md) for it and call [`updatePicker(showing:completionHandler:)`](../../asaccessorysession/updatepicker%28showing,completionhandler%29.md).
 

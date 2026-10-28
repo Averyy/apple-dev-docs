@@ -5,11 +5,11 @@
 
 A string value that identifies the app-specific notification.
 
-#### Overview
+## Overview
 
 The runtime provides this identifier to send the notification to the app. Set a custom value for this property for each unique notification your asset uses.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform string identifier

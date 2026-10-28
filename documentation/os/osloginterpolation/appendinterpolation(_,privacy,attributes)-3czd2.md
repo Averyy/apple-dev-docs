@@ -21,7 +21,7 @@ Appends an interpolated object description with the specified attributes.
 mutating func appendInterpolation(_ argumentObject: @autoclosure @escaping () -> NSObject, privacy: OSLogPrivacy = .auto, attributes: String)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated object description to a log message.
 

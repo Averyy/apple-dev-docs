@@ -23,11 +23,11 @@ init(radians: Float)
 static SPAngleFloat SPAngleFloatMakeWithRadians(float radians);
 ```
 
-#### Return Value
+## Return Value
 
 A new angle structure.
 
-#### Discussion
+## Discussion
 
 Returns an angle with the value specified in radians.
 

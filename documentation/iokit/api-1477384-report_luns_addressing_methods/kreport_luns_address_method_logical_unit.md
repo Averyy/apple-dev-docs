@@ -14,7 +14,7 @@
 kREPORT_LUNS_ADDRESS_METHOD_LOGICAL_UNIT = 2
 ```
 
-#### Discussion
+## Discussion
 
 Logical Unit Specific Addressing Method.
 

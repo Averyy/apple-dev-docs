@@ -24,7 +24,7 @@ let HMCharacteristicTypeInUse: String
 extern NSString * const HMCharacteristicTypeInUse;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueUsageState`](./hmcharacteristicvalueusagestate.md) enumeration.
 

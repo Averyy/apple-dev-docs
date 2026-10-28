@@ -15,7 +15,7 @@ The map’s color scheme when displaying standard or muted standard map types.
 colorScheme?: ColorScheme;
 ```
 
-#### Discussion
+## Discussion
 
 This property accepts a property from [`ColorScheme`](../colorscheme.md) to determine whether the map displays with a dark or light theme when [`Standard`](../maptype/standard.md) or [`MutedStandard`](../maptype/mutedstandard.md) are the configured [`mapType`](../map/maptype.md). The default is [`Light`](../colorscheme/light.md).
 

@@ -25,7 +25,7 @@ func perform()
 - (void) perform;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses override this method and use it to perform the animations from the views in [`source`](./source.md) to the views in [`destination`](./destination.md). Typically, you use UIKit or Core Animation to set up an animation from one set of views to the next. For more complex animations, you might take a snapshot image of the two view hierarchies and manipulate the images instead of the actual view objects.
 

@@ -5,13 +5,13 @@
 
 Learn how to create a simple app that incorporates predicted touches into its drawing code.
 
-#### Overview
+## Overview
 
 The sample app Speed Sketch (see [Leveraging touch input for drawing apps](./leveraging-touch-input-for-drawing-apps.md)) uses predicted touches to minimize latency when drawing using either Apple Pencil or a finger. The key class for gathering touches is the `StrokeGestureRecognizer` class. Each new sequence of touch events results in the creation of a `Stroke` object to the app’s drawing canvas. Stroke objects store the touch data needed to do stylized line drawing and can render that data using a calligraphy pen or a regular pen, or in a special debug mode that draws line segments for each distinct touch event.
 
 ![An illustration of the calligraphy, pen, and debug drawing modes in Speed Sketch.](https://developer.apple.com/tutorials/images/com.apple.uikit/incorporating-predicted-touches-into-an-app-1@2x.png)
 
-##### Collect the touch input
+### Collect the touch input
 
 The `StrokeGestureRecognizer` class collects drawing-related touch input and uses it to create a `Stroke` object representing the path to render. In addition to the touches that actually occurred, the class also gathers any predicted touches. The following code shows the portion of the gesture recognizer’s `append` method that’s responsible for gathering the predicted touches. The `collector` block called by this code processes each touch event. The parameters to that block indicate whether the touch is an actual touch or a predicted touch.
 
@@ -76,7 +76,7 @@ class Stroke {
 }
 ```
 
-##### Render the predicted touches
+### Render the predicted touches
 
 During rendering, the app treats predicted touches like actual touches. It breaks down the contents of each `Stroke` object into one or more `StrokeSegment` objects, which the drawing code fetches using a `StrokeSegmentIterator` object. The following code shows the implementation of this class. As the drawing code iterates over the stroke samples, the `sampleAt` method returns the samples for the actual touches first. Only after the method returns all of the actual touch samples does the iterator return the samples for any predicted touches. Thus, the predicted touches are always located at the end of the stroked line.
 

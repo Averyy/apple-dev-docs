@@ -19,11 +19,11 @@ func boundingRect(with size: NSSize, options: NSString.DrawingOptions = [], attr
 - (NSRect) boundingRectWithSize:(NSSize) size options:(NSStringDrawingOptions) options attributes:(NSDictionary<NSString *,id> *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 The bounding rect for the receiver drawn using the given options and display characteristics. The rect origin returned from this method is the first glyph origin.
 
-#### Discussion
+## Discussion
 
 This method works in single-line, baseline rendering configuration by default. If the string drawing option `NSStringDrawingUsesLineFragmentOrigin` is specified, the method behaves in multiline configuration.
 

@@ -20,7 +20,7 @@ static let containerID: IOUSBHostDevicePropertyKey
 extern IOUSBHostDevicePropertyKey IOUSBHostDevicePropertyKeyContainerID;
 ```
 
-#### Discussion
+## Discussion
 
 See USB 3.2, 9.6.2.3 for more information.
 

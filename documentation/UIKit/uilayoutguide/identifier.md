@@ -23,7 +23,7 @@ var identifier: String { get set }
 @property (nonatomic, copy) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the `identifier` property is an empty string. Assign a nonempty string to identify this layout guide. This string appears as part of the guide’s description when the guide is printed to the console. You can also use the identifier to find a particular layout guide from among the guides owned by a view.
 

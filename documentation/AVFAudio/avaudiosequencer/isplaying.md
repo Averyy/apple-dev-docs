@@ -24,7 +24,7 @@ var isPlaying: Bool { get }
 @property (nonatomic, readonly, getter=isPlaying) BOOL playing;
 ```
 
-#### Discussion
+## Discussion
 
 This value returns [`true`](../../Swift/true.md) if the sequencer’s player is in a started state. The framework considers it to be playing until it explicitly stops, including when playing past the end of the events in a sequence.
 

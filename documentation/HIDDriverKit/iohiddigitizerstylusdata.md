@@ -16,7 +16,7 @@ A structure containing digitizer stylus data.
 typedef struct IOHIDDigitizerStylusData { ... } IOHIDDigitizerStylusData;
 ```
 
-#### Overview
+## Overview
 
 When dispatching stylus events, allocate an `IOHIDDigitizerStylusData` structure, fill it with stylus data, and pass it to the [`dispatchDigitizerStylusEvent`](./iohideventservice/dispatchdigitizerstylusevent.md) method.
 

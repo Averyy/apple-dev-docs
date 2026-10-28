@@ -20,7 +20,7 @@ The index of this joint’s parent, or nil if this joint has no parent.
 var parentIndex: Int?
 ```
 
-#### Discussion
+## Discussion
 
 If the joint has a parent, the index of the parent needs to be lower than that of the child.
 

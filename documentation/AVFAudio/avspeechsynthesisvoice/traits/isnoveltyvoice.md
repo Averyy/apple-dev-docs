@@ -25,7 +25,7 @@ static var isNoveltyVoice: AVSpeechSynthesisVoice.Traits { get }
 AVSpeechSynthesisVoiceTraitIsNoveltyVoice
 ```
 
-#### Discussion
+## Discussion
 
 An example of a novelty voice is a character’s voice in a game.
 

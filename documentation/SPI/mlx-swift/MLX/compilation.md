@@ -10,11 +10,11 @@ framework: "mlx-swift/MLX"
 
 MLX has a [`compile(inputs:outputs:shapeless:_:)`](./compile%28inputs,outputs,shapeless,_%29-8wq3u.md) function transformation which compiles computation graphs. Function compilation results in smaller graphs by merging common work and fusing certain operations. In many cases this can lead to big improvements in run-time and memory use.
 
-#### Overview
+## Overview
 
 Getting started with [`compile(inputs:outputs:shapeless:_:)`](./compile%28inputs,outputs,shapeless,_%29-8wq3u.md) is simple, but there are some edge cases that are good to be aware of for more complex graphs and advanced usage.
 
-#### Basics of Compile
+## Basics of Compile
 
 Let’s start with a simple example:
 
@@ -50,7 +50,7 @@ In certain cases only some of the compilation stack will be rerun (for example w
 
 Another idiom to watch out for is compiling functions which get created and destroyed frequently. This can happen, for example, when compiling a function inside a loop – better to hoist it to outside the loop.
 
-#### Example Speedup
+## Example Speedup
 
 The function `gelu()` is a nonlinear activation function commonly used with Transformer-based models. The implementation involves several unary and binary element-wise operations:
 
@@ -97,7 +97,7 @@ On an M1 Max the times are 15.5 and 3.1 milliseconds. The compiled `gelu` is fiv
 
 > **Note**: As of the latest MLX, CPU functions are not fully compiled. Compiling CPU functions can still be helpful, but won’t typically result in as large a speedup as compiling operations that run on the GPU.
 
-#### Debugging
+## Debugging
 
 When a compiled function is first called, it is traced with placeholder inputs. This means you can’t evaluate arrays (for example to print their contents) inside compiled functions.
 
@@ -117,7 +117,7 @@ _ = compiled(...)
 
 For debugging, inspecting arrays can be helpful. One way to do that is to globally disable compilation using the [`compile(enable:)`](./compile%28enable%29.md) function or `MLX_DISABLE_COMPILE` environment variable.
 
-#### Pure Functions
+## Pure Functions
 
 Compiled functions are intended to be *pure*; that is they should not have side effects. For example:
 
@@ -259,7 +259,7 @@ print(compiled(MLXArray(Float(3))))  // 30 -- now it sees the update
 
 `inputs:` is what makes the compiled function observe external updates: on every call the *current* values of the listed state are fed back into the compiled graph. `outputs:` is the reverse direction – it writes values back out of the graph into the real arrays, and is only needed when the compiled closure itself *mutates* the captured state (for example a training step that calls `optimizer.update(model:gradients:)` inside the compiled function, as shown below). Since `model(x)` above only reads `scale`, `inputs: [model]` alone is enough; adding `outputs: [model]` would be harmless but unnecessary.
 
-#### Compiling Training Graphs
+## Compiling Training Graphs
 
 This section will step through how to use [`compile(inputs:outputs:shapeless:_:)`](./compile%28inputs,outputs,shapeless,_%29-8wq3u.md) with a simple example of a common setup: training a model with `Module` using an `Optimizer` with state. We will show how to compile the full forward, backward, and update with [`compile(inputs:outputs:shapeless:_:)`](./compile%28inputs,outputs,shapeless,_%29-8wq3u.md).
 

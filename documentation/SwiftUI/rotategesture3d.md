@@ -16,7 +16,7 @@ nonisolated
 struct RotateGesture3D
 ```
 
-#### Overview
+## Overview
 
 You can constrain this gesture to recognize rotation about a specific 3D axis. For example, `RotateGesture3D(constrainedToAxis: .x)` creates a gesture that recognizes rotation only around the global X axis. The axis you provide will be normalized.
 

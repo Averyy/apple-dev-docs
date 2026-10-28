@@ -21,7 +21,7 @@ Sets a region of the data buffer to `0`.
 mutating func resetBytes(in range: Range<Data.Index>)
 ```
 
-#### Discussion
+## Discussion
 
 If `range` exceeds the bounds of the data, then the data is resized to fit.
 

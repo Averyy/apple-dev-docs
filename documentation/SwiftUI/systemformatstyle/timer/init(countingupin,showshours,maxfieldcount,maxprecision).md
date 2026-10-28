@@ -21,7 +21,7 @@ Creates a timer format style that counts up within the interval you provide.
 init(countingUpIn interval: Range<Date>, showsHours: Bool = true, maxFieldCount: Int = 3, maxPrecision: Duration = .seconds(1))
 ```
 
-#### Discussion
+## Discussion
 
 The timer displays the elapsed time, starting from zero and increasing toward the total interval duration.
 

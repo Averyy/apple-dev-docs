@@ -25,11 +25,11 @@ func CGPDFContentStreamCreateWithStream(_ stream: CGPDFStreamRef, _ streamResour
 extern CGPDFContentStreamRefCGPDFContentStreamCreateWithStream(CGPDFStreamRef stream, CGPDFDictionaryRef streamResources, CGPDFContentStreamRef parent);
 ```
 
-#### Return Value
+## Return Value
 
 A PDF content stream object created from the `stream` parameter. In Objective-C, you’re responsible for releasing this object by calling the [`CGPDFContentStreamRelease(_:)`](./cgpdfcontentstreamrelease%28_%29.md) function.
 
-#### Discussion
+## Discussion
 
 You can use this function to get access to the contents of a form, pattern, Type3 font, or any PDF stream.
 

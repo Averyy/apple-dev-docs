@@ -21,7 +21,7 @@ Block size for file system I/O, in bytes
 var preferredIOBlockSize: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C property is `st_blksize`.
 

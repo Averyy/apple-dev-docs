@@ -21,7 +21,7 @@ func attachColorList(_ colorList: NSColorList)
 - (void) attachColorList:(NSColorList *) colorList;
 ```
 
-#### Discussion
+## Discussion
 
 You never invoke this method; it’s invoked automatically by the `NSColorPanel` object when its [`attachColorList(_:)`](../nscolorpanel/attachcolorlist%28_%29.md) method is invoked. Because the `NSColorPanel` list mode manages `NSColorList` objects, this method need only be implemented by a custom color picker that manages `NSColorList` objects itself.
 

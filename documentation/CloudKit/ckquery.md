@@ -25,7 +25,7 @@ class CKQuery
 @interface CKQuery : NSObject
 ```
 
-#### Overview
+## Overview
 
 You create a query as the first step in the search process. The query stores the search parameters, including the type of records to search, the match criteria (predicate) to apply, and the sort parameters to apply to the results. Then you use the query to initialize an instance of [`CKQueryOperation`](./ckqueryoperation.md), which you execute to generate the results.
 
@@ -33,11 +33,11 @@ Always designate a record type and predicate when you create a query object. The
 
 Because you can’t change the record type and predicate after initialization, you can use the same query to initialize multiple instances of [`CKQueryOperation`](./ckqueryoperation.md), each of which targets a different database or record zone.
 
-##### Building Your Predicates
+### Building Your Predicates
 
 An [`NSPredicate`](../Foundation/nspredicate.md) object defines the logical conditions for determining whether a record is a match for a query. Queries support only a subset of the predicate behaviors that the `NSPredicate` class offers.
 
-###### Predicate Rules for Query Objects
+#### Predicate Rules for Query Objects
 
 The predicates you create for your query objects must follow these rules:
 
@@ -68,7 +68,7 @@ The predicates you create for your query objects must follow these rules:
   - You can’t use it with the `distanceToLocation:fromLocation:` function.
   - You can’t use it in `BETWEEN` queries.
 
-###### Supported Predicate Operators
+#### Supported Predicate Operators
 
 The following table lists the operators you can use in predicates for a query.
 
@@ -83,7 +83,7 @@ The following table lists the operators you can use in predicates for a query.
 
 Specifying an unsupported operator or data type in your query’s predicate results in an error when you execute the query. For more information about creating predicate objects, see [Predicate Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html#//apple_ref/doc/uid/TP40001789).
 
-###### Sample Predicate Format Strings
+#### Sample Predicate Format Strings
 
 To match records that link to a different record with an ID you know, create a predicate that matches a field that contains a reference as Listing 1 shows. In the example, the `employee` field of the record contains a [`CKRecord.Reference`](./ckrecord/reference.md) object that points to another record. When CloudKit executes the query, a match occurs when the ID in the locally-created [`CKRecord.Reference`](./ckrecord/reference.md) object is the same ID as in the specified field of the record.
 
@@ -169,7 +169,7 @@ NSPredicate *predicate = nil;
 predicate = [NSPredicate predicateWithFormat:@"TRUEPREDICATE"];
 ```
 
-##### Indexes and Full-Text Search
+### Indexes and Full-Text Search
 
 Indexes make it possible to search the contents of your records efficiently. During development, the server indexes all fields with data types it can use in the predicate of a query. This automatic indexing makes it easier to experiment with queries during development, but the indexes require space in a database, and require time to generate and maintain. So when migrating to a production environment, remove the indexes for any fields that you don’t use in queries.
 
@@ -188,7 +188,7 @@ In a full-text search, CloudKit ignores the following words if they appear in th
 | but | no | their | will |
 |  |  |  | with |
 
-##### Executing a Search Using Your Query Object
+### Executing a Search Using Your Query Object
 
 To execute a query, do one of the following:
 

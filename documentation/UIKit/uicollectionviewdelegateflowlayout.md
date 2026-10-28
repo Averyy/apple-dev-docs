@@ -24,7 +24,7 @@ protocol UICollectionViewDelegateFlowLayout : UICollectionViewDelegate
 @protocol UICollectionViewDelegateFlowLayout <UICollectionViewDelegate>
 ```
 
-#### Overview
+## Overview
 
 The methods of this protocol define the size of items and the spacing between items in the grid. All of the methods in this protocol are optional. If you don’t implement a particular method, the flow layout delegate uses values in its own properties for the appropriate spacing information.
 

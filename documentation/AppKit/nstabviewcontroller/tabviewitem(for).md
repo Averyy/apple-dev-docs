@@ -19,11 +19,11 @@ func tabViewItem(for viewController: NSViewController) -> NSTabViewItem?
 - (NSTabViewItem *) tabViewItemForViewController:(NSViewController *) viewController;
 ```
 
-#### Return Value
+## Return Value
 
 The tab view item associated with the view controller or `nil` if the view controller is not managed by the tab view controller.
 
-#### Discussion
+## Discussion
 
 This method is a convenient way to map a tab view item to a newly added child view controller. When you add child view controllers using the [`addChild(_:)`](../nsviewcontroller/addchild%28_%29.md) method, the tab view automatically controller creates a new tab view item. Use this method to fetch that tab view item and configure it.
 

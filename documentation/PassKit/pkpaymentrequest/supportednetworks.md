@@ -24,7 +24,7 @@ var supportedNetworks: [PKPaymentNetwork] { get set }
 @property (nonatomic, copy) NSArray<NSString *> * supportedNetworks;
 ```
 
-#### Discussion
+## Discussion
 
 This property constrains the payment methods that the user can select to fund the payment. For possible values, see [`PKPaymentNetwork`](../pkpaymentnetwork.md).
 

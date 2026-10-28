@@ -12,7 +12,7 @@ Improve the performance of lists and collections in your app with prefetching an
 - Mac Catalyst 15.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10252: Make Blazing Fast Lists and Collection Views](https://developer.apple.com/wwdc21/10252/).
 

@@ -20,7 +20,7 @@ func DADissenterGetStatus(_ dissenter: DADissenter) -> DAReturn
 extern DAReturn DADissenterGetStatus(DADissenterRef dissenter);
 ```
 
-#### Return Value
+## Return Value
 
 The return code. A BSD return code, if applicable, is encoded with unix_err().
 

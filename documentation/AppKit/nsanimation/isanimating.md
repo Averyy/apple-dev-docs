@@ -19,7 +19,7 @@ var isAnimating: Bool { get }
 @property (readonly, getter=isAnimating) BOOL animating;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the animation is in progress or [`false`](../../Swift/false.md) when it is stopped.
 

@@ -23,7 +23,7 @@ let CXErrorDomainIncomingCall: String
 extern NSErrorDomain const CXErrorDomainIncomingCall;
 ```
 
-#### Discussion
+## Discussion
 
 See [`CXProvider`](./cxprovider.md) for possible error codes.
 

@@ -24,7 +24,7 @@ nonisolated
 init(@ContentBuilder content: () -> Content)
 ```
 
-#### Discussion
+## Discussion
 
 Perform navigation by initializing a link with a destination view. For example, consider a `ColorDetail` view that displays a color sample:
 

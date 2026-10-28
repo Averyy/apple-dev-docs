@@ -28,7 +28,7 @@ static var openAppWhenRun: Bool { get }
 
 - [Responding to the Action button on Apple Watch Ultra](../actionbuttonarticle.md)
 
-#### Discussion
+## Discussion
 
 This property is deprecated. Use [`supportedModes`](./supportedmodes.md) instead. Setting this property to `true` generates an error if the app intent runs in an app extension. For backward compatability, you can set this property to `true` for app intents you run inside your app. For example:
 

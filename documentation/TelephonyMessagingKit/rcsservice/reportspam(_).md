@@ -15,7 +15,7 @@ Reports an RCS message as spam to the carrier and to partners.
 final func reportSpam(_ request: RCSService.ReportSpamRequest) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**:  If the session is no longer valid, this method throws [`TelephonyMessagingSession.Error.invalidSession`](../telephonymessagingsession/error/invalidsession.md). If the carrier doesn’t support spam reporting, the method throws [`RCSService.Error.notSupported`](./error/notsupported.md).
 

@@ -14,7 +14,7 @@ One or more groups of attributes that tell the system about the devices your dri
 - **Name**: `IOKitPersonalities`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 This key contains a dictionary of driver *personalities*, each of which specifies how to pair the driver to a device. Each key in the dictionary is a string you designate as the name of a specific personality, and the system doesn’t use your key names internally. The value of each key is a dictionary of attributes that describe the specific device to match with the driver. Thus, each key and dictionary combination represents a single personality of the driver. The system uses these personalities to match the driver to an attached device.
 

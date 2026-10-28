@@ -25,7 +25,7 @@ func isAliasable() -> Bool
 - (BOOL) isAliasable;
 ```
 
-#### Return Value
+## Return Value
 
 The default value is [`false`](../../Swift/false.md). The value is [`true`](../../Swift/true.md) only if the [`makeAliasable()`](./makealiasable%28%29.md) method was previously called on this resource.
 

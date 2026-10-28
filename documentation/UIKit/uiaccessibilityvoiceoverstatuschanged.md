@@ -25,7 +25,7 @@ let UIAccessibilityVoiceOverStatusChanged: String
 extern NSString * const UIAccessibilityVoiceOverStatusChanged;
 ```
 
-#### Discussion
+## Discussion
 
 This notification doesn’t include a parameter.
 

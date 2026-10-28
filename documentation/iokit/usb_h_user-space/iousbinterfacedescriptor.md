@@ -19,7 +19,7 @@ struct IOUSBInterfaceDescriptor {
 };
 ```
 
-#### Overview
+## Overview
 
 Descriptor for a USB Interface. See the USB Specification at [http://www.usb.org](http://www.usb.org).
 

@@ -26,7 +26,7 @@ class let noCloudAccountNotification: NSNotification.Name
 extern NSNotificationName const NSUbiquitousUserDefaultsNoCloudAccountNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification is posted to the default notification center on the main queue.
 

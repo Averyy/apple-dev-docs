@@ -5,7 +5,7 @@
 
 An object converts video data from source pixel buffers to destination pixel buffers.
 
-#### Overview
+## Overview
 
 A pixel transfer session supports the copying and/or conversion of images from source pixel buffers to destination pixel buffers. The basic workflow used when working with a pixel transfer session is as follows:
 

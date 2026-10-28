@@ -6,7 +6,7 @@
 
 One or more atoms that define a single track of a movie.
 
-#### Overview
+## Overview
 
 For more information, see [`Track atom`](../track_atom.md).
 

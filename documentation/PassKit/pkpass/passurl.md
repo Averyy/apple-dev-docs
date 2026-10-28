@@ -24,7 +24,7 @@ var passURL: URL? { get }
 @property (nonatomic, copy, readonly, nullable) NSURL * passURL;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`openURL(_:)`](../../UIKit/uiapplication/openurl%28_%29.md) method to open the pass in the Wallet app.
 

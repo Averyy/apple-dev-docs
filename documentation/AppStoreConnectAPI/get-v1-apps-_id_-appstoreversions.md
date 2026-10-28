@@ -14,9 +14,9 @@ Get a list of all App Store versions of an app across all platforms.
 - [Creating alternative distribution packages](./creating-alternative-distribution-packages.md)
 - [App Store Connect API 1.3 release notes](./app-store-connect-api-1-3-release-notes.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

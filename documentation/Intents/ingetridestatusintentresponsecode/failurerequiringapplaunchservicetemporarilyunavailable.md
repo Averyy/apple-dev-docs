@@ -23,7 +23,7 @@ case failureRequiringAppLaunchServiceTemporarilyUnavailable
 INGetRideStatusIntentResponseCodeFailureRequiringAppLaunchServiceTemporarilyUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when you are unable to reach your service to get the ride details. Don’t use this code for general errors or to force the user to launch your app.
 

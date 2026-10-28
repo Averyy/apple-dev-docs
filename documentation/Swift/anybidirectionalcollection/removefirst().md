@@ -24,11 +24,11 @@ mutating func removeFirst() -> Self.Element
 
 Available when `Self` is `Self.SubSequence`.
 
-#### Return Value
+## Return Value
 
 The first element of the collection.
 
-#### Discussion
+## Discussion
 
 The collection must not be empty.
 

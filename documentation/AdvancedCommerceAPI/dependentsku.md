@@ -19,7 +19,7 @@ string dependentSKU
 
 **Maximum Length**: `128`
 
-##### Discussion
+### Discussion
 
 A dependent SKU is a product identifier that represents an item that depends on another SKU in the context of subscription price changes. Dependent SKUs cannot be chained or shared between multiple parent SKUs.
 

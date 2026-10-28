@@ -20,7 +20,7 @@ static var pushToStartTokenUpdates: Activity<Attributes>.PushTokenUpdates { get 
 
 - [Starting and updating Live Activities with ActivityKit push notifications](../starting-and-updating-live-activities-with-activitykit-push-notifications.md)
 
-#### Discussion
+## Discussion
 
 Adopt push notifications to not only update ongoing Live Activities, but also to start a new Live Activity. For additional information, see [Starting and updating Live Activities with ActivityKit push notifications](../starting-and-updating-live-activities-with-activitykit-push-notifications.md).
 

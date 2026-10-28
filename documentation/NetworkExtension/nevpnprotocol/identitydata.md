@@ -24,7 +24,7 @@ var identityData: Data? { get set }
 @property (copy, nullable) NSData * identityData;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, the system ignores this property for [`NEVPNProtocolIKEv2`](../nevpnprotocolikev2.md) and [`NETunnelProviderProtocol`](../netunnelproviderprotocol.md) objects. On iOS, the system ignores this property for [`NETunnelProviderProtocol`](../netunnelproviderprotocol.md) objects. In cases where the system ignores this property, set the identity using the [`identityReference`](./identityreference.md) property.
 

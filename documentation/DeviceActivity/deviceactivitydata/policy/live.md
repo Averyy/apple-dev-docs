@@ -16,7 +16,7 @@ A policy that fetches live device activity data.
 case live
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  A request to fetch live data may return cached data if the system updated the cache recently.
 

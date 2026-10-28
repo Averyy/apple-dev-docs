@@ -26,7 +26,7 @@ var numberOfTouchesRequired: Int { get set }
 
 - [Handling swipe gestures](../handling-swipe-gestures.md)
 
-#### Discussion
+## Discussion
 
 The default value is `1`.
 

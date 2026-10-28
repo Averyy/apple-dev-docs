@@ -24,11 +24,11 @@ func calendarItems(withExternalIdentifier externalIdentifier: String) -> [EKCale
 - (NSArray<EKCalendarItem *> *) calendarItemsWithExternalIdentifier:(NSString *) externalIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 An array of calendar items with the specified identifier.
 
-#### Discussion
+## Discussion
 
 Use [`calendarItemExternalIdentifier`](../ekcalendaritem/calendaritemexternalidentifier.md) to obtain the external identifier. There may be more than one matching calendar item due to reasons discussed in `calendarItemExternalIdentifier`.
 

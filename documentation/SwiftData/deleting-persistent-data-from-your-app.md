@@ -14,7 +14,7 @@ Explore different ways to use SwiftData to delete persistent data.
 - tvOS 17.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 Data-driven apps typically provide a way for a person to delete data, and this sample is no exception. It shows three ways to remove data stored in a SwiftData model container:
 
@@ -24,7 +24,7 @@ Data-driven apps typically provide a way for a person to delete data, and this s
 
 > **Note**: If you want to learn how to add and edit data using SwiftData, see [Adding and editing persistent data in your app](./adding-and-editing-persistent-data-in-your-app.md).
 
-#### Swipe to delete
+## Swipe to delete
 
 The sample app shows a list of animals. A person using the app can delete an animal using a swipe gesture. For example, the following code adds the swipe-to-delete option to the `AnimalList` view by applying the [`onDelete(perform:)`](../SwiftUI/dynamicviewcontent/ondelete%28perform%29.md) modifier to [`ForEach`](../SwiftUI/foreach.md):
 
@@ -91,7 +91,7 @@ private func removeAnimals(at indexSet: IndexSet) {
 
 > **Note**: To disable the autosave feature, set the `isAutoSaveEnabled` parameter to `false` when creating the model container using the [`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](../SwiftUI/view/modelcontainer%28for,inmemory,isautosaveenabled,isundoenabled,onsetup%29-18hhy.md) modifier. You can also disable autosave by setting set the model context property [`autosaveEnabled`](./modelcontext/autosaveenabled.md) to `false`.
 
-#### Delete with confirmation
+## Delete with confirmation
 
 The sample app also lets a person delete the selected animal by clicking the Trash button that `AnimalDetailView` displays in its toolbar.
 
@@ -152,7 +152,7 @@ private func delete(_ animal: Animal) {
 }
 ```
 
-#### Delete all
+## Delete all
 
 Deleting all items of a particular model type is less common in data driven apps, but there may be times when having this option is helpful. For example, the sample apps lets a person reload sample data that comes with the app. Reloading the sample data deletes all animal categories and animals from persistent storage.
 

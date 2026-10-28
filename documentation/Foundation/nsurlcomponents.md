@@ -25,7 +25,7 @@ class NSURLComponents
 @interface NSURLComponents : NSObject
 ```
 
-#### Overview
+## Overview
 
 In Swift, this object bridges to [`URLComponents`](./urlcomponents.md); use [`NSURLComponents`](./nsurlcomponents.md) when you need reference semantics or other Foundation-specific behavior.
 

@@ -21,11 +21,11 @@ func SecTrustedApplicationSetData(_ appRef: SecTrustedApplication, _ data: CFDat
 OSStatus SecTrustedApplicationSetData(SecTrustedApplicationRef appRef, CFDataRef data);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 If you use the [`SecTrustedApplicationCopyData(_:_:)`](./sectrustedapplicationcopydata%28_,_%29.md) method to extract the data from a trusted app instance for storage or transmission, you can use the [`SecTrustedApplicationSetData(_:_:)`](./sectrustedapplicationsetdata%28_,_%29.md) method to insert that data into a new trusted app. Doing so creates an object that identifies the same app as the original trusted app instance.
 

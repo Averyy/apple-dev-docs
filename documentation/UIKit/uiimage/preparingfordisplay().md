@@ -23,11 +23,11 @@ func preparingForDisplay() -> UIImage?
 - (UIImage *) imageByPreparingForDisplay;
 ```
 
-#### Return Value
+## Return Value
 
 A new version of the image object for display. If the system can’t decode the image, this method returns `nil`.
 
-#### Discussion
+## Discussion
 
 The Animation Hitches instrument measures system performance for multiple stages of preparing views for display. It can show you the exact cause of an animation hitch, which appears to the user as an interruption or jump in an animation that should be smooth. If Animation Hitches indicates that decoding an image takes too long and causes hitches, use this method to move the decoding work to the background. For more information on using Instruments, see [Instruments Help](https://help.apple.com/instruments/mac/current/).
 

@@ -21,11 +21,11 @@ Returns a subsequence containing all but the specified number of final elements.
 func dropLast(_ k: Int = 1) -> Self.SubSequence
 ```
 
-#### Return Value
+## Return Value
 
 A subsequence that leaves off the specified number of elements at the end.
 
-#### Discussion
+## Discussion
 
 If the number of elements to drop exceeds the number of elements in the collection, the result is an empty subsequence.
 

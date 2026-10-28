@@ -19,7 +19,7 @@ enum MLRegressor
 
 - [Improving Your Model’s Accuracy](./improving-your-model-s-accuracy.md)
 
-#### Overview
+## Overview
 
 Use an [`MLRegressor`](./mlregressor.md) to estimate continuous values like price, time, or temperature.
 

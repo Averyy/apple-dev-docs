@@ -15,7 +15,7 @@ The MIME type of the video asset.
 attribute String videoMimeType;
 ```
 
-#### Discussion
+## Discussion
 
 The `MIME` type of the video asset, either as detected from a network request for the asset (if it was provided as a URL on [`videoSrc`](./videosrc.md)) or as provided by the developer prior to assigning a prepared `ArrayBuffer` to [`videoSrc`](./videosrc.md).
 

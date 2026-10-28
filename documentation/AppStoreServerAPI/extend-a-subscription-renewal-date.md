@@ -15,7 +15,7 @@ Extends the renewal date of a customer’s active subscription using the origina
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to compensate your customers for temporary service outages, canceled events, or interruptions to live streamed events by extending the renewal date of their paid, active subscription. This endpoint acts on a single subscription for a transaction identifier that you specify.
 

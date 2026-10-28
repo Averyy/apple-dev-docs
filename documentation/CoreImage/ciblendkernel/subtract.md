@@ -24,7 +24,7 @@ class var subtract: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * subtract;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the subtract blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926848@2x.png)
 

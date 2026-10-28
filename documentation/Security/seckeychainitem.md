@@ -19,7 +19,7 @@ class SecKeychainItem
 typedef struct __SecKeychainItem * SecKeychainItemRef;
 ```
 
-#### Overview
+## Overview
 
 A [`SecKeychainItem`](./seckeychainitem.md) object for a certificate that is stored in a keychain can be safely cast to a [`SecCertificate`](./seccertificate.md) for use with [Certificate, Key, and Trust Services](./certificate-key-and-trust-services.md).
 

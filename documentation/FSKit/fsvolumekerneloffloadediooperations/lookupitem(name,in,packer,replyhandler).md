@@ -24,7 +24,7 @@ func lookupItem(name: FSFileName, in directory: FSItem, packer: FSExtentPacker) 
 - (void) lookupItemNamed:(FSFileName *) name inDirectory:(FSItem *) directory packer:(FSExtentPacker *) packer replyHandler:(void (^)(FSItem *theItem, FSFileName *itemName, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows the module to opportunistically supply extents, avoiding future calls to `blockmapFile(_:offset:length:flags:operationID:packer:)`. Only perform this technique opportunistically. In particular, don’t perform additional I/O to fetch extent data.
 

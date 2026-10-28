@@ -23,7 +23,7 @@ weak var delegate: (any UIGestureRecognizerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIGestureRecognizerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The gesture recognizer maintains a weak reference to its delegate. The delegate must adopt the [`UIGestureRecognizerDelegate`](../uigesturerecognizerdelegate.md) protocol and implement one or more of its methods.
 

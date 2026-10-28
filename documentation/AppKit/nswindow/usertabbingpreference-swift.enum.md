@@ -19,7 +19,7 @@ enum UserTabbingPreference
 enum NSWindowUserTabbingPreference : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The user sets a window-tabbing preference in System Preferences.
 

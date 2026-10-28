@@ -23,7 +23,7 @@ mutating func removeAll(where shouldBeRemoved: (Self.Element) throws -> Bool) re
 
 Available when `Self` conforms to `MutableCollection`.
 
-#### Discussion
+## Discussion
 
 Use this method to remove every element in a collection that meets particular criteria. The order of the remaining elements is preserved. This example removes all the odd values from an array of numbers:
 

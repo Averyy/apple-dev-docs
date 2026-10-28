@@ -5,7 +5,7 @@
 
 Declare the tracking domains you use in your app or third-party SDK in a privacy manifest.
 
-#### Overview
+## Overview
 
 When you build an app or third-party SDK that contacts domains engaged in tracking, perform these steps in your privacy manifest (`PrivacyInfo.xcprivacy`):
 
@@ -18,7 +18,7 @@ This document describes how to add the `NSPrivacyTracking` and `NSPrivacyTrackin
 
 > **Note**: Before you start adding the keys to your privacy manifest, enable raw keys and values in Xcode to view the raw keys and hide their human-readable names. Click anywhere in the privacy manifest, then choose Xcode > Editor > Raw Keys and Values. Repeat the process to disable this feature.
 
-#### Add the privacy tracking key
+## Add the privacy tracking key
 
 The `NSPrivacyTracking` key uses the following format:
 
@@ -37,7 +37,7 @@ To add the `NSPrivacyTracking` key to your privacy manifest:
 4. Confirm the value is `Boolean` in the Type column.
 5. Select `YES` from the pop-up menu in the Value column.
 
-#### Add a tracking domain to the privacy tracking domains key
+## Add a tracking domain to the privacy tracking domains key
 
 Set the value of the `NSPrivacyTrackingDomains` key to a list of tracking domains in your privacy manifest. For more information about tracking domains, see “Configure a tracking domain” in [TN3181: Debugging an invalid privacy manifest](./tn3181-debugging-invalid-privacy-manifest.md).
 
@@ -49,7 +49,7 @@ To add a tracking domain to the `NSPrivacyTrackingDomains` key in your privacy m
 4. Click the disclosure triangle to the left of `NSPrivacyTrackingDomains` to reveal it.
 5. Click the Add button (+) beside `NSPrivacyTrackingDomains` to insert a tracking domain such as `mywebsite.example.com`.
 
-#### Add the privacy tracking domains key
+## Add the privacy tracking domains key
 
 The `NSPrivacyTrackingDomains` key uses the following format:
 
@@ -114,7 +114,7 @@ Repeat step 5 for each additional tracking domain your app or third-party SDK co
 
 ![A privacy manifest that contains the NSPrivacyTracking and NSPrivacyTrackingDomains keys. NSPrivacyTrackingDomains contains two tracking domains.](https://developer.apple.com/tutorials/images/com.apple.technotes/tn3182-privacy_tracking_multiple_domains@2x.png)
 
-#### Revision History
+## Revision History
 
 - **2024-12-17** First published.
 

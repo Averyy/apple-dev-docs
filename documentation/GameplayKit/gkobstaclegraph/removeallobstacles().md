@@ -24,7 +24,7 @@ func removeAllObstacles()
 - (void) removeAllObstacles;
 ```
 
-#### Discussion
+## Discussion
 
 After removing obstacles, the [`GKObstacleGraph`](../gkobstaclegraph.md) class automatically creates, removes, or rearranges nodes and edges where necessary to describe the navigable area around the remaining nodes.
 

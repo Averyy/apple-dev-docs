@@ -21,7 +21,7 @@ A controller that manages animation playback.
 @preconcurrency class AnimationPlaybackController
 ```
 
-#### Overview
+## Overview
 
 This class controls the playback of an entity animation by providing its pause, resume, or stop functions.
 

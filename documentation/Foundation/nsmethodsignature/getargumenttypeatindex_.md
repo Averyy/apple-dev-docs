@@ -21,11 +21,11 @@ Returns the type encoding for the argument at a given index.
 - (const char *) getArgumentTypeAtIndex:(NSUInteger) idx;
 ```
 
-#### Return Value
+## Return Value
 
 The type encoding for the argument at `idx`.
 
-#### Discussion
+## Discussion
 
 Indexes begin with 0. The implicit arguments `self` (of type `id`) and `_cmd` (of type `SEL`) are at indexes 0 and 1; explicit arguments begin at index 2.
 

@@ -24,7 +24,7 @@ var outputLatency: TimeInterval { get }
 @property (readonly) NSTimeInterval outputLatency;
 ```
 
-#### Discussion
+## Discussion
 
 Using an AirPlay-enabled device for your audio content can result in a 2-second delay. Check for this delay in game content.
 

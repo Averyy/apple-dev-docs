@@ -20,11 +20,11 @@ func CGConfigureDisplayMirrorOfDisplay(_ config: CGDisplayConfigRef?, _ display:
 extern CGError CGConfigureDisplayMirrorOfDisplay(CGDisplayConfigRef config, CGDirectDisplayID display, CGDirectDisplayID master);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 
-#### Discussion
+## Discussion
 
 Display mirroring and display matte generation are implemented either in hardware (preferred) or software, at the discretion of the device driver.
 

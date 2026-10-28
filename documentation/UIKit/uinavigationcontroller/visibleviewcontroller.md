@@ -23,7 +23,7 @@ var visibleViewController: UIViewController? { get }
 @property (nonatomic, strong, readonly, nullable) UIViewController * visibleViewController;
 ```
 
-#### Discussion
+## Discussion
 
 The currently visible view can belong either to the view controller at the top of the navigation stack or to a view controller that was presented modally on top of the navigation controller itself.
 

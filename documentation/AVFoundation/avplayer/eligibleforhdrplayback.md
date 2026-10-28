@@ -25,7 +25,7 @@ class var eligibleForHDRPlayback: Bool { get }
 @property (class, readonly) BOOL eligibleForHDRPlayback;
 ```
 
-#### Discussion
+## Discussion
 
 This property is not key-value observable.
 

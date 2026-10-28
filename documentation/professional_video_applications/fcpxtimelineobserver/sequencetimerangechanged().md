@@ -19,7 +19,7 @@ optional func sequenceTimeRangeChanged()
 - (void) sequenceTimeRangeChanged;
 ```
 
-#### Discussion
+## Discussion
 
 Inside this method implementation, obtain the new time range by using the [`sequenceTimeRange`](../fcpxtimeline/sequencetimerange.md) property. By observing for the changes in the time range of an active sequence, an extension can verify whether the data it has for the sequence is in sync with what is presented in Final Cut Pro.
 

@@ -21,7 +21,7 @@ func eventDidFail(_ event: UnsafePointer<AppleEvent>, withError error: any Error
 - (id) eventDidFail:(const AppleEvent *) event withError:(NSError *) error;
 ```
 
-#### Return Value
+## Return Value
 
 If you return a result, it will become the result of the [`sendEvent(_:)`](../../AppKit/nsapplication/sendevent%28_%29.md) that failed. Can be `nil`.
 

@@ -23,7 +23,7 @@ var angle: CGFloat { get set }
 @property (nonatomic, readwrite) CGFloat angle;
 ```
 
-#### Discussion
+## Discussion
 
 The default angle is `0` radians, using standard UIKit geometry. To configure the force vector for a push behavior, set the [`magnitude`](./magnitude.md) property as well as the [`angle`](./angle.md) property.
 

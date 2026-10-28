@@ -8,7 +8,7 @@ Create review submissions for auto-renewable subscriptions and subscription grou
 **Availability**:
 - App Store Connect API 2.0+ - Deprecated in 4.4.1
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  This is deprecated. Use [Review submissions](./review-submissions.md) instead.
 

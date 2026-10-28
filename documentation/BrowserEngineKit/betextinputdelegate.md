@@ -27,7 +27,7 @@ protocol BETextInputDelegate
 
 - [Integrating custom browser text views with UIKit](./integrating-custom-browser-text-views-with-uikit.md)
 
-#### Overview
+## Overview
 
 You don’t conform to `BETextInputDelegate` in your classes, or implement its methods. The system creates objects that conform to this protocol and sets them as the [`asyncInputDelegate`](./betextinput/asyncinputdelegate.md) on your browser’s custom text views.
 

@@ -24,7 +24,7 @@ struct BillboardComponent
 
 - [Automatically animating RealityKit entities](./automatically-animating-realitykit-entities.md)
 
-#### Overview
+## Overview
 
 The `BillboardComponent` automatically adjusts an entity’s orientation so that its z-axis keeps pointing in the direction of the main camera in a RealityKit scene.
 

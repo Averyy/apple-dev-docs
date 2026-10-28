@@ -17,7 +17,7 @@ A Boolean value that indicates whether an approved health research app offers on
 - **Name**: `com.apple.developer.healthkit.research`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 In iOS 27 and later, HealthKit allows people to choose between two options when they share data with an app: **Past 30 Days and Future Data** and **All Recorded Data and Future Data**. Apps with this entitlement offer only Full Access for people to approve or deny, without the **Past 30 Days and Future Data** option. HealthKit periodically reminds people that an app can read their health data, but reminds them about apps with this entitlement less often.
 

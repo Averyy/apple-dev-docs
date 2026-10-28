@@ -15,7 +15,7 @@ A localization code that specifies the HID compliant localization code.
 var localizationCode: HIDDeviceLocalizationCode?
 ```
 
-#### Discussion
+## Discussion
 
 The localization code can specify for which specific format the device is localized. For example, a Japanese (JIS) keyboard declares the [`HIDDeviceLocalizationCode.japan`](../../hiddevicelocalizationcode/japan.md) localization code.
 

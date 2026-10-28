@@ -19,7 +19,7 @@ final class TelephonyMessagingSession
 
 - [Creating a carrier messaging app](./creating-a-carrier-messaging-app.md)
 
-#### Overview
+## Overview
 
 Use the [`shared`](./telephonymessagingsession/shared.md) instance provided by this class to access SMS, MMS, and RCS messaging services. You can inspect available services with the [`cellularServices`](./telephonymessagingsession/cellularservices.md) property. As service availability changes, the framework publishes changes through the [`cellularServiceStateUpdates`](./telephonymessagingsession/cellularservicestateupdates.md) asynchronous sequence.
 

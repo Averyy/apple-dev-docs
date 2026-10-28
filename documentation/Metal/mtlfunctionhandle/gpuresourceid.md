@@ -23,7 +23,7 @@ var gpuResourceID: MTLResourceID { get }
 @property (readonly) MTLResourceID gpuResourceID;
 ```
 
-#### Discussion
+## Discussion
 
 Handle of the GPU resource suitable for storing in an Intersection Function Buffer.
 

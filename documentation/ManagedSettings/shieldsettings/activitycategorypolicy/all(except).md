@@ -17,7 +17,7 @@ A policy that indicates the device shields all apps and websites, except content
 case all(except: Set<Token<Activity>> = [])
 ```
 
-#### Discussion
+## Discussion
 
 Your app can specify up to 50 application or web domain tokens exceptions at once.
 

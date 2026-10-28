@@ -24,7 +24,7 @@ var transitBalanceCurrencyCode: String { get }
 @property (nonatomic, copy, readonly) NSString * transitBalanceCurrencyCode;
 ```
 
-#### Discussion
+## Discussion
 
 Represent the currency code associated with [`transitBalance`](./transitbalance.md) as a three-letter ISO 4217 alphabetic code. For example, US Dollars is `USD` and Japanese Yen is `JPY`.
 

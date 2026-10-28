@@ -22,7 +22,7 @@ enum Request
 
 - [Creating 3D objects from photographs](../creating-3d-objects-from-photographs.md)
 
-#### Overview
+## Overview
 
 Create a [`PhotogrammetrySession.Request`](./request.md) for each 3D object you want to construct from the same set of photographs. You might, for example, create a session with two requests, one to generate a low-resolution preview object in memory, and a second to generate a high-resolution final object saved to the file system.
 

@@ -19,7 +19,7 @@ static var ellipsis: MLXEllipsisIndex { get }
 
 Available when `Self` is `MLXEllipsisIndex`.
 
-#### Discussion
+## Discussion
 
 This is the equivalent of the `None` index in python:
 
@@ -37,7 +37,7 @@ array[0, .ellipsis, 1]
 
 This is equivalent to inserting full range slices for all intermediate axes such that the `1` index fell on the last axis.
 
-##### See Also
+### See Also
 
 - [Indexing](../indexing.md)
 

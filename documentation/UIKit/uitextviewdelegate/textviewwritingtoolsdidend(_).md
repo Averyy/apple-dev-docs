@@ -26,7 +26,7 @@ optional func textViewWritingToolsDidEnd(_ textView: UITextView)
 
 - [Customizing Writing Tools behavior for UIKit views](../customizing-writing-tools-behavior-for-system-views.md)
 
-#### Discussion
+## Discussion
 
 Use this method to undo any actions you took at the start of a writing tools session to modify your app’s behavior.  The text view calls this method after the writing session finishes. At this point, the text view contains the final text the person chose.
 

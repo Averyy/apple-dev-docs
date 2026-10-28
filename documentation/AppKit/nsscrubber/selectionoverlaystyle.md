@@ -19,7 +19,7 @@ var selectionOverlayStyle: NSScrubberSelectionStyle? { get set }
 @property (strong, nullable) NSScrubberSelectionStyle * selectionOverlayStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which specifies no overlay decoration.
 

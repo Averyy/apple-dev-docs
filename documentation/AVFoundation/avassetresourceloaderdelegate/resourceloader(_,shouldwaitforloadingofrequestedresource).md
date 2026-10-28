@@ -24,11 +24,11 @@ optional func resourceLoader(_ resourceLoader: AVAssetResourceLoader, shouldWait
 - (BOOL) resourceLoader:(AVAssetResourceLoader *) resourceLoader shouldWaitForLoadingOfRequestedResource:(AVAssetResourceLoadingRequest *) loadingRequest;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if your delegate can load the resource specified by the `loadingRequest` parameter or [`false`](../../Swift/false.md) if it cannot.
 
-#### Discussion
+## Discussion
 
 The resource loader object calls this method when assistance is required of your code to load the specified resource. For example, the resource loader might call this method to load decryption keys that have been specified using a custom URL scheme.
 

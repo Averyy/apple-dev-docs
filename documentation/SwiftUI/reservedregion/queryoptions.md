@@ -22,7 +22,7 @@ Options for querying reserved regions.
 struct QueryOptions
 ```
 
-#### Overview
+## Overview
 
 Pass query options to [`reservedRegions(kind:options:layoutDirectionBehavior:)`](../geometryproxy/reservedregions%28kind,options,layoutdirectionbehavior%29.md) to change which regions you get.
 

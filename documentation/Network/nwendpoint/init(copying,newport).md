@@ -21,7 +21,7 @@ Creates a new `NWEndpoint` by copying an existing endpoint and specifying a new 
 init?(copying endpoint: NWEndpoint, newPort: NWEndpoint.Port)
 ```
 
-#### Return Value
+## Return Value
 
 A new `NWEndpoint` instance copied from the source endpoint with a new port, or `nil` if the original endpoint is invalid or if modifying the port for the copy results in an invalid endpoint. Examples of invalid endpoints are malformed IP addresses or port numbers greater than 65535.
 

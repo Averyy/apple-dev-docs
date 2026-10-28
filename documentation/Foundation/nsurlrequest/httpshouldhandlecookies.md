@@ -25,7 +25,7 @@ var httpShouldHandleCookies: Bool { get }
 @property (readonly) BOOL HTTPShouldHandleCookies;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the default cookie handling will be used for this request, [`false`](../../Swift/false.md) otherwise. The default is [`true`](../../Swift/true.md).
 

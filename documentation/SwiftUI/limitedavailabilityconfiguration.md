@@ -21,7 +21,7 @@ A type-erased widget configuration.
 @frozen @preconcurrency struct LimitedAvailabilityConfiguration
 ```
 
-#### Overview
+## Overview
 
 You don’t use this type directly. Instead SwiftUI creates this type on your behalf.
 

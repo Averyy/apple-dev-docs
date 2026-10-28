@@ -24,7 +24,7 @@ var stampName: String? { get set }
 @property (nonatomic, copy, nullable) NSString * stampName;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is `Default`. Additional possible values for `stampName` are: `Approved`, `Asis`, `Confidential`, `Departmental`, `Experimental`, `Expired`, `Final`, `ForComment`, `ForPublicRelease`, `NotApproved`, `NotForPublicRelease`, `Sold`, and `TopSecret`. Custom values are also supported.
 

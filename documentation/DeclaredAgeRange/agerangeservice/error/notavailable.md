@@ -18,7 +18,7 @@ Indicates the system was unable to share the person’s age range.
 case notAvailable
 ```
 
-#### Discussion
+## Discussion
 
 You receive this error when the system prompts a person and they decide not to share their age range with your app.
 

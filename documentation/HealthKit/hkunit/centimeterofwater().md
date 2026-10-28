@@ -24,11 +24,11 @@ class func centimeterOfWater() -> Self
 + (instancetype) centimeterOfWaterUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring pressure in centimeters of water.
 
-#### Discussion
+## Discussion
 
 One centimeter of water is the pressure needed to raise a column of water by 1 centimeter.
 

@@ -25,7 +25,7 @@ func ColorSyncIterateInstalledProfiles(_ callBack: ColorSyncProfileIterateCallba
 extern void ColorSyncIterateInstalledProfiles(ColorSyncProfileIterateCallback callBack, uint32_t *seed, void *userInfo, CFErrorRef*error);
 ```
 
-#### Discussion
+## Discussion
 
 When called for the first time, this function returns only system profiles, because profile iteration is a slow process requiring multiple accesses to the file system. Clients are advised to register for [`kColorSyncProfileRepositoryChangeNotification`](./kcolorsyncprofilerepositorychangenotification.md) using `CFNotificationCenter` or `NSNotificationCenter` to obtain all installed profiles. The notification callback receives, if possible, a `CFDictionary` containing a new seed value of the profile cache (key [`kColorSyncProfileCacheSeed`](./kcolorsyncprofilecacheseed.md) / value `kCFNumberSInt32Type`). Comparing old and new seed values may prevent unnecessary calls to iterate installed profiles. Alternatively, call [`ColorSyncIterateInstalledProfilesWithOptions(_:_:_:_:_:)`](./colorsynciterateinstalledprofileswithoptions%28_,_,_,_,_%29.md) with the [`kColorSyncWaitForCacheReply`](./kcolorsyncwaitforcachereply.md) option set to `kCFBooleanTrue` to obtain all installed profiles in one call.
 

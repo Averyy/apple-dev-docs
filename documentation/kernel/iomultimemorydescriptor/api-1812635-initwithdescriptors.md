@@ -15,11 +15,11 @@ virtual bool initWithDescriptors(
  bool asReference = false );
 ```
 
-#### Return Value
+## Return Value
 
 The created IOMultiMemoryDescriptor on success, to be released by the caller, or zero on failure.
 
-#### Overview
+## Overview
 
 This method initializes an IOMultiMemoryDescriptor for memory consisting of a number of other IOMemoryDescriptors, chained end-to-end (in the order they appear in the array) to represent a single contiguous memory buffer. Passing the descriptor array as a reference will avoid an extra allocation.
 

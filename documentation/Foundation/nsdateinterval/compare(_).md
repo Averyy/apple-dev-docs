@@ -25,7 +25,7 @@ func compare(_ dateInterval: DateInterval) -> ComparisonResult
 - (NSComparisonResult) compare:(NSDateInterval *) dateInterval;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an [`ComparisonResult`](../comparisonresult.md) value that indicates the temporal ordering of the receiver and a given date interval:
 
@@ -33,7 +33,7 @@ Returns an [`ComparisonResult`](../comparisonresult.md) value that indicates the
 - [`ComparisonResult.orderedDescending`](../comparisonresult/ordereddescending.md) if the receiver’s [`startDate`](./startdate.md) occurs later than that of `dateInterval`, or both [`startDate`](./startdate.md) values are equal and the [`duration`](./duration.md) of the receiver is greater than that of `dateInterval`.
 - [`ComparisonResult.orderedSame`](../comparisonresult/orderedsame.md) if the receiver’s [`startDate`](./startdate.md) and [`duration`](./duration.md) values are equal to those of `dateInterval`.
 
-#### Discussion
+## Discussion
 
 The following figure illustrates four `NSDateInterval` objects plotted on an arbitrary time axis. Each date interval spans its [`duration`](./duration.md) from left to right, from its [`startDate`](./startdate.md) to its [`endDate`](./enddate.md).
 

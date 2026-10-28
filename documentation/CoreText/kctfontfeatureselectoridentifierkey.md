@@ -23,7 +23,7 @@ let kCTFontFeatureSelectorIdentifierKey: CFString
 extern CFStringRef const kCTFontFeatureSelectorIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 Key to be used with a selector dictionary corresponding to a feature type to obtain the selector identifier value as a `CFNumberRef` object.
 

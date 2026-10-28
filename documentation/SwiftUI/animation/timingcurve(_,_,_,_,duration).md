@@ -21,11 +21,11 @@ An animation created from a cubic Bézier timing curve.
 static func timingCurve(_ p1x: Double, _ p1y: Double, _ p2x: Double, _ p2y: Double, duration: TimeInterval = 0.35) -> Animation
 ```
 
-#### Return Value
+## Return Value
 
 A cubic Bézier timing curve animation.
 
-#### Discussion
+## Discussion
 
 Use this method to create a timing curve based on the control points of a cubic Bézier curve. A cubic Bézier timing curve consists of a line whose starting point is `(0, 0)` and whose end point is `(1, 1)`. Two additional control points, `(p1x, p1y)` and `(p2x, p2y)`, define the shape of the curve.
 

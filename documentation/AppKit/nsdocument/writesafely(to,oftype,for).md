@@ -20,7 +20,7 @@ func writeSafely(to url: URL, ofType typeName: String, for saveOperation: NSDocu
 - (BOOL) writeSafelyToURL:(NSURL *) url ofType:(NSString *) typeName forSaveOperation:(NSSaveOperationType) saveOperation error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method invokes [`write(to:ofType:for:originalContentsURL:)`](./write%28to,oftype,for,originalcontentsurl%29.md). It also invokes [`fileAttributesToWrite(to:ofType:for:originalContentsURL:)`](./fileattributestowrite%28to,oftype,for,originalcontentsurl%29.md) and writes the returned attributes, if any, to the file. It may copy some attributes from the old on-disk revision of the document at the same time, if applicable.
 

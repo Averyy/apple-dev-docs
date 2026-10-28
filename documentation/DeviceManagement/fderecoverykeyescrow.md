@@ -15,7 +15,7 @@ The payload that configures FileVault recovery key escrow.
 object FDERecoveryKeyEscrow
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.security.FDERecoveryKeyEscrow` as the payload type.
 
@@ -35,7 +35,7 @@ Note these cautions:
 
 Although the system no longer supports the previous FDE Recovery payload in macOS 10.13 and later, it’s still supported in macOS 10.9 through 10.12. Designate that payload by specifying `com.apple.security.FDERecoveryRedirect` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -47,7 +47,7 @@ Although the system no longer supports the previous FDE Recovery payload in macO
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

@@ -19,7 +19,7 @@ nonisolated
 func searchDictationBehavior(_ dictationBehavior: TextInputDictationBehavior) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 By default, search fields on visionOS will automatically start dictation when looking at the dictation button in the search field. You can change this behavior by providing a value of [`preventDictation`](../textinputdictationbehavior/preventdictation.md) to this modifier.
 

@@ -5,7 +5,7 @@
 
 Broadcast iBeacon signals from an iOS device.
 
-#### Overview
+## Overview
 
 Any iOS device that supports sharing data using Bluetooth low energy can be turned into an iBeacon. Apps that use their underlying iOS device as an iBeacon must run in the foreground. As a result, use this feature for point-of-sale apps or for apps that are meant to run in the foreground anyway. For other types of iBeacon implementations, use dedicated beacon hardware from third-party manufacturers. To use an iOS device as an iBeacon, you do the following:
 
@@ -13,7 +13,7 @@ Any iOS device that supports sharing data using Bluetooth low energy can be turn
 2. Create a [`CLBeaconRegion`](./clbeaconregion.md) object containing the UUID value along with appropriate major and minor values for your beacon.
 3. Advertise the beacon information using the Core Bluetooth framework.
 
-##### Get a UUID for your device
+### Get a UUID for your device
 
 The primary way to identify an iBeacon is from its UUID. When deploying one or more beacons, you assign a UUID to each one that conveys the beacon’s purpose to clients. The exact purpose of a beacon is something you define. For example, a department store chain might use the same UUID for all of its deployed beacons, or each store might be assigned a different UUID. Because detection involves using region monitoring to look for beacons with specific UUIDs, using fewer UUIDs is easier to manage.
 
@@ -26,7 +26,7 @@ $ uuidgen
 39ED98FF-2900-441A-802F-9C398FC199D2 
 ```
 
-##### Configure the beacon region
+### Configure the beacon region
 
 Use a [`CLBeaconRegion`](./clbeaconregion.md) object to configure your beacon’s identity. You use the beacon region to generate a dictionary of information that you can advertise later over Bluetooth. Listing 2 shows how to create a beacon region object and fill it with information.
 
@@ -47,7 +47,7 @@ func createBeaconRegion() -> CLBeaconRegion? {
 
 The UUID, major, and minor values are specific to your iBeacon implementation. You decide the meaning of these values and decide how apps that detect your beacons interpret those values.
 
-##### Advertise your beacon over bluetooth
+### Advertise your beacon over bluetooth
 
 To broadcast your beacon’s identity from an iOS device, use the Core Bluetooth framework to configure the iOS device as a Bluetooth peripheral. When configured as a peripheral, your iOS device broadcasts its beacon information out to other devices using the Bluetooth hardware. Other devices use that information to perform ranging and detect their proximity to your iOS device.
 

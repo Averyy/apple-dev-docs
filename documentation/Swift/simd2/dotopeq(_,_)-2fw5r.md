@@ -23,7 +23,7 @@ static func .<= (a: SIMD2<Scalar>, b: Scalar) -> SIMDMask<SIMD2<Scalar>.MaskStor
 
 Available when `Scalar` is `Float16`.
 
-#### Discussion
+## Discussion
 
 Each lane of the result is true if that lane of a is less than or equal to b, and false otherwise.
 

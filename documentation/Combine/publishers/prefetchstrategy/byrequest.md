@@ -21,7 +21,7 @@ A strategy that avoids prefetching and instead performs requests on demand.
 case byRequest
 ```
 
-#### Discussion
+## Discussion
 
 This strategy just forwards the downstream’s requests to the upstream publisher.
 

@@ -19,11 +19,11 @@ func OBEXAddNameHeader(_ name: CFString!, _ dictRef: CFMutableDictionary!) -> OB
 OBEXError OBEXAddNameHeader(CFStringRef name, CFMutableDictionaryRef dictRef);
 ```
 
-#### Return Value
+## Return Value
 
 Error code, kOBEXSuccess (0) if success.
 
-#### Discussion
+## Discussion
 
 Name header - OBEX Spec, 2.2.2: (2-byte) Null terminated unicode string.
 

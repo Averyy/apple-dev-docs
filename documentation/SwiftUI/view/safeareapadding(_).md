@@ -29,7 +29,7 @@ nonisolated func safeAreaPadding(_ insets: EdgeInsets) -> some View
 nonisolated func safeAreaPadding(_ length: CGFloat) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier when you would like to add a fixed amount of space to the safe area a view sees.
 

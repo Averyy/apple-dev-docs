@@ -15,7 +15,7 @@ The image resolution of the currently presented image, in pixels.
 var screenImageDimension: SIMD2<Float> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The meaning of this resolution depends on the current viewing mode:
 

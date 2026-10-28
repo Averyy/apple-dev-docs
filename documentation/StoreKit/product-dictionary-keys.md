@@ -5,7 +5,7 @@
 
 Keys for identifying products and the tokens for affiliates and campaigns.
 
-#### Overview
+## Overview
 
 These dictionary keys are used in the parameter for the [`loadProduct(withParameters:completionBlock:)`](./skstoreproductviewcontroller/loadproduct%28withparameters,completionblock%29.md) method.
 

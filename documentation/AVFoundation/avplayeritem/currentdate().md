@@ -26,11 +26,11 @@ func currentDate() -> Date?
 - (NSDate *) currentDate;
 ```
 
-#### Return Value
+## Return Value
 
 The current time of the item as a date, or `nil` if there isn’t a mapped date for the item.
 
-#### Discussion
+## Discussion
 
 The system calculates this value from the `EXT-X-PROGRAM-DATE-TIME` tag.
 

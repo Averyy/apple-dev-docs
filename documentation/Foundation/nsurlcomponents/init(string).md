@@ -25,7 +25,7 @@ init?(string URLString: String)
 - (instancetype) initWithString:(NSString *) URLString;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the initialized URL components object, or `nil` if the URL string could not be parsed.
 

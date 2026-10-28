@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableCo
 - (NSView *) tableView:(NSTableView *) tableView viewForTableColumn:(NSTableColumn *) tableColumn row:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The view to display the specified column and row. If you return `nil`, a view will not be shown at that location.
 
-#### Discussion
+## Discussion
 
 This method is required if you want to use [`NSView`](../nsview.md) objects instead of [`NSCell`](../nscell.md) objects for the cells within a table view. Cells and views can’t be mixed within the same table view.
 

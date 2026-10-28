@@ -25,7 +25,7 @@ static let protocolVersions: AVContentKeySessionServerPlaybackContextOption
 extern AVContentKeySessionServerPlaybackContextOption const AVContentKeySessionServerPlaybackContextOptionProtocolVersions;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a value for this key, the system assumes a default protocol version of `1`.
 

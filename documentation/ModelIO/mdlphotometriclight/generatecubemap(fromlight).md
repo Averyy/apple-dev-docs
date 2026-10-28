@@ -24,7 +24,7 @@ func generateCubemap(fromLight textureSize: Int)
 - (void) generateCubemapFromLight:(NSUInteger) textureSize;
 ```
 
-#### Discussion
+## Discussion
 
 After generating a texture, use the [`lightCubeMap`](./lightcubemap.md) property to access it. In this texture, each texel represents the light’s intensity in the direction from the cube’s center to the texel’s position on the cube.
 

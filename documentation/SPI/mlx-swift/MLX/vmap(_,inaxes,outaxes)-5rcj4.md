@@ -17,7 +17,7 @@ Overload of [`vmap(_:inAxes:outAxes:)`](./vmap%28_,inaxes,outaxes%29-5rcj4.md) f
 func vmap(_ f: @escaping (MLXArray, MLXArray) -> MLXArray, inAxes: (Int?, Int?) = (0, 0), outAxes: Int? = 0) -> (MLXArray, MLXArray) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Vectorization](./vmap.md)
 - [`vmap(_:inAxes:outAxes:)`](./vmap%28_,inaxes,outaxes%29-5rcj4.md)

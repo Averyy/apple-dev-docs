@@ -13,7 +13,7 @@
 kIOCatalogAddDriversNoMatch
 ```
 
-#### Discussion
+## Discussion
 
 Signals a call to the addDrivers function in IOCatalogue but does not start a matching thread.
 

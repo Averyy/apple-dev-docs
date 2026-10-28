@@ -17,7 +17,7 @@ void addNotificationListener(
 );
 ```
 
-#### Discussion
+## Discussion
 
 To subscribe to changes and register for push notifications, see `saveSubscription` in the [`CloudKit.Database`](../cloudkit.database.md) class.
 

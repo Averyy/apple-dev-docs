@@ -12,11 +12,11 @@ IOReturn waitQuiet(
  uint64_t timeout = timeout);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an error code if Mach synchronization primitives fail, `kIOReturnTimeout`, or `kIOReturnSuccess`.
 
-#### Overview
+## Overview
 
 Blocks the caller until an IOService object is non busy.
 

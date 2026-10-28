@@ -20,7 +20,7 @@ let vmnet_operation_mode_key: UnsafePointer<CChar>
 extern const char * const vmnet_operation_mode_key;
 ```
 
-#### Discussion
+## Discussion
 
 The value specified for this key should be of type [`XPC_TYPE_UINT64`](../XPC/xpc_type_uint64-swift.var.md).
 

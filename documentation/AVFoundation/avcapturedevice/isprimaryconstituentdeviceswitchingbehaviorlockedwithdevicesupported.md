@@ -23,7 +23,7 @@ var isPrimaryConstituentDeviceSwitchingBehaviorLockedWithDeviceSupported: Bool {
 @property (nonatomic, readonly, getter=isPrimaryConstituentDeviceSwitchingBehaviorLockedWithDeviceSupported) BOOL primaryConstituentDeviceSwitchingBehaviorLockedWithDeviceSupported;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `true` if [`setPrimaryConstituentDeviceSwitchingBehaviorLockedWith(_:)`](./setprimaryconstituentdeviceswitchingbehaviorlockedwith%28_%29.md) is supported.
 

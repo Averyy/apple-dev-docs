@@ -24,7 +24,7 @@ func difference(with voxels: MDLVoxelArray)
 - (void) differenceWithVoxels:(MDLVoxelArray *) voxels;
 ```
 
-#### Discussion
+## Discussion
 
 After a difference operation, the voxel array contains only those voxels that were present in the original array and not present in the specified array. That is, a difference operation creates a voxel array representing the space where one volume does not overlap another.
 

@@ -26,7 +26,7 @@ func seek(to date: Date)
 - (void) seekToDate:(NSDate *) date;
 ```
 
-#### Discussion
+## Discussion
 
 The time to which the player seeks may differ from the specified `date` for efficiency. For sample accurate seeking see [`seek(to:toleranceBefore:toleranceAfter:)`](./seek%28to,tolerancebefore,toleranceafter%29.md).
 

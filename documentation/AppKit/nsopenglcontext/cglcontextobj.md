@@ -21,7 +21,7 @@ var cglContextObj: CGLContextObj? { get }
 @property (readonly, nullable) CGLContextObj CGLContextObj;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the CGLContextObj data type represented by the receiver.
 

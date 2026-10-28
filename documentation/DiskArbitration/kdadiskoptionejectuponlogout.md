@@ -3,7 +3,7 @@
 **Framework**: Disk Arbitration  
 **Role**: Article
 
-#### Overview
+## Overview
 
 Deprecated. Use DADiskEject() at logout instead.
 

@@ -25,7 +25,7 @@ case count
 kCTRubyPositionCount
 ```
 
-#### Discussion
+## Discussion
 
 When you create a ruby annotation using [`CTRubyAnnotationCreate(_:_:_:_:)`](../ctrubyannotationcreate%28_,_,_,_%29.md), use this constant to allocate an array of [`CFString`](../../CoreFoundation/cfstring.md) texts that contains a sufficient number of elements for each [`CTRubyPosition`](../ctrubyposition.md).
 

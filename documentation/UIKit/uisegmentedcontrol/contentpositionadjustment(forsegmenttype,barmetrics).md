@@ -23,11 +23,11 @@ func contentPositionAdjustment(forSegmentType leftCenterRightOrAlone: UISegmente
 - (UIOffset) contentPositionAdjustmentForSegmentType:(UISegmentedControlSegment) leftCenterRightOrAlone barMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Return Value
+## Return Value
 
 The content positioning offset for the segment identified by `leftCenterRightOrAlone` and `barMetrics`.
 
-#### Discussion
+## Discussion
 
 For more details, see [`setContentPositionAdjustment(_:forSegmentType:barMetrics:)`](./setcontentpositionadjustment%28_,forsegmenttype,barmetrics%29.md).
 

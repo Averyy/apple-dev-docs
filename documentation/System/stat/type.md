@@ -21,7 +21,7 @@ File type for the given mode
 var type: FileType { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This property is equivalent to `mode.type`. Modifying this property will update the underlying `st_mode` accordingly.
 

@@ -26,7 +26,7 @@ func renderDestinationImage(_ destinationImage: FxImageTile, sourceImages: [FxIm
 - [Rendering in FxPlug](../../Professional-Video-Applications/rendering-in-fxplug.md)
 - [Thread safety in plug-ins](../../Professional-Video-Applications/thread-safety-in-plug-ins.md)
 
-#### Discussion
+## Discussion
 
 The host calls method when it wants your plug-in to render an image tile of the output image. It passes in each of the input tiles needed as well as the plug-in state needed for the calculations. Your plug-in does all its rendering in this method. Do not attempt to use the `FxParameterRetrievalAPI*` object, as it is invalid at this time. Note that this method will be called on multiple threads at the same time.
 

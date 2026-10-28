@@ -13,11 +13,11 @@
 errno_t ifnet_event(ifnet_t interface, struct kern_event_msg *event_ptr);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Calls the interface's event function.
 

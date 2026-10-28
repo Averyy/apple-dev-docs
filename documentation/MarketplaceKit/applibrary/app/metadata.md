@@ -16,7 +16,7 @@ Information about an app’s version and account.
 struct Metadata
 ```
 
-#### Overview
+## Overview
 
 The [`installedMetadata`](./installedmetadata.md) property of the [`AppLibrary.App`](../app.md) class is of this type.
 

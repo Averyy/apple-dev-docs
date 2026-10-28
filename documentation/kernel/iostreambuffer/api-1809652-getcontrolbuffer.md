@@ -10,7 +10,7 @@ virtual IOMemoryDescriptor *getControlBuffer(
  void);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the IOMemoryDescriptor for the control buffer.
 

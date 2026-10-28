@@ -25,7 +25,7 @@ var widthSegmentCount: Int { get set }
 @property (nonatomic) NSInteger widthSegmentCount;
 ```
 
-#### Discussion
+## Discussion
 
 A larger number of segments adds more vertex data to the geometry. Though each face of the pyramid is a flat plane, extra vertices can be useful for lighting or custom shader programs. Adding vertices increases rendering cost, so you should use the minimal segment count that produces your desired visual effect.
 

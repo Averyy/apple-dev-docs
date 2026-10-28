@@ -5,7 +5,7 @@
 
 Support the direct manipulation of your app’s content using drag and drop.
 
-#### Overview
+## Overview
 
 With very little programming on your part, custom-view objects can be dragged and dropped anywhere. Objects become part of this dragging mechanism by conforming to dragging protocols: Draggable objects conform to the [`NSDraggingSource`](./nsdraggingsource.md) protocol, and destination objects (that is, receivers of a drop) conform to the [`NSDraggingDestination`](./nsdraggingdestination.md) protocol. AppKit hides all the details of tracking the cursor and displaying the dragged image.
 

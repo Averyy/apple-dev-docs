@@ -17,7 +17,7 @@ Returns a new pointer array that maintains weak references to its elements.
 + (id) pointerArrayWithWeakObjects;
 ```
 
-#### Return Value
+## Return Value
 
 A new pointer array that maintains weak references to its elements.
 

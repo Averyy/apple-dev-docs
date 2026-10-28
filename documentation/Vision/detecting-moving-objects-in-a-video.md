@@ -12,7 +12,7 @@ Identify the trajectory of a thrown object by using Vision.
 - Mac Catalyst 15.0+
 - Xcode 14.1+
 
-#### Overview
+## Overview
 
 The Vision framework provides the ability to detect trajectories of objects in a video. The algorithm looks at the differences between frames of a video and identifies objects that travel along a parabolic path. A single object — like a bouncing ball — may produce multiple trajectories.
 
@@ -20,13 +20,13 @@ The sample code project shows you how to configure a trajectory detection reques
 
 For more information about identifying trajectories, see [Identifying Trajectories in Video](./identifying-trajectories-in-video.md).
 
-##### Configure the project and prepare your environment
+### Configure the project and prepare your environment
 
 You must run the sample code project on a physical device with an A12 processor or later.
 
 The sample’s current configuration looks for a small object moving left to right in a video. Try the sample app by downloading and analyzing [a prerecorded video](https://developer.apple.com/sample-code/ml/sample.mov) of a person tossing a bean bag. For live capture, the sample app requires a stable scene with a fixed camera position and stationary background, so mount your iOS device to a tripod and keep it fixed on the field of view. You need to modify the trajectory request’s configuration based on your conditions when you use your own video.
 
-##### Create a trajectory request
+### Create a trajectory request
 
 Before the sample app creates a trajectory request, it gets sample buffers based on the selected source — live capture or a prerecorded video — in `CameraViewController`. After the [AVCaptureSession](../AVFoundation/avcapturesession.md) or [AVAssetReader](../AVFoundation/avassetreader.md) retrieves a sample buffer, it passes to the `ContentAnalysisViewController`. The sample app creates a [VNImageRequestHandler](./vnimagerequesthandler.md) to perform the trajectory request with.
 
@@ -70,7 +70,7 @@ detectTrajectoryRequest.regionOfInterest = normalizedFrame
 
 After the sample app configures the trajectory request for the buffer, it processes the list of [VNTrajectoryObservation](./vntrajectoryobservation.md) results.
 
-##### Process the trajectory observation results
+### Process the trajectory observation results
 
 The sample app configuration targets the prerecorded video from the configuration section. The `VNDetectTrajectoriesRequest` follows objects moving on a parabolic path, and requires more than a single data point (trajectory length). After a request gathers enough data points to recognize the trajectory — a length of at least 5 — it passes the observation results that contain the trajectory information.
 

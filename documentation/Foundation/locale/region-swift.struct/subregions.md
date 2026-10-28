@@ -21,7 +21,7 @@ An array of all the sub-regions of the region.
 var subRegions: [Locale.Region] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The following example looks up the sub-regions of region `021`, which represents North America.
 

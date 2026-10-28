@@ -24,7 +24,7 @@ var aspectRatio: CGFloat { get set }
 @property (nonatomic, readwrite) CGFloat aspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the ratio of the content’s width to its height. The value of this property must be greater than `0.0` and less than or equal to `100.0`. The default value is `1.0`.
 

@@ -26,11 +26,11 @@ func sendResource(at resourceURL: URL, withName resourceName: String, toPeer pee
 - (NSProgress *) sendResourceAtURL:(NSURL *) resourceURL withName:(NSString *) resourceName toPeer:(MCPeerID *) peerID withCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSProgress` object that can be used to query the status of the transfer or cancel the transfer.
 
-#### Discussion
+## Discussion
 
 This method is asynchronous (nonblocking).
 

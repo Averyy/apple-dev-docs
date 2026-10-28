@@ -25,7 +25,7 @@ static let comment: HTTPCookiePropertyKey
 extern NSHTTPCookiePropertyKey const NSHTTPCookieComment;
 ```
 
-#### Discussion
+## Discussion
 
 Only valid for Version 1 cookies and later. This cookie attribute is optional.
 

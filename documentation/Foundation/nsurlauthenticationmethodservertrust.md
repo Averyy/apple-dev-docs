@@ -29,7 +29,7 @@ extern NSString * const NSURLAuthenticationMethodServerTrust;
 
 - [Performing manual server trust authentication](./performing-manual-server-trust-authentication.md)
 
-#### Discussion
+## Discussion
 
 This authentication method can apply to any protocol, and is most commonly used for overriding SSL and TLS chain validation.
 

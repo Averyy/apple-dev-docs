@@ -24,7 +24,7 @@ case logical
 BASizeCalculationMethodLogical
 ```
 
-#### Discussion
+## Discussion
 
 The result of a “logical” size calculation for a file may be greater or less than the actual number of bytes that a file takes up on disk due to file-system features like alignment or compression.
 

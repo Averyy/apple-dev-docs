@@ -21,7 +21,7 @@ var shape2: (Int, Int) { get }
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 ```swift
 let (w, h) = array.shape2

@@ -23,7 +23,7 @@ protocol INGetRideStatusIntentResponseObserver : NSObjectProtocol
 @protocol INGetRideStatusIntentResponseObserver <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The [`INGetRideStatusIntentResponseObserver`](./ingetridestatusintentresponseobserver.md) protocol defines methods that provide SiriKit with an updated status for an active ride request. You do not implement the methods of this protocol in your own objects. Instead, the system provides an object that adopts this protocol. You call its [`didUpdate(getRideStatus:)`](./ingetridestatusintentresponseobserver/didupdate%28getridestatus%29.md) method to deliver updated information about the status of a booked ride.
 

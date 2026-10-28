@@ -24,7 +24,7 @@ var worldToMetersConversionScale: Float { get set }
 @property (nonatomic, assign) float worldToMetersConversionScale;
 ```
 
-#### Discussion
+## Discussion
 
 Some calculations, such as the calculation of [`MDLStereoscopicCamera`](../mdlstereoscopiccamera.md) view matrices, must occur in world space. [`MDLCamera`](../mdlcamera.md) properties measured in meters or millimeters use this conversion scale to perform the calculation.
 

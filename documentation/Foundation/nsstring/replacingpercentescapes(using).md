@@ -27,11 +27,11 @@ func replacingPercentEscapes(using enc: UInt) -> String?
 - (NSString *) stringByReplacingPercentEscapesUsingEncoding:(NSStringEncoding) enc;
 ```
 
-#### Return Value
+## Return Value
 
 A new string made by replacing in the receiver all percent escapes with the matching characters as determined by the given encoding `encoding`. Returns `nil` if the transformation is not possible, for example, the percent escapes give a byte sequence not legal in `encoding`.
 
-#### Discussion
+## Discussion
 
 See [`CFURLCreateStringByReplacingPercentEscapes(_:_:_:)`](../../CoreFoundation/cfurlcreatestringbyreplacingpercentescapes%28_,_,_%29.md) for more complex transformations.
 

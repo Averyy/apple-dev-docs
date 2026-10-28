@@ -14,7 +14,7 @@ An overview of the human interface device (HID) descriptor for interfacing betwe
 - visionOS 1.0+
 - watchOS 7.2+
 
-#### Overview
+## Overview
 
 This document provides a reference for manufacturers of third-party braille devices who want to build in firmware support for interfacing with Apple devices, such as iPhone and Mac.
 
@@ -24,19 +24,19 @@ This document uses the term *braille devices* to refer to either braille devices
 
 People can use some braille devices as a standalone device, but this document describes devices that are also designed for people to connect to a general-purpose electronic computing device such as a computer, phone, tablet, or watch. When a braille device is connected, the computing device controls what’s displayed through tactile dots, and interprets the input buttons.
 
-#### HID descriptor background
+## HID descriptor background
 
 The USB-IF human interface device (HID) standard for braille devices describes specifications that allow braille devices to connect to computing platforms such as macOS and iOS. For more information about this USB-IF HID standard, visit [http://www.usb.org/](http://www.usb.org/).
 
 Apple platforms support the HID protocol for braille devices over Bluetooth and USB transport. For iPhones and iPads, USB support is available only for models with USB-C connectors.
 
-#### HID descriptor
+## HID descriptor
 
 To make a braille device compatible with the HID standard for braille devices, the device needs to expose a *HID descriptor* that describes the characteristics of the display. This HID descriptor includes a device report that typically specifies the number of braille cells, various buttons, braille or Perkins keys, and router keys. These specifications are available in the Braille Usage Page (Code 0x41). The device report sets the parameters for how the braille device sends data (button presses or other controls) and how it receives data (braille cell updates).
 
 For processing input events such as button presses, the input report mirrors the structure of the input elements of the device report. Most of the input events are button presses, so make sure to send a down and up event. The down event has a non-zero value for that control. The up event has a value of zero for that control in the input report.
 
-##### Braille cells
+### Braille cells
 
 The following code shows an example device report for a braille display that has 20 8-dot braille cells:
 
@@ -83,7 +83,7 @@ The braille device can interpret the first character (`19`) as a bit field for b
 { 0001 0011 }
 ```
 
-##### Router buttons
+### Router buttons
 
 Many braille cells have a router button above each cell that helps people move cursor positions. The following code shows an example of the bytes you set in your device report for 20 router buttons:
 
@@ -115,7 +115,7 @@ bzero(&report, sizeof(report));
 report.routerButtons = 1 << 3;
 ```
 
-##### Braille keys
+### Braille keys
 
 If a braille display allows for input, many have six or eight Perkins-style braille keys that are available for inputting braille patterns.
 
@@ -183,7 +183,7 @@ bzero(&report, sizeof(report));
 report.brailleKeys = (1 << 0) | (1 << 1) | (1 << 4);
 ```
 
-##### Buttons
+### Buttons
 
 Braille displays often have buttons that let people control the computing device to perform commands such as navigation, panning, enter, space, and more. The HID standard for braille devices categorizes these as follows:
 
@@ -217,7 +217,7 @@ typedef struct {
 } BrailleInputReport;
 ```
 
-##### Braille pan controls
+### Braille pan controls
 
 Braille panning allows a person to move the focus of the braille cells either to the right or the left to bring the rest of a line of text into view. Traditionally, there are pan-left and pan-right controls.
 
@@ -236,7 +236,7 @@ The following code shows an example of a device report that has braille pan-left
     0xC0,              //   End Collection
 ```
 
-##### Screen reader identification
+### Screen reader identification
 
 You can determine which screen reader is connected to the braille device by using the screen reader identifier. To receive this value, include the screen reader identification feature in your device report:
 
@@ -262,7 +262,7 @@ When the computing device detects this, it sends a report back when your device 
 { 0xbc, 0x4b, 0x74, 0xea, 0xb7, 0x87, 0x4a, 0x6d, 0xb5, 0x72, 0x4e, 0x2d, 0x74, 0x6a, 0x9a, 0xfd }
 ```
 
-##### Apple screen reader controls
+### Apple screen reader controls
 
 The HID standard for braille devices allows the device to issue platform-specific commands to the screen reader. For example, Magic Tap is a command that’s available in iOS, but not macOS. If a button press controls Magic Tap in iOS, you can change that when detecting the macOS VoiceOver version.
 
@@ -287,15 +287,15 @@ Then, that button can generate a specific value that corresponds to commands for
 
 For available commands, see [Braille screen reader controls](./braille-hid-reference-for-connecting-to-apple-platforms.md#Braille-screen-reader-controls).
 
-##### Composite displays
+### Composite displays
 
 You can also combine braille displays with other HID devices, such as keyboards. In this case, make sure the device report includes both a braille usage page that describes braille behavior, and a keyboard usage page that describes the keyboard. The system handles keyboard events, but the screen reader handles the braille page events.
 
-#### Appendix
+## Appendix
 
 The following sections provide a reference for HID values related to braille devices.
 
-##### HID usage and usage pages for braille devices
+### HID usage and usage pages for braille devices
 
 ```c
 enum
@@ -356,7 +356,7 @@ enum
 }
 ```
 
-##### Braille screen reader controls
+### Braille screen reader controls
 
 **iOS, iPadOS, tvOS, visionOS, watchOS**:
 

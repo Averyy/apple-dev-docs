@@ -21,7 +21,7 @@ var automaticallyActivatesSearch: Bool { get set }
 @property (nonatomic, assign) BOOL automaticallyActivatesSearch;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set to `YES`, the search field will be activated when the tab is selected. Moreover, when search is cancelled, the previously selected tab in the tab bar will be restored and selected. The default value is `NO`.
 

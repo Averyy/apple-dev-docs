@@ -23,7 +23,7 @@ var kDNSServiceFlagsAdd: UInt32 { get }
 kDNSServiceFlagsAdd
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that the domain is newly discovered. If NOT set, indicates a “Remove”, i.e. the domain is no longer valid. Used in domain enumeration and browse/query reply callbacks.
 

@@ -6,7 +6,7 @@
 
 Inspect, debug, and test web content in Safari, in other apps, and on other devices including iPhone and iPad.
 
-#### Overview
+## Overview
 
 Safari includes features and tools to help you inspect, debug, and test web content in Safari, in other apps, and on other devices including iPhone, iPad, Apple Vision Pro, as well as Apple TV for inspecting JavaScript and TVML.
 

@@ -24,11 +24,11 @@ class func classNameDecoded(forArchiveClassName inArchiveName: String) -> String
 + (NSString *) classNameDecodedForArchiveClassName:(NSString *) inArchiveName;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the class used when instantiating objects whose ostensible class, according to the archived data, is `nameInArchive`. Returns `nameInArchive` if no substitute name has been specified using the class method (not the instance method) [`decodeClassName(_:asClassName:)`](./decodeclassname%28_,asclassname%29-swift.type.method.md).
 
-#### Discussion
+## Discussion
 
 Note that each individual instance of `NSUnarchiver` can be given its own class name mappings by invoking the instance method [`decodeClassName(_:asClassName:)`](./decodeclassname%28_,asclassname%29-swift.method.md). The `NSUnarchiver` class has no information about these instance-specific mappings, however, so they don’t affect the return value of [`classNameDecoded(forArchiveClassName:)`](./classnamedecoded%28forarchiveclassname%29-swift.type.method.md).
 

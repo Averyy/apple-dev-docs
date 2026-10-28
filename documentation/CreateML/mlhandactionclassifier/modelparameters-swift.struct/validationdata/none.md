@@ -19,7 +19,7 @@ Creates an empty validation dataset, which tells the task to skip the model vali
 case none
 ```
 
-#### Discussion
+## Discussion
 
 This case prevents Create ML from creating a validation dataset from your training dataset. You typically use it when your training dataset is small and can’t spare any data to validate the model.
 

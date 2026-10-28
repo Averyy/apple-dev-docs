@@ -21,7 +21,7 @@ protocol CPListTemplateItem : NSObjectProtocol
 @protocol CPListTemplateItem <NSObject>
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  You don’t create custom classes that conform to `CPListItemTemplate`. Instead, you use one of the prebuilt list item types that adopt this protocol, such as [`CPMessageListItem`](./cpmessagelistitem.md).
 

@@ -18,8 +18,8 @@ Fetches all instances of the attached model type, using the specified transactio
 ## Declaration
 
 ```swift
-@attached
-(accessor) @attached(peer, names: prefixed(`_`)) macro Query(transaction: Transaction)
+@attached(accessor)
+@attached(peer, names: prefixed(`_`)) macro Query(transaction: Transaction)
 ```
 
 ## Parameters

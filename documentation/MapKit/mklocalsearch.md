@@ -25,7 +25,7 @@ class MKLocalSearch
 @interface MKLocalSearch : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an [`MKLocalSearch`](./mklocalsearch.md) object to execute a single search request. You might use this class to search for addresses or points of interest on the map. Upon completion of the request, the object delivers the results to the completion handler that you provide.
 

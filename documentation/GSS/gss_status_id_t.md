@@ -23,7 +23,7 @@ typealias gss_status_id_t = UnsafeMutablePointer<OM_uint32>
 typedef OM_uint32 * gss_status_id_t;
 ```
 
-#### Discussion
+## Discussion
 
 See [Function Status](./function-status.md) for valid status values.
 

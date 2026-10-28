@@ -19,7 +19,7 @@ class let refreshFreestandingTemplateName: String
 extern NSImageName const NSImageNameRefreshFreestandingTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this image to implement a borderless button.
 

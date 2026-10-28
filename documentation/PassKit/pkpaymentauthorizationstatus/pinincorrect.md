@@ -24,7 +24,7 @@ case pinIncorrect
 PKPaymentAuthorizationStatusPINIncorrect
 ```
 
-#### Discussion
+## Discussion
 
 Pass this constant to the completion block when the payment token includes an invalid PIN number. Apple Pay automatically prompts the user to reenter their PIN.
 

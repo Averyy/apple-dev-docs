@@ -23,7 +23,7 @@ var destructiveButtonIndex: Int { get set }
 @property (nonatomic) NSInteger destructiveButtonIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Button indices start at `0`. The default value of this property is normally `-1`, which indicates that no destructive button has been set. However, a destructive button may be created and set automatically by the [`init(title:delegate:cancelButtonTitle:destructiveButtonTitle:)`](./init%28title,delegate,cancelbuttontitle,destructivebuttontitle%29.md) method. If you use that method to create a destructive button, you should not change the value of this property.
 

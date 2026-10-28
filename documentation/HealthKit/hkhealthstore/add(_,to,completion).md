@@ -34,7 +34,7 @@ func addSamples(_ samples: [HKSample], to workout: HKWorkout) async throws
 
 - [Adding samples to a workout](../adding-samples-to-a-workout.md)
 
-#### Discussion
+## Discussion
 
 This method operates asynchronously. As soon as the add-samples operation is finished, this method calls the completion block on a background queue. You must save the workout to the HealthKit store before you can add any samples to it. You can save the samples before calling this method, but doing so is not required. This method automatically saves any unsaved samples when it successfully adds them to the workout.
 

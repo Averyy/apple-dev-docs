@@ -5,7 +5,7 @@
 
 Distribute a pass to your users or update an existing pass.
 
-#### Overview
+## Overview
 
 There are four ways you can distribute a pass:
 
@@ -30,7 +30,7 @@ Update a pass by distributing a new version of the pass with the same pass ident
 
 You can optionally provide a web service to update the contents of a user’s pass, such as changing the time for an event. For more information about implementing a pass update web service, see [Adding a Web Service to Update Passes](./adding-a-web-service-to-update-passes.md).
 
-##### Create a bundle of passes
+### Create a bundle of passes
 
 Provide a bundle of passes to enable your user to download multiple passes at once. To create the pass bundle:
 

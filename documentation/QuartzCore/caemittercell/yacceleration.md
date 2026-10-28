@@ -24,7 +24,7 @@ var yAcceleration: CGFloat { get set }
 @property CGFloat yAcceleration;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `0.0`.
 

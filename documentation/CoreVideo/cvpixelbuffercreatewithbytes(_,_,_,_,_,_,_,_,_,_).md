@@ -25,11 +25,11 @@ func CVPixelBufferCreateWithBytes(_ allocator: CFAllocator?, _ width: Int, _ hei
 extern CVReturn CVPixelBufferCreateWithBytes(CFAllocatorRef allocator, size_t width, size_t height, OSType pixelFormatType, void *baseAddress, size_t bytesPerRow, CVPixelBufferReleaseBytesCallback releaseCallback, void *releaseRefCon, CFDictionaryRef pixelBufferAttributes, CVPixelBufferRef*pixelBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Result Codes](./result-codes.md) for possible values.
 
-#### Discussion
+## Discussion
 
 Some of the parameters specified in this call override equivalent pixel buffer attributes. For example, if you define the `kCVPixelBufferWidth` and `kCVPixelBufferHeight` keys in the pixel buffer attributes parameter (`pixelBufferAttributes`), these values are overridden by the `width` and `height` parameters.
 

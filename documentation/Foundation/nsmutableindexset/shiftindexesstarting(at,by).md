@@ -25,7 +25,7 @@ func shiftIndexesStarting(at index: Int, by delta: Int)
 - (void) shiftIndexesStartingAtIndex:(NSUInteger) index by:(NSInteger) delta;
 ```
 
-#### Discussion
+## Discussion
 
 The group of indexes shifted is made up by `index` and the indexes that follow it in the set.
 

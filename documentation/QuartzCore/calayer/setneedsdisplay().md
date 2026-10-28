@@ -24,7 +24,7 @@ func setNeedsDisplay()
 - (void) setNeedsDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method causes the layer to recache its content. This results in the layer potentially calling either the [`display(_:)`](../calayerdelegate/display%28_%29.md) or [`draw(_:in:)`](../calayerdelegate/draw%28_,in%29.md) method of its delegate. The existing content in the layer’s [`contents`](./contents.md) property is removed to make way for the new content.
 

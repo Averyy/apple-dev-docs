@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether a time is invalid.
 #define CMTIME_IS_INVALID(time)
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the time is [`invalid`](./cmtime/invalid.md); otherwise, [`false`](../Swift/false.md).
 

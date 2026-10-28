@@ -23,7 +23,7 @@ func willDisappear()
 
 - [Navigating Between Scenes](../navigating-between-scenes.md)
 
-#### Discussion
+## Discussion
 
 WatchKit calls this method shortly before removing your interface controller’s content from the screen. Use this method to stop animations or perform other interface-related tasks prior to deactivation.
 

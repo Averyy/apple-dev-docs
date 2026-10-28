@@ -25,11 +25,11 @@ convenience init(fileDescriptor fd: Int32)
 - (instancetype) initWithFileDescriptor:(int) fd;
 ```
 
-#### Return Value
+## Return Value
 
 A file handle initialized with `fileDescriptor`.
 
-#### Discussion
+## Discussion
 
 The file descriptor you pass in to this method isn’t owned by the file handle object. Therefore, you’re responsible for closing the file descriptor at some point after disposing of the file handle object.
 

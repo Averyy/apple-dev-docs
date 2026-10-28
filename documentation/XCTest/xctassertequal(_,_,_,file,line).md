@@ -12,7 +12,7 @@ Asserts that two values are equal.
 func XCTAssertEqual<T>(_ expression1: @autoclosure () throws -> T, _ expression2: @autoclosure () throws -> T, _ message: @autoclosure () -> String = "", file: StaticString = #filePath, line: UInt = #line) where T : Equatable
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to compare two non-optional values of the same type.
 

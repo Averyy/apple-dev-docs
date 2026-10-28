@@ -25,7 +25,7 @@ static let summaryElement: UIAccessibilityTraits
 extern const UIAccessibilityTraits UIAccessibilityTraitSummaryElement;
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait to characterize an accessibility element that provides a summary of current conditions, settings, or state, such as the current temperature in the Weather app.
 

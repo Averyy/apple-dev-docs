@@ -14,7 +14,7 @@
 kIOVideoFeatureControlClassIDGain = 'gain'
 ```
 
-#### Discussion
+## Discussion
 
 A IOVideoFeatureControl that controls the amplification of the signal. The units for the control's absolute value are decibels (dB).
 

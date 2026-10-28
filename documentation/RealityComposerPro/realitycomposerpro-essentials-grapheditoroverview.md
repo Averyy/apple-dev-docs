@@ -5,7 +5,7 @@
 
 Use Reality Composer Pro’s node-based editor to build materials, animations, audio effects, and scripts without writing code.
 
-#### Overview
+## Overview
 
 Reality Composer Pro’s **Graph Editor** is a node-based, no-code editor you can use to create a variety of assets, including materials, animations, audio effects, and scripts.
 
@@ -17,7 +17,7 @@ For example, a Script Graph uses different nodes and options than a Shader Graph
 
 ![A screenshot of a Script Graph in the Reality Composer Pro Graph Editor.](https://developer.apple.com/tutorials/images/RealityComposerPro/ScriptGraph@2x.png)
 
-#### Open the Graph Editor
+## Open the Graph Editor
 
 You can open the Graph Editor in two ways. To open a graph file directly, double-click a graph file in the project browser — such as a Shader Graph Material or Script Graph — to open it in the respective graph editor.
 
@@ -25,7 +25,7 @@ To open a graph file from a new tab, from the main menu choose **Tab** > **New T
 
 ![A screenshot showing how to open a graph file in the Reality Composer Pro Graph Editor from a new tab.](https://developer.apple.com/tutorials/images/RealityComposerPro/GraphEditor-NewTab@2x.png)
 
-#### Navigate the Graph Editor workspace
+## Navigate the Graph Editor workspace
 
 As your graphs grow more complex, these controls help you view, organize, and navigate the workspace.
 
@@ -43,7 +43,7 @@ With one or more nodes selected, you can also apply these layout operations to j
 - **Align** — Aligns the selected nodes left, right, top, or bottom. Requires more than one node to be selected.
 - **Distribute** — Distributes and spaces the selected nodes equally, either horizontally or vertically.
 
-#### Add nodes to a graph
+## Add nodes to a graph
 
 The Graph Editor offers three ways to add a node.
 
@@ -57,7 +57,7 @@ You can also click and drag a node’s input or output connector and release in 
 
 ![A screenshot showing how to rename a node in the Reality Composer Pro Graph Editor by clicking its name.](https://developer.apple.com/tutorials/images/RealityComposerPro/Rename@2x.png)
 
-#### Connect input, output, and subgraph nodes
+## Connect input, output, and subgraph nodes
 
 To connect two nodes, drag from an output port on one node to a compatible input port on another. The Graph Editor prevents you from attaching a connector to an incompatible port and highlights valid connections as you drag.
 
@@ -67,7 +67,7 @@ When you create an **Input**, **Output**, or **Subgraph** node, notice that they
 
 The graph type determines whether you can create additional inputs and outputs. For example, a Shader Graph doesn’t allow you to create additional outputs.
 
-#### Create a subgraph
+## Create a subgraph
 
 You can select a collection of nodes and turn them into a Subgraph to help organize a large, complex graph. You can also convert Subgraphs into reusable prototypes to share across other graphs.
 
@@ -77,13 +77,13 @@ To expand a subgraph back into the parent graph, Control-click the subgraph node
 
 > **Note**: For information about prototypes and Prototype Subgraph commands (Convert to Prototype Subgraph, Open Subgraph Prototype, Open Subgraph Instance, and Remove Node Override), see [Reusing assets with prototypes and instances](./realitycomposerpro-essentials-understandingprototypes.md).
 
-#### Add comments to graphs
+## Add comments to graphs
 
 Use comments to help organize, describe, and annotate complex graphs and subgraphs. To add a comment to a single node, Control-click the node and choose **Add Comment Box**. To add a comment to multiple nodes, click and drag a selection box around the nodes and press **C** on the keyboard. Alternatively, Control-click any of the selected nodes and choose **Add Comment Box**.
 
 ![A screenshot showing a comment box added around multiple selected nodes in the Reality Composer Pro Graph Editor.](https://developer.apple.com/tutorials/images/RealityComposerPro/CommentBox@2x.png)
 
-#### Edit, copy, or color-code comments
+## Edit, copy, or color-code comments
 
 These commands apply to comment boxes. Control-click any comment to open its context menu, and then do any of the following:
 
@@ -92,7 +92,7 @@ These commands apply to comment boxes. Control-click any comment to open its con
 - **Duplicate** — Makes a duplicate of the comment and its contents (nodes). The duplicate includes the nodes from the original comment, but none of the nodes have connections.
 - **Change Color** — Opens a color selector where you can change the color, opacity, and other visual characteristics for the comment. To access it, click the ellipsis (three dots) in the context menu.
 
-#### Use clipboard commands to copy, paste, or delete nodes
+## Use clipboard commands to copy, paste, or delete nodes
 
 These commands apply to selected nodes. With one or more nodes selected, Control-click and then use any of the following commands:
 

@@ -19,7 +19,7 @@ The type of the shape.
 var shape: ShapeMarkup.Shape { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The coordinate values of the shape type are relative to the unit coordinate space. For example a corner radius of `0.1` is equivalent to a radius of 10% of the minimum dimension of the shape.
 

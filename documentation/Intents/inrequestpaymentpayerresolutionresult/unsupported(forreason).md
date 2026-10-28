@@ -23,11 +23,11 @@ class func unsupported(forReason reason: INRequestPaymentPayerUnsupportedReason)
 + (instancetype) unsupportedForReason:(INRequestPaymentPayerUnsupportedReason) reason;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INRequestPaymentPayerResolutionResult`](../inrequestpaymentpayerresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when the designated payer does not meet your qualifications for delivering a payment. For example, you might use this method if the user’s account does not have sufficient funds or you cant verify the user’s credentials.
 

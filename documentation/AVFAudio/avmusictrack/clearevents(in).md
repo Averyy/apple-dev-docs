@@ -24,7 +24,7 @@ func clearEvents(in range: AVBeatRange)
 - (void) clearEventsInRange:(AVBeatRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 The system won’t modify the events outside of the range you specify.
 

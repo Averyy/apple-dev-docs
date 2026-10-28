@@ -12,7 +12,7 @@ Creates an attachment containing a zipped archive of an existing directory on di
 convenience init(compressedContentsOfDirectoryAtURL url: URL)
 ```
 
-#### Discussion
+## Discussion
 
 Zips the contents of the provided directory and wraps the compressed output in an attachment with a [`uniformTypeIdentifier`](./uniformtypeidentifier.md) of `"public.zip-archive"`. The attachment’s [`name`](./name.md) property is set to the name of the zipped directory followed by an extension of `".zip"`.
 

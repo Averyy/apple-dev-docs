@@ -23,7 +23,7 @@ protocol INPauseWorkoutIntentHandling : NSObjectProtocol
 @protocol INPauseWorkoutIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INPauseWorkoutIntentHandling`](./inpauseworkoutintenthandling.md) protocol to resolve, confirm, and handle requests to pause a workout that’s using your app. Adopt this protocol in an object of your Intents extension that’s capable of validating the workout name.
 

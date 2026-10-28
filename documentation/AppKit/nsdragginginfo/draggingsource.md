@@ -21,7 +21,7 @@ var draggingSource: Any? { get }
 @property (readonly, nullable) id draggingSource;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns `nil` if the source is not in the same application as the destination. The dragging source implements methods from the NSDraggingSource protocol.
 

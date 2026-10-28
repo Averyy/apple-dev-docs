@@ -21,7 +21,7 @@ protocol NFCMiFareTag : NFCNDEFTag, __NFCTag
 @protocol NFCMiFareTag <NFCTag, NFCNDEFTag>
 ```
 
-#### Overview
+## Overview
 
 The [`NFCTagReaderSessionDelegate`](./nfctagreadersessiondelegate-2joku.md) receives an object that conforms to the [`NFCMiFareTag`](./nfcmifaretag.md) protocol when the [`NFCTagReaderSession`](./nfctagreadersession.md) detects a compatible tag. However, if you include the application identifier `D2760000850101`—the identifier for the NDEF application on MIFARE® DESFire® tags (NFC Forum T4T tag platform)—in the [`ISO7816 application identifiers for NFC Tag Reader Session`](../BundleResources/entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers.md) array of your `Info.plist` file, the reader session sends the delegate an [`NFCISO7816Tag`](./nfciso7816tag.md) object when it finds a tag matching the identifier. To receive the MIFARE DESFire tag as an [`NFCMiFareTag`](./nfcmifaretag.md) object, don’t include `D2760000850101` in the array.
 

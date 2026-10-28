@@ -13,7 +13,7 @@ Closes Core Printing and releases its allocated memory.
 OSStatus PMEnd (void);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 

@@ -24,11 +24,11 @@ init(name: String? = nil, executorPreference taskExecutor: (any TaskExecutor)?, 
 
 Available when `Success` conforms to `Sendable` and `Failure` is `any Error`.
 
-#### Return Value
+## Return Value
 
 A reference to the task.
 
-#### Discussion
+## Discussion
 
 If the `operation` throws an error, it is caught by the `Task` and will be rethrown only when the task’s `value` is awaited. Take care to not accidentally dismiss errors by not awaiting on the task’s resulting value.
 

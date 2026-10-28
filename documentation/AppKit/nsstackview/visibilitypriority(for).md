@@ -19,11 +19,11 @@ func visibilityPriority(for view: NSView) -> NSStackView.VisibilityPriority
 - (NSStackViewVisibilityPriority) visibilityPriorityForView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The visibility priority for the specified view.
 
-#### Discussion
+## Discussion
 
 Visibility priority is the Auto Layout priority for a view to remain attached to a stack view when Auto Layout reduces the stack view’s size (such as when a user reduces the enclosing window’s size).
 

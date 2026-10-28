@@ -24,7 +24,7 @@ var motionEndBorderMode: MTLMotionBorderMode { get set }
 @property (nonatomic) MTLMotionBorderMode motionEndBorderMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLMotionBorderMode.clamp`](../mtlmotionbordermode/clamp.md).
 

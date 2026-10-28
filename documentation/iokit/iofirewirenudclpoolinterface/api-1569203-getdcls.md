@@ -16,7 +16,7 @@ Returns the pool's DCL program as a CFArray of NuDCLRef's.
 CFArrayRef (*GetDCLs)(IOFireWireLibNuDCLPoolRef self);
 ```
 
-#### Return Value
+## Return Value
 
 A CFArrayRef.
 

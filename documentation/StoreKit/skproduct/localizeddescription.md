@@ -27,7 +27,7 @@ var localizedDescription: String { get }
 @property (nonatomic, readonly) NSString * localizedDescription;
 ```
 
-#### Discussion
+## Discussion
 
 The description’s language is determined by the storefront that the user’s device is connected to, not the preferred language set on the device.
 

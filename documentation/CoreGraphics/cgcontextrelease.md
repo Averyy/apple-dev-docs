@@ -21,7 +21,7 @@ Decrements the retain count of a graphics context.
 extern void CGContextRelease(CGContextRef c);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRelease`](../CoreFoundation/cfrelease.md), except it does not cause an error if `c` is `NULL`.
 

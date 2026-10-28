@@ -22,11 +22,11 @@ Informs the system when message processing and response continues in a separate 
 func handoffReply(to queue: DispatchQueue, _ continuation: @escaping @Sendable () -> Void) -> (any Encodable)?
 ```
 
-#### Return Value
+## Return Value
 
 This method always returns `nil`, allowing a message handler closure to return a value.
 
-#### Discussion
+## Discussion
 
 You can only call this method from the context of a message handler closure, or from a continuation closure passed to [`handoffReply(to:_:)`](./handoffreply%28to,_%29.md).
 

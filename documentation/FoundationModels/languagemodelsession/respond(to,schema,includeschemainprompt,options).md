@@ -28,11 +28,11 @@ nonisolated(nonsending) final func respond(to prompt: Prompt, schema: Generation
 nonisolated(nonsending) final func respond(to prompt: String, schema: GenerationSchema, includeSchemaInPrompt: Bool = true, options: GenerationOptions = GenerationOptions()) async throws -> LanguageModelSession.Response<GeneratedContent>
 ```
 
-#### Return Value
+## Return Value
 
 [`GeneratedContent`](../generatedcontent.md) containing the fields and values defined in the schema.
 
-#### Discussion
+## Discussion
 
 Consider using the default value of `true` for `includeSchemaInPrompt`. The exception to the rule is when the model has knowledge about the expected response format, either because it has been trained on it, or because it has seen exhaustive examples during this session.
 

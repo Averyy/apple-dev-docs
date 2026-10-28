@@ -16,7 +16,7 @@ get calloutOffset(): DOMPoint;
 set calloutOffset(value: DOMPoint);
 ```
 
-#### Discussion
+## Discussion
 
 By default, MapKit JS places the callout bubble slightly (1 pixel) above the top-center point of the annotation element.
 

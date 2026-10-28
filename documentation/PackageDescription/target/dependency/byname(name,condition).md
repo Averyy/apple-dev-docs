@@ -15,11 +15,11 @@ Creates a dependency that resolves to either a target or a product with the spec
 static func byName(name: String, condition: TargetDependencyCondition? = nil) -> Target.Dependency
 ```
 
-#### Return Value
+## Return Value
 
 A `Target.Dependency` instance.
 
-#### Discussion
+## Discussion
 
 Swift Package Manager creates the by-name dependency after it has loaded the package graph.
 

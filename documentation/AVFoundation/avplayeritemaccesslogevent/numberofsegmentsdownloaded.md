@@ -19,7 +19,7 @@ var numberOfSegmentsDownloaded: Int { get }
 @property (nonatomic, readonly) NSInteger numberOfSegmentsDownloaded;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “sc-count”.
 

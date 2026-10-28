@@ -21,7 +21,7 @@ A Boolean value that indicates whether the user or the system requests a downloa
 var ubiquitousItemDownloadRequested: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can request the download of a shared item with [`startDownloadingUbiquitousItem(at:)`](../filemanager/startdownloadingubiquitousitem%28at%29.md).
 

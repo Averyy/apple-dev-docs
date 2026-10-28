@@ -23,7 +23,7 @@ mutating func addTask(priority: TaskPriority? = nil, operation: sending @escapin
 
 Available when `ChildTaskResult` conforms to `Sendable` and `Failure` conforms to `Error`.
 
-#### Discussion
+## Discussion
 
 This method doesn’t throw an error, even if the child task does. Instead, the corresponding call to `ThrowingTaskGroup.next()` rethrows that error.
 

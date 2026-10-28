@@ -21,7 +21,7 @@ func CTFontCreateWithPlatformFont(_ platformFont: ATSFontRef, _ size: CGFloat, _
 extern CTFontRefCTFontCreateWithPlatformFont(ATSFontRef platformFont, CGFloat size, const CGAffineTransform *matrix, CTFontDescriptorRef attributes);
 ```
 
-#### Return Value
+## Return Value
 
 A new font reference for an [`ATSFontRef`](./atsfontref.md) with the specified size, matrix, and additional attributes.
 

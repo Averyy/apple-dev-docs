@@ -13,7 +13,7 @@ List all plan availabilities for a specific auto-renewable subscription.
 
 - [Configuring subscription prices across territories](./configuring-subscription-prices-across-territories.md)
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

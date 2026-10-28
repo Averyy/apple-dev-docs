@@ -21,11 +21,11 @@ object Heading
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 - [Using Markdown with Apple News Format](../AppleNews/using-markdown-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Use a `Heading` component to define a heading. There are six levels of headings. The `role` strings for the supported heading levels are `heading`, `heading1`, `heading2`, `heading3`, `heading4`, `heading5`, and `heading6`.
 
-##### Example
+### Example
 
 ```json
 {

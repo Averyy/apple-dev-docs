@@ -21,7 +21,7 @@ Returns a partial copy of the path.
 func trimmedPath(from: CGFloat, to: CGFloat) -> Path
 ```
 
-#### Discussion
+## Discussion
 
 The returned path contains the region between `from` and `to`, both of which must be fractions between zero and one defining points linearly-interpolated along the path.
 

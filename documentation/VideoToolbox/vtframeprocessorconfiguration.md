@@ -24,7 +24,7 @@ protocol VTFrameProcessorConfiguration : NSObjectProtocol, Sendable
 @protocol VTFrameProcessorConfiguration <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The VTFrameProcessorConfiguration protocol conformance starts a frame processing session. These properties can be queried on an implementation conforming to this protocol without starting a session.
 

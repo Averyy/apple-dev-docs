@@ -24,7 +24,7 @@ var effect: UIVisualEffect? { get set }
 @property (nonatomic, copy, nullable) UIVisualEffect * effect;
 ```
 
-#### Discussion
+## Discussion
 
 The effect is either a [`UIBlurEffect`](../uiblureffect.md) or a [`UIVibrancyEffect`](../uivibrancyeffect.md).
 

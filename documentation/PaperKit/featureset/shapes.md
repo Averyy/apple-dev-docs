@@ -19,7 +19,7 @@ The supported shape types.
 var shapes: Set<ShapeConfiguration.Shape>
 ```
 
-#### Discussion
+## Discussion
 
 Default is all shapes. Set to an empty set to disable all shapes.
 

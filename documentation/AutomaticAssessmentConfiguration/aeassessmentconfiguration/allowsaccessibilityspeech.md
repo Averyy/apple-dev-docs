@@ -21,7 +21,7 @@ var allowsAccessibilitySpeech: Bool { get set }
 @property (nonatomic, assign) BOOL allowsAccessibilitySpeech;
 ```
 
-#### Discussion
+## Discussion
 
 A device reads text aloud for users who need it. In particular, users can enable the following features from Accessibility > Spoken Content in the Settings app on iOS and iPadOS:
 

@@ -19,7 +19,7 @@ func printOperation(with printInfo: NSPrintInfo) -> NSPrintOperation
 - (NSPrintOperation *) printOperationWithPrintInfo:(NSPrintInfo *) printInfo;
 ```
 
-#### Return Value
+## Return Value
 
 The print operation object to use when printing the web view, or `nil` if printing is not supported.
 

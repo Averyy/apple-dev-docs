@@ -28,7 +28,7 @@ func scaledFont(for font: UIFont) -> UIFont
 
 - [Scaling fonts automatically](../scaling-fonts-automatically.md)
 
-#### Return Value
+## Return Value
 
 A version of the specified font with the appropriate style information applied to it, and scaled to the current Dynamic Type setting.
 

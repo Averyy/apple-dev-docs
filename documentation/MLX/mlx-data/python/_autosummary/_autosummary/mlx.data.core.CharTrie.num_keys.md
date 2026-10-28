@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/_autos
 
 # mlx.data.core.CharTrie.num_keys
 
-**CharTrie.num_keys(*self: mlx.data._c.core.CharTrie*) → [int](https://docs.python.org/3/library/functions.html#int)**
-: Return how many keys/nodes have been inserted in the Trie.
+```python
+CharTrie.num_keys(self: mlx.data._c.core.CharTrie) → int
+```
+
+Return how many keys/nodes have been inserted in the Trie.

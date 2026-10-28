@@ -19,11 +19,11 @@ Extracts key points from video files if necessary.
 func extractKeypoints(targetFrameRate: Double = MLHandActionClassifier.__Defaults.targetFrameRate) throws -> DataFrame
 ```
 
-#### Return Value
+## Return Value
 
 A data frame that contains a column for hand joint locations and a column of hand action annotations.
 
-#### Discussion
+## Discussion
 
 If the data source already contains keypoints, this method just renames the data frame columns to the defaults.
 

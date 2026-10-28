@@ -19,7 +19,7 @@ case cellState
 NSCellState
 ```
 
-#### Discussion
+## Discussion
 
 The cell’s state can be [`NSMixedState`](../../nsmixedstate.md), [`NSOffState`](../../nsoffstate.md), or [`NSOnState`](../../nsonstate.md).
 

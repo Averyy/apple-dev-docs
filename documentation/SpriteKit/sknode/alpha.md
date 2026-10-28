@@ -31,7 +31,7 @@ var alpha: CGFloat { get set }
 - [Controlling User Interaction on Nodes](../controlling-user-interaction-on-nodes.md)
 - [Getting Started with Nodes](../getting-started-with-nodes.md)
 
-#### Discussion
+## Discussion
 
 The default value is `1.0`.
 

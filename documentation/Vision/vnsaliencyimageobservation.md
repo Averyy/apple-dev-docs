@@ -24,7 +24,7 @@ class VNSaliencyImageObservation
 @interface VNSaliencyImageObservation : VNPixelBufferObservation
 ```
 
-#### Overview
+## Overview
 
 The heat map is a [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer.md) in a one-component floating-point pixel format. Its dimensions are 64 x 64 when fetched in real time, or 68 x 68 when requested in its deferred form.
 

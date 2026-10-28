@@ -5,11 +5,11 @@
 
 Detects the creation of null references and null pointer dereferences.
 
-#### Overview
+## Overview
 
 In Xcode 9 and later, you can use this check to detect the creation of null references and null pointer dereferences. Dereferencing a null pointer always results in undefined behavior and can cause crashes. If the compiler finds a pointer dereference, it treats that pointer as nonnull. As a result, the optimizer may remove null equality checks for dereferenced pointers.
 
-##### Creating a null reference in C++
+### Creating a null reference in C++
 
 The following example demonstrates how to create a null reference. References in C++ must be nonnull:
 
@@ -17,7 +17,7 @@ The following example demonstrates how to create a null reference. References in
 int &x = *(int *)nullptr; // Error: null reference
 ```
 
-###### Solution
+#### Solution
 
 Use a pointer instead.
 
@@ -25,7 +25,7 @@ Use a pointer instead.
 int *x = nullptr; // Correct
 ```
 
-##### Member access through a null pointer in C++
+### Member access through a null pointer in C++
 
 The following code makes a member call on an object with a null address. The compiler may remove the null check on the `this` pointer because it requires the pointer to be `nonnull`.
 
@@ -45,7 +45,7 @@ int x = a->getX(); // Error: member access through null pointer
 
 > ❗ **Important**: Always avoid null checks on the `this` pointer.
 
-###### Solution
+#### Solution
 
 Avoid calling methods on null objects.
 

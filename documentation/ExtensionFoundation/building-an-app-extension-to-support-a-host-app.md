@@ -5,7 +5,7 @@
 
 Create an app extension to perform tasks in a separate process from a host app.
 
-#### Overview
+## Overview
 
 An app extension extends the features of the host app it supports, and runs code in a separate process. You can develop an app extension together with your app, or develop app extensions separately to support a different app. The host app provides the interface your app extension must implement, and both the app and app extension adopt the [ExtensionFoundation](./ExtensionFoundation.md) framework to manage interactions.
 
@@ -13,7 +13,7 @@ In an app extension, the [ExtensionFoundation](./ExtensionFoundation.md) framewo
 
 > **Note**: The host app provides the SDK that you adopt when implementing your app extension. This SDK includes any API to adopt, the version of XPC to use, and any other requirements for the host app’s extension points.
 
-##### Create your app extension target
+### Create your app extension target
 
 An app extension is a bundle that ships inside an existing app, so you must already have an Xcode project with an app before adding an app extension to it. When writing app extensions for one of your apps, or for another app on the App Store, start your app extension from the Generic Extension target type. The following steps walk you through the process of adding this target type to your existing Xcode project:
 
@@ -29,7 +29,7 @@ An app extension is a bundle that ships inside an existing app, so you must alre
 
 The Generic Extension target template provides the initial code your app extension needs to run. Specifically, it contains a customization of the [`AppExtension`](./appextension.md) type that is the entry point for your app extension’s code. You don’t override this type’s existing behavior, but you do augment it with details about your app extension. For example, you provide it with an [`AppExtensionConfiguration`](./appextensionconfiguration.md) object, which creates the XPC connection between your app extension and the host app.
 
-##### Bind your app extension to an appropriate extension point
+### Bind your app extension to an appropriate extension point
 
 Each time you create an app extension, you target one of the extension points of the associated host app. Extension points are features or capabilities for which the host app supports app extensions. For example, an image-editing app might define an extension point to support custom image filters. In your app extension code, you programmatically specify the extension point you support using a binding. At runtime, the system uses your binding information to match your app extension to the host app on a person’s device.
 
@@ -48,7 +48,7 @@ At build time, you use the compiler to generate the actual binding information t
 
 > **Note**: When creating new app extensions, always place binding information in your code. If you have an older app extension, the system still recognizes keys you added manually to your app’s information property list.
 
-##### Configure the XPC connection to the host app
+### Configure the XPC connection to the host app
 
 Apart from adopting the host app’s required API, an app extension’s only requirement is to establish a communications channel with that app. After launching an app extension, the host app is responsible for initiating an XPC connection to that extension. Accept this connection in your app extension code to start communication with the host.
 

@@ -25,7 +25,7 @@ typealias nw_browser_browse_results_changed_handler_t = (nw_browse_result_t, nw_
 typedef void (^)(NSObject<OS_nw_browse_result> *, NSObject<OS_nw_browse_result> *, _Bool) nw_browser_browse_results_changed_handler_t;
 ```
 
-#### Discussion
+## Discussion
 
 New results will be delivered as changes from previous results in batches. Your application should process changes once a batch is complete, and be ready to handle multiple updates.
 

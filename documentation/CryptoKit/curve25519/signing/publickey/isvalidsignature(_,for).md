@@ -21,7 +21,7 @@ Verifies an EdDSA signature over Curve25519.
 func isValidSignature<S, D>(_ signature: S, for data: D) -> Bool where S : DataProtocol, D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that’s `true` when the signature is valid for the given data.
 

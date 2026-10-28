@@ -13,7 +13,7 @@
 const CFStringRef kSKLanguageTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated—Search Kit ignores this constant.
 

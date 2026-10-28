@@ -16,7 +16,7 @@ Tracking is available, but the quality of results is questionable.
 ARTrackingStateLimited
 ```
 
-#### Discussion
+## Discussion
 
 In this state, the positions and transforms of anchors in the scene (especially detected planes) may not be accurate or consistent from one captured frame to the next.
 

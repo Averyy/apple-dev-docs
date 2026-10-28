@@ -25,7 +25,7 @@ static let invalidReceivePortException: NSExceptionName
 extern NSExceptionName const NSInvalidReceivePortException;
 ```
 
-#### Discussion
+## Discussion
 
 This is a distributed objects–specific exception.
 

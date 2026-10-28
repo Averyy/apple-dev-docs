@@ -21,7 +21,7 @@ Checks a dispatch condition necessary for further execution.
 func dispatchPrecondition(condition: @autoclosure () -> DispatchPredicate)
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to detect conditions about the current execution context that must prevent the program from proceeding even in shipping code.
 

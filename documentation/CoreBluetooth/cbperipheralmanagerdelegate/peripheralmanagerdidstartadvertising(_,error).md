@@ -25,7 +25,7 @@ optional func peripheralManagerDidStartAdvertising(_ peripheral: CBPeripheralMan
 - (void) peripheralManagerDidStartAdvertising:(CBPeripheralManager *) peripheral error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Core Bluetooth calls this method when your app calls the [`startAdvertising(_:)`](../cbperipheralmanager/startadvertising%28_%29.md) method to advertise the local peripheral device’s data. If successful, the `error` parameter is `nil`. If a problem prevents advertising the data, the `error` parameter returns the cause of the failure.
 

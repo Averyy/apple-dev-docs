@@ -18,7 +18,7 @@ A mapping of named buffer and texture parameters to binding indices for a compil
 struct LowLevelMaterialParameterMapping
 ```
 
-#### Overview
+## Overview
 
 Use `bufferLocation(named:)`, `constantLocation(named:)`, and `textureLocation(named:)` to look up the binding index for a named parameter, then bind a resource to that slot with [`setBufferSlice(_:at:)`](./lowlevelargumenttable/setbufferslice%28_,at%29.md) or [`setTexture(_:at:)`](./lowlevelargumenttable/settexture%28_,at%29.md).
 

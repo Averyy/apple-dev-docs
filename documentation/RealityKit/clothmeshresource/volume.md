@@ -17,7 +17,7 @@ The volume of the mesh, or `nil` if the mesh is not watertight.
 final var volume: Float? { get }
 ```
 
-#### Discussion
+## Discussion
 
 See [`isWatertight`](./iswatertight.md) for more information.
 

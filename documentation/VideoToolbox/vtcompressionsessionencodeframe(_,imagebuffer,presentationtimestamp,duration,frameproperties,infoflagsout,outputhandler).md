@@ -24,7 +24,7 @@ func VTCompressionSessionEncodeFrame(_ session: VTCompressionSession, imageBuffe
 extern OSStatus VTCompressionSessionEncodeFrameWithOutputHandler(VTCompressionSessionRef session, CVImageBufferRef imageBuffer, CMTime presentationTimeStamp, CMTime duration, CFDictionaryRef frameProperties, VTEncodeInfoFlags *infoFlagsOut, VTCompressionOutputHandler outputHandler);
 ```
 
-#### Discussion
+## Discussion
 
 Encoded frames may or may not be output before the function returns. The client should not modify the pixel data after making this call. The session and/or encoder retains the image buffer as long as necessary.
 

@@ -5,7 +5,7 @@
 
 Split precompiled binaries into individual slices, and combine them back together for targeted distribution.
 
-#### Overview
+## Overview
 
 When distributing Metal binary archives, it’s useful to maintain individual slices for each GPU and only include binaries relevant for an individual targeted device. This allows for you to maintain the performance of a precompiled Metal binary while reducing it to a minimal size. Using this strategy in a build system allows you to distribute slim binaries over the air from a larger precompiled binary, or to ship a larger set of precompiled binaries for a platform that supports multiple GPUs.
 
@@ -14,7 +14,7 @@ The code examples in this article use the following files:
 - `shaders.metallib,`a Metal library you compile from Xcode or the `metal` command-line tool. To learn how to compile from the command-line, see [Building a shader library by precompiling source files](./building-a-shader-library-by-precompiling-source-files.md).
 - `shaders.mtlp-json`, a Metal translator configuration script for use with the `shaders.metallib` library. To learn about creating configuration scripts, see [Creating binary archives from device-built pipeline state objects](./creating-binary-archives-from-device-built-pipeline-state-objects.md) or [Compiling binary archives from a custom configuration script](./compiling-binary-archives-from-a-custom-configuration-script.md).
 
-##### Extract slices from an existing binary archive
+### Extract slices from an existing binary archive
 
 Unless the configuration script or command-line options specify otherwise, the Metal translator builds for all supported GPU architectures, including those your app may not even target. For example, building a complete binary archive for the shaders in [Drawing a triangle with Metal 4](./drawing-a-triangle-with-metal-4.md), and then inspecting it, shows both a large number of binary slices and a significant size increase.
 
@@ -45,7 +45,7 @@ amdgpu_gfx1032.binary.metallib       applegpu_g15g.binary.metallib        appleg
 
 > **Note**:  Using `metal-lipo -thin` doesn’t remove the architectures from the original binary archive.
 
-##### Combine individual slices into a new binary archive
+### Combine individual slices into a new binary archive
 
 The `metal-lipo` command-line tool also has a `-create` flag that performs the opposite of thinning. It combines binary archives to create a Metal library that contains each individual binary slice. Using this approach, you can create three new binary archives from a full set of binary archives: one for Intel-based Mac computers, one for AMD GPUs in an expansion slot, and one for Apple silicon.
 

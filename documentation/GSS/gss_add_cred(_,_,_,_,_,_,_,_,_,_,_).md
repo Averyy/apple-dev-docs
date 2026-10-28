@@ -23,7 +23,7 @@ func gss_add_cred(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ input_cred_
 OM_uint32 gss_add_cred(OM_uint32 *minor_status, gss_cred_id_t const input_cred_handle, gss_name_t const desired_name, gss_OID const desired_mech, gss_cred_usage_t cred_usage, OM_uint32 initiator_time_req, OM_uint32 acceptor_time_req, gss_cred_id_t*output_cred_handle, gss_OID_set*actual_mechs, OM_uint32 *initiator_time_rec, OM_uint32 *acceptor_time_rec);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 

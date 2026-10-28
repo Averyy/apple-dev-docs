@@ -24,7 +24,7 @@ var rowBytes: Int { get set }
 @property (nonatomic, readwrite) NSUInteger rowBytes;
 ```
 
-#### Discussion
+## Discussion
 
 This value must be a multiple of the element size.
 

@@ -22,7 +22,7 @@ An interpolating spring animation that uses a damped spring model to produce val
 static var interpolatingSpring: Animation { get }
 ```
 
-#### Discussion
+## Discussion
 
 This uses the default parameter values.
 

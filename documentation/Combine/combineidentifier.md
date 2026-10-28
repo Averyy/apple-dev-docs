@@ -21,7 +21,7 @@ A unique identifier for identifying publisher streams.
 struct CombineIdentifier
 ```
 
-#### Overview
+## Overview
 
 To conform to [`CustomCombineIdentifierConvertible`](./customcombineidentifierconvertible.md) in a [`Subscription`](./subscription.md) or [`Subject`](./subject.md) that you implement as a structure, create an instance of [`CombineIdentifier`](./combineidentifier.md) as follows:
 

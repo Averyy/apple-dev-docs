@@ -23,7 +23,7 @@ class AVCaptureAudioChannel
 @interface AVCaptureAudioChannel : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t create instances of this class directly. Instead, an [`AVCaptureConnection`](./avcaptureconnection.md) object that connects an audio input to an audio output provides an array of [`AVCaptureAudioChannel`](./avcaptureaudiochannel.md) objects, one for each channel of audio available. You can poll for audio levels by iterating through these audio channel objects.
 

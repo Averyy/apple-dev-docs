@@ -25,7 +25,7 @@ case mapValue
 kMIDITransform_MapValue
 ```
 
-#### Discussion
+## Discussion
 
 The value you specify is the index of the map in the connection’s array of maps.
 

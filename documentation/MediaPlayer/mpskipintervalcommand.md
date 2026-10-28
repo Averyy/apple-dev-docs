@@ -25,7 +25,7 @@ class MPSkipIntervalCommand
 @interface MPSkipIntervalCommand : MPRemoteCommand
 ```
 
-#### Overview
+## Overview
 
 You use a skip interval to move the playback of a media item, forward or backward, the indicated number of seconds. For example, a forward skip interval of 30 seconds at 2 minutes and 30 seconds into a song would immediately jump to 3 minutes into the song and continue playing. The skipped content isn’t played.
 

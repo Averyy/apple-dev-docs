@@ -25,11 +25,11 @@ func reverseTransformedValue(_ value: Any?) -> Any?
 - (id) reverseTransformedValue:(id) value;
 ```
 
-#### Return Value
+## Return Value
 
 The reverse transformation of `value`.
 
-#### Discussion
+## Discussion
 
 The default implementation raises an exception if [`allowsReverseTransformation()`](./allowsreversetransformation%28%29.md) returns [`false`](../../Swift/false.md); otherwise it will invoke [`transformedValue(_:)`](./transformedvalue%28_%29.md) with `value`.
 

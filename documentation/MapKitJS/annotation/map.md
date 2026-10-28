@@ -16,7 +16,7 @@ get map(): Map | null;
 set map(_: Map | null);
 ```
 
-#### Discussion
+## Discussion
 
 This property is `null` before MapKit JS adds the annotation to a [`Map`](../map.md), and after MapKit JS removes the annotation from a `mapkit.Map`.
 

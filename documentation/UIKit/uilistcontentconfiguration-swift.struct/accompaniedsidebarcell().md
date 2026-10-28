@@ -18,11 +18,11 @@ Creates the default configuration you use to style a cell in an accompanied side
 static func accompaniedSidebarCell() -> UIListContentConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 The default configuration for a cell in an accompanied sidebar list.
 
-#### Discussion
+## Discussion
 
 Create this configuration to update the content and styling of a cell in an accompanied sidebar collection view list, where the list is in the primary column of a split view controller, accompanied by another list in the split view controller’s supplementary column. When you apply this configuration to a cell, the cell displays one label, which resizes automatically based on the length of the text you provide and the device’s Dynamic Type and accessibility settings.
 

@@ -23,7 +23,7 @@ static func == (a: CollectionDifference<ChangeElement>, b: CollectionDifference<
 
 Available when `ChangeElement` conforms to `Equatable`.
 
-#### Discussion
+## Discussion
 
 Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
 

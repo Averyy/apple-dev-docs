@@ -23,7 +23,7 @@ var drawableDepthFormat: GLKViewDrawableDepthFormat { get set }
 @property (nonatomic) GLKViewDrawableDepthFormat drawableDepthFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`GLKViewDrawableDepthFormat.formatNone`](../glkviewdrawabledepthformat/formatnone.md).
 

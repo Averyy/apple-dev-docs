@@ -18,7 +18,7 @@ Invoked by the package manager to create build commands for a particular target.
 func createBuildCommands(context: PluginContext, target: Target) async throws -> [Command]
 ```
 
-#### Discussion
+## Discussion
 
 The context parameter contains information about the package and its dependencies, as well as other environmental inputs.
 

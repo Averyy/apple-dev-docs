@@ -17,11 +17,11 @@ Returns a Boolean value that indicates whether each image representation caches 
 - (BOOL) isCachedSeparately;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the image representations cache their content in separate offscreen windows; otherwise, [`false`](../../Swift/false.md). The default value is [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If this method returns [`false`](../../Swift/false.md), it means that the image may be cached in a shared window but is not required to be. Images are cached in a shared window if they have the same general attributes, such as color space, resolution, and bit depth.
 

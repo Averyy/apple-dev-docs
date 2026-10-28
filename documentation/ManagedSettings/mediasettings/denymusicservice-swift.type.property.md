@@ -17,7 +17,7 @@ The metadata associated with denying access to Apple Music.
 static let denyMusicService: SettingMetadata<Bool>
 ```
 
-#### Discussion
+## Discussion
 
 Use `denyMusicService` to access the metadata for [`denyMusicService`](./denymusicservice-swift.property.md). The default value is `false`.
 

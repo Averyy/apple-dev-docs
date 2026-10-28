@@ -14,7 +14,7 @@
 typedef ComponentResult (*ComponentMPWorkFunctionProcPtr)(void *globalRefCon, ComponentMPWorkFunctionHeaderRecordPtr header);
 ```
 
-#### Return Value
+## Return Value
 
 See the description of the `ComponentResult` data type.
 

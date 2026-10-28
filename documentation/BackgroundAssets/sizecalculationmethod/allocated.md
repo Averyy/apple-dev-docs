@@ -24,7 +24,7 @@ case allocated
 BASizeCalculationMethodAllocated
 ```
 
-#### Discussion
+## Discussion
 
 The result of an “allocated” size calculation for a file roughly corresponds to the number of bytes that would newly be made available if the file were removed.
 

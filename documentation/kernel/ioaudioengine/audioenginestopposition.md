@@ -9,7 +9,7 @@
 IOAudioEnginePosition audioEngineStopPosition;
 ```
 
-#### Overview
+## Overview
 
 When all clients have disconnected, this is set to one buffer length past the current audio engine position at the time. Then when the stop position is reached, the audio engine is stopped
 

@@ -20,7 +20,7 @@ A notification posted when a new document is associated with the view.
 static let PDFViewDocumentChanged: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFView` object itself.
 

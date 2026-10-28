@@ -21,11 +21,11 @@ Locks an unfair lock if it is not already locked.
 extern bool os_unfair_lock_trylock(os_unfair_lock_t lock);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the lock was successfully locked, or `false` if the lock was already locked.
 
-#### Discussion
+## Discussion
 
 If this function returns `false`, you must either proceed without having acquired the lock or call [`os_unfair_lock_lock`](./os_unfair_lock_lock.md) directly. Do not attempt to call this function within a retry loop; [`os_unfair_lock_lock`](./os_unfair_lock_lock.md) accomplishes the same task, without hiding the lock waiter from the system or preventing resolution of priority inversions.
 

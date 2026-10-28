@@ -25,7 +25,7 @@ case continuedWithExternalPurchaseToken(token: String)
 
 - [Receiving and decoding external purchase tokens](../../receiving-and-decoding-external-purchase-tokens.md)
 
-#### Discussion
+## Discussion
 
 When your app calls [`presentNoticeSheet()`](../presentnoticesheet%28%29.md) and it results in this value: [`ExternalPurchase.NoticeResult.continuedWithExternalPurchaseToken(token:)`](./continuedwithexternalpurchasetoken%28token%29.md), your app can proceed to present external purchases.
 

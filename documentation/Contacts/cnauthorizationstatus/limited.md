@@ -27,7 +27,7 @@ CNAuthorizationStatusLimited
 
 - [Accessing the contact store](../accessing-the-contact-store.md)
 
-#### Discussion
+## Discussion
 
 A person can give your app limited access to their contacts by choosing this option when your app first attempts to authorize for accessing contacts. Thereafter, the person can maintain the set of contacts exposed to your app by managing them in the Settings app.
 

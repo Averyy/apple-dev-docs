@@ -23,11 +23,11 @@ var isTouchInside: Bool { get }
 @property (nonatomic, readonly, getter=isTouchInside) BOOL touchInside;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the location of the most recent touch event is inside the control’s bounds or [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 While tracking of a touch event is ongoing, the control updates the value of this property to indicate whether the most recent touch is still inside the control’s bounds. The control uses this information to trigger specific events. For example, touch events entering or exiting a control trigger appropriate drag events.
 

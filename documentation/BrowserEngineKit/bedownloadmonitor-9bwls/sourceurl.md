@@ -17,7 +17,7 @@ A URL to a remote file to download.
 final let sourceURL: URL
 ```
 
-#### Discussion
+## Discussion
 
 Your browser app’s network extension retrieves the downloaded file from this location.
 

@@ -24,7 +24,7 @@ class MPSImageBox
 @interface MPSImageBox : MPSUnaryImageKernel
 ```
 
-#### Overview
+## Overview
 
 The kernel elements all have equal weight, achieving a blur effect (each result is the unweighted average of the surrounding pixels). This allows for much faster algorithms, especially for larger blur radii. The box height and width must be odd numbers.
 

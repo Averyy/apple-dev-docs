@@ -23,11 +23,11 @@ func MIDIGetExternalDevice(_ deviceIndex0: Int) -> MIDIDeviceRef
 extern MIDIDeviceRef MIDIGetExternalDevice(ItemCount deviceIndex0);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a device, or `NULL` if an error occurred.
 
-#### Discussion
+## Discussion
 
 Call this function to enumerate the external devices in the system.
 

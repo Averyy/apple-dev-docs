@@ -21,7 +21,7 @@ The severity of an alert or confirmation dialog.
 struct DialogSeverity
 ```
 
-#### Overview
+## Overview
 
 You can use dialog severity to indicate that people need to take extra care when interacting with the dialog, like when an action taken from the dialog permanently deletes data.
 

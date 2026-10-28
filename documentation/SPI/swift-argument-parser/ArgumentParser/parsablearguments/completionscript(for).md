@@ -17,7 +17,7 @@ Returns a shell completion script for the specified shell.
 static func completionScript(for shell: CompletionShell) -> String
 ```
 
-#### Return Value
+## Return Value
 
 The completion script for `shell`.
 

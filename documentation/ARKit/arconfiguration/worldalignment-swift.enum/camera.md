@@ -20,7 +20,7 @@ case camera
 ARWorldAlignmentCamera
 ```
 
-#### Discussion
+## Discussion
 
 Camera alignment defines a coordinate system based on the native sensor orientation of the device camera. Relative to a [`AVCaptureVideoOrientation.landscapeRight`](../../../AVFoundation/avcapturevideoorientation/landscaperight.md)-oriented camera image, the x-axis points to the right, the y-axis points up, and the z-axis points out the front of the device (toward the user).
 

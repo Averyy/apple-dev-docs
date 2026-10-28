@@ -5,13 +5,13 @@
 
 Bundle view modifiers that you regularly reuse into a custom view modifier.
 
-#### Overview
+## Overview
 
 To create consistent views, you might reuse the same view modifier or group of modifiers repeatedly across your views. For example, you might apply the same font and foreground color to many text instances throughout your app, so they all match. Unfortunately, this can lead to maintenance challenges, because even a small change in format, like a different font size, requires changes in many different parts of your code.
 
 To avoid this overhead, collect a set of modifiers into a single location using an instance of the [`ViewModifier`](./viewmodifier.md) protocol. Then, extend the [`View`](./view.md) protocol with a method that uses your modifier, making it easy to use and understand. Collecting the modifiers together provides a single location to update when you want to change them.
 
-##### Create a custom view modifier
+### Create a custom view modifier
 
 When you create your custom modifier, name it to reflect the purpose of the collection. For example, if you repeatedly apply the [`caption`](./font/caption.md) font style and a secondary color scheme to views to represent a secondary styling, collect them together as `CaptionTextFormat`:
 
@@ -32,7 +32,7 @@ Text("Some additional information...")
     .modifier(CaptionTextFormat())
 ```
 
-##### Extend the view protocol to provide fluent modifier access
+### Extend the view protocol to provide fluent modifier access
 
 To make your custom view modifier conveniently accessible, extend the [`View`](./view.md) protocol with a function that applies your modifier:
 

@@ -13,7 +13,7 @@
 kSCSIProtocolIdentifier_SAS = 6
 ```
 
-#### Discussion
+## Discussion
 
 SAS Protocol Identifier.
 

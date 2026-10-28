@@ -17,7 +17,7 @@ The calling process is monitoring too many activities.
 case excessiveActivities
 ```
 
-#### Discussion
+## Discussion
 
 The maximum number of activities that can be monitored at one time by an app and its extensions is twenty.
 

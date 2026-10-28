@@ -19,7 +19,7 @@ func deselectAllCells()
 - (void) deselectAllCells;
 ```
 
-#### Discussion
+## Discussion
 
 If the selection mode is `NSRadioModeMatrix` and empty selection is not allowed, this method does nothing.
 

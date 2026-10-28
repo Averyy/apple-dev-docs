@@ -16,7 +16,7 @@ Creates an object you use to manage Live Activity forwarding for your accessory.
 init(_ handlerFactory: @escaping @Sendable () -> any LiveActivityForwarding.AccessoryLiveActivitiesHandler)
 ```
 
-#### Overview
+## Overview
 
 The system calls the handler factory closure once for each Live Activity session and creates a new corresponding handler instance that receives updates for the life cycle of the Live Activity session.
 

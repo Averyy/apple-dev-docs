@@ -19,7 +19,7 @@ func SCNetworkInterfaceCopyMediaSubTypeOptions(_ available: CFArray, _ subType: 
 CFArrayRefSCNetworkInterfaceCopyMediaSubTypeOptions(CFArrayRef available, CFStringRef subType);
 ```
 
-#### Return Value
+## Return Value
 
 An array of available media options, or `NULL` if no options are available. Each of the available options is returned as an array of strings.
 

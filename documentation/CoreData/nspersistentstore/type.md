@@ -25,11 +25,11 @@ var type: String { get }
 @property (copy, readonly) NSString * type;
 ```
 
-#### Discussion
+## Discussion
 
 This string is used when specifying the type of store to add to a persistent store coordinator.
 
-##### Special Considerations
+### Special Considerations
 
 Subclasses must override this method to provide a unique type.
 

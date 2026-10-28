@@ -15,13 +15,13 @@ Calls the implementation of a specified method that returns a data-structure.
 extern void method_invoke_stret();
 ```
 
-#### Parameters
+## Parameters
 
 - **`receiver`**: A pointer to the instance of the class that you want to invoke the method on. This value must not be `nil`.
 - **`method`**: The method whose implementation you want to call.
 - **`...`**: A variable argument list containing the arguments to the method.
 
-#### Discussion
+## Discussion
 
 Using this function to call the implementation of a method is faster than calling [`method_getImplementation(_:)`](./method_getimplementation%28_%29.md) and [`method_getName(_:)`](./method_getname%28_%29.md).
 

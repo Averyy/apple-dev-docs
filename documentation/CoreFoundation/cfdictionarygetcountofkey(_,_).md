@@ -25,7 +25,7 @@ func CFDictionaryGetCountOfKey(_ theDict: CFDictionary!, _ key: UnsafeRawPointer
 extern CFIndex CFDictionaryGetCountOfKey(CFDictionaryRef theDict, const void *key);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `1` if a matching key is used by the dictionary, otherwise `0`.
 

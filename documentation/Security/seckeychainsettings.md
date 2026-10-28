@@ -20,7 +20,7 @@ struct SecKeychainSettings
 struct SecKeychainSettings;
 ```
 
-#### Overview
+## Overview
 
 This structure contains information about a keychain’s settings such as locking on sleep and the lock time interval. Use the [`SecKeychainSetSettings(_:_:)`](./seckeychainsetsettings%28_,_%29.md) and [`SecKeychainCopySettings(_:_:)`](./seckeychaincopysettings%28_,_%29.md) functions to set and copy a keychain’s settings.
 

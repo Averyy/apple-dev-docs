@@ -20,7 +20,7 @@ Attempts to asynchronously compile a shader function, to minimize the chance of 
 func compile(as type: Shader.UsageType) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Before being available for rendering each shader must be compiled for the current GPU. By default this happens on first use, but that may cause that frame to be delayed waiting for the compiler, i.e. cause a visible “glitch” in animations.
 

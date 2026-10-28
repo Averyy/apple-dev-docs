@@ -14,11 +14,11 @@ virtual bool getPathComponent(
  const IORegistryPlane *plane ) const;
 ```
 
-#### Return Value
+## Return Value
 
 true if the path fits into the supplied buffer or false on a overflow.
 
-#### Overview
+## Overview
 
 Each component of a path created with getPath is created with getPathComponent. The default implementation concatenates the entry's name in the the plane, with the "at" symbol and the location string of the entry in the plane if it has been set.
 

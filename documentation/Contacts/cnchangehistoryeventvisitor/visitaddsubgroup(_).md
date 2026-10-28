@@ -24,7 +24,7 @@ optional func visitAddSubgroup(_ event: CNChangeHistoryAddSubgroupToGroupEvent)
 - (void) visitAddSubgroupToGroupEvent:(CNChangeHistoryAddSubgroupToGroupEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Inspect the group and subgroup in the event that the system provides and update your app’s cached data accordingly.
 

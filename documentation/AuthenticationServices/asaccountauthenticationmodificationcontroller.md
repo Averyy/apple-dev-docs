@@ -26,7 +26,7 @@ class ASAccountAuthenticationModificationController
 
 - [Upgrading Account Security With an Account Authentication Modification Extension](./upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
-#### Overview
+## Overview
 
 > **Note**:  This class ignores calls from Mac apps built with Mac Catalyst.
 

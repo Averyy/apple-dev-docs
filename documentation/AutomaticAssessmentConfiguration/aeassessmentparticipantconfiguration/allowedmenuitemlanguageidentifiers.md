@@ -16,7 +16,7 @@ The set of language identifiers for which allowed menu items have been configure
 @property (nonatomic, copy, readonly) NSSet<NSString *> * allowedMenuItemLanguageIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Contains only identifiers explicitly added via `setAllowedMenuItems(_:forLanguageIdentifier:)`. Does not include identifiers inferred through localization resolution.
 

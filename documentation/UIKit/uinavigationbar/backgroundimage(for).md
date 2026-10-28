@@ -23,11 +23,11 @@ func backgroundImage(for barMetrics: UIBarMetrics) -> UIImage?
 - (UIImage *) backgroundImageForBarMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Return Value
+## Return Value
 
 The background image for `barMetrics`.
 
-#### Discussion
+## Discussion
 
 Equivalent to using [`backgroundImage(for:barMetrics:)`](./backgroundimage%28for,barmetrics%29.md) with a position of [`UIBarPosition.any`](../uibarposition/any.md).
 

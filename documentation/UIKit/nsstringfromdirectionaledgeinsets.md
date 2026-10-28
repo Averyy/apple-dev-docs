@@ -20,7 +20,7 @@ Returns a string formatted to contain the data from a directional edge insets st
 extern NSString *NSStringFromDirectionalEdgeInsets(NSDirectionalEdgeInsets insets);
 ```
 
-#### Return Value
+## Return Value
 
 A string that corresponds to insets. See [`NSDirectionalEdgeInsetsFromString`](./nsdirectionaledgeinsetsfromstring.md) for a discussion of the string format.
 

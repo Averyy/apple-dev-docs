@@ -33,7 +33,7 @@ var content: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * content;
 ```
 
-#### Discussion
+## Discussion
 
 When this property contains a valid string, search for that string in the body text of the user’s notes.
 

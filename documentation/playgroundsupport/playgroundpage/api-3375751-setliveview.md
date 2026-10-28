@@ -25,7 +25,7 @@ final func setLiveView<IncomingView>(_ newLiveView: IncomingView) where Incoming
 func setLiveView<IncomingView>(_ newLiveView: IncomingView) where IncomingView : View
 ```
 
-#### Discussion
+## Discussion
 
 The live view appears in the assistant editor for the current playground page. There can be only one live view open at any time.
 

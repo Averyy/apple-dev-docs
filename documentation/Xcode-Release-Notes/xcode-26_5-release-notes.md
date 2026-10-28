@@ -5,70 +5,70 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 26.5 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, watchOS 26.5, macOS 26.5, and visionOS 26.5. Xcode 26.5 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.5 requires a Mac running macOS Tahoe 26.2 or later.
 
-##### General
+### General
 
-###### Known Issues
+#### Known Issues
 
 - When streaming stdout and stderr from multiple processes at the same time (eg: in parallel testing scenarios), the results may be significantly delayed.  (165098287)
 
-##### Background Assets
+### Background Assets
 
-###### Known Issues
+#### Known Issues
 
 - The system may incorrectly determine an app’s eligibility for development overrides in simulator environments.  (173742496)
 
   **Workaround:** Test your app on a physical device.
 
-##### Coding Intelligence
+### Coding Intelligence
 
-###### New Features
+#### New Features
 
 - Messages can now be queued in the coding assistant.  (174563016)
 - Agents can now ask clarifying questions to provide more accurate results.  (175182375)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: An issue causing malformed data in RunSomeTests MCP tool call  (170415923)
 - Fixed: Users interacting with Claude Code might receive an error message about their OAuth token being expired.  (175464325)
 
-##### Instruments
+### Instruments
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Typing in the filter field at the bottom of the Symbols window would create a token for every character  (172423349)
 - Fixed an issue where profiling using Metal System Trace with GPU Counters capture could cause memory footprint of Instruments to increase to tens of gigabytes.  (173195251)
 
-##### Localization
+### Localization
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Generated code for String Catalog symbol generation will no longer produce a compiler error for Packages that default to MainActor isolation.  (173302714) (FB22329375)
 
-##### Security
+### Security
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Mac (Designed for iPad) apps with pointer authentication are now compatible with macOS Tahoe 26.5 and newer. Add `LSMinimumSystemVersion` with value `26.5` to your app’s Info.plist to ensure the app only runs on Tahoe 26.5 and newer.  (171174887)
 
-##### Simulator
+### Simulator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Pasteboard Synchronization within Simulator.app is currently not functioning.  (173403967) (FB22340739)
 
-##### StoreKit Testing in Xcode
+### StoreKit Testing in Xcode
 
-###### New Features
+#### New Features
 
 - New billing plan APIs can be tested using [StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md). Configure a monthly with 12-month commitment billing plan for your auto-renewable subscriptions in the StoreKit Configuration, and simulate subscribing to the billing plan through the Transaction Manager in Xcode.  (168522699)
 
-##### Swift
+### Swift
 
-###### Known Issues
+#### Known Issues
 
 - When a closure with explicit captures is passed as an argument to a `nonisolated(nonsending)` parameter or converted to a `nonisolated(nonsending)` type, its isolation was inferred from the parent context instead of being directly set to `nonisolated(nonsending)`. The difference in isolation wasn’t observable by callers until Swift 6.3.2, which introduced a bug fix for an actor hop optimization that previously didn’t work when a `nonisolated(nonsending)` function value came from a parameter position.
 
@@ -125,9 +125,9 @@ Xcode 26.5 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, wat
    }
   ```
 
-##### Testing
+### Testing
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Tests fail to run on iOS 15 simulators  (173337319) (FB22333623)
 

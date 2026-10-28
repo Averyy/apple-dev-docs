@@ -5,89 +5,89 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 14 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 14. The SDK comes bundled with Xcode 12. For information on the compatibility requirements for Xcode 12, see [Xcode 12 Release Notes](../Xcode-Release-Notes/xcode-12-release-notes.md).
 
-##### General
+### General
 
-###### Known Issues
+#### Known Issues
 
 > ❗ **Important**: Updating to iOS & iPadOS 14 from previous versions of iOS & iPadOS might take significantly longer than expected. Data loss could occur if the update is interrupted. (59101197)
 
 - macOS Big Sur 11 beta 6 or Xcode 12 might be required to sync or update devices running iOS & iPadOS 14 or later.
 - macOS Big Sur 11 beta 6 is required to use the restore images for iOS & iPadOS 14 or later.
 
-##### App Clips
+### App Clips
 
-###### New Features
+#### New Features
 
 - You can now use Settings > Developer Settings to test an App Clip card. (64787288)
 
-##### App Store
+### App Store
 
-###### Known Issues
+#### Known Issues
 
 - Avoid calling the [`presentCodeRedemptionSheet()`](../StoreKit/skpaymentqueue/presentcoderedemptionsheet%28%29.md) API until you’re able to create supported codes. (59351258)
 
-###### New Features
+#### New Features
 
 - [`SKOverlay`](../StoreKit/skoverlay.md) enables downloading an app without having to leave the current app. The overlay can also be tapped to view the app in the App Store. In an App Clip, `SKOverlay` enables users to download the corresponding full app from within the App Clip. (56886149)
 - You can now manage subscriptions, test upgrades, downgrades, and cancellations, as well as reset the introductory offer eligibility for a test account, by tapping on your sandbox account in Settings. (57248908)
 - The `userInfo` parameter can now be passed to Account Authentication Modification Extensions during in-app upgrades. (64128404)
 
-##### AVFoundation
+### AVFoundation
 
-###### New Features
+#### New Features
 
 - A new feature in `AVAudioSession` allows clients to request stereo polar patterns from the built-in mic. Clients choosing a stereo polar pattern must call a new method of `AVAudioSession` to specify the stereo input orientation. For more information, see [`AVAudioSession`](../AVFAudio/avaudiosession.md) (58584572)
 
-##### Core Haptics
+### Core Haptics
 
-###### Known Issues
+#### Known Issues
 
 - [`CHHapticEngine`](../CoreHaptics/chhapticengine.md) vended through the Game Controller framework ([`GCDeviceHaptics`](../GameController/gcdevicehaptics.md)) don’t support [`CHHapticAdvancedPatternPlayer`](../CoreHaptics/chhapticadvancedpatternplayer.md) and an error is returned on advanced player creation.
 - [`audioCustom`](../CoreHaptics/chhapticevent/eventtype/audiocustom.md) and [`audioContinuous`](../CoreHaptics/chhapticevent/eventtype/audiocontinuous.md) events sent to [`CHHapticEngine`](../CoreHaptics/chhapticengine.md) vended through the Game Controller framework ([`GCDeviceHaptics`](../GameController/gcdevicehaptics.md)) are silently ignored. (65163373)
 - The creation of [`CHHapticEngine`](../CoreHaptics/chhapticengine.md) via class initializers is available only in iOS. For other platforms, access these engines via [`GCController`](../GameController/gccontroller.md). (65481931)
 
-##### Core ML
+### Core ML
 
-###### Deprecations
+#### Deprecations
 
 - The default initializer on the auto-generated model interface has been deprecated in favor of `init(configuration:)`. Use `init(configuration:)` or the newly introduced `.load()` method and handle model load errors as appropriate. (64432588)
 
-##### Fonts
+### Fonts
 
-###### Known Issues
+#### Known Issues
 
 - Beginning in iOS & iPadOS 14, fonts installed using configuration profiles are only available to apps supporting the font APIs and entitlements introduced in iOS & iPadOS 13. If your app provides a custom font-selection interface, it can no longer access fonts installed via configuration profiles. For reference, see the WWDC 2019 Session [Font Management and Text Scaling](https://developer.apple.com/videos/play/wwdc2019/227/) (55317428)
 
-##### HealthKit
+### HealthKit
 
-###### New Features
+#### New Features
 
 - New data types are available to track mobility metrics including walking speed, step length, double-support percentage, and more. (56387364)
 - [`HKElectrocardiogram`](../HealthKit/hkelectrocardiogram.md) enables reading electrocardiogram voltage data and classifications recorded by Apple Watch. (56396806)
 
-##### Home Screen
+### Home Screen
 
-###### Known Issues
+#### Known Issues
 
 - Spotlight might not appear as expected. (64121178)
 
   **Workaround:** Restart your device.
 
-##### Key-Value Observing
+### Key-Value Observing
 
-###### New Features
+#### New Features
 
 - Key-Value Observation removal facilities now employ deterministic bookkeeping methods. Cases that would have produced hard-to-diagnose crashes, especially those where KVO signals problems accessing deallocated observer pointers or observers associated with incorrect objects, now produce an exception that pinpoints which observed object needs a missed `removeObserver(_:)` call, and by which observers. This exception was previously thrown as ‘best effort’ when KVO could detect the problem; the new deterministic bookkeeping allows it to be thrown for all cases where `removeObserver(_:)` is needed.
 
   The improved determinism also allows improved Swift API handling. Instances of [`NSKeyValueObservation`](../Foundation/nskeyvalueobservation.md), produced by the Swift `NSObject.observe(_:changeHandler:)` method, take advantage of integration with this bookkeeping so they now invalidate automatically when the observed object is released, regardless of how the object implements its KVO behavior. This applies to all usage of this API in macOS 11 Big Sur beta, including on processes built with previous versions of the SDK, and eliminates certain classes of crashes that sometimes required using the legacy API instead. (65051563)
 
-##### Localization
+### Localization
 
-###### New Features
+#### New Features
 
 - Three Simplified Chinese Wubi input methods are now supported: Wubi 86, Wubi 98, and Wubi New Century. (56277474)
 - QuickPath now supports swiping English words on the Simplified Chinese Pinyin keyboard. (56314466)
@@ -95,9 +95,9 @@ The iOS & iPadOS 14 SDK provides support to develop apps for iPhone, iPad, and i
 - CarPlay keyboard support has been added for over 100 additional languages. (56791047)
 - Irish Gaelic and Norwegian Nynorsk keyboards now support Auto-Correction. (53156919, 48183197)
 
-##### Logging
+### Logging
 
-###### New Features
+#### New Features
 
 - New APIs are available for using `os_log` from Swift as part of the framework `os`:
 
@@ -108,49 +108,49 @@ The iOS & iPadOS 14 SDK provides support to develop apps for iPhone, iPad, and i
 
   **Note:** The new APIs can’t be back deployed; however, the existing `os_log` API remains available for back deployment. (22539144)
 
-##### Maps
+### Maps
 
-###### Known Issues
+#### Known Issues
 
 - After updating to iOS & iPadOS 14 beta 2 or later, user data, such as Favorites, Collections, and Recents no longer syncs with devices running earlier versions of iOS & iPadOS. (65005848)
 
-##### Networking
+### Networking
 
-###### New Features
+#### New Features
 
 - Experimental HTTP/3 support can be enabled in Safari Settings > Advanced > Experimental Features, and enabled system-wide in Developer settings. (62969220)
 
-##### RealityKit
+### RealityKit
 
-###### New Features
+#### New Features
 
 - To properly render an augmented reality [`Scene`](../RealityKit/scene.md) with the post-processing effects available in [RealityKit](../RealityKit/RealityKit.md), the pipeline now writes depth information when rendering translucent materials. This makes the order that meshes are drawn more impactful for the final image. To properly author content for this pipeline, break up big meshes into smaller parts, especially when the meshes are intertwined. (66535399)
 
-##### Siri
+### Siri
 
-###### New Features
+#### New Features
 
 You can use `INMediaUserContext`, [Core Spotlight](../CoreSpotlight/CoreSpotlight.md), and Intents to improve media interactions and App Selection. For more information, see [Improving Siri Media Interactions and App Selection](../SiriKit/improving-siri-media-interactions-and-app-selection.md). (67026608)
 
-##### Safari and WebKit
+### Safari and WebKit
 
-###### New Features
+#### New Features
 
 - Webpage Translation is now available in the U.S. and Canada. Supported languages include English, Spanish, Simplified Chinese, French, German, Russian, and Brazilian Portuguese. Safari will automatically detect if translation is available based on your Preferred Languages list. (64437861)
 
-##### SKAdNetwork
+### SKAdNetwork
 
-###### Known Issues
+#### Known Issues
 
 - To receive a postback from devices running iOS 14 or later, generate signatures using signature version 2.0 or later. Version 1.0 signatures don’t result in a postback on iOS 14 and later, even if the advertised app is installed and launched. (71474331)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The `source-app-id` and `conversion-value` parameter values are now available in the version 2 install validation postback that the device sends to your ad network’s registered postback URL.
 
-##### SwiftUI
+### SwiftUI
 
-###### Known Issues
+#### Known Issues
 
 - The [`KeyboardShortcut`](../SwiftUI/keyboardshortcut.md) modifier and [`commands(content:)`](../SwiftUI/scene/commands%28content%29.md) aren’t currently functional. (65704705)
 - Rebuilding against the iOS 14 SDK will modify instances of [`custom(_:size:)`](../SwiftUI/font/custom%28_,size%29.md) to scale with dynamic type. To create a font which doesn’t scale with dynamic type, use [`custom(_:fixedSize:)`](../SwiftUI/font/custom%28_,fixedsize%29.md). (51463566)
@@ -158,7 +158,7 @@ You can use `INMediaUserContext`, [Core Spotlight](../CoreSpotlight/CoreSpotligh
 
   **Workaround:** Apply a frame modifier.
 
-###### New Features
+#### New Features
 
 - The `body` property is now implicitly a [`ViewBuilder`](../SwiftUI/viewbuilder.md) and [`body`](../SwiftUI/app/body-swift.property.md) is now implicitly a [`SceneBuilder`](../SwiftUI/scenebuilder.md). (63606493)
 - [`Color`](../SwiftUI/color.md) can be converted to and from [`cgColor`](../UIKit/uicolor/cgcolor.md). The [`ColorPicker`](../SwiftUI/colorpicker.md) can also now be configured with a binding to a `CGColor`. (56939085)
@@ -266,13 +266,13 @@ You can use `INMediaUserContext`, [Core Spotlight](../CoreSpotlight/CoreSpotligh
   ```
 - Use the new `.fileMover()` modifier to present a system interface for moving one or more existing files to a new location. (66182201)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Rebuilding against the iOS 14 SDK will change uses of [`GeometryReader`](../SwiftUI/geometryreader.md) to reliably top-leading align the views inside the `GeometryReader`. This was the previous behavior, except when it was not possible to detect a single static view inside the `GeometryReader`. (59722992)
 
-##### Third-Party Apps
+### Third-Party Apps
 
-###### Known Issues
+#### Known Issues
 
 - Apps using JSONKit might quit unexpectedly on launch. Some forks of JSONKit hardcode private, pointer-representation details, which are subject to change. (60290929)
 
@@ -280,27 +280,27 @@ You can use `INMediaUserContext`, [Core Spotlight](../CoreSpotlight/CoreSpotligh
 - `fstab` has been removed. You can no longer use Filesystem contents outside of an app’s sandbox for validation. (61098152)
 - Apps using the NativeScript framework might quit unexpectedly on launch. NativeScript performs an unsafe operation to determine if an arbitrary pointer is an Objective-C object pointer. You can temporarily resolve this issue by using `object_getClass` instead of reading the `isa` directly; however, update this code to avoid checking whether arbitrary pointers are Objective-C object pointers. (62913064)
 
-##### Vision
+### Vision
 
-###### Deprecations
+#### Deprecations
 
 - The `VNIdentifiedPointsObservation` class is deprecated. Use [`VNRecognizedPointsObservation`](../Vision/vnrecognizedpointsobservation.md) instances instead. (63690311)
 
-##### Voice Control
+### Voice Control
 
-###### New Features
+#### New Features
 
 - Voice Control is now available in English (United Kingdom) and English (India). (55904557)
 
-##### Wallet
+### Wallet
 
-###### Known Issues
+#### Known Issues
 
 - [`isPassLibraryAvailable()`](../PassKit/pkpasslibrary/ispasslibraryavailable%28%29.md) doesn’t ensure uniform availability of pass library functionality between platforms and devices. (60697880)
 
   **Workaround:** Call a more specific API to check available functionality, such as [`canAddPasses()`](../PassKit/pkaddpassesviewcontroller/canaddpasses%28%29.md).
 
-###### New Features
+#### New Features
 
 - Apple Pay support is now available to Mac Catalyst apps. Two methods have been added to existing delegate protocols. No changes are required for iPad apps, but one or both of these methods must be implemented when building for Catalyst. (64187739)
 
@@ -321,15 +321,15 @@ You can use `INMediaUserContext`, [Core Spotlight](../CoreSpotlight/CoreSpotligh
   @end
   ```
 
-##### Weather
+### Weather
 
-###### New Features
+#### New Features
 
 - Government alerts about certain severe weather events including tornados, winter storms, flash floods, and more are now available in the U.S., Europe, Japan, Canada, and Australia. (58931042)
 
-##### Widgets
+### Widgets
 
-###### Known Issues
+#### Known Issues
 
 - When the parent app of a widget has been granted Selected Photos access, an alert might appear each time the widget runs. (66398732)
 

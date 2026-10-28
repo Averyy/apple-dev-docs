@@ -19,7 +19,7 @@ class WebResource
 @interface WebResource : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the [`init(data:url:mimeType:textEncodingName:frameName:)`](./webresource/init%28data,url,mimetype,textencodingname,framename%29-914h4.md) method to initialize a newly created `WebResource` object. Use the other methods in this class to get the properties of a `WebResource` object.
 

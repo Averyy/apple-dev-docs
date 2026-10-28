@@ -25,7 +25,7 @@ protocol SCNSceneExportDelegate : NSObjectProtocol
 @protocol SCNSceneExportDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 When you call a [`SCNScene`](./scnscene.md) object’s [`write(to:options:delegate:progressHandler:)`](./scnscene/write%28to,options,delegate,progresshandler%29.md) method to export the scene’s content to a file, you can optionally specify a delegate object to receive these messages.
 

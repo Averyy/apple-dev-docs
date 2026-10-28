@@ -25,7 +25,7 @@ var decimalValue: Decimal { get }
 @property (readonly) NSDecimal decimalValue;
 ```
 
-#### Discussion
+## Discussion
 
 The [`Decimal`](../decimal.md) value isn’t guaranteed to be exact for `float` and `double` values.
 

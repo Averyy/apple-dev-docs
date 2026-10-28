@@ -27,7 +27,7 @@ class BGTask
 
 - [Performing long-running tasks on iOS and iPadOS](./performing-long-running-tasks-on-ios-and-ipados.md)
 
-#### Overview
+## Overview
 
 With the exception of [`BGContinuedProcessingTask`](./bgcontinuedprocessingtask.md), which your app executes in the foreground, the system executes [`BGTask`](./bgtask.md) subclasses on behalf of your app, while your app is in the background.
 

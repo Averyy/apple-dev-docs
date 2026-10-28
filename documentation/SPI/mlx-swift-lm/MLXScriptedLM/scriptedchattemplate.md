@@ -17,7 +17,7 @@ A chat template for scripted tests.
 protocol ScriptedChatTemplate : Sendable
 ```
 
-#### Overview
+## Overview
 
 [`render(messages:tools:additionalContext:)`](./scriptedchattemplate/render%28messages,tools,additionalcontext%29.md) returns strings that the tokenizer encodes one at a time and concatenates. Encoding each string separately keeps a message’s tokens independent of its neighbors, which `ChatSession` prefix reuse depends on. Output is vocabulary-independent.
 

@@ -23,7 +23,7 @@ func ABAddressBookGetPersonCount(_ addressBook: ABAddressBook!) -> CFIndex
 extern CFIndex ABAddressBookGetPersonCount(ABAddressBookRef addressBook);
 ```
 
-#### Return Value
+## Return Value
 
 The number of person records in `addressBook`.
 

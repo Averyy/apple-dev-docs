@@ -12,7 +12,7 @@ Measure and improve the quality of your app’s intelligence-powered features us
 - Mac Catalyst 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 Adding an intelligence-powered feature to your app is quick. Knowing whether it’s performing correctly is harder. A model’s output can vary from run to run, and what counts as a good result is often partly subjective. The Evaluations framework helps you measure the quality of your feature, track it as you change a prompt, and catch regressions before they ship. This sample app shows you how to systematically evaluate how well your intelligent feature performs.
 
@@ -39,7 +39,7 @@ The diagram below shows the evaluation pipeline that this sample builds. A datas
 
 ![A flowchart of the sample’s evaluation pipeline. A dataset of reviews and expected tags feeds the book-tagging feature, which produces generated tags. The tags flow in parallel to code-based evaluators and to a model judge, whose results combine in a metrics aggregator that produces a pass-or-fail report. A dashed loop calibrates the model judge against expert scores.](https://developer.apple.com/tutorials/images/com.apple.evaluations/flowchart@2x.png)
 
-#### Configure the sample code project
+## Configure the sample code project
 
 Before you run the sample code project:
 
@@ -47,7 +47,7 @@ Before you run the sample code project:
 2. Set the developer team for the project target to let Xcode automatically manage the provisioning profile. For more information, see [Set the bundle ID](../Xcode/preparing-your-app-for-distribution.md) and [Assign the project to a team](../Xcode/preparing-your-app-for-distribution.md).
 3. Run the sample on a device or simulator that supports Apple Intelligence and the Foundation Models framework.
 
-#### Generate tags for a review
+## Generate tags for a review
 
 The descriptive-tag feature is in `BookTaggingService`. It asks the on-device model to turn a reader’s review into a small set of descriptive tags. The output type is a [`@Generable`](../FoundationModels/generable.md) struct, and a [`@Guide`](../FoundationModels/guide%28description,_%29.md) constrains the model to generate between three and eight tags:
 
@@ -110,7 +110,7 @@ static let instructions = """
 
 The sections that follow show how the sample measures how well these instructions perform, so you can change them with confidence. Most of them build up the book-tagging evaluation; the final section turns to the search assistant.
 
-#### Create an evaluation dataset
+## Create an evaluation dataset
 
 An evaluation runs a feature against a dataset of samples. In the sample, each [`ModelSample`](./modelsample.md) pairs a prompt that the feature receives with its expected result and measures the actual output against this expected result. `BookTaggingEvaluation` builds its dataset with an [`ArrayLoader`](./arrayloader.md) from the app’s curated `Book.sampleBooks`, using each book’s review as the prompt and the maintainer’s hand-chosen tags as the expected value:
 
@@ -151,7 +151,7 @@ var dataset = ArrayLoader(samples:
 
 Because the sample maintainer wrote both the reviews and the expected tags, this curated set serves as *ground truth*: every sample has a known-good answer to score against. For guidance on categorizing samples and sizing a dataset, see [Designing datasets to test your feature](./designing-evaluation-datasets.md).
 
-#### Define the subject under test
+## Define the subject under test
 
 The *subject* is what an evaluation actually scores. In the sample, `BookTaggingEvaluation` defines the subject by calling the real `BookTaggingService`, so the evaluation tests the same code path that the app ships:
 
@@ -164,7 +164,7 @@ func subject(from sample: ModelSample<BookTags>) async throws -> ModelSubject<Bo
 
 Because the production feature is called rather than a copy, improvements or weaknesses you measure here match the performance that people experience with the two intelligent features in the app: book tagging and natural-language search.
 
-#### Score tags with code
+## Score tags with code
 
 Some qualities that the sample app tests are objective, so using a code-based evaluation is the fastest, most reproducible way to check whether:
 
@@ -221,7 +221,7 @@ var evaluators: Evaluators {
 
 The evaluation above defines three checks: tag count, multiple-word test, and genre check. These checks are cheap and deterministic: they run quickly and always return the same result for the same input. But they cannot tell you whether a tag is subjectively “good.”
 
-#### Judge subjective quality with a model
+## Judge subjective quality with a model
 
 When you need to determine whether a tag describes the book or the reader’s mood, that’s a judgment call, not a rule you can express in code. The sample uses a [`ModelJudgeEvaluator`](./modeljudgeevaluator.md) to score those qualities by asking a model to rate each response on one or more [`ScoreDimension`](./scoredimension.md) values. Each dimension states a focused question and a numeric scale with levels.
 
@@ -278,7 +278,7 @@ ModelJudgeEvaluator(
 
 For the full range of model-judge options, including pairwise comparison and scored examples, see [Scoring with model-judge evaluators](./scoring-with-model-as-judge-evaluators.md). For strategies that make a model judge reliable, see [Designing effective model-judge evaluators](./designing-effective-model-judges.md).
 
-#### Run the evaluation and read results
+## Run the evaluation and read results
 
 The sample’s evaluation aggregates its metrics by building up a [`MetricsAggregator`](./metricsaggregator.md) in `aggregateMetrics(using:)`. Grouping the code-based heuristics separately from the model-judge quality scores keeps the results organized logically:
 
@@ -313,7 +313,7 @@ In the sample’s evaluation, the threshold for the `tagCount` metric requires a
 
 ![The Xcode test report summary for the Book Tracker tag evaluation. Metric cards report the code-based heuristics, including Has Genre Tag Ratio, Tag Count Ratio, and the tag-total average, variance, and standard deviation, alongside the model-judge Relevance and Usefulness averages.](https://developer.apple.com/tutorials/images/com.apple.evaluations/heuristics-and-quality-metric-groups@2x.png)
 
-#### Scale coverage with synthetic data
+## Scale coverage with synthetic data
 
 A small dataset can demonstrate that the intelligence-powered feature of generating descriptive tags works as expected on familiar titles, but it’s not large enough to produce statistically valid results. In the sample, the `BookSampleGenerator` command-line tool expands the curated set toward a target of 100 samples with a [`SampleGenerator`](./samplegenerator.md). It seeds generation with the curated books and rejects any sample that breaks the rules. For this offline step, it uses the more powerful [`PrivateCloudComputeLanguageModel`](../FoundationModels/privatecloudcomputelanguagemodel.md) instead of the on-device model.
 
@@ -340,7 +340,7 @@ for try await sample in generator.run() {
 
 The tool writes the expanded set to `synthetic_book_samples.json`, and `SyntheticBookTaggingEvaluation` loads it with a [`JSONLoader`](./jsonloader.md) to run the same metrics against the larger dataset. For the validation and sampling options, see [Generating synthetic datasets](./generating-synthetic-evaluation-datasets.md).
 
-#### Calibrate the model judge against an expert
+## Calibrate the model judge against an expert
 
 You can improve the quality of a model-judge’s scores for subjective quality evaluation by calibrating the scoring against a human expert. In the sample, `BookTagJudgmentCalibration` checks how closely the model judge agrees with a set of human scores. The `DatasetExtractor` tool exports a real evaluation run to JSON, an expert scores those same tag sets by hand, and the calibration evaluation re-judges them and compares the two sets of scores.
 
@@ -440,7 +440,7 @@ aggregator.group("Relevance") { group in
 
 In the sample, the test requires a Cohen’s kappa above 0.6 on both the relevance and usefulness dimensions. If the test fails, the next step is to revise the model-judge’s instructions, often by adding a worked example that covers the disagreement, and run again until the model judge aligns with human scoring.
 
-#### Evaluate the assistant’s tool calls
+## Evaluate the assistant’s tool calls
 
 The intelligence-powered search assistant feature answers a person’s question by calling tools rather than returning text, so the quality of its output is based on:
 

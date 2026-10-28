@@ -5,11 +5,11 @@
 
 Display a preview of an upcoming media item at the conclusion of the currently playing media item.
 
-#### Overview
+## Overview
 
 Media apps presenting serialized content, such as a TV show, often display a preview of the next episode in the series when you finish watching the current one. The user interface for this preview usually contains artwork and information about the proposed content. It also includes options for the user to either watch the next episode or return to the main menu. You add this functionality to your app using AVKit’s content proposals.
 
-#### Create a content proposal
+## Create a content proposal
 
 You create a content proposal using the [`AVContentProposal`](./avcontentproposal.md) class. This type models the data about the proposed content, such as its title, preview image, metadata, and content URL, and the time at which to present the proposal. You create and configure a content proposal instance as shown in the following code:
 
@@ -45,7 +45,7 @@ private func makeMetadataItem(_ identifier: AVMetadataIdentifier, value: Any) ->
 }
 ```
 
-#### Create the content proposal’s user interface
+## Create the content proposal’s user interface
 
 In addition to defining your content proposal’s data, you also need to create an interface to present this data to the user. You create this interface by subclassing the AVKit framework’s [`AVContentProposalViewController`](./avcontentproposalviewcontroller.md) class. At runtime, the system passes your subclass a reference to the current [`AVContentProposal`](./avcontentproposal.md), providing you the data to present. Your user interface should provide visual and descriptive information about the proposed content, and should also include options for the user to accept or reject the proposal.
 
@@ -63,7 +63,7 @@ When the system presents the proposal, the player’s view automatically animate
 
 > **Note**:  To lay out your content relative to the newly sized and positioned video frame, you use the [`UILayoutGuide`](../UIKit/uilayoutguide.md) provided by the view controller’s [`playerLayoutGuide`](./avcontentproposalviewcontroller/playerlayoutguide.md) property.
 
-#### Add controls to the content proposal
+## Add controls to the content proposal
 
 Your presented user interface should also provide controls so the user can accept or reject the proposal. The event handlers for these actions should call the controller’s [`dismissContentProposal(for:animated:completion:)`](./avcontentproposalviewcontroller/dismisscontentproposal%28for,animated,completion%29.md) method, indicating the user’s choice.
 
@@ -79,7 +79,7 @@ Your presented user interface should also provide controls so the user can accep
 }
 ```
 
-#### Make the content proposal eligible to be presented
+## Make the content proposal eligible to be presented
 
 To make your content proposal eligible for the system to present, set it as the [`nextContentProposal`](../AVFoundation/avplayeritem/nextcontentproposal.md) property value of the current [`AVPlayerItem`](../AVFoundation/avplayeritem.md). The following example shows how to configure this property value in a playback app that manages a queue of `Video` objects, which is a custom value type that models the data of an individual video in the queue. The example code creates the required playback objects, creates a new [`AVContentProposal`](./avcontentproposal.md) for the next video in the queue, and sets the video as the player item’s [`nextContentProposal`](../AVFoundation/avplayeritem/nextcontentproposal.md).
 
@@ -118,7 +118,7 @@ func makeContentProposal(for video: Video?) -> AVContentProposal? {
 }
 ```
 
-#### Present the content proposal
+## Present the content proposal
 
 With the content proposal set as the player item’s [`nextContentProposal`](../AVFoundation/avplayeritem/nextcontentproposal.md), the next step is to implement the methods of the [`AVPlayerViewControllerDelegate`](./avplayerviewcontrollerdelegate.md) protocol. You use these methods to define how the system presents the content proposal, as well as to handle the acceptance or rejection of the proposed content.
 

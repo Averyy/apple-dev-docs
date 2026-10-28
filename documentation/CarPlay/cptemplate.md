@@ -22,7 +22,7 @@ class CPTemplate
 @interface CPTemplate : NSObject
 ```
 
-#### Overview
+## Overview
 
 `CPTemplate` is an abstract base class for defining CarPlay user interface templates. It provides the common functionality present in all templates.
 

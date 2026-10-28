@@ -16,7 +16,7 @@ Sets the pixel format for the layer’s tracking areas textures to the specified
 void cp_layer_renderer_configuration_set_tracking_areas_format(cp_layer_renderer_configuration_t configuration, MTLPixelFormat tracking_areas_format);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to modify the configuration details for your layer. Call the [`cp_layer_renderer_capabilities_supported_tracking_areas_format`](./cp_layer_renderer_capabilities_supported_tracking_areas_format.md) function to determine which pixel formats the layer’s tracking areas textures supports.
 

@@ -25,7 +25,7 @@ case roundHalfAwayFromZero
 kCMTimeRoundingMethod_RoundHalfAwayFromZero
 ```
 
-#### Discussion
+## Discussion
 
 This method rounds toward zero if the absolute value is less than `0.5`, and away from `0` if it’s greater than or equal to `0.5`.
 

@@ -22,7 +22,7 @@ var allowsAccessibilityVoiceOver: Bool { get set }
 @property (nonatomic, assign) BOOL allowsAccessibilityVoiceOver;
 ```
 
-#### Discussion
+## Discussion
 
 Users can enable VoiceOver in the Settings app (Accessibility > VoiceOver) to receive spoken descriptions of on-screen elements and gestures for navigating the interface. An assessment session **does not** disable VoiceOver by default, but you can disable it by setting [`allowsAccessibilityVoiceOver`](./allowsaccessibilityvoiceover.md) to `NO` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

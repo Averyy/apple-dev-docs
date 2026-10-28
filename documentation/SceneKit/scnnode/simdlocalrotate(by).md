@@ -25,7 +25,7 @@ func simdLocalRotate(by rotation: simd_quatf)
 - (void) simdLocalRotateBy:(simd_quatf) rotation;
 ```
 
-#### Discussion
+## Discussion
 
 This method rotates the node according to its [`simdPivot`](./simdpivot.md) transform.
 

@@ -18,7 +18,7 @@ var FFCAP_ET_TRIANGLE: Int { get }
 FFCAP_ET_TRIANGLE
 ```
 
-#### Discussion
+## Discussion
 
 The effect represents a triangle force effect.
 

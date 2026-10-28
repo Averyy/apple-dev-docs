@@ -21,7 +21,7 @@ The bilinear interpolation mode where values are computed using bilinear interpo
 case bilinear(alignCorners: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 `alignCorners` is a Boolean indicating whether to align the corners of the upscaling grid to the centre of the scaling dimensions rather than the edges.
 

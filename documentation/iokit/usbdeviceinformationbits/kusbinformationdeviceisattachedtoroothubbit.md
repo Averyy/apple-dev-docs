@@ -14,7 +14,7 @@
 kUSBInformationDeviceIsAttachedToRootHubBit = 1
 ```
 
-#### Discussion
+## Discussion
 
 The USB device is directly attached to the root hub
 

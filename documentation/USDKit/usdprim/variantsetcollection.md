@@ -20,7 +20,7 @@ Manages variant sets on a prim.
 struct VariantSetCollection
 ```
 
-#### Overview
+## Overview
 
 Variants provide a way to package multiple variations of scene data within a single asset. A prim can have multiple variant sets, each containing named variants that can be selected at runtime.
 

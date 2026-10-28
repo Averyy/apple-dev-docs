@@ -19,11 +19,11 @@ func stringRepresentation() -> String!
 - (NSString *) stringRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 The string representation of the receiver.
 
-#### Discussion
+## Discussion
 
 The coercion of nonstring objects is dependent on the scripting environment.
 

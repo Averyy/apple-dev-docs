@@ -22,7 +22,7 @@ nonisolated
 func persistentSystemOverlays(_ preferredVisibility: Visibility) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to influence the appearance of system overlays in your app. The behavior varies by platform.
 

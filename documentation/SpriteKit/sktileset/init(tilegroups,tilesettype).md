@@ -25,7 +25,7 @@ init(tileGroups: [SKTileGroup], tileSetType: SKTileSetType)
 - (instancetype) initWithTileGroups:(NSArray<SKTileGroup *> *) tileGroups tileSetType:(SKTileSetType) tileSetType;
 ```
 
-#### Return Value
+## Return Value
 
 A new tile set.
 

@@ -20,7 +20,7 @@ Checks whether the asset pack with the specified identifier is available locally
 - (BOOL) assetPackIsAvailableLocallyWithIdentifier:(NSString *) assetPackIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 Whether the asset pack is available locally.
 

@@ -25,7 +25,7 @@ func resume()
 - (void) resume;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to start a task for the first time or resumes a task that has paused. Tasks pause when they notify your app’s progress handlers, such as those you provide to an [`MLUpdateProgressHandlers`](../mlupdateprogresshandlers.md) instance.
 

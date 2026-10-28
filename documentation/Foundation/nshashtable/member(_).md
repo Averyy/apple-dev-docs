@@ -25,11 +25,11 @@ func member(_ object: ObjectType?) -> ObjectType?
 - (ObjectType) member:(ObjectType) object;
 ```
 
-#### Return Value
+## Return Value
 
 If `object` is a member of the hash table, returns `object`, otherwise returns `nil`.
 
-#### Discussion
+## Discussion
 
 The equality test used depends on the personality option selected. For instance, choosing the [`objectPersonality`](../nspointerfunctions/options/objectpersonality.md) option will use `isEqual:` to determine equality. See [`NSPointerFunctions.Options`](../nspointerfunctions/options.md) for more information on personality options and their corresponding equality tests.
 

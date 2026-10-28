@@ -21,7 +21,7 @@ Returns a new quaternion from a Spatial rotation.
 init(_ rotation: Rotation3DFloat)
 ```
 
-#### Discussion
+## Discussion
 
 Values rounded to a representable value, if necessary.
 

@@ -25,7 +25,7 @@ let kCGImageSourceThumbnailMaxPixelSize: CFString
 extern CFStringRef const kCGImageSourceThumbnailMaxPixelSize;
 ```
 
-#### Discussion
+## Discussion
 
 If this key is not specified, the width and height of a thumbnail is not limited and thumbnails may be as big as the image itself. If present, this key must be a CFNumber value. This key can be provided in the options dictionary that you pass to the function [`CGImageSourceCreateThumbnailAtIndex(_:_:_:)`](./cgimagesourcecreatethumbnailatindex%28_,_,_%29.md).
 

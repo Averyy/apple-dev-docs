@@ -20,11 +20,11 @@ object Header
 - [Adding a Scene to a Chapter or a Section Header](../AppleNews/adding-a-scene-to-a-chapter-or-a-section-header.md)
 - [Nesting Components in an Article](../AppleNews/nesting-components-in-an-article.md)
 
-#### Discussion
+## Discussion
 
 A header is a structural component used to define the top area of an article or the top part of a [`Section`](./section.md) or [`Chapter`](./chapter.md) component. A header can contain child components—such as a [`Title`](./title.md) or [`Heading`](./heading.md)—and is often used to layer titles and headings over a background image. (You specify the image in the `style` property with an [`ImageFill`](./imagefill.md) style.) The minimum size of a header component is determined by the size of its child components.
 
-##### Example
+### Example
 
 ```json
 {

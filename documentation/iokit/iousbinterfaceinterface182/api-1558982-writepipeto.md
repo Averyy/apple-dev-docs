@@ -16,7 +16,7 @@ Performs an asynchronous write on a **BULK OUT** pipe, with specified timeout va
 IOReturn (*WritePipeTO)(void *self, UInt8 pipeRef, void *buf, UInt32 size, UInt32 noDataTimeout, UInt32 completionTimeout);
 ```
 
-#### Discussion
+## Discussion
 
 The interface must be open for the pipe to exist.
 

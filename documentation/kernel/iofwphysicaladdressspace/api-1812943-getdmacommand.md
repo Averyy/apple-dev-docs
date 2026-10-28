@@ -12,7 +12,7 @@ inline IODMACommand * getDMACommand(
  none. ) ;
 ```
 
-#### Return Value
+## Return Value
 
 return previously assigned IODMACommand, null if not initialized
 

@@ -24,7 +24,7 @@ class AVAudioUnitMIDIInstrument
 @interface AVAudioUnitMIDIInstrument : AVAudioUnit
 ```
 
-#### Overview
+## Overview
 
 Use an [`AVAudioUnitMIDIInstrument`](./avaudiounitmidiinstrument.md) in a chain that processes real-time (live) input and has the general concept of music events; for example, notes.
 

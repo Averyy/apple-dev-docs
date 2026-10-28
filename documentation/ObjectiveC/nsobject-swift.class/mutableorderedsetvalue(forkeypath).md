@@ -25,11 +25,11 @@ func mutableOrderedSetValue(forKeyPath keyPath: String) -> NSMutableOrderedSet
 - (NSMutableOrderedSet *) mutableOrderedSetValueForKeyPath:(NSString *) keyPath;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable ordered set that provides read-write access to the uniquing to-many relationship specified by `keyPath`.
 
-#### Discussion
+## Discussion
 
 See [`mutableOrderedSetValue(forKey:)`](./mutableorderedsetvalue%28forkey%29.md) for additional details.
 

@@ -20,7 +20,7 @@ init(enumCode enumerator: OSType)
 + (NSAppleEventDescriptor *) descriptorWithEnumCode:(OSType) enumerator;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor with the specified enumerator data type value, or `nil` if an error occurs.
 

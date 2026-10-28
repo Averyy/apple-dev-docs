@@ -14,7 +14,7 @@
 kIOHIDElementCollectionTypeUsageModifier
 ```
 
-#### Discussion
+## Discussion
 
 Modifies the meaning of the usage attached to the encompassing collection.
 

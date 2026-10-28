@@ -21,7 +21,7 @@ The identifier’s timescale is the number of uniquely identifiable timestamps i
 var timescale: Int
 ```
 
-#### Discussion
+## Discussion
 
 For example an audio file sampled at 44,100 Hz should have a timescale value of 44,100 (or an integer multiple of that) so that every sample has a unique timestamp.
 

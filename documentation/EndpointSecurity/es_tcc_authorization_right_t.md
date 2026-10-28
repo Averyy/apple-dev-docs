@@ -20,7 +20,7 @@ struct es_tcc_authorization_right_t
 typedef enum { ... } es_tcc_authorization_right_t;
 ```
 
-#### Overview
+## Overview
 
 Represents the type of authorization permission an application has to a TCC Service.
 

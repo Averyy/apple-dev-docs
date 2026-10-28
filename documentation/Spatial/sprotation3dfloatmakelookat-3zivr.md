@@ -19,11 +19,11 @@
 static SPRotation3DFloat SPRotation3DFloatMakeLookAt(SPVector3DFloat forward, SPVector3DFloat up);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation stucture.
 
-#### Discussion
+## Discussion
 
 Returns a rotation with the specified forward and up vectors.
 

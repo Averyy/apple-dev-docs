@@ -19,7 +19,7 @@ class NSMenuItem
 @interface NSMenuItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`NSMenuItem`](./nsmenuitem.md) class includes some private functionality needed to maintain binary compatibility with other components of Cocoa. Because of this fact, you can’t replace the [`NSMenuItem`](./nsmenuitem.md) class with a different class, but you can subclass it if necessary.
 

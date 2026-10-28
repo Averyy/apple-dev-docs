@@ -5,7 +5,7 @@
 
 Enable your node to respond to user input, like touches or mouse clicks.
 
-#### Overview
+## Overview
 
 `SKNode` subclasses [`UIResponder`](../UIKit/uiresponder.md) in iOS and tvOS, and [`NSResponder`](../AppKit/nsresponder.md) in macOS, allowing nodes to respond to user interaction events such as touches and mouse movements.
 
@@ -14,7 +14,7 @@ There are two strategies you can adopt when supporting user interaction.
 - Enable user interaction on a single catch-all node, for example the scene, and calculate the child node or nodes that the user is interacting with by doing custom hit tests.
 - Enable user interaction on every node you want the user to interact with, and subclass them to implement their responder functions.
 
-##### Catch All User Interaction by Using a Parent Node
+### Catch All User Interaction by Using a Parent Node
 
 Listing 1 shows an example of how to handle all user interaction on a parent node–in this case, the scene itself. The `TouchScene` class subclasses [`SKScene`](./skscene.md) and overrides its [`isUserInteractionEnabled`](./sknode/isuserinteractionenabled.md) to return `true`.
 
@@ -73,7 +73,7 @@ class TouchScene: SKScene {
 }
 ```
 
-##### Enable User Interaction on All Nodes
+### Enable User Interaction on All Nodes
 
 Listing 3 shows an example of supporting user interaction on individual nodes in your scene. Instances of `TouchSpriteNode` are added as children of a standard scene and user interaction is handled by each independently.
 
@@ -99,11 +99,11 @@ class TouchSpriteNode: SKSpriteNode {
 }
 ```
 
-##### Handle User Interaction on Hidden Nodes by Using Alpha
+### Handle User Interaction on Hidden Nodes by Using Alpha
 
 Translucent nodes–those with an [`alpha`](./sknode/alpha.md) of less than `1` but greater than `0`–still receive user interactions. You can set a node’s `alpha` to [`leastNonzeroMagnitude`](../Swift/float/leastnonzeromagnitude.md) to make it effectively transparent and yet still respond to touches or mouse movements, although giving it a color of `clear` has the same effect.
 
-##### Review the Bounds of Node User Interaction
+### Review the Bounds of Node User Interaction
 
 User interaction is based on the bounding box of the node. Sprite nodes containing textures with transparent areas or shape nodes with non-rectangular shapes will still report touches and mouse interactions even if the interaction is over a transparent part of their content.
 

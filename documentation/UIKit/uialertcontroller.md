@@ -28,7 +28,7 @@ class UIAlertController
 
 - [Getting the user’s attention with alerts and action sheets](./getting-the-user-s-attention-with-alerts-and-action-sheets.md)
 
-#### Overview
+## Overview
 
 Use this class to configure alerts and action sheets with the message that you want to display and the actions from which to choose. After configuring the alert controller with the actions and style you want, present it using the [`present(_:animated:completion:)`](./uiviewcontroller/present%28_,animated,completion%29.md) method. UIKit displays alerts and action sheets modally over your app’s content.
 

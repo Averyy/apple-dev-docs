@@ -25,11 +25,11 @@ convenience init?(contentsOf url: URL)
 - (NSDictionary<id,id> *) initWithContentsOfURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized dictionary—which might be different than the original receiver—that contains the dictionary at `url`, or `nil` if there is an error or if the contents of the resource are an invalid representation of a dictionary.
 
-#### Discussion
+## Discussion
 
 The dictionary representation in the file identified by `url` must contain only property list objects (`NSString`, `NSData`, `NSDate`, `NSNumber`, `NSArray`, or `NSDictionary` objects). For more details, see [Property List Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html#//apple_ref/doc/uid/10000048i). The objects contained by this dictionary are immutable, even if the dictionary is mutable.
 

@@ -12,7 +12,7 @@ virtual void setRunEraseHead(
  boolrunEraseHead);
 ```
 
-#### Overview
+## Overview
 
 By default, output audio engines run the erase head and input audio engines do not. This method can be called after setDirection() is called in order to change the default behavior.
 

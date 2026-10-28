@@ -22,7 +22,7 @@ Sets the name of the action associated with the Undo or Redo command using a loc
 @preconcurrency final func setActionName(_ actionNameResource: LocalizedStringResource?)
 ```
 
-#### Discussion
+## Discussion
 
 This version of `setActionName(_:)` takes a [`LocalizedStringResource`](../localizedstringresource.md). When using this version, [`undoActionName`](./undoactionname.md), [`redoActionName`](./redoactionname.md), [`undoMenuItemTitle`](./undomenuitemtitle.md), and [`redoMenuItemTitle`](./redomenuitemtitle.md) interpret the provided resource using the current locale.
 

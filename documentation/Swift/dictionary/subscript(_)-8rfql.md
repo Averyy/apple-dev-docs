@@ -23,11 +23,11 @@ subscript(key: Key) -> Value? { get set }
 
 Available when `Key` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The value associated with `key` if `key` is in the dictionary; otherwise, `nil`.
 
-#### Overview
+## Overview
 
 This *key-based* subscript returns the value for the given key if the key is found in the dictionary, or `nil` if the key is not found.
 

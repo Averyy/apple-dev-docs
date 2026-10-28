@@ -20,7 +20,7 @@ var test: NSScriptWhoseTest { get set }
 @property (retain) NSScriptWhoseTest * test;
 ```
 
-#### Return Value
+## Return Value
 
 The test object encapsulated by the receiver.
 

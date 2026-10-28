@@ -25,7 +25,7 @@ case preDynamics
 SCNParticleModifierStagePreDynamics
 ```
 
-#### Discussion
+## Discussion
 
 Insert a modifier block at this stage to alter the inputs to the dynamics simulation. For example, if you modify the velocities of particles during this stage, SceneKit computes new positions for each particle based on its modified velocity.
 

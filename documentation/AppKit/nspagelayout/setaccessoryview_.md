@@ -17,7 +17,7 @@ Adds a view object to the page layout panel.
 - (void) setAccessoryView:(NSView *) accessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 Invoke this method to add a custom view containing your controls. `aView` is added to the receiver’s Settings popup menu with your application’s name as its menu item. The receiver is automatically resized to accommodate `aView`. This method can be invoked repeatedly to change the accessory view depending on the situation. If `aView` is `nil`, then the receiver’s current accessory view, if any, is removed.
 

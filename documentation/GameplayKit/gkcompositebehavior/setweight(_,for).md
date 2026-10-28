@@ -24,7 +24,7 @@ func setWeight(_ weight: Float, for behavior: GKBehavior)
 - (void) setWeight:(float) weight forBehavior:(GKBehavior *) behavior;
 ```
 
-#### Discussion
+## Discussion
 
 When an agent evaluates a composite behavior, it examines all goals across all of the individual behaviors it contains. For each goal, the agent calculates the change in direction and speed necessary to move toward fulfilling that goal (within the limits of the current time step and the agent’s maximum speed and turn rate). The agent then combines these influences to determine the total change in direction and speed for the current time step.
 

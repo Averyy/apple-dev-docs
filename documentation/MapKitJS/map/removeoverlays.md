@@ -15,7 +15,7 @@ Removes multiple overlays from the map.
 removeOverlays(overlays: Overlay[]): Overlay[];
 ```
 
-#### Return Value
+## Return Value
 
 Returns the array of overlays.
 

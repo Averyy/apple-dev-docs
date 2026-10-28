@@ -22,7 +22,7 @@ func GLKVector4Length(_ vector: GLKVector4) -> Float
 static float GLKVector4Length(GLKVector4 vector);
 ```
 
-#### Return Value
+## Return Value
 
 The length of the vector.
 

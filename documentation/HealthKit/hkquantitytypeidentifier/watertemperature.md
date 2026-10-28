@@ -24,7 +24,7 @@ static let waterTemperature: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierWaterTemperature;
 ```
 
-#### Discussion
+## Discussion
 
 Apple Watch Ultra automatically records these samples during dive sessions and swimming workouts.
 

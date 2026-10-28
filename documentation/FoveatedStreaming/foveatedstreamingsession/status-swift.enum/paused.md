@@ -15,7 +15,7 @@ The session is paused and has temporarily stopped streaming from a streaming end
 case paused
 ```
 
-#### Discussion
+## Discussion
 
 This state is similar to [`FoveatedStreamingSession.Status.disconnected(_:)`](./disconnected%28_%29.md), except that reconnecting to the streaming endpoint from this state gaurantees that the person doesn’t have to re-pair with the streaming endpoint.
 

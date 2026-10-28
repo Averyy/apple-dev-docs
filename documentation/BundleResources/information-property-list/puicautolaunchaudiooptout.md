@@ -14,7 +14,7 @@ A Boolean value that indicates whether a watchOS app should opt out of automatic
 - **Name**: `PUICAutoLaunchAudioOptOut` (Opt out of Auto-launch Audio App (Watch))
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 If your watchOS app does not act as a remote control for the iOS app, set this key to `YES` in your WatchKit extension’s information property list.
 

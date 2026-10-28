@@ -21,7 +21,7 @@ Draws an image in the specified area.
 func draw(_ image: CGImage, in rect: CGRect, byTiling: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 This method scales the image (disproportionately, if necessary) to fit the bounds specified by the `rect` parameter.When the `byTiling` parameter is [`true`](../../Swift/true.md), the image is tiled in user space—thus, unlike when drawing with patterns, the current transformation (see the [`ctm`](./ctm.md) property) affects the final result.
 

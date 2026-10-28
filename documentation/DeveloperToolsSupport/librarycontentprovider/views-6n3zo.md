@@ -21,7 +21,7 @@ The SwiftUI views that you want to add to the Xcode library.
 var views: [LibraryItem] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Xcode adds the [`LibraryItem`](../libraryitem.md) instances returned by your implementation of this property to its Views library. The following restrictions apply:
 

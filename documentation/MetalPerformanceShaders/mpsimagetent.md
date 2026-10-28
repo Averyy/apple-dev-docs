@@ -24,7 +24,7 @@ class MPSImageTent
 @interface MPSImageTent : MPSImageBox
 ```
 
-#### Overview
+## Overview
 
 The kernel elements of the filter form a tent shape with increasing sides, for example:
 

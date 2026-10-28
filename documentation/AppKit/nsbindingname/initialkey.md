@@ -19,7 +19,7 @@ static let initialKey: NSBindingName
 extern NSBindingName NSInitialKeyBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

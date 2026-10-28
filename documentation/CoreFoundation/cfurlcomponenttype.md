@@ -25,7 +25,7 @@ enum CFURLComponentType
 enum CFURLComponentType : CFIndex;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by the [`CFURLGetByteRangeForComponent(_:_:_:)`](./cfurlgetbyterangeforcomponent%28_,_,_%29.md) function.
 

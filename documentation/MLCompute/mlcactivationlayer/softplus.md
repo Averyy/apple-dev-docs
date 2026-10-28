@@ -23,7 +23,7 @@ class var softPlus: MLCActivationLayer { get }
 @property (class, nonatomic, readonly) MLCActivationLayer * softPlusLayer;
 ```
 
-#### Discussion
+## Discussion
 
 This factory creates an activation descriptor using [`init(type:a:b:)`](../mlcactivationdescriptor/init%28type,a,b%29.md), where `type =` [`MLCActivationType.softPlus`](../mlcactivationtype/softplus.md), `a = 1.0`, and `b = 1.0`, and passes that descriptor to [`init(descriptor:)`](./init%28descriptor%29.md).
 

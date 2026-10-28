@@ -19,11 +19,11 @@ func lineBreak(before location: Int, within aRange: NSRange) -> Int
 - (NSUInteger) lineBreakBeforeIndex:(NSUInteger) location withinRange:(NSRange) aRange;
 ```
 
-#### Return Value
+## Return Value
 
  Returns the index of the closest character before `index` within `aRange`, that can be placed on a new line when laying out text. Returns `NSNotFound` if no line break is possible before `index`.
 
-#### Discussion
+## Discussion
 
 Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if `index` or any part of `aRange` lies beyond the end of the receiver’s characters.
 

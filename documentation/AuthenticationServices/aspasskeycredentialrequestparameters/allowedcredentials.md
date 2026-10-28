@@ -23,7 +23,7 @@ var allowedCredentials: [Data] { get }
 @property (nonatomic, copy, readonly) NSArray<NSData *> * allowedCredentials;
 ```
 
-#### Discussion
+## Discussion
 
 If the array is empty, then the relying party accepts any passkey credential.
 

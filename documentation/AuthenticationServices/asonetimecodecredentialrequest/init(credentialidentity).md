@@ -21,7 +21,7 @@ init(credentialIdentity: ASOneTimeCodeCredentialIdentity)
 - (instancetype) initWithCredentialIdentity:(ASOneTimeCodeCredentialIdentity *) credentialIdentity;
 ```
 
-#### Discussion
+## Discussion
 
 Initializes an instance of ASOneTimeCodeCredentialRequest.
 

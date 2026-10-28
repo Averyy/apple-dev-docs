@@ -17,7 +17,7 @@ let NSAnimationTriggerOrderOut: String
 extern NSAnimatablePropertyKey NSAnimationTriggerOrderOut;
 ```
 
-#### Discussion
+## Discussion
 
 The key that references the transition animation used when a view is no longer visible, either as a result of being removed from the visible view hierarchy or as a result of the view set as hidden.
 

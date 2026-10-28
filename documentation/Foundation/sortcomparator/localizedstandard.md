@@ -23,7 +23,7 @@ static var localizedStandard: String.Comparator { get }
 
 Available when `Self` is `String.Comparator`.
 
-#### Discussion
+## Discussion
 
 Compares [`String`](../../Swift/string.md) in a manner similar to the Finder.
 

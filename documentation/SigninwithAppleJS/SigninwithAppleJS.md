@@ -11,7 +11,7 @@ Provide users a fast, secure way to sign in to your web service with their Apple
 - [Configuring your environment for Sign in with Apple](../SigninwithApple/configuring-your-environment-for-sign-in-with-apple.md)
 - [Incorporating Sign in with Apple into other platforms](../SigninwithApple/incorporating-sign-in-with-apple-into-other-platforms.md)
 
-#### Overview
+## Overview
 
 [Sign in with Apple](../SigninwithApple/SigninwithApple.md) is the fastest way to onboard new users securely and provides two-factor authentication. Using Sign in with Apple JS, users can to log into your website with their Apple Account rather than creating a new account and password.
 

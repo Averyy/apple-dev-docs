@@ -19,7 +19,7 @@ var hasVerticalScroller: Bool { get set }
 @property BOOL hasVerticalScroller;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the scroll view allocates and displays a vertical scroller as needed. The default value of this property is [`false`](../../Swift/false.md).
 

@@ -24,7 +24,7 @@ var sourceAlphaBlendFactor: MTLBlendFactor { get set }
 @property (nonatomic) MTLBlendFactor sourceAlphaBlendFactor;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to [`MTLBlendFactor.one`](../mtlblendfactor/one.md).
 

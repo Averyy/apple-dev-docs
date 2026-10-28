@@ -19,7 +19,7 @@ enum Gravity
 enum NSStackViewGravity : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The layout of a stack view is partitioned into three distinct areas in which you can place views. These are known as *gravity areas*. You can use these constants to configure a stack view by way of the [`insertView(_:at:in:)`](./insertview%28_,at,in%29.md) and [`setViews(_:in:)`](./setviews%28_,in%29.md) methods.
 

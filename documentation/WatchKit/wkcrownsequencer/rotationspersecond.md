@@ -19,7 +19,7 @@ var rotationsPerSecond: Double { get }
 @property (nonatomic, readonly) double rotationsPerSecond;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the last reported rotational speed of the crown in rotations per second.  The rotational speed is an absolute value. It is always positive, regardless of the rotation’s direction.
 

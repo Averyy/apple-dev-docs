@@ -24,11 +24,11 @@ func components(matching desc: AudioComponentDescription) -> [AVAudioUnitCompone
 - (NSArray<AVAudioUnitComponent *> *) componentsMatchingDescription:(AudioComponentDescription) desc;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `AVAudioComponent` objects that match the `description`.
 
-#### Discussion
+## Discussion
 
 - desc: The [`AudioComponentDescription`](../../AudioToolbox/audiocomponentdescription.md) structure to match. The method uses the `type`, `subtype` and `manufacturer` fields to search for matching audio units. A value of `0` for any of these fields is a wildcard and returns the first match the method finds.
 

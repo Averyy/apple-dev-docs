@@ -20,7 +20,7 @@ string CampaignStatus
 - `ENABLED`: The campaign is set to run. Delivery depends on budget availability, eligibility, and system status.
 - `PAUSED`: The advertiser paused the campaign. No ads serve until the status changes to `ENABLED`.
 
-#### Discussion
+## Discussion
 
 The `CampaignStatus` is the only campaign field that directly controls whether the campaign is eligible to serve ads. Set it to `PAUSED` to stop delivery without deleting the campaign. The system status (`CampaignSystemStatus`) reflects actual delivery. A campaign can be `ENABLED` but `NOT_RUNNING` due to system conditions.
 

@@ -21,7 +21,7 @@ static func withNewDefaultStream<R>(device: Device? = nil, _ body: () async thro
 
 - [Using Streams](../using-streams.md)
 
-#### Discussion
+## Discussion
 
 For example you can get a new stream on the current device:
 

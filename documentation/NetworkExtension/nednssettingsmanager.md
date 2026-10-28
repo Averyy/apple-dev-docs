@@ -23,7 +23,7 @@ class NEDNSSettingsManager
 @interface NEDNSSettingsManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 When your app starts up, access the shared instance of the DNS settings manager, and load existing settings from the preferences using [`loadFromPreferences(completionHandler:)`](./nednssettingsmanager/loadfrompreferences%28completionhandler%29.md). You can define your DNS server configuration, and persist it by calling [`saveToPreferences(completionHandler:)`](./nednssettingsmanager/savetopreferences%28completionhandler%29.md).
 

@@ -19,7 +19,7 @@ var needsDisplay: Bool { get set }
 @property BOOL needsDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 The `displayIfNeeded` methods check the value of this property to avoid unnecessary drawing, and all display methods set the value back to [`false`](../../Swift/false.md) when the view is up to date.
 

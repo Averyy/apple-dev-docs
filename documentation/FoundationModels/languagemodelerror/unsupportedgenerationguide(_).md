@@ -20,7 +20,7 @@ An unsupported generation guide was used.
 case unsupportedGenerationGuide(LanguageModelError.UnsupportedGenerationGuide)
 ```
 
-#### Discussion
+## Discussion
 
 This failure occurs if you attempt to use generation guides that a model does not support. For example, many models don’t support certain guides using certain regex patterns.
 

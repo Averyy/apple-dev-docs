@@ -19,7 +19,7 @@ var preservesSelection: Bool { get set }
 @property BOOL preservesSelection;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`true`](../../Swift/true.md). This property is observable using key-value observing.
 

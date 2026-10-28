@@ -23,7 +23,7 @@ static let canonicalPathKey: URLResourceKey
 extern NSURLResourceKey const NSURLCanonicalPathKey;
 ```
 
-#### Discussion
+## Discussion
 
 The URL’s path as a canonical absolute file system path, returned as an [`NSString`](../nsstring.md) object (read-only).
 

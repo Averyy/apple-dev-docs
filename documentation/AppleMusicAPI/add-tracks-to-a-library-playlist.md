@@ -9,7 +9,7 @@ Add new tracks to the end of a library playlist.
 **Availability**:
 - Apple Music 1.0+
 
-#### Discussion
+## Discussion
 
 If successful, the HTTP status code is 204 and the tracks added as a result. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array.
 
@@ -19,7 +19,7 @@ This endpoint requires a music user token. For more information, see [User Authe
 
 You can include an optional `tracks` relationship in this request.
 
-##### Example
+### Example
 
 **Request**:
 

@@ -25,7 +25,7 @@ func installTap(onBus bus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format
 - (void) installTapOnBus:(AVAudioNodeBus) bus bufferSize:(AVAudioFrameCount) bufferSize format:(AVAudioFormat *) format block:(AVAudioNodeTapBlock) tapBlock;
 ```
 
-#### Discussion
+## Discussion
 
 You can install and remove taps while the engine is in a running state. You can install only one tap on any bus.
 

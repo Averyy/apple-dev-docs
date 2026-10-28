@@ -20,7 +20,7 @@ var allowsForceQuitKeyboardShortcuts: Bool { get set }
 @property (nonatomic, assign) BOOL allowsForceQuitKeyboardShortcuts;
 ```
 
-#### Discussion
+## Discussion
 
 Users can force quit apps by pressing Shift-Option-Command-Escape to force quit the frontmost app. An assessment session disables force quit by default, but you can allow it by setting [`allowsForceQuitKeyboardShortcuts`](./allowsforcequitkeyboardshortcuts.md) to `true` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

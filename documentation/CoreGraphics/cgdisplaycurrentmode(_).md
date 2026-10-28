@@ -21,11 +21,11 @@ func CGDisplayCurrentMode(_ display: CGDirectDisplayID) -> CFDictionary?
 extern CFDictionaryRefCGDisplayCurrentMode(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 A display mode dictionary, or `NULL` if the display is invalid. The dictionary is owned by the system and you should not release it. The dictionary contains information about the current display mode. For a list of the properties in a display mode dictionary, see [Display Mode Standard Properties](./display-mode-standard-properties.md) and [Display Mode Optional Properties](./display-mode-optional-properties.md). For general information about using dictionaries, see [`CFDictionary`](../CoreFoundation/cfdictionary.md).
 
-#### Discussion
+## Discussion
 
 This deprecated function returns a display mode dictionary. Starting in OS X v10.6, display mode dictionaries have been replaced by the `CGDisplayMode` opaque type. Whereas display mode dictionaries returned by `CGDisplayCurrentModes` are owned by the system and are not to be released, display mode opaque type references returned by `CGDisplayCopyDisplayMode` are owned by the caller and you must release them.
 

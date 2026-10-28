@@ -25,7 +25,7 @@ The type of configuration access operation.
 enum AccessKind
 ```
 
-#### Overview
+## Overview
 
 Indicates whether the access is a synchronous get, asynchronous fetch, or an async watch operation.
 

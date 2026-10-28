@@ -25,7 +25,7 @@ var maximumConcurrentCompilationTaskCount: Int { get }
 @property (readonly) NSUInteger maximumConcurrentCompilationTaskCount;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s value can change when you set the [`shouldMaximizeConcurrentCompilation`](./shouldmaximizeconcurrentcompilation.md) property to a new value.
 

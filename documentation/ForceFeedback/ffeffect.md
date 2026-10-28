@@ -20,7 +20,7 @@ struct FFEFFECT
 struct FFEFFECT;
 ```
 
-#### Overview
+## Overview
 
 OBJECT IDS cannot be used to identify trigger buttons in **dwTriggerButton**, and output axes in **rgdwAxes[***n***]**. Please use object offsets (FFJOFS_* constants), the only supported method.
 

@@ -19,11 +19,11 @@
 static SPPose3D SPPose3DMake(SPPoint3D position, SPRotation3D rotation);
 ```
 
-#### Return Value
+## Return Value
 
 A new pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a pose with the specified position and rotation.
 

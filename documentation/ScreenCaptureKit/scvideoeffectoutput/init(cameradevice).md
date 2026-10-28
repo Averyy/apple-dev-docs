@@ -19,7 +19,7 @@ init(cameraDevice device: AVCaptureDevice)
 - (instancetype) initWithCameraDevice:(AVCaptureDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 initWithCameraDevice:
 

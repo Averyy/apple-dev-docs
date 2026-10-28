@@ -20,7 +20,7 @@ A component that provides environment lighting for entities you place within the
 struct VirtualEnvironmentProbeComponent
 ```
 
-#### Overview
+## Overview
 
 In a fully virtual environment, you can configure the `VirtualEnvironmentProbeComponent` with an [`EnvironmentResource`](./environmentresource.md) to provide precalculated indirect lighting from the environment. RealityKit combines this lighting with other lights in the scene to calculate the final lighting of an entity. The example below shows how you can set up a `VirtualEnvironmentProbeComponent` from a single probe:
 

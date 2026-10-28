@@ -20,7 +20,7 @@ enum CGMouseButton
 enum CGMouseButton : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Quartz supports up to 32 mouse buttons. The first three buttons are specified using these three constants. Additional buttons are specified in USB order using the integers 3 to 31.
 

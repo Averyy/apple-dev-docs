@@ -20,7 +20,7 @@ Sends a standard data object asynchronously to other participants in the group s
 final func send(_ value: Data, to participants: Participants = .all) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to send data with a standard data object. Your app is responsible for decoding and using the data it receives.
 

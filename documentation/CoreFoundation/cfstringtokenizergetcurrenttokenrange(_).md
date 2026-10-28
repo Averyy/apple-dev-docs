@@ -25,7 +25,7 @@ func CFStringTokenizerGetCurrentTokenRange(_ tokenizer: CFStringTokenizer!) -> C
 extern CFRange CFStringTokenizerGetCurrentTokenRange(CFStringTokenizerRef tokenizer);
 ```
 
-#### Return Value
+## Return Value
 
 The range of the current token, or `{``kCFNotFound`, `0}` if there is no current token.
 

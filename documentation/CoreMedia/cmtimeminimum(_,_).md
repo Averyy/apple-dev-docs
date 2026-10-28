@@ -25,7 +25,7 @@ func CMTimeMinimum(_ time1: CMTime, _ time2: CMTime) -> CMTime
 extern CMTime CMTimeMinimum(CMTime time1, CMTime time2);
 ```
 
-#### Return Value
+## Return Value
 
 The lesser of the two times.
 

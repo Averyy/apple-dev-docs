@@ -29,11 +29,11 @@ func allocateRenderResources() throws
 - [Migrating Your Audio Unit Host to the AUv3 API](../migrating-your-audio-unit-host-to-the-auv3-api.md)
 - [Rendering Spatial Audio from Bluetooth headphones](../rendering-spatial-audio-from-bluetooth-headphones.md)
 
-#### Discussion
+## Discussion
 
 - [`false`](../../Swift/false.md) if the operation failed.
 
-#### Discussion
+## Discussion
 
 Hosts must call this before beginning to render. Subclasses should call the superclass implementation.
 

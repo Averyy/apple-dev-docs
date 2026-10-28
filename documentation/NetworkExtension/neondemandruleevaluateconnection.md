@@ -24,7 +24,7 @@ class NEOnDemandRuleEvaluateConnection
 @interface NEOnDemandRuleEvaluateConnection : NEOnDemandRule
 ```
 
-#### Overview
+## Overview
 
 When rules of this class match, the properties of the network connection being established are matched against a set of connection rules. The action of the matched rule (if any) is used to determine whether or not the VPN will be started.
 

@@ -23,11 +23,11 @@ class func success(with resolvedSpatialEventTrigger: INSpatialEventTrigger) -> S
 + (instancetype) successWithResolvedSpatialEventTrigger:(INSpatialEventTrigger *) resolvedSpatialEventTrigger;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INSpatialEventTriggerResolutionResult`](../inspatialeventtriggerresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you successfully identify the trigger object to modify. Provide an [`INSpatialEventTrigger`](../inspatialeventtrigger.md) object with as much information about the trigger conditions as you have available.
 

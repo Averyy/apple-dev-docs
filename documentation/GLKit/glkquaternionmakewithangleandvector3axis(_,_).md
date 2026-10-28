@@ -22,7 +22,7 @@ func GLKQuaternionMakeWithAngleAndVector3Axis(_ radians: Float, _ axisVector: GL
 static GLKQuaternion GLKQuaternionMakeWithAngleAndVector3Axis(float radians, GLKVector3 axisVector);
 ```
 
-#### Return Value
+## Return Value
 
 A new quaternion.
 

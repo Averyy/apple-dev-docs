@@ -17,7 +17,7 @@ case userColumnResizing
 NSBrowserUserColumnResizing
 ```
 
-#### Discussion
+## Discussion
 
 The developer chooses the initial column widths, but users can resize all columns simultaneously or each column individually.
 

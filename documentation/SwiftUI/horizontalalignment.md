@@ -27,7 +27,7 @@ struct HorizontalAlignment
 - [Aligning views within a stack](./aligning-views-within-a-stack.md)
 - [Building layouts with stack views](./building-layouts-with-stack-views.md)
 
-#### Overview
+## Overview
 
 Use horizontal alignment guides to tell SwiftUI how to position views relative to one another horizontally, like when you place views vertically in an [`VStack`](./vstack.md). The following example demonstrates common built-in horizontal alignments:
 
@@ -58,7 +58,7 @@ private struct HorizontalAlignmentGallery: View {
 
 During layout, SwiftUI aligns the views inside each stack by bringing together the specified guides of the affected views. SwiftUI calculates the position of a guide for a particular view based on the characteristics of the view. For example, the [`center`](./horizontalalignment/center.md) guide appears at half the width of the view. You can override the guide calculation for a particular view using the [`alignmentGuide(_:computeValue:)`](./view/alignmentguide%28_,computevalue%29.md) view modifier.
 
-##### Layout direction
+### Layout direction
 
 When a user configures their device to use a left-to-right language like English, the system places the leading alignment on the left and the trailing alignment on the right, as the example from the previous section demonstrates. However, in a right-to-left language, the system reverses these. You can see this by using the [`environment(_:_:)`](./view/environment%28_,_%29.md) view modifier to explicitly override the [`layoutDirection`](./environmentvalues/layoutdirection.md) environment value for the view defined above:
 
@@ -71,7 +71,7 @@ HorizontalAlignmentGallery()
 
 This automatic layout adjustment makes it easier to localize your app, but it’s still important to test your app for the different locales that you ship into. For more information about the localization process, see [Localization](../Xcode/localization.md).
 
-##### Custom alignment guides
+### Custom alignment guides
 
 You can create a custom horizontal alignment by creating a type that conforms to the [`AlignmentID`](./alignmentid.md) protocol, and then using that type to initialize a new static property on `HorizontalAlignment`:
 
@@ -91,7 +91,7 @@ You implement the [`defaultValue(in:)`](./alignmentid/defaultvalue%28in%29.md) m
 
 You can then use the custom alignment guide like any built-in guide. For example, you can use it as the `alignment` parameter to a [`VStack`](./vstack.md), or you can change it for a specific view using the [`alignmentGuide(_:computeValue:)`](./view/alignmentguide%28_,computevalue%29.md) view modifier. Custom alignment guides also automatically reverse in a right-to-left environment, just like built-in guides.
 
-##### Composite alignment
+### Composite alignment
 
 Combine a [`VerticalAlignment`](./verticalalignment.md) with a `HorizontalAlignment` to create a composite [`Alignment`](./alignment.md) that indicates both vertical and horizontal positioning in one value. For example, you could combine your custom `oneQuarter` horizontal alignment from the previous section with a built-in [`center`](./verticalalignment/center.md) vertical alignment to use in a [`ZStack`](./zstack.md):
 

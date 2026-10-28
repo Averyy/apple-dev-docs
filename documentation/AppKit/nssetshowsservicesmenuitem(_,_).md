@@ -19,7 +19,7 @@ func NSSetShowsServicesMenuItem(_ itemName: String, _ enabled: Bool) -> Int
 extern NSInteger NSSetShowsServicesMenuItem(NSString *itemName, BOOL enabled);
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated. This function simply returns 0.
 

@@ -9,15 +9,15 @@ Dismiss one or more daily budget recommendations without changing the campaign�
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Dismissing a daily budget recommendation just means you’ve decided not to raise the budget. The campaign’s daily budget stays unchanged, and the recommendation moves to `DISMISSED` state. The response is a history record that preserves the recommendation’s state at the time you dismissed it.
 
-#### Payload Examples
+## Payload Examples
 
 This example dismisses a daily budget recommendation. The campaign’s daily budget stays unchanged, and the response confirms the recommendation is now in `DISMISSED` state.
 
-##### Request
+### Request
 
 ```http
 POST /v1/recommendations/daily-budgets/dismiss
@@ -31,7 +31,7 @@ POST /v1/recommendations/daily-budgets/dismiss
 ]
 ```
 
-##### Response
+### Response
 
 ```json
 {

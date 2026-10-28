@@ -15,7 +15,7 @@ A property of IONetworkInterface objects.
 #define kIOPrimaryInterface
 ```
 
-#### Discussion
+## Discussion
 
 The kIOInterfaceNamePrefix property has an OSBoolean value that describes whether the interface is the primary or the built-in network interface.
 

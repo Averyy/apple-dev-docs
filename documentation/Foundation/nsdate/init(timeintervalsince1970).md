@@ -25,11 +25,11 @@ convenience init(timeIntervalSince1970 secs: TimeInterval)
 - (instancetype) initWithTimeIntervalSince1970:(NSTimeInterval) secs;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDate` object set to `seconds` seconds from the reference date.
 
-#### Discussion
+## Discussion
 
 This method is useful for creating `NSDate` objects from time_t values returned by BSD system functions.
 

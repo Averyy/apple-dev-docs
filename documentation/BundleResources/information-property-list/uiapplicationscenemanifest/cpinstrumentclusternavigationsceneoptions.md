@@ -15,7 +15,7 @@ A dictionary of options that indicates your app’s level of support for the Car
 - **Name**: `CPInstrumentClusterNavigationSceneOptions`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 When this key is present at the top level of the app’s scene manifest, CarPlay creates your app’s instrument cluster scene only if the app is running in iOS 26.2 or later. The value of this key is an empty dictionary.
 

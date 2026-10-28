@@ -15,7 +15,7 @@ The maximum number of records to delete.
 attribute Int32? resultsLimit;
 ```
 
-#### Discussion
+## Discussion
 
 `resultsLimit` can be from 1 to 200, inclusive.
 

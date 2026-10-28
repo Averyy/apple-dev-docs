@@ -17,7 +17,7 @@ The data container of the containing app.
 var appContainer: MigrationDataContainer { get }
 ```
 
-#### Discussion
+## Discussion
 
 To access the containing app’s data, your app requires the `com.apple.developer.app-migration.data-container-access` entitlement.
 

@@ -21,7 +21,7 @@ func QLThumbnailCancel(_ thumbnail: QLThumbnail!)
 extern void QLThumbnailCancel(QLThumbnailRef thumbnail);
 ```
 
-#### Discussion
+## Discussion
 
 If you use [`QLThumbnailDispatchAsync(_:_:_:)`](./qlthumbnaildispatchasync%28_,_,_%29.md) to request the thumbnail, calling this function invokes the completion callback of [`QLThumbnailDispatchAsync(_:_:_:)`](./qlthumbnaildispatchasync%28_,_,_%29.md). If you use synchronous mode, [`QLThumbnailCopyImage(_:)`](./qlthumbnailcopyimage%28_%29.md) returns `NULL` immediately.
 

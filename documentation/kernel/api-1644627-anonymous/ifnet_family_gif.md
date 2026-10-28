@@ -13,7 +13,7 @@
 IFNET_FAMILY_GIF = 10
 ```
 
-#### Discussion
+## Discussion
 
 A generic tunnel interface.
 

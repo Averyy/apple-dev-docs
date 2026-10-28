@@ -29,7 +29,7 @@ func timeSnapshot(with params: MTRGeneralDiagnosticsClusterTimeSnapshotParams?) 
 - (void) timeSnapshotWithParams:(MTRGeneralDiagnosticsClusterTimeSnapshotParams *) params completion:(void (^)(MTRGeneralDiagnosticsClusterTimeSnapshotResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command MAY be used by a client to obtain a correlated view of both System Time, and, if currently synchronized and supported, “wall clock time” of the server.
 

@@ -20,7 +20,7 @@ A Boolean value that indicates whether this playing this queue will affect the u
 var affectsListeningHistory: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If `false`, or the user has Settings > Music > Use Listening History set to off, this queue will not show up in the Music app’s Recently Played.
 

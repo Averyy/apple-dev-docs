@@ -15,11 +15,11 @@ Converts a C++ member function pointer, relative to an instance, to a C-style po
 #define OSMemberFunctionCast(cptrtype, self, func)
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a function of the given type referencing `self`.
 
-#### Discussion
+## Discussion
 
 This function is used to generate pointers to C++ functions for instances, such that they can be registered as callbacks with I/O Kit objects.
 

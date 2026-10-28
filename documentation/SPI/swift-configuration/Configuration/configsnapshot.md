@@ -28,7 +28,7 @@ protocol ConfigSnapshot : Sendable
 
 - [Implementing a custom provider](./implementing-a-provider.md)
 
-#### Overview
+## Overview
 
 Snapshots enable consistent reads of multiple related configuration keys by capturing the provider’s state at a specific moment. This prevents the underlying data from changing between individual key lookups.
 

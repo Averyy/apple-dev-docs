@@ -19,7 +19,7 @@ The horizontal size class of the trait collection.
 @property (nonatomic) UIUserInterfaceSizeClass horizontalSizeClass;
 ```
 
-#### Discussion
+## Discussion
 
 The default horizontal size class for a trait collection is [`UIUserInterfaceSizeClass.unspecified`](../uiuserinterfacesizeclass/unspecified.md).
 

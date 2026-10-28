@@ -31,7 +31,7 @@ var distanceRemaining: Measurement<UnitLength>? { get set }
 @property (atomic, copy, readwrite, nullable) NSMeasurement<NSUnitLength *> * distanceRemaining;
 ```
 
-#### Discussion
+## Discussion
 
 For an electric vehicle, this value is the same as [`distanceRemainingElectric`](./distanceremainingelectric.md). For a fuel-powered vehicle, this value is the same as `distanceRemainingGasoline`. For a hybrid vehicle, this value is the sum of `distanceRemainingElectric` and `distanceRemainingGasoline`.
 

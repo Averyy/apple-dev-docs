@@ -11,11 +11,11 @@ Fetches campaigns with selector operators.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Use this endpoint to find campaigns using a [`Selector`](./selector.md) [`Condition`](./condition.md) to narrow results. If you don’t specify selector conditions, all campaign objects return in the response. See the [`Campaign`](./campaign.md) object for parameter descriptions and selector condition operators.
 
-##### Payload example: Find campaigns
+### Payload example: Find campaigns
 
 **Request**:
 
@@ -100,7 +100,7 @@ POST https://api.searchads.apple.com/api/v5/campaigns/find
 }
 ```
 
-##### Payload example: Find campaigns by bidding strategy and target CPA
+### Payload example: Find campaigns by bidding strategy and target CPA
 
 **Request**:
 

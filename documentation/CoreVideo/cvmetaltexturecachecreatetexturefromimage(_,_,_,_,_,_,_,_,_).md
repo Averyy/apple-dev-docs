@@ -24,11 +24,11 @@ func CVMetalTextureCacheCreateTextureFromImage(_ allocator: CFAllocator?, _ text
 extern CVReturn CVMetalTextureCacheCreateTextureFromImage(CFAllocatorRef allocator, CVMetalTextureCacheRef textureCache, CVImageBufferRef sourceImage, CFDictionaryRef textureAttributes, MTLPixelFormat pixelFormat, size_t width, size_t height, size_t planeIndex, CVMetalTextureRef*textureOut);
 ```
 
-#### Return Value
+## Return Value
 
 Upon successful creation of the texture, this function returns [`kCVReturnSuccess`](./kcvreturnsuccess.md).
 
-#### Discussion
+## Discussion
 
 This function creates a cached Core Video Metal texture object mapped to an image buffer, and a live binding to the underlying [`MTLTexture`](../Metal/mtltexture.md) object.
 

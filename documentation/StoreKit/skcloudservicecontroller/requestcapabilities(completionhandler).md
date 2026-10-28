@@ -35,7 +35,7 @@ func requestCapabilities() async throws -> SKCloudServiceCapability
 - [Determining a person’s Apple Music capabilities](../determining-a-person-s-apple-music-capabilities.md)
 - [Offering Apple Music Subscription in Your App](../offering-apple-music-subscription-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

@@ -24,11 +24,11 @@ func wrappingAdd(_ operand: UInt64, ordering: AtomicUpdateOrdering) -> (oldValue
 
 Available when `Value` is `UInt64`.
 
-#### Return Value
+## Return Value
 
 A tuple containing the original value before the operation and the new value after the operation.
 
-#### Discussion
+## Discussion
 
 > **Note**: This operation silently wraps around on overflow, like the `&+` operator does on `UInt64` values.
 

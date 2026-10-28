@@ -19,7 +19,7 @@ var windowNibName: NSNib.Name? { get }
 @property (copy, readonly, nullable) NSNibName windowNibName;
 ```
 
-#### Discussion
+## Discussion
 
 Using this name, `NSDocument` creates and instantiates a default instance of `NSWindowController` to manage the window. If your document has multiple nib files, each with its own single window, or if the default `NSWindowController` instance is not adequate for your purposes, you should override [`makeWindowControllers()`](./makewindowcontrollers%28%29.md).
 

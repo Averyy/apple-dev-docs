@@ -19,7 +19,7 @@ func cellSize(forBounds rect: NSRect) -> NSSize
 - (NSSize) cellSizeForBounds:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 This method takes into account of the size of the image or text within a certain offset determined by the border type of the cell. If the receiver is of text type, the text is resized to fit within `aRect` (as much as `aRect` is within the bounds of the cell).
 

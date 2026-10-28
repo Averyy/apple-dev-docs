@@ -21,7 +21,7 @@ func conv2d(_ array: MLXArray, _ weight: MLXArray, stride: IntOrPair = 1, paddin
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 > **Note**: Only the default `groups=1` is currently supported.
 
@@ -39,7 +39,7 @@ padding: [2, 3]
 
 See [`IntOrPair`](./intorpair.md) for more information.
 
-##### See Also
+### See Also
 
 - [Convolution](./convolution.md)
 - [`IntOrPair`](./intorpair.md)

@@ -25,7 +25,7 @@ func finishDecoding()
 - (void) finishDecoding;
 ```
 
-#### Discussion
+## Discussion
 
 Invoking this method allows the receiver to notify its delegate and to perform any final operations on the archive. Once this method is invoked, the receiver cannot decode any further values.
 

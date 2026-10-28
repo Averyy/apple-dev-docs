@@ -19,7 +19,7 @@ func getLineFragmentRect(_ lineFragmentRect: UnsafeMutablePointer<NSRect>, usedR
 - (void) getLineFragmentRect:(NSRect *) lineFragmentRect usedRect:(NSRect *) lineFragmentUsedRect forParagraphSeparatorGlyphRange:(NSRange) paragraphSeparatorGlyphRange atProposedOrigin:(NSPoint) lineOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 The method returns the calculated line fragment rectangle in `lineFragmentRect`, and it returns the used rectangle (the portion of the line fragment rectangle that actually contains marks) in `lineFragmentUsedRect`. The `paragraphSeparatorGlyphRange` is the range of glyphs under consideration, and `lineOrigin` is the origin point of the line fragment rectangle. A `paragraphSeparatorGlyphRange` with length 0 indicates an extra line fragment (which occurs if the last character in the paragraph is a line separator.)
 

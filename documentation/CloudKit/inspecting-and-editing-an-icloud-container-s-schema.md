@@ -5,13 +5,13 @@
 
 Review and edit the schema for your app’s container using the CloudKit Database app.
 
-#### Overview
+## Overview
 
 Use the CloudKit Database app to verify existing record types, create new record types, edit fields, add search indexes, and delete unpublished record types.
 
 To manage a schema’s record types, open the CloudKit Database app and select your app’s container.
 
-##### Inspect Record Types
+### Inspect Record Types
 
 If you create a record programmatically through just-in-time schema creation, use the CloudKit Database app to verify that the record type appears in the schema with the name and fields you expect.
 
@@ -24,7 +24,7 @@ To view the fields for a record type:
 
 For more information about just-in-time schema creation, see the [Save initial records to iCloud](./designing-and-creating-a-cloudkit-database.md#Save-initial-records-to-iCloud) section of [Designing and Creating a CloudKit Database](./designing-and-creating-a-cloudkit-database.md).
 
-##### Enable querying for your record type
+### Enable querying for your record type
 
 When designing and debugging your database, you might find it useful to search for records with a particular record type. To enable searching for records by type, you must first add an index to a field on your record type.
 
@@ -43,7 +43,7 @@ To enable querying:
 
 ![A screenshot showing a container’s indexes on the schema management page of the CloudKit Dashboard app. The screenshot highlights the Indexes menu item in the Schema section on the left and the Add Index pane.](https://developer.apple.com/tutorials/images/com.apple.cloudkit/media-3699101@2x.png)
 
-##### Create a record type
+### Create a record type
 
 In addition to creating record types programmatically using just-in-time schema creation, you can create new record types directly in the CloudKit Database app.
 
@@ -58,7 +58,7 @@ To create a new record type:
 
 ![A screenshot showing a container’s record types on the schema management page of the CloudKit Dashboard app. The screenshot highlights the Record Types menu item in the Schema section on the left, as well as the New Record Type panel.](https://developer.apple.com/tutorials/images/com.apple.cloudkit/media-3699108@2x.png)
 
-##### Delete a record type
+### Delete a record type
 
 You can delete a record type only in the development environment and only when that record type isn’t in production. Deleting a record type also deletes any corresponding records from the database.
 

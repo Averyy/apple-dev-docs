@@ -12,13 +12,13 @@ Remotely and immediately shut down a device.
 - Mac Catalyst 10.3+
 - macOS 10.13+
 
-#### Discussion
+## Discussion
 
 A passcode-locked iOS device doesn’t rejoin a Wi-Fi network after a user restarts it and before they unlock it for the first time, so it can’t communicate with the server if it needs Wi-Fi to do so.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -28,7 +28,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | AllowPasscodeRemovalAndLock |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

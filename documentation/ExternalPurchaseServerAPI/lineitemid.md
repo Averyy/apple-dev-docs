@@ -19,7 +19,7 @@ string lineItemId
 
 - [Reporting corrections](./reportcorrections.md)
 
-#### Discussion
+## Discussion
 
 Maximum length: 128
 

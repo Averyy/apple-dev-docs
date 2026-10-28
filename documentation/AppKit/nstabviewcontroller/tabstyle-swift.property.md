@@ -19,7 +19,7 @@ var tabStyle: NSTabViewController.TabStyle { get set }
 @property NSTabViewControllerTabStyle tabStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NSTabViewController.TabStyle.segmentedControlOnTop`](./tabstyle-swift.enum/segmentedcontrolontop.md). Changing the style at runtime updates the appearance of the tab view controller interface.
 

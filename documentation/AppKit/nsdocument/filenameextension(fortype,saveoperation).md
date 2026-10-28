@@ -20,11 +20,11 @@ func fileNameExtension(forType typeName: String, saveOperation: NSDocument.SaveO
 - (NSString *) fileNameExtensionForType:(NSString *) typeName saveOperation:(NSSaveOperationType) saveOperation;
 ```
 
-#### Return Value
+## Return Value
 
 The filename extension.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method invokes [`preferredFilenameExtension(forType:)`](../nsworkspace/preferredfilenameextension%28fortype%29.md) on the shared workspace object if the type is a UTI or, if it is not, for backward binary compatibility with OS X v10.4 and earlier, invokes [`fileExtensionsFromType:`](../nsdocumentcontroller/fileextensionsfromtype_.md) on the shared document controller and chooses the first filename extension in the returned array.
 

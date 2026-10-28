@@ -13,7 +13,7 @@ struct IOUSBConfigurationDescHeader {
 };
 ```
 
-#### Overview
+## Overview
 
 Header of a IOUSBConfigurationDescriptor. Used to get the total length of the descriptor.
 

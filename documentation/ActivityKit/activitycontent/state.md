@@ -16,7 +16,7 @@ The current state of a Live Activity in its life cycle.
 let state: State
 ```
 
-#### Discussion
+## Discussion
 
 This value is the same as [`activityState`](../activity/activitystate.md).
 

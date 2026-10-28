@@ -5,7 +5,7 @@
 
 Identify and minimize congestion points in a GPU’s subsystems by checking its limiter and utilization counters.
 
-#### Overview
+## Overview
 
 A GPU can typically run subtasks at the same time by dispatching them to various subsystems that specialize in different operations, such as memory accesses, math and logic operations, and pixel rasterization. However, the code in an app’s GPU functions (shaders functions and compute kernels) can force some of these subsystems to stall, or wait for either itself to finish an operation or until another subsystem is ready.
 
@@ -48,7 +48,7 @@ Some adjustments have a trade-off, such as reducing image quality or mathematica
 
 > 💡 **Tip**: Discover which adjustments yield better performance by experimenting with your app.
 
-##### Reduce the workload of the arithmetic logic unit
+### Reduce the workload of the arithmetic logic unit
 
 The arithmetic logic unit (ALU) handles your code’s arithmetic, logic, and bitwise operations. If the counters indicate the ALU may be a bottleneck, you can try each of the following adjustments and evaluate any changes:
 
@@ -59,7 +59,7 @@ The arithmetic logic unit (ALU) handles your code’s arithmetic, logic, and bit
 
 These adjustments reduce the ALU’s workload by making the work simpler or by shifting work to another subsystem, such as a texture sampler. For example, you might eliminate a noise calculation function by creating a noise texture and sampling from it each time your code needs a value.
 
-##### Reduce the workload for texture operations
+### Reduce the workload for texture operations
 
 The GPU reads texture data for each color attachment of a render pass when you set its [`loadAction`](../Metal/mtlrenderpassattachmentdescriptor/loadaction.md) property to [`MTLLoadAction.load`](../Metal/mtlloadaction/load.md), and each time a GPU function reads, gathers, or samples a texture. Textures that have larger dimensions, or use larger pixel formats, consume more memory and typically increase the amount of data the GPU reads to sample the texture.
 
@@ -80,7 +80,7 @@ If the counters indicate the texture *write* operations may be a bottleneck, you
 - Render fewer very small triangles, especially if you’re applying MSAA as well.
 - Modify textures that cluster writes in space or time (higher spatial or temporal locality), which the GPU can coalesce into fewer write transactions to memory.
 
-##### Reduce the workload for buffer operations
+### Reduce the workload for buffer operations
 
 The write operation counters measure the time your GPU functions store data to memory in the GPU device’s address space. The read operation counters measure the time your GPU functions fetch data from memory in both the device’s address space and the constants’ address space.
 
@@ -95,7 +95,7 @@ If the counters indicate the buffer *read* or *write* operations may be a bottle
 
 For the buffer *read* operations, you can also try to read data from textures instead of buffers to share some of the workload with another subsystem. For the buffer *write* operations, try to reduce the number of atomic writes your GPU function makes to device memory.
 
-##### Reduce the workload for threadgroup and imageblock operations
+### Reduce the workload for threadgroup and imageblock operations
 
 Apple silicon GPUs use threadgroup memory and imageblock memory (called *tile memory* collectively) that consists of a local, unified set of high-performance storage within the GPU itself.
 
@@ -115,11 +115,11 @@ If the counters indicate the threadgroup and imageblock *read* or *write* operat
 
 For the threadgroup and imageblock *read* operations, you can also try removing accesses to the same memory location from multiple threads in the same threadgroup.
 
-##### Reduce the workload for fragment input interpolation
+### Reduce the workload for fragment input interpolation
 
 During a render pass, a GPU interpolates the vertex stage’s output data before sending it to the fragment stage. If the counters indicate fragment input interpolation may be a bottleneck, you can try reducing the number of vertex attributes the fragment shader uses.
 
-##### Reduce the workload of the last level cache
+### Reduce the workload of the last level cache
 
 The last level cache counters measure how much time the GPU spends processing requests in the highest-level GPU cache. A higher value here may indicate that your shaders are requesting a lot of data that isn’t present in the cache.
 

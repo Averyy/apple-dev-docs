@@ -14,7 +14,7 @@
 kUnicodeCanonicalDecompVariant = 2
 ```
 
-#### Discussion
+## Discussion
 
 A variant of Unicode using maximal decomposition with characters in canonical order. This variant does not include most characters which have a canonical decomposition, such as single characters for accented Latin letters or single characters for Korean Hangul syllables (however, this restriction is relaxed for symbol characters in the range U+2000 to U+2FFF). In TEC Manager 1.3, the Unicode Converter supports this variant for converting to and from Mac OS encodings.
 

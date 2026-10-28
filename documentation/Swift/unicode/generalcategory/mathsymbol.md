@@ -21,7 +21,7 @@ A symbol of mathematical use.
 case mathSymbol
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Math_Symbol` (abbreviated `Sm`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

@@ -25,7 +25,7 @@ var uniquenessConstraints: [[Any]] { get set }
 @property (strong) NSArray<NSArray<id> *> * uniquenessConstraints;
 ```
 
-#### Discussion
+## Discussion
 
 Each inner array contains one or more [`NSAttributeDescription`](../nsattributedescription.md) objects or strings that contain the names of attributes on the entity.
 

@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_WriteOnceSBCDevice = 0x04
 ```
 
-#### Discussion
+## Discussion
 
 SBC Device.
 

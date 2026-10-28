@@ -29,7 +29,7 @@ extern AVMediaCharacteristic const AVMediaCharacteristicLegible;
 
 - [Selecting subtitles and alternative audio tracks](../selecting-subtitles-and-alternative-audio-tracks.md)
 
-#### Discussion
+## Discussion
 
 Media types with this characteristic include [`subtitle`](../avmediatype/subtitle.md) and [`closedCaption`](../avmediatype/closedcaption.md).
 

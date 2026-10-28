@@ -16,7 +16,7 @@ Key for dictionary returned by IOCopySystemLoadAdvisoryDetailed
 #define kIOSystemLoadAdvisoryCombinedLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 Provides a combined level based on UserLevel, BatteryLevel, and ThermalLevels; the combined level is the minimum of these levels. In the future, this combined level may represent new levels as well. The combined level is identical to the value returned by IOGetSystemLoadAdvisory().
 

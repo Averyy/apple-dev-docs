@@ -25,7 +25,7 @@ var zeroFormattingBehavior: DateComponentsFormatter.ZeroFormattingBehavior { get
 @property NSDateComponentsFormatterZeroFormattingBehavior zeroFormattingBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 When the value for a particular unit is 0, the zero formatting behavior determines whether that value is retained or omitted from any resulting strings. For example, when the formatting behavior is [`dropTrailing`](./zeroformattingbehavior-swift.struct/droptrailing.md), the value of one hour, ten minutes, and zero seconds would omit the mention of seconds.
 

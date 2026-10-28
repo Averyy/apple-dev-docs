@@ -15,7 +15,7 @@ Returns the size of the expected download.
 OSStatus SecureDownloadGetDownloadSize(SecureDownloadRef downloadRef, SInt64 *downloadSize);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Download Result Codes](./secure-download-result-codes.md).
 

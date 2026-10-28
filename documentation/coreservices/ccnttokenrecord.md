@@ -22,7 +22,7 @@ typedef struct ccntTokenRecord {
 } ccntTokenRecord;
 ```
 
-#### Overview
+## Overview
 
 When the [`AEResolve(_:_:_:)`](./api-1449720-aeresolve.md) functioncalls an object accessor function to locate a range of objects, theApple Event Manager replaces the descriptor of type `typeCurrentContainer` witha token for the container of each boundary object. When using `AEResolve` toresolve the object specifier, your application doesn’t need toexamine the contents of this token, because the Apple Event Managerkeeps track of it.
 

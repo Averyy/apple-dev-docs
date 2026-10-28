@@ -19,7 +19,7 @@ typealias FxImageColorInfo = Int
 typedef NSUInteger FxImageColorInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This method was introduced in FxImage.
 

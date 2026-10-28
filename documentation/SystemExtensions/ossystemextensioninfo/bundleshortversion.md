@@ -17,7 +17,7 @@ var bundleShortVersion: String { get }
 @property (copy, readonly) NSString * bundleShortVersion;
 ```
 
-#### Discussion
+## Discussion
 
 The bundle short version string of the extension (CFBundleShortVersionString)
 

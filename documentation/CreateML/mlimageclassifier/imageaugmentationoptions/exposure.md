@@ -19,7 +19,7 @@ An option for augmenting training data by lightening or darkening each image.
 static let exposure: MLImageClassifier.ImageAugmentationOptions
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to tell the image classifier to augment your training data set by creating darker or lighter versions of the original images.
 

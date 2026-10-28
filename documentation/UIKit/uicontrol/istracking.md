@@ -23,7 +23,7 @@ var isTracking: Bool { get }
 @property (nonatomic, readonly, getter=isTracking) BOOL tracking;
 ```
 
-#### Discussion
+## Discussion
 
 While tracking of a touch event is in progress, the control sets the value of this property to [`true`](../../Swift/true.md). When tracking ends or is canceled for any reason, it sets this property to [`false`](../../Swift/false.md).
 

@@ -22,7 +22,7 @@ var isCapturing: Bool { get }
 @property (nonatomic, readonly, getter=isCapturing) BOOL capturing;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates whether this stream is currently capturing screen content
 

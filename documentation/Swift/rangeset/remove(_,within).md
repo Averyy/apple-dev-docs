@@ -23,7 +23,7 @@ mutating func remove<C>(_ index: Bound, within collection: C) where Bound == C.I
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(*n*), where *n* is the number of ranges in the range set.
 

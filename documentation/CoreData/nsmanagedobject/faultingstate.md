@@ -25,11 +25,11 @@ var faultingState: Int { get }
 @property (nonatomic, readonly) NSUInteger faultingState;
 ```
 
-#### Return Value
+## Return Value
 
 `0` if the object is fully initialized as a managed object and not transitioning to or from another state, otherwise some other value.
 
-#### Discussion
+## Discussion
 
 `0` if the object is fully initialized as a managed object and not transitioning to or from another state, otherwise some other value. This property allows you to determine if an object is in a transitional phase when receiving a key-value observing change notification.
 

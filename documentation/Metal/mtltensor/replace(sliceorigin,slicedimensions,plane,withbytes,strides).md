@@ -25,7 +25,7 @@ func replace(sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents, p
 - (void) replaceSliceOrigin:(MTLTensorExtents *) sliceOrigin sliceDimensions:(MTLTensorExtents *) sliceDimensions plane:(MTLTensorPlaneType) plane withBytes:(const void *) bytes strides:(MTLTensorExtents *) strides;
 ```
 
-#### Discussion
+## Discussion
 
 When writing to auxiliary planes, specify `sliceOrigin` and `sliceDimensions` in plane coordinates by applying the auxiliary plane’s block factors.
 

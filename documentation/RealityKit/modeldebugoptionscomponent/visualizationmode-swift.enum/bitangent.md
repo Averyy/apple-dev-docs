@@ -20,7 +20,7 @@ A mode that displays the surface bitangent vectors as a color.
 case bitangent
 ```
 
-#### Discussion
+## Discussion
 
 Add a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `bitangent` to an entity to tell RealityKit to draw that entity’s calculated surface bitangent vectors as its surface color. A bitangent vector is an imaginary line that’s orthagonal to both the `normal` and `tangent` vectors. RealityKit draws a bitangent vector by using its `X`, `Y`, and `Z` values as the `R`, `G`, and `B` components of the color.
 

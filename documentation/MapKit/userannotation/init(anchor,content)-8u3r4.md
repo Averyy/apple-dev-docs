@@ -22,7 +22,7 @@ Creates an annotation that displays a person’s current location using the syst
 @preconcurrency init(anchor: UnitPoint = .center, @ViewBuilder content: @escaping (UserLocation) -> Content)
 ```
 
-#### Return Value
+## Return Value
 
 Returns  a [`UserAnnotation`](../userannotation.md) that displays a persons current location using the specified anchor location.
 

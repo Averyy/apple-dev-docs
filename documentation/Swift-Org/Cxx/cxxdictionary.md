@@ -17,7 +17,7 @@ A C++ type that represents a dictionary.
 protocol CxxDictionary<Key, Value> : ExpressibleByDictionaryLiteral
 ```
 
-#### Overview
+## Overview
 
 C++ standard library types such as `std::map` and `std::unordered_map` conform to this protocol.
 

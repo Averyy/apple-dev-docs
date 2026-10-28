@@ -20,7 +20,7 @@ A Boolean value that determines whether RealityKit will tonemap the output of th
 var applyPostProcessToneMap: Bool
 ```
 
-#### Discussion
+## Discussion
 
 If true, the created `UnlitMaterial.Program` will tonemap its color output to better match the rest of the scene; if false, the created `UnlitMaterial.Program` will output its color without modification.
 

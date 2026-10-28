@@ -19,7 +19,7 @@ class func withRFCOMMChannelRef(_ rfcommChannelRef: IOBluetoothRFCOMMChannelRef!
 + (instancetype) withRFCOMMChannelRef:(IOBluetoothRFCOMMChannelRef) rfcommChannelRef;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IOBluetoothRFCOMMChannel * for the given IOBluetoothRFCOMMChannelRef.
 

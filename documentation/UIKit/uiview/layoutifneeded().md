@@ -23,7 +23,7 @@ func layoutIfNeeded()
 - (void) layoutIfNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to force the view to update its layout immediately. When using Auto Layout, the layout engine updates the position of views as needed to satisfy changes in constraints. Using the view that receives the message as the root view, this method lays out the view subtree starting at the root.  If no layout updates are pending, this method exits without modifying the layout or calling any layout-related callbacks.
 

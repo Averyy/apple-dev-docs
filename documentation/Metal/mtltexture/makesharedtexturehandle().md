@@ -25,7 +25,7 @@ func makeSharedTextureHandle() -> MTLSharedTextureHandle?
 - (MTLSharedTextureHandle *) newSharedTextureHandle;
 ```
 
-#### Discussion
+## Discussion
 
 If the texture is not shareable, this method returns `nil`.
 

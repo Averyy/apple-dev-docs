@@ -19,11 +19,11 @@ func SKIndexDocumentIteratorCopyNext(_ inIterator: SKIndexDocumentIterator!) -> 
 SKDocumentRef SKIndexDocumentIteratorCopyNext(SKIndexDocumentIteratorRef inIterator);
 ```
 
-#### Return Value
+## Return Value
 
 The next document URL object in the index.
 
-#### Discussion
+## Discussion
 
 This function returns `NULL` when there are no more document URL objects (of type [`SKDocument`](./skdocument.md)) in the index. When finished iterating, your application must call [`CFRelease`](../CoreFoundation/cfrelease.md) on all retrieved document URL objects that are non-`NULL`.
 

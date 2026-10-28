@@ -10,7 +10,7 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 
 Provides a highly efficient iterator useful for iterating byte sequences derived from asynchronous read functions.
 
-#### Overview
+## Overview
 
 [[Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/AsyncBufferedByteIterator.swift) | [Tests](https://github.com/apple/swift-async-algorithms/blob/main/Tests/AsyncAlgorithmsTests/TestBufferedByteIterator.swift)]
 
@@ -34,7 +34,7 @@ struct AsyncBytes: AsyncSequence {
 }
 ```
 
-#### Detailed Design
+## Detailed Design
 
 ```swift
 public struct AsyncBufferedByteIterator: AsyncIteratorProtocol, Sendable {
@@ -57,7 +57,7 @@ If the read function throws, the error will be thrown by the iteration. Subseque
 
 If the task is cancelled during the iteration, the iteration will check the cancellation only in passes where the read function is invoked, and will throw a `CancellationError`.
 
-##### Naming
+### Naming
 
 This type was named precisely for what it does: it is an asynchronous iterator that buffers bytes.
 

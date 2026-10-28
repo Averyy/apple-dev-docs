@@ -23,11 +23,11 @@ init(maximumPrice: NSDecimalNumber, currencyCode: String)
 - (instancetype) initWithMaximumPrice:(NSDecimalNumber *) maximumPrice currencyCode:(NSString *) currencyCode;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized price range object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 This method does not assign a value to the [`minimumPrice`](./minimumprice.md) property.
 

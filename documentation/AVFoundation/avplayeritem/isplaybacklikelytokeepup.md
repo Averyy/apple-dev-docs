@@ -26,7 +26,7 @@ var isPlaybackLikelyToKeepUp: Bool { get }
 @property (readonly, getter=isPlaybackLikelyToKeepUp) BOOL playbackLikelyToKeepUp;
 ```
 
-#### Discussion
+## Discussion
 
 This property communicates a prediction of playability. Factors considered in this prediction include I/O throughput and media decode performance. It is possible for `playbackLikelyToKeepUp` to indicate [`false`](../../Swift/false.md) while the property [`isPlaybackBufferFull`](./isplaybackbufferfull.md) indicates [`true`](../../Swift/true.md). In this event the playback buffer has reached capacity but there isn’t the statistical data to support a prediction that playback is likely to keep up in the future. It is up to you to decide whether to continue media playback.
 

@@ -28,7 +28,7 @@ class NEPacketTunnelProvider
 
 - [Routing your VPN network traffic](./routing-your-vpn-network-traffic.md)
 
-#### Overview
+## Overview
 
 The [`NEPacketTunnelProvider`](./nepackettunnelprovider.md) class gives its subclasses access to a virtual network interface via the [`packetFlow`](./nepackettunnelprovider/packetflow.md) property. Use the [`setTunnelNetworkSettings(_:completionHandler:)`](./netunnelprovider/settunnelnetworksettings%28_,completionhandler%29.md) method in the Packet Tunnel Provider to specify that the following network settings be associated with the virtual interface:
 
@@ -43,7 +43,7 @@ By specifying IP destination networks, the Packet Tunnel Provider can dictate wh
 
 > ❗ **Important**:  The `com.apple.developer.networking.networkextension` entitlement is required in order to use the [`NEPacketTunnelProvider`](./nepackettunnelprovider.md) class. Enable this entitlement when creating an App ID in your developer account.
 
-##### Creating a Packet Tunnel Provider Extension
+### Creating a Packet Tunnel Provider Extension
 
 Packet Tunnel Providers run as App Extensions for the `com.apple.networkextension.packet-tunnel` extension point.
 
@@ -69,11 +69,11 @@ Here is an example of the NSExtension dictionary in a Packet Tunnel Provider ext
 
 Finally, add the Packet Tunnel Provider extension target to your app’s Embed App Extensions build phase.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 In order to create a Packet Tunnel Provider extension, you must create a subclass of `NEPacketTunnelProvider` and override the methods listed below.
 
-###### Methods to Override
+#### Methods to Override
 
 - [`startTunnel(options:completionHandler:)`](./nepackettunnelprovider/starttunnel%28options,completionhandler%29.md)
 - [`stopTunnel(with:completionHandler:)`](./nepackettunnelprovider/stoptunnel%28with,completionhandler%29.md)

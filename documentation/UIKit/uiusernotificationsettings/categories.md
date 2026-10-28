@@ -23,7 +23,7 @@ var categories: Set<UIUserNotificationCategory>? { get }
 @property (nonatomic, copy, readonly, nullable) NSSet<UIUserNotificationCategory *> * categories;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the [`UIUserNotificationCategory`](../uiusernotificationcategory.md) objects that you specified when creating the settings object. Each object corresponds to a group of actions that may be displayed in conjunction with a push notification. After registration, this property contains the set of actions you specified in your initial request.
 

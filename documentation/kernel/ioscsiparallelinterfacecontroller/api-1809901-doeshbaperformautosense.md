@@ -12,11 +12,11 @@ virtual bool DoesHBAPerformAutoSense (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Return true if HBA performs AutoSense into its own private data buffer.
 
-#### Overview
+## Overview
 
 Queries the HBA child class to determine if it automatically performs AutoSense and provides AutoSense data for each I/O. If the HBA allocates space for AutoSense in its HBA specific data region on a per task basis, the HBA should respond true.
 

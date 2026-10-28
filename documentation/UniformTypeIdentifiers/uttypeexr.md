@@ -19,7 +19,7 @@
 extern UTType * const UTTypeEXR;
 ```
 
-#### Discussion
+## Discussion
 
 An EXR image.
 

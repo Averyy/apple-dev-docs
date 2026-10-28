@@ -21,7 +21,7 @@ Creates a camera in the context of the map that frames the given map rectangle.
 func camera(framing rect: MKMapRect) -> MapCamera
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`MapCamera`](../mapcamera.md) that frames the rectangle you specified.
 

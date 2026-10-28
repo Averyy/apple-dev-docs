@@ -19,11 +19,11 @@ func selectionFrame() -> NSRect
 - (NSRect) selectionFrame;
 ```
 
-#### Return Value
+## Return Value
 
 The cells selection frame, in the `IKImageBrowserView` coordinate space.
 
-#### Discussion
+## Discussion
 
 Subclasses can override this method to customize the position of the selection frame.
 

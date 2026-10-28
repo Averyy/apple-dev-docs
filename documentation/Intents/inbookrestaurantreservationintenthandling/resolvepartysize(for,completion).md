@@ -26,7 +26,7 @@ optional func resolvePartySize(for intent: INBookRestaurantReservationIntent) as
 - (void) resolvePartySizeForBookRestaurantReservation:(INBookRestaurantReservationIntent *) intent withCompletion:(void (^)(INIntegerResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the number of people associated with the reservation.
 

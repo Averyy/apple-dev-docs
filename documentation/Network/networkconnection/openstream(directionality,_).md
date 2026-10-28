@@ -23,7 +23,7 @@ final func openStream<NewApplicationProtocol>(directionality: QUICStream.Directi
 
 Available when `ApplicationProtocol` is `QUIC`.
 
-#### Discussion
+## Discussion
 
 This call will start the underlying QUIC connection if it has not been started already and will block until the QUIC connection is ready.
 

@@ -15,11 +15,11 @@ Creative destination embedded in report rows.
 object ReportingDestination
 ```
 
-#### Discussion
+## Discussion
 
 The `ReportingDestination` captures the destination parameters of a creative as recorded at report time.
 
-##### Example
+### Example
 
 ```json
 {

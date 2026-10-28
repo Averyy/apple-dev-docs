@@ -18,7 +18,7 @@ Removes the view controller from its parent.
 override dynamic func removeFromParent()
 ```
 
-#### Overview
+## Overview
 
 For more information, see [`removeFromParent()`](../../UIKit/uiviewcontroller/removefromparent%28%29.md).
 

@@ -25,7 +25,7 @@ var simdScale: simd_float3 { get set }
 @property (nonatomic) simd_float3 simdScale;
 ```
 
-#### Discussion
+## Discussion
 
 Each component of the scale vector multiplies the corresponding dimension of the node’s geometry. The default scale is `1.0` in all three dimensions. For example, applying a scale of (2.0, 0.5, 2.0) to a node containing a cube geometry reduces its height and increases its width and depth. Scaling is applied relative to the node’s [`simdPivot`](./simdpivot.md) property.
 

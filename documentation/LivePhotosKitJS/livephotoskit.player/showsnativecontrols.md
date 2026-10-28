@@ -15,7 +15,7 @@ The value of this property indicates whether the Apple-provided playback control
 attribute Boolean showsNativeControls;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning this property changes the visibility of the controls.
 

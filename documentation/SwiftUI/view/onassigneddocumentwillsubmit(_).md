@@ -19,11 +19,11 @@ Adds an action to perform before submitting an assigned document.
 @preconcurrency func onAssignedDocumentWillSubmit(_ action: @escaping @Sendable (URL) async -> Bool) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that executes the specified action before assigned document submission.
 
-#### Discussion
+## Discussion
 
 Return `true` to allow the submission to proceed, or `false` to cancel the submission. This is useful for validating document content, confirming user intent, or performing prerequisite operations.
 

@@ -20,7 +20,7 @@ let vmnet_mac_address_key: UnsafePointer<CChar>
 extern const char * const vmnet_mac_address_key;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is of type [`XPC_TYPE_STRING`](../XPC/xpc_type_string-swift.var.md).
 

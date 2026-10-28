@@ -22,7 +22,7 @@ case blackOutline
 PKAddPassButtonStyleBlackOutline
 ```
 
-#### Discussion
+## Discussion
 
 Use this button when displaying this button against a dark background (shown here against a black background). ![](https://developer.apple.com/tutorials/images/com.apple.passkit/media-2557100@2x.png)
 

@@ -21,7 +21,7 @@ A type that specifies a format for the time zone in a date format style.
 struct TimeZone
 ```
 
-#### Overview
+## Overview
 
 The type [`Date.FormatStyle.Symbol.TimeZone`](./timezone.md) includes static factory variables and methods that create custom [`Date.FormatStyle.Symbol.TimeZone`](./timezone.md) objects:
 

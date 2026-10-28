@@ -21,7 +21,7 @@ Custom format style portraying the numeric hour using two digits.
 static var twoDigitsNoAMPM: Date.FormatStyle.Symbol.Hour { get }
 ```
 
-#### Discussion
+## Discussion
 
 This style pads the hour with a leading zero if necessary. It doesn’t include the day period symbol (a.m. or p.m.). For example, `01`, `11`.
 

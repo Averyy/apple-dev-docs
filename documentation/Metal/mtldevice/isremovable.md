@@ -27,7 +27,7 @@ var isRemovable: Bool { get }
 
 - [Finding multiple GPUs on an Intel-based Mac](../finding-multiple-gpus-on-an-intel-based-mac.md)
 
-#### Discussion
+## Discussion
 
 You can respond to GPU removal notifications by registering with the [`MTLCopyAllDevicesWithObserver(handler:)`](../mtlcopyalldeviceswithobserver%28handler%29.md) function in Swift, or the [`MTLCopyAllDevicesWithObserver`](../mtlcopyalldeviceswithobserver.md) function in Objective-C, and responding to the [`removalRequested`](../mtldevicenotificationname/removalrequested.md) and [`wasRemoved`](../mtldevicenotificationname/wasremoved.md) device notification names.
 

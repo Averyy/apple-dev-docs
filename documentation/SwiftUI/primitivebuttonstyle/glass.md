@@ -27,7 +27,7 @@ Available when `Self` is `GlassButtonStyle`.
 
 - [Applying Liquid Glass to custom views](../applying-liquid-glass-to-custom-views.md)
 
-#### Discussion
+## Discussion
 
 In tvOS, this button style applies a Liquid Glass effect regardless of whether the button has focus.
 

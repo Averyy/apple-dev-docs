@@ -24,11 +24,11 @@ class func library() -> Self
 + (instancetype) libraryDestination;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INMediaDestinationReference`](../inmediadestinationreference.md) object or `nil` if unable to create.
 
-#### Discussion
+## Discussion
 
 A library is a generic concept that you must define for your app. For example, in Apple Music, it’s the Apple Music library, while in Podcasts, it’s the user’s subscribed podcasts.
 

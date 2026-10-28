@@ -22,7 +22,7 @@ An action that starts an Apple In-App Purchase.
 @preconcurrency struct PurchaseAction
 ```
 
-#### Overview
+## Overview
 
 StoreKit provides several APIs you can use to enable customers to initiate a purchase. Choose the API that suits your app’s implementation, specifically:
 
@@ -32,7 +32,7 @@ StoreKit provides several APIs you can use to enable customers to initiate a pur
 
 > ❗ **Important**:  If you use StoreKit views such as [`ProductView`](./productview.md), [`StoreView`](./storeview.md), or [`SubscriptionStoreView`](./subscriptionstoreview.md) you don’t need to call any other API to initiate a purchase. StoreKit manages the purchase action automatically, including presenting the purchase confirmation UI. For more information, see [StoreKit views](./storekit-views.md).
 
-##### Use the purchase action API
+### Use the purchase action API
 
 Use `PurchaseAction` instead of [`purchase(options:)`](./product/purchase%28options%29.md) for SwiftUI implementations, including multi-scene apps for visionOS. Call the instance to start an Apple In-App Purchase.
 

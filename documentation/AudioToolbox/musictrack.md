@@ -24,7 +24,7 @@ typealias MusicTrack = OpaquePointer
 typedef struct OpaqueMusicTrack * MusicTrack;
 ```
 
-#### Discussion
+## Discussion
 
 A music track (of type `MusicTrack`) has properties which may be inspected and assigned, including support for looping, muting/soloing, and time-stamp interpretation. You can iterate through the events in a music track, and can perform various editing operations on them.
 

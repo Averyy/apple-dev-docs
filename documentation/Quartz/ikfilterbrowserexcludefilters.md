@@ -19,7 +19,7 @@ let IKFilterBrowserExcludeFilters: String
 extern NSString * const IKFilterBrowserExcludeFilters;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSArray`](../Foundation/nsarray.md) object that lists the filters that you do *not* want to display in the filter browser.
 

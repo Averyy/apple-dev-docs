@@ -23,11 +23,11 @@ static func daily(startDate: Date, endDate: Date) -> WeatherQuery<T>
 
 Available when `T` is `Forecast<DayWeather>`.
 
-#### Return Value
+## Return Value
 
 A daily forecast query for the specified time range
 
-#### Discussion
+## Discussion
 
 - Historical data is available from Aug 1, 2021.
 - Forecasts are available up to 10 days in the future.

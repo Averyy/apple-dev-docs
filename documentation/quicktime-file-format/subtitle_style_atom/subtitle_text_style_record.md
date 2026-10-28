@@ -6,7 +6,7 @@
 
 One or more records that provide details about the subtitle’s style.
 
-#### Overview
+## Overview
 
 One record consists of the following fields.
 

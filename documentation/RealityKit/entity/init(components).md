@@ -28,7 +28,7 @@ Creates an entity with multiple components.
 @preconcurrency convenience init<each T>(components: repeat each T) where repeat each T : Component
 ```
 
-#### Discussion
+## Discussion
 
 This initializer adds the contents of `components` to the new [`Entity`](../entity.md). The components you specify in this initializer override any default components of the same type that RealityKit creates the entity with, such as [`Transform`](../transform.md).
 

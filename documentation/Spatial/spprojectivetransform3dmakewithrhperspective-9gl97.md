@@ -19,11 +19,11 @@
 static SPProjectiveTransform3D SPProjectiveTransform3DMakeWithRHPerspective(double fovyRadians, double aspectRatio, double nearZ, double farZ, bool reverseZ);
 ```
 
-#### Return Value
+## Return Value
 
 A projective transform with right-hand side perspective.
 
-#### Discussion
+## Discussion
 
 Returns a projective transform with right-hand side perspective.
 

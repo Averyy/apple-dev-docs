@@ -24,7 +24,7 @@ func setBoolean(_ value: Bool, forAnnotationKey key: PDFAnnotationKey) -> Bool
 - (BOOL) setBoolean:(BOOL) value forAnnotationKey:(PDFAnnotationKey) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the value sets successfully; otherwise, [`false`](../../Swift/false.md).
 

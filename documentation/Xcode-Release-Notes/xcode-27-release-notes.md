@@ -5,37 +5,37 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 27 includes Swift 6.4 and SDKs for iOS 27, iPadOS 27, tvOS 27, watchOS 27, macOS 27, and visionOS 27. Xcode 27 supports on-device debugging in iOS 17 and later, tvOS 17 and later, watchOS 10 and later, and visionOS. Xcode 27 requires a Mac running macOS Tahoe 26.6 or later.
 
 See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more about compatible platforms and deployment targets.
 
-##### General
+### General
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The scheme action toolbar button now treats ‘without building’ variants, obtained by holding the Control key, as a one-shot operation and reverts to the normal build-then-perform action when no modifiers are used. (12239704)
 - Fixed: If you installed Xcode 27 beta on macOS Tahoe 26.5.1 and earlier, macOS virtual machine installation will fail due to a known bug. To restore virtual machine installation functionality, follow the [How to reinstall macOS guide](https://support.apple.com/en-us/102655). (179068335)
 - Fixed: Devices used for development on a Mac without Xcode 27 installed remain compatible for development on Macs which have not upgraded to Xcode 27 without needing to reboot. (179359489) (FB23066098)
 
-##### Address Sanitizer
+### Address Sanitizer
 
-###### Known Issues
+#### Known Issues
 
 - Address Sanitizer might fail to launch on iOS 27.0, tvOS 27.0, watchOS 27.0, and visionOS 27.0 when building with Xcode 26.4 or older. (178072780)
 
   **Workaround:** Use Xcode 26.5 or later when testing applications with Address Sanitizer.
 
-##### App Intents
+### App Intents
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Siri might generate unexpected responses when attempting to trigger an AppShortcut phrase with an App enum value. (174869053)
 
-##### Apple Clang Compiler
+### Apple Clang Compiler
 
-###### New Features
+#### New Features
 
 - You can now annotate C++ operators declared within classes using API Notes. For example:
 
@@ -49,22 +49,22 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 
   (148534260)
 
-##### Background Assets
+### Background Assets
 
-###### New Features
+#### New Features
 
 - Asset-pack manifests now support path wildcards, file exclusion, hard-coded source roots, and custom destination subpaths. (163943159)
 - You can reduce your app’s storage usage with localized asset packs. The system delivers the appropriately localized asset packs based on the user’s preferred languages. (163944365)
 - Use the new Steam Asset Converter to convert your Steam “depots” into asset packs. (163953178)
 - Xcode can now serve asset packs to your app while debugging on devices by setting a Background Asset Packs folder in the Run scheme action’s Options tab. (165230494)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The packaging tool, ba-package, may generate an invalid asset-pack archive when you specify an on-demand download policy. (179168553) (FB23020247)
 
-##### C++ Standard Library
+### C++ Standard Library
 
-###### New Features
+#### New Features
 
 - The following C++ papers have been implemented:
 
@@ -100,7 +100,7 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
   - `std::align` is now an inline function, which allows the compiler to better optimize calls to it.
   - `std::atomic::wait` has been refactored to accept more types to use platform native wait functions directly. This is guarded behind the ABI Macro `_LIBCPP_ABI_ATOMIC_WAIT_NATIVE_BY_SIZE`. (178191000)
 
-###### Deprecations
+#### Deprecations
 
 - The following items have been deprecated or removed:
 
@@ -120,15 +120,15 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
   - `std::allocator` is now trivially default-constructible. The behavior can be reverted by defining `_LIBCPP_DEPRECATED_ABI_NON_TRIVIAL_ALLOCATOR`. This compatibility macro is going to be removed in an upcoming release.
   - `bitset::operator[]` now returns `bool`, making libc++ conform to the Standard. The behavior can be reverted by defining `_LIBCPP_DEPRECATED_ABI_BITSET_CONST_SUBSCRIPT_RETURN_REF`. This compatibility macro is going to be removed in an upcoming release. (178191050)
 
-##### CarPlay Simulator
+### CarPlay Simulator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Cannot start a CarPlay connection with CarPlay Simulator when accessed via Device Hub. (179523697)
 
-##### Coding Intelligence
+### Coding Intelligence
 
-###### New Features
+#### New Features
 
 - Google Gemini is now available in the coding assistant. (171990272)
 - Planning with agents is now first class in Xcode. Plans appear as editable Markdown artifacts next to the conversation. You can use dedicated UI to review, annotate, discuss changes to the plan, and approve before the agent proceeds. (172857081)
@@ -185,7 +185,7 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 - Google Antigravity is now available in the coding assistant. (183074664)
 - Coding Intelligence agents can now verify tvOS apps, navigating with the Siri Remote to move focus, select, and go Home, and entering text into focused fields. (183317784)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Buttons in the Coding Assistant’s prompt area now use more accessible labels and descriptions. (177462284)
 - Fixed VoiceOver getting trapped in the Coding Assistant prompt area. (177462397)
@@ -196,48 +196,48 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 - Fixed: The Coding Assistant artifact view shows preview snapshots from all turns even when the Scope filter is set to Last Turn. (185119267)
 - Fixed: In some cases, connected projects may not appear in the Xcode Service menu bar extra panel. (185161968)
 
-##### Console
+### Console
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Console may fail to scroll fully to the bottom while output is streaming. (175800015)
 
-###### Known Issues
+#### Known Issues
 
 - When streaming `stdout` and `stderr` from multiple processes at the same time (for example: in parallel testing scenarios), the results may be significantly delayed. (165098287)
 
-##### Core AI
+### Core AI
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The option to extract inputs from prediction events in the Core AI gauge in Xcode may not work reliably. (172502576)
 - Fixed: The number of parameters displayed in the Core AI model view in Xcode is inaccurate for models with multiple functions that share parameters. (177784390)
 - Fixed: When Metal API Validation is enabled, CoreAI models might fail to execute. (177991751)
 
-##### Core ML
+### Core ML
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Nested MLPackage bundles might cause Xcode to hang. (184876764) (FB24320785)
 
-##### Debugging
+### Debugging
 
-###### New Features
+#### New Features
 
 - In projects using bridging headers, LLDB can now directly import explicitly built Swift modules and PCH from DerivedData. This can dramatically speed up the first expression or `po` in a debug session involving a bridging header. (168272248)
 - LLDB now provides a `language swift task tree` command, which prints a tree of all the Swift Tasks the debugger knows about. For more information, see the output of `help language swift task tree`. (169471480)
 - LLDB can now inspect data types with ~Copyable fields in the standard library and other system frameworks. (176282041)
 - LLDB now ships with an MCP server (lldb-mcp). See [Model Context Protocol](https://lldb.llvm.org/use/mcp.html) for examples. (176901842)
 
-##### Developer Documentation
+### Developer Documentation
 
-###### New Features
+#### New Features
 
 - You can now use natural language to search the developer documentation. Matching documents are returned based on semantic matching. (165476491)
 
-##### Device Hub
+### Device Hub
 
-###### New Features
+#### New Features
 
 - Common Mac mouse and trackpad gestures such as scrolling, pinching, and rotating now work with standard UIKit components on iOS devices, either physical or simulated. When scrolling with a pointing device, `UIEvent.EventType.scroll` is emitted. When pinching or rotating with a trackpad, `UIEvent.EventType.transform` is emitted. As a result of these pointer-based events being emitted, you may see `UIPointerInteraction` effects applied based on where the pointer is located in your app. Additionally, clicking with a mouse or trackpad produces a simulated finger touch of type `UITouch.TouchType.direct` rather than `UITouch.TouchType.indirectPointer`. This hybrid behavior has been added for ease of use for Device Hub, and does not reflect functionality available on physical devices. To validate your app’s full pointer behavior, select “Simulate Trackpad or Mouse” from the Device menu, test on a physical iPad with a paired pointing device, or use iPhone Mirroring. (48372360) (FB5341466)
 - Device Hub adds a new way to pair iPhone, iPad and Apple Watch running iOS 27/iPadOS 27/watchOS 27 and later over a network.
@@ -248,7 +248,7 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 - A device’s UUID is now shown by default in the Info Inspector under ‘Hardware Properties’. (183547490)
 - To reduce confusion with other unique identifiers, the CoreDevice ID is no longer shown by default in the Info Inspector. You can use the ‘Edit Visibility’ button at the bottom of the Info inspector to make the CoreDevice ID visible. (183763393)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The ‘VoiceOver’ toggle in the appearance settings inspector does not enable voiceover on the device. (173507341)
 - Fixed: The “Text Size” in the appearance inspector disappears if one of larger text sizes from Accessibility is being used. (175365925)
@@ -287,7 +287,7 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 - Fixed: visionOS simulator takes longer to boot than expected and may stall when deploying an app. (180078336)
 - Fixed: When an iPad connects to Device Hub without viewing the screen while the software keyboard is on screen, it can disappear. (181166904)
 
-###### Known Issues
+#### Known Issues
 
 - Connecting a game controller to a simulator or device is only supported for the visionOS simulator. (109362811)
 - Viewing the video from, or sending inputs to, a physical Apple Vision Pro is not supported in Device Hub 27. All other Device Hub features, like changing settings, DeviceFS, and so forth, are supported. (142582218)
@@ -323,13 +323,13 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 
   **Workaround:** Wait 2 minutes for the condition to clear.
 
-###### Deprecations
+#### Deprecations
 
 - Input interactions such as keyboard or pointer are only supported on the following OS versions and newer: macOS 15.0, iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0. (160482487)
 
-##### devicectl
+### devicectl
 
-###### New Features
+#### New Features
 
 - –json-output now fully supports passing JSON output to stdout. See devicectl –help for more details. (63583278)
 - As of JSON version 5, devicectl now adds a ‘_deprecationNotice’ field to any JSON result that contains deprecated properties. Here is the deprecation notice shown for the JSON for device details:
@@ -349,38 +349,38 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
   (170812159)
 - ‘devicectl list devices’ now shows a unique identifier for devices. If a UDID is available, that is presented, otherwise, if available, the ECID is presented, otherwise the CoreDevice identifier is shown. The JSON returned by the command is unaffected. (183766625)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed issues where passing a key path to a `--filter` flag would fail to find matches or just return an error. (176141854)
 - Fixed: The `--show` flag has been removed from the `devicectl device info details` command. Instead, the command provides the full set of device properties in the textual output and JSON (under the ‘properties’ dictionary). (179880477)
 - Fixed: `--filter`, `--columns`, or `--sort-by` flags now work properly when provided a JSON keypath like “properties.state.visibilityClass”. (183772989)
 - Fixed issues with various devicectl commands not respecting `--filter` or `--sort-by` flags. (183773087)
 
-###### Deprecations
+#### Deprecations
 
 - As of JSON version 5, the following JSON fields in a device details result have been deprecated: ‘hardwareProperties’, ‘deviceProperties’, ‘connectionProperties’. These fields will be removed in a future release. Please use the ‘properties’ dictionary instead. (183772705)
 
-##### Enhanced Security
+### Enhanced Security
 
-###### New Features
+#### New Features
 
 - `arm64e.x1` or the Hardware-Checked Pointer Arithmetic slice contains the Check for Overflow of Pointer Arithmetic entitlement by checking for overflow into memory tags, providing additional protection on top of Memory Integrity Enforcement. (152104701)
 
-###### Known Issues
+#### Known Issues
 
 - Apps with Hardware-Checked Pointer Arithmetic Slice feature enabled cannot be uploaded to the App Store on macOS Tahoe 26.6 with Xcode automatic signing enabled. (187057599)
 
   **Workaround:** Distribute with macOS 27 and Xcode 27 or use manual signing.
 
-##### Foundation
+### Foundation
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `+[NSURL URLWithString:]` no longer double-encodes the `%` of valid percent-escape sequences when encoding other invalid characters. (161588649) (FB20439045)
 
-##### Icon Composer
+### Icon Composer
 
-###### New Features
+#### New Features
 
 - Icon Composer 2.0 supports a new sharper rendering mode for upcoming 2027 operating systems with support for refractivity, outside specular, and deeper shadows.
 
@@ -388,9 +388,9 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 
   When your icon looks great in both design generations, add it to your Xcode project to use it with all OS versions. (172404678)
 
-##### Instruments
+### Instruments
 
-###### New Features
+#### New Features
 
 - `xctrace record` allows you to pass recording options for Instruments from within the CLI. Use `--show-recording-options` to print available options for a template or instrument as a JSON. Pass a modified JSON file with customized options using `--recording-options <json path>`. (47649405) (FB5336460)
 - Summary views in Instruments allows you to select multiple rows and copy the content. (50558735)
@@ -430,7 +430,7 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 - Runs and Comparisons can now be bulk-deleted by using multi-selection and the `Delete` menu item or context menu. (179565486) (FB23120864)
 - `xctrace export` allows for specifying files like .atrc and .logarchive as input, removing the need for a two-step process of running `xctrace import` followed by `xctrace export`. (179742657)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where the Hangs instrument would flag false-positive responsiveness issues in non-UI processes like daemons. (110146539)
 - Fixed an issue where profiling an iOS app that was already open would close the app instead of relaunching it. (150320702)
@@ -455,27 +455,27 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 - Fixed: Detail switcher button in Instruments is not responding to touches when running Instruments on macOS Golden Gate Beta 4. (182718545)
 - Fixed an issue where `xctrace record` would never start a recording for simulator device targets. (183624872) (FB24069433)
 
-###### Deprecations
+#### Deprecations
 
 - Instruments now requires target iOS, watchOS and tvOS devices with versions of at least iOS 17, watchOS 10, or tvOS 17. (166097304)
 
-##### Intel Deprecation
+### Intel Deprecation
 
-###### New Features
+#### New Features
 
 - Build targets with a min deployment target set to macOS 27.0 or DriverKit 27.0 will not build Universal by default. The `ARCHS_STANDARD` build setting will no longer include x86_64 when `MACOSX_DEPLOYMENT_TARGET` or `DRIVERKIT_DEPLOYMENT_TARGET` >= 27.0. The x86_64 architecture can be added to the `ARCHS` build setting if this is needed. (161837535)
 
-###### Deprecations
+#### Deprecations
 
 - Xcode 27 will only install and run on Apple silicon Macs. The macOS 27 SDK supports back deploying Universal (Intel and Apple Silicon) apps to macOS 12 and later. Intel development is still possible with macOS versions that support Rosetta like macOS 27. (162138432)
 
-##### Interface Builder
+### Interface Builder
 
-###### New Features
+#### New Features
 
 - Introducing a new Interface Builder compilation mode, `toolchain`, for UIKit (Cocoa Touch) based documents. Enabled by default, `toolchain` allows compiling IB documents without the need to download a simulator, which is especially useful for build servers. Should you experience issues during this transition period, you can opt out via the `IBC_COCOATOUCH_COMPILER_MODE = simulator` build setting or using `--cocoatouch-compiler-mode simulator` when manually invoking `ibtool`. If you opt out, please file Feedback and include any errors you may have received from `ibtool` so we can investigate. (114401122)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Xcode Settings > Components incorrectly showed a ‘Get’ button for simulators already downloaded and used with Rosetta. (179042726) (FB22978644)
 - Fixed: A `TVCardView` loaded from a storyboard or xib may render incorrectly at runtime. (179781291) (FB23188951)
@@ -484,15 +484,15 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 - Fixed: `ibtool` fails to compile documents containing a “Peek & Pop” segue originating from a table view cell. (180655818) (FB23403072)
 - Fixed: `ibtool` fails to compile documents containing trait variations involving directional edge insets. (182214955) (FB23746623)
 
-##### Linking
+### Linking
 
-###### Deprecations
+#### Deprecations
 
 - The ld64 linker has been removed and the `-ld_classic` option is no longer supported. (165165518)
 
-##### Localization
+### Localization
 
-###### New Features
+#### New Features
 
 - Exporting localizations now extracts `NSLocalizedString` and similar macros from header files in addition to implementation files. (19191207) (FB5500560)
 - Agents in Xcode can now be used to translate strings in String Catalogs. You can ask an agent to translate strings ranging from a single feature to an entire project, into one or more languages.
@@ -506,7 +506,7 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 - When agents use the “Prepare Project for Localization” tool, String Catalog artifacts now show any keys that were removed due to no longer being found in source code. (179755385)
 - Added style guides for additional languages to guide agent-driven translation. (183679292)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where automatic strings could get removed from String Catalogs when declared using AppIntent APIs that take table parameters. (174776249)
 - Fixed an issue where strings inside availability-constrained `#Preview` macros would not be excluded from String Catalogs. (176188980) (FB22696182)
@@ -515,35 +515,35 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 - Fixed: Resolved an issue where Xcode could use too much memory when generating comments or translating strings. (179800456) (FB23193029)
 - Fixed: String Catalog artifacts in the artifact lane now respect turn scope options such as “Last Turn” and “All Turns”. (182971491)
 
-##### Metal
+### Metal
 
-###### New Features
+#### New Features
 
 - The Diagnostics Panel in the Scheme Editor exposes more Metal validation options including logging non-fatal actions, validating load and store actions, logging resource allocation stack traces, and controlling GPU stack overflow detection. (162401628)
 - The Metal Performance HUD exposes more MetalFX related metrics such as jitter sequence length and motion vector scale. The configuration panel includes a new “Overrides” panel when MetalFX is enabled, and allows customization of jitter multiplier, motion vector scale and exposure visualization for debugging purposes. (162557993)
 - The Metal Capture popover includes a new “Include MetalFX temporal scaler history” advanced option that improves texture quality during replay when your app uses MetalFX temporal scaling. (169816556)
 - The Metal Capture popover includes a new “Optimize shared memory capture” advanced option that improves capture performance and reduces GPU trace size on disk. (170023938)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Queue Debugging setting to Enable Backtrace Recording is off by default. To view the process grouped by dispatch queues in the debug navigator, or to get recorded backtraces indicating the originating dispatch operation when viewing the process grouped by thread, please enable the setting in the scheme editor under Run > Options > Queue Debugging > Enable Backtrace Recording. (164183224)
 - Fixed: An app may crash when run from Xcode with both Hardware Memory Tagging and GPU Frame Capture enabled. (178488388)
 
-##### MusicKit
+### MusicKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `MusicPlayer.Queue` and `MusicPlayer.State` might not always update when using `@State` in SwiftUI. (176947544)
 
-##### On Demand Resources
+### On Demand Resources
 
-###### Deprecations
+#### Deprecations
 
 - On Demand Resources and the `NSBundleResourceRequest` API are deprecated. Use Background Assets instead. (170066290)
 
-##### Organizer
+### Organizer
 
-###### New Features
+#### New Features
 
 - The Insights Overview summarizes high-impact performance regressions for metrics and diagnostic reports for your app. Use it to plan and prioritize performance engineering work. (159975360)
 - The new Hitches metric replaces the Scrolling metric in the Organizer, now displaying animation hitches for all animations in your app. Use it to get a comprehensive view of animation performance. (160333794)
@@ -551,9 +551,9 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 - AI-driven analysis is now available for diagnostics in Xcode Organizer, enabling expert analysis of power and performance issues and seamless integration with source code and the Coding Assistant. Quickly resolve the highest-impact performance issues in your app by using Generate Recommendations for Crash, Energy, Disk Write, Hang and Launch diagnostics. (177568727)
 - Metric goals are now available for Battery Usage, Disk Writes, Hang Rate, Hitches, Memory, and Storage metrics, allowing you to prioritize performance engineering across more areas. Similar-app goals are now supported for Hang Rate, On-screen Battery Usage, Disk Writes, and Storage. Launch Time similar-app goals have been refined for improved accuracy, establishing new baselines. (177572744)
 
-##### Previews
+### Previews
 
-###### New Features
+#### New Features
 
 - Canvas can now display a grid of previews for each argument passed to the new `#Preview(arguments:)` syntax. Clicking on a preview in argument or variant grids opens the preview in the Interactive mode. (167544057)
 - Holding command will cause the input events (zooming and scrolling) to be handled by the canvas. This can be disabled with the new ‘Send Command-Modified Input to Canvas’ toggle in the Editor > Canvas menu. (170072429)
@@ -564,7 +564,7 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 - The canvas overrides picker now includes a Control Borders group for previewing content with control borders shown or hidden. (181850835)
 - The RenderPreview MCP tool now returns the display name and line number of the preview it rendered. (182215198)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Simulators booted for previewing are now shut down once they are no longer in use, keeping the number of running simulators within a budget based on your Mac’s resources. (105131888)
 - Fixed an issue where the crash screen for a watchOS preview appeared with a light background instead of the expected dark appearance. (146868878)
@@ -585,17 +585,17 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 - Fixed: The Localizations override is no longer offered for projects that support only one localization. (181858899)
 - Fixed: The Canvas’ device picker now correctly shows only destinations that the file’s module supports. (182248863)
 
-###### Deprecations
+#### Deprecations
 
 - `PreviewProvider` and its family of preview modifiers. (144168701)
 
-##### Previews & Playgrounds
+### Previews & Playgrounds
 
-###### New Features
+#### New Features
 
 - Each #Preview and #Playground tab can now be pinned independently in the canvas. (167543928)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a hang that could occur when a large number of edits were applied to a file at once, such as during an AI-assisted edit. (163125754)
 - Fixed an issue where there was a long delay before Canvas showed an error when a likely crash occurred. (168097944)
@@ -614,27 +614,27 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 - Fixed an issue where previews could fail to build for targets that use the swiftc linker driver. (183459025)
 - Fixed: A clearer error is now shown when a project’s targets contain a dependency cycle, rather than the preview crashing. (183874239) (FB24124799)
 
-###### Known Issues
+#### Known Issues
 
 - Standalone Swift files opened by double-clicking in Finder may fail to run #Playground or #Preview blocks. (177587795)
 
   **Workaround:** Open Swift files using File>Open… or drag them directly onto the Dock icon.
 
-##### Security
+### Security
 
-###### New Features
+#### New Features
 
 - The new “adopt-c-bounds-safety” Code Intelligence skill can help you adopt the bounds safety extension for C (-fbounds-safety) with a file-by-file adoption workflow. For more information about the C bounds safety extension, see [Adopt bounds checking in C](../Xcode/enabling-enhanced-security-for-your-app.md#Adopt-bounds-checking-in-C). (177739344)
 - The new “audit-xcode-security-settings” Code Intelligence skill can help you audit your app to suggest enabling additional security-oriented build settings and entitlements. For more information on these settings, see [Enabling enhanced security for your app](../Xcode/enabling-enhanced-security-for-your-app.md). (181104536)
 
-##### Simulator
+### Simulator
 
-###### New Features
+#### New Features
 
 - `simctl` and `devicectl` now support rebooting a simulator using the reboot command. (172303413)
 - The simulator runtimes now contain a pre-built dyld cache. This will make first launch of a simulator much faster. (179846743)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: An extra control for keyboard capture mode appears in the Device Hub toolbar under the view for the visionOS simulator. (177082480)
 - Fixed: An extra control for Simulate Trackpad or Mouse mode appears in the Device Hub toolbar under the view for the visionOS simulator. (177086926)
@@ -642,39 +642,39 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 - Fixed: After rebooting a running visionOS simulator, the ability to interact with the simulator is lost. (178635793)
 - Fixed: Accessibility Inspector cannot inspect elements in simulators. (179033881) (FB22976268)
 
-###### Known Issues
+#### Known Issues
 
 - Some simulator runtimes are not completely deleted when removed, re-appearing after a reboot. (141290052) (FB16083602)
 
-##### Source Editor
+### Source Editor
 
-###### New Features
+#### New Features
 
 - All new Markdown editor. View markdown files in your project and from agents in rendered form. Create and edit markdown using familiar formatting tools. View markdown as source code and see the rendered preview by activating Xcode’s canvas. (175022151)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Use Selection for Find (Cmd-E) did not function for text selections in the “old” side of an inline diff display. (52361137)
 - Fixed an issue in macOS 27 where clicking the close button in an expanded macro added a breakpoint rather than closing the expansion. You can use Editor > Hide Macro Expansion to close the expansion. (174376098)
 
-##### StoreKit Testing in Xcode
+### StoreKit Testing in Xcode
 
-###### New Features
+#### New Features
 
 - New StoreKit configuration UI to configure In-App Purchase offer codes, and new off-device purchase options to test purchases with IAP offer codes via the Transaction Manager. (141012907)
 - Subscription Bundles can be configured for local testing in the StoreKit Configuration. (164203930)
 - Subscription Suites can be configured for local testing in the StoreKit Configuration. (166899262)
 - Add support for creating volume purchase transactions for 1-month and 1-year auto-renewing subscriptions through the Xcode Transaction Manager. (169041777)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: StoreKit Testing in Xcode configurations that sync with App Store Connect display incorrect commitmentInfo for monthly subscriptions with a 12-month commitment. (178269160)
 - Fixed: Inspecting transaction details for a subscription suite purchase in the Transaction Manager displays incorrect product information. (179413970)
 - Fixed: `StoreKitTest.buyProduct(identifier:)` throws StoreKitError.unknown. (184117336) (FB24168768)
 
-##### Swift Compiler
+### Swift Compiler
 
-###### New Features
+#### New Features
 
 - The Swift dependency scanner has been optimized to avoid redundant setup work and header searches when looking up Clang modules during a single dependency-scan action, substantially improving scanning performance.
 
@@ -682,7 +682,7 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 
   The most common cases are projects or SDKs that vend the same Clang module name from more than one location on the header search path, and vendored third-party sources that ship a module.modulemap redeclaring an SDK module. (136303612)
 
-###### Known Issues
+#### Known Issues
 
 - A computed property with both an `init` accessor and an array/dictionary literal initial value will no longer compile if the getter is declared before the `init` accessor.
 
@@ -701,16 +701,16 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 
   **Workaround:** Swap the `init` accessor and the getter such that the `init` accessor is declared first.
 
-##### Swift Package Manager
+### Swift Package Manager
 
-###### New Features
+#### New Features
 
 - When one or more test targets in a package experience a test failure, `swift test` summarizes them at the end. (168311253)
 - `swift test` now supports repeating test cases until a condition is met. Pass `--maximum-repetitions` and `--repeat-until [pass|fail]` to `swift test` to repeat your tests until they pass or fail. Only those test cases that match the repeat condition will be repeated. (177561078)
 
-##### Swift/C++ Interoperability
+### Swift/C++ Interoperability
 
-###### New Features
+#### New Features
 
 - When calling a C++ constructor that has parameters with default expressions, you no longer have to pass all arguments explicitly in Swift. (118987713)
 - You can now convert Swift closures to instances of `std::function`. For example:
@@ -775,19 +775,19 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 
   (167712240)
 
-##### System
+### System
 
-###### New Features
+#### New Features
 
 - System now provides Swift APIs for the C `stat`, `lstat`, `fstat`, and `fstatat` system calls. This includes a new `Stat` type with initializers from `FilePath`, `FileDescriptor`, or a C string; `FilePath.stat()` and `FileDescriptor.stat()` instance methods; and supporting types (`FileType`, `FileMode`, `FileFlags`, `UserID`, `GroupID`, `DeviceID`, and `Inode`). See [SYS-0006](https://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md) for more details. (160612181)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [SYS-0006](https://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [SYS-0008](https://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details. (177911316)
 
-##### Testing
+### Testing
 
-###### New Features
+#### New Features
 
 - In your Test Plan, you can control how the system responds to target application crashes during UI testing by choosing one of four severity levels: off, warning, failure (default), or fatal failure. (168107814)
 - Added a filter to the test plan configurations tab. (168608491)
@@ -797,7 +797,7 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 - Updated the test plan JSON to sort tags, making it easier to review changes. (174178766)
 - XCTest now includes XCUIVoiceOverService, a new UI testing API for verifying VoiceOver behavior in your app. Use it to drive VoiceOver from UI tests and validate focus, spoken output, and navigation across supported platforms. (175858549)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where adding an attachment to a test case during the `XCTestObservation` callbacks `testCaseWillStart(_:)` or `testCaseDidFinish(_:)` by calling `XCTestCase.add(_:)` did not persist the attachment in the results. (89059895)
 - Fixed: The ‘Test Repetition Mode’ setting now only repeats individual Swift Testing test cases, rather than repeating the entire test plan. (130508488)
@@ -809,21 +809,21 @@ See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more ab
 - Fixed: watchOS Unit and UI tests may not run on device. (178874363)
 - Fixed: The test link for a parameterized Swift Testing test case now includes a hash of the test’s arguments, allowing individual argument cases of the same test to be uniquely identified. (181841349)
 
-##### Themes
+### Themes
 
-###### New Features
+#### New Features
 
 - Customized and imported themes are now stored on disk alongside legacy theme files. (177747192)
 
-##### USDKit
+### USDKit
 
-###### Deprecations
+#### Deprecations
 
 - Meshes compressed using the USDKit export API or `usdcrush tool` in Beta 1 cannot be decoded by Beta 2, and  meshes from Beta 2 cannot be decoded by Beta 1. (177417812)
 
-##### Wi-Fi Aware
+### Wi-Fi Aware
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `wifiAware` and `wifiAware(_:)` extensions on NWParameters are unavailable for configuring Wi-Fi Aware properties. (178019157)
 

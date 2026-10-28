@@ -25,7 +25,7 @@ let CLLocationDistanceMax: CLLocationDistance
 extern const CLLocationDistance CLLocationDistanceMax;
 ```
 
-#### Discussion
+## Discussion
 
 When scheduling deferred updates, you can use this constant to indicate that a new update should be triggered only after the device moves a significantly large distance.
 

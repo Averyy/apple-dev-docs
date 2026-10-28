@@ -17,7 +17,7 @@ CareKit can support any store that conforms to this protocol. The `OCKStore` cla
 typealias OCKStoreProtocol = OCKPatientStore & OCKCarePlanStore & OCKContactStore & OCKEventStore
 ```
 
-#### Discussion
+## Discussion
 
 `OCKStoreProtocol` requires that a minimum level of functionality be provided, and then provides enhanced functionality via protocol extensions. The methods provided by protocol extensions are naive implementations and are not efficient. Developers may wish to use the customization points on `OCKStoreProtocol` to provide more efficient implementations that take advantage of the underlying database’s native features.
 

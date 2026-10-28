@@ -5,7 +5,7 @@
 
 Constants AppKit uses to name exceptions.
 
-#### Overview
+## Overview
 
 For more information, see [`NSException`](../Foundation/nsexception.md) and [`NSExceptionName`](../Foundation/nsexceptionname.md).
 

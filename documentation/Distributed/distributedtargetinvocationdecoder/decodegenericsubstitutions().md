@@ -22,11 +22,11 @@ Decode all generic substitutions that were recorded for this invocation.
 mutating func decodeGenericSubstitutions() throws -> [any Any.Type]
 ```
 
-#### Return Value
+## Return Value
 
 Array of all generic substitutions necessary to execute this invocation target.
 
-#### Discussion
+## Discussion
 
 The values retrieved from here must be in the same order as they were recorded by [`recordGenericSubstitution(_:)`](../distributedtargetinvocationencoder/recordgenericsubstitution%28_%29.md).
 

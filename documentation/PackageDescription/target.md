@@ -12,7 +12,7 @@ The basic building block of a Swift package.
 final class Target
 ```
 
-#### Overview
+## Overview
 
 Each target contains a set of source files that Swift Package Manager compiles into a module or test suite. You can vend targets to other packages by defining products that include the targets.
 

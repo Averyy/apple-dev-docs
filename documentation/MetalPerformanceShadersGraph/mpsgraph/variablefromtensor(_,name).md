@@ -24,7 +24,7 @@ func variableFromTensor(_ tensor: MPSGraphTensor, name: String?) -> MPSGraphTens
 - (MPSGraphTensor *) variableFromTensorWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

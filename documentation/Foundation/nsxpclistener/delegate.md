@@ -25,7 +25,7 @@ weak var delegate: (any NSXPCListenerDelegate)? { get set }
 @property (weak, nullable) id<NSXPCListenerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 If no delegate is set, all new connections are rejected. See the documentation for [`NSXPCListenerDelegate`](../nsxpclistenerdelegate.md) for implementation details.
 

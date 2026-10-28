@@ -27,7 +27,7 @@ func remove(_ observer: any SKPaymentTransactionObserver)
 - (void) removeTransactionObserver:(id<SKPaymentTransactionObserver>) observer;
 ```
 
-#### Discussion
+## Discussion
 
 If there are no observers attached to the queue, the payment queue does not synchronize its list of pending transactions with the Apple App Store, because there is no observer to respond to updated transactions.
 

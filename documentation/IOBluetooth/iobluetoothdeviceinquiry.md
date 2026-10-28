@@ -19,7 +19,7 @@ class IOBluetoothDeviceInquiry
 @interface IOBluetoothDeviceInquiry : NSObject
 ```
 
-#### Overview
+## Overview
 
 You should only use this object if your application needs to know about in-range devices and cannot use the GUI provided by the IOBluetoothUI framework. It will not let you perform unlimited back-to-back inquiries, but will instead throttle the number of attempted inquiries if too many are attempted within a small window of time. Important Note: DO NOT perform remote name requests on devices from delegate methods or while this object is in use. If you wish to do your own remote name requests on devices, do them after you have stopped this object. If you do not heed this warning, you could potentially deadlock your process.
 

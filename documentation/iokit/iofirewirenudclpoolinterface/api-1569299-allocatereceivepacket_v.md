@@ -16,11 +16,11 @@ Allocate a ReceivePacket NuDCL and append it to the program
 NuDCLReceivePacketRef (*AllocateReceivePacket_v)(IOFireWireLibNuDCLPoolRef self, CFMutableSetRef saveBag, UInt8 headerBytes, IOVirtualRange *firstRange);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an NuDCLReceivePacketRef on success or 0 on failure.
 
-#### Discussion
+## Discussion
 
 Same as AllocateReceivePacket but ranges are passed as a NULL-terminated vector of IOVirtualRange's
 

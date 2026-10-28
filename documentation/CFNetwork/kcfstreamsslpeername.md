@@ -24,7 +24,7 @@ let kCFStreamSSLPeerName: CFString
 extern CFStringRef const kCFStreamSSLPeerName;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the host name that was used when the stream was created is used; if no host name was used, no peer name will be used. Set the value of this key to `kCFNull` to prevent name verification.
 

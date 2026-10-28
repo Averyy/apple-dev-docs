@@ -21,7 +21,7 @@ The default text field style, based on the text field’s context.
 struct DefaultTextFieldStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`automatic`](./textfieldstyle/automatic.md) to construct this style.
 

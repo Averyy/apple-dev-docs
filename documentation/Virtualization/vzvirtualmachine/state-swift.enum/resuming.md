@@ -19,7 +19,7 @@ case resuming
 VZVirtualMachineStateResuming
 ```
 
-#### Discussion
+## Discussion
 
 This state is an intermediate state between the [`VZVirtualMachine.State.paused`](./paused.md) and [`VZVirtualMachine.State.running`](./running.md) states.
 

@@ -19,7 +19,7 @@ var objectValueOfSelectedItem: Any? { get }
 @property (strong, readonly, nullable) id objectValueOfSelectedItem;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the object from the combo box’s internal item list corresponding to the last item selected from the pop-up list, or `nil` if no item is selected.
 

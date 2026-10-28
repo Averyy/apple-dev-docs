@@ -20,7 +20,7 @@ case needLocationPermissions
 ARGeoTrackingStateReasonNeedLocationPermissions
 ```
 
-#### Discussion
+## Discussion
 
 This reason indicates that the user has not given this app permission to access the user’s location. To enable geo tracking, an app needs to ask the user to enable location sharing for this app in Settings.
 

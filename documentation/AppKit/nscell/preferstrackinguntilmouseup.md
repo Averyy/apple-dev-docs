@@ -19,11 +19,11 @@ class var prefersTrackingUntilMouseUp: Bool { get }
 @property (class, readonly) BOOL prefersTrackingUntilMouseUp;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if tracking stops when the cursor leaves the cell, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The default implementation returns [`false`](../../Swift/false.md). Subclasses may override this method to return a different value.
 

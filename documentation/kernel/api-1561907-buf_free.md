@@ -15,11 +15,11 @@ Free a buffer that was allocated with buf_alloc().
 void buf_free(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 The storage (UPL, data pointer) associated with an iobuf must be freed manually.
 

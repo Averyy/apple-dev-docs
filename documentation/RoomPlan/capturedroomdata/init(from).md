@@ -16,7 +16,7 @@ Creates captured room data by deserializing the decoder of a prior scan.
 init(from decoder: any Decoder) throws
 ```
 
-#### Discussion
+## Discussion
 
 To serialize a scan, call [`encode(to:)`](./encode%28to%29.md).
 

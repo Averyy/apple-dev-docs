@@ -22,11 +22,11 @@ Returns a `Decoder` instance for decoding `super` from the container associated 
 func superDecoder() throws -> any Decoder
 ```
 
-#### Return Value
+## Return Value
 
 A new `Decoder` to pass to `super.init(from:)`.
 
-#### Discussion
+## Discussion
 
 Equivalent to calling `superDecoder(forKey:)` with `Key(stringValue: "super", intValue: 0)`.
 

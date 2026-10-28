@@ -23,7 +23,7 @@ optional func stateRestorationActivity(for scene: UIScene) -> NSUserActivity?
 - (NSUserActivity *) stateRestorationActivityForScene:(UIScene *) scene;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to return an [`NSUserActivity`](../../Foundation/nsuseractivity.md) object with information about your scene’s current state. Save enough information to be able to restore that state again after UIKit disconnects and then reconnects the scene. User activity objects are a mechanism to record what the user is doing, so you don’t need to manually persist the state of your scene’s UI.
 

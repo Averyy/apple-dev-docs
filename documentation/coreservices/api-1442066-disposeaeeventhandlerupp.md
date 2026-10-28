@@ -19,7 +19,7 @@ func DisposeAEEventHandlerUPP(_ userUPP: AEEventHandlerUPP!)
 void DisposeAEEventHandlerUPP(AEEventHandlerUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 See the [`AEEventHandlerProcPtr`](./aeeventhandlerprocptr.md) callback function. 
 

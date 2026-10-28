@@ -10,15 +10,15 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Add resource files to your Swift package and access them in your code.
 
-#### Overview
+## Overview
 
 If you declare `// swift-tools-version: 5.3` or later in your `Package.swift` file, you can bundle resources alongside your source code in Swift packages. For example, Swift packages can contain asset catalogs, test fixtures, and so on.
 
-##### Add resource files
+### Add resource files
 
 Package manager treats non-source files found in the target’s sources directory as assets, scoped to that target. For example, any resources for the `MyLibrary` target reside by default in `Sources/MyLibrary`. To easily distinguish resources from source files, create and use a subfolder for the resources. For example, put all resource files into a directory named `Resources`, resulting in all of your resource files residing at `Sources/MyLibrary/Resources`.
 
-##### Explicitly declare or exclude resources
+### Explicitly declare or exclude resources
 
 To add a resource that the compiler doesn’t handle automatically, explicitly declare it as a resource in your package manifest. If you’re building your package with Xcode, it automatically handles a number of kinds of resources.
 
@@ -52,7 +52,7 @@ targets: [
 
 In general, avoid placing files that aren’t resources in a target’s source folder. If that’s not feasible, avoid excluding every file individually, place all files you want to exclude in a directory, and add the directory path to the array of excluded files. Swift Package Manager warns you about files it doesn’t recognize in a target’s `Sources` directory.
 
-##### Access a resource in code
+### Access a resource in code
 
 If a target includes resources, the compiler creates a resource bundle and an internal static extension on [Bundle](https://developer.apple.com/documentation/Foundation/Bundle) to access it for each module. Use the extension to locate package resources. For example, use the following to retrieve the URL to a property list you bundle with your package:
 

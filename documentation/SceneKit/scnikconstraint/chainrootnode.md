@@ -25,7 +25,7 @@ var chainRootNode: SCNNode { get }
 @property (nonatomic, readonly) SCNNode * chainRootNode;
 ```
 
-#### Discussion
+## Discussion
 
 The root node is the highest node in the hierarchy moved by the constraint. For example, a robot arm may have two arm segments and a hand connected to a body. The upper arm is a child node of the body, the lower arm is a child node of the upper arm, and the hand is a child node of the lower arm. In this case, the upper arm is the chain root node, because the body should not move to follow the hand.
 

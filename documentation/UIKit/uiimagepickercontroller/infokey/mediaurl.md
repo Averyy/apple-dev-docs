@@ -22,7 +22,7 @@ static let mediaURL: UIImagePickerController.InfoKey
 extern UIImagePickerControllerInfoKey const UIImagePickerControllerMediaURL;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSURL`](../../../Foundation/nsurl.md) object.
 

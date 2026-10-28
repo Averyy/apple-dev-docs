@@ -14,7 +14,7 @@
 kUSBInformationDeviceIsAttachedToEnclosure = 12
 ```
 
-#### Discussion
+## Discussion
 
 The hub port to which the USB device is connected has a USB connector on the enclosure
 

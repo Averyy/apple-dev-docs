@@ -15,7 +15,7 @@ A value indicating that all PCM format flags are clear.
 LinearPCMFormatFlagsAreAllClear
 ```
 
-#### Discussion
+## Discussion
 
 This flag is a synonym of [`FormatFlagsAreAllClear`](./formatflagsareallclear.md).
 

@@ -19,7 +19,7 @@ var kFTSProgressBytesTransferredKey: Unmanaged<CFString>!
 extern CFStringRef kFTSProgressBytesTransferredKey;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

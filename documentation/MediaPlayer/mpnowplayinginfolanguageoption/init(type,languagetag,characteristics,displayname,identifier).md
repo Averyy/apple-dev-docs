@@ -25,7 +25,7 @@ init(type languageOptionType: MPNowPlayingInfoLanguageOptionType, languageTag: S
 - (instancetype) initWithType:(MPNowPlayingInfoLanguageOptionType) languageOptionType languageTag:(NSString *) languageTag characteristics:(NSArray<NSString *> *) languageOptionCharacteristics displayName:(NSString *) displayName identifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 A newly created language option containing the passed characteristics.
 

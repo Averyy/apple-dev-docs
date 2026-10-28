@@ -19,7 +19,7 @@ var renderingMode: NSFontRenderingMode { get }
 @property (readonly) NSFontRenderingMode renderingMode;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of valid rendering modes, see [`NSFontRenderingMode`](../nsfontrenderingmode.md).
 

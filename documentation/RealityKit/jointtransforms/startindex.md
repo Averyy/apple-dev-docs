@@ -20,7 +20,7 @@ An index to the first joint transform in the collection.
 var startIndex: JointTransforms.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 For more on the sequence’s beginning index, see [`startIndex`](../../Swift/array/startindex.md).
 

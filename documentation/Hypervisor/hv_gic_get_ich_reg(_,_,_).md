@@ -19,11 +19,11 @@ func hv_gic_get_ich_reg(_ vcpu: hv_vcpu_t, _ reg: hv_gic_ich_reg_t, _ value: Uns
 extern hv_return_t hv_gic_get_ich_reg(hv_vcpu_t vcpu, hv_gic_ich_reg_t reg, uint64_t *value);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 
-#### Discussion
+## Discussion
 
 ICH registers are only available when exception level 2 (EL2) is in an enabled state, otherwise the method returns an error.
 

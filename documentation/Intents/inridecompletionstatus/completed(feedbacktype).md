@@ -23,11 +23,11 @@ class func completed(feedbackType: INRideFeedbackTypeOptions = []) -> Self
 + (instancetype) completedWithOutstandingFeedbackType:(INRideFeedbackTypeOptions) feedbackType;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INRideCompletionStatus`](../inridecompletionstatus.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when the ride completed successfully and you want the user to provide a tip or feedback about the ride. This method sets the `isCompleted` and [`isOutstanding`](./isoutstanding.md) properties of the returned object to [`true`](../../Swift/true.md), and it sets the [`isCanceled`](./iscanceled.md) and [`isMissedPickup`](./ismissedpickup.md) properties to [`false`](../../Swift/false.md). If you ask the user to specify a tip, assign values to the [`defaultTippingOptions`](./defaulttippingoptions.md) property representing proposed tip amounts.
 

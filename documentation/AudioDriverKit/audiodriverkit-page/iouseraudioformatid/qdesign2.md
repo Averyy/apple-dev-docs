@@ -15,7 +15,7 @@ The QDesign2 music format.
 QDesign2
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

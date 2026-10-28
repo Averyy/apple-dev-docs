@@ -23,7 +23,7 @@ func matches(_ url: URL?, options: WKWebExtension.MatchPattern.Options = []) -> 
 - (BOOL) matchesURL:(NSURL *) url options:(WKWebExtensionMatchPatternOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value indicating if the pattern matches the specified URL.
 

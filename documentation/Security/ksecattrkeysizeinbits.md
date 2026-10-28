@@ -29,7 +29,7 @@ extern CFStringRef const kSecAttrKeySizeInBits;
 
 - [Generating New Cryptographic Keys](./generating-new-cryptographic-keys.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md) and indicates the total number of bits in this cryptographic key.
 

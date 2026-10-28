@@ -24,7 +24,7 @@ let kCFStreamPropertyHTTPRequestBytesWrittenCount: CFString
 extern CFStringRef const kCFStreamPropertyHTTPRequestBytesWrittenCount;
 ```
 
-#### Discussion
+## Discussion
 
 HTTP Request Bytes Written property. This property can only be retrieved; it cannot be set. The value of this property is a CFNumber containing the number of body bytes that have been written to the server thus far. HTTP header bytes are not included in the count. You can use this property to track the progress of HTTP uploads that take a substantial amount of time to complete.
 

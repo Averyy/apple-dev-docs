@@ -19,7 +19,7 @@ class TVDigitEntryViewController
 @interface TVDigitEntryViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 Use the `TVDigitEntryViewController` class to manage a digit entry view. The digit entry view is automatically presented by the view controller and consists of boxes that display digits and a digit keyboard.
 

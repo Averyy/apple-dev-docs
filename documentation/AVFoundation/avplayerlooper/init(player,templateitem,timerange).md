@@ -24,11 +24,11 @@ convenience init(player: AVQueuePlayer, templateItem itemToLoop: AVPlayerItem, t
 - (instancetype) initWithPlayer:(AVQueuePlayer *) player templateItem:(AVPlayerItem *) itemToLoop timeRange:(CMTimeRange) loopRange;
 ```
 
-#### Return Value
+## Return Value
 
 An new instance of `AVPlayerLooper`.
 
-#### Discussion
+## Discussion
 
 The player item you specify will be used as a *template* to generate at least 3 player item replicas that will be inserted into the specified player’s queue to accomplish the looping playback. As the player item will only be used as a template, and not for actual playback, any changes you make to the player item after initialization will not be reflected in the replicas. If you need to explicitly configure the replica player items, such as adding instances of [`AVPlayerItemOutput`](../avplayeritemoutput.md) to them, you can access them through the [`loopingPlayerItems`](./loopingplayeritems.md) property.
 

@@ -17,7 +17,7 @@ Fetches reports for campaigns.
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 - [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to fetch reports for your campaigns. See [`ReportingCampaign`](./reportingcampaign.md) and [`CampaignAppDetail`](./campaignappdetail.md) for [`Condition`](./condition.md) operators and field values to filter results with a [`Selector`](./selector.md).
 
@@ -25,7 +25,7 @@ See the `groupBy` parameter description in the [`ReportingRequest`](./reportingr
 
 The `orderBy` [`Selector`](./selector.md) specifies fields to sort the records list by `ASCENDING` or `DESCENDING`. All [`ReportingCampaign`](./reportingcampaign.md) fields are available to the `orderBy` [`Selector`](./selector.md) except `servingStateReasons`, `app`, `app:{appName}`, and `app:{adamId}`.
 
-##### Payload example 1: Get campaign-level reports for campaigns with a Maximize Conversions bid strategy
+### Payload example 1: Get campaign-level reports for campaigns with a Maximize Conversions bid strategy
 
 In campaigns with a Maximize Conversions bid strategy, for filtering and ordering you can use `biddingStrategy` and `targetCpa` in a selector for conditions and ordering.
 
@@ -105,7 +105,7 @@ POST https://api.searchads.apple.com/api/v5/reports/campaigns
 }
 ```
 
-##### Payload example 2: Get campaign-level reports with geo
+### Payload example 2: Get campaign-level reports with geo
 
 **Request**:
 
@@ -282,7 +282,7 @@ POST https://api.searchads.apple.com/api/v5/reports/campaigns
 }
 ```
 
-##### Payload example 3: Get campaign-level reports
+### Payload example 3: Get campaign-level reports
 
 **Request**:
 
@@ -448,7 +448,7 @@ POST https://api.searchads.apple.com/api/v5/reports/campaigns
     }
 ```
 
-##### Payload example 4: Get campaign-level reports with granularity
+### Payload example 4: Get campaign-level reports with granularity
 
 **Request**:
 

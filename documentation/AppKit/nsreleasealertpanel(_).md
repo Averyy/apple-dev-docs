@@ -21,7 +21,7 @@ func NSReleaseAlertPanel(_ panel: Any!)
 extern void NSReleaseAlertPanel(id panel);
 ```
 
-#### Discussion
+## Discussion
 
 When you’re finished with a panel created by a function such as [`NSGetAlertPanel`](./nsgetalertpanel.md), [`NSGetCriticalAlertPanel`](./nsgetcriticalalertpanel.md), or [`NSGetInformationalAlertPanel`](./nsgetinformationalalertpanel.md), you must dispose of it by passing it to this function.
 

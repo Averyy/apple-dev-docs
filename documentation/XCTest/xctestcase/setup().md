@@ -20,7 +20,7 @@ class func setUp()
 
 - [Set Up and Tear Down State in Your Tests](../set-up-and-tear-down-state-in-your-tests.md)
 
-#### Discussion
+## Discussion
 
 The [`setUp()`](./setup%28%29.md) class method is called exactly once for a test case, before its first test method is called. Override this method to customize the initial state for all tests in the test case.
 

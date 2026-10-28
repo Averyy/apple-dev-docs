@@ -12,11 +12,11 @@ virtual SCSIInitiatorIdentifier ReportInitiatorIdentifier (
  void ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 returns SCSIInitiatorIdentifier.
 
-#### Overview
+## Overview
 
 This method will be called to determine the SCSI Device Identifier that the Initiator has assigned for this HBA.
 

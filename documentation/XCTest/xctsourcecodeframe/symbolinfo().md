@@ -16,11 +16,11 @@ func symbolInfo() throws -> XCTSourceCodeSymbolInfo
 - (XCTSourceCodeSymbolInfo *) symbolInfoWithError:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 Symbol information for the address.
 
-#### Discussion
+## Discussion
 
 This method can fail if required symbol data is not available. The system makes only one attempt to retrieve the symbol information. If that attempt fails, the system stores the error and returns it for future requests.
 

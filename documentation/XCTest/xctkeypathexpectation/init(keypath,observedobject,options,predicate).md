@@ -20,7 +20,7 @@ Creates an expectation that the system fulfills when the value of the observed p
 convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueObservingOptions = [.initial, .new, .old], predicate: XCTKeyPathExpectation<T, V>.Predicate? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an expectation that observes changes on the observed object until the predicate returns [`true`](../../Swift/true.md), fulfilling the expectation.
 

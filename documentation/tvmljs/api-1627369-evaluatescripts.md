@@ -18,7 +18,7 @@ void evaluateScripts(
 );
 ```
 
-#### Discussion
+## Discussion
 
 This method first verifies that the locations contained in the `scripts` parameter contain TVMLKit JS files. The code in the files is then executed. The callback function contains a boolean argument that signals whether the TVMLKit JS files loaded successfully. Use this method to keep the size of your initial TVMLKit JS file small, while being able to incorporate other TVMLKit JS files. [Listing 1](./api-1627369-evaluatescripts.md#1943541) shows an example incorporating this method into your app. The example creates an array containing the location of the ResourceLoader and Presenter TVMLKit JS files. On a successful load, the `success` parameter is set to `TRUE` and the app continues. Otherwise, an alert is presented onscreen stating that an error occurred.
 

@@ -25,7 +25,7 @@ var encodedLength: Int { get }
 @property (readonly) NSUInteger encodedLength;
 ```
 
-#### Discussion
+## Discussion
 
 After creating an [`MTLArgumentEncoder`](../mtlargumentencoder.md) instance, use this value to create the [`MTLBuffer`](../mtlbuffer.md) instance that represents an argument buffer.
 

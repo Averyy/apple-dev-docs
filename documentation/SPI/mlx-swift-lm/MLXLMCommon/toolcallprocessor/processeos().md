@@ -17,7 +17,7 @@ Process end-of-sequence, parsing any buffered content as tool call(s).
 func processEOS()
 ```
 
-#### Discussion
+## Discussion
 
 Call this when generation ends (e.g., on EOS token) to handle formats whose end tag is never delivered as text (e.g., Mistral where `</s>` is intercepted at the token ID level).
 

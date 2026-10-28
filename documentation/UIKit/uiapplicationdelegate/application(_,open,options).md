@@ -29,11 +29,11 @@ optional func application(_ app: UIApplication, open url: URL, options: [UIAppli
 
 - [Enabling document sharing](../enabling-document-sharing.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the delegate successfully handled the request or [`false`](../../Swift/false.md) if the attempt to open the URL resource failed.
 
-#### Discussion
+## Discussion
 
 This method is not called if your implementations return [`false`](../../Swift/false.md) from both the [`application(_:willFinishLaunchingWithOptions:)`](./application%28_,willfinishlaunchingwithoptions%29.md) and [`application(_:didFinishLaunchingWithOptions:)`](./application%28_,didfinishlaunchingwithoptions%29.md) methods. (If only one of the two methods is implemented, its return value determines whether this method is called.) If your app implements the [`applicationDidFinishLaunching(_:)`](./applicationdidfinishlaunching%28_%29.md) method instead of [`application(_:didFinishLaunchingWithOptions:)`](./application%28_,didfinishlaunchingwithoptions%29.md), this method is called to open the specified URL after the app has been initialized.
 

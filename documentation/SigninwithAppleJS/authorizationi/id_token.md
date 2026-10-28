@@ -22,7 +22,7 @@ attribute string id_token;
 - [Receiving a User’s Identity Token](../../SigninwithApple/receiving-a-users-identity-token.md)
 - [Verifying a user](../../SigninwithApple/verifying-a-user.md)
 
-#### Discussion
+## Discussion
 
 The identity token contains the following claims:
 

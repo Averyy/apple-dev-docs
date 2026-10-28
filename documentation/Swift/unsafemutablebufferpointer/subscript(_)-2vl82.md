@@ -21,7 +21,7 @@ Accesses the element at the specified position.
 subscript(i: Int) -> Element { get nonmutating set }
 ```
 
-#### Overview
+## Overview
 
 The following example uses the buffer pointer’s subscript to access and modify the elements of a mutable buffer pointing to the contiguous contents of an array:
 

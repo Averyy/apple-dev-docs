@@ -25,7 +25,7 @@ func register(_ nib: UINib?, forSupplementaryViewOfKind kind: String, withReuseI
 - (void) registerNib:(UINib *) nib forSupplementaryViewOfKind:(NSString *) kind withReuseIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Prior to calling the [`dequeueReusableSupplementaryView(ofKind:withReuseIdentifier:for:)`](./dequeuereusablesupplementaryview%28ofkind,withreuseidentifier,for%29.md) method of the collection view, you must use this method or the [`register(_:forSupplementaryViewOfKind:withReuseIdentifier:)`](./register%28_,forsupplementaryviewofkind,withreuseidentifier%29-661io.md) method to tell the collection view how to create a supplementary view of the given type. If a view of the specified type isn’t currently in a reuse queue, the collection view uses the provided information to create a view object automatically.
 

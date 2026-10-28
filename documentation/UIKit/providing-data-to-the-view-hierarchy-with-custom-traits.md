@@ -5,7 +5,7 @@
 
 Share data that needs to flow hierarchically across multiple levels of your view hierarchy.
 
-#### Overview
+## Overview
 
 A custom trait is a type that conforms to [`UITraitDefinition`](./uitraitdefinition-3572h.md). Use a custom trait to pass application data, such as a color theme that a person selects in your app, through the objects in your view hierarchy that adopt [`UITraitEnvironment`](./uitraitenvironment.md). Represent data with a custom trait when you want to:
 
@@ -15,7 +15,7 @@ A custom trait is a type that conforms to [`UITraitDefinition`](./uitraitdefinit
 
 Avoid using custom traits for data that you can pass directly between view controllers and views.
 
-##### Create, set, and access a custom trait
+### Create, set, and access a custom trait
 
 To create a custom trait, define a type that conforms to [`UITraitDefinition`](./uitraitdefinition-3572h.md):
 
@@ -39,7 +39,7 @@ Access the value of your trait using your trait as the key in a trait collection
 let value = traitCollection[ContainedInSettingsTrait.self]
 ```
 
-##### Simplify custom trait access with extensions
+### Simplify custom trait access with extensions
 
 Add convenience properties to [`UITraitCollection`](./uitraitcollection.md) and [`UIMutableTraits`](./uimutabletraits-8l00o.md) to make your custom trait easier to access. First, extend [`UITraitCollection`](./uitraitcollection.md) with a property to get the value of your custom trait from a trait collection:
 
@@ -70,7 +70,7 @@ let traitCollection = UITraitCollection { mutableTraits in
 let value = traitCollection.isContainedInSettings
 ```
 
-##### Enhance custom trait interactions
+### Enhance custom trait interactions
 
 Set optional properties of [`UITraitDefinition`](./uitraitdefinition-3572h.md) to give your trait additional system capabilities and improve debugging:
 

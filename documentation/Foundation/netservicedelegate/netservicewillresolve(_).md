@@ -24,7 +24,7 @@ optional func netServiceWillResolve(_ sender: NetService)
 - (void) netServiceWillResolve:(NSNetService *) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Resolution of the service proceeds asynchronously and may still generate a call to the delegate’s [`netService(_:didNotResolve:)`](./netservice%28_,didnotresolve%29.md) method if an error occurs.
 

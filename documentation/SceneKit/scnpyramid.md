@@ -25,7 +25,7 @@ class SCNPyramid
 @interface SCNPyramid : SCNGeometry
 ```
 
-#### Overview
+## Overview
 
 ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929810@2x.png)
 

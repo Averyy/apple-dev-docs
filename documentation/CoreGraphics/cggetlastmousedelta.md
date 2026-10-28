@@ -16,7 +16,7 @@ Reports the change in mouse position since the last mouse movement event receive
 extern void CGGetLastMouseDelta(int32_t *deltaX, int32_t *deltaY);
 ```
 
-#### Discussion
+## Discussion
 
 This function is not recommended for general use. Instead, you should use the mouse-tracking functions provided by the `NSEvent` class.
 

@@ -21,7 +21,7 @@ case playbackError
 MPMovieFinishReasonPlaybackError
 ```
 
-#### Discussion
+## Discussion
 
 There was an error during playback.
 

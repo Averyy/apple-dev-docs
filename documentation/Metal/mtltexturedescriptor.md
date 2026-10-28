@@ -31,7 +31,7 @@ class MTLTextureDescriptor
 - [Synchronizing a managed resource in macOS](./synchronizing-a-managed-resource-in-macos.md)
 - [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 
-#### Overview
+## Overview
 
 To create a new texture, first create an [`MTLTextureDescriptor`](./mtltexturedescriptor.md) instance and set its property values. Then, call either the [`makeTexture(descriptor:)`](./mtldevice/maketexture%28descriptor%29.md) or [`makeTexture(descriptor:iosurface:plane:)`](./mtldevice/maketexture%28descriptor,iosurface,plane%29.md) method of an [`MTLDevice`](./mtldevice.md) instance, or the [`makeTexture(descriptor:offset:bytesPerRow:)`](./mtlbuffer/maketexture%28descriptor,offset,bytesperrow%29.md) method of an [`MTLBuffer`](./mtlbuffer.md) instance.
 

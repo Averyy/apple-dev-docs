@@ -24,7 +24,7 @@ var fStop: Float { get set }
 @property (nonatomic, assign) float fStop;
 ```
 
-#### Discussion
+## Discussion
 
 Relative aperture, also called *f-stop* or *f-number*, is a measure of the amount of light permitted through a lens to an imaging surface, commonly thought of as the “speed” of the lens. The f-stop is the ratio of the lens’s [`focalLength`](./focallength.md) to the diameter of the entrance pupil. It controls the amount of light that reaches the sensor, as well as the size of out-of-focus parts of the image.
 

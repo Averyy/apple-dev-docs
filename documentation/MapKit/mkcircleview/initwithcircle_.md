@@ -19,7 +19,7 @@ Initializes and returns a new overlay view using the specified circle overlay ob
 - (instancetype) initWithCircle:(MKCircle *) circle;
 ```
 
-#### Return Value
+## Return Value
 
 A new circle overlay view.
 

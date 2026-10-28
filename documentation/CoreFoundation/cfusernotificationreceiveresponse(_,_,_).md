@@ -19,11 +19,11 @@ func CFUserNotificationReceiveResponse(_ userNotification: CFUserNotification!, 
 extern SInt32 CFUserNotificationReceiveResponse(CFUserNotificationRef userNotification, CFTimeInterval timeout, CFOptionFlags *responseFlags);
 ```
 
-#### Return Value
+## Return Value
 
 `0` if the call successfully received a response; a non-`0` value otherwise.
 
-#### Discussion
+## Discussion
 
 Use this function to poll a user notification for a user response. You can call it any number of times on the same user notification.
 

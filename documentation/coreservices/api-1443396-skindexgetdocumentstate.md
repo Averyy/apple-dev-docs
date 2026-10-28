@@ -19,11 +19,11 @@ func SKIndexGetDocumentState(_ inIndex: SKIndex!, _ inDocument: SKDocument!) -> 
 SKDocumentIndexState SKIndexGetDocumentState(SKIndexRef inIndex, SKDocumentRef inDocument);
 ```
 
-#### Return Value
+## Return Value
 
 A value indicating the document URL object’s indexing state.
 
-#### Discussion
+## Discussion
 
 A document URL object (of type [`SKDocument`](./skdocument.md)) can be in one of four states, as defined by the [`SKDocumentIndexState`](./skdocumentindexstate.md) enumeration: not indexed, indexed, not in the index but will be added after the index is flushed or closed, and in the index but will be deleted after the index is flushed or closed.
 

@@ -25,11 +25,11 @@ func CGImageSourceCopyProperties(_ isrc: CGImageSource, _ options: CFDictionary?
 extern CFDictionaryRefCGImageSourceCopyProperties(CGImageSourceRef isrc, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains the properties associated with the image source container. See `CGImageProperties` for a list of properties that can be in the dictionary.
 
-#### Discussion
+## Discussion
 
 These properties apply to the container in general but not necessarily to any individual image contained in the image source.
 

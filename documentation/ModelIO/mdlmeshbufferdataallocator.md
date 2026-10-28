@@ -24,7 +24,7 @@ class MDLMeshBufferDataAllocator
 @interface MDLMeshBufferDataAllocator : NSObject
 ```
 
-#### Overview
+## Overview
 
 Model I/O uses this allocator by default if you do not specify an allocator when loading, creating, or modifying objects that require mesh buffer storage (for example, when loading an asset with the [`init(url:vertexDescriptor:bufferAllocator:)`](./mdlasset/init%28url,vertexdescriptor,bufferallocator%29-1tchi.md) initializer). Use this allocator only if sharing mesh buffer memory with GPU-based renderers is not a concern. To minimize data copying when rendering with Metal or OpenGL, use the [`MTKMeshBufferAllocator`](../MetalKit/mtkmeshbufferallocator.md) or [`GLKMeshBufferAllocator`](../GLKit/glkmeshbufferallocator.md) class instead.This class declares no methods or properties of its own. For the key functionality of all mesh buffer allocator objects, see [`MDLMeshBufferAllocator`](./mdlmeshbufferallocator.md).
 

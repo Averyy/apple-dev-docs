@@ -20,11 +20,11 @@ optional func draggingEntered(_ sender: any NSDraggingInfo) -> NSDragOperation
 - (NSDragOperation) draggingEntered:(id<NSDraggingInfo>) sender;
 ```
 
-#### Return Value
+## Return Value
 
 One (and only one) of the dragging operation constants described  in [`NSDragOperation`](../nsdragoperation.md) in the [`NSDraggingInfo`](../nsdragginginfo.md) reference. The default return value (if this method is not implemented by the destination) is the value returned by the previous [`draggingEntered(_:)`](./draggingentered%28_%29.md) message.
 
-#### Discussion
+## Discussion
 
 Invoked when a dragged image enters the destination but only if the destination has registered for the pasteboard data type involved in the drag operation. Specifically, this method is invoked when the mouse pointer enters the destination’s bounds rectangle (if it is a view object) or its frame rectangle (if it is a window object).
 

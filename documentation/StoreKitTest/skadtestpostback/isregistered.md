@@ -21,7 +21,7 @@ var isRegistered: Bool { get }
 @property (nonatomic, assign, readonly) BOOL isRegistered;
 ```
 
-#### Discussion
+## Discussion
 
 To register a postback, call [`updatePostbackConversionValue(_:completionHandler:)`](../../StoreKit/skadnetwork/updatepostbackconversionvalue%28_,completionhandler%29.md), or [`registerAppForAdNetworkAttribution()`](../../StoreKit/skadnetwork/registerappforadnetworkattribution%28%29.md).
 

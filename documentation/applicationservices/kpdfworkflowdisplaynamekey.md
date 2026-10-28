@@ -17,7 +17,7 @@ var kPDFWorkflowDisplayNameKey: String { get }
 #define kPDFWorkflowDisplayNameKey
 ```
 
-#### Discussion
+## Discussion
 
 The user-displayable name for the PDF workflow item.
 

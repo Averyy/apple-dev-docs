@@ -15,13 +15,13 @@ A category in the Apple Maps business taxonomy used to classify brands and locat
 object BusinessCategory
 ```
 
-#### Discussion
+## Discussion
 
 The `BusinessCategory` object represents a leaf or branch node in the Apple Maps category taxonomy. Categories classify brands and locations and scope which businesses Apple Maps campaigns can reach.
 
 You can associate active Apple Maps campaigns only with categories that have `eligibility.status: ELIGIBLE`. Check eligibility before using a category in a production campaign.
 
-##### Example
+### Example
 
 ```json
 {

@@ -15,7 +15,7 @@
 MPMovieLoadStateUnknown
 ```
 
-#### Discussion
+## Discussion
 
 The load state is not known.
 

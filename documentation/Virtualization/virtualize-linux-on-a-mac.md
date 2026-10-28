@@ -5,7 +5,7 @@
 
 Configure and run Linux guests on Apple silicon and Intel-based Mac computers.
 
-#### Overview
+## Overview
 
 Use [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) to create a configuration that represents a specific Linux platform with the devices you want to use with your virtual machine (VM) — like [`VZVirtioSoundDeviceConfiguration`](./vzvirtiosounddeviceconfiguration.md) or [`VZUSBKeyboardConfiguration`](./vzusbkeyboardconfiguration.md).
 

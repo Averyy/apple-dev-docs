@@ -13,7 +13,7 @@ Refresh configured collections.
 **Availability**:
 - Swift 5.5+
 
-#### Overview
+## Overview
 
 This subcommand refreshes any cached data manually:
 
@@ -24,7 +24,7 @@ Refreshed 5 configured package collections.
 
 SwiftPM will also automatically refresh data under various conditions, but some queries such as search will rely on locally cached data.
 
-#### Usage
+## Usage
 
 ```
 package-collection refresh [--package-path=<package-path>]

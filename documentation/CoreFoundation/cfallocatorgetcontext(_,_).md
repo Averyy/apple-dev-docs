@@ -25,7 +25,7 @@ func CFAllocatorGetContext(_ allocator: CFAllocator!, _ context: UnsafeMutablePo
 extern void CFAllocatorGetContext(CFAllocatorRef allocator, CFAllocatorContext *context);
 ```
 
-#### Discussion
+## Discussion
 
 An allocator’s context, a structure of type `CFAllocatorContext`, holds pointers to various function callbacks (particularly those that allocate, reallocate, and deallocate memory for an object). The context also contains a version number and the `info` field for program-defined data. To obtain the value of the `info` field you usually first have to get an allocator’s context.
 

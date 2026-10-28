@@ -24,7 +24,7 @@ let PHImageErrorKey: String
 extern NSString * const PHImageErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key provides information about an image loading result in the `resultHandler` block for methods listed in Requesting Images. The corresponding value is an `NSError` object.Photos provides an error object for this key if it cannot provide an image for your handler block’s `result` parameter. Examine the error object for information about the cause of the error.
 

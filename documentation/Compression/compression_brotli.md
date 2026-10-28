@@ -25,7 +25,7 @@ var COMPRESSION_BROTLI: compression_algorithm { get }
 COMPRESSION_BROTLI
 ```
 
-#### Discussion
+## Discussion
 
 Brotli is a general-purpose compression algorithm standardized as IETF RFC 7932. It combines an LZ77-style match finder with Huffman coding and second-order context modeling, and ships with a built-in static dictionary of roughly 120 KB of common web-oriented strings — HTML tags, CSS keywords, JavaScript tokens, and common English words. That dictionary is what makes Brotli particularly effective on short HTTP responses and small text fragments, where conventional LZ77-based algorithms have too little history to build up a strong dictionary of their own.
 

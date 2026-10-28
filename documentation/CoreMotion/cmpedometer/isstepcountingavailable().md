@@ -23,7 +23,7 @@ class func isStepCountingAvailable() -> Bool
 + (BOOL) isStepCountingAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if step counting is available or [`false`](../../Swift/false.md) if it is not.
 

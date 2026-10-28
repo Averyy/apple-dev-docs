@@ -21,7 +21,7 @@ A component expression that makes up part of a predicate.
 protocol PredicateExpression<Output>
 ```
 
-#### Overview
+## Overview
 
 To transform a predicate, define a protocol for the result and add conformance on each predicate expression type that you support. For example:
 

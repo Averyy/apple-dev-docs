@@ -20,7 +20,7 @@ var returnID: AEReturnID { get }
 @property (readonly) AEReturnID returnID;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver’s return ID (an integer value), or 0 if an error occurs.
 

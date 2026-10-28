@@ -24,7 +24,7 @@ var isDepthReversed: Bool { get set }
 @property (nonatomic, readwrite, getter=isDepthReversed) BOOL depthReversed;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s default value is [`true`](../../Swift/true.md).
 

@@ -21,11 +21,11 @@ Formats the URL using a default format style.
 func formatted() -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of the URL, formatted according to the default format style.
 
-#### Discussion
+## Discussion
 
 Use this method to create a string representation of a URL using the default [`URL.FormatStyle`](./formatstyle.md) configuration. As seen in the following example, the default style creates a string with the scheme, host, and path, but not the port or query.
 

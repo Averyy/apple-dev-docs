@@ -22,11 +22,11 @@ func CVGetCurrentHostTime() -> UInt64
 extern uint64_t CVGetCurrentHostTime();
 ```
 
-#### Return Value
+## Return Value
 
 The current host time.
 
-#### Discussion
+## Discussion
 
 In macOS, the host time bases for Core Video and CoreAudio are identical—both are based on the `mach_absolute_time` function—so the values returned from either API can be used interchangeably.
 

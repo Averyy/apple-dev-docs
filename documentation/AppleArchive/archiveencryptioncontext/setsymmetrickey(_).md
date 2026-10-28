@@ -21,7 +21,7 @@ Sets the symmetric encryption key that the context requires for symmetric encryp
 func setSymmetricKey(_ key: SymmetricKey) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to set the encryption key for a context with a symmetric [`profile`](./profile-swift.property.md).
 

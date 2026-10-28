@@ -23,7 +23,7 @@ var accessibilityFrame: CGRect { get set }
 @property (nonatomic, assign) CGRect accessibilityFrame;
 ```
 
-#### Discussion
+## Discussion
 
 When you create an accessibility element to represent an element in your application, you must set this property to the `CGRect` structure that specifies the object’s screen location and size. (Objects that inherit from `UIView` include this information by default.)
 

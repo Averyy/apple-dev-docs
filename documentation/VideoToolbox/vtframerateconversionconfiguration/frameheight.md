@@ -22,7 +22,7 @@ var frameHeight: Int { get }
 @property (nonatomic, readonly) NSInteger frameHeight;
 ```
 
-#### Discussion
+## Discussion
 
 The maximum value is 4320 pixels for macOS, and 2160 pixels for iOS.
 

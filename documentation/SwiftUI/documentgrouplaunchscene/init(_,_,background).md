@@ -38,7 +38,7 @@ nonisolated
 init(_ title: some StringProtocol, @ContentBuilder _ actions: () -> Actions, @ContentBuilder background: () -> some View)
 ```
 
-#### Discussion
+## Discussion
 
 Use a `DocumentGroupLaunchScene` alongside any [`DocumentGroup`](../documentgroup.md) scenes. If you don’t implement a `DocumentGroup` in the app declaration, you can get the same design by implementing a [`DocumentLaunchView`](../documentlaunchview.md).
 

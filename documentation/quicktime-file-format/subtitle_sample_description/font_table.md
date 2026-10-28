@@ -6,7 +6,7 @@
 
 An atom that identifies the font to use to display the text.
 
-#### Overview
+## Overview
 
 See [`Font table atom`](../font_table_atom.md).
 

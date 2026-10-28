@@ -23,7 +23,7 @@ var showsMenuAsPrimaryAction: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL showsMenuAsPrimaryAction;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is [`true`](../../Swift/true.md), the [`contextMenuInteraction`](./contextmenuinteraction.md) becomes the primary action of the control, and the menu shows in response to the [`touchDown`](./event/touchdown.md) event.
 

@@ -5,13 +5,13 @@
 
 Interpret the error details to troubleshoot API requests and perform programmatic error handling.
 
-#### Overview
+## Overview
 
 When your API request results in an error, you receive an [`ErrorResponse`](./errorresponse.md) that contains an array of errors. The `code` property of the [`ErrorResponse`](./errorresponse.md) helps you identify which part of your request may contain an error.
 
 The error data (`ErrorResponse.Data`) fully describes an error through its properties, including `status`, `id`, `title`, `code`, and others. However, for programmatic error handling, use only the `code` property.
 
-##### Parse the Error Code
+### Parse the Error Code
 
 The `code` property is a stable, machine-readable value indicating the exact type of error. The `code` is hierarchical, with dots separating the information about the error from general to specific. The more information the system has about the error, the more levels the error code includes. For example, the error code `ENTITY_ERROR.ATTRIBUTE.INVALID` has three levels, and tells you:
 
@@ -23,7 +23,7 @@ In many cases, the most general level of information provides all you need to kn
 
 > 💡 **Tip**:  Examine the error code using prefix matching rather than exact string comparison. Exact string comparison may not work if the error code includes additional levels of detail.
 
-##### Relate Error Codes to the Parts of the Request
+### Relate Error Codes to the Parts of the Request
 
 You can analyze the parts of your request in order to trace the correlating error information. Requests consist of a method, path, and parameters or a request entity, as shown in the `GET` request annotated below.
 
@@ -35,21 +35,21 @@ Likewise, the parts of a `POST` request are annotated below.
 
 If there’s an error in a request, the response returns an HTTP status code in the 400 range. The `code` parameter of the [`ErrorResponse`](./errorresponse.md) helps you identify which part of your request may contain an error: the method, path, parameter, or entity.
 
-##### Identify Errors with the Method
+### Identify Errors with the Method
 
 Responses that indicate the request’s *method* contains an error include:
 
 - `405` `METHOD_NOT_ALLOWED`: The method and path combination is not valid in the API. For example, `PATCH https://api.enterprise.developer.apple.com/v1/certificates` is not valid because `PATCH` is not supported for the `certificates` resource.
 - `403` `FORBIDDEN_ERROR`: The method and path combination is valid, but not allowed due to business rules; for example, because the caller’s role permissions don’t allow access.
 
-##### Identify Errors with the Path
+### Identify Errors with the Path
 
 Responses that indicate the request’s *path* contains an error include:
 
 - `404 PATH_ERROR`: The path is not valid. For example, `GET https://api.enterprise.developer.apple.com/v1/bananas` is not a valid path in this API.
 - `404 NOT_FOUND`: The resource does not exist. For example, `GET https://api.enterprise.developer.apple.com/v1/apps/9999999999` is requesting an app with an ID that does not exist.
 
-##### Identify Errors with the Parameters
+### Identify Errors with the Parameters
 
 Responses that indicate one of the request’s *parameters* contain an error include:
 
@@ -57,7 +57,7 @@ Responses that indicate one of the request’s *parameters* contain an error inc
 - `400` `PARAMETER_ERROR.INVALID`: The parameter is allowed but has an invalid `value` or `type`.
 - `400` `PARAMETER_ERROR.REQUIRED`: A required parameter is missing.
 
-##### Identify Errors with the Request Entity
+### Identify Errors with the Request Entity
 
 Responses that indicate the request’s *entity* contains an error include:
 

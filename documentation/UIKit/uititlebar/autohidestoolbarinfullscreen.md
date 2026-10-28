@@ -19,7 +19,7 @@ var autoHidesToolbarInFullScreen: Bool { get set }
 @property (nonatomic) BOOL autoHidesToolbarInFullScreen;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) to automatically hide the toolbar when the window enters full-screen mode. While hidden, the user can view the toolbar and menu bar by moving the pointer to the top of the screen. Moving the pointer away from the top of the screen hides the toolbar and menu bar.
 

@@ -20,11 +20,11 @@ func add(_ sender: Any?)
 - (void) add:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Creates a new object of the appropriate entity (specified by [`entityName`](./entityname.md)) or class (specified by [`objectClass`](./objectclass.md))—see [`newObject()`](./newobject%28%29.md)—and sets it as the receiver’s content object using [`addObject(_:)`](./addobject%28_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 Beginning with OS X v10.4 the result of this method is deferred until the next iteration of the runloop so that the error presentation mechanism can provide feedback as a sheet.
 

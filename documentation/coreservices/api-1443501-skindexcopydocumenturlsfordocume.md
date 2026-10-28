@@ -19,7 +19,7 @@ func SKIndexCopyDocumentURLsForDocumentIDs(_ inIndex: SKIndex!, _ inCount: CFInd
 void SKIndexCopyDocumentURLsForDocumentIDs(SKIndexRef inIndex, CFIndex inCount, SKDocumentID *inDocumentIDsArray, CFURLRef *outDocumentURLsArray);
 ```
 
-#### Discussion
+## Discussion
 
 The [`SKIndexCopyDocumentURLsForDocumentIDs(_:_:_:_:)`](./api-1443501-skindexcopydocumenturlsfordocume.md) function lets you get a batch of document URLs (CFURL objects) in one step, based on a list of document IDs.
 

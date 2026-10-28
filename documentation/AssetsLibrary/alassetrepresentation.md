@@ -12,7 +12,7 @@ An `ALAssetRepresentation` object encapsulates one of the representations of a g
 @interface ALAssetRepresentation : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  The Assets Library framework is deprecated as of iOS 9.0. Instead, use the Photos framework instead, which in iOS 8.0 and later provides more features and better performance for working with a user’s photo library. For more information, see `Photos`.
 >

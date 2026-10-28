@@ -25,7 +25,7 @@ var propertiesToUpdate: [AnyHashable : Any]? { get set }
 @property (copy, nullable) NSDictionary * propertiesToUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary keys are either [`NSPropertyDescription`](../nspropertydescription.md) objects or strings that identify the property name.
 

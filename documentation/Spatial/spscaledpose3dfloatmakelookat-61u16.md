@@ -19,11 +19,11 @@
 static SPScaledPose3DFloat SPScaledPose3DFloatMakeLookAt(SPPoint3DFloat position, SPPoint3DFloat target, float scale, SPVector3DFloat up);
 ```
 
-#### Return Value
+## Return Value
 
 A new scaled pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a scaled pose at the specified position with the rotation towards the target.
 

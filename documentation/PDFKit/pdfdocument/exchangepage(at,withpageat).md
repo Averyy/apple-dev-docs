@@ -24,7 +24,7 @@ func exchangePage(at indexA: Int, withPageAt indexB: Int)
 - (void) exchangePageAtIndex:(NSUInteger) indexA withPageAtIndex:(NSUInteger) indexB;
 ```
 
-#### Discussion
+## Discussion
 
 This method raises an exception if either `index` value is out of bounds.
 

@@ -20,11 +20,11 @@ nonisolated
 func draggable<Item>(_ itemType: Item.Type = Item.self, containerNamespace: Namespace.ID? = nil, _ item: @escaping () -> Item?) -> some View where Item : Transferable, Item : Identifiable, Item.ID : Sendable
 ```
 
-#### Return Value
+## Return Value
 
 A view that activates this view as the source of a drag and drop operation, beginning with user gesture input.
 
-#### Discussion
+## Discussion
 
 Applying the `draggable(_:containerNamespace_:)` modifier adds the appropriate gestures for drag and drop to this view.
 

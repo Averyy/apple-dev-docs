@@ -16,11 +16,11 @@ Set the callback for a NuDCL
 IOReturn (*SetDCLCallback)(NuDCLRef dcl, NuDCLCallback callback);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn error code.
 
-#### Discussion
+## Discussion
 
 A callback can be called each time a NuDCL is run. Use SetDCLCallback() to set the callback for a NuDCL. If the update option is also set, the callback will be called after the update has run.
 

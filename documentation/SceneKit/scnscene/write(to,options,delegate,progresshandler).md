@@ -25,11 +25,11 @@ func write(to url: URL, options: [String : Any]? = nil, delegate: (any SCNSceneE
 - (BOOL) writeToURL:(NSURL *) url options:(NSDictionary<NSString *,id> *) options delegate:(id<SCNSceneExportDelegate>) delegate progressHandler:(SCNSceneExportProgressHandler) progressHandler;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if exporting the scene was successful; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The format of the output file depends on OS and argument file extension:
 

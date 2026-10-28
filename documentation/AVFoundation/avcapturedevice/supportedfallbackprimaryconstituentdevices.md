@@ -23,7 +23,7 @@ var supportedFallbackPrimaryConstituentDevices: [AVCaptureDevice] { get }
 @property (nonatomic, readonly) NSArray<AVCaptureDevice *> * supportedFallbackPrimaryConstituentDevices;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property doesn’t change for a particular virtual device, and is `nil` for nonvirtual devices.
 

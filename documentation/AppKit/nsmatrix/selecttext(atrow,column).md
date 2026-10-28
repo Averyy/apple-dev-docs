@@ -19,7 +19,7 @@ func selectText(atRow row: Int, column col: Int) -> NSCell?
 - (NSCell *) selectTextAtRow:(NSInteger) row column:(NSInteger) col;
 ```
 
-#### Return Value
+## Return Value
 
 If it is both editable and selectable, the cell at the specified row and column. If the cell at the specified location, is either not editable or not selectable, this method does nothing and returns nil. If `row` and `column` indicate a cell that is outside the receiver, this method does nothing and returns the receiver.
 

@@ -25,7 +25,7 @@ class func predicate(forPresentationWidth width: CGFloat, operatorType: NSCompar
 + (NSPredicate *) predicateForPresentationWidth:(CGFloat) width operatorType:(NSPredicateOperatorType) operatorType;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate object that you use to to create an [`AVAssetVariantQualifier`](../avassetvariantqualifier.md).
 

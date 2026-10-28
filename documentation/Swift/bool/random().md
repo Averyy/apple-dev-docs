@@ -21,11 +21,11 @@ Returns a random Boolean value.
 static func random() -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Either `true` or `false`, randomly chosen with equal probability.
 
-#### Discussion
+## Discussion
 
 This method returns `true` and `false` with equal probability.
 

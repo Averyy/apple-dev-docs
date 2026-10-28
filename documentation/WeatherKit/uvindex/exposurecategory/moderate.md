@@ -21,7 +21,7 @@ The UV index is moderate.
 case moderate
 ```
 
-#### Discussion
+## Discussion
 
 The valid values of this property are 3, 4, and 5.
 

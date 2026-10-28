@@ -16,7 +16,7 @@ An option for a task with no additional required system resources.
 BGContinuedProcessingTaskRequestResourcesDefault
 ```
 
-#### Discussion
+## Discussion
 
 Unless informed otherwise, the scheduler assumes the default resources, allowing background CPU and network access.
 

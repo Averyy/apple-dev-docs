@@ -4,11 +4,11 @@
 
 An action that performs a delay.
 
-#### Overview
+## Overview
 
 Use this action to wait before performing other actions in a `GroupAction`.
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Action "WaitAction"

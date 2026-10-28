@@ -24,11 +24,11 @@ class func predicateForObjects(withMetadataKey key: String, allowedValues: [Any]
 + (NSPredicate *) predicateForObjectsWithMetadataKey:(NSString *) key allowedValues:(NSArray *) allowedValues;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches objects based on the provided metadata key and an array of target values..
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that matches objects based on their metadata. When this predicate is evaluated, it gets the metadata’s value for the provided key. Then the predicate checks that value against the `allowedValues` array. If the array contains a matching value, the predicate returns [`true`](../../Swift/true.md); otherwise, it returns [`false`](../../Swift/false.md).
 

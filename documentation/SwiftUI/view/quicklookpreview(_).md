@@ -19,11 +19,11 @@ nonisolated
 func quickLookPreview(_ item: Binding<URL?>) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that presents the preview of the contents of the URL.
 
-#### Discussion
+## Discussion
 
 The Quick Look preview appears when you set the binding to a non-`nil` item. When you set the item back to `nil`, Quick Look dismisses the preview.
 

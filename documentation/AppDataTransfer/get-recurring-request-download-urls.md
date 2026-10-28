@@ -9,7 +9,7 @@ Get URLs to download a snapshot of someone’s data specific to your app from a 
 **Availability**:
 - App Data Transfer 1.0+
 
-#### Overview
+## Overview
 
 **Request**:
 

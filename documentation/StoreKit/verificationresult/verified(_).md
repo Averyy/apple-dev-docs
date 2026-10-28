@@ -26,7 +26,7 @@ case verified(SignedType)
 - [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](../supporting-subscription-offer-codes-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 The associated value in this case is the App Store-signed value.
 

@@ -3,7 +3,7 @@
 **Framework**: Application Services  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 The ColorSync Manager is the API for ColorSync, a platform-independent color management system from Apple. ColorSync provides essential services for fast, consistent, and accurate color calibration, proofing, and reproduction using input, output, and display devices. ColorSync also provides an interface to system-wide color management settings that allows users to save color settings for specific jobs and switch between settings.
 

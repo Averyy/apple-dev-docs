@@ -25,7 +25,7 @@ typealias sparse_stride = Int64
 typedef int64_t sparse_stride;
 ```
 
-#### Discussion
+## Discussion
 
 Supports negative strides for the dense vectors.
 

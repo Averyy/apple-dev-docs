@@ -20,7 +20,7 @@ weak var imageView: NSImageView? { get set }
 @property (weak, nullable) NSImageView * imageView;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience property for accessing an image view in your item’s view hierarchy. Normally, you configure this property in Interface Builder by connecting it to one of your item’s image views.
 

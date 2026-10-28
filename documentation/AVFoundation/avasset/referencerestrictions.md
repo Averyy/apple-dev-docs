@@ -24,7 +24,7 @@ var referenceRestrictions: AVAssetReferenceRestrictions { get }
 @property (nonatomic, readonly) AVAssetReferenceRestrictions referenceRestrictions;
 ```
 
-#### Discussion
+## Discussion
 
 For [`AVURLAsset`](../avurlasset.md), this property reflects the value passed in for [`AVURLAssetReferenceRestrictionsKey`](../avurlassetreferencerestrictionskey.md), if any.
 

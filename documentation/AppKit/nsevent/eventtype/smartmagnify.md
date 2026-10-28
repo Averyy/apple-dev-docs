@@ -19,7 +19,7 @@ case smartMagnify
 NSEventTypeSmartMagnify
 ```
 
-#### Discussion
+## Discussion
 
 [`NSEvent.EventType.smartMagnify`](./smartmagnify.md) represents the smart zoom gesture (that is, a two-finger double tap on trackpads), along with a corresponding [`NSResponder`](../../nsresponder.md) method. In response to this event, you should magnify the content appropriately for your app. For example, you might zoom in on a specific paragraph or image.
 

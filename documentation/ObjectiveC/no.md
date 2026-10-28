@@ -21,7 +21,7 @@ Defines `NO` as `0`.
 #define NO
 ```
 
-#### Discussion
+## Discussion
 
 The `NO` macro from Objective-C is bridged to Swift as an [`ObjCBool`](./objcbool.md) value of `false`.
 

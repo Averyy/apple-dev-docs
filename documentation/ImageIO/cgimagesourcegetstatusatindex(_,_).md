@@ -25,11 +25,11 @@ func CGImageSourceGetStatusAtIndex(_ isrc: CGImageSource, _ index: Int) -> CGIma
 extern CGImageSourceStatus CGImageSourceGetStatusAtIndex(CGImageSourceRef isrc, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the current status of the image. See [`CGImageSourceStatus`](./cgimagesourcestatus.md) for a list of possible values.
 
-#### Discussion
+## Discussion
 
 Status information is particularly informative for incremental image sources, but you may also use it on image sources that contain non-incremental data.
 

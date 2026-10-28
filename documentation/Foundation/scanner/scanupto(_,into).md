@@ -25,13 +25,13 @@ func scanUpTo(_ string: String, into result: AutoreleasingUnsafeMutablePointer<N
 - (BOOL) scanUpToString:(NSString *) string intoString:(NSString **) result;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver scans any characters, otherwise [`false`](../../Swift/false.md).
 
 If the only scanned characters are in the [`charactersToBeSkipped`](./characterstobeskipped.md) character set (which by default is the whitespace and newline character set), then this method returns [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If `stopString` is present in the receiver, then on return the scan location is set to the beginning of that string.
 

@@ -13,7 +13,7 @@
 OSErr GetComponentPublicResource(Component aComponent, OSType resourceType, SInt16 resourceID, Handle *theResource);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/component_manager.md#1668759).
 

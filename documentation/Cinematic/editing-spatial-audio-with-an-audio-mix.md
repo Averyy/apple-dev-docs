@@ -10,7 +10,7 @@ Add Spatial Audio editing capabilities with the Audio Mix API in the Cinematic f
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 Beginning with iPhone 16, you can use Spatial Audio capture to record video with 3D audio, and edit the audio mix in the Photos app. With Audio Mix, you have creative control of the background and foreground sounds in a recording. It isolates speech as foreground and ambience as background, and you can select between multiple creative rendering styles to adjust the mix.
 
@@ -18,13 +18,13 @@ The `SpatialAudioCLI` sample project is a command-line tool that demonstrates th
 
 > **Note**: This sample code project is associated with WWDC25 session 251: [Enhance your app’s audio content creation capabilities](https://developer.apple.com/videos/play/wwdc2025/251).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 For best results, use `SpatialAudioCLI` with media that contains a Spatial Audio track. On all iPhone 16 models, Spatial Audio recording is available when capturing video with the Camera app. See the [iPhone User Guide](https://support.apple.com/en-kw/guide/iphone/iph31c1ca6c7/ios) for how to change sound recording options.
 
 You can record Spatial Audio in your app by setting the [`multichannelAudioMode`](../AVFoundation/avcapturedeviceinput/multichannelaudiomode.md) property of the [`AVCaptureDeviceInput`](../AVFoundation/avcapturedeviceinput.md) to a value of `firstOrderAmbisonics`.
 
-##### Adjust the audio mix in AVPlayer
+### Adjust the audio mix in AVPlayer
 
 The simplest way to adjust the audio mix is to play Spatial Audio assets with [`AVPlayer`](../AVFoundation/avplayer.md).
 

@@ -25,7 +25,7 @@ static var widthInsensitive: NSString.CompareOptions { get }
 NSWidthInsensitiveSearch
 ```
 
-#### Discussion
+## Discussion
 
 For example, with this option, the full-width Latin small letter ‘ａ’ (`U+FF41`) is equal to the basic Latin small letter ‘a’ (`U+0061`).
 

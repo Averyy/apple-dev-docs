@@ -21,7 +21,7 @@ Whether the system preference for Reduce Bright Effects is enabled.
 var accessibilityReduceHighlightingEffects: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this property’s value is true, controls, such as buttons, should be drawn in such a way that minimizes highlighting and flashing of onscreen elements.
 

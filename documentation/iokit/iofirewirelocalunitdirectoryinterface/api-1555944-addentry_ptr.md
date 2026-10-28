@@ -16,7 +16,7 @@ Append a data leaf
 IOReturn (*AddEntry_Ptr)(IOFireWireLibLocalUnitDirectoryRef self, int key, void *inBuffer, size_t inLen, CFStringRef inDesc);
 ```
 
-#### Discussion
+## Discussion
 
 Appends a leaf data node to a unit directory
 

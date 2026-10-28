@@ -12,7 +12,7 @@ virtual void unlock(
  void );
 ```
 
-#### Overview
+## Overview
 
 A recursive lock is allocated and initialized in `init()`. This lock is otherwise not used by the `IONetworkInterface` class. This method call releases the lock to balance a prior `lock()`.
 

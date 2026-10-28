@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether two publishers are equivalent.
 static func == (lhs: Empty<Output, Failure>, rhs: Empty<Output, Failure>) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two publishers have equal `completeImmediately` properties; otherwise `false`.
 

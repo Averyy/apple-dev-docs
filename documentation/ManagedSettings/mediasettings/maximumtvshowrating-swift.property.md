@@ -17,7 +17,7 @@ The maximum TV show rating that the user may view.
 var maximumTVShowRating: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If your app doesn’t configure this setting, the value is `nil`. The following list provides U.S. descriptions for the ratings:
 

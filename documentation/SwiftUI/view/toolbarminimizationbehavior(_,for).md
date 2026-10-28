@@ -22,7 +22,7 @@ nonisolated
 func toolbarMinimizationBehavior(_ behavior: ToolbarMinimizationBehavior, for bars: ToolbarPlacement...) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to enable toolbar minimization in response to scrolling. The supported placement is [`navigationBar`](../toolbarplacement/navigationbar.md). When the navigation bar minimizes, an integrated top tab bar will also minimize.
 

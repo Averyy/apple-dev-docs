@@ -25,7 +25,7 @@ func CTFontGetBoundingBox(_ font: CTFont) -> CGRect
 extern CGRect CTFontGetBoundingBox(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 The design bounding box of the font, which is the rectangle defined by `xMin`, `yMin`, `xMax`, and `yMax` values for the font. Returns [`CGRectNull`](../CoreGraphics/cgrectnull.md) on error.
 

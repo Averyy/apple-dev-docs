@@ -5,7 +5,7 @@
 
 Reflect, shear, rotate, and scale image buffers using vImage.
 
-#### Overview
+## Overview
 
 The vImage library provides a suite of functions to apply different geometric transforms to images. The image below shows examples of reflect, scale, rotate, and composite translate-rotate-scale transforms:
 
@@ -17,7 +17,7 @@ The vImage geometry operations don’t work in-place, that is, you can’t use t
 
 If you’re applying a geometric transform to an image with premultiplied alpha, you may see artifacts in high-frequency regions of the image. To avoid these artifacts, call [`vImageUnpremultiplyData_ARGB8888(_:_:_:)`](./vimageunpremultiplydata_argb8888%28_,_,_%29.md) to remove the premultiplied alpha value from the image data before the operation. After the operation, call [`vImagePremultiplyData_ARGB8888(_:_:_:)`](./vimagepremultiplydata_argb8888%28_,_,_%29.md) to premultiply the result.
 
-##### Reflect a vImage buffer
+### Reflect a vImage buffer
 
 The vImage reflect functions generate either a vertical or a horizontal reflection of the image. The image below shows the original buffer contents and the contents after vertical reflection:
 
@@ -60,7 +60,7 @@ void verticalReflectBuffer(const vImage_Buffer *source,
 
 To learn more about reflection functions, see [Image reflection](./image-reflection.md).
 
-##### Shear a vImage buffer
+### Shear a vImage buffer
 
 The vImage shear functions scale and offset an image in one dimension. These functions accept a resampling filter that you use for fine control over the resampling algorithm. For more information on resampling, see [Reducing artifacts with custom resampling filters](./reducing-artifacts-with-custom-resampling-filters.md).
 
@@ -162,7 +162,7 @@ On return, the destination buffer contains the image below:
 
 To learn more about shearing functions, see [Image shearing](./image-shearing.md).
 
-##### Rotate a vImage buffer by multiples of 90°
+### Rotate a vImage buffer by multiples of 90°
 
 The vImage library provides 90° rotation functions that perform a simple 0°, 90°, 180°, or 270° rotation of an image around its center. The image below shows a buffer’s contents without any rotation, rotated 90° counterclockwise, rotated 180°, and rotated 90° clockwise:
 
@@ -264,7 +264,7 @@ vImage_Buffer *rotateNinety(const vImage_Buffer *source, int rotation) {
 
 To learn more about rotation functions, see [Image rotation](./image-rotation.md).
 
-##### Rotate a vImage buffer by an arbitrary angle
+### Rotate a vImage buffer by an arbitrary angle
 
 The vImage library provides rotation functions that rotate an image by any angle around its center. The image below shows a buffer rotated 60° counterclockwise:
 
@@ -314,7 +314,7 @@ void rotateBuffer(const vImage_Buffer *source,
 }
 ```
 
-##### Scale a vImage buffer
+### Scale a vImage buffer
 
 The vImage library provides functions to scale the contents of an image buffer. The scaling can either be uniform, where the operation preserves the image’s aspect ratio, or nonuniform, where the operation stretches or condenses the image. The image below shows four scaled versions of the same photograph, with the second and third image scaled nonuniformly:
 
@@ -351,7 +351,7 @@ void scaleBuffer(const vImage_Buffer *source, vImage_Buffer *destination) {
 
 To learn more about scaling functions, see [Image scaling](./image-scaling.md).
 
-##### Apply a simple affine transformation to a vImage buffer
+### Apply a simple affine transformation to a vImage buffer
 
 Use an affine transformation to apply composite transformation, such as a scale and a translate.
 
@@ -450,7 +450,7 @@ The image below shows the result of applying `scaleAndCenterBuffer(_:to:backgrou
 
 To learn more about affine transformation functions, see [Applying affine transformations to images](./applying-affine-transformations-to-images.md).
 
-##### Apply a complex affine transformation to a vImage buffer
+### Apply a complex affine transformation to a vImage buffer
 
 For complex transformations, [`CGAffineTransform`](../CoreFoundation/cgaffinetransform.md) allows you to concatenate a series of transformations. For example, to rotate and scale an image to fit within its unrotated bounding box, your code needs to translate, rotate, scale, and translate again.
 
@@ -559,7 +559,7 @@ The image below shows the result of applying `rotateAndScaleBuffer(_:byAngleInDe
 
 ![A rotated photograph of flowers that is scaled down to fit within its bounding box.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3682479@2x.png)
 
-##### Optimize performance with temporary buffers
+### Optimize performance with temporary buffers
 
 The vImage rotate, scale, and affine transform functions use multiple-pass algorithms that save intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional, temporary storage.
 

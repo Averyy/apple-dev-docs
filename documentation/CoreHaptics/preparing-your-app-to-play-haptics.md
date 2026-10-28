@@ -5,13 +5,13 @@
 
 Set up your app to play haptics.
 
-#### Overview
+## Overview
 
 This article describes the process of setting up your app to play haptics. You’ll check for device compatibility, create a haptic engine, and then configure the engine’s handler properties.
 
 > **Note**:  Make sure you set the engine’s handler properties before starting it to play a haptic.
 
-##### Check for device compatibility
+### Check for device compatibility
 
 Before you create and configure a haptic engine, check the hardware capabilities to see what type of feedback the device supports. Some devices don’t support haptic feedback, including iPad, iPod touch, and Apple Vision Pro. Checking the hardware capabilities lets you adjust your app’s behavior to provide alternative types of feedback as needed. For example, you might play stronger audio or multimedia, or you might provide visual feedback instead.
 
@@ -38,7 +38,7 @@ self.supportsHaptics = CHHapticEngine.capabilitiesForHardware.supportsHaptics;
 
 For an example of conditioning haptic playback, see [Playing a Custom Haptic Pattern from a File](./playing-a-custom-haptic-pattern-from-a-file.md).
 
-##### Create a haptic engine
+### Create a haptic engine
 
 The [`CHHapticEngine`](./chhapticengine.md) is your app’s interface to the haptic device. Use an instance of a haptic engine to perform these key tasks:
 
@@ -72,7 +72,7 @@ _engine = [[CHHapticEngine alloc] initAndReturnError:&error];
 
 > **Note**:  The haptic engine isn’t a singleton; you can create multiple instances in different parts of your app or game, like different view controllers or levels. Each instance of the haptic engine behaves independently. Core Haptics is thread-safe, meaning you can execute player operations on separate threads.
 
-##### Set the reset handler to recover from failure
+### Set the reset handler to recover from failure
 
 Core Haptics calls the reset handler after the media server has recovered from failure. When this occurs, inside the reset handler, your app should do the following:
 
@@ -124,7 +124,7 @@ __weak ViewController* weakViewController = self;
 
 Your app could attempt to restart the engine inside the handler, allowing it to recover on its own. However, as shown in the code listing above, a restart may still fail if the external reason for the reset hasn’t subsided.
 
-##### Receive notification of haptic engine stoppage due to outside causes
+### Receive notification of haptic engine stoppage due to outside causes
 
 When external factors cause the haptic engine to stop, like audio interruptions from a phone call or because the user has put your app in the background, Core Haptics calls the [`stoppedHandler`](./chhapticengine/stoppedhandler-swift.property.md). The reason for the stoppage is passed into the handler. Because stopping is a normal part of the life cycle, you need to restart the engine before it can play the next haptic.
 
@@ -183,7 +183,7 @@ In production, your app can handle each cause in a different way. For example, y
 
 > **Note**:  The stopped handler defined in the code above is called only when external causes trigger an engine stoppage. The stopped handler isn’t called if you manually stop the engine through an explicit [`stop(completionHandler:)`](./chhapticengine/stop%28completionhandler%29.md) call. Instead, Core Haptics calls the completion handler passed as input to the explicit stop call.
 
-##### Define and play haptics
+### Define and play haptics
 
 Once you’ve set up your app to play haptics, you can incorporate haptic patterns. See:
 

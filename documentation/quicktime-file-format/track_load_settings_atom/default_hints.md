@@ -6,7 +6,7 @@
 
 A 32-bit integer containing playback hints.
 
-#### Overview
+## Overview
 
 More than one flag may be enabled. Flags are enabled by setting them to `1`. The following flags are defined.
 

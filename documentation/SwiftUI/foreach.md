@@ -29,7 +29,7 @@ struct ForEach<Data, ID, Content> where Data : RandomAccessCollection, ID : Hash
 - [Reordering items in lists, stacks, grids, and custom layouts](./reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
 - [Picking container views for your content](./picking-container-views-for-your-content.md)
 
-#### Overview
+## Overview
 
 Use `ForEach` to provide views based on a [`RandomAccessCollection`](../Swift/randomaccesscollection.md) of some data type. Either the collection’s elements must conform to [`Identifiable`](../Swift/identifiable.md) or you need to provide an `id` parameter to the `ForEach` initializer.
 

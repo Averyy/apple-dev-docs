@@ -21,7 +21,7 @@ Appends the given string to this string.
 mutating func append(_ other: String)
 ```
 
-#### Discussion
+## Discussion
 
 The following example builds a customized greeting by using the `append(_:)` method:
 

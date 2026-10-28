@@ -27,15 +27,15 @@ func CFPropertyListWriteToStream(_ propertyList: CFPropertyList!, _ stream: CFWr
 extern CFIndex CFPropertyListWriteToStream(CFPropertyListRef propertyList, CFWriteStreamRef stream, CFPropertyListFormat format, CFStringRef*errorString);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes written, or `0` if an error occurred. If `0` is returned, `errorString` will contain an error message.
 
-#### Discussion
+## Discussion
 
 This function leaves the stream open after reading the content. When reading a property list, this function expects the reading stream to end wherever the writing ended, so that the end of the property list data can be identified.
 
-##### Special Considerations
+### Special Considerations
 
 > ⚠️ **Warning**:  This function is obsolete and will be deprecated soon. Use [`CFPropertyListWrite(_:_:_:_:_:)`](./cfpropertylistwrite%28_,_,_,_,_%29.md) instead.
 

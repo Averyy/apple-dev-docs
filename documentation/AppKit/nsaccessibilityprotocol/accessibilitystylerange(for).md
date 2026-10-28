@@ -20,11 +20,11 @@ func accessibilityStyleRange(for index: Int) -> NSRange
 - (NSRange) accessibilityStyleRangeForIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 A range of characters with the same style as the specified character.
 
-#### Discussion
+## Discussion
 
 This method returns a range of characters that meet two conditions: The range must include the specified character, and all the other characters in the range must match the specified character’s style. If none of the adjacent characters match the specified character’s style, the method returns only the specified character.
 

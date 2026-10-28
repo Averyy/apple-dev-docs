@@ -32,7 +32,7 @@ var displayName: String { get }
 @property (atomic, copy, readonly) NSString * displayName;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the name components specified at initialization time. Use the information in this property or the [`nameComponents`](./namecomponents.md) property to identify the name of the user.
 

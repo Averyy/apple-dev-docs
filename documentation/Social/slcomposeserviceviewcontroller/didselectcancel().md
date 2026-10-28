@@ -22,7 +22,7 @@ func didSelectCancel()
 - (void) didSelectCancel;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this method calls the completeRequestReturningItems: method of the associated [`extensionContext`](../../UIKit/uiviewcontroller/extensioncontext.md) property, passing the appropriate error value in the `items` array and a `nil` expiration.
 

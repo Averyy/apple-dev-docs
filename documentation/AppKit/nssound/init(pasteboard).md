@@ -19,7 +19,7 @@ init?(pasteboard: NSPasteboard)
 - (instancetype) initWithPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized `NSSound` instance.
 

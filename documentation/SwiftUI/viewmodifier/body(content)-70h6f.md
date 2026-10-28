@@ -24,7 +24,7 @@ Gets the current body of the caller.
 
 Available when `Body` is `Never`.
 
-#### Discussion
+## Discussion
 
 `content` is a proxy for the view that will have the modifier represented by `Self` applied to it.
 

@@ -19,7 +19,7 @@
 extern const CMTag kCMTagMediaSubTypeMebx;
 ```
 
-#### Discussion
+## Discussion
 
 This value is for use in tags with the [`kCMTagCategory_MediaSubType`](./cmtagcategory/kcmtagcategory_mediasubtype.md) category.
 

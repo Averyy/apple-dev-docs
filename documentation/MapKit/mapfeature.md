@@ -21,7 +21,7 @@ A tappable map feature.
 struct MapFeature
 ```
 
-#### Overview
+## Overview
 
 Tappable map features can include single points of interest, such as hotels and restaurants, a territory, or a physical map feature such as an ocean, basin, river, or mountain range.
 

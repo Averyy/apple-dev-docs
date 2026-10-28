@@ -19,7 +19,7 @@ init(configuration: CWConfiguration)
 - (instancetype) initWithConfiguration:(CWConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 A CWConfiguration object.
 

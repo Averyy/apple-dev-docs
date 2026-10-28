@@ -28,7 +28,7 @@ class HKDevice
 
 - [About the HealthKit framework](./about-the-healthkit-framework.md)
 
-#### Overview
+## Overview
 
 Devices include Apple Watch, iPhone, and any other health or fitness peripherals that produce the sample data stored in HealthKit. Device objects are immutable: You set the device’s properties when you create the [`HKDevice`](./hkdevice.md) object, and they cannot change.
 

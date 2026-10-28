@@ -24,7 +24,7 @@ let HMCharacteristicTypeTargetRelativeHumidity: String
 extern NSString * const HMCharacteristicTypeTargetRelativeHumidity;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a floating point percentage representing the desired relative humidity. This is a measure of the amount of water in the air relative to the maximum it can hold at the current temperature.
 

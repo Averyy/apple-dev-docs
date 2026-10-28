@@ -5,13 +5,13 @@
 
 Grant access to user accounts and the keychain by creating a smart card app extension.
 
-#### Overview
+## Overview
 
 A typical use of hardware-based cryptographic tokens is two-factor authentication. This kind of authentication enhances security by making users establish their identity in two ways: with something they have (like a token that’s a USB-based smart card) and with something they know (a password that unlocks the token). A misplaced token is useless without the password. A compromised password provides no access without the physical token.
 
 In macOS, you can write an app extension that enables the system to authenticate users possessing a token. A driver you supply allows the system to establish the presence of the token in the system and confirm that the user has a password or PIN that unlocks the token.
 
-##### Ensure the Token Meets Minimum Requirements
+### Ensure the Token Meets Minimum Requirements
 
 Before writing the app extension, make sure the token you’re trying to support meets certain basic prerequisites. To do this, you may need to obtain technical documentation from the token’s manufacturer. The exact requirements depend on how you plan to use it.
 
@@ -28,7 +28,7 @@ Additionally, to use the token for unlocking the keychain, make sure it contains
 
 To support an RSA option in either of the above use cases, the token hardware must either implement the specific RSA signature or decryption algorithm that the key supports, or simply implement the raw variant ([`rsaSignatureRaw`](../Security/seckeyalgorithm/rsasignatureraw.md) for login, or [`rsaEncryptionRaw`](../Security/seckeyalgorithm/rsaencryptionraw.md) for keychain unlock). When the hardware provides only the raw operation, macOS automatically handles any needed padding.
 
-##### Create the Smart Card App Extension
+### Create the Smart Card App Extension
 
 When you’re ready to begin coding, use Xcode to create an app extension target inside a new, empty macOS host app. Xcode provides a smart card app extension template that produces both the target and a group of files to get you started.
 
@@ -48,7 +48,7 @@ You supply functionality for the `Token` class (derived from the [`TKSmartCardTo
 
 ![Diagram showing the interconnections between the user, authentication services, your app extension, and the external smart card.](https://developer.apple.com/tutorials/images/com.apple.cryptotokenkit/media-2940884@2x.png)
 
-##### Register the Extension with SecurityAgent
+### Register the Extension with SecurityAgent
 
 To activate the app extension and make the token available to the system for authentication, you launch the extension’s hosting app as the `_securityagent` user:
 

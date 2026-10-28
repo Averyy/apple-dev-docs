@@ -27,7 +27,7 @@ static var PKCS1MD2: SecPadding { get }
 kSecPaddingPKCS1MD2
 ```
 
-#### Discussion
+## Discussion
 
 Standard ASN.1 padding is done, as well as PKCS1 padding of the underlying RSA operation. Used with [`SecKeyRawSign(_:_:_:_:_:_:)`](../seckeyrawsign%28_,_,_,_,_,_%29.md) and [`SecKeyRawVerify(_:_:_:_:_:_:)`](../seckeyrawverify%28_,_,_,_,_,_%29.md) only.
 

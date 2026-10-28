@@ -17,7 +17,7 @@ case cwErr
 kCWErr
 ```
 
-#### Discussion
+## Discussion
 
 Generic error, no specific error code exists to describe the error condition.
 

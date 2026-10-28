@@ -21,7 +21,7 @@ Draws a path into the context and fills the outlined region.
 func fill(_ path: Path, with shading: GraphicsContext.Shading, style: FillStyle = FillStyle())
 ```
 
-#### Discussion
+## Discussion
 
 The current drawing state of the context defines the full drawing operation. For example, the current transformation and clip shapes, and any styles applied to the result, affect the final result.
 

@@ -15,11 +15,11 @@ Aborts device requests that you made previously from the current interface clien
 virtual kern_return_t AbortDeviceRequests(IOOptionBits options, IOReturn withError);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Use this method to abort any requests you made previously with the [`AsyncDeviceRequest`](./asyncdevicerequest.md) method. This method aborts only the requests that the current interface object initiated.
 

@@ -19,7 +19,7 @@ let IKImageBrowserGroupBackgroundColorKey: String
 extern NSString * const IKImageBrowserGroupBackgroundColorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSColor`](../AppKit/nscolor.md) object. This color is used only for the bezel style.
 

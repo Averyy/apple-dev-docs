@@ -25,7 +25,7 @@ static let doNotPlay: SCNSceneSource.AnimationImportPolicy
 extern SCNSceneSourceAnimationImportPolicy const SCNSceneSourceAnimationImportPolicyDoNotPlay;
 ```
 
-#### Discussion
+## Discussion
 
 To play animations stored in the scene file, load them manually using the [`entryWithIdentifier:withClass:`](../entrywithidentifier_withclass_.md) method.
 

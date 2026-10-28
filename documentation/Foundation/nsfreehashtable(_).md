@@ -25,7 +25,7 @@ func NSFreeHashTable(_ table: NSHashTable<AnyObject>)
 extern void NSFreeHashTable(NSHashTable *table);
 ```
 
-#### Discussion
+## Discussion
 
 Releases each element of the specified hash table and frees the table itself.
 

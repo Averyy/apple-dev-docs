@@ -24,7 +24,7 @@ class let willChangeStatusBarFrameNotification: NSNotification.Name
 extern NSNotificationName const UIApplicationWillChangeStatusBarFrameNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The `userInfo` dictionary contains an [`NSValue`](../../Foundation/nsvalue.md) object that encapsulates a [`CGRect`](../../CoreFoundation/cgrect.md) structure expressing the location and size of the new status bar frame. Use [`statusBarFrameUserInfoKey`](./statusbarframeuserinfokey.md) to access this value.
 

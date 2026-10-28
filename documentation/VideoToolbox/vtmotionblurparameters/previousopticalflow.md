@@ -22,7 +22,7 @@ var previousOpticalFlow: VTFrameProcessorOpticalFlow? { get }
 @property (nonatomic, readonly, nullable) VTFrameProcessorOpticalFlow * previousOpticalFlow;
 ```
 
-#### Discussion
+## Discussion
 
 For the first frame this will always be nil. This object is only needed if optical flow is pre-computed.
 

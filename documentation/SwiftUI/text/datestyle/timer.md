@@ -21,7 +21,7 @@ A style displaying a date as timer counting from now.
 static let timer: Text.DateStyle
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 Text(event.startDate, style: .timer)

@@ -15,7 +15,7 @@ The parameters of a client’s request.
 object Invocation.Params
 ```
 
-#### Discussion
+## Discussion
 
 Objects that inherit from [`Invocation`](../invocation.md) define their own parameters.
 

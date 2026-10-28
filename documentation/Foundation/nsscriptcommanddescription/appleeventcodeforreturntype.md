@@ -20,7 +20,7 @@ var appleEventCodeForReturnType: FourCharCode { get }
 @property (readonly) FourCharCode appleEventCodeForReturnType;
 ```
 
-#### Return Value
+## Return Value
 
 The event code for the command’s return type.
 

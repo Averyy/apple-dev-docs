@@ -25,11 +25,11 @@ func CFAttributedStringGetAttribute(_ aStr: CFAttributedString!, _ loc: CFIndex,
 extern CFTypeRefCFAttributedStringGetAttribute(CFAttributedStringRef aStr, CFIndex loc, CFStringRef attrName, CFRange *effectiveRange);
 ```
 
-#### Return Value
+## Return Value
 
 The value of the specified attribute at the specified location in `str`. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
-#### Discussion
+## Discussion
 
 For performance reasons, a range returned in `effectiveRange` is not necessarily the maximal range. If you need the maximum range, you should use [`CFAttributedStringGetAttributeAndLongestEffectiveRange(_:_:_:_:_:)`](./cfattributedstringgetattributeandlongesteffectiverange%28_,_,_,_,_%29.md).
 

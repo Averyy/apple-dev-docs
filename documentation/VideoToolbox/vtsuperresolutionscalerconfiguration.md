@@ -22,7 +22,7 @@ class VTSuperResolutionScalerConfiguration
 @interface VTSuperResolutionScalerConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 This configuration enables the super-resolution processor on a `VTFrameProcessor` session.
 

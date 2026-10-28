@@ -19,7 +19,7 @@ var sourceDevice: SRSourceDevice? { get }
 @property (nonatomic, strong, readonly, nullable) SRSourceDevice * sourceDevice;
 ```
 
-#### Discussion
+## Discussion
 
 The source of the sample data
 

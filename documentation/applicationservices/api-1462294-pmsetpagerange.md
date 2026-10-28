@@ -19,11 +19,11 @@ func PMSetPageRange(_ printSettings: PMPrintSettings, _ minPage: UInt32, _ maxPa
 OSStatus PMSetPageRange(PMPrintSettings printSettings, UInt32 minPage, UInt32 maxPage);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 The function `PMSetPageRange` allows applications to set the minimum and maximum page numbers that can be printed for a document. If the user enters a value outside of this range in the Print dialog, the value is set to the closest allowed value. You can use the [`PMGetFirstPage(_:_:)`](./api-1460271-pmgetfirstpage.md) and [`PMGetLastPage(_:_:)`](./api-1462747-pmgetlastpage.md) functions to obtain the values entered by the user in the Print dialog.)
 

@@ -24,7 +24,7 @@ cp_layer_renderer_layout_shared
 
 - [Drawing fully immersive content using Metal](../../drawing-fully-immersive-content-using-metal.md)
 
-#### Discussion
+## Discussion
 
 When a layer contains multiple views, the texture stores the images for those views side-by-side. The texture map for each view contains a viewport that defines the boundaries of that view’s content. The type of each texture is [`MTLTextureType.type2D`](../../../Metal/mtltexturetype/type2d.md).
 

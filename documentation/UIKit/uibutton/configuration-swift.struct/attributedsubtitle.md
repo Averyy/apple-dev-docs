@@ -19,7 +19,7 @@ The text and style attributes for the button’s subtitle label.
 var attributedSubtitle: AttributedString? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The configuration sets the [`subtitle`](./subtitle.md) property to match the string value of this attributed string. To change the button subtitle when the button state changes, use [`configurationUpdateHandler`](../configurationupdatehandler-swift.property.md) or [`updateConfiguration()`](../updateconfiguration%28%29.md).
 

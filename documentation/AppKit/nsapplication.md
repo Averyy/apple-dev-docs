@@ -24,7 +24,7 @@ class NSApplication
 - [Choosing a Specific Appearance for Your macOS App](./choosing-a-specific-appearance-for-your-macos-app.md)
 - [Passing control from one app to another with cooperative activation](./passing-control-from-one-app-to-another-with-cooperative-activation.md)
 
-#### Overview
+## Overview
 
 Every app uses a single instance of [`NSApplication`](./nsapplication.md) to control the main event loop, keep track of the app’s windows and menus, distribute events to the appropriate objects (that’s, itself or one of its windows), set up autorelease pools, and receive notification of app-level events. An [`NSApplication`](./nsapplication.md) object has a delegate (an object that you assign) that’s notified when the app starts or terminates, is hidden or activated, should open a file selected by the user, and so forth. By setting the delegate and implementing the delegate methods, you customize the behavior of your app without having to subclass [`NSApplication`](./nsapplication.md). In your app’s `main()` function, create the [`NSApplication`](./nsapplication.md) instance by calling the [`shared`](./nsapplication/shared.md) class method. After creating the application object, the `main()` function should load your app’s main nib file and then start the event loop by sending the application object a [`run()`](./nsapplication/run%28%29.md) message. If you create an Application project in Xcode, this `main()` function is created for you. The `main()` function Xcode creates begins by calling a function named `NSApplicationMain()`, which is functionally similar to the following:
 
@@ -44,17 +44,17 @@ The shared [`NSApplication`](./nsapplication.md) object performs the important t
 
 The [`NSApplication`](./nsapplication.md) class sets up `@autorelease` block during initialization and inside the event loop—specifically, within its initialization (or [`shared`](./nsapplication/shared.md)) and [`run()`](./nsapplication/run%28%29.md) methods. Similarly, the methods AppKit adds to [`Bundle`](../Foundation/bundle.md) employ `@autorelease` blocks during the loading of nib files. These `@autorelease` blocks aren’t accessible outside the scope of the respective [`NSApplication`](./nsapplication.md) and [`Bundle`](../Foundation/bundle.md) methods. Typically, an app creates objects either while the event loop is running or by loading objects from nib files, so this lack of access usually isn’t a problem. However, if you do need to use Cocoa classes within the `main()` function itself (other than to load nib files or to instantiate [`NSApplication`](./nsapplication.md)), you should create an `@autorelease` block to contain the code using the classes.
 
-##### The delegate and notifications
+### The delegate and notifications
 
 You can assign a delegate to your [`NSApplication`](./nsapplication.md) object. The delegate responds to certain messages on behalf of the object. Some of these messages, such as [`application(_:openFile:)`](./nsapplicationdelegate/application%28_,openfile%29.md), ask the delegate to perform an action. Another message, [`applicationShouldTerminate(_:)`](./nsapplicationdelegate/applicationshouldterminate%28_%29.md), lets the delegate determine whether the app should be allowed to quit. The [`NSApplication`](./nsapplication.md) class sends these messages directly to its delegate.
 
 [`NSApplication`](./nsapplication.md) also posts notifications to the app’s default notification center. Any object may register to receive one or more of the notifications posted by [`NSApplication`](./nsapplication.md) by sending the message [`addObserver(_:selector:name:object:)`](../Foundation/notificationcenter/addobserver%28_,selector,name,object%29.md) to the default notification center (an instance of the `NSNotificationCenter` class). The delegate of [`NSApplication`](./nsapplication.md) is automatically registered to receive these notifications if it implements certain delegate methods. For example, [`NSApplication`](./nsapplication.md) posts notifications when it’s about to be done launching the app and when it’s done launching the app ([`willFinishLaunchingNotification`](./nsapplication/willfinishlaunchingnotification.md) and [`didFinishLaunchingNotification`](./nsapplication/didfinishlaunchingnotification.md)). The delegate has an opportunity to respond to these notifications by implementing the methods [`applicationWillFinishLaunching(_:)`](./nsapplicationdelegate/applicationwillfinishlaunching%28_%29.md) and [`applicationDidFinishLaunching(_:)`](./nsapplicationdelegate/applicationdidfinishlaunching%28_%29.md). If the delegate wants to be informed of both events, it implements both methods. If it needs to know only when the app is finished launching, it implements only [`applicationDidFinishLaunching(_:)`](./nsapplicationdelegate/applicationdidfinishlaunching%28_%29.md).
 
-##### System services
+### System services
 
 `NSApplication` interacts with the system services architecture to provide services to your app through the Services menu.
 
-##### Subclassing notes
+### Subclassing notes
 
 You rarely should find a real need to create a custom `NSApplication` subclass. Unlike some object-oriented libraries, Cocoa doesn’t require you to subclass `NSApplication` to customize app behavior. Instead it gives you many other ways to customize an app. This section discusses both some of the possible reasons to subclass `NSApplication` and some of the reasons *not* to subclass `NSApplication`.
 
@@ -62,7 +62,7 @@ To use a custom subclass of `NSApplication`, send [`shared`](./nsapplication/sha
 
 > ❗ **Important**:  Many AppKit classes rely on the `NSApplication` class and may not work properly until this class is fully initialized. As a result, you should not, for example, attempt to invoke methods of other AppKit classes from an initialization method of an `NSApplication` subclass.
 
-###### Methods to override
+#### Methods to override
 
 Generally, you subclass `NSApplication` to provide your own special responses to messages that are routinely sent to the global app object (`NSApp`). `NSApplication` doesn’t have primitive methods in the sense of methods that you must override in your subclass. Here are four methods that are possible candidates for overriding:
 
@@ -71,13 +71,13 @@ Generally, you subclass `NSApplication` to provide your own special responses to
 - Override [`requestUserAttention(_:)`](./nsapplication/requestuserattention%28_%29.md) if you want to modify how your app attracts the attention of the user (for example, offering an alternative to the bouncing app icon in the Dock).
 - Override [`target(forAction:)`](./nsapplication/target%28foraction%29.md) to substitute another object for the target of an action message.
 
-###### Special considerations
+#### Special considerations
 
 The global app object uses `@autorelease` blocks in its [`run()`](./nsapplication/run%28%29.md) method; if you override this method, you’ll need to create your own `@autorelease` blocks.
 
 Do not override [`shared`](./nsapplication/shared.md). The default implementation, which is essential to app behavior, is too complex to duplicate on your own.
 
-###### Alternatives to subclassing
+#### Alternatives to subclassing
 
 `NSApplication` defines numerous [Delegation](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Delegation.html#//apple_ref/doc/uid/TP40008195-CH14) methods that offer opportunities for modifying specific aspects of app behavior. Instead of making a custom subclass of `NSApplication`, your app delegate may be able to implement one or more of these methods to accomplish your design goals. In general, a better design than subclassing `NSApplication` is to put the code that expresses your app’s special behavior into one or more custom objects called controllers. Methods defined in your controllers can be invoked from a small dispatcher object without being closely tied to the global app object.
 

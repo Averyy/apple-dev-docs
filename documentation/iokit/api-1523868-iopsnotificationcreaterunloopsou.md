@@ -16,11 +16,11 @@ Returns a CFRunLoopSourceRef that notifies the caller when power source informat
 CFRunLoopSourceRef IOPSNotificationCreateRunLoopSource(IOPowerSourceCallbackType callback, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 Returns NULL if an error was encountered, otherwise a CFRunLoopSource. Caller must release the CFRunLoopSource.
 
-#### Discussion
+## Discussion
 
 Returns a CFRunLoopSourceRef for scheduling with your CFRunLoop. If your project does not use a CFRunLoop, you can alternatively receive notifications via mach port, dispatch, or signal, via `notify.h` using the name [`kIOPSTimeRemainingNotificationKey`](./kiopstimeremainingnotificationkey.md)
 

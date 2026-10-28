@@ -19,7 +19,7 @@ class var deviceGray: NSColorSpace { get }
 @property (class, strong, readonly) NSColorSpace * deviceGrayColorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSColorSpace` object. The color space also includes an alpha component. Typical devices that use this color space are grayscale printers and displays. This object corresponds to the Cocoa color space name `NSDeviceWhiteColorSpace`.
 

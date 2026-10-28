@@ -19,11 +19,11 @@
 static SPScaledPose3DFloat SPScaledPose3DFloatMakeWithAffineTransform(SPAffineTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A scaled pose with a position and rotation that are defined by an affine transform.
 
-#### Discussion
+## Discussion
 
 Returns a scaled pose with with a position, rotation, and scale that are defined by an affine transform.
 

@@ -15,7 +15,7 @@ Posted when history items have been added to a web history.
 static let WebHistoryItemsAdded: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the web history to which the items were added. The `userInfo` dictionary contains the following information:
 

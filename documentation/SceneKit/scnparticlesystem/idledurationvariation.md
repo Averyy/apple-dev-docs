@@ -25,7 +25,7 @@ var idleDurationVariation: CGFloat { get set }
 @property (nonatomic) CGFloat idleDurationVariation;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a nonzero value for this property randomizes the effect of the [`idleDuration`](./idleduration.md) property. For each idle period, SceneKit randomly adjusts the duration by up to half the [`idleDurationVariation`](./idledurationvariation.md) value. For example, if the [`idleDuration`](./idleduration.md) value is `1.0` seconds and the [`idleDurationVariation`](./idledurationvariation.md) value is `0.5` seconds, the system idles for a period of `0.75` to `1.25` seconds between emissions.
 

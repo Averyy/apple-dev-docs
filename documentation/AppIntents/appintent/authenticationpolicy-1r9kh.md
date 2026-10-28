@@ -21,7 +21,7 @@ The authentication policy to enforce when running the app intent.
 static var authenticationPolicy: IntentAuthenticationPolicy { get }
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property if you want someone to provide authentication before running the app intent. The default value of this property is [`IntentAuthenticationPolicy.alwaysAllowed`](../intentauthenticationpolicy/alwaysallowed.md), which allows the intent to run without authentication, including when the device is locked.
 

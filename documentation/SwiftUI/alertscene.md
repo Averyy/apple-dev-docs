@@ -16,7 +16,7 @@ nonisolated
 struct AlertScene<Actions, Message> where Actions : View, Message : View
 ```
 
-#### Overview
+## Overview
 
 Alert scenes present themselves in the center of the current display, and don’t attach to any particular window. The system prevents interaction with the app until someone dismisses the alert scene.
 

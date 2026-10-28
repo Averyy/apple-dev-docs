@@ -19,11 +19,11 @@ func MDQueryGetIndexOfResult(_ query: MDQuery!, _ result: UnsafeRawPointer!) -> 
 CFIndex MDQueryGetIndexOfResult(MDQueryRef query, const void *result);
 ```
 
-#### Return Value
+## Return Value
 
 The index of the given result, or `kCFNotFound` if the value is not one of the query's existing results. If you provided a custom result creation function result, the result will be objects created by that function.
 
-#### Discussion
+## Discussion
 
 If a result-create function has been set, and the equal callback is non-`NULL`, it will be used to test the query's results against the candidate result. 
 

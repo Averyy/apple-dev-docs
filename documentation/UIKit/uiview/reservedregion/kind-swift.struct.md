@@ -19,7 +19,7 @@ A kind of reserved region.
 struct Kind
 ```
 
-#### Overview
+## Overview
 
 Pass a kind to [`reservedRegions(kind:options:)`](../reservedregions%28kind,options%29.md) to choose which regions you get: [`occlusion`](./kind-swift.struct/occlusion.md) for areas that cover your content, and [`division`](./kind-swift.struct/division.md) for areas that split it. Each [`UIView.ReservedRegion`](../reservedregion.md) also reports its kind in its [`kind`](./kind-swift.property.md) property.
 

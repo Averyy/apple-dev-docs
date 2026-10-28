@@ -16,7 +16,7 @@ case failureRequestUnspecified
 INGetAvailableRestaurantReservationBookingsIntentCodeFailureRequestUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 Maps launches your app and passes it to the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object from your response so that you can try to get the information there.
 

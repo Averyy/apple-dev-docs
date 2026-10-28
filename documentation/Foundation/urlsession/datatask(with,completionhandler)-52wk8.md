@@ -29,11 +29,11 @@ func dataTask(with url: URL, completionHandler: @escaping @Sendable (Data?, URLR
 
 - [Processing URL session data task results with Combine](../processing-url-session-data-task-results-with-combine.md)
 
-#### Return Value
+## Return Value
 
 The new session data task.
 
-#### Discussion
+## Discussion
 
 After you create the task, you must start it by calling its [`resume()`](../urlsessiontask/resume%28%29.md) method.
 

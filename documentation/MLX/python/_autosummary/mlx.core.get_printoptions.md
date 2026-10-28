@@ -6,7 +6,11 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ge
 
 # mlx.core.get_printoptions
 
-**get_printoptions() → [PrintOptions](printoptions_class.md#mlx.core.PrintOptions)**
-: Get global printing precision for array formatting.
+```python
+get_printoptions() → PrintOptions
+```
+
+Get global printing precision for array formatting.
+
 Returns:
 PrintOptions: The format options used for printing arrays.

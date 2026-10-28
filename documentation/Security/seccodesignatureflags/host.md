@@ -20,7 +20,7 @@ static var host: SecCodeSignatureFlags { get }
 kSecCodeSignatureHost
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that the code may act as a host that controls and supervises guest code. If this flag is not set in a code signature, the code is never considered eligible to be a host, and any attempt to act like one is ignored or rejected.
 

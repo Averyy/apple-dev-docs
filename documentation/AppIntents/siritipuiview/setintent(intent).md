@@ -18,7 +18,7 @@ Sets an `AppIntent` for this view. This must be called before presenting the vie
 @preconcurrency final func setIntent<Intent>(intent: Intent) where Intent : AppIntent
 ```
 
-#### Discussion
+## Discussion
 
 The provided `AppIntent` must be a valid App Shortcut for this view to work correctly.
 

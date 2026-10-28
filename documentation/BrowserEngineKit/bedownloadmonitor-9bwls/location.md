@@ -13,11 +13,11 @@ A class that associates a URL with the bookmark you use to access that URL.
 ## Declaration
 
 ```swift
-@objc
-(BEDownloadMonitorLocation) class Location
+@objc(BEDownloadMonitorLocation)
+class Location
 ```
 
-#### Overview
+## Overview
 
 Pass the [`bookmarkData`](./location/bookmarkdata.md) to your browser app to resolve the URL in the app. For information on using XPC to share data between your networking extension and browser app, see [Using XPC to communicate with browser extensions](../using-xpc-to-communicate-with-browser-extensions.md).
 

@@ -23,7 +23,7 @@ static func == (lhs: Set<Element>, rhs: Set<Element>) -> Bool
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 `true` if the `lhs` and `rhs` have the same elements; otherwise, `false`.
 

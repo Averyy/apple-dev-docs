@@ -19,7 +19,7 @@ Recreates an asynchronous hand action classifier’s training session by restori
 static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLHandActionClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLTrainingSession`](../mltrainingsession.md) that represents the hand action classifier training session.
 

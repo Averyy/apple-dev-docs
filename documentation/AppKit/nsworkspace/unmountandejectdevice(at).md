@@ -19,7 +19,7 @@ func unmountAndEjectDevice(at url: URL) throws
 - (BOOL) unmountAndEjectDeviceAtURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 You can safely call this method from any thread of your app.
 

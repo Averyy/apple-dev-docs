@@ -21,11 +21,11 @@ convenience init(rating: Double)
 + (instancetype) routeDetailWithRating:(double) rating;
 ```
 
-#### Return Value
+## Return Value
 
 A new @c CPRouteDetail instance representing the route rating
 
-#### Discussion
+## Discussion
 
 Use this method to display a user-generated or quality rating for the route. The rating can represent various quality metrics such as road conditions, scenic value, or overall route quality.
 

@@ -27,7 +27,7 @@ func loadFromPreferences() async throws
 - (void) loadFromPreferencesWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Initially, the DNS proxy configuration comes from a configuration profile stored on the device in a managed environment, as described in [Configuration Profile Reference](https://developer.apple.com/library/archive/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010206).
 

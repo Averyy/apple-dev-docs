@@ -5,7 +5,7 @@
 
 Add playgrounds to your code that run and display results in the canvas.
 
-#### Overview
+## Overview
 
 You can explore and experiment with your code using playgrounds that you add directly to your Swift files. Xcode immediately shows the results of running the playgrounds in the canvas. Xcode can also generate playgrounds for you about symbols or selections in your code.
 
@@ -13,7 +13,7 @@ You can explore and experiment with your code using playgrounds that you add dir
 
 > 💡 **Tip**: Previews that you add to SwiftUI files also appear in the canvas. For information on previews, see [Adding previews to your interface files](./adding-previews-to-your-interface-files.md).
 
-##### Add playgrounds to your Swift files
+### Add playgrounds to your Swift files
 
 You can add one or more playgrounds to a Swift file. First, import the Playgrounds framework in your Swift file. Then wrap the code snippet that you want to run in the `#Playground` macro, for example:
 
@@ -31,7 +31,7 @@ import Playgrounds
 
 If the canvas isn’t open, choose Editor > Canvas to display the canvas. Then click the Resume button to run the playground and see the results in the canvas.
 
-##### View the results in the canvas
+### View the results in the canvas
 
 In the canvas, use the controls under each line of code to see the details. For example, click the disclosure triangle under a variable name to show or hide its value.
 
@@ -39,11 +39,11 @@ If a line of code contains a viewable object — such as an image, color, or loc
 
 ![A screenshot of the canvas showing a viewable CLLocationCoordinate2D variable displayed on a map with the disclosure triangle under the variable name open and the eye button on.](https://developer.apple.com/tutorials/images/com.apple.Xcode/running-playgrounds-line-of-code@2x.png)
 
-##### Navigate between multiple playgrounds and previews
+### Navigate between multiple playgrounds and previews
 
 If you add multiple playgrounds, you can switch between them, and any previews that you add to the same file, using the tabs that appear at the top of the canvas. When you click a tab, Xcode runs that playground or preview and shows the results in the canvas. Playground tabs have a beaker icon and previews have an eye icon in front of the name.
 
-##### Generate playgrounds from your code
+### Generate playgrounds from your code
 
 To quickly add a playground, let the coding assistant generate one for you from a selection in your code.
 

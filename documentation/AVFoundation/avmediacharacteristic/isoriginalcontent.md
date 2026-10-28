@@ -25,7 +25,7 @@ static let isOriginalContent: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicIsOriginalContent;
 ```
 
-#### Discussion
+## Discussion
 
 This characteristic differentiates original content from supplementary or derivative content, such as a language translation.
 

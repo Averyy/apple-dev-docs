@@ -26,7 +26,7 @@ func showGlyphsAtPoint(x: CGFloat, y: CGFloat, glyphs: UnsafePointer<CGGlyph>?, 
 extern void CGContextShowGlyphsAtPoint(CGContextRef c, CGFloat x, CGFloat y, const CGGlyph *glyphs, size_t count);
 ```
 
-#### Discussion
+## Discussion
 
 This function displays an array of glyphs at the specified position in the user space.
 

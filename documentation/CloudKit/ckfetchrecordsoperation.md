@@ -29,7 +29,7 @@ class CKFetchRecordsOperation
 
 - [Encrypting User Data](./encrypting-user-data.md)
 
-#### Overview
+## Overview
 
 Use this operation to retrieve the entire contents of each record or only a subset of its contained values. As records become available, the operation object reports progress about the state of the operation to several different blocks, which you can use to process the results.
 

@@ -23,11 +23,11 @@ func intersects(sphereOrigin: Point3DFloat, sphereRadius: Float) -> Bool
 static bool SPRay3DFloatIntersectsSphere(SPRay3DFloat ray, SPPoint3DFloat sphereOrigin, float sphereRadius);
 ```
 
-#### Return Value
+## Return Value
 
 A  Boolean value that indicates whether the ray intersects the sphere.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the ray intersects a specified sphere.
 

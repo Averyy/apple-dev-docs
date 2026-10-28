@@ -24,7 +24,7 @@ var maxTotalThreadsPerThreadgroup: Int { get set }
 @property (nonatomic, readwrite) NSUInteger maxTotalThreadsPerThreadgroup;
 ```
 
-#### Discussion
+## Discussion
 
 Metal automatically selects a maximum threadgroup size when you set this value to `0`.
 

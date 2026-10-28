@@ -22,11 +22,11 @@ func CVDisplayLinkGetOutputVideoLatency(_ displayLink: CVDisplayLink) -> CVTime
 extern CVTime CVDisplayLinkGetOutputVideoLatency(CVDisplayLinkRef displayLink);
 ```
 
-#### Return Value
+## Return Value
 
 A `CVTime` structure that holds the latency value. This value may be indefinite.
 
-#### Discussion
+## Discussion
 
 This call allows you to retrieve the device’s built-in output latency. For example, an NTSC device with one frame of latency might report back 1001/30000 or 2002/60000.
 

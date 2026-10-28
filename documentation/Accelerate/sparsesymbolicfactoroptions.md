@@ -29,7 +29,7 @@ typedef struct { ... } SparseSymbolicFactorOptions;
 
 - [Solving systems using direct methods](./solving-systems-using-direct-methods.md)
 
-#### Overview
+## Overview
 
 [`SparseSymbolicFactorOptions`](./sparsesymbolicfactoroptions.md) supports the following ordering algorithms:
 

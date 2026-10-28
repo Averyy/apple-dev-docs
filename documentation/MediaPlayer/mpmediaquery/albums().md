@@ -22,11 +22,11 @@ class func albums() -> MPMediaQuery
 + (MPMediaQuery *) albumsQuery;
 ```
 
-#### Return Value
+## Return Value
 
 A media query that matches media items of type [`music`](../mpmediatype/music.md) and has a grouping type of [`MPMediaGrouping.album`](../mpmediagrouping/album.md).
 
-#### Discussion
+## Discussion
 
 A media item can have more than one media type; for example, an item could be of types “music” and “podcast.” An [`albums()`](./albums%28%29.md) query matches all [`music`](../mpmediatype/music.md) items, whether or not they’re also of other media types.
 

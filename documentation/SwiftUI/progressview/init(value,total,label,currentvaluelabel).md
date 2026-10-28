@@ -24,7 +24,7 @@ init<V>(value: V?, total: V = 1.0, @ContentBuilder label: () -> Label, @ContentB
 
 Available when `Label` conforms to `View` and `CurrentValueLabel` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 If the value is non-`nil`, but outside the range of `0.0` through `total`, the progress view pins the value to those limits, rounding to the nearest possible bound. A value of `nil` represents indeterminate progress, in which case the progress view ignores `total`.
 

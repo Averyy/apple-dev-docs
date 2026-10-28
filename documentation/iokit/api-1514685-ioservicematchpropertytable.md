@@ -23,11 +23,11 @@ func IOServiceMatchPropertyTable(_ service: io_service_t, _ matching: CFDictiona
 kern_return_t IOServiceMatchPropertyTable(io_service_t service, CFDictionaryRef matching, boolean_t *matches);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 This function calls the matching method of an IOService object and returns the boolean result.
 

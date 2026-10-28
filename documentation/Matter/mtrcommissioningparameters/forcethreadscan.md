@@ -25,7 +25,7 @@ var forceThreadScan: Bool { get set }
 @property (nonatomic, assign) BOOL forceThreadScan;
 ```
 
-#### Discussion
+## Discussion
 
 Even if this value is NO a scan may still be performed.
 

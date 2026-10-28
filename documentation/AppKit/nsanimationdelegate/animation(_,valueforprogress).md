@@ -20,11 +20,11 @@ optional func animation(_ animation: NSAnimation, valueForProgress progress: NSA
 - (float) animation:(NSAnimation *) animation valueForProgress:(NSAnimationProgress) progress;
 ```
 
-#### Return Value
+## Return Value
 
 A `float` value representing a custom curve.
 
-#### Discussion
+## Discussion
 
 The delegate can compute and return a custom curve value for the given progress value.  If the delegate does not implement this method, `NSAnimation` computes the current curve value.
 

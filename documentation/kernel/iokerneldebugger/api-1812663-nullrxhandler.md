@@ -15,7 +15,7 @@ static void nullRxHandler(
  UInt32 timeout );
 ```
 
-#### Overview
+## Overview
 
 This function is registered as the receive handler when an IOKernelDebugger object surrenders its status as the active debugger nub. Until another IOKernelDebugger object gets promoted, this function will handle polled receive requests from KDP. This function does nothing except to log a warning message.
 

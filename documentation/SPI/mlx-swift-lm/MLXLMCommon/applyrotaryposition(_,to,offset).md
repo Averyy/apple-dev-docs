@@ -17,11 +17,11 @@ Apply rotary position embeddings, using the cache offset when available.
 func applyRotaryPosition<R>(_ rope: R, to x: MLXArray, offset: RoPEOffset?) -> MLXArray where R : ArrayOffsetLayer, R : OffsetLayer
 ```
 
-#### Return Value
+## Return Value
 
 The input with rotary positional encoding applied.
 
-#### Discussion
+## Discussion
 
 This function enables models to use a single call site instead of repeating conditional offset handling:
 

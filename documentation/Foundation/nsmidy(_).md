@@ -20,7 +20,7 @@ func NSMidY(_ aRect: NSRect) -> Double
 static CGFloat NSMidY(NSRect aRect);
 ```
 
-#### Return Value
+## Return Value
 
 The y coordinate of `aRect`’s center point.
 

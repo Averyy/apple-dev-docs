@@ -19,7 +19,7 @@
 static SPVector3DFloat SPVector3DFloatReflect(SPVector3DFloat x, SPVector3DFloat y);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the reflection direction of an incident vector and a unit normal vector.
 

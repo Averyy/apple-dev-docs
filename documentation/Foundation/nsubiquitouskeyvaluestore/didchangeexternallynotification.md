@@ -25,7 +25,7 @@ class let didChangeExternallyNotification: NSNotification.Name
 extern NSNotificationName const NSUbiquitousKeyValueStoreDidChangeExternallyNotification;
 ```
 
-#### Discussion
+## Discussion
 
 If your app is running when iCloud delivers changes from another device, the system generates this notification for your app. Use it to update your app’s content in response to the new data.
 

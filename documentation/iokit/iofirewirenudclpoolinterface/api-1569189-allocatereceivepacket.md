@@ -16,11 +16,11 @@ Allocate a ReceivePacket NuDCL and append it to the program
 NuDCLReceivePacketRef (*AllocateReceivePacket)(IOFireWireLibNuDCLPoolRef self, CFMutableSetRef saveBag, UInt8 headerBytes, UInt32 numBuffers, IOVirtualRange *buffers);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an NuDCLReceivePacketRef on success or 0 on failure.
 
-#### Discussion
+## Discussion
 
 The ReceivePacket DCL receives an isochronous packet from the bus. One DCL runs per bus cycle. If receiving isochronous headers, an update must be run before the isochronous header is valid.
 

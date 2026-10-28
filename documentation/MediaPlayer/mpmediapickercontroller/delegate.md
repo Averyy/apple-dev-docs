@@ -21,7 +21,7 @@ weak var delegate: (any MPMediaPickerControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<MPMediaPickerControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you set the delegate to be the same object that initializes and displays the media item picker.
 

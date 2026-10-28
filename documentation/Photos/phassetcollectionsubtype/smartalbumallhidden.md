@@ -24,7 +24,7 @@ case smartAlbumAllHidden
 PHAssetCollectionSubtypeSmartAlbumAllHidden
 ```
 
-#### Discussion
+## Discussion
 
 Hidden assets have an [`isHidden`](../phasset/ishidden.md) value of `true` and the system doesn’t return them through a fetch request, by default. Hide or show an asset by setting the [`isHidden`](../phassetchangerequest/ishidden.md) property of a [`PHAssetChangeRequest`](../phassetchangerequest.md) object.
 

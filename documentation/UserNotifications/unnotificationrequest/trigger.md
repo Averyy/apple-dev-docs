@@ -34,7 +34,7 @@ var trigger: UNNotificationTrigger? { get }
 @property (atomic, copy, readonly, nullable) UNNotificationTrigger * trigger;
 ```
 
-#### Discussion
+## Discussion
 
 For notifications that the system has delivered, use this property to determine what caused the delivery to occur. For remote notifications, this property contains a [`UNPushNotificationTrigger`](../unpushnotificationtrigger.md) object. For other notifications, the system sets this type using the trigger condition specified in the original request.
 

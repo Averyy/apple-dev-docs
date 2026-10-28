@@ -20,7 +20,7 @@ unowned(unsafe) var findBarContainer: (any NSTextFinderBarContainer)? { get set 
 @property (assign, nullable) id<NSTextFinderBarContainer> findBarContainer;
 ```
 
-#### Discussion
+## Discussion
 
 This property must be set to support the find bar.
 

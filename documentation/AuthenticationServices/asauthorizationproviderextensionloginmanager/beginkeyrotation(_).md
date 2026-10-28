@@ -17,7 +17,7 @@ func beginKeyRotation(_ keyType: ASAuthorizationProviderExtensionKeyType) -> Sec
 - (SecKeyRef) beginKeyRotationForKeyType:(ASAuthorizationProviderExtensionKeyType) keyType;
 ```
 
-#### Discussion
+## Discussion
 
 Generates a new key for the specified platform SSO key type using the strongest supported key strength returning the new key.  Nil is returned if there is an error generating the new key.
 

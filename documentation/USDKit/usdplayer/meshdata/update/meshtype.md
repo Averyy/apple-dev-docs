@@ -20,7 +20,7 @@ Updated mesh type.
 let meshType: USDPlayer.MeshData.MeshType?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

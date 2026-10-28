@@ -23,7 +23,7 @@ var locale: Locale { get }
 @property (nonatomic, copy, readonly) NSLocale * locale;
 ```
 
-#### Discussion
+## Discussion
 
 The locale of the speech recognizer is an `NSLocale` object. The default value of this property is the system locale (that is, `+[NSLocale systemLocale]`).
 

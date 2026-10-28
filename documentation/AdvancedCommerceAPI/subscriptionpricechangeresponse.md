@@ -15,7 +15,7 @@ A response that contains signed JWS renewal and JWS transaction information afte
 object SubscriptionPriceChangeResponse
 ```
 
-#### Discussion
+## Discussion
 
 This is the response body for the [`Change Subscription Price`](./change-subscription-price.md) endpoint.
 

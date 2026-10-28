@@ -5,7 +5,7 @@
 
 An object that contains zero or more media samples of a uniform media type.
 
-#### Overview
+## Overview
 
 Sample buffers are Core Foundation objects that the system uses to move media sample data through the media pipeline. An instance of `CMSampleBuffer` contains zero or more compressed (or uncompressed) samples of a particular media type and contains one of the following:
 

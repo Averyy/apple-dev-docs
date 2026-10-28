@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar’s letterform is considered lower
 var isLowercase: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “Lowercase” and the “Other_Lowercase” properties in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 

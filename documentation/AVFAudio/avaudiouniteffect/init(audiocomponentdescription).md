@@ -24,7 +24,7 @@ init(audioComponentDescription: AudioComponentDescription)
 - (instancetype) initWithAudioComponentDescription:(AudioComponentDescription) audioComponentDescription;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioUnitEffect` instance.
 

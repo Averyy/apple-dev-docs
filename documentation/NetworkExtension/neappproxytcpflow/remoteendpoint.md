@@ -23,7 +23,7 @@ var remoteEndpoint: NWEndpoint { get }
 @property (readonly) NWEndpoint * remoteEndpoint;
 ```
 
-#### Discussion
+## Discussion
 
 If the flow’s corresponding socket was created using one of the high-level networking APIs such as [`URLSession`](../../Foundation/urlsession.md) or [`NSURLConnection`](../../Foundation/nsurlconnection.md), then the hostname property of the `remoteEndpoint` object contains the DNS name of the remote host. If the flow’s corresponding socket was created using the sockets API directly, then the hostname property of the `remoteEndpoint` object contains the IP address of the remote host.
 

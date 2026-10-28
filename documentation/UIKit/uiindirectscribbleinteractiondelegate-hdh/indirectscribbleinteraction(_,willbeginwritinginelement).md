@@ -19,7 +19,7 @@ Informs the delegate when the user begins writing.
 func indirectScribbleInteraction(_ interaction: any UIInteraction, willBeginWritingInElement elementIdentifier: Self.ElementIdentifier)
 ```
 
-#### Discussion
+## Discussion
 
 Use this to hide custom placeholders or other UI elements that can interfere with writing.
 

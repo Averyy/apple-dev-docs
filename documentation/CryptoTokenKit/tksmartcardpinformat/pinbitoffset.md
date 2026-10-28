@@ -25,7 +25,7 @@ var pinBitOffset: Int { get set }
 @property NSInteger PINBitOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The value of `PINBitOffset` indirectly controls the internal system units indicator. If `PINBitOffset` is byte aligned (that is, `PINBitOffset % 8 == 0`), the internal representation of `PINBitOffset` gets converted from bits to bytes.
 

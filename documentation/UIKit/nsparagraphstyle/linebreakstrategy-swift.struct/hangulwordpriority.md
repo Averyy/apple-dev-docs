@@ -24,7 +24,7 @@ static var hangulWordPriority: NSParagraphStyle.LineBreakStrategy { get }
 NSLineBreakStrategyHangulWordPriority
 ```
 
-#### Discussion
+## Discussion
 
 To avoid breaking between Hangul characters, this strategy is preferred for typesetting modern Korean documents that display UI strings.
 

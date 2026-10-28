@@ -15,11 +15,11 @@ Open a file identified by a path--roughly speaking an in-kernel open(2).
 errno_t vnode_open(const char *path, int fmode, int cmode, int flags, vnode_t *vpp, vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success or an error code.
 
-#### Discussion
+## Discussion
 
 If vnode_open() succeeds, it returns with both an iocount and a usecount on the returned vnode. These must be released eventually; the iocount should be released with vnode_put() as soon as any initial operations on the vnode are over, whereas the usecount should be released via vnode_close().
 

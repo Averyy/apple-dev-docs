@@ -5,13 +5,13 @@
 
 Create a dedicated interface to display and modify your app’s settings.
 
-#### Overview
+## Overview
 
 If your app has configurable settings, add a settings interface to give people a way to edit them. A settings interface explains the purpose of each setting and offers buttons, sliders, text fields, and other controls to change the associated values. Typically, you include a settings interface as part of your app’s UI. However, some platforms allow you to display your app’s settings in the system’s Settings app. You might choose the Settings app for settings people change infrequently, or if you prefer not to include a settings interface in your app.
 
 For information about how to design a settings interface, see [Settings](https://developer.apple.com/design/human-interface-guidelines/settings) in Human Interface Guidelines.
 
-##### Add a settings window to your macOS app
+### Add a settings window to your macOS app
 
 In macOS, apps display settings in a separate window that’s accessible from the app’s menus. The standard App menu includes space for a Settings menu item, which displays your settings window when selected.
 
@@ -39,7 +39,7 @@ If you build your app using AppKit, add a window and view controllers with your 
 
 For information about how to access settings in your interface, see [Accessing settings from your code](./accessing-settings-from-your-code.md). For more information about AppKit view controllers, see [`NSViewController`](../AppKit/nsviewcontroller.md).
 
-##### Integrate settings into your app’s UI on other platforms
+### Integrate settings into your app’s UI on other platforms
 
 There is no standard way to display settings from apps in iOS, iPadOS, tvOS, visionOS, or watchOS. In macOS, you typically display settings in a separate window that people access from your menus. However, this approach doesn’t work as well on other Apple platforms, many of which don’t display menus or offer windows people can manipulate directly. To build a settings interface on these platforms, consider how people use the underlying settings in your app:
 
@@ -50,7 +50,7 @@ There is no standard way to display settings from apps in iOS, iPadOS, tvOS, vis
 
 When building a settings interface of any kind, use a dedicated scene or view controller to manage the interface and any relevant changes. Using a dedicated scene provides a clean separation between your settings code and the rest of your code. The defaults system has notification mechanisms to help you update your app when settings change. For more information about detecting these changes, see [Accessing settings from your code](./accessing-settings-from-your-code.md).
 
-##### Display settings in the system’s Settings app
+### Display settings in the system’s Settings app
 
 In iOS, iPadOS, tvOS, and visionOS, you can optionally display your settings from the system’s Settings app. The Settings app provides a dedicated page for each app, and this page includes system-level settings for location, notifications, and other system technologies your app uses. You can add app-specific settings to this space, but typically do so only for settings people change infrequently. You might also use the system Settings app if you don’t want to display settings in your app’s UI.
 

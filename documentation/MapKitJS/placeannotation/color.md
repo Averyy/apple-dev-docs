@@ -15,7 +15,7 @@ The color of the place.
 get color(): string;
 ```
 
-#### Discussion
+## Discussion
 
 Not all places have a color. You can’t set the color property of the place annotation.
 

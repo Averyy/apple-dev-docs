@@ -23,7 +23,7 @@ subscript(bounds: Range<ClosedRange<Bound>.Index>) -> Slice<ClosedRange<Bound>> 
 
 Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
-#### Overview
+## Overview
 
 For example, using a `PartialRangeFrom` range expression with an array accesses the subrange from the start of the range expression until the end of the array.
 

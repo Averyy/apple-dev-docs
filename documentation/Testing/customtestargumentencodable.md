@@ -27,7 +27,7 @@ protocol CustomTestArgumentEncodable : Sendable
 
 - [Implementing parameterized tests](./parameterizedtesting.md)
 
-#### Overview
+## Overview
 
 The testing library checks whether a test argument conforms to this protocol, or any of several other known protocols, when running selected test cases. When a test argument conforms to this protocol, that conformance takes highest priority, and the testing library will then call [`encodeTestArgument(to:)`](./customtestargumentencodable/encodetestargument%28to%29.md) on the argument. A type that conforms to this protocol is not required to conform to either `Encodable` or `Decodable`.
 

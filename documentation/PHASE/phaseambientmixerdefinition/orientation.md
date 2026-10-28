@@ -24,7 +24,7 @@ var orientation: simd_quatf { get }
 @property (nonatomic, readonly) simd_quatf orientation;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value to the `orientation` initializer argument. See [`init(channelLayout:orientation:)`](./init%28channellayout,orientation%29.md).
 

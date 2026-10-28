@@ -19,7 +19,7 @@ var style: NSTableView.Style { get set }
 @property NSTableViewStyle style;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is [`NSTableView.Style.automatic`](./style-swift.enum/automatic.md) in macOS 11 and later. Apps that link to previous macOS versions default to [`NSTableView.Style.plain`](./style-swift.enum/plain.md).
 

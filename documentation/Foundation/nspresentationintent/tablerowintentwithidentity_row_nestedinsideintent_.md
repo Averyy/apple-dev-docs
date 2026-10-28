@@ -21,7 +21,7 @@ Creates a table row intent with the provided information.
 + (NSPresentationIntent *) tableRowIntentWithIdentity:(NSInteger) identity row:(NSInteger) row nestedInsideIntent:(NSPresentationIntent *) parent;
 ```
 
-#### Return Value
+## Return Value
 
 A new intent with the kind set to [`NSPresentationIntentKindTableRow`](../nspresentationintentkind/nspresentationintentkindtablerow.md).
 

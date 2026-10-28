@@ -25,7 +25,7 @@ func didLoad(_ node: SKNode?)
 - (void) didLoadReferenceNode:(SKNode *) node;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called after the referenced content is added as a child of the reference node. Override this method in a subclass to implement custom loading behavior.
 

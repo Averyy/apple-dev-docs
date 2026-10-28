@@ -5,7 +5,7 @@
 
 Get processed image data without compression to use for filtering or lossless output.
 
-#### Overview
+## Overview
 
 Typical photography workflows save images in a compressed format such as HEIF/HEVC or JPEG. These formats use lossy compression to strike a balance between preserving noticeable details in the image and reducing its data storage requirements. However, sometimes it’s more helpful to work with uncompressed image data—for example, some image processing and analysis algorithms can be confused by the visual artifacts introduced by lossy compression.
 
@@ -13,7 +13,7 @@ Typical photography workflows save images in a compressed format such as HEIF/HE
 
 In iOS, capturing uncompressed image data requires minor changes to the basic photography workflow covered in [Capturing still and Live Photos](./capturing-still-and-live-photos.md).
 
-##### Choose uncompressed format settings
+### Choose uncompressed format settings
 
 To capture in an uncompressed format, create a photo settings object with [`init(format:)`](./avcapturephotosettings/init%28format%29.md). In the format dictionary, specify the [`kCVPixelBufferPixelFormatTypeKey`](../CoreVideo/kcvpixelbufferpixelformattypekey.md) with one of the values listed in the photo output’s [`availablePhotoPixelFormatTypes`](./avcapturephotooutput/availablephotopixelformattypes-6eyb.md) array. The example below chooses a 32-bit BGRA pixel format, which is useful in some GPU processing workflows:
 
@@ -33,7 +33,7 @@ self.photoOutput.capturePhoto(with: photoSettings, delegate: captureProcessor)
 
 ```
 
-##### Handle results
+### Handle results
 
 As with other formats, you receive uncompressed data capture results to your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](./avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method as an [`AVCapturePhoto`](./avcapturephoto.md) object. To access the uncompressed pixel data directly, use the photo’s [`pixelBuffer`](./avcapturephoto/pixelbuffer.md) property.
 

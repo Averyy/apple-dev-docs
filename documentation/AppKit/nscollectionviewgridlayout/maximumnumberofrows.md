@@ -19,7 +19,7 @@ var maximumNumberOfRows: Int { get set }
 @property NSUInteger maximumNumberOfRows;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to specify the maximum number of rows to display in the collection view at any given time. The grid layout object uses this value during layout to configure the position and spacing of items. The default value of this property is `0`, which means that there is no maximum number of rows.
 

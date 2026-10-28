@@ -26,7 +26,7 @@ var recommendedTimeOffsetFromLive: CMTime { get }
 @property (readonly) CMTime recommendedTimeOffsetFromLive;
 ```
 
-#### Discussion
+## Discussion
 
 For nonlive stream content, the value is [`invalid`](../../CoreMedia/cmtime/invalid.md).
 

@@ -17,15 +17,15 @@ Evaluate the model and dataset and return the loss over the entire dataset.
 static func evaluate(model: Module, dataset: [String], loss: LoraLossFunction = loss, tokenizer: Tokenizer, batchSize: Int, batchCount: Int) -> Float
 ```
 
-#### Return Value
+## Return Value
 
 The loss over the enumerate data
 
-#### Discussion
+## Discussion
 
 The model is temporarily placed in evaluation mode and its previous mode is restored before this function returns.
 
-##### See Also
+### See Also
 
 - [`loadLoRAData(directory:name:)`](../loadloradata%28directory,name%29.md)
 

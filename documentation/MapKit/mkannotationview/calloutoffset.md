@@ -24,7 +24,7 @@ var calloutOffset: CGPoint { get set }
 @property (nonatomic) CGPoint calloutOffset;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the additional distance by which to move the callout. When this property is `(0, 0)`, the map view places the anchor point of the callout on the top-center point of the annotation view’s frame. Specifying positive offset values moves the callout down and to the right, and specifying negative values moves it up and to the left.
 

@@ -23,7 +23,7 @@ var kDNSServiceType_MF: Int { get }
 kDNSServiceType_MF
 ```
 
-#### Discussion
+## Discussion
 
 Mail forwarder.
 

@@ -21,7 +21,7 @@ Finds a tag for a given linguistic unit, for a single scheme, at the specified c
 - (NLTag) tagAtIndex:(NSUInteger) characterIndex unit:(NLTokenUnit) unit scheme:(NLTagScheme) scheme tokenRange:(NSRangePointer) tokenRange;
 ```
 
-#### Return Value
+## Return Value
 
 The tag for the requested tag scheme and linguistic unit, or `nil`. If a tag is returned, this function returns by reference the range of the token to `tokenRange`.
 

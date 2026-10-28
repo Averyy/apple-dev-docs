@@ -24,7 +24,7 @@ var stringValue: String? { get set }
 @property (nonatomic, copy, nullable) NSString * stringValue;
 ```
 
-#### Discussion
+## Discussion
 
 The meaning of a string value depends on the renderer (or other software component) processing the material. For example, a string value might be treated as the name of a texture image to be loaded from a default path.
 

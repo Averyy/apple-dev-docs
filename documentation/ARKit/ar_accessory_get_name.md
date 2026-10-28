@@ -15,11 +15,11 @@ Get an accessory’s name.
 extern const char *ar_accessory_get_name(ar_accessory_t accessory);
 ```
 
-#### Return Value
+## Return Value
 
 The name of the accessory, or `NULL` if no name is set.
 
-#### Discussion
+## Discussion
 
 > **Note**: The returned value will have the same lifetime as the input `ar_accessory_t`.
 

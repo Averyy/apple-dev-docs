@@ -23,7 +23,7 @@ protocol FxOnScreenControlAPI_v4 : FxOnScreenControlAPI_v3
 
 - [Adding onscreen controls to plug-ins](../Professional-Video-Applications/adding-onscreen-controls-to-plug-ins.md)
 
-#### Overview
+## Overview
 
 This protocol inherits from, and expands on, the `FxOnScreenControlAPI_v3` protocol. It allows an FxPlug plug-in to set the cursor the users sees in the canvas.
 

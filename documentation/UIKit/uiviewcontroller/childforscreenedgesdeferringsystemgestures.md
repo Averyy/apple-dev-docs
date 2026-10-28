@@ -26,7 +26,7 @@ var childForScreenEdgesDeferringSystemGestures: UIViewController? { get }
 
 - [Creating a custom container view controller](../creating-a-custom-container-view-controller.md)
 
-#### Discussion
+## Discussion
 
 When implementing a container view controller, override this method if one of your child view controllers defines screen-edge gestures that should take precedence over the system gestures. UIKit then uses the [`preferredScreenEdgesDeferringSystemGestures`](./preferredscreenedgesdeferringsystemgestures.md) property of the returned child view controller to determine which screen edges have competing gesture recognizers.
 

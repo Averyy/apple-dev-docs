@@ -21,7 +21,7 @@ var primaryAction: CPAlertAction { get }
 @property (nonatomic, strong, readonly) CPAlertAction * primaryAction;
 ```
 
-#### Discussion
+## Discussion
 
 Each navigation alert must have a primary action.
 

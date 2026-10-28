@@ -18,7 +18,7 @@ The half-extents of the optional axis-aligned bounding box.
 var halfExtents: SIMD3<Float>? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When non-`nil`, the renderer uses the box for culling. Setting this to a value expands `radius` to circumscribe the box.
 

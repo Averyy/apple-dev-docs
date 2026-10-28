@@ -23,7 +23,7 @@ init(planarBuffers: [vImage.PixelBuffer<Format.PlanarPixelFormat>], pixelFormat:
 
 Available when `Format` conforms to `MultiplePlanePixelFormat`.
 
-#### Discussion
+## Discussion
 
 > **Note**:  The number of planar buffers must equal the `Format.planeCount`. All planar buffers must be the same size.
 

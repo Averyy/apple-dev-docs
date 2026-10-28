@@ -21,7 +21,7 @@ Creates a thematic break intent with the provided information.
 + (NSPresentationIntent *) thematicBreakIntentWithIdentity:(NSInteger) identity nestedInsideIntent:(NSPresentationIntent *) parent;
 ```
 
-#### Return Value
+## Return Value
 
 A new intent with the kind set to [`NSPresentationIntentKindThematicBreak`](../nspresentationintentkind/nspresentationintentkindthematicbreak.md).
 

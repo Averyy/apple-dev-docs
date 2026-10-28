@@ -19,7 +19,7 @@ var allowsColumnSelection: Bool { get set }
 @property BOOL allowsColumnSelection;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`false`](../../Swift/false.md), which prevents the user from selecting columns (if you create the table view in Interface Builder, the default value is [`true`](../../Swift/true.md)). You can select columns programmatically regardless of this setting.
 

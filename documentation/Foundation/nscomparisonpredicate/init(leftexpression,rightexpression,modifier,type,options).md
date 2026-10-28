@@ -25,7 +25,7 @@ init(leftExpression lhs: NSExpression, rightExpression rhs: NSExpression, modifi
 - (instancetype) initWithLeftExpression:(NSExpression *) lhs rightExpression:(NSExpression *) rhs modifier:(NSComparisonPredicateModifier) modifier type:(NSPredicateOperatorType) type options:(NSComparisonPredicateOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver, initialized to a predicate of type `type` formed by combining the left and right expressions using the `modifier` and `options`.
 

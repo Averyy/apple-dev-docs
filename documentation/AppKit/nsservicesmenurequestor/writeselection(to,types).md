@@ -23,11 +23,11 @@ optional func writeSelection(to pboard: NSPasteboard, types: [NSPasteboard.Paste
 
 - [Supporting Writing Tools via the pasteboard](../supporting-writing-tools-via-the-pasteboard.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if your implementation was able to write one or more types to the pasteboard; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 A [`writeSelection(to:types:)`](./writeselection%28to,types%29.md) message is sent to the first responder when the user chooses a command from the Services menu, but only if the receiver didn’t return `nil` to a previous [`validRequestor(forSendType:returnType:)`](../nsresponder/validrequestor%28forsendtype,returntype%29.md) message.
 

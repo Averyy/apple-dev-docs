@@ -5,7 +5,7 @@
 
 Simplify data access and improve GPU utilization by storing custom primitive data directly in the acceleration structure.
 
-#### Overview
+## Overview
 
 Creating a ray-traced renderer — or using ray tracing to implement other behaviors — requires more than simple geometry. Your app also needs to provide custom data to your ray-tracing kernels. For example, a renderer might need UV coordinates and textures, as well as colors and other material properties, to calculate proper reflections and lighting. Some ray tracers use those same elements to implement other behaviors. For example, you can use an alpha texture and a texture lookup to implement opacity in a custom intersection function. How you organize your custom data can affect both the readability and performance of your ray-tracing kernels.
 
@@ -17,7 +17,7 @@ Retrieving the data needed to calculate the result requires the kernel to derefe
 
 For better Metal performance, copy primitive data into the acceleration structures and access it directly in your shaders. Using per-primitive data simplifies your shaders and make them easier to read, and you avoid needing to perform a separate data lookup based on the primitive ID. It also reduces the cost of transversing your data while simultaneously reducing GPU overhead. For kernels or functions that you run frequently on the GPU, or functions that contain many memory operations, use per-primitive data to improve performance.
 
-##### Create a data type for the primitive data
+### Create a data type for the primitive data
 
 Start by defining a structure for your per-primitive data in a file that your project shares between the app’s CPU and shader code. For example, you could define the data structure in the same place where you define the parameter types for your shaders and compute kernels:
 
@@ -46,7 +46,7 @@ A per-primitive data type can store the same types as an argument buffer (see [I
 
 One way to reduce a per-primitive structure’s size is by including a pointer to another buffer. Although this approach brings back some of the complexity of the earlier buffered approach, it still provides relatively quick access to data in the secondary structure. Put the data that you need most in the per-primitive structure, and access the secondary structure only when necessary. For better cache performance, pack both structures so that you store values you access at the same time near each other in memory.
 
-##### Add the per-primitive data to your acceleration structure
+### Add the per-primitive data to your acceleration structure
 
 You add the primitive data to your acceleration structure by including it when you create the acceleration structure. Start by copying the data for the primitives into an [`MTLBuffer`](./mtlbuffer.md) instance. Each primitive needs its own instance of the primitive data, stored in linear order.
 
@@ -77,7 +77,7 @@ func configure(geometryDescriptor: MTLAccelerationStructureTriangleGeometryDescr
 
 When you create the acceleration structure, Metal copies the data from the primitive data buffer into the new structure. Afterward, you can delete the primitive data buffer if you don’t have another use for it.
 
-##### Access the per-primitive data within a ray-tracing kernel
+### Access the per-primitive data within a ray-tracing kernel
 
 When your ray-tracing kernel calls an intersect method, Metal includes the primitive data for any intersected primitive in the intersection result. Retrieve the data for the primitive by accessing the `primitive_data` field:
 

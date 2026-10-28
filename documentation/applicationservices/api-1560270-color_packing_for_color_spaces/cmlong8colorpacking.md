@@ -13,7 +13,7 @@
 cmLong8ColorPacking = 0x0800
 ```
 
-#### Discussion
+## Discussion
 
 The color values for three or four 8-bit color channels are stored consecutively in a 32-bit long. For three channels, this constant is combined with either `cmAlphaFirstPacking` or `cmAlphaLastPacking` to indicate whether the unused eight bits are located at the beginning or end.
 

@@ -16,11 +16,11 @@ Returns the minimum value possible for the element.
 CFIndex IOHIDElementGetLogicalMin(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the logical minimum.
 
-#### Discussion
+## Discussion
 
 This corresponds to the logical minimun, which indicates the lower bounds of a variable element.
 

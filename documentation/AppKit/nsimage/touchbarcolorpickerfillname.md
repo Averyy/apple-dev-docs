@@ -22,7 +22,7 @@ class let touchBarColorPickerFillName: String
 extern NSImageName const NSImageNameTouchBarColorPickerFill;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for color picker for fill](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793541@2x.png)
 

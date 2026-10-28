@@ -25,7 +25,7 @@ var lastPathComponent: String { get }
 @property (copy, readonly) NSString * lastPathComponent;
 ```
 
-#### Discussion
+## Discussion
 
 Path components are alphanumeric strings delineated by the path separator (slash “/”) or the beginning or end of the path string. Multiple path separators at the end of the string are stripped.
 

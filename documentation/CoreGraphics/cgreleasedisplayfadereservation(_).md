@@ -20,11 +20,11 @@ func CGReleaseDisplayFadeReservation(_ token: CGDisplayFadeReservationToken) -> 
 extern CGError CGReleaseDisplayFadeReservation(CGDisplayFadeReservationToken token);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 
-#### Discussion
+## Discussion
 
 If you call this function while an asynchronous fade operation is running, there are two possible outcomes:
 

@@ -18,7 +18,7 @@ Content that people use to configure an accessory.
 struct HomeAccessoryConfiguration
 ```
 
-#### Overview
+## Overview
 
 Provide the configuration view, and optionally a filter that limits which accessories it applies to.
 

@@ -32,7 +32,7 @@ func enableBackgroundDelivery(for type: HKObjectType, frequency: HKUpdateFrequen
 
 - [Executing Observer Queries](../executing-observer-queries.md)
 
-#### Discussion
+## Discussion
 
 Call this method to register your app for background updates.
 
@@ -59,7 +59,7 @@ Also, in watchOS, the background updates share a budget with [`WKApplicationRefr
 
 > ❗ **Important**:  Background server queries aren’t supported on the Simulator. Be sure to test your background queries on a device.
 
-##### Receive Background Updates
+### Receive Background Updates
 
 As soon as your app launches, HealthKit calls the update handler for any observer queries that match the newly saved data. If you plan on supporting background delivery, set up all your observer queries in your app delegate’s [`application(_:didFinishLaunchingWithOptions:)`](../../UIKit/uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md) method. By setting up the queries in [`application(_:didFinishLaunchingWithOptions:)`](../../UIKit/uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md), you ensure that you’ve instantiated your queries, and they’re ready to use before HealthKit delivers the updates.
 

@@ -25,11 +25,11 @@ func getIndexes(_ indexBuffer: UnsafeMutablePointer<Int>, maxCount bufferSize: I
 - (NSUInteger) getIndexes:(NSUInteger *) indexBuffer maxCount:(NSUInteger) bufferSize inIndexRange:(NSRangePointer) range;
 ```
 
-#### Return Value
+## Return Value
 
 Number of indexes placed in `indexBuffer`.
 
-#### Discussion
+## Discussion
 
 You are responsible for allocating the memory required for `indexBuffer` and for releasing it later.
 

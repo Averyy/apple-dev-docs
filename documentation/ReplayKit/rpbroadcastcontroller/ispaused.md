@@ -26,7 +26,7 @@ var isPaused: Bool { get }
 @property (nonatomic, readonly, getter=isPaused) BOOL paused;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the broadcast is paused.
 

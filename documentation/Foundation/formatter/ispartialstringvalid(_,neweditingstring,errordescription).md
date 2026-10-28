@@ -25,11 +25,11 @@ func isPartialStringValid(_ partialString: String, newEditingString newString: A
 - (BOOL) isPartialStringValid:(NSString *) partialString newEditingString:(NSString **) newString errorDescription:(NSString **) error;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `partialString` is an acceptable value, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method is invoked each time the user presses a key while the cell has the keyboard focus—it lets you verify and edit the cell text as the user types it.
 

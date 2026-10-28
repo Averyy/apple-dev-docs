@@ -21,11 +21,11 @@ Adjusts the color saturation of the view.
 func saturation(_ amount: Double) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 An effect that adjusts the saturation of the view.
 
-#### Discussion
+## Discussion
 
 Use color saturation to increase or decrease the intensity of colors in a view.
 

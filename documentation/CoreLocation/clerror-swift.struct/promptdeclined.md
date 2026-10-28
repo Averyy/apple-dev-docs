@@ -21,7 +21,7 @@ A constant that indicates the user didn’t grant the requested temporary author
 static var promptDeclined: CLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the prompt was shown to the user, who declined, or if an error prevented the prompt from being displayed, then `requestTemporaryPreciseLocationAuthorization(withPurposeKey:completion:)` throws this error.
 

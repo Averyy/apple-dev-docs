@@ -21,7 +21,7 @@ Creates a mirror representing the given subject using a dictionary literal for t
 init<Subject>(_ subject: Subject, children: KeyValuePairs<String, Any>, displayStyle: Mirror.DisplayStyle? = nil, ancestorRepresentation: Mirror.AncestorRepresentation = .generated)
 ```
 
-#### Discussion
+## Discussion
 
 You use this initializer from within your type’s `customMirror` implementation to create a customized mirror. Pass a dictionary literal with string keys as `children`. Although an *actual* dictionary is arbitrarily-ordered, when you create a mirror with a dictionary literal, the ordering of the mirror’s `children` will exactly match that of the literal you pass.
 

@@ -20,7 +20,7 @@ func invert()
 - (void) invert;
 ```
 
-#### Discussion
+## Discussion
 
 Inverse matrices are useful for undoing the effects of a matrix. If a previous point (x,y) was transformed to (x’,y’), inverting the matrix and applying it to point (x’,y’) yields the point (x,y).
 

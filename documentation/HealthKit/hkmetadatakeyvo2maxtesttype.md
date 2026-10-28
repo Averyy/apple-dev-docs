@@ -24,7 +24,7 @@ let HKMetadataKeyVO2MaxTestType: String
 extern NSString * const HKMetadataKeyVO2MaxTestType;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes an [`NSNumber`](../Foundation/nsnumber.md) object containing a [`HKVO2MaxTestType`](./hkvo2maxtesttype.md) value.
 

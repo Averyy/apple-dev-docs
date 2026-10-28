@@ -15,7 +15,7 @@ An object you use to send and receive custom Ethernet frames.
 final class NWEthernetChannel
 ```
 
-#### Overview
+## Overview
 
 Use Ethernet channels to send and receive custom Ethernet frame types over an interface.
 

@@ -24,7 +24,7 @@ func captureHighResolutionFrame(using photoSettings: AVCapturePhotoSettings?) as
 - (void) captureHighResolutionFrameUsingPhotoSettings:(AVCapturePhotoSettings *) photoSettings completion:(void (^)(ARFrame *frame, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Some video formats do not support a significantly higher still image resolution than the streaming camera resolution. Use the `isRecommendedForHighResolutionFrameCapturing` method on the video format to check if the format is recommended. For passing customized photo settings to this method, obtain a `defaultPhotoSettings` object from the video format and modify it.
 

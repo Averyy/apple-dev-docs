@@ -23,7 +23,7 @@ var productKind: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * productKind;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are `"iPhone"`, `"iPod"`, and `"Camera"`.
 

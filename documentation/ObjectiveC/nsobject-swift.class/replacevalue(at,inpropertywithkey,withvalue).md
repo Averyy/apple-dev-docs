@@ -20,7 +20,7 @@ func replaceValue(at index: Int, inPropertyWithKey key: String, withValue value:
 - (void) replaceValueAtIndex:(NSUInteger) index inPropertyWithKey:(NSString *) key withValue:(id) value;
 ```
 
-#### Discussion
+## Discussion
 
 The method `replaceIn<Key>:atIndex:` is invoked if it exists. If no corresponding scripting-KVC-compliant method (`-replaceIn<Key>atIndex:`) is found, this method invokes `-mutableArrayValueForKey:` and mutates the result.
 

@@ -25,11 +25,11 @@ init(keyOptions: NSPointerFunctions.Options = [], valueOptions: NSPointerFunctio
 - (instancetype) initWithKeyOptions:(NSPointerFunctionsOptions) keyOptions valueOptions:(NSPointerFunctionsOptions) valueOptions capacity:(NSUInteger) initialCapacity;
 ```
 
-#### Return Value
+## Return Value
 
 A map table initialized using the given options.
 
-#### Discussion
+## Discussion
 
 `values` must contain entries at all the indexes specified in `keys`.
 

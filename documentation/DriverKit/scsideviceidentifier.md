@@ -18,7 +18,7 @@
 typedef UInt64 SCSIDeviceIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If the identifier can either be that of an initiator or a target, SCSIDeviceIdentifier should be used.
 

@@ -23,7 +23,7 @@ init(device: AVCaptureDevice, action: @escaping @MainActor @Sendable (CGFloat) -
 - (instancetype) initWithDevice:(AVCaptureDevice *) device action:(void (^)(double)) action;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls the specified action only when the zoom slider changes the device’s [`videoZoomFactor`](../avcapturedevice/videozoomfactor.md) property value. If your app needs to react to other sources of video zoom factor changes like [`ramp(toVideoZoomFactor:withRate:)`](../avcapturedevice/ramp%28tovideozoomfactor,withrate%29.md), use key-value observation instead.
 

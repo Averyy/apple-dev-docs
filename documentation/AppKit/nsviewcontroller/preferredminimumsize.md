@@ -19,7 +19,7 @@ var preferredMinimumSize: NSSize { get }
 @property (readonly) NSSize preferredMinimumSize;
 ```
 
-#### Discussion
+## Discussion
 
 An app extension should return the minimum dimensions its primary view can accommodate, based on the items the app extension has been sent. By default, the value of this property is a small but non-empty size.
 

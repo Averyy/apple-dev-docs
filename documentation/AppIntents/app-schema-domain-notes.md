@@ -5,7 +5,7 @@
 
 Make your note-taking app’s actions available to Apple Intelligence and Siri by adopting schemas for common note actions.
 
-#### Overview
+## Overview
 
 The `.notes` domain defines app schemas that provide a structured representation for common note actions and content. Apply schemas in the `.notes` domain to make your app’s note-taking functionality available to Apple Intelligence and Siri.
 

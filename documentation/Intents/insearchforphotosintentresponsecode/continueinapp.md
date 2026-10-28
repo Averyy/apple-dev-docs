@@ -25,7 +25,7 @@ case continueInApp
 INSearchForPhotosIntentResponseCodeContinueInApp
 ```
 
-#### Discussion
+## Discussion
 
 Upon returning this code, Siri launches your app and passes it the NSUserActivity object you provided at initialization time. (If you didn’t provide a user activity object, Siri creates one for you). Siri adds an INInteraction object with the intent and your response to the user activity object before delivering it. Your app should use the information in the user activity object to display the search results.
 

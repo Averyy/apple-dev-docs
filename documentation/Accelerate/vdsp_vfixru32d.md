@@ -21,7 +21,7 @@ Converts a vector of double-precision floating-point values to unsigned 32-bit i
 extern void vDSP_vfixru32D(const double *__A, vDSP_Stride __IA, unsigned int *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_vfixru16`](./vdsp_vfixru16.md), except for the type of vector `A`.
 

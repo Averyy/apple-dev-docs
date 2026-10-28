@@ -15,7 +15,7 @@ The name of the app-specific class you want UIKit to instantiate and use as the 
 - **Name**: `UISceneDelegateClassName` (Delegate Class Name)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Include this key in the one of the dictionaries you specify for the value of the [`CPTemplateApplicationDashboardSceneSessionRoleApplication`](../cptemplateapplicationdashboardscenesessionroleapplication.md) key.
 

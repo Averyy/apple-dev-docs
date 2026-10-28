@@ -19,11 +19,11 @@ object ConsumptionRequestV1
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  For App Store In-App Purchases that don’t use the Advanced Commerce API, use [`ConsumptionRequest`](./consumptionrequest.md) with the [`Send Consumption Information`](./send-consumption-information.md) endpoint instead.
 
-#### Discussion
+## Discussion
 
 Use `ConsumptionRequestV1` to provide information about the customer’s consumable in-app purchase or auto-renewable subscription when you call the [`Send Consumption Information V1`](./send-consumption-information-v1.md) endpoint.
 
@@ -35,7 +35,7 @@ For example, if you choose not to provide information for the [`accountTenure`](
 
 The App Store server rejects requests that have a [`customerConsented`](./customerconsented.md) value other than `true` by returning an `HTTP 400` error with an [`InvalidCustomerConsentedError`](./invalidcustomerconsentederror.md).
 
-##### Provide the app account token in a consumption request
+### Provide the app account token in a consumption request
 
 The [`ConsumptionRequestV1`](./consumptionrequestv1.md) request body requires that you set the `appAccountToken` to a valid value of either a UUID or an empty string. Set the `appAccountToken` value to the value you received in the `CONSUMPTION_REQUEST` notification, or, if you choose not to provide this information, set the value to an empty string.
 

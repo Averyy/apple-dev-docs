@@ -24,7 +24,7 @@ var fileType: String? { get set }
 @property (nonatomic, copy, nullable) NSString * fileType;
 ```
 
-#### Discussion
+## Discussion
 
 Modifying this property has the side effect of invalidating the [`image`](./image.md) property.
 

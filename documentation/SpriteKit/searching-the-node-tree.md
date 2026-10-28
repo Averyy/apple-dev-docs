@@ -5,7 +5,7 @@
 
 Access nodes by name to avoid needing an instance variable.
 
-#### Overview
+## Overview
 
 The nodes in the scene tree are often organized to determine the precise rendering order for the scene, not the role these nodes play in your scene. You may also be loading nodes from an archive file rather than instantiating them directly at runtime, so you may need to be able to find specific nodes within a node tree. To do this, you provide names to nodes and then search for those names.
 
@@ -14,7 +14,7 @@ The node name usually serves two purposes in your app:
 - You can write your own code that implements game logic based on the node’s name. For example, when two physics objects collide, you might use the node names to determine how the collision affects gameplay.
 - You can search for nodes that have a particular name. Typically, this is done once, when a scene is first loaded.
 
-##### Name Your Node
+### Name Your Node
 
 A node’s [`name`](./sknode/name.md) property should be an alphanumeric string without any punctuation. The following code shows how you might name three different nodes to distinguish them from each other.
 
@@ -36,7 +36,7 @@ monsterNode2.name = @"ogre";
 
 When you name nodes in the tree, decide whether those names will be unique. If a node’s name is unique, you should never include more than one node with that name in the scene tree. On the other hand, if a node name is not unique within your app, it might represent a collection of related nodes. For example, in the code above, there are probably multiple goblins within the game, and you might want to identify them all with the same name. But the player might be a unique node within the game.
 
-##### Use a Simple Search
+### Use a Simple Search
 
 The [`SKNode`](./sknode.md) class implements the following methods for searching the node tree:
 
@@ -65,7 +65,7 @@ var playerNode: SKNode? {
 
 When this method is called on the scene, the scene searches its children (and only its children) for a node whose `name` property matches the search string, then returns the node. When specifying a search string, you can either specify the name of the node or a class name. For example, if you create your own subclass for the player node and name it `PlayerSprite`, then you could specify `PlayerSprite` as the search string instead of `player`; the same node would be returned.
 
-##### Use an Advanced Search
+### Use an Advanced Search
 
 The default search only searches a node’s children and must exactly match either the node’s name or its class. However, SpriteKit provides an expressive search syntax so that you can perform more advanced searches. For example, you could do the same search as before but search the entire scene tree. Or you could search the node’s children, but match a pattern rather than requiring an exact match.
 

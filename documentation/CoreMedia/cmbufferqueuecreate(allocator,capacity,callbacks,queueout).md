@@ -25,11 +25,11 @@ func CMBufferQueueCreate(allocator: CFAllocator?, capacity: CMItemCount, callbac
 extern OSStatus CMBufferQueueCreate(CFAllocatorRef allocator, CMItemCount capacity, const CMBufferCallbacks *callbacks, CMBufferQueueRef*queueOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 On return, the caller owns the returned `CMBufferQueue`, and must release it when done with it.
 

@@ -21,7 +21,7 @@ The user denied permission for the current app to use MusicKit.
 case denied
 ```
 
-#### Discussion
+## Discussion
 
 On iOS, applications may attempt to recover from this situation by suggesting to their users that they can grant access to their Apple Music data again by linking to [`openSettingsURLString`](../../../UIKit/uiapplication/opensettingsurlstring.md).
 

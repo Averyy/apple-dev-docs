@@ -20,7 +20,7 @@ A joint that maintains a minimum and maximum distance between two entity pins.
 struct PhysicsDistanceJoint
 ```
 
-#### Overview
+## Overview
 
 A distance joint restricts the distance between `pin0` and `pin1`. The joint determines this closed range according to [`distanceLimit`](./physicsdistancejoint/distancelimit.md).
 

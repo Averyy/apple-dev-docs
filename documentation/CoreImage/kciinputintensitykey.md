@@ -24,7 +24,7 @@ let kCIInputIntensityKey: String
 extern NSString * const kCIInputIntensityKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for a scalar value ([`NSNumber`](../Foundation/nsnumber.md)) that specifies an intensity value.
 

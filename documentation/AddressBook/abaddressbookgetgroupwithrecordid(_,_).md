@@ -23,7 +23,7 @@ func ABAddressBookGetGroupWithRecordID(_ addressBook: ABAddressBook!, _ recordID
 extern ABRecordRefABAddressBookGetGroupWithRecordID(ABAddressBookRef addressBook, ABRecordID recordID);
 ```
 
-#### Return Value
+## Return Value
 
 If found, the group with `recordID` as its identifier; otherwise, `NULL`.
 

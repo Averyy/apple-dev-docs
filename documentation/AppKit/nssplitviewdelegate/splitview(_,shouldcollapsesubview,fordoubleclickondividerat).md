@@ -21,11 +21,11 @@ optional func splitView(_ splitView: NSSplitView, shouldCollapseSubview subview:
 - (BOOL) splitView:(NSSplitView *) splitView shouldCollapseSubview:(NSView *) subview forDoubleClickOnDividerAtIndex:(NSInteger) dividerIndex;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the subview should collapse; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the delegate implements this method, it receives this message once for the subview before a divider when the user double-clicks that divider, and again for the subview after the divider, but only if the delegate returns [`true`](../../Swift/true.md) when it receives [`splitView(_:canCollapseSubview:)`](./splitview%28_,cancollapsesubview%29.md) for the subview in question. When the delegate indicates that both subviews should collapse, the behavior of [`NSSplitView`](../nssplitview.md) is undefined.
 

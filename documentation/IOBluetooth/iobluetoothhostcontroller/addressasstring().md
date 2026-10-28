@@ -19,7 +19,7 @@ func addressAsString() -> String!
 - (NSString *) addressAsString;
 ```
 
-#### Return Value
+## Return Value
 
 Returns NSString *. nil if the address could not be retrieved.
 

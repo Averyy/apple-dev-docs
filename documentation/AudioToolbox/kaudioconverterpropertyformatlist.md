@@ -24,7 +24,7 @@ var kAudioConverterPropertyFormatList: AudioConverterPropertyID { get }
 kAudioConverterPropertyFormatList
 ```
 
-#### Discussion
+## Discussion
 
 If the `ioPropertyDataSize` parameter of the [`AudioConverterGetProperty(_:_:_:_:)`](./audioconvertergetproperty%28_,_,_,_%29.md) function indicates that the size of the data in the `outPropertyData` parameter is `sizeof (AudioFormatListItem)`, then only the best format is returned. This property may be used, for example, to discover all the data formats produced by the AAC High Efficiency version 2 encoder (specified by the `kAudioFormatMPEG4AAC_HE_V2` constant).
 

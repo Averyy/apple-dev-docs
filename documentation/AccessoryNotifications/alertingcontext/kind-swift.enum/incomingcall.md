@@ -15,7 +15,7 @@ An incoming call notification.
 case incomingCall
 ```
 
-#### Discussion
+## Discussion
 
 Apply special handling for incoming calls on your accessory, such as full-screen alerts or priority ringtones.
 

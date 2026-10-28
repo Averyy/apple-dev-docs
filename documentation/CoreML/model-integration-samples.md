@@ -4,7 +4,7 @@
 
 Integrate tabular, image, and text classifcation models into your app.
 
-#### Overview
+## Overview
 
 Use the provided Core ML sample code projects to learn how to classify numeric values, images, and text within applications. For example, you can detect poses of the human body, classify a group of images, and locate answers to questions in a text document.
 

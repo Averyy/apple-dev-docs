@@ -19,11 +19,11 @@ The hand pose model’s configuration parameters.
 let modelParameters: MLHandPoseClassifier.ModelParameters
 ```
 
-#### Discussion
+## Discussion
 
 The property reflects the model parameters you provide to one of these methods that train a hand pose classifier:
 
-#### ``doc://com.apple.createml/documentation/CreateML/MLHandPoseClassifier/train(trainingData:parameters:sessionParameters:)``
+## ``doc://com.apple.createml/documentation/CreateML/MLHandPoseClassifier/train(trainingData:parameters:sessionParameters:)``
 
 [`makeTrainingSession(trainingData:parameters:sessionParameters:)`](./maketrainingsession%28trainingdata,parameters,sessionparameters%29.md)
 

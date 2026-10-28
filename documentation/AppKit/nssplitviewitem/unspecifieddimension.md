@@ -19,7 +19,7 @@ class let unspecifiedDimension: CGFloat
 extern const CGFloat NSSplitViewItemUnspecifiedDimension;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant with any sizing-related [`NSSplitViewItem`](../nssplitviewitem.md) property to reset its value to the standard system default.
 

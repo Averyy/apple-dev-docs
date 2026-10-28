@@ -24,7 +24,7 @@ func selectAnnotation(_ annotation: any MKAnnotation, animated: Bool)
 - (void) selectAnnotation:(id<MKAnnotation>) annotation animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 If the specified annotation isn’t onscreen, and, therefore, doesn’t have an associated annotation view, this method has no effect.
 

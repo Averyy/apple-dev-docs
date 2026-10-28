@@ -24,7 +24,7 @@ var touchBar: NSTouchBar? { get }
 @property (strong, readonly, nullable) NSTouchBar * touchBar;
 ```
 
-#### Discussion
+## Discussion
 
 This property supports key-value observing, which is used by the system, for example, if you replace a running bar. Many subclasses of [`NSResponder`](../nsresponder.md) implement this property and conform to the [`NSTouchBarProvider`](../nstouchbarprovider.md) protocol.
 

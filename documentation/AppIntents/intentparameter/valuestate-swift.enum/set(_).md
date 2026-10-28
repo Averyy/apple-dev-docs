@@ -21,7 +21,7 @@ The parameter was provided an initial value.
 case set(Value)
 ```
 
-#### Discussion
+## Discussion
 
 For optional types, the value could be an explicit `nil` or parameter resolution could have resulted in `nil`
 

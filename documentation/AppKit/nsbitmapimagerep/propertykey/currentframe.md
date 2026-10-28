@@ -19,7 +19,7 @@ static let currentFrame: NSBitmapImageRep.PropertyKey
 extern NSBitmapImageRepPropertyKey NSImageCurrentFrame;
 ```
 
-#### Discussion
+## Discussion
 
 The first frame is 0.
 

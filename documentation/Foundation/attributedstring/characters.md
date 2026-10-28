@@ -21,7 +21,7 @@ The characters of the attributed string, as a view into the underlying string.
 var characters: AttributedString.CharacterView { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`characters`](./characters.md) view when you want to look for specific string content. You can then use the resulting ranges to set attributes for specific parts of the [`AttributedString`](../attributedstring.md).
 

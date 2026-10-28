@@ -16,7 +16,7 @@ A buffer of indices describing the triangle mesh formed by the plane geometry’
 @property (nonatomic, readonly) const int16_t * triangleIndices;
 ```
 
-#### Discussion
+## Discussion
 
 Each 16-bit integer value in this buffer represents an index into the [`vertices`](./vertices-3kgkm.md) and [`textureCoordinates`](./texturecoordinates-91pbc.md) buffers. Each set of three indices identifies the vertices that form a single triangle in the mesh. You can use buffer as an index buffer for a triangle mesh in GPU-based rendering or to create 3D model asset files.
 

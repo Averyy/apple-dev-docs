@@ -24,7 +24,7 @@ init?(data: Data)
 - (instancetype) initWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image object, or `nil` if the object could not be initialized.
 

@@ -19,7 +19,7 @@ class VZMacTrackpadConfiguration
 @interface VZMacTrackpadConfiguration : VZPointingDeviceConfiguration
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  The framework recognizes this device in virtual machines running macOS 13 and later. To support both macOS 13.0 and earlier guests, set [`pointingDevices`](./vzvirtualmachineconfiguration/pointingdevices.md) to an array that contains both a [`VZMacTrackpadConfiguration`](./vzmactrackpadconfiguration.md) and a [`VZUSBScreenCoordinatePointingDeviceConfiguration`](./vzusbscreencoordinatepointingdeviceconfiguration.md) object.
 

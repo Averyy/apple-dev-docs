@@ -20,7 +20,7 @@ optional func panel(_ sender: Any, validate url: URL) throws
 - (BOOL) panel:(id) sender validateURL:(NSURL *) url error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Save panels call this method when the user clicks the Save button. Open panels call it when the user clicks the Open button. An Open panel calls this method once for each selected filename or directory.
 

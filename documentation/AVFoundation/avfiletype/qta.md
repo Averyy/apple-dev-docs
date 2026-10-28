@@ -25,7 +25,7 @@ static let qta: AVFileType
 extern AVFileType const AVFileTypeQuickTimeAudio;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is @“com.apple.quicktime-audio”. Files are identified with the .qta extension.
 

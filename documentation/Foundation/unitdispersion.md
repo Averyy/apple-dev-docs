@@ -25,11 +25,11 @@ class UnitDispersion
 @interface NSUnitDispersion : NSDimension
 ```
 
-#### Overview
+## Overview
 
 You typically use instances of [`UnitDispersion`](./unitdispersion.md) to represent specific quantities of dispersion using the [`NSMeasurement`](./nsmeasurement.md) class.
 
-##### Dispersion
+### Dispersion
 
 Dispersion describes the amount of a constituent divided by the amount of all other constituents in a mixture. Dispersion is a dimensionless quantity that is commonly expressed in “parts-per” notation, such as “parts per million” (ppm), to describe small relative quantities.
 

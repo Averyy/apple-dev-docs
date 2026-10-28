@@ -21,7 +21,7 @@ class AVPlaybackUserInterfaceContentArtwork
 @interface AVPlaybackUserInterfaceContentArtwork : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a concrete subclass such as [`AVPlaybackUserInterfaceContentURLArtwork`](./avplaybackuserinterfacecontenturlartwork.md) to create artwork instances.
 

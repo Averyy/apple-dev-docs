@@ -35,7 +35,7 @@ var userActivityForBookingInApplication: NSUserActivity? { get set }
 
 - [Generating a List of Ride Options](../../SiriKit/generating-a-list-of-ride-options.md)
 
-#### Discussion
+## Discussion
 
 Set the value of this property to `nil` when you want to allow SiriKit to complete the booking of rides in its interface. When the value of this property is `nil`, Siri and Maps display ride option information directly from their respective interfaces.
 

@@ -26,7 +26,7 @@ var productID: NSNumber? { get }
 @property (nonatomic, copy, readonly, nullable) NSNumber * productID;
 ```
 
-#### Discussion
+## Discussion
 
 A non-nil value if the product identifier has been determined from the device, nil if unknown.
 

@@ -23,7 +23,7 @@ func continueAnimation(withTimingParameters parameters: (any UITimingCurveProvid
 - (void) continueAnimationWithTimingParameters:(id<UITimingCurveProvider>) parameters durationFactor:(CGFloat) durationFactor;
 ```
 
-#### Discussion
+## Discussion
 
 This method overrides the timing and duration parameters for the current animations. When calling this method, the animator must be active and currently paused. It’s a programmer error to call this method when the animator is inactive, running, or its [`isInterruptible`](./isinterruptible.md) property is set to [`false`](../../Swift/false.md).
 

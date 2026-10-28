@@ -5,7 +5,7 @@
 
 Use iterative methods to solve systems of equations where the coefficient matrix is sparse.
 
-#### Overview
+## Overview
 
 The code in this article solves the following equation by using the iterative method of least squares minimum residual (LSMR) to find the solution.
 
@@ -17,7 +17,7 @@ Because `A` is an overdetermined matrix (that is, it has more rows than columns)
 
 You could solve this problem through a direct method, such as sparse QR; however, for some problems, a faster method that provides an adequate solution is the iterative method LSMR. Unlike direct methods that factorize the matrix `A`, iterative methods only require the ability to multiply by the matrix (and its transpose, `Aᵀ`). They move through a sequence of approximate solutions, converging to the correct answer. However, these methods run into numerical difficulties more often than direct methods. Resolving these issues requires expert knowledge, and is sometimes impossible. The most common method to improve and accelerate convergence is to use a preconditioner — an operator that approximates `A⁻¹`. For least-squares problems, using a diagonal matrix with entries equal to the 2-norm of each column is often sufficient and is the method that this article covers.
 
-##### Create the matrix
+### Create the matrix
 
 Use the code below — which [Creating sparse matrices](./creating-sparse-matrices.md) covers in detail — to define the unsymmetric matrix `A`:
 
@@ -86,7 +86,7 @@ long columnStarts[] = {   0,              3,                   7,        9};
   };
 ```
 
-##### Solve the equation
+### Solve the equation
 
 Define the right-hand-side and solution vectors as arrays that you wrap in [`DenseVector_Double`](./densevector_double.md) structures. The sparse solve function uses the initial values of `x` as an initial guess of the solution. If you don’t have a good estimate, initialize all the values to zero.
 

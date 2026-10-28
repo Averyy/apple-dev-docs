@@ -15,7 +15,7 @@ A Boolean value that indicates whether the system automatically tracks changes t
 - **Name**: `NSObservationTrackingEnabled`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 In macOS 15, add this key to your information property list and set the value to `YES` to tell the system to automatically track changes to observable objects.
 

@@ -20,7 +20,7 @@ var action_type: es_action_type_t
 es_action_type_t action_type;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to determine how to access the [`action`](./action.md) field, which is a `union` of different authentication and notification types.
 

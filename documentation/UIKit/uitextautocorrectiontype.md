@@ -23,7 +23,7 @@ enum UITextAutocorrectionType
 enum UITextAutocorrectionType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the [`autocorrectionType`](./uitextinputtraits/autocorrectiontype.md) property. If the script system doesn’t support inline autocorrection, the keyboard input method ignores these constants.
 

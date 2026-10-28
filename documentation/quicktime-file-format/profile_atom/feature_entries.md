@@ -6,7 +6,7 @@
 
 A list of feature entries.
 
-#### Overview
+## Overview
 
 Each feature entry consists of:
 

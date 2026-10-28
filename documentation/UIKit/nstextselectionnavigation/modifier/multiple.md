@@ -23,7 +23,7 @@ static var multiple: NSTextSelectionNavigation.Modifier { get }
 NSTextSelectionNavigationModifierMultiple
 ```
 
-#### Discussion
+## Discussion
 
 This produces an [`NSTextSelection`](../../nstextselection.md) per line.
 

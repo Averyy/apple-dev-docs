@@ -19,7 +19,7 @@ var selectedRecords: [Any]! { get }
 @property (readonly) NSArray * selectedRecords;
 ```
 
-#### Discussion
+## Discussion
 
 The selection is returned as an array of [`ABGroup`](../abgroup.md) or [`ABPerson`](../abperson.md) objects.
 

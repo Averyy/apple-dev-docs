@@ -25,7 +25,7 @@ var subentitiesByName: [String : NSEntityDescription] { get }
 @property (copy, readonly) NSDictionary<NSString *,NSEntityDescription *> * subentitiesByName;
 ```
 
-#### Return Value
+## Return Value
 
 The keys in the dictionary are the sub-entity names, the corresponding values are instances of `NSEntityDescription`.
 

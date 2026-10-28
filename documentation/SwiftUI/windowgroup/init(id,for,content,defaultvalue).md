@@ -22,7 +22,7 @@ init<D, C>(id: String, for type: D.Type = D.self, @ContentBuilder content: @esca
 
 Available when `Content` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 The window group uses the given view as a template to form the content of each window in the group.
 

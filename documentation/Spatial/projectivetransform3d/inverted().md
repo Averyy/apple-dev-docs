@@ -23,7 +23,7 @@ Returns a new transform that results from inverting an existing projective trans
 func inverted() -> ProjectiveTransform3D?
 ```
 
-#### Return Value
+## Return Value
 
 The transform that results from inverting an existing projective transform. The method returns `nil` if the underlying matrix isn’t invertible.
 

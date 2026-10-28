@@ -25,7 +25,7 @@ enum CMPackingType
 enum CMPackingType : uint64_t;
 ```
 
-#### Overview
+## Overview
 
 Frame-packed video contains both the left and right eye images on a single video track. With frame-packed video, use the appropriate Frame Arrangement.
 

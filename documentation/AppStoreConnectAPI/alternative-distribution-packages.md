@@ -5,7 +5,7 @@
 
 Create and read distribution packages for an alternative app distribution.
 
-#### Overview
+## Overview
 
 App developers can get alternative distribution package IDs through the App Store Connect API by using [`Read an app store version’s alternative distribution package`](./get-v1-appstoreversions-_id_-alternativedistributionpackage.md). You can also get the IDs in App Store Connect, to learn more, see [Get an alternative distribution package ID](https://developer.apple.com/help/app-store-connect/distributing-apps-in-the-european-union/get-an-alternative-distribution-package-id).
 

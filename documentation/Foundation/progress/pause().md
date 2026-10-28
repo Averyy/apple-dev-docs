@@ -25,7 +25,7 @@ func pause()
 - (void) pause;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes the block for [`pausingHandler`](./pausinghandler.md), if there is one, and ensures that any subsequent reads of the [`isPaused`](./ispaused.md) property return [`true`](../../Swift/true.md).
 

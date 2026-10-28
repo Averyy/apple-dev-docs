@@ -18,7 +18,7 @@ dictionary PaymentCredentialStatusResponse {
 };
 ```
 
-#### Overview
+## Overview
 
 The response contains the [`paymentCredentialStatus`](./paymentcredentialstatusresponse/paymentcredentialstatus.md) of the device.
 

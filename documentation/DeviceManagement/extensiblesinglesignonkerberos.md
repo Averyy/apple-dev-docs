@@ -19,7 +19,7 @@ The payload that configures an app extension that performs single sign-on with t
 object ExtensibleSingleSignOnKerberos
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.extensiblesso` as the payload type.
 
@@ -27,7 +27,7 @@ This is a version of the profile that defines the specific keys and values neede
 
 The system supports user channel installation in macOS 11 and later.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -39,7 +39,7 @@ The system supports user channel installation in macOS 11 and later.
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

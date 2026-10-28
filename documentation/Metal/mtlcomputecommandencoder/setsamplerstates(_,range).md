@@ -20,7 +20,7 @@ Encodes multiple texture samplers to the sampler argument table, allowing comput
 func setSamplerStates(_ samplers: [(any MTLSamplerState)?], range: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  This method requires that the number of instances in `samplers` be the same as the length of `range`.
 

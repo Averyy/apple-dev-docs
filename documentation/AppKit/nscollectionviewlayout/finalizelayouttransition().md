@@ -19,7 +19,7 @@ func finalizeLayoutTransition()
 - (void) finalizeLayoutTransition;
 ```
 
-#### Discussion
+## Discussion
 
 After it has gathered all of the layout attributes it needs, the collection view calls this method on both the new and old layout objects to give them time to perform any additional operations. Use this method to clean up any data structures or caches related to the transition that your layout object no longer needs.
 

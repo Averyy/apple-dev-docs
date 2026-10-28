@@ -23,11 +23,11 @@ optional func application(_ application: UIApplication, open url: URL, sourceApp
 - (BOOL) application:(UIApplication *) application openURL:(NSURL *) url sourceApplication:(NSString *) sourceApplication annotation:(id) annotation;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the delegate successfully handled the request or [`false`](../../Swift/false.md) if the attempt to open the URL resource failed.
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should open the specified URL and update its user interface accordingly. If your app had to be launched to open the URL, the app calls the [`application(_:willFinishLaunchingWithOptions:)`](./application%28_,willfinishlaunchingwithoptions%29.md) and [`application(_:didFinishLaunchingWithOptions:)`](./application%28_,didfinishlaunchingwithoptions%29.md) methods first, followed by this method. The return values of those methods can be used to prevent this method from being called. (If the app is already running, only this method is called.)
 

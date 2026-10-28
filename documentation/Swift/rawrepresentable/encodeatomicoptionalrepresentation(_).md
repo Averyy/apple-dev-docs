@@ -23,11 +23,11 @@ static func encodeAtomicOptionalRepresentation(_ value: consuming Self?) -> Self
 
 Available when `Self` conforms to `AtomicOptionalRepresentable` and `RawValue` conforms to `AtomicOptionalRepresentable`.
 
-#### Return Value
+## Return Value
 
 The newly encoded `AtomicOptionalRepresentation` storage.
 
-#### Discussion
+## Discussion
 
 > **Note**: This is not an atomic operation. This simply encodes the logical type `Self` into its storage representation suitable for atomic operations, `AtomicOptionalRepresentation`.
 

@@ -23,11 +23,11 @@ optional func documentInteractionControllerViewControllerForPreview(_ controller
 - (UIViewController *) documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *) controller;
 ```
 
-#### Return Value
+## Return Value
 
 The view controller to use when presenting the document preview. The return value must not be `nil`.
 
-#### Discussion
+## Discussion
 
 Although technically optional, this method is required if your application attempts to display a preview for a document. The view controller returned by this method is used as the parent for the document preview.
 

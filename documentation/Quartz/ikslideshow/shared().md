@@ -19,7 +19,7 @@ class func shared() -> IKSlideshow!
 + (IKSlideshow *) sharedSlideshow;
 ```
 
-#### Return Value
+## Return Value
 
 A slideshow object.
 

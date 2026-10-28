@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is one that can modify a base emoj
 var isEmojiModifier: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The Fitzpatrick skin types are examples of emoji modifiers; they change the appearance of the preceding emoji base (that is, a scalar for which `isEmojiModifierBase` is true) by rendering it with a different skin tone.
 

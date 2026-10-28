@@ -25,7 +25,7 @@ var nextTrackCommand: MPRemoteCommand { get }
 @property (nonatomic, readonly) MPRemoteCommand * nextTrackCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to register your app’s handler for selecting the next track. In your handler, select the media item that follows the current media item. You can disable the command if your app does not support it.
 

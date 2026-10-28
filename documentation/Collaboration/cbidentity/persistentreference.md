@@ -19,11 +19,11 @@ var persistentReference: Data? { get }
 @property (nonatomic, readonly, nullable) NSData * persistentReference;
 ```
 
-#### Return Value
+## Return Value
 
 A data object that uniquely references an identity.
 
-#### Discussion
+## Discussion
 
 A persistent reference data object is an object generated from an identity. Persistent data objects can be written to and read from a file, making them extremely useful for storing identities in an ACL.
 

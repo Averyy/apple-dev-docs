@@ -20,7 +20,7 @@ A renderer that displays a RealityKit scene in an existing Metal workflow.
 class RealityRenderer
 ```
 
-#### Overview
+## Overview
 
 All RealityKit APIs for loading resources, creating entities and adding components are compatible and work with `RealityRenderer`.
 

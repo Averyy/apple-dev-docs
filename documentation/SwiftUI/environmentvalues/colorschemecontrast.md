@@ -21,7 +21,7 @@ The contrast associated with the color scheme of this environment.
 var colorSchemeContrast: ColorSchemeContrast { get }
 ```
 
-#### Discussion
+## Discussion
 
 Read this environment value from within a view to find out if SwiftUI is currently displaying the view using [`ColorSchemeContrast.standard`](../colorschemecontrast/standard.md) or [`ColorSchemeContrast.increased`](../colorschemecontrast/increased.md) contrast. The value that you read depends entirely on user settings, and you can’t change it.
 

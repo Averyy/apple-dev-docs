@@ -24,9 +24,9 @@ object StatusSoftwareUpdateInstallReason
 
 - [Deploying software updates using declarative management](./deploying-software-updates-using-declarative-management.md)
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +37,7 @@ object StatusSoftwareUpdateInstallReason
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS |
 | Allowed in user scope | N/A |
 
-##### Status item example
+### Status item example
 
 ```json
 {

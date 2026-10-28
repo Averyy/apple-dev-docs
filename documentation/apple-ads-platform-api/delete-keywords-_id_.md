@@ -9,7 +9,7 @@ Soft-delete a keyword by ID, setting its deleted field to true and stopping bids
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint soft-deletes the keyword by setting its deleted field to true. The record remains queryable by including deleted=true in query filters. The operation returns HTTP 200 with an empty response body on success.
 
@@ -25,9 +25,9 @@ The soft delete is reflected consistently across subsequent GET and PUT requests
 | PUT returns 404 after deletion | PUT requests to update a deleted keyword return 404 Not Found. |
 | Use PAUSED status to suspend temporarily | If you may need to reactivate the term, set `status: "PAUSED"` rather than deleting. |
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Deletes a keyword by its unique identifier. A successful delete returns HTTP 200 with an empty response body.
 
@@ -35,7 +35,7 @@ Deletes a keyword by its unique identifier. A successful delete returns HTTP 200
 DELETE /v1/keywords/888999000
 ```
 
-##### Response
+### Response
 
 ```json
 {}

@@ -22,7 +22,7 @@ A sequence of pairs built out of two underlying sequences.
 struct Zip2Sequence<Sequence1, Sequence2> where Sequence1 : Sequence, Sequence2 : Sequence
 ```
 
-#### Overview
+## Overview
 
 In a `Zip2Sequence` instance, the elements of the *i*th pair are the *i*th elements of each underlying sequence. To create a `Zip2Sequence` instance, use the `zip(_:_:)` function.
 

@@ -21,7 +21,7 @@ A type that represents an Apple framework bundle.
 extern UTType * const UTTypeFramework;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.framework`.
 

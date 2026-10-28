@@ -21,7 +21,7 @@ class CPTemplateApplicationDashboardScene
 @interface CPTemplateApplicationDashboardScene : UIScene
 ```
 
-#### Overview
+## Overview
 
 A dashboard scene manages the display of your navigation app’s dashboard window on the CarPlay Dashboard, and notifies its delegate—an object that conforms to [`CPTemplateApplicationDashboardSceneDelegate`](./cptemplateapplicationdashboardscenedelegate.md)—about scene life-cycle events. Use the dashboard controller the scene provides to supply shortcut buttons to display when there’s no active navigation session, further customizing you app’s presence on the CarPlay Dashboard.
 

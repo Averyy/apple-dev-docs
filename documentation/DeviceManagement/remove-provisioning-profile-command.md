@@ -15,13 +15,13 @@ Remove a previously installed provisioning profile from a device.
 - visionOS 1.1+
 - watchOS 10.0+
 
-#### Discussion
+## Discussion
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
 > **Note**:  Don’t remove a provisioning profile to revoke access to an enterprise app. An app continues to be usable until the device restarts, even with no provisioning profile. Provisioning profiles also synchronize with iTunes and the system reinstalls them when users sync devices. For more information on removing apps, see [`Remove Application`](./remove-application-command.md).
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowProvisioningInstallationRemoval |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

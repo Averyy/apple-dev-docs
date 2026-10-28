@@ -17,11 +17,11 @@ Displays the panel and begins a modal event loop that is terminated when the use
 - (NSInteger) runModalForDirectory:(NSString *) path file:(NSString *) name types:(NSArray *) fileTypes;
 ```
 
-#### Return Value
+## Return Value
 
 The button clicked to dismiss the dialog: `NSOKButton` for the OK button and `NSCancelButton` for the Cancel button.
 
-#### Discussion
+## Discussion
 
 You can control whether directories and files appear in the browser with the [`canChooseDirectories`](./canchoosedirectories.md) and [`canChooseFiles`](./canchoosefiles.md) methods.
 

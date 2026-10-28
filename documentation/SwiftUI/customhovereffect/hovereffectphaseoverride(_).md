@@ -15,11 +15,11 @@ Returns a new effect with the given `HoverEffectPhaseOverride` applied to this e
 func hoverEffectPhaseOverride(_ override: HoverEffectPhaseOverride?) -> some CustomHoverEffect
 ```
 
-#### Return Value
+## Return Value
 
 A new effect with the given override applied.
 
-#### Discussion
+## Discussion
 
 For example, the following effect will *always* have an opacity of 1.0 since the override forces the effect to always be active:
 

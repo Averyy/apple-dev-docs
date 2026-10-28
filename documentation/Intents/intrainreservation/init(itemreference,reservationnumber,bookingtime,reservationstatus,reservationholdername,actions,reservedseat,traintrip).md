@@ -24,7 +24,7 @@ convenience init(itemReference: INSpeakableString, reservationNumber: String?, b
 - (instancetype) initWithItemReference:(INSpeakableString *) itemReference reservationNumber:(NSString *) reservationNumber bookingTime:(NSDate *) bookingTime reservationStatus:(INReservationStatus) reservationStatus reservationHolderName:(NSString *) reservationHolderName actions:(NSArray<INReservationAction *> *) actions reservedSeat:(INSeat *) reservedSeat trainTrip:(INTrainTrip *) trainTrip;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTrainReservation`](../intrainreservation.md) object or `nil` if one can’t be created.
 

@@ -24,7 +24,7 @@ var stepRate: Int { get set }
 @property (nonatomic, assign) NSUInteger stepRate;
 ```
 
-#### Discussion
+## Discussion
 
 The interpretation of this value depends on the setting of `stepFunction`.
 

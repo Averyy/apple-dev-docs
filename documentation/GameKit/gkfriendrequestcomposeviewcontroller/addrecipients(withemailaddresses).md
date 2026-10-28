@@ -25,7 +25,7 @@ func addRecipients(withEmailAddresses emailAddresses: [String])
 - (void) addRecipientsWithEmailAddresses:(NSArray<NSString *> *) emailAddresses;
 ```
 
-#### Discussion
+## Discussion
 
 If you do not add at least once recipient, the recipients field is selected when the view controller is presented so that the player can type a list of recipients. Adding more players than defined by the [`maxNumberOfRecipients()`](./maxnumberofrecipients%28%29.md) property causes an exception to be thrown.
 

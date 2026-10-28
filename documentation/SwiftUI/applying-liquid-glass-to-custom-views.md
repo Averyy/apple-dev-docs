@@ -5,7 +5,7 @@
 
 Configure, combine, and morph views using Liquid Glass effects.
 
-#### Overview
+## Overview
 
 Interfaces across Apple platforms feature a new dynamic material called Liquid Glass, which combines the optical properties of glass with a sense of fluidity. Liquid Glass is a material that blurs content behind it, reflects color and light of surrounding content, and reacts to touch and pointer interactions in real time. Standard components in SwiftUI use Liquid Glass. Adopt Liquid Glass on custom components to move, combine, and morph them into one another with unique animations and transitions.
 
@@ -13,7 +13,7 @@ Interfaces across Apple platforms feature a new dynamic material called Liquid G
 
 To learn about Liquid Glass and more, see [Landmarks: Building an app with Liquid Glass](./landmarks-building-an-app-with-liquid-glass.md).
 
-#### Apply and configure Liquid Glass effects
+## Apply and configure Liquid Glass effects
 
 Use the [`glassEffect(_:in:)`](./view/glasseffect%28_,in%29.md) modifier to add Liquid Glass effects to a view. By default, the modifier uses the [`regular`](./glass/regular.md) variant of [`Glass`](./glass.md) and applies the given effect within a [`Capsule`](./capsule.md) shape behind the view’s content.
 
@@ -44,7 +44,7 @@ Text("Hello, World!")
     .glassEffect(.regular.tint(.orange).interactive())
 ```
 
-#### Combine multiple views with Liquid Glass containers
+## Combine multiple views with Liquid Glass containers
 
 Use [`GlassEffectContainer`](./glasseffectcontainer.md) when applying Liquid Glass effects on multiple views to achieve the best rendering performance. A container also allows views with Liquid Glass effects to blend their shapes together and to morph in and out of each other during transitions. Inside a container, each view with the [`glassEffect(_:in:)`](./view/glasseffect%28_,in%29.md) modifier renders with the effects behind it.
 
@@ -96,7 +96,7 @@ GlassEffectContainer(spacing: 20.0) {
 }
 ```
 
-#### Morph Liquid Glass effects during transitions
+## Morph Liquid Glass effects during transitions
 
 Morphing effects occur during transitions or animations between views with Liquid Glass effects. Coordinate transitions between views with effects in a container by using the [`glassEffectID(_:in:)`](./view/glasseffectid%28_,in%29.md) modifier. [`GlassEffectTransition`](./glasseffecttransition.md) allows you to specify the type of transition to use when you want to add or remove effects within a container. For effects you want to add or remove that are positioned within the container’s assigned spacing, the default transition type is [`matchedGeometry`](./glasseffecttransition/matchedgeometry.md).
 
@@ -142,7 +142,7 @@ var body: some View {
 }
 ```
 
-#### Optimize performance when using Liquid Glass effects
+## Optimize performance when using Liquid Glass effects
 
 Creating too many Liquid Glass effect containers and applying too many effects to views outside of containers can degrade performance. Limit the use of Liquid Glass effects onscreen at the same time. Additionally, optimize how your app spends rendering time as people use it. To learn how to improve the performance of your UI, see [Explore UI animation hitches and the render loop](https://developer.apple.com/videos/play/tech-talks/10855/) and [Optimize SwiftUI performance with Instruments](https://developer.apple.com/videos/play/wwdc2025/306/).
 

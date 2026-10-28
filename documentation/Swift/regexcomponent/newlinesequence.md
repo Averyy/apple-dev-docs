@@ -23,7 +23,7 @@ static var newlineSequence: CharacterClass { get }
 
 Available when `Self` is `CharacterClass`.
 
-#### Discussion
+## Discussion
 
 This character class is equivalent to `\R` or `\n` in regex syntax.
 

@@ -19,7 +19,7 @@ optional var producesRAWOutput: Bool { get }
 @property (readonly) BOOL producesRAWOutput;
 ```
 
-#### Discussion
+## Discussion
 
 The extension should implement this property returning [`YES`](../../ObjectiveC/yes.md) if the decoder produces RAW output which requires the use of an [`MERAWProcessor`](../merawprocessor.md) for post-decode processing to produce renderable output.
 

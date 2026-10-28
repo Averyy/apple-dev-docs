@@ -27,11 +27,11 @@ optional func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexP
 
 - [Estimating the height of a table’s scrolling area](../estimating-the-height-of-a-table-s-scrolling-area.md)
 
-#### Return Value
+## Return Value
 
 A nonnegative floating-point value that estimates the height (in points) that `row` should be. Return [`automaticDimension`](../uitableview/automaticdimension.md) if you have no estimate.
 
-#### Discussion
+## Discussion
 
 Providing an estimate the height of rows can improve the user experience when loading the table view. If the table contains variable height rows, it might be expensive to calculate all their heights and so lead to a longer load time. Using estimation allows you to defer some of the cost of geometry calculation from load time to scrolling time.
 

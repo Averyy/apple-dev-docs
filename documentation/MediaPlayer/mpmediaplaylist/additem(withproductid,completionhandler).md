@@ -26,7 +26,7 @@ func addItem(withProductID productID: String) async throws
 - (void) addItemWithProductID:(NSString *) productID completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The method adds a single media item associated with the product identifier to the playlist.
 

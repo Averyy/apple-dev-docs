@@ -24,7 +24,7 @@ func textInput(_ textInput: any BETextInput, setCandidateSuggestions suggestions
 - (void) textInput:(id<BETextInput>) textInput setCandidateSuggestions:(NSArray<BETextSuggestion *> *) suggestions;
 ```
 
-#### Discussion
+## Discussion
 
 For example, suggestions could include data list elements or AutoFill candidates.
 

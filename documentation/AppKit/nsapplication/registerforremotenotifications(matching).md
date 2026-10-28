@@ -19,7 +19,7 @@ func registerForRemoteNotifications(matching types: NSApplication.RemoteNotifica
 - (void) registerForRemoteNotificationTypes:(NSRemoteNotificationType) types;
 ```
 
-#### Discussion
+## Discussion
 
 > **Deprecated**: Use [`registerForRemoteNotifications()`](./registerforremotenotifications%28%29.md) instead.
 

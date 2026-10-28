@@ -20,7 +20,7 @@ weak var textField: NSTextField? { get set }
 @property (weak, nullable) NSTextField * textField;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience property for accessing a text field in your item’s view hierarchy. Normally, you configure this property in Interface Builder by connecting it to one of your item’s text fields.
 

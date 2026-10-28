@@ -14,7 +14,7 @@ struct kev_d_vectors {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure is used to append some data to a kernel event.
 

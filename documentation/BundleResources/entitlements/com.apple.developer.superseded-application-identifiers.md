@@ -15,7 +15,7 @@ An entitlement that allows an app to offer the ability to migrate settings and d
 - **Name**: `com.apple.developer.superseded-application-identifiers`
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 This entitlement enables you to replace apps on iOS and iPadOS using a prioritized list of app identifiers associated with your developer account. On the first launch of an app that has adopted this entitlement and provided a list of one or more app identifiers associated with your developer account, the system enumerates the identifiers in the order presented in the list. For the first enumerated identifier that matches an app someone has already installed on the device, the system gives the person the option of replacing the app with a new app that inherits the older app’s data and settings. If the person agrees to the replacement, the system deletes the older app once the data and settings migration process completes.
 
@@ -25,7 +25,7 @@ The app replacement offer process is a first-run activity and runs only once.
 
 To request access to this capability, see [App Replacement Request](https://developer.apple.com/contact/request/app-replacement/).
 
-##### Adopt the entitlement
+### Adopt the entitlement
 
 To adopt this entitlement, add it to your app’s capabilities by following these steps:
 

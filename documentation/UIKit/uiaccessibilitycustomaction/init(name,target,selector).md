@@ -23,7 +23,7 @@ init(name: String, target: Any?, selector: Selector)
 - (instancetype) initWithName:(NSString *) name target:(id) target selector:(SEL) selector;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized custom action object.
 

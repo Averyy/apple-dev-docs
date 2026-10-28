@@ -19,7 +19,7 @@ var allowsUndo: Bool { get set }
 @property BOOL allowsUndo;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver allows undo, otherwise [`false`](../../Swift/false.md).
 

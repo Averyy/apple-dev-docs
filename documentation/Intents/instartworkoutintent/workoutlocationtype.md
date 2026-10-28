@@ -31,7 +31,7 @@ var workoutLocationType: INWorkoutLocationType { get }
 @property (atomic, assign, readonly) INWorkoutLocationType workoutLocationType;
 ```
 
-#### Discussion
+## Discussion
 
 When you measure indoor and outdoor workouts differently, use this property to determine the workout’s location.
 

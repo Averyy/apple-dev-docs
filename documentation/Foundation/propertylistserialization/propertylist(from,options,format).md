@@ -25,11 +25,11 @@ class func propertyList(from data: Data, options opt: PropertyListSerialization.
 + (id) propertyListWithData:(NSData *) data options:(NSPropertyListReadOptions) opt format:(NSPropertyListFormat *) format error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A property list object corresponding to the representation in `data`. If data is not in a supported format, returns `nil`.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

@@ -21,7 +21,7 @@ Constants for the type of effect to apply to the text.
 struct TextEffectStyle
 ```
 
-#### Overview
+## Overview
 
 Use this constant as the value for the [`textEffect`](./key/texteffect.md) key.
 

@@ -19,7 +19,7 @@ func getRef() -> Unmanaged<IOBluetoothSDPDataElementRef>!
 - (IOBluetoothSDPDataElementRef) getSDPDataElementRef;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOBluetoothSDPDataElementRef representation of the target IOBluetoothSDPDataElement object.
 

@@ -19,7 +19,7 @@ The color transformer for resolving the tint color.
 @property (nonatomic, copy, nullable) UIConfigurationColorTransformer tintColorTransformer;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `nil`, the configuration uses [`tintColor`](../uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/tintcolor.md) without any transformations.
 

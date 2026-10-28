@@ -15,11 +15,11 @@ Creates a message queue.
 OSStatus MPCreateQueue(MPQueueID *queue);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965). If a queue could not be created, `MPCreateQueue` returns `kMPInsufficientResourcesErr`.
 
-#### Discussion
+## Discussion
 
 This call creates a message queue, which can be used to notify (that is, send) and wait for (that is, receive) messages consisting of three pointer-sized values in a preemptively safe manner.
 

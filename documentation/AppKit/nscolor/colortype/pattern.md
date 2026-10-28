@@ -19,7 +19,7 @@ case pattern
 NSColorTypePattern
 ```
 
-#### Discussion
+## Discussion
 
 Colors of this type store a value in the [`patternImage`](../patternimage.md) property.
 

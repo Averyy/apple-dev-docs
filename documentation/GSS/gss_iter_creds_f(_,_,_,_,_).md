@@ -23,11 +23,11 @@ func gss_iter_creds_f(_ min_stat: UnsafeMutablePointer<OM_uint32>, _ flags: OM_u
 OM_uint32 gss_iter_creds_f(OM_uint32 *min_stat, OM_uint32 flags, gss_const_OID mech, void *userctx, void (*)(void *, struct gss_OID_desc_struct *, struct gss_cred_id_t_desc_struct *)useriter);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 
-#### Discussion
+## Discussion
 
 Use the [`gss_iter_creds(_:_:_:_:)`](./gss_iter_creds%28_,_,_,_%29.md) function if you don’t need the user context parameter.
 

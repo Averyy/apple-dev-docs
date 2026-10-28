@@ -22,7 +22,7 @@ var showsCancelButton: Bool { get set }
 @property (nonatomic) BOOL showsCancelButton;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`true`](../../Swift/true.md) to show a Cancel button; otherwise, [`false`](../../Swift/false.md).
 

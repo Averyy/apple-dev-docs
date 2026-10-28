@@ -20,7 +20,7 @@ Indicates whether the web view limits navigation to pages within the app’s dom
 var limitsNavigationsToAppBoundDomains: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `false`.
 

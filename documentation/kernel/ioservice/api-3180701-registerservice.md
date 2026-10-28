@@ -24,11 +24,11 @@ virtual kern_return_t RegisterService(void);
 kern_return_t RegisterService(OSDispatchMethod supermethod);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md). 
 
-#### Discussion
+## Discussion
 
 After setting up your service in your custom [`Start`](./api-3180710-start.md) method, call this method to let the system know your service is running. 
 

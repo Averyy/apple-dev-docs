@@ -25,7 +25,7 @@ var commandBuffer: (any MTL4CommandBuffer)? { get }
 @property (nonatomic, readonly, nullable) id<MTL4CommandBuffer> commandBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 This property may return undefined results if you call it after calling [`endEncoding()`](./endencoding%28%29.md).
 

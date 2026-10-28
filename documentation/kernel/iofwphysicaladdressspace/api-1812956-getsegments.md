@@ -14,7 +14,7 @@ inline IOReturn getSegments(
  UInt32 *num_segments ) ;
 ```
 
-#### Return Value
+## Return Value
 
 returns kIOReturnSuccess on success
 

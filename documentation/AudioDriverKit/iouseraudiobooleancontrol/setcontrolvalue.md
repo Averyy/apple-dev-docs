@@ -15,11 +15,11 @@ Sets the Boolean value of the control.
 kern_return_t SetControlValue(bool in_control_value);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 If successful, changing the control value sends a notification to the host to update the object state.
 

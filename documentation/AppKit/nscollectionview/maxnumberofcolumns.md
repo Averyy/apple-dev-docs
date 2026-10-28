@@ -21,7 +21,7 @@ var maxNumberOfColumns: Int { get set }
 @property NSUInteger maxNumberOfColumns;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `0`, the collection view has no maximum number of columns. The default value of this property is `0`.
 

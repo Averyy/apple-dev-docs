@@ -16,7 +16,7 @@ case error
 XCTIssueSeverityError
 ```
 
-#### Discussion
+## Discussion
 
 An issue with error severity causes the test it’s associated with to be marked as a failure.
 

@@ -23,7 +23,7 @@ struct Model
 
 Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
-#### Overview
+## Overview
 
 > **Note**: Only `Float` and `Double` are currently supported as the Scalar type.
 

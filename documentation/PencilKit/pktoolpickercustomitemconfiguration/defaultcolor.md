@@ -18,7 +18,7 @@ The default color for the tool.
 @property (nonatomic, strong) UIColor * defaultColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default color is black.
 

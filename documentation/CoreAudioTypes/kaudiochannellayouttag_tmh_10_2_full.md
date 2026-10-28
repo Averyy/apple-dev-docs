@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_TMH_10_2_full: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_TMH_10_2_full
 ```
 
-#### Discussion
+## Discussion
 
 This tag is equivalant to [`kAudioChannelLayoutTag_TMH_10_2_std`](./kaudiochannellayouttag_tmh_10_2_std.md) plus additional channels. Your channel layout must be in the following order:
 

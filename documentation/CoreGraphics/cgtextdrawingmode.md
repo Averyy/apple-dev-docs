@@ -25,7 +25,7 @@ enum CGTextDrawingMode
 enum CGTextDrawingMode : int32_t;
 ```
 
-#### Overview
+## Overview
 
 You provide a text drawing mode constant to the function [`setTextDrawingMode(_:)`](./cgcontext/settextdrawingmode%28_%29.md) to set the current text drawing mode for a graphics context. Text drawing modes determine how Core Graphics renders individual glyphs onscreen. For example, you can set a text drawing mode to draw text filled in or outlined (stroked) or both. You can also create special effects with the text clipping drawing modes, such as clipping an image to a glyph shape.
 

@@ -17,11 +17,11 @@ Writes the configurations of the configuration catalog to a reality file.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func write(to url: URL, options: Entity.WriteOptions) async throws
+nonisolated(nonsending)
+func write(to url: URL, options: Entity.WriteOptions) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Another configuration catalog instance can open the `.reality` file for reading.
 

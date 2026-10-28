@@ -23,7 +23,7 @@ class UISearchTextField
 @interface UISearchTextField : UITextField
 ```
 
-#### Overview
+## Overview
 
 Use a search text field to display search criteria represented as text and tokens, and allow the user to edit that criteria. Tokens are discrete representations of nontextual content that your app can create and use to represent filters that limit the search results. Tokens always occur contiguously before any text in the search field.
 

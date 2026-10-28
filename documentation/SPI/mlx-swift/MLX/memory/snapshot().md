@@ -21,7 +21,7 @@ static func snapshot() -> Memory.Snapshot
 
 - [Running on iOS](../running-on-ios.md)
 
-#### Discussion
+## Discussion
 
 Get the current memory use.  This can be used to measure before/after and current memory use:
 

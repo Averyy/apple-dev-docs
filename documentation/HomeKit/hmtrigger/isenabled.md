@@ -24,7 +24,7 @@ var isEnabled: Bool { get }
 @property (nonatomic, readonly, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 Triggers that are not enabled never fire.
 

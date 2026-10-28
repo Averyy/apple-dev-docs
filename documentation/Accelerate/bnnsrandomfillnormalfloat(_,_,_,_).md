@@ -25,7 +25,7 @@ func BNNSRandomFillNormalFloat(_ generator: BNNSRandomGenerator?, _ desc: Unsafe
 int BNNSRandomFillNormalFloat(BNNSRandomGenerator generator, BNNSNDArrayDescriptor *desc, float mean, float stddev);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to fill an array descriptor with random values mapped to a normal distribution.
 

@@ -25,7 +25,7 @@ var rank: UInt8
 uint8_t rank;
 ```
 
-#### Discussion
+## Discussion
 
 This value must be greater than or equal to zero, and less than or equal to `BNNS_MAX_TENSOR_DIMENSION`.
 

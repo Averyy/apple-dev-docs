@@ -24,7 +24,7 @@ convenience init?(playerLayer: AVPlayerLayer)
 - (instancetype) initWithPlayerLayer:(AVPlayerLayer *) playerLayer;
 ```
 
-#### Discussion
+## Discussion
 
 For Picture in Picture to work correctly, maintain a strong reference to this object whether your app is running in the foreground or background.
 

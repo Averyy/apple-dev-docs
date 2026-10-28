@@ -19,7 +19,7 @@ case thick
 NSSplitViewDividerStyleThick
 ```
 
-#### Discussion
+## Discussion
 
 This style is the default divider style.
 

@@ -22,7 +22,7 @@ func AudioConverterFillComplexBufferRealtimeSafe(_ inAudioConverter: AudioConver
 extern OSStatus AudioConverterFillComplexBufferRealtimeSafe(AudioConverterRef inAudioConverter, AudioConverterComplexInputDataProcRealtimeSafe inInputDataProc, void *inInputDataProcUserData, UInt32 *ioOutputDataPacketSize, AudioBufferList *outOutputData, AudioStreamPacketDescription *outPacketDescription);
 ```
 
-#### Discussion
+## Discussion
 
 Identical to AudioConverterFillComplexBuffer, with the addition of a realtime-safety guarantee.
 

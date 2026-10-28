@@ -19,7 +19,7 @@ protocol OS_ar_field_of_view : NSObjectProtocol
 @protocol OS_ar_field_of_view <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Represents either an Apple-defined preset field of view or a custom polygon-based specification. Preset field of views are recommended for most applications.
 

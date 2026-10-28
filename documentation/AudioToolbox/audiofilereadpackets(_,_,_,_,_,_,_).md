@@ -25,11 +25,11 @@ func AudioFileReadPackets(_ inAudioFile: AudioFileID, _ inUseCache: Bool, _ outN
 extern OSStatus AudioFileReadPackets(AudioFileID inAudioFile, Boolean inUseCache, UInt32 *outNumBytes, AudioStreamPacketDescription *outPacketDescriptions, SInt64 inStartingPacket, UInt32 *ioNumPackets, void *outBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 If you do not need to read a fixed duration of audio data, but rather want to use your memory buffer most efficiently, use [`AudioFileReadPacketData(_:_:_:_:_:_:_:)`](./audiofilereadpacketdata%28_,_,_,_,_,_,_%29.md) instead of this function.
 

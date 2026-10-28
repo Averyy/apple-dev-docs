@@ -12,7 +12,7 @@ Train a flower classifier using Create ML in Swift Playgrounds, and apply the re
 - Mac Catalyst 12.0+
 - Xcode 11.3+
 
-#### Overview
+## Overview
 
 To classify images in real time, you need a classification model with the categories you’d like identified, and a way to capture images to feed to the classifier.
 
@@ -20,7 +20,7 @@ To classify images in real time, you need a classification model with the catego
 
 This sample code project contains two components: a Create ML model you train in Swift Playgrounds, and the iOS app, FlowerShop, which you use to classify different flower types. This project uses the same code as the robot shop demo in the WWDC 2018 session [Vision with Core ML](https://developer.apple.com/videos/play/wwdc2018/717/).
 
-##### Getting Started
+### Getting Started
 
 To see Create ML in action, run the Swift Playground `Training/ImageClassifierPlayground.playground` in Xcode 10 on a Mac running macOS 10.14 or later. This Swift Playground performs classification on the training set and generates the Create ML model `ImageClassifier.mlmodel`.
 
@@ -31,7 +31,7 @@ The sample app, FlowerShop, requires the following:
 
 Because Xcode can’t access the camera, FlowerShop won’t work in Simulator.
 
-##### Train a Custom Classifier on an Organized Image Set
+### Train a Custom Classifier on an Organized Image Set
 
 The sample images that Create ML uses to train the custom classifier were taken with a set of categories in mind. For your own app, decide on a set of classification labels before preparing images. Take the following measures to improve your data set:
 
@@ -53,7 +53,7 @@ For more information about configuring the resultant model, as well as screensho
 
 Create ML exports its trained results as a `.mlmodel` file, which you can import into your app in Xcode. After importing the model, you can examine  the prototypical image size by opening the model file in Xcode’s navigation menu. For example, a parameter such as “Color 299 x 299” indicates the size of the training image. You can also confirm the size of the model.
 
-##### Build an iOS App Around the Classifier
+### Build an iOS App Around the Classifier
 
 The app leverages the trained model and uses Vision for both registration and classification:
 
@@ -61,7 +61,7 @@ The app leverages the trained model and uses Vision for both registration and cl
 - When the user is holding the camera sufficiently still, it performs image classification on the frame, attempting to identify the focused object as one of the categories in the Create ML classifier.
 - If the confidence score associated with a classifier exceeds a high confidence threshold of `0.9`, the app shows its most confident classification through an overlay.
 
-##### Use Registration for Scene Stability
+### Use Registration for Scene Stability
 
 Registration takes and aligns two images to determine the relative difference. Vision’s registration operation uses an inexpensive, fast algorithm that tells the app if the subject is still and stable. Theoretically, the app could make a classification request on every frame buffer, but classification is a computationally expensive operation—so attempting to classify every frame could result in delays and poor performance with the UI. Classify the scene in a frame only if the registration algorithm determines that the scene and camera are still, indicating the user’s intent to classify an object.
 
@@ -107,7 +107,7 @@ if self.sceneStabilityAchieved() {
 }
 ```
 
-##### Perform Image Classification
+### Perform Image Classification
 
 The sample app wraps two request objects—a barcode detection request and an image classification request—in a single request execution so Vision can perform them together. Performing the combined request is faster than performing separate requests, since Vision can share the same visual data between both.
 
@@ -146,7 +146,7 @@ let objectClassifier = try VNCoreMLModel(for: MLModel(contentsOf: modelURL))
 let classificationRequest = VNCoreMLRequest(model: objectClassifier, completionHandler: { (request, error) in
 ```
 
-Defining the requests and completion handlers concludes the setup stage; the second stage performs identification in real time. The sample sends the stable frame to the classifier and tells Vision to perform classification by calling [perform](./vnimagerequesthandler/api-2880297-perform.md):
+Defining the requests and completion handlers concludes the setup stage; the second stage performs identification in real time. The sample sends the stable frame to the classifier and tells Vision to perform classification by calling [perform](./vnimagerequesthandler/perform%28_%29.md):
 
 ```swift
 private func analyzeCurrentImage() {
@@ -174,7 +174,7 @@ private let visionQueue = DispatchQueue(label: "com.example.apple-samplecode.Flo
 
 Even if captured frames don’t match the size of the image under which you trained the Create ML model (299 × 299), the Vision framework crops and scales down its input images to match the model’s expected size on your behalf.
 
-##### Interpret Classification Results
+### Interpret Classification Results
 
 Check the results in the request’s completion handler. When you create and pass in a request, you handle results and errors and show the classification results in your app’s UI.
 
@@ -191,7 +191,7 @@ The sample app sets a confidence threshold of `0.9`—empirically tuned—to fil
 
 The sample shows the top result, but in a search app, you can rank the labels by confidence, from most confident classification to least. The array of confidence scores and classifications is available, so use more than the top result if it fits your app’s context. Try different thresholds to determine the best balance of reducing false positives and surfacing real-world results when they are correct; a result can be correct at a lower confidence score, like `0.8`. Even though this app’s threshold is `0.9`, the ideal threshold may vary from model to model.
 
-##### Release Your Buffers
+### Release Your Buffers
 
 After processing your buffers, be sure to release them to prevent them from queuing up. Because the input is a capture device that is constantly streaming frames, your app will run out of memory quickly if you don’t discard extra frames. The sample app limits the number of queued frame buffers to only one, which prevents overflow from happening and clears the buffer by setting it to `nil`:
 

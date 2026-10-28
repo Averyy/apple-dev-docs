@@ -19,7 +19,7 @@ var image: NSImage? { get set }
 @property (strong, nullable) NSImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The color well applies the image only when the [`colorWellStyle`](./colorwellstyle.md) property is set to [`NSColorWell.Style.expanded`](./style/expanded.md).
 

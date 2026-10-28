@@ -17,11 +17,11 @@ Creates an anonymous listener
 init(targetQueue: DispatchQueue? = nil, options: XPCListener.InitializationOptions = .none, incomingSessionHandler: @escaping @Sendable (XPCListener.IncomingSessionRequest) -> XPCListener.IncomingSessionRequest.Decision)
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new listener object. The returned listener is activated by default and will begin receiving incoming session requests
 
-#### Discussion
+## Discussion
 
 - targetQueue: The GCD queue onto which listener events will be submitted. This may be a concurrent queue. This parameter is optional, if the target queue is not specified the target queue will be libdispatch’s default target queue, defined as `DISPATCH_TARGET_QUEUE_DEFAULT`.
 - options: Additional attributes to create the listener

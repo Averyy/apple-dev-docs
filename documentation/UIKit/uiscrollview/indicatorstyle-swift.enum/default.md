@@ -23,7 +23,7 @@ case `default`
 UIScrollViewIndicatorStyleDefault
 ```
 
-#### Discussion
+## Discussion
 
 This style is good against any content background.
 

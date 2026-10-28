@@ -21,7 +21,7 @@ The type of the update’s iterator.
 struct Iterator
 ```
 
-#### Overview
+## Overview
 
 Use [`CLLocationUpdate.Updates.Iterator`](./iterator.md) process events that [`CLLocationUpdate`](../../cllocationupdate.md) delivers.
 

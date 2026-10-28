@@ -17,11 +17,11 @@ Obtains a value specifying whether an unknown root is allowed.
 OSStatus SSLGetAllowsAnyRoot(SSLContextRef context, Boolean *anyRoot);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Use the [`SSLSetAllowsAnyRoot`](./sslsetallowsanyroot.md) function to set the value of the `anyRoot` flag. The effect and meaning of this flag is described in the discussion of the [`SSLSetAllowsAnyRoot`](./sslsetallowsanyroot.md) function.
 

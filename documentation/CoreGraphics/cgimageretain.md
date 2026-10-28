@@ -21,11 +21,11 @@ Increments the retain count of a bitmap image.
 extern CGImageRefCGImageRetain(CGImageRef image);
 ```
 
-#### Return Value
+## Return Value
 
 The same image you passed in as the `image` parameter.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md), except that it does not cause an error if the `image` parameter is `NULL`.
 

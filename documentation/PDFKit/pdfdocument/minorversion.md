@@ -24,7 +24,7 @@ var minorVersion: Int { get }
 @property (nonatomic, readonly) NSInteger minorVersion;
 ```
 
-#### Return Value
+## Return Value
 
 The minor version of the document.
 

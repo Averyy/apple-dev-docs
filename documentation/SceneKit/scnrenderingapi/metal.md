@@ -25,7 +25,7 @@ case metal
 SCNRenderingAPIMetal
 ```
 
-#### Discussion
+## Discussion
 
 Metal provides improved graphics performance on supported devices, allows you to integrate GPU-compute tasks into a rendering workflow, and provides the same API in both iOS and macOS.
 

@@ -21,11 +21,11 @@ Processes data between two byte streams.
 static func process(readingFrom input: ArchiveByteStream, writingTo output: ArchiveByteStream) throws -> Int64
 ```
 
-#### Return Value
+## Return Value
 
 The number of processed bytes.
 
-#### Discussion
+## Discussion
 
 This function reads data from `input` and writes it to `output` until it reaches end-of-file (EOF).
 

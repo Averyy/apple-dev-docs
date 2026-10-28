@@ -15,7 +15,7 @@ Creates an accessory anchoring source for a deferred accessory type.
 init(type: AnchoringComponent.AccessoryAnchoringSource.AccessoryType, location: String? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when you want to anchor to an accessory that may not be connected yet. The system will automatically bind to a matching accessory when it connects.
 

@@ -21,7 +21,7 @@ case begin
 
 - [Providing charging history for electric vehicles](../../../providing-informative-charging-history-for-electric-vehicles.md)
 
-#### Discussion
+## Discussion
 
 The electricity measurement for power and energy must be 0
 

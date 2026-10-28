@@ -27,7 +27,7 @@ case unreliable
 GKSendDataUnreliable
 ```
 
-#### Discussion
+## Discussion
 
 Data transmitted unreliably may be received out of order by recipients. Use this for small packets of data that must arrive quickly to be useful to the recipient.
 

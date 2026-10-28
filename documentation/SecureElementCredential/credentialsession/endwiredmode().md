@@ -20,7 +20,7 @@ func endWiredMode() async throws
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Discussion
+## Discussion
 
 The credential session state must be [`CredentialSession.State.wired(credential:)`](./state-swift.enum/wired%28credential%29.md) prior to calling this method.
 

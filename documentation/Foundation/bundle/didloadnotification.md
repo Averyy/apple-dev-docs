@@ -25,7 +25,7 @@ class let didLoadNotification: NSNotification.Name
 extern NSNotificationName const NSBundleDidLoadNotification;
 ```
 
-#### Discussion
+## Discussion
 
 When a request is made to a bundle for a class ([`classNamed(_:)`](./classnamed%28_%29.md) or [`principalClass`](./principalclass.md)), the bundle dynamically loads the executable code file that contains the class implementation and all other class definitions contained in the file. After the module is loaded, the bundle posts the [`didLoadNotification`](./didloadnotification.md).
 

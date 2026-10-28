@@ -19,11 +19,11 @@ optional func webView(_ sender: WebView!, runBeforeUnloadConfirmPanelWithMessage
 - (BOOL) webView:(WebView *) sender runBeforeUnloadConfirmPanelWithMessage:(NSString *) message initiatedByFrame:(WebFrame *) frame;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user clicked the OK button; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use this method to include a message in the confirmation panel in addition to the message supplied by the webpage. The confirmation panel should contain OK and Cancel buttons.
 

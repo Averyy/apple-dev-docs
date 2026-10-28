@@ -18,7 +18,7 @@ A region that location services can monitor more effectively.
 var alternateRegion: CLRegion? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property has a value only for errors of type [`regionMonitoringResponseDelayed`](./regionmonitoringresponsedelayed.md).
 

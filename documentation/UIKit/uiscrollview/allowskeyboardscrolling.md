@@ -22,7 +22,7 @@ var allowsKeyboardScrolling: Bool { get set }
 @property (nonatomic, assign) BOOL allowsKeyboardScrolling;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is [`true`](../../Swift/true.md), the scroll view animates its content offset in response to input from hardware keyboard keys like Page Up, Page Down, Home, End, and the arrow keys. The scroll view needs to have focus or be first responder to receive these key events.
 

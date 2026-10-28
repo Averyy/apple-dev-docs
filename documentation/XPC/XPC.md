@@ -12,7 +12,7 @@ Access a low-level interprocess communication mechanism.
 - Mac Catalyst 13.0+
 - macOS 10.10+
 
-#### Overview
+## Overview
 
 XPC provides a lightweight mechanism for basic interprocess communication. It allows you to create lightweight helper tools, called *XPC services*, that perform work on behalf of your app. The `launchd` system daemon manages these services, launching them on demand, shutting them down when idle, and restarting them if they crash. Benefits of XPC services include:
 

@@ -14,7 +14,7 @@
 - (instancetype) initExcludingProcesses:(NSArray<NSNumber *> *) processesObjectIDsToExcludeFromTap andDeviceUID:(NSString *) deviceUID withStream:(NSInteger) stream;
 ```
 
-#### Discussion
+## Discussion
 
 Mix all process audio streams destined for the selected device stream except the given processes
 

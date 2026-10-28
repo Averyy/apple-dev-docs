@@ -22,7 +22,7 @@ func begin()
 - (void) begin;
 ```
 
-#### Discussion
+## Discussion
 
 After calling the [`begin()`](./begin%28%29.md) method, wait until the session’s delegate receives the [`assessmentSessionDidBegin(_:)`](../aeassessmentsessiondelegate/assessmentsessiondidbegin%28_%29.md) method before starting an assessment or showing sensitive information. When you’re ready to stop the assessment session, call the [`end()`](./end%28%29.md) method.
 

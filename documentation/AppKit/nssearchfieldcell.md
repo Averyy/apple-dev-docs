@@ -19,7 +19,7 @@ class NSSearchFieldCell
 @interface NSSearchFieldCell : NSTextFieldCell
 ```
 
-#### Overview
+## Overview
 
 The [`NSSearchFieldCell`](./nssearchfieldcell.md) class defines the programmatic interface for text fields that are optimized for text-based searches. An [`NSSearchFieldCell`](./nssearchfieldcell.md) object is “wrapped” by an [`NSSearchField`](./nssearchfield.md) control object, which directly inherits from the [`NSTextField`](./nstextfield.md) class. The search field implemented by these classes presents a standard user interface for searches, including a search button, a cancel button, and a pop-up icon menu for listing recent search strings and custom search categories.
 

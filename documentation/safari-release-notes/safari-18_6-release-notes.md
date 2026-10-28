@@ -5,25 +5,25 @@
 
 Released July 29, 2025 — 18.6 (20621.3.11)
 
-#### Overview
+## Overview
 
 Safari 18.6 is available for iOS 18.6, iPadOS 18.6, visionOS 2.6, macOS 15.6, macOS Sonoma, and macOS Ventura.
 
-##### Rendering
+### Rendering
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed style invalidation for `:has(+:popover-open)`.  (149794951)
 
-##### WKWebView
+### WKWebView
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a crash at launch in iOS Simulator for apps built for older deployment targets that bind to specific WebKit API.  (152342621)
 
-##### Web Extensions
+### Web Extensions
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed loading a web accessible resource from a subframe at about:blank.  (149971391)
 - Fixed `'allowAllRequests'` for `declarativeNetRequest`. (151015324)

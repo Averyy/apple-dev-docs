@@ -25,7 +25,7 @@ var vertexDescriptor: MTLVertexDescriptor? { get set }
 @property (nonatomic, copy, nullable) MTLVertexDescriptor * vertexDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 A vertex descriptor specifies the layout of your vertex data, allowing your vertex shaders to access the content in your vertex arrays via the `[[stage_in]]` attribute in Metal Shading Language.
 

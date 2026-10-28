@@ -20,7 +20,7 @@ Creates an object that reads mixed audio from the specified audio tracks.
 + (instancetype) assetReaderAudioMixOutputWithAudioTracks:(NSArray<AVAssetTrack *> *) audioTracks audioSettings:(NSDictionary<NSString *,id> *) audioSettings;
 ```
 
-#### Return Value
+## Return Value
 
 A new audio mix output, or `nil` if initialization fails.
 

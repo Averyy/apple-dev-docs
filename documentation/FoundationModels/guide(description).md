@@ -15,8 +15,8 @@
 ## Declaration
 
 ```swift
-@attached
-(peer) macro Guide(description: String)
+@attached(peer)
+macro Guide(description: String)
 ```
 
 ## Mentions

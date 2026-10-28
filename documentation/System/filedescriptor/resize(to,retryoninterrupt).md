@@ -21,7 +21,7 @@ Truncates or extends the file referenced by this file descriptor.
 func resize(to newSize: Int64, retryOnInterrupt: Bool = true) throws
 ```
 
-#### Discussion
+## Discussion
 
 The file referenced by this file descriptor will by truncated (or extended) to `newSize`.
 

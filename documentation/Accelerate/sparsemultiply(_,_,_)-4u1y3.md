@@ -4,7 +4,7 @@
 **Kind**: func  
 **Role**: Function
 
-Performs the multiply operation *Y = Subfactor * X* on a vector of single-precision values *X*, in place and without any internal memory allocations.
+Performs the multiply operation *Y = Subfactor \* X* on a vector of single-precision values *X*, in place and without any internal memory allocations.
 
 **Availability**:
 - iOS 11.0+
@@ -35,11 +35,11 @@ static void SparseMultiply(SparseOpaqueSubfactor_Float Subfactor, DenseVector_Fl
 
 ### Subfactor and dense vector multiplication with user-defined workspace
 - [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseVector_Double, UnsafeMutableRawPointer)](./sparsemultiply%28_,_,_%29-9tahm.md)
-  Performs the multiply operation *Y = Subfactor * X* on a vector of double-precision values *X*, in place and without any internal memory allocations.
+  Performs the multiply operation *Y = Subfactor \* X* on a vector of double-precision values *X*, in place and without any internal memory allocations.
 - [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseVector_Double, DenseVector_Double, UnsafeMutableRawPointer)](./sparsemultiply%28_,_,_,_%29-1ooyi.md)
-  Performs the multiply operation *Y = Subfactor * X* on a vector of double-precision values *X*, without any internal memory allocations.
+  Performs the multiply operation *Y = Subfactor \* X* on a vector of double-precision values *X*, without any internal memory allocations.
 - [func SparseMultiply(SparseOpaqueSubfactor_Float, DenseVector_Float, DenseVector_Float, UnsafeMutableRawPointer)](./sparsemultiply%28_,_,_,_%29-3l60d.md)
-  Performs the multiply operation *Y = Subfactor * X* on a vector of double-precision values *X*, without any internal memory allocations.
+  Performs the multiply operation *Y = Subfactor \* X* on a vector of double-precision values *X*, without any internal memory allocations.
 - [func SparseMultiply(SparseOpaqueSubfactor_Complex_Double, DenseVector_Complex_Double, UnsafeMutableRawPointer)](./sparsemultiply%28_,_,_%29-5etjg.md)
   Perform the multiply operation `y = Subfactor * x` in place for complex double values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Complex_Float, DenseVector_Complex_Float, UnsafeMutableRawPointer)](./sparsemultiply%28_,_,_%29-5kh07.md)

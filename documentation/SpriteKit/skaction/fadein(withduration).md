@@ -25,11 +25,11 @@ class func fadeIn(withDuration duration: TimeInterval) -> SKAction
 + (SKAction *) fadeInWithDuration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`alpha`](../sknode/alpha.md) property animates from its current value to `1.0`.
 

@@ -17,7 +17,7 @@ Exports resources from the app, in response to a request from the migration syst
 func exportResources(to archiver: sending ResourcesArchiver, request: MigrationRequestWithOptions<Self.OptionsType>) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method in your app extension to export files from your app to the destination device.
 

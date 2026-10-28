@@ -10,11 +10,11 @@ virtual IOReturn RecreateStreams(
  void);
 ```
 
-#### Return Value
+## Return Value
 
 returns kIOReturnSuccess if sucessful.
 
-#### Overview
+## Overview
 
 Recreate the remembered streams after a device has been reset.
 

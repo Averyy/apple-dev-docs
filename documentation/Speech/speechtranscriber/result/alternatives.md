@@ -20,7 +20,7 @@ All the alternative interpretations of the audio in this range. The interpretati
 let alternatives: [AttributedString]
 ```
 
-#### Discussion
+## Discussion
 
 The array will not be empty, but may contain an empty string, indicating an alternative where the audio has no transcription.
 

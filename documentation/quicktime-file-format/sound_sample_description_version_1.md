@@ -6,7 +6,7 @@
 
 An extended sound sample description that supports compressed audio, and includes the ability to add atoms to the sound description.
 
-#### Overview
+## Overview
 
 The version field in the sample description is set to `1` for this version of the sound description structure. In version 1 of the sound description, introduced in QuickTime 3, the sound description record is extended by 4 fields, each 4 bytes long, and includes the ability to add atoms to the sound description.
 
@@ -31,7 +31,7 @@ To facilitate playback on devices that support only one or two channels of audio
 
 The new fields correspond to the `CompressionInfo` structure used by the Macintosh Sound Manager (which uses 16-bit values) to describe the compression ratio of fixed ratio audio compression algorithms. If these fields are not used, they are set to `0`. File readers only need to check to see if `samplesPerPacket` is `0`.
 
-#### Redefined sample tables
+## Redefined sample tables
 
 If the compression ID in the sample description is set to `–2`, the sound track uses redefined sample tables optimized for compressed audio.
 

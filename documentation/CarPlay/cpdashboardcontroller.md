@@ -21,7 +21,7 @@ class CPDashboardController
 @interface CPDashboardController : NSObject
 ```
 
-#### Overview
+## Overview
 
 A dashboard controller manages up to two shortcut buttons that CarPlay displays in the dashboard when there’s no active navigation session. You don’t create the dashboard controller. Instead, CarPlay creates one for you and passes it to the delegate of [`CPTemplateApplicationDashboardScene`](./cptemplateapplicationdashboardscene.md) when it connects the dashboard scene.
 

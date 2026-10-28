@@ -25,7 +25,7 @@ var resultType: NSBatchInsertRequestResultType { get set }
 @property NSBatchInsertRequestResultType resultType;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`NSBatchInsertRequestResultType.statusOnly`](../nsbatchinsertrequestresulttype/statusonly.md).
 

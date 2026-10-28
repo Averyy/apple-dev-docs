@@ -17,7 +17,7 @@ The container object for bid recommendations.
 object InsightsObject
 ```
 
-#### Discussion
+## Discussion
 
 The object containing [`KeywordInsights`](./keywordinsights.md) and [`KeywordBidRecommendation`](./keywordbidrecommendation.md).
 

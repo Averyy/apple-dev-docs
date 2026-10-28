@@ -22,7 +22,7 @@ var activityViewControllerProvider: (() -> UIActivityViewController)? { get set 
 @property (nonatomic, copy, readwrite, nullable) UIActivityViewController * (^activityViewControllerProvider)();
 ```
 
-#### Discussion
+## Discussion
 
 To support sharing, assign a closure that returns a [`UIActivityViewController`](../uiactivityviewcontroller.md) that you configure to share the document. When you set this property, a person can share the document by tapping the share button in the navigation item’s title menu.
 

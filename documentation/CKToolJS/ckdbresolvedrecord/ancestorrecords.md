@@ -15,7 +15,7 @@ The array of record objects that represent the ancestor records.
 attribute CKDBRecord[]? ancestorRecords;
 ```
 
-#### Discussion
+## Discussion
 
 Ancestor records are previous versions of the record. Each value in this array is a `CKDBRecord` object.
 

@@ -18,7 +18,7 @@ A label that handles animating state changes and provides accessibility features
 class OCKLabel
 ```
 
-#### Overview
+## Overview
 
 To animate changes to the text, set `animatesTextChanges` to true.
 

@@ -17,7 +17,7 @@ Return a copy that enforces a reasoning-token budget for every generation.
 func applyingThinkingBudget(_ configuration: ThinkingBudgetConfiguration, reasoning: ReasoningConfig, tokenizer: any Tokenizer, diagnosticHandler: (@Sendable (ThinkingBudgetDiagnostic) -> Void)? = nil) throws -> GenerationComponents
 ```
 
-#### Discussion
+## Discussion
 
 The reasoning protocol must declare a [`ReasoningBudgetTransition`](../reasoningbudgettransition.md), or the caller must supply one via [`transitionOverride`](../thinkingbudgetconfiguration/transitionoverride.md). Unknown protocols fail during setup rather than receiving a guessed `</think>` sequence. The configured generation limit must include enough headroom for a Unicode boundary completion, the longest possible protocol transition, and the answer.
 

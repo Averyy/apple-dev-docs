@@ -28,7 +28,7 @@ extern NSString * const SKStoreProductParameterAdNetworkCampaignIdentifier;
 - [Generating the signature to validate StoreKit-rendered ads](./generating-the-signature-to-validate-storekit-rendered-ads.md)
 - [Identifying the parameters in install-validation postbacks](./identifying-the-parameters-in-install-validation-postbacks.md)
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../Foundation/nsnumber.md). Ad networks determine their own campaign identifiers, which must be an integer `>=1` and `<=100`.
 

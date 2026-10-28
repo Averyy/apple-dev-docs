@@ -25,7 +25,7 @@ typealias CGGlyph = CGFontIndex
 typedef CGFontIndex CGGlyph;
 ```
 
-#### Discussion
+## Discussion
 
 When drawing text, you typically specify a sequence of characters. However, Core Graphics also allows you to use [`CGGlyph`](./cgglyph.md) values to specify glyphs. In either case, Core Graphics renders the text using font data provided by the Apple Type Services (ATS) framework.
 

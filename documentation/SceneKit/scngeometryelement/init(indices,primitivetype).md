@@ -21,7 +21,7 @@ Creates a geometry element from the specified array of index values.
 convenience init<IndexType>(indices: [IndexType], primitiveType: SCNGeometryPrimitiveType) where IndexType : FixedWidthInteger
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit connects the vertices in the order specified by the `indices` array, arranged according to the `primitiveType` parameter.This initializer is equivalent to the [`init(data:primitiveType:primitiveCount:bytesPerIndex:)`](./init%28data,primitivetype,primitivecount,bytesperindex%29.md) initializer, but does not require an intermediary [`Data`](../../Foundation/data.md) object; instead, it automatically infers the necessary allocation size and [`bytesPerIndex`](./bytesperindex.md) values based on the contents of the `indices` array.
 

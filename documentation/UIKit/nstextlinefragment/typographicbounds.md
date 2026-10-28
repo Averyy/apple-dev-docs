@@ -23,7 +23,7 @@ var typographicBounds: CGRect { get }
 @property (readonly) CGRect typographicBounds;
 ```
 
-#### Discussion
+## Discussion
 
 The origin value is offset from the beginning of the line fragment group belonging to the parent layout fragment.
 

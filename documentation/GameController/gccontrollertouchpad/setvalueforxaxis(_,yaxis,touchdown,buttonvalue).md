@@ -24,7 +24,7 @@ func setValueForXAxis(_ xAxis: Float, yAxis: Float, touchDown: Bool, buttonValue
 - (void) setValueForXAxis:(float) xAxis yAxis:(float) yAxis touchDown:(BOOL) touchDown buttonValue:(float) buttonValue;
 ```
 
-#### Discussion
+## Discussion
 
 This method does nothing if the associated controller isn’t a snapshot (its [`isSnapshot`](../gccontroller/issnapshot.md) property is [`false`](../../Swift/false.md)`)`.
 

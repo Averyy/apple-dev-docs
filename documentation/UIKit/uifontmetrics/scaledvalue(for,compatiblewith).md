@@ -23,11 +23,11 @@ func scaledValue(for value: CGFloat, compatibleWith traitCollection: UITraitColl
 - (CGFloat) scaledValueForValue:(CGFloat) value compatibleWithTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
-#### Return Value
+## Return Value
 
 A layout height that is scaled appropriately to accommodate the text that you want to display.
 
-#### Discussion
+## Discussion
 
 Use this method to scale the height of visual elements containing text. For example, if you define a button with text that can scale based on Dynamic Type, you would use this method to obtain an appropriately scaled height for your button’s background content.
 

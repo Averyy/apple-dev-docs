@@ -23,7 +23,7 @@ var textRanges: [NSTextRange] { get }
 @property (copy, readonly) NSArray<NSTextRange *> * textRanges;
 ```
 
-#### Discussion
+## Discussion
 
 The array must be logically ordered. When editing, all ranges in a text selection constitute a single insertion point.
 

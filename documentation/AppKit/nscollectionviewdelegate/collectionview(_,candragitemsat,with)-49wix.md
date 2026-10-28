@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: NSCollectionView, canDragItemsAt 
 - (BOOL) collectionView:(NSCollectionView *) collectionView canDragItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths withEvent:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the drag operation can begin or [`false`](../../Swift/false.md) if it cannot.
 
-#### Discussion
+## Discussion
 
 If you do not implement this method and your collection view has only one section, the collection view calls the legacy [`collectionView(_:canDragItemsAt:with:)`](./collectionview%28_,candragitemsat,with%29-39rjh.md) method. If you do not implement either method, the collection view assumes a return value of [`true`](../../Swift/true.md).
 

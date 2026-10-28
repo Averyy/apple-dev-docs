@@ -11,13 +11,13 @@ Creates negative keywords in a specific ad group.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Negative keywords prevent your ad from showing up in App Store searches. Negative keywords can belong to a campaign or an ad group.
 
 To create ad group negative keywords, use the associated `campaignId` and `adgroupId` in the URI.
 
-##### Payload example: Create ad group negative keywords
+### Payload example: Create ad group negative keywords
 
 **Request**:
 

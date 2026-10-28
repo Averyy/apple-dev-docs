@@ -17,11 +17,11 @@ Compute the inverse of a square matrix.
 func inv(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 `ainv` such that `dot(a, ainv) = dot(ainv, a) = eye(a.shape[0])`
 
-#### Discussion
+## Discussion
 
 This function supports arrays with at least 2 dimensions. When the input has more than two dimensions, the inverse is computed for each matrix in the last two dimensions of `array`.
 

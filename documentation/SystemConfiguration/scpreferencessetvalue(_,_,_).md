@@ -19,11 +19,11 @@ func SCPreferencesSetValue(_ prefs: SCPreferences, _ key: CFString, _ value: CFP
 Boolean SCPreferencesSetValue(SCPreferencesRef prefs, CFStringRef key, CFPropertyListRef value);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the value was set; `FALSE` if an error occurred.
 
-#### Discussion
+## Discussion
 
 This function adds or replaces the value associated with the specified key. To commit these changes to permanent storage you must call [`SCPreferencesCommitChanges(_:)`](./scpreferencescommitchanges%28_%29.md).
 

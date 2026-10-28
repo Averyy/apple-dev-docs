@@ -14,7 +14,7 @@ A key to match PCI devices by subsystem vendor ID and device ID registers.
 - **Name**: `IOPCISecondaryMatch`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This value of this key matches the subsystem register (`0x2c`).
 

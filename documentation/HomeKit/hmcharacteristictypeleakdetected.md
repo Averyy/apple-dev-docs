@@ -24,7 +24,7 @@ let HMCharacteristicTypeLeakDetected: String
 extern NSString * const HMCharacteristicTypeLeakDetected;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueLeakStatus`](./hmcharacteristicvalueleakstatus.md) enumeration. This characteristic typically applies to water, but can also be used for other fluids, like natural gas.
 

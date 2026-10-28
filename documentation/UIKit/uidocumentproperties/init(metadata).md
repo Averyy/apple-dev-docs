@@ -22,7 +22,7 @@ init(metadata: LPLinkMetadata)
 - (instancetype) initWithMetadata:(LPLinkMetadata *) metadata;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t have a URL backing your document, create a metadata object manually to initialize a document properties object.
 

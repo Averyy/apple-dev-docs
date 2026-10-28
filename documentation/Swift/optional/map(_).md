@@ -21,11 +21,11 @@ Evaluates the given closure when this `Optional` instance is not `nil`, passing 
 func map<E, U>(_ transform: (Wrapped) throws(E) -> U) throws(E) -> U? where E : Error, U : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The result of the given closure. If this instance is `nil`, returns `nil`.
 
-#### Discussion
+## Discussion
 
 Use the `map` method with a closure that returns a non-optional value. This example performs an arithmetic operation on an optional integer.
 

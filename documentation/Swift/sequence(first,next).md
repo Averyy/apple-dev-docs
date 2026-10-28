@@ -21,11 +21,11 @@ Returns a sequence formed from `first` and repeated lazy applications of `next`.
 func sequence<T>(first: T, next: @escaping (T) -> T?) -> UnfoldFirstSequence<T>
 ```
 
-#### Return Value
+## Return Value
 
 A sequence that starts with `first` and continues with every value returned by passing the previous element to `next`.
 
-#### Discussion
+## Discussion
 
 The first element in the sequence is always `first`, and each successive element is the result of invoking `next` with the previous element. The sequence ends when `next` returns `nil`. If `next` never returns `nil`, the sequence is infinite.
 

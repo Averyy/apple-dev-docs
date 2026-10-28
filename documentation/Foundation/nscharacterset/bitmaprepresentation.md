@@ -25,7 +25,7 @@ var bitmapRepresentation: Data { get }
 @property (copy, readonly) NSData * bitmapRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 This format is suitable for saving to a file or otherwise transmitting or archiving.
 

@@ -24,7 +24,7 @@ case hertz
 kAudioUnitParameterUnit_Hertz
 ```
 
-#### Discussion
+## Discussion
 
 Absolute frequency or pitch in cycles per second.
 

@@ -20,7 +20,7 @@ let kSecCFErrorPattern: CFString
 extern CFStringRef const kSecCFErrorPattern;
 ```
 
-#### Discussion
+## Discussion
 
 A resource specification is an information property list (`Info.plist` file) that says which files are resources and which are not. This error is returned if any part of the resource specification can’t be parsed.
 

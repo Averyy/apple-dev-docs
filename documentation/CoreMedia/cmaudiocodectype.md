@@ -25,7 +25,7 @@ typealias CMAudioCodecType = FourCharCode
 typedef FourCharCode CMAudioCodecType;
 ```
 
-#### Discussion
+## Discussion
 
 Certain codec types are also audio formats.
 

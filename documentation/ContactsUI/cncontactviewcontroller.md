@@ -31,7 +31,7 @@ class CNContactViewController
 @interface CNContactViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 Present a `CNContactViewController` object when you want to display information about one of the user’s contacts. At creation time, you specify the type of contact you want to display: new, unknown, or existing.
 

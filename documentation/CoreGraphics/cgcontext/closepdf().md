@@ -25,7 +25,7 @@ func closePDF()
 extern void CGPDFContextClose(CGContextRef context);
 ```
 
-#### Discussion
+## Discussion
 
 After closing the context, all pending data is written to the context destination, and the PDF file is completed. No additional data can be written to the destination context after the PDF document is closed.
 

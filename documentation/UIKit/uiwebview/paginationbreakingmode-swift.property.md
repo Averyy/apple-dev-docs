@@ -21,7 +21,7 @@ var paginationBreakingMode: UIWebView.PaginationBreakingMode { get set }
 @property (nonatomic) UIWebPaginationBreakingMode paginationBreakingMode;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines whether certain CSS properties regarding column- and page-breaking are honored or ignored. When this property is set to [`UIWebView.PaginationBreakingMode.column`](./paginationbreakingmode-swift.enum/column.md), the content respects the CSS properties related to column-breaking in place of page-breaking.
 

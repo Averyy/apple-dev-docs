@@ -19,7 +19,7 @@ var allowsToolTipsWhenApplicationIsInactive: Bool { get set }
 @property BOOL allowsToolTipsWhenApplicationIsInactive;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the window can display tooltips even when the application is in the background; otherwise, [`false`](../../Swift/false.md). The default is [`false`](../../Swift/false.md). Changing the value of this property does not take effect until the window changes to an active state.
 

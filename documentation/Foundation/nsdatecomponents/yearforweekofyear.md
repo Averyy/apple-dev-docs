@@ -25,7 +25,7 @@ var yearForWeekOfYear: Int { get set }
 @property NSInteger yearForWeekOfYear;
 ```
 
-#### Discussion
+## Discussion
 
 The Gregorian calendar defines a week to have 7 days, and a year to have 365 days, or 366 in a leap year. However, neither 365 or 366 divide evenly into a 7-day week, so it is often the case that the last week of a year ends on a day in the next year, and the first week of a year begins in the preceding year. To reconcile this, ISO 8601 defines a week-numbering year, consisting of either 52 or 53 full weeks (364 or 371 days), such that the first week of a year is designated to be the week containing the first Thursday of the year. For a given date, the [`weekOfYear`](./weekofyear.md) property indicates which week the date falls in, and [`yearForWeekOfYear`](./yearforweekofyear.md) provides the corresponding week-numbering year.
 

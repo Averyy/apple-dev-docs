@@ -25,11 +25,11 @@ func componentsToDisplay(forPath path: String) -> [String]?
 - (NSArray<NSString *> *) componentsToDisplayForPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSString`](../nsstring.md) objects representing the user-visible (for the Finder, Open and Save panels, and so on) components of `path`. Returns `nil` if path does not exist.
 
-#### Discussion
+## Discussion
 
 These components cannot be used for path operations and are only suitable for display to the user.
 

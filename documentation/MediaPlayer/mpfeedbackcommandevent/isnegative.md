@@ -25,7 +25,7 @@ var isNegative: Bool { get }
 @property (nonatomic, readonly, getter=isNegative) BOOL negative;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the designated element has a negative operation performed on the element. The performance of the `negative` command varies depending on the element it is referencing. For example, a `negative` command for a bookmark indicates that the bookmark should be removed. However, a `negative` command for a Like command could just lower the frequency that the designated element is played. This behavior differs from a Dislike command, which would put the designated element on a deny list and never play it again.
 

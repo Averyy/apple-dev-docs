@@ -25,7 +25,7 @@ var region: CGRect { get }
 @property (nonatomic, readonly) CGRect region;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This will contain but may be larger than the rect returned by ‘roiCallback’.
 

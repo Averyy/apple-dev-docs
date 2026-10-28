@@ -18,7 +18,7 @@ An error code that indicates the system extension lacks a required entitlement.
 static var missingEntitlement: OSSystemExtensionError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The app must have the [`System Extension Entitlement`](../../BundleResources/entitlements/com.apple.developer.system-extension.install.md) to activate or deactivate system extensions.
 

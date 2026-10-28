@@ -15,7 +15,7 @@ Removes a tile overlay from the map.
 removeTileOverlay(tileOverlay: TileOverlay): TileOverlay;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the tile overlay.
 

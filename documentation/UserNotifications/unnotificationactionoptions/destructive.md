@@ -28,7 +28,7 @@ UNNotificationActionOptionDestructive
 
 - [Declaring your actionable notification types](../declaring-your-actionable-notification-types.md)
 
-#### Discussion
+## Discussion
 
 Use this option for actions that delete user data or change the app irrevocably. The action button is displayed with special highlighting to indicate that it performs a destructive task.
 

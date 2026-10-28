@@ -23,11 +23,11 @@ init(radius: Float, inclination: Angle2DFloat, azimuth: Angle2DFloat)
 static SPSphericalCoordinates3DFloat SPSphericalCoordinates3DFloatMake(float radius, SPAngleFloat inclination, SPAngleFloat azimuth);
 ```
 
-#### Return Value
+## Return Value
 
 A new point.
 
-#### Discussion
+## Discussion
 
 Creates a single-precision spherical coordinates structure.
 

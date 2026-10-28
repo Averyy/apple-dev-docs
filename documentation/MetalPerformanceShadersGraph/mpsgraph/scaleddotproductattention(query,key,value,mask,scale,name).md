@@ -24,11 +24,11 @@ func scaledDotProductAttention(query queryTensor: MPSGraphTensor, key keyTensor:
 - (MPSGraphTensor *) scaledDotProductAttentionWithQueryTensor:(MPSGraphTensor *) queryTensor keyTensor:(MPSGraphTensor *) keyTensor valueTensor:(MPSGraphTensor *) valueTensor maskTensor:(MPSGraphTensor *) maskTensor scale:(float) scale name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 SDPA Op computes attention by computing softmax(scale * QK^T + M)V. queryTensor Q with shape [B, Hq, Nq, F] and keyTensor K with shape [B, Hq, Nkv, F], with Q’s H dimension expandable to satisfy matmul QK^T. maskTensor M’s shape should be broadcast compatible to satisfy (QK^T + M). valueTensor V with shape [B, Hv, Nkv, F] should satisfy the matmul (QK^T + M)V.
 

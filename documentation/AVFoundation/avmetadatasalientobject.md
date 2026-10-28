@@ -23,7 +23,7 @@ class AVMetadataSalientObject
 @interface AVMetadataSalientObject : AVMetadataObject
 ```
 
-#### Overview
+## Overview
 
 This object is an immutable type that describes the various features of the salient object in a picture.
 

@@ -21,7 +21,7 @@ Returns the spherical linear interpolation along either the shortest or the long
 static func slerp(from: Rotation3D, to: Rotation3D, t: Double, along path: Rotation3D.SlerpPath = .shortest) -> Rotation3D
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation. When `t = 0.0`, the result is the `from` rotation. When `t = 1.0`, the result is the `to` rotation. For any other value of `t`, the result is a spherical linear interpolation between the two rotations.
 

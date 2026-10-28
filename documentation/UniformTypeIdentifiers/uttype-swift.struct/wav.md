@@ -21,7 +21,7 @@ A type that represents data in Microsoft Waveform Audio File Format.
 static var wav: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.microsoft.waveform-audio`.
 

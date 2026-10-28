@@ -21,7 +21,7 @@ class func throttleIndicatorContents(size: CGSize, controller: TCTouchController
 + (TCControlContents *) throttleIndicatorContentsOfSize:(CGSize) size controller:(TCTouchController *) controller;
 ```
 
-#### Return Value
+## Return Value
 
 The `TCControlContents` for the throttle indicator.
 

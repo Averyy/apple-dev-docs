@@ -24,7 +24,7 @@ func record(_ issue: XCTIssueReference)
 - (void) recordIssue:(XCTIssue *) issue;
 ```
 
-#### Discussion
+## Discussion
 
 The test run records a failure or other issue during test execution with this method. Override to customize the issue, and call `super` unless you want to suppress the issue.
 

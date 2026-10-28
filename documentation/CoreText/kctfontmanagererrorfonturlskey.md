@@ -23,7 +23,7 @@ let kCTFontManagerErrorFontURLsKey: CFString
 extern CFStringRef const kCTFontManagerErrorFontURLsKey;
 ```
 
-#### Discussion
+## Discussion
 
 User info key to be used with CFError references returned from registration functions. The value associated with this key in the user info dictionary of a CFError object is a CFArray of font URLs that failed with the given error.
 

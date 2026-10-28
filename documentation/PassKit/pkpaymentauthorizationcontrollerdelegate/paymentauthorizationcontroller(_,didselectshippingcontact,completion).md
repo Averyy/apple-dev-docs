@@ -34,7 +34,7 @@ optional func paymentAuthorizationController(_ controller: PKPaymentAuthorizatio
 - (void) paymentAuthorizationController:(PKPaymentAuthorizationController *) controller didSelectShippingContact:(PKContact *) contact completion:(void (^)(PKPaymentAuthorizationStatus status, NSArray<PKShippingMethod *> *shippingMethods, NSArray<PKPaymentSummaryItem *> *summaryItems)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to update the available shipping methods and, if a shipping method has been selected, the current shipping cost.
 

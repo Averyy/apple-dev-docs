@@ -17,7 +17,7 @@ This property provides a readable representation suitable for logging and debugg
 var description: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 When the SSID can be converted to UTF-8 text, it displays the text in quotes. Otherwise, it shows the raw bytes as hexadecimal values.
 

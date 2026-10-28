@@ -16,7 +16,7 @@ Creates an insight request for the given insight type.
 static func request(schema: Self.SchemaVersion, modelVersion: InsightEvaluator.ModelVersion = .current) -> InsightEvaluator.InsightRequest<Self>
 ```
 
-#### Return Value
+## Return Value
 
 An [`InsightEvaluator.InsightRequest`](../insightevaluator/insightrequest.md) to incorporate into an [`InsightEvaluator.InsightContext`](../insightevaluator/insightcontext.md) that you can use to make an evaluation request.
 

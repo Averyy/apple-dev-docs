@@ -19,7 +19,7 @@ convenience init(windowNibPath: String, owner: Any)
 - (instancetype) initWithWindowNibPath:(NSString *) windowNibPath owner:(id) owner;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method if your nib file is at a fixed location (which is not inside either the file’s owner’s class’s bundle or in the application’s main bundle). The default initialization turns on cascading, sets the [`shouldCloseDocument`](./shouldclosedocument.md) property to [`false`](../../Swift/false.md), and sets the autosave name for the window’s frame to an empty string.
 

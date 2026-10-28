@@ -22,7 +22,7 @@ class TKSmartCardTokenRegistrationManager
 @interface TKSmartCardTokenRegistrationManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 `Registered smartcard` keeps its itself accessible via Keychain and system will automatically invoke an NFC slot when a cryptographic operation is required and asks to provide the registered card.
 

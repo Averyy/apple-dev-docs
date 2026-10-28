@@ -23,7 +23,7 @@ let CSSearchableItemActivityIdentifier: String
 extern NSString * const CSSearchableItemActivityIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this key to access the unique identifier for the searchable item from the [`userInfo`](../Foundation/nsuseractivity/userinfo.md) dictionary of a [`NSUserActivity`](../Foundation/nsuseractivity.md) object.
 

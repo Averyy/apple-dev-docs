@@ -22,7 +22,7 @@ init(delegate: (any UIPointerInteractionDelegate)?)
 - (instancetype) initWithDelegate:(id<UIPointerInteractionDelegate>) delegate;
 ```
 
-#### Discussion
+## Discussion
 
 If you create a `UIPointerInteraction` without a delegate by passing `nil` to the initializer, UIKit automatically applies a pointer effect it deems appropriate to the view. Initializing with `nil` is the equivalent of creating a `UIPointerStyle` with [`UIPointerEffect.automatic(_:)`](../uipointereffect-swift.enum/automatic%28_%29.md). Based on the view’s appearance, `.automatic` transforms into one of the concrete effects (`.highlight`, `.lift`, `.hover`).
 

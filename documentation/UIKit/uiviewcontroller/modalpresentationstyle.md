@@ -23,7 +23,7 @@ var modalPresentationStyle: UIModalPresentationStyle { get set }
 @property (nonatomic, assign) UIModalPresentationStyle modalPresentationStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Presentation style defines how the system presents a modal view controller. The system uses this value only in regular-width size classes. In compact-width size classes, some styles take on the behavior of other styles. You can influence this behavior by implementing the [`adaptivePresentationStyle(for:traitCollection:)`](../uiadaptivepresentationcontrollerdelegate/adaptivepresentationstyle%28for,traitcollection%29.md) method.
 

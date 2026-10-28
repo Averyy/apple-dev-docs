@@ -12,7 +12,7 @@ IOPMPowerFlags currentCapability(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the `capabilityFlags` field for the current power state in the power state array.
 

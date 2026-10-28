@@ -25,7 +25,7 @@ static let tactileMinimal: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicTactileMinimal;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this characteristic is `public.haptics.minimal`. Query the [`hasMediaCharacteristic(_:)`](../avassettrack/hasmediacharacteristic%28_%29.md) method of [`AVAssetTrack`](../avassettrack.md) or the [`hasMediaCharacteristic(_:)`](../avmediaselectionoption/hasmediacharacteristic%28_%29.md) of [`AVMediaSelectionOption`](../avmediaselectionoption.md) to determine whether the media contains this characteristic.
 

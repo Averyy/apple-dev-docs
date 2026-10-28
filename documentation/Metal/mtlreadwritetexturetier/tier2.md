@@ -24,7 +24,7 @@ case tier2
 MTLReadWriteTextureTier2
 ```
 
-#### Discussion
+## Discussion
 
 Tier 2 read-write textures support the following pixel formats (in addition to [`MTLReadWriteTextureTier.tier1`](./tier1.md)):
 

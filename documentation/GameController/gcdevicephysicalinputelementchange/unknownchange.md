@@ -28,7 +28,7 @@ GCDevicePhysicalInputElementUnknownChange
 
 - [Handling input events](../handling-input-events.md)
 
-#### Discussion
+## Discussion
 
 This occurs if Game Controller removes older input states from the queue.
 

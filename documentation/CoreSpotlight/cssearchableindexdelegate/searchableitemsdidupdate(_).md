@@ -27,7 +27,7 @@ optional func searchableItemsDidUpdate(_ items: [CSSearchableItem])
 
 - [Generating summary and priority data for indexed items](../generating-summary-and-priority-data-for-indexed-items.md)
 
-#### Discussion
+## Discussion
 
 When the system updates properties of your searchable item’s [`CSSearchableItemAttributeSet`](../cssearchableitemattributeset.md), it calls this method to notify you that the attributes changed. For example, it calls this method when summary or priority information from Apple Intelligence becomes available. For more information, see [Generating summary and priority data for indexed items](../generating-summary-and-priority-data-for-indexed-items.md).
 

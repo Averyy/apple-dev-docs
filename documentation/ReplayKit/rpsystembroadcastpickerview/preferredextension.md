@@ -24,7 +24,7 @@ var preferredExtension: String? { get set }
 @property (nonatomic, strong, nullable) NSString * preferredExtension;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to the bundle identifier of a broadcast extension to show only that broadcast provider in the broadcast picker. Set the property to `nil`, which is the default value, to show all broadcast providers available on the device.
 

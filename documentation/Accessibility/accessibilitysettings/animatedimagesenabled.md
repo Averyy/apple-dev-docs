@@ -21,7 +21,7 @@ A Boolean value that indicates whether the system setting for playing animated i
 static var animatedImagesEnabled: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the system setting for Animated Images is on; otherwise, [`false`](../../Swift/false.md).
 

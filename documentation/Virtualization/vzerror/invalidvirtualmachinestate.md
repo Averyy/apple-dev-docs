@@ -15,7 +15,7 @@ An invalid state error.
 static var invalidVirtualMachineState: VZError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when the virtual machine is in the wrong state for the current operation. For example, you might receive this error when you attempt to interact with a virtual machine that’s stopped or paused.
 

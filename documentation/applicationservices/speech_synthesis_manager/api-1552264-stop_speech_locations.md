@@ -4,7 +4,7 @@
 
 Locations that indicate where speech should be paused or stopped.
 
-#### Overview
+## Overview
 
 See the functions [`PauseSpeechAt(_:_:)`](../api-1461174-pausespeechat.md) and [`StopSpeechAt(_:_:)`](../api-1459780-stopspeechat.md) for more information.
 

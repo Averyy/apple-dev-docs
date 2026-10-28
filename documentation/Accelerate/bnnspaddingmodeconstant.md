@@ -25,7 +25,7 @@ var BNNSPaddingModeConstant: BNNSPaddingMode { get }
 BNNSPaddingModeConstant
 ```
 
-#### Discussion
+## Discussion
 
 For example, given the following padding size and input:
 

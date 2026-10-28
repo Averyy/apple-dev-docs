@@ -30,11 +30,11 @@ func downloadTask(with request: URLRequest) -> URLSessionDownloadTask
 - [Downloading files from websites](../downloading-files-from-websites.md)
 - [Downloading files in the background](../downloading-files-in-the-background.md)
 
-#### Return Value
+## Return Value
 
 The new session download task.
 
-#### Discussion
+## Discussion
 
 By creating a task based on a request object, you can tune various aspects of the task’s behavior, including the cache policy and timeout interval.
 

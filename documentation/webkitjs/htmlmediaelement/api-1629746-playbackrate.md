@@ -16,7 +16,7 @@ The speed that the media resource is playing.
 attribute unrestricted double playbackRate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a multiple of the media resource’s intrinsic speed. If set to `0.0`, a `NOT_SUPPORTED_ERR` DOM exception is raised. The default value is `1.0`. Use this property to create custom controls for playback rate. Values greater than `1.0` fast-forward media and values less than `0.0` rewind. This property can not be set for HTML5 audio/video elements on iOS.
 

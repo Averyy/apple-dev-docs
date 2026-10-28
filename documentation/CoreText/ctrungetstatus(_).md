@@ -25,11 +25,11 @@ func CTRunGetStatus(_ run: CTRun) -> CTRunStatus
 extern CTRunStatus CTRunGetStatus(CTRunRef run);
 ```
 
-#### Return Value
+## Return Value
 
 The run’s status.
 
-#### Discussion
+## Discussion
 
 Runs have status that can be used to expedite certain operations. Knowing the direction and ordering of a run’s glyphs can aid in string index analysis, whereas knowing whether the positions reference the identity text matrix can avoid expensive comparisons. This status is provided as a convenience, because this information is not strictly necessary but can be helpful in some circumstances.
 

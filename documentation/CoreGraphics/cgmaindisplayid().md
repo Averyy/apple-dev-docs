@@ -20,11 +20,11 @@ func CGMainDisplayID() -> CGDirectDisplayID
 extern CGDirectDisplayID CGMainDisplayID();
 ```
 
-#### Return Value
+## Return Value
 
 The display ID assigned to the main display.
 
-#### Discussion
+## Discussion
 
 The main display is the display with its screen location at (0,0) in the global display coordinate space. In a system without display mirroring, the display with the menu bar is typically the main display.
 

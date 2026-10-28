@@ -25,7 +25,7 @@ func copyParameterData(buffer: any MTLBuffer, offset: Int)
 - (void) copyParameterDataToBuffer:(id<MTLBuffer>) buffer offset:(NSUInteger) offset;
 ```
 
-#### Discussion
+## Discussion
 
 To convert coordinate values inside your shader, pass the rate map data into the shader in an [`MTLBuffer`](../mtlbuffer.md) instance. The [`parameterDataSizeAndAlign`](./parameterdatasizeandalign.md) property provides the size and alignment requirements for the buffer.
 

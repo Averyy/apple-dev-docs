@@ -23,11 +23,11 @@ func handleOutboundDataComplete(for flow: NEFilterFlow) -> NEFilterDataVerdict
 - (NEFilterDataVerdict *) handleOutboundDataCompleteForFlow:(NEFilterFlow *) flow;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NEFilterDataVerdict`](../nefilterdataverdict.md) object indicating how the system should handle the flow of network content.
 
-#### Discussion
+## Discussion
 
 The system calls this method after all of the outbound data for a flow of network content has been given to the Filter Data Provider.
 

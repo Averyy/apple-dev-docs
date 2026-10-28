@@ -26,11 +26,11 @@ func padding(_ edges: Edge.Set = .all, _ length: CGFloat? = nil) -> some View
 
 - [Laying out a simple view](../laying-out-a-simple-view.md)
 
-#### Return Value
+## Return Value
 
 A view that’s padded by the specified amount on the specified edges.
 
-#### Discussion
+## Discussion
 
 Use this modifier to add a specified amount of padding to one or more edges of the view. Indicate the edges to pad by naming either a single value from [`Edge.Set`](../edge/set.md), or by specifying an [`OptionSet`](../../Swift/optionset.md) that contains edge values:
 

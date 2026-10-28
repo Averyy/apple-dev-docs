@@ -25,7 +25,7 @@ static var noFunction: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 You attempted a system call that isn’t available on this system.
 

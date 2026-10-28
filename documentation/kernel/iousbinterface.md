@@ -17,7 +17,7 @@ An object that represents an interface of a device on the USB bus.
 class IOUSBInterface : IOService
 ```
 
-#### Overview
+## Overview
 
 Use this class to find an interface’s pipes and read its associated descriptors.
 

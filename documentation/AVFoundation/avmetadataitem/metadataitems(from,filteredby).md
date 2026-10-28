@@ -25,7 +25,7 @@ class func metadataItems(from metadataItems: [AVMetadataItem], filteredBy metada
 + (NSArray<AVMetadataItem *> *) metadataItemsFromArray:(NSArray<AVMetadataItem *> *) metadataItems filteredByMetadataItemFilter:(AVMetadataItemFilter *) metadataItemFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The filtered array of metadata items.
 

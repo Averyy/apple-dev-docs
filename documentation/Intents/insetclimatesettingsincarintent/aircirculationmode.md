@@ -32,7 +32,7 @@ var airCirculationMode: INCarAirCirculationMode { get }
 @property (atomic, assign, readonly) INCarAirCirculationMode airCirculationMode;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine whether the user wants fresh air or recirculated air. The value of this property is [`INCarAirCirculationMode.unknown`](../incaraircirculationmode/unknown.md) when the user modified a different climate control setting.
 

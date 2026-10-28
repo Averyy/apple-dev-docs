@@ -16,7 +16,7 @@ Completes all async requests made when getting or setting a report.
 virtual void CompleteReport(OSAction *action, IOReturn status, uint32_t actualByteCount);
 ```
 
-#### Discussion
+## Discussion
 
 Call this method upon completion of the [`getReport`](./getreport.md) and [`setReport`](./setreport.md) methods.
 

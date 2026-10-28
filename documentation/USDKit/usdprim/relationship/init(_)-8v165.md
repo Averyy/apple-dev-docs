@@ -20,7 +20,7 @@ Casts a property handle to a relationship handle.
 init?(_ object: USDPrim.Property)
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if the property is not a relationship.
 

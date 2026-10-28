@@ -20,15 +20,15 @@ class func namespace(withName name: String, stringValue: String) -> Any
 + (id) namespaceWithName:(NSString *) name stringValue:(NSString *) stringValue;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSXMLNode` object of kind [`XMLNode.Kind.namespace`](./kind-swift.enum/namespace.md) or `nil` if the object couldn’t be created.
 
-#### Discussion
+## Discussion
 
 The equivalent namespace declaration in XML markup is `xmlns:``name``="``value``"`.
 
-##### Special Considerations
+### Special Considerations
 
 Applications linked on macOS 10.6 or later will throw an exception if the `name` parameter is `nil`.
 

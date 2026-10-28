@@ -32,7 +32,7 @@ var contactRelations: [CNLabeledValue<CNContactRelation>] { get set }
 @property (atomic, copy) NSArray<CNLabeledValue<CNContactRelation *> *> * contactRelations;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an array of [`CNLabeledValue`](../cnlabeledvalue.md) objects, each of which has a label and a [`CNContactRelation`](../cncontactrelation.md) value.
 

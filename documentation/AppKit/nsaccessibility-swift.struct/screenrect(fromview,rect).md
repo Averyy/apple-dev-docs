@@ -19,7 +19,7 @@ static func screenRect(fromView parentView: NSView, rect frame: NSRect) -> NSRec
 extern NSRect NSAccessibilityFrameInView(NSView *parentView, NSRect frame);
 ```
 
-#### Discussion
+## Discussion
 
 Given a frame in the specified view’s coordinates, it returns the same frame in the screen’s coordinates.
 

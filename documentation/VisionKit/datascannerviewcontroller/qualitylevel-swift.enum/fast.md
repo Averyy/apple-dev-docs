@@ -21,7 +21,7 @@ case fast
 
 - [Scanning data with the camera](../../scanning-data-with-the-camera.md)
 
-#### Discussion
+## Discussion
 
 This quality level may fail to recognize smaller text and barcodes.
 

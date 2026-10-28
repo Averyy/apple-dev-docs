@@ -19,7 +19,7 @@ Modes that describe how materials using created `CustomMaterial.Program` will in
 var lightingModel: CustomMaterial.LightingModel
 ```
 
-#### Discussion
+## Discussion
 
 Default value is true.
 

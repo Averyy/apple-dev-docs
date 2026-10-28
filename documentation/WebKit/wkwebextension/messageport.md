@@ -24,7 +24,7 @@ class MessagePort
 @interface WKWebExtensionMessagePort : NSObject
 ```
 
-#### Overview
+## Overview
 
 Contains properties and methods to handle message exchanges with a web extension.
 

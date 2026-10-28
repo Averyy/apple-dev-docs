@@ -21,7 +21,7 @@ final class FoveatedStreamingSession
 - [Analyzing the performance of a foveated streaming session](./analyzing-the-performance-of-a-foveated-streaming-session.md)
 - [Streaming a CloudXR application to Apple Vision Pro with foveation](./streaming-a-cloudxr-application-to-apple-vision-pro-with-foveation.md)
 
-#### Overview
+## Overview
 
 Use `FoveatedStreamingSession` to establish and manage streaming connections from Apple Vision Pro to local or remote endpoints. The session handles connection life cycle, monitors streaming status, and provides access to bidirectional message channels for custom data exchange.
 

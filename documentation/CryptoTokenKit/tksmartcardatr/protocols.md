@@ -25,7 +25,7 @@ var protocols: [NSNumber] { get }
 @property (nonatomic, readonly) NSArray<NSNumber *> * protocols;
 ```
 
-#### Discussion
+## Discussion
 
 Each element in the returned array is an `NSNumber` object containing an `NSUInteger` value corresponding to a member of the [`TKSmartCardProtocol`](../tksmartcardprotocol.md) enumeration.
 

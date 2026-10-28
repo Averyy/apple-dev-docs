@@ -24,7 +24,7 @@ var equationCoefficients: simd_float3 { get }
 @property (nonatomic, readonly) simd_float3 equationCoefficients;
 ```
 
-#### Discussion
+## Discussion
 
 This equation describes the parabola on which the detected contour is traveling. The equation and the projected points get refined over time.
 

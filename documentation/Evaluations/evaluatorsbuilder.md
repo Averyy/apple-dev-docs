@@ -22,7 +22,7 @@ A result builder that enables declarative evaluator lists.
 struct EvaluatorsBuilder<Sample, Subject> where Sample : SampleProtocol, Subject : EvaluationSubject
 ```
 
-#### Overview
+## Overview
 
 Apply this builder to the `evaluators` property to remove the need for explicit array literals and type annotations:
 

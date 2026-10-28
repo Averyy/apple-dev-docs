@@ -23,7 +23,7 @@ func removeMotionEffect(_ effect: UIMotionEffect)
 - (void) removeMotionEffect:(UIMotionEffect *) effect;
 ```
 
-#### Discussion
+## Discussion
 
 Any affected presentation values animate to their post-removal values using the present [`UIView`](../uiview.md) animation context.
 

@@ -25,7 +25,7 @@ func enableManualRenderingMode(_ mode: AVAudioEngineManualRenderingMode, format 
 - (BOOL) enableManualRenderingMode:(AVAudioEngineManualRenderingMode) mode format:(AVAudioFormat *) pcmFormat maximumFrameCount:(AVAudioFrameCount) maximumFrameCount error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to configure the engine to render in response to requests from the client. You must stop the engine before calling this method. The render format must be a PCM format and match the format of the rendering buffer.
 

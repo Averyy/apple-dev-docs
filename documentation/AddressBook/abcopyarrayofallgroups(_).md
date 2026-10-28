@@ -19,7 +19,7 @@ func ABCopyArrayOfAllGroups(_ addressBook: ABAddressBookRef!) -> Unmanaged<CFArr
 extern CFArrayRefABCopyArrayOfAllGroups(ABAddressBookRef addressBook);
 ```
 
-#### Return Value
+## Return Value
 
 An array of ABGroup objects representing all the groups in the Address Book database. If the database doesn’t contain any groups, the function returns an empty array. You are responsible for releasing this object.
 

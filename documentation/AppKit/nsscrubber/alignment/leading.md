@@ -19,7 +19,7 @@ case leading
 NSScrubberAlignmentLeading
 ```
 
-#### Discussion
+## Discussion
 
 Leading alignment depends on the writing direction of the system language. Alignment is to the left for left-to-right languages, and to the right for right-to-left languages.
 

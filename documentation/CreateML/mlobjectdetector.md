@@ -19,7 +19,7 @@ struct MLObjectDetector
 
 - [Building an object detector data source](./building-an-object-detector-data-source.md)
 
-#### Overview
+## Overview
 
 Use an [`MLObjectDetector`](./mlobjectdetector.md) task to train a machine learning model that can identify items, or *objects*, within an image. For example, you can train an object detector to recognize breakfast items on a table, such as bananas, croissants, and beverages.
 

@@ -5,7 +5,7 @@
 
 The layout manager’s current layout options.
 
-#### Overview
+## Overview
 
 **Swift**:
 

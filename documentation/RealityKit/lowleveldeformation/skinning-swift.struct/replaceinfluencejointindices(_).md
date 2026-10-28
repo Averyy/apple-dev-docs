@@ -18,11 +18,11 @@ Fills the influence joint index buffer using the given closure.    /// After the
 func replaceInfluenceJointIndices<R>(_ body: @_lifetime(0: copy 0) (inout MutableRawSpan) -> R) throws -> R where R : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by `body`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: If any index is outside `[0, skinning.jointTransformCount)`.
 

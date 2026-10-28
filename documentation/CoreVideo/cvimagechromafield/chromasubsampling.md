@@ -21,7 +21,7 @@ Original format of subsampled data in the image buffer before conversion to 422/
 enum ChromaSubsampling
 ```
 
-#### Overview
+## Overview
 
 Note: To use these values, ensure that the image buffer data was converted to 4:2:2 format using simple pixel replication.
 

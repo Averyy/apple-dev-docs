@@ -20,7 +20,7 @@ Encodes a consumer barrier on work you commit to the same command queue.
 - (void) barrierAfterQueueStages:(MTLStages) afterQueueStages beforeStages:(MTLStages) beforeStages visibilityOptions:(MTL4VisibilityOptions) visibilityOptions;
 ```
 
-#### Discussion
+## Discussion
 
 Encode a barrier that guarantees that any subsequent work you encode in the current command encoder that corresponds to the `beforeStages` stages doesn’t proceed until Metal completes all work prior to the current command encoder corresponding to the `afterQueueStages` stages, completes.
 

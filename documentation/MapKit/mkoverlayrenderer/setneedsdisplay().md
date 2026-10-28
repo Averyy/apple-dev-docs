@@ -24,7 +24,7 @@ func setNeedsDisplay()
 - (void) setNeedsDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 This method causes the entire contents of the overlay to be redrawn during the next update cycle. This method invalidates the overlay regardless of the current zoom scale associated with the map.
 

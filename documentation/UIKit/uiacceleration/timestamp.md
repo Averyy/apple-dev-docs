@@ -12,7 +12,7 @@ The relative time at which the acceleration event occurred.
 @property (nonatomic, readonly) NSTimeInterval timestamp;
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates the time relative to the device CPU time base register. Compare acceleration event timestamps to determine the elapsed time between them. Do not use a timestamp to determine the exact time at which an event occurred.
 

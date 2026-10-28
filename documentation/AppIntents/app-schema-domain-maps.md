@@ -5,7 +5,7 @@
 
 Make your navigation app’s actions available to Apple Intelligence and Siri by adopting schemas for common navigation actions.
 
-#### Overview
+## Overview
 
 The `.maps` domain defines app schemas that provide a structured representation for common navigation actions and content. Apply schemas in the `.maps` domain to make your app’s navigation functionality available to Apple Intelligence and Siri. Each schema defines the requirements for intents, parameters, and results so people get a consistent experience across navigation apps. For example, a person can start a route on different apps that support the [`startNavigation`](./appschema/mapsintent/startnavigation.md) schema with the same phrases.
 
@@ -24,7 +24,7 @@ The following table maps example phrases that apply to each schema:
 
 For more information about making your app’s actions available to Apple Intelligence and Siri, see [Apple Intelligence and Siri AI](./apple-intelligence-and-siri-ai.md).
 
-#### Map navigation use-case group
+## Map navigation use-case group
 
 A *use-case group* is a set of related schemas that share a single purpose. The [`startNavigation`](./appschema/mapsintent/startnavigation.md) schema and an [`IntentValueQuery`](./intentvaluequery.md) that imports [`place`](./appschema/mapsentity/place.md) values form a use-case group for navigation. Xcode reports a build warning if your app supports one without the other.
 

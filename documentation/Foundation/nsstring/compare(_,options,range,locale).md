@@ -25,11 +25,11 @@ func compare(_ string: String, options mask: NSString.CompareOptions = [], range
 - (NSComparisonResult) compare:(NSString *) string options:(NSStringCompareOptions) mask range:(NSRange) rangeOfReceiverToCompare locale:(id) locale;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an [`ComparisonResult`](../comparisonresult.md) value that indicates the lexical ordering of a specified range within the receiver and a given string. [`ComparisonResult.orderedAscending`](../comparisonresult/orderedascending.md) if the substring of the receiver given by `range` precedes `aString` in lexical ordering for the locale given in `dict`, [`ComparisonResult.orderedSame`](../comparisonresult/orderedsame.md) if the substring of the receiver and `aString` are equivalent in lexical value, and [`ComparisonResult.orderedDescending`](../comparisonresult/ordereddescending.md) if the substring of the receiver follows `aString`.
 
-#### Discussion
+## Discussion
 
 The `locale` argument affects both equality and ordering algorithms. For example, in some locales, accented characters are ordered immediately after the base; other locales order them after “z”.
 

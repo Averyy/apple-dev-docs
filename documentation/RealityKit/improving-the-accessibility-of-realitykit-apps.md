@@ -5,19 +5,19 @@
 
 Incorporate assistive technologies in your augmented reality app.
 
-#### Overview
+## Overview
 
 To support assistive technologies such as VoiceOver in your RealityKit apps, set the properties on each visible [`Entity`](./entity.md) in your scene. You can configure accessibility in Reality Composer, and in code.
 
 > **Note**: To see an example of accessibility support in a RealityKit app, check out the <doc:[Configuring Collision in RealityKit](./configuring-collision-in-realitykit.md)> sample code project.
 
-##### Configure accessibility in Reality Composer
+### Configure accessibility in Reality Composer
 
 When you create a scene in Reality Composer, you can configure the accessibility properties of your entities right in the properties inspector. Select one or more entities in your scene and click the Accessibility Enabled checkbox in the properties inspector. In the Label field, give the entity a name to be used by assistive technologies. In the Detailed Description field, you can optionally add a more in-depth description.
 
 ![The accessibility portion of Reality Composer’s property inspector, showing the Accessibility Enabled checkbox checked, with two additional fields for providing accessibility information about the selected entity.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/improving-the-accessibility-of-realitykit-apps-1@2x.png)
 
-##### Configure accessibility in code
+### Configure accessibility in code
 
 You can also configure entities to work with assistive technologies in code. To enable accessibility support for an [`Entity`](./entity.md), set its  [`isAccessibilityElement`](./entity/isaccessibilityelement.md) property to `True` and provide a short descriptive name using [`accessibilityLabel`](./entity/accessibilitylabel.md). If you want to provide a more detailed description, set [`accessibilityDescription`](./entity/accessibilitydescription.md).
 

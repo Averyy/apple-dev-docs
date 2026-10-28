@@ -21,11 +21,11 @@ Begins a signposted interval for measuring an animation, and attaches a message.
 func beginAnimationInterval(_ name: StaticString, id: OSSignpostID = .exclusive, _ message: SignpostMetadata) -> OSSignpostIntervalState
 ```
 
-#### Return Value
+## Return Value
 
 The interval state that the signposter derives from the specified `id` parameter.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Don’t create an instance of [`SignpostMetadata`](../signpostmetadata.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
 

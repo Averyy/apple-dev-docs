@@ -25,11 +25,11 @@ init?(src: CGColorSpace, dst: CGColorSpace)
 extern CGColorConversionInfoRefCGColorConversionInfoCreate(CGColorSpaceRef src, CGColorSpaceRef dst);
 ```
 
-#### Return Value
+## Return Value
 
 A color conversion object, or `nil` if no conversion between the specified color spaces is allowed.
 
-#### Discussion
+## Discussion
 
 The source and destination color spaces must be calibrated color spaces (that is, not device-specific or indexed color spaces).
 

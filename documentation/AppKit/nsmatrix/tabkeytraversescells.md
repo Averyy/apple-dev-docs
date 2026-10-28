@@ -19,7 +19,7 @@ var tabKeyTraversesCells: Bool { get set }
 @property BOOL tabKeyTraversesCells;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), pressing the Tab key should advance the key cell to the next selectable cell in the receiver. When the value of this property is [`false`](../../Swift/false.md) or if there aren’t any selectable cells after the current one, the next view in the window becomes key when the user presses the Tab key.
 

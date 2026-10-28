@@ -22,7 +22,7 @@ Displays the person’s current location on the map.
 @preconcurrency struct UserAnnotation<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 Displays the person’s current location using the system styled user location indicator.
 

@@ -15,7 +15,7 @@ The data structure that represents a Game Center leaderboard version v2 inline c
 object GameCenterLeaderboardVersionV2InlineCreate
 ```
 
-#### Overview
+## Overview
 
 - id:
 - relationships:

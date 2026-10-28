@@ -24,7 +24,7 @@ var photoTime: CMTime { get }
 @property (readonly) CMTime photoTime;
 ```
 
-#### Discussion
+## Discussion
 
 To create time-based effects in your [`frameProcessor`](./frameprocessor.md) block, use this property together with the [`duration`](./duration.md) property.
 

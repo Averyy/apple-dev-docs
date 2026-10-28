@@ -21,7 +21,7 @@ Calculates the stereo dot product of two fixed-point 1.15 format vectors.
 void vDSP_dotpr2_s1_15(const short *__A0, vDSP_Stride __IA0, const short *__A1, vDSP_Stride __IA1, const short *__B, vDSP_Stride __IB, short *__C0, short *__C1, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the stereo dot products of two vectors, using the following operation:
 

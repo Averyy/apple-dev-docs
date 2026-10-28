@@ -19,7 +19,7 @@ var NSUserFunctionKey: Int { get }
 NSUserFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

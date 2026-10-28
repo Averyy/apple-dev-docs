@@ -19,11 +19,11 @@ func SecTrustCopyAnchorCertificates(_ anchors: UnsafeMutablePointer<CFArray?>) -
 OSStatus SecTrustCopyAnchorCertificates(CFArrayRef*anchors);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function retrieves the certificates in the system’s store of anchor certificates (see [`SecTrustSetAnchorCertificates(_:_:)`](./sectrustsetanchorcertificates%28_,_%29.md)). You can use the [`SecCertificate`](./seccertificate.md) objects retrieved by this function as input to other functions of this API, such as [`SecTrustCreateWithCertificates(_:_:_:)`](./sectrustcreatewithcertificates%28_,_,_%29.md).
 

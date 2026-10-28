@@ -19,7 +19,7 @@ case naturalFull
 CLKRelativeDateStyleNaturalFull
 ```
 
-#### Discussion
+## Discussion
 
 The text provider breaks the time interval into various components. If there’s enough space, it uses the full word for the units; otherwise, it abbreviates them. For example, it formats 10 hours and 9 minutes as “10 hours 9 minutes”.
 

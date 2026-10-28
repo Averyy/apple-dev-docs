@@ -5,7 +5,7 @@
 
 Create annotations to add indicators and additional details for specific locations on a map.
 
-#### Overview
+## Overview
 
 Annotations work differently in MapKit JS and native MapKit. In native MapKit, there are annotation objects and annotation views. You decide which annotation view to use for a particular annotation by implementing [`mapView(_:viewFor:)`](../MapKit/mkmapviewdelegate/mapview%28_,viewfor%29-8humz.md) in the map’s delegate. In MapKit JS, there’s only the annotation, which is both model and view. You can still customize the look of annotations, but MapKit JS requires that you create annotation views explicitly rather than through a delegate.
 

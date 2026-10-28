@@ -20,11 +20,11 @@ func record(withRecordType inRecordType: String!, name inRecordName: String!, at
 - (ODRecord *) recordWithRecordType:(ODRecordType) inRecordType name:(NSString *) inRecordName attributes:(id) inAttributes error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The requested record.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

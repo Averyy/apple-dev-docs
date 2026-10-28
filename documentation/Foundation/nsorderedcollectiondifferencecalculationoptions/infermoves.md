@@ -25,7 +25,7 @@ static var inferMoves: NSOrderedCollectionDifferenceCalculationOptions { get }
 NSOrderedCollectionDifferenceCalculationInferMoves
 ```
 
-#### Discussion
+## Discussion
 
 When you use the option to infer moves, the difference calculation adds an associated index to change objects to indicate the original positions of the objects.
 

@@ -25,7 +25,7 @@ var ellipsoidalAltitude: CLLocationDistance { get }
 @property (nonatomic, readonly) CLLocationDistance ellipsoidalAltitude;
 ```
 
-#### Discussion
+## Discussion
 
 The [`ellipsoidalAltitude`](./ellipsoidalaltitude.md) property represents the altitude above the WGS84 ellipsoid associated with a location. Use the [`ellipsoidalAltitude`](./ellipsoidalaltitude.md) property when your geodetic application needs an altitude with respect to a standard reference frame. Use [`altitude`](./altitude.md) if your application needs an altitude with respect to the approximate mean sea level.
 

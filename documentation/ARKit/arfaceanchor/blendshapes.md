@@ -20,7 +20,7 @@ var blendShapes: [ARFaceAnchor.BlendShapeLocation : NSNumber] { get }
 @property (nonatomic, strong, readonly) NSDictionary<NSString *,NSNumber *> * blendShapes;
 ```
 
-#### Discussion
+## Discussion
 
 Each key in this dictionary (an [`ARFaceAnchor.BlendShapeLocation`](./blendshapelocation.md) constant) represents one of many specific facial features recognized by ARKit. The corresponding value for each key is a floating point number indicating the current position of that feature relative to its neutral configuration, ranging from `0.0` (neutral) to `1.0` (maximum movement).
 

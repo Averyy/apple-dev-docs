@@ -22,7 +22,7 @@ var dataDetectorTypes: WKDataDetectorTypes { get set }
 @property (nonatomic) WKDataDetectorTypes dataDetectorTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Data detectors add interactivity to web content by creating links for specially formatted text. For example, the `WKDataDetectorTypeLink` type causes the `apple.com` portion of the text “Visit apple.com” to become a link to the Apple website.
 

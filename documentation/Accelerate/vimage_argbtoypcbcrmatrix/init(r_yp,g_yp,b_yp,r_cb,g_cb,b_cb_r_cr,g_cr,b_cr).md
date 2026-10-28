@@ -21,7 +21,7 @@ Creates a 3 x 3 matrix for converting RGB to Y’CbCr.
 init(R_Yp: Float, G_Yp: Float, B_Yp: Float, R_Cb: Float, G_Cb: Float, B_Cb_R_Cr: Float, G_Cr: Float, B_Cr: Float)
 ```
 
-#### Discussion
+## Discussion
 
 The 3 x 3 matrix is given by:
 

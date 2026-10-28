@@ -14,7 +14,7 @@
 void (*PrintProgram)(IOFireWireLibNuDCLPoolRef self);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

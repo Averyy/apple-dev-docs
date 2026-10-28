@@ -19,7 +19,7 @@ optional var imageProperties: [AnyHashable : Any]! { get }
 @property (atomic, copy, readonly) NSDictionary * imageProperties;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains the properties of the image.
 

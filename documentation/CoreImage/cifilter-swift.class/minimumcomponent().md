@@ -28,11 +28,11 @@ class func minimumComponent() -> any CIFilter & CIMinimumComponent
 
 - [Simulating Scratchy Analog Film](../simulating-scratchy-analog-film.md)
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the minimum component filter to an image. The effect applies a preconfigured set of effects that result in the input image becoming grayscale using the minimum RGB color components.
 

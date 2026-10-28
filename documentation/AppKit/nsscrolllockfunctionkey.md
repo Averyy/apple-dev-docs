@@ -19,7 +19,7 @@ var NSScrollLockFunctionKey: Int { get }
 NSScrollLockFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

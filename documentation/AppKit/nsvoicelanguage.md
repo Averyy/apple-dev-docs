@@ -15,7 +15,7 @@ The language of the voice (currently US English only). An `NSString`
 extern NSVoiceAttributeKey const NSVoiceLanguage;
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated: Use [`localeIdentifier`](./nsspeechsynthesizer/voiceattributekey/localeidentifier.md) instead.
 

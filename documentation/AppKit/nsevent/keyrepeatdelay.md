@@ -19,11 +19,11 @@ class var keyRepeatDelay: TimeInterval { get }
 @property (class, readonly) NSTimeInterval keyRepeatDelay;
 ```
 
-#### Return Value
+## Return Value
 
 The delay interval, in seconds.
 
-#### Discussion
+## Discussion
 
 This is a system setting. You can’t change the value by overriding this method.
 

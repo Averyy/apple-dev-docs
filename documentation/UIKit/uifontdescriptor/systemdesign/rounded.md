@@ -24,7 +24,7 @@ static let rounded: UIFontDescriptor.SystemDesign
 extern UIFontDescriptorSystemDesign const UIFontDescriptorSystemDesignRounded;
 ```
 
-#### Discussion
+## Discussion
 
 The returned typeface depends on the system. iOS returns SF Pro Rounded, while watchOS returns SF Compact Rounded.
 

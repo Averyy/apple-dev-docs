@@ -15,11 +15,11 @@ Obtains the next CPU ID in the list of physical processors of the specified memo
 OSStatus MPGetNextCpuID(MPCoherenceID owningCoherenceID, MPCpuID *cpuID);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 By iterating on this function (after calling  [`MPProcessors`](./api-1585778-mpprocessors.md) , for example), you can obtain the IDs of all the processors available on the host computer. Generally, you would only use this function in diagnostic programs.
 

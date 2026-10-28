@@ -20,7 +20,7 @@ var handle: LayerHierarchyHandle { get }
 @property (nonatomic, strong, readonly) BELayerHierarchyHandle * handle;
 ```
 
-#### Discussion
+## Discussion
 
 Get the handle in your extension process, then use XPC to send it to the browser app. In the browser app, add the handle to a [`LayerHierarchyHostingView`](../layerhierarchyhostingview.md).
 

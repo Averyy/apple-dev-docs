@@ -20,11 +20,11 @@ func statusMessage() -> String!
 - (NSString *) statusMessage;
 ```
 
-#### Return Value
+## Return Value
 
 A string indicating the status of an encoding job, or `null` if there is no update about the encoding process.
 
-#### Discussion
+## Discussion
 
 The following code shows an example of an encoder status message:
 

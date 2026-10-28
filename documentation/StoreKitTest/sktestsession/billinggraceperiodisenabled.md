@@ -25,7 +25,7 @@ var billingGracePeriodIsEnabled: Bool { get set }
 @property (nonatomic, assign) BOOL billingGracePeriodEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`. The value of this property has no effect when [`shouldEnterBillingRetryOnRenewal`](./shouldenterbillingretryonrenewal.md) is `false`.
 

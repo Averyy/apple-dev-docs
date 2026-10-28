@@ -15,7 +15,7 @@ The document keywords.
 static let keywords: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSArray`](../../nsarray.md) object containing [`NSString`](../../nsstring.md) objects, containing keywords.
 

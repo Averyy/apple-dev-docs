@@ -22,7 +22,7 @@ struct MTL4BufferRange
 typedef struct MTL4BufferRange { ... } MTL4BufferRange;
 ```
 
-#### Overview
+## Overview
 
 A struct representing a range of a Metal buffer. The offset into the buffer is included in the address. The length is generally optional, which a value of (uint64_t)-1 representing the range from the given address to the end of the buffer. However, providing the length can enable more accurate API validation, especially when sub-allocating ranges of a buffer.
 

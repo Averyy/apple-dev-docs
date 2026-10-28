@@ -26,7 +26,7 @@ var state: NWTCPConnectionState { get }
 @property (nonatomic, readonly) NWTCPConnectionState state;
 ```
 
-#### Discussion
+## Discussion
 
 Use Key-Value Observing (KVO) to monitor the state. Many methods, such as reading and writing on the connection, are only valid when the state is `NWTCPConnectionStateConnected`. For information about KVO, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 

@@ -16,11 +16,11 @@ Returns an `NSConnection` object that communicates using given send and receive 
 + (instancetype) connectionWithReceivePort:(NSPort *) receivePort sendPort:(NSPort *) sendPort;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSConnection` object that communicates using `receivePort` and `sendPort`.
 
-#### Discussion
+## Discussion
 
 See [`initWithReceivePort:sendPort:`](./initwithreceiveport_sendport_.md) for more information.
 

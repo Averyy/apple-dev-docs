@@ -15,7 +15,7 @@ Sends a video frame to all the connected receivers using its tagged buffers repr
 func send(taggedBuffers: [CMTaggedBuffer], presentationTimeStamp: CMTime, frameDuration: CMTime) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: This function throws if anything fails while sending the frame, for example, if the frame has an invalid format or data.
 

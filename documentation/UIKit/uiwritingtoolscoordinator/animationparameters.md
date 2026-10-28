@@ -22,7 +22,7 @@ class AnimationParameters
 @interface UIWritingToolsCoordinatorAnimationParameters : NSObject
 ```
 
-#### Overview
+## Overview
 
 When Writing Tools replaces text in one of your context objects, it provides a `UIWritingToolsCoordinator.AnimationParameters` object for you to use to configure any additional animations. During a Writing Tools session, you hide the text under evaluation and provide a targeted preview of your content. Writing Tools animations changes to that preview, but you might need to provide additional animations for other parts of your view’s content. For example, you might need to animate any layout changes caused by the insertion or removal of text in other parts of your view. Use this object to configure those animations.
 

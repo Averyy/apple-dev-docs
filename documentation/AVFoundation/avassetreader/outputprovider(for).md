@@ -20,7 +20,7 @@ Attaches the output to the reader and returns an output provider for reading sam
 func outputProvider(for output: AVAssetReaderOutput) -> sending AVAssetReaderOutput.Provider<CMReadySampleBuffer<CMSampleBuffer.DynamicContent>>
 ```
 
-#### Return Value
+## Return Value
 
 A reader output provider with an interface for reading sample buffers.
 

@@ -21,7 +21,7 @@ var travelEstimates: CPTravelEstimates? { get }
 @property (nonatomic, strong, readonly, nullable) CPTravelEstimates * travelEstimates;
 ```
 
-#### Discussion
+## Discussion
 
 The travel estimates associated with this route choice provide comprehensive information about the route, including traditional metrics (time and distance) and supplementary information (tolls, energy consumption, etc.).
 

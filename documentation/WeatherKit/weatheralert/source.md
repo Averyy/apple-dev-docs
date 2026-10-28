@@ -21,7 +21,7 @@ The name of the source issuing the weather alert.
 var source: String
 ```
 
-#### Discussion
+## Discussion
 
 This is required for attribution.
 

@@ -24,7 +24,7 @@ var contentLength: Int64 { get set }
 @property (nonatomic) long long contentLength;
 ```
 
-#### Discussion
+## Discussion
 
 Before finishing loading an [`AVAssetResourceLoadingRequest`](../avassetresourceloadingrequest.md) instance, if its [`contentInformationRequest`](../avassetresourceloadingrequest/contentinformationrequest.md) property is not `nil`, set the value of the `contentLength` property to the number of bytes contained by the requested resource.
 

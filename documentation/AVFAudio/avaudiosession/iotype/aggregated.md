@@ -24,7 +24,7 @@ case aggregated
 AVAudioSessionIOTypeAggregated
 ```
 
-#### Discussion
+## Discussion
 
 Use this value if your session uses [`playAndRecord`](../category-swift.struct/playandrecord.md) and requires input and output audio to be presented in the same realtime I/O callback. For example, if your app uses a Remote I/O with both input and output enabled.
 

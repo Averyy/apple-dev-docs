@@ -24,7 +24,7 @@ var formats: [AVCaptureDevice.Format] { get }
 @property (nonatomic, readonly) NSArray<AVCaptureDeviceFormat *> * formats;
 ```
 
-#### Discussion
+## Discussion
 
 A capture device format describes the details of the video, image, or audio parameters of a specific mode of capture. If you require specifying capture settings not covered by a capture session preset, you can set the [`activeFormat`](./activeformat.md) property to any of the formats in this array.
 

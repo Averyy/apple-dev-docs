@@ -16,11 +16,11 @@ Returns an array of elements that contain the parsed data from the HID device’
 virtual OSArray * getElements();
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`IOHIDElement`](../iohidelement.md) objects containing the parsed data from the report.
 
-#### Discussion
+## Discussion
 
 Use this method to get the array of [`IOHIDElement`](../iohidelement.md) objects that contain the data for the most recent device report. Each element contains data for a single aspect of the device’s state. For example, a report from a stylus contains separate elements for the horizontal and vertical position of the stylus, the pressure values, and so on. Use the [`getUsagePage`](../iohidelement/getusagepage.md) and [`getUsage`](../iohidelement/getusage.md) methods of the element to determine the type of information in each element.
 

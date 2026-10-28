@@ -22,7 +22,7 @@ A type that represents the content that you draw on a chart.
 @preconcurrency protocol ChartContent
 ```
 
-#### Overview
+## Overview
 
 You build a [`Chart`](./chart.md) by adding instances that conform to the `ChartContent` protocol to the chart’s `content` closure. The following example adds three explicit [`BarMark`](./barmark.md) instances to a chart:
 
@@ -49,7 +49,7 @@ The chart draws marks that correspond to the instances that you specify:
 
 You can combine any number of marks or types of marks in a single chart by listing them individually as shown in the above example, wrapping them in a [`ForEach`](../SwiftUI/foreach.md), or any combination of these. For some mark types, like [`LineMark`](./linemark.md), you can group the marks into series using the mark’s `series` initialization parameter.
 
-##### Configure chart content
+### Configure chart content
 
 The `ChartContent` protocol provides a set of modifiers that you use to configure the properties of chart content. These behave like SwiftUI view modifiers, except that they act on chart content rather than views. Any of the types that conform to the protocol can use these modifiers. For example, you can add the [`foregroundStyle(_:)`](./chartcontent/foregroundstyle%28_%29.md) modifier to the bar representing the number of spheres in the previous example to make it red:
 

@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: NSCollectionView, layout collecti
 - (NSSize) collectionView:(NSCollectionView *) collectionView layout:(NSCollectionViewLayout *) collectionViewLayout referenceSizeForFooterInSection:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 The size of the footer. Return [`NSZeroSize`](../../Foundation/nszerosize.md) if you do not want a footer added to the section.
 
-#### Discussion
+## Discussion
 
 If you implement this method, the flow layout object calls it to obtain the size of the footer in each section and uses that information to set the size of the corresponding views. If you do not implement this method, the footer size is obtained from the properties of the flow layout object.
 

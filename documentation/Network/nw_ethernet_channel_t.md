@@ -25,7 +25,7 @@ typealias nw_ethernet_channel_t = any OS_nw_ethernet_channel
 typedef NSObject<OS_nw_ethernet_channel> * nw_ethernet_channel_t;
 ```
 
-#### Discussion
+## Discussion
 
 Use Ethernet channels to send and receive custom Ethernet frame types over an interface.
 

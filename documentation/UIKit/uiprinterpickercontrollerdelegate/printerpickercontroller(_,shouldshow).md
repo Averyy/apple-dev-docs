@@ -22,11 +22,11 @@ optional func printerPickerController(_ printerPickerController: UIPrinterPicker
 - (BOOL) printerPickerController:(UIPrinterPickerController *) printerPickerController shouldShowPrinter:(UIPrinter *) printer;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the printer should be displayed or [`false`](../../Swift/false.md) if it should not.
 
-#### Discussion
+## Discussion
 
 Implement this method in your delegate if you want to filter the list of printers displayed by the printer picker interface. You might use this method to display only printers with specific capabilities. The printer picker interface calls this method once for each printer it is preparing to display, so your implementation should perform any required checks and return as quickly as possible. Do not perform any lengthy operations in this method.
 

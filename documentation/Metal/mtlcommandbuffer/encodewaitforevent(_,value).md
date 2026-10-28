@@ -29,7 +29,7 @@ func encodeWaitForEvent(_ event: any MTLEvent, value: UInt64)
 
 - [About synchronization events](../about-synchronization-events.md)
 
-#### Discussion
+## Discussion
 
 This method prevents the GPU from starting the next pass in the command buffer until another command buffer signals `event` (see [`encodeSignalEvent(_:value:)`](./encodesignalevent%28_,value%29.md).
 

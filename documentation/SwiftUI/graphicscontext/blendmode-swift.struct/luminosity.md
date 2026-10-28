@@ -21,7 +21,7 @@ A mode that uses the hue and saturation of the background with the luminance of 
 static var luminosity: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 This mode creates an effect that is inverse to the effect created by the [`color`](./color.md) mode.
 

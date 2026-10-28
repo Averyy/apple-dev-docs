@@ -22,7 +22,7 @@ nonisolated
 init(_ product: Product, prefersPromotionalIcon: Bool = false, @ViewBuilder icon: () -> Icon) where PlaceholderIcon == EmptyView
 ```
 
-#### Discussion
+## Discussion
 
 If `prefersPromotionalIcon` is `true` and the product has a promotional image, the view displays the promotional image instead of the view you provide in `icon`.
 

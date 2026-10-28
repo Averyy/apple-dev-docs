@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, didChangeLocationWithinPageFor frame: 
 - (void) webView:(WebView *) sender didChangeLocationWithinPageForFrame:(WebFrame *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 Typically invoked when the user clicks on an anchor within a page. Additional information about the request can be obtained from the data source of `frame`.
 

@@ -26,7 +26,7 @@ func CMTimebaseGetMaster(_ timebase: CMTimebase) -> CMClockOrTimebase?
 extern CMClockOrTimebaseRefCMTimebaseGetMaster(CMTimebaseRef timebase);
 ```
 
-#### Discussion
+## Discussion
 
 Returns `NULL` if there was an error (such as timebase == NULL). Example of use: time = `CMSyncGetTime(CMTimebaseGetMaster(timebase));`
 

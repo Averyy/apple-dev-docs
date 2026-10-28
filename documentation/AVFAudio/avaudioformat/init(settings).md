@@ -25,11 +25,11 @@ init?(settings: [String : Any])
 - (instancetype) initWithSettings:(NSDictionary<NSString *,id> *) settings;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioFormat` instance, or `nil` if the initialization fails.
 
-#### Discussion
+## Discussion
 
 Note that many settings dictionary elements aren’t relevant for the format, so this method ignores them. For information about supported dictionary values, see [Audio settings](../../AVFoundation/audio-settings.md).
 

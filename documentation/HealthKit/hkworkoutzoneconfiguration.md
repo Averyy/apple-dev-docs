@@ -20,7 +20,7 @@ A structure that defines a complete set of zones for a quantity type.
 struct HKWorkoutZoneConfiguration
 ```
 
-#### Overview
+## Overview
 
 This structure contains an ordered array of zones and identifies the [`source`](./hkworkoutzoneconfiguration/source-swift.property.md) of the configuration. The system generates zones automatically based on people’s health metrics. People can configure zones manually in Health Settings, or apps can provide custom zones for specific workouts.
 

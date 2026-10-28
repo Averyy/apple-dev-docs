@@ -5,11 +5,11 @@
 
 Write a fragment shader using the set of SpriteKit-exposed symbols, and supply it with custom data.
 
-#### Overview
+## Overview
 
 Your fragment shader should be written in the OpenGL ES 2.0 shading language. SpriteKit automatically does the necessary work to make sure this shader compiles correctly in both iOS and macOS. The shader object compiles your shader by appending the source code you provide to a preamble created by SpriteKit. This preamble declares all of the standard SpriteKit variables and functions, including declarations for any uniforms you have associated with the shader object.
 
-##### Use SpriteKit-Provided Data in a Shader
+### Use SpriteKit-Provided Data in a Shader
 
 The following table describes the SpriteKit symbols made available to your shader.
 
@@ -23,7 +23,7 @@ The following table describes the SpriteKit symbols made available to your shade
 | float v_path_distance; | Varying | Provided only when the shader is attached to an SKShapeNode [spritekit/skshapenode] object’s strokeShader [spritekit/skshapenode/1519784-strokeshader] property. This value represents the distance along the path in points. |
 | vec4 SKDefaultShading() | Function | A function that provides the default behavior used by SpriteKit. |
 
-##### Provide Custom Per-Frame Data to a Shader
+### Provide Custom Per-Frame Data to a Shader
 
 To make a global variable available to your shader, you create an [`SKUniform`](./skuniform.md) and add it to the shader’s [`uniforms`](./skshader/uniforms.md) array. Uniforms can be modified at any time on the CPU, but they’re constant on the GPU. Therefore, uniforms are the way to provide your shader with per-frame data.
 
@@ -44,7 +44,7 @@ uniformBasedShader.uniforms = [
 
 Because uniforms are shared across executions in a given frame, every node that executes `uniformBasedShader` in the example above will read the same value for `u_sprite_size`.
 
-##### Provide Custom Per-Primitive Data to a Shader
+### Provide Custom Per-Primitive Data to a Shader
 
 To associate shader variables with specific nodes, you use [`SKAttribute`](./skattribute.md). Using attributes rather than uniforms allows a single [`SKShader`](./skshader.md) to be shared between nodes, each one defining their own value for a shader variable. The following code demonstrates attributes by passing the size of a sprite to a shader as an attribute.
 
@@ -65,7 +65,7 @@ sprite.setValue(SKAttributeValue(vectorFloat2: spriteSize),
 
 Because an attribute defines a shader variable on the sprite node and not the shader object, every execution of `attributeBasedShader` will read its own value of `a_sprite_size`.
 
-##### Define a Function Body
+### Define a Function Body
 
 Your shader should define a `main()` function. This function must set the `gl_FragColor` variable to a color value to use in the blend stage. Typically, the color value you return in this variable should already be premultiplied by the fragment’s alpha value.
 

@@ -19,7 +19,7 @@ The preferred size for the view controller’s view.
 @preconcurrency override dynamic var preferredContentSize: CGSize { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The view controller overrides this method to establish its preferred content size in visionOS. Changing the value of this property has no effect in visionOS.
 

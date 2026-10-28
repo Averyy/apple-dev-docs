@@ -24,7 +24,7 @@ protocol MTLIntersectionFunctionTable : MTLResource
 @protocol MTLIntersectionFunctionTable <MTLResource>
 ```
 
-#### Overview
+## Overview
 
 Don’t implement this protocol yourself. Instead create an [`MTLIntersectionFunctionTableDescriptor`](./mtlintersectionfunctiontabledescriptor.md) instance and configure its properties. Then call the appropriate method on the pipeline state that you want to use this table with:
 

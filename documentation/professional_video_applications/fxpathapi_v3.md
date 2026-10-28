@@ -19,7 +19,7 @@ protocol FxPathAPI_v3
 @protocol FxPathAPI_v3
 ```
 
-#### Overview
+## Overview
 
 This API is used to get information about a path that the user has drawn on an object in the canvas. You can get the number of paths applied to the object, and then enumerate through them, or pick a specific one. You can use this API to retrieve the control points along the path and use that information to guide the rendering of your plug-in.
 

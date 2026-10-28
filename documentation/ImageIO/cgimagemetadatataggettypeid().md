@@ -25,7 +25,7 @@ func CGImageMetadataTagGetTypeID() -> CFTypeID
 extern CFTypeID CGImageMetadataTagGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the [`CGImageMetadataTag`](./cgimagemetadatatag.md) opaque type.
 

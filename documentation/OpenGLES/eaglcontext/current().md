@@ -24,7 +24,7 @@ class func current() -> EAGLContext?
 + (EAGLContext *) currentContext;
 ```
 
-#### Return Value
+## Return Value
 
 The current context for the calling thread.
 

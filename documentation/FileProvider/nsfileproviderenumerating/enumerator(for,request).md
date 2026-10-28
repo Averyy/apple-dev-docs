@@ -28,11 +28,11 @@ func enumerator(for containerItemIdentifier: NSFileProviderItemIdentifier, reque
 
 - [Synchronizing the File Provider Extension](../synchronizing-the-file-provider-extension.md)
 
-#### Return Value
+## Return Value
 
 An enumerator for the specified directory.
 
-#### Discussion
+## Discussion
 
 The system calls this method to request an enumerator for the specified item.
 
@@ -46,7 +46,7 @@ Possible item identifiers include:
 
 Your implementation should create and return an [`NSFileProviderEnumerator`](../nsfileproviderenumerator.md) object that provides the requested content.
 
-##### Handle Errors
+### Handle Errors
 
 If you can’t return the requested enumerator, you must throw an error in Swift, or if you return nil in Objective-C, you must set the `error` out parameter.
 

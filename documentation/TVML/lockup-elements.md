@@ -4,7 +4,7 @@
 
 Combine several elements so that they can be treated as a single element.
 
-#### Overview
+## Overview
 
 Lockup elements are often contained inside of other compound elements, especially shelves. By combining several elements together and treating them as a single element, lockup elements can be arranged and displayed in a consistent fashion by other elements.
 

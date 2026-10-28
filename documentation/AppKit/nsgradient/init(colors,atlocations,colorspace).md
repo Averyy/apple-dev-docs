@@ -19,11 +19,11 @@ init?(colors colorArray: [NSColor], atLocations locations: UnsafePointer<CGFloat
 - (instancetype) initWithColors:(NSArray<NSColor *> *) colorArray atLocations:(const CGFloat *) locations colorSpace:(NSColorSpace *) colorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSGradient` object.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer of `NSGradient`. The colors in the `colorArray` parameter are converted to the specified color space if they are not already in that color space.
 

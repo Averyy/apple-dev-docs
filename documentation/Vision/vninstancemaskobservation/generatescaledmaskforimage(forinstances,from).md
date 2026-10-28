@@ -24,7 +24,7 @@ func generateScaledMaskForImage(forInstances instances: IndexSet, from requestHa
 - (CVPixelBufferRef) generateScaledMaskForImageForInstances:(NSIndexSet *) instances fromRequestHandler:(VNImageRequestHandler *) requestHandler error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The pixel buffer that contains the image.
 

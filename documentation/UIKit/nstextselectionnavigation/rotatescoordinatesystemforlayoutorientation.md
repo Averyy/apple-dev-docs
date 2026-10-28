@@ -23,7 +23,7 @@ var rotatesCoordinateSystemForLayoutOrientation: Bool { get set }
 @property BOOL rotatesCoordinateSystemForLayoutOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 If set to `true`, the framework rotates the coordinate system for arguments passed to the navigation methods such as [`textSelections(interactingAt:inContainerAt:anchors:modifiers:selecting:bounds:)`](./textselections%28interactingat,incontainerat,anchors,modifiers,selecting,bounds%29.md): based on the text container layout orientation. Defaults to `false`.
 

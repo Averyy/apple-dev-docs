@@ -23,7 +23,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md). Changing the value to [`false`](../../Swift/false.md) causes the action to appear dimmed in the resulting alert. When an action is disabled, taps on the corresponding button have no effect.
 

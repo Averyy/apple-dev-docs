@@ -5,7 +5,7 @@
 
 Manage Game Center activities for your apps.
 
-#### Overview
+## Overview
 
 Use the activities API to create and configure ways to link players directly to your content in your game. Once you create an activity you can link it to a challenge and a leaderboard. To learn more about challenges, see [Configuring Game Center challenges](./configuring-game-center-challenges.md).
 

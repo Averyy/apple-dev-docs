@@ -19,7 +19,7 @@ var deepestScreen: NSScreen? { get }
 @property (strong, readonly, nullable) NSScreen * deepestScreen;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` when the window is offscreen.
 

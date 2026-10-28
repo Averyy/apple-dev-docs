@@ -21,7 +21,7 @@ Creates an item with the specified value and visual attributes.
 init(_ value: Value, title: LocalizedStringResource, subtitle: LocalizedStringResource? = nil, image: DisplayRepresentation.Image? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The system uses the provided values even when `value` conforms to the [`DisplayRepresentable`](../displayrepresentable.md) protocol.
 

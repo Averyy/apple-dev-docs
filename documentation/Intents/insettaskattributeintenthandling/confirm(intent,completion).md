@@ -29,7 +29,7 @@ optional func confirm(intent: INSetTaskAttributeIntent) async -> INSetTaskAttrib
 - (void) confirmSetTaskAttribute:(INSetTaskAttributeIntent *) intent completion:(void (^)(INSetTaskAttributeIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can modify the task, but do not do so yet. If modifying tasks involves contacting a remote server, validate that your server is available and ready to handle requests. In your implementation, execute the provided completion block with a response object indicating your app’s readiness to change the attributes of the task.
 

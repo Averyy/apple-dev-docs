@@ -5,11 +5,11 @@
 
 Learn more about changes to FinanceKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [FinanceKit](../FinanceKit/FinanceKit.md).
 
-#### June 2024
+## June 2024
 
 - Use the FinanceKit API to get access to on device financial data.
 - Call `TransactionPicker()` with [FinanceKitUI](../FinanceKitUI/FinanceKitUI.md) to display an interface with searchable user transactions.

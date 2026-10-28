@@ -25,7 +25,7 @@ class let extendedLinearSRGB: CFString
 extern CFStringRef const kCGColorSpaceExtendedLinearSRGB;
 ```
 
-#### Discussion
+## Discussion
 
 This color space has the same colorimetry as [`linearSRGB`](./linearsrgb.md); in addition, you may encode component values below `0.0` and above `1.0`.
 

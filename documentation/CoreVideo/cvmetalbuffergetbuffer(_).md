@@ -22,11 +22,11 @@ func CVMetalBufferGetBuffer(_ buffer: CVMetalBuffer) -> (any MTLBuffer)?
 extern id<MTLBuffer>CVMetalBufferGetBuffer(CVMetalBufferRef buffer);
 ```
 
-#### Return Value
+## Return Value
 
 Metal buffer
 
-#### Discussion
+## Discussion
 
 Returns the Metal MTLBuffer object of the CVMetalBufferRef
 

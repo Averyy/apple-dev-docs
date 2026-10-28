@@ -24,11 +24,11 @@ func singleGateRNN(_ source: MPSGraphTensor, recurrentWeight: MPSGraphTensor, in
 - (NSArray<MPSGraphTensor *> *) singleGateRNNWithSourceTensor:(MPSGraphTensor *) source recurrentWeight:(MPSGraphTensor *) recurrentWeight inputWeight:(MPSGraphTensor *) inputWeight bias:(MPSGraphTensor *) bias initState:(MPSGraphTensor *) initState mask:(MPSGraphTensor *) mask descriptor:(MPSGraphSingleGateRNNDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor array of size 1 or 2, depending on value of `descriptor.training`. The layout of the both outputs is [T,N,H] or [T,N,2H] for bidirectional.
 
-#### Discussion
+## Discussion
 
 This operation returns tensors `h` and optionally `z` that are defined recursively as follows:
 

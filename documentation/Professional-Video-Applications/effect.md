@@ -4,11 +4,11 @@
 
 Reference visual, audio, or custom effects.
 
-#### Overview
+## Overview
 
 Use the `effect` element to reference an effect that can be a Motion template, a FxPlug, an Audio Unit, or an audio effect bundle. Use a `filter-video`, `filter-video-mask`, or `filter-audio` element to apply the effect to a story element.
 
-##### Attributes of effect Element
+### Attributes of effect Element
 
 | Attribute | Description |
 | --- | --- |

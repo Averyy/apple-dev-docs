@@ -16,7 +16,7 @@ get data(): object;
 set data(data: object);
 ```
 
-#### Discussion
+## Discussion
 
 This is data of your choosing that you can assign to the annotation. It can be any JavaScript value, and defaults to an empty object.
 

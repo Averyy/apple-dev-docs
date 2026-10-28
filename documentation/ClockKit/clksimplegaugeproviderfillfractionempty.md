@@ -21,7 +21,7 @@ let CLKSimpleGaugeProviderFillFractionEmpty: Float
 extern const float CLKSimpleGaugeProviderFillFractionEmpty;
 ```
 
-#### Discussion
+## Discussion
 
 For [`CLKGaugeProviderStyle.ring`](./clkgaugeproviderstyle/ring.md) style gauges, the [`CLKSimpleGaugeProviderFillFractionEmpty`](./clksimplegaugeproviderfillfractionempty.md) value hides the ring, while setting a `0.0` fill value still shows the ring.
 

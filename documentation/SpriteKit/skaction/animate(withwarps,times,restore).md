@@ -25,11 +25,11 @@ class func animate(withWarps warps: [SKWarpGeometry], times: [NSNumber], restore
 + (SKAction *) animateWithWarps:(NSArray<SKWarpGeometry *> *) warps times:(NSArray<NSNumber *> *) times restore:(BOOL) restore;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 The [`numberOfColumns`](../skwarpgeometrygrid/numberofcolumns.md) and [`numberOfRows`](../skwarpgeometrygrid/numberofrows.md) in each geometry in the sequence should match.
 

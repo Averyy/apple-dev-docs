@@ -21,7 +21,7 @@ convenience init(texture: any MTLTexture, size: CGSize)
 - (instancetype) initWithTexture:(id<MTLTexture>) texture size:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A new `TCControlImage` instance.
 

@@ -19,7 +19,7 @@ The declaration to configure encrypted DNS settings.
 object NetworkDNSSettings
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.network.dns-settings` as the declaration type.
 
@@ -29,7 +29,7 @@ The following rules determine which networks the settings apply to:
 - For device enrollments, the settings are limited to only managed networks.
 - For local installs, the settings apply to all networks.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -41,7 +41,7 @@ The following rules determine which networks the settings apply to:
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration example
+### Configuration example
 
 This configuration sets up encrypted DNS using DNS-over-HTTPS.
 

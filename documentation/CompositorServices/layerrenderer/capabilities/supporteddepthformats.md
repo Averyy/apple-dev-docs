@@ -16,7 +16,7 @@ The list of depth formats that the layer supports
 var supportedDepthFormats: [MTLPixelFormat] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The pixel formats in this property tell you which pixel arrangements and characteristics the layer supports for its depth textures.
 

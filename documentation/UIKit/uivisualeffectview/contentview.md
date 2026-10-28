@@ -23,7 +23,7 @@ var contentView: UIView { get }
 @property (nonatomic, strong, readonly) UIView * contentView;
 ```
 
-#### Discussion
+## Discussion
 
 Add subviews to the [`contentView`](./contentview.md) and not to [`UIVisualEffectView`](../uivisualeffectview.md) directly.
 

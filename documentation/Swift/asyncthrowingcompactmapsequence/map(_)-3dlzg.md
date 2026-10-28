@@ -22,11 +22,11 @@ Creates an asynchronous sequence that maps the given error-throwing closure over
 func map<Transformed>(_ transform: @escaping @Sendable (Self.Element) async throws -> Transformed) -> AsyncThrowingMapSequence<Self, Transformed>
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence that contains, in order, the elements produced by the `transform` closure.
 
-#### Discussion
+## Discussion
 
 Use the `map(_:)` method to transform every element received from a base asynchronous sequence. Typically, you use this to transform from one type of element to another.
 

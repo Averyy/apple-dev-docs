@@ -20,7 +20,7 @@ Indicates whether the web view should automatically upgrade supported HTTP reque
 var upgradeKnownHostsToHTTPS: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `true`.
 

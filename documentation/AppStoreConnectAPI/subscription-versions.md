@@ -5,7 +5,7 @@
 
 Create and read draft versions of an auto-renewable subscription, with their localized metadata and review images.
 
-#### Overview
+## Overview
 
 Each subscription has a version, which is the container for the localizations and images related to that subscription. Use the subscription version for submitting to review.
 

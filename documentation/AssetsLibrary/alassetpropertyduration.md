@@ -12,7 +12,7 @@ The key to retrieve the play time duration of a video asset.
 extern NSString * const ALAssetPropertyDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a double wrapped in an [`NSNumber`](../Foundation/nsnumber.md) object. For photos, [`ALErrorInvalidProperty`](./alerrorinvalidproperty.md) is returned.
 

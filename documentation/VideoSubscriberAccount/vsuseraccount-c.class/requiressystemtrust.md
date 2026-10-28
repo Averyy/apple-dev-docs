@@ -19,7 +19,7 @@ A Boolean value that indicates whether the update URL must have a system-trusted
 @property (nonatomic, assign) BOOL requiresSystemTrust;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is true, the update URL must have a system-trusted certificate, and not a user-trusted certificate.
 

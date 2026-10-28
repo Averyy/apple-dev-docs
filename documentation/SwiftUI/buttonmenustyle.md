@@ -21,7 +21,7 @@ nonisolated
 struct ButtonMenuStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`button`](./menustyle/button.md) to construct this style.
 

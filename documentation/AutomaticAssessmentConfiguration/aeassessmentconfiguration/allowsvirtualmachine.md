@@ -20,7 +20,7 @@ var allowsVirtualMachine: Bool { get set }
 @property (nonatomic, assign) BOOL allowsVirtualMachine;
 ```
 
-#### Discussion
+## Discussion
 
 When set to `false`, the assessment session will only start if the device is not a virtual machine, and won’t start if that status can’t be determined. Defaults to `true`, which doesn’t enforce the requirement.
 

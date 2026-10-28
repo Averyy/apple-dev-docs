@@ -19,7 +19,7 @@ func WKAccessibilityIsReduceMotionEnabled() -> Bool
 extern BOOL WKAccessibilityIsReduceMotionEnabled();
 ```
 
-#### Discussion
+## Discussion
 
 You can use this function to customize your application’s UI when reduced motion is enabled. Note that you can also listen for the [`WKAccessibilityReduceMotionStatusDidChange`](../Foundation/nsnotification/name-swift.struct/wkaccessibilityreducemotionstatusdidchange.md) (Swift) or [`WKAccessibilityReduceMotionStatusDidChangeNotification`](./wkaccessibilityreducemotionstatusdidchangenotification.md) (Objective-C) notification to find out when VoiceOver starts and stops.
 

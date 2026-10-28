@@ -19,7 +19,7 @@ Creates an input sequence provider.
 init(session: AVCaptureSession, analyzerFormat: AVAudioFormat, priority: TaskPriority?) throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer also creates an `AVCaptureAudioDataOutput` object suitable for adding to the given `AVCaptureSession`. It does not reconfigure or alter the session.
 

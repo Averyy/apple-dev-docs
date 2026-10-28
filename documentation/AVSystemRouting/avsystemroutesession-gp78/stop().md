@@ -21,7 +21,7 @@ final func stop()
 
 - [Routing and streaming media to remote devices](../routing-and-streaming-media-to-remote-devices.md)
 
-#### Discussion
+## Discussion
 
 Call this function to end the playback session and clean up resources on both the local and remote devices. After calling this function, the session is terminated and further calls to session functions will have no effect.
 

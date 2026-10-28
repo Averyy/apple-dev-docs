@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether the given value is contained by the r
 func contains(_ value: Bound) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `value` is contained by a range in the range set; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(log *n*), where *n* is the number of ranges in the range set.
 

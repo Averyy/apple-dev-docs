@@ -24,7 +24,7 @@ class HMServiceGroup
 @interface HMServiceGroup : NSObject
 ```
 
-#### Overview
+## Overview
 
 A service group makes it easier to address the services as a single entity. For example, a user might choose to group a set of lights together as “Desk Lamps,” and have another set of lights grouped as “Ceiling Lights”. You create service groups using the [`addServiceGroup(withName:completionHandler:)`](./hmhome/addservicegroup%28withname,completionhandler%29.md) method of [`HMHome`](./hmhome.md). Service groups are visible to Siri and allow users to control a group of services through Siri.
 

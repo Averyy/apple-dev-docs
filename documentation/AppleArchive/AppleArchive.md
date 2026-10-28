@@ -15,7 +15,7 @@ Perform multithreaded lossless compression of directories, files, and data.
 - visionOS 1.0+
 - watchOS 7.0+
 
-#### Overview
+## Overview
 
 Apple Archive provides fast compression that includes file attributes, such as, ownership, permissions, flags, times, extended attributes, and error correction. Apple Archive offers these features:
 

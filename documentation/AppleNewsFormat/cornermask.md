@@ -15,13 +15,13 @@ The object for creating rounded corners.
 object CornerMask
 ```
 
-#### Discussion
+## Discussion
 
 Use the `CornerMas`k object to specify the corner radius for a component, and enable or disable the effect on a per-corner basis (`topRight`, `topLeft`, `bottomRight`, and `bottomLeft`). All corners are enabled by default. When you specify a border alongside a corner radius, the borders take into account the radius of the mask and are drawn within the unmasked area of the component.
 
 You can use this object in [`ComponentStyle`](./componentstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

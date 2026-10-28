@@ -21,11 +21,11 @@ Returns an `NSBundle` object that corresponds to the specified directory.
 + (instancetype) bundleWithPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSBundle` object that corresponds to `path`, or `nil` if `path` does not identify an accessible bundle directory.
 
-#### Discussion
+## Discussion
 
 This method allocates and initializes the returned object if there is no existing `NSBundle` associated with `path`, in which case it returns the existing object.
 

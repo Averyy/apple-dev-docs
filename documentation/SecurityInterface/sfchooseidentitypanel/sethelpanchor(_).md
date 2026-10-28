@@ -19,7 +19,7 @@ func setHelpAnchor(_ anchor: String!)
 - (void) setHelpAnchor:(NSString *) anchor;
 ```
 
-#### Discussion
+## Discussion
 
 You may call this function to set a help anchor string if you display a help button in the sheet or modal panel and do not implement the delegate method [`certificatePanelShowHelp(_:)`](../../ObjectiveC/nsobject-swift.class/certificatepanelshowhelp%28_%29.md), or if the delegate method returns [`false`](../../Swift/false.md). If you display a help button, do not set a help anchor string, and do not implement a delegate, the certificate panel displays a default help page (“What is a digital identity?”).
 

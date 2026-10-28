@@ -19,7 +19,7 @@ The minimum horizontal padding between the text and secondary text.
 var textToSecondaryTextHorizontalPadding: CGFloat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value only applies when there’s both text and secondary text, and they’re in a side-by-side layout that [`prefersSideBySideTextAndSecondaryText`](./preferssidebysidetextandsecondarytext.md) specifies.
 

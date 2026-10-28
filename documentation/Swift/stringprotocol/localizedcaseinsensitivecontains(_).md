@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether the given string is non-empty and con
 func localizedCaseInsensitiveContains<T>(_ other: T) -> Bool where T : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Locale-independent case-insensitive operation, and other needs, can be achieved by calling `range(of:options:range:locale:)`.
 

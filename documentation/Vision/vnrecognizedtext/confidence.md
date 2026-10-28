@@ -24,7 +24,7 @@ var confidence: VNConfidence { get }
 @property (nonatomic, assign, readonly) VNConfidence confidence;
 ```
 
-#### Discussion
+## Discussion
 
 The confidence level is a normalized value between `0.0` and `1.0`, where `1.0` represents the highest confidence.
 

@@ -20,7 +20,7 @@ optional func coachingOverlayViewWillActivate(_ coachingOverlayView: ARCoachingO
 - (void) coachingOverlayViewWillActivate:(ARCoachingOverlayView *) coachingOverlayView;
 ```
 
-#### Discussion
+## Discussion
 
 Override this function to hide your app’s UI while the coaching overlay is active.
 

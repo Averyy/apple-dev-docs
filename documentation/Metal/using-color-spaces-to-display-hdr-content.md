@@ -5,7 +5,7 @@
 
 Use a color space when you don’t need to edit or process the pixel data.
 
-#### Overview
+## Overview
 
 If you aren’t editing the content in a linear color space, and simply need to display the content with the correct transfer function, use a color space that includes that transfer function. Create a Metal layer and set its [`wantsExtendedDynamicRangeContent`](../QuartzCore/cametallayer/wantsextendeddynamicrangecontent.md) property to [`true`](../Swift/true.md). Set the color space that matches the color primaries and transfer function of your content. The code below creates a Metal layer for content in the BT.2020 color space using the PQ transfer function:
 

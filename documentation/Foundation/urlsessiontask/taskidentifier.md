@@ -25,7 +25,7 @@ var taskIdentifier: Int { get }
 @property (readonly) NSUInteger taskIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This value is unique only within the context of a single session; tasks in other sessions may have the same [`taskIdentifier`](./taskidentifier.md) value.
 

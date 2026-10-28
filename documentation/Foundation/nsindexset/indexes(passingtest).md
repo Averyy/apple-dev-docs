@@ -25,7 +25,7 @@ func indexes(passingTest predicate: (Int, UnsafeMutablePointer<ObjCBool>) -> Boo
 - (NSIndexSet *) indexesPassingTest:(BOOL (^)(NSUInteger idx, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSIndexSet` containing the indexes of the receiving index set that passed the predicate Block test.
 

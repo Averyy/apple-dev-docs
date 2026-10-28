@@ -12,7 +12,7 @@ Key to retrieve the name of the group.
 extern NSString * const ALAssetsGroupPropertyName;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSString` object.
 

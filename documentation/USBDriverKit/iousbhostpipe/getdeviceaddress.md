@@ -15,7 +15,7 @@ Retrieves the address of the device.
 virtual kern_return_t GetDeviceAddress(uint8_t *address) const;
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 

@@ -24,7 +24,7 @@ func CFHTTPAuthenticationRequiresUserNameAndPassword(_ auth: CFHTTPAuthenticatio
 extern Boolean CFHTTPAuthenticationRequiresUserNameAndPassword(CFHTTPAuthenticationRef auth);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if `auth` requires a username and password when it is applied to a request; otherwise, `FALSE`.
 

@@ -25,7 +25,7 @@ func addKeyframeValue(_ value: Any, time: CGFloat)
 - (void) addKeyframeValue:(id) value time:(CGFloat) time;
 ```
 
-#### Discussion
+## Discussion
 
 The new keyframe is appended to the end of the array.
 

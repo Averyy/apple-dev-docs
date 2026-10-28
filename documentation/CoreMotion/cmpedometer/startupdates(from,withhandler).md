@@ -23,7 +23,7 @@ func startUpdates(from start: Date, withHandler handler: @escaping CMPedometerHa
 - (void) startPedometerUpdatesFromDate:(NSDate *) start withHandler:(CMPedometerHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Upon calling this method, the pedometer object starts calling your handler block regularly with data. The data passed to your `handler` block represents the cumulative data starting at the specified `start` date and ending at the current time. (You can get the start and end dates from the [`CMPedometerData`](../cmpedometerdata.md) object passed to your handler.) This method initiates the event delivery process asynchronously and executes your block on a serial dispatch queue, which ensures that only one copy of the block runs at any given time.
 

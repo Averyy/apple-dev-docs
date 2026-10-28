@@ -5,7 +5,7 @@
 
 Check for age-rating based content restrictions and enable people to request approval for apps with a rating beyond the maximum allowed for the device.
 
-#### Overview
+## Overview
 
 You can help create a browsing experience consistent with the device’s maximum allowed age rating. When a person tries to install an app that has an age rating beyond the maximum allowed for the device, present a framework-provided sheet that enables the person to request the approval of a parent or guardian to install the app. The sheet contains an Ask for Exception button, which when tapped, sends a message to the parent or guardian.
 
@@ -23,7 +23,7 @@ Alternatively, if the request recipient is in the vicinity of the device, a foll
 
 ![An iPhone device body that features a modal sheet for the Ask for Exception workflow. Text notifies the person that the request message is sent and pending approval, and that a parent or guardian can approve the request in person if they're in the vicinity of the device. Two buttons follow the text that read Approve in Person and Close.](https://developer.apple.com/tutorials/images/com.apple.MarketplaceKit/providing-age-rating-appropriate-content-5@2x.png)
 
-#### Check for age-rating based content restrictions
+## Check for age-rating based content restrictions
 
 When people browse apps on your alternative app marketplace, you can check the [`maximumAllowedAgeRating`](./applibrary/maximumallowedagerating.md) property for any age-rating based restrictions set for the device. By adjusting your presentation of content that’s rated higher than the maximum allowed for the device, you can create a more age-rating appropriate browsing experience. For example, you can omit articles or featured content for rating-restricted apps but still return rating-restricted apps in search results to allow someone to request an exception to install one.
 
@@ -31,7 +31,7 @@ When a person tries to install an app that has an age rating beyond the maximum 
 
 If the app to install has an age rating beyond the maximum allowed for the device and your app fails to request an age-rating exception, the framework throws [`MarketplaceKitError.ratingRestricted`](./marketplacekiterror/ratingrestricted.md). Conversely, if your app requests an age-rating exception by setting [`requestAgeException`](./installmetadata/requestageexception.md) to `true` when it’s not needed, the framework throws [`MarketplaceKitError.ageRatingExceptionNotNeeded`](./marketplacekiterror/ageratingexceptionnotneeded.md).
 
-#### Show exception status and enable in-person approval
+## Show exception status and enable in-person approval
 
 While an exception is pending, check the request status in the [`currentAgeExceptionRequests()`](./applibrary/currentageexceptionrequests%28%29.md) property of the [`AppLibrary`](./applibrary.md) class. For apps that are pending an exception, you can show a Pending button rather than an Install button.
 

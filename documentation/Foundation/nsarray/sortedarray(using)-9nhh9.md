@@ -25,11 +25,11 @@ func sortedArray(using comparator: Selector) -> [Any]
 - (NSArray<id> *) sortedArrayUsingSelector:(SEL) comparator;
 ```
 
-#### Return Value
+## Return Value
 
 An array that lists the receiving array’s elements in ascending order, as determined by the comparison method specified by the selector `comparator`.
 
-#### Discussion
+## Discussion
 
 The new array contains references to the receiving array’s elements, not copies of them.
 

@@ -19,7 +19,7 @@ static let numberMode: NSSpeechSynthesizer.SpeechPropertyKey
 extern NSSpeechPropertyKey const NSSpeechNumberModeProperty;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSString`](../../../Foundation/nsstring.md) object that specifies whether the synthesizer is currently in normal or literal number-processing mode. The supported values are listed in [`NSSpeechSynthesizer.SpeechPropertyKey.Mode`](./mode.md).
 

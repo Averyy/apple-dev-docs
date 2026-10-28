@@ -23,7 +23,7 @@ var GSS_C_INTEG_FLAG: Int32 { get }
 #define GSS_C_INTEG_FLAG
 ```
 
-#### Discussion
+## Discussion
 
 When set, you can use the [`gss_get_mic(_:_:_:_:_:)`](./gss_get_mic%28_,_,_,_,_%29.md) and [`gss_verify_mic(_:_:_:_:_:)`](./gss_verify_mic%28_,_,_,_,_%29.md) functions to sign and verify the data transferred. When the flag is not set, you can create and test your own cryptographic signatures, but the GSS-API does not provide this service.
 

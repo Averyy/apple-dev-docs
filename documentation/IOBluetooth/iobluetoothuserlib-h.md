@@ -5,11 +5,11 @@
 
 Public Interfaces for Apple’s implementation of Bluetooth technology.
 
-#### Overview
+## Overview
 
 There is an accompanying header to this, “Bluetooth.h”, which contains all technology-specific typedefs and information. This header relies heavily on it.
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/IOKitLib.h>
 - <CoreFoundation/CFMachPort.h>

@@ -25,7 +25,7 @@ var minusSign: String! { get set }
 @property (copy, null_resettable) NSString * minusSign;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to the minus sign (-).
 

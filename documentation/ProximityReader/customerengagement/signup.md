@@ -17,7 +17,7 @@ Contact information and marketing consent selections a customer provides during 
 struct SignUp
 ```
 
-#### Overview
+## Overview
 
 You receive a `SignUp` value when [`requestSignup(for:fields:message:emailConsent:smsConsent:termsAndConditions:)`](../customerengagementsession/requestsignup%28for,fields,message,emailconsent,smsconsent,termsandconditions%29.md) completes successfully. The [`name`](./signup/name.md), [`phoneNumber`](./signup/phonenumber.md), and [`emailAddress`](./signup/emailaddress.md) properties are non`nil` only if you included the corresponding [`CustomerEngagementSession.Field`](../customerengagementsession/field.md) in the request and the customer chose to share it.
 

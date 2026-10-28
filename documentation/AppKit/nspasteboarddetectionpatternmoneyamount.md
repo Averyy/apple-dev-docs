@@ -15,7 +15,7 @@ A pattern that indicates the pasteboard detects a string that contains an amount
 extern NSPasteboardDetectionPattern const NSPasteboardDetectionPatternMoneyAmount;
 ```
 
-#### Return Value
+## Return Value
 
 Array of DDMatchMoneyAmount values
 

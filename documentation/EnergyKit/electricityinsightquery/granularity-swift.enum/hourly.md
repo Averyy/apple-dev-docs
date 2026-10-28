@@ -17,7 +17,7 @@ An hourly aggregated insight record for at least one calendar week.
 case hourly
 ```
 
-#### Discussion
+## Discussion
 
 The data period returns insight records aggregated by hour for at least one calendar week, and includes the requested date range, potentially starting before the query date. The data range begins and ends in a week or the last available data for the query.
 

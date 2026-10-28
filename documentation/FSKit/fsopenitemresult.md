@@ -19,7 +19,7 @@ class FSOpenItemResult
 @interface FSOpenItemResult : FSVolumeHandlerResult
 ```
 
-#### Overview
+## Overview
 
 Use this type in your implementation of [`open(_:modes:cacheMode:context:replyHandler:)`](./fsvolume/datacachehandler/open%28_,modes,cachemode,context,replyhandler%29.md).
 

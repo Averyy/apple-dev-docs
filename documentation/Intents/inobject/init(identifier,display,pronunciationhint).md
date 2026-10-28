@@ -24,7 +24,7 @@ init(identifier: String?, display displayString: String, pronunciationHint: Stri
 - (instancetype) initWithIdentifier:(NSString *) identifier displayString:(NSString *) displayString pronunciationHint:(NSString *) pronunciationHint;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INObject`](../inobject.md), or `nil` if the initializer couldn’t create the object.
 

@@ -21,11 +21,11 @@ Returns a filter that applies a hue rotation adjustment.
 static func hueRotation(_ angle: Angle) -> GraphicsContext.Filter
 ```
 
-#### Return Value
+## Return Value
 
 A filter that applies a hue rotation adjustment.
 
-#### Discussion
+## Discussion
 
 This filter is equivalent to the `hue-rotate` filter primitive defined by the Scalable Vector Graphics (SVG) specification.
 

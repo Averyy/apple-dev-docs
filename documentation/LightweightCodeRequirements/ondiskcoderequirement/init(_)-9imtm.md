@@ -21,7 +21,7 @@ Convert a [`ProcessCodeRequirement`](../processcoderequirement.md) to an [`OnDis
 init(_ processRequirement: ProcessCodeRequirement) throws
 ```
 
-#### Discussion
+## Discussion
 
 Conversion will fail if the [`ProcessCodeRequirement`](../processcoderequirement.md) contains a constraint that cannot be converted to [`OnDiskConstraint`](../ondiskconstraint.md).
 

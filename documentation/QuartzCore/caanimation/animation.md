@@ -20,7 +20,7 @@ Creates and returns a new `CAAnimation` instance.
 + (instancetype) animation;
 ```
 
-#### Return Value
+## Return Value
 
 An `CAAnimation` object whose input values are initialized.
 

@@ -18,11 +18,11 @@ Initializes the dispatch queue object.
 virtual bool init();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if initialization was successful, or `false` if it was unsuccessful.
 
-#### Discussion
+## Discussion
 
 Do not call this method directly. Call [`Create`](./create.md) when you want to create a new dispatch queue.
 

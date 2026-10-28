@@ -19,7 +19,7 @@ class func withSDPServiceRecordRef(_ sdpServiceRecordRef: IOBluetoothSDPServiceR
 + (instancetype) withSDPServiceRecordRef:(IOBluetoothSDPServiceRecordRef) sdpServiceRecordRef;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IOBluetoothSDPServiceRecord * for the given IOBluetoothSDPServiceRecordRef.
 

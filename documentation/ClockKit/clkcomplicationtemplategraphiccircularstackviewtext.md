@@ -17,7 +17,7 @@ A template for displaying a SwiftUI view and text.
 final class CLKComplicationTemplateGraphicCircularStackViewText<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicCircular`](./clkcomplicationfamily/graphiccircular.md) family. [Figure 1](./clkcomplicationtemplategraphiccircularstackviewtext.md#3667405) shows the layout of the complication and where it appears on the clock face.
 

@@ -19,7 +19,7 @@ The metadata for a model asset, including author, license, and custom key-value 
 struct Metadata
 ```
 
-#### Overview
+## Overview
 
 Access metadata through the [`metadata`](./metadata-swift.property.md) property. To modify metadata, use [`updateMetadata(_:)`](./updatemetadata%28_%29.md), which writes changes back to disk.
 

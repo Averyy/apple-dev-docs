@@ -13,11 +13,11 @@
 errno_t ifmaddr_lladdress(ifmultiaddr_t ifmaddr, struct sockaddr *out_link_layer_multicast, u_int32_t addr_size);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success.
 
-#### Discussion
+## Discussion
 
 Copies the link layer multicast address to out_link_layer_multicast.
 

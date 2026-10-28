@@ -24,11 +24,11 @@ var isCompleted: Bool { get set }
 @property (nonatomic, getter=isCompleted) BOOL completed;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property to [`true`](../../Swift/true.md) will set [`completionDate`](./completiondate.md) to the current date; setting this property to [`false`](../../Swift/false.md) will set `completionDate` to `nil`.
 
-##### Special Considerations
+### Special Considerations
 
 If the reminder was completed using a different client, you may encounter the case where this property is [`true`](../../Swift/true.md), but `completionDate` is `nil`.
 

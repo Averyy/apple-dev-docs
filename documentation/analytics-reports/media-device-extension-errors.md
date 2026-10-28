@@ -5,11 +5,11 @@
 
 Analyze Media Device Extension errors in your apps.
 
-#### Overview
+## Overview
 
 The data in this report contains aggregate information about Media Device Extension errors. It presents errors and information about multiple dimensions of device configuration, and shows the count of each error occurrence.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |

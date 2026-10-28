@@ -23,7 +23,7 @@ protocol NSFileProviderServiceSource
 @protocol NSFileProviderServiceSource
 ```
 
-#### Overview
+## Overview
 
 To implement a File Provider service, the [`NSFileProviderExtension`](./nsfileproviderextension.md) subclass must override the [`supportedServiceSources(for:)`](./nsfileproviderextension/supportedservicesources%28for%29.md) method and return the supported services.
 

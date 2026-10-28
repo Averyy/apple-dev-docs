@@ -23,7 +23,7 @@ class INListCarsIntent
 @interface INListCarsIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 Maps creates instances of `INListCarsIntent` when it needs to display a list of the user’s electric vehicles, usually before or during route planning.
 

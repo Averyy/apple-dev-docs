@@ -22,7 +22,7 @@ The background style in the current context.
 struct BackgroundStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`background`](./shapestyle/background.md) to construct this style.
 

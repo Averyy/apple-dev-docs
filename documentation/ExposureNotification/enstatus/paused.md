@@ -23,7 +23,7 @@ case paused
 ENStatusPaused
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this enumeration; it’s currently unsupported.
 

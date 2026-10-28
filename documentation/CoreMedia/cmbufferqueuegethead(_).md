@@ -25,11 +25,11 @@ func CMBufferQueueGetHead(_ queue: CMBufferQueue) -> CMBuffer?
 extern CMBufferRefCMBufferQueueGetHead(CMBufferQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 The buffer. Will be `NULL` if the queue is empty.
 
-#### Discussion
+## Discussion
 
 This follows Core Foundation “Get” semantics – it does not retain the returned buffer. Note that with non-FIFO queues it’s not guaranteed that the next dequeue will return this particular buffer (if an intervening Enqueue adds a buffer that will dequeue next).
 

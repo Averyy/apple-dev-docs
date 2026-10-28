@@ -15,11 +15,11 @@ Downloads a file from the RCS content server.
 final func download(_ downloadRequest: RCSService.FileDownloadRequest) async throws -> RCSService.FileDownloadRequest.Metadata
 ```
 
-#### Return Value
+## Return Value
 
 A [`RCSService.FileDownloadRequest.Metadata`](./filedownloadrequest/metadata.md) instance that contains information about the downloaded file.
 
-#### Discussion
+## Discussion
 
 Call this method after receiving an [`RCSMessage`](../rcsmessage.md) whose content type is [`RCSMessage.Content.fileTransfer(_:)`](../rcsmessage/content-swift.enum/filetransfer%28_%29.md) from the RCS service’s [`incomingMessageNotifications`](./incomingmessagenotifications.md) asynchronous sequence. Use the message’s [`fileMetadata`](../rcsmessage/filetransfer/filemetadata.md) and optional [`thumbnailMetadata`](../rcsmessage/filetransfer/thumbnailmetadata.md), both of type [`RCSFileTransferMetadata`](../rcsfiletransfermetadata.md), to get the URLs to download. The metadata structure also contains other properties which may be useful for downloading, such as the file size and type.
 

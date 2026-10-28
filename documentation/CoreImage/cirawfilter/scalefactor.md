@@ -24,7 +24,7 @@ var scaleFactor: Float { get set }
 @property (readwrite) float scaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 The value should be in the range of `0...1`. The default value is `1`. A value of `1` results in a full-size output image, and a value less than `1` results in a smaller output image.
 

@@ -14,7 +14,7 @@ A surface shader that defines properties for a RealityKit Physically Based Rende
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -36,7 +36,7 @@ A surface shader that defines properties for a RealityKit Physically Based Rende
 | --- | --- |
 | `Out` | Token |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Base Color`**: The base display color of the surface. The color of an object under pure white light.
 - **`Emissive Color`**: The self-illumination color of the surface. The color the surface displays as if it’s self-lit.
@@ -51,7 +51,7 @@ A surface shader that defines properties for a RealityKit Physically Based Rende
 - **`Clearcoat Roughness`**: The level of roughness of the surfaces clearcoat layer. The default is `0.01`.
 - **`Has Premultiplied Alpha`**: A Boolean value to let the node know if input parameters have a premultiplied alpha.
 
-#### Discussion
+## Discussion
 
 The PBR Surface node produces a custom surface based on its input parameters. Connect the output of the PBR Surface node to the `Custom Surface` output of your material.
 

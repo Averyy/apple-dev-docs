@@ -21,7 +21,7 @@ What to do when a recurrence is not a valid date
 var matchingPolicy: Calendar.MatchingPolicy
 ```
 
-#### Discussion
+## Discussion
 
 An occurrence may not be a valid date if it falls on a leap day or a leap hour when there is not one. When that happens, we can choose to ignore the occurrence (`.strict`), choose a later time which has the same components (`.nextTimePreservingSmallerComponents`), or find an earlier time (`.previousTimePreservingSmallerComponents`).
 

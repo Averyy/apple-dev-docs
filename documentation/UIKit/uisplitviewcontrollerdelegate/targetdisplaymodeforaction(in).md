@@ -23,11 +23,11 @@ optional func targetDisplayModeForAction(in svc: UISplitViewController) -> UISpl
 - (UISplitViewControllerDisplayMode) targetDisplayModeForActionInSplitViewController:(UISplitViewController *) svc;
 ```
 
-#### Return Value
+## Return Value
 
 The display mode to apply to the split view controller when the user performs specific actions.
 
-#### Discussion
+## Discussion
 
 This delegate method only applies to classic split view interfaces. For more information, see [Split view styles](../uisplitviewcontroller.md#Split-view-styles).
 

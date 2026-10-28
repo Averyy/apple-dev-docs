@@ -15,7 +15,7 @@ typedef struct CMVideoCardGammaTable {
 } CMVideoCardGammaTable;
 ```
 
-#### Overview
+## Overview
 
 The ColorSync Manager defines the `CMVideoCardGammaTable` data structure to specify video card gamma data in table format. You specify the number of channels, the number of entries per channel, and the size of each entry. The last field in the structure is an array of size one that serves as the start of the table data. The actual size of the array is equal to the number of channels times the number of entries times the size of each entry. 
 

@@ -24,7 +24,7 @@ var contentsRect: CGRect { get set }
 @property CGRect contentsRect;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to the unit rectangle (0.0, 0.0, 1.0, 1.0).
 

@@ -5,11 +5,11 @@
 
 Attach localizations and screenshots to a subscription version, then submit subscriptions and subscription groups for App Review.
 
-#### Overview
+## Overview
 
 After you create and configure an auto-renewable subscription, submit it to App Review for approval before it can be available to people. Localizations and images for a subscription attach to a *subscription version* — a draft container for the metadata that goes through App Review together — so you submit the version, not the subscription itself.
 
-##### Prepare a subscription version
+### Prepare a subscription version
 
 Localizations and images for a subscription live on a subscription version. Create the version before you attach any metadata. The pre-4.4.1 workflows that post localizations and images directly to the subscription are deprecated as of 4.4.1 but remain available for existing integrations.
 
@@ -33,7 +33,7 @@ Create a draft version with `POST /v1/subscriptionVersions` ([`Create a subscrip
 
 Attach localizations to the version with `POST /v2/subscriptionLocalizations` ([`Create a subscription localization`](./post-v2-subscriptionlocalizations.md)) and attach images with `POST /v2/subscriptionImages` ([`Create a subscription image`](./post-v2-subscriptionimages.md)). Both payloads relate the resource to the *version* — not the parent subscription.
 
-##### Upload a subscription App Review screenshot
+### Upload a subscription App Review screenshot
 
 Upload a screenshot that shows what the subscription looks like to people. This workflow uses the `/v1/subscriptionAppStoreReviewScreenshots` endpoint and is similar to the existing image workflows for App Clip images and app screenshots.
 
@@ -46,7 +46,7 @@ Submit a single image using these steps:
 
 For more information, see [Uploading Assets to App Store Connect](./uploading-assets-to-app-store-connect.md).
 
-##### Submit a subscription version
+### Submit a subscription version
 
 Submit a subscription version using the review submissions workflow. This is the current, non-deprecated submission path.
 
@@ -115,7 +115,7 @@ The version’s state transitions from `PREPARE_FOR_SUBMISSION` to `READY_FOR_RE
 
 The `POST /v1/subscriptionSubmissions` ([`Create a review submission for a subscription`](./post-v1-subscriptionsubmissions.md)) endpoint is deprecated as of 4.4.1. Existing integrations that submit a subscription directly by its `id` continue to work, but new integrations use the review submissions workflow described above.
 
-##### Submit a subscription group version
+### Submit a subscription group version
 
 Localized metadata for a subscription group submits to App Review when a subscription within the group submits. Submit a subscription group version independently when you change group-level localization without changing any subscription in the group.
 

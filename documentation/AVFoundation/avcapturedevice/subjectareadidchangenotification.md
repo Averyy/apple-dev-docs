@@ -22,7 +22,7 @@ class let subjectAreaDidChangeNotification: NSNotification.Name
 extern NSNotificationName const AVCaptureDeviceSubjectAreaDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification only if the device’s [`isSubjectAreaChangeMonitoringEnabled`](./issubjectareachangemonitoringenabled.md) property value is [`true`](../../Swift/true.md).
 

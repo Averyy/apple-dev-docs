@@ -12,11 +12,11 @@ virtual bool initIfnetParams(
  struct ifnet_init_params *params );
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` on success, `false` otherwise.
 
-#### Overview
+## Overview
 
 This method initializes the parameters that are common to all network interfaces. An interface subclass is expected to override this method, call the superclass implementation first, then initialize the parameters specific to that interface type. This method is called after an unit number has been assigned to the interface, and just before the interface is attached to BSD.
 

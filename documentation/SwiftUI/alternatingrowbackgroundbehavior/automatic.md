@@ -15,7 +15,7 @@ The automatic alternating row background behavior.
 static let automatic: AlternatingRowBackgroundBehavior
 ```
 
-#### Discussion
+## Discussion
 
 This defers to default component behavior for alternating row backgrounds. Some components, such as `Table` on macOS, will default to having alternating row backgrounds; while List does not.
 

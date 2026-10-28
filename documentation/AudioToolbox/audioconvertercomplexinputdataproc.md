@@ -24,11 +24,11 @@ typealias AudioConverterComplexInputDataProc = (AudioConverterRef, UnsafeMutable
 typedef int (*)(struct OpaqueAudioConverter *, unsigned int *, struct AudioBufferList *, struct AudioStreamPacketDescription **, void *) AudioConverterComplexInputDataProc;
 ```
 
-#### Discussion
+## Discussion
 
 If you named your callback function `MyAudioConverterComplexInputDataProc`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 This callback supplies input audio data to the [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](./audioconverterfillcomplexbuffer%28_,_,_,_,_,_%29.md) function.
 

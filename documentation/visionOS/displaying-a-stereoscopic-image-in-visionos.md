@@ -10,19 +10,19 @@ Build a stereoscopic image by applying textures to the left and right eye in a s
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample demonstrates how to create a stereoscopic image with shader graph materials in visionOS. You can apply the textures independently to the left and the right eye. The following image shows a stereoscopic image displaying a pair of left and right images that correspond to the angle of vision of a person’s eyes:
 
 ![A screenshot of a visionOS app in Simulator displaying a translucent window, with the text Stereoscopic Image Example at the top, and a stereoscopic image at the bottom.](https://developer.apple.com/tutorials/images/com.apple.visionOS/sample-stereoimage-1-main-view.jpg)
 
-##### Set up the shader graph
+### Set up the shader graph
 
 The sample sets up the shader graph for the stereoscopic material with two image files: `LeftTexture` and `RightTexture`. The sample applies these image files to the [`Camera Index Switch (RealityKit)`](../ShaderGraph/realitykit/camera-index-switch-%28realitykit%29.md) node, to set up a dedicated texture for both the left and the right eye, like in the following image:
 
 ![A screenshot of the shader graph in Reality Composer Pro, showcasing the stereoscopic material with the LeftTexture and RightTexture image files.](https://developer.apple.com/tutorials/images/com.apple.visionOS/sample-stereoimage-1-shader-graph-view.png)
 
-##### Load the stereoscopic image as an entity
+### Load the stereoscopic image as an entity
 
 To create the stereoscopic image, the sample creates the `StereoImageCreator` class, which contains a private method to load the left and right textures. The app sets these textures as parameters to the shader graph material:
 
@@ -110,7 +110,7 @@ The app then modifies the z-axis scale to compress the box into a flat plane, wh
 }
 ```
 
-##### Present the stereoscopic image with text
+### Present the stereoscopic image with text
 
 The `StereoImage` view consists of a vertical stack that displays a title and a reality view. Within the reality view, it initializes the `StereoImageCreator` instance, calls the `createImageEntity()` method to create the stereoscopic image, and adds the entity to the reality view. `RealityView` displays your RealityKit content inline in true 3D space. To display the stereoscopic image inline in the window, set the frame’s depth to 0:
 

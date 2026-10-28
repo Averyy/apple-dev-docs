@@ -5,7 +5,7 @@
 
 Detect and respond to common state transitions.
 
-#### Overview
+## Overview
 
 A watchOS app runs in different states depending on the app’s current context. At any time, the app is in one of the following states: not running, inactive, active, background, or suspended. The app changes state over time based on events triggered by the user and the system.
 
@@ -19,7 +19,7 @@ The figure shows the three main types of transitions that occur during an app’
 
 Switching between the background and inactive states.
 
-##### Launch and Enter the Active State
+### Launch and Enter the Active State
 
 An app begins in the *not running* state. The user hasn’t launched the watchOS app, or the system suspended and then purged the app from memory.
 
@@ -27,13 +27,13 @@ When the user or the system launches the app, it starts in the *inactive* state.
 
 The app then enters the *active* state. It runs in the foreground and receiving actions from controls and gestures. This is the normal mode for apps running on screen.
 
-##### Transition to the Background
+### Transition to the Background
 
 If the user lowers their arm or stops interacting with the app, it enters the *background* state. The system can also launch apps into the background when running background sessions or performing background tasks. While in the background state, the system gives the app a small amount of background execution time before suspending the app.
 
 Because the system can purge suspended apps without warning, use SwiftUI’s [`scenePhase`](../SwiftUI/environmentvalues/scenephase.md) environment `value`, or your extension delegate’s [`applicationDidEnterBackground()`](./wkextensiondelegate/applicationdidenterbackground%28%29.md) method to determine when your app transitions from the active state to the background. Save any data you need to recreate your app’s current state. If needed, you can request additional background execution time by calling the [`ProcessInfo`](../Foundation/processinfo.md) class’s [`performExpiringActivity(withReason:using:)`](../Foundation/processinfo/performexpiringactivity%28withreason,using%29.md) method.
 
-##### Transition to the Suspended State
+### Transition to the Suspended State
 
 Finally, the app transitions from the background state to the *suspended* state. The system keeps the app in memory but isn’t executing its code. The system suspends apps that are in the background and don’t have any pending tasks to complete.
 
@@ -41,7 +41,7 @@ The system may purge suspended apps at any time to make room for other apps. The
 
 The system tries to keep frequently used apps in memory, allowing them to resume as quickly as possible. Specifically, the system preserves the most recently executed app, any apps that are in the Dock, and any apps that have a complication on the currently active watch face. If memory constraints force the system to purge one of these apps, the system relaunches the app as soon as more memory becomes available.
 
-##### Handle App State Changes
+### Handle App State Changes
 
 SwiftUI updates the [`scenePhase`](../SwiftUI/environmentvalues/scenephase.md) environment value as your app changes from state to state. To respond to these changes, start by reading the [`scenePhase`](../SwiftUI/environmentvalues/scenephase.md) out of the environment by using the [`Environment`](../SwiftUI/environment.md) property wrapper.
 
@@ -72,7 +72,7 @@ MyView()
 
 For watchOS 7 and later, the [`scenePhase`](../SwiftUI/environmentvalues/scenephase.md) environment value replaces many of the life cycle events previously handled by the WatchKit extension delegate, such as [`applicationDidBecomeActive()`](./wkextensiondelegate/applicationdidbecomeactive%28%29.md) and [`applicationDidEnterBackground()`](./wkextensiondelegate/applicationdidenterbackground%28%29.md).
 
-##### Understand Common Transitions
+### Understand Common Transitions
 
 There is no direct relationship between the app’s state and the interface’s state. For example, the app may be inactive while the interface is active. The following table shows the app and interface states in most common situations.
 

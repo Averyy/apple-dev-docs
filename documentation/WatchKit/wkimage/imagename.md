@@ -19,7 +19,7 @@ var imageName: String? { get }
 @property (readonly, nullable) NSString * imageName;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property is set using the [`init(imageName:)`](./init%28imagename%29.md) method. For image objects created using other methods, this property is `nil`.
 

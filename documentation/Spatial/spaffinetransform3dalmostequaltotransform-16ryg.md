@@ -19,7 +19,7 @@
 static bool SPAffineTransform3DAlmostEqualToTransform(SPAffineTransform3D t1, SPAffineTransform3D t2);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the two affine transforms are equal within the specified absolute tolerance.
 

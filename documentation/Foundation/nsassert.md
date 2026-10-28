@@ -21,7 +21,7 @@ Generates an assertion if a given condition is false.
 #define NSAssert(condition, desc, ...)
 ```
 
-#### Discussion
+## Discussion
 
 Pass a comma-separated list of trailing variadic arguments to substitute into `desc`.
 

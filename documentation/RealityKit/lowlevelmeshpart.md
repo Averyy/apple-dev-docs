@@ -18,7 +18,7 @@ An object that describes a range of primitives to draw from a mesh resource.
 final class LowLevelMeshPart
 ```
 
-#### Overview
+## Overview
 
 A mesh part selects a contiguous range of indices from the mesh’s index buffer and associates it with a primitive type, winding order, and bounding volume.
 

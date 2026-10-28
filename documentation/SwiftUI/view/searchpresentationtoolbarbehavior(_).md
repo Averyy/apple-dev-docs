@@ -22,7 +22,7 @@ nonisolated
 func searchPresentationToolbarBehavior(_ behavior: SearchPresentationToolbarBehavior) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 By default on iOS, a toolbar may hide parts of its content when presenting search to focus on searching. You can override this behavior by providing a value of [`avoidHidingContent`](../searchpresentationtoolbarbehavior/avoidhidingcontent.md) to this modifer.
 

@@ -25,7 +25,7 @@ func pause()
 - (void) pause;
 ```
 
-#### Discussion
+## Discussion
 
 Call [`record()`](./record%28%29.md) to resume recording.
 

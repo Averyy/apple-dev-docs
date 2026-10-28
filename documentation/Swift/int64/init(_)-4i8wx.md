@@ -23,7 +23,7 @@ init<T>(_ source: T) where T : BinaryInteger
 
 Available when `Self` conforms to `FixedWidthInteger`.
 
-#### Discussion
+## Discussion
 
 Use this initializer to convert from another integer type when you know the value is within the bounds of this type. Passing a value that can’t be represented in this type results in a runtime error.
 

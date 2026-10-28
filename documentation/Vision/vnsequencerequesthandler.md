@@ -24,7 +24,7 @@ class VNSequenceRequestHandler
 @interface VNSequenceRequestHandler : NSObject
 ```
 
-#### Overview
+## Overview
 
 Instantiate this handler to perform Vision requests on a series of images. Unlike the [`VNImageRequestHandler`](./vnimagerequesthandler.md), you don’t specify the image on creation. Instead, you supply each image frame one by one as you continue to call one of the `perform` methods.
 

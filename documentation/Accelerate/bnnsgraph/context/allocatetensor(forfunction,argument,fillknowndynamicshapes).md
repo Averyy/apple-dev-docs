@@ -21,7 +21,7 @@ Returns an allocated tensor for a given function argument.
 func allocateTensor(forFunction function: String? = nil, argument: String, fillKnownDynamicShapes: Bool) -> BNNSTensor?
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function supports `Float`, `Float16`, `Bool`, and `Int32` datatypes only and returns `nil` for other types.
 

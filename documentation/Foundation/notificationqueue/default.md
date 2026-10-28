@@ -25,11 +25,11 @@ class var `default`: NotificationQueue { get }
 @property (class, strong, readonly) NSNotificationQueue * defaultQueue;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the default notification queue for the current thread.
 
-#### Discussion
+## Discussion
 
 This notification queue uses the default notification center.
 

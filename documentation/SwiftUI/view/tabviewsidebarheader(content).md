@@ -21,7 +21,7 @@ nonisolated
 func tabViewSidebarHeader<Content>(@ContentBuilder content: () -> Content) -> some View where Content : View
 ```
 
-#### Discussion
+## Discussion
 
 The header appears at the top of the sidebar before any tab labels and can scroll with the content. The header is only visible when the [`TabView`](../tabview.md) is displaying the sidebar.
 

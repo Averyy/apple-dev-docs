@@ -16,11 +16,11 @@ Method to find out if the task is active or not.
 Boolean (*IsTaskActive)(void *task);
 ```
 
-#### Return Value
+## Return Value
 
 Returns 0 if the task is not active, non-zero if it is active.
 
-#### Discussion
+## Discussion
 
 Method to find out if the task is active or not. The task is considered "active" if the SCSITaskState is not kSCSITaskState_NEW nor kSCSITaskState_ENDED.
 

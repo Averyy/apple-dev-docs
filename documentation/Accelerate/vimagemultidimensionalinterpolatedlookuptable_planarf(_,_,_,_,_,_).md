@@ -29,11 +29,11 @@ vImage_Error vImageMultiDimensionalInterpolatedLookupTable_PlanarF(const vImage_
 
 - [Applying color transforms to images with a multidimensional lookup table](./applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md)
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
-#### Discussion
+## Discussion
 
 The following code shows how to convert an RGB image that’s represented as three planar buffers to grayscale. The call to [`vImageMultiDimensionalInterpolatedLookupTable_PlanarF(_:_:_:_:_:_:)`](./vimagemultidimensionalinterpolatedlookuptable_planarf%28_,_,_,_,_,_%29.md) uses the lookup table from the example code in the Discussion section for  [`vImageMultidimensionalTable_Create(_:_:_:_:_:_:_:)`](./vimagemultidimensionaltable_create%28_,_,_,_,_,_,_%29.md). The source image contains three pixels: One is pure red, one is pure green, and one is pure blue. On return, the destination image contains three pixels with the values `[0.2125887, 0.71519035, 0.072190434]`:
 
@@ -152,7 +152,7 @@ vImageMultidimensionalTable_Release(lookupTable);
 free(tableData);
 ```
 
-##### Optimize performance with temporary buffers
+### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 

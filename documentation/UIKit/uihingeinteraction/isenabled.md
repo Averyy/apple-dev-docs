@@ -23,7 +23,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 While disabled, the interaction’s handler is not called for hinge updates, and any updates that occur are not queued. When re-enabled, the handler is called with the current hinge state if one is available.
 

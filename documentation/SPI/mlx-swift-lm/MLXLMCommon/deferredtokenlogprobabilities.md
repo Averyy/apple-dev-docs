@@ -21,7 +21,7 @@ struct DeferredTokenLogProbabilities
 
 - [Observing token log probabilities](./generation-observability.md)
 
-#### Overview
+## Overview
 
 [`TokenIterator`](./tokeniterator.md) evaluates them with the decode step that samples the token. Handlers that ignore them skip the GPU-to-host copy. MLX arrays are not `Sendable`, so call [`materialize()`](./deferredtokenlogprobabilities/materialize%28%29.md) on the generation worker and send the result.
 

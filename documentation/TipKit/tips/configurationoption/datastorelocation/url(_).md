@@ -21,7 +21,7 @@ Configuration option for persisting tips at a custom on-disk location.
 static func url(_ url: URL) -> Tips.ConfigurationOption.DatastoreLocation
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 do {

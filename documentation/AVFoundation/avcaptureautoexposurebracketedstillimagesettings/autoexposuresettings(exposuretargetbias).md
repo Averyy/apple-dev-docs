@@ -22,7 +22,7 @@ class func autoExposureSettings(exposureTargetBias: Float) -> Self
 + (instancetype) autoExposureSettingsWithExposureTargetBias:(float) exposureTargetBias;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `AVCaptureAutoExposureBracketedStillImageSettings` instance.
 

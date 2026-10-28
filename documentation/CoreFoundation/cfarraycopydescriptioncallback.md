@@ -25,11 +25,11 @@ typealias CFArrayCopyDescriptionCallBack = (UnsafeRawPointer?) -> Unmanaged<CFSt
 typedef const struct __CFString *(*)(const void *) CFArrayCopyDescriptionCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 A textual description of `value`. The caller is responsible for releasing this object.
 
-#### Discussion
+## Discussion
 
 This callback is passed to [`CFArrayCreate(_:_:_:_:)`](./cfarraycreate%28_,_,_,_%29.md) in a [`CFArrayCallBacks`](./cfarraycallbacks.md) structure. This callback is used by the [`CFCopyDescription(_:)`](./cfcopydescription%28_%29.md) function.
 

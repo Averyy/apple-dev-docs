@@ -17,7 +17,7 @@ An object that contains details about the location and content of text and glyph
 var observation: VNRecognizedTextObservation { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property only if you need vision details that aren’t included in the recognized item properties.
 

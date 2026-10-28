@@ -23,7 +23,7 @@ func add(_ contact: CNMutableContact, toContainerWithIdentifier identifier: Stri
 - (void) addContact:(CNMutableContact *) contact toContainerWithIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 This method overrides any previously made deletion requests for the contact. The new contact may be modified by executing the save request.
 

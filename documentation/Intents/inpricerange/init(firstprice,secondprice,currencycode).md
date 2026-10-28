@@ -23,11 +23,11 @@ init(firstPrice: NSDecimalNumber, secondPrice: NSDecimalNumber, currencyCode: St
 - (instancetype) initWithRangeBetweenPrice:(NSDecimalNumber *) firstPrice andPrice:(NSDecimalNumber *) secondPrice currencyCode:(NSString *) currencyCode;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized price range object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 This method assigns the lesser of the two price values to the [`minimumPrice`](./minimumprice.md) property, and it assigns the greater of the two values to the [`maximumPrice`](./maximumprice.md) property.
 

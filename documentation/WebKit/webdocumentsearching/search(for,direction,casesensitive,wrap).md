@@ -20,11 +20,11 @@ func search(for string: String!, direction forward: Bool, caseSensitive caseFlag
 - (BOOL) searchFor:(NSString *) string direction:(BOOL) forward caseSensitive:(BOOL) caseFlag wrap:(BOOL) wrapFlag;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver contains `string` in the specified direction; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The receiver should select the string if it is found.
 

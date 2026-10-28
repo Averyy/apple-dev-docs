@@ -13,7 +13,7 @@ Detect dice position and values shown in a camera frame, and determine the end o
 - Xcode 12.0+
 - iPad 13.0+
 
-#### Overview
+## Overview
 
 This sample app uses an object detection model trained with [Create ML](../CreateML/CreateML.md) to recognize the tops of dice and their values when the dice roll onto a flat surface.
 
@@ -21,14 +21,14 @@ After you run the object detection model on camera frames through [Vision](../Vi
 
 > **Note**: This sample code project is associated with WWDC 2019 session [228: Creating Great Apps Using Core ML and ARKit](https://developer.apple.com/videos/play/wwdc19/228/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before you run the sample code project in Xcode, note the following:
 
 - You must run this sample code project on a physical device that uses iOS 13 or later. The project doesn’t work with Simulator.
 - The model works best on white dice with black pips. It may perform differently on dice that use other colors.
 
-##### Add inputs to the request
+### Add inputs to the request
 
 In Vision, beginning in iOS 13, you can provide inputs other than images to a model by attaching an [`MLFeatureProvider`](./mlfeatureprovider.md) object to your model. This is useful in the case of object detection when you want to specify different thresholds than the defaults.
 
@@ -36,13 +36,13 @@ As shown below, a feature provider can provide values for the `iouThreshold` and
 
 To use this threshold provider with your [`VNCoreMLModel`](../Vision/vncoremlmodel.md), assign it to the [`featureProvider`](../Vision/vncoremlmodel/featureprovider.md) property of your [`VNCoreMLModel`](../Vision/vncoremlmodel.md) as seen in the following example.
 
-##### Set up a Vision request to handle camera frames
+### Set up a Vision request to handle camera frames
 
 For simplicity, you can use camera frames coming from an [`ARSession`](../ARKit/arsession.md).
 
 To run your detector on these frames, first set up a [`VNCoreMLRequest`](../Vision/vncoremlrequest.md) request with your model, as shown in the example below.
 
-##### Pass camera frames to the object detector to predict dice locations
+### Pass camera frames to the object detector to predict dice locations
 
 Pass the frames from the camera to the [`VNCoreMLRequest`](../Vision/vncoremlrequest.md) so it can make predictions using a [`VNImageRequestHandler`](../Vision/vnimagerequesthandler.md) object. The [`VNImageRequestHandler`](../Vision/vnimagerequesthandler.md) object handles image resizing and preprocessing as well as post-processing of your model’s outputs for every prediction.
 
@@ -52,13 +52,13 @@ Finally, you invoke the [`VNImageRequestHandler`](../Vision/vnimagerequesthandle
 
 Now that the app handles providing *input* data to your model, it’s time to interpret your model’s *output*.
 
-##### Draw bounding boxes to understand your model’s behavior
+### Draw bounding boxes to understand your model’s behavior
 
 You can get a better understanding of how well your detector performs by drawing bounding boxes around each object and its text label. The dice detection model detects the tops of dice and labels them according to the number of pips shown on each die’s top side.
 
 To draw bounding boxes, see [Recognizing Objects in Live Capture](../Vision/recognizing-objects-in-live-capture.md).
 
-##### Determine wwhen a roll has ended
+### Determine wwhen a roll has ended
 
 When playing a dice game, users want to know the result of a roll. The app determines that the roll has ended by waiting for the dice’s positions and values to stabilize.
 
@@ -74,7 +74,7 @@ Based on these constraints, you can make a function that tells the app whether a
 
 Now for every prediction (meaning every new camera frame) you can check whether the roll has ended.
 
-##### Display the dice values
+### Display the dice values
 
 Once the roll has ended, you can display the information on the screen or trigger some other behavior in the setting of a game.
 

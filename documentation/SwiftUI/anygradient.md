@@ -22,7 +22,7 @@ A color gradient.
 struct AnyGradient
 ```
 
-#### Overview
+## Overview
 
 When used as a [`ShapeStyle`](./shapestyle.md), this type draws a linear gradient with start-point [0.5, 0] and end-point [0.5, 1].
 

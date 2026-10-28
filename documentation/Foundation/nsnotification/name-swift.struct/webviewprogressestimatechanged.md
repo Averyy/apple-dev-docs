@@ -15,7 +15,7 @@ Posted by a WebView object when the estimated progress value of a load changes.
 static let WebViewProgressEstimateChanged: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 This notification may be posted zero or more times after a [`WebViewProgressStarted`](./webviewprogressstarted.md) notification is posted. The notification object is the WebView for which the progress value has changed. This notification does not contain a `userInfo` dictionary.
 

@@ -19,7 +19,7 @@ protocol OS_ar_visual_fidelity_configuration : NSObjectProtocol
 @protocol OS_ar_visual_fidelity_configuration <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Contains field of view specification and settings for device fit monitoring.
 

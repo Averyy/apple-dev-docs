@@ -19,7 +19,7 @@ var action: Selector { get set }
 @property SEL action;
 ```
 
-#### Discussion
+## Discussion
 
 The default action is [`changeFont:`](../../ObjectiveC/nsobject-swift.class/changefont_.md). You should rarely need to change this setting.
 

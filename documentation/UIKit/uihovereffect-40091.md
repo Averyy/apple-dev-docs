@@ -18,7 +18,7 @@ A hover effect that can apply to a view through a hover style.
 protocol UIHoverEffect
 ```
 
-#### Overview
+## Overview
 
 You don’t conform to this protocol directly. Instead, you use a built-in [`UIHoverEffect`](./uihovereffect-40091.md) like [`UIHoverAutomaticEffect`](./uihoverautomaticeffect-swift.struct.md).
 

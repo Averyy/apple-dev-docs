@@ -23,7 +23,7 @@ var ptpObjectHandle: UInt32 { get }
 @property (nonatomic, readonly) unsigned int ptpObjectHandle;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set to `0` if the camera does not use PTP protocol.
 

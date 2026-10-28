@@ -21,7 +21,7 @@ An array that contains the lengths of each split section.
 var splitSectionLengths: [Int]? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The layer splits the tensor into chunks along dimensions with sizes given in `splitSectionLengths`.
 

@@ -21,7 +21,7 @@ Creates an attribute with the given name on this prim, or returns the existing a
 func makeAttribute(named name: USDToken, as type: USDPrim.Attribute.ValueType, custom: Bool = true, variability: USDPrim.Property.Variability = .varying) -> USDPrim.Attribute
 ```
 
-#### Return Value
+## Return Value
 
 The attribute with the given name.
 

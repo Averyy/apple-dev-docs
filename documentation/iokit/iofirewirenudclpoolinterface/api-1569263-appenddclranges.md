@@ -16,11 +16,11 @@ Add a memory range to the scatter gather list of a NuDCL
 IOReturn (*AppendDCLRanges)(NuDCLRef dcl, UInt32 numRanges, IOVirtualRange *range);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn error code.
 
-#### Discussion
+## Discussion
 
 This change will apply immediately to a non-running DCL program. To apply the change to a running program use IOFireWireLocalIsochPortInterface::Notify()
 

@@ -19,7 +19,7 @@ var allowsCutCopyPaste: Bool { get set }
 @property BOOL allowsCutCopyPaste;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is YES, the user can cut, copy, or paste the image in the image view.
 

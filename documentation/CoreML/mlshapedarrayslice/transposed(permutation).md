@@ -23,7 +23,7 @@ func transposed(permutation axes: [Int]) -> MLShapedArraySlice<Scalar>
 
 Available when `Scalar` conforms to `MLShapedArrayScalar`.
 
-#### Discussion
+## Discussion
 
 Use this method to convert, for example, the image data layout from `[C, H, W]` to `[C, W, H]`, where `C` is channel, `W` is width, and `H` is height.
 

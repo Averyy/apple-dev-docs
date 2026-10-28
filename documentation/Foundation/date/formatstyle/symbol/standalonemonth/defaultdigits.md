@@ -21,7 +21,7 @@ The custom month format style that shows the minimum number of digits to represe
 static var defaultDigits: Date.FormatStyle.Symbol.StandaloneMonth { get }
 ```
 
-#### Discussion
+## Discussion
 
 This style uses representations like `1` for January and `10` for October.
 

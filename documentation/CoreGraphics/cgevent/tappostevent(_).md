@@ -20,7 +20,7 @@ func tapPostEvent(_ proxy: CGEventTapProxy?)
 extern void CGEventTapPostEvent(CGEventTapProxy proxy, CGEventRef event);
 ```
 
-#### Discussion
+## Discussion
 
 You can use this function to post a new event at the same point to which an event returned from an event tap callback function would be posted. The new event enters the system before the event returned by the callback enters the system. Events posted into the system will be seen by all taps placed after the tap posting the event.
 

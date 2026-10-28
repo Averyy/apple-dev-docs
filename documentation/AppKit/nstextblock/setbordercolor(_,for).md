@@ -19,7 +19,7 @@ func setBorderColor(_ color: NSColor?, for edge: NSRectEdge)
 - (void) setBorderColor:(NSColor *) color forEdge:(NSRectEdge) edge;
 ```
 
-#### Discussion
+## Discussion
 
 This setting has no visible effect unless the border width is larger than the default, which is 0.
 

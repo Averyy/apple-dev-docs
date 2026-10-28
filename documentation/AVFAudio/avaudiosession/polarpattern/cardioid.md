@@ -25,7 +25,7 @@ static let cardioid: AVAudioSession.PolarPattern
 extern AVAudioSessionPolarPattern const AVAudioSessionPolarPatternCardioid;
 ```
 
-#### Discussion
+## Discussion
 
 The cardioid pattern is heart-shaped and picks up most sound from the front side.
 

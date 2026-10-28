@@ -20,7 +20,7 @@ Finishes analysis after finalizing results for a given time-code.
 final func finalizeAndFinish(through: CMTime) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method finalizes like [`finalize(through:)`](./finalize%28through%29.md) and finishes analysis like [`finish(after:)`](./finish%28after%29.md).
 

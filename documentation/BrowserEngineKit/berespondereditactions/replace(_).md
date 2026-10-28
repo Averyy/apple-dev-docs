@@ -22,7 +22,7 @@ optional func replace(_ sender: Any?)
 - (void) replace:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 To invoke the standard system behavior for replacing text, call [`textInput(_:deferReplaceTextActionToSystem:)`](../betextinputdelegate/textinput%28_,deferreplacetextactiontosystem%29.md) in your implementation of this method.
 

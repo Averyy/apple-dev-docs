@@ -24,7 +24,7 @@ class MDLVertexAttributeData
 @interface MDLVertexAttributeData : NSObject
 ```
 
-#### Overview
+## Overview
 
 You retrieve a vertex attribute data object by calling the [`vertexAttributeData(forAttributeNamed:)`](./mdlmesh/vertexattributedata%28forattributenamed%29.md) method of a [`MDLMesh`](./mdlmesh.md) object, which is shorthand for looking up the the [`MDLMeshBuffer`](./mdlmeshbuffer.md) object corresponding to the named attribute and using the [`map()`](./mdlmeshbuffer/map%28%29.md) method to gain read-only access to its contents.
 

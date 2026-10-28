@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether two instances refer to the same memor
 func isTriviallyIdentical(to other: UTF8Span) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

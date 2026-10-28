@@ -19,7 +19,7 @@ A command type for immersive camera switching during playback.
 struct SetCameraCommand
 ```
 
-#### Overview
+## Overview
 
 The property `cameraID` has been added to this type to hold camera identifier string, so that we can switch from one immersive camera to another using these camera identifiers.
 

@@ -20,7 +20,7 @@ Creates an object that indicates the user’s ability to receive communication n
 - (instancetype) initWithIsFocused:(NSNumber *) isFocused;
 ```
 
-#### Return Value
+## Return Value
 
 A new status object, or `nil` if the system can’t create one.
 

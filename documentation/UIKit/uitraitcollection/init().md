@@ -23,7 +23,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A trait collection whose traits are set to “unspecified”.
 

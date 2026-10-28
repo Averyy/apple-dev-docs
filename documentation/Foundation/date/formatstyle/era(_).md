@@ -21,11 +21,11 @@ Modifies the date format style to use the specified era format style.
 func era(_ format: Date.FormatStyle.Symbol.Era = .abbreviated) -> Date.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date format style modified to include the specified era style.
 
-#### Discussion
+## Discussion
 
 Possible values of [`Date.FormatStyle.Symbol.Era`](./symbol/era.md) include [`abbreviated`](./symbol/era/abbreviated.md), [`narrow`](./symbol/era/narrow.md), and [`wide`](./symbol/era/wide.md).
 

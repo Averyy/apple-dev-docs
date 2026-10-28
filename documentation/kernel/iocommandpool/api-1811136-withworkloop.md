@@ -12,11 +12,11 @@ static IOCommandPool *withWorkLoop(
  IOWorkLoop *inWorkLoop);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to an instance of IOCommandPool if successful, otherwise NULL.
 
-#### Overview
+## Overview
 
 The withWorkLoop method is what is known as a factory method. It creates a new instance of an IOCommandPool and returns a pointer to that object.
 

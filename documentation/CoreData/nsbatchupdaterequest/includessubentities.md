@@ -25,7 +25,7 @@ var includesSubentities: Bool { get set }
 @property BOOL includesSubentities;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md).
 

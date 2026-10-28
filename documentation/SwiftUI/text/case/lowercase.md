@@ -21,7 +21,7 @@ Displays text in all lowercase characters.
 case lowercase
 ```
 
-#### Discussion
+## Discussion
 
 For example, “Hello” would be displayed as “hello”.
 

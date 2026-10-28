@@ -15,7 +15,7 @@ Creates an annotation for an item an object detector finds in an image.
 init(label: String, boundingBox: CGRect, confidence: Double)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this initializer to create an object annotation yourself. The object detector uses it to create object annotations when it makes predictions on your images, such as when you use [`prediction(from:)`](../prediction%28from%29.md).
 

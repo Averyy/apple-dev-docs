@@ -22,7 +22,7 @@ string SearchResultType
 - `physicalFeature`
 - `pointOfInterest`
 
-#### Possible Values
+## Possible Values
 
 - **poi**: A physical feature or a point of interest.
 - **address**: An address such as a street address, suburb, city, state, or country.

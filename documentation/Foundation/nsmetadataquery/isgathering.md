@@ -25,7 +25,7 @@ var isGathering: Bool { get }
 @property (readonly, getter=isGathering) BOOL gathering;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains [`true`](../../Swift/true.md) when the query is in the initial gathering phase; otherwise, [`false`](../../Swift/false.md).
 

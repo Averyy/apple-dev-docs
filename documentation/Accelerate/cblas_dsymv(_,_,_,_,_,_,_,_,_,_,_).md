@@ -25,7 +25,7 @@ func cblas_dsymv(_ ORDER: CBLAS_ORDER, _ UPLO: CBLAS_UPLO, _ N: __LAPACK_int, _ 
 void cblas_dsymv(const enum CBLAS_ORDER ORDER, const enum CBLAS_UPLO UPLO, const __LAPACK_int N, const double ALPHA, const double *A, const __LAPACK_int LDA, const double *X, const __LAPACK_int INCX, const double BETA, double *Y, const __LAPACK_int INCY);
 ```
 
-#### Discussion
+## Discussion
 
 Computes `alpha*A*x + beta*y` and stores the results in `Y`.
 

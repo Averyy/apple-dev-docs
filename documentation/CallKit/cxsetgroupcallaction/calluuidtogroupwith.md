@@ -23,7 +23,7 @@ var callUUIDToGroupWith: UUID? { get set }
 @property (nonatomic, copy, nullable) NSUUID * callUUIDToGroupWith;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, the call associated with the receiver leaves any group it’s currently a member of.
 

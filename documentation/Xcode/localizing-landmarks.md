@@ -13,7 +13,7 @@ Add localizations to the Landmarks sample code project.
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This is an unlocalized version of [Landmarks](../SwiftUI/landmarks-building-an-app-with-liquid-glass.md). Prepare it for localization by adding a String Catalog and import translations (`de.xcloc`) to complete the localization process.
 

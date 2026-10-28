@@ -19,11 +19,11 @@ func hasUnsavedChanges() -> Bool
 - (BOOL) hasUnsavedChanges;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if there are unsaved changes; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 The unsaved changes flag is set automatically whenever changes are made.
 

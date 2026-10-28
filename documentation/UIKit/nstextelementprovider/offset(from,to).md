@@ -23,11 +23,11 @@ optional func offset(from: any NSTextLocation, to: any NSTextLocation) -> Int
 - (NSInteger) offsetFromLocation:(id<NSTextLocation>) from toLocation:(id<NSTextLocation>) to;
 ```
 
-#### Return Value
+## Return Value
 
 An `Integer` that represents the offset between the starting and ending locations.
 
-#### Discussion
+## Discussion
 
 The return value could be positive or negative. This method can return [`NSNotFound`](../../Foundation/nsnotfound-4qp9h.md) when the method can’t represent an offset as an integer value. This can occur, for example, if the locations aren’t in the same document).
 

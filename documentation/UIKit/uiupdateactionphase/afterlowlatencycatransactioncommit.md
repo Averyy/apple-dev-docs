@@ -23,7 +23,7 @@ class var afterLowLatencyCATransactionCommit: UIUpdateActionPhase { get }
 @property (class, nonatomic, readonly) UIUpdateActionPhase * afterLowLatencyCATransactionCommit;
 ```
 
-#### Discussion
+## Discussion
 
 This phase runs after [`flush()`](../../QuartzCore/catransaction/flush%28%29.md) for a low-latency event. Any changes you make to the Core Animation layer tree during this phase or later appear onscreen with the next UI update instead of the current one.
 

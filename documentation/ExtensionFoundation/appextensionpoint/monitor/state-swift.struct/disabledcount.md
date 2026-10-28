@@ -21,7 +21,7 @@ The number of app extensions that someone disabled.
 var disabledCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 A person can disable app extensions to prevent your host app from loading them. This property reflects the number of app extensions someone explicitly disabled.
 

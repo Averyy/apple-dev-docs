@@ -21,11 +21,11 @@ convenience init(tollAmount value: Double, locale: Locale)
 + (instancetype) routeDetailWithTollAmount:(double) value locale:(NSLocale *) locale;
 ```
 
-#### Return Value
+## Return Value
 
 A new @c CPRouteDetail instance representing the toll amount
 
-#### Discussion
+## Discussion
 
 Use this method to display toll costs associated with a route. The toll amount will be formatted according to the provided locale’s currency settings.
 

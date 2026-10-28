@@ -20,7 +20,7 @@ Creates a new machine learning pipeline state asynchronously.
 func makeMachineLearningPipelineState(descriptor: MTL4MachineLearningPipelineDescriptor) async throws -> any MTL4MachineLearningPipelineState
 ```
 
-#### Return Value
+## Return Value
 
 A machine learning pipeline state upon success, otherwise this function throws.
 

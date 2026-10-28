@@ -19,7 +19,7 @@ var rightMargin: CGFloat { get set }
 @property CGFloat rightMargin;
 ```
 
-#### Discussion
+## Discussion
 
 Size is measured in points in the user coordinate space.
 

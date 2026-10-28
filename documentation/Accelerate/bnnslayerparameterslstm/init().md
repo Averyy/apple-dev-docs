@@ -23,7 +23,7 @@ Returns a new long short-term memory (LSTM) parameters structure.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 This initializer returns a new structure with all numeric properties set to `0`.
 

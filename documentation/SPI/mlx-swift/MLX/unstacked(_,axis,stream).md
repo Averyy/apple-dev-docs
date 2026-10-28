@@ -17,11 +17,11 @@ Split an array into a sequence of arrays along the given axis.
 func unstacked(_ array: MLXArray, axis: Int = 0, stream: StreamOrDevice = .default) -> [MLXArray]
 ```
 
-#### Discussion
+## Discussion
 
 The inverse of [`stacked(_:axis:stream:)`](./stacked%28_,axis,stream%29.md). The given axis is removed from each of the returned arrays.
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 

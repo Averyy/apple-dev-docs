@@ -25,7 +25,7 @@ var quantity: HKQuantity { get }
 @property (copy, readonly) HKQuantity * quantity;
 ```
 
-#### Discussion
+## Discussion
 
 If the sample contains more than one quantity, this property returns the sum or average, depending on the sample’s aggregation style (sum for cumulative, average for discrete). To access the individual quantities, use an [`HKQuantitySeriesSampleQuery`](../hkquantityseriessamplequery.md).
 

@@ -25,7 +25,7 @@ var thresholdRange: HMNumberRange { get set }
 @property (nonatomic, copy, readwrite) HMNumberRange * thresholdRange;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to adjust the range of characteristic values that trigger the event.
 

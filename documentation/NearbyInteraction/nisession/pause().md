@@ -22,7 +22,7 @@ func pause()
 - (void) pause;
 ```
 
-#### Discussion
+## Discussion
 
 To resume a paused session, the app calls [`run(_:)`](./run%28_%29.md), passing in the session’s configuration.
 

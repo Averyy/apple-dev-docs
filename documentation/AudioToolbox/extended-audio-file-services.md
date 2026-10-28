@@ -5,7 +5,7 @@
 
 Read and write compressed files and linear PCM audio files using a simplified interface.
 
-#### Overview
+## Overview
 
 Extended Audio File Services provides simplified audio file access, combining features of Audio File Services and Audio Converter Services. It provides a unified interface for reading and writing compressed as well as linear PCM audio files.
 

@@ -21,7 +21,7 @@ Draws the contents of a CGLayer object at the specified point.
 extern void CGContextDrawLayerAtPoint(CGContextRef context, CGPoint point, CGLayerRef layer);
 ```
 
-#### Discussion
+## Discussion
 
 Calling the function `CGContextDrawLayerAtPoint` is equivalent to calling the function `CGContextDrawLayerInRect` with a rectangle that has its origin at `point` and its size equal to the size of the layer.
 

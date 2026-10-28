@@ -19,7 +19,7 @@ optional var isEditable: Bool { get }
 @property (readonly, getter=isEditable) BOOL editable;
 ```
 
-#### Discussion
+## Discussion
 
 The text finder uses this property to validate actions. If is it not implemented, the value is assumed to be [`true`](../../Swift/true.md) .
 

@@ -14,7 +14,7 @@
 gestaltMachineIcon = 'micn'
 ```
 
-#### Discussion
+## Discussion
 
 The selector  you pass to the `Gestalt` function to determine the icon family resource ID for the current type of Macintosh.
 

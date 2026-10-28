@@ -17,11 +17,11 @@ Construct array by repeating given array the number of times given by `repetitio
 func tiled(_ array: MLXArray, repetitions: Int, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Tiled array
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 - [`tiled(_:repetitions:stream:)`](./tiled%28_,repetitions,stream%29-eouf.md)

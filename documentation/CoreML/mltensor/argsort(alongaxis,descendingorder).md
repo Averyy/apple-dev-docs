@@ -21,11 +21,11 @@ Returns the indices (or arguments) of a tensor that give its sorted order along 
 func argsort(alongAxis axis: Int = -1, descendingOrder: Bool = false) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 A `Int32` tensor of sorted indices.
 
-#### Discussion
+## Discussion
 
 For example:
 

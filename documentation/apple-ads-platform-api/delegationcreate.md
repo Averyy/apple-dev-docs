@@ -15,7 +15,7 @@ The request body for creating a delegation on an ad account.
 object DelegationCreate
 ```
 
-#### Overview
+## Overview
 
 `CONTENT_PROVIDER`, for App Store advertising:
 

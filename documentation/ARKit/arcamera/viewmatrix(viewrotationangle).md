@@ -20,11 +20,11 @@ func viewMatrix(viewRotationAngle: CGFloat) -> simd_float4x4
 - (simd_float4x4) viewMatrixForViewRotationAngle:(CGFloat) viewRotationAngle;
 ```
 
-#### Return Value
+## Return Value
 
 The view matrix for the given view angle.
 
-#### Discussion
+## Discussion
 
 The view matrix can be used to transform geometry from world space into camera space for a given view angle.
 

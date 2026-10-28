@@ -25,7 +25,7 @@ var name: String { get }
 @property (copy, readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 This property is passed in as part of the initialization of the persistent container. This name is used to locate the [`NSManagedObjectModel`](../nsmanagedobjectmodel.md) (if the [`NSManagedObjectModel`](../nsmanagedobjectmodel.md) object is not passed in as part of the initialization) and is used to name the persistent store.
 

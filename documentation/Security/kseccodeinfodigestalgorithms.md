@@ -20,7 +20,7 @@ let kSecCodeInfoDigestAlgorithms: CFString
 extern CFStringRef const kSecCodeInfoDigestAlgorithms;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFArray`](../CoreFoundation/cfarray.md) of [`CFNumber`](../CoreFoundation/cfnumber.md) objects indicating the kinds of cryptographic hash functions available within the signature. The ordering of the items in the array has no significance in terms of priority, but determines the order in which the hashes appear in [`kSecCodeInfoCdHashes`](./kseccodeinfocdhashes.md).
 

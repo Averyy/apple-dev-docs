@@ -13,11 +13,11 @@
 errno_t ifnet_stat_increment_in(ifnet_t interface, u_int32_t packets_in, u_int32_t bytes_in, u_int32_t errors_in);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 This function is intended to be called by the driver. This function allows a driver to update the inbound interface counts. The most efficient time to update these counts is when calling ifnet_input.
 

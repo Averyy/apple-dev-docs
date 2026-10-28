@@ -24,7 +24,7 @@ func setPrefersInterruptionOnRouteDisconnect(_ inValue: Bool) throws
 - (BOOL) setPrefersInterruptionOnRouteDisconnect:(BOOL) inValue error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The expected behavior of an app is to pause playback if a route change occurs due to a device no longer being available ([`AVAudioSession.RouteChangeReason.oldDeviceUnavailable`](./routechangereason/olddeviceunavailable.md)). Starting in iOS 17, the system interrupts active Now Playing sessions when a route change occurs due to a disconnection event, but doesn’t interrupt other sessions.
 

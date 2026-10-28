@@ -23,7 +23,7 @@ var currentPace: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * currentPace;
 ```
 
-#### Discussion
+## Discussion
 
 During regular updates, this property is set to the user’s pace. The value in this property is `nil` when you are performing a query for historical pedometer data or when pace information is not yet available for the user. This property is also `nil` for devices that do not support the gathering of pace data.
 

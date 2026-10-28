@@ -19,13 +19,13 @@ object AutoPlacementLayout
 
 - [Apple News Format Release Notes](../AppleNews/apple-news-format-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Use the `AutoPlacementLayout` object to define the margins for ad components that are inserted automatically. This object is different from the [`ComponentLayout`](./componentlayout.md) object and supports only one property, `margin`.
 
 This object can be used in [`AdvertisementAutoPlacement`](./advertisementautoplacement.md).
 
-##### Example
+### Example
 
 ```json
 {

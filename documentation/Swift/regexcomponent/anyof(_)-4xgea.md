@@ -23,7 +23,7 @@ static func anyOf<S>(_ s: S) -> CharacterClass where S : Sequence, S.Element == 
 
 Available when `Self` is `CharacterClass`.
 
-#### Discussion
+## Discussion
 
 Calling this method with a group of characters is equivalent to listing those characters in a custom character class in regex syntax. For example, the two regexes in this example are equivalent:
 

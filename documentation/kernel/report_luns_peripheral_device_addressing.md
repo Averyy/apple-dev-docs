@@ -13,7 +13,7 @@
 typedef struct REPORT_LUNS_PERIPHERAL_DEVICE_ADDRESSING REPORT_LUNS_PERIPHERAL_DEVICE_ADDRESSING;
 ```
 
-#### Discussion
+## Discussion
 
 This structure represents a Peripheral Device Addressing scheme.
 

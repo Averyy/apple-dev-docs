@@ -23,11 +23,11 @@ var shouldRemovePresentersView: Bool { get }
 @property (nonatomic, readonly) BOOL shouldRemovePresentersView;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the view should be removed or [`false`](../../Swift/false.md) if it should not.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns [`false`](../../Swift/false.md). If you implement a presentation that does not cover the presenting view controller’s content entirely, override this method and return [`false`](../../Swift/false.md).
 

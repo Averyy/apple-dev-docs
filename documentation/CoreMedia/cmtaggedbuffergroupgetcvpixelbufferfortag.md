@@ -21,7 +21,7 @@ Gets the single pixel buffer in a group which contains a given tag, if present.
 extern CVPixelBufferRefCMTaggedBufferGroupGetCVPixelBufferForTag(CMTaggedBufferGroupRef group, CMTag tag, CFIndex *indexOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the unique pixel buffer associated with tag, or `NULL` if there were multiple pixel buffers or no pixel buffer could be found.
 

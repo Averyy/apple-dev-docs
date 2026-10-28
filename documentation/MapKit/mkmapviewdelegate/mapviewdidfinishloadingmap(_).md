@@ -24,7 +24,7 @@ optional func mapViewDidFinishLoadingMap(_ mapView: MKMapView)
 - (void) mapViewDidFinishLoadingMap:(MKMapView *) mapView;
 ```
 
-#### Discussion
+## Discussion
 
 The map view calls this method when it finishes reloading the map tiles associated with the current request. The map view requests map tiles when a new visible area scrolls into view and tiles aren’t already available. The map may also request map tiles for portions of the map that aren’t currently visible. For example, the map view may load tiles immediately surrounding the currently visible area as needed to handle small pans by the user.
 

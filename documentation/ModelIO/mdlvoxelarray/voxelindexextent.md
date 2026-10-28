@@ -24,7 +24,7 @@ var voxelIndexExtent: MDLVoxelIndexExtent { get }
 @property (nonatomic, readonly) MDLVoxelIndexExtent voxelIndexExtent;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines which [`MDLVoxelIndex`](../mdlvoxelindex.md) values are valid for referring to the contents of the voxel array using methods such as [`setVoxelAtIndex(_:)`](./setvoxelatindex%28_%29.md) or [`voxelBoundingBox(atIndex:)`](./voxelboundingbox%28atindex%29.md). For example, if the minimum extent is `{0, 0, 0, 0}` and the maximum extent is `{10, 10, 10, 0}`, the voxel index `{5, 5, 5, 0}` lies within the array but the voxel index `{0, 20, 10, 0}` does not.
 

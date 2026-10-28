@@ -21,7 +21,7 @@ The value wrapped by this instance.
 var base: Any { get }
 ```
 
-#### Discussion
+## Discussion
 
 The `base` property can be cast back to its original type using one of the type casting operators (`as?`, `as!`, or `as`).
 

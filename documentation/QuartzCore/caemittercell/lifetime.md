@@ -24,7 +24,7 @@ var lifetime: Float { get set }
 @property float lifetime;
 ```
 
-#### Discussion
+## Discussion
 
 The lifetime of the cell will vary by a random amount with the range specified by [`lifetimeRange`](./lifetimerange.md).
 

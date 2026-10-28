@@ -5,15 +5,15 @@
 
 Configure your navigation app so people can set it as the default on their devices.
 
-#### Overview
+## Overview
 
 In iOS and iPadOS 18.4 and later in the European Union (EU), and in iOS 26.2 and later in Japan, a person may select an app other than the Maps app to provide navigation instructions. If your app provides navigation services and you want it to optionally become the default navigation app, there are several steps you need to take.
 
-#### Add the Default Navigation App entitlement
+## Add the Default Navigation App entitlement
 
 In Xcode, add the `com.apple.developer.navigation-app` entitlement to the `.entitlements` file for your app’s project. For instructions on how to add this entitlement, see [`Default Navigation`](../BundleResources/entitlements/com.apple.developer.navigation-app.md).
 
-#### Adopt the geonavigation URL scheme
+## Adopt the geonavigation URL scheme
 
 To provide navigation capabilities in your app, you need to adopt the `geo-navigation://` URL scheme. This scheme accepts the following types of navigation queries:
 
@@ -32,7 +32,7 @@ You can use several of these parameters in combination to provide a number of ac
 
 > **Note**: The system doesn’t pass Apple place IDs, transportation modes, or route preferences to default navigation apps.
 
-#### Add the geonavigation URL type support and URL scheme
+## Add the geonavigation URL type support and URL scheme
 
 Use the following steps to add the `geo-navigation` support to your app’s `Info.plist` file:
 
@@ -46,7 +46,7 @@ Use the following steps to add the `geo-navigation` support to your app’s `Inf
 
 Before your app can open incoming `geo-navigation:`  URLs, it needs to support this scheme as a custom URL scheme. To add this support, see [Defining a custom URL scheme for your app](../Xcode/defining-a-custom-url-scheme-for-your-app.md).
 
-#### Prepare your app for submission to App Store Connect
+## Prepare your app for submission to App Store Connect
 
 To submit your app to App Store Connect, it needs to meet the following criteria:
 

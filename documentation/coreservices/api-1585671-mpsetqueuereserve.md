@@ -15,11 +15,11 @@ Reserves space for messages on a specified message queue.
 OSStatus MPSetQueueReserve(MPQueueID queue, ItemCount count);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 [`MPNotifyQueue`](./api-1585699-mpnotifyqueue.md)  allocates spaces for messages dynamically; that is, memory to hold the message is allocated for the queue at the time of the call. In most cases this method is both speed and storage efficient. However, it is possible that, due to lack of memory resources, space for the message may not be available at the time of the call; in such cases,  [`MPNotifyQueue`](./api-1585699-mpnotifyqueue.md)  will return `kInsufficientResourcesErr`. 
 

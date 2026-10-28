@@ -23,7 +23,7 @@ optional func application(_ application: UIApplication, didRegisterForRemoteNoti
 - (void) application:(UIApplication *) application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *) deviceToken;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method after it successfully registers your app with APNs.  In your implementation of this method, send the contents of the `deviceToken` parameter to the server that you use to generate remote notifications. Never cache the device token locally on the user’s device. Device tokens can change periodically, so caching the value risks sending an invalid token to your server. If the device token hasn’t changed, registering with APNs and returning the token happens quickly.
 

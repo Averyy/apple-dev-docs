@@ -20,7 +20,7 @@ var completeCount: UInt32
 uint32_t completeCount;
 ```
 
-#### Discussion
+## Discussion
 
 [IOUSBHost](../IOUSBHost.md) updates this field upon completion of the frame.
 

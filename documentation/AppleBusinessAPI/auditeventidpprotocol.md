@@ -20,7 +20,7 @@ string AuditEventIdpProtocol
 - `OIDC`
 - `SAML`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

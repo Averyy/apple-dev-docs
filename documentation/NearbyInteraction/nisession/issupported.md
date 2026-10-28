@@ -26,11 +26,11 @@ class var isSupported: Bool { get }
 
 - [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  This property is deprecated.
 
-##### Check the Device’s Supported Features
+### Check the Device’s Supported Features
 
 In iOS 16 and watchOS 9, check a device’s supported features with [`deviceCapabilities`](./devicecapabilities.md) instead of calling this function.
 

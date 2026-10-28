@@ -21,7 +21,7 @@ The decode timestamp of the first sample in the buffer.
 var decodeTimeStamp: CMTime { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system expects sample buffers to store samples in their decode order, even if their presentation order is different.
 

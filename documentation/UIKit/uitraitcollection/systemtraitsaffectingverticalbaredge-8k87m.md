@@ -19,7 +19,7 @@ The system traits that affect the value of `verticalBarEdge`.
 @property (class, nonatomic, readonly) NSArray<Class<UITraitDefinition>> * systemTraitsAffectingVerticalBarEdge;
 ```
 
-#### Discussion
+## Discussion
 
 Pass this array to `-registerForTraitChanges:withHandler:` to be notified when the vertical bar edge changes. Note that it is possible for the actual edge to be the same even if the traits affecting the vertical bar edge themselves may have changed.
 

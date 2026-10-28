@@ -15,11 +15,11 @@ Initialize a world anchor that should be shared with nearby participants.
 extern ar_world_anchor_tar_world_anchor_shared_with_nearby_participants_create(simd_float4x4 origin_from_anchor_transform);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `ar_world_anchor_t` which is marked to be shared with nearby participants.
 
-#### Discussion
+## Discussion
 
 :
 

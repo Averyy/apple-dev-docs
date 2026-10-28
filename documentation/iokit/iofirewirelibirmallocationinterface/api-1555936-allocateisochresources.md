@@ -16,7 +16,7 @@ Use this interface to allocate isochronous resources
 IOReturn (*allocateIsochResources)(IOFireWireLibIRMAllocationRef self, UInt8 isochChannel, UInt32 bandwidthUnits);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if allocation success
 

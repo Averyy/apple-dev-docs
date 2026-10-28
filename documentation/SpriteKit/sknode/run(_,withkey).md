@@ -29,7 +29,7 @@ func run(_ action: SKAction, withKey key: String)
 
 - [Controlling Actions Precisely by Using Names](../controlling-actions-precisely-by-using-names.md)
 
-#### Discussion
+## Discussion
 
 This method is identical to [`run(_:)`](./run%28_%29.md), but the action is stored so that it can be retrieved later. If an action using the same key is already running, it is removed before the new action is added.
 

@@ -19,11 +19,11 @@ func AERemoveObjectAccessor(_ desiredClass: DescType, _ containerType: DescType,
 OSErr AERemoveObjectAccessor(DescType desiredClass, DescType containerType, OSLAccessorUPP theAccessor, Boolean isSysHandler);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 In macOS, your application can not make an object callback function available to other applications by installing it in a system object accessor dispatch table.
 

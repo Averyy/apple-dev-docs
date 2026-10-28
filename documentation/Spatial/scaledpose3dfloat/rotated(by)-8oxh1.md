@@ -21,7 +21,7 @@ Returns a pose with a rotation that’s rotated by the specified rotation.
 func rotated(by rotation: Rotation3DFloat) -> ScaledPose3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns A scaled pose with a rotation that’s rotated by the specified rotation.
 

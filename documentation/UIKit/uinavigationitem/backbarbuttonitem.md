@@ -22,7 +22,7 @@ var backBarButtonItem: UIBarButtonItem? { get set }
 @property (nonatomic, strong, readwrite, nullable) UIBarButtonItem * backBarButtonItem;
 ```
 
-#### Discussion
+## Discussion
 
 When this navigation item is immediately below the top item in the stack, the navigation controller derives the Back button for the navigation bar from this navigation item. If you want to specify a custom title or image for the Back button, you can assign a custom bar button item (with your custom title or image) to this property. When you configure your bar button item, don’t assign a custom view to it; the navigation item ignores custom views in the [`backBarButtonItem`](./backbarbuttonitem.md).
 

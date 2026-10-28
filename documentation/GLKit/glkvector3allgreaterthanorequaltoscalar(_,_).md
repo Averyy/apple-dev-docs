@@ -22,7 +22,7 @@ func GLKVector3AllGreaterThanOrEqualToScalar(_ vector: GLKVector3, _ value: Floa
 static bool GLKVector3AllGreaterThanOrEqualToScalar(GLKVector3 vector, float value);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if all of the vector’s components are greater than or equal to the scalar value, [`false`](../Swift/false.md) otherwise.
 

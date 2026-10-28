@@ -22,7 +22,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to cancel an upload job that has not yet completed. This is useful when a resource is uploaded through another path (e.g., the main app) and the background upload job is no longer needed, avoiding wasteful duplicate uploads.
 

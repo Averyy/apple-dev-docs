@@ -24,11 +24,11 @@ func resizableImage(withCapInsets capInsets: UIEdgeInsets) -> UIImage
 - (UIImage *) resizableImageWithCapInsets:(UIEdgeInsets) capInsets;
 ```
 
-#### Return Value
+## Return Value
 
 A new image object with the specified cap insets.
 
-#### Discussion
+## Discussion
 
 You use this method to add cap insets to an image or to change the existing cap insets of an image. In both cases, you get back a new image and the original image remains untouched. For example, you can use this method to create a background image for a button with borders and corners: when the button is resized, the corners of the image remain unchanged, but the borders and center of the image expand to cover the new size.
 

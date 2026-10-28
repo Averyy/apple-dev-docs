@@ -26,7 +26,7 @@ var attributedName: NSAttributedString { get set }
 @property (nonatomic, copy) NSAttributedString * attributedName;
 ```
 
-#### Discussion
+## Discussion
 
 If you set the value of this property, the system uses this value instead of [`name`](./name.md).
 

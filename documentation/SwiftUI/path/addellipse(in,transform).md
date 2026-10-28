@@ -21,7 +21,7 @@ Adds an ellipse that fits inside the specified rectangle to the path.
 mutating func addEllipse(in rect: CGRect, transform: CGAffineTransform = .identity)
 ```
 
-#### Discussion
+## Discussion
 
 The ellipse is approximated by a sequence of Bézier curves. Its center is the midpoint of the rectangle defined by the `rect` parameter. If the rectangle is square, then the ellipse is circular with a radius equal to one-half the width (or height) of the rectangle. If the `rect` parameter specifies a rectangular shape, then the major and minor axes of the ellipse are defined by the width and height of the rectangle.
 

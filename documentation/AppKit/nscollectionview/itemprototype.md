@@ -21,7 +21,7 @@ var itemPrototype: NSCollectionViewItem? { get set }
 @property (strong, nullable) NSCollectionViewItem * itemPrototype;
 ```
 
-#### Discussion
+## Discussion
 
 Whenever possible, use a data source object to provide items. For more information, see the [`dataSource`](./datasource.md) property.
 

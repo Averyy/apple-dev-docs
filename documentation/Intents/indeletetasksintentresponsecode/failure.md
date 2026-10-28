@@ -25,7 +25,7 @@ case failure
 INDeleteTasksIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code for both transient and unrecoverable errors that prevent you from deleting the tasks from the task list.
 

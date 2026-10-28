@@ -19,7 +19,7 @@ class PDFAnnotationLink
 @interface PDFAnnotationLink : PDFAnnotation
 ```
 
-#### Overview
+## Overview
 
 A PDFAnnotationLink object represents either a hypertext link to another location in the document (specified as a PDFDestination object) or a URL.
 

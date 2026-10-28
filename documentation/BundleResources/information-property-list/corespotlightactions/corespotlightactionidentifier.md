@@ -16,7 +16,7 @@ A string an app defines to identify the action.
 - **Name**: `CoreSpotlightActionIdentifier`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Core Spotlight includes the value of this key in the `userInfo` dictionary of the [`NSUserActivity`](../../../Foundation/nsuseractivity.md) when it invokes the app.
 

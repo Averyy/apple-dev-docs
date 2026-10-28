@@ -5,7 +5,7 @@
 
 Alert people before displaying images or video that might be sensitive.
 
-#### Overview
+## Overview
 
 In iOS 17 and macOS 14, the Sensitive Content Warning user preference and the Communication Safety parental control in Screen Time let people indicate their desire to detect sensitive content in images and video. To provide people their preferred experience while those settings are active, use the Sensitive Content Analysis framework to check incoming media before displaying it.
 
@@ -19,7 +19,7 @@ The Sensitive Content Analysis framework doesn’t dictate your user interface. 
 
 > ❗ **Important**:  Apple provides the Sensitive Content Analysis framework to prevent people from viewing unwanted content, not as a way for an app to report on someone’s behavior. To protect privacy, don’t transmit any information off the person’s device about whether the Sensitive Content Analysis framework identified an image or video as containing sensitive content. For more information, see the [Developer Program License Agreement](https://developer.apple.com/programs/apple-developer-program-license-agreement/#sensitive-content-analysis-framework).
 
-##### Add the app entitlement
+### Add the app entitlement
 
 The OS requires the [`com.apple.developer.sensitivecontentanalysis.client`](../BundleResources/entitlements/com.apple.developer.sensitivecontentanalysis.client.md) entitlement in your app’s code signature to use Sensitive Content Analysis. Calls to the framework fail to return positive results without it. You can add this entitlement to your app by turning on the Sensitive Content Analysis capability in Xcode; see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
@@ -27,7 +27,7 @@ Any team member of the paid App Store developer program can add the entitlement 
 
 > **Note**:  The Sensitive Content Analysis entitlement isn’t available for Enterprise development or for people with free accounts.
 
-##### Check images or video for sensitive content
+### Check images or video for sensitive content
 
 To check a user-provided image for sensitive content, create an [`SCSensitivityAnalyzer`](./scsensitivityanalyzer.md) object.
 
@@ -73,7 +73,7 @@ let response = try await handler.hasSensitiveContent()
 
 > **Note**: To analyze a video stream rather than static files, see [`SCVideoStreamAnalyzer`](./scvideostreamanalyzer.md).
 
-##### Tailor responses to content categories
+### Tailor responses to content categories
 
 When the framework detects sensitive content, check the [`detectedTypes`](./scsensitivityanalysis/detectedtypes.md) property to determine the specific categories present. This enables your app to provide context-appropriate interventions based on the nature of the content.
 
@@ -115,7 +115,7 @@ Consider implementing more cautious reveal mechanisms for gore and violence cont
 
 > **Note**:  The Sensitive Content Analysis framework sets [`detectedTypes`](./scsensitivityanalysis/detectedtypes.md) only when [`isSensitive`](./scsensitivityanalysis/issensitive.md) is `true`. Your app can continue to use `isSensitive` alone if you don’t need to differentiate between content categories.
 
-##### Handle performance implications
+### Handle performance implications
 
 Although sensitivity checks incur additional image processing and introduce a delay while checking video, the presence of active user preferences indicate the person’s expectation to receive protections at the cost of time to review.
 
@@ -128,7 +128,7 @@ let handler = analyzer.videoAnalysis(forFileAt: videoFileUrl)
 let progress = handler.progress
 ```
 
-##### Tailor user interface for the Sensitive Content Warning setting
+### Tailor user interface for the Sensitive Content Warning setting
 
 When your app detects sensitive content, present a UI that coordinates with the active `analysisPolicy`.
 
@@ -141,7 +141,7 @@ For example, by providing a blurred version of the potentially sensitive image i
 
 ![An image of an iPhone displaying the Messages app. The app presents a conversation that contains an image the user received from a contact. The image is blurred, and contains text that reads: This may be sensitive. The image view contains two buttons, from which a callout extends that reads: Brief UI. The first button resides in the upper right corner of the image and contains a warning triangle. The second button resides in the lower right corner and contains the text Show. ](https://developer.apple.com/tutorials/images/com.apple.SensitiveContentAnalysis/detecting_nudity_in_media_and_providing_intervention_options-2@2x.png)
 
-##### Tailor user interface for the Communication Safety parental control
+### Tailor user interface for the Communication Safety parental control
 
 When a person turns the Communication Safety option in Screen Time on, intervene in your app as it receives sensitive content over a network, and before transmitting sensitive content over a network.
 

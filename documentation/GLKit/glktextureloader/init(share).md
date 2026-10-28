@@ -21,11 +21,11 @@ init(share context: NSOpenGLContext)
 - (instancetype) initWithShareContext:(NSOpenGLContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized texture loader.
 
-#### Discussion
+## Discussion
 
 You only create a texture loader object when your app needs to load textures asynchronously.
 

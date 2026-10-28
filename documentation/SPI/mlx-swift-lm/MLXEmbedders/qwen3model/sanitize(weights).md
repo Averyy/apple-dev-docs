@@ -17,11 +17,11 @@ Cleans and remaps external weight keys to match the internal module structure.
 func sanitize(weights: [String : MLXArray]) -> [String : MLXArray]
 ```
 
-#### Return Value
+## Return Value
 
 A sanitized dictionary with keys correctly prefixed with `model.`.
 
-#### Discussion
+## Discussion
 
 This is vital when loading weights from formats like Hugging Face `safetensors`.
 

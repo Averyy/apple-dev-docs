@@ -24,7 +24,7 @@ class let systemPrefersReducedResourceUsageDidChangeNotification: NSNotification
 extern NSNotificationName const UIApplicationSystemPrefersReducedResourceUsageDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The object of the notification is the `UIApplication` object. The `userInfo` dictionary is empty. Re-read `systemPrefersReducedResourceUsage` to get the new value.
 

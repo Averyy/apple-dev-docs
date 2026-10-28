@@ -25,7 +25,7 @@ struct SearchFieldPlacement
 
 - [Adding a search interface to your app](./adding-a-search-interface-to-your-app.md)
 
-#### Overview
+## Overview
 
 You can give a preferred placement to any of the searchable modifiers, like [`searchable(text:placement:prompt:)`](./view/searchable%28text,placement,prompt%29.md):
 

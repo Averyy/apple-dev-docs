@@ -19,7 +19,7 @@ convenience init(inspectorWithViewController viewController: NSViewController)
 + (instancetype) inspectorWithViewController:(NSViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 14.0 and later, inspectors use standard system default values for these properties:
 

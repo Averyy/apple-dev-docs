@@ -24,7 +24,7 @@ var requestedLength: Int { get }
 @property (nonatomic, readonly) NSInteger requestedLength;
 ```
 
-#### Discussion
+## Discussion
 
 If the content length of the resource is unknown, the sum of the [`requestedLength`](./requestedlength.md) and [`requestedOffset`](./requestedoffset.md) properties may be greater than the actual content length. When this situation occurs, an application must attempt to provide as much of the requested data beginning at the [`requestedOffset`](./requestedoffset.md) property as the resource contains. The application must then invoke either the [`AVAssetResourceLoadingRequest`](../avassetresourceloadingrequest.md) instance’s [`finishLoading()`](../avassetresourceloadingrequest/finishloading%28%29.md) method upon success, or the [`finishLoading(with:)`](../avassetresourceloadingrequest/finishloading%28with%29.md) method if an error is encountered during the loading.
 

@@ -24,7 +24,7 @@ init(leaderboard: GKLeaderboard, playerScope: GKLeaderboard.PlayerScope)
 - (instancetype) initWithLeaderboard:(GKLeaderboard *) leaderboard playerScope:(GKLeaderboardPlayerScope) playerScope;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized view controller.
 

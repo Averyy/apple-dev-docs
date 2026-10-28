@@ -6,17 +6,21 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.br
 
 # mlx.core.broadcast_to
 
-**broadcast_to(*a: scalar | array*, */*, *shape: Sequence[int]*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Broadcast an array to the given shape.
+```python
+broadcast_to(a: scalar | array, /, shape: Sequence[int], *, stream: StreamOrDevice = None) → array
+```
+
+Broadcast an array to the given shape.
+
 The broadcasting semantics are the same as Numpy.
 
-Parameters:
+**Parameters:**
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**shape** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – The shape to broadcast to.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **shape** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)([int](https://docs.python.org/3/builtins/functions.html#int))) – The shape to broadcast to.
 
-Returns:
-The output array with the new shape.
+**Returns:**
+: The output array with the new shape.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

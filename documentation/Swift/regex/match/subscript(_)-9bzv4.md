@@ -23,7 +23,7 @@ subscript(name: String) -> AnyRegexOutput.Element? { get }
 
 Available when `Output` is `AnyRegexOutput`.
 
-#### Return Value
+## Return Value
 
 An element providing information about the capture, if there is a capture named `name`; otherwise, `nil`.
 

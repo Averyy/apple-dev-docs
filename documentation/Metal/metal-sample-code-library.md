@@ -4,7 +4,7 @@
 
 Explore the complete set of Metal samples.
 
-#### Overview
+## Overview
 
 Browse the topics below to find samples relevant to a concept you want to learn more about, starting with the basic computation and render workflows. The samples in the lighting and multiple technique sections demonstrate how to take advantage of the unique GPU architecture of Apple silicon.
 

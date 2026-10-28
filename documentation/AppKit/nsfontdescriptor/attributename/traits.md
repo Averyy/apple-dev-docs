@@ -19,7 +19,7 @@ static let traits: NSFontDescriptor.AttributeName
 extern NSFontDescriptorAttributeName NSFontTraitsAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSDictionary`](../../../Foundation/nsdictionary.md) object. The default value is supplied by the font. See [`NSFontDescriptor.TraitKey`](../traitkey.md) for dictionary keys.
 

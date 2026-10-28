@@ -5,7 +5,7 @@
 
 Package your app-specific data into a template and create a timeline entry for that template.
 
-#### Overview
+## Overview
 
 ClockKit periodically requests timeline entries from your complication’s data source. A timeline entry consists of a complication template that you have configured with your app’s data and a date that specifies when ClockKit displays that template.
 
@@ -13,7 +13,7 @@ ClockKit periodically requests timeline entries from your complication’s data 
 
 Your data source packages app-specific data into a template that ClockKit can display onscreen. To create the template, you examine the provided [`CLKComplication`](./clkcomplication.md) object, select an appropriate template, fill the template with data from your app, and then create a timeline entry for the template.
 
-##### Examine the Complication Object
+### Examine the Complication Object
 
 When ClockKit requests a template, it always provides a [`CLKComplication`](./clkcomplication.md) object that describes the complication. The complication has an [`identifier`](./clkcomplication/identifier.md) that your app defines, and a [`family`](./clkcomplication/family.md) from the [`CLKComplicationFamily`](./clkcomplicationfamily.md) enumeration. Each [`identifier`](./clkcomplication/identifier.md) defines a separate complication type for the specified [`family`](./clkcomplication/family.md).
 
@@ -65,7 +65,7 @@ Select and create a template for the specified family from the following pages:
 
 > **Note**:  For watchOS 6 and earlier, your app can provide only one complication per family. To support these versions of watchOS, you only need to check the complication’s [`family`](./clkcomplication/family.md) property when determining which template to use.
 
-##### Create Data Providers to Fill the Template
+### Create Data Providers to Fill the Template
 
 Data providers take a raw value and format it for the template. For example, the [`CLKSimpleTextProvider`](./clksimpletextprovider.md) takes two strings—a short string and a long string. If you provide both, ClockKit selects the best string for the template’s size.
 
@@ -103,7 +103,7 @@ let template = CLKComplicationTemplateModularSmallStackText(
     line2TextProvider: nameProvider)
 ```
 
-##### Use Complication Data
+### Use Complication Data
 
 The [`CLKComplicationDescriptor`](./clkcomplicationdescriptor.md) class’s `userInfo` and `userActivity` properties let you pass additional data about the complication. You can use this data to simplify creating timeline entires, and to launch a particular scene in your app.
 
@@ -127,7 +127,7 @@ let nameProvider = CLKSimpleTextProvider(
 let typeIdentifier = complication.userInfo?[myTypeIdentifierKey] as? String ?? "Undefined"
 ```
 
-##### Create the Timeline Entry Object
+### Create the Timeline Entry Object
 
 Create a [`CLKComplicationTimelineEntry`](./clkcomplicationtimelineentry.md) object using the template and the desired date. For the current timeline entry, you must specify a date equal to or earlier than the current time.
 

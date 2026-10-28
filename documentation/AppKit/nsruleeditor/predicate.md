@@ -19,7 +19,7 @@ var predicate: NSPredicate? { get }
 @property (strong, readonly, nullable) NSPredicate * predicate;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate implements [`NSRuleEditor`](../nsruleeditor.md), this property contains the rule editor’s predicate. If the delegate does not implement [`NSRuleEditor`](../nsruleeditor.md), or if the delegate does not return enough parts to construct a full predicate, this property contains `nil`.
 

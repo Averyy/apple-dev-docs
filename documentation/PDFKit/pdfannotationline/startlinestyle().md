@@ -19,7 +19,7 @@ func startLineStyle() -> PDFLineStyle
 - (PDFLineStyle) startLineStyle;
 ```
 
-#### Return Value
+## Return Value
 
 The line ending style for the starting point of the line.
 

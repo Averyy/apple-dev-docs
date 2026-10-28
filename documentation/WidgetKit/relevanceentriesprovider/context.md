@@ -15,7 +15,7 @@ An object that contains details about how a widget is rendered.
 typealias Context = RelevanceEntriesProviderContext
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`RelevanceEntriesProviderContext`](../relevanceentriesprovidercontext.md).
 

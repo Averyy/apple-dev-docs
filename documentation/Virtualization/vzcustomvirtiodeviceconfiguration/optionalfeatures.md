@@ -19,7 +19,7 @@ var optionalFeatures: VZVirtioFeatureSet { get }
 @property (strong, readonly) VZVirtioFeatureSet * optionalFeatures;
 ```
 
-#### Discussion
+## Discussion
 
 The optional features are the set of features that the guest driver may or may not accept, see [`negotiatedFeatures`](../vzcustomvirtiodevice/negotiatedfeatures.md) for the set of features that the guest accepts. A few feature bits are always set internally by default for optimal performance.
 

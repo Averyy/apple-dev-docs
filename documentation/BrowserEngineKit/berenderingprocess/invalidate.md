@@ -17,7 +17,7 @@ Stops the rendering process.
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 The system halts the rendering extension process for your browser app when you call this function. In platform versions earlier than iOS 18, the system marks the rendering process as no longer in use, and might stop it at a later time to free its resources. The system doesn’t call the interruption handler you pass when you launched the extension.
 

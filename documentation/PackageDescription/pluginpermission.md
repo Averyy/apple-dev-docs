@@ -15,7 +15,7 @@ The type of permission a plug-in requires.
 enum PluginPermission
 ```
 
-#### Overview
+## Overview
 
 Supported types are [`PluginPermission.allowNetworkConnections(scope:reason:)`](./pluginpermission/allownetworkconnections%28scope,reason%29.md) and [`PluginPermission.writeToPackageDirectory(reason:)`](./pluginpermission/writetopackagedirectory%28reason%29.md).
 

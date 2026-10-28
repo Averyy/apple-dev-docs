@@ -21,7 +21,7 @@ A value that indicates the estimated amount of time remaining to complete the pr
 @property (copy, nullable) NSNumber * estimatedTimeRemaining;
 ```
 
-#### Discussion
+## Discussion
 
 If present, [`Progress`](../progress.md) presents additional information in its localized description by setting a value in the `userInfo` dictionary.
 

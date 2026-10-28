@@ -19,7 +19,7 @@ func MDQueryGetAttributeValueOfResultAtIndex(_ query: MDQuery!, _ name: CFString
 void * MDQueryGetAttributeValueOfResultAtIndex(MDQueryRef query, CFStringRef name, CFIndex idx);
 ```
 
-#### Return Value
+## Return Value
 
 The value of the attribute, or `NULL` if the attribute doesn't exist for the specified result.
 

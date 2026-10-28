@@ -17,7 +17,7 @@ Generate uniformly distributed random numbers with a `RangeExpression<Float>` (s
 func uniform(_ range: Range<Float> = 0 ..< 1, _ shape: some Collection<Int> = [], type: (some HasDType & BinaryFloatingPoint).Type = Float.self, key: (some RandomStateOrKey)? = MLXArray?.none, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Specialization to make it easy to call with `Float`:
 

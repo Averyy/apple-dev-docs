@@ -41,7 +41,7 @@ var shadowColor: NSColor { get set }
 @property (nonatomic) NSColor * shadowColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default color is black with an opacity (alpha) of `0.5`.
 

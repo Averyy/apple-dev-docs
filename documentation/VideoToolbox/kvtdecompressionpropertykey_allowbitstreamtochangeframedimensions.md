@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_AllowBitstreamToChangeFrameDimensions: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_AllowBitstreamToChangeFrameDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 This is an optional property only supported by video decoders for bitstream formats that have a provision for specifying output dimensions per-frame, such as AV1.
 

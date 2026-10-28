@@ -17,15 +17,15 @@ Preview a widget with an app intent configuration, using the specified timeline 
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Preview<Widget, Provider>(_ name: String? = nil, as family: WidgetFamily, using intent: Provider.Intent, widget: @escaping () -> Widget, timelineProvider: @escaping () -> Provider) where Widget : Widget, Provider : AppIntentTimelineProvider
+@freestanding(declaration)
+macro Preview<Widget, Provider>(_ name: String? = nil, as family: WidgetFamily, using intent: Provider.Intent, widget: @escaping () -> Widget, timelineProvider: @escaping () -> Provider) where Widget : Widget, Provider : AppIntentTimelineProvider
 ```
 
 ## Mentions
 
 - [Previewing widgets and Live Activities in Xcode](./previewing-widgets-and-live-activities-in-xcode.md)
 
-#### Overview
+## Overview
 
 Provide the preview with sample data and use it to step through the timeline while ignoring the dates of the entries, and test out the transitions between them.
 

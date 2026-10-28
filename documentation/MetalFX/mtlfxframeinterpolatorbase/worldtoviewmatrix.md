@@ -24,7 +24,7 @@ var worldToViewMatrix: simd_float4x4 { get set }
 @property (nonatomic) simd_float4x4 worldToViewMatrix;
 ```
 
-#### Discussion
+## Discussion
 
 Set this and [`viewToClipMatrix`](./viewtoclipmatrix.md) to the matrices you use to render the scene into the color buffer. This frame interpolator derives camera-only motion from the pair, and treats two identity matrices as “not supplied”.
 

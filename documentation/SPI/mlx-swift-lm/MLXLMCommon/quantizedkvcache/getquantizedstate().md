@@ -17,7 +17,7 @@ Get current quantized keys and values as tuples (efficient access)
 func getQuantizedState() -> ((MLXArray, MLXArray, MLXArray?), (MLXArray, MLXArray, MLXArray?))?
 ```
 
-#### Return Value
+## Return Value
 
 Tuple of ((keyWeight, keyScales, keyBiases), (valueWeight, valueScales, valueBiases))
 

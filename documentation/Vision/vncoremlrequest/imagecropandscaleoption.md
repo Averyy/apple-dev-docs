@@ -24,7 +24,7 @@ var imageCropAndScaleOption: VNImageCropAndScaleOption { get set }
 @property (nonatomic) VNImageCropAndScaleOption imageCropAndScaleOption;
 ```
 
-#### Discussion
+## Discussion
 
 Scaling an image ensures that the entire image fits into the algorithm’s input image dimensions, which may require a change in aspect ratio. Each crop-and-scale option transforms the input image in a different way.
 

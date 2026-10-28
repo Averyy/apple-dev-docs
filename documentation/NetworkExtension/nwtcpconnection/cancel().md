@@ -26,7 +26,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 This will clean up the resources associated with this object and transition this object to the `NWTCPConnectionStateCancelled` state.
 

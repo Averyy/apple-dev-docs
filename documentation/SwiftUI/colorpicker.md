@@ -20,7 +20,7 @@ nonisolated
 struct ColorPicker<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 The color picker shows the currently selected color and displays the larger system color picker that allows people to select a new color.
 

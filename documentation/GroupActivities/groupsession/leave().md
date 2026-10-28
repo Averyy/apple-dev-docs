@@ -24,7 +24,7 @@ final func leave()
 
 - [Joining and managing a shared activity](../joining-and-managing-a-shared-activity.md)
 
-#### Discussion
+## Discussion
 
 When you call this method, the session transitions to the [`GroupSession.State.invalidated(reason:)`](./state-swift.enum/invalidated%28reason%29.md) state and stops the delivery of session-related updates. Call this method when the user dismisses your app’s activity-related UI.
 

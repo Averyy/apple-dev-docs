@@ -23,7 +23,7 @@ convenience init(fetchDescriptor: FetchDescriptor<Element> = FetchDescriptor<Ele
 
 Available when `Element` conforms to `PersistentModel` and `SectionTitle` is `String`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the initial fetch fails.
 

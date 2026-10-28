@@ -24,11 +24,11 @@ class func confirmationRequired(with placemarkToConfirm: CLPlacemark?) -> Self
 + (instancetype) confirmationRequiredWithPlacemarkToConfirm:(CLPlacemark *) placemarkToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INPlacemarkResolutionResult`](../inplacemarkresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to the specified object but you want the user to confirm that value.
 

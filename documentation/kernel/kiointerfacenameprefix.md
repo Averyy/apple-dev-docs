@@ -15,7 +15,7 @@ A property of IONetworkInterface objects.
 #define kIOInterfaceNamePrefix
 ```
 
-#### Discussion
+## Discussion
 
 The kIOInterfaceNamePrefix property has an OSString value that describes the string prefix for the BSD name assigned to the interface.
 

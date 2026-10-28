@@ -23,7 +23,7 @@ func deactivateDevice(_ device: MediaOutputDevice, session: MediaOutputSession)
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Grouping
+## Grouping
 
 The device should be removed from its modifiable group. [`updateDevices(_:)`](../mediadeviceroutingmanager/updatedevices%28_%29.md) should be called to update the state of group information.
 

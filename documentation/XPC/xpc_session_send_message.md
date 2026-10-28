@@ -21,11 +21,11 @@ Sends a message over the session to the destination service.
 extern xpc_rich_error_txpc_session_send_message(xpc_session_t session, xpc_object_t message);
 ```
 
-#### Return Value
+## Return Value
 
 If the session fails to send the message, an [`xpc_rich_error_t`](./xpc_rich_error_t.md) that contains details about the failure; otherwise [`nil`](../ObjectiveC/nil-227m0.md) if the message is sent successfully.
 
-#### Discussion
+## Discussion
 
 Sessions send messages serially in a first-in, first-out (FIFO) order. This method is safe to call from multiple dispatch queues. The session can’t indicate whether the message *delivery* is successful or not. While the session may successfully enqueue the message at the remote end of the connection, there’s no guarantee about when the destination dequeues the message and invokes the receiving session’s handler.
 

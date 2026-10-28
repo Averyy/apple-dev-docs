@@ -24,7 +24,7 @@ class PHASEGeneratorNodeDefinition
 @interface PHASEGeneratorNodeDefinition : PHASESoundEventNodeDefinition
 ```
 
-#### Overview
+## Overview
 
 This class encapsulates shared logic for subclasses that provide audio data to a mixer for sound output, namely [`PHASESamplerNodeDefinition`](./phasesamplernodedefinition.md) and [`PHASEPushStreamNodeDefinition`](./phasepushstreamnodedefinition.md).
 

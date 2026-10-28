@@ -21,11 +21,11 @@ optional func textField(_ textField: UITextField, editMenuForCharactersInRanges 
 - (UIMenu *) textField:(UITextField *) textField editMenuForCharactersInRanges:(NSArray<NSValue *> *) ranges suggestedActions:(NSArray<UIMenuElement *> *) suggestedActions;
 ```
 
-#### Return Value
+## Return Value
 
 Return a UIMenu describing the desired menu hierarchy. Return @c nil to present the default system menu.
 
-#### Discussion
+## Discussion
 
 Asks the delegate for the menu to be shown for the specified `ranges`.
 

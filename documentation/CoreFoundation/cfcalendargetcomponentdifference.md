@@ -21,11 +21,11 @@ Computes the difference between the two absolute times, in terms of specified ca
 extern Boolean CFCalendarGetComponentDifference(CFCalendarRef calendar, CFAbsoluteTime startingAT, CFAbsoluteTime resultAT, CFOptionFlags options, const char *componentDesc, ...);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE`—and in the varargs the differences—if it is possible to calculate the difference (result - starting) between `resultAT` and `startingAT` in terms of the calendrical components specified by `componentDesc`. Returns `FALSE` if either absolute time falls outside the defined range of the calendar, or the computation cannot be performed.
 
-#### Discussion
+## Discussion
 
 The result is lossy if there isn’t a small enough unit requested to hold the full precision of the difference. Some operations can be ambiguous, and the behavior of the computation is calendar-specific, but generally larger components will be computed before smaller components; for example, in the Gregorian calendar a result might be `1` month and `5` days, instead of, for example, `0` months and `35` days. The resulting component values may be negative if later is before earlier.
 

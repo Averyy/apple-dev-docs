@@ -17,7 +17,7 @@ The constraint’s value for the major identity characteristic.
 var major: UInt16? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The major characteristic is optional. If it’s present, a beacon’s major value needs to match the constraint’s major value to represent a match. If the constraint has no major value, it acts as a wildcard and matches any major value. You can specify the major value when initializing the constraint.
 

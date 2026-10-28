@@ -27,7 +27,7 @@ func viewLayoutMarginsDidChange()
 
 - [Displaying and managing views with a view controller](../displaying-and-managing-views-with-a-view-controller.md)
 
-#### Discussion
+## Discussion
 
 Use this method to update the position of content based on the new margin values.
 

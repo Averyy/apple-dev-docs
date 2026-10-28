@@ -30,7 +30,7 @@ var response: URLResponse? { get }
 
 - [Downloading files from websites](../downloading-files-from-websites.md)
 
-#### Discussion
+## Discussion
 
 This object provides information about the request as provided by the server. This information always includes the original URL. It may also include an expected length, MIME type information, encoding information, a suggested filename, or a combination of these.
 

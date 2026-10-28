@@ -19,7 +19,7 @@ class VZVirtioSoundDeviceConfiguration
 @interface VZVirtioSoundDeviceConfiguration : VZAudioDeviceConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use a `VZVirtioSoundDeviceConfiguration` object to configure an audio device for your VM. After creating this object, assign appropriate values to the [`streams`](./vzvirtiosounddeviceconfiguration/streams.md) array property which defines the behaviors of the underlying audio streams for this audio device.
 

@@ -21,7 +21,7 @@ nonisolated
 func tabViewSidebarFooter<Content>(@ContentBuilder content: () -> Content) -> some View where Content : View
 ```
 
-#### Discussion
+## Discussion
 
 The footer appears at the bottom of the sidebar after any tab labels and can scroll with the content. The footer is only visible when the [`TabView`](../tabview.md) is displaying the sidebar.
 

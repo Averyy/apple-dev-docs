@@ -21,7 +21,7 @@ class CPInformationRatingItem
 @interface CPInformationRatingItem : CPInformationItem
 ```
 
-#### Overview
+## Overview
 
 `CPInformationRatingItem` provides the ability to display rated content in the rows of an information template. Depending on the template’s layout, the item’s attributes stack vertically or horizontally in the rows. The [`title`](./cpinformationitem/title.md) property describes the content, and the [`detail`](./cpinformationitem/detail.md) property provides the content. Use the [`rating`](./cpinformationratingitem/rating.md) and [`maximumRating`](./cpinformationratingitem/maximumrating.md) properties to display a rating for the content. For example, you could show a service rating when displaying information about a restaurant or café.
 

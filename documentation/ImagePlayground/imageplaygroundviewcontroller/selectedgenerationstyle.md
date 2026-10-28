@@ -20,7 +20,7 @@ Generation style to pre-select upong launching the playground among those in `al
 @preconcurrency var selectedGenerationStyle: ImagePlaygroundStyle { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use `ImagePlaygroundStyle.all` to check the list of all possible styles, and pass one of those.
 

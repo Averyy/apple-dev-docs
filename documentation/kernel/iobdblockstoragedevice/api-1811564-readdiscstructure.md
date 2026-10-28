@@ -15,11 +15,11 @@ virtual IOReturn readDiscStructure(
  UInt8type ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the status of the data transfer.
 
-#### Overview
+## Overview
 
 Issue an MMC READ DISC STRUCTURE command.
 

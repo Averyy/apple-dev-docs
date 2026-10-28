@@ -9,7 +9,7 @@ Provide a playback queue from a successfully processed play media intent.
 **Availability**:
 - SiriKit Cloud Media 1.0.2+
 
-#### Discussion
+## Discussion
 
 There isn’t a default path for this endpoint. Specify the URL for this endpoint in your [`ExtensionConfig.Media.Queues.PlayMedia`](./extensionconfig/media-data.dictionary/queues-data.dictionary/playmedia-data.dictionary.md) object.
 

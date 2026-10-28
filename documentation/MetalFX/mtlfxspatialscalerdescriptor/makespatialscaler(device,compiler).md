@@ -24,7 +24,7 @@ func makeSpatialScaler(device: any MTLDevice, compiler: any MTL4Compiler) -> (an
 - (id<MTL4FXSpatialScaler>) newSpatialScalerWithDevice:(id<MTLDevice>) device compiler:(id<MTL4Compiler>) compiler;
 ```
 
-#### Return Value
+## Return Value
 
  A new spatial scaler instance upon success, or `nil` otherwise.
 

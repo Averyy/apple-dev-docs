@@ -17,7 +17,7 @@ The status of an electric vehicle’s charger connection.
 enum Status
 ```
 
-#### Overview
+## Overview
 
 Status represents a discrete snapshot without providing information about the session’s continuity, which can pair with the [`ElectricVehicleLoadEvent`](../electricvehicleloadevent.md) that tracks session-based energy flow.
 

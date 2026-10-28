@@ -19,11 +19,11 @@ Encodes the inference onto the provided compute stream, returning async values f
 func encode(inputs: [String : InferenceFunction.AsyncValue], states: consuming InferenceFunction.AsyncMutableViews = AsyncMutableViews(), outputViews: consuming InferenceFunction.AsyncMutableViews = AsyncMutableViews(), to stream: ComputeStream) throws -> [String : InferenceFunction.AsyncValue]
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary mapping output name to an [`InferenceFunction.AsyncValue`](./asyncvalue.md) for each output not included in `outputViews`.
 
-#### Discussion
+## Discussion
 
 When this method returns, the compute may still be running on `stream`. You can pass the returned async values as inputs to subsequent `encode` calls to build a pipeline of inferences without waiting for intermediate results, or await them to retrieve the final compute outputs on the CPU.
 

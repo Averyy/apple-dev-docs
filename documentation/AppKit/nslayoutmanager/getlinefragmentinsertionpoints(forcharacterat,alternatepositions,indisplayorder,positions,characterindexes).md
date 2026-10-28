@@ -19,11 +19,11 @@ func getLineFragmentInsertionPoints(forCharacterAt charIndex: Int, alternatePosi
 - (NSUInteger) getLineFragmentInsertionPointsForCharacterAtIndex:(NSUInteger) charIndex alternatePositions:(BOOL) aFlag inDisplayOrder:(BOOL) dFlag positions:(CGFloat *) positions characterIndexes:(NSUInteger *) charIndexes;
 ```
 
-#### Return Value
+## Return Value
 
 The number of insertion points returned.
 
-#### Discussion
+## Discussion
 
 The method allows clients to obtain all insertion points for a line fragment in one call. Each pointer passed in should either be `NULL` or else point to sufficient memory to hold as many elements as there are insertion points in the line fragment (which cannot be more than the number of characters + 1). The returned positions indicate a transverse offset relative to the line fragment rectangle’s origin. Internal caching is used to ensure that repeated calls to this method for the same line fragment (possibly with differing values for other arguments) are not significantly more expensive than a single call.
 

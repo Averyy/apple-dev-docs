@@ -17,7 +17,7 @@ framework: "mlx-swift-lm/MLXLLM"
 class NemotronLabsDiffusionModel
 ```
 
-#### Overview
+## Overview
 
 AR generation works through the standard `LLMModel` pipeline. Diffusion and linear-spec modes are exposed via dedicated methods.
 

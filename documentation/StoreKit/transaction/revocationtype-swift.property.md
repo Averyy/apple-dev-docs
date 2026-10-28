@@ -21,7 +21,7 @@ The type of refund or revocation that applies to the transaction.
 let revocationType: Transaction.RevocationType?
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates whether the transaction has a full refund, a prorated refund, or is revoked from Family Sharing. This property is `nil` for transactions that are not revoked.
 

@@ -14,7 +14,7 @@
 #define kUSBManufacturerStringIndex
 ```
 
-#### Discussion
+## Discussion
 
 The field in the USB Device Descriptor corresponding to the index for the manufacturer's string
 

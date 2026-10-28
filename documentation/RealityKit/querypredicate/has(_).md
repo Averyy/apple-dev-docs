@@ -20,11 +20,11 @@ Creates a new predicate that describes entities that have a specific component.
 static func has<T>(_ t: T.Type) -> QueryPredicate<Entity> where T : Component
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that describes entities with a specified component.
 
-#### Discussion
+## Discussion
 
 To create a `has` predicate, pass the component class’s `self` property.
 

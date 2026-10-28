@@ -21,7 +21,7 @@ func flushIfNeeded()
 - (void) flushWindowIfNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 To avoid unnecessary flushing, use this method rather than [`flush()`](./flush%28%29.md) to flush an `NSWindow` object after flushing has been reenabled.
 

@@ -19,7 +19,7 @@ image?:
     | Promise<ImageSource>;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to an [`ImageHashObject`](../imagehashobject.md), an [`ImageDelegate`](../imagedelegate.md), an [`ImageSource`](../imagesource.md), or a `Promise` that resolves to an [`ImageSource`](../imagesource.md). For more information, see the [`ImageAnnotation`](../imageannotation.md) [`image`](../imageannotation/image.md) property.
 

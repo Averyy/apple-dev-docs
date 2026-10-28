@@ -25,11 +25,11 @@ class func changeOcclusion(to v: Float, duration: TimeInterval) -> SKAction
 + (SKAction *) changeOcclusionTo:(float) v duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the audio node’s occlusion animates from its current value to its new value. Passing this action a value of -100 yields the greatest reduction in volume. For more information, see [`AVAudio3DMixing`](../../AVFAudio/avaudio3dmixing.md).
 

@@ -5,11 +5,11 @@
 
 Provide access to a shared resource using a single, shared class instance.
 
-#### Overview
+## Overview
 
 You use singletons to provide a globally accessible, shared instance of a class. You can create your own singletons as a way to provide a unified access point to a resource or service that’s shared across an app, like an audio channel to play sound effects or a network manager to make HTTP requests.
 
-##### Create a Singleton
+### Create a Singleton
 
 You create simple singletons using a static type property, which is guaranteed to be lazily initialized only once, even when accessed across multiple threads simultaneously:
 

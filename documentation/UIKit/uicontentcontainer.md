@@ -24,7 +24,7 @@ protocol UIContentContainer : NSObjectProtocol
 @protocol UIContentContainer <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The methods of this protocol handle size-related transitions that are related to changes in the current trait environment or view controller hierarchy. When the parent view controller changes, or when trait changes occur that affect the size of a view controller, UIKit calls these methods to give the affected objects a chance to respond appropriately.
 

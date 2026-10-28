@@ -16,7 +16,7 @@ The index of the active format.
 @property (atomic, strong, nullable) NSNumber * activeFormatIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the index of the active format in the source’s [`formats`](../cmioextensionstreamsource/formats.md) array.
 

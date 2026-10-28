@@ -22,7 +22,7 @@ object ComponentTextStyle
 - [Positioning the Content in Your Article](../AppleNews/positioning-the-content-in-your-article.md)
 - [Supporting Dark Mode for Your Article](../AppleNews/supporting-dark-mode-for-your-article.md)
 
-#### Discussion
+## Discussion
 
 Use a `ComponentTextStyle` object to define the text style for an entire text component (such as `body` or `heading`). A `ComponentTextStyle` object can have the same properties as a `TextStyle` object, as well as some additional properties such as a drop cap and text alignment.
 
@@ -41,7 +41,7 @@ For more information about properties, objects, keys, and values, see [JSON Conc
 
 You can use this object in [`Text`](./text.md) and [`ArticleDocument.componentTextStyles`](./articledocument/componenttextstyles-data.dictionary.md).
 
-##### Example
+### Example
 
 ```json
 {

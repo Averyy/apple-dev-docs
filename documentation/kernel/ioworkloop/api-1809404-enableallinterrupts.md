@@ -11,7 +11,7 @@ Calls enable() in all interrupt event sources.
 virtual void enableAllInterrupts() const;
 ```
 
-#### Overview
+## Overview
 
 For all event sources (ES) for which OSDynamicCast(IOInterruptEventSource, ES) is valid, in eventChain call enable() function. See IOEventSource::enable().
 

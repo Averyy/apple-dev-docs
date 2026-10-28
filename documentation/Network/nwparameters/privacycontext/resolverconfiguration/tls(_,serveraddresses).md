@@ -21,7 +21,7 @@ A DNS-over-TLS resolver configuration.
 case tls(NWEndpoint, serverAddresses: [NWEndpoint])
 ```
 
-#### Discussion
+## Discussion
 
 The hostname of the provided endpoint will be used to validate the TLS certificate of the server. See [RFC 7858](https://tools.ietf.org/html/rfc7858) for more details. The associated server addresses you provide are hints for which well-known DNS server addresses to use.
 

@@ -23,7 +23,7 @@ var identifierPath: [String] { get }
 @property (nonatomic, copy, readonly) NSArray<NSString *> * identifierPath;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the value stored in this property when calling the [`contexts(matchingIdentifierPath:completion:)`](../clsdatastore/contexts%28matchingidentifierpath,completion%29.md) method to retrieve the current context.
 

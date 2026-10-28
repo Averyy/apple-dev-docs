@@ -25,7 +25,7 @@ var ratingCommand: MPRatingCommand { get }
 @property (nonatomic, readonly) MPRatingCommand * ratingCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to register your app’s handler for rating the current track. In your handler, apply the specified rating to the track. You can disable the command if your app does not support it.
 

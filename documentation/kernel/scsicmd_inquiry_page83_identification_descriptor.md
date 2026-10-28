@@ -13,7 +13,7 @@
 typedef struct SCSICmd_INQUIRY_Page83_Identification_Descriptor SCSICmd_INQUIRY_Page83_Identification_Descriptor;
 ```
 
-#### Discussion
+## Discussion
 
 INQUIRY Page 83h Identification Descriptor.
 

@@ -15,7 +15,7 @@ A Boolean value that indicates whether you provided, prior to its purchase, a fr
 boolean sampleContentProvided
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to `true` if you provided any of the following prior to the customer’s purchase:
 

@@ -22,7 +22,7 @@ init(bundleIdentifier: String, teamIdentifier: String?)
 - (instancetype) initWithBundleIdentifier:(NSString *) bundleIdentifier teamIdentifier:(NSString *) teamIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 You can get the bundle and team identifiers for an app using the `codesign` command line utility:
 

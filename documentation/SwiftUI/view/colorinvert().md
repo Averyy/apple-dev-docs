@@ -22,11 +22,11 @@ nonisolated
 func colorInvert() -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that inverts its colors.
 
-#### Discussion
+## Discussion
 
 The `colorInvert()` modifier inverts all of the colors in a view so that each color displays as its complementary color. For example, blue converts to yellow, and white converts to black.
 

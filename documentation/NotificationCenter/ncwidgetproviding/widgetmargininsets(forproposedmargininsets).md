@@ -40,11 +40,11 @@ optional func widgetMarginInsets(forProposedMarginInsets defaultMarginInset: NSE
 - (NSEdgeInsets) widgetMarginInsetsForProposedMarginInsets:(NSEdgeInsets) defaultMarginInset;
 ```
 
-#### Return Value
+## Return Value
 
 A value of type [`UIEdgeInsets`](../../UIKit/uiedgeinsets.md) that contains the custom margin insets a widget is using instead of the default values.
 
-#### Discussion
+## Discussion
 
 A widget can implement this method to return custom margin inset values to use instead of the default values specified in `defaultMarginInsets`. (If the widget doesn’t need to use custom values, it should return the unchanged default values in its implementation.) If a widget doesn’t implement this method, it automatically receives the default margin inset values.
 

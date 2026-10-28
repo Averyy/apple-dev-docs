@@ -33,7 +33,7 @@ func storeCredentials(forBorderAgent borderAgentID: Data, activeOperationalDataS
 - [Managing Thread network credentials](../managing-thread-network-credentials.md)
 - [Configuring a Border Router](../configuring-a-border-router.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

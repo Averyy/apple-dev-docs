@@ -20,7 +20,7 @@ case limited
 ARWorldMappingStatusLimited
 ```
 
-#### Discussion
+## Discussion
 
 When the [`worldMappingStatus`](../worldmappingstatus-swift.property.md) of the session’s [`currentFrame`](../../arsession/currentframe.md) is [`ARFrame.WorldMappingStatus.limited`](./limited.md), the session has not yet fully mapped the real-world space around the device, nor the scene visible to the camera.
 

@@ -19,7 +19,7 @@ var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection { get set }
 @property NSUserInterfaceLayoutDirection userInterfaceLayoutDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NSUserInterfaceLayoutDirection.leftToRight`](../nsuserinterfacelayoutdirection/lefttoright.md). When the property is set to [`NSUserInterfaceLayoutDirection.rightToLeft`](../nsuserinterfacelayoutdirection/righttoleft.md), the table view flips the visual order of the table columns, but the logical order remains unchanged. Although this property was introduced in macOS 10.12, in earlier versions the property always returned [`NSUserInterfaceLayoutDirection.leftToRight`](../nsuserinterfacelayoutdirection/lefttoright.md).
 

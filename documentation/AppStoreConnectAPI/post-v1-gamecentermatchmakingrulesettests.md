@@ -9,9 +9,9 @@ Apply the given rule set to the given sample match requests.
 **Availability**:
 - App Store Connect API 3.1+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

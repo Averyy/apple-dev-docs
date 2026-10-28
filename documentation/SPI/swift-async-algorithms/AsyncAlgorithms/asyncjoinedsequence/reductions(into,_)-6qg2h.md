@@ -23,11 +23,11 @@ Returns an asynchronous sequence containing the accumulated results of combining
 func reductions<Result>(into initial: Result, _ transform: @escaping @Sendable (inout Result, Self.Element) async -> Void) -> AsyncExclusiveReductionsSequence<Self, Result>
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence of the reduced elements.
 
-#### Discussion
+## Discussion
 
 Starting from the initial value, this combines each element of the base asynchronous sequence with the running result and emits each intermediate result. The initial value itself is not emitted, so the first element of the returned sequence is the result of combining the initial value with the first element of the base sequence. If the base sequence is empty, the returned sequence is also empty.
 

@@ -21,11 +21,11 @@ Creates a new material object.
 + (instancetype) material;
 ```
 
-#### Return Value
+## Return Value
 
 A new material object.
 
-#### Discussion
+## Discussion
 
 A newly created material contains an [`SCNMaterialProperty`](../scnmaterialproperty.md) object for each of its eight visual properties. You change a material’s appearance by setting the [`contents`](../scnmaterialproperty/contents.md) of each visual property. For information on each visual property’s default contents and how it affects a material’s appearance, see Visual Properties for Special Effects.
 

@@ -24,11 +24,11 @@ func property(with semantic: MDLMaterialSemantic) -> MDLMaterialProperty?
 - (MDLMaterialProperty *) propertyWithSemantic:(MDLMaterialSemantic) semantic;
 ```
 
-#### Return Value
+## Return Value
 
 The material property for the specified semantic, or `nil` if the material does not contain a material property for that semantic.
 
-#### Discussion
+## Discussion
 
 Material semantics identify the intended use of a material property in shading. Some semantic values, such as [`MDLMaterialSemantic.specular`](../mdlmaterialsemantic/specular.md), are part of the material’s [`scatteringFunction`](./scatteringfunction.md) property that determines its response to lighting; others, such as [`MDLMaterialSemantic.opacity`](../mdlmaterialsemantic/opacity.md), determine other aspects of material rendering.
 

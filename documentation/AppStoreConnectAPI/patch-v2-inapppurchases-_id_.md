@@ -13,7 +13,7 @@ Update the reference name of a specific In-App Purchase.
 
 - [Managing In-App Purchases](./managing-in-app-purchases.md)
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata in App Store Connect can take up to 1 hour to appear in the sandbox environment.
 

@@ -23,11 +23,11 @@ func indexPathsToInsertForSupplementaryView(ofKind elementKind: String) -> [Inde
 - (NSArray<NSIndexPath *> *) indexPathsToInsertForSupplementaryViewOfKind:(NSString *) elementKind;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects indicating the location of the new supplementary views, or an empty array if you don’t want to add any supplementary views.
 
-#### Discussion
+## Discussion
 
 The collection view calls this method whenever you add cells or sections to the collection view. Implementing this method gives your layout object an opportunity to add new supplementary views to complement the additions.
 

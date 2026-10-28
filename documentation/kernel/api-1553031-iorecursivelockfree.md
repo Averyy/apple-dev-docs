@@ -24,7 +24,7 @@ void IORecursiveLockFree(struct IORecursiveLock *lock);
 void IORecursiveLockFree(IORecursiveLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Frees a lock allocated with IORecursiveLockAlloc. Lock should be unlocked with no waiters.
 

@@ -22,7 +22,7 @@ optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppabl
 - (void) textDroppableView:(UIView<UITextDroppable> *) textDroppableView dropSessionDidEnd:(id<UIDropSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 You implement this method if your delegate needs to do additional cleanup after the drop session has ended.
 

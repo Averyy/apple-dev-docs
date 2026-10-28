@@ -15,7 +15,7 @@ The request body that contains the sign-in token to be deleted.
 object DeleteAutoSignInTokenRequest
 ```
 
-#### Overview
+## Overview
 
 This is the request object for the [`Delete Sign-In Token`](./delete-this-token-for-all-associated-users.md) endpoint.
 

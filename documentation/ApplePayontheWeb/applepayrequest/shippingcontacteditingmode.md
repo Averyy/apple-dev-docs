@@ -20,7 +20,7 @@ ApplePayShippingContactEditingMode shippingContactEditingMode;
 
 - [Apple Pay on the Web Version 12 Release Notes](../apple-pay-on-the-web-version-12-release-notes.md)
 
-#### Discussion
+## Discussion
 
 For more information, see the [`shippingContactEditingMode`](../applepaypaymentrequest/shippingcontacteditingmode.md) for an Apple Pay payment request.
 

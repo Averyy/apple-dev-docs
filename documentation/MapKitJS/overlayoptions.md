@@ -15,7 +15,7 @@ A dictionary of options that determines an overlay’s data, and indicates wheth
 interface OverlayOptions
 ```
 
-#### Overview
+## Overview
 
 Use [`OverlayOptions`](./overlayoptions.md) to set the initial state of your overlay and provide the data MapKit JS uses to render it.
 

@@ -20,7 +20,7 @@ Requests that framework return to the FaceTime call, in order to resume the live
 static func returnToCall(requestID: UUID)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when the framework launches your app in order to satisfy a request from your extension for the person using the app to sign in or provide other information. After your app collects the needed information, call this method from inside the [`onContinueUserActivity(_:perform:)`](../../SwiftUI/view/oncontinueuseractivity%28_,perform%29.md) (SwiftUI) or [`application(_:continue:restorationHandler:)`](../../UIKit/uiapplicationdelegate/application%28_,continue,restorationhandler%29.md) (UIKit) method where you handle the activity type [`containerAppLaunchActivityType`](./containerapplaunchactivitytype.md). For the parameter `requestID`, fetch the value of [`containerAppLaunchRequestIDKey`](./containerapplaunchrequestidkey.md) from the [`userInfo`](../../Foundation/nsuseractivity/userinfo.md) dictionary of the [`NSUserActivity`](../../Foundation/nsuseractivity.md) sent to the launch method.
 

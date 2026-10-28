@@ -15,7 +15,7 @@ The simple IIR filter algorithm.
 SimpleIIR
 ```
 
-#### Discussion
+## Discussion
 
 Under this algorithm, the Host applies a simple IIR filter to the time stamp stream. This is the default algorithm used for devices that don’t implement `DevicePropertyClockAlgorithm`.
 

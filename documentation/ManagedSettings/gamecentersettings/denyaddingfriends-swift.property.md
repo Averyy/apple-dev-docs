@@ -17,7 +17,7 @@ A Boolean value that indicates whether to prevent the user from adding Game Cent
 var denyAddingFriends: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If your app doesn’t configure this setting, this value is `nil`.
 

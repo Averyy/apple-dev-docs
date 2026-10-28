@@ -19,7 +19,7 @@ func performClose(_ sender: Any?)
 - (void) performClose:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the window’s delegate or the window itself implements [`windowShouldClose(_:)`](../nswindowdelegate/windowshouldclose%28_%29.md), the window sends that message with the window as the argument. The window sends only one such message; if both the delegate and the window implement the method, the delegate receives the message. If the [`windowShouldClose(_:)`](../nswindowdelegate/windowshouldclose%28_%29.md) method returns [`false`](../../Swift/false.md), the window doesn’t close. If neither the window nor the delegate implement [`windowShouldClose(_:)`](../nswindowdelegate/windowshouldclose%28_%29.md), or it returns [`true`](../../Swift/true.md), this method invokes [`close()`](./close%28%29.md) to close the window.
 

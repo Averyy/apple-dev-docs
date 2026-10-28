@@ -17,11 +17,11 @@ Recursively filter and map the contents of the module and its children and produ
 func filterMap<Result>(filter: (Module, String, ModuleItem) -> Bool, map: (ModuleItem) -> Result? = { $0 }, isLeaf: (Module, String, ModuleItem) -> Bool = Module.isLeafDefault) -> NestedDictionary<String, Result>
 ```
 
-#### Return Value
+## Return Value
 
 `NestedDictionary` matching the structure with mapped values.
 
-#### Discussion
+## Discussion
 
 Traverses the [`ModuleItems`](../moduleitems.md) produced by [`items()`](./items%28%29.md) and filters and maps their contents.  For each item in the `ModuleItems` this will call the `filter` to determine if it should be included.  There are a number of predefined filters available, see [Module Filter and Map Functions](../module-filters.md).  [`filterAll`](./filterall.md) will accept all values while [`filterValidParameters`](./filtervalidparameters.md) will only examine structure and parameters.
 
@@ -45,7 +45,7 @@ let leafParameters = module.filterMap(
     isLeaf: Module.isLeafModuleNoChildren)
 ```
 
-##### See Also
+### See Also
 
 - [Module Filter and Map Functions](../module-filters.md)
 - [`parameters()`](./parameters%28%29.md)

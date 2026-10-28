@@ -22,7 +22,7 @@ let kPDFDestinationUnspecifiedValue: CGFloat
 extern const CGFloat kPDFDestinationUnspecifiedValue;
 ```
 
-#### Discussion
+## Discussion
 
 Unspecified value used when a destination’s actual x or y value is unimportant.
 

@@ -22,7 +22,7 @@ The type of the input data.
 associatedtype Input : CustomStringConvertible
 ```
 
-#### Discussion
+## Discussion
 
 The type must be string-representable for display.
 

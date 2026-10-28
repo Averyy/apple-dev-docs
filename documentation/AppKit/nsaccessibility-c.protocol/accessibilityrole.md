@@ -15,7 +15,7 @@ The type of interface element that the accessibility element represents.
 @property (copy, nullable) NSAccessibilityRole accessibilityRole;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a nonlocalized string that defines the element’s role in the app. For a list of possible roles, see `Roles`. This property is set automatically when you adopt one of the accessibility protocols.
 

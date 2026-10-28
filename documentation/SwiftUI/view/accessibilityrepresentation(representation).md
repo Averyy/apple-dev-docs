@@ -22,7 +22,7 @@ nonisolated
 func accessibilityRepresentation<V>(@ContentBuilder representation: () -> V) -> some View where V : View
 ```
 
-#### Discussion
+## Discussion
 
 You can make controls accessible by using a custom style. For example, a custom [`ToggleStyle`](../togglestyle.md) that you create inherits the accessibility features of [`Toggle`](../toggle.md) automatically. When you can’t use the parent view’s accessibility elements, use the `accessibilityRepresentation(representation:)` modifier instead. This modifier replaces default accessibility elements with different accessibility elements that you provide. You use synthetic, non-visual accessibility elements to represent what the view displays.
 

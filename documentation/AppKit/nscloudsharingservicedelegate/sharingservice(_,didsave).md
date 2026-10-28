@@ -19,7 +19,7 @@ optional func sharingService(_ sharingService: NSSharingService, didSave share: 
 - (void) sharingService:(NSSharingService *) sharingService didSaveShare:(CKShare *) share;
 ```
 
-#### Discussion
+## Discussion
 
 The cloud-sharing service invokes this method when it saves changes to the share. The `share` parameter is the most recent state of the share on the server.
 

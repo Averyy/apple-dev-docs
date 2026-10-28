@@ -25,7 +25,7 @@ func CFLocaleCreateLocaleIdentifierFromWindowsLocaleCode(_ allocator: CFAllocato
 extern CFLocaleIdentifierCFLocaleCreateLocaleIdentifierFromWindowsLocaleCode(CFAllocatorRef allocator, uint32_t lcid);
 ```
 
-#### Return Value
+## Return Value
 
 The locale identifier.
 

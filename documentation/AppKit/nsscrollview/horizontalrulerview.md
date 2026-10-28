@@ -19,7 +19,7 @@ var horizontalRulerView: NSRulerView? { get set }
 @property (strong, nullable) NSRulerView * horizontalRulerView;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` when the scroll view has no horizontal ruler view.
 

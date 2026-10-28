@@ -25,11 +25,11 @@ class func current() -> UNUserNotificationCenter
 + (UNUserNotificationCenter *) currentNotificationCenter;
 ```
 
-#### Return Value
+## Return Value
 
 The notification center object to use.
 
-#### Discussion
+## Discussion
 
 Always use this method to retrieve the shared notification center object for your app. Do not try to create instances of the [`UNUserNotificationCenter`](../unusernotificationcenter.md) class directly.
 

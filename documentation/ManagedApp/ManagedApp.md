@@ -16,7 +16,7 @@ Customize your app for managed deployments by providing configurable features th
 - [Specifying and decoding a configuration](./specifying-and-decoding-a-configuration.md)
 - [Accessing provisioned secrets with identifiers](./accessing-provisioned-secrets-with-identifiers.md)
 
-#### Overview
+## Overview
 
 This framework defines API to configure managed deployments of your app for installation on multiple devices, using mobile device management (MDM). An administrator determines the configuration of, or *manages*, your app for a specific company, school, or government by creating unique configurations for people within an organization.
 
@@ -26,7 +26,7 @@ Enabling managed secrets and configuration lets an MDM admin customize the behav
 
 ![Two iPhone renderings side by side. A device on the left features the label Unmanaged App, and a device on the right features the label Managed app. A header for the unmanaged app reads Company Name. A login prompt resides in the center of the unmanaged app’s screen with two empty text fields that read username and password respectively. A callout extends from the empty fields that reads Login required. The managed app features a header that reads Company Name and a tabbed layout. The first tab reads Dashboard and is the selected tab. The second tab reads Sales. A callout extends from the Sales tab that reads Access-control roles automatically setup. A profile area resides in the tabbed pane that features an avatar next to the name Juan Chavez. A callout extends from the profile area that reads Automatically logged in. The tabbed pane also contains a settings area and features several sliders. Some of the sliders are switched on and some are off. A callout extends from the settings pane that reads Preconfigured. A final additional area within the tabbed pane has a title that reads To Do, which contains gray rectangles representing text. A callout extends from the rectangles that reads Info loaded immediately.](https://developer.apple.com/tutorials/images/com.apple.managedapp/managedapp-1@2x.png)
 
-#### Use secrets to implement managed features
+## Use secrets to implement managed features
 
 The server-provisioned secrets and configuration available in ManagedApp enable you to add the following kinds of common Device Management features to your app:
 
@@ -36,7 +36,7 @@ The server-provisioned secrets and configuration available in ManagedApp enable 
 - Acquiring certificates for custom trust, for example, pinning certificates
 - Using hardware-bound keys and Managed Device Attestation for strong device authentication
 
-#### Provision your app or app extension
+## Provision your app or app extension
 
 ManagedApp works with apps and app extensions. Any framework use that the documentation describes in an app also applies in app extensions.
 

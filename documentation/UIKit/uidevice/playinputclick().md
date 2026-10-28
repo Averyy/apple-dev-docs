@@ -22,7 +22,7 @@ func playInputClick()
 - (void) playInputClick;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to play the standard system keyboard click in response to a user tapping in a custom input or keyboard accessory view. A click plays only if the user has enabled keyboard clicks in Settings > Sounds, and only if the input view is itself enabled and visible.
 

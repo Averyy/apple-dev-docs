@@ -20,7 +20,7 @@ case pathItemAttr
 kSecPathItemAttr
 ```
 
-#### Discussion
+## Discussion
 
 You use this tag to set or get a string value that represents the path. This is unique to Internet password attributes. Keychain strings should use UTF-8 encoding.
 

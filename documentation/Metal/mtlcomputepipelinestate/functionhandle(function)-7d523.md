@@ -25,7 +25,7 @@ func functionHandle(function: any MTLFunction) -> (any MTLFunctionHandle)?
 - (id<MTLFunctionHandle>) functionHandleWithFunction:(id<MTLFunction>) function;
 ```
 
-#### Return Value
+## Return Value
 
 A handle to the visible function. When this value is `nil`, an error occurred during handle creation.
 

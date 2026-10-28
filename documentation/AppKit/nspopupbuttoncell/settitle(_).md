@@ -19,7 +19,7 @@ func setTitle(_ string: String?)
 - (void) setTitle:(NSString *) string;
 ```
 
-#### Discussion
+## Discussion
 
 For pull-down menus that get their titles from a menu item, this method simply sets the pop-up button cell’s menu item to the first item in the menu. For pop-up menus, if a menu item whose title matches `aString` exists, this method makes that menu item the current selection; otherwise, it creates a new menu item with the title `aString`, adds it to the pop-up menu, and selects it.
 

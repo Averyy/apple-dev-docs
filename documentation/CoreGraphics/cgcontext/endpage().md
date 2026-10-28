@@ -25,7 +25,7 @@ func endPage()
 extern void CGContextEndPage(CGContextRef c);
 ```
 
-#### Discussion
+## Discussion
 
 When using a graphics context that supports multiple pages, you should call this function to terminate drawing in the current page.
 

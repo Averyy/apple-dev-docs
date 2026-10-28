@@ -18,7 +18,7 @@ A notification that posts when a file provider’s domain changes.
 extern NSNotificationName const NSFileProviderDomainDidChange;
 ```
 
-#### Discussion
+## Discussion
 
 The system only posts this notification after the first call to [`getDomainsWithCompletionHandler(_:)`](./nsfileprovidermanager/getdomainswithcompletionhandler%28_%29.md). After receiving this notification, call [`getDomainsWithCompletionHandler(_:)`](./nsfileprovidermanager/getdomainswithcompletionhandler%28_%29.md) again to determine what the changes are.
 

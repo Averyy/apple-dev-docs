@@ -25,7 +25,7 @@ static let groupingSeparator: NSLocale.Key
 extern NSLocaleKey const NSLocaleGroupingSeparator;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSString` object; for example, `","` or `" "`.
 

@@ -20,7 +20,7 @@ The list of layouts.
 var vertexLayouts: [LowLevelMesh.Layout] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 You assign a layout for each vertex attribute with [`layoutIndex`](../attribute/layoutindex.md).
 

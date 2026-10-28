@@ -25,7 +25,7 @@ var exceptionCode: NSNumber? { get }
 @property (strong, readonly, nullable) NSNumber * exceptionCode;
 ```
 
-#### Discussion
+## Discussion
 
 Processor-specific information is in the `usr/include/mach/exception_types.h` file in the SDK, or in one of its included files.
 

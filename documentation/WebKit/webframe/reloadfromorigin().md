@@ -19,7 +19,7 @@ func reloadFromOrigin()
 - (void) reloadFromOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 End-to-end reload may be necessary if the cache entry has become corrupted for some reason.
 

@@ -20,7 +20,7 @@ var eventClass: AEEventClass { get }
 @property (readonly) AEEventClass eventClass;
 ```
 
-#### Discussion
+## Discussion
 
 The event class (a four-character code) for the receiver, or 0 if an error occurs.
 

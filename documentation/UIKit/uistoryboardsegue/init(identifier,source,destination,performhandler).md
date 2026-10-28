@@ -23,11 +23,11 @@ convenience init(identifier: String?, source: UIViewController, destination: UIV
 + (instancetype) segueWithIdentifier:(NSString *) identifier source:(UIViewController *) source destination:(UIViewController *) destination performHandler:(void (^)()) performHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized segue object.
 
-#### Discussion
+## Discussion
 
 You use this method as an alternative to creating a subclass. Your perform handler should do all of the work necessary to transition between the source and destination view controllers, exactly as if you were implementing the [`perform()`](./perform%28%29.md) method.
 

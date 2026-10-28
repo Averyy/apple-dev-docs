@@ -20,7 +20,7 @@ func setStateFromPause(_ pausedState: [AnyHashable : Any]!)
 - (void) setStateFromPause:(NSDictionary *) pausedState;
 ```
 
-#### Discussion
+## Discussion
 
 The Compressor app calls this method before resuming an encoding job. The Compressor app provides attributes an extension requires to resume an encoding job from the point at which the encoding stopped. These attributes are the ones the extension passed to the Compressor app while pausing an encoder job. If the attributes dictionary is empty, the extension restarts the encoding job from the beginning. See [`cancel(forPause:)`](./cancel%28forpause%29.md).
 

@@ -21,7 +21,7 @@ A collection containing the same elements as a `Base` collection, but on which s
 typealias LazyCollection<T> = LazySequence<T> where T : Collection
 ```
 
-#### Discussion
+## Discussion
 
 - See also: `LazySequenceProtocol`, `LazyCollection`
 

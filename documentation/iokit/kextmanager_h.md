@@ -5,9 +5,9 @@
 
 The KextManager API provides a simple interface for applications to load kernel extensions (kexts) via RPC to kextd, and to look up the URLs for kexts by bundle identifier.
 
-#### Overview
+## Overview
 
-##### Included Headers
+### Included Headers
 
 - <CoreFoundation/CoreFoundation.h>
 - <libkern/OSReturn.h>

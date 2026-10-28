@@ -21,11 +21,11 @@ Performs a ray cast against all the geometry in the scene for a ray between two 
 @preconcurrency func raycast(from startPosition: SIMD3<Float>, to endPosition: SIMD3<Float>, query: CollisionCastQueryType = .all, mask: CollisionGroup = .all, relativeTo referenceEntity: Entity? = nil) -> [CollisionCastHit]
 ```
 
-#### Return Value
+## Return Value
 
 An array of collision cast hit results. Each hit indicates where the ray, starting at `startPosition` and ending at `endPosition`, hit a particular entity in the scene.
 
-#### Discussion
+## Discussion
 
 The method ignores entities that lack a [`CollisionComponent`](../collisioncomponent.md).
 

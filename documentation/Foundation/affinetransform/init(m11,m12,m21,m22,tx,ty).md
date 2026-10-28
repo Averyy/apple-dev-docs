@@ -15,7 +15,7 @@ Creates an affine transformation.
 init(m11: CGFloat, m12: CGFloat, m21: CGFloat, m22: CGFloat, tX: CGFloat, tY: CGFloat)
 ```
 
-#### Discussion
+## Discussion
 
 Create an affine tranform by directly specifying the key values of the transform matrix.
 

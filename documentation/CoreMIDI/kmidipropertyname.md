@@ -23,7 +23,7 @@ let kMIDIPropertyName: CFString
 extern CFStringRef const kMIDIPropertyName;
 ```
 
-#### Discussion
+## Discussion
 
 Devices, entities, and endpoints may all have names. The standard way to display an endpoint’s name is to ask it for its name and display it only if unique. If not, prepend the device name.
 

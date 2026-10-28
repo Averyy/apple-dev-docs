@@ -27,7 +27,7 @@ static var NSHourCalendarUnit: NSCalendar.Unit { get }
 NSHourCalendarUnit
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSInteger`. Equal to `kCFCalendarUnitHour`.
 

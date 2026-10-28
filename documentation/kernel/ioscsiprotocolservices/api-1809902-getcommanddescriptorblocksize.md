@@ -12,11 +12,11 @@ UInt8 GetCommandDescriptorBlockSize (
  SCSITaskIdentifierrequest );
 ```
 
-#### Return Value
+## Return Value
 
 A valid CDB size (e.g. 6, 10, 12, or 16 bytes).
 
-#### Overview
+## Overview
 
 Accessor method to retrieve the Command Descriptor Block size associated with the specified request.
 

@@ -19,7 +19,7 @@ An error that indicates a previous request is still in progress.
 case AnotherRequestInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Wait for the previous request to finish or update your UI to indicate a request is in progress.
 

@@ -17,7 +17,7 @@ A `min` reduction over the given axis.
 func min(_ array: MLXArray, axis: Int, keepDims: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray([5, 8, 4, 9], [2, 2])
@@ -26,7 +26,7 @@ let array = MLXArray([5, 8, 4, 9], [2, 2])
 let result = array.min(axis=1)
 ```
 
-##### See Also
+### See Also
 
 - [Reduction Functions](./reduction.md)
 - [`min(_:axes:keepDims:stream:)`](./min%28_,axes,keepdims,stream%29.md)

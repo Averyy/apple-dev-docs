@@ -16,7 +16,7 @@ Returns a byte pointer to the value contained in this IOHIDValueRef.
 const uint8_t * IOHIDValueGetBytePtr(IOHIDValueRef value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to the value.
 

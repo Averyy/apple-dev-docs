@@ -24,7 +24,7 @@ class CIQRCodeDescriptor
 @interface CIQRCodeDescriptor : CIBarcodeDescriptor
 ```
 
-#### Overview
+## Overview
 
 ISO/IEC 18004 defines versions from 1 to 40, where a higher symbol version indicates a larger data-carrying capacity. QR Codes can encode text, vCard contact information, or Uniform Resource Identifiers (URI).
 

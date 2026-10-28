@@ -9,11 +9,11 @@ Get information about the Git repository of a specific Xcode Cloud workflow.
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below retrieves information about an Xcode Cloud workflow’s repository. Use the data provided in the response to read additional information; for example, pull request information.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

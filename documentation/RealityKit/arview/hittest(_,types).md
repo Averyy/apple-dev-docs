@@ -18,11 +18,11 @@ Searches for objects corresponding to a point in the view based on a set of resu
 @preconcurrency func hitTest(_ point: CGPoint, types: ARHitTestResult.ResultType) -> [ARHitTestResult]
 ```
 
-#### Return Value
+## Return Value
 
 An array of hit results.
 
-#### Discussion
+## Discussion
 
 The method ignores entities that lack a [`CollisionComponent`](../collisioncomponent.md).
 

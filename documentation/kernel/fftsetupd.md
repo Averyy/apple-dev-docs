@@ -15,7 +15,7 @@ An opaque type that contains setup information for a given double-precision FFT 
 typedef struct OpaqueFFTSetupD *FFTSetupD;
 ```
 
-#### Discussion
+## Discussion
 
 A setup object can be allocated with [`vDSP_create_fftsetupD`](../Accelerate/vdsp_create_fftsetupd.md) and destroyed with [`vDSP_destroy_fftsetupD`](../Accelerate/vdsp_destroy_fftsetupd.md). The setup object includes, among other things, precomputed tables used in computing an FFT of the specified size.
 

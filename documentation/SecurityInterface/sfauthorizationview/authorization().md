@@ -19,7 +19,7 @@ func authorization() -> SFAuthorization!
 - (SFAuthorization *) authorization;
 ```
 
-#### Discussion
+## Discussion
 
 The authorization object is defined in [Security Foundation](../../SecurityFoundation/SecurityFoundation.md).
 

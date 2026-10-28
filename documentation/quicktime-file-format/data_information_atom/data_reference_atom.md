@@ -6,7 +6,7 @@
 
 An atom that contains tabular data that instructs the data handler component how to access the media’s data.
 
-#### Overview
+## Overview
 
 For more information, see [`Data reference atom`](../media_data_reference_atom.md)
 

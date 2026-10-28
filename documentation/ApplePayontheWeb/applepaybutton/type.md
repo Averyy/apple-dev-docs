@@ -16,7 +16,7 @@ The kind of Apple Pay button, such as a button for purchasing a subscription.
 attribute ApplePayButtonType type;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of button types, see [`ApplePayButtonType`](../applepaybuttontype.md).
 

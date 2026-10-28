@@ -12,7 +12,7 @@ A platform that the Swift package supports.
 struct SupportedPlatform
 ```
 
-#### Overview
+## Overview
 
 By default, Swift Package Manager assigns a predefined minimum deployment version for each supported platforms unless you configure supported platforms using the `platforms` API. This predefined deployment version is the oldest deployment target version that the installed SDK supports for a given platform. One exception to this rule is macOS, for which the minimum deployment target version starts from 10.10. Packages can choose to configure the minimum deployment target version for a platform by using the APIs defined in this struct. Swift Package Manager emits appropriate errors when an invalid value is provided for supported platforms, such as an empty array, multiple declarations for the same platform, or an invalid version specification.
 

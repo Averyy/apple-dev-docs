@@ -21,7 +21,7 @@ Describes how a uniform value is located within the graph’s uniform buffer.
 struct UniformBinding
 ```
 
-#### Overview
+## Overview
 
 A uniform binding combines a `Relocation_v1` (the byte offset and size within the uniform buffer) with a [`ComputeNodeGraph.StateType`](../statetype.md) describing the data layout at that location.
 

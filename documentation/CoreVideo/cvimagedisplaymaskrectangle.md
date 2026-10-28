@@ -21,7 +21,7 @@ Specifies the rectangular display area within the image.
 struct CVImageDisplayMaskRectangle
 ```
 
-#### Overview
+## Overview
 
 The mask is specified relative to a reference raster width and height that should be scaled to the image buffer dimensions. The origin (0, 0) is at the top-left.
 

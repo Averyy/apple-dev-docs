@@ -19,7 +19,7 @@ var bitsPerPixel: Int { get }
 extern NSInteger NSBitsPerPixelFromDepth(NSWindowDepth depth);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the number of bits per pixel for the window depth specified by `depth`.
 

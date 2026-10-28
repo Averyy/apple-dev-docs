@@ -19,7 +19,7 @@ var isSelectionOnly: Bool { get set }
 @property (getter=isSelectionOnly) BOOL selectionOnly;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if only the currently selected contents should be printed, otherwise [`false`](../../Swift/false.md).
 

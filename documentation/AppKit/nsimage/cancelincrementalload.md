@@ -15,7 +15,7 @@ Cancels the current download operation, if any, for an incrementally loaded imag
 - (void) cancelIncrementalLoad;
 ```
 
-#### Discussion
+## Discussion
 
 This call has no effect if the image is not loading.
 

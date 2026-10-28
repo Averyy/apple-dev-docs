@@ -19,7 +19,7 @@ var minimumLineSpacing: CGFloat { get set }
 @property CGFloat minimumLineSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 For a vertically scrolling layout, the value represents the minimum spacing between successive rows. For a horizontally scrolling layout, the value represents the minimum spacing between successive columns. This spacing is not applied to the space between the header view and the first line or between the last line and the footer view.
 

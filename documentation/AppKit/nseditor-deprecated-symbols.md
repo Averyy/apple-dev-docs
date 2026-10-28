@@ -4,7 +4,7 @@
 
 A set of methods that controllers and UI elements can implement to manage editing.
 
-#### Overview
+## Overview
 
 The [`NSEditor`](./nseditor.md) informal protocol provides a means for requesting that the receiver commit or discard any pending edits.
 

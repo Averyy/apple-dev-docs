@@ -25,7 +25,7 @@ func getKeyframeValue(for index: Int) -> Any
 - (id) getKeyframeValueForIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The value object for the keyframe.
 

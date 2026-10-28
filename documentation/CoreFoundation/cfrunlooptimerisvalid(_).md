@@ -25,11 +25,11 @@ func CFRunLoopTimerIsValid(_ timer: CFRunLoopTimer!) -> Bool
 extern Boolean CFRunLoopTimerIsValid(CFRunLoopTimerRef timer);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `timer` is valid; otherwise `false`.
 
-#### Discussion
+## Discussion
 
 A non-repeating timer is automatically invalidated after it fires.
 

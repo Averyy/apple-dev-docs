@@ -15,7 +15,7 @@ A window toolbar style similar to [`unified`](./windowtoolbarstyle/unified.md), 
 struct UnifiedCompactWindowToolbarStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`unifiedCompact`](./windowtoolbarstyle/unifiedcompact.md) or [`unifiedCompact(showsTitle:)`](./windowtoolbarstyle/unifiedcompact%28showstitle%29.md) to construct this style.
 

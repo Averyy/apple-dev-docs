@@ -15,7 +15,7 @@ A property of IONetworkController objects.
 #define kIOMaxPacketSize
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMaxPacketSize property is a property of IONetworkController objects. It has an OSNumber value that describes the maximum packet size supported by the controller.
 

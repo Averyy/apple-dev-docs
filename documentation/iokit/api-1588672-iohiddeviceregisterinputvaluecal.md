@@ -16,7 +16,7 @@ Registers a callback to be used when an input value is issued by the device.
 void IOHIDDeviceRegisterInputValueCallback(IOHIDDeviceRef device, IOHIDValueCallback callback, void *context);
 ```
 
-#### Discussion
+## Discussion
 
 An input element refers to any element of type kIOHIDElementTypeInput and is usually issued by interrupt driven reports. If more specific element values are desired, you can specify matching criteria via IOHIDDeviceSetInputValueMatching and IOHIDDeviceSetInputValueMatchingMultiple.
 

@@ -17,7 +17,7 @@ The utility delivers the electricity from the grid.
 case imported
 ```
 
-#### Discussion
+## Discussion
 
 For example, if a person charges their electric vehicle, or a thermostat runs the HVAC.
 

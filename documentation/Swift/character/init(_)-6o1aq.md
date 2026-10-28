@@ -21,7 +21,7 @@ Creates a character from a single-character string.
 init(_ s: String)
 ```
 
-#### Discussion
+## Discussion
 
 The following example creates a new character from the uppercase version of a string that only holds one character.
 

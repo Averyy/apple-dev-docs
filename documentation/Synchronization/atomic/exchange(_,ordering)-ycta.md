@@ -23,7 +23,7 @@ func exchange(_ desired: consuming Value, ordering: AtomicUpdateOrdering) -> Val
 
 Available when `Value` conforms to `AtomicRepresentable` and `Value.AtomicRepresentation` is `_Atomic64BitStorage`.
 
-#### Return Value
+## Return Value
 
 The original value.
 

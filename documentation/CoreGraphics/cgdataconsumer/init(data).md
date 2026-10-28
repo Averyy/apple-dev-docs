@@ -25,11 +25,11 @@ init?(data: CFMutableData)
 extern CGDataConsumerRefCGDataConsumerCreateWithCFData(CFMutableDataRef data);
 ```
 
-#### Return Value
+## Return Value
 
 A new data consumer object. In Objective-C, you’re responsible for releasing this object using [`CGDataConsumerRelease`](../cgdataconsumerrelease.md).
 
-#### Discussion
+## Discussion
 
 You can use this function when you need to represent Core Graphics data as a [`CFData`](../../CoreFoundation/cfdata.md) type. For example, you might create a [`CFData`](../../CoreFoundation/cfdata.md) object that you then copy to the pasteboard.
 

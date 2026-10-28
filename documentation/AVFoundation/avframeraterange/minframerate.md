@@ -24,7 +24,7 @@ var minFrameRate: Float64 { get }
 @property (readonly) Float64 minFrameRate;
 ```
 
-#### Discussion
+## Discussion
 
 The frame is given in frames per second.
 

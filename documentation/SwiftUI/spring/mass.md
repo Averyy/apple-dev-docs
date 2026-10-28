@@ -21,7 +21,7 @@ The mass of the object attached to the end of the spring.
 var mass: Double { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default mass is 1. Increasing this value will increase the spring’s effect: the attached object will be subject to more oscillations and greater overshoot, resulting in an increased settling duration. Decreasing the mass will reduce the spring effect: there will be fewer oscillations and a reduced overshoot, resulting in a decreased settling duration.
 

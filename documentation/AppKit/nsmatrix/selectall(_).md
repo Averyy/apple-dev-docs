@@ -19,7 +19,7 @@ func selectAll(_ sender: Any?)
 - (void) selectAll:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Editable text cells and disabled cells are not selected. The receiver is redisplayed.
 

@@ -25,17 +25,17 @@ protocol SCNShadable : NSObjectProtocol
 @protocol SCNShadable <NSObject>
 ```
 
-#### Overview
+## Overview
 
 SceneKit provides two ways to integrate custom GPU shader programs into the rendering of your scene: program objects and shader modifiers.
 
-##### Use Program Objects to Replace SceneKit Shading
+### Use Program Objects to Replace SceneKit Shading
 
 For complete control of the vertex and fragment shaders used to render an object, assign an [`SCNProgram`](./scnprogram.md) instance to the object’s program property. A custom program completely replaces all other rendering parameters, including material settings. Your custom program takes inputs from SceneKit and is responsible for all transform, lighting, and shading effects you want it to produce. For details on custom programs, see [`SCNProgram`](./scnprogram.md).
 
 When you specify a custom program, you can provide handler blocks that SceneKit calls at render time to update the values of custom variables in your shaders. See the methods in Handling Parameters in Custom OpenGL Shader Programs.
 
-##### Use Shader Modifiers to Extend SceneKit Shading
+### Use Shader Modifiers to Extend SceneKit Shading
 
 Shader modifiers are an alternative to entirely replacing SceneKit’s shaders with your own. You can use shader modifiers to, for example:
 
@@ -57,7 +57,7 @@ For definitions of each entry point and its inputs and outputs, see `Shader Modi
 
 You can use the structures defined by earlier entry points in later entry points. For example, a snippet associated with the [`fragment`](./scnshadermodifierentrypoint/fragment.md) entry point can read from the `_surface` structure defined by the [`surface`](./scnshadermodifierentrypoint/surface.md) entry point.
 
-###### Writing a Shader Modifier Snippet
+#### Writing a Shader Modifier Snippet
 
 The code you provide for a shader modifier must be organized in a specific structure, as illustrated in the example below:
 
@@ -89,7 +89,7 @@ By default, SceneKit automatically uses material properties to determine whether
 
 One shader modifier snippet affects both Metal and OpenGL (or OpenGL ES) rendering—SceneKit automatically translates GLSL syntax to Metal shader syntax before inserting your code snippet into its own shader program. (For some simple shader modifiers, SceneKit can insert the same code snippet into either shader language without translation.)
 
-###### Providing Custom Inputs to a Shader Modifier
+#### Providing Custom Inputs to a Shader Modifier
 
 You can also declare custom uniform variables in your shader modifier snippet. You provide values for custom uniform variables using [Key-value coding](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25). For each uniform variable you declare in a shader modifier attached to an [`SCNMaterial`](./scnmaterial.md) or [`SCNGeometry`](./scngeometry.md) object, SceneKit observes a key with the same name on that object. When you set a new value, SceneKit automatically binds that value to the corresponding uniform location in the shader program. If you animate a change to the value implicitly (with the [`SCNTransaction`](./scntransaction.md) class) or explicitly (with the [`SCNAnimatable`](./scnanimatable.md) protocol), SceneKit interpolates intermediate values and binds them to the uniform for each frame of the animation. For example, the following code animates the fading of a material from full color to grayscale:
 
@@ -124,7 +124,7 @@ The table below lists the Objective-C types for each shading language data type:
 | `mat4` ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/spacer.png) `mat4x4` | `float4x4` | [`NSValue`](../Foundation/nsvalue.md) ([`CATransform3D`](../QuartzCore/catransform3d.md)) |
 | `sampler2D` ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/spacer.png) `samplerCube` | `sampler` | [`SCNMaterialProperty`](./scnmaterialproperty.md) |
 
-###### Using Inputs Provided by SceneKit
+#### Using Inputs Provided by SceneKit
 
 SceneKit declares the following uniform variables containing global rendering parameters:
 

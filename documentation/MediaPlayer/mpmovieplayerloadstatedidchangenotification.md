@@ -18,7 +18,7 @@ Posted when a movie player’s network buffering state has changed. There is no 
 extern NSString * const MPMoviePlayerLoadStateDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 To retrieve the current load state of a movie player, access its [`loadState`](./mpmovieplayercontroller/loadstate.md) property. The movie player whose state has changed is available as the object associated with the notification.
 

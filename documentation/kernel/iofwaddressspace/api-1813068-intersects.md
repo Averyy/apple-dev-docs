@@ -12,7 +12,7 @@ inline bool intersects(
  IOFWAddressSpace *space )
 ```
 
-#### Return Value
+## Return Value
 
 True if the address spaces intersect false otherwise
 

@@ -25,7 +25,7 @@ var isSequential: Bool { get }
 @property (readonly, getter=isSequential) BOOL sequential;
 ```
 
-#### Discussion
+## Discussion
 
 A sequential gear shift requires the user to move through the gears in sequence.
 

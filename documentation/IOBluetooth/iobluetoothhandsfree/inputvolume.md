@@ -19,11 +19,11 @@ var inputVolume: Float { get set }
 @property (assign) float inputVolume;
 ```
 
-#### Return Value
+## Return Value
 
 The input volume
 
-#### Discussion
+## Discussion
 
 Returns the input volume between 0 and 1. 0 is the same as mute.
 

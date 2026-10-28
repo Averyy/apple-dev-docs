@@ -23,7 +23,7 @@ var hidden: Bool { get set }
 @property BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to [`true`](../../Swift/true.md) to make the system perform an active scan for the Service Set Identifier (SSID). If the access point is already broadcasting the SSID, set this value to [`false`](../../Swift/false.md).
 

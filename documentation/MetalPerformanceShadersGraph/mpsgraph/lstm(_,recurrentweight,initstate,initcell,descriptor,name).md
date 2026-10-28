@@ -24,11 +24,11 @@ func LSTM(_ source: MPSGraphTensor, recurrentWeight: MPSGraphTensor, initState: 
 - (NSArray<MPSGraphTensor *> *) LSTMWithSourceTensor:(MPSGraphTensor *) source recurrentWeight:(MPSGraphTensor *) recurrentWeight initState:(MPSGraphTensor *) initState initCell:(MPSGraphTensor *) initCell descriptor:(MPSGraphLSTMDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` array of size 1 or 2 or 3, depending on values of `descriptor.produceCell` and `descriptor.training`. The layout of the both state and cell outputs are [T,N,H] or [T,N,2H] for bidirectional, and the layout of the trainingState output is [T,N,4H] or [T,N,8H] for bidirectional.
 
-#### Discussion
+## Discussion
 
 This operation returns tensors `h` and optionally `c` and optionally `z` that are defined recursively as follows:
 

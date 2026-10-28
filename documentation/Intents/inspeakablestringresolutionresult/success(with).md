@@ -23,11 +23,11 @@ class func success(with resolvedString: INSpeakableString) -> Self
 + (instancetype) successWithResolvedString:(INSpeakableString *) resolvedString;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INSpeakableStringResolutionResult`](../inspeakablestringresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you are able to use the provided string to handle the intent successfully.
 

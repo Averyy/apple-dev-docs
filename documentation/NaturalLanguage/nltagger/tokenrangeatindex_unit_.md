@@ -21,7 +21,7 @@ Returns the range of the linguistic unit containing the specified character inde
 - (NSRange) tokenRangeAtIndex:(NSUInteger) characterIndex unit:(NLTokenUnit) unit;
 ```
 
-#### Return Value
+## Return Value
 
 The range of the substring for the linguistic unit.
 

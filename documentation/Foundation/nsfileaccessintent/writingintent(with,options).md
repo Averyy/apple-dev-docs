@@ -25,11 +25,11 @@ class func writingIntent(with url: URL, options: NSFileCoordinator.WritingOption
 + (instancetype) writingIntentWithURL:(NSURL *) url options:(NSFileCoordinatorWritingOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A newly instantiated and configured file access intent object.
 
-#### Discussion
+## Discussion
 
 When calling a file coordinator’s [`coordinate(with:queue:byAccessor:)`](../nsfilecoordinator/coordinate%28with,queue,byaccessor%29.md) method, you pass an array of file access intent objects. Each intent object represents a specific read or write operation on a single document or directory. Use `writingIntentWithURL:options:` to create an intent object suitable for writing.
 

@@ -25,7 +25,7 @@ var cumulativeAppWatchdogExitCount: Int { get }
 @property (readonly) NSUInteger cumulativeAppWatchdogExitCount;
 ```
 
-#### Discussion
+## Discussion
 
 The most common reasons the system watchdog terminates an app are taking too long to:
 

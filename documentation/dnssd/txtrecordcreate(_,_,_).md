@@ -25,7 +25,7 @@ func TXTRecordCreate(_ txtRecord: UnsafeMutablePointer<TXTRecordRef>!, _ bufferL
 void TXTRecordCreate(TXTRecordRef *txtRecord, uint16_t bufferLen, void *buffer);
 ```
 
-#### Discussion
+## Discussion
 
 If the buffer parameter is NULL, or the specified storage size is not large enough to hold a key subsequently added using TXTRecordSetValue(), then additional memory will be added as needed using malloc().
 

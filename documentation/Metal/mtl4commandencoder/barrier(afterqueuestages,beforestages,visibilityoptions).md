@@ -25,7 +25,7 @@ func barrier(afterQueueStages: MTLStages, beforeStages: MTLStages, visibilityOpt
 - [Synchronizing passes with consumer barriers](../synchronizing-passes-with-consumer-barriers.md)
 - [Synchronizing stages within a pass](../synchronizing-stages-within-a-pass.md)
 
-#### Discussion
+## Discussion
 
 Encode a barrier that guarantees that any subsequent work you encode in the current command encoder that corresponds to the `beforeStages` stages doesn’t proceed until Metal completes all work prior to the current command encoder corresponding to the `afterQueueStages` stages, completes.
 

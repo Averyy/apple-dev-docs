@@ -25,7 +25,7 @@ var structuredLocation: EKStructuredLocation? { get set }
 @property (nonatomic, copy, nullable) EKStructuredLocation * structuredLocation;
 ```
 
-#### Discussion
+## Discussion
 
 This property is used in conjunction with [`proximity`](./proximity.md) to perform geofence-based triggering of reminders.
 

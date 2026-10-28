@@ -18,7 +18,7 @@ Animates changes using the animation in the current transaction.
 
 Available when `ViewController` conforms to `NSViewControllerRepresentable`.
 
-#### Discussion
+## Discussion
 
 This combines [`animate(_:changes:completion:)`](../../AppKit/nsanimationcontext/animate%28_,changes,completion%29.md) with the current transaction’s animation. When you start a SwiftUI animation using [`withAnimation(_:_:)`](../withanimation%28_,_%29.md) and have a mutated SwiftUI state that causes the representable object to update, use this method to animate changes in the representable object using the same `Animation` timing.
 

@@ -25,7 +25,7 @@ var allowsNonnumericFormatting: Bool { get set }
 @property BOOL allowsNonnumericFormatting;
 ```
 
-#### Discussion
+## Discussion
 
 Displays a more natural display of some values, such as zero, where it may be displayed as `Zero KB`, ignoring all other flags or options (with the exception of [`useBytes`](./units/usebytes.md), which would generate `Zero bytes`).The result is appropriate for standalone output.
 

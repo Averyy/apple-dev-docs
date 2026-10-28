@@ -19,7 +19,7 @@ An option for augmenting training data by blurring each image.
 static let blur: MLImageClassifier.ImageAugmentationOptions
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to tell the image classifier to augment your training data set by creating blurred versions of the original images.
 

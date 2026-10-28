@@ -22,7 +22,7 @@ nonisolated
 func onPreferenceChange<K>(_ key: K.Type = K.self, perform action: @escaping (K.Value) -> Void) -> some View where K : PreferenceKey, K.Value : Equatable
 ```
 
-#### Return Value
+## Return Value
 
 A view that triggers `action` when the value for `key` changes.
 

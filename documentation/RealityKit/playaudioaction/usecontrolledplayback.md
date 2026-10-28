@@ -20,7 +20,7 @@ A Boolean that indicates whether this action has control over the playback of th
 var useControlledPlayback: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Setting the value of this property to true indicates the action has control over the playback of the audio. Setting this to false indicates the audio plays independently from the action, behaving like a one shot audio.
 

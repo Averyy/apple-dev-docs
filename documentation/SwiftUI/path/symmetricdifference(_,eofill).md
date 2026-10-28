@@ -21,11 +21,11 @@ Returns a new path with filled regions either from this path or the given path, 
 func symmetricDifference(_ other: Path, eoFill: Bool = false) -> Path
 ```
 
-#### Return Value
+## Return Value
 
 A new path.
 
-#### Discussion
+## Discussion
 
 The filled region of the resulting path is the filled region contained in either this path or `other`, but not both.
 

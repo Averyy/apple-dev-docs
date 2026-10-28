@@ -21,7 +21,7 @@ A type that represents a JPEG image.
 static var jpeg: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.jpeg`.
 

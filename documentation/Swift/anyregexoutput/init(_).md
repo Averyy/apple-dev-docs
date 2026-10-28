@@ -21,7 +21,7 @@ Creates a dynamic regular expression match output from an existing match.
 init<Output>(_ match: Regex<Output>.Match)
 ```
 
-#### Discussion
+## Discussion
 
 You can use this initializer when you need an `AnyRegexOutput` instance instead of the output type of a strongly-typed `Regex.Match`.
 

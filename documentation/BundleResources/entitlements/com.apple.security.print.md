@@ -14,7 +14,7 @@ A Boolean value indicating whether your app may print a document.
 - **Name**: `com.apple.security.print`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the App Sandbox capability in Xcode, and under Hardware, select Printing.
 

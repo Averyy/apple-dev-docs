@@ -25,7 +25,7 @@ class func infinite() -> Self
 + (instancetype) infiniteRegion;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a singleton region that covers an infinite area.
 

@@ -23,7 +23,7 @@ final func supportsLocale(_ locale: Locale = Locale.current) -> Bool
 
 - [Supporting languages and locales with Foundation Models](../supporting-languages-and-locales-with-foundation-models.md)
 
-#### Discussion
+## Discussion
 
 Use this method over [`supportedLanguages`](./supportedlanguages.md) to check whether the given locale qualifies a person for using this model, as this method also takes language fallbacks into consideration.
 

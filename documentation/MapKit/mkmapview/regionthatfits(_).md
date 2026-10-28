@@ -24,11 +24,11 @@ func regionThatFits(_ region: MKCoordinateRegion) -> MKCoordinateRegion
 - (MKCoordinateRegion) regionThatFits:(MKCoordinateRegion) region;
 ```
 
-#### Return Value
+## Return Value
 
 A region that is still centered on the same point of the map but whose span values are adjusted to fit in the map view’s frame.
 
-#### Discussion
+## Discussion
 
 You can use this method to normalize the region values before displaying them in the map. This method returns a new region that both contains the specified region and fits neatly inside the map view’s frame.
 

@@ -9,13 +9,13 @@ Query ad creative rejection reasons for apps and return why each ad creative fai
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves a list of ad creative rejection reasons based on filtering and pagination criteria. See [`CreativeRejectionReason`](./creativerejectionreason.md) for the full field reference, including `creativeId` and the `reasonLevel` values.
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -23,9 +23,9 @@ See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of suppor
 
 Only `adamId` is confirmed filterable; other [`CreativeRejectionReason`](./creativerejectionreason.md) fields aren’t documented as query filters. The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 ```http
 POST /v1/rejection-reasons/apps/query
@@ -51,7 +51,7 @@ POST /v1/rejection-reasons/apps/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

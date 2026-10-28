@@ -25,7 +25,7 @@ var videoRange: AVVideoRange { get }
 @property (nonatomic, readonly) AVVideoRange videoRange;
 ```
 
-#### Discussion
+## Discussion
 
 The property defaults to [`sdr`](../../avvideorange/sdr.md).
 

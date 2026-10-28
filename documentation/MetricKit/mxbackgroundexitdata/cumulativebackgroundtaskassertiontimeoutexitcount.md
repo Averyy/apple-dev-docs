@@ -25,7 +25,7 @@ var cumulativeBackgroundTaskAssertionTimeoutExitCount: Int { get }
 @property (readonly) NSUInteger cumulativeBackgroundTaskAssertionTimeoutExitCount;
 ```
 
-#### Discussion
+## Discussion
 
 This exit usually occurs when the app fails to call [`endBackgroundTask(_:)`](../../UIKit/uiapplication/endbackgroundtask%28_%29.md) as soon as a background task is complete.
 

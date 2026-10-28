@@ -24,11 +24,11 @@ typealias JSObjectHasPropertyCallback = (JSContextRef?, JSObjectRef?, JSStringRe
 typedef _Bool (*)(const struct OpaqueJSContext *, struct OpaqueJSValue *, struct OpaqueJSString *) JSObjectHasPropertyCallback;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `object` has the property; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If you name your function `HasProperty`, you declare it like this:
 

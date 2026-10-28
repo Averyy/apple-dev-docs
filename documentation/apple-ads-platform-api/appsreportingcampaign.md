@@ -15,13 +15,13 @@ Campaign metadata for apps report rows.
 object AppsReportingCampaign
 ```
 
-#### Discussion
+## Discussion
 
 The `AppsReportingCampaign` object is the campaign metadata embedded in apps campaign report rows. It captures the campaign’s identity, operational status, budget, bid strategy, and targeting projection at report time.
 
 The `groupBy` dimensions specified in the report request determine the values of the dimension fields (`countryOrRegion`, `deviceClass`, `gender`, `ageRange`, etc.).
 
-##### Example
+### Example
 
 ```json
 {

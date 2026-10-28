@@ -16,7 +16,7 @@ func simd_muladd(_ x: simd_double8, _ y: simd_double8, _ z: simd_double8) -> sim
 static simd_double8 simd_muladd(simd_double8 x, simd_double8 y, simd_double8 z);
 ```
 
-#### Return Value
+## Return Value
 
 The result of `x*y + z`.
 

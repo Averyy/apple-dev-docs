@@ -23,7 +23,7 @@ case divideNoNaN
 MLCArithmeticOperationDivideNoNaN
 ```
 
-#### Discussion
+## Discussion
 
 Returns `0` if the denominator is `0`.
 

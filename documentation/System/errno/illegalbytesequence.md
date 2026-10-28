@@ -25,7 +25,7 @@ static var illegalByteSequence: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 While decoding a multibyte character, the function encountered an invalid or incomplete sequence of bytes, or the given wide character is invalid.
 

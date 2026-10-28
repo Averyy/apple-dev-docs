@@ -28,7 +28,7 @@ Available when `SignedType` is `Transaction`.
 - [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](../supporting-subscription-offer-codes-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Use this JSON Web Signature (JWS) value to perform your own JWS verification on your server or on the device.
 

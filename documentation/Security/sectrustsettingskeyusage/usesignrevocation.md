@@ -20,7 +20,7 @@ static var useSignRevocation: SecTrustSettingsKeyUsage { get }
 kSecTrustSettingsKeyUseSignRevocation
 ```
 
-#### Discussion
+## Discussion
 
 OCSP messages and CRLs are used to revoke certificates.
 

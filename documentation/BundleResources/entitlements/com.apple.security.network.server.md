@@ -14,7 +14,7 @@ A Boolean value indicating whether your app may listen for incoming network conn
 - **Name**: `com.apple.security.network.server`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Use this key to allow other computers to initiate network connections to your sandboxed app.
 

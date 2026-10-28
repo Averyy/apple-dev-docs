@@ -26,7 +26,7 @@ func stopRequestingMediaData()
 - (void) stopRequestingMediaData;
 ```
 
-#### Discussion
+## Discussion
 
 Always pair a call to [`requestMediaDataWhenReady(on:using:)`](./requestmediadatawhenready%28on,using%29.md) with this method. You can call this method from inside or outside of the requesting method’s block parameter.
 

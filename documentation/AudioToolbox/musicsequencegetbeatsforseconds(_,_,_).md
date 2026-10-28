@@ -24,11 +24,11 @@ func MusicSequenceGetBeatsForSeconds(_ inSequence: MusicSequence, _ inSeconds: F
 extern OSStatus MusicSequenceGetBeatsForSeconds(MusicSequence inSequence, Float64 inSeconds, MusicTimeStamp *outBeats);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 This function makes use of the music sequence’s tempo track.
 

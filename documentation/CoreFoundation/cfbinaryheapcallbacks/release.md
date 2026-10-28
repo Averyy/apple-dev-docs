@@ -25,7 +25,7 @@ var release: ((CFAllocator?, UnsafeRawPointer?) -> Void)!
 void (*)(const struct __CFAllocator *, const void *) release;
 ```
 
-#### Discussion
+## Discussion
 
 The callback used to remove a retain previously added for the binary heap from values as they are removed from the binary heap. If this field is `NULL`, the binary heap does nothing to release a value being removed.
 

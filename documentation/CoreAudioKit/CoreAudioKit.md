@@ -13,7 +13,7 @@ Add user interfaces to audio units.
 - macOS 10.4+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Core Audio Kit provides views and controllers to use when building Audio Unit user interfaces.
 

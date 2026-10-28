@@ -24,7 +24,7 @@ var displayName: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * displayName;
 ```
 
-#### Discussion
+## Discussion
 
 The display name enables a user to recognize a particular card from a list of cards.
 

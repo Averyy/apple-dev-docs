@@ -21,7 +21,7 @@ The number of bytes in the buffer.
 var count: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the `baseAddress` of this buffer is `nil`, the count is zero. However, a buffer can have a `count` of zero even with a non-`nil` base address.
 

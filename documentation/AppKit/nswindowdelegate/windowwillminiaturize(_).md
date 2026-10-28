@@ -20,7 +20,7 @@ optional func windowWillMiniaturize(_ notification: Notification)
 - (void) windowWillMiniaturize:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 You can retrieve the `NSWindow` object in question by sending [`object`](../../Foundation/nsnotification/object.md) to `notification`.
 

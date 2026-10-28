@@ -21,7 +21,7 @@ Moves the elements of a output span to the end of this array, leaving the span e
 mutating func append(moving items: inout OutputSpan<Element>)
 ```
 
-#### Discussion
+## Discussion
 
 If the array does not have sufficient capacity to hold all new items, then this reallocates the array’s storage to grow its capacity, using a geometric growth rate.
 

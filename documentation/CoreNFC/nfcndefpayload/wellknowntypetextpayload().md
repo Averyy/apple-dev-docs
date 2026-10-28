@@ -17,11 +17,11 @@ Returns the text and locale of a valid Well Known Type Text payload.
 func wellKnownTypeTextPayload() -> (String?, Locale?)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing a string and locale from a Well Known Type Text payload. The string and locale can be `nil`.
 
-#### Discussion
+## Discussion
 
 Use this method to get option text from a text payload.
 

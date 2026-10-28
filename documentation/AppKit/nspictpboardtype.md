@@ -15,7 +15,7 @@ QuickDraw picture data.
 extern NSPasteboardType NSPICTPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 The PICT format was formally deprecated in OS X v10.4 along with QuickDraw. You should not be explicitly providing or looking for PICT data on the pasteboard.
 

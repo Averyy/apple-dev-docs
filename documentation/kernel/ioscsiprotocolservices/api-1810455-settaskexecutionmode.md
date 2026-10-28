@@ -13,11 +13,11 @@ bool SetTaskExecutionMode (
  SCSITaskModenewTaskMode );
 ```
 
-#### Return Value
+## Return Value
 
 True on success, otherwise false.
 
-#### Overview
+## Overview
 
 Internal method used to set the task execution mode.
 

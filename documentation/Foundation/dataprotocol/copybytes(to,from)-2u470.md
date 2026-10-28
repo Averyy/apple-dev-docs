@@ -22,7 +22,7 @@ Copies a range of the bytes from the type into a raw memory buffer.
 func copyBytes<R>(to ptr: UnsafeMutableRawBufferPointer, from range: R) -> Int where R : RangeExpression, Self.Index == R.Bound
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes copied.
 

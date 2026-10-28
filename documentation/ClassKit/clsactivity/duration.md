@@ -23,7 +23,7 @@ var duration: TimeInterval { get }
 @property (nonatomic, assign, readonly) NSTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 When you create a new activity to represent a new attempt at a task by calling the [`createNewActivity()`](../clscontext/createnewactivity%28%29.md) method, the duration initializes to zero. After calling the [`start()`](./start%28%29.md) method, it begins counting seconds. When you call the [`stop()`](./stop%28%29.md) method, the duration counter stops. It resumes counting (without resetting) if you make a new call to the [`start()`](./start%28%29.md) method, enabling you to effectively pause an activity. However, when you create a new activity, the duration of the previous activity stops permanently and is no longer accessible to your app.
 

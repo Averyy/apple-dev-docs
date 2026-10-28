@@ -25,7 +25,7 @@ static let AHAP: AVFileType
 extern AVFileType const AVFileTypeAHAP;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `public.haptics-content`.
 

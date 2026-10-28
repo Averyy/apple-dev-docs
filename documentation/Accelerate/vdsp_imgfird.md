@@ -21,7 +21,7 @@ Filters a double-precision image by performing a 2D convolution with an arbitrar
 extern void vDSP_imgfirD(const double *__A, vDSP_Length __NR, vDSP_Length __NC, const double *__F, double *__C, vDSP_Length __P, vDSP_Length __Q);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_imgfir`](./vdsp_imgfir.md), except for the types of vectors `A`, `F`, and `C`.
 

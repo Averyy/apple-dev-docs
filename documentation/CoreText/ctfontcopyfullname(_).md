@@ -25,7 +25,7 @@ func CTFontCopyFullName(_ font: CTFont) -> CFString
 extern CFStringRefCTFontCopyFullName(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 A retained reference to the full name of the font.
 

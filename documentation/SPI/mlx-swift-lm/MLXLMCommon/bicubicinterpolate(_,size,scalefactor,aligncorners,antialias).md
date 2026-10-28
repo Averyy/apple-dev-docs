@@ -17,7 +17,7 @@ Bicubic interpolation using MLX Metal kernel.
 func bicubicInterpolate(_ x: MLXArray, size: (Int, Int)? = nil, scaleFactor: (Float, Float)? = nil, alignCorners: Bool = false, antialias: Bool = false) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Interpolated tensor of shape [B, C, outH, outW]
 

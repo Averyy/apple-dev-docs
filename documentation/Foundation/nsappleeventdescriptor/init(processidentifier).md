@@ -19,7 +19,7 @@ init(processIdentifier: pid_t)
 + (NSAppleEventDescriptor *) descriptorWithProcessIdentifier:(pid_t) processIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The result is suitable for use as the `targetDescriptor` parameter of `+appleEventWithEventClass:eventID:targetDescriptor:returnID:transactionID:`.
 

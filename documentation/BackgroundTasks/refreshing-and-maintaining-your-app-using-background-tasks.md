@@ -12,7 +12,7 @@ Use scheduled background tasks for refreshing your app content and for performin
 - Mac Catalyst 13.0+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [707: Advances in App Background Execution](https://developer.apple.com/videos/play/wwdc19/707/).
 

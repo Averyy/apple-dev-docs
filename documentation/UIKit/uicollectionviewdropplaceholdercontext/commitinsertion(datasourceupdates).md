@@ -27,11 +27,11 @@ func commitInsertion(dataSourceUpdates: (IndexPath) -> Void) -> Bool
 
 - [Supporting Drag and Drop in Collection Views](../supporting-drag-and-drop-in-collection-views.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the placeholder was replaced by your content or [`false`](../../Swift/false.md) if the placeholder was no longer in the collection view.
 
-#### Discussion
+## Discussion
 
 When you receive the actual data for a cell, call this method to remove the corresponding placeholder cell and insert the actual cell. If the placeholder cell is still present in the collection view, this method calls the `dataSourceUpdates` handler. Use that handler block to update the data source object of the collection view. Do not update the collection view itself. This method automatically updates the collection view, creating a new cell for your data.
 

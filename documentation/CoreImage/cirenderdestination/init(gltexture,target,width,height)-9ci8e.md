@@ -24,11 +24,11 @@ init(glTexture texture: UInt32, target: UInt32, width: Int, height: Int)
 - (instancetype) initWithGLTexture:(unsigned int) texture target:(unsigned int) target width:(NSUInteger) width height:(NSUInteger) height;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIRenderDestination`](../cirenderdestination.md) object for rendering to a `GLTexture` supported by `GLContext`-backed [`CIContext`](../cicontext.md).
 
-#### Discussion
+## Discussion
 
 Rendering to a `GLTexture`-backed [`CIRenderDestination`](../cirenderdestination.md) is supported by only `GLContext`-backed [`CIContext`](../cicontext.md).
 

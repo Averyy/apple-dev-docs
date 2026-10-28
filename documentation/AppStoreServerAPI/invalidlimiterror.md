@@ -19,7 +19,7 @@ object InvalidLimitError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 A request returns this error if you call the [`Get Group Members`](./get-group-members.md) endpoint with a [`limit`](./limit.md) query parameter that’s outside the supported range. The maximum value is `100`.
 

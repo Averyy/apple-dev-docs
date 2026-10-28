@@ -5,7 +5,7 @@
 
 Enable people to move or duplicate items by issuing Copy and Paste commands.
 
-#### Overview
+## Overview
 
 When people issue standard Copy and Cut commands, they expect to move items to the system’s Clipboard, from which they can paste the items into another place in the same app or into another app. Your app can participate in this activity if you add view modifiers that indicate how to respond to the standard commands.
 

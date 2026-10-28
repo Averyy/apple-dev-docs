@@ -23,7 +23,7 @@ class var main: UIMenuSystem { get }
 @property (class, nonatomic, readonly) UIMenuSystem * mainSystem;
 ```
 
-#### Discussion
+## Discussion
 
 In Mac apps built with Mac Catalyst, the main menu system is the app’s menu bar.
 

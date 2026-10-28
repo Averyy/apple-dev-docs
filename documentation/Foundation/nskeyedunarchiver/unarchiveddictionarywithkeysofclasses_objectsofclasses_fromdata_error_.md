@@ -21,7 +21,7 @@ Decodes the \c NSDictionary root object from \c data which should be an \c NSDic
 + (NSDictionary *) unarchivedDictionaryWithKeysOfClasses:(NSSet<Class> *) keyClasses objectsOfClasses:(NSSet<Class> *) valueClasses fromData:(NSData *) data error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Enables \c requiresSecureCoding and sets the \c decodingFailurePolicy to \c NSDecodingFailurePolicySetErrorAndReturn.
 

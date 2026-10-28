@@ -23,11 +23,11 @@ static func - (lhs: Measurement<UnitType>, rhs: Measurement<UnitType>) -> Measur
 
 Available when `UnitType` inherits `Dimension`.
 
-#### Return Value
+## Return Value
 
 The result of adding the two measurements.
 
-#### Discussion
+## Discussion
 
 If the `unit` of the `lhs` and `rhs` are `==`, then this returns the result of subtracting the `value` of each `Measurement`. If they are not equal, then this will convert both to the base unit of the `Dimension` and return the result as a `Measurement` of that base unit.
 

@@ -20,7 +20,7 @@ Instantiate a class instance with the name of the related contact.
 + (instancetype) contactRelationWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new instance of this class.
 

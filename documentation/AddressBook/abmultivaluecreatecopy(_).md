@@ -19,7 +19,7 @@ func ABMultiValueCreateCopy(_ multiValue: ABMultiValueRef!) -> Unmanaged<ABMulti
 extern ABMultiValueRefABMultiValueCreateCopy(ABMultiValueRef multiValue);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of `multiValue`.
 

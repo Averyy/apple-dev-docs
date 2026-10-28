@@ -40,11 +40,11 @@ init(pageIndex: Int, at point: NSPoint, fileURL url: URL)
 - (instancetype) initWithPageIndex:(NSUInteger) pageIndex atPoint:(NSPoint) point fileURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `PDFActionRemoteGoTo` instance, or `NULL` if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 The `PDFActionRemoteGoTo` object uses a zero-based page index, not a `PDFPage` object. This simplifies the handling of remote destinations for documents that may not be instantiated yet.
 

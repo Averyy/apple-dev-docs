@@ -19,11 +19,11 @@ func recommendedLayerContentsScale(_ preferredContentsScale: CGFloat) -> CGFloat
 - (CGFloat) recommendedLayerContentsScale:(CGFloat) preferredContentsScale;
 ```
 
-#### Return Value
+## Return Value
 
 The recommended layer contents scale. This scale factor may be different than the one in the `preferredContentsScale` parameter.
 
-#### Discussion
+## Discussion
 
 Use this method to obtain the scale factor value that you pass to the [`layerContents(forContentsScale:)`](./layercontents%28forcontentsscale%29.md) method. This method uses the image data to determine the scale factor that is best suited for creating an image that looks good in the layer.
 

@@ -21,7 +21,7 @@ func validateToolbarItem(_ item: NSToolbarItem) -> Bool
 - (BOOL) validateToolbarItem:(NSToolbarItem *) item;
 ```
 
-#### Discussion
+## Discussion
 
 If this method is implemented and returns [`false`](../../Swift/false.md), [`NSToolbar`](../nstoolbar.md) will disable `item`. Returning [`true`](../../Swift/true.md) causes `item` to be enabled.
 

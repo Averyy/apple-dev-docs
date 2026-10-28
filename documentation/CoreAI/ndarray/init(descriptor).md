@@ -19,7 +19,7 @@ Creates an array with the shape and preferred strides from the specified descrip
 init(descriptor: consuming NDArrayDescriptor)
 ```
 
-#### Discussion
+## Discussion
 
 The resulting array may not have a contiguous layout. The strides match the values returned by the descriptor’s preferred strides, so `contiguousElements` on a view of this array may return `nil`. In that case, use `withUnsafePointer` or `withUnsafeMutablePointer` to access the data while respecting the strides.
 

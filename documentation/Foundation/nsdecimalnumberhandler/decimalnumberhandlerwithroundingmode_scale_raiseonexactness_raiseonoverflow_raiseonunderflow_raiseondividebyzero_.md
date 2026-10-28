@@ -21,11 +21,11 @@ Returns an `NSDecimalNumberHandler` object with customized behavior.
 + (instancetype) decimalNumberHandlerWithRoundingMode:(NSRoundingMode) roundingMode scale:(short) scale raiseOnExactness:(BOOL) exact raiseOnOverflow:(BOOL) overflow raiseOnUnderflow:(BOOL) underflow raiseOnDivideByZero:(BOOL) divideByZero;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDecimalNumberHandler` object with customized behavior.
 
-#### Discussion
+## Discussion
 
 See the [`NSDecimalNumberBehaviors`](../nsdecimalnumberbehaviors.md) protocol specification for a complete explanation of the possible behaviors.
 

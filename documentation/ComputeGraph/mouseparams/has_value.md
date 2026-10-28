@@ -25,7 +25,7 @@ var has_value: Bool
 bool has_value;
 ```
 
-#### Discussion
+## Discussion
 
 When `false`, the `position` and `direction` values should not be used.
 

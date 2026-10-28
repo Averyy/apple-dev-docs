@@ -25,7 +25,7 @@ var identifier: String? { get }
 @property (nonatomic, readonly, nullable) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Note that the GeoJSON specification states that the identifier can be a number or a string. However, this [`identifier`](./identifier.md) returns as a string.
 

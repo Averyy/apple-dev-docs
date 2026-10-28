@@ -25,7 +25,7 @@ optional func peripheral(_ peripheral: CBPeripheral, didDiscoverDescriptorsFor c
 - (void) peripheral:(CBPeripheral *) peripheral didDiscoverDescriptorsForCharacteristic:(CBCharacteristic *) characteristic error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Core Bluetooth invokes this method when your app calls the [`discoverDescriptors(for:)`](../cbperipheral/discoverdescriptors%28for%29.md) method. If the peripheral successfully discovers the descriptors of the specified characteristic, you can access them through the characteristic’s [`descriptors`](../cbcharacteristic/descriptors.md) property. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
 

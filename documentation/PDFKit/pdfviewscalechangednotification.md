@@ -20,7 +20,7 @@ A notification posted when the scale factor changes.
 extern NSNotificationName const PDFViewScaleChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFView` object itself.
 

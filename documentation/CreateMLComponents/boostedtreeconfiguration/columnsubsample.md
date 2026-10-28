@@ -21,7 +21,7 @@ Subsample ratio of the columns in each iteration of tree construction.
 var columnSubsample: Double
 ```
 
-#### Discussion
+## Discussion
 
 Like row subsample, this can also help prevent model overfitting. Setting this to a value of 0.5 results in the model randomly sampling half of the columns to grow each tree. Must be in the range (0, 1).
 

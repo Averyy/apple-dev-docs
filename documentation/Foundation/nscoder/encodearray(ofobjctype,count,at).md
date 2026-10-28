@@ -25,7 +25,7 @@ func encodeArray(ofObjCType type: UnsafePointer<CChar>, count: Int, at array: Un
 - (void) encodeArrayOfObjCType:(const char *) type count:(NSUInteger) count at:(const void *) array;
 ```
 
-#### Discussion
+## Discussion
 
 The values are encoded from the buffer beginning at `address`. `itemType` must contain exactly one type code. `NSCoder`’s implementation invokes [`encodeValue(ofObjCType:at:)`](./encodevalue%28ofobjctype,at%29.md) to encode the entire array of items. Subclasses that implement the [`encodeValue(ofObjCType:at:)`](./encodevalue%28ofobjctype,at%29.md) method do not need to override this method.
 
@@ -33,7 +33,7 @@ This method must be matched by a subsequent [`decodeArray(ofObjCType:count:at:)`
 
 For information on creating an Objective-C type code suitable for `itemType`, see [Type Encodings](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100).
 
-##### Special Considerations
+### Special Considerations
 
 You should not use this method to encode C arrays of Objective-C objects. See [`decodeArray(ofObjCType:count:at:)`](./decodearray%28ofobjctype,count,at%29.md) for more details.
 

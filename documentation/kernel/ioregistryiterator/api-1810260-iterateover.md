@@ -14,11 +14,11 @@ static IORegistryIterator * iterateOver(
  IOOptionBits options = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 A created IORegistryIterator instance, to be released by the caller when it has finished with it.
 
-#### Overview
+## Overview
 
 This method creates an IORegistryIterator that is set up with options to iterate children or parents of a root entry, and to recurse automatically into entries as they are returned, or only when instructed. The iterator object keeps track of entries that have been recursed into previously to avoid loops.
 

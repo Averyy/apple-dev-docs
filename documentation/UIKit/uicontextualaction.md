@@ -23,7 +23,7 @@ class UIContextualAction
 @interface UIContextualAction : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create [`UIContextualAction`](./uicontextualaction.md) objects to define the types of actions that can be performed when the user swipes left or right on a table row. Use your actions to initialize a [`UISwipeActionsConfiguration`](./uiswipeactionsconfiguration.md) object in your table view delegate object.
 

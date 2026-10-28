@@ -26,7 +26,7 @@ func searchForBrowsableDomains()
 - (void) searchForBrowsableDomains;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate receives a [`netServiceBrowser(_:didFindDomain:moreComing:)`](../netservicebrowserdelegate/netservicebrowser%28_,didfinddomain,morecoming%29.md) message for each domain discovered.
 

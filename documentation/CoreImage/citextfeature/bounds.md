@@ -24,7 +24,7 @@ var bounds: CGRect { get }
 @property (readonly) CGRect bounds;
 ```
 
-#### Discussion
+## Discussion
 
 This property identifies the rectangular region of the image containing the detected text, not necessarily the shape of the text box. A detected feature is rectangular in space, but may appear as a four-sided polygon in the image. Use the properties listed in `CITextFeature` to find the corners of the rectangle as it appears in perspective.
 

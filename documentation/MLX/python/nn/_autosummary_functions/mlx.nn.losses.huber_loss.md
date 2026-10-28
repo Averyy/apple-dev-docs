@@ -6,8 +6,11 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.losses.huber_loss
 
-**class huber_loss(*inputs: array*, *targets: array*, *delta: float = 1.0*, *reduction: Literal['none', 'mean', 'sum'] = 'none'*)**
-: Computes the Huber loss between inputs and targets.
+```python
+class huber_loss(inputs: array, targets: array, delta: float = 1.0, reduction: Literal['none', 'mean', 'sum'] = 'none')
+```
+
+Computes the Huber loss between inputs and targets.
 
 \[\begin{split}l_{\delta}(a) =
 \left\{ \begin{array}{ll}
@@ -15,17 +18,17 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
     \delta \left( |a| - \frac{1}{2} \delta \right) & \text{otherwise.}
 \end{array} \right.\end{split}\]
 
-Parameters:
+**Parameters:**
 
-**inputs** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – The predicted values.
-**targets** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – The target values.
-**delta** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – The threshold at which to change between L1 and L2
+- **inputs** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – The predicted values.
+- **targets** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – The target values.
+- **delta** ([float](https://docs.python.org/3/builtins/functions.html#float), *optional*) – The threshold at which to change between L1 and L2
 loss. Default: `1.0`.
-**reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
+- **reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str), *optional*) – Specifies the reduction to apply to the output:
 `'none'` | `'mean'` | `'sum'`. Default: `'none'`.
 
-Returns:
-The computed Huber loss.
+**Returns:**
+: The computed Huber loss.
 
-Return type:
-[array](../../_autosummary/mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](../../_autosummary/mlx.core.array.md#mlx.core.array)

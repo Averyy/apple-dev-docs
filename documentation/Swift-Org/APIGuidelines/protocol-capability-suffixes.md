@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Protocols that describe a *capability* should be named using the suffixes `able`, `ible`, or `ing`.
 
-#### Overview
+## Overview
 
 For example: `Equatable`, `ProgressReporting`.
 

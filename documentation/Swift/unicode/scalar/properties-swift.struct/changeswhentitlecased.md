@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar’s normalized form differs from t
 var changesWhenTitlecased: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “Changes_When_Titlecased” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 

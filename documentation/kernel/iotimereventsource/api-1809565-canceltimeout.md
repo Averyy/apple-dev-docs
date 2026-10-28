@@ -11,7 +11,7 @@ Disable any outstanding calls to this event source.
 virtual void cancelTimeout();
 ```
 
-#### Overview
+## Overview
 
 Clear down any oustanding calls. By the time this function completes it is guaranteed that the action will not be called again.
 

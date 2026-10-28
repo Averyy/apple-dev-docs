@@ -22,11 +22,11 @@ Writes data from the specified buffer, not exceeding the buffer’s allocated si
 func write(from buffer: UnsafeRawBufferPointer) throws -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes written by the stream.
 
-#### Discussion
+## Discussion
 
 This function increments the internal stream position by the number of bytes written by the stream.
 

@@ -22,7 +22,7 @@ func startTextAnimation(_ textAnimation: UIWritingToolsCoordinator.TextAnimation
 - (NSUUID *) startTextAnimation:(UIWritingToolsCoordinatorTextAnimation) textAnimation forRange:(NSRange) range inContext:(UIWritingToolsCoordinatorContext *) context writingDirection:(NSWritingDirection) writingDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The context should be large enough to contain the range being indicated, and the range should be the range of the issue within the context. Returns a UUID that can be used to cancel the animation, or nil if the animation cannot be performed. Calls delegate methods to prepare for the animation (which should hide the text), request previews (with and without underlines), and finish the animation (which should show the text).
 

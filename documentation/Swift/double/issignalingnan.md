@@ -21,7 +21,7 @@ A Boolean value indicating whether the instance is a signaling NaN.
 var isSignalingNaN: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Signaling NaNs typically raise the Invalid flag when used in general computing operations.
 

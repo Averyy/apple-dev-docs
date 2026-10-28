@@ -25,11 +25,11 @@ class func speed(by speed: CGFloat, duration: TimeInterval) -> SKAction
 + (SKAction *) speedBy:(CGFloat) speed duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`speed`](../sknode/speed.md) property animates to the new value.
 

@@ -24,7 +24,7 @@ class GKStateMachine
 @interface GKStateMachine : NSObject
 ```
 
-#### Overview
+## Overview
 
 In GameplayKit, you subclass [`GKState`](./gkstate.md) to define each state and the rules for allowed transitions between states, and use a [`GKStateMachine`](./gkstatemachine.md) instance to manage a machine that combines several states. This system provides a way to organize code in your game by organizing state-dependent actions into methods that run when entering a state, when exiting a state, and periodically while in a state (for example, on every animation frame your game renders).
 

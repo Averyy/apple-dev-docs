@@ -22,7 +22,7 @@ Enables or disables scrolling in scrollable views when using particular inputs.
 @preconcurrency func scrollInputBehavior(_ behavior: ScrollInputBehavior, for input: ScrollInputKind) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 In contrast to [`scrollDisabled(_:)`](./scrolldisabled%28_%29.md), this modifier will enable or disable scrolling only for particular inputs. The following, for instance, disables double-tap-to-scroll on watchOS while preserving the ability to scroll via touch and the Digital Crown:
 

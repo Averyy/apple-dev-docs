@@ -17,7 +17,7 @@ The key for additional details about the accessory’s top error.
 static let accessoryErrorDetails: String
 ```
 
-#### Discussion
+## Discussion
 
 This key is present only when details are available for the error in [`accessoryErrorCode`](./accessoryerrorcode.md).
 

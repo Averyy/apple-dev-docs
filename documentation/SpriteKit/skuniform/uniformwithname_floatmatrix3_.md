@@ -18,7 +18,7 @@ Creates and initializes a new uniform object that holds a `3 x 3` matrix of floa
 + (instancetype) uniformWithName:(NSString *) name floatMatrix3:(GLKMatrix3) value;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized uniform object whose type is set to [`SKUniformType.floatMatrix3`](../skuniformtype/floatmatrix3.md).
 

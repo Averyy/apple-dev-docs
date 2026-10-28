@@ -23,7 +23,7 @@ static var flushUpdates: UIView.AnimationOptions { get }
 UIViewAnimationOptionFlushUpdates
 ```
 
-#### Discussion
+## Discussion
 
 - Before entering an animation scope, for invalidations that happened previously without animation.
 - Before entering a nested animation scope, for invalidations that happened in the outer animation scope.

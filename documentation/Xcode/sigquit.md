@@ -5,7 +5,7 @@
 
 Another processes terminated the process, often because the process violated a requirement or timeout.
 
-#### Overview
+## Overview
 
 This signal indicates the process terminated at the request of another process that has the privileges to manage its lifetime. It doesn’t necessarily mean that the process crashed, but the process likely misbehaved in a detectable manner. For a command-line process, this signal can also be sent by the user pressing control-\ although the key binding may vary by shell and configuration.
 

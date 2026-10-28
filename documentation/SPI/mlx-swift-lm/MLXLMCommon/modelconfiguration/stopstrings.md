@@ -17,7 +17,7 @@ Text sequences that stop decoded generation when encountered.
 var stopStrings: Set<String>?
 ```
 
-#### Discussion
+## Discussion
 
 If this is `nil`, decoded stop strings fall back to [`extraEOSTokens`](./extraeostokens.md). Set this explicitly, including to an empty set, to override that fallback.
 

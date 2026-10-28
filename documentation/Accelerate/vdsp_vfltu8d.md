@@ -21,7 +21,7 @@ Converts an array of unsigned 8-bit integers to double-precision floating-point 
 extern void vDSP_vfltu8D(const unsigned char *__A, vDSP_Stride __IA, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The following code shows an example of using this function:
 

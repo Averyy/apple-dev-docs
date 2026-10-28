@@ -5,7 +5,7 @@
 
 Learn how the Apple News API authenticates clients, authorizes your news channel, and enforces confidentiality.
 
-#### Overview
+## Overview
 
 Security is the highest priority of the Apple News API, and it conforms to these principles:
 
@@ -15,7 +15,7 @@ Security is the highest priority of the Apple News API, and it conforms to these
 
 > **Note**: In this documentation, a *client* is a remote system identified by an API key. News Publisher provides you with the API key when you set up your channel. See [Use your CMS with News Publisher](https://support.apple.com/guide/news-publisher/apd88c8447e6).
 
-##### Authentication
+### Authentication
 
 The Apple News API authenticates clients using message authentication codes (MAC) — specifically, hash-based message authentication codes (HMAC).
 
@@ -30,21 +30,21 @@ The server uses the following MAC/HMAC authentication process:
 
 For more information, see [Authenticating the Apple News API](./about-the-apple-news-security-model.md#Authenticating-the-Apple-News-API).
 
-##### Authorization
+### Authorization
 
 The Apple News API enforces authorization by tying each API key to a single channel. A client thatʼs using a particular API key can create, read, update, or delete only those resources that are owned by the channel.
 
 The Apple News API doesn’t support roles. Every key for a particular channel has access to all API endpoints for that channel.
 
-##### Confidentiality
+### Confidentiality
 
 Transport layer security (TLS) enforces confidentiality in the Apple News API. The Apple News API listens for requests served over TLS/HTTPS only. This ensures that all requests and responses are fully encrypted.
 
-##### Authenticating the Apple News API
+### Authenticating the Apple News API
 
 To meet the authentication requirements of the Apple News API, follow these steps for each request.
 
-###### Create a Request
+#### Create a Request
 
 If the request is a `GET`, create a canonical request by using a byte-wise concatenation of the following:
 
@@ -59,7 +59,7 @@ If the request is a `POST` request with an entity, then include the following in
 - The value of the `Content-Type` header
 - The full content of the entity
 
-###### Complete the Request
+#### Complete the Request
 
 1. Decode the secret that you received as a Base64-encoded string when you created your channel in News Publisher.
 2. Use HMAC SHA-256 to generate a hash out of the canonical request you created in [Create a Request](./about-the-apple-news-security-model.md#Create-a-Request).

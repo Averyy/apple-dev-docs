@@ -24,7 +24,7 @@ class func hertz() -> Self
 + (instancetype) hertzUnit;
 ```
 
-#### Discussion
+## Discussion
 
 Hertz represent cycles per second.
 

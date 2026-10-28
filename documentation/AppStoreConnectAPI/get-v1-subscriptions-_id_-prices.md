@@ -13,7 +13,7 @@ Get a list of prices for an auto-renewable subscription, by territory.
 
 - [Configuring subscription prices across territories](./configuring-subscription-prices-across-territories.md)
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

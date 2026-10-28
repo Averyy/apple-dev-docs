@@ -22,7 +22,7 @@ case reportJunkAndBlockSender
 ILClassificationActionReportJunkAndBlockSender
 ```
 
-#### Discussion
+## Discussion
 
 The extension creates an SMS message based on the response, and displays the message to the user. The user can then send or cancel the report.
 

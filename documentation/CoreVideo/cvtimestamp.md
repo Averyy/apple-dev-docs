@@ -25,7 +25,7 @@ struct CVTimeStamp
 typedef struct { ... } CVTimeStamp;
 ```
 
-#### Overview
+## Overview
 
 This structure is designed to be very similar to the audio timestamp defined in the Core Audio framework except that, in CVTimeStamp, floating-point values are not used to represent the video equivalent of sample times.
 

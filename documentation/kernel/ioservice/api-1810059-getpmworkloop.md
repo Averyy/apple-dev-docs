@@ -12,7 +12,7 @@ virtual IOWorkLoop * getPMworkloop(
  void ) __attribute__((deprecated));
 ```
 
-#### Overview
+## Overview
 
 Most drivers should create their own work loops to synchronize their code; drivers should not run arbitrary code on the power management work loop.
 

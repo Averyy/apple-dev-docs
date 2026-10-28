@@ -8,7 +8,7 @@ An atom that contains name for the entire scene, the default node ID, and defaul
 
 > **Deprecated**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
-#### Overview
+## Overview
 
 The VR world atom container (VR world for short) includes such information as the name for the entire scene, the default node ID, and default imaging properties, as well as a list of the nodes contained in the QTVR track.
 

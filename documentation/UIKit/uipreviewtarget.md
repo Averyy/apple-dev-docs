@@ -24,7 +24,7 @@ class UIPreviewTarget
 @interface UIPreviewTarget : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a [`UIPreviewTarget`](./uipreviewtarget.md) object when animating views to or from a separate container view. For example, use this method to animate views to or from a different part of your app’s interface.
 

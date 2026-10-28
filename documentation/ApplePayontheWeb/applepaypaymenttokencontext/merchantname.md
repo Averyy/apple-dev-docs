@@ -16,7 +16,7 @@ The merchant’s display name that the Apple Pay server associates with the paym
 required DOMString merchantName;
 ```
 
-#### Discussion
+## Discussion
 
 Provide the name of the merchant associated with the payment token, to display to the user.
 

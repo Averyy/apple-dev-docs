@@ -23,11 +23,11 @@ mutating func popFirst() -> Element?
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 A member of the set. If the set is empty, returns `nil`.
 
-#### Discussion
+## Discussion
 
 Because a set is not an ordered collection, the “first” element may not be the first element that was added to the set.
 

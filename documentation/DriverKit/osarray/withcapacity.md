@@ -18,7 +18,7 @@ Allocates an OSArray object with preallocated capacity.
 static OSArrayPtr withCapacity(uint32_t capacity);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSArray with reference count 1 to be released by the caller.
 

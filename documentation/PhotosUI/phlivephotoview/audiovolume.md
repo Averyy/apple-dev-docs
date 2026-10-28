@@ -19,7 +19,7 @@ var audioVolume: Float { get set }
 @property (nonatomic, assign, readwrite) float audioVolume;
 ```
 
-#### Discussion
+## Discussion
 
 Values for this property must be between `0.0` and `1.0`, inclusive. A value of `1.0` (the default) plays audio content from the Live Photo at full volume (relative to the system volume). A value of `0.0` is equivalent to setting the [`isMuted`](./ismuted.md) property to `true`.
 

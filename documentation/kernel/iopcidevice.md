@@ -15,7 +15,7 @@ An IOService class representing a PCI device.
 class IOPCIDevice : IOService
 ```
 
-#### Overview
+## Overview
 
 The discovery of a PCI device by the PCI bus family results in an instance of the IOPCIDevice being created and published. It provides services for looking up and mapping memory mapped hardware, and access to the PCI configuration and I/O spaces.
 

@@ -15,7 +15,7 @@ The libraries that the framework loaded or failed to load.
 readonly libraries: string[];
 ```
 
-#### Discussion
+## Discussion
 
 The event type can be `load` or `load-error`, which indicates if the loading operation succeeded or failed.
 

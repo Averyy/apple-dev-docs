@@ -15,11 +15,11 @@ Returns the root vnode with an iocount.
 vnode_t vfs_rootvnode(void);
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to root vnode if successful; error code if there is a problem taking an iocount.
 
-#### Discussion
+## Discussion
 
 Caller must vnode_put() the root node when done.
 

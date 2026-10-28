@@ -16,7 +16,7 @@ Represents an event group ID, which Multiprocessing Services uses to manipulate 
 typedef struct OpaqueMPEventID *MPEventID;
 ```
 
-#### Discussion
+## Discussion
 
 You obtain an event group ID by calling the function [`MPCreateEvent`](./api-1585702-mpcreateevent.md). 
 

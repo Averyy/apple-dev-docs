@@ -24,7 +24,7 @@ var customVideoCompositorClass: (any AVVideoCompositing.Type)? { get }
 @property (nonatomic, readonly, nullable) Class<AVVideoCompositing> * customVideoCompositorClass;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `nil`, which indicates to use the internal video compositor. The `customVideoCompositorClass` must implement the [`AVVideoCompositing`](../avvideocompositing.md) protocol.
 

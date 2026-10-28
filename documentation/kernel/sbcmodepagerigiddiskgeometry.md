@@ -13,7 +13,7 @@
 typedef struct SBCModePageRigidDiskGeometry SBCModePageRigidDiskGeometry;
 ```
 
-#### Discussion
+## Discussion
 
 Rigid Disk Geometry Mode Page (PAGE CODE 0x04) format.
 

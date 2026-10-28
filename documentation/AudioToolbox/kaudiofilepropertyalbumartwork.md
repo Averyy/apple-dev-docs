@@ -24,7 +24,7 @@ var kAudioFilePropertyAlbumArtwork: AudioFilePropertyID { get }
 kAudioFilePropertyAlbumArtwork
 ```
 
-#### Discussion
+## Discussion
 
 A [`CFData`](../CoreFoundation/cfdata.md) object containing an image file associated with the audio file.
 

@@ -15,11 +15,11 @@ Create a preset field of view A.
 extern ar_field_of_view_tar_field_of_view_create_preset_a();
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `ar_field_of_view_t` representing preset A.
 
-#### Discussion
+## Discussion
 
 > **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
 

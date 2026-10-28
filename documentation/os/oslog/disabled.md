@@ -21,7 +21,7 @@ The shared disabled log.
 static let disabled: OSLog
 ```
 
-#### Discussion
+## Discussion
 
 Passing this constant to an `os_log` function prevents the system from logging a message.
 

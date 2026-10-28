@@ -19,7 +19,7 @@ var mouseUpAction: PDFAction? { get set }
 @property (nonatomic, strong, nullable) PDFAction * mouseUpAction;
 ```
 
-#### Discussion
+## Discussion
 
 The mouse-up action is optional.
 

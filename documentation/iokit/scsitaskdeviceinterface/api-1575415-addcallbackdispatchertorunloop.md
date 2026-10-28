@@ -16,11 +16,11 @@ Convenience method to add asynchronous callback mechanisms to the CFRunLoop of c
 IOReturn (*AddCallbackDispatcherToRunLoop)(void *self, CFRunLoopRef cfRunLoopRef);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, or kIOReturnNoMemory if a mach port could not be allocated and initialized properly.
 
-#### Discussion
+## Discussion
 
 Once a SCSITaskDeviceInterface is opened, the client may make synchronous or asynchronous requests to the device. This method creates and initializes a mach_port_t for receiving asynchronous callback notifications via the CFRunLoop mechanism.
 

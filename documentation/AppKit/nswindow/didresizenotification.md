@@ -19,7 +19,7 @@ class let didResizeNotification: NSNotification.Name
 extern NSNotificationName NSWindowDidResizeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object whose size changed. This notification doesn’t contain a `userInfo` dictionary.
 

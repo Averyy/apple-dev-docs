@@ -23,7 +23,7 @@ case networkError
 AAAttributionErrorCodeNetworkError
 ```
 
-#### Discussion
+## Discussion
 
 To receive an attribution token, you must have unimpeded internet access. Make sure you’re not using a simulator when generating a token.
 

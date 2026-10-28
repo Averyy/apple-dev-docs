@@ -23,7 +23,7 @@ var remembersLastFocusedIndexPath: Bool { get set }
 @property (nonatomic) BOOL remembersLastFocusedIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set to [`true`](../../Swift/true.md), the collection view remembers which index path was focused when focus leaves the collection view. When it receives the focus again, the collection view automatically redirects that focus back to the previously focused index path. The default value of this property is [`false`](../../Swift/false.md).
 

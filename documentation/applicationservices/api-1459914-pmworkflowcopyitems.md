@@ -19,7 +19,7 @@ func PMWorkflowCopyItems(_ workflowItems: UnsafeMutablePointer<Unmanaged<CFArray
 OSStatus PMWorkflowCopyItems(CFArrayRef  _Nullable *workflowItems);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 

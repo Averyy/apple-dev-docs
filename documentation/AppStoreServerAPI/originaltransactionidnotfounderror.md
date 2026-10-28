@@ -15,7 +15,7 @@ An error that indicates an original transaction identifier wasn’t found.
 object OriginalTransactionIdNotFoundError
 ```
 
-#### Discussion
+## Discussion
 
 Don’t unlock the service or content associated with the transaction ID for the app bundle ID and environment that you indicate in the request unless you successfully resolve this error. To resolve this error, check your request to ensure that:
 

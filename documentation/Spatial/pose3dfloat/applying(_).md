@@ -21,7 +21,7 @@ Returns a pose that’s transformed by the specified projective transform.
 func applying(_ transform: ProjectiveTransform3DFloat) -> Pose3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed pose.
 

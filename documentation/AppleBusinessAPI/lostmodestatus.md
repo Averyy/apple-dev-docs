@@ -20,7 +20,7 @@ string LostModeStatus
 - `ENABLED`
 - `DISABLED`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

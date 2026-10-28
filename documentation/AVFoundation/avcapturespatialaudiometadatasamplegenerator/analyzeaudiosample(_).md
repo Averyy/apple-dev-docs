@@ -21,11 +21,11 @@ func analyzeAudioSample(_ sbuf: CMSampleBuffer) -> OSStatus
 - (OSStatus) analyzeAudioSample:(CMSampleBufferRef) sbuf;
 ```
 
-#### Return Value
+## Return Value
 
 `noErr` if the sample is successfully analyzed, otherwise a non-zero error code.
 
-#### Discussion
+## Discussion
 
 You must call this method with each and every spatial audio buffer you provide to [`AVAssetWriter`](../avassetwriter.md), so it can be analyzed for the generation of a proper spatial audio timed metadata value.
 

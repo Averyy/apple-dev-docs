@@ -17,7 +17,7 @@ The photoplethysmogram waveform in normalized units.
 @property (nonatomic, strong, readonly, nullable) NSNumber * normalizedReflectance;
 ```
 
-#### Discussion
+## Discussion
 
 The scale of the normalized signal may vary. For more information on how Apple Watch uses photoplethysmography, see the “How Apple Watch measures your heart rate” section in [Monitor your heart rate with Apple Watch](https://support.apple.com/en-us/120277).
 

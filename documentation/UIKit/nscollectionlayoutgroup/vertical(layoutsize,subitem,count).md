@@ -25,7 +25,7 @@ class func vertical(layoutSize: NSCollectionLayoutSize, subitem: NSCollectionLay
 + (instancetype) verticalGroupWithLayoutSize:(NSCollectionLayoutSize *) layoutSize subitem:(NSCollectionLayoutItem *) subitem count:(NSInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 When you set a value for the [`interItemSpacing`](./interitemspacing.md) property after using this initializer, the group keeps the same number of items and automatically resizes them to add the extra specified spacing between them.
 

@@ -25,7 +25,7 @@ func removeTimeRange(_ timeRange: CMTimeRange)
 - (void) removeTimeRange:(CMTimeRange) timeRange;
 ```
 
-#### Discussion
+## Discussion
 
 After removing, existing content after the time range moves forward in the composition timeline.
 

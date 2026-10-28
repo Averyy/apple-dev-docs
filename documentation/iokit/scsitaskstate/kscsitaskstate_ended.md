@@ -14,7 +14,7 @@
 kSCSITaskState_ENDED = 4
 ```
 
-#### Discussion
+## Discussion
 
 The task is complete.
 

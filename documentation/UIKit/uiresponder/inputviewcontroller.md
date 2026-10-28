@@ -23,7 +23,7 @@ var inputViewController: UIInputViewController? { get }
 @property (nonatomic, strong, readonly, nullable) UIInputViewController * inputViewController;
 ```
 
-#### Discussion
+## Discussion
 
 This property is typically used to provide a view controller to replace the system-supplied keyboard that’s presented for [`UITextField`](../uitextfield.md) and [`UITextView`](../uitextview.md) objects.
 

@@ -12,11 +12,11 @@ virtual OSIterator * getChildIterator(
  const IORegistryPlane *plane ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an iterator over the children of the entry, or zero if there is a resource failure. The iterator must be released when the iteration is finished. All objects returned by the iteration are retained while the iterator is valid, though they may no longer be attached during the iteration.
 
-#### Overview
+## Overview
 
 This method creates an iterator which will return each of a registry entry's child entries in a specified plane.
 

@@ -24,7 +24,7 @@ let PHLivePhotoInfoIsDegradedKey: String
 extern NSString * const PHLivePhotoInfoIsDegradedKey;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the `result` parameter of your `resultHandler` block contains a still or low-quality Live Photo, and Photos will call your result handler block again to provide the full motion and sound content of the Live Photo. If `false`, Photos has provided all possible data and will not call your result handler again.
 

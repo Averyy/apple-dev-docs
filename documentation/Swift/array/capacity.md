@@ -21,7 +21,7 @@ The total number of elements that the array can contain without allocating new s
 var capacity: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Every array reserves a specific amount of memory to hold its contents. When you add elements to an array and that array begins to exceed its reserved capacity, the array allocates a larger region of memory and copies its elements into the new storage. The new storage is a multiple of the old storage’s size. This exponential growth strategy means that appending an element happens in constant time, averaging the performance of many append operations. Append operations that trigger reallocation have a performance cost, but they occur less and less often as the array grows larger.
 

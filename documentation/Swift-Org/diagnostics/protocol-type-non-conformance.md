@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 In Swift, a protocol that does not have `Self` or associated type requirements can be used as a type. You can use a variable or constant of a protocol type, also called an **existential type**, to hold a value of any conforming type:
 
@@ -62,11 +62,11 @@ In general, any initializers, static members, and associated types required by a
 
 Currently, even if a protocol `P` requires no initializers or static members, the existential type `P` does not conform to `P` (with exceptions below). This restriction allows library authors to add such requirements (initializers or static members) to an existing protocol without breaking their users’ source code.
 
-#### Exceptions
+## Exceptions
 
 When used as a type, the Swift protocol `Error` conforms to itself; `@objc` protocols with no static requirements can also be used as types that conform to themselves.
 
-#### Alternatives
+## Alternatives
 
 Concrete types that *do* conform to protocols can provide functionality similar to that of existential types. For example, the standard library provides the `AnyHashable` type for `Hashable` values. Manual implementation of such **type erasure** can require specific knowledge of the semantic requirements for each protocol involved and is beyond the scope of this discussion.
 

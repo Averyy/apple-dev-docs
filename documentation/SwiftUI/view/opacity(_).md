@@ -22,11 +22,11 @@ nonisolated
 func opacity(_ opacity: Double) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that sets the transparency of this view.
 
-#### Discussion
+## Discussion
 
 Apply opacity to reveal views that are behind another view or to de-emphasize a view.
 

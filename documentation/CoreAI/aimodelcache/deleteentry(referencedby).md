@@ -19,7 +19,7 @@ Deletes a cache entry referenced by bookmark data.
 static func deleteEntry(referencedBy bookmark: Data) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to delete a cache entry referenced by bookmark data previously obtained from `AIModel.bookmarkData`. Because bookmark data encodes both the specific cache instance and the entry within it, this method is static and requires no cache instance to call.
 

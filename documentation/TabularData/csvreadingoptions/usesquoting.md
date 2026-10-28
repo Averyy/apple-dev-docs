@@ -21,7 +21,7 @@ A Boolean value that indicates whether to enable quoting.
 var usesQuoting: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When `true`, the contents of a quoted field can contain special characters, such as the field delimiter and newlines. Defaults to `true`.
 

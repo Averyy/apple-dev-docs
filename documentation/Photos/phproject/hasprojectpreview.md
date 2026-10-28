@@ -19,7 +19,7 @@ var hasProjectPreview: Bool { get }
 @property (nonatomic, readonly) BOOL hasProjectPreview;
 ```
 
-#### Discussion
+## Discussion
 
 To set the preview, use [`setProjectPreviewImage(_:)`](../phprojectchangerequest/setprojectpreviewimage%28_%29.md).
 

@@ -25,7 +25,7 @@ class NSCustomMigrationStage
 @interface NSCustomMigrationStage : NSMigrationStage
 ```
 
-#### Overview
+## Overview
 
 Use [`NSCustomMigrationStage`](./nscustommigrationstage.md) when you have two versions of a model that Core Data can’t automatically migrate. Custom migration stages enable you to participate in the migration process by assigning handlers that the stage invokes before and after it runs. The handlers provide an opportunity to prepare the persistent store’s data for the upcoming changes before the stage runs, and perform any cleanup tasks afterward.
 

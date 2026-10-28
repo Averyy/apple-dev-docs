@@ -19,7 +19,7 @@ var alternateImage: NSImage? { get set }
 @property (strong, nullable) NSImage * alternateImage;
 ```
 
-#### Discussion
+## Discussion
 
 The image is drawn vertically centered on the left edge of the browser cell.
 

@@ -19,7 +19,7 @@ var size: CGSize { get set }
 @property CGSize size;
 ```
 
-#### Discussion
+## Discussion
 
 This property defines the maximum size for the layout area returned from [`lineFragmentRect(forProposedRect:at:writingDirection:remaining:)`](./linefragmentrect%28forproposedrect,at,writingdirection,remaining%29.md). A value of `0.0` or less means no limitation.
 

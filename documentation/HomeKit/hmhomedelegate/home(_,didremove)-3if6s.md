@@ -24,7 +24,7 @@ optional func home(_ home: HMHome, didRemove room: HMRoom)
 - (void) home:(HMHome *) home didRemoveRoom:(HMRoom *) room;
 ```
 
-#### Discussion
+## Discussion
 
 Accessories in a room that gets removed from a home are moved to [`roomForEntireHome()`](../hmhome/roomforentirehome%28%29.md).
 

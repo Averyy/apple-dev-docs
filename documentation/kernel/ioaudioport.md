@@ -15,7 +15,7 @@ Represents a logical or physical port or functional unit in an audio device.
 class IOAudioPort : IOService
 ```
 
-#### Overview
+## Overview
 
 An IOAudioPort represents an element in the signal chain in the audio device. It may contain one or more controls (represented by IOAudioControl) by which different attributes of the port may be represented and adjusted.
 

@@ -15,7 +15,7 @@ The countries or regions where a new campaign’s ads are eligible to serve.
 object CampaignTargetingCreate.CountryOrRegion
 ```
 
-#### Discussion
+## Discussion
 
 The `countryOrRegion` field uses ISO 3166-1 alpha-2 country codes (for example, `US`, `CA`, `GB`). It’s include-only: the `exclude` array isn’t supported at the campaign level. See [`TargetingDataCreate`](../targetingdatacreate.md) for the `include`/`exclude` shape.
 

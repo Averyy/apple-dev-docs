@@ -22,7 +22,7 @@ case failure
 INCancelRideIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code for both transient and unrecoverable errors that prevented you from canceling the ride. When specifying this code, SiriKit may fall back to other options that include letting the user cancel the ride in your app.
 

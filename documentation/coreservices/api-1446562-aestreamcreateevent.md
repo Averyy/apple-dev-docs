@@ -19,11 +19,11 @@ func AEStreamCreateEvent(_ clazz: AEEventClass, _ id: AEEventID, _ targetType: D
 AEStreamRef AEStreamCreateEvent(AEEventClass clazz, AEEventID id, DescType targetType, const void *targetData, Size targetLength, SInt16 returnID, SInt32 transactionID);
 ```
 
-#### Return Value
+## Return Value
 
 An [`AEStreamRef`](./aestreamref.md) associated with the new event.
 
-#### Discussion
+## Discussion
 
 This routine effectively combines a call to [`AECreateAppleEvent(_:_:_:_:_:_:)`](./api-1448525-aecreateappleevent.md) followed by a call to [`AEStreamOpenEvent(_:)`](./api-1445366-aestreamopenevent.md) to create a new Apple event in the stream. You can use the returned `AEStreamRef` to add parameters to the new Apple event.
 

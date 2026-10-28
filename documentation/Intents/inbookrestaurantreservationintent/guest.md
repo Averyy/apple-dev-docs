@@ -31,7 +31,7 @@ var guest: INRestaurantGuest? { get set }
 @property (atomic, copy, nullable) INRestaurantGuest * guest;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this information to identify the user. After a reservation is successfully created, you can forward the user’s contact information to the restaurant so that it can communicate with the user directly.
 

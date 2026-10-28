@@ -24,7 +24,7 @@ func VTCreateCGImageFromCVPixelBuffer(_ pixelBuffer: CVPixelBuffer, options: CFD
 extern OSStatus VTCreateCGImageFromCVPixelBuffer(CVPixelBufferRef pixelBuffer, CFDictionaryRef options, CGImageRef*imageOut);
 ```
 
-#### Discussion
+## Discussion
 
 This routine creates a [`CGImage`](../CoreGraphics/cgimage.md) representation of the image data contained in the provided [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer.md). The source `CVPixelBuffer` may be retained for the lifetime of the `CGImage`. Changes to the `CVPixelBuffer` after making this call (other than releasing it) will have undefined results.
 

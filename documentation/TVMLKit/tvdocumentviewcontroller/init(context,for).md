@@ -21,7 +21,7 @@ convenience init(context: [String : Any], for appController: TVApplicationContro
 + (instancetype) viewControllerWithContext:(NSDictionary<NSString *,id> *) context forAppController:(TVApplicationController *) appController;
 ```
 
-#### Discussion
+## Discussion
 
 The `context` parameter provides information to `TVMLKit JS` to determine which document to load.
 

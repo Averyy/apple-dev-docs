@@ -21,7 +21,7 @@ func setVoice(_ voice: NSSpeechSynthesizer.VoiceName?) -> Bool
 - (BOOL) setVoice:(NSSpeechSynthesizerVoiceName) voice;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when the receiver is not currently synthesizing speech and the current voice is set successfully, [`false`](../../Swift/false.md) otherwise.
 

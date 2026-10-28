@@ -12,11 +12,11 @@ virtual UInt32 getFragmentCount(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the count of free fragments.
 
-#### Overview
+## Overview
 
 This method returns a count of free fragments. Each fragment describes a non-contiguous free range - deallocations will merge contiguous fragments together.
 

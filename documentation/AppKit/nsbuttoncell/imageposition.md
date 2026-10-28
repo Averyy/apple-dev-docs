@@ -19,7 +19,7 @@ var imagePosition: NSControl.ImagePosition { get set }
 @property NSCellImagePosition imagePosition;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is one of the image positions described in the “Constants” section of [`NSCell`](../nscell.md). If the title is above, below, or overlapping the image, or if there is no image, the text is horizontally centered within the button.
 

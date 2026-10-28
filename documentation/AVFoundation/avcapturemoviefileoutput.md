@@ -28,7 +28,7 @@ class AVCaptureMovieFileOutput
 - [Recording movies in alternative formats](./recording-movies-in-alternative-formats.md)
 - [Setting up a capture session](./setting-up-a-capture-session.md)
 
-#### Overview
+## Overview
 
 A movie file output provides a complete file recording interface for writing media data to QuickTime movie files. It includes the ability to configure QuickTime-specific options, including writing metadata collections to each file, specify media encoding options for each track, and specify the interval at which it writes movie fragments.
 

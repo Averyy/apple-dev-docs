@@ -17,7 +17,7 @@ Applies the Continuously Differentiable Exponential Linear Unit.
 class CELU
 ```
 
-#### Overview
+## Overview
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 MLX.maximum(x, 0.0) + alpha * (MLX.exp(MLX.minimum(x, 0.0) / alpha) - 1)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`celu(_:alpha:)`](./celu%28_,alpha%29.md)

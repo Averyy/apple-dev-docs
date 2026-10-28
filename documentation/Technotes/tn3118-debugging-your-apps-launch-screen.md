@@ -5,11 +5,11 @@
 
 Understand why your app’s launch screen is not displayed or updated.
 
-#### Overview
+## Overview
 
 A [Launch Screen](https://developer.apple.com/design/human-interface-guidelines/launching#Launch-screens) appears instantly when your app starts up and is quickly replaced with the app’s first screen, giving the impression that your app is fast and responsive. As you upgrade your application’s launch screen you may discover that the old version still appears or that it appears empty. This article explains possible reasons and how to fix them.
 
-#### Launch screen does not display properly
+## Launch screen does not display properly
 
 Check why your launch screen fails to display:
 
@@ -33,11 +33,11 @@ For UIKit-based apps using a Storyboard Launch Screen:
 
 > **Note**:  If you are using a 3rd party development environment that provides the launch screen for your app, contact that 3rd party support team for help.
 
-#### App launching with state restoration
+## App launching with state restoration
 
 Implement state restoration in your app so that the launch screen is used less often. iOS snapshots your app when it’s suspended and may use this snapshot instead of the launch screen the next time the app is launched. Users expect your app to be in the same state as when they left it. For more information on state restoration refer to [About the UI restoration process](../UIKit/about-the-ui-restoration-process.md).
 
-#### Revision History
+## Revision History
 
 - **2023-07-25** Fixed some broken links.
 - **2022-05-24** Made minor editorial changes.

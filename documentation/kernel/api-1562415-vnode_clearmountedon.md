@@ -15,7 +15,7 @@ Clear flags indicating that a block device vnode has been mounted as a filesyste
 void vnode_clearmountedon(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

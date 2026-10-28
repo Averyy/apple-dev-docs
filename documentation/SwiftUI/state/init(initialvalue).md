@@ -22,7 +22,7 @@ Creates a state property that stores an initial value.
 init(initialValue value: Value)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer has the same behavior as the [`init(wrappedValue:)`](./init%28wrappedvalue%29.md) initializer. See that initializer for more information.
 

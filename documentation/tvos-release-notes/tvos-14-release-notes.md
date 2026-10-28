@@ -5,25 +5,25 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The tvOS 14 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 14. The SDK comes bundled with Xcode 12. For information on the compatibility requirements for Xcode 12, see [Xcode 12 Release Notes](../Xcode-Release-Notes/xcode-12-release-notes.md).
 
-##### AVKit
+### AVKit
 
-###### New Features
+#### New Features
 
 - Picture in Picture on tvOS allows for simultaneous video playback and the ability to swap between full-screen content and Picture in Picture. Use [`AVPlayerViewController`](../AVKit/avplayerviewcontroller.md) for adopting Picture in Picture in a standard player or AVKit framework’s [`AVPictureInPictureController`](../AVKit/avpictureinpicturecontroller.md) class for your custom player. (54986706)
 
-##### Game Center
+### Game Center
 
-###### New Features
+#### New Features
 
 - With multiuser support for gaming, your game can switch dynamically between users, and use both Game Center and iCloud to keep track of multiple players’ individual game levels, leaderboards, and invitations. The User Management entitlement has been expanded to include `runs-as-current-user`. This new value grants access to a separate set of data for your app for each user from Game Center, iCloud, and local storage. (56116380)
 
-##### Logging
+### Logging
 
-###### New Features
+#### New Features
 
 - New APIs are available for using `os_log` from Swift as part of the framework `os`:
 
@@ -34,9 +34,9 @@ The tvOS 14 SDK provides support to develop tvOS apps for Apple TV devices runni
 
   **Note:** The new APIs can’t be back deployed; however, the existing `os_log` API remains available for back deployment. (22539144)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - [`ProgressView`](../SwiftUI/progressview.md) now supports adding a secondary “current value label” that describes the current progress level of the task. Use the [`label`](../SwiftUI/progressviewstyleconfiguration/label-swift.property.md) to describe the overall task, and the [`ProgressViewStyleConfiguration.CurrentValueLabel`](../SwiftUI/progressviewstyleconfiguration/currentvaluelabel-swift.struct.md) to provide more specific details about the progress of the task. (63580200)
 - Introduced [`ToolbarItemGroup`](../SwiftUI/toolbaritemgroup.md) as a convenient way to place multiple items in a specific location of non-customizable toolbars. (64178863)

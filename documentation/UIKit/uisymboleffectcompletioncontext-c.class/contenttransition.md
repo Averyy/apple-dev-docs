@@ -19,7 +19,7 @@ The symbol content transition that completed.
 @property (nonatomic, readonly, nullable) NSSymbolContentTransition * contentTransition;
 ```
 
-#### Discussion
+## Discussion
 
 For a content transition completion, this property may not be the same instance as the original content transition.
 

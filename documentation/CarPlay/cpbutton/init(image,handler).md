@@ -21,11 +21,11 @@ init(image: UIImage, handler: ((CPButton) -> Void)? = nil)
 - (instancetype) initWithImage:(UIImage *) image handler:(void (^)(CPButton *button)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A new button that displays an image and invokes its handler when the user taps it.
 
-#### Discussion
+## Discussion
 
 Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](../../UIKit/uiimageasset.md) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen, which you access from your interface controller’s [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property, and ensure it is no larger than [`CPButtonMaximumImageSize`](../cpbuttonmaximumimagesize.md).
 

@@ -22,7 +22,7 @@ var ES_PROC_CHECK_TYPE_UDATA_INFO: es_proc_check_type_t { get }
 ES_PROC_CHECK_TYPE_UDATA_INFO
 ```
 
-#### Discussion
+## Discussion
 
 This type corresponds to the `proc_udata_info` function from libproc.h.
 

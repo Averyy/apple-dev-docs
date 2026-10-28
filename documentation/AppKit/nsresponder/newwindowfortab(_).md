@@ -20,7 +20,7 @@ func newWindowForTab(_ sender: Any?)
 - (void) newWindowForTab:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The system automatically calls this method to create a window for a new tab when the user clicks the plus button in a tabbed window. The system shows a plus button on a tabbed window only if this method exists on one of the following objects:
 

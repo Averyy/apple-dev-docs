@@ -6,25 +6,30 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.li
 
 # mlx.core.linalg.cholesky
 
-**cholesky(*a: array*, *upper: bool = False*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Compute the Cholesky decomposition of a real symmetric positive semi-definite matrix.
+```python
+cholesky(a: array, upper: bool = False, *, stream: StreamOrDevice = None) → array
+```
+
+Compute the Cholesky decomposition of a real symmetric positive semi-definite matrix.
+
 This function supports arrays with at least 2 dimensions. When the input
 has more than two dimensions, the Cholesky decomposition is computed for each matrix
 in the last two dimensions of `a`.
+
 If the input matrix is not symmetric positive semi-definite, behaviour is undefined.
 
-Parameters:
+**Parameters:**
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**upper** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If `True`, return the upper triangular Cholesky factor.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **upper** ([bool](https://docs.python.org/3/builtins/functions.html#bool), *optional*) – If `True`, return the upper triangular Cholesky factor.
 If `False`, return the lower triangular Cholesky factor. Default: `False`.
-**stream** ([Stream](stream_class.md#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`
+- **stream** ([Stream](stream_class.md#mlx.core.Stream), *optional*) – Stream or device. Defaults to `None`
 in which case the default stream of the default device is used.
 
-Returns:
-If `upper = False`, it returns a lower triangular `L` matrix such
+**Returns:**
+: If `upper = False`, it returns a lower triangular `L` matrix such
 that `L @ L.T = a`.  If `upper = True`, it returns an upper triangular
 `U` matrix such that `U.T @ U = a`.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

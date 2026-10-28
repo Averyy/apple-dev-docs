@@ -24,7 +24,7 @@ protocol UILetterformAwareAdjusting : NSObjectProtocol
 @protocol UILetterformAwareAdjusting <NSObject>
 ```
 
-#### Overview
+## Overview
 
 In [`UILabel`](./uilabel.md), [`UITextField`](./uitextfield.md), or a nonscrollable [`UITextView`](./uitextview.md), [`sizeThatFits(_:)`](./uiview/sizethatfits%28_%29.md) and [`intrinsicContentSize`](./uiview/intrinsiccontentsize.md) increase the height calculated for tall scripts when you present text that contains oversize characters in a font that you create with  [`preferredFont(forTextStyle:)`](./uifont/preferredfont%28fortextstyle%29.md). Even with the increase, some extreme ascenders and descenders may extend beyond the view’s bounds and appear to be clipped. For nontext-style fonts, [`sizeThatFits(_:)`](./uiview/sizethatfits%28_%29.md) and [`intrinsicContentSize`](./uiview/intrinsiccontentsize.md) don’t increase the calculated height for oversize characters. This is the default, standard behavior. Set [`sizingRule`](./uiletterformawareadjusting/sizingrule.md) to [`UILetterformAwareSizingRule.typographic`](./uiletterformawaresizingrule/typographic.md) to use this behavior explicitly.
 

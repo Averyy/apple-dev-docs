@@ -26,11 +26,11 @@ func CFHostCancelInfoResolution(_ theHost: CFHost, _ info: CFHostInfoType)
 extern void CFHostCancelInfoResolution(CFHostRef theHost, CFHostInfoType info);
 ```
 
-#### Discussion
+## Discussion
 
 This function cancels the asynchronous or synchronous resolution specified by `info` for the host specified by `theHost`.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

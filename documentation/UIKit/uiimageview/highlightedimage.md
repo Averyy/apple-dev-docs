@@ -23,7 +23,7 @@ var highlightedImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * highlightedImage;
 ```
 
-#### Discussion
+## Discussion
 
 The image in this property is displayed when the image view’s [`isHighlighted`](./ishighlighted.md) property is [`true`](../../Swift/true.md). If the [`highlightedAnimationImages`](./highlightedanimationimages.md) property contains a valid set of images, those image are used instead.
 

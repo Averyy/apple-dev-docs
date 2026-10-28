@@ -5,19 +5,19 @@
 
 Sets the color scheme for an element.
 
-#### Overview
+## Overview
 
 Setting the `theme` attribute changes the font color for text. Badge colors are also affected if the color is changed using CSS. The background image is not affected by the `theme` attribute. Templates default to `light` unless otherwise specified. `theme` can be used with all templates. The following templates default to `dark`:
 
 - [productTemplate](./producttemplate.md)
 - [productBundleTemplate](./productbundletemplate.md)
 
-##### Values for theme
+### Values for theme
 
 - **`dark`**: The theme is set to dark.
 - **`light`**: The theme is set to light.
 
-##### Elements that Use theme
+### Elements that Use theme
 
 The `theme` attribute can be used with any element.
 

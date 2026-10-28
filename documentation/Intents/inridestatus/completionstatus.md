@@ -36,7 +36,7 @@ var completionStatus: INRideCompletionStatus? { get set }
 
 - [Providing Live Status Updates](../../SiriKit/providing-live-status-updates.md)
 
-#### Discussion
+## Discussion
 
 When the value of the [`phase`](./phase.md) property is [`INRidePhase.completed`](../inridephase/completed.md), SiriKit checks this property for additional information about how the ride ended. Use this property to specify whether the ride ended successfully or the user canceled the ride.. You can also include information about the amount paid or the reason for any cancellation.
 

@@ -21,7 +21,7 @@ The vehicle-specific code that identifies which feature you want to control.
 let functionID: FunctionIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 You define the function identifiers for your vehicles and what features they represent.
 

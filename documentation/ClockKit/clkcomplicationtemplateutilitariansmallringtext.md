@@ -21,7 +21,7 @@ class CLKComplicationTemplateUtilitarianSmallRingText
 @interface CLKComplicationTemplateUtilitarianSmallRingText : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.utilitarianSmall`](./clkcomplicationfamily/utilitariansmall.md) family.
 

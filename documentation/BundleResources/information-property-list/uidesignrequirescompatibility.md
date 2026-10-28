@@ -17,7 +17,7 @@ A Boolean value that indicates whether the system runs the app using a compatibi
 - **Name**: `UIDesignRequiresCompatibility`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Temporarily use this key while reviewing and refining your app’s UI for the design in the latest SDKs.
 

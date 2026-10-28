@@ -17,7 +17,7 @@ The metadata associated with this event, if any.
 var metadata: Logger.Metadata?
 ```
 
-#### Discussion
+## Discussion
 
 Metadata values may carry attributes accessible via [`attributes`](../logger/metadatavalue/attributes.md).
 

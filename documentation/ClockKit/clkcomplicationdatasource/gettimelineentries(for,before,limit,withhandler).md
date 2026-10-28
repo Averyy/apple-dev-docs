@@ -21,7 +21,7 @@ optional func getTimelineEntries(for complication: CLKComplication, before date:
 - (void) getTimelineEntriesForComplication:(CLKComplication *) complication beforeDate:(NSDate *) date limit:(NSUInteger) limit withHandler:(void (^)(NSArray<CLKComplicationTimelineEntry *> *entries)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Only implement this method if your app supports Time Travel on watchOS 4 or earlier.
 

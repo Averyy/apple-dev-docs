@@ -25,7 +25,7 @@ struct MLModelMetadata
 - [Creating a text classifier model](./creating-a-text-classifier-model.md)
 - [Creating a word tagger model](./creating-a-word-tagger-model.md)
 
-#### Overview
+## Overview
 
 Create a metadata instance and store it as part of your model when you export a Core ML model. You can examine this metadata in Xcode when you import the model into your app.
 

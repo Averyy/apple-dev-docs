@@ -19,7 +19,7 @@ func pause() -> Bool
 - (BOOL) pause;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when playback is paused successfully, [`false`](../../Swift/false.md) when playback is already paused or when an error occurred.
 

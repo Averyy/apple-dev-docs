@@ -23,7 +23,7 @@ nonisolated
 func actionSheet<T>(item: Binding<T?>, content: (T) -> ActionSheet) -> some View where T : Identifiable
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you need to populate the fields of an action sheet with content from a data source. The example below shows a custom data source, `FileDetails`, that provides data to populate the action sheet:
 

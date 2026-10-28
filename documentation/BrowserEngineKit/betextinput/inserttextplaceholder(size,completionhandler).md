@@ -27,7 +27,7 @@ func insertTextPlaceholder(size: CGSize) async -> UITextPlaceholder
 - (void) insertTextPlaceholderWithSize:(CGSize) size completionHandler:(void (^)(UITextPlaceholder *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If `size.height` is less than or equal to zero, then the placeholder is inline and line height. If `size.height` is greater than zero, then the placeholder is a paragraph of height `size.height`.
 

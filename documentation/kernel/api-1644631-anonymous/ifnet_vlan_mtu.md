@@ -13,7 +13,7 @@
 IFNET_VLAN_MTU = 0x00020000
 ```
 
-#### Discussion
+## Discussion
 
 Hardware supports VLAN MTU.
 

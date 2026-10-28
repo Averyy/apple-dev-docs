@@ -19,7 +19,7 @@ Dismisses the view controller that was presented by the receiver.
 - (void) dismissModalViewControllerAnimated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 The presenting view controller is responsible for dismissing the view controller it presented. If you call this method on the presented view controller itself, however, it automatically forwards the message to the presenting view controller.
 

@@ -20,7 +20,7 @@ var isExclusive: Bool { get set }
 @property (atomic, readwrite, getter=isExclusive) BOOL exclusive;
 ```
 
-#### Discussion
+## Discussion
 
 True if this description should tap all processes except the process listed in the ‘processes’ property.
 

@@ -24,11 +24,11 @@ func voxelBoundingBox(atIndex index: MDLVoxelIndex) -> MDLAxisAlignedBoundingBox
 - (MDLAxisAlignedBoundingBox) voxelBoundingBoxAtIndex:(MDLVoxelIndex) index;
 ```
 
-#### Return Value
+## Return Value
 
 The bounding box for the single voxel at the specified index, in the world coordinate space of the asset from which the voxel array was created.
 
-#### Discussion
+## Discussion
 
 The coordinate space for spatial locations of voxels is the world space of the asset from which the voxel array was created, or for voxel arrays created with the [`init(data:boundingBox:voxelExtent:)`](./init%28data,boundingbox,voxelextent%29.md) initializer, the bounding box specified at initialization.
 

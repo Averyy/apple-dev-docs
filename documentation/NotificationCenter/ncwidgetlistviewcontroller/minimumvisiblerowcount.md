@@ -21,7 +21,7 @@ var minimumVisibleRowCount: Int { get set }
 @property (assign) NSUInteger minimumVisibleRowCount;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to ensure that the widget’s list displays a minimum number of rows. The default value of this property is `0`.
 

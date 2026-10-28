@@ -13,11 +13,11 @@
 errno_t ifnet_output(ifnet_t interface, protocol_family_t protocol_family, mbuf_t packet, void *route, const struct sockaddr *dest);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Handles an outbound packet on the interface by calling any filters, a protocol preoutput function, the interface framer function, and finally the interface's output function. The protocol_family will be used to apply protocol filters and determine which preoutput function to call. The route and dest parameters will be passed to the preoutput function defined for the attachment of the specified protocol to the specified interface. ifnet_output will always free the mbuf chain.
 

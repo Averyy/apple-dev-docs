@@ -32,7 +32,7 @@ var identifier: String { get }
 @property (atomic, copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 It is recommended that you use the [`identifier`](./identifier.md) when re-fetching the contact. An identifier can be persisted between the app launches. Note that this identifier only uniquely identifies the contact on the current device.
 

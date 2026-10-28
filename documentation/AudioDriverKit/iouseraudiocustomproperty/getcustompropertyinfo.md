@@ -15,7 +15,7 @@ Gets a property info object that describes the custom property.
 IOUserAudioCustomPropertyInfo GetCustomPropertyInfo();
 ```
 
-#### Return Value
+## Return Value
 
 A property info object that describes the custom property.
 

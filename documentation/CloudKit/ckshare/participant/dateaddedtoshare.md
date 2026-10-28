@@ -25,7 +25,7 @@ var dateAddedToShare: Date? { get }
 @property (nonatomic, copy, readonly, nullable) NSDate * dateAddedToShare;
 ```
 
-#### Discussion
+## Discussion
 
 CloudKit sets this timestamp when the share is successfully saved to the server.
 

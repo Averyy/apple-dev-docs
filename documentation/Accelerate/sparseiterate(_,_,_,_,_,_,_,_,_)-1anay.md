@@ -25,7 +25,7 @@ func SparseIterate(_ method: SparseIterativeMethod, _ iteration: Int32, _ conver
 static void SparseIterate(SparseIterativeMethod method, int iteration, const _Bool *converged, void *state, void (^ApplyOperator)(bool accumulate, enum CBLAS_TRANSPOSE trans, DenseMatrix_Float X, DenseMatrix_Float Y), DenseMatrix_Float B, DenseMatrix_Float R, DenseMatrix_Float X, SparseOpaquePreconditioner_Float Preconditioner);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to solve a system of linear equations using a factored coefficient matrix. This function provides complete control over each iteration, and you’re responsible for convergence tests and the number of iterations.
 

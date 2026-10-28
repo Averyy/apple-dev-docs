@@ -20,11 +20,11 @@ nonisolated
 func contextMenu<I, M>(forSelectionType itemType: I.Type = I.self, @ContentBuilder menu: @escaping (Set<I>) -> M, primaryAction: ((Set<I>) -> Void)? = nil) -> some View where I : Hashable, M : View
 ```
 
-#### Return Value
+## Return Value
 
 A view that can display an item-based context menu.
 
-#### Discussion
+## Discussion
 
 You can add an item-based context menu to a container that supports selection, like a [`List`](../list.md) or a [`Table`](../table.md). In the closure that you use to define the menu, you receive a collection of items that depends on the selection state of the container and the location where the person clicks or taps to activate the menu. The collection contains:
 
@@ -66,7 +66,7 @@ The above example assumes that the `Item` type conforms to the [`Identifiable`](
 
 If you add the modifier to a view hierarchy that doesn’t have a container that supports selection, the context menu never activates. To add a context menu that doesn’t depend on selection behavior, use [`contextMenu(menuItems:)`](./contextmenu%28menuitems%29.md). To add a context menu to a specific row in a table, use [`contextMenu(menuItems:)`](../tablerowcontent/contextmenu%28menuitems%29.md).
 
-##### Add a primary action
+### Add a primary action
 
 Optionally, you can add a custom primary action to the context menu. In macOS, a single click on a row in a selectable container selects that row, and a double click performs the primary action. In iOS and iPadOS, tapping on the row activates the primary action. To select a row without performing an action, either enter edit mode or hold shift or command on a keyboard while tapping the row.
 

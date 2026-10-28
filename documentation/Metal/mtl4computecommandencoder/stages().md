@@ -25,11 +25,11 @@ func stages() -> MTLStages
 - (MTLStages) stages;
 ```
 
-#### Return Value
+## Return Value
 
 A bitmask representing shader stages that commands currently present in this command encoder operate on.
 
-#### Discussion
+## Discussion
 
 Metal dynamically updates this property based on the commands you encode into the command encoder, for example, it sets the bit [`dispatch`](../mtlstages/dispatch.md) if this encoder contains any commands that dispatch a compute kernel.
 

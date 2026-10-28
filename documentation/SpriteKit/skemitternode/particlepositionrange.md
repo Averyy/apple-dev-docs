@@ -25,7 +25,7 @@ var particlePositionRange: CGVector { get set }
 @property (nonatomic) CGVector particlePositionRange;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `(0.0,0.0)`. If a component is non-zero, the same component of a particle’s position is randomly determined and may vary by plus or minus half of the range value.
 

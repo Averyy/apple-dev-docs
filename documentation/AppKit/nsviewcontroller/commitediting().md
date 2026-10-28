@@ -20,11 +20,11 @@ func commitEditing() -> Bool
 - (BOOL) commitEditing;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the changes were successfully applied to the model, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 A commit is denied if the receiver fails to apply the changes to the model object, perhaps due to a validation error.
 

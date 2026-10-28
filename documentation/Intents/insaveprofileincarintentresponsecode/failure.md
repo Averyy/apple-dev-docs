@@ -24,7 +24,7 @@ case failure
 INSaveProfileInCarIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code for both transient and unrecoverable errors that prevented you from saving the settings.
 

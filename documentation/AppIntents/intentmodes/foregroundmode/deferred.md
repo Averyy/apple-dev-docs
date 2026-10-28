@@ -21,7 +21,7 @@ An option to bring the app to the foreground while running the intent’s action
 static var deferred: IntentModes.ForegroundMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 This option ensures the transition of the app to the foreground. Call the [`continueInForeground(_:alwaysConfirm:)`](../../appintent/continueinforeground%28_,alwaysconfirm%29.md) or [`needsToContinueInForegroundError(_:alwaysConfirm:)`](../../appintent/needstocontinueinforegrounderror%28_,alwaysconfirm%29.md) method from your intent’s [`perform()`](../../appintent/perform%28%29.md) method to transition to the foreground at the time you choose. If you don’t call one of these methods, the system transitions the app to the foreground at the end of your [`perform()`](../../appintent/perform%28%29.md) method.
 

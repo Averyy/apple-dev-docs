@@ -5,7 +5,7 @@
 
 Enable users to navigate to specific user interface elements using rotors.
 
-#### Overview
+## Overview
 
 An accessibility rotor is a shortcut that enables users to quickly navigate to specific elements of the user interface, and, optionally, to specific ranges of text within those elements.
 

@@ -13,11 +13,11 @@
 errno_t mbuf_attachcluster(mbuf_how_t how, mbuf_type_t type, mbuf_t *mbuf, caddr_t extbuf, void (*extfree)(caddr_t, u_int, caddr_t), size_t extsize, caddr_t extarg);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success EINVAL - Invalid parameter ENOMEM - Not enough memory available
 
-#### Discussion
+## Discussion
 
 Attach an external buffer as a cluster for an mbuf. If mbuf points to a NULL mbuf_t, an mbuf will be allocated for you. If mbuf points to a non-NULL mbuf_t, the user-supplied mbuf will be used instead. The caller is responsible for allocating the external buffer by calling mbuf_alloccluster().
 

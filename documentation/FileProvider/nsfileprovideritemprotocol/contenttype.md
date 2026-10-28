@@ -24,7 +24,7 @@ optional var contentType: UTType { get }
 @property (nonatomic, copy, readonly) UTType * contentType;
 ```
 
-#### Discussion
+## Discussion
 
 Your extension must provide either the [`typeIdentifier`](./typeidentifier.md) or the [`contentType`](./contenttype.md) property. Where possible, use the [`contentType`](./contenttype.md) property. Use the [`typeIdentifier`](./typeidentifier.md) property only in iOS 13 or earlier.
 

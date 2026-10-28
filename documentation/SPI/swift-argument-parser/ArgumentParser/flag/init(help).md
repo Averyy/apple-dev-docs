@@ -17,7 +17,7 @@ Creates an array property with no default value that gets its values from the pr
 init<Element>(help: ArgumentHelp? = nil) where Value == [Element], Element : EnumerableFlag
 ```
 
-#### Discussion
+## Discussion
 
 This method is called to initialize an array `Flag` with no default value such as:
 

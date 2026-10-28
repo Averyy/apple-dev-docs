@@ -9,11 +9,11 @@ Get a list of Configurations in an organization.
 **Availability**:
 - Apple Business API 2.6+
 
-#### Overview
+## Overview
 
 > **Note**: This API will return `null` for `customSettingsValues` for all configuration types, including of type `CUSTOM_SETTING`. To get the `customSettingsValues` for `CUSTOM_SETTING` Configurations, see [`Get Configuration Information`](./get-configuration-information.md).
 
-##### Example
+### Example
 
 **Request**:
 

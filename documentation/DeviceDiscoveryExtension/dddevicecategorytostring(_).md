@@ -23,11 +23,11 @@ func DDDeviceCategoryToString(_ inValue: DDDevice.Category) -> String
 extern NSString *DDDeviceCategoryToString(DDDeviceCategory inValue);
 ```
 
-#### Return Value
+## Return Value
 
 A textual value for the specified category.
 
-#### Discussion
+## Discussion
 
 Your extension can use this function for logging.
 

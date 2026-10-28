@@ -20,7 +20,7 @@ var cellBackgroundColor: NSColor? { get set }
 @property (copy, nullable) NSColor * cellBackgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the background color used to fill the space behind non-opaque cells. The default background color is the color returned by the [`NSColor`](../nscolor.md) method [`controlColor`](../nscolor/controlcolor.md).
 

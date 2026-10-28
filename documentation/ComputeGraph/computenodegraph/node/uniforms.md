@@ -21,7 +21,7 @@ Uniform values for the node.
 var uniforms: [Data?]
 ```
 
-#### Discussion
+## Discussion
 
 Order of values matches `NodeDefinition.inputs`
 

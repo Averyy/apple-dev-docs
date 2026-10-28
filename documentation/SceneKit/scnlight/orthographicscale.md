@@ -25,7 +25,7 @@ var orthographicScale: CGFloat { get set }
 @property (nonatomic) CGFloat orthographicScale;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit draws a shadow map image by rendering the scene from the point of view of the node containing the light. Directional lights ignore the [`position`](../scnnode/position.md) property of the node containing them because their light has a constant direction. Therefore, rendering a shadow map for a directional light requires an orthographic projection. Like the [`orthographicScale`](../scncamera/orthographicscale.md) property of a camera object, this property specifies the extent of the scene “visible to” the light when rendering the shadow map.
 

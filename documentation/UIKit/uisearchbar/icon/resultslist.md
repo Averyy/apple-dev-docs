@@ -22,7 +22,7 @@ case resultsList
 UISearchBarIconResultsList
 ```
 
-#### Discussion
+## Discussion
 
 By default, the corresponding icon is a list lozenge icon.
 

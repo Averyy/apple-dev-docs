@@ -25,7 +25,7 @@ optional func turnBasedMatchmakerViewController(_ viewController: GKTurnBasedMat
 - (void) turnBasedMatchmakerViewController:(GKTurnBasedMatchmakerViewController *) viewController didFindMatch:(GKTurnBasedMatch *) match;
 ```
 
-#### Discussion
+## Discussion
 
 When the participants accept their invitations to join a turn-based match, GameKit invokes this method in the game instances for all participants in the match, including the local player who initiates the match. Implement this method to dismiss the view controller and start gameplay that allows the local player to take their turn. Use the match object to show information about the other participants in the match.
 

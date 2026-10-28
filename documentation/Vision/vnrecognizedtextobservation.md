@@ -28,7 +28,7 @@ class VNRecognizedTextObservation
 
 - [Recognizing Text in Images](./recognizing-text-in-images.md)
 
-#### Overview
+## Overview
 
 This type of observation results from a [`VNRecognizeTextRequest`](./vnrecognizetextrequest.md). It contains information about both the location and content of text and glyphs that Vision recognized in the input image.
 

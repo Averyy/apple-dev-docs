@@ -20,7 +20,7 @@ Number of joint influences per vertex.
 let influencePerVertexCount: UInt8
 ```
 
-#### Discussion
+## Discussion
 
 Uniform across all vertices.
 

@@ -27,7 +27,7 @@ func requestEject() async throws
 - (void) requestEjectWithCompletion:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Execution of the completion block occurs on the calling thread.
 

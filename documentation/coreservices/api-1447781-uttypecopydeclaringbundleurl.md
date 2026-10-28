@@ -25,7 +25,7 @@ func UTTypeCopyDeclaringBundleURL(_ inUTI: CFString) -> Unmanaged<CFURL>?
 CFURLRef UTTypeCopyDeclaringBundleURL(CFStringRef inUTI);
 ```
 
-#### Return Value
+## Return Value
 
 A URL that points to the bundle that holds the uniform type identifier’s declaration, or `NULL` if a bundle that holds the declaration cannot be located.
 

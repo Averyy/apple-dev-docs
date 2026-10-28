@@ -16,7 +16,7 @@ Set flags governing this command's execution.
 void (*SetFlags)(IOFireWireLibVectorCommandRef self, UInt32 inFlags);
 ```
 
-#### Return Value
+## Return Value
 
 void
 

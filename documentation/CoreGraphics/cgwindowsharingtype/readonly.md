@@ -18,7 +18,7 @@ case readOnly
 kCGWindowSharingReadOnly
 ```
 
-#### Discussion
+## Discussion
 
 The window is shared and its contents can be read by all processes but modified only by the process that created it.
 

@@ -19,7 +19,7 @@ var isVertical: Bool { get set }
 @property (getter=isVertical) BOOL vertical;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md), which indicates horizontal dividers and views that stack one above the other (top-to-bottom) in the containing split view controller’s view.
 

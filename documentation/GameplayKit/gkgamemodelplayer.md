@@ -24,7 +24,7 @@ protocol GKGameModelPlayer : NSObjectProtocol
 @protocol GKGameModelPlayer <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You adopt this protocol to describe the gameplay of your turn-based game for use by a [`GKStrategist`](./gkstrategist.md) object. The strategist uses your player class, along with other custom classes you implement (adopting the [`GKGameModel`](./gkgamemodel.md) and [`GKGameModelUpdate`](./gkgamemodelupdate.md) protocols) to plan moves in your game.
 

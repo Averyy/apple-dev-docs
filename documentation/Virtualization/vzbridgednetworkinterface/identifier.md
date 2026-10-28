@@ -19,7 +19,7 @@ var identifier: String { get }
 @property (copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 BSD names for the host computer’s Ethernet interfaces include `en0`, `en1`, and so on.
 

@@ -25,11 +25,11 @@ typealias CFBagRetainCallBack = (CFAllocator?, UnsafeRawPointer?) -> UnsafeRawPo
 typedef const void *(*)(const struct __CFAllocator *, const void *) CFBagRetainCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 The value to store in the bag, which is usually the `value` parameter passed to this callback, but may be a different   value if a different value should be stored in the collection.
 
-#### Discussion
+## Discussion
 
 This callback is passed to [`CFBagCreate(_:_:_:_:)`](./cfbagcreate%28_,_,_,_%29.md) in a [`CFBagCallBacks`](./cfbagcallbacks.md) structure.
 

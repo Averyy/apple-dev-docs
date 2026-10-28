@@ -16,7 +16,7 @@ The `StyleMedia` class provides a way to evaluate CSS media queries from JavaScr
 interface StyleMedia
 ```
 
-#### Overview
+## Overview
 
 > **iOS Note**: This class name changed from `Media` in iOS 4.2 and later.
 

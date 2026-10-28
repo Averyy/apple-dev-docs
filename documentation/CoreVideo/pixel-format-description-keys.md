@@ -5,7 +5,7 @@
 
 The attributes of a pixel format.
 
-#### Overview
+## Overview
 
 If you need to define a custom pixel format, you must specify these keys in a Core Foundation dictionary. For information about registering your pixel format, see [Technical Q&A 1401: Registering Custom Pixel Formats with QuickTime and Core Video](http://developer.apple.com/qa/qa2005/qa1401.html).
 

@@ -22,7 +22,7 @@ An empty type for animatable data.
 struct EmptyAnimatableData
 ```
 
-#### Overview
+## Overview
 
 This type is suitable for use as the `animatableData` property of types that do not have any animatable properties.
 

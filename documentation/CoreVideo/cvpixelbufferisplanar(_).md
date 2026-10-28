@@ -25,11 +25,11 @@ func CVPixelBufferIsPlanar(_ pixelBuffer: CVPixelBuffer) -> Bool
 extern Boolean CVPixelBufferIsPlanar(CVPixelBufferRef pixelBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the pixel buffer is planar; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Planar buffers can be created using the [`CVPixelBufferCreateWithPlanarBytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](./cvpixelbuffercreatewithplanarbytes%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md) function.
 

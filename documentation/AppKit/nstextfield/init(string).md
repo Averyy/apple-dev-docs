@@ -19,7 +19,7 @@ convenience init(string stringValue: String)
 + (instancetype) textFieldWithString:(NSString *) stringValue;
 ```
 
-#### Return Value
+## Return Value
 
 A single-line editable text field that displays the specified string.
 

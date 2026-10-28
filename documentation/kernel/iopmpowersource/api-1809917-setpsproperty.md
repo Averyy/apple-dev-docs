@@ -11,7 +11,7 @@ void setPSProperty(
  OSObject *);
 ```
 
-#### Overview
+## Overview
 
 All of these methods funnel through the generic accessor method setPSProperty. Caller can pass in any arbitrary OSSymbol key, and that value will be stored in the PM settings dictionary, and relayed onto the IORegistry at update time.
 

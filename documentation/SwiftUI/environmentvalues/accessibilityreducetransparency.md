@@ -21,7 +21,7 @@ Whether the system preference for Reduce Transparency is enabled.
 var accessibilityReduceTransparency: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this property’s value is true, UI (mainly window) backgrounds should not be semi-transparent; they should be opaque.
 

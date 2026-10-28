@@ -18,7 +18,7 @@ Creates and initializes a new uniform object that holds a `4 x 4` matrix of floa
 + (instancetype) uniformWithName:(NSString *) name floatMatrix4:(GLKMatrix4) value;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized uniform object whose type is set to [`SKUniformType.floatMatrix4`](../skuniformtype/floatmatrix4.md).
 

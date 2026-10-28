@@ -25,7 +25,7 @@ var dimensions: MTLTensorExtents { get set }
 @property (nonatomic, copy, readwrite) MTLTensorExtents * dimensions;
 ```
 
-#### Discussion
+## Discussion
 
 Every element of the array needs to be greater than `0`.
 

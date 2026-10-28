@@ -21,7 +21,7 @@ A collection of state properties used to efficiently manage sync engine operatio
 @property (strong, readonly) CKSyncEngineState * state;
 ```
 
-#### Discussion
+## Discussion
 
 > **See Also**: [`CKSyncEngineState`](../cksyncenginestate.md)
 

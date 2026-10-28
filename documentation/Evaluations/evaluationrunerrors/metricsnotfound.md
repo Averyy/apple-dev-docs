@@ -21,7 +21,7 @@ Metric names referenced by `MetricsAggregator` that no evaluator produced.
 var metricsNotFound: [String]
 ```
 
-#### Discussion
+## Discussion
 
 Typically a typo or missing evaluator; empty on a clean run and when no sample produced inference.
 

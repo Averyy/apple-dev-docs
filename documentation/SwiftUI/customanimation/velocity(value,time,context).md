@@ -23,11 +23,11 @@ nonisolated
 func velocity<V>(value: V, time: TimeInterval, context: AnimationContext<V>) -> V? where V : VectorArithmetic
 ```
 
-#### Return Value
+## Return Value
 
 The current velocity of the animation, or `nil` if the animation has finished.
 
-#### Discussion
+## Discussion
 
 Implement this method to provide the velocity of the animation at a given time. Should subsequent animations merge with the animation, the system preserves continuity of the velocity between animations.
 

@@ -5,37 +5,37 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 12.1 SDK provides support to develop apps for Mac computers running macOS Monterey 12.1. The SDK comes bundled with Xcode 13.2. For information on the compatibility requirements for Xcode 13.2, see [Xcode 13.2 Release Notes](../Xcode-Release-Notes/xcode-13_2-release-notes.md).
 
-##### App Store
+### App Store
 
-###### New Features
+#### New Features
 
 - StoreKit APIs that present a refund request sheet can be tested with StoreKit Testing in Xcode. Use [`beginRefundRequest(in:)`](../StoreKit/transaction/beginrefundrequest%28in%29-63bvd.md) or [`beginRefundRequest(for:in:)`](../StoreKit/transaction/beginrefundrequest%28for,in%29-9mscy.md) when working with AppKit or the `refundRequestSheet(for:isPresented:onDismiss:)` view modifier when working with SwiftUI. (70794860)
 
-##### Displays
+### Displays
 
-###### New Features
+#### New Features
 
 - You can now use graphics cards that integrate the AMD Radeon RX 6600 XT GPU. (82532062)
 
-##### iCloud Mail
+### iCloud Mail
 
-###### New Features
+#### New Features
 
 - iCloud+ subscribers can now access and use Hide My Email directly from the Mail app. (84956894)
 
-##### Reminders
+### Reminders
 
-###### New Features
+#### New Features
 
 - Tags can now be bulk renamed and deleted. (82177979)
 
-##### SwiftUI
+### SwiftUI
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Using [`alert(_:isPresented:actions:message:)`](../SwiftUI/view/alert%28_,ispresented,actions,message%29-6awwp.md) and `confirmationDialog(_:isPresented:titleVisibility:actions:)` now present. (83731075)
 

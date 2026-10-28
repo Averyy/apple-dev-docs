@@ -25,7 +25,7 @@ class func mergedModel(from bundles: [Bundle]?) -> NSManagedObjectModel?
 + (NSManagedObjectModel *) mergedModelFromBundles:(NSArray<NSBundle *> *) bundles;
 ```
 
-#### Return Value
+## Return Value
 
 A model created by merging all the models found in `bundles`.
 

@@ -21,7 +21,7 @@ subscript<let rank : Int>(scalarAt index: InlineArray<rank, Int>) -> Element { g
 
 Available when `Element` conforms to `BitwiseCopyable`.
 
-#### Overview
+## Overview
 
 > **Note**: `rank` must be equal to the `rank` of this view.
 

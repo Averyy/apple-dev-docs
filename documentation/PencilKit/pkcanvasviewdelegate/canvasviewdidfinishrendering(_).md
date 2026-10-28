@@ -22,7 +22,7 @@ optional func canvasViewDidFinishRendering(_ canvasView: PKCanvasView)
 - (void) canvasViewDidFinishRendering:(PKCanvasView *) canvasView;
 ```
 
-#### Discussion
+## Discussion
 
 The [`PKCanvasView`](../pkcanvasview.md) object calls this method when you assign a new drawing to its [`drawing`](../pkcanvasview/drawing.md) property, when the user zooms in on the canvas, or when the canvas scrolls.
 

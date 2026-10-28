@@ -19,7 +19,7 @@ var representedURL: URL? { get set }
 @property (nonatomic, copy, nullable) NSURL * representedURL;
 ```
 
-#### Discussion
+## Discussion
 
 The window shows a documentation icon in the title bar when this property isn’t `nil` and the URL has a non-empty path. If the URL represents a filename or other resource with a known icon, the window displays that icon as the document icon; otherwise, the window displays a default document icon.
 

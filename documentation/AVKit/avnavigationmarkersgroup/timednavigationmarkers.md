@@ -19,7 +19,7 @@ var timedNavigationMarkers: [AVTimedMetadataGroup]? { get }
 @property (nonatomic, readonly, nullable) NSArray<AVTimedMetadataGroup *> * timedNavigationMarkers;
 ```
 
-#### Discussion
+## Discussion
 
 Returns the array of [`AVTimedMetadataGroup`](../../AVFoundation/avtimedmetadatagroup.md) objects managed by this group. This value may be `nil`.
 

@@ -16,11 +16,11 @@ Aborts pending input/output requests.
 - (BOOL) abortWithOption:(IOUSBHostAbortOption) option error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the abort completes successfully; otherwise, `NO`.
 
-#### Discussion
+## Discussion
 
 This method aborts all pending input/output requests. If the `option` argument is [`IOUSBHostAbortOption.synchronous`](../iousbhostabortoption/synchronous.md), this method blocks any new ones.
 

@@ -25,7 +25,7 @@ protocol CBPeripheralManagerDelegate : NSObjectProtocol
 @protocol CBPeripheralManagerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The delegate of a [`CBPeripheralManager`](./cbperipheralmanager.md) object must adopt the [`CBPeripheralManagerDelegate`](./cbperipheralmanagerdelegate.md) protocol, which consists of numerous optional methods and one required method. The delegate uses the protocol’s optional methods to verify publishing and advertising, and to monitor read, write, and subscription requests from remote central devices.
 

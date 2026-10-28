@@ -24,7 +24,7 @@ var protocolConfiguration: NEVPNProtocol { get }
 @property (readonly) NEVPNProtocol * protocolConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 The configuration is created by the containing app of the Tunnel Provider using the [`NETunnelProviderManager`](../netunnelprovidermanager.md) class, or by the ingestion of a `com.apple.vpn.managed` or a `com.apple.vpn.managed.applayer` configuration profile payload. See the [`NETunnelProviderManager`](../netunnelprovidermanager.md) class for more details.
 

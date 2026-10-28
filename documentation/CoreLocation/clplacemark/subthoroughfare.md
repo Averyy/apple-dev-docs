@@ -27,7 +27,7 @@ var subThoroughfare: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * subThoroughfare;
 ```
 
-#### Discussion
+## Discussion
 
 Subthroughfares provide information such as the street number for the location. For example, if the placemark location is Apple’s headquarters (1 Apple Park Way), the value for this property would be the string “1”.
 

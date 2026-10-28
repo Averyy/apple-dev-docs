@@ -17,7 +17,7 @@ Compute the variance(s) over the given axes
 func variance(_ array: MLXArray, axis: Int, keepDims: Bool = false, ddof: Int = 0, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Reduction Functions](./reduction.md)
 - [`variance(_:axes:keepDims:ddof:stream:)`](./variance%28_,axes,keepdims,ddof,stream%29.md)

@@ -20,7 +20,7 @@ final var preferredInteractionTypes: ImageAnalysisOverlayView.InteractionTypes {
 
 - [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
-#### Discussion
+## Discussion
 
 You need to set this property to enable the Live Text interface with the image. If this property contains [`automatic`](./interactiontypes/automatic.md), the overlay view ignores the other interaction types in the set. The default value for this property is an empty array that disables any interactions.
 

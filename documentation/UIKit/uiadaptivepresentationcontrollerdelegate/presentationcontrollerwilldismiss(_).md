@@ -23,7 +23,7 @@ optional func presentationControllerWillDismiss(_ presentationController: UIPres
 - (void) presentationControllerWillDismiss:(UIPresentationController *) presentationController;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to set up animations or interaction notifications with the presentationController’s transitionCoordinator.
 

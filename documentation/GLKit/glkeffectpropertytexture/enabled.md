@@ -24,7 +24,7 @@ var enabled: GLboolean { get set }
 @property (nonatomic, assign) GLboolean enabled;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `GL_TRUE`, then the texture is applied to the primitive. If the value is `GL_FALSE`, the texture is skipped. The default value is `GL_TRUE`.
 

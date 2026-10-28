@@ -20,7 +20,7 @@ virtual UInt32 doLock(
  IOFWRequestRefConrefcon);
 ```
 
-#### Return Value
+## Return Value
 
 UIn32 returns kFWResponseComplete on success
 

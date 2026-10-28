@@ -23,7 +23,7 @@ func contentOffsetForSegment(at segment: Int) -> CGSize
 - (CGSize) contentOffsetForSegmentAtIndex:(NSUInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 The offset (as a [`CGSize`](../../CoreFoundation/cgsize.md) structure) from the origin of the segment at which to draw the segment’s content.
 

@@ -19,11 +19,11 @@ func openConnection(_ target: Any!, withPageTimeout pageTimeoutValue: BluetoothH
 - (IOReturn) openConnection:(id) target withPageTimeout:(BluetoothHCIPageTimeout) pageTimeoutValue authenticationRequired:(BOOL) authenticationRequired;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the connection was successfully created (or if asynchronous, if the CREATE_CONNECTION command was successfully issued).
 
-#### Discussion
+## Discussion
 
 If a target is specified, the open connection call is asynchronous and on completion of the CREATE_CONNECTION command, the method -connectionComplete:status: will be called on the specified target. If no target is specified, the call is synchronous and will not return until the connection is open or the CREATE_CONNECTION call has failed.
 

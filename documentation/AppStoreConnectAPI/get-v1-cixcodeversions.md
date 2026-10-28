@@ -9,11 +9,11 @@ List all Xcode versions that are available to Xcode Cloud workflows.
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below lists Xcode versions available to Xcode Cloud workflows and supported test destinations, including information about available simulated devices. Use the data provided in the response to display available Xcode versions and test destinations on a dashboard or to read additional information; for example, macOS version information.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

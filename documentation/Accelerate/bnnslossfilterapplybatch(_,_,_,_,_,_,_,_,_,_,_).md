@@ -27,7 +27,7 @@ func BNNSLossFilterApplyBatch(_ filter: BNNSFilter?, _ batch_size: Int, _ in: Un
 int BNNSLossFilterApplyBatch(BNNSFilter filter, size_t batch_size, const void *in, size_t in_stride, const void *labels, size_t labels_stride, const void *weights, size_t weights_size, void *out, BNNSNDArrayDescriptor *in_delta, size_t in_delta_stride);
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The weights size must be one of: 0 (for no weights), 1 (for weight broadcast), `batch_size`, or `batch_size * input_width` (for different weight for each class and each sample in the batch) for all loss functions except [`BNNSLossFunctionYolo`](./bnnslossfunctionyolo.md). Use specific weight factors for YOLO loss.
 

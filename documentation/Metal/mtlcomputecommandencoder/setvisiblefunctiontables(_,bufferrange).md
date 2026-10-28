@@ -20,7 +20,7 @@ Binds multiple visible function tables to the buffer argument table, allowing yo
 func setVisibleFunctionTables(_ visibleFunctionTables: [(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  This method requires that the number of instances in `visibleFunctionTables` be the same as the length of `bufferRange`.
 

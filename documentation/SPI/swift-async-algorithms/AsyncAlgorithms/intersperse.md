@@ -10,7 +10,7 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 
 Places a given value in between each element of the asynchronous sequence.
 
-#### Overview
+## Overview
 
 [[Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/Interspersed/AsyncInterspersedSequence.swift) | [Tests](https://github.com/apple/swift-async-algorithms/blob/main/Tests/AsyncAlgorithmsTests/Interspersed/TestInterspersed.swift)]
 
@@ -27,7 +27,7 @@ let empty = [].async.interspersed(with: 0)
 
 `interspersed(with:)` takes a separator value and inserts it in between every element in the asynchronous sequence.
 
-#### Detailed Design
+## Detailed Design
 
 A new method is added to `AsyncSequence`:
 
@@ -43,13 +43,13 @@ When the base asynchronous sequence can throw on iteration, `AsyncInterspersedSe
 
 `AsyncInterspersedSequence` is conditionally `Sendable` when the base asynchronous sequence is `Sendable` and the element is also `Sendable`.
 
-##### Naming
+### Naming
 
 This method’s and type’s name match the term of art used in other languages and libraries.
 
 This method is a direct analog to the synchronous version [defined in the Swift Algorithms package](https://github.com/apple/swift-algorithms/blob/main/Guides/Intersperse.md).
 
-##### Comparison with other languages
+### Comparison with other languages
 
 **[Haskell](https://hackage.haskell.org/package/base-4.14.0.0/docs/Data-List.html#v:intersperse):** Has an `intersperse` function which takes an element and a list and ‘intersperses’ that element between the elements of the list.
 

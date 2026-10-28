@@ -16,7 +16,7 @@ Sets callback to be used when device is removed.
 IOReturn (*setRemovalCallback)(void *self, IOHIDCallbackFunction removalCallback, void *removalTarget, void *removalRefcon);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 

@@ -18,7 +18,7 @@ An error code that indicates that the session failed.
 static var sessionFailed: NIError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 To continue interaction with the peer of a failed session, an app must begin a new session.
 

@@ -29,7 +29,7 @@ extern NSString * const NSInferMappingModelAutomaticallyOption;
 
 - [Migrating your data model automatically](./migrating-your-data-model-automatically.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSNumber` object. If the [`boolValue`](../Foundation/nsnumber/boolvalue.md) of the number is [`true`](../Swift/true.md) and the value of the `NSMigratePersistentStoresAutomaticallyOption` is [`true`](../Swift/true.md), the coordinator will attempt to infer a mapping model if none can be found.
 

@@ -24,7 +24,7 @@ var formatIdentifier: String { get }
 @property (copy, readonly) NSString * formatIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Set this identifier when you create an adjustment object with the [`init(formatIdentifier:formatVersion:data:)`](./init%28formatidentifier,formatversion,data%29.md) method. For best results, identify your organization or product using a reverse-DNS-style name, such as `com.example.myApp`.
 

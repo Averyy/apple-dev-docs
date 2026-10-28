@@ -26,7 +26,7 @@ convenience init(name: String, type: String, domain: String)
 + (instancetype) endpointWithName:(NSString *) name type:(NSString *) type domain:(NSString *) domain;
 ```
 
-#### Return Value
+## Return Value
 
 The new [`NWBonjourServiceEndpoint`](../nwbonjourserviceendpoint.md) object.
 

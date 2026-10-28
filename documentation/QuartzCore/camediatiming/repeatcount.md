@@ -25,7 +25,7 @@ var repeatCount: Float { get set }
 @property float repeatCount;
 ```
 
-#### Discussion
+## Discussion
 
 May be fractional. If the `repeatCount` is 0, it is ignored. Defaults to 0. If both [`repeatDuration`](./repeatduration.md) and [`repeatCount`](./repeatcount.md) are specified the behavior is undefined.
 

@@ -20,11 +20,11 @@ nonisolated
 func handlesExternalEvents(preferring: Set<String>, allowing: Set<String>) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view whose enclosing scene — if already open — handles incoming external events.
 
-#### Discussion
+## Discussion
 
 Apply this modifier to a view to indicate whether an open scene that contains the view handles specified user activities or URLs that your app receives. Specify two sets of string identifiers to distinguish between the kinds of events that the scene *prefers* to handle and those that it *can* handle. You can dynamically update the identifiers in each set to reflect changing app state.
 
@@ -34,7 +34,7 @@ When your app receives an event on a platform that supports multiple simultaneou
 
 On platforms that support only a single scene, SwiftUI ignores this modifier and sends all external events to the one open scene.
 
-##### Matching an event
+### Matching an event
 
 To find an open scene that handles a particular external event, SwiftUI compares a property of the event against the strings that you specify in the `preferring` and `allowing` sets. SwiftUI examines the following event properties to perform the comparison:
 
@@ -45,7 +45,7 @@ For both parameter sets, an empty set of strings never matches. Similarly, empty
 
 If you specify multiple instances of this view modifier inside a single scene, the scene uses the union of the respective `preferring` and `allowing` sets from all the modifiers.
 
-##### Handling a user activity in an open scene
+### Handling a user activity in an open scene
 
 As an example, the following view — which participates in Handoff through the [`userActivity(_:isActive:_:)`](./useractivity%28_,isactive,_%29.md) and [`onContinueUserActivity(_:perform:)`](./oncontinueuseractivity%28_,perform%29.md) methods — updates its `preferring` set according to the current selection. The enclosing scene prefers to handle an event for a contact that’s already selected, but doesn’t volunteer itself as a preferred scene when no contact is selected:
 

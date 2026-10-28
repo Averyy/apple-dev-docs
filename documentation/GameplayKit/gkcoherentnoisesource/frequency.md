@@ -24,7 +24,7 @@ var frequency: Double { get set }
 @property (nonatomic) double frequency;
 ```
 
-#### Discussion
+## Discussion
 
 The effect of this property varies for each coherent noise source class. Generally, increasing frequency increases the number of (and decreases the size of) visible features in any given unit area of a generated noise map. The default value is `1.0`.
 

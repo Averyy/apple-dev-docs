@@ -24,7 +24,7 @@ var keyboardInput: GCKeyboardInput? { get }
 @property (nonatomic, strong, readonly, nullable) GCKeyboardInput * keyboardInput;
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to get the keyboard’s buttons and button states.
 

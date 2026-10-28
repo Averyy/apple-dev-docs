@@ -24,7 +24,7 @@ var kAudioFormatProperty_NumberOfChannelsForLayout: AudioFormatPropertyID { get 
 kAudioFormatProperty_NumberOfChannelsForLayout
 ```
 
-#### Discussion
+## Discussion
 
 The number of valid channels represented in an [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) structure. Set the `inSpecifier` parameter to the [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) structure you want to examine. If the layout tag is specified, the value contains the number of channels for that layout. If the bitmap is specified, the value contains the number of channels represented by that bitmap. If the layout tag is [`kAudioChannelLayoutTag_UseChannelDescriptions`](../CoreAudioTypes/kaudiochannellayouttag_usechanneldescriptions.md), the value contains the number of channel descriptions.
 

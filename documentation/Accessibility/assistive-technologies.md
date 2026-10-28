@@ -5,7 +5,7 @@
 
 Make sure your app provides a great experience for people who use assistive technologies.
 
-#### Overview
+## Overview
 
 Everyone uses their devices differently. Apple devices provide many assistive technologies to support people’s vision, hearing, speech, mobility, and cognitive needs. These assistive technologies provide alternative ways to navigate your app’s content, interact with your UI, and input data. When you design and build your app, it’s important to consider the full range of ways that people might use it rather than optimizing for just one use case.
 

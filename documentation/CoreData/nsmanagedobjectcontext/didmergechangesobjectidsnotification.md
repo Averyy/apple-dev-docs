@@ -21,7 +21,7 @@ A notification that posts after a context finishes merging changes from another 
 static let didMergeChangesObjectIDsNotification: Notification.Name
 ```
 
-#### Discussion
+## Discussion
 
 This notification’s `object` is the merged context. Don’t peform any asynchronous work or block the calling thread. [`NSManagedObjectContext`](../nsmanagedobjectcontext.md) posts notifications to the same thread that creates it.
 

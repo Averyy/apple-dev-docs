@@ -15,7 +15,7 @@ A UUID of the image that the framework uses to validate its compatibility with t
 var layerUUID: UUID? { get }
 ```
 
-#### Discussion
+## Discussion
 
 All images contain a layer UUID, except for RAW images.
 

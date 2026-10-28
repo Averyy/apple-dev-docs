@@ -19,7 +19,7 @@ var draggingFrame: NSRect { get set }
 @property NSRect draggingFrame;
 ```
 
-#### Discussion
+## Discussion
 
 The dragging frame provides the spatial relationship between [`NSDraggingItem`](../nsdraggingitem.md) instances when you set the dragging formation to [`NSDraggingFormation.none`](../nsdraggingformation/none.md).
 

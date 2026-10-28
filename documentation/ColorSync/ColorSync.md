@@ -15,7 +15,7 @@ Reproduce colors accurately across a range of input, output, and display devices
 - visionOS 1.0+
 - watchOS 9.0+
 
-#### Overview
+## Overview
 
 ColorSync is the color-management engine on Apple platforms. For most apps, color management happens automatically through higher-level frameworks such as [Core Graphics](../CoreGraphics/CoreGraphics.md) and [Core Image](../CoreImage/CoreImage.md). Use ColorSync directly when your app needs to manage color itself; for example, a professional photo, print, or video app that builds custom transforms, or a tool that inspects and calibrates the profiles assigned to devices and displays.
 

@@ -25,7 +25,7 @@ var pivot: SCNMatrix4 { get set }
 @property (nonatomic) SCNMatrix4 pivot;
 ```
 
-#### Discussion
+## Discussion
 
 A node’s pivot is the transformation between its coordinate space and that used by its [`position`](./position.md), [`rotation`](./rotation.md), and [`scale`](./scale.md) properties. The default pivot is [`SCNMatrix4Identity`](../scnmatrix4identity.md), specifying that the node’s position locates the origin of its coordinate system, its rotation is about an axis through its center, and its scale is also relative to that center point.
 

@@ -24,11 +24,11 @@ class func moleUnit(with prefix: HKMetricPrefix, molarMass gramsPerMole: Double)
 + (instancetype) moleUnitWithMetricPrefix:(HKMetricPrefix) prefix molarMass:(double) gramsPerMole;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring mass in moles.
 
-#### Discussion
+## Discussion
 
 This method allows the creation of units to measure mass in moles with a given metric prefix and molecular mass. For example, to measure blood glucose in millimoles, you need to use both the correct prefix (milli-) and the [`HKUnitMolarMassBloodGlucose`](../hkunitmolarmassbloodglucose.md) constant.).
 

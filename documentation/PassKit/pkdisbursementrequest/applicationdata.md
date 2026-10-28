@@ -23,7 +23,7 @@ var applicationData: Data? { get set }
 @property (nonatomic, copy, nullable) NSData * applicationData;
 ```
 
-#### Discussion
+## Discussion
 
 The system hashes the data and includes it in the resulting [`PKPaymentToken`](../pkpaymenttoken.md).
 

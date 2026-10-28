@@ -19,7 +19,7 @@ static let other: ASAuthorizationCustomMethod
 extern ASAuthorizationCustomMethod const ASAuthorizationCustomMethodOther;
 ```
 
-#### Discussion
+## Discussion
 
 This kind of authorization method displays a Sign in Manually button.
 

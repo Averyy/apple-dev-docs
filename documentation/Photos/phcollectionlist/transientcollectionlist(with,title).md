@@ -24,11 +24,11 @@ class func transientCollectionList(with collections: [PHCollection], title: Stri
 + (PHCollectionList *) transientCollectionListWithCollections:(NSArray<PHCollection *> *) collections title:(NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 A new collection list.
 
-#### Discussion
+## Discussion
 
 Transient collection lists are not saved to local storage or iCloud and do not appear in the Photos application or other apps using the Photos framework. A transient collection can be useful if you’ve designed a UI for displaying the contents of a collection list and want to display an arbitrary set of collections.
 

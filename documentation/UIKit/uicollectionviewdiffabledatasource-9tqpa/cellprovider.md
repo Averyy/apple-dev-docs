@@ -19,11 +19,11 @@ A closure that configures and returns a cell for a collection view from its diff
 typealias CellProvider = (UICollectionView, IndexPath, ItemIdentifierType) -> UICollectionViewCell?
 ```
 
-#### Return Value
+## Return Value
 
 A non-`nil` configured cell object. The cell provider must return a valid cell object to the collection view.
 
-#### Discussion
+## Discussion
 
 You use this closure to configure and return cells when creating a diffable data source using [`init(collectionView:cellProvider:)`](./init%28collectionview,cellprovider%29.md).
 

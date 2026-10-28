@@ -20,7 +20,7 @@ func attribute(forLocalName localName: String, uri URI: String?) -> XMLNode?
 - (NSXMLNode *) attributeForLocalName:(NSString *) localName URI:(NSString *) URI;
 ```
 
-#### Return Value
+## Return Value
 
 An XML node object representing a matching attribute or `nil` if no such node was found.
 

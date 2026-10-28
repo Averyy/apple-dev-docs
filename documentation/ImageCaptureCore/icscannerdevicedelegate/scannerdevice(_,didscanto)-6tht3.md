@@ -19,7 +19,7 @@ optional func scannerDevice(_ scanner: ICScannerDevice, didScanTo data: ICScanne
 - (void) scannerDevice:(ICScannerDevice *) scanner didScanToBandData:(ICScannerBandData *) data;
 ```
 
-#### Discussion
+## Discussion
 
 In memory transfer mode, this method sends a band of the size selected by the client using the [`maxMemoryBandSize`](../icscannerdevice/maxmemorybandsize.md) property.
 

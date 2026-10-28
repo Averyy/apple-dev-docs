@@ -4,11 +4,11 @@
 
 An action that plays an asset’s animation.
 
-#### Overview
+## Overview
 
 If the asset defines an animation, this action runs it on every prim in [affectedObjects](./affectedobjects.md).
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Action "StartAnimationAction"

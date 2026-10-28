@@ -21,7 +21,7 @@ func getAdvancements(_ advancements: NSSizeArray, forPackedGlyphs packedGlyphs: 
 - (void) getAdvancements:(NSSizeArray) advancements forPackedGlyphs:(const void *) packedGlyphs length:(NSUInteger) length;
 ```
 
-#### Discussion
+## Discussion
 
 Returns in `advancements` an array of the advancements for the packed glyphs specified by `packedGlyphs` and rendered by the receiver. The  `glyphCount` must specify the count of glyphs passed in `packedGlyphs`.
 

@@ -5,7 +5,7 @@
 
 Install kernel extensions using a custom installer package, and help users understand the installation process.
 
-#### Overview
+## Overview
 
 A kernel extension (or kext) is a bundle that performs low-level tasks. Kexts run in kernel space, which gives them elevated privileges and the ability to perform tasks that user-space apps can’t.
 
@@ -13,7 +13,7 @@ Always consider alternatives before creating a kext. The system provides numerou
 
 For information about alternatives to kexts, see [Implementing drivers, system extensions, and kexts](../SystemExtensions/implementing-drivers-system-extensions-and-kexts.md).
 
-##### Load Kexts as the Final Step in Your Installer Package
+### Load Kexts as the Final Step in Your Installer Package
 
 The most common way to install kexts is with a custom installer package. (Unlike apps and system extensions, you cannot distribute kexts through the Mac App Store.) Typically, you use a single package to copy each kext and any supporting software to the user’s system, and then you use scripts to load and configure the kexts for execution.
 
@@ -23,7 +23,7 @@ When creating your installer package, load your kexts as the final step in the i
 
 For more information about how to load kexts, run `kmutil load -h` in Terminal.
 
-##### Explain the Kext-Loading Process to Users
+### Explain the Kext-Loading Process to Users
 
 In macOS 11 and later, the loading of a kext requires the user to take actions outside of your installation package. When loading a kext, tell the user to perform the following one-time setup on Apple silicon:
 
@@ -44,7 +44,7 @@ The system prompts the user through most of this process, but make sure your ins
 
 > **Note**: For codeless kexts, the system asks the user for permission to install the kext, but doesn’t reboot the user’s system.
 
-##### Update an Existing Kernel Extension
+### Update an Existing Kernel Extension
 
 To update an existing kext, install that kext and use the `kmutil` or `kextload` tool to initiate the loading process. For a previously approved and loaded kext, the user must perform the following steps to update that kext:
 
@@ -55,7 +55,7 @@ To update an existing kext, install that kext and use the `kmutil` or `kextload`
 
 When the user consents to update the kext, the system rebuilds the kext collection with the updated version. However, the new collection doesn’t take effect until after the user reboots the system. If the user defers the reboot process, the system continues to run with the previous version of the kext.
 
-##### Unload a Kernel Extension
+### Unload a Kernel Extension
 
 Unloading a kext on macOS 11 and later requires a call to `kmutil` or `kextunload`, followed by a system reboot. The `kmutil` tool builds a new kext collection without the specified kext, but it doesn’t install that collection immediately. The system installs the new kext collection only after the computer reboots. As a result, the unloaded kext actually remains active and running until the user reboots the system.
 

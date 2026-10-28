@@ -20,11 +20,11 @@ optional func browser(_ browser: NSBrowser, shouldSizeColumn columnIndex: Int, f
 - (CGFloat) browser:(NSBrowser *) browser shouldSizeColumn:(NSInteger) columnIndex forUserResize:(BOOL) forUserResize toWidth:(CGFloat) suggestedWidth;
 ```
 
-#### Return Value
+## Return Value
 
 The delegate’s desired initial width for a newly added column. If you want to accept the suggested width, return `suggestedWidth`. If you return `0` or a size too small to display the resize handle and a portion of the column, the actual size used will be larger than the size you requested.
 
-#### Discussion
+## Discussion
 
 This method applies only to browsers with resize type [`NSBrowser.ColumnResizingType.noColumnResizing`](../nsbrowser/columnresizingtype-swift.enum/nocolumnresizing.md) or [`NSBrowser.ColumnResizingType.userColumnResizing`](../nsbrowser/columnresizingtype-swift.enum/usercolumnresizing.md) (see [`NSBrowser.ColumnResizingType`](../nsbrowser/columnresizingtype-swift.enum.md)).
 

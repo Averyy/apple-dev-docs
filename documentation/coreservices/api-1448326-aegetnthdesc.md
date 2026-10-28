@@ -19,17 +19,17 @@ func AEGetNthDesc(_ theAEDescList: UnsafePointer<AEDescList>!, _ index: Int, _ d
 OSErr AEGetNthDesc(const AEDescList *theAEDescList, long index, DescType desiredType, AEKeyword *theAEKeyword, AEDesc *result);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 If the Nth descriptor in the list is itself an Apple event record and the desired type is not wildcard, record, or list, `AEGetNthDesc` will fail with an `errAECoercionFailed` error. This behavior prevents coercion problems. 
 
 You may find the [`AEGetNthPtr(_:_:_:_:_:_:_:_:)`](./api-1447539-aegetnthptr.md) function convenient for retrieving data for direct use in your application, as it includes automatic coercion. 
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

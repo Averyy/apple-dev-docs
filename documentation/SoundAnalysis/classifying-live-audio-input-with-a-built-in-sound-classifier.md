@@ -12,7 +12,7 @@ Detect and identify hundreds of sounds by using a trained classifier.
 - Mac Catalyst 15.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10036: Discover Built-in Sound Classification in Sound Analysis](https://developer.apple.com/wwdc21/10036/).
 

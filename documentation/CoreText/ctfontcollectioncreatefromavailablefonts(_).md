@@ -25,7 +25,7 @@ func CTFontCollectionCreateFromAvailableFonts(_ options: CFDictionary?) -> CTFon
 extern CTFontCollectionRefCTFontCollectionCreateFromAvailableFonts(CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A new collection containing all fonts available to the current application.
 

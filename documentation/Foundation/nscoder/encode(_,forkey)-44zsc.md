@@ -24,7 +24,7 @@ func encode(_ insets: UIEdgeInsets, forKey key: String)
 - (void) encodeUIEdgeInsets:(UIEdgeInsets) insets forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 When decoding the data from the archive, you pass the value in the `key` parameter to the corresponding [`decodeUIEdgeInsets(forKey:)`](./decodeuiedgeinsets%28forkey%29.md) method to retrieve the data.
 

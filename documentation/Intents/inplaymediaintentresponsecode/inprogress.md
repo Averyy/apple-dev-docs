@@ -24,7 +24,7 @@ case inProgress
 INPlayMediaIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Respond with this code when your app needs more time to load the media before playing it.
 

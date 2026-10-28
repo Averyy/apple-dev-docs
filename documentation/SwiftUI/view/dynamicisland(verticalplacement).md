@@ -17,7 +17,7 @@ Specifies the vertical placement for a view of an expanded Live Activity that ap
 @preconcurrency func dynamicIsland(verticalPlacement: DynamicIslandExpandedRegionVerticalPlacement) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with the specified vertical placement.
 

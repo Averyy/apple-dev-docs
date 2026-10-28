@@ -15,11 +15,11 @@ Copy the list of participant identifiers of the intended recipient for this data
 extern ar_identifiers_tar_coordinate_space_data_copy_recipient_identifers(ar_coordinate_space_data_t shared_coordinate_space_data);
 ```
 
-#### Return Value
+## Return Value
 
 List the participant identifiers to which the data should be sent. Data should be broadcast to all participants if the list is empty.
 
-#### Discussion
+## Discussion
 
 > **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
 

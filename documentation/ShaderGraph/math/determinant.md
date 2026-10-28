@@ -14,7 +14,7 @@ Outputs the float determinant of a matrix.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Determinant (matrix3x3f)**:
 

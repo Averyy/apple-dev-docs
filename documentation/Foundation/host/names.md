@@ -21,7 +21,7 @@ var names: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * names;
 ```
 
-#### Return Value
+## Return Value
 
 All the hostnames of the receiver.
 

@@ -25,11 +25,11 @@ func value(forKey key: String) -> Any?
 - (id) valueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the property named `key`. For an attribute, the return value is an instance of an attribute type supported by Core Data (see [`NSAttributeDescription`](../nsattributedescription.md)); for a to-one relationship, the return value must be another cache node instance; for a to-many relationship, the return value must be an collection of the related cache nodes.
 
-#### Discussion
+## Discussion
 
 The default implementation forwards the request to the [`propertyCache`](./propertycache.md) dictionary if `key` matches a property name of the entity for the cache node. If `key` does not represent a property, the standard [`value(forKey:)`](../../ObjectiveC/nsobject-swift.class/value%28forkey%29.md) implementation is used.
 

@@ -21,7 +21,7 @@ class CPMapPanel
 @interface CPMapPanel : CPPanel
 ```
 
-#### Overview
+## Overview
 
 When you want to display information on top of your custom map interface, create a [`CPMapPanel`](./cpmappanel.md) object and fill it with the information to display. For example, you might use this panel to display a list of waypoints, nearby points of interest, route information, or other content. When you show this panel from a [`CPMapTemplate`](./cpmaptemplate.md) object, CarPlay layers the panel on top of your custom map, covering only a portion of it. Map panels support a navigation-style interface structure, allowing you to create a hierarchical structure for navigating your panel content. To add a new level of hierarchy, *push* a new panel using the map template methods. To remove a panel, *pop* it off the top of the navigation stack using the map template methods.
 

@@ -25,7 +25,7 @@ static var exponential: OSLogFloatFormatting { get }
 
 - [Generating Log Messages from Your Code](../generating-log-messages-from-your-code.md)
 
-#### Discussion
+## Discussion
 
 This option is equivalent to the `%e` option in `fprintf`. It prints the number in the form `[-]d.ddde±dd`, with `d` representing the digits of the number. The number of digits after the radix point is system-specific.
 

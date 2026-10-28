@@ -25,7 +25,7 @@ class AVAsyncProperty<Root, Value>
 
 - [Loading media data asynchronously](./loading-media-data-asynchronously.md)
 
-#### Overview
+## Overview
 
 This class subclasses [`AVPartialAsyncProperty`](./avpartialasyncproperty.md) to provide a type constraint on the property value.
 

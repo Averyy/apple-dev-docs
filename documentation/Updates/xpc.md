@@ -5,20 +5,20 @@
 
 Learn about important changes to XPC.
 
-#### Overview
+## Overview
 
 Browse notable changes in [XPC](../XPC/XPC.md).
 
-#### March 2024
+## March 2024
 
-##### Security
+### Security
 
 - Test whether the peer executable that communicates with your app over an XPC connection has an expected entitlement by calling [`xpc_connection_set_peer_entitlement_exists_requirement(_:_:)`](../XPC/xpc_connection_set_peer_entitlement_exists_requirement%28_,_%29.md), and whether it has a specific value for an entitlement by calling [`xpc_connection_set_peer_entitlement_matches_value_requirement(_:_:_:)`](../XPC/xpc_connection_set_peer_entitlement_matches_value_requirement%28_,_,_%29.md).
 - Test whether the peer executable that communicates with your app over an XPC connection is an Apple platform binary with a given signing identifier by calling [`xpc_connection_set_peer_platform_identity_requirement(_:_:)`](../XPC/xpc_connection_set_peer_platform_identity_requirement%28_,_%29.md).
 - Test whether your Apple Developer team signed the peer executable that communicates with your app over an XPC connection by calling [`xpc_connection_set_peer_team_identity_requirement(_:_:)`](../XPC/xpc_connection_set_peer_team_identity_requirement%28_,_%29.md).
 - Test whether the peer executable that communicates with your app over an XPC connection satisfies a lightweight code requirement by calling [`xpc_connection_set_peer_lightweight_code_requirement(_:_:)`](../XPC/xpc_connection_set_peer_lightweight_code_requirement%28_,_%29.md).
 
-#### June 2023
+## June 2023
 
 - Create XPC services using native Swift syntax. Use [`XPCListener`](../XPC/xpclistener.md) to create an XPC server that listens for messages from other processes. Use [`XPCSession`](../XPC/xpcsession.md) to create clients that connect to servers and exchange messages.
 - For C and Objective-C projects, use the corresponding [`xpc_listener_t`](../XPC/xpc_listener_t.md) and [`xpc_session_t`](../XPC/xpc_session_t-10if0.md) APIs.

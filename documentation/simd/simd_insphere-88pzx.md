@@ -12,11 +12,11 @@ Tests if a double-precision point lies inside, on, or outside a sphere.
 static double simd_insphere(simd_double3 __x, simd_double3 __a, simd_double3 __b, simd_double3 __c, simd_double3 __d);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates whether the point lies inside, on, or outside the specified sphere.
 
-#### Discussion
+## Discussion
 
 If the points `a`, `b`, `c`, and `d` describe a positively-oriented sphere (that is, the sphere’s normals point away from its center), the function returns:
 

@@ -19,11 +19,11 @@ func AXObserverGetRunLoopSource(_ observer: AXObserver) -> CFRunLoopSource
 CFRunLoopSourceRef AXObserverGetRunLoopSource(AXObserverRef observer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the CFRunLoopSourceRef of the observer; NIL if you pass NIL in `observer`.
 
-#### Discussion
+## Discussion
 
 The observer must be added to a run loop before it can receive notifications. Note that releasing the AXObserverRef automatically removes the run loop source from the run loop (you can also do this explicitly by calling [`CFRunLoopRemoveSource(_:_:_:)`](../CoreFoundation/cfrunloopremovesource%28_,_,_%29.md)).
 

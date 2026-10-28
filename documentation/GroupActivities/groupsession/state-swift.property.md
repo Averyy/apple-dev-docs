@@ -21,7 +21,7 @@ The current state of the session.
 <GroupSession<ActivityType>.State> final var state: GroupSession<ActivityType>.State { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get the current state value, or configure a subscriber to detect changes to the value. To change the state of a session, call the [`join()`](./join%28%29.md) and [`leave()`](./leave%28%29.md) methods.
 

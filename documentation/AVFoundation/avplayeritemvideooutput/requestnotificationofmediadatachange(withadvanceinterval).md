@@ -24,7 +24,7 @@ func requestNotificationOfMediaDataChange(withAdvanceInterval interval: TimeInte
 - (void) requestNotificationOfMediaDataChangeWithAdvanceInterval:(NSTimeInterval) interval;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method before you suspend your use of a [`CVDisplayLink`](../../CoreVideo/cvdisplaylink.md) type or a [`CADisplayLink`](../../QuartzCore/cadisplaylink.md) object. After the interval expires, the video output object notifies its delegate that it should resume the display link. If the interval value you specify is large, the delegate is notified as soon as possible rather than waiting.
 

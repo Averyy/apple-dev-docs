@@ -21,7 +21,7 @@ A type that contains the Markdown formatting for blocks of text, like paragraphs
 @interface NSPresentationIntent : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`NSPresentationIntent`](./nspresentationintent.md) object stores the Markdown semantics for a range of characters in an attributed string. When parsing Markdown into an attributed string, the system sets the value of the [`presentationIntentAttributeName`](./nsattributedstring/key/presentationintentattributename.md) attribute to an instance of this class. When displaying your string in system views, the system applies a default visual style to match the corresponding information in this type. To replace the system’s default formatting, remove these attributes from your attributed string and apply the formatting you want.
 

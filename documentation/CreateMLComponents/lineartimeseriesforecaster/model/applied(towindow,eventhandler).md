@@ -21,7 +21,7 @@ Performs a prediction on a window of input features.
 func applied(toWindow input: MLShapedArray<Scalar>, eventHandler: EventHandler? = nil) async throws -> MLShapedArray<Scalar>
 ```
 
-#### Return Value
+## Return Value
 
 A shaped array of predictions with shape `[forecastWindowSize, annotationSize]`.
 

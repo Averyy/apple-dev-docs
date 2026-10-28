@@ -21,11 +21,11 @@ Returns a subsequence, up to the specified maximum length, containing the initia
 func prefix(_ maxLength: Int) -> Self.SubSequence
 ```
 
-#### Return Value
+## Return Value
 
 A subsequence starting at the beginning of this collection with at most `maxLength` elements.
 
-#### Discussion
+## Discussion
 
 If the maximum length exceeds the number of elements in the collection, the result contains all the elements in the collection.
 

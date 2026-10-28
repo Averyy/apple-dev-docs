@@ -25,7 +25,7 @@ func CFNumberFormatterCreateStringWithValue(_ allocator: CFAllocator!, _ formatt
 extern CFStringRefCFNumberFormatterCreateStringWithValue(CFAllocatorRef allocator, CFNumberFormatterRef formatter, CFNumberType numberType, const void *valuePtr);
 ```
 
-#### Return Value
+## Return Value
 
 A new string that represents the given number or value formatted by `formatter`. Returns `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

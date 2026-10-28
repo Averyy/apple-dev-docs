@@ -25,7 +25,7 @@ var absoluteString: String? { get }
 @property (copy, readonly, nullable) NSString * absoluteString;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is calculated by resolving the receiver’s string against its base according to the algorithm given in RFC 1808.
 

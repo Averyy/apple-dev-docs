@@ -21,7 +21,7 @@ PeerAuthentication specifies how to authenticate the peer end of the connection.
 enum PeerAuthentication
 ```
 
-#### Overview
+## Overview
 
 For clients, the default is `none`. For servers, the default is `required`.
 

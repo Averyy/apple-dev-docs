@@ -16,7 +16,7 @@ Possible states of ARKit’s process for classifying plane anchors.
 enum ARPlaneClassificationStatus : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You get values of this type from a plane anchor’s [`classificationStatus`](./arplaneanchor/classificationstatus.md) property, describing the state of ARKit’s plane classification process.
 

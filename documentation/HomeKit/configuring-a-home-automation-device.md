@@ -12,7 +12,7 @@ Give users a familiar experience when they manage HomeKit accessories.
 - Mac Catalyst 12.1+
 - Xcode 10.2+
 
-#### Overview
+## Overview
 
 This sample presents a simplified version of the kind of app a HomeKit-enabled accessory manufacturer might provide. You use the app to configure and control a specific device—a garage door opener from a fictional manufacturer, Kilgo Devices. The app offers access to secondary and custom characteristics that Apple’s Home app doesn’t expose. It provides a user experience that’s consistent with the Home app’s approach and terminology, but doesn’t attempt to replicate every feature of the Home app.
 
@@ -20,19 +20,19 @@ This sample presents a simplified version of the kind of app a HomeKit-enabled a
 
 For more information about user interface considerations for HomeKit-enabled apps, see the [HomeKit](https://developer.apple.com/design/human-interface-guidelines/homekit/overview/introduction/) section of the [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
-To be able to use HomeKit, you enable the HomeKit capability and include the [NSHomeKitUsageDescription](../BundleResources/information_property_list/nshomekitusagedescription.md) key in your app’s `Info.plist` file, as described in [Enabling HomeKit in Your App](./enabling_homekit_in_your_app.md). In this sample app, the capability is already enabled and a usage description is provided.
+To be able to use HomeKit, you enable the HomeKit capability and include the [NSHomeKitUsageDescription](../BundleResources/information-property-list/nshomekitusagedescription.md) key in your app’s `Info.plist` file, as described in [Enabling HomeKit in Your App](./enabling-homekit-in-your-app.md). In this sample app, the capability is already enabled and a usage description is provided.
 
 Perform the following steps before building and running the app:
 
 1. Set a valid signing team in the target’s General pane so that Xcode can create a provisioning profile containing the HomeKit entitlement when you build for the first time.
-2. Download and install the HomeKit Accessory Simulator (HAS) on your Mac to be able to emulate HomeKit-enabled accessories. See [Testing Your App with the HomeKit Accessory Simulator](./testing_your_app_with_the_homekit_accessory_simulator.md).
+2. Download and install the HomeKit Accessory Simulator (HAS) on your Mac to be able to emulate HomeKit-enabled accessories. See [Testing Your App with the HomeKit Accessory Simulator](./testing-your-app-with-the-homekit-accessory-simulator.md).
 3. Import the `hasaccessory` file that the sample app bundles to define the specific garage door opener accessory that the app controls. Choose `File > Import Accessory` from the HAS menu. In the dialog that appears, navigate to the downloaded sample code project’s `Documentation` folder, and select the `garage.hasaccessory` file.
 
 The import creates a single accessory with a hidden accessory information service that all accessories have, and two user-interactive services: one that controls a garage door and another to control an attached light bulb. Most of the associated characteristics are standard for their service. Only one—the light bulb’s fade rate—is custom. You can use HAS to inspect and manipulate all of these items.
 
-##### Create a home manager and get the primary home
+### Create a home manager and get the primary home
 
 You always use an instance of [HMHomeManager](./hmhomemanager.md) as the root HomeKit object. The home manager contains an array of homes, each of which has a collection of accessories. The sample app defines a `HomeStore` class for use as a singleton that holds the one and only home manager for the app:
 
@@ -62,9 +62,9 @@ The manager tells its delegate when the list of homes changes, including the fir
 
 You can extend the app to allow the user to select among all known homes instead of always choosing the primary home. You can also allow users to add, remove, or rename homes, although the user performs these tasks infrequently, and typically relies on the Home app to do so.
 
-##### Add new accessories
+### Add new accessories
 
-The first time you run the app, the accessory list is empty, because you haven’t associated any accessories from Kilgo Devices. The app’s UI presents a `+` button in the navigation bar that you tap to initiate a search for accessories on the local network. The button’s tap handler calls the home’s [addAndSetupAccessories(completionHandler:)](./hmhome/api-1771427-addandsetupaccessories.md) method.
+The first time you run the app, the accessory list is empty, because you haven’t associated any accessories from Kilgo Devices. The app’s UI presents a `+` button in the navigation bar that you tap to initiate a search for accessories on the local network. The button’s tap handler calls the home’s [addAndSetupAccessories(completionHandler:)](./hmhome/addandsetupaccessories%28completionhandler%29.md) method.
 
 ```swift
 home?.addAndSetupAccessories(completionHandler: { error in
@@ -88,7 +88,7 @@ When your app enters the standard accessory association flow, which is the same 
 
 Each item that the user names in step 4 appears in the Home app as an “accessory”. However, in HomeKit, these are [HMService](./hmservice.md) instances. They are owned by an [HMAccessory](./hmaccessory.md) instance that represents the physical device that you selected in step 2. To maintain a user experience consistent with the Home app, the sample app UI (and the rest of this article) also refers to each [`HMService`](./hmservice.md) instance as an accessory.
 
-##### Show only accessories relevant to your app
+### Show only accessories relevant to your app
 
 You draw the display based on a copy of data from HomeKit captured into an array of Kilgo services:
 
@@ -119,7 +119,7 @@ As a result, the display shows only the accessories relevant to this particular 
 
 > **Note**: Use care when crafting your filters. For example, the name “Kilgo Devices, Inc.” might not be unique among all past and future manufacturers, and therefore might not serve as a sufficient predicate in a real app.
 
-##### Tailor common interactions to specific accessories
+### Tailor common interactions to specific accessories
 
 Accessories (like light bulbs) have characteristics (like power state, color temperature, brightness, and so on) that users control or observe. Users typically care about one of these characteristics above the others, because they change or read that characteristic most often. This is the primary characteristic, and you should give users quick access to it. For a light bulb, users most often want to switch it on or off, so the power state is the primary characteristic.
 
@@ -163,7 +163,7 @@ func tap() {
 
 The write involves network access, so HomeKit calls a completion handler when the write completes. Use this opportunity to update the state of the interface, as shown in the snippet above.
 
-##### Enable custom configuration
+### Enable custom configuration
 
 When the user taps an accessory’s information button, the app reveals details about the accessory. From the detail view, the user can rename the accessory, assign it to a room, remove it from the home, and see device information, like the firmware version. The user can also tap Settings to reveal a list of secondary characteristics for that accessory.
 

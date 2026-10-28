@@ -24,7 +24,7 @@ class UIMutableUserNotificationCategory
 @interface UIMutableUserNotificationCategory : UIUserNotificationCategory
 ```
 
-#### Overview
+## Overview
 
 Use instances of this class to customize the actions included in an alert when space onscreen is constrained.
 

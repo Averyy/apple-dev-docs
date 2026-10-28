@@ -25,7 +25,7 @@ func connect(_ node1: AVAudioNode, to node2: AVAudioNode, fromBus bus1: AVAudioN
 - (void) connect:(AVAudioNode *) node1 to:(AVAudioNode *) node2 fromBus:(AVAudioNodeBus) bus1 toBus:(AVAudioNodeBus) bus2 format:(AVAudioFormat *) format;
 ```
 
-#### Discussion
+## Discussion
 
 Audio nodes have input and output busses ([`AVAudioNodeBus`](../avaudionodebus.md)). Use this method to establish connections between audio nodes. Connections are always one-to-one, never one-to-many or many-to-one.
 

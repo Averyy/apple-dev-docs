@@ -24,7 +24,7 @@ static var name: PKAddressField { get }
 PKAddressFieldName
 ```
 
-#### Discussion
+## Discussion
 
 This constant lets you request the name used for shipping or billing. The name is also included as part of the postal address field. The system only handles the name as a separate field when the postal address is not requested.
 

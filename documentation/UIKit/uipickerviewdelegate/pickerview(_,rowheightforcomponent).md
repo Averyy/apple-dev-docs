@@ -22,7 +22,7 @@ optional func pickerView(_ pickerView: UIPickerView, rowHeightForComponent compo
 - (CGFloat) pickerView:(UIPickerView *) pickerView rowHeightForComponent:(NSInteger) component;
 ```
 
-#### Return Value
+## Return Value
 
 A float value indicating the height of the row in points.
 

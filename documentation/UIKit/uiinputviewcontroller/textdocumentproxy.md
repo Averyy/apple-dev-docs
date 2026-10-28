@@ -27,7 +27,7 @@ var textDocumentProxy: any UITextDocumentProxy { get }
 
 - [Configuring a custom keyboard interface](../configuring-a-custom-keyboard-interface.md)
 
-#### Discussion
+## Discussion
 
 This property conforms directly or indirectly to the following protocols:
 

@@ -19,7 +19,7 @@ var script: Int16
 SInt16 script;
 ```
 
-#### Discussion
+## Discussion
 
 Note that this field contains a 16-bit value. You can use any of the 16-bit values described in External String Encodings or [`CFStringBuiltInEncodings`](../../CoreFoundation/cfstringbuiltinencodings.md). However, if you need to use a 32-bit value, such as UTF8, you pass the value in the first array element of the [`reserved`](./api-1462772-reserved.md) field, and you also need to specify `-1` or [`kCFStringEncodingInvalidId`](../../CoreFoundation/kcfstringencodinginvalidid.md) in the [`script`](./api-1461925-script.md) field.
 

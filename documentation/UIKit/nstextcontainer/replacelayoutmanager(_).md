@@ -23,7 +23,7 @@ func replaceLayoutManager(_ newLayoutManager: NSLayoutManager)
 - (void) replaceLayoutManager:(NSLayoutManager *) newLayoutManager;
 ```
 
-#### Discussion
+## Discussion
 
 The framework reassigns all text containers and text views attached to the old layout manager to the new layout manager. Unlike setting the [`layoutManager`](./layoutmanager.md) property directly, this method makes all the adjustments necessary to keep the text object relationships intact.
 

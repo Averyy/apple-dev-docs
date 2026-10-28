@@ -21,7 +21,7 @@ The time of moonrise.
 var moonrise: Date?
 ```
 
-#### Discussion
+## Discussion
 
 Moonrise occurs when the moon first appears above Earth’s horizon.
 

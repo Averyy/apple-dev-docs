@@ -21,7 +21,7 @@ The output type for this regular expression.
 typealias RegexOutput = Output
 ```
 
-#### Discussion
+## Discussion
 
 A `Regex` instance’s output type depends on whether the `Regex` has captures and how it is created.
 

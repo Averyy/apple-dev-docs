@@ -23,11 +23,11 @@ func IOKitGetBusyState(_ mainPort: mach_port_t, _ busyState: UnsafeMutablePointe
 kern_return_t IOKitGetBusyState(mach_port_t mainPort, uint32_t *busyState);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 Many activities in IOService are asynchronous. When registration, matching, or termination is in progress on an IOService, its busyState is increased by one. Change in busyState to or from zero also changes the IOService's provider's busyState by one, which means that an IOService is marked busy when any of the above activities is ocurring on it or any of its clients. IOKitGetBusyState returns the busy state of the root of the service plane which reflects the busy state of all IOServices.
 

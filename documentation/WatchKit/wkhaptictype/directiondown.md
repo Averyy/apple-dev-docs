@@ -19,7 +19,7 @@ case directionDown
 WKHapticTypeDirectionDown
 ```
 
-#### Discussion
+## Discussion
 
 For example, you could use this feedback when adjusting the value of a thermostat.
 

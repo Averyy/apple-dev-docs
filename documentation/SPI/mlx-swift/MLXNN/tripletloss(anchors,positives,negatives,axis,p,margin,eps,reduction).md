@@ -17,11 +17,11 @@ Computes the triplet loss for a set of anchor, positive, and negative samples. M
 func tripletLoss(anchors: MLXArray, positives: MLXArray, negatives: MLXArray, axis: Int = -1, p: Int = 2, margin: Float = 1.0, eps: Float = 1e-6, reduction: LossReduction = .none) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Computed triplet loss.
 
-##### See Also
+### See Also
 
 - [Loss Functions](./losses.md)
 

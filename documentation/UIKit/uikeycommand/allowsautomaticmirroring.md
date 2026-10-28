@@ -23,7 +23,7 @@ var allowsAutomaticMirroring: Bool { get set }
 @property (nonatomic) BOOL allowsAutomaticMirroring;
 ```
 
-#### Discussion
+## Discussion
 
 When a key command represents a direction-related action, it’s common to specify an input string that conveys that direction. For example, Safari uses Command-[ to go back to the previous page, and Command-] to go forward to the next page. Because directions are different in left-to-right and right-to-left interfaces, this property lets the system swap some input strings to match the current language direction.
 

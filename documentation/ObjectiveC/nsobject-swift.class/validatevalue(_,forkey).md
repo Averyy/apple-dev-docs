@@ -25,7 +25,7 @@ func validateValue(_ ioValue: AutoreleasingUnsafeMutablePointer<AnyObject?>, for
 - (BOOL) validateValue:(id*) ioValue forKey:(NSString *) inKey error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 In Swift, this method throws an error if the value isn’t valid.  In Objective-C, it returns a Boolean value.
 

@@ -14,7 +14,7 @@
 IOByteCount (*GetBytesRemaining)(IOFireWireLibDCLCommandPoolRef self);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

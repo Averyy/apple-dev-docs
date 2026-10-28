@@ -23,7 +23,7 @@ func instanceNorm(weight: some BNNSGraph.Builder.OperationParameter<T>, bias: so
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This function performs instance normalization of `self` with an affine transform using `weight` and `bias`. `weight` and `bias` must be one-dimensional and have size `selfx.shape[1]`. `self` must be at least three-dimensional.
 

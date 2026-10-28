@@ -18,7 +18,7 @@ Initialize a compute stream which will encode its work to the provided command q
 init(commandQueue: any MTLCommandQueue)
 ```
 
-#### Discussion
+## Discussion
 
 You can use this to encode inferences to your own metal queue.
 

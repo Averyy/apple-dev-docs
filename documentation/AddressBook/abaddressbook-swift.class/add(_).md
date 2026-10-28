@@ -19,11 +19,11 @@ func add(_ record: ABRecord!) -> Bool
 - (BOOL) addRecord:(ABRecord *) record;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the record was added successfully; otherwise `false`.
 
-#### Discussion
+## Discussion
 
 If the `record` argument is `nil`, this method raises an exception. Your changes are not committed until you call the [`save()`](./save%28%29.md) method.
 

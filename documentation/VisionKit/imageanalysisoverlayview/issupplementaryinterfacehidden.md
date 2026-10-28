@@ -16,7 +16,7 @@ A Boolean value that indicates whether the view hides supplementary interface ob
 final var isSupplementaryInterfaceHidden: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Supplementary interface objects include the Live Text button and the interface for Quick Actions, depending on the item type. Setting this property invokes the [`setSupplementaryInterfaceHidden(_:animated:)`](./setsupplementaryinterfacehidden%28_,animated%29.md) method, passing this property value and `true` for the animated parameter.
 

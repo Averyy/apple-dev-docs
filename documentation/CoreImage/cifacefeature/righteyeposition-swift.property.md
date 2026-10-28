@@ -24,7 +24,7 @@ var rightEyePosition: CGPoint { get }
 @property (assign, readonly) CGPoint rightEyePosition;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The right eye is on the right side of the face from the observer’s perspective. It is not the right eye from the subject’s perspective.
 

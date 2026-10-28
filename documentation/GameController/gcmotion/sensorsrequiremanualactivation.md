@@ -24,7 +24,7 @@ var sensorsRequireManualActivation: Bool { get }
 @property (nonatomic, readonly) BOOL sensorsRequireManualActivation;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the sensors require manual activation; otherwise, [`false`](../../Swift/false.md).
 

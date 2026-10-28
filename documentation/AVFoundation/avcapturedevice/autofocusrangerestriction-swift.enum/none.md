@@ -22,7 +22,7 @@ case none
 AVCaptureAutoFocusRangeRestrictionNone
 ```
 
-#### Discussion
+## Discussion
 
 This value is the default, and the only value allowed on devices that do not support focus range restriction.
 

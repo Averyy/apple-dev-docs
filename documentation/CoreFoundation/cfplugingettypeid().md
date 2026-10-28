@@ -25,7 +25,7 @@ func CFPlugInGetTypeID() -> CFTypeID
 extern CFTypeID CFPlugInGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the `CFPlugIn` opaque type.
 

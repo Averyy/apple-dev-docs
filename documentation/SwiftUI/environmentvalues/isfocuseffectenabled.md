@@ -21,7 +21,7 @@ A Boolean value that indicates whether the view associated with this environment
 var isFocusEffectEnabled: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

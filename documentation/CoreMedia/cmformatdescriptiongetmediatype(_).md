@@ -25,11 +25,11 @@ func CMFormatDescriptionGetMediaType(_ desc: CMFormatDescription) -> CMMediaType
 extern CMMediaType CMFormatDescriptionGetMediaType(CMFormatDescriptionRef desc);
 ```
 
-#### Return Value
+## Return Value
 
 A media type that identifies the format description.
 
-#### Discussion
+## Discussion
 
 For example, this function returns [`kCMMediaType_Audio`](./kcmmediatype_audio.md) for a description of an audio stream.
 

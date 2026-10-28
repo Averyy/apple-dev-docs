@@ -25,7 +25,7 @@ case notificationsNotAllowed
 UNErrorCodeNotificationsNotAllowed
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you try to submit a notification request and your app or app extension isn’t authorized to schedule notifications.
 

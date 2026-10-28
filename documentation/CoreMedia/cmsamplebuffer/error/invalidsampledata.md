@@ -21,7 +21,7 @@ The sample buffer contains bad data.
 static let invalidSampleData: NSError
 ```
 
-#### Discussion
+## Discussion
 
 This error only occurs for operations that inspect their sample data.
 

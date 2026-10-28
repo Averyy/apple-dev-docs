@@ -25,7 +25,7 @@ func xpc_array_get_int64(_ xarray: xpc_object_t, _ index: Int) -> Int64
 extern int64_t xpc_array_get_int64(xpc_object_t xarray, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying `int64_t` value at the specified index. 0 if the value at the specified index is not a signed integer value.
 

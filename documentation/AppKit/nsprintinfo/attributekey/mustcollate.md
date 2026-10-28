@@ -19,7 +19,7 @@ static let mustCollate: NSPrintInfo.AttributeKey
 extern NSPrintInfoAttributeKey const NSPrintMustCollate;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../../Swift/true.md), collates output.
 

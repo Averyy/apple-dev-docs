@@ -21,7 +21,7 @@ A style appropriate for foreground separator or border lines.
 struct SeparatorShapeStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`separator`](./shapestyle/separator.md) to construct this style.
 

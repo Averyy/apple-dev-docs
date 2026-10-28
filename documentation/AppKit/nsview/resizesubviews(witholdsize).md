@@ -19,7 +19,7 @@ func resizeSubviews(withOldSize oldSize: NSSize)
 - (void) resizeSubviewsWithOldSize:(NSSize) oldSize;
 ```
 
-#### Discussion
+## Discussion
 
 If the view is configured to autoresize its subviews, this method is automatically invoked by any method that changes the view’s frame size.
 

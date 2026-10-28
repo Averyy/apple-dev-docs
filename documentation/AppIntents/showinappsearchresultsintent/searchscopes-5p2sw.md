@@ -24,7 +24,7 @@ static var searchScopes: [StringSearchScope] { get }
 
 Available when `Criteria` is `StringSearchCriteria`.
 
-#### Discussion
+## Discussion
 
 If you don’t provide a search scope for your [`ShowInAppSearchResultsIntent`](../showinappsearchresultsintent.md), the system uses [`StringSearchScope.general`](../stringsearchscope/general.md) as the default value.
 

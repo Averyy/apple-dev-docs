@@ -22,7 +22,7 @@ var title: String? { get }
 @property (nonatomic, readonly, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 This is independent of the service identifier and should be used for identifying the individual credential.
 

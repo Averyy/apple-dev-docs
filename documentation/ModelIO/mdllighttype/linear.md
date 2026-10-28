@@ -24,7 +24,7 @@ case linear
 MDLLightTypeLinear
 ```
 
-#### Discussion
+## Discussion
 
 This light type is exclusive to the [`MDLAreaLight`](../mdlarealight.md) class.
 

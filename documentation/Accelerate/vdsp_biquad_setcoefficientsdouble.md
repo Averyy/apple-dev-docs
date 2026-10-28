@@ -21,7 +21,7 @@ Sets double-precision coefficients of the specified single-channel biquadratic f
 extern void vDSP_biquad_SetCoefficientsDouble(vDSP_biquad_Setup __setup, const double *__coeffs, vDSP_Length __start_sec, vDSP_Length __nsec);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to update sections of coefficient values of a biquad setup structure. This function doesn’t allocate new memory. The range that you specify using `__start_sec` and `__nsec` must be within the number of sections that you define in the create setup function.
 

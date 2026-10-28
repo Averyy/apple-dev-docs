@@ -5,7 +5,7 @@
 
 Evaluate trust based on a given policy.
 
-#### Overview
+## Overview
 
 Before using a certificate, you evaluate its trustworthiness for a particular purpose.
 

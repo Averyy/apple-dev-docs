@@ -18,15 +18,15 @@ Defines and implements conformance of the Observable protocol.
 ## Declaration
 
 ```swift
-@attached
-(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) macro Observable()
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers))
+@attached(memberAttribute) @attached(extension, conformances: Observable) macro Observable()
 ```
 
 ## Mentions
 
 - [Applying Macros](../Swift/applying-macros.md)
 
-#### Overview
+## Overview
 
 This macro adds observation support to a custom type and conforms the type to the [`Observable`](./observable.md) protocol. For example, the following code applies the `Observable` macro to the type `Car` making it observable:
 

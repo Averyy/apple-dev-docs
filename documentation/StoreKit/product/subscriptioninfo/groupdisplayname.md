@@ -22,7 +22,7 @@ The localized name of the subscription group, suitable for display.
 var groupDisplayName: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 You provide a group display name in App Store Connect when you set up a subscription group. For more information, see [Offer auto-renewable subscriptions](https://help.apple.com/app-store-connect/#/dev75708c031).
 

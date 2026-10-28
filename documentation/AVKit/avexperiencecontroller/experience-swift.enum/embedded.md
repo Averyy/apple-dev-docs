@@ -15,7 +15,7 @@ An experience where the video embeds within its original container.
 case embedded
 ```
 
-#### Discussion
+## Discussion
 
 This experience is the starting state and is valid on all platforms. You may embed video in the original container even if that container isn’t visible or not in the view hierarchy. It’s valid to transition to this experience from any other experience, even when the player view controller isn’t in the view hierarchy.
 

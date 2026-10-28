@@ -12,11 +12,11 @@ virtual IOReturn enableController(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code. A return other than kIOReturnSuccess will prevent the system from using the device.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses should perform their initialization of the hardware here. The IOService start() method is not called at a time appropriate for this initialization.
 

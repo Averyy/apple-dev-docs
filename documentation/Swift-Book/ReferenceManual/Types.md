@@ -67,15 +67,6 @@ let someTuple: (Double, Double) = (3.14159, 2.71828)
 func someFunction(a: Int) { /* ... */ }
 ```
 
-<!--
-  - test: `type-annotation`
-
-  ```swifttest
-  -> let someTuple: (Double, Double) = (3.14159, 2.71828)
-  -> func someFunction(a: Int) { /* ... */ }
-  ```
--->
-
 In the first example,
 the expression `someTuple` is specified to have the tuple type `(Double, Double)`.
 In the second example,
@@ -108,15 +99,6 @@ typealias Point = (Int, Int)
 let origin: Point = (0, 0)
 ```
 
-<!--
-  - test: `type-identifier`
-
-  ```swifttest
-  -> typealias Point = (Int, Int)
-  -> let origin: Point = (0, 0)
-  ```
--->
-
 In the second case, a type identifier uses dot (`.`) syntax to refer to named types
 declared in other modules or nested within other types.
 For example, the type identifier in the following code references the named type `MyType`
@@ -125,17 +107,6 @@ that's declared in the `ExampleModule` module.
 ```swift
 var someValue: ExampleModule.MyType
 ```
-
-<!--
-  - test: `type-identifier-dot`
-
-  ```swifttest
-  -> var someValue: ExampleModule.MyType
-  !$ error: cannot find type 'ExampleModule' in scope
-  !! var someValue: ExampleModule.MyType
-  !!                ^~~~~~~~~~~~~
-  ```
--->
 
 > Grammar of a type identifier:
 >
@@ -162,20 +133,6 @@ someTuple = (top: 4, bottom: 42) // OK: Names match.
 someTuple = (9, 99)              // OK: Names are inferred.
 someTuple = (left: 5, right: 5)  // Error: Names don't match.
 ```
-
-<!--
-  - test: `tuple-type-names`
-
-  ```swifttest
-  -> var someTuple = (top: 10, bottom: 12)  // someTuple is of type (top: Int, bottom: Int)
-  -> someTuple = (top: 4, bottom: 42) // OK: Names match.
-  -> someTuple = (9, 99)              // OK: Names are inferred.
-  -> someTuple = (left: 5, right: 5)  // Error: Names don't match.
-  !$ error: cannot assign value of type '(left: Int, right: Int)' to type '(top: Int, bottom: Int)'
-  !! someTuple = (left: 5, right: 5)  // Error: Names don't match.
-  !!             ^~~~~~~~~~~~~~~~~~~
-  ```
--->
 
 All tuple types contain two or more types,
 except for `Void` which is a type alias for the empty tuple type, `()`.
@@ -247,22 +204,6 @@ Argument names in functions and methods
 aren't part of the corresponding function type.
 For example:
 
-<!--
-  - test: `argument-names`
-
-  ```swifttest
-  -> func someFunction(left: Int, right: Int) {}
-  -> func anotherFunction(left: Int, right: Int) {}
-  -> func functionWithDifferentLabels(top: Int, bottom: Int) {}
-
-  -> var f = someFunction // The type of f is (Int, Int) -> Void, not (left: Int, right: Int) -> Void.
-  >> print(type(of: f))
-  << (Int, Int) -> ()
-  -> f = anotherFunction              // OK
-  -> f = functionWithDifferentLabels  // OK
-  ```
--->
-
 ```swift
 func someFunction(left: Int, right: Int) {}
 func anotherFunction(left: Int, right: Int) {}
@@ -279,32 +220,6 @@ func functionWithDifferentNumberOfArguments(left: Int, right: Int, top: Int) {}
 f = functionWithDifferentNumberOfArguments // Error
 ```
 
-<!--
-  - test: `argument-names-err`
-
-  ```swifttest
-  -> func someFunction(left: Int, right: Int) {}
-  -> func anotherFunction(left: Int, right: Int) {}
-  -> func functionWithDifferentLabels(top: Int, bottom: Int) {}
-
-  -> var f = someFunction // The type of f is (Int, Int) -> Void, not (left: Int, right: Int) -> Void.
-  -> f = anotherFunction              // OK
-  -> f = functionWithDifferentLabels  // OK
-
-  -> func functionWithDifferentArgumentTypes(left: Int, right: String) {}
-  -> f = functionWithDifferentArgumentTypes     // Error
-  !$ error: cannot assign value of type '(Int, String) -> ()' to type '(Int, Int) -> ()'
-  !! f = functionWithDifferentArgumentTypes     // Error
-  !! ^
-
-  -> func functionWithDifferentNumberOfArguments(left: Int, right: Int, top: Int) {}
-  -> f = functionWithDifferentNumberOfArguments // Error
-  !$ error: type of expression is ambiguous without more context
-  !! f = functionWithDifferentNumberOfArguments // Error
-  !! ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  ```
--->
-
 Because argument labels aren't part of a function's type,
 you omit them when writing a function type.
 
@@ -313,36 +228,6 @@ var operation: (lhs: Int, rhs: Int) -> Int     // Error
 var operation: (_ lhs: Int, _ rhs: Int) -> Int // OK
 var operation: (Int, Int) -> Int               // OK
 ```
-
-<!--
-  - test: `omit-argument-names-in-function-type`
-
-  ```swifttest
-  -> var operation: (lhs: Int, rhs: Int) -> Int     // Error
-  !$ error: function types cannot have argument labels; use '_' before 'lhs'
-  !!    var operation: (lhs: Int, rhs: Int) -> Int     // Error
-  !!                    ^
-  !!                    _
-  !$ error: function types cannot have argument labels; use '_' before 'rhs'
-  !!    var operation: (lhs: Int, rhs: Int) -> Int     // Error
-  !!                              ^
-  !!                              _
-  !$ error: invalid redeclaration of 'operation'
-  !! var operation: (_ lhs: Int, _ rhs: Int) -> Int // OK
-  !!     ^
-  !$ note: 'operation' previously declared here
-  !! var operation: (lhs: Int, rhs: Int) -> Int     // Error
-  !!     ^
-  !$ error: invalid redeclaration of 'operation'
-  !! var operation: (Int, Int) -> Int               // OK
-  !!     ^
-  !$ note: 'operation' previously declared here
-  !! var operation: (lhs: Int, rhs: Int) -> Int     // Error
-  !!     ^
-  -> var operation: (_ lhs: Int, _ rhs: Int) -> Int // OK
-  -> var operation: (Int, Int) -> Int               // OK
-  ```
--->
 
 If a function type includes more than a single arrow (`->`),
 the function types are grouped from right to left.
@@ -401,43 +286,11 @@ in the same places as an asynchronous one.
 For information about asynchronous functions,
 see [Asynchronous Functions and Methods](Declarations.md#Asynchronous-Functions-and-Methods).
 
-<!--
-  - test: `function-arrow-is-right-associative`
-
-  ```swifttest
-  >> func f(i: Int) -> (Int) -> Int {
-  >>     func g(j: Int) -> Int {
-  >>         return i + j
-  >>     }
-  >>     return g
-  >> }
-
-  >> let a: (Int) -> (Int) -> Int = f
-  >> let r0 = a(3)(5)
-  >> assert(r0 == 8)
-
-  >> let b: (Int) -> ((Int) -> Int) = f
-  >> let r1 = b(3)(5)
-  >> assert(r1 == 8)
-  ```
--->
-
 ### Restrictions for Nonescaping Closures
 
 A parameter that's a nonescaping function
 can't be stored in a property, variable, or constant of type `Any`,
 because that might allow the value to escape.
-
-<!--
-  - test: `cant-store-nonescaping-as-Any`
-
-  ```swifttest
-  -> func f(g: ()->Void) { let x: Any = g }
-  !$ error: converting non-escaping value to 'Any' may allow it to escape
-  !! func f(g: ()->Void) { let x: Any = g }
-  !!                                    ^
-  ```
--->
 
 A parameter that's a nonescaping function
 can't be passed as an argument to another nonescaping function parameter.
@@ -459,36 +312,6 @@ func takesTwoFunctions(first: (() -> Void) -> Void, second: (() -> Void) -> Void
     external { first {} }    // OK
 }
 ```
-
-<!--
-  - test: `memory-nonescaping-functions`
-
-  ```swifttest
-  -> let external: (() -> Void) -> Void = { _ in () }
-  -> func takesTwoFunctions(first: (() -> Void) -> Void, second: (() -> Void) -> Void) {
-         first { first {} }       // Error
-         second { second {}  }    // Error
-
-         first { second {} }      // Error
-         second { first {} }      // Error
-
-         first { external {} }    // OK
-         external { first {} }    // OK
-     }
-  !$ error: passing a closure which captures a non-escaping function parameter 'first' to a call to a non-escaping function parameter can allow re-entrant modification of a variable
-  !! first { first {} }       // Error
-  !! ^
-  !$ error: passing a closure which captures a non-escaping function parameter 'second' to a call to a non-escaping function parameter can allow re-entrant modification of a variable
-  !! second { second {}  }    // Error
-  !! ^
-  !$ error: passing a closure which captures a non-escaping function parameter 'second' to a call to a non-escaping function parameter can allow re-entrant modification of a variable
-  !! first { second {} }      // Error
-  !! ^
-  !$ error: passing a closure which captures a non-escaping function parameter 'first' to a call to a non-escaping function parameter can allow re-entrant modification of a variable
-  !! second { first {} }      // Error
-  !! ^
-  ```
--->
 
 In the code above,
 both of the parameters to `takesTwoFunctions(first:second:)` are functions.
@@ -524,22 +347,6 @@ see [Memory Safety](../LanguageGuide/MemorySafety.md).
 >
 > *throws-clause* → **`throws`** | **`throws`** **`(`** *type* **`)`**
 
-<!--
-  NOTE: Functions are first-class citizens in Swift,
-  except for generic functions, i.e., parametric polymorphic functions.
-  This means that monomorphic functions can be assigned to variables
-  and can be passed as arguments to other functions.
-  As an example, the following three lines of code are OK::
-
-      func polymorphicF<T>(a: Int) -> T { return a }
-      func monomorphicF(a: Int) -> Int { return a }
-      var myMonomorphicF = monomorphicF
-
-  But, the following is NOT allowed::
-
-      var myPolymorphicF = polymorphicF
--->
-
 ## Array Type
 
 The Swift language provides the following syntactic sugar for the Swift standard library
@@ -556,16 +363,6 @@ let someArray: Array<String> = ["Alex", "Brian", "Dave"]
 let someArray: [String] = ["Alex", "Brian", "Dave"]
 ```
 
-<!--
-  - test: `array-literal`
-
-  ```swifttest
-  >> let someArray1: Array<String> = ["Alex", "Brian", "Dave"]
-  >> let someArray2: [String] = ["Alex", "Brian", "Dave"]
-  >> assert(someArray1 == someArray2)
-  ```
--->
-
 In both cases, the constant `someArray`
 is declared as an array of strings. The elements of an array can be accessed
 through subscripting by specifying a valid index value in square brackets:
@@ -580,14 +377,6 @@ a three-dimensional array of integers using three sets of square brackets:
 ```swift
 var array3D: [[[Int]]] = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
 ```
-
-<!--
-  - test: `array-3d`
-
-  ```swifttest
-  -> var array3D: [[[Int]]] = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
-  ```
--->
 
 When accessing the elements in a multidimensional array,
 the left-most subscript index refers to the element at that index in the outermost
@@ -619,16 +408,6 @@ let someDictionary: [String: Int] = ["Alex": 31, "Paul": 39]
 let someDictionary: Dictionary<String, Int> = ["Alex": 31, "Paul": 39]
 ```
 
-<!--
-  - test: `dictionary-literal`
-
-  ```swifttest
-  >> let someDictionary1: [String: Int] = ["Alex": 31, "Paul": 39]
-  >> let someDictionary2: Dictionary<String, Int> = ["Alex": 31, "Paul": 39]
-  >> assert(someDictionary1 == someDictionary2)
-  ```
--->
-
 In both cases, the constant `someDictionary`
 is declared as a dictionary with strings as keys and integers as values.
 
@@ -641,11 +420,6 @@ If the specified key isn't contained in the dictionary,
 the subscript returns `nil`.
 
 The key type of a dictionary must conform to the Swift standard library `Hashable` protocol.
-
-<!--
-  Used to have an xref to :ref:`CollectionTypes_HashValuesForSetTypes` here.
-  But it doesn't really work now that the Hashable content moved from Dictionary to Set.
--->
 
 For a detailed discussion of the Swift standard library `Dictionary` type,
 see [Dictionaries](../LanguageGuide/CollectionTypes.md#Dictionaries).
@@ -665,21 +439,6 @@ var optionalInteger: Int?
 var optionalInteger: Optional<Int>
 ```
 
-<!--
-  - test: `optional-literal`
-
-  ```swifttest
-  >> var optionalInteger1: Int?
-  >> var optionalInteger2: Optional<Int>
-  ```
--->
-
-<!--
-  We can't test the code listing above,
-  because of the redeclaration of optionalInteger,
-  so we at least test that the syntax shown in it compiles.
--->
-
 In both cases, the variable `optionalInteger`
 is declared to have the type of an optional integer.
 Note that no whitespace may appear between the type and the `?`.
@@ -690,11 +449,6 @@ Any type can be explicitly declared to be (or implicitly converted to) an option
 If you don't provide an initial value when you declare an
 optional variable or property, its value automatically defaults to `nil`.
 
-<!--
-  TODO Add a link to the Optional Enum Reference page.
-  For more information about the Optional type, see ...
--->
-
 If an instance of an optional type contains a value,
 you can access that value using the postfix operator `!`, as shown below:
 
@@ -702,23 +456,6 @@ you can access that value using the postfix operator `!`, as shown below:
 optionalInteger = 42
 optionalInteger! // 42
 ```
-
-<!--
-  - test: `optional-type`
-
-  ```swifttest
-  >> var optionalInteger: Int?
-  -> optionalInteger = 42
-  >> let r0 =
-  -> optionalInteger! // 42
-  >> assert(r0 == 42)
-  ```
--->
-
-<!--
-  Refactor the above if possible to avoid using bare expressions.
-  Tracking bug is <rdar://problem/35301593>
--->
 
 Using the `!` operator to unwrap an optional
 that has a value of `nil` results in a runtime error.
@@ -802,11 +539,6 @@ in type annotations,
 in generic parameter clauses,
 and in generic `where` clauses.
 
-<!--
-  In places where a comma-separated list of types is allowed,
-  the P&Q syntax isn't allowed.
--->
-
 Protocol composition types have the following form:
 
 ```swift
@@ -845,18 +577,6 @@ typealias PQ = P & Q
 typealias PQR = PQ & Q & R
 ```
 
-<!--
-  - test: `protocol-composition-can-have-repeats`
-
-  ```swifttest
-  >> protocol P {}
-  >> protocol Q {}
-  >> protocol R {}
-  -> typealias PQ = P & Q
-  -> typealias PQR = PQ & Q & R
-  ```
--->
-
 > Grammar of a protocol composition type:
 >
 > *protocol-composition-type* → *type-identifier* **`&`** *protocol-composition-continuation* \
@@ -891,12 +611,6 @@ or inherits from the listed class.
 Code that interacts with an opaque value
 can use the value only in ways
 that are part of the interface defined by the *constraint*.
-
-<!--
-  The wording above intentionally follows generic constraints
-  because the meaning here and there is the same,
-  and the compiler uses the same machinery for both under the hood.
--->
 
 At compile time,
 a value whose type is opaque has a specific concrete type,
@@ -988,38 +702,6 @@ Applying `any` to the `Any` or `AnyObject` types
 has no effect,
 because those types are already boxed protocol types.
 
-<!--
-  - test: `any-any-does-nothing`
-
-   >> var x: any Any = 12
-   >> var y: Any = 12
-   >> print(type(of: x))
-   << Int
-   >> print(type(of: y))
-   << Int
-   >> print(type(of: x) == type(of: y))
-   << true
--->
-
-<!--
-  - test: `any-anyobject-does-nothing`
-
-   >> import Foundation
-   >> var x: any AnyObject = NSNumber(value: 12)
-   >> var y: AnyObject = NSNumber(value: 12)
-   >> print(type(of: x))
-   << __NSCFNumber
-   >> print(type(of: y))
-   << __NSCFNumber
-   >> print(type(of: x) == type(of: y))
-   << true
--->
-
-<!--
-Contrast P.Type with (any P.Type) and (any P).Type
-https://github.com/swiftlang/swift-evolution/blob/main/proposals/0335-existential-any.md#metatypes
--->
-
 > Grammar of a boxed protocol type:
 >
 > *boxed-protocol-type* → **`any`** *type*
@@ -1064,28 +746,6 @@ type(of: someInstance).printClassName()
 // Prints "SomeSubClass".
 ```
 
-<!--
-  - test: `metatype-type`
-
-  ```swifttest
-  -> class SomeBaseClass {
-         class func printClassName() {
-             print("SomeBaseClass")
-         }
-     }
-  -> class SomeSubClass: SomeBaseClass {
-         override class func printClassName() {
-             print("SomeSubClass")
-         }
-     }
-  -> let someInstance: SomeBaseClass = SomeSubClass()
-  -> // The compile-time type of someInstance is SomeBaseClass,
-  -> // and the runtime type of someInstance is SomeSubClass
-  -> type(of: someInstance).printClassName()
-  <- SomeSubClass
-  ```
--->
-
 For more information,
 see [`type(of:)`](https://developer.apple.com/documentation/swift/type(of:))
 in the Swift standard library.
@@ -1110,24 +770,6 @@ let metatype: AnotherSubClass.Type = AnotherSubClass.self
 let anotherInstance = metatype.init(string: "some string")
 ```
 
-<!--
-  - test: `metatype-type`
-
-  ```swifttest
-  -> class AnotherSubClass: SomeBaseClass {
-        let string: String
-        required init(string: String) {
-           self.string = string
-        }
-        override class func printClassName() {
-           print("AnotherSubClass")
-        }
-     }
-  -> let metatype: AnotherSubClass.Type = AnotherSubClass.self
-  -> let anotherInstance = metatype.init(string: "some string")
-  ```
--->
-
 > Grammar of a metatype type:
 >
 > *metatype-type* → *type* **`.`** **`Type`** | *type* **`.`** **`Protocol`**
@@ -1147,14 +789,6 @@ for an instance of any of the following types:
 let mixed: [Any] = ["one", 2, true, (4, 5.3), { () -> Int in return 6 }]
 ```
 
-<!--
-  - test: `any-type`
-
-  ```swifttest
-  -> let mixed: [Any] = ["one", 2, true, (4, 5.3), { () -> Int in return 6 }]
-  ```
--->
-
 When you use `Any` as a concrete type for an instance,
 you need to cast the instance to a known type
 before you can access its properties or methods.
@@ -1172,17 +806,6 @@ if let first = mixed.first as? String {
 }
 // Prints "The first item, 'one', is a string."
 ```
-
-<!--
-  - test: `any-type`
-
-  ```swifttest
-  -> if let first = mixed.first as? String {
-         print("The first item, '\(first)', is a string.")
-     }
-  <- The first item, 'one', is a string.
-  ```
--->
 
 For more information about casting, see [Type Casting](../LanguageGuide/TypeCasting.md).
 
@@ -1224,38 +847,6 @@ For example,
 the code below shows an instance method `f`
 whose return type is `Self`.
 
-<!--
-  - test: `self-in-class-cant-be-a-parameter-type`
-
-  ```swifttest
-  -> class C { func f(c: Self) { } }
-  !$ error: covariant 'Self' or 'Self?' can only appear as the type of a property, subscript or method result; did you mean 'C'?
-  !! class C { func f(c: Self) { } }
-  !!                     ^~~~
-  !!                     C
-  ```
--->
-
-<!--
-  - test: `self-in-class-can-be-a-subscript-param`
-
-  ```swifttest
-  >> class C { subscript(s: Int) -> Self { return self } }
-  >> let c = C()
-  >> _ = c[12]
-  ```
--->
-
-<!--
-  - test: `self-in-class-can-be-a-computed-property-type`
-
-  ```swifttest
-  >> class C { var s: Self { return self } }
-  >> let c = C()
-  >> _ = c.s
-  ```
--->
-
 ```swift
 class Superclass {
     func f() -> Self { return self }
@@ -1274,38 +865,9 @@ print(type(of: z.f()))
 // Prints "Subclass".
 ```
 
-<!--
-  - test: `self-gives-dynamic-type`
-
-  ```swifttest
-  -> class Superclass {
-         func f() -> Self { return self }
-     }
-  -> let x = Superclass()
-  -> print(type(of: x.f()))
-  <- Superclass
-
-  -> class Subclass: Superclass { }
-  -> let y = Subclass()
-  -> print(type(of: y.f()))
-  <- Subclass
-
-  -> let z: Superclass = Subclass()
-  -> print(type(of: z.f()))
-  <- Subclass
-  ```
--->
-
 The last part of the example above shows that
 `Self` refers to the runtime type `Subclass` of the value of `z`,
 not the compile-time type `Superclass` of the variable itself.
-
-<!--
-  TODO: Using Self as the return type from a subscript or property doesn't
-  currently work.  The compiler allows it, but you get the wrong type back,
-  and the compiler doesn't enforce that the subscript/property must be
-  read-only.  See https://bugs.swift.org/browse/SR-10326
--->
 
 Inside a nested type declaration,
 the `Self` type refers to the type
@@ -1385,31 +947,7 @@ let e = 2.71828 // The type of e is inferred to be Double.
 let eFloat: Float = 2.71828 // The type of eFloat is Float.
 ```
 
-<!--
-  - test: `type-inference`
-
-  ```swifttest
-  -> let e = 2.71828 // The type of e is inferred to be Double.
-  -> let eFloat: Float = 2.71828 // The type of eFloat is Float.
-  ```
--->
-
 Type inference in Swift operates at the level of a single expression or statement.
 This means that all of the information needed to infer an omitted type or part of a type
 in an expression must be accessible from type-checking
 the expression or one of its subexpressions.
-
-<!--
-  TODO: Email Doug for a list of rules or situations describing when type-inference
-  is allowed and when types must be fully typed.
--->
-
-<!--
-This source file is part of the Swift.org open source project
-
-Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
-Licensed under Apache License v2.0 with Runtime Library Exception
-
-See https://swift.org/LICENSE.txt for license information
-See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
--->

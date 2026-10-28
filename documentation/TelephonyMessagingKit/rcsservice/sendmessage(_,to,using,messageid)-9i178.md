@@ -15,7 +15,7 @@ Sends a composing indicator message to a specified destination.
 final func sendMessage(_ content: RCSMessage.ComposingIndicator, to destination: RCSHandle, using cellularServiceID: CellularServiceID, messageID: RCSMessageID) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Your app can send this message to allow recipients to see an “is typing” indicator.
 

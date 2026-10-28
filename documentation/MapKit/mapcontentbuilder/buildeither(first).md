@@ -21,7 +21,7 @@ Compares content in a multistatement closure, resulting in use of the conditiona
 static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> _ConditionalMapContent<TrueContent, FalseContent> where TrueContent : MapContent, FalseContent : MapContent
 ```
 
-#### Return Value
+## Return Value
 
 Returns the conditional map content that meets the conditions the content builder expresses.
 

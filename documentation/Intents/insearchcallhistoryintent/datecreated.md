@@ -34,7 +34,7 @@ var dateCreated: INDateComponentsRange? { get }
 @property (atomic, copy, readonly, nullable) INDateComponentsRange * dateCreated;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to limit your search to calls that occurred within the specified range of dates. Include the start and end dates in your search.
 

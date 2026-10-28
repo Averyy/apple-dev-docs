@@ -19,11 +19,11 @@ func SpeechSynthesisUnregisterModuleURL(_ url: CFURL) -> OSErr
 OSErr SpeechSynthesisUnregisterModuleURL(CFURLRef url);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `SpeechSynthesisUnregisterModuleURL` function unregisters the speech synthesizer or voice specified by `url`. When a synthesizer is unregistered, all voices that require that synthesizer are automatically unregistered.
 

@@ -24,11 +24,11 @@ func DisposeMusicSequence(_ inSequence: MusicSequence) -> OSStatus
 extern OSStatus DisposeMusicSequence(MusicSequence inSequence);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 You cannot dispose of a music sequence while it is associated with a music player.
 

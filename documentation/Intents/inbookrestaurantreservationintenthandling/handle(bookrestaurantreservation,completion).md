@@ -27,7 +27,7 @@ func handle(bookRestaurantReservation intent: INBookRestaurantReservationIntent)
 - (void) handleBookRestaurantReservation:(INBookRestaurantReservationIntent *) intent completion:(void (^)(INBookRestaurantReservationIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must save the reservation details to your system and communicate the information to the selected restaurant. Your response object should contain a [`INRestaurantReservationUserBooking`](../inrestaurantreservationuserbooking.md) object that reflects the status of creating the reservation, including whether the restaurant has received and confirmed the reservation details. When done, execute the provided block with your response object.
 

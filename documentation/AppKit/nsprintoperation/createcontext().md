@@ -19,11 +19,11 @@ func createContext() -> NSGraphicsContext?
 - (NSGraphicsContext *) createContext;
 ```
 
-#### Return Value
+## Return Value
 
 The graphics context object used for drawing. This object is created using the settings from the receiver’s `NSPrintInfo` object.
 
-#### Discussion
+## Discussion
 
 Do not invoke this method directly—it is invoked before any output is generated.
 

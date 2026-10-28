@@ -15,11 +15,11 @@ Asynchronously compiles all shader and pipeline resources for the given configur
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) init(configuration: LowLevelRenderer.Configuration, renderContext: any LowLevelRenderContext) async throws
+nonisolated(nonsending)
+init(configuration: LowLevelRenderer.Configuration, renderContext: any LowLevelRenderContext) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if shader or pipeline compilation fails.
 

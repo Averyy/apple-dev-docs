@@ -16,11 +16,11 @@ virtual IOReturn newUserClient(
  IOUserClient **properties );
 ```
 
-#### Return Value
+## Return Value
 
 A return code to be passed back to the caller of `IOServiceOpen`.
 
-#### Overview
+## Overview
 
 A non kernel client may request a connection be opened via the [`IOServiceOpen`](../../iokit/api-1514515-ioserviceopen.md) library function, which will call this method in an IOService object. The rules and capabilities of user level clients are family dependent, and use the functions of the IOUserClient class for support. IOService's implementation returns `kIOReturnUnsupported`, so any family supporting user clients must implement this method.
 

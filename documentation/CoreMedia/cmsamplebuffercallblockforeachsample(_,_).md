@@ -25,7 +25,7 @@ func CMSampleBufferCallBlockForEachSample(_ sbuf: CMSampleBuffer, _ handler: (CM
 extern OSStatus CMSampleBufferCallBlockForEachSample(CMSampleBufferRef sbuf, int (^)(struct opaqueCMSampleBuffer *, long)handler);
 ```
 
-#### Discussion
+## Discussion
 
 Temporary sample buffers will be created for individual samples, referring to the sample data and containing its timing, size and attachments. The block may retain these sample buffers if desired. If the block returns an error, iteration will stop immediately and the error will be returned.
 

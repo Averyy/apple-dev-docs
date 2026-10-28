@@ -19,11 +19,11 @@ func instantiateController(withIdentifier identifier: NSStoryboard.SceneIdentifi
 - (id) instantiateControllerWithIdentifier:(NSStoryboardSceneIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The instantiated view controller or window controller identified by the `identifier` parameter, from the storyboard file. If the specified identifier does not exist (or is `nil`) in the storyboard file, this method raises an exception.
 
-#### Discussion
+## Discussion
 
 Use this method to create a view controller or window controller object that you want to manipulate and present programmatically. Your controller object must have an identifier string. In Xcode’s storyboard editor, select your controller, display the identity inspector, and place this string in the Storyboard ID field.
 

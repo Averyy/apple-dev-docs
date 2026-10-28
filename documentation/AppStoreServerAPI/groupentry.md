@@ -19,7 +19,7 @@ object GroupEntry
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 The [`Get Customer Groups`](./get-customer-groups.md) endpoint returns a `GroupEntry` for each group a customer belongs to.
 

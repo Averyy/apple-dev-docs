@@ -24,7 +24,7 @@ class WKHTTPCookieStore
 @interface WKHTTPCookieStore : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a [`WKHTTPCookieStore`](./wkhttpcookiestore.md) to specify the initial cookies for your webpages, and to manage cookies for your web content. For example, you might use this object to delete the cookie for the current session when the user logs out. To detect when the webpage changes a cookie, install a cookie observer using the [`add(_:)`](./wkhttpcookiestore/add%28_%29.md) method.
 

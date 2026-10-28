@@ -25,7 +25,7 @@ func CFRunLoopTimerGetNextFireDate(_ timer: CFRunLoopTimer!) -> CFAbsoluteTime
 extern CFAbsoluteTime CFRunLoopTimerGetNextFireDate(CFRunLoopTimerRef timer);
 ```
 
-#### Return Value
+## Return Value
 
 The next firing time for `timer`. This time could be a date in the past if a run loop has not been able to process the timer since the firing time arrived.
 

@@ -24,7 +24,7 @@ class GCMouseInput
 @interface GCMouseInput : GCPhysicalInputProfile
 ```
 
-#### Overview
+## Overview
 
 This profile supports a mouse with the following features:
 

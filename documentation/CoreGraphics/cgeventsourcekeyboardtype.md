@@ -20,7 +20,7 @@ typealias CGEventSourceKeyboardType = UInt32
 typedef uint32_t CGEventSourceKeyboardType;
 ```
 
-#### Discussion
+## Discussion
 
 This code is the same keyboard type identifier used with the [`UCKeyTranslate(_:_:_:_:_:_:_:_:_:_:)`](../coreservices/api-1390584-uckeytranslate.md) function to drive keyboard translation.
 

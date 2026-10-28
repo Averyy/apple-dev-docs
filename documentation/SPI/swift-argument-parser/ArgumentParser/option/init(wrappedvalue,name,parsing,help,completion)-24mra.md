@@ -17,7 +17,7 @@ Creates an optional property that reads its value from a labeled option, with an
 init<T>(wrappedValue: _OptionalNilComparisonType, name: NameSpecification = .long, parsing parsingStrategy: SingleValueParsingStrategy = .next, help: ArgumentHelp? = nil, completion: CompletionKind? = nil) where Value == T?, T : ExpressibleByArgument
 ```
 
-#### Discussion
+## Discussion
 
 This initializer allows a user to provide a `nil` default value for an optional `@Option`-marked property:
 

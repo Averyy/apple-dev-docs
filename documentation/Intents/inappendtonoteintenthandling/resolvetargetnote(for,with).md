@@ -29,7 +29,7 @@ optional func resolveTargetNote(for intent: INAppendToNoteIntent) async -> INNot
 - (void) resolveTargetNoteForAppendToNote:(INAppendToNoteIntent *) intent withCompletion:(void (^)(INNoteResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve which note receives new content. Use the intent object to identify which note the user wants to modify. If the intent doesn’t identify a specific note, you might want to prompt the user to specify a value or you might indicate success and select a default note.
 

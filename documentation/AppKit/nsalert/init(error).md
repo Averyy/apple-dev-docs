@@ -19,11 +19,11 @@ init(error: any Error)
 + (NSAlert *) alertWithError:(NSError *) error;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized alert.
 
-#### Discussion
+## Discussion
 
 The `NSAlert` class extracts the localized error description, recovery suggestion, and recovery options from the `error` parameter and uses them as the alert’s message text, informative text, and button titles, respectively.
 

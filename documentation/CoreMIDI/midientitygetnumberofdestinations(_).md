@@ -23,7 +23,7 @@ func MIDIEntityGetNumberOfDestinations(_ entity: MIDIEntityRef) -> Int
 extern ItemCount MIDIEntityGetNumberOfDestinations(MIDIEntityRef entity);
 ```
 
-#### Return Value
+## Return Value
 
 The number of destinations the entity contains, or 0 if an error occurred.
 

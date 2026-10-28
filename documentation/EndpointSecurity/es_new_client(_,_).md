@@ -19,11 +19,11 @@ func es_new_client(_ client: UnsafeMutablePointer<OpaquePointer?>, _ handler: @e
 extern es_new_client_result_t es_new_client(es_client_t **client, es_handler_block_t handler);
 ```
 
-#### Return Value
+## Return Value
 
 A result value indicating that indicates either success or the reason why client initialization failed.
 
-#### Discussion
+## Discussion
 
 The handler block receives messages serially, and in the order the system delivers them. Returning control from the handler causes Endpoint Security to dequeue the next available message.
 

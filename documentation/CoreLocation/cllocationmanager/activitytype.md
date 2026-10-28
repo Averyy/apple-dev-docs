@@ -28,7 +28,7 @@ var activityType: CLActivityType { get set }
 
 - [Getting the current location of a device](../getting-the-current-location-of-a-device.md)
 
-#### Discussion
+## Discussion
 
 An app should use `activityType` to communicate to Core Location algorithms the type of activity the app’s users typically perform while using the app. The location manager uses the information in this property as a cue to determine when the system may pause location updates. Pausing updates gives the system the opportunity to save power in situations where the user’s location isn’t likely to be changing. For example, if the activity type is [`CLActivityType.automotiveNavigation`](../clactivitytype/automotivenavigation.md) and no location changes have occurred recently, the system might power down radios until the system detects movement again.
 

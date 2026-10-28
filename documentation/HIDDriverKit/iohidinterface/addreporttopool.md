@@ -16,11 +16,11 @@ Adds a memory descriptor to the report pool.
 virtual kern_return_t AddReportToPool(IOBufferMemoryDescriptor *report);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 When implementing a custom driver or event service, call this method to add one or more memory descriptors to a shared resource pool. When an input report arrives from the device, the interface removes a memory descriptor from the pool, fills it with the report data, and calls the [`ReportAvailable`](./reportavailable.md) method of the session’s action object.
 

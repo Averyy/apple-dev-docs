@@ -25,11 +25,11 @@ class func localizedString(from date: Date, dateStyle dstyle: DateFormatter.Styl
 + (NSString *) localizedStringFromDate:(NSDate *) date dateStyle:(NSDateFormatterStyle) dstyle timeStyle:(NSDateFormatterStyle) tstyle;
 ```
 
-#### Return Value
+## Return Value
 
 A localized string representation of `date` using the specified date and time styles.
 
-#### Discussion
+## Discussion
 
 This method uses a date formatter configured with the current default settings. The returned string is the same as if you configured and used a date formatter as shown in the following example:
 

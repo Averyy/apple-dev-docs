@@ -24,11 +24,11 @@ init(mediaDestinationResolutionResult: INMediaDestinationResolutionResult)
 - (instancetype) initWithMediaDestinationResolutionResult:(INMediaDestinationResolutionResult *) mediaDestinationResolutionResult;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INAddMediaMediaDestinationResolutionResult`](../inaddmediamediadestinationresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to add a media item to a particular destination.
 

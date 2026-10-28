@@ -19,7 +19,7 @@ var controlsStyle: AVPlayerViewControlsStyle { get set }
 @property AVPlayerViewControlsStyle controlsStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The player view supports several different control styles that you can use to customize the player view’s appearance and behavior. See [`AVPlayerViewControlsStyle`](../avplayerviewcontrolsstyle.md) for the possible values.
 

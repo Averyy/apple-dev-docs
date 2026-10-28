@@ -24,7 +24,7 @@ case floatRGB9E5
 MTLVertexFormatFloatRGB9E5
 ```
 
-#### Discussion
+## Discussion
 
 The red, green, and blue components each have 9 bits, and the shared exponent has 5 bits.
 

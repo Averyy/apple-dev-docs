@@ -27,7 +27,7 @@ var commands: [MediaCommand] { get }
 
 - [Publishing media sessions](../publishing-media-sessions.md)
 
-#### Discussion
+## Discussion
 
 Compose commands using [`MediaCommand`](../mediacommand.md) static factory methods like [`play(_:)`](../mediacommand/play%28_%29.md), [`pause(_:)`](../mediacommand/pause%28_%29.md), [`next(_:)`](../mediacommand/next%28_%29.md), [`previous(_:)`](../mediacommand/previous%28_%29.md), [`seekToPosition(_:)`](../mediacommand/seektoposition%28_%29.md) and other playback and content commands.
 

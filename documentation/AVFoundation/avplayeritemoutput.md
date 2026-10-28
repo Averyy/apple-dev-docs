@@ -25,7 +25,7 @@ class AVPlayerItemOutput
 @interface AVPlayerItemOutput : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class provides basic methods for converting time values to the timebase of the item. It also provides an option to suppress rendering of the output associated with the specific instance of this class.
 

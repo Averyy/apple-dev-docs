@@ -23,7 +23,7 @@ optional func sessionReachabilityDidChange(_ session: WCSession)
 - (void) sessionReachabilityDidChange:(WCSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 A session is reachable when the iOS app or WatchKit extension to which it belongs is active and running. This method is called to let the current process know that its counterpart session’s reachability changed. Use that information to make decisions about how you want to send information to the counterpart. For example, when the counterpart is reachable, you might send messages immediately rather than post them as an update.
 

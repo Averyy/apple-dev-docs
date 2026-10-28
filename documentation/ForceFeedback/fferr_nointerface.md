@@ -18,7 +18,7 @@ var FFERR_NOINTERFACE: HRESULT { get }
 #define FFERR_NOINTERFACE
 ```
 
-#### Discussion
+## Discussion
 
 The specified interface is not supported by the object
 

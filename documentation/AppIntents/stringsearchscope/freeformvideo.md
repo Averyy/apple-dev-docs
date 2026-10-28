@@ -21,7 +21,7 @@ The app supports searching for free-form video content like videos people upload
 case freeformVideo
 ```
 
-#### Overview
+## Overview
 
 Don’t use `freeformVideo` for highly structured content like movies and episodes of TV shows. For structured video content, use [`StringSearchScope.movies`](./movies.md) or [`StringSearchScope.tv`](./tv.md) instead.
 

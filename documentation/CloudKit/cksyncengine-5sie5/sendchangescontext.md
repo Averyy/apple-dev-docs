@@ -21,7 +21,7 @@ The context of an attempt to send changes to the server.
 struct SendChangesContext
 ```
 
-#### Overview
+## Overview
 
 A sync engine has two ways to send changes to iCloud — periodically, in cooperation with the system scheduler, and manually, whenever your app invokes the [`sendChanges(_:)`](./sendchanges%28_%29.md) method. This type provides information about a single attempt to send changes that includes both the reason for the attempt and any additional options in use by the attempt.
 

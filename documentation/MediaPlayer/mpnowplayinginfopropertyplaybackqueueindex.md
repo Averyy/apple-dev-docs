@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyPlaybackQueueIndex: String
 extern NSString * const MPNowPlayingInfoPropertyPlaybackQueueIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSNumber`](../Foundation/nsnumber.md) object configured as an [`NSUInteger`](../ObjectiveC/nsuinteger.md). The playback queue uses zero-based indexing. For example, to display first item in the queue as “item 1 of 10,” set the item’s index to `0`.
 

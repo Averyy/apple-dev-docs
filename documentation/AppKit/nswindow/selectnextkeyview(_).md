@@ -19,7 +19,7 @@ func selectNextKeyView(_ sender: Any?)
 - (void) selectNextKeyView:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The candidate is one of the following (which this function searches for in this order):
 

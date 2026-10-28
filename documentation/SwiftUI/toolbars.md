@@ -5,7 +5,7 @@
 
 Provide immediate access to frequently used commands and controls.
 
-#### Overview
+## Overview
 
 The system might present toolbars above or below your app’s content, depending on the platform and the context.
 

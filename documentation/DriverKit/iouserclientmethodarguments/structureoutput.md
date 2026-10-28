@@ -18,7 +18,7 @@ A data object to return to the caller as structure output.
 OSData * structureOutput;
 ```
 
-#### Discussion
+## Discussion
 
 A reference will be consumed by the caller. It is an error to set this field if structureOutputDescriptor was passed in
 

@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, setStatusText text: String!)
 - (void) webView:(WebView *) sender setStatusText:(NSString *) text;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate receives this message when a JavaScript function in the web view explicitly sets the status text. No action is taken if you do not implement this method.
 

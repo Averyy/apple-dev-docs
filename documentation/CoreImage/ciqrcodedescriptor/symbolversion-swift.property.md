@@ -24,7 +24,7 @@ var symbolVersion: Int { get }
 @property (readonly) NSInteger symbolVersion;
 ```
 
-#### Discussion
+## Discussion
 
 ISO/IEC 18004 defines versions from 1 to 40, where a higher symbol version indicates a larger data-carrying capacity. This field is required in order to properly interpret the error corrected payload.
 

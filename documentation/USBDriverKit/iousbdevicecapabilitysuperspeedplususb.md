@@ -15,7 +15,7 @@ The structure for the super-speed plus USB device capability.
 struct IOUSBDeviceCapabilitySuperSpeedPlusUSB;
 ```
 
-#### Overview
+## Overview
 
 See USB 3.1 9.6.2.5: SuperSpeedPlus USB Device Capability.
 

@@ -21,11 +21,11 @@ Returns the double-precision element-wise subtraction of two vectors.
 static func subtract<T, U>(_ vectorA: U, _ vectorB: T) -> [Double] where T : AccelerateBuffer, U : AccelerateBuffer, T.Element == Double, U.Element == Double
 ```
 
-#### Return Value
+## Return Value
 
 The output vector, `C`.
 
-#### Discussion
+## Discussion
 
 This function calculates the differences of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`, as follows:
 

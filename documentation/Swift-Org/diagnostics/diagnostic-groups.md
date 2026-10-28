@@ -9,7 +9,7 @@ framework: "Swift-Org/diagnostics"
 
 Detailed explanations for various compiler diagnostics.
 
-#### Overview
+## Overview
 
 Diagnostic groups collect some number of diagnostics together under a common group name. This allows for extra documentation to help explain relevant language concepts, as well as the ability to control the behavior of warnings in a more precise manner (when that group contains warnings):
 
@@ -28,7 +28,7 @@ Or upgrade all warnings except deprecated declaration to errors:
 -warnings-as-errors -Wwarning DeprecatedDeclaration
 ```
 
-#### Groups with warnings
+## Groups with warnings
 
 - [Add @preconcurrency import (AddPreconcurrencyImport)](./add-preconcurrency-import.md)
 - [Always enabled availability domains (AlwaysAvailableDomain)](./always-available-domain.md)

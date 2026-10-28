@@ -21,7 +21,7 @@ Creates a camera in the context of the map that frames the given map item.
 func camera(framing item: MKMapItem, allowPitch: Bool = true) -> MapCamera
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`MapCamera`](../mapcamera.md) with the framing region and pitch you specified.
 

@@ -18,7 +18,7 @@ A Boolean value that indicates whether users of the app may manage HomeKit-compa
 - **Name**: `com.apple.developer.homekit` (HomeKit)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 This key Indicates whether the users of an app may manage HomeKit-compatible accessories, such as switches, lights, fans, locks, and thermostats.
 

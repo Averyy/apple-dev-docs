@@ -19,7 +19,7 @@ var allowsDefaultTighteningForTruncation: Bool { get }
 @property (readonly) BOOL allowsDefaultTighteningForTruncation;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../Swift/true.md), the system tries to reduce the space between characters before truncating characters. The system performs this tightening in cases where the text wouldn’t otherwise fit in the available space. The maximum amount of tightening performed by the system is dependent on the font, line width, and other factors.
 

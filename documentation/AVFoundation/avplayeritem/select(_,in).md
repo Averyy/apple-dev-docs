@@ -30,7 +30,7 @@ func select(_ mediaSelectionOption: AVMediaSelectionOption?, in mediaSelectionGr
 
 - [Selecting subtitles and alternative audio tracks](../selecting-subtitles-and-alternative-audio-tracks.md)
 
-#### Discussion
+## Discussion
 
 If `mediaSelectionOption` isn’t a member of the `mediaSelectionGroup`, no change in presentation state will result.
 

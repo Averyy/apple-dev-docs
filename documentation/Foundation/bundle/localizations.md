@@ -25,7 +25,7 @@ var localizations: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * localizations;
 ```
 
-#### Discussion
+## Discussion
 
 An array of [`NSString`](../nsstring.md) objects containing language IDs for all the localizations contained in the bundle.
 

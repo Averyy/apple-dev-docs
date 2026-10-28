@@ -25,7 +25,7 @@ func setVertexBufferOffset(_ offset: Int, index: Int)
 - (void) setVertexBufferOffset:(NSUInteger) offset atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 The command this method encodes changes the offset for a fragment buffer that already has a previous assignment from one of your earlier commands.
 

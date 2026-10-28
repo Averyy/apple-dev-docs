@@ -17,7 +17,7 @@ The calling process isn’t authorized to monitor device activity.
 case unauthorized
 ```
 
-#### Discussion
+## Discussion
 
 See the `FamilyControls` framework for more details about authorization to access the user’s device activity.
 

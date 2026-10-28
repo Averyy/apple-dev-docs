@@ -24,7 +24,7 @@ func openToPlay(_ queueDescriptor: MPMusicPlayerQueueDescriptor)
 - (void) openToPlayQueueDescriptor:(MPMusicPlayerQueueDescriptor *) queueDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 This method launches the user’s Music app, opens to the Now Playing screen, and begins playback of the video. If the Music app isn’t installed on the device, the system ignores this method and doesn’t play the videos.
 

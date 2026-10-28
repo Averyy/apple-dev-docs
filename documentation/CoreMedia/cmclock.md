@@ -25,7 +25,7 @@ class CMClock
 typedef struct OpaqueCMClock * CMClockRef;
 ```
 
-#### Overview
+## Overview
 
 A clock represents a source of time information: a piece of hardware that measures the passage of time. One example of a clock is the host time clock, accessible via [`CMClockGetHostTimeClock()`](./cmclockgethosttimeclock%28%29.md). It measures time using the CPU system clock, which in macOS is `mach_absolute_time()`. Every audio device is also a clock because the audio samples that it outputs or inputs each have a defined duration (for example, 1/48000 of a second for 48 kHz audio).
 

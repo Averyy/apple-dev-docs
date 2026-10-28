@@ -18,11 +18,11 @@ Track IOService::configureReport(), provide sizing info
 IOReturn configureReport(IOReportChannelList *channelList, IOReportConfigureAction action, uint32_t & elementCount);
 ```
 
-#### Return Value
+## Return Value
 
 Appropriate `IOReturn` code.
 
-#### Discussion
+## Discussion
 
 Any time a reporting driver’s ::configureReport method is invoked, this method should be invoked on each IOReporter that is being used by that driver to report channels in channelList.
 

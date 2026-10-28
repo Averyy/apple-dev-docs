@@ -30,7 +30,7 @@ func setPlayer(_ player: GKPlayer, muted isMuted: Bool)
 
 - [Adding voice chat to multiplayer games](../adding-voice-chat-to-multiplayer-games.md)
 
-#### Discussion
+## Discussion
 
 If you mute another player, the local player doesn’t hear voice data from that player.
 

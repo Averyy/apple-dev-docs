@@ -17,11 +17,11 @@ Computes the cosine similarity between the two inputs.
 func cosineSimilarityLoss(x1: MLXArray, x2: MLXArray, axis: Int = 1, eps: Float = 1e-8, reduction: LossReduction = .none) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Computed cosine similarity loss
 
-##### See Also
+### See Also
 
 - [Loss Functions](./losses.md)
 

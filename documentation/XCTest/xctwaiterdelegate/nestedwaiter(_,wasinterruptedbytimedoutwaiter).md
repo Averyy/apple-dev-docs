@@ -16,7 +16,7 @@ optional func nestedWaiter(_ waiter: XCTWaiter, wasInterruptedByTimedOutWaiter o
 - (void) nestedWaiter:(XCTWaiter *) waiter wasInterruptedByTimedOutWaiter:(XCTWaiter *) outerWaiter;
 ```
 
-#### Discussion
+## Discussion
 
 This occurs when an “outer” waiter times out, resulting in any waiters nested inside it being interrupted to allow the call stack to quickly unwind.
 

@@ -5,11 +5,11 @@
 
 Understand the basic composition for a Video on Demand playlist.
 
-#### Overview
+## Overview
 
 For Video on Demand (VOD) sessions, media files are available representing the entire duration of the presentation. The index file is static and contains a complete list of URLs to all media files created since the beginning of the presentation. This kind of session allows the client full access to the entire program.
 
-##### Example
+### Example
 
 This code is an example of a Video on Demand playlist:
 

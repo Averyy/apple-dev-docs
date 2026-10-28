@@ -19,11 +19,11 @@
 static bool SPAffineTransform3DFloatAlmostEqualToTransform(SPAffineTransform3DFloat t1, SPAffineTransform3DFloat t2, float tolerance);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the two transform’s matrices are equal within the specified absolute tolerance.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the two transform’s matrices are equal within the specified absolute tolerance.
 

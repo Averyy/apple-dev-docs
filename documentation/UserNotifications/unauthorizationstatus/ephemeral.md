@@ -22,7 +22,7 @@ case ephemeral
 UNAuthorizationStatusEphemeral
 ```
 
-#### Discussion
+## Discussion
 
 An App Clip may have the ability to schedule or receive notifications for a limited amount of time. For more information, see [Enabling notifications in App Clips](../../AppClip/enabling-notifications-in-app-clips.md).
 

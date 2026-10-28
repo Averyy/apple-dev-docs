@@ -16,11 +16,11 @@ Returns a Boolean value that indicates whether supplementary interface objects e
 final func hasSupplementaryInterface(at point: CGPoint) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if supplementary interface objects exist at `point`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Supplementary interface objects include the Live Text button and Quick Actions, depending on the item type.
 

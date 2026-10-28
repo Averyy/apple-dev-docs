@@ -24,7 +24,7 @@ static let playback: AVAudioSession.Category
 extern AVAudioSessionCategory const AVAudioSessionCategoryPlayback;
 ```
 
-#### Discussion
+## Discussion
 
 When using this category, your app audio continues with the Silent switch set to silent or when the screen locks. (The switch is called the *Ring/Silent switch* on iPhone.) To continue playing audio when your app transitions to the background (for example, when the screen locks), add the `audio` value to the [UIBackgroundModes](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/plist/info/UIBackgroundModes) key in your information property list file.
 

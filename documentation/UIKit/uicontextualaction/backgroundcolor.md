@@ -23,7 +23,7 @@ var backgroundColor: UIColor! { get set }
 @property (nonatomic, copy, null_resettable) UIColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is determined by the value of the [`style`](./style-swift.property.md) property, which determines the default appearance of the button. Assigning a new color to this property changes the background to the color that you specify.
 

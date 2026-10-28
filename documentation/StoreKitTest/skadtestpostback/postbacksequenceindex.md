@@ -21,7 +21,7 @@ var postbackSequenceIndex: Int { get }
 @property (nonatomic, assign, readonly) NSInteger postbackSequenceIndex;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about receiving time-delayed postbacks for an ad impression, see [Receiving postbacks in multiple conversion windows](../../StoreKit/receiving-postbacks-in-multiple-conversion-windows.md).
 

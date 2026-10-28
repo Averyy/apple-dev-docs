@@ -24,7 +24,7 @@ var allowsPrinting: Bool { get }
 @property (nonatomic, readonly) BOOL allowsPrinting;
 ```
 
-#### Discussion
+## Discussion
 
 The ability to print a PDF document is an attribute unrelated to whether the document is locked or unlocked. It depends on the PDF permissions set by the document’s author.
 

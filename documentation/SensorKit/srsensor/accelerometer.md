@@ -25,7 +25,7 @@ extern SRSensor const SRSensorAccelerometer;
 
 - [Configuring your project for sensor reading](../configuring-your-project-for-sensor-reading.md)
 
-#### Discussion
+## Discussion
 
 The [`sample`](../srfetchresult/sample.md) type for this sensor is [[`CMRecordedAccelerometerData`](../../CoreMotion/cmrecordedaccelerometerdata.md)].
 

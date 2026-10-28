@@ -21,7 +21,7 @@ A Boolean value that determines whether CloudKit modifies records atomically by 
 var atomicByZone: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When [`true`](../../../Swift/true.md), CloudKit processes record changes atomically by record zone, and if any individual change fails, all other changes in that record’s record zone fail and return an error of type [`CKError.Code.batchRequestFailed`](../../ckerror/code/batchrequestfailed.md).
 

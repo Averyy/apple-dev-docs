@@ -5,11 +5,11 @@
 
 Get metrics on a new rule set with real match requests before releasing it.
 
-#### Overview
+## Overview
 
 Before you update the rule set of a queue that actively processes player match requests, make sure that the new rule set doesn’t introduce any performance regressions. Game Center provides APIs to evaluate the performance of a prerelease rule set with production match requests that the queue actively processes, without impacting the player experience.
 
-##### Add an experimental rule set to a queue
+### Add an experimental rule set to a queue
 
 You can add an optional experimental rule set to a queue, in addition to the required rule set that Game Center uses in production. When you add an experimental rule set, Game Center processes the match requests in the queue using both the existing rule set and the experimental rule set, except that it doesn’t return the results of the experimental rule set to clients. So you can apply the same metrics APIs on the experimental rule set to analyze performance issues before you release it.
 
@@ -34,7 +34,7 @@ Game Center uses the experimental rule set for next three days. If you want to u
 
 To create a new rule set and get its identifier, see [Finding players using matchmaking rules](./finding-players-using-matchmaking-rules.md).
 
-##### View the results of an experimental rule set
+### View the results of an experimental rule set
 
 To get the results of processing match requests using the experimental rule set, pass `experimentalRuleSet` in the query parameter to the [`List All Queues`](../AppStoreConnectAPI/get-v1-gamecentermatchmakingqueues.md) or [`Read Queue Information`](../AppStoreConnectAPI/get-v1-gamecentermatchmakingqueues-_id_.md) endpoints. Then compare the results of the experimental rule set with the production rule set.
 
@@ -44,7 +44,7 @@ GET /v1/gameCenterMatchmakingQueues/532ad9c0-1a28-4536-ad57-33213bcc0a29/experim
 
 If it takes Game Center longer to find players or Game Center finds fewer players with the experimental rule set, check whether errors occur applying the rules and consider relaxing the rule conditions. For more information, see [Troubleshooting matchmaking rules using metrics](./troubleshooting-matchmaking-rules-using-metrics.md).
 
-##### Check the size of the queue
+### Check the size of the queue
 
 Also, check the queue size over time using the [`Get Experimental Queue Size`](../AppStoreConnectAPI/get-v1-gamecentermatchmakingqueues-_id_-metrics-experimentmatchmakingqueuesizes.md) endpoint. If the queue size for the experimental rule set is larger than the queue size for the existing rule set, investigate whether the new rule set causes this before releasing it.
 
@@ -52,7 +52,7 @@ Also, check the queue size over time using the [`Get Experimental Queue Size`](.
 GET /v1/gameCenterMatchmakingQueues/532ad9c0-1a28-4536-ad57-33213bcc0a29/metrics/experimentMatchmakingQueueSizes?granularity=PT15M
 ```
 
-##### Release the new rule set
+### Release the new rule set
 
 After you finish testing the new rule set, release it by replacing the queue’s rule set with the new one.
 

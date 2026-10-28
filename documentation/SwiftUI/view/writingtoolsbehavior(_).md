@@ -20,11 +20,11 @@ nonisolated
 func writingToolsBehavior(_ behavior: WritingToolsBehavior) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view preferring the specified Writing Tools behavior.
 
-#### Discussion
+## Discussion
 
 Use this view modifier to customize or disable the Writing Tools editing experience for [`Text`](../text.md) (when selectable), [`TextField`](../textfield.md), and [`TextEditor`](../texteditor.md) views.
 

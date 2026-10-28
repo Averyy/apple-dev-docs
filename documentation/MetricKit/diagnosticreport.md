@@ -24,7 +24,7 @@ struct DiagnosticReport
 - [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 - [Monitoring app performance with MetricKit](./monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 Each iteration of [`diagnosticReports`](./metricmanager/diagnosticreports.md) yields one report. Access the diagnostic event through [`result`](./diagnosticreport/result.md), which is a [`DiagnosticResult`](./diagnosticresult.md) enum. Switch over the result to handle each diagnostic type:
 

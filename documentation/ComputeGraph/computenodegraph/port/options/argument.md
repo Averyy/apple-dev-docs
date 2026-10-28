@@ -21,7 +21,7 @@ Port is an argument to a runtime function.
 static let argument: ComputeNodeGraph.Port.Options
 ```
 
-#### Discussion
+## Discussion
 
 These correspond to a function parameter.
 

@@ -19,7 +19,7 @@ var canBecomeKey: Bool { get }
 @property (readonly) BOOL canBecomeKeyWindow;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the window can become the key window, otherwise, [`false`](../../Swift/false.md).
 

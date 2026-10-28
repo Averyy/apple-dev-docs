@@ -33,7 +33,7 @@ class func find(for request: GKMatchRequest) async throws -> GKTurnBasedMatch
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 When you provide a custom interface for managing matches, use this method to programmatically create or find a turn-based match on behalf of the local player. The local player is always the current participant in the match object GameKit passes to the completion handler. Therefore, implement the completion handler to show the gameplay interface and let the local player take their turn.
 

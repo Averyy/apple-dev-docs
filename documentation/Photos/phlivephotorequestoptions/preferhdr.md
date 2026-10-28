@@ -24,7 +24,7 @@ var preferHDR: Bool { get set }
 @property (nonatomic) BOOL preferHDR;
 ```
 
-#### Discussion
+## Discussion
 
 Off by default. For best results, only enable this when you intend to display an HDR experience in `PHLivePhotoView` — for example, when the view’s `preferredImageDynamicRange` is greater than standard (SDR). Defaults to `NO`.
 

@@ -25,7 +25,7 @@ case `public`
 CKDatabaseScopePublic
 ```
 
-#### Discussion
+## Discussion
 
 Records in a public database:
 

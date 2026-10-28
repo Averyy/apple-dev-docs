@@ -25,11 +25,11 @@ func sampleFields(at position: vector_float3) -> vector_float3
 - (vector_float3) sampleFieldsAt:(vector_float3) position;
 ```
 
-#### Return Value
+## Return Value
 
 The summation of forces exerted on that point.
 
-#### Discussion
+## Discussion
 
 The sample is calculated as if a physics body is placed at that position in the scene. The body is assumed to have a mass of `1.0`, with no charge or velocity. The body is affected by all field nodes.
 

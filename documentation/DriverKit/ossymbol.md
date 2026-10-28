@@ -18,7 +18,7 @@ A container for managing an array of characters.
 typedef OSString OSSymbol;
 ```
 
-#### Discussion
+## Discussion
 
 OSString is a container class for managing arrays of characters.
 

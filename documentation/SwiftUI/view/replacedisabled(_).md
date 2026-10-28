@@ -20,11 +20,11 @@ nonisolated
 func replaceDisabled(_ isDisabled: Bool = true) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that disables the replace feature of a find and replace interface.
 
-#### Discussion
+## Discussion
 
 Add this modifier to ensure that people can’t activate the replace feature of a find and replace interface for a [`TextEditor`](../texteditor.md):
 

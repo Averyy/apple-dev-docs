@@ -19,11 +19,11 @@ func frame(forAlignmentRect alignmentRect: NSRect) -> NSRect
 - (NSRect) frameForAlignmentRect:(NSRect) alignmentRect;
 ```
 
-#### Return Value
+## Return Value
 
 The frame for the specified alignment rectangle
 
-#### Discussion
+## Discussion
 
 The constraint-based layout system uses alignment rectangles to align views, rather than their frame. This allows custom views to be aligned based on the location of their content while still having a frame that encompasses any ornamentation they need to draw around their content, such as shadows or reflections.
 

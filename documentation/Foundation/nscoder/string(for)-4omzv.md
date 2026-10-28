@@ -20,7 +20,7 @@ Returns a string formatted to contain the data from a vector data structure.
 class func string(for vector: CGVector) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string that corresponds to `vector`. See [`cgVector(for:)`](./cgvector%28for%29.md) for a discussion of the string format.
 

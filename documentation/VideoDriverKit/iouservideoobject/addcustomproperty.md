@@ -15,7 +15,7 @@ Adds an custom property object to this object.
 virtual kern_return_t AddCustomProperty(IOUserVideoCustomProperty *in_custom_property);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success
 

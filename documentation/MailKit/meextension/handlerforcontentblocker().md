@@ -19,7 +19,7 @@ optional func handlerForContentBlocker() -> any MEContentBlocker
 - (id<MEContentBlocker>) handlerForContentBlocker;
 ```
 
-#### Return Value
+## Return Value
 
 An object that provides rules for blocking content.
 

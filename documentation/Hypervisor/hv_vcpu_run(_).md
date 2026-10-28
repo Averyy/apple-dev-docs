@@ -19,11 +19,11 @@ func hv_vcpu_run(_ vcpu: hv_vcpu_t) -> hv_return_t
 extern hv_return_t hv_vcpu_run(hv_vcpu_t vcpu);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 Call blocks until the next exit of the vCPU. The owning thread must call this function.
 

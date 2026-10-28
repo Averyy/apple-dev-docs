@@ -21,7 +21,7 @@ Generates a double-precision vector by interpolating values from a lookup table.
 extern void vDSP_vtabiD(const double *__A, vDSP_Stride __IA, const double *__S1, const double *__S2, const double *__C, vDSP_Length __M, double *__D, vDSP_Stride __ID, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The following code shows the result of linearly interpolating a lookup table that contains the values `[-10, 0, 100]` using the offsets `[0, 0.5, 1, 1.5, 2]`.  The integer offsets, `0`, `1`, and `2`, return the corresponding values in the lookup table, `-10`, `0`, and `2`. The noninteger offsets, `0.5` and `1.5`, return the linearly interpolated values between the lookup table values, `-5` and `50`:
 

@@ -21,7 +21,7 @@ var junctionImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * junctionImage;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a junction image to show more visual details about the maneuver, such as the lane a driver should be in when making a turn.
 

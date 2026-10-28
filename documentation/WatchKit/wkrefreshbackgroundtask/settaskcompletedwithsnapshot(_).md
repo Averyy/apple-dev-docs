@@ -24,7 +24,7 @@ func setTaskCompletedWithSnapshot(_ refreshSnapshot: Bool)
 - [Using background tasks](../using-background-tasks.md)
 - [Preparing to take your watchOS app’s snapshot](../preparing-to-take-your-watchos-app-s-snapshot.md)
 
-#### Discussion
+## Discussion
 
 Call this method as soon as a nonsnapshot background task (any [`WKRefreshBackgroundTask`](../wkrefreshbackgroundtask.md) subclass except the [`WKSnapshotRefreshBackgroundTask`](../wksnapshotrefreshbackgroundtask.md) class) is complete.
 

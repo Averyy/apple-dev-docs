@@ -25,7 +25,7 @@ class AVAudioConnectionPoint
 @interface AVAudioConnectionPoint : NSObject
 ```
 
-#### Overview
+## Overview
 
 Instances of this class are immutable.
 

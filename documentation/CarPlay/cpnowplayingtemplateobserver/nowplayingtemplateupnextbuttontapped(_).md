@@ -21,7 +21,7 @@ optional func nowPlayingTemplateUpNextButtonTapped(_ nowPlayingTemplate: CPNowPl
 - (void) nowPlayingTemplateUpNextButtonTapped:(CPNowPlayingTemplate *) nowPlayingTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 When CarPlay calls this method on your observer, you should push an instance of [`CPListTemplate`](../cplisttemplate.md)—other template types are not supported when Now Playing is the visible template—on to your navigation stack that displays a list of upcoming or queued content.
 

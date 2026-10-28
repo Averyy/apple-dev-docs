@@ -24,11 +24,11 @@ optional func textView(_ textView: UITextView, shouldInteractWith URL: URL, in c
 - (BOOL) textView:(UITextView *) textView shouldInteractWithURL:(NSURL *) URL inRange:(NSRange) characterRange;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if interaction with the URL should be allowed; [`false`](../../Swift/false.md) if interaction should not be allowed.
 
-#### Discussion
+## Discussion
 
 The text view calls this method if the user taps or long-presses the URL link. Implementation of this method is optional. By default, the text view opens the application responsible for handling the URL type and passes it the URL. You can use this method to trigger an alternative action, such as displaying the web content at the URL in a web view within the current application.
 

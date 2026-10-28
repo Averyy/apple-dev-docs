@@ -16,11 +16,11 @@
 virtual IOReturn copyElementValues(int element_index, IOReportElementValues *elementValues);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the content of an element
 
-#### Discussion
+## Discussion
 
 Copies the values of an internal element to *elementValues
 

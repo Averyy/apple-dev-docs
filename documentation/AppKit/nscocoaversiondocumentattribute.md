@@ -15,7 +15,7 @@ The version of Cocoa that created the file.
 extern NSAttributedStringDocumentAttributeKey NSCocoaVersionDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../Foundation/nsnumber.md) object containing a float. For RTF files only, stores the version of Cocoa with which the file was created. Absence of this value indicates RTF file not created by Cocoa or its predecessors.
 

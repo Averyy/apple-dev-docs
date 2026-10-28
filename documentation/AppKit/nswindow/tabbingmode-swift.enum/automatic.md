@@ -19,7 +19,7 @@ case automatic
 NSWindowTabbingModeAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 A window with the [`NSWindow.TabbingMode.automatic`](./automatic.md) tabbing mode consults the value of [`userTabbingPreference`](../usertabbingpreference-swift.type.property.md) to decide if it should join a tab group with other windows.
 

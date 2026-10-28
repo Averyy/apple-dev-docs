@@ -16,7 +16,7 @@ A test-only type your app uses to test app migration extensions.
 actor AppMigrationTester
 ```
 
-#### Overview
+## Overview
 
 Use this type in unit tests that your containing app hosts. Calling the tester from your unit tests allows you to communicate with your app migration extension to valdiate your migration code.
 

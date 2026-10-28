@@ -23,7 +23,7 @@ static var url: URL.ParseStrategy { get }
 
 Available when `Self` is `URL.ParseStrategy`.
 
-#### Discussion
+## Discussion
 
 Use the dot-notation form of this type property when the call point allows the use of [`URL.ParseStrategy`](../url/parsestrategy.md). Typically, you use this with the URL initializer [`init(_:strategy:)`](../url/init%28_,strategy%29.md).
 

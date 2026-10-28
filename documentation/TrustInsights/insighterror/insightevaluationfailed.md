@@ -16,7 +16,7 @@ An error that indicates that there was a failure in generating the insight.
 case insightEvaluationFailed
 ```
 
-#### Discussion
+## Discussion
 
 A retry may succeed.
 

@@ -19,7 +19,7 @@ class var current: NSRunningApplication { get }
 @property (class, strong, readonly) NSRunningApplication * currentApplication;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSRunningApplication` instance for the current application.
 

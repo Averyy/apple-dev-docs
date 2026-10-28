@@ -19,7 +19,7 @@ var CPU_BASED2_APIC_REG_VIRT: UInt32 { get }
 CPU_BASED2_APIC_REG_VIRT
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

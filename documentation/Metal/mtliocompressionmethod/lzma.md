@@ -24,7 +24,7 @@ case lzma
 MTLIOCompressionMethodLZMA
 ```
 
-#### Discussion
+## Discussion
 
 For more information on the LZMA codec, see:
 

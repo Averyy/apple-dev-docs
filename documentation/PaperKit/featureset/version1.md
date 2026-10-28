@@ -19,7 +19,7 @@ A new feature set supporting all features in version 1.
 static var version1: FeatureSet { get }
 ```
 
-#### Discussion
+## Discussion
 
 To automatically get the latest features that PaperKit adds in new releases use `.latest`, to avoid new releases adding unexpected functionality to your app use a specific version like `.version1`.
 

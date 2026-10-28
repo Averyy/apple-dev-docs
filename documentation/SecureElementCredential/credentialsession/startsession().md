@@ -20,7 +20,7 @@ static func startSession() async throws -> CredentialSession
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Discussion
+## Discussion
 
 To start a session from an app, the app needs to be in the foreground.
 

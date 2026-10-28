@@ -24,9 +24,9 @@ object StatusMDMApp
 
 - [Transferring management of apps to declarative management](./transferring-management-of-apps-to-declarative-management.md)
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +37,7 @@ object StatusMDMApp
 | Allowed in system scope | iOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | Shared iPad |
 
-##### Status item example
+### Status item example
 
 **New or updated app**:
 

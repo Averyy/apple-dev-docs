@@ -16,7 +16,7 @@ Applies a noise force to the current element
 void force::noise(NoiseParams params)
 ```
 
-#### Discussion
+## Discussion
 
 > **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/force__noise.svg)
 

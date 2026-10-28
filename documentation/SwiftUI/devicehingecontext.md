@@ -21,7 +21,7 @@ A type describing the context of hinges on the device.
 struct DeviceHingeContext
 ```
 
-#### Overview
+## Overview
 
 You use this type with the `View/onHingeChange(_:)` view modifier.
 

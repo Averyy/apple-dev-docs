@@ -21,11 +21,11 @@ Returns day weather summaries for the requested location, for the past 30 days, 
 final func dailySummary<each T>(for location: CLLocation, including dataSets: repeat DailyWeatherSummaryQuery<each T>) async throws -> (repeat DailyWeatherSummary<each T>) where repeat each T : Decodable, repeat each T : Encodable, repeat each T : Equatable, repeat each T : Sendable
 ```
 
-#### Return Value
+## Return Value
 
 The requested day weather summaries.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Weather data error `WeatherError`
 

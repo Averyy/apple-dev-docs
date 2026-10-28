@@ -17,7 +17,7 @@ Informs the `NSWorkspace` object that the file system has changed.
 - (void) noteFileSystemChanged;
 ```
 
-#### Discussion
+## Discussion
 
 The `NSWorkspace` object then gets the status of all the files and directories it is interested in and updates itself appropriately. This method is used by many objects that write or delete files.
 

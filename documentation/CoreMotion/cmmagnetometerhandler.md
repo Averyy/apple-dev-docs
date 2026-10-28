@@ -23,7 +23,7 @@ typealias CMMagnetometerHandler = (CMMagnetometerData?, (any Error)?) -> Void
 typedef void (^)(CMMagnetometerData *, NSError *) CMMagnetometerHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Blocks of type `CMMagnetometerHandler` are called when there is magnetometer data to process. You pass the block into the [`startMagnetometerUpdates(to:withHandler:)`](./cmmotionmanager/startmagnetometerupdates%28to,withhandler%29.md) method as the second argument. Blocks of this type return no value but take two arguments:
 

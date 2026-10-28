@@ -21,7 +21,7 @@ A type that defines how the toolbar behaves when presenting search.
 struct SearchPresentationToolbarBehavior
 ```
 
-#### Overview
+## Overview
 
 Use this type in combination with the [`searchPresentationToolbarBehavior(_:)`](./view/searchpresentationtoolbarbehavior%28_%29.md)
 

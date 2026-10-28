@@ -24,7 +24,7 @@ func captionsNotPresentInPreviousGroups(in captionGroup: AVCaptionGroup) -> [AVC
 - (NSArray<AVCaption *> *) captionsNotPresentInPreviousGroupsInCaptionGroup:(AVCaptionGroup *) captionGroup;
 ```
 
-#### Return Value
+## Return Value
 
 An array of captions not previously vended by the adaptor, or an empty array if there are none.
 

@@ -17,7 +17,7 @@ Types of storage area that the framework identifies in a captured room.
 enum StorageType
 ```
 
-#### Overview
+## Overview
 
 When the framework observes a storage area in the physical environment, it chooses a type among these options that best matches the type of storage. The framework adds that instance of this enum to the [`attributes`](./capturedroom/object/attributes.md) array for the object (see [`objects`](./capturedroom/objects.md)) in the captured room that represents the storage in the captured room.
 

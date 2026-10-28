@@ -26,11 +26,11 @@ var responseHeaderFields: [String : String]? { get }
 
 - [Uploading asset resources in the background](../../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Return Value
+## Return Value
 
 A dictionary of response header fields, or `nil` if the job has not completed or no HTTP response was received.
 
-#### Discussion
+## Discussion
 
 This property is populated when the job reaches a terminal state (`PHAssetResourceUploadJobStateSucceeded` or `PHAssetResourceUploadJobStateFailed`). It contains the HTTP response headers returned by the destination server.
 

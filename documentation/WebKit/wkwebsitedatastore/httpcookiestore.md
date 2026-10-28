@@ -23,7 +23,7 @@ var httpCookieStore: WKHTTPCookieStore { get }
 @property (nonatomic, readonly) WKHTTPCookieStore * httpCookieStore;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`WKHTTPCookieStore`](../wkhttpcookiestore.md) object in this property to manage your website’s cookies. A cookie store object contains methods to add new cookies, and to remove cookies that don’t apply to your content. For example, you might initially use this object to add a cookie for the user’s login credentials and then delete that cookie when the user logs out.
 

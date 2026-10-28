@@ -19,7 +19,7 @@ var echosBullets: Bool { get set }
 @property BOOL echosBullets;
 ```
 
-#### Discussion
+## Discussion
 
 Default is [`true`](../../Swift/true.md).
 

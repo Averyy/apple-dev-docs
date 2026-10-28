@@ -24,7 +24,7 @@ typealias VTDecompressionOutputHandler = @Sendable (OSStatus, VTDecodeInfoFlags,
 typedef void (^)(int, enum VTDecodeInfoFlags, struct __CVBuffer *, CMTime, CMTime) VTDecompressionOutputHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When you decode a frame, you pass in a callback block to be called for that decompressed frame.  This block is not necessarily called in display order.
 

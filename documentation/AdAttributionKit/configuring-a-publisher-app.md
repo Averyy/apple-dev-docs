@@ -5,7 +5,7 @@
 
 Set up a publisher app to participate in ad campaigns.
 
-#### Overview
+## Overview
 
 A *publisher app* is an app that participates in ad campaigns by displaying ads that an ad network signs. To participate in install validation, the publisher app needs to include ad network IDs in its Xcode project’s Information Property List. Ad networks are responsible for publishing or providing their ad network IDs to developers.
 

@@ -14,7 +14,7 @@ struct kern_ctl_reg {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure defines the properties of a kernel control being registered.
 

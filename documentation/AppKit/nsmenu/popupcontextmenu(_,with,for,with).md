@@ -19,7 +19,7 @@ class func popUpContextMenu(_ menu: NSMenu, with event: NSEvent, for view: NSVie
 + (void) popUpContextMenu:(NSMenu *) menu withEvent:(NSEvent *) event forView:(NSView *) view withFont:(NSFont *) font;
 ```
 
-#### Discussion
+## Discussion
 
 Specifying a font using the font parameter is discouraged. Instead, set the menu’s font using the [`font`](./font.md) property, then pass `nil` for the `font` parameter.
 

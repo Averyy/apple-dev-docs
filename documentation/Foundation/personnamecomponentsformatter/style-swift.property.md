@@ -25,7 +25,7 @@ var style: PersonNameComponentsFormatter.Style { get set }
 @property NSPersonNameComponentsFormatterStyle style;
 ```
 
-#### Discussion
+## Discussion
 
 Styles specify which name components are used to create a string representation, and how. Examples of name components formatter styles include `long` and `abbreviated`.
 

@@ -20,7 +20,7 @@ enum Priority
 enum ARCollaborationDataPriority : NSInteger;
 ```
 
-#### Discussion
+## Discussion
 
 When you send [`ARSession.CollaborationData`](../collaborationdata.md) over the network by using a protocol that allows you to specify varying reliability, this property provides you with a hint about which reliability setting to use for a given collaboration data instance. Depending on its priority, you may also choose to send a given collaboration data instance using different protocols.
 

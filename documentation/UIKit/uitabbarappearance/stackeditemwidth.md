@@ -23,7 +23,7 @@ var stackedItemWidth: CGFloat { get set }
 @property (nonatomic, assign, readwrite) CGFloat stackedItemWidth;
 ```
 
-#### Discussion
+## Discussion
 
 When the [`stackedItemPositioning`](./stackeditempositioning.md) property is set to [`UITabBar.ItemPositioning.centered`](../uitabbar/itempositioning-swift.enum/centered.md), UIKit uses this property to set the width of each item. The default value of this property is `0`, which causes UIKit to use a system-defined width for items. For any values above `0`, UIKit uses the specified width, which is measured in points. If you try to assign a negative number to this property, UIKit sets the value to `0` instead.
 

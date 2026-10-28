@@ -21,7 +21,7 @@ A section you can use to request items from the library grouped by title.
 struct TitledSection
 ```
 
-#### Overview
+## Overview
 
 For example, when you perform a library sectioned request of albums, the library sectioned response will contain albums grouped by the first letter of their title, and the [`title`](./titledsection/title.md) property of this section will be equal to that first letter.
 

@@ -24,7 +24,7 @@ var secureElementPass: PKSecureElementPass? { get }
 @property (nonatomic, readonly, nullable) PKSecureElementPass * secureElementPass;
 ```
 
-#### Discussion
+## Discussion
 
 Passes that contain sensitive information — for example, payment cards or digital car keys — store that information in the device’s Secure Element as an instance of [`PKSecureElementPass`](../pksecureelementpass.md). Use this property to access the accompanying pass, which you can then use for other operations, such as signing data using a cryptographic signature.
 

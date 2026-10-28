@@ -17,7 +17,7 @@ Fixed-size state-space / Mamba / GDN recurrent state ([`MambaCache`](../mambacac
 case stateSpace
 ```
 
-#### Discussion
+## Discussion
 
 These caches are not token-windowed; a [`maxKVSize`](../generateparameters/maxkvsize.md) policy does not apply to them.
 

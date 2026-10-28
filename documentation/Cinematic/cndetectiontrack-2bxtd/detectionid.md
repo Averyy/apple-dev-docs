@@ -19,7 +19,7 @@ The unique ID of the subject detected during this track.
 var detectionID: CNDetectionID { get }
 ```
 
-#### Discussion
+## Discussion
 
 This ID is unique within a cinematic script.
 

@@ -22,7 +22,7 @@ optional func collectionViewDidEndMultipleSelectionInteraction(_ collectionView:
 - (void) collectionViewDidEndMultipleSelectionInteraction:(UICollectionView *) collectionView;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method after the user lifts their finger from the device.
 

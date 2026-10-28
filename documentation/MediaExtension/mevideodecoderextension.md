@@ -19,7 +19,7 @@ protocol MEVideoDecoderExtension : NSObjectProtocol
 @protocol MEVideoDecoderExtension <NSObject>
 ```
 
-#### Discussion
+## Discussion
 
 This protocol provides a factory method to create a new [`MEVideoDecoder`](./mevideodecoder.md) instance for a codecType implemented by the extension. A single [`MEVideoDecoderExtension`](./mevideodecoderextension.md) is instantiated by the `VideoToolbox`, and will be called to create individual [`MEVideoDecoder`](./mevideodecoder.md) instances as needed. If the codecType or `FormatDescription` passed to [`makeVideoDecoder(codecType:videoFormatDescription:videoDecoderSpecifications:pixelBufferManager:)`](./mevideodecoderextension/makevideodecoder%28codectype,videoformatdescription,videodecoderspecifications,pixelbuffermanager%29.md) is not compatible with the [`MEVideoDecoder`](./mevideodecoder.md) implementation, the factory call should fail and return [`MEError.Code.unsupportedFeature`](./meerror-swift.struct/code/unsupportedfeature.md).
 

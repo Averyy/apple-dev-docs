@@ -22,7 +22,7 @@ Properties of a layout container.
 static var layoutProperties: LayoutProperties { get }
 ```
 
-#### Discussion
+## Discussion
 
 Implement this property in a type that conforms to the [`Layout`](../layout.md) protocol to characterize your custom layout container. For example, you can indicate that your layout has a vertical [`stackOrientation`](../layoutproperties/stackorientation.md):
 

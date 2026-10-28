@@ -19,7 +19,7 @@ var isPreview: Bool { get }
 @property (atomic, readonly, getter=isPreview) BOOL preview;
 ```
 
-#### Discussion
+## Discussion
 
 The system sets the value of this property to [`true`](../../Swift/true.md) when it creates a smaller preview of your screen saver. When the value is [`false`](../../Swift/false.md), your view matches the size of the screen. Use this property to adjust the content you present. For example, you might change the drawing parameters or data you display in your view.
 

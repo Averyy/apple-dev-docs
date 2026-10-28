@@ -21,7 +21,7 @@ A type that replaces the opacity of variable layers in a symbol-based image in a
 struct VariableColorSymbolEffect
 ```
 
-#### Overview
+## Overview
 
 A variable color animation draws attention to a symbol by changing the opacity of the symbol’s layers. You can choose to apply the effect to layers either cumulatively or iteratively. For cumulative animations, each layer’s opacity remains changed until the end of the animation cycle. For iterative animations, each layer’s opacity changes briefly before returning to its original state.
 

@@ -19,7 +19,7 @@ var selectionAffinity: NSSelectionAffinity { get }
 @property (readonly) NSSelectionAffinity selectionAffinity;
 ```
 
-#### Discussion
+## Discussion
 
 Selection affinity determines whether, for example, the insertion point appears after the last character on a line or before the first character on the following line in cases where text wraps across line boundaries.
 

@@ -23,7 +23,7 @@ var trailingAnchor: NSLayoutXAxisAnchor { get }
 @property (nonatomic, strong, readonly) NSLayoutXAxisAnchor * trailingAnchor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this anchor to create constraints with the layout guide’s trailing edge. You can only combine this anchor with a subset of the [`NSLayoutXAxisAnchor`](../nslayoutxaxisanchor.md) anchors. You can combine a [`trailingAnchor`](./trailinganchor.md) with another `trailingAnchor`, a `leadingAnchor`, or a `centerXAnchor`. For more information, see [`NSLayoutAnchor`](../nslayoutanchor.md).
 

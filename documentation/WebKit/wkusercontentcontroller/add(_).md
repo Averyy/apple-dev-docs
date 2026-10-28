@@ -23,7 +23,7 @@ func add(_ contentRuleList: WKContentRuleList)
 - (void) addContentRuleList:(WKContentRuleList *) contentRuleList;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to apply a set of content filtering rules to your web view’s configuration.
 

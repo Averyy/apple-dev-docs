@@ -24,7 +24,7 @@ class INPaymentMethodResolutionResult
 @interface INPaymentMethodResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INPaymentMethodResolutionResult`](./inpaymentmethodresolutionresult.md) object is what you return when resolving parameters containing an [`INPaymentMethod`](./inpaymentmethod.md) object. Use the creation method that best reflects your ability to successfully resolve the parameter. For additional resolution options, see [`INIntentResolutionResult`](./inintentresolutionresult.md).
 

@@ -15,7 +15,7 @@ A single filter condition used in a recommendation query request to narrow resul
 object RecommendationFilterCondition
 ```
 
-#### Discussion
+## Discussion
 
 The `FilterCondition` object is the building block of query filters in the Recommendations API. The API combines multiple conditions in the `filters` array with AND logic. All conditions must match for a recommendation to appear in results.
 
@@ -38,7 +38,7 @@ Which operators are valid for a given `field` depends on that field’s underlyi
 
 Always pass `value` as an array.
 
-##### Example
+### Example
 
 ```json
 {

@@ -4,7 +4,7 @@
 
 Create a single Metal library containing reusable code to reduce library size and avoid repeated shader compilation at runtime.
 
-#### Overview
+## Overview
 
 As shaders grow in size, complexity, and scope, they often end up sharing utility functions. Under the default compilation model in Metal, linking embeds libraries, similar to static linking with the LLVM linker. For Metal, embedding libraries in this manner has two consequences: an increase in binary size, and an increase in compilation time. As each library loads, it compiles its own version of any utility functions, meaning Metal compiles and duplicates your utility functions multiple times.
 

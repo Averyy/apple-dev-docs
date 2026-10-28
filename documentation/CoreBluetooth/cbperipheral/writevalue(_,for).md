@@ -25,7 +25,7 @@ func writeValue(_ data: Data, for descriptor: CBDescriptor)
 - (void) writeValue:(NSData *) data forDescriptor:(CBDescriptor *) descriptor;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method to write the value of a characteristic descriptor, the peripheral calls the [`peripheral(_:didWriteValueFor:error:)`](../cbperipheraldelegate/peripheral%28_,didwritevaluefor,error%29-1ybl3.md) method of its delegate object.
 

@@ -10,7 +10,7 @@ Use drag items to convey data representation promises between a source app and a
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 
-#### Overview
+## Overview
 
 When a user drags an onscreen visual representation of an item in your app, such as a photo, a Maps location, a Calendar event, or a text selection, your app associates the underlying data with a *drag item*. The drag item, in turn, uses an *item provider*. Your app populates the item provider’s [`registeredTypeIdentifiers`](../Foundation/nsitemprovider/registeredtypeidentifiers.md) array with [uniform type identifiers (UTIs)](https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/UniformTypeIdentifier.html).
 

@@ -21,7 +21,7 @@ Key which is required to be set on a `Decoder`’s `userInfo` while attempting t
 static let actorSystemKey: CodingUserInfoKey
 ```
 
-#### Discussion
+## Discussion
 
 Forgetting to set this key will result in that initializer throwing, because an actor system is required in order to call `DistributedActor.resolve(id:using:)` using it.
 

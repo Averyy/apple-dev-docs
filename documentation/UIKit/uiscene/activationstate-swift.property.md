@@ -23,7 +23,7 @@ var activationState: UIScene.ActivationState { get }
 @property (nonatomic, readonly) UISceneActivationState activationState;
 ```
 
-#### Discussion
+## Discussion
 
 When it is running, a scene is usually in the [`UIScene.ActivationState.foregroundActive`](./activationstate-swift.enum/foregroundactive.md) or [`UIScene.ActivationState.background`](./activationstate-swift.enum/background.md) state. A state may also enter other states for a short time as part of a transition.
 

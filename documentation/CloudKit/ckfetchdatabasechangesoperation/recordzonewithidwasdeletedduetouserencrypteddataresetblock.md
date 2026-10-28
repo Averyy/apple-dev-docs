@@ -25,7 +25,7 @@ var recordZoneWithIDWasDeletedDueToUserEncryptedDataResetBlock: ((CKRecordZone.I
 @property (nonatomic, copy, nullable) void (^recordZoneWithIDWasDeletedDueToUserEncryptedDataResetBlock)(CKRecordZoneID *zoneID);
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes a single parameter: the deleted record zone’s ID.
 

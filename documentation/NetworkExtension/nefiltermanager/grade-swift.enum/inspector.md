@@ -19,7 +19,7 @@ case inspector
 NEFilterManagerGradeInspector
 ```
 
-#### Discussion
+## Discussion
 
 Inspector grade filters see network traffic after firewall grade filters.
 

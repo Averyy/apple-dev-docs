@@ -24,11 +24,11 @@ func routeButtonImage(for state: UIControl.State) -> UIImage?
 - (UIImage *) routeButtonImageForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The button image associated with the specified state, or [`nil`](../../ObjectiveC/nil-227m0.md) if an appropriate image could not be retrieved. This method might return [`nil`](../../ObjectiveC/nil-227m0.md) if you specify multiple control states in the state parameter.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve the corresponding button image for a specific state.
 

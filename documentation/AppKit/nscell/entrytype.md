@@ -17,7 +17,7 @@ Returns the type of data the user can type into the receiver.
 - (NSInteger) entryType;
 ```
 
-#### Return Value
+## Return Value
 
 One of the types listed for this method in [Data Entry Types](../data-entry-types.md). If the receiver is not a text-type cell, or if no type has been set, `NSAnyType` is returned.
 

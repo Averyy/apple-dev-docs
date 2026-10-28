@@ -28,7 +28,7 @@ optional func resolveRelativeTemperatureSetting(for intent: INSetClimateSettings
 - (void) resolveRelativeTemperatureSettingForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *) intent withCompletion:(void (^)(INRelativeSettingResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the requested temperature change. Use the intent object to identify the requested temperature change as applied to the current temperature.
 

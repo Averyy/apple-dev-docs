@@ -21,15 +21,15 @@ Implements `watchValue` by getting the current value and emitting it immediately
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func watchValueFromValue<Return>(forKey key: AbsoluteConfigKey, type: ConfigType, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Result<LookupResult, any Error>, Never>) async throws -> Return) async throws -> Return where Return : ~Copyable
+nonisolated(nonsending)
+func watchValueFromValue<Return>(forKey key: AbsoluteConfigKey, type: ConfigType, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Result<LookupResult, any Error>, Never>) async throws -> Return) async throws -> Return where Return : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by the handler closure.
 
-#### Discussion
+## Discussion
 
 Use this convenience method for providers that store static values in memory. The method creates an async sequence that emits the current value once and then remains idle, since the values don’t change over time.
 

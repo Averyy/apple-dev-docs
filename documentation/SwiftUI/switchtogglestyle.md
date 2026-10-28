@@ -22,7 +22,7 @@ nonisolated
 struct SwitchToggleStyle
 ```
 
-#### Overview
+## Overview
 
 Use the [`switch`](./togglestyle/switch.md) static variable to create this style:
 

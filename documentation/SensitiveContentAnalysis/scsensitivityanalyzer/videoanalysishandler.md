@@ -19,7 +19,7 @@ An object that checks if a video contains sensitive content and provides status 
 final class VideoAnalysisHandler
 ```
 
-#### Overview
+## Overview
 
 Checking video for sensitive content can take longer than checking images. This class enables an app to stay informed on the framework’s progress while it checks a video for sensitive content. The [`SCSensitivityAnalyzer`](../scsensitivityanalyzer.md) method [`videoAnalysis(forFileAt:)`](./videoanalysis%28forfileat%29.md) returns an instance of this class.
 

@@ -17,7 +17,7 @@ When the button is clicked, the alternate (on state) image and alternate title a
 static const NSButtonType NSMomentaryChangeButton;
 ```
 
-#### Discussion
+## Discussion
 
 Otherwise, the normal (off state) image and title are displayed. This option is called Momentary Change in Interface Builder’s Button inspector.
 

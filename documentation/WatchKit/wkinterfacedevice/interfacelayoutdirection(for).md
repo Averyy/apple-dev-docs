@@ -19,7 +19,7 @@ class func interfaceLayoutDirection(for semanticContentAttribute: WKInterfaceSem
 + (WKInterfaceLayoutDirection) interfaceLayoutDirectionForSemanticContentAttribute:(WKInterfaceSemanticContentAttribute) semanticContentAttribute;
 ```
 
-#### Return Value
+## Return Value
 
 The user interface layout direction (left-to-right or right-to-left). For a list of possible values, see [`WKInterfaceLayoutDirection`](../wkinterfacelayoutdirection.md).
 

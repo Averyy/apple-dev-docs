@@ -24,7 +24,7 @@ convenience init(functionName name: String, fromMetalLibraryData data: Data, out
 + (instancetype) kernelWithFunctionName:(NSString *) name fromMetalLibraryData:(NSData *) data outputPixelFormat:(CIFormat) format error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows you to use MSL as the shader language for a Core Image kernel. Since MSL based kernels are precompiled, initializing them is faster than their than Core Image Kernel Language (CIKL) counterparts and Xcode can provide error diagnostics during development rather than at runtime. MSL is a more modern language than CIKL, and you can write shader code that uses arrays, structs and matrices.
 

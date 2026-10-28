@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.M
 
 # mlx.nn.Module.training
 
-**property Module.training**
-: Boolean indicating if the model is in training mode.
+```python
+property Module.training
+```
+
+Boolean indicating if the model is in training mode.

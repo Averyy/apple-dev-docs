@@ -21,7 +21,7 @@ nonisolated
 func disabled(_ disabled: Bool) -> some TabContent<Self.TabValue>
 ```
 
-#### Discussion
+## Discussion
 
 The following example shows a [`TabView`](../tabview.md) with one tab that is not selectable.
 

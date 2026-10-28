@@ -25,7 +25,7 @@ func CFStringFindCharacterFromSet(_ theString: CFString!, _ theSet: CFCharacterS
 extern Boolean CFStringFindCharacterFromSet(CFStringRef theString, CFCharacterSetRef theSet, CFRange rangeToSearch, CFStringCompareFlags searchOptions, CFRange *result);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if a character in the character set is found and `result` is filled, `false` otherwise.
 

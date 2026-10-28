@@ -23,7 +23,7 @@ case hardShrink
 MLCActivationTypeHardShrink
 ```
 
-#### Discussion
+## Discussion
 
 This activation type implements the following function:
 

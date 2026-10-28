@@ -19,7 +19,7 @@ init?(iccProfileData iccData: Data)
 - (instancetype) initWithICCProfileData:(NSData *) iccData;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSColorSpace` object or `nil` if initialization was not successful.
 

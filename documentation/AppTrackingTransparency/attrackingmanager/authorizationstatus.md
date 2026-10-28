@@ -24,7 +24,7 @@ enum AuthorizationStatus
 enum ATTrackingManagerAuthorizationStatus : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 [`trackingAuthorizationStatus`](./trackingauthorizationstatus.md) returns this type, and [`requestTrackingAuthorization(completionHandler:)`](./requesttrackingauthorization%28completionhandler%29.md) passes an instance of this type to your completion handler when a person answers the system alert.
 

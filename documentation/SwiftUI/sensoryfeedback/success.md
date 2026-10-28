@@ -21,7 +21,7 @@ Indicates that a task or action has completed.
 static let success: SensoryFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Only plays feedback on iOS and watchOS.
 

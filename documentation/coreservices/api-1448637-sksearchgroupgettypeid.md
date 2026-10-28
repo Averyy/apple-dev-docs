@@ -15,11 +15,11 @@ Deprecated. Use asynchronous searching with SKSearchCreate instead, which does n
 CFTypeID SKSearchGroupGetTypeID(void);
 ```
 
-#### Return Value
+## Return Value
 
 A CFTypeID object containing the type identifier for the SKSearchGroup opaque type.
 
-#### Discussion
+## Discussion
 
 Gets the type identifier for Search Kit search groups.
 

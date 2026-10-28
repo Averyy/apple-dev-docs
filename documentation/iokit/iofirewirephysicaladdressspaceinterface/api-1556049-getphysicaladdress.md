@@ -16,7 +16,7 @@ Returns the physical address of the beginning of this address space
 IOPhysicalAddress (*GetPhysicalAddress)(IOFireWireLibPhysicalAddressSpaceRef self);
 ```
 
-#### Return Value
+## Return Value
 
 The physical address of the start of this address space
 

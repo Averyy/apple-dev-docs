@@ -25,7 +25,7 @@ let kCMTextMarkupAlignmentType_End: CFString
 extern CFStringRef const kCMTextMarkupAlignmentType_End;
 ```
 
-#### Discussion
+## Discussion
 
 For horizontally written text, the alignment is right for left-to-right text and left for right-to-left text. For vertical text, alignment is always at the bottom.
 

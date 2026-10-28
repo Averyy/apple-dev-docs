@@ -17,7 +17,7 @@ Generates raw token IDs asynchronously using MTP speculative decoding.
 func generateTokens(input: LMInput, cache: [KVCache]? = nil, parameters: GenerateParameters, context: ModelContext, mtpDrafter: any MTPDrafterModel, blockSize: Int = 4, components: GenerationComponents = .init(), wiredMemoryTicket: WiredMemoryTicket? = nil) throws -> AsyncStream<TokenGeneration>
 ```
 
-#### Discussion
+## Discussion
 
 Parallels [`generateTokens(input:cache:state:parameters:context:draftModel:draftCache:numDraftTokens:components:wiredMemoryTicket:)`](./generatetokens%28input,cache,state,parameters,context,draftmodel,draftcache,numdrafttokens,components,wiredmemoryticket%29.md) but for MTP drafters. Yields raw token IDs instead of decoded text or tool calls.
 

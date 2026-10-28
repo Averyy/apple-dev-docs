@@ -24,11 +24,11 @@ class func multiplyBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) multiplyBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the multiply-blend mode filter to an image. The effect calculates the colors in the output image by multiplying the color values for the input and background images, resulting in a darker image.
 

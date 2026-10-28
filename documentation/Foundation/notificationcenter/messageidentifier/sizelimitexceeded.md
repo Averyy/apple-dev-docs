@@ -23,7 +23,7 @@ static var sizeLimitExceeded: NotificationCenter.BaseMessageIdentifier<UserDefau
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UserDefaults.SizeLimitExceededMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`UserDefaults.SizeLimitExceededMessage`](../../userdefaults/sizelimitexceededmessage.md).
 

@@ -25,7 +25,7 @@ struct SCNDebugOptions
 enum SCNDebugOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Debug options are bit mask patterns. To display multiple debugging overlays, combine options using the bitwise OR operator.
 

@@ -21,7 +21,7 @@ Returns the distance to another run loop scheduler time.
 func distance(to other: RunLoop.SchedulerTimeType) -> RunLoop.SchedulerTimeType.Stride
 ```
 
-#### Return Value
+## Return Value
 
 The time interval between this time and the provided time.
 

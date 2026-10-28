@@ -19,11 +19,11 @@ func draggingImageForItems(at indexPaths: Set<IndexPath>, with event: NSEvent, o
 - (NSImage *) draggingImageForItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths withEvent:(NSEvent *) event offset:(NSPointPointer) dragImageOffset;
 ```
 
-#### Return Value
+## Return Value
 
 The image to use for the dragged items.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method creates an image using the visible portions of the dragged items. The resulting image is a snapshot of the dragged items as they currently appear in the collection view but rendered with additional transparency to indicate they are part of a drag operation. This method also updates the `dragImageOffset` parameter to an appropriate point for dragging the resulting image.
 

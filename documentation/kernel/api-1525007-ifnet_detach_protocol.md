@@ -13,11 +13,11 @@
 errno_t ifnet_detach_protocol(ifnet_t interface, protocol_family_t protocol_family);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Detaches a protocol from an interface.
 

@@ -25,7 +25,7 @@ func CMTimeRangeShow(_ range: CMTimeRange)
 extern void CMTimeRangeShow(CMTimeRange range);
 ```
 
-#### Discussion
+## Discussion
 
 This is most useful from within LLDB.
 

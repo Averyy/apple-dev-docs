@@ -25,7 +25,7 @@ var preUtteranceDelay: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval preUtteranceDelay;
 ```
 
-#### Discussion
+## Discussion
 
 When multiple utterances exist in the queue, the speech synthesizer pauses a minimum amount of time equal to the sum of the current utterance’s [`postUtteranceDelay`](./postutterancedelay.md) and the next utterance’s `preUtteranceDelay`.
 

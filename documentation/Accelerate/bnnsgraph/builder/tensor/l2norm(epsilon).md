@@ -23,7 +23,7 @@ func l2Norm(epsilon: Float = .ulpOfOne.squareRoot()) -> BNNSGraph.Builder.Tensor
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This function performs `y = x / sqrt(sum_square(x) + epsilon)`.
 

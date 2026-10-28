@@ -21,7 +21,7 @@ Creates a place descriptor from a map item.
 init?(item: MKMapItem)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create a `PlaceDescriptor` from an existing `MKMapItem` as shown here.
 

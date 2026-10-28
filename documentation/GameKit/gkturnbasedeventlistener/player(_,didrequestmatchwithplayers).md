@@ -26,7 +26,7 @@ optional func player(_ player: GKPlayer, didRequestMatchWithPlayers playerIDsToI
 - (void) player:(GKPlayer *) player didRequestMatchWithPlayers:(NSArray<NSString *> *) playerIDsToInvite;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to present a [`GKTurnBasedMatchmakerViewController`](../gkturnbasedmatchmakerviewcontroller.md) configured with the players to invite specified by the `playerIDsToInvite` parameter.
 

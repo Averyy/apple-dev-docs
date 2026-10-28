@@ -19,7 +19,7 @@ enum EventSubtype
 enum NSEventSubtype : short;
 ```
 
-#### Overview
+## Overview
 
 The event subtype contains one of these constants only when the event’s [`type`](./type.md) property contains [`NSAppKitDefined`](../nsappkitdefined.md), [`NSSystemDefined`](../nssystemdefined.md), or [`NSApplicationDefined`](../nsapplicationdefined.md) or a mouse-related event type.
 

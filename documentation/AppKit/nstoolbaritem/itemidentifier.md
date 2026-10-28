@@ -22,7 +22,7 @@ var itemIdentifier: NSToolbarItem.Identifier { get }
 @property (copy, readonly) NSToolbarItemIdentifier itemIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to distinguish one toolbar item from another on the same toolbar.
 

@@ -21,7 +21,7 @@ optional func playerViewController(for player: TVPlayer) -> UIViewController?
 - (UIViewController *) playerViewControllerForPlayer:(TVPlayer *) player;
 ```
 
-#### Return Value
+## Return Value
 
 The new view controller associated with the view element. If the app doesn’t handle this event, you must return nil.
 

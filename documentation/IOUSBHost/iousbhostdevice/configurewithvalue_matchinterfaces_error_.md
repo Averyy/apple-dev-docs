@@ -16,7 +16,7 @@ Selects a new configuration for the device.
 - (BOOL) configureWithValue:(NSUInteger) value matchInterfaces:(BOOL) matchInterfaces error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the request completes successfully; otherwise, `NO`.
 

@@ -25,13 +25,13 @@ class LPMetadataProvider
 @interface LPMetadataProvider : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use [`LPMetadataProvider`](./lpmetadataprovider.md) to fetch metadata for a URL, including its title, icon, and image or video links. All properties on the resulting [`LPLinkMetadata`](./lplinkmetadata.md) instance are optional.
 
 > **Note**: To enable macOS clients to fetch metadata for remote URLs, add the [`com.apple.security.network.client`](../BundleResources/entitlements/com.apple.security.network.client.md) entitlement.
 
-#### Fetch link metadata from a URL
+## Fetch link metadata from a URL
 
 For each metadata request, create an instance of [`LPMetadataProvider`](./lpmetadataprovider.md) and call [`startFetchingMetadata(for:completionHandler:)`](./lpmetadataprovider/startfetchingmetadata%28for,completionhandler%29-54z5i.md).
 

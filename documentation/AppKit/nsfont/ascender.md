@@ -19,7 +19,7 @@ var ascender: CGFloat { get }
 @property (readonly) CGFloat ascender;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the distance of the longest ascender’s top y-coordinate from the baseline, measured in points.
 

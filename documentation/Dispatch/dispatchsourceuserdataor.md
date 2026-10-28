@@ -21,7 +21,7 @@ A dispatch source that coalesces data you provide using an OR operation.
 protocol DispatchSourceUserDataOr : DispatchSourceProtocol, Sendable
 ```
 
-#### Overview
+## Overview
 
 You do not adopt this protocol in your objects. Instead, use the [`makeUserDataOrSource(queue:)`](./dispatchsource/makeuserdataorsource%28queue%29.md) method to create an object that adopts this protocol.
 

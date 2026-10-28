@@ -18,7 +18,7 @@ A metric that measures the total data downloaded over WiFi.
 struct TotalWiFiDownloadMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.totalWiFiDownload(_:)`](./metricresult/totalwifidownload%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 

@@ -23,11 +23,11 @@ func rangeOfMisspelledWord(in stringToCheck: String, range: NSRange, startingAt 
 - (NSRange) rangeOfMisspelledWordInString:(NSString *) stringToCheck range:(NSRange) range startingAt:(NSInteger) startingOffset wrap:(BOOL) wrapFlag language:(NSString *) language;
 ```
 
-#### Return Value
+## Return Value
 
 The range of the first misspelled word encountered or `{NSNotFound, 0}` if none is found.
 
-#### Discussion
+## Discussion
 
 To search an entire string or a range within that string, call this method in a loop, resetting `startingOffset` from each returned range, until you reach the end of the string or specified range within the string.
 

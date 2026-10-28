@@ -25,7 +25,7 @@ var operationGroupID: String { get }
 @property (nonatomic, copy, readonly) NSString * operationGroupID;
 ```
 
-#### Discussion
+## Discussion
 
 The framework generates this value and it’s unique to this operation group. The system sends this identifier to CloudKit, which can use it to identify server-side logs for [`CKOperationGroup`](../ckoperationgroup.md).
 

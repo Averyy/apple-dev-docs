@@ -5,7 +5,7 @@
 
 Use semantic tags to provide up-to-date information for event passes.
 
-#### Overview
+## Overview
 
 In iOS 26 and later and watchOS 26 and later you can provide an engaging event ticket experience by creating a poster event tickets using semantic tags in Wallet. This experience builds on the existing [`PKPass`](../PassKit/pkpass.md) bundle in Wallet and maintains backward compatibility. For more information on semantic tags, see [Supporting semantic tags in Wallet passes](./supporting-semantic-tags-in-wallet-passes.md).
 
@@ -22,7 +22,7 @@ To create a poster event ticket using semantic tags, you need to meet the follow
 
 > ❗ **Important**: Poster event tickets aren’t compatible with tickets that require a QR code or barcode for entry.
 
-#### Set the preferred style scheme
+## Set the preferred style scheme
 
 The *preferred style scheme* is a top-level key that you provide. It takes an array of strings that correspond to schemes that the system resolves into a *style type*. Poster event tickets are considered event tickets, and the scheme is `posterEventTicket`.
 
@@ -37,7 +37,7 @@ The following is an example of the preferred style scheme structure:
 ]
 ```
 
-#### Add the event ticket pass style
+## Add the event ticket pass style
 
 The pass’s style determines the overall visual appearance of the pass and the template for placement of information on the pass. The value of the pass style key is a dictionary containing fields that hold the pass content. Specify the pass style by providing the corresponding key at the top level of the `pass.json` file; event passes use the key `eventTicket`. For more information on building your pass json file, see [Building a Pass](./building-a-pass.md).
 
@@ -65,7 +65,7 @@ The pass style controls how Wallet lays out the pass fields and which images it 
 
 The pass style determines the maximum number of pass fields that can appear on the front of a pass. An event pass can display logo, strip, background, or thumbnail images. You can also include an extra row of up to four auxiliary fields. The text length in each pass field determines how many fields appear on the front of the pass. If the text is too long, Wallet won’t display all of it.
 
-#### Add the required semantic tags
+## Add the required semantic tags
 
 Semantic tags are objects that contain machine-readable metadata the system uses to offer a pass and suggest related actions. For the poster event ticket style, the following list of semantic tags is required for the front of the pass and essential designs. If you omit any of these tags, your pass falls back to the legacy event pass style. For more information on semantic tags, see [`SemanticTags`](./semantictags.md).
 
@@ -300,7 +300,7 @@ The following examples show a `pass.json` file with the required semantic tags f
 
 ```
 
-#### Include recommended and optional semantic tags
+## Include recommended and optional semantic tags
 
 Using recommended and optional semantic tags can enhance someone’s event pass experience in Wallet. The event guide provides access to information like the venue map and weather forecast, and to quick actions like checking a baggage policy and ordering food. You can display a minimum of one and up to four quick action buttons.
 
@@ -340,7 +340,7 @@ The following semantic tags are optional:
 | --- | --- |
 | `artistIDs` | An array of the Apple Music persistent ID for each artist performing at the event, in decreasing order of significance. Use this key for any type of event ticket. |
 
-#### Populate multiday events
+## Populate multiday events
 
 Use [`Pass.RelevantDates`](./pass/relevantdates-data.dictionary.md) to provide a list of date ranges for events that are more than one day like multiday festivals or season tickets. The following code shows an example `relevantDates` object for a multi day event.
 
@@ -356,7 +356,7 @@ Use [`Pass.RelevantDates`](./pass/relevantdates-data.dictionary.md) to provide a
 ]
 ```
 
-#### Ensure backward compatibility
+## Ensure backward compatibility
 
 To ensure your pass is backward compatible, continue to provide the [`PassFields.PrimaryFields`](./passfields/primaryfields-data.dictionary.md), [`PassFields.SecondaryFields`](./passfields/secondaryfields-data.dictionary.md), and [`PassFields.AuxiliaryFields`](./passfields/auxiliaryfields-data.dictionary.md) so the system presents the legacy event pass style, if necessary. Poster event tickets add keys and assets to the existing `PKPass` bundle that legacy event passes use. By building on the legacy pass bundle, Wallet automatically generates the appropriate device experience for iOS and watchOS.
 
@@ -372,7 +372,7 @@ When someone adds a pass to a device, that pass automatically syncs to all devic
 
 If someone adds a multiday event pass to an unsupported device and syncs it to a supported device with iOS 26 or later or watchOS 26 or later, Wallet displays the poster event ticket pass information after you meet the minimum requirements by setting the top-level style dictionary and adding the required semantic tags. If you don’t meet the requirements, Wallet displays a legacy event ticket pass.
 
-#### Provide scannable codes
+## Provide scannable codes
 
 Passes can work with Near Field Communication (NFC) readers and barcodes. Someone can hold a device near an NFC reader with the contactless symbol to use their pass. When employing NFC, the pass doesn’t need a barcode.
 
@@ -382,7 +382,7 @@ For more information on barcodes, see [`Pass.Barcodes`](./pass/barcodes-data.dic
 
 For design guidance about event passes, see Human Interface Guidelines > Wallet > Passes > [Event tickets](https://developer.apple.com/design/human-interface-guidelines/wallet#Event-tickets).
 
-#### Debug the pass
+## Debug the pass
 
 If the pass doesn’t display and add to Wallet, check the logs for a description of what went wrong. If you’re using Simulator to debug, you can drag your `.pkpass` file into the Simulator, then use the Console app on your Mac to view the Simulator device logs.
 

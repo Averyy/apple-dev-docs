@@ -17,13 +17,13 @@ Initializer allowing creation of scalar (0-dimension) `MLXArray` from an `Int32`
 convenience init(_ value: Int32)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let a = MLXArray(Int32(7))
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 

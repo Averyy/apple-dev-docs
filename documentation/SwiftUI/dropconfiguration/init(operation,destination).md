@@ -15,7 +15,7 @@ Creates a drop configuration with the provided operation and reorder destination
 init<ItemID, CollectionID>(operation: DropOperation, destination: ReorderDifference<ItemID, CollectionID>.Destination) where ItemID : Hashable, ItemID : Sendable, CollectionID : Hashable, CollectionID : Sendable
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when you want to decide where the destination value of the current reordering session should be. The value that you pass to this initializer will be the value used for this update.
 

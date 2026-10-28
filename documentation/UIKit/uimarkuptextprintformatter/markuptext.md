@@ -22,7 +22,7 @@ var markupText: String? { get set }
 @property (nonatomic, copy, nullable) NSString * markupText;
 ```
 
-#### Discussion
+## Discussion
 
 When drawing begins for the print job, you cannot change the value of this property. The delegate method [`printInteractionControllerWillStartJob(_:)`](../uiprintinteractioncontrollerdelegate/printinteractioncontrollerwillstartjob%28_%29.md) is called immediately before the formatting is set for the job.
 

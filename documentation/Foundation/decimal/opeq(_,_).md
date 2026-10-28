@@ -21,7 +21,7 @@ Divides one decimal number by another, storing the result in the first number.
 static func /= (lhs: inout Decimal, rhs: Decimal)
 ```
 
-#### Discussion
+## Discussion
 
 If the result of this operation requires more precision than the `Decimal` type can provide, the result is rounded using the [`NSDecimalNumber.RoundingMode.plain`](../nsdecimalnumber/roundingmode/plain.md) rounding mode. To specify a different rounding mode, use the [`NSDecimalDivide(_:_:_:_:)`](../nsdecimaldivide%28_,_,_,_%29.md) function instead.
 

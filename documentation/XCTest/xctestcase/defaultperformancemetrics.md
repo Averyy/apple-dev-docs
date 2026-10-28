@@ -16,7 +16,7 @@ class var defaultPerformanceMetrics: [XCTPerformanceMetric] { get }
 @property (class, copy, readonly) NSArray<NSString *> * defaultPerformanceMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 When you call [`measure(_:)`](./measure%28_%29.md), the test uses this property to determine which performance metrics to record. The default is an array that contains [`wallClockTime`](../xctperformancemetric/wallclocktime.md). Subclasses of [`XCTestCase`](../xctestcase.md) can override this method to change the behavior of [`measure(_:)`](./measure%28_%29.md).
 

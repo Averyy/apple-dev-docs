@@ -20,7 +20,7 @@ The reverberation RealityKit applies to spatial audio sources.
 struct Reverb
 ```
 
-#### Overview
+## Overview
 
 You can configure the reverb for spatial audio sources in your RealityKit content with the [`ReverbComponent`](./reverbcomponent.md).
 

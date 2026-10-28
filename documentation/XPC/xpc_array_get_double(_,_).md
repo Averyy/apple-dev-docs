@@ -25,7 +25,7 @@ func xpc_array_get_double(_ xarray: xpc_object_t, _ index: Int) -> Double
 extern double xpc_array_get_double(xpc_object_t xarray, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying `double` value at the specified index. NAN if the value at the specified index is not a floating point value.
 

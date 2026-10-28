@@ -24,7 +24,7 @@ class CNMutablePostalAddress
 @interface CNMutablePostalAddress : CNPostalAddress
 ```
 
-#### Overview
+## Overview
 
 `CNMutablePostalAddress` is not a thread-safe class. To remove properties when saving a mutable postal address, set string properties to empty values.
 

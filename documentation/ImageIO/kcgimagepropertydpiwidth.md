@@ -25,7 +25,7 @@ let kCGImagePropertyDPIWidth: CFString
 extern CFStringRef const kCGImagePropertyDPIWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CFNumber`](../CoreFoundation/cfnumber.md).
 

@@ -22,11 +22,11 @@ func value(forPasteboardType pasteboardType: String) -> Any?
 - (id) valueForPasteboardType:(NSString *) pasteboardType;
 ```
 
-#### Return Value
+## Return Value
 
 An object that is an instance of the appropriate class based on `pasteboardType` or an [`NSData`](../../Foundation/nsdata.md) object containing “raw” data.
 
-#### Discussion
+## Discussion
 
 This method attempts to return an object that is of a class type appropriate to the representation type, which typically is a UTI. For example, if the representation type is `kUTTypePlainText` (`public.plain-text`), the method returns an [`NSString`](../../Foundation/nsstring.md) object. If the method can’t determine the class type from the representation type, it returns the object as a generic object, such as an [`NSString`](../../Foundation/nsstring.md), [`NSArray`](../../Foundation/nsarray.md), [`NSDictionary`](../../Foundation/nsdictionary.md), [`NSDate`](../../Foundation/nsdate.md), [`NSNumber`](../../Foundation/nsnumber.md), [`NSURL`](../../Foundation/nsurl.md), [`UIImage`](../uiimage.md), or [`NSData`](../../Foundation/nsdata.md) object. This method works on the first item in the pasteboard. If there are other items, it ignores them.
 

@@ -21,7 +21,7 @@ func rotateDigitalCrown(delta rotationalDelta: CGFloat, velocity: XCUIGestureVel
 - (void) rotateDigitalCrownByDelta:(CGFloat) rotationalDelta withVelocity:(XCUIGestureVelocity) velocity;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a positive value for `rotationalDelta` to indicate scrolling upward or a negative value to indicate scrolling downward, regardless of the orientation of the watch. A `rotationalDelta` value of `1.0` indicates a full rotation of the Digital Crown. Specify a `velocity` in rotations per second; the system ignores the sign of the `velocity` you provide.
 

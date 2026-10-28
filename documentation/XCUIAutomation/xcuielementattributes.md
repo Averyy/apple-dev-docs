@@ -27,7 +27,7 @@ protocol XCUIElementAttributes
 @protocol XCUIElementAttributes
 ```
 
-#### Overview
+## Overview
 
 The [`XCUIElementAttributes`](./xcuielementattributes.md) protocol adds attribute-related functionality to the [`XCUIElement`](./xcuielement.md) class. Access these properties on an instance of [`XCUIElement`](./xcuielement.md) to query the current state of the UI element’s attributes.
 

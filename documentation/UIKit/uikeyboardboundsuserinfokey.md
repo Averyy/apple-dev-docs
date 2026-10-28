@@ -19,7 +19,7 @@ A user info key to retrieve the bounds of the keyboard.
 extern NSString * const UIKeyboardBoundsUserInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSValue`](../Foundation/nsvalue.md) object containing a [`CGRect`](../CoreFoundation/cgrect.md) that identifies the bounds rectangle of the keyboard in the window coordinate space. This value is sufficient for obtaining the size of the keyboard. If you want to get the origin of the keyboard on the screen (before or after animation), use the values obtained from the user info dictionary through the [`UIKeyboardCenterBeginUserInfoKey`](./uikeyboardcenterbeginuserinfokey.md) or [`UIKeyboardCenterEndUserInfoKey`](./uikeyboardcenterenduserinfokey.md) constants.
 

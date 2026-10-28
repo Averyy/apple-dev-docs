@@ -21,7 +21,7 @@ A type that represents plain text encoded as UTF-8.
 extern UTType * const UTTypeUTF8PlainText;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.utf8-plain-text`.
 

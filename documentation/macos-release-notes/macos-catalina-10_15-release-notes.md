@@ -5,31 +5,31 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 10.15 SDK provides support for developing apps for Macs running macOS Catalina 10.15. The SDK comes bundled with Xcode 11. For information on the compatibility requirements for Xcode 11, see [Xcode 11 Release Notes](../Xcode-Release-Notes/xcode-11-release-notes.md).
 
-##### General
+### General
 
-###### Known Issues
+#### Known Issues
 
 - During installation of macOS 10.15 you might be prompted to enter your administrator password multiple times to allow installation to proceed. (51206649)
 
-###### Deprecations
+#### Deprecations
 
 - macOS frameworks are now thinned for the x86-64 architecture. Apps that execute i386 code now fail with the [`EBADARCH`](../Foundation/posixerror/ebadarch.md) error code. The remaining stub frameworks are nonfunctional and exist only for compatibility purposes. (51236070)
 
-##### AirDrop
+### AirDrop
 
-###### Known Issues
+#### Known Issues
 
 - AirDrop doesn’t work when a VPN is connected with the [`includeAllNetworks`](../NetworkExtension/nevpnprotocol/includeallnetworks.md) and [`excludeLocalNetworks`](../NetworkExtension/nevpnprotocol/excludelocalnetworks.md) options enabled. (52618489)
 
   **Workaround:** Disconnect the VPN before using AirDrop.
 
-##### AppleEvents
+### AppleEvents
 
-###### New Features
+#### New Features
 
 - To enhance security, AppleEvents and AppleScripts that target an app on a remote system must authenticate as the same user on the remote system. An AppleEvent that targets an app running as a different user receives a `procNotFound` error.To allow remote AppleEvents to target apps in any user session, run the following command in Terminal on the server:
 
@@ -37,9 +37,9 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
 
   Then disable and reenable Remote Apple Events in System Preferences > Sharing. (5353592)
 
-##### Audio
+### Audio
 
-###### New Features
+#### New Features
 
 - You can now enable voice processing mode on [`AVAudioEngine`](../AVFAudio/avaudioengine.md). (50906329)
 - You can use new [`AVAudioNode`](../AVFAudio/avaudionode.md) types to wrap a user-defined block for sending or receiving data in real-time.
@@ -50,7 +50,7 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
 - The [`AVAudioSession.RouteSharingPolicy`](../AVFAudio/avaudiosession/routesharingpolicy-swift.enum.md) enumeration is extended to allow apps to specify route sharing policies so their audio and video is routed to the same location as AirPlay.
 - Audio Unit Extensions now support user presets that are available across all host apps.
 
-###### Deprecations
+#### Deprecations
 
 - The `OpenAL` framework is deprecated and remains present for compatibility purposes. Transition to [`AVAudioEngine`](../AVFAudio/avaudioengine.md) for spatial audio functionality.
 - [`AUGraph`](../AudioToolbox/augraph.md) is deprecated in favor of [`AVAudioEngine`](../AVFAudio/avaudioengine.md).
@@ -58,27 +58,27 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
 - Carbon component-based Audio Units are deprecated and support will be removed in a future release.
 - Legacy Core Audio HAL audio hardware plug-ins are no longer supported.  Use Audio Server plug-ins for audio drivers.
 
-##### AVFoundation
+### AVFoundation
 
-###### New Features
+#### New Features
 
 - The [`AVPlayer`](../AVFoundation/avplayer.md) class includes two new properties, [`eligibleForHDRPlayback`](../AVFoundation/avplayer/eligibleforhdrplayback.md) and [`eligibleForHDRPlaybackDidChangeNotification`](../AVFoundation/avplayer/eligibleforhdrplaybackdidchangenotification.md), which you can use to determine whether an HDR display is available and can play on the current device. (35938145)
 - AVFoundation now supports encoding video with alpha channels using HEVC. Videos encoded in this manner are broadly supported in AVFoundation APIs and by Safari within web pages. Technical details of the format can be found in the Interoperability Profile specification. (8045917)
 
-###### Deprecations
+#### Deprecations
 
 - The previously deprecated 32-bit QuickTime framework is no longer available in macOS 10.15.
 - The symbols for QTKit, which relied on the QuickTime framework, are still present but the classes are non-functional.
 
-##### Camera
+### Camera
 
-###### Known Issues
+#### Known Issues
 
 - Apps using Picture Taker must specify the [`NSCameraUsageDescription`](../BundleResources/information-property-list/nscamerausagedescription.md) key to access the FaceTime camera. (47916725)
 
-##### Core Image
+### Core Image
 
-###### New Features
+#### New Features
 
 - The [`init(imageURL:options:)`](../CoreImage/cifilter-swift.class/init%28imageurl,options%29.md) and [`init(imageData:options:)`](../CoreImage/cifilter-swift.class/init%28imagedata,options%29.md) initializers no longer support RAW decoder versions earlier than 6. Version 6 and later remain supported. (50911303)
 - Added new APIs for instantiating and modifying the built-in Core Image filters.
@@ -87,15 +87,15 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
 - Metal [`CIKernel`](../CoreImage/cikernel.md) instances now support returning a group of two by two pixels.
 - The integer values of [`CIFormat`](../CoreImage/ciformat.md) symbols, such as [`ARGB8`](../CoreImage/ciformat/argb8.md), have changed to a new set of values which are consistent across platforms. The former values remain supported for backward compatibility; however, you should avoid dependancies on specific numerical values.
 
-##### EndpointSecurity
+### EndpointSecurity
 
-###### Deprecations
+#### Deprecations
 
 - The `kauth` API has been deprecated. (50419013)
 
-##### iCloud
+### iCloud
 
-###### Known Issues
+#### Known Issues
 
 - After updating to macOS Catalina 10.15 Beta 7 or later, iCloud Drive might synchronize for an extended period of time. If you notice any missing files, they can be found inside a Recovered Files folder in your home folder. (54046219)
 - Even when Optimize Storage is switched off, iCloud Drive might fail to automatically download all files. (50667204)
@@ -105,17 +105,17 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
 
   **Workaround:** Close and reopen the document.
 
-##### Launch Daemons and Agents
+### Launch Daemons and Agents
 
-###### New Features
+#### New Features
 
 - Launch daemons and launch agents introduce new user privacy protections. Specifying privacy-sensitive files and folders in a launchd property list might not work as expected and prevent the service from running. Having `Program` or `ProgramArguments` pointing to an executable in a privacy sensitive location is currently allowed, but may be restricted in a future release. (49702405)
 
   To comply with the new privacy protections, resources for a launchd service must be stored in locations that aren’t privacy sensitive. If necessary, the app can set up resources during its execution rather than using launchd property list keys, making it possible to grant the app access using System Preferences > Security & Privacy > Privacy. The following launchd property list keys are affected: `KeepAlive`, `PathState`, `QueueDirectories`, `Sockets`, `SockPathName`, `StandardErrorPath`, `StandardInPath`, `StandardOutPath`, and `WatchPaths`.
 
-##### Mac Catalyst
+### Mac Catalyst
 
-###### Known Issues
+#### Known Issues
 
 - [`nativeScale`](../UIKit/uiscreen/nativescale.md) might be inaccurate. Instead, get the scale factor from the local trait collection. (54009624)
 - [`MPMediaPickerController`](../MediaPlayer/mpmediapickercontroller.md) might not display the contents of your library. (51785735)
@@ -147,9 +147,9 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
 - Catalyst apps using [`UIDocumentInteractionController`](../UIKit/uidocumentinteractioncontroller.md) might quit unexpectedly. You can work around this issue by excluding [`UIDocumentInteractionController`](../UIKit/uidocumentinteractioncontroller.md) functionality with target macros. (48878552)
 - DOM keyboard events aren’t dispatched as expected in [`WKWebView`](../WebKit/wkwebview.md) when pressing or releasing keys. Web apps needing to track typed characters can instead listen for DOM input events. (54580414)
 
-##### Mail
+### Mail
 
-###### Known Issues
+#### Known Issues
 
 - If your Mac contains both macOS Mojave 10.14 and macOS 10.15 volumes, you might experience issues searching in Mail. (46611310)
 
@@ -167,51 +167,51 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
 
   Depending on the size of your Mail database, it might take many hours to reindex all content.
 
-##### Networking
+### Networking
 
-###### New Features
+#### New Features
 
 - [`NSURLRequest.CachePolicy.reloadRevalidatingCacheData`](../Foundation/nsurlrequest/cachepolicy-swift.enum/reloadrevalidatingcachedata.md) and [`NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData`](../Foundation/nsurlrequest/cachepolicy-swift.enum/reloadignoringlocalandremotecachedata.md) APIs are now available. (49660334)
 - All [`URLSessionTask`](../Foundation/urlsessiontask.md) instances with a GET HTTP method which contain a body will now produce the error [`NSURLErrorDataLengthExceedsMaximum`](../Foundation/nsurlerrordatalengthexceedsmaximum-swift.var.md). (46025234)
 
-###### Known Issues
+#### Known Issues
 
 - The [`NWEthernetChannel`](../Network/nwethernetchannel.md) API doesn’t currently support VLAN interfaces. [`NEPacketTunnelProvider`](../NetworkExtension/nepackettunnelprovider.md) will see both tagged and untagged frames arriving on physical interfaces. Depending on the Ethernet driver, VLAN tags might be processed by hardware and thus stripped off the Ethernet frames thus [`NEPacketTunnelProvider`](../NetworkExtension/nepackettunnelprovider.md) won’t see the VLAN tag. (51275655)
 
-###### Deprecations
+#### Deprecations
 
 - Support for FTP and File URL schemes for Proxy Automatic Configuration (PAC) is removed. HTTP and HTTPS are the only supported URL schemes for PAC. This affects all PAC configurations including but not limited to configurations set using Settings, System Preferences, profiles, URLSession APIs such as [`connectionProxyDictionary`](../Foundation/urlsessionconfiguration/connectionproxydictionary.md), and [`CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)`](../CFNetwork/cfnetworkexecuteproxyautoconfigurationurl%28_,_,_,_%29.md). (28578280)
 - SPDY support is removed from the [`URLSession`](../Foundation/urlsession.md) and [`NSURLConnection`](../Foundation/nsurlconnection.md) APIs. Servers should use HTTP 2 or HTTP 1.1. (43391641)
 - The Network Kernel Extension API is now deprecated. (49284108)
 
-##### Privacy
+### Privacy
 
-###### Known Issues
+#### Known Issues
 
 - The behavior of `access(2)` on privacy-protected filesystem locations has been restored to that of macOS Mojave. (47309955)
 
-##### Remote Desktop
+### Remote Desktop
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where turning on Curtain Mode prevented you from being able to control a remote Mac. (52900397)
 
-##### Quartz Composer
+### Quartz Composer
 
-###### Deprecations
+#### Deprecations
 
 - Starting in macOS 10.15, the Quartz Composer framework is deprecated and remains present for compatibility purposes. Transition to frameworks such as Core Image, SceneKit, or Metal. (50911608)
 
-##### Scripting Language Runtimes
+### Scripting Language Runtimes
 
-###### Deprecations
+#### Deprecations
 
 - Scripting language runtimes such as Python, Ruby, and Perl are included in macOS for compatibility with legacy software. Future versions of macOS won’t include scripting language runtimes by default, and might require you to install additional packages. If your software depends on scripting languages, it’s recommended that you bundle the runtime within the app. (49764202)
 - Use of Python 2.7 isn’t recommended as this version is included in macOS for compatibility with legacy software. Future versions of macOS won’t include Python 2.7. Instead, it’s recommended that you run `python3` from within Terminal. (51097165)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - You can now create a [`Color`](../SwiftUI/color.md) from a [`UIColor`](../UIKit/uicolor.md) or [`NSColor`](../AppKit/nscolor.md). (49833933)
 - [`NSManagedObject`](../CoreData/nsmanagedobject.md) now conforms to [`ObservableObject`](../Combine/observableobject.md). The new `@`[`FetchRequest`](../SwiftUI/fetchrequest.md) property wrapper can drive views from the results of a fetch request, and [`managedObjectContext`](../SwiftUI/environmentvalues/managedobjectcontext.md) is now included in the environment. (50280673)
@@ -276,13 +276,13 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
   .navigationViewStyle(DoubleColumnNavigationViewStyle())
   ```
 
-###### Known Issues
+#### Known Issues
 
 - Apps containing SwiftUI inside a Swift package might not run on versions of iOS earlier than iOS 13. (53706729)
 
   **Workaround**: When back-deploying to an OS which doesn’t contain the SwiftUI framework, add the `-weak_framework SwiftUI` flag to the Other Linker Flags setting in the Build Settings tab. See [Frameworks and Weak Linking](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPFrameworks/Concepts/WeakLinking.html#//apple_ref/doc/uid/20002378) for more information on weak linking a framework. This workaround doesn’t apply when using dynamically linked Swift packages which import SwiftUI.
 
-###### Deprecations
+#### Deprecations
 
 - The `Command` structure is replaced by passing selectors directly. (53187891)
 - `NavigationDestinationLink` and `DynamicNavigationDestinationLink` are deprecated; their functionality is now included in [`NavigationLink`](../SwiftUI/navigationlink.md). (50630794)
@@ -411,9 +411,9 @@ Use shapes in a [`background(_:alignment:)`](../SwiftUI/view/background%28_,alig
   ```
 - The `relativeWidth(_:)`, `relativeHeight(_:)`, and `relativeSize(width:height:)` modifiers are deprecated. Use other modifiers like [`frame(minWidth:idealWidth:maxWidth:minHeight:idealHeight:maxHeight:alignment:)`](../SwiftUI/view/frame%28minwidth,idealwidth,maxwidth,minheight,idealheight,maxheight,alignment%29.md) instead. (51494692)
 
-##### Xcode
+### Xcode
 
-###### Deprecations
+#### Deprecations
 
 - Command line tool support for Subversion — including `svn`, `git-svn`, and related commands — is no longer provided by Xcode. (50266910)
 

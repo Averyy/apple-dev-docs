@@ -15,7 +15,7 @@ An overlay layer with a specific block count.
 static func overlay(blockCount: Int) -> DiskImage.LayerType
 ```
 
-#### Discussion
+## Discussion
 
 Overlay layers store all the changed blocks from the layers beneath it in the stack. This variant resizes the stacked disk image since the size is determined by the top-most layer.
 

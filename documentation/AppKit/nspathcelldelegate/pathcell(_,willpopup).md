@@ -20,7 +20,7 @@ optional func pathCell(_ pathCell: NSPathCell, willPopUp menu: NSMenu)
 - (void) pathCell:(NSPathCell *) pathCell willPopUpMenu:(NSMenu *) menu;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called before the pop-up menu is shown. At this time, you can further customize the menu as required, adding and removing items. This method is called only when the style is set to `NSPathStylePopUp`.
 

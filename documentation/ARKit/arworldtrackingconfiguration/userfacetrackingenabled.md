@@ -20,7 +20,7 @@ var userFaceTrackingEnabled: Bool { get set }
 @property (nonatomic, assign, getter=userFaceTrackingEnabled) BOOL userFaceTrackingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When enabled, ARKit provides you with an [`ARFaceAnchor`](../arfaceanchor.md) that represents the user’s face during your world tracking session. For example, you can share avatar expressions with multiple users in a multiplayer game, or enable the player to control a virtual object in the physical environment using facial expressions.
 

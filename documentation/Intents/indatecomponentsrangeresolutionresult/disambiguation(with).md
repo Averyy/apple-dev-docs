@@ -23,11 +23,11 @@ class func disambiguation(with dateComponentsRangesToDisambiguate: [INDateCompon
 + (instancetype) disambiguationWithDateComponentsRangesToDisambiguate:(NSArray<INDateComponentsRange *> *) dateComponentsRangesToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INDateComponentsRangeResolutionResult`](../indatecomponentsrangeresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you cannot resolve the object uniquely and need the user to select from a limited set of possible values.
 

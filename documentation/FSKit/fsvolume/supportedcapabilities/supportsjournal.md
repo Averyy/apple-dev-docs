@@ -19,7 +19,7 @@ var supportsJournal: Bool { get set }
 @property (nonatomic) BOOL supportsJournal;
 ```
 
-#### Discussion
+## Discussion
 
 This property doesn’t necessarily mean the volume is actively using a journal.
 

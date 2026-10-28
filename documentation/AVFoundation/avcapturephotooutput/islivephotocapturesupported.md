@@ -22,7 +22,7 @@ var isLivePhotoCaptureSupported: Bool { get }
 @property (nonatomic, readonly, getter=isLivePhotoCaptureSupported) BOOL livePhotoCaptureSupported;
 ```
 
-#### Discussion
+## Discussion
 
 Live Photo captures both a still image and a short movie centered on the moment of capture, and the system presents them together in user interfaces such as the Photos app.
 

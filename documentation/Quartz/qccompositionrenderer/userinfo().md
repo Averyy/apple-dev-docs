@@ -22,11 +22,11 @@ func userInfo() -> NSMutableDictionary!
 - (NSMutableDictionary *) userInfo;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable dictionary.
 
-#### Discussion
+## Discussion
 
 The `userInfo` dictionary is shared—there is one per Quartz Composer context. In fact, it is the same dictionary as the one available for the plug-in execution context for instances of the [`QCPlugIn`](../qcplugin.md) class.
 

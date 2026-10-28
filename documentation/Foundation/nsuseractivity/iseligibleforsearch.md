@@ -29,7 +29,7 @@ var isEligibleForSearch: Bool { get set }
 
 - [Creating a user activity object](../creating-a-user-activity-object.md)
 
-#### Discussion
+## Discussion
 
 If you aren’t yet using App Intents and want to add your user activity objects to the Spotlight indexes, set the value in this property to `true`. When this property is `true` and the user activity object is current, Spotlight indexes the activity so it can appear in search results. Set this property to `false` if you are already indexing [`AppEntity`](../../AppIntents/appentity.md) types or don’t want Spotlight to include someone’s activity-related information in search results. The default value of this property is `false`.
 

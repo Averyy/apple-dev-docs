@@ -23,7 +23,7 @@ func presentationAnchor() -> MSPresentationAnchor?
 - (MSPresentationAnchor) presentationAnchor;
 ```
 
-#### Return Value
+## Return Value
 
 The interface element in your app that the system uses to display HomePod configuration information.
 

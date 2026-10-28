@@ -19,7 +19,7 @@ var profileSpace: Int16 { get set }
 @property (nonatomic) int16_t profileSpace;
 ```
 
-#### Discussion
+## Discussion
 
 This value maps to the [`kCMHEVCTemporalLevelInfoKey_ProfileSpace`](../../CoreMedia/kcmhevctemporallevelinfokey_profilespace.md) sample buffer attachment, and is `-1` if this information isn’t available.
 

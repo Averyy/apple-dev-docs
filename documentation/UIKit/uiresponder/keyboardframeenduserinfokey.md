@@ -23,7 +23,7 @@ class let keyboardFrameEndUserInfoKey: String
 extern NSString * const UIKeyboardFrameEndUserInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSValue`](../../Foundation/nsvalue.md) object that contains a [`CGRect`](../../CoreFoundation/cgrect.md) for identifying the frame rectangle of the keyboard (in the screen’s coordinate space) after animating the keyboard. The frame rectangle reflects the current orientation of the device.
 

@@ -18,11 +18,11 @@ Compares certain members of two dictionaries with isEqualTo().
 bool isEqualTo(const OSDictionary *aDictionary, const OSCollection *keys) const;
 ```
 
-#### Return Value
+## Return Value
 
 True if both dictionaries have equal counts, every key exists in both, values for each key compare true with isEqualTo().
 
-#### Discussion
+## Discussion
 
 For each key in the given collection, both dictionaries must contain values for the key that compare successfully with isEqualTo().
 

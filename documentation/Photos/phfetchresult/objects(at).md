@@ -24,11 +24,11 @@ func objects(at indexes: IndexSet) -> [ObjectType]
 - (NSArray<id> *) objectsAtIndexes:(NSIndexSet *) indexes;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the objects in the fetch result at the indexes specified by `indexes`.
 
-#### Discussion
+## Discussion
 
 The ordering of the returned array follows the index set. That is, in the returned array, an object with a higher index in the index set comes after any object with a smaller index in the index set.
 

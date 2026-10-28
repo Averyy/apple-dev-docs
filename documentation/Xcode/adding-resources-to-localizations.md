@@ -5,11 +5,11 @@
 
 Include more resources in the localizations you add to your project.
 
-#### Overview
+## Overview
 
 As you add more resources to your project, you can also add them to your localizations. Perform this step before you export localizations so that placeholder resources appear in the localization export folders.
 
-##### Make resources localizable
+### Make resources localizable
 
 In the Project navigator, select the resource. Then in the inspector, under Localization, click Localize. In the dialog that appears, choose the localizations to add to the resource from the pop-up menu, and click Localize.
 

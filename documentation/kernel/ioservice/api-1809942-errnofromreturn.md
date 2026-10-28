@@ -12,11 +12,11 @@ virtual int errnoFromReturn(
  IOReturnrtn );
 ```
 
-#### Return Value
+## Return Value
 
 The BSD `errno` or `EIO` if unknown.
 
-#### Overview
+## Overview
 
 BSD defines its own return codes for its functions in `sys/errno.h`, and I/O Kit families may need to supply compliant results in BSD shims. Results are available for the standard return codes in `IOReturn.h` in IOService, while subclasses may implement this method to interpret family dependent return codes.
 

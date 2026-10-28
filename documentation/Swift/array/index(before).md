@@ -21,7 +21,7 @@ Returns the position immediately before the given index.
 func index(before i: Int) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The index immediately before `i`.
 

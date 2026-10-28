@@ -17,7 +17,7 @@ The user performed a gesture to present an NFC display.
 case presentation
 ```
 
-#### Discussion
+## Discussion
 
 This gesture can be a double-click of the side button on Face ID devices, or of the Home button on Touch ID devices.
 

@@ -19,7 +19,7 @@ var userStyleSheetEnabled: Bool { get set }
 @property (nonatomic) BOOL userStyleSheetEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Set to [`true`](../../Swift/true.md) if the user style sheets should be enabled in the web view, otherwise [`false`](../../Swift/false.md).
 

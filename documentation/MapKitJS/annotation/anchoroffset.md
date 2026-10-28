@@ -16,7 +16,7 @@ get anchorOffset(): DOMPoint;
 set anchorOffset(value: DOMPoint);
 ```
 
-#### Discussion
+## Discussion
 
 By default, the annotation’s anchor point is the bottom center of the element.
 

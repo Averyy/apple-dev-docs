@@ -19,11 +19,11 @@ class var highlightedBranchImage: NSImage? { get }
 @property (class, strong, readonly, nullable) NSImage * highlightedBranchImage;
 ```
 
-#### Return Value
+## Return Value
 
 The default image used for branch `NSBrowserCell` objects that are highlighted. This is a lighter version of the image returned by [`branchImage`](./branchimage.md).
 
-#### Discussion
+## Discussion
 
 Override this method if you want a different image.
 

@@ -25,7 +25,7 @@ func CGPDFScannerPopDictionary(_ scanner: CGPDFScannerRef, _ value: UnsafeMutabl
 extern bool CGPDFScannerPopDictionary(CGPDFScannerRef scanner, CGPDFDictionaryRef*value);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the PDF dictionary object is retrieved successfully; otherwise, [`false`](../Swift/false.md).
 

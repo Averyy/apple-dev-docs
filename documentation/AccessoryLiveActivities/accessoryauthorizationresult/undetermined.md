@@ -16,7 +16,7 @@ An option that indicates the system hasn’t shown the authorization prompt to t
 case undetermined
 ```
 
-#### Discussion
+## Discussion
 
 An `.undetermined` authorization result indicates that the person hasn’t seen the authorization prompt that asks for permission to forward iOS system notifications and Live Activities to your accessory. If they see the authorization prompt and dismiss it, the [`AccessoryAuthorizationResult`](../accessoryauthorizationresult.md) changes to [`AccessoryAuthorizationResult.deny`](./deny.md).
 

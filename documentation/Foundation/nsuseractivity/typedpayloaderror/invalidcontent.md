@@ -21,7 +21,7 @@ A decoding error that indicates that the user info dictionary is empty or invali
 case invalidContent
 ```
 
-#### Discussion
+## Discussion
 
 The [`typedPayload(_:)`](../typedpayload%28_%29.md) method throws this error.
 

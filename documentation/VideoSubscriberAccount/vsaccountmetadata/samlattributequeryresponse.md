@@ -24,7 +24,7 @@ var samlAttributeQueryResponse: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * SAMLAttributeQueryResponse;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if you didn’t specify any SAML attributes in your [`VSAccountMetadataRequest`](../vsaccountmetadatarequest.md) object or if the person doesn’t have a valid authentication session with the account provider.
 

@@ -19,7 +19,7 @@ Dequeues a configured reusable cell object.
 - (UICollectionViewCell *) dequeueConfiguredReusableCellWithRegistration:(UICollectionViewCellRegistration *) registration forIndexPath:(NSIndexPath *) indexPath item:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 A configured reusable cell object.
 

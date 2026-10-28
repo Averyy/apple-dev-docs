@@ -16,7 +16,7 @@ The maximum tolerance to be used when calibrating a logical element value.
 #define kIOHIDElementCalibrationSaturationMaxKey
 ```
 
-#### Discussion
+## Discussion
 
 The saturation property is used to allow for slight differences in the minimum and maximum value returned by an element.
 

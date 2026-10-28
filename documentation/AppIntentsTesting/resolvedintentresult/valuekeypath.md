@@ -21,7 +21,7 @@ A structure that enables key-path syntax for the intent result.
 struct ValueKeyPath
 ```
 
-#### Overview
+## Overview
 
 You normally don’t use this type directly, instead you use it indirectly when writing key paths like `\.value`.
 

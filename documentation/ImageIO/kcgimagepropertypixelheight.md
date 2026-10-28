@@ -25,7 +25,7 @@ let kCGImagePropertyPixelHeight: CFString
 extern CFStringRef const kCGImagePropertyPixelHeight;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CFNumber`](../CoreFoundation/cfnumber.md).
 

@@ -21,7 +21,7 @@ Returns a ray that’s rotated by the specified quaternion.
 func rotated(by quaternion: simd_quatf) -> Ray3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns A ray with a direction that’s rotated by the specified quaternion.
 

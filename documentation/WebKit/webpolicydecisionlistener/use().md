@@ -20,7 +20,7 @@ func use()
 - (void) use;
 ```
 
-#### Discussion
+## Discussion
 
 If there are pending policy decisions, the next policy delegate method has the opportunity to decide what to do with the resource. This will be either the next navigation policy delegate (if there is a redirect), or the content policy delegate. If there are no pending policy decisions, the resource will be displayed if possible. If there is no document view available to display the resource, then the webView:unableToImplementPolicyWithError:frame: message will be sent to the web view policy delegate with an appropriate error. Invoking this method creates any new windows needed to handle the resource.
 

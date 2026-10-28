@@ -23,7 +23,7 @@ func alphaComposite(_ compositeMode: vImage.CompositeMode<Pixel_F>, topLayer: vI
 
 Available when `Format` is `vImage.InterleavedFx4`.
 
-#### Discussion
+## Discussion
 
 This function treats `self` as the bottom layer and both pixel buffers must have alpha as their first channel.
 

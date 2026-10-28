@@ -30,7 +30,7 @@ var isBookingAvailable: Bool { get set }
 @property (atomic, getter=isBookingAvailable) BOOL bookingAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md). Change it to [`false`](../../Swift/false.md) if the specified time slot is unavailable, either because the restaurant is fully booked at that time or because it cannot accommodate a party of the specified size at that time.
 

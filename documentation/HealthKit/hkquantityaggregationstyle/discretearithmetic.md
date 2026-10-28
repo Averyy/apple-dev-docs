@@ -24,7 +24,7 @@ case discreteArithmetic
 HKQuantityAggregationStyleDiscreteArithmetic
 ```
 
-#### Discussion
+## Discussion
 
 Use discrete types to monitor changes in a value over time. Body mass, heart rate, temperature, and respiratory rate are all discrete quantity types. You can also query for the minimum or maximum value in a given time period.
 

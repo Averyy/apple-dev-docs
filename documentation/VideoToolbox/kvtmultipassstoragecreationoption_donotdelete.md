@@ -24,7 +24,7 @@ let kVTMultiPassStorageCreationOption_DoNotDelete: CFString
 extern CFStringRef const kVTMultiPassStorageCreationOption_DoNotDelete;
 ```
 
-#### Discussion
+## Discussion
 
 If the backing store file did not exist when the storage was created, the file will be deleted when the multipass storage object is finalized, unless you set this option to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) in the options dictionary.
 

@@ -24,7 +24,7 @@ The library treats the specified keys as secrets.
 case specific(Set<KeyType>)
 ```
 
-#### Discussion
+## Discussion
 
 Use this case when you have a known set of keys that contain sensitive information. All other keys will be treated as non-secret.
 

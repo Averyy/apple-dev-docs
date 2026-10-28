@@ -28,7 +28,7 @@ protocol MTLRasterizationRateMap : NSObjectProtocol, Sendable
 
 - [Rendering with a rasterization rate map](./rendering-with-a-rasterization-rate-map.md)
 
-#### Overview
+## Overview
 
 Use a rasterization rate map to reduce rendering quality in less-important or less-sampled regions of the render target, such as areas affected by blur effects or a far-away cascade of a shadow map.
 
@@ -38,7 +38,7 @@ Don’t implement this protocol yourself; instead, create an [`MTLRasterizationR
 
 To apply a rasterization rate map to a render pass, set the render pass descriptor’s [`rasterizationRateMap`](./mtlrenderpassdescriptor/rasterizationratemap.md) property.
 
-##### Configuring the rate map
+### Configuring the rate map
 
 A rasterization rate map specifies the size of the viewport coordinate space in logical units and one or more *layer maps*. A layer map partitions the viewport coordinate space into a 2D grid of cells and defines the rasterization rate for each cell. If you aren’t using layered rendering, provide a single layer map; otherwise, provide one layer map for each layer. For more information about layered rendering, see [Rendering to multiple texture slices in a draw command](./rendering-to-multiple-texture-slices-in-a-draw-command.md).
 

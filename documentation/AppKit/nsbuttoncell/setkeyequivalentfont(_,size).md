@@ -21,7 +21,7 @@ func setKeyEquivalentFont(_ fontName: String, size fontSize: CGFloat)
 - (void) setKeyEquivalentFont:(NSString *) fontName size:(CGFloat) fontSize;
 ```
 
-#### Discussion
+## Discussion
 
 This method redisplays the button if necessary. It does nothing if the button doesn’t have a key equivalent associated with it. The default font is the same as that used to draw the title.
 

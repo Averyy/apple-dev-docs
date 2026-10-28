@@ -19,7 +19,7 @@ var currentLayout: NSCollectionViewLayout { get }
 @property (readonly) NSCollectionViewLayout * currentLayout;
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to retrieve the initial layout attributes for elements of the collection view. If the transition is ultimately cancelled, the collection view animates its items back to the attributes provided by this object.
 

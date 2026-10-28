@@ -25,7 +25,7 @@ static let NSUndoManagerDidRedoChange: NSNotification.Name
 extern NSNotificationName const NSUndoManagerDidRedoChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the [`UndoManager`](../../undomanager.md) object. This notification doesn’t contain a `userInfo` dictionary.
 

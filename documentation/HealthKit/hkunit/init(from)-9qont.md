@@ -24,11 +24,11 @@ convenience init(from string: String)
 + (instancetype) unitFromString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 The unit object described by the string. If the string does not represent a valid unit, this method throws an exception ([`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md)).
 
-#### Discussion
+## Discussion
 
 You can create unit objects using a string representation of that unit, which is a convenient way to create complex, compound units. A few sample units are shown below.
 

@@ -15,7 +15,7 @@ Sets the terminal type of the stream.
 kern_return_t SetTerminalType(IOUserVideoStreamTerminalType in_terminal_type);
 ```
 
-#### Discussion
+## Discussion
 
 You can change the terminal type dynamically. On success, the system sends a notification to the host to update the object state.
 

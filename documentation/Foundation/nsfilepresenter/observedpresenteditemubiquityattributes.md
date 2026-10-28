@@ -23,7 +23,7 @@ optional var observedPresentedItemUbiquityAttributes: Set<URLResourceKey> { get 
 @property (strong, readonly) NSSet<NSString *> * observedPresentedItemUbiquityAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 Valid attributes include the [`isUbiquitousItemKey`](../urlresourcekey/isubiquitousitemkey.md) attribute and any attribute whose name starts with `ubiquitousItem` or `ubiquitousSharedItem` (or `NSURLUbiquitousItem` or `NSURLUbiquitousSharedItem` in Objective-C).
 

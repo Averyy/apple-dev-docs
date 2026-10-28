@@ -17,7 +17,7 @@ Creates an action that initiates a cellular conversation using information from 
 init(_ recentConversation: ConversationHistoryManager.RecentConversation)
 ```
 
-#### Discussion
+## Discussion
 
 Starting a cellular conversation from a recent conversation uses the same information associated with the conversation, including all handles, the account, and other information.
 

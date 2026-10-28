@@ -21,11 +21,11 @@ A reference to data that describes a credential that represents a user name and 
 object AssetCredentialUserNameAndPassword
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.asset.credential.userpassword` as the declaration type.
 
-##### Asset example
+### Asset example
 
 ```json
 {

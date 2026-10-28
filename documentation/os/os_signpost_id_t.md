@@ -25,7 +25,7 @@ typealias os_signpost_id_t = UInt64
 typedef uint64_t os_signpost_id_t;
 ```
 
-#### Discussion
+## Discussion
 
 Multiple intervals with matching log objects and interval names can be in-flight simultaneously. In order for data-processing tools to correctly match the beginning and end of an interval, you need to identify each interval with a unique signpost identifier. Use the first strategy in the list below that matches your use case:
 

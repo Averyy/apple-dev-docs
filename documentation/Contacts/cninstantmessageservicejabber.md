@@ -24,7 +24,7 @@ let CNInstantMessageServiceJabber: String
 extern NSString * const CNInstantMessageServiceJabber;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

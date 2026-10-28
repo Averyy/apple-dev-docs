@@ -21,7 +21,7 @@ func concatenated(_ arrays: some Collection<MLXArray>, axis: Int = 0, stream: St
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 

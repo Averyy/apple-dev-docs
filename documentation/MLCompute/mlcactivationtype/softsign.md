@@ -23,7 +23,7 @@ case softSign
 MLCActivationTypeSoftSign
 ```
 
-#### Discussion
+## Discussion
 
 This activation type implements the function:
 

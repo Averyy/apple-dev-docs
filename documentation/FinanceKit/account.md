@@ -16,7 +16,7 @@ A structure that describes a financial account.
 enum Account
 ```
 
-#### Overview
+## Overview
 
 Accounts can include a variety of financial account types such as a bank account, a credit card, or a college fund.
 

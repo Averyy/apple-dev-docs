@@ -21,7 +21,7 @@ A notification the framework posts when the audio engine configuration changes.
 static let AVAudioEngineConfigurationChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 When the audio engine’s I/O unit observes a change to the audio input or output hardware’s channel count or sample rate, the audio engine stops, uninitializes itself, and issues this notification. The nodes remain in an attached and connected state with the previously set formats. The app must reestablish connections if the connection formats need to change.
 

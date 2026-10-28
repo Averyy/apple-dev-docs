@@ -22,7 +22,7 @@ A view of a string’s contents as a collection of Unicode scalar values.
 struct UnicodeScalarView
 ```
 
-#### Overview
+## Overview
 
 You can access a string’s view of Unicode scalar values by using its `unicodeScalars` property. Unicode scalar values are the 21-bit codes that are the basic unit of Unicode. Each scalar value is represented by a `Unicode.Scalar` instance and is equivalent to a UTF-32 code unit.
 

@@ -19,7 +19,7 @@ func pasteAsRichText(_ sender: Any?)
 - (void) pasteAsRichText:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The text is inserted at the insertion point if there is one, otherwise replacing the selection.
 

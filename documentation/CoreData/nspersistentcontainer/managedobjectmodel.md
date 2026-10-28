@@ -29,7 +29,7 @@ var managedObjectModel: NSManagedObjectModel { get }
 
 - [Setting up a Core Data stack](../setting-up-a-core-data-stack.md)
 
-#### Discussion
+## Discussion
 
 This property contains a reference to the [`NSManagedObjectModel`](../nsmanagedobjectmodel.md) object associated with this persistent container.
 

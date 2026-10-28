@@ -20,7 +20,7 @@ Helper function to create a VTCompressionSession that restores the video encoder
 - (VTCompressionSessionRef) createResumableCompressionSessionWithAllocator:(CFAllocatorRef) allocator width:(int32_t) width height:(int32_t) height codecType:(CMVideoCodecType) codecType encoderSpecification:(NSDictionary *) encoderSpecification sourceImageBufferAttributes:(NSDictionary *) sourceImageBufferAttributes compressedDataAllocator:(CFAllocatorRef) compressedDataAllocator outputCallback:(VTCompressionOutputCallback) outputCallback outputCallbackRefCon:(void *) outputCallbackRefCon returningError:(NSError **) errorOut;
 ```
 
-#### Discussion
+## Discussion
 
 Clients using VTCompressionSession directly to produce encoded video samples for writing the segment must use this method to create the session. The client should perform additional configurations on the returned compression session, but must apply the same configurations for each segment of the track.
 

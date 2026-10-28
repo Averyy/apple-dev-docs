@@ -31,7 +31,7 @@ class SKLabelNode
 - [Getting Started with Nodes](./getting-started-with-nodes.md)
 - [Warping SpriteKit Content By Using an Effect Node](./warping-spritekit-content-by-using-an-effect-node.md)
 
-#### Overview
+## Overview
 
 `SKLabelNode` allows you to render text in your scene. You can define a custom style using properties such as [`fontName`](./sklabelnode/fontname.md) and [`fontColor`](./sklabelnode/fontcolor.md), or configure the look of your text with an [`NSAttributedString`](../Foundation/nsattributedstring.md).
 

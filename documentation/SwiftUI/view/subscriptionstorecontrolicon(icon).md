@@ -22,7 +22,7 @@ nonisolated
 func subscriptionStoreControlIcon(@ViewBuilder icon: @escaping (Product, Product.SubscriptionInfo) -> some View) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 You can adjust this view to provide a different appearance for each subscription option.
 

@@ -22,7 +22,7 @@ func GLKVector2MultiplyScalar(_ vector: GLKVector2, _ value: Float) -> GLKVector
 static GLKVector2 GLKVector2MultiplyScalar(GLKVector2 vector, float value);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 

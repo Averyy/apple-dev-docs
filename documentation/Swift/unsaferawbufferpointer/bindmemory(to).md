@@ -22,11 +22,11 @@ Binds this buffer’s memory to the specified type and returns a typed buffer of
 func bindMemory<T>(to type: T.Type) -> UnsafeBufferPointer<T> where T : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 A typed buffer of the newly bound memory. The memory in this region is bound to `T`, but has not been modified in any other way. The typed buffer references `self.count / MemoryLayout<T>.stride` instances of `T`.
 
-#### Discussion
+## Discussion
 
 Use the `bindMemory(to:)` method to bind the memory referenced by this buffer to the type `T`. The memory must be uninitialized or initialized to a type that is layout compatible with `T`. If the memory is uninitialized, it is still uninitialized after being bound to `T`.
 

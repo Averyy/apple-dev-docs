@@ -5,7 +5,7 @@
 
 Get a depth map with a photo to create effects like the system camera’s Portrait mode (on compatible devices).
 
-#### Overview
+## Overview
 
 On iOS devices with a back-facing dual camera or a front-facing TrueDepth camera, the capture system can record depth information. A depth map is like an image; however, instead of each pixel providing a color, it indicates distance from the camera to that part of the image (either in absolute terms, or relative to other pixels in the depth map).
 
@@ -15,7 +15,7 @@ You can use a depth map together with a photo to create image-processing effects
 
 You can add depth capture to many of the other photography workflows covered in [Capturing still and Live Photos](./capturing-still-and-live-photos.md) by adding the following steps.
 
-##### Prepare for depth photo capture
+### Prepare for depth photo capture
 
 To capture depth maps, you’ll need to first select a [`builtInDualCamera`](./avcapturedevice/devicetype-swift.struct/builtindualcamera.md) or [`builtInTrueDepthCamera`](./avcapturedevice/devicetype-swift.struct/builtintruedepthcamera.md) capture device as your session’s video input. Even if an iOS device has a dual camera or TrueDepth camera, selecting the default back- or front-facing camera doesn’t enable depth capture.
 
@@ -45,7 +45,7 @@ self.captureSession.commitConfiguration()
 
 > **Note**:  Enabling depth capture on a dual camera locks the zoom factor of both the wide and telephoto cameras.
 
-##### Choose settings
+### Choose settings
 
 Once your photo output is ready for depth capture, you can request that any individual photos capture a depth map along with the color image. Create an [`AVCapturePhotoSettings`](./avcapturephotosettings.md) object, choosing the format for the color image. Then, enable depth capture and depth output (and any other settings you’d like for that photo) and call the [`capturePhoto(with:delegate:)`](./avcapturephotooutput/capturephoto%28with,delegate%29.md) method.
 
@@ -58,7 +58,7 @@ let captureProcessor = PhotoCaptureProcessor()
 photoOutput.capturePhoto(with: photoSettings, delegate: captureProcessor)
 ```
 
-##### Handle results
+### Handle results
 
 After a capture, the photo output calls your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](./avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method, providing the photo and captured depth data as an [`AVCapturePhoto`](./avcapturephoto.md) object.
 
@@ -66,7 +66,7 @@ If you plan to use the captured depth data immediately—for example, to display
 
 Otherwise, the capture output embeds depth data and depth-related metadata when you use the [`fileDataRepresentation()`](./avcapturephoto/filedatarepresentation%28%29.md) method to produce file data for saving the photo. If you add the resulting file to the Photos library, other apps (including the system Photos app) automatically recognize the depth data within and can apply depth-based image processing effects. (If you need to disable this option, see the [`embedsDepthDataInPhoto`](./avcapturephotosettings/embedsdepthdatainphoto.md) setting).
 
-##### About disparity, depth, and accuracy
+### About disparity, depth, and accuracy
 
 When you enable depth capture with the back-facing dual camera on compatible devices (see [iOS Device Compatibility Reference](https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013599)), the system captures imagery using both cameras. Because the two parallel cameras are a small distance apart on the back of the device, similar features found in both images show a parallax shift: objects that are closer to the camera shift by a greater distance between the two images. The capture system uses this difference, or *disparity*, to infer the relative distances from the camera to objects in the image, as shown below.
 

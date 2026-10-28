@@ -25,7 +25,7 @@ static let discard: HTTPCookiePropertyKey
 extern NSHTTPCookiePropertyKey const NSHTTPCookieDiscard;
 ```
 
-#### Discussion
+## Discussion
 
 String value must be either `"TRUE"` or `"FALSE"`. This cookie attribute is optional. The default is `"FALSE"`, unless this cookie is version 1 or greater and a value for `NSHTTPCookieMaximumAge` is not specified, in which case it is assumed to be `"TRUE"`.
 

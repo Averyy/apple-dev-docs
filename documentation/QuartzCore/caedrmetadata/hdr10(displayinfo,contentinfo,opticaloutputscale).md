@@ -23,7 +23,7 @@ class func hdr10(displayInfo displayData: Data?, contentInfo contentData: Data?,
 + (CAEDRMetadata *) HDR10MetadataWithDisplayInfo:(NSData *) displayData contentInfo:(NSData *) contentData opticalOutputScale:(float) scale;
 ```
 
-#### Discussion
+## Discussion
 
 The MDCV and CLLI message formats are defined in ISO/IEC 23008-2:2017.
 

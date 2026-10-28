@@ -15,7 +15,7 @@ The object for applying styles to table rows that meet certain conditions.
 object ConditionalTableRowStyle
 ```
 
-#### Discussion
+## Discussion
 
 Table rows can have conditional styles — styles applied only to rows that meet certain conditions. You can use any table row style as a conditional style.
 
@@ -23,7 +23,7 @@ For example, you might define a conditional table row style that changes the bac
 
 You can use this object in [`TableRowStyle`](./tablerowstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

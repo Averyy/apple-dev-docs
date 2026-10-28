@@ -20,7 +20,7 @@ func CGDisplayPixelsWide(_ display: CGDirectDisplayID) -> Int
 extern size_t CGDisplayPixelsWide(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 The display width in pixel units.
 

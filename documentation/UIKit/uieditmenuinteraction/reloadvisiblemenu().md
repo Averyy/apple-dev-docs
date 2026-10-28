@@ -22,7 +22,7 @@ func reloadVisibleMenu()
 - (void) reloadVisibleMenu;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to update the actions the menu displays. The method calls [`editMenuInteraction(_:menuFor:suggestedActions:)`](../uieditmenuinteractiondelegate/editmenuinteraction%28_,menufor,suggestedactions%29.md) and updates the UI with the menu the delegate returns. The method has no effect if no menu is present.
 

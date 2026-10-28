@@ -16,7 +16,7 @@ An identifier for the order type associated with the order.
 required DOMString orderTypeIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This value must correspond with your signing certificate and isn’t displayed to the customer.
 

@@ -12,7 +12,7 @@ The name to use for C modules.
 final var pkgConfig: String?
 ```
 
-#### Discussion
+## Discussion
 
 If present, the Swift Package Manager searches for a `<name>.pc` file to get the required additional flags for a system target.
 

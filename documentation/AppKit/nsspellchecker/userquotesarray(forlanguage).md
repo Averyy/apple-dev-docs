@@ -19,7 +19,7 @@ func userQuotesArray(forLanguage language: String) -> [String]
 - (NSArray<NSString *> *) userQuotesArrayForLanguage:(NSString *) language;
 ```
 
-#### Return Value
+## Return Value
 
 An array of quote replacements used by the [`quotes`](./optionkey/quotes.md) key-value pair.
 

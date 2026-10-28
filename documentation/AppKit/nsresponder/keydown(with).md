@@ -19,7 +19,7 @@ func keyDown(with event: NSEvent)
 - (void) keyDown:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver can interpret `event` itself, or pass it to the system input manager using [`interpretKeyEvents(_:)`](./interpretkeyevents%28_%29.md). The default implementation simply passes this message to the next responder.
 

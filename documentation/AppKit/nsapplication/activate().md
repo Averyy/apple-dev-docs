@@ -23,7 +23,7 @@ func activate()
 
 - [Passing control from one app to another with cooperative activation](../passing-control-from-one-app-to-another-with-cooperative-activation.md)
 
-#### Discussion
+## Discussion
 
 Use this method to request app activation; calling this method doesn’t guarantee app activation. For cooperative activation, the other app should call [`yieldActivation(to:)`](./yieldactivation%28to%29.md) or equivalent before the target app invokes [`activate()`](./activate%28%29.md).
 

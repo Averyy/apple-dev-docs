@@ -21,7 +21,7 @@ var adDescription: String? { get set }
 @property (nonatomic, strong, nullable) NSString * adDescription;
 ```
 
-#### Discussion
+## Discussion
 
 This property is not used.
 

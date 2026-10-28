@@ -19,7 +19,7 @@ var audioUnit: AudioUnit { get }
 @property (readonly) AudioUnit audioUnit;
 ```
 
-#### Discussion
+## Discussion
 
 The audio unit associated with the generic view. On error, returns `nil`.
 

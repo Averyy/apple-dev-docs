@@ -25,7 +25,7 @@ var mainDocumentURL: URL? { get }
 @property (copy, readonly, nullable) NSURL * mainDocumentURL;
 ```
 
-#### Discussion
+## Discussion
 
 This URL is used for the cookie “same domain as main document” policy.
 

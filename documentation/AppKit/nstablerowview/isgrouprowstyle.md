@@ -19,7 +19,7 @@ var isGroupRowStyle: Bool { get set }
 @property (getter=isGroupRowStyle) BOOL groupRowStyle;
 ```
 
-#### Discussion
+## Discussion
 
 When [`true`](../../Swift/true.md) this row is a group row and will draw appropriately.
 

@@ -22,7 +22,7 @@ func GLKVector3Maximum(_ vectorLeft: GLKVector3, _ vectorRight: GLKVector3) -> G
 static GLKVector3 GLKVector3Maximum(GLKVector3 vectorLeft, GLKVector3 vectorRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 

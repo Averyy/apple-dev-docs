@@ -15,7 +15,7 @@ The header of a configuration descriptor.
 struct IOUSBConfigurationDescHeader;
 ```
 
-#### Overview
+## Overview
 
 Use this method to get the total length of the descriptor. See “USB 2.0 9.6.3: Configuration.”
 

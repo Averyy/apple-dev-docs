@@ -21,7 +21,7 @@ func argMin(_ array: MLXArray, axis: Int, keepDims: Bool = false, stream: Stream
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray(4 ..< 16, [4, 3])
@@ -30,7 +30,7 @@ let array = MLXArray(4 ..< 16, [4, 3])
 let i = array.argMin(axis=0)
 ```
 
-##### See Also
+### See Also
 
 - [Indexes](./indexes.md)
 - [`argMin(_:keepDims:stream:)`](./argmin%28_,keepdims,stream%29.md)

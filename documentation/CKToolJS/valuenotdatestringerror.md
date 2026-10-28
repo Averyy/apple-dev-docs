@@ -15,7 +15,7 @@ An error a validator emits when a value isn’t a date string.
 interface ValueNotDateStringError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueNotConvertibleToTypeError`.
 

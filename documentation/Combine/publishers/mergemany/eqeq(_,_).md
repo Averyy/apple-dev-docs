@@ -23,7 +23,7 @@ static func == (lhs: Publishers.MergeMany<Upstream>, rhs: Publishers.MergeMany<U
 
 Available when `Upstream` conforms to `Publisher` and `Equatable`.
 
-#### Return Value
+## Return Value
 
 `true` if the publishers have equal `publishers` properties; otherwise `false`.
 

@@ -31,7 +31,7 @@ var accessLog: AVPlayerItemAccessLog? { get async }
 - (void) fetchAccessLogWithCompletionHandler:(void (^)(AVPlayerItemAccessLog *accessLog)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 An AVPlayerItemAccessLog provides methods to retrieve the network access log in a format suitable for serialization. If nil is returned then there is no logging information currently available for this AVPlayerItem. An AVPlayerItemNewAccessLogEntryNotification will be posted when new logging information becomes available. However, accessLog might already return a non-nil value even before the first notification is posted.
 

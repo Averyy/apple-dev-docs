@@ -13,7 +13,7 @@ kern_return_t IOAudioIsOutput(
    int *out);
 ```
 
-#### Return Value
+## Return Value
 
 kern_return_t
 

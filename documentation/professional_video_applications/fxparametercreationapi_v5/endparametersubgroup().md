@@ -20,7 +20,7 @@ func endParameterSubGroup() -> Bool
 - (BOOL) endParameterSubGroup;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the application successfully closes the current parameter sub group; `NO` otherwise.
 

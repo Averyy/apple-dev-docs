@@ -19,7 +19,7 @@ var isOpaque: Bool { get }
 @property (readonly, getter=isOpaque) BOOL opaque;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md) to reflect the fact that views do no drawing by default. Subclasses can override this property and return [`true`](../../Swift/true.md) to indicate that the view completely covers its frame rectangle with opaque content. Doing so can improve performance during drawing operations by eliminating the need to render content behind the view.
 

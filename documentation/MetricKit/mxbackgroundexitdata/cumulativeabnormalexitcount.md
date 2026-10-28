@@ -25,7 +25,7 @@ var cumulativeAbnormalExitCount: Int { get }
 @property (readonly) NSUInteger cumulativeAbnormalExitCount;
 ```
 
-#### Discussion
+## Discussion
 
 The most common causes of an abnormal exit are uncaught Objective-C exceptions, calls to an abort function, and other conditions resulting in an abort signal.
 

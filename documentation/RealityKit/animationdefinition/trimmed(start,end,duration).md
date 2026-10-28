@@ -20,11 +20,11 @@ Edits the animation duration according to the specified time.
 func trimmed(start: TimeInterval? = nil, end: TimeInterval? = nil, duration: TimeInterval? = nil) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 A version of the animation shortened or lengthened according to the specified times.
 
-#### Discussion
+## Discussion
 
 If an argument property lies outside the underlying [`duration`](./duration.md), the animation plays back according to the characteristics of its [`repeatMode`](./repeatmode.md).
 

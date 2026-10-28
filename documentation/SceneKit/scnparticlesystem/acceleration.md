@@ -25,7 +25,7 @@ var acceleration: SCNVector3 { get set }
 @property (nonatomic) SCNVector3 acceleration;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to simulate effects such as wind or gravity on particles.
 

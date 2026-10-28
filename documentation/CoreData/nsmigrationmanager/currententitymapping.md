@@ -25,11 +25,11 @@ var currentEntityMapping: NSEntityMapping { get }
 @property (strong, readonly) NSEntityMapping * currentEntityMapping;
 ```
 
-#### Discussion
+## Discussion
 
 Each entity is processed a total of three times—instance creation, relationship creation, and validation.
 
-##### Special Considerations
+### Special Considerations
 
 You can observe this value using key-value observing.
 

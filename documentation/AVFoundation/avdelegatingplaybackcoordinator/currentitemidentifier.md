@@ -24,7 +24,7 @@ var currentItemIdentifier: String? { get }
 @property (nonatomic, readonly, nullable) NSString * currentItemIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The coordinator sets this value in a previous call to [`transitionToItem(withIdentifier:proposingInitialTimingBasedOn:)`](./transitiontoitem%28withidentifier,proposinginitialtimingbasedon%29.md).
 

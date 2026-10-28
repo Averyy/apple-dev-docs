@@ -21,7 +21,7 @@ The host address could not be found via DNS lookup.
 static var dnsLookupFailed: URLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error code is no longer used. You should expect to handle [`cannotFindHost`](./cannotfindhost.md) instead.
 

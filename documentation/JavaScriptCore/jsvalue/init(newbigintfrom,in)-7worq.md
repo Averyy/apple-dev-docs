@@ -22,11 +22,11 @@ init?(newBigIntFrom uint64: UInt64, in context: JSContext)
 + (JSValue *) valueWithNewBigIntFromUInt64:(uint64_t) uint64 inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 The JSValue representing a JavaScript value with type BigInt.
 
-#### Discussion
+## Discussion
 
 Create a new BigInt value from a uint64_t.
 

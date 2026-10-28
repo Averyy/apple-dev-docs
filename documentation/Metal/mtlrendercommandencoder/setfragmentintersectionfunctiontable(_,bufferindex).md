@@ -25,7 +25,7 @@ func setFragmentIntersectionFunctionTable(_ intersectionFunctionTable: (any MTLI
 - (void) setFragmentIntersectionFunctionTable:(id<MTLIntersectionFunctionTable>) intersectionFunctionTable atBufferIndex:(NSUInteger) bufferIndex;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the intersection function table at each index is `nil`.
 

@@ -21,7 +21,7 @@ Indicates that a control’s maximum value has been reached, such as when a slid
 static let maximum: SensoryFeedback.SelectionFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Only plays feedback on visionOS.
 

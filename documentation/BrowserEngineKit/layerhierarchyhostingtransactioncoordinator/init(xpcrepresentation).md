@@ -20,7 +20,7 @@ init(xpcRepresentation: xpc_object_t?) throws
 + (BELayerHierarchyHostingTransactionCoordinator *) coordinatorWithXPCRepresentation:(xpc_object_t) xpcRepresentation error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer can fail and throw an error if the `xpcRepresentation` doesn’t represent a transaction coordinator.
 

@@ -19,11 +19,11 @@ func hv_vcpu_set_sme_z_reg(_ vcpu: hv_vcpu_t, _ reg: hv_sme_z_reg_t, _ value: Un
 extern hv_return_t hv_vcpu_set_sme_z_reg(hv_vcpu_t vcpu, hv_sme_z_reg_t reg, const uint8_t *value, size_t length);
 ```
 
-#### Return Value
+## Return Value
 
 `HV_SUCCESS` on success, an error code otherwise.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You need to call this on the owning thread.
 

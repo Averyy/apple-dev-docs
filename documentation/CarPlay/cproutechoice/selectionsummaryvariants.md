@@ -21,7 +21,7 @@ var selectionSummaryVariants: [String]? { get }
 @property (nonatomic, copy, readonly, nullable) NSArray<NSString *> * selectionSummaryVariants;
 ```
 
-#### Discussion
+## Discussion
 
 When creating a [`CPRouteChoice`](../cproutechoice.md) object, localize each variant for display to the user. The system displays the first variant that fits in the available screen space, so arrange the variants from most to least preferred display order. The array contains at least one variant.
 

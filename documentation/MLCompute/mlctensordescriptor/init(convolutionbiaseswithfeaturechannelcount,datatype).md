@@ -23,7 +23,7 @@ convenience init?(convolutionBiasesWithFeatureChannelCount featureChannelCount: 
 + (instancetype) convolutionBiasesDescriptorWithFeatureChannelCount:(NSUInteger) featureChannelCount dataType:(MLCDataType) dataType;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer provides a convenient way for you to configure bias tensors.
 

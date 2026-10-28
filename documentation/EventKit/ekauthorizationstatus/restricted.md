@@ -24,7 +24,7 @@ case restricted
 EKAuthorizationStatusRestricted
 ```
 
-#### Discussion
+## Discussion
 
 The person can’t change your app’s authorization status, possibly due to active restrictions such as parental controls being in place.
 

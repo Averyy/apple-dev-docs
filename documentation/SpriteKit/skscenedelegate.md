@@ -37,7 +37,7 @@ protocol SKSceneDelegate : NSObjectProtocol
 - [Subclassing Scenes Versus Assigning a Delegate](./subclassing-scenes-versus-assigning-a-delegate.md)
 - [Use SpriteKit Objects within Scene Delegate Callbacks](./use-spritekit-objects-within-scene-delegate-callbacks.md)
 
-#### Overview
+## Overview
 
 The [`SKSceneDelegate`](./skscenedelegate.md) protocol is used to implement a delegate to be called whenever the scene is being animated. Typically, you supply a delegate when you want to use a scene without requiring the scene to be subclassed. The methods in this protocol all correspond to methods implemented by the [`SKScene`](./skscene.md) class. If the delegate implements a particular method, that method is called instead of the corresponding method on the scene object.
 

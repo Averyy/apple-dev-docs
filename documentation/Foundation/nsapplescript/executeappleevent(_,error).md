@@ -20,11 +20,11 @@ func executeAppleEvent(_ event: NSAppleEventDescriptor, error errorInfo: Autorel
 - (NSAppleEventDescriptor *) executeAppleEvent:(NSAppleEventDescriptor *) event error:(NSDictionary<NSString *,id> **) errorInfo;
 ```
 
-#### Return Value
+## Return Value
 
 The result of executing the event, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 Compiles the receiver before executing it if it is not already compiled.
 

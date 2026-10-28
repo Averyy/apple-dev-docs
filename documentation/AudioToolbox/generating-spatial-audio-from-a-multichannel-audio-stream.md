@@ -13,13 +13,13 @@ Convert 8-channel audio to 2-channel spatial audio by using a spatial mixer audi
 - macOS 13.0+
 - Xcode 15.4+
 
-#### Overview
+## Overview
 
 Spatial audio makes sound seem like it’s coming from all around you. To generate spatialized audio from a multichannel audio stream, you use a spatial mixer audio unit (AUSM). The audio streams can come from the output of a game engine, video player, or audio file.
 
 The sample app shows you how to create an AUSM, and how to configure its channel layout and stream format. It streams multichannel input from an audio file, and down-mixes it to 2-channel spatial audio.
 
-##### Create an audio unit spatial mixer
+### Create an audio unit spatial mixer
 
 The sample uses the pull model to get the input from an in-memory file streamer. The `OutputAU` class pulls input from the `AudioKernel`, which manages the AUSM. The AUSM pulls audio from `AudioFileReader` to get input. On macOS, the output unit uses [`kAudioUnitSubType_HALOutput`](./kaudiounitsubtype_haloutput.md) to interface with the audio device. On iOS, the interface is configured as  [`kAudioUnitSubType_RemoteIO`](./kaudiounitsubtype_remoteio.md).
 
@@ -55,7 +55,7 @@ err = setStreamFormatAndACL(inInputSampleRate,
 assert(err == noErr);
 ```
 
-##### Configure for spatial audio
+### Configure for spatial audio
 
 The sample sets the spatialization algorithm to [`AUSpatializationAlgorithm.spatializationAlgorithm_UseOutputType`](./auspatializationalgorithm/spatializationalgorithm_useoutputtype.md) for the highest-quality spatial rendering across different hardware.
 

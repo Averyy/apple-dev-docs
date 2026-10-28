@@ -20,7 +20,7 @@ A Boolean value that determines whether this action additively blends with the p
 var isAdditive: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 When `true`, the action’s animation output is relative to an absolute base value, and the animation system blends the result additively with the prior blend stage.
 

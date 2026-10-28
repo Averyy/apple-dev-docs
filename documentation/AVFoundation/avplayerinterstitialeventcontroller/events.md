@@ -25,7 +25,7 @@ var events: [AVPlayerInterstitialEvent]! { get set }
 @property (copy, null_resettable) NSArray<AVPlayerInterstitialEvent *> * events;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property to a non-`nil` value cancels and overrides all previously scheduled future interstitial events, including those that the primary item’s content specifies, such as directives carried by an HLS media playlists. Setting the value to an empty array clears the schedule or, if the server specifies interstitial events, reverts it to the server’s schedule.
 

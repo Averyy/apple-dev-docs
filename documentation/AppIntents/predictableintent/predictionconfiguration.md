@@ -23,7 +23,7 @@ A collection of predictions the system can use when it suggests the app intent.
 <Self> static var predictionConfiguration: Self.Prediction { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to offer descriptions of your app intent that the system can use when making predictions. In the implementation of this property, use a result builder to create one or more [`IntentPrediction`](../intentprediction.md) structures, and use these structures to describe a suggested action. To include data from your app intent in a description, initialize the [`IntentPrediction`](../intentprediction.md) type with key paths to parameters of your app intent. The following example creates an intent prediction for an app intent with a `name` property that serves as a parameter to that app intent.
 

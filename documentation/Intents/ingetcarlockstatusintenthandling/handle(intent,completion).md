@@ -28,7 +28,7 @@ func handle(intent: INGetCarLockStatusIntent) async -> INGetCarLockStatusIntentR
 - (void) handleGetCarLockStatus:(INGetCarLockStatusIntent *) intent completion:(void (^)(INGetCarLockStatusIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must access and return the current status of the car’s locks. If you are unable to access the data, return a response object whose result code indicates the reason for the failure.
 

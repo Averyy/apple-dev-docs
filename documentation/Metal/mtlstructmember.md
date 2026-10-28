@@ -24,7 +24,7 @@ class MTLStructMember
 @interface MTLStructMember : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`MTLStructMember`](./mtlstructmember.md) is part of the reflection API that allows Metal framework code to query details about an argument of a Metal shading language function. An [`MTLStructMember`](./mtlstructmember.md) instance describes the data type of one field in a struct that is passed as an [`MTLFunction`](./mtlfunction.md) argument, which is represented by [`MTLArgument`](./mtlargument.md).
 

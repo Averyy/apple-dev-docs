@@ -19,7 +19,7 @@ class MEEncodedOutgoingMessage
 @interface MEEncodedOutgoingMessage : NSObject
 ```
 
-#### Overview
+## Overview
 
 When MailKit invokes your message security handler’s [`encode(_:composeContext:completionHandler:)`](./memessageencoder/encode%28_,composecontext,completionhandler%29.md) method, it digitally signs and encrypts the message. After encoding the message data, create an instance of [`MEEncodedOutgoingMessage`](./meencodedoutgoingmessage.md) to pass back to MailKit. Set the [`isSigned`](./meencodedoutgoingmessage/issigned.md) and [`isEncrypted`](./meencodedoutgoingmessage/isencrypted.md) values to indicate how you encoded the message.
 

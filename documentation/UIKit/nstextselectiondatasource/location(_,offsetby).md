@@ -24,11 +24,11 @@ func location(_ location: any NSTextLocation, offsetBy offset: Int) -> (any NSTe
 - (id<NSTextLocation>) locationFromLocation:(id<NSTextLocation>) location withOffset:(NSInteger) offset;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSTextLocation, or nil` when the inputs don’t produce any legal location, such as when the input is an out of bounds index.
 
-#### Discussion
+## Discussion
 
 The offset value can be positive or negative indicating the logical direction.
 

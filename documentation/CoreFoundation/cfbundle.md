@@ -23,7 +23,7 @@ class CFBundle
 typedef struct __CFBundle * CFBundleRef;
 ```
 
-#### Overview
+## Overview
 
 CFBundle allows you to use a folder hierarchy called a bundle to organize and locate many types of application resources including images, sounds, localized strings, and executable code. In macOS, bundles can also be used by CFM applications to load and execute functions from Mach-O frameworks. You can use bundles to support multiple languages or execute your application on multiple operating environments.
 

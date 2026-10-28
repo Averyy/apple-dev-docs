@@ -25,7 +25,7 @@ func stop()
 - (void) stopQuery;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver first completes gathering any unprocessed results. If a query is stopped before the gathering phase finishes, it does not post an `NSMetadataQueryDidStartGatheringNotification` notification.
 

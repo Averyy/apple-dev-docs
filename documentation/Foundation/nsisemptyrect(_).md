@@ -20,7 +20,7 @@ func NSIsEmptyRect(_ aRect: NSRect) -> Bool
 extern BOOL NSIsEmptyRect(NSRect aRect);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `aRect` encloses no area at all—that is, if its width or height is 0 or negative, otherwise [`false`](../Swift/false.md).
 

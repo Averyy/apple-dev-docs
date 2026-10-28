@@ -24,7 +24,7 @@ var type: PHASEAsset.AssetType { get }
 @property (readonly) PHASEAssetType type;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value of this property to the type you pass into [`registerSoundAsset(url:identifier:assetType:channelLayout:normalizationMode:)`](../phaseassetregistry/registersoundasset%28url,identifier,assettype,channellayout,normalizationmode%29.md).
 

@@ -25,7 +25,7 @@ var strides: MTLTensorExtents? { get set }
 @property (nonatomic, copy, readwrite, nullable) MTLTensorExtents * strides;
 ```
 
-#### Discussion
+## Discussion
 
 The stride value of the array’s first element needs to be exactly `1`, because it is the innermost dimension. The strides for the subsequent dimensions can have different requirements based on the value of other properties. When the [`usage`](./usage.md) property includes the [`machineLearning`](../mtltensorusage/machinelearning.md) option:
 

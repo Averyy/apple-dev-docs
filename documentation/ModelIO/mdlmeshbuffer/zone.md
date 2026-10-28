@@ -25,7 +25,7 @@ var zone: any MDLMeshBufferZone { get }
 @property (nonatomic, retain, readonly) id<MDLMeshBufferZone> zone;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`newBuffer(from:data:type:)`](../mdlmeshbufferallocator/newbuffer%28from,data,type%29.md) or [`newBuffer(from:length:type:)`](../mdlmeshbufferallocator/newbuffer%28from,length,type%29.md) method of an allocator to reserve memory in a shared pool for multiple related buffers.
 

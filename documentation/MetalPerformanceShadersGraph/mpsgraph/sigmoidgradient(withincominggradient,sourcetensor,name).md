@@ -24,7 +24,7 @@ func sigmoidGradient(withIncomingGradient gradient: MPSGraphTensor, sourceTensor
 - (MPSGraphTensor *) sigmoidGradientWithIncomingGradient:(MPSGraphTensor *) gradient sourceTensor:(MPSGraphTensor *) source name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object
 

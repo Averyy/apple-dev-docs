@@ -21,7 +21,7 @@ Performs a prediction from a single input.
 func applied(to input: MLShapedArray<Scalar>, eventHandler: EventHandler? = nil) async throws -> ClassificationDistribution<MLModelClassifierAdaptor<Scalar>.Label>
 ```
 
-#### Return Value
+## Return Value
 
 A classification distribution.
 

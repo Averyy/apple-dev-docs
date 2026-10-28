@@ -25,7 +25,7 @@ var rowBytes: Int
 size_t rowBytes;
 ```
 
-#### Discussion
+## Discussion
 
 The [`rowBytes`](./rowbytes.md) value must be at least the [`width`](./width.md) multiplied by the pixel size, where the pixel size depends on the image format. You can provide a larger value, in which case the extra bytes extend beyond the end of each row of pixels. You may want to do this to improve performance, or to describe an image within a larger image without copying the data. The vImage library doesn’t treat the extra bytes as part of the image that the vImage buffer represents.
 

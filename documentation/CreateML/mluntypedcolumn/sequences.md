@@ -20,11 +20,11 @@ A cloned data column of machine learning sequences.
 var sequences: MLDataColumn<MLDataValue.SequenceType>? { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new data column if the underlying type of the column is [`MLDataValue.SequenceType`](../mldatavalue/sequencetype.md); otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 This property is functionally equivalent to passing [`MLDataValue.SequenceType`](../mldatavalue/sequencetype.md) `.self` to [`column(type:)`](./column%28type%29.md). Typically you ensure [`type`](./type.md) is equal to [`MLDataValue.ValueType.sequence`](../mldatavalue/valuetype/sequence.md) before getting this property.
 

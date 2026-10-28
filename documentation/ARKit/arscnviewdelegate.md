@@ -25,7 +25,7 @@ protocol ARSCNViewDelegate : ARSessionObserver, SCNSceneRendererDelegate
 
 - [Providing 3D Virtual Content with SceneKit](./providing-3d-virtual-content-with-scenekit.md)
 
-#### Overview
+## Overview
 
 Implement this protocol to provide SceneKit content corresponding to [`ARAnchor`](./aranchor.md) objects tracked by the view’s AR session, or to manage the view’s automatic updating of such content.
 

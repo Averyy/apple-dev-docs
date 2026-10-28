@@ -24,7 +24,7 @@ var assemblyTrackID: CMPersistentTrackID { get }
 @property (readonly) CMPersistentTrackID assemblyTrackID;
 ```
 
-#### Discussion
+## Discussion
 
 The assemblyTrackID serves the purpose as a unique identifier of the track in the incremental writing session. This does not necessarily match the trackID of the source asset. The client is responsible for remembering the relationship between assemblyTrackID and the trackID in the source asset.
 

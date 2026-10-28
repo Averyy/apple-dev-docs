@@ -19,7 +19,7 @@ Register your app to be relaunched in the background on CarKey events. Under cer
 class func registerForLaunchOnCarKeyEvent() throws
 ```
 
-#### Discussion
+## Discussion
 
 Because of user actions, it’s possible that an app may no longer be eligible to be relaunched in response to CarKey events. Therefore it’s important to educate the users of your app, so that they understand how their actions impact its functionality.
 

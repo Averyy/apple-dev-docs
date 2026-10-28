@@ -25,11 +25,11 @@ func vImageAffineWarpCG_ARGB16U(_ src: UnsafePointer<vImage_Buffer>, _ dest: Uns
 vImage_Error vImageAffineWarpCG_ARGB16U(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, const vImage_CGAffineTransform *transform, const Pixel_ARGB_16U backColor, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
-#### Discussion
+## Discussion
 
 Core Graphics types use float values in 32-bit and double values in 64-bit. This convenience method takes the Core Graphics affine transform type directly so that you don’t have to use a different function for 64-bit applications.
 
@@ -41,7 +41,7 @@ This function maps each pixel in the source image `[x, y]` to a new position `[x
 
 where `transform` is the 3x3 affine transformation matrix.
 
-##### Optimize performance with temporary buffers
+### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 

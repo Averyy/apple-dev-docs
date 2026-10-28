@@ -19,11 +19,11 @@ func textShouldEndEditing(_ textObject: NSText) -> Bool
 - (BOOL) textShouldEndEditing:(NSText *) textObject;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the new value is valid; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method validates the text field’s new value using the `NSCell` method [`isEntryAcceptable:`](../nscell/isentryacceptable_.md). If the new value is valid and the delegate responds to [`control(_:textShouldEndEditing:)`](../nscontroltexteditingdelegate/control%28_,textshouldendediting%29.md), this method invokes that method and returns the result. If the delegate returns [`false`](../../Swift/false.md), the system beeps to indicate that the text field can’t validate the text. See [`NSControl`](../nscontrol.md) for more information about the text delegate method.
 

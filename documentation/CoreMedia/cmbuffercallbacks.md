@@ -25,7 +25,7 @@ struct CMBufferCallbacks
 typedef struct { ... } CMBufferCallbacks;
 ```
 
-#### Overview
+## Overview
 
 With the exception of `isDataReady`, all these callbacks must always return the same result for the same arguments.
 

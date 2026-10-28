@@ -24,7 +24,7 @@ func VTSessionSetProperties(_ session: VTSession, propertyDictionary: CFDictiona
 extern OSStatus VTSessionSetProperties(VTSessionRef session, CFDictionaryRef propertyDictionary);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the properties specified by keys in `propertyDictionary` to the corresponding values.
 

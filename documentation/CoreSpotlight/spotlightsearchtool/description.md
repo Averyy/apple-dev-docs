@@ -19,7 +19,7 @@ A natural language description of when and how to use the Spotlight search tool.
 var description: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 The Spotlight search tool implements this property as part of its conformance to the [`Tool`](../../FoundationModels/tool.md) protocol.
 

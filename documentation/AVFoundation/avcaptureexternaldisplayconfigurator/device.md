@@ -23,7 +23,7 @@ weak var device: AVCaptureDevice? { get }
 @property (nonatomic, weak, readonly, nullable) AVCaptureDevice * device;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the [`AVCaptureDevice`](../avcapturedevice.md) instance you provided when instantiating the configurator. [`AVCaptureExternalDisplayConfigurator`](../avcaptureexternaldisplayconfigurator.md) holds a weak reference to the device. If the device is released, this property returns `nil`.
 

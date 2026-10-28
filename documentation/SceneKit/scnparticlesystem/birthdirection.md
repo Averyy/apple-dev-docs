@@ -25,7 +25,7 @@ var birthDirection: SCNParticleBirthDirection { get set }
 @property (nonatomic) SCNParticleBirthDirection birthDirection;
 ```
 
-#### Discussion
+## Discussion
 
 This property defines initial directions for new particles relative to the geometry specified in the [`emitterShape`](./emittershape.md) property. This property has no effect if the [`emitterShape`](./emittershape.md) property value is `nil`.
 

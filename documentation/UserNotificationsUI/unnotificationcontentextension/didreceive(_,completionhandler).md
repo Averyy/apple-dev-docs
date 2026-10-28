@@ -27,7 +27,7 @@ optional func didReceive(_ response: UNNotificationResponse) async -> UNNotifica
 - (void) didReceiveNotificationResponse:(UNNotificationResponse *) response completionHandler:(void (^)(UNNotificationContentExtensionResponseOption option)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method when you want your view controller to handle actions selected by the user. Use your implementation to perform the associated task and then execute the `completion` block. If you implement this method, you must handle all actions defined in all categories managed by your Notification Content app extension. If you don’t implement this method, the system notifies your app when the user selects an action.
 

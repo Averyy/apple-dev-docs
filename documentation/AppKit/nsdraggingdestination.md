@@ -19,7 +19,7 @@ protocol NSDraggingDestination : NSObjectProtocol
 @protocol NSDraggingDestination <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The destination automatically receives [`NSDraggingDestination`](./nsdraggingdestination.md) messages for pasteboard data types it has registered for as an image enters, moves around inside, and then exits or is released within the destination’s boundaries.
 

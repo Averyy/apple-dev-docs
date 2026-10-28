@@ -25,7 +25,7 @@ nonisolated
 init(make: @escaping @MainActor @Sendable (inout RealityViewCameraContent) async -> Void, update: (@MainActor (inout RealityViewCameraContent) -> Void)? = nil) where Content == RealityViewCameraContent.Body<RealityViewDefaultPlaceholder>
 ```
 
-#### Discussion
+## Discussion
 
 Use the `update` closure to modify entities in the scene based on a Boolean state property, like in the following example:
 

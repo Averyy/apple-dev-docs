@@ -20,7 +20,7 @@ Creates a model sort group component.
 init(group: ModelSortGroup, order: Int32)
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Don’t pass `Int32.max` or `Int32.min` to the `order` parameter because the framework reserves these as sentinel values, and using them may trigger erratic behavior.
 

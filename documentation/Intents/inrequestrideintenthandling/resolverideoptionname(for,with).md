@@ -27,7 +27,7 @@ optional func resolveRideOptionName(for intent: INRequestRideIntent) async -> IN
 - (void) resolveRideOptionNameForRequestRide:(INRequestRideIntent *) intent withCompletion:(void (^)(INSpeakableStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to identify the type of ride that the user requested. Siri places the name of the ride option in the intent parameter. That name corresponds either to a ride option name defined in your global vocabulary file or a spoken term that Siri interpreted as the preferred ride option. Use the provided information to ensure that you recognize the vehicle type and that a vehicle of that type is available. If the specified vehicle type is not available, create a resolution result containing a different ride option and ask the user to confirm the new value.
 

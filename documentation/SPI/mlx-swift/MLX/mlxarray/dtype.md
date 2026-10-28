@@ -21,7 +21,7 @@ var dtype: DType { get }
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray(0 ..< 12, [3, 4])

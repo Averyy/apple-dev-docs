@@ -23,7 +23,7 @@ var kCTFontTableBloc: Int { get }
 kCTFontTableBloc
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for bitmap location.
 

@@ -20,7 +20,7 @@ ApplePayAutomaticReloadPaymentRequest automaticReloadPaymentRequest;
 
 - [Apple Pay on the Web Version 14 Release Notes](../apple-pay-on-the-web-version-14-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Set this property to indicate that the payment request is for an automatic reload payment.
 

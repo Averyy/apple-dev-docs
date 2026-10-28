@@ -16,7 +16,7 @@ nonisolated
 func supportedVolumeViewpoints(_ viewpoints: SquareAzimuth.Set) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 This defaults to all viewpoints and determines which viewpoints the window bar and ornaments will ‘follow’ the user to as they move around the volume.
 

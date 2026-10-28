@@ -24,7 +24,7 @@ var captureTraceURL: URL? { get set }
 @property (nonatomic, retain, nullable) NSURL * captureTraceURL;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is set to a file-based URL, then the next render using this destination will capture a Metal trace, deleting any existing file if present. This property is nil by default.
 

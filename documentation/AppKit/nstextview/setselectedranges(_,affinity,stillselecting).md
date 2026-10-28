@@ -19,7 +19,7 @@ func setSelectedRanges(_ ranges: [NSValue], affinity: NSSelectionAffinity, still
 - (void) setSelectedRanges:(NSArray<NSValue *> *) ranges affinity:(NSSelectionAffinity) affinity stillSelecting:(BOOL) stillSelectingFlag;
 ```
 
-#### Discussion
+## Discussion
 
 This method also resets the selection granularity to `NSSelectByCharacter`.
 

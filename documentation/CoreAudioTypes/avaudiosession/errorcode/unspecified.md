@@ -25,7 +25,7 @@ case unspecified
 AVAudioSessionErrorCodeUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 This error type typically happens when the audio system is in an inconsistent state.
 

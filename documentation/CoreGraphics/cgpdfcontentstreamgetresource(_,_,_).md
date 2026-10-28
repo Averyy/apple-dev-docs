@@ -25,11 +25,11 @@ func CGPDFContentStreamGetResource(_ cs: CGPDFContentStreamRef, _ category: Unsa
 extern CGPDFObjectRefCGPDFContentStreamGetResource(CGPDFContentStreamRef cs, const char *category, const char *name);
 ```
 
-#### Return Value
+## Return Value
 
 The resource dictionary.
 
-#### Discussion
+## Discussion
 
 You can use this function to obtain resources used by the content stream, such as forms, patterns, color spaces, and fonts.
 

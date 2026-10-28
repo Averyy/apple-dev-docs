@@ -17,11 +17,11 @@ Load a model given a [`ModelConfiguration`](./modelconfiguration.md), downloadin
 func loadModel(from downloader: any Downloader, using tokenizerLoader: any TokenizerLoader, configuration: ModelConfiguration, useLatest: Bool = false, progressHandler: @Sendable @escaping (Progress) -> Void = { _ in }) async throws -> sending ModelContext
 ```
 
-#### Return Value
+## Return Value
 
 A [`ModelContext`](./modelcontext.md)
 
-#### Discussion
+## Discussion
 
 Returns a [`ModelContext`](./modelcontext.md) holding the model and tokenizer without an `actor` providing an isolation context.
 

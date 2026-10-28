@@ -19,7 +19,7 @@ enum NSAccessibilityAnnotationPosition
 enum NSAccessibilityAnnotationPosition : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants as values for the [`location`](./nsaccessibility-swift.struct/annotationattributekey/location.md) key.
 

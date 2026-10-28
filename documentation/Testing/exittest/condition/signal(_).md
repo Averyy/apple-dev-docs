@@ -20,7 +20,7 @@ static func signal(_ signal: CInt) -> ExitTest.Condition
 
 - [Exit testing](../../exit-testing.md)
 
-#### Discussion
+## Discussion
 
 The C programming language defines a number of standard signals. Platforms may additionally define their own non-standard signal codes:
 

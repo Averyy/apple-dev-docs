@@ -31,7 +31,7 @@ extern NSLinguisticTagScheme const NSLinguisticTagSchemeNameType;
 
 - [Identifying People, Places, and Organizations](../identifying-people-places-and-organizations.md)
 
-#### Discussion
+## Discussion
 
 For possible values, see Name Types.
 

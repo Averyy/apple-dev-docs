@@ -19,7 +19,7 @@ var colorSpace: NSColorSpace { get }
 @property (strong, readonly) NSColorSpace * colorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 When the receiver is initialized, colors that do not conform to the receiver’s color space are converted automatically.
 

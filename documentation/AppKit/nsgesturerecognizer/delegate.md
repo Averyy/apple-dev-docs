@@ -19,7 +19,7 @@ weak var delegate: (any NSGestureRecognizerDelegate)? { get set }
 @property (weak, nullable) id<NSGestureRecognizerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Use the delegate for fine-grained control over the recognition of a gesture. For example, you can use the delegate to determine whether gesture recognition should begin or whether it should start only after other gesture recognizers fail.
 

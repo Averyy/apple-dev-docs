@@ -25,7 +25,7 @@ var isForPersonHeightUse: Bool { get set }
 @property (getter=isForPersonHeightUse) BOOL forPersonHeightUse;
 ```
 
-#### Discussion
+## Discussion
 
 Returns [`true`](../../Swift/true.md) if the value passed to [`string(fromMeters:)`](./string%28frommeters%29.md) or [`unitString(fromMeters:usedUnit:)`](./unitstring%28frommeters,usedunit%29.md) is a person’s height; otherwise, [`false`](../../Swift/false.md). By default, this property returns [`false`](../../Swift/false.md).
 

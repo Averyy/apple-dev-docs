@@ -21,7 +21,7 @@ var leadingBarButtonGroups: [UIBarButtonItemGroup] { get set }
 @property (nonatomic, copy, readwrite) NSArray<UIBarButtonItemGroup *> * leadingBarButtonGroups;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a value to this property installs the corresponding bar button items so that they lead the typing suggestions. (In a left-to-right environment, leading items are placed to the left of the typing suggestions.) If there is not enough room to display all of the items, UIKit may display a group’s representative item instead, if one was provided.
 

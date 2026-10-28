@@ -13,7 +13,7 @@ Update users’ calendars and inform suggestions from Siri with reservation data
 
 - [Providing Trusted Data](./providing-trusted-data.md)
 
-#### Overview
+## Overview
 
 You can use the Siri Event Suggestions Markup data format to provide event details in webpages and emails. Siri parses travel arrangements, shows, restaurant reservations, and social events in order to augment related activities, like suggesting driving directions or a ride share to a scheduled event and activating Do Not Disturb just before a show starts.
 
@@ -27,7 +27,7 @@ Fill out the form at [Siri Event Suggestions Markup Information](https://develop
 
 > 💡 **Tip**:  Donate reservation information from your app as well, if you have one. For more information about providing event suggestions from your app, see [Siri Event Suggestions](../SiriKit/siri-event-suggestions.md).
 
-##### Format Reservation Data
+### Format Reservation Data
 
 If you offer reservations on a website or email reservation confirmations to users, you may provide reservation information embedded in HTML documents as either JSON-LD or Microdata. For JSON-LD, specify the [`@context`](./atcontext.md) and `@type,` as shown in this example:
 

@@ -17,7 +17,7 @@ Provide an enumerator for the contact items collection.
 func enumerator(for collection: ContactItem.Identifier) -> any ContactItemEnumerator
 ```
 
-#### Discussion
+## Discussion
 
 The collection represents all contacts for the domain (`ContactItem.Identifier.rootContainer`).
 

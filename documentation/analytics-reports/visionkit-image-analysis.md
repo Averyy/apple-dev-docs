@@ -5,7 +5,7 @@
 
 Analyze VisionKit analysis requests on images.
 
-#### Overview
+## Overview
 
 The data in this report shows histograms for the quantity of information found when performing a VisionKit analysis request on an image. The information includes the length of text, the number of visual lookup elements, and the time to parse the machine-readable codes in the image.
 
@@ -22,7 +22,7 @@ The data in this report shows histograms for the quantity of information found w
   - Individual rows will only appear if they have a value of 5 or more.
 - Data Context: You can analyze your data with additional context by comparing it with the data in the [App Sessions Context](./app-sessions-context.md) report, which provides a count of unique devices that use your app on a specific day. For example, if your app performed an action detailed in this report on 10 unique devices on a specific day, and the App Sessions Context report shows there were 100 unique devices running your app that day, then you can approximate that 10% of the devices running your app performed that action.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |
@@ -39,7 +39,7 @@ The data in this report shows histograms for the quantity of information found w
 | Text Length | Character length of the detected text | `integer` |
 | Visual Lookup Count | Number of visual lookup elements found | `integer` |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

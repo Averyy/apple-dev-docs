@@ -24,7 +24,7 @@ case string
 MDLMaterialPropertyTypeString
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`stringValue`](../mdlmaterialproperty/stringvalue.md) property to access the material property’s value.
 

@@ -22,7 +22,7 @@ var entersReaderIfAvailable: Bool { get set }
 @property (nonatomic) BOOL entersReaderIfAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value to [`true`](../../../Swift/true.md) if Reader mode should be entered automatically when it is available for the webpage; otherwise, [`false`](../../../Swift/false.md). The default value is [`false`](../../../Swift/false.md). Set this configuration property instead of initializing a view controller with [`init(url:entersReaderIfAvailable:)`](../init%28url,entersreaderifavailable%29-3aatz.md).
 

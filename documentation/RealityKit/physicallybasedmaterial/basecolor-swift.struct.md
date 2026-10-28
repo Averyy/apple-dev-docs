@@ -20,7 +20,7 @@ An object that defines an entity’s base color.
 struct BaseColor
 ```
 
-#### Overview
+## Overview
 
 Use this struct to specify an entity’s base color, which defines the entity’s appearance before RealityKit calculates the effect of lighting or material properties such as [`roughness`](./roughness-swift.property.md) or [`metallic`](./metallic-swift.property.md). For more information, see [`baseColor`](./basecolor-swift.property.md).
 

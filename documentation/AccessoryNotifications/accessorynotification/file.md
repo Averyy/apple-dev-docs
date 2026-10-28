@@ -15,7 +15,7 @@ A file associated with a notification.
 struct File
 ```
 
-#### Overview
+## Overview
 
 The [`AccessoryNotification`](../accessorynotification.md) structure’s [`attachments`](./attachments.md), [`sourceIcon`](./sourceicon.md), and [`contextIcon`](./contexticon.md) properties use this type.
 

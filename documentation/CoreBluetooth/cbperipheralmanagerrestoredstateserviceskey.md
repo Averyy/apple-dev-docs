@@ -25,7 +25,7 @@ let CBPeripheralManagerRestoredStateServicesKey: String
 extern NSString * const CBPeripheralManagerRestoredStateServicesKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an [`NSArray`](../Foundation/nsarray.md) of [`CBMutableService`](./cbmutableservice.md) objects. It contains all of the services that previously published to the local peripheral’s database when the system quit the app.
 

@@ -21,7 +21,7 @@ A structure that specifies blur transitions between scrolling content and an are
 struct ScrollEdgeEffectStyle
 ```
 
-#### Overview
+## Overview
 
 By default, the system sets an automatic scroll edge effect style to provide a visual transition between scrolling content and stationary controls at both edges of the scroll view in the scrolling direction. The system determines which style to apply based on the platform and context. The [`hard`](./scrolledgeeffectstyle/hard.md) style provides a more opaque, clearly defined linear boundary, and the [`soft`](./scrolledgeeffectstyle/soft.md) style provides a subtle blurred transition:
 

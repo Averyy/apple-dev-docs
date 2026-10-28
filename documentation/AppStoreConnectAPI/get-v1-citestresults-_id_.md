@@ -9,11 +9,11 @@ Get a specific test result Xcode Cloud created when it performed a build with a 
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below retrieves result information for a test Xcode Cloud performed. Use the data provided in the response to display test result information on a dashboard, create reports, or create a new issue in your issue tracker for a failing test.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

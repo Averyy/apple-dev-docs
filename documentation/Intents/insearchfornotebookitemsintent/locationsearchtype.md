@@ -33,7 +33,7 @@ var locationSearchType: INLocationSearchType { get }
 @property (atomic, assign, readonly) INLocationSearchType locationSearchType;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value in this property to determine how to apply the value in the [`location`](./location.md) property to your search results. When the value of this property is [`INLocationSearchType.unknown`](../inlocationsearchtype/unknown.md), do not consider location as part of your search criteria.
 

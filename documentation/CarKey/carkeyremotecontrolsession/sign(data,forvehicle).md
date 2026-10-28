@@ -19,11 +19,11 @@ Sign data with the endpoint.SK identified by vehicleIdentifier as described in t
 func sign(data: Data, forVehicle vehicleID: String) throws -> CarKeyRemoteControlSession.Attestation
 ```
 
-#### Return Value
+## Return Value
 
 An Attestation object.
 
-#### Discussion
+## Discussion
 
 This method can only be used while the application is in the foreground.
 

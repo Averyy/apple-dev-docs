@@ -21,7 +21,7 @@ Creates a type that represents the specified tag and tag class and which conform
 convenience init?(tag: String, tagClass: String, conformingToType supertype: UTType?)
 ```
 
-#### Discussion
+## Discussion
 
 If the system recognizes the filename extension, the intializer returns the corresponding type; otherwise, the initializer returns a dynamic type whose [`isDeclared`](../uttype-swift.struct/isdeclared.md) and [`isPublic`](../uttype-swift.struct/ispublic.md) properties are both set to [`false`](../../Swift/false.md).
 

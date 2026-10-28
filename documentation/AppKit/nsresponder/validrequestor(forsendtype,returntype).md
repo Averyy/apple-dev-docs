@@ -24,11 +24,11 @@ func validRequestor(forSendType sendType: NSPasteboard.PasteboardType?, returnTy
 - [Supporting Writing Tools via the pasteboard](../supporting-writing-tools-via-the-pasteboard.md)
 - [Supporting Continuity Camera in Your Mac App](../supporting-continuity-camera-in-your-mac-app.md)
 
-#### Return Value
+## Return Value
 
 If the receiver can place data of `sendType` on the pasteboard and receive data of `returnType`, it should return `self`; otherwise it should return either `[super validRequestorForSendType:returnType:]` or `[[self nextResponder] validRequestorForSendType:returnType:]`, which allows an object higher up in the responder chain to have an opportunity to handle the message.
 
-#### Discussion
+## Discussion
 
 With each event, and for each service in the Services menu, the application object sends this message up the responder chain with the send and return type for the service being checked. This method is therefore invoked many times per event. The default implementation simply forwards this message to the next responder, ultimately returning `nil`.
 

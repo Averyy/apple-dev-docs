@@ -28,7 +28,7 @@ func beginConfiguration()
 
 - [Setting up a capture session](../setting-up-a-capture-session.md)
 
-#### Discussion
+## Discussion
 
 Call this method and [`commitConfiguration()`](./commitconfiguration%28%29.md) to batch multiple configuration operations on a running session into an atomic update.
 

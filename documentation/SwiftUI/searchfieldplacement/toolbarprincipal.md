@@ -19,7 +19,7 @@ The search field appears in the principal section of the toolbar.
 static var toolbarPrincipal: SearchFieldPlacement { get }
 ```
 
-#### Discussion
+## Discussion
 
 See `ToolbarItemPlacement.principal` for more information.
 
